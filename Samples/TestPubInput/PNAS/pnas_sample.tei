@@ -1,0 +1,2959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+          xmlns:tei="http://www.tei-c.org/ns/1.0" level="a" type="main">The coreceptor mutation
+          CCR5Δ32 influences the dynamics of HIV epidemics and is selected for by HIV</title>
+      </titleStmt>
+      <publicationStmt>
+        <availability>
+          <p>Copyright © 2001, The National Academy of Sciences</p>
+        </availability>
+        <date>2001, </date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct type="article">
+          <analytic>
+            <author><persName><surname>Sullivan</surname><forename type="first">Amy
+                D.</forename></persName><note place="foot"><p>* Present address: Centers for Disease
+                  Control and Prevention Epidemiology Program Office, State Branch Oregon Health
+                  Division, 800 NE Oregon Street, Suite 772, Portland, OR 97232.</p></note></author>
+            <author><persName><surname>Wigginton</surname><forename type="first"
+                >Janis</forename></persName></author>
+            <author><persName><surname>Kirschner</surname><forename type="first"
+                >Denise</forename></persName><note place="foot"><p>† To whom reprint requests should
+                  be addressed. E-mail: <email xmlns:tei="http://www.tei-c.org/ns/1.0"
+                    >kirschne@umich.edu</email>.</p></note></author>
+            <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+              xmlns:tei="http://www.tei-c.org/ns/1.0" level="a" type="main">The coreceptor mutation
+              CCR5Δ32 influences the dynamics of HIV epidemics and is selected for by HIV</title>
+          </analytic>
+          <monogr>
+            <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+              xmlns:tei="http://www.tei-c.org/ns/1.0" level="j" type="pmc">pnas</title>
+            <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+              xmlns:tei="http://www.tei-c.org/ns/1.0" level="j" type="pubmed">Proc Natl Acad Sci U S
+              A</title>
+            <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+              xmlns:tei="http://www.tei-c.org/ns/1.0" level="j" type="publisher">PNAS</title>
+            <idno xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+              xmlns:tei="http://www.tei-c.org/ns/1.0" type="ISSN">0027-8424</idno>
+            <imprint>
+              <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                xmlns:tei="http://www.tei-c.org/ns/1.0">The National Academy of Sciences</publisher>
+              <date type="Published" when="2001-08-28"/>
+              <date type="ePublished" when="2001-08-21"/>
+              <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">98</biblScope>
+              <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                xmlns:tei="http://www.tei-c.org/ns/1.0" type="issue">18</biblScope>
+              <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">10214</biblScope>
+              <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">10219</biblScope>
+            </imprint>
+          </monogr>
+          <idno xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+            xmlns:tei="http://www.tei-c.org/ns/1.0" type="publisherID">181325198</idno>
+          <idno xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+            xmlns:tei="http://www.tei-c.org/ns/1.0" type="publisherID">3251</idno>
+          <idno xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+            xmlns:tei="http://www.tei-c.org/ns/1.0" type="DOI">10.1073/pnas.181325198</idno>
+          <idno type="other">jPNAS.v98.i18.pg10214</idno>
+          <idno type="pmid">11517319</idno>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2000-05-30">Received</change>
+      <change when="2001-06-27">Accepted</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="abstract">
+        <head>Abstract</head>
+        <p>We explore the impact of a host genetic factor on heterosexual HIV epidemics by using a
+          deterministic mathematical model. A protective allele unequally distributed across
+          populations is exemplified in our models by the 32-bp deletion in the host-cell chemokine
+          receptor CCR5, CCR5Δ32. Individuals homozygous for CCR5Δ32 are protected against HIV
+          infection whereas those heterozygous for CCR5Δ32 have lower pre-AIDS viral loads and
+          delayed progression to AIDS. CCR5Δ32 may limit HIV spread by decreasing the probability of
+          both risk of infection and infectiousness. In this work, we characterize epidemic HIV
+          within three dynamic subpopulations: CCR5/CCR5 (homozygous, wild type), CCR5/CCR5Δ32
+          (heterozygous), and CCR5Δ32/CCR5Δ32 (homozygous, mutant). Our results indicate that
+          prevalence of HIV/AIDS is greater in populations lacking the CCR5Δ32 alleles (homozygous
+          wild types only) as compared with populations that include people heterozygous or
+          homozygous for CCR5Δ32. Also, we show that HIV can provide selective pressure for CCR5Δ32,
+          increasing the frequency of this allele.</p>
+      </div>
+    </front>
+    <body>
+      <p>Nineteen million people have died of AIDS since the discovery of HIV in the 1980s. In 1999
+        alone, 5.4 million people were newly infected with HIV (ref. <ref type="bibr" target="#B1"
+          >1</ref> and <ref type="url"
+          target="http://www.unaids.org/epidemicupdate/report/Epireport.html"
+          >http://www.unaids.org/epidemicupdate/report/Epireport.html</ref>). (For brevity, HIV-1 is
+        referred to as HIV in this paper.) Sub-Saharan Africa has been hardest hit, with more than
+        20% of the general population HIV-positive in some countries (<ref type="bibr" target="#B2"
+          >2</ref>, <ref type="bibr" target="#B3">3</ref>). In comparison, heterosexual epidemics in
+        developed, market-economy countries have not reached such severe levels. Factors
+        contributing to the severity of the epidemic in economically developing countries abound,
+        including economic, health, and social differences such as high levels of sexually
+        transmitted diseases and a lack of prevention programs. However, the staggering rate at
+        which the epidemic has spread in sub-Saharan Africa has not been adequately explained. The
+        rate and severity of this epidemic also could indicate a greater underlying susceptibility
+        to HIV attributable not only to sexually transmitted disease, economics, etc., but also to
+        other more ubiquitous factors such as host genetics (<ref type="bibr" target="#B4">4</ref>,
+          <ref type="bibr" target="#B5">5</ref>).</p>
+      <p>To exemplify the contribution of such a host genetic factor to HIV prevalence trends, we
+        consider a well-characterized 32-bp deletion in the host-cell chemokine receptor CCR5,
+        CCR5Δ32. When HIV binds to host cells, it uses the CD4 receptor on the surface of host
+        immune cells together with a coreceptor, mainly the CCR5 and CXCR4 chemokine receptors (<ref
+          type="bibr" target="#B6">6</ref>). Homozygous mutations for this 32-bp deletion offer
+        almost complete protection from HIV infection, and heterozygous mutations are associated
+        with lower pre-AIDS viral loads and delayed progression to AIDS (<ref type="bibr"
+          target="#B7">7</ref>–<ref type="bibr" target="#B14">14</ref>). CCR5Δ32 generally is found
+        in populations of European descent, with allelic frequencies ranging from 0 to 0.29 (<ref
+          type="bibr" target="#B13">13</ref>). African and Asian populations studied outside the
+        United States or Europe appear to lack the CCR5Δ32 allele, with an allelic frequency of
+        almost zero (<ref type="bibr" target="#B5">5</ref>, <ref type="bibr" target="#B13"
+        >13</ref>). Thus, to understand the effects of a protective allele, we use a mathematical
+        model to track prevalence of HIV in populations with or without CCR5Δ32 heterozygous and
+        homozygous people and also to follow the CCR5Δ32 allelic frequency.</p>
+      <p>We hypothesize that CCR5Δ32 limits epidemic HIV by decreasing infection rates, and we
+        evaluate the relative contributions to this by the probability of infection and duration of
+        infectivity. To capture HIV infection as a chronic infectious disease together with vertical
+        transmission occurring in untreated mothers, we model a dynamic population (i.e.,
+        populations that vary in growth rates because of fluctuations in birth or death rates) based
+        on realistic demographic characteristics (<ref type="bibr" target="#B18">18</ref>). This
+        scenario also allows tracking of the allelic frequencies over time. This work considers how
+        a specific host genetic factor affecting HIV infectivity and viremia at the individual level
+        might influence the epidemic in a dynamic population and how HIV exerts selective pressure,
+        altering the frequency of this mutant allele.</p>
+      <p>CCR5 is a host-cell chemokine receptor, which is also used as a coreceptor by R5 strains of
+        HIV that are generally acquired during sexual transmission (<ref type="bibr" target="#B6"
+          >6</ref>, <ref type="bibr" target="#B19">19</ref>–<ref type="bibr" target="#B25"
+        >25</ref>). As infection progresses to AIDS the virus expands its repertoire of potential
+        coreceptors to include other CC-family and CXC-family receptors in roughly 50% of patients
+          (<ref type="bibr" target="#B19">19</ref>, <ref type="bibr" target="#B26">26</ref>, <ref
+          type="bibr" target="#B27">27</ref>). CCR5Δ32 was identified in HIV-resistant people (<ref
+          type="bibr" target="#B28">28</ref>). Benefits to individuals from the mutation in this
+        allele are as follows. Persons homozygous for the CCR5Δ32 mutation are almost nonexistent in
+        HIV-infected populations (<ref type="bibr" target="#B11">11</ref>, <ref type="bibr"
+          target="#B12">12</ref>) (see ref. <ref type="bibr" target="#B13">13</ref> for review).
+        Persons heterozygous for the mutant allele (CCR5 W/Δ32) tend to have lower pre-AIDS viral
+        loads. Aside from the beneficial effects that lower viral loads may have for individuals,
+        there is also an altruistic effect, as transmission rates are reduced for individuals with
+        low viral loads (as compared with, for example, AZT and other studies; ref. <ref type="bibr"
+          target="#B29">29</ref>). Finally, individuals heterozygous for the mutant allele (CCR5
+        W/Δ32) also have a slower progression to AIDS than those homozygous for the wild-type allele
+        (CCR5 W/W) (<ref type="bibr" target="#B7">7</ref>–<ref type="bibr" target="#B10">10</ref>),
+        remaining in the population 2 years longer, on average. Interestingly, the dearth of
+        information on HIV disease progression in people homozygous for the CCR5Δ32 allele (CCR5
+        Δ32/Δ32) stems from the rarity of HIV infection in this group (<ref type="bibr" target="#B4"
+          >4</ref>, <ref type="bibr" target="#B12">12</ref>, <ref type="bibr" target="#B28"
+        >28</ref>). However, in case reports of HIV-infected CCR5 Δ32/Δ32 homozygotes, a rapid
+        decline in CD4<hi rend="superscript">+</hi> T cells and a high viremia are observed, likely
+        because of initial infection with a more aggressive viral strain (such as X4 or R5X4) (<ref
+          type="bibr" target="#B30">30</ref>).</p>
+      <div>
+        <head>The Model</head>
+        <p>Because we are most concerned with understanding the severity of the epidemic in
+          developing countries where the majority of infection is heterosexual, we consider a purely
+          heterosexual model. To model the effects of the allele in the population, we examine the
+          rate of HIV spread by using an enhanced susceptible-infected-AIDS model of epidemic HIV
+          (for review see ref. <ref type="bibr" target="#B31">31</ref>). Our model compares two
+          population scenarios: a CCR5 wild-type population and one with CCR5Δ32 heterozygotes and
+          homozygotes in addition to the wild type. To model the scenario where there are only
+          wild-type individuals present in the population (i.e., CCR5 W/W), we track the sexually
+          active susceptibles at time <hi rend="italic">t</hi> [<hi rend="italic">S<hi
+              rend="subscript">i,j</hi>
+          </hi>(<hi rend="italic">t</hi>)], where <hi rend="italic">i</hi> = 1 refers to genotype
+          (CCR5 W/W only in this case) and <hi rend="italic">j</hi> is either the male or female
+          subpopulation. We also track those who are HIV-positive at time <hi rend="italic">t</hi>
+          not yet having AIDS in <hi rend="italic">I<hi rend="subscript">i,j,k</hi>
+          </hi>(<hi rend="italic">t</hi>) where <hi rend="italic">k</hi> refers to stage of HIV
+          infection [primary (<hi rend="italic">A</hi>) or asymptomatic (<hi rend="italic">B</hi>)].
+          The total number of individuals with AIDS at time <hi rend="italic">t</hi> are tracked in
+            <hi rend="italic">A</hi>(<hi rend="italic">t</hi>). The source population are children,
+            χ<hi rend="subscript">
+            <hi rend="italic">i,j</hi>
+          </hi>(<hi rend="italic">t</hi>), who mature into the sexually active population at time
+            <hi rend="italic">t</hi> (Fig. <ref type="fig" target="#F1">1</ref>, Table <ref
+            type="table" target="#T1">1</ref>). We compare the model of a population lacking the
+          CCR5Δ32 allele to a demographically similar population with a high frequency of the
+          allele. When genetic heterogeneity is included, male and female subpopulations are each
+          further divided into three distinct genotypic groups, yielding six susceptible
+          subpopulations, [<hi rend="italic">S<hi rend="subscript">i,j</hi>
+          </hi>(<hi rend="italic">t</hi>), where <hi rend="italic">i</hi> ranges from 1 to 3, where
+          1 = CCR5W/W; 2 = CCR5 W/Δ32; 3 = CCR5 Δ32/Δ32]. The infected classes, <hi rend="italic"
+              >I<hi rend="subscript">i,j,k</hi>
+          </hi>(<hi rend="italic">t</hi>), also increase in number to account for these new genotype
+          compartments. In both settings we assume there is no treatment available and no knowledge
+          of HIV status by people in the early acute and middle asymptomatic stages (both conditions
+          exist in much of sub-Saharan Africa). In addition, we assume that sexual mixing in the
+          population occurs randomly with respect to genotype and HIV disease status, all
+          HIV-infected people eventually progress to AIDS, and no barrier contraceptives are used.
+          These last assumptions reflect both economic and social conditions. </p>
+        <figure xml:id="F1">
+          <head type="label">Figure 1</head>
+          <p>A schematic representation of the basic compartmental HIV epidemic model. The
+            criss-cross lines indicate the sexual mixing between different compartments. Each of
+            these interactions has a positive probability of taking place; they also incorporate
+            individual rates of transmission indicated as λ, but in full notation is λ<hi
+              rend="subscript">
+              <hi rend="italic">î</hi>,<hi rend="italic"></hi>,<hi rend="italic"></hi>→<hi
+                rend="italic">i</hi>,<hi rend="italic">j</hi>,</hi> where <hi rend="italic"
+              >i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi> is the phenotype of the
+            infected partner and <hi rend="italic">î</hi>,<hi rend="italic"></hi> is the phenotype
+            of the susceptible partner. Also shown are the different rates of disease progression,
+              γ<hi rend="subscript">
+              <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+            </hi>, that vary according to genotype, gender, and stage. Thus, the interactions
+            between different genotypes, genders, and stages are associated with a unique
+            probability of HIV infection. M, male; F, female.</p>
+          <graphic url="pq1813251001"/>
+        </figure>
+        <figure type="table" xml:id="T1">
+          <head>Table 1</head>
+          <p>Children's genotype</p>
+          <ab><table>
+              <row>
+                <cell role="th">Parents</cell>
+                <cell role="th">Mother</cell>
+              </row>
+              <row>
+                <cell role="td">
+                  <milestone unit="hr"/>
+                </cell>
+              </row>
+              <row>
+                <cell role="td">Father</cell>
+                <cell role="td"/>
+                <cell role="td">W/W</cell>
+                <cell role="td">W/Δ32</cell>
+                <cell role="td">Δ32/Δ32</cell>
+              </row>
+              <row>
+                <cell role="td"/>
+                <cell role="td">W/W</cell>
+                <cell role="td">χ<hi rend="subscript">1,<hi rend="italic">j</hi>
+                  </hi>1,<hi rend="italic">j</hi>
+                </cell>
+                <cell role="td">χ<hi rend="subscript">1,<hi rend="italic">j</hi>
+                  </hi>1,<hi rend="italic">j</hi>, χ<hi rend="subscript">2,<hi rend="italic">j</hi>
+                  </hi>2,<hi rend="italic">j</hi>
+                </cell>
+                <cell role="td">χ<hi rend="subscript">2,<hi rend="italic">j</hi>
+                  </hi>2,<hi rend="italic">j</hi>
+                </cell>
+              </row>
+              <row>
+                <cell role="td"/>
+                <cell role="td">W/Δ32</cell>
+                <cell role="td">χ<hi rend="subscript">1,<hi rend="italic">j</hi>
+                  </hi>1,<hi rend="italic">j</hi>, χ<hi rend="subscript">2,<hi rend="italic">j</hi>
+                  </hi>2,<hi rend="italic">j</hi>
+                </cell>
+                <cell role="td">χ<hi rend="subscript">1,<hi rend="italic">j</hi>
+                  </hi>1,<hi rend="italic">j</hi>, χ<hi rend="subscript">2,<hi rend="italic">j</hi>
+                  </hi>2,<hi rend="italic">j</hi>, χ<hi rend="subscript">3,<hi rend="italic">j</hi>
+                  </hi>3,<hi rend="italic">j</hi>
+                </cell>
+                <cell role="td">χ<hi rend="subscript">2,<hi rend="italic">j</hi>
+                  </hi>2,<hi rend="italic">j</hi>, χ<hi rend="subscript">3,<hi rend="italic">j</hi>
+                  </hi>3,<hi rend="italic">j</hi>
+                </cell>
+              </row>
+              <row>
+                <cell role="td"/>
+                <cell role="td">Δ32/Δ32</cell>
+                <cell role="td">χ<hi rend="subscript">2,<hi rend="italic">j</hi>
+                  </hi>2,<hi rend="italic">j</hi>
+                </cell>
+                <cell role="td">χ<hi rend="subscript">2,<hi rend="italic">j</hi>
+                  </hi>2,<hi rend="italic">j</hi>, χ<hi rend="subscript">3,<hi rend="italic">j</hi>
+                  </hi>3,<hi rend="italic">j</hi>
+                </cell>
+                <cell role="td">χ<hi rend="subscript">3,<hi rend="italic">j</hi>
+                  </hi>3,<hi rend="italic">j</hi>
+                </cell>
+              </row>
+            </table></ab>
+          <ab type="table-wrap-foot"><note place="inline"><p>χ<hi rend="subscript">1,<hi
+                    rend="italic">j</hi>
+                </hi>1,<hi rend="italic">j</hi> = wild-type children; (W/W); χ<hi rend="subscript"
+                    >2,<hi rend="italic">j</hi>
+                </hi>2,<hi rend="italic">j</hi> = heterozygous children (W/Δ32); χ<hi
+                  rend="subscript">3,<hi rend="italic">j</hi>
+                </hi>3,<hi rend="italic">j</hi> = homozygous children (Δ32/Δ32) of gender <hi
+                  rend="italic">j</hi>. Children's genotypes are determined by using Mendelian
+                inheritance patterns.</p></note></ab>
+        </figure>
+        <div>
+          <head>Parameter Estimates for the Model.</head>
+          <p>Estimates for rates that govern the interactions depicted in Fig. <ref type="fig"
+              target="#F1">1</ref> were derived from the extensive literature on HIV. Our parameters
+            and their estimates are summarized in Tables <ref type="table" target="#T2">2</ref>–<ref
+              type="table" target="#T4">4</ref>. The general form of the equations describing the
+            rates of transition between population classes as depicted in Fig. <ref type="fig"
+              target="#F1">1</ref> are summarized as follows: <formula xml:id="M1" rend="display"
+              notation="TeX">\documentclass[12pt]{minimal} \usepackage{wasysym}
+              \usepackage[substack]{amsmath} \usepackage{amsfonts} \usepackage{amssymb}
+              \usepackage{amsbsy} \usepackage[mathscr]{eucal} \usepackage{mathrsfs}
+              \DeclareFontFamily{T1}{linotext}{} \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt;
+              linotext }{} \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+              \frac{dS_{i,j}(t)}{dt}={\chi}_{i,j}(t)-{\mu}_{j}S_{i,j}(t)-{\lambda}_{\hat
+              {\imath},\hat {},\hat {k}{\rightarrow}i,j}S_{i,j}(t), $$ \end{document} </formula>
+            <formula xml:id="M2" rend="display" notation="TeX">\documentclass[12pt]{minimal}
+              \usepackage{wasysym} \usepackage[substack]{amsmath} \usepackage{amsfonts}
+              \usepackage{amssymb} \usepackage{amsbsy} \usepackage[mathscr]{eucal}
+              \usepackage{mathrsfs} \DeclareFontFamily{T1}{linotext}{}
+              \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt; linotext }{}
+              \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+              \hspace{1em}\hspace{1em}\hspace{.167em}\frac{dI_{i,j,A}(t)}{dt}={\lambda}_{\hat
+              {\imath},\hat {},\hat
+              {k}{\rightarrow}i,j}S_{i,j}(t)-{\mu}_{j}I_{i,j,A}(t)-{\gamma}_{i,j,A}I_{i,j,A}(t), $$
+              \end{document} </formula>
+            <formula xml:id="M3" rend="display" notation="TeX">\documentclass[12pt]{minimal}
+              \usepackage{wasysym} \usepackage[substack]{amsmath} \usepackage{amsfonts}
+              \usepackage{amssymb} \usepackage{amsbsy} \usepackage[mathscr]{eucal}
+              \usepackage{mathrsfs} \DeclareFontFamily{T1}{linotext}{}
+              \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt; linotext }{}
+              \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+              \frac{dI_{i,j,B}(t)}{dt}={\gamma}_{i,j,A}I_{i,j,A}(t)-{\mu}_{j}I_{i,j,B}(t)-{\gamma}_{i,j,B}I_{i,j,B}(t),
+              $$ \end{document} </formula>
+            <formula xml:id="M4" rend="display" notation="TeX">\documentclass[12pt]{minimal}
+              \usepackage{wasysym} \usepackage[substack]{amsmath} \usepackage{amsfonts}
+              \usepackage{amssymb} \usepackage{amsbsy} \usepackage[mathscr]{eucal}
+              \usepackage{mathrsfs} \DeclareFontFamily{T1}{linotext}{}
+              \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt; linotext }{}
+              \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+              \frac{dA(t)}{dt}={\gamma}_{i,j,B} \left( { \,\substack{ ^{3} \\ {\sum} \\ _{i=1} }\,
+              }I_{i,F,B}(t)+I_{i,M,B}(t) \right) -{\mu}_{A}A(t)-{\delta}A(t), $$ \end{document}
+            </formula> where, in addition to previously defined populations and rates (with <hi
+              rend="italic">i</hi> equals genotype, <hi rend="italic">j</hi> equals gender, and <hi
+              rend="italic">k</hi> equals stage of infection, either <hi rend="italic">A</hi> or <hi
+              rend="italic">B</hi>), μ<hi rend="subscript">
+              <hi rend="italic">j</hi>
+            </hi>, represents the non-AIDS (natural) death rate for males and females respectively,
+            and μ<hi rend="subscript">A</hi> is estimated by the average (μ<hi rend="subscript"
+              >F</hi> + μ<hi rend="subscript">M</hi>/2). This approximation allows us to simplify
+            the model (only one AIDS compartment) without compromising the results, as most people
+            with AIDS die of AIDS (δ<hi rend="subscript">AIDS</hi>) and very few of other causes
+              (μ<hi rend="subscript">A</hi>). These estimates include values that affect infectivity
+              (λ<hi rend="subscript">
+              <hi rend="italic">î</hi>,<hi rend="italic"></hi>,<hi rend="italic"></hi>→<hi
+                rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>), transmission (β<hi rend="subscript">
+              <hi rend="italic">î</hi>,<hi rend="italic"></hi>,<hi rend="italic"></hi>→<hi
+                rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>), and disease progression (γ<hi rend="subscript">
+              <hi rend="italic">i</hi>
+            </hi>
+            <hi rend="subscript">,</hi>
+            <hi rend="subscript">
+              <hi rend="italic">j</hi>
+            </hi>
+            <hi rend="subscript">,</hi>
+            <hi rend="subscript">
+              <hi rend="italic">k</hi>
+            </hi>) where the <hi rend="italic">î</hi>,<hi rend="italic"></hi>,<hi rend="italic"
+              ></hi> notation represents the genotype, gender, and stage of infection of the
+            infected partner, and <hi rend="italic">j</hi> ≠ <hi rend="italic"></hi>. </p>
+          <figure type="table" xml:id="T2">
+            <head>Table 2</head>
+            <p>Transmission probabilities</p>
+            <ab><table>
+                <row>
+                  <cell role="th">HIV-infected partner (îıı^^, ^^, <hi rend="italic">k</hi>
+                    <hi rend="italic">k</hi>^^)</cell>
+                  <cell role="th">Susceptible partner (<hi rend="italic">i</hi>, <hi rend="italic"
+                      >j</hi>)</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <milestone unit="hr"/>
+                  </cell>
+                </row>
+                <row>
+                  <cell role="th">(^^ to <hi rend="italic">j</hi>)</cell>
+                  <cell role="th">W/W</cell>
+                  <cell role="th">W/Δ32</cell>
+                  <cell role="th">Δ32/Δ32 </cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <milestone unit="hr"/>
+                  </cell>
+                </row>
+                <row>
+                  <cell role="td">Acute/primary</cell>
+                </row>
+                <row>
+                  <cell role="td"> W/W or Δ32/Δ32</cell>
+                  <cell role="td">M to F</cell>
+                  <cell role="td">0.040</cell>
+                  <cell role="td">0.040</cell>
+                  <cell role="td">0.00040 </cell>
+                </row>
+                <row>
+                  <cell role="td"/>
+                  <cell role="td">F to M</cell>
+                  <cell role="td">0.020</cell>
+                  <cell role="td">0.020</cell>
+                  <cell role="td">0.00020 </cell>
+                </row>
+                <row>
+                  <cell role="td"> W/Δ32</cell>
+                  <cell role="td">M to F</cell>
+                  <cell role="td">0.030</cell>
+                  <cell role="td">0.030</cell>
+                  <cell role="td">0.00030 </cell>
+                </row>
+                <row>
+                  <cell role="td"/>
+                  <cell role="td">F to M</cell>
+                  <cell role="td">0.015</cell>
+                  <cell role="td">0.015</cell>
+                  <cell role="td">0.00015 </cell>
+                </row>
+                <row>
+                  <cell role="td">Asymptomatic </cell>
+                </row>
+                <row>
+                  <cell role="td"> W/W or Δ32/Δ32</cell>
+                  <cell role="td">M to F</cell>
+                  <cell role="td">0.0010</cell>
+                  <cell role="td">0.0010</cell>
+                  <cell role="td">10 × 10<hi rend="superscript">−6</hi>
+                  </cell>
+                </row>
+                <row>
+                  <cell role="td"/>
+                  <cell role="td">F to M</cell>
+                  <cell role="td">0.0005</cell>
+                  <cell role="td">0.0005</cell>
+                  <cell role="td">5 × 10<hi rend="superscript">−6</hi>
+                  </cell>
+                </row>
+                <row>
+                  <cell role="td"> W/Δ32</cell>
+                  <cell role="td">M to F</cell>
+                  <cell role="td">0.0005</cell>
+                  <cell role="td">0.0005</cell>
+                  <cell role="td">5 × 10<hi rend="superscript">−6</hi>
+                  </cell>
+                </row>
+                <row>
+                  <cell role="td"/>
+                  <cell role="td">F to M</cell>
+                  <cell role="td">0.00025</cell>
+                  <cell role="td">0.00025</cell>
+                  <cell role="td">2.5 × 10<hi rend="superscript">−6</hi>
+                  </cell>
+                </row>
+              </table></ab>
+            <ab type="table-wrap-foot"><note place="inline"><p>Listed are the different transmission
+                  probabilities (β<hi rend="subscript">îıı^^,^^,<hi rend="italic">k</hi>
+                    <hi rend="italic">k</hi>^^→<hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+                  </hi>) for random sexual mixing between persons where <hi rend="italic">i</hi>,
+                    <hi rend="italic">j</hi>, <hi rend="italic">k</hi> is the phenotype of the
+                  infected partner and <hi rend="italic">i</hi>, <hi rend="italic">j</hi> is the
+                  phenotype of the susceptible partner. M, male; F, female.</p></note></ab>
+          </figure>
+          <figure type="table" xml:id="T3">
+            <head>Table 3</head>
+            <p>Progression rates</p>
+            <ab><table>
+                <row>
+                  <cell role="th">Genotype</cell>
+                  <cell role="th">Disease stage</cell>
+                  <cell role="th">Males/females </cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <milestone unit="hr"/>
+                  </cell>
+                </row>
+                <row>
+                  <cell role="td">W/W</cell>
+                  <cell role="td">A</cell>
+                  <cell role="td">3.5</cell>
+                </row>
+                <row>
+                  <cell role="td"/>
+                  <cell role="td">B</cell>
+                  <cell role="td">0.16667 </cell>
+                </row>
+                <row>
+                  <cell role="td">W/Δ32</cell>
+                  <cell role="td">A</cell>
+                  <cell role="td">3.5 </cell>
+                </row>
+                <row>
+                  <cell role="td"/>
+                  <cell role="td">B</cell>
+                  <cell role="td">0.125</cell>
+                </row>
+                <row>
+                  <cell role="td">Δ32/Δ32</cell>
+                  <cell role="td">A</cell>
+                  <cell role="td">3.5 </cell>
+                </row>
+                <row>
+                  <cell role="td"/>
+                  <cell role="td">B</cell>
+                  <cell role="td">0.16667</cell>
+                </row>
+              </table></ab>
+            <ab type="table-wrap-foot"><note place="inline"><p>Shown are the rates of progression,
+                    γ<hi rend="subscript">
+                    <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+                  </hi>
+                  <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+                  reflecting the different rates at which persons progress through different stages
+                  of disease by genotype, gender, and disease stage.</p></note></ab>
+          </figure>
+          <figure type="table" xml:id="T4">
+            <head>Table 4</head>
+            <p>Parameter values</p>
+            <ab><table>
+                <row>
+                  <cell role="th">Parameter</cell>
+                  <cell role="th">Definition</cell>
+                  <cell role="th">Value</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <milestone unit="hr"/>
+                  </cell>
+                </row>
+                <row>
+                  <cell role="td">μ<hi rend="subscript">
+                      <hi rend="italic">F</hi>
+                    </hi>
+                    <hi rend="italic">F</hi>, μ<hi rend="subscript">
+                      <hi rend="italic">M</hi>
+                    </hi>
+                    <hi rend="italic">M</hi>
+                  </cell>
+                  <cell role="td">All-cause mortality for adult females (males)</cell>
+                  <cell role="td">0.015 (0.016) per year</cell>
+                </row>
+                <row>
+                  <cell role="td">μ<hi rend="subscript">χ</hi>χ</cell>
+                  <cell role="td">All-cause childhood mortality (&lt;15 years of age)</cell>
+                  <cell role="td">0.01 per year</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">B</hi>
+                    <hi rend="subscript">
+                      <hi rend="italic">r</hi>
+                    </hi>
+                    <hi rend="italic">r</hi>
+                  </cell>
+                  <cell role="td">Birthrate</cell>
+                  <cell role="td">0.25 per woman per year</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">SA</hi>
+                    <hi rend="subscript">
+                      <hi rend="italic">F</hi>
+                    </hi>
+                    <hi rend="italic">F</hi>
+                  </cell>
+                  <cell role="td">Percent females acquiring new partners (sexual activity)</cell>
+                  <cell role="td">10%</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">SA</hi>
+                    <hi rend="subscript">
+                      <hi rend="italic">M</hi>
+                    </hi>
+                    <hi rend="italic">M</hi>
+                  </cell>
+                  <cell role="td">Percent males acquiring new partners (sexual activity)</cell>
+                  <cell role="td">25%</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">m</hi>
+                    <hi rend="subscript">
+                      <hi rend="italic">F</hi>
+                    </hi>
+                    <hi rend="italic">F</hi>(ς<formula xml:id="M5" rend="inline" notation="TeX"
+                      >\documentclass[12pt]{minimal} \usepackage{wasysym}
+                      \usepackage[substack]{amsmath} \usepackage{amsfonts} \usepackage{amssymb}
+                      \usepackage{amsbsy} \usepackage[mathscr]{eucal} \usepackage{mathrsfs}
+                      \DeclareFontFamily{T1}{linotext}{} \DeclareFontShape{T1}{linotext}{m}{n} {
+                      &lt;-&gt; linotext }{} \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+                      \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+                      {\mathrm{_{{F}}^{{2}}}} $$ \end{document} </formula>)</cell>
+                  <cell role="td">Mean (variance) no. of new partners for females</cell>
+                  <cell role="td">1.8 (1.2) per year</cell>
+                </row>
+                <row>
+                  <cell role="td">ς<formula xml:id="M6" rend="inline" notation="TeX"
+                      >\documentclass[12pt]{minimal} \usepackage{wasysym}
+                      \usepackage[substack]{amsmath} \usepackage{amsfonts} \usepackage{amssymb}
+                      \usepackage{amsbsy} \usepackage[mathscr]{eucal} \usepackage{mathrsfs}
+                      \DeclareFontFamily{T1}{linotext}{} \DeclareFontShape{T1}{linotext}{m}{n} {
+                      &lt;-&gt; linotext }{} \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+                      \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+                      {\mathrm{_{{M}}^{{2}}}} $$ \end{document} </formula>
+                  </cell>
+                  <cell role="td">Variance in no. of new partners for males</cell>
+                  <cell role="td">5.5 per year </cell>
+                </row>
+                <row>
+                  <cell role="td">1 − <hi rend="italic">p</hi>
+                    <hi rend="subscript">
+                      <hi rend="italic">v</hi>
+                    </hi>
+                    <hi rend="italic">v</hi>
+                  </cell>
+                  <cell role="td">Probability of vertical transmission</cell>
+                  <cell role="td">0.30 per birth</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">I</hi>
+                    <hi rend="subscript">
+                      <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+                    </hi>
+                    <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic"
+                    >k</hi>(0)</cell>
+                  <cell role="td">Initial total population HIV-positive</cell>
+                  <cell role="td">0.50% </cell>
+                </row>
+                <row>
+                  <cell role="td">χ<hi rend="subscript">
+                      <hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+                    </hi>
+                    <hi rend="italic">i</hi>,<hi rend="italic">j</hi>(0)</cell>
+                  <cell role="td">Initial total children in population (&lt;15 years of age)</cell>
+                  <cell role="td">45%</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">W</hi>/<hi rend="italic">W</hi> (0)</cell>
+                  <cell role="td">Initial total wild types (<hi rend="italic">W</hi>/<hi
+                      rend="italic">W</hi>) in population</cell>
+                  <cell role="td">80% </cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">W</hi>/Δ32(0)</cell>
+                  <cell role="td">Initial total heterozygotes (<hi rend="italic">W</hi>/Δ32) in
+                    population</cell>
+                  <cell role="td">19%</cell>
+                </row>
+                <row>
+                  <cell role="td">Δ32/Δ32(0)</cell>
+                  <cell role="td">Initial total homozygotes (Δ32/Δ32) in population</cell>
+                  <cell role="td">1%</cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">r</hi>
+                    <hi rend="subscript">
+                      <hi rend="italic">M</hi>
+                    </hi>
+                    <hi rend="italic">M</hi>(<hi rend="italic">r</hi>
+                    <hi rend="subscript">
+                      <hi rend="italic">F</hi>
+                    </hi>
+                    <hi rend="italic">F</hi>)</cell>
+                  <cell role="td">Initial percent males (females) in total population</cell>
+                  <cell role="td">49% (51%)</cell>
+                </row>
+                <row>
+                  <cell role="td">ϕ<hi rend="subscript">
+                      <hi rend="italic">F</hi>
+                    </hi>
+                    <hi rend="italic">F</hi>, ϕ<hi rend="subscript">
+                      <hi rend="italic">M</hi>
+                    </hi>
+                    <hi rend="italic">M</hi>
+                  </cell>
+                  <cell role="td">Number of sexual contacts a female (male) has</cell>
+                  <cell role="td">30 (24) per partner</cell>
+                </row>
+                <row>
+                  <cell role="td">ɛ<hi rend="subscript">
+                      <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+                    </hi>
+                    <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+                  </cell>
+                  <cell role="td">% effect of mutation on transmission rates (see Table <ref
+                      type="table" target="#T2">2</ref>)</cell>
+                  <cell role="td">0 &lt; ɛ<hi rend="subscript">
+                      <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+                    </hi>
+                    <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi> &lt;
+                    1</cell>
+                </row>
+                <row>
+                  <cell role="td">δ</cell>
+                  <cell role="td">Death rate for AIDS population</cell>
+                  <cell role="td">1.0 per year </cell>
+                </row>
+                <row>
+                  <cell role="td">
+                    <hi rend="italic">q</hi>
+                  </cell>
+                  <cell role="td">Allelic frequency of Δ32 allele</cell>
+                  <cell role="td">0.105573</cell>
+                </row>
+              </table></ab>
+            <ab type="table-wrap-foot"><note place="inline"><p>Shown are the parameter values for
+                  parameters other than the transmission probabilities (Table <ref type="table"
+                    target="#T2">2</ref>) and the progression rates (Table <ref type="table"
+                    target="#T3">3</ref>). Each were estimated from data as described in
+                text.</p></note></ab>
+          </figure>
+          <p>The effects of the CCR5 W/Δ32 and CCR5 Δ32/Δ32 genotypes are included in our model
+            through both the per-capita probabilities of infection, λ<hi rend="subscript">
+              <hi rend="italic">î</hi>,<hi rend="italic"></hi>,<hi rend="italic"></hi>→<hi
+                rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>, and the progression rates, γ<hi rend="subscript">
+              <hi rend="italic">i</hi>
+            </hi>
+            <hi rend="subscript">,</hi>
+            <hi rend="subscript">
+              <hi rend="italic">j</hi>
+            </hi>
+            <hi rend="subscript">,</hi>
+            <hi rend="subscript">
+              <hi rend="italic">k</hi>
+            </hi>. The infectivity coefficients, λ<hi rend="subscript">
+              <hi rend="italic">î</hi>,<hi rend="italic"></hi>,<hi rend="italic"></hi>→<hi
+                rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>, are calculated for each population subgroup based on the following: likelihood of
+            HIV transmission in a sexual encounter between a susceptible and an infected (β<hi
+              rend="subscript">îıı^^,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+              <hi rend="italic">k</hi>^^→<hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>) person; formation of new partnerships (<hi rend="italic">c</hi>
+            <hi rend="subscript">
+              <hi rend="italic">j</hi>
+            </hi>
+            <hi rend="italic">j</hi>); number of contacts in a given partnership (ϕ<hi
+              rend="subscript">
+              <hi rend="italic">j</hi>
+            </hi>); and probability of encountering an infected individual (<hi rend="italic">I</hi>
+            <hi rend="subscript">
+              <hi rend="italic">î</hi>,<hi rend="italic"></hi>,<hi rend="italic"></hi>
+            </hi>/<hi rend="italic">N</hi>
+            <hi rend="subscript">
+              <hi rend="italic"></hi>
+            </hi>). The formula representing this probability of infection is <formula xml:id="M7"
+              rend="display" notation="TeX">\documentclass[12pt]{minimal} \usepackage{wasysym}
+              \usepackage[substack]{amsmath} \usepackage{amsfonts} \usepackage{amssymb}
+              \usepackage{amsbsy} \usepackage[mathscr]{eucal} \usepackage{mathrsfs}
+              \DeclareFontFamily{T1}{linotext}{} \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt;
+              linotext }{} \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+              {\lambda}_{\hat {i},\hat {j},\hat
+              {k}{\rightarrow}i,j}=\frac{C_{j}{\cdot}{\phi}_{j}}{N_{\hat {j}}}\hspace{.167em} \left[
+              { \,\substack{ \\ {\sum} \\ _{\hat {i},\hat {k}} }\, }{\beta}_{\hat {i},\hat {j},\hat
+              {k}{\rightarrow}i,j}{\cdot}I_{\hat {i},\hat {j},\hat {k}} \right] , $$ \end{document}
+            </formula> where <hi rend="italic">j</hi> ≠ <hi rend="italic"></hi> is either male or
+            female. <hi rend="italic">N</hi>
+            <hi rend="subscript">
+              <hi rend="italic"></hi>
+            </hi> represents the total population of gender <hi rend="italic"></hi> (this does not
+            include those with AIDS in the simulations).</p>
+          <p>The average rate of partner acquisition, <hi rend="italic">c<hi rend="subscript">j</hi>
+            </hi>, includes the mean plus the variance to mean ratio of the relevant distribution of
+            partner-change rates to capture the small number of high-risk people: <hi rend="italic"
+                >c<hi rend="subscript">j</hi>
+            </hi> = <hi rend="italic">m<hi rend="subscript">j</hi>
+            </hi> + (ς<formula xml:id="M8" rend="inline" notation="TeX"
+              >\documentclass[12pt]{minimal} \usepackage{wasysym} \usepackage[substack]{amsmath}
+              \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+              \usepackage[mathscr]{eucal} \usepackage{mathrsfs} \DeclareFontFamily{T1}{linotext}{}
+              \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt; linotext }{}
+              \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+              {\mathrm{_{{\mathit{j}}}^{2}}} $$ \end{document} </formula>/<hi rend="italic">m</hi>
+            <hi rend="subscript">j</hi>) where the mean (<hi rend="italic">m<hi rend="subscript"
+                >j</hi>
+            </hi>) and variance (ς<formula xml:id="M9" rend="inline" notation="TeX"
+              >\documentclass[12pt]{minimal} \usepackage{wasysym} \usepackage[substack]{amsmath}
+              \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+              \usepackage[mathscr]{eucal} \usepackage{mathrsfs} \DeclareFontFamily{T1}{linotext}{}
+              \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt; linotext }{}
+              \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+              {\mathrm{_{{\mathit{j}}}^{2}}} $$ \end{document} </formula>) are annual figures for
+            new partnerships only (<ref type="bibr" target="#B32">32</ref>). These means are
+            estimated from Ugandan data for the number of heterosexual partners in the past year
+              (<ref type="bibr" target="#B33">33</ref>) and the number of nonregular heterosexual
+            partners (i.e., spouses or long-term partners) in the past year (<ref type="bibr"
+              target="#B34">34</ref>). In these sexual activity surveys, men invariably have more
+            new partnerships; thus, we assumed that they would have fewer average contacts per
+            partnership than women (a higher rate of new partner acquisition means fewer sexual
+            contacts with a given partner; ref. <ref type="bibr" target="#B35">35</ref>). To
+            incorporate this assumption in our model, the male contacts/partnership, ϕ<hi
+              rend="subscript">
+              <hi rend="italic">M</hi>
+            </hi>, was reduced by 20%. In a given population, the numbers of heterosexual
+            interactions must equate between males and females. The balancing equation applied here
+            is <hi rend="italic">SA</hi>
+            <hi rend="subscript">F</hi>·<hi rend="italic">m</hi>
+            <hi rend="subscript">F</hi>·<hi rend="italic">N</hi>
+            <hi rend="subscript">F</hi> = <hi rend="italic">SA</hi>
+            <hi rend="subscript">M</hi>·<hi rend="italic">m</hi>
+            <hi rend="subscript">M</hi>·<hi rend="italic">N</hi>
+            <hi rend="subscript">M</hi>, where <hi rend="italic">SA<hi rend="subscript">j</hi>
+            </hi> are the percent sexually active and <hi rend="italic">N<hi rend="subscript">j</hi>
+            </hi> are the total in the populations for gender <hi rend="italic">j</hi>. To specify
+            changes in partner acquisition, we apply a male flexibility mechanism, holding the
+            female rate of acquisition constant and allowing the male rates to vary (<ref
+              type="bibr" target="#B36">36</ref>, <ref type="bibr" target="#B37">37</ref>).</p>
+          <div>
+            <head>Transmission probabilities.</head>
+            <p>The effect of a genetic factor in a model of HIV transmission can be included by
+              reducing the transmission coefficient. The probabilities of transmission per contact
+              with an infected partner, β<hi rend="subscript">îıı^^,^^,<hi rend="italic">k</hi>
+                <hi rend="italic">k</hi>^^→<hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+              </hi>, have been estimated in the literature (see ref. <ref type="bibr" target="#B38"
+                >38</ref> for estimates in minimally treated groups). We want to capture a decreased
+              risk in transmission based on genotype (ref. <ref type="bibr" target="#B39">39</ref>,
+              Table <ref type="table" target="#T2">2</ref>). No studies have directly evaluated
+              differences in infectivity between HIV-infected CCR5 W/Δ32 heterozygotes and
+              HIV-infected CCR5 wild types. Thus, we base estimates for reduced transmission on
+              studies of groups with various HIV serum viral loads (<ref type="bibr" target="#B40"
+                >40</ref>), HTLV-I/II viral loads (<ref type="bibr" target="#B41">41</ref>), and a
+              study of the effect of AZT treatment on transmission (<ref type="bibr" target="#B29"
+                >29</ref>). We decrease transmission probabilities for infecting CCR5Δ32/Δ32 persons
+              by 100-fold to reflect the rarity of infections in these persons. However, we assume
+              that infected CCR5Δ32/Δ32 homozygotes can infect susceptibles at a rate similar to
+              CCR5W/W homozygotes, as the former generally have high viremias (ref. <ref type="bibr"
+                target="#B30">30</ref>, Table <ref type="table" target="#T2">2</ref>). We also
+              assume that male-to-female transmission is twice as efficient as female-to-male
+              transmission (up to a 9-fold difference has been reported; ref. <ref type="bibr"
+                target="#B42">42</ref>) (ref. <ref type="bibr" target="#B43">43</ref>, Table <ref
+                type="table" target="#T2">2</ref>).</p>
+            <p>Given the assumption of no treatment, the high burden of disease in people with AIDS
+              is assumed to greatly limit their sexual activity. Our initial model excludes people
+              with AIDS from the sexually active groups. Subsequently, we allow persons with AIDS to
+              be sexually active, fixing their transmission rates (β<hi rend="subscript">AIDS</hi>)
+              to be the same across all CCR5 genotypes, and lower than transmission rates for
+              primary-stage infection (as the viral burden on average is not as high as during the
+              acute phase), and larger than transmission rates for asymptomatic-stage infection (as
+              the viral burden characteristically increases during the end stage of disease).</p>
+          </div>
+          <div>
+            <head>Disease progression.</head>
+            <p>We assume three stages of HIV infection: primary (acute, stage A), asymptomatic HIV
+              (stage B), and AIDS. The rates of transition through the first two stages are denoted
+              by γ<hi rend="subscript">
+                <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+              </hi>
+              <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>, where <hi
+                rend="italic">i</hi> represents genotype, <hi rend="italic">j</hi> is male/female,
+              and <hi rend="italic">k</hi> represents either stage A or stage B. Transition rates
+              through each of these stages are assumed to be inversely proportional to the duration
+              of that stage; however, other distributions are possible (<ref type="bibr"
+                target="#B31">31</ref>, <ref type="bibr" target="#B44">44</ref>, <ref type="bibr"
+                target="#B45">45</ref>). Although viral loads generally peak in the first 2 months
+              of infection, steady-state viral loads are established several months beyond this
+                (<ref type="bibr" target="#B46">46</ref>). For group A, the primary HIV-infecteds,
+              duration is assumed to be 3.5 months. Based on results from European cohort studies
+                (<ref type="bibr" target="#B7">7</ref>–<ref type="bibr" target="#B10">10</ref>), the
+              beneficial effects of the CCR5 W/Δ32 genotype are observed mainly in the asymptomatic
+              years of HIV infection; ≈7 years after seroconversion survival rates appear to be
+              quite similar between heterozygous and homozygous individuals. We also assume that
+              CCR5Δ32/Δ32-infected individuals and wild-type individuals progress similarly, and
+              that men and women progress through each disease stage at the same rate. Given these
+              observations, and that survival after infection may be shorter in untreated
+              populations, we choose the duration time in stage B to be 6 years for wild-type
+              individuals and 8 years for heterozygous individuals. Transition through AIDS, δ<hi
+                rend="subscript">AIDS</hi>, is inversely proportional to the duration of AIDS. We
+              estimate this value to be 1 year for the time from onset of AIDS to death. The
+              progression rates are summarized in Table <ref type="table" target="#T3">3</ref>.</p>
+          </div>
+        </div>
+        <div>
+          <head>Demographic Setting.</head>
+          <p>Demographic parameters are based on data from Malawi, Zimbabwe, and Botswana (<ref
+              type="bibr" target="#B3">3</ref>, <ref type="bibr" target="#B47">47</ref>). Estimated
+            birth and child mortality rates are used to calculate the annual numbers of children
+              (χ<hi rend="subscript">
+              <hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>
+            <hi rend="italic">i</hi>,<hi rend="italic">j</hi>) maturing into the potentially
+            sexually active, susceptible group at the age of 15 years (<ref type="bibr" target="#B3"
+              >3</ref>). For example, in the case where the mother is CCR5 wild type and the father
+            is CCR5 wild type or heterozygous, the number of CCR5 W/W children is calculated as
+            follows [<hi rend="italic">s</hi>uppressing (<hi rend="italic">t</hi>) notation]: χ<hi
+              rend="subscript">1,<hi rend="italic">j</hi>
+            </hi>1,<hi rend="italic">j</hi> = <formula xml:id="M10" rend="display" notation="TeX"
+              >\documentclass[12pt]{minimal} \usepackage{wasysym} \usepackage[substack]{amsmath}
+              \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+              \usepackage[mathscr]{eucal} \usepackage{mathrsfs} \DeclareFontFamily{T1}{linotext}{}
+              \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt; linotext }{}
+              \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$
+              B_{r}\hspace{.167em}{ \,\substack{ \\ {\sum} \\ _{k} }\, } \left[
+              S_{1,F}\frac{(S_{1,M}+I_{1,M,k})}{N_{M}}+ \left[
+              (0.5)S_{1,F}\frac{(S_{2,M}+I_{2,M,k})}{N_{M}} \right] + \right $$ \end{document} </formula>
+            <formula xml:id="M11" rend="display" notation="TeX">\documentclass[12pt]{minimal}
+              \usepackage{wasysym} \usepackage[substack]{amsmath} \usepackage{amsfonts}
+              \usepackage{amssymb} \usepackage{amsbsy} \usepackage[mathscr]{eucal}
+              \usepackage{mathrsfs} \DeclareFontFamily{T1}{linotext}{}
+              \DeclareFontShape{T1}{linotext}{m}{n} { &lt;-&gt; linotext }{}
+              \DeclareSymbolFont{linotext}{T1}{linotext}{m}{n}
+              \DeclareSymbolFontAlphabet{\mathLINOTEXT}{linotext} \begin{document} $$ p_{v} \left
+              \left( \frac{(I_{1,F,k}(S_{1,M}+I_{1,M,k}))}{N_{M}}+ \left[
+              (0.5)I_{1,F,k}\frac{(S_{2,M}+I_{2,M,k})}{N_{M}} \right] \right) \right]
+              ,\hspace{.167em} $$ \end{document} </formula> where the probability of HIV vertical
+            transmission, 1 − <hi rend="italic">p<hi rend="subscript">v</hi>
+            </hi>, and the birthrate, <hi rend="italic">B<hi rend="subscript">r</hi>
+            </hi>, are both included in the equations together with the Mendelian inheritance values
+            as presented in Table <ref type="table" target="#T1">1</ref>. The generalized version of
+            this equation (i.e., χ<hi rend="subscript">
+              <hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>
+            <hi rend="italic">i</hi>,<hi rend="italic">j</hi>) can account for six categories of
+            children (including gender and genotype). We assume that all children of all genotypes
+            are at risk, although we can relax this condition if data become available to support
+            vertical protection (e.g., ref. <ref type="bibr" target="#B48">48</ref>). All infected
+            children are assumed to die before age 15. Before entering the susceptible group at age
+            15, there is additional loss because of mortality from all non-AIDS causes occurring
+            less than 15 years of age at a rate of μ<hi rend="subscript">χ</hi>χ × χ<hi
+              rend="subscript">
+              <hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>
+            <hi rend="italic">i</hi>,<hi rend="italic">j</hi> (where μ<hi rend="subscript">χ</hi> is
+            the mortality under 15 years of age). Children then enter the population as susceptibles
+            at an annual rate, ς<hi rend="subscript">
+              <hi rend="italic">j</hi>
+            </hi>
+            <hi rend="italic">j</hi> × χ<hi rend="subscript">
+              <hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi>
+            <hi rend="italic">i</hi>,<hi rend="italic">j</hi>/15, where ς<hi rend="subscript">
+              <hi rend="italic">j</hi>
+            </hi> distributes the children 51% females and 49% males. All parameters and their
+            values are summarized in Table <ref type="table" target="#T4">4</ref>.</p>
+        </div>
+      </div>
+      <div>
+        <head>Prevalence of HIV</head>
+        <div>
+          <head>Demographics and Model Validation.</head>
+          <p>The model was validated by using parameters estimated from available demographic data.
+            Simulations were run in the absence of HIV infection to compare the model with known
+            population growth rates. Infection was subsequently introduced with an initial low HIV
+            prevalence of 0.5% to capture early epidemic behavior.</p>
+          <p>In deciding on our initial values for parameters during infection, we use Joint United
+            Nations Programme on HIV/AIDS national prevalence data for Malawi, Zimbabwe, and
+            Botswana. Nationwide seroprevalence of HIV in these countries varies from ≈11% to over
+            20% (<ref type="bibr" target="#B3">3</ref>), although there may be considerable
+            variation within given subpopulations (<ref type="bibr" target="#B2">2</ref>, <ref
+              type="bibr" target="#B49">49</ref>).</p>
+          <p>In the absence of HIV infection, the annual percent population growth rate in the model
+            is ≈2.5%, predicting the present-day values for an average of sub-Saharan African cities
+            (data not shown). To validate the model with HIV infection, we compare our simulation of
+            the HIV epidemic to existing prevalence data for Kenya and Mozambique (<ref type="url"
+              target="http://www.who.int/emc-hiv/fact-sheets/pdfs/kenya.pdf"
+              >http://www.who.int/emc-hiv/fact-sheets/pdfs/kenya.pdf</ref> and ref. <ref type="bibr"
+              target="#B51">51</ref>). Prevalence data collected from these countries follow similar
+            trajectories to those predicted by our model (Fig. <ref type="fig" target="#F2"
+            >2</ref>). </p>
+          <figure xml:id="F2">
+            <head type="label">Figure 2</head>
+            <p>Model simulation of HIV infection in a population lacking the protective CCR5Δ32
+              allele compared with national data from Kenya (healthy adults) and Mozambique (blood
+              donors, ref. <ref type="bibr" target="#B17">17</ref>). The simulated population
+              incorporates parameter estimates from sub-Saharan African demographics. Note the two
+              outlier points from the Mozambique data were likely caused by underreporting in the
+              early stages of the epidemic.</p>
+            <graphic url="pq1813251002"/>
+          </figure>
+        </div>
+        <div>
+          <head>Effects of the Allele on Prevalence.</head>
+          <p>After validating the model in the wild type-only population, both CCR5Δ32 heterozygous
+            and homozygous people are included. Parameter values for HIV transmission, duration of
+            illness, and numbers of contacts per partner are assumed to be the same within both
+            settings. We then calculate HIV/AIDS prevalence among adults for total HIV/AIDS
+            cases.</p>
+          <p>Although CCR5Δ32/Δ32 homozygosity is rarely seen in HIV-positive populations
+            (prevalence ranges between 0 and 0.004%), 1–20% of people in HIV-negative populations of
+            European descent are homozygous. Thus, to evaluate the potential impact of CCR5Δ32, we
+            estimate there are 19% CCR5 W/Δ32 heterozygous and 1% CCR5 Δ32/Δ32 homozygous people in
+            our population. These values are in Hardy-Weinberg equilibrium with an allelic frequency
+            of the mutation as 0.105573.</p>
+          <p>Fig. <ref type="fig" target="#F3">3</ref> shows the prevalence of HIV in two
+            populations: one lacking the mutant CCR5 allele and another carrying that allele. In the
+            population lacking the protective mutation, prevalence increases logarithmically for the
+            first 35 years of the epidemic, reaching 18% before leveling off. </p>
+          <figure xml:id="F3">
+            <head type="label">Figure 3</head>
+            <p>Prevalence of HIV/AIDS in the adult population as predicted by the model. The top
+              curve (○) indicates prevalence in a population lacking the protective allele. We
+              compare that to a population with 19% heterozygous and 1% homozygous for the allele
+              (implying an allelic frequency of 0.105573. Confidence interval bands (light gray) are
+              shown around the median simulation () providing a range of uncertainty in evaluating
+              parameters for the effect of the mutation on the infectivity and the duration of
+              asymptomatic HIV for heterozygotes.</p>
+            <graphic url="pq1813251003"/>
+          </figure>
+          <p>In contrast, when a proportion of the population carries the CCR5Δ32 allele, the
+            epidemic increases more slowly, but still logarithmically, for the first 50 years, and
+            HIV/AIDS prevalence reaches ≈12% (Fig. <ref type="fig" target="#F3">3</ref>). Prevalence
+            begins to decline slowly after 70 years.</p>
+          <p>In the above simulations we assume that people with AIDS are not sexually active.
+            However, when these individuals are included in the sexually active population the
+            severity of the epidemic increases considerably (data not shown). Consistent with our
+            initial simulations, prevalences are still relatively lower in the presence of the CCR5
+            mutation.</p>
+          <p>Because some parameters (e.g., rate constants) are difficult to estimate based on
+            available data, we implement an uncertainty analysis to assess the variability in the
+            model outcomes caused by any inaccuracies in estimates of the parameter values with
+            regard to the effect of the allelic mutation. For these analyses we use Latin hypercube
+            sampling, as described in refs. <ref type="bibr" target="#B52">52</ref>–<ref type="bibr"
+              target="#B56">56</ref>, Our uncertainty and sensitivity analyses focus on infectivity
+            vs. duration of infectiousness. To this end, we assess the effects on the dynamics of
+            the epidemic for a range of values of the parameters governing transmission and
+            progression rates: β<hi rend="subscript">îıı^^,^^,<hi rend="italic">k</hi>
+              <hi rend="italic">k</hi>^^→<hi rend="italic">i</hi>,<hi rend="italic">j</hi>
+            </hi> and γ<hi rend="subscript">
+              <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>
+            </hi>
+            <hi rend="italic">i</hi>,<hi rend="italic">j</hi>,<hi rend="italic">k</hi>. All other
+            parameters are held constant. These results are presented as an interval band about the
+            average simulation for the population carrying the CCR5Δ32 allele (Fig. <ref type="fig"
+              target="#F3">3</ref>). Although there is variability in the model outcomes, the
+            analysis indicates that the overall model predictions are consistent for a wide range of
+            transmission and progression rates. Further, most of the variation observed in the
+            outcome is because of the transmission rates for both heterosexual males and females in
+            the primary stage of infection (β<hi rend="subscript">2,M,A</hi>
+            <hi rend="subscript">→</hi>
+            <hi rend="subscript">
+              <hi rend="italic">i</hi>
+            </hi>
+            <hi rend="subscript">,F</hi>, β<hi rend="subscript">2,F,A</hi>
+            <hi rend="subscript">→</hi>
+            <hi rend="subscript">
+              <hi rend="italic">i</hi>
+            </hi>
+            <hi rend="subscript">,M</hi>). As mentioned above, we assume lower viral loads correlate
+            with reduced infectivity; thus, the reduction in viral load in heterozygotes has a major
+            influence on disease spread.</p>
+        </div>
+      </div>
+      <div>
+        <head>HIV Induces Selective Pressure on Genotype Frequency</head>
+        <p>To observe changes in the frequency of the CCR5Δ32 allele in a setting with HIV infection
+          as compared with the Hardy-Weinberg equilibrium in the absence of HIV, we follow changes
+          in the total number of CCR5Δ32 heterozygotes and homozygotes over 1,000 years (Fig. <ref
+            type="fig" target="#F4">4</ref>). We initially perform simulations in the absence of HIV
+          infection as a negative control to show there is not significant selection of the allele
+          in the absence of infection. To determine how long it would take for the allelic frequency
+          to reach present-day levels (e.g., <hi rend="italic">q</hi> = 0.105573), we initiate this
+          simulation for 1,000 years with a very small allelic frequency (<hi rend="italic">q</hi> =
+          0.00105). In the absence of HIV, the allelic frequency is maintained in equilibrium as
+          shown by the constant proportions of CCR5Δ32 heterozygotes and homozygotes (Fig. <ref
+            type="fig" target="#F4">4</ref>, solid lines). The selection for CCR5Δ32 in the presence
+          of HIV is seen in comparison (Fig. <ref type="fig" target="#F4">4</ref>, dashed lines). We
+          expand the time frame of this simulation to 2,000 years to view the point at which the
+          frequency reaches present levels (where <hi rend="italic">q</hi> ∼0.105573 at year =
+          1200). Note that the allelic frequency increases for ≈1,600 years before leveling off. </p>
+        <figure xml:id="F4">
+          <head type="label">Figure 4</head>
+          <p>Effects of HIV-1 on selection of the CCR5Δ32 allele. The Hardy-Weinberg equilibrium
+            level is represented in the no-infection simulation (solid lines) for each population.
+            Divergence from the original Hardy-Weinberg equilibrium is shown to occur in the
+            simulations that include HIV infection (dashed lines). Fraction of the total
+            subpopulations are presented: (<hi rend="italic">A</hi>) wild types (W/W), (<hi
+              rend="italic">B</hi>) heterozygotes (W/Δ32), and (<hi rend="italic">C</hi>)
+            homozygotes (Δ32/Δ32). Note that we initiate this simulation with a much lower allelic
+            frequency (0.00105) than used in the rest of the study to better exemplify the actual
+            selective effect over a 1,000-year time scale. (<hi rend="italic">D</hi>) The allelic
+            selection effect over a 2,000-year time scale.</p>
+          <graphic url="pq1813251004"/>
+        </figure>
+      </div>
+      <div type="discussion">
+        <head>Discussion</head>
+        <p>This study illustrates how populations can differ in susceptibility to epidemic HIV/AIDS
+          depending on a ubiquitous attribute such as a prevailing genotype. We have examined
+          heterosexual HIV epidemics by using mathematical models to assess HIV transmission in
+          dynamic populations either with or without CCR5Δ32 heterozygous and homozygous persons.
+          The most susceptible population lacks the protective mutation in CCR5. In less susceptible
+          populations, the majority of persons carrying the CCR5Δ32 allele are heterozygotes. We
+          explore the hypothesis that lower viral loads (CCR5Δ32 heterozygotes) or resistance to
+          infection (CCR5Δ32 homozygotes) observed in persons with this coreceptor mutation
+          ultimately can influence HIV epidemic trends. Two contrasting influences of the protective
+          CCR5 allele are conceivable: it may limit the epidemic by decreasing the probability of
+          infection because of lower viral loads in infected heterozygotes, or it may exacerbate the
+          epidemic by extending the time that infectious individuals remain in the sexually active
+          population. Our results strongly suggest the former. Thus, the absence of this allele in
+          Africa could explain the severity of HIV disease as compared with populations where the
+          allele is present.</p>
+        <p>We also observed that HIV can provide selective pressure for the CCR5Δ32 allele within a
+          population, increasing the allelic frequency. Other influences may have additionally
+          selected for this allele. Infectious diseases such as plague and small pox have been
+          postulated to select for CCR5Δ32 (<ref type="bibr" target="#B57">57</ref>, <ref
+            type="bibr" target="#B58">58</ref>). For plague, relatively high levels of CCR5Δ32 are
+          believed to have arisen within ≈4,000 years, accounting for the prevalence of the mutation
+          only in populations of European descent. Smallpox virus uses the CC-coreceptor, indicating
+          that direct selection for mutations in CCR5 may have offered resistance to smallpox. Given
+          the differences in the epidemic rates of plague (<ref type="bibr" target="#B59">59</ref>),
+          smallpox, and HIV, it is difficult to directly compare our results to these findings.
+          However, our model suggests that the CCR5Δ32 mutation could have reached its present
+          allelic frequency in Northern Europe within this time frame if selected for by a disease
+          with virulence patterns similar to HIV. Our results further support the idea that HIV has
+          been only recently introduced as a pathogen into African populations, as the frequency of
+          the protective allele is almost zero, and our model predicts that selection of the mutant
+          allele in this population by HIV alone takes at least 1,000 years. This prediction is
+          distinct from the frequency of the CCR5Δ32 allele in European populations, where pathogens
+          that may have influenced its frequency (e.g., <hi rend="italic">Yersinia pestis</hi>) have
+          been present for much longer.</p>
+        <p>Two mathematical models have considered the role of parasite and host genetic
+          heterogeneity with regard to susceptibility to another pathogen, namely malaria (<ref
+            type="bibr" target="#B60">60</ref>, <ref type="bibr" target="#B61">61</ref>). In each it
+          was determined that heterogeneity of host resistance facilitates the maintenance of
+          diversity in parasite virulence. Given our underlying interest in the coevolution of
+          pathogen and host, we focus on changes in a host protective mutation, holding the
+          virulence of the pathogen constant over time.</p>
+        <p>Even within our focus on host protective mutations, numerous genetic factors, beneficial
+          or detrimental, could potentially influence epidemics. Other genetically determined host
+          factors affecting HIV susceptibility and disease progression include a CCR5 A/A to G/G
+          promoter polymorphism (<ref type="bibr" target="#B62">62</ref>), a CCR2 point mutation
+            (<ref type="bibr" target="#B11">11</ref>, <ref type="bibr" target="#B63">63</ref>), and
+          a mutation in the CXCR4 ligand (<ref type="bibr" target="#B64">64</ref>). The CCR2b
+          mutation, CCR264I, is found in linkage with at least one CCR5 promoter polymorphism (<ref
+            type="bibr" target="#B65">65</ref>) and is prevalent in populations where CCR5Δ32 is
+          nonexistent, such as sub-Saharan Africa (<ref type="bibr" target="#B63">63</ref>).
+          However, as none of these mutations have been consistently shown to be as protective as
+          the CCR5Δ32 allele, we simplified our model to incorporate only the effect of CCR5Δ32.
+          Subsequent models could be constructed from our model to account for the complexity of
+          multiple protective alleles. It is interesting to note that our model predicts that even
+          if CCR264I is present at high frequencies in Africa, its protective effects may not
+          augment the lack of a protective allele such as CCR5Δ32.</p>
+        <p>Although our models demonstrate that genetic factors can contribute to the high
+          prevalence of HIV in sub-Saharan Africa, demographic factors are also clearly important in
+          this region. Our models explicitly incorporated such factors, for example, lack of
+          treatment availability. Additional factors were implicitly controlled for by varying only
+          the presence of the CCR5Δ32 allele. More complex models eventually could include
+          interactions with infectious diseases that serve as cofactors in HIV transmission. The
+          role of high sexually transmitted disease prevalences in HIV infection has long been
+          discussed, especially in relation to core populations (<ref type="bibr" target="#B15"
+            >15</ref>, <ref type="bibr" target="#B50">50</ref>, <ref type="bibr" target="#B66"
+            >66</ref>). Malaria, too, might influence HIV transmission, as it is associated with
+          transient increases in semen HIV viral loads and thus could increase the susceptibility of
+          the population to epidemic HIV (<ref type="bibr" target="#B16">16</ref>).</p>
+        <p>In assessing the HIV/AIDS epidemic, considerable attention has been paid to the influence
+          of core groups in driving sexually transmitted disease epidemics. Our results also
+          highlight how characteristics more uniformly distributed in a population can affect
+          susceptibility. We observed that the genotypic profile of a population affects its
+          susceptibility to epidemic HIV/AIDS. Additional studies are needed to better characterize
+          the influence of these genetic determinants on HIV transmission, as they may be crucial in
+          estimating the severity of the epidemic in some populations. This information can
+          influence the design of treatment strategies as well as point to the urgency for education
+          and prevention programs.</p>
+      </div>
+    </body>
+    <back>
+      <div type="acknowledgements">
+        <head>Acknowledgements</head>
+        <p>We thank Mark Krosky, Katia Koelle, and Kevin Chung for programming and technical
+          assistance. We also thank Drs. V. J. DiRita, P. Kazanjian, and S. M. Blower for helpful
+          comments and discussions. We thank the reviewers for extremely insightful comments.</p>
+      </div>
+      <div type="references">
+        <listBibl>
+          <biblStruct type="article" xml:id="B1">
+            <analytic>
+              <author><persName><surname>Weiss</surname><forename type="first"
+                  >HA</forename></persName></author>
+              <author><persName><surname>Hawkes</surname><forename type="first"
+                  >S</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Leprosy Rev</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">2001</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">72</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">92</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">98</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B2">
+            <analytic>
+              <author><persName><surname>Taha</surname><forename type="first"
+                  >TE</forename></persName></author>
+              <author><persName><surname>Dallabetta</surname><forename type="first"
+                  >GA</forename></persName></author>
+              <author><persName><surname>Hoover</surname><forename type="first"
+                  >DR</forename></persName></author>
+              <author><persName><surname>Chiphangwi</surname><forename type="first"
+                  >JD</forename></persName></author>
+              <author><persName><surname>Mtimavalye</surname><forename type="first"
+                  >LAR</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">12</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">197</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">203</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="book" xml:id="B3">
+            <monogr>
+              <title level="j">AIDS Epidemic Update</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Geneva</pubPlace>
+                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">World Health Organization</publisher>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B4">
+            <analytic>
+              <author><persName><surname>D'Souza</surname><forename type="first"
+                  >MP</forename></persName></author>
+              <author><persName><surname>Harden</surname><forename type="first"
+                  >VA</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nat Med</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">2</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1293</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1300</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B5">
+            <analytic>
+              <author><persName><surname>Martinson</surname><forename type="first"
+                  >JJ</forename></persName></author>
+              <author><persName><surname>Chapman</surname><forename type="first"
+                  >NH</forename></persName></author>
+              <author><persName><surname>Rees</surname><forename type="first"
+                  >DC</forename></persName></author>
+              <author><persName><surname>Liu</surname><forename type="first"
+                  >YT</forename></persName></author>
+              <author><persName><surname>Clegg</surname><forename type="first"
+                  >JB</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nat Genet</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">16</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">100</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">103</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B6">
+            <analytic>
+              <author><persName><surname>Roos</surname><forename type="first"
+                  >MTL</forename></persName></author>
+              <author><persName><surname>Lange</surname><forename type="first"
+                  >JMA</forename></persName></author>
+              <author><persName><surname>deGoede</surname><forename type="first"
+                  >REY</forename></persName></author>
+              <author><persName><surname>Miedema</surname><forename type="first"
+                  >PT</forename></persName></author>
+              <author><persName><surname>Tersmette</surname><forename type="first"
+                  >F</forename></persName></author>
+              <author><persName><surname>Coutinho</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Schellekens</surname><forename type="first"
+                  >RA</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Infect Dis</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1992</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">165</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">427</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">432</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B7">
+            <analytic>
+              <author><persName><surname>Garred</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Eugen-Olsen</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Iversen</surname><forename type="first"
+                  >AKN</forename></persName></author>
+              <author><persName><surname>Benfield</surname><forename type="first"
+                  >TL</forename></persName></author>
+              <author><persName><surname>Svejgaard</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Hofmann</surname><forename type="first"
+                  >B</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Lancet</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">349</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1884</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B8">
+            <analytic>
+              <author><persName><surname>Katzenstein</surname><forename type="first"
+                  >TL</forename></persName></author>
+              <author><persName><surname>Eugen-Olsen</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Hofman</surname><forename type="first"
+                  >B</forename></persName></author>
+              <author><persName><surname>Benfield</surname><forename type="first"
+                  >T</forename></persName></author>
+              <author><persName><surname>Pedersen</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Iversen</surname><forename type="first"
+                  >AK</forename></persName></author>
+              <author><persName><surname>Sorensen</surname><forename type="first"
+                  >AM</forename></persName></author>
+              <author><persName><surname>Garred</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Koppelhus</surname><forename type="first"
+                  >U</forename></persName></author>
+              <author><persName><surname>Svejgaard</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Gerstoft</surname><forename type="first"
+                  >J</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Acquired Immune Defic Syndr Hum Retrovirol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">16</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">10</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">14</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B9">
+            <analytic>
+              <author><persName><surname>deRoda</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Meyer</surname><forename type="first"
+                  >K</forename></persName></author>
+              <author><persName><surname>Katzenstain</surname><forename type="first"
+                  >W</forename></persName></author>
+              <author><persName><surname>Dean</surname><forename type="first"
+                  >M</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Science</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">273</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1856</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1862</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B10">
+            <analytic>
+              <author><persName><surname>Meyer</surname><forename type="first"
+                  >L</forename></persName></author>
+              <author><persName><surname>Magierowska</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Hubert</surname><forename type="first"
+                  >JB</forename></persName></author>
+              <author><persName><surname>Rouzioux</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Deveau</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Sanson</surname><forename type="first"
+                  >F</forename></persName></author>
+              <author><persName><surname>Debre</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Delfraissy</surname><forename type="first"
+                  >JF</forename></persName></author>
+              <author><persName><surname>Theodorou</surname><forename type="first"
+                  >I</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">11</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">F73</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">F78</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B11">
+            <analytic>
+              <author><persName><surname>Smith</surname><forename type="first"
+                  >MW</forename></persName></author>
+              <author><persName><surname>Dean</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Carrington</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Winkler</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Huttley</surname><forename type="first"
+                  >DA</forename></persName></author>
+              <author><persName><surname>Lomb</surname><forename type="first"
+                  >GA</forename></persName></author>
+              <author><persName><surname>Goedert</surname><forename type="first"
+                  >JJ</forename></persName></author>
+              <author><persName><surname>O'Brien</surname><forename type="first"
+                  >TR</forename></persName></author>
+              <author><persName><surname>Jacobson</surname><forename type="first"
+                  >LP</forename></persName></author>
+              <author><persName><surname>Kaslow</surname><forename type="first"
+                  >R</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Science</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">277</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">959</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">965</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B12">
+            <analytic>
+              <author><persName><surname>Samson</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Libert</surname><forename type="first"
+                  >F</forename></persName></author>
+              <author><persName><surname>Doranz</surname><forename type="first"
+                  >BJ</forename></persName></author>
+              <author><persName><surname>Rucker</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Liesnard</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Farber</surname><forename type="first"
+                  >CM</forename></persName></author>
+              <author><persName><surname>Saragosti</surname><forename type="first"
+                  >S</forename></persName></author>
+              <author><persName><surname>Lapoumeroulie</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Cognaux</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Forceille</surname><forename type="first"
+                  >C</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nature (London)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">382</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">722</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">725</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B13">
+            <analytic>
+              <author><persName><surname>McNicholl</surname><forename type="first"
+                  >JM</forename></persName></author>
+              <author><persName><surname>Smith</surname><forename type="first"
+                  >DK</forename></persName></author>
+              <author><persName><surname>Qari</surname><forename type="first"
+                  >SH</forename></persName></author>
+              <author><persName><surname>Hodge</surname><forename type="first"
+                  >T</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Emerging Infect Dis</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">3</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">261</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">271</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B14">
+            <analytic>
+              <author><persName><surname>Michael</surname><forename type="first"
+                  >NL</forename></persName></author>
+              <author><persName><surname>Chang</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>Louie</surname><forename type="first"
+                  >LG</forename></persName></author>
+              <author><persName><surname>Mascola</surname><forename type="first"
+                  >JR</forename></persName></author>
+              <author><persName><surname>Dondero</surname><forename type="first"
+                  >D</forename></persName></author>
+              <author><persName><surname>Birx</surname><forename type="first"
+                  >DL</forename></persName></author>
+              <author><persName><surname>Sheppard</surname><forename type="first"
+                  >HW</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nat Med</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">3</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">338</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">340</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B15">
+            <analytic>
+              <author><persName><surname>Mayaud</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Mosha</surname><forename type="first"
+                  >F</forename></persName></author>
+              <author><persName><surname>Todd</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Balira</surname><forename type="first"
+                  >R</forename></persName></author>
+              <author><persName><surname>Mgara</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>West</surname><forename type="first"
+                  >B</forename></persName></author>
+              <author><persName><surname>Rusizoka</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Mwijarubi</surname><forename type="first"
+                  >E</forename></persName></author>
+              <author><persName><surname>Gabone</surname><forename type="first"
+                  >R</forename></persName></author>
+              <author><persName><surname>Gavyole</surname><forename type="first"
+                  >A</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">11</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1873</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1880</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B16">
+            <analytic>
+              <author><persName><surname>Hoffman</surname><forename type="first"
+                  >IF</forename></persName></author>
+              <author><persName><surname>Jere</surname><forename type="first"
+                  >CS</forename></persName></author>
+              <author><persName><surname>Taylor</surname><forename type="first"
+                  >TE</forename></persName></author>
+              <author><persName><surname>Munthali</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Dyer</surname><forename type="first"
+                  >JR</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">13</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">487</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">494</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="book" xml:id="B17">
+            <monogr>
+              <title level="j">HIV/AIDS Surveillance Database</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
+                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Washington, DC</pubPlace>
+                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Population Division, International
+                  Programs Center</publisher>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B18">
+            <analytic>
+              <author><persName><surname>Anderson</surname><forename type="first"
+                  >RM</forename></persName></author>
+              <author><persName><surname>May</surname><forename type="first"
+                  >RM</forename></persName></author>
+              <author><persName><surname>McLean</surname><forename type="first"
+                  >AR</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nature (London)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1988</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">332</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">228</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">234</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B19">
+            <analytic>
+              <author><persName><surname>Berger</surname><forename type="first"
+                  >EA</forename></persName></author>
+              <author><persName><surname>Doms</surname><forename type="first"
+                  >RW</forename></persName></author>
+              <author><persName><surname>Fenyo</surname><forename type="first"
+                  >EM</forename></persName></author>
+              <author><persName><surname>Korber</surname><forename type="first"
+                  >BT</forename></persName></author>
+              <author><persName><surname>Littman</surname><forename type="first"
+                  >DR</forename></persName></author>
+              <author><persName><surname>Moore</surname><forename type="first"
+                  >JP</forename></persName></author>
+              <author><persName><surname>Sattentau</surname><forename type="first"
+                  >QJ</forename></persName></author>
+              <author><persName><surname>Schuitemaker</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Sodroski</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Weiss</surname><forename type="first"
+                  >RA</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nature (London)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">391</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">240</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B20">
+            <analytic>
+              <author><persName><surname>Alkhatib</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>Broder</surname><forename type="first"
+                  >CC</forename></persName></author>
+              <author><persName><surname>Berger</surname><forename type="first"
+                  >EA</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Virol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">70</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">5487</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">5494</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B21">
+            <analytic>
+              <author><persName><surname>Choe</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Farzan</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Sun</surname><forename type="first"
+                >Y</forename></persName></author>
+              <author><persName><surname>Sullivan</surname><forename type="first"
+                  >N</forename></persName></author>
+              <author><persName><surname>Rollins</surname><forename type="first"
+                  >B</forename></persName></author>
+              <author><persName><surname>Ponath</surname><forename type="first"
+                  >PD</forename></persName></author>
+              <author><persName><surname>Wu</surname><forename type="first"
+                >L</forename></persName></author>
+              <author><persName><surname>Mackay</surname><forename type="first"
+                  >CR</forename></persName></author>
+              <author><persName><surname>LaRosa</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>Newman</surname><forename type="first"
+                  >W</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Cell</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">85</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1135</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1148</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B22">
+            <analytic>
+              <author><persName><surname>Deng</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Liu</surname><forename type="first"
+                >R</forename></persName></author>
+              <author><persName><surname>Ellmeier</surname><forename type="first"
+                  >W</forename></persName></author>
+              <author><persName><surname>Choe</surname><forename type="first"
+                  >S</forename></persName></author>
+              <author><persName><surname>Unutmaz</surname><forename type="first"
+                  >D</forename></persName></author>
+              <author><persName><surname>Burkhart</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Di Marzio</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Marmon</surname><forename type="first"
+                  >S</forename></persName></author>
+              <author><persName><surname>Sutton</surname><forename type="first"
+                  >RE</forename></persName></author>
+              <author><persName><surname>Hill</surname><forename type="first"
+                  >CM</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nature (London)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">381</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">661</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">666</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B23">
+            <analytic>
+              <author><persName><surname>Doranz</surname><forename type="first"
+                  >BJ</forename></persName></author>
+              <author><persName><surname>Rucker</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Yi</surname><forename type="first"
+                >Y</forename></persName></author>
+              <author><persName><surname>Smyth</surname><forename type="first"
+                  >RJ</forename></persName></author>
+              <author><persName><surname>Samsom</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Peiper</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Parmentier</surname><forename type="first"
+                  >SC</forename></persName></author>
+              <author><persName><surname>Collman</surname><forename type="first"
+                  >RG</forename></persName></author>
+              <author><persName><surname>Doms</surname><forename type="first"
+                  >RW</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Cell</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">85</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1149</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1158</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B24">
+            <analytic>
+              <author><persName><surname>Dragic</surname><forename type="first"
+                  >T</forename></persName></author>
+              <author><persName><surname>Litwin</surname><forename type="first"
+                  >V</forename></persName></author>
+              <author><persName><surname>Allaway</surname><forename type="first"
+                  >GP</forename></persName></author>
+              <author><persName><surname>Martin</surname><forename type="first"
+                  >SR</forename></persName></author>
+              <author><persName><surname>Huang</surname><forename type="first"
+                  >Y</forename></persName></author>
+              <author><persName><surname>Nagashima</surname><forename type="first"
+                  >KA</forename></persName></author>
+              <author><persName><surname>Cayanan</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Maddon</surname><forename type="first"
+                  >PJ</forename></persName></author>
+              <author><persName><surname>Koup</surname><forename type="first"
+                  >RA</forename></persName></author>
+              <author><persName><surname>Moore</surname><forename type="first"
+                  >JP</forename></persName></author>
+              <author><persName><surname>Paxton</surname><forename type="first"
+                  >WA</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nature (London)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">381</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">667</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">673</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B25">
+            <analytic>
+              <author><persName><surname>Zhu</surname><forename type="first"
+                >T</forename></persName></author>
+              <author><persName><surname>Mo</surname><forename type="first"
+                >H</forename></persName></author>
+              <author><persName><surname>Wang</surname><forename type="first"
+                  >N</forename></persName></author>
+              <author><persName><surname>Nam</surname><forename type="first"
+                  >DS</forename></persName></author>
+              <author><persName><surname>Cao</surname><forename type="first"
+                >Y</forename></persName></author>
+              <author><persName><surname>Koup</surname><forename type="first"
+                  >RA</forename></persName></author>
+              <author><persName><surname>Ho</surname><forename type="first"
+                >DD</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Science</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1993</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">261</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1179</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1181</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B26">
+            <analytic>
+              <author><persName><surname>Bjorndal</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Deng</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Jansson</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Fiore</surname><forename type="first"
+                  >JR</forename></persName></author>
+              <author><persName><surname>Colognesi</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Karlsson</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Albert</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Scarlatti</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>Littman</surname><forename type="first"
+                  >DR</forename></persName></author>
+              <author><persName><surname>Fenyo</surname><forename type="first"
+                  >EM</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Virol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">71</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">7478</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">7487</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B27">
+            <analytic>
+              <author><persName><surname>Conner</surname><forename type="first"
+                  >RI</forename></persName></author>
+              <author><persName><surname>Sheridan</surname><forename type="first"
+                  >KE</forename></persName></author>
+              <author><persName><surname>Ceradinin</surname><forename type="first"
+                  >D</forename></persName></author>
+              <author><persName><surname>Choe</surname><forename type="first"
+                  >S</forename></persName></author>
+              <author><persName><surname>Landau</surname><forename type="first"
+                  >NR</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Exp Med</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">185</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">621</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">628</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B28">
+            <analytic>
+              <author><persName><surname>Liu</surname><forename type="first"
+                >R</forename></persName></author>
+              <author><persName><surname>Paxton</surname><forename type="first"
+                  >WA</forename></persName></author>
+              <author><persName><surname>Choe</surname><forename type="first"
+                  >S</forename></persName></author>
+              <author><persName><surname>Ceradini</surname><forename type="first"
+                  >D</forename></persName></author>
+              <author><persName><surname>Martin</surname><forename type="first"
+                  >SR</forename></persName></author>
+              <author><persName><surname>Horuk</surname><forename type="first"
+                  >R</forename></persName></author>
+              <author><persName><surname>MacDonald</surname><forename type="first"
+                  >ME</forename></persName></author>
+              <author><persName><surname>Stuhlmann</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Koup</surname><forename type="first"
+                  >RA</forename></persName></author>
+              <author><persName><surname>Landau</surname><forename type="first"
+                  >NR</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Cell</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">86</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">367</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">377</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B29">
+            <analytic>
+              <author><persName><surname>Mussico</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Lazzarin</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Nicolosi</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Gasparini</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Costigliola</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Arici</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Saracco</surname><forename type="first"
+                  >A</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Arch Intern Med (Moscow)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1994</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">154</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1971</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1976</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B30">
+            <analytic>
+              <author><persName><surname>Michael</surname><forename type="first"
+                  >NL</forename></persName></author>
+              <author><persName><surname>Nelson</surname><forename type="first"
+                  >JA</forename></persName></author>
+              <author><persName><surname>KewalRamani</surname><forename type="first"
+                  >VN</forename></persName></author>
+              <author><persName><surname>Chang</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>O'Brien</surname><forename type="first"
+                  >SJ</forename></persName></author>
+              <author><persName><surname>Mascola</surname><forename type="first"
+                  >JR</forename></persName></author>
+              <author><persName><surname>Volsky</surname><forename type="first"
+                  >B</forename></persName></author>
+              <author><persName><surname>Louder</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>White</surname><forename type="first"
+                  >GC</forename></persName></author>
+              <author><persName><surname>Littman</surname><forename type="first"
+                  >DR</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Virol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">72</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">6040</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">6047</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="book" xml:id="B31">
+            <monogr>
+              <author><persName><surname>Hethcote</surname><forename type="first"
+                  >HW</forename></persName></author>
+              <author><persName><surname>Yorke</surname><forename type="first"
+                  >JA</forename></persName></author>
+              <title level="j">Gonorrhea Transmission Dynamics and Control</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1984</date>
+                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Berlin</pubPlace>
+                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Springer</publisher>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B32">
+            <analytic>
+              <author><persName><surname>Anderson</surname><forename type="first"
+                  >RM</forename></persName></author>
+              <author><persName><surname>May</surname><forename type="first"
+                  >RM</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nature (London)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1988</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">333</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">514</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">522</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B33">
+            <analytic>
+              <author><persName><surname>Asiimwe-Okiror</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>Opio</surname><forename type="first"
+                  >AA</forename></persName></author>
+              <author><persName><surname>Musinguzi</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Madraa</surname><forename type="first"
+                  >E</forename></persName></author>
+              <author><persName><surname>Tembo</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>Carael</surname><forename type="first"
+                  >M</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">11</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1757</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1763</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B34">
+            <analytic>
+              <author><persName><surname>Carael</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Cleland</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Deheneffe</surname><forename type="first"
+                  >JC</forename></persName></author>
+              <author><persName><surname>Ferry</surname><forename type="first"
+                  >B</forename></persName></author>
+              <author><persName><surname>Ingham</surname><forename type="first"
+                  >R</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">9</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1171</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1175</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B35">
+            <analytic>
+              <author><persName><surname>Blower</surname><forename type="first"
+                  >SM</forename></persName></author>
+              <author><persName><surname>Boe</surname><forename type="first"
+                >C</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1993</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">6</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1347</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1352</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B36">
+            <analytic>
+              <author><persName><surname>Kirschner</surname><forename type="first"
+                  >D</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Appl Math</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">56</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">143</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">166</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B37">
+            <analytic>
+              <author><persName><surname>Le Pont</surname><forename type="first"
+                  >F</forename></persName></author>
+              <author><persName><surname>Blower</surname><forename type="first"
+                  >S</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1991</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">4</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">987</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">999</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B38">
+            <analytic>
+              <author><persName><surname>Kim</surname><forename type="first"
+                  >MY</forename></persName></author>
+              <author><persName><surname>Lagakos</surname><forename type="first"
+                  >SW</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Ann Epidemiol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1990</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">1</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">117</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">128</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="book" xml:id="B39">
+            <monogr>
+              <author><persName><surname>Anderson</surname><forename type="first"
+                  >RM</forename></persName></author>
+              <author><persName><surname>May</surname><forename type="first"
+                  >RM</forename></persName></author>
+              <title level="j">Infectious Disease of Humans: Dynamics and Control</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1992</date>
+                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Oxford</pubPlace>
+                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Oxford Univ. Press</publisher>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B40">
+            <analytic>
+              <author><persName><surname>Ragni</surname><forename type="first"
+                  >MV</forename></persName></author>
+              <author><persName><surname>Faruki</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Kingsley</surname><forename type="first"
+                  >LA</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Acquired Immune Defic Syndr</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">17</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">42</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">45</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B41">
+            <analytic>
+              <author><persName><surname>Kaplan</surname><forename type="first"
+                  >JE</forename></persName></author>
+              <author><persName><surname>Khabbaz</surname><forename type="first"
+                  >RF</forename></persName></author>
+              <author><persName><surname>Murphy</surname><forename type="first"
+                  >EL</forename></persName></author>
+              <author><persName><surname>Hermansen</surname><forename type="first"
+                  >S</forename></persName></author>
+              <author><persName><surname>Roberts</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Lal</surname><forename type="first"
+                >R</forename></persName></author>
+              <author><persName><surname>Heneine</surname><forename type="first"
+                  >W</forename></persName></author>
+              <author><persName><surname>Wright</surname><forename type="first"
+                  >D</forename></persName></author>
+              <author><persName><surname>Matijas</surname><forename type="first"
+                  >L</forename></persName></author>
+              <author><persName><surname>Thomson</surname><forename type="first"
+                  >R</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Acquired Immune Defic Syndr Hum Retrovirol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">12</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">193</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">201</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B42">
+            <analytic>
+              <author><persName><surname>Padian</surname><forename type="first"
+                  >NS</forename></persName></author>
+              <author><persName><surname>Shiboski</surname><forename type="first"
+                  >SC</forename></persName></author>
+              <author><persName><surname>Glass</surname><forename type="first"
+                  >SO</forename></persName></author>
+              <author><persName><surname>Vittinghoff</surname><forename type="first"
+                  >E</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Am J Edu</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">146</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">350</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">357</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B43">
+            <analytic>
+              <author><persName><surname>Leynaert</surname><forename type="first"
+                  >B</forename></persName></author>
+              <author><persName><surname>Downs</surname><forename type="first"
+                  >AM</forename></persName></author>
+              <author><persName><surname>de Vincenzi</surname><forename type="first"
+                  >I</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Am J Edu</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">148</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">88</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">96</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B44">
+            <analytic>
+              <author><persName><surname>Garnett</surname><forename type="first"
+                  >GP</forename></persName></author>
+              <author><persName><surname>Anderson</surname><forename type="first"
+                  >RM</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Acquired Immune Defic Syndr</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">9</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">500</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">513</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B45">
+            <analytic>
+              <author><persName><surname>Stigum</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Magnus</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Harris</surname><forename type="first"
+                  >JR</forename></persName></author>
+              <author><persName><surname>Samualson</surname><forename type="first"
+                  >SO</forename></persName></author>
+              <author><persName><surname>Bakketeig</surname><forename type="first"
+                  >LS</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Am J Edu</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">145</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">636</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">643</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B46">
+            <analytic>
+              <author><persName><surname>Ho</surname><forename type="first"
+                >DD</forename></persName></author>
+              <author><persName><surname>Neumann</surname><forename type="first"
+                  >AU</forename></persName></author>
+              <author><persName><surname>Perelson</surname><forename type="first"
+                  >AS</forename></persName></author>
+              <author><persName><surname>Chen</surname><forename type="first"
+                  >W</forename></persName></author>
+              <author><persName><surname>Leonard</surname><forename type="first"
+                  >JM</forename></persName></author>
+              <author><persName><surname>Markowitz</surname><forename type="first"
+                  >M</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nature (London)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">373</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">123</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">126</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="book" xml:id="B47">
+            <monogr>
+              <title level="j">World Resources (1998–1999)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
+                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Oxford</pubPlace>
+                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0">Oxford Univ. Press</publisher>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B48">
+            <analytic>
+              <author><persName><surname>Kostrikis</surname><forename type="first"
+                  >LG</forename></persName></author>
+              <author><persName><surname>Neumann</surname><forename type="first"
+                  >AU</forename></persName></author>
+              <author><persName><surname>Thomson</surname><forename type="first"
+                  >B</forename></persName></author>
+              <author><persName><surname>Korber</surname><forename type="first"
+                  >BT</forename></persName></author>
+              <author><persName><surname>McHardy</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Karanicolas</surname><forename type="first"
+                  >R</forename></persName></author>
+              <author><persName><surname>Deutsch</surname><forename type="first"
+                  >L</forename></persName></author>
+              <author><persName><surname>Huang</surname><forename type="first"
+                  >Y</forename></persName></author>
+              <author><persName><surname>Lew</surname><forename type="first"
+                  >JF</forename></persName></author>
+              <author><persName><surname>McIntosh</surname><forename type="first"
+                  >K</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Virol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">73</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">10264</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">10271</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B49">
+            <analytic>
+              <author><persName><surname>Low-Beer</surname><forename type="first"
+                  >D</forename></persName></author>
+              <author><persName><surname>Stoneburner</surname><forename type="first"
+                  >RL</forename></persName></author>
+              <author><persName><surname>Mukulu</surname><forename type="first"
+                  >A</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nat Med</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">3</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">553</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">557</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B50">
+            <analytic>
+              <author><persName><surname>Grosskurth</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Mosha</surname><forename type="first"
+                  >F</forename></persName></author>
+              <author><persName><surname>Todd</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Senkoro</surname><forename type="first"
+                  >K</forename></persName></author>
+              <author><persName><surname>Newell</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Klokke</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Changalucha</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>West</surname><forename type="first"
+                  >B</forename></persName></author>
+              <author><persName><surname>Mayaud</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Gavyole</surname><forename type="first"
+                  >A</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">9</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">927</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">934</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B51">
+            <analytic>
+              <author><persName><surname>Melo</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Beby-Defaux</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Faria</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Guiraud</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>Folgosa</surname><forename type="first"
+                  >E</forename></persName></author>
+              <author><persName><surname>Barreto</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Agius</surname><forename type="first"
+                  >G</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">2000</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">23</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">203</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">204</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B52">
+            <analytic>
+              <author><persName><surname>Iman</surname><forename type="first"
+                  >RL</forename></persName></author>
+              <author><persName><surname>Helton</surname><forename type="first"
+                  >JC</forename></persName></author>
+              <author><persName><surname>Campbell</surname><forename type="first"
+                  >JE</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Quality Technol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1981</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">13</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">174</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">183</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B53">
+            <analytic>
+              <author><persName><surname>Iman</surname><forename type="first"
+                  >RL</forename></persName></author>
+              <author><persName><surname>Helton</surname><forename type="first"
+                  >JC</forename></persName></author>
+              <author><persName><surname>Campbell</surname><forename type="first"
+                  >JE</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">J Quality Technol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1981</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">13</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">232</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">240</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B54">
+            <analytic>
+              <author><persName><surname>Blower</surname><forename type="first"
+                  >SM</forename></persName></author>
+              <author><persName><surname>Dowlatabadi</surname><forename type="first"
+                  >H</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Int Stat Rev</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1994</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">62</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">229</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">243</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B55">
+            <analytic>
+              <author><persName><surname>Porco</surname><forename type="first"
+                  >TC</forename></persName></author>
+              <author><persName><surname>Blower</surname><forename type="first"
+                  >SM</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Theor Popul Biol</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">54</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">117</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">132</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B56">
+            <analytic>
+              <author><persName><surname>Blower</surname><forename type="first"
+                  >SM</forename></persName></author>
+              <author><persName><surname>Porco</surname><forename type="first"
+                  >TC</forename></persName></author>
+              <author><persName><surname>Darby</surname><forename type="first"
+                  >G</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nat Med</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">4</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">673</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">678</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B57">
+            <analytic>
+              <author><persName><surname>Libert</surname><forename type="first"
+                  >F</forename></persName></author>
+              <author><persName><surname>Cochaux</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Beckman</surname><forename type="first"
+                  >G</forename></persName></author>
+              <author><persName><surname>Samson</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Aksenova</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Cao</surname><forename type="first"
+                >A</forename></persName></author>
+              <author><persName><surname>Czeizel</surname><forename type="first"
+                  >A</forename></persName></author>
+              <author><persName><surname>Claustres</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>de la Rua</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Ferrari</surname><forename type="first"
+                  >M</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Hum Mol Genet</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">7</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">399</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">406</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B58">
+            <analytic>
+              <author><persName><surname>Lalani</surname><forename type="first"
+                  >AS</forename></persName></author>
+              <author><persName><surname>Masters</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Zeng</surname><forename type="first"
+                  >W</forename></persName></author>
+              <author><persName><surname>Barrett</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Pannu</surname><forename type="first"
+                  >R</forename></persName></author>
+              <author><persName><surname>Everett</surname><forename type="first"
+                  >H</forename></persName></author>
+              <author><persName><surname>Arendt</surname><forename type="first"
+                  >CW</forename></persName></author>
+              <author><persName><surname>McFadden</surname><forename type="first"
+                  >G</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Science</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">286</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1968</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1971</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B59">
+            <analytic>
+              <author><persName><surname>Kermack</surname><forename type="first"
+                  >WO</forename></persName></author>
+              <author><persName><surname>McKendrick</surname><forename type="first"
+                  >AG</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Proc R Soc London</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1927</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">261</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">700</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">721</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B60">
+            <analytic>
+              <author><persName><surname>Gupta</surname><forename type="first"
+                  >S</forename></persName></author>
+              <author><persName><surname>Hill</surname><forename type="first"
+                  >AVS</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Proc R Soc London Ser B</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">260</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">271</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">277</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B61">
+            <analytic>
+              <author><persName><surname>Ruwende</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Khoo</surname><forename type="first"
+                  >SC</forename></persName></author>
+              <author><persName><surname>Snow</surname><forename type="first"
+                  >RW</forename></persName></author>
+              <author><persName><surname>Yates</surname><forename type="first"
+                  >SNR</forename></persName></author>
+              <author><persName><surname>Kwiatkowski</surname><forename type="first"
+                  >D</forename></persName></author>
+              <author><persName><surname>Gupta</surname><forename type="first"
+                  >S</forename></persName></author>
+              <author><persName><surname>Warn</surname><forename type="first"
+                  >P</forename></persName></author>
+              <author><persName><surname>Allsopp</surname><forename type="first"
+                  >CE</forename></persName></author>
+              <author><persName><surname>Gilbert</surname><forename type="first"
+                  >SC</forename></persName></author>
+              <author><persName><surname>Peschu</surname><forename type="first"
+                  >N</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nature (London)</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">376</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">246</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">249</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B62">
+            <analytic>
+              <author><persName><surname>McDermott</surname><forename type="first"
+                  >DH</forename></persName></author>
+              <author><persName><surname>Zimmerman</surname><forename type="first"
+                  >PA</forename></persName></author>
+              <author><persName><surname>Guignard</surname><forename type="first"
+                  >F</forename></persName></author>
+              <author><persName><surname>Kleeberger</surname><forename type="first"
+                  >CA</forename></persName></author>
+              <author><persName><surname>Leitman</surname><forename type="first"
+                  >SF</forename></persName></author>
+              <author><persName><surname>Murphy</surname><forename type="first"
+                  >PM</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Lancet</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">352</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">866</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">870</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B63">
+            <analytic>
+              <author><persName><surname>Kostrikis</surname><forename type="first"
+                  >LG</forename></persName></author>
+              <author><persName><surname>Huang</surname><forename type="first"
+                  >Y</forename></persName></author>
+              <author><persName><surname>Moore</surname><forename type="first"
+                  >JP</forename></persName></author>
+              <author><persName><surname>Wolinsky</surname><forename type="first"
+                  >SM</forename></persName></author>
+              <author><persName><surname>Zhang</surname><forename type="first"
+                  >L</forename></persName></author>
+              <author><persName><surname>Guo</surname><forename type="first"
+                >Y</forename></persName></author>
+              <author><persName><surname>Deutsch</surname><forename type="first"
+                  >L</forename></persName></author>
+              <author><persName><surname>Phair</surname><forename type="first"
+                  >J</forename></persName></author>
+              <author><persName><surname>Neumann</surname><forename type="first"
+                  >AU</forename></persName></author>
+              <author><persName><surname>Ho</surname><forename type="first"
+                >DD</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Nat Med</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">4</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">350</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">353</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B64">
+            <analytic>
+              <author><persName><surname>Winkler</surname><forename type="first"
+                  >C</forename></persName></author>
+              <author><persName><surname>Modi</surname><forename type="first"
+                  >W</forename></persName></author>
+              <author><persName><surname>Smith</surname><forename type="first"
+                  >MW</forename></persName></author>
+              <author><persName><surname>Nelson</surname><forename type="first"
+                  >GW</forename></persName></author>
+              <author><persName><surname>Wu</surname><forename type="first"
+                >X</forename></persName></author>
+              <author><persName><surname>Carrington</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Dean</surname><forename type="first"
+                  >M</forename></persName></author>
+              <author><persName><surname>Honjo</surname><forename type="first"
+                  >T</forename></persName></author>
+              <author><persName><surname>Tashiro</surname><forename type="first"
+                  >K</forename></persName></author>
+              <author><persName><surname>Yabe</surname><forename type="first"
+                  >D</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">Science</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">279</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">389</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">393</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B65">
+            <analytic>
+              <author><persName><surname>Martinson</surname><forename type="first"
+                  >JJ</forename></persName></author>
+              <author><persName><surname>Hong</surname><forename type="first"
+                  >L</forename></persName></author>
+              <author><persName><surname>Karanicolas</surname><forename type="first"
+                  >R</forename></persName></author>
+              <author><persName><surname>Moore</surname><forename type="first"
+                  >JP</forename></persName></author>
+              <author><persName><surname>Kostrikis</surname><forename type="first"
+                  >LG</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">2000</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">14</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">483</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">489</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+          <biblStruct type="article" xml:id="B66">
+            <analytic>
+              <author><persName><surname>Vernazza</surname><forename type="first"
+                  >PL</forename></persName></author>
+              <author><persName><surname>Eron</surname><forename type="first"
+                  >JJ</forename></persName></author>
+              <author><persName><surname>Fiscus</surname><forename type="first"
+                  >SA</forename></persName></author>
+              <author><persName><surname>Cohen</surname><forename type="first"
+                  >MS</forename></persName></author>
+            </analytic>
+            <monogr>
+              <title level="j">AIDS</title>
+              <imprint>
+                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">13</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">155</biblScope>
+                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">166</biblScope>
+              </imprint>
+            </monogr>
+          </biblStruct>
+        </listBibl>
+      </div>
+    </back>
+  </text>
+</TEI>

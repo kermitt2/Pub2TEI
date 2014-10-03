@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
@@ -551,92 +551,6 @@
     </xsl:template>
 
     <!-- Tables -->
-    <xsl:template match="table-wrap">
-        <figure type="table">
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </figure>
-    </xsl:template>
-
-    <xsl:template match="table-wrap/label">
-        <head>
-            <xsl:apply-templates/>
-        </head>
-    </xsl:template>
-
-    <xsl:template match="table-wrap-foot">
-        <ab type="table-wrap-foot">
-            <xsl:apply-templates/>
-        </ab>
-    </xsl:template>
-
-    <xsl:template match="table-wrap-foot/fn">
-        <note place="inline">
-            <xsl:if test="@fn-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@fn-type"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </note>
-    </xsl:template>
-
-    <xsl:template match="thead/tr">
-        <row role="label">
-            <xsl:apply-templates/>
-        </row>
-    </xsl:template>
-
-    <xsl:template match="thead">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="tbody">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="table-wrap/table">
-        <ab>
-            <table>
-                <xsl:apply-templates/>
-            </table>
-        </ab>
-    </xsl:template>
-
-    <xsl:template match="array">
-        <ab type="array">
-            <table>
-                <xsl:apply-templates/>
-            </table>
-        </ab>
-    </xsl:template>
-
-    <xsl:template match="tr">
-        <row>
-            <xsl:apply-templates/>
-        </row>
-    </xsl:template>
-
-    <xsl:template match="th">
-        <cell role="th">
-            <xsl:apply-templates/>
-        </cell>
-    </xsl:template>
-
-    <xsl:template match="td">
-        <cell role="td">
-            <xsl:apply-templates/>
-        </cell>
-    </xsl:template>
 
     <xsl:template match="hr">
         <milestone unit="hr"/>
@@ -678,7 +592,7 @@
                 <xsl:value-of select="@ref-type"/>
             </xsl:attribute>
             <xsl:attribute name="target">
-                <xsl:value-of select="@rid"/>
+                <xsl:value-of select="concat('#',@rid)"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </ref>

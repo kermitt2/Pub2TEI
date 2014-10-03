@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0">
     <xsl:output encoding="UTF-8" method="xml"/>
 
@@ -194,12 +194,6 @@
         <persName>
             <xsl:apply-templates/>
         </persName>
-    </xsl:template>
-
-    <xsl:template match="role">
-        <roleName>
-            <xsl:apply-templates/>
-        </roleName>
     </xsl:template>
 
     <xsl:template match="Contact">
@@ -429,13 +423,6 @@
         <head>
             <xsl:apply-templates/>
         </head>
-    </xsl:template>
-
-    <xsl:template match="ack">
-        <div type="acknowledgements">
-            <head>Acknowledgements</head>
-            <xsl:apply-templates/>
-        </div>
     </xsl:template>
 
     <!-- Figures -->
