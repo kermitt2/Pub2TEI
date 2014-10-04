@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
-    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" exclude-result-prefixes="#all">
 
     <xd:doc scope="stylesheet">
         <xd:desc>
@@ -17,6 +17,7 @@
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="article[front]">
+        <xsl:message>NLM2TEI-article.xsl</xsl:message>
         <TEI>
             <xsl:if test="@xml:lang">
                 <xsl:copy-of select="@xml:lang"/>

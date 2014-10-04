@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
-    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:tei="http://www.tei-c.org/ns/1.0">
+    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
     <xsl:variable name="journalList" select="document('JournalList.xml')"/>
@@ -275,7 +275,7 @@
 
     <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno">
         <xsl:if test=".!=''">
-            <biblScope type="vol">
+            <biblScope unit="vol">
                 <xsl:apply-templates/>
             </biblScope>
         </xsl:if>
@@ -288,7 +288,7 @@
 
     <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref">
         <xsl:if test=".!=''">
-            <biblScope type="issue">
+            <biblScope unit="issue">
                 <xsl:apply-templates/>
             </biblScope>
         </xsl:if>
@@ -302,7 +302,7 @@
 
     <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page">
         <xsl:if test=".!=''">
-            <biblScope type="fpage">
+            <biblScope unit="page" from="{.}">
                 <xsl:apply-templates/>
             </biblScope>
         </xsl:if>
@@ -310,7 +310,7 @@
 
     <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page">
         <xsl:if test=".!=''">
-            <biblScope type="lpage">
+            <biblScope unit="page" to="{.}">
                 <xsl:apply-templates/>
             </biblScope>
         </xsl:if>
