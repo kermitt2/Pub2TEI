@@ -5,7 +5,10 @@
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- TEI document structure, creation of main header components, front (abstract), body, and back -->
+    <!-- Le format de la RCS utilise essentiellement des composant NLM en ayant pris le soin (!) de définir ses propres constructions ici el là. -->
+    <!-- On sent le travail visionaire du grouillot... -->
     <xsl:template match="article[art-admin]">
+        <xsl:message>RoyalChemicalSociety.xsl</xsl:message>
         <TEI>
             <teiHeader>
                 <fileDesc>

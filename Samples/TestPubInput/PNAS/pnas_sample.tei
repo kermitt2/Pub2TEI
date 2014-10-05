@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0"
-  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
-  xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xml:lang="en">
+<?xml-model href="../../../Schemas/IstexSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-          xmlns:tei="http://www.tei-c.org/ns/1.0" level="a" type="main">The coreceptor mutation
-          CCR5Δ32 influences the dynamics of HIV epidemics and is selected for by HIV</title>
+        <title level="a" type="main">The coreceptor mutation CCR5Δ32 influences the dynamics of HIV
+          epidemics and is selected for by HIV</title>
       </titleStmt>
       <publicationStmt>
+        <publisher>The National Academy of Sciences</publisher>
         <availability>
           <p>Copyright © 2001, The National Academy of Sciences</p>
         </availability>
@@ -26,43 +25,28 @@
                 >Janis</forename></persName></author>
             <author><persName><surname>Kirschner</surname><forename type="first"
                 >Denise</forename></persName><note place="foot"><p>† To whom reprint requests should
-                  be addressed. E-mail: <email xmlns:tei="http://www.tei-c.org/ns/1.0"
-                    >kirschne@umich.edu</email>.</p></note></author>
-            <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-              xmlns:tei="http://www.tei-c.org/ns/1.0" level="a" type="main">The coreceptor mutation
-              CCR5Δ32 influences the dynamics of HIV epidemics and is selected for by HIV</title>
+                  be addressed. E-mail: <email>kirschne@umich.edu</email>.</p></note></author>
+            <title level="a" type="main">The coreceptor mutation CCR5Δ32 influences the dynamics of
+              HIV epidemics and is selected for by HIV</title>
           </analytic>
           <monogr>
-            <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-              xmlns:tei="http://www.tei-c.org/ns/1.0" level="j" type="pmc">pnas</title>
-            <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-              xmlns:tei="http://www.tei-c.org/ns/1.0" level="j" type="pubmed">Proc Natl Acad Sci U S
-              A</title>
-            <title xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-              xmlns:tei="http://www.tei-c.org/ns/1.0" level="j" type="publisher">PNAS</title>
-            <idno xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-              xmlns:tei="http://www.tei-c.org/ns/1.0" type="ISSN">0027-8424</idno>
+            <title level="j" type="pmc">pnas</title>
+            <title level="j" type="pubmed">Proc Natl Acad Sci U S A</title>
+            <title level="j" type="publisher">PNAS</title>
+            <idno type="ISSN">0027-8424</idno>
             <imprint>
-              <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                xmlns:tei="http://www.tei-c.org/ns/1.0">The National Academy of Sciences</publisher>
+              <publisher>The National Academy of Sciences</publisher>
               <date type="Published" when="2001-08-28"/>
               <date type="ePublished" when="2001-08-21"/>
-              <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">98</biblScope>
-              <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                xmlns:tei="http://www.tei-c.org/ns/1.0" type="issue">18</biblScope>
-              <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">10214</biblScope>
-              <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">10219</biblScope>
+              <biblScope unit="vol">98</biblScope>
+              <biblScope unit="issue">18</biblScope>
+              <biblScope unit="page" from="10214">10214</biblScope>
+              <biblScope unit="page" to="10219">10219</biblScope>
             </imprint>
           </monogr>
-          <idno xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-            xmlns:tei="http://www.tei-c.org/ns/1.0" type="publisherID">181325198</idno>
-          <idno xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-            xmlns:tei="http://www.tei-c.org/ns/1.0" type="publisherID">3251</idno>
-          <idno xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-            xmlns:tei="http://www.tei-c.org/ns/1.0" type="DOI">10.1073/pnas.181325198</idno>
+          <idno type="publisherID">181325198</idno>
+          <idno type="publisherID">3251</idno>
+          <idno type="DOI">10.1073/pnas.181325198</idno>
           <idno type="other">jPNAS.v98.i18.pg10214</idno>
           <idno type="pmid">11517319</idno>
         </biblStruct>
@@ -1191,13 +1175,10 @@
             <monogr>
               <title level="j">Leprosy Rev</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">2001</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">72</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">92</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">98</biblScope>
+                <date type="year">2001</date>
+                <biblScope unit="vol">72</biblScope>
+                <biblScope unit="page" from="92">92</biblScope>
+                <biblScope unit="page" to="98">98</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1217,13 +1198,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">12</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">197</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">203</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">12</biblScope>
+                <biblScope unit="page" from="197">197</biblScope>
+                <biblScope unit="page" to="203">203</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1231,11 +1209,9 @@
             <monogr>
               <title level="j">AIDS Epidemic Update</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Geneva</pubPlace>
-                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">World Health Organization</publisher>
+                <date type="year">1998</date>
+                <pubPlace>Geneva</pubPlace>
+                <publisher>World Health Organization</publisher>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1249,13 +1225,10 @@
             <monogr>
               <title level="j">Nat Med</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">2</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1293</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1300</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">2</biblScope>
+                <biblScope unit="page" from="1293">1293</biblScope>
+                <biblScope unit="page" to="1300">1300</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1275,13 +1248,10 @@
             <monogr>
               <title level="j">Nat Genet</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">16</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">100</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">103</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">16</biblScope>
+                <biblScope unit="page" from="100">100</biblScope>
+                <biblScope unit="page" to="103">103</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1305,13 +1275,10 @@
             <monogr>
               <title level="j">J Infect Dis</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1992</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">165</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">427</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">432</biblScope>
+                <date type="year">1992</date>
+                <biblScope unit="vol">165</biblScope>
+                <biblScope unit="page" from="427">427</biblScope>
+                <biblScope unit="page" to="432">432</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1333,11 +1300,9 @@
             <monogr>
               <title level="j">Lancet</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">349</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1884</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">349</biblScope>
+                <biblScope unit="page" from="1884">1884</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1369,13 +1334,10 @@
             <monogr>
               <title level="j">J Acquired Immune Defic Syndr Hum Retrovirol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">16</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">10</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">14</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">16</biblScope>
+                <biblScope unit="page" from="10">10</biblScope>
+                <biblScope unit="page" to="14">14</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1393,13 +1355,10 @@
             <monogr>
               <title level="j">Science</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">273</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1856</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1862</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">273</biblScope>
+                <biblScope unit="page" from="1856">1856</biblScope>
+                <biblScope unit="page" to="1862">1862</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1427,13 +1386,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">11</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">F73</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">F78</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">11</biblScope>
+                <biblScope unit="page" from="F73">F73</biblScope>
+                <biblScope unit="page" to="F78">F78</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1463,13 +1419,10 @@
             <monogr>
               <title level="j">Science</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">277</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">959</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">965</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">277</biblScope>
+                <biblScope unit="page" from="959">959</biblScope>
+                <biblScope unit="page" to="965">965</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1499,13 +1452,10 @@
             <monogr>
               <title level="j">Nature (London)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">382</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">722</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">725</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">382</biblScope>
+                <biblScope unit="page" from="722">722</biblScope>
+                <biblScope unit="page" to="725">725</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1523,13 +1473,10 @@
             <monogr>
               <title level="j">Emerging Infect Dis</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">3</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">261</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">271</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">3</biblScope>
+                <biblScope unit="page" from="261">261</biblScope>
+                <biblScope unit="page" to="271">271</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1553,13 +1500,10 @@
             <monogr>
               <title level="j">Nat Med</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">3</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">338</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">340</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">3</biblScope>
+                <biblScope unit="page" from="338">338</biblScope>
+                <biblScope unit="page" to="340">340</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1589,13 +1533,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">11</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1873</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1880</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">11</biblScope>
+                <biblScope unit="page" from="1873">1873</biblScope>
+                <biblScope unit="page" to="1880">1880</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1615,13 +1556,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">13</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">487</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">494</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">13</biblScope>
+                <biblScope unit="page" from="487">487</biblScope>
+                <biblScope unit="page" to="494">494</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1629,12 +1567,9 @@
             <monogr>
               <title level="j">HIV/AIDS Surveillance Database</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
-                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Washington, DC</pubPlace>
-                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Population Division, International
-                  Programs Center</publisher>
+                <date type="year">1999</date>
+                <pubPlace>Washington, DC</pubPlace>
+                <publisher>Population Division, International Programs Center</publisher>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1650,13 +1585,10 @@
             <monogr>
               <title level="j">Nature (London)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1988</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">332</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">228</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">234</biblScope>
+                <date type="year">1988</date>
+                <biblScope unit="vol">332</biblScope>
+                <biblScope unit="page" from="228">228</biblScope>
+                <biblScope unit="page" to="234">234</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1686,11 +1618,9 @@
             <monogr>
               <title level="j">Nature (London)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">391</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">240</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">391</biblScope>
+                <biblScope unit="page" from="240">240</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1706,13 +1636,10 @@
             <monogr>
               <title level="j">J Virol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">70</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">5487</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">5494</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">70</biblScope>
+                <biblScope unit="page" from="5487">5487</biblScope>
+                <biblScope unit="page" to="5494">5494</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1742,13 +1669,10 @@
             <monogr>
               <title level="j">Cell</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">85</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1135</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1148</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">85</biblScope>
+                <biblScope unit="page" from="1135">1135</biblScope>
+                <biblScope unit="page" to="1148">1148</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1778,13 +1702,10 @@
             <monogr>
               <title level="j">Nature (London)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">381</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">661</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">666</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">381</biblScope>
+                <biblScope unit="page" from="661">661</biblScope>
+                <biblScope unit="page" to="666">666</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1812,13 +1733,10 @@
             <monogr>
               <title level="j">Cell</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">85</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1149</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1158</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">85</biblScope>
+                <biblScope unit="page" from="1149">1149</biblScope>
+                <biblScope unit="page" to="1158">1158</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1850,13 +1768,10 @@
             <monogr>
               <title level="j">Nature (London)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">381</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">667</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">673</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">381</biblScope>
+                <biblScope unit="page" from="667">667</biblScope>
+                <biblScope unit="page" to="673">673</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1880,13 +1795,10 @@
             <monogr>
               <title level="j">Science</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1993</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">261</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1179</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1181</biblScope>
+                <date type="year">1993</date>
+                <biblScope unit="vol">261</biblScope>
+                <biblScope unit="page" from="1179">1179</biblScope>
+                <biblScope unit="page" to="1181">1181</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1916,13 +1828,10 @@
             <monogr>
               <title level="j">J Virol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">71</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">7478</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">7487</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">71</biblScope>
+                <biblScope unit="page" from="7478">7478</biblScope>
+                <biblScope unit="page" to="7487">7487</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1942,13 +1851,10 @@
             <monogr>
               <title level="j">J Exp Med</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">185</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">621</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">628</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">185</biblScope>
+                <biblScope unit="page" from="621">621</biblScope>
+                <biblScope unit="page" to="628">628</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -1978,13 +1884,10 @@
             <monogr>
               <title level="j">Cell</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">86</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">367</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">377</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">86</biblScope>
+                <biblScope unit="page" from="367">367</biblScope>
+                <biblScope unit="page" to="377">377</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2008,13 +1911,10 @@
             <monogr>
               <title level="j">Arch Intern Med (Moscow)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1994</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">154</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1971</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1976</biblScope>
+                <date type="year">1994</date>
+                <biblScope unit="vol">154</biblScope>
+                <biblScope unit="page" from="1971">1971</biblScope>
+                <biblScope unit="page" to="1976">1976</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2044,13 +1944,10 @@
             <monogr>
               <title level="j">J Virol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">72</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">6040</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">6047</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">72</biblScope>
+                <biblScope unit="page" from="6040">6040</biblScope>
+                <biblScope unit="page" to="6047">6047</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2062,11 +1959,9 @@
                   >JA</forename></persName></author>
               <title level="j">Gonorrhea Transmission Dynamics and Control</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1984</date>
-                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Berlin</pubPlace>
-                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Springer</publisher>
+                <date type="year">1984</date>
+                <pubPlace>Berlin</pubPlace>
+                <publisher>Springer</publisher>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2080,13 +1975,10 @@
             <monogr>
               <title level="j">Nature (London)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1988</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">333</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">514</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">522</biblScope>
+                <date type="year">1988</date>
+                <biblScope unit="vol">333</biblScope>
+                <biblScope unit="page" from="514">514</biblScope>
+                <biblScope unit="page" to="522">522</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2108,13 +2000,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">11</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1757</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1763</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">11</biblScope>
+                <biblScope unit="page" from="1757">1757</biblScope>
+                <biblScope unit="page" to="1763">1763</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2134,13 +2023,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">9</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1171</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1175</biblScope>
+                <date type="year">1995</date>
+                <biblScope unit="vol">9</biblScope>
+                <biblScope unit="page" from="1171">1171</biblScope>
+                <biblScope unit="page" to="1175">1175</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2154,13 +2040,10 @@
             <monogr>
               <title level="j">J AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1993</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">6</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1347</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1352</biblScope>
+                <date type="year">1993</date>
+                <biblScope unit="vol">6</biblScope>
+                <biblScope unit="page" from="1347">1347</biblScope>
+                <biblScope unit="page" to="1352">1352</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2172,13 +2055,10 @@
             <monogr>
               <title level="j">J Appl Math</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">56</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">143</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">166</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">56</biblScope>
+                <biblScope unit="page" from="143">143</biblScope>
+                <biblScope unit="page" to="166">166</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2192,13 +2072,10 @@
             <monogr>
               <title level="j">J AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1991</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">4</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">987</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">999</biblScope>
+                <date type="year">1991</date>
+                <biblScope unit="vol">4</biblScope>
+                <biblScope unit="page" from="987">987</biblScope>
+                <biblScope unit="page" to="999">999</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2212,13 +2089,10 @@
             <monogr>
               <title level="j">Ann Epidemiol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1990</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">1</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">117</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">128</biblScope>
+                <date type="year">1990</date>
+                <biblScope unit="vol">1</biblScope>
+                <biblScope unit="page" from="117">117</biblScope>
+                <biblScope unit="page" to="128">128</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2230,11 +2104,9 @@
                   >RM</forename></persName></author>
               <title level="j">Infectious Disease of Humans: Dynamics and Control</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1992</date>
-                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Oxford</pubPlace>
-                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Oxford Univ. Press</publisher>
+                <date type="year">1992</date>
+                <pubPlace>Oxford</pubPlace>
+                <publisher>Oxford Univ. Press</publisher>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2250,13 +2122,10 @@
             <monogr>
               <title level="j">J Acquired Immune Defic Syndr</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">17</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">42</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">45</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">17</biblScope>
+                <biblScope unit="page" from="42">42</biblScope>
+                <biblScope unit="page" to="45">45</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2286,13 +2155,10 @@
             <monogr>
               <title level="j">J Acquired Immune Defic Syndr Hum Retrovirol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1996</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">12</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">193</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">201</biblScope>
+                <date type="year">1996</date>
+                <biblScope unit="vol">12</biblScope>
+                <biblScope unit="page" from="193">193</biblScope>
+                <biblScope unit="page" to="201">201</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2310,13 +2176,10 @@
             <monogr>
               <title level="j">Am J Edu</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">146</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">350</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">357</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">146</biblScope>
+                <biblScope unit="page" from="350">350</biblScope>
+                <biblScope unit="page" to="357">357</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2332,13 +2195,10 @@
             <monogr>
               <title level="j">Am J Edu</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">148</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">88</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">96</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">148</biblScope>
+                <biblScope unit="page" from="88">88</biblScope>
+                <biblScope unit="page" to="96">96</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2352,13 +2212,10 @@
             <monogr>
               <title level="j">J Acquired Immune Defic Syndr</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">9</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">500</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">513</biblScope>
+                <date type="year">1995</date>
+                <biblScope unit="vol">9</biblScope>
+                <biblScope unit="page" from="500">500</biblScope>
+                <biblScope unit="page" to="513">513</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2378,13 +2235,10 @@
             <monogr>
               <title level="j">Am J Edu</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">145</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">636</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">643</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">145</biblScope>
+                <biblScope unit="page" from="636">636</biblScope>
+                <biblScope unit="page" to="643">643</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2406,13 +2260,10 @@
             <monogr>
               <title level="j">Nature (London)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">373</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">123</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">126</biblScope>
+                <date type="year">1995</date>
+                <biblScope unit="vol">373</biblScope>
+                <biblScope unit="page" from="123">123</biblScope>
+                <biblScope unit="page" to="126">126</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2420,11 +2271,9 @@
             <monogr>
               <title level="j">World Resources (1998–1999)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
-                <pubPlace xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Oxford</pubPlace>
-                <publisher xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0">Oxford Univ. Press</publisher>
+                <date type="year">1999</date>
+                <pubPlace>Oxford</pubPlace>
+                <publisher>Oxford Univ. Press</publisher>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2454,13 +2303,10 @@
             <monogr>
               <title level="j">J Virol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">73</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">10264</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">10271</biblScope>
+                <date type="year">1999</date>
+                <biblScope unit="vol">73</biblScope>
+                <biblScope unit="page" from="10264">10264</biblScope>
+                <biblScope unit="page" to="10271">10271</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2476,13 +2322,10 @@
             <monogr>
               <title level="j">Nat Med</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1997</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">3</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">553</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">557</biblScope>
+                <date type="year">1997</date>
+                <biblScope unit="vol">3</biblScope>
+                <biblScope unit="page" from="553">553</biblScope>
+                <biblScope unit="page" to="557">557</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2512,13 +2355,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">9</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">927</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">934</biblScope>
+                <date type="year">1995</date>
+                <biblScope unit="vol">9</biblScope>
+                <biblScope unit="page" from="927">927</biblScope>
+                <biblScope unit="page" to="934">934</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2542,13 +2382,10 @@
             <monogr>
               <title level="j">J AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">2000</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">23</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">203</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">204</biblScope>
+                <date type="year">2000</date>
+                <biblScope unit="vol">23</biblScope>
+                <biblScope unit="page" from="203">203</biblScope>
+                <biblScope unit="page" to="204">204</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2564,13 +2401,10 @@
             <monogr>
               <title level="j">J Quality Technol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1981</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">13</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">174</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">183</biblScope>
+                <date type="year">1981</date>
+                <biblScope unit="vol">13</biblScope>
+                <biblScope unit="page" from="174">174</biblScope>
+                <biblScope unit="page" to="183">183</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2586,13 +2420,10 @@
             <monogr>
               <title level="j">J Quality Technol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1981</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">13</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">232</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">240</biblScope>
+                <date type="year">1981</date>
+                <biblScope unit="vol">13</biblScope>
+                <biblScope unit="page" from="232">232</biblScope>
+                <biblScope unit="page" to="240">240</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2606,13 +2437,10 @@
             <monogr>
               <title level="j">Int Stat Rev</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1994</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">62</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">229</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">243</biblScope>
+                <date type="year">1994</date>
+                <biblScope unit="vol">62</biblScope>
+                <biblScope unit="page" from="229">229</biblScope>
+                <biblScope unit="page" to="243">243</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2626,13 +2454,10 @@
             <monogr>
               <title level="j">Theor Popul Biol</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">54</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">117</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">132</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">54</biblScope>
+                <biblScope unit="page" from="117">117</biblScope>
+                <biblScope unit="page" to="132">132</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2648,13 +2473,10 @@
             <monogr>
               <title level="j">Nat Med</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">4</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">673</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">678</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">4</biblScope>
+                <biblScope unit="page" from="673">673</biblScope>
+                <biblScope unit="page" to="678">678</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2684,13 +2506,10 @@
             <monogr>
               <title level="j">Hum Mol Genet</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">7</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">399</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">406</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">7</biblScope>
+                <biblScope unit="page" from="399">399</biblScope>
+                <biblScope unit="page" to="406">406</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2716,13 +2535,10 @@
             <monogr>
               <title level="j">Science</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">286</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">1968</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">1971</biblScope>
+                <date type="year">1999</date>
+                <biblScope unit="vol">286</biblScope>
+                <biblScope unit="page" from="1968">1968</biblScope>
+                <biblScope unit="page" to="1971">1971</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2736,13 +2552,10 @@
             <monogr>
               <title level="j">Proc R Soc London</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1927</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">261</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">700</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">721</biblScope>
+                <date type="year">1927</date>
+                <biblScope unit="vol">261</biblScope>
+                <biblScope unit="page" from="700">700</biblScope>
+                <biblScope unit="page" to="721">721</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2756,13 +2569,10 @@
             <monogr>
               <title level="j">Proc R Soc London Ser B</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">260</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">271</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">277</biblScope>
+                <date type="year">1995</date>
+                <biblScope unit="vol">260</biblScope>
+                <biblScope unit="page" from="271">271</biblScope>
+                <biblScope unit="page" to="277">277</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2792,13 +2602,10 @@
             <monogr>
               <title level="j">Nature (London)</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1995</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">376</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">246</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">249</biblScope>
+                <date type="year">1995</date>
+                <biblScope unit="vol">376</biblScope>
+                <biblScope unit="page" from="246">246</biblScope>
+                <biblScope unit="page" to="249">249</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2820,13 +2627,10 @@
             <monogr>
               <title level="j">Lancet</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">352</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">866</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">870</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">352</biblScope>
+                <biblScope unit="page" from="866">866</biblScope>
+                <biblScope unit="page" to="870">870</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2856,13 +2660,10 @@
             <monogr>
               <title level="j">Nat Med</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">4</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">350</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">353</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">4</biblScope>
+                <biblScope unit="page" from="350">350</biblScope>
+                <biblScope unit="page" to="353">353</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2892,13 +2693,10 @@
             <monogr>
               <title level="j">Science</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1998</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">279</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">389</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">393</biblScope>
+                <date type="year">1998</date>
+                <biblScope unit="vol">279</biblScope>
+                <biblScope unit="page" from="389">389</biblScope>
+                <biblScope unit="page" to="393">393</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2918,13 +2716,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">2000</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">14</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">483</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">489</biblScope>
+                <date type="year">2000</date>
+                <biblScope unit="vol">14</biblScope>
+                <biblScope unit="page" from="483">483</biblScope>
+                <biblScope unit="page" to="489">489</biblScope>
               </imprint>
             </monogr>
           </biblStruct>
@@ -2942,13 +2737,10 @@
             <monogr>
               <title level="j">AIDS</title>
               <imprint>
-                <date xmlns:tei="http://www.tei-c.org/ns/1.0" type="year">1999</date>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="vol">13</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="fpage">155</biblScope>
-                <biblScope xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-                  xmlns:tei="http://www.tei-c.org/ns/1.0" type="lpage">166</biblScope>
+                <date type="year">1999</date>
+                <biblScope unit="vol">13</biblScope>
+                <biblScope unit="page" from="155">155</biblScope>
+                <biblScope unit="page" to="166">166</biblScope>
               </imprint>
             </monogr>
           </biblStruct>

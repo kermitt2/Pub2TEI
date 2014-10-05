@@ -28,6 +28,7 @@
                         <xsl:apply-templates select="front/article-meta/title-group/article-title"/>
                     </titleStmt>
                     <publicationStmt>
+                        <xsl:apply-templates select="front/journal-meta/publisher/*"/>
                         <xsl:apply-templates select="front/article-meta/permissions/*"/>
                         <xsl:if test="not(front/article-meta/permissions)">
                             <xsl:apply-templates select="front/article-meta/copyright-statement"/>

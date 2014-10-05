@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../Schemas/IstexSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
@@ -7,6 +8,7 @@
           length and context</title>
       </titleStmt>
       <publicationStmt>
+        <publisher>BMJ</publisher>
         <availability>
           <p>Copyright © 2002, BMJ</p>
         </availability>
@@ -69,225 +71,210 @@
   </teiHeader>
   <text>
     <body>
-      <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">In 1999 Shah<ref type="bibr" target="#B1"
-          >1</ref> and others said that the Royal College of General Practitioners should advocate
-        longer consultations in general practice as a matter of policy. The college set up a working
-        group chaired by A P Hungin, and a systematic review of literature on consultation length in
-        general practice was commissioned. The working group agreed that the available evidence
-        would be hard to interpret without discussion of the changing context within which
-        consultations now take place. For many years general practitioners and those who have
-        surveyed patients' opinions in the United Kingdom have complained about short consultation
-        time, despite a steady increase in actual mean length. Recently Mechanic pointed out that
-        this is also true in the United States.<ref type="bibr" target="#B2">2</ref> Is there any
-        justification for a further increase in mean time allocated per consultation in general
-        practice?</p>
-      <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">We report on the outcome of extensive
-        debate among a group of general practitioners with an interest in the process of care, with
-        reference to the interim findings of the commissioned systematic review and our personal
-        databases. The review identified 14 relevant papers. </p>
+      <p>In 1999 Shah<ref type="bibr" target="#B1">1</ref> and others said that the Royal College of
+        General Practitioners should advocate longer consultations in general practice as a matter
+        of policy. The college set up a working group chaired by A P Hungin, and a systematic review
+        of literature on consultation length in general practice was commissioned. The working group
+        agreed that the available evidence would be hard to interpret without discussion of the
+        changing context within which consultations now take place. For many years general
+        practitioners and those who have surveyed patients' opinions in the United Kingdom have
+        complained about short consultation time, despite a steady increase in actual mean length.
+        Recently Mechanic pointed out that this is also true in the United States.<ref type="bibr"
+          target="#B2">2</ref> Is there any justification for a further increase in mean time
+        allocated per consultation in general practice?</p>
+      <p>We report on the outcome of extensive debate among a group of general practitioners with an
+        interest in the process of care, with reference to the interim findings of the commissioned
+        systematic review and our personal databases. The review identified 14 relevant papers. </p>
       <div type="subjects">
         <head>Longer consultations: benefits for patients</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">The systematic review consistently
-          showed that doctors with longer consultation times prescribe less and offer more advice on
-          lifestyle and other health promoting activities. Longer consultations have been
-          significantly associated with better recognition and handling of psychosocial problems<ref
-            type="bibr" target="#B3">3</ref> and with better patient enablement.<ref type="bibr"
-            target="#B4">4</ref> Also clinical care for some chronic illnesses is better in
-          practices with longer booked intervals between one appointment and the next.<ref
-            type="bibr" target="#B5">5</ref> It is not clear whether time is itself the main
-          influence or whether some doctors insist on more time.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">A national survey in 1998 reported that
-          most (87%) patients were satisfied with the length of their most recent consultation.<ref
-            type="bibr" target="#B6">6</ref> Satisfaction with any service will be high if
-          expectations are met or exceeded. But expectations are modified by previous
-            experience.<ref type="bibr" target="#B7">7</ref> The result is that primary care
-          patients are likely to be satisfied with what they are used to unless the context modifies
-          the effects of their own experience.</p>
+        <p>The systematic review consistently showed that doctors with longer consultation times
+          prescribe less and offer more advice on lifestyle and other health promoting activities.
+          Longer consultations have been significantly associated with better recognition and
+          handling of psychosocial problems<ref type="bibr" target="#B3">3</ref> and with better
+          patient enablement.<ref type="bibr" target="#B4">4</ref> Also clinical care for some
+          chronic illnesses is better in practices with longer booked intervals between one
+          appointment and the next.<ref type="bibr" target="#B5">5</ref> It is not clear whether
+          time is itself the main influence or whether some doctors insist on more time.</p>
+        <p>A national survey in 1998 reported that most (87%) patients were satisfied with the
+          length of their most recent consultation.<ref type="bibr" target="#B6">6</ref>
+          Satisfaction with any service will be high if expectations are met or exceeded. But
+          expectations are modified by previous experience.<ref type="bibr" target="#B7">7</ref> The
+          result is that primary care patients are likely to be satisfied with what they are used to
+          unless the context modifies the effects of their own experience.</p>
       </div>
       <div>
         <head>Context of modern consultations</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">Shorter consultations were more
-          appropriate when the population was younger, when even a brief absence from employment due
-          to sickness required a doctor's note, and when many simple remedies were available only on
-          prescription. Recently at least five important influences have increased the content and
-          hence the potential length of the consultation.</p>
+        <p>Shorter consultations were more appropriate when the population was younger, when even a
+          brief absence from employment due to sickness required a doctor's note, and when many
+          simple remedies were available only on prescription. Recently at least five important
+          influences have increased the content and hence the potential length of the
+          consultation.</p>
       </div>
       <div>
         <head>Participatory consultation style</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">The most effective consultations are
-          those in which doctors most directly acknowledge and perhaps respond to patients' problems
-          and concerns. In addition, for patients to be committed to taking advantage of medical
-          advice they must agree with both the goals and methods proposed. A landmark publication in
-          the United Kingdom was <hi rend="italic">Meetings Between Experts</hi>, which argued that
-          while doctors are the experts about medical problems in general patients are the experts
-          on how they themselves experience these problems.<ref type="bibr" target="#B8">8</ref> New
-          emphasis on teaching consulting skills in general practice advocated specific attention to
-          the patient's agenda, beliefs, understanding, and agreement. Currently the General Medical
-          Council, aware that communication difficulties underlie many complaints about doctors, has
-          further emphasised the importance of involving patients in consultations in its revised
-          guidance to medical schools.<ref type="bibr" target="#B9">9</ref> More patient involvement
-          should give a better outcome, but this participatory style usually lengthens
-          consultations.</p>
+        <p>The most effective consultations are those in which doctors most directly acknowledge and
+          perhaps respond to patients' problems and concerns. In addition, for patients to be
+          committed to taking advantage of medical advice they must agree with both the goals and
+          methods proposed. A landmark publication in the United Kingdom was <hi rend="italic"
+            >Meetings Between Experts</hi>, which argued that while doctors are the experts about
+          medical problems in general patients are the experts on how they themselves experience
+          these problems.<ref type="bibr" target="#B8">8</ref> New emphasis on teaching consulting
+          skills in general practice advocated specific attention to the patient's agenda, beliefs,
+          understanding, and agreement. Currently the General Medical Council, aware that
+          communication difficulties underlie many complaints about doctors, has further emphasised
+          the importance of involving patients in consultations in its revised guidance to medical
+            schools.<ref type="bibr" target="#B9">9</ref> More patient involvement should give a
+          better outcome, but this participatory style usually lengthens consultations.</p>
       </div>
       <div>
         <head>Extended professional agenda</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">The traditional consultation in general
-          practice was brief.<ref type="bibr" target="#B2">2</ref> The patient presented symptoms
-          and the doctor prescribed treatment. In 1957 Balint gave new insights into the meaning of
-            symptoms.<ref type="bibr" target="#B10">10</ref> By 1979 an enhanced model of
-          consultation was presented, in which the doctors dealt with ongoing as well as presenting
-          problems and added health promotion and education about future appropriate use of
-            services.<ref type="bibr" target="#B11">11</ref> Now, with an ageing population and more
-          community care of chronic illness, there are more issues to be considered at each
-          consultation. Ideas of what constitutes good general practice are more complex.<ref
-            type="bibr" target="#B12">12</ref> Good practice now includes both extended care of
-          chronic medical problems—for example, coronary heart disease<ref type="bibr" target="#B13"
-            >13</ref>—and a public health role. At first this model was restricted to those who lead
-          change (“early adopters”) and enthusiasts<ref type="bibr" target="#B14">14</ref> but now
-          it is embedded in professional and managerial expectations of good practice.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">Adequate time is essential. It may be
-          difficult for an elderly patient with several active problems to undress, be examined, and
-          get adequate professional consideration in under 15 minutes. Here the doctor is faced with
-          the choice of curtailing the consultation or of reducing the time available for the next
-          patient. Having to cope with these situations often contributes to professional
-            dissatisfaction.<ref type="bibr" target="#B15">15</ref> This combination of more care,
-          more options, and more genuine discussion of those options with informed patient choice
-          inevitably leads to pressure on time.</p>
+        <p>The traditional consultation in general practice was brief.<ref type="bibr" target="#B2"
+            >2</ref> The patient presented symptoms and the doctor prescribed treatment. In 1957
+          Balint gave new insights into the meaning of symptoms.<ref type="bibr" target="#B10"
+            >10</ref> By 1979 an enhanced model of consultation was presented, in which the doctors
+          dealt with ongoing as well as presenting problems and added health promotion and education
+          about future appropriate use of services.<ref type="bibr" target="#B11">11</ref> Now, with
+          an ageing population and more community care of chronic illness, there are more issues to
+          be considered at each consultation. Ideas of what constitutes good general practice are
+          more complex.<ref type="bibr" target="#B12">12</ref> Good practice now includes both
+          extended care of chronic medical problems—for example, coronary heart disease<ref
+            type="bibr" target="#B13">13</ref>—and a public health role. At first this model was
+          restricted to those who lead change (“early adopters”) and enthusiasts<ref type="bibr"
+            target="#B14">14</ref> but now it is embedded in professional and managerial
+          expectations of good practice.</p>
+        <p>Adequate time is essential. It may be difficult for an elderly patient with several
+          active problems to undress, be examined, and get adequate professional consideration in
+          under 15 minutes. Here the doctor is faced with the choice of curtailing the consultation
+          or of reducing the time available for the next patient. Having to cope with these
+          situations often contributes to professional dissatisfaction.<ref type="bibr"
+            target="#B15">15</ref> This combination of more care, more options, and more genuine
+          discussion of those options with informed patient choice inevitably leads to pressure on
+          time.</p>
       </div>
       <div>
         <head>Access problems</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">In a service free at the point of
-          access, rising demand will tend to increase rationing by delay. But attempts to improve
-          access by offering more consultations at short notice squeeze consultation times.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">While appointment systems can and
-          should reduce queuing time for consultations, they have long tended to be used as a brake
-          on total demand.<ref type="bibr" target="#B16">16</ref> This may seriously erode patients'
-          confidence in being able to see their doctor or nurse when they need to. Patients are
-          offered appointments further ahead but may keep these even if their symptoms have remitted
-          “just in case.” Availability of consultations is thus blocked. Receptionists are then
-          inappropriately blamed for the inadequate access to doctors.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">In response to perception of delay, the
-          government has set targets in the NHS plan of “guaranteed access to a primary care
-          professional within 24 hours and to a primary care doctor within 48 hours.” Implementation
-          is currently being negotiated.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">Virtually all patients think that they
-          would not consult unless it was absolutely necessary. They do not think they are wasting
-          NHS time and do not like being made to feel so. But underlying general practitioners'
-          willingness to make patients wait several days is their perception that few of the
-          problems are urgent. Patients and general practitioners evidently do not agree about the
-          urgency of so called minor problems. To some extent general practice in the United Kingdom
-          may have scored an “own goal” by setting up perceived access barriers (appointment systems
-          and out of hours cooperatives) in the attempt to increase professional standards and
-          control demand in a service that is free at the point of access.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">A further government initiative has
-          been to bypass general practice with new services—notably, walk-in centres (primary care
-          clinics in which no appointment is needed) and NHS Direct (a professional telephone
-          helpline giving advice on simple remedies and access to services). Introduced widely and
-          rapidly, these services each potentially provide significant features of primary
-          care—namely, quick access to skilled health advice and first line treatment.</p>
+        <p>In a service free at the point of access, rising demand will tend to increase rationing
+          by delay. But attempts to improve access by offering more consultations at short notice
+          squeeze consultation times.</p>
+        <p>While appointment systems can and should reduce queuing time for consultations, they have
+          long tended to be used as a brake on total demand.<ref type="bibr" target="#B16">16</ref>
+          This may seriously erode patients' confidence in being able to see their doctor or nurse
+          when they need to. Patients are offered appointments further ahead but may keep these even
+          if their symptoms have remitted “just in case.” Availability of consultations is thus
+          blocked. Receptionists are then inappropriately blamed for the inadequate access to
+          doctors.</p>
+        <p>In response to perception of delay, the government has set targets in the NHS plan of
+          “guaranteed access to a primary care professional within 24 hours and to a primary care
+          doctor within 48 hours.” Implementation is currently being negotiated.</p>
+        <p>Virtually all patients think that they would not consult unless it was absolutely
+          necessary. They do not think they are wasting NHS time and do not like being made to feel
+          so. But underlying general practitioners' willingness to make patients wait several days
+          is their perception that few of the problems are urgent. Patients and general
+          practitioners evidently do not agree about the urgency of so called minor problems. To
+          some extent general practice in the United Kingdom may have scored an “own goal” by
+          setting up perceived access barriers (appointment systems and out of hours cooperatives)
+          in the attempt to increase professional standards and control demand in a service that is
+          free at the point of access.</p>
+        <p>A further government initiative has been to bypass general practice with new
+          services—notably, walk-in centres (primary care clinics in which no appointment is needed)
+          and NHS Direct (a professional telephone helpline giving advice on simple remedies and
+          access to services). Introduced widely and rapidly, these services each potentially
+          provide significant features of primary care—namely, quick access to skilled health advice
+          and first line treatment.</p>
       </div>
       <div>
         <head>Loss of interpersonal continuity</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">If a patient has to consult several
-          different professionals, particularly over a short period of time, there is inevitable
-          duplication of stories, risk of naive diagnoses, potential for conflicting advice, and
-          perhaps loss of trust. Trust is essential if patients are to accept the “wait and see”
-          management policy which is, or should be, an important part of the management of self
-          limiting conditions, which are often on the boundary between illness and non-illness.<ref
-            type="bibr" target="#B17">17</ref> Such duplication again increases pressure for more
-          extra (unscheduled) consultations resulting in late running and professional
-            frustration.<ref type="bibr" target="#B18">18</ref>
+        <p>If a patient has to consult several different professionals, particularly over a short
+          period of time, there is inevitable duplication of stories, risk of naive diagnoses,
+          potential for conflicting advice, and perhaps loss of trust. Trust is essential if
+          patients are to accept the “wait and see” management policy which is, or should be, an
+          important part of the management of self limiting conditions, which are often on the
+          boundary between illness and non-illness.<ref type="bibr" target="#B17">17</ref> Such
+          duplication again increases pressure for more extra (unscheduled) consultations resulting
+          in late running and professional frustration.<ref type="bibr" target="#B18">18</ref>
         </p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">Mechanic described how loss of
-          longitudinal (and perhaps personal and relational<ref type="bibr" target="#B19">19</ref>)
-          continuity influences the perception and use of time through an inability to build on
-          previous consultations.<ref type="bibr" target="#B2">2</ref> Knowing the doctor well,
-          particularly in smaller practices, is associated with enhanced patient enablement in
-          shorter time.<ref type="bibr" target="#B4">4</ref> Though Mechanic pointed out that three
-          quarters of UK patients have been registered with their general practitioner five years or
-          more, this may be misleading. Practices are growing, with larger teams and more registered
-          patients. Being registered with a doctor in a larger practice is usually no guarantee that
-          the patient will be able to see the same doctor or the doctor of his or her choice, who
-          may be different. Thus the system does not encourage adequate personal continuity. This
-          adds to pressure on time and reduces both patient and professional satisfaction.</p>
+        <p>Mechanic described how loss of longitudinal (and perhaps personal and relational<ref
+            type="bibr" target="#B19">19</ref>) continuity influences the perception and use of time
+          through an inability to build on previous consultations.<ref type="bibr" target="#B2"
+            >2</ref> Knowing the doctor well, particularly in smaller practices, is associated with
+          enhanced patient enablement in shorter time.<ref type="bibr" target="#B4">4</ref> Though
+          Mechanic pointed out that three quarters of UK patients have been registered with their
+          general practitioner five years or more, this may be misleading. Practices are growing,
+          with larger teams and more registered patients. Being registered with a doctor in a larger
+          practice is usually no guarantee that the patient will be able to see the same doctor or
+          the doctor of his or her choice, who may be different. Thus the system does not encourage
+          adequate personal continuity. This adds to pressure on time and reduces both patient and
+          professional satisfaction.</p>
       </div>
       <div>
         <head>Health service reforms</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">Finally, for the past 15 years the NHS
-          has experienced unprecedented change with a succession of major administrative reforms.
-          Recent reforms have focused on an NHS led by primary care, including the aim of shifting
-          care from the secondary specialist sector to primary care. One consequence is increased
-          demand for primary care of patients with more serious and less stable problems. With the
-          limited piloting of reforms we do not know whether such major redirection can be achieved
-          without greatly altering the delicate balance between expectations (of both patients and
-          staff) and what is delivered.</p>
+        <p>Finally, for the past 15 years the NHS has experienced unprecedented change with a
+          succession of major administrative reforms. Recent reforms have focused on an NHS led by
+          primary care, including the aim of shifting care from the secondary specialist sector to
+          primary care. One consequence is increased demand for primary care of patients with more
+          serious and less stable problems. With the limited piloting of reforms we do not know
+          whether such major redirection can be achieved without greatly altering the delicate
+          balance between expectations (of both patients and staff) and what is delivered.</p>
       </div>
       <div>
         <head>The future</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">We think that the way ahead must
-          embrace both longer mean consultation times and more flexibility. More time is needed for
-          high quality consultations with patients with major and complex problems of all kinds. But
-          patients also need access to simpler services and advice. This should be more appropriate
-          (and cost less) when it is given by professionals who know the patient and his or her
-          medical history and social circumstances. For doctors, the higher quality associated with
-          longer consultations may lead to greater professional satisfaction and, if these longer
-          consultations are combined with more realistic scheduling, to reduced levels of
-            stress.<ref type="bibr" target="#B20">20</ref> They will also find it easier to develop
-          further the care of chronic disease.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">The challenge posed to general practice
-          by walk-in centres and NHS Direct is considerable, and the diversion of funding from
-          primary care is large. The risk of waste and duplication increases as more layers of
-          complexity are added to a primary care service that started out as something familiar,
-          simple, and local and which is still envied in other developed countries.<ref type="bibr"
-            target="#B21">21</ref> Access needs to be simple, and the advantages of personal
-          knowledge and trust in minimising duplication and overmedicalisation need to be
-          exploited.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">We must ensure better communication and
-          access so that patients can more easily deal with minor issues and queries with someone
-          they know and trust and avoid the formality and inconvenience of a full face to face
-          consultation. Too often this has to be with a different professional, unfamiliar with the
-          nuances of the case. There should be far more managerial emphasis on helping patients to
-          interact with their chosen practitioner<ref type="bibr" target="#B22">22</ref>; such a
-          programme has been described.<ref type="bibr" target="#B23">23</ref> Modern information
-          systems make it much easier to record which doctor(s) a patient prefers to see and to
-          monitor how often this is achieved. The telephone is hardly modern but is underused. Email
-          avoids the problems inherent in arranging simultaneous availability necessary for
-          telephone consultations but at the cost of reducing the communication of emotions. There
-          is a place for both.<ref type="bibr" target="#B2">2</ref> Access without prior appointment
-          is a valued feature of primary care, and we need to know more about the right balance
-          between planned and ad hoc consulting.</p>
+        <p>We think that the way ahead must embrace both longer mean consultation times and more
+          flexibility. More time is needed for high quality consultations with patients with major
+          and complex problems of all kinds. But patients also need access to simpler services and
+          advice. This should be more appropriate (and cost less) when it is given by professionals
+          who know the patient and his or her medical history and social circumstances. For doctors,
+          the higher quality associated with longer consultations may lead to greater professional
+          satisfaction and, if these longer consultations are combined with more realistic
+          scheduling, to reduced levels of stress.<ref type="bibr" target="#B20">20</ref> They will
+          also find it easier to develop further the care of chronic disease.</p>
+        <p>The challenge posed to general practice by walk-in centres and NHS Direct is
+          considerable, and the diversion of funding from primary care is large. The risk of waste
+          and duplication increases as more layers of complexity are added to a primary care service
+          that started out as something familiar, simple, and local and which is still envied in
+          other developed countries.<ref type="bibr" target="#B21">21</ref> Access needs to be
+          simple, and the advantages of personal knowledge and trust in minimising duplication and
+          overmedicalisation need to be exploited.</p>
+        <p>We must ensure better communication and access so that patients can more easily deal with
+          minor issues and queries with someone they know and trust and avoid the formality and
+          inconvenience of a full face to face consultation. Too often this has to be with a
+          different professional, unfamiliar with the nuances of the case. There should be far more
+          managerial emphasis on helping patients to interact with their chosen practitioner<ref
+            type="bibr" target="#B22">22</ref>; such a programme has been described.<ref type="bibr"
+            target="#B23">23</ref> Modern information systems make it much easier to record which
+          doctor(s) a patient prefers to see and to monitor how often this is achieved. The
+          telephone is hardly modern but is underused. Email avoids the problems inherent in
+          arranging simultaneous availability necessary for telephone consultations but at the cost
+          of reducing the communication of emotions. There is a place for both.<ref type="bibr"
+            target="#B2">2</ref> Access without prior appointment is a valued feature of primary
+          care, and we need to know more about the right balance between planned and ad hoc
+          consulting.</p>
       </div>
       <div>
         <head>Next steps</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">General practitioners do not behave in
-          a uniform way. They can be categorised as slow, medium, and fast and react in different
-          ways to changes in consulting speed.<ref type="bibr" target="#B18">18</ref> They are
-          likely to have differing views about a widespread move to lengthen consultation time. We
-          do not need further confirmation that longer consultations are desirable and necessary,
-          but research could show us the best way to learn how to introduce them with minimal
-          disruption to the way in which patients and practices like primary care to be
-            provided.<ref type="bibr" target="#B24">24</ref> We also need to learn how to make the
-          most of available time in complex consultations.</p>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">Devising appropriate incentives and
-          helping practices move beyond just reacting to demand in the traditional way by working
-          harder and faster is perhaps our greatest challenge in the United Kingdom. The new primary
-          are trusts need to work together with the growing primary care research networks to carry
-          out the necessary development work. In particular, research is needed on how a primary
-          care team can best provide the right balance of quick access and interpersonal knowledge
-          and trust.</p>
+        <p>General practitioners do not behave in a uniform way. They can be categorised as slow,
+          medium, and fast and react in different ways to changes in consulting speed.<ref
+            type="bibr" target="#B18">18</ref> They are likely to have differing views about a
+          widespread move to lengthen consultation time. We do not need further confirmation that
+          longer consultations are desirable and necessary, but research could show us the best way
+          to learn how to introduce them with minimal disruption to the way in which patients and
+          practices like primary care to be provided.<ref type="bibr" target="#B24">24</ref> We also
+          need to learn how to make the most of available time in complex consultations.</p>
+        <p>Devising appropriate incentives and helping practices move beyond just reacting to demand
+          in the traditional way by working harder and faster is perhaps our greatest challenge in
+          the United Kingdom. The new primary are trusts need to work together with the growing
+          primary care research networks to carry out the necessary development work. In particular,
+          research is needed on how a primary care team can best provide the right balance of quick
+          access and interpersonal knowledge and trust.</p>
       </div>
     </body>
     <back>
       <div type="acknowledgements">
         <head>Acknowledgements</head>
-        <p xmlns:ce="http://www.elsevier.com/xml/common/dtd">We thank the other members of the
-          working group: Susan Childs, Paul Freeling, Iona Heath, Marshall Marinker, and Bonnie
-          Sibbald. We also thank Fenny Green of the Royal College of General Practitioners for
-          administrative help.</p>
+        <p>We thank the other members of the working group: Susan Childs, Paul Freeling, Iona Heath,
+          Marshall Marinker, and Bonnie Sibbald. We also thank Fenny Green of the Royal College of
+          General Practitioners for administrative help.</p>
       </div>
-      <div xmlns:xlink="http://www.w3.org/1999/xlink"
-        xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-        xmlns:mml="http://www.w3.org/1998/Math/MathML" type="references">
+      <div type="references">
         <listBibl>
           <biblStruct type="article" xml:id="B1">
             <analytic>
@@ -723,11 +710,9 @@
         </listBibl>
       </div>
       <div type="fn-group">
-        <note place="inline"><p xmlns:ce="http://www.elsevier.com/xml/common/dtd">Funding: Meetings
-            of the working group in 1999-2000 were funded by the Scientific Foundation Board of the
-            RCGP.</p></note>
-        <note place="inline"><p xmlns:ce="http://www.elsevier.com/xml/common/dtd">Competing
-            interests: None declared.</p></note>
+        <note place="inline"><p>Funding: Meetings of the working group in 1999-2000 were funded by
+            the Scientific Foundation Board of the RCGP.</p></note>
+        <note place="inline"><p>Competing interests: None declared.</p></note>
       </div>
     </back>
   </text>
