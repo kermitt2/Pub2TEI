@@ -243,7 +243,7 @@
     </xsl:template>
     
     <!-- Manuscript number -->
-    <!-- BMJ: manuscript-number -->
+    <!-- BMJ: manuscript-number; Springer: ArticleID -->
     
     <xsl:template match="manuscript-number | @ms_no | ArticleID ">
         <xsl:if test=".!=''">

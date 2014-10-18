@@ -123,25 +123,21 @@
         </xsl:if>
     </xsl:template>
 
-
     <xsl:template match="JournalID">
-        <idno type="JournalID">
-            <xsl:apply-templates/>
-        </idno>
+        <xsl:if test=".!=''">
+            <idno type="JournalID">
+                <xsl:apply-templates/>
+            </idno>
+        </xsl:if>
     </xsl:template>
 
-    <xsl:template match="ArticleID">
-        <idno type="ArticleID">
-            <xsl:apply-templates/>
-        </idno>
+    <xsl:template match="ArticleInfo/ArticleID">
+        <xsl:if test=".!=''">
+            <idno type="ArticleID">
+                <xsl:apply-templates/>
+            </idno>
+        </xsl:if>
     </xsl:template>
-
-    <xsl:template match="OrgAddress">
-        <address>
-            <xsl:apply-templates/>
-        </address>
-    </xsl:template>
-
 
     <xsl:template match="Acknowledgments">
         <div type="acknowledgments">
