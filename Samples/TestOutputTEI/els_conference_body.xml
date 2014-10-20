@@ -1,0 +1,829 @@
+
+
+<article xmlns="http://www.elsevier.com/xml/ja/dtd" version="5.0"
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" docsubtype="fla">
+    <item-info>
+        <jid>NUMA</jid>
+        <aid>14140</aid>
+        <ce:pii>S0022-3115(00)00275-0</ce:pii>
+        <ce:doi>10.1016/S0022-3115(00)00275-0</ce:doi>
+        <ce:copyright type="full-transfer" year="2000">Elsevier Science B.V.</ce:copyright>
+    </item-info>
+    <ce:floats>
+        <ce:figure id="FIG1">
+            <ce:label>Fig. 1</ce:label>
+            <ce:caption>
+                <ce:simple-para>Plot of <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> vs
+                        <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> for various strain rates.
+                    The two-component fit activation flow model is shown as the solid curve as
+                    described in the text.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr1"/>
+        </ce:figure>
+        <ce:figure id="FIG2">
+            <ce:label>Fig. 2</ce:label>
+            <ce:caption>
+                <ce:simple-para>Plot of
+                        <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic>(<ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup>)
+                    for representative strain levels, indicating a strong dependence on
+                        <ce:italic>&#x03B5;</ce:italic> but little or no dependence on
+                        <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup>.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr2"/>
+        </ce:figure>
+        <ce:figure id="FIG3">
+            <ce:label>Fig. 3</ce:label>
+            <ce:caption>
+                <ce:simple-para>Plot of <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic>,
+                    averaged for all <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup>, vs
+                        <ce:italic>&#x03B5;</ce:italic>. The two-component Voce-type
+                    strain-hardening model is shown as the solid curve as described in the
+                    text.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr3"/>
+        </ce:figure>
+        <ce:figure id="FIG4">
+            <ce:label>Fig. 4</ce:label>
+            <ce:caption>
+                <ce:simple-para>Comparison of the true flow stresses measured with those predicted
+                    by the model at true strains of 0.005, 0.01, 0.02, 0.04, 0.08 and
+                    0.14.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr4"/>
+        </ce:figure>
+        <ce:figure id="FIG5">
+            <ce:label>Fig. 5</ce:label>
+            <ce:caption>
+                <ce:simple-para>Plot of <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf> vs
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>. Predictions of
+                        <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf> are shown as solid and
+                    dashed curves as described in the text.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr5"/>
+        </ce:figure>
+    </ce:floats>
+    <head>
+        <ce:title>A physically based constitutive model for a V&#x2013;4Cr&#x2013;4Ti
+            alloy</ce:title>
+        <ce:author-group>
+            <ce:author>
+                <ce:given-name>E.G.</ce:given-name>
+                <ce:surname>Donahue</ce:surname>
+                <ce:cross-ref refid="CORR1">*</ce:cross-ref>
+                <ce:e-address>donahue@engineering.ucsb.edu</ce:e-address>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>G.R.</ce:given-name>
+                <ce:surname>Odette</ce:surname>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>G.E.</ce:given-name>
+                <ce:surname>Lucas</ce:surname>
+            </ce:author>
+            <ce:affiliation>
+                <ce:textfn>Department of Mechanical and Environmental Engineering, University of
+                    California, Santa Barbara, CA 93106, USA</ce:textfn>
+            </ce:affiliation>
+            <ce:correspondence id="CORR1">
+                <ce:label>*</ce:label>
+                <ce:text>Corresponding author. Tel.: +1-805 893 3212; fax: +1-805 893 8651</ce:text>
+            </ce:correspondence>
+        </ce:author-group>
+        <ce:abstract>
+            <ce:section-title>Abstract</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para>A constitutive model for low-to-intermediate temperatures, strains,
+                    and strain rates is developed for the program heat of V&#x2013;4Cr&#x2013;4Ti.
+                    The basic form of the model is derived from more general dislocation-based
+                    models of yield stress and strain hardening. The physically based forms are fit
+                    to a database derived from tensile tests carried out over a wide range of
+                    temperatures and strain rates. Yield and post-yield strain-hardening
+                    contributions to the flow stress are additive. The yield stress has both
+                    thermally activated and athermal components. The former is described by a
+                    two-mechanism activated dislocation slip model, with contributions that appear
+                    to arise from both lattice friction (at lower temperatures) and dislocation
+                    pinning by interstitial impurities (at higher temperatures). The yield stress
+                    data can be correlated using a strain rate-compensated temperature. The model
+                    uses a temperature-weighted average of the two mechanisms. Post-yield strain
+                    hardening was found to be approximately athermal. Strain hardening is fit to a
+                    two-component modified Voce-type saturating flow stress model. The constitutive
+                    model is also used to determine the flow stability limits as estimates of
+                    uniform tensile strains. The relatively compact, but mechanism-based,
+                    semi-empirical model has a number of both fundamental and practical advantages
+                    that are briefly outlined.</ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:keywords class="idt">
+            <ce:section-title>Keywords</ce:section-title>
+            <ce:keyword>
+                <ce:text>V01</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>M03</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>D05</ce:text>
+            </ce:keyword>
+        </ce:keywords>
+    </head>
+    <body>
+        <ce:sections>
+            <ce:section>
+                <ce:label>1</ce:label>
+                <ce:section-title>Introduction</ce:section-title>
+                <ce:para>It is axiomatic that 21st century fusion technology will employ
+                    sophisticated design and structural assessment tools that require a complete,
+                    accurate and well-understood characterization of the mechanical behavior of the
+                    constituent structural materials. The basic stress&#x2013;strain, or
+                    constitutive laws, are one of several key parts of the requisite property
+                    database, and are the focus of this paper. In the simplest case of current code
+                    compliance assessments, the constitutive database might be comprised simply of
+                    tabulations of strength and so-called ductility `properties' derived from
+                    standard tensile tests. However, standard engineering tensile properties,
+                    involving ill-defined measures of ductility, are insufficient to support more
+                    rigorous finite element method (FEM) simulations of the detailed behavior of
+                    complex structural configurations.</ce:para>
+                <ce:para>Constitutive properties are also required to measure, apply and obtain a
+                    basic understanding of the long list of life-limiting failure-related properties
+                    and parameters, such as fracture toughness. The property database must also
+                    characterize the multiple in-service changes that are controlled by combinations
+                    of a very large number of environmental and as-fabricated material variables.
+                    Creation of such information is enormously time consuming and expensive. Thus,
+                    it is absolutely imperative that data development and analysis efforts be
+                    consistent with rapidly evolving designs and integrity assessment
+                    methods.</ce:para>
+                <ce:para>In this work, we develop a constitutive description of a
+                    V&#x2013;4Cr&#x2013;4Ti alloy in the <ce:italic>unirradiated</ce:italic>
+                    condition for low-to-intermediate temperatures and strain rates (i.e., outside
+                    the creep and strain aging regimes). Specifically, we seek a model that
+                    accurately and compactly describes the effects of temperature
+                        (<ce:italic>T</ce:italic>), strain rate (<math altimg="si1.gif"><a>
+                            <ac>&#x03B5;</ac>
+                            <ac>&#x0307;</ac></a></math>) and strain
+                        (<ce:italic>&#x03B5;</ce:italic>) on the uniaxial flow stress, <math
+                        altimg="si2.gif">&#x03C3;<inf><rm>fl</rm></inf>(T,<a>
+                            <ac>&#x03B5;</ac>
+                            <ac>&#x0307;</ac></a>,&#x03B5;</math>). While not directly derived from
+                    first-principle theories, a second key objective is that the simple state
+                    variable model be physically based and consistent with the current understanding
+                    of the underlying dislocation deformation mechanisms and mechanics.</ce:para>
+                <ce:para>The research involved three steps: (a) measuring and properly reducing the
+                    requisite tensile database; (b) analyzing the general data trends in the context
+                    of simple but physically based, analytical formulations of constitutive models;
+                    and (c) quantitatively fitting the model equations to the database.</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>2</ce:label>
+                <ce:section-title>Experimental procedures and data reduction</ce:section-title>
+                <ce:para>Flat, dog-bone tensile specimens with a 9.0&#x2013;0.5&#x2013;2.0 mm
+                    long&#x2013;thick&#x2013;wide gauge section were prepared from a large, 500 kg
+                    heat (Heat No. 832665) of V&#x2013;4Cr&#x2013;4Ti manufactured by Teledyne
+                    Wah-Chang <ce:cross-ref refid="BIB1">[1]</ce:cross-ref>. Starting at a thickness
+                    of 1.07 mm, an annealed sheet was cold rolled by collaborators at ORNL at less
+                    that 5% per pass to a final thickness of 0.5 mm with an intermediate heat
+                    treatment at 0.86 mm of 1000&#x00B0;C for 2 h in vacuum. Following the final
+                    cold work of about 40%, the miniature tensile specimens were punched from the
+                    sheet with their axis perpendicular to the rolling direction. The specimens were
+                    then annealed at 1000&#x00B0;C for 2 h in vacuum. This processing resulted in an
+                    average grain size of 25 &#x03BC;m and an average Vickers microhardness of
+                        150<ce:hsp sp="0.12"/>&#x00B1;<ce:hsp sp="0.12"/>5 <ce:cross-refs
+                        refid="BIB2 BIB3">[2,3]</ce:cross-refs>.</ce:para>
+                <ce:para>Tensile tests were performed on a 100 kN MTS load frame with a 556
+                    servo-hydraulic controller using a clamp-and-pin gripping system. Tests were
+                    conducted at 10 temperatures ranging from &#x2212;196&#x00B0;C to 100&#x00B0;C.
+                    The desired temperatures were maintained by liquid bath (&#x2212;70&#x00B0;C to
+                    0&#x00B0;C), chilled-air baths (&#x2A7D;&#x2212;100&#x00B0;C), or by a small
+                    furnace (>20&#x00B0;C). Temperatures were measured by a thermocouple in contact
+                    with the specimen to within &#x00B1;2&#x00B0;C. Strains were determined by LVDT
+                    measurements of the actuator displacement using compliance corrections provided
+                    by the slope of the elastic load-displacement curve. The tests were conducted at
+                    three nominal strain rates (<math altimg="si3.gif"><a>
+                            <ac>&#x03B5;</ac>
+                            <ac>&#x0307;</ac></a></math>) of 4&#x00D7;10<ce:sup>&#x2212;4</ce:sup>,
+                    0.04 and 2 s<ce:sup>&#x2212;1</ce:sup>. Engineering stress
+                        (<ce:italic>s</ce:italic>) and strain (<ce:italic>e</ce:italic>) were
+                    converted to their true stress
+                        (<ce:italic>&#x03C3;</ce:italic><ce:inf>fl</ce:inf>)&#x2013;strain
+                        (<ce:italic>&#x03B5;</ce:italic>) equivalents using the standard relations,
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>fl</ce:inf>=<ce:italic>s</ce:italic>(1+<ce:italic>e</ce:italic>)
+                    and <ce:italic>&#x03B5;</ce:italic>=ln(1+<ce:italic>e</ce:italic>). The yield
+                    stress (<ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>) was defined at the
+                    0.2% modulus offset or, when present, at the Luder&#x2019;s plateau. The uniform
+                    and total engineering strains were measured at peak and fracture loads,
+                    respectively.</ce:para>
+                <ce:para>A total of 32 specimens were tested. Owing to the limited number of
+                    specimens, usually only one test was conducted for each condition, and not all
+                    temperature&#x2013;strain rate conditions were included. Since the data were
+                    analyzed collectively, these limitations are not considered to be significant to
+                    fitting the overall constitutive model. Redundant tests showed a standard
+                    deviation in <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> of about 14 MPa.
+                    Where they overlap, our results are also generally consistent with a study by
+                    Rowcliffe et al. which emphasized the regime above room temperature
+                        <ce:cross-ref refid="BIB4">[4]</ce:cross-ref>.</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>3</ce:label>
+                <ce:section-title>Results and analysis</ce:section-title>
+                <ce:para>Representative stress&#x2013;strain curves have been reported previously
+                        <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>. Following Armstrong
+                        <ce:cross-ref refid="BIB6">[6]</ce:cross-ref>, the flow stress
+                        (<ce:italic>&#x03C3;</ce:italic><ce:inf>fl</ce:inf>) is divided into yield
+                        (<ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>) and post-yield
+                    strain-hardening (<ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic>)
+                    contributions. The <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> is composed
+                    of both temperature&#x2013;strain rate sensitive and insensitive or, thermally
+                    activated (<ce:italic>&#x03C3;</ce:italic><ce:inf>yt</ce:inf>) and athermal
+                        (<ce:italic>&#x03C3;</ce:italic><ce:inf>ya</ce:inf>) components,
+                    respectively as<display><formula id="FD1"><ce:label>(1)</ce:label><math
+                                altimg="si4.gif">&#x03C3;<inf><rm>y</rm></inf>(T,<a>
+                                    <ac>&#x03B5;</ac>
+                                    <ac>&#x0307;</ac></a>)=&#x03C3;<inf><rm>yt</rm></inf>(T,<a>
+                                    <ac>&#x03B5;</ac>
+                                    <ac>&#x0307;</ac></a>)+&#x03C3;<inf><rm>ya</rm></inf>.</math></formula></display>The
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>yt</ce:inf> is due to the lattice
+                    friction or Peierl&#x2019;s stress as well as due to small dislocation pinning
+                    points that can be bypassed with the aid of thermal fluctuations. The (low)
+                    temperature&#x2013;(high) strain-rate dependence of
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> in bcc metals and alloys
+                    is attributed to the low mobility of screw dislocations which experience a high
+                    resistance to slip <ce:cross-ref refid="BIB7">[7]</ce:cross-ref>. The mechanism
+                    of screw dislocation slip is the nucleation of a kink pair; the kink segments
+                    move easily under an applied stress due to their edge character <ce:cross-ref
+                        refid="BIB7">[7]</ce:cross-ref>. The thermally activated nucleation of kink
+                    pairs is very sensitive to temperature and stress. Thus high strain rates
+                    require correspondingly high stress and/or temperature. At a sufficiently high
+                    temperature, double kink nucleation is so rapid that the lattice friction
+                    contribution to <ce:italic>&#x03C3;</ce:italic><ce:inf>yt</ce:inf> is
+                    negligible. However, thermally activated dispersed barrier strengthening by
+                    tetragonal interstitial solutes may persist at higher temperatures. The athermal
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>ya</ce:inf> component is associated
+                    with hardening by polycrystalline grain structure, dislocations and larger
+                    pinning features. Note that <ce:italic>&#x03C3;</ce:italic><ce:inf>ya</ce:inf>
+                    varies weakly with temperature in proportion to the elastic modulus. The
+                    development of post-yield dislocation structures results in a strain-hardening
+                    component, <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic>. In fcc
+                    crystals, this contribution is relatively athermal. However, for bcc single
+                    crystals with low dislocation densities,
+                            <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic> also depends on
+                        <math altimg="si5.gif"><a>
+                            <ac>&#x03B5;</ac>
+                            <ac>&#x0307;</ac></a></math> and <ce:italic>T</ce:italic>
+                    <ce:cross-ref refid="BIB8">[8]</ce:cross-ref>, suggesting a general
+                                form<display><formula><ce:label>(2)</ce:label><math altimg="si6.gif"
+                                        >&#x03C3;<inf><rm>fl</rm></inf>(T,<a>
+                                    <ac>&#x03B5;</ac>
+                                    <ac>&#x0307;</ac></a>,&#x03B5;)=&#x03C3;<inf><rm>yt</rm></inf>(T,<a>
+                                    <ac>&#x03B5;</ac>
+                                    <ac>&#x0307;</ac></a>)+&#x03C3;<inf><rm>ya</rm></inf>+&#x03C3;<inf>&#x03B5;</inf>(T,<a>
+                                    <ac>&#x03B5;</ac>
+                                    <ac>&#x0307;</ac></a>,&#x03B5;).</math></formula></display></ce:para>
+                <ce:section>
+                    <ce:label>3.1</ce:label>
+                    <ce:section-title>Yield stress model</ce:section-title>
+                    <ce:para>There is a trade-off between temperature (<ce:italic>T</ce:italic>) and
+                        strain rate (<math altimg="si7.gif"><a>
+                                <ac>&#x03B5;</ac>
+                                <ac>&#x0307;</ac></a></math>) in determining <math altimg="si8.gif"
+                                    >&#x03C3;<inf><rm>yt</rm></inf>(T,<a>
+                                <ac>&#x03B5;</ac>
+                                <ac>&#x0307;</ac></a>)</math>: higher <math altimg="si9.gif"><a>
+                                <ac>&#x03B5;</ac>
+                                <ac>&#x0307;</ac></a></math> produces higher
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>yt</ce:inf> corresponding to
+                        values at lower <ce:italic>T</ce:italic> and <math altimg="si10.gif"><a>
+                                <ac>&#x03B5;</ac>
+                                <ac>&#x0307;</ac></a></math>. This behavior can be most simply
+                        represented in terms of a strain rate-compensated temperature
+                            (<ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup>), defined as <math
+                            altimg="si11.gif">&#x03C3;<inf><rm>y</rm></inf>(T,<a>
+                                <ac>&#x03B5;</ac>
+                                <ac>&#x0307;</ac></a><inf><rm>r</rm></inf>)=&#x03C3;<inf><rm>y</rm></inf>(T<sup>&#x2032;</sup>,<a>
+                                <ac>&#x03B5;</ac>
+                                <ac>&#x0307;</ac></a></math>), where<display><formula id="FD2"
+                                    ><ce:label>(3)</ce:label><math altimg="si12.gif"
+                                        >T<sup>&#x2032;</sup>=T[1+C<ce:hsp sp="0.35"/><rm>ln</rm>(<a>
+                                        <ac>&#x03B5;</ac>
+                                        <ac>&#x0307;</ac></a><inf><rm>r</rm></inf>/<a>
+                                        <ac>&#x03B5;</ac>
+                                        <ac>&#x0307;</ac></a>)].</math></formula></display>Here
+                            <ce:italic>T</ce:italic> is the actual absolute temperature (K) for the
+                        reference strain rate. <ce:cross-ref refid="FD2">Eq. (3)</ce:cross-ref> is
+                        an approximation derived from dislocation dynamics theory,
+                                    where<display><formula><ce:label>(4)</ce:label><math
+                                    altimg="si13.gif"><a>
+                                        <ac>&#x03B5;</ac>
+                                        <ac>&#x0307;</ac></a>&#x221D;<rm><ce:hsp sp="0.12"
+                                            />exp<ce:hsp sp="0.10"
+                                        /></rm>[&#x2212;H<sup>&#x2032;</sup>(T,&#x03C3;)/RT]=<rm><ce:hsp
+                                            sp="0.12"/>exp<ce:hsp sp="0.10"
+                                        /></rm>[&#x2212;(H<sup>*</sup>&#x2212;V<sup>*</sup>&#x03C3;)/RT].</math></formula></display>Here
+                            <ce:italic>H</ce:italic><ce:sup>&#x2032;</ce:sup>(<ce:italic>T</ce:italic>,<ce:italic>&#x03C3;</ce:italic>)
+                        is the activation enthalpy, <ce:italic>H</ce:italic><ce:sup>*</ce:sup> is
+                        the activation enthalpy at 0 stress, and
+                            <ce:italic>V</ce:italic><ce:sup>*</ce:sup> is the activation volume. The
+                        value of
+                            <ce:italic>H</ce:italic><ce:sup>&#x2032;</ce:sup>(<ce:italic>T</ce:italic>,<ce:italic>&#x03C3;</ce:italic>)
+                        decreases with decreasing temperature and increasing stress, approaching 0
+                        at 0 K as<display><formula><ce:label>(5)</ce:label><math altimg="si14.gif"
+                                        >H<sup>&#x2032;</sup>=&#x03B1;<ce:hsp sp="0.35"/>RT<ce:hsp
+                                        sp="1"/><ce:hsp sp="0.35"/><rm>for</rm><ce:hsp sp="0.35"
+                                            />T&#x2A7D;T<inf><rm>c</rm></inf>,</math></formula></display>where
+                            <ce:italic>T</ce:italic><ce:inf>c</ce:inf> is the temperature at which
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>yt</ce:inf> goes to 0. For a
+                        single mechanism, <ce:italic>C</ce:italic> in <ce:cross-ref refid="FD2">Eq.
+                            (3)</ce:cross-ref> is approximately 1/<ce:italic>&#x03B1;</ce:italic>.
+                        Empirically, <ce:italic>&#x03C3;</ce:italic><ce:inf>yt</ce:inf> data at
+                        different strain rates should overlap when plotted on a
+                            <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> scale. The
+                        effectiveness of the <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> model
+                        is illustrated in <ce:cross-ref refid="FIG1">Fig.
+                            1</ce:cross-ref>.<ce:float-anchor refid="FIG1"/> Taking the slowest
+                        strain rate of <math altimg="si15.gif"
+                                >4&#x00D7;10<sup>&#x2212;4</sup><ce:hsp sp="0.35"
+                                /><rm>s</rm><sup>&#x2212;1</sup></math> as the reference condition,
+                        the <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> data at all three
+                        strain rates are plotted against
+                            <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup>, using a `best fit'
+                        value for <ce:italic>C</ce:italic>=0.03. Note that the temperature shifts
+                        due to strain-rate differences are significant. For example, <math
+                            altimg="si16.gif">&#x03C3;<inf><rm>y</rm></inf>(2<ce:hsp sp="0.35"
+                                /><rm>s</rm><sup>&#x2212;1</sup></math>, 20&#x00B0;C)<ce:hsp
+                            sp="0.12"/>&#x2248;<ce:hsp sp="0.12"/><math altimg="si17.gif"
+                                    >&#x03C3;<inf><rm>y</rm></inf>(4&#x00D7;10<sup>&#x2212;4</sup><ce:hsp
+                                sp="0.35"
+                        /><rm>s</rm><sup>&#x2212;1</sup></math>,&#x2212;27&#x00B0;C).</ce:para>
+                    <ce:para>The <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> vs
+                            <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> data can then be fit
+                        to an appropriate analytical expression (solid line) to provide a complete
+                        description of <math altimg="si18.gif">&#x03C3;<inf><rm>y</rm></inf>(T,<a>
+                                <ac>&#x03B5;</ac>
+                                <ac>&#x0307;</ac></a>)=&#x03C3;<inf><rm>y</rm></inf>(T<sup>&#x2032;</sup>)</math>.
+                        For a single underlying thermally activated mechanism an appropriate general
+                        form is <ce:cross-ref refid="BIB9"
+                                    >[9]</ce:cross-ref><display><formula><ce:label>(6)</ce:label><math
+                                    altimg="si19.gif"
+                                        >&#x03C3;<inf><rm>y</rm></inf>(T<sup>&#x2032;</sup>)=&#x03C3;<inf><rm>t</rm></inf>[1&#x2212;(T<sup>&#x2032;</sup>/T<inf><rm>c</rm></inf>)<sup>1/g<inf>1</inf></sup>]<sup>g<inf>2</inf></sup>+&#x03C3;<inf><rm>a</rm></inf>(1&#x2212;&#x03B2;T),</math></formula></display>where
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>t</ce:inf> and
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>a</ce:inf> are the thermal and
+                        athermal yield stress contributions at 0 K,
+                            <ce:italic>g</ce:italic><ce:inf>1</ce:inf> and
+                            <ce:italic>g</ce:italic><ce:inf>2</ce:inf> depend on the assumed shape
+                        of the activation barrier (typically
+                            <ce:italic>g</ce:italic><ce:inf>1</ce:inf><ce:hsp sp="0.12"
+                            />&#x2248;<ce:hsp sp="0.12"/><ce:italic>g</ce:italic><ce:inf>2</ce:inf>,
+                        ranging from about 1 to 2) and <ce:italic>&#x03B2;</ce:italic> is the
+                        temperature coefficient of the elastic modulus
+                            &#x2248;6&#x00D7;10<ce:sup>&#x2212;5</ce:sup>. As noted above, both the
+                        Peierl&#x2019;s stress (low temperature) and strengthening by interstitial
+                        solutes (higher temperature) contribute to
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>t</ce:inf>. Thus, we have
+                        modified <ce:cross-ref refid="FD1">Eq. (1)</ce:cross-ref> to account for
+                        both processes (labeled 1 and 2) with different
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>t</ce:inf>,
+                            <ce:italic>T</ce:italic><ce:inf>c</ce:inf> and
+                            <ce:italic>g</ce:italic><ce:inf>1</ce:inf> and
+                            <ce:italic>g</ce:italic><ce:inf>2</ce:inf>. The two activated
+                        contributions are combined based on a
+                            <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> weighting: as
+                            <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> approaches 0,
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>t</ce:inf> approaches
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>t12</ce:inf>=<ce:italic>&#x03C3;</ce:italic><ce:inf>t1</ce:inf><ce:hsp
+                            sp="0.12"/>+<ce:hsp sp="0.12"
+                            /><ce:italic>&#x03C3;</ce:italic><ce:inf>t2</ce:inf>; as
+                            <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> approaches
+                            <ce:italic>T</ce:italic><ce:inf>c2</ce:inf>,
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>t</ce:inf> approaches
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>t2</ce:inf>. In contrast to a
+                        simple summation, this formulation provides a smooth interpolation and the
+                        proper curvature in
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>(<ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup>)
+                        assuming <ce:italic>g</ce:italic><ce:inf>1</ce:inf><ce:hsp sp="0.12"
+                            />&#x2248;<ce:hsp sp="0.12"
+                            /><ce:italic>g</ce:italic><ce:inf>2</ce:inf><ce:hsp sp="0.12"
+                            />&#x2248;<ce:hsp sp="0.12"/>1. Thus,<display><formula id="FD3"
+                                    ><ce:label>(7)</ce:label><math altimg="si20.gif"
+                                            >&#x03C3;<inf><rm>y</rm></inf>(T<sup>&#x2032;</sup>)=[&#x03C3;<inf><rm>t12</rm></inf>&#x2212;(&#x03C3;<inf><rm>t12</rm></inf>&#x2212;&#x03C3;<inf><rm>t2</rm></inf>)T<sup>&#x2032;</sup>/T<inf><rm>c2</rm></inf>][1&#x2212;T<sup>&#x2032;</sup>/{T<inf><rm>c1</rm></inf>+(T<inf><rm>c2</rm></inf>&#x2212;T<inf><rm>c1</rm></inf>)T<sup>&#x2032;</sup>/T<inf><rm>c2</rm></inf>}]+&#x03C3;<inf><rm>a</rm></inf>(1&#x2212;6&#x00D7;10<sup>&#x2212;5</sup>T).</math></formula></display></ce:para>
+                    <ce:para>The best fit results are shown as the solid curve in <ce:cross-ref
+                            refid="FIG1">Fig. 1</ce:cross-ref> for: <math altimg="si21.gif"
+                                    >&#x03C3;<inf><rm>t1</rm></inf>=885<rm><ce:hsp sp="0.25"
+                                />MPa</rm>;&#x03C3;<inf><rm>t2</rm></inf>=125<ce:hsp sp="0.35"
+                                /><rm>MPa</rm>;T<inf><rm>c1</rm></inf>=170<ce:hsp sp="0.35"
+                                /><rm>K</rm></math> and <math altimg="si22.gif"
+                                >T<inf><rm>c2</rm></inf>=500<ce:hsp sp="0.35"
+                                    /><rm>K</rm>;&#x03C3;<inf><rm>a</rm></inf>=245<ce:hsp sp="0.35"
+                                /><rm>MPa</rm>;</math> taking a typical value of
+                            <ce:italic>H</ce:italic>(<ce:italic>T</ce:italic><ce:inf>c</ce:inf>)<ce:hsp
+                            sp="0.12"/>&#x2248;<ce:hsp sp="0.12"/>96 kJ/mole (&#x2248;<ce:hsp
+                            sp="0.12"/>1 eV), the average of
+                            <ce:italic>T</ce:italic><ce:inf>c1</ce:inf> and
+                            <ce:italic>T</ce:italic><ce:inf>c2</ce:inf> (335 K) is consistent with
+                        an average <ce:italic>C</ce:italic><ce:hsp sp="0.12"/>&#x2248;<ce:hsp
+                            sp="0.12"/>0.03. While the physical significance of the fit parameters
+                        should not be overemphasized, they can be broadly interpreted as crudely
+                        characterizing the two underlying activated mechanisms' slip in this alloy.
+                        The first would generally be similar in other vanadium alloys, while the
+                        second would vary with the free interstitial impurity content.</ce:para>
+                    <ce:para>Using these values and neglecting the small effect of
+                            <ce:italic>&#x03B2;</ce:italic>, <ce:cross-ref refid="FD3">Eq.
+                            (7)</ce:cross-ref> can be rearranged to the convenient analytical
+                                form<display><formula id="FD4"><ce:label>(8)</ce:label><math
+                                    altimg="si23.gif"
+                                        >&#x03C3;<inf><rm>y</rm></inf>(T<sup>&#x2032;</sup>)=1130&#x2212;1.52T<sup>&#x2032;2</sup>+{(1.52T<sup>&#x2032;2</sup>&#x2212;885T<sup>&#x2032;</sup>)/(170+0.66T<sup>&#x2032;</sup>)}<ce:hsp
+                                        sp="1"/>(<rm>MPa</rm>).</math></formula></display></ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>3.2</ce:label>
+                    <ce:section-title>Strain hardening</ce:section-title>
+                    <ce:para>The post-yield strain-hardening contribution was experimentally defined
+                        for plastic strain levels of 0.5 to 5.0% in increments of 0.5% and from 5.0%
+                        to 14.0% in increments of 1.0%
+                                    as<display><formula><ce:label>(9)</ce:label><math
+                                    altimg="si24.gif"
+                                        >&#x03C3;<inf>&#x03B5;</inf>(T<sup>&#x2032;</sup>,&#x03B5;)=&#x03C3;<inf><rm>fl</rm></inf>(T<sup>&#x2032;</sup>,&#x03B5;)&#x2212;&#x03C3;<inf><rm>y</rm></inf>(T<sup>&#x2032;</sup>).</math></formula></display></ce:para>
+                    <ce:para><ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref>
+                        <ce:float-anchor refid="FIG2"/>shows
+                                <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic>(<ce:italic>&#x03B5;</ce:italic>,<ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup>)
+                        vs <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> for the representative
+                        values of strain. The solid fit lines show slopes that are approximately
+                        zero (low <ce:italic>&#x03B5;</ce:italic>), slightly positive (intermediate
+                            <ce:italic>&#x03B5;</ce:italic>) and somewhat more negative (higher
+                            <ce:italic>&#x03B5;</ce:italic>). However, on average, the slopes are
+                        approximately zero and have significant correlation coefficients only at the
+                        highest strains. The dependence of
+                                <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic> on
+                            <ce:italic>&#x03B5;</ce:italic> is much more significant and systematic
+                        than on <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup>. Thus, for a good
+                        approximation, <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic> can
+                        be assumed to be athermal. The fcc-like <ce:italic>athermal</ce:italic>
+                        behavior of <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic> of the
+                        V&#x2013;4Cr&#x2013;4Ti alloy is probably due to a high dislocation density
+                        and polycrystalline structure. The corresponding
+                                <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic>(<ce:italic>&#x03B5;</ce:italic>)
+                        averaged over <ce:italic>T</ce:italic><ce:sup>&#x2032;</ce:sup> for the 19
+                        strain levels is shown in <ce:cross-ref refid="FIG3">Fig.
+                            3</ce:cross-ref>.<ce:float-anchor refid="FIG3"/> Two regimes are
+                        observed above and below an <ce:italic>&#x03B5;</ce:italic> of about 0.025.
+                        The <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic> vs
+                            <ce:italic>&#x03B5;</ce:italic> data were fit to a modified Voce-type
+                        equation <ce:cross-ref refid="BIB10">[10]</ce:cross-ref>. The Voce equation
+                        has a power law (usually linear) regime at low strains, decreasing to a
+                        constant saturation flow stress at higher strains. The results shown in
+                            <ce:cross-ref refid="FIG3">Fig. 3</ce:cross-ref> can be represented by
+                        two linear Voce-type terms with the form<display><formula id="FD5"
+                                    ><ce:label>(10)</ce:label><math altimg="si25.gif"
+                                        >&#x03C3;<inf>&#x03B5;</inf>&#x03B5;=&#x03C7;<inf>&#x03B5;1</inf>&#x03B5;[1&#x2212;<rm><ce:hsp
+                                            sp="0.12"/>exp<ce:hsp sp="0.10"
+                                            /></rm>(&#x2212;&#x03B5;<inf><rm>s1</rm></inf>/&#x03B5;)]+&#x03C7;<inf>&#x03B5;2</inf>(&#x03B5;&#x2212;&#x03B5;<inf>t</inf>&#x2A7E;0)[1&#x2212;<rm><ce:hsp
+                                            sp="0.12"/>exp<ce:hsp sp="0.10"
+                                            /></rm>(&#x2212;&#x03B5;<inf><rm>s2</rm></inf>/&#x03B5;)].</math></formula></display>Here
+                                <ce:italic>&#x03C7;<ce:inf>&#x03B5;</ce:inf></ce:italic><ce:inf>1</ce:inf>
+                        and
+                            <ce:italic>&#x03C7;<ce:inf>&#x03B5;</ce:inf></ce:italic><ce:inf>2</ce:inf>
+                        represent the magnitude of each strain-hardening term,
+                            <ce:italic>&#x03B5;</ce:italic><ce:inf>s1</ce:inf> and
+                            <ce:italic>&#x03B5;</ce:italic><ce:inf>s2</ce:inf> characterize the
+                        saturation strains and <ce:italic>&#x03B5;</ce:italic><ce:inf>t</ce:inf> is
+                        the threshold strain for the second mechanism (note
+                            <ce:italic>&#x03B5;</ce:italic>&#x2212;0.025 in the second term is set
+                        to 0 for <ce:italic>&#x03B5;</ce:italic><ce:hsp sp="0.12"/>&#x003C;<ce:hsp
+                            sp="0.12"/>0.025). The solid line is the best fit given by the
+                        expression for: <math altimg="si26.gif"
+                                >&#x03C7;<inf>&#x03B5;1</inf>=865;<ce:hsp sp="0.35"
+                                />&#x03C7;<inf>&#x03B5;2</inf>=1130<rm>MPa</rm>;&#x03B5;<inf><rm>s1</rm></inf>=0.07;&#x03B5;<inf><rm>s2</rm></inf>=0.24;<ce:hsp
+                                sp="0.35"/><rm>and</rm><ce:hsp sp="0.35"
+                                />&#x03B5;<inf><rm>t</rm></inf>=0.025</math>. Note, other
+                        approximate forms could be used, such as a linear term for
+                            <ce:italic>&#x03B5;</ce:italic> between yield and 0.025 and a simple
+                        power law (&#x2248;<ce:hsp sp="0.12"
+                            />400(<ce:italic>&#x03B5;</ce:italic><ce:hsp sp="0.12"/>&#x2212;<ce:hsp
+                            sp="0.12"/>0.025)<ce:sup>0.45</ce:sup>) for
+                            <ce:italic>&#x03B5;</ce:italic><ce:hsp sp="0.12"/>><ce:hsp sp="0.12"
+                        />0.025.</ce:para>
+                    <ce:para><ce:cross-refs refid="FD2 FD4 FD5">Eqs. (3), (8) and
+                            (10)</ce:cross-refs> define an overall constitutive
+                                    model,<display><formula><ce:label>(11)</ce:label><math
+                                    altimg="si27.gif">&#x03C3;<inf><rm>fl</rm></inf>(T,<a>
+                                        <ac>&#x03B5;</ac>
+                                        <ac>&#x0307;</ac></a>,&#x03B5;)=1130&#x2212;1.52T<sup>&#x2032;</sup>+{(1.52T<sup>&#x2032;2</sup>&#x2212;885T<sup>&#x2032;</sup>)/(170+0.66T<sup>&#x2032;</sup>)}+<ce:hsp
+                                        sp="0.35"/>865&#x03B5;<ce:hsp sp="0.35"
+                                            />[1&#x2212;<rm><ce:hsp sp="0.12"/>exp<ce:hsp sp="0.10"
+                                        /></rm>(&#x2212;0.07/&#x03B5;)]+1130<ce:hsp sp="0.35"
+                                            />(&#x03B5;&#x2212;0.025)[1&#x2212;<rm><ce:hsp sp="0.12"
+                                            />exp<ce:hsp sp="0.10"
+                                        /></rm>(&#x2212;0.24/&#x03B5;)]<ce:hsp sp="1"
+                                    />(<rm>MPa</rm>).</math></formula></display></ce:para>
+                    <ce:para>The predicted vs measured
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>fl</ce:inf> at
+                            <ce:italic>&#x03B5;</ce:italic> of 0.5, 1, 2, 4, 8 and 14% are shown in
+                            <ce:cross-ref refid="FIG4">Fig. 4</ce:cross-ref>.<ce:float-anchor
+                            refid="FIG4"/> The overall standard deviation of the predicted vs
+                        measured <ce:italic>&#x03C3;</ce:italic><ce:inf>fl</ce:inf> is 16.4 MPa. The
+                        model can be applied over the combined <ce:italic>T</ce:italic> and <math
+                            altimg="si28.gif"><a>
+                                <ac>&#x03B5;</ac>
+                                <ac>&#x0307;</ac></a></math> ranges up to 100&#x00B0;C and 2/s,
+                        respectively. While some extrapolation beyond the experimental database may
+                        be reasonable, there are also limits imposed by the uniform strain regime up
+                        to about 0.14<ce:hsp sp="0.12"/>&#x00B1;<ce:hsp sp="0.12"/>0.04.</ce:para>
+                    <ce:para>The constitutive model can also be used to estimate the uniform
+                        strains, <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf>, in tensile tests
+                        based on the simple instability criteria that
+                            d<ce:italic>P</ce:italic>/d<ce:italic>&#x03B5;</ce:italic><ce:hsp
+                            sp="0.12"/>&#x2A7D;<ce:hsp sp="0.12"/>0, where <ce:italic>P</ce:italic>
+                        is the load equal to <ce:italic>A&#x03C3;</ce:italic><ce:inf>fl</ce:inf>
+                        where <ce:italic>A</ce:italic> is the instantaneous specimen cross-section.
+                        In the standard power law representation
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>fl</ce:inf>/<ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>=(<ce:italic>&#x03B5;</ce:italic>/<ce:italic>&#x03B5;</ce:italic><ce:inf>y</ce:inf>)<ce:italic><ce:sup>n</ce:sup></ce:italic>,
+                            <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf><ce:hsp sp="0.12"
+                            />&#x2248;<ce:hsp sp="0.12"/><ce:italic>n</ce:italic>. However, in the
+                        case where
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>fl</ce:inf>=<ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>+<ce:italic>&#x03C3;</ce:italic><ce:inf><ce:italic>&#x03B5;</ce:italic></ce:inf>(<ce:italic>&#x03B5;</ce:italic>),
+                            <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf> depends on
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> as well as the
+                        strain-hardening behavior. If
+                            <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic> is represented
+                        in terms of a simple power law strain hardening
+                                k<ce:italic>&#x03B5;<ce:sup>n</ce:sup></ce:italic>,
+                            <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf> (at
+                            d<ce:italic>P</ce:italic>/d<ce:italic>&#x03B5;</ce:italic>=0) can be
+                        found by solving the implicit relation<display><formula id="FD6"
+                                    ><ce:label>(12)</ce:label><math altimg="si29.gif"
+                                        >&#x03B5;<sup>n&#x2212;1</sup>=[&#x03C3;<inf><rm>y</rm></inf>/k+&#x03B5;<sup>n</sup>]/n.</math></formula></display></ce:para>
+                    <ce:para><ce:cross-ref refid="FIG5">Fig. 5</ce:cross-ref>
+                        <ce:float-anchor refid="FIG5"/>compares experimentally measured values to
+                        predictions of
+                            <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf>(<ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>)
+                        from <ce:cross-ref refid="FD6">Eq. (13)</ce:cross-ref> for <math
+                            altimg="si30.gif">n=0.45,<ce:hsp sp="0.35"/>k=400</math> MPa, adjusting
+                            <ce:italic>&#x03B5;</ce:italic> and
+                            <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> for the low-strain
+                        regime as
+                            <ce:italic>&#x03B5;</ce:italic><ce:sup>&#x2032;</ce:sup>=<ce:italic>&#x03B5;</ce:italic>&#x2212;0.25
+                        and
+                            <ce:italic>&#x03B5;</ce:italic><ce:sup>&#x2032;</ce:sup><ce:inf>y</ce:inf>=<ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>+<ce:italic>&#x03C3;</ce:italic><ce:inf><ce:italic>&#x03B5;</ce:italic></ce:inf>(0.025).
+                        The data are in reasonable agreement with the model predictions including
+                        the trend of <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf> decreasing
+                        with increasing <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>. Note,
+                        however, that the lowest values of
+                            <ce:italic>&#x03B5;</ce:italic><ce:inf>u</ce:inf> are for high-rate
+                        tests that may include effects of adiabatic heating that are not included in
+                        the model.</ce:para>
+                </ce:section>
+            </ce:section>
+            <ce:section>
+                <ce:label>4</ce:label>
+                <ce:section-title>Conclusions</ce:section-title>
+                <ce:para>The <ce:italic>&#x03C3;</ce:italic><ce:inf>fl</ce:inf> for the program heat
+                    of V&#x2013;4Cr&#x2013;4Ti alloy has a classical low-temperature activated
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>yt</ce:inf> regime and athermal
+                    contributions to both <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> and
+                            <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic>. The
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>yt</ce:inf> can be represented in
+                    terms of a strain rate-compensated temperature dependence that includes
+                    contributions from both Peierl&#x2019;s stress and interstitial impurities. The
+                    athermal post-yield <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic> can
+                    be described by a two-component Voce-typehardening law. The model, which
+                    incorporates analytical expressions for these processes fit to the tensile
+                    database, is broadly consistent with the current understanding of deformation in
+                    bcc alloys.</ce:para>
+                <ce:para>The relatively simple and compact form of the constitutive models has also
+                    a number of practical advantages. For example, it can be used to directly
+                    estimate uniform strains, as described in the previous section. In addition, FEM
+                    simulations of crack tip stress&#x2013;strain fields are very sensitive to the
+                    strain-hardening behavior. If the behavior of the V&#x2013;4Cr&#x2013;4Ti alloy
+                    were cast in a standard Ramberg&#x2013;Osgood form
+                        [<ce:italic>&#x03B5;</ce:italic>/<ce:italic>&#x03B5;</ce:italic><ce:inf>y</ce:inf>&#x2248;(<ce:italic>&#x03C3;</ce:italic>/<ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>)<ce:sup>1/<ce:italic>n</ce:italic></ce:sup>],
+                    the corresponding strain-hardening exponent (<ce:italic>n</ce:italic>) would
+                    appear to be a strong function of <ce:italic>T</ce:italic> and <math
+                        altimg="si31.gif"><a>
+                            <ac>&#x03B5;</ac>
+                            <ac>&#x0307;</ac></a></math>, since <ce:italic>n</ce:italic> implicitly
+                    depends on <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>. For
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf> ranging from 250 to 800
+                    MPa, the corresponding <ce:italic>n</ce:italic> varies from about 0.13 to 0.06.
+                    However, when cast in proper non-dimensional form, the predicted FEM fields are
+                    very similar over a wide range of temperatures and strain rates since: (a)
+                            <ce:italic>&#x03C3;<ce:inf>&#x03B5;</ce:inf></ce:italic> is athermal and
+                    approximately the same for various conditions; and (b) the non-dimensional
+                    fields depend only weakly on
+                        <ce:italic>&#x03C3;</ce:italic><ce:inf>y</ce:inf>/<ce:italic>E</ce:italic>,
+                    where <ce:italic>E</ce:italic> is the elastic modulus.</ce:para>
+                <ce:para>Since this investigation focused on a specific vanadium alloy condition,
+                    the results cannot be directly interpreted in terms of the underlying
+                    microstructure and alloy chemistry. Developing such microstructurally based
+                    constitutive models, including the effects of irradiation and key phenomena such
+                    as flow localization, is an important objective of future research.</ce:para>
+            </ce:section>
+        </ce:sections>
+        <ce:acknowledgment>
+            <ce:section-title>Acknowledgements</ce:section-title>
+            <ce:para>The authors gratefully acknowledge the assistance of J.W. Sheckherd, D. Gragg
+                and D. Klingensmith as well as that of our collaborators, Arthur Rowcliffe and his
+                colleagues at ORNL. The work was supported by the US Department of Energy Grant #
+                DE-FG03-87ER-52143.</ce:para>
+        </ce:acknowledgment>
+    </body>
+    <tail>
+        <ce:bibliography>
+            <ce:section-title>References</ce:section-title>
+            <ce:bibliography-sec>
+                <ce:bib-reference id="BIB1">
+                    <ce:label>[1]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>H.M. Chung, H.-C. Tsai, D.L. Smith, R. Peterson, C. Curtis, C.
+                            Wojcik, R. Kinney, DOE/ER-0313/17, US Department of Energy,
+                            1994</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB2">
+                    <ce:label>[2]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>M.L. Grossbeck, D.J. Alexander, J.J. Henry, W.S. Eatherly, L.T.
+                            Gibson, DOE/ER-0313/18, US Department of Energy, 1995</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB3">
+                    <ce:label>[3]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>A.N. Gubbi, A.F. Rowcliffe, W.S. Eatherly, DOE/ER-0313/18, US
+                            Department of Energy, 1995</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB4">
+                    <ce:label>[4]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>A.F. Rowcliffe, D.T. Hoelzer, S.J. Zinkle, DOE/ER-0313/26 US
+                            Department of Energy, 1999</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB5">
+                    <ce:label>[5]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>G.R. Odette, E. Donahue, G.E. Lucas, J.W. Sheckherd,
+                            DOE/ER-0313/20, US Department of Energy, 1996, p. 11</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB6">
+                    <ce:label>[6]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>F.J.</ce:given-name>
+                                    <ce:surname>Zerilli</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R.W.</ce:given-name>
+                                    <ce:surname>Armstrong</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Appl. Phys.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>61</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1987</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1816</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB7">
+                    <ce:label>[7]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>J.P.</ce:given-name>
+                                    <ce:surname>Hirth</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.</ce:given-name>
+                                    <ce:surname>Lothe</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:book>
+                                <sb:title>
+                                    <sb:maintitle>Theory of Dislocations</sb:maintitle>
+                                </sb:title>
+                                <sb:date>1968</sb:date>
+                                <sb:publisher>
+                                    <sb:name>McGraw-Hill</sb:name>
+                                    <sb:location>New York</sb:location>
+                                </sb:publisher>
+                            </sb:book>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB8">
+                    <ce:label>[8]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>M.</ce:given-name>
+                                    <ce:surname>Tang</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>B.</ce:given-name>
+                                    <ce:surname>Devincre</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>L.P.</ce:given-name>
+                                    <ce:surname>Kubin</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Model. Simulation Mater. Sci.
+                                            Eng.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>7</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1999</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>893</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB9">
+                    <ce:label>[9]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>P.</ce:given-name>
+                                    <ce:surname>Sp&#x00E4;tig</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G.R.</ce:given-name>
+                                    <ce:surname>Odette</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G.E.</ce:given-name>
+                                    <ce:surname>Lucas</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Nucl. Mater.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>275</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1999</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>324</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB10">
+                    <ce:label>[10]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>E.</ce:given-name>
+                                    <ce:surname>Voce</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Inst. Met.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>74</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1968</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>537</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+            </ce:bibliography-sec>
+        </ce:bibliography>
+    </tail>
+</article>

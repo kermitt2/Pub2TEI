@@ -1,0 +1,104 @@
+<Publisher>
+    <PublisherInfo>
+        <PublisherName>Gabler Verlag</PublisherName>
+        <PublisherLocation>Wiesbaden</PublisherLocation>
+    </PublisherInfo>
+    <Journal>
+        <JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+            <JournalID>12176</JournalID>
+            <JournalPrintISSN>1614-1822</JournalPrintISSN>
+            <JournalElectronicISSN>1864-5410</JournalElectronicISSN>
+            <JournalTitle>Controlling und Management</JournalTitle>
+            <JournalSubTitle>Zeitschrift f&#252;r Controlling und Management</JournalSubTitle>
+            <JournalAbbreviatedTitle>Z Control Manag</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Type="Primary" Code="W">Economics / Management
+                    Science</JournalSubject>
+                <JournalSubject Type="Secondary" Priority="1" Code="W23016"
+                    >Accounting/Auditing</JournalSubject>
+                <JournalSubject Type="Secondary" Priority="2" Code="W23008">Business/Management
+                    Science, general</JournalSubject>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume>
+            <VolumeInfo VolumeType="Regular" TocLevels="0">
+                <VolumeIDStart>47</VolumeIDStart>
+                <VolumeIDEnd>47</VolumeIDEnd>
+                <VolumeIssueCount>S1</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Supplement">
+                <IssueInfo TocLevels="0">
+                    <IssueIDStart>1</IssueIDStart>
+                    <IssueIDEnd>1</IssueIDEnd>
+                    <IssueArticleCount>16</IssueArticleCount>
+                    <IssueHistory>
+                        <CoverDate>
+                            <Year>2003</Year>
+                            <Month>5</Month>
+                        </CoverDate>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>Springer Fachmedien Wiesbaden</CopyrightHolderName>
+                        <CopyrightYear>2003</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <Article ID="Art8">
+                    <ArticleInfo ArticleType="OriginalPaper" Language="De" TocLevels="0"
+                        NumberingStyle="Unnumbered" ContainsESM="No">
+                        <ArticleID>BF03255727</ArticleID>
+                        <ArticleDOI>10.1007/BF03255727</ArticleDOI>
+                        <ArticleSequenceNumber>8</ArticleSequenceNumber>
+                        <ArticleTitle Language="De">Die Budgetierung bei SKF ist heute viel
+                            st&#228;rker an der strategischen Planung orientiert</ArticleTitle>
+                        <ArticleCategory>Praxis &amp; Branchen</ArticleCategory>
+                        <ArticleFirstPage>52</ArticleFirstPage>
+                        <ArticleLastPage>53</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>2012</Year>
+                                <Month>6</Month>
+                                <Day>16</Day>
+                            </RegistrationDate>
+                            <OnlineDate>
+                                <Year>2012</Year>
+                                <Month>8</Month>
+                                <Day>4</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>Springer Fachmedien Wiesbaden</CopyrightHolderName>
+                            <CopyrightYear>2003</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="Restricted"/>
+                            <BodyHTMLGrant Grant="Restricted"/>
+                            <BibliographyGrant Grant="Restricted"/>
+                            <ESMGrant Grant="Restricted"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff1" CorrespondingAffiliationID="Aff1">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Gunnar</GivenName>
+                                    <FamilyName>Gremlin</FamilyName>
+                                </AuthorName>
+                                <Role>Executive Vice President der AB SKF, der Muttergesellschaft
+                                    der SKF Gruppe und Vorsitzender der Gesch&#228;ftsf&#252;hrung
+                                    der deutschen</Role>
+                            </Author>
+                            <Affiliation ID="Aff1">
+                                <OrgAddress>
+                                    <Country>Deutschland</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>

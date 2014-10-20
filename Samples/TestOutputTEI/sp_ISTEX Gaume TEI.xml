@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <teiHeader type="text">
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="main" xml:lang="en">Semi-automatic Endogenous Enrichment of Collaboratively Constructed Lexical Resources: Piggybacking onto Wiktionary</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Springer Berlin Heidelberg</authority>
+                <date>2010</date>
+                <publisher>Springer Berlin Heidelberg</publisher>
+                <pubPlace>Berlin, Heidelberg</pubPlace>
+            </publicationStmt>
+            <seriesStmt>
+                <title level="s">Lecture Notes in Computer Science</title>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">David Hutchison</name>
+                    <orgName>Lancaster University, Lancaster - UK</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Takeo Kanade</name>
+                    <orgName>Carnegie Mellon University, Pittsburgh, PA - USA</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Josef Kittler</name>
+                    <orgName>University of Surrey, Guildford - UK</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Jon M. Kleinberg</name>
+                    <orgName>Cornell University, Ithaca, NY - USA</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Friedemann Mattern</name>
+                    <orgName>ETH Zurich, Zurich - Switzerland</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">John C. Mitchell</name>
+                    <orgName>Stanford University, Stanford, CA - USA</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Moni Naor</name>
+                    <orgName>Weizmann Institute of Science, Rehovot - Israel</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Oscar Nierstrasz</name>
+                    <orgName>University of Bern, Bern - Switzerland</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">C. Pandu Rangan</name>
+                    <orgName>Indian Institute of Technology, Madras - India</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Bernhard Steffen</name>
+                    <orgName>University of Dortmund, Dortmund - Germany</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Madhu Sudan</name>
+                    <orgName>Massachusetts Institute of Technology, MA - USA</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Demetri Terzopoulos</name>
+                    <orgName>University of California, Los Angeles, CA - USA</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Doug Tygar</name>
+                    <orgName>University of California, Berkeley, CA - USA</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Moshe Y. Vardi</name>
+                    <orgName>Rice University, Houston, TX - USA</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>collection editor</resp>
+                    <name type="person">Gerhard Weikum</name>
+                    <orgName>Max-Planck Institute of Computer Science, Saarbrücken - Germany</orgName>
+                </respStmt>
+                <idno type="ISSN">0302-9743</idno>
+                <idno type="eISSN">1611-3349</idno>
+                <idno type="SeriesID">558</idno>
+            </seriesStmt>
+            <sourceDesc>
+                <listBibl type="inbook">
+                    <biblStruct type="article">
+                        <analytic>
+                            <title level="a" type="main" xml:lang="en">Semi-automatic Endogenous Enrichment of Collaboratively Constructed Lexical Resources: Piggybacking onto Wiktionary</title>
+                            <author>
+                                <persName>
+                                    <forename type="first">Franck </forename>
+                                    <surname>Sajous</surname>
+                                </persName>
+                                <affiliation>CLLE-ERSS, CNRS &amp; Université de Toulouse -</affiliation>
+                            </author>
+                            <author>
+                                <persName>
+                                    <forename type="first">Emmanuel </forename>
+                                    <surname>Navarro</surname>
+                                </persName>
+                                <affiliation>IRIT, CNRS &amp; Université de Toulouse -</affiliation>
+                            </author>
+                            <author>
+                                <persName>
+                                    <forename type="first">Bruno </forename>
+                                    <surname>Gaume</surname>
+                                </persName>
+                                <affiliation>CLLE-ERSS, CNRS &amp; Université de Toulouse -</affiliation>
+                            </author>
+                            <author>
+                                <persName>
+                                    <forename type="first">Laurent </forename>
+                                    <surname>Prévot</surname>
+                                </persName>
+                                <affiliation>LPL, CNRS &amp; Université de Provence -</affiliation>
+                            </author>
+                            <author>
+                                <persName>
+                                    <forename type="first">Yannick </forename>
+                                    <surname>Chudy</surname>
+                                </persName>
+                                <affiliation>CLLE-ERSS, CNRS &amp; Université de Toulouse -</affiliation>
+                            </author>
+                        </analytic>
+                        <monogr>
+                            <title level="m">Advances in Natural Language Processing</title>
+                            <title level="m" type="sub">7th International Conference on NLP, IceTAL 2010, Reykjavik, Iceland, August 16-18, 2010</title>
+                            <idno type="pISBN">978-3-642-14769-2</idno>
+                            <idno type="eISBN">978-3-642-14770-8</idno>
+                            <idno type="DOI">10.1007/978-3-642-14770-8</idno>
+                            <idno type="bookTitleID">212780</idno>
+                            <idno type="BookVolumeNumber">6233</idno>
+                            <idno type="BookSequenceNumber">6233</idno>
+                            <editor>
+                                <persName>
+                                    <forename type="first">Hrafn </forename>
+                                    <surname>Loftsson</surname>
+                                </persName>
+                                <email>hrafn@ru.is</email>
+                                <affiliation>School of Computer Science, Reykjavik University, Kringlan 1, 103, Reykjavik - Iceland</affiliation>
+                            </editor>
+                            <editor>
+                                <persName>
+                                    <forename type="first">Eiríkur </forename>
+                                    <surname>Rögnvaldsson</surname>
+                                </persName>
+                                <email>eirikur@hi.is</email>
+                                <affiliation>Department of Icelandic, University of Iceland, Árnagardur v/Sudurgötu, 101, Reykjavik - Iceland</affiliation>
+                            </editor>
+                            <editor>
+                                <persName>
+                                    <forename type="first">Sigrún </forename>
+                                    <surname>Helgadóttir</surname>
+                                </persName>
+                                <email>sigruhel@hi.is</email>
+                                <affiliation>Arni Magnusson Institute for Icelandic Studies, Neshagi 16, 101, Reykjavik - Iceland</affiliation>
+                            </editor>
+                            <imprint>
+                                <publisher>Springer Berlin Heidelberg</publisher>
+                                <pubPlace>Berlin, Heidelberg</pubPlace>
+                                <date>2010</date>
+                                <biblScope type="vol">6233</biblScope>
+                                <biblScope type="page" from="332">332</biblScope>
+                                <biblScope type="page" to="344">344</biblScope>
+                                <biblScope type="bookChapterCount">45</biblScope>
+                                <biblScope type="partChapterCount">43</biblScope>
+                            </imprint>
+                        </monogr>
+                        <series>
+                            <title level="s">Lecture Notes in Artificial Intelligence</title>
+                            <editor>
+                                <persName>
+                                    <forename type="first">Randy </forename>
+                                    <surname>Goebel</surname>
+                                </persName>
+                                <affiliation>University of Alberta, Edmonton - Canada</affiliation>
+                            </editor>
+                            <editor>
+                                <persName>
+                                    <forename type="first">Jörg </forename>
+                                    <surname>Siekmann</surname>
+                                </persName>
+                                <affiliation>University of Saarland, Saarbrücken - Germany</affiliation>
+                            </editor>
+                            <editor>
+                                <persName>
+                                    <forename type="first">Wolfgang </forename>
+                                    <surname>Wahlster</surname>
+                                </persName>
+                                <affiliation>DFKI and University of Saarland, Saarbrücken - Germany</affiliation>
+                            </editor>
+                            <biblScope type="pISSN">0302-9743</biblScope>
+                            <biblScope type="eISSN">1611-3349</biblScope>
+                            <biblScope type="SeriesId">1244</biblScope>
+                        </series>
+                        <idno type="ChapterID">Chap37</idno>
+                        <idno type="ChapterID">37</idno>
+                        <idno type="DOI">10.1007/978-3-642-14770-8_37</idno>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <date>2010</date>
+            </creation>
+            <langUsage>
+                <language ident="eng">en</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="abstract" xml:lang="en">
+                <p>Abstract: The lack of large-scale, freely available and durable lexical resources, and the consequences for NLP, is widely acknowledged but the attempts to cope with usual bottlenecks preventing their development often result in dead-ends. This article introduces a language-independent, semi-automatic and endogenous method for enriching lexical resources, based on collaborative editing and random walks through existing lexical relationships, and shows how this approach enables us to overcome recurrent impediments. It compares the impact of using different data sources and similarity measures on the task of improving synonymy networks. Finally, it defines an architecture for applying the presented method to Wiktionary and explains how it has been implemented.</p>
+            </div>
+        </front>
+        <body>
+            <div/>
+        </body>
+    </text>
+</TEI>

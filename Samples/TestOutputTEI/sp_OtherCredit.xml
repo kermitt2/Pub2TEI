@@ -1,0 +1,103 @@
+<Publisher>
+    <PublisherInfo>
+        <PublisherName>SP Science China Press</PublisherName>
+        <PublisherLocation>Heidelberg</PublisherLocation>
+    </PublisherInfo>
+    <Journal OutputMedium="All">
+        <JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+            <JournalID>11426</JournalID>
+            <JournalPrintISSN>1674-7291</JournalPrintISSN>
+            <JournalElectronicISSN>1869-1870</JournalElectronicISSN>
+            <JournalTitle>Science China Chemistry</JournalTitle>
+            <JournalAbbreviatedTitle>Sci. China Chem.</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Type="Primary">Chemistry</JournalSubject>
+                <JournalSubject Type="Secondary">Chemistry/Food Science, general</JournalSubject>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume OutputMedium="All">
+            <VolumeInfo TocLevels="0" VolumeType="Regular">
+                <VolumeIDStart>54</VolumeIDStart>
+                <VolumeIDEnd>54</VolumeIDEnd>
+                <VolumeIssueCount>12</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Regular" OutputMedium="All">
+                <IssueInfo IssueType="Regular" TocLevels="0">
+                    <IssueIDStart>12</IssueIDStart>
+                    <IssueIDEnd>12</IssueIDEnd>
+                    <IssueTitle Language="En">Special Issue International Year of CHEMISTRY
+                        2011</IssueTitle>
+                    <IssueArticleCount>30</IssueArticleCount>
+                    <IssueHistory>
+                        <OnlineDate>
+                            <Year>2011</Year>
+                            <Month>12</Month>
+                            <Day>16</Day>
+                        </OnlineDate>
+                        <CoverDate>
+                            <Year>2011</Year>
+                            <Month>12</Month>
+                        </CoverDate>
+                        <PricelistYear>2011</PricelistYear>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>Science China Press and Springer-Verlag Berlin
+                            Heidelberg</CopyrightHolderName>
+                        <CopyrightYear>2011</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <Article ID="s11426-011-4464-y" OutputMedium="All">
+                    <ArticleInfo ArticleType="EditorialNotes" ContainsESM="No" Language="En"
+                        NumberingStyle="Unnumbered" TocLevels="0">
+                        <ArticleID>4464</ArticleID>
+                        <ArticleDOI>10.1007/s11426-011-4464-y</ArticleDOI>
+                        <ArticleSequenceNumber>1</ArticleSequenceNumber>
+                        <ArticleTitle Language="En">Preface</ArticleTitle>
+                        <ArticleSubTitle Language="En">International Year of Chemistry
+                            2011</ArticleSubTitle>
+                        <ArticleCategory>Editorial</ArticleCategory>
+                        <ArticleFirstPage>1801</ArticleFirstPage>
+                        <ArticleLastPage>1802</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>2011</Year>
+                                <Month>12</Month>
+                                <Day>15</Day>
+                            </RegistrationDate>
+                            <OnlineDate>
+                                <Year>2012</Year>
+                                <Month>1</Month>
+                                <Day>13</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>Science China Press and Springer-Verlag Berlin
+                                Heidelberg</CopyrightHolderName>
+                            <CopyrightYear>2011</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="OpenAccess"/>
+                            <BodyHTMLGrant Grant="OpenAccess"/>
+                            <BibliographyGrant Grant="OpenAccess"/>
+                            <ESMGrant Grant="OpenAccess"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author>
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Zi-Ling</GivenName>
+                                    <FamilyName>Xue</FamilyName>
+                                </AuthorName>
+                                <OtherCredit>November 4, 2011</OtherCredit>
+                            </Author>
+                        </AuthorGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>

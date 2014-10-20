@@ -1,0 +1,246 @@
+
+<Publisher>
+    <PublisherInfo>
+        <PublisherName>Versita</PublisherName>
+        <PublisherLocation>Warsaw</PublisherLocation>
+    </PublisherInfo>
+    <Journal OutputMedium="All">
+        <JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+            <JournalID>11534</JournalID>
+            <JournalPrintISSN>1895-1082</JournalPrintISSN>
+            <JournalElectronicISSN>1644-3608</JournalElectronicISSN>
+            <JournalTitle>Central European Journal of Physics</JournalTitle>
+            <JournalAbbreviatedTitle>centr.eur.j.phys.</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Code="P" Type="Primary">Physics</JournalSubject>
+                <JournalSubject Code="P00002" Priority="1" Type="Secondary">Physics,
+                    general</JournalSubject>
+                <JournalSubject Code="C21001" Priority="2" Type="Secondary">Physical
+                    Chemistry</JournalSubject>
+                <JournalSubject Code="G18009" Priority="3" Type="Secondary"
+                    >Geophysics/Geodesy</JournalSubject>
+                <JournalSubject Code="U19001" Priority="4" Type="Secondary">Environmental
+                    Physics</JournalSubject>
+                <JournalSubject Code="P27008" Priority="5" Type="Secondary">Biophysics and
+                    Biological Physics</JournalSubject>
+                <JournalSubject Code="T11022" Priority="6" Type="Secondary"
+                    >Complexity</JournalSubject>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume OutputMedium="All">
+            <VolumeInfo TocLevels="0" VolumeType="Regular">
+                <VolumeIDStart>8</VolumeIDStart>
+                <VolumeIDEnd>8</VolumeIDEnd>
+                <VolumeIssueCount>4</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Regular" OutputMedium="All">
+                <IssueInfo IssueType="Regular" TocLevels="0">
+                    <IssueIDStart>2</IssueIDStart>
+                    <IssueIDEnd>2</IssueIDEnd>
+                    <IssueTitle Language="En">Topical Issue: Modern applications of
+                        lasers</IssueTitle>
+                    <IssueArticleCount>14</IssueArticleCount>
+                    <IssueHistory>
+                        <OnlineDate>
+                            <Year>2010</Year>
+                            <Month>1</Month>
+                            <Day>30</Day>
+                        </OnlineDate>
+                        <CoverDate>
+                            <Year>2010</Year>
+                            <Month>4</Month>
+                        </CoverDate>
+                        <PricelistYear>2010</PricelistYear>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>&#169; Versita Warsaw and Springer-Verlag Berlin
+                            Heidelberg</CopyrightHolderName>
+                        <CopyrightYear>2010</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <IssueHeader>
+                    <EditorGroup>
+                        <Editor>
+                            <EditorName DisplayOrder="Western">
+                                <GivenName>Maciej</GivenName>
+                                <FamilyName>Bugajski</FamilyName>
+                            </EditorName>
+                        </Editor>
+                        <Editor>
+                            <EditorName DisplayOrder="Western">
+                                <GivenName>Michal</GivenName>
+                                <FamilyName>Malinowski</FamilyName>
+                            </EditorName>
+                        </Editor>
+                    </EditorGroup>
+                </IssueHeader>
+                <Article ID="s11534-009-0122-9" OutputMedium="All">
+                    <ArticleInfo ArticleType="OriginalPaper" ContainsESM="No" Language="En"
+                        NumberingStyle="Unnumbered" TocLevels="0">
+                        <ArticleID>122</ArticleID>
+                        <ArticleDOI>10.2478/s11534-009-0122-9</ArticleDOI>
+                        <ArticleSequenceNumber>12</ArticleSequenceNumber>
+                        <ArticleTitle Language="En">Detection of laser induced dielectric breakdown
+                            in water using a laser doppler vibrometer</ArticleTitle>
+                        <ArticleCategory>Research Article</ArticleCategory>
+                        <ArticleFirstPage>235</ArticleFirstPage>
+                        <ArticleLastPage>241</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>2009</Year>
+                                <Month>8</Month>
+                                <Day>27</Day>
+                            </RegistrationDate>
+                            <Received>
+                                <Year>2009</Year>
+                                <Month>2</Month>
+                                <Day>18</Day>
+                            </Received>
+                            <Accepted>
+                                <Year>2009</Year>
+                                <Month>6</Month>
+                                <Day>23</Day>
+                            </Accepted>
+                            <OnlineDate>
+                                <Year>2009</Year>
+                                <Month>8</Month>
+                                <Day>27</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>&#169; Versita Warsaw and Springer-Verlag Berlin
+                                Heidelberg</CopyrightHolderName>
+                            <CopyrightYear>2010</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="Restricted"/>
+                            <BodyHTMLGrant Grant="Restricted"/>
+                            <BibliographyGrant Grant="Restricted"/>
+                            <ESMGrant Grant="Restricted"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff1" CorrespondingAffiliationID="Aff1">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Juha</GivenName>
+                                    <GivenName>M.</GivenName>
+                                    <FamilyName>Saarela</FamilyName>
+                                </AuthorName>
+                                <Contact>
+                                    <Email>juha.saarela@oulu.fi</Email>
+                                </Contact>
+                            </Author>
+                            <Author AffiliationIDS="Aff2">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Torbj&#246;rn</GivenName>
+                                    <FamilyName>L&#246;fqvist</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff2">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Kerstin</GivenName>
+                                    <FamilyName>Ramser</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff3">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Per</GivenName>
+                                    <FamilyName>Gren</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff3">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Erik</GivenName>
+                                    <FamilyName>Olson</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff2">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Jan</GivenName>
+                                    <FamilyName>Niemi</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff3">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Mikael</GivenName>
+                                    <FamilyName>Sj&#246;dahl</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Affiliation ID="Aff1">
+                                <OrgDivision>Department of Electrical and Information Engineering
+                                    and Infotech Oulu</OrgDivision>
+                                <OrgName>University of Oulu</OrgName>
+                                <OrgAddress>
+                                    <Postbox>P.O. Box 4500</Postbox>
+                                    <Postcode>90014</Postcode>
+                                    <City>University of Oulu</City>
+                                    <Country>Finland</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff2">
+                                <OrgDivision>Department of Computer Science and Electrical
+                                    Engineering</OrgDivision>
+                                <OrgName>Lule&#229; University of Technology</OrgName>
+                                <OrgAddress>
+                                    <Postcode>SE-97187</Postcode>
+                                    <City>Lule&#229;</City>
+                                    <Country>Sweden</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff3">
+                                <OrgDivision>Department of Applied Physics and Mechanical
+                                    Engineering</OrgDivision>
+                                <OrgName>Lule&#229; University of Technology</OrgName>
+                                <OrgAddress>
+                                    <Postcode>SE-97187</Postcode>
+                                    <City>Lule&#229;</City>
+                                    <Country>Sweden</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                        <Abstract ID="Abs1" Language="En">
+                            <Heading>Abstract</Heading>
+                            <Para>This study is focused on exploring the feasibility of an all-optic
+                                surface scanning method in determining the size and position of a
+                                submerged, laser generated, optoacoustic (OA) source. The
+                                optoacoustic effect in this case was generated when the absorption
+                                of a short electromagnetic pulse in matter caused a dielectric
+                                breakdown, a plasma emission flash and a subsequent acoustic wave.
+                                In the experiment, a laser pulse with &#955; = 1064 nm and 12 ns
+                                pulse length was aimed at a volume of deionized water. When the
+                                laser beam was focused by a <Emphasis Type="Italic">f</Emphasis> =
+                                16 mm lens, a single dielectric breakdown spot occurred. When a
+                                    <Emphasis Type="Italic">f</Emphasis> = 40 mm was used several
+                                breakdowns in a row were induced. The breakdowns were photographed
+                                using a double shutter camera. The acoustic wave generated by the
+                                dielectric breakdowns were detected at a point on the water surface
+                                using a laser Doppler vibrometer (LDV). First, the LDV signal was
+                                used to calculate the speed of sound with an accuracy of 10 m/s.
+                                Secondly, the location and length of the dielectric breakdown was
+                                calculated with an accuracy of 1 mm. The calculated position matched
+                                the breakdown location recorded by a camera. The results show that
+                                it is possible to use LDV surface measurements from a single spot to
+                                determine both the position and length of the OA source as well as
+                                the speed of sound in the medium. Furthermore, the LDV measurements
+                                also show a secondary peak that originates from the OA source. To
+                                unravel the origin and properties of this interesting feature,
+                                further investigations are necessary</Para>
+                        </Abstract>
+                        <KeywordGroup Language="En">
+                            <Heading>Keywords</Heading>
+                            <Keyword>dielectric breakdown</Keyword>
+                            <Keyword>laser</Keyword>
+                            <Keyword>vibrometer</Keyword>
+                            <Keyword>optoacoustic</Keyword>
+                            <Keyword>surface wave</Keyword>
+                        </KeywordGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>
