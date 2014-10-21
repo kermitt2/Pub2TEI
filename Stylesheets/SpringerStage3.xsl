@@ -120,6 +120,7 @@
                 <xsl:apply-templates select="JournalInfo/JournalID"/>
                 <xsl:apply-templates select="JournalInfo/JournalPrintISSN"/>
                 <xsl:apply-templates select="JournalInfo/JournalElectronicISSN"/>
+                <xsl:apply-templates select="Volume/Issue/IssueInfo/IssueTitle"/>
                 <imprint>
                     <xsl:apply-templates select="../PublisherInfo/*"/>
                     <xsl:choose>
