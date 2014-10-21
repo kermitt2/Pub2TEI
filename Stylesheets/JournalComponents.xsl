@@ -143,7 +143,7 @@
     </xsl:template>
 
     <!-- Issue titles -->
-    <xsl:template match="issue_description | issue-title">
+    <xsl:template match="issue_description | issue-title | IssueTitle">
         <xsl:if test=".!=''">
             <title level="j" type="issue">
                 <xsl:apply-templates/>
@@ -281,6 +281,25 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 2 special rules for Springer that provides, beginning and end volume number -->
+   
+    <xsl:template match="VolumeIDStart">
+        <xsl:if test=".!=''">
+            <biblScope unit="vol" from="{.}">
+                <xsl:apply-templates/>
+            </biblScope>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="VolumeIDEnd">
+        <xsl:if test=".!=''">
+            <biblScope unit="vol" to="{.}">
+                <xsl:apply-templates/>
+            </biblScope>
+        </xsl:if>
+    </xsl:template>
+
+
     <!-- Rule for RCS data -->
     <xsl:template match="volumeref/link">
         <xsl:apply-templates/>
@@ -294,11 +313,34 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- 2 special rules for Springer that provides, beginning and end volume number -->
+    
+    <xsl:template match="IssueIDStart">
+        <xsl:if test=".!=''">
+            <biblScope unit="issue" from="{.}">
+                <xsl:apply-templates/>
+            </biblScope>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="IssueIDEnd">
+        <xsl:if test=".!=''">
+            <biblScope unit="issue" to="{.}">
+                <xsl:apply-templates/>
+            </biblScope>
+        </xsl:if>
+    </xsl:template>
+    
     <!-- Rule for RCS data -->
     <xsl:template match="issueref/link">
         <xsl:apply-templates/>
     </xsl:template>
     
+    <!-- we do not consider the number of issues in a volume (Springer <Publisher>) -->
+    
+    <xsl:template match="VolumeIssueCount"/>
+    
+    <!-- Pagination -->
 
     <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page">
         <xsl:if test=".!=''">

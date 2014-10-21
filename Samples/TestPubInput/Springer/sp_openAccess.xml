@@ -1,0 +1,199 @@
+<Publisher>
+    <PublisherInfo>
+        <PublisherName>Korean Society of Civil Engineers</PublisherName>
+        <PublisherLocation>Heidelberg</PublisherLocation>
+        <PublisherImprintName>Korean Society of Civil Engineers, co-published with
+            Springer</PublisherImprintName>
+    </PublisherInfo>
+    <Journal OutputMedium="All">
+        <JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+            <JournalID>12205</JournalID>
+            <JournalDOI>10.1007/12205.1976-3808</JournalDOI>
+            <JournalPrintISSN>1226-7988</JournalPrintISSN>
+            <JournalElectronicISSN>1976-3808</JournalElectronicISSN>
+            <JournalTitle>KSCE Journal of Civil Engineering</JournalTitle>
+            <JournalAbbreviatedTitle>KSCE J Civ Eng</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Code="SCT" Type="Primary">Engineering</JournalSubject>
+                <JournalSubject Code="SCT23004" Priority="1" Type="Secondary">Civil
+                    Engineering</JournalSubject>
+                <JournalSubject Code="SCU35020" Priority="2" Type="Secondary">Industrial Pollution
+                    Prevention</JournalSubject>
+                <JournalSubject Code="SCG37010" Priority="3" Type="Secondary">Geotechnical
+                    Engineering &amp; Applied Earth Sciences</JournalSubject>
+                <SubjectCollection Code="SC8">Engineering</SubjectCollection>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume OutputMedium="All">
+            <VolumeInfo TocLevels="0" VolumeType="Regular">
+                <VolumeIDStart>18</VolumeIDStart>
+                <VolumeIDEnd>18</VolumeIDEnd>
+                <VolumeIssueCount>7</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Regular" OutputMedium="All">
+                <IssueInfo IssueType="Regular" TocLevels="0">
+                    <IssueIDStart>7</IssueIDStart>
+                    <IssueIDEnd>7</IssueIDEnd>
+                    <IssueArticleCount>40</IssueArticleCount>
+                    <IssueHistory>
+                        <OnlineDate>
+                            <Year>2014</Year>
+                            <Month>10</Month>
+                            <Day>18</Day>
+                        </OnlineDate>
+                        <CoverDate>
+                            <Year>2014</Year>
+                            <Month>11</Month>
+                        </CoverDate>
+                        <PricelistYear>2014</PricelistYear>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>Korean Society of Civil Engineers and Springer-Verlag
+                            Berlin Heidelberg</CopyrightHolderName>
+                        <CopyrightYear>2014</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <Article ID="s12205-014-1130-x" OutputMedium="All">
+                    <ArticleInfo ArticleType="EditorialNotes" ContainsESM="No" Language="En"
+                        NumberingStyle="Unnumbered" TocLevels="0">
+                        <ArticleID>1130</ArticleID>
+                        <ArticleDOI>10.1007/s12205-014-1130-x</ArticleDOI>
+                        <ArticleSequenceNumber>8</ArticleSequenceNumber>
+                        <ArticleTitle Language="En">Application of block-centered finite difference
+                            formulation for non-linear finite strain consolidation</ArticleTitle>
+                        <ArticleCategory>Technical Note</ArticleCategory>
+                        <ArticleSubCategory>Geotechnical Engineering</ArticleSubCategory>
+                        <ArticleFirstPage>1991</ArticleFirstPage>
+                        <ArticleLastPage>1995</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>2014</Year>
+                                <Month>7</Month>
+                                <Day>10</Day>
+                            </RegistrationDate>
+                            <Received>
+                                <Year>2011</Year>
+                                <Month>5</Month>
+                                <Day>5</Day>
+                            </Received>
+                            <Revised>
+                                <Year>2013</Year>
+                                <Month>3</Month>
+                                <Day>26</Day>
+                            </Revised>
+                            <Accepted>
+                                <Year>2013</Year>
+                                <Month>11</Month>
+                                <Day>10</Day>
+                            </Accepted>
+                            <OnlineDate>
+                                <Year>2014</Year>
+                                <Month>6</Month>
+                                <Day>20</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>Korean Society of Civil Engineers and
+                                Springer-Verlag Berlin Heidelberg</CopyrightHolderName>
+                            <CopyrightYear>2014</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="OpenAccess"/>
+                            <BodyHTMLGrant Grant="OpenAccess"/>
+                            <BibliographyGrant Grant="OpenAccess"/>
+                            <ESMGrant Grant="OpenAccess"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff1">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Dongseop</GivenName>
+                                    <FamilyName>Lee</FamilyName>
+                                </AuthorName>
+                                <Contact>
+                                    <Email>steallady@korea.ac.kr</Email>
+                                </Contact>
+                            </Author>
+                            <Author AffiliationIDS="Aff1">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Chihun</GivenName>
+                                    <FamilyName>Sung</FamilyName>
+                                </AuthorName>
+                                <Contact>
+                                    <Email>hazlenut2@korea.ac.kr</Email>
+                                </Contact>
+                            </Author>
+                            <Author AffiliationIDS="Aff2">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Chulho</GivenName>
+                                    <FamilyName>Lee</FamilyName>
+                                </AuthorName>
+                                <Contact>
+                                    <Email>chlee@kict.re.kr</Email>
+                                </Contact>
+                            </Author>
+                            <Author AffiliationIDS="Aff1" CorrespondingAffiliationID="Aff1">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Hangseok</GivenName>
+                                    <FamilyName>Choi</FamilyName>
+                                </AuthorName>
+                                <Contact>
+                                    <Email>hchoi2@korea.ac.kr</Email>
+                                </Contact>
+                            </Author>
+                            <Affiliation ID="Aff1">
+                                <OrgDivision>School of Civil, Environmental and Architectural
+                                    Engineering</OrgDivision>
+                                <OrgName>Korea University</OrgName>
+                                <OrgAddress>
+                                    <City>Seoul</City>
+                                    <Postcode>136-713</Postcode>
+                                    <Country>Korea</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff2">
+                                <OrgDivision>Geotechnical Engineering Research
+                                    Division</OrgDivision>
+                                <OrgName>Korea Institute of Civil Engineering and Building
+                                    Technology (KICT)</OrgName>
+                                <OrgAddress>
+                                    <City>Goyang</City>
+                                    <Postcode>411-712</Postcode>
+                                    <Country>Korea</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                        <Abstract ID="Abs1" Language="En">
+                            <Heading>Abstract</Heading>
+                            <Para>A one-dimensional block-centered finite-difference model has been
+                                developed to estimate the rate of non-linear finite strain
+                                consolidation. The governing equations including the hydrodynamic
+                                and constitutive equations are presented. The hypothesis of the
+                                uniqueness of the End-of-Primary (EOP) void ratio &#8212; effective
+                                stress relationship is adopted to calculate the primary
+                                consolidation settlement. The explicit block-centered finite
+                                difference formulations and boundary conditions are presented and
+                                discussed. The developed model was compared with a point-centered
+                                finite-difference program, ILLICON to show the efficiency of the
+                                block-centered model. The block-center model provides an efficient
+                                tool to deal with interface boundaries and has advantageous ability
+                                to take into consideration the time-dependent loading, layered soil
+                                systems, and variable soil properties.</Para>
+                        </Abstract>
+                        <KeywordGroup Language="En">
+                            <Heading>Keywords</Heading>
+                            <Keyword>soil consolidation</Keyword>
+                            <Keyword>hydrodynamic equation</Keyword>
+                            <Keyword>constitutive equation</Keyword>
+                            <Keyword>block-centered finite-difference model</Keyword>
+                        </KeywordGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>

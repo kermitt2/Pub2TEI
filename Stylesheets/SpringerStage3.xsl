@@ -149,7 +149,9 @@
                                 select="Volume/Issue/Article/ArticleInfo/ArticleLastPage"/>
                         </xsl:otherwise>
                     </xsl:choose>
-
+                    <xsl:apply-templates select="Volume/VolumeInfo"/>
+                    <xsl:apply-templates select="Volume/Issue/IssueInfo/IssueIDStart"/>
+                    <xsl:apply-templates select="Volume/Issue/IssueInfo/IssueIDEnd"/>
                 </imprint>
             </monogr>
 
@@ -167,6 +169,10 @@
             </xsl:choose>
 
         </biblStruct>
+    </xsl:template>
+    
+    <xsl:template match="VolumeInfo">
+        <xsl:apply-templates/>
     </xsl:template>
 
 </xsl:stylesheet>
