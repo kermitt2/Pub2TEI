@@ -1,24 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" 
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+    exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- Références bibliographiques à la fin d'un article -->
     <!-- ref-list: NLM article, ScholarOne -->
 
-    <xsl:template match="ref-list | biblist">
+    <xsl:template match="ref-list | biblist | ce:bibliography">
         <div type="references">
-            <xsl:if test="title">
-                <xsl:apply-templates select="title"/>
-            </xsl:if>
+            <xsl:apply-templates select="title | ce:section-title"/>
             <listBibl>
-                <xsl:apply-templates select="ref | citgroup"/>
+                <xsl:apply-templates select="ref | citgroup | ce:bibliography-sec"/>
             </listBibl>
         </div>
     </xsl:template>
+    
+    <xsl:template match="ce:bibliography-sec">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <!-- Références simples Elsevier -->
+    
+    <xsl:template match="ce:bib-reference[ce:other-ref]">
+        <bibl xml:id="{@id}" n="{ce:label}">
+            <xsl:apply-templates select="*[name()!='ce:label']"/>
+        </bibl>
+    </xsl:template>
 
+    <xsl:template match="ce:other-ref">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="ce:textref">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <!-- Références complexes Elsevier -->
+    
+    <!-- Traitement des références structurées Elsevier -->
+    
+    <xsl:template match="ce:bib-reference[sb:reference]">
+        <biblStruct xml:id="{@id}" n="{ce:label}">
+            <analytic>
+                <xsl:apply-templates select="sb:reference/sb:contribution/*"/>
+            </analytic>
+            <monogr>
+                <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:series/sb:title/*"/>
+                <imprint>
+                    <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:series/*[name()!='sb:title']"/>
+                    <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:date"/>
+                    <xsl:apply-templates select="sb:reference/sb:host/sb:pages/*"/>
+                </imprint>
+            </monogr>
+        </biblStruct>
+    </xsl:template>
+    
+    
     <!-- Journal paper -->
 
     <xsl:template match="ref[*/@citation-type='journal']">
@@ -264,5 +307,7 @@
             </xsl:choose>
         </xsl:attribute>
     </xsl:template>
+    
+
 
 </xsl:stylesheet>

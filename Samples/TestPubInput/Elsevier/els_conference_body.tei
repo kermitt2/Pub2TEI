@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en"><teiHeader><fileDesc><titleStmt><title level="a" type="main">A physically based constitutive model for a V–4Cr–4Ti
+            alloy</title></titleStmt><publicationStmt><availability status="full-transfer"><p><date>2000</date></p></availability></publicationStmt><sourceDesc><biblStruct><analytic><author type="corresp"><persName><forename type="first">E.G.</forename><surname>Donahue</surname></persName><email>donahue@engineering.ucsb.edu</email><affiliation><orgName type="department">Department of Mechanical and Environmental Engineering</orgName><orgName type="institution">University of California</orgName><address><addrLine>Santa Barbara</addrLine><addrLine>CA 93106</addrLine><country key="US">UNITED STATES</country></address><address><country key=""/></address></affiliation><ref target="#CORR1">*</ref></author><author><persName><forename type="first">G.R.</forename><surname>Odette</surname></persName><affiliation><orgName type="department">Department of Mechanical and Environmental Engineering</orgName><orgName type="institution">University of California</orgName><address><addrLine>Santa Barbara</addrLine><addrLine>CA 93106</addrLine><country key="US">UNITED STATES</country></address></affiliation></author><author><persName><forename type="first">G.E.</forename><surname>Lucas</surname></persName><affiliation><orgName type="department">Department of Mechanical and Environmental Engineering</orgName><orgName type="institution">University of California</orgName><address><addrLine>Santa Barbara</addrLine><addrLine>CA 93106</addrLine><country key="US">UNITED STATES</country></address></affiliation></author><title level="a" type="main">A physically based constitutive model for a V–4Cr–4Ti
+            alloy</title></analytic><monogr><title level="j" type="abbrev">NUMA</title><imprint/></monogr><idno type="DOI">10.1016/S0022-3115(00)00275-0</idno><idno type="PII">S0022-3115(00)00275-0</idno><idno type="publisherID">14140</idno></biblStruct></sourceDesc></fileDesc><profileDesc><textClass><keywords><list>
+            <head>Keywords</head>
+            <item><term>
+                V01
+            </term></item>
+            <item><term>
+                M03
+            </term></item>
+            <item><term>
+                D05
+            </term></item>
+        </list></keywords></textClass></profileDesc></teiHeader><text><front><div type="abstract">
+            <head>Abstract</head>
+            
+                <p>A constitutive model for low-to-intermediate temperatures, strains,
+                    and strain rates is developed for the program heat of V–4Cr–4Ti.
+                    The basic form of the model is derived from more general dislocation-based
+                    models of yield stress and strain hardening. The physically based forms are fit
+                    to a database derived from tensile tests carried out over a wide range of
+                    temperatures and strain rates. Yield and post-yield strain-hardening
+                    contributions to the flow stress are additive. The yield stress has both
+                    thermally activated and athermal components. The former is described by a
+                    two-mechanism activated dislocation slip model, with contributions that appear
+                    to arise from both lattice friction (at lower temperatures) and dislocation
+                    pinning by interstitial impurities (at higher temperatures). The yield stress
+                    data can be correlated using a strain rate-compensated temperature. The model
+                    uses a temperature-weighted average of the two mechanisms. Post-yield strain
+                    hardening was found to be approximately athermal. Strain hardening is fit to a
+                    two-component modified Voce-type saturating flow stress model. The constitutive
+                    model is also used to determine the flow stability limits as estimates of
+                    uniform tensile strains. The relatively compact, but mechanism-based,
+                    semi-empirical model has a number of both fundamental and practical advantages
+                    that are briefly outlined.</p>
+            
+        </div></front><body><div type="ElsevierSections">
+            <div n="1"><head>Introduction</head><p>It is axiomatic that 21st century fusion technology will employ
+                    sophisticated design and structural assessment tools that require a complete,
+                    accurate and well-understood characterization of the mechanical behavior of the
+                    constituent structural materials. The basic stress–strain, or
+                    constitutive laws, are one of several key parts of the requisite property
+                    database, and are the focus of this paper. In the simplest case of current code
+                    compliance assessments, the constitutive database might be comprised simply of
+                    tabulations of strength and so-called ductility `properties' derived from
+                    standard tensile tests. However, standard engineering tensile properties,
+                    involving ill-defined measures of ductility, are insufficient to support more
+                    rigorous finite element method (FEM) simulations of the detailed behavior of
+                    complex structural configurations.</p><p>Constitutive properties are also required to measure, apply and obtain a
+                    basic understanding of the long list of life-limiting failure-related properties
+                    and parameters, such as fracture toughness. The property database must also
+                    characterize the multiple in-service changes that are controlled by combinations
+                    of a very large number of environmental and as-fabricated material variables.
+                    Creation of such information is enormously time consuming and expensive. Thus,
+                    it is absolutely imperative that data development and analysis efforts be
+                    consistent with rapidly evolving designs and integrity assessment
+                    methods.</p><p>In this work, we develop a constitutive description of a
+                    V–4Cr–4Ti alloy in the <hi rend="italic">unirradiated</hi>
+                    condition for low-to-intermediate temperatures and strain rates (i.e., outside
+                    the creep and strain aging regimes). Specifically, we seek a model that
+                    accurately and compactly describes the effects of temperature
+                        (<hi rend="italic">T</hi>), strain rate (<formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                            <ac>ε</ac>
+                            <ac>̇</ac></a></math></formula>) and strain
+                        (<hi rend="italic">ε</hi>) on the uniaxial flow stress, <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>fl</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                            <ac>ε</ac>
+                            <ac>̇</ac></a>,ε</math></formula>). While not directly derived from
+                    first-principle theories, a second key objective is that the simple state
+                    variable model be physically based and consistent with the current understanding
+                    of the underlying dislocation deformation mechanisms and mechanics.</p><p>The research involved three steps: (a) measuring and properly reducing the
+                    requisite tensile database; (b) analyzing the general data trends in the context
+                    of simple but physically based, analytical formulations of constitutive models;
+                    and (c) quantitatively fitting the model equations to the database.</p></div>
+            <div n="2"><head>Experimental procedures and data reduction</head><p>Flat, dog-bone tensile specimens with a 9.0–0.5–2.0 mm
+                    long–thick–wide gauge section were prepared from a large, 500 kg
+                    heat (Heat No. 832665) of V–4Cr–4Ti manufactured by Teledyne
+                    Wah-Chang <ref target="#BIB1">[1]</ref>. Starting at a thickness
+                    of 1.07 mm, an annealed sheet was cold rolled by collaborators at ORNL at less
+                    that 5% per pass to a final thickness of 0.5 mm with an intermediate heat
+                    treatment at 0.86 mm of 1000°C for 2 h in vacuum. Following the final
+                    cold work of about 40%, the miniature tensile specimens were punched from the
+                    sheet with their axis perpendicular to the rolling direction. The specimens were
+                    then annealed at 1000°C for 2 h in vacuum. This processing resulted in an
+                    average grain size of 25 μm and an average Vickers microhardness of
+                        150±5 <ref target="#BIB2 #BIB3">[2,3]</ref>.</p><p>Tensile tests were performed on a 100 kN MTS load frame with a 556
+                    servo-hydraulic controller using a clamp-and-pin gripping system. Tests were
+                    conducted at 10 temperatures ranging from −196°C to 100°C.
+                    The desired temperatures were maintained by liquid bath (−70°C to
+                    0°C), chilled-air baths (⩽−100°C), or by a small
+                    furnace (&gt;20°C). Temperatures were measured by a thermocouple in contact
+                    with the specimen to within ±2°C. Strains were determined by LVDT
+                    measurements of the actuator displacement using compliance corrections provided
+                    by the slope of the elastic load-displacement curve. The tests were conducted at
+                    three nominal strain rates (<formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                            <ac>ε</ac>
+                            <ac>̇</ac></a></math></formula>) of 4×10<hi rend="superscript">−4</hi>,
+                    0.04 and 2 s<hi rend="superscript">−1</hi>. Engineering stress
+                        (<hi rend="italic">s</hi>) and strain (<hi rend="italic">e</hi>) were
+                    converted to their true stress
+                        (<hi rend="italic">σ</hi><hi rend="subscript">fl</hi>)–strain
+                        (<hi rend="italic">ε</hi>) equivalents using the standard relations,
+                        <hi rend="italic">σ</hi><hi rend="subscript">fl</hi>=<hi rend="italic">s</hi>(1+<hi rend="italic">e</hi>)
+                    and <hi rend="italic">ε</hi>=ln(1+<hi rend="italic">e</hi>). The yield
+                    stress (<hi rend="italic">σ</hi><hi rend="subscript">y</hi>) was defined at the
+                    0.2% modulus offset or, when present, at the Luder’s plateau. The uniform
+                    and total engineering strains were measured at peak and fracture loads,
+                    respectively.</p><p>A total of 32 specimens were tested. Owing to the limited number of
+                    specimens, usually only one test was conducted for each condition, and not all
+                    temperature–strain rate conditions were included. Since the data were
+                    analyzed collectively, these limitations are not considered to be significant to
+                    fitting the overall constitutive model. Redundant tests showed a standard
+                    deviation in <hi rend="italic">σ</hi><hi rend="subscript">y</hi> of about 14 MPa.
+                    Where they overlap, our results are also generally consistent with a study by
+                    Rowcliffe et al. which emphasized the regime above room temperature
+                        <ref target="#BIB4">[4]</ref>.</p></div>
+            <div n="3"><head>Results and analysis</head><p>Representative stress–strain curves have been reported previously
+                        <ref target="#BIB5">[5]</ref>. Following Armstrong
+                        <ref target="#BIB6">[6]</ref>, the flow stress
+                        (<hi rend="italic">σ</hi><hi rend="subscript">fl</hi>) is divided into yield
+                        (<hi rend="italic">σ</hi><hi rend="subscript">y</hi>) and post-yield
+                    strain-hardening (<hi rend="italic">σ<hi rend="subscript">ε</hi></hi>)
+                    contributions. The <hi rend="italic">σ</hi><hi rend="subscript">y</hi> is composed
+                    of both temperature–strain rate sensitive and insensitive or, thermally
+                    activated (<hi rend="italic">σ</hi><hi rend="subscript">yt</hi>) and athermal
+                        (<hi rend="italic">σ</hi><hi rend="subscript">ya</hi>) components,
+                    respectively as<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>)=σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>yt</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>)+σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>ya</rm></inf>.</math></formula></formula></display>The
+                        <hi rend="italic">σ</hi><hi rend="subscript">yt</hi> is due to the lattice
+                    friction or Peierl’s stress as well as due to small dislocation pinning
+                    points that can be bypassed with the aid of thermal fluctuations. The (low)
+                    temperature–(high) strain-rate dependence of
+                        <hi rend="italic">σ</hi><hi rend="subscript">y</hi> in bcc metals and alloys
+                    is attributed to the low mobility of screw dislocations which experience a high
+                    resistance to slip <ref target="#BIB7">[7]</ref>. The mechanism
+                    of screw dislocation slip is the nucleation of a kink pair; the kink segments
+                    move easily under an applied stress due to their edge character <ref target="#BIB7">[7]</ref>. The thermally activated nucleation of kink
+                    pairs is very sensitive to temperature and stress. Thus high strain rates
+                    require correspondingly high stress and/or temperature. At a sufficiently high
+                    temperature, double kink nucleation is so rapid that the lattice friction
+                    contribution to <hi rend="italic">σ</hi><hi rend="subscript">yt</hi> is
+                    negligible. However, thermally activated dispersed barrier strengthening by
+                    tetragonal interstitial solutes may persist at higher temperatures. The athermal
+                        <hi rend="italic">σ</hi><hi rend="subscript">ya</hi> component is associated
+                    with hardening by polycrystalline grain structure, dislocations and larger
+                    pinning features. Note that <hi rend="italic">σ</hi><hi rend="subscript">ya</hi>
+                    varies weakly with temperature in proportion to the elastic modulus. The
+                    development of post-yield dislocation structures results in a strain-hardening
+                    component, <hi rend="italic">σ<hi rend="subscript">ε</hi></hi>. In fcc
+                    crystals, this contribution is relatively athermal. However, for bcc single
+                    crystals with low dislocation densities,
+                            <hi rend="italic">σ<hi rend="subscript">ε</hi></hi> also depends on
+                        <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                            <ac>ε</ac>
+                            <ac>̇</ac></a></math></formula> and <hi rend="italic">T</hi>
+                    <ref target="#BIB8">[8]</ref>, suggesting a general
+                                form<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>fl</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>,ε)=σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>yt</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>)+σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>ya</rm></inf>+σ<inf xmlns="http://www.tei-c.org/ns/1.0">ε</inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>,ε).</math></formula></formula></display></p><div n="3.1"><head>Yield stress model</head><p>There is a trade-off between temperature (<hi rend="italic">T</hi>) and
+                        strain rate (<formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math></formula>) in determining <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>yt</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                <ac>ε</ac>
+                                <ac>̇</ac></a>)</math></formula>: higher <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math></formula> produces higher
+                            <hi rend="italic">σ</hi><hi rend="subscript">yt</hi> corresponding to
+                        values at lower <hi rend="italic">T</hi> and <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math></formula>. This behavior can be most simply
+                        represented in terms of a strain rate-compensated temperature
+                            (<hi rend="italic">T</hi><hi rend="superscript">′</hi>), defined as <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                <ac>ε</ac>
+                                <ac>̇</ac></a><inf xmlns="http://www.tei-c.org/ns/1.0"><rm>r</rm></inf>)=σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math></formula>), where<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>=T[1+C<rm xmlns="http://www.tei-c.org/ns/1.0">ln</rm>(<a xmlns="http://www.tei-c.org/ns/1.0">
+                                        <ac>ε</ac>
+                                        <ac>̇</ac></a><inf xmlns="http://www.tei-c.org/ns/1.0"><rm>r</rm></inf>/<a xmlns="http://www.tei-c.org/ns/1.0">
+                                        <ac>ε</ac>
+                                        <ac>̇</ac></a>)].</math></formula></formula></display>Here
+                            <hi rend="italic">T</hi> is the actual absolute temperature (K) for the
+                        reference strain rate. <ref target="#FD2">Eq. (3)</ref> is
+                        an approximation derived from dislocation dynamics theory,
+                                    where<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                                        <ac>ε</ac>
+                                        <ac>̇</ac></a>∝<rm xmlns="http://www.tei-c.org/ns/1.0">exp</rm>[−H<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>(T,σ)/RT]=<rm xmlns="http://www.tei-c.org/ns/1.0">exp</rm>[−(H<sup xmlns="http://www.tei-c.org/ns/1.0">*</sup>−V<sup xmlns="http://www.tei-c.org/ns/1.0">*</sup>σ)/RT].</math></formula></formula></display>Here
+                            <hi rend="italic">H</hi><hi rend="superscript">′</hi>(<hi rend="italic">T</hi>,<hi rend="italic">σ</hi>)
+                        is the activation enthalpy, <hi rend="italic">H</hi><hi rend="superscript">*</hi> is
+                        the activation enthalpy at 0 stress, and
+                            <hi rend="italic">V</hi><hi rend="superscript">*</hi> is the activation volume. The
+                        value of
+                            <hi rend="italic">H</hi><hi rend="superscript">′</hi>(<hi rend="italic">T</hi>,<hi rend="italic">σ</hi>)
+                        decreases with decreasing temperature and increasing stress, approaching 0
+                        at 0 K as<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">H<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>=αRT<rm xmlns="http://www.tei-c.org/ns/1.0">for</rm>T⩽T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c</rm></inf>,</math></formula></formula></display>where
+                            <hi rend="italic">T</hi><hi rend="subscript">c</hi> is the temperature at which
+                            <hi rend="italic">σ</hi><hi rend="subscript">yt</hi> goes to 0. For a
+                        single mechanism, <hi rend="italic">C</hi> in <ref target="#FD2">Eq.
+                            (3)</ref> is approximately 1/<hi rend="italic">α</hi>.
+                        Empirically, <hi rend="italic">σ</hi><hi rend="subscript">yt</hi> data at
+                        different strain rates should overlap when plotted on a
+                            <hi rend="italic">T</hi><hi rend="superscript">′</hi> scale. The
+                        effectiveness of the <hi rend="italic">T</hi><hi rend="superscript">′</hi> model
+                        is illustrated in <ref target="#FIG1">Fig.
+                            1</ref>. Taking the slowest
+                        strain rate of <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">4×10<sup xmlns="http://www.tei-c.org/ns/1.0">−4</sup><rm xmlns="http://www.tei-c.org/ns/1.0">s</rm><sup xmlns="http://www.tei-c.org/ns/1.0">−1</sup></math></formula> as the reference condition,
+                        the <hi rend="italic">σ</hi><hi rend="subscript">y</hi> data at all three
+                        strain rates are plotted against
+                            <hi rend="italic">T</hi><hi rend="superscript">′</hi>, using a `best fit'
+                        value for <hi rend="italic">C</hi>=0.03. Note that the temperature shifts
+                        due to strain-rate differences are significant. For example, <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(2<rm xmlns="http://www.tei-c.org/ns/1.0">s</rm><sup xmlns="http://www.tei-c.org/ns/1.0">−1</sup></math></formula>, 20°C)≈<formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(4×10<sup xmlns="http://www.tei-c.org/ns/1.0">−4</sup><rm xmlns="http://www.tei-c.org/ns/1.0">s</rm><sup xmlns="http://www.tei-c.org/ns/1.0">−1</sup></math></formula>,−27°C).</p><p>The <hi rend="italic">σ</hi><hi rend="subscript">y</hi> vs
+                            <hi rend="italic">T</hi><hi rend="superscript">′</hi> data can then be fit
+                        to an appropriate analytical expression (solid line) to provide a complete
+                        description of <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                <ac>ε</ac>
+                                <ac>̇</ac></a>)=σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>)</math></formula>.
+                        For a single underlying thermally activated mechanism an appropriate general
+                        form is <ref target="#BIB9">[9]</ref><display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>)=σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>t</rm></inf>[1−(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>/T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c</rm></inf>)<sup xmlns="http://www.tei-c.org/ns/1.0">1/g<inf>1</inf></sup>]<sup xmlns="http://www.tei-c.org/ns/1.0">g<inf>2</inf></sup>+σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>a</rm></inf>(1−βT),</math></formula></formula></display>where
+                            <hi rend="italic">σ</hi><hi rend="subscript">t</hi> and
+                            <hi rend="italic">σ</hi><hi rend="subscript">a</hi> are the thermal and
+                        athermal yield stress contributions at 0 K,
+                            <hi rend="italic">g</hi><hi rend="subscript">1</hi> and
+                            <hi rend="italic">g</hi><hi rend="subscript">2</hi> depend on the assumed shape
+                        of the activation barrier (typically
+                            <hi rend="italic">g</hi><hi rend="subscript">1</hi>≈<hi rend="italic">g</hi><hi rend="subscript">2</hi>,
+                        ranging from about 1 to 2) and <hi rend="italic">β</hi> is the
+                        temperature coefficient of the elastic modulus
+                            ≈6×10<hi rend="superscript">−5</hi>. As noted above, both the
+                        Peierl’s stress (low temperature) and strengthening by interstitial
+                        solutes (higher temperature) contribute to
+                            <hi rend="italic">σ</hi><hi rend="subscript">t</hi>. Thus, we have
+                        modified <ref target="#FD1">Eq. (1)</ref> to account for
+                        both processes (labeled 1 and 2) with different
+                            <hi rend="italic">σ</hi><hi rend="subscript">t</hi>,
+                            <hi rend="italic">T</hi><hi rend="subscript">c</hi> and
+                            <hi rend="italic">g</hi><hi rend="subscript">1</hi> and
+                            <hi rend="italic">g</hi><hi rend="subscript">2</hi>. The two activated
+                        contributions are combined based on a
+                            <hi rend="italic">T</hi><hi rend="superscript">′</hi> weighting: as
+                            <hi rend="italic">T</hi><hi rend="superscript">′</hi> approaches 0,
+                            <hi rend="italic">σ</hi><hi rend="subscript">t</hi> approaches
+                            <hi rend="italic">σ</hi><hi rend="subscript">t12</hi>=<hi rend="italic">σ</hi><hi rend="subscript">t1</hi>+<hi rend="italic">σ</hi><hi rend="subscript">t2</hi>; as
+                            <hi rend="italic">T</hi><hi rend="superscript">′</hi> approaches
+                            <hi rend="italic">T</hi><hi rend="subscript">c2</hi>,
+                            <hi rend="italic">σ</hi><hi rend="subscript">t</hi> approaches
+                            <hi rend="italic">σ</hi><hi rend="subscript">t2</hi>. In contrast to a
+                        simple summation, this formulation provides a smooth interpolation and the
+                        proper curvature in
+                            <hi rend="italic">σ</hi><hi rend="subscript">y</hi>(<hi rend="italic">T</hi><hi rend="superscript">′</hi>)
+                        assuming <hi rend="italic">g</hi><hi rend="subscript">1</hi>≈<hi rend="italic">g</hi><hi rend="subscript">2</hi>≈1. Thus,<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>)=[σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>t12</rm></inf>−(σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>t12</rm></inf>−σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>t2</rm></inf>)T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>/T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c2</rm></inf>][1−T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>/{T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c1</rm></inf>+(T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c2</rm></inf>−T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c1</rm></inf>)T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>/T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c2</rm></inf>}]+σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>a</rm></inf>(1−6×10<sup xmlns="http://www.tei-c.org/ns/1.0">−5</sup>T).</math></formula></formula></display></p><p>The best fit results are shown as the solid curve in <ref target="#FIG1">Fig. 1</ref> for: <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>t1</rm></inf>=885<rm xmlns="http://www.tei-c.org/ns/1.0">MPa</rm>;σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>t2</rm></inf>=125<rm xmlns="http://www.tei-c.org/ns/1.0">MPa</rm>;T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c1</rm></inf>=170<rm xmlns="http://www.tei-c.org/ns/1.0">K</rm></math></formula> and <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">T<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>c2</rm></inf>=500<rm xmlns="http://www.tei-c.org/ns/1.0">K</rm>;σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>a</rm></inf>=245<rm xmlns="http://www.tei-c.org/ns/1.0">MPa</rm>;</math></formula> taking a typical value of
+                            <hi rend="italic">H</hi>(<hi rend="italic">T</hi><hi rend="subscript">c</hi>)≈96 kJ/mole (≈1 eV), the average of
+                            <hi rend="italic">T</hi><hi rend="subscript">c1</hi> and
+                            <hi rend="italic">T</hi><hi rend="subscript">c2</hi> (335 K) is consistent with
+                        an average <hi rend="italic">C</hi>≈0.03. While the physical significance of the fit parameters
+                        should not be overemphasized, they can be broadly interpreted as crudely
+                        characterizing the two underlying activated mechanisms' slip in this alloy.
+                        The first would generally be similar in other vanadium alloys, while the
+                        second would vary with the free interstitial impurity content.</p><p>Using these values and neglecting the small effect of
+                            <hi rend="italic">β</hi>, <ref target="#FD3">Eq.
+                            (7)</ref> can be rearranged to the convenient analytical
+                                form<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>)=1130−1.52T<sup xmlns="http://www.tei-c.org/ns/1.0">′2</sup>+{(1.52T<sup xmlns="http://www.tei-c.org/ns/1.0">′2</sup>−885T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>)/(170+0.66T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>)}(<rm xmlns="http://www.tei-c.org/ns/1.0">MPa</rm>).</math></formula></formula></display></p></div><div n="3.2"><head>Strain hardening</head><p>The post-yield strain-hardening contribution was experimentally defined
+                        for plastic strain levels of 0.5 to 5.0% in increments of 0.5% and from 5.0%
+                        to 14.0% in increments of 1.0%
+                                    as<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0">ε</inf>(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>,ε)=σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>fl</rm></inf>(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>,ε)−σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>(T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>).</math></formula></formula></display></p><p><ref target="#FIG2">Fig. 2</ref>
+                        shows
+                                <hi rend="italic">σ<hi rend="subscript">ε</hi></hi>(<hi rend="italic">ε</hi>,<hi rend="italic">T</hi><hi rend="superscript">′</hi>)
+                        vs <hi rend="italic">T</hi><hi rend="superscript">′</hi> for the representative
+                        values of strain. The solid fit lines show slopes that are approximately
+                        zero (low <hi rend="italic">ε</hi>), slightly positive (intermediate
+                            <hi rend="italic">ε</hi>) and somewhat more negative (higher
+                            <hi rend="italic">ε</hi>). However, on average, the slopes are
+                        approximately zero and have significant correlation coefficients only at the
+                        highest strains. The dependence of
+                                <hi rend="italic">σ<hi rend="subscript">ε</hi></hi> on
+                            <hi rend="italic">ε</hi> is much more significant and systematic
+                        than on <hi rend="italic">T</hi><hi rend="superscript">′</hi>. Thus, for a good
+                        approximation, <hi rend="italic">σ<hi rend="subscript">ε</hi></hi> can
+                        be assumed to be athermal. The fcc-like <hi rend="italic">athermal</hi>
+                        behavior of <hi rend="italic">σ<hi rend="subscript">ε</hi></hi> of the
+                        V–4Cr–4Ti alloy is probably due to a high dislocation density
+                        and polycrystalline structure. The corresponding
+                                <hi rend="italic">σ<hi rend="subscript">ε</hi></hi>(<hi rend="italic">ε</hi>)
+                        averaged over <hi rend="italic">T</hi><hi rend="superscript">′</hi> for the 19
+                        strain levels is shown in <ref target="#FIG3">Fig.
+                            3</ref>. Two regimes are
+                        observed above and below an <hi rend="italic">ε</hi> of about 0.025.
+                        The <hi rend="italic">σ<hi rend="subscript">ε</hi></hi> vs
+                            <hi rend="italic">ε</hi> data were fit to a modified Voce-type
+                        equation <ref target="#BIB10">[10]</ref>. The Voce equation
+                        has a power law (usually linear) regime at low strains, decreasing to a
+                        constant saturation flow stress at higher strains. The results shown in
+                            <ref target="#FIG3">Fig. 3</ref> can be represented by
+                        two linear Voce-type terms with the form<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0">ε</inf>ε=χ<inf xmlns="http://www.tei-c.org/ns/1.0">ε1</inf>ε[1−<rm xmlns="http://www.tei-c.org/ns/1.0">exp</rm>(−ε<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>s1</rm></inf>/ε)]+χ<inf xmlns="http://www.tei-c.org/ns/1.0">ε2</inf>(ε−ε<inf xmlns="http://www.tei-c.org/ns/1.0">t</inf>⩾0)[1−<rm xmlns="http://www.tei-c.org/ns/1.0">exp</rm>(−ε<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>s2</rm></inf>/ε)].</math></formula></formula></display>Here
+                                <hi rend="italic">χ<hi rend="subscript">ε</hi></hi><hi rend="subscript">1</hi>
+                        and
+                            <hi rend="italic">χ<hi rend="subscript">ε</hi></hi><hi rend="subscript">2</hi>
+                        represent the magnitude of each strain-hardening term,
+                            <hi rend="italic">ε</hi><hi rend="subscript">s1</hi> and
+                            <hi rend="italic">ε</hi><hi rend="subscript">s2</hi> characterize the
+                        saturation strains and <hi rend="italic">ε</hi><hi rend="subscript">t</hi> is
+                        the threshold strain for the second mechanism (note
+                            <hi rend="italic">ε</hi>−0.025 in the second term is set
+                        to 0 for <hi rend="italic">ε</hi>&lt;0.025). The solid line is the best fit given by the
+                        expression for: <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">χ<inf xmlns="http://www.tei-c.org/ns/1.0">ε1</inf>=865;χ<inf xmlns="http://www.tei-c.org/ns/1.0">ε2</inf>=1130<rm xmlns="http://www.tei-c.org/ns/1.0">MPa</rm>;ε<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>s1</rm></inf>=0.07;ε<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>s2</rm></inf>=0.24;<rm xmlns="http://www.tei-c.org/ns/1.0">and</rm>ε<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>t</rm></inf>=0.025</math></formula>. Note, other
+                        approximate forms could be used, such as a linear term for
+                            <hi rend="italic">ε</hi> between yield and 0.025 and a simple
+                        power law (≈400(<hi rend="italic">ε</hi>−0.025)<hi rend="superscript">0.45</hi>) for
+                            <hi rend="italic">ε</hi>&gt;0.025.</p><p><ref target="#FD2 #FD4 #FD5">Eqs. (3), (8) and
+                            (10)</ref> define an overall constitutive
+                                    model,<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>fl</rm></inf>(T,<a xmlns="http://www.tei-c.org/ns/1.0">
+                                        <ac>ε</ac>
+                                        <ac>̇</ac></a>,ε)=1130−1.52T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>+{(1.52T<sup xmlns="http://www.tei-c.org/ns/1.0">′2</sup>−885T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>)/(170+0.66T<sup xmlns="http://www.tei-c.org/ns/1.0">′</sup>)}+865ε[1−<rm xmlns="http://www.tei-c.org/ns/1.0">exp</rm>(−0.07/ε)]+1130(ε−0.025)[1−<rm xmlns="http://www.tei-c.org/ns/1.0">exp</rm>(−0.24/ε)](<rm xmlns="http://www.tei-c.org/ns/1.0">MPa</rm>).</math></formula></formula></display></p><p>The predicted vs measured
+                            <hi rend="italic">σ</hi><hi rend="subscript">fl</hi> at
+                            <hi rend="italic">ε</hi> of 0.5, 1, 2, 4, 8 and 14% are shown in
+                            <ref target="#FIG4">Fig. 4</ref>. The overall standard deviation of the predicted vs
+                        measured <hi rend="italic">σ</hi><hi rend="subscript">fl</hi> is 16.4 MPa. The
+                        model can be applied over the combined <hi rend="italic">T</hi> and <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math></formula> ranges up to 100°C and 2/s,
+                        respectively. While some extrapolation beyond the experimental database may
+                        be reasonable, there are also limits imposed by the uniform strain regime up
+                        to about 0.14±0.04.</p><p>The constitutive model can also be used to estimate the uniform
+                        strains, <hi rend="italic">ε</hi><hi rend="subscript">u</hi>, in tensile tests
+                        based on the simple instability criteria that
+                            d<hi rend="italic">P</hi>/d<hi rend="italic">ε</hi>⩽0, where <hi rend="italic">P</hi>
+                        is the load equal to <hi rend="italic">Aσ</hi><hi rend="subscript">fl</hi>
+                        where <hi rend="italic">A</hi> is the instantaneous specimen cross-section.
+                        In the standard power law representation
+                            <hi rend="italic">σ</hi><hi rend="subscript">fl</hi>/<hi rend="italic">σ</hi><hi rend="subscript">y</hi>=(<hi rend="italic">ε</hi>/<hi rend="italic">ε</hi><hi rend="subscript">y</hi>)<hi rend="italic"><hi rend="superscript">n</hi></hi>,
+                            <hi rend="italic">ε</hi><hi rend="subscript">u</hi>≈<hi rend="italic">n</hi>. However, in the
+                        case where
+                            <hi rend="italic">σ</hi><hi rend="subscript">fl</hi>=<hi rend="italic">σ</hi><hi rend="subscript">y</hi>+<hi rend="italic">σ</hi><hi rend="subscript"><hi rend="italic">ε</hi></hi>(<hi rend="italic">ε</hi>),
+                            <hi rend="italic">ε</hi><hi rend="subscript">u</hi> depends on
+                            <hi rend="italic">σ</hi><hi rend="subscript">y</hi> as well as the
+                        strain-hardening behavior. If
+                            <hi rend="italic">σ<hi rend="subscript">ε</hi></hi> is represented
+                        in terms of a simple power law strain hardening
+                                k<hi rend="italic">ε<hi rend="superscript">n</hi></hi>,
+                            <hi rend="italic">ε</hi><hi rend="subscript">u</hi> (at
+                            d<hi rend="italic">P</hi>/d<hi rend="italic">ε</hi>=0) can be
+                        found by solving the implicit relation<display><formula><formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">ε<sup xmlns="http://www.tei-c.org/ns/1.0">n−1</sup>=[σ<inf xmlns="http://www.tei-c.org/ns/1.0"><rm>y</rm></inf>/k+ε<sup xmlns="http://www.tei-c.org/ns/1.0">n</sup>]/n.</math></formula></formula></display></p><p><ref target="#FIG5">Fig. 5</ref>
+                        compares experimentally measured values to
+                        predictions of
+                            <hi rend="italic">ε</hi><hi rend="subscript">u</hi>(<hi rend="italic">σ</hi><hi rend="subscript">y</hi>)
+                        from <ref target="#FD6">Eq. (13)</ref> for <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">n=0.45,k=400</math></formula> MPa, adjusting
+                            <hi rend="italic">ε</hi> and
+                            <hi rend="italic">σ</hi><hi rend="subscript">y</hi> for the low-strain
+                        regime as
+                            <hi rend="italic">ε</hi><hi rend="superscript">′</hi>=<hi rend="italic">ε</hi>−0.25
+                        and
+                            <hi rend="italic">ε</hi><hi rend="superscript">′</hi><hi rend="subscript">y</hi>=<hi rend="italic">σ</hi><hi rend="subscript">y</hi>+<hi rend="italic">σ</hi><hi rend="subscript"><hi rend="italic">ε</hi></hi>(0.025).
+                        The data are in reasonable agreement with the model predictions including
+                        the trend of <hi rend="italic">ε</hi><hi rend="subscript">u</hi> decreasing
+                        with increasing <hi rend="italic">σ</hi><hi rend="subscript">y</hi>. Note,
+                        however, that the lowest values of
+                            <hi rend="italic">ε</hi><hi rend="subscript">u</hi> are for high-rate
+                        tests that may include effects of adiabatic heating that are not included in
+                        the model.</p></div></div>
+            <div n="4"><head>Conclusions</head><p>The <hi rend="italic">σ</hi><hi rend="subscript">fl</hi> for the program heat
+                    of V–4Cr–4Ti alloy has a classical low-temperature activated
+                        <hi rend="italic">σ</hi><hi rend="subscript">yt</hi> regime and athermal
+                    contributions to both <hi rend="italic">σ</hi><hi rend="subscript">y</hi> and
+                            <hi rend="italic">σ<hi rend="subscript">ε</hi></hi>. The
+                        <hi rend="italic">σ</hi><hi rend="subscript">yt</hi> can be represented in
+                    terms of a strain rate-compensated temperature dependence that includes
+                    contributions from both Peierl’s stress and interstitial impurities. The
+                    athermal post-yield <hi rend="italic">σ<hi rend="subscript">ε</hi></hi> can
+                    be described by a two-component Voce-typehardening law. The model, which
+                    incorporates analytical expressions for these processes fit to the tensile
+                    database, is broadly consistent with the current understanding of deformation in
+                    bcc alloys.</p><p>The relatively simple and compact form of the constitutive models has also
+                    a number of practical advantages. For example, it can be used to directly
+                    estimate uniform strains, as described in the previous section. In addition, FEM
+                    simulations of crack tip stress–strain fields are very sensitive to the
+                    strain-hardening behavior. If the behavior of the V–4Cr–4Ti alloy
+                    were cast in a standard Ramberg–Osgood form
+                        [<hi rend="italic">ε</hi>/<hi rend="italic">ε</hi><hi rend="subscript">y</hi>≈(<hi rend="italic">σ</hi>/<hi rend="italic">σ</hi><hi rend="subscript">y</hi>)<hi rend="superscript">1/<hi rend="italic">n</hi></hi>],
+                    the corresponding strain-hardening exponent (<hi rend="italic">n</hi>) would
+                    appear to be a strong function of <hi rend="italic">T</hi> and <formula notation="XMLLatex"><math xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink"><a xmlns="http://www.tei-c.org/ns/1.0">
+                            <ac>ε</ac>
+                            <ac>̇</ac></a></math></formula>, since <hi rend="italic">n</hi> implicitly
+                    depends on <hi rend="italic">σ</hi><hi rend="subscript">y</hi>. For
+                        <hi rend="italic">σ</hi><hi rend="subscript">y</hi> ranging from 250 to 800
+                    MPa, the corresponding <hi rend="italic">n</hi> varies from about 0.13 to 0.06.
+                    However, when cast in proper non-dimensional form, the predicted FEM fields are
+                    very similar over a wide range of temperatures and strain rates since: (a)
+                            <hi rend="italic">σ<hi rend="subscript">ε</hi></hi> is athermal and
+                    approximately the same for various conditions; and (b) the non-dimensional
+                    fields depend only weakly on
+                        <hi rend="italic">σ</hi><hi rend="subscript">y</hi>/<hi rend="italic">E</hi>,
+                    where <hi rend="italic">E</hi> is the elastic modulus.</p><p>Since this investigation focused on a specific vanadium alloy condition,
+                    the results cannot be directly interpreted in terms of the underlying
+                    microstructure and alloy chemistry. Developing such microstructurally based
+                    constitutive models, including the effects of irradiation and key phenomena such
+                    as flow localization, is an important objective of future research.</p></div>
+        </div><div>
+            <head>Acknowledgements</head>
+            <p>The authors gratefully acknowledge the assistance of J.W. Sheckherd, D. Gragg
+                and D. Klingensmith as well as that of our collaborators, Arthur Rowcliffe and his
+                colleagues at ORNL. The work was supported by the US Department of Energy Grant #
+                DE-FG03-87ER-52143.</p>
+        </div></body><back><div type="references"><head>References</head><listBibl>
+                <bibl xml:id="BIB1" n="[1]">
+                        H.M. Chung, H.-C. Tsai, D.L. Smith, R. Peterson, C. Curtis, C.
+                            Wojcik, R. Kinney, DOE/ER-0313/17, US Department of Energy,
+                            1994
+                    </bibl>
+                <bibl xml:id="BIB2" n="[2]">
+                        M.L. Grossbeck, D.J. Alexander, J.J. Henry, W.S. Eatherly, L.T.
+                            Gibson, DOE/ER-0313/18, US Department of Energy, 1995
+                    </bibl>
+                <bibl xml:id="BIB3" n="[3]">
+                        A.N. Gubbi, A.F. Rowcliffe, W.S. Eatherly, DOE/ER-0313/18, US
+                            Department of Energy, 1995
+                    </bibl>
+                <bibl xml:id="BIB4" n="[4]">
+                        A.F. Rowcliffe, D.T. Hoelzer, S.J. Zinkle, DOE/ER-0313/26 US
+                            Department of Energy, 1999
+                    </bibl>
+                <bibl xml:id="BIB5" n="[5]">
+                        G.R. Odette, E. Donahue, G.E. Lucas, J.W. Sheckherd,
+                            DOE/ER-0313/20, US Department of Energy, 1996, p. 11
+                    </bibl>
+                <biblStruct xml:id="BIB6" n="[6]"><analytic><sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">F.J.</forename>
+                                    <surname>Zerilli</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R.W.</forename>
+                                    <surname>Armstrong</surname>
+                                </sb:author>
+                            </sb:authors></analytic><monogr><sb:maintitle xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Appl. Phys.</sb:maintitle><imprint><biblScope unit="vol">61</biblScope><sb:date xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">1987</sb:date><biblScope unit="page" from="1816">1816</biblScope></imprint></monogr></biblStruct>
+                <biblStruct xml:id="BIB7" n="[7]"><analytic><sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">J.P.</forename>
+                                    <surname>Hirth</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J.</forename>
+                                    <surname>Lothe</surname>
+                                </sb:author>
+                            </sb:authors></analytic><monogr><imprint/></monogr></biblStruct>
+                <biblStruct xml:id="BIB8" n="[8]"><analytic><sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">M.</forename>
+                                    <surname>Tang</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">B.</forename>
+                                    <surname>Devincre</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">L.P.</forename>
+                                    <surname>Kubin</surname>
+                                </sb:author>
+                            </sb:authors></analytic><monogr><sb:maintitle xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Model. Simulation Mater. Sci.
+                                            Eng.</sb:maintitle><imprint><biblScope unit="vol">7</biblScope><sb:date xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">1999</sb:date><biblScope unit="page" from="893">893</biblScope></imprint></monogr></biblStruct>
+                <biblStruct xml:id="BIB9" n="[9]"><analytic><sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">P.</forename>
+                                    <surname>Spätig</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">G.R.</forename>
+                                    <surname>Odette</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">G.E.</forename>
+                                    <surname>Lucas</surname>
+                                </sb:author>
+                            </sb:authors></analytic><monogr><sb:maintitle xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Nucl. Mater.</sb:maintitle><imprint><biblScope unit="vol">275</biblScope><sb:date xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">1999</sb:date><biblScope unit="page" from="324">324</biblScope></imprint></monogr></biblStruct>
+                <biblStruct xml:id="BIB10" n="[10]"><analytic><sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">E.</forename>
+                                    <surname>Voce</surname>
+                                </sb:author>
+                            </sb:authors></analytic><monogr><sb:maintitle xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Inst. Met.</sb:maintitle><imprint><biblScope unit="vol">74</biblScope><sb:date xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">1968</sb:date><biblScope unit="page" from="537">537</biblScope></imprint></monogr></biblStruct>
+            </listBibl></div></back></text></TEI>

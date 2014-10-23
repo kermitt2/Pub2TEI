@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
-    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
+    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
     <xsl:variable name="journalList" select="document('JournalList.xml')"/>
@@ -42,8 +44,7 @@
     </xsl:template>
 
     <!-- BMJ: short-title -->
-    <xsl:template
-        match="short-title">
+    <xsl:template match="short-title">
         <xsl:if test=".!=''">
             <title level="a" type="short">
                 <xsl:if test="@Language">
@@ -57,7 +58,7 @@
             </title>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="subtitle | article_sub_title">
         <xsl:if test=".!=''">
             <title level="a" type="sub">
@@ -65,7 +66,7 @@
             </title>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="vernacular_title">
         <xsl:if test=".!=''">
             <title level="a" type="vernacular">
@@ -100,7 +101,8 @@
     <!-- Nature: journal-title -->
     <!-- Elsevier: els:jid, ce:issn -->
 
-    <xsl:template match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title">
+    <xsl:template
+        match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title">
         <xsl:if test=".!=''">
             <title level="j" type="main">
                 <xsl:apply-templates/>
@@ -110,14 +112,15 @@
 
     <!-- Additional journal namings -->
 
-    <xsl:template match="journal_abbreviation | abbrev-journal-title | els:jid | JournalShortTitle | j-shorttitle">
+    <xsl:template
+        match="journal_abbreviation | abbrev-journal-title | els:jid | JournalShortTitle | j-shorttitle">
         <xsl:if test=".!=''">
             <title level="j" type="abbrev">
                 <xsl:value-of select="normalize-space()"/>
             </title>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="pubmed_abbreviation">
         <xsl:if test=".!=''">
             <title level="j" type="pubmed">
@@ -133,7 +136,7 @@
             </title>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="j-edpsname | JournalEDPSName">
         <xsl:if test=".!=''">
             <title level="j" type="EDPSName">
@@ -163,23 +166,28 @@
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
             </xsl:variable>
-            <xsl:variable name="journalEntry" select="$journalList/descendant::tei:row[tei:cell/text()=$ISSNCode]"/>
+            <xsl:variable name="journalEntry"
+                select="$journalList/descendant::tei:row[tei:cell/text()=$ISSNCode]"/>
             <xsl:message>ISSN: <xsl:value-of select="$ISSNCode"/></xsl:message>
-            <xsl:message>Journal: <xsl:value-of select="$journalEntry/tei:cell[@role='Journal']"/></xsl:message>
+            <xsl:message>Journal: <xsl:value-of select="$journalEntry/tei:cell[@role='Journal']"
+                /></xsl:message>
             <idno type="ISSN">
                 <xsl:value-of select="$ISSNCode"/>
             </idno>
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper">
+    <xsl:template
+        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
             </xsl:variable>
-            <xsl:variable name="journalEntry" select="$journalList/descendant::tei:row[tei:cell/text()=$ISSNCode]"/>
+            <xsl:variable name="journalEntry"
+                select="$journalList/descendant::tei:row[tei:cell/text()=$ISSNCode]"/>
             <xsl:message>pISSN: <xsl:value-of select="$ISSNCode"/></xsl:message>
-            <xsl:message>Journal: <xsl:value-of select="$journalEntry/tei:cell[@role='Journal']"/></xsl:message>
+            <xsl:message>Journal: <xsl:value-of select="$journalEntry/tei:cell[@role='Journal']"
+                /></xsl:message>
             <idno type="pISSN">
                 <xsl:value-of select="$ISSNCode"/>
             </idno>
@@ -192,9 +200,11 @@
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
             </xsl:variable>
-            <xsl:variable name="journalEntry" select="$journalList/descendant::tei:row[tei:cell/text()=$ISSNCode]"/>
+            <xsl:variable name="journalEntry"
+                select="$journalList/descendant::tei:row[tei:cell/text()=$ISSNCode]"/>
             <xsl:message>eISSN: <xsl:value-of select="$ISSNCode"/></xsl:message>
-            <xsl:message>Journal: <xsl:value-of select="$journalEntry/tei:cell[@role='Journal']"/></xsl:message>
+            <xsl:message>Journal: <xsl:value-of select="$journalEntry/tei:cell[@role='Journal']"
+                /></xsl:message>
             <idno type="eISSN">
                 <xsl:value-of select="$ISSNCode"/>
             </idno>
@@ -206,7 +216,8 @@
     <!-- Elsevier: ce:doi -->
     <!-- NLM 2.3 article: article-id[@pub-id-type='doi'] -->
 
-    <xsl:template match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI">
+    <xsl:template
+        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI">
         <xsl:if test=".!=''">
             <xsl:variable name="DOIValue" select="string(.)"/>
             <idno type="DOI">
@@ -218,18 +229,19 @@
                         <xsl:value-of select="normalize-space($DOIValue)"/>
                     </xsl:otherwise>
                 </xsl:choose>
-                
+
             </idno>
         </xsl:if>
     </xsl:template>
-    
+
     <!-- pii -->
     <!-- Elsevier: ce:pii -->
     <!-- Scholar one: article_id[@id_type='pii'] -->
     <!-- NLM 2.2:  article-id[@pub-id-type='pii'] -->
-    
-    
-    <xsl:template match="ce:pii | article_id[@id_type='pii'] | article-id[@pub-id-type='pii'] | ArticleId[@IdType='pii']">
+
+
+    <xsl:template
+        match="ce:pii | article_id[@id_type='pii'] | article-id[@pub-id-type='pii'] | ArticleId[@IdType='pii']">
         <xsl:if test=".!=''">
             <idno type="PII">
                 <xsl:value-of select="."/>
@@ -241,10 +253,10 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
-    
+
     <!-- Manuscript number -->
     <!-- BMJ: manuscript-number; Springer: ArticleID -->
-    
+
     <xsl:template match="manuscript-number | @ms_no | ArticleID ">
         <xsl:if test=".!=''">
             <idno type="manuscript">
@@ -252,11 +264,12 @@
             </idno>
         </xsl:if>
     </xsl:template>
-    
+
     <!-- Publisher IDs when different from above -->
     <!-- NLM 2.2: article-id[@pub-id-type='publisher-id'] -->
-    
-    <xsl:template match="article-id[@pub-id-type='publisher-id'] | els:aid  | EDPSRef | edps-ref | Article/@ID">
+
+    <xsl:template
+        match="article-id[@pub-id-type='publisher-id'] | els:aid  | EDPSRef | edps-ref | Article/@ID">
         <xsl:if test=".!='' and not(//publisher-name = 'Cambridge University Press')">
             <idno type="publisherID">
                 <xsl:value-of select="."/>
@@ -273,16 +286,16 @@
     <!-- Elements for Imprint components in BMJ (issue-number, volume) -->
     <!-- Elements for Imprint components in Elsevier () -->
 
-    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno">
+    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr">
         <xsl:if test=".!=''">
             <biblScope unit="vol">
                 <xsl:apply-templates/>
             </biblScope>
         </xsl:if>
     </xsl:template>
-    
+
     <!-- 2 special rules for Springer that provides, beginning and end volume number -->
-   
+
     <xsl:template match="VolumeIDStart">
         <xsl:if test=".!=''">
             <biblScope unit="vol" from="{.}">
@@ -290,7 +303,7 @@
             </biblScope>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="VolumeIDEnd">
         <xsl:if test=".!=''">
             <biblScope unit="vol" to="{.}">
@@ -312,9 +325,9 @@
             </biblScope>
         </xsl:if>
     </xsl:template>
-    
+
     <!-- 2 special rules for Springer that provides, beginning and end volume number -->
-    
+
     <xsl:template match="IssueIDStart">
         <xsl:if test=".!=''">
             <biblScope unit="issue" from="{.}">
@@ -322,7 +335,7 @@
             </biblScope>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="IssueIDEnd">
         <xsl:if test=".!=''">
             <biblScope unit="issue" to="{.}">
@@ -330,19 +343,19 @@
             </biblScope>
         </xsl:if>
     </xsl:template>
-    
+
     <!-- Rule for RCS data -->
     <xsl:template match="issueref/link">
         <xsl:apply-templates/>
     </xsl:template>
-    
+
     <!-- we do not consider the number of issues in a volume (Springer <Publisher>) -->
-    
+
     <xsl:template match="VolumeIssueCount"/>
-    
+
     <!-- Pagination -->
 
-    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page">
+    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page">
         <xsl:if test=".!=''">
             <biblScope unit="page" from="{.}">
                 <xsl:apply-templates/>
@@ -366,7 +379,8 @@
     <!-- Sage: pub_name, pub_location -->
     <!-- Springer: PublisherName, PublisherLocation -->
 
-    <xsl:template match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher']">
+    <xsl:template
+        match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher']">
         <xsl:if test=".!=''">
             <publisher>
                 <xsl:apply-templates/>

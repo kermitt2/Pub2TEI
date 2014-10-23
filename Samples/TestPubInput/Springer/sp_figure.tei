@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="main" xml:lang="de">Aspirationspneumonie nach
+                    HWS-Verletzung</title>
+                <title level="a" type="main" xml:lang="en">Aspiration pneumonia after spinal cord
+                    injury</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Springer-Verlag</authority>
+                <date>2010</date>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author type="corresp">
+                            <persName>
+                                <forename type="first">T.</forename>
+                                <surname>Ramczykowski</surname>
+                            </persName>
+                            <email>tim.ramczykowski@t-online.de</email>
+                            <note type="Biography">
+                                <name>T. Ramczykowski </name>
+                                <p>
+                                    <figure xml:id="Figa_1889"> [IMAGE] </figure>
+                                </p>
+                            </note>
+                            <affiliation>
+                                <orgName type="department">Chirurgische Klinik und
+                                    Poliklinik</orgName>
+                                <orgName type="institution">Berufsgenossenschaftliches
+                                    Universitätsklinikum Bergmannsheil GmbH Bochum</orgName>
+                                <address>
+                                    <street>Bürkle-de-la-Camp-Platz 1</street>
+                                    <postCode>44789</postCode>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation></author>
+                        <author>
+                            <persName>
+                                <forename type="first">S.</forename>
+                                <surname>Grüning</surname>
+                            </persName>
+                            <affiliation>
+                                <orgName type="department">Abteilung für
+                                    Neurotraumatologie</orgName>
+                                <orgName type="institution">Berufsgenossenschaftliches
+                                    Universitätsklinikum Bergmannsheil GmbH Bochum</orgName>
+                                <address>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation><affiliation>
+                                <orgName type="department">Universitätsklinik für HNO-Heilkunde,
+                                    Kopf- und Halschirurgie</orgName>
+                                <orgName type="institution">St.-Elisabeth-Hospital, Ruhr-Universität
+                                    Bochum</orgName>
+                                <address>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation></author>
+                        <author>
+                            <persName>
+                                <forename type="first">A.</forename>
+                                <surname>Gurr</surname>
+                            </persName>
+                            <affiliation>
+                                <orgName type="department">Chirurgische Klinik und
+                                    Poliklinik</orgName>
+                                <orgName type="institution">Berufsgenossenschaftliches
+                                    Universitätsklinikum Bergmannsheil GmbH Bochum</orgName>
+                                <address>
+                                    <street>Bürkle-de-la-Camp-Platz 1</street>
+                                    <postCode>44789</postCode>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation><affiliation>
+                                <orgName type="department">Abteilung für
+                                    Neurotraumatologie</orgName>
+                                <orgName type="institution">Berufsgenossenschaftliches
+                                    Universitätsklinikum Bergmannsheil GmbH Bochum</orgName>
+                                <address>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation><affiliation>
+                                <orgName type="department">Universitätsklinik für HNO-Heilkunde,
+                                    Kopf- und Halschirurgie</orgName>
+                                <orgName type="institution">St.-Elisabeth-Hospital, Ruhr-Universität
+                                    Bochum</orgName>
+                                <address>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation></author>
+                        <author>
+                            <persName>
+                                <forename type="first">G.</forename>
+                                <surname>Muhr</surname>
+                            </persName>
+                            <affiliation>
+                                <orgName type="department">Chirurgische Klinik und
+                                    Poliklinik</orgName>
+                                <orgName type="institution">Berufsgenossenschaftliches
+                                    Universitätsklinikum Bergmannsheil GmbH Bochum</orgName>
+                                <address>
+                                    <street>Bürkle-de-la-Camp-Platz 1</street>
+                                    <postCode>44789</postCode>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation></author>
+                        <author>
+                            <persName>
+                                <forename type="first">C.</forename>
+                                <surname>Horch</surname>
+                            </persName>
+                            <affiliation>
+                                <orgName type="department">Abteilung für
+                                    Neurotraumatologie</orgName>
+                                <orgName type="institution">Berufsgenossenschaftliches
+                                    Universitätsklinikum Bergmannsheil GmbH Bochum</orgName>
+                                <address>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation></author>
+                        <author>
+                            <persName>
+                                <forename type="first">R.</forename>
+                                <surname>Meindl</surname>
+                            </persName>
+                            <affiliation>
+                                <orgName type="department">Abteilung für
+                                    Neurotraumatologie</orgName>
+                                <orgName type="institution">Berufsgenossenschaftliches
+                                    Universitätsklinikum Bergmannsheil GmbH Bochum</orgName>
+                                <address>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation></author>
+                        <author>
+                            <persName>
+                                <forename type="first">J.</forename>
+                                <surname>Swol</surname>
+                            </persName>
+                            <affiliation>
+                                <orgName type="department">Chirurgische Klinik und
+                                    Poliklinik</orgName>
+                                <orgName type="institution">Berufsgenossenschaftliches
+                                    Universitätsklinikum Bergmannsheil GmbH Bochum</orgName>
+                                <address>
+                                    <street>Bürkle-de-la-Camp-Platz 1</street>
+                                    <postCode>44789</postCode>
+                                    <settlement>Bochum</settlement>
+                                    <country key="DE">GERMANY</country>
+                                </address>
+                            </affiliation></author>
+                        <title level="a" type="main" xml:lang="de">Aspirationspneumonie nach
+                            HWS-Verletzung</title>
+                        <title level="a" type="main" xml:lang="en">Aspiration pneumonia after spinal
+                            cord injury</title>
+                    </analytic>
+                    <monogr>
+                        <title level="j" type="main">Der Unfallchirurg</title>
+                        <idno type="JournalID">113</idno>
+                        <idno type="pISSN">0177-5537</idno>
+                        <idno type="eISSN">1433-044X</idno>
+                        <imprint>
+                            <publisher>Springer-Verlag</publisher>
+                            <pubPlace>Berlin/Heidelberg</pubPlace>
+                            <date when="2010-12-17" type="ePublished"/>
+                            <biblScope unit="page" from="427">427</biblScope>
+                            <biblScope unit="page" to="432">432</biblScope>
+                            <biblScope unit="vol" from="115">115</biblScope>
+                            <biblScope unit="vol" to="115">115</biblScope>
+
+                            <biblScope unit="issue" from="5">5</biblScope>
+                            <biblScope unit="issue" to="5">5</biblScope>
+                        </imprint>
+                    </monogr>
+                    <idno type="publisherID">s00113-010-1889-2</idno>
+                    <idno type="DOI">10.1007/s00113-010-1889-2</idno>
+                    <idno type="ArticleID">1889</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <list>
+                        <head>Schlüsselwörter</head>
+                        <item><term>Querschnittslähmung</term></item>
+                        <item><term>Dysphagie</term></item>
+                        <item><term>Perkutane endoskopische Gastrostomie (PEG)</term></item>
+                        <item><term>Aspirationspneumonie</term></item>
+                        <item><term>Tetraplegie</term></item>
+                    </list>
+                </keywords>
+            </textClass>
+            <textClass>
+                <keywords>
+                    <list>
+                        <head>Keywords</head>
+                        <item><term>Spinal cord injury</term></item>
+                        <item><term>Dysphagia</term></item>
+                        <item><term>Feeding tube</term></item>
+                        <item><term>Aspiration pneumonia</term></item>
+                        <item><term>Tetraplegia</term></item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2010-09-06">Registration</change>
+            <change when="2010-12-17">ePublished</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="abstract" xml:lang="de">
+                <head>Zusammenfassung</head>
+                <div>
+                    <head>Hintergrund</head>
+                    <p>Pulmonale Infekte sind nach Eintritt einer hohen Querschnittslähmung
+                        gefürchtete Komplikationen. Präventive Maßnahmen sind für den weiteren
+                        Verlauf und die Mortalität entscheidend. Eine gestörte Schluckmotorik ist
+                        bei frisch verletzten Tetraplegikern häufig zu beobachten und kann die
+                        Grundlage einer Aspirationspneumonie darstellen.</p>
+                </div>
+                <div>
+                    <head>Methodik</head>
+                    <p>In diese Studie wurden frisch verletzte tetraplegische Patienten
+                        eingeschlossen. Es wurden die Identifizierung und die Aufschlüsselung
+                        respiratorischer Komplikationen erfasst und deren Therapie und Prophylaxe
+                        unter Berücksichtigung einer Dysphagie.</p>
+                </div>
+                <div>
+                    <head>Ergebnisse</head>
+                    <p>Einen hohen Querschnitt (C1–C8) wiesen 27 Patienten auf. Bei 20 Patienten
+                        (74%) wurde eine relevante Schluckstörung mit einem hohen Aspirationsrisiko
+                        logopädisch nachgewiesen. Von diesen erhielten 11 frühzeitig eine perkutane
+                        gastrale Sonde (PEG, perkutane endoskopische Gastrostomie). Neun Patienten
+                        (Non-PEG-Gruppe) wurden ohne PEG behandelt. In der Non-PEG-Gruppe
+                        entwickelten 6 Patienten (67%) innerhalb der ersten 30 Tage nach
+                        Verletzungseintritt eine Pneumonie. In der PEG-Gruppe entwickelten im selben
+                        Zeitraum 3 Patienten (27%) ein pneumonisches Infiltrat.</p>
+                </div>
+                <div>
+                    <head>Schlussfolgerung</head>
+                    <p>Eine Dysphagie ist nach Eintritt einer hohen Querschnittslähmung ein
+                        Risikofaktor für die Entstehung einer Pneumonie. Eine frühzeitig angelegte
+                        perkutane Ernährungssonde (PEG) zeigt einen präventiven Effekt hinsichtlich
+                        der Entwicklung von Aspirationspneumonien bei Patienten mit einer gestörten
+                        Schluckmotorik.</p>
+                </div>
+            </div>
+            <div type="abstract" xml:lang="en">
+                <head>Abstract</head>
+                <div>
+                    <head>Background</head>
+                    <p>Pulmonary infections are dreaded complications in acute spinal cord injuries.
+                        The prevention of pneumonia is essential for reducing mortality and the
+                        period of hospitalization. Swallowing disorders occur frequently in patients
+                        with cervical cord injuries and are accompanied by aspiration with a high
+                        risk of pneumonia.</p>
+                </div>
+                <div>
+                    <head>Patients and methods</head>
+                    <p>In this study the identification and analysis of patients with newly acquired
+                        cervical cord injuries were carried out with respect to respiratory
+                        complications, treatment and prevention.</p>
+                </div>
+                <div>
+                    <head>Results</head>
+                    <p>A total of 27 patients with a cervical cord injury (tetraplegia) were
+                        identified. Of these 20 patients (74%) were identified with a swallowing
+                        disorder and a high risk of aspiration. Of these patients 11 (PEG group)
+                        received a percutaneous feeding tube (PEG tube), 9 patients (non-PEG group)
+                        with diagnosed dysphagia were treated without PEG tube. A total of
+                        6 patients in the non-PEG group (67%) acquired pneumonia compared to 3
+                        patients (27%) in the PEG group.</p>
+                </div>
+                <div>
+                    <head>Conclusion</head>
+                    <p>A swallowing disorder is a major risk factor for a pulmonary infection after
+                        a cervical cord injury. An early placement of a PEG tube has a preventive
+                        effect with respect to aspiration pneumonia in patients with dysphagia.</p>
+                </div>
+            </div>
+        </front>
+    </text>
+</TEI>

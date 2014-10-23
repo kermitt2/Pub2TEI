@@ -85,7 +85,8 @@
                     <xsl:apply-templates select="els:body/*"/>
                 </body>
                 <back>
-                    <xsl:apply-templates select="els:back/*"/>
+                    <!-- Bravo: Elsevier a renommé son back en tail... visionnaire -->
+                    <xsl:apply-templates select="els:back/* | els:tail/*"/>
                 </back>
             </text>
         </TEI>
@@ -184,7 +185,32 @@
         </date>
     </xsl:template>
 
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- Full text elements -->
+
+    <!-- divisions -->
+
+    <xsl:template match="ce:sections">
+        <div type="ElsevierSections">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="ce:section">
+        <div>
+            <xsl:if test="ce:label">
+                <xsl:attribute name="n" select="ce:label"/>
+            </xsl:if>
+            <xsl:apply-templates select="*[ name()!='ce:label']"/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="ce:acknowledgment">
+        <div>
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
     <xsl:template match="ce:abstract-sec">
         <xsl:apply-templates/>
     </xsl:template>
@@ -388,9 +414,56 @@
         <xsl:apply-templates/>
     </xsl:template>
 
+    <!-- vieille version qui intégre la référence dans le texte !!!???? -->
+    <!--
     <xsl:template match="ce:cross-ref">
         <xsl:variable name="identifier" select="@refid"/>
         <xsl:apply-templates select="//*[@id=$identifier]"/>
+    </xsl:template>-->
+
+    <!-- Nouvelles qui se contente de créer un <ref> -->
+
+    <xsl:template match="ce:cross-ref">
+        <ref>
+            <xsl:attribute name="target">
+                <xsl:choose>
+                    <!-- Si par hasard ELsevier bascule sur une vraie syntaxe URI, on n'ajoute pas le # devant l'identifiant -->
+                    <xsl:when test=" starts-with(@refid,'#')">
+                        <xsl:value-of select="@refid"/>
+                    </xsl:when>
+                    <!-- Dans le cas contraire, actual et le plus probale dans le futur on préfixe l'id avec # -->
+                    <xsl:otherwise>
+                        <xsl:value-of select=" concat('#',@refid)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
+
+    <!-- La même chose avec plusieurs référence (Ah, les URIs multiples) -->
+
+    <xsl:template match="ce:cross-refs">
+        <ref>
+            <xsl:attribute name="target">
+                <xsl:for-each select="tokenize(@refid,' ')">
+                    <xsl:choose>
+                        <!-- Si par hasard ELsevier bascule sur une vraie syntaxe URI, on n'ajoute pas le # devant l'identifiant -->
+                        <xsl:when test=" starts-with(current(),'#')">
+                            <xsl:value-of select="current()"/>
+                        </xsl:when>
+                        <!-- Dans le cas contraire, actual et le plus probale dans le futur on préfixe l'id avec # -->
+                        <xsl:otherwise>
+                            <xsl:value-of select=" concat('#',current())"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:if test="not(position()=last())">
+                        <xsl:text> </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
     </xsl:template>
 
     <!-- External references -->

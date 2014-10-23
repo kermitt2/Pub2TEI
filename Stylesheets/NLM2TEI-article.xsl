@@ -308,7 +308,7 @@
                 </xsl:attribute>
             </xsl:if>
 
-            <!-- We treat boxed-text as independant divisionsright after the current division 
+            <!-- We treat boxed-text as independant divisions right after the current division 
             to avoid getting a division within a paragraph by accident -->
             <xsl:choose>
                 <xsl:when test="not(descendant::sec) and descendant::boxed-text">

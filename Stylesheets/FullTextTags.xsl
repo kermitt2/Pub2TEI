@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+    xmlns="http://www.tei-c.org/ns/1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML/"
+    exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- Macrostructure -->
     <!-- Springer: Para, SimplePara -->
 
-    <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para">
+    <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para">
         <p>
             <xsl:apply-templates/>
         </p>
@@ -68,10 +70,10 @@
                 </xsl:otherwise>
             </xsl:choose>
         </formula>
-    </xsl:template> 
-    
+    </xsl:template>
+
     <xsl:template match="disp-formula/label"/>
-    
+
 
     <!-- Specific rule for Springer's Inline equation -->
 
@@ -90,10 +92,20 @@
             <xsl:value-of select="EquationSource"/>
         </formula>
     </xsl:template>
-    
+
+    <!-- Specific rile for Elsevier inline pathematical objects -->
+
+    <xsl:template match="els:math">
+        <formula notation="XMLLatex">
+            <xsl:copy exclude-result-prefixes="#all">
+                <xsl:apply-templates/>
+            </xsl:copy>
+        </formula>
+    </xsl:template>
+
     <!-- References in text -->
     <!-- citref for RCS (Royal CHemical Society) -->
-    
+
     <xsl:template match="citref">
         <ref type="bibliography">
             <xsl:attribute name="target">
@@ -101,7 +113,7 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
-    
+
     <xsl:template match="schemref">
         <ref type="schema">
             <xsl:attribute name="target">
@@ -109,7 +121,7 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
-    
+
     <xsl:template match="figref">
         <ref type="figure">
             <xsl:attribute name="target">
@@ -117,8 +129,8 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
-    
-    
+
+
     <xsl:template match="tableref">
         <ref type="table">
             <xsl:attribute name="target">
@@ -133,7 +145,8 @@
     <!-- Elsevier: ce:italic -->
     <!-- Springer: Emphasis[@Type='Italic'], Emphasis[@Type='Bold'], Subscript, Superscript -->
 
-    <xsl:template match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic']">
+    <xsl:template
+        match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic']">
         <xsl:if test=".!=''">
             <hi rend="italic">
                 <xsl:apply-templates/>
@@ -148,7 +161,7 @@
             </hi>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="Emphasis[@Type='SmallCaps'] | ce:small-caps | sc | scp">
         <xsl:if test=".!=''">
             <hi rend="smallCaps">
@@ -160,33 +173,33 @@
     <xsl:template match="Emphasis | emph">
         <xsl:if test=".!=''">
             <hi>
-            <xsl:choose>
-                <xsl:when test="@Type">
-                    <xsl:attribute name="rend">
-                        <xsl:value-of select="@Type"/>
-                    </xsl:attribute>
-                    <xsl:apply-templates/>
-                </xsl:when>
-                <xsl:when test="@FontCategory">
-                    <xsl:attribute name="rend">
-                        <xsl:value-of select="@FontCategory"/>
-                    </xsl:attribute>
-                    <xsl:apply-templates/>
-                </xsl:when>
-                <xsl:when test="@display">
-                    <xsl:attribute name="rend">
-                        <xsl:value-of select="@FontCategory"/>
-                    </xsl:attribute>
-                    <xsl:apply-templates/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:apply-templates/>
-                </xsl:otherwise>
-            </xsl:choose>
+                <xsl:choose>
+                    <xsl:when test="@Type">
+                        <xsl:attribute name="rend">
+                            <xsl:value-of select="@Type"/>
+                        </xsl:attribute>
+                        <xsl:apply-templates/>
+                    </xsl:when>
+                    <xsl:when test="@FontCategory">
+                        <xsl:attribute name="rend">
+                            <xsl:value-of select="@FontCategory"/>
+                        </xsl:attribute>
+                        <xsl:apply-templates/>
+                    </xsl:when>
+                    <xsl:when test="@display">
+                        <xsl:attribute name="rend">
+                            <xsl:value-of select="@FontCategory"/>
+                        </xsl:attribute>
+                        <xsl:apply-templates/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </hi>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="Subscript | sub | ce:inf">
         <xsl:if test=".!=''">
             <hi rend="subscript">
@@ -236,7 +249,7 @@
             <xsl:apply-templates/>
         </cit>
     </xsl:template>
-    
+
     <xsl:template match="BlockQuote/Para">
         <quote>
             <xsl:apply-templates/>
