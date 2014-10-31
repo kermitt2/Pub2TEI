@@ -5,7 +5,6 @@
     xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
-	<xsl:include href="Imports.xsl"/>
 	
     <xsl:template match="els:article[els:item-info]">
         <TEI>
