@@ -5,7 +5,8 @@
     xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
-
+	<xsl:include href="Imports.xsl"/>
+	
     <xsl:template match="els:article[els:item-info]">
         <TEI>
             <xsl:if test="@xml:lang">
@@ -41,6 +42,10 @@
                                             <xsl:apply-templates select="els:head/ce:date-accepted"
                                                 mode="inImprint"/>
                                         </xsl:when>
+                                        <xsl:when test="els:head/ce:date-received">
+                                            <xsl:apply-templates select="els:head/ce:date-received"
+                                                mode="inImprint"/>
+                                        </xsl:when>
                                     </xsl:choose>
                                 </imprint>
                             </monogr>
@@ -69,10 +74,10 @@
                     </encodingDesc>
                 </xsl:if>
                 <xsl:if
-                    test="els:head/ce:date-received | els:head/ce:date-revised | els:head/ce:date-accepted">
+                    test="els:head/ce:date-received | els:head/ce:date-revised | els:head/ce:date-accepted | els:head/ce:date-received">
                     <revisionDesc>
                         <xsl:apply-templates
-                            select="els:head/ce:date-received | els:head/ce:date-revised | els:head/ce:date-accepted"
+                            select="els:head/ce:date-received | els:head/ce:date-revised | els:head/ce:date-accepted | els:head/ce:date-received"
                         />
                     </revisionDesc>
                 </xsl:if>
@@ -151,6 +156,19 @@
                 </xsl:call-template>
             </xsl:attribute>
             <xsl:text>Accepted</xsl:text>
+        </change>
+    </xsl:template>
+	
+    <xsl:template match="els:head/ce:date-received" mode="inImprint">
+        <change>
+			<xsl:attribute name="type">Received</xsl:attribute>
+            <xsl:attribute name="when">
+                <xsl:call-template name="makeISODateFromComponents">
+                    <xsl:with-param name="oldDay" select="@day"/>
+                    <xsl:with-param name="oldMonth" select="@month"/>
+                    <xsl:with-param name="oldYear" select="@year"/>
+                </xsl:call-template>
+            </xsl:attribute>
         </change>
     </xsl:template>
 
@@ -232,8 +250,42 @@
             <xsl:apply-templates/>
         </note>
     </xsl:template>
+	
+	<!-- Figures -->
+	
+    <xsl:template match="ce:figure">
+        <figure>
+            <xsl:apply-templates/>
+        </figure>
+    </xsl:template>
+
+    <xsl:template match="ce:caption">
+        <figDesc>
+            <xsl:apply-templates/>
+        </figDesc>
+    </xsl:template>
+	
+	<!-- Text elements -->
+
+    <xsl:template match="ce:bold">
+        <hi>
+            <xsl:attribute name="rend">
+                <xsl:text>bold</xsl:text>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+		</hi>
+    </xsl:template>
 
     <!-- Fin de la bibliographie -->
+
+    <xsl:template match="ce:bib-reference">
+        <biblStruct>
+			<xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </biblStruct>
+    </xsl:template>
 
     <xsl:template match="els:conf-name">
         <meeting>
@@ -295,6 +347,11 @@
 
         </author>
     </xsl:template>
+
+	<xsl:template match="ce:suffix">
+		<!-- this is the suffix in a title name, e.g. jr for junior -->
+		<suffix><xsl:value-of select="text()"/></suffix>	
+	</xsl:template>
 
     <xsl:template match="ce:affiliation">
         <affiliation>
