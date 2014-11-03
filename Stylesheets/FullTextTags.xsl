@@ -154,7 +154,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="bold | Emphasis[@Type='Bold'] | emph[@display='bold']">
+    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold']">
         <xsl:if test=".!=''">
             <hi rend="bold">
                 <xsl:apply-templates/>

@@ -5,8 +5,8 @@
     xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
-	
-    <xsl:template match="els:article[els:item-info]">
+
+    <xsl:template match="els:article[els:item-info] | converted-article[item-info]">
         <TEI>
             <xsl:if test="@xml:lang">
                 <xsl:copy-of select="@xml:lang"/>
@@ -15,48 +15,59 @@
                 <fileDesc>
                     <titleStmt>
                         <xsl:apply-templates select="els:head/ce:title"/>
+						<xsl:apply-templates select="head/ce:title"/>
                     </titleStmt>
                     <publicationStmt>
                         <xsl:apply-templates select="els:item-info/ce:copyright"/>
+						<xsl:apply-templates select="item-info/ce:copyright"/>
                     </publicationStmt>
                     <sourceDesc>
                         <biblStruct>
                             <analytic>
                                 <!-- All authors are included here -->
                                 <xsl:apply-templates select="els:head/ce:author-group/ce:author"/>
+								<xsl:apply-templates select="head/ce:author-group/ce:author"/>
                                 <!-- Title information related to the paper goes here -->
                                 <xsl:apply-templates select="els:head/ce:title"/>
                             </analytic>
                             <monogr>
-                                <xsl:apply-templates select="els:item-info/els:jid"/>
+                                <xsl:apply-templates select="els:item-info/els:jid | item-info/jid"/>
+								<!-- PL: note for me, does the issn appears in the biblio section? -->
                                 <xsl:apply-templates select="//ce:issn"/>
                                 <!-- Just in case -->
                                 <imprint>
                                     <xsl:choose>
-                                        <xsl:when test="els:head/ce:miscellaneous">
+                                        <xsl:when test="els:head/ce:miscellaneous | head/ce:miscellaneous">
                                             <xsl:apply-templates select="els:head/ce:miscellaneous"
                                                 mode="inImprint"/>
+                                            <xsl:apply-templates select="head/ce:miscellaneous"
+                                                mode="inImprint"/>	
                                         </xsl:when>
-                                        <xsl:when test="els:head/ce:date-accepted">
+                                        <xsl:when test="els:head/ce:date-accepted | head/ce:date-accepted">
                                             <xsl:apply-templates select="els:head/ce:date-accepted"
                                                 mode="inImprint"/>
+                                            <xsl:apply-templates select="head/ce:date-accepted"
+                                                mode="inImprint"/>	
                                         </xsl:when>
-                                        <xsl:when test="els:head/ce:date-received">
+                                        <xsl:when test="els:head/ce:date-received | head/ce:date-received">
                                             <xsl:apply-templates select="els:head/ce:date-received"
                                                 mode="inImprint"/>
+	                                       	<xsl:apply-templates select="head/ce:date-received"
+	                                            mode="inImprint"/>	
                                         </xsl:when>
                                     </xsl:choose>
                                 </imprint>
                             </monogr>
-                            <xsl:apply-templates select="els:item-info/ce:doi"/>
-                            <xsl:apply-templates select="els:item-info/ce:pii"/>
-                            <xsl:apply-templates select="els:item-info/els:aid"/>
+                            <xsl:apply-templates select="els:item-info/ce:doi | item-info/ce:doi"/>
+                            <xsl:apply-templates select="els:item-info/ce:pii | item-info/ce:pii"/>
+                            <xsl:apply-templates select="els:item-info/els:aid | item-info/els:aid"/>
                         </biblStruct>
                     </sourceDesc>
                 </fileDesc>
-                <xsl:if test="els:head/ce:keywords">
+                <xsl:if test="els:head/ce:keywords | head/ce:keywords">
                     <profileDesc>
                         <xsl:apply-templates select="els:head/ce:keywords"/>
+						<xsl:apply-templates select="head/ce:keywords"/>
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="//ce:glyph">
@@ -73,24 +84,25 @@
                     </encodingDesc>
                 </xsl:if>
                 <xsl:if
-                    test="els:head/ce:date-received | els:head/ce:date-revised | els:head/ce:date-accepted | els:head/ce:date-received">
+                    test="els:head/ce:date-received | els:head/ce:date-revised | els:head/ce:date-accepted | els:head/ce:date-received | head/ce:date-received | head/ce:date-revised | head/ce:date-accepted | head/ce:date-received">
                     <revisionDesc>
                         <xsl:apply-templates
-                            select="els:head/ce:date-received | els:head/ce:date-revised | els:head/ce:date-accepted | els:head/ce:date-received"
+                            select="els:head/ce:date-received | els:head/ce:date-revised | els:head/ce:date-accepted | els:head/ce:date-received | head/ce:date-received | head/ce:date-revised | head/ce:date-accepted | head/ce:date-received"
                         />
                     </revisionDesc>
                 </xsl:if>
             </teiHeader>
             <text>
                 <front>
-                    <xsl:apply-templates select="els:head/ce:abstract"/>
+                    <xsl:apply-templates select="els:head/ce:abstract | head/ce:abstract"/>
                 </front>
                 <body>
                     <xsl:apply-templates select="els:body/*"/>
+					<xsl:apply-templates select="body/*"/>
                 </body>
                 <back>
                     <!-- Bravo: Elsevier a renommé son back en tail... visionnaire -->
-                    <xsl:apply-templates select="els:back/* | els:tail/*"/>
+                    <!--xsl:apply-templates select="els:back/* | els:tail/* | tail/*"/-->
                 </back>
             </text>
         </TEI>
@@ -100,10 +112,12 @@
 
     <xsl:template match="ce:copyright">
         <availability status="{@type}">
-            <p>
-                <date>
-                    <xsl:value-of select="@year"/>
-                </date>
+            <!-- PL: put the date out of the paragraph, as it is TEI P5 valid -->
+            <date>
+               	<xsl:value-of select="@year"/>
+            </date>
+			<p>	
+				<xsl:value-of select="text()"/>
             </p>
         </availability>
     </xsl:template>
@@ -119,7 +133,7 @@
     </xsl:template>
 
     <!-- Revision information -->
-    <xsl:template match="els:head/ce:date-received">
+    <xsl:template match="els:head/ce:date-received | head/ce:date-received">
         <change>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
@@ -132,7 +146,7 @@
         </change>
     </xsl:template>
 
-    <xsl:template match="els:head/ce:date-revised">
+    <xsl:template match="els:head/ce:date-revised | head/ce:date-revised">
         <change>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
@@ -145,7 +159,7 @@
         </change>
     </xsl:template>
 
-    <xsl:template match="els:head/ce:date-accepted">
+    <xsl:template match="els:head/ce:date-accepted | head/ce:date-accepted">
         <change>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
@@ -158,7 +172,7 @@
         </change>
     </xsl:template>
 	
-    <xsl:template match="els:head/ce:date-received" mode="inImprint">
+    <xsl:template match="els:head/ce:date-received | head/ce:date-received" mode="inImprint">
         <change>
 			<xsl:attribute name="type">Received</xsl:attribute>
             <xsl:attribute name="when">
@@ -171,7 +185,7 @@
         </change>
     </xsl:template>
 
-    <xsl:template match="els:head/ce:date-accepted" mode="inImprint">
+    <xsl:template match="els:head/ce:date-accepted | head/ce:date-accepted" mode="inImprint">
         <date>
             <xsl:attribute name="type">Accepted</xsl:attribute>
             <xsl:attribute name="when">
@@ -184,7 +198,7 @@
         </date>
     </xsl:template>
 
-    <xsl:template match="els:head/ce:miscellaneous" mode="inImprint">
+    <xsl:template match="els:head/ce:miscellaneous | head/ce:miscellaneous" mode="inImprint">
         <xsl:variable name="quot">"</xsl:variable>
         <date>
             <xsl:attribute name="type">Published</xsl:attribute>
@@ -228,6 +242,15 @@
         </div>
     </xsl:template>
 
+    <xsl:template match="ce:abstract">
+		<abstract>
+			<xsl:if test="@xml:lang">
+				<xsl:attribute name="xml:lang" select="@xml:lang"/>
+			</xsl:if>
+			<xsl:apply-templates/>
+		</abstract>	
+    </xsl:template>
+
     <xsl:template match="ce:abstract-sec">
         <xsl:apply-templates/>
     </xsl:template>
@@ -262,17 +285,6 @@
         <figDesc>
             <xsl:apply-templates/>
         </figDesc>
-    </xsl:template>
-	
-	<!-- Text elements -->
-
-    <xsl:template match="ce:bold">
-        <hi>
-            <xsl:attribute name="rend">
-                <xsl:text>bold</xsl:text>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-		</hi>
     </xsl:template>
 
     <!-- Fin de la bibliographie -->
@@ -328,21 +340,25 @@
                     <xsl:variable name="codePays"
                         select="/els:article/els:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text"/>
                     <xsl:message>Pays Elsevier: <xsl:value-of select="$codePays"/></xsl:message>
-                    <address>
-                        <country>
-                            <xsl:attribute name="key">
-                                <xsl:value-of select="$codePays"/>
-                            </xsl:attribute>
-                            <xsl:call-template name="normalizeISOCountryName">
-                                <xsl:with-param name="country" select="$codePays"/>
-                            </xsl:call-template>
-                        </country>
-                    </address>
+					<!-- PL: test to avoid empy country block -->
+					<xsl:if test="$codePays">
+	                    <address>
+	                        <country>
+	                            <xsl:attribute name="key">
+	                                <xsl:value-of select="$codePays"/>
+	                            </xsl:attribute>
+	                            <xsl:call-template name="normalizeISOCountryName">
+	                                <xsl:with-param name="country" select="$codePays"/>
+	                            </xsl:call-template>
+	                        </country>
+	                    </address>
+					</xsl:if>	
                 </xsl:if>
 
             </affiliation>
 
-            <xsl:apply-templates select="ce:cross-ref"/>
+			<!-- PL: no reference markers in the author section -->
+            <!--xsl:apply-templates select="ce:cross-ref"/-->
 
         </author>
     </xsl:template>
