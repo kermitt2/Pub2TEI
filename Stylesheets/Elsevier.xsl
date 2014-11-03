@@ -5,7 +5,7 @@
     xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
-
+		
     <xsl:template match="els:article[els:item-info] | converted-article[item-info]">
         <TEI>
             <xsl:if test="@xml:lang">
@@ -14,21 +14,18 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-                        <xsl:apply-templates select="els:head/ce:title"/>
-						<xsl:apply-templates select="head/ce:title"/>
+                        <xsl:apply-templates select="els:head/ce:title | head/ce:title"/>
                     </titleStmt>
                     <publicationStmt>
-                        <xsl:apply-templates select="els:item-info/ce:copyright"/>
-						<xsl:apply-templates select="item-info/ce:copyright"/>
+                        <xsl:apply-templates select="els:item-info/ce:copyright | item-info/ce:copyright"/>
                     </publicationStmt>
                     <sourceDesc>
                         <biblStruct>
                             <analytic>
                                 <!-- All authors are included here -->
-                                <xsl:apply-templates select="els:head/ce:author-group/ce:author"/>
-								<xsl:apply-templates select="head/ce:author-group/ce:author"/>
+                                <xsl:apply-templates select="els:head/ce:author-group/ce:author | head/ce:author-group/ce:author"/>
                                 <!-- Title information related to the paper goes here -->
-                                <xsl:apply-templates select="els:head/ce:title"/>
+                                <xsl:apply-templates select="els:head/ce:title | head/ce:title"/>
                             </analytic>
                             <monogr>
                                 <xsl:apply-templates select="els:item-info/els:jid | item-info/jid"/>
@@ -66,8 +63,7 @@
                 </fileDesc>
                 <xsl:if test="els:head/ce:keywords | head/ce:keywords">
                     <profileDesc>
-                        <xsl:apply-templates select="els:head/ce:keywords"/>
-						<xsl:apply-templates select="head/ce:keywords"/>
+                        <xsl:apply-templates select="els:head/ce:keywords | head/ce:keywords"/>
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="//ce:glyph">
@@ -102,7 +98,7 @@
                 </body>
                 <back>
                     <!-- Bravo: Elsevier a renommé son back en tail... visionnaire -->
-                    <!--xsl:apply-templates select="els:back/* | els:tail/* | tail/*"/-->
+                    <xsl:apply-templates select="els:back/* | els:tail/* | tail/*"/>
                 </back>
             </text>
         </TEI>
