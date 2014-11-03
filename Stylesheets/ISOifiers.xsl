@@ -12,7 +12,7 @@
                 <xsl:text>de</xsl:text>
             </xsl:when>
             <xsl:when test="$code='FR' or $code='Fr'">
-                <xsl:text>de</xsl:text>
+                <xsl:text>fr</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$code"/>
