@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "art452.dtd" [
+<!ENTITY sc1 SYSTEM "sc1" NDATA IMAGE><!ENTITY sc2 SYSTEM "sc2" NDATA IMAGE><!ENTITY sc3 SYSTEM "sc3" NDATA IMAGE><!ENTITY sc4 SYSTEM "sc4" NDATA IMAGE><!ENTITY gr1 SYSTEM "gr1" NDATA IMAGE><!ENTITY fx1 SYSTEM "fx1" NDATA IMAGE><!ENTITY sc5 SYSTEM "sc5" NDATA IMAGE><!ENTITY sc6 SYSTEM "sc6" NDATA IMAGE><!ENTITY gr2 SYSTEM "gr2" NDATA IMAGE>]>
+<converted-article version="4.5.2" docsubtype="sco" xml:lang="fr" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/dtd">
+<item-info>
+<jid>PXCI</jid>
+<aid>83</aid>
+<ce:pii>S1387-1609(00)00107-9</ce:pii><ce:doi>10.1016/S1387-1609(00)00107-9</ce:doi>
+<ce:copyright type="full-transfer" year="2000">&#x00C9;ditions scientifiques et m&#x00E9;dicales Elsevier SAS</ce:copyright></item-info>
+<ce:floats><ce:figure id="SCH1">
+<ce:label>Sch&#x00E9;ma 1</ce:label>
+<ce:link locator="sc1" /></ce:figure><ce:figure id="SCH2">
+<ce:label>Sch&#x00E9;ma 2</ce:label>
+<ce:link locator="sc2" /></ce:figure><ce:figure id="SCH3">
+<ce:label>Sch&#x00E9;ma 3</ce:label>
+<ce:link locator="sc3" /></ce:figure><ce:figure id="SCH4">
+<ce:label>Sch&#x00E9;ma 4</ce:label>
+<ce:link locator="sc4" /></ce:figure><ce:figure id="FIG1">
+<ce:label>Figure 1</ce:label>
+<ce:caption>
+<ce:simple-para>Structures mol&#x00E9;culaires des imines pr&#x00E9;par&#x00E9;es. Ia1, b1, b6: R=H<ce:hsp sp="0.25" />; Ia2, b2, c4<ce:hsp sp="0.25" />: R=NO<ce:inf>2</ce:inf> (<ce:italic>o</ce:italic>)<ce:hsp sp="0.25" />; Ia3, b3, b7, c1, c5, c6, c8<ce:hsp sp="0.25" />: R=NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>); Ia4, b4, b8, c2, c3, c7<ce:hsp sp="0.25" />: R=NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>); Ia5, b5<ce:hsp sp="0.25" />: R=Cl (<ce:italic>p</ce:italic>).</ce:simple-para></ce:caption>
+<ce:link locator="gr1" /></ce:figure><ce:figure id="SCH5">
+<ce:label>Sch&#x00E9;ma 5</ce:label>
+<ce:caption>
+<ce:simple-para>Ac<ce:inf>1</ce:inf><ce:hsp sp="0.25" />: R=NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>), Rdt<ce:hsp sp="0.25" />: 60<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; Ac<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; R=NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>), Rdt<ce:hsp sp="0.25" />: 64<ce:hsp sp="0.25" />%. Ac<ce:inf>8</ce:inf><ce:hsp sp="0.25" />: R=NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>), Rdt<ce:hsp sp="0.25" />: 61<ce:hsp sp="0.25" />%; Ac<ce:inf>3</ce:inf><ce:hsp sp="0.25" />; R=NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>), Rdt<ce:hsp sp="0.25" />: 67<ce:hsp sp="0.25" />%.</ce:simple-para></ce:caption>
+<ce:link locator="sc5" /></ce:figure><ce:figure id="SCH6">
+<ce:label>Sch&#x00E9;ma 6</ce:label>
+<ce:caption>
+<ce:simple-para>Ac<ce:inf>4</ce:inf><ce:hsp sp="0.25" />: R=NO<ce:inf>2</ce:inf> (<ce:italic>o</ce:italic>); Ac<ce:inf>5</ce:inf>; R=NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>). Ac<ce:inf>6</ce:inf><ce:hsp sp="0.25" />: R=NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>); Ac<ce:inf>7</ce:inf>; R=NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>).</ce:simple-para></ce:caption>
+<ce:link locator="sc6" /></ce:figure><ce:figure id="FIG2">
+<ce:label>Figure 2</ce:label>
+<ce:caption>
+<ce:simple-para>Chromatogramme du m&#x00E9;lange de diast&#x00E9;r&#x00E9;oisom&#x00E8;res Ac<ce:inf>5</ce:inf>.</ce:simple-para></ce:caption>
+<ce:link locator="gr2" /></ce:figure><ce:table id="TBL1" colsep="0" rowsep="0" frame="topbot"><ce:label>Tableau I</ce:label><ce:caption>
+<ce:simple-para>Rendements chimiques des imines pr&#x00E9;par&#x00E9;es.<display><ce:figure>
+<ce:link locator="fx1" /></ce:figure></display></ce:simple-para></ce:caption><tgroup cols="5"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<thead><row rowsep="1"><entry>Produits</entry>
+<entry>R<ce:sup>1</ce:sup></entry>
+<entry>R<ce:sup>2</ce:sup></entry>
+<entry>R<ce:sup>3</ce:sup></entry>
+<entry>Rendement (12<ce:hsp sp="0.25" />%)</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>Ia1</entry>
+<entry>H</entry>
+<entry>H</entry>
+<entry>1-Naph</entry>
+<entry>90</entry>
+</row>
+<row><entry>Ia2</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>o</ce:italic>)</entry>
+<entry>H</entry>
+<entry>1-Naph</entry>
+<entry>73</entry>
+</row>
+<row><entry>Ia3</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>)</entry>
+<entry>H</entry>
+<entry>1-Naph</entry>
+<entry>77</entry>
+</row>
+<row><entry>Ia4</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>)</entry>
+<entry>H</entry>
+<entry>1-Naph</entry>
+<entry>86</entry>
+</row>
+<row><entry>Ia5</entry>
+<entry>Cl (<ce:italic>p</ce:italic>)</entry>
+<entry>H</entry>
+<entry>1-Naph</entry>
+<entry>88</entry>
+</row>
+<row><entry>Ib1</entry>
+<entry>H</entry>
+<entry>H</entry>
+<entry>Ph</entry>
+<entry>82</entry>
+</row>
+<row><entry>Ib2</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>o</ce:italic>)</entry>
+<entry>H</entry>
+<entry>Ph</entry>
+<entry>84</entry>
+</row>
+<row><entry>Ib3</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>)</entry>
+<entry>H</entry>
+<entry>Ph</entry>
+<entry>75</entry>
+</row>
+<row><entry>Ib4</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>)</entry>
+<entry>H</entry>
+<entry>Ph</entry>
+<entry>83</entry>
+</row>
+<row><entry>Ib5</entry>
+<entry>Cl (<ce:italic>p</ce:italic>)</entry>
+<entry>H</entry>
+<entry>Ph</entry>
+<entry>79</entry>
+</row>
+<row><entry>Ib6</entry>
+<entry>H</entry>
+<entry>CH<ce:inf>3</ce:inf></entry>
+<entry>Ph</entry>
+<entry>64</entry>
+</row>
+<row><entry>Ib7</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>)</entry>
+<entry>CH<ce:inf>3</ce:inf></entry>
+<entry>Ph</entry>
+<entry>70</entry>
+</row>
+<row><entry>Ib8</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>)</entry>
+<entry>CH<ce:inf>3</ce:inf></entry>
+<entry>Ph</entry>
+<entry>68</entry>
+</row>
+<row><entry>Ic1</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>)</entry>
+<entry>H</entry>
+<entry>C<ce:inf>8</ce:inf>H<ce:inf>15</ce:inf> (R)</entry>
+<entry>60</entry>
+</row>
+<row><entry>Ic2</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>)</entry>
+<entry>H</entry>
+<entry>C<ce:inf>8</ce:inf>H<ce:inf>15</ce:inf> (R)</entry>
+<entry>64</entry>
+</row>
+<row><entry>Ic3</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>)</entry>
+<entry>H</entry>
+<entry>C<ce:inf>8</ce:inf>H<ce:inf>15</ce:inf> (S)</entry>
+<entry>67</entry>
+</row>
+<row><entry>Ic4</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>o</ce:italic>)</entry>
+<entry>CH<ce:inf>3</ce:inf></entry>
+<entry>C<ce:inf>8</ce:inf>H<ce:inf>15</ce:inf> (S)</entry>
+<entry>55</entry>
+</row>
+<row><entry>Ic5</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>)</entry>
+<entry>CH<ce:inf>3</ce:inf></entry>
+<entry>C<ce:inf>8</ce:inf>H<ce:inf>15</ce:inf> (R)</entry>
+<entry>58</entry>
+</row>
+<row><entry>Ic6</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>)</entry>
+<entry>CH<ce:inf>3</ce:inf></entry>
+<entry>C<ce:inf>8</ce:inf>H<ce:inf>15</ce:inf> (S)</entry>
+<entry>56</entry>
+</row>
+<row><entry>Ic7</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>p</ce:italic>)</entry>
+<entry>CH<ce:inf>3</ce:inf></entry>
+<entry>C<ce:inf>8</ce:inf>H<ce:inf>15</ce:inf> (R)</entry>
+<entry>62</entry>
+</row>
+<row><entry>Ic8</entry>
+<entry>NO<ce:inf>2</ce:inf> (<ce:italic>m</ce:italic>)</entry>
+<entry>H</entry>
+<entry>C<ce:inf>8</ce:inf>H<ce:inf>15</ce:inf> (S)</entry>
+<entry>61</entry>
+</row>
+</tbody></tgroup>
+</ce:table><ce:table id="TBL2" colsep="0" rowsep="0" frame="topbot"><ce:label>Tableau II</ce:label><ce:caption>
+<ce:simple-para>Rendements chimiques et rapports diast&#x00E9;r&#x00E9;oisom&#x00E9;riques.</ce:simple-para></ce:caption><tgroup cols="6"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<colspec colname="col6" colsep="0" />
+<thead><row rowsep="1"><entry>Amines</entry>
+<entry>Rendement</entry>
+<entry>Temp&#x00E9;rature</entry>
+<entry>Agent de r&#x00E9;duction<ce:cross-ref refid="TBLFN1"><ce:sup>a</ce:sup></ce:cross-ref></entry>
+<entry>Rapport diast&#x00E9;r&#x00E9;oisom&#x00E9;rique</entry>
+<entry>e.d<ce:cross-ref refid="TBLFN2"><ce:sup>b</ce:sup></ce:cross-ref> (&#x00B1;2<ce:hsp sp="0.25" />%)</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>Ac<ce:inf>4</ce:inf></entry>
+<entry>58</entry>
+<entry>20<ce:hsp sp="0.25" />&#x00B0;C</entry>
+<entry>NaBH<ce:inf>4</ce:inf></entry>
+<entry>SS/SR* 70/30</entry>
+<entry>40<ce:hsp sp="0.25" />%</entry>
+</row>
+<row><entry>Ac<ce:inf>5</ce:inf></entry>
+<entry>68</entry>
+<entry>20<ce:hsp sp="0.25" />&#x00B0;C</entry>
+<entry>NaBH<ce:inf>4</ce:inf></entry>
+<entry>RR/RS* 73/27</entry>
+<entry>46<ce:hsp sp="0.25" />%</entry>
+</row>
+<row><entry>Ac<ce:inf>6</ce:inf></entry>
+<entry>70</entry>
+<entry>20<ce:hsp sp="0.25" />&#x00B0;C</entry>
+<entry>NaBH<ce:inf>4</ce:inf></entry>
+<entry>SS/SR* 72/28</entry>
+<entry>44<ce:hsp sp="0.25" />%</entry>
+</row>
+<row><entry>Ac<ce:inf>7</ce:inf></entry>
+<entry>77</entry>
+<entry>20<ce:hsp sp="0.25" />&#x00B0;C</entry>
+<entry>NaBH<ce:inf>4</ce:inf></entry>
+<entry>RR/RS * 66/34</entry>
+<entry>32<ce:hsp sp="0.25" />%</entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN1">
+<ce:label>a</ce:label>
+<ce:note-para>Les r&#x00E9;ductions ont &#x00E9;t&#x00E9; effectu&#x00E9;es dans le m&#x00E9;thanol.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN2">
+<ce:label>b</ce:label>
+<ce:note-para>colonne: HP-5890A constitu&#x00E9;e d'une colonne capillaire de longueur 25m, remplie d'une phase stationnaire: 5% diph&#x00E9;nyl/95% dim&#x00E9;thylpolysiloxane.</ce:note-para></ce:table-footnote></ce:table><ce:table id="TBL3" colsep="0" rowsep="0" frame="topbot"><ce:label>Tableau III</ce:label><ce:caption>
+<ce:simple-para>S&#x00E9;paration des N-&#x03B1;-m&#x00E9;thyl-aryl-1-cyclohexyl&#x00E9;thylamines par CPG<ce:cross-ref refid="TBLFN3"><ce:sup>a</ce:sup></ce:cross-ref>.</ce:simple-para></ce:caption><tgroup cols="5"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<thead><row rowsep="1"><entry>Compos&#x00E9;</entry>
+<entry>Temp&#x00E9;rature de la colonne (&#x00B0;C)</entry>
+<entry><ce:italic>K</ce:italic><ce:cross-ref refid="TBLFN4"><ce:sup>b</ce:sup></ce:cross-ref></entry>
+<entry><ce:italic>&#x03B1;</ce:italic><ce:cross-ref refid="TBLFN5"><ce:sup>c</ce:sup></ce:cross-ref></entry>
+<entry><ce:italic>Rs</ce:italic><ce:cross-ref refid="TBLFN6"><ce:sup>d</ce:sup></ce:cross-ref></entry>
+</row>
+</thead>
+<tbody>
+<row><entry>Ac<ce:inf>4</ce:inf></entry>
+<entry>243</entry>
+<entry>11,45</entry>
+<entry>1,013</entry>
+<entry>1,53</entry>
+</row>
+<row><entry>Ac<ce:inf>5</ce:inf></entry>
+<entry>234</entry>
+<entry>12,72</entry>
+<entry>1,024</entry>
+<entry>3,43</entry>
+</row>
+<row><entry>Ac<ce:inf>6</ce:inf></entry>
+<entry>235</entry>
+<entry>12,89</entry>
+<entry>1,028</entry>
+<entry>2,16</entry>
+</row>
+<row><entry>Ac<ce:inf>7</ce:inf></entry>
+<entry>240</entry>
+<entry>13,36</entry>
+<entry>1,026</entry>
+<entry>2,73</entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN3">
+<ce:label>a</ce:label>
+<ce:note-para>Colonne: HP-5890A constitu&#x00E9;e d'une colonne capillaire de longueur 25m, remplie d'une phase stationnaire de composition 5% diph&#x00E9;nyl, 95% dim&#x00E9;thylpolysiloxane.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN4">
+<ce:label>b</ce:label>
+<ce:note-para><ce:italic>K</ce:italic>: facteur de capacit&#x00E9; de l'isom&#x00E8;re le plus retenu.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN5">
+<ce:label>c</ce:label>
+<ce:note-para>facteur de s&#x00E9;paration.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN6">
+<ce:label>d</ce:label>
+<ce:note-para><ce:italic>Rs</ce:italic>: r&#x00E9;solution.</ce:note-para></ce:table-footnote></ce:table><ce:table id="TBL4" colsep="0" rowsep="0" frame="topbot"><ce:label>Tableau IV</ce:label><ce:caption>
+<ce:simple-para>Les rapports diast&#x00E9;r&#x00E9;oisom&#x00E9;riques d&#x00E9;termin&#x00E9;s par CPG.</ce:simple-para></ce:caption><tgroup cols="6"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<colspec colname="col6" colsep="0" />
+<thead><row rowsep="1"><entry>Amines</entry>
+<entry>Solvant</entry>
+<entry>Temp&#x00E9;rature</entry>
+<entry>Agent de r&#x00E9;duction</entry>
+<entry>Rapport diast&#x00E9;r&#x00E9;oisom&#x00E9;rique</entry>
+<entry>e.d (&#x00B1;2<ce:hsp sp="0.25" />%)</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>Ac<ce:inf>6</ce:inf></entry>
+<entry>&#x00E9;thanol</entry>
+<entry>20<ce:hsp sp="0.25" />&#x00B0;C</entry>
+<entry>NaBH<ce:inf>4</ce:inf></entry>
+<entry>SS/SR<ce:cross-ref refid="TBLFN7"><ce:sup>*</ce:sup></ce:cross-ref>:60,6/39,4</entry>
+<entry>21,2<ce:hsp sp="0.25" />%</entry>
+</row>
+<row><entry>Ac<ce:inf>6</ce:inf></entry>
+<entry>m&#x00E9;thanol</entry>
+<entry>20<ce:hsp sp="0.25" />&#x00B0;C</entry>
+<entry>NaBH<ce:inf>4</ce:inf></entry>
+<entry>RR/RS<ce:cross-ref refid="TBLFN7"><ce:sup>*</ce:sup></ce:cross-ref>:73,3/26,7</entry>
+<entry>46,6<ce:hsp sp="0.25" />%</entry>
+</row>
+<row><entry>Ac<ce:inf>6</ce:inf></entry>
+<entry>m&#x00E9;thanol</entry>
+<entry>&#x2212;70<ce:hsp sp="0.25" />&#x00B0;C</entry>
+<entry>NaBH<ce:inf>4</ce:inf></entry>
+<entry>SS/SR<ce:cross-ref refid="TBLFN7"><ce:sup>*</ce:sup></ce:cross-ref>:74,0/26,0</entry>
+<entry>48<ce:hsp sp="0.25" />%</entry>
+</row>
+<row><entry>Ac<ce:inf>6</ce:inf></entry>
+<entry>m&#x00E9;thanol</entry>
+<entry>20<ce:hsp sp="0.25" />&#x00B0;C</entry>
+<entry>NaBH<ce:inf>3</ce:inf>CN</entry>
+<entry>RR/RS<ce:cross-ref refid="TBLFN7"><ce:sup>*</ce:sup></ce:cross-ref>:76,3/23,7</entry>
+<entry>52,6<ce:hsp sp="0.25" />%</entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN7">
+<ce:label>*</ce:label>
+<ce:note-para>Diast&#x00E9;r&#x00E9;oisom&#x00E8;re premier &#x00E9;lu&#x00E9;.</ce:note-para></ce:table-footnote></ce:table></ce:floats>
+<head>
+<ce:dochead><ce:textfn>Synth&#x00E8;se organique et organom&#x00E9;tallique<ce:hsp sp="0.25" />/<ce:hsp sp="0.25" />Organic and organometallic synthesis</ce:textfn></ce:dochead>
+<ce:title>Synth&#x00E8;se d'imines optiquement pures par la technique micro-onde et application &#x00E0; la pr&#x00E9;paration de nouvelles amines secondaires</ce:title>
+<ce:presented>Pr&#x00E9;sent&#x00E9; par Fran&#x00E7;ois Mathey</ce:presented>
+<ce:author-group>
+<ce:author>
+<ce:given-name>Touati</ce:given-name>
+<ce:surname>Ridha</ce:surname>
+<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>B&#x00E9;chir Ben</ce:given-name>
+<ce:surname>Hassine</ce:surname>
+<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref><ce:cross-ref refid="CORR1">*</ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Jean Pierre</ce:given-name>
+<ce:surname>Gen&#x00EA;t</ce:surname>
+<ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:affiliation id="AFF1"><ce:label>a</ce:label><ce:textfn>Laboratoire de synth&#x00E8;se organique et photochimie, facult&#x00E9; des sciences de Monastir, av. de l'environnement, 5000 Monastir, Tunisie</ce:textfn></ce:affiliation>
+<ce:affiliation id="AFF2"><ce:label>b</ce:label><ce:textfn>Laboratoire de synth&#x00E8;se s&#x00E9;lective organique et produits naturels, UMR CNRS 7573, ENSCP, 11, rue Pierre-et-Marie-Curie, 75231 Paris cedex 05, France</ce:textfn></ce:affiliation>
+<ce:correspondence id="CORR1">
+<ce:label>*</ce:label><ce:text>Correspondance et tir&#x00E9;s &#x00E0; part.</ce:text></ce:correspondence></ce:author-group>
+<ce:date-received day="26" month="8" year="1999" />
+<ce:date-accepted day="29" month="10" year="1999" />
+<ce:abstract xml:lang="en">
+<ce:section-title>Abstract</ce:section-title><ce:abstract-sec>
+<ce:simple-para><ce:bold>Synthesis of optically pure imines using microwave activation and application to the preparation of new secondary amines.</ce:bold> In this work we report the first synthesis of imines by activation with microwaves. We have observed that diastereofacial selectivity in the reduction of imines derived from (R)-1-cyclohexylethylamine depends on: solvent, temperature, hydride reagent and absolute configuration of the corresponding imine. &#x00A9; 2000 Acad&#x00E9;mie des sciences<ce:hsp sp="0.25" />/<ce:hsp sp="0.25" />&#x00C9;ditions scientifiques et m&#x00E9;dicales Elsevier SAS<ce:vsp sp="1" /><ce:vsp sp="1" /><ce:bold>microwaves / imines / secondary amines / selectivity / reduction</ce:bold></ce:simple-para></ce:abstract-sec></ce:abstract>
+<ce:abstract>
+<ce:section-title>R&#x00E9;sum&#x00E9;</ce:section-title><ce:abstract-sec>
+<ce:simple-para>Au cours de ce travail, nous avons r&#x00E9;alis&#x00E9; la synth&#x00E8;se d'une s&#x00E9;rie d'imines en utilisant le chauffage par micro-ondes. Nous avons observ&#x00E9; que la r&#x00E9;duction diast&#x00E9;r&#x00E9;os&#x00E9;lective des imines qui d&#x00E9;rivent de la (R)-1-cyclohexyl&#x00E9;thylamine d&#x00E9;pend de la nature du solvant, de la temp&#x00E9;rature, de l'agent de r&#x00E9;duction et de la configuration absolue de l'imine de d&#x00E9;part.</ce:simple-para></ce:abstract-sec></ce:abstract>
+<ce:keywords class="keyword">
+<ce:section-title>Mots-cl&#x00E9;</ce:section-title>
+<ce:keyword><ce:text>micro-ondes</ce:text></ce:keyword>
+<ce:keyword><ce:text>imines</ce:text></ce:keyword>
+<ce:keyword><ce:text>amines secondaires</ce:text></ce:keyword>
+<ce:keyword><ce:text>s&#x00E9;lectivit&#x00E9;</ce:text></ce:keyword>
+<ce:keyword><ce:text>r&#x00E9;duction</ce:text></ce:keyword></ce:keywords></head>
+<body><ce:sections>
+<ce:section>
+<ce:label>1</ce:label>
+<ce:section-title>Introduction</ce:section-title>
+<ce:para>Les amines secondaires optiquement pures sont d'une grande importance dans le domaine de la synth&#x00E8;se organique <ce:cross-ref refid="BIB1">[1]</ce:cross-ref>. En effet, elles peuvent &#x00EA;tre utilis&#x00E9;es, soit comme agents de r&#x00E9;solution <ce:cross-refs refid="BIB2 BIB3">[2,3]</ce:cross-refs>, soit comme interm&#x00E9;diaires pour la pr&#x00E9;paration de substances biologiquement actives <ce:cross-refs refid="BIB4 BIB5">[4,5]</ce:cross-refs> ou comme auxiliaires chiraux pour la synth&#x00E8;se asym&#x00E9;trique <ce:cross-refs refid="BIB6 BIB7">[6,7]</ce:cross-refs>.</ce:para>
+<ce:para>Au cours de ce travail, nous avons effectu&#x00E9; la synth&#x00E8;se d'une s&#x00E9;rie d'amines secondaires optiquement pures &#x00E0; partir des imines correspondantes. Rappelons qu'on acc&#x00E8;de g&#x00E9;n&#x00E9;ralement aux imines par condensation des amines primaires avec des ald&#x00E9;hydes ou des c&#x00E9;tones<ce:hsp sp="0.25" />; les &#x00E9;tudes cin&#x00E9;tiques sont en accord avec un m&#x00E9;canisme en deux &#x00E9;tapes <ce:cross-ref refid="BIB8">[8]</ce:cross-ref> (<ce:cross-ref refid="SCH1"><ce:italic>sch&#x00E9;ma 1</ce:italic></ce:cross-ref><ce:float-anchor refid="SCH1" />).</ce:para>
+<ce:para>L'&#x00E9;quilibre est d&#x00E9;plac&#x00E9; dans le sens de la formation de l'imine par &#x00E9;limination de l'eau, qui se forme, soit par distillation az&#x00E9;otropique <ce:cross-refs refid="BIB9 BIB10">[9,10]</ce:cross-refs>, soit en utilisant des dessiccants tels que le sulfate de magn&#x00E9;sium anhydre, les tamis mol&#x00E9;culaires (4 &#x00C5;) <ce:cross-refs refid="BIB11 BIB12">[11,12]</ce:cross-refs>, le t&#x00E9;trachlorure de titane en pr&#x00E9;sence de tri&#x00E9;thylamine <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>, le chlorure de zinc <ce:cross-ref refid="BIB13">[13]</ce:cross-ref>, des catalyseurs complexes <ce:cross-ref refid="BIB14">[14]</ce:cross-ref>, etc.</ce:para>
+<ce:para>Toutes ces condensations ont &#x00E9;t&#x00E9; r&#x00E9;alis&#x00E9;es dans un solvant organique, alors que d'autres condensations sur support solide (alumine) en milieu sec ont &#x00E9;t&#x00E9; d&#x00E9;crites dans la litt&#x00E9;rature <ce:cross-ref refid="BIB15">[15]</ce:cross-ref>.</ce:para></ce:section>
+<ce:section>
+<ce:label>2</ce:label>
+<ce:section-title>Choix de la m&#x00E9;thode de pr&#x00E9;paration des <ce:italic>N</ce:italic>-arylidenearylamines et des <ce:italic>N</ce:italic>-arylidenealkylamines</ce:section-title>
+<ce:para>Bien que les m&#x00E9;thodes signal&#x00E9;es pr&#x00E9;c&#x00E9;demment aient permis d'obtenir des imines avec de bons rendements chimiques, elles pr&#x00E9;sentent n&#x00E9;anmoins certains inconv&#x00E9;nients, dus notamment:<ce:list>
+<ce:list-item>
+
+<ce:para>&#x2013;<ce:hsp sp="0.25" />&#x00E0; l'utilisation de solvants toxiques (benz&#x00E8;ne, tolu&#x00E8;ne&#x2026;)<ce:hsp sp="0.25" />;</ce:para></ce:list-item>
+
+<ce:list-item>
+
+<ce:para>&#x2013;<ce:hsp sp="0.25" />aux temps de r&#x00E9;action trop longs, g&#x00E9;n&#x00E9;ralement compris entre 24<ce:hsp sp="0.25" />h et une semaine <ce:cross-ref refid="BIB10">[10]</ce:cross-ref><ce:hsp sp="0.25" />;</ce:para></ce:list-item>
+
+<ce:list-item>
+
+<ce:para>&#x2013;<ce:hsp sp="0.25" />aux &#x00E9;tapes multiples de lavage et de filtration.</ce:para></ce:list-item>
+</ce:list></ce:para>
+<ce:para>Afin d'&#x00E9;courter les temps des r&#x00E9;actions et d'op&#x00E9;rer dans de meilleures conditions, nous avons opt&#x00E9; pour l'utilisation des micro-ondes comme source d'&#x00E9;nergie. En effet, cette technique est largement appliqu&#x00E9;e dans le domaine de la chimie organique, en synth&#x00E8;se inorganique, en g&#x00E9;ochimie et en pharmacie (marquage des produits) <ce:cross-ref refid="BIB16">[16]</ce:cross-ref>, etc.</ce:para>
+<ce:para>Ce mode de chauffage peut &#x00EA;tre appliqu&#x00E9;, soit &#x00E0; des r&#x00E9;actions lentes &#x00E0; niveau thermique &#x00E9;lev&#x00E9;, soit pour d&#x00E9;placer un &#x00E9;quilibre chimique par &#x00E9;vaporation des substances polaires et volatiles, ce qui est le cas de notre travail (<ce:cross-ref refid="SCH2"><ce:italic>sch&#x00E9;ma 2</ce:italic></ce:cross-ref><ce:float-anchor refid="SCH2" />).</ce:para>
+<ce:para>&#x00C0; titre d'exemple, nous citons deux cas caract&#x00E9;ristiques de synth&#x00E8;se d'imines (<ce:cross-refs refid="SCH3 SCH4"><ce:italic>sch&#x00E9;mas 3</ce:italic> et <ce:italic>4</ce:italic></ce:cross-refs><ce:float-anchor refid="SCH3" /><ce:float-anchor refid="SCH4" />)<ce:hsp sp="0.25" />:<display><ce:table colsep="0" rowsep="0" frame="topbot"><tgroup cols="2"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<tbody><row rowsep="1"><entry>M&#x00E9;thode classique</entry>
+<entry>distillation az&#x00E9;otropique du benz&#x00E8;ne 10<ce:hsp sp="0.25" />h<ce:hsp sp="0.25" />/62<ce:hsp sp="0.25" />% / (atmosph&#x00E8;re d'argon)</entry>
+</row>
+<row rowsep="1"><entry>Chauffage classique</entry>
+<entry>800<ce:hsp sp="0.25" />&#x00B0;C / 10<ce:hsp sp="0.25" />h / 50<ce:hsp sp="0.25" />% / sans solvant</entry>
+</row>
+<row rowsep="1"><entry>Micro-ondes</entry>
+<entry>400<ce:hsp sp="0.25" />W / 3<ce:hsp sp="0.25" />min / 70<ce:hsp sp="0.25" />% / sans solvant</entry>
+</row>
+<row rowsep="1"><entry>M&#x00E9;thode classique</entry>
+<entry>tamis mol&#x00E9;culaire (4<ce:hsp sp="0.25" />&#x00C5;) / 24<ce:hsp sp="0.25" />h / 59<ce:hsp sp="0.25" />%</entry>
+</row>
+<row rowsep="1"><entry>Chauffage classique</entry>
+<entry>1<ce:hsp sp="0.25" />040<ce:hsp sp="0.25" />&#x00B0;C / 2<ce:hsp sp="0.25" />h / 64<ce:hsp sp="0.25" />% / sans solvant</entry>
+</row>
+<row><entry>Micro-ondes</entry>
+<entry>400<ce:hsp sp="0.25" />W / 2<ce:hsp sp="0.25" />min / 67<ce:hsp sp="0.25" />% / sans solvant</entry>
+</row>
+</tbody></tgroup>
+</ce:table></display></ce:para>
+<ce:para>Dans le cas du deuxi&#x00E8;me exemple, nous n'avons pas observ&#x00E9; de rac&#x00E9;misation, m&#x00EA;me partielle, du centre asym&#x00E9;trique de d&#x00E9;part, ceci en comparant le pouvoir rotatoire sp&#x00E9;cifique de l'imine pr&#x00E9;par&#x00E9;e en utilisant la technique micro-ondes avec celui de l'imine pr&#x00E9;par&#x00E9;e selon la m&#x00E9;thode classique.</ce:para>
+<ce:para>Au cours de ce travail, nous avons pr&#x00E9;par&#x00E9; les imines suivantes (<ce:cross-ref refid="FIG1"><ce:italic>figure 1</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG1" />). Les rendements correspondants sont consign&#x00E9;s dans le <ce:cross-ref refid="TBL1"><ce:italic>tableau I</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL1" />.</ce:para></ce:section>
+<ce:section>
+<ce:label>3</ce:label>
+<ce:section-title>Synth&#x00E8;se &#x00E9;nantios&#x00E9;lective</ce:section-title>
+<ce:para>Nous avons pr&#x00E9;par&#x00E9; quatre amines secondaires &#x00E9;nantiom&#x00E9;riquement pures en r&#x00E9;duisant les <ce:italic>N</ce:italic>-arylid&#x00E8;ne-1-cyclohexyl&#x00E9;thylamines correspondantes optiquement pures (R) ou (S) pr&#x00E9;par&#x00E9;es ci-dessus par NaBH<ce:inf>4</ce:inf> dans le m&#x00E9;thanol (<ce:cross-ref refid="SCH5"><ce:italic>sch&#x00E9;ma 5</ce:italic></ce:cross-ref><ce:float-anchor refid="SCH5" />).</ce:para></ce:section>
+<ce:section>
+<ce:label>4</ce:label>
+<ce:section-title>Synth&#x00E8;se asym&#x00E9;trique diast&#x00E9;r&#x00E9;oselective</ce:section-title>
+<ce:para>La r&#x00E9;duction des <ce:italic>N</ce:italic>-<ce:italic>&#x03B1;</ce:italic>-m&#x00E9;thylarylid&#x00E8;ne-1-cyclohexyl&#x00E9;thylamines &#x00E9;nantiom&#x00E9;riquement pures conduit aux amines secondaires correspondantes, selon le sch&#x00E9;ma r&#x00E9;actionnel suivant (<ce:cross-ref refid="SCH6"><ce:italic>sch&#x00E9;ma 6</ce:italic></ce:cross-ref><ce:float-anchor refid="SCH6" />). Les rendements sont consign&#x00E9;s dans le <ce:cross-ref refid="TBL2"><ce:italic>tableau II</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL2" />.</ce:para>
+<ce:para>Les amines secondaires form&#x00E9;es renferment chacune deux carbones asym&#x00E9;triques<ce:hsp sp="0.25" />: un carbone, de configuration connue, existant pr&#x00E9;alablement dans l'imine de d&#x00E9;part, et un nouveau centre, cr&#x00E9;&#x00E9; au cours de la r&#x00E9;action. Par cons&#x00E9;quent, on a formation de deux diast&#x00E9;r&#x00E9;oisom&#x00E8;res dans des proportions variables. La diast&#x00E9;r&#x00E9;os&#x00E9;lectivit&#x00E9; observ&#x00E9;e au cours de ces r&#x00E9;actions est probablement due au fait que le centre de chiralit&#x00E9; initialement pr&#x00E9;sent dans la mol&#x00E9;cule d'imine est relativement proche du site r&#x00E9;actionnel.</ce:para>
+<ce:para>L'examen de la litt&#x00E9;rature <ce:cross-refs refid="BIB17 BIB18">[17,18]</ce:cross-refs> montre que l'attaque nucl&#x00E9;ophile s'effectue pr&#x00E9;f&#x00E9;rentiellement du c&#x00F4;t&#x00E9; le moins encombr&#x00E9;. En appliquant la r&#x00E8;gle de Cram <ce:cross-ref refid="BIB19">[19]</ce:cross-ref>, nous avons constat&#x00E9; que lorsque la configuration absolue de l'imine de d&#x00E9;part est (R), le diast&#x00E9;r&#x00E9;oisom&#x00E8;re majoritaire aura la configuration (R, R) <ce:cross-ref refid="BIB11">[11]</ce:cross-ref>.</ce:para>
+<ce:para>Nous avons tent&#x00E9; avec succ&#x00E8;s la s&#x00E9;paration des amines diast&#x00E9;r&#x00E9;oisom&#x00E8;res par chromatographie en phase gazeuse (CPG) coupl&#x00E9;e &#x00E0; la spectrom&#x00E9;trie de masse (voir partie exp&#x00E9;rimentale).</ce:para>
+<ce:para>Nous remarquons chaque fois la pr&#x00E9;sence de deux pics distincts, correspondant aux deux diast&#x00E9;r&#x00E9;oisom&#x00E8;res.</ce:para>
+<ce:para>Le spectre de masse du diast&#x00E9;r&#x00E9;oisom&#x00E8;re premier &#x00E9;lu&#x00E9; confirme bien la structure. Il est identique &#x00E0; celui du second diast&#x00E9;r&#x00E9;oisom&#x00E8;re (deuxi&#x00E8;me &#x00E9;lu&#x00E9;).</ce:para>
+<ce:para>Nous remarquons dans tous les cas que le diast&#x00E9;r&#x00E9;oisom&#x00E8;re majoritaire est &#x00E9;lu&#x00E9; en deuxi&#x00E8;me position en CPG (<ce:cross-ref refid="FIG2"><ce:italic>figure2</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG2" />).</ce:para>
+<ce:para>Les r&#x00E9;sultats de la s&#x00E9;paration sont report&#x00E9;s dans le <ce:cross-ref refid="TBL3"><ce:italic>tableau III</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL3" />. Toutes les amines secondaires chirales mises en &#x0153;uvre donnent d'excellentes r&#x00E9;solutions (<ce:italic>Rs</ce:italic>), ce qui montre que ces amines peuvent &#x00EA;tre utilis&#x00E9;es comme agents de d&#x00E9;rivatisation chiraux, comme ce fut le cas pour la 1-ph&#x00E9;nyl&#x00E9;thylamine pour la d&#x00E9;termination des puret&#x00E9;s optiques, ainsi que pour la d&#x00E9;termination des configurations absolues des acides, des acides amin&#x00E9;s, etc.<ce:vsp sp="1" /><ce:vsp sp="1" /><ce:bold>Optimisation de la synth&#x00E8;se diast&#x00E9;r&#x00E9;os&#x00E9;lective</ce:bold><ce:vsp sp="1" /><ce:vsp sp="1" /></ce:para>
+<ce:para>Comme suite logique des travaux r&#x00E9;alis&#x00E9;s dans notre laboratoire <ce:cross-ref refid="BIB20">[20]</ce:cross-ref>, qui montrent l'influence des conditions exp&#x00E9;rimentales sur la variation de l'exc&#x00E8;s diast&#x00E9;r&#x00E9;oisom&#x00E9;rique, nous avons fait varier les conditions exp&#x00E9;rimentales (solvant, temp&#x00E9;rature et agent de r&#x00E9;duction), afin de trouver les conditions exp&#x00E9;rimentales qui conduisent &#x00E0; l'exc&#x00E8;s diast&#x00E9;r&#x00E9;oisom&#x00E9;rique le plus &#x00E9;lev&#x00E9; (<ce:cross-ref refid="TBL4"><ce:italic>tableau IV</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL4" />).<ce:vsp sp="1" /><ce:vsp sp="1" /><ce:italic><ce:bold>Influence du solvant</ce:bold></ce:italic><ce:vsp sp="1" /><ce:vsp sp="1" /></ce:para>
+<ce:para>En utilisant le m&#x00E9;thanol &#x00E0; la place de l'&#x00E9;thanol, tout en conservant la m&#x00EA;me temp&#x00E9;rature et le m&#x00EA;me agent de r&#x00E9;duction, on remarque que l'exc&#x00E8;s diast&#x00E9;r&#x00E9;oisom&#x00E9;rique passe de 21,2<ce:hsp sp="0.25" />% &#x00E0; 46,6<ce:hsp sp="0.25" />%. C'est pour cela qu'on a utilis&#x00E9; le m&#x00E9;thanol comme solvant dans la suite du travail.<ce:vsp sp="1" /><ce:vsp sp="1" /><ce:italic><ce:bold>Influence de la temp&#x00E9;rature</ce:bold></ce:italic><ce:vsp sp="1" /><ce:vsp sp="1" /></ce:para>
+<ce:para>Lorsqu'on abaisse la temp&#x00E9;rature de +20&#x00B0;C &#x00E0; &#x2212;70&#x00B0;C, l'exc&#x00E8;s diast&#x00E9;r&#x00E9;oisom&#x00E9;rique passe de 46,6 &#x00E0; 48<ce:hsp sp="0.25" />%. Cette variation est peu significative.<ce:vsp sp="1" /><ce:vsp sp="1" /><ce:italic><ce:bold>Influence de l'agent r&#x00E9;ducteur</ce:bold></ce:italic><ce:vsp sp="1" /><ce:vsp sp="1" /></ce:para>
+<ce:para>L'utilisation du cyanoborohydrure de sodium (NaBH<ce:inf>3</ce:inf>CN) comme agent de r&#x00E9;duction augmente la diast&#x00E9;r&#x00E9;os&#x00E9;lectivit&#x00E9; de la r&#x00E9;action<ce:hsp sp="0.25" />; on passe de 46 &#x00E0; 52,6%. Ceci est d&#x00FB; probablement &#x00E0; l'encombrement st&#x00E9;rique du radical cyano durant le processus de r&#x00E9;duction.</ce:para></ce:section>
+<ce:section>
+<ce:label>5</ce:label>
+<ce:section-title>Conclusion</ce:section-title>
+<ce:para>Au cours de ce travail, nous avons utilis&#x00E9; le chauffage par micro-ondes comme source d&#x2019;&#x00E9;nergie pour pr&#x00E9;parer une s&#x00E9;rie d'imine et des imines optiquement pures. Cette technique a permis d'acc&#x00E9;der aux compos&#x00E9;s d&#x00E9;sir&#x00E9;s, avec des rendements comparables &#x00E0; ceux des m&#x00E9;thodes classiques, mais en des temps beaucoup plus courts. La r&#x00E9;duction de ces imines a permis de pr&#x00E9;parer avec de bons rendements chimiques les amines secondaires correspondantes, optiquement pures. Les amines secondaires obtenues sont des produits nouveaux, qui vont &#x00EA;tre valoris&#x00E9;es comme agents de r&#x00E9;solution ou comme auxiliaires chiraux pour la synth&#x00E8;se asym&#x00E9;trique. Nous avons r&#x00E9;alis&#x00E9; une optimisation des conditions exp&#x00E9;rimentales (temp&#x00E9;rature, solvant et agent de r&#x00E9;duction), afin d'aboutir aux meilleurs rendements.</ce:para></ce:section>
+<ce:section>
+<ce:label>6</ce:label>
+<ce:section-title>Partie exp&#x00E9;rimentale</ce:section-title>
+<ce:para>Les points de fusion ont &#x00E9;t&#x00E9; d&#x00E9;termin&#x00E9;s sur un appareil B&#x00FC;chi et n'ont pas &#x00E9;t&#x00E9; corrig&#x00E9;s.</ce:para>
+<ce:para>Les spectres de masse ont &#x00E9;t&#x00E9; r&#x00E9;alis&#x00E9;s en impact &#x00E9;lectronique, sur un appareil Hewlett Packard 5792, coupl&#x00E9; &#x00E0; un chromatographe en phase gazeuse HP-5890A, constitu&#x00E9; d'une colonne capillaire de longueur 25<ce:hsp sp="0.25" />m, remplie d'une phase stationnaire<ce:hsp sp="0.25" />: 5<ce:hsp sp="0.25" />% diph&#x00E9;nyl/95<ce:hsp sp="0.25" />% dim&#x00E9;thylpolysiloxane. <ce:italic>T</ce:italic><ce:inf>injecteur</ce:inf>=250&#x00B0;C<ce:hsp sp="0.25" />; <ce:italic>T</ce:italic><ce:inf>d&#x00E9;tecteur</ce:inf>=280<ce:hsp sp="0.25" />&#x00B0;C<ce:hsp sp="0.25" />; 120<ce:hsp sp="0.25" />&#x00B0;C (2<ce:hsp sp="0.25" />min) &#x2192; (5<ce:hsp sp="0.25" />&#x00B0;C&#x00B7;min<ce:sup>&#x2013;1</ce:sup>) &#x2192; 260<ce:hsp sp="0.25" />&#x00B0;C (15<ce:hsp sp="0.25" />min).</ce:para>
+<ce:para>Le four micro-onde utilis&#x00E9; est un four domestique Rowenta MW<ce:hsp sp="0.25" />76, de puissance restitu&#x00E9;e 750<ce:hsp sp="0.25" />W.</ce:para>
+<ce:para>Les spectres de r&#x00E9;sonance magn&#x00E9;tique nucl&#x00E9;aire ont &#x00E9;t&#x00E9; r&#x00E9;alis&#x00E9;s en solution dans le chloroforme deut&#x00E9;ri&#x00E9; (CDCl<ce:inf>3</ce:inf>), soit sur un appareil Bruker Spectroscopin AC 250 (250<ce:hsp sp="0.25" />MHz), soit sur un appareil Hitachi Perkin Elmer R 24 B (60<ce:hsp sp="0.25" />MHz). Le standard interne utilis&#x00E9; est le t&#x00E9;tram&#x00E9;thylsilane (TMS) et les d&#x00E9;placements chimiques <ce:italic>&#x03B4;</ce:italic> (ppm) sont positifs vers les champs bas par rapport au TMS. Les spectres infrarouges ont &#x00E9;t&#x00E9; r&#x00E9;alis&#x00E9;s &#x00E0; l'aide d'un appareil Perkin Elmer 197 et d'un appareil Biorad &#x00E0; transform&#x00E9;e de Fourier FTS 6000.</ce:para>
+<ce:section>
+<ce:label>6.1</ce:label>
+<ce:section-title>Synth&#x00E8;se des imines</ce:section-title>
+<ce:section>
+<ce:label>6.1.1</ce:label>
+<ce:section-title>Utilisation des micro-ondes</ce:section-title>
+<ce:para>Dans un r&#x00E9;acteur cylindrique en Pyrex adapt&#x00E9; au r&#x00E9;acteur micro-ondes, on introduit 20<ce:hsp sp="0.25" />mmol d'ald&#x00E9;hyde fra&#x0131;&#x0302;chement purifi&#x00E9; avec 25<ce:hsp sp="0.25" />mmol d'amine sans solvant.</ce:para>
+<ce:para>Le m&#x00E9;lange r&#x00E9;actionnel est homog&#x00E9;n&#x00E9;is&#x00E9;, puis irradi&#x00E9; sous micro-ondes, avec agitation m&#x00E9;canique durant le temps requis (2 &#x00E0; 3 min).</ce:para></ce:section>
+<ce:section>
+<ce:label>6.1.2</ce:label>
+<ce:section-title>M&#x00E9;thode classique</ce:section-title>
+<ce:para>On place dans un ballon monocol 20<ce:hsp sp="0.25" />mmol de la c&#x00E9;tone et 25<ce:hsp sp="0.25" />mmol de (R)-1-cyclohexyl&#x00E9;thylamine, ainsi que 0,5<ce:hsp sp="0.25" />mmol d'acide <ce:italic>p</ce:italic>-tolu&#x00E8;nesulfonique.</ce:para>
+<ce:para>On ajoute ensuite 100<ce:hsp sp="0.25" />mL de tolu&#x00E8;ne, puis on adapte sur ce ballon l'appareil de Deanstark et un r&#x00E9;frig&#x00E9;rant. On chauffe au reflux (pendant 5 &#x00E0; 8<ce:hsp sp="0.25" />h), jusqu'&#x00E0; ce que la quantit&#x00E9; th&#x00E9;orique d'eau soit recueillie dans le pi&#x00E8;ge (ou jusqu&#x2019;&#x00E0; disparition des r&#x00E9;actifs par CCM). On laisse refroidir, puis on chasse le tolu&#x00E8;ne &#x00E0; l'&#x00E9;vaporateur rotatif.</ce:para>
+<ce:para><ce:bold>1&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-benzylid&#x00E8;ne-1-naphtylamine<ce:hsp sp="0.25" />: Ia</ce:bold><ce:inf>1</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 90<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux marrons<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=73&#x2013;74<ce:hsp sp="0.25" />&#x00B0;C; (hexane/ac&#x00E9;tate d'&#x00E9;thyle 80/20)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)=8,43 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 6,9&#x2013;8,36 (m, 12H, aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />626<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf> <ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />576.</ce:para>
+<ce:para><ce:bold>2&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-2-nitrobenzylid&#x00E8;ne-1-naphtylamine<ce:hsp sp="0.25" />: Ia</ce:bold><ce:inf>2</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 73<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=100<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;thanol); RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>): <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,84 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 7,05&#x2013;8,69 (m, 11H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />630<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf> <ce:inf>arom</ce:inf>=1 595.</ce:para>
+<ce:para><ce:bold>3&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-3-nitrobenzylid&#x00E8;ne-1-naphtylamine: Ia</ce:bold><ce:inf><ce:bold>3</ce:bold></ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 77<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=115<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;thanol)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,62 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 7,03&#x2013;8,53 (m, 11H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: &#x03BD;<ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />630<ce:hsp sp="0.25" />; &#x03BD;<ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />580.</ce:para>
+<ce:para><ce:bold>4&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-nitrobenzylid&#x00E8;ne-1-naphtylamine<ce:hsp sp="0.25" />: Ia</ce:bold><ce:inf>4</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 86<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=160<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;thanol)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)=8,53 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 7,01&#x2013;8,54 (m, 11H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>) : <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />535<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />605.</ce:para>
+<ce:para><ce:bold>5&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-chlorobenzylid&#x00E8;ne-1-naphtylamine<ce:hsp sp="0.25" />: Ia</ce:bold><ce:inf>5</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 88<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=105<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;thanol)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,46 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 6,9&#x2013;8,33 (m, 11H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: &#x03BD;<ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />640<ce:hsp sp="0.25" />; &#x03BD;<ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />600. SM<ce:hsp sp="0.25" />: C<ce:inf>17</ce:inf>H<ce:inf>12</ce:inf>NCl<ce:hsp sp="0.25" />; PM=265<ce:hsp sp="0.25" />; obs <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=265 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=100<ce:hsp sp="0.25" />%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=127 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>7</ce:inf>H<ce:inf>5</ce:inf>NCl=72<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>6&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-benzylid&#x00E8;neph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ib</ce:bold><ce:inf>1</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 82<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux blancs<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=51&#x2013;52<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,42 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 7,13&#x2013;7,96 (m, 12H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />630<ce:hsp sp="0.25" />; &#x03BD;<ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />585.</ce:para>
+<ce:para><ce:bold>7&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-2-nitrobenzylid&#x00E8;neph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ib</ce:bold><ce:inf>2</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 84<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=45<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,9 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 7,16&#x2013;8,36 (m, 9H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />630<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610.</ce:para>
+<ce:para><ce:bold>8&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-3-nitrobenzylid&#x00E8;neph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ib</ce:bold><ce:inf>3</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 75<ce:hsp sp="0.25" />%; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=82<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,66 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 7,06&#x2013;8,36 (m, 9H aromatiques); IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />630<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C<ce:hsp sp="0.25" />arom</ce:inf>=1<ce:hsp sp="0.25" />580<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>13</ce:inf>H<ce:inf>10</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=226<ce:hsp sp="0.25" />; obs 226 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=15,53<ce:hsp sp="0.25" />%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=77 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>7</ce:inf>H<ce:inf>5</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />: 100<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>9&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-nitrobenzylid&#x00E8;neph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ib</ce:bold><ce:inf>4</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 83<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=88<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,5 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 7,06&#x2013;7,53 (m, 9H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />635<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C<ce:hsp sp="0.25" />arom</ce:inf>=1<ce:hsp sp="0.25" />590<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>13</ce:inf>H<ce:inf>10</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=226<ce:hsp sp="0.25" />; obs 226 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=100<ce:hsp sp="0.25" />%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=77<ce:hsp sp="0.25" />(<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=C<ce:inf>7</ce:inf>H<ce:inf>5</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; 59<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>10&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-chlorobenzylid&#x00E8;neph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ib</ce:bold><ce:inf>5</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 79<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=59<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,28 (s, 1H, &#xE5F8;CH&#xE605;N&#xE5F8;)<ce:hsp sp="0.25" />; 6,85&#x2013;7,77 (m, 9H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />630<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />585.</ce:para>
+<ce:para><ce:bold>11&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-m&#x00E9;thylbenzylid&#x00E8;nephenylamine<ce:hsp sp="0.25" />: Ib</ce:bold><ce:inf>6</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 64<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=40&#x00B0;C (pentane)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=2,2 (s, 3H, CH<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; 6,9&#x2013;7,3 (m, 5H); 7,42&#x2013;8,1 (m, 5H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />635<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf><ce:hsp sp="0.25" />=1<ce:hsp sp="0.25" />600.</ce:para>
+<ce:para><ce:bold>12&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-m&#x00E9;thyl-3-nitrobenzylid&#x00E8;nephenylamine<ce:hsp sp="0.25" />: Ib</ce:bold><ce:inf>7</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 70<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=88<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;ther de p&#x00E9;trole/ac&#x00E9;tate d'&#x00E9;thyle<ce:hsp sp="0.25" />; 90/10)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)<ce:hsp sp="0.25" />: 2,3 (s, 3H, CH<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; 6,75&#x2013;8,8 (m, 10H)<ce:hsp sp="0.25" />; RMN <ce:sup loc="pre">13</ce:sup>C (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=(17,34, CH<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; (119,2<ce:hsp sp="0.25" />; 122,2<ce:hsp sp="0.25" />; 123,8<ce:hsp sp="0.25" />; 124,9<ce:hsp sp="0.25" />; 129,12<ce:hsp sp="0.25" />; 129,41<ce:hsp sp="0.25" />; 133<ce:hsp sp="0.25" />; 141,1<ce:hsp sp="0.25" />; 148,47<ce:hsp sp="0.25" />; C<ce:inf>arom</ce:inf>)<ce:hsp sp="0.25" />; (150,83<ce:hsp sp="0.25" />; C&#xE605;N)<ce:hsp sp="0.25" />; (163,23<ce:hsp sp="0.25" />; C&#xE5F8;NO<ce:inf>2</ce:inf>) IR (cm<ce:sup>&#x2013;1</ce:sup>): <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />640<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610.</ce:para>
+<ce:para><ce:bold>13&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-m&#x00E9;thyl-4-nitrobenzylid&#x00E8;nephenylamine<ce:hsp sp="0.25" />: Ib</ce:bold><ce:inf>8</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 66<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=91&#x2013;92<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;ther de p&#x00E9;trole<ce:hsp sp="0.25" />/<ce:hsp sp="0.25" />ac&#x00E9;tate d'&#x00E9;thyle<ce:hsp sp="0.25" />; 80/20)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=2,66 (s, 3H, CH<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; 6,73&#x2013;7,4 (m, 5H)<ce:hsp sp="0.25" />; 8&#x2013;8,36 (m, 5H); IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />640<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610.</ce:para>
+<ce:para><ce:bold>14&#x00B0;) (R)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-3-nitrobenzylid&#x00E8;ne-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ic</ce:bold><ce:inf>1</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 60<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,32 (s, 1H, CH&#xE605;N)<ce:hsp sp="0.25" />; 7,82&#x2013;8,28 (m, 4H aromatiques)<ce:hsp sp="0.25" />; 1,05&#x2013;2,2 (m, 15H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />650<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C<ce:hsp sp="0.25" />arom</ce:inf>=1<ce:hsp sp="0.25" />615<ce:hsp sp="0.25" />; [<ce:italic>&#x03B1;</ce:italic>]<ce:inf>D</ce:inf>=+91&#x00B0; (C=1; CHCl<ce:inf>3</ce:inf>).</ce:para>
+<ce:para><ce:bold>15&#x00B0;) (R)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-nitrobenzylid&#x00E8;ne-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ic</ce:bold><ce:inf>2</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 64<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=35&#x2013;37<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;thanol/eau<ce:hsp sp="0.25" />; 80/20)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,25 (s, 1H, CH&#xE605;N)<ce:hsp sp="0.25" />; 7,8&#x2013;8,23 (m, 4H)<ce:hsp sp="0.25" />; 0,9&#x2013;2,1 (m, 15H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />650<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610<ce:hsp sp="0.25" />; [<ce:italic>&#x03B1;</ce:italic>]<ce:inf>D</ce:inf>=&#x2212;46&#x00B0;, (C=1<ce:hsp sp="0.25" />; CHCl<ce:inf>3</ce:inf>).</ce:para>
+<ce:para><ce:bold>16&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-nitrobenzylid&#x00E8;ne-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ic</ce:bold><ce:inf>3</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 67<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=35&#x2013;37<ce:hsp sp="0.25" />&#x00B0;C (&#x00E9;thanol/eau<ce:hsp sp="0.25" />; 80/20)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=8,25 (s, 1H, CH&#xE605;N)<ce:hsp sp="0.25" />; 7,8&#x2013;8,23 (m, 4H)<ce:hsp sp="0.25" />; 0,9&#x2013;2,1 (m, 15H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />650<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>15</ce:inf>H<ce:inf>20</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=260<ce:hsp sp="0.25" />; obs 260 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=3,12<ce:hsp sp="0.25" />%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=177 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>6</ce:inf>H<ce:inf>11</ce:inf><ce:hsp sp="0.25" />=100<ce:hsp sp="0.25" />%); [<ce:italic>&#x03B1;</ce:italic>]<ce:inf>D</ce:inf>=+43&#x00B0;(C=1<ce:hsp sp="0.25" />; CHCl<ce:inf>3</ce:inf>).</ce:para>
+<ce:para><ce:bold>17&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-3-nitrobenzylid&#x00E8;ne-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ic</ce:bold><ce:inf>8</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 61<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)=8,32 (s, 1H, CH&#xE605;N)<ce:hsp sp="0.25" />; 7,82&#x2013;8,28 (m, 4H arom)<ce:hsp sp="0.25" />; 1,05&#x2013;2,2 (m, 15H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />650<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />615; [<ce:italic>&#x03B1;</ce:italic>]<ce:inf>D</ce:inf>=<ce:hsp sp="0.25" />&#x2212;82&#x00B0; (C=1<ce:hsp sp="0.25" />; CHCl<ce:inf>3</ce:inf>).</ce:para>
+<ce:para><ce:bold>18&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-m&#x00E9;thyl-2-nitrobenzylid&#x00E8;ne-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ic</ce:bold><ce:inf>4.</ce:inf> Rdt<ce:hsp sp="0.25" />: 55<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)=2,36 (s, 3H, CH<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; 7,1&#x2013;7,9 (m, 4H arom)<ce:hsp sp="0.25" />; 0,8&#x2013;2,3 (m, 15H cyclohexyle)<ce:hsp sp="0.25" />; IR (cm<ce:sup>-1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />645<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610.</ce:para>
+<ce:para><ce:bold>19&#x00B0;) (R)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-m&#x00E9;thyl-3-nitrobenzylid&#x00E8;ne-1-cyclohexylethylamine<ce:hsp sp="0.25" />: Ic</ce:bold><ce:inf>5</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 58<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=2,48 (s, 3H, CH<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; 7,21&#x2013;8,1 (m, 4H arom)<ce:hsp sp="0.25" />; 0,7&#x2013;2,1 (m, 15H cyclohexyle)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />640<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610.</ce:para>
+<ce:para><ce:bold>20&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-m&#x00E9;thyl-3-nitrobenzylid&#x00E8;ne-1-cyclohexylethylamine<ce:hsp sp="0.25" />: Ic</ce:bold><ce:inf>6</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 56<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm) 2,48 (s, 3H, CH<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; 7,21&#x2013;8,1 (m, 4H arom)<ce:hsp sp="0.25" />; 0,7&#x2013;2,1 (m, 15H cyclohexyle)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />640<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610.</ce:para>
+<ce:para><ce:bold>21&#x00B0;) (R)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-4-nitrobenzylid&#x00E8;ne-1-cyclohexylethylamine<ce:hsp sp="0.25" />: Ic</ce:bold><ce:inf>7</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 62<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm) 2,65 (s, 3H, CH<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; 7,33&#x2013;8,2 (m, 4H arom)<ce:hsp sp="0.25" />; 0,7&#x2013;2,5 (m, 15H cyclohexyle)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;N</ce:inf>=1<ce:hsp sp="0.25" />640<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE605;C</ce:inf><ce:hsp sp="0.25" /><ce:inf>arom</ce:inf>=1<ce:hsp sp="0.25" />610.</ce:para></ce:section></ce:section>
+<ce:section>
+<ce:label>6.2</ce:label>
+<ce:section-title>Synth&#x00E8;se des amines</ce:section-title>
+<ce:para>Dans un ballon de 250<ce:hsp sp="0.25" />mL, on introduit 10<ce:hsp sp="0.25" />mmol d'imine et 50<ce:hsp sp="0.25" />mL de m&#x00E9;thanol anhydre. On laisse refroidir, puis on ajoute 20<ce:hsp sp="0.25" />mmol de borohydrure de sodium. Apr&#x00E8;s deux heures d'agitation, on ajoute 100<ce:hsp sp="0.25" />mL d'une solution satur&#x00E9;e de NaCl et on extrait deux fois avec 20<ce:hsp sp="0.25" />mL de dichlorom&#x00E9;thane. La phase organique est s&#x00E9;ch&#x00E9;e sur du sulfate de magn&#x00E9;sium anhydre. Apr&#x00E8;s filtration, le solvant est chass&#x00E9; &#x00E0; l&#x2019;&#x00E9;vaporateur rotatif et le r&#x00E9;sidu obtenu est chromatographi&#x00E9; sur colonne [SiO<ce:inf>2</ce:inf><ce:hsp sp="0.25" />/<ce:hsp sp="0.25" />hexane&#x2013;ac&#x00E9;tate d'&#x00E9;thyle (80:20)].</ce:para>
+<ce:para><ce:bold>1&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-benzyl-1-naphtylamine<ce:hsp sp="0.25" />: Aa</ce:bold><ce:inf>1</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 82<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; aiguilles grises<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=64&#x2013;65<ce:hsp sp="0.25" />&#x00B0;C; (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm) 3,9 (s, 1H)<ce:hsp sp="0.25" />; 4,41 (s, 2H)<ce:hsp sp="0.25" />; 6,5&#x2013;7,83 (m, 12H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />431<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />407.</ce:para>
+<ce:para><ce:bold>2&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-2-nitrobenzyl-1-naphtylamine<ce:hsp sp="0.25" />: Aa</ce:bold><ce:inf>2</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 61<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm) 4,03 (s, 1H)<ce:hsp sp="0.25" />; 4,52 (s, 2H); 6,56&#x2013;7,9 (m, 11H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>): <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3&#x2008;445; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />340.</ce:para>
+<ce:para><ce:bold>3&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-3-nitrobenzyl-1-naphtylamine<ce:hsp sp="0.25" />: Aa</ce:bold><ce:inf>3</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 63%; huile jaune; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)<ce:hsp sp="0.25" />: 4,11 (s, 1H)<ce:hsp sp="0.25" />; 4,48 (s, 2H); 6,53&#x2013;7,88 (m, 11H); IR (cm<ce:sup>&#x2013;1</ce:sup>): &#x03BD;<ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />450; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />340.</ce:para>
+<ce:para><ce:bold>4&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-nitrobenzyl-1-naphtylamine: Aa</ce:bold><ce:inf>4</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 70<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm) 4,1 (s, 1H)<ce:hsp sp="0.25" />; 4,47 (s, 2H)<ce:hsp sp="0.25" />; 6,51&#x2013;7,86 (m, 11H); IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />450<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />345.</ce:para>
+<ce:para><ce:bold>5&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-chlorobenzyl-1-naphtylamine<ce:hsp sp="0.25" />: Aa</ce:bold><ce:inf>5</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 83<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux gris<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=49<ce:hsp sp="0.25" />&#x00B0;C; (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=3,89 (s, 1H)<ce:hsp sp="0.25" />; 4,39 (s, 2H)<ce:hsp sp="0.25" />; 6,5&#x2013;7,78 (m,<ce:hsp sp="0.25" />11H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />460<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />340.</ce:para>
+<ce:para><ce:bold>6&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-benzylph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ab</ce:bold><ce:inf>1</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 82<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux blancs<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=37&#x2013;38&#x00B0;C<ce:hsp sp="0.25" />; (m&#x00E9;thanol)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm) 3,93 (s, 1H)<ce:hsp sp="0.25" />; 4,26 (s, 2H)<ce:hsp sp="0.25" />; 6,56&#x2013;7,33 (m, 10H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />405<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />320.</ce:para>
+<ce:para><ce:bold>7&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-2-nitrobenzylph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ab</ce:bold><ce:inf>2</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 80<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux orang&#x00E9;s<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=36<ce:hsp sp="0.25" />&#x00B0;C<ce:hsp sp="0.25" />; (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=4,43 (s, 1H)<ce:hsp sp="0.25" />; 4,6 (s, 2H)<ce:hsp sp="0.25" />; 6,53&#x2013;8,06 (m, 9H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />435<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />360<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>13</ce:inf>H<ce:inf>12</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=228; obs 228 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=38,8%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z=</ce:italic>180 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;NO<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; 100<ce:hsp sp="0.25" />%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=77 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>7</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf>H<ce:inf>7</ce:inf>=80,5<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>8&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-3-nitrobenzylph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ab</ce:bold><ce:inf>3</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 84<ce:hsp sp="0.25" />%; cristaux orang&#x00E9;s<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=82<ce:hsp sp="0.25" />&#x00B0;C<ce:hsp sp="0.25" />; (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=4,26 (s, 1H)<ce:hsp sp="0.25" />; 4,45 (s, 2H)<ce:hsp sp="0.25" />; 6,6&#x2013;8,24 (m, 9H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>): <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />420<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />350<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>13</ce:inf>H<ce:inf>12</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=228<ce:hsp sp="0.25" />; obs 228 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=88,34<ce:hsp sp="0.25" />%); <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=106 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>6</ce:inf>H<ce:inf>4</ce:inf>NO<ce:inf>2</ce:inf>=100<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>9&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-nitrobenzylph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ab</ce:bold><ce:inf>4</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 83<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux orang&#x00E9;s<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=86<ce:hsp sp="0.25" />&#x00B0;C<ce:hsp sp="0.25" />; (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=4,23 (s, 1H)<ce:hsp sp="0.25" />; 4,46 (s, 2H)<ce:hsp sp="0.25" />; 6,56&#x2013;8,21 (m, 9H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />380<ce:hsp sp="0.25" />; &#x03BD;<ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />345.</ce:para>
+<ce:para><ce:bold>10&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-chlorobenzylph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ab</ce:bold><ce:inf><ce:bold>5</ce:bold></ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 60<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; cristaux jaunes<ce:hsp sp="0.25" />; <ce:italic>P</ce:italic><ce:inf>f</ce:inf>=52<ce:hsp sp="0.25" />&#x00B0;C<ce:hsp sp="0.25" />; (&#x00E9;ther de p&#x00E9;trole)<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)=3,9 (s, 1H)<ce:hsp sp="0.25" />; 4,1(s, 2H); 6,88&#x2013;7,55 (m, 9H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />410<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf><ce:hsp sp="0.25" />=1<ce:hsp sp="0.25" />340.</ce:para>
+<ce:para><ce:bold>11&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-phen&#x00E9;thylph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ab</ce:bold><ce:inf>6</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 61<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=3,96 (s, 1H)<ce:hsp sp="0.25" />; 4,23&#x2013;4,29 (q, 1H)<ce:hsp sp="0.25" />; 1,3&#x2013;1,42 (d, 3H)<ce:hsp sp="0.25" />; 6,41&#x2013;7,37 (m, 10H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />380<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />320.</ce:para>
+<ce:para><ce:bold>12&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-(3-nitrophen&#x00E9;thyl)-ph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ab</ce:bold><ce:inf>7</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 63<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)=4,1 (s, 1H); 4,45&#x2013;4,8 (q, 1H)<ce:hsp sp="0.25" />; 1,3&#x2013;1,42 (d, 3H)<ce:hsp sp="0.25" />; 6,41&#x2013;7,37 (m, 9H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />420<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />335.</ce:para>
+<ce:para><ce:bold>13&#x00B0;)</ce:bold> <ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-(4-nitrophen&#x00E9;thyl)-ph&#x00E9;nylamine<ce:hsp sp="0.25" />: Ab</ce:bold><ce:inf>8</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 65<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; <ce:italic>&#x03B4;</ce:italic> (ppm)=4,06 (s, 1H)<ce:hsp sp="0.25" />; 4,36&#x2013;4,7 (q, 1H)<ce:hsp sp="0.25" />; 1,43&#x2013;1,5 (d, 3H)<ce:hsp sp="0.25" />; 6,33&#x2013;8,16 (m, 9H)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />420<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />330<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>14</ce:inf>H<ce:inf>14</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM<ce:hsp sp="0.25" />: 242, obs 242 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=37,86<ce:hsp sp="0.25" />%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=227 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;CH<ce:inf>3</ce:inf>=100<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>14&#x00B0;) (R)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-3-nitrobenzyl-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ac</ce:bold><ce:inf>1</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 61<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)=3,9 (s, 1H)<ce:hsp sp="0.25" />; 4,1(s, 2H)<ce:hsp sp="0.25" />; 0,9&#x2013;2,2 (m, 15 H)<ce:hsp sp="0.25" />; 7,3&#x2013;8,3 (m, 4H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />450<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />370.</ce:para>
+<ce:para><ce:bold>15&#x00B0;) (R)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-nitrobenzyl-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ac</ce:bold><ce:inf>2</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 63<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)=3,6 (s, 1H)<ce:hsp sp="0.25" />; 3,88 (s, 1H)<ce:hsp sp="0.25" />; 0,8&#x2013;2,5 (m, 15H)<ce:hsp sp="0.25" />; 7,4&#x2013;8,18 (m, 4H aromatiques)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />440<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />380<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>15</ce:inf>H<ce:inf>22</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf>; PM=262<ce:hsp sp="0.25" />; obs 262 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=0,1<ce:hsp sp="0.25" />%) <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=179<ce:hsp sp="0.25" />(M<ce:sup>+</ce:sup>&#xE5F8;C<ce:inf>6</ce:inf>H<ce:inf>11</ce:inf><ce:hsp sp="0.25" />: 100<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>16&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-4-nitrobenzyl-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ac</ce:bold><ce:inf>3</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 60<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune. RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>): <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=3,6 (s, 1H)<ce:hsp sp="0.25" />; 3,88 (s, 2H)<ce:hsp sp="0.25" />; 0,8&#x2013;2,5 (m, 15H)<ce:hsp sp="0.25" />; 7,4&#x2013;8,18 (m, 4H arom)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />440<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1380<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>15</ce:inf>H<ce:inf>22</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=262<ce:hsp sp="0.25" />; obs 262 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=0,1<ce:hsp sp="0.25" />%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=179 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>6</ce:inf>H<ce:inf>11</ce:inf>=100<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>17&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-(2-nitrophen&#x00E9;thyl)-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ac</ce:bold><ce:inf>4</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 58<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=4,2&#x2013;4,7 (m, 3H)<ce:hsp sp="0.25" />; 0,8&#x2013;2,2 (m, 18H)<ce:hsp sp="0.25" />; 7,2&#x2013;8,1 (m, 4H arom)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />460<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />400<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>16</ce:inf>H<ce:inf>24</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=276<ce:hsp sp="0.25" />; obs 276 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=0,05%); <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=193 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>6</ce:inf>H<ce:inf>11</ce:inf>=100%).</ce:para>
+<ce:para><ce:bold>18&#x00B0;) (R)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-(3-nitrophen&#x00E9;thyl)-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ac</ce:bold><ce:inf>5</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 68<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />: <ce:italic>&#x03B4;</ce:italic> (ppm)<ce:hsp sp="0.25" />: 4&#x2013;4,6 (m, 3H)<ce:hsp sp="0.25" />; 0,7&#x2013;2,1 (m, 18H)<ce:hsp sp="0.25" />; 7,1&#x2013;7,95 (m, 4H arom)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />470<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />390<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>16</ce:inf>H<ce:inf>24</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=276, obs 276 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=0,05%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=193 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>6</ce:inf>H<ce:inf>11</ce:inf>=100<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>19&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-(3-nitrophen&#x00E9;thyl)-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ac</ce:bold><ce:inf>6</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 70<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; <ce:italic>&#x03B4;</ce:italic> (ppm): 4&#x2013;4,6 (m, 3H)<ce:hsp sp="0.25" />; 0,7&#x2013;2,1 (m, 18H)<ce:hsp sp="0.25" />; 7,1&#x2013;7,95 (m, 4H arom)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />470<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />390<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>16</ce:inf>H<ce:inf>24</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=276, obs 276 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup>=0,05<ce:hsp sp="0.25" />%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z=</ce:italic>193 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>6</ce:inf>H<ce:inf>11</ce:inf>=100<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>20&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-&#x03B1;-(4-nitrophen&#x00E9;thyl)-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ac</ce:bold><ce:inf>7</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 77<ce:hsp sp="0.25" />%; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=3,3&#x2013;4,2 (m, 3H)<ce:hsp sp="0.25" />; 0,8&#x2013;2,6 (m, 18H)<ce:hsp sp="0.25" />; 7,4&#x2013;8,2 (m, 4H arom)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />460; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />380<ce:hsp sp="0.25" />; SM<ce:hsp sp="0.25" />: C<ce:inf>16</ce:inf>H<ce:inf>24</ce:inf>N<ce:inf>2</ce:inf>O<ce:inf>2</ce:inf><ce:hsp sp="0.25" />; PM=276<ce:hsp sp="0.25" />; obs 276 (M<ce:sup>+</ce:sup>=0,05%)<ce:hsp sp="0.25" />; <ce:italic>m</ce:italic>/<ce:italic>z</ce:italic>=193 (<ce:italic>M</ce:italic><ce:sup>+</ce:sup> &#xE5F8;C<ce:inf>6</ce:inf>H<ce:inf>11</ce:inf>=100<ce:hsp sp="0.25" />%).</ce:para>
+<ce:para><ce:bold>21&#x00B0;) (S)-</ce:bold><ce:italic><ce:bold>N</ce:bold></ce:italic><ce:bold>-3-nitrobenzyl-1-cyclohexyl&#x00E9;thylamine<ce:hsp sp="0.25" />: Ac</ce:bold><ce:inf>8</ce:inf><ce:bold>.</ce:bold> Rdt<ce:hsp sp="0.25" />: 63<ce:hsp sp="0.25" />%<ce:hsp sp="0.25" />; huile jaune<ce:hsp sp="0.25" />; RMN<ce:sup>1</ce:sup>H (CDCl<ce:inf>3</ce:inf>)<ce:hsp sp="0.25" />; <ce:italic>&#x03B4;</ce:italic><ce:hsp sp="0.25" />(ppm)=3,9 (s, 1H)<ce:hsp sp="0.25" />; 4,1 (s, 2H); 0,9&#x2013;2,2 (m, 15 H); 7,3&#x2013;8,3 (m, 4H arom)<ce:hsp sp="0.25" />; IR (cm<ce:sup>&#x2013;1</ce:sup>)<ce:hsp sp="0.25" />: <ce:italic>&#x03BD;</ce:italic><ce:inf>N&#xE5F8;H</ce:inf>=3<ce:hsp sp="0.25" />450<ce:hsp sp="0.25" />; <ce:italic>&#x03BD;</ce:italic><ce:inf>C&#xE5F8;N</ce:inf>=1<ce:hsp sp="0.25" />370.</ce:para></ce:section></ce:section></ce:sections></body>
+<tail>
+<ce:bibliography>
+<ce:section-title>R&#x00E9;f&#x00E9;rences</ce:section-title><ce:bibliography-sec>
+<ce:bib-reference id="BIB1">
+<ce:label>[1]</ce:label>
+<sb:reference><sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>B.</ce:given-name><ce:surname>Tae cho</ce:surname></sb:author><sb:author><ce:given-name>Y.S.</ce:given-name><ce:surname>Chun</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Tetrahedron, Asymmetry</sb:maintitle></sb:title>
+<sb:volume-nr>3</sb:volume-nr></sb:series>
+<sb:date>1992</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1583</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB2">
+<ce:label>[2]</ce:label>
+<ce:other-ref><ce:textref>Jacques J., Collet A., Wilen S.H., Enantiomers, Racemates and Resolution, John Wiley and Sons, New York, NY, 1981.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB3">
+<ce:label>[3]</ce:label>
+<sb:reference><sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>W.M.</ce:given-name><ce:surname>Pirkel</ce:surname></sb:author><sb:author><ce:given-name>T.C.</ce:given-name><ce:surname>Pochapsky</ce:surname></sb:author><sb:author><ce:given-name>G.S.</ce:given-name><ce:surname>Mahler</ce:surname></sb:author><sb:author><ce:given-name>D.S.</ce:given-name><ce:surname>Coney</ce:surname></sb:author><sb:author><ce:given-name>D.S.</ce:given-name><ce:surname>Reno</ce:surname></sb:author><sb:author><ce:given-name>D.M.</ce:given-name><ce:surname>Aessi</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Org. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>51</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>4991</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB4">
+<ce:label>[4]</ce:label>
+<ce:other-ref><ce:textref>(a) Mosser M., Rihs G., Sauter H., Z. Naturforsch. B 376 (1982); (b) Suzuki Y., Takahashi H., Chem. Pharm. Bull. 31 (1983) 2895.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB5">
+<ce:label>[5]</ce:label>
+<ce:other-ref><ce:textref>Ukaji Y., Watai T., Sumi T., Fujisawa T., Chem. Lett. (1991) 1555.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB6">
+<ce:label>[6]</ce:label>
+<ce:other-ref><ce:textref>Whitesell J.K., Chem. Rev. 89 (1989) 1581 et r&#x00E9;f. cit&#x00E9;es.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB7">
+<ce:label>[7]</ce:label>
+<ce:other-ref><ce:textref>(a) Shimizu M., Iida T., Fujisawa T., Chem. Lett. (1995) 609<ce:hsp sp="0.25" />; (b) Valentine D., Scott J.W., Synthesis (1978) 347.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB8">
+<ce:label>[8]</ce:label>
+<ce:other-ref><ce:textref>Barton D., Ollis W.D., Comprehensive Organic Chemistry, the Synthesis and Reaction of Organic Compounds, vol. II, p.<ce:hsp sp="0.25" />385.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB9">
+<ce:label>[9]</ce:label>
+<ce:other-ref><ce:textref>(a) Frahm A.W., Knupp G.; Tetrahedron Lett. 22 (1981) 2636<ce:hsp sp="0.25" />; (b) Leardini R., Nanni D., Tundo A., Zanardi G., Ruggieri F., J. Org. Chem. 57 (1992) 1842.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB10">
+<ce:label>[10]</ce:label>
+<ce:other-ref><ce:textref>Charles J.P., Christol H., Solladie G., Bull. Soc. Chim. France (1970) 4439.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB11">
+<ce:label>[11]</ce:label>
+<sb:reference><sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.</ce:given-name><ce:surname>Midland</ce:surname></sb:author><sb:author><ce:given-name>R.</ce:given-name><ce:surname>Koops</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Org. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>57</sb:volume-nr></sb:series>
+<sb:date>1992</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1158</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB12">
+<ce:label>[12]</ce:label>
+<sb:reference><sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.</ce:given-name><ce:surname>Sreekumar</ce:surname></sb:author><sb:author><ce:given-name>C.N.</ce:given-name><ce:surname>Pillai</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Tetrahedron&#x2013;Asymmetry</sb:maintitle></sb:title>
+<sb:volume-nr>4</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>2095</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB13">
+<ce:label>[13]</ce:label>
+<sb:reference><sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.H.</ce:given-name><ce:surname>Billmann</ce:surname></sb:author><sb:author><ce:given-name>K.M.</ce:given-name><ce:surname>Tai</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Org. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>23</sb:volume-nr></sb:series>
+<sb:date>1958</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>535</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB14">
+<ce:label>[14]</ce:label>
+<sb:reference><sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>F.</ce:given-name><ce:surname>Dumas</ce:surname></sb:author><sb:author><ce:given-name>V.</ce:given-name><ce:surname>Maine</ce:surname></sb:author><sb:author><ce:given-name>G.</ce:given-name><ce:surname>Cave</ce:surname></sb:author><sb:author><ce:given-name>J.</ce:given-name><ce:surname>D'Angelo</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Tetrahedron&#x2013;Asymmetry</sb:maintitle></sb:title>
+<sb:volume-nr>5</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>339</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB15">
+<ce:label>[15]</ce:label>
+<ce:other-ref><ce:textref>Texier-Boullet F., Synthesis (1985) 679.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB16">
+<ce:label>[16]</ce:label>
+<ce:other-ref><ce:textref>(a) Loupy A., Petit A., Hamelin J., Texier-Boullet F., Jacquault P., Math&#x00E9; D., Synthesis (1998) 1213<ce:hsp sp="0.25" />; (b) Loupy A., Bram G., Sansoulet J.<ce:hsp sp="0.25" />; New J. Chem. 16 (1992) 233<ce:hsp sp="0.25" />; (c) Thuery J., Les micro-ondes et leurs effets sur la mati&#x00E8;re, Tech. et Doc. Lavoisier, 1989<ce:hsp sp="0.25" />; (d) Forogeat M., Marchand C., Les applications industrielles des rayonnements micro-ondes, EDF, Cineli, juillet 1991.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB17">
+<ce:label>[17]</ce:label>
+<ce:other-ref><ce:textref>Moss N., Gauthier J., Ferland J.M., Synlett (1995) 142.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB18">
+<ce:label>[18]</ce:label>
+<ce:other-ref><ce:textref>Hachimoto Y., Kobayashi N., Kai A., Saigo K., Synlett (1995) 961.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB19">
+<ce:label>[19]</ce:label>
+<sb:reference><sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>D.J.</ce:given-name><ce:surname>Cram</ce:surname></sb:author><sb:author><ce:given-name>K.R.</ce:given-name><ce:surname>Kopecky</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Am. Chem. Soc.</sb:maintitle></sb:title>
+<sb:volume-nr>81</sb:volume-nr></sb:series>
+<sb:date>1959</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>2748</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB20">
+<ce:label>[20]</ce:label>
+<sb:reference><sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>B.</ce:given-name><ce:surname>Ben Hassine</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Gorsane</ce:surname></sb:author><sb:author><ce:given-name>J.</ce:given-name><ce:surname>Pecher</ce:surname></sb:author><sb:author><ce:given-name>R.H.</ce:given-name><ce:surname>Martin</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Bull. Soc. Chim. Belg.</sb:maintitle></sb:title>
+<sb:volume-nr>94</sb:volume-nr></sb:series>
+<sb:date>1985</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>597</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference></ce:bibliography-sec></ce:bibliography></tail></converted-article>
