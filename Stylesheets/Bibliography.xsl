@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns:xlink="http://www.w3.org/1999/xlink" 
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" 
-    xmlns="http://www.tei-c.org/ns/1.0"
-    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
-    exclude-result-prefixes="#all">
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
@@ -20,13 +17,13 @@
             </listBibl>
         </div>
     </xsl:template>
-    
+
     <xsl:template match="ce:bibliography-sec">
         <xsl:apply-templates/>
     </xsl:template>
-    
+
     <!-- Références simples Elsevier -->
-    
+
     <xsl:template match="ce:bib-reference[ce:other-ref]">
         <bibl xml:id="{@id}" n="{ce:label}">
             <xsl:apply-templates select="*[name()!='ce:label']"/>
@@ -36,15 +33,15 @@
     <xsl:template match="ce:other-ref">
         <xsl:apply-templates/>
     </xsl:template>
-    
+
     <xsl:template match="ce:textref">
         <xsl:apply-templates/>
     </xsl:template>
-    
+
     <!-- Références complexes Elsevier -->
-    
+
     <!-- Traitement des références structurées Elsevier -->
-    
+
     <xsl:template match="ce:bib-reference[sb:reference]">
         <biblStruct xml:id="{@id}" n="{ce:label}">
             <analytic>
@@ -53,15 +50,16 @@
             <monogr>
                 <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:series/sb:title/*"/>
                 <imprint>
-                    <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:series/*[name()!='sb:title']"/>
+                    <xsl:apply-templates
+                        select="sb:reference/sb:host/sb:issue/sb:series/*[name()!='sb:title']"/>
                     <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:date"/>
                     <xsl:apply-templates select="sb:reference/sb:host/sb:pages/*"/>
                 </imprint>
             </monogr>
         </biblStruct>
     </xsl:template>
-    
-    
+
+
     <!-- Journal paper -->
 
     <xsl:template match="ref[*/@citation-type='journal']">
@@ -307,7 +305,37 @@
             </xsl:choose>
         </xsl:attribute>
     </xsl:template>
-    
+
+    <!-- Titles -->
+
+    <!-- Elsevier -->
+
+    <xsl:template match="sb:maintitle">
+        <title type="main">
+            <xsl:apply-templates/>
+        </title>
+    </xsl:template>
+
+    <!-- Dates -->
+
+    <!-- Elsevier -->
+    <xsl:template match="sb:date">
+        <date when="{.}">
+            <xsl:apply-templates/>
+        </date>
+    </xsl:template>
+
+    <!-- Authors -->
+
+    <xsl:template match="sb:authors">
+        <xsl:apply-templates/>
+    </xsl:template>
+
+    <xsl:template match="sb:author">
+        <author>
+            <xsl:apply-templates/>
+        </author>
+    </xsl:template>
 
 
 </xsl:stylesheet>

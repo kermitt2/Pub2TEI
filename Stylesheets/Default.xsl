@@ -9,7 +9,9 @@
 
     <!-- Default rules -->
     <xsl:template match="*">
-        <xsl:message terminate="no">Element inconnu: <xsl:value-of select="name(.)"/> -
+        <xsl:message terminate="no">Element inconnu: name: <xsl:value-of
+            select="name()"/> - local-name: <xsl:value-of select="local-name()"/> -
+            namespace-uri: <xsl:value-of select="namespace-uri()"/> -
                 <xsl:for-each select="attribute::*">
                 <xsl:value-of select="name(.)"/>="<xsl:value-of select="."/>" </xsl:for-each>
         </xsl:message>

@@ -14,6 +14,21 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
+    
+    
+    <!-- Lists -->
+    
+    <xsl:template match="ce:list">
+        <list>
+            <xsl:apply-templates/>
+        </list>
+    </xsl:template>
+    
+    <xsl:template match="ce:list-item">
+        <item>
+            <xsl:apply-templates/>
+        </item>
+    </xsl:template>
 
     <!-- Formules mathématiques -->
     <xsl:template match="Formula | formula | inline-formula | disp-formula">
@@ -138,6 +153,12 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
+    
+    <!-- Elsevier pointers -->
+    
+    <xsl:template match="ce:float-anchor">
+        <ptr target="{concat('#',@refid)}"/>
+    </xsl:template>
 
     <!-- +++++ Tags de formatage +++++++ -->
     <!-- NLM 2.3 article: italic, bold, underline, sub, sup, fn, emph!!-->
@@ -255,4 +276,9 @@
             <xsl:apply-templates/>
         </quote>
     </xsl:template>
+    
+    <!-- Formarting elements that we discard -->
+    
+    <xsl:template match="ce:vsp"/>
+    
 </xsl:stylesheet>

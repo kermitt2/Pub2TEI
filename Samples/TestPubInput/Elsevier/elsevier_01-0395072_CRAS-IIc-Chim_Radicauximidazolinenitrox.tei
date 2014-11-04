@@ -1,0 +1,2449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="main">Radicaux imidazoline-nitroxyde, briques moléculaires
+                    paramagnétiques pour la construction d’édifices magnétiques</title>
+            </titleStmt>
+            <publicationStmt>
+                <availability status="joint">
+                    <date>2001</date>
+                    <p>Académie des sciences / Éditions scientifiques et médicales Elsevier SAS</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author type="corresp"><persName><forename type="first"
+                                    >Gilles</forename><surname>Ulrich</surname></persName><email>ulrich@ramses.ups-tlse.fr</email><affiliation><orgName
+                                    type="laboratory">Laboratoire de synthèse et de physicochimie de
+                                    molécules d’intérêt
+                                biologique</orgName><address><addrLine>UMR 5068</addrLine><addrLine>université Paul-Sabatier</addrLine><addrLine>Toulouse-3</addrLine><addrLine>118</addrLine><addrLine>route de Narbonne</addrLine><addrLine>31062 Toulouse cedex 4</addrLine><country key="FR">FRANCE</country></address></affiliation></author>
+                        <author><persName><forename type="first"
+                                    >Christophe</forename><surname>Stroh</surname></persName><affiliation><orgName
+                                    type="laboratory">Laboratoire de
+                                chimie</orgName><address><addrLine>d’électronique et de photonique moléculaires</addrLine><addrLine>ECPM/ULP</addrLine><addrLine>25</addrLine><addrLine>rue Becquerel</addrLine><addrLine>BP 08</addrLine><addrLine>67087 Strasbourg cedex 02</addrLine><country key="FR">FRANCE</country></address></affiliation></author>
+                        <author><persName><forename type="first"
+                                    >Raymond</forename><surname>Ziessel</surname></persName><affiliation><orgName
+                                    type="laboratory">Laboratoire de
+                                chimie</orgName><address><addrLine>d’électronique et de photonique moléculaires</addrLine><addrLine>ECPM/ULP</addrLine><addrLine>25</addrLine><addrLine>rue Becquerel</addrLine><addrLine>BP 08</addrLine><addrLine>67087 Strasbourg cedex 02</addrLine><country key="FR">FRANCE</country></address></affiliation></author>
+                        <title level="a" type="main">Radicaux imidazoline-nitroxyde, briques
+                            moléculaires paramagnétiques pour la construction d’édifices
+                            magnétiques</title>
+                    </analytic>
+                    <monogr>
+                        <title level="j" type="abbrev">PXOLDC</title>
+                        <imprint>
+                            <date type="Accepted" when="2000-07-19"/>
+                        </imprint>
+                    </monogr>
+                    <idno type="DOI">10.1016/S1387-1609(00)01187-7</idno>
+                    <idno type="PII">S1387-1609(00)01187-7</idno>
+                    <idno type="publisherID">8</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <list>
+                        <head>Keywords</head>
+                        <item><term>nitroxides</term></item>
+                        <item><term>pyridine</term></item>
+                        <item><term>bipyridine</term></item>
+                        <item><term>terpyridine</term></item>
+                        <item><term>complexes</term></item>
+                        <item><term>detection</term></item>
+                        <item><term>magnetism</term></item>
+                        <item><term>RPE</term></item>
+                    </list>
+                </keywords>
+            </textClass>
+            <textClass>
+                <keywords>
+                    <list>
+                        <head>Mots-clé</head>
+                        <item><term>nitroxydes</term></item>
+                        <item><term>pyridine</term></item>
+                        <item><term>bipyridine</term></item>
+                        <item><term>terpyridine</term></item>
+                        <item><term>complexes</term></item>
+                        <item><term>détection</term></item>
+                        <item><term>magnétisme</term></item>
+                        <item><term>RPE</term></item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2000-06-06">Received</change>
+            <change when="2000-07-19">Accepted</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <abstract xml:lang="en">
+                <head>Abstract</head>
+                <p>The synthesis, characterization and magnetic properties of new series of metal
+                    complexes based on spin-labelled pyridine, bipyridine, terpyridine,
+                    polyaza-macrocycles and calix[4]arene scaffolds have been described.
+                    Magneto-structural correlations revealed that the nature and the amplitude of
+                    the magnetic interactions strongly depend on the torsion angles between the
+                    radical and the metallic centre. In the 6,6’-bis-NIT-2,2’-bipyridine/Cu<hi
+                        rend="superscript">2+</hi> case, the interaction is antiferromagnetic, with
+                        <hi rend="italic">J</hi> ≈ –167 cm<hi rend="superscript">–1</hi>, while with
+                        Ni<hi rend="superscript">2+</hi> a large range of ferromagnetic interactions
+                    is found, depending on the geometry of the first coordination sphere [from 40 to
+                        7 cm<hi rend="superscript">–1</hi>], NIT for a nitronyle-nitroxyde radical.
+                    The presence of a pyridine spacer between the NIT radical and the metallic
+                    centre (4’-NIT-2,2’:6’,6’’-terpyridine case) notably mitigates the interaction,
+                    which remains antiferromagnetic in all cases (<hi rend="italic"
+                        >J</hi> ≈ –7 cm<hi rend="superscript">–1</hi> with Ni<hi rend="superscript"
+                        >2+</hi>). In the podand bipyridine-ligand, one nitroxide arm is bound
+                    equatorially and the second arm is axially coordinated to Cu<hi
+                        rend="superscript">2+</hi>. With the Ni<hi rend="superscript">2+</hi> and
+                        Zn<hi rend="superscript">2+</hi> cations, both radicals are axially bounded.
+                    In all complexes, the bipyridine/aminomethyl fragment is meridionally complexed
+                    to the metal centre.</p>
+            </abstract>
+            <abstract>
+                <head>Résumé</head>
+                <p>Des familles de molécules porteuses de spin, à base de pyridine, bipyridine,
+                    terpyridine, de macrocycles polyazotés et de calix[4]arène ont été préparées et
+                    caractérisées ; leur aptitude à complexer des cations diamagnétiques et
+                    paramagnétiques a été étudiée. L’analyse des propriétés magnétiques révèle que
+                    le signe et l’amplitude de l’interaction magnétique dépendent notoirement des
+                    distances et angles formés entre le radical et le métal. Dans le cas de la
+                    6,6’-bis-NIT-2,2’-bipyridine et du cuivre(II) l’interaction d’échange est
+                    antiferromagnétique [<hi rend="italic">J</hi> ≈ –167 cm<hi rend="superscript"
+                        >–1</hi>], tandis qu’avec le nickel(II) cette interaction est
+                    ferromagnétique et varie de 40 à 7 cm<hi rend="superscript">–1</hi> en fonction
+                    de la géométrie du complexe (NIT pour un radical nitronyle-nitroxyde). La
+                    présence d’un espaceur pyridine entre le radical NIT et le centre métallique
+                    paramagnétique (cas de la 4’-NIT-2,2’;6’,6’’-terpyridine) atténue sensiblement
+                    l’amplitude de l’interaction, qui est dans tous les cas de figure de nature
+                    antiferromagnétique [<hi rend="italic">J</hi> ≈ –7 cm<hi rend="superscript"
+                        >–1</hi> avec des cations Ni<hi rend="superscript">2+</hi>]. Dans le cas du
+                    podand bipyridine possédant des bras flexibles porteurs de spin, la coordination
+                    d’un des radicaux se fait en position équatoriale, tandis que la coordination du
+                    deuxième radical est axiale avec un cation Cu<hi rend="superscript">2+</hi>. Au
+                    contraire, avec des cations Ni<hi rend="superscript">2+</hi> et Zn<hi
+                        rend="superscript">2+</hi>, la coordination des deux radicaux est axiale.
+                    Dans l’ensemble des complexes étudiés, la coordination du fragment
+                    bipyridine/aminométhyle est méridionale.</p>
+            </abstract>
+        </front>
+        <body>
+            <div type="ElsevierSections">
+                <div n="1">
+                    <head>Introduction</head>
+                    <p>Dans cet article, nous allons décrire une partie de nos résultats obtenus
+                        avec des dérivés oligopyridiniques portant des sites paramagnétiques
+                        organiques. Des molécules portant des radicaux nitroxydes stables ont été
+                        synthétisées dès le début du vingtième siècle, bien que le caractère
+                        radicalaire ne fût pas mis en évidence <ref target="#BIB1 #BIB2 #BIB3"
+                            >[1–3]</ref>. C’est dans les années 60 que la chimie des nitroxydes prit
+                        son essor, sous l’impulsion des équipes de Rassat <ref target="#BIB4 #BIB5"
+                            >[4, 5]</ref> en France et de Rosantzev <ref target="#BIB6 #BIB7">[6,
+                            7]</ref> en Union soviétique. La haute stabilité des radicaux
+                        nitroxydes, manipulables dans des conditions ordinaires de laboratoire, en a
+                        fait des outils de choix pour le marquage de spin <ref
+                            target="#BIB8 #BIB9 #BIB10 #BIB11 #BIB12">[8–12]</ref>. La fonction
+                        nitroxyde (aussi appelée nitroxyle ou aminoxyle) se définit comme un système
+                        à trois électrons partagés entre l’azote et l’oxygène. Il s’agit d’une
+                        liaison σ et d’un électron non apparié π, localisé dans les orbitales 2px de
+                        la liaison N–O <ref target="#BIB13">[13]</ref>. Pour que ces dérivés soient
+                        stables, il ne faut en aucun cas avoir d’atome d’hydrogène sur les carbones
+                        en α de l’azote, ceci afin d’éviter une réaction de dimérisation <ref
+                            target="#BIB14">[14]</ref>. Ceci explique les structures perméthylées en
+                        α des radicaux dérivés du TEMPO (aussi appelés TANOL) <ref
+                            target="#BIB4 #BIB5 #BIB15">[4, 5, 15]</ref>, et la localisation du spin
+                        magnétique sur la liaison N–O. Ces unités sont très utilisées en marquage de
+                        spin <ref target="#BIB8 #BIB9 #BIB10 #BIB11 #BIB12">[8–12]</ref>, en raison
+                        de la simplicité de leur spectre RPE en solution. Cependant, des radicaux
+                        dérivés de ces nitroxydes, le <hi rend="italic">t</hi>-butylnitroxyde <ref
+                            target="#BIB16 #BIB17 #BIB18 #BIB19">[16–19]</ref>, porté par un
+                        substrat aromatique, ou le radical nitronyle-nitroxyde d’Ullmann <ref
+                            target="#BIB20 #BIB21 #BIB22 #BIB23">[20–23]</ref>, permettent une
+                        communication magnétique au travers d’un connecteur organique (<ref
+                            target="#FIG1">figure 1</ref>). Dans ces deux familles de radicaux,
+                        l’électron libre est délocalisé sur les liaisons π. Ceci explique leur
+                        utilisation dans le domaine des matériaux magnétiques, où une coopération
+                        entre les différentes unités paramagnétiques est recherchée. Deux buts
+                        furent ciblés par différentes équipes à travers le monde, soit l’obtention
+                        d’aimants purement organiques, soit l’utilisation de radicaux organiques
+                        comme espaceurs magnétiques pour organiser des superstructures
+                        organométalliques.</p>
+                    <p>L’approche purement organique fut stimulée dès le début des années 90 par la
+                        découverte d’une interaction ferromagnétique dans la phase cristalline <hi
+                            rend="italic">β</hi> du <hi rend="italic"
+                        >p</hi>-nitrophényl-nitronyle-nitroxyde <ref target="#BIB24 #BIB25">[24,
+                            25]</ref> (<ref target="#FIG2">figure 2</ref>). De nombreuses stratégies
+                        furent alors développées pour obtenir des comportements magnétiques avec ce
+                        type de composés, soit en jouant sur l’orthogonalité entre les groupements
+                        paramagnétiques, comme dans l’adamantane de Rassat <ref target="#BIB26"
+                            >[26]</ref> (<ref target="#FIG3">figure 3</ref>), soit en associant les
+                        nitroxydes avec des unités électroactives pour former des complexes de
+                        transfert de charge <ref target="#BIB27">[27]</ref>, soit encore en
+                        associant ces unités par des liaisons hydrogène <ref target="#BIB28 #BIB29"
+                            >[28, 29]</ref>.</p>
+                    <p>L’approche métal–radical est celle sur laquelle se fonda une grande partie de
+                        nos travaux. Cette approche fut initiée par les groupes de Gatteschi et Rey
+                            <ref target="#BIB30 #BIB31">[30, 31]</ref>, qui entreprirent des études
+                        de complexation de nombreuses molécules portant des radicaux
+                        nitronyle-nitroxyde avec des métaux de transitions paramagnétiques. En
+                        raison de la faible basicité des fonctions N → O des nitroxydes et afin de
+                        les coordiner sur des centres métalliques acides, ils utilisèrent des
+                        complexes de l’hexafluoroacétylacétone (<ref target="#FIG4">figure 4</ref>).
+                        Ils obtinrent par cette méthode d’extraordinaires structures polymétalliques
+                        présentant des propriétés ferro- ou ferri-magnétiques, comme par exemple une
+                        structure cyclique possédant six atomes de manganèse(II) pontés par des
+                        fonctions NIT et ayant un spin résultant élevé (<hi rend="italic"
+                        >S</hi> = 12) <ref target="#BIB32 #BIB33">[32, 33]</ref>. Olivier Kahn et
+                        son équipe ont préparé des structures infinies qui, outre leur esthétisme,
+                        ont des propriétés magnétiques des plus intéressantes. Dans ces structures,
+                        le motif de base est un réseau bidimensionnel composé d’hexagones formés de
+                        six atomes de Mn(II) et de six atomes de Cu(II) pontés par de
+                        l’orthophénylène-bis-oxamate, où les atomes de Mn(II) joignent les mailles.
+                        L’entrelacement des motifs de base crée une structure tridimensionnelle dans
+                        laquelle le <hi rend="italic">p</hi>-NIT-méthyl-pyridinium, introduit comme
+                        contre-cation, ponte deux hexagones entrelacés en coordinant un atome de Cu
+                        de chaque hexagone. De plus, en dessous de 23 K, le composé se comporte
+                        comme un aimant <ref target="#BIB34">[34]</ref>. Cette stratégie fut reprise
+                        avec succès par l’équipe d’Iwamura <ref target="#BIB35">[35]</ref>, avec
+                        cette fois des radicaux du type <hi rend="italic">t</hi>-butylnitroxyde, ce
+                        qui leur permit d’obtenir des structures en nid d’abeille très élégantes, en
+                        utilisant un triradical comme connecteur entre les cations de manganèse <ref
+                            target="#BIB36 #BIB37">[36, 37]</ref>.</p>
+                    <p>Afin de pallier à l’utilisation de centres métalliques acides, et de pouvoir
+                        ainsi augmenter les possibilités de structures, nous nous sommes tout
+                        d’abord intéressés à la synthèse de ligands chélatants possédant des
+                        radicaux nitroxydes. Notre recherche s’est portée sur la synthèse
+                        d’oligopyridines symétriques porteuses de deux radicaux NIT <ref
+                            target="#BIB38">[38]</ref>. Ces molécules présentent deux types de sites
+                        de complexation. Le cœur du ligand forme, dans un premier temps, des
+                        complexes mononucléaires, qui permettent d’étudier et de moduler les
+                        interactions entre les sites radicalaires organiques et le métal
+                        paramagnétique. Dans un deuxième temps, il sera possible d’utiliser ces
+                        complexes comme briques structurales et de les cimenter entre elles par des
+                        centres métalliques acides que viendront coordiner les nitroxydes
+                        disponibles. Bien que nos travaux s’inscrivent dans le domaine des matériaux
+                        magnétiques, rimant pour bon nombre de chimistes avec les aimants
+                        moléculaires, nous avons fait une incursion dans le domaine de la détection
+                        moléculaire magnétique, en utilisant la résonance paramagnétique
+                        électronique (RPE).</p>
+                </div>
+                <div n="2">
+                    <head>Ligands oligopyridiniques porteurs de fonctions nitroxydes</head>
+                    <div n="2.1">
+                        <head>Imidazoline-nitroxydes</head>
+                        <p>La synthèse mise au point par Ullman <ref
+                                target="#BIB20 #BIB21 #BIB22 #BIB23">[20–23]</ref>, à la fin des
+                            années 60, repose sur la polycondensation d’une bis-hydroxylamine, la
+                            2,3-diamino-N,N’-dihydroxy-2,3-diméthyl-butane <ref target="#BIB39"
+                                >[39]</ref>, sur un aldéhyde (<ref target="#FIG5">figure 5</ref>).
+                            Cette condensation s’effectue avec de bons rendements dans du méthanol,
+                            la bis-<hi rend="italic">N</hi>,<hi rend="italic"
+                            >N’</hi>-hydroxyimidazolidine alors formée précipite en général au cours
+                            de la réaction déplaçant l’équilibre réactionnel. Le produit secondaire
+                            le plus courant est la <hi rend="italic">N</hi>-hydroxyimidazoline,
+                            issue de la déshydratation du produit de condensation. Celle-ci peut
+                            être favorisée par des traces d’acides ou d’impuretés issues de la
+                            synthèse des aldéhydes, comme le dioxyde de sélénium. En effet, nous
+                            avons montré que ce réactif est un excellent catalyseur de
+                            déshydratation de la bis-<hi rend="italic">N</hi>,<hi rend="italic"
+                                >N’</hi>-hydroxyimidazolidine <ref target="#BIB40">[40]</ref> (<ref
+                                target="#FIG6">figure 6</ref>).</p>
+                        <p>Ces précurseurs sont ensuite oxydés pour obtenir le radical
+                            nitronyle-nitroxyde (NIT) par oxydation de la bis-<hi rend="italic"
+                                >N</hi>,<hi rend="italic">N’</hi>-hydroxyimidazolidine, et le
+                            radical imino-nitroxyde (IM) par oxydation de la <hi rend="italic"
+                                >N</hi>-hydroxyimidazoline. De nombreuses méthodes d’oxydation ont
+                            été utilisées pour oxyder des hydroxylamines en radical nitroxyde (<ref
+                                target="#FIG5">figure 5</ref>). Les oxydes métalliques ont été les
+                            premiers utilisés, comme l’oxyde d’argent par Wieland <ref
+                                target="#BIB1 #BIB2 #BIB3">[1–3]</ref>, mais la méthode la plus
+                            efficace est une oxydation par transfert de phase avec du periodate de
+                            sodium dans un mélange eau/dichlorométhane <ref target="#BIB41"
+                                >[41]</ref>. Cette méthode permet d’obtenir rapidement et avec de
+                            bons rendements l’entité radicalaire qui transite dans la phase
+                            organique en évitant une sur-oxydation pouvant conduire à une
+                            nitrone.</p>
+                        <p>Les radicaux ainsi formés sont purifiés par chromatographie sur gel de
+                            silice ou support d’alumine. L’absorption électronique des nitroxydes
+                            est caractérisée par une transition n–π* dans la partie visible du
+                            spectre d’absorption, responsable de la couleur <ref target="#BIB41"
+                                >[41]</ref> rouge d’un NIT aliphatique, bleu–vert d’un NIT
+                            aromatique et orange d’un IM. Ces composés sont par ailleurs très
+                            stables et ne se décomposent qu’à partir de 200 °C. Le spectre RPE
+                            caractéristique d’un NIT en RPE est un quintuplet, d’intensité 1:2:3:2:1
+                            et avec une constante de couplage hyperfine <hi rend="italic">a</hi><hi
+                                rend="subscript">N</hi> de l’ordre de 7,5 G <ref target="#BIB41"
+                                >[41]</ref>. L’électron étant délocalisé sur les liaisons ONCNO, les
+                            deux azotes sont équivalents. Dans nos molécules possédant deux
+                            fonctions NIT en échange fort, un signal correspondant à quatre azotes
+                            équivalents est observé sous la forme d’un nonet (d’intensité relative
+                            1:4:10:16:19:16:10:4:1), avec une constante de couplage hyperfine de
+                            l’ordre de 3,7 G. En raison de l’inéquivalence des deux atomes d’azotes
+                            du radical IM, sept raies d’intensité relative (1:1:2:1:2:1:1) sont
+                            observées. Deux constantes de couplage hyperfin sont alors obtenues,
+                            l’une de l’ordre de 9 G et l’autre autour de 4,5 G.</p>
+                        <p>La présence d’électrons libres fait de ces molécules des entités
+                            électroactives. Les radicaux NIT sont oxydés de façon quasi-réversible
+                            en cations nitrosonium aux alentours de 0,3–0,5 V vs Ag/Ag<hi
+                                rend="superscript">+</hi>
+                            <ref target="#BIB36 #BIB37 #BIB42 #BIB43">[36, 37, 42, 43]</ref>. En
+                            revanche, ils sont réduits de façon irréversible en anions, qui
+                            réagissent avec toute trace d’eau pour former des dihydroxylamines <ref
+                                target="#BIB36 #BIB37 #BIB44">[36, 37, 44]</ref>. Cependant, cette
+                            réduction s’effectue à des potentiels relativement négatifs, de l’ordre
+                            de –1,5 à –1,7 V vs Ag/Ag<hi rend="superscript">+</hi>, ce qui permet
+                            notamment d’associer cette unité à d’autres espèces électroactives
+                            pouvant générer des radicaux-anions, comme par exemple un fullerène C<hi
+                                rend="subscript">60</hi>, dont la première vague de réduction se
+                            situe avant la réduction du NIT <ref target="#BIB45">[45]</ref>.</p>
+                    </div>
+                    <div n="2.2">
+                        <head>Dérivés de pyridines</head>
+                        <p>Les ligands les plus simples que nous avons préparés sont deux pyridines
+                            fonctionnalisées par des radicaux NIT ou IM en position 2,6 et 2,5 <ref
+                                target="#BIB40 #BIB46">[40, 46]</ref> (<ref target="#FIG7"
+                                >figure 7</ref>). Le premier ligand, celui du 2,6-bis-NITpy, se
+                            comporte comme un ligand tridentate ONO en formant des complexes
+                            octaédriques de Cu(II) et de Ni(II), de stœchiométrie deux ligands pour
+                            un métal <ref target="#BIB38">[38]</ref>. Récemment, le comportement
+                            magnétique de ces complexes a été étudié <ref target="#BIB47"
+                            >[47]</ref>, mais c’est le comportement magnétique des ligands qui amena
+                            les résultats les plus inattendus. La présence des fonctions NIT en
+                            ortho de l’azote pyridinique induit une gêne stérique et électronique,
+                            induite par le doublet sur l’azote de la pyridine et qui perturbe
+                            l’interaction spin–spin entre les deux sous-unités NIT <ref
+                                target="#BIB38">[38]</ref>. Ceci se traduit pour le composé
+                            2,6-bisNITpy par une variation du spectre RPE en fonction de la
+                            température, qui passe du spectre d’un biradical à celui d’un
+                            monoradical en abaissant la température (<ref target="#FIG8"
+                                >figure 8</ref>).</p>
+                        <p>Cette gêne stéréoélectronique est également mise en évidence dans la
+                            structure solide du composé 2,6-bisNITpy, qui montre un angle prononcé
+                            entre la fonction NIT et le noyau pyridine. De plus, une polarisation de
+                            spin favorable induit un couplage ferromagnétique entre les deux
+                            sous-unités paramagnétiques <ref target="#BIB38">[38]</ref>. Le composé
+                            2,6-bis-IMpy est lui aussi un ligand tridentate, qui pourrait être
+                            comparé à une terpyridine <ref target="#BIB48">[48]</ref> ;
+                            malheureusement, il ne semble pas vouloir se coordiner par les trois
+                            azotes, mais plutôt en utilisant la triade NNO, favorisant alors la
+                            formation de chaînes unidimensionnelles <ref target="#BIB49"
+                            >[49]</ref>.</p>
+                    </div>
+                    <div n="2.3">
+                        <head>Dérivés de bipyridines</head>
+                        <p>Dans le but de synthétiser des chélates porteurs de sites paramagnétiques
+                            organiques, nous nous sommes attachés à la synthèse de dérivés de la
+                            2,2’-bipyridine et de la 1,10-phénanthroline, porteurs de deux
+                            groupements NIT en position <hi rend="italic">ortho</hi> du site de
+                            chélation (<ref target="#FIG7">figure 7</ref>) <ref target="#BIB46"
+                                >[46]</ref>. Ces composés se comportent comme des pinces
+                            moléculaires planes à quatre sites donneurs <ref target="#BIB50"
+                                >[50]</ref>. Seuls les complexes de la bipyridine substituée en
+                            position α des atomes d’azote ont fait l’objet d’études approfondies des
+                            propriétés cristallographiques et magnétiques <ref
+                                target="#BIB51 #BIB52">[51, 52]</ref>. La bipyridine et les deux
+                            groupements NIT se mettent en configuration <hi rend="italic">cis</hi>
+                            lors de la complexation, offrant un site de coordination tétradentate de
+                            type « ONNO ». Ces ligands complexent la plupart des métaux de
+                            transition, sous forme de complexes octaédriques, où la <hi
+                                rend="italic">pince</hi> ONNO vient coordiner en position
+                            équatoriale, les deux positions axiales étant occupées par un contre-ion
+                            et/ou une molécule d’eau (<ref target="#FIG9">figure 9</ref>) <ref
+                                target="#BIB51 #BIB52">[51, 52]</ref>. Une forte interaction
+                            antiferromagnétique a été observée avec du Cu<hi rend="superscript"
+                                >2+</hi> [<hi rend="italic">J</hi> = –167 cm<hi rend="superscript"
+                                >–1</hi>], tandis qu’un comportement ferromagnétique a été déterminé
+                            avec le cation Ni<hi rend="superscript">2+</hi>. Dans ce cas,
+                            l’amplitude et la nature du couplage dépendent de l’angle formé entre le
+                            radical et le plan contenant l’atome de nickel. Lorsque le radical et le
+                            métal sont co-planaires, une orthogonalité des orbitales magnétiques
+                            implique un comportement ferromagnétique. C’est le cas du complexe ayant
+                            une molécule d’eau et un anion perchlorate coordiné (<hi rend="italic"
+                                >J</hi><hi rend="subscript">1,2</hi> = 27,8 et <hi rend="italic"
+                                >J</hi><hi rend="subscript">2,3</hi> = 6,9 cm<hi rend="superscript"
+                                >–1</hi> ; <ref target="#FIG10">figure 10</ref>). Une distorsion
+                            marquée entraîne une interaction antiferromagnétique comme celle
+                            observée avec le nickel possédant deux molécules d’eau coordinées (<hi
+                                rend="italic">J</hi><hi rend="subscript">1,2</hi> = 39,6 et <hi
+                                rend="italic">J</hi><hi rend="subscript">2,3</hi> = –48,7 cm<hi
+                                rend="superscript">–1</hi>).</p>
+                        <p>Notons que de multiples autres chélates porteurs de spin ont ainsi pu
+                            être préparés par une stratégie analogue. Il a en particulier été
+                            préparée une bipyridine comportant deux radicaux en position 5,5’ (<ref
+                                target="#FIG7">figure 7</ref>) et trois de ces entités ont été
+                            complexées autour d’un atome de Ni<hi rend="superscript">2+</hi>. La
+                            structure moléculaire de ce complexe a été déterminée et confirme que
+                            nous sommes en présence d’un nickel octaédrique complexé par trois
+                            unités bipyridine porteuses chacune de deux radicaux NIT (<ref
+                                target="#FIG11">figure 11</ref>). Le moment magnétique à température
+                            ambiante confirme que nous sommes en présence d’un atome de nickel (<hi
+                                rend="italic">S</hi> = 1) et de six radicaux (<hi rend="italic"
+                                >S</hi> = 1/2). Enfin, notons que des ligands bipyridiniques greffés
+                            par un radical NIT ou IM ont également été synthétisés. La 6-IM-bipy
+                            portant trois atomes d’azote donneurs se comporte comme un ligand
+                            tridentate favorisant une coordination méridionale, modèle d’une
+                            terpyridine classique <ref target="#BIB48">[48]</ref>.</p>
+                    </div>
+                    <div n="2.4">
+                        <head>Dérivés de terpyridine</head>
+                        <p>Ce ligand présente l’avantage de former des complexes très stables par
+                            chélation méridionale des trois atomes d’azote. En conséquence,
+                            plusieurs ligands porteurs de radicaux NIT ou IM ont été préparés au
+                            cours de ce travail et la position et le nombre de substituants
+                            radicalaires ont été modifiés selon la disponibilité des aldéhydes
+                            correspondants. La terpyridine (terpy) substituée en position 4’ donne
+                            des complexes de géométrie octaédrique et de stœchiométrie de deux
+                            ligands pour un métal. Dans le cas du Ni<hi rend="superscript">2+</hi>
+                            les angles dièdres entre le plan moyen de la terpyridine et les radicaux
+                            NIT sont de 27° et 18° (<ref target="#FIG12">figure 12</ref>). Le
+                            comportement antiferromagnétique entre le métal et le radical a pu être
+                            déterminé à l’aide d’un modèle de trimère linéaire et symétrique ; il en
+                            résulte une interaction <hi rend="italic">J</hi> = –6,7 cm<hi
+                                rend="superscript">–1</hi>. D’autres complexes avec le Zn<hi
+                                rend="superscript">2+</hi> et le Cu<hi rend="superscript">2+</hi>
+                            ont également été préparés et présentent un comportement
+                            antiferromagnétique similaire à celui du Ni<hi rend="superscript"
+                                >2+</hi>. Il en va de même des complexes obtenus avec le ligand
+                            4’-IM-terpy, ceux-ci ayant été caractérisés par une structure
+                            moléculaire aux rayons X et leurs comportements magnétiques avec un
+                            susceptomètre SQUID <ref target="#BIB53">[53]</ref>.</p>
+                    </div>
+                </div>
+                <div n="3">
+                    <head>Podands porteurs de bras nitroxydes</head>
+                    <div n="3.1">
+                        <head>Principe synthétique</head>
+                        <p>La principale difficulté pour l’obtention d’un radical NIT est la
+                            synthèse de l’aldéhyde précurseur. En effet, il n’est pas toujours aisé
+                            d’obtenir, pour des raisons synthétiques, certaines plates-formes
+                            moléculaires avec des fonctions aldéhydes. Il est encore moins aisé,
+                            pour des raisons de stabilité, d’obtenir des polyaldéhydes. Cette
+                            entrave à la synthèse de radicaux originaux nous a amené à développer
+                            une chimie basée sur les radicaux NIT eux-mêmes ; ceux-ci sont bien
+                            souvent plus stables que leurs précurseurs dihydroxy-imidazolidines et
+                            aldéhydes. Par cette méthode, largement employée dans le cas des
+                            radicaux TEMPO <ref target="#BIB6 #BIB7 #BIB54">[6, 7, 54]</ref>, de
+                            nombreux édifices structuraux peuvent être envisagés par greffage.</p>
+                        <p>Notre stratégie repose sur l’élaboration d’un synthon très simple ayant
+                            une fonction NIT et un groupement nucléofuge, la chlorométhyle-NIT (<ref
+                                target="#FIG13">figure 13</ref>) <ref target="#BIB41">[41]</ref>. Ce
+                            synthon relativement stable peut être obtenu en grande quantité, mais le
+                            chlore de ce composé étant peu nucléofuge, la substitution du chlore ne
+                            s’effectue efficacement qu’en présence d’une quantité catalytique
+                            d’iodure d’alcalin. Cette méthode permet de greffer aisément le fragment
+                            paramagnétique méthyle-NIT, par substitution nucléophile, en milieu
+                            basique sur des molécules possédant des groupements nucléophiles tels
+                            que les amines ou les phénols (<ref target="#FIG14"
+                            >figure 14</ref>).</p>
+                    </div>
+                    <div n="3.2">
+                        <head>Kryptospin</head>
+                        <p>L’association entre un éther-couronne et une sous-unité porteuse de spin
+                            a permis de développer des sondes pour la détection d’ions par RPE. Les
+                            premiers systèmes étudiés au milieu des années 80 étaient basés sur
+                            l’utilisation du radical TEMPO, où la localisation du spin ne permet pas
+                            de fortes interactions avec l’ion coordiné <ref target="#BIB55 #BIB56"
+                                >[55, 56]</ref>. Seul le système mis en œuvre par Sosnovsky a permis
+                            d’observer un couplage hyperfin avec l’atome de sodium <ref
+                                target="#BIB57">[57]</ref> (<ref target="#FIG15">figure 15</ref>).
+                            Ce système, dans lequel le centre paramagnétique est dans la sphère de
+                            coordination de l’alcalin, est très élégant, mais issu d’une synthèse
+                            fastidieuse. Nous avons envisagé la synthèse d’une famille de polyamines
+                            macrocycliques et d’éthers couronnes portant des bras méthyle-NIT, en
+                            mettant en œuvre la stratégie de synthèse utilisant un synthon
+                            radicalaire <ref target="#BIB58">[58]</ref>.</p>
+                        <p>Le spectre RPE observé sera plus complexe que dans le cas de sous-unité
+                            TEMPO (triplet vs quintuplet), mais la partie magnétiquement active de
+                            la molécule sera plus accessible, ce qui permet d’obtenir davantage
+                            d’interactions avec le milieu, et donc de plus grandes modifications du
+                            spectre. Les résultats les plus significatifs furent obtenus avec les
+                            dérivés des <hi rend="italic">Kryptofix</hi>, fonctionnalisés par deux
+                            bras méthyle-NIT. Ces molécules, appelées <hi rend="italic"
+                                >Kryptospin</hi> (<ref target="#FIG16">figure 16</ref>), présentent
+                            un spectre RPE très fortement perturbé en présence d’ions alcalins. En
+                            effet, dans le cas du ligand libre, seule une interaction spin–spin
+                            directe moyenne à travers l’espace est observée (nonet déformé), à
+                            laquelle s’ajoute un couplage hyperfin dû aux protons du pont méthylène.
+                            Lors de l’addition d’un cation alcalin, il y a rupture de l’interaction
+                            spin–spin par complexation du cation (<ref target="#FIG17"
+                                >figure 17</ref>). De plus, suivant la taille de l’éther couronne,
+                            un affinement du couplage hyperfin avec les deux hydrogènes devenus
+                            diastéréotopes est observé lorsque la complexation est optimale. Le
+                            système hyperfin est mieux résolu pour les gros cations comme le césium
+                            pour l’éther couronne 2.2 et inversement mieux résolu pour le lithium
+                            avec le <hi rend="italic">Kryptospin</hi> 1.1 <ref target="#BIB59"
+                                >[59]</ref>.</p>
+                    </div>
+                    <div n="3.3">
+                        <head>Calixarènes</head>
+                        <p>L’extension de notre méthodologie de synthèse, utilisant un synthon
+                            radicalaire, s’est faite vers la fonctionnalisation de calixarènes. Ces
+                            entités polyphénoliques possèdent des fonctions hydroxyles sur
+                            lesquelles des greffages sélectifs peuvent être effectués en fonction de
+                            la nature de la base utilisée. La vérification de la conformation et de
+                            la substitution sur la plate-forme calixarène est confirmée par RMN
+                            après réduction d’un échantillon par de l’acide ascorbique <ref
+                                target="#BIB60">[60]</ref>. Nous avons pu de cette façon obtenir et
+                            confirmer la structure d’un calix[4]arène portant quatre NIT, en
+                            conformation cône <ref target="#BIB61">[61]</ref>. L’association au sein
+                            de la cavité d’un calixarène de sous-unités complexantes et de
+                            sous-unités magnétiquement actives, en l’occurrence deux bipyridines et
+                            deux NIT (<ref target="#FIG18">figure 18</ref>), nous a permis de mettre
+                            en évidence un changement significatif dans le spectre RPE en présence
+                            de cations métalliques. En effet, l’interaction spin–spin observée dans
+                            le cas du ligand libre (nonet) est interrompue lors de l’addition de
+                            cations Zn<hi rend="superscript">2+</hi> (quintet), par complexation de
+                            celui-ci <ref target="#BIB61">[61]</ref>. De tels changements de spectre
+                            furent aussi observé par l’équipe de Shinkai, en présence d’ions
+                            alcalins, avec un système de calix[8]arène portant des fonctions ester
+                            et des radicaux TEMPO <ref target="#BIB62">[62]</ref>.</p>
+                        <p>Ces travaux nous laissent penser que des systèmes où il existera une
+                            association entre une cavité de coordination spécifique et une entité
+                            magnétiquement active, tel que le NIT, pourront être des sondes
+                            efficaces pour la détection par RPE de molécules diamagnétiques.</p>
+                    </div>
+                    <div n="3.4">
+                        <head>Bipyridine</head>
+                        <p>Ce podand a été préparé par alkylation d’un synthon
+                            amino-méthyle-bipyridine par le chlorométhyle-NIT. Une détermination de
+                            la structure moléculaire aux rayons X révèle l’orthogonalité
+                            intramoléculaire quasi parfaite des deux radicaux NIT (<ref
+                                target="#FIG19">figure 19</ref>). Cette géométrie particulière et
+                            inattendue est favorable à une interaction ferromagnétique, retrouvée
+                            dans le comportement magnétique mesuré par SQUID.</p>
+                        <p>Par ailleurs, deux complexes de même stœchiométrie (un ligand pour un
+                            métal), mais de géométries différentes, ont été préparés. La sous-unité
+                            amino-méthyl-bipyridine est dans un plan méridional dans chaque
+                            complexe, tandis que les deux radicaux occupent, soit des positions
+                            perpendiculaires à ce plan (cas du Ni<hi rend="superscript">2+</hi> et
+                            du Zn<hi rend="superscript">2+</hi>), les sphères de coordination étant
+                            complétées par une molécule d’eau (<ref target="#FIG20"
+                            >figure 20</ref>), soit dans le plan. Dans le cas du complexe du cuivre,
+                            un des radical est coordiné dans le plan équatorial contenant la
+                            bipyridine, alors que le second radical est coordiné perpendiculairement
+                            à ce plan. Dans ce dernier cas, la sphère de coordination est complétée
+                            par un anion ClO<hi rend="subscript">4</hi><hi rend="superscript">–</hi>
+                                (<ref target="#FIG21">figure 21</ref>). Une telle situation est
+                            favorable à un recouvrement ferromagnétique et antiferromagnétique dans
+                            le cas de la coordination perpendiculaire et coplanaire respectivement.
+                            Un comportement global antiferromagnétique a été observé et un modèle
+                            mathématique simple incluant ces deux type d’interactions a permis de
+                            rendre compte du comportement magnétique observé <ref target="#BIB63"
+                                >[63]</ref>.</p>
+                    </div>
+                </div>
+                <div n="4">
+                    <head>Conclusion</head>
+                    <p>Nous avons au cours de ce programme de recherche synthétisé des ligands
+                        azotés porteurs de spins. Un nombre croissant de cycles pyridiniques (de 1 à
+                        3) a permis d’obtenir des objets paramagnétiques ayant une aptitude à former
+                        des complexes de stœchiométrie et de géométrie différentes. Parmi ces
+                        complexes, une coordination directe de la fonction N→O sur le métal engendre
+                        des couplages antiferromagnétiques forts, tandis qu’une orthogonalité des
+                        orbitales magnétiques génère des couplages ferromagnétiques marqués.
+                        Remarquons que l’interaction magnétique entre un radical NIT ou IM et un
+                        métal paramagnétique au travers d’un cycle pyridine est atténué et
+                        généralement de nature antiferromagnétique. La préparation de molécules plus
+                        flexibles, mais comportant des bras porteurs de spin, a également été
+                        développée. Certaines de ces molécules comportent une plate-forme
+                        macrocyclique utilisée pour détecter des cations alcalins par RPE. Malgré un
+                        effort synthétique considérable, le contrôle du signe et de l’amplitude de
+                        l’interaction magnétique est un paradigme qui n’a pas été atteint. Il reste
+                        certes beaucoup de chemin à parcourir avant qu’une telle aventure puisse
+                        être menée à son terme. Le caractère très empirique de ce domaine de
+                        recherche ouvre au chimiste de synthèse de larges horizons inexplorés.</p>
+                </div>
+            </div>
+            <div>
+                <head>Remerciements</head>
+                <p>Nous avons tous été particulièrement sensibles aux encouragements constants que
+                    le professeur Olivier Kahn nous a prodigué au cours de ce travail <hi
+                        rend="italic">fastidieux</hi>. Avec ce mémoire nous rendons hommage à
+                    l’homme de science fasciné par la beauté et la versatilité des objets
+                    moléculaires sculptés par les chimistes. Nous tenons également à remercier les
+                    Drs Pierre Rabu et Marc Drillon pour leurs expertises dans la compréhension des
+                    processus d’échanges magnétiques et le professeur Philippe Turek (ICS,
+                    Strasbourg) pour sa contribution dans l’analyse des spectres RPE et des
+                    processus chimiques qui en découlent. Enfin, nous remercions Martine Ziessel
+                    pour une lecture attentive et critique du manuscrit.</p>
+            </div>
+        </body>
+        <back>
+            <div type="references">
+                <head>Références</head>
+                <listBibl>
+                    <biblStruct xml:id="BIB1" n="[1]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">O</forename>
+                                    <surname>Piloty</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">B</forename>
+                                    <surname>Schwering</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Chem.
+                                Ber.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">34</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1901</sb:date>
+                                <biblScope unit="page" from="1870">1870</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB2" n="[2]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">O</forename>
+                                    <surname>Piloty</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">W</forename>
+                                    <surname>Vogel</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Chem.
+                                Ber.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">36</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1903</sb:date>
+                                <biblScope unit="page" from="1283">1283</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB3" n="[3]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Wieland</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Offenbächer</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Chem.
+                                Ber.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">47</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1914</sb:date>
+                                <biblScope unit="page" from="2111">2111</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB4" n="[4]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Brière</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Lemaire</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Rassat</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Bull.
+                                Soc. Chim. France.</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1965</sb:date>
+                                <biblScope unit="page" from="3273">3273</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB5" n="[5]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Brière</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R.M</forename>
+                                    <surname>Dupeyre</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Lemaire</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">C</forename>
+                                    <surname>Morat</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Rassat</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Bull.
+                                Soc. Chim. France.</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1965</sb:date>
+                                <biblScope unit="page" from="3290">3290</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB6" n="[6]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">E.G</forename>
+                                    <surname>Rosantzev</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Scholle</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Synthesis</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1971</sb:date>
+                                <biblScope unit="page" from="190">190</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB7" n="[7]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">E.G</forename>
+                                    <surname>Rosantzev</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Scholle</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Synthesis</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1971</sb:date>
+                                <biblScope unit="page" from="401">401</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB8" n="[8]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H.M</forename>
+                                    <surname>McConnell</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Phys.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">39</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1963</sb:date>
+                                <biblScope unit="page" from="1910">1910</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB9" n="[9]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">S</forename>
+                                    <surname>Ohnishi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H.M</forename>
+                                    <surname>McConnell</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Am.
+                                Chem. Soc.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">87</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1965</sb:date>
+                                <biblScope unit="page" from="2293">2293</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB10" n="[10]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H.M</forename>
+                                    <surname>Swartz</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Pure
+                                Appl. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">62</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1990</sb:date>
+                                <biblScope unit="page" from="235">235</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB11" n="[11]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G.I</forename>
+                                    <surname>Liktenstein</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Pure
+                                Appl. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">62</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1990</sb:date>
+                                <biblScope unit="page" from="281">281</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB12" n="[12]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">O.H</forename>
+                                    <surname>Griffith</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A.S</forename>
+                                    <surname>Waggoner</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Acc.
+                                Chem. Res.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">2</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1969</sb:date>
+                                <biblScope unit="page" from="17">17</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB13" n="[13]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Berthier</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Lemaire</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Rassat</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Veillard</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Theor.
+                                Chim. Acta</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">3</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1965</sb:date>
+                                <biblScope unit="page" from="213">213</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB14" n="[14]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">J</forename>
+                                    <surname>Martinie-Hombrouk</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Rassat</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Tetrahedron</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">30</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1974</sb:date>
+                                <biblScope unit="page" from="433">433</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB15" n="[15]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Rassat</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Pure
+                                Appl. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">62</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1990</sb:date>
+                                <biblScope unit="page" from="223">223</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB16" n="[16]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Lemaire</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">Y</forename>
+                                    <surname>Marechal</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ramasseul</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Rassat</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Bull.
+                                Soc. Chim. France</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1975</sb:date>
+                                <biblScope unit="page" from="372">372</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB17" n="[17]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Lemaire</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">Y</forename>
+                                    <surname>Marechal</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ramasseul</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Rassat</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Bull.
+                                Soc. Chim. France</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1975</sb:date>
+                                <biblScope unit="page" from="378">378</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB18" n="[18]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Calder</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A.R</forename>
+                                    <surname>Forrester</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. C</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1969</sb:date>
+                                <biblScope unit="page" from="1459">1459</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB19" n="[19]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Calder</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A.R</forename>
+                                    <surname>Forrester</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P.G</forename>
+                                    <surname>James</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">G.R</forename>
+                                    <surname>Luckhurst</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Am.
+                                Chem. Soc.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">91</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1969</sb:date>
+                                <biblScope unit="page" from="3724">3724</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB20" n="[20]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">D.G.B</forename>
+                                    <surname>Boocock</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Darcy</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">E.F</forename>
+                                    <surname>Ullman</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Am.
+                                Chem. Soc</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">90</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1968</sb:date>
+                                <biblScope unit="page" from="5945">5945</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB21" n="[21]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">D.G.B</forename>
+                                    <surname>Boocock</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">E.F</forename>
+                                    <surname>Ullman</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Am.
+                                Chem. Soc</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">90</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1968</sb:date>
+                                <biblScope unit="page" from="6873">6873</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB22" n="[22]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">E.F</forename>
+                                    <surname>Ullman</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D.G.B</forename>
+                                    <surname>Boocock</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. Chem. Comm.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">20</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1969</sb:date>
+                                <biblScope unit="page" from="1161">1161</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB23" n="[23]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">E.F</forename>
+                                    <surname>Ullman</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">L</forename>
+                                    <surname>Call</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J.H</forename>
+                                    <surname>Osiecki</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Org.
+                                Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">35</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1970</sb:date>
+                                <biblScope unit="page" from="3623">3623</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB24" n="[24]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Tamura</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">Y</forename>
+                                    <surname>Nakasawa</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Shiomi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Nozawa</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">Y</forename>
+                                    <surname>Hosokoshi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Ishikawa</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Takahashi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Kinoshita</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Chem.
+                                Phys. Lett.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">186</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1991</sb:date>
+                                <biblScope unit="page" from="401">401</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB25" n="[25]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Kinoshita</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Turek</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Tamura</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Nozawa</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Shiomi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">Y</forename>
+                                    <surname>Nakasawa</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Ishikawa</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Takahashi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Awaga</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">T</forename>
+                                    <surname>Inabe</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Chem.
+                                Lett.</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1991</sb:date>
+                                <biblScope unit="page" from="1225">1225</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB26" n="[26]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Chiarelli</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M.A</forename>
+                                    <surname>Novak</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Rassat</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J.L</forename>
+                                    <surname>Tholence</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Nature</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">363</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1993</sb:date>
+                                <biblScope unit="page" from="147">147</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB27" n="[27]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">S</forename>
+                                    <surname>Nakatsuji</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Anzai</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Mater. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">7</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1997</sb:date>
+                                <biblScope unit="page" from="2161">2161</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB28" n="[28]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">T</forename>
+                                    <surname>Okuno</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">T</forename>
+                                    <surname>Otsuka</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Awaga</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. Chem. Comm.</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1995</sb:date>
+                                <biblScope unit="page" from="827">827</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB29" n="[29]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">J</forename>
+                                    <surname>Cirujeda</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">E</forename>
+                                    <surname>Hernandez-Gasio</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">C</forename>
+                                    <surname>Rovira</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J.L</forename>
+                                    <surname>Stanger</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Turek</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J</forename>
+                                    <surname>Veciana</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Mater. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">5</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1995</sb:date>
+                                <biblScope unit="page" from="243">243</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB30" n="[30]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Caneschi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Gatteschi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Sessoli</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Rey</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Acc.
+                                Chem. Res.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">22</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1989</sb:date>
+                                <biblScope unit="page" from="392">392</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB31" n="[31]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Caneschi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Gatteschi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Rey</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Prog.
+                                Inorg. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">39</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1991</sb:date>
+                                <biblScope unit="page" from="331">331</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB32" n="[32]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Caneschi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Gatteschi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J.P</forename>
+                                    <surname>Renard</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Rey</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Sessoli</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Inorg.
+                                Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">28</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1989</sb:date>
+                                <biblScope unit="page" from="1976">1976</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB33" n="[33]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Caneschi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Gatteschi</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J</forename>
+                                    <surname>Laugier</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Rey</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Sessoli</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">C</forename>
+                                    <surname>Zanchini</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Am.
+                                Chem. Soc.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">110</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1988</sb:date>
+                                <biblScope unit="page" from="2795">2795</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB34" n="[34]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H.O</forename>
+                                    <surname>Stumpf</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">L</forename>
+                                    <surname>Ouahab</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">Y</forename>
+                                    <surname>Pei</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Grandjean</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">O</forename>
+                                    <surname>Kahn</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Science</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">261</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1993</sb:date>
+                                <biblScope unit="page" from="447">447</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB35" n="[35]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Iwamura</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Inoue</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">T</forename>
+                                    <surname>Hayamizu</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Pure
+                                Appl. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">68</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1996</sb:date>
+                                <biblScope unit="page" from="243">243</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB36" n="[36]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Inoue</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Iwamura</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Am.
+                                Chem. Soc.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">116</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1994</sb:date>
+                                <biblScope unit="page" from="3173">3173</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB37" n="[37]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">T</forename>
+                                    <surname>Mitsunori</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Inoue</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">N</forename>
+                                    <surname>Koga</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Iwamura</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Am.
+                                Chem. Soc.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">117</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1995</sb:date>
+                                <biblScope unit="page" from="2467">2467</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB38" n="[38]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Ulrich</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R.C</forename>
+                                    <surname>Lawson</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">L</forename>
+                                    <surname>Echegoyen</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Mater. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">9</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1999</sb:date>
+                                <biblScope unit="page" from="1435">1435</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB39" n="[39]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Lamchen</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">T.W</forename>
+                                    <surname>Mittag</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. (C)</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1966</sb:date>
+                                <biblScope unit="page" from="2300">2300</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB40" n="[40]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Ulrich</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Tetrahedron Lett.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">35</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1994</sb:date>
+                                <biblScope unit="page" from="1215">1215</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB41" n="[41]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">E.F</forename>
+                                    <surname>Ullman</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J.H</forename>
+                                    <surname>Osiecki</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">G.B</forename>
+                                    <surname>Boocock</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Darcy</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Am.
+                                Chem. Soc.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">94</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1972</sb:date>
+                                <biblScope unit="page" from="7049">7049</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB42" n="[42]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Tamura</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">C</forename>
+                                    <surname>Iwakura</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Tsunaga</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Electrochim. Acta</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">18</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1973</sb:date>
+                                <biblScope unit="page" from="241">241</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB43" n="[43]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">T</forename>
+                                    <surname>Malinski</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J.R</forename>
+                                    <surname>Fish</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">S.G</forename>
+                                    <surname>Swarts</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M.D</forename>
+                                    <surname>Svilla</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Phys. Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">92</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1988</sb:date>
+                                <biblScope unit="page" from="3745">3745</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB44" n="[44]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Serve</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Electrochim. Acta.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">20</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1975</sb:date>
+                                <biblScope unit="page" from="469">469</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB45" n="[45]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Matsuda</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Ulrich</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Iwamura</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. Perkin Trans.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">2</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1998</sb:date>
+                                <biblScope unit="page" from="1581">1581</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB46" n="[46]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Ulrich</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Luneau</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Rey</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Tetrahedron Lett.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">35</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1994</sb:date>
+                                <biblScope unit="page" from="1211">1211</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB47" n="[47]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Francese</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">F.M</forename>
+                                    <surname>Romero</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Neels</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Stoeckli-Evans</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">S</forename>
+                                    <surname>Decurtins</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Inorg.
+                                Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">39</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >2000</sb:date>
+                                <biblScope unit="page" from="2087">2087</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB48" n="[48]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">C</forename>
+                                    <surname>Stroh</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Tetrahedron Lett.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">40</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1999</sb:date>
+                                <biblScope unit="page" from="4543">4543</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB49" n="[49]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Oshio</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">T</forename>
+                                    <surname>Watanabe</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>Ohto</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">T</forename>
+                                    <surname>Ito</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Inorg.
+                                Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">36</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1997</sb:date>
+                                <biblScope unit="page" from="1608">1608</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB50" n="[50]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Luneau</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J</forename>
+                                    <surname>Laugier</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Rey</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Ulrich</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Legoll</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Drillon</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. Chem. Comm.</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1994</sb:date>
+                                <biblScope unit="page" from="741">741</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB51" n="[51]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Luneau</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">F.M</forename>
+                                    <surname>Romero</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. Chem. Comm.</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1998</sb:date>
+                                <biblScope unit="page" from="551">551</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB52" n="[52]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">D</forename>
+                                    <surname>Luneau</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">F.M</forename>
+                                    <surname>Romero</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Inorg.
+                                Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">37</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1998</sb:date>
+                                <biblScope unit="page" from="5078">5078</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <bibl xml:id="BIB53" n="[53]">Stroh C., Turek P., Ziessel R., Inorg. Chem.
+                        (soumis)</bibl>
+                    <biblStruct xml:id="BIB54" n="[54]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">J.F.W</forename>
+                                    <surname>Keana</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Chem.
+                                Rev.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">78</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1978</sb:date>
+                                <biblScope unit="page" from="37">37</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB55" n="[55]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Dugas</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Keroak</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Ptak</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Can. J.
+                                Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">62</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1984</sb:date>
+                                <biblScope unit="page" from="489">489</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB56" n="[56]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">J.F.W</forename>
+                                    <surname>Keana</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J</forename>
+                                    <surname>Cuomo</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">L</forename>
+                                    <surname>Lex</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">S.E</forename>
+                                    <surname>Seyedrazai</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J. Org.
+                                Chem.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">48</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1983</sb:date>
+                                <biblScope unit="page" from="2647">2647</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB57" n="[57]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Sosnovsky</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J</forename>
+                                    <surname>Lukszo</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P.L</forename>
+                                    <surname>Gutierrez</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Scheffler</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">Z.
+                                Naturforsch.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">42</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1987</sb:date>
+                                <biblScope unit="page" from="376">376</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB58" n="[58]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Ulrich</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Turek</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">A</forename>
+                                    <surname>De Cian</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">J</forename>
+                                    <surname>Fischer</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. Chem. Comm.</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1996</sb:date>
+                                <biblScope unit="page" from="2461">2461</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <bibl xml:id="BIB59" n="[59]">Turek P., Ulrich G., Ziessel R., résultats non
+                        publiés</bibl>
+                    <biblStruct xml:id="BIB60" n="[60]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Sosnovsky</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">M</forename>
+                                    <surname>Konieczny</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Synthesis</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1977</sb:date>
+                                <biblScope unit="page" from="619">619</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB61" n="[61]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">G</forename>
+                                    <surname>Ulrich</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">P</forename>
+                                    <surname>Turek</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Ziessel</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                >Tetrahedron Lett.</sb:maintitle>
+                            <imprint>
+                                <biblScope unit="vol">37</biblScope>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1996</sb:date>
+                                <biblScope unit="page" from="8755">8755</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB62" n="[62]">
+                        <analytic>
+                            <sb:authors xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+                                <sb:author>
+                                    <forename type="first">K</forename>
+                                    <surname>Araki</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">R</forename>
+                                    <surname>Nakamura</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">H</forename>
+                                    <surname>Otsuka</surname>
+                                </sb:author>
+                                <sb:author>
+                                    <forename type="first">S</forename>
+                                    <surname>Shinkai</surname>
+                                </sb:author>
+                            </sb:authors>
+                        </analytic>
+                        <monogr>
+                            <sb:maintitle
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">J.
+                                Chem. Soc. Chem. Comm.</sb:maintitle>
+                            <imprint>
+                                <sb:date
+                                    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                    >1995</sb:date>
+                                <biblScope unit="page" from="2121">2121</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <bibl xml:id="BIB63" n="[63]">Stroh C., Turek P., Ziessel R., Inorg. Chem
+                        (soumis)</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

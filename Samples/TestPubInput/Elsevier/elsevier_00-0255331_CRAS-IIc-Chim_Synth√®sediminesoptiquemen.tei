@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr"><teiHeader><fileDesc><titleStmt><title level="a" type="main">Synthèse d'imines optiquement pures par la technique micro-onde et
+            application à la préparation de nouvelles amines secondaires</title></titleStmt><publicationStmt><availability status="full-transfer"><date>2000</date><p>Éditions scientifiques et
+            médicales Elsevier SAS</p></availability></publicationStmt><sourceDesc><biblStruct><analytic><author><persName><forename type="first">Touati</forename><surname>Ridha</surname></persName><affiliation><orgName type="laboratory">Laboratoire de synthèse organique et photochimie</orgName><address><addrLine>faculté des sciences de Monastir</addrLine><addrLine>av. de l'environnement</addrLine><addrLine>5000 Monastir</addrLine><country key="TN">TUNISIA</country></address></affiliation></author><author type="corresp"><persName><forename type="first">Béchir Ben</forename><surname>Hassine</surname></persName><affiliation><orgName type="laboratory">Laboratoire de synthèse organique et photochimie</orgName><address><addrLine>faculté des sciences de Monastir</addrLine><addrLine>av. de l'environnement</addrLine><addrLine>5000 Monastir</addrLine><country key="TN">TUNISIA</country></address></affiliation></author><author><persName><forename type="first">Jean Pierre</forename><surname>Genêt</surname></persName><affiliation><orgName type="laboratory">Laboratoire de synthèse sélective organique et produits naturels</orgName><address><addrLine>UMR CNRS 7573</addrLine><addrLine>ENSCP</addrLine><addrLine>11</addrLine><addrLine>rue Pierre-et-Marie-Curie</addrLine><addrLine>75231 Paris cedex 05</addrLine><country key="FR">FRANCE</country></address></affiliation></author><title level="a" type="main">Synthèse d'imines optiquement pures par la technique micro-onde et
+            application à la préparation de nouvelles amines secondaires</title></analytic><monogr><title level="j" type="abbrev">PXCI</title><imprint><date type="Accepted" when="1999-10-29"/></imprint></monogr><idno type="DOI">10.1016/S1387-1609(00)00107-9</idno><idno type="PII">S1387-1609(00)00107-9</idno><idno type="publisherID">83</idno></biblStruct></sourceDesc></fileDesc><profileDesc><textClass><keywords><list><head>Mots-clé</head><item><term>micro-ondes</term></item><item><term>imines</term></item><item><term>amines secondaires</term></item><item><term>sélectivité</term></item><item><term>réduction</term></item></list></keywords></textClass></profileDesc><revisionDesc><change when="1999-08-26">Received</change><change when="1999-10-29">Accepted</change></revisionDesc></teiHeader><text><front><div type="abstract" xml:lang="en"><head>Abstract</head><p><hi rend="bold">Synthesis of optically pure imines using microwave
+                        activation and application to the preparation of new secondary
+                        amines.</hi> In this work we report the first synthesis of imines by
+                    activation with microwaves. We have observed that diastereofacial selectivity in
+                    the reduction of imines derived from (R)-1-cyclohexylethylamine depends on:
+                    solvent, temperature, hydride reagent and absolute configuration of the
+                    corresponding imine. © 2000 Académie des sciences/Éditions scientifiques et médicales
+                    Elsevier SAS<hi rend="bold">microwaves / imines /
+                        secondary amines / selectivity / reduction</hi></p></div><div type="abstract" xml:lang=""><head>Résumé</head><p>Au cours de ce travail, nous avons réalisé la
+                    synthèse d'une série d'imines en utilisant le chauffage par
+                    micro-ondes. Nous avons observé que la réduction
+                    diastéréosélective des imines qui dérivent de la
+                    (R)-1-cyclohexyléthylamine dépend de la nature du solvant, de la
+                    température, de l'agent de réduction et de la configuration
+                    absolue de l'imine de départ.</p></div></front><body><div type="ElsevierSections"><div n="1"><head>Introduction</head><p>Les amines secondaires optiquement pures sont d'une grande importance dans
+                    le domaine de la synthèse organique <ref target="#BIB1">[1]</ref>. En effet, elles peuvent être utilisées,
+                    soit comme agents de résolution <ref target="#BIB2 #BIB3">[2,3]</ref>, soit comme intermédiaires pour la
+                    préparation de substances biologiquement actives <ref target="#BIB4 #BIB5">[4,5]</ref> ou comme auxiliaires chiraux pour la
+                    synthèse asymétrique <ref target="#BIB6 #BIB7">[6,7]</ref>.</p><p>Au cours de ce travail, nous avons effectué la synthèse d'une
+                    série d'amines secondaires optiquement pures à partir des imines
+                    correspondantes. Rappelons qu'on accède généralement aux
+                    imines par condensation des amines primaires avec des aldéhydes ou des
+                        cétones; les études cinétiques sont
+                    en accord avec un mécanisme en deux étapes <ref target="#BIB8">[8]</ref> (<ref target="#SCH1"><hi rend="italic">schéma 1</hi></ref><ptr target="#SCH1"/>).</p><p>L'équilibre est déplacé dans le sens de la formation
+                    de l'imine par élimination de l'eau, qui se forme, soit par distillation
+                    azéotropique <ref target="#BIB9 #BIB10">[9,10]</ref>,
+                    soit en utilisant des dessiccants tels que le sulfate de magnésium
+                    anhydre, les tamis moléculaires (4 Å) <ref target="#BIB11 #BIB12">[11,12]</ref>, le tétrachlorure de
+                    titane en présence de triéthylamine <ref target="#BIB5">[5]</ref>, le chlorure de zinc <ref target="#BIB13">[13]</ref>, des catalyseurs complexes <ref target="#BIB14">[14]</ref>, etc.</p><p>Toutes ces condensations ont été réalisées dans
+                    un solvant organique, alors que d'autres condensations sur support solide
+                    (alumine) en milieu sec ont été décrites dans la
+                    littérature <ref target="#BIB15">[15]</ref>.</p></div><div n="2"><head>Choix de la méthode de préparation des
+                        <hi rend="italic">N</hi>-arylidenearylamines et des
+                    <hi rend="italic">N</hi>-arylidenealkylamines</head><p>Bien que les méthodes signalées précédemment
+                    aient permis d'obtenir des imines avec de bons rendements chimiques, elles
+                    présentent néanmoins certains inconvénients, dus notamment:<list><item><p>–à l'utilisation de
+                                solvants toxiques (benzène, toluène…);</p></item><item><p>–aux temps de réaction
+                                trop longs, généralement compris entre 24h et une semaine <ref target="#BIB10">[10]</ref>;</p></item><item><p>–aux étapes multiples de lavage et de
+                                filtration.</p></item></list></p><p>Afin d'écourter les temps des réactions et d'opérer
+                    dans de meilleures conditions, nous avons opté pour l'utilisation des
+                    micro-ondes comme source d'énergie. En effet, cette technique est
+                    largement appliquée dans le domaine de la chimie organique, en
+                    synthèse inorganique, en géochimie et en pharmacie (marquage des
+                    produits) <ref target="#BIB16">[16]</ref>, etc.</p><p>Ce mode de chauffage peut être appliqué, soit à des
+                    réactions lentes à niveau thermique élevé, soit pour
+                    déplacer un équilibre chimique par évaporation des
+                    substances polaires et volatiles, ce qui est le cas de notre travail
+                        (<ref target="#SCH2"><hi rend="italic">schéma
+                        2</hi></ref><ptr target="#SCH2"/>).</p><p>À titre d'exemple, nous citons deux cas caractéristiques de
+                    synthèse d'imines (<ref target="#SCH3 #SCH4"><hi rend="italic">schémas 3</hi> et
+                        <hi rend="italic">4</hi></ref><ptr target="#SCH3"/><ptr target="#SCH4"/>):<display><ce:table xmlns:ce="http://www.elsevier.com/xml/common/dtd"><tgroup><row><cell>Méthode classique</cell><cell>distillation azéotropique du benzène
+                                                10h/62% / (atmosphère d'argon)</cell></row><row><cell>Chauffage classique</cell><cell>800°C / 10h / 50% / sans solvant</cell></row><row><cell>Micro-ondes</cell><cell>400W / 3min /
+                                                70% / sans solvant</cell></row><row><cell>Méthode classique</cell><cell>tamis moléculaire (4Å) / 24h / 59%</cell></row><row><cell>Chauffage classique</cell><cell>1040°C /
+                                                2h / 64% /
+                                            sans solvant</cell></row><row><cell>Micro-ondes</cell><cell>400W / 2min /
+                                                67% / sans solvant</cell></row></tgroup></ce:table></display></p><p>Dans le cas du deuxième exemple, nous n'avons pas observé de
+                    racémisation, même partielle, du centre asymétrique de
+                    départ, ceci en comparant le pouvoir rotatoire spécifique de
+                    l'imine préparée en utilisant la technique micro-ondes avec celui
+                    de l'imine préparée selon la méthode classique.</p><p>Au cours de ce travail, nous avons préparé les imines
+                    suivantes (<ref target="#FIG1"><hi rend="italic">figure
+                        1</hi></ref><ptr target="#FIG1"/>). Les rendements
+                    correspondants sont consignés dans le <ref target="#TBL1"><hi rend="italic">tableau I</hi></ref><ptr target="#TBL1"/>.</p></div><div n="3"><head>Synthèse énantiosélective</head><p>Nous avons préparé quatre amines secondaires
+                    énantiomériquement pures en réduisant les
+                        <hi rend="italic">N</hi>-arylidène-1-cyclohexyléthylamines
+                    correspondantes optiquement pures (R) ou (S) préparées ci-dessus
+                    par NaBH<hi rend="subscript">4</hi> dans le méthanol (<ref target="#SCH5"><hi rend="italic">schéma 5</hi></ref><ptr target="#SCH5"/>).</p></div><div n="4"><head>Synthèse asymétrique
+                    diastéréoselective</head><p>La réduction des
+                        <hi rend="italic">N</hi>-<hi rend="italic">α</hi>-méthylarylidène-1-cyclohexyléthylamines
+                    énantiomériquement pures conduit aux amines secondaires
+                    correspondantes, selon le schéma réactionnel suivant
+                        (<ref target="#SCH6"><hi rend="italic">schéma
+                        6</hi></ref><ptr target="#SCH6"/>). Les rendements
+                    sont consignés dans le <ref target="#TBL2"><hi rend="italic">tableau
+                            II</hi></ref><ptr target="#TBL2"/>.</p><p>Les amines secondaires formées renferment chacune deux carbones
+                        asymétriques: un carbone, de configuration connue,
+                    existant préalablement dans l'imine de départ, et un nouveau
+                    centre, créé au cours de la réaction. Par
+                    conséquent, on a formation de deux diastéréoisomères
+                    dans des proportions variables. La
+                    diastéréosélectivité observée au cours de ces
+                    réactions est probablement due au fait que le centre de chiralité
+                    initialement présent dans la molécule d'imine est relativement
+                    proche du site réactionnel.</p><p>L'examen de la littérature <ref target="#BIB17 #BIB18">[17,18]</ref> montre que l'attaque nucléophile s'effectue
+                    préférentiellement du côté le moins encombré.
+                    En appliquant la règle de Cram <ref target="#BIB19">[19]</ref>, nous avons constaté que lorsque la
+                    configuration absolue de l'imine de départ est (R), le
+                    diastéréoisomère majoritaire aura la configuration (R, R)
+                        <ref target="#BIB11">[11]</ref>.</p><p>Nous avons tenté avec succès la séparation des amines
+                    diastéréoisomères par chromatographie en phase gazeuse
+                    (CPG) couplée à la spectrométrie de masse (voir partie
+                    expérimentale).</p><p>Nous remarquons chaque fois la présence de deux pics distincts,
+                    correspondant aux deux diastéréoisomères.</p><p>Le spectre de masse du diastéréoisomère premier
+                    élué confirme bien la structure. Il est identique à celui
+                    du second diastéréoisomère (deuxième
+                    élué).</p><p>Nous remarquons dans tous les cas que le
+                    diastéréoisomère majoritaire est élué en
+                    deuxième position en CPG (<ref target="#FIG2"><hi rend="italic">figure2</hi></ref><ptr target="#FIG2"/>).</p><p>Les résultats de la séparation sont reportés dans le
+                        <ref target="#TBL3"><hi rend="italic">tableau
+                        III</hi></ref><ptr target="#TBL3"/>. Toutes les
+                    amines secondaires chirales mises en œuvre donnent d'excellentes
+                    résolutions (<hi rend="italic">Rs</hi>), ce qui montre que ces amines
+                    peuvent être utilisées comme agents de dérivatisation
+                    chiraux, comme ce fut le cas pour la 1-phényléthylamine pour la
+                    détermination des puretés optiques, ainsi que pour la
+                    détermination des configurations absolues des acides, des acides
+                    aminés, etc.<hi rend="bold">Optimisation de la
+                        synthèse diastéréosélective</hi></p><p>Comme suite logique des travaux réalisés dans notre
+                    laboratoire <ref target="#BIB20">[20]</ref>, qui montrent
+                    l'influence des conditions expérimentales sur la variation de
+                    l'excès diastéréoisomérique, nous avons fait varier
+                    les conditions expérimentales (solvant, température et agent de
+                    réduction), afin de trouver les conditions expérimentales qui
+                    conduisent à l'excès diastéréoisomérique le
+                    plus élevé (<ref target="#TBL4"><hi rend="italic">tableau
+                            IV</hi></ref><ptr target="#TBL4"/>).<hi rend="italic"><hi rend="bold">Influence du
+                        solvant</hi></hi></p><p>En utilisant le méthanol à la place de l'éthanol, tout
+                    en conservant la même température et le même agent de
+                    réduction, on remarque que l'excès
+                    diastéréoisomérique passe de 21,2%
+                    à 46,6%. C'est pour cela qu'on a utilisé le
+                    méthanol comme solvant dans la suite du travail.<hi rend="italic"><hi rend="bold">Influence de la
+                        température</hi></hi></p><p>Lorsqu'on abaisse la température de +20°C à
+                    −70°C, l'excès diastéréoisomérique
+                    passe de 46,6 à 48%. Cette variation est peu
+                        significative.<hi rend="italic"><hi rend="bold">Influence
+                            de l'agent réducteur</hi></hi></p><p>L'utilisation du cyanoborohydrure de sodium (NaBH<hi rend="subscript">3</hi>CN)
+                    comme agent de réduction augmente la
+                    diastéréosélectivité de la réaction; on passe de 46 à 52,6%. Ceci est dû probablement
+                    à l'encombrement stérique du radical cyano durant le processus de
+                    réduction.</p></div><div n="5"><head>Conclusion</head><p>Au cours de ce travail, nous avons utilisé le chauffage par
+                    micro-ondes comme source d’énergie pour préparer une
+                    série d'imine et des imines optiquement pures. Cette technique a permis
+                    d'accéder aux composés désirés, avec des rendements
+                    comparables à ceux des méthodes classiques, mais en des temps
+                    beaucoup plus courts. La réduction de ces imines a permis de
+                    préparer avec de bons rendements chimiques les amines secondaires
+                    correspondantes, optiquement pures. Les amines secondaires obtenues sont des
+                    produits nouveaux, qui vont être valorisées comme agents de
+                    résolution ou comme auxiliaires chiraux pour la synthèse
+                    asymétrique. Nous avons réalisé une optimisation des
+                    conditions expérimentales (température, solvant et agent de
+                    réduction), afin d'aboutir aux meilleurs rendements.</p></div><div n="6"><head>Partie expérimentale</head><p>Les points de fusion ont été déterminés sur un
+                    appareil Büchi et n'ont pas été corrigés.</p><p>Les spectres de masse ont été réalisés en
+                    impact électronique, sur un appareil Hewlett Packard 5792, couplé
+                    à un chromatographe en phase gazeuse HP-5890A, constitué d'une
+                    colonne capillaire de longueur 25m, remplie d'une phase
+                        stationnaire: 5%
+                        diphényl/95% diméthylpolysiloxane.
+                        <hi rend="italic">T</hi><hi rend="subscript">injecteur</hi>=250°C;
+                        <hi rend="italic">T</hi><hi rend="subscript">détecteur</hi>=280°C; 120°C
+                        (2min) → (5°C·min<hi rend="superscript">–1</hi>) → 260°C (15min).</p><p>Le four micro-onde utilisé est un four domestique Rowenta MW76, de puissance restituée 750W.</p><p>Les spectres de résonance magnétique nucléaire ont
+                    été réalisés en solution dans le chloroforme
+                    deutérié (CDCl<hi rend="subscript">3</hi>), soit sur un appareil Bruker
+                    Spectroscopin AC 250 (250MHz), soit sur un appareil Hitachi
+                    Perkin Elmer R 24 B (60MHz). Le standard interne
+                    utilisé est le tétraméthylsilane (TMS) et les
+                    déplacements chimiques <hi rend="italic">δ</hi> (ppm) sont
+                    positifs vers les champs bas par rapport au TMS. Les spectres infrarouges ont
+                    été réalisés à l'aide d'un appareil Perkin
+                    Elmer 197 et d'un appareil Biorad à transformée de Fourier FTS
+                    6000.</p><div n="6.1"><head>Synthèse des imines</head><div n="6.1.1"><head>Utilisation des micro-ondes</head><p>Dans un réacteur cylindrique en Pyrex adapté au
+                            réacteur micro-ondes, on introduit 20mmol
+                            d'aldéhyde fraı̂chement purifié avec
+                                25mmol d'amine sans solvant.</p><p>Le mélange réactionnel est
+                            homogénéisé, puis irradié sous micro-ondes,
+                            avec agitation mécanique durant le temps requis (2 à 3
+                            min).</p></div><div n="6.1.2"><head>Méthode classique</head><p>On place dans un ballon monocol 20mmol de la
+                            cétone et 25mmol de
+                            (R)-1-cyclohexyléthylamine, ainsi que 0,5mmol
+                            d'acide <hi rend="italic">p</hi>-toluènesulfonique.</p><p>On ajoute ensuite 100mL de toluène, puis
+                            on adapte sur ce ballon l'appareil de Deanstark et un
+                            réfrigérant. On chauffe au reflux (pendant 5 à
+                                8h), jusqu'à ce que la quantité
+                            théorique d'eau soit recueillie dans le piège (ou
+                            jusqu’à disparition des réactifs par CCM). On
+                            laisse refroidir, puis on chasse le toluène à
+                            l'évaporateur rotatif.</p><p><hi rend="bold">1°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-benzylidène-1-naphtylamine: Ia</hi><hi rend="subscript">1</hi><hi rend="bold">.</hi>
+                                Rdt: 90%;
+                            cristaux marrons;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=73–74°C; (hexane/acétate d'éthyle
+                                80/20); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi> (ppm)=8,43 (s, 1H,
+                                CHN); 6,9–8,36 (m,
+                            12H, aromatiques); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1626;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi>
+                            <hi rend="subscript">arom</hi>=1576.</p><p><hi rend="bold">2°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-2-nitrobenzylidène-1-naphtylamine: Ia</hi><hi rend="subscript">2</hi><hi rend="bold">.</hi>
+                                Rdt: 73%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=100°C (éthanol); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>): <hi rend="italic">δ</hi>(ppm)=8,84 (s, 1H, CHN); 7,05–8,69 (m, 11H aromatiques); IR (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1630;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi>
+                            <hi rend="subscript">arom</hi>=1 595.</p><p><hi rend="bold">3°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-3-nitrobenzylidène-1-naphtylamine:
+                                Ia</hi><hi rend="subscript"><hi rend="bold">3</hi></hi><hi rend="bold">.</hi>
+                                Rdt: 77%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=115°C (éthanol); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,62 (s, 1H,
+                                CHN); 7,03–8,53
+                            (m, 11H aromatiques); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                ν<hi rend="subscript">CN</hi>=1630; ν<hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1580.</p><p><hi rend="bold">4°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-nitrobenzylidène-1-naphtylamine: Ia</hi><hi rend="subscript">4</hi><hi rend="bold">.</hi>
+                                Rdt: 86%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=160°C (éthanol); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi> (ppm)=8,53 (s, 1H,
+                                CHN); 7,01–8,54
+                            (m, 11H aromatiques); IR
+                                (cm<hi rend="superscript">–1</hi>) :
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1535;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1605.</p><p><hi rend="bold">5°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-chlorobenzylidène-1-naphtylamine: Ia</hi><hi rend="subscript">5</hi><hi rend="bold">.</hi>
+                                Rdt: 88%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=105°C (éthanol); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,46 (s, 1H,
+                                CHN); 6,9–8,33 (m,
+                            11H aromatiques); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                ν<hi rend="subscript">CN</hi>=1640; ν<hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1600. SM: C<hi rend="subscript">17</hi>H<hi rend="subscript">12</hi>NCl;
+                                PM=265; obs
+                                <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=265
+                                (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=100%);
+                                <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=127
+                                (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                                C<hi rend="subscript">7</hi>H<hi rend="subscript">5</hi>NCl=72%).</p><p><hi rend="bold">6°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-benzylidènephénylamine: Ib</hi><hi rend="subscript">1</hi><hi rend="bold">.</hi>
+                                Rdt: 82%;
+                            cristaux blancs;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=51–52°C (éther de pétrole); RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>): <hi rend="italic">δ</hi>(ppm)=8,42 (s, 1H, CHN);
+                            7,13–7,96 (m, 12H aromatiques); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1630;
+                                ν<hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1585.</p><p><hi rend="bold">7°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-2-nitrobenzylidènephénylamine: Ib</hi><hi rend="subscript">2</hi><hi rend="bold">.</hi>
+                                Rdt: 84%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=45°C (éther de pétrole);
+                                RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,9 (s, 1H,
+                                CHN); 7,16–8,36
+                            (m, 9H aromatiques); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1630;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610.</p><p><hi rend="bold">8°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-3-nitrobenzylidènephénylamine: Ib</hi><hi rend="subscript">3</hi><hi rend="bold">.</hi>
+                                Rdt: 75%; cristaux
+                                jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=82°C (éther de pétrole);
+                                RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,66 (s, 1H,
+                                CHN); 7,06–8,36
+                            (m, 9H aromatiques); IR (cm<hi rend="superscript">–1</hi>): <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1630;
+                                    <hi rend="italic">ν</hi><hi rend="subscript">CCarom</hi>=1580; SM:
+                                C<hi rend="subscript">13</hi>H<hi rend="subscript">10</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=226; obs 226
+                                (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=15,53%);
+                                <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=77
+                                (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                                C<hi rend="subscript">7</hi>H<hi rend="subscript">5</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>: 100%).</p><p><hi rend="bold">9°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-nitrobenzylidènephénylamine: Ib</hi><hi rend="subscript">4</hi><hi rend="bold">.</hi>
+                                Rdt: 83%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=88°C (éther de pétrole);
+                                RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,5 (s, 1H,
+                                CHN); 7,06–7,53
+                            (m, 9H aromatiques); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1635;
+                                    <hi rend="italic">ν</hi><hi rend="subscript">CCarom</hi>=1590; SM:
+                                C<hi rend="subscript">13</hi>H<hi rend="subscript">10</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=226; obs 226
+                                (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=100%);
+                                <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=77(<hi rend="italic">M</hi><hi rend="superscript">+</hi>=C<hi rend="subscript">7</hi>H<hi rend="subscript">5</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; 59%).</p><p><hi rend="bold">10°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-chlorobenzylidènephénylamine: Ib</hi><hi rend="subscript">5</hi><hi rend="bold">.</hi>
+                                Rdt: 79%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=59°C (éther de pétrole);
+                                RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,28 (s, 1H,
+                                CHN); 6,85–7,77
+                            (m, 9H aromatiques); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1630;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1585.</p><p><hi rend="bold">11°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-méthylbenzylidènephenylamine: Ib</hi><hi rend="subscript">6</hi><hi rend="bold">.</hi>
+                                Rdt: 64%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=40°C
+                                (pentane); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=2,2 (s, 3H,
+                                CH<hi rend="subscript">3</hi>); 6,9–7,3 (m, 5H);
+                            7,42–8,1 (m, 5H); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1635;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1600.</p><p><hi rend="bold">12°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-méthyl-3-nitrobenzylidènephenylamine: Ib</hi><hi rend="subscript">7</hi><hi rend="bold">.</hi>
+                                Rdt: 70%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=88°C (éther de pétrole/acétate
+                                d'éthyle; 90/10);
+                                RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm): 2,3 (s, 3H, CH<hi rend="subscript">3</hi>);
+                            6,75–8,8 (m, 10H); RMN <hi rend="superscript">13</hi>C (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=(17,34,
+                                CH<hi rend="subscript">3</hi>); (119,2;
+                                122,2; 123,8; 124,9; 129,12; 129,41;
+                                133; 141,1; 148,47; C<hi rend="subscript">arom</hi>);
+                                (150,83; CN);
+                                (163,23; CNO<hi rend="subscript">2</hi>) IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1640;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610.</p><p><hi rend="bold">13°)</hi>
+                            <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-méthyl-4-nitrobenzylidènephenylamine: Ib</hi><hi rend="subscript">8</hi><hi rend="bold">.</hi>
+                                Rdt: 66%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=91–92°C (éther de pétrole/acétate d'éthyle; 80/20); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=2,66 (s, 3H,
+                                CH<hi rend="subscript">3</hi>); 6,73–7,4 (m,
+                                5H); 8–8,36 (m, 5H); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1640;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610.</p><p><hi rend="bold">14°)
+                                (R)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-3-nitrobenzylidène-1-cyclohexyléthylamine: Ic</hi><hi rend="subscript">1</hi><hi rend="bold">.</hi>
+                                Rdt: 60%;
+                            huile jaune; RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,32 (s, 1H,
+                                CHN); 7,82–8,28 (m, 4H
+                                aromatiques); 1,05–2,2 (m, 15H); IR (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1650;
+                                    <hi rend="italic">ν</hi><hi rend="subscript">CCarom</hi>=1615;
+                            [<hi rend="italic">α</hi>]<hi rend="subscript">D</hi>=+91° (C=1;
+                                CHCl<hi rend="subscript">3</hi>).</p><p><hi rend="bold">15°)
+                                (R)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-nitrobenzylidène-1-cyclohexyléthylamine: Ic</hi><hi rend="subscript">2</hi><hi rend="bold">.</hi>
+                                Rdt: 64%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=35–37°C (éthanol/eau;
+                                80/20); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,25 (s, 1H,
+                                CHN); 7,8–8,23 (m, 4H); 0,9–2,1 (m, 15H); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1650;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610;
+                            [<hi rend="italic">α</hi>]<hi rend="subscript">D</hi>=−46°,
+                                (C=1; CHCl<hi rend="subscript">3</hi>).</p><p><hi rend="bold">16°)
+                                (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-nitrobenzylidène-1-cyclohexyléthylamine: Ic</hi><hi rend="subscript">3</hi><hi rend="bold">.</hi>
+                                Rdt: 67%;
+                            cristaux jaunes;
+                                <hi rend="italic">P</hi><hi rend="subscript">f</hi>=35–37°C (éthanol/eau;
+                                80/20); RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=8,25 (s, 1H,
+                                CHN); 7,8–8,23 (m, 4H); 0,9–2,1 (m, 15H); IR
+                                (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1650;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610; SM:
+                                C<hi rend="subscript">15</hi>H<hi rend="subscript">20</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=260; obs 260
+                                (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=3,12%);
+                                <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=177
+                                (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                                C<hi rend="subscript">6</hi>H<hi rend="subscript">11</hi>=100%);
+                                [<hi rend="italic">α</hi>]<hi rend="subscript">D</hi>=+43°(C=1; CHCl<hi rend="subscript">3</hi>).</p><p><hi rend="bold">17°)
+                                (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-3-nitrobenzylidène-1-cyclohexyléthylamine: Ic</hi><hi rend="subscript">8</hi><hi rend="bold">.</hi>
+                                Rdt: 61%;
+                            huile jaune; RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi> (ppm)=8,32 (s, 1H,
+                                CHN); 7,82–8,28 (m, 4H
+                                arom); 1,05–2,2 (m, 15H); IR (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1650;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1615;
+                                [<hi rend="italic">α</hi>]<hi rend="subscript">D</hi>=−82° (C=1;
+                                CHCl<hi rend="subscript">3</hi>).</p><p><hi rend="bold">18°)
+                                (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-méthyl-2-nitrobenzylidène-1-cyclohexyléthylamine: Ic</hi><hi rend="subscript">4.</hi> Rdt: 55%; huile
+                                jaune; RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi> (ppm)=2,36 (s, 3H,
+                                CH<hi rend="subscript">3</hi>); 7,1–7,9 (m, 4H
+                                arom); 0,8–2,3 (m, 15H cyclohexyle); IR (cm<hi rend="superscript">-1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1645;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610.</p><p><hi rend="bold">19°)
+                                (R)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-méthyl-3-nitrobenzylidène-1-cyclohexylethylamine: Ic</hi><hi rend="subscript">5</hi><hi rend="bold">.</hi>
+                                Rdt: 58%;
+                            huile jaune; RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm)=2,48 (s, 3H,
+                                CH<hi rend="subscript">3</hi>); 7,21–8,1 (m, 4H
+                                arom); 0,7–2,1 (m, 15H cyclohexyle); IR (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1640;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610.</p><p><hi rend="bold">20°)
+                                (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-méthyl-3-nitrobenzylidène-1-cyclohexylethylamine: Ic</hi><hi rend="subscript">6</hi><hi rend="bold">.</hi>
+                                Rdt: 56%;
+                            huile jaune; RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm) 2,48 (s, 3H,
+                                CH<hi rend="subscript">3</hi>); 7,21–8,1 (m, 4H
+                                arom); 0,7–2,1 (m, 15H cyclohexyle); IR (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1640;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610.</p><p><hi rend="bold">21°)
+                                (R)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-4-nitrobenzylidène-1-cyclohexylethylamine: Ic</hi><hi rend="subscript">7</hi><hi rend="bold">.</hi>
+                                Rdt: 62%;
+                            huile jaune; RMN<hi rend="superscript">1</hi>H
+                                (CDCl<hi rend="subscript">3</hi>):
+                                <hi rend="italic">δ</hi>(ppm) 2,65 (s, 3H,
+                                CH<hi rend="subscript">3</hi>); 7,33–8,2 (m, 4H
+                                arom); 0,7–2,5 (m, 15H cyclohexyle); IR (cm<hi rend="superscript">–1</hi>):
+                                <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1640;
+                                <hi rend="italic">ν</hi><hi rend="subscript">CC</hi><hi rend="subscript">arom</hi>=1610.</p></div></div><div n="6.2"><head>Synthèse des amines</head><p>Dans un ballon de 250mL, on introduit 10mmol d'imine et 50mL de méthanol
+                        anhydre. On laisse refroidir, puis on ajoute 20mmol de
+                        borohydrure de sodium. Après deux heures d'agitation, on ajoute
+                            100mL d'une solution saturée de NaCl et on
+                        extrait deux fois avec 20mL de dichlorométhane. La
+                        phase organique est séchée sur du sulfate de magnésium
+                        anhydre. Après filtration, le solvant est chassé à
+                        l’évaporateur rotatif et le résidu obtenu est
+                        chromatographié sur colonne [SiO<hi rend="subscript">2</hi>/hexane–acétate d'éthyle
+                        (80:20)].</p><p><hi rend="bold">1°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-benzyl-1-naphtylamine: Aa</hi><hi rend="subscript">1</hi><hi rend="bold">.</hi>
+                            Rdt: 82%;
+                        aiguilles grises;
+                            <hi rend="italic">P</hi><hi rend="subscript">f</hi>=64–65°C; (éther de pétrole);
+                            RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi>(ppm) 3,9 (s,
+                            1H); 4,41 (s, 2H); 6,5–7,83
+                        (m, 12H); IR (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3431;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1407.</p><p><hi rend="bold">2°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-2-nitrobenzyl-1-naphtylamine: Aa</hi><hi rend="subscript">2</hi><hi rend="bold">.</hi>
+                            Rdt: 61%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi> (ppm) 4,03 (s, 1H);
+                        4,52 (s, 2H); 6,56–7,9 (m, 11H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3 445;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1340.</p><p><hi rend="bold">3°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-3-nitrobenzyl-1-naphtylamine: Aa</hi><hi rend="subscript">3</hi><hi rend="bold">.</hi>
+                            Rdt: 63%; huile jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi> (ppm): 4,11 (s,
+                            1H); 4,48 (s, 2H); 6,53–7,88 (m, 11H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            ν<hi rend="subscript">NH</hi>=3450;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1340.</p><p><hi rend="bold">4°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-nitrobenzyl-1-naphtylamine:
+                            Aa</hi><hi rend="subscript">4</hi><hi rend="bold">.</hi> Rdt: 70%; huile jaune; RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi> (ppm) 4,1 (s, 1H);
+                        4,47 (s, 2H); 6,51–7,86 (m, 11H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3450;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1345.</p><p><hi rend="bold">5°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-chlorobenzyl-1-naphtylamine: Aa</hi><hi rend="subscript">5</hi><hi rend="bold">.</hi>
+                            Rdt: 83%;
+                        cristaux gris;
+                            <hi rend="italic">P</hi><hi rend="subscript">f</hi>=49°C; (éther de pétrole);
+                            RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi>(ppm)=3,89 (s,
+                            1H); 4,39 (s, 2H); 6,5–7,78
+                            (m,11H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3460;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1340.</p><p><hi rend="bold">6°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-benzylphénylamine: Ab</hi><hi rend="subscript">1</hi><hi rend="bold">.</hi>
+                            Rdt: 82%;
+                        cristaux blancs;
+                            <hi rend="italic">P</hi><hi rend="subscript">f</hi>=37–38°C; (méthanol);
+                        RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi>(ppm) 3,93 (s,
+                            1H); 4,26 (s, 2H);
+                        6,56–7,33 (m, 10H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3405;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1320.</p><p><hi rend="bold">7°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-2-nitrobenzylphénylamine: Ab</hi><hi rend="subscript">2</hi><hi rend="bold">.</hi>
+                            Rdt: 80%;
+                        cristaux orangés;
+                            <hi rend="italic">P</hi><hi rend="subscript">f</hi>=36°C; (éther de pétrole); RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>): <hi rend="italic">δ</hi>(ppm)=4,43 (s, 1H); 4,6 (s, 2H);
+                        6,53–8,06 (m, 9H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3435;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1360; SM:
+                            C<hi rend="subscript">13</hi>H<hi rend="subscript">12</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=228; obs 228
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=38,8%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z=</hi>180
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            NO<hi rend="subscript">2</hi>; 100%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=77
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            C<hi rend="subscript">7</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>H<hi rend="subscript">7</hi>=80,5%).</p><p><hi rend="bold">8°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-3-nitrobenzylphénylamine: Ab</hi><hi rend="subscript">3</hi><hi rend="bold">.</hi>
+                            Rdt: 84%; cristaux
+                            orangés;
+                            <hi rend="italic">P</hi><hi rend="subscript">f</hi>=82°C; (éther de pétrole); RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>): <hi rend="italic">δ</hi>(ppm)=4,26 (s, 1H); 4,45 (s, 2H);
+                        6,6–8,24 (m, 9H); IR
+                        (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3420;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1350; SM:
+                            C<hi rend="subscript">13</hi>H<hi rend="subscript">12</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=228; obs 228
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=88,34%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=106
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            C<hi rend="subscript">6</hi>H<hi rend="subscript">4</hi>NO<hi rend="subscript">2</hi>=100%).</p><p><hi rend="bold">9°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-nitrobenzylphénylamine: Ab</hi><hi rend="subscript">4</hi><hi rend="bold">.</hi>
+                            Rdt: 83%;
+                        cristaux orangés;
+                            <hi rend="italic">P</hi><hi rend="subscript">f</hi>=86°C; (éther de pétrole); RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>): <hi rend="italic">δ</hi>(ppm)=4,23 (s, 1H); 4,46 (s, 2H);
+                        6,56–8,21 (m, 9H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3380;
+                            ν<hi rend="subscript">CN</hi>=1345.</p><p><hi rend="bold">10°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-chlorobenzylphénylamine:
+                            Ab</hi><hi rend="subscript"><hi rend="bold">5</hi></hi><hi rend="bold">.</hi>
+                            Rdt: 60%;
+                        cristaux jaunes;
+                            <hi rend="italic">P</hi><hi rend="subscript">f</hi>=52°C; (éther de pétrole); RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>): <hi rend="italic">δ</hi> (ppm)=3,9 (s, 1H); 4,1(s, 2H); 6,88–7,55 (m, 9H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3410;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1340.</p><p><hi rend="bold">11°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-phenéthylphénylamine: Ab</hi><hi rend="subscript">6</hi><hi rend="bold">.</hi>
+                            Rdt: 61%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi>(ppm)=3,96 (s,
+                            1H); 4,23–4,29 (q, 1H);
+                        1,3–1,42 (d, 3H); 6,41–7,37 (m, 10H); IR (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3380;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1320.</p><p><hi rend="bold">12°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-(3-nitrophenéthyl)-phénylamine: Ab</hi><hi rend="subscript">7</hi><hi rend="bold">.</hi>
+                            Rdt: 63%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi> (ppm)=4,1 (s, 1H); 4,45–4,8 (q,
+                            1H); 1,3–1,42 (d, 3H);
+                        6,41–7,37 (m, 9H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3420;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1335.</p><p><hi rend="bold">13°)</hi>
+                        <hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-(4-nitrophenéthyl)-phénylamine: Ab</hi><hi rend="subscript">8</hi><hi rend="bold">.</hi>
+                            Rdt: 65%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>);
+                            <hi rend="italic">δ</hi> (ppm)=4,06 (s, 1H);
+                        4,36–4,7 (q, 1H); 1,43–1,5 (d, 3H); 6,33–8,16 (m, 9H); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3420;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1330; SM:
+                            C<hi rend="subscript">14</hi>H<hi rend="subscript">14</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM: 242, obs 242
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=37,86%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=227
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            CH<hi rend="subscript">3</hi>=100%).</p><p><hi rend="bold">14°)
+                            (R)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-3-nitrobenzyl-1-cyclohexyléthylamine: Ac</hi><hi rend="subscript">1</hi><hi rend="bold">.</hi>
+                            Rdt: 61%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi> (ppm)=3,9 (s, 1H);
+                        4,1(s, 2H); 0,9–2,2 (m, 15 H);
+                        7,3–8,3 (m, 4H aromatiques); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3450;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1370.</p><p><hi rend="bold">15°)
+                            (R)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-nitrobenzyl-1-cyclohexyléthylamine: Ac</hi><hi rend="subscript">2</hi><hi rend="bold">.</hi>
+                            Rdt: 63%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi> (ppm)=3,6 (s, 1H);
+                        3,88 (s, 1H); 0,8–2,5 (m, 15H);
+                        7,4–8,18 (m, 4H aromatiques); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3440;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1380; SM:
+                            C<hi rend="subscript">15</hi>H<hi rend="subscript">22</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>;
+                            PM=262; obs 262
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=0,1%)
+                            <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=179(M<hi rend="superscript">+</hi>C<hi rend="subscript">6</hi>H<hi rend="subscript">11</hi>: 100%).</p><p><hi rend="bold">16°)
+                            (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-4-nitrobenzyl-1-cyclohexyléthylamine: Ac</hi><hi rend="subscript">3</hi><hi rend="bold">.</hi>
+                            Rdt: 60%; huile
+                        jaune. RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi>(ppm)=3,6 (s,
+                            1H); 3,88 (s, 2H); 0,8–2,5
+                        (m, 15H); 7,4–8,18 (m, 4H arom); IR (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3440;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1380; SM:
+                            C<hi rend="subscript">15</hi>H<hi rend="subscript">22</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=262; obs 262
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=0,1%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=179
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            C<hi rend="subscript">6</hi>H<hi rend="subscript">11</hi>=100%).</p><p><hi rend="bold">17°)
+                            (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-(2-nitrophenéthyl)-1-cyclohexyléthylamine: Ac</hi><hi rend="subscript">4</hi><hi rend="bold">.</hi>
+                            Rdt: 58%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi>(ppm)=4,2–4,7
+                        (m, 3H); 0,8–2,2 (m, 18H);
+                        7,2–8,1 (m, 4H arom); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3460;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1400; SM:
+                            C<hi rend="subscript">16</hi>H<hi rend="subscript">24</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=276; obs 276
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=0,05%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=193
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            C<hi rend="subscript">6</hi>H<hi rend="subscript">11</hi>=100%).</p><p><hi rend="bold">18°)
+                            (R)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-(3-nitrophenéthyl)-1-cyclohexyléthylamine: Ac</hi><hi rend="subscript">5</hi><hi rend="bold">.</hi>
+                            Rdt: 68%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>):
+                            <hi rend="italic">δ</hi> (ppm): 4–4,6
+                        (m, 3H); 0,7–2,1 (m, 18H);
+                        7,1–7,95 (m, 4H arom); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3470;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1390; SM:
+                            C<hi rend="subscript">16</hi>H<hi rend="subscript">24</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=276, obs 276
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=0,05%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=193
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            C<hi rend="subscript">6</hi>H<hi rend="subscript">11</hi>=100%).</p><p><hi rend="bold">19°)
+                            (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-(3-nitrophenéthyl)-1-cyclohexyléthylamine: Ac</hi><hi rend="subscript">6</hi><hi rend="bold">.</hi>
+                            Rdt: 70%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>);
+                            <hi rend="italic">δ</hi> (ppm): 4–4,6 (m, 3H); 0,7–2,1 (m, 18H); 7,1–7,95
+                        (m, 4H arom); IR (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3470;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1390; SM:
+                            C<hi rend="subscript">16</hi>H<hi rend="subscript">24</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=276, obs 276
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>=0,05%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z=</hi>193
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            C<hi rend="subscript">6</hi>H<hi rend="subscript">11</hi>=100%).</p><p><hi rend="bold">20°)
+                            (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-α-(4-nitrophenéthyl)-1-cyclohexyléthylamine: Ac</hi><hi rend="subscript">7</hi><hi rend="bold">.</hi>
+                            Rdt: 77%; huile jaune; RMN<hi rend="superscript">1</hi>H (CDCl<hi rend="subscript">3</hi>); <hi rend="italic">δ</hi>(ppm)=3,3–4,2 (m, 3H); 0,8–2,6 (m,
+                            18H); 7,4–8,2 (m, 4H arom);
+                        IR (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3460;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1380; SM:
+                            C<hi rend="subscript">16</hi>H<hi rend="subscript">24</hi>N<hi rend="subscript">2</hi>O<hi rend="subscript">2</hi>; PM=276; obs 276
+                            (M<hi rend="superscript">+</hi>=0,05%);
+                            <hi rend="italic">m</hi>/<hi rend="italic">z</hi>=193
+                            (<hi rend="italic">M</hi><hi rend="superscript">+</hi>
+                            C<hi rend="subscript">6</hi>H<hi rend="subscript">11</hi>=100%).</p><p><hi rend="bold">21°)
+                            (S)-</hi><hi rend="italic"><hi rend="bold">N</hi></hi><hi rend="bold">-3-nitrobenzyl-1-cyclohexyléthylamine: Ac</hi><hi rend="subscript">8</hi><hi rend="bold">.</hi>
+                            Rdt: 63%; huile
+                            jaune; RMN<hi rend="superscript">1</hi>H
+                            (CDCl<hi rend="subscript">3</hi>);
+                            <hi rend="italic">δ</hi>(ppm)=3,9 (s,
+                            1H); 4,1 (s, 2H); 0,9–2,2 (m, 15 H);
+                        7,3–8,3 (m, 4H arom); IR
+                            (cm<hi rend="superscript">–1</hi>):
+                            <hi rend="italic">ν</hi><hi rend="subscript">NH</hi>=3450;
+                            <hi rend="italic">ν</hi><hi rend="subscript">CN</hi>=1370.</p></div></div></div></body><back><div type="references"><head>Références</head><listBibl><biblStruct xml:id="BIB1" n="[1]"><analytic><author><forename type="first">B.</forename><surname>Tae cho</surname></author><author><forename type="first">Y.S.</forename><surname>Chun</surname></author></analytic><monogr><title type="main">Tetrahedron, Asymmetry</title><imprint><biblScope unit="vol">3</biblScope><date when="1992">1992</date><biblScope unit="page" from="1583">1583</biblScope></imprint></monogr></biblStruct><bibl xml:id="BIB2" n="[2]">Jacques J., Collet A., Wilen S.H., Enantiomers, Racemates and
+                            Resolution, John Wiley and Sons, New York, NY, 1981.</bibl><biblStruct xml:id="BIB3" n="[3]"><analytic><author><forename type="first">W.M.</forename><surname>Pirkel</surname></author><author><forename type="first">T.C.</forename><surname>Pochapsky</surname></author><author><forename type="first">G.S.</forename><surname>Mahler</surname></author><author><forename type="first">D.S.</forename><surname>Coney</surname></author><author><forename type="first">D.S.</forename><surname>Reno</surname></author><author><forename type="first">D.M.</forename><surname>Aessi</surname></author></analytic><monogr><title type="main">J. Org. Chem.</title><imprint><biblScope unit="vol">51</biblScope><date when="1986">1986</date><biblScope unit="page" from="4991">4991</biblScope></imprint></monogr></biblStruct><bibl xml:id="BIB4" n="[4]">(a) Mosser M., Rihs G., Sauter H., Z. Naturforsch. B 376 (1982);
+                            (b) Suzuki Y., Takahashi H., Chem. Pharm. Bull. 31 (1983)
+                            2895.</bibl><bibl xml:id="BIB5" n="[5]">Ukaji Y., Watai T., Sumi T., Fujisawa T., Chem. Lett. (1991)
+                            1555.</bibl><bibl xml:id="BIB6" n="[6]">Whitesell J.K., Chem. Rev. 89 (1989) 1581 et réf.
+                            citées.</bibl><bibl xml:id="BIB7" n="[7]">(a) Shimizu M., Iida T., Fujisawa T., Chem. Lett. (1995)
+                                609; (b) Valentine D., Scott J.W., Synthesis
+                            (1978) 347.</bibl><bibl xml:id="BIB8" n="[8]">Barton D., Ollis W.D., Comprehensive Organic Chemistry, the
+                            Synthesis and Reaction of Organic Compounds, vol. II, p.385.</bibl><bibl xml:id="BIB9" n="[9]">(a) Frahm A.W., Knupp G.; Tetrahedron Lett. 22 (1981)
+                                2636; (b) Leardini R., Nanni D., Tundo A.,
+                            Zanardi G., Ruggieri F., J. Org. Chem. 57 (1992) 1842.</bibl><bibl xml:id="BIB10" n="[10]">Charles J.P., Christol H., Solladie G., Bull. Soc. Chim. France
+                            (1970) 4439.</bibl><biblStruct xml:id="BIB11" n="[11]"><analytic><author><forename type="first">M.</forename><surname>Midland</surname></author><author><forename type="first">R.</forename><surname>Koops</surname></author></analytic><monogr><title type="main">J. Org. Chem.</title><imprint><biblScope unit="vol">57</biblScope><date when="1992">1992</date><biblScope unit="page" from="1158">1158</biblScope></imprint></monogr></biblStruct><biblStruct xml:id="BIB12" n="[12]"><analytic><author><forename type="first">R.</forename><surname>Sreekumar</surname></author><author><forename type="first">C.N.</forename><surname>Pillai</surname></author></analytic><monogr><title type="main">Tetrahedron–Asymmetry</title><imprint><biblScope unit="vol">4</biblScope><date when="1993">1993</date><biblScope unit="page" from="2095">2095</biblScope></imprint></monogr></biblStruct><biblStruct xml:id="BIB13" n="[13]"><analytic><author><forename type="first">J.H.</forename><surname>Billmann</surname></author><author><forename type="first">K.M.</forename><surname>Tai</surname></author></analytic><monogr><title type="main">J. Org. Chem.</title><imprint><biblScope unit="vol">23</biblScope><date when="1958">1958</date><biblScope unit="page" from="535">535</biblScope></imprint></monogr></biblStruct><biblStruct xml:id="BIB14" n="[14]"><analytic><author><forename type="first">F.</forename><surname>Dumas</surname></author><author><forename type="first">V.</forename><surname>Maine</surname></author><author><forename type="first">G.</forename><surname>Cave</surname></author><author><forename type="first">J.</forename><surname>D'Angelo</surname></author></analytic><monogr><title type="main">Tetrahedron–Asymmetry</title><imprint><biblScope unit="vol">5</biblScope><date when="1994">1994</date><biblScope unit="page" from="339">339</biblScope></imprint></monogr></biblStruct><bibl xml:id="BIB15" n="[15]">Texier-Boullet F., Synthesis (1985) 679.</bibl><bibl xml:id="BIB16" n="[16]">(a) Loupy A., Petit A., Hamelin J., Texier-Boullet F., Jacquault
+                            P., Mathé D., Synthesis (1998) 1213; (b) Loupy
+                            A., Bram G., Sansoulet J.; New J. Chem. 16 (1992)
+                                233; (c) Thuery J., Les micro-ondes et leurs
+                            effets sur la matière, Tech. et Doc. Lavoisier, 1989; (d) Forogeat M., Marchand C., Les applications
+                            industrielles des rayonnements micro-ondes, EDF, Cineli, juillet
+                            1991.</bibl><bibl xml:id="BIB17" n="[17]">Moss N., Gauthier J., Ferland J.M., Synlett (1995)
+                            142.</bibl><bibl xml:id="BIB18" n="[18]">Hachimoto Y., Kobayashi N., Kai A., Saigo K., Synlett (1995)
+                            961.</bibl><biblStruct xml:id="BIB19" n="[19]"><analytic><author><forename type="first">D.J.</forename><surname>Cram</surname></author><author><forename type="first">K.R.</forename><surname>Kopecky</surname></author></analytic><monogr><title type="main">J. Am. Chem. Soc.</title><imprint><biblScope unit="vol">81</biblScope><date when="1959">1959</date><biblScope unit="page" from="2748">2748</biblScope></imprint></monogr></biblStruct><biblStruct xml:id="BIB20" n="[20]"><analytic><author><forename type="first">B.</forename><surname>Ben Hassine</surname></author><author><forename type="first">M.</forename><surname>Gorsane</surname></author><author><forename type="first">J.</forename><surname>Pecher</surname></author><author><forename type="first">R.H.</forename><surname>Martin</surname></author></analytic><monogr><title type="main">Bull. Soc. Chim. Belg.</title><imprint><biblScope unit="vol">94</biblScope><date when="1985">1985</date><biblScope unit="page" from="597">597</biblScope></imprint></monogr></biblStruct></listBibl></div></back></text></TEI>

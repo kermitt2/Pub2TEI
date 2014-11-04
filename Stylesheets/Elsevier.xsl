@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-    xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all">
+    xmlns="http://www.tei-c.org/ns/1.0" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" 
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all"
+    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 		
-    <xsl:template match="els:article[els:item-info] | converted-article[item-info]">
+    <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info]">
         <TEI>
             <xsl:if test="@xml:lang">
                 <xsl:copy-of select="@xml:lang"/>
@@ -236,15 +239,6 @@
         <div>
             <xsl:apply-templates/>
         </div>
-    </xsl:template>
-
-    <xsl:template match="ce:abstract">
-		<abstract>
-			<xsl:if test="@xml:lang">
-				<xsl:attribute name="xml:lang" select="@xml:lang"/>
-			</xsl:if>
-			<xsl:apply-templates/>
-		</abstract>	
     </xsl:template>
 
     <xsl:template match="ce:abstract-sec">

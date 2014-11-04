@@ -21,6 +21,9 @@
 <!ENTITY fx19 SYSTEM "fx19" NDATA IMAGE>
 <!ENTITY fx20 SYSTEM "fx20" NDATA IMAGE>
 <!ENTITY fx21 SYSTEM "fx21" NDATA IMAGE>]>
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?>
+
+
 <converted-article version="4.5.2" docsubtype="sco" xml:lang="fr">
     <item-info>
         <jid>PXOLDC</jid>

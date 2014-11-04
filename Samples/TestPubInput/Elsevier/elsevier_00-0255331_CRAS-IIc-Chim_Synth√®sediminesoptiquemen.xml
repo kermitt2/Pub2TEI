@@ -9,6 +9,7 @@
 <!ENTITY sc5 SYSTEM "sc5" NDATA IMAGE>
 <!ENTITY sc6 SYSTEM "sc6" NDATA IMAGE>
 <!ENTITY gr2 SYSTEM "gr2" NDATA IMAGE>]>
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?>
 <converted-article version="4.5.2" docsubtype="sco" xml:lang="fr"
     ><!--xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:sb="http://www.elsevier.com/xml/common/dtd"-->

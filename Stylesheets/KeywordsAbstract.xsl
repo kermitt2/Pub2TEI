@@ -70,10 +70,20 @@
     <xsl:template match="abstract | Abstract | ce:abstract">
         <xsl:if test=".!=''">
             <div type="abstract">
-                <xsl:if test="@Language">
+                <xsl:variable name="theLanguage">
+                    <xsl:choose>
+                        <xsl:when test="@Language">
+                            <xsl:value-of select="@Language"/>
+                        </xsl:when>
+                        <xsl:when test="@xml:lang">
+                            <xsl:value-of select="@xml:lang"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+                <xsl:if test="$theLanguage">
                     <xsl:attribute name="xml:lang">
                         <xsl:call-template name="Varia2ISO639">
-                            <xsl:with-param name="code" select="@Language"/>
+                            <xsl:with-param name="code" select="$theLanguage"/>
                         </xsl:call-template>
                     </xsl:attribute>
                 </xsl:if>

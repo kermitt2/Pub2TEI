@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:cals="http://www.elsevier.com/xml/common/cals/dtd"
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     exclude-result-prefixes="#all"
     version="2.0" xmlns="http://www.tei-c.org/ns/1.0">
+    
     
     <!-- Royal Chemical Society: table-entry; NLM: table-wrap -->
     <xsl:template match="table-entry | table-wrap">
@@ -44,17 +47,23 @@
         </note>
     </xsl:template>
     
-    <xsl:template match="thead/tr">
+    <xsl:template match="thead/tr | cals:thead/cals:row">
         <row role="label">
             <xsl:apply-templates/>
         </row>
     </xsl:template>
     
-    <xsl:template match="thead">
+    <xsl:template match="tr | cals:row">
+        <row>
+            <xsl:apply-templates/>
+        </row>
+    </xsl:template>
+    
+    <xsl:template match="thead | cals:thead">
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="tbody">
+    <xsl:template match="tbody | cals:tbody">
         <xsl:apply-templates/>
     </xsl:template>
     
@@ -74,11 +83,6 @@
         </ab>
     </xsl:template>
     
-    <xsl:template match="tr">
-        <row>
-            <xsl:apply-templates/>
-        </row>
-    </xsl:template>
     
     <xsl:template match="th">
         <cell role="th">
@@ -88,6 +92,12 @@
     
     <xsl:template match="td">
         <cell role="td">
+            <xsl:apply-templates/>
+        </cell>
+    </xsl:template>
+    
+    <xsl:template match="ce:entry">
+        <cell>
             <xsl:apply-templates/>
         </cell>
     </xsl:template>
