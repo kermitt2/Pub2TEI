@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ....................................................................... -->
+<!-- JobSheet top level elements                                             -->
+<!-- ....................................................................... -->
+<!ELEMENT JobSheet (IssueJobSheet | ArticleJobSheet | BookJobSheet | PartJobSheet | ChapterJobSheet)>
+<!ATTLIST JobSheet
+	Version (2.4) #REQUIRED
+	ObjectID CDATA #IMPLIED
+	JobSheetDate CDATA #REQUIRED
+	PurchaseOrderNumber CDATA #IMPLIED
+	Supplier (Printer | FullServiceVendor | Application) #IMPLIED
+>
+<!ELEMENT IssueJobSheet (PublisherInfo, JournalInfo, VolumeInfo, IssueInfo, ProductionInfo)>
+<!ELEMENT ArticleJobSheet (PublisherInfo, JournalInfo, ArticleInfo, AuthorGroup?, ProductionInfo)>
+<!ELEMENT BookJobSheet (PublisherInfo, SeriesInfo?, BookInfo, AuthorGroup?, EditorGroup?, ProductionInfo)>
+<!ELEMENT PartJobSheet (PublisherInfo, BookInfo, PartInfo, AuthorGroup?, EditorGroup?, ProductionInfo)>
+<!ELEMENT ChapterJobSheet (PublisherInfo, BookInfo, ChapterInfo, AuthorGroup?, ProductionInfo)>
+<!-- ....................................................................... -->
+<!-- ProductionInfo elements                                                 -->
+<!-- ....................................................................... -->
+<!-- ....................................................................... -->
+<!-- ArticleJobSheet and ChapterJobSheet: DiscreteObjectTechnicalInfo?       -->
+<!-- IssueJobSheet: (CompoundObjectTechnicalInfo?,DiscreteIssueObjectInfo*)  -->
+<!--                If TaskType='UpdateIssueMetadata' no DiscreteIssueObjectInfo  -->
+<!-- PartJobSheet: DiscreteBookObjectInfo+                                   -->
+<!-- BookJobSheet: (PartInfoGroup*, DiscreteBookObjectInfo+)                 -->
+<!-- ....................................................................... -->
+<!ELEMENT ProductionInfo (SPACEInfo?, ManuscriptInfo?, ProductionEditor, (DiscreteObjectTechnicalInfo? | (CompoundObjectTechnicalInfo?, (DiscreteIssueObjectInfo* | (PartInfoGroup*, DiscreteBookObjectInfo+)))), WorkflowInfo)>
+<!-- ....................................................................... -->
+<!-- SPACEInfo                                                               -->
+<!-- ....................................................................... -->
+<!ELEMENT SPACEInfo EMPTY>
+<!ATTLIST SPACEInfo
+	PublicationObjectID CDATA #IMPLIED
+	SupplierSPACEID CDATA #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- ManuscriptInfo elements                                                 -->
+<!-- ....................................................................... -->
+<!ELEMENT ManuscriptInfo (PeerReviewSystem?, EditorialManuscriptNumber?, ManuscriptNumberOfPages?, ManuscriptNumberOfGraphics?, ManuscriptNumberOfTables?, RemarkByEditor?, ElectronicDelivery, PostalDelivery)>
+<!ELEMENT PeerReviewSystem (#PCDATA)>
+<!-- under construction: might use attribute with pre-defined names and versions -->
+<!ELEMENT EditorialManuscriptNumber (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfPages (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfGraphics (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfTables (#PCDATA)>
+<!ELEMENT RemarkByEditor (#PCDATA)>
+<!ELEMENT ElectronicDelivery EMPTY>
+<!ATTLIST ElectronicDelivery
+	Delivery (Complete | Incomplete | None) #REQUIRED
+>
+<!ELEMENT PostalDelivery EMPTY>
+<!ATTLIST PostalDelivery
+	Delivery (Complete | Incomplete | None) #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- ProductionEditor elements                                               -->
+<!-- ....................................................................... -->
+<!ELEMENT ProductionEditor (ProductionEditorName, Contact)>
+<!ELEMENT ProductionEditorName (%NameModel;)>
+<!-- ....................................................................... -->
+<!-- TechnicalInfo elements                                                  -->
+<!-- ....................................................................... -->
+<!-- DiscreteObjectTechnicalInfo elements                                    -->
+<!--                                                                         -->
+<!ELEMENT DiscreteObjectTechnicalInfo (StyleInfo?, ColorImagesOnPage*, OffprintOrder?, NumberOfFreeCopies)>
+<!-- insert ObjectID? -->
+<!ATTLIST DiscreteObjectTechnicalInfo
+	ContainsColorImages %BooleanAttrValues; #IMPLIED
+>
+<!ELEMENT OffprintOrder (OffprintPriceList?, NumberOfFreeOffprints, NumberOfPaidOffprints?, OffprintRecipient?)>
+<!ELEMENT OffprintPriceList (OffprintPrice+)>
+<!ELEMENT OffprintPrice (Price)>
+<!ATTLIST OffprintPrice
+	NumberOfOffprints CDATA #REQUIRED
+>
+<!ELEMENT Price (Currency, Amount)>
+<!ELEMENT Currency (#PCDATA)>
+<!ELEMENT Amount (#PCDATA)>
+<!ELEMENT NumberOfPaidOffprints (#PCDATA)>
+<!ELEMENT NumberOfFreeOffprints (#PCDATA)>
+<!ELEMENT OffprintRecipient (OffprintRecipientName, OffprintAddress)>
+<!ELEMENT OffprintRecipientName (%NameModel;)>
+<!ATTLIST OffprintRecipientName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT OffprintAddress ((%AddressModel;)*)>
+<!ELEMENT NumberOfFreeCopies (#PCDATA)>
+<!--                                                                         -->
+<!-- CompoundObjectTechnicalInfo elements      -->
+<!--                                                                         -->
+<!-- Currently CoverProductionInfo?, InnerworkProductionInfo?, FoldOut?, Insert? are covered by ManufactoringProfile
+<!ELEMENT CompoundObjectTechnicalInfo (CompoundObjectFirstPage?, CompoundObjectLastPage?, CompoundObjectNumberOfAPages?, 
+CompoundObjectProductionHistory?, CoverProductionInfo?, InnerworkProductionInfo?, FoldOut?, Insert?)>
+-->
+<!ELEMENT CompoundObjectTechnicalInfo (CompoundObjectFirstPage?, CompoundObjectLastPage?, CompoundObjectNumberOfAPages?, CompoundObjectTotalNumberOfPages?, CompoundObjectProductionHistory?, ManufacturingProfile, PrintRun)>
+<!ELEMENT ManufacturingProfile EMPTY>
+<!ATTLIST ManufacturingProfile
+	Name (Profile1) #REQUIRED
+>
+<!-- update value as available -->
+<!ELEMENT CompoundObjectFirstPage (#PCDATA)>
+<!ELEMENT CompoundObjectLastPage (#PCDATA)>
+<!ELEMENT CompoundObjectNumberOfAPages (#PCDATA)>
+<!ATTLIST CompoundObjectNumberOfAPages
+	NumberOfEditorialPages CDATA #IMPLIED
+	NumberOfIndexPages CDATA #IMPLIED
+>
+<!ELEMENT CompoundObjectTotalNumberOfPages (#PCDATA)>
+<!ELEMENT CompoundObjectProductionHistory (SentToPrintDate)>
+<!ELEMENT SentToPrintDate (%YearMonthDayModel;)>
+<!-- StyleInfo -->
+<!ELEMENT StyleInfo (MarkupProfile, PrepressProfile)>
+<!ELEMENT PrepressProfile EMPTY>
+<!ATTLIST PrepressProfile
+	Name (Profile1) #REQUIRED
+>
+<!-- update value as available -->
+<!ELEMENT MarkupProfile EMPTY>
+<!ATTLIST MarkupProfile
+	Name (Profile1) #IMPLIED
+>
+<!-- Draft for future content model (Version 2.4.x)
+<!ELEMENT MarkupProfile (TitleStyle?, AbstractStyle, KeywordsStyle, CaptionStyle?, CitationStyle, BibliographyStyle)>
+<!ELEMENT TitleStyle (AdditionalLanguagesRequired*,AdditionalLanguagesPermitted*)>
+>
+<!ELEMENT AbstractStyle (AdditionalLanguagesRequired*,AdditionalLanguagesPermitted*)>
+<!ATTLIST AbstractStyle RequiredContent (Required | Permitted | NotPermitted) #REQUIRED
+	StructuredAbstract (Required | Permitted | NotPermitted) #REQUIRED
+>
+<!ELEMENT KeywordsStyle (AdditionalLanguagesRequired*,AdditionalLanguagesPermitted*)>
+<!ATTLIST KeywordsStyle RequiredContent (Required | Permitted | NotPermitted) #REQUIRED
+>
+<!ELEMENT CaptionStyle (AdditionalLanguagesRequired*,AdditionalLanguagesPermitted*)>
+<!ELEMENT CitationStyle EMPTY>
+<!ATTLIST CitationStyle Type (Numbered | NameYear | Alphanumeric) #REQUIRED
+>
+<!ELEMENT BibliographyStyle EMPTY>
+<!ATTLIST BibliographyStyle Type (SubjectDefault | Vancouver | APA | MathPhysics | Physics) #REQUIRED
+>
+-->
+<!ELEMENT PrintRun EMPTY>
+<!ATTLIST PrintRun
+	Total CDATA #REQUIRED
+	Normal CDATA #IMPLIED
+	Promotional CDATA #IMPLIED
+	Extra CDATA #IMPLIED
+>
+<!ELEMENT ColorImagesOnPage (#PCDATA)>
+<!-- Currently CoverProductionInfo?, InnerworkProductionInfo?, FoldOut?, Insert? are covered by ManufactoringProfile -->
+<!--ELEMENT CoverProductionInfo (PrintRun, CompoundObjectTotalNumberOfPages, NumberOfDeskCopies, Paper, TrimSize, SpineWidth, ColorImagesOnPage+, CoverTreatment, FinishingType)-->
+<!--ELEMENT CoverProductionInfo (PrintRun, ColorImagesOnPage*)-->
+<!-- ELEMENT InnerworkProductionInfo (PrintRun, CompoundObjectTotalNumberOfPages, Paper, TrimSize, Margin, ColorImagesOnPage+)-->
+<!--ELEMENT InnerworkProductionInfo (PrintRun)-->
+<!-- PrintRun is to capture the number of inserts; 
+	these are not printed but otherwise a new element needs to be introduced -->
+<!-- specify Paper Sort values 
+<!ELEMENT Paper EMPTY>
+<!ATTLIST Paper		
+	Sort CDATA #REQUIRED
+	Format CDATA #REQUIRED
+	Weight CDATA #REQUIRED
+	Quality CDATA #REQUIRED
+<!ELEMENT TrimSize (#PCDATA)>
+<!ELEMENT SpineWidth (#PCDATA)>
+<!ELEMENT CoverTreatment (#PCDATA)>
+<!ELEMENT FinishingType (#PCDATA)>
+<!ELEMENT Margin EMPTY>
+<!ATTLIST Margin HeadMargin CDATA #IMPLIED
+	BackMargin CDATA #IMPLIED
+	LeftMargin CDATA #IMPLIED
+	RightMargin CDATA #IMPLIED
+>
+<!ELEMENT FoldOut (PrintRun, Paper, TrimSize, HeadMargin, BackMargin, FoldType, Placement)>
+<!ATTLIST FoldOut
+	Color CDATA #REQUIRED
+	Type CDATA #REQUIRED
+>
+<!ELEMENT FoldType (#PCDATA)>
+<!ELEMENT Placement (#PCDATA)>
+<!ELEMENT Insert (PrintRun, Placement)>
+<!ATTLIST Insert
+	Type CDATA #REQUIRED
+>
+<!ELEMENT NumberOfDeskCopies (#PCDATA)>
+-->
+<!-- ....................................................................... -->
+<!-- Discrete Object Info for compound objects elements                      -->
+<!-- ....................................................................... -->
+<!ELEMENT DiscreteIssueObjectInfo ((CoverInfo | IssueFrontmatterInfo | AdvertisementInfo | ArticleInfo | IssueBackmatterInfo), AuthorGroup?, DiscreteObjectTechnicalInfo?)>
+<!ATTLIST DiscreteIssueObjectInfo
+	ID ID #REQUIRED
+>
+<!ELEMENT PartInfoGroup (PartInfo, AuthorGroup?, EditorGroup?, DiscreteBookObjectInfo*)>
+<!ELEMENT DiscreteBookObjectInfo ((CoverInfo | BookFrontmatterInfo | AdvertisementInfo | ChapterInfo | BookBackmatterInfo), AuthorGroup?, DiscreteObjectTechnicalInfo?)>
+<!ATTLIST DiscreteBookObjectInfo
+	ID ID #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- WorkflowInfo                                                            -->
+<!-- ....................................................................... -->
+<!ELEMENT WorkflowInfo (Priority, Deadlines, Supplier)>
+<!ATTLIST WorkflowInfo
+	TaskType (PrepareContent | PerformProof | DistributeDigitalContent | CreateHardCopy | UpdateIssueMetadata | UpdateArticleMetadata | Migration | Corrigendum) #REQUIRED
+>
+<!ELEMENT Priority EMPTY>
+<!ATTLIST Priority
+	Level (Standard | High) "Standard"
+>
+<!ELEMENT Deadlines (OnlineFirstDeadline | (PrintDeadline, DistributionDate))>
+<!ELEMENT OnlineFirstDeadline (%YearMonthDayModel;)>
+<!ELEMENT PrintDeadline (%YearMonthDayModel;)>
+<!ELEMENT DistributionDate (%YearMonthDayModel;)>
+<!--                                                                         -->
+<!-- Elements for Suppliers                                                  -->
+<!--                                                                         -->
+<!ELEMENT Supplier (FullServiceVendor | Printer | Application)>
+<!ENTITY % SupplierModel "CompanyName, Contact?, ContactPerson?, RemarkTo?, CopyEditing?, 
+ProofInfo?, FilesToSupplier, Deliverables, DispatcherAddress?, FilesToPublisher">
+<!ELEMENT FullServiceVendor (%SupplierModel;)>
+<!ELEMENT Printer (%SupplierModel;)>
+<!ELEMENT CompanyName (#PCDATA)>
+<!-- ContactPerson: Is this needed? How to store in collaborators table? Or just to be filled by Vendor? -->
+<!ELEMENT ContactPerson (ContactPersonName, Contact?)>
+<!ELEMENT ContactPersonName (%NameModel;)>
+<!ELEMENT RemarkTo (#PCDATA)>
+<!ELEMENT CopyEditing (CopyEditor?)>
+<!ATTLIST CopyEditing
+	Category (0 | 1 | 2 | 3) #REQUIRED
+>
+<!-- CopyEditor will not be used at start of JWF, since not in SpACE; use RemarkTo instead -->
+<!ELEMENT CopyEditor (CopyEditorName, Contact)>
+<!ELEMENT CopyEditorName (%NameModel;)>
+<!ELEMENT ProofInfo (ProofRecipient, ProofCoRecipient*, ProofContact?)>
+<!ELEMENT ProofRecipient (Author | ProductionEditor | Editor)>
+<!ELEMENT ProofCoRecipient (ProofCoRecipientName, Contact)>
+<!ELEMENT ProofCoRecipientName (%NameModel;)>
+<!ATTLIST ProofCoRecipientName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT ProofContactName (%NameModel;)>
+<!ATTLIST ProofContactName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT ProofContact ((ProofContactName, Contact) | Editor)?>
+<!ATTLIST ProofContact
+	ProofContactType (FS_Vendor | Editor | Other) "FS_Vendor"
+>
+<!ELEMENT FilesToSupplier (ContentFiles | NoFiles)>
+<!ELEMENT FilesToPublisher (ContentFiles | NoFiles | ToBeCompleted)>
+<!ELEMENT ContentFiles (File+)>
+<!ELEMENT File (AplusplusRootFile | AplusplusRelatedObjectFile | MediaObject | TextFile | SupportingItem | RenditionItem | WorkItem | Archive | Cover | Advertisement | APageFile)>
+<!ATTLIST File
+	DiscreteObjectID IDREF #IMPLIED
+>
+<!--                                                                    -->
+<!-- AplusplusRootFile references content of spr_article or spr_chapter -->
+<!--                                                                    -->
+<!ELEMENT AplusplusRootFile EMPTY>
+<!ATTLIST AplusplusRootFile
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+>
+<!--                                                                    -->
+<!-- AplusplusRelatedObjectFile references content of an A++ file that  -->
+<!-- belonging to an spr_article or spr_chapter related to the article  -->
+<!-- or chapter A++ referenced in the AplusplusRootFile                 -->
+<!--                                                                    -->
+<!ELEMENT AplusplusRelatedObjectFile EMPTY>
+<!ATTLIST AplusplusRelatedObjectFile
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+>
+<!--                                                                    -->
+<!-- TextFile references content of spr_text_file -->
+<!--                                                                    -->
+<!ELEMENT TextFile EMPTY>
+<!ATTLIST TextFile
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	FileFormat (TEX | XML | Text) #IMPLIED
+	TEXRootFile (Yes) #IMPLIED
+>
+<!--                                                                    -->
+<!-- SupportingItem references content of spr_supporting_item -->
+<!--                                                                    -->
+<!ELEMENT SupportingItem EMPTY>
+<!ATTLIST SupportingItem
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	SupportingItemType (TEX | StyleSheet) #IMPLIED
+>
+<!--                                                                    -->
+<!-- RenditionItem references content of spr_rendition_item -->
+<!--                                                                    -->
+<!ELEMENT RenditionItem EMPTY>
+<!ATTLIST RenditionItem
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	TargetType (OnlinePDF | PrintPDF | eBookPDF) #IMPLIED
+>
+<!--                                                                    -->
+<!-- WorkItem references content of spr_work_item -->
+<!--                                                                    -->
+<!ELEMENT WorkItem EMPTY>
+<!ATTLIST WorkItem
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	ItemType (ReferencePDF | DeltaPDF | CopyrightTransfer | OpenAccessStatement | OffprintOrder | AuthorFeedback | Pit-Stop-Report | PRS-Metadata) #IMPLIED
+>
+<!--                                                                    -->
+<!-- Archive references content of spr_archive -->
+<!--                                                                    -->
+<!ELEMENT Archive EMPTY>
+<!ATTLIST Archive
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	Content (Manuscript | TEX) #REQUIRED
+>
+<!ELEMENT APageFile EMPTY>
+<!ATTLIST APageFile
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	FirstPage CDATA #IMPLIED
+	LastPage CDATA #IMPLIED
+	Position (Frontmatter | Backmatter) #REQUIRED
+	Type (Toc | ImprintTexts | AuthorInstructions | EditorialTexts | Index | CompleteFrontmatter | CompleteBackmatter) #REQUIRED
+	TargetType (OnlinePDF | PrintPDF | eBookPDF) #REQUIRED
+>
+<!ELEMENT NoFiles EMPTY>
+<!ATTLIST NoFiles
+	Reason (QualityDisapproved | WrongOriginalData | CorruptOriginalData | Receipt | Notification | NotificationProofRun) #IMPLIED
+>
+<!ELEMENT ToBeCompleted EMPTY>
+<!--                                                                    -->
+<!-- Deliverables elements                                              -->
+<!--                                                                    -->
+<!ELEMENT Deliverables (NoDeliverables | DeliverablesForDiscreteObjects | DeliverablesForCompoundObjects)>
+<!ELEMENT NoDeliverables EMPTY>
+<!ELEMENT DeliverablesForDiscreteObjects EMPTY>
+<!ATTLIST DeliverablesForDiscreteObjects
+	XMLWithBody %BooleanAttrValues; #REQUIRED
+	XMLWithBodyRefsOnly %BooleanAttrValues; #REQUIRED
+	OnlinePDF %BooleanAttrValues; #REQUIRED
+	PrintPDF %BooleanAttrValues; #REQUIRED
+	eBookPDF %BooleanAttrValues; #REQUIRED
+	TEX %BooleanAttrValues; #REQUIRED
+	OnlineMediaObjects (IfApplies | No) #REQUIRED
+	PrintMediaObjects (IfApplies | No) #REQUIRED
+	ReferencePDF %BooleanAttrValues; #REQUIRED
+	AuthorFeedbackPDF %BooleanAttrValues; #REQUIRED
+	DeltaPDF %BooleanAttrValues; #REQUIRED
+	CopyrightTransfer %BooleanAttrValues; #REQUIRED
+	OpenAccessStatement (IfApplies | No) #REQUIRED
+	OffprintOrder (IfApplies | No) #REQUIRED
+	Pit-Stop-Reports %BooleanAttrValues; #REQUIRED
+>
+<!ELEMENT DeliverablesForCompoundObjects EMPTY>
+<!ATTLIST DeliverablesForCompoundObjects
+	CoverPrintPDF %BooleanAttrValues; #REQUIRED
+	CoverFigure %BooleanAttrValues; #REQUIRED
+	FrontmatterPrintPDF %BooleanAttrValues; #REQUIRED
+	BackmatterPrintPDF %BooleanAttrValues; #REQUIRED
+	AdvertisementPrintPDF (IfApplies | No) #REQUIRED
+	DiscreteContentObjectOnlinePDF %BooleanAttrValues; #REQUIRED
+	DiscreteContentObjectPrintPDF %BooleanAttrValues; #REQUIRED
+	Pit-Stop-Reports %BooleanAttrValues; #REQUIRED
+>
+<!-- Dispatcher address -->
+<!ELEMENT DispatcherAddress ((%AddressModel;)*)>
+<!--                                                                    -->
+<!-- Application elements                                               -->
+<!--                                                                    -->
+<!ELEMENT Application (ApplicationName, Event)>
+<!ELEMENT ApplicationName (#PCDATA)>
+<!-- Event: Specifies event for update in application -->
+<!ELEMENT Event (EventName, EventDate)>
+<!ELEMENT EventName (#PCDATA)>
+<!ELEMENT EventDate (%YearMonthDayModel;)>

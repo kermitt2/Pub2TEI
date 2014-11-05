@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ....................................................................... -->
+<!-- JobSheet top level elements                                             -->
+<!-- ....................................................................... -->
+<!ELEMENT JobSheet (IssueJobSheet | ArticleJobSheet | BookJobSheet | PartJobSheet | ChapterJobSheet)>
+<!ATTLIST JobSheet
+	Version (2.3.4) #REQUIRED
+	ObjectID CDATA #IMPLIED
+	JobSheetDate CDATA #REQUIRED
+	Supplier (EditorialOffice | Printer | Repro | Typesetter | DataProcessor) #IMPLIED
+>
+<!ELEMENT IssueJobSheet (PublisherInfo, JournalInfo, VolumeInfo, IssueInfo, ProductionInfo, ArticleInfoAuthorGroup+)>
+<!ELEMENT ArticleJobSheet (PublisherInfo, JournalInfo, ArticleInfoAuthorGroup, ProductionInfo)>
+<!ELEMENT BookJobSheet (PublisherInfo, SeriesInfo?, BookInfoAuthorGroup, ProductionInfo, (PartInfoAuthorGroup+ | ChapterInfoAuthorGroup+)?)>
+<!ELEMENT PartJobSheet (PublisherInfo, BookInfo, PartInfoAuthorGroup, ProductionInfo, ChapterInfoAuthorGroup+)>
+<!ELEMENT ChapterJobSheet (PublisherInfo, BookInfo, ChapterInfoAuthorGroup, ProductionInfo)>
+<!-- ....................................................................... -->
+<!-- InfoAuthorGroups                                                        -->
+<!-- ....................................................................... -->
+<!ELEMENT ArticleInfoAuthorGroup (ArticleInfo, AuthorGroup?)>
+<!ELEMENT BookInfoAuthorGroup (BookInfo, AuthorGroup?, EditorGroup?)>
+<!ELEMENT PartInfoAuthorGroup (PartInfo, AuthorGroup?)>
+<!ELEMENT ChapterInfoAuthorGroup (ChapterInfo, AuthorGroup?)>
+<!-- ....................................................................... -->
+<!-- ProductionInfo elements                                                 -->
+<!-- ....................................................................... -->
+<!ELEMENT ProductionInfo (SPACEInfo?, ManuscriptInfo?, StyleInfo?, ProductionEditor, WorkflowInfo)>
+<!ELEMENT SPACEInfo EMPTY>
+<!ATTLIST SPACEInfo
+	PublicationObjectID CDATA #REQUIRED
+	SupplierSPACEID CDATA #IMPLIED
+>
+<!ELEMENT StyleInfo EMPTY><!-- Inhaltsmodell definieren -->
+<!-- ....................................................................... -->
+<!-- WorkflowInfo                                                            -->
+<!-- ....................................................................... -->
+<!ELEMENT WorkflowInfo (Priority, Correction?, (SPACEProcessor | Supplier))>
+<!ATTLIST WorkflowInfo
+	CopyEditingRequired %BooleanAttrValues; #IMPLIED
+>
+<!ELEMENT RemarkByEditor (#PCDATA)>
+<!ELEMENT Priority EMPTY>
+<!ATTLIST Priority
+	Level (Low | Standard | High) #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- Elements for SPACEProcessors                                             -->
+<!-- ....................................................................... -->
+<!ELEMENT SPACEProcessor (CopyEditing?, Deadline, RemarkTo*)>
+<!ATTLIST SPACEProcessor
+	Type (CopyEditor | ESMEditor | ScanOperator) #REQUIRED
+>
+<!ELEMENT CopyEditing (InHouseCopyEditor)>
+<!ATTLIST CopyEditing
+	Category CDATA #REQUIRED
+>
+<!ELEMENT InHouseCopyEditor (InHouseCopyEditorName, Contact)>
+<!ELEMENT InHouseCopyEditorName (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Elements for Suppliers                                                  -->
+<!-- ....................................................................... -->
+<!ELEMENT Supplier (DataProcessor | Repro | Typesetter | Printer)>
+<!ENTITY % SupplierModel "CompanyName, ContactPerson?, Deadline, FilesToSupplier, RemarkTo?, 
+                 FilesToPublisher, RemarkFrom?">
+<!ELEMENT DataProcessor (%SupplierModel;)>
+<!ELEMENT Repro (ElectronicDelivery, PostalDelivery, %SupplierModel;)>
+<!ELEMENT CompanyName (#PCDATA)>
+<!ELEMENT ContactPerson (ContactPersonName, Contact?)>
+<!ELEMENT ContactPersonName (#PCDATA)>
+<!ELEMENT ElectronicDelivery EMPTY>
+<!ATTLIST ElectronicDelivery
+	Delivery (Complete | Incomplete | None) #REQUIRED
+>
+<!ELEMENT PostalDelivery EMPTY>
+<!ATTLIST PostalDelivery
+	Delivery (Complete | Incomplete | None) #REQUIRED
+>
+<!ELEMENT GraphicOriginals (OriginalGraphicFile)+>
+<!ATTLIST GraphicOriginals
+	Digital CDATA #REQUIRED
+	NonDigital CDATA #REQUIRED
+>
+<!ELEMENT OriginalGraphicFile EMPTY>
+<!ATTLIST OriginalGraphicFile
+	FileRef CDATA #REQUIRED
+>
+<!ELEMENT GraphicsReproduced (ImageObject)+>
+<!ELEMENT GraphicWorkItems (ImageObject)+>
+<!ELEMENT Typesetter (%SupplierModel;)>
+<!ATTLIST Typesetter
+	IsPrinter %BooleanAttrValues; #IMPLIED
+>
+<!ELEMENT FilesToSupplier (ContentFiles | NoFiles)>
+<!ELEMENT FilesToPublisher (ContentFiles | NoFiles | ToBeCompleted)>
+<!ELEMENT ContentFiles (((File+, (GraphicOriginals | GraphicsReproduced | GraphicWorkItems)?) | (GraphicOriginals | GraphicsReproduced)) | ContentsNotSpecified)>
+<!ELEMENT File EMPTY>
+<!ATTLIST File
+	FileRef CDATA #REQUIRED
+	ObjectID ID #IMPLIED
+	Format (DVI | PDF | PS | QuarkXPress | TeX | XML | Text | Img | Zip) #REQUIRED
+	Type (Text | SupportingFile | Rendition | WorkItem | Archive) #REQUIRED
+	TeXRootFile (Yes) #IMPLIED
+>
+<!ELEMENT ContentsNotSpecified EMPTY>
+<!ELEMENT NoFiles EMPTY>
+<!ATTLIST NoFiles
+	Reason (WrongOriginalData) #IMPLIED
+>
+<!ELEMENT ToBeCompleted EMPTY>
+<!ELEMENT Printer (%SupplierModel;)>
+<!ELEMENT Correction EMPTY>
+<!ATTLIST Correction
+	CorrectionOf (Proof | Revision) #REQUIRED
+	CorrectionOfGraphics %BooleanAttrValues; #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- ManuscriptInfo                                                          -->
+<!-- ....................................................................... -->
+<!ELEMENT ManuscriptInfo (EditorialManuscriptNumber, ManuscriptNumberOfPages?, ManuscriptNumberOfGraphics?, ManuscriptNumberOfTables?, ManuscriptFiles?, RemarkByEditor?)>
+<!ELEMENT EditorialManuscriptNumber (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfPages (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfGraphics (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfTables (#PCDATA)>
+<!ELEMENT ManuscriptFiles (((File+,GraphicOriginals?)|ContentsNotSpecified), TemplatesUsed?)>
+<!ELEMENT TemplatesUsed EMPTY>
+<!ATTLIST TemplatesUsed
+	Type CDATA #REQUIRED
+	SVStandard %BooleanAttrValues; #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- ProductionEditor                                                        -->
+<!-- ....................................................................... -->
+<!ELEMENT ProductionEditor (ProductionEditorName, Contact)>
+<!ELEMENT ProductionEditorName (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Generic elements                                                        -->
+<!-- ....................................................................... -->
+<!ELEMENT Deadline (#PCDATA)>
+<!ELEMENT RemarkFrom (#PCDATA)>
+<!ATTLIST RemarkFrom
+	FileRef CDATA #IMPLIED
+>
+<!ELEMENT RemarkTo (#PCDATA)>
+<!ATTLIST RemarkTo
+	CopyEditor (InHouse | External) #IMPLIED
+>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % BookOrJournal "Series | Book">
+<!ENTITY % WithMathML "IGNORE">
+<!ENTITY % CommonModule SYSTEM "common.dtd">
+%CommonModule;
+<!-- ....................................................................... -->
+<!-- Series                                                                  -->
+<!-- ....................................................................... -->
+<!ELEMENT Series (SeriesInfo, BookOnlineFirst?, (SeriesHeader?, Toc?, (BookSet | Book | SubSeries)*, SeriesIndex?))>
+<!ATTLIST Series
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT SeriesInfo (SeriesID, SeriesPrintISSN?, SeriesElectronicISSN?, SeriesTitle, SeriesSubTitle?, SeriesAbbreviatedTitle?, SubjectCollection?)>
+<!ATTLIST SeriesInfo
+	TocLevels %TocLevelsAttrValues; "0"
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	SeriesType %SeriesTypeAttrValues; #IMPLIED
+	ID ID #IMPLIED
+>
+<!ELEMENT SeriesHeader (LegalNotice*, AuthorGroup?, EditorGroup?, CollaboratorGroup?, SeriesInformationText?, Abstract?, KeywordGroup*, AbbreviationGroup?)>
+<!ATTLIST SeriesHeader
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT SeriesID (#PCDATA)>
+<!ELEMENT SeriesPrintISSN (#PCDATA)>
+<!ELEMENT SeriesElectronicISSN (#PCDATA)>
+<!ELEMENT SeriesSubTitle (%SimpleTextModel;)*>
+<!ATTLIST SeriesSubTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT SeriesAbbreviatedTitle (#PCDATA)>
+<!ELEMENT SeriesInformationText (Para+)>
+<!-- ....................................................................... -->
+<!-- SubSeries                                                               -->
+<!-- ....................................................................... -->
+<!ELEMENT SubSeries (SubSeriesInfo, BookOnlineFirst?, (SubSeriesHeader?, Toc?, (BookSet | Book)*, SubSeriesIndex?))>
+<!ATTLIST SubSeries
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT SubSeriesInfo (SubSeriesID, SubSeriesPrintISSN?, SubSeriesElectronicISSN?, SubSeriesTitle, SubSeriesSubTitle?, SubSeriesAbbreviatedTitle?)>
+<!ATTLIST SubSeriesInfo
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	SeriesType %SeriesTypeAttrValues; #IMPLIED
+>
+<!ELEMENT SubSeriesHeader (AuthorGroup?, EditorGroup?, CollaboratorGroup?)>
+<!ATTLIST SubSeriesHeader
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT SubSeriesID (#PCDATA)>
+<!ELEMENT SubSeriesPrintISSN (#PCDATA)>
+<!ELEMENT SubSeriesElectronicISSN (#PCDATA)>
+<!ELEMENT SubSeriesTitle (%SimpleTextModel;)*>
+<!ATTLIST SubSeriesTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT SubSeriesSubTitle (%SimpleTextModel;)*>
+<!ATTLIST SubSeriesSubTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT SubSeriesAbbreviatedTitle (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- BookSet                                                                 -->
+<!-- ....................................................................... -->
+<!ELEMENT BookSet (BookSetInfo, Cover?, BookSetHeader?, BookSetRelatedObject+)>
+<!ELEMENT BookSetRelatedObject (RelatedObjectDOI)>
+<!ELEMENT BookSetInfo (BookSetID, BookSetTitle, BookSetSubTitle?, BookSetVolumeNumber?, BookSetSequenceNumber?, BookSetDOI, BookSetTitleID?, BookSetPrintISBN, BookSetElectronicISBN?, BookSetEdition?, BookSetBookCount?, BookSetHistory?, BookSetCopyright, BookSetSubjectGroup?)>
+<!ATTLIST BookSetInfo
+	Language %LanguageAttrValues; #REQUIRED
+	BookProductType CDATA #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	MediaType CDATA #IMPLIED
+>
+<!ELEMENT BookSetID (#PCDATA)>
+<!ELEMENT BookSetTitle (%SimpleTextModel;)*>
+<!ELEMENT BookSetSubTitle (%SimpleTextModel;)*>
+<!ELEMENT BookSetVolumeNumber (#PCDATA)>
+<!ELEMENT BookSetSequenceNumber (#PCDATA)>
+<!ELEMENT BookSetDOI (#PCDATA)>
+<!ELEMENT BookSetTitleID (#PCDATA)>
+<!ELEMENT BookSetPrintISBN (#PCDATA)>
+<!ELEMENT BookSetElectronicISBN (#PCDATA)>
+<!ELEMENT BookSetEdition (#PCDATA)>
+<!ELEMENT BookSetBookCount (#PCDATA)>
+<!ELEMENT BookSetHistory (OnlineDate?, PrintDate?)>
+<!ELEMENT BookSetCopyright (%CopyrightModel;)>
+<!ELEMENT BookSetSubjectGroup (BookSubject+)>
+<!ELEMENT BookSetHeader (LegalNotice?, AuthorGroup?, EditorGroup?, Abstract?, KeywordGroup*, AbbreviationGroup?)>
+<!-- ....................................................................... -->
+<!-- Book                                                                    -->
+<!-- ....................................................................... -->
+<!ELEMENT Book (BookInfo, Cover?, BookHeader?, (NoBody | (BodyRef*, BookFrontmatter?, (Part+ | Chapter+)?, BookBackmatter?) | BookOnlineFirst))>
+<!ATTLIST Book
+	Language %LanguageAttrValues; #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT BookOnlineFirst (Part+ | Chapter+)>
+<!-- ....................................................................... -->
+<!-- BookInfo                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT BookInfo (BookID, BookTitle, BookSubTitle?, BookVolumeNumber?, BookSequenceNumber?, BookDOI, BookTitleID?, BookPrintISBN?, BookElectronicISBN?, CatalogingInformation*, EditionNumber?, BookEdition?, BookMultiVolumeCount?, BookChapterCount?, BookSeriesCategory?, BookSeriesSubCategory?, BookHistory?, BookCopyright, PaperInfo?, BookSubjectGroup?, BookClassification?, BookContext?, BookCoverFigureText?, BookstoreLocation?, ConferenceInfo?, SponsorNote?)>
+<!ATTLIST BookInfo
+	Language %LanguageAttrValues; #REQUIRED
+	BookProductType CDATA #IMPLIED
+	TocLevels %TocLevelsAttrValues; "0"
+	ContainsESM %BooleanAttrValues; "No"
+	NumberingStyle %NumberingStyleAttrValues; "Unnumbered"
+	NumberingDepth %NumberingDepthAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	MediaType CDATA #IMPLIED
+>
+<!ELEMENT BookID (#PCDATA)>
+<!ELEMENT BookSubTitle (%SimpleTextModel;)*>
+<!ELEMENT BookVolumeNumber (#PCDATA)>
+<!ELEMENT BookSequenceNumber (#PCDATA)>
+<!ELEMENT BookDOI (#PCDATA)>
+<!ELEMENT BookTitleID (#PCDATA)>
+<!ELEMENT BookPrintISBN (#PCDATA)>
+<!ELEMENT BookElectronicISBN (#PCDATA)>
+<!ELEMENT BookEdition (#PCDATA)>
+<!ELEMENT BookMultiVolumeCount (#PCDATA)>
+<!ELEMENT BookChapterCount (#PCDATA)>
+<!ELEMENT BookSeriesCategory (#PCDATA)>
+<!ELEMENT BookSeriesSubCategory (#PCDATA)>
+<!ELEMENT BookSubjectGroup (BookSubject+, SubjectCollection?)>
+<!ELEMENT BookSubject (#PCDATA)>
+<!ATTLIST BookSubject
+	Type (Primary | Secondary) #REQUIRED
+	Code CDATA #IMPLIED
+	Priority (1 | 2 | 3 | 4 | 5 | 6) #IMPLIED
+>
+<!ELEMENT BookHistory (OnlineDate?, PrintDate?)>
+<!ELEMENT BookCopyright (%CopyrightModel;, CopyrightYearFormerEditions?, CopyrightComment?,
+License?, CopyrightStandardText?, TrademarkQualifierText?, ProductLiability?, SpringerReferenceLine?, SpringerLocationsLine?)>
+<!ELEMENT CopyrightYearFormerEditions (#PCDATA)>
+<!ELEMENT CopyrightComment (#PCDATA | SimplePara)*>
+<!ELEMENT CopyrightStandardText (#PCDATA)>
+<!ATTLIST CopyrightStandardText
+	Country %CountryAttrValues; #IMPLIED
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT TrademarkQualifierText (#PCDATA)>
+<!ATTLIST TrademarkQualifierText
+	Country %CountryAttrValues; #IMPLIED
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT ProductLiability (#PCDATA)>
+<!ATTLIST ProductLiability
+	Country %CountryAttrValues; #IMPLIED
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT SpringerReferenceLine (#PCDATA)>
+<!ATTLIST SpringerReferenceLine
+	Country %CountryAttrValues; #IMPLIED
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT SpringerLocationsLine (#PCDATA)>
+<!ELEMENT PaperInfo (#PCDATA)>
+<!ATTLIST PaperInfo
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT BookClassification (%ClassificationModel;)+>
+<!ELEMENT BookContext (SeriesID?, SubSeriesID?, (BookSetID, BookSetTitle)*, VolumePackageID?)>
+<!ELEMENT VolumePackageID (#PCDATA)>
+<!ELEMENT CatalogingInformation (%VerySimpleTextModel; | InlineEquation)*>
+<!ATTLIST CatalogingInformation
+	Library CDATA #REQUIRED
+>
+<!ELEMENT BookCoverFigureText (SimplePara+)>
+<!ELEMENT BookstoreLocation (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- BookHeader                                                              -->
+<!-- ....................................................................... -->
+<!ELEMENT BookHeader (LegalNotice?, AuthorGroup?, EditorGroup?, CollaboratorGroup?, BookFeatureText*, Abstract?, KeywordGroup*, AbbreviationGroup?)>
+<!ELEMENT LegalNotice (%SimpleTextModel;)*>
+<!ATTLIST LegalNotice
+	Disclaimer %BooleanAttrValues; #REQUIRED
+>
+<!ELEMENT BookFeatureText (%VerySimpleTextModel; | InlineEquation)*>
+<!-- ....................................................................... -->
+<!-- List of headings                                                        -->
+<!-- ....................................................................... -->
+<!ELEMENT Loh (Heading, SubHeading?, LohEntry+)>
+<!ELEMENT LohEntry (%SimpleTextModel; | ExternalRef)*>
+<!ATTLIST LohEntry
+	RefID IDREF #IMPLIED
+	PageNumber CDATA #IMPLIED
+	TargetID CDATA #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- List of contributors                                                    -->
+<!-- ....................................................................... -->
+<!ELEMENT Loc (Heading, SubHeading?, (LocDiv+ | LocEntry+))>
+<!ELEMENT LocDiv (Heading, SubHeading?, LocEntry+)>
+<!ELEMENT LocEntry (AuthorGroup*, EditorGroup?)>
+<!ATTLIST LocEntry
+	RefID IDREF #IMPLIED
+	PageNumber CDATA #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- Preface                                                                 -->
+<!-- ....................................................................... -->
+<!ELEMENT Preface (PrefaceInfo, AuthorGroup?, Body)>
+<!ELEMENT PrefaceInfo (PrefaceTitle, PrefaceDate?, PrefaceLocation*)>
+<!ELEMENT PrefaceTitle (%SimpleTextModel;)*>
+<!ATTLIST PrefaceTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT PrefaceDate (#PCDATA)>
+<!ELEMENT PrefaceLocation (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Foreword                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT Foreword (ForewordInfo, AuthorGroup?, Body)>
+<!ELEMENT ForewordInfo (ForewordTitle, ForewordDate?, ForewordLocation*)>
+<!ELEMENT ForewordTitle (%SimpleTextModel;)*>
+<!ATTLIST ForewordTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT ForewordDate (#PCDATA)>
+<!ELEMENT ForewordLocation (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- BookFrontmatter / BookBackmatter                                        -->
+<!-- ....................................................................... -->
+<!ELEMENT BookFrontmatter (BookFrontmatterInfo?, BookFrontmatterHeader?, (NoBody | BodyRef+ | (BodyFrontmatter, BodyRef*)))>
+<!ATTLIST BookFrontmatter
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT BookFrontmatterInfo (BookFrontmatterDOI?, BookFrontmatterFirstPage, BookFrontmatterLastPage)>
+<!ELEMENT BookFrontmatterDOI (#PCDATA)>
+<!ELEMENT BookFrontmatterFirstPage (#PCDATA)>
+<!ELEMENT BookFrontmatterLastPage (#PCDATA)>
+<!ELEMENT BookFrontmatterHeader (PageHeaders?, AuthorGroup?, TocChapter?, Abstract?, KeywordGroup*, AbbreviationGroup?, ArticleNote*)>
+<!ELEMENT BodyFrontmatter (Frontispiece?, Dedication?, Foreword*, Preface*, ArticleNote*, BookAcknowledgments?, BookNotes?, AbbreviationGroup?, Toc?, Loh*, Loc?)>
+<!ELEMENT Frontispiece (Figure)>
+<!ELEMENT BookNotes (BookNotesTitle, AuthorGroup?, Body)>
+<!ELEMENT BookNotesTitle (%SimpleTextModel;)*>
+<!ATTLIST BookNotesTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT BookAcknowledgments (AcknowledgmentTitle, AuthorGroup?, Body)>
+<!ELEMENT AcknowledgmentTitle (%SimpleTextModel;)*>
+<!ATTLIST AcknowledgmentTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT BookBackmatter (BookBackmatterInfo?, BookBackmatterHeader?, (NoBody | BodyRef+ | (BodyBackmatter, BodyRef*)))>
+<!ATTLIST BookBackmatter
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT BookBackmatterInfo (BookBackmatterDOI?, BookBackmatterFirstPage, BookBackmatterLastPage)>
+<!ELEMENT BookBackmatterDOI (#PCDATA)>
+<!ELEMENT BookBackmatterFirstPage (#PCDATA)>
+<!ELEMENT BookBackmatterLastPage (#PCDATA)>
+<!ELEMENT BookBackmatterHeader (PageHeaders?, AuthorGroup?, TocChapter?, Abstract?, KeywordGroup*, AbbreviationGroup?, ArticleNote*)>
+<!ELEMENT BodyBackmatter (Appendix*, Glossary?, Bibliography?, Index*, Colophon?)>
+<!-- ....................................................................... -->
+<!-- Chapter                                                                 -->
+<!-- ....................................................................... -->
+<!ELEMENT Chapter (ChapterInfo, ChapterHeader?, (NoBody | BodyRef+ | (Body, BodyRef*)), ChapterBackmatter?)>
+<!ATTLIST Chapter
+	ID ID #REQUIRED
+	Language %LanguageAttrValues; #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	%DCTMAtts; 
+>
+<!ELEMENT ChapterHeader (PageHeaders?, AuthorGroup?, CollaboratorGroup?, TocChapter?, Abstract*, KeywordGroup*, AbbreviationGroup?, ArticleNote*)>
+<!ELEMENT ChapterBackmatter (ArticleNote*, Acknowledgments?, Ethics?, Glossary?, Appendix*, Index?, Bibliography?)>
+<!ATTLIST ChapterBackmatter
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT ChapterInfo (ChapterID, ChapterNumber?, ChapterDOI?, ChapterSequenceNumber?, ChapterRelatedObject*, ChapterTitle+, ChapterSubTitle*, ChapterCategory?, ChapterSubCategory?, ChapterFirstPage?, ChapterLastPage?, ChapterCopyright?, ChapterHistory?, ChapterClassification?, ChapterGrants?, ChapterContext?)>
+<!ATTLIST ChapterInfo
+	ChapterType %ChapterTypeAttrValues; #REQUIRED
+	NumberingStyle %NumberingStyleAttrValues; "Unnumbered"
+	NumberingDepth %NumberingDepthAttrValues; #IMPLIED
+	TocLevels %TocLevelsAttrValues; "0"
+	ContainsESM %BooleanAttrValues; "No"
+	Language %LanguageAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT ChapterID (#PCDATA)>
+<!ELEMENT ChapterNumber (#PCDATA)>
+<!ELEMENT ChapterDOI (#PCDATA)>
+<!ELEMENT ChapterSequenceNumber (#PCDATA)>
+<!ELEMENT ChapterRelatedObject (RelatedObjectDOI)>
+<!ATTLIST ChapterRelatedObject
+	RelatedObjectType %RelatedObjectTypeAttrValues; #REQUIRED
+>
+<!ELEMENT ChapterSubTitle (%SimpleTextModel;)*>
+<!ATTLIST ChapterSubTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT ChapterCategory (#PCDATA)>
+<!ELEMENT ChapterSubCategory (#PCDATA)>
+<!ELEMENT ChapterFirstPage (#PCDATA)>
+<!ELEMENT ChapterLastPage (#PCDATA)>
+<!ELEMENT ChapterCopyright (%CopyrightModel;, CopyrightComment?, License?)>
+<!ELEMENT ChapterHistory (RegistrationDate?, Received?, Revised?, Accepted?, OnlineDate?, ChapterVersionInfo?)>
+<!ELEMENT ChapterVersionInfo EMPTY>
+<!ATTLIST ChapterVersionInfo
+	BaseChapterID CDATA #REQUIRED
+	VersionNumber CDATA #REQUIRED
+>
+<!ELEMENT ChapterClassification (Fingerprint?, (%ClassificationModel;)*)>
+<!ELEMENT ChapterGrants (%GrantsModel;)>
+<!ATTLIST ChapterGrants
+	Type %GrantsTypeAttrValues; "Regular"
+>
+<!ELEMENT ChapterContext (SeriesID?, SubSeriesID?, (BookSetID, BookSetTitle)*, VolumePackageID?, PartID?, SubPartID?, BookID?, BookTitle?)>
+<!-- ....................................................................... -->
+<!-- Part                                                                    -->
+<!-- ....................................................................... -->
+<!ELEMENT Part (PartInfo, PartHeader?, BookFrontmatter?, BodyRef*, SubPart*, Chapter*, BookBackmatter?)>
+<!ATTLIST Part
+	ID ID #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	%DCTMAtts; 
+>
+<!ELEMENT PartHeader (AuthorGroup?, EditorGroup?, CollaboratorGroup?, Abstract?, KeywordGroup*, AbbreviationGroup?, ArticleNote*)>
+<!ELEMENT PartInfo (PartID, PartNumber?, PartSequenceNumber?, PartTitle, PartSubTitle?, PartChapterCount?, PartContext?)>
+<!ATTLIST PartInfo
+	TocLevels %TocLevelsAttrValues; "0"
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT PartID (#PCDATA)>
+<!ELEMENT PartNumber (#PCDATA)>
+<!ELEMENT PartSequenceNumber (#PCDATA)>
+<!ELEMENT PartTitle (%SimpleTextModel;)*>
+<!ELEMENT PartSubTitle (%SimpleTextModel;)*>
+<!ELEMENT PartChapterCount (#PCDATA)>
+<!ELEMENT PartContext (SeriesID?, SubSeriesID?, (BookSetID, BookSetTitle)*, VolumePackageID?, BookID?, BookTitle?)>
+<!-- ....................................................................... -->
+<!-- SubPart                                                                 -->
+<!-- ....................................................................... -->
+<!ELEMENT SubPart (SubPartInfo, SubPartHeader?, BookFrontmatter?, Chapter+, BookBackmatter?)>
+<!ATTLIST SubPart
+	ID ID #REQUIRED
+>
+<!ELEMENT SubPartHeader (AuthorGroup?, EditorGroup?, CollaboratorGroup?, Abstract?, KeywordGroup*, AbbreviationGroup?, ArticleNote*)>
+<!ELEMENT SubPartInfo (SubPartID, SubPartNumber?, SubPartSequenceNumber?, SubPartTitle, SubPartSubTitle?, SubPartChapterCount?)>
+<!ATTLIST SubPartInfo
+	TocLevels %TocLevelsAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT SubPartID (#PCDATA)>
+<!ELEMENT SubPartNumber (#PCDATA)>
+<!ELEMENT SubPartSequenceNumber (#PCDATA)>
+<!ELEMENT SubPartTitle (%SimpleTextModel;)*>
+<!ELEMENT SubPartSubTitle (%SimpleTextModel;)*>
+<!ELEMENT SubPartChapterCount (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Dedication                                                              -->
+<!-- ....................................................................... -->
+<!ELEMENT Dedication (Heading?, SimplePara+)>
+<!-- ....................................................................... -->
+<!-- Colophon                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT Colophon (%SimpleTextModel;)*>
