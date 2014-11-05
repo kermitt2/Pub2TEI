@@ -23,6 +23,7 @@
 
     <xsl:include href="SpringerStage2.xsl"/>
     <xsl:include href="SpringerStage3.xsl"/>
+    <xsl:include href="SpringerBookChapter.xsl"/>
     
     <xsl:include href="RoyalChemicalSociety.xsl"/>
 
@@ -61,8 +62,11 @@
             <xsl:when test="Article/ArticleInfo">
                 <xsl:message>Converting a Springer stage 2 article</xsl:message>
             </xsl:when>
-            <xsl:when test="Publisher/PublisherInfo">
+            <xsl:when test="Publisher/PublisherInfo and not(Publisher/Series/Book/Part/Chapter)">
                 <xsl:message>Converting a Springer stage 3 article</xsl:message>
+            </xsl:when>
+            <xsl:when test="count(Publisher/Series/Book/Part/Chapter)=1">
+                <xsl:message>Converting a Springer book chapter</xsl:message>
             </xsl:when>
             <xsl:when test="article/art-admin">
                 <xsl:message>Converting a Royal Chemical Society article</xsl:message>
