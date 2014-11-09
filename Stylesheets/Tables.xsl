@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:els="http://www.elsevier.com/xml/ja/dtd"
     xmlns:cals="http://www.elsevier.com/xml/common/cals/dtd"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     exclude-result-prefixes="#all"
@@ -19,7 +20,7 @@
         </figure>
     </xsl:template>
     
-    <xsl:template match="table-entry/title | table-wrap/label">
+    <xsl:template match="table-entry/title | table-wrap/label | ce:table/ce:caption">
         <head>
             <xsl:apply-templates/>
         </head>
@@ -63,11 +64,11 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="tbody | cals:tbody">
+    <xsl:template match="tbody | cals:tbody | cals:tgroup">
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="table-entry/table | table-wrap/table">
+    <xsl:template match="table-entry/table | table-wrap/table | els:display/ce:table">
         <ab>
             <table>
                 <xsl:apply-templates/>
@@ -82,7 +83,6 @@
             </table>
         </ab>
     </xsl:template>
-    
     
     <xsl:template match="th">
         <cell role="th">
@@ -102,6 +102,9 @@
         </cell>
     </xsl:template>
     
-    
+    <xsl:template match="cals:colspec">
+		<xsl:apply-templates/>
+    </xsl:template>
+	
     
 </xsl:stylesheet>

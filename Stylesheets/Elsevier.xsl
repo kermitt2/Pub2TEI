@@ -124,6 +124,10 @@
     <xsl:template match="ce:keyword/ce:text">
         <xsl:apply-templates/>
     </xsl:template>
+	
+    <xsl:template match="els:display">
+        <xsl:apply-templates/>
+    </xsl:template>
 
     <xsl:template match="ce:correspondence/ce:text">
         <p>

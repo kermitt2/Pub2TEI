@@ -21,7 +21,7 @@
 
 
     <xsl:template
-        match="article-title/title | ArticleTitle | article-title | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title">
+        match="article-title/title | ArticleTitle | article-title | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title">
         <xsl:if test=".!=''">
             <title level="a" type="main">
                 <xsl:if test="@Language">
@@ -363,7 +363,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page">
+    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | sb:last-page">
         <xsl:if test=".!=''">
             <biblScope unit="page" to="{.}">
                 <xsl:apply-templates/>
