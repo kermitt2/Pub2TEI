@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!-- ....................................................................... -->
+<!-- Project team:    Ken Dreyhaupt      (Springer-Verlag New York)          -->
+<!--                  Michael Eihoff     (Springer-Verlag Heidelberg)        -->
+<!--                  Alison Hepper      (Springer-Verlag Heidelberg)        -->
+<!--                  Dr. Ramon Khanna   (Springer-Verlag Heidelberg)        -->
+<!--                  Dr. Patrick Thibor (Springer-Verlag Heidelberg)        -->
+<!--                  Dr. Michael Wilson (Springer-Verlag Heidelberg)        -->
+<!-- ....................................................................... -->
+<!-- Responsible:     Dr. Patrick Thibor                                     -->
+<!--                  thibor@springer.de                                     -->
+<!-- ....................................................................... -->
+<!-- Release history: 2001-11-19: V 0.9 - released for testing               -->
+<!--                  2002-02-05: V 1.0 - integration of test results        -->
+<!--                  2002-02-19: V 1.1 - results of second test run         -->
+<!--                  2002-04-18: V 1.2 - Book and FAZ requirements          -->
+<!--                  2002-05-15: V 1.3 - CE-XML and Book requirements       -->
+<!--                  2002-07-05: V 2.0 - See Change Request Document        -->
+<!--                  2002-07-30: V 2.1 - Final version for converter test   -->
+<!--                  2002-09-24: V 2.2 - First productive version           -->
+<!--                  2003-03-03: V 2.3 - See Release Notes                  -->
+<!--                  2004-03-15: V 2.4 - See Release Notes                  -->
+<!-- ....................................................................... -->
+
+
+<!-- ....................................................................... -->
+<!-- Inclusion of the MathML DTD                                             -->
+<!-- ....................................................................... -->
+<!ENTITY % WithMathML "INCLUDE">
+
+<![ %WithMathML; [
+	<!ENTITY % MathMLModel           " | math">
+	<!ENTITY % mathml-charent.module "IGNORE">
+        <!ENTITY % MATHML.prefixed       "IGNORE">
+	<!ENTITY % MathMLstrict          "INCLUDE">
+	<!ENTITY % MathMLModule SYSTEM   "mathml2.dtd">
+	%MathMLModule;
+]]>
+
+<!ENTITY % MathMLModel " ">
+
+<!-- ....................................................................... -->
+<!-- Inclusion of DTD components that are relevant for all products          -->
+<!-- The definition of "CommonModule" disables the repeated loading          -->
+<!-- of the common module from within the book and journal modules           -->
+<!-- ....................................................................... -->
+<!ENTITY % CommonModule " ">
+
+<!ENTITY % CommonModuleLocal SYSTEM "Common.dtd">
+%CommonModuleLocal;
+
+<!-- ....................................................................... -->
+<!-- Inclusion of DTD components that are specific for journals              -->
+<!-- ....................................................................... -->
+<!ENTITY % JournalModule SYSTEM "Journal.dtd">
+%JournalModule;
+
+<!-- ....................................................................... -->
+<!-- Inclusion of DTD components that are specific for books                 -->
+<!-- ....................................................................... -->
+<!ENTITY % BookModule SYSTEM "Book.dtd">
+%BookModule;
+
+<!-- ....................................................................... -->
+<!-- Inclusion of DTD components that are relevant for the JobSheet          -->
+<!-- ....................................................................... -->
+<!ENTITY % JobSheetModule SYSTEM "JobSheetV2.4.dtd">
+%JobSheetModule;
+
+<!-- ....................................................................... -->
+<!-- Inclusion of the CALS table model                                       -->
+<!-- ....................................................................... -->
+<!ENTITY % tbl.table.name "Table">
+
+<!ENTITY % tbl.table-titles.mdl "Caption*,">
+
+<!ENTITY % tbl.table-main.mdl "((MediaObject+ | tgroup+), tfooter?)">
+
+<!ENTITY % tbl.tgroup.mdl "colspec* , thead? , tbody+">
+
+<!ENTITY % TableEntryModel "SimplePara*">
+
+<!ELEMENT tfooter (%TableEntryModel;)*>
+
+<!ENTITY % tbl.entry.mdl "(%TableEntryModel;)*">
+
+<!ENTITY % tbl.table.att " ID           ID                     #REQUIRED
+                           Width        CDATA                  #IMPLIED
+                           Style        %TableStyleAttrValues; #IMPLIED             
+                           Orientation  (Landscape | Portrait) #IMPLIED
+                           Float        %BooleanAttrValues;    #REQUIRED">
+
+<!ENTITY % CALSModule SYSTEM "calstblx.dtd">
+%CALSModule;
+
+

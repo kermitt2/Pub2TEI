@@ -1,0 +1,1032 @@
+<!-- ....................................................................... -->
+<!-- Module for the article++ DTD. This module contains all declarations     -->
+<!-- that can be used in the journal and book content model equally.         -->
+<!-- ....................................................................... -->
+<!-- ....................................................................... -->
+<!-- Notations                                                               -->
+<!-- ....................................................................... -->
+<!NOTATION EPS PUBLIC "+//ISBN 0-201-18127-4::Adobe//NOTATION PostScript Language Ref. Manual//EN">
+<!NOTATION GIF SYSTEM "GIF">
+<!NOTATION JPEG SYSTEM "JPG">
+<!NOTATION PNG SYSTEM "http://www.w3.org/TR/REC-png">
+<!NOTATION PS SYSTEM "PS">
+<!NOTATION TIFF SYSTEM "TIFF">
+<!NOTATION WMF PUBLIC "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Microsoft Windows Metafile//EN">
+<!NOTATION TEX PUBLIC "+//ISBN 0-201-13448-9::Knuth//NOTATION The TeXbook//EN">
+<!NOTATION MATHML SYSTEM "http://www.w3.org/1998/Math/MathML">
+<!NOTATION MATHTYPE SYSTEM "MathType">
+<!NOTATION XML PUBLIC "REC-xml-1998-0210" "http://www.w3.org/TR/1998/REC-xml-19980210">
+<!-- ....................................................................... -->
+<!-- Documentum attributes                                                   -->
+<!-- Documentum attributes to be added to each element that has an           -->
+<!-- <xml_content_rule> or <xml_link_rule> in the XML application            -->
+<!-- configuration file                                                      -->
+<!ENTITY % DCTMAtts "xmlns:dctm              CDATA #IMPLIED
+                         dctm:obj_id             CDATA #IMPLIED
+                         dctm:obj_status         CDATA #IMPLIED
+	                 dctm:version_label      CDATA #IMPLIED">
+<!ENTITY % DCTMLinkAtts "xmlns:dctm              CDATA #IMPLIED
+                         dctm:link_obj_id        CDATA #IMPLIED
+                         dctm:link_obj_status    CDATA #IMPLIED
+                         dctm:link_version_label CDATA #IMPLIED">
+<!-- ....................................................................... -->
+<!-- Parameter entities for content models                                   -->
+<!-- ....................................................................... -->
+<!ENTITY % ReferenceElements "InternalRef | CitationRef | ExternalRef">
+<!ENTITY % ListElements "OrderedList | UnorderedList | DefinitionList">
+<!ENTITY % AddressModel "Street | Postbox | Postcode | City | State | Country">
+<!ENTITY % NameModel "Prefix?, (GivenName+ | NoGivenName), Particle?, FamilyName, Suffix?, Degrees?, NativeName?">
+<!ENTITY % BibNameModel "Prefix?, (Initials | NoInitials), FamilyName, Particle?, Suffix?, Degrees?">
+<!ENTITY % AuthorshipModel "(BibAuthorName | InstitutionalAuthorName)+, Etal?">
+<!ENTITY % EditorshipModel "(BibEditorName | BibInstitutionalEditorName)+, Eds, Etal?">
+<!ENTITY % ConfInfoModel "ConfProcTitle, ConfEventName?, ConfEventLocation?, ConfEventDate?">
+<!ENTITY % CopyrightModel "CopyrightHolderName, CopyrightYear">
+<!ENTITY % GrantsModel "(MetadataGrant, AbstractGrant?, BodyPDFGrant?, BodyHTMLGrant?, BibliographyGrant?, ESMGrant?)">
+<!ENTITY % YearModel "Year">
+<!ENTITY % YearMonthModel "%YearModel;, Month">
+<!ENTITY % YearMonthDayModel "%YearMonthModel;, Day">
+<!ENTITY % YearMonthDayHourMinuteSecondModel "%YearMonthDayModel;, (Hour, Minute, Second)?">
+<!ENTITY % FullTextBlockModel "Para | FormalPara | Figure | MediaObject | Table">
+<!ENTITY % AbstractTextBlockModel "Para | Figure | MediaObject | Table">
+<!ENTITY % VerySimpleTextModel "#PCDATA | Superscript | Subscript | Stack | Emphasis">
+<!ENTITY % SimpleTextModel "%VerySimpleTextModel; | InlineEquation | Literal | IndexTerm | GlossaryTerm | Footnote | Sidebar | InlineMediaObject">
+<!ENTITY % FullTextModel "%SimpleTextModel; | %ListElements; | %ReferenceElements; | Figure | MediaObject | Table | BlockQuote | Equation | Quiz">
+<!ENTITY % EquationSourceModel "%VerySimpleTextModel; %MathMLModel;">
+<!ENTITY % ClassificationModel "CharacteristicValue | ClassificationGroup">
+<!-- ....................................................................... -->
+<!-- Parameter entites for attributes                                        -->
+<!-- ....................................................................... -->
+<!ENTITY % LanguageAttrValues "(Ar | Bg | Bn | Bs | Cs | Da | De | El | En | Es | Et | Eu | Fa | Fi | Fr | He | Hi | Hr | Hu | Id | It | Ja | Ko | La | Lt | Lv | Mn | Nl | No | Pa | Pl | Pt | Ro | Ru | Sk | Sl | Sr | Sv | Th | Tr | Uk | Vi | Zh | --)">
+<!ENTITY % CountryAttrValues "(US | DE | NL | GB | AT | IT | FR | JP | IN | CH | SG | CN | --)">
+<!ENTITY % BooleanAttrValues "(Yes | No)">
+<!ENTITY % OutputMediumAttrValues "(Paper | Online | All)">
+<!ENTITY % NumberingStyleAttrValues "(Unnumbered |
+                                      ChapterOnly |
+                                      ChapterContent |
+                                      ChapterContentSeparately |
+                                      ContentOnly |
+                                      Outline)">
+<!ENTITY % NumberingDepthAttrValues "(1 | 2 | 3 | 4 | 5 | 6 | 7)">
+<!ENTITY % TocLevelsAttrValues "(0 | 1 | 2 | 3 | 4 | 5 | 6 | 7)">
+<!ENTITY % JournalProductTypeAttrValues "(ArchiveJournal | NonStandardArchiveJournal | Magazine | Legacy)">
+<!ENTITY % VolumeTypeAttrValues "(Regular | Combined)">
+<!ENTITY % IssueTypeAttrValues "(Regular | Combined | Supplement)">
+<!ENTITY % ArticleNoteTypeAttrValues "(PresentedAt | 
+                                       PresentedBy |
+                                       CommunicatedBy |
+                                       Motto | 
+                                       ESMHint |
+                                       ProofNote |
+                                       Misc | 
+                                       Dedication |
+                                       Corrigendum |
+                                       ReferencedArticle |
+                                       CrossLinking)">
+<!ENTITY % ChapterTypeAttrValues "(OriginalPaper | 
+								   ReviewPaper | 
+								   Erratum | 
+								   CompoundObjectErratum | 
+								   APageObject |
+								   Essay |
+								   Definition |
+								   SynonymEntry)">
+<!ENTITY % ArticleTypeAttrValues "(OriginalPaper | 
+                                   ReviewPaper |
+                                   BriefCommunication |
+                                   EditorialNotes |
+                                   BookReview |
+                                   ContinuingEducation |
+                                   Interview |
+                                   Letter |
+                                   Erratum |
+                                   Legacy | 
+                                   Abstract |
+                                   Report |
+                                   Announcement |
+                                   News |
+                                   Events |
+                                   Acknowledgments |
+                                   MediaReport |
+                                   BibliographicalNote |
+                                   ProductNotes |
+                                   Unknown)">
+<!ENTITY % SectionTypeAttrValues "(Introduction |
+                                   MaterialsAndMethods |
+                                   Results |
+                                   Overview |
+                                   Box |
+                                   Discussion |
+                                   Trailer |
+                                   CaseStudy |
+                                   Conclusion |
+                                   Example |
+                                   Excurse |
+                                   Tip |
+                                   Warning |
+                                   Recipe |
+                                   LearningGoals |
+                                   Procedure |
+                                   BackgroundInformation |
+                                   LegalText |
+                                   Questionnaire)">
+<!ENTITY % ParaTypeAttrValues "(Important |
+                                Questions |
+                                Answers |
+                                CorrectAnswer |
+                                EyeCatcher |
+                                Programcode |
+                                GeneticSequence |
+                                Example |
+                                Trailer |
+                                Literal |
+                                Overview |
+                                Tip |
+                                Warning |
+                                Recipe |
+                                Procedure |
+                                Definition |
+                                LearningGoals|
+                                BackgroundInformation |
+                                Source |
+                                LegalText |
+                                Questionnaire)">
+<!ENTITY % RenderingStyleAttrValues "(Style1 | Style2 | Style3)">
+<!ENTITY % TableStyleAttrValues "(Style1 | Style2 | Style3 | Style4)">
+<!ENTITY % EmphasisTypeAttrValues "(Bold | 
+                                    Italic | 
+                                    Underline | 
+                                    DoubleUnderline | 
+                                    SmallCaps |
+                                    BoldItalic | 
+                                    BoldUnderline | 
+                                    BoldDoubleUnderline | 
+                                    BoldSmallCaps | 
+                                    ItalicUnderline | 
+                                    ItalicDoubleUnderline | 
+                                    ItalicSmallCaps | 
+                                    BoldItalicUnderline | 
+                                    BoldItalicDoubleUnderline | 
+                                    BoldItalicSmallCaps | 
+                                    UnderlineSmallCaps | 
+                                    DoubleUnderlineSmallCaps |
+                                    Strikethrough)">
+<!ENTITY % ListItemTypeAttrValues "(Question | Answer | CorrectAnswer | Solution)">
+<!ENTITY % TargetTypeAttrValues "(PDF | PrintPDF | OnlinePDF | Manuscript | TEX)">
+<!ENTITY % PDFTypeAttrValues "(Typeset | Scanned)">
+<!ENTITY % RelatedObjectTypeAttrValues "(ErratumFrom |
+                                        ErratumTo |
+                                        CommentaryFrom |
+                                        CommentaryTo |
+                                        ReplyFrom |
+                                        ReplyTo |
+                                        RelatedArticle |
+                                        RelatedIssue)">
+<!ENTITY % GrantsTypeAttrValues "(Regular | OpenChoice)">
+<!ENTITY % GrantsAttrValues "(OpenAccess | Restricted)">
+<!ENTITY % CharacteristicAttrValues "(Substance |
+									  SubstanceID |
+									  SubstanceClass |
+									  Substrate |
+                                      Property |
+                                      PropertyID |
+                                      PropertyClass |
+                                      PropertyParameter |
+                                      PropertyValue |
+                                      PropertyUnit |
+                                      MainSubject |
+                                      SecondarySubject |
+                                      GroupTitle |
+                                      GroupSort |
+                                      Discipline |
+                                      SubDiscipline |
+                                      PACS |
+                                      MSC |
+                                      JEL |
+                                      ElementSystem |
+                                      CASRegistryNumber |
+                                      Keyword |
+                                      Package |
+                                      TopicalCollection |
+                                      TitleSynonym |
+                                      ContentClass |
+                                      ImagesMD)">
+<!ENTITY % SeriesTypeAttrValues "(Series |
+                                  Subseries |
+                                  VirtualSeries |
+                                  VolumePackage |
+                                  Hierarchy)">
+<!-- ....................................................................... -->
+<!-- Publisher                                                               -->
+<!-- Top level element                                                       -->
+<!-- ....................................................................... -->
+<!ELEMENT Publisher (PublisherInfo, (Series | BookSet | Book | Journal)+)>
+<!-- ....................................................................... -->
+<!-- PublisherInfo                                                           -->
+<!-- ....................................................................... -->
+<!ELEMENT PublisherInfo (PublisherName, PublisherLocation, PublisherImprintName?, PublisherLogo?, PublisherURL?, CoPublisher*)>
+<!ELEMENT PublisherName (#PCDATA)>
+<!ELEMENT PublisherLocation (#PCDATA)>
+<!ELEMENT PublisherImprintName (#PCDATA)>
+<!ELEMENT PublisherLogo (Figure)>
+<!ELEMENT PublisherURL (#PCDATA)>
+<!ELEMENT CoPublisher (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Article level                                                           -->
+<!-- ....................................................................... -->
+<!ELEMENT Article (ArticleInfo, ArticleHeader?, (NoBody | BodyRef+ | (Body, BodyRef*)), ArticleBackmatter?)>
+<!ATTLIST Article
+	ID ID #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	%DCTMAtts; 
+>
+<!ELEMENT ArticleInfo (ArticleID, ArticleExternalID?, ArticleDOI?, ArticleCitationID?, ArticleSequenceNumber?, ArticleRelatedObject*, (ArticleSuperTitle?, ArticleTitle, ArticleSubTitle?)+, ArticleClassification?, ArticleCategory?, ArticleSubCategory?, ArticleCollection*, ArticleFirstPage?, ArticleLastPage?, ArticleHistory?, ArticleEditorialResponsibility?, ArticleFundingInformation?, ArticleCopyright, ArticleGrants?, ArticleContext?)>
+<!ATTLIST ArticleInfo
+	Language %LanguageAttrValues; #REQUIRED
+	ArticleType %ArticleTypeAttrValues; #REQUIRED
+	NumberingStyle %NumberingStyleAttrValues; "Unnumbered"
+	TocLevels %TocLevelsAttrValues; "0"
+	ContainsESM %BooleanAttrValues; "No"
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	ArticleCitation (ArticleFirstPage | ArticleSequenceNumber) #IMPLIED
+>
+<!ELEMENT ArticleHeader (PageHeaders?, AuthorGroup, TocChapter?, Abstract*, KeywordGroup*, AbbreviationGroup?, ArticleNote*)>
+<!ATTLIST ArticleHeader
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT ArticleBackmatter (ArticleNote*, Acknowledgments?, Ethics?, Glossary?, Appendix*, Bibliography?)>
+<!ATTLIST ArticleBackmatter
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- ArticleInfo                                                             -->
+<!-- ....................................................................... -->
+<!ELEMENT ArticleID (#PCDATA)>
+<!ELEMENT ArticleExternalID (#PCDATA)>
+<!ATTLIST ArticleExternalID
+	Type (arXiv) #REQUIRED
+>
+<!ELEMENT ArticleDOI (#PCDATA)>
+<!ELEMENT ArticleCitationID (#PCDATA)>
+<!ELEMENT ArticleSequenceNumber (#PCDATA)>
+<!ELEMENT ArticleRelatedObject ((RelatedObjectDOI | RelatedObjectReference), RelatedObjectInfo?)>
+<!ATTLIST ArticleRelatedObject
+	RelatedObjectType %RelatedObjectTypeAttrValues; #REQUIRED
+>
+<!ELEMENT RelatedObjectDOI (#PCDATA)>
+<!ELEMENT RelatedObjectReference EMPTY>
+<!ATTLIST RelatedObjectReference
+	JournalID CDATA #IMPLIED
+	JournalISSN CDATA #IMPLIED
+	VolumeIDStart CDATA #IMPLIED
+	IssueIDStart CDATA #IMPLIED
+	IssueType CDATA #IMPLIED
+>
+<!ELEMENT RelatedObjectInfo (ArticleTitle?, SimplePara?)>
+<!ELEMENT ArticleSuperTitle (%SimpleTextModel;)*>
+<!ATTLIST ArticleSuperTitle
+	Language %LanguageAttrValues; #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT ArticleSubTitle (%SimpleTextModel;)*>
+<!ATTLIST ArticleSubTitle
+	Language %LanguageAttrValues; #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT ArticleClassification (Fingerprint?, (%ClassificationModel;)*)>
+<!ELEMENT Fingerprint (RelevantTerm | DisplayTerm)+>
+<!ENTITY % FingerprintTermModel "#PCDATA | MainTerm | VariantTerm">
+<!ELEMENT RelevantTerm (%FingerprintTermModel;)*>
+<!ATTLIST RelevantTerm
+	Score CDATA #REQUIRED
+>
+<!ELEMENT DisplayTerm (%FingerprintTermModel;)*>
+<!ATTLIST DisplayTerm
+	Score CDATA #REQUIRED
+>
+<!ELEMENT MainTerm (#PCDATA)>
+<!ELEMENT VariantTerm (#PCDATA)>
+<!ELEMENT ArticleCategory (#PCDATA)>
+<!ELEMENT ArticleSubCategory (#PCDATA)>
+<!ELEMENT ArticleCollection (ArticleCollectionTitle, ArticleCollectionEditor?)>
+<!ATTLIST ArticleCollection
+	ID CDATA #REQUIRED
+>
+<!ELEMENT ArticleCollectionTitle (#PCDATA)>
+<!ELEMENT ArticleCollectionEditor (#PCDATA)>
+<!ELEMENT ArticleFirstPage (#PCDATA)>
+<!ELEMENT ArticleLastPage (#PCDATA)>
+<!ELEMENT ArticleHistory (RegistrationDate?, Received?, Revised?, Accepted?, OnlineDate?)>
+<!ELEMENT RegistrationDate (%YearMonthDayModel;)>
+<!ELEMENT Received (%YearMonthDayHourMinuteSecondModel;)>
+<!ELEMENT Revised (%YearMonthDayHourMinuteSecondModel;)>
+<!ELEMENT Accepted (%YearMonthDayHourMinuteSecondModel;)>
+<!ELEMENT ArticleEditorialResponsibility (#PCDATA)>
+<!ELEMENT ArticleCopyright (%CopyrightModel;, CopyrightComment?, License?)>
+<!ELEMENT License (SimplePara+)>
+<!ATTLIST License
+	Type (OpenAccess) #REQUIRED
+	SubType CDATA #IMPLIED
+	Version CDATA #IMPLIED
+>
+<!ELEMENT ArticleFundingInformation (Fund+)>
+<!ELEMENT Fund (FunderName, GrantNumber*)>
+<!ELEMENT FunderName (#PCDATA)>
+<!ATTLIST FunderName
+	FundRefID CDATA #IMPLIED
+>
+<!ELEMENT GrantNumber (#PCDATA)>
+<!ATTLIST GrantNumber
+	Type (NIH | FundRef) #REQUIRED
+	GrantRecipient IDREFS #IMPLIED
+>
+<!ELEMENT ArticleGrants (%GrantsModel;)>
+<!ATTLIST ArticleGrants
+	Type %GrantsTypeAttrValues; "Regular"
+>
+<!ELEMENT ArticleContext (JournalID, VolumeIDStart?, VolumeIDEnd?, IssueIDStart?, IssueIDEnd?, IssueTitle?)>
+<!-- ....................................................................... -->
+<!-- ArticleGrants / ChapterGrants                                           -->
+<!-- ....................................................................... -->
+<!ELEMENT MetadataGrant EMPTY>
+<!ATTLIST MetadataGrant
+	Grant %GrantsAttrValues; #REQUIRED
+>
+<!ELEMENT AbstractGrant EMPTY>
+<!ATTLIST AbstractGrant
+	Grant %GrantsAttrValues; #REQUIRED
+>
+<!ELEMENT BodyPDFGrant EMPTY>
+<!ATTLIST BodyPDFGrant
+	Grant %GrantsAttrValues; #REQUIRED
+>
+<!ELEMENT BodyHTMLGrant EMPTY>
+<!ATTLIST BodyHTMLGrant
+	Grant %GrantsAttrValues; #REQUIRED
+>
+<!ELEMENT BibliographyGrant EMPTY>
+<!ATTLIST BibliographyGrant
+	Grant %GrantsAttrValues; #REQUIRED
+>
+<!ELEMENT ESMGrant EMPTY>
+<!ATTLIST ESMGrant
+	Grant %GrantsAttrValues; #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- AuthorGroup / EditorGroup                                               -->
+<!-- ....................................................................... -->
+<!ELEMENT AuthorGroup ((Author | InstitutionalAuthor)+, Affiliation*)>
+<!ELEMENT EditorGroup ((Editor | InstitutionalEditor)+, Affiliation*)>
+<!ELEMENT CollaboratorGroup ((Collaborator | InstitutionalCollaborator)+, Affiliation*)>
+<!ELEMENT Author (AuthorName, Role?, OtherCredit?, Contact?, (Biography | Figure)?)>
+<!ATTLIST Author
+	AffiliationIDS IDREFS #IMPLIED
+	CorrespondingAffiliationID IDREF #IMPLIED
+	PresentAffiliationID IDREF #IMPLIED
+	OnBehalfOfID IDREF #IMPLIED
+	SAPID CDATA #IMPLIED
+	SpringerReferenceID CDATA #IMPLIED
+	ORCID CDATA #IMPLIED
+	EqualContribution %BooleanAttrValues; #IMPLIED
+	Deceased %BooleanAttrValues; #IMPLIED
+	ID ID #IMPLIED
+>
+<!ELEMENT Biography (FormalPara | Para+)>
+<!ELEMENT Editor (EditorName, Role?, OtherCredit?, Contact?, (Biography | Figure)?)>
+<!ATTLIST Editor
+	AffiliationIDS IDREFS #IMPLIED
+	PresentAffiliationID IDREF #IMPLIED
+	SAPID CDATA #IMPLIED
+	SpringerReferenceID CDATA #IMPLIED
+	ORCID CDATA #IMPLIED
+>
+<!ELEMENT Collaborator (CollaboratorName, Role?, Contact?)>
+<!ATTLIST Collaborator
+	AffiliationIDS IDREFS #IMPLIED
+	Type CDATA #REQUIRED
+	SpringerReferenceID CDATA #IMPLIED
+	ORCID CDATA #IMPLIED
+>
+<!ELEMENT CollaboratorName (%NameModel;)>
+<!ATTLIST CollaboratorName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT InstitutionalCollaborator (InstitutionalCollaboratorName, Contact?)>
+<!ATTLIST InstitutionalCollaborator
+	AffiliationIDS IDREFS #IMPLIED
+	Type CDATA #REQUIRED
+	SpringerReferenceID CDATA #IMPLIED
+>
+<!ELEMENT InstitutionalAuthor (InstitutionalAuthorName, Contact?)>
+<!ATTLIST InstitutionalAuthor
+	AffiliationIDS IDREFS #IMPLIED
+	CorrespondingAffiliationID IDREF #IMPLIED
+	SAPID CDATA #IMPLIED
+	SpringerReferenceID CDATA #IMPLIED
+	ID ID #IMPLIED
+>
+<!ELEMENT InstitutionalEditor (InstitutionalEditorName, Contact?)>
+<!ATTLIST InstitutionalEditor
+	AffiliationIDS IDREFS #IMPLIED
+	SAPID CDATA #IMPLIED
+	SpringerReferenceID CDATA #IMPLIED
+>
+<!ELEMENT InstitutionalAuthorName (#PCDATA)>
+<!ELEMENT InstitutionalEditorName (#PCDATA)>
+<!ELEMENT InstitutionalCollaboratorName (#PCDATA)>
+<!ELEMENT AuthorName (%NameModel;)>
+<!ATTLIST AuthorName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT EditorName (%NameModel;)>
+<!ATTLIST EditorName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT Prefix (#PCDATA)>
+<!ELEMENT GivenName (#PCDATA)>
+<!ELEMENT NoGivenName EMPTY>
+<!ELEMENT Particle (#PCDATA)>
+<!ELEMENT FamilyName (#PCDATA)>
+<!ELEMENT Suffix (#PCDATA)>
+<!ELEMENT Degrees (#PCDATA)>
+<!ELEMENT Role (#PCDATA)>
+<!ELEMENT OtherCredit (#PCDATA)>
+<!ELEMENT NativeName (#PCDATA)>
+<!ATTLIST NativeName
+	Language (Zh | Ru) #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- Affiliation                                                             -->
+<!-- ....................................................................... -->
+<!ELEMENT Affiliation ((OrgDivision?, OrgName)?, (OrgAddress | URL))>
+<!ATTLIST Affiliation
+	ID ID #REQUIRED
+>
+<!ELEMENT OrgName (#PCDATA)>
+<!ELEMENT OrgDivision (#PCDATA)>
+<!ELEMENT OrgAddress (%AddressModel;)*>
+<!ELEMENT Contact ((OrgDivision?, OrgName)?, (%AddressModel;)*, Phone*, Fax*, Email*, URL*)>
+<!ELEMENT Street (#PCDATA)>
+<!ELEMENT Postbox (#PCDATA)>
+<!ELEMENT Postcode (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ATTLIST Email
+	OutputMedium (Paper | Online | All | None) #IMPLIED
+>
+<!ELEMENT NoEmail (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Abstract                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT Abstract (Heading?, (AbstractSection | (%AbstractTextBlockModel;))+)>
+<!ATTLIST Abstract
+	ID ID #REQUIRED
+	Language %LanguageAttrValues; #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- KeywordGroup / AbbreviationGroup                                        -->
+<!-- ....................................................................... -->
+<!ELEMENT KeywordGroup (Heading?, Keyword+)>
+<!ATTLIST KeywordGroup
+	Language %LanguageAttrValues; #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT Keyword (%SimpleTextModel;)*>
+<!ELEMENT AbbreviationGroup (Heading?, (AbbreviationGroupSection+ | DefinitionList))>
+<!-- ....................................................................... -->
+<!-- ArticleNote                                                             -->
+<!-- ....................................................................... -->
+<!ELEMENT ArticleNote (Heading?, (SimplePara | FormalPara)+)>
+<!ATTLIST ArticleNote
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	Type %ArticleNoteTypeAttrValues; #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- Body                                                                    -->
+<!-- ....................................................................... -->
+<!ELEMENT Body ((%FullTextBlockModel;)*, Section1*)>
+<!ATTLIST Body
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT BodyRef EMPTY>
+<!ATTLIST BodyRef
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	FileRef CDATA #REQUIRED
+	TargetType %TargetTypeAttrValues; #REQUIRED
+	PDFType %PDFTypeAttrValues; #IMPLIED
+	colorProfile (sRGB | ISOcoated | Legacy) #IMPLIED
+	grayscaleProfile (Gamma2.2 | Legacy) #IMPLIED
+	%DCTMLinkAtts; 
+>
+<!ELEMENT NoBody EMPTY>
+<!-- ....................................................................... -->
+<!-- Sections                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT AbstractSection (Heading, (%AbstractTextBlockModel;)*)>
+<!ATTLIST AbstractSection
+	ID ID #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT AbbreviationGroupSection (Heading, DefinitionList)>
+<!ATTLIST AbbreviationGroupSection
+	ID ID #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT Section1 (Heading, SectionClassification?, AuthorGroup?, (%FullTextBlockModel;)*, Section2*)>
+<!ATTLIST Section1
+	ID ID #REQUIRED
+	Type %SectionTypeAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	RenderAs (Section2 | Section3 | Section4 | Section5 | Section6 | Section7) #IMPLIED
+>
+<!ELEMENT Section2 (Heading, SectionClassification?, AuthorGroup?, (%FullTextBlockModel;)*, Section3*)>
+<!ATTLIST Section2
+	ID ID #REQUIRED
+	Type %SectionTypeAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	RenderAs (Section1 | Section3 | Section4 | Section5 | Section6 | Section7) #IMPLIED
+>
+<!ELEMENT Section3 (Heading, SectionClassification?, AuthorGroup?, (%FullTextBlockModel;)*, Section4*)>
+<!ATTLIST Section3
+	ID ID #REQUIRED
+	Type %SectionTypeAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	RenderAs (Section1 | Section2 | Section4 | Section5 | Section6 | Section7) #IMPLIED
+>
+<!ELEMENT Section4 (Heading, SectionClassification?, (%FullTextBlockModel;)*, Section5*)>
+<!ATTLIST Section4
+	ID ID #REQUIRED
+	Type %SectionTypeAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	RenderAs (Section1 | Section2 | Section3 | Section5 | Section6 | Section7) #IMPLIED
+>
+<!ELEMENT Section5 (Heading, SectionClassification?, (%FullTextBlockModel;)*, Section6*)>
+<!ATTLIST Section5
+	ID ID #REQUIRED
+	Type %SectionTypeAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	RenderAs (Section1 | Section2 | Section3 | Section4 | Section6 | Section7) #IMPLIED
+>
+<!ELEMENT Section6 (Heading, SectionClassification?, (%FullTextBlockModel;)*, Section7*)>
+<!ATTLIST Section6
+	ID ID #REQUIRED
+	Type %SectionTypeAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	RenderAs (Section1 | Section2 | Section3 | Section4 | Section5 | Section7) #IMPLIED
+>
+<!ELEMENT Section7 (Heading, SectionClassification?, (%FullTextBlockModel;)*)>
+<!ATTLIST Section7
+	ID ID #REQUIRED
+	Type %SectionTypeAttrValues; #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	RenderAs (Section1 | Section2 | Section3 | Section4 | Section5 | Section6) #IMPLIED
+>
+<!ELEMENT SectionClassification (%ClassificationModel;)+>
+<!-- ....................................................................... -->
+<!-- Paragraphs                                                              -->
+<!-- ....................................................................... -->
+<!ELEMENT Para (%FullTextModel;)*>
+<!ATTLIST Para
+	ID ID #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	Type %ParaTypeAttrValues; #IMPLIED
+>
+<!ELEMENT FormalPara (Heading, Para+)>
+<!ATTLIST FormalPara
+	ID ID #IMPLIED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	Type %ParaTypeAttrValues; #IMPLIED
+	RenderingStyle %RenderingStyleAttrValues; #REQUIRED
+>
+<!ELEMENT SimplePara (%SimpleTextModel; | Figure | Table | %ReferenceElements;)*>
+<!ATTLIST SimplePara
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+	Type %ParaTypeAttrValues; #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- Inline elements                                                         -->
+<!-- ....................................................................... -->
+<!ELEMENT Emphasis (#PCDATA)>
+<!ATTLIST Emphasis
+	Type %EmphasisTypeAttrValues; #IMPLIED
+	FontCategory (NonProportional | SansSerif) #IMPLIED
+>
+<!ELEMENT BlockQuote (Heading?, (%FullTextBlockModel;)*)>
+<!ELEMENT Literal (#PCDATA | Emphasis)*>
+<!ELEMENT Superscript (#PCDATA | Emphasis)*>
+<!ELEMENT Subscript (#PCDATA | Emphasis)*>
+<!ELEMENT Stack (Subscript, Superscript)>
+<!ELEMENT Footnote (Para+)>
+<!ATTLIST Footnote
+	ID ID #REQUIRED
+>
+<!ELEMENT Sidebar (Para+)>
+<!ATTLIST Sidebar
+	ID ID #REQUIRED
+	Type (Lexicon | Dialog | Number) #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- Glossary                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT Glossary (Heading, SubHeading?, (GlossarySection+ | GlossaryEntry+))>
+<!ELEMENT GlossarySection (Heading, SubHeading?, GlossaryEntry+)>
+<!ELEMENT GlossaryEntry (GlossaryTerm, (IndexTerm)*, (GlossarySee | GlossaryDef+))>
+<!ATTLIST GlossaryEntry
+	ID ID #IMPLIED
+	SortAs CDATA #IMPLIED
+>
+<!ELEMENT GlossarySee (%SimpleTextModel;)*>
+<!ATTLIST GlossarySee
+	OtherTerm CDATA #REQUIRED
+>
+<!ELEMENT GlossaryDef (SimplePara | GlossarySeeAlso)+>
+<!ELEMENT GlossarySeeAlso (%SimpleTextModel;)*>
+<!ATTLIST GlossarySeeAlso
+	OtherTerm CDATA #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- Index Term                                                              -->
+<!-- ....................................................................... -->
+<!ELEMENT IndexTerm (%SimpleTextModel; | Primary | Secondary | Tertiary | See | SeeAlso)*>
+<!--ELEMENT IndexTerm (Primary, 
+                       ((Secondary, 
+                          ((Tertiary, 
+                             (See | SeeAlso+)?) | 
+                       See | SeeAlso+)?) | 
+                     See | SeeAlso+)?)-->
+<!ATTLIST IndexTerm
+	ID ID #IMPLIED
+	Class (EndOfRange | StartOfRange) #IMPLIED
+	StartRef IDREF #IMPLIED
+	Scope (Local | Global | All) #IMPLIED
+	Type CDATA #IMPLIED
+>
+<!ELEMENT Primary (%SimpleTextModel;)*>
+<!ATTLIST Primary
+	SortAs CDATA #IMPLIED
+>
+<!ELEMENT Secondary (%SimpleTextModel;)*>
+<!ATTLIST Secondary
+	SortAs CDATA #IMPLIED
+>
+<!ELEMENT Tertiary (%SimpleTextModel;)*>
+<!ATTLIST Tertiary
+	SortAs CDATA #IMPLIED
+>
+<!ELEMENT See (%SimpleTextModel;)*>
+<!ELEMENT SeeAlso (%SimpleTextModel;)*>
+<!-- ....................................................................... -->
+<!-- Index                                                                   -->
+<!-- ....................................................................... -->
+<!ELEMENT Index (Heading, SubHeading?, (IndexDiv* | IndexEntry*))>
+<!ATTLIST Index
+	ID ID #REQUIRED
+>
+<!ELEMENT SeriesIndex (Heading, SubHeading?, (IndexDiv* | IndexEntry*))>
+<!ELEMENT SubSeriesIndex (Heading, SubHeading?, (IndexDiv* | IndexEntry*))>
+<!ELEMENT IndexDiv (Heading, SubHeading?, IndexEntry+)>
+<!ELEMENT IndexEntry (PrimaryIE, (SeeIE | SeeAlsoIE)*, (SecondaryIE, (SeeIE | SeeAlsoIE | TertiaryIE)*)*)>
+<!ELEMENT PrimaryIE (%SimpleTextModel;)*>
+<!ELEMENT SecondaryIE (%SimpleTextModel;)*>
+<!ELEMENT TertiaryIE (%SimpleTextModel;)*>
+<!ELEMENT SeeIE (%SimpleTextModel;)*>
+<!ELEMENT SeeAlsoIE (%SimpleTextModel;)*>
+<!-- ....................................................................... -->
+<!-- Reference Types                                                         -->
+<!-- ....................................................................... -->
+<!ELEMENT ExternalRef (RefSource, RefTarget+)>
+<!ATTLIST ExternalRef
+	ID ID #IMPLIED
+>
+<!ELEMENT RefSource (%SimpleTextModel;)*>
+<!ELEMENT RefTarget EMPTY>
+<!ATTLIST RefTarget
+	TargetType (DOI | URL | SearchTerm | Other) #REQUIRED
+	TargetRefID CDATA #IMPLIED
+	Address CDATA #REQUIRED
+	Key CDATA #IMPLIED
+>
+<!ELEMENT InternalRef (%SimpleTextModel;)*>
+<!ATTLIST InternalRef
+	ID ID #IMPLIED
+	RefID IDREF #REQUIRED
+>
+<!ELEMENT CitationRef (#PCDATA)>
+<!ATTLIST CitationRef
+	CitationID IDREF #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- Lists types                                                             -->
+<!-- ....................................................................... -->
+<!ELEMENT UnorderedList (Heading?, ItemContent+)>
+<!ATTLIST UnorderedList
+	Mark (Bullet | Dash | None) #REQUIRED
+>
+<!ELEMENT OrderedList (Heading?, ListItem+)>
+<!ELEMENT DefinitionList (Heading?, DefinitionListEntry+)>
+<!ELEMENT ListItem (ItemNumber, ItemContent)>
+<!ATTLIST ListItem
+	Type %ListItemTypeAttrValues; #IMPLIED
+>
+<!ELEMENT ItemContent (Para+)>
+<!ELEMENT ItemNumber (#PCDATA)>
+<!ELEMENT DefinitionListEntry (Term, Description)>
+<!ELEMENT Term (%SimpleTextModel;)*>
+<!ELEMENT Description (Para+)>
+<!-- ....................................................................... -->
+<!-- Quiz                                                                    -->
+<!-- ....................................................................... -->
+<!ELEMENT Quiz (Heading?, QuizTask+)>
+<!ELEMENT QuizTask (QuizItem+)>
+<!ELEMENT QuizItem (ItemNumber?, ItemContent)>
+<!ATTLIST QuizItem
+	Type %ListItemTypeAttrValues; #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- Figure / InlineMediaObject / MediaObject                                -->
+<!-- ....................................................................... -->
+<!ELEMENT Figure (Caption*, MediaObject+)>
+<!ATTLIST Figure
+	ID ID #REQUIRED
+	Float %BooleanAttrValues; #REQUIRED
+	Category (Schema | Structure | Standard | Logo) #REQUIRED
+>
+<!ELEMENT InlineMediaObject ((VideoObject | AudioObject | ImageObject | DataObject), (VideoObject | AudioObject | ImageObject | DataObject | TextObject)*)>
+<!ELEMENT MediaObject (Caption*, (VideoObject | AudioObject | ImageObject | DataObject), (VideoObject | AudioObject | ImageObject | DataObject | TextObject)*)>
+<!ATTLIST MediaObject
+	ID ID #IMPLIED
+>
+<!ELEMENT VideoObject (Caption*)>
+<!ATTLIST VideoObject
+	FileRef CDATA #REQUIRED
+	VideoID CDATA #IMPLIED
+	%DCTMLinkAtts; 
+>
+<!ELEMENT AudioObject (Caption*)>
+<!ATTLIST AudioObject
+	FileRef CDATA #REQUIRED
+	AudioID CDATA #IMPLIED
+	%DCTMLinkAtts; 
+>
+<!ELEMENT ImageObject (Caption*)>
+<!ATTLIST ImageObject
+	FileRef CDATA #REQUIRED
+	Format (GIF | TIFF | EPS | JPEG | PNG | SVG) #REQUIRED
+	Color (Color | BlackWhite) #REQUIRED
+	Type (Linedraw | Halftone | LinedrawHalftone) #REQUIRED
+	Rendition (Print | HTML | ProofPDF | Preview) #REQUIRED
+	%DCTMLinkAtts; 
+>
+<!ELEMENT DataObject (Caption*)>
+<!ATTLIST DataObject
+	FileRef CDATA #REQUIRED
+	%DCTMLinkAtts; 
+>
+<!ELEMENT TextObject (Para)+>
+<!ELEMENT Cover (CoverInfo, CoverFigure?, BodyRef*)>
+<!ATTLIST Cover
+	Type (TwoPage | FourPage) #IMPLIED
+>
+<!ELEMENT CoverInfo (CoverSequenceNumber?, CoverFirstPage, CoverLastPage)>
+<!ELEMENT AdditionalCoverInfo (CoverSequenceNumber?, CoverFirstPage, CoverLastPage)>
+<!ELEMENT CoverSequenceNumber (#PCDATA)>
+<!ELEMENT CoverFirstPage (#PCDATA)>
+<!ELEMENT CoverLastPage (#PCDATA)>
+<!ELEMENT CoverFigure (MediaObject)>
+<!-- ....................................................................... -->
+<!-- Equations                                                               -->
+<!-- ....................................................................... -->
+<!ELEMENT Equation (EquationNumber?, (MediaObject | EquationSource)+)>
+<!ATTLIST Equation
+	ID ID #REQUIRED
+>
+<!ELEMENT EquationNumber (#PCDATA)>
+<!ELEMENT InlineEquation (InlineMediaObject | EquationSource)+>
+<!ATTLIST InlineEquation
+	ID ID #REQUIRED
+>
+<!ELEMENT EquationSource (%EquationSourceModel;)*>
+<!ATTLIST EquationSource
+	Format NOTATION (TEX | MATHML | MATHTYPE | XML) #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- Table of content                                                        -->
+<!-- ....................................................................... -->
+<!ELEMENT Toc (Heading, SubHeading?, TocFront*, (TocPart | TocChapter)*, TocBack*)>
+<!ELEMENT TocFront (%SimpleTextModel;)*>
+<!ATTLIST TocFront
+	PageNumber CDATA #IMPLIED
+>
+<!ELEMENT TocPart (TocEntry, (Author | InstitutionalAuthor)*, TocChapter*)>
+<!ELEMENT TocEntry (%SimpleTextModel; | ExternalRef)*>
+<!ATTLIST TocEntry
+	PageNumber CDATA #IMPLIED
+	TargetID CDATA #IMPLIED
+>
+<!ELEMENT TocChapter (Heading?, SubHeading?, (TocEntry, (Author | InstitutionalAuthor)*)?, TocSection1*)>
+<!ELEMENT TocAppendix (Heading?, SubHeading?, (TocEntry, (Author | InstitutionalAuthor)*)?, TocSection1*)>
+<!ELEMENT TocSection1 (TocEntry, TocSection2*)>
+<!ELEMENT TocSection2 (TocEntry, TocSection3*)>
+<!ELEMENT TocSection3 (TocEntry, TocSection4*)>
+<!ELEMENT TocSection4 (TocEntry, TocSection5*)>
+<!ELEMENT TocSection5 (TocEntry, TocSection6*)>
+<!ELEMENT TocSection6 (TocEntry, TocSection7*)>
+<!ELEMENT TocSection7 (TocEntry)>
+<!ELEMENT TocBack (%SimpleTextModel;)*>
+<!ATTLIST TocBack
+	PageNumber CDATA #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- Appendix                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT Appendix (TocAppendix?, Section1+)>
+<!ATTLIST Appendix
+	ID ID #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- Acknowledgments                                                         -->
+<!-- ....................................................................... -->
+<!ELEMENT Acknowledgments (Heading?, (SimplePara | FormalPara)+)>
+<!-- ....................................................................... -->
+<!-- Ethics                                                                  -->
+<!-- ....................................................................... -->
+<!ELEMENT Ethics (Heading?, (SimplePara | FormalPara)+)>
+<!-- ....................................................................... -->
+<!-- Bibliography                                                            -->
+<!-- ....................................................................... -->
+<!ELEMENT Bibliography (Heading, (BibSection | Citation)+)>
+<!ATTLIST Bibliography
+	ID ID #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT BibSection (Heading, Citation+)>
+<!ATTLIST BibSection
+	ID ID #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- Citation                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT Citation (CitationNumber?, (BibArticle | BibIssue | BibChapter | BibBook)?, BibUnstructured?)>
+<!ATTLIST Citation
+	ID ID #REQUIRED
+>
+<!ELEMENT CitationNumber (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- BibBook                                                                 -->
+<!-- ....................................................................... -->
+<!ELEMENT BibBook (((%EditorshipModel;) | (%AuthorshipModel;)), %YearModel;, BookTitle, (EditionNumber? | ((ConfEventName | ConfSeriesName)?, ConfEventAbbreviation?, ConfNumber?, ConfEventLocation?, (ConfEventDate | (ConfEventDateStart, ConfEventDateEnd))?, ConfEventURL?)), SeriesTitle?, NumberInSeries?, (PublisherName, PublisherLocation)*, (FirstPage, LastPage?)?, BibBookDOI?, Occurrence*, ISBN?, BibComments?)>
+<!-- ....................................................................... -->
+<!-- BibArticle                                                              -->
+<!-- ....................................................................... -->
+<!ELEMENT BibArticle ((%AuthorshipModel;), Year, (ArticleTitle | NoArticleTitle), JournalTitle, ((VolumeID, IssueID?, ((FirstPage, LastPage?) | BibArticleNumber), BibArticleDOI?, Occurrence*) | (BibArticleDOI, Occurrence*) | Occurrence+), BibComments?)>
+<!ELEMENT BibArticleNumber (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- BibChapter                                                              -->
+<!-- ....................................................................... -->
+<!ELEMENT BibChapter ((%AuthorshipModel;), %YearModel;, ((NoChapterTitle, (%EditorshipModel;)?, BookTitle, (EditionNumber? | ((ConfEventName | ConfSeriesName)?, ConfEventAbbreviation?, ConfNumber?, ConfEventLocation?, (ConfEventDate | (ConfEventDateStart, ConfEventDateEnd))?, ConfEventURL?)), SeriesTitle?, NumberInSeries?, (PublisherName, PublisherLocation)*, (FirstPage, LastPage?)?, (BibChapterDOI | BibBookDOI)?) | (ChapterTitle, (((SeriesTitle, NumberInSeries?)?, (PublisherName, PublisherLocation)*, BibChapterDOI) | ((%EditorshipModel;)?, BookTitle, (EditionNumber? | ((ConfEventName | ConfSeriesName)?, ConfEventAbbreviation?, ConfNumber?, ConfEventLocation?, (ConfEventDate | (ConfEventDateStart, ConfEventDateEnd))?, ConfEventURL?)), SeriesTitle?, NumberInSeries?, (PublisherName, PublisherLocation)*, (FirstPage, LastPage?)?, (BibChapterDOI | BibBookDOI)?)))), Occurrence*, ISBN?, BibComments?)>
+<!-- ....................................................................... -->
+<!-- BibIssue                                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT BibIssue (JournalTitle, Year, VolumeID, (IssueID | Month), Occurrence*, BibComments?)>
+<!-- ....................................................................... -->
+<!-- BibUnstructured                                                         -->
+<!-- ....................................................................... -->
+<!ELEMENT BibUnstructured (%SimpleTextModel; | ExternalRef)*>
+<!-- ....................................................................... -->
+<!-- Conference Elements                                                     -->
+<!-- ....................................................................... -->
+<!ELEMENT ConferenceInfo ((ConfEventName | ConfSeriesName), ConfEventAbbreviation?, ConfNumber?, ConfEventLocation, (ConfEventDate | (ConfEventDateStart, ConfEventDateEnd)), ConfEventURL?)>
+<!ELEMENT ConfEventName (%SimpleTextModel;)*>
+<!ELEMENT ConfSeriesName (%SimpleTextModel;)*>
+<!ATTLIST ConfSeriesName 
+	ID ID #IMPLIED
+>
+<!ELEMENT ConfEventAbbreviation (#PCDATA)>
+<!ELEMENT ConfNumber (#PCDATA)>
+<!ELEMENT ConfEventLocation (%SimpleTextModel; | City | Country)*>
+<!ELEMENT ConfEventDate (#PCDATA)>
+<!ELEMENT ConfEventDateStart (Year, Month, Day)>
+<!ELEMENT ConfEventDateEnd (Year, Month, Day)>
+<!ELEMENT ConfEventURL (#PCDATA)>
+<!ELEMENT BibComments (%SimpleTextModel;)*>
+<!ELEMENT BibArticleDOI (#PCDATA)>
+<!ELEMENT BibChapterDOI (#PCDATA)>
+<!ELEMENT BibBookDOI (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Components of the bibliographic name model                              -->
+<!-- ....................................................................... -->
+<!ELEMENT Initials (#PCDATA)>
+<!ELEMENT NoInitials EMPTY>
+<!ELEMENT BibAuthorName (%BibNameModel;)>
+<!ELEMENT BibEditorName (%BibNameModel;)>
+<!ELEMENT BibInstitutionalEditorName (#PCDATA)>
+<!ELEMENT Etal EMPTY>
+<!ELEMENT Eds EMPTY>
+<!-- ....................................................................... -->
+<!-- Occurrence                                                              -->
+<!-- ....................................................................... -->
+<!ELEMENT Occurrence (Handle | URL)>
+<!ATTLIST Occurrence
+	Type (DOI | COI | PID | ZLBID | AMSID | URL | ISIID | Bibcode | PMCID) #REQUIRED
+>
+<!ELEMENT Handle (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Date fields                                                             -->
+<!-- ............................................f........................... -->
+<!ELEMENT Day (#PCDATA)>
+<!ELEMENT Month (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT Hour (#PCDATA)>
+<!ELEMENT Minute (#PCDATA)>
+<!ELEMENT Second (#PCDATA)>
+<!ELEMENT DateString (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- ID for components                                                       -->
+<!-- ....................................................................... -->
+<!ELEMENT JournalID (#PCDATA)>
+<!ELEMENT VolumeID (#PCDATA)>
+<!ELEMENT VolumeIDStart (#PCDATA)>
+<!ELEMENT VolumeIDEnd (#PCDATA)>
+<!ELEMENT IssueID (#PCDATA)>
+<!ELEMENT IssueIDStart (#PCDATA)>
+<!ELEMENT IssueIDEnd (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Titles for componentes                                                  -->
+<!-- ....................................................................... -->
+<!ELEMENT JournalTitle (#PCDATA)>
+<!ELEMENT ChapterTitle (%SimpleTextModel;)*>
+<!ATTLIST ChapterTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT NoChapterTitle EMPTY>
+<!ELEMENT IssueTitle (%SimpleTextModel;)*>
+<!ATTLIST IssueTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT ArticleTitle (%SimpleTextModel;)*>
+<!ATTLIST ArticleTitle
+	Language %LanguageAttrValues; #REQUIRED
+	OutputMedium %OutputMediumAttrValues; #IMPLIED
+>
+<!ELEMENT NoArticleTitle EMPTY>
+<!ELEMENT BookTitle (%SimpleTextModel;)*>
+<!ELEMENT SeriesTitle (%SimpleTextModel;)*>
+<!ATTLIST SeriesTitle
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT Heading (%SimpleTextModel; | %ReferenceElements;)*>
+<!ELEMENT SubHeading (%SimpleTextModel; | %ReferenceElements;)*>
+<!-- ....................................................................... -->
+<!-- Page Headers                                                            -->
+<!-- ....................................................................... -->
+<!ELEMENT PageHeaders (OpeningHeader?, OpeningFigure?, RunningTitle+, RunningAuthor?)>
+<!ELEMENT OpeningHeader (%SimpleTextModel;)*>
+<!ELEMENT OpeningFigure (Caption*, MediaObject+)>
+<!ATTLIST OpeningFigure
+	ID ID #REQUIRED
+	Float %BooleanAttrValues; #REQUIRED
+	Category (Schema | Structure | Standard | Logo) #REQUIRED
+>
+<!ELEMENT RunningTitle (%SimpleTextModel;)*>
+<!ELEMENT RunningAuthor (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- General purpose elements                                                -->
+<!-- ....................................................................... -->
+<!ELEMENT URL (#PCDATA)>
+<!ELEMENT NumberInSeries (#PCDATA)>
+<!ELEMENT EditionNumber (#PCDATA)>
+<!ELEMENT FirstPage (#PCDATA)>
+<!ELEMENT LastPage (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ATTLIST ISBN
+	Type (Hardcover | Softcover | eBook) #IMPLIED
+>
+<!ELEMENT CoverDate ((%YearMonthModel;) | (DateString, Year?, Month?))>
+<!ELEMENT OnlineDate (%YearMonthDayModel;)>
+<!ELEMENT PrintDate (%YearMonthDayModel;)>
+<!ELEMENT CopyrightHolderName (#PCDATA)>
+<!ELEMENT CopyrightYear (#PCDATA)>
+<!ELEMENT GlossaryTerm (%SimpleTextModel;)*>
+<!ELEMENT Caption (CaptionNumber?, CaptionContent)>
+<!ATTLIST Caption
+	Language %LanguageAttrValues; #REQUIRED
+>
+<!ELEMENT CaptionNumber (#PCDATA)>
+<!ELEMENT CaptionContent (SimplePara)+>
+<!ELEMENT SubjectCollection (#PCDATA)>
+<!ATTLIST SubjectCollection
+	Code CDATA #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- ClassificationGroup                                                     -->
+<!-- ....................................................................... -->
+<!ELEMENT ClassificationGroup (CharacteristicValue+)>
+<!ELEMENT CharacteristicValue (%SimpleTextModel;)*>
+<!ATTLIST CharacteristicValue
+	Characteristic %CharacteristicAttrValues; #REQUIRED
+>

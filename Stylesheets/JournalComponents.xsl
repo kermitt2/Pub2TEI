@@ -178,16 +178,17 @@
     </xsl:template>
 
     <xsl:template
-        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper">
+        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper | SeriesPrintISSN">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
             </xsl:variable>
-            <xsl:variable name="journalEntry"
+            <!-- Vieux morceau de code du projet PEER où l'on vérifiait dans une liste de journaux... -->
+            <!--<xsl:variable name="journalEntry"
                 select="$journalList/descendant::tei:row[tei:cell/text()=$ISSNCode]"/>
             <xsl:message>pISSN: <xsl:value-of select="$ISSNCode"/></xsl:message>
             <xsl:message>Journal: <xsl:value-of select="$journalEntry/tei:cell[@role='Journal']"
-                /></xsl:message>
+                /></xsl:message>-->
             <idno type="pISSN">
                 <xsl:value-of select="$ISSNCode"/>
             </idno>
@@ -195,16 +196,17 @@
     </xsl:template>
 
     <xsl:template
-        match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec">
+        match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
             </xsl:variable>
-            <xsl:variable name="journalEntry"
+            <!-- Vieux morceau de code du projet PEER où l'on vérifiait dans une liste de journaux... -->
+            <!--<xsl:variable name="journalEntry"
                 select="$journalList/descendant::tei:row[tei:cell/text()=$ISSNCode]"/>
             <xsl:message>eISSN: <xsl:value-of select="$ISSNCode"/></xsl:message>
             <xsl:message>Journal: <xsl:value-of select="$journalEntry/tei:cell[@role='Journal']"
-                /></xsl:message>
+                /></xsl:message>-->
             <idno type="eISSN">
                 <xsl:value-of select="$ISSNCode"/>
             </idno>
@@ -217,7 +219,7 @@
     <!-- NLM 2.3 article: article-id[@pub-id-type='doi'] -->
 
     <xsl:template
-        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI">
+        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI">
         <xsl:if test=".!=''">
             <xsl:variable name="DOIValue" select="string(.)"/>
             <idno type="DOI">
@@ -229,7 +231,6 @@
                         <xsl:value-of select="normalize-space($DOIValue)"/>
                     </xsl:otherwise>
                 </xsl:choose>
-
             </idno>
         </xsl:if>
     </xsl:template>
@@ -355,7 +356,7 @@
 
     <!-- Pagination -->
 
-    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page">
+    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage">
         <xsl:if test=".!=''">
             <biblScope unit="page" from="{.}">
                 <xsl:apply-templates/>
@@ -363,7 +364,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | sb:last-page">
+    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page">
         <xsl:if test=".!=''">
             <biblScope unit="page" to="{.}">
                 <xsl:apply-templates/>
