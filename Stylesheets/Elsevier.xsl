@@ -125,7 +125,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 	
-    <xsl:template match="els:display">
+    <xsl:template match="els:display | ce:display">
         <xsl:apply-templates/>
     </xsl:template>
 

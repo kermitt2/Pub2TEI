@@ -31,7 +31,7 @@
     </xsl:template>
 
     <!-- Formules mathématiques -->
-    <xsl:template match="Formula | formula | inline-formula | disp-formula">
+    <xsl:template match="Formula | formula | inline-formula | disp-formula | ce:formula">
         <formula>
             <xsl:if test="@id">
                 <xsl:attribute name="xml:id">
