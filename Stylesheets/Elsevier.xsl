@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns="http://www.tei-c.org/ns/1.0" 
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" 
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all"
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
 
     <xsl:output encoding="UTF-8" method="xml"/>
-		
+
     <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info]">
         <TEI>
             <xsl:if test="@xml:lang">
@@ -20,47 +18,53 @@
                         <xsl:apply-templates select="els:head/ce:title | head/ce:title"/>
                     </titleStmt>
                     <publicationStmt>
-                        <xsl:apply-templates select="els:item-info/ce:copyright | item-info/ce:copyright"/>
+                        <xsl:apply-templates
+                            select="els:item-info/ce:copyright | item-info/ce:copyright"/>
                     </publicationStmt>
                     <sourceDesc>
                         <biblStruct>
                             <analytic>
                                 <!-- All authors are included here -->
-                                <xsl:apply-templates select="els:head/ce:author-group/ce:author | head/ce:author-group/ce:author"/>
+                                <xsl:apply-templates
+                                    select="els:head/ce:author-group/ce:author | head/ce:author-group/ce:author"/>
                                 <!-- Title information related to the paper goes here -->
                                 <xsl:apply-templates select="els:head/ce:title | head/ce:title"/>
                             </analytic>
                             <monogr>
                                 <xsl:apply-templates select="els:item-info/els:jid | item-info/jid"/>
-								<!-- PL: note for me, does the issn appears in the biblio section? -->
+                                <!-- PL: note for me, does the issn appears in the biblio section? -->
                                 <xsl:apply-templates select="//ce:issn"/>
                                 <!-- Just in case -->
                                 <imprint>
                                     <xsl:choose>
-                                        <xsl:when test="els:head/ce:miscellaneous | head/ce:miscellaneous">
+                                        <xsl:when
+                                            test="els:head/ce:miscellaneous | head/ce:miscellaneous">
                                             <xsl:apply-templates select="els:head/ce:miscellaneous"
                                                 mode="inImprint"/>
                                             <xsl:apply-templates select="head/ce:miscellaneous"
-                                                mode="inImprint"/>	
+                                                mode="inImprint"/>
                                         </xsl:when>
-                                        <xsl:when test="els:head/ce:date-accepted | head/ce:date-accepted">
+                                        <xsl:when
+                                            test="els:head/ce:date-accepted | head/ce:date-accepted">
                                             <xsl:apply-templates select="els:head/ce:date-accepted"
                                                 mode="inImprint"/>
                                             <xsl:apply-templates select="head/ce:date-accepted"
-                                                mode="inImprint"/>	
+                                                mode="inImprint"/>
                                         </xsl:when>
-                                        <xsl:when test="els:head/ce:date-received | head/ce:date-received">
+                                        <xsl:when
+                                            test="els:head/ce:date-received | head/ce:date-received">
                                             <xsl:apply-templates select="els:head/ce:date-received"
                                                 mode="inImprint"/>
-	                                       	<xsl:apply-templates select="head/ce:date-received"
-	                                            mode="inImprint"/>	
+                                            <xsl:apply-templates select="head/ce:date-received"
+                                                mode="inImprint"/>
                                         </xsl:when>
                                     </xsl:choose>
                                 </imprint>
                             </monogr>
                             <xsl:apply-templates select="els:item-info/ce:doi | item-info/ce:doi"/>
                             <xsl:apply-templates select="els:item-info/ce:pii | item-info/ce:pii"/>
-                            <xsl:apply-templates select="els:item-info/els:aid | item-info/els:aid"/>
+                            <xsl:apply-templates select="els:item-info/els:aid | item-info/els:aid"
+                            />
                         </biblStruct>
                     </sourceDesc>
                 </fileDesc>
@@ -97,7 +101,7 @@
                 </front>
                 <body>
                     <xsl:apply-templates select="els:body/*"/>
-					<xsl:apply-templates select="body/*"/>
+                    <xsl:apply-templates select="body/*"/>
                 </body>
                 <back>
                     <!-- Bravo: Elsevier a renommé son back en tail... visionnaire -->
@@ -113,10 +117,10 @@
         <availability status="{@type}">
             <!-- PL: put the date out of the paragraph, as it is TEI P5 valid -->
             <date>
-               	<xsl:value-of select="@year"/>
+                <xsl:value-of select="@year"/>
             </date>
-			<p>	
-				<xsl:value-of select="text()"/>
+            <p>
+                <xsl:value-of select="text()"/>
             </p>
         </availability>
     </xsl:template>
@@ -124,7 +128,7 @@
     <xsl:template match="ce:keyword/ce:text">
         <xsl:apply-templates/>
     </xsl:template>
-	
+
     <xsl:template match="els:display | ce:display">
         <xsl:apply-templates/>
     </xsl:template>
@@ -174,10 +178,10 @@
             <xsl:text>Accepted</xsl:text>
         </change>
     </xsl:template>
-	
+
     <xsl:template match="els:head/ce:date-received | head/ce:date-received" mode="inImprint">
         <change>
-			<xsl:attribute name="type">Received</xsl:attribute>
+            <xsl:attribute name="type">Received</xsl:attribute>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay" select="@day"/>
@@ -266,9 +270,9 @@
             <xsl:apply-templates/>
         </note>
     </xsl:template>
-	
-	<!-- Figures -->
-	
+
+    <!-- Figures -->
+
     <xsl:template match="ce:figure">
         <figure>
             <xsl:apply-templates/>
@@ -285,7 +289,7 @@
 
     <xsl:template match="ce:bib-reference">
         <biblStruct>
-			<xsl:attribute name="xml:id">
+            <xsl:attribute name="xml:id">
                 <xsl:value-of select="@id"/>
             </xsl:attribute>
             <xsl:apply-templates/>
@@ -300,13 +304,15 @@
 
     <xsl:template match="ce:author">
         <author>
-            <xsl:variable name="identifier" select="ce:cross-ref/@refid"/>
-            <xsl:message>Identifier: <xsl:value-of select="$identifier"/></xsl:message>
-            <xsl:if test="//ce:correspondence[@id=$identifier]">
-                <xsl:attribute name="type">
-                    <xsl:text>corresp</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
+            <xsl:variable name="structId" select="ce:cross-ref/@refid"/>
+            <xsl:for-each select="$structId">
+                <xsl:if test="//ce:correspondence[@id=.]">
+                    <xsl:attribute name="type">
+                        <xsl:text>corresp</xsl:text>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:message>Identifier: <xsl:value-of select="."/></xsl:message>
+            </xsl:for-each>
 
             <persName>
                 <xsl:apply-templates select="*[name(.)!='ce:cross-ref' and name(.)!='ce:e-address']"
@@ -315,29 +321,51 @@
 
             <xsl:apply-templates select="ce:e-address"/>
 
+            <xsl:choose>
+                <xsl:when test="../ce:affiliation[not(@id)]">
+                    <xsl:message>Affiliation sans identifiant</xsl:message>
+                    <xsl:for-each select="../ce:affiliation">
+                        <affiliation>
+                            <xsl:call-template name="parseAffiliation">
+                                <xsl:with-param name="theAffil" select="ce:textfn/text()"/>
+                            </xsl:call-template>
+                        </affiliation>
+                    </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:message>On parcourt les affiliations</xsl:message>
+                    <xsl:for-each select="$structId">
+                        <xsl:variable name="localId">
+                            <xsl:value-of select="."/>
+                        </xsl:variable>
+                        <xsl:if test="//ce:affiliation[@id=$localId]">
+                            <xsl:message>Trouvé: <xsl:value-of select="$localId"/></xsl:message>
+                            <affiliation>
+                                <xsl:call-template name="parseAffiliation">
+                                    <xsl:with-param name="theAffil"
+                                        select="//ce:affiliation[@id=$localId]/ce:textfn/text()"/>
+                                </xsl:call-template>
+                            </affiliation>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
 
-            <affiliation>
-                <xsl:if test="../ce:affiliation[not(@id)]">
-                    <xsl:call-template name="parseAffiliation">
-                        <xsl:with-param name="theAffil" select="../ce:affiliation/ce:textfn"/>
-                    </xsl:call-template>
-                </xsl:if>
-                <xsl:if test="//ce:affiliation[@id=$identifier]">
-                    <xsl:message>Trouvé</xsl:message>
-                    <xsl:call-template name="parseAffiliation">
-                        <xsl:with-param name="theAffil"
-                            select="//ce:affiliation[@id=$identifier]/ce:textfn"/>
-                    </xsl:call-template>
-                </xsl:if>
-
-                <xsl:if test="//ce:correspondence[@id=$identifier]">
+            <xsl:for-each select="$structId">
+                <xsl:variable name="localId2">
+                    <xsl:value-of select="."/>
+                </xsl:variable>
+                
+                <xsl:if test="//ce:correspondence[@id=$localId2]">
                     <xsl:variable name="codePays"
                         select="/els:article/els:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text"/>
                     <xsl:message>Pays Elsevier: <xsl:value-of select="$codePays"/></xsl:message>
-					<!-- PL: test to avoid empy country block -->
-					<xsl:if test="$codePays">
-	                    <address>
-	                        <country>
+                    <!-- PL: test to avoid empy country block -->
+
+                    <xsl:if test="$codePays">
+                        <affiliation>
+                            <address>
+	                           <country>
 	                            <xsl:attribute name="key">
 	                                <xsl:value-of select="$codePays"/>
 	                            </xsl:attribute>
@@ -345,28 +373,31 @@
 	                                <xsl:with-param name="country" select="$codePays"/>
 	                            </xsl:call-template>
 	                        </country>
-	                    </address>
-					</xsl:if>	
+	                       </address>
+                        </affiliation>
+                    </xsl:if>
                 </xsl:if>
+            </xsl:for-each>
 
-            </affiliation>
 
-			<!-- PL: no reference markers in the author section -->
+            <!-- PL: no reference markers in the author section -->
             <!--xsl:apply-templates select="ce:cross-ref"/-->
 
         </author>
     </xsl:template>
 
-	<xsl:template match="ce:suffix">
-		<!-- this is the suffix in a title name, e.g. jr for junior -->
-		<suffix><xsl:value-of select="text()"/></suffix>	
-	</xsl:template>
+    <xsl:template match="ce:suffix">
+        <!-- this is the suffix in a title name, e.g. jr for junior -->
+        <suffix>
+            <xsl:value-of select="text()"/>
+        </suffix>
+    </xsl:template>
 
     <xsl:template match="ce:affiliation">
         <affiliation>
             <address>
             <xsl:call-template name="parseAffiliation">
-                <xsl:with-param name="theAffil" select="ce:textfn"/>
+                <xsl:with-param name="theAffil" select="ce:textfn/text()"/>
             </xsl:call-template>
             </address>
         </affiliation>
@@ -375,6 +406,9 @@
     <xsl:template name="parseAffiliation">
         <xsl:param name="theAffil"/>
         <xsl:param name="inAddress" select="false()"/>
+        <xsl:for-each select="$theAffil">
+            <xsl:message>Un bout: <xsl:value-of select="."/></xsl:message>
+        </xsl:for-each>
         <xsl:variable name="avantVirgule">
             <xsl:choose>
                 <xsl:when test="contains($theAffil,',')">
