@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
+	xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" exclude-result-prefixes="#all">
     <xsl:output encoding="UTF-8" method="xml"/>
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
     <xsl:template match="name | persname">
@@ -10,7 +11,7 @@
         </persName>
     </xsl:template>
 
-    <xsl:template match="collab">
+    <xsl:template match="collab | sb:collaboration">
         <name type="collab">
             <xsl:apply-templates/>
         </name>
