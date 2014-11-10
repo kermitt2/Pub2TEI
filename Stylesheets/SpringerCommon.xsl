@@ -363,6 +363,12 @@
             <xsl:apply-templates/>
         </title>
     </xsl:template>
+    
+    <xsl:template match="BookSubTitle">
+        <title level="m" type="sub">
+            <xsl:apply-templates/>
+        </title>
+    </xsl:template>
 
     <!-- Macrostructure of main body if the text -->
 
