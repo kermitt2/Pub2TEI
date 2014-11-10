@@ -1,0 +1,98 @@
+<!--    Elsevier Serials Volume and Volume/Issue DTD version 5.1.0
+
+        Copyright (c) 2003-2004 Elsevier B.V.
+        $Id: si510.dtd,v 1.2 2004/03/01 11:05:27 rschrauw Exp $
+-->
+
+<!--    Permission to copy and distribute verbatim copies of this document is granted, 
+        provided this notice is included in all copies, but changing it is not allowed. 
+
+        Documentation available at http://www.elsevier.com/locate/xml
+-->
+
+<!--    Supported doctype: serial-issue
+
+        Definition:
+        An 'issue' within a serial is a journal issue or a book series volume
+
+        Typical invocation:
+
+        <!DOCTYPE serial-issue
+          PUBLIC "-//ES//DTD serials issue DTD version 5.1.0//EN//XML"
+          "si510.dtd">
+
+-->
+
+<!-- set local parameter entities -->
+
+<!-- include the common element pool -->
+
+<!ENTITY % common.ent
+    PUBLIC "-//ES//ELEMENTS common element pool version 1.1.3//EN//XML"
+    "common113.ent">
+%common.ent;
+
+<!-- namespaces and public identifiers -->
+
+<!ENTITY % ESSI.xmlns       "'http://www.elsevier.com/xml/si/dtd'" >
+
+<!-- attribute group entities -->
+
+<!ENTITY % top-level.att
+               "xmlns           CDATA               #FIXED  %ESSI.xmlns;
+                version         CDATA               #FIXED  '5.1'
+                xmlns:ce        CDATA               #FIXED  %ESCE.xmlns;
+                xmlns:sb        CDATA               #FIXED  %ESSB.xmlns;
+                xmlns:xlink     CDATA               #FIXED  %XLINK.xmlns;
+                xml:lang        %language;          'en'">
+
+<!-- serial-issue (top element) -->
+
+<!ELEMENT   serial-issue        ( issue-info, issue-data, issue-body )>
+<!ATTLIST   serial-issue
+                %top-level.att; >
+
+<!-- unique identification of the issue -->
+
+<!ELEMENT   issue-info          ( ce:pii, ce:doi?, jid, ce:issn, volume-issue-number, ce:isbn? )>
+
+<!ELEMENT   jid                 ( %string.data; )* >
+<!ELEMENT   volume-issue-number ( vol-first, 
+                                  (( vol-last, suppl ) | ( iss-first, iss-last?, suppl? ) | suppl ))>
+<!ELEMENT   vol-first           ( %string.data; )* >
+<!ELEMENT   vol-last            ( %string.data; )* >
+<!ELEMENT   iss-first           ( %string.data; )* >
+<!ELEMENT   iss-last            ( %string.data; )* >
+<!ELEMENT   suppl               ( %string.data; )* >
+
+<!-- information about the issue -->
+
+<!ELEMENT   issue-data          ( cover-date, ce:pages+, cover-image?, issue-designation?,
+                                  title-editors-group* )>
+ 
+<!ELEMENT   cover-date          ( date-range )>
+<!ELEMENT   cover-image         ( ce:figure )>
+<!ELEMENT   date-range          ( start-date, end-date? )>
+<!ELEMENT   start-date          ( %string.data; )* >
+<!ELEMENT   end-date            ( %string.data; )* >
+
+<!ELEMENT   issue-designation   ( %richstring.data; )* >
+
+<!ELEMENT   title-editors-group ( (%titles;)?, conference-info?, ( editors | ce:editors )?,
+                                  sponsors? ) >
+<!ELEMENT   editors             ( %richstring.data; )* >
+<!ELEMENT   conference-info     ( full-name?, abbr-name?, venue?, date-range? )>
+<!ELEMENT   full-name           ( %richstring.data; )* >
+<!ELEMENT   abbr-name           ( %richstring.data; )* >
+<!ELEMENT   venue               ( %richstring.data; )* >
+<!ELEMENT   sponsors            ( sponsor+ ) >
+<!ELEMENT   sponsor             ( %richstring.data; )* >
+
+<!-- body of the journal issue -->
+
+<!ELEMENT   issue-body          ( ( ce:include-item | issue-sec )+ )>
+<!ELEMENT   issue-sec           ( ce:section-title?, ( ce:include-item | issue-sec )+ )>
+<!ATTLIST   issue-sec
+                %common-link.att;
+                %common-role.att; >
+

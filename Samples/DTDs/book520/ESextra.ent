@@ -1,0 +1,107 @@
+<!--	Elsevier Science Extra Entities v1.0.0
+
+    	Copyright (c) 2002 Elsevier Science B.V.
+        $Id: ESextra.ent,v 1.2 2003/07/04 07:24:23 spepping Exp $
+-->
+
+<!--    Permission to copy and distribute verbatim copies of this document is granted, 
+    	provided this notice is included in all copies, but changing it is not allowed. 
+-->
+
+<!--	Typical invocation:
+<!ENTITY % esextra PUBLIC
+            "-//ES//ENTITIES extra entities 1.0.0//EN"
+            "ESextra.ent" > 
+%esextra;
+-->
+
+<!ENTITY z.Rlarr          "&#x02942;" ><!-- long arrow right, short arrow left -->
+<!ENTITY z.rLarr          "&#x02944;" ><!-- short arrow right, long arrow left -->
+<!ENTITY z.rarrx          "&#x02947;" ><!-- right arrow, crossed -->
+<!ENTITY z.olarr          "&#x02940;" ><!-- left arrow in circle; cf. &olarr = U+021BA -->
+<!ENTITY z.orarr          "&#x02941;" ><!-- right arrow in circle; cf. &orarr = U+021BB -->
+<!ENTITY z.nharr          "&#x021F9;" ><!-- not left-right arrow; cf. &nharr; = U+21AE -->
+<!ENTITY z.tfnc           "&#x02980;" ><!-- triple vertical-rule fence -->
+<!ENTITY z.tdcol          "&#x02AF6;" ><!-- triple dot colon -->
+<!ENTITY z.ddfnc          "&#x02999;" ><!-- dotted fence -->
+<!ENTITY z.dshfnc         "&#x02506;" ><!-- dashed fence -->
+<!ENTITY z.rtri           "&#x025B7;" ><!-- right triangle, open; cf. &rtri; = U+025B9, which is smaller -->
+<!ENTITY z.ltri           "&#x025C1;" ><!-- left triangle, open; cf. &ltri; = U+025C3, which is smaller -->
+<!ENTITY z.rtrif          "&#x025B6;" ><!-- right triangle, filled; cf. &rtrif; = U+025B8, which is smaller -->
+<!ENTITY z.ltrif          "&#x025C0;" ><!-- left triangle, filled; cf. &ltrif; = U+025C2, which is smaller -->
+<!ENTITY z.diam           "&#x02662;" ><!-- diamond, open -->
+<!ENTITY z.hearts         "&#x02665;" ><!-- heartsuit; heart, filled -->
+<!ENTITY z.star           "&#x02606;" ><!-- star, open; cf. &star; = U+022C6, which is star operator -->
+<!ENTITY z.squf           "&#x025A0;" ><!-- square filled, end of proof; Halmos; cf. &squf; = U+025AA, which is smaller -->
+<!ENTITY z.sqfnw          "&#x025E9;" ><!-- square with filled N-W-corner -->
+<!ENTITY z.sqfse          "&#x025EA;" ><!-- square with filled S-E-corner -->
+<!ENTITY z.sqfl           "&#x025E7;" ><!-- square, left filled -->
+<!ENTITY z.sqfr           "&#x025E8;" ><!-- square, right filled -->
+<!ENTITY z.sqshd          "&#x025A9;" ><!-- legend symbol; shaded box -->
+<!ENTITY z.rvbull         "&#x025D8;" ><!-- reversed video bullet -->
+<!ENTITY z.scis           "&#x02702;" ><!-- scissor-symbol -->
+<!ENTITY z.cirf           "&#x025CF;" ><!-- filled circle -->
+<!ENTITY z.sqh            "&#x025A4;" ><!-- legend symbol; horizontally striped box -->
+<!ENTITY z.sqv            "&#x025A5;" ><!-- legend symbol; vertically striped box -->
+<!ENTITY z.sqhsw          "&#x025A7;" ><!-- legend symbol; south-west striped box -->
+<!ENTITY z.sqhne          "&#x025A8;" ><!-- legend symbol; north-east striped box -->
+<!ENTITY z.cirfl          "&#x025D0;" ><!-- circle, left filled -->
+<!ENTITY z.cirfr          "&#x025D1;" ><!-- circle, right filled -->
+<!ENTITY z.cirft          "&#x025D3;" ><!-- circle, top filled -->
+<!ENTITY z.cirfb          "&#x025D2;" ><!-- circle, bottom filled -->
+<!ENTITY z.vrecto         "&#x025AF;" ><!-- rectangle open, vertical -->
+<!ENTITY z.parl           "&#x025B1;" ><!-- parallelogram -->
+<!ENTITY z.merc           "&#x0263F;" ><!-- Mercury -->
+<!ENTITY z.jup            "&#x02643;" ><!-- Jupiter -->
+<!ENTITY z.sat            "&#x02644;" ><!-- Saturnus -->
+<!ENTITY z.nept           "&#x02646;" ><!-- Neptunus -->
+<!ENTITY z.hfl            "&#x00192;" ><!-- guilders sign -->
+<!ENTITY z.pes            "&#x020A7;" ><!-- pesetas sign -->
+<!ENTITY z.euro           "&#x020AC;" ><!-- euro sign -->
+<!ENTITY z.lpargt         "&#x029A0;" ><!-- left parenthesis, gt -->
+<!ENTITY z.Sup            "&#x02A08;" ><!-- double supremum (cumulator) -->
+<!ENTITY z.Inf            "&#x02A07;" ><!-- double infimum (cumulator) -->
+<!ENTITY z.veeBar         "&#x02A63;" ><!-- logical or, dbl bar below -->
+<!ENTITY z.Barwed         "&#x02A5E;" ><!-- double bar wedge; log and, dbl bar -->
+<!ENTITY z.Lap            "&#x029CA;" ><!-- up triangle open with dot; Laplace operator -->
+<!ENTITY z.xsqcup         "&#x02A06;" ><!-- big square union; cf. &xsqcup; = U+02294  -->
+<!ENTITY z.Thr            "&#x02A05;" ><!-- big square intersection -->
+<!ENTITY z.xuplus         "&#x02A04;" ><!-- plus sign in big union; cf. &xuplus; = U+0228E -->
+<!ENTITY z.ang90          "&#x0299C;" ><!-- right (90 degree) angle; factorial sign -->
+<!ENTITY z.els            "&#x02A95;" ><!-- equal-or-less, slanted; cf. &els; = U+22DC, which is not slanted -->
+<!ENTITY z.lap            "&#x02A85;" ><!-- less than and double approximate; cf. &lap; = U+2272 -->
+<!ENTITY z.lEg            "&#x02A8B;" ><!-- less, (double) equal, or greater; cf. &lEg; = U+22DA, which has a single equal sign -->
+<!ENTITY z.prap           "&#x02AB7;" ><!-- precedes, approximate; cf. &prap; = U+227E -->
+<!ENTITY z.lne            "&#x02A87;" ><!-- less than but not equals; cf. &lne; = U+2268, which has a double equal sign -->
+<!ENTITY z.nlE            "&#x02266;&#x00338;" ><!-- not less, double equals; cf. &nlE; = U+02A7D-00338 -->
+<!ENTITY z.prnap          "&#x02AB9;" ><!-- precedes, not approximately; cf. &prnap; = U+22E8 -->
+<!ENTITY z.egs            "&#x02A96;" ><!-- equal-or-greater, slanted; cf. &egs; = U+022DD, which is not slanted -->
+<!ENTITY z.gap            "&#x02A86;" ><!-- greater than, approximately; cf. &gap; = U+02273 -->
+<!ENTITY z.gEl            "&#x02A8C;" ><!-- greater, (double) equal, or less; cf. &gEl; = U+022DB, which has a single equal sign -->
+<!ENTITY z.nesim          "&#x02242;&#x020D2;" ><!-- not equal, similar; cf. &nesim; = U+02242-00338, with slanted negation -->
+<!ENTITY z.scap           "&#x02AB8;" ><!-- succeeds, approximate; cf. &scap; = U+0227F -->
+<!ENTITY z.sce            "&#x02AB0;" ><!-- succeeds, equals; cf. &sce; = U+0227D, which has a curly equal sign -->
+<!ENTITY z.gne            "&#x02A88;" ><!-- greater than, not equals to; cf. &gne; = U+2269, which has a double equal sign -->
+<!ENTITY z.ngE            "&#x02267;&#x00338;" ><!-- not greater, double equals; cf. &ngE; = U+02A7E-00338 -->
+<!ENTITY z.scnap          "&#x02ABA;" ><!-- succeeds, not approximate; cf. &scnap; = U+22E9 -->
+<!ENTITY z.hex            "&#x02394;" ><!-- hexagon -->
+<!ENTITY z.pdbdbd         "&#x02393;" ><!-- partial double bond, bottom dashed -->
+<!ENTITY z.subE           "&#x02AC5;" ><!-- subset, double equals; cf. &subE; = U+02286, which has a single equal sign -->
+<!ENTITY z.drule          "&#x029F9;" ><!-- -45 degree rule -->
+<!ENTITY z.urule          "&#x029F8;" ><!-- +45 degree rule -->
+<!ENTITY z.subnE          "&#x02ACB;" ><!-- subset, not double equal; cf. &subnE; = U+0228A, which has a single equal sign -->
+<!ENTITY z.nsubE          "&#x02AC5;&#x00338;" ><!-- not subset, double equals; cf. &nsubE; = U+02288, which has a single equal sign -->
+<!ENTITY z.sqsbne         "&#x022E4;" ><!-- square subset, not equal -->
+<!ENTITY z.supE           "&#x02AC6;" ><!-- superset, double equals; cf. &supE; = U+02287, which has a single equal sign -->
+<!ENTITY z.defas          "&#x029CB;" ><!-- defined as -->
+<!ENTITY z.supnE          "&#x02ACC;" ><!-- superset, not double equal; cf. &supnE; = U+0228B, which has a single equal sign -->
+<!ENTITY z.nsupE          "&#x02AC6;&#x00338;" ><!-- not superset, double equals; cf. &nsupE; = U+02289, which has a single equal sign -->
+<!ENTITY z.sqspne         "&#x022E5;" ><!-- square superset, not equal -->
+<!ENTITY z.gammad         "&#x003DD;" ><!-- digamma; cf. &digamma; = U+003DD, which is capital digamma -->
+<!ENTITY z.betav          "&#x003D0;" ><!-- curly beta -->
+<!ENTITY z.epsiv          "&#x003B5;" ><!-- epsilon (cursive); cf. &epsiv; = U+0025B, which is not the Greek epsilon -->
+<!ENTITY z.epsi           "&#x003F5;" ><!-- epsilon (Porson); cf. &epsi; = U+003B5, which is curly epsilon -->
+<!ENTITY z.omicr          "&#x003BF;" ><!-- omicron -->
+<!ENTITY z.lsquo          "&#x02039;" ><!-- open single guillemet; cf. &lsquo; = U+02018 -->
+<!ENTITY z.Theta          "&#x003F4;" ><!-- Theta (capital, round); cf. &Theta; = U+00398 -->
+<!ENTITY z.rsquo          "&#x0203A;" ><!-- close single guillemet; cf. &rsquo; = U+02019 may be better -->
