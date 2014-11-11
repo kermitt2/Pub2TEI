@@ -327,7 +327,9 @@
                     <xsl:for-each select="../ce:affiliation">
                         <affiliation>
                             <xsl:call-template name="parseAffiliation">
-                                <xsl:with-param name="theAffil" select="ce:textfn/text()"/>
+                                <xsl:with-param name="theAffil">
+                                    <xsl:value-of select="ce:textfn"/>
+                                </xsl:with-param>
                             </xsl:call-template>
                         </affiliation>
                     </xsl:for-each>
@@ -342,8 +344,9 @@
                             <xsl:message>Trouvé: <xsl:value-of select="$localId"/></xsl:message>
                             <affiliation>
                                 <xsl:call-template name="parseAffiliation">
-                                    <xsl:with-param name="theAffil"
-                                        select="//ce:affiliation[@id=$localId]/ce:textfn/text()"/>
+                                    <xsl:with-param name="theAffil">
+                                        <xsl:value-of select="//ce:affiliation[@id=$localId]/ce:textfn"/>
+                                    </xsl:with-param>
                                 </xsl:call-template>
                             </affiliation>
                         </xsl:if>
@@ -397,7 +400,9 @@
         <affiliation>
             <address>
             <xsl:call-template name="parseAffiliation">
-                <xsl:with-param name="theAffil" select="ce:textfn/text()"/>
+                <xsl:with-param name="theAffil">
+                    <xsl:value-of select="ce:textfn"/>
+                </xsl:with-param>
             </xsl:call-template>
             </address>
         </affiliation>

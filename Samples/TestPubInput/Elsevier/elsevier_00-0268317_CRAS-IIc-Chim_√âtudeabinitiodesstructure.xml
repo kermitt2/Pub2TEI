@@ -1,319 +1,1149 @@
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "art452.dtd" [
-<!ENTITY gr1 SYSTEM "gr1" NDATA IMAGE><!ENTITY gr2 SYSTEM "gr2" NDATA IMAGE><!ENTITY gr3 SYSTEM "gr3" NDATA IMAGE><!ENTITY gr4 SYSTEM "gr4" NDATA IMAGE>]>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "../../DTDs/art452/art452.dtd" [
+<!ENTITY gr1 SYSTEM "gr1" NDATA IMAGE>
+<!ENTITY gr2 SYSTEM "gr2" NDATA IMAGE>
+<!ENTITY gr3 SYSTEM "gr3" NDATA IMAGE>
+<!ENTITY gr4 SYSTEM "gr4" NDATA IMAGE>]>
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?>
 <converted-article version="4.5.2" docsubtype="fla" xml:lang="fr">
-<item-info>
-<jid>PXCI</jid>
-<aid>89</aid>
-<ce:pii>S1387-1609(00)00108-0</ce:pii><ce:doi>10.1016/S1387-1609(00)00108-0</ce:doi>
-<ce:copyright type="full-transfer" year="2000">&#x00C9;ditions scientifiques et m&#x00E9;dicales Elsevier SAS</ce:copyright></item-info>
-<ce:floats><ce:figure id="FIG1">
-<ce:label>Figure 1</ce:label>
-<ce:caption>
-<ce:simple-para>Calculs non magn&#x00E9;tiques de YFe<ce:inf>2</ce:inf>. DOS projet&#x00E9;es suivant les sites de Y et Fe (a) et COOP des liaisons interatomiques Y&#xE5F8;Fe, Fe&#xE5F8;Fe et Y&#xE5F8;Y (b).</ce:simple-para></ce:caption>
-<ce:link locator="gr1" /></ce:figure><ce:figure id="FIG2">
-<ce:label>Figure 2</ce:label>
-<ce:caption>
-<ce:simple-para>Calculs magn&#x00E9;tiques de YFe<ce:inf>2</ce:inf><ce:hsp sp="0.25" />: DOS projet&#x00E9;es suivant les sites de Y et Fe, pour chacune des deux directions de spin.</ce:simple-para></ce:caption>
-<ce:link locator="gr2" /></ce:figure><ce:figure id="FIG3">
-<ce:label>Figure 3</ce:label>
-<ce:caption>
-<ce:simple-para>Calculs magn&#x00E9;tiques de YFe<ce:inf>2</ce:inf><ce:hsp sp="0.25" />: COOP projet&#x00E9;es suivant les deux directions de spin, pour les interactions Fe&#xE5F8;Fe (haut) et Y&#xE5F8;Fe(bas).</ce:simple-para></ce:caption>
-<ce:link locator="gr3" /></ce:figure><ce:figure id="FIG4">
-<ce:label>Figure 4</ce:label>
-<ce:caption>
-<ce:simple-para>Calculs magn&#x00E9;tiques de Yfe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>:DOS (a) et COOP (b) partielles projet&#x00E9;es suivant les deux directions de spin.</ce:simple-para></ce:caption>
-<ce:link locator="gr4" /></ce:figure><ce:table id="TBL1" colsep="0" rowsep="0" frame="topbot"><ce:label>Tableau Tableau</ce:label><ce:caption>
-<ce:simple-para>R&#x00E9;sultats des calculs de YFe<ce:inf>2</ce:inf> et YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> (u.a.=unit&#x00E9; atomique<ce:hsp sp="0.25" />: 1<ce:hsp sp="0.25" />u.a. (rayon de Bohr)=0,529<ce:hsp sp="0.25" />&#x00C5;. Les atomes Y et Fe sont diff&#x00E9;renci&#x00E9;s par suite de l'abaissement de la sym&#x00E9;trie par introduction de H</ce:simple-para></ce:caption><tgroup cols="3"><colspec colname="col1" colsep="0" />
-<colspec colname="col2" colsep="0" />
-<colspec colname="col3" colsep="0" />
-<thead><row rowsep="1"><entry></entry>
-<entry>YFe<ce:inf>2</ce:inf></entry>
-<entry>YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> (Y<ce:inf>2</ce:inf>Fe<ce:inf>4</ce:inf>H<ce:inf>6</ce:inf>)</entry>
-</row>
-</thead>
-<tbody>
-<row><entry><ce:italic>a</ce:italic> (u.a.)/vol (u.a.<ce:sup>3</ce:sup>)</entry>
-<entry align="char" char=".">13,91/673,3</entry>
-<entry align="char" char=".">14,84/817,04</entry>
-</row>
-<row><entry><ce:italic>d</ce:italic><ce:inf>Fe&#xE5F8;Fe</ce:inf> (u.a.)</entry>
-<entry align="char" char=".">4,91</entry>
-<entry align="char" char=".">5,25</entry>
-</row>
-<row><entry><ce:italic>d</ce:italic><ce:inf>Y&#xE5F8;Fe</ce:inf> (u.a.)</entry>
-<entry align="char" char=".">5,77</entry>
-<entry align="char" char=".">6,15</entry>
-</row>
-<row><entry><ce:italic>d</ce:italic><ce:inf>Y&#xE5F8;Y</ce:inf> (u.a.)</entry>
-<entry align="char" char=".">6,02</entry>
-<entry align="char" char=".">6,43</entry>
-</row>
-<row><entry><ce:italic>d</ce:italic><ce:inf>Y&#xE5F8;H</ce:inf> (u.a.)</entry>
-<entry align="char" char="."></entry>
-<entry align="char" char=".">4,00</entry>
-</row>
-<row><entry><ce:italic>d</ce:italic><ce:inf>Fe&#xE5F8;H</ce:inf> (u.a.)</entry>
-<entry align="char" char="."></entry>
-<entry align="char" char=".">3,18</entry>
-</row>
-<row><entry><ce:vsp sp="0.5" /></entry>
-<entry align="char" char="."></entry>
-<entry align="char" char="."></entry>
-</row>
-<row><entry><ce:italic>M</ce:italic>(Y) &#x03BC;<ce:inf>B</ce:inf></entry>
-<entry align="char" char=".">&#x2212;0,50</entry>
-<entry align="char" char=".">&#x2212;0,28</entry>
-</row>
-<row><entry><ce:italic>M</ce:italic>(Fe)&#x03BC;<ce:inf>B</ce:inf></entry>
-<entry align="char" char=".">1,85</entry>
-<entry align="char" char=".">2,0</entry>
-</row>
-<row><entry>Aimantation pour deux mailles &#x03BC;<ce:inf>B</ce:inf></entry>
-<entry align="char" char=".">6,37</entry>
-<entry align="char" char=".">7,55</entry>
-</row>
-</tbody></tgroup>
-</ce:table></ce:floats>
-<head>
-<ce:dochead><ce:textfn>Chimie physique et th&#x00E9;orique<ce:hsp sp="0.25" />/<ce:hsp sp="0.25" />Physical and theoretical chemistry</ce:textfn></ce:dochead>
-<ce:title>&#x00C9;tude ab initio des structures &#x00E9;lectroniques et magn&#x00E9;tiques des syst&#x00E8;mes YFe<ce:inf>2</ce:inf> et YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> au sein de la th&#x00E9;orie de la fonctionnelle de la densit&#x00E9; (DFT)</ce:title>
-<ce:presented>Pr&#x00E9;sent&#x00E9; par Michel Pouchard</ce:presented>
-<ce:dedication>Ce travail est d&#x00E9;di&#x00E9; au Professeur Youssef Saikali de l'universit&#x00E9; libanaise, laboratoire de chimie inorganique et CNRS-Liban &#x00E0; l'occasion de son 60<ce:sup>e</ce:sup> anniversaire.</ce:dedication>
-<ce:author-group>
-<ce:author>
-<ce:given-name>Samir F</ce:given-name>
-<ce:surname>Matar</ce:surname>
-<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref><ce:cross-ref refid="CORR1">*</ce:cross-ref></ce:author>
-<ce:author>
-<ce:given-name>Val&#x00E9;rie</ce:given-name>
-<ce:surname>Paul-Boncour</ce:surname>
-<ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
-<ce:affiliation id="AFF1"><ce:label>a</ce:label><ce:textfn>Institut de chimie de la mati&#x00E8;re condens&#x00E9;e de Bordeaux, ICMCB&#x2013;UPR9048&#x2013;CNRS, Ch&#x00E2;teau Brivazac, av. du Docteur-Albert-Schweitzer, 33608 Pessac cedex, France</ce:textfn></ce:affiliation>
-<ce:affiliation id="AFF2"><ce:label>b</ce:label><ce:textfn>Laboratoire de chimie m&#x00E9;tallurgique des terres rares, CNRS UPR<ce:hsp sp="0.25" />209, 2&#x2013;8, rue Henri-Dunant, 94320 Thiais cedex, France</ce:textfn></ce:affiliation>
-<ce:correspondence id="CORR1">
-<ce:label>*</ce:label><ce:text>Correspondance et tir&#x00E9;s &#x00E0; part<ce:hsp sp="0.25" />: matar@icmcb.u-bordeaux.fr</ce:text></ce:correspondence></ce:author-group>
-<ce:date-received day="11" month="1" year="2000" />
-<ce:date-accepted day="28" month="1" year="2000" />
-<ce:abstract xml:lang="en">
-<ce:section-title>Abstract</ce:section-title><ce:abstract-sec>
-<ce:simple-para><ce:bold>First principles investigation of the electronic and magnetic properties of YFe</ce:bold><ce:inf><ce:bold>2</ce:bold></ce:inf> <ce:bold>and YFe</ce:bold><ce:inf><ce:bold>2</ce:bold></ce:inf><ce:bold>H</ce:bold><ce:inf><ce:bold>3</ce:bold></ce:inf> <ce:bold>within the density functional theory (DFT).</ce:bold> The electronic and magnetic properties of YFe<ce:inf>2</ce:inf> and of its hydride system YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> are studied within the local spin density functional theory. Analyses of the density of states (DOS) and of the crystal orbital overlap populations (COOP) allowed us to provide an explanation for the role played by hydrogen as to the increase of the magnetisation as well as to the chemical bond with the metal constituents Y and Fe. &#x00A9; 2000 Acad&#x00E9;mie des sciences<ce:hsp sp="0.25" />/<ce:hsp sp="0.25" />&#x00C9;ditions scientifiques et m&#x00E9;dicales Elsevier SAS<ce:vsp sp="1" /><ce:vsp sp="1" /><ce:bold>Laves phases / alloys / hydrides / magnetism / DFT / LSDA / chemical-bonding</ce:bold></ce:simple-para></ce:abstract-sec></ce:abstract>
-<ce:abstract>
-<ce:section-title>R&#x00E9;sum&#x00E9;</ce:section-title><ce:abstract-sec>
-<ce:simple-para>Les structures &#x00E9;lectroniques et magn&#x00E9;tiques de YFe<ce:inf>2</ce:inf> et d'un hydrure YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> sont calcul&#x00E9;es au sein de la th&#x00E9;orie de la fonctionnelle locale de la densit&#x00E9; de spins utilisant la m&#x00E9;thode de l'onde sph&#x00E9;rique augment&#x00E9;e. L'analyse des r&#x00E9;sultats obtenus quant aux densit&#x00E9;s d&#x2019;&#x00E9;tats (DOS) et aux populations de recouvrement (COOP) permet d'expliquer le r&#x00F4;le jou&#x00E9; par l'hydrog&#x00E8;ne, tant au niveau de l'augmentation de l'aimantation globale que de celui de la liaison chimique contract&#x00E9;e avec Y et Fe.</ce:simple-para></ce:abstract-sec></ce:abstract>
-<ce:keywords>
-<ce:section-title>Mots-cl&#x00E9;</ce:section-title>
-<ce:keyword><ce:text>phases de Laves</ce:text></ce:keyword>
-<ce:keyword><ce:text>alliages</ce:text></ce:keyword>
-<ce:keyword><ce:text>hydrures</ce:text></ce:keyword>
-<ce:keyword><ce:text>magn&#x00E9;tisme</ce:text></ce:keyword>
-<ce:keyword><ce:text>DFT</ce:text></ce:keyword>
-<ce:keyword><ce:text>LSDA</ce:text></ce:keyword>
-<ce:keyword><ce:text>liaison chimque</ce:text></ce:keyword></ce:keywords></head>
-<body><ce:sections>
-<ce:section>
-<ce:label>1</ce:label>
-<ce:section-title>Introduction et cadre de l'&#x00E9;tude</ce:section-title>
-<ce:para>Les alliages binaires appartenant &#x00E0; la famille des phases de Laves AB<ce:inf>2</ce:inf> (A=terre rare ou actinide, B=&#x00E9;l&#x00E9;ment de transition) cristallisent dans une structure, soit cubique &#x00E0; faces centr&#x00E9;es (C15), soit hexagonale (C14) <ce:cross-ref refid="BIB1">[1]</ce:cross-ref>. Aupr&#x00E8;s de l'aspect fondamental que pr&#x00E9;sente l&#x2019;&#x00E9;tude des alliages purs, par exemple l&#x2019;&#x00E9;tude de l'origine du magn&#x00E9;tisme dans les UB<ce:inf>2</ce:inf> (B=Mn, Fe) <ce:cross-ref refid="BIB2">[2]</ce:cross-ref>, un int&#x00E9;r&#x00EA;t particulier est suscit&#x00E9; par la capacit&#x00E9; de ces alliages d'absorber l'hydrog&#x00E8;ne &#x00E0; des temp&#x00E9;ratures voisines de l'ambiante, avec toutes les applications potentielles des hydrures r&#x00E9;sultants. L'&#x00E9;tude exp&#x00E9;rimentale des hydrures de compos&#x00E9;s YFe<ce:inf>2</ce:inf> et YMn<ce:inf>2</ce:inf> a montr&#x00E9; que l'absorption d'hydrog&#x00E8;ne entra&#x0131;&#x0302;ne &#x00E0; la fois une l'augmentation du volume de maille, qui modifie les distances interatomiques, et une mise en ordre de l'hydrog&#x00E8;ne, qui abaisse la sym&#x00E9;trie et modifie l'environnement local des atomes <ce:cross-refs refid="BIB3 BIB4">[3,4]</ce:cross-refs>. L'&#x00E9;volution des propri&#x00E9;t&#x00E9;s &#x00E9;lectroniques et magn&#x00E9;tiques de ces hydrures est li&#x00E9;e &#x00E0; ces modifications structurales, ainsi qu'&#x00E0; une modification des liaisons chimiques, due aux atomes d'hydrog&#x00E8;ne ins&#x00E9;r&#x00E9;s.</ce:para>
-<ce:para>L'objectif de cette communication est de pr&#x00E9;senter les r&#x00E9;sultats d'une approche th&#x00E9;orique des propri&#x00E9;t&#x00E9;s des structures &#x00E9;lectroniques et magn&#x00E9;tiques, d'une part, et celles des liaisons chimiques, d'autre part, observ&#x00E9;es pour l'alliage YFe<ce:inf>2</ce:inf> et pour l'hydrure YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>. Une telle approche des structures &#x00E9;lectroniques et magn&#x00E9;tiques et des propri&#x00E9;t&#x00E9;s de liaison chimique peut &#x00EA;tre entreprise d'une mani&#x00E8;re quantitative au sein de la th&#x00E9;orie de la fonctionnelle de la densit&#x00E9; (DFT) <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>. Les calculs reposent sur la solution ab initio et auto-coh&#x00E9;rente de l&#x2019;&#x00E9;quation d'onde &#x00E0; une particule, dans un potentiel effectif o&#x00F9; les effets d&#x2019;&#x00E9;change et de corr&#x00E9;lation sont pris en compte essentiellement dans le cadre de l'approximation de la densit&#x00E9; de spin locale (LSDA), utilisant les sch&#x00E9;mas de param&#x00E9;trage de von Barth et Hedin et de Janak <ce:cross-ref refid="BIB6">[6]</ce:cross-ref>. C'est une th&#x00E9;orie de champ effectif moyen, bas&#x00E9;e sur un gaz d&#x2019;&#x00E9;lectrons homog&#x00E8;ne en interaction, polaris&#x00E9; en spin.</ce:para>
-<ce:para>Les calculs sont effectu&#x00E9;s &#x00E0; l'aide de <ce:italic>la m&#x00E9;thode de l'onde sph&#x00E9;rique augment&#x00E9;e ASW</ce:italic> <ce:cross-ref refid="BIB7">[7]</ce:cross-ref>, qui, outre la LSDA, utilise l'approximation de la sph&#x00E8;re atomique ASA, imposant un volume de maille &#x00E9;gal au volume des sph&#x00E8;res atomiques. Le potentiel, ainsi que la densit&#x00E9; &#x00E9;lectronique au sein de ces sph&#x00E8;res, sont sph&#x00E9;riquement moyenn&#x00E9;s. L'int&#x00E9;r&#x00EA;t de l'utilisation de cette m&#x00E9;thode tient de son suivi depuis 1979, tant au niveau des am&#x00E9;liorations apport&#x00E9;es quant &#x00E0; la pr&#x00E9;cision des conditions de convergence des charges et de l&#x2019;&#x00E9;nergie que de celui du magn&#x00E9;tisme de spin et orbitalaire et que de celui de l'acc&#x00E8;s &#x00E0; la nature de la <ce:italic>liaison chimique</ce:italic> (liante, antiliante ou non liante), r&#x00E9;cemment rendu possible gr&#x00E2;ce au calcul des COOP (<ce:italic>crystal orbital overlap populations</ce:italic>) <ce:cross-ref refid="BIB8">[8]</ce:cross-ref>. Lorsqu'une d&#x00E9;pendance en spin est prise en compte, le calcul permet d'acc&#x00E9;der aux moments magn&#x00E9;tiques, ainsi qu'au terme <ce:italic>Fermi contact</ce:italic> du champ hyperfin<ce:hsp sp="0.25" />: <ce:italic>H</ce:italic><ce:inf>FC</ce:inf>.</ce:para>
-<ce:para>Pour l'alliage pur, ainsi que pour la phase riche en hydrog&#x00E8;ne, les calculs ont &#x00E9;t&#x00E9; effectu&#x00E9;s avec les param&#x00E8;tres de maille exp&#x00E9;rimentaux <ce:cross-ref refid="BIB3">[3]</ce:cross-ref> (<ce:cross-ref refid="TBL1"><ce:italic>tableau</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL1" />). Notons qu'une recherche ab initio du param&#x00E8;tre cristallin dans le cadre de la LSDA est possible, mais n'a pas &#x00E9;t&#x00E9; effectu&#x00E9;e dans le cadre de ce travail. Les valeurs calcul&#x00E9;es sont syst&#x00E9;matiquement de 3 &#x00E0; 5<ce:hsp sp="0.25" />% inf&#x00E9;rieures aux valeurs exp&#x00E9;rimentales, du fait du caract&#x00E8;re surliant de cette approximation. Notre utilisation du param&#x00E8;tre exp&#x00E9;rimental se trouve justifi&#x00E9;e, compte tenu de la proximit&#x00E9; entre valeurs mesur&#x00E9;es et calcul&#x00E9;es, d'une part, et du fait que nous ne recherchons pas les grandeurs r&#x00E9;sultant de tels calculs, comme le module d'incompressibilit&#x00E9;, d'autre part. Enfin, une optimisation des rayons des sph&#x00E8;res minimisant leur recouvrement dans l'ASA a permis d'adopter un rapport <ce:italic>r</ce:italic><ce:inf>Y</ce:inf>/<ce:italic>r</ce:italic><ce:inf>Fe</ce:inf>=1,17.</ce:para></ce:section>
-<ce:section>
-<ce:label>2</ce:label>
-<ce:section-title>Le syst&#x00E8;me YFe<ce:inf>2</ce:inf></ce:section-title>
-<ce:section>
-<ce:label>2.1</ce:label>
-<ce:section-title>Calculs non-magn&#x00E9;tiques (NSP<ce:hsp sp="0.25" />: non spin polaris&#x00E9;s)</ce:section-title>
-<ce:para>&#x00C0; la convergence autocoh&#x00E9;rente, les transferts de charges montrent un d&#x00E9;part de 0,35 &#x00E9;lectron depuis Y vers Fe. Ce l&#x00E9;ger transfert, non significatif, d'effets ioniques &#x2014; d'ailleurs rarement apparents dans le cadre de nos calculs &#x2014; montre une redistribution des deux &#x00E9;lectrons <ce:italic>s</ce:italic> de Y sur ses trois &#x00E9;tats de valence, lui conf&#x00E9;rant ainsi un caract&#x00E8;re <ce:italic>d</ce:italic>, du fait de son hybridation avec Fe(3<ce:italic>d</ce:italic>). Ainsi, l'effet majeur est celui de l'hybridation des diff&#x00E9;rents &#x00E9;tats de valence entre eux, et non le transfert de charges.</ce:para>
-<ce:para>En ne tenant compte que d'une population de spins totaux, on peut examiner les densit&#x00E9;s d&#x2019;&#x00E9;tats (DOS) et &#x00E9;valuer les instabilit&#x00E9;s magn&#x00E9;tiques possibles pour chaque constituant dans le cadre de la th&#x00E9;orie de Stoner du ferromagn&#x00E9;tisme de bande (voir d&#x00E9;tails plus loin). De plus, une analyse de la liaison chimique entre les diff&#x00E9;rents &#x00E9;tats peut &#x00EA;tre entreprise au travers des COOP.</ce:para>
-<ce:section>
-<ce:label>2.1.1</ce:label>
-<ce:section-title>Analyse des densit&#x00E9;s d&#x2019;&#x00E9;tats (DOS)</ce:section-title>
-<ce:para>Les DOS projet&#x00E9;es suivant chaque site atomique tenant compte de sa multiplicit&#x00E9; (1<ce:hsp sp="0.25" />Y pour 2<ce:hsp sp="0.25" />Fe) sont repr&#x00E9;sent&#x00E9;es sur la <ce:cross-ref refid="FIG1"><ce:italic>figure 1a</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG1" />. L'origine des &#x00E9;nergies suivant l'axe des abscisses est prise au niveau de Fermi. Il en sera de m&#x00EA;me pour tous les trac&#x00E9;s pr&#x00E9;sent&#x00E9;s dans ce travail. Pour plus de clart&#x00E9;, les DOS de l'yttrium ont &#x00E9;t&#x00E9; d&#x00E9;plac&#x00E9;es verticalement. L'allure des trac&#x00E9;s montre la pr&#x00E9;dominance des &#x00E9;tats du fer, surtout pr&#x00E8;s du niveau de Fermi, et la pr&#x00E9;sence d'un certain m&#x00E9;lange Fe&#xE5F8;Y au niveau du bas de la bande de valence BV (&#x00E9;tats <ce:italic>sp</ce:italic> entre &#x2212;6 et &#x2212;2<ce:hsp sp="0.25" />eV) et vers le haut de la BV (&#x00E9;tats <ce:italic>d</ce:italic>). Dans la BC, il y a une pr&#x00E9;dominance des &#x00E9;tats 4<ce:italic>f</ce:italic> vides de l'yttrium. L'occupation des &#x00E9;tats 3<ce:italic>d</ce:italic> de Fe &#x00E0; 6,68 &#x00E9;lectrons correspond &#x00E0; une forte densit&#x00E9; d&#x2019;&#x00E9;tats &#x00E0; <ce:italic>E</ce:italic><ce:inf>F</ce:inf>. En revanche, Y montre une tr&#x00E8;s faible DOS au niveau de Fermi. Ces r&#x00E9;sultats permettront de mettre en &#x00E9;vidence le fait que, dans le cadre de la th&#x00E9;orie de Stoner de ferromagn&#x00E9;tisme de bande, seul le fer doit porter un moment propre.</ce:para></ce:section>
-<ce:section>
-<ce:label>2.1.2</ce:label>
-<ce:section-title>Analyse des populations de recouvrement (COOP)</ce:section-title>
-<ce:para>L'analyse de la liaison chimique est rendue quantitative au travers des COOP donn&#x00E9;es sur la <ce:cross-ref refid="FIG1"><ce:italic>figure 1b</ce:italic></ce:cross-ref>. Suivant l'axe des ordonn&#x00E9;es les valeurs positives, nulles et n&#x00E9;gatives correspondent &#x00E0; des interactions liantes, non-liantes et antiliantes respectivement. Les COOP partielles (atome &#x00E0; atome) pour les interactions Fe&#xE5F8;Fe, Y&#xE5F8;Fe et Y&#xE5F8;Y sont repr&#x00E9;sent&#x00E9;es (cf. <ce:cross-ref refid="TBL1"><ce:italic>tableau</ce:italic></ce:cross-ref> pour les distances interatomiques). Une constatation pr&#x00E9;liminaire est que les COOP ont des intensit&#x00E9;s qui d&#x00E9;croissent lorsque la distance augmente, c'est-&#x00E0;-dire que la liaison est la plus forte pour l'interaction Fe&#xE5F8;Fe et la moins forte pour Y&#xE5F8;Y. Mais un autre aspect, prenant en compte la population &#x00E9;lectronique, est &#x00E0; consid&#x00E9;rer pour compl&#x00E9;ter l'analyse des diff&#x00E9;rentes interactions. La liaison Y&#xE5F8;Fe est liante jusqu'au niveau de Fermi et m&#x00EA;me au-dessus de <ce:italic>E</ce:italic><ce:inf>F</ce:inf><ce:hsp sp="0.25" />; ceci provient du fait que les &#x00E9;tats de valence disponibles de l'yttrium &#x00E9;tant essentiellement vides, ils interagiront alors avec les &#x00E9;lectrons du fer en formant des liaisons liantes. Cet effet se voit d'ailleurs pour les interactions Y&#xE5F8;Y qui, quoique de faible intensit&#x00E9;, sont liantes dans le m&#x00EA;me domaine que Y&#xE5F8;Fe. Un des int&#x00E9;r&#x00EA;ts de ces trac&#x00E9;s est la mise en &#x00E9;vidence d'une interaction liante Fe&#xE5F8;Fe dans la BV, qui devient antiliante &#x00E0; partir de <ce:italic>E</ce:italic><ce:inf>F</ce:inf>, ce qui signifie qu'une partie des &#x00E9;lectrons du fer participe &#x00E0; la <ce:italic>liaison m&#x00E9;tallique</ce:italic> Fe&#xE5F8;Fe, qui semble pr&#x00E9;dominante dans cet alliage. Notons que le caract&#x00E8;re d'ensemble des COOP de la BV est fortement liant, ce qui est en relation avec la stabilit&#x00E9; chimique. Mais cette situation, d&#x00E9;crite pour une population de spins totaux, ne retrace que partiellement la situation physique, car l&#x2019;&#x00E9;tude des COOP au niveau de Fermi permet de sugg&#x00E9;rer que la forte intensit&#x00E9; des DOS &#x00E0; <ce:italic>E</ce:italic><ce:inf>F</ce:inf> (<ce:cross-ref refid="FIG1"><ce:italic>figure 1a</ce:italic></ce:cross-ref>) est due &#x00E0; des &#x00E9;tats antiliants Fe&#xE5F8;Fe d&#x00E9;stabilisant l'alliage dans une configuration non magn&#x00E9;tique. Une &#x00E9;tude rendant compte de deux populations de spins devient alors indispensable.</ce:para></ce:section>
-<ce:section>
-<ce:label>2.1.3</ce:label>
-<ce:section-title>Analyse des DOS dans le cadre de la th&#x00E9;orie de Stoner</ce:section-title>
-<ce:para>Ce r&#x00E9;sultat est analys&#x00E9; dans le cadre de la th&#x00E9;orie de Stoner du ferromagn&#x00E9;tisme de bande, en formulant le probl&#x00E8;me &#x00E0; 0<ce:hsp sp="0.25" />K (&#x00E9;tat fondamental, z&#x00E9;ro entropie) depuis la configuration non magn&#x00E9;tique. L&#x2019;&#x00E9;nergie totale du syst&#x00E8;me de spin r&#x00E9;sulte du bilan des &#x00E9;nergies d&#x2019;&#x00E9;change et cin&#x00E9;tique. Lorsqu'un spin est &#x201C;retourn&#x00E9;&#x201D; de mani&#x00E8;re &#x00E0; provoquer la cr&#x00E9;ation d'un moment magn&#x00E9;tique, l&#x2019;&#x00E9;nergie d&#x2019;&#x00E9;change diminue mais l&#x2019;&#x00E9;nergie cin&#x00E9;tique augmente. Le bilan est donn&#x00E9; par l'expression de l&#x2019;&#x00E9;nergie compt&#x00E9;e depuis la configuration non magn&#x00E9;tique<ce:hsp sp="0.25" />:<display><formula><math altimg="si1.gif">E=<fr>
-<nu>1</nu>
-<de>2</de></fr>[m<sup>2</sup>/n(E<inf><rm>F</rm></inf>)]<ce:hsp sp="0.25" />[1<rm>&#x2212;</rm>I<ce:hsp sp="0.25" />n(E<inf><rm>F</rm></inf>)]</math></formula></display>avec <ce:italic>I</ce:italic> l'int&#x00E9;grale d&#x2019;&#x00E9;change&#x2013;corr&#x00E9;lation de Stoner (quantit&#x00E9; atomique obtenue &#x00E0; partir de calculs spin-polaris&#x00E9;s <ce:cross-ref refid="BIB9">[9]</ce:cross-ref>) et <ce:italic>n</ce:italic>(<ce:italic>E</ce:italic><ce:inf>F</ce:inf>) la densit&#x00E9; d&#x2019;&#x00E9;tat &#x00E0; <ce:italic>E</ce:italic><ce:inf>F</ce:inf> dans la configuration non magn&#x00E9;tique. Dans l'expression ci-dessus, le produit <ce:italic>I</ce:italic><ce:hsp sp="0.25" /><ce:italic>n</ce:italic>(<ce:italic>E</ce:italic><ce:inf>F</ce:inf>) constitue un crit&#x00E8;re pour la stabilit&#x00E9; du syst&#x00E8;me de spins. Une configuration non magn&#x00E9;tique (occupation &#x00E9;gale des deux &#x00E9;tats de spin) sera d&#x00E9;favoris&#x00E9;e vis-&#x00E0;-vis de la polarisation des spins (occupation in&#x00E9;gale des deux &#x00E9;tats de spin) si <ce:italic>I</ce:italic>.<ce:hsp sp="0.25" /><ce:italic>n</ce:italic>(<ce:italic>E</ce:italic><ce:inf>F</ce:inf>)>1. Le syst&#x00E8;me se stabilise au travers d'un gain d&#x2019;&#x00E9;nergie d&#x00FB; &#x00E0; l&#x2019;&#x00E9;change. L'analyse montre que Fe est instable dans la configuration NSP et qu'une polarisation intra-bande doit se produire sous les effets d&#x2019;&#x00E9;change, pour stabiliser le syst&#x00E8;me dans une configuration magn&#x00E9;tique plus stable &#x00E9;nerg&#x00E9;tiquement. Plus analytiquement la NSP <ce:italic>n</ce:italic>(E<ce:inf>F</ce:inf>) multipli&#x00E9;e par l'int&#x00E9;grale d&#x2019;&#x00E9;change&#x2013;corr&#x00E9;lation de Stoner <ce:italic>I</ce:italic> donne le produit de Stoner (&#x00E0; 0<ce:hsp sp="0.25" />K, calcul des propri&#x00E9;t&#x00E9;s de l&#x2019;&#x00E9;tat fondamental) <ce:italic>n</ce:italic>(E<ce:inf>F</ce:inf>).<ce:hsp sp="0.25" /><ce:italic>I</ce:italic>. Si le produit est >1, le syst&#x00E8;me est instable dans la configuration NSP. Alors que Fe ob&#x00E9;it largement &#x00E0; cette condition avec un produit de 3, nous remarquons que Y n'ob&#x00E9;it pas au crit&#x00E8;re de Stoner, &#x00E0; cause de sa tr&#x00E8;s faible valeur de <ce:italic>n</ce:italic>(E<ce:inf>F</ce:inf>). Donc, si un moment est port&#x00E9; par Y, il doit &#x00EA;tre en grande partie induit par celui du fer.</ce:para></ce:section></ce:section>
-<ce:section>
-<ce:label>2.2</ce:label>
-<ce:section-title>Calculs magn&#x00E9;tiques (SP spin polaris&#x00E9;s)</ce:section-title>
-<ce:section>
-<ce:label>2.2.1</ce:label>
-<ce:section-title>Moments magn&#x00E9;tiques et champs hyperfins</ce:section-title>
-<ce:para>Les calculs magn&#x00E9;tiques sont entrepris en rendant compte initialement de deux populations de spin pour chaque esp&#x00E8;ce en pr&#x00E9;sence et en faisant converger les calculs moyennant les deux conditions suivantes<ce:hsp sp="0.25" />: <ce:italic>Z</ce:italic><ce:inf>v</ce:inf>=<ce:italic>n</ce:italic>(&#x2191;)+<ce:italic>n</ce:italic>(&#x2193;) et <ce:italic>m</ce:italic>=<ce:italic>n</ce:italic>(&#x2191;)&#x2212;<ce:italic>n</ce:italic>(&#x2193;), o&#x00F9; <ce:italic>Z</ce:italic><ce:inf>v</ce:inf> est le nombre d&#x2019;&#x00E9;lectrons de valence, <ce:italic>n</ce:italic>(&#x2191;) et <ce:italic>n</ce:italic>(&#x2193;) sont respectivement les populations de spins majoritaires et minoritaires et <ce:italic>m</ce:italic> le moment magn&#x00E9;tique. Pour YFe<ce:inf>2</ce:inf>, le calcul magn&#x00E9;tique donne une stabilisation &#x00E9;nerg&#x00E9;tique de 0.95<ce:hsp sp="0.25" />eV&#x00B7;maille<ce:sup>&#x2013;1</ce:sup>.</ce:para>
-<ce:para>Les moments magn&#x00E9;tiques port&#x00E9;s sont<ce:hsp sp="0.25" />: &#x2212;0,50 et 1,85<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B</ce:inf> pour Y et Fe respectivement, avec une aimantation <ce:italic>M</ce:italic><ce:inf>maille</ce:inf>=6,37<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B</ce:inf>, soit 3,18<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B</ce:inf> par unit&#x00E9; formulaire. Cette valeur est voisine de celle exp&#x00E9;rimentale de 2,9<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B</ce:inf> <ce:cross-ref refid="BIB10">[10]</ce:cross-ref> et de celle calcul&#x00E9;e par Mohn et Schwarz <ce:cross-ref refid="BIB11">[11]</ce:cross-ref>. Ainsi, YFe<ce:inf>2</ce:inf> est un compos&#x00E9; <ce:italic><ce:bold>ferrimagn&#x00E9;tique</ce:bold></ce:italic>, ce qui contredit certains r&#x00E9;sultats exp&#x00E9;rimentaux qui l'annon&#x00E7;aient comme ferromagn&#x00E9;tique, avec un moment nul sur l'yttrium <ce:cross-ref refid="BIB10">[10]</ce:cross-ref>. La densit&#x00E9; de spin au noyau pour les &#x00E9;tats <ce:italic>ns</ce:italic> provenant de la polarisation des &#x00E9;lectrons <ce:italic>s</ce:italic> par les moments <ce:italic>d</ce:italic> permet d'acc&#x00E9;der au terme &#x00AB;<ce:hsp sp="0.25" />contact de Fermi<ce:hsp sp="0.25" />&#x00BB; <ce:italic>H</ce:italic><ce:inf>FC</ce:inf>, contribuant au champ hyperfin. On obtient ainsi <ce:italic>H</ce:italic><ce:inf>FC</ce:inf>(Y)=&#x2212;431<ce:hsp sp="0.25" />kGauss et <ce:italic>H</ce:italic><ce:inf>FC</ce:inf>(Fe)=&#x2212;250<ce:hsp sp="0.25" />kGauss, cette derni&#x00E8;re valeur pouvant &#x00EA;tre approch&#x00E9;e de la valeur exp&#x00E9;rimentale de &#x2212;220<ce:hsp sp="0.25" />kGauss <ce:cross-ref refid="BIB10">[10]</ce:cross-ref>.</ce:para></ce:section>
-<ce:section>
-<ce:label>2.2.2</ce:label>
-<ce:section-title>DOS</ce:section-title>
-<ce:para>La <ce:cross-ref refid="FIG2"><ce:italic>figure 2</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG2" /> pr&#x00E9;sente les r&#x00E9;sultats de la polarisation des spins dans YFe<ce:inf>2</ce:inf> pour les DOS. Le r&#x00E9;sultat discut&#x00E9; plus haut sur les moments magn&#x00E9;tiques montre que la polarisation affecte principalement les &#x00E9;tats du fer, et beaucoup moins ceux de l'yttrium. Ceci est illustr&#x00E9; par le d&#x00E9;placement des bandes (&#x2191;) vers les basses &#x00E9;nergies et celles (&#x2193;) &#x00E0; plus haute &#x00E9;nergie, plus important pour le fer que pour l'yttrium. Cependant, ce n'est pas un m&#x00E9;canisme de d&#x00E9;placement rigide des bandes qui r&#x00E9;git le magn&#x00E9;tisme dans ce syst&#x00E8;me comme dans le cas du Fe<ce:hsp sp="0.25" />(&#x03B1;). C'est celui d'un comportement de <ce:italic>magn&#x00E9;tisme covalent</ce:italic> d&#x00E9;montr&#x00E9; pour ZrFe<ce:inf>2</ce:inf> <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>. Cet effet se traduit par un moment de l'yttrium provenant de la covalence de la liaison Y&#xE5F8;Fe plut&#x00F4;t que du d&#x00E9;placement rigide des bandes d'un &#x00E9;tat non magn&#x00E9;tique. La cons&#x00E9;quence est que les DOS n'ont pas la m&#x00EA;me allure suivant la direction des spins.</ce:para></ce:section>
-<ce:section>
-<ce:label>2.2.3</ce:label>
-<ce:section-title>COOP</ce:section-title>
-<ce:para>Nous illustrons la liaison chimique r&#x00E9;solue en spins dans YFe<ce:inf>2</ce:inf> par l&#x2019;&#x00E9;tude de la nature des interactions dans le r&#x00E9;seau. La <ce:cross-ref refid="FIG3"><ce:italic>figure 3</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG3" /> montre les COOP pour les interactions<ce:hsp sp="0.25" />: Fe&#xE5F8;Fe (a), Y&#xE5F8;Fe (b) et Y&#xE5F8;Y (c). Commen&#x00E7;ant par les premi&#x00E8;res (<ce:cross-ref refid="FIG3"><ce:italic>figure 3a</ce:italic></ce:cross-ref> et aussi <ce:cross-ref refid="FIG2"><ce:italic>figure 2</ce:italic></ce:cross-ref>), la moiti&#x00E9; de la bande 3<ce:italic>d</ce:italic>(&#x2191;) correspond &#x00E0; des interactions Fe&#xE5F8;Fe liantes, et l'autre moiti&#x00E9; &#x00E0; des interactions antiliantes, alors que, pour 3<ce:italic>d</ce:italic>(&#x2193;), on peut constater que toute la BV est liante, les interactions antiliantes n'apparaissant qu'au-dessus du niveau de Fermi. Ceci est la cons&#x00E9;quence du remplissage de la bande 3<ce:italic>d</ce:italic>(&#x2191;) &#x00E0; 4,2 &#x00E9;lectrons (presque &#x00E0; moiti&#x00E9; pleine), alors que la bande 3<ce:italic>d</ce:italic>(&#x2193;) n'est remplie qu&#x2019;&#x00E0; 2,5 &#x00E9;lectrons. Par cons&#x00E9;quent, les liaisons Fe&#xE5F8;Fe(&#x2191;) seront pour moiti&#x00E9; dans des &#x00E9;tats liants et pour moiti&#x00E9; dans des &#x00E9;tats antiliants, alors que les liaisons Fe&#xE5F8;Fe(&#x2193;) seront toutes liantes. Un aspect &#x00E0; souligner pour ces interactions est que les &#x00E9;tats liants sont proches (covalence) de ceux antiliants dans la bande &#x2191;, alors qu'ils sont bien s&#x00E9;par&#x00E9;s pour la bande &#x2193; (ceci permettant de sugg&#x00E9;rer en termes de chimiste une plus grande <ce:italic>ionicit&#x00E9;</ce:italic>). Les interactions Y&#xE5F8;Fe montr&#x00E9;es au second panneau &#x00E0; la m&#x00EA;me &#x00E9;chelle sont liantes dans toute la bande de valence, mais ont des aspects diff&#x00E9;rents selon que l'on examine Y&#xE5F8;Fe(&#x2191;) ou bien Y&#xE5F8;Fe(&#x2193;). L'allure de cette derni&#x00E8;re ressemble surtout &#x00E0; celle des COOP Fe&#xE5F8;Fe(&#x2193;) et beaucoup moins &#x00E0; celles de Fe&#xE5F8;Fe(&#x2191;), qui sont davantage engag&#x00E9;es dans la liaison au sein du r&#x00E9;seau de fer<ce:hsp sp="0.25" />; donc la liaison Fe&#xE5F8;Fe s&#x2019;&#x00E9;tablit au moyen des spins majoritaires. De plus, on peut expliquer le moment magn&#x00E9;tique port&#x00E9; par Y, de signe oppos&#x00E9; &#x00E0; celui de Fe, comme une cons&#x00E9;quence de l'hybridation de ses &#x00E9;tats avec ceux du Fe(&#x2193;). Cet aspect est d'ailleurs appuy&#x00E9; par les COOP des interactions Y&#xE5F8;Y, qui sont identiques suivant les deux directions de spin pour les hautes &#x00E9;nergies (&#x00E9;tats <ce:italic>f</ce:italic> vides) et pr&#x00E9;sentent des poids tr&#x00E8;s diff&#x00E9;rents en dessous de <ce:italic>E</ce:italic><ce:inf>F</ce:inf> (remarquer le pic &#x00E0; &#x2212;1<ce:hsp sp="0.25" />eV). Un tel comportement d'une &#x00AB;<ce:hsp sp="0.25" />liaison chimique r&#x00E9;solue en spin<ce:hsp sp="0.25" />&#x00BB; cadre bien avec le mod&#x00E8;le de magn&#x00E9;tisme covalent, comme on l'a discut&#x00E9; plus haut sur les DOS.</ce:para></ce:section></ce:section></ce:section>
-<ce:section>
-<ce:label>3</ce:label>
-<ce:section-title>Le syst&#x00E8;me YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf></ce:section-title>
-<ce:para>Dans la structure C15 (groupe d'espace F<ce:italic>d</ce:italic>3&#x0304;<ce:italic>m</ce:italic>) de YFe<ce:inf>2</ce:inf>, o&#x00F9; Y et Fe occupent respectivement les sites 8a de positions atomiques r&#x00E9;duites (1/8, 1/8, 1/8) et 16d (<math altimg="si2.gif"><fr shape="case">
-<nu>1</nu>
-<de>2</de></fr></math> <math altimg="si3.gif"><fr shape="case">
-<nu>1</nu>
-<de>2</de></fr></math> <math altimg="si4.gif"><fr shape="case">
-<nu>1</nu>
-<de>2</de></fr></math>), trois sites t&#x00E9;tra&#x00E9;driques s'offrent potentiellement &#x00E0; l'insertion d'hydrog&#x00E8;ne, i.e. Fe4 ou 8b (3/8, 3/8, 3/8), YFe3 ou 32e (9/32 9/32 9/32) et Y2Fe2 ou 96g (5/16, 5/16, 1/8). Les &#x00E9;tudes par diffraction neutronique des diff&#x00E9;rents hydrures <ce:cross-ref refid="BIB4">[4]</ce:cross-ref> ont montr&#x00E9; que ce sont les sites 96g qui sont pr&#x00E9;f&#x00E9;rentiellement occup&#x00E9;s par l'hydrog&#x00E8;ne.</ce:para>
-<ce:para>Nous examinons dans ce paragraphe les effets magn&#x00E9;tovolumiques de l'introduction d'hydrog&#x00E8;ne dans la structure en consid&#x00E9;rant la phase, i.e. YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>. Cette composition a &#x00E9;t&#x00E9; choisie afin de rendre plus ais&#x00E9;e une analyse de la liaison chimique au sein de la structure.<ce:vsp sp="1" /><ce:vsp sp="1" /><ce:italic><ce:bold>Remarque sur la mise au point de la structure pour les calculs</ce:bold></ce:italic><ce:vsp sp="1" /><ce:vsp sp="1" /></ce:para>
-<ce:para>Malgr&#x00E9; la composition riche en H de la phase consid&#x00E9;r&#x00E9;e Y<ce:inf>2</ce:inf>Fe<ce:inf>4</ce:inf>H<ce:inf>6</ce:inf>, seulement 6 des 24 positions 96g (i.e. les sites t&#x00E9;tra&#x00E9;driques &#x00AB;<ce:hsp sp="0.25" />Y2Fe2<ce:hsp sp="0.25" />&#x00BB;<ce:hsp sp="0.25" />) sont occup&#x00E9;es d'une mani&#x00E8;re statistique dans la structure cubique C15. Une telle situation &#x00E9;tant tr&#x00E8;s difficile &#x00E0; simuler pour les calculs, une mise en ordre artificielle a &#x00E9;t&#x00E9; r&#x00E9;alis&#x00E9;e en appliquant le crit&#x00E8;re g&#x00E9;om&#x00E9;trique qui impose que la distance entre deux sites interstitiels occup&#x00E9;s par des atomes d'hydrog&#x00E8;ne soit sup&#x00E9;rieure ou &#x00E9;gale &#x00E0; 3,97<ce:hsp sp="0.25" />u.a. <ce:bold>(12).</ce:bold> Les distances H&#xE5F8;(Y,Fe) restent respectivement &#x00E9;quivalentes et montrent une distance Fe&#xE5F8;H plus courte (<ce:cross-ref refid="TBL1"><ce:italic>tableau</ce:italic></ce:cross-ref>). Tout en conservant une sym&#x00E9;trie cubique, un mode P avec l'identit&#x00E9; (E) pour op&#x00E9;ration de sym&#x00E9;trie a &#x00E9;t&#x00E9; impos&#x00E9; par la diff&#x00E9;rentiation des diff&#x00E9;rents sites atomiques pour les calculs.</ce:para>
-<ce:para>Seuls les calculs magn&#x00E9;tiques seront pr&#x00E9;sent&#x00E9;s et discut&#x00E9;s ici.</ce:para></ce:section>
-<ce:section>
-<ce:label>4</ce:label>
-<ce:section-title>R&#x00E9;sultats et discussions</ce:section-title>
-<ce:section>
-<ce:label>4.1</ce:label>
-<ce:section-title>Moments magn&#x00E9;tiques</ce:section-title>
-<ce:para>En consid&#x00E9;rant le nombre total d'unit&#x00E9;s formulaires par maille (<ce:italic>Z</ce:italic>=2), par rapport &#x00E0; YFe<ce:inf>2</ce:inf><ce:hsp sp="0.25" />: (<ce:italic>M</ce:italic>=6,37<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B</ce:inf>), l'aimantation de YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> (<ce:italic>M</ce:italic>=7,55<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B</ce:inf>) montre une forte augmentation, due essentiellement au moment port&#x00E9; par les atomes de fer (<ce:cross-ref refid="TBL1"><ce:italic>tableau</ce:italic></ce:cross-ref>). Cette derni&#x00E8;re valeur est proche de celle mesur&#x00E9;e exp&#x00E9;rimentalement (3,7<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B/f.u.</ce:inf>). Cependant, ce moment d'amplitude voisine de 2<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B/Fe</ce:inf> montre un net abaissement par rapport &#x00E0; celui du fer dans sa structure &#x03B1; (ferromagn&#x00E9;tique dans sa structure cubique centr&#x00E9;e). En effet, pour un rayon de la sph&#x00E8;re atomique du fer <ce:italic>r</ce:italic>(Fe)=2,64<ce:hsp sp="0.25" />u.a. dans nos calculs, Fe (&#x03B1;) a un moment de 2,5<ce:hsp sp="0.25" />&#x03BC;<ce:inf>B</ce:inf>. Le choix de Fe<ce:hsp sp="0.25" />(&#x03B1;) a ici pour seul objectif de servir d&#x2019;&#x00E9;l&#x00E9;ment de comparaison suppl&#x00E9;mentaire pour les effets magn&#x00E9;to-volumiques. On doit en conclure en effet que l'augmentation volumique n'est pas la seule qui soit pr&#x00E9;dominante dans la phase hydrur&#x00E9;e et que la liaison chimique contract&#x00E9;e avec l'hydrog&#x00E8;ne devrait jouer un r&#x00F4;le pr&#x00E9;pond&#x00E9;rant dans l'abaissement de l'amplitude de l'aimantation. Malgr&#x00E9; les distances Y&#xE5F8;Y et Y&#xE5F8;Fe, plus grandes par rapport &#x00E0; leurs valeurs dans YFe<ce:inf>2</ce:inf>, l'yttrium a un moment inf&#x00E9;rieur en valeur absolue &#x00E0; celui dans l'alliage pur. L'explication pourrait se trouver &#x00E9;galement dans la liaison chimique.</ce:para>
-<ce:para>L'augmentation du moment magn&#x00E9;tique moyen du fer conduit &#x00E0; un accroissement de la valeur absolue du terme contact de Fermi du champ hyperfin &#x00E0; &#x2212;232<ce:hsp sp="0.25" />kGauss.</ce:para>
-<ce:para>Afin d'observer les effets volumiques et de liaison chimique, nous examinons dans les sections suivantes les DOS et les COOP de YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>.</ce:para></ce:section>
-<ce:section>
-<ce:label>4.2</ce:label>
-<ce:section-title>Densit&#x00E9;s d&#x2019;&#x00E9;tats (DOS)</ce:section-title>
-<ce:para>La <ce:cross-ref refid="FIG4"><ce:italic>figure 4a</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG4" /> pr&#x00E9;sente les r&#x00E9;sultats magn&#x00E9;tiques dans YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf><ce:hsp sp="0.25" /> pour les DOS partielles projet&#x00E9;es sur les sites respectifs des trois sortes d'atomes dans la maille (i.e. pour 2Y, 4Fe, 6H). Tout comme dans l'alliage non hydrur&#x00E9;, et en accord avec l'analyse pr&#x00E9;liminaire des moments magn&#x00E9;tiques, la polarisation affecte principalement les &#x00E9;tats du fer et beaucoup moins ceux de l'yttrium. Ceci est illustr&#x00E9; par un d&#x00E9;placement des bandes (&#x2191;) par rapport &#x00E0; celles (&#x2193;) nettement plus important que celui observ&#x00E9; sur la <ce:cross-ref refid="FIG2"><ce:italic>figure 2</ce:italic></ce:cross-ref>. Compte tenu de l'aimantation plus importante du fer, l&#x2019;&#x00E9;clatement d&#x2019;&#x00E9;change est plus grand ici. L'effet r&#x00E9;sultant est que le niveau de Fermi se trouve dans un minimum de DOS de la bande (&#x2191;), signalant un plus grand remplissage de la bande 3d par rapport &#x00E0; l'alliage pur<ce:hsp sp="0.25" />: Le nombre d&#x2019;&#x00E9;lectrons d passe de 4,2 &#x00E0; 4,7 &#x00E9;lectrons. En revanche, pour la bande d(&#x2193;), le remplissage passe de 2,5 &#x00E0; 2,2 &#x00E9;lectrons, la diff&#x00E9;rence correspondant &#x00E0; des &#x00E9;lectrons promus aux &#x00E9;tats de spins majoritaires.</ce:para>
-<ce:para>Une diff&#x00E9;rence suppl&#x00E9;mentaire caract&#x00E9;risant les DOS du syst&#x00E8;me hydrog&#x00E9;n&#x00E9; par rapport &#x00E0; l'alliage pur est celle de la dissipation du caract&#x00E8;re de bande large observ&#x00E9; dans le cas de l'alliage pur. En effet, l'observation de l'aspect plus localis&#x00E9; des DOS est plus net pour les &#x00E9;tats du fer que pour ceux de l'yttrium. Ceci est d&#x00FB; en partie &#x00E0; un abaissement de sym&#x00E9;trie par l'insertion d'hydrog&#x00E8;ne dans le cadre de la mise au point de nos calculs, mais surtout &#x00E0; l'interaction des atomes m&#x00E9;talliques avec les atomes d'hydrog&#x00E8;ne H. Les DOS de ceux-ci s'observent &#x00E0; basse &#x00E9;nergie, entre &#x2212;8, et &#x2212;4<ce:hsp sp="0.25" />eV), ce qui laisse sugg&#x00E9;rer que la liaison chimique H&#xE5F8;(Y,Fe) se produit dans ce domaine &#x00E9;nerg&#x00E9;tique. Ainsi, l'abaissement en &#x00E9;nergie des bandes (&#x2191;) et (&#x2193;) est aussi reli&#x00E9; &#x00E0; la liaison chimique entre l'hydrog&#x00E8;ne et les &#x00E9;tats <ce:italic>d</ce:italic> des atomes de m&#x00E9;tal (Y et Fe). L'analyse des COOP partielles permettra d'expliciter ces observations.</ce:para></ce:section>
-<ce:section>
-<ce:label>4.3</ce:label>
-<ce:section-title>COOP</ce:section-title>
-<ce:para>La <ce:cross-ref refid="FIG4"><ce:italic>figure 4b</ce:italic></ce:cross-ref> pr&#x00E9;sente les r&#x00E9;sultats magn&#x00E9;tiques dans YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> pour les COOP partielles projet&#x00E9;es pour les interactions Y&#xE5F8;H et Fe&#xE5F8;H, les interactions m&#x00E9;tal&#x2013;m&#x00E9;tal &#x00E9;tant semblables &#x00E0; celles d&#x00E9;crites dans l'alliage pur. Clairement, le second type d'interaction, i.e. Fe&#xE5F8;H, est pr&#x00E9;dominant pour les &#x00E9;tats liants ainsi qu'antiliants. Ceci ne provient pas uniquement d'un nombre d'atomes de fer deux fois plus important que celui d'yttrium, les DOS ne montrant pas simplement un doublement en passant de l'un &#x00E0; l'autre, mais d'une interaction plus forte entre Fe et H, en partie expliqu&#x00E9;e par une liaison Fe&#xE5F8;H plus courte que Y&#xE5F8;H (<ce:cross-ref refid="TBL1"><ce:italic>tableau</ce:italic></ce:cross-ref>). Il est int&#x00E9;ressant de noter dans ce contexte que, par ailleurs, il n'existe pas de phase stable entre Fe et H.</ce:para>
-<ce:para>Contrairement &#x00E0; la liaison Y&#xE5F8;Fe liante dans la bande de valence en dessous de <ce:italic>E</ce:italic><ce:inf>F</ce:inf> dans YFe<ce:inf>2</ce:inf>, la liaison H&#xE5F8;(Y,Fe) est pour moiti&#x00E9; liante et pour moiti&#x00E9; antiliante dans le compos&#x00E9; contenant l'hydrog&#x00E8;ne. Il est int&#x00E9;ressant de noter que ce sont les &#x00E9;tats &#x00E0; majorit&#x00E9; de spins (&#x2191;) qui sont liants pour Fe&#xE5F8;H (trait plein) &#x2014; sauf juste en dessous de <ce:italic>E</ce:italic><ce:inf>F</ce:inf> o&#x00F9; les &#x00E9;tats de Fe sont engag&#x00E9;s dans la liaison Fe&#xE5F8;Fe (<ce:cross-ref refid="FIG3"><ce:italic>figure 3a</ce:italic></ce:cross-ref>) &#x2014; et que ceux de minorit&#x00E9; de spin (&#x2193;) sont antiliants pour les deux types d'interactions. Ainsi a-t-on une liaison chimique r&#x00E9;solue en spin comme dans l'alliage pur.</ce:para></ce:section></ce:section>
-<ce:section>
-<ce:label>5</ce:label>
-<ce:section-title>Conclusion et perspectives</ce:section-title>
-<ce:para>La premi&#x00E8;re partie de ce travail a port&#x00E9; sur une &#x00E9;tude compl&#x00E8;te de la structure &#x00E9;lectronique et magn&#x00E9;tique et des propri&#x00E9;t&#x00E9;s de liaison chimique dans l'alliage de Laves YFe<ce:inf>2</ce:inf>. En plus de l'accord avec les observations exp&#x00E9;rimentales, il a &#x00E9;t&#x00E9; propos&#x00E9; une approche de la liaison chimique r&#x00E9;solue en spin, soulignant les r&#x00F4;les dissym&#x00E9;triques des &#x00E9;lectrons appartenant aux deux canaux de spins. L'introduction d'hydrog&#x00E8;ne a &#x00E9;t&#x00E9; simul&#x00E9;e afin d'expliquer le r&#x00F4;le de celui-ci dans le magn&#x00E9;tisme et la liaison chimique. Il a &#x00E9;t&#x00E9; montr&#x00E9; notamment que l'expansion de la maille de l'alliage devant conduire &#x00E0; une augmentation de l'aimantation &#x2014; essentiellement le fer &#x2014; est contrecarr&#x00E9;e par la liaison chimique contract&#x00E9;e avec les atomes du r&#x00E9;seau m&#x00E9;tallique.</ce:para>
-<ce:para>Cette recherche sera &#x00E9;tendue aux structures d'hydrures plus complexes, dues notamment &#x00E0; l'abaissement de sym&#x00E9;trie li&#x00E9; &#x00E0; la mise en ordre de l'hydrog&#x00E8;ne. On pourra alors avoir un acc&#x00E8;s plus quantitatif aux aspects de <ce:italic>liaison chimique</ce:italic> par rapport &#x00E0; ceux dans l'alliage pur.</ce:para></ce:section></ce:sections></body>
-<tail>
-<ce:bibliography>
-<ce:section-title>R&#x00E9;f&#x00E9;rences</ce:section-title><ce:bibliography-sec>
-<ce:bib-reference id="BIB1">
-<ce:label>[1]</ce:label>
-<sb:reference>
-<sb:contribution>
-<sb:authors>
-<sb:author><ce:given-name>F.</ce:given-name><ce:surname>Laves</ce:surname></sb:author></sb:authors></sb:contribution>
-<sb:host>
-<sb:edited-book>
-<sb:title><sb:maintitle>Theory of Alloy Phases</sb:maintitle></sb:title>
-<sb:date>1956</sb:date>
+    <item-info>
+        <jid>PXCI</jid>
+        <aid>89</aid>
+        <ce:pii>S1387-1609(00)00108-0</ce:pii>
+        <ce:doi>10.1016/S1387-1609(00)00108-0</ce:doi>
+        <ce:copyright type="full-transfer" year="2000">&#x00C9;ditions scientifiques et
+            m&#x00E9;dicales Elsevier SAS</ce:copyright>
+    </item-info>
+    <ce:floats>
+        <ce:figure id="FIG1">
+            <ce:label>Figure 1</ce:label>
+            <ce:caption>
+                <ce:simple-para>Calculs non magn&#x00E9;tiques de YFe<ce:inf>2</ce:inf>. DOS
+                    projet&#x00E9;es suivant les sites de Y et Fe (a) et COOP des liaisons
+                    interatomiques Y&#xE5F8;Fe, Fe&#xE5F8;Fe et Y&#xE5F8;Y (b).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr1"/>
+        </ce:figure>
+        <ce:figure id="FIG2">
+            <ce:label>Figure 2</ce:label>
+            <ce:caption>
+                <ce:simple-para>Calculs magn&#x00E9;tiques de YFe<ce:inf>2</ce:inf><ce:hsp sp="0.25"
+                    />: DOS projet&#x00E9;es suivant les sites de Y et Fe, pour chacune des deux
+                    directions de spin.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr2"/>
+        </ce:figure>
+        <ce:figure id="FIG3">
+            <ce:label>Figure 3</ce:label>
+            <ce:caption>
+                <ce:simple-para>Calculs magn&#x00E9;tiques de YFe<ce:inf>2</ce:inf><ce:hsp sp="0.25"
+                    />: COOP projet&#x00E9;es suivant les deux directions de spin, pour les
+                    interactions Fe&#xE5F8;Fe (haut) et Y&#xE5F8;Fe(bas).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr3"/>
+        </ce:figure>
+        <ce:figure id="FIG4">
+            <ce:label>Figure 4</ce:label>
+            <ce:caption>
+                <ce:simple-para>Calculs magn&#x00E9;tiques de
+                        Yfe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>:DOS (a) et COOP (b) partielles
+                    projet&#x00E9;es suivant les deux directions de spin.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr4"/>
+        </ce:figure>
+        <ce:table id="TBL1" colsep="0" rowsep="0" frame="topbot">
+            <ce:label>Tableau Tableau</ce:label>
+            <ce:caption>
+                <ce:simple-para>R&#x00E9;sultats des calculs de YFe<ce:inf>2</ce:inf> et
+                        YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> (u.a.=unit&#x00E9; atomique<ce:hsp
+                        sp="0.25"/>: 1<ce:hsp sp="0.25"/>u.a. (rayon de Bohr)=0,529<ce:hsp sp="0.25"
+                    />&#x00C5;. Les atomes Y et Fe sont diff&#x00E9;renci&#x00E9;s par suite de
+                    l'abaissement de la sym&#x00E9;trie par introduction de H</ce:simple-para>
+            </ce:caption>
+            <tgroup cols="3">
+                <colspec colname="col1" colsep="0"/>
+                <colspec colname="col2" colsep="0"/>
+                <colspec colname="col3" colsep="0"/>
+                <thead>
+                    <row rowsep="1">
+                        <entry/>
+                        <entry>YFe<ce:inf>2</ce:inf></entry>
+                        <entry>YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>
+                                (Y<ce:inf>2</ce:inf>Fe<ce:inf>4</ce:inf>H<ce:inf>6</ce:inf>)</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry><ce:italic>a</ce:italic> (u.a.)/vol (u.a.<ce:sup>3</ce:sup>)</entry>
+                        <entry align="char" char=".">13,91/673,3</entry>
+                        <entry align="char" char=".">14,84/817,04</entry>
+                    </row>
+                    <row>
+                        <entry><ce:italic>d</ce:italic><ce:inf>Fe&#xE5F8;Fe</ce:inf> (u.a.)</entry>
+                        <entry align="char" char=".">4,91</entry>
+                        <entry align="char" char=".">5,25</entry>
+                    </row>
+                    <row>
+                        <entry><ce:italic>d</ce:italic><ce:inf>Y&#xE5F8;Fe</ce:inf> (u.a.)</entry>
+                        <entry align="char" char=".">5,77</entry>
+                        <entry align="char" char=".">6,15</entry>
+                    </row>
+                    <row>
+                        <entry><ce:italic>d</ce:italic><ce:inf>Y&#xE5F8;Y</ce:inf> (u.a.)</entry>
+                        <entry align="char" char=".">6,02</entry>
+                        <entry align="char" char=".">6,43</entry>
+                    </row>
+                    <row>
+                        <entry><ce:italic>d</ce:italic><ce:inf>Y&#xE5F8;H</ce:inf> (u.a.)</entry>
+                        <entry align="char" char="."/>
+                        <entry align="char" char=".">4,00</entry>
+                    </row>
+                    <row>
+                        <entry><ce:italic>d</ce:italic><ce:inf>Fe&#xE5F8;H</ce:inf> (u.a.)</entry>
+                        <entry align="char" char="."/>
+                        <entry align="char" char=".">3,18</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <ce:vsp sp="0.5"/>
+                        </entry>
+                        <entry align="char" char="."/>
+                        <entry align="char" char="."/>
+                    </row>
+                    <row>
+                        <entry><ce:italic>M</ce:italic>(Y) &#x03BC;<ce:inf>B</ce:inf></entry>
+                        <entry align="char" char=".">&#x2212;0,50</entry>
+                        <entry align="char" char=".">&#x2212;0,28</entry>
+                    </row>
+                    <row>
+                        <entry><ce:italic>M</ce:italic>(Fe)&#x03BC;<ce:inf>B</ce:inf></entry>
+                        <entry align="char" char=".">1,85</entry>
+                        <entry align="char" char=".">2,0</entry>
+                    </row>
+                    <row>
+                        <entry>Aimantation pour deux mailles &#x03BC;<ce:inf>B</ce:inf></entry>
+                        <entry align="char" char=".">6,37</entry>
+                        <entry align="char" char=".">7,55</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </ce:table>
+    </ce:floats>
+    <head>
+        <ce:dochead>
+            <ce:textfn>Chimie physique et th&#x00E9;orique<ce:hsp sp="0.25"/>/<ce:hsp sp="0.25"
+                />Physical and theoretical chemistry</ce:textfn>
+        </ce:dochead>
+        <ce:title>&#x00C9;tude ab initio des structures &#x00E9;lectroniques et magn&#x00E9;tiques
+            des syst&#x00E8;mes YFe<ce:inf>2</ce:inf> et YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> au
+            sein de la th&#x00E9;orie de la fonctionnelle de la densit&#x00E9; (DFT)</ce:title>
+        <ce:presented>Pr&#x00E9;sent&#x00E9; par Michel Pouchard</ce:presented>
+        <ce:dedication>Ce travail est d&#x00E9;di&#x00E9; au Professeur Youssef Saikali de
+            l'universit&#x00E9; libanaise, laboratoire de chimie inorganique et CNRS-Liban &#x00E0;
+            l'occasion de son 60<ce:sup>e</ce:sup> anniversaire.</ce:dedication>
+        <ce:author-group>
+            <ce:author>
+                <ce:given-name>Samir F</ce:given-name>
+                <ce:surname>Matar</ce:surname>
+                <ce:cross-ref refid="AFF1">
+                    <ce:sup>a</ce:sup>
+                </ce:cross-ref>
+                <ce:cross-ref refid="CORR1">*</ce:cross-ref>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>Val&#x00E9;rie</ce:given-name>
+                <ce:surname>Paul-Boncour</ce:surname>
+                <ce:cross-ref refid="AFF2">
+                    <ce:sup>b</ce:sup>
+                </ce:cross-ref>
+            </ce:author>
+            <ce:affiliation id="AFF1">
+                <ce:label>a</ce:label>
+                <ce:textfn>Institut de chimie de la mati&#x00E8;re condens&#x00E9;e de Bordeaux,
+                    ICMCB&#x2013;UPR9048&#x2013;CNRS, Ch&#x00E2;teau Brivazac, av. du
+                    Docteur-Albert-Schweitzer, 33608 Pessac cedex, France</ce:textfn>
+            </ce:affiliation>
+            <ce:affiliation id="AFF2">
+                <ce:label>b</ce:label>
+                <ce:textfn>Laboratoire de chimie m&#x00E9;tallurgique des terres rares, CNRS
+                        UPR<ce:hsp sp="0.25"/>209, 2&#x2013;8, rue Henri-Dunant, 94320 Thiais cedex,
+                    France</ce:textfn>
+            </ce:affiliation>
+            <ce:correspondence id="CORR1">
+                <ce:label>*</ce:label>
+                <ce:text>Correspondance et tir&#x00E9;s &#x00E0; part<ce:hsp sp="0.25"/>:
+                    matar@icmcb.u-bordeaux.fr</ce:text>
+            </ce:correspondence>
+        </ce:author-group>
+        <ce:date-received day="11" month="1" year="2000"/>
+        <ce:date-accepted day="28" month="1" year="2000"/>
+        <ce:abstract xml:lang="en">
+            <ce:section-title>Abstract</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para><ce:bold>First principles investigation of the electronic and
+                        magnetic properties of YFe</ce:bold><ce:inf><ce:bold>2</ce:bold></ce:inf>
+                    <ce:bold>and
+                        YFe</ce:bold><ce:inf><ce:bold>2</ce:bold></ce:inf><ce:bold>H</ce:bold><ce:inf><ce:bold>3</ce:bold></ce:inf>
+                    <ce:bold>within the density functional theory (DFT).</ce:bold> The electronic
+                    and magnetic properties of YFe<ce:inf>2</ce:inf> and of its hydride system
+                        YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> are studied within the local spin
+                    density functional theory. Analyses of the density of states (DOS) and of the
+                    crystal orbital overlap populations (COOP) allowed us to provide an explanation
+                    for the role played by hydrogen as to the increase of the magnetisation as well
+                    as to the chemical bond with the metal constituents Y and Fe. &#x00A9; 2000
+                    Acad&#x00E9;mie des sciences<ce:hsp sp="0.25"/>/<ce:hsp sp="0.25"
+                    />&#x00C9;ditions scientifiques et m&#x00E9;dicales Elsevier SAS<ce:vsp sp="1"
+                        /><ce:vsp sp="1"/><ce:bold>Laves phases / alloys / hydrides / magnetism /
+                        DFT / LSDA / chemical-bonding</ce:bold></ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:abstract>
+            <ce:section-title>R&#x00E9;sum&#x00E9;</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para>Les structures &#x00E9;lectroniques et magn&#x00E9;tiques de
+                        YFe<ce:inf>2</ce:inf> et d'un hydrure
+                        YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> sont calcul&#x00E9;es au sein de la
+                    th&#x00E9;orie de la fonctionnelle locale de la densit&#x00E9; de spins
+                    utilisant la m&#x00E9;thode de l'onde sph&#x00E9;rique augment&#x00E9;e.
+                    L'analyse des r&#x00E9;sultats obtenus quant aux densit&#x00E9;s
+                    d&#x2019;&#x00E9;tats (DOS) et aux populations de recouvrement (COOP) permet
+                    d'expliquer le r&#x00F4;le jou&#x00E9; par l'hydrog&#x00E8;ne, tant au niveau de
+                    l'augmentation de l'aimantation globale que de celui de la liaison chimique
+                    contract&#x00E9;e avec Y et Fe.</ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:keywords>
+            <ce:section-title>Mots-cl&#x00E9;</ce:section-title>
+            <ce:keyword>
+                <ce:text>phases de Laves</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>alliages</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>hydrures</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>magn&#x00E9;tisme</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>DFT</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>LSDA</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>liaison chimque</ce:text>
+            </ce:keyword>
+        </ce:keywords>
+    </head>
+    <body>
+        <ce:sections>
+            <ce:section>
+                <ce:label>1</ce:label>
+                <ce:section-title>Introduction et cadre de l'&#x00E9;tude</ce:section-title>
+                <ce:para>Les alliages binaires appartenant &#x00E0; la famille des phases de Laves
+                        AB<ce:inf>2</ce:inf> (A=terre rare ou actinide, B=&#x00E9;l&#x00E9;ment de
+                    transition) cristallisent dans une structure, soit cubique &#x00E0; faces
+                    centr&#x00E9;es (C15), soit hexagonale (C14) <ce:cross-ref refid="BIB1"
+                        >[1]</ce:cross-ref>. Aupr&#x00E8;s de l'aspect fondamental que
+                    pr&#x00E9;sente l&#x2019;&#x00E9;tude des alliages purs, par exemple
+                    l&#x2019;&#x00E9;tude de l'origine du magn&#x00E9;tisme dans les
+                        UB<ce:inf>2</ce:inf> (B=Mn, Fe) <ce:cross-ref refid="BIB2"
+                        >[2]</ce:cross-ref>, un int&#x00E9;r&#x00EA;t particulier est suscit&#x00E9;
+                    par la capacit&#x00E9; de ces alliages d'absorber l'hydrog&#x00E8;ne &#x00E0;
+                    des temp&#x00E9;ratures voisines de l'ambiante, avec toutes les applications
+                    potentielles des hydrures r&#x00E9;sultants. L'&#x00E9;tude exp&#x00E9;rimentale
+                    des hydrures de compos&#x00E9;s YFe<ce:inf>2</ce:inf> et YMn<ce:inf>2</ce:inf> a
+                    montr&#x00E9; que l'absorption d'hydrog&#x00E8;ne entra&#x0131;&#x0302;ne
+                    &#x00E0; la fois une l'augmentation du volume de maille, qui modifie les
+                    distances interatomiques, et une mise en ordre de l'hydrog&#x00E8;ne, qui
+                    abaisse la sym&#x00E9;trie et modifie l'environnement local des atomes
+                        <ce:cross-refs refid="BIB3 BIB4">[3,4]</ce:cross-refs>. L'&#x00E9;volution
+                    des propri&#x00E9;t&#x00E9;s &#x00E9;lectroniques et magn&#x00E9;tiques de ces
+                    hydrures est li&#x00E9;e &#x00E0; ces modifications structurales, ainsi
+                    qu'&#x00E0; une modification des liaisons chimiques, due aux atomes
+                    d'hydrog&#x00E8;ne ins&#x00E9;r&#x00E9;s.</ce:para>
+                <ce:para>L'objectif de cette communication est de pr&#x00E9;senter les
+                    r&#x00E9;sultats d'une approche th&#x00E9;orique des propri&#x00E9;t&#x00E9;s
+                    des structures &#x00E9;lectroniques et magn&#x00E9;tiques, d'une part, et celles
+                    des liaisons chimiques, d'autre part, observ&#x00E9;es pour l'alliage
+                        YFe<ce:inf>2</ce:inf> et pour l'hydrure
+                        YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>. Une telle approche des structures
+                    &#x00E9;lectroniques et magn&#x00E9;tiques et des propri&#x00E9;t&#x00E9;s de
+                    liaison chimique peut &#x00EA;tre entreprise d'une mani&#x00E8;re quantitative
+                    au sein de la th&#x00E9;orie de la fonctionnelle de la densit&#x00E9; (DFT)
+                        <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>. Les calculs reposent sur la
+                    solution ab initio et auto-coh&#x00E9;rente de l&#x2019;&#x00E9;quation d'onde
+                    &#x00E0; une particule, dans un potentiel effectif o&#x00F9; les effets
+                    d&#x2019;&#x00E9;change et de corr&#x00E9;lation sont pris en compte
+                    essentiellement dans le cadre de l'approximation de la densit&#x00E9; de spin
+                    locale (LSDA), utilisant les sch&#x00E9;mas de param&#x00E9;trage de von Barth
+                    et Hedin et de Janak <ce:cross-ref refid="BIB6">[6]</ce:cross-ref>. C'est une
+                    th&#x00E9;orie de champ effectif moyen, bas&#x00E9;e sur un gaz
+                    d&#x2019;&#x00E9;lectrons homog&#x00E8;ne en interaction, polaris&#x00E9; en
+                    spin.</ce:para>
+                <ce:para>Les calculs sont effectu&#x00E9;s &#x00E0; l'aide de <ce:italic>la
+                        m&#x00E9;thode de l'onde sph&#x00E9;rique augment&#x00E9;e ASW</ce:italic>
+                    <ce:cross-ref refid="BIB7">[7]</ce:cross-ref>, qui, outre la LSDA, utilise
+                    l'approximation de la sph&#x00E8;re atomique ASA, imposant un volume de maille
+                    &#x00E9;gal au volume des sph&#x00E8;res atomiques. Le potentiel, ainsi que la
+                    densit&#x00E9; &#x00E9;lectronique au sein de ces sph&#x00E8;res, sont
+                    sph&#x00E9;riquement moyenn&#x00E9;s. L'int&#x00E9;r&#x00EA;t de l'utilisation
+                    de cette m&#x00E9;thode tient de son suivi depuis 1979, tant au niveau des
+                    am&#x00E9;liorations apport&#x00E9;es quant &#x00E0; la pr&#x00E9;cision des
+                    conditions de convergence des charges et de l&#x2019;&#x00E9;nergie que de celui
+                    du magn&#x00E9;tisme de spin et orbitalaire et que de celui de l'acc&#x00E8;s
+                    &#x00E0; la nature de la <ce:italic>liaison chimique</ce:italic> (liante,
+                    antiliante ou non liante), r&#x00E9;cemment rendu possible gr&#x00E2;ce au
+                    calcul des COOP (<ce:italic>crystal orbital overlap populations</ce:italic>)
+                        <ce:cross-ref refid="BIB8">[8]</ce:cross-ref>. Lorsqu'une d&#x00E9;pendance
+                    en spin est prise en compte, le calcul permet d'acc&#x00E9;der aux moments
+                    magn&#x00E9;tiques, ainsi qu'au terme <ce:italic>Fermi contact</ce:italic> du
+                    champ hyperfin<ce:hsp sp="0.25"/>:
+                    <ce:italic>H</ce:italic><ce:inf>FC</ce:inf>.</ce:para>
+                <ce:para>Pour l'alliage pur, ainsi que pour la phase riche en hydrog&#x00E8;ne, les
+                    calculs ont &#x00E9;t&#x00E9; effectu&#x00E9;s avec les param&#x00E8;tres de
+                    maille exp&#x00E9;rimentaux <ce:cross-ref refid="BIB3">[3]</ce:cross-ref>
+                        (<ce:cross-ref refid="TBL1"
+                        ><ce:italic>tableau</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL1"
+                    />). Notons qu'une recherche ab initio du param&#x00E8;tre cristallin dans le
+                    cadre de la LSDA est possible, mais n'a pas &#x00E9;t&#x00E9; effectu&#x00E9;e
+                    dans le cadre de ce travail. Les valeurs calcul&#x00E9;es sont
+                    syst&#x00E9;matiquement de 3 &#x00E0; 5<ce:hsp sp="0.25"/>% inf&#x00E9;rieures
+                    aux valeurs exp&#x00E9;rimentales, du fait du caract&#x00E8;re surliant de cette
+                    approximation. Notre utilisation du param&#x00E8;tre exp&#x00E9;rimental se
+                    trouve justifi&#x00E9;e, compte tenu de la proximit&#x00E9; entre valeurs
+                    mesur&#x00E9;es et calcul&#x00E9;es, d'une part, et du fait que nous ne
+                    recherchons pas les grandeurs r&#x00E9;sultant de tels calculs, comme le module
+                    d'incompressibilit&#x00E9;, d'autre part. Enfin, une optimisation des rayons des
+                    sph&#x00E8;res minimisant leur recouvrement dans l'ASA a permis d'adopter un
+                    rapport
+                        <ce:italic>r</ce:italic><ce:inf>Y</ce:inf>/<ce:italic>r</ce:italic><ce:inf>Fe</ce:inf>=1,17.</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>2</ce:label>
+                <ce:section-title>Le syst&#x00E8;me YFe<ce:inf>2</ce:inf></ce:section-title>
+                <ce:section>
+                    <ce:label>2.1</ce:label>
+                    <ce:section-title>Calculs non-magn&#x00E9;tiques (NSP<ce:hsp sp="0.25"/>: non
+                        spin polaris&#x00E9;s)</ce:section-title>
+                    <ce:para>&#x00C0; la convergence autocoh&#x00E9;rente, les transferts de charges
+                        montrent un d&#x00E9;part de 0,35 &#x00E9;lectron depuis Y vers Fe. Ce
+                        l&#x00E9;ger transfert, non significatif, d'effets ioniques &#x2014;
+                        d'ailleurs rarement apparents dans le cadre de nos calculs &#x2014; montre
+                        une redistribution des deux &#x00E9;lectrons <ce:italic>s</ce:italic> de Y
+                        sur ses trois &#x00E9;tats de valence, lui conf&#x00E9;rant ainsi un
+                        caract&#x00E8;re <ce:italic>d</ce:italic>, du fait de son hybridation avec
+                            Fe(3<ce:italic>d</ce:italic>). Ainsi, l'effet majeur est celui de
+                        l'hybridation des diff&#x00E9;rents &#x00E9;tats de valence entre eux, et
+                        non le transfert de charges.</ce:para>
+                    <ce:para>En ne tenant compte que d'une population de spins totaux, on peut
+                        examiner les densit&#x00E9;s d&#x2019;&#x00E9;tats (DOS) et &#x00E9;valuer
+                        les instabilit&#x00E9;s magn&#x00E9;tiques possibles pour chaque constituant
+                        dans le cadre de la th&#x00E9;orie de Stoner du ferromagn&#x00E9;tisme de
+                        bande (voir d&#x00E9;tails plus loin). De plus, une analyse de la liaison
+                        chimique entre les diff&#x00E9;rents &#x00E9;tats peut &#x00EA;tre
+                        entreprise au travers des COOP.</ce:para>
+                    <ce:section>
+                        <ce:label>2.1.1</ce:label>
+                        <ce:section-title>Analyse des densit&#x00E9;s d&#x2019;&#x00E9;tats
+                            (DOS)</ce:section-title>
+                        <ce:para>Les DOS projet&#x00E9;es suivant chaque site atomique tenant compte
+                            de sa multiplicit&#x00E9; (1<ce:hsp sp="0.25"/>Y pour 2<ce:hsp sp="0.25"
+                            />Fe) sont repr&#x00E9;sent&#x00E9;es sur la <ce:cross-ref refid="FIG1"
+                                    ><ce:italic>figure 1a</ce:italic></ce:cross-ref><ce:float-anchor
+                                refid="FIG1"/>. L'origine des &#x00E9;nergies suivant l'axe des
+                            abscisses est prise au niveau de Fermi. Il en sera de m&#x00EA;me pour
+                            tous les trac&#x00E9;s pr&#x00E9;sent&#x00E9;s dans ce travail. Pour
+                            plus de clart&#x00E9;, les DOS de l'yttrium ont &#x00E9;t&#x00E9;
+                            d&#x00E9;plac&#x00E9;es verticalement. L'allure des trac&#x00E9;s montre
+                            la pr&#x00E9;dominance des &#x00E9;tats du fer, surtout pr&#x00E8;s du
+                            niveau de Fermi, et la pr&#x00E9;sence d'un certain m&#x00E9;lange
+                            Fe&#xE5F8;Y au niveau du bas de la bande de valence BV (&#x00E9;tats
+                                <ce:italic>sp</ce:italic> entre &#x2212;6 et &#x2212;2<ce:hsp
+                                sp="0.25"/>eV) et vers le haut de la BV (&#x00E9;tats
+                                <ce:italic>d</ce:italic>). Dans la BC, il y a une
+                            pr&#x00E9;dominance des &#x00E9;tats 4<ce:italic>f</ce:italic> vides de
+                            l'yttrium. L'occupation des &#x00E9;tats 3<ce:italic>d</ce:italic> de Fe
+                            &#x00E0; 6,68 &#x00E9;lectrons correspond &#x00E0; une forte
+                            densit&#x00E9; d&#x2019;&#x00E9;tats &#x00E0;
+                                <ce:italic>E</ce:italic><ce:inf>F</ce:inf>. En revanche, Y montre
+                            une tr&#x00E8;s faible DOS au niveau de Fermi. Ces r&#x00E9;sultats
+                            permettront de mettre en &#x00E9;vidence le fait que, dans le cadre de
+                            la th&#x00E9;orie de Stoner de ferromagn&#x00E9;tisme de bande, seul le
+                            fer doit porter un moment propre.</ce:para>
+                    </ce:section>
+                    <ce:section>
+                        <ce:label>2.1.2</ce:label>
+                        <ce:section-title>Analyse des populations de recouvrement
+                            (COOP)</ce:section-title>
+                        <ce:para>L'analyse de la liaison chimique est rendue quantitative au travers
+                            des COOP donn&#x00E9;es sur la <ce:cross-ref refid="FIG1"
+                                    ><ce:italic>figure 1b</ce:italic></ce:cross-ref>. Suivant l'axe
+                            des ordonn&#x00E9;es les valeurs positives, nulles et n&#x00E9;gatives
+                            correspondent &#x00E0; des interactions liantes, non-liantes et
+                            antiliantes respectivement. Les COOP partielles (atome &#x00E0; atome)
+                            pour les interactions Fe&#xE5F8;Fe, Y&#xE5F8;Fe et Y&#xE5F8;Y sont
+                            repr&#x00E9;sent&#x00E9;es (cf. <ce:cross-ref refid="TBL1"
+                                    ><ce:italic>tableau</ce:italic></ce:cross-ref> pour les
+                            distances interatomiques). Une constatation pr&#x00E9;liminaire est que
+                            les COOP ont des intensit&#x00E9;s qui d&#x00E9;croissent lorsque la
+                            distance augmente, c'est-&#x00E0;-dire que la liaison est la plus forte
+                            pour l'interaction Fe&#xE5F8;Fe et la moins forte pour Y&#xE5F8;Y. Mais
+                            un autre aspect, prenant en compte la population &#x00E9;lectronique,
+                            est &#x00E0; consid&#x00E9;rer pour compl&#x00E9;ter l'analyse des
+                            diff&#x00E9;rentes interactions. La liaison Y&#xE5F8;Fe est liante
+                            jusqu'au niveau de Fermi et m&#x00EA;me au-dessus de
+                                <ce:italic>E</ce:italic><ce:inf>F</ce:inf><ce:hsp sp="0.25"/>; ceci
+                            provient du fait que les &#x00E9;tats de valence disponibles de
+                            l'yttrium &#x00E9;tant essentiellement vides, ils interagiront alors
+                            avec les &#x00E9;lectrons du fer en formant des liaisons liantes. Cet
+                            effet se voit d'ailleurs pour les interactions Y&#xE5F8;Y qui, quoique
+                            de faible intensit&#x00E9;, sont liantes dans le m&#x00EA;me domaine que
+                            Y&#xE5F8;Fe. Un des int&#x00E9;r&#x00EA;ts de ces trac&#x00E9;s est la
+                            mise en &#x00E9;vidence d'une interaction liante Fe&#xE5F8;Fe dans la
+                            BV, qui devient antiliante &#x00E0; partir de
+                                <ce:italic>E</ce:italic><ce:inf>F</ce:inf>, ce qui signifie qu'une
+                            partie des &#x00E9;lectrons du fer participe &#x00E0; la
+                                <ce:italic>liaison m&#x00E9;tallique</ce:italic> Fe&#xE5F8;Fe, qui
+                            semble pr&#x00E9;dominante dans cet alliage. Notons que le
+                            caract&#x00E8;re d'ensemble des COOP de la BV est fortement liant, ce
+                            qui est en relation avec la stabilit&#x00E9; chimique. Mais cette
+                            situation, d&#x00E9;crite pour une population de spins totaux, ne
+                            retrace que partiellement la situation physique, car
+                            l&#x2019;&#x00E9;tude des COOP au niveau de Fermi permet de
+                            sugg&#x00E9;rer que la forte intensit&#x00E9; des DOS &#x00E0;
+                                <ce:italic>E</ce:italic><ce:inf>F</ce:inf> (<ce:cross-ref
+                                refid="FIG1"><ce:italic>figure 1a</ce:italic></ce:cross-ref>) est
+                            due &#x00E0; des &#x00E9;tats antiliants Fe&#xE5F8;Fe
+                            d&#x00E9;stabilisant l'alliage dans une configuration non
+                            magn&#x00E9;tique. Une &#x00E9;tude rendant compte de deux populations
+                            de spins devient alors indispensable.</ce:para>
+                    </ce:section>
+                    <ce:section>
+                        <ce:label>2.1.3</ce:label>
+                        <ce:section-title>Analyse des DOS dans le cadre de la th&#x00E9;orie de
+                            Stoner</ce:section-title>
+                        <ce:para>Ce r&#x00E9;sultat est analys&#x00E9; dans le cadre de la
+                            th&#x00E9;orie de Stoner du ferromagn&#x00E9;tisme de bande, en
+                            formulant le probl&#x00E8;me &#x00E0; 0<ce:hsp sp="0.25"/>K (&#x00E9;tat
+                            fondamental, z&#x00E9;ro entropie) depuis la configuration non
+                            magn&#x00E9;tique. L&#x2019;&#x00E9;nergie totale du syst&#x00E8;me de
+                            spin r&#x00E9;sulte du bilan des &#x00E9;nergies d&#x2019;&#x00E9;change
+                            et cin&#x00E9;tique. Lorsqu'un spin est &#x201C;retourn&#x00E9;&#x201D;
+                            de mani&#x00E8;re &#x00E0; provoquer la cr&#x00E9;ation d'un moment
+                            magn&#x00E9;tique, l&#x2019;&#x00E9;nergie d&#x2019;&#x00E9;change
+                            diminue mais l&#x2019;&#x00E9;nergie cin&#x00E9;tique augmente. Le bilan
+                            est donn&#x00E9; par l'expression de l&#x2019;&#x00E9;nergie
+                            compt&#x00E9;e depuis la configuration non magn&#x00E9;tique<ce:hsp
+                                sp="0.25"/>:<display><formula><math altimg="si1.gif">E=<fr>
+                                            <nu>1</nu>
+                                            <de>2</de></fr>[m<sup>2</sup>/n(E<inf><rm>F</rm></inf>)]<ce:hsp
+                                            sp="0.25"/>[1<rm>&#x2212;</rm>I<ce:hsp sp="0.25"
+                                                />n(E<inf><rm>F</rm></inf>)]</math></formula></display>avec
+                                <ce:italic>I</ce:italic> l'int&#x00E9;grale
+                            d&#x2019;&#x00E9;change&#x2013;corr&#x00E9;lation de Stoner
+                            (quantit&#x00E9; atomique obtenue &#x00E0; partir de calculs
+                            spin-polaris&#x00E9;s <ce:cross-ref refid="BIB9">[9]</ce:cross-ref>) et
+                                <ce:italic>n</ce:italic>(<ce:italic>E</ce:italic><ce:inf>F</ce:inf>)
+                            la densit&#x00E9; d&#x2019;&#x00E9;tat &#x00E0;
+                                <ce:italic>E</ce:italic><ce:inf>F</ce:inf> dans la configuration non
+                            magn&#x00E9;tique. Dans l'expression ci-dessus, le produit
+                                <ce:italic>I</ce:italic><ce:hsp sp="0.25"
+                                /><ce:italic>n</ce:italic>(<ce:italic>E</ce:italic><ce:inf>F</ce:inf>)
+                            constitue un crit&#x00E8;re pour la stabilit&#x00E9; du syst&#x00E8;me
+                            de spins. Une configuration non magn&#x00E9;tique (occupation
+                            &#x00E9;gale des deux &#x00E9;tats de spin) sera
+                            d&#x00E9;favoris&#x00E9;e vis-&#x00E0;-vis de la polarisation des spins
+                            (occupation in&#x00E9;gale des deux &#x00E9;tats de spin) si
+                                <ce:italic>I</ce:italic>.<ce:hsp sp="0.25"
+                                /><ce:italic>n</ce:italic>(<ce:italic>E</ce:italic><ce:inf>F</ce:inf>)>1.
+                            Le syst&#x00E8;me se stabilise au travers d'un gain
+                            d&#x2019;&#x00E9;nergie d&#x00FB; &#x00E0; l&#x2019;&#x00E9;change.
+                            L'analyse montre que Fe est instable dans la configuration NSP et qu'une
+                            polarisation intra-bande doit se produire sous les effets
+                            d&#x2019;&#x00E9;change, pour stabiliser le syst&#x00E8;me dans une
+                            configuration magn&#x00E9;tique plus stable
+                            &#x00E9;nerg&#x00E9;tiquement. Plus analytiquement la NSP
+                                <ce:italic>n</ce:italic>(E<ce:inf>F</ce:inf>) multipli&#x00E9;e par
+                            l'int&#x00E9;grale d&#x2019;&#x00E9;change&#x2013;corr&#x00E9;lation de
+                            Stoner <ce:italic>I</ce:italic> donne le produit de Stoner (&#x00E0;
+                                0<ce:hsp sp="0.25"/>K, calcul des propri&#x00E9;t&#x00E9;s de
+                            l&#x2019;&#x00E9;tat fondamental)
+                                <ce:italic>n</ce:italic>(E<ce:inf>F</ce:inf>).<ce:hsp sp="0.25"
+                                /><ce:italic>I</ce:italic>. Si le produit est >1, le syst&#x00E8;me
+                            est instable dans la configuration NSP. Alors que Fe ob&#x00E9;it
+                            largement &#x00E0; cette condition avec un produit de 3, nous remarquons
+                            que Y n'ob&#x00E9;it pas au crit&#x00E8;re de Stoner, &#x00E0; cause de
+                            sa tr&#x00E8;s faible valeur de
+                                <ce:italic>n</ce:italic>(E<ce:inf>F</ce:inf>). Donc, si un moment
+                            est port&#x00E9; par Y, il doit &#x00EA;tre en grande partie induit par
+                            celui du fer.</ce:para>
+                    </ce:section>
+                </ce:section>
+                <ce:section>
+                    <ce:label>2.2</ce:label>
+                    <ce:section-title>Calculs magn&#x00E9;tiques (SP spin
+                        polaris&#x00E9;s)</ce:section-title>
+                    <ce:section>
+                        <ce:label>2.2.1</ce:label>
+                        <ce:section-title>Moments magn&#x00E9;tiques et champs
+                            hyperfins</ce:section-title>
+                        <ce:para>Les calculs magn&#x00E9;tiques sont entrepris en rendant compte
+                            initialement de deux populations de spin pour chaque esp&#x00E8;ce en
+                            pr&#x00E9;sence et en faisant converger les calculs moyennant les deux
+                            conditions suivantes<ce:hsp sp="0.25"/>:
+                                <ce:italic>Z</ce:italic><ce:inf>v</ce:inf>=<ce:italic>n</ce:italic>(&#x2191;)+<ce:italic>n</ce:italic>(&#x2193;)
+                            et
+                                <ce:italic>m</ce:italic>=<ce:italic>n</ce:italic>(&#x2191;)&#x2212;<ce:italic>n</ce:italic>(&#x2193;),
+                            o&#x00F9; <ce:italic>Z</ce:italic><ce:inf>v</ce:inf> est le nombre
+                            d&#x2019;&#x00E9;lectrons de valence, <ce:italic>n</ce:italic>(&#x2191;)
+                            et <ce:italic>n</ce:italic>(&#x2193;) sont respectivement les
+                            populations de spins majoritaires et minoritaires et
+                                <ce:italic>m</ce:italic> le moment magn&#x00E9;tique. Pour
+                                YFe<ce:inf>2</ce:inf>, le calcul magn&#x00E9;tique donne une
+                            stabilisation &#x00E9;nerg&#x00E9;tique de 0.95<ce:hsp sp="0.25"
+                                />eV&#x00B7;maille<ce:sup>&#x2013;1</ce:sup>.</ce:para>
+                        <ce:para>Les moments magn&#x00E9;tiques port&#x00E9;s sont<ce:hsp sp="0.25"
+                            />: &#x2212;0,50 et 1,85<ce:hsp sp="0.25"/>&#x03BC;<ce:inf>B</ce:inf>
+                            pour Y et Fe respectivement, avec une aimantation
+                                <ce:italic>M</ce:italic><ce:inf>maille</ce:inf>=6,37<ce:hsp
+                                sp="0.25"/>&#x03BC;<ce:inf>B</ce:inf>, soit 3,18<ce:hsp sp="0.25"
+                                />&#x03BC;<ce:inf>B</ce:inf> par unit&#x00E9; formulaire. Cette
+                            valeur est voisine de celle exp&#x00E9;rimentale de 2,9<ce:hsp sp="0.25"
+                                />&#x03BC;<ce:inf>B</ce:inf>
+                            <ce:cross-ref refid="BIB10">[10]</ce:cross-ref> et de celle
+                            calcul&#x00E9;e par Mohn et Schwarz <ce:cross-ref refid="BIB11"
+                                >[11]</ce:cross-ref>. Ainsi, YFe<ce:inf>2</ce:inf> est un
+                            compos&#x00E9;
+                                <ce:italic><ce:bold>ferrimagn&#x00E9;tique</ce:bold></ce:italic>, ce
+                            qui contredit certains r&#x00E9;sultats exp&#x00E9;rimentaux qui
+                            l'annon&#x00E7;aient comme ferromagn&#x00E9;tique, avec un moment nul
+                            sur l'yttrium <ce:cross-ref refid="BIB10">[10]</ce:cross-ref>. La
+                            densit&#x00E9; de spin au noyau pour les &#x00E9;tats
+                                <ce:italic>ns</ce:italic> provenant de la polarisation des
+                            &#x00E9;lectrons <ce:italic>s</ce:italic> par les moments
+                                <ce:italic>d</ce:italic> permet d'acc&#x00E9;der au terme
+                                &#x00AB;<ce:hsp sp="0.25"/>contact de Fermi<ce:hsp sp="0.25"
+                            />&#x00BB; <ce:italic>H</ce:italic><ce:inf>FC</ce:inf>, contribuant au
+                            champ hyperfin. On obtient ainsi
+                                <ce:italic>H</ce:italic><ce:inf>FC</ce:inf>(Y)=&#x2212;431<ce:hsp
+                                sp="0.25"/>kGauss et
+                                <ce:italic>H</ce:italic><ce:inf>FC</ce:inf>(Fe)=&#x2212;250<ce:hsp
+                                sp="0.25"/>kGauss, cette derni&#x00E8;re valeur pouvant &#x00EA;tre
+                            approch&#x00E9;e de la valeur exp&#x00E9;rimentale de &#x2212;220<ce:hsp
+                                sp="0.25"/>kGauss <ce:cross-ref refid="BIB10"
+                            >[10]</ce:cross-ref>.</ce:para>
+                    </ce:section>
+                    <ce:section>
+                        <ce:label>2.2.2</ce:label>
+                        <ce:section-title>DOS</ce:section-title>
+                        <ce:para>La <ce:cross-ref refid="FIG2"><ce:italic>figure
+                                2</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG2"/>
+                            pr&#x00E9;sente les r&#x00E9;sultats de la polarisation des spins dans
+                                YFe<ce:inf>2</ce:inf> pour les DOS. Le r&#x00E9;sultat
+                            discut&#x00E9; plus haut sur les moments magn&#x00E9;tiques montre que
+                            la polarisation affecte principalement les &#x00E9;tats du fer, et
+                            beaucoup moins ceux de l'yttrium. Ceci est illustr&#x00E9; par le
+                            d&#x00E9;placement des bandes (&#x2191;) vers les basses &#x00E9;nergies
+                            et celles (&#x2193;) &#x00E0; plus haute &#x00E9;nergie, plus important
+                            pour le fer que pour l'yttrium. Cependant, ce n'est pas un
+                            m&#x00E9;canisme de d&#x00E9;placement rigide des bandes qui
+                            r&#x00E9;git le magn&#x00E9;tisme dans ce syst&#x00E8;me comme dans le
+                            cas du Fe<ce:hsp sp="0.25"/>(&#x03B1;). C'est celui d'un comportement de
+                                <ce:italic>magn&#x00E9;tisme covalent</ce:italic>
+                            d&#x00E9;montr&#x00E9; pour ZrFe<ce:inf>2</ce:inf>
+                            <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>. Cet effet se traduit par
+                            un moment de l'yttrium provenant de la covalence de la liaison
+                            Y&#xE5F8;Fe plut&#x00F4;t que du d&#x00E9;placement rigide des bandes
+                            d'un &#x00E9;tat non magn&#x00E9;tique. La cons&#x00E9;quence est que
+                            les DOS n'ont pas la m&#x00EA;me allure suivant la direction des
+                            spins.</ce:para>
+                    </ce:section>
+                    <ce:section>
+                        <ce:label>2.2.3</ce:label>
+                        <ce:section-title>COOP</ce:section-title>
+                        <ce:para>Nous illustrons la liaison chimique r&#x00E9;solue en spins dans
+                                YFe<ce:inf>2</ce:inf> par l&#x2019;&#x00E9;tude de la nature des
+                            interactions dans le r&#x00E9;seau. La <ce:cross-ref refid="FIG3"
+                                    ><ce:italic>figure 3</ce:italic></ce:cross-ref><ce:float-anchor
+                                refid="FIG3"/> montre les COOP pour les interactions<ce:hsp
+                                sp="0.25"/>: Fe&#xE5F8;Fe (a), Y&#xE5F8;Fe (b) et Y&#xE5F8;Y (c).
+                            Commen&#x00E7;ant par les premi&#x00E8;res (<ce:cross-ref refid="FIG3"
+                                    ><ce:italic>figure 3a</ce:italic></ce:cross-ref> et aussi
+                                <ce:cross-ref refid="FIG2"><ce:italic>figure
+                                2</ce:italic></ce:cross-ref>), la moiti&#x00E9; de la bande
+                                3<ce:italic>d</ce:italic>(&#x2191;) correspond &#x00E0; des
+                            interactions Fe&#xE5F8;Fe liantes, et l'autre moiti&#x00E9; &#x00E0; des
+                            interactions antiliantes, alors que, pour
+                            3<ce:italic>d</ce:italic>(&#x2193;), on peut constater que toute la BV
+                            est liante, les interactions antiliantes n'apparaissant qu'au-dessus du
+                            niveau de Fermi. Ceci est la cons&#x00E9;quence du remplissage de la
+                            bande 3<ce:italic>d</ce:italic>(&#x2191;) &#x00E0; 4,2 &#x00E9;lectrons
+                            (presque &#x00E0; moiti&#x00E9; pleine), alors que la bande
+                                3<ce:italic>d</ce:italic>(&#x2193;) n'est remplie qu&#x2019;&#x00E0;
+                            2,5 &#x00E9;lectrons. Par cons&#x00E9;quent, les liaisons
+                            Fe&#xE5F8;Fe(&#x2191;) seront pour moiti&#x00E9; dans des &#x00E9;tats
+                            liants et pour moiti&#x00E9; dans des &#x00E9;tats antiliants, alors que
+                            les liaisons Fe&#xE5F8;Fe(&#x2193;) seront toutes liantes. Un aspect
+                            &#x00E0; souligner pour ces interactions est que les &#x00E9;tats liants
+                            sont proches (covalence) de ceux antiliants dans la bande &#x2191;,
+                            alors qu'ils sont bien s&#x00E9;par&#x00E9;s pour la bande &#x2193;
+                            (ceci permettant de sugg&#x00E9;rer en termes de chimiste une plus
+                            grande <ce:italic>ionicit&#x00E9;</ce:italic>). Les interactions
+                            Y&#xE5F8;Fe montr&#x00E9;es au second panneau &#x00E0; la m&#x00EA;me
+                            &#x00E9;chelle sont liantes dans toute la bande de valence, mais ont des
+                            aspects diff&#x00E9;rents selon que l'on examine Y&#xE5F8;Fe(&#x2191;)
+                            ou bien Y&#xE5F8;Fe(&#x2193;). L'allure de cette derni&#x00E8;re
+                            ressemble surtout &#x00E0; celle des COOP Fe&#xE5F8;Fe(&#x2193;) et
+                            beaucoup moins &#x00E0; celles de Fe&#xE5F8;Fe(&#x2191;), qui sont
+                            davantage engag&#x00E9;es dans la liaison au sein du r&#x00E9;seau de
+                                fer<ce:hsp sp="0.25"/>; donc la liaison Fe&#xE5F8;Fe
+                            s&#x2019;&#x00E9;tablit au moyen des spins majoritaires. De plus, on
+                            peut expliquer le moment magn&#x00E9;tique port&#x00E9; par Y, de signe
+                            oppos&#x00E9; &#x00E0; celui de Fe, comme une cons&#x00E9;quence de
+                            l'hybridation de ses &#x00E9;tats avec ceux du Fe(&#x2193;). Cet aspect
+                            est d'ailleurs appuy&#x00E9; par les COOP des interactions Y&#xE5F8;Y,
+                            qui sont identiques suivant les deux directions de spin pour les hautes
+                            &#x00E9;nergies (&#x00E9;tats <ce:italic>f</ce:italic> vides) et
+                            pr&#x00E9;sentent des poids tr&#x00E8;s diff&#x00E9;rents en dessous de
+                                <ce:italic>E</ce:italic><ce:inf>F</ce:inf> (remarquer le pic
+                            &#x00E0; &#x2212;1<ce:hsp sp="0.25"/>eV). Un tel comportement d'une
+                                &#x00AB;<ce:hsp sp="0.25"/>liaison chimique r&#x00E9;solue en
+                                spin<ce:hsp sp="0.25"/>&#x00BB; cadre bien avec le mod&#x00E8;le de
+                            magn&#x00E9;tisme covalent, comme on l'a discut&#x00E9; plus haut sur
+                            les DOS.</ce:para>
+                    </ce:section>
+                </ce:section>
+            </ce:section>
+            <ce:section>
+                <ce:label>3</ce:label>
+                <ce:section-title>Le syst&#x00E8;me
+                    YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf></ce:section-title>
+                <ce:para>Dans la structure C15 (groupe d'espace
+                        F<ce:italic>d</ce:italic>3&#x0304;<ce:italic>m</ce:italic>) de
+                        YFe<ce:inf>2</ce:inf>, o&#x00F9; Y et Fe occupent respectivement les sites
+                    8a de positions atomiques r&#x00E9;duites (1/8, 1/8, 1/8) et 16d (<math
+                        altimg="si2.gif"><fr shape="case">
+                            <nu>1</nu>
+                            <de>2</de></fr></math>
+                    <math altimg="si3.gif"><fr shape="case">
+                            <nu>1</nu>
+                            <de>2</de></fr></math>
+                    <math altimg="si4.gif"><fr shape="case">
+                            <nu>1</nu>
+                            <de>2</de></fr></math>), trois sites t&#x00E9;tra&#x00E9;driques
+                    s'offrent potentiellement &#x00E0; l'insertion d'hydrog&#x00E8;ne, i.e. Fe4 ou
+                    8b (3/8, 3/8, 3/8), YFe3 ou 32e (9/32 9/32 9/32) et Y2Fe2 ou 96g (5/16, 5/16,
+                    1/8). Les &#x00E9;tudes par diffraction neutronique des diff&#x00E9;rents
+                    hydrures <ce:cross-ref refid="BIB4">[4]</ce:cross-ref> ont montr&#x00E9; que ce
+                    sont les sites 96g qui sont pr&#x00E9;f&#x00E9;rentiellement occup&#x00E9;s par
+                    l'hydrog&#x00E8;ne.</ce:para>
+                <ce:para>Nous examinons dans ce paragraphe les effets magn&#x00E9;tovolumiques de
+                    l'introduction d'hydrog&#x00E8;ne dans la structure en consid&#x00E9;rant la
+                    phase, i.e. YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>. Cette composition a
+                    &#x00E9;t&#x00E9; choisie afin de rendre plus ais&#x00E9;e une analyse de la
+                    liaison chimique au sein de la structure.<ce:vsp sp="1"/><ce:vsp sp="1"
+                            /><ce:italic><ce:bold>Remarque sur la mise au point de la structure pour
+                            les calculs</ce:bold></ce:italic><ce:vsp sp="1"/><ce:vsp sp="1"
+                    /></ce:para>
+                <ce:para>Malgr&#x00E9; la composition riche en H de la phase
+                    consid&#x00E9;r&#x00E9;e
+                        Y<ce:inf>2</ce:inf>Fe<ce:inf>4</ce:inf>H<ce:inf>6</ce:inf>, seulement 6 des
+                    24 positions 96g (i.e. les sites t&#x00E9;tra&#x00E9;driques &#x00AB;<ce:hsp
+                        sp="0.25"/>Y2Fe2<ce:hsp sp="0.25"/>&#x00BB;<ce:hsp sp="0.25"/>) sont
+                    occup&#x00E9;es d'une mani&#x00E8;re statistique dans la structure cubique C15.
+                    Une telle situation &#x00E9;tant tr&#x00E8;s difficile &#x00E0; simuler pour les
+                    calculs, une mise en ordre artificielle a &#x00E9;t&#x00E9;
+                    r&#x00E9;alis&#x00E9;e en appliquant le crit&#x00E8;re g&#x00E9;om&#x00E9;trique
+                    qui impose que la distance entre deux sites interstitiels occup&#x00E9;s par des
+                    atomes d'hydrog&#x00E8;ne soit sup&#x00E9;rieure ou &#x00E9;gale &#x00E0;
+                        3,97<ce:hsp sp="0.25"/>u.a. <ce:bold>(12).</ce:bold> Les distances
+                    H&#xE5F8;(Y,Fe) restent respectivement &#x00E9;quivalentes et montrent une
+                    distance Fe&#xE5F8;H plus courte (<ce:cross-ref refid="TBL1"
+                            ><ce:italic>tableau</ce:italic></ce:cross-ref>). Tout en conservant une
+                    sym&#x00E9;trie cubique, un mode P avec l'identit&#x00E9; (E) pour
+                    op&#x00E9;ration de sym&#x00E9;trie a &#x00E9;t&#x00E9; impos&#x00E9; par la
+                    diff&#x00E9;rentiation des diff&#x00E9;rents sites atomiques pour les
+                    calculs.</ce:para>
+                <ce:para>Seuls les calculs magn&#x00E9;tiques seront pr&#x00E9;sent&#x00E9;s et
+                    discut&#x00E9;s ici.</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>4</ce:label>
+                <ce:section-title>R&#x00E9;sultats et discussions</ce:section-title>
+                <ce:section>
+                    <ce:label>4.1</ce:label>
+                    <ce:section-title>Moments magn&#x00E9;tiques</ce:section-title>
+                    <ce:para>En consid&#x00E9;rant le nombre total d'unit&#x00E9;s formulaires par
+                        maille (<ce:italic>Z</ce:italic>=2), par rapport &#x00E0;
+                            YFe<ce:inf>2</ce:inf><ce:hsp sp="0.25"/>:
+                            (<ce:italic>M</ce:italic>=6,37<ce:hsp sp="0.25"
+                            />&#x03BC;<ce:inf>B</ce:inf>), l'aimantation de
+                            YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>
+                            (<ce:italic>M</ce:italic>=7,55<ce:hsp sp="0.25"
+                            />&#x03BC;<ce:inf>B</ce:inf>) montre une forte augmentation, due
+                        essentiellement au moment port&#x00E9; par les atomes de fer (<ce:cross-ref
+                            refid="TBL1"><ce:italic>tableau</ce:italic></ce:cross-ref>). Cette
+                        derni&#x00E8;re valeur est proche de celle mesur&#x00E9;e
+                        exp&#x00E9;rimentalement (3,7<ce:hsp sp="0.25"
+                            />&#x03BC;<ce:inf>B/f.u.</ce:inf>). Cependant, ce moment d'amplitude
+                        voisine de 2<ce:hsp sp="0.25"/>&#x03BC;<ce:inf>B/Fe</ce:inf> montre un net
+                        abaissement par rapport &#x00E0; celui du fer dans sa structure &#x03B1;
+                        (ferromagn&#x00E9;tique dans sa structure cubique centr&#x00E9;e). En effet,
+                        pour un rayon de la sph&#x00E8;re atomique du fer
+                            <ce:italic>r</ce:italic>(Fe)=2,64<ce:hsp sp="0.25"/>u.a. dans nos
+                        calculs, Fe (&#x03B1;) a un moment de 2,5<ce:hsp sp="0.25"
+                            />&#x03BC;<ce:inf>B</ce:inf>. Le choix de Fe<ce:hsp sp="0.25"
+                        />(&#x03B1;) a ici pour seul objectif de servir
+                        d&#x2019;&#x00E9;l&#x00E9;ment de comparaison suppl&#x00E9;mentaire pour les
+                        effets magn&#x00E9;to-volumiques. On doit en conclure en effet que
+                        l'augmentation volumique n'est pas la seule qui soit pr&#x00E9;dominante
+                        dans la phase hydrur&#x00E9;e et que la liaison chimique contract&#x00E9;e
+                        avec l'hydrog&#x00E8;ne devrait jouer un r&#x00F4;le
+                        pr&#x00E9;pond&#x00E9;rant dans l'abaissement de l'amplitude de
+                        l'aimantation. Malgr&#x00E9; les distances Y&#xE5F8;Y et Y&#xE5F8;Fe, plus
+                        grandes par rapport &#x00E0; leurs valeurs dans YFe<ce:inf>2</ce:inf>,
+                        l'yttrium a un moment inf&#x00E9;rieur en valeur absolue &#x00E0; celui dans
+                        l'alliage pur. L'explication pourrait se trouver &#x00E9;galement dans la
+                        liaison chimique.</ce:para>
+                    <ce:para>L'augmentation du moment magn&#x00E9;tique moyen du fer conduit
+                        &#x00E0; un accroissement de la valeur absolue du terme contact de Fermi du
+                        champ hyperfin &#x00E0; &#x2212;232<ce:hsp sp="0.25"/>kGauss.</ce:para>
+                    <ce:para>Afin d'observer les effets volumiques et de liaison chimique, nous
+                        examinons dans les sections suivantes les DOS et les COOP de
+                            YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf>.</ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>4.2</ce:label>
+                    <ce:section-title>Densit&#x00E9;s d&#x2019;&#x00E9;tats (DOS)</ce:section-title>
+                    <ce:para>La <ce:cross-ref refid="FIG4"><ce:italic>figure
+                            4a</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG4"/>
+                        pr&#x00E9;sente les r&#x00E9;sultats magn&#x00E9;tiques dans
+                            YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf><ce:hsp sp="0.25"/> pour les DOS
+                        partielles projet&#x00E9;es sur les sites respectifs des trois sortes
+                        d'atomes dans la maille (i.e. pour 2Y, 4Fe, 6H). Tout comme dans l'alliage
+                        non hydrur&#x00E9;, et en accord avec l'analyse pr&#x00E9;liminaire des
+                        moments magn&#x00E9;tiques, la polarisation affecte principalement les
+                        &#x00E9;tats du fer et beaucoup moins ceux de l'yttrium. Ceci est
+                        illustr&#x00E9; par un d&#x00E9;placement des bandes (&#x2191;) par rapport
+                        &#x00E0; celles (&#x2193;) nettement plus important que celui observ&#x00E9;
+                        sur la <ce:cross-ref refid="FIG2"><ce:italic>figure
+                            2</ce:italic></ce:cross-ref>. Compte tenu de l'aimantation plus
+                        importante du fer, l&#x2019;&#x00E9;clatement d&#x2019;&#x00E9;change est
+                        plus grand ici. L'effet r&#x00E9;sultant est que le niveau de Fermi se
+                        trouve dans un minimum de DOS de la bande (&#x2191;), signalant un plus
+                        grand remplissage de la bande 3d par rapport &#x00E0; l'alliage pur<ce:hsp
+                            sp="0.25"/>: Le nombre d&#x2019;&#x00E9;lectrons d passe de 4,2 &#x00E0;
+                        4,7 &#x00E9;lectrons. En revanche, pour la bande d(&#x2193;), le remplissage
+                        passe de 2,5 &#x00E0; 2,2 &#x00E9;lectrons, la diff&#x00E9;rence
+                        correspondant &#x00E0; des &#x00E9;lectrons promus aux &#x00E9;tats de spins
+                        majoritaires.</ce:para>
+                    <ce:para>Une diff&#x00E9;rence suppl&#x00E9;mentaire caract&#x00E9;risant les
+                        DOS du syst&#x00E8;me hydrog&#x00E9;n&#x00E9; par rapport &#x00E0; l'alliage
+                        pur est celle de la dissipation du caract&#x00E8;re de bande large
+                        observ&#x00E9; dans le cas de l'alliage pur. En effet, l'observation de
+                        l'aspect plus localis&#x00E9; des DOS est plus net pour les &#x00E9;tats du
+                        fer que pour ceux de l'yttrium. Ceci est d&#x00FB; en partie &#x00E0; un
+                        abaissement de sym&#x00E9;trie par l'insertion d'hydrog&#x00E8;ne dans le
+                        cadre de la mise au point de nos calculs, mais surtout &#x00E0;
+                        l'interaction des atomes m&#x00E9;talliques avec les atomes
+                        d'hydrog&#x00E8;ne H. Les DOS de ceux-ci s'observent &#x00E0; basse
+                        &#x00E9;nergie, entre &#x2212;8, et &#x2212;4<ce:hsp sp="0.25"/>eV), ce qui
+                        laisse sugg&#x00E9;rer que la liaison chimique H&#xE5F8;(Y,Fe) se produit
+                        dans ce domaine &#x00E9;nerg&#x00E9;tique. Ainsi, l'abaissement en
+                        &#x00E9;nergie des bandes (&#x2191;) et (&#x2193;) est aussi reli&#x00E9;
+                        &#x00E0; la liaison chimique entre l'hydrog&#x00E8;ne et les &#x00E9;tats
+                            <ce:italic>d</ce:italic> des atomes de m&#x00E9;tal (Y et Fe). L'analyse
+                        des COOP partielles permettra d'expliciter ces observations.</ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>4.3</ce:label>
+                    <ce:section-title>COOP</ce:section-title>
+                    <ce:para>La <ce:cross-ref refid="FIG4"><ce:italic>figure
+                            4b</ce:italic></ce:cross-ref> pr&#x00E9;sente les r&#x00E9;sultats
+                        magn&#x00E9;tiques dans YFe<ce:inf>2</ce:inf>H<ce:inf>3</ce:inf> pour les
+                        COOP partielles projet&#x00E9;es pour les interactions Y&#xE5F8;H et
+                        Fe&#xE5F8;H, les interactions m&#x00E9;tal&#x2013;m&#x00E9;tal &#x00E9;tant
+                        semblables &#x00E0; celles d&#x00E9;crites dans l'alliage pur. Clairement,
+                        le second type d'interaction, i.e. Fe&#xE5F8;H, est pr&#x00E9;dominant pour
+                        les &#x00E9;tats liants ainsi qu'antiliants. Ceci ne provient pas uniquement
+                        d'un nombre d'atomes de fer deux fois plus important que celui d'yttrium,
+                        les DOS ne montrant pas simplement un doublement en passant de l'un &#x00E0;
+                        l'autre, mais d'une interaction plus forte entre Fe et H, en partie
+                        expliqu&#x00E9;e par une liaison Fe&#xE5F8;H plus courte que Y&#xE5F8;H
+                            (<ce:cross-ref refid="TBL1"
+                            ><ce:italic>tableau</ce:italic></ce:cross-ref>). Il est
+                        int&#x00E9;ressant de noter dans ce contexte que, par ailleurs, il n'existe
+                        pas de phase stable entre Fe et H.</ce:para>
+                    <ce:para>Contrairement &#x00E0; la liaison Y&#xE5F8;Fe liante dans la bande de
+                        valence en dessous de <ce:italic>E</ce:italic><ce:inf>F</ce:inf> dans
+                            YFe<ce:inf>2</ce:inf>, la liaison H&#xE5F8;(Y,Fe) est pour moiti&#x00E9;
+                        liante et pour moiti&#x00E9; antiliante dans le compos&#x00E9; contenant
+                        l'hydrog&#x00E8;ne. Il est int&#x00E9;ressant de noter que ce sont les
+                        &#x00E9;tats &#x00E0; majorit&#x00E9; de spins (&#x2191;) qui sont liants
+                        pour Fe&#xE5F8;H (trait plein) &#x2014; sauf juste en dessous de
+                            <ce:italic>E</ce:italic><ce:inf>F</ce:inf> o&#x00F9; les &#x00E9;tats de
+                        Fe sont engag&#x00E9;s dans la liaison Fe&#xE5F8;Fe (<ce:cross-ref
+                            refid="FIG3"><ce:italic>figure 3a</ce:italic></ce:cross-ref>) &#x2014;
+                        et que ceux de minorit&#x00E9; de spin (&#x2193;) sont antiliants pour les
+                        deux types d'interactions. Ainsi a-t-on une liaison chimique r&#x00E9;solue
+                        en spin comme dans l'alliage pur.</ce:para>
+                </ce:section>
+            </ce:section>
+            <ce:section>
+                <ce:label>5</ce:label>
+                <ce:section-title>Conclusion et perspectives</ce:section-title>
+                <ce:para>La premi&#x00E8;re partie de ce travail a port&#x00E9; sur une &#x00E9;tude
+                    compl&#x00E8;te de la structure &#x00E9;lectronique et magn&#x00E9;tique et des
+                    propri&#x00E9;t&#x00E9;s de liaison chimique dans l'alliage de Laves
+                        YFe<ce:inf>2</ce:inf>. En plus de l'accord avec les observations
+                    exp&#x00E9;rimentales, il a &#x00E9;t&#x00E9; propos&#x00E9; une approche de la
+                    liaison chimique r&#x00E9;solue en spin, soulignant les r&#x00F4;les
+                    dissym&#x00E9;triques des &#x00E9;lectrons appartenant aux deux canaux de spins.
+                    L'introduction d'hydrog&#x00E8;ne a &#x00E9;t&#x00E9; simul&#x00E9;e afin
+                    d'expliquer le r&#x00F4;le de celui-ci dans le magn&#x00E9;tisme et la liaison
+                    chimique. Il a &#x00E9;t&#x00E9; montr&#x00E9; notamment que l'expansion de la
+                    maille de l'alliage devant conduire &#x00E0; une augmentation de l'aimantation
+                    &#x2014; essentiellement le fer &#x2014; est contrecarr&#x00E9;e par la liaison
+                    chimique contract&#x00E9;e avec les atomes du r&#x00E9;seau
+                    m&#x00E9;tallique.</ce:para>
+                <ce:para>Cette recherche sera &#x00E9;tendue aux structures d'hydrures plus
+                    complexes, dues notamment &#x00E0; l'abaissement de sym&#x00E9;trie li&#x00E9;
+                    &#x00E0; la mise en ordre de l'hydrog&#x00E8;ne. On pourra alors avoir un
+                    acc&#x00E8;s plus quantitatif aux aspects de <ce:italic>liaison
+                        chimique</ce:italic> par rapport &#x00E0; ceux dans l'alliage pur.</ce:para>
+            </ce:section>
+        </ce:sections>
+    </body>
+    <tail>
+        <ce:bibliography>
+            <ce:section-title>R&#x00E9;f&#x00E9;rences</ce:section-title>
+            <ce:bibliography-sec>
+                <ce:bib-reference id="BIB1">
+                    <ce:label>[1]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>F.</ce:given-name>
+                                    <ce:surname>Laves</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:edited-book>
+                                <sb:title>
+                                    <sb:maintitle>Theory of Alloy Phases</sb:maintitle>
+                                </sb:title>
+                                <sb:date>1956</sb:date>
 
-<sb:publisher>
-<sb:name>American Society for Metals</sb:name>
-<sb:location>Cleveland, OH</sb:location></sb:publisher></sb:edited-book><sb:pages>
-<sb:first-page>124</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
-<ce:bib-reference id="BIB2">
-<ce:label>[2]</ce:label>
-<sb:reference>
-<sb:contribution>
-<sb:authors>
-<sb:author><ce:given-name>A.M.</ce:given-name><ce:surname>Boring</ce:surname></sb:author><sb:author><ce:given-name>R.C.</ce:given-name><ce:surname>Albers</ce:surname></sb:author><sb:author><ce:given-name>G.H</ce:given-name><ce:surname>Schadler</ce:surname></sb:author><sb:author><ce:given-name>A.C.</ce:given-name><ce:surname>Lawso</ce:surname></sb:author><sb:author><ce:given-name>P.</ce:given-name><ce:surname>Weinberger</ce:surname></sb:author><sb:author><ce:given-name>N.E.</ce:given-name><ce:surname>Christensen</ce:surname></sb:author></sb:authors></sb:contribution>
-<sb:host>
-<sb:issue>
-<sb:series>
-<sb:title><sb:maintitle>Phys. Rev. B</sb:maintitle></sb:title>
-<sb:volume-nr>36</sb:volume-nr></sb:series>
-<sb:date>1987</sb:date>
-</sb:issue><sb:pages>
-<sb:first-page>5507</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
-<ce:bib-reference id="BIB3">
-<ce:label>[3]</ce:label>
-<sb:reference>
-<sb:contribution>
-<sb:authors>
-<sb:author><ce:given-name>V.</ce:given-name><ce:surname>Paul-Boncour</ce:surname></sb:author><sb:author><ce:given-name>L.</ce:given-name><ce:surname>Gu&#x00E9;n&#x00E9;e</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Latroche</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Escorne</ce:surname></sb:author><sb:author><ce:given-name>A.</ce:given-name><ce:surname>Percheron-Guegan</ce:surname></sb:author><sb:author><ce:given-name>C.</ce:given-name><ce:surname>Reichl</ce:surname></sb:author><sb:author><ce:given-name>G.</ce:given-name><ce:surname>Wiesinger</ce:surname></sb:author></sb:authors></sb:contribution>
-<sb:host>
-<sb:issue>
-<sb:series>
-<sb:title><sb:maintitle>J. Alloys and Compounds</sb:maintitle></sb:title>
-<sb:volume-nr>253&#x2013;254</sb:volume-nr></sb:series>
-<sb:date>1997</sb:date>
-</sb:issue><sb:pages>
-<sb:first-page>272</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
-<ce:bib-reference id="BIB4">
-<ce:label>[4]</ce:label>
-<sb:reference>
-<sb:contribution>
-<sb:authors>
-<sb:author><ce:given-name>V.</ce:given-name><ce:surname>Paul-Boncour</ce:surname></sb:author><sb:author><ce:given-name>L.</ce:given-name><ce:surname>Gu&#x00E9;n&#x00E9;e</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Latroche</ce:surname></sb:author><sb:author><ce:given-name>A.</ce:given-name><ce:surname>Percheron-Guegan</ce:surname></sb:author><sb:author><ce:given-name>B.</ce:given-name><ce:surname>Ouladdiaf</ce:surname></sb:author><sb:author><ce:given-name>F.</ce:given-name><ce:surname>Bour&#x00E9;e-Vigneron</ce:surname></sb:author></sb:authors></sb:contribution>
-<sb:host>
-<sb:issue>
-<sb:series>
-<sb:title><sb:maintitle>J. Solid State Chemistry</sb:maintitle></sb:title>
-<sb:volume-nr>142</sb:volume-nr></sb:series>
-<sb:date>1999</sb:date>
-</sb:issue><sb:pages>
-<sb:first-page>120</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
-<ce:bib-reference id="BIB5">
-<ce:label>[5]</ce:label>
-<ce:other-ref><ce:textref>Kohn W., Vashishta P., in : Lundquist S., March N.H. (&#x00E9;ds), Theory of the inhomogeneous electron gas, Plenum Press, New York, 1983, pp. 79&#x2013;147.</ce:textref></ce:other-ref></ce:bib-reference>
-<ce:bib-reference id="BIB6">
-<ce:label>[6]</ce:label>
-<ce:other-ref><ce:textref>von Barth J., Hedin D., J. Phys. C 5 (1972) 1629<ce:hsp sp="0.25" />; Janak J.F., Solid State Commun. 25 (1978) 53.</ce:textref></ce:other-ref></ce:bib-reference>
-<ce:bib-reference id="BIB7">
-<ce:label>[7]</ce:label>
-<sb:reference>
-<sb:contribution>
-<sb:authors>
-<sb:author><ce:given-name>A.R.</ce:given-name><ce:surname>Williams</ce:surname></sb:author><sb:author><ce:given-name>J.</ce:given-name><ce:surname>K&#x00FC;bler</ce:surname></sb:author><sb:author><ce:given-name>C.D.</ce:given-name><ce:surname>Gelatt</ce:surname><ce:suffix>Jr.</ce:suffix></sb:author></sb:authors></sb:contribution>
-<sb:host>
-<sb:issue>
-<sb:series>
-<sb:title><sb:maintitle>Phys. Rev.</sb:maintitle></sb:title>
-<sb:volume-nr>B19</sb:volume-nr></sb:series>
-<sb:date>1979</sb:date>
-</sb:issue><sb:pages>
-<sb:first-page>6094</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
-<ce:bib-reference id="BIB8">
-<ce:label>[8]</ce:label>
-<ce:other-ref><ce:textref>Eyert V. Matar S.F. R&#x00E9;sultats non publi&#x00E9;s (1994)<ce:hsp sp="0.25" />; Eyert V., Electronic structure calculations for crystalline materials, in<ce:hsp sp="0.25" />: Springborg M. (&#x00E9;d.), Density functional methods: Applications in Chemistry and Materials science, Wiley, Chichester, 1977, 233&#x2013;304; Janak J.F., Phys. Rev. 16 (1977) 255.</ce:textref></ce:other-ref></ce:bib-reference>
-<ce:bib-reference id="BIB9">
-<ce:label>[9]</ce:label>
-<sb:reference>
-<sb:contribution>
-<sb:authors>
-<sb:author><ce:given-name>K.</ce:given-name><ce:surname>Kanematsu</ce:surname></sb:author></sb:authors></sb:contribution>
-<sb:host>
-<sb:issue>
-<sb:series>
-<sb:title><sb:maintitle>J. Appl. Phys.</sb:maintitle></sb:title>
-<sb:volume-nr>75</sb:volume-nr></sb:series>
-<sb:date>1994</sb:date>
-</sb:issue><sb:pages>
-<sb:first-page>7105</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
-<ce:bib-reference id="BIB10">
-<ce:label>[10]</ce:label>
-<sb:reference>
-<sb:contribution>
-<sb:authors>
-<sb:author><ce:given-name>P.</ce:given-name><ce:surname>Mohn</ce:surname></sb:author><sb:author><ce:given-name>K.</ce:given-name><ce:surname>Schwarz</ce:surname></sb:author></sb:authors></sb:contribution>
-<sb:host>
-<sb:issue>
-<sb:series>
-<sb:title><sb:maintitle>Physica B</sb:maintitle></sb:title>
-<sb:volume-nr>130</sb:volume-nr></sb:series>
-<sb:date>1985</sb:date>
-</sb:issue><sb:pages>
-<sb:first-page>26</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
-<ce:bib-reference id="BIB11">
-<ce:label>[11]</ce:label>
-<sb:reference>
-<sb:contribution>
-<sb:authors>
-<sb:author><ce:given-name>D.G.</ce:given-name><ce:surname>Westlake</ce:surname></sb:author></sb:authors></sb:contribution>
-<sb:host>
-<sb:issue>
-<sb:series>
-<sb:title><sb:maintitle>J. Less Common Met.</sb:maintitle></sb:title>
-<sb:volume-nr>75</sb:volume-nr></sb:series>
-<sb:date>1980</sb:date>
-</sb:issue><sb:pages>
-<sb:first-page>177</sb:first-page></sb:pages></sb:host></sb:reference></ce:bib-reference></ce:bibliography-sec></ce:bibliography></tail></converted-article>
+                                <sb:publisher>
+                                    <sb:name>American Society for Metals</sb:name>
+                                    <sb:location>Cleveland, OH</sb:location>
+                                </sb:publisher>
+                            </sb:edited-book>
+                            <sb:pages>
+                                <sb:first-page>124</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB2">
+                    <ce:label>[2]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A.M.</ce:given-name>
+                                    <ce:surname>Boring</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R.C.</ce:given-name>
+                                    <ce:surname>Albers</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G.H</ce:given-name>
+                                    <ce:surname>Schadler</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A.C.</ce:given-name>
+                                    <ce:surname>Lawso</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P.</ce:given-name>
+                                    <ce:surname>Weinberger</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>N.E.</ce:given-name>
+                                    <ce:surname>Christensen</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Phys. Rev. B</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>36</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1987</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>5507</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB3">
+                    <ce:label>[3]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>V.</ce:given-name>
+                                    <ce:surname>Paul-Boncour</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>L.</ce:given-name>
+                                    <ce:surname>Gu&#x00E9;n&#x00E9;e</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M.</ce:given-name>
+                                    <ce:surname>Latroche</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M.</ce:given-name>
+                                    <ce:surname>Escorne</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A.</ce:given-name>
+                                    <ce:surname>Percheron-Guegan</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>C.</ce:given-name>
+                                    <ce:surname>Reichl</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G.</ce:given-name>
+                                    <ce:surname>Wiesinger</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Alloys and Compounds</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>253&#x2013;254</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1997</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>272</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB4">
+                    <ce:label>[4]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>V.</ce:given-name>
+                                    <ce:surname>Paul-Boncour</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>L.</ce:given-name>
+                                    <ce:surname>Gu&#x00E9;n&#x00E9;e</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M.</ce:given-name>
+                                    <ce:surname>Latroche</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A.</ce:given-name>
+                                    <ce:surname>Percheron-Guegan</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>B.</ce:given-name>
+                                    <ce:surname>Ouladdiaf</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>F.</ce:given-name>
+                                    <ce:surname>Bour&#x00E9;e-Vigneron</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Solid State Chemistry</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>142</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1999</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>120</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB5">
+                    <ce:label>[5]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Kohn W., Vashishta P., in : Lundquist S., March N.H.
+                            (&#x00E9;ds), Theory of the inhomogeneous electron gas, Plenum Press,
+                            New York, 1983, pp. 79&#x2013;147.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB6">
+                    <ce:label>[6]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>von Barth J., Hedin D., J. Phys. C 5 (1972) 1629<ce:hsp
+                                sp="0.25"/>; Janak J.F., Solid State Commun. 25 (1978)
+                            53.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB7">
+                    <ce:label>[7]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A.R.</ce:given-name>
+                                    <ce:surname>Williams</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.</ce:given-name>
+                                    <ce:surname>K&#x00FC;bler</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>C.D.</ce:given-name>
+                                    <ce:surname>Gelatt</ce:surname>
+                                    <ce:suffix>Jr.</ce:suffix>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Phys. Rev.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>B19</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1979</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>6094</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB8">
+                    <ce:label>[8]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Eyert V. Matar S.F. R&#x00E9;sultats non publi&#x00E9;s
+                                (1994)<ce:hsp sp="0.25"/>; Eyert V., Electronic structure
+                            calculations for crystalline materials, in<ce:hsp sp="0.25"/>:
+                            Springborg M. (&#x00E9;d.), Density functional methods: Applications in
+                            Chemistry and Materials science, Wiley, Chichester, 1977,
+                            233&#x2013;304; Janak J.F., Phys. Rev. 16 (1977) 255.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB9">
+                    <ce:label>[9]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>K.</ce:given-name>
+                                    <ce:surname>Kanematsu</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Appl. Phys.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>75</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1994</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>7105</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB10">
+                    <ce:label>[10]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>P.</ce:given-name>
+                                    <ce:surname>Mohn</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>K.</ce:given-name>
+                                    <ce:surname>Schwarz</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Physica B</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>130</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1985</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>26</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB11">
+                    <ce:label>[11]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>D.G.</ce:given-name>
+                                    <ce:surname>Westlake</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Less Common Met.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>75</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1980</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>177</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+            </ce:bibliography-sec>
+        </ce:bibliography>
+    </tail>
+</converted-article>
