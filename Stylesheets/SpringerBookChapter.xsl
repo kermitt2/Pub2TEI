@@ -76,11 +76,11 @@
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="Book/descendant::Chapter/ChapterHeader/AuthorGroup/Author"/>
                 <xsl:apply-templates
-                    select="Book/descendant::Chapter/ChapterHeader//AuthorGroup/InstitutionalAuthor"/>
-                <!-- Title information related to the chapter goes here -->
+                    select="Book/descendant::Chapter/ChapterHeader//AuthorGroup/InstitutionalAuthor"/><!-- Title information related to the chapter goes here -->
                 <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterTitle"/>
             </analytic>
             <monogr>
+                <xsl:apply-templates select="Book//BookHeader/AuthorGroup/Author"/>
                 <xsl:apply-templates select="Book/BookInfo/BookTitle"/>
                 <xsl:apply-templates select="Book/BookInfo/BookSubTitle"/>
                 <xsl:apply-templates select="Book/BookInfo/BookID"/>
