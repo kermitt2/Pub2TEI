@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
@@ -13,7 +14,8 @@
     <!-- Sage: keywords, keyword -->
     <!-- Elsevier: ce:keyword -->
 
-    <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords">
+    <xsl:template
+        match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords | BookSubjectGroup">
         <textClass>
             <keywords>
                 <list>
@@ -24,6 +26,17 @@
     </xsl:template>
 
     <xsl:template match="keyword | Keyword | ce:keyword | kwd">
+        <item>
+            <term>
+                <xsl:apply-templates/>
+            </term>
+        </item>
+    </xsl:template>
+
+    <xsl:template match="BookSubject">
+        <label>
+            <xsl:value-of select="@Code"/>
+        </label>
         <item>
             <term>
                 <xsl:apply-templates/>

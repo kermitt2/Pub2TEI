@@ -56,6 +56,24 @@
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <list>
+                        <label>G</label>
+                        <item><term>Geosciences</term></item>
+                        <label>G17002</label>
+                        <item><term>Geology</term></item>
+                        <label>G17040</label>
+                        <item><term>Structural Geology</term></item>
+                        <label>G18009</label>
+                        <item><term>Geophysics/Geodesy</term></item>
+                        <label>G24009</label>
+                        <item><term>Mineralogy</term></item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
     </teiHeader>
     <text>
         <front/>
