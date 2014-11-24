@@ -7,17 +7,17 @@
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
-    <xsl:template match="/Publisher[count(Series/Book/Part/Chapter)=1]">
+    <xsl:template match="/Publisher[count(Series/Book/descendant::Chapter)=1]">
         <TEI>
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
                         <xsl:apply-templates
-                            select="Series/Book/Part/Chapter/ChapterInfo/ChapterTitle"/>
+                            select="Series/Book/descendant::Chapter/ChapterInfo/ChapterTitle"/>
                     </titleStmt>
                     <publicationStmt>
                         <xsl:apply-templates
-                            select="Series/Book/Part/Chapter/ChapterInfo/ChapterCopyright"/>
+                            select="Series/Book/descendant::Chapter/ChapterInfo/ChapterCopyright"/>
                         <xsl:if test="//ArticleGrants/BodyPDFGrant[string(@Grant)='OpenAccess']">
                             <availability status="OpenAccess">
                                 <p>Open Access</p>
@@ -63,7 +63,7 @@
             <text>
                 <front>
                     <xsl:apply-templates
-                        select="Series/Book/Part/Chapter/ChapterHeader/Abstract"/>
+                        select="Series/Book/descendant::Chapter/ChapterHeader/Abstract"/>
                 </front>
             </text>
         </TEI>
@@ -74,11 +74,11 @@
         <biblStruct>
             <analytic>
                 <!-- All authors are included here -->
-                <xsl:apply-templates select="Book/Part/Chapter/ChapterHeader/AuthorGroup/Author"/>
+                <xsl:apply-templates select="Book/descendant::Chapter/ChapterHeader/AuthorGroup/Author"/>
                 <xsl:apply-templates
-                    select="Book/Part/Chapter/ChapterHeader//AuthorGroup/InstitutionalAuthor"/>
+                    select="Book/descendant::Chapter/ChapterHeader//AuthorGroup/InstitutionalAuthor"/>
                 <!-- Title information related to the chapter goes here -->
-                <xsl:apply-templates select="Book/Part/Chapter/ChapterInfo/ChapterTitle"/>
+                <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterTitle"/>
             </analytic>
             <monogr>
                 <xsl:apply-templates select="Book/BookInfo/BookTitle"/>
@@ -93,17 +93,18 @@
                             select="Volume/Issue/Article/ArticleInfo/ArticleHistory/OnlineDate"
                             mode="inImprint"/>
                     </xsl:if>
-                    <xsl:apply-templates select="Book/Part/Chapter/ChapterInfo/ChapterFirstPage"/>
-                    <xsl:apply-templates select="Book/Part/Chapter/ChapterInfo/ChapterLastPage"/>
-
+                    <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterFirstPage"/>
+                    <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterLastPage"/>
 
                     <xsl:apply-templates select="Volume/VolumeInfo"/>
                     <xsl:apply-templates select="Volume/Issue/IssueInfo/IssueIDStart"/>
                     <xsl:apply-templates select="Volume/Issue/IssueInfo/IssueIDEnd"/>
+                    <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterID"/>
                 </imprint>
             </monogr>
             <series>
                 <xsl:apply-templates select="SeriesHeader/AuthorGroup/Author"/>
+                <xsl:apply-templates select="SeriesHeader/EditorGroup/Editor"/>
                 <xsl:apply-templates select="SeriesInfo/SeriesTitle"/>
                 <xsl:apply-templates select="SeriesInfo/SeriesPrintISSN"/>
                 <xsl:apply-templates select="SeriesInfo/SeriesElectronicISSN"/>
@@ -113,8 +114,7 @@
 
 
             <xsl:apply-templates select="Volume/Issue/Article/@ID"/>
-            <xsl:apply-templates select="Book/Part/Chapter/ChapterInfo/ChapterDOI"/>
-            <xsl:apply-templates select="Book/Part/Chapter/ChapterInfo/ChapterID"/>
+            <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterDOI"/>
 
 
 

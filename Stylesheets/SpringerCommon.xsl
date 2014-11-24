@@ -169,6 +169,17 @@
             </xsl:call-template>
         </author>
     </xsl:template>
+    
+    <!-- Same for Editors -->
+    
+    <xsl:template match="EditorGroup/Editor">
+        <editor>
+            <xsl:apply-templates/>
+            <xsl:call-template name="createSpringerAffiliations">
+                <xsl:with-param name="restAff" select="@AffiliationIDS"/>
+            </xsl:call-template>
+        </editor>
+    </xsl:template>
 
     <xsl:template name="createSpringerAffiliations">
         <xsl:param name="restAff"/>
@@ -186,7 +197,7 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="AuthorName">
+    <xsl:template match="AuthorName | EditorName">
         <persName>
             <xsl:apply-templates/>
         </persName>

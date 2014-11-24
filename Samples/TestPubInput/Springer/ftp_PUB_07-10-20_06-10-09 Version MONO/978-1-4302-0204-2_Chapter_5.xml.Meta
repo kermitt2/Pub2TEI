@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+<PublisherInfo>
+<PublisherName>Apress</PublisherName>
+<PublisherLocation>Berkeley, CA</PublisherLocation>
+</PublisherInfo>
+<Book Language="En">
+<BookInfo Language="En" TocLevels="0" NumberingStyle="ChapterOnly" ContainsESM="No" BookProductType="Professional book" MediaType="eBook">
+<BookID>978-1-4302-0204-2</BookID>
+<BookTitle>Beginning Information Cards and Cardspace</BookTitle>
+<BookSubTitle>From Novice to Professional</BookSubTitle>
+
+<BookDOI>10.1007/978-1-4302-0204-2</BookDOI>
+<BookTitleID>142935</BookTitleID>
+<BookPrintISBN>978-1-59059-807-8</BookPrintISBN>
+<BookElectronicISBN>978-1-4302-0204-2</BookElectronicISBN>
+<BookChapterCount>15</BookChapterCount>
+<BookCopyright>
+<CopyrightHolderName>Marc Mercuri</CopyrightHolderName>
+<CopyrightYear>2007</CopyrightYear>
+</BookCopyright>
+      <BookSubjectGroup>
+        <BookSubject Type="Primary" Code="I">Computer Science</BookSubject>
+        <BookSubject Type="Secondary" Priority="1" Code="I14010">Programming Techniques</BookSubject>
+      </BookSubjectGroup>
+</BookInfo>
+<BookHeader>
+<EditorGroup>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>Marc</GivenName>
+<FamilyName>Mercuri</FamilyName>
+</EditorName>
+</Editor>
+</EditorGroup>
+</BookHeader>
+<Chapter ID="Chap5" Language="En">
+<ChapterInfo ChapterType="OriginalPaper" NumberingStyle="ChapterOnly" Language="En" TocLevels="0" ContainsESM="No">
+<ChapterID>5</ChapterID>
+<ChapterNumber>Chapter 5</ChapterNumber>
+<ChapterDOI>10.1007/978-1-4302-0204-2_5</ChapterDOI>
+<ChapterSequenceNumber>5</ChapterSequenceNumber>
+<ChapterTitle Language="En">Introduction to Adding CardSpace to Your Web Applications</ChapterTitle>
+<ChapterFirstPage>69</ChapterFirstPage>
+<ChapterLastPage>87</ChapterLastPage>
+<ChapterCopyright>
+<CopyrightHolderName>Marc Mercuri</CopyrightHolderName>
+<CopyrightYear>2007</CopyrightYear>
+</ChapterCopyright>
+<ChapterGrants Type="Regular"><MetadataGrant Grant="OpenAccess"/><AbstractGrant Grant="OpenAccess"/><BodyPDFGrant Grant="Restricted"/><BodyHTMLGrant Grant="Restricted"/><BibliographyGrant Grant="Restricted"/><ESMGrant Grant="Restricted"/></ChapterGrants><ChapterContext>
+<BookID>978-1-4302-0204-2</BookID>
+<BookTitle>Beginning Information Cards and Cardspace</BookTitle>
+</ChapterContext>
+</ChapterInfo>
+<ChapterHeader>
+<Abstract ID="Abs1" Language="En">
+<Heading>Abstract</Heading>
+<Para>Earlier in the book, you created your own personal card and accessed third-party sites that use CardSpace and information cards. By the end of this chapter, you’ll have working code that can serve as an example of how to accept CardSpace cards on your own site.</Para>
+</Abstract>
+</ChapterHeader>
+<NoBody></NoBody>
+</Chapter>
+</Book>
+</Publisher>

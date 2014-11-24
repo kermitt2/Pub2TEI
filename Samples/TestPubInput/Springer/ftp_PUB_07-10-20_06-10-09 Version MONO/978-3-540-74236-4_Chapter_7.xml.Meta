@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+<PublisherInfo>
+<PublisherName>Springer Berlin Heidelberg</PublisherName>
+<PublisherLocation>Berlin, Heidelberg</PublisherLocation>
+</PublisherInfo>
+<Series>
+<SeriesInfo TocLevels="0" SeriesType="Series">
+<SeriesID>772</SeriesID>
+<SeriesPrintISSN>0930-0317</SeriesPrintISSN>
+<SeriesTitle Language="En">Lecture Notes in Earth Sciences</SeriesTitle>
+</SeriesInfo>
+<SeriesHeader>
+<EditorGroup>
+<Editor AffiliationIDS="Aff1">
+<EditorName DisplayOrder="Western">
+<GivenName>S.</GivenName>
+<FamilyName>Bhattacharji</FamilyName>
+</EditorName>
+</Editor>
+<Editor AffiliationIDS="Aff2">
+<EditorName DisplayOrder="Western">
+<GivenName>H.</GivenName>
+<GivenName>J.</GivenName>
+<FamilyName>Neugebauer</FamilyName>
+</EditorName>
+</Editor>
+<Editor AffiliationIDS="Aff3">
+<EditorName DisplayOrder="Western">
+<GivenName>J.</GivenName>
+<FamilyName>Reitner</FamilyName>
+</EditorName>
+</Editor>
+<Editor AffiliationIDS="Aff4">
+<EditorName DisplayOrder="Western">
+<GivenName>K.</GivenName>
+<FamilyName>Stüwe</FamilyName>
+</EditorName>
+</Editor>
+<Editor AffiliationIDS="Aff5">
+<EditorName DisplayOrder="Western">
+<GivenName>G.</GivenName>
+<GivenName>M.</GivenName>
+<FamilyName>Friedman</FamilyName>
+</EditorName>
+</Editor>
+<Editor AffiliationIDS="Aff6">
+<EditorName DisplayOrder="Western">
+<GivenName>A.</GivenName>
+<FamilyName>Seilacher</FamilyName>
+</EditorName>
+</Editor>
+<Affiliation ID="Aff1">
+<OrgAddress>
+<City>Brooklyn</City>
+</OrgAddress>
+</Affiliation>
+<Affiliation ID="Aff2">
+<OrgAddress>
+<City>Bonn</City>
+</OrgAddress>
+</Affiliation>
+<Affiliation ID="Aff3">
+<OrgAddress>
+<City>Góttingen</City>
+</OrgAddress>
+</Affiliation>
+<Affiliation ID="Aff4">
+<OrgAddress>
+<City>Graz</City>
+</OrgAddress>
+</Affiliation>
+<Affiliation ID="Aff5">
+<OrgAddress>
+<City>Brooklyn and Troy</City>
+</OrgAddress>
+</Affiliation>
+<Affiliation ID="Aff6">
+<OrgAddress>
+<City>Tübingen and Yale</City>
+</OrgAddress>
+</Affiliation>
+</EditorGroup>
+</SeriesHeader>
+<Book Language="En">
+<BookInfo Language="En" TocLevels="0" NumberingStyle="ChapterContent" ContainsESM="No" BookProductType="Monograph" MediaType="eBook">
+<BookID>978-3-540-74236-4</BookID>
+<BookTitle>Fossil Earthquakes: The Formation and Preservation of Pseudotachylytes</BookTitle>
+<BookVolumeNumber>111</BookVolumeNumber>
+
+<BookSequenceNumber>111</BookSequenceNumber>
+<BookDOI>10.1007/978-3-540-74236-4</BookDOI>
+<BookTitleID>149307</BookTitleID>
+<BookPrintISBN>978-3-540-74235-7</BookPrintISBN>
+<BookElectronicISBN>978-3-540-74236-4</BookElectronicISBN>
+<BookChapterCount>12</BookChapterCount>
+<BookCopyright>
+<CopyrightHolderName>Springer-Verlag Berlin Heidelberg</CopyrightHolderName>
+<CopyrightYear>2008</CopyrightYear>
+</BookCopyright>
+      <BookSubjectGroup>
+        <BookSubject Type="Primary" Code="G">Geosciences</BookSubject>
+        <BookSubject Type="Secondary" Priority="1" Code="G17002">Geology</BookSubject>
+        <BookSubject Type="Secondary" Priority="2" Code="G17040">Structural Geology</BookSubject>
+        <BookSubject Type="Secondary" Priority="3" Code="G18009">Geophysics/Geodesy</BookSubject>
+        <BookSubject Type="Secondary" Priority="4" Code="G24009">Mineralogy</BookSubject>
+      </BookSubjectGroup>
+</BookInfo>
+<BookHeader>
+<AuthorGroup>
+<Author AffiliationIDS="Aff7">
+<AuthorName DisplayOrder="Western">
+<GivenName>Aiming</GivenName>
+<FamilyName>Lin</FamilyName>
+</AuthorName>
+</Author>
+<Affiliation ID="Aff7">
+<OrgName>Shizuoka University Graduate School of Science &amp; Technology</OrgName>
+<OrgAddress>
+<City>836 Ohya Suruga-ku</City>
+<State>Shizuoka 422-8529</State>
+<Country>Japan</Country>
+</OrgAddress>
+</Affiliation>
+</AuthorGroup>
+</BookHeader>
+<Chapter ID="Chap7" Language="En">
+<ChapterInfo ChapterType="OriginalPaper" NumberingStyle="ChapterContent" TocLevels="0" ContainsESM="No">
+<ChapterID>7</ChapterID>
+<ChapterNumber>7</ChapterNumber>
+<ChapterDOI>10.1007/978-3-540-74236-4_7</ChapterDOI>
+<ChapterSequenceNumber>7</ChapterSequenceNumber>
+<ChapterTitle Language="En">Fragments Within Pseudotachylyte Veins</ChapterTitle>
+<ChapterFirstPage>139</ChapterFirstPage>
+<ChapterLastPage>158</ChapterLastPage>
+<ChapterCopyright>
+<CopyrightHolderName>Springer-Verlag Berlin Heidelberg</CopyrightHolderName>
+<CopyrightYear>2008</CopyrightYear>
+</ChapterCopyright>
+<ChapterGrants Type="Regular"><MetadataGrant Grant="OpenAccess"/><AbstractGrant Grant="OpenAccess"/><BodyPDFGrant Grant="Restricted"/><BodyHTMLGrant Grant="Restricted"/><BibliographyGrant Grant="Restricted"/><ESMGrant Grant="Restricted"/></ChapterGrants><ChapterContext>
+<SeriesID>772</SeriesID>
+<BookID>978-3-540-74236-4</BookID>
+<BookTitle>Fossil Earthquakes: The Formation and Preservation of Pseudotachylytes</BookTitle>
+</ChapterContext>
+</ChapterInfo>
+<ChapterHeader>
+<AuthorGroup>
+<Author AffiliationIDS="Aff8">
+<AuthorName DisplayOrder="Western">
+<GivenName>Aiming</GivenName>
+<FamilyName>Lin</FamilyName>
+</AuthorName>
+</Author>
+<Affiliation ID="Aff8">
+<OrgName>Shizuoka University Graduate School of Science &amp; Technology</OrgName>
+<OrgAddress>
+<City>836 Ohya Suruga-ku</City>
+<State>Shizuoka 422-8529</State>
+<Country>Japan</Country>
+</OrgAddress>
+</Affiliation>
+</AuthorGroup>
+</ChapterHeader>
+<NoBody></NoBody>
+</Chapter>
+</Book>
+</Series>
+</Publisher>

@@ -62,10 +62,10 @@
             <xsl:when test="Article/ArticleInfo">
                 <xsl:message>Converting a Springer stage 2 article</xsl:message>
             </xsl:when>
-            <xsl:when test="Publisher/PublisherInfo and not(Publisher/Series/Book/Part/Chapter)">
+            <xsl:when test="Publisher/PublisherInfo and not(Publisher/Series/Book/descendant::Chapter)">
                 <xsl:message>Converting a Springer stage 3 article</xsl:message>
             </xsl:when>
-            <xsl:when test="count(Publisher/Series/Book/Part/Chapter)=1">
+            <xsl:when test="count(Publisher/Series/Book/descendant::Chapter)=1">
                 <xsl:message>Converting a Springer book chapter</xsl:message>
             </xsl:when>
             <xsl:when test="article/art-admin">

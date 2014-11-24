@@ -6,7 +6,7 @@
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
-    <xsl:template match="/Publisher[not(Series/Book/Part/Chapter)]">
+    <xsl:template match="/Publisher[not(Series/Book/descendant::Chapter)]">
         <TEI>
             <teiHeader>
                 <fileDesc>

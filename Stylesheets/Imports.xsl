@@ -3,6 +3,7 @@
     <xsl:include href="Default.xsl"/>
     <xsl:include href="NameComponents.xsl"/>
     <xsl:include href="JournalComponents.xsl"/>
+    <xsl:include href="BookComponents.xsl"/>
     <xsl:include href="NamesDatesPlaces.xsl"/>
     <xsl:include href="KeywordsAbstract.xsl"/>
     <!--<xsl:include href="EditorialStages.xsl"/>
