@@ -115,12 +115,12 @@
 
     <xsl:template match="ce:copyright">
         <availability status="{@type}">
-            <!-- PL: put the date out of the paragraph, as it is TEI P5 valid -->
-            <date>
-                <xsl:value-of select="@year"/>
-            </date>
             <p>
                 <xsl:value-of select="text()"/>
+	            <!-- PL: put the date under the paragraph, as it is TEI P5 valid -->
+	            <date>
+	                <xsl:value-of select="@year"/>
+	            </date>
             </p>
         </availability>
     </xsl:template>
