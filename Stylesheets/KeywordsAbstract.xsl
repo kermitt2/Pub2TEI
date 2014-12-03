@@ -89,16 +89,22 @@
                             <xsl:value-of select="@Language"/>
                         </xsl:when>
                         <xsl:when test="@xml:lang">
-                            <xsl:value-of select="@xml:lang"/>
+							<xsl:if test="@xml:lang">
+								<xsl:if test="@xml:lang != ''">
+									<xsl:value-of select="@xml:lang"/>
+								</xsl:if>
+							</xsl:if>	
                         </xsl:when>
                     </xsl:choose>
-                </xsl:variable>
+                </xsl:variable> 
                 <xsl:if test="$theLanguage">
-                    <xsl:attribute name="xml:lang">
-                        <xsl:call-template name="Varia2ISO639">
-                            <xsl:with-param name="code" select="$theLanguage"/>
-                        </xsl:call-template>
-                    </xsl:attribute>
+					<xsl:if test="$theLanguage != ''">
+	                    <xsl:attribute name="xml:lang">
+	                        <xsl:call-template name="Varia2ISO639">
+	                            <xsl:with-param name="code" select="$theLanguage"/>
+	                        </xsl:call-template>
+	                    </xsl:attribute>
+					</xsl:if>
                 </xsl:if>
                 <xsl:if test="not(ce:section-title) and not(Heading)">
                     <head>Abstract</head>
