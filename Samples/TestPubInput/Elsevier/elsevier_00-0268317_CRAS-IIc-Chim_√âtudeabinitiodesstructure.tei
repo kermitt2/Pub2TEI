@@ -9,9 +9,10 @@
                     la fonctionnelle de la densité (DFT)</title>
             </titleStmt>
             <publicationStmt>
-                <availability status="full-transfer">
-                    <date>2000</date>
-                    <p>Éditions scientifiques et médicales Elsevier SAS</p>
+                <publisher>Éditions scientifiques et médicales Elsevier SAS</publisher>
+                <date>2000</date>
+                <availability status="restricted">
+                    <p>full-transfer</p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
@@ -82,7 +83,7 @@
                         SAS<hi rend="bold">Laves phases / alloys / hydrides / magnetism / DFT / LSDA
                         / chemical-bonding</hi></p>
             </div>
-            <div type="abstract" xml:lang="">
+            <div type="abstract">
                 <head>Résumé</head>
                 <p>Les structures électroniques et magnétiques de YFe<hi rend="subscript">2</hi> et
                     d'un hydrure YFe<hi rend="subscript">2</hi>H<hi rend="subscript">3</hi> sont

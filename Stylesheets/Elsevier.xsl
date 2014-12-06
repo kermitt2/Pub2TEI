@@ -114,13 +114,18 @@
     <!-- Traitement des méta-données (génération de l'entête TEI) -->
 
     <xsl:template match="ce:copyright">
-        <availability status="{@type}">
+        <!-- moved up publisher information -->
+        <publisher>
+            <xsl:value-of select="text()"/>
+        </publisher>
+        <!-- PL: put the date under the paragraph, as it is TEI P5 valid -->
+        <!-- LR: moved the date two nodes higher so that the encompassing publicationStmt is closer to what is expected-->
+        <date>
+            <xsl:value-of select="@year"/>
+        </date>
+        <availability status="restricted">
             <p>
-                <xsl:value-of select="text()"/>
-	            <!-- PL: put the date under the paragraph, as it is TEI P5 valid -->
-	            <date>
-	                <xsl:value-of select="@year"/>
-	            </date>
+                <xsl:value-of select="@type"/>
             </p>
         </availability>
     </xsl:template>
