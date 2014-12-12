@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" "journalpublishing.dtd">
+<article xml:lang="en" article-type="research-article">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="hwp">chemse</journal-id>
+      <journal-id journal-id-type="nlm-ta">Chem Senses</journal-id>
+      <journal-id journal-id-type="publisher-id">chemse</journal-id>
+      <journal-title>Chemical Senses</journal-title>
+      <abbrev-journal-title abbrev-type="publisher">Chem. Senses</abbrev-journal-title>
+      <issn pub-type="ppub">0379-864X</issn>
+      <issn pub-type="epub">1464-3553</issn>
+      <publisher>
+        <publisher-name>Oxford University Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="other">bjh047</article-id>
+      <article-id pub-id-type="doi">10.1093/chemse/bjh047</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Articles</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Incidental Learning and Memory for Three Basic Tastes in Food</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Köster</surname>
+            <given-names>M.A.</given-names>
+          </name>
+          <xref rid="BJH047A1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Prescott</surname>
+            <given-names>J.</given-names>
+          </name>
+          <xref rid="BJH047A2">2</xref>
+          <xref rid="BJH047A3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Köster</surname>
+            <given-names>E.P.</given-names>
+          </name>
+          <xref rid="BJH047A4">4</xref>
+        </contrib>
+        <aff><target target-type="aff" id="BJH047A1"/><label>1</label>Utrecht University, Utrecht, The Netherlands, <target target-type="aff" id="BJH047A2"/><label>2</label>University of Otago, Dunedin, New Zealand and <target target-type="aff" id="BJH047A4"/><label>4</label>Royal Veterinary and Agricultural University, Copenhagen, Denmark<target target-type="aff" id="BJH047A3"/><label>3</label>
+Present address: James Cook University, Cairns, Australia</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp>Correspondence to be sent to: E.P. Köster, Wildforsterweg 4a, 3881 NJ Putten, The Netherlands. E-mail: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ep.koster@wxs.nl" ext-link-type="email">ep.koster@wxs.nl</ext-link></corresp>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <month>6</month>
+        <year>2004</year>
+      </pub-date>
+      <volume>29</volume>
+      <issue>5</issue>
+      <fpage>441</fpage>
+      <lpage>453</lpage>
+      <history>
+        <date date-type="accepted">
+          <day>09</day>
+          <month>04</month>
+          <year>2004</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>Chemical Senses Vol. 29 No. 5 © Oxford University Press 2004; all rights reserved</copyright-statement>
+        <copyright-year>2004</copyright-year>
+      </permissions>
+      <abstract xml:lang="en">
+        <p>Forty three subjects were invited under the pretence that they would take part in an experiment on hunger feelings. They came without having eaten anything that morning and received a standard breakfast containing orange juice, cream cheese on crackers and yoghurt. These products were later (when subjects returned after scoring hunger feelings during the day) used as targets amidst a set of distractors varied by adding or subtracting different amounts of two basic tastes. Orange juice was varied in sweetness and bitterness, cream cheese in sourness and bitterness and yoghurt in sweetness and sourness. The changes were made comparable by using just noticeable differences, determined in preliminary experiments with other subjects, as units of change. Two measurements of memory were compared, an absolute (indicating which were the targets) and a relative one (indicating whether the targets and distractors were more, less or equally pleasant, sweet, sour, bitter or salty as the item eaten at breakfast). Both methods showed incidental learning, but relative memory was superior. Memory differed between tastes and was partly product dependent. These experiments suggest that taste memory is tuned to detect novel and potentially dangerous stimuli rather than to remember features of earlier experienced stimuli with great precision.</p>
+      </abstract>
+      <kwd-group kwd-group-type="KWD" xml:lang="en">
+        <kwd>food expectancy</kwd>
+        <kwd>incidental learning</kwd>
+        <kwd>memory psychophysics</kwd>
+        <kwd>taste memory</kwd>
+      </kwd-group>
+      <custom-meta-wrap>
+        <custom-meta>
+          <meta-name>hwp-legacy-fpage</meta-name>
+          <meta-value>441</meta-value>
+        </custom-meta>
+        <custom-meta>
+          <meta-name>hwp-legacy-dochead</meta-name>
+          <meta-value>Article</meta-value>
+        </custom-meta>
+      </custom-meta-wrap>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>Introduction</title>
+      <p>When confronted with a food, even a novel one, people have certain expectations about its taste, based on previous experiences with similar foods. In the acceptance and appreciation of the food, these expectations and the implicit and subconscious internal standards on which they are based, are of paramount importance although the person is often completely unaware of the fact that they have acquired them incidentally. Although this implicit form of taste learning is predominant in daily life, it has hardly been studied so far.</p>
+      <p>	Explicit taste learning studies (<xref rid="BJH047C5">Barker and Weaver, 1983</xref>; <xref rid="BJH047C3">Algom and Marks, 1989</xref>; <xref rid="BJH047C19">Tuorila <italic>et al.</italic>, 1996</xref>; <xref rid="BJH047C16">Stevenson and Prescott, 1997</xref>; <xref rid="BJH047C20">Vanne <italic>et al.</italic>, 1998</xref>) have demonstrated that taste intensities can be remembered and that taste memory can be used in estimating the effects of mixing different tastes from memory. Nevertheless, some contradictory results on memory distortions have been found. <xref rid="BJH047C5">Barker and Weaver (1983</xref>) asked their subjects to remember a target of sucrose in water and later asked them whether stimuli varying in sucrose concentration were less, equally or more intense than the remembered target. They found that the target was remembered as being weaker than it was perceived at the second presentation. <xref rid="BJH047C3">Algom and Marks (1989</xref>), using free modulus magnitude estimation of sucrose stimuli, and the memory of these stimuli 24 h later (via their association to colours), found equivalent exponents for both psychophysical functions. However, <xref rid="BJH047C20">Vanne <italic>et al.</italic> (1998</xref>), using sucrose concentrations as targets and an <italic>ad libitum</italic> mixing method for the reconstitution of the memorized concentrations, found that the subjects overestimated the intensity of the remembered target. Differences in the testing procedures may well have been responsible for these different results. Especially with the <italic>ad libitum</italic> mixing procedure, in which the subjects are exposed quite often to the stimulus while preparing their match to the memorized stimulus, the influence of adaptation cannot be completely excluded. If it occurred, this could explain why subjects would prepare higher matching concentrations.</p>
+      <p>	That chemosensory intensities can not only be remembered, but that these memories can also be used in making predictions about the intensities of mixtures of stimuli which as such have not been experienced previously in the laboratory, has been demonstrated by a number of authors (<xref rid="BJH047C1">Algom and Cain, 1991a</xref>,b on odours; <xref rid="BJH047C4">Algom <italic>et al.</italic>, 1993</xref> on flavours and sucrose; <xref rid="BJH047C16">Stevenson and Prescott, 1997</xref> on taste and on taste and irritation). The latter of these studies not only confirmed the earlier findings, but also demonstrated that ‘mixing from memory’ was even possible in cases where the mixture components interacted and the mixture results could therefore not be predicted by the application of some simple additivity rule. Furthermore, since good memory mixing results were obtained in a case where they were contrary to people’s explicit presuppositions, <xref rid="BJH047C16">Stevenson and Prescott (1997</xref>) provided support for the idea of <xref rid="BJH047C4">Algom <italic>et al.</italic> (1993</xref>) that memory mixing relied on implicit knowledge that had been gathered in normal life rather than on the explicit application of mixing rules.</p>
+      <p>	Other demonstrations of implicit learning in odour perception have been reported in studies of perceptual changes in odours that have been repeatedly paired with tastes (<xref rid="BJH047C17">Stevenson <italic>et al.</italic>, 1995</xref>, 1998) or odours with different qualities (<xref rid="BJH047C15">Stevenson, 2001</xref>). For example, <xref rid="BJH047C17">Stevenson <italic>et al.</italic> (1995</xref>) found that relatively novel odours that were combined and repeatedly tasted with either a sweet or sour taste became more sweet or sour smelling, respectively, when sniffed. However, a later study of the same type (<xref rid="BJH047C18">Stevenson <italic>et al.</italic>, 1998</xref>) found that these perceptual changes did not depend on the subject’s awareness of specific odour/taste pairings, suggesting that this constituted implicit learning.</p>
+      <p>	Although incidental learning and implicit memory may play a fundamental role in the formation of people’s internal references and their expectations about sensory qualities within foods, these processes have only recently been studied systematically. In an experiment on texture and flavour memory, <xref rid="BJH047C12">Mojet and Köster (2002</xref>) asked people to take part in a study on ‘hunger feelings’. After fasting overnight, subjects received a breakfast including breakfast drink, biscuits and yoghurt. On returning for a taste experiment in the evening, they were unexpectedly asked to recognize the samples they had eaten earlier from five texture variations of each of the original breakfast items. Although no subject reported having expected to be questioned on their memory, the results showed that they remembered four of the six targets significantly better than chance. Although both flavour and texture were remembered, the extent to which targets were remembered depended on the type of stimulus. In a later study (<xref rid="BJH047C13">Mojet and Köster, 2004</xref>) in which also memory for liking and for specific aspects of the stimuli was investigated, similar results were obtained. Finally, C. Sulmont <italic>et al.</italic> (manuscript in preparation) used the same paradigm for a study of the memory for lunch items in France. In addition they verified the perceptual discriminability of the stimuli in an extra session of the experiment.</p>
+      <p>	Taste has only been touched upon in the latter of these studies. Here, memory for incidentally learned sweet, sour and bitter taste are investigated using an improved version of the paradigm, which allows for a direct comparison of the memory effects, without interference of perceptual differences. In this version, preliminary experiments were carried out with a different group of subjects to ascertain that the perceptual differences between targets and distractors are directly comparable for all products by using just noticeable differences (JNDs) as the unit of added taste variation and two different methods for memory assessment are compared. Furthermore, in each product tested, the memory for two of the three tastes is investigated and each of these tastes is varied in two different products. Thus, it should be possible to obtain a better insight in the generality of the memory for taste qualities and in the role that taste memory might play in the expectations about and future acceptance of different products.</p>
+    </sec>
+    <sec>
+      <title>Preliminary experiments</title>
+      <sec>
+        <title>Materials and methods</title>
+        <sec>
+          <title>General</title>
+          <p>Two preliminary experiments were carried out. A first experiment was conducted to obtain an estimate of the JNDs of the tastants in foods, and to find suitable concentrations of the added tastes for new standards to be used in the main experiment. A second experiment sought to obtain a more precise determination of the JNDs around these new standards for each of the added taste qualities. Based on these JNDs, the stimuli for the main experiment were chosen.</p>
+        </sec>
+        <sec>
+          <title>Subjects</title>
+          <p>Eleven subjects, students at University of Otago (mean age ± SD = 26.5 ± 6.70 years; five male and six female), took part in both preliminary experiments. One male took part in the first preliminary experiment only. At the end of the second experiment, the subjects were paid NZ$20.00 for their participation.</p>
+        </sec>
+        <sec>
+          <title>Stimuli</title>
+          <p>Three products (Perfect brand cream cheese; Rio brand unsweetened orange juice; and Naturalea brand unsweetened plain yoghurt) served as base materials. Two tastants were added to each of these products: Citric acid (sour) and caffeine (bitter) to cream cheese; sucrose (sweet) and caffeine to orange juice; sucrose and citric acid to yoghurt. Thus, each of three taste qualities (sweet, sour and bitter) was varied in two products.</p>
+          <p>	Table <xref rid="BJH047TB1">1</xref> gives an overview of the amounts of the two different taste qualities added to the basic product in each of the stimuli used. All of these stimuli were obtained by thoroughly mixing 900 ml or 900 g of the product with 100 ml of a 10-fold stronger concentration of both added tastes in distilled and deionized water.</p>
+          <p>	As can be seen from this table, five equal concentration steps were made for each taste quality that was varied in a product (e.g. sour (citric acid) in cream cheese), while the other added taste quality for that product (e.g. bitter (caffeine) in cream cheese) was kept constant. The middle concentration of each stimulus range served as a new standard (S) and the other concentrations served as comparison stimuli (C1, C2, C4, C5). The new standard was also used as a comparison stimulus (C3). In the preliminary experiments each product was used twice, once with the variation of the stimuli in the one taste quality, and the second time with the variation of stimuli in the other taste quality. All stimuli were coded with different three digit numbers. The cream cheese samples were presented on a cracker (Arnott’s water crackers). Yoghurt and orange juice were presented in plastic cups that held a maximum of 30 ml.</p>
+          <p>	In the second preliminary experiment the same concentrations as in the first experiment were used for the standard of orange juice, but, in order to allow more room for variation of the comparison stimuli at the lower end of the range, the added concentrations of both citric acid and caffeine were doubled in the standards of the cream cheese. In yoghurt the standard remained unchanged for sucrose, but the citric acid concentration was doubled. To assure a better coverage of the range of measurable differences around the new standards, the concentrations of most of the comparison stimuli were changed.</p>
+        </sec>
+        <sec>
+          <title>Procedure</title>
+          <p>Participants were seated in separate booths. In total they received six series of 10 pairs, one series for each of the two varied taste qualities in each of the three products. Each pair contained at least one standard (S), the other sample was a comparison sample (C1–C5). In both preliminary experiments, each comparison stimulus was presented twice in a pair with the standard stimulus, once as the first pair member and once as the second one. Within a series, the presentation order of the ten pairs for each taste variation was randomized within two blocks of five different pairs. Furthermore the order of presentation of the six product taste combinations was varied systematically.</p>
+          <p>	The participants were asked to determine which of the two samples in a pair was either sweeter, more sour or more bitter, depending on the tastant varied. Participants were requested to rinse with water after each stimulus pair, but not between the tasting of pair members in order to avoid making any unnecessary demands on immediate or short term memory.</p>
+        </sec>
+        <sec>
+          <title>Data analysis</title>
+          <p>In order to calculate the JND of the whole group for a product variation in the second preliminary experiment, first the percentage was determined in which each of the comparison stimuli for that product variation was judged to be more intense on the varied taste than the standard. These percentages were transformed into <italic>z</italic>-scores under the normal probability curve and plotted against the concentration of the added taste quality. The function of the best fitting straight line through these points was determined and the concentration values corresponding to <italic>z</italic>-values of –0.675 and +0.675 (<italic>z</italic>-values of 25% stronger and 75% stronger than the standard) were calculated from this function. The JND belonging to the standard for the product variation in question was found by taking half of the difference between these two concentration values.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Results</title>
+        <p>The resulting JNDs for the different variations of the three products were used as the unit of concentration for the product variation in the main experiment. Thus, for each of the different product variations, they defined the distances between the target and the distractors that were used in the main experiment (see Table <xref rid="BJH047TB2">2</xref>).</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Main experiment</title>
+      <sec>
+        <title>Method</title>
+        <sec>
+          <title>Subjects</title>
+          <p>Forty-three subjects, students at University of Otago (age = 21.7 ± 1.63 years; 21 male and 22 female) took part in the experiment. They were paid NZ$15.00 for their participation at the end of the experiment. Some subjects received course credit instead of payment.</p>
+        </sec>
+        <sec>
+          <title>Stimuli</title>
+          <p>After calculation of the JNDs for each of the two varied taste qualities per product in the second preliminary experiment, the concentrations of the target stimuli and the four distractors per varied quality were made. The standards of the second preliminary experiment were presented at breakfast to the subjects and therefore served as the targets in the memory test at the end of the day. The distractors were 1 JND lower and 1, 1.5 and 2 JNDs higher, in tastant concentration than the target stimulus. All distractors contained the same concentration of the non-varied taste quality as the target. Table <xref rid="BJH047TB2">2</xref> gives an overview of the amounts in g/l added to the base material for the targets and distractor stimuli used in the final test. It should be stressed that the new targets where created in order to avoid the influence of knowledge of actual products on the outcome of the experiment To be able to verify whether such influences nevertheless are present or not, the –1 JND distractor, which is closer to the common every day standard than the new target, is used.</p>
+        </sec>
+        <sec>
+          <title>Procedure</title>
+          <p>During the course of a week, eight different groups of a maximum of six people at a time came in for breakfast. Half of the groups started at 8.00 h, the other half at 9.00 h. Subjects were specifically asked not to eat or drink anything prior to arrival at the laboratory. They had been informed that the experiment was on the development of their hunger feelings during the day. At arrival each group of subjects was placed in a room with a round table and asked to fill out questions related to hunger. Subsequently they were given a breakfast, consisting of a glass of orange juice (200 ml), a bowl of yoghurt (150 ml) and three crackers with cream cheese. This breakfast was made up of standards of the products later to be used for the taste memory experiment. Subjects were asked to finish the breakfast, after which they had access to additional foods (muesli bars, bananas or apples) if they wanted to, as long as they listed what they took. They were told not to eat anything between breakfast and lunch, or between lunch and the afternoon session, which took place 8 h after the start of the morning session (16.00 and 17.00 h respectively). They were also asked to fill out more questions on hunger and eating habits and were given another questionnaire to fill out just before and just after lunch. In effect, everything was done to make the subjects believe the experiment was about hunger.</p>
+          <p>	In the afternoon, subjects arrived at the lab and were seated in separate booths. Once again the subjects filled out a questionnaire on their hunger feelings and they were asked to explain what, to their knowledge, was the intention of today’s experiment. This question was asked to make sure that none of the subjects had guessed the real purpose and consciously learned about the taste of the products during breakfast. Subsequently the subjects were informed on the real purpose of the experiment, and received the instructions for the memory experiment.</p>
+          <p>	The subjects were first presented with three series of 12 stimuli, one series for each of the three products. These twelve samples consisted of four targets (the same as the standards they had at breakfast) and all eight distractors that were made for each product (e.g. the bitter and the sweet ones for orange juice). This ratio between targets and distractors, which slightly favours the giving of negative responses, was chosen to avoid unwanted learning effects due to overrepresentation of the target in the memory test. The order in which products were presented to subjects and the order, in which samples were presented on a tray, were systematically balanced and varied over subjects. When they received a tray with samples they were asked to determine whether or not each sample was the same as the product they had that morning and to indicate how sure they were about their decision (sure or not sure).</p>
+          <p>	After completion of these series, they took a short rest and then were given three series of nine differently coded stimuli, in which the target and the eight distractors for each product were represented once only. The subjects first rated the pleasantness of each of the stimuli on a 100 mm line scale with the anchors ‘dislike very much’ (left) and ‘like very much’ (right) and then indicated, whether they considered the stimulus to be ‘less pleasant’, ‘equally pleasant’ or ‘more pleasant’ than the one they had eaten at breakfast. Finally, they judged the sweetness, the saltiness, the bitterness and the sourness of the stimuli relative to their memory of the breakfast item in the same way (less, equally or more sweet, salty, etc. than at breakfast).</p>
+        </sec>
+        <sec>
+          <title>Data analysis</title>
+          <p>The percentages of hits and false alarms were calculated per subject from the responses given to the question whether the presented stimulus was the same or not the same as the one they had eaten at breakfast. These percentages were transformed into <italic>z</italic>-scores and the recognition index <italic>d</italic>′ (<italic>d</italic>′ = <italic>z</italic> Hit rate – <italic>z</italic> False Alarm rate) and the criterion <italic>k</italic> (<italic>k</italic> = – (<italic>z</italic> Hits + <italic>z</italic> False Alarms)) were determined. To avoid infinite numbers percentages of 0 and 1 were converted to 1/(2<italic>N</italic>) and 1 – 1/(2<italic>N</italic>) respectively (<xref rid="BJH047C11">Macmillan and Creelman, 1991</xref>). <italic>T</italic>-tests were used to determine whether the <italic>d</italic>′ of the group for each of the distractors was significantly higher than zero, indicating that learning had taken place and that the results were better than expected on the basis of chance. The absolute scale ratings of the pleasantness of the stimuli were measured and expressed in mm (0–100 mm). The responses to the questions relating the stimuli to the ones presented at breakfast were transformed in numerical values (less pleasant (sweet etc.) = –1.00; equally pleasant (sweet, etc.) = 0.00; more pleasant (sweet, etc.) = +1.00). <italic>T</italic>-tests were used to show differences of the means of these values from zero.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>Results</title>
+        <sec>
+          <title>General</title>
+          <p>Memory was tested in two different ways in these experiments. First an ‘absolute’ memory for whether the subjects could classify individual stimuli as targets or as distractors was determined. Second ‘relative’ memory was assessed by asking subjects whether a new set of stimuli presented during the test phase was less, more or equally likeable, sweet, sour, bitter or salty as the ones they had during breakfast. In addition to the data on memory, the main topic of this paper, we also report the results of the line scale rating of the stimuli for liking, because they provide information about the stimuli that may have important implications for the evaluation of the memory results.</p>
+        </sec>
+        <sec>
+          <title>Absolute memory</title>
+          <p>The mean recognition indexes <italic>d</italic>′ and SEMs, indicating the significance of their deviation from chance, are given for each of the target–distractor combinations in Figure <xref rid="BJH047F1">1</xref>.</p>
+          <p>	As can be seen from this figure, recognition was particularly poor for sweet taste in orange juice. In two cases, the recognition index was negative, indicating that percentage false alarms was higher than percentage hits. Reducing bitterness in orange juice had the same effect.</p>
+          <p>	Furthermore, it can be seen from Figure <xref rid="BJH047F1">1</xref> that some of the taste qualities are better remembered than others. Sweetness seems to play no role in the absolute memory for the breakfast items. For both orange juice and yoghurt, varying sweetness in the distractors had no effect on recognition. Even a distractor that was 2 JNDs sweeter than the breakfast item was not judged as being significantly different from the memory of the target. For both other taste qualities (sour and bitter), significant differences between the distractor and the target memory were found, but to different degrees depending on the food to which they were added. For example, added bitter in cream cheese was detected at +1 JND and both higher steps, but added bitter in orange juice was only detected at +1.5 JND. Similarly, sourness in yoghurt was well discriminated from the memory of the target item at all three added concentrations, but only at +2 JNDs when added to cream cheese. In only one case (cream cheese + 1 JND bitter: <italic>T</italic> = 2.43, df = 40, <italic>P</italic> &lt; 0.03) did the addition or subtraction of 1 JND of a taste quality significantly discriminate the distractor from the memory of the target.</p>
+          <p>	An analysis of the percentages hits, misses, correct rejections and false alarms obtained for the targets and the distractors of the different products pooled per varied attribute, is given in Figure <xref rid="BJH047F2">2</xref>.</p>
+          <p>	As can be seen from this figure, when judging the target, the subjects make more misses than hits, especially in the case of orange juice. Their positive <italic>d</italic>′ values are mainly based on their large percentage of correct rejections, which, for bitter and sour, is almost twice as high as their percentage false alarms. Furthermore, in the case of sweet, the subjects produce almost as many (and in the case of orange juice even more) false alarms as hits.</p>
+          <p>	The fact that the subjects have a tendency to say ‘no’ when asked whether they had a particular stimulus at breakfast, was also reflected in the positive values of criterion <italic>k</italic> (range = 0.16–1.26), which in the majority of the cases were significantly different from zero.</p>
+          <p>	When asked whether they were sure or not sure of the correctness of their decision the subjects indicated that they were sure of their hits in 38.12%, of their misses in 45.52%, of their false alarms in 38.53% and of their correct rejections in 63.06% of the cases. It is clear that their certitude in making a correct rejection is much stronger than in all other correct or incorrect choices and that these other choices do not differ much in this respect.</p>
+        </sec>
+        <sec>
+          <title>Relative memory</title>
+          <p><italic>Hedonic memory</italic>. The results of the measurements on relative memory for liking of the products are given in Figure <xref rid="BJH047F3">3</xref>.</p>
+          <p>	When asked to compare the different stimuli to the breakfast items with regard to liking, the subjects appeared to have good recall of the breakfast item. Thus, in no case did they judge the target as significantly more or less attractive than their memory of it at breakfast.</p>
+          <p>	At the same time, it is clear from Figure <xref rid="BJH047F3">3</xref> that the subjects are able to reliably judge whether the distractors are different in pleasantness from the remembered breakfast items. When bitter is added, the distractors are significantly less liked than the memory of the breakfast item. When bitter is subtracted the distractors are liked significantly more than the memory of the breakfast item. This is the case in both orange juice and cream cheese, even when the distractors differ by only 1 JND in either direction. Making cream cheese or yoghurt more sour also significantly reduces liking compared to the memory of the breakfast item, but reduction of sourness has no significant effect. For sweetness in orange juice and yoghurt a significant increase in liking is only evident when 2 JNDs are added. When sweetness is reduced by one JND, the distractors are liked significantly less than the memory of the breakfast item.</p>
+          <p>	Women seem to be more responsive in their liking to the addition of sweetness in yoghurt than men. When separate analyses on men and women were undertaken, women were found to like the yoghurt better than the remembered one when 1 or 1.5 JNDs were added, whereas the men only prefer the distractor at a difference of 2 JNDs. No other gender differences were found.</p>
+          <p><italic>Memory for the experimentally varied attributes</italic>. Figure <xref rid="BJH047F4">4</xref> shows the memory for the taste qualities varied in the distractors. Here also the subjects do very well. Only in one case did they indicate that the target itself deviated from their memory of the breakfast item. The subjects, in particular the men, judged the orange juice to be sweeter than the one they had in the morning. In all other cases, the deviations between the perceived and the remembered target item are small and not significant.</p>
+          <p>	Memory accuracy is further illustrated by the fact that the variations in the distractors are recognized to a large extent. Both in orange juice and in yoghurt, an addition or reduction of just one JND of sweetness leads to a discrimination that is at least marginally significant. Deviations in bitterness are recognized even better in both cream cheese and orange juice. Deviation from memory by added or reduced sourness in cream cheese or yoghurt is poorly detected however, but added sourness in yoghurt makes it distinguishable from the memory of the breakfast item.</p>
+          <p><italic>Interaction effects on other attributes</italic>. Subjects compared the targets and distractors with their memory of the breakfast item on all four basic tastes, even though only one of these tastes was varied. It is therefore possible to see whether the experimental manipulation also influenced the comparison between perception and memory for the tastes that were not experimentally varied. Figures <xref rid="BJH047F5">5</xref>, <xref rid="BJH047F6">6</xref> and <xref rid="BJH047F7">7</xref> show these effects on the non-varied tastes in respectively orange juice, cream cheese and yoghurt.</p>
+          <p>	As can be seen from these figures, none of the experimental variations influenced the recognition of the saltiness of any of the targets. In the distractors, adding sweetness to either orange juice or yoghurt seems to slightly reduce the perception of saltiness relative to memory, whereas reducing sweetness by 1 JND seems to pass unnoticed. Reducing sourness provokes an impression of somewhat lower perceived than remembered saltiness in both cream cheese and yoghurt, but increasing sourness has no effect on saltiness. The perception of saltiness relative to memory in orange juice co-varies directly with changes in bitterness, but in cream cheese changes in bitterness have no significant positive effect on the perceived saltiness of cream cheese.</p>
+          <p>	Among the other interactions, the inverse relationships between bitterness and sweetness were strongest. Whenever bitterness was reduced, the impression of sweetness relative to memory was raised. Conversely, when bitterness was increased in the distractor, sweetness relative to the memory of the target was reduced. The same holds in the other direction, but to a somewhat lesser degree, for the influence of changes in sweetness on bitterness.</p>
+          <p>	When sweetness is reduced by 1 JND in either orange juice or yoghurt, the perception of sourness relative to the remembered target is raised although not significantly in orange juice, but in both products sweetness has to be raised at least by 2 JNDs before it leads to a reduction of sourness relative to the memory of the target. Reducing sourness in either cream cheese or yoghurt has no effect on the perceived sweetness relative to the memory, and in order to reduce sweetness relative to the memory, sourness has to be raised by at least 2.0 JNDs in both products. Finally, sourness relative to the remembered target clearly co-varies with the changes in bitterness in both orange juice and cream cheese, but variations in sourness have no effect on bitterness in cream cheese, while co-variation of bitterness with sourness in yoghurt is also weak and inconsistent.</p>
+          <p><italic>Absolute liking and its role in memory</italic>. The results of the ratings of the liking for the stimuli that were obtained in the second session after the measurement of the ‘absolute’ memory and before that of the ‘relative’ memory are given in Figure <xref rid="BJH047F8">8</xref>.</p>
+          <p>	As can be seen from this figure all three newly formed target stimuli (0 JND) were almost neutral on the liking scale and they were not significantly different from each other. Adding or subtracting bitter caused substantial changes in liking, whereas sourness only influenced liking when it was added to yoghurt. Subtracting 1 JND of sweetness had a negative effect on the liking for both orange juice and yoghurt, but when sugar was added, 2 JNDs were necessary to see a positive effect.</p>
+          <p>	To assess whether differences in liking between the target and the distractors played an important role in absolute memory, the absolute values of these differences were calculated and then correlated with the <italic>d</italic>′ for the corresponding target–distractor combinations over subjects. Only three of these twenty four correlations were significant (+1.5 JND sweetness in yoghurt: <italic>R</italic> = 0.360, <italic>P</italic> &lt; 0.03; +1 JND bitter in cream cheese: <italic>R</italic> = 0.325, <italic>P</italic> &lt; 0.05; +1.5 JND sour in yoghurt: <italic>R</italic> = –0.323, <italic>P</italic> &lt; 0.05) and one of these was even negative, indicating that the smaller was the difference in pleasantness between the target and the distractor, the better was the recognition index. Over all twenty four correlations 13 were positive and 11 negative. There is little evidence therefore that the absolute memory index (<italic>d</italic>′) is related to differences in pleasantness between target and distractors.</p>
+          <p>	In order to see to what extent absolute liking might have determined the relative memory for liking of the stimuli, correlations between the absolute values of the differences between targets and distractors in absolute liking and the absolute values of the differences between targets and distractors in relative liking were calculated for each of the targets and the distractors. These correlations are given in Table <xref rid="BJH047TB3">3</xref>.</p>
+          <p>	As can be seen from this table, for all separate distractors, the maximum correlation is <italic>R</italic> = 0.734 (54% of the variance explained) and in many cases it is considerably lower. On average, at most 32% of the variance in the relative liking is explained by absolute liking.</p>
+          <p>	A correlation between the two measures, which both dealt with differences in liking of the same stimuli, was to be expected, especially in cases where the target and the distractor are quite different. Thus, these correlations do not seem high enough to suggest that absolute liking for the stimuli substantially determines memory performance.</p>
+        </sec>
+        <sec>
+          <title>Debriefing</title>
+          <p>When the subjects were asked about the purpose of the experiment at the beginning of the second session, none of them mentioned memory or learning. In fact they were all fully convinced that measuring hunger feelings was the sole research goal of the experiment.</p>
+        </sec>
+      </sec>
+    </sec>
+    <sec>
+      <title>Discussion</title>
+      <sec>
+        <title>Memory and perception</title>
+        <p>Incidental learning of taste took place for all three tastes, but not to the same degree for the different tastes and not to the same degree for the same taste quality in different food items. Thus, a general rule describing memory for all three investigated tastes cannot be given. This is understandable since the extent to which the stimulus stands out against different backgrounds may be an important determining factor in the perception and subsequently in the memory of it. This means that the same taste stimulus will be perceived and remembered differently or to a different degree depending on the sensory context in which it is presented.</p>
+        <p>	Nevertheless, the effects of the addition of tastants on the perception of the other taste qualities relative to the remembered target are in excellent agreement with those recently found by J. Mojet, J. Heidema and Christ-Hazelhof (submitted for publication) in a purely perceptual experiment in which the same tastants were added to other foods (sucrose to ice tea; citric acid to mayonnaise, caffeine to chocolate milk). In both studies adding citric acid to foods did not affect the perception of the other taste qualities and adding sucrose reduces saltiness slightly, but reduces both sourness and bitterness substantially. Addition of bitter, raises saltiness to a slight degree and diminishes sweetness substantially in both studies, whereas it raises the sourness to a larger degree in the orange juice and cream cheese where sourness seems natural, than in the chocolate milk where it does not seem natural. Thus, it can be concluded that general rules are at least found in the interaction effects between taste qualities even when perception and memory are compared.</p>
+      </sec>
+      <sec>
+        <title>Memory function</title>
+        <p>The memory of the target did not significantly change over the retention period of 8 h for any of the twelve product-attribute combinations, with the exception of the sweetness of the orange juice (Figure <xref rid="BJH047F4">4</xref>). In this latter case, the target presented in the evening was judged to be stronger than the remembered one, as in the study of <xref rid="BJH047C5">Barker and Weaver (1983</xref>) who used sucrose and the same method for determining relative memory. This finding is contrary, however, to the results of <xref rid="BJH047C20">Vanne <italic>et al.</italic> (1998</xref>), who used sucrose in their <italic>ad libitum</italic> mixing method and found that the subjects had the impression that the remembered target was sweeter than it actually was.</p>
+        <p>	‘Absolute’ memory (recognizing the target amidst different distractors) seems less effective than both hedonic and attribute based ‘relative’ memory (indicating whether the present item is more, equally or less pleasant, sweet, sour etc. than the one eaten at breakfast). This is especially true for sweet, where absolute memory was extremely poor, but relative memory for the varied attributes was at least clearly present in yoghurt and, to a certain degree, in orange juice, although the memory image of the target was also distorted (see Figure <xref rid="BJH047F4">4</xref>). The fact that one type of memory was superior to the other, raises the question of what is actually remembered and how this memory is reactivated.</p>
+        <p>	There are at least three possibilities. First, subjects might retain a clear image of the features of the breakfast item that stands out against any of the variations presented. This is highly unlikely however, in view of the fact that, in all cases, the subjects make more misses than hits when judging the target (Figure <xref rid="BJH047F2">2</xref>). Moreover, absolute memory for sour and sweet was frequently very poor, even when 1.5 or 2 JNDs were added in the distractor. However, it might be true for bitterness, for which both ‘absolute’ and ‘relative’ memory proved to be excellent, although there were also more misses than hits.</p>
+        <p>	Secondly, the subjects might just rely on feelings of liking in their memory judgements. In order to examine this possibility, the absolute values of the differences in absolute liking between the target and each of their distractors were correlated both with the values of d’ in the absolute memory measurements and with the liking in the relative memory measurements. The lack of correlation found (see section on absolute liking and its role in memory) clearly showed that differences in liking between the target and the distractors could not explain either the absolute or the relative memory results. Furthermore, a comparison of Figures <xref rid="BJH047F3">3</xref> and <xref rid="BJH047F4">4</xref> shows that the memory results for the varied attributes (Figure <xref rid="BJH047F4">4</xref>) are generally more in accordance with the taste variation in the stimulus than those for liking (Figure <xref rid="BJH047F3">3</xref>). As a result, the hypothesis that memory relies mainly on hedonic responses can be rejected.</p>
+        <p>	The third, and perhaps only remaining, possibility is that the subjects, in making their memory decisions, rely on judgements that they have not previously experienced the distractors. This is supported by the fact that their memory performance does indeed rely on their correct rejections and not on their hit rate which is in most cases even lower than that of their misses. They also are much more confident about their correct rejections than about any of their other responses. Such an explanation would be in accordance with recent findings by <xref rid="BJH047C14">Møller <italic>et al.</italic> (2004</xref>), who investigated incidental and intentional learning and memory for uncommon odours in young and elderly subjects. They concluded that, in the intentional learning condition, the young only did better than the elderly because they improved their correct rejections (producing fewer false alarms), and not because they scored more hits than in the incidental learning condition, where the two groups did equally well. Even with intentional learning, there are indications that olfactory memory relies on nothing more specific than a vague, but justified, feeling that something has or has not been experienced before. This is not surprising, in view of the fact that in everyday life people also have great difficulties in describing and identifying odours and flavours, although they often know precisely where and when they have experienced them before. This explanation would also be in line with the interpretation of incidental learning and implicit memory of Degel <italic>et al</italic>. (<xref rid="BJH047C6">Degel and Köster, 1999</xref>; <xref rid="BJH047C7">Degel <italic>et al.</italic>, 2001</xref>) and <xref rid="BJH047C9">Köster <italic>et al.</italic> (2002</xref>), who exposed subjects to very weak odours that were not consciously noticed, but which the subjects later implicitly recognized as belonging to the room in which the exposure took place. Since this recognition was blocked in subjects that could identify the odours by name, the existence of a pre-semantic episodic odour memory was postulated on the basis of these results. The fact that in the present experiment the subjects implicitly remember the new targets quite well and can easily relate the deviant distractors to them instead of to their habitual taste levels, may also point at a strong incidental (and probably pre-semantic) episodic memory that links the taste to the situation in which it is experienced.</p>
+      </sec>
+      <sec>
+        <title>The role of taste memory in life</title>
+        <p>While positive deviations from the sweetness of the target taste were not easily detected, reductions in sweetness, and all deviations in bitter taste, were immediately perceived (see Figure <xref rid="BJH047F4">4</xref>). This may reflect our inborn liking for sweet and our inborn dislike for bitter. If this distinction has an evolutionary meaning, because most sweet foods are nutritious and many bitter substances are toxic (<xref rid="BJH047C8">Ganchrow, 1982</xref>), these data suggest that taste memory is more finely tuned for deviations in products that seem potentially dangerous or less nutritious than for differences in taste that indicate nutritious benefits. Furthermore, the results suggest that detecting danger is more important than identification. This would have adaptive value, since in response to either dangerous odours or dangerous foods we have only one possible immediate reaction, fleeing in the case of odours, because we cannot stop breathing, or spitting out before we swallow in the case of food. In vision, where dangers can often be seen at a greater distance and many different reaction patterns (hiding, stepping aside or confronting) are possible, identification is more useful and indeed more prominent. It might be for these reasons that in everyday life we hardly pay attention to our food, unless there is something unusual about it, or it differs from expectations.</p>
+        <p>	To end on a theoretical note, it should perhaps be pointed out that experiments on incidental learning and implicit memory for less easily describable stimuli such as odours and flavours may throw some new light on problems like the Zajonc versus Lazarus debate on the primacy of affect (<xref rid="BJH047C22">Zajonc and Markus, 1982</xref>; <xref rid="BJH047C21">Zajonc, 1984</xref>; <xref rid="BJH047C10">Lazarus, 1984</xref>). Thus, it seems that the fact that our subjects and those of <xref rid="BJH047C14">Møller <italic>et al.</italic> (2004</xref>) are best at rejecting stimuli that they have not encountered before on the basis of feelings of not knowing, whereas they do not recognize the ones they had before better than chance (see Figure <xref rid="BJH047F2">2</xref>), supports Zajonc’s claim that, affective reactions can be elicited without prior cognitive knowledge of the stimulus. Nevertheless, the fact that we show that the hedonic properties of the stimuli are not involved in this type of memory, might support Lazarus’s claim that preference and the hedonic valence of stimuli are not the primary cause of the subjects reactions and that they not even are emotions. The feelings of ‘not knowing’ on the other hand, are emotions that are involved in the type of memory described here and that do come without any prior cognitive treatment of the (hitherto unknown) stimulus. Further research should also show whether the type of non-semantic episodic memory that seems tuned at detecting unknown aspects of the environment as soon as possible, is specific for the ‘near’ senses, in which explicit identification does not play such an important role as in the ‘far’ senses like vision and audition, where early identification leaves time for adaptive behaviour.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>Acknowledgements</title>
+      <p>This work was carried out with financial support from the European Commission Quality of Life Framework Programme. QLK-1999-00010.</p>
+    </sec>
+    <sec>
+      <title/>
+      <p>
+        <fig id="BJH047F1" position="float">
+          <caption>
+            <p><bold>Figure 1</bold> Means and standard errors of the recognition indices <italic>d</italic>′ of the target in the comparison with each of the different distractors.</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bjh047f1"/>
+        </fig>
+        <fig id="BJH047F2" position="float">
+          <caption>
+            <p><bold>Figure 2</bold> Percentages hits and misses for the targets and percentages correct rejections and false alarms for all four distractors combined per varied attribute in each product.</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bjh047f2"/>
+        </fig>
+        <fig id="BJH047F3" position="float">
+          <caption>
+            <p><bold>Figure 3</bold> Means and standard errors of the deviation in liking from the remembered target of the actually presented distractors and target (+1 = liked more than the remembered target; –1 = liked less than the remembered target).</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bjh047f3"/>
+        </fig>
+        <fig id="BJH047F4" position="float">
+          <caption>
+            <p><bold>Figure 4</bold> Means and standard errors of the deviation in the varied attribute strength of the actually presented distractors and target (+1 = stronger than the remembered target; –1 = weaker than the remembered target).</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bjh047f4"/>
+        </fig>
+        <fig id="BJH047F5" position="float">
+          <caption>
+            <p><bold>Figure 5</bold> Orange juice: means and standard errors of the deviation in the strength of the non-varied attributes for the actually presented distractors and target (+1 = stronger than the remembered target; –1 = weaker than the remembered target).</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bjh047f5"/>
+        </fig>
+        <fig id="BJH047F6" position="float">
+          <caption>
+            <p><bold>Figure 6</bold> Cream cheese: means and standard errors of the deviation in the strength of the non-varied attributes for the actually presented distractors and target (+1 = stronger than the remembered target; –1 = weaker than the remembered target).</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bjh047f6"/>
+        </fig>
+        <fig id="BJH047F7" position="float">
+          <caption>
+            <p><bold>Figure 7</bold> Yoghurt: means and standard errors of the deviation in the strength of the non-varied attributes for the actually presented distractors and target (+1 = stronger than the remembered target; –1 = weaker than the remembered target).</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bjh047f7"/>
+        </fig>
+        <fig id="BJH047F8" position="float">
+          <caption>
+            <p><bold>Figure 8</bold> Means and standard errors of the absolute pleasantness of the targets and distractors (0 = very unpleasant; 100 = very pleasant).</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bjh047f8"/>
+        </fig>
+        <table-wrap id="BJH047TB1">
+          <label>
+            <bold>Table 1</bold>
+          </label>
+          <caption>
+            <p>Concentrations used in the two preliminary experiments</p>
+          </caption>
+          <table content-type="colsep">
+            <tbody align="left" valign="bottom">
+              <tr content-type="rowsep">
+                <td valign="bottom" rowspan="1">Basic product</td>
+                <td valign="bottom" rowspan="1">Quality varied </td>
+                <td valign="bottom" rowspan="1"/>
+                <td colspan="5" valign="bottom" rowspan="1">Added (g/l or g/kg)</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">C1</td>
+                <td valign="bottom" rowspan="1">C2 </td>
+                <td valign="bottom" rowspan="1">C3= S</td>
+                <td valign="bottom" rowspan="1">C4</td>
+                <td valign="bottom" rowspan="1">C5</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Preliminary experiment 1</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Orange juice</td>
+                <td valign="bottom" rowspan="1">Sweet</td>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1"> 3.42</td>
+                <td valign="bottom" rowspan="1">10.26</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">23.94</td>
+                <td valign="bottom" rowspan="1">30.78</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Bitter</td>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 0.19</td>
+                <td valign="bottom" rowspan="1"> 0.58</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 1.36</td>
+                <td valign="bottom" rowspan="1"> 1.75</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Cream cheese</td>
+                <td valign="bottom" rowspan="1">Sour</td>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 0.21</td>
+                <td valign="bottom" rowspan="1"> 0.63</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.47 </td>
+                <td valign="bottom" rowspan="1"> 1.89</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Bitter</td>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 0.19</td>
+                <td valign="bottom" rowspan="1"> 0.58</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 1.36</td>
+                <td valign="bottom" rowspan="1"> 1.75</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Yogurt</td>
+                <td valign="bottom" rowspan="1">Sweet</td>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1"> 3.42</td>
+                <td valign="bottom" rowspan="1">10.26</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">23.94</td>
+                <td valign="bottom" rowspan="1">30.78</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sour</td>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 0.21</td>
+                <td valign="bottom" rowspan="1"> 0.63</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 1.47 </td>
+                <td valign="bottom" rowspan="1"> 1.89</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sugar </td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Preliminary experiment 2</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Orange juice</td>
+                <td valign="bottom" rowspan="1">Sweet</td>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1"> 0.00</td>
+                <td valign="bottom" rowspan="1"> 8.55</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">25.65</td>
+                <td valign="bottom" rowspan="1">34.24</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Bitter</td>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 0.00 </td>
+                <td valign="bottom" rowspan="1"> 0.48</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 1.46</td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Cream cheese</td>
+                <td valign="bottom" rowspan="1">Sour</td>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 0.00</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 3.15</td>
+                <td valign="bottom" rowspan="1"> 4.20</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Bitter</td>
+                <td valign="bottom" rowspan="1">Caffeine </td>
+                <td valign="bottom" rowspan="1"> 0.00</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+                <td valign="bottom" rowspan="1"> 2.91</td>
+                <td valign="bottom" rowspan="1"> 3.88</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Yogurt</td>
+                <td valign="bottom" rowspan="1">Sweet</td>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1"> 3.42</td>
+                <td valign="bottom" rowspan="1">10.26</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">23.94</td>
+                <td valign="bottom" rowspan="1">30.78</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sour</td>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 0.00</td>
+                <td valign="bottom" rowspan="1"> 1.05</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 3.15</td>
+                <td valign="bottom" rowspan="1"> 4.20</td>
+              </tr>
+              <tr content-type="rowsep">
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <table-wrap id="BJH047TB2">
+          <label>
+            <bold>Table 2</bold>
+          </label>
+          <caption>
+            <p>Overview of the stimuli used in the main experiment</p>
+          </caption>
+          <table content-type="colsep">
+            <tbody align="left" valign="bottom">
+              <tr content-type="rowsep">
+                <td valign="bottom" rowspan="1">Main experiment</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td colspan="5" valign="bottom" rowspan="1">Added (g/l or g/kg)</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Basic product</td>
+                <td valign="bottom" rowspan="1">Quality varied</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">–1.0 JND</td>
+                <td valign="bottom" rowspan="1">Target</td>
+                <td valign="bottom" rowspan="1">+1.0 JND</td>
+                <td valign="bottom" rowspan="1">+1.5 JND</td>
+                <td valign="bottom" rowspan="1">+2.0 JND</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Orange juice</td>
+                <td valign="bottom" rowspan="1">Sweet</td>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1"> 3.52</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">30.78</td>
+                <td valign="bottom" rowspan="1">37.96</td>
+                <td valign="bottom" rowspan="1">44.46</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Caffeine<sup>a</sup></td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Bitter</td>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 0.11</td>
+                <td valign="bottom" rowspan="1"> 0.97</td>
+                <td valign="bottom" rowspan="1"> 1.82</td>
+                <td valign="bottom" rowspan="1"> 2.25</td>
+                <td valign="bottom" rowspan="1"> 2.68</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sugar<sup>a</sup></td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Cream cheese</td>
+                <td valign="bottom" rowspan="1">Sour</td>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 0.21</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 3.99</td>
+                <td valign="bottom" rowspan="1"> 4.94</td>
+                <td valign="bottom" rowspan="1"> 5.88</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Caffeine<sup>a</sup></td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Bitter</td>
+                <td valign="bottom" rowspan="1">Caffeine</td>
+                <td valign="bottom" rowspan="1"> 0.35</td>
+                <td valign="bottom" rowspan="1"> 1.94</td>
+                <td valign="bottom" rowspan="1"> 3.53</td>
+                <td valign="bottom" rowspan="1"> 4.33</td>
+                <td valign="bottom" rowspan="1"> 5.12</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Citric acid<sup>a</sup></td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">Yogurt</td>
+                <td valign="bottom" rowspan="1">Sweet</td>
+                <td valign="bottom" rowspan="1">Sugar</td>
+                <td valign="bottom" rowspan="1">11.15</td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1">23.05</td>
+                <td valign="bottom" rowspan="1">26.03</td>
+                <td valign="bottom" rowspan="1">29.00</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Citric acid<sup>a</sup></td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sour</td>
+                <td valign="bottom" rowspan="1">Citric acid</td>
+                <td valign="bottom" rowspan="1"> 0.95</td>
+                <td valign="bottom" rowspan="1"> 2.10</td>
+                <td valign="bottom" rowspan="1"> 3.25</td>
+                <td valign="bottom" rowspan="1"> 3.83</td>
+                <td valign="bottom" rowspan="1"> 4.40</td>
+              </tr>
+              <tr content-type="rowsep">
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sugar<sup>a</sup> </td>
+                <td valign="bottom" rowspan="1">17.10</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p><sup>a</sup>The indicated quantity is present in all five stimuli (four distractors and one target).</p>
+          </table-wrap-foot>
+        </table-wrap>
+        <table-wrap id="BJH047TB3">
+          <label>
+            <bold>Table 3</bold>
+          </label>
+          <caption>
+            <p>Correlations between absolute values of the differences between targets and distractors in absolute liking and the absolute values of the differences between target and distractors in liking relative to the remembered target</p>
+          </caption>
+          <table content-type="colsep">
+            <tbody align="left" valign="bottom">
+              <tr content-type="rowsep">
+                <td valign="bottom" rowspan="1"/>
+                <td colspan="2" valign="bottom" rowspan="1">Orange juice</td>
+                <td valign="bottom" rowspan="1"/>
+                <td colspan="2" valign="bottom" rowspan="1">Cream cheese</td>
+                <td valign="bottom" rowspan="1"/>
+                <td colspan="2" valign="bottom" rowspan="1">Yoghurt</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="2">Average</td>
+                <td valign="bottom" rowspan="2">Variance explained (%)</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sweet</td>
+                <td valign="bottom" rowspan="1">Bitter</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Bitter</td>
+                <td valign="bottom" rowspan="1">Sour</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">Sweet</td>
+                <td valign="bottom" rowspan="1">Sour</td>
+                <td valign="bottom" rowspan="1"/>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">–1.0 JND</td>
+                <td valign="bottom" rowspan="1">0.531**</td>
+                <td valign="bottom" rowspan="1">0.628**</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.354*</td>
+                <td valign="bottom" rowspan="1">0.332</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.370*</td>
+                <td valign="bottom" rowspan="1">0.237</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.408</td>
+                <td valign="bottom" rowspan="1">16.7</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">+1.0 JND</td>
+                <td valign="bottom" rowspan="1">0.420**</td>
+                <td valign="bottom" rowspan="1">0.623**</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.569**</td>
+                <td valign="bottom" rowspan="1">0.405*</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.595**</td>
+                <td valign="bottom" rowspan="1">0.379*</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.499</td>
+                <td valign="bottom" rowspan="1">24.9</td>
+              </tr>
+              <tr>
+                <td valign="bottom" rowspan="1">+1.5 JND</td>
+                <td valign="bottom" rowspan="1">0.672**</td>
+                <td valign="bottom" rowspan="1">0.660**</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.666**</td>
+                <td valign="bottom" rowspan="1">0.545**</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.408*</td>
+                <td valign="bottom" rowspan="1">0.409*</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.560</td>
+                <td valign="bottom" rowspan="1">31.4</td>
+              </tr>
+              <tr content-type="rowsep">
+                <td valign="bottom" rowspan="1">+2.0 JND</td>
+                <td valign="bottom" rowspan="1">0.613**</td>
+                <td valign="bottom" rowspan="1">0.734**</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.688**</td>
+                <td valign="bottom" rowspan="1">0.418*</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.208</td>
+                <td valign="bottom" rowspan="1">0.328</td>
+                <td valign="bottom" rowspan="1"/>
+                <td valign="bottom" rowspan="1">0.498</td>
+                <td valign="bottom" rowspan="1">24.8</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <p>*<italic>P</italic> &lt; 0.05; **<italic>P</italic> &lt; 0.01.</p>
+          </table-wrap-foot>
+        </table-wrap>
+      </p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="BJH047C1">
+        <citation><bold>Algom, D. </bold>and<bold> Cain, W.S.</bold> (<year>1991</year>) <italic>Chemosensory representation in perception and memory</italic>. In Bolanowski, S.J. and Gescheider, G.A. (eds), Ratioscaling of Psychological Magnitude. LEA, Hillsdale, NJ, pp. <fpage>183</fpage>–198.</citation>
+      </ref>
+      <ref id="BJH047C2">
+        <citation><bold>Algom, D. </bold>and<bold> Cain, W.S.</bold> (<year>1991</year>) <italic>Remembered odors and mental mixtures: tapping reservoirs of olfactory knowledge</italic>. <source>J. Exp. Psychol. Hum. Percept. Perform</source>., <volume>17</volume>, <fpage>1104</fpage>–1119.</citation>
+      </ref>
+      <ref id="BJH047C3">
+        <citation><bold>Algom, D. </bold>and<bold> Marks, L.E.</bold> (<year>1989</year>) <italic>Memory Psychophysics for taste.</italic> <source>Bull. Psychon. Soc.</source>, <volume>27</volume>, <fpage>257</fpage>–259.</citation>
+      </ref>
+      <ref id="BJH047C4">
+        <citation><bold>Algom, D., Marks L.E. </bold>and<bold> Cain, W.S.</bold> (<year>1993</year>) <italic>Memory psychophysics for chemosensation: perceptual and mental mixtures of odor and taste</italic>. <source>Chem. Senses</source>, <volume>18</volume>, <fpage>151</fpage>–160.</citation>
+      </ref>
+      <ref id="BJH047C5">
+        <citation><bold>Barker, L.M. </bold>and<bold> Weaver, C.A.</bold> (<year>1983</year>) <italic>Rapid, permanent loss of memory for absolute intensity of taste and smell</italic>. Bull. Psychon. Soc., <volume>21</volume>, <fpage>281</fpage>–284.</citation>
+      </ref>
+      <ref id="BJH047C6">
+        <citation><bold>Degel, J. </bold>and<bold> Köster, E.P.</bold> (<year>1999</year>) <italic>Odors: Implicit memory and performance effects</italic>. <source>Chem. Senses</source>, <volume>24</volume>, <fpage>317</fpage>– 325.</citation>
+      </ref>
+      <ref id="BJH047C7">
+        <citation><bold>Degel, J., Piper, D. </bold>and<bold> Köster E.P.</bold> (<year>2001</year>) <italic>Implicit learning and implicit memory for odors: the influence of odor identification and retention time.</italic> <source>Chem. Senses</source>, <volume>26</volume>, <fpage>267</fpage>–280.</citation>
+      </ref>
+      <ref id="BJH047C8">
+        <citation><bold>Ganchrow, J.R.</bold> (<year>1982</year>) <italic>Affective influences on behavioural responses to the quality and intensity of gustatory stimuli.</italic> In Steiner, J.E. and Ganchrow, J.R. (eds), Determination of Behaviour by Chemical Stimuli. IRL Press, London, pp. <fpage>137</fpage>–148.</citation>
+      </ref>
+      <ref id="BJH047C9">
+        <citation><bold>Köster E.P., Degel, J. </bold>and<bold> Piper, D.</bold> (<year>2002</year>) <italic>Pro-active and retro-active interference in implicit odor memory.</italic> <source>Chem. Senses</source>, <volume>27</volume>, <fpage>191</fpage>–207.</citation>
+      </ref>
+      <ref id="BJH047C10">
+        <citation><bold>Lazarus, R.S.</bold> (<year>1984</year>) <italic>On the primacy of cognition</italic>. <source>Am. Psychol.</source>, <volume>39</volume>, <fpage>124</fpage>–129.</citation>
+      </ref>
+      <ref id="BJH047C11">
+        <citation><bold>Macmillan, N.A. </bold>and<bold> Creelman, C.D.</bold> (<year>1991</year>) Detection Theory: A User’s Guide. Cambridge University Press, Cambridge.</citation>
+      </ref>
+      <ref id="BJH047C12">
+        <citation><bold>Mojet, J. </bold>and<bold> Köster, E.P.</bold> (<year>2002</year>) <italic>Texture and flavour memory in foods: an incidental learning experiment</italic>. <source>Appetite</source>, <volume>38</volume>, 110 – 117.</citation>
+      </ref>
+      <ref id="BJH047C13">
+        <citation><bold>Mojet, J. </bold>and<bold> Köster, E.P.</bold> (<year>2004</year>) <italic>Sensory memory and food texture.</italic> <source>Food Qual. Pref.</source>, in press.</citation>
+      </ref>
+      <ref id="BJH047C14">
+        <citation><bold>Møller, P., Wulff, C. </bold>and<bold> Köster, E.P.</bold> (<year>2004</year>) <italic>Do age differences in odour memory depend on differences in verbal memory?</italic> <source>Neuroreport</source> <volume>15</volume>, <fpage>915</fpage>–917.</citation>
+      </ref>
+      <ref id="BJH047C15">
+        <citation><bold>Stevenson, R.J.</bold> (<year>2001</year>) The acquisition of odour quality. <source>J. Exp. Psychol. Hum. Exp.Psychol. A</source>, 54, <fpage>561</fpage>–578.</citation>
+      </ref>
+      <ref id="BJH047C16">
+        <citation><bold>Stevenson, R.J. </bold>and<bold> Prescott, J.</bold> (<year>1997</year>) <italic>Judgments of chemosensory mixtures in memory.</italic> <source>Acta Psychol.</source>, <volume>95</volume>, <fpage>195</fpage>–214.</citation>
+      </ref>
+      <ref id="BJH047C17">
+        <citation><bold>Stevenson, R.J., Prescott, J. </bold>and<bold> Boakes, R.A.</bold> (<year>1995</year>) <italic>The acquisition of taste properties by odors.</italic> <source>Learn. Motiv.</source>, <volume>26</volume>, <fpage>433</fpage>–455.</citation>
+      </ref>
+      <ref id="BJH047C18">
+        <citation><bold>Stevenson, R.J., Boakes, R.A. </bold>and<bold> Prescott, J.</bold> (<year>1998</year>) <italic>Changes in odor sweetness resulting from implicit learning of a simultaneous odor–sweetness association: an example of learned synesthesia</italic>. <source>Learn. Motiv.</source>, <volume>29</volume>, <fpage>113</fpage>–132.</citation>
+      </ref>
+      <ref id="BJH047C19">
+        <citation><bold>Tuorila, H., Theunissen, M.J.M and Ahlström, R.</bold> (<year>1996</year>) <italic>Recalling taste intensities in sweetened and salted liquids</italic>. <source>Chem. Senses</source>, <volume>21</volume>, <fpage>29</fpage>–34.</citation>
+      </ref>
+      <ref id="BJH047C20">
+        <citation><bold>Vanne, M., Laurinen, P. </bold>and<bold> Tuorila, H.</bold> (<year>1998</year>) <italic>Ad libitum mixing in a taste memory task: methodological issues</italic>. <source>Chem. Senses</source>, <volume>23</volume>, <fpage>379</fpage>–384.</citation>
+      </ref>
+      <ref id="BJH047C21">
+        <citation><bold>Zajonc, R.B.</bold> (<year>1984</year>) <italic>On the primacy of affect</italic>. <source>Am. Psychol.</source>, <volume>39</volume>, <fpage>117</fpage>–123.</citation>
+      </ref>
+      <ref id="BJH047C22">
+        <citation><bold>Zajonc, R.B. </bold>and<bold> Markus, H.</bold> (<year>1982</year>) <italic>Affective and cognitive factors in preferences</italic>. J<source>. Consum. Res.</source>, <volume>9</volume>, <fpage>123</fpage>–131.</citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

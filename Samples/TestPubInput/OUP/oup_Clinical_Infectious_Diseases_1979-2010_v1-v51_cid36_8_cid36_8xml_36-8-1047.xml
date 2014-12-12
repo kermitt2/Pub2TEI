@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" "journalpublishing.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="hwp">cid</journal-id>
+      <journal-id journal-id-type="publisher-id">cid</journal-id>
+      <journal-title>Clinical Infectious Diseases</journal-title>
+      <abbrev-journal-title>Clinical Infectious Diseases</abbrev-journal-title>
+      <issn pub-type="ppub">1058-4838</issn>
+      <issn pub-type="epub">1537-6591</issn>
+      <publisher>
+        <publisher-name>The University of Chicago Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.1086/374048</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>HIV/AIDS</subject>
+          <subj-group subj-group-type="heading">
+            <subject>Major Articles</subject>
+          </subj-group>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Clinical Course and Prognostic Factors of Progressive Multifocal Leukoencephalopathy in Patients Treated with Highly Active Antiretroviral Therapy</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Berenguer</surname>
+            <given-names>Juan</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">1</xref>
+          <xref rid="cor1" ref-type="corresp"/>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Miralles</surname>
+            <given-names>Pilar</given-names>
+          </name>
+          <xref rid="aff1" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Arrizabalaga</surname>
+            <given-names>Julio</given-names>
+          </name>
+          <xref rid="aff5" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ribera</surname>
+            <given-names>Esteban</given-names>
+          </name>
+          <xref rid="aff6" ref-type="aff">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Dronda</surname>
+            <given-names>Fernando</given-names>
+          </name>
+          <xref rid="aff2" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Baraia-Etxaburu</surname>
+            <given-names>Josu</given-names>
+          </name>
+          <xref rid="aff9" ref-type="aff">9</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Domingo</surname>
+            <given-names>Pere</given-names>
+          </name>
+          <xref rid="aff7" ref-type="aff">7</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Márquez</surname>
+            <given-names>Manuel</given-names>
+          </name>
+          <xref rid="aff10" ref-type="aff">10</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rodriguez-Arrondo</surname>
+            <given-names>Francisco J.</given-names>
+          </name>
+          <xref rid="aff5" ref-type="aff">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Laguna</surname>
+            <given-names>Fernando</given-names>
+          </name>
+          <xref rid="aff3" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rubio</surname>
+            <given-names>Rafael</given-names>
+          </name>
+          <xref rid="aff4" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rodrigo</surname>
+            <given-names>José Lacruz</given-names>
+          </name>
+          <xref rid="aff11" ref-type="aff">11</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mallolas</surname>
+            <given-names>J.</given-names>
+          </name>
+          <xref rid="aff8" ref-type="aff">8</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>de Miguel</surname>
+            <given-names>Verónica</given-names>
+          </name>
+          <xref rid="aff12" ref-type="aff">12</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <collab>GESIDA 11/99 Study Group</collab>
+          <xref ref-type="author-notes" rid="FN1">a</xref>
+        </contrib>
+        <aff id="aff1"><label>1</label><institution>Infectious Diseases Services of Hospital Gregorio Marañón</institution>, <addr-line>Madrid</addr-line></aff>
+        <aff id="aff2"><label>2</label><institution>Infectious Diseases Services of Hospital Ramón y Cajal</institution>, <addr-line>Madrid</addr-line></aff>
+        <aff id="aff3"><label>3</label><institution>Infectious Diseases Services of Hospital Carlos III</institution>, <addr-line>Madrid</addr-line></aff>
+        <aff id="aff4"><label>4</label><institution>Infectious Diseases Services of Hospital 12 de Octubre</institution>, <addr-line>Madrid</addr-line></aff>
+        <aff id="aff5"><label>5</label><institution>Infectious Diseases Services of Hospital Aránzazu</institution>, <addr-line>San Sebastian</addr-line></aff>
+        <aff id="aff6"><label>6</label><institution>Infectious Diseases Services of Hospital Vall de Hebrón</institution>, <addr-line>Barcelona</addr-line></aff>
+        <aff id="aff7"><label>7</label><institution>Infectious Diseases Services of Hospital San Pau</institution>, <addr-line>Barcelona</addr-line></aff>
+        <aff id="aff8"><label>8</label><institution>Infectious Diseases Services of Hospital Clinic</institution>, <addr-line>Barcelona</addr-line></aff>
+        <aff id="aff9"><label>9</label><institution>Infectious Diseases Services of Hospital Basurto</institution>, <addr-line>Bilbao</addr-line></aff>
+        <aff id="aff10"><label>10</label><institution>Infectious Diseases Services of Hospital Virgen de la Victoria</institution>, <addr-line>Málaga</addr-line></aff>
+        <aff id="aff11"><label>11</label><institution>Infectious Diseases Services of Hospital La Fé</institution>, <addr-line>Valencia</addr-line></aff>
+        <aff id="aff12"><label>12</label><institution>Infectious Diseases Services of Grupo de Estudio del SIDA (GESIDA) Clinical Trials Agency</institution>, <addr-line>Madrid, Spain</addr-line></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1">Reprints or correspondence: Dr. Juan Berenguer, Unidad de Enfermedades Infecciosas, Hospital Gregorio Marañón, Doctor Esquerdo 46, 28007, Madrid, Spain (<email>juaberber@terra.es</email>).</corresp>
+        <fn id="FN1">
+          <label>a</label>
+          <p>Members of the study group are listed at the end of the text.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <day>15</day>
+        <month>4</month>
+        <year>2003</year>
+      </pub-date>
+      <volume>36</volume>
+      <issue>8</issue>
+      <fpage>1047</fpage>
+      <lpage>1052</lpage>
+      <history>
+        <date date-type="received">
+          <day>31</day>
+          <month>7</month>
+          <year>2002</year>
+        </date>
+        <date date-type="accepted">
+          <day>25</day>
+          <month>12</month>
+          <year>2002</year>
+        </date>
+      </history>
+      <copyright-statement>© 2003 by the Infectious Diseases Society of America</copyright-statement>
+      <copyright-year>2003</copyright-year>
+      <abstract>
+        <p>We analyzed survival rates, neurologic function, and prognostic factors for 118 consecutive patients with acquired immunodeficiency syndrome-associated progressive multifocal leukoencephalopathy (PML) treated with highly active antiretroviral therapy (HAART) in 11 hospitals throughout Spain. Seventy-five patients (63.6%) remained alive for a median of 114 weeks (2.2 years) after diagnosis of PML. Neurologic function of the survivors was categorized as cure or improvement in 33, stabilization or worsening in 40, and unknown in 2. The baseline CD4<sup>+</sup>cell count was the only variable found with prognostic significance. The odds ratio of death was 2.71 (95% confidence interval, 1.19–6.15) for patients with CD4<sup>+</sup>cell counts of &lt;100 cells/μL, compared with patients who had CD4<sup>+</sup>cell counts of ⩾100 cells/μL. One-third of patients with PML died despite receipt of HAART; neurologic function improved in approximately one-half of the survivors. A CD4<sup>+</sup>cell count of &lt;100 cells/μL was associated with higher mortality.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <p>Progressive multifocal leukoencephalopathy (PML) is a demyelinating disease of the CNS caused by the human polyomavirus JC (JCV); it is normally seen in immunocompromised individuals. In the past 2 decades, the number of PML cases has increased dramatically as a result of HIV-induced immunosuppression. Clinically, PML is characterized by progressive neurologic deficits leading almost invariably to death a median of 4–6 months after diagnosis [<xref rid="ref1" ref-type="bibr">1</xref>].</p>
+    <p>The introduction of HAART has led to a striking reduction in AIDS-related morbidity and mortality [<xref rid="ref2" ref-type="bibr">2</xref>, <xref rid="ref3" ref-type="bibr">3</xref>]. However, solid data about the effect of HAART on the incidence of AIDS-associated PML are lacking. Several small case series have shown that the use of HAART may be associated with prolonged survival in some patients [<xref rid="ref4" ref-type="bibr">4</xref>–<xref rid="ref7" ref-type="bibr">7</xref>], although the effect of HAART on the clinical status and radiological features of PML is still questioned [<xref rid="ref8" ref-type="bibr">8</xref>, <xref rid="ref9" ref-type="bibr">9</xref>]. The objectives of our study were to analyze patient survival, the neurologic function of patients, and the prognostic factors of PML in a large cohort of patients treated with HAART in several hospitals in Spain.</p>
+    <sec sec-type="materials|methods" id="sec1">
+      <title>Materials and Methods</title>
+      <p><bold><italic>Study design</italic></bold>. GESIDA (Grupo de Estudio del SIDA) 11/99 was a multicenter retrospective study of consecutive patients who had AIDS-related PML diagnosed in 11 hospitals throughout Spain. The inclusion criteria of the study were as follows: confirmed HIV infection; a diagnosis of PML based on clinical and radiological abnormalities highly suggestive of the condition (see below), with or without confirmation by brain biopsy and/or PCR detection of JCV in CSF specimens; and receipt of treatment with HAART. We considered as highly suggestive of PML those lesions appearing on CT scans as hypoattenuating zones in the white matter without contrast enhancement and no mass effect. On MRI scans, these lesions were characterized by areas of increased signal intensity on T2-weighted images and were isointense or hypointense in relation to the cortex on T1-weighted images.</p>
+      <p>The clinical record of each patient was reviewed, and the following information was obtained: demographic characteristics, such as age and sex; HIV infection-related data, such as risk group, year of diagnosis of HIV infection, previous AIDS-defining conditions, CD4<sup>+</sup>cell count, plasma HIV load, and antiretroviral therapy received before and after diagnosis of PML; and PML-related data, including symptoms and signs, date of onset of symptoms, date of diagnosis of PML, radiological manifestations, confirmation by brain biopsy and/or PCR, and therapies received other than HAART, such as therapy with cidofovir and corticosteroids.</p>
+      <p>With regard to disease outcome, we measured survival after the diagnosis of PML, identified the cause of death, and classified the cause of death as related or not related to PML. Investigators at each center were asked to assess the neurologic function of survivors at the last follow-up visit, to compare it with the neurologic function at the date of diagnosis of PML, and to categorize the response as one of the following: cure (resolution of symptoms and signs of PML), improvement (reduction of symptoms and signs of PML), stabilization (no change in symptoms and signs of PML), or worsening (progression of symptoms and signs of PML).</p>
+      <p>The response to HAART was evaluated up to 4 ± 2 months after the initiation of treatment. We considered virological failure to be any of the following: initial decrease to &lt;1 log copies/mL of plasma HIV load at 4–8 weeks after initiating HAART; an increase in plasma HIV load 3 times greater or &gt;0.5 log copies/mL with respect to the lowest value if an undetectable plasma HIV load (&lt;500 copies/mL) was not achieved; and in patients in whom, after reaching an undetectable plasma HIV load (&lt;500 copies/mL), the plasma HIV load once again became detectable in 2 consecutive tests.</p>
+      <p><bold><italic>Statistical analysis</italic></bold>. Proportions were compared by the χ<sup>2</sup>test or Fisher's exact test, as appropriate. Continuous variables were compared by Student's <italic>t</italic> test or the Mann-Whitney rank sum test. The Kaplan-Meier method was used to assess survival. Comparison of survival was performed by the log-rank test. The tests were calculated by SPSS software, version 9.0 for Windows (SPSS). All <italic>P</italic> values are 2-tailed. Statistical significance was defined as <italic>P</italic> &lt; .05.</p>
+    </sec>
+    <sec sec-type="Results" id="sec2">
+      <title>Results</title>
+      <p>The study included a total of 118 patients, 42 of whom had PML confirmed by brain biopsy and/or PCR, and 76 of whom had PML diagnosed on the basis of clinical and radiological findings. The characteristics of our patients are listed in <xref rid="tab1" ref-type="fig">table 1</xref>. In summary, the median age was 36 years, the ratio of male to female patients was 4.9, approximately two-thirds of patients acquired HIV infection by injection drug use, the median CD4<sup>+</sup>cell count was 85 cells/μL, the mean plasma HIV load was 4.85 log copies/mL, and nearly one-third of the patients had previous AIDS-defining conditions.</p>
+      <p>Complaints of weakness and of gait and speech disorders were the most common symptoms reported by patients with PML, and the most common signs were limb weakness, alterations of speech, and lack of coordination (<xref rid="tab2" ref-type="fig">table 2</xref>). MRI was performed for 108 patients, CT was performed for 104 patients, and 96 patients underwent both. Supratentorial lesions were found in nearly 90% of the patients, and infratentorial lesions were found in two-thirds. CT was less sensitive for detection of the presence of PML lesions than was MRI, particularly for detection of infratentorial lesions (<xref rid="tab3" ref-type="fig">table 3</xref>).</p>
+      <p>The median duration of symptoms before initiation of HAART was 6 weeks (interquartile range, 1–14 weeks), and the median time from PML diagnosis to initiation of HAART was 1 week (interquartile range, 3–14 weeks). In our series, 39 patients developed symptoms of PML after initiation of HAART. In 9 patients, the disease developed in the context of therapeutic failure with HAART; this was usually the result of poor adherence to treatment (<italic>n</italic> = 6). In these patients, the median time from initiation of HAART to the clinical onset of disease was 30 weeks.</p>
+      <p>In a further 10 patients, the disease probably occurred as an immune reconstitution syndrome, because, at the time of clinical manifestations, the patients had increased CD4<sup>+</sup>cell counts and/or reduced HIV loads. In 2 of these patients, MRI with gadolinium enhancement revealed PML lesions. The median time between initiation of HAART and clinical onset of disease in these patients was 6 weeks (minimum, 3 weeks; maximum, 13 weeks). Finally, in 20 patients, the development of PML could not be attributed to immune reconstitution or therapeutic failure.</p>
+      <p>Cidofovir therapy was administered to 44 (37.3%) of 118 patients in accordance with standard recommendations for treatment and management of cytomegalovirus retinitis [<xref rid="ref10" ref-type="bibr">10</xref>]. The median number of doses was 5 (interquartile range, 3–11 doses). Differences in baseline characteristics were not found between patients treated or not treated with cidofovir, with the exception that the proportion of biopsy- and/or PCR-confirmed cases of PML was higher among patients treated with cidofovir (77.3% vs. 56.8%; <italic>P</italic> = .029). Corticosteroid therapy for treatment or prevention of brain inflammatory reactions was administered to 8 patients. The dosage was 1 mg/kg of prednisone per day for 2 weeks, with the dosage tapered over a period of 8 weeks.</p>
+      <p>Seventy-five patients (63.6%; 95% CI, 54.1%–72.1%) remained alive for a median of 114 weeks (2.2 years) after the diagnosis of PML. There were 36 related deaths (30.5%; 95% CI, 22.5%–39.8%) that occurred a median of 12 weeks after the diagnosis of PML. Aspirative pneumonia was the direct cause of death in most of the cases. Seven patients died as a result of conditions not related to PML, including liver failure (<italic>n</italic> = 2), heart failure (<italic>n</italic> = 1), acute leukemia (<italic>n</italic> = 1), renal failure (<italic>n</italic> = 1), sepsis (<italic>n</italic> = 1), and cerebrovascular disease (<italic>n</italic> = 1).</p>
+      <p>We estimated the cumulative probability of survival after the diagnosis of PML using the Kaplan-Meier method. The follow-up was censored at 30 June 2000. The median survival time was not reached, and the mean survival time was 209 weeks. Neurologic function in survivors was categorized as cure or improvement in 33 (44%) of 75 patients and as stabilization or worsening in 40 patients (53%). In 2 patients, it could not be evaluated.</p>
+      <p>The results of univariate analysis of variables associated with mortality in patients with PML treated with HAART are shown in <xref rid="tab4" ref-type="fig">table 4</xref>. The CD4<sup>+</sup>cell count was the only variable found to have prognostic significance. The proportion of patients with CD4<sup>+</sup>cell counts of &lt;100 cells/μL was 47% among survivors and 71% in the patients who died (<italic>P</italic> = .02); the median CD4<sup>+</sup>cell count was 114 cells/μL among the former and 75 cells/μL among the latter. The risk estimate (OR) of death was 2.71 (95% CI, 1.19–6.15) for patients with a CD4<sup>+</sup>cell count of &lt;100 cells/μL compared with patients who had CD4<sup>+</sup>cell counts of ⩾100 cells/μL. The cumulative probability of survival categorized by baseline CD4<sup>+</sup>cell count is shown in <xref rid="fig1" ref-type="fig">figure 1</xref>; the mean survival time was 235 weeks for patients with a CD4<sup>+</sup>cell count of ⩾100 cells/μL and 177 weeks for patients with a CD4<sup>+</sup>ell count of &lt;100 cells/μL (<italic>P</italic> = .0085, by log-rank test).</p>
+    </sec>
+    <sec sec-type="Discussion" id="sec3">
+      <title>Discussion</title>
+      <p>In this large study, we found that approximately one-third of patients with PML died despite receiving HAART, and that related deaths occurred soon after the diagnosis of PML and were caused by aspirative pneumonia in most cases. We also found that neurologic function improved in approximately one-half of the survivors. The baseline CD4<sup>+</sup>cell count was the only variable found to have prognostic significance. The OR of death was 2.71 for patients with a CD4<sup>+</sup>cell count of &lt;100 cells/μL, compared with patients who had a CD4<sup>+</sup>cell count of ⩾100 cells/μL.</p>
+      <p>Before the HAART era, the prognosis of PML was dismal; patients deteriorated progressively and died a median of 4–6 months after diagnosis, although, exceptionally, some experienced prolonged survival with recovery of neurologic function and improvement of radiographic abnormalities [<xref rid="ref1" ref-type="bibr">1</xref>]. Soon after the widespread use of HAART, small series and isolated case reports described patients with PML who had long durations of survival and clinical recovery [<xref rid="ref11" ref-type="bibr">11</xref>–<xref rid="ref13" ref-type="bibr">13</xref>]. Thereafter, several case series showed prolonged survival for patients with PML who were treated with HAART, compared with untreated historic controls [<xref rid="ref4" ref-type="bibr">4</xref>–<xref rid="ref7" ref-type="bibr">7</xref>, <xref rid="ref14" ref-type="bibr">14</xref>–<xref rid="ref16" ref-type="bibr">16</xref>]. However, wide differences in the mortality rate (8.33%–39.5%) were observed in the aforementioned studies. The rate of mortality attributable to PML in our study (30.5%) is probably a good estimation, given the large size of our cohort, and it could be taken as a reference for future work.</p>
+      <p>We found that the neurologic function at the last follow-up visit improved in comparison with baseline in approximately one-half of the survivors. We believe that this is an important finding, because contradictory results have been published regarding the effect of HAART on neurologic function. Some studies reported clinical improvement in a sizable number of patients [<xref rid="ref4" ref-type="bibr">4</xref>, <xref rid="ref5" ref-type="bibr">5</xref>], whereas others found no clinical improvement among survivors [<xref rid="ref9" ref-type="bibr">9</xref>]. HAART has also been found to have an effect on PML lesions visible on radiographic images, with reduction in the size of active PML lesions, normally accompanied by residual changes and retraction of the cortex and the ventricular system [<xref rid="ref4" ref-type="bibr">4</xref>]. Nevertheless, the design of our study precluded any conclusion about the effect of HAART on radiographic abnormalities of PML.</p>
+      <p>As has been mentioned, PML has a significant mortality rate. Consequently, it is very important to identify risk factors for mortality. We were able to identify the CD4<sup>+</sup>cell count as the only baseline variable with prognostic significance and establish a clearly different prognosis in groups of patients with CD4<sup>+</sup>cell counts higher or lower than 100 cells/μL. Age, sex, risk group, previous AIDS-defining conditions, time from onset of PML to initiation of HAART, confirmation by brain biopsy and/or PCR, and localization of PML lesions and response to HAART were not associated with death.</p>
+      <p>Very few of our patients were studied with quantitative PCR for JCV, so we could not assess the prognostic value of JCV burden in the CSF, although other authors have found an inverse correlation between JCV load values in the CSF and the clinical outcome of patients with PML [<xref rid="ref17" ref-type="bibr">17</xref>–<xref rid="ref21" ref-type="bibr">21</xref>]. In a subgroup of patients from one of the institutions participating in the GESIDA 11/99 study, an inverse correlation between survival time and the JCV load in CSF was also found; this has been reported elsewhere [<xref rid="ref22" ref-type="bibr">22</xref>]. This correlation was supported by the significant differences in survival found for patients with a JCV load of &gt;4.68 log, compared with that found for patients with a JCV load of &lt;4.68 log [<xref rid="ref22" ref-type="bibr">22</xref>].</p>
+      <p>In our series, 39 patients developed PML after the initiation of HAART. In 9 of these patients, PML appeared in the context of a failing regimen. In 10 patients, the disease was probably brought out by HAART as an immune reconstitution syndrome, a phenomenon that has been previously described [<xref rid="ref23" ref-type="bibr">23</xref>]. For the remaining 20 patients, the best explanation for the development of PML after the initiation of HAART may be a delay in restoration of immune function. It is well known that patients with very low CD4<sup>+</sup>cell counts who initiate therapy can develop AIDS-defining events, particularly during the first 2 months of treatment [<xref rid="ref24" ref-type="bibr">24</xref>].</p>
+      <p>Currently, there is no specific therapy for PML. Cidofovir, a nucleotide analog with in vitro activity against cytomegalovirus and other herpesvirus, has been found to be the most selective antipolyomavirus agent in vitro [<xref rid="ref25" ref-type="bibr">25</xref>]. Several clinical anecdotes [<xref rid="ref26" ref-type="bibr">26</xref>–<xref rid="ref29" ref-type="bibr">29</xref>], a case-control study [<xref rid="ref30" ref-type="bibr">30</xref>], and a multicenter observational study [<xref rid="ref31" ref-type="bibr">31</xref>] have evaluated cidofovir for PML, with good results. In contrast, in a prospective nonrandomized pilot study, cidofovir did not prolong survival in patients with PML beyond what has been reported without this antiviral drug [<xref rid="ref32" ref-type="bibr">32</xref>]. In our study, we did not find better survival rates among cidofovir-treated patients. In any case, no solid recommendation can be made about the use of cidofovir therapy for PML because no randomized, controlled study with an adequate size of cohorts has been performed.</p>
+      <p>In conclusion, we found that one-third of patients with PML died despite receiving HAART and that neurologic function improved in approximately one-half of the survivors. A CD4<sup>+</sup>cell count of &lt;100 cells/μL was associated with a higher mortality rate.</p>
+    </sec>
+    <sec sec-type="Study Group Members" id="sec4">
+      <title>Study Group Members</title>
+      <p>Members of the GESIDA 11/99 study include Jaime Cosín and Juan Carlos López (Hospital Gregorio Marañón, Madrid), Iñigo Corral and Carmen Quereda (Hospital Ramón y Cajal, Madrid), Eulalia Valencia and Victoria Moreno (Hospital Carlos III, Madrid), Jesús Santos Gonzalez (Hospital Virgen de la Victoria, Málaga), Miguel Torralba (Hospital 12 de Octubre, Madrid), Vicente Renovell and José López Aldeguer (Hospital La Fé, Valencia), and Miguel Angel García-Viejo (Hospital Clinic, Barcelona).</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <title>Acknowledgments</title>
+      <p>We sincerely appreciate the help of Thomas O'Boyle in the preparation of the article in manuscript. We are indebted to Ana Terleira and Emilio Vargas for their help with the statistical analysis.</p>
+    </ack>
+    <ref-list>
+      <title>References</title>
+      <ref id="ref1">
+        <label>1</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berger</surname>
+              <given-names>JR</given-names>
+            </name>
+            <name>
+              <surname>Major</surname>
+              <given-names>EO</given-names>
+            </name>
+          </person-group>
+          <article-title>Progressive multifocal leukoencephalopathy</article-title>
+          <source>Semin Neurol</source>
+          <year>1999</year>
+          <volume>19</volume>
+          <fpage>193</fpage>
+          <lpage>200</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref2">
+        <label>2</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Palella</surname>
+              <given-names>FJ</given-names>
+              <suffix>Jr</suffix>
+            </name>
+            <name>
+              <surname>Delaney</surname>
+              <given-names>KM</given-names>
+            </name>
+            <name>
+              <surname>Moorman</surname>
+              <given-names>AC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Declining morbidity and mortality among patients with advanced human immunodeficiency virus infection. HIV Outpatient Study Investigators</article-title>
+          <source>N Engl J Med</source>
+          <year>1998</year>
+          <volume>338</volume>
+          <fpage>853</fpage>
+          <lpage>60</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref3">
+        <label>3</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaplan</surname>
+              <given-names>JE</given-names>
+            </name>
+            <name>
+              <surname>Hanson</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Dworkin</surname>
+              <given-names>MS</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Epidemiology of human immunodeficiency virus-associated opportunistic infections in the United States in the era of highly active antiretroviral therapy</article-title>
+          <source>Clin Infect Dis</source>
+          <year>2000</year>
+          <volume>30</volume>
+          <issue>(Suppl 1)</issue>
+          <fpage>5</fpage>
+          <lpage>14</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref4">
+        <label>4</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miralles</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Berenguer</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Garcia de Viedma</surname>
+              <given-names>D</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Treatment of AIDS-associated progressive multifocal leukoencephalopathy with highly active antiretroviral therapy</article-title>
+          <source>AIDS</source>
+          <year>1998</year>
+          <volume>12</volume>
+          <fpage>2467</fpage>
+          <lpage>72</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref5">
+        <label>5</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Albrecht</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Hoffmann</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Degen</surname>
+              <given-names>O</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Highly active antiretroviral therapy significantly improves the prognosis of patients with HIV-associated progressive multifocal leukoencephalopathy</article-title>
+          <source>AIDS</source>
+          <year>1998</year>
+          <volume>12</volume>
+          <fpage>1149</fpage>
+          <lpage>54</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref6">
+        <label>6</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Clifford</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Yiannoutsos</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Glicksman</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>HAART improves prognosis in HIV-associated progressive multifocal leukoencephalopathy</article-title>
+          <source>Neurology</source>
+          <year>1999</year>
+          <volume>52</volume>
+          <fpage>623</fpage>
+          <lpage>5</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref7">
+        <label>7</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tassie</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Gasnault</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Bentata</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Survival improvement of AIDS-related progressive multifocal leukoencephalopathy in the era of protease inhibitors. Clinical Epidemiology Group. French Hospital Database on HIV</article-title>
+          <source>AIDS</source>
+          <year>1999</year>
+          <volume>13</volume>
+          <fpage>1881</fpage>
+          <lpage>7</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref8">
+        <label>8</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tantisiriwat</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Tebas</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Clifford</surname>
+              <given-names>DB</given-names>
+            </name>
+            <name>
+              <surname>Powderly</surname>
+              <given-names>WG</given-names>
+            </name>
+            <name>
+              <surname>Fichtenbaum</surname>
+              <given-names>CJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Progressive multifocal leukoencephalopathy in patients with AIDS receiving highly active antiretroviral therapy</article-title>
+          <source>Clin Infect Dis</source>
+          <year>1999</year>
+          <volume>28</volume>
+          <fpage>1152</fpage>
+          <lpage>4</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref9">
+        <label>9</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gasnault</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Taoufik</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Goujard</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prolonged survival without neurological improvement in patients with AIDS-related progressive multifocal leukoencephalopathy on potent combined antiretroviral therapy</article-title>
+          <source>J Neurovirol</source>
+          <year>1999</year>
+          <volume>5</volume>
+          <fpage>421</fpage>
+          <lpage>9</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref10">
+        <label>10</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Berenguer</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Mallolas</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Intravenous cidofovir for compassionate use in AIDS patients with cytomegalovirus retinitis. Spanish Cidofovir Study Group</article-title>
+          <source>Clin Infect Dis</source>
+          <year>2000</year>
+          <volume>30</volume>
+          <fpage>182</fpage>
+          <lpage>4</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref11">
+        <label>11</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Domingo</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Guardiola</surname>
+              <given-names>JM</given-names>
+            </name>
+            <name>
+              <surname>Iranzo</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Margall</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Remission of progressive multifocal leucoencephalopathy after antiretroviral therapy</article-title>
+          <source>Lancet</source>
+          <year>1997</year>
+          <volume>349</volume>
+          <fpage>1554</fpage>
+          <lpage>5</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref12">
+        <label>12</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baldeweg</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Catalan</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Remission of progressive multifocal leucoencephalopathy after antiretroviral therapy</article-title>
+          <source>Lancet</source>
+          <year>1997</year>
+          <volume>349</volume>
+          <fpage>1554</fpage>
+          <lpage>5</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref13">
+        <label>13</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Baqi</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Kucharczyk</surname>
+              <given-names>W</given-names>
+            </name>
+            <name>
+              <surname>Walmsley</surname>
+              <given-names>SL</given-names>
+            </name>
+          </person-group>
+          <article-title>Regression of progressive multifocal encephalopathy with highly active antiretroviral therapy</article-title>
+          <source>AIDS</source>
+          <year>1997</year>
+          <volume>11</volume>
+          <fpage>1526</fpage>
+          <lpage>7</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref14">
+        <label>14</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Asensi</surname>
+              <given-names>V</given-names>
+            </name>
+            <name>
+              <surname>Carton</surname>
+              <given-names>JA</given-names>
+            </name>
+            <name>
+              <surname>Maradona</surname>
+              <given-names>JA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Progressive multifocal leukoencephalopathy associated with human immunodeficiency virus infection: the clinical, neuroimaging, virological and evolutive characteristics in 35 patients [in Spanish]</article-title>
+          <source>Med Clin (Barc)</source>
+          <year>1999</year>
+          <volume>113</volume>
+          <fpage>210</fpage>
+          <lpage>4</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref15">
+        <label>15</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gasnault</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Taoufik</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Goujard</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prolonged survival without neurological improvement in patients with AIDS-related progressive multifocal leukoencephalopathy on potent antiretroviral therapy</article-title>
+          <source>J Neurovirol</source>
+          <year>1999</year>
+          <volume>5</volume>
+          <fpage>421</fpage>
+          <lpage>9</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref16">
+        <label>16</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Giudici</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Vaz</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Bossolasco</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Highly active antiretroviral therapy and progressive multifocal leukoencephalopathy: effects on cerebrospinal fluid markers of JC virus replication and immune response</article-title>
+          <source>Clin Infect Dis</source>
+          <year>2000</year>
+          <volume>30</volume>
+          <fpage>95</fpage>
+          <lpage>9</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref17">
+        <label>17</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Koralnik</surname>
+              <given-names>IJ</given-names>
+            </name>
+            <name>
+              <surname>Boden</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Mai</surname>
+              <given-names>VX</given-names>
+            </name>
+            <name>
+              <surname>Lord</surname>
+              <given-names>CI</given-names>
+            </name>
+            <name>
+              <surname>Letvin</surname>
+              <given-names>NL</given-names>
+            </name>
+          </person-group>
+          <article-title>JC virus DNA load in patients with and without progressive multifocal leukoencephalopathy</article-title>
+          <source>Neurology</source>
+          <year>1999</year>
+          <volume>52</volume>
+          <fpage>253</fpage>
+          <lpage>60</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref18">
+        <label>18</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taoufik</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Gasnault</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Karaterki</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prognostic value of JC virus load in cerebrospinal fluid of patients with progressive multifocal leukoencephalopathy</article-title>
+          <source>J Infect Dis</source>
+          <year>1998</year>
+          <volume>178</volume>
+          <fpage>1816</fpage>
+          <lpage>20</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref19">
+        <label>19</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yiannoutsos</surname>
+              <given-names>CT</given-names>
+            </name>
+            <name>
+              <surname>Major</surname>
+              <given-names>EO</given-names>
+            </name>
+            <name>
+              <surname>Curfman</surname>
+              <given-names>B</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Relation of JC virus DNA in the cerebrospinal fluid to survival in acquired immunodeficiency syndrome patients with biopsy-proven progressive multifocal leukoencephalopathy</article-title>
+          <source>Ann Neurol</source>
+          <year>1999</year>
+          <volume>45</volume>
+          <fpage>816</fpage>
+          <lpage>21</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref20">
+        <label>20</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Taoufik</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Delfraissy</surname>
+              <given-names>JF</given-names>
+            </name>
+            <name>
+              <surname>Gasnault</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Highly active antiretroviral therapy does not improve survival of patients with high JC virus load in the cerebrospinal fluid at progressive multifocal leukoencephalopathy diagnosis</article-title>
+          <source>AIDS</source>
+          <year>2000</year>
+          <volume>14</volume>
+          <fpage>758</fpage>
+          <lpage>9</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref21">
+        <label>21</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>De Luca</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Giancola</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Ammassari</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The effect of potent antiretroviral therapy and JC virus load in cerebrospinal fluid on clinical outcome of patients with AIDS-associated progressive multifocal leukoencephalopathy</article-title>
+          <source>J Infect Dis</source>
+          <year>2000</year>
+          <volume>182</volume>
+          <fpage>1077</fpage>
+          <lpage>83</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref22">
+        <label>22</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Garcia De Viedma</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Diaz Infantes</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Miralles</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>JC virus load in progressive multifocal leukoencephalopathy: analysis of the correlation between the viral burden in cerebrospinal fluid, patient survival, and the volume of neurological lesions</article-title>
+          <source>Clin Infect Dis</source>
+          <year>2002</year>
+          <volume>34</volume>
+          <fpage>1568</fpage>
+          <lpage>75</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref23">
+        <label>23</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mayo</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Collazos</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Martinez</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Progressive multifocal leukoencephalopathy following initiation of highly active antiretroviral therapy</article-title>
+          <source>AIDS</source>
+          <year>1998</year>
+          <volume>12</volume>
+          <fpage>1720</fpage>
+          <lpage>2</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref24">
+        <label>24</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ledergerber</surname>
+              <given-names>B</given-names>
+            </name>
+            <name>
+              <surname>Egger</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Erard</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>AIDS-related opportunistic illnesses occurring after initiation of potent antiretroviral therapy: the Swiss HIV Cohort Study</article-title>
+          <source>JAMA</source>
+          <year>1999</year>
+          <volume>282</volume>
+          <fpage>2220</fpage>
+          <lpage>6</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref25">
+        <label>25</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Andrei</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Snoeck</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Vandeputte</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>De Clercq</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Activities of various compounds against murine and primate polyomaviruses</article-title>
+          <source>Antimicrob Agents Chemother</source>
+          <year>1997</year>
+          <volume>41</volume>
+          <fpage>587</fpage>
+          <lpage>93</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref26">
+        <label>26</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Meylan</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name>
+              <surname>Vuadens</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Maeder</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Sahli</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Tagan</surname>
+              <given-names>MC</given-names>
+            </name>
+          </person-group>
+          <article-title>Monitoring the response of AIDS-related progressive multifocal leukoencephalopathy to HAART and cidofovir by PCR for JC virus DNA in the CSF</article-title>
+          <source>Eur Neurol</source>
+          <year>1999</year>
+          <volume>41</volume>
+          <fpage>172</fpage>
+          <lpage>4</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref27">
+        <label>27</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>De Luca</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Fantoni</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Tartaglione</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Antinori</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Response to cidofovir after failure of antiretroviral therapy alone in AIDS-associated progressive multifocal leukoencephalopathy</article-title>
+          <source>Neurology</source>
+          <year>1999</year>
+          <volume>52</volume>
+          <fpage>891</fpage>
+          <lpage>2</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref28">
+        <label>28</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brambilla</surname>
+              <given-names>AM</given-names>
+            </name>
+            <name>
+              <surname>Castagna</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Novati</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Remission of AIDS-associated progressive multifocal leukoencephalopathy after cidofovir therapy</article-title>
+          <source>J Neurol</source>
+          <year>1999</year>
+          <volume>246</volume>
+          <fpage>723</fpage>
+          <lpage>5</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref29">
+        <label>29</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chocarro Martinez</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gonzalez Lopez</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Garcia Garcia</surname>
+              <given-names>I</given-names>
+            </name>
+          </person-group>
+          <article-title>Successful resolution of progressive multifocal leukoencephalopathy after combination therapy with cidofovir and cytosine arabinoside [letter]</article-title>
+          <source>Clin Infect Dis</source>
+          <year>2000</year>
+          <volume>30</volume>
+          <fpage>234</fpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref30">
+        <label>30</label>
+        <nlm-citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gasnault</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Taoufik</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name>
+              <surname>Abbed</surname>
+              <given-names>K</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Experience of cidofovir in HIV-associated progressive multifocal leukoencephalopathy: clinical and virological monitoring [abstract 417]</article-title>
+          <source>Programs and abstracts of the 6th Conference on Retroviruses and Opportunistic Infections (Chicago)</source>
+          <year>1999</year>
+          <publisher-loc>Alexandria, VA</publisher-loc>
+          <publisher-name>Foundation for Retrovirology and Human Health</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="ref31">
+        <label>31</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>De Luca</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Giancola</surname>
+              <given-names>ML</given-names>
+            </name>
+            <name>
+              <surname>Ammassari</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cidofovir added to HAART improves virological and clinical outcome in AIDS-associated progressive multifocal leukoencephalopathy</article-title>
+          <source>AIDS</source>
+          <year>2000</year>
+          <volume>14</volume>
+          <fpage>117</fpage>
+          <lpage>21</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="ref32">
+        <label>32</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Marra</surname>
+              <given-names>CM</given-names>
+            </name>
+            <name>
+              <surname>Rajicic</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Barker</surname>
+              <given-names>DE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A pilot study of cidofovir for progressive multifocal leukoencephalopathy in AIDS</article-title>
+          <source>AIDS</source>
+          <year>2002</year>
+          <volume>16</volume>
+          <fpage>1791</fpage>
+          <lpage>7</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Figures and Tables</title>
+      <fig position="float" id="fig1">
+        <label>Figure 1</label>
+        <caption>
+          <p>Kaplan-Meier plot showing the cumulative probability of survival categorized by baseline CD4<sup>+</sup>cell counts. The mean duration of survival was 235 weeks (4.5 years) in patients with CD4<sup>+</sup>cell counts of ⩾100 cells/μL <italic>(solid line)</italic> and 177 weeks (3.4 years) in patients with CD4<sup>+</sup>cell counts of &lt;100 cells/μL (<italic>hatched line;</italic> <italic>P</italic> = .0085, by log-rank test).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" mimetype="image" xlink:href="36-8-1047-fig001.tif"/>
+      </fig>
+      <fig position="float" id="tab1">
+        <label>Table 1</label>
+        <caption>
+          <p>Characteristics of 118 patients with AIDS and progressive multifocal leukoencephalopathy (PML) treated with HAART, GESIDA 11/99 cohort.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" mimetype="image" xlink:href="36-8-1047-tbl001.tif"/>
+      </fig>
+      <fig position="float" id="tab2">
+        <label>Table 2</label>
+        <caption>
+          <p>Symptoms and signs of AIDS-associated progressive multifocal leukoencephalopathy, GESIDA 11/99 cohort.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" mimetype="image" xlink:href="36-8-1047-tbl002.tif"/>
+      </fig>
+      <fig position="float" id="tab3">
+        <label>Table 3</label>
+        <caption>
+          <p>Radiographic imaging findings for 96 patients with AIDS-associated progressive multifocal leukoencephalopathy (PML) who underwent imaging studies of the head.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" mimetype="image" xlink:href="36-8-1047-tbl003.tif"/>
+      </fig>
+      <fig position="float" id="tab4">
+        <label>Table 4</label>
+        <caption>
+          <p>Prognostic factors for 118 patients with AIDS-associated progressive multifocal leukoencephalopathy (PML) treated with HAART, as determined by univariate analysis, GESIDA 11/99 cohort.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" mimetype="image" xlink:href="36-8-1047-tbl004.tif"/>
+      </fig>
+    </sec>
+    <fn-group>
+      <fn fn-type="presented-at">
+        <p>Presented in part: 8th Conference on Retrovirus and Opportunistic Infections, Chicago, IL, February 2001 (abstract 10).</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p>Financial support: Grupo de Estudio del SIDA/Sociedad Española de Enfermedades Infecciosas y Microbiologica Clinica and Merck Sharp &amp; Dome Laboratories.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

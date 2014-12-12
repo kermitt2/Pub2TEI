@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE article SYSTEM "http://ej.iop.org/dtd/iopv1_4_5.dtd">
+<article artid="psst179521">
+<article-metadata>
+<jnl-data jnlid="psst">
+<jnl-fullname>Plasma Sources Science and Technology</jnl-fullname>
+<jnl-abbreviation>Plasma Sources Sci. Technol.</jnl-abbreviation>
+<jnl-shortname>PSST</jnl-shortname>
+<jnl-issn>0963-0252</jnl-issn>
+<jnl-coden>PSTEEU</jnl-coden>
+<jnl-imprint>Institute of Physics Publishing</jnl-imprint>
+<jnl-web-address>stacks.iop.org/PSST</jnl-web-address>
+</jnl-data>
+<volume-data><year-publication>2004</year-publication>
+<volume-number>13</volume-number>
+</volume-data>
+<issue-data>
+<issue-number>3</issue-number>
+<coverdate>August 2004</coverdate>
+</issue-data>
+<article-data>
+<article-type type="paper" sort="regular"/>
+<type-number type="paper" artnum="002">2</type-number>
+<article-number>179521</article-number>
+<first-page>371</first-page>
+<last-page>374</last-page>
+<length>4</length>
+<pii>S0963-0252(04)79521-3</pii>
+<doi>10.1088/0963-0252/13/3/002</doi>
+<copyright>2004 IOP Publishing Ltd</copyright>
+<ccc>0963-0252/04/030371&plus;04&dollar;30.00</ccc>
+<printed>Printed in the UK</printed>
+<features colour="none" mmedia="no" suppdata="no"/>
+</article-data>
+</article-metadata>
+<header>
+<title-group>
+<title>Carbon ion implantation on titanium for TiC formation using a dense plasma focus device</title>
+<short-title>Carbon ion implantation</short-title>
+<ej-title>Carbon ion implantation</ej-title>
+</title-group>
+<author-group>
+<author address="psst179521ad1"><first-names>Ruby</first-names><second-name>Gupta</second-name></author>
+<author address="psst179521ad1"><first-names>M P</first-names><second-name>Srivastava</second-name></author>
+</author-group>
+<address-group>
+<address id="psst179521ad1" showid="no"><orgname>Department of Physics and Astrophysics, University of Delhi</orgname>, Delhi-110007, <country>India</country></address>
+</address-group>
+<history received="11 January 2004" online="13 May 2004"/>
+<abstract-group>
+<abstract>
+<heading>Abstract</heading>
+<p indent="no">In this paper, we report titanium carbide formation on a titanium metal substrate by using a 3.3&thinsp;kJ Mather-type dense plasma focus (DPF) device equipped with a graphite carbon source. The titanium substrate is inserted from the top of the plasma chamber and is irradiated by argon and carbon ions produced in multiple shots of DPF. X-ray diffraction spectra of the layer formed on the titanium substrate with 10, 15, 20, 25 and 30 shots at a typical distance of 2.5&thinsp;cm from the top of the anode show peaks corresponding mostly to titanium carbide. The surface morphology and hardness of the layer formed have been investigated using a scanning electron microscope and a Knoop microhardness tester, respectively.</p></abstract>
+</abstract-group>
+</header>
+<body numbering="bysection">
+<sec-level1 id="psst179521s1" label="1"><heading>Introduction</heading>
+<p indent="no">Titanium carbide is widely used as a hard and wear-resistant coating in fields such as metallurgy, aeronautics, electronics and medicine in order to decrease wear in a variety of components. Titanium carbide coating deposition has been performed by ion beam sputtering [<cite linkend="psst179521bib01">1</cite>], chemical vapour deposition [<cite linkend="psst179521bib02">2</cite>], cathodic arc plasma deposition [<cite linkend="psst179521bib03">3</cite>], pulsed laser ablation [<cite linkend="psst179521bib04">4</cite>] and pulsed electrode surfacing [<cite linkend="psst179521bib05">5</cite>]. The properties of the coating depend to some extent upon the techniques of deposition and the deposition parameters.</p>
+<p>Ions of dense plasma focus (DPF) have been used for the phase change of materials in thin film form [<cite linkend="psst179521bib06" range="bib6,bib7,bib8,bib9,bib10">6&ndash;10</cite>] and for thin film deposition [<cite linkend="psst179521bib11" range="bib11,bib12,bib13,bib14,bib15">11&ndash;15</cite>] in the Plasma Research Laboratory of the University of Delhi for the first time in the world. The DPF device is a simple and relatively cost effective device that makes use of a self-generated magnetic field for compressing the plasmas to very high number densities (&sim;10<sup>25</sup>&ndash;10<sup>26</sup>&thinsp;m<sup>&minus;3</sup>) and high temperature (1&ndash;2&thinsp;keV). It also acts as a source of highly energetic high fluence ions having energies in the range of 25&thinsp;keV&ndash;8&thinsp;MeV, x-rays and relativistic electrons.</p>
+<p>In the present work, we report titanium carbide formation on a titanium metal substrate, at room temperature, using multiple DPF shots. The process makes use of carbon ions emitted by heating of graphite by the high temperature focused plasma produced in a Mather-type DPF device. The formation of the titanium carbide layer was confirmed by x-ray diffraction (XRD) spectra. The surface morphology was examined using a scanning electron microscope (SEM) and the hardness of the TiC layer was measured by a Knoop microhardness tester.</p>
+</sec-level1>
+<sec-level1 id="psst179521s2" label="2"><heading>Experimental set-up</heading>
+<p indent="no">The schematic of the DPF device used in this paper for titanium carbide formation on the titanium substrate is shown in figure <figref linkend="psst179521fig01">1</figref>. It consists of a 3.3&thinsp;kJ Mather-type focus with a modified anode design and a provision for inserting the substrate from the top of the focus chamber. The focus is powered by a single 30&thinsp;&micro;f, 15&thinsp;kV energy storage capacitor, discharged by a fast switching system. The systems of the DPF device consist of (a) a focus chamber consisting of a coaxial assembly of electrodes with one hollow anode surrounded by six symmetrically placed cathode rods; (b) a high voltage power supply to charge the capacitor; (c) the spark gap as a fast switching device for discharging the capacitor through the electrodes inside the focus chamber; and (d) the triggering electronics to activate the spark gap switching. The plasma chamber is filled with argon gas at a pressure of 80&thinsp;Pa. The gas breakdown occurs across the insulator separating the anode and the cathodes, with the dominant component of the electric current density being directed axially downwards. The axially downward current density along with the azimuthal magnetic field gives rise to a radially outward Lorentz force similar to an inverse pinch. The dynamics then enters the axial acceleration phase. The current sheath has axial and dominant radial components in this phase. The radial component of the current sheath along with the azimuthal component of the magnetic field gives rise to the axial component of the Lorentz force, which is responsible for the acceleration of the current sheath towards the top of the anode. Once it reaches the top of the anode, the dynamics enters the radial collapse phase. Owing to a dominant axially upward component of the current density and the azimuthal magnetic field there arises a radially inward Lorentz force. Therefore the current sheath collapses to give rise to a thin column of dense high temperature plasma with a pointed structure at the bottom as well as at the top and with a bulge at the centre, along the vertical axis. The radial collapse phase can be divided into five sub-phases, namely the compression phase, very dense phase, quiescent phase, unstable phase and decay phase. A thin cylindrical column of extremely hot and dense plasma formed at the end of the very dense phase starts to disrupt because of the generation of a local high electric field caused by the growth of <italic>m</italic> &equals; 0 instabilities during the unstable phase. This disruption finally results in acceleration of electrons towards the bottom of the anode and of highly energetic ions in the opposite direction, towards the top of the chamber. A graphite disc of diameter 15&thinsp;mm and thickness 5&thinsp;mm is inserted inside the top of the hollow anode. A cylindrical brass rod which has a substrate holder attached to one end is inserted from the top plate of the plasma focus chamber. The brass rod can be moved up and down along the anode axis so that the substrate can be adjusted to different heights from the top of the anode. Another brass rod with an aluminium shutter attached to one end is also inserted from the top of the plasma focus chamber. The shutter is placed between the top of the anode and the substrate to avoid the non-focused ions from hitting the substrate. A sharp peak in the voltage probe signal on the oscilloscope indicates a good focusing.
+<figure id="psst179521fig01" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/psst179521fig01.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/psst179521fig01.jpg"/></graphic>
+<caption id="psst179521fc01" label="Figure 1"><p indent="no">Schematic of the experimental set-up (high voltage pulse transformer (HVPT), high voltage SCR (HVSCR) and low voltage SCR (LVSCR)).</p>
+</caption>
+</figure></p>
+<p>Titanium substrates 10&thinsp;mm &times; 10&thinsp;mm &times; 2&thinsp;mm in size are mechanically polished with a manual polishing machine. The substrate is held against sheets of silicon carbide emery paper of successive grit sizes starting from 120 to 2000 for 5&thinsp;min each. The substrate is cleaned with benzene and alcohol and mounted on the substrate holder inside the DPF chamber. After a few shots we are able to get a sharp peak in the voltage probe signal, which is displayed on the oscilloscope (Tektronix TDS 784 Digital Storage Oscilloscope). After good focusing is achieved the shutter is removed and the substrate is subjected to multiple shots of ions of DPF. The substrate distance is maintained at 2.5&thinsp;cm above the top of the anode and subjected to 10, 15, 20, 25 and 30 DPF shots. The layer formed is characterized using a grazing-angle XRD (Philips PW-3710). The layer is analysed for the formed surface morphology using a JEOL, JSM-1840 SEM. The hardness of the titanium substrate as well as the substrate with 10, 15, 20, 25 and 30 shots of carbon ions is measured by a Knoop microhardness tester (Wolpert V-testor VTD-12).</p>
+</sec-level1>
+<sec-level1 id="psst179521s3" label="3"><heading>Results and discussion</heading>
+<p indent="no">Visual inspection of the layer formed shows a dark grey coloured surface with a silver touch, irrespective of the number of shots. The adhesion of the layer formed on the substrate, checked qualitatively by the pin scratch test, is found to be good, and is independent of the number of shots. The XRD spectrum of the substrate as shown in figure <figref linkend="psst179521fig02">2(<italic>a</italic>)</figref> has peaks at 2&thetas; equal to 35.13&deg;, 38.50&deg;, 40.24&deg;, 53.13&deg;, 70.63&deg; and 76.17&deg;. These peaks correspond to interplanar spacing of 2.545&thinsp;&angst; (100), 2.340&thinsp;&angst; (002), 2.239&thinsp;&angst; (101), 1.722&thinsp;&angst; (102), 1.332&thinsp;&angst; (103) and 1.250&thinsp;&angst; (112), respectively. The XRD spectrum of the layer formed on titanium with 10 DPF shots is shown in figure <figref linkend="psst179521fig02">2(<italic>b</italic>)</figref>. This figure shows peaks at 2&thetas; equal to 35.9&deg;, 41.81&deg;, 60.94&deg; and 72.83&deg;, corresponding to interplanar spacing of 2.499&thinsp;&angst; (111), 2.143&thinsp;&angst; (200), 1.490&thinsp;&angst; (220) and 1.264&thinsp;&angst; (311), respectively, in addition to the titanium peaks. The observed peak values at 2&thetas; equal to 35.9&deg;, 41.81&deg;, 60.94&deg; and 72.83&deg; indicate the presence of the titanium carbide layer on the substrate. The XRD spectrum of the layer formed with 15 DPF shots shows the same peaks as observed with 10 DPF shots, with an increase in intensity of the titanium carbide peaks and a decrease in intensity of the titanium peaks. The XRD spectra of the layers formed with 20, 25 and 30 DPF shots are found to have the same titanium carbide peaks as observed with 10 or 15 DPF shots. Again, their intensity increases with an increase in the number of shots. The XRD spectrum of the film deposited with 30 DPF shots is shown in figure <figref linkend="psst179521fig02">2(<italic>c</italic>)</figref>. Only three titanium peaks corresponding to values of 2&thetas; equal to 35.13&deg;, 38.50&deg; and 40.24&deg; are observed, with intensities decreasing with an increase in the number of shots, whereas the rest of the titanium peaks are quenched for all the layers formed with 20, 25 and 30 shots. The increase in intensity of the titanium carbide peaks with increasing number of shots and also the presence of some peaks of titanium whose intensities decrease with increasing number of shots implies that there is unreacted titanium when the number of DPF shots is lesser.
+<figure id="psst179521fig02" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/psst179521fig02.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/psst179521fig02.jpg"/></graphic>
+<caption id="psst179521fc02" label="Figure 2"><p indent="no">XRD Spectrum of (<italic>a</italic>) the titanium substrate, (<italic>b</italic>) the layer formed on titanium substrate with 10 DPF shots and (<italic>c</italic>) the layer formed on the titanium substrate with 30 DPF shots.</p>
+</caption>
+</figure></p>
+<p>The grain size of TiC has been calculated from x-ray data using Scherrer's equation <italic>D</italic> &equals; &lambda;/(&beta;cos&thetas;), where <italic>D</italic> is average grain diameter, &lambda; is the wavelength of x-ray used, &beta; is full width at half maxima in radians and &thetas; is angle of diffraction. The average grain diameter for the TiC layer formed with 10 DPF shots is found to be 45&thinsp;nm, 36&thinsp;nm, 36&thinsp;nm and 54&thinsp;nm for 2&thetas; values 35.9&deg;, 41.81&deg;, 60.94&deg; and 72.83&deg;, respectively. For the TiC layer formed with 30 DPF shots, the grain diameter is found to be 52&thinsp;nm, 36&thinsp;nm, 36&thinsp;nm and 66&thinsp;nm corresponding to 2&thetas; values 35.9&deg;, 41.81&deg;, 60.94&deg; and 72.83&deg;, respectively. The average grain size for the TiC layer formed shows a small increase with the increase in the number of shots.</p>
+<p>The formation of titanium carbide on the titanium may be understood in the following way. The high temperature of the focused plasma at the top of the anode results in the production of carbon vapour from graphite, which subsequently becomes fully ionized. The argon ions in the focused plasma along with carbon ions move upwards in a fountain-like structure due to <italic>m</italic> &equals; 0 instability and hit the titanium substrate. The argon ions release titanium ions. Since argon is inert, argon ions do not react with titanium ions and the carbon ions at the bottom of the fountain-like structure combine with titanium ions to form TiC, which redeposits as a coat of titanium carbide on titanium. In this process, some titanium ions are left unreacted. As the number of shots is increased, the process of release of titanium ions is repeated, these combine with the carbon ions to form titanium carbide and as such the unreacted titanium content in the film reduces and the titanium carbide content increases. This is also supported by the XRD results.</p>
+<p>Figures <figref linkend="psst179521fig03">3(<italic>a</italic>) and (<italic>b</italic>)</figref> are SEM micrographs of the TiC layers formed on titanium substrate using 20 and 30 shots of DPF. The surface morphology reveals that the TiC layer has small sized grains. The average grain sizes from the SEM micrographs, for the TiC layers formed with 20 and 30 shots are found to be of the order of 40&ndash;60&thinsp;nm and 50&ndash;90&thinsp;nm, respectively. This range of values for grain size is in close agreement with XRD estimates.
+<figure id="psst179521fig03" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/psst179521fig03.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/psst179521fig03.jpg"/></graphic>
+<caption id="psst179521fc03" label="Figure 3"><p indent="no">SEM micrograph of the TiC layer formed on the titanium substrate with (<italic>a</italic>) 20 DPF shots and (<italic>b</italic>) 30 DPF shots.</p>
+</caption>
+</figure></p>
+<p>The microhardness of the substrate and the TiC layer formed with different numbers of DPF shots has also been measured by using a Knoop microhardness tester with a load of 100&thinsp;g. Figure <figref linkend="psst179521fig04">4</figref> shows the variation of microhardness for the TiC layer formed on the titanium substrate, with an increasing number of DPF shots. The microhardness values plotted are the average values, which are calculated by homogeneously distributing four indents across each film. The microhardness increases slowly for 10 and 15 shots. Subsequently it rises abruptly for 20 shots and then slowly increases for 25 shots. The value of microhardness for the titanium substrate is measured as 289&thinsp;kg&thinsp;mm<sup>&minus;2</sup> and attains the value 2744&thinsp;kg&thinsp;mm<sup>&minus;2</sup> for the TiC layer formed with 25 shots. This variation may be due to the following two reasons. The TiC layer formed with a lower number of shots has more unreacted titanium content, as is also evident from XRD data, and as such the lower measured microhardness value is due to the titanium carbide layer as well as unreacted titanium. For a higher number of shots the unreacted titanium in the TiC layer formed reduces and ultimately becomes negligibly small for 25 shots, and therefore microhardness reaches a value which corresponds to a high value for titanium carbide. Moreover, the load may be responsible for bringing about the substrate effect in the microhardness measurement and the substrate effect will reduce with increasing thickness of the TiC layer formed.
+<figure id="psst179521fig04" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/psst179521fig04.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/psst179521fig04.jpg"/></graphic>
+<caption id="psst179521fc04" label="Figure 4"><p indent="no">Variation of Knoop microhardness of the TiC layer formed on the titanium substrate with increasing number of DPF shots.</p>
+</caption>
+</figure></p>
+</sec-level1>
+<sec-level1 id="psst179521s4" label="4"><heading>Conclusion</heading>
+<p indent="no">We have successfully formed titanium carbide on a titanium substrate by carbon ion implantation, using a DPF device filled with argon gas at 80&thinsp;Pa and a graphite disc inserted inside its hollow anode, which is confirmed by XRD spectra. Microhardness measurements indicate a reasonably hard titanium carbide layer on the substrate.</p>
+</sec-level1>
+<acknowledgment>
+<heading>Acknowledgment</heading>
+<p indent="no">RG thanks the Council of Scientific and Industrial Research, India, for the award of a senior research fellowship.</p>
+</acknowledgment>
+</body>
+<back>
+<references>
+<heading>References</heading>
+<reference-list type="numeric">
+<journal-ref id="psst179521bib01" num="1">
+<authors>
+<au><second-name>He</second-name><first-names>M</first-names></au>
+<au><second-name>Li</second-name><first-names>W Z</first-names></au>
+<au><second-name>Li</second-name><first-names>H D</first-names></au>
+</authors>
+<year>1994</year>
+<jnl-title>J. Mater. Res.</jnl-title>
+<volume>9</volume>
+<pages>2355</pages>
+</journal-ref>
+<journal-ref id="psst179521bib02" num="2">
+<authors>
+<au><second-name>Eroglu</second-name><first-names>S</first-names></au>
+<au><second-name>Gallons</second-name><first-names>B</first-names></au>
+</authors>
+<year>1995</year>
+<jnl-title>J. Mater. Sci.</jnl-title>
+<volume>30</volume>
+<pages>1754</pages>
+</journal-ref>
+<journal-ref id="psst179521bib03" num="3">
+<authors>
+<au><second-name>Pancielejko</second-name><first-names>M</first-names></au>
+<au><second-name>Precht</second-name><first-names>W</first-names></au>
+<au><second-name>Czyzniewksi</second-name><first-names>A</first-names></au>
+</authors>
+<year>1999</year>
+<jnl-title>Vaccum</jnl-title>
+<volume>53</volume>
+<pages>57</pages>
+</journal-ref>
+<journal-ref id="psst179521bib04" num="4">
+<authors>
+<au><second-name>Alessio</second-name><first-names>L D</first-names></au>
+<au><second-name>Salvi</second-name><first-names>A M</first-names></au>
+<au><second-name>Teghil</second-name><first-names>R</first-names></au>
+<au><second-name>Narota</second-name><first-names>V</first-names></au>
+<au><second-name>Santagata</second-name><first-names>A</first-names></au>
+<au><second-name>Brunetti</second-name><first-names>B</first-names></au>
+<au><second-name>Ferro</second-name><first-names>D</first-names></au>
+<au><second-name>De</second-name><first-names>G</first-names></au>
+<au><second-name>Maria</second-name></au>
+</authors>
+<year>1998</year>
+<jnl-title>Appl. Surf. Sci.</jnl-title>
+<volume>134</volume>
+<pages>53</pages>
+</journal-ref>
+<journal-ref id="psst179521bib05" num="5">
+<authors>
+<au><second-name>Aggarwal</second-name><first-names>A</first-names></au>
+<au><second-name>Dahotre</second-name><first-names>N B</first-names></au>
+</authors>
+<year>1999</year>
+<jnl-title>J. Mater. Eng. Perform.</jnl-title>
+<volume>8</volume>
+<pages>479</pages>
+</journal-ref>
+<journal-ref id="psst179521bib06" num="6">
+<authors>
+<au><second-name>Rawat</second-name><first-names>R S</first-names></au>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+<au><second-name>Tandon</second-name><first-names>S</first-names></au>
+<au><second-name>Mansingh</second-name><first-names>A</first-names></au>
+</authors>
+<year>1993</year>
+<jnl-title>Phys. Rev.</jnl-title>
+<part>B</part>
+<volume>47</volume>
+<pages>4858</pages>
+</journal-ref>
+<journal-ref id="psst179521bib07" num="7">
+<authors>
+<au><second-name>Sagar</second-name><first-names>R</first-names></au>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+</authors>
+<year>1993</year>
+<jnl-title>Phys. Lett.</jnl-title>
+<part>A</part>
+<volume>183</volume>
+<pages>209</pages>
+</journal-ref>
+<journal-ref id="psst179521bib08" num="8">
+<authors>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+<au><second-name>Mohanty</second-name><first-names>S R</first-names></au>
+<au><second-name>Annapoorni</second-name><first-names>S</first-names></au>
+<au><second-name>Rawat</second-name><first-names>R S</first-names></au>
+</authors>
+<year>1996</year>
+<jnl-title>Phys. Lett.</jnl-title>
+<part>A</part>
+<volume>215</volume>
+<pages>63</pages>
+</journal-ref>
+<journal-ref id="psst179521bib09" num="9">
+<authors>
+<au><second-name>Aggarwal</second-name><first-names>P</first-names></au>
+<au><second-name>Annapoorni</second-name><first-names>S</first-names></au>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+<au><second-name>Rawat</second-name><first-names>R S</first-names></au>
+<au><second-name>Chauhan</second-name><first-names>P</first-names></au>
+</authors>
+<year>1997</year>
+<jnl-title>Phys. Lett.</jnl-title>
+<part>A</part>
+<volume>231</volume>
+<pages>434</pages>
+</journal-ref>
+<journal-ref id="psst179521bib10" num="10">
+<authors>
+<au><second-name>Aggarwal</second-name><first-names>P</first-names></au>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+<au><second-name>Dheer</second-name><first-names>P N</first-names></au>
+<au><second-name>Padmanaban</second-name><first-names>V P N</first-names></au>
+<au><second-name>Gupta</second-name><first-names>A</first-names></au>
+</authors>
+<year>1999</year>
+<jnl-title>Physica</jnl-title>
+<part>C</part>
+<volume>31</volume>
+<pages>87</pages>
+</journal-ref>
+<journal-ref id="psst179521bib11" num="11">
+<authors>
+<au><second-name>Chhaya</second-name><first-names>R K</first-names></au>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+<au><second-name>Rawat</second-name><first-names>R S</first-names></au>
+</authors>
+<year>1997</year>
+<jnl-title>Phys. Lett.</jnl-title>
+<part>A</part>
+<volume>226</volume>
+<pages>212</pages>
+</journal-ref>
+<journal-ref id="psst179521bib12" num="12">
+<authors>
+<au><second-name>Chhaya</second-name><first-names>R K</first-names></au>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+<au><second-name>Rawat</second-name><first-names>R S</first-names></au>
+</authors>
+<year>1998</year>
+<jnl-title>Phys. Lett.</jnl-title>
+<part>A</part>
+<volume>239</volume>
+<pages>109</pages>
+</journal-ref>
+<misc-ref id="psst179521bib13" num="13">
+<authors>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+<au><second-name>Roy</second-name><first-names>S</first-names></au>
+<au><second-name>Chhaya</second-name><first-names>R K</first-names></au>
+</authors>
+<misc-text>PAT/3.16.19/98060/98</misc-text>
+<source>National Research Development Corporation, India</source>
+</misc-ref>
+<conf-ref id="psst179521bib14" num="14">
+<authors>
+<au><second-name>Srivastava</second-name><first-names>M P</first-names></au>
+<au><second-name>Gupta</second-name><first-names>R</first-names></au>
+</authors>
+<year>1999</year>
+<conf-title>Advances in Applied Plasma Science: Proc. Int. Symp. on Applied Plasma Science '99</conf-title>
+<conf-place>Osaka</conf-place>
+<volume>vol 2</volume>
+<editors>
+<author><first-names>A</first-names><second-name>Kobayashi</second-name></author>
+<author><first-names>N M</first-names><second-name>Ghoniem</second-name></author>
+</editors>
+<publication>
+<publisher>Institute of Applied Plasma Science</publisher>
+</publication>
+<pages>p 161</pages>
+</conf-ref>
+<misc-ref id="psst179521bib15" num="15">
+<authors>
+<au><second-name>Chhaya</second-name><first-names>R K</first-names></au>
+</authors>
+<year>2000</year>
+<thesis>PhD Thesis</thesis>
+<source>University of Delhi</source>
+</misc-ref>
+<journal-ref id="psst179521bib16" num="16">
+<authors>
+<au><second-name>Mather</second-name><first-names>J W</first-names></au>
+</authors>
+<year>1964</year>
+<jnl-title>Phys. Fluids</jnl-title>
+<volume>7</volume>
+<pages>5</pages>
+</journal-ref>
+<journal-ref id="psst179521bib17" num="17">
+<authors>
+<au><second-name>Lee</second-name><first-names>S</first-names></au>
+<others><italic>et al</italic></others>
+</authors>
+<year>1988</year>
+<jnl-title>Am. J. Phys.</jnl-title>
+<volume>56</volume>
+<pages>62</pages>
+</journal-ref>
+</reference-list>
+</references>
+</back>
+</article>

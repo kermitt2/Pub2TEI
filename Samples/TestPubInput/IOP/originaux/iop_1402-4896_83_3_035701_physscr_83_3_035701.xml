@@ -1,0 +1,636 @@
+<?xml version="1.0"?>
+<!DOCTYPE article SYSTEM "http://ej.iop.org/dtd/iopv1_5_2.dtd">
+<article artid="pscr370073">
+<article-metadata>
+<jnl-data jnlid="ps">
+<jnl-fullname>Physica Scripta</jnl-fullname>
+<jnl-abbreviation>Phys. Scr.</jnl-abbreviation>
+<jnl-shortname>PhysScr</jnl-shortname>
+<jnl-issn>0031-8949</jnl-issn>
+<jnl-coden>PHSTBO</jnl-coden>
+<jnl-imprint>IOP Publishing</jnl-imprint>
+<jnl-web-address>stacks.iop.org/PhysScr</jnl-web-address>
+</jnl-data>
+<volume-data>
+<year-publication>2011</year-publication>
+<volume-number>83</volume-number>
+</volume-data>
+<issue-data>
+<issue-number>3</issue-number>
+<coverdate>March 2011</coverdate>
+</issue-data>
+<article-data>
+<article-type type="paper" sort="regular"></article-type>
+<type-number type="paper" numbering="article" artnum="035701">035701</type-number>
+<article-number>370073</article-number>
+<first-page>1</first-page>
+<last-page>6</last-page>
+<length>6</length>
+<pii></pii>
+<doi>10.1088/0031-8949/83/03/035701</doi>
+<copyright>2011 The Royal Swedish Academy of Sciences</copyright>
+<ccc>0031-8949/11/035701&plus;06&dollar;33.00</ccc>
+<printed>Printed in the UK &amp; the USA</printed><features/>
+</article-data>
+</article-metadata>
+<header>
+<title-group>
+<title>Diamagnetic susceptibility of a confined donor in inhomogeneous quantum dots</title>
+<short-title>Diamagnetic susceptibility of a confined donor in inhomogeneous quantum dots</short-title>
+<ej-title>Diamagnetic susceptibility of a confined donor in inhomogeneous quantum dots</ej-title>
+</title-group>
+<author-group>
+<author address="pscr370073ad1"><first-names>K</first-names><second-name>Rahmani</second-name></author>
+<author address="pscr370073ad1" email="pscr370073ea1"><first-names>I</first-names><second-name>Zorkani</second-name></author>
+<author address="pscr370073ad1"><first-names>A</first-names><second-name>Jorio</second-name></author>
+<short-author-list>K Rahmani <italic>et al</italic></short-author-list>
+</author-group>
+<address-group>
+<address id="pscr370073ad1" showid="no">LPS, Facult&eacute; des sciences, Dhar Mehraz Fes, F&egrave;s, BP 1796, <country>Morocco</country></address>
+<e-address id="pscr370073ea1"><email mailto="izorkani@hotmail.com">izorkani@hotmail.com</email></e-address>
+</address-group>
+<history received="24 September 2010" accepted="18 January 2011" online="18 February 2011"/>
+<abstract-group>
+<abstract>
+<heading>Abstract</heading>
+<p indent="no">The binding energy and diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> are estimated for a shallow donor confined to move in GaAs-GaAlAs inhomogeneous quantum dots. The calculation was performed within the effective mass approximation and using the variational method. The results show that the binding energy and the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> depend strongly on the core radius and the shell radius. We have demonstrated that there is a critical value of the ratio of the inner radius to the outer radius which may be important for nanofabrication techniques. The binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> shows a minimum for a critical value of this ratio depending on the value of the outer radius and shows a maximum when the donor is placed at the center of the spherical layer. The diamagnetic susceptibility is more sensitive to variations of the radius for a large spherical layer. The binding energy and diamagnetic susceptibility depend strongly on the donor position.</p>
+</abstract>
+</abstract-group>
+<classifications>
+<class-codes scheme="pacs">
+<code>71.55i</code>
+<code>73.61Ey</code>
+<code>S7.12</code>
+</class-codes>
+</classifications>
+</header>
+<body refstyle="numeric">
+<sec-level1 id="pscr370073s1" label="1">
+<heading>Introduction</heading>
+<p indent="no">Over the last ten years, the study of the impurity states in nanostructure semiconductors, such as quantum dots (QDs), has become the subject of extensive investigations in both basic and applied research&nbsp;[<cite linkend="pscr370073bib1" range="pscr370073bib1,pscr370073bib2,pscr370073bib3,pscr370073bib4,pscr370073bib5">1&ndash;5</cite>]. Recently, a new class of QDs called inhomogeneous quantum dots (IQDs) or quantum-dot quantum wells (QDQW) were studied both theoretically and experimentally&nbsp;[<cite linkend="pscr370073bib6" range="pscr370073bib6,pscr370073bib7,pscr370073bib8,pscr370073bib9">6&ndash;9</cite>]. QDQW are composed of two semiconductor materials, one of which with a smaller band gap, is embedded between the core and outer shell of the material with the larger band gap. Figure&nbsp;<figref linkend="pscr370073fig1">1</figref> presents a schematic diagram of QDs&mdash;the quantum-well structure, where <italic>a</italic> and <italic>b</italic> are the inner and the outer radius of the QDQW, respectively. For more details of the chemical fabrication of the new artificial structure, see&nbsp;[<cite linkend="pscr370073bib10" range="pscr370073bib10,pscr370073bib11,pscr370073bib12,pscr370073bib13,pscr370073bib14,pscr370073bib15,pscr370073bib16,pscr370073bib17,pscr370073bib18,pscr370073bib19">10&ndash;19</cite>]: CdS&sol;HgS&sol;CdS&nbsp;[<cite linkend="pscr370073bib10">10</cite>,&nbsp;<cite linkend="pscr370073bib11">11</cite>,&nbsp;<cite linkend="pscr370073bib12">12</cite>], InAs&sol;GaAs&nbsp;[<cite linkend="pscr370073bib13">13</cite>], CdSe&sol;HgSe&sol;CdSe&nbsp;[<cite linkend="pscr370073bib14">14</cite>], ZnS&sol;CdS&sol;ZnS [<cite linkend="pscr370073bib15">15</cite>,&nbsp;<cite linkend="pscr370073bib16">16</cite>], InAs&sol;ZnSe&nbsp;[<cite linkend="pscr370073bib17">17</cite>], CdSe&sol;ZnS and CdS&sol;PbS&nbsp;[<cite linkend="pscr370073bib18">18</cite>, <cite linkend="pscr370073bib19">19</cite>].</p>
+<figure id="pscr370073fig1" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="16.0pc" printcolour="no" filename="physscr_83_3_035701eps/pscr370073fig1.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="no" filename="physscr_83_3_035701img/pscr370073fig1.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc1" label="Figure 1"><p indent="no">Schematic diagram of the QDQW structure. <inline-eqn><math-text><italic>a</italic></math-text></inline-eqn> and <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn> are the inner and the outer radius of the QDQW, respectively, and <inline-eqn><math-text><italic>V</italic>(<italic>r</italic>)</math-text></inline-eqn> is the confining potential.</p></caption>
+</figure>
+<p>These structures exhibit some remarkable and interesting phenomena. Their physical properties can be controlled and tuned by changing the core radius, the thickness of the well and the size of the outermost shell. IQD is becoming one of the topics of greatest interest to nano-scientists.</p>
+<p>Understanding the impurity states in these structures is an important problem in semiconductor technology; there have been many works devoted to the study of impurity states in the quantum well, quantum wire and QDs&nbsp;[<cite linkend="pscr370073bib1" range="pscr370073bib1,pscr370073bib2,pscr370073bib3,pscr370073bib4,pscr370073bib5">1&ndash;5</cite>]. Recently, Silva-Valencia <italic>et al</italic>&nbsp;[<cite linkend="pscr370073bib2">2</cite>] calculated the donor binding energy as a function of the donor position in QD with an infinite spherical well and for different radii of the structure. They found that the donor binding energy decreases as the donor position increases, reaching a minimum when the donor position is equal to the radius of the QD. Heish <italic>et al</italic>&nbsp;[<cite linkend="pscr370073bib6">6</cite>] calculated the ground and excited states of hydrogenic impurities located at the center of a QDQW of a spherical core (GaAs) coated with a spherical shell (<inline-eqn><math-text><upright>Ga</upright><sub>1&minus;<italic>x</italic></sub><upright>Al</upright><sub><italic>x</italic></sub><upright>As</upright></math-text></inline-eqn>) and then embedded in a bulk material (<inline-eqn><math-text><upright>Ga</upright><sub>1&minus;<italic>y</italic></sub><upright>Al</upright><sub><italic>y</italic></sub><upright>As</upright></math-text></inline-eqn>). Khamkhami <italic>et al</italic>&nbsp;[<cite linkend="pscr370073bib7">7</cite>] analyzed the uniform electric field effects on the excitons, in QDQW; they found that the stark effect appears even for very small sizes and the energy shift is more significant if the exciton is placed on the spherical surface.</p>
+<p>The pressure dependence of the diamagnetic susceptibility of a donor has been worked out in&nbsp;[<cite linkend="pscr370073bib20">20</cite>]. The diamagnetic susceptibility of shallow donors in Si is computed incorporating the multivalley conduction band structure and the spherical energy surfaces&nbsp;[<cite linkend="pscr370073bib21">21</cite>]. The diamagnetic susceptibility of a hydrogenic donor impurity has also been computed in low-dimensional semiconductor systems (LDSS) such as quantum wells, quantum well wires and QDs&nbsp;[<cite linkend="pscr370073bib22">22</cite>]. Jasper <italic>et al</italic>&nbsp;[<cite linkend="pscr370073bib23">23</cite>] compared the diamagnetic susceptibility of the donor in a spherical QD for both infinite and finite barrier models. The effect of the location of the donor is studied. Peter and Ebenezar&nbsp;[<cite linkend="pscr370073bib24">24</cite>] computed and compared the susceptibility of a hydrogenic donor in a spherical confinement, harmonic oscillator-like and rectangular well-like potentials for a finite QD. Recently, Sharkey <italic>et al</italic>&nbsp;[<cite linkend="pscr370073bib25">25</cite>] reported a study on the magnetic field-induced magnetic susceptibility of a donor in a GaN&sol;AlGaN QD.</p>
+<p>The study of the magnetic properties of LDSS can enable us to control the electronic magnetism of nanostructures. To the best of our knowledge no study has been performed for QDQW to treat the diamagnetic susceptibility.</p>
+<p>In this work, we use a variational method to calculate the hydrogenic donor binding energy and the diamagnetic susceptibility in the QDQW in the strong and moderate confinement regimes. We will also examine the effect of the donor position.</p>
+<p>This paper is organized as follows. In section&nbsp;<secref linkend="pscr370073s2">2</secref>, we present the general formalism; we deduce the expressions for the donor binding energy and diamagnetic susceptibility. The numerical results and discussions are presented in section&nbsp;<secref linkend="pscr370073s3">3</secref>.</p>
+</sec-level1>
+<sec-level1 id="pscr370073s2" label="2">
+<heading>General formalism</heading>
+<p indent="no">We consider a donor impurity located at the position <inline-eqn><math-text><italic>r</italic><sub>0</sub></math-text></inline-eqn> of a QDQW made of [<inline-eqn><math-text><upright>Ga</upright><sub>1&minus;<italic>x</italic></sub><upright>Al</upright><sub><italic>x</italic></sub><upright>As</upright></math-text></inline-eqn> (core)&sol;GaAs (well)&sol;<inline-eqn><math-text><upright>Ga</upright><sub>1&minus;<italic>x</italic></sub><upright>Al</upright><sub><italic>x</italic></sub><upright>As</upright></math-text></inline-eqn> (shell)]. The confining potential well is assumed to be an infinitely deep well.</p>
+<p>In the effective mass approximation, the Hamiltonian of the system is written as
+<display-eqn id="pscr370073eqn1" textype="equation" notation="LaTeX" eqnnum="1"><?TeX \begin{equation} H = -\nabla^2 -\frac{2}{\left| {r-r_0}\right|} + V(r), \end{equation}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073eqn1.gif"/></display-eqn>where <inline-eqn><math-text><italic>V</italic>(<italic>r</italic>)</math-text></inline-eqn> is the confining potential (see figure&nbsp;<figref linkend="pscr370073fig1">1</figref>):
+<display-eqn id="pscr370073eqn2" textype="equation" notation="LaTeX" eqnnum="2"><?TeX \begin{equation} V(r) = \left\{ \begin{array}{@{}l@{}} 0,\quad a < r < b, \\[6pt] \infty ,\quad r < a\,\,{\rm and}\,\,r> b. \\ \end{array} \right. \end{equation}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073eqn2.gif"/></display-eqn>We use the effective Bohr radius <inline-eqn><math-text>&alpha;<sup>&ast;</sup>&equals;&planck;<sup>2</sup>&epsiv;<sub>0</sub>&sol;<italic>m</italic><sup>&ast;</sup><italic>e</italic><sup>2</sup></math-text></inline-eqn> and the effective Rydberg <inline-eqn><math-text><italic>R</italic><sup>&ast;</sup>&equals;<italic>m</italic><sup>&ast;</sup><italic>e</italic><sup>4</sup>&sol;2&planck;&epsiv;<sup>2</sup><sub>0</sub></math-text></inline-eqn> as the units of length and energy (respectively). <inline-eqn><math-text>&epsiv;<sub>0</sub></math-text></inline-eqn> is the dielectric constant and <inline-eqn><math-text><italic>m</italic><sup>&ast;</sup></math-text></inline-eqn> is the electron band effective mass.</p>
+<p>The wave function of the ground state donor impurity for this system is given by
+<display-eqn id="pscr370073eqn3" textype="equation" notation="LaTeX" eqnnum="3"><?TeX \begin{equation} \psi = \frac{\sin [K\!(r-\alpha)]}{r}{\rm{e}}^{-\alpha \left| {\vec r-\vec r_0 } \right|}, \end{equation}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073eqn3.gif"/></display-eqn>where <inline-eqn><math-text><italic>K</italic>&equals;&pi;&sol;(<italic>b</italic>&minus;&alpha;)</math-text></inline-eqn> and <inline-eqn><math-text>&alpha;</math-text></inline-eqn> is a variational parameter, and the exponential factor exp <inline-eqn><?TeX \alpha \,\vert {\vec r-\vec r_0 } \vert?><inline-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ieqn1.gif"/></inline-eqn> describes the Coulomb spatial interaction.</p>
+<p>The Schr&ouml;dinger equation is solved variationally. The corresponding energy is obtained by minimization with respect to the variational parameter <inline-eqn><math-text>&alpha;</math-text></inline-eqn>:
+<display-eqn id="pscr370073eqn4" textype="equation" notation="LaTeX" eqnnum="4"><?TeX \begin{equation} E_{\rm t} = \mathop {\min }\limits_\alpha \left\{ \frac{\langle\psi|H|\psi\rangle}{\langle\psi|\psi\rangle}\right\}\mathbbm{k}. \end{equation}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073eqn4.gif"/></display-eqn>The binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> of the donor impurity is given by
+<display-eqn id="pscr370073eqn5" textype="equation" notation="LaTeX" eqnnum="5"><?TeX \begin{equation} E_{\rm b} = E_{{\rm{Sub}}} -E_{\rm{t}}, \end{equation}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073eqn5.gif"/></display-eqn>where <inline-eqn><math-text><italic>E</italic><sub><upright>t</upright></sub></math-text></inline-eqn> and <inline-eqn><math-text><italic>E</italic><sub><upright>Sub</upright></sub></math-text></inline-eqn> (see the appendix) represent the state energy of an electron in QDQW with and without impurity binding, respectively.</p>
+<p>The diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> of the donor impurity in QDQW, in atomic units (au), is given as&nbsp;[<cite linkend="pscr370073bib26">26</cite>]
+<display-eqn id="pscr370073eqn6" textype="equation" notation="LaTeX" eqnnum="6"><?TeX \begin{equation} \chi_{{\rm{dia}}} = -\frac{e^2}{6m^{*}\;\varepsilon_0 c^2}\langle {(\vec r-\vec r_0 )^2 } \rangle, \end{equation}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073eqn6.gif"/></display-eqn>where <inline-eqn><math-text><italic>c</italic></math-text></inline-eqn> is the velocity of light and <inline-eqn><?TeX \langle {(\vec r-\vec r_0 )^2 } \rangle ?><inline-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ieqn2.gif"/></inline-eqn> is the mean square distance of the electrons from the nucleus.</p>
+</sec-level1>
+<sec-level1 id="pscr370073s3" label="3">
+<heading>Results and discussion</heading>
+<p indent="no">Our results are presented in reduced atomic units. Two extreme cases present themselves: <inline-eqn><math-text><italic>a</italic>&equals;0</math-text></inline-eqn> (i.e. homogeneous quantum dot (HQD) of <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn> radius) and <inline-eqn><math-text><italic>a</italic>&rarr;<italic>b</italic></math-text></inline-eqn> for <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn> fixed, which corresponds to an infinitely thin spherical layer. We will present the results for the cases of an HQD and an IQD or QDQW.</p>
+<sec-level2 id="pscr370073s3.1" label="3.1">
+<heading>Quantum dots: <inline-eqn><math-text><italic>a</italic>&equals;0</math-text></inline-eqn>
+</heading>
+<p indent="no">We consider first the case of an HQD (i.e. <inline-eqn><math-text><italic>a</italic>&equals;0</math-text></inline-eqn>). To investigate the influence of the donor positions, we display in figure&nbsp;<figref linkend="pscr370073fig2">2</figref> the donor binding energy as a function of the radius <italic>b</italic> of the structure for different values of the donor positions (<inline-eqn><math-text><italic>r</italic><sub>0</sub>&equals;0</math-text></inline-eqn>, <inline-eqn><math-text><italic>b</italic>&sol;2</math-text></inline-eqn>, <inline-eqn><math-text>3<italic>b</italic>&sol;4</math-text></inline-eqn>, and <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn>). We remark that the donor binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> decreases as the donor position increases (i.e. when the donor moves from the center to the surface of the dot). This could be explained by the fact that when the donor is placed at the center of the QD, the electronic orbital presents a spherical symmetry and the binding energy is maximal. However, for an off-center donor, the spherical symmetry is broken and the link to donor is weakened. This is due to the repulsive barrier potential, which pushes the electronic charge away from the donor, thereby leading to a reduced Coulomb attraction between the electron and ion impurities.</p>
+<figure id="pscr370073fig2" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="19.4pc" printcolour="no" colour="yes" filename="physscr_83_3_035701eps/pscr370073fig2.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="yes" colour="yes" filename="physscr_83_3_035701img/pscr370073fig2.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc2" label="Figure 2"><p indent="no">Variation of the donor binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> as a function of the dot radius <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn> for different values of the donor position <inline-eqn><math-text><italic>r</italic><sub>0</sub>&equals;0</math-text></inline-eqn>, <inline-eqn><math-text><italic>b</italic>&sol;2</math-text></inline-eqn>, <inline-eqn><math-text>3<italic>b</italic>&sol;4</math-text></inline-eqn> and <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn>.</p></caption>
+</figure>
+<p>In figure&nbsp;<figref linkend="pscr370073fig3">3</figref>, we present the donor binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> as a function of the donor position inside the QD and for different radii of the structure (<inline-eqn><math-text>&equals;<italic>b</italic>&equals;1<italic>a<sup>&ast;</sup></italic></math-text></inline-eqn>, <inline-eqn><math-text><italic>b</italic>&equals;2<italic>a<sup>&ast;</sup></italic></math-text></inline-eqn>, <inline-eqn><math-text><italic>b</italic>&equals;4<italic>a<sup>&ast;</sup></italic></math-text></inline-eqn> and <inline-eqn><math-text><italic>b</italic>&equals;6<italic>a<sup>&ast;</sup></italic></math-text></inline-eqn>). The donor binding energy decreases as the donor position increases (i.e. the impurity position moves from the center to the edge of the dot), reaching a minimum when the donor is on the surface. We remark that the binding energy is less sensitive to variations of the radius for large QD. For small values of QD radius, the kinetic energy of the electron increases drastically, surpassing the attractive potential energy of the impurity. Our results are in good agreement with those of Silva-Valencia <italic>et al</italic>&nbsp;[<cite linkend="pscr370073bib2">2</cite>].</p>
+<figure id="pscr370073fig3" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="19.8pc" printcolour="no" filename="physscr_83_3_035701eps/pscr370073fig3.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="no" filename="physscr_83_3_035701img/pscr370073fig3.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc3" label="Figure 3"><p indent="no">Variation of the donor binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> as a function of the donor position <inline-eqn><math-text><italic>r</italic><sub>0</sub>&sol;<italic>b</italic></math-text></inline-eqn> for different values of the dot radius <inline-eqn><math-text><italic>b</italic>&equals;1</math-text></inline-eqn>, 2, 4 and <inline-eqn><math-text>6<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>.</p></caption>
+</figure>
+<p>In figure&nbsp;<figref linkend="pscr370073fig4">4</figref>, we present the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> as a function of the dot radius <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn>. The donor is placed at the center of the spherical layer. The diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> decreases as the radius <italic>b</italic> increases. <inline-eqn><math-text><italic>c</italic><sub><upright>dia</upright></sub></math-text></inline-eqn> approaches the bulk limit of <inline-eqn><math-text>&minus;1.1&thinsp;<upright>au</upright>&thinsp;(&equals;&minus;2.36&times;10<sup>&minus;6</sup>&thinsp;<upright>cm</upright><sup>3</sup>&thinsp;<upright>mole</upright><sup>&minus;1</sup>)</math-text></inline-eqn> (i.e. <inline-eqn><math-text>&lang;<italic>r</italic><sup>2</sup>&rang;&rarr;3<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>) for large dots <inline-eqn><math-text><italic>b</italic>&rarr;&infin;</math-text></inline-eqn>. Our results are in good agreement with&nbsp;[<cite linkend="pscr370073bib22">22</cite>, <cite linkend="pscr370073bib23">23</cite>].</p>
+<figure id="pscr370073fig4" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="19.8pc" printcolour="no" filename="physscr_83_3_035701eps/pscr370073fig4.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="no" filename="physscr_83_3_035701img/pscr370073fig4.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc4" label="Figure 4"><p indent="no">Variation of the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> as a function of the dot radius <inline-eqn><math-text>(<italic>b</italic>)</math-text></inline-eqn>.</p></caption>
+</figure>
+<p>To investigate the influence of the donor position, we display in figure&nbsp;<figref linkend="pscr370073fig5">5</figref> the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> as a function of the ratio <inline-eqn><math-text><italic>r</italic><sub>0</sub>&sol;<italic>b</italic></math-text></inline-eqn> for different radii of the structure (<inline-eqn><math-text><italic>b</italic>&equals;0.5<upright>,</upright></math-text></inline-eqn> 1, 2, 4 and <inline-eqn><math-text>6<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>). We remark that the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> decreases as the ratio <inline-eqn><math-text><italic>r</italic><sub>0</sub>&sol;<italic>b</italic></math-text></inline-eqn> increases (the donor moves from the center to the surface of the dot) and this effect is more pronounced when the donor comes closer to the surface (<inline-eqn><math-text><italic>r</italic><sub>0</sub>&sol;<italic>b</italic>&rarr;1</math-text></inline-eqn>). Our results are in good agreement with Jasper <italic>et al</italic>&nbsp;[<cite linkend="pscr370073bib23">23</cite>]. This could be explained by the fact that for the one-center donor, the orbital electronic wave function has a spherical symmetry and <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> is maximal, whereas for the off-center donor, the spherical symmetry is broken. We note that the diamagnetic susceptibility is more sensitive to variations of the radius for large QD.</p>
+<figure id="pscr370073fig5" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="19.8pc" printcolour="no" colour="yes" filename="physscr_83_3_035701eps/pscr370073fig5.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="yes" colour="yes" filename="physscr_83_3_035701img/pscr370073fig5.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc5" label="Figure 5"><p indent="no">Variation of the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> as a function of the ratio <inline-eqn><math-text><italic>r</italic><sub>0</sub>&sol;<italic>b</italic></math-text></inline-eqn> for different radii of the structure (<inline-eqn><math-text><italic>b</italic>&equals;0</math-text></inline-eqn>.5, 1, 2, 4 and <inline-eqn><math-text>6<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>).</p></caption>
+</figure>
+</sec-level2>
+<sec-level2 id="pscr370073s3.2" label="3.2">
+<heading>QDQW</heading>
+<p indent="no">In figures&nbsp;<figref linkend="pscr370073fig6">6</figref> and&nbsp;<figref linkend="pscr370073fig7">7</figref>, we plot the variations of the donor binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> as a function of the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> and for different values of the outer radius <italic>b</italic>. The ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> varies between 0 and 1. Firstly, we analyze the two particular cases, <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic>&equals;0</math-text></inline-eqn> and <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic>&cong;1</math-text></inline-eqn>. In the first one (<inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic>&equals;0</math-text></inline-eqn>), which corresponds to an HQD, we note that all the curves tend to values which are in good agreement with the results obtained by Khamkhami <italic>et al</italic>&nbsp;[<cite linkend="pscr370073bib7">7</cite>]. The second cases (<inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic>&cong;1</math-text></inline-eqn>) correspond to a narrow GaAs well.</p>
+<figure id="pscr370073fig6" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="19.8pc" printcolour="no" filename="physscr_83_3_035701eps/pscr370073fig6.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="no" filename="physscr_83_3_035701img/pscr370073fig6.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc6" label="Figure 6"><p indent="no">Variation of the binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> as a function of the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> for different values of the outer radius of the QDQW, <inline-eqn><math-text><italic>b</italic>&equals;0.4</math-text></inline-eqn>, 0.5, 0.6, 0.7 and 0.<inline-eqn><math-text>8<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>.</p></caption>
+</figure>
+<figure id="pscr370073fig7" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="19.8pc" printcolour="no" filename="physscr_83_3_035701eps/pscr370073fig7.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="no" filename="physscr_83_3_035701img/pscr370073fig7.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc7" label="Figure 7"><p indent="no">Variation of the binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> as a function of the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> for different values of the outer radius of the QDQW, <inline-eqn><math-text><italic>b</italic>&equals;1</math-text></inline-eqn>, 2, 3, 4 and <inline-eqn><math-text>5<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>.</p></caption>
+</figure>
+<p>In figure&nbsp;<figref linkend="pscr370073fig6">6</figref>, we present the variations of the binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> of a donor placed at the center of a spherical layer, as a function of the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> and for different values of the outer radius <inline-eqn><math-text><italic>b</italic>&les;0.8<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>. We remark that when the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> tends to 1, the donor binding energy tends to the limit of <inline-eqn><math-text>4<italic>R</italic><sup>&ast;</sup></math-text></inline-eqn>, which represents the well-known two-dimensional (2D) donor binding energy. We also remark that the binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> presents a minimum for a critical value of the ratio <inline-eqn><math-text>(<italic>a</italic>&sol;<italic>b</italic>)<sub><upright>crit</upright></sub></math-text></inline-eqn> depending of the value of <italic>b</italic>. For <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> equal to zero, <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> recovers the limit corresponding to an HQD. When the core radius <inline-eqn><math-text><italic>a</italic></math-text></inline-eqn> increases, the donor is confined to a hollow nanosphere, its confinement becomes less important and its binding energy decreases to a minimal value. For a critical value <inline-eqn><math-text>(<italic>a</italic>&sol;<italic>b</italic>)<sub><upright>crit</upright></sub></math-text></inline-eqn>, there is an equilibrium between the surface confinement effects and the 3D confinement effects. For one value of the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> greater than <inline-eqn><math-text>(<italic>a</italic>&sol;<italic>b</italic>)<sub><upright>crit</upright></sub></math-text></inline-eqn>, the surface confinement effects dominate and the binding energy increases. We also notice that the minimum of the binding energy moves toward small values of <inline-eqn><math-text>(<italic>a</italic>&sol;<italic>b</italic>)<sub><upright>crit</upright></sub></math-text></inline-eqn> when the size <italic>b</italic> of the dot increases and vanishes for large values of <italic>b</italic>. This situation is explained by the fact that in the limit <inline-eqn><math-text><italic>b</italic>&rarr;&infin;</math-text></inline-eqn>, the QD behavior is similar to the bulk case. When <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> increases from 0 to 1, the binding energy increases monotonically from the value corresponding to the bulk (3D) to the value corresponding the surface (2D).</p>
+<p>In figure&nbsp;<figref linkend="pscr370073fig7">7</figref>, we plot the variations of the donor binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> against the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> for different values of the outer radius <inline-eqn><math-text><italic>b</italic>&ges;0.8<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>. We see that the binding energy increases monotonically when the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> increases from 0 to 1 for large <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn> values. Indeed, when the inner radius <inline-eqn><math-text><italic>a</italic></math-text></inline-eqn> increases, the donor binding energy moves from the HQD situation where the kinetic energy is dominating to a small spherical surface where the Coulomb energy prevails and the donor can be considered as fixed.</p>
+<p>Now, we focus on the influence of the donor position. In figure&nbsp;<figref linkend="pscr370073fig8">8</figref>, we fix the outer radius at <inline-eqn><math-text><italic>b</italic>&equals;3<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn> and we plot the variations of the donor binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> as a function of the donor position <inline-eqn><math-text><italic>r</italic><sub>0</sub></math-text></inline-eqn> and for different values of the inner radius <italic>a</italic> (<inline-eqn><math-text><italic>a</italic>&equals;0.5</math-text></inline-eqn>, 1, 1.5 and <inline-eqn><math-text>2<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>). We remark that the binding energy presents a maximum when the donor is placed on the center of the spherical layer <inline-eqn><math-text>(<italic>r</italic><sub>0</sub>&equals;(<italic>a&plus;b</italic>)&sol;2)</math-text></inline-eqn>. It reflects the phenomenon observed in HQD&nbsp;[<cite linkend="pscr370073bib4">4</cite>]. When the donor is placed at the center of the spherical layer, the orbital electronic presents the spherical symmetry, the energy is maximal and decreases when the donor moves toward the extremities of the spherical layer.</p>
+<figure id="pscr370073fig8" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="19.8pc" printcolour="no" filename="physscr_83_3_035701eps/pscr370073fig8.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="no" filename="physscr_83_3_035701img/pscr370073fig8.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc8" label="Figure 8"><p indent="no">Variation of the binding energy <inline-eqn><math-text><italic>E</italic><sub><upright>b</upright></sub></math-text></inline-eqn> as a function of the donor position <inline-eqn><math-text><italic>r</italic><sub>0</sub></math-text></inline-eqn> for different values of the inner radius of the QDQW, <inline-eqn><math-text><italic>a</italic>&equals;0.5</math-text></inline-eqn>, 1, 1.5 and <inline-eqn><math-text>2<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn> where <inline-eqn><math-text><italic>b</italic>&equals;3<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>.</p></caption>
+</figure>
+<p>In figure&nbsp;<figref linkend="pscr370073fig9">9</figref>, we plot the variation, of the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> as a function of the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> and for different values of the outer radius <italic>b</italic> (<inline-eqn><math-text><italic>b</italic>&equals;0.5<upright>,</upright></math-text></inline-eqn> 0.6, 0.7, 0.8, 1, 2, 3, 4 and <inline-eqn><math-text>5<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>). The donor is placed at the center of the spherical layer. The ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> varies between 0 and 1. The donor is placed at the center of a spherical layer.</p>
+<figure id="pscr370073fig9" parts="single" width="column" position="float" pageposition="top" printstyle="normal" orientation="port">
+<graphic position="indented">
+<graphic-file version="print" format="EPS" width="19.8pc" printcolour="no" filename="physscr_83_3_035701eps/pscr370073fig9.eps"/>
+<graphic-file version="ej" format="JPEG" printcolour="no" filename="physscr_83_3_035701img/pscr370073fig9.jpg"/>
+</graphic>
+<caption type="figure" id="pscr370073fc9" label="Figure 9"><p indent="no">Variation of the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> as a function of the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> and for different values of the outer radius <italic>b</italic> (<inline-eqn><math-text><italic>b</italic>&equals;0</math-text></inline-eqn>.5, 0.6, 0.7, 0.8, 1, 2, 3, 4 and <inline-eqn><math-text>5<italic>a</italic><sup>&ast;</sup></math-text></inline-eqn>).</p></caption>
+</figure>
+<p>We remark that the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> is more sensitive to variations of the radius for a large spherical layer (<inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> decreases as <inline-eqn><math-text><italic>b</italic></math-text></inline-eqn> increases), and when the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn> tends to 1 the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> tends to the limit, which represents the well-known 2D donor. We remark that the susceptibility shows a minimum corresponding to a certain value of the ratio <inline-eqn><math-text><italic>a</italic>&sol;<italic>b</italic></math-text></inline-eqn>.</p>
+<p>In conclusion, we have studied and computed the donor binding energy and the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> in QDQW. The calculation was performed within the effective mass approximation and using the variational method. An infinitely deep potential well has been used. The results show that the binding energy and the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> depend strongly on the core and the shell radius. The binding energy and the diamagnetic susceptibility <inline-eqn><math-text>&chi;<sub><upright>dia</upright></sub></math-text></inline-eqn> depend strongly on the donor position. We have demonstrated the existence of a critical value <inline-eqn><math-text>(<italic>a</italic>&sol;<italic>b</italic>)<sub><upright>crit</upright></sub></math-text></inline-eqn> which may be important for nanofabrication techniques. This value may also be used to distinguish the 3D confinement from the spherical surface confinement. We believe that our investigation on the susceptibility in QDQW will be relevant for the interpretation of experimental results. Unfortunately, we could not compare our results as no explicit experimental data are available in the literature.</p>
+</sec-level2>
+</sec-level1>
+<acknowledgment>
+<heading>Acknowledgments</heading>
+<p indent="no">IZ is grateful to Laboratoire de Physique de l&apos;Etat Condens&eacute;, Universit&eacute; du Maine (LPEC) and to the Abdus Salam International Centre for Theoretical Physics (ICTP), for their kind hospitality and for their support in this work.</p>
+</acknowledgment>
+<appendix id="pscr370073a1">
+<sec-level1 id="pscr370073s5" label="Appendix">
+<p><display-eqn textype="equation" notation="LaTeX" number="no"><?TeX \[ E_{\rm sub} =\langle \psi(\alpha = 0)|H_{\rm sub}|\psi(\alpha = 0)\rangle = \frac{\pi}{b-a}, \]?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn1.gif"/></display-eqn>where
+<display-eqn textype="equation" notation="LaTeX" number="no"><?TeX \[ H_{\rm sub} = -\nabla ^2 + V(r), \]?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn2.gif"/></display-eqn>
+<display-eqn textype="equation" notation="LaTeX" number="no"><?TeX \[ E_{\rm t} = \mathop {\min }\limits_\alpha \left\{ \frac{\langle \psi|H|\psi\rangle}{\langle\psi|\psi\rangle}\right\}, \]?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn3.gif"/></display-eqn>
+<display-eqn textype="equation" notation="LaTeX" number="no"><?TeX \[ E_{\rm{t}} = \mathop {\min }\limits_\alpha \left\{ K^2 -\alpha ^2 + \alpha \left[r_0^2 \frac{I_2}{I_1} + 2\,K\,\frac{I_3}{I_1} + r_0 \frac{I_4}{I_1} \right]-2\frac{I_5}{I_1} \right\},\]?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn4.gif"/></display-eqn>
+<display-eqn textype="eqnarray" notation="LaTeX" number="no" lines="multiline"><?TeX \begin{eqnarray*} I_1& =& \int_{\rm{a}}^{\rm{b}} {\int_0^{\rm{\pi }} {{\rm{sin}}{\kern 1pt} {\rm{\theta }}\,{\rm{sin}}^2 (K(r-a))} } \nonumber\\ &&\times{\rm exp}\,\left[-2\,\alpha\,\sqrt{r_{0}^{2} + r^{2} -2rr_{0} \,{\rm cos}\,\theta} \right]\,{\rm d}r\,{\rm d}\theta, \end{eqnarray*}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn5.gif"/></display-eqn>
+<display-eqn textype="eqnarray" notation="LaTeX" number="no" lines="multiline"><?TeX \begin{eqnarray*} I_2& =& \int_{\rm a}^{\rm b}\int_{0}^{\rm \pi} \frac{\sin^{3}\theta\sin^{2} (K(r-a))}{(r_{0}^{2} + r^{2} -{2}\,rr_{0}\cos\theta)^{3/2}} \nonumber\\[4pt] &&\times{\rm exp}\,\left[-2\,\alpha\,\sqrt {r_{0}^{2} + r^{2} -{2}\,rr_{0} \cos\theta} \right]\,{\rm d}r\,{\rm d}\theta, \end{eqnarray*}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn6.gif"/></display-eqn>
+<display-eqn textype="eqnarray" notation="LaTeX" number="no" lines="multiline"><?TeX \begin{eqnarray*} I_3 & = & \int_{\rm a}^{\rm b} \int_{0}^{\pi}\sin\theta\sin(K(r-a))\,\cos(K(r-a))\nonumber\\ &&\times\frac{r-r_{0}\,\cos\theta}{\sqrt{r_{0}^{2} + r^{2} -{2}\,rr_{0}\cos\theta}}\nonumber\\ &&\times{\rm exp}\left[-{2}\,\alpha\,\sqrt{r_{0}^{2} + r^{2} -{2}\,rr_{0}\cos\theta}\right]\,{\rm d}r\,{\rm d}\theta, \end{eqnarray*}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn7.gif"/></display-eqn>
+<display-eqn textype="eqnarray" notation="LaTeX" number="no" lines="multiline"><?TeX \begin{leqnarray*} I_4 = \int_{\rm a}^{\rm b} \int_0^{\pi}\sin\theta\frac{\sin^{2} (K(r-a))}{r}\nonumber\\[4pt] \qquad\times\frac{\cos\theta\left[2\,\left(r^{2}+ r_{0}^{2}\right)\right]-rr_{0} \left[1 + 3\cos^{2}\theta\right]}{\left(r_{0}^{2}+ r^{2} -{2}\,rr_{0}\cos\theta\right)^{3/2}}\nonumber\\[4pt] \qquad\times{\rm exp}\left[-2\alpha\,\sqrt{r_{0}^{2}+ r^{2} -{2}\,rr_{0} \cos\theta}\right]\,{\rm d}r\,{\rm d}\theta, \end{leqnarray*} ?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn8.gif"/></display-eqn>
+<display-eqn textype="eqnarray" notation="LaTeX" number="no" lines="multiline"><?TeX \begin{eqnarray*} I_5 &=& \int_{\rm a}^{\rm b} \int_0^{\pi} \frac{\sin\theta\sin^{2}(K(r-a))}{\sqrt{r_{0}^{2} + r^{2} -{2}\,rr_{0}\cos\theta}}\nonumber\\ &&\times\exp\left[-{2}\,\alpha\,\sqrt{r_{0}^{2} + r^{2} -{2}\,rr_0\cos\theta}\right]\,{\rm d}r\,{\rm d}\theta, \end{eqnarray*}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn9.gif"/></display-eqn>
+<display-eqn textype="equation" notation="LaTeX" number="no"><?TeX \[ \chi_{\rm dia} = -\frac{e^2}{6m^{*}\;\varepsilon_0 c^2}\langle(\vec r-\vec r_0 )^2\rangle, \]?>
+<eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn10.gif"/></display-eqn>where
+<display-eqn textype="equation" notation="LaTeX" number="no"><?TeX \[ \langle (\vec r-\vec r_0 )^2\rangle = \frac{\langle {\psi|{(\vec r-\vec r_0 )^2}|\psi}\rangle}{\langle\psi|\psi\rangle}= \frac{I_6}{I_1}, \]?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn11.gif"/></display-eqn>
+<display-eqn textype="eqnarray" notation="LaTeX" number="no" lines="multiline"><?TeX \begin{eqnarray*} I_6 &=& \int^{\rm b}_{\rm a} \,\int^{\rm b}_{\rm a} (r^2 _0 + r^2 -2rr_0\cos \theta)\sin\theta\sin ^2 (K(r-a))\nonumber\\[4pt] &&\times{\rm exp}\,\left[-2\alpha \sqrt {r^2 _0 + r^2 -2rr_0 \cos\theta}\right]{\rm d}r\,{\rm d}\theta. \end{eqnarray*}?><eqn-graphic format="GIF" filename="physscr_83_3_035701img/pscr370073ueqn12.gif"/></display-eqn></p>
+</sec-level1>
+</appendix>
+</body>
+<back>
+<references>
+<heading>References</heading>
+<reference-list type="numeric">
+<journal-ref id="pscr370073bib1" num="1">
+<authors>
+<au><second-name>Sahin</second-name><first-names>M</first-names></au>
+</authors>
+<year>2008</year>
+<jnl-title>Phys. Rev.</jnl-title>
+<part>B</part>
+<volume>77</volume>
+<pages>119901</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1103/PhysRevB.77.119901</cr_doi>
+<cr_issn type="print">1098-0121</cr_issn>
+<cr_issn type="electronic">1550-235X</cr_issn>
+</crossref>
+</journal-ref>
+
+<misc-ref id="pscr370073bib2" num="2">
+<authors>
+<au><second-name>Silva-Valencia</second-name><first-names>J</first-names></au>
+<au><second-name>Porras-Montenegro</second-name><first-names>N</first-names></au>
+</authors>
+<year>1995</year>
+<misc-text><italic>ICTP Internal Report</italic> IC/95/216</misc-text>
+</misc-ref>
+
+<journal-ref id="pscr370073bib3" num="3">
+<authors>
+<au><second-name>Cros</second-name><first-names>A</first-names></au>
+<au><second-name>Fresneda</second-name><first-names>J</first-names></au>
+<au><second-name>Budagosky</second-name><first-names>J A</first-names></au>
+</authors>
+<year>2009</year>
+<jnl-title>Phys. Status Solidi</jnl-title>
+<part>b</part>
+<volume>246</volume>
+<pages>1191&ndash;5</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/pssb.v246:6</cr_doi>
+<cr_issn type="print">03701972</cr_issn>
+<cr_issn type="electronic">15213951</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib4" num="4">
+<authors>
+<au><second-name>Assaid</second-name><first-names>E</first-names></au>
+<au><second-name>Feddi</second-name><first-names>E</first-names></au>
+<au><second-name>Khaidar</second-name><first-names>M</first-names></au>
+<au><second-name>Dujardin</second-name><first-names>F</first-names></au>
+<au><second-name>St&eacute;b&eacute;</second-name><first-names>B</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>Phys. Scr.</jnl-title>
+<volume>63</volume>
+<pages>329&ndash;35</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1238/Physica.Regular.063a00329</cr_doi>
+<cr_issn type="print">0031-8949</cr_issn>
+<cr_issn type="electronic">1402-4896</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib5" num="5">
+<authors>
+<au><second-name>Didi Seddik</second-name><first-names>A</first-names></au>
+<au><second-name>Zorkani</second-name><first-names>I</first-names></au>
+<au><second-name>Mdaa</second-name><first-names>A</first-names></au>
+<au><second-name>Maaza</second-name><first-names>M</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Phys. Status Solidi</jnl-title>
+<part>b</part>
+<volume>243</volume>
+<pages>1765&ndash;74</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/(ISSN)1521-3951</cr_doi>
+<cr_issn type="print">0370-1972</cr_issn>
+<cr_issn type="electronic">1521-3951</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib6" num="6">
+<authors>
+<au><second-name>Hsieh</second-name><first-names>C-Y</first-names></au>
+</authors>
+<year>2000</year>
+<jnl-title>Chin. J. Phys.</jnl-title>
+<volume>38</volume>
+<pages>478</pages>
+</journal-ref>
+
+<journal-ref id="pscr370073bib7" num="7">
+<authors>
+<au><second-name>Khamkhami</second-name><first-names>J</first-names></au>
+<au><second-name>Feddi</second-name><first-names>E</first-names></au>
+<au><second-name>Assaid</second-name><first-names>A</first-names></au>
+<au><second-name>Dujardin</second-name><first-names>F</first-names></au>
+<au><second-name>St&eacute;b&eacute;</second-name><first-names>B</first-names></au>
+<au><second-name>Diouri</second-name><first-names>J</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>Phys. Low-Dim. Struct.</jnl-title>
+<volume>9&sol;10</volume>
+<pages>131&ndash;42</pages>
+</journal-ref>
+
+<journal-ref id="pscr370073bib8" num="8">
+<authors>
+<au><second-name>Ying</second-name><first-names>L</first-names></au>
+<au><second-name>Hong-jing</second-name><first-names>X</first-names></au>
+<au><second-name>Ben-kun</second-name><first-names>M</first-names></au>
+<au><second-name>Jia-qiang</second-name><first-names>L</first-names></au>
+<au><second-name>Jia-lin</second-name><first-names>Z</first-names></au>
+</authors>
+<year>1999</year>
+<jnl-title>Chin. Phys. Lett.</jnl-title>
+<volume>16</volume>
+<pages>680</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0256-307X/16/9/022</cr_doi>
+<cr_issn type="print">0256-307X</cr_issn>
+<cr_issn type="electronic">1741-3540</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib9" num="9">
+<authors>
+<au><second-name>Chaudhuri</second-name><first-names>S</first-names></au>
+</authors>
+<year>1983</year>
+<jnl-title>Phys. Rev.</jnl-title>
+<part>B</part>
+<volume>28</volume>
+<pages>4480</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1103/PhysRevB.28.4480</cr_doi>
+<cr_issn type="print">0163-1829</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib10" num="10">
+<authors>
+<au><second-name>Mews</second-name><first-names>A</first-names></au>
+<au><second-name>Eychm&uuml;ler</second-name><first-names>A</first-names></au>
+<au><second-name>Giersig</second-name><first-names>M</first-names></au>
+<au><second-name>Sooss</second-name><first-names>D</first-names></au>
+<au><second-name>Weller</second-name><first-names>H</first-names></au>
+</authors>
+<year>1994</year>
+<jnl-title>J. Phys. Chem.</jnl-title>
+<volume>98</volume>
+<pages>934&ndash;41</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1021/j100054a032</cr_doi>
+<cr_issn type="print">0022-3654</cr_issn>
+<cr_issn type="electronic">1541-5740</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib11" num="11">
+<authors>
+<au><second-name>Schooss</second-name><first-names>D</first-names></au>
+<au><second-name>Mews</second-name><first-names>A</first-names></au>
+<au><second-name>Eychm&uuml;ler</second-name><first-names>A</first-names></au>
+<au><second-name>Weller</second-name><first-names>H</first-names></au>
+</authors>
+<year>1994</year>
+<jnl-title>Phys. Rev.</jnl-title>
+<part>B</part>
+<volume>49</volume>
+<pages>17072&ndash;8</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1103/PhysRevB.49.17072</cr_doi>
+<cr_issn type="print">0163-1829</cr_issn>
+<cr_issn type="electronic">1095-3795</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib12" num="12">
+<authors>
+<au><second-name>Bryant</second-name><first-names>W</first-names></au>
+</authors>
+<year>1995</year>
+<jnl-title>Phys. Rev.</jnl-title>
+<part>B</part>
+<volume>52</volume>
+<pages>16997&ndash;7000</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1103/PhysRevB.52.R16997</cr_doi>
+<cr_issn type="print">0163-1829</cr_issn>
+<cr_issn type="electronic">1095-3795</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib13" num="13">
+<authors>
+<au><second-name>Guffaath</second-name><first-names>F</first-names></au>
+<au><second-name>Heitz</second-name><first-names>R</first-names></au>
+<au><second-name>Schliwa</second-name><first-names>A</first-names></au>
+<au><second-name>Stier</second-name><first-names>O</first-names></au>
+<au><second-name>Kovsh</second-name><first-names>A R</first-names></au>
+<au><second-name>Ustinov</second-name><first-names>V</first-names></au>
+<au><second-name>Ledentsov</second-name><first-names>N N</first-names></au>
+<au><second-name>Bimberg</second-name><first-names>D</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>Phys. Status Solidi</jnl-title>
+<part>b</part>
+<volume>224</volume>
+<pages>61&ndash;5</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/(ISSN)1521-3951</cr_doi>
+<cr_issn type="print">0370-1972</cr_issn>
+<cr_issn type="electronic">1521-3951</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib14" num="14">
+<authors>
+<au><second-name>Xu</second-name><first-names>L</first-names></au>
+<au><second-name>Chen</second-name><first-names>K</first-names></au>
+<au><second-name>Zhu</second-name><first-names>J</first-names></au>
+<au><second-name>Chen</second-name><first-names>H</first-names></au>
+<au><second-name>Huang</second-name><first-names>H</first-names></au>
+<au><second-name>Xu</second-name><first-names>J</first-names></au>
+<au><second-name>Huang</second-name><first-names>X</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>Superlattices Microstruct.</jnl-title>
+<volume>29</volume>
+<pages>67</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1006/spmi.2000.0922</cr_doi>
+<cr_issn type="print">07496036</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib15" num="15">
+<authors>
+<au><second-name>Bryant</second-name><first-names>G W</first-names></au>
+<au><second-name>Jaskolvski</second-name><first-names>W</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>Phys. Status Solidi</jnl-title>
+<part>b</part>
+<volume>224</volume>
+<pages>751&ndash;5</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/(ISSN)1521-3951</cr_doi>
+<cr_issn type="print">0370-1972</cr_issn>
+<cr_issn type="electronic">1521-3951</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib16" num="16">
+<authors>
+<au><second-name>Little</second-name><first-names>B</first-names></au>
+<au><second-name>El</second-name><first-names>Sayed</first-names></au>
+<au><second-name>Bryant</second-name><first-names>G W</first-names></au>
+<au><second-name>Burke</second-name><first-names>S</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>J. Chem. Phys.</jnl-title>
+<volume>114</volume>
+<pages>1813&ndash;22</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1063/1.1333758</cr_doi>
+<cr_issn type="print">00219606</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib17" num="17">
+<authors>
+<au><second-name>Millo</second-name><first-names>O</first-names></au>
+<au><second-name>Katz</second-name><first-names>D</first-names></au>
+<au><second-name>Yun Wei</second-name><first-names>C</first-names></au>
+<au><second-name>Banin</second-name><first-names>U</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>Phys. Status Solidi</jnl-title>
+<part>b</part>
+<volume>224</volume>
+<pages>271&ndash;6</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/(ISSN)1521-3951</cr_doi>
+<cr_issn type="print">0370-1972</cr_issn>
+<cr_issn type="electronic">1521-3951</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib18" num="18">
+<authors>
+<au><second-name>Feng</second-name><first-names>X</first-names></au>
+<au><second-name>Xiong</second-name><first-names>G</first-names></au>
+<au><second-name>Zhang</second-name><first-names>X</first-names></au>
+<au><second-name>Gao</second-name><first-names>H</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Physica</jnl-title>
+<part>B</part>
+<volume>383</volume>
+<pages>207&ndash;12</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.physb.2006.03.012</cr_doi>
+<cr_issn type="print">09214526</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib19" num="19">
+<authors>
+<au><second-name>Gong</second-name><first-names>S</first-names></au>
+<au><second-name>Yao</second-name><first-names>D</first-names></au>
+<au><second-name>Feng</second-name><first-names>X</first-names></au>
+<au><second-name>Jiang</second-name><first-names>H</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Microelectron. J.</jnl-title>
+<volume>37</volume>
+<pages>904&ndash;9</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.mejo.2006.01.015</cr_doi>
+<cr_issn type="print">00262692</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib20" num="20">
+<authors>
+<au><second-name>Elangovan</second-name><first-names>A</first-names></au>
+<au><second-name>Navaneethakrishnan</second-name><first-names>K</first-names></au>
+</authors>
+<year>1993</year>
+<jnl-title>Phys. Rev.</jnl-title>
+<part>B</part>
+<volume>48</volume>
+<pages>7986</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1103/PhysRevB.48.7986</cr_doi>
+<cr_issn type="print">0163-1829</cr_issn>
+<cr_issn type="electronic">1095-3795</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib21" num="21">
+<authors>
+<au><second-name>Rao</second-name><first-names>V</first-names></au>
+<au><second-name>Krishna</second-name><first-names>H</first-names></au>
+</authors>
+<year>1994</year>
+<jnl-title>Japan. J. Appl. Phys.</jnl-title>
+<volume>33</volume>
+<pages>1305</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1143/JJAP.33.1305</cr_doi>
+<cr_issn type="print">00214922</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib22" num="22">
+<authors>
+<au><second-name>Nithiananthi</second-name><first-names>P</first-names></au>
+<au><second-name>Jayakumar</second-name><first-names>K</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Solid State Commun.</jnl-title>
+<volume>137</volume>
+<pages>427&ndash;30</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.ssc.2005.12.025</cr_doi>
+<cr_issn type="print">00381098</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib23" num="23">
+<authors>
+<au><second-name>Jasper</second-name><first-names>A J</first-names></au>
+<au><second-name>Reuben</second-name><first-names>D</first-names></au>
+<au><second-name>Jayakumar</second-name><first-names>K</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Phys. Status Solidi</jnl-title>
+<part>b</part>
+<volume>243</volume>
+<pages>4020&ndash;4</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/(ISSN)1521-3951</cr_doi>
+<cr_issn type="print">03701972</cr_issn>
+<cr_issn type="electronic">15213951</cr_issn>
+</crossref>
+</journal-ref>
+
+<journal-ref id="pscr370073bib24" num="24">
+<authors>
+<au><second-name>Peter</second-name><first-names>A J</first-names></au>
+<au><second-name>Ebenezar</second-name><first-names>J</first-names></au>
+</authors>
+<year>2009</year>
+<jnl-title>J. Sci. Res.</jnl-title>
+<volume>1</volume>
+<pages>200&ndash;8</pages>
+</journal-ref>
+
+<journal-ref id="pscr370073bib25" num="25">
+<authors>
+<au><second-name>Sharkey</second-name><first-names>J J</first-names></au>
+<au><second-name>ChangKyoo</second-name><first-names>Y</first-names></au>
+<au><second-name>Peter</second-name><first-names>A J</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>Superlattices Microstruct.</jnl-title>
+<volume>48</volume>
+<pages>248&ndash;55</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.spmi.2010.04.016</cr_doi>
+<cr_issn type="print">07496036</cr_issn>
+</crossref>
+</journal-ref>
+
+<book-ref id="pscr370073bib26" num="26">
+<authors>
+<au><second-name>Kittel</second-name><first-names>C</first-names></au>
+</authors>
+<year>1998</year>
+<book-title>Introduction to Solid State Physics</book-title>
+<edition>7th edn</edition>
+<publication>
+<place>New York</place>
+<publisher>Wiley</publisher>
+</publication>
+</book-ref>
+
+</reference-list>
+</references>
+</back>
+</article>

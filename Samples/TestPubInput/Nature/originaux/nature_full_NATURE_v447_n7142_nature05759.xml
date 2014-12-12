@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_article.dtd" [
+<!ENTITY e070517-10 SYSTEM "edsumm/070517-10.xml">
+<!ENTITY eqn1 PUBLIC "-//NatureAmerica//FICI nature05759-m1//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-m1.jpg" NDATA ITEM>
+<!ENTITY eqn2 PUBLIC "-//NatureAmerica//FICI nature05759-m2//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-m2.jpg" NDATA ITEM>
+<!ENTITY eqn3 PUBLIC "-//NatureAmerica//FICI nature05759-m3//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-m3.jpg" NDATA ITEM>
+<!ENTITY eqn4 PUBLIC "-//NatureAmerica//FICI nature05759-m4//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-m4.jpg" NDATA ITEM>
+<!ENTITY eqn5 PUBLIC "-//NatureAmerica//FICI nature05759-m5//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-m5.jpg" NDATA ITEM>
+<!ENTITY eqn6 PUBLIC "-//NatureAmerica//FICI nature05759-m6//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-m6.jpg" NDATA ITEM>
+<!ENTITY figf1 PUBLIC "-//NatureAmerica//FICI nature05759-f1//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-f1.2.jpg" NDATA ITEM>
+<!ENTITY figf2 PUBLIC "-//NatureAmerica//FICI nature05759-f2//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-f2.2.jpg" NDATA ITEM>
+<!ENTITY figf3 PUBLIC "-//NatureAmerica//FICI nature05759-f3//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-f3.2.jpg" NDATA ITEM>
+<!ENTITY nature05759-s1 SYSTEM "edsumm/nature05759-s1.xml">
+]>
+<article id="nature05759" language="eng" publish="issue" relation="no" origsrc="yes">
+<pubfm>
+<jtl>Nature</jtl>
+<vol>447</vol>
+<iss>7142</iss>
+<idt>20070517</idt>
+<categ id="lt"/>
+<pp><spn>303</spn><epn>306</epn><cnt>4</cnt></pp>
+<issn type="print">0028-0836</issn>
+<issn type="electronic">1476-4687</issn>
+<cpg><cpy>2007</cpy><cpn>Nature Publishing Group</cpn></cpg>
+<suppinfo id="s1"><suppobj extrefid="nature05759-s1" format="pdf" filesize="412K"><title>Supplementary Information</title>
+<descrip><p>This file contains Supplementary Notes, Supplementary Figures 1-2 with Legends, Supplementary Table 1 and additional references.</p></descrip></suppobj>
+<suppobj extrefid="nature05759-s2" format="xls" filesize="40K"><title>Supplementary Table 1</title>
+<descrip><p>This file contains Supplementary Table 1.</p></descrip></suppobj></suppinfo>
+<doi>10.1038/nature05759</doi>
+</pubfm>
+<fm>
+<atl>Survival times of anomalous melt inclusions from element diffusion in olivine and chromite</atl>
+<aug>
+<cau><fnm>C.</fnm><snm>Spandler</snm><inits>C</inits><orf rid="a1" refchar="asterisk"/><orf rid="a3" refchar="ddagger"/><corf rid="c1"/></cau>
+<cau><fnm>H. St C.</fnm><snm>O&rsquo;Neill</snm><inits>H S C</inits><orf rid="a1" refchar="asterisk"/><corf rid="c1"/></cau>
+<au><fnm>V. S.</fnm><snm>Kamenetsky</snm><inits>V S</inits><orf rid="a2" refchar="dagger"/></au>
+<aff><oid id="a1"/>Research School of Earth Sciences, Australian National University, <cty>Canberra 0200</cty>, <cny>Australia</cny></aff>
+<aff><oid id="a2"/>ARC Centre of Excellence in Ore Deposits and School of Earth Sciences, University of Tasmania, <cty>Hobart 7001</cty>, <cny>Australia</cny></aff>
+<aff><oid id="a3"/>Present address: Institute of Geological Sciences, University of Bern, <cty>Bern 3012</cty>, <cny>Switzerland</cny>.</aff>
+<caff><coid id="c1"/>Correspondence and requests for materials should be addressed to C.S. (<email>spandler@geo.unibe.ch</email>) or H.StC.O&rsquo;N. (<email>hugh.oneill@anu.edu.au</email>).</caff>
+</aug>
+<hst><re year="2006" month="06" day="20"/><acc year="2007" month="03" day="16"/></hst>&e070517-10; &nature05759-s1;</fm>
+<bdy>
+<fp>
+<p>The chemical composition of basaltic magma erupted at the Earth&rsquo;s surface is the end product of a complex series of processes, beginning with partial melting and melt extraction from a mantle source and ending with fractional crystallization and crustal assimilation at lower pressures. It has been proposed that studying inclusions of melt trapped in early crystallizing phenocrysts such as Mg-rich olivine and chromite may help petrologists to see beyond the later-stage processes and back to the origin of the partial melts in the mantle<bibr rid="b1 b2"/>. Melt inclusion suites often span a much greater compositional range than associated erupted lavas, and a significant minority of inclusions carry distinct compositions that have been claimed to sample melts from earlier stages of melt production, preserving separate contributions from mantle heterogeneities<bibr rid="b1 b2 b3 b4"/>. This hypothesis is underpinned by the assumption that melt inclusions, once trapped, remain chemically isolated from the external magma for all elements except those that are compatible in the host minerals<bibr rid="b1 b2"/>. Here we show that the fluxes of rare-earth elements through olivine and chromite by lattice diffusion are sufficiently rapid at magmatic temperatures to re-equilibrate completely the rare-earth-element patterns of trapped melt inclusions in times that are short compared to those estimated for the production and ascent of mantle-derived magma<bibr rid="b5 b6"/> or for magma residence in the crust<bibr rid="b7"/>. Phenocryst-hosted melt inclusions with anomalous trace-element signatures must therefore form shortly before magma eruption and cooling. We conclude that the assumption of chemical isolation of incompatible elements in olivine- and chromite-hosted melt inclusions<bibr rid="b1 b2"/> is not valid, and we call for re-evaluation of the popular interpretation that anomalous melt inclusions represent preserved samples of unmodified mantle melts.</p>
+</fp>
+<p>The ability of a host crystal to isolate and preserve a melt inclusion with a different trace-element signature to the external magma (that is, an anomalous melt inclusion) depends on a negligible flux of the trace elements through the host crystal by lattice diffusion. The process has been modelled mathematically by Qin <i>et al.</i><bibr rid="b8"/>, who showed that the isolation of the melt inclusion with respect to a trace element M depends on the diffusion coefficient of M and the partition coefficient between melt and crystal, as well as the dimensions of the inclusion and its host crystal. It has been assumed, often implicitly but sometimes explicitly<bibr rid="b1 b2 b8 b9"/>, that the partition coefficients and diffusion coefficients of incompatible trace elements like the rare-earth elements (REEs) in the early crystallizing phases olivine and chromite are so low that isolation is effective: that is, anomalous inclusions are preserved over timescales that are long compared to those expected for magma extraction, ascent and residence in the crust. Although it is true that the concentrations of nearly all the incompatible trace elements in olivine and chromite are very low<bibr rid="b10"/>, there are no data on the diffusion coefficients, and thus this most important assumption has never been tested. We have conducted multi-component chemical diffusion experiments on melt-inclusion-hosting olivine and chromite crystals in order to evaluate directly the degree of melt inclusion re-equilibration with an external melt. These experiments also enable us simultaneously to determine the diffusion and partition coefficients for REEs and other elements that are needed for calculating re-equilibration timescales from the mathematical model.</p>
+<p>For the olivine experiments, pristine olivine crystals (1&ndash;2&thinsp;mm in size) of composition 89&ndash;91% forsterite and containing melt inclusions were hand-picked from a sample of high-Mg mid-ocean-ridge basalt dredged from the southern Mid-Atlantic Ridge (sample AG32-4-68 of ref. <bibrinl rid="b11">11</bibrinl>). The inclusions share similar compositions (<figr rid="f1">Fig. 1</figr>) that are typical of primitive high-Mg mid-ocean-ridge basalt liquids<bibr rid="b12"/> (<sir rid="s1">Supplementary Information</sir>). Trapping temperatures of 1,230&ndash;1,280&thinsp;&deg;C were recorded for around 50 melt inclusions from homogenization on a heating stage<bibr rid="b12"/>. The host olivines have low REE contents that are consistent with values predicted from relevant olivine/melt partition coefficients<bibr rid="b13 b14"/>. A glass of basaltic composition calculated to be in equilibrium with the olivine (90% forsterite) at 1,300&thinsp;&deg;C was synthesized with &sim;400&thinsp;p.p.m. of the REEs Pr, Eu, Tb, Ho and Lu (<sir rid="s1">Supplementary Information</sir>). The olivine crystals were combined with the powdered synthetic glass and placed in Re buckets in a gas-mixing furnace and run at 1,300&thinsp;&deg;C, sufficient to ensure complete remelting of the inclusions, with oxygen fugacity set to 10<super>-9.7</super>&thinsp;bar using a flowing CO/CO<sub>2</sub> gas mixture. Run durations were 1, 5 and 25&thinsp;days, after which the samples were quenched rapidly by dropping into water. Olivine grains were polished to expose the inclusions for analysis of major elements (by energy dispersive spectrometry) and of REEs and selected other trace elements (by laser-ablation inductively coupled plasma mass spectrometry, ICP-MS), with a number of elemental profiles across olivine grains obtained to determine both diffusion coefficients and crystal/melt partition coefficients. The diffusion coefficients are averages from randomly oriented crystallographic sections, suitable for applying to the model of Qin <i>et al.</i><bibr rid="b8"/>, which assumes isotropic diffusion. Similar experimental techniques were used for inclusion-hosting chromite grains from the Stillwater Complex<bibr rid="b15"/>, except the experimental duration was 7&thinsp;days at 1,450&thinsp;&deg;C, to ensure remelting and homogenization of the melt inclusions<bibr rid="b15"/>, and to produce easily measurable diffusion profiles. The experimental and analytical techniques are more fully described in the <sir rid="s1">Supplementary Information</sir>.</p>
+<p>The REE contents in the melt inclusions from the one-day olivine experiment are indistinguishable from the original compositions (<figr rid="f1">Fig. 1a</figr>), indicating that diffusive re-equilibration of these inclusions from the synthetic external melt was insignificant. However, sections of the olivine up to 50&thinsp;&mgr;m from the olivine/external melt interface have elevated Lu, Ho and Tb contents. Larger inclusions from the five-day run were also mostly unaffected, but many smaller (&lt;40&thinsp;&mgr;m) inclusions were enriched in Lu, Ho, Tb and Eu (<figr rid="f1">Fig. 1b</figr>), and olivine grains had elevated Lu, Ho, Tb and Eu contents to 100&thinsp;&mgr;m from the external melt interface. After 25&thinsp;days, 21 out of a total of 22 analysed inclusions have modified REE patterns (<figr rid="f1">Fig. 1c</figr>). Inclusions with the most extreme REE patterns tend to be small, located within 50&thinsp;&mgr;m of an olivine grain boundary, and are measurably enriched in Pr as well as Lu, Ho, Tb and Eu. They are also depleted in the heavy REEs not added to the external melt (Er, Tm, Yb). Elevated levels of the doped REEs were also found in the olivine crystals, decreasing from the melt/olivine interface towards the interior of the crystal along diffusion profiles (<figr rid="f2">Fig. 2</figr>; <sir rid="s1">Supplementary Fig. 1</sir>). Similar results were obtained from the chromite experiment. The REE content of chromite has usually been considered insignificant<bibr rid="b10"/>, but diffusion of REEs at 1,450&thinsp;&deg;C is sufficiently rapid that modification of chromite-hosted melt inclusions is observed after only 7&thinsp;days (<figr rid="f1">Fig. 1d</figr>).</p>
+<p>All melt inclusions with altered REE patterns show a monotonic increase in the degree of enrichment of the doped REE with atomic number, as do their host olivine or chromite crystals. Lutetium is the most extensively enriched element, followed by Ho, Tb and Eu, with elevated Pr contents only found in inclusions with the most modified REE patterns. Because the external melt was doped with similar contents of the selected REEs (<sir rid="s1">Supplementary Table 1</sir>), this fractionation of the REEs in the melt inclusions and olivine cannot be due to physical mixing between the melt inclusions and the external melt, for example along micro-cracks. Furthermore, optical and chemical examination of the olivine and chromite grains indicates that the grains did not undergo dissolution or crystallization during the experiments. The enrichment and fractionation of REEs is attributed solely to diffusion of these elements from the external melt through the olivine and chromite and thence into their melt inclusions. The depletion of Er, Tm and Yb in some of the inclusions (<figr rid="f1">Fig. 1c</figr>) is due to diffusion of these elements out of the inclusions, as the external melt is initially devoid of these elements. The general inverse relationship between melt inclusion size and degree of element enrichment (<figr rid="f1">Fig. 1b, c</figr>) is expected, because smaller inclusions are more susceptible to diffusive re-equilibration owing to their greater surface area to volume ratio<bibr rid="b8 b9"/>.</p>
+<p>Diffusion coefficients and partition coefficients were obtained by least-squares fitting of the analytical traverses (<figr rid="f2">Fig. 2</figr>) (see <sir rid="s1">Supplementary Information</sir>). Mean values are given in <tablr rid="t1">Table 1</tablr> together with observed standard deviations. Our measured diffusion coefficients for Ca and Ni in olivine are in excellent agreement with previous work using quite different experimental approaches<bibr rid="b16 b17"/> (see <tablr rid="t1">Table 1</tablr>). A novel feature of our experiments is that the chemical potentials of all relevant major-element oxide components are controlled by the presence of the silicate melt, and moreover are controlled at values appropriate to natural magmas. Previous investigations of diffusion in olivine and other silicates have until recently only controlled oxygen fugacity among chemical potentials, despite the expectation that point-defect concentrations, which determine diffusion rates, depend on other chemical potentials such as silica activity<bibr rid="b18 b19"/>. New results on the effect of H<sub>2</sub>O on interdiffusion of Mg-Fe<super>2+</super> in olivine demonstrate this clearly<bibr rid="b20"/>.</p>
+<p>Our reported values of the partition coefficients (<i>K</i><sub>M</sub>) for the REEs between olivine and melt (<tablr rid="t1">Table 1</tablr>) are similar to previously reported values<bibr rid="b13 b14"/> (see <sir rid="s1">Supplementary Information</sir>). Values of the diffusion coefficients (<i>D</i><sub>M</sub>) of the REEs are identical within experimental error for all REEs in both olivine and chromite, as previously found for garnet, feldspar and apatite, but in contrast to diopside and zircon<bibr rid="b21"/>; the reason for this dichotomy is not known. However, values of the REE diffusion coefficients are two to four orders of magnitude faster in olivine than in these aforementioned minerals at the same temperature<bibr rid="b21"/>, and are remarkably similar to the diffusion coefficients for Mg and Fe<super>2+</super> (ref. <bibrinl rid="b17">17</bibrinl>), the major divalent cations in olivine. The only study addressing the substitution mechanisms of large trivalent cations into olivine found that the substitution of Sc is coupled to vacancies (vac) to maintain charge balance, producing the end-member (Sc<sub>2/3</sub>vac<sub>1/3</sub>)<sub>2</sub>SiO<sub>4</sub> (ref. <bibrinl rid="b22">22</bibrinl>). This study found no evidence for Sc coupling with Al (that is, as an MScAlO<sub>4</sub> component, where M&thinsp; = &thinsp;Mg or Fe<super>2+</super>). If REEs substitute similarly, then charge balance requires that the diffusion of REEs through the olivine lattice occurs by the mechanism: <fd id="m6"><mathimg entname="eqn6"/></fd> The similarity of the observed diffusion coefficients of the REEs to those of Mg and Fe suggest that the latter are the rate-controlling factors for REE diffusion in olivine, which also accounts for the observation that the values of diffusion coefficients for the REEs are independent of atomic number. In contrast to the fast diffusion of REEs, very slow diffusion of Al and P (two elements that may substitute for slow-diffusing Si in the tetrahedral site of olivine) is evident from the absence of any observable diffusion profiles, and from the variety of original magmatic concentrations and zoning patterns that are preserved (<figr rid="f2">Fig. 2</figr>). In some crystals (for example, <figr rid="f2">Fig. 2c</figr>), Al is heterogeneous on a scale similar to the resolution of the analytical method (&sim;3&thinsp;&mgr;m), suggesting that diffusion rates of Al in olivine are at least three orders of magnitude slower than those of REEs or divalent cations.</p>
+<p>It has been assumed that diffusion does not significantly alter the incompatible trace element content of olivine- or chromite-hosted melt inclusions<bibr rid="b1 b2 b8 b9"/> because partition coefficients for these elements in olivine and chromite are low (this work, and refs <bibrinl rid="b10">10</bibrinl> and <bibrinl rid="b13">13</bibrinl>). However, REE diffusion in these minerals is sufficiently rapid to counter the effects of low partition coefficients, permitting a significant flux of REEs through the olivine and chromite in times that are short compared to those typically proposed for processes of partial melting, magma transport or crustal residence (10 to 10<super>5</super>&thinsp;years)<bibr rid="b5 b6 b7"/>.</p>
+<p>We have used our diffusion coefficients and olivine/melt partition coefficients (<tablr rid="t1">Table 1</tablr>) with the mathematical model of Qin <i>et al.</i><bibr rid="b8"/> to calculate timescales of REE re-equilibration between external melt and a 50-&mgr;m spherical melt inclusion trapped within a 1-mm olivine grain. Our results show that a melt inclusion will undergo 90% re-equilibration in less than 3&thinsp;years for the heavy REEs, in around 10&thinsp;years for the middle REEs and in 20&ndash;100&thinsp;years for the light REEs (<figr rid="f3">Fig. 3</figr>). These limiting times may be shortened further in hydrous magmas if the effect of H<sub>2</sub>O, not present in our experiments, is included<bibr rid="b20"/>. Recent estimates for the transit times of basalt from its mantle source through the crust range from 30 to &gt;10<super>4</super>&thinsp;years, from measurements of U-series disequilibria<bibr rid="b5"/> or geophysical modelling of melt extraction processes<bibr rid="b6"/>. Residence times of basaltic magma and associated crystals in the lower crust are also expected to be decades to thousands of years<bibr rid="b7"/>. Our data affirm that even if the shorter timescales for these processes are accepted, the REE patterns of anomalous melt inclusions trapped in olivine phenocrysts in the mantle or lower crust will be extensively modified by lattice diffusion before transport to the Earth&rsquo;s surface. These constraints require olivine-hosted melt inclusions with anomalous REE concentrations to be trapped at upper crustal levels shortly (&lt;20&thinsp;years) before eruption. Melt inclusions trapped in mantle xenoliths from kimberlites, which are transported to the surface in hours to days<bibr rid="b23"/>, would be exceptions. This result is consistent with studies that demonstrate some melt inclusion suites to form at relatively low pressures<bibr rid="b2 b3"/> or immediately preceding eruption and cooling<bibr rid="b24"/>, and we propose that melt inclusion entrapment in phenocrysts is likely to be a late-stage process in general.</p>
+<p>Studies of exposed crustal sequences<bibr rid="b25 b26"/> and xenocrysts in volcanic rocks<bibr rid="b27"/> indicate that primary mantle melts often experience some degree of reaction and modification during transit through the crust. The fast rates of REE diffusion in olivine and chromite reported here confirm that the isolation of inclusions by these phases may not be sufficient to preserve them against such modification, calling into question the view that anomalous melt inclusions faithfully record signatures of primary melts from the mantle<bibr rid="b1 b2 b3 b4"/>. Our results are compatible with alternative proposals that anomalous melt inclusions form either during localized assimilation of crustal rocks&mdash;for example, at the margins of a magma chamber or during ascent in a magma conduit<bibr rid="b28 b29"/>&mdash;or during shallow-level magma mixing<bibr rid="b30"/>. This scenario is consistent with constraints from divalent cation diffusion profiles in olivine xenocrysts, which demonstrate that crustal assimilation by ascending basaltic magmas occurs shortly before eruption (&lt;10&thinsp;years) (ref. <bibrinl rid="b27">27</bibrinl>). Melt inclusion studies may therefore provide important insights into crustal modification of mantle-derived magmas<bibr rid="b28"/>.</p>
+</bdy>
+<bm>
+<objects>
+<fig id="f1" entname="figf1">
+<figtl><b>Chondrite-normalized REE plots of olivine- and chromite-hosted melt inclusions.</b></figtl>
+<caption><p>The grey fields represent the compositional range of normal melt inclusions after homogenization. <b>a</b>&ndash;<b>c</b>, Representative olivine-hosted melt inclusions from the 1-day (<b>a</b>), 5-day (<b>b</b>) and 25-day (<b>c</b>) experiments. <b>d</b>, Chromite-hosted melt inclusions from a 7-day experiment. Inclusion size is in &mgr;m.</p></caption>
+</fig>
+<fig id="f2" entname="figf2">
+<figtl><b>Measured element diffusion profiles from analytical traverses (obtained by laser ablation ICP-MS) across olivine grains.</b></figtl>
+<caption><p>Solid lines represent the fitted diffusion profiles. <b>a</b>, Profiles for Ni, Ca, Al, P, Ti, Lu, Ho, Tb and Eu across olivine from the 25-day experiment. The increased scatter in Eu and Tb values at 150&ndash;300&thinsp;&mgr;m from the olivine/melt interface reflect low element concentrations that approach the analytical detection limits. <b>b</b>, Profiles for Ni, Al and P across olivine from the 5-day experiment. <b>c</b>, Profiles for Ni, Al and P across a second olivine grain from the 25-day experiment. <b>d</b>, Profile for Ni, Al and P across the interior of a homogenous olivine from a spinel-lherzolite xenolith (Anakies 9A), for comparison. As P was not present in the melt, any measurable diffusion of P would result in very low levels of this element in the olivine at equilibrium (&le;1&thinsp;p.p.m.). Note the total lack of diffusion of P and the preservation of igneous zoning in the Al and P profiles. Olivines show a variety of original Ni concentrations, but values of <i>D</i><sub>Ni</sub> are identical within expected uncertainty. Note the homogeneity of the Anakies 9a olivine compared with the phenocrystal olivines used in the experiments. Details of the data fitting and analysis are presented in the <sir rid="s1">Supplementary Information</sir>. The logarithms of diffusion coefficient values (<i>D</i><sub>M</sub> in m<super>2</super>&thinsp;s<super>-1</super>) and either the original concentration (<i>c</i><sub>o</sub>) or, for non-diffusing elements, concentration ranges, are indicated.</p></caption>
+</fig>
+<fig id="f3" entname="figf3">
+<figtl><b>Modelled re-equilibration times for REEs between a melt inclusion in an olivine grain and an external melt at 1,300&thinsp;&deg;C.</b></figtl>
+<caption><p>Solid curves, a 50-&mgr;m melt inclusion in a 1-mm grain; dashed curve for Lu, a 50-&mgr;m melt inclusion in a 0.5-mm grain; dashed curve for Ce, a 30-&mgr;m melt inclusion in a 1-mm grain. Re-equilibration was calculated from the equations of ref. <bibrinl rid="b8">8</bibrinl> using a diffusion coefficient of 10<super>-14.9</super>&thinsp;m<super>2</super>&thinsp;s<super>-1</super> for all REEs and relevant REE olivine/melt partition coefficients (see <sir rid="s1">Supplementary Fig. 2</sir>). Shown for comparison are timescales for basalt transfer from the mantle from U-series disequilibria<bibr rid="b5"/> and from geophysical constraints<bibr rid="b6"/>, and residence of basalt and associated crystals in the lower crust<bibr rid="b7"/>&mdash;all of which are longer than the time needed for re-equilibration of REE in the melt inclusion. By contrast, timescales of assimilation of crustal material by ascending basalt are relatively short<bibr rid="b27"/>.</p></caption>
+</fig>
+<table frame="topbot" id="t1" tabcols="5"><title>Calculated parameters for olivine and chromite</title>
+<tgroup cols="5" colsep="0" rowsep="0"><colspec colnum="1" colname="col1" align="left" colwidth="1*"/><colspec colnum="2" colname="col2" align="center" colwidth="1*"/><colspec colnum="3" colname="col3" align="center" colwidth="1*"/><colspec colnum="4" colname="col4" align="center" colwidth="1*"/><colspec colnum="5" colname="col5" align="center" colwidth="1*"/><spanspec namest="col1" nameend="col5" spanname="1-1"/><spanspec namest="col1" nameend="col5" spanname="1-2"/><spanspec namest="col1" nameend="col5" spanname="1-3"/>
+<thead>
+<row>
+<entry colname="col1" align="left">Element</entry>
+<entry colname="col2" align="center">log <i>D</i><sub>M</sub>(m<super>2</super>&thinsp;s<super>-1</super>)</entry>
+<entry colname="col3" align="center">&plusmn;<i>&sgr;</i></entry>
+<entry colname="col4" align="center"><i>K</i><sub>M</sub></entry>
+<entry colname="col5" align="center">&plusmn;<i>&sgr;</i></entry>
+</row>
+</thead>
+<tfoot>
+<row>
+<entry spanname="1-3" align="left"> <fn id="t1-fn1" type="footnote"><p>Shown are calculated diffusion coefficients (<i>D</i><sub>M</sub>) and partition coefficients (<i>K</i><sub>M</sub>); for each value, uncertainties (&plusmn;<i>&sgr;</i>) are given in the following column. Note the similarity between Ca and Ni diffusion coefficients calculated from this study and those reported by ref. <bibrinl rid="b16">16</bibrinl> and ref. <bibrinl rid="b17">17</bibrinl>. <f id="m3"><mathimg entname="eqn3"/></f>, oxygen fugacity.</p></fn> </entry>
+</row>
+<row>
+<entry spanname="1-3" align="left"> <fn id="t1-fn2" type="footnote"><p>*Data from ref. <bibrinl rid="b17">17</bibrinl> at 1,300&thinsp;&deg;C and <f id="m4"><mathimg entname="eqn4"/></f> of &sim;10<super>-9</super>&thinsp;bar.</p></fn> </entry>
+</row>
+<row>
+<entry spanname="1-3" align="left"> <fn id="t1-fn3" type="footnote"><p>&dagger;Data from ref. <bibrinl rid="b16">16</bibrinl> at 1,300&thinsp;&deg;C and <f id="m5"><mathimg entname="eqn5"/></f> of &sim;10<super>-10</super>&thinsp;bar.</p></fn> </entry>
+</row>
+<row>
+<entry spanname="1-3" align="left"> <fn id="t1-fn4" type="footnote"><p>&Dagger;Range is that covered by different crystallographic orientations or varying olivine composition.</p></fn> </entry>
+</row>
+</tfoot>
+<tbody>
+<row>
+<entry colname="col1" spanname="1-1" align="left"><b>Olivine</b> (Mg#&thinsp;&ap;&thinsp;90; <i>T</i>&thinsp; = &thinsp;1,300&thinsp;&deg;C; <f id="m1"><mathimg entname="eqn1"/></f>&thinsp; = &thinsp;10<super>-9.7</super>&thinsp;bar)</entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ca</entry>
+<entry colname="col2" align="center">-15.72</entry>
+<entry colname="col3" align="center">0.23</entry>
+<entry colname="col4" align="center">0.015</entry>
+<entry colname="col5" align="center">3&thinsp;&times;&thinsp;10<super>-3</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ca<fnr rid="t1-fn2">*</fnr></entry>
+<entry colname="col2" align="center">-15.53</entry>
+<entry colname="col3" align="center"></entry>
+<entry colname="col4" align="center"></entry>
+<entry colname="col5" align="center"></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ca<fnr rid="t1-fn3">&dagger;</fnr></entry>
+<entry colname="col2" align="center">-15.39 to -15.25<fnr rid="t1-fn4">&Dagger;</fnr></entry>
+<entry colname="col3" align="center"></entry>
+<entry colname="col4" align="center"></entry>
+<entry colname="col5" align="center"></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ti</entry>
+<entry colname="col2" align="center">-14.99</entry>
+<entry colname="col3" align="center">0.24</entry>
+<entry colname="col4" align="center">0.09</entry>
+<entry colname="col5" align="center">0.03</entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ni</entry>
+<entry colname="col2" align="center">-15.20</entry>
+<entry colname="col3" align="center">0.23</entry>
+<entry colname="col4" align="center">20</entry>
+<entry colname="col5" align="center">2</entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ni<fnr rid="t1-fn2">*</fnr></entry>
+<entry colname="col2" align="center">-15.21 to -14.82<fnr rid="t1-fn4">&Dagger;</fnr></entry>
+<entry colname="col3" align="center"></entry>
+<entry colname="col4" align="center"></entry>
+<entry colname="col5" align="center"></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Pr</entry>
+<entry colname="col2" align="center">-15.17</entry>
+<entry colname="col3" align="center">0.27</entry>
+<entry colname="col4" align="center">17&thinsp;&times;&thinsp;10<super>-5</super></entry>
+<entry colname="col5" align="center">3&thinsp;&times;&thinsp;10<super>-5</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Eu</entry>
+<entry colname="col2" align="center">-14.89</entry>
+<entry colname="col3" align="center">0.18</entry>
+<entry colname="col4" align="center">4&thinsp;&times;&thinsp;10<super>-4</super></entry>
+<entry colname="col5" align="center">1&thinsp;&times;&thinsp;10<super>-4</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Tb</entry>
+<entry colname="col2" align="center">-14.83</entry>
+<entry colname="col3" align="center">0.14</entry>
+<entry colname="col4" align="center">26&thinsp;&times;&thinsp;10<super>-4</super></entry>
+<entry colname="col5" align="center">5&thinsp;&times;&thinsp;10<super>-4</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ho</entry>
+<entry colname="col2" align="center">-14.86</entry>
+<entry colname="col3" align="center">0.17</entry>
+<entry colname="col4" align="center">7&thinsp;&times;&thinsp;10<super>-3</super></entry>
+<entry colname="col5" align="center">1&thinsp;&times;&thinsp;10<super>-3</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Lu</entry>
+<entry colname="col2" align="center">-14.95</entry>
+<entry colname="col3" align="center">0.17</entry>
+<entry colname="col4" align="center">0.033</entry>
+<entry colname="col5" align="center">0.007</entry>
+</row>
+<row>
+<entry colname="col1" spanname="1-2" align="left"><b>Chromite</b> (<i>T</i>&thinsp; = &thinsp;1,450&thinsp;&deg;C; <f id="m2"><mathimg entname="eqn2"/></f>&thinsp; = &thinsp;10<super>&ndash;6.8</super>&thinsp;bar)</entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ni</entry>
+<entry colname="col2" align="center">-14.52</entry>
+<entry colname="col3" align="center">0.57</entry>
+<entry colname="col4" align="center">38.3</entry>
+<entry colname="col5" align="center">15.3</entry>
+</row>
+<row>
+<entry colname="col1" align="left">Pr</entry>
+<entry colname="col2" align="center">-14.49</entry>
+<entry colname="col3" align="center">0.47</entry>
+<entry colname="col4" align="center">8&thinsp;&times;&thinsp;10<super>-5</super></entry>
+<entry colname="col5" align="center">3&thinsp;&times;&thinsp;10<super>-5</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Eu</entry>
+<entry colname="col2" align="center">-14.61</entry>
+<entry colname="col3" align="center">0.07</entry>
+<entry colname="col4" align="center">20&thinsp;&times;&thinsp;10<super>-5</super></entry>
+<entry colname="col5" align="center">5&thinsp;&times;&thinsp;10<super>-5</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Tb</entry>
+<entry colname="col2" align="center">-14.43</entry>
+<entry colname="col3" align="center">0.24</entry>
+<entry colname="col4" align="center">9&thinsp;&times;&thinsp;10<super>-4</super></entry>
+<entry colname="col5" align="center">3&thinsp;&times;&thinsp;10<super>-4</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Ho</entry>
+<entry colname="col2" align="center">-14.46</entry>
+<entry colname="col3" align="center">0.26</entry>
+<entry colname="col4" align="center">21&thinsp;&times;&thinsp;10<super>-4</super></entry>
+<entry colname="col5" align="center">8&thinsp;&times;&thinsp;10<super>-4</super></entry>
+</row>
+<row>
+<entry colname="col1" align="left">Lu</entry>
+<entry colname="col2" align="center">-14.50</entry>
+<entry colname="col3" align="center">0.29</entry>
+<entry colname="col4" align="center">76&thinsp;&times;&thinsp;10<super>-4</super></entry>
+<entry colname="col5" align="center">26&thinsp;&times;&thinsp;10<super>-4</super></entry>
+</row>
+</tbody>
+</tgroup>
+</table></objects>
+<ack>
+<p>M. Shelley, A. Norris and D. Scott are thanked for their help with the laser ablation ICP-MS analyses, electron microprobe analyses, and experimental set-up, respectively. This work was supported by an Australian Research Council Discovery Grant (to H.StC.O&rsquo;N.).</p>
+<p><b>Author Contributions</b> C.S. prepared and performed the experiments, and H.StC.O&rsquo;N. fitted the analytical data to obtain diffusion coefficients. C.S. and H.StC.O&rsquo;N. conducted the microprobe and laser-ablation ICP MS analyses. V.K. characterized and supplied the sample of melt inclusion-bearing olivine phenocrysts. C.S. and H.StC.O&rsquo;N. co-wrote the paper. All authors discussed the results and commented on the paper.</p>
+</ack>
+<audecl conflct="no">
+<explanatory>Reprints and permissions information is available at <url>www.nature.com/reprints</url>. The authors declare no competing financial interests.</explanatory>
+</audecl>
+<bibl>
+<bib id="b1">
+<reftxt><refau><snm>Schiano</snm>, <fnm>P.</fnm></refau> <atl>Primitive mantle magmas recorded as silicate melt inclusions in igneous minerals</atl>. <jtl>Earth-Sci. Rev.</jtl> <vid>63</vid>, <ppf>121</ppf>&ndash;<ppl>144</ppl> (<cd year="2003">2003</cd>)</reftxt>
+</bib>
+<bib id="b2">
+<reftxt><refau><snm>Sobolev</snm>, <fnm>A. V.</fnm></refau> <atl>Melt inclusions in minerals as a source of principal petrological information</atl>. <jtl>Petrology</jtl> <vid>4</vid>, <ppf>209</ppf>&ndash;<ppl>220</ppl> (<cd year="1996">1996</cd>)</reftxt>
+</bib>
+<bib id="b3">
+<reftxt><refau><snm>Sobolev</snm>, <fnm>A. V.</fnm></refau>, <refau><snm>Hofmann</snm>, <fnm>A. W.</fnm></refau> &amp; <refau><snm>Nikogosian</snm>, <fnm>I. K.</fnm></refau> <atl>Recycled oceanic crust observed in &lsquo;ghost plagioclase&rsquo; within the source of Mauna Loa lava</atl>. <jtl>Nature</jtl> <vid>404</vid>, <ppf>986</ppf>&ndash;<ppl>990</ppl> (<cd year="2000">2000</cd>)</reftxt>
+</bib>
+<bib id="b4">
+<reftxt><refau><snm>Ren</snm>, <fnm>Z.-Y.</fnm></refau>, <refau><snm>Ingle</snm>, <fnm>S.</fnm></refau>, <refau><snm>Takahashi</snm>, <fnm>E.</fnm></refau>, <refau><snm>Hirano</snm>, <fnm>N.</fnm></refau> &amp; <refau><snm>Hirata</snm>, <fnm>T.</fnm></refau> <atl>The chemical structure of the Hawaiian mantle plume</atl>. <jtl>Nature</jtl> <vid>436</vid>, <ppf>837</ppf>&ndash;<ppl>840</ppl> (<cd year="2005">2005</cd>)</reftxt>
+</bib>
+<bib id="b5">
+<reftxt><refau><snm>Condomines</snm>, <fnm>M.</fnm></refau>, <refau><snm>Gauthier</snm>, <fnm>P.-J.</fnm></refau> &amp; <refau><snm>Sigmarsson</snm>, <fnm>O.</fnm></refau> <atl>Timescales of magma chamber processes and dating of young volcanic rocks</atl>. <jtl>Rev. Miner. Geochem.</jtl> <vid>52</vid>, <ppf>125</ppf>&ndash;<ppl>174</ppl> (<cd year="2003">2003</cd>)</reftxt>
+</bib>
+<bib id="b6">
+<reftxt><refau><snm>Faul</snm>, <fnm>U. H.</fnm></refau> <atl>Melt retention and segregation beneath mid-ocean ridges</atl>. <jtl>Nature</jtl> <vid>410</vid>, <ppf>920</ppf>&ndash;<ppl>923</ppl> (<cd year="2001">2001</cd>)</reftxt>
+</bib>
+<bib id="b7">
+<reftxt><refau><snm>Reid</snm>, <fnm>M. R.</fnm></refau> in <btl>Treatise on Geochemistry</btl> Vol. <vid>3</vid>, <i>The Crust</i> (ed. Rudnick, R. L.) <ppf>167</ppf>&ndash;<ppl>193</ppl> (Elsevier Science, Amsterdam, <cd year="2003">2003</cd>)</reftxt>
+</bib>
+<bib id="b8">
+<reftxt><refau><snm>Qin</snm>, <fnm>Z.</fnm></refau>, <refau><snm>Lu</snm>, <fnm>F.</fnm></refau> &amp; <refau><snm>Anderson</snm>, <fnm>A. T.</fnm></refau> <atl>Diffusive reequilibration of melt and fluid inclusions</atl>. <jtl>Am. Mineral.</jtl> <vid>77</vid>, <ppf>565</ppf>&ndash;<ppl>576</ppl> (<cd year="1992">1992</cd>)</reftxt>
+</bib>
+<bib id="b9">
+<reftxt><refau><snm>Cottrell</snm>, <fnm>E.</fnm></refau>, <refau><snm>Spiegelman</snm>, <fnm>M.</fnm></refau> &amp; <refau><snm>Langmuir</snm>, <fnm>C. H.</fnm></refau> <atl>Consequences of diffusive reequilibration for the interpretation of melt inclusions</atl>. <jtl>Geochem. Geophys. Geosyst.</jtl> <vid>3</vid>, <ppf>1026</ppf> (<cd year="2002">2002</cd>)</reftxt>
+</bib>
+<bib id="b10">
+<reftxt><refau><snm>Witt-Eickschen</snm>, <fnm>G.</fnm></refau> &amp; <refau><snm>O&rsquo;Neill</snm>, <fnm>H.</fnm></refau> <atl>St C. The effect of temperature on the equilibrium distribution of trace elements between clinopyroxene, orthopyroxene, olivine and spinel in upper mantle peridotite</atl>. <jtl>Chem. Geol.</jtl> <vid>221</vid>, <ppf>65</ppf>&ndash;<ppl>101</ppl> (<cd year="2005">2005</cd>)</reftxt>
+</bib>
+<bib id="b11">
+<reftxt><refau><snm>Le Roex</snm>, <fnm>A. P.</fnm></refau>, <refau><snm>Dick</snm>, <fnm>H. J. B.</fnm></refau>, <refau><snm>Gulen</snm>, <fnm>L.</fnm></refau>, <refau><snm>Reid</snm>, <fnm>A. M.</fnm></refau> &amp; <refau><snm>Erlank</snm>, <fnm>A. J.</fnm></refau> <atl>Local and regional heterogeneity in MORB from the Mid-Atlantic Ridge between 54.5&deg;S and 51&deg;S: Evidence for geochemical enrichment</atl>. <jtl>Geochim. Cosmochim. Acta</jtl> <vid>51</vid>, <ppf>541</ppf>&ndash;<ppl>555</ppl> (<cd year="1987">1987</cd>)</reftxt>
+</bib>
+<bib id="b12">
+<reftxt><refau><snm>Kamenetsky</snm>, <fnm>V.</fnm></refau> <atl>Methodology for the study of melt inclusions in Cr-spinel, and implications for parental melts of MORB from FAMOUS area</atl>. <jtl>Earth Planet. Sci. Lett.</jtl> <vid>142</vid>, <ppf>479</ppf>&ndash;<ppl>486</ppl> (<cd year="1996">1996</cd>)</reftxt>
+</bib>
+<bib id="b13">
+<reftxt><refau><snm>Kennedy</snm>, <fnm>A. K.</fnm></refau>, <refau><snm>Lofgren</snm>, <fnm>G. E.</fnm></refau> &amp; <refau><snm>Wasserburg</snm>, <fnm>G. J.</fnm></refau> <atl>An experimental study of trace element partitioning between olivine, orthopyroxene and melt in chondrules: Equilibrium values and kinetic effects</atl>. <jtl>Earth Planet. Sci. Lett.</jtl> <vid>115</vid>, <ppf>177</ppf>&ndash;<ppl>195</ppl> (<cd year="1993">1993</cd>)</reftxt>
+</bib>
+<bib id="b14">
+<reftxt><refau><snm>McKay</snm>, <fnm>G. A.</fnm></refau> <atl>Crystal/liquid partitioning of REE in basaltic systems: Extreme fractionation of REE in olivine</atl>. <jtl>Geochim. Cosmochim. Acta</jtl> <vid>50</vid>, <ppf>69</ppf>&ndash;<ppl>79</ppl> (<cd year="1986">1986</cd>)</reftxt>
+</bib>
+<bib id="b15">
+<reftxt><refau><snm>Spandler</snm>, <fnm>C. J.</fnm></refau>, <refau><snm>Mavrogenes</snm>, <fnm>J. A.</fnm></refau> &amp; <refau><snm>Arculus</snm>, <fnm>R. J.</fnm></refau> <atl>The origin of chromitites in layered intrusions: Evidence from chromite-hosted melt inclusions from the Stillwater Complex</atl>. <jtl>Geology</jtl> <vid>11</vid>, <ppf>893</ppf>&ndash;<ppl>896</ppl> (<cd year="2005">2005</cd>)</reftxt>
+</bib>
+<bib id="b16">
+<reftxt><refau><snm>Jurewicz</snm>, <fnm>A. J. G.</fnm></refau> &amp; <refau><snm>Watson</snm>, <fnm>E. B.</fnm></refau> <atl>Cations in olivine, Part 2: Diffusion in olivine xenocrysts, with applications to petrology and mineral physics</atl>. <jtl>Contrib. Mineral. Petrol.</jtl> <vid>99</vid>, <ppf>186</ppf>&ndash;<ppl>201</ppl> (<cd year="1988">1988</cd>)</reftxt>
+</bib>
+<bib id="b17">
+<reftxt><refau><snm>Petry</snm>, <fnm>C.</fnm></refau>, <refau><snm>Chakraborty</snm>, <fnm>S.</fnm></refau> &amp; <refau><snm>Palme</snm>, <fnm>H.</fnm></refau> <atl>Experimental determination of Ni diffusion coefficients in olivine and their dependence on temperature, composition, oxygen fugacity, and crystallographic orientation</atl>. <jtl>Geochim. Cosmochim. Acta</jtl> <vid>68</vid>, <ppf>4179</ppf>&ndash;<ppl>4188</ppl> (<cd year="2004">2004</cd>)</reftxt>
+</bib>
+<bib id="b18">
+<reftxt><refau><snm>Stocker</snm>, <fnm>R. L.</fnm></refau> &amp; <refau><snm>Smyth</snm>, <fnm>D. M.</fnm></refau> <atl>Effect of enstatite activity and oxygen partial pressure on the point-defect chemistry of olivine</atl>. <jtl>Phys. Earth Planet. Inter.</jtl> <vid>16</vid>, <ppf>145</ppf>&ndash;<ppl>156</ppl> (<cd year="1978">1978</cd>)</reftxt>
+</bib>
+<bib id="b19">
+<reftxt><refau><snm>Nakamura</snm>, <fnm>A.</fnm></refau> &amp; <refau><snm>Schmalzried</snm>, <fnm>H.</fnm></refau> <atl>On the nonstoichiometry and point defects of olivine</atl>. <jtl>Phys. Chem. Miner.</jtl> <vid>10</vid>, <ppf>27</ppf>&ndash;<ppl>37</ppl> (<cd year="1983">1983</cd>)</reftxt>
+</bib>
+<bib id="b20">
+<reftxt><refau><snm>Hier-Majumder</snm>, <fnm>S.</fnm></refau>, <refau><snm>Anderson</snm>, <fnm>I. M.</fnm></refau> &amp; <refau><snm>Kohlstedt</snm>, <fnm>D. L.</fnm></refau> <atl>Influence of protons on Fe-Mg interdiffusion in olivine</atl>. <jtl>J. Geophys. Res.</jtl> <vid>110</vid> doi: <refdoi>2004JB003292</refdoi> (<cd year="2005">2005</cd>)</reftxt>
+</bib>
+<bib id="b21">
+<reftxt><refau><snm>Cherniak</snm>, <fnm>D. J.</fnm></refau> <atl>REE diffusion in feldspar</atl>. <jtl>Chem. Geol.</jtl> <vid>193</vid>, <ppf>25</ppf>&ndash;<ppl>41</ppl> (<cd year="2003">2003</cd>)</reftxt>
+</bib>
+<bib id="b22">
+<reftxt><refau><snm>Nielsen</snm>, <fnm>R. L.</fnm></refau>, <refau><snm>Gallahan</snm>, <fnm>W. E.</fnm></refau> &amp; <refau><snm>Newberger</snm>, <fnm>F.</fnm></refau> <atl>Experimentally determined mineral-melt partition coefficients for Sc, Y, REE for olivine, orthopyroxene, pigeonite, magnetite and ilmenite</atl>. <jtl>Contrib. Mineral. Petrol.</jtl> <vid>110</vid>, <ppf>488</ppf>&ndash;<ppl>499</ppl> (<cd year="1992">1992</cd>)</reftxt>
+</bib>
+<bib id="b23">
+<reftxt><refau><snm>Kelley</snm>, <fnm>S. P.</fnm></refau> &amp; <refau><snm>Wartho</snm>, <fnm>J. A.</fnm></refau> <atl>Rapid kimberlite ascent and the significance of Ar-Ar ages in xenolith phlogopites</atl>. <jtl>Science</jtl> <vid>289</vid>, <ppf>609</ppf>&ndash;<ppl>611</ppl> (<cd year="2000">2000</cd>)</reftxt>
+</bib>
+<bib id="b24">
+<reftxt><refau><snm>Danyushevsky</snm>, <fnm>L. V.</fnm></refau>, <refau><snm>Sokolov</snm>, <fnm>S.</fnm></refau> &amp; <refau><snm>Falloon</snm>, <fnm>T. J.</fnm></refau> <atl>Melt inclusions in olivine phenocrysts: Using diffusive re-equilibration to determine the cooling history of a crystal, with implications for the origin of olivine-phyric volcanic rocks</atl>. <jtl>J. Petrol.</jtl> <vid>43</vid>, <ppf>1651</ppf>&ndash;<ppl>1671</ppl> (<cd year="2002">2002</cd>)</reftxt>
+</bib>
+<bib id="b25">
+<reftxt><refau><snm>Bedard</snm>, <fnm>J. H.</fnm></refau> <atl>Oceanic crust as a reactive filter &mdash; synkinematic intrusion, hybridization and assimilation in an ophiolitic magma chamber, western Newfoundland</atl>. <jtl>Geology</jtl> <vid>21</vid>, <ppf>77</ppf>&ndash;<ppl>80</ppl> (<cd year="1993">1993</cd>)</reftxt>
+</bib>
+<bib id="b26">
+<reftxt><refau><snm>Coogan</snm>, <fnm>L. A.</fnm></refau> <atl>Contaminating the lower crust in the Oman ophiolite</atl>. <jtl>Geology</jtl> <vid>31</vid>, <ppf>1065</ppf>&ndash;<ppl>1068</ppl> (<cd year="2003">2003</cd>)</reftxt>
+</bib>
+<bib id="b27">
+<reftxt><refau><snm>Costa</snm>, <fnm>F.</fnm></refau> &amp; <refau><snm>Dungan</snm>, <fnm>M.</fnm></refau> <atl>Short time scales of magmatic assimilation from diffusion modelling of multiple elements in olivine</atl>. <jtl>Geology</jtl> <vid>33</vid>, <ppf>837</ppf>&ndash;<ppl>840</ppl> (<cd year="2005">2005</cd>)</reftxt>
+</bib>
+<bib id="b28">
+<reftxt><refau><snm>Danyushevsky</snm>, <fnm>L. V.</fnm></refau>, <refau><snm>Leslie</snm>, <fnm>R. A. J.</fnm></refau>, <refau><snm>Crawford</snm>, <fnm>A. J.</fnm></refau> &amp; <refau><snm>Durance</snm>, <fnm>P.</fnm></refau> <atl>Melt inclusions in primitive olivine phenocrysts: The role of localized reaction processes in the origin of anomalous compositions</atl>. <jtl>J. Petrol.</jtl> <vid>45</vid>, <ppf>2531</ppf>&ndash;<ppl>2553</ppl> (<cd year="2004">2004</cd>)</reftxt>
+</bib>
+<bib id="b29">
+<reftxt><refau><snm>Yaxley</snm>, <fnm>G. M.</fnm></refau>, <refau><snm>Kamenetsky</snm>, <fnm>V. S.</fnm></refau>, <refau><snm>Kamenetsky</snm>, <fnm>M.</fnm></refau>, <refau><snm>Norman</snm>, <fnm>M. D.</fnm></refau> &amp; <refau><snm>Francis</snm>, <fnm>D.</fnm></refau> <atl>Origins of compositional heterogeneity in olivine-hosted melt inclusions from the Baffin Island picrites</atl>. <jtl>Contrib. Mineral. Petrol.</jtl> <vid>148</vid>, <ppf>426</ppf>&ndash;<ppl>442</ppl> (<cd year="2004">2004</cd>)</reftxt>
+</bib>
+<bib id="b30">
+<reftxt><refau><snm>Perugini</snm>, <fnm>D.</fnm></refau>, <refau><snm>Petrelli</snm>, <fnm>M.</fnm></refau> &amp; <refau><snm>Poli</snm>, <fnm>G.</fnm></refau> <atl>Diffusive fractionation of trace elements by chaotic mixing of magmas</atl>. <jtl>Earth Planet. Sci. Lett.</jtl> <vid>243</vid>, <ppf>669</ppf>&ndash;<ppl>680</ppl> (<cd year="2006">2006</cd>)</reftxt>
+</bib>
+</bibl>
+</bm>
+</article>
+

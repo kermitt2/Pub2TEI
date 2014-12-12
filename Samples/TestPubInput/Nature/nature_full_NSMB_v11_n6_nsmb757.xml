@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_Article.dtd" [
+<!ENTITY figf1 PUBLIC "-//NatureAmerica//FICI nsmb757-F1//EN" "nsmb757-F1" NDATA ITEM>
+<!ENTITY figf2 PUBLIC "-//NatureAmerica//FICI nsmb757-F2//EN" "nsmb757-F2" NDATA ITEM>
+<!ENTITY figf3 PUBLIC "-//NatureAmerica//FICI nsmb757-F3//EN" "nsmb757-F3" NDATA ITEM>
+<!ENTITY figf4 PUBLIC "-//NatureAmerica//FICI nsmb757-F4//EN" "nsmb757-F4" NDATA ITEM>
+<!ENTITY figf5 PUBLIC "-//NatureAmerica//FICI nsmb757-F5//EN" "nsmb757-F5" NDATA ITEM>
+<!ENTITY tbl1 PUBLIC "-//NatureAmerica//FICI nsmb757-T1//EN" "nsmb757-T1" NDATA ITEM>
+]>
+<article id="nsmb757" language="eng" relation="no">
+  <pubfm>
+    <jtl>Nature Structural &amp; Molecular Biology</jtl>
+    <vol>11</vol>
+    <iss>6</iss>
+    <idt>200406</idt>
+    <categ id="af"/>
+    <pp>
+      <spn>544</spn>
+      <epn>550</epn>
+      <cnt>7</cnt>
+    </pp>
+    <issn type="print">1545-9993</issn>
+    <issn type="electronic">1545-9985</issn>
+    <cpg>
+      <cpy>2004</cpy>
+      <cpn>Nature Publishing Group</cpn>
+    </cpg>
+    <doi>10.1038/nsmb757</doi>
+  </pubfm>
+  <fm>
+    <atl>The σ<super>70</super> subunit of RNA polymerase mediates a promoter-proximal pause at the <i>lac</i> promoter</atl>
+    <aug>
+      <au>
+        <fnm>Bryce E</fnm>
+        <snm>Nickels</snm>
+        <inits>B E</inits>
+        <orf rid="a1"/>
+      </au>
+      <au>
+        <fnm>Jayanta</fnm>
+        <snm>Mukhopadhyay</snm>
+        <inits>J</inits>
+        <orf rid="a2"/>
+      </au>
+      <au>
+        <fnm>Sean J</fnm>
+        <snm>Garrity</snm>
+        <inits>S J</inits>
+        <orf rid="a1"/>
+      </au>
+      <au>
+        <fnm>Richard H</fnm>
+        <snm>Ebright</snm>
+        <inits>R H</inits>
+        <orf rid="a2"/>
+      </au>
+      <cau>
+        <fnm>Ann</fnm>
+        <snm>Hochschild</snm>
+        <inits>A</inits>
+        <orf rid="a1"/>
+        <corf rid="c1"/>
+      </cau>
+      <aff><oid id="a1"/><org>Department of Microbiology and Molecular Genetics, Harvard Medical School</org>, <street>200 Longwood Avenue</street>, <cty>Boston</cty>, <st>Massachusetts</st><zip>02115</zip>, <cny>USA</cny>.</aff>
+      <aff><oid id="a2"/><org>Howard Hughes Medical Institute, Waksman Institute, Department of Chemistry, Rutgers University</org>, <cty>Piscataway</cty>, <st>New Jersey</st><zip>08854</zip>, <cny>USA</cny>.</aff>
+      <caff>
+        <coid id="c1"/>
+        <email>ahochschild@hms.harvard.edu</email>
+      </caff>
+    </aug>
+    <hst>
+      <re year="2003" month="12" day="08"/>
+      <acc year="2004" month="03" day="15"/>
+      <pubdate type="aop" year="2004" month="05" day="02"/>
+    </hst>
+    <abs>
+      <p>The σ<super>70</super> subunit of RNA polymerase plays an essential role in transcription initiation. In addition, σ<super>70</super> has a critical regulatory role during transcription elongation at the bacteriophage λ late promoter, λP<sub>R′</sub>. At this promoter, σ<super>70</super> mediates a pause in early elongation through contact with a DNA sequence element in the initially transcribed region that resembles a promoter -10 element. Here we provide evidence that σ<super>70</super> also mediates a pause in early elongation at the <i>lac</i> promoter (p<i>lac</i>). Like that at λP<sub>R′</sub>, the pause at p<i>lac</i> is facilitated by a sequence element in the initially transcribed region that resembles a promoter -10 element. Using biophysical analysis, we demonstrate that the pause-inducing sequence element at p<i>lac</i> stabilizes the interaction between σ<super>70</super> and the remainder of the transcription elongation complex. Bioinformatic analysis suggests that promoter-proximal σ<super>70</super>-dependent pauses may play a role in the regulation of many bacterial promoters.</p>
+    </abs>
+  </fm>
+  <bdy>
+    <p>Bacterial RNA polymerase (RNAP) holoenzyme consists of a catalytic core enzyme (α<sub>2</sub>ββ′ω) in complex with a σ factor. σ factors confer on the core enzyme the ability to initiate transcription at specific promoters<bibr rid="b1"/>. In <i>Escherichia coli</i> the primary σ factor is the σ<super>70</super> subunit, which makes direct contact with the conserved -10 and -35 promoter elements<bibr rid="b1"/>. During the transition from initiation to elongation, upon synthesis of a 9-11 nucleotide (nt) RNA transcript, the stability of interactions between σ<super>70</super> and the remainder of the transcription complex decreases<bibr rid="b2 b3 b4 b5 b6 b7"/>, owing at least in part to displacement of a segment of σ<super>70</super> from the RNA exit channel by the nascent RNA<bibr rid="b8 b9 b10 b11"/>. Nevertheless, there is no obligatory mechanistic requirement for release of σ<super>70</super> upon transition to elongation, and, in at least some transcription elongation complexes, σ<super>70</super> remains associated with, and translocates with, RNAP<bibr rid="b12 b13 b14 b15 b16"/>. A key question is whether retention of σ<super>70</super> confers distinct functional properties on transcription elongation complexes-that is, whether σ<super>70</super> has functional roles in transcription elongation.</p>
+    <p>The strongest evidence indicating that σ<super>70</super> can play a functional role during elongation comes from studies of the bacteriophage λ P<sub>R′</sub> promoter. In particular, the expression of phage late genes from λP<sub>R′</sub> depends on a σ<super>70</super>-dependent pause that occurs during early elongation, after RNAP has escaped from the promoter and synthesized a 16- or 17-nt transcript<bibr rid="b17"/>. This pause is mediated by protein-DNA interaction between σ<super>70</super> and a DNA sequence element in the initially transcribed region that resembles a promoter -10 element<bibr rid="b14 b17"/>. Furthermore, the same module of σ<super>70</super> that mediates interaction with the -10 element of promoters mediates interaction with the pause-inducing sequence element<bibr rid="b14 b17"/>. Formation of the paused elongation complex at λP<sub>R′</sub> is required for the phage λ Q antiterminator protein (λQ) to gain access to and subsequently join the transcription complex, enabling RNAP to read through downstream terminators and transcribe the phage's late genes<bibr rid="b17"/>. Similar regulatory pause-inducing sequence elements are present at the late promoters of other lambdoid phages, including phage 82, phage 80 and phage 21 (ref. <bibrinl rid="b14">14</bibrinl>).</p>
+    <p>The events that occur at the lambdoid phage late promoters raise the possibility that other promoters bear DNA sequence elements that induce σ<super>70</super>-dependent pauses in early elongation. To investigate this possibility, we examined transcription initiating from p<i>lac</i>, a well-characterized bacterial promoter. Like λP<sub>R′</sub>, p<i>lac</i> bears a DNA sequence element in the initially transcribed region that resembles a promoter -10 element. We provide evidence that this sequence element mediates a σ<super>70</super>-dependent pause in early elongation at p<i>lac</i>, both <i>in vitro</i> and <i>in vivo</i>. In addition, we demonstrate a functional correlation between the paused elongation complexes at p<i>lac</i> and λP<sub>R′</sub>. Finally, we show, using biophysical analysis, that the pause-inducing sequence element at p<i>lac</i> stabilizes the interaction between σ<super>70</super> and the remainder of the elongation complex.</p>
+    <sec level="1">
+      <sectitle>Results</sectitle>
+      <sec level="2">
+        <sectitle>A -10-like element mediates a pause at p<i>lac</i></sectitle>
+        <p>We noticed that the DNA sequence in the initially transcribed region of p<i>lac</i> resembles a promoter -10 element. In particular, the sequence from position +1 to +6 of p<i>lac</i>, like the corresponding sequence of λP<sub>R′</sub>, is a 3-of-6 match to the consensus -10 element and includes the two most highly conserved base pairs: an A at the second position and a T at the sixth position (<figr rid="f1">Fig. 1a</figr>). There is also an extended -10 (TG) motif<bibr rid="b18"/> one base pair upstream of the sequence (at positions -3 and -2). We therefore wished to examine whether or not the -10-like DNA element in the initially transcribed region of p<i>lac</i> could mediate a σ<super>70</super>-dependent pause in early elongation.</p>
+        <p>As an initial test of this idea, we conducted single-round <i>in vitro</i> transcription assays using either a λP<sub>R′</sub> template or a constitutive version of p<i>lac</i>, p<i>lac</i>UV5, which differs from wild-type p<i>lac</i> by the substitution of two base pairs in the -10 element: G(-9)A and T(-8)A (ref. <bibrinl rid="b19">19</bibrinl>). To detect transcription pauses we carried out each assay as a time course, monitoring the RNA content of each reaction at discrete times after the initiation of transcription (<figr rid="f1">Fig. 1b</figr>). When the λP<sub>R′</sub> template was used, RNA species of 16 and 17 nt in length appeared early in the time course and disappeared over time, consistent with previous observations<bibr rid="b20 b21 b22 b23"/>. When the p<i>lac</i>UV5 template was used, prominent RNA products of 17 and 18 nt in length appeared early during the time course and were no longer detectable by ∼2 min (<figr rid="f1">Fig. 1b</figr>). We also conducted similar transcription assays in which the RNA was end-labeled (<figr rid="f1">Fig. 1c</figr>). With this labeling protocol, we no longer observed the smaller (10-17 nt) RNA products that appeared late in the time course with the p<i>lac</i>UV5 template (compare lanes 10-12 in <figr rid="f1">Fig. 1b</figr> with lanes 9 and 10 in <figr rid="f1">Fig. 1c</figr>), suggesting that these RNAs are cleavage products derived from an internal portion of the RNA.</p>
+        <p>Next, we tested whether altering the -10-like sequence element in the initially transcribed region of p<i>lac</i> would influence the production of the 17- and 18-nt RNAs. To do this, we introduced single-base-pair substitutions into the p<i>lac</i>UV5 template that either decreased (A(+2)G) or increased (T(+4)A) the match between the sequence from +1 to +6 and a consensus promoter -10 element. When assays were done using a p<i>lac</i>UV5 template containing the single-base-pair substitution A(+2)G, we no longer detected the 17- and 18-nt RNA species (<figr rid="f2">Fig. 2a</figr>, lanes 6-10). Similar results were obtained when the base pair at position +6 was mutated (T(+6)G), also decreasing the match to a promoter -10 element (data not shown). Conversely, when the template bore the T(+4)A substitution, the ratio of the 17- and 18-nt RNA species to the runoff transcript increased about two-fold (<figr rid="f2">Fig. 2a</figr>, compare lanes 1-3 with lanes 11-13). These data demonstrate that the production of the 17- and 18-nt RNA species depends on the identity of the DNA base pairs in the initially transcribed region of the <i>lac</i> promoter (from +1 to +6). Specifically, we observed a correlation between the degree of resemblance of this sequence to a promoter -10 element and the production of the 17- and 18-nt RNA species. A previous analysis of RNAs produced during transcription from the <i>lac</i>UV5 promoter revealed RNA products of 17 and 18 nt in length that were attributed to pausing<bibr rid="b24"/> and probably arose from the sequence element identified here.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>A σ<super>70</super> mutant abolishes the p<i>lac</i> pause</sectitle>
+        <p>A previously isolated amino acid substitution in σ<super>70</super>, L402F, impairs the ability of RNAP to pause at λP<sub>R′</sub> (ref. <bibrinl rid="b23">23</bibrinl>). To assess whether or not the L402F substitution would also affect formation of the 17- and 18-nt RNA species at p<i>lac</i>UV5, we conducted transcription assays using RNAP holoenzyme reconstituted with either wild-type σ<super>70</super> or σ<super>70</super> L402F. When the transcription assays were done using holoenzyme reconstituted with σ<super>70</super> L402F, we no longer observed the 17- and 18-nt RNA species (<figr rid="f2">Fig. 2b</figr>). We thus observed a correlation between the effect of the L402F substitution on the λP<sub>R′</sub> pause<bibr rid="b23"/> and its effect on the production of the 17- and 18-nt RNAs at p<i>lac</i>UV5. Taken together, the results of our transcription assays suggest that the 17- and 18-nt RNA species produced from the p<i>lac</i>UV5 template are the result of a σ<super>70</super>-dependent pause that is mediated by a -10-like DNA sequence element in the initially transcribed region of the <i>lac</i> promoter. Under the conditions of our <i>in vitro</i> analysis (see <figr rid="f1">Fig. 1c</figr>), pausing at p<i>lac</i> is less efficient than at λP<sub>R′</sub> with regard to both the fraction of transcription complexes that pause and the half-life of the paused complex.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>The p<i>lac</i> pause is sensitive to Gre factors</sectitle>
+        <p>The paused elongation complex at λP<sub>R′</sub> exists primarily in a backtracked state (the result of reverse translocation), with the active center of RNAP positioned ∼4 nt upstream of the RNA 3′ end<bibr rid="b20"/>. The elongation factors GreA and GreB can facilitate the rescue of backtracked transcription complexes <i>in vitro</i> by stimulating internal hydrolysis of the RNA to generate a new 3′ end properly positioned at the RNAP active center<bibr rid="b25 b26"/>. Accordingly, the paused elongation complex at λP<sub>R′</sub> is sensitive to GreA- and GreB-dependent cleavage <i>in vitro</i><bibr rid="b20"/>. To further compare the properties of the paused elongation complexes at λP<sub>R′</sub> and p<i>lac</i>, we wished to determine whether the σ<super>70</super>-dependent pause at p<i>lac</i> was also sensitive to GreA and GreB <i>in vitro</i>. To do this, we carried out transcription assays with the p<i>lac</i>UV5 template in either the presence or absence of GreA or GreB (<figr rid="f3">Fig. 3</figr>). We found that the 17- and 18-nt RNA species disappeared much more rapidly in the presence of either GreA or GreB, suggesting that the paused elongation complexes at p<i>lac</i>, like those at λP<sub>R′</sub>, are predominantly backtracked.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>The p<i>lac</i> pause sequence element functions <i>in vivo</i></sectitle>
+        <p>To test whether the pausing we observed <i>in vitro</i> might have a role in the <i>in vivo</i> regulation of the <i>lac</i> promoter, we sought to determine whether the sequence element in the initially transcribed region of the <i>lac</i> promoter could mediate a σ<super>70</super>-dependent pause <i>in vivo</i>. To do this, we tested whether this sequence element could substitute functionally for the pause-inducing sequence element at λP<sub>R′</sub> to allow the λQ antiterminator to gain access to the transcription complex (see above). To engage the paused elongation complex at λP<sub>R′</sub>, λQ must bind to a specific DNA sequence (the QBE) that is positioned between the promoter -10 and -35 elements<bibr rid="b22"/> (see <figr rid="f4">Fig. 4a</figr>). We therefore constructed a λP<sub>R′</sub>-p<i>lac</i> hybrid template in which we replaced the sequence from -6 to +23 of λP<sub>R′</sub> with the corresponding sequence from p<i>lac</i> (<figr rid="f4">Fig. 4a</figr>). As a control, we confirmed that the pausing observed on this λP<sub>R′</sub>-p<i>lac</i> hybrid template <i>in vitro</i> resembles the pausing observed on the p<i>lac</i>UV5 template (compare <figr rid="f4">Figs. 4b</figr> and <figr rid="f1">1b</figr>). Next we wished to test whether or not λQ could function as an antiterminator for transcription initiating at this hybrid promoter <i>in vivo</i>. To do this, we fused the λP<sub>R′</sub>-p<i>lac</i> hybrid promoter along with a downstream terminator to a <i>lacZ</i> gene and introduced this construct in single copy on an F′ episome into a suitable ΔlacZ reporter strain. The level of <i>lacZ</i> gene expression in this strain is expected to reflect the ability of λQ to function as an antiterminator for transcription initiating at the hybrid promoter.</p>
+        <p>We found that λQ (provided by a plasmid) stimulated transcription of the <i>lacZ</i> reporter gene downstream of the hybrid promoter by a factor of 3 (as compared with a factor of 22 for an otherwise identical fusion bearing the wild type λP<sub>R′</sub> promoter) (<figr rid="f4">Fig. 4c</figr> and data not shown). The ability of λQ to stimulate transcription of downstream genes at λP<sub>R′</sub> depends on the functional integrity of the pause-inducing sequence<bibr rid="b22"/>. To test whether or not the stimulatory effect of λQ at the hybrid promoter was dependent on the functional integrity of the p<i>lac</i> pause-inducing sequence element, we mutated the conserved base pairs at positions +2 and +6. These substitutions (A(+2)G and T(+6)A) reduced λQ-stimulated transcription of the <i>lacZ</i> reporter gene when tested singly or in combination (<figr rid="f4">Fig. 4c</figr>).</p>
+        <p>We showed that the paused elongation complex at p<i>lac</i> is sensitive to Gre factor-mediated cleavage <i>in vitro</i> (<figr rid="f3">Fig. 3</figr>). Previous analysis indicated that the removal of GreA <i>in vivo</i> increased the half-life of the λP<sub>R′</sub> pause markedly, whereas removal of GreB alone had no substantial effect on the pause half-life<bibr rid="b20"/>. We wondered, therefore, whether the half-life of the p<i>lac</i> pause would be similarly increased by the removal of GreA <i>in vivo</i>. An increase in the p<i>lac</i> pause half-life would be predicted to increase the substrate available for interaction with DNA-bound λQ at the λP<sub>R′</sub>-p<i>lac</i> hybrid promoter. We therefore introduced a <i>greA</i> null allele into the reporter stains carrying the λP<sub>R′</sub>-p<i>lac-lacZ</i> fusions and assayed the effect of λQ on <i>lacZ</i> transcription. In the case of the fusion containing the wild-type pause-inducing sequence element, we found that removal of GreA protein increased the magnitude of λQ's stimulatory effect on <i>lacZ</i> transcription (from three-fold to five-fold; <figr rid="f4">Fig. 4c</figr>). In contrast, removal of GreA did not increase the residual effect of λQ on transcription from the λP<sub>R′</sub>-p<i>lac-lacZ</i> fusions with mutations in the pause-inducing sequence element.</p>
+        <p>The results obtained with the λP<sub>R′</sub>-p<i>lac</i> hybrid promoter demonstrate that the p<i>lac</i> pause-inducing sequence element can substitute functionally for the λP<sub>R′</sub> pause-inducing sequence element, albeit less efficiently. In particular, this sequence element renders the transcription complex susceptible to modification by DNA-bound λQ <i>in vivo</i>. In addition, λQ function at the λP<sub>R′</sub>-p<i>lac</i> hybrid promoter is enhanced by the removal of the GreA protein. On the basis of these findings, we conclude that the DNA sequence element in the initially transcribed region of p<i>lac</i> can mediate a Gre-sensitive σ<super>70</super>-dependent pause <i>in vivo</i>.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>Effect of p<i>lac</i> pause sequence element on σ<super>70</super> retention</sectitle>
+        <p>Previous work using fluorescence resonance energy transfer (FRET) has shown that at p<i>lac</i>UV5 the majority of early transcription elongation complexes retain σ<super>70</super> (70-100% for transcription elongation complexes containing 11-15 nt of RNA<bibr rid="b16 b27"/>). Here, using the same FRET assay (<figr rid="f5">Fig. 5a</figr>), we have assessed the effect of the pause-inducing sequence element on σ<super>70</super> retention, analyzing, in parallel, p<i>lac</i>UV5 (<figr rid="f5">Fig. 5b</figr>) and a p<i>lac</i>UV5 derivative having a substitution that disrupts the pause-inducing sequence (A(+2)G; <figr rid="f5">Fig. 5c</figr>). Our results indicate that, in a substantial fraction of transcription elongation complexes halted at positions 11-15, σ<super>70</super> is retained in the absence of the sequence element, but the stability of interactions between σ<super>70</super> and the remainder of the transcription elongation complex is substantially lower in the absence of the sequence element (<i>t</i><sub>1/2</sub> ≈ 7-8 min versus <i>t</i><sub>1/2</sub> &gt; 30 min; <figr rid="f5">Fig. 5d</figr>). Furthermore, for complexes halted after the synthesis of a 13-, 14- or 15-nt RNA transcript (RD<sub>e,13</sub>, RD<sub>e,14</sub> and RD<sub>e,15</sub>), the initial extent of retention of σ<super>70</super> is substantially lower in the absence of the sequence element (20-50% at 3 min versus 70-80% at 3 min; <figr rid="f5">Fig. 5d</figr>). We conclude that the sequence element considerably stabilizes the interaction between σ<super>70</super> and the remainder of the transcription elongation complex.</p>
+      </sec>
+    </sec>
+    <sec level="1">
+      <sectitle>Discussion</sectitle>
+      <p>We have shown that a sequence element in the initially transcribed region of the <i>lac</i> promoter can induce a pause in early elongation. Like a similar sequence element present in the initially transcribed region of λP<sub>R′</sub>, the p<i>lac</i> pause-inducing sequence element resembles a promoter -10 element and mediates formation of a paused elongation complex by binding σ<super>70</super>. These findings are consistent with the results of an independent study in which the σ<super>70</super> subunit was found to be present in a paused elongation complex induced by the p<i>lac</i> initially transcribed sequence <i>in vitro</i><bibr rid="b28"/>.</p>
+      <p>Our findings suggest that the -10-like sequence element in the p<i>lac</i> initially transcribed region may contribute to the regulation of <i>lac</i> transcription. In particular, our demonstration that the -10-like sequence element can induce a σ<super>70</super>-dependent pause <i>in vivo</i> supports this possibility. Furthermore, a promoter-proximal pause has been detected at p<i>lac</i> in a Δ<i>greA</i> strain by <i>in vivo</i> footprinting (A. Hatoum and J.W. Roberts, personal communication). However, examination of effects of the pause-inducing sequence element on <i>lac</i> gene expression is complicated by the fact that mutations in this region may affect RNA structure and/or the binding of the Lac repressor to the <i>lac</i> operator, which overlaps the pause-inducing sequence element, or may have other unintended consequences<bibr rid="b29"/>.</p>
+      <sec level="2">
+        <sectitle>Pause-inducing sequence element affects σ retention</sectitle>
+        <p>Our FRET experiments established that σ<super>70</super> was retained in transcription elongation complexes even when the pause-inducing sequence was mutated (A(+2)G), but that the half-life of σ<super>70</super> retention was reduced (more than four-fold) under these circumstances (<figr rid="f5">Fig. 5d</figr>). In contrast, σ<super>70</super> was not detected by Brodolin <i>et al</i>.<bibr rid="b28"/> in stalled elongation complexes prepared at p<i>lac</i>UV5 when the pause-inducing sequence element was mutated (T(+6)A). We emphasize that our FRET experiments did not involve a separation step (that is, no chromatography, electrophoresis, sedimentation or washing) or long incubations (no incubations &gt;10 min). The inclusion of a separation step and/or a long incubation disrupts interactions between σ<super>70</super> and the remainder of the transcription elongation complex-especially the weak interactions in the absence of the pause inducing sequence element-and results, artifactually, in loss of σ<super>70</super> (ref. <bibrinl rid="b16">16</bibrinl>; J.M. and R.H.E., unpublished data). We suggest that the inclusion of a separation step by Brodolin <i>et al</i>.<bibr rid="b28"/> accounts for the fact that these investigators did not detect σ<super>70</super> in stalled elongation complexes when the pause-inducing sequence element was mutated.</p>
+        <p>Our observation that the initial extent of σ<super>70</super> retention was reduced when the pause-inducing sequence element was mutated (from ∼70% to ∼20% for RD<sub>e,15</sub>, for example) raises the possibility that sequence elements that promote σ<super>70</super>-dependent pauses may influence the σ<super>70</super> content of elongation complexes downstream of the pause site. In particular, we suggest that the ability of a σ<super>70</super>-dependent pause-inducing sequence element to increase the initial extent of σ<super>70</super> retention could increase the proportion of elongation complexes containing σ<super>70</super> downstream of the pause. In support of this proposal, it has been shown that, at p<i>lac</i>UV5, ∼60% to 70% of transcription elongation complexes containing a 50-nt transcript retain σ<super>70</super> when the pause-inducing sequence element is intact<bibr rid="b16"/>.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>Pause-inducing sequences at other promoters</sectitle>
+        <p>The demonstration that a -10-like sequence element in the initially transcribed region of p<i>lac</i>, like the sequence element in the initially transcribed region of λP<sub>R′</sub>, can induce σ<super>70</super>-dependent promoter-proximal pausing indicates that this phenomenon does not depend on unique features of the late promoters of the lambdoid phages. The pause-inducing sequence elements at p<i>lac</i> and λP<sub>R′</sub> consist of: (i) a 3/6 match to the -10-element consensus sequence, TATAAT, in register +1 (where the register is defined by the first base of the -10-like hexamer) (ii) an A at position +2 and (iii) a T at position +6 (though sequence determinants flanking the element can affect pausing<bibr rid="b30"/>). To determine the frequency of occurrence of these three features in σ<super>70</super>-dependent promoters, we analyzed a database of sequences of known <i>E. coli</i> σ<super>70</super>-dependent promoters (652 promoters<bibr rid="b31"/>). Of the 652 σ<super>70</super>-dependent promoters analyzed, 5.1% (33 promoters) contain an equal or better (≥3/6) match to TATAAT in register +1, an A at position +2 and a T at position +6 (<tablr rid="t1">Table 1</tablr>). Of these 33 promoters, 12 contain a better (≥4/6) match to TATAAT, and 5 contain a substantially better (≥5/6) match to TATAAT (<tablr rid="t1">Table 1</tablr>).</p>
+        <p>In the late promoters of lambdoid phages, the pause-inducing sequence element can be located in register +1 through at least +9 (+1 in λP<sub>R′</sub>; +2 in phage 21 P<sub>R′</sub> and phage 80 P<sub>R′</sub>; +9 in phage 82 P<sub>R′</sub>; ref. <bibrinl rid="b14">14</bibrinl>). Inspection of the database of sequences of known <i>E. coli</i> σ<super>70</super>-dependent promoters indicates fully 17% (112 promoters) contain a ≥4/6 match to TATAAT in registers +1 through +9, with an A at the second position and a T at the sixth position (<tablr rid="t1">Table 1</tablr>). Of these 112 promoters, 25 contain a ≥5/6 match to TATAAT and 1 promoter contains a perfect 6/6 match to TATAAT (<tablr rid="t1">Table 1</tablr>). The analysis indicates that a substantial fraction of promoters contain initially transcribed region -10-like elements that are equivalent, or in fact better matches to the consensus that those at λP<sub>R′</sub> and p<i>lac</i>. We suggest that σ<super>70</super>-dependent promoter proximal pausing is likely to occur at many, if not most, of these promoters.</p>
+        <p>We propose that σ<super>70</super>-dependent pause-inducing sequence elements might function to limit downstream gene expression, an effect that could be modulated by cellular factors such as the Gre proteins. In particular, the presence of a promoter-proximal pause-inducing sequence element would be predicted to increase the spacing between RNAP molecules on the transcription unit downstream of the pause. An increase in the spacing between RNAP molecules within a transcription unit has been shown to affect the ability of RNAP to pause or terminate at promoter-distal locations<bibr rid="b32 b33"/>. Therefore, promoter-proximal σ<super>70</super>-dependent pauses could, in principle, affect events occurring further downstream by influencing both σ retention in individual transcription complexes and RNAP density within a transcription unit.</p>
+      </sec>
+    </sec>
+    <sec level="1">
+      <sectitle>Methods</sectitle>
+      <sec level="2">
+        <sectitle>Expression vectors.</sectitle>
+        <p>Plasmid pBRλQ (used in <figr rid="f4">Fig. 4c</figr>) harbors the wild-type λQ gene on an NdeI-BamHI fragment under the control of the <i>lac</i>UV5 promoter<bibr rid="b34"/>. Plasmid pBRΔQ (used in <figr rid="f4">Fig. 4c</figr>) encodes no functional λQ (ref. <bibrinl rid="b34">34</bibrinl>).</p>
+      </sec>
+      <sec level="2">
+        <sectitle>Test promoters and reporter strains.</sectitle>
+        <p>Reporter strain BN147 contains sequence extending from -109 to +232 of λP<sub>R′</sub> fused to a <i>lacZ</i> reporter gene. This reporter fusion is present on an F′ episome and has been described<bibr rid="b34"/>. The sequence between -6 and +23 of λP<sub>R′</sub> was replaced with the corresponding sequence from p<i>lac</i> to create the artificial promoter λP<sub>R′</sub>-p<i>lac</i>. Derivatives of λP<sub>R′</sub>-p<i>lac</i> that carry base pair substitutions A(+2)G, T(+6)A, or A(+2)G T(+6)A were constructed as well. Each of these promoters was cloned on an EcoRI-HindIII-cut PCR product into pFW11 Tet<bibr rid="b34"/>. These pFW11 plasmids were used to create the following reporter strains that carry the λP<sub>R′</sub>-p<i>lac</i> derivatives fused to <i>lacZ</i>, as described<bibr rid="b35"/>: BN343 containing λP<sub>R′</sub>-p<i>lac</i>, BN401 containing λP<sub>R′</sub>-p<i>lac</i> T(+6)A, BN412 containing λP<sub>R′</sub>-p<i>lac</i> A(+2)G, and BN416 containing λP<sub>R′</sub>-p<i>lac</i> A(+2)G T(+6)A.</p>
+        <p>We constructed a derivative of strain FW102 (ref. <bibrinl rid="b35">35</bibrinl>) that does not produce any functional GreA. This strain, BN105, is essentially FW102 <i>greA</i>::CM. P1 transduction was used to transfer a <i>greA</i>::CM allele from strain JWR1018 (ref. <bibrinl rid="b20">20</bibrinl>) to strain FW102. Strains BN343, BN401, BN412 or BN416 (see above) were mated with strain BN105 to create the following reporter strains that did not produce any functional GreA: BN426 (λP<sub>R′</sub>-p<i>lac</i>), BN427 (λP<sub>R′</sub>-p<i>lac</i> T(+6)A), BN428 (λP<sub>R′</sub>-p<i>lac</i> A(+2)G) and BN429 (λP<sub>R′</sub>-p<i>lac</i> A(+2)G, T(+6)A).</p>
+      </sec>
+      <sec level="2">
+        <sectitle>Assay of β-galactosidase activity.</sectitle>
+        <p>Cells were grown in LB supplemented with carbenicillin (100 μg ml<super>-1</super>) and tetracycline (10 μg ml<super>-1</super>). IPTG was provided at 200 μM, a concentration sufficient to induce maximal expression of λQ, and to prevent the binding of Lac repressor (encoded by the F′ episome) to the <i>lac</i> operator present in the initially transcribed region of the λP<sub>R′</sub>-p<i>lac</i> hybrid promoter. SDS-CHCl<sub>3</sub> permeabilized cells were assayed for β-galactosidase activity essentially as described<bibr rid="b36"/>. Assays were done at least three times in duplicate on separate occasions, with similar results. Values are the averages from one experiment; duplicate measurements differed by &lt;5%.</p>
+      </sec>
+      <sec level="2">
+        <sectitle><i>In vitro</i> transcription.</sectitle>
+        <p>Open complexes were formed at λP<sub>R′</sub> or λP<sub>R′</sub>-p<i>lac</i> by incubating 20 nM RNAP with 5 nM template for 5 min at 37 °C in transcription buffer (20 mM Tris-HCl, pH 8.0, 0.1 mM EDTA, 10 mM DTT, 50 mM KCl and 100 μg ml<super>-1</super> BSA) plus 200 μM ATP, GTP and CTP and 50 μM UTP. Open complexes were formed at p<i>lac</i>UV5 (or p<i>lac</i>UV5 derivatives) by incubating 50 nM RNAP with 20 nM template for 10 min at 37 °C in transcription buffer plus 200 μM ATP, GTP and CTP and 50 μM UTP. Assays were done in the presence of 0.5 μC μl<super>-1</super> α-<super>32</super>P UTP (results in <figr rid="f1">Figs. 1b</figr>, <figr rid="f2">2a,b</figr> and <figr rid="f4">4b</figr>) or 1 μC μl<super>-1</super> γ-<super>32</super>P ATP (results in <figr rid="f1">Figs. 1c</figr> and <figr rid="f3">3</figr>). A single round of transcription was initiated by adding 4 mM MgCl<sub>2</sub> and 10 μg ml<super>-1</super> rifampicin. Where present, GreA or GreB was added to 250 nM at 90 s before the addition of the MgCl<sub>2</sub>-rifampicin mixture. The final volume of each reaction was 150 μl. At the indicated times after the addition of the MgCl<sub>2</sub>-rifampicin mixture, 20 μl of each reaction was removed and quenched as described<bibr rid="b23"/>. Samples were then extracted with phenol-chloroform (1:1), precipitated with ethanol, resuspended in 4 μl of loading buffer (95% (v/v) formamide, 20 mM EDTA, 0.05% (w/v) bromophenol blue, 0.05% (w/v) xylene cyanol), and electrophoresed on 15% (w/v) polyacrylamide sequencing gels. Gels were visualized by phosphorimager.</p>
+        <p>Linear templates for the <i>in vitro</i> transcription assays done with the λP<sub>R′</sub>-based templates were made by the PCR from pFW11-derived plasmids carrying sequence extending from -109 to +232 of either λP<sub>R′</sub> or λP<sub>R′</sub>-p<i>lac</i>. Linear templates for assays done with the p<i>lac</i>UV5-based templates were made by the PCR from pFW11 Tet-derived plasmids carrying sequence extending from -60 to +38 of p<i>lac</i>UV5. Single-base-pair substitutions A(+2)G and T(+4)A were introduced into p<i>lac</i>UV5 by the PCR.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>FRET experiments.</sectitle>
+        <p>Preparation of RNAP derivatives (RNAP holoenzyme and RNAP holoenzyme labeled at position 366 of σ<super>70</super>), preparation of DNA fragments, measurement of leading edge FRET and trailing-edge FRET (in-gel), and data reduction were done as described<bibr rid="b16 b27"/>, except that both <i>lac</i>UV5 and <i>lac</i>UV5(A(+2)G) derivatives were analyzed, and that ApA was replaced by ApG in analysis of <i>lac</i>UV5(A(+2)G) derivatives.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>Proteins.</sectitle>
+        <p>His-tagged versions of wild-type σ<super>70</super> and σ<super>70</super> L402F were purified as described after overproduction from plasmid pLHN12-His<bibr rid="b37"/>. <i>E. coli</i> RNAP core was obtained from Epicentre, and holoenzyme was made by incubation with a five-fold excess of the appropriate σ<super>70</super>. Purified GreA and GreB were provided by S. Borukhov.</p>
+      </sec>
+    </sec>
+  </bdy>
+  <bm>
+    <objects>
+      <fig id="f1" type="bmp" entname="figf1">
+        <figtl><i>In vitro</i> transcription assays with λP<sub>R′</sub> and p<i>lac</i> templates.</figtl>
+        <caption>
+          <p>(<b>a</b>) DNA sequences in the initially transcribed regions of λP<sub>R′</sub> and p<i>lac</i> resemble a promoter -10 element. Shown are a consensus extended -10 promoter element and sequence extending from -6 to +9 of λP<sub>R′</sub> and p<i>lac</i>. Bases matching the -10 element in the pause-inducing sequence at λP<sub>R′</sub> and the putative pause-inducing sequence at p<i>lac</i> are highlighted. (<b>b</b>) Single-round <i>in vitro</i> transcription assays using either a λP<sub>R′</sub> (lanes 1-6) or a p<i>lac</i>UV5 (lanes 7-12) template. RNA was labeled internally with α-<super>32</super>P UTP. Reactions were stopped at the indicated times after transcription was initiated. +16 and +17, 16- and 17-nt RNA species, respectively, produced during assays using the λP<sub>R′</sub> template; cleavage products, products that arose late in the time course using the p<i>lac</i>UV5 template; T, 194-nt terminated transcript produced on the λP<sub>R′</sub> template; RO, 96-nt runoff transcript produced from the p<i>lac</i>UV5 template. (<b>c</b>) Assays as described in <b>b</b> except RNA was end-labeled using γ-<super>32</super>P ATP.</p>
+        </caption>
+      </fig>
+      <fig id="f2" type="bmp" entname="figf2">
+        <figtl>Sequence element in the initially transcribed region of p<i>lac</i> mediates a σ<super>70</super>-dependent pause <i>in vitro</i>.</figtl>
+        <caption>
+          <p>(<b>a</b>) Single-round <i>in vitro</i> transcription assays using p<i>lac</i>UV5-derived templates. RNA was labeled internally with α-<super>32</super>P UTP. Reactions were stopped at the indicated times after transcription was initiated. +17 and +18, 17- and 18-nt RNA species, respectively, produced early during the time course; RO, 96-nt runoff transcript. Reactions were done using either an unmodified p<i>lac</i>UV5 template (lanes 1-5), a template containing the single-base-pair substitution A(+2)G (lanes 6-10) or a template containing the single-base-pair substitution T(+4)A (lanes 11-15). (<b>b</b>) Single-round <i>in vitro</i> transcription assays using a p<i>lac</i>UV5 template with wild-type or mutant σ<super>70</super>. Assays were done using holoenzyme reconstituted with wild-type σ<super>70</super> (lanes 1-6) or σ<super>70</super> L402F (lanes 7-12). RNA was labeled internally with α-<super>32</super>P UTP. Reactions were stopped at the indicated times after transcription was initiated.</p>
+        </caption>
+      </fig>
+      <fig id="f3" type="bmp" entname="figf3">
+        <figtl>The p<i>lac</i>UV5 paused elongation complex is sensitive to GreB and GreA.</figtl>
+        <caption>
+          <p>Single-round <i>in vitro</i> transcription assays using a p<i>lac</i>UV5 template. Assays were done in the absence (lanes 1-5) or presence of GreB (lanes 6-10) or GreA (lanes 11-15). RNA was end-labeled using γ-<super>32</super>P ATP. Reactions were stopped at the indicated times after transcription was initiated. +17 and +18, 17- and 18-nt RNA species, respectively, produced early during the time course; RO, 96-nt runoff transcript.</p>
+        </caption>
+      </fig>
+      <fig id="f4" type="bmp" entname="figf4">
+        <figtl>Sequence element in the initially transcribed region of p<i>lac</i> mediates a GreA-sensitive σ-dependent pause <i>in vivo</i>.</figtl>
+        <caption>
+          <p>(<b>a</b>) Top schematic: the presence of λQ allows RNAP that has initiated transcription at λP<sub>R′</sub> to read through a transcription terminator. Close-up view: functionally important DNA elements at λP<sub>R′</sub> including the promoter -10 and -35 elements, the Q-binding element (QBE) and the pause-inducing sequence. Also shown is the sequence of the λP<sub>R′</sub>-p<i>lac</i> hybrid promoter. In this artificial promoter the sequence extending from -6 to +23 of λP<sub>R′</sub> has been replaced with the corresponding sequence from p<i>lac</i> (open box). (<b>b</b>) Single-round <i>in vitro</i> transcription assays using either a wild-type λP<sub>R′</sub> template (lanes 1-5) or the λP<sub>R′</sub>-p<i>lac</i> hybrid template (lanes 6-10). RNA was labeled internally with α-<super>32</super>P UTP. Reactions were stopped at the indicated times after transcription was initiated. +16 and +17, 16- and 17-nt RNA species, respectively, produced during assays using the wild-type λP<sub>R′</sub> template; T, 194-nt terminated transcript. (<b>c</b>) Effect of λQ on transcription <i>in vivo</i> from λP<sub>R′</sub>-p<i>lac</i> hybrid promoters. Cells containing the indicated reporter (<i>lacZ</i> fused to a λP<sub>R′</sub>-p<i>lac</i> derivative) on an F′ episome were transformed with a plasmid that did or did not encode λQ and assayed for β-galactosidase. Shown is the fold stimulation of <i>lacZ</i> expression mediated by λQ. Indicated above each bar (<i>x</i>/<i>y</i>) are the absolute units of β-galactosidase activity obtained in the presence (<i>x</i>) or absence (<i>y</i>) of λQ. The cells contained a functional <i>greA</i> gene (+) or not (-), as indicated.</p>
+        </caption>
+      </fig>
+      <fig id="f5" type="bmp" entname="figf5">
+        <figtl>Sequence element in the initially transcribed region of p<i>lac</i> stabilizes interactions between σ<super>70</super> and the remainder of the transcription elongation complex.</figtl>
+        <caption>
+          <p>(<b>a</b>) Use of σ<super>70</super>-DNA FRET to assess retention of σ<super>70</super> in transcription elongation complexes<bibr rid="b16 b27"/>. D, donor fluorochrome incorporated in σ<super>70</super>; A, acceptor fluorochrome incorporated in downstream DNA. (<b>b</b>) DNA fragments used in analysis of transcription elongation complexes initiated at p<i>lac</i>UV5 and halted after synthesis of 11, 12, 13, 14 and 15 nt of RNA (that is, <i>lac</i>UV5 derivatives having no guanine residues on the template strand from position +1 to +11, +1 to +12, +1 to +13, +1 to +14, or +1 to +15, and having Cy5 at position +25, +26, +27, +28 or +29. Black boxes, transcription start site (with arrow), promoter -10 element and promoter -35 element; red boxes, halt site. (<b>c</b>) DNA fragments used in analysis of transcription elongation complexes initiated at p<i>lac</i>UV5 derivative having a single-base-pair substitution that disrupts the sequence element (p<i>lac</i>UV5(A(+2)G)) and halted after synthesis of 11, 12, 13, 14 and 15 nt of RNA. Black boxes, transcription start site (with arrow), promoter -10 element and promoter -35 element; blue boxes, A(+2)G substitution; red boxes, halt site. (<b>d</b>) Retention of σ<super>70</super> in transcription elongation complexes containing 11, 12, 13, 14 or 15 nt of RNA (RD<sub>e,11</sub>, RD<sub>e,12</sub>, RD<sub>e,13</sub>, RD<sub>e,14</sub> and RD<sub>e,15</sub>) determined by σ<super>70</super>-DNA FRET. Circles, transcription elongation complexes initiated at p<i>lac</i>UV5; triangles, transcription elongation complexes initiated at p<i>lac</i>UV5(A(+2)G). Data are means ± s.d. of two or three independent determinations.</p>
+        </caption>
+      </fig>
+      <table id="t1" tocentry="0" frame="topbot" colsep="0" rowsep="0" orient="port" pgwide="0" tabcols="1">
+        <title>Analysis of known σ<super>70</super>-dependent promoters for potential pause-inducing sequence elements</title>
+        <tgroup cols="1" colsep="0" rowsep="0" align="center">
+          <colspec colnum="1" colname="1" align="left" colwidth="1*"/>
+          <tbody valign="top">
+            <row>
+              <entry>NANNNT and ≥3/6 match to TATAAT in register 1: 33<fnr rid="t1-fn2"><super>a</super></fnr> (5.1%)</entry>
+            </row>
+            <row>
+              <entry>NANNNT and ≥4/6 match to TATAAT in register 1: 12<fnr rid="t1-fn3"><super>b</super></fnr> (1.8%)</entry>
+            </row>
+            <row>
+              <entry>NANNNT and ≥5/6 match to TATAAT in register 1: 5<fnr rid="t1-fn4"><super>c</super></fnr> (0.77%)</entry>
+            </row>
+            <row>
+              <entry>NANNNT and 6/6 match to TATAAT in register 1: 0 (0%)</entry>
+            </row>
+            <row>
+              <entry>NANNNT and ≥4/6 match to TATAAT in registers 1-9: 112 (17%)</entry>
+            </row>
+            <row>
+              <entry>NANNNT and ≥5/6 match to TATAAT in registers 1-9: 25 (3.8%)</entry>
+            </row>
+            <row>
+              <entry>NANNNT and 6/6 match to TATAAT in registers 1-9: 1<fnr rid="t1-fn5"><super>d</super></fnr> (0.15%)</entry>
+            </row>
+            <row>
+              <entry>
+                <fn id="t1-fn1" type="footnote">
+                  <p>Sequences of promoters were provided by A. Huerta and J. Collado-Vides, Universidad Nacional Autónoma de México (for sequences see <url>http://www.cifn.unam.mx/Computational_Genomics/regulondb/</url>).</p>
+                </fn>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <fn id="t1-fn2" type="footnote">
+                  <p><super>a</super>folA, ilvIp3, codB, lac, mhpA, fepA, fes, entC, sdhp2, fiup, ycbP, topAp3, nohAp, malX, purR, infCp2, asnU, gnd, micFp1, fabB, ptsHp0, cysP, upp, emrR, speB, speCp1, rpoDp2, crp, slp, cspAp2, ivbL, metB, metH.</p>
+                </fn>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <fn id="t1-fn3" type="footnote">
+                  <p><super>b</super>ilvIp3, mhpA, fes, entC, fiup, nohAp, purR, micFp1, ptsHp0, speCp1, rpoDp2, slp.</p>
+                </fn>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <fn id="t1-fn4" type="footnote">
+                  <p><super>c</super>fes, nohAp, micFp1, speCp1, rpoDp2.</p>
+                </fn>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <fn id="t1-fn5" type="footnote">
+                  <p><super>d</super>rplJ.</p>
+                </fn>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </objects>
+    <ack>
+      <p>We thank J. Roberts, K. Brodolin, A. Kapanidis and S. Weiss for discussion, S. Borukhov for purified GreA and GreB, A. Huerta and J. Collado-Vides for providing promoter sequences, S. Dove for comments on the manuscript, and R. Hellmiss for assistance with figure preparation. We also thank A. Hatoum and J. Roberts for sharing unpublished results. This work was supported by US National Institutes of Health grant GM44025 to A.H. and GM41376 to R.H.E. and by a Howard Hughes Medical Institute investigatorship to R.H.E.</p>
+    </ack>
+    <audecl conflct="no"/>
+    <bibl>
+      <bib id="b1">
+        <reftxt><refau><snm>Gross</snm>, <fnm>C.A.</fnm></refau><i>et al</i>. <atl>The functional and regulatory roles of σ factors in transcription</atl>. <jtl>Cold Spring Harbor Symp. Quant. Biol.</jtl><vid>63</vid>, <ppf>141</ppf>-<ppl>155</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b2">
+        <reftxt><refau><snm>Carpousis</snm>, <fnm>A.</fnm></refau> &amp; <refau><snm>Gralla</snm>, <fnm>J.</fnm></refau> <atl>Interaction of RNA polymerase with <i>lac</i>UV5 promoter DNA during mRNA initiation and elongation</atl>. <jtl>J. Mol. Biol.</jtl> <vid>183</vid>, <ppf>165</ppf>-<ppl>177</ppl> (<cd year="1985">1985</cd>).</reftxt>
+      </bib>
+      <bib id="b3">
+        <reftxt><refau><snm>Straney</snm>, <fnm>D.</fnm></refau> &amp; <refau><snm>Crothers</snm>, <fnm>D.</fnm></refau> <atl>A stressed intermediate in the formation of stably initiated RNA chains at the <i>Escherichia coli lac</i> UV5 promoter</atl>. <jtl>J. Mol. Biol.</jtl> <vid>193</vid>, <ppf>267</ppf>-<ppl>278</ppl> (<cd year="1987">1987</cd>).</reftxt>
+      </bib>
+      <bib id="b4">
+        <reftxt><refau><snm>Krummel</snm>, <fnm>B.</fnm></refau> &amp; <refau><snm>Chamberlin</snm>, <fnm>M.J.</fnm></refau> <atl>RNA chain initiation by <i>Escherichia coli</i> RNA polymerase. Structural transitions of the enzyme in early ternary complexes</atl>. <jtl>Biochemistry</jtl> <vid>28</vid>, <ppf>7829</ppf>-<ppl>7842</ppl> (<cd year="1989">1989</cd>).</reftxt>
+      </bib>
+      <bib id="b5">
+        <reftxt><refau><snm>Metzger</snm>, <fnm>W.</fnm></refau>, <refau><snm>Schickor</snm>, <fnm>P.</fnm></refau>, <refau><snm>Meier</snm>, <fnm>T.</fnm></refau>, <refau><snm>Werel</snm>, <fnm>W.</fnm></refau> &amp; <refau><snm>Heumann</snm>, <fnm>H.</fnm></refau> <atl>Nucleation of RNA chain formation by <i>Escherichia coli</i> DNA-dependent RNA polymerase</atl>. <jtl>J. Mol. Biol.</jtl> <vid>232</vid>, <ppf>35</ppf>-<ppl>49</ppl> (<cd year="1993">1993</cd>).</reftxt>
+      </bib>
+      <bib id="b6">
+        <reftxt><refau><snm>Daube</snm>, <fnm>S.</fnm></refau> &amp; <refau><snm>von Hippel</snm>, <fnm>P.</fnm></refau> <atl>Interactions of <i>Escherichia coli</i> σ<super>70</super> within the transcription elongation complex</atl>. <jtl>Proc. Natl. Acad. Sci. USA</jtl> <vid>96</vid>, <ppf>8390</ppf>-<ppl>8395</ppl> (<cd year="1999">1999</cd>)..</reftxt>
+      </bib>
+      <bib id="b7">
+        <reftxt><refau><snm>Hansen</snm>, <fnm>U.M.</fnm></refau> &amp; <refau><snm>McClure</snm>, <fnm>W.R.</fnm></refau> <atl>Role of the σ<super>70</super> subunit of <i>Escherichia coli</i> RNA polymerase in initiation. II. Release of σ<super>70</super> from ternary complexes</atl>. <jtl>J. Biol. Chem.</jtl> <vid>255</vid>, <ppf>9564</ppf>-<ppl>9570</ppl> (<cd year="1980">1980</cd>).</reftxt>
+      </bib>
+      <bib id="b8">
+        <reftxt><refau><snm>Mekler</snm>, <fnm>V.</fnm></refau><i>et al</i>. <atl>Structural organization of bacterial RNA polymerase holoenzyme and the RNA polymerase-promoter open complex</atl>. <jtl>Cell</jtl><vid>108</vid>, <ppf>599</ppf>-<ppl>614</ppl> (<cd year="2002">2002</cd>).</reftxt>
+      </bib>
+      <bib id="b9">
+        <reftxt><refau><snm>Murakami</snm>, <fnm>K.S.</fnm></refau>, <refau><snm>Masuda</snm>, <fnm>S.</fnm></refau> &amp; <refau><snm>Darst</snm>, <fnm>S.A.</fnm></refau> <atl>Structural basis of transcription initiation: <i>T. aquaticus</i> RNA polymerase holoenzyme at 4 Å resolution</atl>. <jtl>Science</jtl> <vid>296</vid>: <ppf>1280</ppf>-<ppl>1284</ppl> (<cd year="2002">2002</cd>).</reftxt>
+      </bib>
+      <bib id="b10">
+        <reftxt><refau><snm>Vassylyev</snm>, <fnm>D.G.</fnm></refau><i>et al</i>. <atl>Crystal structure of a bacterial RNA polymerase holoenzyme at 2.6 Å resolution</atl>. <jtl>Nature</jtl><vid>417</vid>, <ppf>712</ppf>-<ppl>719</ppl> (<cd year="2002">2002</cd>).</reftxt>
+      </bib>
+      <bib id="b11">
+        <reftxt><refau><snm>Young</snm>, <fnm>B.A.</fnm></refau>, <refau><snm>Gruber</snm>, <fnm>T.M.</fnm></refau> &amp; <refau><snm>Gross</snm>, <fnm>C.A.</fnm></refau> <atl>Views of transcription initiation</atl>. <jtl>Cell</jtl> <vid>109</vid>, <ppf>417</ppf>-<ppl>420</ppl> (<cd year="2002">2002</cd>).</reftxt>
+      </bib>
+      <bib id="b12">
+        <reftxt><refau><snm>Shimamoto</snm>, <fnm>N.</fnm></refau>, <refau><snm>Kamigochi</snm>, <fnm>T.</fnm></refau> &amp; <refau><snm>Utiyama</snm>, <fnm>H.</fnm></refau> <atl>Release of the σ subunit of <i>Escherichia coli</i> DNA-dependent RNA polymerase depends mainly on time elapsed after the start of initiation, not on length of product RNA</atl>. <jtl>J. Biol. Chem.</jtl> <vid>261</vid>, <ppf>11859</ppf>-<ppl>11865</ppl> (<cd year="1986">1986</cd>).</reftxt>
+      </bib>
+      <bib id="b13">
+        <reftxt><refau><snm>Osumi-Davis</snm>, <fnm>P.A.</fnm></refau>, <refau><snm>Woody</snm>, <fnm>A.Y.</fnm></refau> &amp; <refau><snm>Woody</snm>, <fnm>R.W.</fnm></refau> <atl>Transcription initiation by <i>Escherichia coli</i> RNA polymerase at the gene II promoter of M13 phage: stability of ternary complex, direct photocrosslinking to nascent RNA, and retention of σ subunit</atl>. <jtl>Biochim. Biophys. Acta.</jtl> <vid>910</vid>, <ppf>130</ppf>-<ppl>141</ppl> (<cd year="1987">1987</cd>).</reftxt>
+      </bib>
+      <bib id="b14">
+        <reftxt><refau><snm>Ring</snm>, <fnm>B.Z.</fnm></refau>, <refau><snm>Yarnell</snm>, <fnm>W.S.</fnm></refau> &amp; <refau><snm>Roberts</snm>, <fnm>J.W.</fnm></refau> <atl>Function of <i>E. coli</i> RNA polymerase σ factor σ<super>70</super> in promoter-proximal pausing</atl>. <jtl>Cell</jtl> <vid>86</vid>, <ppf>485</ppf>-<ppl>493</ppl> (<cd year="1996">1996</cd>).</reftxt>
+      </bib>
+      <bib id="b15">
+        <reftxt><refau><snm>Bar-Nahum</snm>, <fnm>G.</fnm></refau> &amp; <refau><snm>Nudler</snm>, <fnm>E.</fnm></refau> <atl>Isolation and characterization of σ<super>70</super>-retaining transcription elongation complexes from <i>Escherichia coli</i></atl>. <jtl>Cell</jtl> <vid>106</vid>, <ppf>443</ppf>-<ppl>451</ppl> (<cd year="2001">2001</cd>).</reftxt>
+      </bib>
+      <bib id="b16">
+        <reftxt><refau><snm>Mukhopadhyay</snm>, <fnm>J.</fnm></refau><i>et al</i>. <atl>Translocation of σ<super>70</super> with RNA polymerase during transcription: fluorescence resonance energy transfer assay for movement relative to DNA</atl>. <jtl>Cell</jtl><vid>106</vid>, <ppf>453</ppf>-<ppl>463</ppl> (<cd year="2001">2001</cd>).</reftxt>
+      </bib>
+      <bib id="b17">
+        <reftxt><refau><snm>Roberts</snm>, <fnm>J.W.</fnm></refau><i>et al</i>. <atl>Antitermination by bacteriophage λ Q protein</atl>. <jtl>Cold Spring Harbor Symp. Quant. Biol.</jtl><vid>63</vid>, <ppf>319</ppf>-<ppl>325</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b18">
+        <reftxt><refau><snm>Burr</snm>, <fnm>T.</fnm></refau>, <refau><snm>Mitchell</snm>, <fnm>J.</fnm></refau>, <refau><snm>Kolb</snm>, <fnm>A.</fnm></refau>, <refau><snm>Minchin</snm>, <fnm>S.</fnm></refau> &amp; <refau><snm>Busby</snm>, <fnm>S.</fnm></refau> <atl>DNA sequence elements located immediately upstream of the -10 hexamer in <i>Escherichia coli</i> promoters: a systematic study</atl>. <jtl>Nucleic Acids Res.</jtl> <vid>28</vid>, <ppf>1864</ppf>-<ppl>1870</ppl> (<cd year="2000">2000</cd>).</reftxt>
+      </bib>
+      <bib id="b19">
+        <reftxt><refau><snm>Arditti</snm>, <fnm>R.R.</fnm></refau>, <refau><snm>Scaife</snm>, <fnm>J.G.</fnm></refau> &amp; <refau><snm>Beckwith</snm>, <fnm>J.R.</fnm></refau> <atl>The nature of mutants in the <i>lac</i> promoter region</atl>. <jtl>J. Mol. Biol.</jtl> <vid>38</vid>, <ppf>421</ppf>-<ppl>426</ppl> (<cd year="1968">1968</cd>).</reftxt>
+      </bib>
+      <bib id="b20">
+        <reftxt><refau><snm>Marr</snm>, <fnm>M.T.</fnm></refau> &amp; <refau><snm>Roberts</snm>, <fnm>J.W.</fnm></refau> <atl>Function of transcription cleavage factors GreA and GreB at a regulatory pause site</atl>. <jtl>Mol. Cell</jtl> <vid>6</vid>, <ppf>1275</ppf>-<ppl>1285</ppl> (<cd year="2000">2000</cd>).</reftxt>
+      </bib>
+      <bib id="b21">
+        <reftxt><refau><snm>Grayhack</snm>, <fnm>E.J.</fnm></refau>, <refau><snm>Yang</snm>, <fnm>X.J.</fnm></refau>, <refau><snm>Lau</snm>, <fnm>L.F.</fnm></refau> &amp; <refau><snm>Roberts</snm>, <fnm>J.W.</fnm></refau> <atl>Phage λ gene-Q antiterminator recognizes RNA polymerase near the promoter and accelerates it through a pause site</atl>. <jtl>Cell</jtl> <vid>42</vid>, <ppf>259</ppf>-<ppl>269</ppl> (<cd year="1985">1985</cd>).</reftxt>
+      </bib>
+      <bib id="b22">
+        <reftxt><refau><snm>Yarnell</snm>, <fnm>W.S.</fnm></refau> &amp; <refau><snm>Roberts</snm>, <fnm>J.W.</fnm></refau> <atl>The phage λ gene Q transcription antiterminator binds DNA in the late gene promoter as it modifies RNA-polymerase</atl>. <jtl>Cell</jtl> <vid>69</vid>, <ppf>1181</ppf>-<ppl>1189</ppl> (<cd year="1992">1992</cd>).</reftxt>
+      </bib>
+      <bib id="b23">
+        <reftxt><refau><snm>Ko</snm>, <fnm>D.C.</fnm></refau>, <refau><snm>Marr</snm>, <fnm>M.T.</fnm></refau>, <refau><snm>Guo</snm>, <fnm>T.S.</fnm></refau> &amp; <refau><snm>Roberts</snm>, <fnm>J.W.</fnm></refau> <atl>A surface of <i>Escherichia coli</i> σ<super>70</super> required for promoter function and antitermination by phage λ Q protein</atl>. <jtl>Genes Dev.</jtl> <vid>12</vid>, <ppf>3276</ppf>-<ppl>3285</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b24">
+        <reftxt><refau><snm>Maizels</snm>, <fnm>N.M.</fnm></refau><atl>The nucleotide sequence of the lactose messenger ribonucleic acid transcribed from the UV5 promoter mutant of <i>Escherichia coli</i></atl>. <jtl>Proc. Natl. Acad. Sci. USA</jtl><vid>70</vid>, <ppf>3585</ppf>-<ppl>3589</ppl> (<cd year="1973">1973</cd>).</reftxt>
+      </bib>
+      <bib id="b25">
+        <reftxt><refau><snm>Borukhov</snm>, <fnm>S.</fnm></refau>, <refau><snm>Sagitov</snm>, <fnm>V.</fnm></refau> &amp; <refau><snm>Goldfarb</snm>, <fnm>A.</fnm></refau> <atl>Transcript cleavage factors from <i>E. coli</i></atl>. <jtl>Cell</jtl> <vid>72</vid>, <ppf>459</ppf>-<ppl>466</ppl> (<cd year="1993">1993</cd>).</reftxt>
+      </bib>
+      <bib id="b26">
+        <reftxt><refau><snm>Fish</snm>, <fnm>R.N.</fnm></refau> &amp; <refau><snm>Kane</snm>, <fnm>C.M.</fnm></refau> <atl>Promoting elongation with transcript cleavage stimulatory factors</atl>. <jtl>Biochim. Biophys. Acta.</jtl> <vid>1577</vid>, <ppf>287</ppf>-<ppl>307</ppl> (<cd year="2002">2002</cd>).</reftxt>
+      </bib>
+      <bib id="b27">
+        <reftxt><refau><snm>Mukhopadhyay</snm>, <fnm>J.</fnm></refau><i>et al</i>. <atl>Fluorescence resonance energy transfer (FRET) in analysis of transcription-complex structure and function</atl>. <jtl>Methods Enzymol.</jtl><vid>371</vid>, <ppf>144</ppf>-<ppl>159</ppl> (<cd year="2003">2003</cd>).</reftxt>
+      </bib>
+      <bib id="b28">
+        <reftxt><refau><snm>Brodolin</snm>, <fnm>K.</fnm></refau>, <refau><snm>Zenkin</snm>, <fnm>N.</fnm></refau>, <refau><snm>Mustaev</snm>, <fnm>A.</fnm></refau>, <refau><snm>Mamaeva</snm>, <fnm>D.</fnm></refau> &amp; <refau><snm>Heumann</snm>, <fnm>H.</fnm></refau> <atl>σ<super>70</super> subunit of RNA polymerase induces <i>lac</i>UV5 promoter-proximal pausing of transcription</atl>. <jtl>Nat. Struct. Mol. Biol.</jtl> <vid>11</vid>, advance online publication, 2 May 2004 (doi:10.1038/nsmb768) (<cd year="2004">2004</cd>).</reftxt>
+      </bib>
+      <bib id="b29">
+        <reftxt><refau><snm>Karls</snm>, <fnm>R.</fnm></refau><i>et al</i>. <atl>Pseudorevertants of a <i>lac</i> promoter mutation reveal overlapping nascent promoters</atl>. <jtl>Nucleic Acids Res.</jtl><vid>17</vid>, <ppf>3927</ppf>-<ppl>3939</ppl> (<cd year="1989">1989</cd>).</reftxt>
+      </bib>
+      <bib id="b30">
+        <reftxt><refau><snm>Ring</snm>, <fnm>B.Z.</fnm></refau> &amp; <refau><snm>Roberts</snm>, <fnm>J.W.</fnm></refau> <atl>Function of a nontranscribed DNA strand site in transcription elongation</atl>. <jtl>Cell</jtl> <vid>78</vid>, <ppf>317</ppf>-<ppl>324</ppl> (<cd year="1994">1994</cd>).</reftxt>
+      </bib>
+      <bib id="b31">
+        <reftxt><refau><snm>Salgado</snm>, <fnm>H.</fnm></refau><i>et al</i>. <atl>RegulonDB (version 4.0): transcriptional regulation, operon organization and growth conditions in <i>Escherichia coli</i> K-12</atl>. <jtl>Nucleic Acids Res.</jtl><vid>32</vid>, <ppf>D303</ppf>-<ppl>D306</ppl> (<cd year="2004">2004</cd>).</reftxt>
+      </bib>
+      <bib id="b32">
+        <reftxt><refau><snm>Epshtein</snm>, <fnm>V.</fnm></refau> &amp; <refau><snm>Nudler</snm>, <fnm>E.</fnm></refau> <atl>Cooperation between RNA polymerase molecules in transcription elongation</atl>. <jtl>Science</jtl> <vid>300</vid>, <ppf>801</ppf>-<ppl>805</ppl> (<cd year="2003">2003</cd>).</reftxt>
+      </bib>
+      <bib id="b33">
+        <reftxt><refau><snm>Epshtein</snm>, <fnm>V.</fnm></refau>, <refau><snm>Toulme</snm>, <fnm>F.</fnm></refau>, <refau><snm>Rahmouni</snm>, <fnm>A.R.</fnm></refau>, <refau><snm>Borukhov</snm>, <fnm>S.</fnm></refau> &amp; <refau><snm>Nudler</snm>, <fnm>E.</fnm></refau> <atl>Transcription through the roadblocks: the role of RNA polymerase cooperation</atl>. <jtl>EMBO J.</jtl> <vid>22</vid>, <ppf>4719</ppf>-<ppl>4727</ppl> (<cd year="2003">2003</cd>).</reftxt>
+      </bib>
+      <bib id="b34">
+        <reftxt><refau><snm>Nickels</snm>, <fnm>B.E.</fnm></refau>, <refau><snm>Roberts</snm>, <fnm>C.W.</fnm></refau>, <refau><snm>Sun</snm>, <fnm>H.</fnm></refau>, <refau><snm>Roberts</snm>, <fnm>J.W.</fnm></refau> &amp; <refau><snm>Hochschild</snm>, <fnm>A.</fnm></refau> <atl>The σ<super>70</super> subunit of RNA polymerase is contacted by the λQ antiterminator during early elongation</atl>. <jtl>Mol. Cell</jtl> <vid>10</vid>, <ppf>611</ppf>-<ppl>622</ppl> (<cd year="2002">2002</cd>).</reftxt>
+      </bib>
+      <bib id="b35">
+        <reftxt><refau><snm>Whipple</snm>, <fnm>F.W.</fnm></refau><atl>Genetic analysis of prokaryotic and eukaryotic DNA-binding proteins in <i>Escherichia coli</i></atl>. <jtl>Nucleic Acids Res.</jtl><vid>26</vid>, <ppf>3700</ppf>-<ppl>3706</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b36">
+        <reftxt><refau><snm>Miller</snm>, <fnm>J.H.</fnm></refau> In <btl>Experiments in Molecular Genetics</btl> (Cold Spring Harbor Laboratory Press, Plainview, New York, <cd year="1972">1972</cd>).</reftxt>
+      </bib>
+      <bib id="b37">
+        <reftxt><refau><snm>Panaghie</snm>, <fnm>G.</fnm></refau>, <refau><snm>Aiyar</snm>, <fnm>S.E.</fnm></refau>, <refau><snm>Bobb</snm>, <fnm>K.L.</fnm></refau>, <refau><snm>Hayward</snm>, <fnm>R.S.</fnm></refau> &amp; <refau><snm>de Haseth</snm>, <fnm>P.L.</fnm></refau> <atl>Aromatic amino acids in region 2.3 of <i>Escherichia coli</i> σ<super>70</super> participate collectively in the formation of an RNA polymerase-promoter open complex</atl>. <jtl>J. Mol. Biol.</jtl> <vid>299</vid>, <ppf>1217</ppf>-<ppl>1230</ppl> (<cd year="2000">2000</cd>).</reftxt>
+      </bib>
+    </bibl>
+  </bm>
+</article>

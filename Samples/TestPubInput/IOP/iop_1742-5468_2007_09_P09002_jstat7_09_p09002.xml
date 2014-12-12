@@ -1,0 +1,1876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "http://ej.iop.org/dtd/iopv1_5_2.dtd">
+<article artid="jstat256772">
+  <article-metadata>
+    <jnl-data jnlid="jstat">
+      <jnl-fullname>Journal of Statistical Mechanics: Theory and Experiment</jnl-fullname>
+      <jnl-abbreviation>J. Stat. Mech.</jnl-abbreviation>
+      <jnl-shortname>JSTAT</jnl-shortname>
+      <jnl-issn>1742-5468</jnl-issn>
+      <jnl-coden>JSMTC6</jnl-coden>
+      <jnl-imprint>Institute of Physics Publishing</jnl-imprint>
+      <jnl-web-address>stacks.iop.org/JSTAT</jnl-web-address>
+    </jnl-data>
+    <volume-data>
+      <year-publication>2007</year-publication>
+      <volume-number>2007</volume-number>
+    </volume-data>
+    <issue-data>
+      <issue-number>09</issue-number>
+      <coverdate>September 2007</coverdate>
+    </issue-data>
+    <article-data>
+      <article-type type="paper" sort="regular"/>
+      <type-number type="paper" artnum="P09002"/>
+      <article-number>256772</article-number>
+      <first-page>P09002</first-page>
+      <last-page>P09002</last-page>
+      <length>14</length>
+      <pii>S1742-5468(07)56772-5</pii>
+      <doi>10.1088/1742-5468/2007/09/P09002</doi>
+      <arxivppt>0706.2716</arxivppt>
+      <copyright>IOP Publishing Ltd</copyright>
+      <ccc>1742-5468/07/P090002+14$30.00</ccc>
+      <printed>Printed in the UK</printed>
+      <definition/>
+      <?TeX \newcommand{\fh}{\hat{f}}
+\newcommand{\muh}{\hat{\mu}}
+\newcommand{\nuh}{\hat{\nu}}
+\newcommand{\al}{\alpha}
+\newcommand{\g}{\gamma}
+\newcommand{\G}{\Gamma}
+\newcommand{\D}{\Delta}
+\newcommand{\eps}{\epsilon}
+\newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda}
+\newcommand{\var}{\varphi}
+\newcommand{\pa}{\partial}
+\newcommand{\hf}{\frac{1}{2}}
+\newcommand{\dz}{\frac{\rmd z}{2\pi i}}
+\newcommand{\bra}[1]{\langle {#1}|}
+\newcommand{\ket}[1]{|{#1}\rangle}
+\newcommand{\chit}{\chi}
+\newcommand{\Hc}{{\cal H}}
+\newcommand{\Rc}{{\cal R}}
+\newcommand{\Lc}{{\cal L}}
+\newcommand{\Vc}{{\cal V}}
+\newcommand{\ch}{\mathrm{ch}}
+\newcommand{\R}{{\cal R}}
+\newcommand{\dkk}{\delta_{j,\{k,k'\}}^{(2)}}
+\newcommand{\ddkk}{\delta_{j,\{k,k'\}}^{(4)}}
+\newcommand{\dddkk}{\delta_{j,\{k,k'\}}^{(8)}}
+\eqnobysec
+?>
+    </article-data>
+  </article-metadata>
+  <header>
+    <title-group>
+      <title>Fusion algebra of critical percolation</title>
+      <short-title>Fusion algebra of critical percolation
+</short-title>
+      <ej-title>Fusion algebra of critical percolation
+</ej-title>
+    </title-group>
+    <author-group>
+      <author address="jstat256772ad1" email="jstat256772ea1">
+        <first-names>Jørgen</first-names>
+        <second-name>Rasmussen</second-name>
+      </author>
+      <author address="jstat256772ad1" email="jstat256772ea2">
+        <first-names>Paul A</first-names>
+        <second-name>Pearce</second-name>
+      </author>
+      <short-author-list>J Rasmussen and P A Pearce</short-author-list>
+    </author-group>
+    <address-group>
+      <address id="jstat256772ad1" showid="no"><orgname>Department of Mathematics and Statistics, University of Melbourne Parkville</orgname>, Victoria
+3010,
+<country>Australia</country>
+</address>
+      <e-address id="jstat256772ea1">
+        <email mailto="J.Rasmussen@ms.unimelb.edu.au">J.Rasmussen@ms.unimelb.edu.au</email>
+      </e-address>
+      <e-address id="jstat256772ea2">
+        <email mailto="P.Pearce@ms.unimelb.edu.au">P.Pearce@ms.unimelb.edu.au</email>
+      </e-address>
+    </address-group>
+    <history received="28 June 2007" accepted="7 August 2007" online="3 September 2007"/>
+    <abstract-group>
+      <abstract>
+        <heading>Abstract</heading>
+        <p indent="no">We present an explicit conjecture for the chiral fusion algebra of critical percolation
+considering Virasoro representations with no enlarged or extended symmetry algebra. The
+representations that we take to generate fusion are countably infinite in number. The
+ensuing fusion rules are quasi-rational in the sense that the fusion of a finite
+number of these representations decomposes into a finite direct sum of these
+representations. The fusion rules are commutative, associative and exhibit an <inline-eqn><?TeX s\ell
+(2) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn1.gif"/></inline-eqn> structure. They involve representations which we call Kac representations of which some
+are reducible yet indecomposable representations of rank 1. In particular, the identity of
+the fusion algebra is a reducible yet indecomposable Kac representation of rank
+1. We make detailed comparisons of our fusion rules with the recent results of
+Eberle–Flohr and Read–Saleur. Notably, in agreement with Eberle–Flohr, we find the
+appearance of indecomposable representations of rank 3. Our fusion rules are
+supported by extensive numerical studies of an integrable lattice model of critical
+percolation. Details of our lattice findings and numerical results will be presented
+elsewhere.</p>
+      </abstract>
+    </abstract-group>
+    <classifications>
+      <subject-areas type="jstat">
+        <category code="1"/>
+        <category code="4"/>
+      </subject-areas>
+      <keywords type="jstat">
+        <keyword code="1/030"/>
+        <keyword code="4/140"/>
+      </keywords>
+    </classifications>
+  </header>
+  <body refstyle="numeric">
+    <sec-level1 id="jstat256772s1" label="1">
+      <heading>Introduction</heading>
+      <p indent="no">Percolation [<cite linkend="jstat256772bib1" range="jstat256772bib1,jstat256772bib2,jstat256772bib3">1–3</cite>] has its
+origins in the paper [<cite linkend="jstat256772bib4">4</cite>] by Broadbent and Hammersley from 1957.
+Despite its relatively simple description, the subtleties and richness of percolation
+continue to hold much interest and even surprises after 50 years. One exciting
+recent development is the demonstration [<cite linkend="jstat256772bib5">5</cite>, <cite linkend="jstat256772bib6">6</cite>] that the continuum
+scaling limit of percolation on the lattice yields a conformally invariant measure
+in the plane with connections to stochastic Loewner evolution [<cite linkend="jstat256772bib7" range="jstat256772bib7,jstat256772bib8,jstat256772bib9,jstat256772bib10,jstat256772bib11,jstat256772bib12">7–12</cite>].
+This is achieved by considering discrete analytic functions on the lattice.
+Another intriguing development is the unexpected connection [<cite linkend="jstat256772bib13" range="jstat256772bib13,jstat256772bib14,jstat256772bib15,jstat256772bib16">13–16</cite>] between the
+ground state of percolation, viewed as a stochastic process, and fully packed loop
+refinements of enumerations of symmetry classes of alternating sign matrices.</p>
+      <p>Percolation as a conformal field theory (CFT) has some novel aspects being a non-rational and
+non-unitary theory with a countably infinite number of scaling fields. Most importantly, as
+argued in [<cite linkend="jstat256772bib17" range="jstat256772bib17,jstat256772bib18,jstat256772bib19">17–19</cite>]
+for example, it is a <italic>logarithmic</italic> CFT with the consequence that it admits
+indecomposable representations of the Virasoro algebra [<cite linkend="jstat256772bib20">20</cite>]. The first
+systematic study of logarithmic CFT appeared in [<cite linkend="jstat256772bib21">21</cite>]. Logarithmic
+CFTs are currently the subject of intensive investigation, see [<cite linkend="jstat256772bib22" range="js- tat256772bib22,jstat256772bib23,jstat256772bib24,jstat256772bib25,jstat256772bib26,jstat256772bib27,jstat256772bib28,jstat256772bib29,jstat256772bib30,jstat256772bib31,jstat256772bib32,jstat256772bib33,jstat256772bib34,jstat256772bib35,jstat256772bib36,jstat256772bib37,jstat256772bib38,jstat256772bib39">22–39</cite>] and references therein. There is of course a long history of studying
+percolation as the continuum scaling limit of lattice models [<cite linkend="jstat256772bib40" range="jstat256772bib40,jstat256772bib41,jstat256772bib42">40–42</cite>]. Here, however, it is convenient
+to regard critical percolation as a member of the family <inline-eqn><?TeX {\cal LM}(p,p') ?><inline-graphic format="GIF" filename="images/jstat256772ieqn2.gif"/></inline-eqn> of logarithmic CFTs defined as the continuum scaling limit of integrable lattice models [<cite linkend="jstat256772bib43">43</cite>]. The first two members <inline-eqn><?TeX {\cal LM}(1,2) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn3.gif"/></inline-eqn> and <inline-eqn><?TeX {\cal LM}(2,3) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn4.gif"/></inline-eqn> correspond to critical dense polymers and critical percolation (bond percolation on the
+square lattice), respectively. This solvable model of critical dense polymers was considered
+in [<cite linkend="jstat256772bib44">44</cite>].</p>
+      <p>In this paper, we are interested in the fusion algebra of <inline-eqn><?TeX {\cal LM}(2,3) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn4.gif"/></inline-eqn> and we present an explicit conjecture for the fusion rules
+generated from two fundamental representations, here denoted
+(2,1) 
+and (1,2). The identity of this fundamental fusion algebra is denoted
+(1,1) 
+and is a reducible yet indecomposable representation of rank 1. Our fusion rules are
+supported by extensive numerical studies of our integrable lattice model of critical
+percolation. Details of our lattice findings and numerical results will be presented
+elsewhere.</p>
+      <p>It appears natural to suspect that the so-called augmented
+<italic>c</italic><sub><italic>p</italic>,<italic>p</italic>′</sub> 
+models [<cite linkend="jstat256772bib45">45</cite>] are equivalent to our logarithmic minimal models <inline-eqn><?TeX {\cal
+LM}(p,p') ?><inline-graphic format="GIF" filename="images/jstat256772ieqn2.gif"/></inline-eqn>. In particular, we believe that the augmented
+<italic>c</italic><sub>2,3</sub> 
+model is equivalent to critical percolation <inline-eqn><?TeX {\cal LM}(2,3) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn4.gif"/></inline-eqn>. Much is known [<cite linkend="jstat256772bib46">46</cite>] about the fusion algebras of the augmented
+<italic>c</italic><sub><italic>p</italic>,<italic>p</italic>′</sub> models
+with <italic>p</italic> = 1 
+while much less is known about the fusion algebras of these models for
+<italic>p</italic>&gt;1. For critical percolation, the most complete information on fusion comes from
+Eberle and Flohr [<cite linkend="jstat256772bib45">45</cite>] who systematically applied the Nahm algorithm [<cite linkend="jstat256772bib46">46</cite>, <cite linkend="jstat256772bib47">47</cite>] to obtain fusions level by level. A careful comparison
+shows that our fusion rules are compatible with their results [<cite linkend="jstat256772bib45">45</cite>]. In
+particular, we confirm their observation of indecomposable representations of rank
+3. We also make a detailed comparison of our fusion rules with the results of [<cite linkend="jstat256772bib48">48</cite>] which we find correspond to a subalgebra of our fusion algebra of critical
+percolation.
+</p>
+      <sec-level2 id="jstat256772s1.1" label="1.1">
+        <heading>Kac representations</heading>
+        <p indent="no">Critical percolation <inline-eqn><?TeX {\cal LM}(2,3) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn4.gif"/></inline-eqn> has central charge <italic>c</italic> = 0 
+and conformal weights
+<display-eqn id="jstat256772eqn1" textype="equation" eqnnum="1.1"><?TeX \begin{equation}
+\D_{r,s}=\frac{(3r-2s)^{2}-1}{24},\tqs
+r,s\in\mathbb{N}.
+\label{D}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn1.gif"/></display-eqn>
+The set of distinct conformal weights is <inline-eqn><?TeX \{\D_{k,1},\D_{k+1,2},\D_{k+1,3}; k\in
+\mathbb {N}\}=\{\D_{1,k+1},\allowbreak \D_{2,k+2},; k\in \mathbb
+{N}\} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn5.gif"/></inline-eqn>.</p>
+        <p>From the lattice, a <italic>Kac
+representation</italic> (<italic>r</italic>,<italic>s</italic>) 
+arises for <italic>every</italic> pair of integer Kac labels
+<italic>r</italic>,<italic>s</italic> 
+in the first quadrant of the infinitely extended Kac table, see figure <figref linkend="jstat256772fig1">1</figref>. This relaxes the constraint
+<italic>r</italic> = 1,2 
+considered in [<cite linkend="jstat256772bib43">43</cite>]. The lattice description of the full set of Kac representations
+will be discussed in detail elsewhere. The conformal character of the Kac representation
+(<italic>r</italic>,<italic>s</italic>) 
+is given by
+<display-eqn id="jstat256772eqn2" textype="equation" eqnnum="1.2"><?TeX \begin{equation}
+\chit_{r,s}(q)=\frac{q^{{1}/{24}+\D_{r,s}}}{\eta(q)}\left(1-q^{rs}\right)
+\label{chikac}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn2.gif"/></display-eqn>
+where the Dedekind eta function is defined by
+<display-eqn id="jstat256772eqn3" textype="equation" eqnnum="1.3"><?TeX \begin{equation}
+\eta(q)=q^{1/24}\prod_{m=1}^\infty(1-q^m).
+\label{eta}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn3.gif"/></display-eqn>
+We will denote the character of the <italic>irreducible</italic> Virasoro representation of conformal weight
+Δ<sub><italic>r</italic>,<italic>s</italic></sub> 
+by ch<sub><italic>r</italic>,<italic>s</italic></sub>(<italic>q</italic>). These irreducible characters [<cite linkend="jstat256772bib49">49</cite>] read
+<display-eqn id="jstat256772eqn4" textype="equation" eqnnum="1.4"><?TeX \begin{equation}
+\eqalign{
+\mathrm{ch}_{2k-1,a}(q)=K_{12,6k-3-2a;k}(q)-K_{12,6k-3+2a;k}(q),\tqs
+a=1,2\\
+\mathrm{ch}_{2k+1,3}(q)=\frac{1}{\eta(q)}\bigl(q^{3(2k-1)^2/8}-q^{3(2k+1)^2/8}\bigr)\\
+\mathrm{ch}_{2k,b}(q)=\frac{1}{\eta(q)}\bigl(q^{(3k-b)^2/6}-q^{(3k+b)^2/6}\bigr),\tqs
+b=1,2,3}
+\label{laq}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn4.gif"/></display-eqn>
+where <inline-eqn><?TeX k\in \mathbb {N} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn6.gif"/></inline-eqn> while <italic>K</italic><sub><italic>n</italic>,ν;<italic>k</italic></sub>(<italic>q</italic>) 
+is defined as
+<display-eqn id="jstat256772eqn5" textype="equation" eqnnum="1.5"><?TeX \begin{equation}
+K_{n,\nu;k}(q)=
+\frac{1}{\eta(q)}\sum_{j\in\mathbb{Z}\setminus\{1,\ldots,k-1\}}q^{(nj-\nu)^2/2n}.
+\label{Kk}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn5.gif"/></display-eqn>
+It follows that for <italic>k</italic> = 1, the first expression in (<eqnref linkend="jstat256772eqn4">1.4</eqnref>) reduces to the well-known irreducible character
+<display-eqn id="jstat256772eqn6" textype="equation" eqnnum="1.6"><?TeX \begin{equation}
+\mathrm{ch}_{1,a}(q)=
+\frac{1}{\eta(q)}\sum_{j\in\mathbb{Z}}\bigl(q^{(12j-1)^2/24}-q^{(12j+5)^2/24}\bigr)
+=1, \tqs a=1,2.
+\label{r0s0}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn6.gif"/></display-eqn>
+<figure id="jstat256772fig1" parts="single" width="column" position="float" printstyle="normal" orientation="port"><graphic><graphic-file version="print" format="EPS" width="18pc" filename="images/5677201.eps"/><graphic-file version="ej" format="JPEG" filename="images/5677201.jpg"/></graphic><caption id="jstat256772fc1" type="figure" label="Figure 1"><p indent="no">Extended Kac table of critical percolation <inline-eqn><?TeX {\cal LM}(2,3) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn4.gif"/></inline-eqn> showing the conformal weights
+Δ<sub><italic>r</italic>,<italic>s</italic></sub> of the Kac
+representations (<italic>r</italic>,<italic>s</italic>). Except
+for the identifications (2<italic>k</italic>,3<italic>k</italic>′) = (2<italic>k</italic>′,3<italic>k</italic>), the entries relate to <italic>distinct</italic> Kac representations even if the conformal weights
+coincide. This is unlike the irreducible representations which are uniquely
+characterized by their conformal weight. The periodicity of conformal weights
+Δ<sub><italic>r</italic>,<italic>s</italic></sub> = Δ<sub><italic>r</italic>+2,<italic>s</italic>+3</sub> 
+is made manifest by shading the rows and columns with <inline-eqn><?TeX r\equiv 0 ?><inline-graphic format="GIF" filename="images/jstat256772ieqn7.gif"/></inline-eqn> (mod 2) or <inline-eqn><?TeX s\equiv 0 ?><inline-graphic format="GIF" filename="images/jstat256772ieqn8.gif"/></inline-eqn> (mod 3). The Kac representations which happen to be irreducible representations are
+marked with a red shaded quadrant in the top right corner. These do not exhaust the
+distinct values of the conformal weights. For example, the irreducible representation with
+Δ<sub>1,1</sub> = 0 
+does not arise as a Kac representation. By contrast, the Kac table
+of the associated <italic>rational</italic> (minimal) model consisting of the shaded
+1 × 2 grid in
+the lower left corner is trivial and contains only the operator corresponding to the irreducible representation
+with Δ = 0.</p></caption></figure></p>
+        <p><italic>A priori</italic>, a Kac representation can be either irreducible or reducible. In the latter case, it
+could be fully reducible (in which case it would be a direct sum of irreducible
+representations) or its direct-sum decomposition could involve at least one reducible but
+indecomposable representation of rank 1 (possibly in addition to some irreducible
+representations). We will only characterize the Kac representations appearing in
+the fusion algebras to be discussed in the present work. Among these are the
+Kac representations <inline-eqn><?TeX \{(2k,1),(2k,2),(2k,3),(1,3k),(2,3k); k\in \mathbb
+{N}\} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn9.gif"/></inline-eqn>. Since their characters all correspond to irreducible Virasoro characters, these Kac
+representations must themselves be irreducible. They constitute an exhaustive list of
+irreducible Kac representations. Two Kac representations are naturally identified if
+they have identical conformal weights and are both irreducible. The relations
+<display-eqn id="jstat256772eqn7" textype="equation" eqnnum="1.7"><?TeX \begin{equation}
+(2k,3)=(2,3k)
+\label{idirr}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn7.gif"/></display-eqn>
+are the only such identifications. More general relations are considered in (<eqnref linkend="jstat256772eqn21">2.13</eqnref>)
+and (<eqnref linkend="jstat256772eqn22">2.14</eqnref>). Here we merely point out that two Kac characters (<eqnref linkend="jstat256772eqn2">1.2</eqnref>) are equal
+χ<sub><italic>r</italic>,<italic>s</italic></sub>(<italic>q</italic>) = χ<sub><italic>r</italic>′,<italic>s</italic>′</sub>(<italic>q</italic>) if and
+only if (<italic>r</italic>′,<italic>s</italic>′) = (<italic>r</italic>,<italic>s</italic>) 
+or (<italic>r</italic>′,<italic>s</italic>′) = (2<italic>s</italic>/3,3<italic>r</italic>/2). That is, the only equalities between Kac characters are of the form
+χ<sub>2<italic>k</italic>,3<italic>k</italic>′</sub>(<italic>q</italic>) = χ<sub>2<italic>k</italic>′,3<italic>k</italic></sub>(<italic>q</italic>). According to (<eqnref linkend="jstat256772eqn22">2.14</eqnref>), a similar equality applies to the Kac representations themselves:
+(2<italic>k</italic>,3<italic>k</italic>′) = (2<italic>k</italic>′,3<italic>k</italic>).</p>
+        <p>The only <italic>reducible</italic> Kac representations entering the fundamental fusion algebra to be discussed below
+are (1,1) 
+and (1,2) 
+and they are both indecomposable representations of rank 1, cf section <secref linkend="jstat256772s2.6">2.6</secref>. The indecomposable representations of higher rank appearing in the fusion algebra
+may be described in terms of Kac representations and their characters. We therefore list
+the decompositions of the relevant Kac characters in terms of irreducible characters
+<display-eqn id="jstat256772eqn8" textype="equation" eqnnum="1.8"><?TeX \begin{equation}
+\eqalign{
+\fl
+\chit_{2k-1,b}(q)=
+\ch_{2k-1,b}(q)+\bigl(1-\delta_{b,3}\delta_{k,1}\bigr)\ch_{2k+1,b}(q),\tqs
+b=1,2,3\\
+\fl \chit_{a,3k-b}(q)=\ch_{a,3k-b}(q)
++\bigl(1-\delta_{a,2}\delta_{k,1}\bigr)\ch_{a,3k+b}(q),\tqs a,b=1,2\\
+\fl \chit_{3,3k+b}(q)=\ch_{1,3k-3+b}(q)+\ch_{1,3k+b}(q)+\ch_{1,3k+3-b}(q)\\
++\ \ch_{1,3k+3+b}(q)+\ch_{1,3k+6-b}(q)+\ch_{1,3k+9-b}(q),\tqs b=1,2}
+\label{chitch}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn8.gif"/></display-eqn>
+where <inline-eqn><?TeX k\in \mathbb {N} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn6.gif"/></inline-eqn>. The decomposition in the general case is discussed in the appendix of [<cite linkend="jstat256772bib43">43</cite>].
+</p>
+      </sec-level2>
+    </sec-level1>
+    <sec-level1 id="jstat256772s2" label="2">
+      <heading>Fusion algebras</heading>
+      <p indent="no">The <italic>fundamental</italic> fusion algebra <inline-eqn><?TeX \bigl \langle (2,1), (1,2)\bigr \rangle
+?><inline-graphic format="GIF" filename="images/jstat256772ieqn10.gif"/></inline-eqn> is defined as the fusion algebra generated by the fundamental representations
+(2,1) 
+and (1,2). We find that closure of this fusion algebra requires the inclusion of a variety of other
+representations
+<display-eqn id="jstat256772eqn9" textype="eqnarray" eqnnum="2.1"><?TeX \begin{eqnarray}
+\fl
+\bigl\langle(2,1), (1,2)\bigr\rangle=
+\bigl\langle(1,1), (1,2), (2k,a), (1,3k), (2k,3),
+\R_{2k,a}^{1,0}, \R_{2k,3}^{1,0}, \R_{a,3k}^{0,b},
+\R_{2k,3}^{1,b}; \nonumber\\
+a,b=1,2; k\in\mathbb{N}\bigr\rangle
+\label{A2112}
+\end{eqnarray} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn9.gif"/></display-eqn>
+to be discussed next.
+</p>
+      <sec-level2 id="jstat256772s2.1" label="2.1">
+        <heading>Indecomposable representations of rank 2 or 3</heading>
+        <p indent="no">For <inline-eqn><?TeX k\in \mathbb {N} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn6.gif"/></inline-eqn>, the representations denoted by <inline-eqn><?TeX \R_{2k,1}^{1,0} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn11.gif"/></inline-eqn>, <inline-eqn><?TeX \R_{2k,2}^{1,0} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn12.gif"/></inline-eqn>, <inline-eqn><?TeX \R_{2k,3}^{1,0} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn13.gif"/></inline-eqn>, <inline-eqn><?TeX \R_{1,3k}^{0,1} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn14.gif"/></inline-eqn>, <inline-eqn><?TeX \R_{1,3k}^{0,2} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn15.gif"/></inline-eqn>, <inline-eqn><?TeX \R_{2,3k}^{0,1} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn16.gif"/></inline-eqn> and <inline-eqn><?TeX \R_{2,3k}^{0,2} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn17.gif"/></inline-eqn> are indecomposable representations of rank 2, while <inline-eqn><?TeX \R_{2k,3}^{1,1} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn18.gif"/></inline-eqn> and <inline-eqn><?TeX \R_{2k,3}^{1,2} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn19.gif"/></inline-eqn> are indecomposable representations of rank 3. Their characters read
+<display-eqn id="jstat256772eqn10" textype="equation" eqnnum="2.2"><?TeX \begin{equation}
+\eqalign{
+\fl
+\chit[\R_{2k,b}^{1,0}](q)=\chit_{2k-1,b}(q)+\chit_{2k+1,b}(q)\\
+\eql \bigl(1-\delta_{b,3}\delta_{k,1}\bigr)\ch_{2k-1,b}(q)+2\ch_{2k+1,b}(q)
++\ch_{2k+3,b}(q),\tqs b=1,2,3\\
+\fl
+\chit[\R_{a,3k}^{0,b}](q)=\chit_{a,3k-b}(q)+\chit_{a,3k+b}(q)\\
+\eql \bigl(1-\delta_{a,2}\delta_{k,1}\bigr)\ch_{a,3k-b}(q)+2\ch_{a,3k+b}(q)
++\ch_{a,3(k+2)-b}(q),\tqs a,b=1,2\\
+\fl
+\chit[\R_{2k,3}^{1,b}](q)=\chit_{2k-1,3-b}(q)+\chit_{2k-1,3+b}(q)
++\chit_{2k+1,3-b}(q)+\chit_{2k+1,3+b}(q)\\
+\eql \bigl(1-\delta_{k,1}\bigr)\ch_{1,3k-3-b}(q)+2
+\bigl(1-\delta_{k,1}\bigr)\ch_{1,3k-3+b}(q)
++2\ch_{1,3k-b}(q)\\
++\ 4\ch_{1,3k+b}(q)+\bigl(2-\delta_{k,1}\bigr)\ch_{1,3k+3-b}(q)
++2\ch_{1,3k+3+b}(q)\\
++\ 2\ch_{1,3k+6-b}(q)+\ch_{1,3k+9-b}(q),\tqs b=1,2}
+\label{chiR}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn10.gif"/></display-eqn>
+indicating that one may consider the indecomposable representations as ‘indecomposable
+combinations’ of Kac representations. The participating Kac representations are of course
+the ones whose characters appear in (<eqnref linkend="jstat256772eqn10">2.2</eqnref>). In the case of the indecomposable representation
+<inline-eqn><?TeX \R_{2k,b}^{1,0} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn20.gif"/></inline-eqn> (or <inline-eqn><?TeX \R_{a,3k}^{0,b} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn21.gif"/></inline-eqn>) of rank 2, our lattice analysis indicates that a Jordan cell is formed between every state in
+ch<sub>2<italic>k</italic>+1,<italic>b</italic></sub>(<italic>q</italic>) (or
+ch<sub><italic>a</italic>,3<italic>k</italic>+<italic>b</italic></sub>(<italic>q</italic>)) and its partner state
+in the second copy of ch<sub>2<italic>k</italic>+1,<italic>b</italic></sub>(<italic>q</italic>) 
+(or ch<sub><italic>a</italic>,3<italic>k</italic>+<italic>b</italic></sub>(<italic>q</italic>)), and nowhere else. In the case of the indecomposable representation <inline-eqn><?TeX \R_{2k,3}^{1,b} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn22.gif"/></inline-eqn> of rank 3, our lattice analysis indicates that for every quartet of matching states in the four copies
+of ch<sub>1,3<italic>k</italic>+<italic>b</italic></sub>(<italic>q</italic>), a rank-3 Jordan cell is formed along with a single state. It likewise appears that a Jordan
+cell of rank 2 is formed between every pair of matching states in the irreducible components
+with multiplicity 2.</p>
+        <p>The notation <inline-eqn><?TeX \R_{r,s}^{a,b} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn23.gif"/></inline-eqn> is meant to reflect simple properties of the higher-rank indecomposable representations.
+The pair of lower indices thus refers to a ‘symmetry point’ in the Kac table around which
+an indecomposable combination of Kac representations are located. The pair of upper
+indices indicates the distribution of these representations of which there are either two (if
+<italic>a</italic> = 0 or
+<italic>b</italic> = 0) or four (if <inline-eqn><?TeX a,b\neq 0 ?><inline-graphic format="GIF" filename="images/jstat256772ieqn24.gif"/></inline-eqn>). Their locations correspond to endpoints or corners, respectively, of a line segment or a rectangle with
+centre at (<italic>r</italic>,<italic>s</italic>). This structure is encoded neatly in the character expressions (<eqnref linkend="jstat256772eqn10">2.2</eqnref>).</p>
+        <p>It follows from the lattice that the fundamental fusion algebra may be described
+by separating the representations into a horizontal and a vertical part. Before
+discussing implications of this, we examine the two directions individually, and
+introduce some abbreviations. To compactify the fusion rules, we use the notation
+<display-eqn id="jstat256772eqn11" textype="equation" eqnnum="2.3"><?TeX \begin{equation}
+(r,-s) \equiv (-r,s) \equiv-(r,s),\tqs
+\R_{-r,s}^{a,b} \equiv \R_{r,-s}^{a,b}
+\equiv-\R_{r,s}^{a,b}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn11.gif"/></display-eqn>
+implying, in particular, that <inline-eqn><?TeX (0,s)\equiv (r,0)\equiv \R_{0,s}^{a,b}\equiv \R
+_{r,0}^{a,b}\equiv 0 ?><inline-graphic format="GIF" filename="images/jstat256772ieqn25.gif"/></inline-eqn>, and define the Kronecker delta combinations
+<display-eqn id="jstat256772eqn12" textype="equation" eqnnum="2.4"><?TeX \begin{equation}
+\eqalign{
+\fl \dkk=2-\delta_{j,|k-k'|}-\delta_{j,k+k'} \\
+\fl
+\ddkk=4-3\delta_{j,|k-k'|-1}-2\delta_{j,|k-k'|}-\delta_{j,|k-k'|+1}-\delta_{j,k+k'-1}-2\delta_{j,k+k'}-3\delta_{j,k+k'+1}\\
+\fl
+\dddkk=8-7\delta_{j,|k-k'|-2}-6\delta_{j,|k-k'|-1}-4\delta_{j,|k-k'|}-2\delta_{j,|k-k'|+1}-\delta_{j,|k-k'|+2}\\-\ \delta_{j,k+k'-2}-2\delta_{j,k+k'-1}-4\delta_{j,k+k'}-6\delta_{j,k+k'+1}-7\delta_{j,k+k'+2}.}
+\label{d24}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn12.gif"/></display-eqn>
+</p>
+      </sec-level2>
+      <sec-level2 id="jstat256772s2.2" label="2.2">
+        <heading>Horizontal fusion algebra</heading>
+        <p indent="no">The <italic>horizontal</italic> fusion algebra <inline-eqn><?TeX \bigl \langle (2,1)\bigr \rangle ?><inline-graphic format="GIF" filename="images/jstat256772ieqn26.gif"/></inline-eqn> is defined as the fusion algebra generated by the fundamental representation
+(2,1). We find that closure of this fusion algebra requires the inclusion of the Kac representations
+(2<italic>k</italic>,1) 
+and the rank-2 indecomposable representations <inline-eqn><?TeX \R_{2k,1}^{1,0} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn11.gif"/></inline-eqn>
+<display-eqn id="jstat256772eqn13" textype="equation" eqnnum="2.5"><?TeX \begin{equation}
+\langle(2,1)\rangle=\langle(2k,1), \R_{2k,1}^{1,0}; k\in\mathbb{N}
+\rangle.\label{A21}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn13.gif"/></display-eqn>
+We conjecture that the fusion algebra <inline-eqn><?TeX \bigl \langle (2,1)\bigr \rangle
+?><inline-graphic format="GIF" filename="images/jstat256772ieqn26.gif"/></inline-eqn> reads
+<display-eqn id="jstat256772eqn14" textype="equation" eqnnum="2.6"><?TeX \begin{equation}
+\eqalign{
+(2k,1)\otimes(2k',1)=\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}
+\R_{2j,1}^{1,0}\\
+(2k,1)\otimes \R_{2k',1}^{1,0}=\bigoplus_{j=|k-k'|}^{k+k'}
+\dkk(2j,1)\\
+\R_{2k,1}^{1,0}\otimes \R_{2k',1}^{1,0}=\bigoplus_{j=|k-k'|}^{k+k'}
+\dkk\R_{2j,1}^{1,0}.}
+\label{fusion21}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn14.gif"/></display-eqn>
+This fusion algebra does not contain an identity.
+</p>
+      </sec-level2>
+      <sec-level2 id="jstat256772s2.3" label="2.3">
+        <heading>Vertical fusion algebra</heading>
+        <p indent="no">The <italic>vertical</italic> fusion algebra <inline-eqn><?TeX \bigl \langle (1,2)\bigr \rangle ?><inline-graphic format="GIF" filename="images/jstat256772ieqn27.gif"/></inline-eqn> is defined as the fusion algebra generated by the fundamental representation
+(1,2). We find that closure of this fusion algebra requires the inclusion of the Kac representations
+(1,1) 
+and (1,3<italic>k</italic>) 
+and the rank-2 indecomposable representations <inline-eqn><?TeX \R_{2k,1}^{0,b} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn28.gif"/></inline-eqn>
+<display-eqn id="jstat256772eqn15" textype="equation" eqnnum="2.7"><?TeX \begin{equation}
+\bigl\langle(1,2)\bigr\rangle
+=\bigl\langle(1,1), (1,2), (1,3k), \R_{1,3k}^{0,b}; b=1,2;
+k\in\mathbb{N}\bigr\rangle.\label{A12}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn15.gif"/></display-eqn>
+Letting <italic>X</italic> 
+denote any of these representations, we conjecture that the fusion algebra <inline-eqn><?TeX \bigl \langle
+(1,2)\bigr \rangle ?><inline-graphic format="GIF" filename="images/jstat256772ieqn27.gif"/></inline-eqn> reads
+<display-eqn id="jstat256772eqn16" textype="eqnarray" eqnnum="2.8"><?TeX \begin{eqnarray}
+\fl
+(1,1)\otimes X=X\nonumber\\
+\fl
+(1,2)\otimes (1,2)=(1,1)\oplus(1,3)\nonumber\\
+\fl
+(1,2)\otimes (1,3k)=\R_{1,3k}^{0,1}\nonumber\\
+\fl
+(1,2)\otimes \R_{1,3k}^{0,1}=\R_{1,3k}^{0,2}\oplus2(1,3k)\nonumber\\
+\fl
+(1,2)\otimes \R_{1,3k}^{0,2}=\R_{1,3k}^{0,1}\oplus(1,3(k-1))\oplus
+(1,3(k+1))\nonumber\\
+\fl
+(1,3k)\otimes(1,3k')=
+\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}\bigl(\R_{1,3j}^{0,2}\oplus(1,3j)\bigr)\nonumber\\
+\fl
+(1,3k)\otimes \R_{1,3k'}^{0,1}=
+\Bigl(\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}2\R_{1,3j}^{0,1}\Bigr)
+\oplus\Bigl(\bigoplus_{j=|k-k'|, \mathrm{by} 2}^{k+k'}\dkk
+(1,3j)\Bigr)\nonumber\\
+\fl
+(1,3k)\otimes \R_{1,3k'}^{0,2}=
+\Bigl(\bigoplus_{j=|k-k'|, \mathrm{by} 2}^{k+k'}\dkk\R_{1,3j}^{0,1}\Bigr)
+\oplus\Bigl(\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}2(1,3j)\Bigr)\nonumber\\
+\fl
+\R_{1,3k}^{0,1}\otimes \R_{1,3k'}^{0,1}=
+\Bigl(\bigoplus_{j=|k-k'|, \mathrm{by} 2}^{k+k'}\dkk\R_{1,3j}^{0,1}\Bigr)
+\oplus\Bigl(\bigoplus_{j=|k-k'|+1, \mathrm{by} 
+2}^{k+k'-1}\bigl(2\R_{1,3j}^{0,2}\oplus4(1,3j)\bigr)\Bigr)\nonumber\\
+\fl
+\R_{1,3k}^{0,1}\otimes \R_{1,3k'}^{0,2}=
+\Bigl(\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}2\R_{1,3j}^{0,1}\Bigr)
+\oplus
+\Bigl(\bigoplus_{j=|k-k'|, \mathrm{by} 2}^{k+k'}\dkk\bigl(\R_{1,3j}^{0,2}
+\oplus2(1,3j)\bigr)\Bigr)\nonumber\\
+\fl
+\R_{1,3k}^{0,2}\otimes R_{1,3k'}^{0,2}=
+\Bigl(\bigoplus_{j=|k-k'|, \mathrm{by} 2}^{k+k'}\dkk\R_{1,3j}^{0,1}\Bigr)
+\oplus\Bigl(\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}2\R_{1,3j}^{0,2}\Bigr)\nonumber\\
+\oplus\ \Bigl(\bigoplus_{j=|k-k'|-1, \mathrm{by} 2}^{k+k'+1}
+\ddkk(1,3j)\Bigr).\label{fusion12}
+\end{eqnarray} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn16.gif"/></display-eqn>
+It is noted that for <italic>j</italic> = |<italic>k</italic>−<italic>k</italic>′|−1 
+(mod 2), as in <inline-eqn><?TeX \R_{1,3k}^{0,2}\otimes R_{1,3k'}^{0,2} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn29.gif"/></inline-eqn>, the fusion multiplicity δ<sub><italic>j</italic>,{<italic>k</italic>,<italic>k</italic>′}</sub><sup>(4)</sup> 
+reduces to 4−3δ<sub><italic>j</italic>,|<italic>k</italic>−<italic>k</italic>′|−1</sub>−δ<sub><italic>j</italic>,|<italic>k</italic>−<italic>k</italic>′|+1</sub>−δ<sub><italic>j</italic>,<italic>k</italic>+<italic>k</italic>′−1</sub>−3δ<sub><italic>j</italic>,<italic>k</italic>+<italic>k</italic>′+1</sub>. The
+representation (1,1) 
+is the identity of this vertical fusion algebra.
+</p>
+      </sec-level2>
+      <sec-level2 id="jstat256772s2.4" label="2.4">
+        <heading>Comparison with Read and Saleur</heading>
+        <p indent="no">It is verified that
+<display-eqn id="jstat256772eqn17" textype="equation" eqnnum="2.9"><?TeX \begin{equation}
+\bigl\langle(1,1),(1,6k-3),\R_{1,6k}^{0,1},
+\R_{1,6k-3}^{0,2}; k\in\mathbb{N}\bigr\rangle
+\label{subvert}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn17.gif"/></display-eqn>
+is a subalgebra of the vertical fusion algebra. It corresponds to the fusion algebra of critical
+percolation discussed by Read and Saleur in [<cite linkend="jstat256772bib48">48</cite>]. To appreciate this, we
+provide a dictionary for translating the representations generating the subalgebra (<eqnref linkend="jstat256772eqn17">2.9</eqnref>) into
+the notation used in [<cite linkend="jstat256772bib48">48</cite>]
+<display-eqn id="jstat256772eqn18" textype="equation" eqnnum="2.10"><?TeX \begin{equation}
+\eqalign{
+(1,1) \longleftrightarrow \R_0\\
+(1,2j+1) \longleftrightarrow \R_j,\tqs j\equiv1 (\mathrm{mod} 3)\\
+\R_{1,2j-1}^{0,2} \longleftrightarrow \R_j,\tqs j\equiv2 (\mathrm{mod} 3)\\
+\R_{1,2j}^{0,1} \longleftrightarrow \R_j,\tqs j\equiv0 (\mathrm{mod} 3)}
+\label{dictRS}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn18.gif"/></display-eqn>
+where <inline-eqn><?TeX j\in \mathbb {N} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn30.gif"/></inline-eqn>. We find that their fusion algebra is in agreement with the subalgebra (<eqnref linkend="jstat256772eqn17">2.9</eqnref>) of the vertical
+fusion algebra <inline-eqn><?TeX \bigl \langle (1,2)\bigr \rangle ?><inline-graphic format="GIF" filename="images/jstat256772ieqn27.gif"/></inline-eqn> which itself is a subalgebra of the fundamental fusion algebra <inline-eqn><?TeX \bigl \langle
+(2,1),(1,2)\bigr \rangle ?><inline-graphic format="GIF" filename="images/jstat256772ieqn10.gif"/></inline-eqn> of critical percolation.
+</p>
+      </sec-level2>
+      <sec-level2 id="jstat256772s2.5" label="2.5">
+        <heading>Fundamental fusion algebra</heading>
+        <p indent="no">It follows from the lattice description that the fundamental fusion algebra <inline-eqn><?TeX \bigl \langle
+(2,1),(1,2)\bigr \rangle ?><inline-graphic format="GIF" filename="images/jstat256772ieqn10.gif"/></inline-eqn> is both associative and commutative. As already announced, it also follows from the
+lattice that the representations may be separated into a horizontal and a vertical part. For
+the Kac representations, this implies
+<display-eqn id="jstat256772eqn19" textype="equation" eqnnum="2.11"><?TeX \begin{equation}
+(r,s)=(r,1)\otimes(1,s).
+\label{r11s}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn19.gif"/></display-eqn>
+For the purposes of examining the fundamental fusion algebra, we introduce the
+representations
+<display-eqn id="jstat256772eqn20" textype="equation" eqnnum="2.12"><?TeX \begin{equation}
+\eqalign{ (2k,3k')=(2k,1)\otimes(1,3k'),\tqs
+\R_{2k,3k'}^{1,0}=\R_{2k,1}^{1,0}\otimes(1,3k')\\
+\R_{2k,3k'}^{0,b}=(2k,1)\otimes \R_{1,3k'}^{0,b},\tqs
+\R_{2k,3k'}^{1,b}=\R_{2k,1}^{1,0}\otimes \R_{1,3k'}^{0,b}}
+\label{keqnk}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn20.gif"/></display-eqn>
+thus defined as the result of certain simple fusions of ‘a horizontal and a vertical
+representation’. As we will show elsewhere, these representations may be decomposed in
+terms of the representations listed in (<eqnref linkend="jstat256772eqn9">2.1</eqnref>)
+<display-eqn id="jstat256772eqn21" textype="equation" eqnnum="2.13"><?TeX \begin{equation}
+\eqalign{
+(2k,3k')=\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}(2j,3),\tqs
+\R_{2k,3k'}^{1,0}=\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}\R_{2j,3}^{1,0}\\
+\R_{2k,3k'}^{0,b}=\bigoplus_{j=|k-k'|+1, \mathrm{by} 
+2}^{k+k'-1}\R_{2,3j}^{0,b},\tqs
+\R_{2k,3k'}^{1,b}=\bigoplus_{j=|k-k'|+1, \mathrm{by} 2}^{k+k'-1}\R_{2j,3}^{1,b}
+}
+\label{keqnkexp}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn21.gif"/></display-eqn>
+with
+<display-eqn id="jstat256772eqn22" textype="equation" eqnnum="2.14"><?TeX \begin{equation}
+\fl
+(2k,3k')=(2k',3k),\quad \R_{2k,3k'}^{1,0}=\R_{2k',3k}^{1,0},\quad
+\R_{2k,3k'}^{0,b}=\R_{2k',3k}^{0,b},\quad
+\R_{2k,3k'}^{1,b}=\R_{2k',3k}^{1,b}
+\label{RequalR}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn22.gif"/></display-eqn>
+as special identifications extending the set (<eqnref linkend="jstat256772eqn7">1.7</eqnref>). The fundamental fusion algebra is now
+obtained by simply applying (<eqnref linkend="jstat256772eqn20">2.12</eqnref>) and (<eqnref linkend="jstat256772eqn21">2.13</eqnref>) to the fusion of a pair of representations
+in (<eqnref linkend="jstat256772eqn9">2.1</eqnref>). We illustrate this with a general but somewhat formal evaluation where we let
+<inline-eqn><?TeX A_{r,s}=\bar {a}_{r,1}\otimes a_{1,s} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn31.gif"/></inline-eqn>, <inline-eqn><?TeX B_{r',s'}=\bar {b}_{r',1}\otimes b_{1,s'} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn32.gif"/></inline-eqn>, <inline-eqn><?TeX \bar {a}_{r,1}\otimes \bar {b}_{r',1}=\bigoplus_{r''}\bar {c}_{r'',1} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn33.gif"/></inline-eqn> and <inline-eqn><?TeX a_{1,s}\otimes b_{1,s'}=\bigoplus_{s''}c_{1,s''} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn34.gif"/></inline-eqn>. Our fusion prescription now yields
+<display-eqn id="jstat256772eqn23" textype="eqnarray" eqnnum="2.15"><?TeX \begin{eqnarray}
+\fl
+A_{r,s}\otimes B_{r',s'}=\Bigl(\bar{a}_{r,1}\otimes a_{1,s}\Bigr)\otimes
+\Bigl(\bar{b}_{r',1}\otimes b_{1,s'}\Bigr)
+=\Bigl(\bar{a}_{r,1}\otimes\bar{b}_{r',1}\Bigr)\otimes
+\Bigl(a_{1,s}\otimes b_{1,s'}\Bigr)\nonumber\\
+\eql \Bigl(\bigoplus_{r''}\bar{c}_{r'',1}\Bigr)\otimes\Bigl(\bigoplus_{s''}c_{1,s''}\Bigr)
+=\bigoplus_{r'',s''}C_{r'',s''}
+\label{rs}
+\end{eqnarray} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn23.gif"/></display-eqn>
+where <inline-eqn><?TeX C_{r'',s''}=\bar {c}_{r'',1}\otimes c_{1,s''} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn35.gif"/></inline-eqn>. Using this, the fundamental fusion algebra <inline-eqn><?TeX \bigl \langle (2,1),(1,2)\bigr \rangle
+?><inline-graphic format="GIF" filename="images/jstat256772ieqn10.gif"/></inline-eqn> follows straightforwardly from the fusion algebras <inline-eqn><?TeX \bigl \langle (2,1)\bigr \rangle
+?><inline-graphic format="GIF" filename="images/jstat256772ieqn26.gif"/></inline-eqn> and <inline-eqn><?TeX \bigl \langle (1,2)\bigr \rangle ?><inline-graphic format="GIF" filename="images/jstat256772ieqn27.gif"/></inline-eqn> together with (<eqnref linkend="jstat256772eqn20">2.12</eqnref>) and (<eqnref linkend="jstat256772eqn21">2.13</eqnref>). In particular, it follows readily that the Kac representation
+(1,1) 
+is the <italic>identity</italic> of the fundamental fusion algebra <inline-eqn><?TeX \bigl \langle (2,1),(1,2)\bigr
+\rangle ?><inline-graphic format="GIF" filename="images/jstat256772ieqn10.gif"/></inline-eqn>.</p>
+        <p>In this brief communication, we will only apply this fusion prescription explicitly to the
+fusion of the two rank-2 indecomposable representations <inline-eqn><?TeX \R_{2k,2}^{1,0} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn12.gif"/></inline-eqn> and <inline-eqn><?TeX \R_{2,3k'}^{0,2} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn36.gif"/></inline-eqn>
+<display-eqn id="jstat256772eqn24" textype="eqnarray" eqnnum="2.16"><?TeX \begin{eqnarray}
+\fl \R_{2k,2}^{1,0}\otimes\R_{2,3k'}^{0,2}=
+\Bigl(\R_{2k,1}^{1,0}\otimes (1,2)\Bigr)
+\otimes\Bigl((2,1)\otimes \R_{1,3k'}^{0,2}\Bigr)\nonumber\\
+\eql \Bigl(\R_{2k,1}^{1,0}\otimes (2,1)\Bigr)\otimes\Bigl((1,2)\otimes
+\R_{1,3k'}^{0,2}\Bigr)\nonumber\\
+\eql \Bigl((2(k-1),1)\oplus2(2k,1)\oplus(2(k+1),1)\Bigr)\nonumber\\
+\otimes\ \Bigl(\R_{1,3k'}^{0,1}
+\oplus
+(1,3(k'-1))\oplus(1,3(k'+1))\Bigr)\nonumber\\
+\eql \Bigl(\bigoplus_{j=|k-k'|}^{k+k'}\dkk\R_{2,3j}^{0,1}\Bigr)
+\oplus\Bigl(\bigoplus_{j=|k-k'|-1}^{k+k'+1}\delta_{j,\{k,k'\}}^{(4)}(2j,3)\Bigr)
+\label{ex22}
+\end{eqnarray} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn24.gif"/></display-eqn>
+and to the fusion of two rank-3 indecomposable representations
+<display-eqn id="jstat256772eqn25" textype="eqnarray" eqnnum="2.17"><?TeX \begin{eqnarray}
+\fl
+\R_{2k,3}^{1,1}\otimes \R_{2k',3}^{1,1}=\Bigl(\R_{2k,1}^{1,0}\otimes
+\R_{1,3}^{0,1}\Bigr)
+\otimes\Bigl(\R_{2k',1}^{1,0}\otimes \R_{1,3}^{0,1}\Bigr)
+=\Bigl(\R_{2k,1}^{1,0}\otimes \R_{2k',1}^{1,0}\Bigr)
+\otimes\Bigl(\R_{1,3}^{0,1}\otimes \R_{1,3}^{0,1}\Bigr)\nonumber\\
+\eql \Bigl(\bigoplus_{j=|k-k'|}^{k+k'}\dkk\R_{2j,1}^{1,0}\Bigr)
+\otimes\Bigl(\R_{1,6}^{0,1}\oplus2\R_{1,3}^{0,2}\oplus4(1,3)\Bigr)\nonumber\\
+\eql \Bigl(\bigoplus_{j=|k-k'|-1}^{k+k'+1}\ddkk\R_{2j,3}^{1,1}\Bigr)
+\oplus\Bigl(\bigoplus_{j=|k-k'|}^{k+k'}\dkk\bigl(2\R_{2j,3}^{1,2}\oplus4\R_{2j,3}^{1,0}\bigr)\Bigr)
+\label{ex3311}
+\end{eqnarray} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn25.gif"/></display-eqn>
+and likewise
+<display-eqn id="jstat256772eqn26" textype="equation" eqnnum="2.18"><?TeX \begin{equation}
+\eqalign{
+\fl
+\R_{2k,3}^{1,1}\otimes \R_{2k',3}^{1,2}=
+\Bigl(\bigoplus_{j=|k-k'|}^{k+k'}\dkk2\R_{2j,3}^{1,1}\Bigr)
+\oplus\Bigl(\bigoplus_{j=|k-k'|-1}^{k+k'+1}\ddkk\bigl(\R_{2j,3}^{1,2}\oplus2\R_{2j,3}^{1,0}\bigr)\Bigr)
+\\
+\fl
+\R_{2k,3}^{1,2}\otimes \R_{2k',3}^{1,2}=
+\Bigl(\bigoplus_{j=|k-k'|-1}^{k+k'+1}\ddkk\R_{2j,3}^{1,1}\Bigr)
+\oplus\Bigl(\bigoplus_{j=|k-k'|}^{k+k'}\dkk2\R_{2j,3}^{1,2}\Bigr)\nonumber\\
+\oplus\Bigl(\bigoplus_{j=|k-k'|-2}^{k+k'+2}\dddkk\R_{2j,3}^{1,0}\Bigr).}
+\label{ex3312}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn26.gif"/></display-eqn></p>
+        <p>Several subalgebras of the fundamental fusion algebra are easily identified.
+An interesting example is the one generated by the set of rank-3
+indecomposable representations and the rank-2 indecomposable representations
+<italic>R</italic><sub>2<italic>k</italic>,3</sub><sup>1,0</sup>.
+Two other noteworthy subalgebras are the ones generated by all the representations in (<eqnref linkend="jstat256772eqn9">2.1</eqnref>) except
+(1,2) or
+(1,1) 
+and (1,2).</p>
+        <p>We wish to point out that, at the level of Kac characters, the horizontal, vertical and
+fundamental fusion algebras are all compatible with the <inline-eqn><?TeX s\ell (2) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn1.gif"/></inline-eqn> structure
+<display-eqn id="jstat256772eqn27" textype="equation" eqnnum="2.19"><?TeX \begin{equation}
+\phi_n\otimes\phi_{n'}=
+\bigoplus_{m=|n-n'|+1, \mathrm{by} 2}^{n+n'-1}\phi_m.
+\label{sl2}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn27.gif"/></display-eqn>
+This is straightforward to establish for the horizontal and vertical fusion algebras as
+illustrated by the fusion <inline-eqn><?TeX \R_{2k,1}^{1,0}\otimes \R_{2k',1}^{1,0} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn37.gif"/></inline-eqn> where (<eqnref linkend="jstat256772eqn27">2.19</eqnref>) yields
+<display-eqn id="jstat256772eqn28" textype="eqnarray" eqnnum="2.20"><?TeX \begin{eqnarray}
+\fl
+\chit[\R_{2k,1}^{1,0}\otimes\R_{2k',1}^{1,0}](q)=
+\bigl(\chit_{2k-1,1}(q)+\chit_{2k+1,1}(q)\bigr)\otimes\bigl(\chit_{2k'-1,1}(q)+\chit_{2k'+1,1}(q)\bigr)\nonumber\\
+\eql \sum_{j=|2k-2k'|+1, \mathrm{by} 2}^{2(k+k')-3}\chit_{j,1}(q)
++\sum_{j=|2k-2k'-2|+1, \mathrm{by} 2}^{2(k+k')-1}\chit_{j,1}(q)\nonumber\\
++\ \sum_{j=|2k-2k'+2|+1, \mathrm{by} 2}^{2(k+k')-1}\chit_{j,1}(q)
++\sum_{j=|2k-2k'|+1, \mathrm{by} 2}^{2(k+k')+1}\chit_{j,1}(q)\nonumber\\
+\eql \sum_{j=|k-k'|}^{k+k'}\dkk\bigl(\chit_{2j-1,1}(q)+\chit_{2j+1,1}(q)\bigr)
+\end{eqnarray} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn28.gif"/></display-eqn>
+while
+<display-eqn id="jstat256772eqn29" textype="eqnarray" eqnnum="2.21"><?TeX \begin{eqnarray}
+\chit[\R_{2k,1}^{1,0}\otimes\R_{2k',1}^{1,0}](q) &=
+\sum_{j=|k-k'|}^{k+k'}\dkk\chit[\R_{2j,1}^{1,0}](q)\nonumber\\
+&=\sum_{j=|k-k'|}^{k+k'}\dkk
+\bigl(\chit_{2j-1,1}(q)+\chit_{2j+1,1}(q)\bigr).
+\end{eqnarray} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn29.gif"/></display-eqn>
+The separation into a horizontal and a vertical part (<eqnref linkend="jstat256772eqn19">2.11</eqnref>) and (<eqnref linkend="jstat256772eqn20">2.12</eqnref>) then implies that
+the characters of the fundamental fusion algebra exhibit two independent <inline-eqn><?TeX s\ell
+(2) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn1.gif"/></inline-eqn> structures as in (<eqnref linkend="jstat256772eqn27">2.19</eqnref>)—one in each direction. This is clearly reminiscent of the fusion
+algebras of rational (minimal) models where the <inline-eqn><?TeX s\ell (2) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn1.gif"/></inline-eqn> structures are carried by the (characters of the) <italic>irreducible</italic> representations. Here, on the
+other hand, the <inline-eqn><?TeX s\ell (2) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn1.gif"/></inline-eqn> structures are tied to the <italic>Kac</italic> representations but, due to the higher-rank indecomposable
+nature of some other representations, only at the level of their <italic>characters</italic>.
+</p>
+      </sec-level2>
+      <sec-level2 id="jstat256772s2.6" label="2.6">
+        <heading>Comparison with Eberle and Flohr</heading>
+        <p indent="no">To facilitate a comparison with [<cite linkend="jstat256772bib45">45</cite>] by Eberle and Flohr, we provide a partial
+dictionary relating our notation to the one used in [<cite linkend="jstat256772bib45">45</cite>]. In the orders
+specified, the translation reads
+<display-eqn id="jstat256772eqn30" textype="equation" eqnnum="2.22"><?TeX \begin{equation}
+\eqalign{
+&\fl \{(2k,b),(1,3k)\}
+\longleftrightarrow\{{\cal V}(\D_{2k,b}),{\cal V}(\D_{1,3k})\},\tqs
+b=1,2,3;\quad k\in\mathbb{N}\\
+&\fl \{(1,1),(1,2)\}
+\longleftrightarrow\{\R^{(1)}(0)_{2},\R^{(1)}(0)_{1}\}\\
+&\fl \{\R_{2,1}^{1,0},\R_{4,1}^{1,0},\R_{6,1}^{1,0},\R_{8,1}^{1,0}\}
+\longleftrightarrow\{\R^{(2)}(0,2)_{7},\R^{(2)}(2,7),\R^{(2)}(7,15),\R^{(2)}(15,26)\}\\
+&\fl
+\{\R_{2,2}^{1,0},\R_{4,2}^{1,0},\R_{6,2}^{1,0},\R_{8,2}^{1,0}\}
+\longleftrightarrow\{\R^{(2)}(0,1)_{5},\R^{(2)}(1,5),\R^{(2)}(5,12),\R^{(2)}(12,22)\}\\
+&\fl
+\{\R_{2,3}^{1,0},\R_{4,3}^{1,0},\R_{6,3}^{1,0},\R_{8,3}^{1,0}\}
+\longleftrightarrow\{\R^{(2)}(1/3,1/3),\R^{(2)}(1/3,10/3),\R^{(2)}(10/3,28/3),\\
+& \R^{(2)}(28/3,55/3)\}\\
+& \fl
+\{\R_{1,3}^{0,1},\R_{1,6}^{0,1},\R_{1,9}^{0,1},\R_{1,12}^{0,1}\}
+\longleftrightarrow\{\R^{(2)}(0,1)_{7},\R^{(2)}(2,5),\R^{(2)}(7,12),\R^{(2)}(15,22)\}\\
+& \fl
+\{\R_{2,3}^{0,1},\R_{2,6}^{0,1},\R_{2,9}^{0,1},\R_{2,12}^{0,1}\}
+\longleftrightarrow\{\R^{(2)}(1/8,1/8),\R^{(2)}(5/8,21/8),\R^{(2)}(33/8,65/8),\\
+& \R^{(2)}(85/8,133/8)\}\\
+& \fl
+\{\R_{1,3}^{0,2},\R_{1,6}^{0,2},\R_{1,9}^{0,2},\R_{1,12}^{0,2}\}
+\longleftrightarrow\{\R^{(2)}(0,2)_{5},\R^{(2)}(1,7),\R^{(2)}(5,15),\R^{(2)}(12,26)\}\\
+& \fl
+\{\R_{2,3}^{0,2},\R_{2,6}^{0,2},\R_{2,9}^{0,2},\R_{2,12}^{0,2}\}
+\longleftrightarrow\{\R^{(2)}(5/8,5/8),\R^{(2)}(1/8,33/8),\R^{(2)}(21/8,85/8),\\
+& \R^{(2)}(65/8,161/8)\}\\
+& \fl
+\{\R_{2,3}^{1,1},\R_{4,3}^{1,1},\R_{6,3}^{1,1},\R_{8,3}^{1,1}\}
+\longleftrightarrow\{\R^{(3)}(0,0,1,1),\R^{(3)}(0,1,2,5),\R^{(3)}(2,5,7,12),\\
+& \R^{(3)}(7,12,15,22)\}\\
+& \fl
+\{\R_{2,3}^{1,2},\R_{4,3}^{1,2},\R_{6,3}^{1,2},\R_{8,3}^{1,2}\}
+\longleftrightarrow\{\R^{(3)}(0,0,2,2),\R^{(3)}(0,1,2,7),\R^{(3)}(1,5,7,15),\\
+& \R^{(3)}(5,12,15,26)\}.}
+\label{dictEF}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn30.gif"/></display-eqn>
+The only three fusions of rank-3 indecomposable representations considered in [<cite linkend="jstat256772bib45">45</cite>] correspond to
+<display-eqn id="jstat256772eqn31" textype="equation" eqnnum="2.23"><?TeX \begin{equation}
+\eqalign{
+\fl
+\R_{2,3}^{1,1}\otimes \R_{2,3}^{1,1}=\R_{2,3}^{1,1}\oplus2\R_{4,3}^{1,1}\oplus
+\R_{6,3}^{1,1}\oplus4\R_{2,3}^{1,2}\oplus2\R_{4,3}^{1,2}
+\oplus8\R_{2,3}^{1,0}\oplus4\R_{4,3}^{1,0} \\
+\fl
+\R_{2,3}^{1,1}\otimes \R_{2,3}^{1,2}=4\R_{2,3}^{1,1}\oplus2\R_{4,3}^{1,1}\oplus
+\R_{2,3}^{1,2}\oplus2\R_{4,3}^{1,2}\oplus\R_{6,3}^{1,2}\oplus2\R_{2,3}^{1,0}\oplus
+4\R_{4,3}^{1,0}\oplus2\R_{6,3}^{1,0} \\
+\fl
+\R_{2,3}^{1,2}\otimes \R_{2,3}^{1,2}=\R_{2,3}^{1,1}\oplus2\R_{4,3}^{1,1}\oplus
+\R_{6,3}^{1,1}\oplus4\R_{2,3}^{1,2}\oplus2\R_{4,3}^{1,2}\oplus2\R_{2,3}^{1,0}\\
+\oplus\ 2\R_{4,3}^{1,0}\oplus2\R_{6,3}^{1,0}\oplus\R_{8,3}^{1,0}.}
+\label{REF}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn31.gif"/></display-eqn>
+Likewise, the only fusion of the type (<eqnref linkend="jstat256772eqn24">2.16</eqnref>) considered in [<cite linkend="jstat256772bib45">45</cite>] corresponds to
+<display-eqn id="jstat256772eqn32" textype="equation" eqnnum="2.24"><?TeX \begin{equation}
+\R_{2,2}^{1,0}\otimes \R_{2,3}^{0,2}=
+2\R_{2,3}^{0,1}\oplus\R_{4,3}^{0,1}
+\oplus(2,3)\oplus2(4,3)\oplus(6,3).
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn32.gif"/></display-eqn>
+We find that our fusion rules reduce to the many examples examined by Eberle and Flohr [<cite linkend="jstat256772bib45">45</cite>]. This confirms their observation that indecomposable representations of
+rank 3 are required. Our results also demonstrate that the fusion algebra closes
+without the introduction of indecomposable representations of higher rank than
+3.</p>
+        <p>Eberle and Flohr also presented an algorithm [<cite linkend="jstat256772bib45">45</cite>] for computing fusion products in the augmented
+<italic>c</italic><sub><italic>p</italic>,<italic>p</italic>′</sub> models, in particular
+in the augmented <italic>c</italic><sub>2,3</sub> = 0 
+model. Their algorithm is rooted in the many explicit examples examined in their paper and yields
+fusion rules which are both commutative and associative. Considering the affirmative comparison
+of our fusion rules with their examples, we believe that their algorithm for the augmented
+<italic>c</italic><sub>2,3</sub> 
+model yields results equivalent to our explicit fusion rules for critical percolation <inline-eqn><?TeX {\cal
+LM}(2,3) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn4.gif"/></inline-eqn>.
+</p>
+      </sec-level2>
+      <sec-level2 id="jstat256772s2.7" label="2.7">
+        <heading>Kac representations revisited</heading>
+        <p indent="no">As already indicated and also discussed in [<cite linkend="jstat256772bib45">45</cite>], the two representations
+(1,1) 
+and (1,2) 
+(there denoted <inline-eqn><?TeX \R^{(1)}(0)_{2} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn38.gif"/></inline-eqn> and <inline-eqn><?TeX \R^{(1)}(0)_{1} ?><inline-graphic format="GIF" filename="images/jstat256772ieqn39.gif"/></inline-eqn>, respectively) are not fully reducible. We quote Eberle and Flohr:
+<quote><p>On the other hand, the representations <inline-eqn><?TeX \R^{(2)}(0,1)_5 ?><inline-graphic format="GIF" filename="images/jstat256772ieqn40.gif"/></inline-eqn> and <inline-eqn><?TeX \R^{(2)}(0,1)_7 ?><inline-graphic format="GIF" filename="images/jstat256772ieqn41.gif"/></inline-eqn> contain a state with weight 0 which generates a subrepresentation <inline-eqn><?TeX \R^{(1)}(0)_1 ?><inline-graphic format="GIF" filename="images/jstat256772ieqn39.gif"/></inline-eqn>. This subrepresentation is indecomposable but neither is it irreducible nor does it exhibit
+any higher-rank behaviour. It only exists as a subrepresentation as it needs the embedding
+into the rank 2 representation in order not to have null-vectors at both levels 1 and 2. But,
+nevertheless, being a subrepresentation of a representation in the spectrum it has to be
+included into the spectrum, too.</p></quote>
+This is corroborated by our findings. From the lattice, the two representations
+(1,1) 
+and (1,2) 
+arise in the conformal scaling limit from very simple and natural boundary conditions. This
+supports our assertion that these Kac representations are indeed physical. Furthermore,
+since one is immediately faced with problems when attempting to include their irreducible
+components
+<display-eqn id="jstat256772eqn33" textype="equation" eqnnum="2.25"><?TeX \begin{equation}
+(1,1):\, \{{\cal V}(0),{\cal V}(2)\},\tqs
+(1,2):\, \{{\cal V}(0),{\cal V}(1)\}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn33.gif"/></display-eqn>
+in the fusion algebra, we advocate to consider fusion algebras of critical percolation generated
+from Kac representations and indecomposable representations of higher rank. The only
+irreducible representations appearing in these fusion algebras are therefore themselves Kac
+representations, that is, they belong to the set of irreducible Kac representations
+{(2<italic>k</italic>,1),(2<italic>k</italic>,2),(2<italic>k</italic>,3) = (2,3<italic>k</italic>),(1,3<italic>k</italic>)}. Natural extensions of the horizontal, vertical and fundamental fusion algebras involve <italic>all</italic>
+the associated Kac representations and read
+<display-eqn id="jstat256772eqn34" textype="equation" eqnnum="2.26"><?TeX \begin{equation}
+\fl
+\bigl\langle(2,1),(3,1)\bigr\rangle,\tqs
+\bigl\langle(1,2),(1,4)\bigr\rangle,\tqs
+\bigl\langle(2,1),(3,1),(1,2),(1,4)\bigr\rangle
+\label{full}
+\end{equation} ?><eqn-graphic format="GIF" filename="images/jstat256772eqn34.gif"/></display-eqn>
+respectively. They will be addressed elsewhere. Further evidence in support of the
+relevance of Kac representations in logarithmic CFT may be found in [<cite linkend="jstat256772bib50">50</cite>]
+where quotient modules with characters (<eqnref linkend="jstat256772eqn2">1.2</eqnref>) are found to arise naturally in the limit of
+certain sequences of minimal models.
+</p>
+      </sec-level2>
+    </sec-level1>
+    <sec-level1 id="jstat256772s3" label="3">
+      <heading>Conclusion</heading>
+      <p indent="no">We have presented explicit general conjectures for the chiral fusion algebras of critical
+percolation, and we have exhibited dictionaries to facilitate comparison of our results with
+the particular results of Eberle and Flohr [<cite linkend="jstat256772bib45">45</cite>] and Read and Saleur [<cite linkend="jstat256772bib48">48</cite>]. Importantly, we observe the appearance of rank-3 indecomposable
+representations in agreement with Eberle and Flohr. Our fundamental fusion algebra is
+built from independent horizontal and vertical algebras that, at the level of characters,
+respect an underlying <inline-eqn><?TeX s\ell (2) ?><inline-graphic format="GIF" filename="images/jstat256772ieqn1.gif"/></inline-eqn> structure. The identity (1,1) 
+of this fundamental fusion algebra is a reducible yet indecomposable Kac representation of
+rank 1.</p>
+      <p>Our reported fusion rules are supported by extensive numerical investigations of an
+integrable lattice model of critical percolation. These lattice results will be presented
+elsewhere. We also hope to discuss elsewhere the full fusion algebra encompassing all of
+the Kac representations as well as extensions to general logarithmic minimal
+models.</p>
+    </sec-level1>
+    <acknowledgment>
+      <heading>Acknowledgments</heading>
+      <p indent="no">This work was supported by the Australian Research Council. JR thanks Andreas Ludwig
+for encouraging discussions at the KITP in November 2006.
+</p>
+    </acknowledgment>
+  </body>
+  <back>
+    <references>
+      <heading>References</heading>
+      <reference-list type="numeric">
+        <book-ref id="jstat256772bib1" num="1">
+          <authors>
+            <au>
+              <second-name>Kesten</second-name>
+              <first-names>H</first-names>
+            </au>
+          </authors>
+          <year>1982</year>
+          <book-title>Percolation Theory for Mathematicians</book-title>
+          <publication>
+            <place>Boston, MA</place>
+            <publisher>Birkhäuser</publisher>
+          </publication>
+        </book-ref>
+        <book-ref id="jstat256772bib2" num="2">
+          <authors>
+            <au>
+              <second-name>Grimmet</second-name>
+              <first-names>G</first-names>
+            </au>
+          </authors>
+          <year>1989</year>
+          <book-title>Percolation</book-title>
+          <publication>
+            <place>New York</place>
+            <publisher>Springer</publisher>
+          </publication>
+        </book-ref>
+        <book-ref id="jstat256772bib3" num="3">
+          <authors>
+            <au>
+              <second-name>Stauffer</second-name>
+              <first-names>D</first-names>
+            </au>
+            <au>
+              <second-name>Aharony</second-name>
+              <first-names>A</first-names>
+            </au>
+          </authors>
+          <year>1992</year>
+          <book-title>Introduction to Percolation Theory</book-title>
+          <publication>
+            <place>London</place>
+            <publisher>Taylor and Francis</publisher>
+          </publication>
+        </book-ref>
+        <journal-ref id="jstat256772bib4" num="4">
+          <authors>
+            <au>
+              <second-name>Broadbent</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Hammersley</second-name>
+              <first-names>J</first-names>
+            </au>
+          </authors>
+          <year>1957</year>
+          <jnl-title>Proc. Camb. Phil. Soc.</jnl-title>
+          <volume>53</volume>
+          <pages>629</pages>
+        </journal-ref>
+        <journal-ref id="jstat256772bib5" num="5">
+          <authors>
+            <au>
+              <second-name>Cardy</second-name>
+              <first-names>J L</first-names>
+            </au>
+          </authors>
+          <year>1992</year>
+          <jnl-title>J. Phys. A: Math. Gen.</jnl-title>
+          <volume>25</volume>
+          <pages>L201</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/0305-4470/25/4/009</cr_doi>
+            <cr_issn type="print">03054470</cr_issn>
+            <cr_issn type="electronic">13616447</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib6" num="6">
+          <authors>
+            <au>
+              <second-name>Smirnov</second-name>
+              <first-names>S</first-names>
+            </au>
+          </authors>
+          <year>2001</year>
+          <jnl-title>C. R. Acad Sci. Paris</jnl-title>
+          <volume>333</volume>
+          <pages>239</pages>
+        </journal-ref>
+        <journal-ref id="jstat256772bib7" num="7">
+          <authors>
+            <au>
+              <second-name>Schramm</second-name>
+              <first-names>O</first-names>
+            </au>
+          </authors>
+          <year>2000</year>
+          <jnl-title>Isr. J. Math.</jnl-title>
+          <volume>118</volume>
+          <pages>221</pages>
+        </journal-ref>
+        <journal-ref id="jstat256772bib8" num="8">
+          <authors>
+            <au>
+              <second-name>Lawler</second-name>
+              <first-names>G F</first-names>
+            </au>
+            <au>
+              <second-name>Schramm</second-name>
+              <first-names>O</first-names>
+            </au>
+            <au>
+              <second-name>Werner</second-name>
+              <first-names>W</first-names>
+            </au>
+          </authors>
+          <year>2001</year>
+          <jnl-title>Acta Math.</jnl-title>
+          <volume>187</volume>
+          <pages>237</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1007/BF02392618</cr_doi>
+            <cr_issn type="print">00015962</cr_issn>
+            <cr_issn type="electronic">18712509</cr_issn>
+          </crossref>
+        </journal-ref>
+        <conf-ref id="jstat256772bib9" num="9">
+          <authors>
+            <au>
+              <second-name>Werner</second-name>
+              <first-names>W</first-names>
+            </au>
+          </authors>
+          <year>2004</year>
+          <art-title>Random planar curves and Schramm–Loewner evolutions</art-title>
+          <conf-title>Proc. 32nd Probability Summer School (St Flour, 2002)</conf-title>
+          <series>Lecture Notes in Mathematics <volume>vol 1840</volume></series>
+          <publication>
+            <place>Berlin</place>
+            <publisher>Springer</publisher>
+          </publication>
+          <pages>pp 107–95</pages>
+        </conf-ref>
+        <journal-ref id="jstat256772bib10" num="10">
+          <authors>
+            <au>
+              <second-name>Rohde</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Schramm</second-name>
+              <first-names>O</first-names>
+            </au>
+          </authors>
+          <year>2005</year>
+          <jnl-title>Ann. Math.</jnl-title>
+          <volume>161</volume>
+          <pages>879</pages>
+        </journal-ref>
+        <journal-ref id="jstat256772bib11" num="11">
+          <authors>
+            <au>
+              <second-name>Kager</second-name>
+              <first-names>W</first-names>
+            </au>
+            <au>
+              <second-name>Nienhuis</second-name>
+              <first-names>B</first-names>
+            </au>
+          </authors>
+          <year>2004</year>
+          <jnl-title>J. Stat. Phys.</jnl-title>
+          <volume>115</volume>
+          <pages>1149</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1023/B:JOSS.0000028058.87266.be</cr_doi>
+            <cr_issn type="print">00224715</cr_issn>
+            <cr_issn type="electronic">15729613</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib12" num="12">
+          <authors>
+            <au>
+              <second-name>Bauer</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Bernard</second-name>
+              <first-names>D</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>Phys. Rep.</jnl-title>
+          <volume>432</volume>
+          <pages>115</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/j.physrep.2006.06.002</cr_doi>
+            <cr_issn type="print">03701573</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib13" num="13">
+          <authors>
+            <au>
+              <second-name>Razumov</second-name>
+              <first-names>A V</first-names>
+            </au>
+            <au>
+              <second-name>Stroganov</second-name>
+              <first-names>Yu G</first-names>
+            </au>
+          </authors>
+          <year>2001</year>
+          <jnl-title>J. Phys. A: Math. Gen.</jnl-title>
+          <volume>34</volume>
+          <pages>5335</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/0305-4470/34/26/304</cr_doi>
+            <cr_issn type="print">03054470</cr_issn>
+            <cr_issn type="electronic">13616447</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib14" num="14">
+          <authors>
+            <au>
+              <second-name>Batchelor</second-name>
+              <first-names>M T</first-names>
+            </au>
+            <au>
+              <second-name>de Gier</second-name>
+              <first-names>J</first-names>
+            </au>
+            <au>
+              <second-name>Nienhuis</second-name>
+              <first-names>B</first-names>
+            </au>
+          </authors>
+          <year>2001</year>
+          <jnl-title>J. Phys. A: Math. Gen.</jnl-title>
+          <volume>34</volume>
+          <pages>L265</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/0305-4470/34/19/101</cr_doi>
+            <cr_issn type="print">03054470</cr_issn>
+            <cr_issn type="electronic">13616447</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib15" num="15">
+          <authors>
+            <au>
+              <second-name>Pearce</second-name>
+              <first-names>P A</first-names>
+            </au>
+            <au>
+              <second-name>Rittenberg</second-name>
+              <first-names>V</first-names>
+            </au>
+            <au>
+              <second-name>de Gier</second-name>
+              <first-names>J</first-names>
+            </au>
+            <au>
+              <second-name>Nienhuis</second-name>
+              <first-names>B</first-names>
+            </au>
+          </authors>
+          <year>2002</year>
+          <jnl-title>J. Phys. A: Math. Gen.</jnl-title>
+          <volume>35</volume>
+          <pages>L661</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/0305-4470/35/45/105</cr_doi>
+            <cr_issn type="print">03054470</cr_issn>
+            <cr_issn type="electronic">13616447</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib16" num="16">
+          <authors>
+            <au>
+              <second-name>Di Francesco</second-name>
+              <first-names>P</first-names>
+            </au>
+            <au>
+              <second-name>Zinn-Justin</second-name>
+              <first-names>P</first-names>
+            </au>
+            <au>
+              <second-name>Zuber</second-name>
+              <first-names>J-B</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>J. Stat. Mech.</jnl-title>
+          <art-number type="jstat">P08011</art-number>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/1742-5468/2006/08/P08011</cr_doi>
+            <cr_issn type="print">17425468</cr_issn>
+          </crossref>
+        </journal-ref>
+        <misc-ref id="jstat256772bib17" num="17">
+          <authors>
+            <au>
+              <second-name>Cardy</second-name>
+              <first-names>J</first-names>
+            </au>
+          </authors>
+          <year>1999</year>
+          <art-title>Logarithmic correlations in quenched random magnets and polymers</art-title>
+          <preprint-info>
+            <preprint>Preprint</preprint>
+          </preprint-info>
+          <links>
+            <arxiv url="cond-mat/9911024">cond-mat/9911024</arxiv>
+          </links>
+        </misc-ref>
+        <multipart id="jstat256772bib18" num="18">
+          <journal-ref id="jstat256772bib18.1" num="18.1">
+            <authors>
+              <au>
+                <second-name>Gurarie</second-name>
+                <first-names>V</first-names>
+              </au>
+              <au>
+                <second-name>Ludwig</second-name>
+                <first-names>A W W</first-names>
+              </au>
+            </authors>
+            <year>2002</year>
+            <jnl-title>J. Phys. A: Math. Gen.</jnl-title>
+            <volume>35</volume>
+            <pages>L377</pages>
+            <crossref>
+              <cr_doi>http://dx.doi.org/10.1088/0305-4470/35/27/101</cr_doi>
+              <cr_issn type="print">03054470</cr_issn>
+              <cr_issn type="electronic">13616447</cr_issn>
+            </crossref>
+          </journal-ref>
+          <misc-ref id="jstat256772bib18.2" num="18.2">
+            <authors>
+              <au>
+                <second-name>Gurarie</second-name>
+                <first-names>V</first-names>
+              </au>
+              <au>
+                <second-name>Ludwig</second-name>
+                <first-names>A W W</first-names>
+              </au>
+            </authors>
+            <year>2004</year>
+            <art-title>Conformal field theory at central charge
+<italic>c</italic> = 0 
+and two-dimensional critical systems with quenched disorder</art-title>
+            <preprint-info>
+              <preprint>Preprint</preprint>
+            </preprint-info>
+            <links>
+              <arxiv url="hep-th/0409105">hep-th/0409105</arxiv>
+            </links>
+          </misc-ref>
+        </multipart>
+        <journal-ref id="jstat256772bib19" num="19">
+          <authors>
+            <au>
+              <second-name>Flohr</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Müller-Lohmann</second-name>
+              <first-names>A</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>J. Stat. Mech.</jnl-title>
+          <art-number type="jstat">P04002</art-number>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/1742-5468/2006/04/P04002</cr_doi>
+            <cr_issn type="print">17425468</cr_issn>
+          </crossref>
+        </journal-ref>
+        <misc-ref id="jstat256772bib20" num="20">
+          <authors>
+            <au>
+              <second-name>Rohsiepe</second-name>
+              <first-names>F</first-names>
+            </au>
+          </authors>
+          <year>1996</year>
+          <art-title>On reducible but indecomposable representations of the Virasoro algebra</art-title>
+          <preprint-info>
+            <preprint>Preprint</preprint>
+          </preprint-info>
+          <links>
+            <arxiv url="hep-th/9611160">hep-th/9611160</arxiv>
+          </links>
+        </misc-ref>
+        <journal-ref id="jstat256772bib21" num="21">
+          <authors>
+            <au>
+              <second-name>Gurarie</second-name>
+              <first-names>V</first-names>
+            </au>
+          </authors>
+          <year>1993</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>410</volume>
+          <pages>535</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/0550-3213(93)90528-W</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib22" num="22">
+          <authors>
+            <au>
+              <second-name>Maassarani</second-name>
+              <first-names>Z</first-names>
+            </au>
+            <au>
+              <second-name>Serban</second-name>
+              <first-names>D</first-names>
+            </au>
+          </authors>
+          <year>1997</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>489</volume>
+          <pages>603</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0550-3213(97)00014-X</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib23" num="23">
+          <authors>
+            <au>
+              <second-name>Flohr</second-name>
+              <first-names>M</first-names>
+            </au>
+          </authors>
+          <year>1997</year>
+          <jnl-title>Int. J. Mod. Phys.</jnl-title>
+          <part>A</part>
+          <volume>12</volume>
+          <pages>1943</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1142/S0217751X97001225</cr_doi>
+            <cr_issn type="print">0217751X</cr_issn>
+            <cr_issn type="electronic">0217751X</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib24" num="24">
+          <authors>
+            <au>
+              <second-name>Rahimi Tabar</second-name>
+              <first-names>M R</first-names>
+            </au>
+            <au>
+              <second-name>Aghamohammadi</second-name>
+              <first-names>A</first-names>
+            </au>
+            <au>
+              <second-name>Khorrami</second-name>
+              <first-names>M</first-names>
+            </au>
+          </authors>
+          <year>1997</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>497</volume>
+          <pages>555</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0550-3213(97)00230-7</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib25" num="25">
+          <authors>
+            <au>
+              <second-name>Kausch</second-name>
+              <first-names>H G</first-names>
+            </au>
+          </authors>
+          <year>2000</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>583</volume>
+          <pages>513</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0550-3213(00)00295-9</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib26" num="26">
+          <authors>
+            <au>
+              <second-name>Kogan</second-name>
+              <first-names>I I</first-names>
+            </au>
+            <au>
+              <second-name>Wheater</second-name>
+              <first-names>J F</first-names>
+            </au>
+          </authors>
+          <year>2000</year>
+          <jnl-title>Phys. Lett.</jnl-title>
+          <part>B</part>
+          <volume>486</volume>
+          <pages>353</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0370-2693(00)00767-X</cr_doi>
+            <cr_issn type="print">03702693</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib27" num="27">
+          <authors>
+            <au>
+              <second-name>Moghimi-Araghi</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Rouhani</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Saadat</second-name>
+              <first-names>M</first-names>
+            </au>
+          </authors>
+          <year>2001</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>599</volume>
+          <pages>531</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0550-3213(01)00004-9</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib28" num="28">
+          <authors>
+            <au>
+              <second-name>Flohr</second-name>
+              <first-names>M</first-names>
+            </au>
+          </authors>
+          <year>2003</year>
+          <jnl-title>Int. J. Mod. Phys.</jnl-title>
+          <part>A</part>
+          <volume>18</volume>
+          <pages>4497</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1142/S0217751X03016859</cr_doi>
+            <cr_issn type="print">0217751X</cr_issn>
+            <cr_issn type="electronic">0217751X</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib29" num="29">
+          <authors>
+            <au>
+              <second-name>Gaberdiel</second-name>
+              <first-names>M R</first-names>
+            </au>
+          </authors>
+          <year>2003</year>
+          <jnl-title>Int. J. Mod. Phys.</jnl-title>
+          <part>A</part>
+          <volume>18</volume>
+          <pages>4593</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1142/S0217751X03016860</cr_doi>
+            <cr_issn type="print">0217751X</cr_issn>
+            <cr_issn type="electronic">0217751X</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib30" num="30">
+          <authors>
+            <au>
+              <second-name>Fjelstad</second-name>
+              <first-names>J</first-names>
+            </au>
+            <au>
+              <second-name>Fuchs</second-name>
+              <first-names>J</first-names>
+            </au>
+            <au>
+              <second-name>Hwang</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Semikhatov</second-name>
+              <first-names>A M</first-names>
+            </au>
+            <au>
+              <second-name>Tipunin</second-name>
+              <first-names>I Yu</first-names>
+            </au>
+          </authors>
+          <year>2002</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>633</volume>
+          <pages>379</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0550-3213(02)00220-1</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib31" num="31">
+          <authors>
+            <au>
+              <second-name>Ruelle</second-name>
+              <first-names>P</first-names>
+            </au>
+          </authors>
+          <year>2002</year>
+          <jnl-title>Phys. Lett.</jnl-title>
+          <part>B</part>
+          <volume>539</volume>
+          <pages>172</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0370-2693(02)02069-5</cr_doi>
+            <cr_issn type="print">03702693</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib32" num="32">
+          <authors>
+            <au>
+              <second-name>Kawai</second-name>
+              <first-names>S</first-names>
+            </au>
+          </authors>
+          <year>2003</year>
+          <jnl-title>Int. J. Mod. Phys.</jnl-title>
+          <part>A</part>
+          <volume>18</volume>
+          <pages>4655</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1142/S0217751X03016884</cr_doi>
+            <cr_issn type="print">0217751X</cr_issn>
+            <cr_issn type="electronic">0217751X</cr_issn>
+          </crossref>
+        </journal-ref>
+        <multipart id="jstat256772bib33" num="33">
+          <journal-ref id="jstat256772bib33.1" num="33.1">
+            <authors>
+              <au>
+                <second-name>Lesage</second-name>
+                <first-names>F</first-names>
+              </au>
+              <au>
+                <second-name>Mathieu</second-name>
+                <first-names>P</first-names>
+              </au>
+              <au>
+                <second-name>Rasmussen</second-name>
+                <first-names>J</first-names>
+              </au>
+              <au>
+                <second-name>Saleur</second-name>
+                <first-names>H</first-names>
+              </au>
+            </authors>
+            <year>2002</year>
+            <jnl-title>Nucl. Phys.</jnl-title>
+            <part>B</part>
+            <volume>647</volume>
+            <pages>363</pages>
+            <crossref>
+              <cr_doi>http://dx.doi.org/10.1016/S0550-3213(02)00905-7</cr_doi>
+              <cr_issn type="print">05503213</cr_issn>
+              <cr_issn type="electronic">05503213</cr_issn>
+            </crossref>
+          </journal-ref>
+          <journal-ref id="jstat256772bib33.2" num="33.2">
+            <authors>
+              <au>
+                <second-name>Lesage</second-name>
+                <first-names>F</first-names>
+              </au>
+              <au>
+                <second-name>Mathieu</second-name>
+                <first-names>P</first-names>
+              </au>
+              <au>
+                <second-name>Rasmussen</second-name>
+                <first-names>J</first-names>
+              </au>
+              <au>
+                <second-name>Saleur</second-name>
+                <first-names>H</first-names>
+              </au>
+            </authors>
+            <year>2004</year>
+            <jnl-title>Nucl. Phys.</jnl-title>
+            <part>B</part>
+            <volume>686</volume>
+            <pages>313</pages>
+            <crossref>
+              <cr_doi>http://dx.doi.org/10.1016/j.nuclphysb.2004.02.039</cr_doi>
+              <cr_issn type="print">05503213</cr_issn>
+              <cr_issn type="electronic">05503213</cr_issn>
+            </crossref>
+          </journal-ref>
+        </multipart>
+        <misc-ref id="jstat256772bib34" num="34">
+          <authors>
+            <au>
+              <second-name>Nichols</second-name>
+              <first-names>A</first-names>
+            </au>
+          </authors>
+          <year>2002</year>
+          <art-title><italic>SU</italic>(2)<sub><italic>k</italic></sub>
+logarithmic conformal field theories</art-title>
+          <thesis>PhD Thesis</thesis>
+          <source>University of Oxford</source>
+          <links>[<arxiv url="hep-th/0210070">hep-th/0210070</arxiv>]</links>
+        </misc-ref>
+        <journal-ref id="jstat256772bib35" num="35">
+          <authors>
+            <au>
+              <second-name>Rasmussen</second-name>
+              <first-names>J</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>736</volume>
+          <pages>225</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/j.nuclphysb.2005.12.009</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib36" num="36">
+          <authors>
+            <au>
+              <second-name>Flohr</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Gaberdiel</second-name>
+              <first-names>M R</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>J. Phys. A: Math. Gen.</jnl-title>
+          <volume>39</volume>
+          <pages>1955</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/0305-4470/39/8/012</cr_doi>
+            <cr_issn type="print">03054470</cr_issn>
+            <cr_issn type="electronic">13616447</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib37" num="37">
+          <authors>
+            <au>
+              <second-name>Feigin</second-name>
+              <first-names>B L</first-names>
+            </au>
+            <au>
+              <second-name>Gainutdinov</second-name>
+              <first-names>A M</first-names>
+            </au>
+            <au>
+              <second-name>Semikhatov</second-name>
+              <first-names>A M</first-names>
+            </au>
+            <au>
+              <second-name>Tipunin</second-name>
+              <first-names>I Yu</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>757</volume>
+          <pages>303</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/j.nuclphysb.2006.09.019</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib38" num="38">
+          <authors>
+            <au>
+              <second-name>Gaberdiel</second-name>
+              <first-names>M R</first-names>
+            </au>
+            <au>
+              <second-name>Runkel</second-name>
+              <first-names>I</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>J. Phys. A: Math. Gen.</jnl-title>
+          <volume>39</volume>
+          <pages>14745</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/0305-4470/39/47/016</cr_doi>
+            <cr_issn type="print">03054470</cr_issn>
+            <cr_issn type="electronic">13616447</cr_issn>
+          </crossref>
+        </journal-ref>
+        <misc-ref id="jstat256772bib39" num="39">
+          <authors>
+            <au>
+              <second-name>Quella</second-name>
+              <first-names>T</first-names>
+            </au>
+            <au>
+              <second-name>Schomerus</second-name>
+              <first-names>V</first-names>
+            </au>
+          </authors>
+          <year>2007</year>
+          <art-title>Free fermion resolution of supergroup WZNW models</art-title>
+          <preprint-info>
+            <preprint>Preprint</preprint>
+            <art-number type="arxiv">0706.0744</art-number>
+          </preprint-info>
+        </misc-ref>
+        <journal-ref id="jstat256772bib40" num="40">
+          <authors>
+            <au>
+              <second-name>Saleur</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Duplantier</second-name>
+              <first-names>B</first-names>
+            </au>
+          </authors>
+          <year>1987</year>
+          <jnl-title>Phys. Rev. Lett.</jnl-title>
+          <volume>58</volume>
+          <pages>2325</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1103/PhysRevLett.58.2325</cr_doi>
+            <cr_issn type="print">00319007</cr_issn>
+            <cr_issn type="electronic">10797114</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib41" num="41">
+          <authors>
+            <au>
+              <second-name>Saleur</second-name>
+              <first-names>H</first-names>
+            </au>
+          </authors>
+          <year>1992</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>382</volume>
+          <pages>486</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/0550-3213(92)90657-W</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib42" num="42">
+          <authors>
+            <au>
+              <second-name>Read</second-name>
+              <first-names>N</first-names>
+            </au>
+            <au>
+              <second-name>Saleur</second-name>
+              <first-names>H</first-names>
+            </au>
+          </authors>
+          <year>2001</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>613</volume>
+          <pages>409</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0550-3213(01)00395-9</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib43" num="43">
+          <authors>
+            <au>
+              <second-name>Pearce</second-name>
+              <first-names>P A</first-names>
+            </au>
+            <au>
+              <second-name>Rasmussen</second-name>
+              <first-names>J</first-names>
+            </au>
+            <au>
+              <second-name>Zuber</second-name>
+              <first-names>J-B</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>J. Stat. Mech.</jnl-title>
+          <art-number type="jstat">P11017</art-number>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/1742-5468/2006/11/P11017</cr_doi>
+            <cr_issn type="print">17425468</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib44" num="44">
+          <authors>
+            <au>
+              <second-name>Pearce</second-name>
+              <first-names>P A</first-names>
+            </au>
+            <au>
+              <second-name>Rasmussen</second-name>
+              <first-names>J</first-names>
+            </au>
+          </authors>
+          <year>2007</year>
+          <jnl-title>J. Stat. Mech.</jnl-title>
+          <art-number type="jstat">P02015</art-number>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/1742-5468/2007/02/P02015</cr_doi>
+            <cr_issn type="print">17425468</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib45" num="45">
+          <authors>
+            <au>
+              <second-name>Eberle</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Flohr</second-name>
+              <first-names>M</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>J. Phys. A: Math. Gen.</jnl-title>
+          <volume>39</volume>
+          <pages>15245</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/0305-4470/39/49/012</cr_doi>
+            <cr_issn type="print">03054470</cr_issn>
+            <cr_issn type="electronic">13616447</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib46" num="46">
+          <authors>
+            <au>
+              <second-name>Gaberdiel</second-name>
+              <first-names>M R</first-names>
+            </au>
+            <au>
+              <second-name>Kausch</second-name>
+              <first-names>H G</first-names>
+            </au>
+          </authors>
+          <year>1996</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>477</volume>
+          <pages>293</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/0550-3213(96)00364-1</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jstat256772bib47" num="47">
+          <authors>
+            <au>
+              <second-name>Nahm</second-name>
+              <first-names>W</first-names>
+            </au>
+          </authors>
+          <year>1994</year>
+          <jnl-title>Int. J. Mod. Phys.</jnl-title>
+          <part>B</part>
+          <volume>8</volume>
+          <pages>3693</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1142/S0217979294001597</cr_doi>
+            <cr_issn type="print">02179792</cr_issn>
+            <cr_issn type="electronic">02179792</cr_issn>
+          </crossref>
+        </journal-ref>
+        <misc-ref id="jstat256772bib48" num="48">
+          <authors>
+            <au>
+              <second-name>Read</second-name>
+              <first-names>N</first-names>
+            </au>
+            <au>
+              <second-name>Saleur</second-name>
+              <first-names>H</first-names>
+            </au>
+          </authors>
+          <year>2007</year>
+          <art-title>Associative–algebraic approach to logarithmic conformal field theories</art-title>
+          <preprint-info>
+            <preprint>Preprint</preprint>
+          </preprint-info>
+          <links>
+            <arxiv url="hep-th/0701117">hep-th/0701117</arxiv>
+          </links>
+        </misc-ref>
+        <journal-ref id="jstat256772bib49" num="49">
+          <authors>
+            <au>
+              <second-name>Di Francesco</second-name>
+              <first-names>P</first-names>
+            </au>
+            <au>
+              <second-name>Saleur</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Zuber</second-name>
+              <first-names>J-B</first-names>
+            </au>
+          </authors>
+          <year>1987</year>
+          <jnl-title>Nucl. Phys.</jnl-title>
+          <part>B</part>
+          <volume>285</volume>
+          <pages>454</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/0550-3213(87)90349-X</cr_doi>
+            <cr_issn type="print">05503213</cr_issn>
+            <cr_issn type="electronic">05503213</cr_issn>
+          </crossref>
+        </journal-ref>
+        <multipart id="jstat256772bib50" num="50">
+          <journal-ref id="jstat256772bib50.1" num="50.1">
+            <authors>
+              <au>
+                <second-name>Rasmussen</second-name>
+                <first-names>J</first-names>
+              </au>
+            </authors>
+            <year>2004</year>
+            <jnl-title>Nucl. Phys.</jnl-title>
+            <part>B</part>
+            <volume>701</volume>
+            <pages>516</pages>
+            <crossref>
+              <cr_doi>http://dx.doi.org/10.1016/j.nuclphysb.2004.08.047</cr_doi>
+              <cr_issn type="print">05503213</cr_issn>
+              <cr_issn type="electronic">05503213</cr_issn>
+            </crossref>
+          </journal-ref>
+          <journal-ref id="jstat256772bib50.2" num="50.2">
+            <authors>
+              <au>
+                <second-name>Rasmussen</second-name>
+                <first-names>J</first-names>
+              </au>
+            </authors>
+            <year>2007</year>
+            <jnl-title>Int. J. Mod. Phys.</jnl-title>
+            <part>A</part>
+            <volume>22</volume>
+            <pages>67</pages>
+            <crossref>
+              <cr_doi>http://dx.doi.org/10.1142/S0217751X07035136</cr_doi>
+              <cr_issn type="print">0217751X</cr_issn>
+              <cr_issn type="electronic">0217751X</cr_issn>
+            </crossref>
+          </journal-ref>
+        </multipart>
+      </reference-list>
+    </references>
+  </back>
+</article>

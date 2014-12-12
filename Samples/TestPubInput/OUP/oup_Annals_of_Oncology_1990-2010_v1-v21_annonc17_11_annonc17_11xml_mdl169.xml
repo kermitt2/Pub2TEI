@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" "journalpublishing.dtd">
+<article article-type="research-article">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="hwp">annonc</journal-id>
+      <journal-id journal-id-type="publisher-id">annonc</journal-id>
+      <journal-title>Annals of Oncology</journal-title>
+      <issn pub-type="epub">1569-8041</issn>
+      <issn pub-type="ppub">0923-7534</issn>
+      <publisher>
+        <publisher-name>Oxford University Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.1093/annonc/mdl169</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>original articles</subject>
+          <subject>breast cancer</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Low number of examined lymph nodes in node-negative breast cancer patients is an adverse prognostic factor</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Blancas</surname>
+            <given-names>I</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>García-Puche</surname>
+            <given-names>JL</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bermejo</surname>
+            <given-names>B</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hanrahan</surname>
+            <given-names>EO</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Monteagudo</surname>
+            <given-names>C</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Martínez-Agulló</surname>
+            <given-names>A</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">5</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Rouzier</surname>
+            <given-names>R</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">6</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Hennessy</surname>
+            <given-names>BT</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Valero</surname>
+            <given-names>V</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Lluch</surname>
+            <given-names>A</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><label>1</label>Department of Oncology and Hematology, Clinic Hospital, Valencia, Spain</aff>
+      <aff id="aff4"><label>4</label>Department of Pathology, Clinic Hospital, Valencia, Spain</aff>
+      <aff id="aff5"><label>5</label>Department of Surgery, Clinic Hospital, Valencia, Spain</aff>
+      <aff id="aff2"><label>2</label>Unit of Oncology, San Cecilio Clinic Hospital, Granada, Spain</aff>
+      <aff id="aff3"><label>3</label>Department of Breast Medical Oncology, The University of Texas M. D. Anderson Cancer Center, Houston, TX, USA</aff>
+      <aff id="aff6"><label>6</label>Department of Gynecology and Obstetrics, Hôpital Tenon, Tenon, France</aff>
+      <author-notes>
+        <corresp id="cor1"><sup>*</sup><italic>Correspondence to:</italic> Dr I. Blancas, Unidad de Oncología, Hospital Clínico San Cecilio, Avda. Dr. Oloriz 16 18012 Granada, Spain. Tel: +34-958023479; Fax: +34-958209291; E-mail: <email>isabelblancas@hotmail.com</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub-ppub">
+        <month>11</month>
+        <year>2006</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>27</day>
+        <month>7</month>
+        <year>2006</year>
+      </pub-date>
+      <volume>17</volume>
+      <issue>11</issue>
+      <fpage>1644</fpage>
+      <lpage>1649</lpage>
+      <history>
+        <date date-type="received">
+          <day>3</day>
+          <month>5</month>
+          <year>2006</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>14</day>
+          <month>6</month>
+          <year>2006</year>
+        </date>
+        <date date-type="accepted">
+          <day>16</day>
+          <month>6</month>
+          <year>2006</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 2006 European Society for Medical Oncology</copyright-statement>
+        <copyright-year>2006</copyright-year>
+      </permissions>
+      <abstract>
+        <p><bold>Background:</bold> The aim of the study was to determine whether the number of lymph nodes removed at axillary dissection is associated with recurrence and survival in node-negative breast cancer (NNBC) patients.</p>
+        <p><bold>Patients and methods:</bold> We retrospectively reviewed the medical records of 1606 women with pathologically node-negative T1–T3 invasive breast cancer. Median follow-up was 61 months (range 2–251). Potential prognostic factors assessed included: number of axillary lymph nodes examined, age, menopausal status, tumor size, histological type, tumor grade, estrogen receptor(ER), progesterone receptor (PR) and HER2.</p>
+        <p><bold>Results:</bold> At 5 years, relapse-free survival (RFS) rate was 85% and breast cancer-specific survival (BCSS) rate was 94%. In univariate analysis, factors significantly associated with lower RFS and BCSS were: fewer than six lymph nodes examined (RFS, <italic>P</italic> = 0.01; BCSS, <italic>P</italic> = 0.007), tumor size &gt;2 cm, grade III, negative ER or PR. Statistically significant factors for lower RFS and BCSS in multivariate analysis were: fewer than six lymph nodes examined [RFS, hazard ratio (HR) 1.36, <italic>P</italic> = 0.029; BCSS, HR 1.87, <italic>P</italic> = 0.005], tumor size &gt;2 cm, tumor grade III and negative PR.</p>
+        <p><bold>Conclusions:</bold> Examination of fewer than six lymph nodes is an adverse prognostic factor in NNBC because it could lead to understaging. Six or more nodes need to be examined at axillary dissection to be confident of a node-negative status. This may be useful, in conjunction with other prognostic factors, in the assessment of NNBC patients for adjuvant systemic therapy.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>breast</kwd>
+        <kwd>cancer</kwd>
+        <kwd>lymph</kwd>
+        <kwd>nodes</kwd>
+        <kwd>number</kwd>
+        <kwd>prognosis</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>introduction</title>
+      <p>In recent years, owing to breast cancer screening programs, node-negative breast cancer (NNBC) has become more common [<xref ref-type="bibr" rid="bib1">1</xref>]. Approximately 30% of these patients will have disease relapse [<xref ref-type="bibr" rid="bib2">2</xref>] so systemic adjuvant systemic treatments are often used to reduce the risk of recurrence [<xref ref-type="bibr" rid="bib3">3</xref>]. However, only a minority of these patients will benefit from adjuvant systemic therapy. Locoregional management alone will cure a large proportion of NNBC patients [<xref ref-type="bibr" rid="bib4">4</xref>]. Therefore, it is reasonable to apply prognostic factors to this patient population to identify those at higher risk of relapse who will potentially benefit most from adjuvant systemic treatment.</p>
+      <p>Axillary lymph node dissection (ALND) is still considered part of the standard management of operable breast cancer and remains routine practice in many parts of the world [<xref ref-type="bibr" rid="bib5">5</xref>]. It has been debated whether it is necessary to perform a complete lymphadenectomy [<xref ref-type="bibr" rid="bib6">6</xref>, <xref ref-type="bibr" rid="bib7">7</xref>] or if sampling of the axilla is enough [<xref ref-type="bibr" rid="bib8">8</xref>, <xref ref-type="bibr" rid="bib9">9</xref>]. Several studies have reported an association between the number of nodes removed at ALND and survival [<xref ref-type="bibr" rid="bib10">10</xref>–<xref ref-type="bibr" rid="bib16">16</xref>] and thus provide recommendations on the minimum number of evaluable nodes required to be confident about node-negative status [<xref ref-type="bibr" rid="bib17">17</xref>]. Conversely, only one study has described worse outcomes with removal of a greater number of lymph nodes [<xref ref-type="bibr" rid="bib18">18</xref>]. Currently, the Union Internationale Contre Cancer (UICC/AJCC) Tumor/Node/Metastasis (TNM) classification requires the removal and analysis of at least the proximal axillary nodes (level I), which should yield a minimum of six nodes, to assign a pathologic nodal stage [<xref ref-type="bibr" rid="bib19">19</xref>]. However, the recent development of sentinel lymph node biopsy and the increasing use of adjuvant systemic therapies have provided a rationale for the omission of complete axillary lymphadenectomy [<xref ref-type="bibr" rid="bib20">20</xref>, <xref ref-type="bibr" rid="bib21">21</xref>].</p>
+      <p>In the light of these data, further study of the prognostic significance of ALND in conjunction with other prognostic factors in the assessment of NNBC patients for adjuvant systemic therapy is needed. Therefore, the purpose of the current study was to assess the number of axillary nodes examined in NNBC patients and to analyze whether examination of fewer than six nodes was related to a higher risk of relapse and to a shorter breast cancer-specific survival.</p>
+    </sec>
+    <sec>
+      <title>patients and methods</title>
+      <p>Subjects were patients with NNBC diagnosed between 1 January 1982 and 31 December 2000 who were treated at Clinic Hospital, University of Valencia, Spain. Patients were ineligible if they had <italic>in situ</italic> disease, a T4d primary tumor, axillary nodal involvement, bilateral breast cancer or distant metastases. Eligible patients had to have survived at least 30 days from the time of diagnosis, to have undergone an axillary dissection with at least one lymph node recovered (not eligible if a sentinel lymph node biopsy was performed), and to have received no neoadjuvant systemic treatment. The research ethics committee of the hospital oversaw the project and a waiver of informed consent was obtained.</p>
+      <p>The study includes all eligible patients treated at the institution between 1982 and 2000, so it represents a sequential series of cases. Data were collected by retrospective review of pathology reports. In the processing of the pathologic nodal specimens, immunohistochemical analysis for occult metastases was not routinely performed. We considered, on the basis of UICC/AJCC recommendations [<xref ref-type="bibr" rid="bib19">19</xref>], the following two groups in our analysis of the number of lymph nodes examined: patients with one to five lymph nodes removed and those with six or more lymph nodes removed. Other prognostic factors extracted from a retrospective review of patient medical records were age and menopausal status at diagnosis, tumor size (maximum histological or gross pathologic size in mm), histological type, tumor grade (according to Scarf–Bloom–Richardson [<xref ref-type="bibr" rid="bib22">22</xref>, <xref ref-type="bibr" rid="bib23">23</xref>]), estrogen receptor (ER) status (negative or positive), progesterone receptor (PR) status (negative or positive), and HER2 status (negative or positive).</p>
+      <p>During the period of the study, our standard clinical practices following breast and axillary surgery for NNBC were as follows.<list list-type="simple"><list-item><p>(i) Local radiotherapy when breast-conserving surgery was performed.</p></list-item><list-item><p>(ii) Locoregional radiotherapy when the tumor was larger than 5 cm.</p></list-item><list-item><p>(iii) The criteria adopted for prescribing adjuvant systemic therapy were as follows. Chemotherapy when two or more of the following features were present: tumor size larger than 2 cm, age younger than 35 years and tumor grade III.</p></list-item><list-item><p>(iv) After the surgery or the chemotherapy (when it was administered), hormonal therapy was given in cases where ER and/or PR status were positive or unknown. The agent of choice was tamoxifen, 20 mg/day for 5 years.</p></list-item></list>Patients were divided into the following groups depending on the type of systemic therapy received: (1) no systemic treatment; (2) only hormonal therapy; (3) chemotherapy with anthracyclines; (4) chemotherapy with cyclophosphamide, methotrexate and 5-fluorouracil (CMF); and (5) other chemotherapy schedules.</p>
+      <sec>
+        <title>statistical analysis</title>
+        <p>Overall survival (OS) was measured from the date of diagnosis to the date of death from any cause or last follow-up. Breast cancer-specific survival (BCSS) was measured from the date of diagnosis to the date of death from breast cancer or last follow-up. Patients who died from other causes were considered censored for BCSS. Relapse-free survival (RFS) was measured from the date of diagnosis to the date of relapse (local or systemic) or last follow-up. Patients who died before experiencing a relapse were censored at their date of death for RFS.</p>
+        <p>RFS, BCSS, and OS were estimated using the Kaplan–Meier method [<xref ref-type="bibr" rid="bib24">24</xref>]. The statistical significance of the difference between survival times was determined by the log-rank test in the univariate analysis. Multivariate tests were performed with Cox proportional hazards analysis [<xref ref-type="bibr" rid="bib25">25</xref>]. The number of lymph nodes recovered was categorized as one to five or more than five for the tables, log-rank test and Cox analysis. We considered a result to be statistically significant when <italic>P</italic> &lt;0.05. The confidence interval (CI) used for survival was 95%.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>results</title>
+      <p>We identified a total of 1668 patients with NNBC, but several were excluded for the following reasons: six patients had Paget's histological type, nine did not have a pathology report and 47 were without follow-up data. Therefore, we included 1606 patients in the current analysis. The characteristics of the population and their systemic adjuvant treatments are shown in <xref ref-type="table" rid="tbl1">Table 1</xref>. The median number of lymph nodes examined was 12 (range 1–54 nodes).</p>
+      <table-wrap id="tbl1">
+        <label>
+          <bold>Table 1</bold>
+        </label>
+        <caption>
+          <p>Patient variables and treatment</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td>Variable</td>
+              <td>No. of patients</td>
+              <td>%</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Age, median: 57 years (21–98)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    ≤35 years</td>
+              <td align="char" char=".">76</td>
+              <td align="char" char=".">4.7</td>
+            </tr>
+            <tr>
+              <td>    &gt;35 years</td>
+              <td align="char" char=".">1530</td>
+              <td align="char" char=".">95.3</td>
+            </tr>
+            <tr>
+              <td>Hormonal menopausal status</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Premenopausal</td>
+              <td align="char" char=".">524</td>
+              <td align="char" char=".">32.6</td>
+            </tr>
+            <tr>
+              <td>    Perimenopausal</td>
+              <td align="char" char=".">45</td>
+              <td align="char" char=".">2.8</td>
+            </tr>
+            <tr>
+              <td>    Postmenopausal</td>
+              <td align="char" char=".">1037</td>
+              <td align="char" char=".">64.6</td>
+            </tr>
+            <tr>
+              <td>Tumor size, median: 21 mm (1–100)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    ≤20 mm</td>
+              <td align="char" char=".">800</td>
+              <td align="char" char=".">49.8</td>
+            </tr>
+            <tr>
+              <td>    &gt;20 mm</td>
+              <td align="char" char=".">806</td>
+              <td align="char" char=".">50.2</td>
+            </tr>
+            <tr>
+              <td>Histologic type</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Infiltrating ductal carcinoma</td>
+              <td align="char" char=".">1300</td>
+              <td align="char" char=".">81.9</td>
+            </tr>
+            <tr>
+              <td>    Infiltrating lobular carcinoma</td>
+              <td align="char" char=".">124</td>
+              <td align="char" char=".">7.8</td>
+            </tr>
+            <tr>
+              <td>    Others: medullary, mucinous, apocrine, tubular, papillary</td>
+              <td align="char" char=".">164</td>
+              <td align="char" char=".">10.3</td>
+            </tr>
+            <tr>
+              <td>    Unknown</td>
+              <td align="char" char=".">18</td>
+              <td align="char" char=".">1.1</td>
+            </tr>
+            <tr>
+              <td>Tumor grade</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    I</td>
+              <td align="char" char=".">263</td>
+              <td align="char" char=".">16.4</td>
+            </tr>
+            <tr>
+              <td>    II</td>
+              <td align="char" char=".">431</td>
+              <td align="char" char=".">26.8</td>
+            </tr>
+            <tr>
+              <td>    III</td>
+              <td align="char" char=".">167</td>
+              <td align="char" char=".">10.4</td>
+            </tr>
+            <tr>
+              <td>    Unknown</td>
+              <td align="char" char=".">745</td>
+              <td align="char" char=".">46.4</td>
+            </tr>
+            <tr>
+              <td>Estrogen receptor status</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Positive</td>
+              <td align="char" char=".">719</td>
+              <td align="char" char=".">44.8</td>
+            </tr>
+            <tr>
+              <td>    Negative</td>
+              <td align="char" char=".">414</td>
+              <td align="char" char=".">25.8</td>
+            </tr>
+            <tr>
+              <td>    Unknown</td>
+              <td align="char" char=".">473</td>
+              <td align="char" char=".">29.5</td>
+            </tr>
+            <tr>
+              <td>Progesterone receptor status</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Positive</td>
+              <td align="char" char=".">647</td>
+              <td align="char" char=".">40.3</td>
+            </tr>
+            <tr>
+              <td>    Negative</td>
+              <td align="char" char=".">476</td>
+              <td align="char" char=".">29.6</td>
+            </tr>
+            <tr>
+              <td>    Unknown</td>
+              <td align="char" char=".">483</td>
+              <td align="char" char=".">30.1</td>
+            </tr>
+            <tr>
+              <td>Overexpression HER2</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Positive</td>
+              <td align="char" char=".">54</td>
+              <td align="char" char=".">3.4</td>
+            </tr>
+            <tr>
+              <td>    Negative</td>
+              <td align="char" char=".">668</td>
+              <td align="char" char=".">41.6</td>
+            </tr>
+            <tr>
+              <td>    Unknown</td>
+              <td align="char" char=".">884</td>
+              <td align="char" char=".">55</td>
+            </tr>
+            <tr>
+              <td>Examined nodes, median: 12 (1–54)</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    ≤5 nodes</td>
+              <td align="char" char=".">230</td>
+              <td align="char" char=".">14.3</td>
+            </tr>
+            <tr>
+              <td>    &gt;5 nodes</td>
+              <td align="char" char=".">1240</td>
+              <td align="char" char=".">77.2</td>
+            </tr>
+            <tr>
+              <td>    Unknown</td>
+              <td align="char" char=".">136</td>
+              <td align="char" char=".">8.5</td>
+            </tr>
+            <tr>
+              <td>Systemic adjuvant treatment</td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    None</td>
+              <td align="char" char=".">172</td>
+              <td align="char" char=".">10.7</td>
+            </tr>
+            <tr>
+              <td>    Only hormonal therapy</td>
+              <td align="char" char=".">610</td>
+              <td align="char" char=".">38</td>
+            </tr>
+            <tr>
+              <td>    Chemotherapy with anthracyclines</td>
+              <td align="char" char=".">726</td>
+              <td align="char" char=".">45</td>
+            </tr>
+            <tr>
+              <td>    CMF chemotherapy</td>
+              <td align="char" char=".">51</td>
+              <td align="char" char=".">3.2</td>
+            </tr>
+            <tr>
+              <td>    Other chemotherapy schedules</td>
+              <td align="char" char=".">47</td>
+              <td align="char" char=".">2.9</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>CMF, cyclophosphamide, methotrexate and 5-fluorouracil.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>With a median follow-up of 61 months (range 2–251 months), 276 relapses (17.2%) and 126 deaths (7.8%) from breast cancer were observed. The RFS rate at 5 years was 85% (95% CI 81–87) and at 10 years was 72% (95% CI 69–75). The mean RFS duration was 187 months (95% CI 179–194). The BCSS rate at 5 years was 94% (95% CI 93–95) and at 10 years was 86% (95% CI 84–89). The mean BCSS duration was 219 months (95% CI 214–225). The OS rate at 5 years was 91% (95% CI 89–93) and at 10 years was 80% (95% CI 77–83). The mean OS duration was 205 months (95% CI 199–211).</p>
+      <p>The mean RFS, 5- and 10-year RFS rates, and the significant results of the univariate analysis for variables associated with RFS are listed in <xref ref-type="table" rid="tbl2">Table 2</xref>. It can be observed that RFS was shorter with examination of five or fewer lymph nodes (<xref ref-type="fig" rid="fig1">Figure 1</xref>, <italic>P</italic> = 0.014). The mean BCSS, 5- and 10-year BCSS rates, and the results of the univariate analysis for variables associated with BCSS are also listed in <xref ref-type="table" rid="tbl2">Table 2</xref>. The examination of fewer than six axillary lymph nodes was associated with a significantly shorter BCSS (<xref ref-type="fig" rid="fig2">Figure 2</xref>, <italic>P</italic> = 0.007).<fig id="fig1"><label><bold>Figure 1</bold></label><caption><p>Kaplan–Meier estimate of RFS according to the number of lymph nodes examined.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="annoncmdl169f01_ht" alt-version="yes"/></fig><fig id="fig2"><label><bold>Figure 2</bold></label><caption><p>Kaplan–Meier estimate of BCSS according to number of lymph nodes examined.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="annoncmdl169f02_ht" alt-version="yes"/></fig></p>
+      <table-wrap id="tbl2">
+        <label>
+          <bold>Table 2</bold>
+        </label>
+        <caption>
+          <p>Mean, 5-year, 10-year and <italic>P</italic> values by variable in log-rank tests for RFS and BCSS</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td>Variable</td>
+              <td colspan="4">RFS</td>
+              <td colspan="4">BCSS</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>5 years (%)</td>
+              <td>10 years (%)</td>
+              <td>Mean (months)</td>
+              <td><italic>P</italic> value</td>
+              <td>5 years (%)</td>
+              <td>10 years (%)</td>
+              <td>Mean (months)</td>
+              <td><italic>P</italic> value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1–5 removed nodes</td>
+              <td align="char" char=".">82</td>
+              <td align="char" char=".">63</td>
+              <td align="char" char=".">161</td>
+              <td align="char" char=".">0.014</td>
+              <td align="char" char=".">90</td>
+              <td align="char" char=".">83</td>
+              <td align="char" char=".">139</td>
+              <td align="char" char=".">0.007</td>
+            </tr>
+            <tr>
+              <td>&gt;5 removed nodes</td>
+              <td align="char" char=".">86</td>
+              <td align="char" char=".">74</td>
+              <td align="char" char=".">171</td>
+              <td/>
+              <td align="char" char=".">95</td>
+              <td align="char" char=".">87</td>
+              <td align="char" char=".">222</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Age &lt;36 years</td>
+              <td align="char" char=".">65</td>
+              <td align="char" char=".">52</td>
+              <td align="char" char=".">134</td>
+              <td align="char" char=".">0.000</td>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">79</td>
+              <td align="char" char=".">209</td>
+              <td align="char" char=".">0.16</td>
+            </tr>
+            <tr>
+              <td>Age ≥36 years</td>
+              <td align="char" char=".">86</td>
+              <td align="char" char=".">73</td>
+              <td align="char" char=".">190</td>
+              <td/>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">87</td>
+              <td align="char" char=".">219</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Premenopausal status</td>
+              <td align="char" char=".">83</td>
+              <td align="char" char=".">70</td>
+              <td align="char" char=".">179</td>
+              <td align="char" char=".">0.613</td>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">86</td>
+              <td align="char" char=".">223</td>
+              <td align="char" char=".">0.64</td>
+            </tr>
+            <tr>
+              <td>Perimenopausal status</td>
+              <td align="char" char=".">86</td>
+              <td align="char" char=".">80</td>
+              <td align="char" char=".">151</td>
+              <td/>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">174</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Postmenopausal status</td>
+              <td align="char" char=".">87</td>
+              <td align="char" char=".">73</td>
+              <td align="char" char=".">177</td>
+              <td/>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">87</td>
+              <td align="char" char=".">207</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Tumor size ≤20 mm</td>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">77</td>
+              <td align="char" char=".">184</td>
+              <td/>
+              <td align="char" char=".">96</td>
+              <td align="char" char=".">90</td>
+              <td align="char" char=".">212</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Tumor size &gt;20 mm</td>
+              <td align="char" char=".">83</td>
+              <td align="char" char=".">69</td>
+              <td align="char" char=".">180</td>
+              <td align="char" char=".">0.004</td>
+              <td align="char" char=".">92</td>
+              <td align="char" char=".">84</td>
+              <td align="char" char=".">213</td>
+              <td align="char" char=".">0.002</td>
+            </tr>
+            <tr>
+              <td>Histologic type</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Infiltrating ductal carcinoma</td>
+              <td align="char" char=".">84</td>
+              <td align="char" char=".">70</td>
+              <td align="char" char=".">184</td>
+              <td align="char" char=".">0.006</td>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">85</td>
+              <td align="char" char=".">218</td>
+              <td align="char" char=".">0.277</td>
+            </tr>
+            <tr>
+              <td>    Infiltrating lobular carcinoma</td>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">80</td>
+              <td align="char" char=".">164</td>
+              <td/>
+              <td align="char" char=".">97</td>
+              <td align="char" char=".">91</td>
+              <td align="char" char=".">205</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Others</td>
+              <td align="char" char=".">90</td>
+              <td align="char" char=".">84</td>
+              <td align="char" char=".">197</td>
+              <td/>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">91</td>
+              <td align="char" char=".">216</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>Tumor grade</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Histologic grade I</td>
+              <td align="char" char=".">91</td>
+              <td align="char" char=".">78</td>
+              <td align="char" char=".">170</td>
+              <td/>
+              <td align="char" char=".">98</td>
+              <td align="char" char=".">93</td>
+              <td align="char" char=".">205</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Histologic grade II</td>
+              <td align="char" char=".">89</td>
+              <td align="char" char=".">76</td>
+              <td align="char" char=".">171</td>
+              <td/>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">90</td>
+              <td align="char" char=".">189</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Histologic grade III</td>
+              <td align="char" char=".">79</td>
+              <td align="char" char=".">64</td>
+              <td align="char" char=".">144</td>
+              <td align="char" char=".">0.002</td>
+              <td align="char" char=".">93</td>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">192</td>
+              <td align="char" char=".">0.002</td>
+            </tr>
+            <tr>
+              <td>Tumor hormonal status</td>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Positive estrogen receptor</td>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">74</td>
+              <td align="char" char=".">188</td>
+              <td/>
+              <td align="char" char=".">96</td>
+              <td align="char" char=".">87</td>
+              <td align="char" char=".">216</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Negative estrogen receptor</td>
+              <td align="char" char=".">80</td>
+              <td align="char" char=".">71</td>
+              <td align="char" char=".">188</td>
+              <td align="char" char=".">0.049</td>
+              <td align="char" char=".">90</td>
+              <td align="char" char=".">83</td>
+              <td align="char" char=".">214</td>
+              <td align="char" char=".">0.02</td>
+            </tr>
+            <tr>
+              <td>    Positive progesterone receptor</td>
+              <td align="char" char=".">89</td>
+              <td align="char" char=".">74</td>
+              <td align="char" char=".">192</td>
+              <td/>
+              <td align="char" char=".">97</td>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">222</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Negative progesterone receptor</td>
+              <td align="char" char=".">80</td>
+              <td align="char" char=".">71</td>
+              <td align="char" char=".">185</td>
+              <td align="char" char=".">0.03</td>
+              <td align="char" char=".">90</td>
+              <td align="char" char=".">82</td>
+              <td align="char" char=".">209</td>
+              <td align="char" char=".">0.006</td>
+            </tr>
+            <tr>
+              <td>    Positive HER2 overexpression</td>
+              <td align="char" char=".">76</td>
+              <td align="char" char=".">61</td>
+              <td align="char" char=".">97</td>
+              <td align="char" char=".">0.03</td>
+              <td align="char" char=".">96</td>
+              <td align="char" char=".">96</td>
+              <td align="char" char=".">133</td>
+              <td align="char" char=".">0.379</td>
+            </tr>
+            <tr>
+              <td>    Negative HER2 overexpression</td>
+              <td align="char" char=".">83</td>
+              <td align="char" char=".">71</td>
+              <td align="char" char=".">187</td>
+              <td/>
+              <td align="char" char=".">92</td>
+              <td align="char" char=".">84</td>
+              <td align="char" char=".">215</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    No systemic adjuvant treatment</td>
+              <td align="char" char=".">83</td>
+              <td align="char" char=".">59</td>
+              <td align="char" char=".">134</td>
+              <td align="char" char=".">0.006</td>
+              <td align="char" char=".">96</td>
+              <td align="char" char=".">86</td>
+              <td align="char" char=".">203</td>
+              <td align="char" char=".">0.612</td>
+            </tr>
+            <tr>
+              <td>    All systemic adjuvant treatments</td>
+              <td align="char" char=".">86</td>
+              <td align="char" char=".">74</td>
+              <td align="char" char=".">191</td>
+              <td/>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">86</td>
+              <td align="char" char=".">219</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Only hormonal therapy</td>
+              <td align="char" char=".">88</td>
+              <td align="char" char=".">75</td>
+              <td align="char" char=".">159</td>
+              <td/>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">87</td>
+              <td align="char" char=".">173</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Chemo. with anthracyclines</td>
+              <td align="char" char=".">85</td>
+              <td align="char" char=".">75</td>
+              <td align="char" char=".">194</td>
+              <td/>
+              <td align="char" char=".">94</td>
+              <td align="char" char=".">86</td>
+              <td align="char" char=".">218</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    CMF chemotherapy</td>
+              <td align="char" char=".">68</td>
+              <td align="char" char=".">44</td>
+              <td align="char" char=".">134</td>
+              <td/>
+              <td align="char" char=".">95</td>
+              <td align="char" char=".">90</td>
+              <td align="char" char=".">220</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>    Other chemo. schedules</td>
+              <td align="char" char=".">75</td>
+              <td align="char" char=".">75</td>
+              <td align="char" char=".">102</td>
+              <td/>
+              <td align="char" char=".">96</td>
+              <td align="char" char=".">96</td>
+              <td align="char" char=".">123</td>
+              <td/>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>RFS, relapse-free survival; BCSS, breast cancer-specific survival; CMF, cyclophosphamide, methotrexate and 5-fluorouracil.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>Factors found to be significantly associated with shorter RFS in the multivariate Cox regression analysis are listed in <xref ref-type="table" rid="tbl3">Table 3</xref>. The examination of fewer than six lymph nodes was associated with worse RFS [hazard ratio, 1.44 (<italic>P</italic> = 0.029); 95% CI 1.03–2.00]. Factors found to be significantly associated with lower BCSS in the multivariate Cox regression analysis are also listed in <xref ref-type="table" rid="tbl3">Table 3</xref>. The examination of fewer than six lymph nodes was associated with worse BCSS [hazard ratio, 1.87 (<italic>P</italic> = 0.005); 95% CI 1.20–2.91].</p>
+      <table-wrap id="tbl3">
+        <label>
+          <bold>Table 3</bold>
+        </label>
+        <caption>
+          <p>Statistically significant variables in Cox regression analyses for RFS and BCSS</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td>Variable</td>
+              <td colspan="3">RFS</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>HR</td>
+              <td>C.I. 95%</td>
+              <td><italic>P</italic> value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fewer than six lymph nodes examined (compared with six or more nodes examined)</td>
+              <td align="char" char=".">1.44</td>
+              <td align="char" char="(">(1.03–2.00)</td>
+              <td align="char" char=".">0.029</td>
+            </tr>
+            <tr>
+              <td>Patient younger than 36 years (compared with older patients)</td>
+              <td align="char" char=".">2.39</td>
+              <td align="char" char="(">(1.60–3.57)</td>
+              <td align="char" char=".">0.000</td>
+            </tr>
+            <tr>
+              <td>Tumor larger than 20 mm (compared with tumors 20 mm or smaller)</td>
+              <td align="char" char=".">1.36</td>
+              <td align="char" char="(">(1.06–1.75)</td>
+              <td align="char" char=".">0.015</td>
+            </tr>
+            <tr>
+              <td>Infiltrating ductal carcinoma (compared with ‘other types’)</td>
+              <td align="char" char=".">1.56</td>
+              <td align="char" char="(">(1.10–2.21)</td>
+              <td align="char" char=".">0.015</td>
+            </tr>
+            <tr>
+              <td>Tumor histologic grade III (compared with grade I)</td>
+              <td align="char" char=".">1.74</td>
+              <td align="char" char="(">(1.14–2.66)</td>
+              <td align="char" char=".">0.01</td>
+            </tr>
+            <tr>
+              <td>Negative progesterone receptor status (compared with positive status)</td>
+              <td align="char" char=".">1.44</td>
+              <td align="char" char="(">(1.07–1.95)</td>
+              <td align="char" char=".">0.015</td>
+            </tr>
+            <tr>
+              <td>No administration of adjuvant systemic treatment (compared with administration of treatment)</td>
+              <td align="char" char=".">1.93</td>
+              <td align="char" char="(">(1.34–2.76)</td>
+              <td align="char" char=".">0.000</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <td/>
+              <td colspan="3">BCSS</td>
+            </tr>
+            <tr>
+              <td/>
+              <td>HR</td>
+              <td>C.I. 95%</td>
+              <td><italic>P</italic> value</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fewer than six examined nodes (compared with six or more nodes examined)</td>
+              <td align="char" char=".">1.87</td>
+              <td align="char" char="(">(1.20–2.91)</td>
+              <td align="char" char=".">0.005</td>
+            </tr>
+            <tr>
+              <td>Tumor larger than 20 mm (compared with smaller tumors)</td>
+              <td align="char" char=".">1.69</td>
+              <td align="char" char="(">(1.15–2.49)</td>
+              <td align="char" char=".">0.008</td>
+            </tr>
+            <tr>
+              <td>Negative progesterone receptor status (compared with positive status)</td>
+              <td align="char" char=".">1.73</td>
+              <td align="char" char="(">(1.15–2.60)</td>
+              <td align="char" char=".">0.005</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>RFS, relapse-free survival; BCSS, breast cancer-specific survival; HR, hazard ratio.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+    <sec>
+      <title>discussion</title>
+      <p>NNBC patients who have fewer than six nodes examined during axillary lymphadenectomy have a worse outcome with a greater risk of relapse and a shorter BCSS. Other adverse prognostic factors determined were age younger than 36 years, tumor size greater than 2 cm, tumor grade III, infiltrating ductal carcinoma (compared with other histological types) and negative hormonal receptors.</p>
+      <p>There is debate about the need for axillary lymphadenectomy and its optimum extent partly because it is associated with morbidity. Hack and colleagues [<xref ref-type="bibr" rid="bib26">26</xref>] found that approximately 70% of patients who underwent lymphadenectomy had arm or shoulder pain, weakness, numbness or reduced mobility. Consequently, there is evidence that the use of ALND is declining in the USA [<xref ref-type="bibr" rid="bib27">27</xref>] and also that its omission may even be associated with poorer outcomes [<xref ref-type="bibr" rid="bib11">11</xref>, <xref ref-type="bibr" rid="bib17">17</xref>, <xref ref-type="bibr" rid="bib28">28</xref>, <xref ref-type="bibr" rid="bib29">29</xref>]. Strategies for obtaining prognostic information without an ALND are being increasingly used. Sentinel node biopsy, when performed by experienced surgeons, has a high accuracy rate: Krag et al. [<xref ref-type="bibr" rid="bib20">20</xref>] reported an accuracy of 97% in a series of 443 patients. However, the false-negative rates for the 11 surgeons in this study varied from 0% to 28.6%. Data demonstrate that patients do obtain benefit in terms of post-operative morbidity from avoiding complete axillary dissection [<xref ref-type="bibr" rid="bib30">30</xref>]. However, there are no conclusive long-term data yet that reliably demonstrate the equivalence of patients' outcome measures with sentinel lymph node biopsy versus axillary dissection. Despite this, sentinel lymph node biopsy has become a widely used procedure in Europe and the USA. However, a significant number of women with clinically negative axillae continue to undergo ALND and the results of our study and those of other trials examining the optimal number of resected lymph nodes at axillary dissection for staging purposes remain important.</p>
+      <p>Axelsson et al. [<xref ref-type="bibr" rid="bib6">6</xref>] found a highly significant correlation between the number of nodes examined and axillary recurrence-free survival, overall recurrence-free survival and overall survival. Sosa [<xref ref-type="bibr" rid="bib7">7</xref>] and Sommer [<xref ref-type="bibr" rid="bib17">17</xref>], who recommended an examination of 16 nodes to ensure a high level of confidence that the nodes were negative, found similar results. Weir et al. [<xref ref-type="bibr" rid="bib10">10</xref>] evaluated pathologically node-negative patients in two groups: those who did not receive systemic therapy and those who did. In the group that did not receive adjuvant treatment, patients with fewer nodes removed had significantly higher rates of regional recurrence compared with those who had more nodes removed. This effect was not seen in patients who received systemic therapy, suggesting that the poorer prognosis associated with examination of fewer lymph nodes may be counterbalanced by the use of adjuvant systemic therapy. In our study, we did not reach the same conclusion as Weir et al. because we did not segregate our patients on the basis of whether or not they received systemic therapy [most of our patients (89%) received adjuvant systemic therapy]. In our study among all patients who received adjuvant systemic therapy, RFS was significantly longer in comparison with untreated patients (<italic>P</italic> = 0.006, see <xref ref-type="table" rid="tbl2">Table 2</xref>) while BCSS rates were statistically similar in the two groups (<italic>P</italic> = 0.612, see <xref ref-type="table" rid="tbl2">Table 2</xref>). Since chemotherapy was administered to those patients with breast tumors possessing adverse prognostic factors, these data can be inferred to provide indirect evidence that adjuvant therapy was beneficial among treated patients.</p>
+      <p>When only a few nodes are found in the surgical specimen, it may be the result of an inadequate dissection, because nodes were not found at gross pathologic examination, or because only a few nodes were actually present due to anatomic variation. Petrik et al. [<xref ref-type="bibr" rid="bib15">15</xref>] demonstrated a significant variation in the number of lymph nodes examined and an association between that variation and several patient, surgeon and hospital-related factors. In our study, the pathologic specimens were all submitted to a single hospital. Also, in this study, pathologic evaluation of lymph nodes did not routinely include immunohistochemical analysis. It is well known that more detailed evaluation of lymph nodes with immunohistochemistry will identify tumor cells missed on routine histological assessment and result in upstaging. The significance of these missed micrometastases, however, remains unclear [<xref ref-type="bibr" rid="bib31">31</xref>]. In our institution, 14% of patients with NNBC had fewer than six lymph nodes examined, a statistic that has to be improved because the adequacy of axillary dissection is the only variable that can be modified among those factors which may account for a limited number of lymph nodes detected in the surgical specimen (specimen handling, pathologic examination and surgical technique).</p>
+      <p>In conclusion, fewer than six examined lymph nodes following axillary dissection in NNBC patients were associated with a worse outcome, possibly due to understaging. Nodal status is an important determinant of adjuvant chemotherapy use, and understaged patients who could benefit from the administration of chemotherapy may not receive appropriate systemic therapy. The examination of fewer than six lymph nodes at axillary dissection should be considered an adverse prognostic factor in clinical practice, in conjunction with other established clinopathologic factors, when considering a patient for adjuvant systemic therapy.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>We thank all the staff of the Department of Oncology and Hematology, Clinic Hospital, Valencia, Spain.</p>
+    </ack>
+    <ref-list>
+      <ref id="bib1">
+        <label>1.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Miller</surname>
+              <given-names>BA</given-names>
+            </name>
+            <name>
+              <surname>Feuer</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name>
+              <surname>Hankey</surname>
+              <given-names>BF</given-names>
+            </name>
+          </person-group>
+          <article-title>Recent incidence trends for breast cancer in females and the relevance of early detection: An update</article-title>
+          <source>CA Cancer J Clin</source>
+          <year>1993</year>
+          <volume>43</volume>
+          <fpage>27</fpage>
+          <lpage>41</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib2">
+        <label>2.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chia</surname>
+              <given-names>S</given-names>
+            </name>
+            <name>
+              <surname>Speers</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Bryce</surname>
+              <given-names>C</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ten-years outcomes in a population-based cohort of node-negative, lymphatic and vascular invasion-negative early breast cancers without adjuvant systemic therapies</article-title>
+          <source>J Clin Oncol</source>
+          <year>2004</year>
+          <volume>22</volume>
+          <fpage>1630</fpage>
+          <lpage>1637</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib3">
+        <label>3.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hébert-Croteau</surname>
+              <given-names>N</given-names>
+            </name>
+            <name>
+              <surname>Brisson</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Latreille</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Compliance with consensus recommendations for systemic therapy is associated with improved survival of women with node-negative breast cancer</article-title>
+          <source>J Clin Oncol</source>
+          <year>2004</year>
+          <volume>22</volume>
+          <fpage>3685</fpage>
+          <lpage>3693</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib4">
+        <label>4.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wood</surname>
+              <given-names>A</given-names>
+            </name>
+          </person-group>
+          <article-title>Side effects of adjuvant treatment of breast cancer</article-title>
+          <source>N Engl J Med</source>
+          <year>2001</year>
+          <volume>344</volume>
+          <fpage>1997</fpage>
+          <lpage>2008</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib5">
+        <label>5.</label>
+        <nlm-citation citation-type="journal">
+          <article-title>Clinical practice guidelines for the care and the treatment of breast cancer: a Canadian consensus document</article-title>
+          <source>Can Med Assoc J</source>
+          <year>1998</year>
+          <volume>158</volume>
+          <supplement>Suppl 3</supplement>
+          <fpage>S22</fpage>
+          <lpage>S26</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib6">
+        <label>6.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Axelsson</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Henning</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Zedeler</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Axillary dissection of level I and II lymph nodes is important in breast cancer classification</article-title>
+          <source>Eur J Cancer</source>
+          <year>1992</year>
+          <volume>28</volume>
+          <fpage>1415</fpage>
+          <lpage>1418</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib7">
+        <label>7.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sosa</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Diener-West</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Gusev</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Association between extent of axillary lymph node dissection and survival in patients with stage I breast cancer</article-title>
+          <source>Ann Surg Oncol</source>
+          <year>1998</year>
+          <volume>5</volume>
+          <fpage>140</fpage>
+          <lpage>149</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib8">
+        <label>8.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Steele</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Forrest</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Gibson</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The efficacy of lower axillary sampling in obtaining lymph node status in breast cancer: a controlled randomized trial</article-title>
+          <source>Br J Surg</source>
+          <year>1985</year>
+          <volume>82</volume>
+          <fpage>368</fpage>
+          <lpage>369</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib9">
+        <label>9.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Forrest</surname>
+              <given-names>A</given-names>
+            </name>
+            <name>
+              <surname>Stewart</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Roberts</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Simple mastectomy and axillary node sampling (pectoral node biopsy) in the management of primary breast cancer</article-title>
+          <source>Ann Surg</source>
+          <year>1982</year>
+          <volume>9</volume>
+          <fpage>371</fpage>
+          <lpage>378</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib10">
+        <label>10.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Weir</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Speers</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>D'yachkova</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Prognostic significance of the number of axillary lymph nodes removed in patients with node-negative breast cancer</article-title>
+          <source>J Clin Oncol</source>
+          <year>2002</year>
+          <volume>20</volume>
+          <fpage>1793</fpage>
+          <lpage>1799</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib11">
+        <label>11.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krag</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Single</surname>
+              <given-names>R</given-names>
+            </name>
+          </person-group>
+          <article-title>Breast cancer survival according to number of nodes removed</article-title>
+          <source>Ann Surg Oncol</source>
+          <year>2003</year>
+          <volume>10</volume>
+          <fpage>1152</fpage>
+          <lpage>1159</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib12">
+        <label>12.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Salama</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Heimann</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>F</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Does the number of lymph nodes examined in patients with lymph node-negative breast carcinoma have prognostic significance?</article-title>
+          <source>Cancer</source>
+          <year>2005</year>
+          <volume>103</volume>
+          <fpage>664</fpage>
+          <lpage>671</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib13">
+        <label>13.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shaapveld</surname>
+              <given-names>M</given-names>
+            </name>
+            <name>
+              <surname>Otter</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>De Vries</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Variability in axillary lymph node dissection for breast cancer</article-title>
+          <source>J Surg Oncol</source>
+          <year>2004</year>
+          <volume>87</volume>
+          <fpage>4</fpage>
+          <lpage>12</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib14">
+        <label>14.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mersin</surname>
+              <given-names>H</given-names>
+            </name>
+            <name>
+              <surname>Yildirim</surname>
+              <given-names>E</given-names>
+            </name>
+            <name>
+              <surname>Bulut</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The prognostic significance of total lymph node number in patients with axillary lymph node-negative breast cancer</article-title>
+          <source>Eur J Surg Oncol</source>
+          <year>2003</year>
+          <volume>9</volume>
+          <fpage>132</fpage>
+          <lpage>138</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib15">
+        <label>15.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Petrik</surname>
+              <given-names>DW</given-names>
+            </name>
+            <name>
+              <surname>McCready</surname>
+              <given-names>DR</given-names>
+            </name>
+            <name>
+              <surname>Sawka</surname>
+              <given-names>CA</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Association between extent of axillary node dissection and patient, tumor, surgeon, and hospital factors in patients with early breast cancer</article-title>
+          <source>J Surg Oncol</source>
+          <year>2003</year>
+          <volume>82</volume>
+          <fpage>84</fpage>
+          <lpage>90</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib16">
+        <label>16.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Joslyn</surname>
+              <given-names>SA</given-names>
+            </name>
+            <name>
+              <surname>Konety</surname>
+              <given-names>BR</given-names>
+            </name>
+          </person-group>
+          <article-title>Effect of axillary lymphadenectomy on breast carcinoma survival</article-title>
+          <source>Breast Cancer Res Treat</source>
+          <year>2005</year>
+          <volume>91</volume>
+          <fpage>11</fpage>
+          <lpage>18</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib17">
+        <label>17.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Somner</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Dixon</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>Node retrieved in axillary lymph node dissections: recommendations for minimum numbers to be confident about node negative status</article-title>
+          <source>J Clin Pathol</source>
+          <year>2004</year>
+          <volume>57</volume>
+          <fpage>845</fpage>
+          <lpage>848</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib18">
+        <label>18.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Camp</surname>
+              <given-names>RL</given-names>
+            </name>
+            <name>
+              <surname>Rimm</surname>
+              <given-names>EB</given-names>
+            </name>
+            <name>
+              <surname>Rimm</surname>
+              <given-names>DL</given-names>
+            </name>
+          </person-group>
+          <article-title>A high number of tumor free axillary lymph nodes from patients with node negative breast carcinoma is associated with poor outcome</article-title>
+          <source>Cancer</source>
+          <year>2000</year>
+          <volume>88</volume>
+          <fpage>108</fpage>
+          <lpage>113</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib19">
+        <label>19.</label>
+        <nlm-citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sobin</surname>
+              <given-names>LH</given-names>
+            </name>
+            <name>
+              <surname>Wittekind</surname>
+              <given-names>CH</given-names>
+            </name>
+          </person-group>
+          <article-title>International Union Against Cancer (UICC): TNM Classification of Malignant Tumors, 6th edition</article-title>
+          <year>2002</year>
+          <publisher-loc>New York</publisher-loc>
+          <publisher-name>Wiley-Liss</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="bib20">
+        <label>20.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Krag</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Weaver</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Ashikaga</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>The sentinel node in breast cancer</article-title>
+          <source>N Engl J Med</source>
+          <year>1998</year>
+          <volume>339</volume>
+          <fpage>941</fpage>
+          <lpage>946</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib21">
+        <label>21.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Veronesi</surname>
+              <given-names>U</given-names>
+            </name>
+            <name>
+              <surname>Paganelli</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Viale</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>A randomized comparison of sentinel-node biopsy with routine axillary dissection in breast cancer</article-title>
+          <source>N Engl J Med</source>
+          <year>2003</year>
+          <volume>349</volume>
+          <fpage>546</fpage>
+          <lpage>553</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib22">
+        <label>22.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bloom</surname>
+              <given-names>HJG</given-names>
+            </name>
+            <name>
+              <surname>Richardson</surname>
+              <given-names>WW</given-names>
+            </name>
+          </person-group>
+          <article-title>Histological grading and prognosis in breast cancer</article-title>
+          <source>Br J Cancer</source>
+          <year>1957</year>
+          <volume>11</volume>
+          <fpage>350</fpage>
+          <lpage>377</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib23">
+        <label>23.</label>
+        <nlm-citation citation-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scarff</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name>
+              <surname>Torioni</surname>
+              <given-names>H</given-names>
+            </name>
+          </person-group>
+          <article-title>Histological Typing of Breast Tumors</article-title>
+          <year>1968</year>
+          <publisher-loc>Geneva</publisher-loc>
+          <publisher-name>WHO</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="bib24">
+        <label>24.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kaplan</surname>
+              <given-names>EL</given-names>
+            </name>
+            <name>
+              <surname>Meier</surname>
+              <given-names>P</given-names>
+            </name>
+          </person-group>
+          <article-title>Nonparametric estimation from incomplete observations</article-title>
+          <source>J Am Stat Assoc</source>
+          <year>1958</year>
+          <volume>53</volume>
+          <fpage>457</fpage>
+          <lpage>481</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib25">
+        <label>25.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Cox</surname>
+              <given-names>DR</given-names>
+            </name>
+          </person-group>
+          <article-title>Regression models and life-tables</article-title>
+          <source>J R Stat Soc</source>
+          <year>1972</year>
+          <volume>34</volume>
+          <fpage>187</fpage>
+          <lpage>220</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib26">
+        <label>26.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hack</surname>
+              <given-names>T</given-names>
+            </name>
+            <name>
+              <surname>Cohen</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Katz</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Physical and psychological morbidity after axillary lymph node dissection for breast cancer</article-title>
+          <source>J Clin Oncol</source>
+          <year>1999</year>
+          <volume>17</volume>
+          <fpage>143</fpage>
+          <lpage>149</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib27">
+        <label>27.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Du</surname>
+              <given-names>X</given-names>
+            </name>
+            <name>
+              <surname>Feeman</surname>
+              <given-names>J</given-names>
+            </name>
+            <name>
+              <surname>Goodwin</surname>
+              <given-names>J</given-names>
+            </name>
+          </person-group>
+          <article-title>The declining use of axillary dissection in patients with early stage breast cancer</article-title>
+          <source>Breast Cancer Res Treat</source>
+          <year>1999</year>
+          <volume>53</volume>
+          <fpage>137</fpage>
+          <lpage>144</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib28">
+        <label>28.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bland</surname>
+              <given-names>K</given-names>
+            </name>
+            <name>
+              <surname>Scott-Connor</surname>
+              <given-names>C</given-names>
+            </name>
+            <name>
+              <surname>Menck</surname>
+              <given-names>H</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Axillary dissection in breast-conserving surgery for stage I and II breast cancer: A National Cancer Data Base study of patterns of omission an implications for survival</article-title>
+          <source>J Am Coll Surg</source>
+          <year>1999</year>
+          <volume>188</volume>
+          <fpage>586</fpage>
+          <lpage>596</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib29">
+        <label>29.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Parmigiani</surname>
+              <given-names>G</given-names>
+            </name>
+            <name>
+              <surname>Berry</surname>
+              <given-names>D</given-names>
+            </name>
+            <name>
+              <surname>Winer</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Is axillary lymph node dissection indicated for early-stage breast cancer? A decision analysis</article-title>
+          <source>J Clin Oncol</source>
+          <year>1999</year>
+          <volume>17</volume>
+          <fpage>1465</fpage>
+          <lpage>1473</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib30">
+        <label>30.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mansel</surname>
+              <given-names>RE</given-names>
+            </name>
+            <name>
+              <surname>Fallowfield</surname>
+              <given-names>L</given-names>
+            </name>
+            <name>
+              <surname>Kissin</surname>
+              <given-names>M</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Randomized multicenter trial of sentinel node biopsy versus standard axillary treatment in operable breast cancer: the ALMANAC Trial</article-title>
+          <source>J Natl Cancer Inst</source>
+          <year>2006</year>
+          <volume>98</volume>
+          <fpage>599</fpage>
+          <lpage>609</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib31">
+        <label>31.</label>
+        <nlm-citation citation-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hermanek</surname>
+              <given-names>P</given-names>
+            </name>
+            <name>
+              <surname>Hutter</surname>
+              <given-names>R</given-names>
+            </name>
+            <name>
+              <surname>Sobin</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Classification of isolated tumor cells and micrometastasis</article-title>
+          <source>Cancer</source>
+          <year>1999</year>
+          <volume>86</volume>
+          <fpage>2668</fpage>
+          <lpage>2673</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

@@ -1,0 +1,3365 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE article SYSTEM "http://ej.iop.org/dtd/iopv1_5_2.dtd">
+<article artid="pmb343974">
+<article-metadata>
+<jnl-data jnlid="pmb">
+<jnl-fullname>Physics in Medicine and Biology</jnl-fullname>
+<jnl-abbreviation>Phys. Med. Biol.</jnl-abbreviation>
+<jnl-shortname>PMB</jnl-shortname>
+<jnl-issn>0031-9155</jnl-issn>
+<jnl-coden>PHMBA7</jnl-coden>
+<jnl-imprint>IOP Publishing</jnl-imprint>
+<jnl-web-address>stacks.iop.org/PMB</jnl-web-address></jnl-data>
+<volume-data>
+<year-publication>2010</year-publication>
+<volume-number>55</volume-number>
+</volume-data>
+<issue-data>
+<issue-number>9</issue-number>
+<coverdate>7 May 2010</coverdate>
+</issue-data>
+<article-data>
+<article-type type="paper" sort="regular"/>
+<type-number type="paper" artnum="009">9</type-number>
+<article-number>343974</article-number>
+<first-page>2555</first-page>
+<last-page>2572</last-page>
+<length>18</length>
+<pii>S0031-9155(10)43974-3</pii>
+<doi>10.1088/0031-9155/55/9/009</doi>
+<copyright>2010 Institute of Physics and Engineering in Medicine</copyright>
+<ccc>0031-9155/10/092555&plus;18&dollar;30.00</ccc>
+<printed>Printed in the UK</printed>
+<features colour="none" mmedia="no" suppdata="no"/>
+</article-data>
+</article-metadata>
+<header>
+<title-group>
+<title>Monte Carlo single-cell dosimetry of Auger-electron emitting radionuclides</title>
+<short-title>Monte Carlo single-cell dosimetry of Auger-electron emitting radionuclides</short-title>
+<ej-title>Monte Carlo single-cell dosimetry of Auger-electron emitting radionuclides</ej-title>
+</title-group>
+<author-group>
+<author address="pmb343974ad1">
+<first-names>C</first-names>
+<second-name>Bousis</second-name></author>
+<author address="pmb343974ad1">
+<first-names>D</first-names>
+<second-name>Emfietzoglou</second-name></author>
+<author address="pmb343974ad2">
+<first-names>P</first-names>
+<second-name>Hadjidoukas</second-name></author>
+<author address="pmb343974ad3" alt-address="pmb343974ad4" email="pmb343974ea1">
+<first-names>H</first-names>
+<second-name>Nikjoo</second-name></author>
+</author-group>
+<address-group>
+<address id="pmb343974ad1"><orgname>Department of Medical Physics, University of Ioannina</orgname>, Ioannina 451 10, <country>Greece</country></address>
+<address id="pmb343974ad2"><orgname>Department of Computer Science, University of Ioannina</orgname>, Ioannina 451 10, <country>Greece</country></address>
+<address id="pmb343974ad3"><orgname>Radiation Biophysics Group, Department of Oncology-Pathology, Karolinska Institutet</orgname>, Box 260, SE-171 76 Stockholm, <country>Sweden</country></address>
+<address id="pmb343974ad4" alt="yes">Author to whom any correspondence should be addressed</address>
+<e-address id="pmb343974ea1"><email mailto="Hooshang.nikjoo@ki.se">Hooshang.nikjoo@ki.se</email></e-address>
+</address-group>
+<history received="14 January 2010" finalform="4 March 2010" online="14 April 2010"/>
+<abstract-group>
+<abstract>
+<heading>Abstract</heading>
+<p indent="no">A hybrid Monte Carlo transport scheme combining event-by-event and condensed-history simulation with a full account of energy-loss straggling was used to study the dosimetric characteristics of the Auger-emitting radionuclides <sup>67</sup>Ga, <sup>99<italic>m</italic></sup>Tc, <sup>111</sup>In, <sup>123</sup>I, <sup>125</sup>I and <sup>201</sup>Tl at the single-cell level. The influence of the intracellular localization of the Auger radionuclide upon cellular <italic>S</italic>-values, radial dose rate profiles and dose-volume-histograms (DVHs) was investigated. For the case where the radiopharmaceutical was either internalized into the cytoplasm or remained bound onto the cell surface (non-internalized), the dose to the cell nucleus was found to differ significantly from the MIRD values and other published data. In this case, the assumption of a homogeneous distribution throughout the cell is shown to significantly overestimate the nuclear dose. A dosimetric case study relevant to the radioimmunotherapy of single lymphoma B-cells with <sup>125</sup>I and <sup>123</sup>I is presented.</p>
+</abstract>
+</abstract-group>
+<classifications>
+<keywords>
+<keyword>Auger dosimetry</keyword>
+<keyword>Monte Carlo</keyword>
+<keyword>radionuclides</keyword>
+<keyword>dosimetry</keyword>
+</keywords>
+</classifications>
+</header>
+<body numbering="bysection" refstyle="alphabetic">
+<sec-level1 id="pmb343974s1" label="1"><heading>Introduction</heading>
+<p indent="no">Absorbed dose calculations in targeted radionuclide therapy are conventionally based on the medical internal radiation dose (MIRD) formalism under the assumption of a uniform activity distribution (Kassis <cite linkend="pmb343974bib50" show="year">1992</cite>, Howell <cite linkend="pmb343974bib42" show="year">1994</cite>, Sgouros <cite linkend="pmb343974bib82" show="year">2005</cite>, Stabin <cite linkend="pmb343974bib85" show="year">2006</cite>). In such cases, it is implicitly assumed that all irradiated tumor cells will receive the same average tumor dose. However, various experimental studies for several radiopharmaceuticals that were performed on cell cultures <italic>in vitro</italic> have revealed that the distribution of activity in tumors is highly non-uniform (Makrigiorgos <italic>et al</italic> <cite linkend="pmb343974bib63" show="year">1990a</cite>, <cite linkend="pmb343974bib65" show="year">1990b</cite>, Griffiths <italic>et al</italic> <cite linkend="pmb343974bib34" show="year">1999</cite>, Kriehuber <italic>et al</italic> <cite linkend="pmb343974bib60" show="year">2004</cite>, Neti and Howell <cite linkend="pmb343974bib67" show="year">2006</cite>). The heterogeneous distribution of radioactivity has been one of the main reasons for the widespread usage of beta emitters which by virtue of their long irradiation range (spanning several cell diameters) are capable of cross-irradiating non-targeted tumor cells, thus, to some extent, counteracting the effects of heterogeneity (Kassis <cite linkend="pmb343974bib52" show="year">2008</cite>). Although the importance of the crossfire effect in solid tumor-targeted radionuclide therapy is indisputable (Boswell and Brechbiel <cite linkend="pmb343974bib07" show="year">2005</cite>), it comes with the price of increased normal tissue damage, especially in hematologic or disseminated disease which may exhibit single cells in the circulation. The therapeutic advantages of Auger emitters in such cases have been extensively discussed in the literature (Kassis <cite linkend="pmb343974bib51" show="year">2004</cite>). Theoretically, Auger-emitting radionuclides provide two of the requirements for optimized targeted therapy, namely, high level of cytotoxicity and short range radiobiological effectiveness (Howell <cite linkend="pmb343974bib43" show="year">2008</cite>).</p>
+<p>From a dosimetric point of view most Auger electrons have sub-keV energies and a range in tissue up to a few hundred nanometers. Thus, the subcellular localization of Auger-emitting radionuclides becomes crucial since absorbed dose calculations in targeted radionuclide therapy would be most effective if performed on a spatial scale comparable to the penetration range of the emitted radiation (Roeske <italic>et al</italic> <cite linkend="pmb343974bib79" show="year">2008</cite>). In fact, due to specific mechanisms that localize the drug in particular areas of tumor cells (Pauwels <italic>et al</italic> <cite linkend="pmb343974bib75" show="year">1998</cite>), the intracellular distribution and absorbed dose profile of Auger emitters may also be nonuniform with a profound impact on the cellular biological response (Charlton <cite linkend="pmb343974bib15" show="year">1986</cite>, Charlton <italic>et al</italic> <cite linkend="pmb343974bib16" show="year">1994</cite>, Humm and Cobb <cite linkend="pmb343974bib46" show="year">1990</cite>, Bardi&egrave;s and Pihet <cite linkend="pmb343974bib03" show="year">2000</cite>, Nikjoo <italic>et al</italic> <cite linkend="pmb343974bib69" show="year">2008</cite>). A large and self-consistent body of radiobiological data has shown that the radiotoxicity and the therapeutic potential of Auger emitters varied with their subcellular distribution (Kassis <cite linkend="pmb343974bib51" show="year">2004</cite>). For instance, Kassis and co-workers in a series of experimental studies (Kassis <italic>et al</italic> <cite linkend="pmb343974bib53" show="year">1980</cite>, <cite linkend="pmb343974bib55" show="year">1982</cite>, <cite linkend="pmb343974bib54" show="year">1983</cite>, <cite linkend="pmb343974bib58" show="year">1985</cite>, <cite linkend="pmb343974bib56" show="year">1988</cite>) clearly indicated that nuclear rather than cytoplasmic or surface decay contributed primarily to the cytosidal effect for several Auger emitters. These considerations have motivated us to work on the development of effective carrier systems for their intranuclear delivery and localization in close proximity to nuclear DNA (Haefliger <italic>et al</italic> <cite linkend="pmb343974bib35" show="year">2005</cite>, Buchegger <italic>et al</italic> <cite linkend="pmb343974bib14" show="year">2006</cite>, Boswell and Brechbiel <cite linkend="pmb343974bib08" show="year">2007</cite>, Pouget <italic>et al</italic> <cite linkend="pmb343974bib77" show="year">2008</cite>, Costantini <italic>et al</italic> <cite linkend="pmb343974bib20" show="year">2008</cite>).</p>
+<p>Although the internal dosimetry performed in patients receiving targeted radionuclide therapy is nowhere near the sophistication of external beam dosimetry protocols, absorbed dose calculations still play an important role in assessing the efficacy of new radiopharmaceuticals (Stabin <cite linkend="pmb343974bib84" show="year">2003</cite>). A variety of techniques have been employed for determining the absorbed dose at the subcellular level by Auger emitters, including both analytical and Monte Carlo (MC) methods. Early studies made extensive use of Berger's (1973) scaled dose point kernel data for monoenergetic electrons (Jungerman <italic>et al</italic> <cite linkend="pmb343974bib49" show="year">1984</cite>, Faraggi <italic>et al</italic> <cite linkend="pmb343974bib27" show="year">1994</cite>, <cite linkend="pmb343974bib28" show="year">1998</cite>, Gardin <italic>et al</italic> <cite linkend="pmb343974bib30" show="year">1995</cite>). A systematic dosimetry study for several Auger emitters distributed in different subcellular compartments (surface, cytoplasm, nucleus, whole cell) was carried out by Goddu <italic>et al</italic> (<cite linkend="pmb343974bib32" show="year">1997</cite>) using the analytic range-energy expression of Cole (<cite linkend="pmb343974bib19" show="year">1969</cite>), as improved by Howell <italic>et al</italic> (<cite linkend="pmb343974bib44" show="year">1989</cite>). This work constitutes the MIRD <italic>cellular S</italic>-values. More recent work along these lines includes the study of Yuan <italic>et al</italic> (<cite linkend="pmb343974bib91" show="year">2008</cite>) who used the MIRD analytic approach to illustrate the influence of heterogeneity upon the cellular <italic>S</italic>-values of several Auger emitters. An alternative approach is the use of MC codes to simulate stochastically the energy loss of electrons in matter during their slowing down process (Nikjoo <italic>et al</italic> <cite linkend="pmb343974bib73" show="year">2006</cite>). Owing to their high degree of spatial resolution (i.e. down to the molecular level), MC track structure codes simulating all collisions in an event-by-event manner are most suitable for the dosimetry of Auger emitters. There are many reports on MC-based dosimetry at the cell level for low-energy Auger electrons using different track-structure codes (Charlton <cite linkend="pmb343974bib15" show="year">1986</cite>, Booz <italic>et al</italic> <cite linkend="pmb343974bib06" show="year">1987</cite>, Charlton <italic>et al</italic> <cite linkend="pmb343974bib17" show="year">1989</cite>, Wright <italic>et al</italic> <cite linkend="pmb343974bib90" show="year">1990</cite>, Pomplun <cite linkend="pmb343974bib76" show="year">1991</cite>, &Uuml;nak <cite linkend="pmb343974bib89" show="year">1997</cite>, &Uuml;nak <italic>et al</italic> <cite linkend="pmb343974bib88" show="year">1997</cite>, Ft&aacute;&ccaron;nikov&aacute; and B&ouml;hm <cite linkend="pmb343974bib29" show="year">2000</cite>, Li <italic>et al</italic> <cite linkend="pmb343974bib61" show="year">2001</cite>, Nikjoo <italic>et al</italic> <cite linkend="pmb343974bib71" show="year">1996</cite>, <cite linkend="pmb343974bib72" show="year">2000</cite>, <cite linkend="pmb343974bib68" show="year">2002</cite>, <cite linkend="pmb343974bib70" show="year">2008</cite>, Hindorf <italic>et al</italic> <cite linkend="pmb343974bib38" show="year">2005</cite>, <cite linkend="pmb343974bib37" show="year">2007</cite>, Emfietzoglou <italic>et al</italic> <cite linkend="pmb343974bib21" show="year">2007</cite>, <cite linkend="pmb343974bib22" show="year">2008</cite>, Chen <cite linkend="pmb343974bib18" show="year">2008</cite>, Liu <italic>et al</italic> <cite linkend="pmb343974bib62" show="year">2009</cite>). However, differences in the cross-section models used for describing the interactions of sub-keV electrons with water (Uehara <italic>et al</italic> <cite linkend="pmb343974bib87" show="year">1999</cite>, Emfietzoglou and Nikjoo <cite linkend="pmb343974bib24" show="year">2005</cite>), which is the medium used to approximate the cellular milieu, can sometimes lead to sizeable differences in electron track structure parameters that influence the dosimetry at the subcellular level (Nikjoo <italic>et al</italic> 2008). It is therefore important that calculations are carried out with many different codes in order to assess the sensitivity of the results on the cross-section input or other transport approximations used in the codes.</p>
+<p>In this work, we present MC calculated absorbed dose and dose rates as well as dose-volume-histograms (DVHs) at the level of an isolated single cell for six widely used Auger-emitting radionuclides (<sup>67</sup>Ga, <sup>99<italic>m</italic></sup>Tc, <sup>111</sup>In, <sup>123</sup>I, <sup>125</sup>I and <sup>201</sup>Tl) using the MC4 track structure code (Emfietzoglou <italic>et al</italic> <cite linkend="pmb343974bib25" show="year">2000a</cite>, <cite linkend="pmb343974bib26" show="year">2000b</cite>, Bousis <italic>et al</italic> <cite linkend="pmb343974bib09" show="year">2008a</cite>). The influence of the subcellular localization of the Auger radionuclide is investigated in some detail. In addition, dosimetric calculations are presented for the clinically relevant case of non-internalizing (surface-bound) and internalizing monoclonal antibody (MAb) labeled with either <sup>125</sup>I or <sup>123</sup>I that targets a typical lymphoma B-cell. The Auger emission spectra (including Coster&ndash;Kronig and IC electrons) used in the present work (see table <tabref linkend="pmb343974tab01">1</tabref>) were taken from the AAPM Nuclear Medicine Task Group Report (Howell <cite linkend="pmb343974bib41" show="year">1992</cite>).
+<table id="pmb343974tab01" frame="topbot" indent="no">
+<caption id="pmb343974tc01" label="Table 1"><p indent="no">Average electron energies <italic>E<sub>i</sub></italic> (in keV) and yields <italic>n<sub>i</sub></italic> per decay used in the Monte Carlo simulations.</p></caption>
+<tgroup cols="9">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="left"/>
+<colspec colnum="3" colname="col3" align="left"/>
+<colspec colnum="4" colname="col4" align="left"/>
+<colspec colnum="5" colname="col5" align="left"/>
+<colspec colnum="6" colname="col6" align="left"/>
+<colspec colnum="7" colname="col7" align="left"/>
+<colspec colnum="8" colname="col8" align="left"/>
+<colspec colnum="9" colname="col9" align="left"/>
+<spanspec spanname="1to3" namest="col1" nameend="col3" align="center"/>
+<spanspec spanname="4to6" namest="col4" nameend="col6" align="center"/>
+<spanspec spanname="7to9" namest="col7" nameend="col9" align="center"/>
+<spanspec spanname="1to9" namest="col1" nameend="col9" align="center"/>
+<thead>
+<row>
+<entry spanname="1to3"><sup>67</sup>Ga</entry>
+<entry spanname="4to6"><sup>111</sup>In</entry>
+<entry spanname="7to9"><sup>125</sup>I</entry>
+</row>
+<row>
+<entry spanname="1to3"><?TeX \hrulefill ?></entry>
+<entry spanname="4to6"><?TeX \hrulefill ?></entry>
+<entry spanname="7to9"><?TeX \hrulefill ?></entry>
+</row>
+<row>
+<entry>Process</entry>
+<entry><italic>E<sub>i</sub></italic></entry>
+<entry><italic>n<sub>i</sub></italic></entry>
+<entry>Process</entry>
+<entry><italic>E<sub>i</sub></italic></entry>
+<entry><italic>n<sub>i</sub></italic></entry>
+<entry>Process</entry>
+<entry><italic>E<sub>i</sub></italic></entry>
+<entry><italic>n<sub>i</sub></italic></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>CK MMX</entry>
+<entry>0.0624</entry>
+<entry>2.07</entry>
+<entry>CK NNX</entry>
+<entry>0.0388</entry>
+<entry>2.54</entry>
+<entry>CK NNX</entry>
+<entry>0.0299</entry>
+<entry>3.51</entry>
+</row>
+<row>
+<entry>CL LLX</entry>
+<entry>0.0729</entry>
+<entry>0.346</entry>
+<entry>CK MMX</entry>
+<entry>0.125</entry>
+<entry>0.915</entry>
+<entry>Auger NXY</entry>
+<entry>0.0324</entry>
+<entry>10.9</entry>
+</row>
+<row>
+<entry>Auger LMM</entry>
+<entry>0.921</entry>
+<entry>1.68</entry>
+<entry>CK LLX</entry>
+<entry>0.183</entry>
+<entry>0.151</entry>
+<entry>CK MMX</entry>
+<entry>0.127</entry>
+<entry>1.44</entry>
+</row>
+<row>
+<entry>Auger LMX</entry>
+<entry>0.953</entry>
+<entry>0.0116</entry>
+<entry>Auger MXY</entry>
+<entry>0.350</entry>
+<entry>2.09</entry>
+<entry>CK LLX</entry>
+<entry>0.219</entry>
+<entry>0.264</entry>
+</row>
+<row>
+<entry>Auger KLL</entry>
+<entry>7.43</entry>
+<entry>0.470</entry>
+<entry>Auger LMM</entry>
+<entry>2.59</entry>
+<entry>0.835</entry>
+<entry>Auger MXY</entry>
+<entry>0.461</entry>
+<entry>3.28</entry>
+</row>
+<row>
+<entry>Auger KLX</entry>
+<entry>8.44</entry>
+<entry>0.116</entry>
+<entry>Auger LMX</entry>
+<entry>3.06</entry>
+<entry>0.190</entry>
+<entry>Auger LMM</entry>
+<entry>3.05</entry>
+<entry>1.25</entry>
+</row>
+<row>
+<entry>Auger KXY</entry>
+<entry>9.46</entry>
+<entry>0.0082</entry>
+<entry>Auger LXY</entry>
+<entry>3.53</entry>
+<entry>0.0109</entry>
+<entry>IC 1 K</entry>
+<entry>3.65</entry>
+<entry>0.191</entry>
+</row>
+<row>
+<entry>IC 2 K</entry>
+<entry>81.6</entry>
+<entry>0.0027</entry>
+<entry>Auger KLL</entry>
+<entry>19.1</entry>
+<entry>0.103</entry>
+<entry>Auger LMX</entry>
+<entry>3.67</entry>
+<entry>0.340</entry>
+</row>
+<row>
+<entry>IC 1 K</entry>
+<entry>83.7</entry>
+<entry>0.270</entry>
+<entry>Auger KLX</entry>
+<entry>22.3</entry>
+<entry>0.0394</entry>
+<entry>Auger LXY</entry>
+<entry>4.34</entry>
+<entry>0.0211</entry>
+</row>
+<row>
+<entry>IC 1 L</entry>
+<entry>92.2</entry>
+<entry>0.0376</entry>
+<entry>Auger KXY</entry>
+<entry>25.5</entry>
+<entry>0.0036</entry>
+<entry>Auger KLL</entry>
+<entry>22.4</entry>
+<entry>0.138</entry>
+</row>
+<row>
+<entry>IC 1 M,N&hellip;</entry>
+<entry>93.2</entry>
+<entry>0.0066</entry>
+<entry>IC 1 K</entry>
+<entry>145</entry>
+<entry>0.0824</entry>
+<entry>Auger KLX</entry>
+<entry>26.4</entry>
+<entry>0.059</entry>
+</row>
+<row>
+<entry>IC 3 K</entry>
+<entry>175</entry>
+<entry>0.0034</entry>
+<entry>IC 1 L</entry>
+<entry>167</entry>
+<entry>0.01</entry>
+<entry>Auger KXY</entry>
+<entry>30.2</entry>
+<entry>0.0065</entry>
+</row>
+<row>
+<entry>IC 5 K</entry>
+<entry>291</entry>
+<entry>0.001</entry>
+<entry>IC 1 M,N&hellip;</entry>
+<entry>171</entry>
+<entry>0.0014</entry>
+<entry>IC 1 L</entry>
+<entry>30.6</entry>
+<entry>0.110</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>IC 2 K</entry>
+<entry>219</entry>
+<entry>0.0521</entry>
+<entry>IC 1 M,N&hellip;</entry>
+<entry>34.1</entry>
+<entry>0.0284</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>IC 2 L</entry>
+<entry>241</entry>
+<entry>0.0091</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>IC 2 M,N&hellip;</entry>
+<entry>245</entry>
+<entry>0.0019</entry>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry spanname="1to9"><?TeX \hrulefill ?></entry>
+</row>
+<row>
+<entry spanname="1to3"><sup>201</sup>Tl</entry>
+<entry spanname="4to6"><sup>99<italic>m</italic></sup>Tc</entry>
+<entry spanname="7to9"><sup>123</sup>I</entry>
+</row>
+<row>
+<entry spanname="1to3"><?TeX \hrulefill ?></entry>
+<entry spanname="4to6"><?TeX \hrulefill ?></entry>
+<entry spanname="7to9"><?TeX \hrulefill ?></entry>
+</row>
+<row>
+<entry>Process</entry>
+<entry><italic>E<sub>i</sub></italic></entry>
+<entry><italic>n<sub>i</sub></italic></entry>
+<entry>Process</entry>
+<entry><italic>E<sub>i</sub></italic></entry>
+<entry><italic>n<sub>i</sub></italic></entry>
+<entry>Process</entry>
+<entry><italic>E<sub>i</sub></italic></entry>
+<entry><italic>n<sub>i</sub></italic></entry>
+</row>
+<row><entry spanname="1to9"><?TeX \hrulefill ?></entry></row>
+<row>
+<entry>Auger OXY</entry>
+<entry>0.0161</entry>
+<entry>17.6</entry>
+<entry>CK NNX</entry>
+<entry>0.0334</entry>
+<entry>1.98</entry>
+<entry>CK NNX</entry>
+<entry>0.0298</entry>
+<entry>2.10</entry>
+</row>
+<row>
+<entry>CK OOX</entry>
+<entry>0.0453</entry>
+<entry>2.84</entry>
+<entry>CK LLX</entry>
+<entry>0.0429</entry>
+<entry>0.0193</entry>
+<entry>Auger NXY</entry>
+<entry>0.0325</entry>
+<entry>6.54</entry>
+</row>
+<row>
+<entry>Auger NXY</entry>
+<entry>0.0644</entry>
+<entry>7.93</entry>
+<entry>CK MMX</entry>
+<entry>0.116</entry>
+<entry>0.747</entry>
+<entry>CK MMX</entry>
+<entry>0.127</entry>
+<entry>0.869</entry>
+</row>
+<row>
+<entry>CK NNX</entry>
+<entry>0.172</entry>
+<entry>4.41</entry>
+<entry>Auger MXY</entry>
+<entry>0.226</entry>
+<entry>1.10</entry>
+<entry>CK LLX</entry>
+<entry>0.213</entry>
+<entry>0.156</entry>
+</row>
+<row>
+<entry>CK MMX</entry>
+<entry>0.406</entry>
+<entry>0.923</entry>
+<entry>IC 1 M,N&hellip;</entry>
+<entry>1.82</entry>
+<entry>0.991</entry>
+<entry>Auger MXY</entry>
+<entry>0.461</entry>
+<entry>1.97</entry>
+</row>
+<row>
+<entry>CK LLX</entry>
+<entry>0.773</entry>
+<entry>0.322</entry>
+<entry>Auger LMM</entry>
+<entry>2.05</entry>
+<entry>0.0868</entry>
+<entry>Auger LMM</entry>
+<entry>3.04</entry>
+<entry>0.751</entry>
+</row>
+<row>
+<entry>IC 1 M,N&hellip;</entry>
+<entry>0.895</entry>
+<entry>0.608</entry>
+<entry>Auger LMX</entry>
+<entry>2.32</entry>
+<entry>0.0137</entry>
+<entry>Auger LMX</entry>
+<entry>3.66</entry>
+<entry>0.202</entry>
+</row>
+<row>
+<entry>Auger MXY</entry>
+<entry>1.83</entry>
+<entry>2.03</entry>
+<entry>Auger LXY</entry>
+<entry>2.66</entry>
+<entry>0.0012</entry>
+<entry>Auger LXY</entry>
+<entry>4.28</entry>
+<entry>0.013</entry>
+</row>
+<row>
+<entry>Auger LMM</entry>
+<entry>7.58</entry>
+<entry>0.541</entry>
+<entry>Auger KLL</entry>
+<entry>15.3</entry>
+<entry>0.0126</entry>
+<entry>Auger KLL</entry>
+<entry>22.4</entry>
+<entry>0.0838</entry>
+</row>
+<row>
+<entry>Auger LMX</entry>
+<entry>9.85</entry>
+<entry>0.235</entry>
+<entry>Auger KLX</entry>
+<entry>17.8</entry>
+<entry>0.0047</entry>
+<entry>Auger KLX</entry>
+<entry>26.3</entry>
+<entry>0.0384</entry>
+</row>
+<row>
+<entry>Auger LXY</entry>
+<entry>12.0</entry>
+<entry>0.0191</entry>
+<entry>IC 2 K</entry>
+<entry>119</entry>
+<entry>0.0843</entry>
+<entry>Auger KXY</entry>
+<entry>30.2</entry>
+<entry>0.0035</entry>
+</row>
+<row>
+<entry>IC 2 L</entry>
+<entry>12.2</entry>
+<entry>0.0022</entry>
+<entry>IC 3 K</entry>
+<entry>122</entry>
+<entry>0.0059</entry>
+<entry>IC 1 K</entry>
+<entry>127</entry>
+<entry>0.130</entry>
+</row>
+<row>
+<entry>IC 3 L</entry>
+<entry>15.9</entry>
+<entry>0.0861</entry>
+<entry>IC 2 L</entry>
+<entry>137</entry>
+<entry>0.0136</entry>
+<entry>IC 1 L</entry>
+<entry>154</entry>
+<entry>0.0179</entry>
+</row>
+<row>
+<entry>IC 4 L</entry>
+<entry>17.4</entry>
+<entry>0.0724</entry>
+<entry>IC 3 L</entry>
+<entry>140</entry>
+<entry>0.0062</entry>
+<entry>IC 1 M,N&hellip;</entry>
+<entry>158</entry>
+<entry>0.0053</entry>
+</row>
+<row>
+<entry>IC 3 M,N&hellip;</entry>
+<entry>27.7</entry>
+<entry>0.0236</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>IC 4 M,N&hellip;</entry>
+<entry>29.4</entry>
+<entry>0.0237</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>IC 5 K</entry>
+<entry>52.2</entry>
+<entry>0.0797</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Auger KLL</entry>
+<entry>55.0</entry>
+<entry>0.0268</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Auger KLX</entry>
+<entry>66.3</entry>
+<entry>0.0153</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Auger KXY</entry>
+<entry>77.5</entry>
+<entry>0.0015</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>IC 6 K</entry>
+<entry>82.8</entry>
+<entry>0.0025</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>IC 7 K</entry>
+<entry>84.3</entry>
+<entry>0.159</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>IC 5 L</entry>
+<entry>121</entry>
+<entry>0.0152</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>IC 5 M,N&hellip;</entry>
+<entry>133</entry>
+<entry>0.0027</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>IC 7 L</entry>
+<entry>153</entry>
+<entry>0.0269</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>IC 7 M,N&hellip;</entry>
+<entry>165</entry>
+<entry>0.0094</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+</tbody>
+</tgroup></table></p>
+</sec-level1>
+<sec-level1 id="pmb343974s2" label="2"><heading>Methodology</heading>
+<sec-level2 id="pmb343974s2-1" label="2.1"><heading>Cell model</heading>
+<p indent="no">The cell model used for the present calculations consists of two concentric homogeneous spheres of unit density water representing the cell and the cell nucleus. The radionuclides were assumed to be uniformly distributed in one of the following regions of the cell: throughout the cell (C), cytoplasm (Cy), cell surface (CS), or cell nucleus (N). This model was applied to simulate a typical lymphocyte with a nuclear radius of 4 &micro;m and a cell radius of 5 &micro;m (Germain <italic>et al</italic> <cite linkend="pmb343974bib31" show="year">1981</cite>). These are also the typical dimensions for the V79 Chinese hamster cells which have been used in a large number of experimental studies as reviewed by Kassis (<cite linkend="pmb343974bib51" show="year">2004</cite>). In addition, results are presented for sphere radii of 6.35, 7.7 and 9.05 &micro;m corresponding to the size of a Raji cell (7.7 &plusmn; 1.35 &micro;m), which is often used to model a typical lymphoma B-cell (Griffiths <italic>et al</italic> <cite linkend="pmb343974bib34" show="year">1999</cite>). The radius of the Raji cell nucleus was assumed to be 75&percnt; of the cellular radius for all sizes.</p></sec-level2>
+<sec-level2 id="pmb343974s2-2" label="2.2"><heading>Cellular dosimetry</heading>
+<p indent="no">Absorbed dose calculations for internally administered radionuclides are conveniently performed using the formalism proposed by the MIRD Committee whereby the mean absorbed dose <inline-eqn><?TeX \overline D ( {r_k \leftarrow r_h } )?><inline-graphic format="GIF" filename="images/pmb343974ieqn1.gif"/></inline-eqn> to target region <italic>r<sub>k</sub></italic> from activity in the source region <italic>r<sub>h</sub></italic> is given by
+<display-eqn id="pmb343974eqn01" eqnnum="1"><?TeX \overline D ( {r_k \leftarrow r_h } ) = \tilde A_h S( {r_k \leftarrow r_h } ),
+?><eqn-graphic format="GIF" filename="images/pmb343974eqn01.gif"/></display-eqn>where <inline-eqn><?TeX \tilde A_h?><inline-graphic format="GIF" filename="images/pmb343974ieqn2.gif"/></inline-eqn> is the cumulated activity in the source region <italic>r<sub>h</sub></italic> and <italic>S</italic> is the absorbed dose to the target region <italic>r<sub>k</sub></italic> per unit cumulated activity in the source region <italic>r<sub>h</sub></italic> defined by
+<display-eqn id="pmb343974eqn02" eqnnum="2"><?TeX S( {r_k \leftarrow r_h } ) = k\sum\limits_i {\frac{{n_i E_i \phi _i ( {r_k \leftarrow r_h } )}}{{m_k }}},
+?><eqn-graphic format="GIF" filename="images/pmb343974eqn02.gif"/></display-eqn>where <italic>m<sub>k</sub></italic> is the mass of the target region, <italic>n<sub>i</sub></italic> is the number of electrons emitted per transition <italic>i</italic>, <italic>E<sub>i</sub></italic> is the electron energy emitted per transition <italic>i</italic>, &phis;<sub><italic>i</italic></sub>(<italic>r<sub>k</sub></italic> &larr; <italic>r<sub>h</sub></italic>) is the fraction of energy emitted from the source region <italic>r<sub>h</sub></italic> that is absorbed in the target region <italic>r<sub>k</sub></italic> per transition <italic>i</italic>, and <italic>k</italic> is a proportionality constant. Two target regions were considered: either the whole cell or the cell nucleus. Assuming a mean density of 1 g cm<sup>&minus;3</sup> over the entire cell, the <italic>S</italic>-value can be expressed as (Gardin <italic>et al</italic> <cite linkend="pmb343974bib30" show="year">1995</cite>)
+<display-eqn id="pmb343974eqn03" eqnnum="3"><?TeX S( {r_k \leftarrow r_h } ) = \frac{k}{{R^3 }}\sum\limits_i {n_i E_i \phi _i ( {r_k \leftarrow r_h } )},
+?><eqn-graphic format="GIF" filename="images/pmb343974eqn03.gif"/></display-eqn>where <italic>k</italic> &equals; 3.82&thinsp;cGy&thinsp;keV<sup>&minus;1</sup>&thinsp;&micro;m<sup>3</sup>, <italic>E<sub>i</sub></italic> is in keV, and <italic>R</italic> is the radius of the cell or the cell nucleus in &micro;m.</p>
+<p>Calculation of dose rate distributions inside the cell was carried out by dividing the cellular region into concentric shells (annuli) of equal thickness. The total dose rate to the <italic>j</italic>th annulus from all components of the emitted radiations may be written in the MIRD formalism as
+<display-eqn id="pmb343974eqn04" eqnnum="4"><?TeX \dot D^{( j )} = kA\sum\limits_i {\frac{{n_i E_i \phi _i ^{( j )} }}{{m^{( j )} }}},
+?><eqn-graphic format="GIF" filename="images/pmb343974eqn04.gif"/></display-eqn>where <italic>A</italic> is the source activity in the cell, &phis;<sup>(<italic>j</italic>)</sup><sub valign="yes"><italic>i</italic></sub> is the absorbed fraction for the <italic>j</italic>th annulus and <italic>m</italic><sup>(<italic>j</italic>)</sup> is the mass of the <italic>j</italic>th annulus.</p></sec-level2>
+<sec-level2 id="pmb343974s2-3" label="2.3"><heading>Monte Carlo code</heading>
+<p indent="no">Dosimetric calculations are undertaken using both event-by-event and condensed-history modules of our in-house MC4 code (Emfietzoglou <italic>et al</italic> <cite linkend="pmb343974bib25" show="year">2000a</cite>, <cite linkend="pmb343974bib26" show="year">2000b</cite>, Bousis <italic>et al</italic> <cite linkend="pmb343974bib09" show="year">2008a</cite>). All electrons (primary and secondary) are followed down to 1 Ry (13.6 eV). Electron transport above 10 keV is based on a condensed-history scheme whereas for electrons below 10 keV event-by-event simulation is carried out. It should be pointed out that although the fraction of high-energy electrons (&gt;10 keV) emitted per decay of the Auger emitters examined is small (&lt;5&percnt;), their contribution to the present results is sizeable and cannot be neglected. The physics models and transport approximations used in MC4 have been presented in detail elsewhere (Emfietzoglou <italic>et al</italic> <cite linkend="pmb343974bib25" show="year">2000a</cite>, <cite linkend="pmb343974bib26" show="year">2000b</cite>, Bousis <italic>et al</italic> <cite linkend="pmb343974bib09" show="year">2008a</cite>, <cite linkend="pmb343974bib11" show="year">2008b</cite>, <cite linkend="pmb343974bib12" show="year">2009b</cite>), so only a brief summary will be given here. In the event-by-event simulation (&lt;10 keV), inelastic cross sections are calculated semi-empirically from the Born and Bethe theories (Inokuti <cite linkend="pmb343974bib47" show="year">1971</cite>) using a parameterized oscillator strength for water while elastic cross sections are obtained from the screened Rutherford formula and the Brenner-Zaider parameterization (Brenner and Zaider <cite linkend="pmb343974bib13" show="year">1983</cite>). In the condensed-history scheme (&gt;10 keV) we adopt a hybrid approach whereby elastic collisions are simulated individually according to the relativistic Mott single-scattering cross sections as factorized by Berger (<cite linkend="pmb343974bib04" show="year">1963</cite>), whereas for inelastic collisions we distinguish between soft and hard events depending on whether the energy loss is, respectively, smaller or higher than 1 keV. Hard inelastic collisions are modeled individually by a relativistic version of M&ouml;ller's formula which accounts for the binding energy of each shell in the water molecule (Kim <italic>et al</italic> <cite linkend="pmb343974bib59" show="year">2000</cite>). For the soft inelastic collisions we go beyond stopping power theory using the analytic straggling distributions of Salvat <italic>et al</italic> (<cite linkend="pmb343974bib80" show="year">2003</cite>) which were here calculated from our relativistic inelastic cross sections for water. For electron energies above 10 keV, the present condensed-history scheme provides cellular <italic>S</italic>-values that are within 5&percnt; of those of an event-by-event simulation (Bousis <italic>et al</italic> <cite linkend="pmb343974bib10" show="year">2009a</cite>). Furthermore, dose-point-kernels and depth-dose-distributions in water up to 1 MeV incident electron energies calculated by the present code are in good agreement with those obtained by other general-purpose codes (Bousis <italic>et al</italic> <cite linkend="pmb343974bib09" show="year">2008a</cite>, <cite linkend="pmb343974bib11" show="year">2008b</cite>, <cite linkend="pmb343974bib12" show="year">2009b</cite>).</p>
+<p>For each emitted electron energy of table <tabref linkend="pmb343974tab01">1</tabref>, we simulated 1000&thinsp;000 primary electron tracks till complete stopping, i.e. down to our cut-off energy of 13.6 eV. The point of origin is selected randomly within the specified (source) volume (e.g. whole cell, cytoplasm, nucleus, surface), while the initial direction is sampled isotropically. The absorbed energy was scored in spherical shells 1 nm thick. After calculating the absorbed energy in the target volume, the <italic>S</italic>-values and the dose rates for the total spectrum were computed from equations (<eqnref linkend="pmb343974eqn03">3</eqnref>) and (<eqnref linkend="pmb343974eqn04">4</eqnref>), where the contribution of the each Auger-electron to the total dose deposition is weighted by the probability of emission (or yield) as indicated in equations (<eqnref linkend="pmb343974eqn03">3</eqnref>) and (<eqnref linkend="pmb343974eqn04">4</eqnref>). Note that the simulation follows electrons even if outside the target sphere since it is possible for the electrons to re-enter the scoring volume following large-angle scattering events. Owing to the isotropic emission of the primary particles, not all of the electrons emitted from a surface-bound radionuclide will enter the target volume.</p></sec-level2>
+<sec-level2 id="pmb343974s2-4" label="2.4"><heading>Case study for iodines <sup>123</sup>I and <sup>125</sup>I</heading>
+<p indent="no">Currently, there exist in the market two FDA-approved radiopharmaceuticals (Zevalin and Bexxar) for the treatment of non-Hodgkin's lymphoma (NHL). Both use CD20-targeting MAbs that are not internalized in the cell, labeled with the &beta;-emitters <sup>90</sup>Y (Zevalin) and <sup>131</sup>I (Bexxar). A recent dosimetry study by Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>) showed that the Auger emitters <sup>125</sup>I and <sup>123</sup>I have greater potential than <sup>131</sup>I for the treatment of leukemic spread in lymphoma patients. In the present work, we revisit and improve upon some of the calculations of Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>) by using (i) the full Auger spectrum of <sup>123</sup>I and <sup>125</sup>I, and (ii) a more accurate MC transport scheme with full account of straggling which goes beyond the continuous-slowing-down-approximation used by Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>). The case of both a non-internalizing and internalizing radiopharmaceutical was considered corresponding, for example, to the case of a CD20- and a CD22-targeting MAb, respectively. The former antigen is being targeted by both Zevalin and Bexxar whereas the latter will be more suitable for Auger radionuclides that by virtue of their short irradiation ranges will minimize the cross-dose to nearby normal cells. This is particularly important for hematologic tumors (or long circulating MAbs) where collateral damage to marrow cells can lead to myelosuppression. The assumptions made in the present calculations are the same as those used by Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>). In brief, the non-internalizing radiopharmaceutical was assumed to bind to 128&thinsp;000 receptors on the cell surface (Press <italic>et al</italic> <cite linkend="pmb343974bib78" show="year">1989</cite>) immediately after the administration and remained bound. On the other hand, the internalizing radiopharmaceutical was assumed to rapidly enter the cell so that approximately 10<sup>7</sup> receptors are taken up per cell per day (Hansen <italic>et al</italic> <cite linkend="pmb343974bib36" show="year">1996</cite>). It is also assumed that the iodine remained trapped inside the cell once it was internalized and that, on average, 0.76 atoms are bound to a MAb (Govindan <italic>et al</italic> <cite linkend="pmb343974bib33" show="year">1999</cite>). The assumption of permanent retention is certainly more critical for the long lived <sup>125</sup>I (<italic>T</italic><sub>1/2</sub> &equals; 60 days) than for the short lived <sup>123</sup>I (<italic>T</italic><sub>1/2</sub> &equals; 13.2 h), especially in view of the <italic>in vitro</italic> experiments of Hansen <italic>et al</italic> (<cite linkend="pmb343974bib36" show="year">1996</cite>) and Stein <italic>et al</italic> (<cite linkend="pmb343974bib86" show="year">2003</cite>) which indicate that a sizeable fraction (20&ndash;40&percnt;) of the initial surface-bound radioactivity can be eliminated from the cell within the first 2&ndash;3 days for a residualizing internalized MAb. Nevertheless, since the same assumptions have been adopted by Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>), the above approximation does not affect the comparison. Calculations were also performed for the clinically relevant case where the whole-body dose is constrained to 0.5 Gy. Assuming 10<sup>7</sup> B-cells per 1 mL of blood and a total blood volume of 5 L, a whole-body dose of 0.5 Gy translates to an administered activity of 33 GBq for <sup>123</sup>I and 590 MBq for <sup>125</sup>I (Hindorf <italic>et al</italic> <cite linkend="pmb343974bib37" show="year">2007</cite>).</p></sec-level2></sec-level1>
+<sec-level1 id="pmb343974s3" label="3"><heading>Results</heading>
+<p indent="no">In table <tabref linkend="pmb343974tab02">2</tabref> we report the mean energy deposited per decay for the six Auger radionuclides uniformly distributed in a 10 &micro;m sphere of unit density water. Comparison is made against the results of Humm <italic>et al</italic> (<cite linkend="pmb343974bib45" show="year">1980</cite>) based on Berger's scaled point kernel data for monoenergetic electrons, Goddu <italic>et al</italic> (<cite linkend="pmb343974bib32" show="year">1997</cite>) based on analytic range-energy expressions for electrons, &Uuml;nak <italic>et al</italic> (<cite linkend="pmb343974bib88" show="year">1997</cite>) based on their MC computer code, and Ft&aacute;&ccaron;nikov&aacute; and B&ouml;hm (<cite linkend="pmb343974bib29" show="year">2000</cite>) based on the ETRACK code (Ito <cite linkend="pmb343974bib48" show="year">1988</cite>). The present results are in good agreement with those of previous studies with difference being less than 10&percnt;.
+<table id="pmb343974tab02" frame="topbot" indent="no">
+<caption id="pmb343974tc02" label="Table 2"><p indent="no">Calculated energy deposited in 10 &micro;m diameter spheres with a uniform distribution of Auger-emitting radionuclides.</p></caption>
+<tgroup cols="10">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="left"/>
+<colspec colnum="3" colname="col3" align="left"/>
+<colspec colnum="4" colname="col4" align="left"/>
+<colspec colnum="5" colname="col5" align="left"/>
+<colspec colnum="6" colname="col6" align="left"/>
+<colspec colnum="7" colname="col7" align="left"/>
+<colspec colnum="8" colname="col8" align="left"/>
+<colspec colnum="9" colname="col9" align="left"/>
+<colspec colnum="10" colname="col10" align="left"/>
+<spanspec spanname="2to5" namest="col2" nameend="col5" align="center"/>
+<spanspec spanname="6to10" namest="col6" nameend="col10" align="center"/>
+<spanspec spanname="1to10" namest="col1" nameend="col10" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry spanname="2to5">Total particle energy emitted (keV)</entry>
+<entry spanname="6to10">Energy absorbed (keV)</entry>
+</row>
+<row>
+<entry/>
+<entry spanname="2to5"><?TeX \hrulefill ?></entry>
+<entry spanname="6to10"><?TeX \hrulefill ?></entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry>Goddu<sup>b</sup>/</entry>
+</row>
+<row>
+<entry>Radionuclide</entry>
+<entry>Humm<sup>a</sup></entry>
+<entry>MC4<sup>c</sup></entry>
+<entry>Unak<sup>d</sup></entry>
+<entry>ETRACK<sup>e</sup></entry>
+<entry>Humm<sup>a</sup></entry>
+<entry>Goddu<sup>b</sup></entry>
+<entry>Unak<sup>d</sup></entry>
+<entry>ETRACK<sup>e</sup></entry>
+<entry>MC4</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><sup>67</sup>Ga</entry>
+<entry/>
+<entry>34.0</entry>
+<entry/>
+<entry>34.0</entry>
+<entry/>
+<entry>&numsp;6.1</entry>
+<entry/>
+<entry>&numsp;5.9</entry>
+<entry>&numsp;6.3</entry>
+</row>
+<row>
+<entry><sup>111</sup>In</entry>
+<entry/>
+<entry>34.7</entry>
+<entry/>
+<entry>34.7</entry>
+<entry/>
+<entry>&numsp;4.8</entry>
+<entry/>
+<entry>&numsp;4.8</entry>
+<entry>&numsp;5.1</entry>
+</row>
+<row>
+<entry><sup>125</sup>I</entry>
+<entry>19.9</entry>
+<entry>19.5</entry>
+<entry>19.8</entry>
+<entry>19.5</entry>
+<entry>11.9</entry>
+<entry>11.4</entry>
+<entry>10.8</entry>
+<entry>10.9</entry>
+<entry>12.1</entry>
+</row>
+<row>
+<entry><sup>201</sup>Tl</entry>
+<entry/>
+<entry>45.4</entry>
+<entry>44.7</entry>
+<entry>45.4</entry>
+<entry/>
+<entry>13.9</entry>
+<entry>13.0</entry>
+<entry>13.8</entry>
+<entry>12.8</entry>
+</row>
+<row>
+<entry><sup>99<italic>m</italic></sup>Tc</entry>
+<entry/>
+<entry>16.2</entry>
+<entry>17.3</entry>
+<entry>16.2</entry>
+<entry/>
+<entry>&numsp;2.6</entry>
+<entry>&numsp;2.7</entry>
+<entry>&numsp;2.6</entry>
+<entry>&numsp;2.7</entry>
+</row>
+<row>
+<entry><sup>123</sup>I</entry>
+<entry>28.4</entry>
+<entry>27.5</entry>
+<entry/>
+<entry>27.5</entry>
+<entry>&numsp;5.2</entry>
+<entry>&numsp;5.1</entry>
+<entry/>
+<entry>&numsp;5.1</entry>
+<entry>&numsp;5.4</entry>
+</row>
+</tbody>
+<tfoot><sup>a</sup> Data taken from Humm <italic>et al</italic> (<cite linkend="pmb343974bib45" show="year">1980</cite>).</tfoot>
+<tfoot><sup>b</sup> Data taken from Goddu <italic>et al</italic> (<cite linkend="pmb343974bib32" show="year">1997</cite>).</tfoot>
+<tfoot><sup>c</sup> Goddu and MC4 uses the same electron energy spectra taken from Howell (<cite linkend="pmb343974bib41" show="year">1992</cite>).</tfoot>
+<tfoot><sup>d</sup> Data taken from &Uuml;nak <italic>et al</italic> (<cite linkend="pmb343974bib88" show="year">1997</cite>), &Uuml;nak (<cite linkend="pmb343974bib89" show="year">1997</cite>).</tfoot>
+<tfoot><sup>e</sup> Data taken from Ft&aacute;&ccaron;nikov&aacute; and B&ouml;hm (<cite linkend="pmb343974bib29" show="year">2000</cite>).</tfoot>
+</tgroup></table></p>
+<p>Table <tabref linkend="pmb343974tab03">3</tabref> lists cellular <italic>S</italic>-values for the six Auger radionuclides and five source&ndash;target configurations, namely, cell to cell (C&larr;C), cell-surface to cell (C&larr;CS), nucleus to nucleus (N&larr;N), cytoplasm to nucleus (N&larr;Cy), and cell-surface to nucleus (N&larr;CS). Tabulations are for a cell of radius 5 &micro;m with a concentric nucleus of radius 4 &micro;m. Our results are compared with the MIRD values (Goddu <italic>et al</italic> <cite linkend="pmb343974bib32" show="year">1997</cite>) as well as with those obtained by the ETRACK code (Ft&aacute;&ccaron;nikov&aacute; and B&ouml;hm <cite linkend="pmb343974bib29" show="year">2000</cite>). The percentage values in the parentheses correspond to the relative differences of the MIRD and ETRACK values from our calculations. The deviations between our results and MIRD or ETRACK are generally smaller than 10&percnt; for the source&ndash;target combinations C&larr;C, C&larr;CS and N&larr;N, but increase up to &sim;25&percnt; and &sim;60&percnt; for the N&larr;Cy and N&larr;CS combinations, respectively. Given that nuclear localization is critical for the radiobiological effectiveness of Auger emitters, in table <tabref linkend="pmb343974tab04">4</tabref> we list the ratios between the average dose rate to the nucleus computed for three tracer localizations (nucleus, cytoplasm and surface) and the average dose rate to the whole cell calculated for a uniform distribution throughout the cell. The data are based on the <italic>S</italic>-values of table <tabref linkend="pmb343974tab03">3</tabref> assuming the same activity for all the tracer localizations.
+<table id="pmb343974tab03" frame="topbot">
+<caption id="pmb343974tc03" label="Table 3"><p indent="no"><italic>S</italic>-values for Auger-emitting radionuclides in cellular spheres with <italic>R<sub>C</sub></italic> &equals; 5&thinsp;&micro;m and <italic>R<sub>N</sub></italic> &equals; 4&thinsp;&micro;m.</p></caption>
+<tgroup cols="7">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="left"/>
+<colspec colnum="3" colname="col3" align="left"/>
+<colspec colnum="4" colname="col4" align="left"/>
+<colspec colnum="5" colname="col5" align="left"/>
+<colspec colnum="6" colname="col6" align="left"/>
+<colspec colnum="7" colname="col7" align="left"/>
+<spanspec spanname="1to2" namest="col1" nameend="col2" align="center"/>
+<thead>
+<row>
+<entry colname="col1" align="left" spanname="1to2">Radionuclide</entry>
+<entry>S(C&larr;C) (Gy/Bq s)</entry>
+<entry>S(C &larr; CS) (Gy/Bq s)</entry>
+<entry>S(N &larr; N) (Gy/Bq s)</entry>
+<entry>S(N &larr; Cy) (Gy/Bq s)</entry>
+<entry>S(N &larr; CS) (Gy/Bq s)</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><sup>67</sup>Ga</entry>
+<entry>MC4</entry>
+<entry>1.92 &times; 10<sup>&minus;3</sup></entry>
+<entry>9.39 &times; 10<sup>&minus;4</sup></entry>
+<entry>3.62 &times; 10<sup>&minus;3</sup></entry>
+<entry>5.17 &times; 10<sup>&minus;4</sup></entry>
+<entry>1.41 &times; 10<sup>&minus;4</sup></entry>
+</row>
+<row><entry/>
+<entry>MIRD<sup>a</sup></entry>
+<entry>1.86 &times; 10<sup>&minus;3</sup> (&minus;3.22&percnt;)</entry>
+<entry>9.94 &times; 10<sup>&minus;4</sup> (&plus;5.53&percnt;)</entry>
+<entry>3.45 &times; 10<sup>&minus;3</sup> (&minus;4.93&percnt;)</entry>
+<entry>6.32 &times; 10<sup>&minus;4</sup> (&plus;18.20&percnt;)</entry>
+<entry>2.64 &times; 10<sup>&minus;4</sup> (&plus;46.59&percnt;)</entry>
+</row>
+<row><entry/>
+<entry>ETRACK<sup>b</sup></entry>
+<entry>1.81 &times; 10<sup>&minus;3</sup> (&minus;6.08&percnt;)</entry>
+<entry>9.62 &times; 10<sup>&minus;4</sup> (&plus;2.39&percnt;)</entry>
+<entry>3.38 &times; 10<sup>&minus;3</sup> (&minus;7.10&percnt;)</entry>
+<entry>5.81 &times; 10<sup>&minus;4</sup> (&plus;11.01&percnt;)</entry>
+<entry>2.22 &times; 10<sup>&minus;4</sup> (&plus;36.49&percnt;)</entry>
+</row>
+<row>
+<entry><sup>111</sup>In</entry>
+<entry>MC4</entry>
+<entry>1.56 &times; 10<sup>&minus;3</sup></entry>
+<entry>8.54 &times; 10<sup>&minus;4</sup></entry>
+<entry>2.85 &times; 10<sup>&minus;3</sup></entry>
+<entry>3.01 &times; 10<sup>&minus;4</sup></entry>
+<entry>2.64 &times; 10<sup>&minus;4</sup></entry>
+</row>
+<row><entry/>
+<entry>MIRD<sup>a</sup></entry>
+<entry>1.47 &times; 10<sup>&minus;3</sup> (&minus;6.12&percnt;)</entry>
+<entry>8.03 &times; 10<sup>&minus;4</sup> (&minus;6.35&percnt;)</entry>
+<entry>2.70 &times; 10<sup>&minus;3</sup> (&minus;5.56&percnt;)</entry>
+<entry>3.03 &times; 10<sup>&minus;4</sup> (&plus;0.66&percnt;)</entry>
+<entry>1.94 &times; 10<sup>&minus;4</sup> (&minus;36.08&percnt;)</entry>
+</row>
+<row><entry/>
+<entry>ETRACK<sup>b</sup></entry>
+<entry>1.47 &times; 10<sup>&minus;3</sup> (&minus;6.12&percnt;)</entry>
+<entry>8.02 &times; 10<sup>&minus;4</sup> (&minus;6.48&percnt;)</entry>
+<entry>2.72 &times; 10<sup>&minus;3</sup> (&minus;4.78&percnt;)</entry>
+<entry>2.95 &times; 10<sup>&minus;4</sup> (&minus;2.03&percnt;)</entry>
+<entry>1.88 &times; 10<sup>&minus;4</sup> (&minus;40.42&percnt;)</entry>
+</row>
+<row>
+<entry><sup>125</sup>I</entry>
+<entry>MC4</entry>
+<entry>3.71 &times; 10<sup>&minus;3</sup></entry>
+<entry>2.01 &times; 10<sup>&minus;3</sup></entry>
+<entry>6.87 &times; 10<sup>&minus;3</sup></entry>
+<entry>6.94 &times; 10<sup>&minus;4</sup></entry>
+<entry>4.18 &times; 10<sup>&minus;4</sup></entry>
+</row>
+<row><entry/>
+<entry>MIRD<sup>a</sup></entry>
+<entry>3.51 &times; 10<sup>&minus;3</sup> (&minus;5.70&percnt;)</entry>
+<entry>1.86 &times; 10<sup>&minus;3</sup> (&minus;8.06&percnt;)</entry>
+<entry>6.60 &times; 10<sup>&minus;3</sup> (&minus;4.09&percnt;)</entry>
+<entry>5.94 &times; 10<sup>&minus;4</sup> (&minus;16.83&percnt;)</entry>
+<entry>2.62 &times; 10<sup>&minus;4</sup> (&minus;59.54&percnt;)</entry>
+</row>
+<row><entry/>
+<entry>ETRACK<sup>b</sup></entry>
+<entry>3.34 &times; 10<sup>&minus;3</sup> (&minus;11.08&percnt;)</entry>
+<entry>1.80 &times; 10<sup>&minus;3</sup> (&minus;11.67&percnt;)</entry>
+<entry>6.25 &times; 10<sup>&minus;3</sup> (&minus;9.92&percnt;)</entry>
+<entry>6.37 &times; 10<sup>&minus;4</sup> (&minus;8.95&percnt;)</entry>
+<entry>3.16 &times; 10<sup>&minus;4</sup> (&minus;32.28&percnt;)</entry>
+</row>
+<row>
+<entry><sup>201</sup>Tl</entry>
+<entry>MC4</entry>
+<entry>4.60 &times; 10<sup>&minus;3</sup></entry>
+<entry>2.50 &times; 10<sup>&minus;3</sup></entry>
+<entry>8.26 &times; 10<sup>&minus;3</sup></entry>
+<entry>1.20 &times; 10<sup>&minus;3</sup></entry>
+<entry>5.51 &times; 10<sup>&minus;4</sup></entry>
+</row>
+<row><entry/>
+<entry>MIRD<sup>a</sup></entry>
+<entry>4.24 &times; 10<sup>&minus;3</sup> (&minus;8.49&percnt;)</entry>
+<entry>2.29 &times; 10<sup>&minus;3</sup> (&minus;9.17&percnt;)</entry>
+<entry>7.83 &times; 10<sup>&minus;3</sup> (&minus;5.49&percnt;)</entry>
+<entry>1.29 &times; 10<sup>&minus;3</sup> (&plus;6.98&percnt;)</entry>
+<entry>6.91 &times; 10<sup>&minus;4</sup> (&plus;20.26&percnt;)</entry>
+</row>
+<row><entry/>
+<entry>ETRACK<sup>b</sup></entry>
+<entry>4.23 &times; 10<sup>&minus;3</sup> (&minus;8.75&percnt;)</entry>
+<entry>2.27 &times; 10<sup>&minus;3</sup> (&minus;10.13&percnt;)</entry>
+<entry>7.83 &times; 10<sup>&minus;3</sup> (&minus;5.49&percnt;)</entry>
+<entry>1.27 &times; 10<sup>&minus;3</sup> (&plus;5.51&percnt;)</entry>
+<entry>6.48 &times; 10<sup>&minus;4</sup> (&plus;14.97&percnt;)</entry>
+</row>
+<row>
+<entry><sup>99<italic>m</italic></sup>Tc</entry>
+<entry>MC4</entry>
+<entry>8.36 &times; 10<sup>&minus;4</sup></entry>
+<entry>4.26 &times; 10<sup>&minus;4</sup></entry>
+<entry>1.59 &times; 10<sup>&minus;3</sup></entry>
+<entry>8.46 &times; 10<sup>&minus;5</sup></entry>
+<entry>4.80 &times; 10<sup>&minus;5</sup></entry>
+</row>
+<row><entry/>
+<entry>MIRD<sup>a</sup></entry>
+<entry>8.16 &times; 10<sup>&minus;4</sup> (&minus;2.45&percnt;)</entry>
+<entry>4.23 &times; 10<sup>&minus;4</sup> (&minus;0.71&percnt;)</entry>
+<entry>1.55 &times; 10<sup>&minus;3</sup> (&minus;2.58&percnt;)</entry>
+<entry>8.68 &times; 10<sup>&minus;5</sup> (&plus;2.53&percnt;)</entry>
+<entry>4.76 &times; 10<sup>&minus;5</sup> (&minus;0.84&percnt;)</entry>
+</row>
+<row><entry/>
+<entry>ETRACK<sup>b</sup></entry>
+<entry>8.01 &times; 10<sup>&minus;4</sup> (&minus;4.37&percnt;)</entry>
+<entry>4.13 &times; 10<sup>&minus;4</sup> (&minus;3.15&percnt;)</entry>
+<entry>1.53 &times; 10<sup>&minus;3</sup> (&minus;3.92&percnt;)</entry>
+<entry>7.41 &times; 10<sup>&minus;5</sup> (&minus;14.17&percnt;)</entry>
+<entry>3.90 &times; 10<sup>&minus;5</sup> (&minus;23.08&percnt;)</entry>
+</row>
+<row>
+<entry><sup>123</sup>I</entry>
+<entry>MC4</entry>
+<entry>1.65 &times; 10<sup>&minus;3</sup></entry>
+<entry>9.01 &times; 10<sup>&minus;4</sup></entry>
+<entry>3.05 &times; 10<sup>&minus;3</sup></entry>
+<entry>3.35 &times; 10<sup>&minus;4</sup></entry>
+<entry>2.14 &times; 10<sup>&minus;4</sup></entry>
+</row>
+<row><entry/>
+<entry>MIRD<sup>a</sup></entry>
+<entry>1.56 &times; 10<sup>&minus;3</sup> (&minus;5.77&percnt;)</entry>
+<entry>8.36 &times; 10<sup>&minus;4</sup> (&minus;7.78&percnt;)</entry>
+<entry>2.93 &times; 10<sup>&minus;3</sup> (&minus;4.10&percnt;)</entry>
+<entry>2.72 &times; 10<sup>&minus;4</sup> (&minus;23.16&percnt;)</entry>
+<entry>1.40 &times; 10<sup>&minus;4</sup> (&minus;52.86&percnt;)</entry>
+</row>
+<row><entry/>
+<entry>ETRACK<sup>b</sup></entry>
+<entry>1.56 &times; 10<sup>&minus;3</sup> (&minus;5.77&percnt;)</entry>
+<entry>8.37 &times; 10<sup>&minus;4</sup> (&minus;7.65&percnt;)</entry>
+<entry>2.93 &times; 10<sup>&minus;3</sup> (&minus;4.10&percnt;)</entry>
+<entry>2.66 &times; 10<sup>&minus;4</sup> (&minus;25.94&percnt;)</entry>
+<entry>1.42 &times; 10<sup>&minus;4</sup> (&minus;50.70&percnt;)</entry>
+</row>
+</tbody>
+<tfoot><sup>a</sup> Data taken from Goddu <italic>et al</italic> (<cite linkend="pmb343974bib32" show="year">1997</cite>).</tfoot>
+<tfoot><sup>b</sup> Data taken from Ft&aacute;&ccaron;nikov&aacute; and B&ouml;hm (<cite linkend="pmb343974bib29" show="year">2000</cite>).</tfoot>
+</tgroup></table>
+<table id="pmb343974tab04" frame="topbot">
+<caption id="pmb343974tc04" label="Table 4"><p indent="no">Ratios between the dose rate <inline-eqn><?TeX \dot D?><inline-graphic format="GIF" filename="images/pmb343974ieqn3.gif"/></inline-eqn> to the nucleus computed for three tracer localizations (nucleus, cytoplasm and surface) and the dose rate to the whole cell calculated for a distribution throughout the cell.</p></caption>
+<tgroup cols="7">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="left"/>
+<colspec colnum="3" colname="col3" align="left"/>
+<colspec colnum="4" colname="col4" align="left"/>
+<colspec colnum="5" colname="col5" align="left"/>
+<colspec colnum="6" colname="col6" align="left"/>
+<colspec colnum="7" colname="col7" align="left"/>
+<thead>
+<row>
+<entry>Ratio</entry>
+<entry><sup>67</sup>Ga</entry>
+<entry><sup>111</sup>In</entry>
+<entry><sup>125</sup>I</entry>
+<entry><sup>201</sup>Tl</entry>
+<entry><sup>99<italic>m</italic></sup>Tc</entry>
+<entry><sup>123</sup>I</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><inline-eqn><?TeX \frac{{\dot D{\rm (N} \leftarrow {\rm N)}}}{{\dot D{\rm (C} \leftarrow {\rm C)}}}?><inline-graphic format="GIF" filename="images/pmb343974ieqn4.gif"/></inline-eqn></entry>
+<entry>1.89</entry>
+<entry>1.83</entry>
+<entry>1.85</entry>
+<entry>1.80</entry>
+<entry>1.90</entry>
+<entry>1.85</entry>
+</row>
+<row>
+<entry><inline-eqn><?TeX \frac{{\dot D{\rm (N} \leftarrow {\rm Cy)}}}{{\dot D{\rm (C} \leftarrow {\rm C)}}}?><inline-graphic format="GIF" filename="images/pmb343974ieqn5.gif"/></inline-eqn></entry>
+<entry>0.27</entry>
+<entry>0.19</entry>
+<entry>0.19</entry>
+<entry>0.26</entry>
+<entry>0.10</entry>
+<entry>0.20</entry>
+</row>
+<row>
+<entry><inline-eqn><?TeX \frac{{\dot D{\rm (N} \leftarrow {\rm CS)}}}{{\dot D{\rm (C} \leftarrow {\rm C)}}}?><inline-graphic format="GIF" filename="images/pmb343974ieqn6.gif"/></inline-eqn></entry>
+<entry>0.073</entry>
+<entry>0.17</entry>
+<entry>0.11</entry>
+<entry>0.12</entry>
+<entry>0.057</entry>
+<entry>0.13</entry>
+</row>
+</tbody>
+</tgroup></table></p>
+<p>In figures <figref linkend="pmb343974fig01" override="yes">1(a)&ndash;(d)</figref> the absorbed dose rate is plotted as a function of the distance from the center of the cell for different distributions of the Auger radionuclides, namely, throughout the nucleus, the cytoplasm, the whole cell or the cell surface. The calculations are based on an activity of either 1 MBq cm<sup>&minus;3</sup> when the nucleus, the cytoplasm, or the whole cell is the target, or 1 MBq cm<sup>&minus;2</sup> when the target is the cell surface. The calculations are for a cell of radius 5 &micro;m with a concentric nucleus of radius 4 &micro;m. The dose rate was assessed in concentric spherical shells at equidistant intervals of 200 nm starting from the cellular center. The results show that except for the case where the radionuclide is distributed throughout the whole cell, the dose rate inside the cell can vary considerably depending on the subcellular localization of the radionuclide. Note that the data demonstrate illogical behavior at the center of the cell (see, for example, <sup>125</sup>I in figure <figref linkend="pmb343974fig01" override="yes">1(a)</figref>) due to numerical integration issues stemming from the small number of events scored in the first spherical shell.
+<figure id="pmb343974fig01">
+<graphic>
+<graphic-file version="print" format="EPS" filename="images/pmb343974fig01.eps" width="31pc"/>
+<graphic-file version="ej" format="JPEG" filename="images/pmb343974fig01.jpg"/>
+</graphic>
+<caption id="pmb343974fc01" label="Figure 1"><p indent="no">The absorbed dose rate as a function of the distance from the center of the cell (<italic>R<sub>C</sub></italic> &equals; 5&thinsp;&micro;m, <italic>R<sub>N</sub></italic> &equals; 4&thinsp;&micro;m) for different intracellular localization of the six Auger-emitting radionuclides having a uniform distribution of 1 MBq cm<sup>&minus;3</sup> in the nucleus (a), the cytoplasm (b), the whole cell (c) or 1 MBq cm<sup>&minus;2</sup> on the cell surface (d). For the case of a surface-bound radioactivity, the <italic>y</italic>-axis (i.e. the absorbed dose rate) is in log-scale. The dose rate was assessed in concentric spherical shells at equidistant intervals of 200 nm starting from the center of the cell.</p></caption></figure></p>
+<p><italic>S</italic>-values of Raji cells for the two radioiodines (<sup>123</sup>I and <sup>125</sup>I) are presented in table <tabref linkend="pmb343974tab05">5</tabref> for activity distributed uniformly in either the whole cell, the cytoplasm or the cell surface, and the target being either the whole cell or the nucleus. The present results, denoted as &lsquo;spectrum&rsquo; values, are compared with those of Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>). The latter, denoted as &lsquo;mean&rsquo; values, have been obtained using the mean electron energy of the emission spectrum for each radionuclide. The percentage values in the parentheses correspond to the relative differences between the two studies using Hindorf's calculations as reference. The present <italic>S</italic>-values are noticeably different from those reported by Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>) with maximum deviations reaching &sim;50&percnt; when the whole cell is the target (table <tabref linkend="pmb343974tab05">5a</tabref>) and &sim;80&percnt; when the cell nucleus is the target (table <tabref linkend="pmb343974tab05">5b</tabref>).
+<table id="pmb343974tab05" frame="topbot" indent="no">
+<caption id="pmb343974tc05" label="Table 5"><p indent="no"><italic>S</italic>-values of Raji cells for (a) the whole cell and (b) the cell nucleus as the target region<sup>a</sup>.</p></caption>
+<tgroup cols="8">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="left"/>
+<colspec colnum="3" colname="col3" align="left"/>
+<colspec colnum="4" colname="col4" align="left"/>
+<colspec colnum="5" colname="col5" align="left"/>
+<colspec colnum="6" colname="col6" align="left"/>
+<colspec colnum="7" colname="col7" align="left"/>
+<colspec colnum="8" colname="col8" align="left"/>
+<spanspec spanname="1to8" namest="col1" nameend="col8" align="center"/>
+<spanspec spanname="3to8" namest="col3" nameend="col8" align="center"/>
+<spanspec spanname="3to4" namest="col3" nameend="col4" align="center"/>
+<spanspec spanname="5to6" namest="col5" nameend="col6" align="center"/>
+<spanspec spanname="7to8" namest="col7" nameend="col8" align="center"/>
+<thead>
+<row>
+<entry/>
+<entry/>
+<entry spanname="3to8"><italic>S</italic>-value (mGy/Bq s)</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry spanname="3to8"><?TeX \hrulefill ?></entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry spanname="3to4">S(C&larr;C)</entry>
+<entry spanname="5to6">S(C&larr;CS)</entry>
+<entry spanname="7to8">S(C&larr;Cy)</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry spanname="3to4"><?TeX \hrulefill ?></entry>
+<entry spanname="5to6"><?TeX \hrulefill ?></entry>
+<entry spanname="7to8"><?TeX \hrulefill ?></entry>
+</row>
+<row>
+<entry/>
+<entry>Cell radius</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>Radionuclide</entry>
+<entry>(&micro;m)</entry>
+<entry>Mean</entry>
+<entry>Spectrum</entry>
+<entry>Mean</entry>
+<entry>Spectrum</entry>
+<entry>Mean</entry>
+<entry>Spectrum</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry spanname="1to8">(a)</entry>
+</row>
+<row>
+<entry><sup>125</sup>I</entry>
+<entry>6.35</entry>
+<entry>1.407</entry>
+<entry>1.948</entry>
+<entry>0.914</entry>
+<entry>0.853</entry>
+<entry>1.193</entry>
+<entry>1.870</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&plus;38.451&percnt;)</entry>
+<entry/>
+<entry>(&minus;6.674&percnt;)</entry>
+<entry/>
+<entry>(&plus;56.748&percnt;)</entry>
+</row>
+<row>
+<entry/>
+<entry>7.7</entry>
+<entry>0.897</entry>
+<entry>1.139</entry>
+<entry>0.554</entry>
+<entry>0.626</entry>
+<entry>0.745</entry>
+<entry>1.098</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&plus;26.979&percnt;)</entry>
+<entry/>
+<entry>(&plus;12.996&percnt;)</entry>
+<entry/>
+<entry>(&plus;47.382&percnt;)</entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>0.617</entry>
+<entry>0.638</entry>
+<entry>0.369</entry>
+<entry>0.404</entry>
+<entry>0.504</entry>
+<entry>0.704</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&plus;3.403&percnt;)</entry>
+<entry/>
+<entry>(&plus;9.485&percnt;)</entry>
+<entry/>
+<entry>(&plus;39.682&percnt;)</entry>
+</row>
+<row>
+<entry><sup>123</sup>I</entry>
+<entry>6.35</entry>
+<entry>0.860</entry>
+<entry>0.869</entry>
+<entry>0.589</entry>
+<entry>0.475</entry>
+<entry>0.778</entry>
+<entry>0.830</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&plus;1.047&percnt;)</entry>
+<entry/>
+<entry>(&minus;19.355&percnt;)</entry>
+<entry/>
+<entry>(&plus;6.684&percnt;)</entry>
+</row>
+<row>
+<entry/>
+<entry>7.7</entry>
+<entry>0.627</entry>
+<entry>0.510</entry>
+<entry>0.463</entry>
+<entry>0.278</entry>
+<entry>0.576</entry>
+<entry>0.487</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&minus;18.660&percnt;)</entry>
+<entry/>
+<entry>(&minus;39.957&percnt;)</entry>
+<entry/>
+<entry>(&minus;15.451&percnt;)</entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>0.492</entry>
+<entry>0.329</entry>
+<entry>0.334</entry>
+<entry>0.178</entry>
+<entry>0.442</entry>
+<entry>0.301</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&minus;33.130&percnt;)</entry>
+<entry/>
+<entry>(&minus;46.707&percnt;)</entry>
+<entry/>
+<entry>(&minus;31.900&percnt;)</entry>
+</row>
+<row>
+<entry spanname="1to8">(b)</entry>
+</row>
+<row>
+<entry><sup>125</sup>I</entry>
+<entry>6.35</entry>
+<entry>1.785</entry>
+<entry>2.043</entry>
+<entry>0.793</entry>
+<entry>0.285</entry>
+<entry>1.160</entry>
+<entry>0.426</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&plus;14.454&percnt;)</entry>
+<entry/>
+<entry>(&minus;64.060&percnt;)</entry>
+<entry/>
+<entry>(&minus;63.276&percnt;)</entry>
+</row>
+<row>
+<entry/>
+<entry>7.7</entry>
+<entry>1.082</entry>
+<entry>0.980</entry>
+<entry>0.461</entry>
+<entry>0.183</entry>
+<entry>0.682</entry>
+<entry>0.280</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&minus;9.427&percnt;)</entry>
+<entry/>
+<entry>(&minus;60.304&percnt;)</entry>
+<entry/>
+<entry>(&minus;58.944&percnt;)</entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>0.769</entry>
+<entry>0.687</entry>
+<entry>0.275</entry>
+<entry>0.126</entry>
+<entry>0.433</entry>
+<entry>0.194</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&minus;10.663&percnt;)</entry>
+<entry/>
+<entry>(&minus;54.182&percnt;)</entry>
+<entry/>
+<entry>(&minus;55.196&percnt;)</entry>
+</row>
+<row>
+<entry><sup>123</sup>I</entry>
+<entry>6.35</entry>
+<entry>0.967</entry>
+<entry>0.919</entry>
+<entry>0.453</entry>
+<entry>0.137</entry>
+<entry>0.662</entry>
+<entry>0.209</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&minus;4.964&percnt;)</entry>
+<entry/>
+<entry>(&minus;69.757&percnt;)</entry>
+<entry/>
+<entry>(&minus;68.429&percnt;)</entry>
+</row>
+<row>
+<entry/>
+<entry>7.7</entry>
+<entry>0.719</entry>
+<entry>0.662</entry>
+<entry>0.365</entry>
+<entry>0.085</entry>
+<entry>0.487</entry>
+<entry>0.130</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&minus;7.928&percnt;)</entry>
+<entry/>
+<entry>(&minus;76.712&percnt;)</entry>
+<entry/>
+<entry>(&minus;73.306&percnt;)</entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>0.563</entry>
+<entry>0.356</entry>
+<entry>0.290</entry>
+<entry>0.055</entry>
+<entry>0.399</entry>
+<entry>0.087</entry>
+</row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>(&minus;36.767&percnt;)</entry>
+<entry/>
+<entry>(&minus;81.034&percnt;)</entry>
+<entry/>
+<entry>(&minus;78.195&percnt;)</entry>
+</row>
+</tbody>
+<tfoot><sup>a</sup> The values in the parentheses correspond to the relative differences between the present results (spectrum) and those of Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>) (noted as &lsquo;mean&rsquo;).</tfoot>
+</tgroup></table></p>
+<p>Figure <figref linkend="pmb343974fig02">2</figref> shows differential DVHs for a uniform activity in cells with radii 5 &micro;m (V79) and 7.7 &micro;m (Raji) for the two radioiodines. The DVHs have been calculated by first scoring the absorbed dose in spherical shells of 1 nm thickness. Then, the value of the differential volume fraction for a dose in the interval between D and D &plus; dD (where dD &equals; 0.1 mGy/decay) represents the sum of the volume of the spherical shells that had received a dose in that interval. It can be seen that a smaller cell exhibits a wider distribution and a higher mean absorbed dose value than a larger cell, in accordance with the general expectation of enhanced statistical fluctuations of events in smaller targets and the inverse dependence of the mean dose on sphere radius. The dependence of DVHs on the localization of the radionuclide in a cell with radius 7.7 &micro;m is depicted in figure <figref linkend="pmb343974fig03">3</figref>.
+<figure id="pmb343974fig02">
+<graphic>
+<graphic-file version="print" format="EPS" filename="images/pmb343974fig02.eps" width="26pc"/>
+<graphic-file version="ej" format="JPEG" filename="images/pmb343974fig02.jpg"/>
+</graphic>
+<caption id="pmb343974fc02" label="Figure 2"><p indent="no">Differential DVHs for a uniform activity of <sup>123</sup>I and <sup>125</sup>I in cells with radii of 5 and 7.7 &micro;m.</p></caption></figure>
+<figure id="pmb343974fig03">
+<graphic>
+<graphic-file version="print" format="EPS" filename="images/pmb343974fig03.eps" width="26pc"/>
+<graphic-file version="ej" format="JPEG" filename="images/pmb343974fig03.jpg"/>
+</graphic>
+<caption id="pmb343974fc03" label="Figure 3"><p indent="no">Differential DVHs for a uniform activity distribution of <sup>123</sup>I and <sup>125</sup>I in the whole cell, the cell surface and the cytoplasm of a Raji cell with a radius of 7.7 &micro;m.</p></caption></figure></p>
+<p>The absorbed dose to a Raji cell and its nucleus for both an internalizing and a non-internalizing radioiodine is presented in table <tabref linkend="pmb343974tab06">6</tabref>. We calculate both the &lsquo;maximum&rsquo; absorbed dose (using the assumptions outlined earlier) as well as the &lsquo;constrained&rsquo; absorbed dose when the injected activity is constrained to give a whole-body dose of 0.5 Gy.
+<table id="pmb343974tab06" frame="topbot" indent="no">
+<caption id="pmb343974tc06" label="Table 6"><p indent="no">Constrained and maximum absorbed dose to a Raji cell and its nucleus from activity uniformly distributed in different cell compartments.</p></caption>
+<tgroup cols="6">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="left"/>
+<colspec colnum="3" colname="col3" align="left"/>
+<colspec colnum="4" colname="col4" align="left"/>
+<colspec colnum="5" colname="col5" align="left"/>
+<colspec colnum="6" colname="col6" align="left"/>
+<thead>
+<row>
+<entry/>
+<entry>Cell radius</entry>
+<entry><sup>123</sup>I</entry>
+<entry><sup>123</sup>I</entry>
+<entry><sup>125</sup>I</entry>
+<entry><sup>125</sup>I</entry>
+</row>
+<row>
+<entry>Dose</entry>
+<entry>(&micro;m)</entry>
+<entry>(constrained)</entry>
+<entry>(maximum)</entry>
+<entry>(constrained)</entry>
+<entry>(maximum)</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><italic>D</italic>(C &larr; C) (Gy)</entry>
+<entry>6.35</entry>
+<entry>9.0 &times; 10</entry>
+<entry>5.5 &times; 10<sup>3</sup></entry>
+<entry>1.4 &times; 10<sup>2</sup></entry>
+<entry>1.2 &times; 10<sup>4</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>7.70</entry>
+<entry>5.3 &times; 10</entry>
+<entry>3.2 &times; 10<sup>3</sup></entry>
+<entry>8.2 &times; 10<sup>1</sup></entry>
+<entry>7.2 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>3.4 &times; 10</entry>
+<entry>2.1 &times; 10<sup>3</sup></entry>
+<entry>4.6 &times; 10<sup>1</sup></entry>
+<entry>4.0 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry><italic>D</italic>(C &larr; Cy) (Gy)</entry>
+<entry>6.35</entry>
+<entry>8.6 &times; 10</entry>
+<entry>5.2 &times; 10<sup>3</sup></entry>
+<entry>1.3 &times; 10<sup>2</sup></entry>
+<entry>1.2 &times; 10<sup>4</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>7.70</entry>
+<entry>5.1 &times; 10</entry>
+<entry>3.1 &times; 10<sup>3</sup></entry>
+<entry>7.9 &times; 10<sup>1</sup></entry>
+<entry>6.9 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>3.1 &times; 10</entry>
+<entry>1.9 &times; 10<sup>3</sup></entry>
+<entry>5.0 &times; 10<sup>1</sup></entry>
+<entry>4.4 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry><italic>D</italic>(C &larr; CS) (Gy)</entry>
+<entry>6.35</entry>
+<entry>2.1 &times; 10<sup>1</sup></entry>
+<entry>4.6 &times; 10<sup>1</sup></entry>
+<entry>7.5 &times; 10<sup>1</sup></entry>
+<entry>8.3 &times; 10<sup>1</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>7.70</entry>
+<entry>1.2 &times; 10<sup>1</sup></entry>
+<entry>2.7 &times; 10<sup>1</sup></entry>
+<entry>5.5 &times; 10<sup>1</sup></entry>
+<entry>6.1 &times; 10<sup>1</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>0.8 &times; 10<sup>1</sup></entry>
+<entry>1.7 &times; 10<sup>1</sup></entry>
+<entry>3.6 &times; 10<sup>1</sup></entry>
+<entry>3.6 &times; 10<sup>1</sup></entry>
+</row>
+<row>
+<entry><italic>D</italic>(N &larr; C) (Gy)</entry>
+<entry>6.35</entry>
+<entry>9.6 &times; 10</entry>
+<entry>5.8 &times; 10<sup>3</sup></entry>
+<entry>1.5 &times; 10<sup>2</sup></entry>
+<entry>1.3 &times; 10<sup>4</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>7.70</entry>
+<entry>6.9 &times; 10</entry>
+<entry>4.2 &times; 10<sup>3</sup></entry>
+<entry>7.0 &times; 10<sup>1</sup></entry>
+<entry>6.2 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>3.7 &times; 10</entry>
+<entry>2.2 &times; 10<sup>3</sup></entry>
+<entry>4.9 &times; 10<sup>1</sup></entry>
+<entry>4.3 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry><italic>D</italic>(N &larr; Cy) (Gy)</entry>
+<entry>6.35</entry>
+<entry>2.2 &times; 10</entry>
+<entry>1.3 &times; 10<sup>3</sup></entry>
+<entry>3.1 &times; 10<sup>1</sup></entry>
+<entry>2.7 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>7.70</entry>
+<entry>1.4 &times; 10</entry>
+<entry>0.8 &times; 10<sup>3</sup></entry>
+<entry>2.0 &times; 10<sup>1</sup></entry>
+<entry>1.8 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>0.9 &times; 10</entry>
+<entry>0.5 &times; 10<sup>3</sup></entry>
+<entry>1.4 &times; 10<sup>1</sup></entry>
+<entry>1.2 &times; 10<sup>3</sup></entry>
+</row>
+<row>
+<entry><italic>D</italic>(N &larr; CS) (Gy)</entry>
+<entry>6.35</entry>
+<entry>6.1 &times; 10</entry>
+<entry>1.3 &times; 10<sup>1</sup></entry>
+<entry>2.5 &times; 10<sup>1</sup></entry>
+<entry>2.8 &times; 10<sup>1</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>7.70</entry>
+<entry>3.8&times; 10</entry>
+<entry>8.2 &times; 10</entry>
+<entry>1.6 &times; 10<sup>1</sup></entry>
+<entry>1.8 &times; 10<sup>1</sup></entry>
+</row>
+<row>
+<entry/>
+<entry>9.05</entry>
+<entry>2.5&times; 10</entry>
+<entry>5.3&times; 10</entry>
+<entry>1.1 &times; 10<sup>1</sup></entry>
+<entry>1.2&times; 10<sup>1</sup></entry>
+</row>
+</tbody>
+</tgroup></table></p>
+<p>In figure <figref linkend="pmb343974fig04">4</figref> we calculate the absorbed dose rate in the nucleus as a function of time for both an internalizing and non-internalizing radiopharmaceutical labeled to <sup>123</sup>I and <sup>125</sup>I. The absorbed dose rates depicted are based on an administered activity that gives a whole-body dose of 0.5 Gy. Note that, due to their very different half-lives, the time in the horizontal axis is measured in hours for <sup>123</sup>I and in days for <sup>125</sup>I.
+<figure id="pmb343974fig04">
+<graphic>
+<graphic-file version="print" format="EPS" filename="images/pmb343974fig04.eps" width="18pc"/>
+<graphic-file version="ej" format="JPEG" filename="images/pmb343974fig04.jpg"/>
+</graphic>
+<caption id="pmb343974fc04" label="Figure 4"><p indent="no">Absorbed dose rate to the nucleus of cells with radii 6.35, 7.7 and 9.05 &micro;m as a function of time following the administration of a surface bound (non-internalizing) and an internalizing MAb labeled to <sup>123</sup>I and <sup>125</sup>I. The incorporated activities were constrained by a whole-body absorbed dose of 0.5 Gy.</p></caption></figure></p>
+</sec-level1>
+<sec-level1 id="pmb343974s4" label="4"><heading>Discussion</heading>
+<p indent="no">The <italic>S</italic>-value represents a valuable dosimetric magnitude for internally administered radionuclides. For Auger-emitting radionuclides, in particular, which exhibit short irradiation ranges, it is important to establish accurate <italic>S</italic>-values at the subcellular level since the irradiation pattern at the microscopic scale might be highly non-uniform. Cellular <italic>S</italic>-values for six Auger-emitting radionuclides have been determined in the present work by means of a hybrid Monte Carlo code that effectively combines the event-by-event and condensed-history transport schemes. The results of table <tabref linkend="pmb343974tab03">3</tabref> show that the present <italic>S</italic>-values are generally in good agreement (&sim;10&percnt;) with earlier studies for the case of C&larr;C, C&larr;CS and N&larr;N, while they can differ significantly (&sim;50&percnt;) for N&larr;Cy and N&larr;CS. Interestingly, these two source&ndash;target combinations are of particular importance because they mimic the case of an internalizing and a non-internalizing radiopharmaceutical, respectively, while considering the radiobiologically more relevant cell nucleus (instead of the whole cell) as target. It can be seen that the order of radionuclides (from highest to lowest <italic>S</italic>-value) is <sup>201</sup>Tl &gt; <sup>125</sup>I &gt; <sup>67</sup>Ga &gt; <sup>123</sup>I &gt; <sup>111</sup>In &gt; <sup>99<italic>m</italic></sup>Tc except for N&larr;CS where <sup>201</sup>Tl &gt; <sup>125</sup>I &gt; <sup>111</sup>In &gt; <sup>123</sup>I &gt; <sup>67</sup>Ga &gt; <sup>99<italic>m</italic></sup>Tc. Thus, for all source&ndash;target combinations, <sup>201</sup>Tl and <sup>99<italic>m</italic></sup>Tc result in the highest and lowest <italic>S</italic>-value, respectively. The influence of the source geometry is perhaps most clearly seen in table <tabref linkend="pmb343974tab04">4</tabref>. Specifically, the assumption of homogeneous distribution of the Auger radionuclide throughout the cell can lead to a huge underestimation and/or overestimation of the <italic>nuclear</italic> dose rate (assuming the same activity in the source regions). For example, if the uptake occurs within the nucleus only, the dose rate to the nucleus is underestimated by a factor of 1.8&ndash;1.9 when compared to the value for the whole cell. On the other hand, for the more realistic situations whereby the radionuclide is localized in the cytoplasm or on the surface, the dose rate to the nucleus can be overestimated, respectively, by a factor of &sim;3&ndash;10 or &sim;6&ndash;20, depending on the radionuclide. These findings indicate that, for Auger-emitting radionuclides, the mean absorbed dose to the cell nucleus depends strongly on whether the radioactivity is inside or outside the nucleus and clearly highlights the error that can be made when reporting the dose to the whole cell when the Auger radionuclide is not uniformly distributed throughout the cell, which is almost always the case.</p>
+<p>A more detailed investigation at the subcellular level (figure <figref linkend="pmb343974fig01">1</figref>) revealed that the dose rate inside the cell can vary considerably depending on the localization of the Auger emitter. Specifically, except forthe case of a uniform activity distribution over the whole cell (which is practically unattainable), the dose rate appears to fall rapidly in the cellular compartments which do not contain any radioactivity leading to a significant heterogeneity of absorbed dose within the cell. For example, when the radioactivity is localized in the nucleus the dose rate is almost constant throughout the nuclear volume, dropping abruptly to low values in the cytoplasm region. The situation is reversed for radionuclides distributed in the cytoplasm or the surface. It is important to note that, in this case, the dose to the nucleus can be many times smaller than the dose to the cytoplasm or the surface with obvious radiobiological consequences. The order of radionuclides is generally similar to the one found above with <sup>201</sup>Tl and <sup>99<italic>m</italic></sup>Tc resulting in the highest and lowest dose rate values. These results are in good agreement with the dose rate profiles reported by Faraggi <italic>et al</italic> (<cite linkend="pmb343974bib27" show="year">1994</cite>) and Ft&aacute;&ccaron;nikov&aacute; and B&ouml;hm (<cite linkend="pmb343974bib29" show="year">2000</cite>).</p>
+<p>Among the various Auger emitters, <sup>125</sup>I has been most studied in targeted radionuclide therapy due to its large number of Auger electrons emitted per decay and the familiarity with the labeling properties of iodine (Sastry <cite linkend="pmb343974bib81" show="year">1992</cite>, Hofer <cite linkend="pmb343974bib39" show="year">1996</cite>, <cite linkend="pmb343974bib40" show="year">2000</cite>, Adelstein <italic>et al</italic> <cite linkend="pmb343974bib01" show="year">2003</cite>, Buchegger <italic>et al</italic> <cite linkend="pmb343974bib14" show="year">2006</cite>). However, simple mathematical models suggest that, in some cases, the use of short half-life radionuclides (such as <sup>123</sup>I) offers several advantages compared to those with long half-lives (such as <sup>125</sup>I) (O'Donoghue and Wheldon <cite linkend="pmb343974bib74" show="year">1996</cite>). A quantitative comparison of the radiotoxic effects of the two radioiodines, <sup>123</sup>I and <sup>125</sup>I, incorporated into the DNA of mammalian cells has been carried out by a number of investigators (Makrigiorgos <italic>et al</italic> <cite linkend="pmb343974bib66" show="year">1989</cite>, <cite linkend="pmb343974bib64" show="year">1992</cite>, Kassis <italic>et al</italic> <cite linkend="pmb343974bib57" show="year">1990</cite>, Baranowska-Kortylewicz <italic>et al</italic> <cite linkend="pmb343974bib02" show="year">1991</cite>), while their absorbed dose distribution within tumor cell spheroids has been studied by Emfietzoglou <italic>et al</italic> (<cite linkend="pmb343974bib23" show="year">2005</cite>). Recently, Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>) revealed that, from a dosimetric perspective, <sup>123</sup>I and <sup>125</sup>I offer more potentials over <sup>131</sup>I in the treatment of NHL. The present <italic>S</italic>-values of a Raji cell for the two radioiodines (table <tabref linkend="pmb343974tab05">5</tabref>) are found to differ considerably (up to 50&ndash;80&percnt;) from those reported by Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>) with the largest differences found for the most interesting combinations N&larr;CS and N&larr;Cy. Differences also extend to the DVHs (figure <figref linkend="pmb343974fig03">3</figref>). The dependence of the DVHs upon the localization of the radioiodine is much stronger in the present work. In particular, we found that almost 90&percnt; of the cellular volume receives a dose significantly smaller than the average cell dose of 0.3 mGy/decay for <sup>123</sup>I and 0.6 mGy/decay for <sup>125</sup>I when that radionuclide is distributed on the cell surface. Furthermore, in the case where the radionuclide is distributed in the cytoplasm, the DVHs exhibit two distinct peaks that are not present in the calculations of Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>). The one at the high dose end corresponds to the dose in the cytoplasm from low-energy Auger electrons, whereas the low dose peak corresponds to the dose in the remaining cell from the more energetic Auger electrons. In this case, almost 50&percnt; of the cellular volume receives a dose that is significantly larger than the mean cell dose of 0.5 mGy/decay for <sup>123</sup>I and 1.1 mGy/decay for <sup>125</sup>I. Differences from the results of Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>) should be attributed to the use of the complete emission spectra in the present calculations, and the different transport schemes used in the two studies. In the present version of MC4 an improved condensed-history transport scheme with full account of energy-loss straggling is employed which improves the continuous-slowing-down-approximation used in Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>).</p>
+<p>On the other hand, we show that under the present set of assumptions <sup>125</sup>I delivers a much higher dose to the cell and the cell nucleus for all source distributions and cell sizes (table <tabref linkend="pmb343974tab06">6</tabref>) as also predicted by Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>) using a more simplified Monte Carlo scheme. Specifically, the dose by <sup>125</sup>I is 5 to 15 times larger than <sup>123</sup>I when the whole-body dose is constrained to 0.5 Gy, and nearly twice with respect to the maximum dose. Owing to the limited number of receptors on the cell surface, the maximum absorbed dose for a non-internalizing (C&larr;CS or N&larr;CS) radioiodine is by a factor of 100 smaller than that for an internalizing (C&larr;Cy or N&larr;Cy). In contrast, when the whole-body dose is fixed to 0.5 Gy, the absorbed dose to the cell (or its nucleus) by a non-internalizing <sup>125</sup>I is a factor of 2 smaller than that for the internalizing, while for <sup>123</sup>I the situation is reversed, that is, the dose resulting from the non-internalizing <sup>123</sup>I is higher than that for the internalizing. This is because, for a fixed whole-body dose, a much smaller amount of radionuclide enters the cell which, for short-lived radionuclides (like <sup>123</sup>I), is further limited by the physical decay during the uptake phase. We should emphasize that, due to the large difference between the half-lives of the two radioiodines, the results in the case of internalizing MAbs depend sensitively upon the retention time in the cell. For example, it can be shown that if instead of permanent retention we had assumed a biological half-life of the order of a few days, as suggested by the <italic>in vitro</italic> experiments of Hansen <italic>et al</italic> (<cite linkend="pmb343974bib36" show="year">1996</cite>) and Stein <italic>et al</italic> (<cite linkend="pmb343974bib86" show="year">2003</cite>), <sup>123</sup>I would have delivered a higher dose to the cell (and its nucleus) in the internalizing case than <sup>125</sup>I. Therefore, more realistic calculations for the case of an internalizing radiopharmaceutical labeled with a long-lived radionuclide (like <sup>125</sup>I) should account for its elimination rate from the cell.</p>
+<p>With respect to the dose rate to the nucleus for a fixed whole-body dose of 0.5 Gy, <sup>123</sup>I exhibits much larger values than <sup>125</sup>I (figure <figref linkend="pmb343974fig04">4</figref>) by virtue of its shorter half-life, as also predicted by Hindorf <italic>et al</italic> (<cite linkend="pmb343974bib37" show="year">2007</cite>). In particular, for the non-internalizing case (N&larr;CS) the dose rate by <sup>123</sup>I is an order of magnitude greater. As also noted above (table <tabref linkend="pmb343974tab06">6</tabref>), due to its very short half-life, <sup>123</sup>I results in higher dose rates for the non-internalizing case (N&larr;CS) than for the internalizing (N&larr;Cy). Although the dose rate is known to influence various biological processes, its role in cell survival in the context of radioimmunotherapy is still not clear and, therefore, it is not presently included as input in dosimetric models. Sgouros <italic>et al</italic> (<cite linkend="pmb343974bib83" show="year">2007</cite>) briefly reviewed all the key experimental studies that have assessed the relative effect of dose rate on both tumor and normal cells and found that the literature contains conflicting data regarding the role of dose rate in the dose&ndash;response relationship that may be dependent, in part, on the tumor type and experimental model or design.</p>
+</sec-level1>
+<acknowledgment>
+<heading>Acknowledgment</heading>
+<p indent="no">The authors thank Dr Cecilia Hindorf for valuable discussions in the course of this work. CB and DE acknowledge financial support by the European Union FP7 ANTICARB (HEALTH-F2-2008-201587) research program. HN's work is supported by the Swedish Radiation Protection Agency SSM.</p>
+</acknowledgment>
+</body>
+<back>
+<references>
+<heading>References</heading>
+<reference-list type="alphabetic">
+<journal-ref id="pmb343974bib01" author="Adelstein et al" year-label="2003">
+<authors>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+<au><second-name>Bodei</second-name>
+<first-names>L</first-names></au>
+<au><second-name>Mariani</second-name>
+<first-names>G</first-names></au>
+</authors>
+<year>2003</year>
+<art-title>Radiotoxicity of iodine-125 and other Auger-electron-emitting radionuclides: background to therapy</art-title>
+<jnl-title>Cancer Biother. Radiopharm.</jnl-title>
+<volume>18</volume>
+<pages>301&ndash;16</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1089/108497803322285062</cr_doi>
+<cr_issn type="print">10849785</cr_issn>
+<cr_issn type="electronic">00000000</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib02" author="Baranowska-Kortylewicz et al" year-label="1991">
+<authors>
+<au><second-name>Baranowska-Kortylewicz</second-name>
+<first-names>J</first-names></au>
+<au><second-name>Makrigiorgos</second-name>
+<first-names>G M</first-names></au>
+<au><second-name>Van Den Abbeele</second-name>
+<first-names>A D</first-names></au>
+<au><second-name>Berman</second-name>
+<first-names>R M</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+</authors>
+<year>1991</year>
+<art-title><sup>123</sup>IUdR in the radiotherapy of an early ascites tumor model</art-title>
+<jnl-title>Int. J. Radiat. Oncol. Biol. Phys.</jnl-title>
+<volume>21</volume>
+<pages>1541&ndash;51</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/0360-3016(91)90331-W</cr_doi>
+<cr_issn type="print">03603016</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib03" author="Bardi&egrave;s and Pihet" year-label="2000">
+<authors>
+<au><second-name>Bardi&egrave;s</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Pihet</second-name>
+<first-names>P</first-names></au>
+</authors>
+<year>2000</year>
+<art-title>Dosimetry and microdosimetry of targeted radiotherapy</art-title>
+<jnl-title>Curr. Pharm. Des.</jnl-title>
+<volume>6</volume>
+<pages>1469&ndash;1502</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2174/1381612003399176</cr_doi>
+<cr_issn type="print">13816128</cr_issn>
+<cr_issn type="electronic">00000000</cr_issn>
+</crossref>
+</journal-ref>
+<book-ref id="pmb343974bib04" author="Berger" year-label="1963">
+<authors>
+<au><second-name>Berger</second-name>
+<first-names>M J</first-names></au>
+</authors>
+<year>1963</year>
+<art-title>Monte Carlo calculation of the penetration and diffusion of fast charged particles</art-title>
+<book-title>Methods in Computational Physics</book-title>
+<edition>vol 1</edition>
+<editors>
+<author>
+<first-names>B</first-names>
+<second-name>Alder</second-name></author>
+<author>
+<first-names>S</first-names>
+<second-name>Fernbach</second-name></author>
+<author>
+<first-names>M</first-names>
+<second-name>Rotenberg</second-name></author>
+</editors>
+<publication>
+<place>New York</place>
+<publisher>Academic</publisher>
+</publication>
+<pages>pp 135&ndash;215</pages>
+</book-ref>
+<misc-ref id="pmb343974bib05" author="Berger" year-label="1973">
+<authors>
+<au><second-name>Berger</second-name>
+<first-names>M J</first-names></au>
+</authors>
+<year>1973</year>
+<art-title>Improved point kernels for electrons and beta-ray dosimetry</art-title>
+<misc-text><italic>Report NBSIR 73-107</italic> (Gaithersburg, MD: National Bureau of Standards)</misc-text>
+</misc-ref>
+<journal-ref id="pmb343974bib06" author="Booz et al" year-label="1987">
+<authors>
+<au><second-name>Booz</second-name>
+<first-names>J</first-names></au>
+<au><second-name>Paretzke</second-name>
+<first-names>H G</first-names></au>
+<au><second-name>Pomplun</second-name>
+<first-names>E</first-names></au>
+<au><second-name>Olko</second-name>
+<first-names>P</first-names></au>
+</authors>
+<year>1987</year>
+<art-title>Auger-electron cascades, charge potential and microdosimetry of iodine-125</art-title>
+<jnl-title>Radiat. Environ. Biophys.</jnl-title>
+<volume>26</volume>
+<pages>151&ndash;62</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1007/BF01211409</cr_doi>
+<cr_issn type="print">0301634X</cr_issn>
+<cr_issn type="electronic">14322099</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib07" author="Boswell and Brechbiel" year-label="2005">
+<authors>
+<au><second-name>Boswell</second-name>
+<first-names>C A</first-names></au>
+<au><second-name>Brechbiel</second-name>
+<first-names>M W</first-names></au>
+</authors>
+<year>2005</year>
+<art-title>Auger electrons: lethal, low energy, and coming soon to a tumor cell nucleus near you</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>46</volume>
+<pages>1946&ndash;7</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib08" author="Boswell and Brechbiel" year-label="2007">
+<authors>
+<au><second-name>Boswell</second-name>
+<first-names>C A</first-names></au>
+<au><second-name>Brechbiel</second-name>
+<first-names>M W</first-names></au>
+</authors>
+<year>2007</year>
+<art-title>Development of radioimmunotherapeutic and diagnostic antibodies: an inside-out view</art-title>
+<jnl-title>Nucl. Med. Biol.</jnl-title>
+<volume>34</volume>
+<pages>757&ndash;78</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.nucmedbio.2007.04.001</cr_doi>
+<cr_issn type="print">09698051</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib09" author="Bousis et al" year-label="2008a">
+<authors>
+<au><second-name>Bousis</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Hadjidoukas</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+</authors>
+<year>2008a</year>
+<art-title>A Monte Carlo study of absorbed dose distributions in water in the vapour and liquid phases by intermediate energy electrons based on different condensed-history transport schemes</art-title>
+<jnl-title>Phys. Med. Biol.</jnl-title>
+<volume>53</volume>
+<pages>3739&ndash;61</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0031-9155/53/14/003</cr_doi>
+<cr_issn type="print">00319155</cr_issn>
+<cr_issn type="electronic">13616560</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib10" author="Bousis et al" year-label="2009a">
+<authors>
+<au><second-name>Bousis</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Hadjidoukas</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+</authors>
+<year>2009a</year>
+<art-title>A Monte Carlo study of cellular <italic>S</italic>-factors for 1 keV to 1 MeV electrons</art-title>
+<jnl-title>Phys. Med. Biol.</jnl-title>
+<volume>54</volume>
+<pages>5023&ndash;38</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0031-9155/54/16/012</cr_doi>
+<cr_issn type="print">00319155</cr_issn>
+<cr_issn type="electronic">13616560</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib11" author="Bousis et al" year-label="2008b">
+<authors>
+<au><second-name>Bousis</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Hadjidoukas</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Pathak</second-name>
+<first-names>A</first-names></au>
+</authors>
+<year>2008b</year>
+<art-title>Electron ionization cross-section calculations for liquid water at high impact energies</art-title>
+<jnl-title>Nucl. Instrum. Methods</jnl-title>
+<part>B</part>
+<volume>266</volume>
+<pages>1185&ndash;92</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.nimb.2007.11.015</cr_doi>
+<cr_issn type="print">0168583X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib12" author="Bousis et al" year-label="2009b">
+<authors>
+<au><second-name>Bousis</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Hadjidoukas</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Pathak</second-name>
+<first-names>A</first-names></au>
+</authors>
+<year>2009b</year>
+<art-title>The effects of energy-loss straggling and elastic scattering models on Monte Carlo calculations of dose distribution functions for 10 keV to 1 MeV incident electrons in water</art-title>
+<jnl-title>Nucl. Instrum. Methods</jnl-title>
+<part>B</part>
+<volume>267</volume>
+<pages>1725&ndash;32</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.nimb.2009.01.080</cr_doi>
+<cr_issn type="print">0168583X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib13" author="Brenner and Zaider" year-label="1983">
+<authors>
+<au><second-name>Brenner</second-name>
+<first-names>D J</first-names></au>
+<au><second-name>Zaider</second-name>
+<first-names>M</first-names></au>
+</authors>
+<year>1983</year>
+<art-title>A computationally convenient parametrization of experimental angular distributions of low energy electrons elastically scattered off water vapour</art-title>
+<jnl-title>Phys. Med. Biol.</jnl-title>
+<volume>29</volume>
+<pages>443&ndash;7</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0031-9155/29/4/015</cr_doi>
+<cr_issn type="print">00319155</cr_issn>
+<cr_issn type="electronic">13616560</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib14" author="Buchegger et al" year-label="2006">
+<authors>
+<au><second-name>Buchegger</second-name>
+<first-names>F</first-names></au>
+<au><second-name>Perillo-Adamer</second-name>
+<first-names>F</first-names></au>
+<au><second-name>Dupertuis</second-name>
+<first-names>Y M</first-names></au>
+<au><second-name>Bischof Delaloye</second-name>
+<first-names>A</first-names></au>
+</authors>
+<year>2006</year>
+<art-title>Auger radiation targeted into DNA: a therapy perspective</art-title>
+<jnl-title>Eur. J. Nucl. Med. Mol. Imaging</jnl-title>
+<volume>33</volume>
+<pages>1352&ndash;63</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1007/s00259-006-0187-2</cr_doi>
+<cr_issn type="print">03406997</cr_issn>
+<cr_issn type="electronic">16197089</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib15" author="Charlton" year-label="1986">
+<authors>
+<au><second-name>Charlton</second-name>
+<first-names>D E</first-names></au>
+</authors>
+<year>1986</year>
+<art-title>The range of high LET effects from <sup>125</sup>I decays</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>107</volume>
+<pages>163&ndash;71</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2307/3576804</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib16" author="Charlton et al" year-label="1994">
+<authors>
+<au><second-name>Charlton</second-name>
+<first-names>D E</first-names></au>
+<au><second-name>Hofer</second-name>
+<first-names>K G</first-names></au>
+<au><second-name>Vanloon</second-name>
+<first-names>N</first-names></au>
+<au><second-name>Schneiderman</second-name>
+<first-names>M H</first-names></au>
+</authors>
+<year>1994</year>
+<art-title>Double-strand breaks from <sup>125</sup>I incorporated in the DNA and cell death</art-title>
+<jnl-title>Int. J. Radiat. Biol.</jnl-title>
+<volume>66</volume>
+<pages>437&ndash;40</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/09553009414551421</cr_doi>
+<cr_issn type="print">09553002</cr_issn>
+<cr_issn type="electronic">13623095</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib17" author="Charlton et al" year-label="1989">
+<authors>
+<au><second-name>Charlton</second-name>
+<first-names>D E</first-names></au>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Humm</second-name>
+<first-names>J L</first-names></au>
+</authors>
+<year>1989</year>
+<art-title>Calculation of initial yields of single- and double-strand breaks in cell nuclei from electrons, protons and alpha particles</art-title>
+<jnl-title>Int. J. Radiat. Biol.</jnl-title>
+<volume>56</volume>
+<pages>1&ndash;19</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/09553008914551141</cr_doi>
+<cr_issn type="print">09553002</cr_issn>
+<cr_issn type="electronic">13623095</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib18" author="Chen" year-label="2008">
+<authors>
+<au><second-name>Chen</second-name>
+<first-names>J</first-names></au>
+</authors>
+<year>2008</year>
+<art-title>A compilation of microdosimetry for uniform distributed Auger emitters used in medicine</art-title>
+<jnl-title>Int. J. Radiat. Biol.</jnl-title>
+<volume>84</volume>
+<pages>1027&ndash;33</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/09553000802499253</cr_doi>
+<cr_issn type="print">09553002</cr_issn>
+<cr_issn type="electronic">13623095</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib19" author="Cole" year-label="1969">
+<authors>
+<au><second-name>Cole</second-name>
+<first-names>A</first-names></au>
+</authors>
+<year>1969</year>
+<art-title>Absorption of 20 eV to 50&thinsp;000 eV electron beams in air and plastic</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>38</volume>
+<pages>7&ndash;33</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2307/3572707</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib20" author="Costantini et al" year-label="2008">
+<authors>
+<au><second-name>Costantini</second-name>
+<first-names>D L</first-names></au>
+<au><second-name>Hu</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Reilly</second-name>
+<first-names>R M</first-names></au>
+</authors>
+<year>2008</year>
+<art-title>Peptide motifs for insertion of radiolabeled biomolecules into cells and routing to the nucleus for cancer imaging or radiotherapeutic applications</art-title>
+<jnl-title>Cancer Biother. Radiopharm.</jnl-title>
+<volume>23</volume>
+<pages>3&ndash;24</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1089/cbr.2007.0430</cr_doi>
+<cr_issn type="print">10849785</cr_issn>
+<cr_issn type="electronic">15578852</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib21" author="Emfietzoglou et al" year-label="2007">
+<authors>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Bousis</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Hindorf</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Fotopoulos</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Pathak</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Kostarelos</second-name>
+<first-names>K</first-names></au>
+</authors>
+<year>2007</year>
+<art-title>A Monte Carlo study of energy deposition at the sub-cellular level for application to targeted radionuclide therapy with low-energy electron emitters</art-title>
+<jnl-title>Nucl. Instrum. Methods</jnl-title>
+<part>B</part>
+<volume>256</volume>
+<pages>547&ndash;53</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.nimb.2006.12.055</cr_doi>
+<cr_issn type="print">0168583X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib22" author="Emfietzoglou et al" year-label="2008">
+<authors>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Kostarelos</second-name>
+<first-names>K</first-names></au>
+<au><second-name>Hadjidoukas</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Bousis</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Fotopoulos</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Pathak</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+</authors>
+<year>2008</year>
+<art-title>Subcellular S-factors for low-energy electrons: a comparison of Monte Carlo simulations and continuous-slowing-down calculations</art-title>
+<jnl-title>Int. J. Radiat. Biol.</jnl-title>
+<volume>84</volume>
+<pages>1034&ndash;44</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/09553000802460180</cr_doi>
+<cr_issn type="print">09553002</cr_issn>
+<cr_issn type="electronic">13623095</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib23" author="Emfietzoglou et al" year-label="2005">
+<authors>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Kostarelos</second-name>
+<first-names>K</first-names></au>
+<au><second-name>Papakostas</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Yang</second-name>
+<first-names>W-H</first-names></au>
+<au><second-name>Ballangrud</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Song</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Sgouros</second-name>
+<first-names>G</first-names></au>
+</authors>
+<year>2005</year>
+<art-title>Liposome-mediated radiotherapeutics within avascular tumor spheroids: comparative dosimetry study for various radionuclides, liposome systems, and a targeting antibody</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>46</volume>
+<pages>89&ndash;97</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib24" author="Emfietzoglou and Nikjoo" year-label="2005">
+<authors>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+</authors>
+<year>2005</year>
+<art-title>The effect of model approximations on single-collision distributions of low-energy electrons in liquid water</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>163</volume>
+<pages>98&ndash;111</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1667/RR3281</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib25" author="Emfietzoglou et al" year-label="2000a">
+<authors>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Papamichael</second-name>
+<first-names>G</first-names></au>
+<au><second-name>Kostarelos</second-name>
+<first-names>K</first-names></au>
+<au><second-name>Moschovitch</second-name>
+<first-names>M</first-names></au>
+</authors>
+<year>2000a</year>
+<art-title>A Monte Carlo track structure code for electrons (&sim;10 eV&ndash;10 keV) and protons (&sim;0.3&ndash;10 MeV) in water: partitioning of energy and collision events</art-title>
+<jnl-title>Phys. Med. Biol.</jnl-title>
+<volume>45</volume>
+<pages>3171&ndash;94</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0031-9155/45/11/305</cr_doi>
+<cr_issn type="print">00319155</cr_issn>
+<cr_issn type="electronic">13616560</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib26" author="Emfietzoglou et al" year-label="2000b">
+<authors>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Papamichael</second-name>
+<first-names>G</first-names></au>
+<au><second-name>Moschovitch</second-name>
+<first-names>M</first-names></au>
+</authors>
+<year>2000b</year>
+<art-title>An event-by-event computer simulation of interactions of energetic charged particles and all their secondary electrons in water</art-title>
+<jnl-title>J. Phys. D: Appl. Phys.</jnl-title>
+<volume>33</volume>
+<pages>932&ndash;44</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0022-3727/33/8/309</cr_doi>
+<cr_issn type="print">00223727</cr_issn>
+<cr_issn type="electronic">13616463</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib27" author="Faraggi et al" year-label="1994">
+<authors>
+<au><second-name>Faraggi</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Gardin</second-name>
+<first-names>I</first-names></au>
+<au><second-name>De Labriolle-Vaylet</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Moretti</second-name>
+<first-names>J-L</first-names></au>
+<au><second-name>Bok</second-name>
+<first-names>B D</first-names></au>
+</authors>
+<year>1994</year>
+<art-title>The influence of tracer localization on the electron dose rate delivered to the cell nucleus</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>35</volume>
+<pages>113&ndash;9</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib28" author="Faraggi et al" year-label="1998">
+<authors>
+<au><second-name>Faraggi</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Gardin</second-name>
+<first-names>I</first-names></au>
+<au><second-name>Stievenart</second-name>
+<first-names>J-L</first-names></au>
+<au><second-name>Bok</second-name>
+<first-names>B D</first-names></au>
+<au><second-name>Le Guludec</second-name>
+<first-names>D</first-names></au>
+</authors>
+<year>1998</year>
+<art-title>Comparison of cellular and conventional dosimetry in assessing self-dose and cross-dose delivered to the cell nucleus by electron emissions of <sup>99m</sup>Tc, <sup>123</sup>I, <sup>111</sup>In, <sup>67</sup>Ga and <sup>201</sup>Tl</art-title>
+<jnl-title>Eur. J. Nucl. Med.</jnl-title>
+<volume>25</volume>
+<pages>205&ndash;14</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1007/s002590050218</cr_doi>
+<cr_issn type="print">03406997</cr_issn>
+<cr_issn type="electronic">16197089</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib29" author="Ft&aacute;&ccaron;nikov&aacute; and B&ouml;hm" year-label="2000">
+<authors>
+<au><second-name>Ft&aacute;&ccaron;nikov&aacute;</second-name>
+<first-names>S</first-names></au>
+<au><second-name>B&ouml;hm</second-name>
+<first-names>R</first-names></au>
+</authors>
+<year>2000</year>
+<art-title>Monte Carlo calculations of energy deposition on cellular, multicellular and organ level for Auger emitters</art-title>
+<jnl-title>Radiat. Prot. Dosim.</jnl-title>
+<volume>92</volume>
+<pages>279&ndash;88</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib30" author="Gardin et al" year-label="1995">
+<authors>
+<au><second-name>Gardin</second-name>
+<first-names>I</first-names></au>
+<au><second-name>Faraggi</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Huc</second-name>
+<first-names>E</first-names></au>
+<au><second-name>Bok</second-name>
+<first-names>B D</first-names></au>
+</authors>
+<year>1995</year>
+<art-title>Modeling of the relationship between cell dimensions and mean electron dose delivered to the cell nucleus: application to five radionuclides used in nuclear medicine</art-title>
+<jnl-title>Phys. Med. Biol.</jnl-title>
+<volume>40</volume>
+<pages>1001&ndash;14</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0031-9155/40/6/003</cr_doi>
+<cr_issn type="print">00319155</cr_issn>
+<cr_issn type="electronic">13616560</cr_issn>
+</crossref>
+</journal-ref>
+<book-ref id="pmb343974bib31" author="Germain et al" year-label="1981">
+<authors>
+<au><second-name>Germain</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Gentilhomme</second-name>
+<first-names>O</first-names></au>
+<au><second-name>Bryon</second-name>
+<first-names>P A</first-names></au>
+<au><second-name>Coiffier</second-name>
+<first-names>B</first-names></au>
+</authors>
+<year>1981</year>
+<art-title>Cellules sanguines et organes h&eacute;matopo&iuml;&eacute;tiques</art-title>
+<book-title>Physiologie Humaine</book-title>
+<editors>
+<author>
+<first-names>S A</first-names>
+<second-name>Simep</second-name></author>
+</editors>
+<publication>
+<place>Villeurbanne</place>
+<publisher>Simep SA</publisher>
+</publication>
+<pages>pp 184&ndash;247</pages>
+</book-ref>
+<book-ref id="pmb343974bib32" author="Goddu et al" year-label="1997">
+<authors>
+<au><second-name>Goddu</second-name>
+<first-names>S M</first-names></au>
+<au><second-name>Howell</second-name>
+<first-names>R W</first-names></au>
+<au><second-name>Bouchet</second-name>
+<first-names>L G</first-names></au>
+<au><second-name>Bolch</second-name>
+<first-names>W E</first-names></au>
+<au><second-name>Rao</second-name>
+<first-names>D V</first-names></au>
+</authors>
+<year>1997</year>
+<book-title>MIRD Cellular S Values</book-title>
+<publication>
+<place>Reston, VA</place>
+<publisher>Society of Nuclear Medicine</publisher>
+</publication>
+</book-ref>
+<journal-ref id="pmb343974bib33" author="Govindan et al" year-label="1999">
+<authors>
+<au><second-name>Govindan</second-name>
+<first-names>S V</first-names></au>
+<au><second-name>Mattes</second-name>
+<first-names>M J</first-names></au>
+<au><second-name>Stein</second-name>
+<first-names>R</first-names></au>
+<au><second-name>McBride</second-name>
+<first-names>B J</first-names></au>
+<au><second-name>Karacay</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Goldenberg</second-name>
+<first-names>D M</first-names></au>
+<au><second-name>Hansen</second-name>
+<first-names>H J</first-names></au>
+<au><second-name>Griffiths</second-name>
+<first-names>G L</first-names></au>
+</authors>
+<year>1999</year>
+<art-title>Labeling of monoclonal antibodies with diethylenetriaminepentaacetic acid-appended radioiodinated peptides containing D-amino acids</art-title>
+<jnl-title>Bioconjug. Chem.</jnl-title>
+<volume>10</volume>
+<pages>231&ndash;40</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1021/bc980075g</cr_doi>
+<cr_issn type="print">10431802</cr_issn>
+<cr_issn type="electronic">15204812</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib34" author="Griffiths et al" year-label="1999">
+<authors>
+<au><second-name>Griffiths</second-name>
+<first-names>G L</first-names></au>
+<au><second-name>Govindan</second-name>
+<first-names>S V</first-names></au>
+<au><second-name>Sgouros</second-name>
+<first-names>G</first-names></au>
+<au><second-name>Ong</second-name>
+<first-names>G L</first-names></au>
+<au><second-name>Goldenberg</second-name>
+<first-names>D M</first-names></au>
+<au><second-name>Mattes</second-name>
+<first-names>M J</first-names></au>
+</authors>
+<year>1999</year>
+<art-title>Cytotoxicity with Auger electron-emitting radionuclides delivered by antibodies</art-title>
+<jnl-title>Int. J. Cancer</jnl-title>
+<volume>81</volume>
+<pages>985&ndash;92</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/(SICI)1097-0215(19990611)81:6&lt;985::AID-IJC23&gt;3.0.CO;2-W</cr_doi>
+<cr_issn type="print">00207136</cr_issn>
+<cr_issn type="electronic">10970215</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib35" author="Haefliger et al" year-label="2005">
+<authors>
+<au><second-name>Haefliger</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Agorastos</second-name>
+<first-names>N</first-names></au>
+<au><second-name>Renard</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Giambonini-Brugnoli</second-name>
+<first-names>G</first-names></au>
+<au><second-name>Marty</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Alberto</second-name>
+<first-names>R</first-names></au>
+</authors>
+<year>2005</year>
+<art-title>Cell uptake and radiotoxicity studies of an nuclear localization signal peptide-intercalator conjugate labeled with [<sup>99m</sup>Tc(CO)<sub>3</sub>]<sup>&plus;</sup></art-title>
+<jnl-title>Bioconjug. Chem.</jnl-title>
+<volume>16</volume>
+<pages>582&ndash;7</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1021/bc0500084</cr_doi>
+<cr_issn type="print">10431802</cr_issn>
+<cr_issn type="electronic">15204812</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib36" author="Hansen et al" year-label="1996">
+<authors>
+<au><second-name>Hansen</second-name>
+<first-names>H J</first-names></au>
+<au><second-name>Ong</second-name>
+<first-names>G L</first-names></au>
+<au><second-name>Diril</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Valdez</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Roche</second-name>
+<first-names>P A</first-names></au>
+<au><second-name>Griffiths</second-name>
+<first-names>G L</first-names></au>
+<au><second-name>Goldenberg</second-name>
+<first-names>D M</first-names></au>
+<au><second-name>Mattes</second-name>
+<first-names>M J</first-names></au>
+</authors>
+<year>1996</year>
+<art-title>Internalization and catabolism of radiolabelled antibodies to the MHC class-II invariant chain by B-cell lymphomas</art-title>
+<jnl-title>Biochem. J.</jnl-title>
+<volume>320</volume>
+<pages>293&ndash;300</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib37" author="Hindorf et al" year-label="2007">
+<authors>
+<au><second-name>Hindorf</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Lind&eacute;n</second-name>
+<first-names>O</first-names></au>
+<au><second-name>Bousis</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Fotopoulos</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Kostarelos</second-name>
+<first-names>K</first-names></au>
+<au><second-name>Flux</second-name>
+<first-names>G D</first-names></au>
+</authors>
+<year>2007</year>
+<art-title>Single-cell dosimetry for radioimmunotherapy of B-cell lymphoma patients with special reference to leukemic spread</art-title>
+<jnl-title>Cancer Biother. Radiopharm.</jnl-title>
+<volume>22</volume>
+<pages>357&ndash;66</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1089/cbr.2007.347</cr_doi>
+<cr_issn type="print">10849785</cr_issn>
+<cr_issn type="electronic">15578852</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib38" author="Hindorf et al" year-label="2005">
+<authors>
+<au><second-name>Hindorf</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Lind&eacute;n</second-name>
+<first-names>O</first-names></au>
+<au><second-name>Kostarelos</second-name>
+<first-names>K</first-names></au>
+<au><second-name>Strand</second-name>
+<first-names>S-E</first-names></au>
+</authors>
+<year>2005</year>
+<art-title>Internal microdosimetry for single cells in radioimmunotherapy of B-cell lymphoma</art-title>
+<jnl-title>Cancer Biother. Radiopharm.</jnl-title>
+<volume>20</volume>
+<pages>224&ndash;30</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1089/cbr.2005.20.224</cr_doi>
+<cr_issn type="print">10849785</cr_issn>
+<cr_issn type="electronic">00000000</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib39" author="Hofer" year-label="1996">
+<authors>
+<au><second-name>Hofer</second-name>
+<first-names>K G</first-names></au>
+</authors>
+<year>1996</year>
+<art-title>Biophysical aspects of Auger emitters: a review</art-title>
+<jnl-title>Acta Oncol.</jnl-title>
+<volume>35</volume>
+<pages>789&ndash;96</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.3109/02841869609104028</cr_doi>
+<cr_issn type="print">0284186X</cr_issn>
+<cr_issn type="electronic">1651226X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib40" author="Hofer" year-label="2000">
+<authors>
+<au><second-name>Hofer</second-name>
+<first-names>K G</first-names></au>
+</authors>
+<year>2000</year>
+<art-title>Biophysical aspects of Auger processes</art-title>
+<jnl-title>Acta Oncol.</jnl-title>
+<volume>39</volume>
+<pages>651&ndash;7</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/028418600750063686</cr_doi>
+<cr_issn type="print">0284186X</cr_issn>
+<cr_issn type="electronic">1651226X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib41" author="Howell" year-label="1992">
+<authors>
+<au><second-name>Howell</second-name>
+<first-names>R W</first-names></au>
+</authors>
+<year>1992</year>
+<art-title>Radiation spectra for Auger-electron emitting radionuclides: report no. 2 of AAPM Nuclear Medicine Task Group No. 6</art-title>
+<jnl-title>Med. Phys.</jnl-title>
+<volume>19</volume>
+<pages>1371&ndash;83</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1118/1.596927</cr_doi>
+<cr_issn type="print">00942405</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib42" author="Howell" year-label="1994">
+<authors>
+<au><second-name>Howell</second-name>
+<first-names>R W</first-names></au>
+</authors>
+<year>1994</year>
+<art-title>The MIRD schema: from organ to cellular dimensions</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>35</volume>
+<pages>531&ndash;3</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib43" author="Howell" year-label="2008">
+<authors>
+<au><second-name>Howell</second-name>
+<first-names>R W</first-names></au>
+</authors>
+<year>2008</year>
+<art-title>Auger processes in the 21st century</art-title>
+<jnl-title>Int. J. Radiat. Biol.</jnl-title>
+<volume>84</volume>
+<pages>959&ndash;75</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/09553000802395527</cr_doi>
+<cr_issn type="print">09553002</cr_issn>
+<cr_issn type="electronic">13623095</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib44" author="Howell et al" year-label="1989">
+<authors>
+<au><second-name>Howell</second-name>
+<first-names>R W</first-names></au>
+<au><second-name>Rao</second-name>
+<first-names>D V</first-names></au>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+</authors>
+<year>1989</year>
+<art-title>Macroscopic dosimetry for radioimmunotherapy: nonuniform activity distributions in solid tumors</art-title>
+<jnl-title>Med. Phys.</jnl-title>
+<volume>16</volume>
+<pages>66&ndash;74</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1118/1.596404</cr_doi>
+<cr_issn type="print">00942405</cr_issn>
+</crossref>
+</journal-ref>
+<conf-ref id="pmb343974bib45" author="Humm et al" year-label="1980">
+<authors>
+<au><second-name>Humm</second-name>
+<first-names>J L</first-names></au>
+<au><second-name>Booz</second-name>
+<first-names>J</first-names></au>
+<au><second-name>Charlton</second-name>
+<first-names>D E</first-names></au>
+<au><second-name>Feinendegen</second-name>
+<first-names>L E</first-names></au>
+</authors>
+<year>1980</year>
+<art-title>Energy and number distributions of electrons per disintegration of iodine-125, iodine-123 and copper-64</art-title>
+<conf-title>Proc. of the 7th Symp. on Microdosimetry</conf-title>
+<editors>
+<author>
+<first-names>J</first-names>
+<second-name>Booz</second-name></author>
+<author>
+<first-names>H G</first-names>
+<second-name>Ebert</second-name></author>
+<author>
+<first-names>H D</first-names>
+<second-name>Hartfield</second-name></author>
+</editors>
+<publication>
+<place>Brussels</place>
+<publisher>Commission of the European Communities</publisher>
+</publication>
+<pages>pp 1409&ndash;22</pages>
+</conf-ref>
+<journal-ref id="pmb343974bib46" author="Humm and Cobb" year-label="1990">
+<authors>
+<au><second-name>Humm</second-name>
+<first-names>J L</first-names></au>
+<au><second-name>Cobb</second-name>
+<first-names>L M</first-names></au>
+</authors>
+<year>1990</year>
+<art-title>Nonuniformity of tumor dose in radioimmunotherapy</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>31</volume>
+<pages>75&ndash;83</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib47" author="Inokuti" year-label="1971">
+<authors>
+<au><second-name>Inokuti</second-name>
+<first-names>M</first-names></au>
+</authors>
+<year>1971</year>
+<art-title>Inelastic collisions of fast charged particles with atoms and molecules&mdash;the Bethe theory revisited</art-title>
+<jnl-title>Rev. Mod. Phys.</jnl-title>
+<volume>43</volume>
+<pages>297&ndash;347</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1103/RevModPhys.43.297</cr_doi>
+<cr_issn type="print">00346861</cr_issn>
+<cr_issn type="electronic">15390756</cr_issn>
+</crossref>
+</journal-ref>
+<book-ref id="pmb343974bib48" author="Ito" year-label="1988">
+<authors>
+<au><second-name>Ito</second-name>
+<first-names>A</first-names></au>
+</authors>
+<year>1988</year>
+<art-title>Electron track simulation for microdosimetry</art-title>
+<book-title>Monte Carlo Transport of Electrons and Photons</book-title>
+<editors>
+<author>
+<first-names>T M</first-names>
+<second-name>Jenkins</second-name></author>
+<author>
+<first-names>W R</first-names>
+<second-name>Nelson</second-name></author>
+<author>
+<first-names>A</first-names>
+<second-name>Rindi</second-name></author>
+<author>
+<first-names>A E</first-names>
+<second-name>Nahum</second-name></author>
+</editors>
+<publication>
+<place>New York</place>
+<publisher>Plenum</publisher>
+</publication>
+<pages>pp 485&ndash;501</pages>
+</book-ref>
+<journal-ref id="pmb343974bib49" author="Jungerman et al" year-label="1984">
+<authors>
+<au><second-name>Jungerman</second-name>
+<first-names>J A</first-names></au>
+<au><second-name>Yu</second-name>
+<first-names>K-H P</first-names></au>
+<au><second-name>Zanelli</second-name>
+<first-names>C I</first-names></au>
+</authors>
+<year>1984</year>
+<art-title>Radiation absorbed dose estimates at the cellular level for some electron-emitting radionuclides for radioimmunotherapy</art-title>
+<jnl-title>Int. J. Appl. Radiat. Isot.</jnl-title>
+<volume>35</volume>
+<pages>883&ndash;88</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/0020-708X(84)90025-5</cr_doi>
+<cr_issn type="print">0020708X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib50" author="Kassis" year-label="1992">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+</authors>
+<year>1992</year>
+<art-title>The MIRD approach: remembering the limitations</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>33</volume>
+<pages>781&ndash;2</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib51" author="Kassis" year-label="2004">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+</authors>
+<year>2004</year>
+<art-title>The amazing world of Auger electrons</art-title>
+<jnl-title>Int. J. Radiat. Biol.</jnl-title>
+<volume>80</volume>
+<pages>789&ndash;803</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/09553000400017663</cr_doi>
+<cr_issn type="print">09553002</cr_issn>
+<cr_issn type="electronic">13623095</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib52" author="Kassis" year-label="2008">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+</authors>
+<year>2008</year>
+<art-title>Therapeutic radionuclides: biophysical and radiobiologic principles</art-title>
+<jnl-title>Semin. Nucl. Med.</jnl-title>
+<volume>38</volume>
+<pages>358&ndash;66</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1053/j.semnuclmed.2008.05.002</cr_doi>
+<cr_issn type="print">00012998</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib53" author="Kassis et al" year-label="1980">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Haydock</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+</authors>
+<year>1980</year>
+<art-title>Radiotoxicity of <sup>75</sup>Se and <sup>35</sup>S: theory and application to a cellular model</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>84</volume>
+<pages>407&ndash;25</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2307/3575480</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib54" author="Kassis et al" year-label="1983">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Haydock</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+</authors>
+<year>1983</year>
+<art-title>Thallium-201: an experimental and a theoretical radiobiological approach to dosimetry</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>24</volume>
+<pages>1164&ndash;75</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib55" author="Kassis et al" year-label="1982">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Haydock</second-name>
+<first-names>C</first-names></au>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+<au><second-name>McElvany</second-name>
+<first-names>K D</first-names></au>
+<au><second-name>Welch</second-name>
+<first-names>M J</first-names></au>
+</authors>
+<year>1982</year>
+<art-title>Lethality of Auger electrons from the decay of bromine-77 in the DNA of mammalian cells</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>90</volume>
+<pages>362&ndash;73</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2307/3575714</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<book-ref id="pmb343974bib56" author="Kassis et al" year-label="1988">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+<au><second-name>Howell</second-name>
+<first-names>R W</first-names></au>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+</authors>
+<year>1988</year>
+<art-title>Positional effects of Auger decays in mammalian cells in culture</art-title>
+<book-title>DNA Damage by Auger Emitters</book-title>
+<editors>
+<author>
+<first-names>K F</first-names>
+<second-name>Baverstock</second-name></author>
+<author>
+<first-names>D E</first-names>
+<second-name>Charlton</second-name></author>
+</editors>
+<publication>
+<place>London</place>
+<publisher>Taylor and Francis</publisher>
+</publication>
+<pages>pp 1&ndash;14</pages>
+</book-ref>
+<journal-ref id="pmb343974bib57" author="Kassis et al" year-label="1990">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+<au><second-name>Makrigiorgos</second-name>
+<first-names>G M</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+</authors>
+<year>1990</year>
+<art-title>Implications of radiobiological and dosimetric studies of DNA-incorporated <sup>123</sup>I: the use of the Auger effect as a biological probe at the nanometre level</art-title>
+<jnl-title>Radiat. Prot. Dosim.</jnl-title>
+<volume>31</volume>
+<pages>333&ndash;8</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib58" author="Kassis et al" year-label="1985">
+<authors>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+</authors>
+<year>1985</year>
+<art-title>Intracellular distribution and radiotoxicity of Chromium-51 in mammalian cells: Auger-electron dosimetry</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>26</volume>
+<pages>59&ndash;67</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib59" author="Kim et al" year-label="2000">
+<authors>
+<au><second-name>Kim</second-name>
+<first-names>Y-K</first-names></au>
+<au><second-name>Santos</second-name>
+<first-names>J P</first-names></au>
+<au><second-name>Parente</second-name>
+<first-names>F</first-names></au>
+</authors>
+<year>2000</year>
+<art-title>Extension of the binary-encounter-dipole model to relativistic incident electrons</art-title>
+<jnl-title>Phys. Rev.</jnl-title>
+<part>A</part>
+<volume>62</volume>
+<pages>1&ndash;14</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1146/annurev.physiol.62.1.1</cr_doi>
+<cr_issn type="print">00664278</cr_issn>
+<cr_issn type="electronic">15451585</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib60" author="Kriehuber et al" year-label="2004">
+<authors>
+<au><second-name>Kriehuber</second-name>
+<first-names>R</first-names></au>
+<au><second-name>Riedling</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Symko</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Weiss</second-name>
+<first-names>D G</first-names></au>
+</authors>
+<year>2004</year>
+<art-title>Cytotoxicity, genotoxicity and intracellular distribution of the Auger electron emitter <sup>65</sup>Zn in two human cell lines</art-title>
+<jnl-title>Radiat. Environ. Biophys.</jnl-title>
+<volume>43</volume>
+<pages>15&ndash;22</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1007/s00411-004-0234-y</cr_doi>
+<cr_issn type="print">0301634X</cr_issn>
+<cr_issn type="electronic">14322099</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib61" author="Li et al" year-label="2001">
+<authors>
+<au><second-name>Li</second-name>
+<first-names>W B</first-names></au>
+<au><second-name>Friedland</second-name>
+<first-names>W</first-names></au>
+<au><second-name>Pomplun</second-name>
+<first-names>E</first-names></au>
+<au><second-name>Jacob</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Paretzke</second-name>
+<first-names>H G</first-names></au>
+<au><second-name>Lassmann</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Reiners</second-name>
+<first-names>C</first-names></au>
+</authors>
+<year>2001</year>
+<art-title>Track structures and dose distributions from decays of <sup>131</sup>I and <sup>125</sup>I in and around water spheres simulating micrometastases of differentiated thyroid cancer</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>156</volume>
+<pages>419&ndash;29</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1667/0033-7587(2001)156[0419:TSADDF]2.0.CO;2</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib62" author="Liu et al" year-label="2009">
+<authors>
+<au><second-name>Liu</second-name>
+<first-names>C S</first-names></au>
+<au><second-name>Tung</second-name>
+<first-names>C-J</first-names></au>
+<au><second-name>Hu</second-name>
+<first-names>Y H</first-names></au>
+<au><second-name>Chou</second-name>
+<first-names>C M</first-names></au>
+<au><second-name>Chao</second-name>
+<first-names>T C</first-names></au>
+<au><second-name>Lee</second-name>
+<first-names>C C</first-names></au>
+</authors>
+<year>2009</year>
+<art-title>Calculations of specific cellular doses for low-energy electrons</art-title>
+<jnl-title>Nucl. Instrum. Methods</jnl-title>
+<part>B</part>
+<volume>267</volume>
+<pages>1823&ndash;9</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.nimb.2009.03.041</cr_doi>
+<cr_issn type="print">0168583X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib63" author="Makrigiorgos et al" year-label="1990a">
+<authors>
+<au><second-name>Makrigiorgos</second-name>
+<first-names>G M</first-names></au>
+<au><second-name>Baranowska-Kortylewicz</second-name>
+<first-names>J</first-names></au>
+<au><second-name>Van den Abbeele</second-name>
+<first-names>A D</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Ito</second-name>
+<first-names>S</first-names></au>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+</authors>
+<year>1990a</year>
+<art-title>Microscopic spatial inhomogeneity of radiopharmaceutical deposition in mammalian tissues: dosimetry at the cellular level and comparison with conventional dosimetry</art-title>
+<jnl-title>Radiat. Prot. Dosim.</jnl-title>
+<volume>31</volume>
+<pages>319&ndash;24</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib64" author="Makrigiorgos et al" year-label="1992">
+<authors>
+<au><second-name>Makrigiorgos</second-name>
+<first-names>G M</first-names></au>
+<au><second-name>Berman</second-name>
+<first-names>R M</first-names></au>
+<au><second-name>Baranowska-Kortylewicz</second-name>
+<first-names>J</first-names></au>
+<au><second-name>Bump</second-name>
+<first-names>E</first-names></au>
+<au><second-name>Humm</second-name>
+<first-names>J L</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+</authors>
+<year>1992</year>
+<art-title>DNA damage produced in V79 cells by DNA-incorporated iodine-123: a comparison with iodine-125</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>129</volume>
+<pages>309&ndash;14</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2307/3578031</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib65" author="Makrigiorgos et al" year-label="1990b">
+<authors>
+<au><second-name>Makrigiorgos</second-name>
+<first-names>G M</first-names></au>
+<au><second-name>Ito</second-name>
+<first-names>S</first-names></au>
+<au><second-name>Baranowska-Kortylewicz</second-name>
+<first-names>J</first-names></au>
+<au><second-name>Vinter</second-name>
+<first-names>D W</first-names></au>
+<au><second-name>Iqbal</second-name>
+<first-names>A</first-names></au>
+<au><second-name>Van den Abbeele</second-name>
+<first-names>A D</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+</authors>
+<year>1990b</year>
+<art-title>Inhomogeneous deposition of radiopharmaceuticals at the cellular level: experimental evidence and dosimetric applications</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>31</volume>
+<pages>1358&ndash;63</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib66" author="Makrigiorgos et al" year-label="1989">
+<authors>
+<au><second-name>Makrigiorgos</second-name>
+<first-names>G M</first-names></au>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+<au><second-name>Baranowska-Kortylewicz</second-name>
+<first-names>J</first-names></au>
+<au><second-name>Welch</second-name>
+<first-names>K D</first-names></au>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+<au><second-name>Adelstein</second-name>
+<first-names>S J</first-names></au>
+</authors>
+<year>1989</year>
+<art-title>Radiotoxicity of <sup>123</sup>IUdR in V79 cells: a comparison with <sup>125</sup>IUdR</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>118</volume>
+<pages>532&ndash;44</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2307/3577411</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib67" author="Neti and Howell" year-label="2006">
+<authors>
+<au><second-name>Neti</second-name>
+<first-names>P V S V</first-names></au>
+<au><second-name>Howell</second-name>
+<first-names>R W</first-names></au>
+</authors>
+<year>2006</year>
+<art-title>Log normal distribution of cellular uptake of radioactivity: implications for biologic responses to radiopharmaceuticals</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>47</volume>
+<pages>1049&ndash;58</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib68" author="Nikjoo et al" year-label="2002">
+<authors>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Bolton</second-name>
+<first-names>C E</first-names></au>
+<au><second-name>Watanabe</second-name>
+<first-names>R</first-names></au>
+<au><second-name>Terrissol</second-name>
+<first-names>M</first-names></au>
+<au><second-name>O'Neill</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Goodhead</second-name>
+<first-names>D T</first-names></au>
+</authors>
+<year>2002</year>
+<art-title>Modelling of DNA damage induced by energetic electrons (100 eV to 100 keV)</art-title>
+<jnl-title>Radiat. Prot. Dosim.</jnl-title>
+<volume>99</volume>
+<pages>77&ndash;80</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib69" author="Nikjoo et al" year-label="2008a">
+<authors>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Charlton</second-name>
+<first-names>D E</first-names></au>
+</authors>
+<year>2008a</year>
+<art-title>The Auger effect in physical and biological research</art-title>
+<jnl-title>Int. J. Radiat. Biol.</jnl-title>
+<volume>84</volume>
+<pages>1011&ndash;26</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/09553000802460172</cr_doi>
+<cr_issn type="print">09553002</cr_issn>
+<cr_issn type="electronic">13623095</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib70" author="Nikjoo et al" year-label="2008b">
+<authors>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Watanabe</second-name>
+<first-names>R</first-names></au>
+<au><second-name>Uehara</second-name>
+<first-names>S</first-names></au>
+</authors>
+<year>2008b</year>
+<art-title>Can Monte Carlo track structure codes reveal reaction mechanism in DNA damage and improve radiation therapy&quest;</art-title>
+<jnl-title>Radiat. Phys. Chem.</jnl-title>
+<volume>77</volume>
+<pages>1270&ndash;9</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.radphyschem.2008.05.043</cr_doi>
+<cr_issn type="print">0969806X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib71" author="Nikjoo et al" year-label="1996">
+<authors>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Martin</second-name>
+<first-names>R F</first-names></au>
+<au><second-name>Charlton</second-name>
+<first-names>D E</first-names></au>
+<au><second-name>Terrissol</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Kandaiya</second-name>
+<first-names>S</first-names></au>
+<au><second-name>Lobachevsky</second-name>
+<first-names>P</first-names></au>
+</authors>
+<year>1996</year>
+<art-title>Modelling of Auger-induced DNA damage by incorporated <sup>125</sup>I</art-title>
+<jnl-title>Acta Oncol.</jnl-title>
+<volume>35</volume>
+<pages>849&ndash;56</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.3109/02841869609104036</cr_doi>
+<cr_issn type="print">0284186X</cr_issn>
+<cr_issn type="electronic">1651226X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib72" author="Nikjoo et al" year-label="2000">
+<authors>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Panyutin</second-name>
+<first-names>I G</first-names></au>
+<au><second-name>Terrissol</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Vrigneaud</second-name>
+<first-names>J M</first-names></au>
+<au><second-name>Laughton</second-name>
+<first-names>C A</first-names></au>
+</authors>
+<year>2000</year>
+<art-title>Distribution of strand breaks produced by Auger electrons in decay of <sup>125</sup>I in triplex DNA</art-title>
+<jnl-title>Acta Oncol.</jnl-title>
+<volume>39</volume>
+<pages>707&ndash;12</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/028418600750063767</cr_doi>
+<cr_issn type="print">0284186X</cr_issn>
+<cr_issn type="electronic">1651226X</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib73" author="Nikjoo et al" year-label="2006">
+<authors>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Uehara</second-name>
+<first-names>S</first-names></au>
+<au><second-name>Emfietzoglou</second-name>
+<first-names>D</first-names></au>
+<au><second-name>Cucinotta</second-name>
+<first-names>F A</first-names></au>
+</authors>
+<year>2006</year>
+<art-title>Track-structure codes in radiation research</art-title>
+<jnl-title>Radiat. Meas.</jnl-title>
+<volume>41</volume>
+<pages>1052&ndash;74</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.radmeas.2006.02.001</cr_doi>
+<cr_issn type="print">13504487</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib74" author="O'Donoghue and Wheldon" year-label="1996">
+<authors>
+<au><second-name>O'Donoghue</second-name>
+<first-names>J A</first-names></au>
+<au><second-name>Wheldon</second-name>
+<first-names>T E</first-names></au>
+</authors>
+<year>1996</year>
+<art-title>Targeted radiotherapy using Auger electron emitters</art-title>
+<jnl-title>Phys. Med. Biol.</jnl-title>
+<volume>41</volume>
+<pages>1973&ndash;92</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0031-9155/41/10/009</cr_doi>
+<cr_issn type="print">00319155</cr_issn>
+<cr_issn type="electronic">13616560</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib75" author="Pauwels et al" year-label="1998">
+<authors>
+<au><second-name>Pauwels</second-name>
+<first-names>E K J</first-names></au>
+<au><second-name>McCready</second-name>
+<first-names>V R</first-names></au>
+<au><second-name>Stoot</second-name>
+<first-names>J H M B</first-names></au>
+<au><second-name>Van Deurzen</second-name>
+<first-names>D F P</first-names></au>
+</authors>
+<year>1998</year>
+<art-title>The mechanism of accumulation of tumor-localizing radiopharmaceuticals</art-title>
+<jnl-title>Eur. J. Nucl. Med.</jnl-title>
+<volume>25</volume>
+<pages>277&ndash;305</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1007/s002590050229</cr_doi>
+<cr_issn type="print">03406997</cr_issn>
+<cr_issn type="electronic">16197089</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib76" author="Pomplun" year-label="1991">
+<authors>
+<au><second-name>Pomplun</second-name>
+<first-names>E</first-names></au>
+</authors>
+<year>1991</year>
+<art-title>A new DNA target model for track structure calculations and its first application to I-125 Auger electrons</art-title>
+<jnl-title>Int. J. Radiat. Biol.</jnl-title>
+<volume>59</volume>
+<pages>625&ndash;42</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1080/09553009114550561</cr_doi>
+<cr_issn type="print">09553002</cr_issn>
+<cr_issn type="electronic">13623095</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib77" author="Pouget et al" year-label="2008">
+<authors>
+<au><second-name>Pouget</second-name>
+<first-names>J P</first-names></au>
+<others><italic>et al</italic></others></authors>
+<year>2008</year>
+<art-title>Cell membrane is a more sensitive target than cytoplasm to dense ionization produced by Auger electrons</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>170</volume>
+<pages>192&ndash;200</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1667/RR1359.1</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib78" author="Press et al" year-label="1989">
+<authors>
+<au><second-name>Press</second-name>
+<first-names>O W</first-names></au>
+<au><second-name>Farr</second-name>
+<first-names>A G</first-names></au>
+<au><second-name>Borroz</second-name>
+<first-names>K I</first-names></au>
+<au><second-name>Anderson</second-name>
+<first-names>S K</first-names></au>
+<au><second-name>Martin</second-name>
+<first-names>P J</first-names></au>
+</authors>
+<year>1989</year>
+<art-title>Endocytosis and degradation of monoclonal antibodies targeting human B-cell malignancies</art-title>
+<jnl-title>Cancer Res.</jnl-title>
+<volume>49</volume>
+<pages>4906&ndash;12</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib79" author="Roeske et al" year-label="2008">
+<authors>
+<au><second-name>Roeske</second-name>
+<first-names>J L</first-names></au>
+<au><second-name>Aydogan</second-name>
+<first-names>B</first-names></au>
+<au><second-name>Bardi&egrave;s</second-name>
+<first-names>M</first-names></au>
+<au><second-name>Humm</second-name>
+<first-names>J L</first-names></au>
+</authors>
+<year>2008</year>
+<art-title>Small-scale dosimetry: challenges and future directions</art-title>
+<jnl-title>Semin. Nucl. Med.</jnl-title>
+<volume>38</volume>
+<pages>367&ndash;83</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1053/j.semnuclmed.2008.05.003</cr_doi>
+<cr_issn type="print">00012998</cr_issn>
+</crossref>
+</journal-ref>
+<conf-ref id="pmb343974bib80" author="Salvat et al" year-label="2003">
+<authors>
+<au><second-name>Salvat</second-name>
+<first-names>F</first-names></au>
+<au><second-name>Fern&aacute;ndez-Varea</second-name>
+<first-names>J M</first-names></au>
+<au><second-name>Sempau</second-name>
+<first-names>J</first-names></au>
+</authors>
+<year>2003</year>
+<art-title>PENELOPE: a code system for Monte Carlo simulation of electron and photon transport</art-title>
+<conf-title>Workshop Proc.</conf-title>
+<misc-text>(Issy-les-Moulineaux: OECD/NEA) <webref url="http://www.nea.fr/html/dbprog/peneloperef.html">http://www.nea.fr/html/dbprog/peneloperef.html</webref></misc-text>
+</conf-ref>
+<journal-ref id="pmb343974bib81" author="Sastry" year-label="1992">
+<authors>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+</authors>
+<year>1992</year>
+<art-title>Biological effects of the Auger emitter iodine-125: a review. Report no 1 of AAPM Nuclear Medicine Task Group 6</art-title>
+<jnl-title>Med. Phys.</jnl-title>
+<volume>19</volume>
+<pages>1361&ndash;70</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1118/1.596926</cr_doi>
+<cr_issn type="print">00942405</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib82" author="Sgouros" year-label="2005">
+<authors>
+<au><second-name>Sgouros</second-name>
+<first-names>G</first-names></au>
+</authors>
+<year>2005</year>
+<art-title>Dosimetry of internal emitters</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>46</volume>
+<pages>18S&ndash;27S</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib83" author="Sgouros et al" year-label="2007">
+<authors>
+<au><second-name>Sgouros</second-name>
+<first-names>G</first-names></au>
+<au><second-name>Knox</second-name>
+<first-names>S J</first-names></au>
+<au><second-name>Joiner</second-name>
+<first-names>M C</first-names></au>
+<au><second-name>Morgan</second-name>
+<first-names>W F</first-names></au>
+<au><second-name>Kassis</second-name>
+<first-names>A I</first-names></au>
+</authors>
+<year>2007</year>
+<art-title>MIRD continuing education: bystander and low-dose-rate effects: are these relevant to radionuclide therapy&quest;</art-title>
+<jnl-title>J. Nucl. Med.</jnl-title>
+<volume>48</volume>
+<pages>1683&ndash;91</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2967/jnumed.105.028183</cr_doi>
+<cr_issn type="print">01615505</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib84" author="Stabin" year-label="2003">
+<authors>
+<au><second-name>Stabin</second-name>
+<first-names>M</first-names></au>
+</authors>
+<year>2003</year>
+<art-title>Developments in the internal dosimetry of radiopharmaceuticals</art-title>
+<jnl-title>Radiat. Prot. Dosim.</jnl-title>
+<volume>105</volume>
+<pages>575&ndash;80</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib85" author="Stabin" year-label="2006">
+<authors>
+<au><second-name>Stabin</second-name>
+<first-names>M</first-names></au>
+</authors>
+<year>2006</year>
+<art-title>Nuclear medicine dosimetry</art-title>
+<jnl-title>Phys. Med. Biol.</jnl-title>
+<volume>51</volume>
+<pages>R187&ndash;R202</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0031-9155/51/13/R12</cr_doi>
+<cr_issn type="print">00319155</cr_issn>
+<cr_issn type="electronic">13616560</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib86" author="Stein et al" year-label="2003">
+<authors>
+<au><second-name>Stein</second-name>
+<first-names>R</first-names></au>
+<au><second-name>Govindan</second-name>
+<first-names>S V</first-names></au>
+<au><second-name>Mattes</second-name>
+<first-names>M J</first-names></au>
+<au><second-name>Chen</second-name>
+<first-names>S</first-names></au>
+<au><second-name>Reed</second-name>
+<first-names>L</first-names></au>
+<au><second-name>Newsome</second-name>
+<first-names>G</first-names></au>
+<au><second-name>McBride</second-name>
+<first-names>B J</first-names></au>
+<au><second-name>Griffiths</second-name>
+<first-names>G L</first-names></au>
+<au><second-name>Hansen</second-name>
+<first-names>H J</first-names></au>
+<au><second-name>Goldenberg</second-name>
+<first-names>D M</first-names></au>
+</authors>
+<year>2003</year>
+<art-title>Improved iodine radiolabels for monoclonal antibody therapy</art-title>
+<jnl-title>Cancer Res.</jnl-title>
+<volume>63</volume>
+<pages>111&ndash;8</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib87" author="Uehara et al" year-label="1999">
+<authors>
+<au>
+<second-name>Uehara</second-name>
+<first-names>S</first-names></au>
+<au><second-name>Nikjoo</second-name>
+<first-names>H</first-names></au>
+<au><second-name>Goodhead</second-name>
+<first-names>D T</first-names></au>
+</authors>
+<year>1999</year>
+<art-title>Comparison and assessment of electron cross sections for Monte Carlo track structure codes</art-title>
+<jnl-title>Radiat. Res.</jnl-title>
+<volume>152</volume>
+<pages>202&ndash;13</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.2307/3580095</cr_doi>
+<cr_issn type="print">00337587</cr_issn>
+<cr_issn type="electronic">19385404</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="pmb343974bib88" author="&Uuml;nak et al" year-label="1997">
+<authors>
+<au><second-name>&Uuml;nak</second-name>
+<first-names>P</first-names></au>
+<au><second-name>Ipek</second-name>
+<first-names>I</first-names></au>
+<au><second-name>&Uuml;nak</second-name>
+<first-names>T</first-names></au>
+</authors>
+<year>1997</year>
+<art-title>Microdosimetry of Auger and conversion electrons of <sup>201</sup>Tl, <sup>51</sup>Cr, <sup>55</sup>Fe, <sup>99m</sup>Tc and beta-rays of <sup>204</sup>Tl at the cellular level</art-title>
+<jnl-title>Phys. Med.</jnl-title>
+<volume>13</volume>
+<issno>Suppl. 1</issno>
+<pages>166&ndash;8</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib89" author="&Uuml;nak" year-label="1997">
+<authors>
+<au><second-name>&Uuml;nak</second-name>
+<first-names>T</first-names></au>
+</authors>
+<year>1997</year>
+<art-title>Calculations of microscopic energy deposition from Auger electrons within the cell nucleus</art-title>
+<jnl-title>Radiat. Prot. Dosim.</jnl-title>
+<volume>74</volume>
+<pages>183&ndash;8</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib90" author="Wright et al" year-label="1990">
+<authors>
+<au><second-name>Wright</second-name>
+<first-names>H A</first-names></au>
+<au><second-name>Hamm</second-name>
+<first-names>R N</first-names></au>
+<au><second-name>Turner</second-name>
+<first-names>J E</first-names></au>
+<au><second-name>Howell</second-name>
+<first-names>R W</first-names></au>
+<au><second-name>Rao</second-name>
+<first-names>D V</first-names></au>
+<au><second-name>Sastry</second-name>
+<first-names>K S R</first-names></au>
+</authors>
+<year>1990</year>
+<art-title>Calculations of physical and chemical reactions with DNA in aqueous solution from Auger cascades</art-title>
+<jnl-title>Radiat. Prot. Dosim.</jnl-title>
+<volume>31</volume>
+<pages>59&ndash;62</pages>
+</journal-ref>
+<journal-ref id="pmb343974bib91" author="Yuan et al" year-label="2008">
+<authors>
+<au><second-name>Yuan</second-name>
+<first-names>T</first-names></au>
+<au><second-name>Liang'an</second-name>
+<first-names>Z</first-names></au>
+<au><second-name>Guangfu</second-name>
+<first-names>D</first-names></au>
+</authors>
+<year>2008</year>
+<art-title>Influence of nonuniform activity distribution on cellular dosimetry</art-title>
+<jnl-title>Cancer Biother. Radiopharm.</jnl-title>
+<volume>23</volume>
+<pages>259&ndash;64</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1089/cbr.2007.0405</cr_doi>
+<cr_issn type="print">10849785</cr_issn>
+<cr_issn type="electronic">15578852</cr_issn>
+</crossref>
+</journal-ref>
+</reference-list>
+</references>
+</back>
+</article>
