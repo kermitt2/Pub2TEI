@@ -1,0 +1,56 @@
+    <!--  (C)  International   Organization   for   Standardization   1986
+    Permission to copy in any form is granted for use with conforming SGML
+    systems and applications as defined in ISO 8879, provided this  notice
+    is included in all copies.  -->
+
+    <!-- Character entity set. Typical invocation:
+
+    <!ENTITY % ISOgrk3 PUBLIC "ISO 8879-1986//ENTITIES Greek Symbols//EN">
+    %ISOgrk3;
+    -->
+
+    <!ENTITY alpha     "[alpha ]" ><!--=small alpha, Greek-->
+    <!ENTITY beta      "[beta  ]" ><!--=small beta, Greek-->
+    <!ENTITY gamma     "[gamma ]" ><!--=small gamma, Greek-->
+    <!ENTITY Gamma     "[Gamma ]" ><!--=capital Gamma, Greek-->
+    <!ENTITY gammad    "[gammad]" ><!--/digamma-->
+    <!ENTITY delta     "[delta ]" ><!--=small delta, Greek-->
+    <!ENTITY Delta     "[Delta ]" ><!--=capital Delta, Greek-->
+    <!ENTITY epsi      "[epsi  ]" ><!--=small epsilon, Greek-->
+    <!ENTITY epsiv     "[epsiv ]" ><!--/varepsilon-->
+    <!ENTITY epsis     "[epsis ]" ><!--/straightepsilon-->
+    <!ENTITY zeta      "[zeta  ]" ><!--=small zeta, Greek-->
+    <!ENTITY eta       "[eta   ]" ><!--=small eta, Greek-->
+    <!ENTITY thetas    "[thetas]" ><!--straight theta-->
+     <!ENTITY Theta     "[Theta ]" ><!--=capital Theta, Greek-->
+     <!ENTITY thetav    "[thetav]" ><!--/vartheta - curly or open theta-->
+     <!ENTITY iota      "[iota  ]" ><!--=small iota, Greek-->
+     <!ENTITY kappa     "[kappa ]" ><!--=small kappa, Greek-->
+     <!ENTITY kappav    "[kappav]" ><!--/varkappa-->
+     <!ENTITY lambda    "[lambda]" ><!--=small lambda, Greek-->
+     <!ENTITY Lambda    "[Lambda]" ><!--=capital Lambda, Greek-->
+     <!ENTITY mu        "[mu    ]" ><!--=small mu, Greek-->
+     <!ENTITY nu        "[nu    ]" ><!--=small nu, Greek-->
+     <!ENTITY xi        "[xi    ]" ><!--=small xi, Greek-->
+     <!ENTITY Xi        "[Xi    ]" ><!--=capital Xi, Greek-->
+     <!ENTITY pi        "[pi    ]" ><!--=small pi, Greek-->
+     <!ENTITY piv       "[piv   ]" ><!--/varpi-->
+     <!ENTITY Pi        "[Pi    ]" ><!--=capital Pi, Greek-->
+     <!ENTITY rho       "[rho   ]" ><!--=small rho, Greek-->
+     <!ENTITY rhov      "[rhov  ]" ><!--/varrho-->
+     <!ENTITY sigma     "[sigma ]" ><!--=small sigma, Greek-->
+     <!ENTITY Sigma     "[Sigma ]" ><!--=capital Sigma, Greek-->
+     <!ENTITY sigmav    "[sigmav]" ><!--/varsigma-->
+     <!ENTITY tau       "[tau   ]" ><!--=small tau, Greek-->
+     <!ENTITY upsi      "[upsi  ]" ><!--=small upsilon, Greek-->
+     <!ENTITY Upsi      "[Upsi  ]" ><!--=capital Upsilon, Greek-->
+     <!ENTITY phis      "[phis  ]" ><!--/straightphi - straight phi-->
+     <!ENTITY Phi       "[Phi   ]" ><!--=capital Phi, Greek-->
+     <!ENTITY phiv      "[phiv  ]" ><!--/varphi - curly or open phi-->
+     <!ENTITY chi       "[chi   ]" ><!--=small chi, Greek-->
+     <!ENTITY psi       "[psi   ]" ><!--=small psi, Greek-->
+     <!ENTITY Psi       "[Psi   ]" ><!--=capital Psi, Greek-->
+     <!ENTITY omega     "[omega ]" ><!--=small omega, Greek-->
+     <!ENTITY Omega     "[Omega ]" ><!--=capital Omega, Greek-->
+
+

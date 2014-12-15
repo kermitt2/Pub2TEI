@@ -1,0 +1,47 @@
+<!-- ISO AMS B: Binary Operators -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY amalg	"&#x2A3F;"> <!-- amalgamation or coproduct -->
+<!ENTITY Barwed	"&#x2306;"> <!-- logical and, dbl bar above -->
+<!ENTITY barwed	"&#x22BC;"> <!-- logical and, bar above -->
+<!ENTITY Cap	"&#x22D2;"> <!-- double intersection -->
+<!ENTITY coprod	"&#x2210;"> <!-- coproduct operator -->
+<!ENTITY Cup	"&#x22D3;"> <!-- double union -->
+<!ENTITY cuvee	"&#x22CE;"> <!-- curly logical or -->
+<!ENTITY cuwed	"&#x22CF;"> <!-- curly logical and -->
+<!ENTITY diam	"&#x22C4;"> <!-- open diamond -->
+<!ENTITY divonx	"&#x22C7;"> <!-- division on times -->
+<!ENTITY intcal	"&#x22BA;"> <!-- intercal -->
+<!ENTITY lthree	"&#x22CB;"> <!-- lefthreetimes -->
+<!ENTITY ltimes	"&#x22C9;"> <!-- times sign, left closed -->
+<!ENTITY minusb	"&#x229F;"> <!-- minus sign in box -->
+<!ENTITY oast	"&#x229B;"> <!-- asterisk in circle -->
+<!ENTITY ocir	"&#x229A;"> <!-- small circle in circle -->
+<!ENTITY odash	"&#x229D;"> <!-- hyphen in circle -->
+<!ENTITY odot	"&#x2299;"> <!-- middle dot in circle -->
+<!ENTITY ominus	"&#x2296;"> <!-- minus sign in circle -->
+<!ENTITY oplus	"&#x2295;"> <!-- plus sign in circle -->
+<!ENTITY osol	"&#x2298;"> <!-- solidus in circle -->
+<!ENTITY otimes	"&#x2297;"> <!-- multiply sign in circle -->
+<!ENTITY plusb	"&#x229E;"> <!-- plus sign in box -->
+<!ENTITY plusdo	"&#x2214;"> <!-- plus sign, dot above -->
+<!ENTITY prod	"&#x220F;"> <!-- product operator -->
+<!ENTITY rthree	"&#x22CC;"> <!-- rightthreetimes -->
+<!ENTITY rtimes	"&#x22CA;"> <!-- times sign, right closed -->
+<!ENTITY sdot	"&#x22C5;"> <!-- small middle dot -->
+<!ENTITY sdotb	"&#x22A1;"> <!-- small dot in box -->
+<!ENTITY setmn	"&#x2216;"> <!-- reverse solidus -->
+<!ENTITY sqcap	"&#x2293;"> <!-- square intersection -->
+<!ENTITY sqcup	"&#x2294;"> <!-- square union -->
+<!ENTITY ssetmn	"&#x2216;"> <!-- sm reverse solidus -->
+<!ENTITY sstarf	"&#x22C6;"> <!-- small star, filled -->
+<!ENTITY sum	"&#x2211;"> <!-- summation operator -->
+<!ENTITY timesb	"&#x22A0;"> <!-- multiply sign in box -->
+<!ENTITY uplus	"&#x228E;"> <!-- plus sign in union -->
+<!ENTITY veebar "&#x22BB;"> <!-- logical or, bar below -->
+<!ENTITY wreath	"&#x2240;"> <!-- wreath product -->
+<!ENTITY xcirc	"&#x25CB;"> <!-- large circle. MathML: x25EF -->
+<!ENTITY xdtri	"&#x25BD;"> <!-- big dn tri, open -->
+<!ENTITY xutri	"&#x25B3;"> <!-- big up tri, open -->

@@ -1,0 +1,15 @@
+<!-- ISO AMS C: Delimiters -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY dlcorn	"&#x231E;"> <!-- lower left corner -->
+<!ENTITY drcorn	"&#x231F;"> <!-- lower right corner -->
+<!ENTITY lceil	"&#x2308;"> <!-- left ceiling -->
+<!ENTITY lfloor	"&#x230A;"> <!-- left floor -->
+<!ENTITY lparlt "&#x2993;"> <!-- left parenthesis, lt -->
+<!ENTITY rceil	"&#x2309;"> <!-- right ceiling -->
+<!ENTITY rfloor	"&#x230B;"> <!-- right floor -->
+<!ENTITY rpargt	"&#x2994;"> <!-- right paren, gt -->
+<!ENTITY ulcorn	"&#x231C;"> <!-- upper left corner -->
+<!ENTITY urcorn	"&#x231D;"> <!-- upper right corner -->

@@ -1,0 +1,81 @@
+<!-- ISO NUM: Numeroc and Special Graphic -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!--     amp	"&#x0026;"       ampersand, predeclared in XML -->
+<!ENTITY apos	"&#x0027;"> <!-- apostrophe -->
+<!ENTITY ast	"&#x002A;"> <!-- asterisk -->
+<!ENTITY brvbar	"&#x00A6;"> <!-- broken (vertical) bar -->
+<!ENTITY bsol	"&#x005C;"> <!-- reverse solidus -->
+<!ENTITY cent	"&#x00A2;"> <!-- cent sign -->
+<!ENTITY colon	"&#x003A;"> <!-- colon -->
+<!ENTITY comma	"&#x002C;"> <!-- comma -->
+<!ENTITY commat	"&#x0040;"> <!-- commercial at -->
+<!ENTITY copy	"&#x00A9;"> <!-- copyright sign -->
+<!ENTITY curren	"&#x00A4;"> <!-- general currency sign -->
+<!ENTITY darr	"&#x2193;"> <!-- downward arrow -->
+<!ENTITY deg	"&#x00B0;"> <!-- degree sign -->
+<!ENTITY divide	"&#x00F7;"> <!-- division sign -->
+<!ENTITY dollar	"&#x0024;"> <!-- dollar sign -->
+<!ENTITY equals	"&#x003D;"> <!-- equals sign -->
+<!ENTITY excl	"&#x0021;"> <!-- exclamation mark -->
+<!ENTITY frac12	"&#x00BD;"> <!-- fraction one-half -->
+<!ENTITY frac14	"&#x00BC;"> <!-- fraction one-quarter -->
+<!ENTITY frac18	"&#x215B;"> <!-- fraction one-eighth -->
+<!ENTITY frac34	"&#x00BE;"> <!-- fraction three-quarters -->
+<!ENTITY frac38	"&#x215C;"> <!-- fraction three-eighths -->
+<!ENTITY frac58	"&#x215D;"> <!-- fraction five-eighths -->
+<!ENTITY frac78	"&#x215E;"> <!-- fraction seven-eighths -->
+<!ENTITY gt	"&#x003E;"> <!-- greater-than sign -->
+<!ENTITY half	"&#x00BD;"> <!-- fraction one half -->
+<!ENTITY horbar	"&#x2015;"> <!-- horizontal bar -->
+<!ENTITY hyphen	"&#x002D;"> <!-- hyphen. MathML has x2010 -->
+<!ENTITY iexcl	"&#x00A1;"> <!-- inverted exclamation mark -->
+<!ENTITY iquest	"&#x00BF;"> <!-- inverted question mark -->
+<!ENTITY laquo	"&#x00AB;"> <!-- angle quotation mark, left -->
+<!ENTITY larr	"&#x2190;"> <!-- leftward arrow -->
+<!ENTITY lcub	"&#x007B;"> <!-- left curly bracket -->
+<!ENTITY ldquo	"&#x201C;"> <!-- left double quote -->
+<!ENTITY lowbar	"&#x005F;"> <!-- low line -->
+<!ENTITY lpar	"&#x0028;"> <!-- left parenthesis -->
+<!ENTITY lsqb	"&#x005B;"> <!-- left square bracket -->
+<!ENTITY lsquo	"&#x2018;"> <!-- left single quote -->
+<!--     lt	"&#x003C;"       less-than sign, predeclared in XML -->
+<!ENTITY micro	"&#x00B5;"> <!-- micro sign -->
+<!ENTITY middot	"&#x00B7;"> <!-- middle dot -->
+<!ENTITY nbsp	"&#x00A0;"> <!-- no break (required) space -->
+<!ENTITY not	"&#x00AC;"> <!-- not sign -->
+<!ENTITY num	"&#x0023;"> <!-- number sign -->
+<!ENTITY ohm	"&#x2126;"> <!-- ohm sign -->
+<!ENTITY ordf	"&#x00AA;"> <!-- ordinal indicator, feminine -->
+<!ENTITY ordm	"&#x00BA;"> <!-- ordinal indicator, masculine -->
+<!ENTITY para	"&#x00B6;"> <!-- pilcrow (paragraph sign) -->
+<!ENTITY percnt	"&#x0025;"> <!-- percent sign -->
+<!ENTITY period	"&#x002E;"> <!-- full stop, period -->
+<!ENTITY plus	"&#x002B;"> <!-- plus sign -->
+<!ENTITY plusmn	"&#x00B1;"> <!-- plus-or-minus sign -->
+<!ENTITY pound	"&#x00A3;"> <!-- pound sign -->
+<!ENTITY quest	"&#x003F;"> <!-- question mark -->
+<!ENTITY quot	"&#x0022;"> <!-- quotation mark -->
+<!ENTITY raquo	"&#x00BB;"> <!-- angle quotation mark, right -->
+<!ENTITY rarr	"&#x2192;"> <!-- rightward arrow -->
+<!ENTITY rcub	"&#x007D;"> <!-- right curly bracket -->
+<!ENTITY rdquo	"&#x201D;"> <!-- double quotation mark, right -->
+<!ENTITY reg	"&#x00AE;"> <!-- registered sign -->
+<!ENTITY rpar	"&#x0029;"> <!-- right parenthesis -->
+<!ENTITY rsqb	"&#x005D;"> <!-- right square bracket -->
+<!ENTITY rsquo	"&#x2019;"> <!-- single quotation mark, right -->
+<!ENTITY sect	"&#x00A7;"> <!-- section sign -->
+<!ENTITY semi	"&#x003B;"> <!-- semicolon -->
+<!ENTITY shy	"&#x00AD;"> <!-- soft hyphen -->
+<!ENTITY sol	"&#x002F;"> <!-- sOLIDUS -->
+<!ENTITY sung	"&#x2669;"> <!-- music note (sung text sign). MathML: x266A -->
+<!ENTITY sup1	"&#x00B9;"> <!-- superscript one -->
+<!ENTITY sup2	"&#x00B2;"> <!-- superscript two -->
+<!ENTITY sup3	"&#x00B3;"> <!-- superscript three -->
+<!ENTITY times	"&#x00D7;"> <!-- multiply sign -->
+<!ENTITY trade	"&#x2122;"> <!-- trade mark sign -->
+<!ENTITY uarr	"&#x2191;"> <!-- upward arrow -->
+<!ENTITY verbar	"&#x007C;"> <!-- vertical bar -->
+<!ENTITY yen	"&#x00A5;"> <!-- yen sign -->

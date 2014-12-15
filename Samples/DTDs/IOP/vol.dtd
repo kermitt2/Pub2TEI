@@ -1,0 +1,151 @@
+<!-- ###########################################################################
+#
+#   File name: vol.dtd
+#   Project: Journals
+#   Description: DTD for Volumes
+#
+#
+#   External documents:
+#
+#
+#   Author: Peter Haworth
+#   Date created: 14/02/2000
+#
+#   $Id$
+#
+#   Copyright (C) IOP Publishing Ltd 2000-2011
+#
+############################################################################ -->
+
+<!-- Include HTML definitions -->
+<!ENTITY % html_include SYSTEM "html.inc">
+%html_include;
+
+<!ENTITY % img_include SYSTEM "img.inc">
+%img_include;
+
+<!ENTITY % common_include SYSTEM "common.inc">
+%common_include;
+
+<!-- Top level element -->
+<!ELEMENT vol (
+  issn,volume,year,dispyear?,date-history?,
+  conference*,titles?,attributes?
+)>
+
+<!ELEMENT issn (#PCDATA)>
+<!ELEMENT volume (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT dispyear (#PCDATA)>
+
+<!ELEMENT date-history EMPTY>
+<!ATTLIST date-history
+  published-online CDATA #IMPLIED
+  received CDATA #IMPLIED
+>
+
+<!--
+  The common case is either no <conference> elements, or one with a single
+  title (JConf/121):
+    <date-history received="2008-06-30" published-online="2008-07-31"/>
+    <conference>
+      <conference-title>JOINT 21ST AIRAPT AND 45TH EHPRG INTERNATIONAL CONFERENCE ON HIGH PRESSURE SCIENCE AND TECHNOLOGY</conference-title>
+      <conference-date start="2007-09-17" end="2007-09-21">17-21 September 2007</conference-date>
+      <conference-location country="it">Catania, Italy</conference-location>
+      <conference-editors>
+        <conference-editor order="given-surname">
+          <given>G G N</given>
+          <surname>Angilella</surname>
+        </conference-editor>
+        <conference-editor order="given-surname">
+          <given>R</given>
+          <surname>Pucci</surname>
+        </conference-editor>
+        <conference-editor order="given-surname">
+          <given>F</given>
+          <surname>Siringo</surname>
+        </conference-editor>
+      </conference-editors>
+      <conference-info>This volume has been divided into 16 subject related parts.</conference-info>
+    </conference>
+  
+  However, there are a few cases with multiple simultaneous co-located
+  conferences (JConf/100) where a single conference may have multiple titles:
+    <date-history received="2008-02-22" published-online="2008-03-27"/>
+    <conference>
+      <conference-title>17TH INTERNATIONAL VACUUM CONGRESS (IVC-17)</conference-title>
+      <conference-title>13TH INTERNATIONAL CONFERENCE ON SURFACE SCIENCE, (ICSS-13)</conference-title>
+      <conference-title>INTERNATIONAL CONFERENCE ON NANOSCIENCE AND TECHNOLOGY (ICN+T 2007)</conference-title>
+      <conference-date start="2007-07-02" end="2007-07-06">2-6 July 2007</conference-date>
+      <conference-location country="se">Stockholm, Sweden</conference-location>
+      <conference-info>This volume has been divided into nine subject related parts.</conference-info>
+    </conference>
+
+  There are also volumes which combine multiple disparate but related
+  conferences (JConf/280) which have multiple <conference> elements, each with
+  its own title, date and location:
+    <date-history received="2011-02-01"/>
+    <conference>
+      <conference-title>2009 Young Researchers Meeting in Rome</conference-title>
+      <conference-date start="2009-07-21">21 July 2009</conference-date>
+      <conference-location country="it">University of Rome "Tor Vergata"</conference-location>
+    </conference>
+    <conference>
+      <conference-title>2010 Young Researchers Meeting in Rome</conference-title>
+      <conference-date start="2010-02-09">9 February 2010</conference-date>
+      <conference-location country="it">University of Rome "La Sapienza", Italy</conference-location>
+    </conference>
+
+  -->
+<!ELEMENT conference (
+  conference-title+,conference-date,conference-location,conference-subjects?,
+  conference-partner?,conference-editors?,conference-info?
+)>
+<!ELEMENT conference-title %html_line;>
+<!ELEMENT conference-date (#PCDATA)>
+<!ATTLIST conference-date
+  start CDATA #REQUIRED
+  end CDATA #IMPLIED
+>
+<!ELEMENT conference-location %html_line;>
+<!ATTLIST conference-location
+  country CDATA #REQUIRED
+>
+<!ELEMENT conference-subjects (conference-subject+)>
+<!ATTLIST conference-subjects
+  scheme CDATA #REQUIRED
+>
+<!ELEMENT conference-subject (#PCDATA)>
+<!ATTLIST conference-subject
+  code CDATA #REQUIRED
+>
+<!ELEMENT conference-partner %html_line;>
+<!ELEMENT conference-editors (conference-editor+)>
+<!ELEMENT conference-editor %name-content;>
+<!ATTLIST conference-editor %name-attrs;>
+<!ELEMENT conference-info %html_text;>
+
+<!-- The <title> element is strongly deprecated in favour of <conference>
+  The new tools target <conference>, but continue to populate <titles>,
+  to keep compatibility with EJs and IOPscience, until they are updated
+-->
+<!-- Example of title element usage:
+  <titles>
+    <title>Vol 45 SECOND INTERNATIONAL CONFERENCE ON GASES</title>
+    <details>11.14 September 2005, City University, London, UK</details>
+    <info>This conference has been grouped by session,
+      to aid searchability</info>
+  </titles>
+-->
+<!ELEMENT titles (title?,details?,info?)+>
+<!ELEMENT title %html_line;>
+<!ELEMENT details %html_line;>
+<!ELEMENT info %html_line;>
+
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+  fulltext   (f|t) #REQUIRED
+  has_issues (f|t) #IMPLIED
+  term_issue CDATA #IMPLIED
+> <!-- has_issues defaults from the journal record -->
+

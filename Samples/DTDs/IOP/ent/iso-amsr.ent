@@ -1,0 +1,88 @@
+<!-- ISO AMS R: Relations -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY ape	"&#x224A;"> <!-- approximate, equals -->
+<!ENTITY asymp	"&#x224D;"> <!-- asymptotically equal to. MathML has 2248 -->
+<!ENTITY bcong	"&#x224C;"> <!-- revers congruent -->
+<!ENTITY bepsi	"&#x03F6;"> <!-- such that -->
+<!ENTITY bowtie	"&#x22C8;"> <!-- bowtie -->
+<!ENTITY bsim	"&#x223D;"> <!-- reverse similar -->
+<!ENTITY bsime	"&#x22CD;"> <!-- reverse similar, eq -->
+<!ENTITY bump	"&#x224E;"> <!-- bumpy equals -->
+<!ENTITY bumpe	"&#x224F;"> <!-- bumpy equals, equals -->
+<!ENTITY cire	"&#x2257;"> <!-- circle, equals -->
+<!ENTITY colone	"&#x2254;"> <!-- double colon, equals -->
+<!ENTITY cuepr	"&#x22DE;"> <!-- curly eq, precedes -->
+<!ENTITY cuesc	"&#x22DF;"> <!-- curly eq, succeeds -->
+<!ENTITY cupre	"&#x227C;"> <!-- . Not in MathML -->
+<!ENTITY dashv	"&#x22A3;"> <!-- dash, vertical -->
+<!ENTITY ecir	"&#x2256;"> <!-- circle on equals sign -->
+<!ENTITY ecolon	"&#x2255;"> <!-- equals, colon -->
+<!ENTITY eDot	"&#x2251;"> <!-- eq, even dots -->
+<!ENTITY efDot	"&#x2252;"> <!-- eq, falling dots -->
+<!ENTITY egs	"&#x2A96;"> <!-- equal-or-gtr, slanted -->
+<!ENTITY els	"&#x2A95;"> <!-- eq-or-less, slanted -->
+<!ENTITY erDot	"&#x2253;"> <!-- eq, rising dots -->
+<!ENTITY esdot	"&#x2250;"> <!-- equal, similar -->
+<!ENTITY fork	"&#x22D4;"> <!-- pitchfork -->
+<!ENTITY frown	"&#x2322;"> <!-- down curve -->
+<!ENTITY gap	"&#x2A86;"> <!-- greater, approximate -->
+<!ENTITY gE	"&#x2267;"> <!-- greater, double equals -->
+<!ENTITY gEl	"&#x2A8C;"> <!-- gt, dbl equals, less -->
+<!ENTITY gel	"&#x22DB;"> <!-- greater, equals, less -->
+<!ENTITY ges	"&#x2A7E;"> <!-- gt-or- equal, slanted -->
+<!ENTITY Gg	"&#x22D9;"> <!-- triple gtr-than -->
+<!ENTITY gl	"&#x2277;"> <!-- greater, less -->
+<!ENTITY gsdot	"&#x22D7;"> <!-- . not in MathML -->
+<!ENTITY gsim	"&#x2273;"> <!-- greater, similar -->
+<!ENTITY Gt	"&#x226B;"> <!-- dbl greater-than sign -->
+<!ENTITY lap	"&#x2A85;"> <!-- less, approximate -->
+<!ENTITY ldot	"&#x22D6;"> <!-- . not in MathML -->
+<!ENTITY lE	"&#x2266;"> <!-- less, double equals -->
+<!ENTITY lEg	"&#x2A8B;"> <!-- less, dbl eq, greater -->
+<!ENTITY leg	"&#x22DA;"> <!-- less, eq, greater -->
+<!ENTITY les	"&#x2A7D;"> <!-- less-than-or-eq, slant -->
+<!ENTITY lg	"&#x2276;"> <!-- less, greater -->
+<!ENTITY Ll	"&#x22D8;"> <!-- triple less-than sign -->
+<!ENTITY lsim	"&#x2272;"> <!-- less, similar -->
+<!ENTITY Lt	"&#x226A;"> <!-- double less-than sign -->
+<!ENTITY ltrie	"&#x22B4;"> <!-- less triangle, eq -->
+<!ENTITY mid	"&#x2223;"> <!-- DIVIDES -->
+<!ENTITY models	"&#x22A7;"> <!-- MODELS -->
+<!ENTITY pr	"&#x227A;"> <!-- precedes -->
+<!ENTITY prap	"&#x2AB7;"> <!-- precedes, approximate -->
+<!ENTITY pre	"&#x2AAF;"> <!-- precedes, equals -->
+<!ENTITY prsim	"&#x227E;"> <!-- precedes, similar -->
+<!ENTITY rtrie	"&#x22B5;"> <!-- right tri, eq -->
+<!--     samalg	Unknown unicode character. not in MathML -->
+<!ENTITY sc	"&#x227B;"> <!-- succeeds -->
+<!ENTITY scap	"&#x2AB8;"> <!-- succeeds, approximate -->
+<!ENTITY sccue	"&#x227D;"> <!-- succceeds, curly eq -->
+<!ENTITY sce	"&#x2AB0;"> <!-- succeeds, equals -->
+<!ENTITY scsim	"&#x227F;"> <!-- succeeds, similar -->
+<!ENTITY sfrown	"&#x2322;"> <!-- small down curve -->
+<!ENTITY smid	"&#x2223;"> <!-- DIVIDES -->
+<!ENTITY smile	"&#x2323;"> <!-- up curve -->
+<!ENTITY spar	"&#x2225;"> <!-- short parallel -->
+<!ENTITY sqsub	"&#x228F;"> <!-- square subset -->
+<!ENTITY sqsube	"&#x2291;"> <!-- square subset, equals -->
+<!ENTITY sqsup	"&#x2290;"> <!-- square superset -->
+<!ENTITY sqsupe	"&#x2292;"> <!-- square superset, eq -->
+<!ENTITY ssmile	"&#x2323;"> <!-- small up curve -->
+<!ENTITY Sub	"&#x22D0;"> <!-- double subset -->
+<!ENTITY subE	"&#x2AC5;"> <!-- subset, dbl equals -->
+<!ENTITY Sup	"&#x22D1;"> <!-- dbl superset -->
+<!ENTITY supE	"&#x2AC6;"> <!-- superset, dbl equals -->
+<!ENTITY thkap	"&#x2248;"> <!-- thick approximate -->
+<!ENTITY thksim	"&#x223C;"> <!-- think similar -->
+<!ENTITY trie	"&#x225C;"> <!-- triangle, equals -->
+<!ENTITY twixt	"&#x226C;"> <!-- between -->
+<!ENTITY Vdash	"&#x22A9;"> <!-- dbl vertical, dash -->
+<!ENTITY vDash	"&#x22A8;"> <!-- vertical, dbl dash -->
+<!ENTITY vdash	"&#x22A2;"> <!-- vertical, dash -->
+<!ENTITY vltri	"&#x22B2;"> <!-- l tri, open, var -->
+<!ENTITY vprop	"&#x221D;"> <!-- proportional, variant -->
+<!ENTITY vrtri	"&#x22B3;"> <!-- r tri, open, var -->
+<!ENTITY Vvdash	"&#x22AA;"> <!-- triple vertical, dash -->

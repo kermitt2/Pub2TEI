@@ -1,0 +1,48 @@
+<!-- ISO GRK 3: Greek-3 -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY alpha	"&#x03B1;"> <!-- small alpha, Greek -->
+<!ENTITY beta	"&#x03B2;"> <!-- small beta, Greek -->
+<!ENTITY chi	"&#x03C7;"> <!-- small chi, Greek -->
+<!ENTITY Delta	"&#x0394;"> <!-- capital Delta, Greek -->
+<!ENTITY delta	"&#x03B4;"> <!-- small delta, Greek -->
+<!ENTITY epsi	"&#x03F5;"> <!-- small epsilon, Greek. MathML has x03B4 -->
+<!ENTITY epsis	"&#x03F5;"> <!-- . not in MathML -->
+<!ENTITY epsiv	"&#x03B5;"> <!-- varepsilon -->
+<!ENTITY eta	"&#x03B7;"> <!-- small eta, Greek -->
+<!ENTITY Gamma	"&#x0393;"> <!-- capital Gamma, Greek -->
+<!ENTITY gamma	"&#x03B3;"> <!-- small gamma, Greek -->
+<!ENTITY gammad	"&#x03DC;"> <!-- digamma. MathML has x03DD -->
+<!ENTITY iota	"&#x03B9;"> <!-- small iota, Greek -->
+<!ENTITY kappa	"&#x03BA;"> <!-- small kappa, Greek -->
+<!ENTITY kappav	"&#x03F0;"> <!-- varkappa -->
+<!ENTITY Lambda	"&#x039B;"> <!-- capital Lambda, Greek -->
+<!ENTITY lambda	"&#x03BB;"> <!-- small lambda, Greek -->
+<!ENTITY mu	"&#x03BC;"> <!-- small my, Greek -->
+<!ENTITY nu	"&#x03BD;"> <!-- small nu, Greek -->
+<!ENTITY Omega	"&#x03A9;"> <!-- capital Omega, Greek -->
+<!ENTITY omega	"&#x03C9;"> <!-- small omega, Greek -->
+<!ENTITY Phi	"&#x03A6;"> <!-- capital Phi, Greek -->
+<!ENTITY phis	"&#x03D5;"> <!-- small straight phi -->
+<!ENTITY phiv	"&#x03C6;"> <!-- small curly or open phi -->
+<!ENTITY Pi	"&#x03A0;"> <!-- capital Pi, Greek -->
+<!ENTITY pi	"&#x03C0;"> <!-- small pi, Greek -->
+<!ENTITY piv	"&#x03D6;"> <!-- varpi -->
+<!ENTITY Psi	"&#x03A8;"> <!-- capital Psi, Greek -->
+<!ENTITY psi	"&#x03C8;"> <!-- small psi, Greek -->
+<!ENTITY rho	"&#x03C1;"> <!-- small rho, Greek -->
+<!ENTITY rhov	"&#x03F1;"> <!-- varrho -->
+<!ENTITY Sigma	"&#x03A3;"> <!-- capital Sigma, Greek -->
+<!ENTITY sigma	"&#x03C3;"> <!-- small sigma, Greek -->
+<!ENTITY sigmav	"&#x03C2;"> <!-- varsigma -->
+<!ENTITY tau	"&#x03C4;"> <!-- small tau, Greek -->
+<!ENTITY Theta	"&#x0398;"> <!-- capital Theta, Greek -->
+<!ENTITY thetas	"&#x03B8;"> <!-- straight theta, Greek -->
+<!ENTITY thetav	"&#x03D1;"> <!-- curly or open theta -->
+<!ENTITY Upsi	"&#x03D2;"> <!-- capital Upsilon, Greek -->
+<!ENTITY upsi	"&#x03C5;"> <!-- small Upsilon, Greek -->
+<!ENTITY Xi	"&#x039E;"> <!-- capital Xi, Greek -->
+<!ENTITY xi	"&#x03BE;"> <!-- small xi, Greek -->
+<!ENTITY zeta	"&#x03B6;"> <!-- small zeta, Greek -->

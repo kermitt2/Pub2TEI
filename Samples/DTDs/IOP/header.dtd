@@ -1,0 +1,298 @@
+<!-- ###########################################################################
+#
+#   File name: header.dtd
+#   Project: Journals
+#   Description: DTD for article headers
+#
+#
+#   External documents:
+#
+#
+#   Author: Peter Haworth
+#   Date created: 13/08/1999
+#
+#   $Id$
+#
+#   Copyright (C) IOP Publishing Ltd 1999-2011
+#
+############################################################################ -->
+
+<!-- Top level element -->
+<!-- Remember to change stk_list.dtd when you change this -->
+<!ELEMENT header (notification?,ident,title,product*,authors?,dates,subjects?,open_access?,funding_group?,crossmark?,text)>
+
+<!-- Include HTML definitions -->
+<!ENTITY % html_include SYSTEM "html.inc">
+%html_include;
+<!ENTITY % img_include SYSTEM "img.inc">
+%img_include;
+
+<!-- Include other common definitions -->
+<!ENTITY % common_include SYSTEM "common.inc">
+%common_include;
+<!-- Optional notification element to record the type and time of notification -->
+<!ELEMENT notification EMPTY>
+<!ATTLIST notification
+  timestamp CDATA #REQUIRED
+  type (new|update) #REQUIRED
+>
+<!-- <ident> identifies the article in various ways -->
+<!ELEMENT ident (issn,volume,issue,artnum,ecs,ej1?,ej2?,prodid?,serial, bibcode?, inspec?,
+  pii?,doi?,attributes,art_focus?,gtoc?,pages,availability?,external_id*)>
+
+<!ELEMENT issn (#PCDATA)>
+<!ATTLIST issn
+  print CDATA #IMPLIED
+  online CDATA #IMPLIED
+>
+
+<!ELEMENT volume (#PCDATA)>
+<!ELEMENT issue (#PCDATA)>
+<!ATTLIST issue
+  title CDATA #IMPLIED
+> <!-- title would be something like "Winter" or "Supplement" -->
+<!ELEMENT artnum (#PCDATA)>
+<!ELEMENT ecs (#PCDATA)>
+<!ELEMENT ej1 (#PCDATA)>
+<!ELEMENT ej2 (#PCDATA)>
+<!ELEMENT prodid (#PCDATA)>
+<!ELEMENT serial (#PCDATA)>
+<!ELEMENT bibcode (#PCDATA)>
+<!ELEMENT inspec (#PCDATA)>
+<!ELEMENT pii (#PCDATA)>
+<!ELEMENT doi (#PCDATA)>
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+  %type_atts;
+  %link_atts;
+>
+<!ELEMENT art_focus EMPTY>              <!-- Special interest marker -->
+<!ATTLIST art_focus
+  img NMTOKEN #IMPLIED
+  alt CDATA #REQUIRED
+  align (middle|bottom|top|left|right|absmiddle|texttop|baseline|absbottom)
+      #IMPLIED
+  hspace NMTOKEN #IMPLIED
+  group CDATA #IMPLIED
+  url_type (article_id|journal_page) #IMPLIED
+  url_value CDATA #IMPLIED
+  url CDATA #IMPLIED
+  status (index|content) "content"
+>
+  <!-- img is the filename of an image displayed on the toc
+       alt is the alt text of that image, e.g. "Dark matter"
+       group is the full name of the focus, e.g. "Focus on Dark Matter",
+       		defaults to "Focus on {@alt}"
+       url is the URL of the lead article
+       status indicates whether the article is the focus issue's index
+    -->
+
+<!ELEMENT gtoc %html_line;>		<!-- Graphic toc data -->
+<!ATTLIST gtoc
+  img NMTOKEN #REQUIRED
+  alt CDATA #REQUIRED
+>
+
+<!ELEMENT pages EMPTY>
+<!ATTLIST pages
+  start CDATA #REQUIRED
+  end CDATA #IMPLIED
+  range CDATA #IMPLIED
+  extent CDATA #IMPLIED
+  type (page|article) "page"
+>
+<!ELEMENT availability EMPTY>
+<!ATTLIST availability
+  pel (t|f) "f"
+  superjournal (t|f) "f"
+  services NMTOKENS "ej"
+> <!-- services should override pel, and may include: ej, pel, surface -->
+
+<!ELEMENT external_id (#PCDATA)>      <!-- 'External' article IDs -->
+<!ATTLIST external_id
+  type (jhep|arxive|epl) #REQUIRED
+> <!-- arxive should be arxiv, but it's too late -->
+
+<!-- <title> holds various versions of the article title -->
+<!ELEMENT title (surtitle?,title_full+,title_short?,title_toc*)>
+
+<!ELEMENT surtitle %html_line;> <!-- This appears above the title -->
+<!ELEMENT title_full %html_line;> <!-- Full title -->
+<!ATTLIST title_full
+  lang %languages; #IMPLIED
+>
+<!-- Browser title bar title (no tags in storage,
+     but STACKS XML has some entities converted to images) -->
+<!ELEMENT title_short (#PCDATA|IMG)*>
+<!ATTLIST title_short
+  lang %languages; #IMPLIED
+>
+<!ELEMENT title_toc %html_line;> <!-- Title as shown on ToC or searches -->
+<!ATTLIST title_toc
+  lang %languages; #IMPLIED
+>
+
+<!-- <product> holds information about a reviewed product -->
+<!ELEMENT product (product_title,product_id?,product_author,
+  product_pub?,product_info?)>
+<!ATTLIST product
+  type (book|video|cdrom|web) #REQUIRED
+>
+
+<!ELEMENT product_title %html_line;>
+<!ELEMENT product_id (#PCDATA)>
+<!ATTLIST product_id
+  type (isbn|url) #REQUIRED
+>
+<!ELEMENT product_author %html_line;>
+<!ELEMENT product_pub %html_line;>
+<!ELEMENT product_info %html_text;> <!-- This is for miscellaneous info -->
+
+<!-- <authors> holds information about the article's author(s) -->
+<!ELEMENT authors (author*,author_granular*,affil*,aaffil*,authors_toc?)>
+<!ATTLIST authors
+  position (top|bottom) "top"
+><!-- This allows us to list reviewers and editors at the bottom of the page -->
+
+<!ELEMENT author %html_line;>
+<!ATTLIST author
+  ecsid CDATA #IMPLIED
+  orcid NMTOKEN #IMPLIED
+  affil CDATA #IMPLIED
+  pre CDATA #IMPLIED
+  post CDATA #IMPLIED
+  non_latin CDATA #IMPLIED
+> <!-- XXX affil should be IDREFS, but that doesn't allow numbers -->
+
+<!ELEMENT author_granular %name-content;>
+<!ATTLIST author_granular %name-attrs;>
+<!ELEMENT group %html_line;>
+
+<!ENTITY % affil_attrs "
+  id CDATA #IMPLIED
+  email CDATA #IMPLIED
+  url CDATA #IMPLIED
+"> <!-- XXX id should be ID, but that doesn't allow numbers -->
+<!ELEMENT affil %html_text;>		<!-- Affiliations -->
+<!ATTLIST affil %affil_attrs;>
+<!ELEMENT aaffil %html_line;>		<!-- Affils listed after <P> -->
+<!ATTLIST aaffil %affil_attrs;>
+<!ELEMENT authors_toc %html_line;>	<!-- Authors as displayed on ToC -->
+
+<!-- <dates> holds a large collection of dates -->
+<!ELEMENT dates (date_cover,date_history?,date_online?,
+  date_alert?,date_modified,date_modified_history*,date_expiry?,date_search?)>
+
+<!ELEMENT date_cover (#PCDATA)>
+<!ATTLIST date_cover
+  readable CDATA #IMPLIED
+>
+<!ELEMENT date_history %html_line;>
+<!ATTLIST date_history
+  received CDATA #IMPLIED
+  revised CDATA #IMPLIED
+  accepted CDATA #IMPLIED
+  final CDATA #IMPLIED
+  epub CDATA #IMPLIED
+  oarequest CDATA #IMPLIED
+  openaccess CDATA #IMPLIED
+>
+<!ELEMENT date_online EMPTY>
+<!ATTLIST date_online
+  header CDATA #REQUIRED
+  fulltext CDATA #IMPLIED
+>
+<!ELEMENT date_alert (#PCDATA)>		<!-- First time alert sent -->
+<!-- date_modified{,_history} defined in common.inc -->
+<!ELEMENT date_expiry (#PCDATA)>	<!-- Last day article is accessible -->
+<!ELEMENT date_search (#PCDATA)>	<!-- Last day article is searchable -->
+
+<!-- <subjects> holds various classification details -->
+<!ELEMENT subjects (subject_areas?,subject_classified*,
+  kwd_author*, kwd_controlled*,kwd_group*, kwd_inspec?)>
+
+<!ELEMENT subject_areas (#PCDATA)>	<!-- XXX Like EJ2 njp_type -->
+<!ELEMENT subject_classified (subject_class+)>
+<!ATTLIST subject_classified
+  scheme (pacs|pacs_inspec|domex_pacs|domex_msc|pacc|pmb|ams|jstat) #REQUIRED
+>
+<!ELEMENT subject_class (#PCDATA)>
+<!ATTLIST subject_class
+  type (primary|secondary) #IMPLIED
+>
+<!ELEMENT kwd_author %html_line;>	<!-- Keywords supplied by author -->
+<!ATTLIST kwd_author
+  lang %languages; #IMPLIED
+>
+<!ELEMENT kwd_controlled %html_text;>	<!-- Keywords from controlled list -->
+	<!-- The presence of the code attribute indicates that this is a
+		single phrase. Otherwise, it's a comma-separated list -->
+<!ATTLIST kwd_controlled
+  source (jhep|jcap|jstat|jinst|aas|section) #IMPLIED
+  code CDATA #IMPLIED
+>
+
+<!ELEMENT kwd_group (kwd_main , kwd_sub*)>
+<!ATTLIST kwd_group
+  source (aas) #REQUIRED
+  code CDATA #IMPLIED
+>
+
+<!ELEMENT kwd_main %html_line;>
+
+<!ELEMENT kwd_sub %html_line;>
+<!ATTLIST kwd_sub normalized CDATA #IMPLIED>
+
+<!ELEMENT kwd_inspec %html_line;>	<!-- INSPEC keywords -->
+
+<!-- Open Access License Information -->
+<!ELEMENT open_access %html_text;>
+<!ATTLIST open_access
+		license_type	CDATA  #REQUIRED 
+		url		CDATA  #REQUIRED >
+
+<!-- Funding Information -->
+<!ELEMENT funding_group (award_group|oa_funding)*>
+<!ELEMENT oa_funding %html_line;>
+<!ATTLIST oa_funding funding_type CDATA #IMPLIED >
+
+<!ELEMENT award_group ((funding_source)?, (award_id)*)>
+<!ATTLIST award_group award_type CDATA #IMPLIED >
+<!ELEMENT funding_source (#PCDATA|funder_identifier)*>
+<!ATTLIST funding_source url CDATA #IMPLIED >
+<!ELEMENT funder_identifier %html_line;>
+<!ELEMENT award_id %html_line;>
+
+<!-- Cross-ref Information -->
+<!ELEMENT crossmark %html_text;>
+
+<!-- <text> holds the article's abstract and refers to the full text -->
+<!ELEMENT text (header_text*,
+  fulltext?,fulltext_label?,special_material?,info_top?,info_bottom?,copyright_text?)>
+
+<!ELEMENT header_text (%html_basic;|%html_fancy;|toc)*>
+<!ATTLIST header_text
+  heading CDATA #IMPLIED
+  lang %languages; #IMPLIED
+>
+<!ELEMENT fulltext EMPTY>
+<!ATTLIST fulltext %fulltext_atts;>
+
+<!ELEMENT fulltext_label EMPTY>
+<!ATTLIST fulltext_label %fulltext_atts;>
+
+<!-- If <special_material> is present, there is some multimedia -->
+<!ELEMENT special_material %html_text;>
+  <!-- Contents replace "Multimedia Enhancements" on abstract page -->
+<!ATTLIST special_material %special_atts;>
+
+<!-- These can probably use %html_line; -->
+<!ELEMENT info_top %html_text;>		<!-- This is displayed after dates -->
+<!ELEMENT info_bottom %html_text;>	<!-- This goes right at the bottom -->
+<!ELEMENT copyright_text %html_text;>
+
+<!-- Evilness to allow alternate tocs constructed as articles -->
+<!ELEMENT toc (art|heading|subheading)*>
+<!ELEMENT art (#PCDATA)>
+<!ELEMENT heading %html_line;>
+<!ELEMENT subheading %html_line;>

@@ -1,0 +1,45 @@
+<!-- ISO BOX: Box and Line Drawing -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY boxDL	"&#x2557;"> <!-- lower left quadrant, double -->
+<!ENTITY boxDl	"&#x2556;"> <!-- lower left quadrant, double down -->
+<!ENTITY boxdL	"&#x2555;"> <!-- lower left quadrant, double left -->
+<!ENTITY boxdl	"&#x2510;"> <!-- lower left quadrant -->
+<!ENTITY boxDR	"&#x2554;"> <!-- lower right quadrant, double -->
+<!ENTITY boxDr	"&#x2553;"> <!-- lower right quadrant, double down -->
+<!ENTITY boxdR	"&#x2552;"> <!-- lower right quadrant, double right -->
+<!ENTITY boxdr	"&#x250C;"> <!-- lower right quadrant -->
+<!ENTITY boxH	"&#x2550;"> <!-- horizontal line, double -->
+<!ENTITY boxh	"&#x2500;"> <!-- horizontal line -->
+<!ENTITY boxHD	"&#x2566;"> <!-- lower quadrants, double -->
+<!ENTITY boxHd	"&#x2564;"> <!-- lower quadrants, double horizontal -->
+<!ENTITY boxhD	"&#x2565;"> <!-- lower quadrants, double down -->
+<!ENTITY boxhd	"&#x252C;"> <!-- lower quadrants -->
+<!ENTITY boxHU	"&#x2569;"> <!-- upper quadrants, double -->
+<!ENTITY boxHu	"&#x2567;"> <!-- upper quadrants, double horizontal -->
+<!ENTITY boxhU	"&#x2568;"> <!-- upper quadrants, double down -->
+<!ENTITY boxhu	"&#x2534;"> <!-- upper quadrants -->
+<!ENTITY boxUL	"&#x255D;"> <!-- upper left quadrant, double -->
+<!ENTITY boxUl	"&#x255C;"> <!-- upper left quadrant, double up -->
+<!ENTITY boxuL	"&#x255B;"> <!-- upper left quadrant, double left -->
+<!ENTITY boxul	"&#x2518;"> <!-- upper left quadrant -->
+<!ENTITY boxUR	"&#x255A;"> <!-- upper right quadrant, double -->
+<!ENTITY boxUr	"&#x2559;"> <!-- upper right quadrant, double up -->
+<!ENTITY boxuR	"&#x2558;"> <!-- upper right quadrant, double right -->
+<!ENTITY boxur	"&#x2514;"> <!-- upper right quadrant -->
+<!ENTITY boxV	"&#x2551;"> <!-- vertical line, double -->
+<!ENTITY boxv	"&#x2502;"> <!-- vertical line -->
+<!ENTITY boxVH	"&#x256C;"> <!-- all four quadrants, double -->
+<!ENTITY boxVh	"&#x256B;"> <!-- all four quadrants, double vertical -->
+<!ENTITY boxvH	"&#x256A;"> <!-- all four quadrants, double horizontal -->
+<!ENTITY boxvh	"&#x253C;"> <!-- all four quadrants -->
+<!ENTITY boxVL	"&#x2563;"> <!-- left quadrants, double -->
+<!ENTITY boxVl	"&#x2562;"> <!-- left quadrants, double vertical -->
+<!ENTITY boxvL	"&#x2561;"> <!-- left quadrants, double left -->
+<!ENTITY boxvl	"&#x2524;"> <!-- left quadrants -->
+<!ENTITY boxVR	"&#x2560;"> <!-- right quadrants, double -->
+<!ENTITY boxVr	"&#x255F;"> <!-- right quadrants, double vertical -->
+<!ENTITY boxvR	"&#x255E;"> <!-- right quadrants, double right -->
+<!ENTITY boxvr	"&#x251C;"> <!-- right quadrants -->
