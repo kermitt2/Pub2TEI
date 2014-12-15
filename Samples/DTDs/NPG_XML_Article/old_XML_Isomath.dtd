@@ -1,0 +1,295 @@
+<!-- This is the ISO12083:1994 document type definition for Mathematics    -->
+
+<!-- Copyright: (C) International Organization for Standardization 1994.
+Permission to copy in any form is granted for use with conforming SGML
+systems and applications as defined in ISO 8879:1986, provided this notice
+is included in all copies.                                                 -->
+
+<!-- ===================================================================== -->
+<!--            PUBLIC DOCUMENT TYPE DEFINITION SUBSET                 -->
+<!-- ===================================================================== -->
+
+<!--
+This DTD is included by the Book and Article DTDs of ISO12083:1994.
+As it is a separate entity it may also be included by other DTDs.
+
+Since there is no consensus on how to describe the semantics of formulas,
+it only describes their presentational or visual structure. Since, however,
+there is a strong need for such description (especially within the
+print-disabled community), it is recommended that the following
+declaration be added where there is a requirement for a consistent,
+standardized mechanism to carry semantic meanings for the SGML
+elements declared throughout this part of this International Standard:
+
+
+<!ENTITY % SDAMAP       "SDAMAP   NAME    #IMPLIED"           >
+
+and that the attribute represented by %SDAMAP; be made available for
+all elements which may require a semantic association, or, in the simpler
+case, be added to all elements in this DTD.                     -->
+
+<!--
+DTD Change History (U.S. date notation)
+
+05/29/02	Commented out definitions and uses of SDAFORM, SDARULE, SDAPREF, SDASUFF, SDASUSP as they are not used for 
+		NPG
+		
+-->
+<!-- ===================================================================== -->
+<!--  Parameter entities describing the possible contents of formulas.     -->
+<!-- ===================================================================== -->
+
+<!-- character transformations                            -->
+<!ENTITY % p.trans "bold|italic|sansser|typewrit|smallcap|roman">
+		   
+<!-- mathematical formula elements                               -->
+<!ENTITY % m.math "fraction|subform|sup|inf|top|bottom|middle|fence|mark|
+   post|box|overline|undrline|radical|array|hspace|vspace|break|markref" >
+
+
+
+<!-- ===================================================================== -->
+<!-- Accessible Document and other Parameter Entities        
+     If this DTD is not imbedded by a ISO12083:1994 Book or Article,
+     the comment delimiters should be removed.                             -->
+<!-- ===================================================================== -->
+
+<!-- ENTITY % SDAFORM      "sdaform   CDATA    #FIXED"                      -->
+<!-- ENTITY % SDARULE      "sdarule   CDATA    #FIXED"                      --> 
+<!-- ENTITY % SDAPREF      "sdapref   CDATA    #FIXED"                      -->
+<!-- ENTITY % SDASUFF      "sdasuff   CDATA    #FIXED"                      -->
+<!-- ENTITY % SDASUSP      "sdasusp   CDATA     #FIXED"                      -->
+
+
+
+<!-- ===================================================================== -->
+<!-- This entity is for an attribute to indicate which alphabet is 
+     used in the element (f, fd). You may change this to 
+     a notation attribute, where the notation could describe a 
+     keyboard mapping. Please modify the set as necessary.                 
+     If this DTD is not imbedded by a ISO12083:1994 Book or Article,
+     the comment delimiters should be removed.                             -->
+<!-- ===================================================================== -->
+
+<!ENTITY % a.types "(latin|greek|cyrillic|hebrew|kanji) 'latin'"               >
+
+
+<!-- ===================================================================== -->
+<!-- character transformations                                             --> 
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT              EXPLANATIONS      -->
+<!ELEMENT bold                 (#PCDATA | %p.trans;)*><!-- bold           -->
+<!ELEMENT italic               (#PCDATA | %p.trans;)*><!-- italic         -->
+<!ELEMENT sansser              (#PCDATA | %p.trans;)*><!-- sans serif     -->
+<!ELEMENT typewrit             (#PCDATA | %p.trans;)*><!-- typewriter     -->
+<!ELEMENT smallcap             (#PCDATA | %p.trans;)*><!-- small caps     -->
+<!ELEMENT roman                (#PCDATA | %p.trans;)*><!-- roman          -->
+
+
+<!-- ===================================================================== -->
+<!-- Fractions                                                             -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT fraction             (num, den)><!-- fraction            -->
+<!ELEMENT num                  (#PCDATA | %p.trans;|%m.math;)*><!-- numerator     -->
+<!ELEMENT den                  (#PCDATA | %p.trans;|%m.math;)*><!-- denominator   -->
+<!--      ELEMENT   NAME       VALUE            DEFAULT                    -->
+<!ATTLIST fraction  shape      (built|case) #IMPLIED
+		    align      (left|center|right)   
+						"center"
+		    style      (single|double|triple|dash|dot|bold|blank|none)
+						"single"                       >
+
+
+
+<!-- ===================================================================== -->
+<!-- Superiors, inferiors, accents, over and under                         -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT sup                  (#PCDATA | %p.trans;|%m.math;)*><!-- superior      -->
+<!ELEMENT inf                  (#PCDATA | %p.trans;|%m.math;)*><!-- inferior      -->
+<!--      ELEMENT   NAME       VALUE            DEFAULT                    -->
+<!ATTLIST sup       location   (pre|post)       "post"
+		    arrange    (compact|stagger)
+						"compact"                      >
+<!ATTLIST inf       location   (pre|post) "post"
+		    arrange    (compact|stagger) "compact"                     >
+
+
+<!-- ===================================================================== -->
+<!-- Embellishments                                                        -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT top                  (#PCDATA | %p.trans;|%m.math;)*><!-- top embellishment   -->
+<!ELEMENT middle               (#PCDATA | %p.trans;|%m.math;)*><!-- middle, or "through" -->  
+<!ELEMENT bottom               (#PCDATA | %p.trans;|%m.math;)*><!-- bottom embellishment -->                                                                                                      
+<!--      ELEMENT   NAME       VALUE            DEFAULT                    -->
+<!ATTLIST top       align      (left|center|right) 
+						"center"
+		    sizeid     ID               #IMPLIED><!-- to pass on the height   -->
+<!ATTLIST middle    align      (left|center|right) 
+						"center"
+		    sizeid     ID               #IMPLIED><!-- to pass on the height   -->
+<!ATTLIST bottom    align      (left|center|right) 
+						"center"
+		    sizeid    ID               #IMPLIED><!-- to pass on the height   -->
+
+
+<!-- The subform element is defined later                                  -->
+
+
+
+<!-- ===================================================================== -->
+<!-- Fences, boxes, overlines and underlines                               -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT mark                 EMPTY                                    >
+<!ELEMENT fence                (#PCDATA | %p.trans;|%m.math;)*><!-- fence         -->
+<!ELEMENT post                 EMPTY            ><!--post               -->
+<!ELEMENT box                  (#PCDATA | %p.trans;|%m.math;)*><!-- box           -->
+<!ELEMENT overline             (#PCDATA | %p.trans;|%m.math;)*><!-- overline      -->
+<!ELEMENT undrline             (#PCDATA | %p.trans;|%m.math;)*><!-- underline     -->
+<!--      ELEMENT   NAME       VALUE            DEFAULT                    -->
+<!ATTLIST mark      id         ID               #REQUIRED                    >
+<!-- lpost - left post -->
+<!-- rpost - right post -->
+<!-- sixeid - to pass on the height -->
+<!-- sizeref - to pick up a height     -->
+<!ATTLIST fence     lpost      CDATA            "|"
+		    rpost      CDATA            "|"
+		    style      (single|double|triple|dash|dot|bold|blank|none) 
+						"single"
+		    sizeid     ID               #IMPLIED 
+						
+		    sizeref    IDREF            #IMPLIED 
+						>
+<!-- sixeid - to pass on the height -->
+<!-- sizeref - to pick up a height     -->
+<!ATTLIST post      post       CDATA            "|"
+		    style      (single|double|triple|dash|dot|bold|blank|none) 
+						"single"
+		    sizeid     ID               #IMPLIED 
+						
+		    sizeref    IDREF            #IMPLIED 
+						>
+<!ATTLIST box       style      (single|double|triple|dash|dot|bold|blank|none) 
+						"single"                       >
+<!-- type - embellishment type -->
+<!ATTLIST overline  type       CDATA            "-" 
+		    style      (single|double|triple|dash|dot|bold|blank|none) 
+						"single"
+		    start      IDREF            #IMPLIED
+		    end        IDREF            #IMPLIED                     >
+
+<!-- type - embellishment type -->
+<!ATTLIST undrline  type       CDATA            "_" 							
+		    style      (single|double|triple|dash|dot|bold|blank|none) 
+						"single"
+		    start      IDREF            #IMPLIED
+		    end        IDREF            #IMPLIED                     >
+
+
+<!-- ===================================================================== -->
+<!-- Labelled arrows                                                       -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT subform              (#PCDATA | %p.trans;|%m.math;)*><!-- base element  -->
+<!--      ELEMENT   NAME       VALUE            DEFAULT                    -->
+<!-- sizeid - to pass on a width, or a height -->
+<!-- sizeref - to pick up a width      -->
+<!ATTLIST subform   sizeid     ID               #IMPLIED
+						
+						
+		    sizeref    IDREF            #IMPLIED
+						>
+
+
+<!-- ===================================================================== -->
+<!-- Roots                                                                 -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT radical              (radix?, radicand)><!-- root or radical  -->
+<!ELEMENT radix                (#PCDATA | %p.trans;|%m.math;)*><!-- radix         -->
+<!ELEMENT radicand             (#PCDATA | %p.trans;|%m.math;)*><!-- radicand      -->
+
+
+<!-- ===================================================================== -->
+<!-- Arrays                                                                -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT array                (arrayrow+|arraycol+)><!-- array         -->
+<!ELEMENT arrayrow             (arraycel+)><!-- array row          -->
+<!ELEMENT arraycol             (arraycel+)><!-- array column       -->
+<!ELEMENT arraycel             (#PCDATA | %p.trans;|%m.math;)*><!-- array cell    -->
+
+<!--      ELEMENT   NAME       VALUE            DEFAULT                    -->
+<!-- rowalign - row alignment  -->
+<!-- colalign - column alignment -->
+<!-- rowsep - row separators -->
+<!-- colsep - column separators -->
+<!ATTLIST array     rowalign   NMTOKENS         #IMPLIED 
+		    colalign   NMTOKENS         #IMPLIED 
+		    rowsep     NMTOKENS         #IMPLIED 
+		    colsep     NMTOKENS         #IMPLIED >
+
+
+<!-- ===================================================================== -->
+<!-- Spacing                                                               -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT hspace              EMPTY><!-- horizontal spacing  -->
+<!ELEMENT vspace              EMPTY><!-- vertical   spacing  -->
+<!ELEMENT break               EMPTY><!-- turn line, break    -->
+<!ELEMENT markref             EMPTY><!-- hmark reference     -->
+
+<!--      ELEMENT   NAME       VALUE            DEFAULT                    -->
+<!ATTLIST hspace    space      CDATA            "1 mm"><!-- units as required   -->
+<!ATTLIST vspace    space      CDATA            "1 mm"><!-- units as required   -->
+<!ATTLIST markref   refid      IDREF            #REQUIRED
+		    direct     (hor|ver)        "hor"><!-- horizontal or vertical -->
+
+
+<!-- ===================================================================== -->
+<!-- the formula elements                                                  -->
+<!-- ===================================================================== -->
+
+<!--      ELEMENT              MIN  CONTENT               EXPLANATIONS     -->
+<!ELEMENT f              (#PCDATA | %p.trans;|%m.math;|mathimg)*><!-- in-line formula -->
+<!ELEMENT fd             (#PCDATA | %p.trans;|%m.math;|mathimg)*><!-- display formula -->
+<!ELEMENT dformgrp       (f|fd)+><!-- display-formula group -->
+						  
+<!-- MATHIMG added to parallel TBLIMG in CALSTBL.DTD --> 
+
+<!ELEMENT mathimg         EMPTY>
+<!ATTLIST mathimg  entname  ENTITY  #REQUIRED
+                   show  (yes | no)  "yes"
+                   file CDATA #IMPLIED>
+
+<!--      ELEMENT   NAME       VALUE            DEFAULT                    -->
+<!ATTLIST f   id         ID               #IMPLIED
+		    alphabet   %a.types;>
+		    <!-- %SDAPREF;   "Inlineformula"  
+		    %SDASUSP;       "suspend"        --> 
+<!ATTLIST fd  id         ID               #IMPLIED
+		    num        CDATA            #IMPLIED
+		    align      (left|center|right) 
+						"center"
+		    alphabet   %a.types;>
+		    <!-- 
+		    %SDAPREF;   "Displayformula"  
+		    %SDASUSP;       "suspend"        -->
+<!ATTLIST dformgrp  id         ID               #IMPLIED
+		    num        CDATA            #IMPLIED
+		    align      (left|center|right) 
+						"center">
+						<!-- 
+		    %SDAPREF;   "Displayformulagroup"    -->

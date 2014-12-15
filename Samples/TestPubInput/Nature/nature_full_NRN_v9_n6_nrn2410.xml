@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_Article.dtd" [
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "../../DTDs/NPG_XML_Article/NPG_XML_Article.dtd" [
 <!ENTITY figf1 PUBLIC "-//NatureAmerica//FICI nrn2410-f1//EN" "//snapple/web_d/web/npg/nrn/journal/vaop/ncurrent/images/nrn2410-f1" NDATA ITEM>
 <!ENTITY tbl1 PUBLIC "-//NatureAmerica//FICI nrn2410-t1//EN" "//snapple/web_d/web/npg/nrn/journal/vaop/ncurrent/images/nrn2410-t1" NDATA ITEM>
 ]>

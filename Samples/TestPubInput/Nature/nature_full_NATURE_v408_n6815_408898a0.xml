@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?Pub EntList alpha amp beta bull cir cirf copy delta dtri dtrif gamma kappa  mdash mu ndash omega pi plusmn psi rArr rho sect squ squf squshf star starf  trade utri utrif?>
-<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_Article.dtd" [
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "../../DTDs/NPG_XML_Article/NPG_XML_Article.dtd" [
 <!ENTITY illus1 PUBLIC "-//NatureAmerica//FICI 35050247//EN" "//snapple/web_d/web/npg/nature/journal/v408/n6815/images/408898aa.0.jpg" NDATA ITEM>
 <!ENTITY illus2 PUBLIC "-//NatureAmerica//FICI 35050248//EN" "//snapple/web_d/web/npg/nature/journal/v408/n6815/images/408898ab.0.jpg" NDATA ITEM>
 ]>

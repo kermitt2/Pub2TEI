@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_article.dtd" [
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "../../DTDs/NPG_XML_Article/NPG_XML_Article.dtd" [
 <!ENTITY e070517-10 SYSTEM "edsumm/070517-10.xml">
 <!ENTITY eqn1 PUBLIC "-//NatureAmerica//FICI nature05759-m1//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-m1.jpg" NDATA ITEM>
 <!ENTITY eqn2 PUBLIC "-//NatureAmerica//FICI nature05759-m2//EN" "//gr-web-server 1/web_d/web/npg/nature/journal/v447/n7142/images/nature05759-m2.jpg" NDATA ITEM>

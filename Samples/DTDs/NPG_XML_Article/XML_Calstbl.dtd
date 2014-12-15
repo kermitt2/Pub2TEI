@@ -1,0 +1,158 @@
+<!-- CALS table DTD fragment -->
+
+<!-- 
+
+2012/08/23 - SCHEMA-76 - Removed "accession" from "title" element 
+
+2012/05/16 - SCHEMA-63 Modified "table" to add new optional attribute "table-type" with allowed value "suppinfo" 
+                       Made "tabcols" an optional attribute of table-->
+
+<!ENTITY % secur                 "security (u | c | s) 'u'" >
+
+<!ENTITY % shortitle                 " " >
+
+<!ENTITY % titles                 "title %shortitle;" >
+
+<!--2011/07/27 tabl entity is over-ridden by entity declaration in NPG_XML_Article.dtd-->
+
+<!ENTITY % tabl                 "((%titles;)?, tgroup+, tblimg*, slide?)" >
+
+<!ENTITY % yesorno                 "CDATA" >
+
+<!ENTITY % content
+                                "texttype CDATA #IMPLIED
+                                applictype IDREFS #IMPLIED
+                                applicrefid IDREFS #IMPLIED
+                                skilltrk NMTOKENS #IMPLIED
+                                contype (desc | proc) #IMPLIED
+                                assocfig IDREFS #IMPLIED
+                                assoctab IDREFS #IMPLIED" >
+
+<!ENTITY % itemid
+                                "sssn CDATA #IMPLIED
+                                unit CDATA #IMPLIED
+                                module CDATA #IMPLIED
+                                lru CDATA #IMPLIED
+                                assem CDATA #IMPLIED
+                                subassem CDATA #IMPLIED
+                                ssubassm CDATA #IMPLIED
+                                compon CDATA #IMPLIED
+                                partno CDATA #IMPLIED
+                                refdes CDATA #IMPLIED" >
+
+<!ENTITY % bodyatt
+                                "id ID #IMPLIED
+                                inschlvl CDATA #IMPLIED
+                                delchlvl CDATA #IMPLIED
+                                label NMTOKEN #IMPLIED
+                                hcp %yesorno; '0'
+                                esds %yesorno; '0'
+                                %itemid;
+                                %content; " >
+
+<!-- ENTITY % text "(#PCDATA)"-->
+
+<!-- morerows CDATA      '0' -->
+<!ENTITY % entryatt
+                                "colname NMTOKEN #IMPLIED
+                                spanname NMTOKEN #IMPLIED
+                                morerows CDATA  #IMPLIED
+                                colsep %yesorno; #IMPLIED
+                                rowsep %yesorno; #IMPLIED
+                                rotate %yesorno; '0'
+                                valign ( top | middle | bottom ) 'top'
+                                align ( left | right | center | justify | char ) #IMPLIED
+                                charoff CDATA #IMPLIED
+                                char CDATA #IMPLIED " >
+
+<!-- PD 2010/05/05 Modified table to add new optional attribute "placement" with default value "external" -->
+
+<!ELEMENT table                             (%tabl;)>
+<!ATTLIST table                  tabstyle NMTOKEN #IMPLIED
+                                 tocentry %yesorno; "1"
+                                 verified %yesorno; "0"
+                                 shortentry %yesorno; #IMPLIED
+                                 frame (top | bottom | topbot | all | sides | none)   #IMPLIED
+                                 colsep %yesorno; #IMPLIED
+                                 rowsep %yesorno; #IMPLIED
+                                 orient (port | land) #IMPLIED
+                                 pgwide %yesorno; #IMPLIED
+                                 %bodyatt;
+                                 tabcols CDATA #IMPLIED
+                                 %secur; 
+                                 number CDATA #IMPLIED
+                                 placement (internal | external) "external" 
+                                 table-type (suppinfo) #IMPLIED>
+
+<!ELEMENT tbody                             (row+) >
+<!ATTLIST tbody                  valign (top | middle | bottom) "top"
+                                 %secur; >
+
+<!ELEMENT tfoot                             (colspec*, row+)>
+<!ATTLIST tfoot                  valign (top | middle | bottom) "top"
+                                 %secur; >
+
+<!ELEMENT tgroup                             (colspec*, spanspec*, thead?, tfoot?, tbody) >
+<!ATTLIST tgroup                 cols CDATA #REQUIRED
+                                 tgroupstyle NMTOKEN #IMPLIED
+                                 colsep %yesorno; #IMPLIED
+                                 rowsep %yesorno; #IMPLIED
+                                 align (left | right | center | justify | char) "left"
+                                 charoff CDATA "50"
+                                 char CDATA ""
+                                 show (yes | no) "yes" 
+                                 %secur; >
+
+<!ELEMENT thead                             (colspec*, row+)   >
+<!ATTLIST thead                  valign (top | middle | bottom) "bottom"
+                                 %secur; >
+<!-- PD 2010/07/13 Modified title to allow accession element -->
+<!ELEMENT title                     (%text; | f)* >
+<!ATTLIST title                     %secur; >
+
+<!ELEMENT colspec                             EMPTY >
+<!ATTLIST colspec                colnum CDATA #IMPLIED
+                                 colname NMTOKEN #IMPLIED
+                                 align (left | right | center | justify | char)   #IMPLIED
+                                 charoff CDATA #IMPLIED
+                                 char CDATA #IMPLIED
+                                 colwidth CDATA #IMPLIED
+                                 colsep %yesorno; #IMPLIED
+                                 rowsep %yesorno; #IMPLIED >
+
+<!ELEMENT spanspec                             EMPTY >
+<!ATTLIST spanspec               namest NMTOKEN #REQUIRED
+                                 nameend NMTOKEN #REQUIRED
+                                 spanname NMTOKEN #IMPLIED
+                                 align (left | right | center | justify | char)  "center"
+                                 charoff CDATA #IMPLIED
+                                 char CDATA #IMPLIED
+                                 colsep %yesorno; #IMPLIED
+                                 rowsep %yesorno; #IMPLIED >
+
+<!ELEMENT row                             ((entry | entrytbl)+) >
+<!ATTLIST row                    rowsep %yesorno; #IMPLIED
+                                 %secur; >
+
+<!ELEMENT entry                             (%entry;)*>
+<!ATTLIST entry                  %entryatt;
+                                 %secur; >
+
+<!ELEMENT entrytbl                             (colspec*, spanspec*, thead?, tbody)+
+                                 >
+<!ATTLIST entrytbl               cols CDATA #REQUIRED
+                                 tgroupstyle NMTOKEN #IMPLIED
+                                 colname NMTOKEN #IMPLIED
+                                 spanname NMTOKEN #IMPLIED
+                                 colsep %yesorno; #IMPLIED
+                                 rowsep %yesorno; #IMPLIED
+                                 align (left | right | center | justify | char)  #IMPLIED
+                                 charoff CDATA #IMPLIED
+                                 char CDATA #IMPLIED
+                                 %secur; >
+
+<!-- PD 2009/07/27 Modified tblimg to deprecate <!ENTITY to <entity>: changed entname ENTITY #REQUIRED to entname CDATA #IMPLIED and added entref IDREF #IMPLIED -->
+<!ELEMENT tblimg                     EMPTY>
+<!ATTLIST tblimg                 entname CDATA #IMPLIED
+                                 entref IDREF #IMPLIED
+                                 show (yes | no) "no" >
