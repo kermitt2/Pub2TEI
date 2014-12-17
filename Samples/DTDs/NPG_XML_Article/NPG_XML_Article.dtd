@@ -1,0 +1,2236 @@
+<!-- 
+DTD for Nature US, Copyright 2009 Modified by Paul Donohoe, Nature Publishing Group.)
+-->
+<!--
+For use with XMetaL 2.0:
+(a) Initial doctype declaration has been removed;
+(b) Relative paths to ISO entity files have been added to entity declarations; and
+(c) ArborText's SGML declaration ati-dftl.dcl has been added to the Rules directory
+as article.dec.
+-WB, 10/19/00
+-->
+<!--
+Version 2.7.9, 26/01/11
+Please refer to DTD Change History for list of changes and dates.
+-->
+<!--
+DTD Change History (yyyy/mm/dd format)
+
+2013/08/14 - HUBXML-18 - Added 'url' attribute to "datafile" element to support Tableau interactive figures
+
+2013/07/22 - HUBXML-16 - Added "secr" element with required 'rid' attribute; Added optional @id attribute to "sec" of type ID; Added optional @type attribute to "sec" with allowed value 'excerpt'
+
+2013/04/02 - SCHEMA-92 - Added "geneseq" and "proteinseq" as possible elements within entity %data;
+
+           - SCHEMA-91 - Added "tiff" to values for entity %figure-data;
+
+2013/02/01 - SCHEMA-90 - Added new optional element "data-citations" as a child of "bm"
+                         Multiple "data-citation" children, which have multiple optional "refau" children 
+                         "data-citation" has required attributes: 'db-name', 'id', 'url', and 'year'; optional attribute 'source' which can take values "existing" or "new"
+
+           - SCHEMA-89 - Added new optional element "auid" as a child of "au", "cau" and %author entity, to allow inclusion of ORCIDs for authors
+
+2013/01/16 - SCHEMA-88 - Add "fav" to allowed values of article 'publish' attribute and pubdate 'type' attribute.
+
+2012/11/15 - SCHEMA-81 - Added new values ("docx", "png" and "xlsx") to %figure-data (used for datafile "type" attribute).
+
+2012/09/26 - SCHEMA-79 - Add new values ("is-protocol-update-to" and "has-protocol-update") to "related-article-type" attribute of "related-article"
+
+2012/08/30 - SCHEMA-78 - Added a "datafile-type" attribute to the "datafile" element with values 'figure-data' (default) and 'interactive'.
+                         Removed 'interactive' as possible value of "fig-type" on the element "fig".
+
+2012/08/23 - SCHEMA-77 - Added 'interactive' as possible value of "fig-type" on the element "fig".
+
+2012/08/23 - SCHEMA-76 - Added "accession" as a possible element in %data; Removed "accession" from %entry; "aff" "caff" and "p" in NPG_XML_Article.dtd and from "title" in Calstbl.dtd 
+
+2012/08/23 - SCHEMA-75 - Added 'box-figure' as possible value of "fig-type" on the element "fig".
+
+2012/07/03 - SCHEMA-71 - Created new optional element "article-link" within "pubfm", with required attributes 'link-type' and 'extrefid'.
+
+2012/06/28 - SCHEMA-68 - Added 'est' (Expressed Sequence Tag Database), 'gss' (Genome Survey Sequence Database), 'pccid' (PubChem Compound), 'pcsid' (PubChem Substance), and 'emdb' (Electron Microscopy Data Bank) values to the "type" attribute on the "accession" element. 
+
+2012/05/23 - SCHEMA-66 - Made "url" attribute on "ext-media" element optional.
+
+2012/05/18 - SCHEMA-65 - Created new optional element "cps" as child of "cpg" to contain copyright statement.
+
+2012/05/18 - SCHEMA-63 - Made "tgroup" optional within "table" and additional changes made to attributes of "table" in XML_Calstbl.dtd.
+
+2012/03/29 - SCHEMA-57 - Added new optional attribute "fig-type" to the element "fig", with allowed value "suppinfo".
+
+2012/03/13 - SCHEMA-56 - Added new element "infographic", optional and repeatable within element "objects" (and also "slideshow").
+                         Allowed optional child elements "title", "caption" and "credit" within "infographic" element.
+                         Allowed attributes of "infographic" are the same as for "fig" ('id', 'type', 'entname', 'entref', 'file').
+                         Added new element "infographicr" to %textref; entity set, with "align" attribute (as found in "illusr").
+
+2012/03/05 - SCHEMA-55 - Added new optional attribute "type" to the element "suppobj", with allowed values "audio" and "video".
+
+2012/02/29 - SCHEMA-54 - Added new allowed value of "has-protocol" to the "related-article-type" attribute of element "related-article".
+
+2012/01/16 - SCHEMA-52 - Changed default value for "style" attribute of "bibl" element to "alpha".
+
+2012/01/13 - SCHEMA-44 - Made "meta" element recursive by adding "meta" to it's definition.  Added parent "ext-media" element to the supplementary info object element "suppobj".
+
+             SCHEMA-50 - Added "doc" to list of values in %figure-data; entity set.
+
+2011/12/19 - SCHEMA-45 - Added new attribute "style" to "bibl" element, with allowed values "numero" (default) and "alpha".
+
+             SCHEMA-47 - Added new allowed value of "is-protocol-to" to the "related-article-type" attribute of element "related-article".
+
+2011/11/23 - SCHEMA-42 - Added "ena" value to the "type" attribute on the "accession" element for European Nucleotide Archive database accession links. 
+
+2011/11/07 - SCHEMA-40 - Added new attribute "illus-type" to "illus" element, with allowed values "illustration" (default) and "infographic"
+
+2011/10/28 - SCHEMA-39 - Added "code" element to %data; entity set; removed duplicate entry for element "p".
+
+2011/09/23 - Ontologies - Made "code" attribute of "technique" element optional.
+
+2011/09/16 - SCHEMA-38 - Added 'bioproject' value to the "type" attribute on the "accession" element for BioProject database accession links. 
+
+2011/09/15 - Ontologies - Added "id", "type", "version" and "path" attributes to "technique" element.
+
+2011/09/06 - SCHEMA-32 - Added "pdf" to allowable values of %figure-data; entity set.
+
+2011/09/05 - SCHEMA-34 - Added "licence" as allowable value of "chgtype" attribute of "chg" element.
+
+2011/08/25 - SCHEMA-31 - Added "display" attribute to "topic" element with allowed values "hide" and "show" (default)
+
+2011/08/19 - SCHEMA-25 - Added element "stndfrst" optional within element "bx".
+
+           - SCHEMA-30 - Created new element "uc" for uppercase text content and added to "%fontchng;" entity set
+
+2011/08/18 - SCHEMA-29 - Created new element "role" and allowed optional within elements "au", "cau" and "auname"
+
+           - SCHEMA-28 - Create new entity set "%entityref" to include elements "annotation-ref and "named-entity";
+                         Replaced elements "annotation-ref and "named-entity" with entity set "%entityref;" in definition for entity set "%textref;";
+                         Added "%entityref;" entity set to definition for entity set "%plain-text;";
+                         Removed subsequent duplicate element inclusion of "annotation-ref" and "named-entity" within definitions for elements "company", "prod" and "scientific".
+
+           - tighten   - Restricted elements "subject" and "technique" to contain only #PCDATA.
+
+2011/07/27 - SCHEMA-26 - Copied table model entity %tabl; from XML_Calstbl.dtd and allowed elements "caption" and "credit".
+
+             SCHEMA-25 - Allowed element "ext-media" optional and repeatable within element "objects".
+                         Added new element "slideshow" optional and repeatable within element "objects".
+                         Allowed elements "fig" and "illus" within "slideshow" element and added new reference element "slideshowr" to "%textref;" entity set.
+                         Made elements "chgperson" and "chgreason" optional within "chg" element.
+                         Added "clarification" to list of allowed values of "chgtype" attribute of "chg" element.
+
+           - SCHEMA-24 - Added new "type" attribute to "websumm" element, with allowed values of "toc" and "regular" (default).
+
+2011/07/14 - SCHEMA-17 - Added the following values for "related-article-type" attribute of "related-article" element:
+                         'is-correction-to', 'is-corrigendum-to', 'is-erratum-to', 'is-retraction-to', 'is-addendum-to', 'is-response-to', 'is-comment-to', 'is-news-and-views-to', 'is-research-highlight-to', 'is-related-to'
+
+             SCHEMA-20 - Allowed element 'aufnr' optional and repeatable within 'group' element.
+
+2011/06/28 - SCHEMA-15 - Added 'biomodels' value to the "type" attribute on the "accession" element for BioModels database accession links. 
+
+2011/06/28 - SCHEMA-14 - Added new optional element "start-date" to "licence" element, to allow delayed start of licence conditions; allowed multiple "licence" elements within "pubfm" and "suppfm" elements.
+
+2011/06/14 - SCHEMA-12 - Added "jpg", "jpeg" and "gif" to allowable values of %figure-data; entity set.
+
+2011/06/02 - SCHEMA-11 - Added new element "ext-media" optional and repeatable within "bdy" and "sec" elements; added new element "ext-mediar" element to "%textref;" entity set.
+
+2011/04/15 - SCHEMA-10 - Added attribute "paid" optional within "author-paid" element
+
+2011/04/05 - Ontologies - added "npg.subject" and "npg.technique" as allowable values of "subject" element "type" attribute, and set "npg.subject" as default.
+
+2011/02/28 - SciRep - added element "elocation" optional to "pubfm" element, to hold identifier for citations of online-only content.
+
+2011/02/28 - SCHEMA-8 - Added 'bmrb' to list of allowable values of the "type" attribute of the "accession" element for Biological Magnetic Resonance Data Bank database accession links.
+
+2011/01/26 - SCHEMA-6 - added optional "type" attribute to "named-entity" element, with allowed values "compound" and "geneprot", and optional "entity" attribute with CDATA content.
+
+2011/01/26 - SCHEMA-7 - added "docm", "xlsm", "pptm", "pptx" and "tgz" to %notation; entity set.
+
+2010/12/15 - SCHEMA-5 - added "embargo" value to "type" attribute of "pubdate" element
+
+2010/12/08 - Ontologies - added optional attributes "id", "path", "type" and "version" to the "subject" element; made "code" attribute optional.
+
+2010/12/02 - ICB - added "icb" value to %notation;, added optional "id" and "type" attributes to "code" element; added "code" element optional and repeatable to "media" element; created new element "coder" to link text to "code" element, and added to %textref;.
+
+2010/11/05 - SciAm - made "role" attribute of "image" element optional; added "imager" element optional within elements "au" and "cau".
+
+2010/09/20 - tighten - Removed element "p" from allowable child elements of element "crosshd".
+
+2010/09/15 - SCHEMA-1 - Created new element "named-entity" and added to %textref; and allowed within "prod", "company" and "scientific" elements.
+
+2010/09/02 - sync - Added 'ensembl' value to TYPE attribute on ACCESSION element for Ensembl database accession links.
+
+2010/08/02 - XBC-833 - Added 'pcaid', 'pride' and 'sra' values to TYPE attribute on ACCESSION element for PubChem AID, Proteomics Identification Database and Sequence Read Archive database accession links.
+
+2010/08/18 - XBC-808 - Added "docx" and "xlsx" to %notation; entity set.
+
+2010/07/26 - loosen - Changed "id" attributes of "categ", "subcateg" and "subsubcateg" elements from %categ; %subcateg; and %subsubcateg; parameter entities to CDATA.  
+                      Removed associated file npgcateg.mod and associated parameter entity %npgcateg; from DTD.
+                      As part of this change, the elements "categtxt", "subcatxt" and "subsubcatxt" are now deprecated.
+
+2010/07/23 - SciAm - Made element "title" optional within element "article-grouping".
+
+2010/07/21 - XBC-725 - Added elements "critical", "trouble", "caution", "pause" and "timing" optional and repeatable within element "li".
+
+2010/07/12 - XBC-655 - Added elements "critical", "trouble", "caution", "pause" and "timing" optional and repeatable within element "bx" for boxes.
+
+2010/07/12 - XBC-677 - Removed element "accession" from elements "aff" and "caff"; added element "accession" to parameter entity "entry" for tables.
+
+2010/06/28 - XBC-263 - Added new allowable value "mgi" for "type" attribute of "accession" element for Mouse Genome Informatics.
+
+             XBC-15 - Added "csv" to %notation; entity set.
+
+2010/06/15 - XBC-625 - Added new allowable values for "id" attribute of "section" element - "this-week", "news-in-focus", "comment", "careers", "research"
+
+2010/06/09 - Ontologies - Added new element "technique" optional and repeatable within pubfm and suppfm
+
+2010/05/12 - Extension - replaced "#PCDATA | %fontchng;" with "%plain-text;" in many elements to allow <character> content: "code", "chemical-formula", "ancref", "bibrinl", "bxr", "deflistr", "fdr", "figr", "fnr", "fr", "annotation-ref", "illorinl", "mediar", "tablr", "compoundr", "schemer", "sir", "cir", "weblink", "xnav", "xref", "company", "prod", "brandname", "scientific", "indications"
+
+2010/05/07 -         - Changed allowable values for "related-article-type" attribute of "related-article" element to only "protocol".
+
+2010/04/26 - Pubmed - Allowed element "aff" as optional within element "contributor".
+
+           -         - Added new element "related-article" optional and repeatable within pubfm
+
+2010/04/15 - XBC-388 - Added optional "code" attribute to "arthead" element.
+
+             XBC-386 - Added optional "guid" attribute to "article" element.
+             
+             Extension - Created new entity %plain-text; composed of %straight-text; and %fontchng;
+             
+             SciAm - Allowed %plain-text; within elements "subject" and "subclass" 
+
+2010/03/24 - XBC-293 - Allowed element "annotation-ref" within "prod", "company" and "scientific" elements.
+
+2010/03/23 - Annotations - Created new element "meta" within "compound" to hold (initially) chemical probe information.
+
+2010/03/15 - SciAm - Created new element "section" within "pubfm" to hold magazine section  Required attribute "id" can have values "departments", "features" or "online".
+
+2010/03/08 - SciAm - Allowed element illus as optional within media
+
+2010/02/15 - SciAm - Changes to accommodate Scientific American data:
+							Added new date element 'created', optional within 'hst'
+							Added new values 'prototype', 'offline' and 'retired' to @publish attribute of element 'article'
+							Allowed elements 'title' and 'image-alt' optional within element 'illus'
+							Added new values 'overview', 'sidebar', 'infographic', 'audio', 'video', 'pdf' and 'photo-album' to 'type' attribute of element 'weblink'
+							Added 'role' attribute to 'subclass' element
+							Added optional 'hour' and 'minute' attributes to 'created' and 'pubdate' elements.
+							
+
+2009/12/14 - CSTORE-36 - Added new element "character" to %straight-text; to hold non-Unicode characters in place of named entities.
+
+           - Added "ar" (Arabic) to allowed values of entity %language for Nature Middle East
+
+2009/10/07 - SciBX   - Added new element alt-title to hold an alternate HTML title
+
+2009/09/25 - XB-2887 - Added display attribute to cite element
+
+			   - Cloned element cvd from AJ DTD for Scientific American
+
+2009/08/20 -         - Allowed multiple kwdg within fm
+
+           - XB-2826 - Allowed multiple audecl within bm; added optional id attribute to audecl; created new element audeclr, optional within au, group and cau
+
+
+2009/07/24 -         - Changed all entname attributes to CDATA and added new entref attributes of type IDREF.
+                     - Added new elements entity-declarations and entity
+                     - To allow deprecation of <!ENTITY> declarations for external objects.
+
+           - MSB     - Allowed multiple datafile elements within suppobj
+           
+           - EMBOR   - Relaxed content of cite type attribute to CDATA.
+
+2009/06/17 - XB-2510 - Extended element assoc-file to contain optional weblink element; made entname attribute optional.
+             EMBOR   - Relaxed content of contributor role attribute to CDATA
+
+2009/05/29 - XB-2608 - New elements arthead and artsubhead within pubfm for Scientific American, and entity tocshow for display options.
+
+           - XB-2661 - New element article-grouping within pubfm for EMBO Reports.  Allowed element aufnr within cau.
+           
+           - XB-2540 - Allowed both pp and seq instead of either.
+
+2009/04/27 - XB-2566 - Allowed element p within element endnote.
+
+2009/04/20 - XB-2541 - New element "quote" to contain external quotes, allowed within "bdy" before first "p".
+
+2009/03/16 - XB-2434 - Compound highlighting changes: removed child element order restriction from "annotations"; added "id" attribute to "annotation-item"; changed "date" attribute of "annotation-item" to "created" (required) and "updated" (optional) attributes; added "title" (required), "inchikey", "stdinchi" and "stdinchikey" attributes to "annotation-compound"; added "title" attribute to "annotation-ref"; changed "pubchem" and "chemspider" attributes of "annotation-compound" to CDATA.
+
+2009/02/27 - XB-2434 - Added new elements "annotation-ref", "annotations", "annotation", "annotation-item" and "annotation-compound" for compound highlighting.
+
+2009/02/16 - XB-2355 - Added attribute "type" to "inchi" and "inchikey" elements, and made both elements repeatable.
+
+2009/02/16 - XB-2214 - Added "language" and "display" attributes to "code" element.
+
+2009/02/16 - XB-2405 - Added element "label" to "datafile" element.  Added "datafile" element to "suppobj" element.
+
+2009/02/16 - XB-2388 - Added "sdf" and "png" to %notation.
+
+2008/12/15 - XB-2207 - Added new "code" element to "p" to represent computer code.
+
+2008/12/15 - XB-2209 - changed "indications" element to allow it to contain text and font-changing elements.
+
+2008/12/12 - added new attribute "role" to "group" element to replace "contrib-level" attribute, which is now deprecated.
+
+2008/12/12 - XB-2254 - added %fontchng elements to "compoundr" element.
+
+2008/11/18 - XB-2201. Created new element "assoc-file" and added to element "pubfm" for 3D-PDFs for Nature.
+
+2008/11/03 - XB-2185. Created new element "compound-obj" and added to element "compound" for Chemistry journals.  Added "CDX", "CIF", "JDX", "MOL" and "PDB" to %notation.
+
+2008/11/03 - XB-2184. Created new elements: "synonym", "chemical-formula", "mol-weight", "elemental-analysis", "inchi", "inchikey", "smiles" and added to element "compound" for Chemistry journals.
+
+2008/11/03 - XB-2168. Created new element "chemimg" within "objects" and "chemimgr" within %emptyref for Chemistry journals.
+
+2008/10/21 - XB-1974. Added "zip" to values for entity "figure-data"; allowed multiple "datafile" within "fig" for journal MSB.
+
+2008/09/24 - XB-2106. Added new element "indications" to "pubfm" to allow new classification of articles in SciBx.
+
+2008/08/11 - XB-1974. Added "CSV" to %notation; new entity "figure-data" for data types (file extensions); new element "datafile" to "fig" - to allow association and display of original data files for figures for journal MSB.
+
+2008/08/11 - XB-1953. Added "nuccore" to type attribute of accession
+
+2008/08/11 - XB-1985. Added "hans" to %language for Han-Simplified text
+
+2008/08/11 - XB-1906. Added new elements: "image" to "objects", "imager" to %emptyref, "image-alt" to "image".
+
+2008/08/11 - Changed element "group" to remove ambiguity, and added new attribute "contrib-level" to allow markup of different levels of group/consortia contribution.
+
+2008/07/22 - XB-1897. Added element "sector" to pubfm for naturejobs.
+
+2008/06/30 - XB-1816. Allowed multiple orf within group.
+								Changed <!ELEMENT group (groupttl, grouptxt?, orf?,((group)* | (au | cau)*)*)> to <!ELEMENT group (groupttl, grouptxt?, orf*,((group)* | (au | cau)*)*)>
+
+2008/05/19 - XB-1654. Created new element slide and added optional within fig and table (in external XML_Calstbl.dtd)
+	     - XB-1303. Created new element autxt and added optional within au, cau, and replyau.
+
+2008/03/10 - XB-1223. Added (critical | caution)* to element "matsgrp" to allow Critical and Caution notes at the start of the sections.
+
+           - XB-1233. Added (critical | caution)* to element "proc" and element "procgrp" to allow Critical and Caution notes at the start of Procedure sections.
+
+           - XB-1232. Added "timing" and "trouble" elements to element "mat" to allow these items within individual Material items.
+
+           - XB-1231. Changed "#PCDATA" to "%data" within element "timing" to allow figure and table references.
+
+           - XB-1234. Created new element "matsec" and added to content for "matsgrp" to allow subheadings within Reagents and Equipment - XB-1234
+
+           - Added "nfv" to "issue" parameter values for element "article" - for "Near Final Version" articles.
+           - Added "nfv" to "type" parameter values for element "pubdate" - for "Near Final Version" articles.
+           - Changed "pubdate?" to "pubdate*" within element "hst" to allow multiple pubdates
+
+2008/01/15 - Replaced "author-paid" element with new structure with parent element "licence", with attributes "model" and "version", and optional child elements "weblink", "licence-text" and "author-paid".
+
+           - Added "pps" to %notation (format of Supplementary Info files) for XB-1273
+
+2008/01/15 - Added new attribute "display" to element "atl"; values "show" (default) and "hide" for XB-1275.
+
+2007/09/21 - Added new attribute "display-authors" to element "group"; values "yes" (default) and "no".
+
+2007/09/18 - Added new 'ddbj' and 'swiss-prot' values to TYPE attribute on ACCESSION tag to handle new DNA Data Bank of Japan 
+	and SWISS-PROT database links for Nature
+
+2007/09/18 - Expanded EDSUMM attributes to allow for AOP-specific and issue-specific versions.  New attribute name 'publish' with allowed values 'issue' (default value) and 'aop'.
+
+2007/09/12 - Expanded AUTHOR-PAID tagging to incorporate licence terms for Creative Commons, etc. Includes new elements URL and LICENCE-TEXT (XB-79)
+	   - Expanded CONTRIBUTOR tagging to accomodate new requirements for NCP Medscape/CME articles (XB-1136)
+
+2007/06/18 - Added new 'arrayexpress' and 'embl' values to TYPE attribute on ACCESSION tag to handle new European Molecular Biology Laboratory 
+	and ArrayExpress database links for Nature Genetics
+	   - Allowed more flexibility to GROUP model to allow a mixture of nested groups and/or authors within a group, rather than groups OR 
+	 authors.
+
+2007/05/14 - Added new CODE attribute to SUBCATEG to mimic CATEG tag. CODE allows generic alphanumeric code value that is defined in an
+	   xbuilder configuration file as opposed to the DTD (e.g. <subcateg code="nrcc-sc1>"). Made SUBCATEG ID attribute optional as a result.
+2007/04/23 - New CONTRIBUTOR role 'interviewer' added
+2007/04/13 - New elements CONTRIBUTORS/CONTRIBUTOR created for holding any significant contributors to the content, secondary to the main 	
+	   author/creator of the content. E.g. Interviewee, translator etc.) Optional ROLE attribute to declare specific role. Leave attribute off if role is generic/unspecific. New roles can be created on as-needed basis. (CON-672)
+	   - Created new CONFIDENTIAL value for CONFLCT attribute on AUDECL element for authors bound by confidentiality agreements preventing them from disclosing their financial interests in their work.  (CON-525)
+2007/01/30 - New alt-type attribute added to BIBL for scenarios when Reference section should be treated slightly differently than normal. 
+	  Value of ALT-TYPE also becomes the replacement header for the Reference section. (e.g. Further Reading section in Nature articles, when Further Reading reference material is not cited in paper but reference links still need to 
+	  be created for each item)
+2006/12/12 - Added new type attribute to ARTSREVIEW for different types of Arts being reviewed (e.g. Play, Ballet, Opera). CON-398
+	   - Added ORF element to GROUP to allow for Author group affiliations.
+	   - Allowed SEC within ONLINE-METHODS. CON-292.
+	   - Added new CONNOTEA attribute on KEYWORD to specify connotea link tag when keyword cannot be used as is. CON-437
+2006/11/13 - Added new elements: artsreview, exhibitreview to BDY
+           - Added TYPE attribute to BIB element. Allowable values are ORIG and REG (default). 'ORIG' used to identify a cited article as the 'original' article.
+           - Added PRIORITY attribute to SUBJECT element. Allowable values are 1 and 0 (default). '1' used to identify a subject as the main/priority subject for that article.
+           - Added new element AUTHOR-INFO to BM to support new structure in Nature Papers.
+           - Added new element ONLINE-METHODS to SEC element to associate a Methods section with an 'Online' Methods equivalent.
+2006/11/07 - Added new tar filetype to %notation
+2006/11/06 - Added new article-number and doc-id elements to %reftxt;
+2006/10/30 - Added new BACK value to attribute TYPE for RVWINFO element. Possible values are now NEW | OURS | BACK | REG (for nature physics book reviews).
+2006/09/19 - Created new ALTDOI element for alternative DOIs. Requires unique LABEL attribute which establishes precedence. Zero or more 
+	   allowed within PUBFM and SUPPFM.
+	   - Made AFF/CAFF optional within AUG to allow for GROUPs with no associated affiliation.
+2006/10/17 - Created new AUTHOR-PAID element within PUBFM to track author payment
+	   - Allowed PUBDATE within %REFTXT so that publication dates can appear in references
+	   - Created common keyword parameter entity to store common keyword content shared by KWD and KEYWORD elements
+	   - Added DISPLAY attribute to REFDOI element to control display/suppression of doi in citations and references. Allowable values are 'show' and 'hide'. Occasionally REFDOIs are inserted to force resolution of a citation/reference and are not part of the 
+	   original text. These cases should be explicitly suppressed/hidden in the XML via the atttribute. Otherwise, default rule is to 
+	   Show.
+	   - Created TYPE attribute on ISBN. Allowable values are 'print' or 'electronic' - 'print' default.
+	   - Allowed ISBN within PUBFM. Choice is either ISSN or ISBN - not both.
+2006/07/24 - Created new CIR element for compound information link which appears in print
+2006/06/14 - Created new SEQ number for enforcing article ordering/sequence when there are no page numbers (online-only content)
+	   - Made AU optional within GROUP for cases when only the author group/consortium name is provided, and no authors are supplied
+2006/06/14 - Allowed CAUTION within STEP
+2006/06/12 - Created new ENCODING element for content whose encoding does not match default encodings set for that language. TYPE attribute 
+	     holds possible values of BASE64 and NONE for japanese and encoding-free content. 
+	   - Allowed TIMING within TIMING for nested timing models in protocol procedures.
+2006/05/22 - Created new parameter entity %straight-text containing PCDATA and LANG elements 
+	   - Created new LANG element with type attribute allowing existing %language; values (eng | ger | kanji | spanish)
+	   - Allowed CRITICAL within MAT for new protocols format
+	   - Created new TIMING element within STEP for new protocols format
+	   - Allowed P within TROUBLE for new protocols format
+2006/04/25 - Created new COMPOUND element within OBJECTS to support nchembio compound structures.
+	   - COMPOUND contains required NAME and LABEL elements and required ID, SID and ENTNAME attributes.
+	   - Added RID attribute on COMPOUNDR element which targets the ID attribute on COMPOUND
+	   - Added new element CONFSPONSOR to CONF element for sponsor supported conferences.
+	   - Added new attribute 'code' to CATEG tag to reference generic configuration codes as opposed to hard coded DTD values (similar 
+	   to SUBJECT tag). Made 'id' attribute optional as a result.
+	   - Allowed optional BIO within AUNAME (in line with AU and CAU)
+	   - Made IDT and PP optional within PUBFM (for online-only content)
+2006/02/20 - Added optional MTSNO element to PUBFM and SUPPFM to capture manuscript tracking number (if available) for Protocols project
+	   - Added TYPE attribute to EDSUMM to differentiate b/w standfirst-type editorial summaries and regular ones. Values are 
+	     'standfirst' and 'regular' (default)
+2006/02/01 - Added new %align-att; parameter entity to hold commonly referenced align attribute values (left, center, right etc.)
+	   - Added %align-att to: 'horiz' attribute on ALIGN element, 'align' attribute on ILLORINL and ILLUSR
+	   - Made 'external' default align value on ILLORINL (to facilitate placement of ILLORINL illustrtations on separate pages)
+	   - Added 'spanish' to %language entity for upcoming NCP Spanish supplement
+	   - Added new attribute 'status' to ACCESSION element to control primary or secondary (default) status. In the case of PDB codes, 
+	   'primary' refers to newly submitted structures.	     
+2005/12/14 - Added 'html' to %notation;
+2005/11/22 - Changed IDTYPE to DBTYPE to better reflect purpose, and removed hard coded values (allowable values will be 
+	     stored in external configuration files)
+2005/11/09 - Added new IDTYPE to SCIENTIFIC tag to identify database. Current values are 'entrez' and 'uniprot'
+	   - Allowed %fontchng; to SCIENTIFIC tag to allow emphasis tagging in genes/proteins
+2005/10/21 - Allowed %emptyref; within WEBLINK to allow 'linked' illustrations for ISN.
+2005/10/18 - Made CATEG optional within PUBFM and SUPPFM as we move away from hard coding category info into source XML.
+2005/10/06 - Added new SCIENTIFIC tag to %data; to capture gene/protein markup for various publications on OMICS gateway. Optional ID 
+	     attribute for potential internal/db ids.
+	   - Created new %dateatt; parameter entity to hold common year, month, day attributes, all required. Referenced from applicable 
+	     elements.
+	   - Added new CONFENDDATE to CONF element for end date of conference. Needed for ISN conferences. Takes EMPTY tag format with 
+	     required YEAR, MONTH, DAY attributes and optional TIME. (Differs from CONFDATE format, but did not change due to backward 
+	     combatility issues in archive XML.)
+	   - Allowed CONTACT within CONF for posssible conference contact. Needed for ISN conferences.
+2005/09/28 - Added new element QUIZ to BDY. QUIZ made up of one or more QA-BLOCK. (For nature physics end game pieces)
+	   - Allowed CROSSHD within ANSWER
+	   - Added new attribute TYPE to RVWINFO. Possible values are NEW | OURS | REG (For nature physics book reviews - REG is default)
+	   - Added new attribute ID to SUBCLASS for target CME linking (NCP)
+	   - Allowed CONF within PUBFM.for ISN conferences
+2005/08/10 - Added sif and noa to %notation; for new nature suppinfo types
+2005/07/06 - Added %notation; to keyword
+	   - Added 'wmv' to %format;
+10/06/05   - Added new 'all' value to CODE attribute on CONT for region content that spans all continents
+	   - Added new INTVW element within BDY for interview-style question and answer articles. Within INTVW allowed one or more QA-BLOCK 
+	   elements which hold one set of QUESTION and ANSWER elements. QUESTION and ANSWER are permitted one or more P elements.
+06/03/05   - Added new 'update' value to CHGTYPE attribute on CHG element
+	   - Created new %glossid; parameter entity for reuseable GLOSSID attribute glossary database linking. Replaced GLOSSID 
+	   attribute on TERM with %glossid; and added %glossid; to KWD.
+	   - Made TIME attribute optional on BLOG ENTRYDATE.
+	   - Changed CONT element from open PCDATA element to empty element with fixed continent values.
+05/12/05   - Extracted %subsubcat; into external npgcateg.mod file and added new subsubcat ids: 'grad' 'mov' 'nuts' 'soc' 'sal'
+	   - Added new element COMPOUNDR to %TEXTREF; for compound references in Nchembio papers. REF attribute is CDATA rather than IDREF 
+	     because target ID is not inserted until build time.
+	   - Added new element SCHEMER to %TEXTREF; for scheme references in Nchembio papers. RID attribute is of type IDREF and must 
+	     resolve to ID on target SCHEME.
+	   - Added new element SCHEME to OBJECTS. Carries required attributes ID and ENTNAME (for declaring scheme object file). Contains 
+	     optional child elements SCHEMETL (scheme title) and CAPTION.
+	   - Replaced type attribute value list on fig, subfig, scheme, illus with %notation;
+05/09/05   - Added new empty element STATE to REGION tag. STATE holds standarad US state and Canadian province codes.
+	   - Made CONT (contintent) compulsory within REGION
+04/29/05   - Added new elements CAREER STAGE, DISCIPLINE to PUBFM for naturejobs article classification.
+03/31/05   - Added new attribute online to TYPE attribute on PUBDATE. This is for online-only content.
+	   - Added new elements CAREER STAGE, DISCIPLINE to PUBFM for naturejobs article classification.
+03/10/05   - Created optional WIDTH and HEIGHT attributes on weblink element for specifying custom width/height measurements on target 
+	   windows. Should only be used to override standard dimensions in special cases.
+	   - Added new element FLMREVIEW to BDY to support Film Reviews in NBT. Based on BKREVIEW element. ID will use naming convention 
+	   'FM#' and must match RID on RVWINFO element. <rvwinfo rid="fm1">....</rvwinfo><flmreview id="fm1">...</flmreview>	   
+02/07/05   - Added SBML to %notation parameter entity to support structured data suppinfo in MSB
+	   - Created new element SYNOPSIS and HIGHLTS at the ABS level within FM.
+01/06/05   - Added "geo" to TYPE attribute on ACCESSION element.
+01/05/05   - Changed nataminc.ent callout to nataminc_x.ent to reflect XML status.
+12/07/04   - Added new %npgnonchars; parameter entity which points to external entity file npgnonchars.ent (New DTD file).
+	   Npgnonchars.ent created to contain NPG custom non-character/boilerplate text entities. Npgnonchars.ent is 
+	   SGML/XML valid and is called from both XML and SGML dtds.
+	   - Defined new entity &newsad; within npgnonchars.ent for standard news ad includes. Entity contains standard 
+	   path to news ad.
+	   - Added TYPE values: special | max | box to WEBLINK for special formatting requirements on popup windows.
+	   - Added new element REFDOI to REFTXT for hardcoded DOIs when DOI is not yet available in database and Editorial 
+	   can't wait for it - should not be used unless absolutely necessary. Contents of REFDOI is PCDATA.
+	   Created new parameter entity %REFTXT containing common element shared between BIB and CITE. Changed BIB and 
+	   CITE content to contain %reftxt; instead of duplicate element lists.
+11/17/04   Added new element BLOGREF to AU, AUNAME and CAU to associate authors with their respective BLOGENTRY 
+	   (if applicable).
+	   Added optional ID attribute to BLOGENTRY to act as target for BLOGREF.
+11/01/04   Added new attribute ORIGSRC to ARTICLE with implied/default value of "yes". ORIGSRC=NO only used when JTL 
+	   (journal title) is not the original source journal for that article. (Used only for NCP journals at present)
+10/04/04   Added %data; to CHGMADE.	
+09/27/04   Added new value "ORIG" to TYPE attribute on CITE for Original article citations on NCP articles.
+	   Allowed TERM within %data; for NCP glossary terms which can appear throughout article body.
+	   Added new optional GLOSSID attribute to TERM for NCP glossary terms. GLOSSID should resolve to a glossary definition held in an external database.
+	   Allowed new elements MATS and PROC within BDY for new Materials and Procedures sections in NMeth Protocol articles.  
+	   Created new element MATSGRP within MAT for groups of materials.
+	   Created new atttribute CAUTION on MAT element. Allowable values: 'yes' or 'no' (default).
+	   Created new element PROCGRP and STEP within PROC for groups of steps and individual steps.
+	   Allowed P, and new elements CRITICAL (critical notes), TROUBLE (troubleshooting), PAUSE  (pause point notes) within STEP.
+	   Within TROUBLE created new elements: PROBLEM and SOLUTION.
+  
+07/15/04   Added optional TITLE to BLOGENTRY.
+	   Added new value "BIND" to TYPE attribute on ACCESSION.
+06/28/04   Added "c" to the list of allowable %notation values for supplement objects.
+	   Replaced PCDATA with %data; in PULLQUOTE to allow more text control.
+05/24/04   Added new element BLOGENTRY to BDY to support new News@Nature blog entries for "blog" articles. BLOGENTRY
+	   contains required element ENTRYDATE and at least one P. ENTRYDATE carries 5 required attriutes (year, month,
+	   day, day number [e.g. Day 1], time).
+05/14/04   Added new TIME attribute to PUBDATE and CHGDATE for news@nature articles. Format of time should be 24hr time
+	   and include time zone abbreviation. E.g. time="17:00GMT"
+02/26/04   Added new TYPE attribute to BX element with possible values of "reg" (Regular boxes. Default - if not specified, 
+	   assumed) or "bio" (special "Author Biography" boxes in NRD "20 Questions" articles that need to be distinguished from
+	   regular boxes.)
+02/20/04   Added MP3 to %notation;
+	   Added new sub category "ca" for Communication Arising online articles (sub category of Brief Communication)
+	   Added new category "20q" for 20 Questions NRDD articles
+1/28/04    Created new category "HN" for "Historical News"
+	   Created new optional attribute "COUNTRY" on ISBN with possible values of "us, uk, ja" for new amazon book links on Nature.
+1/15/04    Added optional TITLE to SUPPOBJ.
+	   Added new DISPLAY attribute to ILLUS to control print vs online display of images. Possible values: "print-only" 		
+	   "online-only" "print-online" (default).
+11/03/03   Added "mp4" to %notation. Becomes new value for FORMAT attribute on SUPPOBJ and MEDIA.
+10/28/03   Created new subcategories: "course" (course), diary (diary) 
+10/17/03   Following changes made to accomodate new Vital magazine:
+	   Created new element PRF (profession - e.g. Dental Nurse) and allowed within %ADDRESS;
+	   Created new categories: "strle" (Star Letter), onyrft (On Your Feet), clin (Clinical), lstwrd (Last Word)
+	   Created new subcategories: "mp" (Marketplace), "crsswrd" (Crossword), "lstwrd" (Last Word) 
+	   Created new attribute "placement" on BX with types of either "internal" or "external" (external being default) for boxes that appear on the internal article page, not a separate external box page.
+	   Added ADDRESS to CONTACT to accomodate lists of address and contact info 
+10/01/03   Extracted %CATEG and %SUBCAT and placed in external file called  NPGCATEG.MOD.  
+09/16/03   Made TBLIMG optional within %tabl.
+09/16/03   Created 17 subject codes for EMBO journal. These codes will be values for the CODE attribute on the SUBJECT element:
+
+	   Embocode-1	Development
+	   Embocode-2	Proteins
+ 	   Embocode-3	Immunology
+	   Embocode-4	Cellular Metabolism
+	   Embocode-5	Neuroscience
+	   Embocode-6	Signal Transduction
+	   Embocode-7	Plant Biology
+	   Embocode-8	Cell Cycle
+	   Embocode-9	Structural Biology
+	   Embocode-10	Differentiation &amp; Death
+	   Embocode-11	Computational Biology
+	   Embocode-12	Membranes &amp; Transport
+	   Embocode-13	Genome Stability &amp; Dynamics
+	   Embocode-14	Microbiology &amp; Pathogens
+	   Embocode-15	Chromatin &amp; Transcription
+	   Embocode-16	Molecular Biology of Disease
+	   Embocode-17	RNA
+
+09/08/03   Add new CATEG IDs for Nature Reviews Microbiology: gw (Genome Watch) and dw (Disease Watch).
+09/02/03   Created new optional element SUBFIG within FIG for single figures made up of multiple graphics. SUBFIG is an 
+	   empty element and carries the ENTNAME and TYPE attributes.
+09/02/03   Added optional NUMBER attribute to BXTITLE for print purposes.
+08/25/03   Added optional DOI to SUPPFM (as in PUBFM).
+08/20/03   Created new optional element SHORTATL for shortened version of the article title. Used when ATL is too long for certain
+	   uses. E.g. EMBO J contains list of article titles, shortened article titles are preferred when full title is overly long.
+07/15/03   Removed all EXT-ID attributes from COMPANY and PROD
+	   Changed all INT-ID attributes on COMPANY and PROD to ID
+	   Added required ID attribute to BRANDNAME.
+	   Added optional NAME attribute to PROD to hold full product name when product name in body text is ambiguous.
+07/10/03   Created following new CATEG IDs for EMBO journal:
+	   member review 'memrv'
+	   medal review 'medrv'
+	   EMBO workshop report 'ewr'
+	   EMBO members review 'emr'
+	   New member review 'nmr'
+	   New EMBO members review 'nemr'
+	   EMBO conference report 'ecr'
+06/19/03   Created new CATEG ID "conc" for Nature category "Concepts". Was previously a CATEGTXT value.
+06/12/03   Changed ID attribute on PROD and COMPANY to INT-ID for "internal" pre-processed biocompare Ids/EXT-ID for 
+	   "external" post-processed biocompare Ids.
+	   Changed COMPANYID attribute to INT-COMPID on PROD for "internal" pre-processed biocompare Id references/EXT-COMPID for 
+	   "external" post-processed biocompare Ids.
+	   For the new subject Broad Areas and Sub Classifications for nature papers, created the following allowable values
+	   for the CODE attribute on SUBJECT:
+	   
+	   natcode-1 = Biology
+	   natcode-2 = Biochemistry
+	   natcode-3 = Bioinformatics
+	   natcode-4 = Biophysics
+	   natcode-5 = Biotechnology
+	   natcode-6 = Cancer Research/ Oncology
+	   natcode-7 = Cardiovascular Biology
+	   natcode-8 = Cell Biology
+	   natcode-9 = Conservation Biology
+	   natcode-10 = Development
+	   natcode-11 = Drug Discovery
+	   natcode-12 = Ecology
+	   natcode-13 = Evolution
+	   natcode-14 = Genetics
+	   natcode-15 = Genomics
+	   natcode-16 = Immunology
+	   natcode-17 = Medicine
+	   natcode-18 = Microbiology
+	   natcode-19 = Molecular Biology
+	   natcode-20 = Neurosciences
+	   natcode-21 = Proteomics
+	   natcode-22 = Pharmacology
+	   natcode-23 = Physiology
+	   natcode-24 = Plant Science
+	   natcode-25 = Structural Biology
+	   natcode-26 = Palentology
+	   natcode-27 = Physics
+	   natcode-28 = Astronomy
+	   natcode-29 = Materials
+	   natcode-30 = Chemistry
+	   natcode-31 = Earth and Environmental Sci
+	   natcode-32 = Engineering/Applied Physics
+	   natcode-33 = No paid
+
+	   In addition to above, also created new element SUBCLASS with required attribute CLASS for nature sub classifications:
+	   
+	   natclass-1 = Amino Acids
+	   natclass-2 = Antibodies
+	   natclass-3 = Antisense
+	   natclass-4 = Apoptosis
+	   natclass-5 = Cell/Tissue Culture
+	   natclass-6 = Chromatography
+	   natclass-7 = Crystallography/ NMR
+	   natclass-8 = Cryogenics/Vacuum Equipment
+	   natclass-9 = Cytokines
+	   natclass-10 = Diagnostics
+	   natclass-11 = Cloning
+	   natclass-12 = DNA Polymerase
+	   natclass-13 = DNA Sequencing
+	   natclass-14 = Electrophoresis
+	   natclass-15 = Fluorometry
+	   natclass-16 = Functional Genomics
+	   natclass-17 = Gene Expression
+	   natclass-18 = Gene Therapy
+	   natclass-19 = Genotyping
+	   natclass-20 = High Throughput Screening (HTS)
+	   natclass-21 = HPLC Analysis tools
+	   natclass-22 = Image Analysis
+	   natclass-23 = Immunoassays
+	   natclass-24 = Lab Automation
+	   natclass-25 = Lasers/Optics
+	   natclass-26 = Mass Spectrometry
+	   natclass-27 = Microarrays
+	   natclass-28 = Microscopy
+	   natclass-29 = Nucleic Acids
+	   natclass-30 = Oligonucleotides
+	   natclass-31 = PCR
+	   natclass-32 = Peptide Mapping & Sequencing
+	   natclass-33 = Pharmacogenomics
+	   natclass-34 = Protein Expression
+	   natclass-35 = Recombinant Proteins
+	   natclass-36 = RNAi
+	   natclass-37 = Scientific Software
+	   natclass-38 = Sequencing
+	   natclass-39 = Signal Transduction
+	   natclass-40 = SNP
+	   natclass-41 = Thermocyclers
+	   natclass-42 = Transfection
+	   
+05/27/03   Created new CATEG ID "opcom" for nbt category "Opinion and Comment".	
+05/05/03   Allowed LIST within LI
+04/30/03   Removed FN from TGROUP (CalsTbl.dtd)
+	   Allowed FN within ENTRY
+04/29/03   Added file attribute to illus, fig and mathimg (print purposes)
+	   Added number attribute to bibr, bib, figtl, caption, table (print purposes)
+	   Removed all instances of LISTR, removed LIST from OBJECTS and BOX, allowed LIST within P
+	   Created sew SUBCATEG ID "le" for NBT sub category "Letters"
+	   Created sew CATEG ID "nvb" for Nature category "News & Views in Brief"
+	   
+04/04/03   Created new CATEG ID "ba" for Nature category "Books and Arts".
+03/26/03   Removed GROUPWRAP, created new element called GROUP and added it to AUG within the AU | CAU selection. 
+	   Inside of GROUP there is the option of a nested group or a GROUPTTL followed by optional GROUPTXT and AUs or CAUs.
+
+2/06/03    Created the following new CATEG IDs for new Research Journal redesign:
+	   "tr" (Technology Reports)
+	   "swr" (Software Review)
+	   "thtr" (Theater Review)
+	   "jr" (Journal Review)
+	   "multr" (Multimedia Review)
+	   "tvr" (Television Review)
+	   "pro" (Profile)
+	   "hc" (Historical Commentary)
+	   "biov" (Biovision)
+	   "spfwd" (Sponsor's Foreword)
+	   "timeln" (Timeline)
+	   
+	   And the following new SUBCATEG IDs:
+	   "nbr" (News in Brief)
+	   "nf" (News Feature)
+  	   "rnts" (Research Notes)	   
+    	   "nvf" (News and Views Feature)
+  	   "pe" (Perspective)
+     	   "bc" (Brief Communications)
+      	   "cg" (Corrigenda)
+       	   "add" (Addenda)
+       	   "ret" (Retraction)
+       	   
+1/22/03    Created new SUBCATEG ID "pro" for EMBO article type "Profile".
+12/30/02   Created new CATEG ID "lfln" for NRD article feature "Lifeline".
+12/06/02   Created new CATEG ID "fpln" for new NRD article type "Fresh from the pipleline". Will be featured in each issue 
+	   from Jan 2003 onwards.
+11/14/0    Added new DOI element to PUBFM to hold entire DOI for the article. DOI will no longer be auto-generated.
+10/09/02   Created the following new categories (%categ;) for EMBO Reports: "ss" (Science and Society), 
+	   "sr" (Scientific Reports). 
+	   
+	   Created the following new sub categories (%subcat;) for EMBO REPORTS: "qf" (Quite Frankly), "vp" (Viewpoint), "intvw" (Interview), "mr" (Meeting Report), "lr" (Literature Report), "con" 
+	   (Concept), "rvs" (Reviews), "crg" (Corrigendum).
+	   
+	   Added new element PULLQUOTER (pullquote reference) to %EMPTYREF;. PULLQUOTER is an empty 
+	   placeholder element which is used to reference a PULLQUOTE in EMBO Reports via the RID
+	   attribute. RID naming convention is "PQ#".
+	   
+	   Added new element PULLQUOTE (pull quote) to OBJECTS. PULLQUOTE is used to contain floating, 
+	   quoted text in EMBO Reports and is the target for PULLQUOTER via the ID attribute. ID naming 
+	   convention is "PQ#".
+	   
+09/19/02   Allowed %FONTCHG; within PROD, COMPANY and BRANDNAME to accomodate changes in text display.
+08/27/02   Added new SUBCAT ID "prog" for "Progress" articles in Nature Materials.
+08/20/02   Added the attribute "extrefid" to the element CITE for citations that refer to articles that share a page with other articles. Because the automatic link creation process is based largely on cited page numbers, the builder can't identify which article the citation is referring to when more than one article exists on that page. In these cases, the builder will generate a messsage reporting the ambiguous citation and the electronic  production can then supply the UID of the target article as the value of the extrefid attribute.
+08/20/02   Changed attribute "nmatcode" to "code" as these subjects will not be used exclusively for Nature Materials and 
+	   may appear in future titles.
+08/20/02   Added new CATEG ID "ethicsw" for "Ethics Watch" category in Nature Reviews Genetics.
+08/14/02   Added new CATEG ID "thismo" for "This Month" category which will appear in Nature Materials.
+07/19/02   Added the new element SUBJECT to PUBFM and SUPPFM to accomodate Nature Materials "subjects". SUBJECT contains 		   NMATCODE attribute with possible numerical values of 1-30 which are translated by the HTML builders to the 	   	   appropriate subject heading:
+
+		nmatcode-1 = Metals & alloy
+		nmatcode-2 = Ceramics
+		nmatcode-3 = Composites
+		nmatcode-4 = Glasses
+		nmatcode-5 = Colloids
+		nmatcode-6 = Liquid crystals
+		nmatcode-7 = Polymers
+		nmatcode-8 = Complex fluids
+		nmatcode-9 = Biological materials
+		nmatcode-10 = Biomedical materials
+		nmatcode-11 = Structural materials
+		nmatcode-12 = Electronic materials
+		nmatcode-13 = Molecular electronics
+		nmatcode-14 = Semiconductors
+		nmatcode-15 = Optical, photonic and optoelectronic materials
+		nmatcode-16 = Magnetic materials
+		nmatcode-17 = Superconductors
+		nmatcode-18 = Geomaterials 
+		nmatcode-19 = Mechanical properties
+		nmatcode-20 = Granular materials and particle technology
+		nmatcode-21 = Catalytic materials
+		nmatcode-22 = Separation materials
+		nmatcode-23 = Sensors and biosensors
+		nmatcode-24 = Materials for energy
+		nmatcode-25 = Nanoscale materials 
+		nmatcode-26 = Porous materials 
+		nmatcode-27 = Surface and thin films
+		nmatcode-28 = Design synthesis and processing
+		nmatcode-29 = Characterisation and analytical techniques
+		nmatcode-30 = Computation, modelling and theory
+
+07/18/02   	Created new element KEYWORDGRP for keywords within Nature materials articles. These keywords will be used for web 
+	   	searches and transferred to META tags upon HTML translation. KEYWORDGRP is made up of one or more KEYWORD and is 		   optionally allowed within PUBFM and SUPPFM.
+07/18/02   	Added the following new id to %SUBCAT; for repeatedly used subcategory in Nature Materials: matwit ("Materials 		   Witness")
+
+07/09/02   	Added the following new ids to %CATEG for repeatedly used categories: bks (Book Review), brn (Business and 
+	   	Regulatory News), highlts (Highlights), natview (Naureview), iniss (In this Issue), trialw (Trial Watch), 
+	   	stw (Structure Watch), pw (Patent Watch), couch (From the Analyst's Couch), hyp (Hypothesis), ru (Round-up), 
+		pa (Poster Abstracts), nf (News Feature).
+	        Added the following new ids to %SUBCAT for repeatedly used sub categories: an (Analysis), fc (Fool's Corner), 
+		ib (In Brief), nm (New On the Market)
+07/03/02   	Created new elements COMPANY, PROD and BRANDNAME within %DATA; to facilitate Bio Compare linking 		project.COMPANY requires "id" atttribute which acts as target for required "companyid" attribute on PROD.
+06/12/02   	Created new attribute TYPE on element ISSN. Possible values are "electronic" and "print". Made ISSN 'one or 
+		more' 
+	   	within PUBFM, PARENT and PUBINFO. Changes were made to support "dual issn's" - print and electronic - 		currently being used for the Reviews and eventually the Research titles and Nature.
+05/29/02 	All default attribute values were quoted as per XML requirements.
+		
+		XML does not support tag minimizations (Unclosed start-tags, Unclosed end-tags etc.) All instances of "- -" "- o" "o o" "o -" were removed.
+		XML does not support NUMBER(S), NUTOKEN, CDATAS and NAME type attribute values. These were all replaced with CDATA.
+		
+		XML does not support SDATA entitities. SDATA removed from Nataminc SGML Entities
+		
+		XML does not support inline comments within an entity declaration. Inline comments were placed outside in external comments.
+		
+		XML does not support Exclusion models. E.g. In the CalsTbl.dtd: <!ELEMENT table (%tabl;)   -(table) >. All Exclusions were removed.
+		
+		Processing instruction <?SDATRANS> was removed as XML requires default attributes to be a literal value.
+		
+		XML does not allow spaces within attribute values as within the SDAFORM, SDARULE, SDAPREF, SDASUFF, SDASUSP attributes in ISO Math dtd. Any spaces were removed. Commented out definitions and uses of SDAFORM, SDARULE, SDAPREF, SDASUFF, SDASUSP as they are not used for NPG
+		
+		XML imposes rules on Mixed Content Models. #PCDATA must occur first in list of unordered elements. Revised mixed content models accordingly.
+		
+		XML syntax for defining parameter entities for elements cannot contain parenthesis. Parenthesis removed.
+
+-->
+<!-- ===================================================================== -->
+<!--    PUBLIC DOCUMENT TYPE DEFINITION SUBSET                             -->
+<!-- ===================================================================== -->
+<!-- Typical invocation:
+
+<!DOCTYPE article PUBLIC "-//NatureAmerica//DTD article//EN">
+
+-->
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!--        ISO Character Entity Set Declarations and References           -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!ENTITY % ISOnum PUBLIC "ISO 8879:1986//ENTITIES  Numeric and Special Graphic//EN" "XML_entities/ISOnum.ent">
+<!ENTITY % ISOpub PUBLIC "ISO 8879:1986//ENTITIES  Publishing//EN" "XML_entities/ISOpub.ent">
+<!ENTITY % ISOtech PUBLIC "ISO 8879:1986//ENTITIES  General Technical//EN" "XML_entities/ISOtech.ent">
+<!ENTITY % ISOdia PUBLIC "ISO 8879:1986//ENTITIES  Diacritical Marks//EN" "XML_entities/ISOdia.ent">
+<!ENTITY % ISOlat1 PUBLIC "ISO 8879:1986//ENTITIES  Added Latin 1//EN" "XML_entities/ISOlat1.ent">
+<!ENTITY % ISOlat2 PUBLIC "ISO 8879:1986//ENTITIES  Added Latin 2//EN" "XML_entities/ISOlat2.ent">
+<!ENTITY % ISOamso PUBLIC "ISO 8879:1986//ENTITIES  Added Math Symbols: Ordinary//EN" "XML_entities/ISOamso.ent">
+<!ENTITY % ISOamsa PUBLIC "ISO 8879:1986//ENTITIES  Added Math Symbols: Arrow Relations//EN" "XML_entities/ISOamsa.ent">
+<!ENTITY % ISOamsb PUBLIC "ISO 8879:1986//ENTITIES  Added Math Symbols: Binary Operators//EN" "XML_entities/ISOamsb.ent">
+<!ENTITY % ISOamsc PUBLIC "ISO 8879:1986//ENTITIES  Added Math Symbols: Delimiters//EN" "XML_entities/ISOamsc.ent">
+<!ENTITY % ISOamsn PUBLIC "ISO 8879:1986//ENTITIES  Added Math Symbols: Negated Relations//EN" "XML_entities/ISOamsn.ent">
+<!ENTITY % ISOamsr PUBLIC "ISO 8879:1986//ENTITIES  Added Math Symbols: Relations//EN" "XML_entities/ISOamsr.ent">
+<!ENTITY % ISOgrk1 PUBLIC "ISO 8879:1986//ENTITIES  Greek Letters//EN" "XML_entities/ISOgrk1.ent">
+<!ENTITY % ISOgrk2 PUBLIC "ISO 8879:1986//ENTITIES  Monotoniko Greek//EN" "XML_entities/ISOgrk2.ent">
+<!ENTITY % ISOgrk3 PUBLIC "ISO 8879:1986//ENTITIES  Greek Symbols//EN" "XML_entities/ISOgrk3.ent">
+<!ENTITY % ISOgrk4 PUBLIC "ISO 8879:1986//ENTITIES  Alternative Greek Symbols//EN" "XML_entities/ISOgrk4.ent">
+<!ENTITY % ISOcyr1 PUBLIC "ISO 8879:1986//ENTITIES  Russian Cyrillic//EN" "XML_entities/ISOcyr1.ent">
+<!ENTITY % ISOcyr2 PUBLIC "ISO 8879:1986//ENTITIES  Non-Russian Cyrillic//EN" "XML_entities/ISOcyr2.ent">
+<!ENTITY % ISObox PUBLIC "ISO 8879:1986//ENTITIES  Box and Line Drawing//EN" "XML_entities/ISObox.ent">
+%ISOnum;%ISOpub;%ISOtech;%ISOdia;%ISOlat1;%ISOlat2;%ISOamso;%ISOamsa;%ISOamsb;%ISOamsc;%ISOamsn;%ISOamsr;%ISOgrk1;%ISOgrk2;%ISOgrk3;%ISOgrk4;%ISOcyr1;%ISOcyr2;%ISObox;
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- Special Nature America Character Entity Set Declaration and Reference -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!ENTITY % nataminc SYSTEM "XML_entities/nataminc_x.ent">
+%nataminc;
+<!NOTATION AVI SYSTEM "">
+<!NOTATION BMP SYSTEM "">
+<!NOTATION CDX SYSTEM "">
+<!NOTATION CIF SYSTEM "">
+<!NOTATION CSV SYSTEM ""> 
+<!NOTATION DOC SYSTEM "">
+<!NOTATION DOCM SYSTEM "">
+<!NOTATION DOCX SYSTEM "">
+<!NOTATION DOT SYSTEM "">
+<!NOTATION EPS SYSTEM "">
+<!NOTATION EXE SYSTEM "">
+<!NOTATION GIF SYSTEM "">
+<!NOTATION HTM SYSTEM "">
+<!NOTATION ICB SYSTEM "">
+<!NOTATION JDX SYSTEM "">
+<!NOTATION JPG SYSTEM "">
+<!NOTATION MOL SYSTEM "">
+<!NOTATION MOV SYSTEM "">
+<!NOTATION MPG SYSTEM "">
+<!NOTATION OLE SYSTEM "">
+<!NOTATION PDB SYSTEM "">
+<!NOTATION PDF SYSTEM "">
+<!NOTATION PICT SYSTEM "">
+<!NOTATION PNG SYSTEM "">
+<!NOTATION PPT SYSTEM "">
+<!NOTATION PPTM SYSTEM "">
+<!NOTATION PPTX SYSTEM "">
+<!NOTATION PS SYSTEM "">
+<!NOTATION QT SYSTEM "">
+<!NOTATION RA SYSTEM "">
+<!NOTATION RV SYSTEM "">
+<!NOTATION RTF SYSTEM "">
+<!NOTATION SDF SYSTEM "">
+<!NOTATION SWF SYSTEM "">
+<!NOTATION TEX SYSTEM "">
+<!NOTATION TGZ SYSTEM "">
+<!NOTATION TIFF SYSTEM "">
+<!NOTATION TXT SYSTEM "">
+<!NOTATION WAV SYSTEM "">
+<!NOTATION WMF SYSTEM "">
+<!NOTATION WP SYSTEM "">
+<!NOTATION XLS SYSTEM "">
+<!NOTATION XLSM SYSTEM "">
+<!NOTATION XLSX SYSTEM "">
+<!NOTATION XML SYSTEM "">
+<!NOTATION ZIP SYSTEM "">
+<!--For use when entity format is not known-->
+<!NOTATION ITEM SYSTEM "">
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- Special Nature Publishing Group Article Categories 		   -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- REMOVED 26/07/2010
+<!ENTITY % npgcateg PUBLIC "-//NPG//ENTITIES NPG Article Categories//EN" "npgcateg.mod">
+%npgcateg;
+-->
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- Special Nature Publishing Group NON Character Entities 		   -->
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!ENTITY % npgnonchars PUBLIC "-//NPG//ENTITIES NPG NON Character//EN" "npgnonchars.ent">
+%npgnonchars;
+
+<!ENTITY  % straight-text    "#PCDATA | lang | encoding | character">
+<!ENTITY % entityref "annotation-ref | named-entity">
+
+<!ENTITY % fontchng "i | b | bi | un | sc | up | sl | du | ov | super | sup | sub | uc">
+<!ENTITY % plain-text "%straight-text; | %fontchng; | %entityref;">
+<!--Note: Except in Kanjii edition, always use <super>, not <sup>, in text.-->
+<!ENTITY % controls "newline | separate | align">
+<!ENTITY % emptyref "bibr | illusr | pullquoter | imager | chemimgr">
+<!ENTITY % textref "ancref | bibrinl | bxr | coder | deflistr | fdr | figr | fnr | fr | illorinl | infographicr | mediar | tablr | compoundr | schemer | ext-mediar | slideshowr | secr | %entityref;">
+<!ENTITY % refs "%emptyref; | %textref;">
+<!ENTITY % links "natlink | sir | cir | url | weblink | xnav | xref">
+<!ENTITY % data "%straight-text; | %fontchng; | %controls; | %refs; | %links; | accession | anchor | email | company | prod | brandname | term | scientific | code | geneseq | proteinseq">
+<!ENTITY % author "%data; | fnm | snm | suff | ttl | inits | auid">
+<!ENTITY % address "%data; | org | street | cty | co | st | zip | cny | prf">
+
+<!ENTITY % tabl "(title?, caption?, tgroup*, tblimg*, slide?, credit?)" >
+
+<!-- entities %text; and %data; are synonymous -->
+<!ENTITY % text "%data;">
+
+<!-- entity entry defines the elements allowed within table <entry> element -->
+<!ENTITY % entry "%data; | f | fd | fn">
+
+<!-- entity reftxt contains elements used in citations, in <cite> and <bib><reftxt> -->
+<!ENTITY  % reftxt    "%data; | refau | jtl | atl | btl | iid | vid | ppf | ppl | cd | medline | f | fd | refdoi | pubdate | doc-id | article-number | contact">
+
+<!-- entity refchars lists the characters used for intra-article cross-linking -->
+<!ENTITY % refchars "(asterisk | dagger | ddagger | section | dblvbar | para | pound | star | twoast | twodag | twoddag | twosect | twodblv | twopara | twopound | twostar | integral)">
+
+
+                         
+                         
+<!-- The correspondence of 'refchar' values to ISO character entities is shown
+ in the following table. 'refchar' values are listed in the sequence in which
+ they are normally used.
+          asterisk   &ast;      (asterisk)
+          dagger     &dagger;   (dagger)
+          ddagger    &Dagger;   (double dagger)
+          section    &sect;     (section symbol)
+          dblvbar    &par;      (parallel symbol)
+          para       &para;     (paragraph symbol from %ISOtech;)
+          pound      &num;      (the "#" symbol)
+          star       &star;     (outline star)
+          twoast     &ast;&ast;
+          twodag     &dagger;&dagger;
+          twoddag    &Dagger;&Dagger;
+          twosect    &sect;&sect;
+          twodblv    &par;&par;
+          twopara    &para;&para;
+          twopound   &num;&num;
+          twostar    &star;&star;
+          integral   &int;      (integral symbol)
+ Following "integral", the numbers 1, 2, etc. have been used. NOTE, however,
+ that numbers were removed from %refchars; on 1/11/00. -->
+<!-- The following notation values denote the format of the Supplementary Object or document. If the format is not known at time of conversion, choose "unknown" -->
+<!ENTITY % notation "(avi | bmp | c | cdx | cif | csv | default | doc | docm | docx | dot | eps | exe | gif | htm | html | icb | item | jdx | jpeg | jpg | mol | mov | mp4 | mp3 | mpg | noa | ole | pdb | pdf | pict | png | pps | ppt | pptm | pptx | ps | qt | ra | rtf | rv | sbml | sdf | sif | swf | tar | tex | tgz | tiff | timeline | txt | wav | wmf | wmv | wp | xls | xlsm | xlsx | xml | zip | unknown)">
+
+<!ENTITY % figure-data "(csv | doc | docx | gif | jpeg | jpg | pdf | png | tiff | txt | xls | xlsx | xml | zip)">
+
+
+<!ENTITY % tocshow  "tocshow | toconly | notoc" >
+
+<!ENTITY % language "(eng | ger | kanji | spanish | hans | ar)">
+
+<!ENTITY % encoding-types "(base64 | none)">
+
+<!-- HR:  Glossary ID attribute used to link terms and keywords to NCP glossary database -->
+<!ENTITY % glossid "glossid CDATA #IMPLIED">
+
+<!-- HR: Stores common year, month, day attributes, all required -->
+<!ENTITY % dateatt     "year CDATA #REQUIRED	
+			month CDATA #REQUIRED
+			day CDATA #REQUIRED">
+			
+<!-- HR: Stores position attributes for illustration placement -->
+<!ENTITY % align-att "(left | right | center | external)">
+
+<!-- HR: Stores common keyword content used by kwd and keyword elements -->
+<!ENTITY % keyword "%data;">
+
+<!ENTITY % table SYSTEM "XML_Calstbl.dtd">
+%table;
+<!ENTITY % maths SYSTEM "XML_Isomath.dtd">
+%maths;
+
+<!-- HR: Author Paid model -->
+<!ENTITY % apmodel "default | bjpopen | by-nc-nd | by-nc-sa | by-nc | by-nd | by-sa | by" >
+
+<!ELEMENT article (entity-declarations?, (pubfm | suppfm), fm, bdy?, bm?, corr*)>
+<!ATTLIST article
+id CDATA #REQUIRED
+language %language; "eng"
+publish (issue | supp | aop | online | nfv | prototype | offline | retired | fav) "issue"
+relation (yes | no) "no"
+uid-replace CDATA #IMPLIED
+correstype (correspondence | response | reply) #IMPLIED
+origsrc (yes | no) "yes"
+guid CDATA #IMPLIED
+>
+
+<!-- Element to hold group of deprecated SGML Entity declarations -->
+<!ELEMENT entity-declarations (entity)+>
+
+<!-- Element to hold deprecated SGML Entity declarations -->
+<!ELEMENT entity EMPTY>
+<!-- Entity attribute ID to hold entity name, URL attribute to hold entity system path -->
+<!ATTLIST entity 
+                id  ID  #REQUIRED
+                url CDATA #IMPLIED>
+
+
+<!ELEMENT pubfm (jtl, vol?, iss?, idt?, artpubdt?, altlang?, conf?, section?, categ?, categtxt?, subcateg?, subcatxt?, subsubcateg?, subsubcatxt?, arthead?, artsubhead?, pp?, seq?, elocation?, cdn?, (issn+ | isbn), cpg, related-article*, article-link*, nvid*, xrespond*, xrelate*, errorcor*, suppinfo?, assoc-file*, patent?, chghst?, keywordgrp?, subject*, technique*, article-grouping?, indications*, channel*, subclass*, (careerstage | discipline | region | sector)*, doi?, altdoi*, mtsno?, licence*)>
+
+<!ELEMENT jtl (%data;)*>
+<!ELEMENT vol (#PCDATA)>
+<!ELEMENT iss (#PCDATA)>
+<!ATTLIST iss
+name CDATA #IMPLIED
+>
+<!-- ISS attribute 'name' to be used only within SUPPMAST. -->
+<!-- For DynaSite processing, the 'name' attribute will hold the directory name for the supplement. -->
+<!-- Example: <iss name="6763supp">Suppl</iss> -->
+<!ELEMENT idt (#PCDATA)>
+
+
+<!-- cloned element cvd from AJ DTD for Scientific American -->
+<!ELEMENT cvd  (#PCDATA)>
+<!ATTLIST cvd
+id 		ID 	   #IMPLIED
+year   	NMTOKEN  #IMPLIED
+month  	NMTOKEN  #IMPLIED
+day    	NMTOKEN  #IMPLIED >
+
+<!ELEMENT artpubdt (#PCDATA)>
+<!--Date of initial online article publication under "continuous publishing"
+ program.-->
+<!ELEMENT altlang (original?, altver+)>
+<!ELEMENT original EMPTY>
+<!ATTLIST original
+language %language; #REQUIRED
+extrefid CDATA #REQUIRED
+>
+<!ELEMENT altver EMPTY>
+<!ATTLIST altver
+language %language; #REQUIRED
+extrefid CDATA #REQUIRED
+>
+
+<!-- article categorisation elements -->
+
+<!ELEMENT section EMPTY>
+<!ATTLIST section
+id (departments | features | online | this-week | news-in-focus | comment | careers | research) #REQUIRED >
+
+
+<!ELEMENT categ EMPTY>
+<!ATTLIST categ
+id CDATA #IMPLIED
+code CDATA #IMPLIED
+>
+
+<!-- The element categtxt is deprecated from 26 July 2010 -->
+<!ELEMENT categtxt (#PCDATA)>
+
+<!ELEMENT subcateg EMPTY>
+<!ATTLIST subcateg
+id CDATA #IMPLIED
+code CDATA #IMPLIED
+>
+
+<!-- The element subcatxt is deprecated from 26 July 2010 -->
+<!ELEMENT subcatxt (#PCDATA)>
+
+<!ELEMENT subsubcateg EMPTY>
+<!ATTLIST subsubcateg
+id CDATA #REQUIRED
+>
+
+<!-- The element subsubcatxt is deprecated from 26 July 2010 -->
+<!ELEMENT subsubcatxt (#PCDATA)>
+
+<!ELEMENT 	arthead				(%data; | f)*>
+<!ATTLIST 	arthead 	tocshow 	(%tocshow;) 	"tocshow" 
+            code CDATA #IMPLIED
+>
+
+<!ELEMENT 	artsubhead				(%data; | f)*>
+<!ATTLIST 	artsubhead 	tocshow 	(%tocshow;) 	"tocshow" >
+
+<!ELEMENT pp (spn, epn, cnt)>
+<!ELEMENT spn (#PCDATA)>
+<!ELEMENT epn (#PCDATA)>
+
+<!-- HR: Sequence element for encorcing article order/sequence on the TOC when there are no page numbers (e.g. online-only content) -->
+<!ELEMENT seq (#PCDATA)>
+
+<!ELEMENT elocation (#PCDATA)>
+
+<!ELEMENT cnt (#PCDATA)>
+<!ELEMENT cdn (#PCDATA)>
+<!ELEMENT issn (#PCDATA)>
+<!ATTLIST issn
+type (electronic | print) "print"
+>
+<!ELEMENT cpg (cpy, cpn, cps?)>
+<!ELEMENT cpy (#PCDATA)>
+<!ELEMENT cpn (#PCDATA)>
+<!ELEMENT cps (#PCDATA)>
+
+<!ELEMENT related-article (%data;)* >
+<!ATTLIST related-article
+  id   ID  #IMPLIED
+  extrefid  CDATA #REQUIRED
+  extrefid-type (uri | doi | local-path) "doi"
+  related-article-type (protocol | is-correction-to | is-corrigendum-to | is-erratum-to | is-retraction-to | is-addendum-to | is-response-to | is-comment-to | is-news-and-views-to | is-research-highlight-to | is-related-to | is-protocol-to | has-protocol | is-protocol-update-to | has-protocol-update) #REQUIRED
+>
+
+<!ELEMENT article-link EMPTY>
+<!ATTLIST article-link
+  extrefid  CDATA #REQUIRED
+  link-type (recommended) #REQUIRED
+>
+
+<!ELEMENT nvid EMPTY>
+<!ATTLIST nvid
+extrefid CDATA #REQUIRED
+>
+<!ELEMENT xrespond EMPTY>
+<!ATTLIST xrespond
+extrefid CDATA #REQUIRED
+>
+<!--Used to establish links between an article and another that replies, or
+ responds, to it. Application is bi-directional, like NVID. XRESPOND may be
+ repeated as needed to specify relationships to more than one article.-->
+<!ELEMENT xrelate EMPTY>
+<!ATTLIST xrelate
+extrefid CDATA #REQUIRED
+>
+<!--Used to establish links between related articles in a single journal issue.
+ Application is bi-directional, like NVID. XRELATE may be repeated as needed to
+ specify relationships to more than one article.-->
+<!ELEMENT errorcor EMPTY>
+<!ATTLIST errorcor
+extrefid CDATA #REQUIRED
+type (erratum | correctn | retraction | addendum | corrig) #IMPLIED
+rid IDREF #IMPLIED
+>
+<!--Used to establish links between "Errata", "Corrections" and "Retractions" and the original
+ articles to which they relate.-->
+<!ELEMENT suppinfo (suppobj+)>
+<!ATTLIST suppinfo
+id ID #REQUIRED
+>
+<!ELEMENT suppobj (title?, descrip?, datafile*, ext-media?)>
+<!ATTLIST suppobj
+extrefid CDATA #IMPLIED
+url CDATA #IMPLIED
+format %notation; #REQUIRED
+type (audio | video) #IMPLIED
+filesize CDATA #IMPLIED
+>
+<!--Supp Info objects maintained within the NA system will be referenced
+ via FICI numbers, specified as the value of 'extrefid'. The path to Supp
+ Info objects maintained outside the system (e.g., at the author's website)
+ will be specified as the value of 'url'.-->
+<!--See DTD documentation for instructions regarding 'filesize' values.-->
+<!ELEMENT patent (#PCDATA)>
+<!ELEMENT descrip (p+)>
+
+<!ELEMENT assoc-file (title?, descrip?, weblink?)>
+<!ATTLIST assoc-file
+type CDATA #REQUIRED
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+>
+
+<!ELEMENT suppfm (suppmast, artpubdt?, altlang?, parent*, sponsor*, conf?, categ?, categtxt?, subcateg?, subcatxt?, subsubcateg?, subsubcatxt?, pp, suppinfo?, keywordgrp?, subject*, technique*, doi?, altdoi*, mtsno?, licence*)>
+<!ATTLIST suppfm
+supptype (reprint | review | advert | abstract | editorial) #REQUIRED
+>
+<!ELEMENT suppmast (jtl, suppttl, vol?, iss?, idt?)>
+<!ELEMENT suppttl (%data; | f)*>
+<!ELEMENT parent (jtl, vol?, iss?, idt?, issn+, cpg)>
+<!ELEMENT sponsor (%address;)*>
+<!ATTLIST sponsor
+type (com | org | gov | edu) "com"
+>
+<!ELEMENT org (%data; | oid)*>
+<!ELEMENT oid EMPTY>
+<!ATTLIST oid
+id ID #REQUIRED
+refchar %refchars; #IMPLIED
+>
+<!ELEMENT street (%data;)*>
+<!ELEMENT cty (%data;)*>
+<!ELEMENT co (%data;)*>
+<!ELEMENT st (%data;)*>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT cny (%data;)*>
+<!ELEMENT prf (%data;)*>
+<!ELEMENT conf (confname, (confdate | confenddate | confloc | confsponsor)*, contact?)>
+<!ELEMENT confname (%data;)*>
+<!ELEMENT session   (%data;)*>
+<!ATTLIST session  number CDATA #REQUIRED>
+<!ELEMENT confdate (%data;)*>
+<!ELEMENT confenddate EMPTY>
+<!ATTLIST confenddate	%dateatt;
+			time CDATA #IMPLIED>
+<!ELEMENT confloc (%data; | cty | st | cny)*>
+<!ELEMENT confsponsor (%data;)*>
+<!ELEMENT fm (sbt?, atl?, shortatl?, alt-title?, rvwinfo*, aui*, aug*, contributors?, aufn*, replyaug*, rvwaug?, hst?, (abs | stndfrst | websumm | execsumm | synopsis | highlts | edsumm)*, kwdg*)>
+
+<!ELEMENT sbt (%data;)*>
+<!ELEMENT atl (%data; | f | topic)*>
+<!ATTLIST atl
+display (show | hide) "show">
+<!ELEMENT alt-title (%data; | f | topic)*>
+<!ATTLIST alt-title
+type CDATA  #IMPLIED
+>
+
+<!ELEMENT topic (%data;)*>
+<!ATTLIST topic display (show | hide) "show" >
+<!--Used for authored "pretitle" in News and Views and Brief Communications.-->
+
+<!--SHORTATL contains shortened version of the article title. Used when ATL is too long for certain uses. -->
+<!ELEMENT shortatl (%data; | f)*>
+
+<!-- RVWINFO and RVWAUG are for use exclusively in book reviews/film reviews. -->
+<!ELEMENT rvwinfo (rvwpubt, pubinfo)>
+<!ATTLIST rvwinfo
+rid IDREF #IMPLIED
+type (new | ours | back | reg) "reg"
+>
+<!ELEMENT rvwpubt (%text;)*>
+<!ELEMENT pubinfo (%text; | pubedg | pubaug | pubg | brpubdate | bindcost | pages | illos | isbn | issn | series)*>
+<!ELEMENT pubedg (%text; | pubed)*>
+<!ELEMENT pubed (%author;)*>
+<!ELEMENT fnm (%data;)*>
+<!ELEMENT snm (%data;)*>
+<!ELEMENT autxt (%data;)*>
+<!ELEMENT suff (%data;)*>
+<!ELEMENT ttl (%data;)*>
+<!ELEMENT inits (%data;)*>
+<!ELEMENT pubaug (%text; | pubau)*>
+<!ELEMENT pubau (%author;)*>
+<!ELEMENT pubg (%text; | publshr | pubaddr)*>
+<!ELEMENT publshr (%text;)*>
+<!ELEMENT pubaddr (%address;)*>
+<!ELEMENT brpubdate (%text;)*>
+<!ELEMENT bindcost (%text; | price | binding)*>
+<!ELEMENT price (%text;)*>
+<!ELEMENT binding (%text;)*>
+<!ELEMENT pages (%text;)*>
+<!ELEMENT illos (%text;)*>
+<!ELEMENT isbn (#PCDATA)>
+<!ATTLIST isbn	country	(us | uk | jp) #IMPLIED
+		type (electronic | print) "print">
+<!ELEMENT series (%text;)*>
+<!ELEMENT aui (%author;)*>
+<!ELEMENT aug ((auname+) | ((au | cau | group)+, (aff | caff)*, disclmr?))>
+<!ATTLIST aug
+rid IDREF #IMPLIED
+>
+
+<!-- HR: Contributors element stemming from the dublin core metadata element of the same name which is used for significant contributors to the content, secondary to the main author/creator of the content (e.g. interviewer, interviewee, translator etc.) -->
+<!ELEMENT contributors (contributor+)>
+
+<!ELEMENT contributor (%author; | group | contributor-content | aff)*>
+<!-- HR: Optional role attribute to declare specific contributor role (e.g. interviewee). Leave attribute off if role is generic/unspecific. New roles can be created on as-needed basis -->
+<!ATTLIST contributor
+role CDATA #IMPLIED >
+
+<!ELEMENT contributor-content (p)+>
+
+<!-- HR: Group element for author consortiums. Groups normally contain group title and list of authors or nested group. Though sometimes 
+only the group/consortium name is provided -->
+<!-- contrib-level is now deprecated, now use role -->
+<!-- new attribute "role" to describe contribution of group to article, values of "author" and "contributor" allowed -->
+
+<!ELEMENT group (groupttl, grouptxt?, orf*, audeclr?, aufnr*, (group | au | cau)*)>
+<!ATTLIST group
+display-authors (yes | no) "yes"
+contrib-level (primary | secondary) "primary"
+role (author | contributor) "author"
+>
+
+<!ELEMENT groupttl (%data;)*>
+<!ELEMENT grouptxt (%data;)*>
+
+<!-- Use "x1", "x2" etc. as 'rid' values for correspondence to <corres>. -->
+<!ELEMENT aufn (%address;)*>
+<!ATTLIST aufn
+id ID #REQUIRED
+refchar %refchars; #IMPLIED
+>
+<!-- Added AUFN to be used in situations where information is placed in the AFF section which does not pertain to one more author's affiliations, such as straight PCDATA.  To be used in conjunction with AUFNR which will be where the PCDATA will be housed. -->
+<!ELEMENT auname (%author; | blogref | bio | role)*>
+<!--AUNAME to be used when an author has no affiliation.-->
+<!ELEMENT au (fnm?, snm, autxt?, suff?, ttl?, inits?, orf*, auid*, blogref?, aufnr*, audeclr?, role?, bio?, imager?)>
+<!ELEMENT orf EMPTY>
+<!ATTLIST orf
+rid IDREF #REQUIRED
+refchar %refchars; #IMPLIED
+>
+<!-- BLOGREF to be used to associate author with specific BLOGENTRY -->
+<!ELEMENT blogref EMPTY>
+<!ATTLIST blogref
+rid IDREFS #REQUIRED
+>
+<!ELEMENT aufnr EMPTY>
+<!ATTLIST aufnr
+rid IDREF #REQUIRED
+refchar %refchars; #IMPLIED
+>
+<!ELEMENT audeclr EMPTY>
+<!ATTLIST audeclr
+rid IDREF #REQUIRED
+refchar %refchars; #IMPLIED
+>
+
+<!ELEMENT role (%plain-text;)* >
+
+<!ELEMENT cau (fnm?, snm, autxt?, suff?, ttl?, inits?, orf*, corf*, auid*, aufnr*, audeclr?, blogref?, role?, bio?, imager?)>
+<!ELEMENT corf EMPTY>
+<!ATTLIST corf
+rid IDREF #REQUIRED
+refchar %refchars; #IMPLIED
+>
+<!ELEMENT aff (%address; | oid)*>
+<!ELEMENT caff (%address; | coid)*>
+<!ELEMENT coid EMPTY>
+<!ATTLIST coid
+id ID #REQUIRED
+refchar %refchars; #IMPLIED
+>
+
+<!ELEMENT auid EMPTY>
+<!ATTLIST auid
+    type CDATA #REQUIRED
+    id CDATA #REQUIRED > 
+
+<!ELEMENT replyaug (replyau+, (aff | caff)*)>
+<!ATTLIST replyaug
+rid IDREF #IMPLIED
+>
+<!ELEMENT replyau (fnm?, snm, autxt?, suff?, ttl?, inits?, (orf | corf)*)>
+<!ELEMENT rvwaug (%text; | au | cau | aff | caff)*>
+<!ELEMENT hst (created?, re?, rv?, acc?, misc?, pubdate*)>
+
+<!ELEMENT created EMPTY>
+<!ATTLIST created
+year CDATA #REQUIRED
+month CDATA #REQUIRED
+day CDATA #IMPLIED
+hour CDATA #IMPLIED
+minute CDATA #IMPLIED
+>
+
+<!ELEMENT re EMPTY>
+<!ATTLIST re 
+year CDATA #REQUIRED
+month CDATA #REQUIRED
+day CDATA #IMPLIED
+>
+<!ELEMENT rv EMPTY>
+<!ATTLIST rv
+year CDATA #REQUIRED
+month CDATA #REQUIRED
+day CDATA #IMPLIED
+>
+<!ELEMENT acc EMPTY>
+<!ATTLIST acc
+year CDATA #REQUIRED
+month CDATA #REQUIRED
+day CDATA #IMPLIED
+>
+<!ELEMENT misc (#PCDATA)>
+<!ATTLIST misc
+year CDATA #REQUIRED
+month CDATA #REQUIRED
+day CDATA #IMPLIED
+>
+<!ELEMENT pubdate EMPTY>
+<!ATTLIST pubdate
+type (aop | iss | online | nfv | embargo | fav) "iss"
+%dateatt;
+time CDATA #IMPLIED
+hour CDATA #IMPLIED
+minute CDATA #IMPLIED
+>
+<!ELEMENT chghst (chg)+>
+<!ELEMENT chg (chgperson?, chgdate, chgloc, chgmade, chgreason?)>
+<!ATTLIST chg
+chgtype (erratum | correctn | retraction | addendum | corr | web | sig | corrig | update | clarification | licence) #REQUIRED
+>
+<!ELEMENT chgperson (fnm, snm)>
+<!ELEMENT chgdate EMPTY>
+<!ATTLIST chgdate
+%dateatt;
+time CDATA #IMPLIED
+>
+<!ELEMENT chgloc (#PCDATA)>
+<!ELEMENT chgmade (%data;)*>
+<!ELEMENT chgreason (#PCDATA)>
+<!ELEMENT abs (p+)>
+<!ELEMENT p (%data; | f | fd | dformgrp | cite | contact | list)*>
+
+<!ELEMENT cite (%reftxt;)*>
+<!ATTLIST cite
+id ID #REQUIRED
+type CDATA  #IMPLIED
+extrefid  CDATA  #IMPLIED
+display (true | false) "true"
+>
+
+<!ELEMENT code (%plain-text; | %controls;)*>
+<!ATTLIST code 
+id ID #IMPLIED
+type CDATA #IMPLIED
+language CDATA #IMPLIED
+display (inline | block) "block"
+>
+
+
+<!ELEMENT refau (%data; | fnm | snm | suff | ttl | auid)*>
+<!ELEMENT btl (%data;)*>
+<!ELEMENT iid (%data;)*>
+<!ELEMENT vid (%data;)*>
+<!ELEMENT ppf (%data;)*>
+<!ELEMENT ppl (%data;)*>
+<!ELEMENT cd (#PCDATA)>
+<!ATTLIST cd
+year CDATA #REQUIRED
+month CDATA #IMPLIED
+day CDATA #IMPLIED
+>
+<!ELEMENT medline (#PCDATA)>
+<!-- HR: Display attribute was added to control display/suppression of REFDOIs in citations and references. Occasionally REFDOIs are 
+inserted force resolution of a citation/reference and are not part of the original text. These  would be suppressed/hidden. Otherwise, default rule is to Show -->
+<!ELEMENT refdoi (#PCDATA)>
+<!ATTLIST refdoi
+display (show | hide) "show">
+
+<!ELEMENT article-number (#PCDATA)>
+
+<!ELEMENT doc-id (#PCDATA)>
+
+<!ELEMENT contact (%data; | address | name | phone | fax | rsn)*>
+<!ELEMENT name (%data;)*>
+<!ELEMENT phone (%data;)*>
+<!ELEMENT fax (%data;)*>
+<!-- RSN stands for "Reader Service Number." -->
+<!ELEMENT rsn (%data;)*>
+<!ELEMENT stndfrst (%data;)*>
+<!--A "standfirst" is an article summary, *not* a true abstract, that appears
+ both in print and online.-->
+<!ELEMENT websumm (%data; | dateline)*>
+<!ATTLIST websumm
+type 	(toc | regular) "regular"
+>
+
+<!--A "web summary" is an article summary, usually an abridged version of the
+ first paragraph, restricted to online delivery.-->
+<!ELEMENT execsumm (p+)>
+<!--A "web summary" is an article summary, *not* a true abstract, restricted to online
+ delivery and used for the Nature Reviews series.-->
+<!ELEMENT synopsis (p+)>
+<!--A "synopsis" is an article overview, *not* a true abstract, restricted to online delivery and is not displayed on the full text article.-->
+<!ELEMENT highlts (p+)>
+<!--A "highlights" is a list of article highlights, restricted to online delivery and is only displayed with the synopsis, does not appear on the full text article -->
+<!ELEMENT edsumm (title, p+)>
+<!ATTLIST edsumm
+type 	(standfirst | regular) "regular"
+publish (issue | aop) "issue"
+>
+
+<!--A "editorial summary" is an article summary restricted to online delivery and is only displayed on the editorial summary page with the associated article(s), does not appear on the full text article -->
+
+<!ELEMENT kwdg (kwd+)>
+<!ATTLIST kwdg
+class CDATA #IMPLIED
+>
+<!ELEMENT kwd (%keyword;)*>
+<!ATTLIST kwd
+%glossid;
+>
+
+<!ELEMENT bdy ((greeting | fp | bio | dateline | illusr | chemimgr | quote)*, ((p | sec | crosshd | blogentry | mats | proc | intvw | quiz | ext-media)+ | (bkreview | flmreview | artsreview | exhibitreview)+ | corres+ | market)?, reply*, addendum?)>
+<!ELEMENT greeting (%data;)*>
+<!ELEMENT fp (p+)>
+<!ELEMENT bio (p | crosshd)+>
+<!ELEMENT crosshd (%data; | crossttl | f)*>
+<!ELEMENT crossttl  (%data; | f)*>
+<!-- "Blog Entry" used for Blog articles only -->
+<!ELEMENT blogentry (entrydate, title?, p+)>
+<!-- BLOGENTRY ID target for BLOGREF. Used to associate authors with individual blog entries. --> 
+<!ATTLIST blogentry
+id ID #IMPLIED
+>
+<!-- "Entry Date" used to log entry date and time of Blog entries -->
+<!ELEMENT entrydate EMPTY>
+<!ATTLIST entrydate
+%dateatt;
+daynum CDATA #REQUIRED
+time CDATA #IMPLIED>
+
+<!ELEMENT dateline (%text;)*>
+
+<!ELEMENT mats		(matsgrp)+>
+
+<!-- "matsec" added to allow subheadings within Reagents and Equipment XB-1234 -->
+<!ELEMENT matsgrp	(title, (critical | caution)*, (mat | matsec)+)>
+
+<!ELEMENT matsec (title, mat+)>
+
+<!ELEMENT mat		(p | critical | caution | timing | trouble)+>
+<!ATTLIST mat		caution (yes | no) "no">
+
+<!ELEMENT proc		((critical | caution)*, (procgrp | step)+, timing?) >
+
+<!ELEMENT procgrp	(title, (critical | caution)*, step+, timing?) >
+
+<!ELEMENT step		((p | pause | trouble | critical | caution | step)+, timing?)>
+
+<!ELEMENT critical	(p)+>
+
+<!ELEMENT trouble	((problem, solution)+ | (p+))>
+
+<!ELEMENT problem	(p)+>
+
+<!ELEMENT solution	(p)+>
+
+<!ELEMENT pause		(p)+>
+<!-- PD - added %data here -->
+<!ELEMENT timing	(%data; | timing)*>
+
+<!ELEMENT caution	(%data;)*>
+
+<!ELEMENT intvw		(qa-block)+>
+
+<!ELEMENT qa-block	(question, answer)>
+
+<!ELEMENT question	(p)+>
+
+<!ELEMENT answer	(p | crosshd)+>
+
+<!ELEMENT quiz		(qa-block)+>
+
+<!ELEMENT sec (sectitle, dateline?, (p | crosshd | online-methods | ext-media)*, (sec, (sec | ext-media)*)?)>
+<!ATTLIST sec
+level CDATA #REQUIRED
+id ID #IMPLIED
+type (excerpt) #IMPLIED
+>
+<!ELEMENT sectitle (%data; | f)*>
+
+<!-- HR: Online Methods section -->
+<!ELEMENT online-methods (p | sec)+>
+
+<!-- external media -->
+<!ELEMENT ext-media (meta)*> 
+
+<!ATTLIST ext-media 
+id ID #IMPLIED 
+type CDATA #REQUIRED 
+url CDATA #IMPLIED 
+> 
+
+<!ELEMENT bkreview (p+)>
+<!ATTLIST bkreview
+id ID #REQUIRED
+>
+<!-- HR:  Film review content -->
+<!ELEMENT flmreview (p+)>
+<!ATTLIST flmreview
+id ID #REQUIRED
+>
+
+<!-- HR:  Arts review content -->
+<!ELEMENT artsreview (p+)>
+<!ATTLIST artsreview
+id ID #REQUIRED
+type CDATA #IMPLIED
+>
+
+<!-- HR:  Exhibition review content -->
+<!ELEMENT exhibitreview (p+)>
+<!ATTLIST exhibitreview
+id ID #REQUIRED
+>
+
+<!ELEMENT corres (greeting?, pubdate, (p | crosshd)+, aug, bm?)>
+<!ATTLIST corres
+id ID #REQUIRED
+>
+<!-- Use "x1", "x2" etc. as 'id' values for correspondence to <aug>. -->
+<!ELEMENT market (crosshd | product)+>
+<!ELEMENT product (prodttl | contact | summary | prddescr)+>
+<!-- Alternately, SUMMARY could be moved from PRODUCT to PRDDESCR. -->
+<!ELEMENT prodttl (%text;)*>
+<!ELEMENT summary (%text;)*>
+<!ELEMENT prddescr (p+)>
+<!ELEMENT reply (greeting?, (p | crosshd)+, bm?)>
+<!ATTLIST reply
+id ID #IMPLIED
+>
+<!ELEMENT addendum (crosshd?, p+)>
+<!ELEMENT bm (endnote*, objects?, annotations?, accesgrp?, data-citations?, ack?, audecl*, app?, author-info?, bibl?, vita?)>
+<!ELEMENT endnote (%text; | p)*>
+<!--Floating Elements -->
+<!ELEMENT objects (table | fig | illus | image | infographic | deflist | bx | notes | linkgrp | media | pullquote | scheme | compound | chemimg | ext-media | slideshow)*>
+
+<!ELEMENT slideshow (title?, caption?, (fig | illus | infographic)+) >
+<!ATTLIST slideshow id ID #REQUIRED >
+
+<!ELEMENT fig (subfig*, slide?, datafile*, figtl?, caption?, figfn?, credit?)>
+<!ATTLIST fig
+id ID #REQUIRED
+type %notation; "bmp"
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+file CDATA #IMPLIED
+fig-type (box-figure | suppinfo) #IMPLIED
+>
+
+<!ELEMENT subfig    EMPTY>
+<!ATTLIST subfig    type  %notation; "bmp"
+                    entname  CDATA  #IMPLIED
+                    entref IDREF #IMPLIED>                    
+
+<!ELEMENT slide	EMPTY>
+<!ATTLIST slide	entname CDATA #IMPLIED
+                entref IDREF #IMPLIED>
+
+<!ELEMENT datafile (label?)>
+<!ATTLIST datafile type %figure-data; "xls"
+                    datafile-type (figure-data | interactive) "figure-data"
+                    url CDATA #IMPLIED
+                    entname CDATA #IMPLIED
+                    entref IDREF #IMPLIED>
+
+
+<!ELEMENT figtl (%data; | f)*>
+<!ATTLIST figtl number CDATA #IMPLIED>
+<!ELEMENT caption (p+)>
+<!ATTLIST caption number CDATA #IMPLIED>
+<!ELEMENT figfn (%data;)*>
+<!ELEMENT credit (%data;)*>
+
+<!ELEMENT illus (title?, caption?, credit*, url?, image-alt?, alt-image*)>
+
+<!ATTLIST illus
+id ID #REQUIRED
+type %notation; "bmp"
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+embed (yes | no) "yes"
+file CDATA #IMPLIED
+display (print-only | online-only | print-online) "print-online"
+illus-type (illustration | infographic) "illustration"
+>
+
+<!-- new element alt-image to hold alternative versions (normally different sizes) of the parent image
+   it inherits the other properties (title, caption, credit, url, image-alt) from its parent -->
+
+<!ELEMENT alt-image EMPTY>
+<!ATTLIST alt-image
+type %notation; "bmp"
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+relation (full-size | thumbnail) #REQUIRED
+>
+
+<!ELEMENT image (caption?, url?, image-alt?)>
+<!ATTLIST image 
+role (sponsor | product) #IMPLIED
+type %notation; "bmp"
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+>
+
+<!ELEMENT image-alt (#PCDATA)>
+
+<!ELEMENT infographic (title?, caption?, credit*)>
+<!ATTLIST infographic
+id ID #REQUIRED
+type %notation; "bmp"
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+file CDATA #IMPLIED
+>
+
+<!ELEMENT list (li+)>
+<!ATTLIST list
+id ID #REQUIRED
+type (bullet | number | ucletter | lcletter | ucroman | lcroman) "bullet"
+>
+<!ELEMENT li (%data; | cite | f | list | critical | trouble | caution | pause | timing)*>
+<!ELEMENT deflist (listttl?, (term, defn)+)>
+<!ATTLIST deflist
+id ID #REQUIRED
+type (unenum | bullet | balbox | number | lcletter) "unenum"
+name (glossary) #IMPLIED
+sepch CDATA " "
+colwd CDATA "1 5"
+>
+<!--From ARTCOL.DTD: Use 'sepch' to specify a character between TERM and DEFN.
+ Use 'colwd' to specify relative TERM/DEFN column widths.-->
+<!ELEMENT listttl (%data; | f)*>
+<!ELEMENT term (%data; | f | fd)*>
+<!ATTLIST term
+%glossid;
+>
+<!ELEMENT defn (p+)>
+<!ELEMENT bx (bxtitle?, stndfrst?, (p | deflist | illus | table | critical | trouble | caution | pause | timing)+, byline?)>
+<!ATTLIST bx
+        id ID #REQUIRED
+        placement (internal | external) "external"
+        type (bio | reg) "reg"
+>
+
+<!ELEMENT bxtitle (%data; | f)*>
+<!ATTLIST bxtitle number CDATA #IMPLIED>
+<!ELEMENT byline (%data;)*>
+<!ELEMENT notes (fn+)>
+<!ELEMENT linkgrp (linkset+)>
+<!ELEMENT linkset (weblink+ | linksubset+)+>
+<!ATTLIST linkset
+name CDATA #IMPLIED
+>
+<!ELEMENT linksubset (weblink+)>
+<!ATTLIST linksubset
+name CDATA #IMPLIED
+>
+<!ELEMENT media (figtl?, caption?, figfn?, credit?, illus?, code*)>
+<!ATTLIST media
+id ID #REQUIRED
+type %notation; #IMPLIED
+height CDATA #IMPLIED
+width CDATA #IMPLIED
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+>
+
+<!ELEMENT quote (%data; | statedby | aff)*>
+<!ATTLIST quote
+id ID #IMPLIED
+type CDATA #REQUIRED
+>
+
+<!ELEMENT pullquote (%data; | statedby | aff)*>
+<!ATTLIST pullquote id ID #REQUIRED>
+
+<!ELEMENT statedby (#PCDATA)>
+
+<!-- HR: Scheme -->
+<!ELEMENT scheme (schemetl?, caption?)>
+<!ATTLIST scheme
+id ID #REQUIRED
+type %notation; "bmp"
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+>
+
+<!-- HR: Scheme title -->
+<!ELEMENT schemetl (%data;)*>
+
+<!-- HR: Compound -->
+<!ELEMENT compound (label, name, synonym*, chemical-formula?, mol-weight?, elemental-analysis?, inchi*, inchikey*, smiles?, compound-obj*, meta*)>
+<!ATTLIST compound
+id ID #REQUIRED
+sid CDATA #IMPLIED
+csid CDATA #IMPLIED
+entname CDATA #IMPLIED
+entref IDREF #IMPLIED
+>
+
+<!-- HR: Compound label - e.g. 7b -->
+<!ELEMENT label (%data;)*>
+
+<!ELEMENT synonym             (%data;)*>
+<!ELEMENT chemical-formula    (%plain-text;)*>
+<!ELEMENT mol-weight          (#PCDATA)>
+<!ELEMENT elemental-analysis  (#PCDATA)>
+<!ELEMENT inchi               (#PCDATA)>
+<!ATTLIST inchi         type CDATA #IMPLIED>
+<!ELEMENT inchikey            (#PCDATA)>
+<!ATTLIST inchikey      type CDATA #IMPLIED>
+<!ELEMENT smiles              (#PCDATA)>
+
+
+<!ELEMENT compound-obj (title?)>
+<!ATTLIST compound-obj
+extrefid CDATA #REQUIRED
+format %notation; #REQUIRED
+filesize CDATA #IMPLIED
+>
+
+<!-- meta element added to allow extra information about chemical compounds to be created without requiring separate elements. -->
+<!-- it can be extended to other uses -->
+<!ELEMENT meta                (%data; | p | meta)* >
+<!ATTLIST meta      property CDATA  #REQUIRED  >
+
+<!-- CHEMIMG added to parallel MATHIMG in XML_Isomath.dtd and TBLIMG in CALSTBL.DTD --> 
+
+<!ELEMENT chemimg         EMPTY>
+<!ATTLIST chemimg  id ID #REQUIRED
+          entname  CDATA  #IMPLIED
+          entref IDREF #IMPLIED
+          show  (yes | no)  "yes"
+          file CDATA #IMPLIED>
+
+
+<!-- at least one annotation must be present, annotation-compound is optional and repeatable -->
+<!ELEMENT annotations (annotation | annotation-compound)*>
+
+<!-- at least one annotation-item must be present; the same text can have more than one -->
+<!ELEMENT annotation (annotation-item+)>
+<!ATTLIST annotation id ID #REQUIRED>
+
+<!-- only status attribute is optional; rid is of type IDREF; type indicates type of annotation -->
+<!ELEMENT annotation-item EMPTY>
+<!ATTLIST annotation-item
+    id ID #REQUIRED
+    type CDATA #REQUIRED
+    rid IDREF #REQUIRED
+    created-by CDATA #REQUIRED
+    created  CDATA #REQUIRED
+    updated  CDATA #IMPLIED
+    status CDATA #IMPLIED    
+>
+
+<!-- id and inchi required; pubchem and chemspider default to "no" if unspecified -->
+<!ELEMENT annotation-compound EMPTY>
+<!ATTLIST annotation-compound
+    id ID #REQUIRED
+    title CDATA #REQUIRED
+    inchi CDATA #IMPLIED
+    inchikey CDATA #IMPLIED
+    stdinchi CDATA #IMPLIED
+    stdinchikey CDATA #IMPLIED
+    pubchem CDATA #IMPLIED
+    chemspider CDATA #IMPLIED
+>
+
+<!ELEMENT fn (p+)>
+<!ATTLIST fn
+id ID #REQUIRED
+type (footnote | erratum | correctn) "footnote"
+>
+<!--End Floating Elements -->
+<!ELEMENT accesgrp (access+)>
+<!ELEMENT access (%data;)*>
+<!ATTLIST access
+categ (genbank | bnl | pdb) #REQUIRED
+>
+<!--"bnl" = Brookhaven National Laboratory; "pdb" = Protein Database-->
+<!ELEMENT accession (%data;)*>
+<!ATTLIST accession
+		type (arrayexpress | bind | biomodels | bioproject | bmrb | ddbj | embl | emdb | ena | ensembl | est | genbank | geo | gss | mgi | nuccore | pcaid | pccid | pcsid | pdb | pride | sra | swiss-prot) "genbank"
+status (primary | secondary) "secondary"
+>
+
+<!ELEMENT 	geneseq (%straight-text; | newline | %fontchng;)*>
+<!ELEMENT 	proteinseq (%straight-text; | newline | %fontchng;)*>
+
+<!-- Used for Company Disclaimers associated with Reviews articles -->
+<!ELEMENT disclmr (p+, disclsr, address)>
+<!-- Company Disclosure Information (Copyright statement and disclosure text) -->
+<!ELEMENT disclsr (cd, p)>
+<!-- Used to contain the address associated with the company disclaimer -->
+<!ELEMENT address (%address;)*>
+
+<!ELEMENT data-citations (data-citation)+>
+
+<!ELEMENT data-citation (refau)*>
+<!ATTLIST data-citation
+db-name CDATA #REQUIRED
+id CDATA #REQUIRED
+url CDATA #IMPLIED
+year CDATA #REQUIRED
+source ( existing | new ) #IMPLIED
+> 
+
+<!ELEMENT ack (p+)>
+<!ELEMENT audecl (explanatory?)>
+<!ATTLIST audecl
+id ID #IMPLIED
+conflct (yes | no | decline | numerous | confidential) #REQUIRED
+>
+<!ELEMENT explanatory (%data;)*>
+<!ELEMENT app (p | sec)+>
+<!ELEMENT bibl (bib+ | bibgrp+)>
+<!-- HR: Alternate Type attribute for Reference section, when Reference section should be treated slightly differently than normal as in 
+Further Reading section when papers listed are not cited in paper but reference links still need to be created --> 
+<!ATTLIST bibl
+alt-type CDATA #IMPLIED
+style (alpha | numero) "alpha"
+>
+
+<!ELEMENT bibgrp (heading, bib+)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT bib (reftxt*, natlink?)>
+<!ATTLIST bib
+id ID #REQUIRED
+number CDATA #IMPLIED
+type (orig | reg) "reg"
+>
+<!ELEMENT reftxt (%reftxt;)*>
+<!ELEMENT vita (%data;)*>
+
+<!-- HR: Back matter section for author information specifically -->
+<!ELEMENT author-info (p+)>
+
+<!-- New element to hold non-Unicode characters without using named entities -->
+<!-- path: path from server root to image file; valign: vertical alignment as per CSS; 
+     name: plain text form for HTML attribute values; class: CSS class for display; 
+     entityname: name of original entity, e.g. "tacute" -->
+
+<!ELEMENT character EMPTY>
+<!ATTLIST character
+	path CDATA #REQUIRED
+	valign (baseline | bottom | middle | top) "middle"
+	name CDATA #REQUIRED
+	class CDATA "glyph"
+	entityname CDATA #REQUIRED	
+>
+
+<!--Font changes -->
+<!ELEMENT i (%data;)*>
+<!-- Italics -->
+<!ELEMENT b (%data;)*>
+<!-- Bold -->
+<!ELEMENT bi (%data;)*>
+<!-- Bold Italics -->
+<!ELEMENT un (%data;)*>
+<!-- Underline -->
+<!ELEMENT sc (%data;)*>
+<!-- Small Caps -->
+<!ELEMENT uc (%data;)*>
+<!-- Upper case -->
+<!ELEMENT up (%data;)*>
+<!-- Upright, often followed by Greek -->
+<!ELEMENT sl (%data;)*>
+<!-- Sloping, often followed by Greek -->
+<!ELEMENT du (%data;)*>
+<!-- Double underline -->
+<!ELEMENT ov (%data;)*>
+<!-- Overline -->
+<!ELEMENT super (%data;)*>
+<!-- Superior in text -->
+<!ELEMENT sub (%data;)*>
+<!-- Inferior in text -->
+
+<!-- HR: Container to hold content of a different language, must differ from language specified on the root element --> 
+<!ELEMENT lang (#PCDATA)>
+<!ATTLIST lang
+type %language; #REQUIRED
+>
+
+<!-- HR: Container to hold any content that is encoded differently than the encoding specified in the config for that language -->
+<!ELEMENT encoding (#PCDATA)>
+<!ATTLIST encoding
+type %encoding-types; #REQUIRED
+>
+
+
+
+<!--Line Controls-->
+<!--The specific behavior intended for each must be defined-->
+<!ELEMENT newline EMPTY>
+<!ELEMENT separate EMPTY>
+<!ATTLIST separate
+type CDATA #IMPLIED
+>
+<!ELEMENT align EMPTY>
+<!ATTLIST align
+horiz %align-att; "left"
+>
+<!--EMPTY Reference Elements-->
+<!ELEMENT bibr EMPTY>
+<!ATTLIST bibr
+rid IDREFS #REQUIRED
+number CDATA #IMPLIED
+>
+<!ELEMENT pullquoter EMPTY>
+<!ATTLIST pullquoter
+rid IDREF #REQUIRED
+>
+<!--Reference Elements with Content-->
+<!ELEMENT ancref (%plain-text;)*>
+<!ATTLIST ancref
+rid IDREF #REQUIRED
+>
+<!ELEMENT bibrinl (%plain-text;)*>
+<!ATTLIST bibrinl
+rid IDREFS #REQUIRED
+>
+<!ELEMENT bxr (%plain-text;)*>
+<!ATTLIST bxr
+rid IDREF #REQUIRED
+>
+<!ELEMENT coder (%text;)*>
+<!ATTLIST coder
+rid IDREF #REQUIRED
+>
+<!ELEMENT deflistr (%plain-text;)*>
+<!ATTLIST deflistr
+rid IDREF #REQUIRED
+>
+<!ELEMENT fdr (%plain-text;)*>
+<!ATTLIST fdr
+rid IDREFS #REQUIRED
+>
+<!ELEMENT figr (%plain-text;)*>
+<!ATTLIST figr
+rid IDREF #REQUIRED
+>
+<!ELEMENT fnr (%plain-text;)*>
+<!ATTLIST fnr
+rid IDREF #REQUIRED
+>
+<!ELEMENT fr (%plain-text;)*>
+<!ATTLIST fr
+rid IDREF #REQUIRED
+>
+<!ELEMENT annotation-ref (%plain-text;)*>
+<!ATTLIST annotation-ref
+rid IDREF #REQUIRED
+title CDATA #IMPLIED
+>
+<!ELEMENT illusr EMPTY>
+<!ATTLIST illusr
+rid IDREF #REQUIRED
+align %align-att; "right"
+>
+<!ELEMENT infographicr (%plain-text;)*>
+<!ATTLIST infographicr
+rid IDREF #REQUIRED
+align %align-att; "right"
+>
+<!ELEMENT chemimgr EMPTY>
+<!ATTLIST chemimgr
+rid IDREF #REQUIRED
+display-type CDATA #IMPLIED
+align %align-att; "right"
+>
+<!ELEMENT illorinl (%plain-text;)*>
+<!ATTLIST illorinl
+rid IDREF #REQUIRED
+align %align-att; "external"
+>
+<!ELEMENT imager EMPTY>
+<!ATTLIST imager
+rid IDREF #REQUIRED
+align %align-att; "right"
+>
+<!ELEMENT mediar (%plain-text;)*>
+<!ATTLIST mediar
+rid IDREF #REQUIRED
+>
+<!ELEMENT ext-mediar (%plain-text;)*> 
+<!ATTLIST ext-mediar 
+rid IDREF #REQUIRED 
+> 
+
+<!ELEMENT tablr (%plain-text;)*>
+<!ATTLIST tablr
+rid IDREF #REQUIRED
+>
+
+<!ELEMENT slideshowr (%plain-text;)*>
+<!ATTLIST slideshowr
+rid IDREF #REQUIRED
+align %align-att; "right"
+>
+
+<!-- HR: Compound Reference. REF attribute is CDATA, not IDREF, because required target ID is not inserted until build time -->
+<!ELEMENT compoundr (%plain-text;)*>
+<!ATTLIST compoundr
+ref CDATA #IMPLIED
+rid IDREF #REQUIRED
+>
+
+<!-- HR: Scheme Reference. -->
+<!ELEMENT schemer (%plain-text;)*>
+<!ATTLIST schemer
+rid IDREF #REQUIRED
+>
+
+<!ELEMENT secr (%plain-text;)*>
+<!ATTLIST secr
+rid IDREF #REQUIRED
+>
+
+<!-- semantic text identifier for external applications -->
+<!ELEMENT named-entity (%data;)*>
+<!ATTLIST named-entity
+id ID #REQUIRED
+type (compound | geneprot) "compound"
+entity CDATA #IMPLIED
+>
+
+
+<!--Link Elements-->
+<!ELEMENT natlink EMPTY>
+<!ATTLIST natlink
+extrefid CDATA #REQUIRED
+>
+<!--Use instead of XREF for linking to any Nature Group article whenever full
+ citational information (JTL, VID, PPF, PPL, CD) is available. NATLINK will be
+ represented online with a special icon.-->
+<!ELEMENT sir (%plain-text;)*>
+<!ATTLIST sir
+rid IDREF #REQUIRED
+refobjid CDATA #IMPLIED
+>
+<!--Is 'refobjid' necessary? SIR, which is meaningful only for online rendering,
+ references SUPPINFO, which in turn triggers a link to the article's Supp Info
+ ToC. Since the 'extrefid' attribute of SUPPOBJ specifies its FICI number, no
+ further reference from SIR seems necessary. The declaration has deliberately
+ been left loose at present. If need be, SIR could be empty.-->
+
+<!-- HR: Compound Index page reference -->
+<!ELEMENT cir (%plain-text;)*>
+
+<!ELEMENT url (#PCDATA | newline)*>
+<!ELEMENT weblink (%plain-text; | newline | %emptyref;)*>
+<!ATTLIST weblink
+url CDATA #REQUIRED
+type (errorcor | regular | special | max | box | overview | sidebar | infographic | audio | video | pdf | photo-album) #IMPLIED
+id ID #IMPLIED
+height CDATA #IMPLIED
+width CDATA #IMPLIED
+>
+<!ELEMENT xnav (%plain-text;)*>
+<!ATTLIST xnav
+extrefid CDATA #REQUIRED
+>
+<!ELEMENT xref (%plain-text;)*>
+<!ATTLIST xref
+extrefid CDATA #REQUIRED
+>
+<!--For interjournal non-citational linking.-->
+<!--ANCHOR and EMAIL (declared via %data;)-->
+<!ELEMENT anchor EMPTY>
+<!ATTLIST anchor
+id ID #REQUIRED
+>
+<!--Specifies target for internal linking within a single article. May be
+ inserted anywhere in any element with %data; or %text; content. ANCREF points
+ to ANCHOR.-->
+<!ELEMENT email (%data;)*>
+<!ELEMENT corr EMPTY>
+<!ATTLIST corr
+filename CDATA #REQUIRED
+>
+<!ELEMENT company     (%plain-text;)*>
+<!ATTLIST company    id ID #REQUIRED>		     
+
+<!ELEMENT prod     (%plain-text;)*>
+<!ATTLIST prod    id ID #REQUIRED
+		  companyid IDREF #REQUIRED
+		  name CDATA #IMPLIED>		  
+
+<!ELEMENT brandname     (%plain-text;)*>
+<!ATTLIST brandname    id ID #REQUIRED>
+
+<!ELEMENT scientific     (%plain-text;)*>
+<!ATTLIST scientific    id CDATA #IMPLIED
+		        type (gene | protein) #REQUIRED
+		        dbtype CDATA #IMPLIED>
+
+<!ELEMENT keywordgrp (keyword+)>
+<!ELEMENT keyword (%keyword;)*>
+<!-- HR: Connotea attribute on KEYWORD should be used when connotea link tag can't be derived from keyword itself -->
+<!ATTLIST keyword %glossid;
+	  connotea CDATA #IMPLIED>
+
+<!ELEMENT subject  (#PCDATA)>
+<!ATTLIST subject
+         code CDATA #IMPLIED
+         priority (1 | 0) "0"
+         id CDATA #IMPLIED
+         type (npg.subject | npg.technique | npg.subjects | npg.techniques | npg_subjects | npg_techniques) "npg.subject"
+         version CDATA #IMPLIED
+         path CDATA #IMPLIED
+>
+
+
+<!ELEMENT technique  (#PCDATA)*>
+<!ATTLIST technique
+         code CDATA #IMPLIED
+         priority (1 | 0) "0"
+         id CDATA #IMPLIED
+         type (npg.technique) "npg.technique"
+         version CDATA #IMPLIED
+         path CDATA #IMPLIED
+>
+
+<!ELEMENT article-grouping (title?)>
+<!ATTLIST article-grouping
+code CDATA #REQUIRED
+type CDATA #REQUIRED
+> 
+
+<!ELEMENT indications (%plain-text;)*>
+<!ATTLIST indications
+code CDATA #REQUIRED
+>
+<!ELEMENT channel EMPTY>
+<!ATTLIST channel
+code CDATA #REQUIRED
+>
+<!-- Sub Classification areas currently being used for Nature papers-->
+<!ELEMENT subclass      (%plain-text;)*>
+<!ATTLIST subclass     code  CDATA #REQUIRED
+		       id  CDATA #IMPLIED
+		       role CDATA #IMPLIED
+>
+
+<!-- Career Stage classification for NJ articles -->
+<!ELEMENT careerstage     EMPTY>
+<!ATTLIST careerstage     code  CDATA #REQUIRED>
+
+<!-- Discipline classification for NJ articles -->
+<!ELEMENT discipline     EMPTY>
+<!ATTLIST discipline     code  CDATA #REQUIRED>
+
+<!ELEMENT sector      EMPTY>
+<!ATTLIST sector      code CDATA #REQUIRED>
+
+<!-- Region classification for NJ articles -->
+<!ELEMENT region     (cont, co?, state?, area?)>
+
+<!-- Continent region classification for NJ articles -->
+<!ELEMENT cont     EMPTY>
+<!ATTLIST cont     code  (asia | africa | na | sa | eur | aus | antarct | all) #REQUIRED>
+
+<!-- State/Province region classification for NJ articles -->
+<!ELEMENT state      EMPTY>
+<!ATTLIST state code (AK | AL | AR | AZ | CA | CO | CT | DC | DE | FL | GA | HI | IA | ID | IL | IN | KS | KY | LA | MA | MD | ME | MI | MN | MO | MS | MT | NC | ND | NE | NH | NJ | NM | NV | NY | OH | OK | OR | PA | RI | SC | SD | TN | TX | UT | VA | VT | WA | WI | WV | WY | AB | BC | MB | NB | NF | NS | NT | NU | ON | PE | QC | SK | YT) #IMPLIED>
+
+<!-- General area region classification for NJ articles - used for 'Worldwide' or any other info that does not qualify as continent or country -->
+<!ELEMENT area      (#PCDATA)>
+
+<!ELEMENT doi       (#PCDATA)>
+
+<!-- HR: Alternative DOI -->
+<!ELEMENT altdoi       (#PCDATA)>
+<!ATTLIST altdoi     label  ID #REQUIRED>
+
+<!-- HR: Manuscript tracking number if available -->
+<!ELEMENT mtsno       (#PCDATA)>
+
+<!-- PD: Optional element to track free-article licences -->
+<!ELEMENT licence 	(weblink?, licence-text?, author-paid?, start-date?)>
+
+<!ATTLIST licence 
+		model (%apmodel;) "default"
+		version CDATA #REQUIRED>
+
+<!-- starting date of licence conditions -->
+<!ELEMENT start-date    EMPTY>
+<!ATTLIST start-date   %dateatt;>
+
+<!ELEMENT author-paid 	EMPTY>
+<!ATTLIST author-paid
+      paid (yes | no) "yes" >
+
+<!ELEMENT licence-text (%data;)*> 

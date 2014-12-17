@@ -1,0 +1,2310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" "journalpublishing.dtd">
+<article article-type="research-article" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="publisher-id">rpd</journal-id>
+<journal-id journal-id-type="hwp">rpd</journal-id>
+<journal-title>Radiation Protection Dosimetry</journal-title>
+<issn pub-type="ppub">0144-8420</issn>
+<issn pub-type="epub">1742-3406</issn>
+<publisher>
+<publisher-name>Oxford University Press</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1093/rpd/ncn131</article-id>
+<article-id pub-id-type="publisher-id">ncn131</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Scientific and Technical Papers</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>An empirical multivariate log-normal distribution representing uncertainty of biokinetic parameters for <sup>137</sup>Cs</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Miller</surname><given-names>G.</given-names></name>
+<xref ref-type="aff" rid="af1">1</xref>
+<xref ref-type="corresp" rid="cor1">&ast;</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Melo</surname><given-names>D.</given-names></name>
+<xref ref-type="aff" rid="af2">2</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Martz</surname><given-names>H.</given-names></name>
+<xref ref-type="aff" rid="af1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bertelli</surname><given-names>L.</given-names></name>
+<xref ref-type="aff" rid="af1">1</xref>
+</contrib>
+</contrib-group>
+<aff id="af1"><label>1</label><institution>Los Alamos National Laboratory</institution>, <addr-line>Los Alamos, NM</addr-line>, <country>USA</country></aff>
+<aff id="af2"><label>2</label><institution>National Cancer Institute</institution>, <addr-line>Bethesda, MD</addr-line>, <country>USA</country></aff>
+<author-notes>
+<corresp id="cor1"><label>&ast;</label>Corresponding author: <email>guthriemiller@gmail.com</email></corresp>
+</author-notes>
+<pub-date pub-type="ppub"><month>8</month><year>2008</year></pub-date>
+<pub-date pub-type="epub"><day>16</day><month>4</month><year>2008</year></pub-date>
+<volume>131</volume>
+<issue>2</issue>
+<fpage>198</fpage>
+<lpage>211</lpage>
+<history>
+<date date-type="received"><day>14</day><month>1</month><year>2008</year></date>
+<date date-type="rev-recd"><day>11</day><month>3</month><year>2008</year></date>
+<date date-type="accepted"><day>13</day><month>3</month><year>2008</year></date>
+</history>
+<copyright-statement>&copy; The Author 2008. Published by Oxford University Press. All rights reserved</copyright-statement>
+<copyright-year>2008</copyright-year>
+<license license-type="creative-commons" xlink:href="http://creativecommons.org/licenses/by-nc/2.0/uk/"><p>The online version of this article has been published under an open access model. Users are entitled to use, reproduce, disseminate, or display the open access version of this article for non-commercial purposes provided that: the original authorship is properly and fully attributed; the Journal and Oxford University Press are attributed as the original place of publication with the correct citation details given; if an article is subsequently reproduced or disseminated not in its entirety but only in part or as a derivative work this must be clearly indicated. For commercial re-use, please contact journals.permissions&commat;oxfordjournals.org</p></license>
+<abstract>
+<p>A simplified biokinetic model for <sup>137</sup>Cs has six parameters representing transfer of material to and from various compartments. Using a Bayesian analysis, the joint probability distribution of these six parameters is determined empirically for two cases with quite a lot of bioassay data. The distribution is found to be a multivariate log-normal. Correlations between different parameters are obtained. The method utilises a fairly large number of pre-determined forward biokinetic calculations, whose results are stored in interpolation tables. Four different methods to sample the multidimensional parameter space with a limited number of samples are investigated: random, stratified, Latin Hypercube sampling with a uniform distribution of parameters and importance sampling using a lognormal distribution that approximates the posterior distribution. The importance sampling method gives much smaller sampling uncertainty. No sampling method-dependent differences are perceptible for the uniform distribution methods.</p>
+</abstract>
+</article-meta>
+</front>
+<body>
+<sec id="s1"><title>INTRODUCTION</title>
+<p>Internal dosimetry relies on biokinetic models to relate the measured bioassay quantities, for example urinary excretion, to the imparted internal dose. Internal dosimetry has now advanced to the stage where uncertainties are being seriously studied (NCRP, Committee SC 6-3 report, in preparation), and this means that uncertainties in biokinetic parameters will need to be seriously studied. Previously, this type of work was mostly limited to the studies of population-based, inter-individual variability of biokinetic parameters<sup>(<xref ref-type="bibr" rid="NCN131C1">1</xref>,<xref ref-type="bibr" rid="NCN131C2">2</xref>,<xref ref-type="bibr" rid="NCN131C3">3</xref>)</sup>, which have neglected uncertainty in the determination of biokinetic parameters for an individual caused by bioassay measurement uncertainty. Recently, estimates of uncertainties in biokinetic model parameters have been made using classical statistics minimum &chi;<sup>2</sup> data fitting (G. Miller <italic>et al.</italic>, submitted). The Classical statistics determination of intra-individual uncertainty using minimum &chi;<sup>2</sup> data fitting (where the fitting is repeated many times using different, Monte Carlo-generated, data sets with variations corresponding to data uncertainty) might seem a reasonable approach to study measurement-related uncertainty; however, the theoretical basis is less than completely clear, and sometimes in practice unreasonably large parameter variations are obtained (G. Miller <italic>et al.</italic>, submitted). The Bayesian approach used here has a clear and straightforward theoretical basis and is seen here to work out well in practice for <sup>137</sup>Cs. The biokinetic parameters for <sup>137</sup>Cs are found to have a multivariate log-normal distribution, which expresses parameter uncertainty as well as correlations among the parameters. The differences in the probability distributions obtained for the two cases considered also illustrate variability between individuals.</p>
+<p>As in the recent work of Puncher <italic>et al.</italic> (submitted), this method is Bayesian and utilises a fairly large number of pre-determined forward biokinetic calculations. In the present approach, the results of these biokinetic calculations are stored in interpolation tables for later use in Bayesian calculations. Four different methods to sample the multidimensional parameter space with a limited number of samples are investigated: random, stratified, Latin Hypercube sampling with a uniform distribution of parameters and importance sampling using a log-normal distribution that approximates the posterior distribution. The importance sampling method gives much smaller sampling uncertainty. No sampling method-dependent differences are perceptible for the uniform distribution methods.</p>
+<p>The most natural approach to this problem would be Markov Chain Monte Carlo, where the biokinetic model calculations needed are obtained from the algorithm and not pre-determined; however, the amount of computer time needed in solving the biokinetic model differential equations for every chain iteration would probably be a least an order of magnitude greater than that obtained in the present approach. The computer time involved for a single case with the present approach is several minutes using a fast laptop computer.</p>
+<p>There are great practical advantages if the multivariate log-normal distribution applies generally. Biokinetic models and corresponding interpolation tables calculated using a uniform prior have many models with very small posterior probability. Rather than generating biokinetic models from a uniform prior and weighting them with the posterior distribution, one can now generate biokinetic models from the multivariate log-normal and weight them equally, a much more efficient use of interpolation tables. Also, the probability distribution of parameters, including possible correlations, is nicely captured in a log-normal formula.</p>
+</sec>
+<sec id="s2"><title><sup>137</sup>CS BIOKINETIC MODEL</title>
+<p>A simplified biokinetic model for Cs based on the model recommended by the International Commission on Radiation Protection (ICRP)<sup>(<xref ref-type="bibr" rid="NCN131C3">3</xref>)</sup> is shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F1">1</xref>. This model assumes the intake is transferred immediately to the blood and eliminates the urinary bladder and gastro-intestinal tract (missing the small dose contributions from these tissues).</p>
+<fig id="NCN131F1"><label>Figure 1.</label>
+<caption><p>Biokinetic model for cesium recommended by the ICRP.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13101"/>
+</fig>
+<p>There are six biokinetic parameters labelled 1 through 6. The natural logarithms of these parameters are denoted by <italic>x<sub>i</sub></italic>, <italic>i</italic> &equals; 1, 6.</p>
+</sec>
+<sec id="s3"><title>BAYESIAN UNCERTAINTY CALCULATIONS</title>
+<p>The posterior probability distribution of biokinetic model parameters is derived as follows. Each of the six transfer rates shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F1">1</xref> is assumed to have a log-space uniform prior probability distribution (inverse distribution). The central (median) value and range of variation from minimum to maximum values are adjusted so that the actual posterior distribution is not strongly truncated by the prior. One might say that the prior in this case functions as a clear window defined only by its edges, and the data itself determine the posterior distribution undistorted (unimproved) by the prior. A large but limited number (192) of equal prior probability parameter vectors are generated, each one defining a biokinetic model. Forward biokinetics calculations are done for each of these 192 models and the results stored in interpolation tables. The posterior distribution of models is then calculated using the following formula (ICRP, in preparation), which is an immediate consequence of Bayes theorem,
+<disp-formula id="NCN131M1"><label>1</label>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13116"/>
+</disp-formula>
+where <italic>l</italic> enumerates the model, {<italic>M</italic><sub><italic>i</italic></sub>} represents the data, <italic>L</italic>(<italic>I,l</italic>) is the likelihood function as a function of model and total intake amount <italic>I</italic> assuming a specified time pattern of intake (single acute intake in this case) and <italic>P</italic>(<italic>I</italic>) is the assumed prior probability distributions of total intake amount. A broad log-normal distribution was assumed for <italic>P</italic>(<italic>I</italic>). The calculations were done using the Los Alamos UF code<sup>(<xref ref-type="bibr" rid="NCN131C4">4</xref>)</sup>.</p>
+<p>Then, using the posterior model probabilities of discretely enumerated biokinetic models from Equation (<xref ref-type="disp-formula" rid="NCN131M1">1</xref>), posterior means, standard deviations and covariance of biokinetic parameters over the uniform prior in biokinetic parameter space are calculated using importance sampling,
+<disp-formula id="NCN131M2"><label>2</label>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13117"/>
+</disp-formula>
+where <italic>p</italic><sub><italic>l</italic></sub> is the posterior probability of model <italic>l</italic> given by Equation (<xref ref-type="disp-formula" rid="NCN131M1">1</xref>), <italic>p</italic><sub>1</sub><sup>(0)</sup> is the probability distribution from which the biokinetic parameters are generated (initially a uniform distribution) and <italic>x</italic><sub><italic>i</italic></sub><sup>(<italic>l</italic>)</sup> is the value of the <italic>i</italic>th parameter for model <italic>l</italic>. There is a certain degree of numerical instability caused by the possible occurrence of very large values of <italic>p</italic><sub>l</sub>/<italic>p</italic><sub><italic>l</italic></sub><sup>(0)</sup> This was handled in practice by arbitrarily eliminating the sampling point (setting <italic>p</italic><sub><italic>l</italic></sub> &equals;0) when this ratio exceeded 100. The process is iterated several times using a uniform distribution of biokinetic parameters while shifting the central value and range of allowed variation of each parameter (guided by the means and standard deviations obtained from the previous iteration).</p>
+<p>The next step is to remove the correlation by a transformation of variables. In fact, the variables <italic>x</italic><sub><italic>i</italic></sub> can be expressed in terms of new variables <italic>x</italic><sub><italic>i</italic></sub>&prime; that are uncorrelated, have mean value 0 and standard deviation 1, using the formula
+<disp-formula id="NCN131M3"><label>3</label>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13118"/>
+</disp-formula>
+where the upper triangular matrix <italic>B</italic> is obtained by factoring the symmetric positive-definite correlation matrix <bold>C</bold>, for example using the FORTRAN subroutine DPOCO (see, for example, <uri xlink:href="www.netlib.org/linpack/dpoco.f">www.netlib.org/linpack/dpoco.f</uri>),
+<disp-formula id="NCN131M4"><label>4</label>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13119"/>
+</disp-formula>
+</p>
+<p>One can then consider the posterior probability distribution of these new, uncorrelated variables. It seems to be the case empirically that this distribution of log-transformed parameters is normal. Then, the posterior distribution of parameters can be expressed as follows:
+<disp-formula id="NCN131M5"><label>5</label>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13120"/>
+</disp-formula>
+</p>
+<p>Iteration can now involve generating the biokinetic parameters from Equation (<xref ref-type="disp-formula" rid="NCN131M5">5</xref>) rather uniformly.</p>
+<p>All of the uncertainties scale with the uncertainty parameters of the likelihood function. Because these values are usually not well known, if there is a lot of data, it is reasonable to scale the uncertainty parameters to obtain &chi;<sup>2</sup>/ND &ap; 1, where ND is the number of data<sup>(<xref ref-type="bibr" rid="NCN131C5">5</xref>)</sup>.</p>
+</sec>
+<sec id="s4"><title><sup>137</sup>CS DATA FROM THE GOI&Acirc;NIA INCIDENT</title>
+<p>In September 1987, the rotating assembly of teletherapy unit was removed and the capsule containing 50.9 TBq of <sup>137</sup>Cs was dismantled resulting in the widespread contamination of downtown Goi&acirc;nia, in central part of Brazil<sup>(<xref ref-type="bibr" rid="NCN131C6">6</xref>)</sup>. This incident resulted in the significant internal exposure of 49 individuals, of both genders and several ages. About 110 000 persons were monitored during the first screening using a Geiger&ndash;Muller detector and 249 of them were identified as internally or externally contaminated. The individuals identified as exposed to the <sup>137</sup>Cs source also had external contamination. They were immediately submitted to external decontamination treatment. Based on this and also on the interview (when it was possible), ingestion was chosen as the likely pathway of intake. However, inhalation might have occurred as well.</p>
+<p>The chemical form of <sup>137</sup>Cs source was cesium chloride, classified as solubility Type F according to ICRP Publication 66<sup>(<xref ref-type="bibr" rid="NCN131C7">7</xref>)</sup>.</p>
+<p>For the scenario of exposure, urinalysis was considered the best technique to be applied during the first 2 months, since most of the individuals had external contamination which would interfere with the <italic>in vivo</italic> monitoring results in the early phase of the incident. The whole-body measurements started about 2 months after the <sup>137</sup>Cs intake.</p>
+<p>The urine samples were collected in Goi&acirc;nia and sent to Rio de Janeiro to be measured. The containers with samples were handled with care to avoid cross contamination. The containers were packed in boxes and were shipped by air to Rio de Janeiro to be processed at the <italic>in vitro</italic> bioassay laboratory at the Institute for Radiation Protection and Dosimetry (IRD). In general, the individuals who were not hospitalised did not collect 24 h urinary excretion; just an aliquot was available for measurement. The volume of the urine sample was measured, and the sample was transferred to an appropriate bottle for gamma spectrometry. The excreta samples were analysed for <sup>137</sup>Cs content using a planar 0.076 &times; 0.076 m Nal(Tl) detector enclosed in lead shielding. The nominal measurement uncertainty was 10&percnt;, but for the cases considered here the larger uncertainty is related to the excretion-time normalisation. The minimum detectable activity was 5.3 Bq l<sup>&minus;1</sup>, for 1 min counting time<sup>(<xref ref-type="bibr" rid="NCN131C8">8</xref>)</sup>.</p>
+<p>The whole-body counter system with specific characteristics to be used in that circumstance was installed at the Goi&acirc;nia General Hospital (GGH) in the city of Goi&acirc;nia. The measurements started in 23 November 1987. In order to reduce the dead time, the geometric center of the detector was positioned 2.03 m from the centre of the chair. The dead time was &lt;8&percnt; for the subject with highest <sup>137</sup>Cs internal activity, and the minimum detectable activity (MDA) was equal to 9 kBq for a 2-min counting time<sup>(<xref ref-type="bibr" rid="NCN131C9">9</xref>)</sup>.</p>
+<p>On 5 February 1988, a new measurement system became operational. The NaI(Tl) detector was the same used before, but with a new shielding design; the minimum detectable activity (MDA), for the same 2 min of counting, was 7.3 kBq for <sup>137</sup>Cs.</p>
+</sec>
+<sec id="s5"><title>GOI&Acirc;NIA CASE MPA</title>
+<p>This case involved a woman with internal exposure, but not submitted to Prussian Blue treatment, 25 y old, 58 kg body weight and 163 cm height. The intake may have occurred any day in the period from 13 to 24 September 1987 (September 20 assumed). She had 15 urine measurements and 6 whole body measurements. The bioassay data are presented in Table&nbsp;<xref ref-type="table" rid="NCN131TB1">1</xref>.</p>
+<table-wrap id="NCN131TB1" position="float"><label>Table 1.</label>
+<caption><p>Bioassay data for an adult female not submitted to Prussian treatment.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Urine (Bq l<sup>&minus;1</sup>)</th>
+<th align="left">Urine (1)</th>
+<th align="left">Urine 24 h (Bq)<sup>a</sup></th>
+<th align="left">WB (Bq)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4 Aug. 1987</td>
+<td>7.09E &plus; 04</td>
+<td>0.6</td>
+<td>8.51E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>6 Aug. 1987</td>
+<td>2.52E &plus; 04</td>
+<td>0.75</td>
+<td>3.02E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>9 Aug. 1987</td>
+<td>1.74E &plus; 04</td>
+<td>0.95</td>
+<td>2.09E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>10 Aug. 1987</td>
+<td>2.26E &plus; 04</td>
+<td>1.1</td>
+<td>2.71E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>11 Aug. 1987</td>
+<td>1.85E &plus; 04</td>
+<td>0.9</td>
+<td>2.22E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>12 Aug. 1987</td>
+<td>1.03E &plus; 04</td>
+<td>0.9</td>
+<td>1.23E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>16 Aug. 1987</td>
+<td>1.72E &plus; 04</td>
+<td>1.1</td>
+<td>2.06E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>18 Aug. 1987</td>
+<td>9.44E &plus; 03</td>
+<td>0.55</td>
+<td>1.13E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>24 Aug. 1987</td>
+<td>9.44E &plus; 03</td>
+<td>1.1</td>
+<td>1.13E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>6 Nov. 1987</td>
+<td>1.04E &plus; 04</td>
+<td>1.1</td>
+<td>1.24E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>8 Nov. 1987</td>
+<td>1.15E &plus; 04</td>
+<td>0.9</td>
+<td>1.38E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>16 Nov. 1987</td>
+<td>4.96E &plus; 03</td>
+<td>1</td>
+<td>5.95E &plus; 03</td>
+<td/>
+</tr>
+<tr>
+<td>24 Nov. 1987</td>
+<td>9.36E &plus; 03</td>
+<td>1.1</td>
+<td>1.12E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>25 Nov. 1987</td>
+<td/>
+<td/>
+<td/>
+<td>2.74E &plus; 06 &plusmn; 4.81E &plus; 05</td>
+</tr>
+<tr>
+<td>27 Nov. 1987</td>
+<td>6.44E &plus; 03</td>
+<td>1.1</td>
+<td>7.73E &plus; 03</td>
+<td/>
+</tr>
+<tr>
+<td>28 Nov. 1987</td>
+<td>1.30E &plus; 04</td>
+<td>0.8</td>
+<td>1.55E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>9 Jan. 1988</td>
+<td/>
+<td/>
+<td/>
+<td>1.82E &plus; 06 &plusmn; 3.11E &plus; 05</td>
+</tr>
+<tr>
+<td>19 Jan. 1988</td>
+<td/>
+<td/>
+<td/>
+<td>1.78E &plus; 06 &plusmn; 3.03E &plus; 05</td>
+</tr>
+<tr>
+<td>19 April 1988</td>
+<td/>
+<td/>
+<td/>
+<td>9.95E &plus; 05 &plusmn; 1.26E &plus; 05</td>
+</tr>
+<tr>
+<td>1 July 1988</td>
+<td/>
+<td/>
+<td/>
+<td>5.55E &plus; 05 &plusmn; 8.51E &plus; 04</td>
+</tr>
+<tr>
+<td>11 Nov 1988</td>
+<td/>
+<td/>
+<td/>
+<td>1.81E &plus; 05 &plusmn; 2.96E &plus; 04</td>
+</tr>
+</tbody>
+</table>
+<table-wrap-foot>
+<fn><p><sup>a</sup>Urine (in Bq l<sup>&minus;1</sup>) multiplied by 1.2 l. ICRP reference daily urinary volume for adult female is 1.2 l<sup>(12)</sup>.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>The prior probability distribution of biokinetic parameters arrived at after several iterations is shown in Table&nbsp;<xref ref-type="table" rid="NCN131TB2">2</xref>.</p>
+<table-wrap id="NCN131TB2" position="float"><label>Table 2.</label>
+<caption><p>Prior probability distribution of biokinetic parameters.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Median (d<sup>&minus;1</sup>)</th>
+<th align="left">Factor</th>
+<th align="left">SD<sub>max</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>100</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>100</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.05</td>
+<td>10</td>
+<td>0.67</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0.2</td>
+<td>5</td>
+<td>0.47</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.003</td>
+<td>5</td>
+<td>0.47</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0.004</td>
+<td>2</td>
+<td>0.2</td>
+</tr>
+</tbody>
+</table>
+<table-wrap-foot>
+<fn><p>A log-space-uniform distribution is assumed with median value and factor representing the total range of variation as shown.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>The column labelled SD<sub>max</sub> in Table&nbsp;<xref ref-type="table" rid="NCN131TB2">2</xref>, which will be discussed in more detail later on, gives the standard deviation of a log-scale uniform distribution extending over a range of &lsquo;factor&rsquo;,
+<disp-formula>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13121"/>
+</disp-formula>
+</p>
+<p>The urine and whole-body data for case MPA are shown versus posterior mean values shown in Figures&nbsp;<xref ref-type="fig" rid="NCN131F2">2</xref> and <xref ref-type="fig" rid="NCN131F3">3</xref>. The basic time dependence of the excretion curves are a result of the model structure shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F1">1</xref>, and the posterior mean can be thought of as the mean or average value of the excretion curves over biokinetic parameters selected from the joint posterior probability distribution.</p>
+<fig id="NCN131F2"><label>Figure 2.</label>
+<caption><p>Urine data for case MPA versus calculated posterior mean.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13102"/>
+</fig>
+<fig id="NCN131F3"><label>Figure 3.</label>
+<caption><p>Whole body (WB) count data for case MPA versus calculated posterior mean.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13103"/>
+</fig>
+<p>A Poisson&ndash;log-normal uncertainty model is used for the bioassay data (ICRP, in preparation). The urine measurement uncertainties are small in this example (urine/MDA &gt; 10<sup>3</sup>), so log-normal normalisation uncertainty dominates. For these types of measurements these uncertainties typically have log-normal standard deviations <italic>S</italic><sub>urine</sub> &equals; 0.1 to 0.7 (J. W. Marsh <italic>et al.</italic>, to appear). Table&nbsp;<xref ref-type="table" rid="NCN131TB3">3</xref> shows the data uncertainty parameters that were assumed.</p>
+<table-wrap id="NCN131TB3" position="float"><label>Table 3.</label>
+<caption><p>Assumed data uncertainty parameters, adjusted to give &chi;<sup>2</sup>/ND &ap; 1.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="left"/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Data</th>
+<th align="left">&sigma;<sub>meas</sub></th>
+<th align="left"><italic>S</italic><sub>norm</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Urine</td>
+<td>Small (10&percnt;)</td>
+<td>0.21</td>
+</tr>
+<tr>
+<td>WB</td>
+<td>As given</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>All of the posterior uncertainties scale with the assumed values of the likelihood function log-normal uncertainties <italic>S</italic><sub>norm</sub>. Because these values are not well known, and this case involves a lot of data, it is reasonable to adjust them to obtain &chi;<sup>2</sup>/ND &ap; 1<sup>(<xref ref-type="bibr" rid="NCN131C5">5</xref>)</sup>. The values <italic>S</italic><sub>urine</sub> &equals; 0.21 and <italic>S</italic><sub>WB</sub> &equals;0.01 (effectively 0) as shown in Table&nbsp;<xref ref-type="table" rid="NCN131TB3">3</xref> are used in the foregoing plots and result in &chi;<sup>2</sup>/ND &equals; 1.05, calculated with respect to the posterior mean.</p>
+<p>Figure&nbsp;<xref ref-type="fig" rid="NCN131F4">4</xref> shows the posterior distribution of the biokinetic model probability from Equation (<xref ref-type="disp-formula" rid="NCN131M1">1</xref>) represented as a two-dimensional scatter plot of parameter 6 versus parameter 5. The parameter values with significant posterior probability are indicated.</p>
+<fig id="NCN131F4"><label>Figure 4.</label>
+<caption><p>Scatter plot of parameter 6 versus parameter 5 for the 192 models, where parameters were generated using random sampling.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13104"/>
+</fig>
+<p>There are 15 possible combinations of two parameters that might be scatter plotted against one another, corresponding to the 15 off-diagonal terms in the correlation matrix (6 &times; 5 / 2 &equals; 15). The choice of 5 versus 6 gives one of the most interesting plots, and also, as will be seen, has one of the largest correlations. The correlation is fairly easy to understand. The retention half-time in the whole-body is well determined by the whole-body measurement data. Most of the material in the body resides in the body tissue 2 compartment, which has the smallest transfer rates. Therefore, the half time of the body tissue 2 compartment is determined by the whole-body data. If the half time is fixed, the rates 5 and 6 must add up to a constant and must be anti-correlated, if one goes up, the other goes down. According to this hypothesis the correlation is caused by the whole-body data, and indeed if the whole body data is removed, but retaining all the urine data, the correlation does, in fact, go away.</p>
+<p>The means and standard deviations of log-transformed parameters calculated from Equation (<xref ref-type="disp-formula" rid="NCN131M2">2</xref>) are given in Table&nbsp;<xref ref-type="table" rid="NCN131TB4">4</xref>. In applying Equation (<xref ref-type="disp-formula" rid="NCN131M2">2</xref>), biokinetic parameters are generated from three different distributions: (1) a uniform distribution defined by Table&nbsp;<xref ref-type="table" rid="NCN131TB2">2</xref>, (2) the lognormal distribution from Equation (<xref ref-type="disp-formula" rid="NCN131M5">5</xref>), and (<xref ref-type="disp-formula" rid="NCN131M3">3</xref>) the iterated log-normal distribution where the biokinetic parameters are distributed using the previously determined log-normal distribution. As one can see, the standard deviations are not limited by SD<sub>max</sub> from Table&nbsp;<xref ref-type="table" rid="NCN131TB2">2</xref>.</p>
+<table-wrap id="NCN131TB4" position="float"><label>Table 4.</label>
+<caption><p>Posterior means and standard deviations of the six parameters over 192 biokinetic models.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="center"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Distribution</th>
+<th align="left">parameter</th>
+<th align="left">Mean</th>
+<th align="left">Exp(mean)</th>
+<th align="left">SD</th>
+<th align="left">SD/SD<sub>max</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uniform</td>
+<td>1</td>
+<td>1.16</td>
+<td>3.18</td>
+<td>0.62</td>
+<td>0.47</td>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.34</td>
+<td>1.40</td>
+<td>0.77</td>
+<td>0.58</td>
+</tr>
+<tr>
+<td/>
+<td>3</td>
+<td>&minus;2.87</td>
+<td>0.06</td>
+<td>0.33</td>
+<td>0.49</td>
+</tr>
+<tr>
+<td/>
+<td>4</td>
+<td>&minus;1.42</td>
+<td>0.24</td>
+<td>0.14</td>
+<td>0.30</td>
+</tr>
+<tr>
+<td/>
+<td>5</td>
+<td>&minus;5.71</td>
+<td>0.003</td>
+<td>0.19</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td/>
+<td>6</td>
+<td>&minus;5.55</td>
+<td>0.004</td>
+<td>0.12</td>
+<td>0.59</td>
+</tr>
+<tr>
+<td>Log-normal1</td>
+<td>1</td>
+<td>1.39</td>
+<td>4.00</td>
+<td>0.56</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.60</td>
+<td>1.82</td>
+<td>0.70</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>3</td>
+<td>&minus;2.79</td>
+<td>0.06</td>
+<td>0.28</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>4</td>
+<td>&minus;1.47</td>
+<td>0.23</td>
+<td>0.12</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>5</td>
+<td>&minus;5.63</td>
+<td>0.004</td>
+<td>0.16</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>6</td>
+<td>&minus;5.58</td>
+<td>0.004</td>
+<td>0.10</td>
+<td/>
+</tr>
+<tr>
+<td>Log-normal2</td>
+<td>1</td>
+<td>1.48</td>
+<td>4.41</td>
+<td>0.73</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.72</td>
+<td>2.06</td>
+<td>0.90</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>3</td>
+<td>&minus;2.77</td>
+<td>0.06</td>
+<td>0.28</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>4</td>
+<td>&minus;1.48</td>
+<td>0.23</td>
+<td>0.13</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>5</td>
+<td>&minus;5.62</td>
+<td>0.004</td>
+<td>0.17</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>6</td>
+<td>&minus;5.59</td>
+<td>0.004</td>
+<td>0.11</td>
+<td/>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>The final iterated (log-normal2) correlation matrix from Equation (<xref ref-type="disp-formula" rid="NCN131M2">2</xref>) is given in Table&nbsp;<xref ref-type="table" rid="NCN131TB5">5</xref>.</p>
+<table-wrap id="NCN131TB5" position="float"><label>Table 5.</label>
+<caption><p>Correlation matrix for the six parameters over 192 biokinetic models.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th/>
+<th/>
+<th align="left">Correlation</th>
+<th/>
+<th/>
+<th/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0.89</td>
+<td>&minus;0.13</td>
+<td>&minus;0.08</td>
+<td>0.46</td>
+<td>&minus;0.39</td>
+</tr>
+<tr>
+<td/>
+<td>1</td>
+<td>&minus;0.20</td>
+<td>&minus;0.30</td>
+<td>0.52</td>
+<td>&minus;0.49</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td>1</td>
+<td>&minus;0.57</td>
+<td>0.08</td>
+<td>0.14</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td>1</td>
+<td>&minus;0.35</td>
+<td>0.37</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1</td>
+<td>&minus;0.89</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>One can also look at the empirical distributions of the <italic>x</italic><sub><italic>i</italic></sub>&prime; variables, which should be uncorrelated, have mean value 0 and standard deviation 1 if the probability distribution is indeed as given by Equation (<xref ref-type="disp-formula" rid="NCN131M5">5</xref>). The final (log-normal2) marginal empirical posterior distributions of these new variables evaluated using importance sampling are shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F5">5</xref>.</p>
+<fig id="NCN131F5"><label>Figure 5.</label>
+<caption><p>Posterior probability distribution of transformed uncorrelated variables. A straight line fit in these plots would imply a normal distribution in terms of log-transformed variables.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13105"/>
+</fig>
+<p>The scatter plot of biokinetic models obtained from the empirical multivariate log-normal prior is shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F6">6</xref>. Relative posterior probability is <italic>p</italic><sub><italic>l</italic></sub><sup>(0)</sup> normalised to be a probability distribution over <italic>l</italic>, where <italic>p</italic><sub><italic>l</italic></sub> is the posterior probability of model <italic>l</italic> given by Equation (<xref ref-type="disp-formula" rid="NCN131M1">1</xref>) and <italic>p</italic><sub><italic>l</italic></sub><sup>(0)</sup> is the probability distribution from which the biokinetic parameters are generated.</p>
+<fig id="NCN131F6"><label>Figure 6.</label>
+<caption><p>Scatter plot of parameter 6 versus parameter 5 for the 192 models, where parameters were generated from the multivariate log-normal (lognormal2). ICRP-recommended values for adult male (lower left) and female (15-y-old male, upper right) are also shown.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13106"/>
+</fig>
+<p>Figure&nbsp;<xref ref-type="fig" rid="NCN131F7">7</xref> shows the scatter plot of parameters 1 versus 2, where the parameter values are generated from the multivariate log-normal (log-normal2). Note that a large fraction of biokinetic models now has an appreciable posterior probability.</p>
+<fig id="NCN131F7"><label>Figure 7.</label>
+<caption><p>Scatter plot of parameter 2 versus parameter 4 for the 192 models, where parameters were generated from the multivariate log-normal (log-normal2). ICRP-recommended values for adult male (upper) and female (lower) are also shown.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13107"/>
+</fig>
+<p>Figure&nbsp;<xref ref-type="fig" rid="NCN131F7">7</xref> is quite interesting in that the uncertainties of both parameters 1 and 2 are quite large but correlated. Also the mean value of parameter 1 exceeds that of parameter 2, contrary to the ICRP-recommended values shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F1">1</xref>. However, one should recognise that this data set provides very little information on rapid-time-scale processes. A reasonable alternate approach would be to have the prior window constrain the variation of the nominally fastest time-scale processes, which are not well determined by the data-set at hand, to some small variation factors. Then the observed posterior standard deviations of these parameters would have SD/SD<sub>max</sub> &cong; 1, because the parameters would be uniformly distributed over their entire ranges of variation. The ability to easily impose such constraints is an important feature of the Bayesian approach.</p>
+<p>Table&nbsp;<xref ref-type="table" rid="NCN131TB6">6</xref> shows the variations in <italic>E</italic>(50) dose per unit intake caused by the parameter variations shown in Table&nbsp;<xref ref-type="table" rid="NCN131TB2">2</xref>. Even though the <italic>E</italic>(50) dose per unit intake varies over a wide range when the biokinetic parameters are varied over the entire range of the uniform prior, the <italic>E</italic>(50) dose for case MPA is 71 &plusmn; 4.4 mSv using the log-normal biokinetic prior shown in Figures&nbsp;<xref ref-type="fig" rid="NCN131F6">6</xref> and <xref ref-type="fig" rid="NCN131F7">7</xref>.</p>
+<table-wrap id="NCN131TB6" position="float"><label>Table 6.</label>
+<caption><p>Variations in <italic>E</italic>(50) dose per unit intake caused by biokinetic variations over the entire range of the uniform prior.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="left"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Parm</th>
+<th align="left">Min (d<sup>&minus;1</sup>)</th>
+<th align="left"><italic>E</italic>(50) (Sv Bq<sup>&minus;1</sup>)</th>
+<th align="left">Max (d<sup>&minus;1</sup>)</th>
+<th align="left"><italic>E</italic>(50) (Sv Bq<sup>&minus;1</sup>)</th>
+<th align="left"><italic>E</italic>(50) ratio</th>
+<th align="left">Increase?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1.50E&minus;01</td>
+<td>5.42E&minus;05</td>
+<td>1.50E &plus; 01</td>
+<td>6.92E&minus;06</td>
+<td>7.833</td>
+<td>F</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1.00E&minus;01</td>
+<td>7.26E&minus;06</td>
+<td>1.00E &plus; 01</td>
+<td>5.38E&minus;05</td>
+<td>7.42</td>
+<td>T</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6.33E&minus;03</td>
+<td>3.07E&minus;05</td>
+<td>6.33E&minus;02</td>
+<td>3.03E&minus;05</td>
+<td>1.013</td>
+<td>F</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2.01E&minus;02</td>
+<td>3.12E&minus;05</td>
+<td>1.01E&minus;01</td>
+<td>3.01E&minus;05</td>
+<td>1.036</td>
+<td>F</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1.12E&minus;03</td>
+<td>3.96E&minus;05</td>
+<td>5.59E&minus;03</td>
+<td>2.04E&minus;05</td>
+<td>1.942</td>
+<td>F</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1.41E&minus;02</td>
+<td>3.64E&minus;05</td>
+<td>2.83E&minus;02</td>
+<td>2.49E&minus;05</td>
+<td>1.46</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>Using the information about means, standard deviations and the correlation matrix given in Tables&nbsp;<xref ref-type="table" rid="NCN131TB4">4</xref> and <xref ref-type="table" rid="NCN131TB5">5</xref>, the multivariate log-normal model can be used as a prior distribution of biokinetic parameters with other data sets. Thus, instead of generating models from a uniform distribution, they are generated from the independent normal distributions of the <italic>x</italic><sub><italic>i</italic></sub>&prime; variables. There are great practical advantages to this approach. Biokinetic models and corresponding interpolation table calculated using a uniform prior have many models with very small posterior probability, which are in effect wasted. Rather than generating biokinetic models from a uniform prior and weighting them with the posterior distribution, one can now generate biokinetic models using Equation (<xref ref-type="disp-formula" rid="NCN131M3">3</xref>) and weight them equally. Also, the prior distribution of parameters is nicely captured in a lognormal formula.</p>
+</sec>
+<sec id="s6"><title>GOI&Acirc;NIA CASE CAS</title>
+<p>This case involved a male child with internal exposure, but not submitted to Prussian Blue treatment, 7 y old, with 20 kg body weight. The intake occurred on 24 September 1987. He had five urine measurements and eight whole-body measurements. The bioassay data are presented in Table&nbsp;<xref ref-type="table" rid="NCN131TB7">7</xref>.</p>
+<table-wrap id="NCN131TB7" position="float"><label>Table 7.</label>
+<caption><p>Bioassay data for an 7-y-old child not submitted to Prussian treatment.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Urine (Bq l<sup>&minus;1</sup>)</th>
+<th align="left">Urine (l)</th>
+<th align="left">Urine 24 h (Bq)</th>
+<th align="left">WB (Bq)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10/15/1987</td>
+<td>8.66E &plus; 04</td>
+<td>0.75</td>
+<td>5.19E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>10/16/1987</td>
+<td>8.81E &plus; 04</td>
+<td>0.3</td>
+<td>5.28E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>10/25/1987</td>
+<td>8.70E &plus; 04</td>
+<td>0.65</td>
+<td>5.22E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>11/13/1987</td>
+<td>3.89E &plus; 04</td>
+<td>0.75</td>
+<td>2.33E &plus; 04</td>
+<td/>
+</tr>
+<tr>
+<td>11/16/1987</td>
+<td>1.41E &plus; 04</td>
+<td>0.55</td>
+<td>8.44E &plus; 03</td>
+<td/>
+</tr>
+<tr>
+<td>12/8/1987</td>
+<td/>
+<td/>
+<td/>
+<td>7.14E &plus; 05 &plusmn; 1.26E &plus; 05</td>
+</tr>
+<tr>
+<td>1/12/1988</td>
+<td/>
+<td/>
+<td/>
+<td>2.85E &plus; 05 &plusmn; 5.18E &plus; 04</td>
+</tr>
+<tr>
+<td>2/10/1988</td>
+<td/>
+<td/>
+<td/>
+<td>1.33E &plus; 05 &plusmn; 2.59E &plus; 04</td>
+</tr>
+<tr>
+<td>3/15/1988</td>
+<td/>
+<td/>
+<td/>
+<td>6.66E &plus; 04 &plusmn; 1.18E &plus; 04</td>
+</tr>
+<tr>
+<td>3/28/1988</td>
+<td/>
+<td/>
+<td/>
+<td>4.81E &plus; 04 &plusmn; 8.51E &plus; 03</td>
+</tr>
+<tr>
+<td>4/21/1988</td>
+<td/>
+<td/>
+<td/>
+<td>2.96E &plus; 04 &plusmn; 3.70E &plus; 03</td>
+</tr>
+<tr>
+<td>4/25/1988</td>
+<td/>
+<td/>
+<td/>
+<td>2.59E &plus; 04 &plusmn; 3.70E &plus; 03</td>
+</tr>
+<tr>
+<td>5/9/1988</td>
+<td/>
+<td/>
+<td/>
+<td>2.04E &plus; 04 &plusmn; 3.70E &plus; 03</td>
+</tr>
+</tbody>
+</table>
+<table-wrap-foot>
+<fn><p><sup>a</sup>Urine in (Bq/L) multiplied by 0.6 L. ICRP reference daily urinary volume for 5-y-old child is 0.5 L and 0.7 L for 10-y-old<sup>(15)</sup>.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<p>The urine and whole body data are plotted versus the posterior means in Figures&nbsp;<xref ref-type="fig" rid="NCN131F8">8</xref> and <xref ref-type="fig" rid="NCN131F9">9</xref>. The values <italic>S</italic><sub>urine</sub> &equals; 0.20 and <italic>S</italic><sub>WB</sub> &equals;0.01 (effectively 0) are assumed and result in &chi;<sup>2</sup>/ND &equals; 0.98, calculated with respect to the posterior mean with a log-space-uniform prior allowing variation by the factors shown in Table&nbsp;<xref ref-type="table" rid="NCN131TB8">8</xref>.</p>
+<table-wrap id="NCN131TB8" position="float"><label>Table 8.</label>
+<caption><p>Prior probability distribution of biokinetic parameters for case CAS.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Median (d<sup>&minus;1</sup>)</th>
+<th align="left">Factor</th>
+<th align="left">SD<sub>max</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>100</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>100</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.05</td>
+<td>100</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0.1</td>
+<td>100</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.001</td>
+<td>100</td>
+<td>1.33</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0.02</td>
+<td>3</td>
+<td>0.317</td>
+</tr>
+</tbody>
+</table>
+<table-wrap-foot>
+<fn><p>A log-space-uniform distribution is assumed with median value and factor representing the total range of variation as shown.</p></fn>
+</table-wrap-foot>
+</table-wrap>
+<fig id="NCN131F8"><label>Figure 8.</label>
+<caption><p>Urine data for case CAS versus calculated (log-normal2) posterior mean.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13108"/>
+</fig>
+<fig id="NCN131F9"><label>Figure 9.</label>
+<caption><p>Whole-body count data for case CAS versus calculated (log-normal2) posterior mean.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13109"/>
+</fig>
+<p>Table&nbsp;<xref ref-type="table" rid="NCN131TB9">9</xref> shows the posterior means and standard deviations of the parameters for the three iterations. As seen from the large values of SD, the parameters except for 5 and 6 are poorly determined by this data set and the SD&apos;s seem to be drifting towards large values. After the fact, this seems reasonable for parameters that in fact are not constrained by the data. As noted above, an approach in this case would be to fix the prior probability distributions of these parameters and apply the log-normal only to parameters that are more strongly determined by the data.</p>
+<table-wrap id="NCN131TB9" position="float"><label>Table 9.</label>
+<caption><p>Posterior means for case CAS.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="center"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Distribution</th>
+<th align="left">Parameter</th>
+<th align="left">Mean</th>
+<th align="left">Exp(mean)</th>
+<th align="left">SD</th>
+<th align="left">SD/SD<sub>max</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uniform</td>
+<td>1</td>
+<td>&minus;0.12</td>
+<td>0.88</td>
+<td>1.19</td>
+<td>0.89</td>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.54</td>
+<td>1.72</td>
+<td>1.24</td>
+<td>0.93</td>
+</tr>
+<tr>
+<td/>
+<td>3</td>
+<td>&minus;2.46</td>
+<td>0.09</td>
+<td>1.14</td>
+<td>0.86</td>
+</tr>
+<tr>
+<td/>
+<td>4</td>
+<td>&minus;1.79</td>
+<td>0.17</td>
+<td>1.40</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td/>
+<td>5</td>
+<td>&minus;7.17</td>
+<td>0.001</td>
+<td>1.02</td>
+<td>0.77</td>
+</tr>
+<tr>
+<td/>
+<td>6</td>
+<td>&minus;3.86</td>
+<td>0.02</td>
+<td>0.11</td>
+<td>0.34</td>
+</tr>
+<tr>
+<td>Log-normal1</td>
+<td>1</td>
+<td>&minus;0.49</td>
+<td>0.61</td>
+<td>1.52</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>1.06</td>
+<td>2.88</td>
+<td>1.43</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>3</td>
+<td>&minus;2.16</td>
+<td>0.12</td>
+<td>1.28</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>4</td>
+<td>&minus;1.58</td>
+<td>0.21</td>
+<td>1.66</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>5</td>
+<td>&minus;6.92</td>
+<td>0.001</td>
+<td>1.07</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>6</td>
+<td>&minus;3.88</td>
+<td>0.02</td>
+<td>0.14</td>
+<td/>
+</tr>
+<tr>
+<td>Log-normal2</td>
+<td>1</td>
+<td>&minus;0.75</td>
+<td>0.47</td>
+<td>1.67</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>2</td>
+<td>0.76</td>
+<td>2.14</td>
+<td>1.73</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>3</td>
+<td>&minus;2.61</td>
+<td>0.07</td>
+<td>1.51</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>4</td>
+<td>&minus;1.69</td>
+<td>0.18</td>
+<td>1.57</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>5</td>
+<td>&minus;6.90</td>
+<td>0.001</td>
+<td>1.14</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>6</td>
+<td>&minus;3.89</td>
+<td>0.02</td>
+<td>0.11</td>
+<td/>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>The final iterated (log-normal2) correlation matrix from Equation (<xref ref-type="disp-formula" rid="NCN131M2">2</xref>) is given in Table&nbsp;<xref ref-type="table" rid="NCN131TB10">10</xref>.</p>
+<table-wrap id="NCN131TB10" position="float"><label>Table 10.</label>
+<caption><p>Correlation matrix for case CAS.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th/>
+<th/>
+<th align="left">Correlation</th>
+<th/>
+<th/>
+<th/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>&minus;0.15</td>
+<td>&minus;0.21</td>
+<td>&minus;0.01</td>
+<td>0.26</td>
+<td>&minus;0.39</td>
+</tr>
+<tr>
+<td/>
+<td>1</td>
+<td>0.63</td>
+<td>&minus;0.11</td>
+<td>&minus;0.55</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td>1</td>
+<td>0.34</td>
+<td>&minus;0.43</td>
+<td>0.73</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td>1</td>
+<td>0.36</td>
+<td>0.17</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1</td>
+<td>&minus;0.75</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>The posterior probability scatter plot obtained using the derived multivariate log-normal prior is shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F10">10</xref>. There is good agreement with the ICRP recommended values for an age of 5 y.</p>
+<fig id="NCN131F10"><label>Figure 10.</label>
+<caption><p>Scatter plot of parameter 6 versus parameter 5 for case CAS (child) also showing the ICRP age-dependent recommendations (lower, 10 y; upper, 5 y).</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13110"/>
+</fig>
+<p>The <italic>E</italic>(50) dose for case CAS is 18 &plusmn; 2.3 mSv using the log-normal biokinetic prior shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F10">10</xref>. The maximum <italic>E</italic>(50) dose variation caused by the uniform prior parameter variations is a factor of 4.3. The fact the dose uncertainty is as small as it is, given the large uncertainty of biokinetic parameters is because the whole-body count data shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F9">9</xref>, by itself, well determines the whole-body retention of cesium and the dose.</p>
+</sec>
+<sec id="s7"><title>UNCERTAINTY CAUSED BY SAMPLING: A COMPARISON OF THE FOUR SAMPLING METHODS</title>
+<p>With the approach to the problem of biokinetic model uncertainty presented in this paper, a large, but definitely limited, number of biokinetics calculations are first carried out and the results are stored in interpolation tables for later use in Bayesian calculations. The question then arises: &lsquo;what is the best way to select the limited sample from the multidimensional parameter space, and what are the sampling uncertainties caused by the limited sample size?&rsquo; This subject is essentially the same as that considered in the work by McKay <italic>et al.</italic><sup>(<xref ref-type="bibr" rid="NCN131C10">10</xref>)</sup> that introduced &lsquo;Latin Hypercube&rsquo; sampling.</p>
+<p>Here, the question is studied using Monte Carlo simulation, by first assuming that the final multivariate log-normal distribution of parameters derived for Goi&acirc;nia case MPA represents reality. Then, successive samples of 192 models are chosen using different sampling techniques from the parameter ranges given in Table&nbsp;<xref ref-type="table" rid="NCN131TB2">2</xref>, probabilities are calculated from the assumed multivariate log-normal and, finally, multivariate log-normal parameters are recalculated using Equations (<xref ref-type="disp-formula" rid="NCN131M2">2</xref>) and (<xref ref-type="disp-formula" rid="NCN131M3">3</xref>) and compared with the &lsquo;correct&rsquo; result. As in the Mckay <italic>et al.</italic>&apos;s paper, the sampling techniques investigated are random sampling, stratified sampling and Latin Hypercube sampling. Also included in the comparison is &lsquo;log-normal&rsquo; sampling, where the sampling points are generated from the assumed known log-normal distribution of parameters.</p>
+<p>Random sampling is what has been used up to this point and means each of the 192 choices of a parameter vector is just a random point in the six-dimensional parameter space of log-transformed biokinetic parameters.</p>
+<p>Stratified sampling means that the total parameter volume is subdivided into many subvolumes and a single point is chosen randomly from each subvolume. Table&nbsp;<xref ref-type="table" rid="NCN131TB11">11</xref> shows in more detail how this works. Parameters 1 through 4 have only one stratum each (the parameter values are chosen randomly from the entire range); however, parameter 5 is divided into 12 strata and parameter 6 is divided into 16 strata. The 192 models are given arbitrary two-character labels. A selection of 22 of the 192 models are shown, together with their probabilities from the real-data calculation and the subvolume from which the model parameters are selected. The probabilities show some regular dependence on model number, because of dependence on parameters 5 and 6.</p>
+<table-wrap id="NCN131TB11" position="float"><label>Table 11.</label>
+<caption><p>A selection of model posterior probabilities using stratified sampling.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="center"/>
+<col align="center"/>
+<col align="center"/>
+<col align="center"/>
+<col align="char" char="."/>
+<col align="center"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Model</th>
+<th align="left">Prob</th>
+<th colspan="6" align="center">Strata for parameters (stratified sampling 1 &times; 1 &times; 1 &times; 1 &times; 12 &times; 16)<hr/></th>
+</tr>
+<tr>
+<th/>
+<th/>
+<th align="left">Parm1</th>
+<th align="left">Parm2</th>
+<th align="left">Parm3</th>
+<th align="left">Parm4</th>
+<th align="left">Parm5</th>
+<th align="left">Parm6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>24</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>7</td>
+</tr>
+<tr>
+<td>25</td>
+<td>0.00048</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>26</td>
+<td>0.00005</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>27</td>
+<td>0.00052</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td>28</td>
+<td>0.00476</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>9</td>
+<td>7</td>
+</tr>
+<tr>
+<td>29</td>
+<td>0.32774</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>10</td>
+<td>7</td>
+</tr>
+<tr>
+<td>2a</td>
+<td>0.00958</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>11</td>
+<td>7</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>0.00382</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>12</td>
+<td>7</td>
+</tr>
+<tr>
+<td>2c</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2d</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2e</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2f</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2g</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>6</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2i</td>
+<td>0.00017</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2j</td>
+<td>0.02022</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2k</td>
+<td>0.03529</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>9</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2l</td>
+<td>0.02103</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2m</td>
+<td>0.00009</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>11</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2n</td>
+<td>0.10502</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>12</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2o</td>
+<td>0.00004</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>9</td>
+</tr>
+<tr>
+<td>2p</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>Figure&nbsp;<xref ref-type="fig" rid="NCN131F11">11</xref>, which corresponds to Figure&nbsp;<xref ref-type="fig" rid="NCN131F4">4</xref> for random sampling, shows the scatter plot of posterior probability of biokinetic models using stratified sampling. As is apparent by comparing Figures&nbsp;<xref ref-type="fig" rid="NCN131F11">11</xref> and <xref ref-type="fig" rid="NCN131F2">2</xref>, the points are more uniformly distributed using stratified sampling and would seem to give a somewhat better picture of the structure of the probability distribution, at least as far as the dependence on parameters 5 and 6 is concerned.</p>
+<fig id="NCN131F11"><label>Figure 11.</label>
+<caption><p>Scatter plot of parameter 6 versus parameter 5 for the 192 models, where parameters were generated using stratified sampling.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13111"/>
+</fig>
+<p>Latin Hypercube sampling means that each parameter is divided into 192 strata and successive samples are obtained, one sample per strata, from random permutations of these 192 strata. This is illustrated in Table&nbsp;<xref ref-type="table" rid="NCN131TB12">12</xref> for the same selection of 22 models.</p>
+<table-wrap id="NCN131TB12" position="float"><label>Table 12.</label>
+<caption><p>A selection of model posterior probabilities using Latin Hypercube sampling.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Model</th>
+<th align="left">Prob</th>
+<th colspan="6" align="center">Strata for parameters (Latin Hypercube sampling)<hr/></th>
+</tr>
+<tr>
+<th/>
+<th/>
+<th align="left">Parm1</th>
+<th align="left">Parm2</th>
+<th align="left">Parm3</th>
+<th align="left">Parm4</th>
+<th align="left">Parm5</th>
+<th align="left">Parm6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>24</td>
+<td>0</td>
+<td>72</td>
+<td>83</td>
+<td>54</td>
+<td>40</td>
+<td>85</td>
+<td>176</td>
+</tr>
+<tr>
+<td>25</td>
+<td>0.04606</td>
+<td>40</td>
+<td>51</td>
+<td>26</td>
+<td>110</td>
+<td>109</td>
+<td>99</td>
+</tr>
+<tr>
+<td>26</td>
+<td>0</td>
+<td>12</td>
+<td>5</td>
+<td>154</td>
+<td>47</td>
+<td>102</td>
+<td>177</td>
+</tr>
+<tr>
+<td>27</td>
+<td>0.00006</td>
+<td>181</td>
+<td>32</td>
+<td>168</td>
+<td>146</td>
+<td>68</td>
+<td>150</td>
+</tr>
+<tr>
+<td>28</td>
+<td>0</td>
+<td>8</td>
+<td>7</td>
+<td>10</td>
+<td>76</td>
+<td>164</td>
+<td>180</td>
+</tr>
+<tr>
+<td>29</td>
+<td>0</td>
+<td>108</td>
+<td>146</td>
+<td>92</td>
+<td>39</td>
+<td>170</td>
+<td>21</td>
+</tr>
+<tr>
+<td>2a</td>
+<td>0</td>
+<td>26</td>
+<td>80</td>
+<td>109</td>
+<td>82</td>
+<td>10</td>
+<td>80</td>
+</tr>
+<tr>
+<td>2b</td>
+<td>0</td>
+<td>51</td>
+<td>25</td>
+<td>83</td>
+<td>135</td>
+<td>118</td>
+<td>172</td>
+</tr>
+<tr>
+<td>2c</td>
+<td>0</td>
+<td>86</td>
+<td>102</td>
+<td>12</td>
+<td>41</td>
+<td>125</td>
+<td>192</td>
+</tr>
+<tr>
+<td>2d</td>
+<td>0</td>
+<td>84</td>
+<td>23</td>
+<td>44</td>
+<td>55</td>
+<td>86</td>
+<td>181</td>
+</tr>
+<tr>
+<td>2e</td>
+<td>0</td>
+<td>189</td>
+<td>65</td>
+<td>80</td>
+<td>179</td>
+<td>115</td>
+<td>55</td>
+</tr>
+<tr>
+<td>2f</td>
+<td>0</td>
+<td>106</td>
+<td>77</td>
+<td>20</td>
+<td>24</td>
+<td>18</td>
+<td>66</td>
+</tr>
+<tr>
+<td>2g</td>
+<td>0</td>
+<td>172</td>
+<td>188</td>
+<td>152</td>
+<td>161</td>
+<td>173</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2h</td>
+<td>0</td>
+<td>92</td>
+<td>113</td>
+<td>170</td>
+<td>157</td>
+<td>41</td>
+<td>72</td>
+</tr>
+<tr>
+<td>2i</td>
+<td>0</td>
+<td>16</td>
+<td>15</td>
+<td>124</td>
+<td>152</td>
+<td>191</td>
+<td>167</td>
+</tr>
+<tr>
+<td>2j</td>
+<td>0.00227</td>
+<td>140</td>
+<td>78</td>
+<td>25</td>
+<td>136</td>
+<td>150</td>
+<td>51</td>
+</tr>
+<tr>
+<td>2k</td>
+<td>0.00029</td>
+<td>97</td>
+<td>35</td>
+<td>50</td>
+<td>96</td>
+<td>130</td>
+<td>87</td>
+</tr>
+<tr>
+<td>2l</td>
+<td>0</td>
+<td>133</td>
+<td>74</td>
+<td>61</td>
+<td>59</td>
+<td>48</td>
+<td>34</td>
+</tr>
+<tr>
+<td>2m</td>
+<td>0</td>
+<td>36</td>
+<td>17</td>
+<td>15</td>
+<td>5</td>
+<td>88</td>
+<td>143</td>
+</tr>
+<tr>
+<td>2n</td>
+<td>0</td>
+<td>178</td>
+<td>164</td>
+<td>130</td>
+<td>27</td>
+<td>89</td>
+<td>163</td>
+</tr>
+<tr>
+<td>2o</td>
+<td>0</td>
+<td>87</td>
+<td>92</td>
+<td>142</td>
+<td>72</td>
+<td>90</td>
+<td>151</td>
+</tr>
+<tr>
+<td>2p</td>
+<td>0</td>
+<td>101</td>
+<td>58</td>
+<td>67</td>
+<td>66</td>
+<td>127</td>
+<td>120</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>The fact that strata are not repeated across rows in Table&nbsp;<xref ref-type="table" rid="NCN131TB12">12</xref> is purely by chance and sometimes this will occur, so Latin Hypercube sampling does not have the Latin square property. Also, the geometry of Table&nbsp;<xref ref-type="table" rid="NCN131TB12">12</xref> is clearly rectangular rather than hyper, regardless of the number of dimensions, so the name &lsquo;Latin Hypercube sampling&rsquo; seems not very descriptive (rather than say &lsquo;random permutation stratified sampling&rsquo;).</p>
+<p>In the Monte Carlo study, using the four different sampling techniques, biokinetic model points are generated and their probabilities are then calculated using the assumed known multivariate log-normal (for Goi&acirc;nia case MPA). The transformed uncorrelated parameters are calculated for each of these points and their probability distributions plotted in the same way as is done for real data in Figure&nbsp;<xref ref-type="fig" rid="NCN131F3">3</xref>. The results for a uniform distribution of parameters sampled in the three different ways show very irregular curves with big jumps in probability at only a few points, as is the case for the real data. However, using log-normal importance sampling the sampling uncertainty variations are much smaller as shown in Figure&nbsp;<xref ref-type="fig" rid="NCN131F12">12</xref>, which is comparable with Figure&nbsp;<xref ref-type="fig" rid="NCN131F5">5</xref>.</p>
+<fig id="NCN131F12"><label>Figure 12.</label>
+<caption><p>Posterior probability distribution of transformed uncorrelated variables using lognormal sampling. Except for uncertainty caused by sampling, the points should lie on a straight line through (0, 50&percnt;) with unit slope.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13112"/>
+</fig>
+<p>It is perhaps helpful to imagine this process for only one parameter (one dimension). In that case, given a certain normal distribution, points are scattered across it using some sampling method. One then uses Equation (<xref ref-type="disp-formula" rid="NCN131M2">2</xref>) to reconstruct the parameters of the original normal distribution. There will be variations of the reconstructed result caused by sampling that can be studied by randomly repeating the process a large number of times and looking at the variations of the Equation (<xref ref-type="disp-formula" rid="NCN131M2">2</xref>) results. The empirical probability distribution for the first repetition is plotted in Figure&nbsp;<xref ref-type="fig" rid="NCN131F12">12</xref>, which except for uncertainty caused by sampling, should, of course, reproduce the original normal distribution. Averages over many repetitions (333) were done in order to determine the variations due to sampling uncertainty of the mean, standard deviation and covariance given in Tables&nbsp;<xref ref-type="table" rid="NCN131TB4">4</xref> and <xref ref-type="table" rid="NCN131TB5">5</xref>. The results are shown in Tables&nbsp;<xref ref-type="table" rid="NCN131TB13">13</xref>, <xref ref-type="table" rid="NCN131TB14">14</xref> and <xref ref-type="table" rid="NCN131TB15">15</xref>.</p>
+<table-wrap id="NCN131TB13" position="float"><label>Table 13.</label>
+<caption><p>Sampling variations in mean values over 192 biokinetic models of the 6 six parameters.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="left"/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Sampling</th>
+<th align="left">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Random</td>
+<td>0.91 &plusmn; 0.70</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Stratified</td>
+<td>0.90 &plusmn; 0.71</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Latin</td>
+<td>0.89 &plusmn; 0.73</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Log-normal</td>
+<td>1.45 &plusmn; 0.06</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Random</td>
+<td>0.00 &plusmn; 0.91</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Stratified</td>
+<td>0.00 &plusmn; 0.90</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Latin</td>
+<td>0.03 &plusmn; 0.88</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Log-normal</td>
+<td>0.65 &plusmn; 0.07</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Random</td>
+<td>&minus;2.77 &plusmn; 0.41</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Stratified</td>
+<td>&minus;2.72 &plusmn; 0.40</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Latin</td>
+<td>&minus;2.71 &plusmn; 0.38</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Log-normal</td>
+<td>&minus;2.78 &plusmn; 0.02</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Random</td>
+<td>&minus;1.45 &plusmn; 0.19</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Stratified</td>
+<td>&minus;1.47 &plusmn; 0.18</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Latin</td>
+<td>&minus;1.47 &plusmn; 0.17</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Log-normal</td>
+<td>&minus;1.47 &plusmn; 0.01</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Random</td>
+<td>&minus;5.70 &plusmn; 0.21</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Stratified</td>
+<td>&minus;5.71 &plusmn; 0.21</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Latin</td>
+<td>&minus;5.69 &plusmn; 0.21</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Log-normal</td>
+<td>&minus;5.62 &plusmn; 0.01</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Random</td>
+<td>&minus;5.54 &plusmn; 0.13</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Stratified</td>
+<td>&minus;5.54 &plusmn; 0.13</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Latin</td>
+<td>&minus;5.55 &plusmn; 0.14</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Log-normal</td>
+<td>&minus;5.59 &plusmn; 0.01</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<table-wrap id="NCN131TB14" position="float"><label>Table 14.</label>
+<caption><p>Sampling variations in standard deviations over 192 biokinetic models of the 6 six parameters.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="left"/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Sampling</th>
+<th align="left">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Random</td>
+<td>0.35 &plusmn; 0.30</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Stratified</td>
+<td>0.35 &plusmn; 0.29</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Latin</td>
+<td>0.34 &plusmn; 0.29</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Log-normal</td>
+<td>0.75 &plusmn; 0.04</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Random</td>
+<td>0.44 &plusmn; 0.36</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Stratified</td>
+<td>0.44 &plusmn; 0.35</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Latin</td>
+<td>0.43 &plusmn; 0.36</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Log-normal</td>
+<td>0.94 &plusmn; 0.05</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Random</td>
+<td>0.21 &plusmn; 0.17</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Stratified</td>
+<td>0.20 &plusmn; 0.17</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Latin</td>
+<td>0.19 &plusmn; 0.16</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Log-normal</td>
+<td>0.30 &plusmn; 0.02</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Random</td>
+<td>0.10 &plusmn; 0.08</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Stratified</td>
+<td>0.10 &plusmn; 0.08</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Latin</td>
+<td>0.09 &plusmn; 0.07</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Log-normal</td>
+<td>0.13 &plusmn; 0.01</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Random</td>
+<td>0.11 &plusmn; 0.09</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Stratified</td>
+<td>0.11 &plusmn; 0.09</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Latin</td>
+<td>0.11 &plusmn; 0.09</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Log-normal</td>
+<td>0.17 &plusmn; 0.01</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Random</td>
+<td>0.07 &plusmn; 0.06</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Stratified</td>
+<td>0.07 &plusmn; 0.06</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Latin</td>
+<td>0.07 &plusmn; 0.06</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Log-normal</td>
+<td>0.11 &plusmn; 0.01</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<table-wrap id="NCN131TB15" position="float"><label>Table 15.</label>
+<caption><p>Sampling variations in the covariance obtained from 192 biokinetic models.</p></caption>
+<table frame="hsides" rules="groups">
+<colgroup>
+<col align="left"/>
+<col align="left"/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+<col align="char" char="."/>
+</colgroup>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Sampling</th>
+<th align="left">Covariance</th>
+<th/>
+<th/>
+<th/>
+<th/>
+<th/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Random</td>
+<td>1 &plusmn; 0</td>
+<td>0.64 &plusmn; 0.52</td>
+<td>&minus;0.07 &plusmn; 0.74</td>
+<td>0.10 &plusmn; 0.72</td>
+<td>0.15 &plusmn; 0.70</td>
+<td>&minus;0.07 &plusmn; 0.70</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Stratified</td>
+<td>1 &plusmn; 0</td>
+<td>0.63 &plusmn; 0.52</td>
+<td>&minus;0.12 &plusmn; 0.69</td>
+<td>0.12 &plusmn; 0.71</td>
+<td>0.14 &plusmn; 0.71</td>
+<td>&minus;0.11 &plusmn; 0.72</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Latin</td>
+<td>1 &plusmn; 0</td>
+<td>0.68 &plusmn; 0.49</td>
+<td>&minus;0.13 &plusmn; 0.72</td>
+<td>0.14 &plusmn; 0.72</td>
+<td>0.11 &plusmn; 0.72</td>
+<td>&minus;0.11 &plusmn; 0.73</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Log&minus;normal</td>
+<td>1 &plusmn; 0</td>
+<td>0.90 &plusmn; 0.01</td>
+<td>&minus;0.25 &plusmn; 0.07</td>
+<td>0.01 &plusmn; 0.07</td>
+<td>0.45 &plusmn; 0.05</td>
+<td>&minus;0.41 &plusmn; 0.06</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Random</td>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.12 &plusmn; 0.73</td>
+<td>&minus;0.17 &plusmn; 0.71</td>
+<td>0.28 &plusmn; 0.69</td>
+<td>&minus;0.21 &plusmn; 0.71</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Stratified</td>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.18 &plusmn; 0.71</td>
+<td>&minus;0.19 &plusmn; 0.70</td>
+<td>0.28 &plusmn; 0.67</td>
+<td>&minus;0.29 &plusmn; 0.68</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Latin</td>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.23 &plusmn; 0.72</td>
+<td>&minus;0.05 &plusmn; 0.74</td>
+<td>0.27 &plusmn; 0.70</td>
+<td>&minus;0.28 &plusmn; 0.70</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Log-normal</td>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.33 &plusmn; 0.06</td>
+<td>&minus;0.20 &plusmn; 0.07</td>
+<td>0.53 &plusmn; 0.05</td>
+<td>&minus;0.53 &plusmn; 0.05</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Random</td>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.56 &plusmn; 0.57</td>
+<td>0.08 &plusmn; 0.72</td>
+<td>0.08 &plusmn; 0.72</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Stratified</td>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.45 &plusmn; 0.65</td>
+<td>0.05 &plusmn; 0.70</td>
+<td>0.09 &plusmn; 0.69</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Latin</td>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.54 &plusmn; 0.58</td>
+<td>0.05 &plusmn; 0.71</td>
+<td>0.09 &plusmn; 0.72</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Log-normal</td>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.57 &plusmn; 0.05</td>
+<td>&minus;0.02 &plusmn; 0.07</td>
+<td>0.22 &plusmn; 0.07</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Random</td>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.21 &plusmn; 0.70</td>
+<td>0.25 &plusmn; 0.69</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Stratified</td>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.15 &plusmn; 0.68</td>
+<td>0.25 &plusmn; 0.69</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Latin</td>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.16 &plusmn; 0.70</td>
+<td>0.25 &plusmn; 0.70</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Log-normal</td>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.30 &plusmn; 0.07</td>
+<td>0.33 &plusmn; 0.07</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Random</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.75 &plusmn; 0.40</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Stratified</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.76 &plusmn; 0.41</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Latin</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.78 &plusmn; 0.43</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Log-normal</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+<td>&minus;0.89 &plusmn; 0.01</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Random</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Stratified</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Latin</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Log-normal</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>1 &plusmn; 0</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>It is apparent that all the first three sampling methods for a uniform distribution of parameters perform essentially equally in terms of the amount of uncertainty caused by sampling, and log-normal sampling causes a striking improvement. This fact is easy to understand by comparing Figures&nbsp;<xref ref-type="fig" rid="NCN131F4">4</xref> or 11 with Figure&nbsp;<xref ref-type="fig" rid="NCN131F6">6</xref>. When the biokinetic parameters are generated uniformly over their entire ranges, only a small number of models have significant probability and the sampling uncertainty is large. However, when the biokinetic parameters are generated from an approximation to the underlying actual distribution, many more models have significant probability, and the sampling uncertainty is much less.</p>
+<p>The conclusion from this empirical study of the three sampling methods random, stratified, and Latin Hypercube sampling, is that there is no perceptible difference for the case (Goi&acirc;nia MPA) considered. One knows theoretically<sup>(<xref ref-type="bibr" rid="NCN131C10">10</xref>,<xref ref-type="bibr" rid="NCN131C11">11</xref>)</sup> that stratified sampling is always equal to or better than random sampling, and simple examples where stratified sampling is significantly better than random sampling can readily be constructed, as is shown in the Appendix. However, in situations such as this one, the difference may not be perceptible. The disadvantage of stratified sampling is that one needs to apportion the strata amongst the various parameters (dimensions), and with a large number of parameters (high-dimensional space), it is not clear how to best do this. Latin Hypercube sampling is theoretically expected to be better than random sampling if a certain covariance term is negative<sup>(<xref ref-type="bibr" rid="NCN131C10">10</xref>)</sup>, so the situation is less clear. A sufficient condition for this negative covariance term is that the function being sampled is monotonic, unlike the posterior probability in the present problem. Our recommendation based on this study is that simple random sampling be used for problems of this type.</p>
+</sec>
+<sec id="s8"><title>FUNDING</title>
+<p>This work was funded in part by Los Alamos National Laboratory/US Department of Energy.</p>
+</sec>
+</body>
+<back>
+<ack><title>ACKNOWLEDGEMENT</title>
+<p>The authors would like to acknowledge helpful conversations with Iulian Apostoaie.</p>
+</ack>
+<ref-list><title>REFERENCES</title>
+<ref id="NCN131C1"><label>1</label><nlm-citation citation-type="journal"><person-group person-group-type="author"><name><surname>Schwartz</surname><given-names>G</given-names></name><name><surname>Dunning</surname><given-names>D. E</given-names><suffix>Jr.</suffix></name></person-group><article-title>Imprecision in estimates of dose from ingested Cs-137 due to variability in human biological characteristics</article-title><source>Health Phys</source><year>1982</year><volume>43</volume><fpage>631</fpage><lpage>643</lpage></nlm-citation></ref>
+<ref id="NCN131C2"><label>2</label><nlm-citation citation-type="journal"><person-group person-group-type="author"><name><surname>Apostoaei</surname><given-names>A. I.</given-names></name><name><surname>Miller</surname><given-names>L. F.</given-names></name></person-group><article-title>Uncertainties in dose coefficients from ingestion of <sup>131</sup>I, <sup>137</sup>Cs, and <sup>90</sup>Sr</article-title><source>Health Phys</source><year>2004</year><volume>86</volume><fpage>460</fpage><lpage>482</lpage></nlm-citation></ref>
+<ref id="NCN131C3"><label>3</label><nlm-citation citation-type="book"><collab>International Commission on Radiological Protection (ICRP)</collab><article-title>Age-dependent Doses of the Public from Intake of Radionuclides</article-title><year>1989</year><publisher-loc>Oxford</publisher-loc><publisher-name>Pergamon Press</publisher-name><comment>ICRP Publication 56. International Commission of Radiological Protection Part 1</comment></nlm-citation></ref>
+<ref id="NCN131C4"><label>4</label><nlm-citation citation-type="book"><collab>LANL</collab><article-title>Internal dosimetry verification and validation test cases and Los Alamos Bayesian internal dosimetry codes ID and UF</article-title><year>2003</year><comment>software, Bayesian software package II. Available on <uri xlink:href="www.lanl.gov/bayesian">www.lanl.gov/bayesian</uri></comment></nlm-citation></ref>
+<ref id="NCN131C5"><label>5</label><nlm-citation citation-type="journal"><person-group person-group-type="author"><name><surname>Miller</surname><given-names>G</given-names></name></person-group><article-title>Statistical modeling of poisson-lognormal data</article-title><source>Radiat. Protect. Dosim.</source><year>2007</year><volume>124</volume><issue>2</issue><fpage>155</fpage><lpage>163</lpage></nlm-citation></ref>
+<ref id="NCN131C6"><label>6</label><nlm-citation citation-type="journal"><collab>International Atomic Energy Agency (IAEA)</collab><source>The Radiological Accident in Goi&acirc;nia</source><year>1988</year><publisher-loc>Vienna</publisher-loc><publisher-name>IAEA</publisher-name></nlm-citation></ref>
+<ref id="NCN131C7"><label>7</label><nlm-citation citation-type="book"><collab>International Commission of Radiological Protection (ICRP)</collab><source>Human Respiratory Tract Model for Radiological Protection</source><year>1994</year><publisher-loc>Oxford</publisher-loc><publisher-name>Pergamon Press</publisher-name><comment>ICRP Publication 66. International Commission of Radiological Protection Chapter 3</comment></nlm-citation></ref>
+<ref id="NCN131C8"><label>8</label><nlm-citation citation-type="journal"><person-group person-group-type="author"><name><surname>Lipsztein</surname><given-names>J. L.</given-names></name><name><surname>Bertelli</surname><given-names>L.</given-names></name><name><surname>Melo</surname><given-names>D. R.</given-names></name><name><surname>Azeredo</surname><given-names>A. M. G. F.</given-names></name><name><surname>Juliao</surname><given-names>L.</given-names></name><name><surname>Santos</surname><given-names>M. S.</given-names></name></person-group><article-title>Application of in vitro bioassay for <sup>137</sup>Cs during the emergency phase of the Goi&acirc;nia accident</article-title><source>Health Phys</source><year>1991</year><volume>60</volume><issue>1</issue><comment>57</comment></nlm-citation></ref>
+<ref id="NCN131C9"><label>9</label><nlm-citation citation-type="journal"><person-group person-group-type="author"><name><surname>Oliveira</surname><given-names>C. A. N.</given-names></name><name><surname>Lourenco</surname><given-names>M. C.</given-names></name><name><surname>Dantas</surname><given-names>B. M.</given-names></name><name><surname>Lucena</surname><given-names>E. A.</given-names></name></person-group><article-title>Design and operation of a whole body monitoring system for the Goi&acirc;nia radiation accident</article-title><source>Health Phys.</source><year>1991</year><volume>60</volume><issue>1</issue><fpage>51</fpage></nlm-citation></ref>
+<ref id="NCN131C10"><label>10</label><nlm-citation citation-type="journal"><person-group person-group-type="author"><name><surname>Mckay</surname><given-names>M. D.</given-names></name><name><surname>Beckman</surname><given-names>R. J.</given-names></name><name><surname>Conover</surname><given-names>W. J.</given-names></name></person-group><article-title>A comparison of three methods for selecting values of input variables in the analysis of output from a computer code</article-title><source>Technometrics</source><year>1979</year><volume>21</volume><issue>2</issue><fpage>239</fpage><lpage>245</lpage></nlm-citation></ref>
+<ref id="NCN131C11"><label>11</label><nlm-citation citation-type="book"><person-group person-group-type="author"><name><surname>Tocher</surname><given-names>K. D.</given-names></name></person-group><source>The Art of Simulation</source><year>1963</year><publisher-loc>Princeton</publisher-loc><publisher-name>Van Nostrand</publisher-name></nlm-citation></ref>
+<ref id="NCN131C12"><label>12</label><nlm-citation citation-type="journal"><collab>International Commission on Radiological Protection (ICRP)</collab><source>Basic anatomical and physiological data for use in radiological protection: reference values</source><year>2002</year><publisher-name>ICRP Publication 89</publisher-name><comment>International Commission of Radiological Protection (Elsevier, <uri xlink:href="www.elsevier.com">www.elsevier.com</uri>)</comment></nlm-citation></ref>
+</ref-list>
+<app-group>
+<app><title>APPENDIX: COMPARISON OF RANDOM, STRATIFIED AND LATIN HYPERCUBE SAMPLING</title>
+<sec id="s9">
+<title/>
+<p>In this numerical example, there are assumed to be only two parameters, and a two-dimensional normal distribution is assumed to represent the actual posterior distribution. The prior distribution of each parameter is assumed to be log-scale uniform with a range of a factor of 100 from smallest value to largest values, centred on the log-scale mean value. The log-scale standard deviations of the two parameters are assumed to be 0.3, and the parameters are assumed to be uncorrelated. The prior probability distribution is sampled some number of times and the parameters of the normal distribution calculated using Equation (2), where the posterior probability is the probability calculated from the assumed normal distribution. The process is repeated a large number of times (333) and standard deviations are calculated as a measure of sampling variability. Figures <xref ref-type="fig" rid="NCN131F13">A.1</xref>, <xref ref-type="fig" rid="NCN131F14">A.2</xref> and <xref ref-type="fig" rid="NCN131F15">A.3</xref> show the results for random sampling, stratified sampling and Latin Hypercube sampling.</p>
+<fig id="NCN131F13"><label>Figure A1.</label>
+<caption><p>Reconstructed standard deviation of an assumed two-dimension normal.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13113"/>
+</fig>
+<fig id="NCN131F14"><label>Figure A2.</label>
+<caption><p>Reconstructed standard deviation using stratified sampling.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13114"/>
+</fig>
+<fig id="NCN131F15"><label>Figure A3.</label>
+<caption><p>Reconstructed standard deviation using Latin Hypercube sampling.</p></caption>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ncn13115"/>
+</fig>
+<p>As can be seen, stratified sampling (number of strata &equals; square root of number of samples) gives a significant improvement over random sampling, however Latin Hypercube sampling and random sampling seem to be have approximately the same sampling uncertainty.</p>
+</sec>
+</app>
+</app-group>
+</back>
+</article>

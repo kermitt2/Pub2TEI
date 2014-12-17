@@ -1,0 +1,68 @@
+<!-- ISO TECH: General Technical -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY aleph	"&#x2135;"> <!-- aleph, Hebrew -->
+<!ENTITY and	"&#x2227;"> <!-- logical and -->
+<!ENTITY ang90	"&#x221F;"> <!-- right angle -->
+<!ENTITY angsph	"&#x2222;"> <!-- angle-spherical -->
+<!ENTITY angst	"&#x212B;"> <!-- angstrom capital A, ring -->
+<!ENTITY ap	"&#x2248;"> <!-- approximate -->
+<!ENTITY becaus	"&#x2235;"> <!-- because -->
+<!ENTITY bernou	"&#x212C;"> <!-- Bernoulli function (script capital B) -->
+<!ENTITY bottom	"&#x22A5;"> <!-- bottom -->
+<!ENTITY cap	"&#x2229;"> <!-- intersection -->
+<!ENTITY compfn	"&#x2218;"> <!-- composite function (small circle) -->
+<!ENTITY cong	"&#x2245;"> <!-- congruent with -->
+<!ENTITY conint	"&#x222E;"> <!-- contour integral operator -->
+<!ENTITY cup	"&#x222A;"> <!-- union or logical sum -->
+<!ENTITY Dot	"&#x0308;"> <!-- dieresis or umlaut mark. MathML has x00A8 -->
+<!ENTITY DotDot	"&#x20DC;"> <!-- four dots above -->
+<!ENTITY equiv	"&#x2261;"> <!-- identical with -->
+<!ENTITY exist	"&#x2203;"> <!-- at least on exists -->
+<!ENTITY fnof	"&#x0192;"> <!-- function of (italic small f) -->
+<!ENTITY forall	"&#x2200;"> <!-- for all -->
+<!ENTITY ge	"&#x2265;"> <!-- greater-than-or-equal -->
+<!ENTITY hamilt	"&#x210B;"> <!-- Hamiltonian (script capital H) -->
+<!ENTITY iff	"&#x27FA;"> <!-- if and only if. MathML has x21D4 -->
+<!ENTITY infin	"&#x221E;"> <!-- infinity -->
+<!ENTITY int	"&#x222B;"> <!-- integral operator -->
+<!ENTITY isin	"&#x220A;"> <!-- set membership. MathML has x2208 -->
+<!ENTITY lagran	"&#x2112;"> <!-- Lagrangian (script capital L) -->
+<!ENTITY lang	"&#x27E8;"> <!-- left angle bracket -->
+<!ENTITY lArr	"&#x21D0;"> <!-- left arrow, is implied by -->
+<!ENTITY le	"&#x2264;"> <!-- less-then-or-equal -->
+<!ENTITY lowast	"&#x2217;"> <!-- low asterisk -->
+<!ENTITY minus	"&#x2212;"> <!-- minus sign -->
+<!ENTITY mnplus	"&#x2213;"> <!-- minus-or-plus sign -->
+<!ENTITY nabla	"&#x2207;"> <!-- del, Hamilton operator -->
+<!ENTITY ne	"&#x2260;"> <!-- not equal -->
+<!ENTITY ni	"&#x220D;"> <!-- contains. MathML has x220B -->
+<!ENTITY notin	"&#x2209;"> <!-- negated set membership -->
+<!ENTITY or	"&#x2228;"> <!-- logical or -->
+<!ENTITY order	"&#x2134;"> <!-- order of (script small O) -->
+<!ENTITY par	"&#x2225;"> <!-- parallel -->
+<!ENTITY part	"&#x2202;"> <!-- partial differential -->
+<!ENTITY permil	"&#x2030;"> <!-- per thousand -->
+<!ENTITY perp	"&#x22A5;"> <!-- perpendicular -->
+<!ENTITY phmmat	"&#x2133;"> <!-- physics M-matrix (script capital M) -->
+<!ENTITY Prime	"&#x2033;"> <!-- double prime or second -->
+<!ENTITY prime	"&#x2032;"> <!-- prime or minute -->
+<!ENTITY prop	"&#x221D;"> <!-- is proportional to -->
+<!ENTITY radic	"&#x221A;"> <!-- surd or radical -->
+<!ENTITY rang	"&#x27E9;"> <!-- right angle bracket -->
+<!ENTITY rArr	"&#x21D2;"> <!-- rightarrow, implies -->
+<!ENTITY sim	"&#x223C;"> <!-- similar -->
+<!ENTITY sime	"&#x2243;"> <!-- similar, equals -->
+<!ENTITY square	"&#x25A1;"> <!-- square -->
+<!ENTITY sub	"&#x2282;"> <!-- subset or is implied by -->
+<!ENTITY sube	"&#x2286;"> <!-- subset, equals -->
+<!ENTITY sup	"&#x2283;"> <!-- superset or implies -->
+<!ENTITY supe	"&#x2287;"> <!-- superset, equals -->
+<!ENTITY tdot	"&#x20DB;"> <!-- three dots above -->
+<!ENTITY there4	"&#x2234;"> <!-- therefore -->
+<!ENTITY top    "&#x22A4;"> <!-- top -->
+<!ENTITY tprime	"&#x2034;"> <!-- triple prime -->
+<!ENTITY Verbar	"&#x2016;"> <!-- dbl vertical bar -->
+<!ENTITY wedgeq	"&#x2259;"> <!-- corresponds to (wedge, equals) -->

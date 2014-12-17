@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "../../DTDs/rscart36.dtd">
+<article dtd="RSCPA3.6" type="ART" price-code="free">
+  <art-admin>
+    <ms-id>DT9930000173</ms-id>
+    <doi>10.1039/DT9930000173</doi>
+  </art-admin>
+  <published type="print">
+    <journalref>
+      <link>DT</link>
+    </journalref>
+    <volumeref>
+      <link>
+</link>
+    </volumeref>
+    <issueref>
+      <link>1</link>
+    </issueref>
+    <pubfront>
+      <fpage>173</fpage>
+      <lpage>178</lpage>
+      <no-of-pages>6</no-of-pages>
+      <date>
+        <year>1993</year>
+      </date>
+    </pubfront>
+  </published>
+  <published type="subsyear">
+    <journalref>
+      <link>DT</link>
+    </journalref>
+    <pubfront>
+      <fpage>
+</fpage>
+      <lpage>
+</lpage>
+      <no-of-pages>
+</no-of-pages>
+      <date>
+        <year>1993</year>
+      </date>
+    </pubfront>
+  </published>
+  <art-front>
+    <titlegrp>
+      <title>Influence of interstitial atoms in transition-metal carbonyl clusters</title>
+    </titlegrp>
+    <authgrp>
+      <author>
+        <person>
+          <persname>
+            <fname>Angelo</fname>
+            <surname>Sironi</surname>
+          </persname>
+        </person>
+      </author>
+    </authgrp>
+    <abstract>
+      <p>The interactions between interstitial atoms (i.a.s) and cluster orbitals have been classified using qualitative perturbation theory arguments. The number of cluster valence orbitals contributed by the i.a. is shown to depend on the energy, shape and contraction of the i.a. and cage orbitals. Stereochemical effects of the i.a.s on transition-metal carbonyl clusters are discussed on the basis of molecular mechanics and extended Hückel computations. In general, a strong influence of the interstitial atoms on the ligand stereogeometry is expected. However, the energy and the shape of the cluster orbitals depend on the details of the ligand stereochemistry and the exact relationships between the inner interstitial atom, the cluster stoichiometry, and the outer ligand geometry need to be determined for each individual case. Interstitial atoms can affect both the cluster electronic requirements and the ligand stereochemistry and cannot merely be considered as <it>innocent</it>‘internal ligands’.</p>
+    </abstract>
+  </art-front>
+  <art-body>
+    <section type="PDFExtract">
+      <title>
+</title>
+      <p>J. CHEM. SOC. DALTON TRANS. 1993 173Influence of Interstitial Atoms in Transition-metal CarbonylClusters *Angelo Sironilstituto di Chimica Strutturistica lnorganica, Via Venezian 2 7, 20 133 Milano, ItalyThe interactions between interstitial atoms (i.a.s) and cluster orbitals have been classified usingqualitative perturbation theory arguments. The number of cluster valence orbitals contributed by theLa. is shown to depend on the energy, shape and contraction of t h e i.a. and cage orbitals.Stereochemical effects of the i.a.s on transition-metal carbonyl clusters are discussed on the basis ofmolecular mechanics and extended Huckel computations. In general, a strong influence of theinterstitial atoms on the ligand stereogeometry is expected. However, the energy and the shape of thecluster orbitals depend on the details of the ligand stereochemistry and the exact relationshipsbetween the inner interstitial atom, the cluster stoichiometry, and the outer ligand geometry need tobe determined for each individual case. </p>
+      <p>Interstitial atoms can affect both the cluster electronicrequirements and the ligand stereochemistry and cannot merely be considered a s innocent 'internal1 i g a nds' .The properties of medium-size metal carbonyl clustersare often rationalized by partitioning the cluster into a fewdifferent entities: a metal cage, a ligand envelope and, if present,an interstitial atom (i.a.). These entities, even in the presence ofstrong reciprocal interactions, are commonly assumed to haveindependent natures. In other words, the following implicitassumptions are commonly found in the literature: (i) therequired number of cluster valence electrons (c.v.e.s) reflectsonly the shape of the metal cage and it is not affected by theligand number and stereochemistry; (ii) the shape of the ligandenvelope is mainly dictated by the need of a rational filling of thevolume around the metal cage; (iii) the interstitial atom is an'internal ligand' not affecting the required number of c.v.e.s (twoclusters with a similar metal cage have to be isoelectronic,whether or not the cage contains an i.a.); (iu) the interstitialatom size is of key structural importance in defining the metalliccluster shape but the ligand envelope is unaffected by thepresence of an i.a.There are many exceptions to the relationship betweencluster shape and electron book-keeping, but nevertheless itrationalizes an amazing amount of data.'.2 On the contrary, theidentification of the number of c.v.e.s of empty and filled cavitiesrelies mainly on data concerning interstitial main-groupelements (Table 1); experimental results for interstitialtransition-metal atoms are somewhat sparse, since there areonly few data about large cavities which, when an i.a. </p>
+      <p>is lacking,are unstable and normally relax to a more compact shape. Theonly clusters structurally characterized so far in both forms(containing either an empty cage or an interstitial transitionelement) have icosahedral or cuboctahedral shape andcontradict the isoelectronicity principle (Table 1). </p>
+      <p>Moreover,when clusters of valence-electron-poor metals with x-donorligands are considered, 'closed-shell' d-filled metal clustersare found to have four valence electrons more than thecorresponding empty or p-filled ones8Molecular orbital (MO) computations can in principle affordinformation about the missing large empty cavities. Emptyanticuboctahedral clusters, for instance, are still lacking but, on~ ~~* Supplementary data available (No. SUP 56909, 6 pp.): calculatedgeometrical parameters for [Rh,(CO),,] stereoisomers 1-111 obtainedby molecular mechanics computations. See Instructions for Authors, J.Chem. SOC., Dalton Trans., 1993, Issue 1, pp. xxiii-xxviii.Non-SZ units employed: eV = 1.6 x J, kcal x 4.184 kJ.the basis of extended Huckel (EH) computations on the modelcompounds Rh,H,, (n = 12 or 13)," have been proposed to beisoelectronic to the well known family of filled anticubocta-hedral rhodium clusters [Rh12(pL,2-Rh)(C0)24H, -,]"-(n =1-5)' The interstitial Rh atom, in such a case, should behaveas a genuine internal ligand.We have recently rationalized, on the basis of EH comput-ations, the electron book-keeping in [Ni $b,(pI2-Ni)-(CO),),]4-,7 where the interstitial transition-metal atomsshow all their distinctive differences from interstitial main-group elements. </p>
+      <p>The aim of this paper is to generalize theseresults using a perturbational approach.(C0)18(Ni(C0)3)21n- (n = 2-41 and CAg12(p12-Ag){Fe-Results and DiscussionInfluence on Cluster Electron Requirements.-Within theperturbation theory the amount of interaction between twofragments, i.e. </p>
+      <p>the i.a. and the cluster (empty cage plus ligandenvelope), depends on the relative energy and overlap of theinteracting orbitals.12 Depicted in Fig. 1 are the con-ceivable diagrams describing the interaction between one i.a.orbital and its cluster counterparts on varying their relativeenergy. The multitude of cluster orbitals has been idealized byselecting just two of them, one each from the two boxes ofvalence and empty orbitals. Even if the interactions are notlimited to these orbitals, and metal-i.a. bonding cannot berationalized using a localized bonding scheme, the idealizeddiagrams are equally informative when electron book-keepingalone is concerned.The interaction diagrams in Fig. </p>
+      <p>1 have been labelledaccording to the relative energy of the i.a./cage orbitals. Inparticular A, B and C refer to i.a. orbitals with energy less than,similar to, and larger than the HOMO-LUMO gap of the cage(HOMO = highest occupied, LUMO = lowest unoccupiedmolecular orbital), respectively, and the subscripts correspondto the number of cluster valence (c.v.) orbitals contributed peri.a. orbital in the specific interaction. All the orbitals of the filledcluster are omitted in Fig. 1 except those resulting from the(idealized) interaction of the three selected orbitals, two fromthe cage and one from the i.a. These three MOs (at low,intermediate and high energy, respectively) are represented inFig. </p>
+      <p>1 as black (filled by two electrons) or white (empty) boxes.When the intermediate MO has similar or lower energy tha174 J. CHEM. SOC. DALTON TRANS. 1993Table 1 Classification of cluster geometries and comparison of predicted us. observed c.v.e. number”Cage geometry(c.v.e.s)Octahedron(86)Trigonal prism(90)Square antiprism(1 18)Cube(120)Capped square antiprism(1 30)Bicapped square antiprism( 142)Pentagonal antiprism( 146)Icosahedron(170)Anticuboctahedron(1 70)Cuboctahedron(1 70)Rhombododecahedron(198)p-Filled(c.v.e.s)(86)CRU6(p6-C)(C0)1 71d-Filled(c.v.e.s)a The table has been compiled from ref. 1, which contains the references to the original literature. The absence of an entry means that there are noknown examples. </p>
+      <p>In parentheses below the polyhedron type is the number of c.v.e.s expected on the basis of polyhedral skeletal electron pair approach(PSEP) theory.’ In parentheses below the formulae are the number of observed c.v.e.s obtained on adding 10 d electrons for each main-group element(if present). In square brackets are the number of observed c.v.e.s assuming the absence of a d-electron contribution from the main-group element(s).Note, however, interstitial- and cage-main-group elements have (currently) a different status in electron book-keeping, the ‘missing d’ electrons beingconsidered only for the latter. Ref. 3. ‘ Ref. 4. Ref. 5. Ref. 6. Ref. 7.A1 A0 A; Bo B1 c1 coFig. 1 Molecular orbital diagrams for one interstitial atom orbitalinteracting with its cluster counterparts on varying their relative energy.On each diagram the two large boxes indicate (i) the valence- and (ii)the empty-cluster orbitals separated by the HOMO-LUMO gap. </p>
+      <p>Theinteraction with the cluster has been idealized by selecting two orbitals,one from each of the two boxes. Clearly the interactions are not limitedto these orbitals, nevertheless, when only the electron book-keeping isconcerned, the idealized diagrams are equally informative. Theinteraction diagrams have been labelled according to the relative energyof the i.a./cage orbitals. In particular A, Band C refer to i.a. orbitals withenergy less than, similar to, and larger than the HOMO-LUMO gap ofthe cage, respectively, and the subscripts correspond to the number ofC.V. </p>
+      <p>orbitals contributed per i.a. orbital. All the orbitals of the filledcluster are omitted except those resulting from the (idealized)interaction of the three selected orbitals, two from the cage and one fromthe i.a. These three MOs (at low, intermediate and high energy,respectively) are represented in the figure as black (filled by twoelectrons) or white (empty) boxes. When the intermediate MO hassimilar or lower energy than the HOMO of the empty cage it willcontain two electrons and the filled cluster will have an extra C.V. orbitalthe HOMO of the empty cage it will contain two electrons andthe filled cluster will have an extra C.V. orbital.On raising the i.a. orbital energy the following cases can beforeseen.(i) Low energy and contracted i.a. </p>
+      <p>orbitals (d orbitalsof the late-transition elements, ‘valence’ d orbitals of theheaviest main-group elements) will interact marginally with thecluster orbitals and hence afford A ,-type interactions.(ii) Well shaped and suitable energy i.a. orbitals (s or porbitals of the main-group elements, d orbitals of the early-transition elements) are normally involved in A,-type inter-actions or, if they do not match (the symmetry of) any valencecluster orbitals, in A,’-type interactions; in the latter case theextra C.V. orbital derives almost exclusively from the unchangedi.a. orbital which, being lower in energy than the cage HOMO,must be filled.(iii) i.a. orbitals with energy within the HOMO-LUMO gapof the empty cluster give rise t o B,- or B,-type interactionsdepending on their better overlap with the valence or virtualorbitals, respectively.(io) Medium and high energy i.a. </p>
+      <p>orbitals (s or p orbitals ofthe transition elements) will be involved in C,- or C,-typeinteractions.Interaction diagrams like those depicted in Fig. 1 are rathertrivial and have been discussed before.2” 3 , l4 Nevertheless, littleattention (if any) has been devoted to A,, B, and C1 interactiontypes and most of the generalization, focusing on A,,,’ Boand/or C, interactions,16 leads to the conclusion that i.a.s are‘innocent internal ligands’ which do not perturb the clusterelectron requirements. A notable exception has been thebonding analysis of transition-metal centred zirconium (andrare-earth metal) halide clusters, all sharing the common M&amp;-X), 2x6 local ligand stereogeometry, where two i.a. </p>
+      <p>d orbitals ofe, symmetry (involved in two A,‘-type interactions) have beenclearly recognized to contribute two extra C.V. orbitals.*Relative orbital energy is the only apparent variable in Fig. 1.Nevertheless, knowing that (i.a.-dlcage) overlap integrals arenormally smaller (by a factor of two, or more) than thecorresponding (i.a.-slcage) and (La.-plcage) overlap integralsit may be assumed that d orbitals interact less effectively thanthe s and p orbitals, leading to a smaller spread of levels in thediagrams. This implies, for instance, that the transition betweeJ. CHEM. SOC. DALTON TRANS. 1993 175Table 2 Relative energies of stereoisomers I, I1 and I11 forCM6(CO)141? CRh6(C0)1414- and CRh6(C16-C)(C0)141"MMb EH EHI 2.5 0.0 77.8I1 0.0 40.3 25.7I11 2.6 20.1 0.0StereOiSOmeI' [M,(cO)14] [Rh6(co)14]4- [Rh6(p6-C)(C0)14]All the energies (kcal mol-') are relative to the most stablestereoisomer. </p>
+      <p>* Steric energies computed using molecular mechanicscalculations. Total energies computed using extended Huckel cal-culations.A - and A,-type interactions will arise at relatively higherenergy for d rather than for s and p orbitals. Overlap effects canroughly be evaluated, in a similar way, in all the other situationsbut, unfortunately, variables like the 'real' position of theHOMO-LUMO gap and the shape of the cluster orbitalscannot be determined apriori, in spite of their importance. </p>
+      <p>Thus,computations only allow the assignment of a particularinteraction to the B, or B, type, by showing that a given i.a.orbital has a better energy and overlap match with some valence(rather than some virtual) cluster orbital. However, even if anunambiguous assignment cannot be made a priori, a tendency isclear; on raising the energy of one i.a. orbital there is afluctuation in the number of C.V. orbitals it contributes; as aconsequence, a fluctuation in the number of C.V. orbitals,contributed by the different chemical elements on movingalong a row of the Periodic Table, is expected. On filling anelectronic subshell, the orbitals become more and more stableand contracted, and exhibit most of the different (C-A ofFig. 1) interaction types. </p>
+      <p>This should be particularly evidentfor the d orbitals on moving from early- to late-transitionelements and, even if the lack of experimental data oninterstitial early-transition metals hampers a direct observationof the 'fluctuating' behaviour, the few data available aboutinterstitial late-transition elements agree with the proposedscheme. For instance, the icosahedral anions [Ni 10Sb2(p12-Ni)(CO), s f Ni(CO),} 2]n-,' ' and [Nil OBi2(p1 2-Ni)(CO) J"-(n = 2+1)4 have four or five C.V. orbitals more than [Ni12(p12-Sn)(CO),,]' ~ ,, essentially because the interstitial Ni d orbitalsare too contracted (five A,-type interactions).' Moreover, adetailed MO analysis of [Ag,2(p12-Ag){Fe(C0)4}8]4-,7 whichpossesses a cuboctahedral core, has clearly shown that it isclosely related to the [Cu,,S,]"- anion,6 and that the six C.V.orbitals in excess originate from the i.a. </p>
+      <p>d (five A,-typeinteractions) and s (one B,-type interaction) orbitals.The fact that even a strongly interacting s orbital can afforda new C.V. orbital, rules out any possible general statementabout interstitial atoms and suggests that the nature of the cageatoms, the shape of the cage and the stereochemistry of theligand envelope must always be taken into account, since theydetermine the position of the HOMO-LUMO gap and theshape of the cluster Orbitals.Interstitial main-group elements normally work as 'internalligands' not affecting the number of c.v. orbitals (because their sand p orbitals strongly interact in a A,-type mode); some,however (for instance B, Si, Ge and Sn), have p orbitals with theright energy for setting up B,- or C,-type interactions and couldbehave 'abnormally', at least in principle, if suitable orbitalswere present in the empty cluster. </p>
+      <p>Also, oxygen and fluorine sorbitals are stable and contracted enough to be involved in A,-type interactions.The interaction schemes outlined in Fig. 1, together with aclose analysis of the energy and diffuseness of the atomicorbitals of the possible i.a.s, might give other possible'exceptions' but, owing to the versatility of co-ordination of theexternal CO ligands, there are so many combinations of freecharges, ligand numbers and stereochemistries that it isprohibitive to test all the different possibilities for the shape andenergies of the 'empty' cluster orbitals. </p>
+      <p>Hence it is thought thatFig. 1 will be mainly relevant in the a posteriori classification ofthe observed behaviours.The relevance of the ligand stereochemistry in determiningthe cluster-i.a. interactions can also be proved by tackling theproblem from the opposite point of view and, in the next section,how the shape of the ligand envelope is affected by the presence(or absence) of an interstitial atom is considered.Influence on the Ligand Stereochemistry. A Working Ex-ample.-The weakness of a purely steric model of the ligandenvelope has been recently pointed out by simulating mostof the known octahedral carbonyl clusters with molecularmechanics (MM) and comparing 'theoretical' and experimentalgeometries.' Here, octahedral clusters of general formula[M6C1-,(C0)14]4n- (M = Co, Rh or Ir; n = 0 or 1) (whosestoichiometries are in accordance with the usual electronicrequirements of 86 c.v.e.s ') are considered, in order to test if thepresence of the interstitial carbon atom does or does notinfluence the ligand stereochemistry.The three most reasonable candidate stereogeometries for aM6(CO)], cluster are: I, of Oh symmetry, with eight COs p3-bridging all the faces and one terminal CO per metal atom [Fig.2(a)]; 11, of C,, symmetry, with two COs p,-bridging twoopposite faces and two terminal COs per metal atom [Fig. </p>
+      <p>2(b)];and 111, of Czu symmetry, with four asymmetric and twosymmetric p-CO [Fig. </p>
+      <p>2(c)].'Stereoisomers 1-111 have been built using Allinger's MM2program,' ti modified for handling metal carbonyl cluster^,'^ andthe computer-generated geometries have been used in the EHcomputations for the hypothetical [Rh,(C0)14]4- and[Rh6C(CO),,] clusters (SUP 56909). The stereoisomers werebuilt using the parameter set E of ref. 17 corresponding to aM-M bond distance of 2.80 A [the average Rh-Rh bonddistance in Rh,(CO),, being 2.78 A]. Since the octahedralcavity is large enough to accommodate the interstitial carbonatom without any relevant distortion, it is possible to compare(CO),,] using exactly the same stereogeometry. The choice of asmaller cage for a straight comparison with the known cobaltderivatives (see below) would be hampered by the need toimpose large distortions on the metal cage of the carbidespecies. </p>
+      <p>The parameters for the EH computations were takenfrom ref. 19.The results of MM and EH computations, reported in Table2, clearly confirm the earlier suggestion that intramolecularsteric interactions are not the leading term in determining themetal carbonyl cluster stereogeometries.' 7,* In fact, the relativeenergies obtained through MM, which only account (in thepresent form) for intramolecular steric interactions, are muchsmaller (and suggest opposite conclusions) than those ob-tained through EH computations, which also account forstereoelectronic effects.The comparison between the EH relative energies (Table 2)of empty and C-centred clusters clearly indicates that theinterstitial carbon atom has a determining role in driving theligand stereochemistry. </p>
+      <p>In fact for the empty [Rh6(CO),,]4-the most stable stereoisomer is I while for the C-centred[Rh,C(CO),,] the most stable one is 111. Accordingly stereo-geometry I has been observed in the empty [CO,(CO),,]~-anion,', stereogeometry I1 (suggested by MM) has not yet beenobserved, while stereogeometry 111 has been found in the C-centred [co6c(co)14] - anion {note however that [Co,C-the EH computations of [Rh6(C0)14]4- and [Rh6(p6-C)-* Some early work on the relative importance of cluster and ligand-sphere interactions in determining cluster geometries is given in refs.20(a)-(d). The possible relevance of electronic factors on ligandstereochemistry has been raised in ref. </p>
+      <p>20(e)176 J. CHEM. SOC. DALTON TRANS. 1993n t q w n=‘‘“I Y II Y(c )Fig. 2 The three most reasonable candidate stereogeometries for a M6(C0)14 cluster; (a) stereoisomer I, of 0, symmetry (eight COs p,-bridging allthe faces and one terminal CO per metal atom); (6) stereoisomer 11, of C3, symmetry (two COs p,-bridging two opposite faces and two terminal COsper metal atom); (c) stereoisomer 111, of C,, symmetry (four asymmetric and two symmetric p-COs and one terminal CO per metal atom)(CO)24]- is paramagnetic, has 87 c.v.e.s and a highly distortedmetal polyhedron 1.The orbital interaction diagrams 23 between the inner carbon* Participation of the interstitial atom is observed all along the energyrange, reflecting that metal-i.a. </p>
+      <p>interactions cannot be rationalizedusing a localized bonding scheme. Nevertheless, it is clear that the i.a.orbitals (which have energies below the cluster HOMO-LUMO gaps)are well suited to A,-type interactions because the empty and the filledclusters have the same number of occupied orbitals in each symmetryclass. Stereogeometry 111 is clearly unstable in the ‘empty’ form (havinga small high-lying HOMO-LUMO gap) but is greatly stabilized in the‘filled’ form because of the transfer of electrons from its high-lyingfrontier orbitals to the C-based ones. This is less true for I as shown by aclose analysis of the (cage1i.a.) group overlap integrals, which indicatesthat ‘empty’ 111 has more suitable frontier orbitals (i.e. </p>
+      <p>larger (cage1i.a.)integrals) than ‘empty’ I to interact with the i.a.. Hence, even if 111 is lessstable than I in the ‘empty’ form (i.e. the 1-1111 ligand reorganization isunfavourable) the frontier orbital rehybridization promoted by theligand reorganization is more important and, as a result, 111 is morestable than I in the ‘filled’ form (Table 2).and the empty [Rh,(CO),,] cluster, for both stereogeometries Iand 111, are reported in Fig. 3, in order to show how the differentnature (symmetry, shape and energy) of the interacting clusterorbitals results in highly dissimilar interaction patterns. Adetailed description of Fig. 3 is not relevant in this context,*rather it is important to realize that in the present case: (i) theligand stereochemistry, controlling the nature of the clusterfrontier orbitals, ultimately controls the i.a.-cage interactions;or alternatively; (ii) the optimization of the i.a.-cage inter-actions influences the ligand stereogeometry.ConclusionEven if the reported EH computations concern only a particu-lar case, the assumption that the ligand stereogeometrycontrols the shape of the cluster frontier orbitals applies in allsituations and, in general, a strong influence of the interstitialatoms on the ligand stereogeometry could be expected. Forinstance, on a different system,’ it had been concluded that thereal [Nil 2(p12-Ge)(CO)12(p-CO),(p3-C0),]2- and the hypoJ. </p>
+      <p>CHEM. SOC. DALTON TRANS. 1993 1778t2g-Iltlu-5t4t:gU- P-I1II1II1I1I1I\I1I _.- 25bg[Rh6(CO)1 41"(I) [Rh6C(CO) 14l(I) Cb [Rh6C(CO) 141 (m) [Rh6(co)i414(m)Fig. </p>
+      <p>3 Orbital interaction diagrams for the [Rh6(p6-C)(CO),,] clusters. Left, stereogeometry 1 (0, symmetry); right, stereogeometry 111 (C2"symmetry). The p6-c 2s atomic orbital is not shown, being off-scale. Both [Rh,(C0),,]4- and [Rh,(p,-C)(CO),,] have 86 c.v.e.s; for the sake ofclarity only the HOMO has been represented as being occupied by two electrons. Lines correlating orbitals not matching the symmetry of the i.a.orbitals have been omittedthetical empty and p12-Ni derivatives would not have beenisoelectronic if they had had the same ligand stereogeometry.The above considerations, together with the earlier sugges-tion that interstitial carbides can exert some 'steric repulsion'on p3 h y d r i d e ~ , ~ ~ show that interstitial atoms can affect boththe cluster electronic requirements and the ligand stereochem-istry and cannot merely be considered innocent 'internalligands'. However, the energy and the shape of the clusterorbitals depend on the details of the ligand stereochemistry andthe exact relationship between the inner interstitial atom, thecluster stoichiometry, and the outer ligand geometry needs tobe determined for each individual case.AcknowledgementsThe author is indebted to G. </p>
+      <p>Longoni, N. Masciocchi, H.Molinari, S. Mulley and D. Proserpio for many stimulatingdiscussions and to a referee for help in clarifying the text.References1 D. </p>
+      <p>M. P. Mingos and A. S. May, in Chemistry of Metal ClusterComplexes, eds. D. S . Shriver, H. D. Kaesz and R. D. Adams, VCH,Weinheim, 1990.2 D. M. P. Mingos and J. W. Wales, Introduction to Cluster Chemistry,Prentice Hall, Englewood Cliffs, NJ, 1990.3 A. Ceriotti, F. Demartin, B. T. Heaton, P. Ingallina, G. Longoni, M.Manassero, M. Marchionna and N. Masciocchi, J. Chem. SOC.,Chem. Commun., 1989,786.4 V. G. Albano, F. Demartin, M. C. Iapalucci, G. Longoni, M. Monariand P. Zanello, J. Chem. SOC., Dalton Trans., 1992,497.5 G. Ciani, A. Sironi and S. Martinengo, J. Chem. SOC., Dalton Trans.,1981,519.6 P. Betz, B. Krebs and G. Henkel, Angew. Chem., Int. Ed. Engl., 1984,23, 311.7 V. G. Albano, L. Grossi, G. Longoni, M. Monari, S. Mulley and A.Sironi, J. </p>
+      <p>Am. Chem. Soc., 1992, 114,5708.8 T. Hughbanks, G. Rosenthal and J. D. Corbet, J. Am. Chem. SOC.,1986,108,8289; A. Simon, Angew. Chem., Int. Ed. Engl., 1988,27,159;D. M. P. Mingos and J. W. Wales, in Introduction to ClusterChemistry, Prentice Hall, Englewood Cliffs, NJ, 1990, p. 300.9 R. Hoffmann, J. Chem. Phys., 1963,39,1397; R. Hoffmann and W. N.Lipscomb, J. Chem. Phys., 1962,36,2872,3489.10 D. M. P. Mingos and L. Zhenyang, J. Organornet. Chem., 1988,341,523.11 V. G. Albano, F. Demartin, M. C. Iapalucci, F. Laschi, G. Longoni,A. Sironi and P. Zanello, J. Chem. SOC., Dalton Trans., 1991,739.12 R. Hoffmann, Acc. Chem. Rex, 1970,4, 1; L. Libit and R. Hoffmann,J. Am. Chem. SOC., 1974,96, 1370; T. A. Albright, J. K. Burdett andM.-H. Whangbo, Orbital Interactions in Chemistry, Wiley, NewYork, 1985.13 S. D. Wijeyesekera and R. Hoffmann, Organometallics, 1984,3,949.14 J. F. Halet, D. G. Evans and D. M. P. Mingos, J. Am. Chem. Soc.,1988, 110, 87; J. F. Halet, in Topics in Physical OrganometallicChemistry, ed. M. Gielen, Freund Publishing House, Tel Aviv, 1991,vol. 4, p. 221.15 Ref. 2, p. 170.16 Ref. 2, p. 169.17 A. Sironi, Inorg. Chem., 1992,31,2467.18 N. L. Allinger and Y. H. Yuh, Quantum Chemistry ProgramExchange, program no. 395178 J. CHEM. SOC. DALTON TRANS. 199319 R. H. Summerville and R. Hoffmann, J. Am. Chem. SOC., 1976,98,7240.20 (a) R. E. Benfield and B. F. G. Johnson, J. Chem. SOC., Dalton Trans.,1980,1743; (b) B. F. G. Johnson and R. E. Benfield, Top. Stereochem.,1981, 12,253; (c) B. W. Clare, M. C. Favas, D. L. Kepert and A. S.May, in Advances in Dynamic Stereochemistry, ed. M. F. Gielen,Freund Publishing House, London, 1985, p. 1; (d) J. W. Lauher, J.Am. Chem. SOC., 1986, 108, 1521; (e) D. G. Evans, J. Chem. SOC.,Chem. Commun., 1983,675.21 V. G. Albano, P. L. Bellon, P. Chini and V. Scatturin, J. Organornet.Chem., 1969,16,461.22 V. G. Albano, G. Ciani, P. Chini, B. T. Heaton and S. Martinengo,J. Am. Chem. SOC., 1976,98,5027.23 R. Hoffmann, H. Fujimoto, J. R. Svenson and C. C. Wan, J. Am.Chem. SOC., 1973,95,7644; R. Hoffmann and H. Fujimoto, J. Phys.Chem., 1974,78,1167.24 T. Beringhelli, G. DAlfonso, G. Ciani, A. Sironi and H. Molinari, J.Chem. SOC., Dalton Trans., 1988,1281; 1990,1901.Received 10th July 1992; Paper 2/03668</p>
+    </section>
+  </art-body>
+  <art-back>
+    <biblist>
+      <citgroup id="cit1">
+        <citation type="book"><citauth><fname>D. M. P.</fname><surname>Mingos</surname></citauth> and <citauth><fname>A. S.</fname><surname>May</surname></citauth>, in <title>Chemistry of Metal Cluster Complexes</title>, eds. <editor>D. S. Shriver</editor>, <editor>H. D. Kaesz</editor> and <editor>R. D. Adams</editor>, <citpub>VCH</citpub>, <pubplace>Weinheim</pubplace>, <year>1990</year>.</citation>
+      </citgroup>
+      <citgroup id="cit2">
+        <citation type="book"><citauth><fname>D. M. P.</fname><surname>Mingos</surname></citauth> and <citauth><fname>J. W.</fname><surname>Wales</surname></citauth>, <title>Introduction to Cluster Chemistry</title>, <citpub>Prentice Hall</citpub>, <pubplace>Englewood Cliffs, NJ</pubplace>, <year>1990</year>.</citation>
+      </citgroup>
+      <citgroup id="cit3">
+        <journalcit>
+          <citauth>
+            <fname>A.</fname>
+            <surname>Ceriotti</surname>
+          </citauth>
+          <citauth>
+            <fname>F.</fname>
+            <surname>Demartin</surname>
+          </citauth>
+          <citauth>
+            <fname>B. T.</fname>
+            <surname>Heaton</surname>
+          </citauth>
+          <citauth>
+            <fname>P.</fname>
+            <surname>Ingallina</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Longoni</surname>
+          </citauth>
+          <citauth>
+            <fname>M.</fname>
+            <surname>Manassero</surname>
+          </citauth>
+          <citauth>
+            <fname>M.</fname>
+            <surname>Marchionna</surname>
+          </citauth>
+          <citauth>
+            <fname>N.</fname>
+            <surname>Masciocchi</surname>
+          </citauth>
+          <title>J. Chem. Soc., Chem. Commun.</title>
+          <year>1989</year>
+          <pages>
+            <fpage>786</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit4">
+        <journalcit>
+          <citauth>
+            <fname>V. G.</fname>
+            <surname>Albano</surname>
+          </citauth>
+          <citauth>
+            <fname>F.</fname>
+            <surname>Demartin</surname>
+          </citauth>
+          <citauth>
+            <fname>M. C.</fname>
+            <surname>Iapalucci</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Longoni</surname>
+          </citauth>
+          <citauth>
+            <fname>M.</fname>
+            <surname>Monari</surname>
+          </citauth>
+          <citauth>
+            <fname>P.</fname>
+            <surname>Zanello</surname>
+          </citauth>
+          <title>J. Chem. Soc., Dalton Trans.</title>
+          <year>1992</year>
+          <pages>
+            <fpage>497</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit5">
+        <journalcit>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Ciani</surname>
+          </citauth>
+          <citauth>
+            <fname>A.</fname>
+            <surname>Sironi</surname>
+          </citauth>
+          <citauth>
+            <fname>S.</fname>
+            <surname>Martinengo</surname>
+          </citauth>
+          <title>J. Chem. Soc., Dalton Trans.</title>
+          <year>1981</year>
+          <pages>
+            <fpage>519</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit6">
+        <journalcit>
+          <citauth>
+            <fname>P.</fname>
+            <surname>Betz</surname>
+          </citauth>
+          <citauth>
+            <fname>B.</fname>
+            <surname>Krebs</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Henkel</surname>
+          </citauth>
+          <title>Angew. Chem., Int. Ed. Engl.</title>
+          <year>1984</year>
+          <volumeno>23</volumeno>
+          <pages>
+            <fpage>311</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit7">
+        <journalcit>
+          <citauth>
+            <fname>V. G.</fname>
+            <surname>Albano</surname>
+          </citauth>
+          <citauth>
+            <fname>L.</fname>
+            <surname>Grossi</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Longoni</surname>
+          </citauth>
+          <citauth>
+            <fname>M.</fname>
+            <surname>Monari</surname>
+          </citauth>
+          <citauth>
+            <fname>S.</fname>
+            <surname>Mulley</surname>
+          </citauth>
+          <citauth>
+            <fname>A.</fname>
+            <surname>Sironi</surname>
+          </citauth>
+          <title>J. Am. Chem. Soc.</title>
+          <year>1992</year>
+          <volumeno>114</volumeno>
+          <pages>
+            <fpage>5708</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit8">
+        <journalcit>
+          <citauth>
+            <fname>T.</fname>
+            <surname>Hughbanks</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Rosenthal</surname>
+          </citauth>
+          <citauth>
+            <fname>J. D.</fname>
+            <surname>Corbet</surname>
+          </citauth>
+          <title>J. Am. Chem. Soc.</title>
+          <year>1986</year>
+          <volumeno>108</volumeno>
+          <pages>
+            <fpage>8289</fpage>
+          </pages>
+        </journalcit>
+        <journalcit>
+          <citauth>
+            <fname>A.</fname>
+            <surname>Simon</surname>
+          </citauth>
+          <title>Angew. Chem., Int. Ed. Engl.</title>
+          <year>1988</year>
+          <volumeno>27</volumeno>
+          <pages>
+            <fpage>159</fpage>
+          </pages>
+        </journalcit>
+        <citation type="book"><citauth><fname>D. M. P.</fname><surname>Mingos</surname></citauth> and <citauth><fname>J. W.</fname><surname>Wales</surname></citauth>, in <title>Introduction to Cluster Chemistry</title>, <citpub>Prentice Hall</citpub>, <pubplace>Englewood Cliffs, NJ</pubplace>, <year>1990</year>, <biblscope>p. 300</biblscope>.</citation>
+      </citgroup>
+      <citgroup id="cit9">
+        <journalcit>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <title>J. Chem. Phys.</title>
+          <year>1963</year>
+          <volumeno>39</volumeno>
+          <pages>
+            <fpage>1397</fpage>
+          </pages>
+        </journalcit>
+        <journalcit>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <citauth>
+            <fname>W. N.</fname>
+            <surname>Lipscomb</surname>
+          </citauth>
+          <title>J. Chem. Phys.</title>
+          <year>1962</year>
+          <volumeno>36</volumeno>
+          <pages>
+            <fpage>2872</fpage>
+          </pages>
+        </journalcit>
+        <journalcit>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <citauth>
+            <fname>W. N.</fname>
+            <surname>Lipscomb</surname>
+          </citauth>
+          <title>J. Chem. Phys.</title>
+          <year>1962</year>
+          <volumeno>36</volumeno>
+          <pages>
+            <fpage>3489</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit10">
+        <journalcit>
+          <citauth>
+            <fname>D. M. P.</fname>
+            <surname>Mingos</surname>
+          </citauth>
+          <citauth>
+            <fname>L.</fname>
+            <surname>Zhenyang</surname>
+          </citauth>
+          <title>J. Organomet. Chem.</title>
+          <year>1988</year>
+          <volumeno>341</volumeno>
+          <pages>
+            <fpage>523</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit11">
+        <journalcit>
+          <citauth>
+            <fname>V. G.</fname>
+            <surname>Albano</surname>
+          </citauth>
+          <citauth>
+            <fname>F.</fname>
+            <surname>Demartin</surname>
+          </citauth>
+          <citauth>
+            <fname>M. C.</fname>
+            <surname>Iapalucci</surname>
+          </citauth>
+          <citauth>
+            <fname>F.</fname>
+            <surname>Laschi</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Longoni</surname>
+          </citauth>
+          <citauth>
+            <fname>A.</fname>
+            <surname>Sironi</surname>
+          </citauth>
+          <citauth>
+            <fname>P.</fname>
+            <surname>Zanello</surname>
+          </citauth>
+          <title>J. Chem. Soc., Dalton Trans.</title>
+          <year>1991</year>
+          <pages>
+            <fpage>739</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit12">
+        <journalcit>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <title>Acc. Chem. Res.</title>
+          <year>1970</year>
+          <volumeno>4</volumeno>
+          <pages>
+            <fpage>1</fpage>
+          </pages>
+        </journalcit>
+        <journalcit>
+          <citauth>
+            <fname>L.</fname>
+            <surname>Libit</surname>
+          </citauth>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <title>J. Am. Chem. Soc.</title>
+          <year>1974</year>
+          <volumeno>96</volumeno>
+          <pages>
+            <fpage>1370</fpage>
+          </pages>
+        </journalcit>
+        <citation type="book"><citauth><fname>T. A.</fname><surname>Albright</surname></citauth>, <citauth><fname>J. K.</fname><surname>Burdett</surname></citauth> and <citauth><fname>M.-H.</fname><surname>Whangbo</surname></citauth>, <title>Orbital Interactions in Chemistry</title>, <citpub>Wiley</citpub>, <pubplace>New York</pubplace>, <year>1985</year>.</citation>
+      </citgroup>
+      <citgroup id="cit13">
+        <journalcit>
+          <citauth>
+            <fname>S. D.</fname>
+            <surname>Wijeyesekera</surname>
+          </citauth>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <title>Organometallics</title>
+          <year>1984</year>
+          <volumeno>3</volumeno>
+          <pages>
+            <fpage>949</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit14">
+        <journalcit>
+          <citauth>
+            <fname>J. F.</fname>
+            <surname>Halet</surname>
+          </citauth>
+          <citauth>
+            <fname>D. G.</fname>
+            <surname>Evans</surname>
+          </citauth>
+          <citauth>
+            <fname>D. M. P.</fname>
+            <surname>Mingos</surname>
+          </citauth>
+          <title>J. Am. Chem. Soc.</title>
+          <year>1988</year>
+          <volumeno>110</volumeno>
+          <pages>
+            <fpage>87</fpage>
+          </pages>
+        </journalcit>
+        <citation type="book"><citauth><fname>J. F.</fname><surname>Halet</surname></citauth>, in <title>Topics in Physical Organometallic Chemistry</title>, ed. <editor>M. Gielen</editor>, <citpub>Freund Publishing House</citpub>, <pubplace>Tel Aviv</pubplace>, <year>1991</year>, vol. 4, <biblscope>p. 221</biblscope>.</citation>
+      </citgroup>
+      <citgroup id="cit15">
+        <citation type="other">Ref. 2, <biblscope>p. 170</biblscope>.</citation>
+      </citgroup>
+      <citgroup id="cit16">
+        <citation type="other">Ref. 2, <biblscope>p. 169</biblscope>.</citation>
+      </citgroup>
+      <citgroup id="cit17">
+        <journalcit>
+          <citauth>
+            <fname>A.</fname>
+            <surname>Sironi</surname>
+          </citauth>
+          <title>Inorg. Chem.</title>
+          <year>1992</year>
+          <volumeno>31</volumeno>
+          <pages>
+            <fpage>2467</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit18">
+        <citation type="other"><citauth><fname>N. L.</fname><surname>Allinger</surname></citauth> and <citauth><fname>Y. H.</fname><surname>Yuh</surname></citauth>, Quantum Chemistry Program Exchange, program no. 395.</citation>
+      </citgroup>
+      <citgroup id="cit19">
+        <journalcit>
+          <citauth>
+            <fname>R. H.</fname>
+            <surname>Summerville</surname>
+          </citauth>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <title>J. Am. Chem. Soc.</title>
+          <year>1976</year>
+          <volumeno>98</volumeno>
+          <pages>
+            <fpage>7240</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit20">
+        <citgroup id="cit20a">
+          <journalcit>
+            <citauth>
+              <fname>R. E.</fname>
+              <surname>Benfield</surname>
+            </citauth>
+            <citauth>
+              <fname>B. F. G.</fname>
+              <surname>Johnson</surname>
+            </citauth>
+            <title>J. Chem. Soc., Dalton Trans.</title>
+            <year>1980</year>
+            <pages>
+              <fpage>1743</fpage>
+            </pages>
+          </journalcit>
+        </citgroup>
+        <citgroup id="cit20b">
+          <journalcit>
+            <citauth>
+              <fname>B. F. G.</fname>
+              <surname>Johnson</surname>
+            </citauth>
+            <citauth>
+              <fname>R. E.</fname>
+              <surname>Benfield</surname>
+            </citauth>
+            <title>Top. Stereochem.</title>
+            <year>1981</year>
+            <volumeno>12</volumeno>
+            <pages>
+              <fpage>253</fpage>
+            </pages>
+          </journalcit>
+        </citgroup>
+        <citgroup id="cit20c">
+          <citation type="book"><citauth><fname>B. W.</fname><surname>Clare</surname></citauth>, <citauth><fname>M. C.</fname><surname>Favas</surname></citauth>, <citauth><fname>D. L.</fname><surname>Kepert</surname></citauth> and <citauth><fname>A. S.</fname><surname>May</surname></citauth>, in <title>Advances in Dynamic Stereochemistry</title>, ed. <editor>M. F. Gielen</editor>, <citpub>Freund Publishing House</citpub>, <pubplace>London</pubplace>, <year>1985</year>, <biblscope>p. 1</biblscope>;</citation>
+        </citgroup>
+        <citgroup id="cit20d">
+          <journalcit>
+            <citauth>
+              <fname>J. W.</fname>
+              <surname>Lauher</surname>
+            </citauth>
+            <title>J. Am. Chem. Soc.</title>
+            <year>1986</year>
+            <volumeno>108</volumeno>
+            <pages>
+              <fpage>1521</fpage>
+            </pages>
+          </journalcit>
+        </citgroup>
+        <citgroup id="cit20e">
+          <journalcit>
+            <citauth>
+              <fname>D. G.</fname>
+              <surname>Evans</surname>
+            </citauth>
+            <title>J. Chem. Soc., Chem. Commun.</title>
+            <year>1983</year>
+            <pages>
+              <fpage>675</fpage>
+            </pages>
+          </journalcit>
+        </citgroup>
+      </citgroup>
+      <citgroup id="cit21">
+        <journalcit>
+          <citauth>
+            <fname>V. G.</fname>
+            <surname>Albano</surname>
+          </citauth>
+          <citauth>
+            <fname>P. L.</fname>
+            <surname>Bellon</surname>
+          </citauth>
+          <citauth>
+            <fname>P.</fname>
+            <surname>Chini</surname>
+          </citauth>
+          <citauth>
+            <fname>V.</fname>
+            <surname>Scatturin</surname>
+          </citauth>
+          <title>J. Organomet. Chem.</title>
+          <year>1969</year>
+          <volumeno>16</volumeno>
+          <pages>
+            <fpage>461</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit22">
+        <journalcit>
+          <citauth>
+            <fname>V. G.</fname>
+            <surname>Albano</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Ciani</surname>
+          </citauth>
+          <citauth>
+            <fname>P.</fname>
+            <surname>Chini</surname>
+          </citauth>
+          <citauth>
+            <fname>B. T.</fname>
+            <surname>Heaton</surname>
+          </citauth>
+          <citauth>
+            <fname>S.</fname>
+            <surname>Martinengo</surname>
+          </citauth>
+          <title>J. Am. Chem. Soc.</title>
+          <year>1976</year>
+          <volumeno>98</volumeno>
+          <pages>
+            <fpage>5027</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit23">
+        <journalcit>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <citauth>
+            <fname>H.</fname>
+            <surname>Fujimoto</surname>
+          </citauth>
+          <citauth>
+            <fname>J. R.</fname>
+            <surname>Svenson</surname>
+          </citauth>
+          <citauth>
+            <fname>C. C.</fname>
+            <surname>Wan</surname>
+          </citauth>
+          <title>J. Am. Chem. Soc.</title>
+          <year>1973</year>
+          <volumeno>95</volumeno>
+          <pages>
+            <fpage>7644</fpage>
+          </pages>
+        </journalcit>
+        <journalcit>
+          <citauth>
+            <fname>R.</fname>
+            <surname>Hoffmann</surname>
+          </citauth>
+          <citauth>
+            <fname>H.</fname>
+            <surname>Fujimoto</surname>
+          </citauth>
+          <title>J. Phys. Chem.</title>
+          <year>1974</year>
+          <volumeno>78</volumeno>
+          <pages>
+            <fpage>1167</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit24">
+        <journalcit>
+          <citauth>
+            <fname>T.</fname>
+            <surname>Beringhelli</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>D'Alfonso</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Ciani</surname>
+          </citauth>
+          <citauth>
+            <fname>A.</fname>
+            <surname>Sironi</surname>
+          </citauth>
+          <citauth>
+            <fname>H.</fname>
+            <surname>Molinari</surname>
+          </citauth>
+          <title>J. Chem. Soc., Dalton Trans.</title>
+          <year>1988</year>
+          <pages>
+            <fpage>1281</fpage>
+          </pages>
+        </journalcit>
+        <journalcit>
+          <citauth>
+            <fname>T.</fname>
+            <surname>Beringhelli</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>D'Alfonso</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Ciani</surname>
+          </citauth>
+          <citauth>
+            <fname>A.</fname>
+            <surname>Sironi</surname>
+          </citauth>
+          <citauth>
+            <fname>H.</fname>
+            <surname>Molinari</surname>
+          </citauth>
+          <title>J. Chem. Soc., Dalton Trans.</title>
+          <year>1990</year>
+          <pages>
+            <fpage>1901</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+    </biblist>
+    <compoundgrp>
+</compoundgrp>
+  </art-back>
+</article>

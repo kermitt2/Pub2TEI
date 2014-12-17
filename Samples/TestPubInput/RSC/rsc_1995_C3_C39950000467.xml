@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "../../DTDs/rscart36.dtd">
+<article dtd="RSCPA3.6" type="ART" price-code="free">
+  <art-admin>
+    <ms-id>C39950000467</ms-id>
+    <doi>10.1039/C39950000467</doi>
+  </art-admin>
+  <published type="print">
+    <journalref>
+      <link>C3</link>
+    </journalref>
+    <volumeref>
+      <link>
+</link>
+    </volumeref>
+    <issueref>
+      <link>4</link>
+    </issueref>
+    <pubfront>
+      <fpage>467</fpage>
+      <lpage>468</lpage>
+      <no-of-pages>2</no-of-pages>
+      <date>
+        <year>1995</year>
+      </date>
+    </pubfront>
+  </published>
+  <published type="subsyear">
+    <journalref>
+      <link>C3</link>
+    </journalref>
+    <pubfront>
+      <fpage>
+</fpage>
+      <lpage>
+</lpage>
+      <no-of-pages>
+</no-of-pages>
+      <date>
+        <year>1995</year>
+      </date>
+    </pubfront>
+  </published>
+  <art-front>
+    <titlegrp>
+      <title>Liquid crystalline polymeric phthalocyanines</title>
+    </titlegrp>
+    <authgrp>
+      <author>
+        <person>
+          <persname>
+            <fname>Geoffrey C.</fname>
+            <surname>Bryant</surname>
+          </persname>
+        </person>
+      </author>
+      <author>
+        <person>
+          <persname>
+            <fname>Michael J.</fname>
+            <surname>Cook</surname>
+          </persname>
+        </person>
+      </author>
+      <author>
+        <person>
+          <persname>
+            <fname>Timothy G.</fname>
+            <surname>Ryan</surname>
+          </persname>
+        </person>
+      </author>
+      <author>
+        <person>
+          <persname>
+            <fname>Andrew J.</fname>
+            <surname>Thorne</surname>
+          </persname>
+        </person>
+      </author>
+    </authgrp>
+    <abstract>
+      <p>The first examples of phthalocyanine linear mainchain polymers showing liquid crystal properties are described.</p>
+    </abstract>
+  </art-front>
+  <art-body>
+    <section type="PDFExtract">
+      <title>
+</title>
+      <p>J. CHEM. SOC. CHEM. COMMUN. 1995 467 Liquid Crystalline Polymeric Phthalocyanines Geoffrey C. Bryant,= Michael J. Cook,*a Timothy G. Ryanb and Andrew J. Thorneb a School of Chemical Sciences University of East Anglia Norwich UK NR4 7TJ b ICI Wilton Research Centre PO Box 90 Middlesbrough Cleveland UK TS90 8JE The first examples of phthalocyanine linear mainchain polymers showing liquid crystal properties are described. The incorporation of thermotropic liquid crystalline moieties within a polymer can in principle provide robust materials possessing interesting optical and electrical properties which are tunable by heating. Most liquid crystalline polymers1 contain calamitic (rod-like) mesogens but there is a growing interest in introducing discotic mesogens. Liquid crystalline polymers containing the latter fall into three categories. </p>
+      <p>The two more general types are mainchain polymers where the discs are an integral part of the backbone and side group polymers where they hang from the backbone like pendants. The third category comprises special cases where the discs can be linked via atoms or ligands to a metal atom at the centre of a metallomesogen to give a linear 'shish kebab' polymer. Pioneering work on the first two systems by Ringsdorf's group resulted in the formation of discotic liquid crystalline polymers of triphenylene units.233 The extensive research into liquid crystalline phthalocyanines has centred primarily on mononuclear derivatives;4 at the present time the most studied mesogenic phthalocyanine polymers are those of the 'shish kebab' type.5-9 Van der Pol et al. </p>
+      <p>constructed cross-linked and side group polymers from peripherally substi-tuted liquid crystalline phthalocyanine monomers. The former retained the mesomorphic packing of the monomer while the latter did not display liquid crystalline behaviour. 10 Recently, we reported that trinuclear phthalocyanines of type 1 exhibit one or more liquid crystal phases.11 These compounds are mixed oxalate esters of two types of monomeric mesogenic phthalocyanine which bear either one or two hydroxylated sidechains an example of the latter being 2a. We now report that polymers formed by esterifying 2a alone through oxalyl linkages provide the first examples of mesogenic phthalocyan-ine linear mainchain polymers. Polymers were generated under two sets of conditions, Scheme 1. </p>
+      <p>In the first 2a was reacted with excess oxalyl chloride to form 2b and the latter reacted with a further equivalent of 2a in dichlorobenzene at 90°C for 48 h. The solution was filtered reduced in volume and the polymer, denoted as poly-Pcl precipitated by addition of acetone. The second set of conditions yielding poly-Pc2 were as above but with the addition of pyridine in the first step and a catalytic amount of 4-dimethylaminopyridine in the second step. Both products poly-Pc 1 and poly-Pc2 are soluble in solvents such as THF pyridine benzene toluene CHC13 and CH2C12 but only sparingly so in hydrocarbon solvents such as hexane. They differ in the degree of polymerisation. Fig. 1 shows the differential polymer molecular mass distribution obtained by gel permeation chromatography GPC. </p>
+      <p>For poly-Pcl M = 7180; M = 4140 (polystyrene equivalent molecular mass) and for poly-Pc2 M = 157000; M = 8740. Both polymers show one or two low molecular mass peaks presumably arising from oligomers. These have not been characterised further but their presence in apparently significant amounts suggests they are either cyclic or are due to the presence of monoesterified impurity terminating polymerisation. The GPC trace for poly-Pc2 also shows a high molecular mass tail. This together with the significant amount of low molecular mass material at the other end of the distribution accounts for the large poly-dispersity (M,/M,) of the sample. The difference in the extent of polymerisation within the two polymers is also apparent from their lH NMR spectra. </p>
+      <p>The 400 MHz spectrum ([2H2J-1,1,2,2 tetrachloroethane) for the lower molecular mass poly-Pc 1 shows a signal at 6 3.4 assigned to terminal -CH2-OH protons whereas there is no comparable signal apparent in the spectrum of poly-Pc2. Integration of the signal in the former against that for the aromatic protons gives a ratio of ca. 20 1. This corresponds to an average of ca. 10 phthalocyanine units were the polymer a simple linear one but rather fewer if cyclic oligomers are present. Both polymers exhibit discotic liquid crystal behaviour. Differential scanning calorimeter traces showed a single endothermic peak at 158 "C for poly-Pcl and at 161 "C for poly-Pc2 corresponding to transition into the isotropic liquid. </p>
+      <p>On cooling the two samples displayed a fan type birefringence texture when viewed through a polarising microscope. The textures appeared at 150 "C for poly-Pcl and 154 "C for poly-Pc2 and grew slowly into small domains. These are maintained R N R N R N- f i N R ' I N R N HN'%  J. CHEM. SOC. CHEM. COMMUN. 1995 on cooling down to room temperature. Fan textures are characteristic of the hexagonal discotic columnar mesophase which is common among monomeric mesogenic phthalocya-nines4 and was observed for the trinuclear compound 1 . 1 1 Further evidence that the polymers are developing columnar stacks which mimic those of the simpler mesogens is forth-coming from visible region spectroscopy. Formulations of the polymers as spin coated films were cooled from elevated Scheme 1 Route to poly-Pcs. </p>
+      <p>Reagents i ClCOCOCl; ii 2a 1.4 1 0.8 1 Poly-Pc 2 I  f l l L - 0.0 0.2 2 3 4 5 6 7 8 Log M Fig. 1 Gel permeation chromatograms for poly-Pc 1 and poly-Pc2 temperature into the mesophase temperature range where they show broad band absorption with maxima at ca. 664-668, 702-706 and a shoulder at ca. 731 nm. Band shape and absorption maxima are closely similar to those observed for the disordered hexagonal columnar mesophase of 1 when formu-lated similarly. Columnar packing in the polymers would limit mobility and could account for their high viscosity and the slow development of birefringence textures. We thank the SERC (now EPSRC) for a Case studentship for G.C.B. and ICI Wilton Research centre Physical Science Group for molecular mass characterisation. </p>
+      <p>Received 2nd December 1994; Com. 4107369J References 1 N. A. Plate V. G. Kulichikhin and R. V. Talroze Pure Appl. Chem., 1991 63 925. 2 W. Kreuder and H. Ringsdorf Makromol. Chem. Rapid Commun., 1983 4 807. 3 W. Kreuder H. Ringsdorf and P. T. Schirner Makromol. Chem. Rapid Commun. 1985 6 367. 4 J. Simon and P. Bassoul in Phthalocyanines-Properties and Applica-tions ed. C. C. Leznoff and A. B. P. Lever VCH New York Weinheim, Cambridge vol. 2 1993 p. 223 M. J. Cook .I. Muter. Science: Materials in Electronics 1994 5 117. 5 C. Sirlin L. Bosio and J. Simon J . Chem. SOC. Chem. Commun. 1987, 379. 6 C . Sirlin L. Bosio and J. Simon J . Chem. SOC. Chem. Commun. 1988, 236. 7 T. Sauer and G. Wegner Mol. Cryst. Liq. Cryst. 1988 97 1623; T. Sauer and G. Wegner Makromol. Chem. Makromol. Symp. 1989 24, 303. 8 W. Caresi T. Sauer and G. Wegner Makromol. Chem. Rapid Commun. 1988 9 65. 9 T. Sauer Macromolecules 1993 26 2057. 10 J. F. van der Pol J. W. Zwikker J. M. Warman and M. P. de Haas Red. Trav. Chim. Pays-bas 1990 109 208; J. F. van der Pol E. Neeleman, J. C. van Miltenburg J. W. Zwikker R. J. M. Nolte and W. Drenth, Macromolecules 1990 23 155. 11 G. C. Bryant M. J. Cook T. G. Ryan and A. J. Thorne J. Muter. Cheni., 1994 4 209 </p>
+    </section>
+  </art-body>
+  <art-back>
+    <biblist>
+      <citgroup id="cit1">
+        <journalcit>
+          <citauth>
+            <fname>N. A.</fname>
+            <surname>Plate</surname>
+          </citauth>
+          <citauth>
+            <fname>V. G.</fname>
+            <surname>Kulichikhin</surname>
+          </citauth>
+          <citauth>
+            <fname>R. V.</fname>
+            <surname>Talroze</surname>
+          </citauth>
+          <title>Pure Appl. Chem.</title>
+          <year>1991</year>
+          <volumeno>63</volumeno>
+          <pages>
+            <fpage>925</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit2">
+        <journalcit>
+          <citauth>
+            <fname>W.</fname>
+            <surname>Kreuder</surname>
+          </citauth>
+          <citauth>
+            <fname>H.</fname>
+            <surname>Ringsdorf</surname>
+          </citauth>
+          <title>Makromol. Chem., Rapid Commun.</title>
+          <year>1983</year>
+          <volumeno>4</volumeno>
+          <pages>
+            <fpage>807</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit3">
+        <journalcit>
+          <citauth>
+            <fname>W.</fname>
+            <surname>Kreuder</surname>
+          </citauth>
+          <citauth>
+            <fname>H.</fname>
+            <surname>Ringsdorf</surname>
+          </citauth>
+          <citauth>
+            <fname>P. T.</fname>
+            <surname>Schirner</surname>
+          </citauth>
+          <title>Makromol. Chem., Rapid Commun.</title>
+          <year>1985</year>
+          <volumeno>6</volumeno>
+          <pages>
+            <fpage>367</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit4">
+        <citation type="book"><citauth><fname>J.</fname><surname>Simon</surname></citauth> and <citauth><fname>P.</fname><surname>Bassoul</surname></citauth>, in <arttitle>Phthalocyanines</arttitle>—<title>Properties and Applications</title>, ed. <editor>C. C. Leznoff</editor> and <editor>A. B. P. Lever</editor>, <citpub>VCH</citpub>
+<pubplace>New York</pubplace>, <citpub>Weinheim</citpub>, <pubplace>Cambridge</pubplace>, vol. 2, <year>1993</year>, <biblscope>p. 223</biblscope>;</citation>
+        <journalcit>
+          <citauth>
+            <fname>M. J.</fname>
+            <surname>Cook</surname>
+          </citauth>
+          <title>J. Mater. Science: Materials in Electronics</title>
+          <year>1994</year>
+          <volumeno>5</volumeno>
+          <pages>
+            <fpage>117</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit5">
+        <journalcit>
+          <citauth>
+            <fname>C.</fname>
+            <surname>Sirlin</surname>
+          </citauth>
+          <citauth>
+            <fname>L.</fname>
+            <surname>Bosio</surname>
+          </citauth>
+          <citauth>
+            <fname>J.</fname>
+            <surname>Simon</surname>
+          </citauth>
+          <title>J. Chem. Soc., Chem. Commun.</title>
+          <year>1987</year>
+          <pages>
+            <fpage>379</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit6">
+        <journalcit>
+          <citauth>
+            <fname>C.</fname>
+            <surname>Sirlin</surname>
+          </citauth>
+          <citauth>
+            <fname>L.</fname>
+            <surname>Bosio</surname>
+          </citauth>
+          <citauth>
+            <fname>J.</fname>
+            <surname>Simon</surname>
+          </citauth>
+          <title>J. Chem. Soc., Chem. Commun.</title>
+          <year>1988</year>
+          <pages>
+            <fpage>236</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit7">
+        <journalcit>
+          <citauth>
+            <fname>T.</fname>
+            <surname>Sauer</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Wegner</surname>
+          </citauth>
+          <title>Mol. Cryst. Liq. Cryst.</title>
+          <year>1988</year>
+          <volumeno>97</volumeno>
+          <pages>
+            <fpage>1623</fpage>
+          </pages>
+        </journalcit>
+        <journalcit>
+          <citauth>
+            <fname>T.</fname>
+            <surname>Sauer</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Wegner</surname>
+          </citauth>
+          <title>Makromol. Chem., Makromol. Symp.</title>
+          <year>1989</year>
+          <volumeno>24</volumeno>
+          <pages>
+            <fpage>303</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit8">
+        <journalcit>
+          <citauth>
+            <fname>W.</fname>
+            <surname>Caresi</surname>
+          </citauth>
+          <citauth>
+            <fname>T.</fname>
+            <surname>Sauer</surname>
+          </citauth>
+          <citauth>
+            <fname>G.</fname>
+            <surname>Wegner</surname>
+          </citauth>
+          <title>Makromol. Chem., Rapid Commun.</title>
+          <year>1988</year>
+          <volumeno>9</volumeno>
+          <pages>
+            <fpage>65</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit9">
+        <journalcit>
+          <citauth>
+            <fname>T.</fname>
+            <surname>Sauer</surname>
+          </citauth>
+          <title>Macromolecules</title>
+          <year>1993</year>
+          <volumeno>26</volumeno>
+          <pages>
+            <fpage>2057</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit10">
+        <journalcit>
+          <citauth>
+            <fname>J. F.</fname>
+            <surname>van der Pol</surname>
+          </citauth>
+          <citauth>
+            <fname>J. W.</fname>
+            <surname>Zwikker</surname>
+          </citauth>
+          <citauth>
+            <fname>J. M.</fname>
+            <surname>Warman</surname>
+          </citauth>
+          <citauth>
+            <fname>M. P.</fname>
+            <surname>de Haas</surname>
+          </citauth>
+          <title>Recl. Trav. Chim. Pays-bas</title>
+          <year>1990</year>
+          <volumeno>109</volumeno>
+          <pages>
+            <fpage>208</fpage>
+          </pages>
+        </journalcit>
+        <journalcit>
+          <citauth>
+            <fname>J. F.</fname>
+            <surname>van der Pol</surname>
+          </citauth>
+          <citauth>
+            <fname>E.</fname>
+            <surname>Neeleman</surname>
+          </citauth>
+          <citauth>
+            <fname>J. C.</fname>
+            <surname>van Miltenburg</surname>
+          </citauth>
+          <citauth>
+            <fname>J. W.</fname>
+            <surname>Zwikker</surname>
+          </citauth>
+          <citauth>
+            <fname>R. J. M.</fname>
+            <surname>Nolte</surname>
+          </citauth>
+          <citauth>
+            <fname>W.</fname>
+            <surname>Drenth</surname>
+          </citauth>
+          <title>Macromolecules</title>
+          <year>1990</year>
+          <volumeno>23</volumeno>
+          <pages>
+            <fpage>155</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+      <citgroup id="cit11">
+        <journalcit>
+          <citauth>
+            <fname>G. C.</fname>
+            <surname>Bryant</surname>
+          </citauth>
+          <citauth>
+            <fname>M. J.</fname>
+            <surname>Cook</surname>
+          </citauth>
+          <citauth>
+            <fname>T. G.</fname>
+            <surname>Ryan</surname>
+          </citauth>
+          <citauth>
+            <fname>A. J.</fname>
+            <surname>Thorne</surname>
+          </citauth>
+          <title>J. Mater. Chem.</title>
+          <year>1994</year>
+          <volumeno>4</volumeno>
+          <pages>
+            <fpage>209</fpage>
+          </pages>
+        </journalcit>
+      </citgroup>
+    </biblist>
+    <compoundgrp>
+</compoundgrp>
+  </art-back>
+</article>

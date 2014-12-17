@@ -1,0 +1,1160 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" "journalpublishing.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article">
+<front>
+<journal-meta>
+<journal-id journal-id-type="hwp">jinfdis</journal-id>
+<journal-id journal-id-type="publisher-id">jid</journal-id>
+<journal-title>The Journal of Infectious Diseases</journal-title>
+<abbrev-journal-title>The Journal of Infectious Diseases</abbrev-journal-title>
+<issn pub-type="ppub">0022-1899</issn>
+<issn pub-type="epub">1537-6613</issn>
+<publisher>
+<publisher-name>The University of Chicago Press</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="doi">10.1086/315679</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Major Articles</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Selection of Drug-Resistant Variants in the Female Genital Tract of Human Immunodeficiency Virus Type 1-Infected Women Receiving Antiretroviral Therapy</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name><surname>Si-Mohamed</surname><given-names>Ali</given-names></name><xref ref-type="aff" rid="AFF1"><sup>1</sup></xref><xref ref-type="aff" rid="AFF2"><sup>2</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kazatchkine</surname><given-names>Michel D.</given-names></name><xref ref-type="aff" rid="AFF2"><sup>2</sup></xref><xref ref-type="aff" rid="AFF3"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Heard</surname><given-names>Isabelle</given-names></name><xref ref-type="aff" rid="AFF3"><sup>3</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Goujon</surname><given-names>Christophe</given-names></name><xref ref-type="aff" rid="AFF4"><sup>4</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Prazuck</surname><given-names>Thierry</given-names></name><xref ref-type="aff" rid="AFF7"><sup>7</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Aymard</surname><given-names>Guy</given-names></name><xref ref-type="aff" rid="AFF5"><sup>5</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Cessot</surname><given-names>Gilles</given-names></name><xref ref-type="aff" rid="AFF6"><sup>6</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Kuo</surname><given-names>Yu-Hung</given-names></name><xref ref-type="aff" rid="AFF1"><sup>1</sup></xref><xref ref-type="aff" rid="AFF8"><sup>8</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Bernard</surname><given-names>Marie-Charlotte</given-names></name><xref ref-type="aff" rid="AFF1"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Diquet</surname><given-names>Bertrand</given-names></name><xref ref-type="aff" rid="AFF5"><sup>5</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Malkin</surname><given-names>Jean-Elie</given-names></name><xref ref-type="aff" rid="AFF6"><sup>6</sup></xref>
+</contrib>
+<contrib contrib-type="author">
+<name><surname>Gutmann</surname><given-names>Laurent</given-names></name><xref ref-type="aff" rid="AFF1"><sup>1</sup></xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<name><surname>B&#x00E9;lec</surname><given-names>Laurent</given-names></name><xref ref-type="aff" rid="AFF1"><sup>1</sup></xref><xref ref-type="aff" rid="AFF2"><sup>2</sup></xref><xref rid="cor1" ref-type="corresp"/>
+</contrib>
+<aff id="AFF1"><sup>1</sup><institution>Laboratoire de Virologie</institution>, <addr-line>Paris</addr-line></aff>
+<aff id="AFF2"><sup>2</sup><institution>Unit&#x00E9; INSERM U430 and Universit&#x00E9; Pierre et Marie Curie (Paris VI)</institution>, <addr-line>Paris</addr-line></aff>
+<aff id="AFF3"><sup>3</sup><institution>Service d&#x0027;Immunologie Clinique, H&#x00F4;pital Broussais/H&#x00F4;pital Europ&#x00E9;en Georges Pompidou</institution>, <addr-line>Paris</addr-line></aff>
+<aff id="AFF4"><sup>4</sup><institution>Laboratoire de Virologie, H&#x00F4;pital Rotschild</institution>, <addr-line>Paris</addr-line></aff>
+<aff id="AFF5"><sup>5</sup><institution>Service de Pharmacologie, H&#x00F4;pital de la Piti&#x00E9;-Salp&#x00EA;tri&#x00E8;re</institution>, <addr-line>Paris</addr-line></aff>
+<aff id="AFF6"><sup>6</sup><institution>Institut Alfred Fournier</institution>, <addr-line>Paris</addr-line></aff>
+<aff id="AFF7"><sup>7</sup><institution>Service des Maladies Infectieuses et Tropicales, H&#x00F4;pital de la Source</institution>, <addr-line>Orl&#x00E9;ans</addr-line>, <country>France</country></aff>
+<aff id="AFF8"><sup>8</sup><institution>Columbia University College of Physicians and Surgeons</institution>, <addr-line>New York, New York</addr-line></aff>
+</contrib-group>
+<author-notes>
+<corresp id="cor1">Reprints or correspondence: Dr. Laurent B&#x00E9;lec, Laboratoire de Virologie, H&#x00F4;pital Europ&#x00E9;en Georges Pompidou, 75908 Paris Cedex 15, France (<email>laurent.belec@brs.ap-hop-paris.fr</email>).</corresp>
+</author-notes>
+<pub-date pub-type="ppub">
+<month>7</month>
+<year>2000</year>
+</pub-date>
+<volume>182</volume>
+<issue>1</issue>
+<fpage>112</fpage>
+<lpage>122</lpage>
+<history>
+<date date-type="received">
+<day>15</day>
+<month>10</month>
+<year>1999</year>
+</date>
+<date date-type="rev-recd">
+<day>27</day>
+<month>3</month>
+<year>2000</year>
+</date>
+</history>
+<copyright-statement>&#x00A9; 2000 by the Infectious Diseases Society of America</copyright-statement>
+<copyright-year>2000</copyright-year>
+<abstract>
+<p>We investigated human immunodeficiency virus (HIV) type 1 RNA, proviral DNA, and antiretroviral drug-resistant variants in cervicovaginal secretions of HIV-1-infected women receiving antiretroviral therapy. The prevalence of detectable HIV-1 RNA in genital secretions was inversely related to the number of antiretroviral drugs taken by the patients. Proviral DNA was detected in approximately half of all samples of cervicovaginal secretions from HIV-1-infected women, regardless of the presence or absence of HIV-1 RNAin cervicovaginal secretions and of the antiretroviral regimen. In cervicovaginal secretions of most women with persisting genital viral replication, HIV variants exhibiting mutations associated with drug resistance against protease and reverse-transcriptase <italic>pol</italic> genes were found. Our observations indicate that antiretroviral therapy is not effective in purging the female genital tract of cellassociated provirus and that antiretroviral drugs that penetrate the female genital tract at suboptimal concentrations exert a potent selective pressure on genital HIV variants when local replication of free HIV-1 RNA persists.</p>
+</abstract>
+</article-meta>
+</front>
+<body>
+<p>The female genital tract is a reservoir for human immunodeficiency virus (HIV) [<xref ref-type="bibr" rid="R1">1</xref>]. Cervicovaginal secretions constitute the primary vehicle for HIV in female-to-male transmission and during mother-to-child perinatal transmission [<xref ref-type="bibr" rid="R2">2</xref>], 2 major modes of HIV spread worldwide. Antiretroviral treatment is associated with reduced amounts of HIV in female genital secretions [<xref ref-type="bibr" rid="R3">3</xref>&#x2013;<xref ref-type="bibr" rid="R5">5</xref>]. HIV-infected women under antiretroviral therapy may have a reduced risk of transmission of HIV to their sexual partners [<xref ref-type="bibr" rid="R6">6</xref>]. Furthermore, reduced perinatal transmission has been documented in mothers who received zidovudine (ZDV) late in pregnancy [<xref ref-type="bibr" rid="R7">7</xref>]. HIV RNA levels are reduced below the detection limits of current assays in cervicovaginal secretions of most women undergoing highly active antiretroviral therapy (HAART) [<xref ref-type="bibr" rid="R5">5</xref>]. There are, however, a few reports of cellfree HIV in genital secretions during therapy and of genotypic variants resistant to nucleoside analogues in female genital secretions [<xref ref-type="bibr" rid="R8">8</xref>&#x2013;<xref ref-type="bibr" rid="R10">10</xref>]. Heterosexual transmission of HIV-1 variants with mutations conferring resistance to reverse-transcriptase (RT) and protease inhibitors has recently been reported [<xref ref-type="bibr" rid="R11">11</xref>]. These findings emphasize the risk of spread of resistant HIV-1 variants.</p>
+<p>In the present study, we investigate the presence of free HIV-1 RNA, cell-associated proviral DNA, and HIV-1 variants with drug-resistance mutations and the local concentration of antiviral drugs in the genital secretions of women receiving antiretroviral therapy.</p>
+<sec sec-type="materials|methods">
+<title>Materials and Methods</title>
+<sec>
+<title>Study population and sample processing</title>
+<p>We analyzed paired samples of blood and cervicovaginal secretions obtained from nonpregnant HIV-1-seropositive women in 3 AIDS climes in Paris, between 1992 and 1998. Women with vaginal discharge or genital bleeding or who were suffering from a sexually transmitted infection were excluded from the study. Female participants were asked to avoid sexual intercourse and intravaginal medications for 3 days before enrollment. Samples were processed within 1 h of collection. Plasma was separated from EDTA-anticoagulated blood and stored in aliquots at &#x2212;80&#x00B0;C until use. Genital secretions were collected outside menstruations: after the introduction of a speculum, a standardized 60-s lavage was performed with 3 mL of 1 M PBS, pH 7.2, as described elsewhere [<xref ref-type="bibr" rid="R12">12</xref>]. The collection of cervicovaginal secretions obtained by vaginal lavage with a mean of 3 mL of PBS introduces a dilution of the genital secretions of &#x223C;1:10 [<xref ref-type="bibr" rid="R12">12</xref>]. After centrifuging the lavage sample at 1000 <italic>g</italic> for 10 min, the cell-free supernatant and the cellular pellet were collected and stored separately at &#x2212;80&#x00B0;C.</p>
+<p>The presence of contaminating semen in cervicovaginal secretions was investigated by quantifying prostatic-specific antigen (PSA) using an immunoenzymatic assay with a threshold of positivity of 0.1 ng/mL (PSA IMX System; Abbott Laboratories, Abbott Park, Chicago). The cutoff for positivity (0.4 ng/mL) was set as 2 SD above the mean value obtained from the assay of cervicovaginal lavage samples obtained from 30 healthy, HIV-seronegative, white women of childbearing age who claimed not to have had sexual intercourse for &#x2A7D;5 days. The Y chromosome was detected by nested polymerase chain reaction (PCR) in DNA extracted using the phenol-chloroform procedure from the cellular pellet of cervicovaginal secretions, as described elsewhere [<xref ref-type="bibr" rid="R13">13</xref>].</p>
+<p>Traces of hemoglobin (Hb) in cervicovaginal secretions were detected by second derivative spectrophotometry (threshold of sensitivity, 10 <italic>&#x03BC;</italic>g/mL) of the acellular fraction of genital fluids [<xref ref-type="bibr" rid="R14">14</xref>]. The amount of virus in vaginal lavage samples originating from contaminating blood was calculated as described elsewhere [<xref ref-type="bibr" rid="R5">5</xref>].</p>
+</sec>
+<sec>
+<title>Detection and quantitation of HIV RNA</title>
+<p>The concentration of HIV-1 RNA was determined in 500 <italic>&#x03BC;</italic>L of the plasma or acellular part of the cervicovaginal secretions, by quantitative RT-PCR using a commercially available hypersensitive assay (HIV-1 Monitor Test 1.5; Roche Diagnostic Systems, Branchburg, NJ) for which the threshold of detection was 50 copies/mL [<xref ref-type="bibr" rid="R15">15</xref>], according to the manufacturer&#x0027;s instructions. Preliminary experiments demonstrated that the assay allows for the quantification of HIV-1 in cervicovaginal lavage samples with the same sensitivity and specificity as in plasma (data not shown).</p>
+</sec>
+<sec>
+<title>Detection of proviral HIV-1 DNA</title>
+<p>The cellular pellet of the cervicovaginal secretions was incubated overnight with proteinase K and DNA extracted using the phenol-chloroform procedure. Extracted DNA (1 <italic>&#x03BC;</italic>g) was subjected to a nested PCR specific for the HIV-1 <italic>gag</italic> region, using SK380 and SK390 as outer primers and SK38 and SK39 as inner primers, as described by <xref ref-type="bibr" rid="R16">Haff [16]</xref>, and to a seminested PCR specific for the HIV-1 <italic>pol</italic> region, as described by <xref ref-type="bibr" rid="R17">Zhu et al. [17]</xref>. HIV-1 proviral DNA was considered to be present in genital secretions if &#x2A7D; 1 PCR (<italic>gag</italic> or <italic>pol</italic>) was positive. The quality of DNA and the absence of substantial PCR inhibitors were assessed by performing <italic>&#x03B2;</italic>-globine PCR on all the samples.</p>
+</sec>
+<sec>
+<title><italic>HIV-1 RNA</italic> pol <italic>gene sequence analysis</italic></title>
+<p>Cell-free virion-associated HIV-1 RNA in 1.0 mL plasma or supernatant of vaginal lavage samples was pelleted by centrifugation at 30,000 <italic>g</italic> for 60 min. The pellets were resuspended in 140 <italic>&#x03BC;</italic>L of RNAse-free sterile distilled water, and RNA was recovered by selective binding to a silica-based membrane in a spin column (QIAamp Viral RNA Extraction Kit; Qiagen, Hilden, Germany). RNA was reverse transcribed to cDNA and further processed for RT or protease p32 <italic>pol</italic> gene DNA amplification with nested PCR using different sets of specific primers, as described elsewhere [<xref ref-type="bibr" rid="R18">18</xref>, <xref ref-type="bibr" rid="R19">19</xref>]. The final PCR products (RT amplicon, 798 bp; protease amplicon, 507 bp) were purified, and direct sequencing of amplicons was performed using an automatic sequencer. The sequences were proofread manually and were aligned with the 1997&#x2013;1998 HIV-1 subtype B consensus sequence from the Los Alamos HIV sequence database (http://hiv-web.lanl.gov) as a reference sequence. Primary (I54V, V82A, and L90M) and secondary (L10I, K20R, M36I, L63P, and V77I) mutations in the protease gene, known to be associated with drug resistance, were considered [<xref ref-type="bibr" rid="R20">20</xref>]. Other mutations (K20I, L63A/L/S/T, and V82I) attributable to the natural polymorphism of the gene were also recorded [<xref ref-type="bibr" rid="R21">21</xref>]. The M41L, D67N, K70R, L74V, M184V, L210W, T215Y/F, and K219Q mutations were considered as resistance mutations for didanosine (ddI), lamivudine (3TC), or ZDV [<xref ref-type="bibr" rid="R20">20</xref>]. The L100I and K103N were considered as resistance mutations for nonnucleoside RT inhibitors (NNRTIs) [<xref ref-type="bibr" rid="R20">20</xref>].</p>
+<p>Phylogenetic analysis of HIV was performed with RT and protease <italic>pol</italic> gene sequences obtained from viruses detected in both systemic and genital compartments. Sequences were aligned using the Clustal software [<xref ref-type="bibr" rid="R22">22</xref>] and were corrected manually. Phylogeny construction and evaluation were performed by the neighbor-joining algorithm [<xref ref-type="bibr" rid="R23">23</xref>], with further confirmation by the Ficht and Wagner maximum parsimony method and by the Kimura 2-parameter distance matrix method [<xref ref-type="bibr" rid="R24">24</xref>], using the Phylip software package (version 3.572c) [<xref ref-type="bibr" rid="R25">25</xref>]. The virus subtype was determined by neighbor-joining reconstruction using reference sequences of RT and protease <italic>pol</italic> genes. When subtyping yielded discrepant results between the viruses in systemic and genital compartments, the assignment of sequences to a given subtype was validated by the Goloboff s fit criterion [<xref ref-type="bibr" rid="R26">26</xref>] and was statistically assessed by the topology-dependent permutation tail probability test [<xref ref-type="bibr" rid="R27">27</xref>, <xref ref-type="bibr" rid="R28">28</xref>].</p>
+</sec>
+<sec>
+<title>Concentration of antiretroviral drugs</title>
+<p>Measurements of antiretroviral drug concentrations in paired samples of plasma and acellular fractions of cervicovaginal lavage samples was performed by high-performance liquid chromatography coupled with ultraviolet detection. The limits of quantification (LOQ) were 5 ng/mL for ddI, stavudine (d4T), and ZDV; 10 ng/mL for 3TC; 5 ng/mL for saquinavir (SQV); and 50 ng/mL for nelfinavir (NFV), indinavir (IDV), and ritonavir (RTV). As assessed by spiking experiments, the assay was found to be linear in both plasma and cervicovaginal secretions over a concentration range from the LOQ to 5000 ng/mL for ZDV, ddI, d4T, and 3TC; from the LOQ to 2.10<sup>4</sup> ng/mL for SQV; from the LOQ to 4.10<sup>4</sup> ng/mL for IDV and NFV; and from the LOQ to 6.10<sup>4</sup> ng/mL for RTV. Coefficients of variation for drug-level determination were 0.5&#x0025;&#x2013;12&#x0025;.</p>
+</sec>
+<sec>
+<title>Statistical analysis</title>
+<p>Quantitative results were expressed as mean &#x00B1; SE. Comparisons between groups were performed by using the nonparametric Kruskal-Wallis analysis of variance test and by the Mann-Whitney <italic>U</italic> test. Prevalences of HIV-1 RNA detection were compared in blood and genital secretions by using Fisher&#x0027;s exact test. The correlation between HIV-1 RNA load in plasma and in cervicovaginal secretions was investigated using the nonparametric Spearman&#x0027;s test.</p>
+</sec>
+</sec>
+<sec sec-type="results">
+<title>Results</title>
+<sec>
+<title>Study population characteristics</title>
+<p>Genital samples were obtained from 58 HIV-1-seropositive women. Acellular fractions of cervicovaginal lavage samples of 4 women were positive for PSA and were excluded from the study. The 54 remaining were classified into 4 groups according to the treatment regimen (<xref ref-type="fig" rid="T1">table 1</xref>), irrespective of a possible blood contamination of the cervicovaginal lavages, as suggested elsewhere [<xref ref-type="bibr" rid="R5">5</xref>]. The mean duration of current treatment did not differ among treatment groups.</p>
+</sec>
+<sec>
+<title>HIV-1 in systemic and genital compartments</title>
+<p>HIV-1 RNA was less frequently detected in cervicovaginal secretions (21 [39&#x0025;] of 54) than in paired plasma samples (40 [74&#x0025;] of 54) (<italic>P</italic> = .0004). Cell-free HIV RNA was detected in the cervicovaginal lavage supernatants of 9 (75&#x0025;) of 12 untreated women, 8 (67&#x0025;) of 12 ZDV-treated women, 2 (17&#x0025;) of 12 women under bitherapy, and 2 (11&#x0025;) of 18 women under highly active antiretroviral therapy (HAART; <xref ref-type="fig" rid="T1">table 1</xref>). The prevalence of HIV-1 RNA in cervicovaginal lavage samples was inversely correlated with the number of antiretroviral drugs taken (<italic>P</italic> &#x003C; .0001, by the <italic>&#x03C7;</italic><sup>2</sup> test for trend). The mean HIV-1 RNA load in cervicovaginal lavage samples was significantly lower than that in corresponding plasma samples from women who were naive to treatment or who were treated with 1 or 2 nucleoside RT inhibitors (NRTIs) (<italic>P</italic> &#x003C; .015) but not in those from women under HAART (<xref ref-type="fig" rid="T1">table 1</xref>). The differences between the amount of HIV-1 RNA in the systemic compartment and genital lavage samples was 1.16 log copies/mL in untreated women, 1.06 log copies/mL in the monotherapy group, and 1.22 log copies/mL in women taking a 2-drug combination.</p>
+<p>Levels of HIV-1 RNA in plasma were highly correlated with those measured in paired samples of cervicovaginal secretions (Spearman&#x0027;s coefficient, .75; <italic>P</italic> &#x003C; .0001; <xref ref-type="fig" rid="F1">figure 1<italic>A</italic></xref>). Nineteen (48&#x0025;) of the 40 women who had detectable HIV-1 RNA in plasma also had detectable HIV-1 RNA in genital secretions. HIV-1 RNA was below the threshold of detection of the assay in both the systemic and genital compartments in 12 (22&#x0025;) of 54 women. Two (12&#x0025;) of 14 women with undetectable virus in plasma had measurable amounts of HIV-1 RNA in the genital tract.</p>
+<p>Proviral HIV-1 DNA was detected in cell pellets of approximately half of all cervicovaginal secretions, regardless of the presence or absence of HIV-1 RNA in the cervicovaginal lavage samples (<xref ref-type="fig" rid="T1">table 1</xref>). The difference in prevalence of HIV-1 proviral DNA in cervicovaginal lavage samples was not statistically significant between treatment groups. There was no association between the presence of HIV-1 DNA provirus in genital samples and the presence or amount of HIV-1 RNA in both plasma and cervicovaginal secretions (<xref ref-type="fig" rid="F1">figure 1<italic>B</italic></xref>).</p>
+<p>Eighteen samples (33&#x0025;) of cervicovaginal secretions exhibited traces of Hb (range, 11&#x2013;60 <italic>&#x03BC;</italic>g/mL) corresponding to 0.24&#x2013;1.30 <italic>&#x03BC;</italic>L of blood/mL of lavage. The amount of HIV-1 RNA in blood-contaminated vaginal lavage samples that would have originated from plasma was estimated to be 0.004&#x0025;&#x2013;0.024&#x0025; of the total HIV-1 RNA virus load in the cervicovaginal lavage samples.</p>
+</sec>
+<sec>
+<title>Resistance-associated mutations in plasma and cervicovaginal secretions</title>
+<p>The sequence of the protease gene was obtained in 40 plasma samples and that of the RT gene in 37 of 54 plasma samples. The protease gene sequence was obtained in 21 cervicovaginal lavage samples and that of the RT gene sequence in 20 of 54 cervicovaginal lavage samples. Eleven protease gene and 13 RT gene sequences from genital viruses could be analyzed in treated women.</p>
+<p>No resistance mutation in the RT <italic>pol</italic> gene was found in the plasma and cervicovaginal compartments of the treatment-naive women (<xref ref-type="fig" rid="T2">table 2</xref>). No protease inhibitor-primary resistance mutations in the protease gene were observed in these women. All naive patients exhibited variations from the consensus HIV-1 <italic>pol</italic> sequence in the protease gene, however, in both plasma and cervicovaginal secretions. All substitutions occurred at known secondary mutation sites and have been described elsewhere in protease inhibitor-naive individuals [<xref ref-type="bibr" rid="R29">29</xref>].</p>
+<p>The protease or RT genotype was obtained in the cervicovaginal lavage samples from 12 of 12 treated women in whom persistent HIV-1 RNA was detected, by the Roche assay, in the cervicovaginal secretions and in those from 2 of 30 treated women (patients 19 and 21) without detectable HIV-1 RNA load in the genital tract. The detection of HIV-1 RNA in cervicovaginal secretions of treated women was closely associated with the presence of genotypic resistance mutations to antiretroviral drugs in the genital tract (protease inhibitor-resistance mutations, 3 patients; NRTI/NNRTI-resistance mutations, 4 patients; both protease inhibitor-resistant and NRTI/NNRTI-resistance mutations, 6 patients).</p>
+<p>The genotype of the protease <italic>pol</italic> gene was obtained in the cervicovaginal secretions of 11 (26&#x0025;) of 42 women under antiretroviral therapy: 3 primary mutations were present in patient 22, and secondary mutations were present in all patients but 1 (patient 21; <xref ref-type="fig" rid="T3">table 3</xref>). A protease genotype was obtained from 27 plasma samples: primary resistance mutations were observed in 4 patients (20, 22, 43, and 49), and secondary resistance mutations were observed in 23 patients. The genotype for the RT <italic>pol</italic> gene was found in the genital tract of 13 (31&#x0025;) of 42 women under antiretroviral therapy; 10 (77&#x0025;) of these women exhibited NRTI-resistance mutations (<xref ref-type="fig" rid="T3">table 3</xref>). An RT genotype was obtained from plasma samples from 26 treated women, of whom 15 harbored variants with resistance mutations.</p>
+<p><xref ref-type="fig" rid="T3">Table 3</xref> depicts the diversity of antiretroviral resistance mutations in the protease and RT <italic>pol</italic> genes in paired samples of plasma and cervicovaginal secretions of 14 selected patients in whom HIV-1 <italic>pol</italic> sequences were obtained in the genital compartment. Two of 14 patients (11 and 17) exhibited no variants resistant to NRTIs or NNRTIs in either plasma or in cervicovaginal secretions; both women had received ZDV for &#x003C;1 year. Six patients (9, 15, 18, 19, 20, and 21) who had received antiretroviral therapy for &#x003E;1 year exhibited a similar pattern of amino acid changes in the RT <italic>pol</italic> genes of viruses detected in both plasma and cervicovaginal lavage samples. Two patients (10 and 14) who had received ZDV for &#x003C;1 year exhibited an advanced resistance genotype (T215Y or T215F) in plasma samples, whereas an early resistance mutation (K70R) was found in the genital tract. Patient 12, who also had received ZDV for &#x003C;1 year, exhibited a resistance genotype with substitutions at RT codons <italic>pol</italic> 41 and <italic>pol</italic> 215 in the genital tract but did not exhibit any mutation in plasma samples. In patient 22, 3 primary resistance mutations (I54V, V82A, and L90M) and several secondary resistance mutations to protease inhibitors were detected in both blood and the genital tract; several mutations to NRTIs and NNRTIs also were present in both compartments.</p>
+</sec>
+<sec>
+<title>Phylogenetic analysis</title>
+<p>Molecular sub typing of all available sequences exhibited a broad distribution of virus subtypes. Thirty-three of 40 patients in whom subtyping was performed exhibited the same virus subtype in both plasma samples and the genital tract. Subtype A or E was present in 1 of 40 patients, subtype B in 18 patients, subtype C in 3 patients, subtype D in 2 patients, subtype G in 4 patients, and subtype J in 4 patients. Five patients exhibited evidence of intersubtype recombination. Patients 14, 39, and 41 harbored recombinant HIV-1 of the G/A intersubtype, and patient 17 harbored a virus of the A/C intersubtype, in both plasma and cervicovaginal secretions. The high diversity of genetic subtypes of HIV-1 found in the study population likely reflects the multiple origins of HIV strains in the area of Paris [<xref ref-type="bibr" rid="R30">30</xref>].</p>
+<p>Three women unexpectedly exhibited different HIV-1 subtypes in plasma and cervicovaginal secretions, a finding confirmed in duplicate on 2 different aliquots of the same sample (<xref ref-type="fig" rid="F2">figure 2</xref>). In patient 12, the circulating variant belonged to subtype D, whereas the major variant identified in the genital tract was of subtype B. In patient 16, the plasma variant belonged to subtype B and that in cervicovaginal secretions to subtype J. In patient 7, a G/B intersubtype recombinant virus was found in plasma, whereas only HIV-1 of subtype B was present in genital secretions. To investigate whether the genital variants found in these women originated from semen of an HIV-infected male partner, despite the lack of detectable PSA, we evaluated the presence of very low levels of contaminating semen, by nested PCR for the Y chromosome, in the cellular fraction of the cervicovaginal lavage samples. Two patients (12 and 16) were PSA negative but Y-PCR-positive in genital secretions, which suggests that heterologous HIV variants may have originated from an HIV-positive male partner. Patient 7, however, was PSA-negative and Y-PCR-negative in genital secretions, which suggests that the heterogeneous HIV variants detected in the cervicovaginal lavage samples may result from a genetic compartmentalization of the virus strain in the genital tract. Three other PSA-negative genital lavage samples were shown to be contaminated by semen traces (<xref ref-type="fig" rid="T2">tables 2</xref> and <xref ref-type="fig" rid="T3">3</xref>).</p>
+<p>The mean intercompartment diversity of HIV-1 <italic>pol</italic> gene sequences obtained from 19 paired blood and cervicovaginal secretions was 1.51&#x0025; (range, 0&#x0025;&#x2013;11.45&#x0025;) in the protease gene and 1.55&#x0025; (range, 0&#x0025;&#x2013;10.04&#x0025;) in the RT gene. Four patients showed 100&#x0025; genetic homology in the protease gene in both compartments; 1 of them also exhibited a complete genetic homology in the RT gene. The phylogenetic tree shown in <xref ref-type="fig" rid="F2">figure 2</xref> confirms the close genetic relatedness between 16 of 19 pairs of HIV-1 variants detected in both systemic and vaginal compartments. A genetic viral compartmentalization between blood and genital tract was suggested by findings concerning patient 15, in whom the genetic distance between the protease gene sequences of variants detected in plasma samples and the genital tract was 3.1&#x0025; (i.e., &#x223C;2-fold the mean intercompartment genetic diversity found in the study population). The branching favoring a separate lineage for the protease gene sequences of the plasma and genital viruses, however, was not supported by a significant bootstrap value in the neighbor-joining tree.</p>
+<p>The nucleotide sequences presented in this report have been deposited in the GenBank database under accession numbers AF199237-AF199321.</p>
+</sec>
+<sec>
+<title>Concentrations of antiretroviral drugs</title>
+<p>Forty-two paired samples of plasma and cervicovaginal secretions were processed for measurements of antiretroviral drug concentrations (<xref ref-type="fig" rid="T4">table 4</xref>). IDV was detected in the majority of tested cervicovaginal secretions of women receiving the drug. If one considers the dilution factor introduced by the vaginal lavage procedure, the mean concentration of IDV at the surface of the cervicovaginal mucosa may be estimated to be &#x223C;3100 ng/mL (i.e., 1.5-fold lower than that in plasma). Among NRTIs, ZDV was frequently detected in cervicovaginal lavage samples. NFV, RIT, SQV, and d4T could not be detected in cervicovaginal lavage samples, although they were generally detected in plasma samples.</p>
+</sec>
+</sec>
+<sec sec-type="discussion">
+<title>Discussion</title>
+<p>This cross-sectional study investigated the presence of HIV-1 RNA, proviral DNA, and antiretroviral drug-resistant variants in the cervicovaginal secretions of women receiving antiretroviral therapy. The prevalence of detectable HIV-1 RNA in genital secretions was inversely related to the number of drugs taken by the patient. Proviral DNA was detected in fewer than half of cervicovaginal lavage samples, independent of the presence of HIV-1 RNA and the antiretroviral regimen. HIV variants exhibiting drug resistance-associated mutations in protease, as well as RT <italic>pol</italic>, genes were found in cervicovaginal secretions of most women with persisting viral replication in the genital compartment despite being treated. In particular, women treated by protease inhibitors may have protease inhibitor-resistance mutations, including primary mutations, in their genital tract in addition to their systemic compartment. The resistant variants likely originated as a consequence of a selective pressure by antiretroviral drugs that penetrate in the female genital tract at suboptimal concentrations. The dynamics of selection of the resistant variants was likely different between the systemic and genital compartments, as assessed by compartmentalization of HIV-1 variants in the female genital tract, which showed distinct amino acid changes to HIV-1 variants in blood. In a few women, antiretroviral drug-resistant variants originating from semen from an HIV-infected male partner should have been deposited during sexual intercourse. Our observations thus provide a basis for the risk of female-to-male and male-to-female heterosexual transmission of drug-resistant HIV-1 variants.</p>
+<p>Although some negative results in DNA provirus detection may be attributed to low PCR sensitivity, proviral HIV-1 DNA was detected in the cellular fraction of about half of genital lavage samples, regardless of the presence or absence of HIV-1 RNA in the cervicovaginal lavage samples, as reported elsewhere [<xref ref-type="bibr" rid="R33">33</xref>&#x2013;<xref ref-type="bibr" rid="R38">38</xref>]. Monocyte-macrophages and lymphocytes are considered to be the primary reservoirs for HIV in the female genital tract [<xref ref-type="bibr" rid="R1">1</xref>, <xref ref-type="bibr" rid="R39">39</xref>&#x2013;<xref ref-type="bibr" rid="R41">41</xref>]. Shedding of these cells directly into the lumen of the cervicovaginal mucosa supplies the cervical and vaginal secretions with HIV-infected cells. The observations that antiretroviral therapy is not effective in purging the female genital reservoir of cell-associated provirus are reminiscent of the persistence of cellular HIV-1 proviral DNA load in blood after long-term double combination antiretroviral therapy and HAART [<xref ref-type="bibr" rid="R42">42</xref>, <xref ref-type="bibr" rid="R43">43</xref>].</p>
+<p>Viral replication in the female genital tract, under antiretroviral therapy, also was assessed by detecting and quantitating HIV-1 RNA in genital secretions. The rate of recent virus production, which is highly sensitive to antiretroviral treatment, is reflected in the steady-state level of viral RNA [<xref ref-type="bibr" rid="R44">44</xref>]. The presence of cell-free HIV-1 RNA in the genital tract primarily reflects a local production of virus, since the blood contamination was estimated to account for &#x003C;0.025&#x0025; of the total genital HIV-1 RNA load. The prevalence of detection and the amounts of HIV-1 RNA in cervicovaginal lavage samples were inversely correlated with the number of antiretroviral drugs taken by the patients, as elsewhere reported in treated women [<xref ref-type="bibr" rid="R3">3</xref>&#x2013;<xref ref-type="bibr" rid="R5">5</xref>]. These findings suggest that a cellular reservoir of productively infected cells with rapid turnover likely exists in the female genital tract, similar to that previously recognized in the systemic compartment [<xref ref-type="bibr" rid="R45">45</xref>, <xref ref-type="bibr" rid="R46">46</xref>]. No correlation was found between HIV proviral genital detection and RNA virus load in plasma and cervicovaginal lavage samples. This observation may simply reflect different sensitivity of the two assays used to detect HIV-1 RNA and proviral HIV-1 DNA or differences in the lability of HIV-1 RNA in the female genital tract after release from infected cells, compared with that of cell-associated proviral DNA. Our observations also raise the possibility that the genital production of free HIV and cell-associated HIV provirus may be largely unrelated to one another. This may be consistent with the differential responses to antiretroviral therapy that we observed for HIV-1 RNA and proviral HIV-1 DNA.</p>
+<p>We assessed the presence of mutations conferring resistance to antiretroviral drugs in the protease and RT <italic>pol</italic> genes of cellfree RNA virus, which are more prone to acquire resistance mutations under drug selection pressure, because of the rapid kinetics of replication [<xref ref-type="bibr" rid="R45">45</xref>, <xref ref-type="bibr" rid="R47">47</xref>]. Treatment-naive women did not show resistance mutations in the RT <italic>pol</italic> gene or protease-inhibitor primary resistance mutations in the plasma and cervicovaginal compartments. Protease-inhibitor secondary mutations in protease inhibitor-naive women may be associated with polymorphism of the protease <italic>pol</italic> gene in the absence of protease-inhibitor primary mutations or of serial samples showing evolution of the mutations while on therapy. It is interesting to note that most treated women who had detectable HIV-1 RNA in cervicovaginal secretions displayed genotypic resistance mutations to antiretroviral drugs in the genital tract. These observations substantiate that HIV-1 variants with genotypic resistance mutations may be present in the female genital tract, as has previously been reported in 4 case reports [<xref ref-type="bibr" rid="R8">8</xref>&#x2013;<xref ref-type="bibr" rid="R10">10</xref>], and emphasize that genital resistant variants evolve under antiretroviral regimens that are incompletely suppressive of viral replication in the genital compartment.</p>
+<p>Resistant variants in the female genital tract may likely arise as a consequence of the selective pressure, by antiretroviral drugs diffusing in the female genital tract, on the genital reservoir of productively infected cells with rapid turnover. The selection of drug-resistant HIV-1 variants in the genital compartment is supported by 2 complementary findings in this study: (1) the penetration of antiretroviral drugs in the female genital tract and (2) the compartmentalization of HIV replication within the female genital tract. The concept of a relative autonomy of HIV replication within the female reproductive tract has elsewhere been highlighted [<xref ref-type="bibr" rid="R3">3</xref>, <xref ref-type="bibr" rid="R36">36</xref>, <xref ref-type="bibr" rid="R39">39</xref>, <xref ref-type="bibr" rid="R48">48</xref>, <xref ref-type="bibr" rid="R49">49</xref>]. We observed that HIV-1 RNA load in plasma samples was positively correlated with that in cervicovaginal lavage samples in most patients, as reported elsewhere [<xref ref-type="bibr" rid="R5">5</xref>, <xref ref-type="bibr" rid="R38">38</xref>, <xref ref-type="bibr" rid="R50">50</xref>], whereas virus load levels were divergent between plasma and cervicovaginal secretions in several patients. These findings confirm that the dynamics of cell-free HIV production in the systemic and genital compartments, although generally related, depend on distinct factors. The sequencing technique that we used provided information on the major HIV <italic>pol</italic> sequence present in the analyzed samples, thus underestimating the genetic diversity in systemic and genital compartments [<xref ref-type="bibr" rid="R51">51</xref>]; however, a genetic compartmentalization of HIV-1 variants between blood and genital secretions was apparent in 1 patient in whom plasma and genital variants showed a certain degree of genetic diversity and in a second patient in whom a G/B intersubtype recombinant virus was present in plasma, whereas only HIV-1 of subtype B was found in their genital secretions. Dual infections with different HIV-1 subtypes have elsewhere been reported in humans [<xref ref-type="bibr" rid="R52">52</xref>&#x2013;<xref ref-type="bibr" rid="R54">54</xref>] and render possible the emergence of intersubtype recombinant virus [<xref ref-type="bibr" rid="R55">55</xref>]. Finally, the hypothesis that HIV-1 in the female genital tract develops as a biologically separate compartment, in which the virus is at least partly produced locally under different kinetics of drug selective pressure than virus in plasma, is substantiated by the observation of 2 women under ZDV monotherapy who exhibited different patterns of amino acid changes in the RT <italic>pol</italic> gene of viruses detected in plasma samples and in the corresponding cervicovaginal lavage samples.</p>
+<p>Resistant variants in the female genital tract may also possibly arise from semen containing antiretroviral drug-resistant strains of HIV-1, as shown here in the 2 treated women exhibiting a different HIV-1 subtype in their plasma and in their cervicovaginal secretions, which contained semen traces. The genital variants detected in both women harbored drug-resistant mutations in the protease or RT <italic>pol</italic> genes.</p>
+<p>Taken together, we believe that our observations may have important implications from a public health perspective. First, antiretroviral therapy may be expected to reduce the transmission of HIV carried by the female genital secretions, since, in most treated women (including 90&#x0025; of patients receiving HAART), the reduction of HIV-1 RNA in cervicovaginal secretions paralleled that observed in blood. Because cell-associated HIV may be sexually transmitted in addition to cell-free HIV particles [<xref ref-type="bibr" rid="R56">56</xref>], however, the persistence of cell-associated DNA provirus in the female genital secretions, independent of the treatment regimen and efficacy, suggests that treated women remain potentially infectious during heterosexual intercourse, despite the disappearance of free HIV from genital secretions. Our data also point out the hazard to uninfected men of acquiring multidrug-resistant HIV-1 variants by exposure to HIV-infected women. We demonstrate that free HIV-1 RNA variants harboring genotypic resistance to NRTIs, NNRTIs, and protease inhibitors are found in the genital tract of &#x223C;25&#x0025; of antiretroviral drug-experienced women. These observations emphasize the risk of spread of resistant HIV-1 variants in the heterosexual population.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>References</title>
+<ref id="R1">
+<label>1.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Nuovo</surname><given-names>GJ</given-names></name>
+<name><surname>Forde</surname><given-names>A</given-names></name>
+<name><surname>MacConnell</surname><given-names>P</given-names></name>
+<name><surname>Fahrenwald</surname><given-names>R</given-names></name>
+</person-group>
+<article-title>In situ detection of PCR-amplified HIV-1 nucleic acids and tumor necrosis factor cDNA in cervical tissues</article-title>
+<source>Am J Pathol</source>
+<year>1993</year>
+<volume>143</volume>
+<fpage>40</fpage>
+<lpage>8</lpage>
+</nlm-citation>
+</ref>
+<ref id="R2">
+<label>2.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Chuachoowong</surname><given-names>R</given-names></name>
+<name><surname>Shaffer</surname><given-names>N</given-names></name>
+<name><surname>Siriwasin</surname><given-names>W</given-names></name>
+<etal/></person-group>
+<article-title>Short-course antenatal zidovudine reduces both cervicovaginal human immunodeficiency virus type 1 RNA levels and risk of perinatal transmission</article-title>
+<source>J Infect Dis</source>
+<year>2000</year>
+<volume>181</volume>
+<fpage>99</fpage>
+<lpage>106</lpage>
+</nlm-citation>
+</ref>
+<ref id="R3">
+<label>3.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Rasheed</surname><given-names>S</given-names></name>
+<name><surname>Li</surname><given-names>Z</given-names></name>
+<name><surname>Xu</surname><given-names>D</given-names></name>
+<name><surname>Kovacs</surname><given-names>A</given-names></name>
+</person-group>
+<article-title>Presence of cell-free human immunodeficiency virus in cervical secretions is independent of viral load in the blood of human immunodeficiency virus-infected women</article-title>
+<source>Am J Obstet Gynecol</source>
+<year>1996</year>
+<volume>175</volume>
+<fpage>122</fpage>
+<lpage>30</lpage>
+</nlm-citation>
+</ref>
+<ref id="R4">
+<label>4.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Cu Uvin</surname><given-names>S</given-names></name>
+<name><surname>Caliendo</surname><given-names>AM</given-names></name>
+<name><surname>Reinert</surname><given-names>SE</given-names></name>
+<name><surname>Mayer</surname><given-names>KH</given-names></name>
+<name><surname>Flanigan</surname><given-names>TP</given-names></name>
+<name><surname>Carpenter</surname><given-names>CCJ</given-names></name>
+</person-group>
+<article-title>HIV-1 in the female genital tract and the effect of antiretroviral therapy</article-title>
+<source>AIDS</source>
+<year>1998</year>
+<volume>12</volume>
+<fpage>827</fpage>
+<lpage>9</lpage>
+</nlm-citation>
+</ref>
+<ref id="R5">
+<label>5.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hart</surname><given-names>CE</given-names></name>
+<name><surname>Lennox</surname><given-names>JL</given-names></name>
+<name><surname>Pratt-Palmore</surname><given-names>M</given-names></name>
+<etal/></person-group>
+<article-title>Correlation of human immunodeficiency virus type 1 RNA levels in blood and the female genital tract</article-title>
+<source>J Infect Dis</source>
+<year>1999</year>
+<volume>179</volume>
+<fpage>871</fpage>
+<lpage>82</lpage>
+</nlm-citation>
+</ref>
+<ref id="R6">
+<label>6.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Nicolosi</surname><given-names>A</given-names></name>
+<name><surname>Musicco</surname><given-names>M</given-names></name>
+<name><surname>Saracco</surname><given-names>A</given-names></name>
+<name><surname>Lazzarin</surname><given-names>A</given-names></name>
+</person-group>
+<article-title>Risk factors for woman-to-man sexual transmission of the human immunodeficiency virus: Italian study group on HIV heterosexual transmission</article-title>
+<source>J Acquir Immune Defic Syndr</source>
+<year>1994</year>
+<volume>7</volume>
+<fpage>296</fpage>
+<lpage>300</lpage>
+</nlm-citation>
+</ref>
+<ref id="R7">
+<label>7.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Connor</surname><given-names>EM</given-names></name>
+<name><surname>Sperling</surname><given-names>RS</given-names></name>
+<name><surname>Gelber</surname><given-names>R</given-names></name>
+<etal/></person-group>
+<article-title>Reduction of maternal-infant transmission of human immunodeficiency virus type 1 with zidovudine treatment</article-title>
+<source>N Engl J Med</source>
+<year>1994</year>
+<volume>331</volume>
+<fpage>1173</fpage>
+<lpage>80</lpage>
+</nlm-citation>
+</ref>
+<ref id="R8">
+<label>8.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Wainberg</surname><given-names>MA</given-names></name>
+<name><surname>Beaulieu</surname><given-names>R</given-names></name>
+<name><surname>Tsoukas</surname><given-names>C</given-names></name>
+<name><surname>Thomas</surname><given-names>R</given-names></name>
+</person-group>
+<article-title>Detection of zidovudineresistant variants of HIV-1 in genital fluids</article-title>
+<source>AIDS</source>
+<year>1993</year>
+<volume>7</volume>
+<fpage>433</fpage>
+<lpage>44</lpage>
+</nlm-citation>
+</ref>
+<ref id="R9">
+<label>9.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Di Stefano</surname><given-names>M</given-names></name>
+<name><surname>Fiore</surname><given-names>J</given-names></name>
+<name><surname>Monno</surname><given-names>L</given-names></name>
+<name><surname>Lepera</surname><given-names>A</given-names></name>
+<name><surname>Pastore</surname><given-names>G</given-names></name>
+<name><surname>Angarano</surname><given-names>G</given-names></name>
+</person-group>
+<article-title>Detection of multiple drug-resistance-associated <italic>pol</italic> mutations in cervicovaginal secretions from women largely treated with antiretroviral agents</article-title>
+<source>AIDS</source>
+<year>1999</year>
+<volume>13</volume>
+<fpage>992</fpage>
+<lpage>4</lpage>
+</nlm-citation>
+</ref>
+<ref id="R10">
+<label>10.</label>
+<nlm-citation citation-type="book">
+<person-group person-group-type="author">
+<name><surname>Hazelwood</surname><given-names>JD</given-names></name>
+<name><surname>Hoesley</surname><given-names>CJ</given-names></name>
+<name><surname>Squires</surname><given-names>KE</given-names></name>
+<name><surname>Johnson</surname><given-names>VA</given-names></name>
+</person-group>
+<article-title>Detection of RT and protease resistance in genital tract and plasma viruses from an HIV-infected woman receiving highly active antiretroviral triple therapy: a case report [abstract 139]</article-title>
+<source>Program and abstracts of the 3d International Workshop on HIV Drug Resistance and Treatment Strategies (San Diego)</source>
+<year>1999</year>
+<publisher-loc>London</publisher-loc>
+<publisher-name>International Medical Press</publisher-name>
+<fpage>96</fpage>
+<lpage>7</lpage>
+</nlm-citation>
+</ref>
+<ref id="R11">
+<label>11.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Yerly</surname><given-names>S</given-names></name>
+<name><surname>Kaiser</surname><given-names>L</given-names></name>
+<name><surname>Race</surname><given-names>E</given-names></name>
+<name><surname>Bru</surname><given-names>J</given-names></name>
+<name><surname>Clavel</surname><given-names>F</given-names></name>
+<name><surname>Perrin</surname><given-names>L</given-names></name>
+</person-group>
+<article-title>Transmission of antiretroviral-drug-resistant HIV-1 variants</article-title>
+<source>Lancet</source>
+<year>1999</year>
+<volume>354</volume>
+<fpage>729</fpage>
+<lpage>33</lpage>
+</nlm-citation>
+</ref>
+<ref id="R12">
+<label>12.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>B&#x00E9;lec</surname><given-names>L</given-names></name>
+<name><surname>Meillet</surname><given-names>D</given-names></name>
+<name><surname>Levy</surname><given-names>M</given-names></name>
+<name><surname>Georges</surname><given-names>A</given-names></name>
+<name><surname>Tevi-Benissan</surname><given-names>C</given-names></name>
+<name><surname>Pillot</surname><given-names>J</given-names></name>
+</person-group>
+<article-title>Dilution assessment of cervicovaginal secretions obtained by vaginal washing for immunological assays</article-title>
+<source>Clin Diagn Lab Immunol</source>
+<year>1995</year>
+<volume>2</volume>
+<fpage>57</fpage>
+<lpage>61</lpage>
+</nlm-citation>
+</ref>
+<ref id="R13">
+<label>13.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kogan</surname><given-names>SC</given-names></name>
+<name><surname>Doherty</surname><given-names>M</given-names></name>
+<name><surname>Gitschier</surname><given-names>J</given-names></name>
+</person-group>
+<article-title>An improved method for prenatal diagnosis of genetic diseases by analysis of amplified DNA sequences: application to hemophilia A</article-title>
+<source>N Engl J Med</source>
+<year>1987</year>
+<volume>317</volume>
+<fpage>985</fpage>
+<lpage>90</lpage>
+</nlm-citation>
+</ref>
+<ref id="R14">
+<label>14.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Sanderink</surname><given-names>GJ</given-names></name>
+<name><surname>Van Rijn</surname><given-names>HJ</given-names></name>
+</person-group>
+<article-title>Quantitative measurement of plasma hemoglobin by second derivative spectrophotometry</article-title>
+<source>Clin Chim Acta</source>
+<year>1985</year>
+<volume>146</volume>
+<fpage>65</fpage>
+<lpage>73</lpage>
+</nlm-citation>
+</ref>
+<ref id="R15">
+<label>15.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Triques</surname><given-names>K</given-names></name>
+<name><surname>Coste</surname><given-names>J</given-names></name>
+<name><surname>Perret</surname><given-names>JL</given-names></name>
+<etal/></person-group>
+<article-title>Efficiencies of four versions of the AMPLICOR HIV-1 MONITOR test for quantification of different subtypes of human immunodeficiency virus type 1</article-title>
+<source>J Clin Microbiol</source>
+<year>1999</year>
+<volume>37</volume>
+<fpage>110</fpage>
+<lpage>6</lpage>
+</nlm-citation>
+</ref>
+<ref id="R16">
+<label>16.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Haff</surname><given-names>LA</given-names></name>
+</person-group>
+<article-title>Improved quantitative PCR using nested primers</article-title>
+<source>PCR Methods Appl</source>
+<year>1994</year>
+<volume>3</volume>
+<fpage>332</fpage>
+<lpage>7</lpage>
+</nlm-citation>
+</ref>
+<ref id="R17">
+<label>17.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zhu</surname><given-names>T</given-names></name>
+<name><surname>Korber</surname><given-names>BT</given-names></name>
+<name><surname>Nahmias</surname><given-names>AJ</given-names></name>
+<name><surname>Hooper</surname><given-names>E</given-names></name>
+<name><surname>Sharp</surname><given-names>PM</given-names></name>
+<name><surname>Ho</surname><given-names>DD</given-names></name>
+</person-group>
+<article-title>An African HIV-1 sequence from 1959 and implications for the origin of the epidemic</article-title>
+<source>Nature</source>
+<year>1998</year>
+<volume>391</volume>
+<fpage>594</fpage>
+<lpage>7</lpage>
+</nlm-citation>
+</ref>
+<ref id="R18">
+<label>18.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Nijhuis</surname><given-names>M</given-names></name>
+<name><surname>Boucher</surname><given-names>CA</given-names></name>
+<name><surname>Schipper</surname><given-names>P</given-names></name>
+<name><surname>Leitner</surname><given-names>T</given-names></name>
+<name><surname>Shuurman</surname><given-names>R</given-names></name>
+<name><surname>Albert</surname><given-names>J</given-names></name>
+</person-group>
+<article-title>Stochastic processes strongly influence HIV-1 evolution during suboptimal protease-inhibitor therapy</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<year>1998</year>
+<volume>95</volume>
+<fpage>14441</fpage>
+<lpage>6</lpage>
+</nlm-citation>
+</ref>
+<ref id="R19">
+<label>19.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Masquelier</surname><given-names>B</given-names></name>
+<name><surname>Descamps</surname><given-names>D</given-names></name>
+<name><surname>Carri&#x00E8;re</surname><given-names>I</given-names></name>
+<etal/></person-group>
+<article-title>Zidovudine resensitization and dual HIV-1 resistance to zidovudine and lamivudine in the Delta lamivudine roll-over study</article-title>
+<source>Antivir Ther</source>
+<year>1999</year>
+<volume>4</volume>
+<fpage>69</fpage>
+<lpage>77</lpage>
+</nlm-citation>
+</ref>
+<ref id="R20">
+<label>20.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hirsch</surname><given-names>MS</given-names></name>
+<name><surname>Conway</surname><given-names>B</given-names></name>
+<name><surname>D&#x0027;Aquila</surname><given-names>RT</given-names></name>
+<etal/></person-group>
+<article-title>Antiretroviral drug resistance testing in adults with HIV infection</article-title>
+<source>JAMA</source>
+<year>1998</year>
+<volume>279</volume>
+<fpage>1984</fpage>
+<lpage>2002</lpage>
+</nlm-citation>
+</ref>
+<ref id="R21">
+<label>21.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kozal</surname><given-names>MJ</given-names></name>
+<name><surname>Shah</surname><given-names>N</given-names></name>
+<name><surname>Shen</surname><given-names>N</given-names></name>
+<etal/></person-group>
+<article-title>Extensive polymorphisms observed in HIV-1 clade B protease gene using high-density oligonucleotide arrays</article-title>
+<source>Nat Med</source>
+<year>1996</year>
+<volume>2</volume>
+<fpage>753</fpage>
+<lpage>9</lpage>
+</nlm-citation>
+</ref>
+<ref id="R22">
+<label>22.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Thompson</surname><given-names>JD</given-names></name>
+<name><surname>Higgins</surname><given-names>DG</given-names></name>
+<name><surname>Gibson</surname><given-names>TJ</given-names></name>
+</person-group>
+<article-title>CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting position specific <italic>gap</italic> penalties and weight matrix choice</article-title>
+<source>Nucleic Acids Res</source>
+<year>1994</year>
+<volume>22</volume>
+<fpage>4673</fpage>
+<lpage>80</lpage>
+</nlm-citation>
+</ref>
+<ref id="R23">
+<label>23.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Saitou</surname><given-names>N</given-names></name>
+<name><surname>Nei</surname><given-names>M</given-names></name>
+</person-group>
+<article-title>The neighbor-joining method: a new method for constructing phylogenetic trees</article-title>
+<source>Mol Biol Evol</source>
+<year>1987</year>
+<volume>4</volume>
+<fpage>406</fpage>
+<lpage>25</lpage>
+</nlm-citation>
+</ref>
+<ref id="R24">
+<label>24.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kimura</surname><given-names>M</given-names></name>
+</person-group>
+<article-title>A simple model for estimating evolutionary rates of base substitutions through comparative studies of nucleotides sequences</article-title>
+<source>J Mol Evol</source>
+<year>1980</year>
+<volume>16</volume>
+<fpage>111</fpage>
+<lpage>20</lpage>
+</nlm-citation>
+</ref>
+<ref id="R25">
+<label>25.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Felsenstein</surname><given-names>J</given-names></name>
+</person-group>
+<article-title>PHYLIP: phylogeny inference package</article-title>
+<source>Cladistics</source>
+<year>1989</year>
+<volume>5</volume>
+<fpage>164</fpage>
+<lpage>6</lpage>
+</nlm-citation>
+</ref>
+<ref id="R26">
+<label>26.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Goloboff</surname><given-names>PA</given-names></name>
+</person-group>
+<article-title>Estimating character weights during tree search</article-title>
+<source>Cladistics</source>
+<year>1993</year>
+<volume>9</volume>
+<fpage>83</fpage>
+<lpage>91</lpage>
+</nlm-citation>
+</ref>
+<ref id="R27">
+<label>27.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Faith</surname><given-names>D</given-names></name>
+</person-group>
+<article-title>Cladistic permutation tests for monophyly and nonmonophyly systematic</article-title>
+<source>Zoology</source>
+<year>1991</year>
+<volume>40</volume>
+<fpage>366</fpage>
+<lpage>75</lpage>
+</nlm-citation>
+</ref>
+<ref id="R28">
+<label>28.</label>
+<nlm-citation citation-type="book">
+<person-group person-group-type="author">
+<name><surname>Swofford</surname><given-names>D</given-names></name>
+</person-group>
+<source>PAUP*: phylogenetic analysis using parsimony (and other methods), v4.0, beta2</source>
+<year>1998</year>
+<publisher-loc>Sunderland, MA</publisher-loc>
+<publisher-name>Sinauer Associates</publisher-name>
+</nlm-citation>
+</ref>
+<ref id="R29">
+<label>29.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Lech</surname><given-names>WJ</given-names></name>
+<name><surname>Wang</surname><given-names>G</given-names></name>
+<name><surname>Yang</surname><given-names>YL</given-names></name>
+<etal/></person-group>
+<article-title>In vivo sequence diversity of the protease of human immunodeficiency virus type 1: presence of protease inhibitor-resistant variants in untreated subjects</article-title>
+<source>J Virol</source>
+<year>1996</year>
+<volume>70</volume>
+<fpage>2038</fpage>
+<lpage>43</lpage>
+</nlm-citation>
+</ref>
+<ref id="R30">
+<label>30.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Simon</surname><given-names>F</given-names></name>
+<name><surname>Loussert-Ajaka</surname><given-names>I</given-names></name>
+<name><surname>Damond</surname><given-names>F</given-names></name>
+<name><surname>Saragosti</surname><given-names>S</given-names></name>
+<name><surname>Barin</surname><given-names>F</given-names></name>
+<name><surname>Brun-Vezinet</surname><given-names>F</given-names></name>
+</person-group>
+<article-title>HIV type 1 diversity in northern Paris, France</article-title>
+<source>AIDS Res Hum Retroviruses</source>
+<year>1996</year>
+<volume>12</volume>
+<fpage>1427</fpage>
+<lpage>33</lpage>
+</nlm-citation>
+</ref>
+<ref id="R31">
+<label>31.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Hoetelmans</surname><given-names>RM</given-names></name>
+<name><surname>Meenhorst</surname><given-names>PL</given-names></name>
+<name><surname>Mulder</surname><given-names>JW</given-names></name>
+<name><surname>Burger</surname><given-names>DM</given-names></name>
+<name><surname>Koks</surname><given-names>CH</given-names></name>
+<name><surname>Beijnen</surname><given-names>JH</given-names></name>
+</person-group>
+<article-title>Clinical pharmacology of HIV protease inhibitors: focus on saquinavir, indinavir, and ritonavir</article-title>
+<source>Pharm World Sci</source>
+<year>1997</year>
+<volume>19</volume>
+<fpage>159</fpage>
+<lpage>75</lpage>
+</nlm-citation>
+</ref>
+<ref id="R32">
+<label>32.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Daluge</surname><given-names>SM</given-names></name>
+<name><surname>Good</surname><given-names>SS</given-names></name>
+<name><surname>Faletto</surname><given-names>MB</given-names></name>
+<etal/></person-group>
+<article-title>1592U89, a novel carbocyclic nucleoside analog with potent, selective anti-human immunodeficiency virus activity</article-title>
+<source>Antimicrob Agents Chemother</source>
+<year>1997</year>
+<volume>41</volume>
+<fpage>1082</fpage>
+<lpage>93</lpage>
+</nlm-citation>
+</ref>
+<ref id="R33">
+<label>33.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Clemetson</surname><given-names>DB-A</given-names></name>
+<name><surname>Moss</surname><given-names>GB</given-names></name>
+<name><surname>Willerford</surname><given-names>DM</given-names></name>
+<etal/></person-group>
+<article-title>Detection of HIV DNA in cervical and vaginal secretions</article-title>
+<source>JAMA</source>
+<year>1993</year>
+<volume>269</volume>
+<fpage>2860</fpage>
+<lpage>4</lpage>
+</nlm-citation>
+</ref>
+<ref id="R34">
+<label>34.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Kreiss</surname><given-names>JK</given-names></name>
+<name><surname>Willerford</surname><given-names>DM</given-names></name>
+<name><surname>Hensel</surname><given-names>M</given-names></name>
+<etal/></person-group>
+<article-title>Association between cervical inflammation and cervical shedding of human immunodeficiency virus DNA</article-title>
+<source>J Infect Dis</source>
+<year>1994</year>
+<volume>170</volume>
+<fpage>1597</fpage>
+<lpage>601</lpage>
+</nlm-citation>
+</ref>
+<ref id="R35">
+<label>35.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Mostad</surname><given-names>SB</given-names></name>
+<name><surname>Kreiss</surname><given-names>JK</given-names></name>
+</person-group>
+<article-title>Shedding of HIV in the genital tract</article-title>
+<source>AIDS</source>
+<year>1996</year>
+<volume>10</volume>
+<fpage>1305</fpage>
+<lpage>15</lpage>
+</nlm-citation>
+</ref>
+<ref id="R36">
+<label>36.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Mostad</surname><given-names>SB</given-names></name>
+</person-group>
+<article-title>Prevalence and correlates of HIV type 1 shedding in the female genital tract</article-title>
+<source>AIDS Res Hum Retroviruses</source>
+<year>1998</year>
+<volume>14</volume>
+<supplement>Suppl 1</supplement>
+<fpage>S11</fpage>
+<lpage>5</lpage>
+</nlm-citation>
+</ref>
+<ref id="R37">
+<label>37.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Iversen</surname><given-names>AK</given-names></name>
+<name><surname>Larsen</surname><given-names>AR</given-names></name>
+<name><surname>Jensen</surname><given-names>T</given-names></name>
+<etal/></person-group>
+<article-title>Distinct determinants of human immunodeficiency virus type 1 RNA and DNA loads in vaginal and cervical secretions</article-title>
+<source>J Infect Dis</source>
+<year>1998</year>
+<volume>177</volume>
+<fpage>1214</fpage>
+<lpage>20</lpage>
+</nlm-citation>
+</ref>
+<ref id="R38">
+<label>38.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Vernazza</surname><given-names>PL</given-names></name>
+<name><surname>Eron</surname><given-names>JJ</given-names></name>
+<name><surname>Fiscus</surname><given-names>SA</given-names></name>
+<name><surname>Cohen</surname><given-names>MS</given-names></name>
+</person-group>
+<article-title>Sexual transmission of HIV: infectiousness and prevention</article-title>
+<source>AIDS</source>
+<year>1999</year>
+<volume>13</volume>
+<fpage>155</fpage>
+<lpage>66</lpage>
+</nlm-citation>
+</ref>
+<ref id="R39">
+<label>39.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Pomerantz</surname><given-names>RJ</given-names></name>
+<name><surname>de la Monte</surname><given-names>SM</given-names></name>
+<name><surname>Donegan</surname><given-names>SP</given-names></name>
+<etal/></person-group>
+<article-title>Human immunodeficiency virus (HIV) infection of the uterine cervix</article-title>
+<source>Ann Intern Med</source>
+<year>1988</year>
+<volume>108</volume>
+<fpage>321</fpage>
+<lpage>7</lpage>
+</nlm-citation>
+</ref>
+<ref id="R40">
+<label>40.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Van de Perre</surname><given-names>P</given-names></name>
+<name><surname>DeClercq</surname><given-names>A</given-names></name>
+<name><surname>Cogniaux-Leclerc</surname><given-names>J</given-names></name>
+<name><surname>Nzaramba</surname><given-names>D</given-names></name>
+<name><surname>Butzler</surname><given-names>JP</given-names></name>
+<name><surname>Sprecher-Goldberger</surname><given-names>S</given-names></name>
+</person-group>
+<article-title>Detection of HIV p17 antigen in lymphocytes but not epithelial cells from cervicovaginal secretions of women seropositive for HIV: implications for heterosexual transmission of the virus</article-title>
+<source>Genitourin Med</source>
+<year>1988</year>
+<volume>64</volume>
+<fpage>30</fpage>
+<lpage>3</lpage>
+</nlm-citation>
+</ref>
+<ref id="R41">
+<label>41.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Bardeguez</surname><given-names>AD</given-names></name>
+<name><surname>Skurnick</surname><given-names>JH</given-names></name>
+<name><surname>Perez</surname><given-names>G</given-names></name>
+<name><surname>Colon</surname><given-names>JM</given-names></name>
+<name><surname>Kloser</surname><given-names>P</given-names></name>
+<name><surname>Denny</surname><given-names>TN</given-names></name>
+</person-group>
+<article-title>Lymphocyte shedding from genital tract of human immunodeficiency virus-infected women: immunophenotypic and clinical correlates</article-title>
+<source>Am J Obstet Gynecol</source>
+<year>1997</year>
+<volume>176</volume>
+<fpage>158</fpage>
+<lpage>65</lpage>
+</nlm-citation>
+</ref>
+<ref id="R42">
+<label>42.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Bruisten</surname><given-names>SM</given-names></name>
+<name><surname>Reiss</surname><given-names>P</given-names></name>
+<name><surname>Loeliger</surname><given-names>AE</given-names></name>
+<etal/></person-group>
+<article-title>Cellular proviral HIV type 1 DNA load persists after long-term RT-inhibitor therapy in HIV type 1 infected persons</article-title>
+<source>AIDS Res Hum Retroviruses</source>
+<year>1998</year>
+<volume>14</volume>
+<fpage>1053</fpage>
+<lpage>8</lpage>
+</nlm-citation>
+</ref>
+<ref id="R43">
+<label>43.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Furtado</surname><given-names>MR</given-names></name>
+<name><surname>Callaway</surname><given-names>DS</given-names></name>
+<name><surname>Phair</surname><given-names>JP</given-names></name>
+<etal/></person-group>
+<article-title>Persistence of HIV-1 transcription in peripheral-blood mononuclear cells in patients receiving potent antiretroviral therapy</article-title>
+<source>N Engl J Med</source>
+<year>1999</year>
+<volume>340</volume>
+<fpage>1614</fpage>
+<lpage>22</lpage>
+</nlm-citation>
+</ref>
+<ref id="R44">
+<label>44.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Finzi</surname><given-names>D</given-names></name>
+<name><surname>Silliciano</surname><given-names>RF</given-names></name>
+</person-group>
+<article-title>Viral dynamics in HIV-1 infection</article-title>
+<source>Cell</source>
+<year>1998</year>
+<volume>93</volume>
+<fpage>665</fpage>
+<lpage>71</lpage>
+</nlm-citation>
+</ref>
+<ref id="R45">
+<label>45.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Ho</surname><given-names>DD</given-names></name>
+<name><surname>Neumann</surname><given-names>AU</given-names></name>
+<name><surname>Perelson</surname><given-names>AS</given-names></name>
+<name><surname>Chen</surname><given-names>W</given-names></name>
+<name><surname>Leonard</surname><given-names>JM</given-names></name>
+<name><surname>Markowitz</surname><given-names>M</given-names></name>
+</person-group>
+<article-title>Rapid turnover of plasma virions and CD4 lymphocytes in HIV-1 infection</article-title>
+<source>Nature</source>
+<year>1995</year>
+<volume>373</volume>
+<fpage>123</fpage>
+<lpage>6</lpage>
+</nlm-citation>
+</ref>
+<ref id="R46">
+<label>46.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Perelson</surname><given-names>AS</given-names></name>
+<name><surname>Essunger</surname><given-names>P</given-names></name>
+<name><surname>Cao</surname><given-names>Y</given-names></name>
+<etal/></person-group>
+<article-title>Decay characteristics of HIV-1-infected compartments during combination therapy</article-title>
+<source>Nature</source>
+<year>1997</year>
+<volume>387</volume>
+<fpage>188</fpage>
+<lpage>91</lpage>
+</nlm-citation>
+</ref>
+<ref id="R47">
+<label>47.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Frost</surname><given-names>SD</given-names></name>
+<name><surname>McLean</surname><given-names>AR</given-names></name>
+</person-group>
+<article-title>Quasispecies dynamics and the emergence of drug resistance during zidovudine therapy of HIV infection</article-title>
+<source>AIDS</source>
+<year>1994</year>
+<volume>8</volume>
+<fpage>323</fpage>
+<lpage>32</lpage>
+</nlm-citation>
+</ref>
+<ref id="R48">
+<label>48.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Overbaugh</surname><given-names>J</given-names></name>
+<name><surname>Anderson</surname><given-names>RJ</given-names></name>
+<name><surname>Ndinya-Achola</surname><given-names>JO</given-names></name>
+<name><surname>Kreiss</surname><given-names>JK</given-names></name>
+</person-group>
+<article-title>Distinct but related human immunodeficiency virus type 1 variant populations in genital secretions and blood</article-title>
+<source>AIDS Res Hum Retroviruses</source>
+<year>1996</year>
+<volume>12</volume>
+<fpage>107</fpage>
+<lpage>15</lpage>
+</nlm-citation>
+</ref>
+<ref id="R49">
+<label>49.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Rasheed</surname><given-names>S</given-names></name>
+</person-group>
+<article-title>Infectivity and dynamics of HIV type 1 replication in the blood and reproductive tract of HIV type 1-infected women</article-title>
+<source>AIDS Res Hum Retroviruses</source>
+<year>1998</year>
+<volume>14</volume>
+<supplement>Suppl 1</supplement>
+<fpage>S105</fpage>
+<lpage>18</lpage>
+</nlm-citation>
+</ref>
+<ref id="R50">
+<label>50.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Uvin</surname><given-names>SC</given-names></name>
+<name><surname>Caliendo</surname><given-names>AM</given-names></name>
+</person-group>
+<article-title>Cervicovaginal human immunodeficiency virus secretion and plasma viral load in human immunodeficiency virusseropositive women</article-title>
+<source>Obstet Gynecol</source>
+<year>1997</year>
+<volume>90</volume>
+<fpage>739</fpage>
+<lpage>43</lpage>
+</nlm-citation>
+</ref>
+<ref id="R51">
+<label>51.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Gunthard</surname><given-names>HF</given-names></name>
+<name><surname>Wong</surname><given-names>JK</given-names></name>
+<name><surname>Ignacio</surname><given-names>CC</given-names></name>
+<name><surname>Havlir</surname><given-names>DV</given-names></name>
+<name><surname>Richman</surname><given-names>DD</given-names></name>
+</person-group>
+<article-title>Comparative performance of high-density oligonucleotide sequencing and dideoxynucleotide sequencing of HIV type 1 <italic>pol</italic> from clinical samples</article-title>
+<source>AIDS Res Hum Retroviruses</source>
+<year>1998</year>
+<volume>14</volume>
+<fpage>869</fpage>
+<lpage>76</lpage>
+</nlm-citation>
+</ref>
+<ref id="R52">
+<label>52.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Artenstein</surname><given-names>AW</given-names></name>
+<name><surname>Van Cott</surname><given-names>TC</given-names></name>
+<name><surname>Mascola</surname><given-names>JR</given-names></name>
+<etal/></person-group>
+<article-title>Dual infection with human immunodeficiency virus type 1 of distinct envelope subtypes in humans</article-title>
+<source>J Infect Dis</source>
+<year>1995</year>
+<volume>171</volume>
+<fpage>805</fpage>
+<lpage>10</lpage>
+</nlm-citation>
+</ref>
+<ref id="R53">
+<label>53.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Janini</surname><given-names>LM</given-names></name>
+<name><surname>Pieniazek</surname><given-names>D</given-names></name>
+<name><surname>Peralta</surname><given-names>JM</given-names></name>
+<etal/></person-group>
+<article-title>Identification of single and dual infections with distinct subtypes of human immunodeficiency virus type 1 by using restriction fragment length polymorphism analysis</article-title>
+<source>Virus Genes</source>
+<year>1996</year>
+<volume>13</volume>
+<fpage>69</fpage>
+<lpage>81</lpage>
+</nlm-citation>
+</ref>
+<ref id="R54">
+<label>54.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Janini</surname><given-names>LM</given-names></name>
+<name><surname>Tanuri</surname><given-names>A</given-names></name>
+<name><surname>Schechter</surname><given-names>M</given-names></name>
+<etal/></person-group>
+<article-title>Horizontal and vertical transmission of human immunodeficiency virus type 1 dual infections caused by viruses of subtypes B and C</article-title>
+<source>J Infect Dis</source>
+<year>1998</year>
+<volume>177</volume>
+<fpage>227</fpage>
+<lpage>31</lpage>
+</nlm-citation>
+</ref>
+<ref id="R55">
+<label>55.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Salminen</surname><given-names>MO</given-names></name>
+<name><surname>Carr</surname><given-names>JK</given-names></name>
+<name><surname>Robertson</surname><given-names>DL</given-names></name>
+<etal/></person-group>
+<article-title>Evolution and probable transmission of intersubtype recombinant human immunodeficiency virus type 1 in a Zambian couple</article-title>
+<source>J Virol</source>
+<year>1997</year>
+<volume>71</volume>
+<fpage>2647</fpage>
+<lpage>55</lpage>
+</nlm-citation>
+</ref>
+<ref id="R56">
+<label>56.</label>
+<nlm-citation citation-type="journal">
+<person-group person-group-type="author">
+<name><surname>Zhu</surname><given-names>T</given-names></name>
+<name><surname>Wang</surname><given-names>N</given-names></name>
+<name><surname>Carr</surname><given-names>A</given-names></name>
+<etal/></person-group>
+<article-title>Genetic characterization of human immunodeficiency virus type 1 in blood and genital secretions: evidence for viral compartmentalization and selection during sexual transmission</article-title>
+<source>J Virol</source>
+<year>1996</year>
+<volume>70</volume>
+<fpage>3098</fpage>
+<lpage>107</lpage>
+</nlm-citation>
+</ref>
+</ref-list>
+<sec sec-type="display-objects">
+<title>Figures and Tables</title>
+<fig id="F1" position="float">
+<label>Figure 1</label>
+<caption>
+<p>Human immunodeficiency viras (HIV) type 1 RNA and proviral DNA in paired plasma and cervicovaginal lavage samples from 54 HIV-1-seropositive women. <italic>A</italic>, Distribution of HIV-1 RNA load (expressed in log copies/milliliter). Filled circles indicate the women in whom HIV-1 RNA was detected in both plasma and cervicovaginal lavage samples. Filled triangles indicate the women with detectable HIV-1 RNA in plasma samples only; open triangles indicate the women with detectable HIV-1 RNA in cervicovaginal secretions only. Open circles indicate the women with HIV-1 RNA below the threshold of detection in both compartments. The vertical and horizontal dashed lines indicate the positivity threshold of the assay for HIV-1 RNA quantitation (1.69 log copies/mL). <italic>B</italic>, Relationship between the presence of proviral DNA in cervicovaginal lavage samples and HIV-1 RNA in plasma and cervicovaginal secretions. Proviral DNA was detected in the cellular fraction of the cervicovaginal lavage samples by means of a nested PCR for <italic>gag</italic> or a seminested PCR for <italic>pol</italic>. HIV-1 proviral DNA was considered to be detectable if &#x2A7D;1 of both PCRs was positive. The horizontal dashed lines indicate the threshold of positivity of the assay for HIV-1 RNA quantitation. The detection of proviral DNA in the genital tract was not significantly associated with that of HIV-1 RNA in plasma or in cervicovaginal lavage samples.</p>
+</caption>
+<graphic mimetype="image" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="182-1-112-fig001.tif"/>
+</fig>
+<fig id="F2" position="float">
+<label>Figure 2</label>
+<caption>
+<p>Neighbor-joining phylogenetic trees of the protease and reverse-transcriptase (RT) <italic>pol</italic> gene sequences. Only patients for whom paired <italic>pol</italic> gene sequences in plasma (P) and cervicovaginal secretions (CVS) were obtained were considered for the phylogeny. Protease and RT <italic>pol</italic> gene sequences of human immunodeficiency virus (HIV) type 1 subtypes A, B (HIV-1 LAI), C, D, E, F, G, H, and J were from the Los Alamos HIV database (http://hiv-web.lanl.gov/ALIGN_98/ALIGN-INDEX-98.html). Numbers at nodes connected with HIV-1 subtypes represent the percentage of bootstrap values supported by 10,000 replicates, using the neighbor-joining algorithm. Only bootstrap values &#x003E;70 are indicated. Similar branching patterns were obtained by the Fitch and Wagner maximum parsimony method (not shown). Superscript numbers to the right of &#x201C;CVS&#x201D; indicate the nucleotide difference between sequences of viruses in plasma and cervicovaginal secretions. Note that the genetic distance between the protease gene sequences in HIV detected in plasma and the genital tract in patient 15 (underlined sequences) was 3.1&#x0025; (i.e., &#x223C;2-fold the mean intercompartment genetic diversity found in the study population); however, although there was a distinctive branch favoring a separate lineage for the protease gene sequences of the plasma and genital viruses of patient 15, the branching was not supported by the calculated bootstrap value, which was only 57&#x0025; (in parentheses). Underlined sequences in italics and boldface are those of patients 7, 12, and 16, who exhibited a different HIV-1 subtype in plasma and cervicovaginal secretions; both patients 12 and 16 showed PSA-negative, Y-PCR-positive cervicovaginal secretions, suggesting that heterologous HIV variants may have originated from an HIV-positive male partner; patient 7 showed PSA-negative, Y-PCR-negative genital secretions, which suggests that a genetic compartmentalization of HIV variants may exist between the plasma and genital compartments. Boldface capital letters indicate HIV-1 subtypes. The subtype of HIV-1 represented by each <italic>pol</italic> sequence was confirmed independently on an individual basis. The scale bar indicates evolutionary distance of 0.1 nucleotide per position in sequence.</p>
+</caption>
+<graphic mimetype="image" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="182-1-112-fig002.tif"/>
+</fig>
+<fig id="T1" position="float">
+<label>Table 1</label>
+<caption>
+<p>Demographic characteristics and biological findings of the study population.</p>
+</caption>
+<graphic mimetype="image" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="182-1-112-tbl001.tif"/>
+</fig>
+<fig id="T2" position="float">
+<label>Table 2</label>
+<caption>
+<p>Changes from consensus amino acid sequence at the protease and reverse-transcriptase <italic>pol</italic> genes of human immunodeficiency virus (HIV) type 1 RNA in paired samples of blood and genital secretions of selected treatment-naive women in whom HIV-1 <italic>pol</italic> sequences were obtained from both systemic and genital compartments.</p>
+</caption>
+<graphic mimetype="image" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="182-1-112-tbl002.tif"/>
+</fig>
+<fig id="T3" position="float">
+<label>Table 3</label>
+<caption>
+<p>Changes from consensus amino acid sequence at the protease and reverse-transcriptase <italic>pol</italic> genes of human immunodeficiency virus (HIV) type 1 RNA in paired samples of blood and genital secretions of selected patients in whom HIV-1 <italic>pol</italic> sequences were obtained from the genital compartment.</p>
+</caption>
+<graphic mimetype="image" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="182-1-112-tbl003.tif"/>
+</fig>
+<fig id="T4" position="float">
+<label>Table 4</label>
+<caption>
+<p>Determination of levels of antiretroviral drugs in paired plasma and cervicovaginal lavage samples, by high-performance liquid chromatography.</p>
+</caption>
+<graphic mimetype="image" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="182-1-112-tbl004.tif"/>
+</fig>
+</sec>
+<fn-group>
+<fn fn-type="presented-at">
+<p>Presented in part: 37th annual meeting of the Infectious Diseases Society of America, Philadelphia, November 1999 (abstract 447), and 7th Conference on Retroviruses and Opportunistic Infections, San Francisco, 29 January&#x2013;2 February 2000 (abstract 679).</p>
+</fn>
+<fn fn-type="supported-by">
+<p>Informed consent was obtained from all study participants. This research was approved by the human subjects ethical review committee at the H&#x00F4;pital Piti&#x00E9;-Salp&#x00EA;tri&#x00E8;re.</p>
+</fn>
+<fn fn-type="financial-disclosure">
+<p>Financial support: SIDACTION, France.</p>
+</fn>
+</fn-group>
+</back>
+</article>

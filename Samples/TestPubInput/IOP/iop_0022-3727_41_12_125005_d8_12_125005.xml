@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article SYSTEM "../../DTDs/IOP/iopv1_5_2.dtd">
+<article artid="jphysd272738">
+  <article-metadata>
+    <jnl-data jnlid="jphysd">
+      <jnl-fullname>Journal of Physics D: Applied Physics</jnl-fullname>
+      <jnl-abbreviation>J. Phys. D: Appl. Phys.</jnl-abbreviation>
+      <jnl-shortname>JPhysD</jnl-shortname>
+      <jnl-issn>0022-3727</jnl-issn>
+      <jnl-coden>JPAPBE</jnl-coden>
+      <jnl-imprint>IOP Publishing</jnl-imprint>
+      <jnl-web-address>stacks.iop.org/JPhysD</jnl-web-address>
+    </jnl-data>
+    <volume-data>
+      <year-publication>2008</year-publication>
+      <volume-number>41</volume-number>
+    </volume-data>
+    <issue-data>
+      <issue-number>12</issue-number>
+      <coverdate>21 June 2008</coverdate>
+    </issue-data>
+    <article-data>
+      <article-type type="paper" sort="regular"/>
+      <type-number type="paper" numbering="article" artnum="125005"/>
+      <article-number>272738</article-number>
+      <first-page>1</first-page>
+      <last-page>4</last-page>
+      <length>4</length>
+      <pii>S0022-3727(08)72738-4</pii>
+      <doi>10.1088/0022-3727/41/12/125005</doi>
+      <copyright>2008 IOP Publishing Ltd</copyright>
+      <ccc>0022-3727/08/125005+04$30.00</ccc>
+      <printed>Printed in the UK</printed>
+      <features colour="global" mmedia="no" suppdata="no"/>
+    </article-data>
+  </article-metadata>
+  <header>
+    <title-group>
+      <title>Application of magnetic fields for a low temperature growth of high-quality SrRuO<sub>3</sub> thin films</title>
+      <short-title>Application of magnetic fields for a low temperature growth of high-quality SrRuO<sub>3</sub> thin films</short-title>
+      <ej-title>Application of magnetic fields for a low temperature growth of high-quality SrRuO3 thin films</ej-title>
+    </title-group>
+    <author-group>
+      <author address="jphysd272738ad1">
+        <first-names>N G</first-names>
+        <second-name>Kim</second-name>
+      </author>
+      <author address="jphysd272738ad1">
+        <first-names>Naresh</first-names>
+        <second-name>Kumar</second-name>
+      </author>
+      <author address="jphysd272738ad1">
+        <first-names>Y A</first-names>
+        <second-name>Park</second-name>
+      </author>
+      <author address="jphysd272738ad1">
+        <first-names>N</first-names>
+        <second-name>Hur</second-name>
+      </author>
+      <author address="jphysd272738ad2">
+        <first-names>C U</first-names>
+        <second-name>Jung</second-name>
+      </author>
+      <author address="jphysd272738ad1">
+        <first-names>J H</first-names>
+        <second-name>Jung</second-name>
+      </author>
+    </author-group>
+    <address-group>
+      <address id="jphysd272738ad1"><orgname>Department of Physics, Inha University</orgname>, Incheon 402-751, <country>Korea</country></address>
+      <address id="jphysd272738ad2"><orgname>Department of Physics, Hankuk University of Foreign Studies</orgname>, Yongin 449-791, <country>Korea</country></address>
+    </address-group>
+    <history received="11 February 2008" finalform="25 April 2008" online="29 May 2008"/>
+    <abstract-group>
+      <abstract>
+        <heading>Abstract</heading>
+        <p indent="no">We report the low temperature growth of high-quality SrRuO<sub>3</sub> thin films by applying moderate magnetic fields (<italic>H</italic><sub>eclipse</sub>) during the growth. The lattice constants, the temperature dependence of resistivity and the ferromagnetic transition temperature of the film grown under <italic>H</italic><sub>eclipse</sub> = 2500 Oe at a temperature as low as 400 °C were quite similar to the reported values for the film grown at high temperatures of 700–800 °C under no magnetic field. Moreover, we found that the magnetic coercive field decreased significantly with increasing <italic>H</italic><sub>eclipse</sub>, which should be quite useful for a coercivity tunable top electrode for magnetic tunnel junctions.</p>
+      </abstract>
+    </abstract-group>
+    <classifications>
+      <class-codes scheme="pacs" print="no">
+        <code>73.61.At</code>
+        <code>75.70.Ak</code>
+        <code>81.15.-Z</code>
+      </class-codes>
+    </classifications>
+  </header>
+  <body numbering="bysection">
+    <sec-level1 id="jphysd272738s1" label="1">
+      <heading>Introduction</heading>
+      <p indent="no">Oxide thin films have attracted considerable attention during the last several decades due to their scientific as well as technological importance [<cite linkend="jphysd272738bib01" range="bib1,bib2,bib3">1–3</cite>]. Until now, most of the oxide thin films have been grown at high temperatures, e.g. <italic>T</italic> ⩾ 700 °C. Such high temperature, however, could sometimes result in the degradation of multilayers through inter-diffusion and the limitation of appropriate materials, besides technological difficulties in accessibility. Therefore, the growth of oxide thin films at a low temperature has become one of the important technical issues in all oxide devices. For example, Wang <italic>et al</italic> have reported high-quality Pb(Zr,Ti)O<sub>3</sub> thin films grown at 480 °C by using microwave irradiation, while the optimal growth temperature as high as 600–750 °C was reported [<cite linkend="jphysd272738bib04">4</cite>].</p>
+      <p>SrRuO<sub>3</sub> (SRO) has been widely used for a metallic oxide electrode [<cite linkend="jphysd272738bib01">1</cite>] and a magnetic tunnel junction [<cite linkend="jphysd272738bib05">5</cite>] due to its high conductivity and ferromagnetism, respectively. Until now, most of the high-quality SRO thin films could be grown at the 700–800 °C substrate temperature (<italic>T</italic><sub>S</sub>) by using pulsed laser deposition [<cite linkend="jphysd272738bib06">6</cite>], off-axis sputtering [<cite linkend="jphysd272738bib07">7</cite>], chemical vapour deposition [<cite linkend="jphysd272738bib08">8</cite>] and so on. On the other hand, the SRO thin films grown below <italic>T</italic><sub>S</sub> ⩽ 400 °C usually showed very high resistivity, sometimes semiconducting behaviour [<cite linkend="jphysd272738bib09">9</cite>, <cite linkend="jphysd272738bib10">10</cite>]. In this paper, we report that the application of magnetic fields during the film growth is one of the possible ways of enhancing the itinerant ferromagnetic properties of low temperature grown SRO thin films. We found that the structural, electrical and magnetic properties of our SRO thin films significantly change depending on the strength of the applied magnetic field during pulsed laser deposition. In particular, the large change in the magnetic coercive field of the SRO thin films grown under different magnetic field strengths might be useful for a coercivity tunable top electrode for a magnetic tunnelling junction [<cite linkend="jphysd272738bib11">11</cite>, <cite linkend="jphysd272738bib12">12</cite>].</p>
+    </sec-level1>
+    <sec-level1 id="jphysd272738s2" label="2">
+      <heading>Experiment</heading>
+      <p indent="no">SRO thin films were grown on SrTiO<sub>3</sub> (STO) (0 0 1) substrates by using pulsed laser deposition. A Q-switched 4-ω Nd : YAG laser (266 nm, 6 ns pulse width, 5 Hz) was focused on a ceramic target at the fixed 3.5 J cm<sup>−2</sup> fluence. A permanent magnet (Sm<sub>2</sub>Co<sub>15</sub>, diameter ∼15 mm) with different nominal strengths (≡<italic>H</italic><sub>eclipse</sub>) was introduced between the ceramic target and the substrate as schematically shown in figure <figref linkend="jphysd272738fig01">1(<italic>a</italic>)</figref>. By changing <italic>H</italic><sub>eclipse</sub> discretely, i.e. 0, 100, 1500 and 2500 Oe,<fnref linkend="jphysd272738fn01"><sup>3</sup></fnref> we grew SRO thin films at fixed <italic>T</italic><sub>S</sub> = 400 °C and oxygen partial pressure 
+<inline-eqn><?TeX P_{{\rm O}_2} =60\,{\rm mTorr} ?><inline-graphic format="GIF" align="middle" filename="images/jphysd272738in001.gif"/></inline-eqn>. For comparison, we also grew SRO thin films at <italic>T</italic><sub>S</sub> = 790 °C and 
+<inline-eqn><?TeX P_{{\rm O}_2 } =50\mbox{--}100\,{\rm mTorr} ?><inline-graphic format="GIF" align="middle" filename="images/jphysd272738in002.gif"/></inline-eqn> without a magnet. Hereafter, we call the SRO thin films grown at 400 °C under different magnetic field strength as ‘400 °C–<italic>H</italic><sub>eclipse</sub>’ and films grown at 790 °C without a magnetic field as ‘790 °C–No mag’.
+<figure id="jphysd272738fig01" pageposition="top"><graphic><graphic-file version="print" format="EPS" align="middle" filename="images/jphysd272738fig01.eps" width="XXX"/><graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd272738fig01.jpg"/></graphic><caption id="jphysd272738fc01" label="Figure 1"><p indent="no">(<italic>a</italic>) A schematic diagram of our pulsed laser deposition system with a permanent magnet. The magnetic flux lines are shown as dashed lines. The solid green circles (left of the magnet) and the solid red circles (right of the magnet) represent the neutral and ionized atoms, respectively. (<italic>b</italic>) X-ray ___ENT___–2___ENT___ scans of SRO thin films. AFM images of (<italic>c</italic>) ‘400 °C–0 Oe’ and (<italic>d</italic>) ‘400 °C–2500 Oe’ for 1 × 1 µm<sup>2</sup> areas. (Colour online.)</p></caption></figure></p>
+      <p>The structural analyses, the surface morphology and the determination of the film thickness were carried out by using a high-resolution x-ray diffractometer (HR-XRD), an atomic force microscope (AFM) and a cross sectional field-emission scanning electron microscope (FE-SEM), respectively. The temperature dependences of resistivity were measured by using a standard four-probe method. The magnetic properties were obtained by using a superconducting quantum interference device (SQUID) with the applied magnetic field perpendicular to the surface of the films.</p>
+    </sec-level1>
+    <sec-level1 id="jphysd272738s3" label="3">
+      <heading>Results and discussion</heading>
+      <p indent="no">X-ray diffraction measurements clearly reveal the systematic change in the film peak with <italic>H</italic><sub>eclipse</sub>. Figure <figref linkend="jphysd272738fig01">1(<italic>b</italic>)</figref> shows the x-ray ___ENT___–2___ENT___ scans of SRO thin films on STO substrates. One can notice the SRO (0 0 2) peak along with the STO (0 0 2) peak, suggesting the <italic>c</italic>-axis oriented growth. (We used pseudo-cubic notation for the SRO films.) In addition, the SRO (0 0 2) peak becomes sharper, and its position moves to a higher angle with increasing <italic>H</italic><sub>eclipse</sub> and then finally becomes close to that of ‘790 °C–No mag’. Based on the SRO (0 0 2) peaks, we estimated the <italic>c</italic>-axis lattice constants and noted the significant decrease in the <italic>c</italic>-axis lattice constant with increasing <italic>H</italic><sub>eclipse</sub>, e.g. ∼3.986 for ‘400 °C–0 Oe’ and ∼ 3.955 for ‘400 °C–2500 Oe’.</p>
+      <p>Figures <figref linkend="jphysd272738fig01">1(<italic>c</italic>) and (<italic>d</italic>)</figref> show the AFM images of ‘400 °C–0 Oe’ and ‘400 °C–2500 Oe’ of SRO thin films for 1 × 1 µm<sup>2</sup> areas, respectively. The surface roughness is about 2–3 nm for both cases. But the grain size seems to change with <italic>H</italic><sub>eclipse</sub>. For example, the grain size is roughly estimated to be ∼40 nm for ‘400 °C–0 Oe’ and ∼100 nm for ‘400 °C–2500 Oe’. (We also roughly estimate the grain size ∼130 nm for ‘790 °C–No mag’ (not shown).)</p>
+      <p>Depending on <italic>H</italic><sub>eclipse</sub>, our SRO thin films show metallic as well as semiconducting behaviours. Figure <figref linkend="jphysd272738fig02">2(<italic>a</italic>)</figref> shows the temperature dependent resistivity curves ρ(<italic>T</italic>) of SRO thin films. With increasing <italic>H</italic><sub>eclipse</sub>, the value of ρ(<italic>T</italic>) systematically decreases and becomes close to that of ‘790 °C–No mag’. In addition, while the ρ(<italic>T</italic>) of ‘400 °C–2500 Oe’ shows a metallic behaviour, i.e. dρ(<italic>T</italic>)/d<italic>T</italic> &gt; 0, that of ‘400 °C–0 Oe’ shows semiconducting behaviour, i.e. dρ(<italic>T</italic>)/d<italic>T</italic> ⩽ 0. However, all the SRO thin films seem to show resistivity kinks near 150 K similar to SRO single crystals [<cite linkend="jphysd272738bib13">13</cite>]. In figure <figref linkend="jphysd272738fig02">2(<italic>b</italic>)</figref>, we show the normalized resistivity ratio, ρ(<italic>T</italic>)/ρ(300 K), of SRO thin films. Clearly, the value of ρ(20 K)/ρ(300 K) for ‘400 °C–2500 Oe’ is quite similar to that for ‘790 °C–No mag’ and systematically increases with decreasing <italic>H</italic><sub>eclipse</sub>.
+<figure id="jphysd272738fig02" pageposition="top"><graphic><graphic-file version="print" format="EPS" align="middle" filename="images/jphysd272738fig02.eps" width="XXX"/><graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd272738fig02.jpg"/></graphic><caption id="jphysd272738fc02" label="Figure 2"><p indent="no">(<italic>a</italic>) Temperature dependent resistivity curves ρ(<italic>T</italic>) and (<italic>b</italic>) normalized resistivity ratio, ρ(<italic>T</italic>)/ρ(300 K), of SRO thin films. In (<italic>a</italic>), ρ(<italic>T</italic>) of ‘400 °C–0 Oe’ and ‘400 °C–100 Oe’ were multiplied by 0.5 for clarity.</p></caption></figure></p>
+      <p>Along with electrical property changes, the magnetic properties of SRO thin films are also significantly modified depending on <italic>H</italic><sub>eclipse</sub>. Figure <figref linkend="jphysd272738fig03">3(<italic>a</italic>)</figref> shows the temperature dependent magnetization curves <italic>M</italic>(<italic>T</italic>) with the applied magnetic field of <italic>H</italic> = 100 Oe after field cooling in 5 T applied perpendicular to the surface of the film, i.e. <italic>H</italic>//STO [0 0 1]. The magnetization of all SRO films starts to increase as the temperature decreases below ∼150 K due to ferromagnetic transition. However, the details are different depending on <italic>H</italic><sub>eclipse</sub>. For example, while <italic>M</italic>(<italic>T</italic>) of ‘400 °C–2500 Oe’ shows a sharp ferromagnetic transition, similar to that of ‘790 °C–No mag’, that of ‘400 °C–0 Oe’ shows a rather smooth transition with a lower saturated magnetic moment. In figure <figref linkend="jphysd272738fig03">3(<italic>b</italic>)</figref>, we also show the magnetic hysteresis curves <italic>M</italic>(<italic>H</italic>) of SRO thin films at 5 K. With decreasing <italic>H</italic><sub>eclipse</sub>, the coercive field (<italic>H</italic><sub>C</sub>) drastically increases and the saturated magnetic moment (<italic>M</italic><sub>S</sub>) decreases. For example, the <italic>H</italic><sub>C</sub> (<italic>M</italic><sub>S</sub>) of ‘400 °C–2500 Oe’ is ∼8 kOe (∼210 emu cm<sup>−3</sup>) and that of ‘400 °C–0 Oe’ is ∼20 kOe (∼ 130 emu cm<sup>−3</sup>).
+<figure id="jphysd272738fig03" pageposition="top"><graphic><graphic-file version="print" format="EPS" align="middle" filename="images/jphysd272738fig03.eps" width="XXX"/><graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd272738fig03.jpg"/></graphic><caption id="jphysd272738fc03" label="Figure 3"><p indent="no">(<italic>a</italic>) Temperature dependent magnetization curves <italic>M</italic>(<italic>T</italic>) with <italic>H</italic> = 100 Oe and (<italic>b</italic>) magnetic hysteresis loops <italic>M</italic>(<italic>H</italic>) at 5 K for SRO thin films.</p></caption></figure></p>
+      <p>There have been many reports on the dramatic changes in electrical and/or magnetic properties in SRO thin films, depending on the disorder quantity [<cite linkend="jphysd272738bib14">14</cite>], substrate temperature [<cite linkend="jphysd272738bib15">15</cite>], external defects [<cite linkend="jphysd272738bib16">16</cite>], Ru vacancies [<cite linkend="jphysd272738bib17">17</cite>] and domain size [<cite linkend="jphysd272738bib18">18</cite>]. Our results in figures <figref linkend="jphysd272738fig02">2</figref> and <figref linkend="jphysd272738fig03">3</figref> clearly show that even at the same <italic>T</italic><sub>S</sub>, 
+<inline-eqn><?TeX P_{{\rm O}_{\rm 2}} ?><inline-graphic format="GIF" align="middle" filename="images/jphysd272738in003.gif"/></inline-eqn> and film thickness (∼90 nm), the temperature dependence of resistivity, the value of residual resistivity, saturation magnetization and coercive fields strongly depends on <italic>H</italic><sub>eclipse</sub>. More importantly, the electrical and magnetic properties of ‘400 °C–2500 Oe’ become comparable to those of ‘790 °C–No mag’.</p>
+      <p>We speculate that the introduction of a permanent magnet strongly affects the kinetics of plume. In conventional pulsed laser deposition with a shadow mask, the ions are promptly neutralized within several microseconds [<cite linkend="jphysd272738bib19">19</cite>] and heavy ballistic species will be blocked but the diffusive ones can arrive at the substrate. However, Kobayashi <italic>et al</italic> have directly observed the large enhancement of emission in the plume near the permanent magnet and obtained a well-crystallized STO thin film grown at as low as <italic>T</italic><sub>S</sub> = 500 °C [<cite linkend="jphysd272738bib19">19</cite>]. They claimed that the diffusive neutralized atoms in the shadow zone could be ionized by the collision with electrons, which were captured in magnetic flux, as schematically shown in figure <figref linkend="jphysd272738fig01">1(<italic>a</italic>)</figref>. Therefore, we believe that the neutralized atoms will be more ionized with the increase in <italic>H</italic><sub>eclipse</sub>. The ions arriving at the substrate will form SRO with different grain sizes and number of vacancies in the grain boundary, depending on their excited energies and/or number of ionized atoms. Since it is well known that the grain size and the number of vacancies in the grain boundary is strongly dependent on the growth temperature [<cite linkend="jphysd272738bib20">20</cite>], we may infer that the thermal energy of atoms should be proportional to the excited energies and/or number of ionized atoms, hence the strength of <italic>H</italic><sub>eclipse</sub>. Supporting this scenario, the structural, electrical and magnetic properties of the SRO thin film grown at 400 °C with a high <italic>H</italic><sub>eclipse</sub> become closer to those of the film grown at 790 °C without a magnetic field, through the larger grain size, less grain boundaries and the reduction in vacancies (see, figures <figref linkend="jphysd272738fig01">1(<italic>c</italic>), (<italic>d</italic>)</figref> and <figref linkend="jphysd272738fig02">2(<italic>b</italic>)</figref>).</p>
+    </sec-level1>
+    <sec-level1 id="jphysd272738s4" label="4">
+      <heading>Summary</heading>
+      <p indent="no">In summary, we report that the quality of the SrRuO<sub>3</sub> thin film grown at 400 °C with magnetic fields becomes drastically enhanced and comparable to that of the film grown at 790 °C without a magnetic field, i.e. the well-known optimized deposition condition. The introduction of a permanent magnet is one of the simple ways to reduce the substrate temperature, which may be applicable to the growth of other high-quality oxide thin films by using pulsed laser deposition.</p>
+    </sec-level1>
+    <acknowledgment>
+      <heading>Acknowledgments</heading>
+      <p indent="no">This work was supported by the Korea Research Foundation Grant funded by the Korean Government (MOEHRD) (KRF-2005-070-C00053) and (KRF-2006-331-C00092). C U Jung was supported by the Korea Research Foundation Grant funded by the Korean Government (MOEHRD) (KRF-2007-331-C00100) and by the Korea Science and Engineering Foundation(KOSEF) grant funded by the Korea government (MOST) (R01-2006-000-11071-0).</p>
+    </acknowledgment>
+  </body>
+  <back>
+    <references>
+      <heading>References</heading>
+      <reference-list type="numeric">
+        <journal-ref id="jphysd272738bib01" num="1">
+          <authors>
+            <au>
+              <second-name>Auciello</second-name>
+              <first-names>O</first-names>
+            </au>
+            <au>
+              <second-name>Foster</second-name>
+              <first-names>C M</first-names>
+            </au>
+            <au>
+              <second-name>Ramesh</second-name>
+              <first-names>R</first-names>
+            </au>
+          </authors>
+          <year>1998</year>
+          <jnl-title>Annu. Rev. Mater. Sci.</jnl-title>
+          <volume>28</volume>
+          <pages>501</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1146/annurev.matsci.28.1.501</cr_doi>
+            <cr_issn type="print">00846600</cr_issn>
+            <cr_issn type="electronic">00846600</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib02" num="2">
+          <authors>
+            <au>
+              <second-name>Jin</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Tiefel</second-name>
+              <first-names>T H</first-names>
+            </au>
+            <au>
+              <second-name>McCormack</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Fastnacht</second-name>
+              <first-names>R A</first-names>
+            </au>
+            <au>
+              <second-name>Ramesh</second-name>
+              <first-names>R</first-names>
+            </au>
+            <au>
+              <second-name>Chen</second-name>
+              <first-names>L H</first-names>
+            </au>
+          </authors>
+          <year>1994</year>
+          <jnl-title>Science</jnl-title>
+          <volume>264</volume>
+          <pages>413</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1126/science.264.5157.413</cr_doi>
+            <cr_issn type="print">00368075</cr_issn>
+            <cr_issn type="electronic">10959203</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib03" num="3">
+          <authors>
+            <au>
+              <second-name>Zheng</second-name>
+              <first-names>H</first-names>
+            </au>
+            <others>
+              <italic>et al</italic>
+            </others>
+          </authors>
+          <year>2004</year>
+          <jnl-title>Science</jnl-title>
+          <volume>303</volume>
+          <pages>661</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1126/science.1094207</cr_doi>
+            <cr_issn type="print">00368075</cr_issn>
+            <cr_issn type="electronic">10959203</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib04" num="4">
+          <authors>
+            <au>
+              <second-name>Wang</second-name>
+              <first-names>Z J</first-names>
+            </au>
+            <au>
+              <second-name>Kokawa</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Takizawa</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Ichiki</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Maeda</second-name>
+              <first-names>R</first-names>
+            </au>
+          </authors>
+          <year>2005</year>
+          <jnl-title>Appl. Phys. Lett.</jnl-title>
+          <volume>86</volume>
+          <pages>212903</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.1935748</cr_doi>
+            <cr_issn type="print">00036951</cr_issn>
+            <cr_issn type="electronic">00036951</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib05" num="5">
+          <authors>
+            <au>
+              <second-name>Takahashi</second-name>
+              <first-names>K S</first-names>
+            </au>
+            <au>
+              <second-name>Sawa</second-name>
+              <first-names>A</first-names>
+            </au>
+            <au>
+              <second-name>Ishii</second-name>
+              <first-names>Y</first-names>
+            </au>
+            <au>
+              <second-name>Akoh</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Kawasaki</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Tokura</second-name>
+              <first-names>Y</first-names>
+            </au>
+          </authors>
+          <year>2003</year>
+          <jnl-title>Phys. Rev.</jnl-title>
+          <part>B</part>
+          <volume>67</volume>
+          <pages>094413</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1103/PhysRevB.67.094413</cr_doi>
+            <cr_issn type="print">10980121</cr_issn>
+            <cr_issn type="electronic">1550235X</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib06" num="6">
+          <authors>
+            <au>
+              <second-name>Jung</second-name>
+              <first-names>C U</first-names>
+            </au>
+            <au>
+              <second-name>Yamada</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Kawasaki</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Tokura</second-name>
+              <first-names>Y</first-names>
+            </au>
+          </authors>
+          <year>2004</year>
+          <jnl-title>Appl. Phys. Lett.</jnl-title>
+          <volume>84</volume>
+          <pages>2590</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.1695195</cr_doi>
+            <cr_issn type="print">00036951</cr_issn>
+            <cr_issn type="electronic">00036951</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib07" num="7">
+          <authors>
+            <au>
+              <second-name>Gan</second-name>
+              <first-names>Q</first-names>
+            </au>
+            <au>
+              <second-name>Rao</second-name>
+              <first-names>R A</first-names>
+            </au>
+            <au>
+              <second-name>Eom</second-name>
+              <first-names>C B</first-names>
+            </au>
+            <au>
+              <second-name>Garrett</second-name>
+              <first-names>J L</first-names>
+            </au>
+            <au>
+              <second-name>Lee</second-name>
+              <first-names>M</first-names>
+            </au>
+          </authors>
+          <year>1998</year>
+          <jnl-title>Appl. Phys. Lett.</jnl-title>
+          <volume>72</volume>
+          <pages>978</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.120603</cr_doi>
+            <cr_issn type="print">00036951</cr_issn>
+            <cr_issn type="electronic">00036951</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib08" num="8">
+          <authors>
+            <au>
+              <second-name>Sumi</second-name>
+              <first-names>A</first-names>
+            </au>
+            <au>
+              <second-name>Takahashi</second-name>
+              <first-names>K</first-names>
+            </au>
+            <au>
+              <second-name>Yokoyama</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Morioka</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Funakubo</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Yoshimoto</second-name>
+              <first-names>M</first-names>
+            </au>
+          </authors>
+          <year>2005</year>
+          <jnl-title>Appl. Phys. Lett.</jnl-title>
+          <volume>87</volume>
+          <pages>052112</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.2006989</cr_doi>
+            <cr_issn type="print">00036951</cr_issn>
+            <cr_issn type="electronic">00036951</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib09" num="9">
+          <authors>
+            <au>
+              <second-name>Fang</second-name>
+              <first-names>X</first-names>
+            </au>
+            <au>
+              <second-name>Kobayashi</second-name>
+              <first-names>T</first-names>
+            </au>
+          </authors>
+          <year>2001</year>
+          <jnl-title>J. Appl. Phys.</jnl-title>
+          <volume>90</volume>
+          <pages>162</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.1319323</cr_doi>
+            <cr_issn type="print">00218979</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib10" num="10">
+          <authors>
+            <au>
+              <second-name>Son</second-name>
+              <first-names>J Y</first-names>
+            </au>
+            <au>
+              <second-name>Kim</second-name>
+              <first-names>B G</first-names>
+            </au>
+            <au>
+              <second-name>Cho</second-name>
+              <first-names>J H</first-names>
+            </au>
+          </authors>
+          <year>2007</year>
+          <jnl-title>Thin Solid Films</jnl-title>
+          <volume>515</volume>
+          <pages>7086</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/j.tsf.2007.02.108</cr_doi>
+            <cr_issn type="print">00406090</cr_issn>
+            <cr_issn type="electronic">00406090</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib11" num="11">
+          <authors>
+            <au>
+              <second-name>Yamada</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Kawasaki</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Tokura</second-name>
+              <first-names>Y</first-names>
+            </au>
+          </authors>
+          <year>2005</year>
+          <jnl-title>Appl. Phys. Lett.</jnl-title>
+          <volume>86</volume>
+          <pages>192505</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.1923199</cr_doi>
+            <cr_issn type="print">00036951</cr_issn>
+            <cr_issn type="electronic">00036951</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib12" num="12">
+          <authors>
+            <au>
+              <second-name>Ishii</second-name>
+              <first-names>Y</first-names>
+            </au>
+            <au>
+              <second-name>Yamada</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Sato</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Akoh</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Kawasaki</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Tokura</second-name>
+              <first-names>Y</first-names>
+            </au>
+          </authors>
+          <year>2005</year>
+          <jnl-title>Appl. Phys. Lett.</jnl-title>
+          <volume>87</volume>
+          <pages>022509</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.1995955</cr_doi>
+            <cr_issn type="print">00036951</cr_issn>
+            <cr_issn type="electronic">00036951</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib13" num="13">
+          <authors>
+            <au>
+              <second-name>Cao</second-name>
+              <first-names>G</first-names>
+            </au>
+            <au>
+              <second-name>McCall</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Shepard</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Crow</second-name>
+              <first-names>J E</first-names>
+            </au>
+            <au>
+              <second-name>Guertin</second-name>
+              <first-names>R P</first-names>
+            </au>
+          </authors>
+          <year>1997</year>
+          <jnl-title>Phys. Rev.</jnl-title>
+          <part>B</part>
+          <volume>56</volume>
+          <pages>321</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1103/PhysRevB.56.321</cr_doi>
+            <cr_issn type="print">10980121</cr_issn>
+            <cr_issn type="electronic">1550235X</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib14" num="14">
+          <authors>
+            <au>
+              <second-name>Chopdekar</second-name>
+              <first-names>R V</first-names>
+            </au>
+            <au>
+              <second-name>Takamura</second-name>
+              <first-names>Y</first-names>
+            </au>
+            <au>
+              <second-name>Suzuki</second-name>
+              <first-names>Y</first-names>
+            </au>
+          </authors>
+          <year>2006</year>
+          <jnl-title>J. Appl. Phys.</jnl-title>
+          <volume>99</volume>
+          <pages>08F503</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.2168437</cr_doi>
+            <cr_issn type="print">00218979</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib15" num="15">
+          <authors>
+            <au>
+              <second-name>Kennedy</second-name>
+              <first-names>R J</first-names>
+            </au>
+            <au>
+              <second-name>Madden</second-name>
+              <first-names>R</first-names>
+            </au>
+            <au>
+              <second-name>Stampe</second-name>
+              <first-names>P A</first-names>
+            </au>
+          </authors>
+          <year>2001</year>
+          <jnl-title>J. Phys. D: Appl. Phys.</jnl-title>
+          <volume>34</volume>
+          <pages>1853</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1088/0022-3727/34/12/314</cr_doi>
+            <cr_issn type="print">00223727</cr_issn>
+            <cr_issn type="electronic">13616463</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib16" num="16">
+          <authors>
+            <au>
+              <second-name>Sefrioui</second-name>
+              <first-names>Z</first-names>
+            </au>
+            <au>
+              <second-name>Arias</second-name>
+              <first-names>D</first-names>
+            </au>
+            <au>
+              <second-name>Navacerrada</second-name>
+              <first-names>M A</first-names>
+            </au>
+            <au>
+              <second-name>Varela</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Loos</second-name>
+              <first-names>G</first-names>
+            </au>
+            <au>
+              <second-name>Lucia</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Santamaria</second-name>
+              <first-names>J</first-names>
+            </au>
+            <au>
+              <second-name>Sanchez-Quesada</second-name>
+              <first-names>F</first-names>
+            </au>
+            <au>
+              <second-name>Lopez de la Torre</second-name>
+              <first-names>M A</first-names>
+            </au>
+          </authors>
+          <year>1998</year>
+          <jnl-title>Appl. Phys. Lett.</jnl-title>
+          <volume>73</volume>
+          <pages>3375</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.122772</cr_doi>
+            <cr_issn type="print">00036951</cr_issn>
+            <cr_issn type="electronic">00036951</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib17" num="17">
+          <authors>
+            <au>
+              <second-name>Dabrowski</second-name>
+              <first-names>B</first-names>
+            </au>
+            <au>
+              <second-name>Chmaissem</second-name>
+              <first-names>O</first-names>
+            </au>
+            <au>
+              <second-name>Klamut</second-name>
+              <first-names>P W</first-names>
+            </au>
+            <au>
+              <second-name>Kolesnik</second-name>
+              <first-names>S</first-names>
+            </au>
+            <au>
+              <second-name>Maxwell</second-name>
+              <first-names>M</first-names>
+            </au>
+            <au>
+              <second-name>Mais</second-name>
+              <first-names>J</first-names>
+            </au>
+            <au>
+              <second-name>Ito</second-name>
+              <first-names>J Y</first-names>
+            </au>
+            <au>
+              <second-name>Armstrong</second-name>
+              <first-names>B D</first-names>
+            </au>
+            <au>
+              <second-name>Jorgensen</second-name>
+              <first-names>J D</first-names>
+            </au>
+            <au>
+              <second-name>Short</second-name>
+              <first-names>S</first-names>
+            </au>
+          </authors>
+          <year>2004</year>
+          <jnl-title>Phys. Rev.</jnl-title>
+          <part>B</part>
+          <volume>70</volume>
+          <pages>014423</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1103/PhysRevB.70.014423</cr_doi>
+            <cr_issn type="print">10980121</cr_issn>
+            <cr_issn type="electronic">1550235X</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib18" num="18">
+          <authors>
+            <au>
+              <second-name>Klein</second-name>
+              <first-names>L</first-names>
+            </au>
+            <au>
+              <second-name>Dodge</second-name>
+              <first-names>J S</first-names>
+            </au>
+            <au>
+              <second-name>Geballe</second-name>
+              <first-names>T H</first-names>
+            </au>
+            <au>
+              <second-name>Kapitulnik</second-name>
+              <first-names>A</first-names>
+            </au>
+            <au>
+              <second-name>Marshall</second-name>
+              <first-names>A F</first-names>
+            </au>
+            <au>
+              <second-name>Antognazza</second-name>
+              <first-names>L</first-names>
+            </au>
+            <au>
+              <second-name>Char</second-name>
+              <first-names>K</first-names>
+            </au>
+          </authors>
+          <year>1995</year>
+          <jnl-title>Appl. Phys. Lett.</jnl-title>
+          <volume>66</volume>
+          <pages>2427</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1063/1.113962</cr_doi>
+            <cr_issn type="print">00036951</cr_issn>
+            <cr_issn type="electronic">00036951</cr_issn>
+          </crossref>
+        </journal-ref>
+        <journal-ref id="jphysd272738bib19" num="19">
+          <authors>
+            <au>
+              <second-name>Kobayashi</second-name>
+              <first-names>T</first-names>
+            </au>
+            <au>
+              <second-name>Akiyoshi</second-name>
+              <first-names>H</first-names>
+            </au>
+            <au>
+              <second-name>Tachiki</second-name>
+              <first-names>M</first-names>
+            </au>
+          </authors>
+          <year>2002</year>
+          <jnl-title>Appl. Surf. Sci.</jnl-title>
+          <volume>197–198</volume>
+          <pages>294</pages>
+          <crossref>
+            <cr_doi>http://dx.doi.org/10.1016/S0169-4332(02)00386-0</cr_doi>
+            <cr_issn type="print">01694332</cr_issn>
+          </crossref>
+        </journal-ref>
+        <book-ref id="jphysd272738bib20" num="20">
+          <authors>
+            <au>
+              <second-name>Moulson</second-name>
+              <first-names>A J</first-names>
+            </au>
+            <au>
+              <second-name>Herbert</second-name>
+              <first-names>J M</first-names>
+            </au>
+          </authors>
+          <year>1990</year>
+          <book-title>Electroceramics: Materials, Properties and Application</book-title>
+          <publication>
+            <place>London</place>
+            <publisher>Chapman and Hall</publisher>
+          </publication>
+        </book-ref>
+      </reference-list>
+    </references>
+    <footnotes>
+      <footnote id="jphysd272738fn01">
+        <p><sup>3</sup> The magnetic field strength was measured at the surface of permanent magnets. Magnetic field strength of 0 Oe was obtained by totally degaussing the permanent magnet by heating and cooling repeatedly.</p>
+      </footnote>
+    </footnotes>
+  </back>
+</article>

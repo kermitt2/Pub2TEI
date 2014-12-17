@@ -1,0 +1,49 @@
+<!-- ISO GRK 4: Greek-4 -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+
+<!ENTITY b.Gamma	"&#x1D6AA;">	<!-- bold Gamma -->
+<!ENTITY b.Delta	"&#x1D6AB;">	<!-- bold Delta -->
+<!ENTITY b.Theta	"&#x1D6AF;">	<!-- bold Theta -->
+<!ENTITY b.Lambda	"&#x1D6B2;">	<!-- bold Lamda -->
+<!ENTITY b.Xi		"&#x1D6B5;">	<!-- bold Xi -->
+<!ENTITY b.Pi		"&#x1D6B8;">	<!-- bold Pi -->
+<!ENTITY b.Sigma	"&#x1D6BA;">	<!-- bold Sigma -->
+<!ENTITY b.Upsi		"&#x1D6BC;">	<!-- bold Upsilon -->
+<!ENTITY b.Phi		"&#x1D6BD;">	<!-- bold Phi -->
+<!ENTITY b.Psi		"&#x1D6BF;">	<!-- bold Psi -->
+<!ENTITY b.Omega	"&#x1D6C0;">	<!-- bold Omega -->
+
+<!ENTITY b.alpha	"&#x1D6C2;">	<!-- bold alpha -->
+<!ENTITY b.beta		"&#x1D6C3;">	<!-- bold beta -->
+<!ENTITY b.gamma	"&#x1D6C4;">	<!-- bold gamma -->
+<!ENTITY b.delta	"&#x1D6C5;">	<!-- bold delta -->
+<!ENTITY b.epsi		"&#x1D6CC;">	<!-- bold straight epsilon -->
+<!ENTITY b.epsis	"&#x1D6CC;">	<!-- bold straight epsilon -->
+<!ENTITY b.epsiv	"&#x1D6C6;">	<!-- bold curly epsilon -->
+<!ENTITY b.zeta		"&#x1D6C7;">	<!-- bold zeta -->
+<!ENTITY b.eta		"&#x1D6C8;">	<!-- bold eta -->
+<!ENTITY b.thetas	"&#x1D6C9;">	<!-- bold straight theta -->
+<!ENTITY b.thetav	"&#x1D6C9;">	<!-- bold variant theta XXX -->
+<!ENTITY b.iota		"&#x1D6CA;">	<!-- bold iota -->
+<!ENTITY b.kappa	"&#x1D6CB;">	<!-- bold straight kappa -->
+<!ENTITY b.kappav	"&#x1D6DE;">	<!-- bold variant kappa -->
+<!ENTITY b.lambda	"&#x1D6CC;">	<!-- bold lamda -->
+<!ENTITY b.mu		"&#x1D6CD;">	<!-- bold mu -->
+<!ENTITY b.nu		"&#x1D6CE;">	<!-- bold nu -->
+<!ENTITY b.xi		"&#x1D6CF;">	<!-- bold xi -->
+<!ENTITY b.pi		"&#x1D6D1;">	<!-- bold pi -->
+<!ENTITY b.piv		"&#x1D6E1;">	<!-- bold variant pi -->
+<!ENTITY b.rho		"&#x1D6D2;">	<!-- bold rho -->
+<!ENTITY b.rhov		"&#x1D6E0;">	<!-- bold variant rho -->
+<!ENTITY b.sigma	"&#x1D6D4;">	<!-- bold sigma -->
+<!ENTITY b.sigmav	"&#x1D6D3;">	<!-- bold final sigma -->
+<!ENTITY b.tau		"&#x1D6D5;">	<!-- bold tau -->
+<!ENTITY b.upsi		"&#x1D6D6;">	<!-- bold upsilon -->
+<!ENTITY b.phis		"&#x1D6DF;">	<!-- bold straight phi -->
+<!ENTITY b.phiv		"&#x1D6D7;">	<!-- bold variant phi -->
+<!ENTITY b.chi		"&#x1D6D8;">	<!-- bold chi -->
+<!ENTITY b.psi		"&#x1D6D9;">	<!-- bold psi -->
+<!ENTITY b.omega	"&#x1D6DA;">	<!-- bold omega -->
+
+<!ENTITY b.gammad	"&#x03DC;">	<!-- bold digamma XXX -->

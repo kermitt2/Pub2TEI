@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<?Pub EntList alpha amp beta bull cir cirf copy delta dtri dtrif gamma kappa  mdash mu ndash omega pi plusmn psi rArr rho sect squ squf squshf star starf  trade utri utrif?>
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_Article.dtd" [
+<!ENTITY illus1 PUBLIC "-//NatureAmerica//FICI 35050247//EN" "//snapple/web_d/web/npg/nature/journal/v408/n6815/images/408898aa.0.jpg" NDATA ITEM>
+<!ENTITY illus2 PUBLIC "-//NatureAmerica//FICI 35050248//EN" "//snapple/web_d/web/npg/nature/journal/v408/n6815/images/408898ab.0.jpg" NDATA ITEM>
+]>
+<article id="35050245" language="eng" publish="issue" relation="no" origsrc="yes">
+<!--408898a0-->
+<pubfm>
+<jtl>Nature</jtl>
+<vol>408</vol>
+<iss>6815</iss>
+<idt>20001221</idt>
+<categ id="categtxt"/><categtxt>In Context</categtxt>
+<pp><spn>898</spn><epn>899</epn><cnt>2</cnt></pp>
+<issn type="print">0028-0836</issn>
+<cpg><cpy>2000</cpy><cpn>Macmillan Magazines Ltd.</cpn></cpg>
+<doi>10.1038/35050245</doi></pubfm>
+<fm>
+<atl><topic>Space</topic> Where are they boldly going?</atl>
+<aug><auname><fnm>Tony</fnm><snm>Reichhardt</snm><inits>T</inits></auname>
+</aug>
+</fm>
+<bdy>
+<p>NASA administrator Dan Goldin could hardly have started 2000 in a worse
+mood. After the embarrassing loss of two Mars missions in a row, the second
+just three weeks before Christmas, the space agency braced itself for a long
+winter of fact-finding reports, congressional hearings and what-went-wrong
+news stories.</p>
+<p>What had gone wrong, it turned out, was the application of Goldin's 'faster,
+better, cheaper' slogan, NASA's guiding principle for much of the 1990s. Even
+before the last report landed on Goldin's desk, the lesson was clear: his
+troops had been focusing on cheaper and faster at the expense of better.</p>
+<p>A year later, the space agency &mdash; particularly its space science division,
+which had embraced Goldin's credo most enthusiastically &mdash; is still coping
+with the fallout. Projects started in the early 1990s were found, upon more
+realistic examination, to be overstretched and underfunded. And space scientists
+watched aghast as NASA science chief Ed Weiler recut his cloth accordingly.
+</p>
+<p>Some problems have proved more tractable than others. Projects still in
+the planning stage, such as the Space Interferometry Mission to map stars
+and search for new planets, scheduled for launch in 2009, have been sent back
+to the drawing board to cut costs.</p>
+<p>Others have had their schedules stretched. Realizing that the Jet Propulsion
+Laboratory (JPL) in Pasadena, California, might struggle to launch two major
+projects in the first quarter of 2001 &mdash; the Genesis spacecraft to investigate
+the solar wind in February and the Mars Odyssey orbiter in April &mdash; NASA
+bumped Genesis to June to allow some breathing room. And finalists in the
+competition to propose Small Explorer astronomy missions, who usually get
+money to hone their ideas, were told that they would have to wait a year for
+funding.</p>
+<p>But in other cases Weiler resorted to flat-out cancellation. The Mars programme,
+most overextended of all, threw off ballast by scrapping a lander planned
+to accompany the 2001 Mars orbiter. Weiler also cancelled a tiny 'nanorover',
+built by JPL to fly on Japan's MUSES-C mission to visit an asteroid and return
+with samples in 2002; its budget had ballooned from $20 million to $60 million.
+And a long-proposed spacecraft to visit distant Pluto and the Kuiper Belt
+was shelved indefinitely to preserve the option of funding another ambitious
+mission to Jupiter's moon Europa.</p>
+<p>The wave of cancellations has sparked a revolt among planetary scientists,
+and the Europa-versus-Pluto decision was challenged by advisory groups who
+say that NASA can still have both by taking some of the work away from the
+JPL and opening it to outside competition.</p>
+<p>But painful as it has been, this self-examination may do NASA good. The
+revamped Mars programme, although less ambitious, is now generally seen as
+more realistic. NASA has backed away from a plan to send an orbiter and lander
+to the planet every two years, and has pushed a costly and technically challenging
+mission to collect and return with samples back a decade, to 2014 at the earliest.
+The plan now calls for two modest-sized landers equipped with rovers in 2003,
+an orbiter carrying a very high-resolution camera in 2005, then a larger lander
+with a mobile laboratory in 2007. These spacecraft would be supplemented by
+smaller scouts dispatched to different areas of the planet's surface.</p>
+<p><illusr rid="illus1" align="right"/>The new Mars roadmap is also flexible enough to accommodate
+new discoveries. This is especially important in the light of some of NASA's
+best news of the year &mdash; the results from the Mars Global Surveyor, which
+has been mapping the planet's surface. In two papers, Michael Malin and Kenneth
+Edgett of Malin Space Science Systems in San Diego reported new evidence of
+liquid water in the planet's history. Their camera revealed what may be the
+traces of springs in the sides of cliffs, which Malin and Edgett suggest may
+have flowed in the very recent past<bibr rid="b1"/>. Other photos show what
+appear to be sedimentary deposits, possibly the beds of ancient lakes, laid
+down between 3.5 billion and 4.3 billion years ago<bibr rid="b2"/>.</p>
+<p>The first result is controversial, because scientists have great difficulty
+explaining how liquid water could exist near the surface of such a cold planet.
+"The reason for my scepticism is the physical conditions," says Michael Carr
+of the US Geological Survey in Menlo Park, California. But the second finding
+is considered the most compelling evidence yet for ancient Martian lakes,
+which have been hypothesized for years. Should robotic or human geologists
+land on the planet looking for fossils, they now have a better idea of where
+to search.</p>
+<p>Scientists will not have to wait long for more data. A gamma-ray spectrometer
+onboard the Odyssey orbiter, due to arrive at the planet in October, should
+be able to detect hydrogen, and by inference water, within centimetres of
+the surface. And the European Space Agency's Mars Express orbiter, set for
+launch in 2003, will carry a ground-penetrating radar capable of detecting
+water as deep as five kilometres below the surface. Any groundwater, says
+Carr, &ldquo;should really shine like a beacon&rdquo;.</p>
+<p><illusr rid="illus2" align="right"/>Another hopeful sign for NASA came in a field where
+it has been much criticized &mdash; biological and microgravity research done
+by astronauts in orbit. The agency has restructured its programme to play
+down experiments on the growth of protein crystals that have produced no conclusive
+results, and to focus on fundamental research in gravitational biology and
+physics. Buoyed by a few isolated but intriguing results from space shuttle
+experiments, where levels of gene expression in cultured cells have changed
+under weightless conditions<bibr rid="b3"/>, NASA is looking forward to an
+era where astronauts can conduct ongoing laboratory research in orbit for
+the first time.</p>
+<p>In fact, the International Space Station has been NASA's most pleasant
+surprise of the year. Although many scientists still regard it as a white
+elephant, it is the agency's flagship project. And after years of struggle
+to get the project underway, the station is now occupied and under construction.
+So far, the astronauts have made it look easy. And although there is plenty
+of scope for pitfalls, the project's managers could be forgiven a bit of optimism
+earlier this month as the station's main solar panels unfolded to create a
+new star in the heavens, just in time for Christmas and the dawn of 2001 &mdash;
+a date with symbolic importance for space aficionados everywhere.</p>
+</bdy>
+<bm>
+<objects>
+<illus id="illus1" type="eps" entname="illus1" embed="yes" display="print-online">
+<!--408898ab-->
+<?Pub Caret?>
+<caption>
+<p>Red sea? These layered sediments on Mars may have been laid down in water.
+</p>
+</caption>
+<credit>NASA/JPL/MALIN SPACE SCIENCE SYSTEMS</credit></illus>
+<illus id="illus2" type="eps" entname="illus2" embed="yes" display="print-online">
+<!--408898ab-->
+<caption>
+<p>Rising star: after years of struggle, the International Space Station is
+now occupied, under construction and visible from Earth with the naked eye.
+It aims to provide a permanent laboratory in orbit.</p>
+</caption>
+<credit>AP/SHUTTLE MISSION IMAGERY/NEWSMAKERS</credit></illus>
+</objects>
+<bibl>
+<bib id="b1"><reftxt><refau><snm>Malin</snm>, <fnm>M. C.</fnm></refau> &amp; <refau><snm>
+Edgett</snm>, <fnm>K. S.</fnm></refau> <jtl>Science</jtl> <vid>288</vid>, <ppf>
+2330</ppf>&ndash;<ppl>2335</ppl> (<cd year="2000">2000</cd>).</reftxt></bib>
+<bib id="b2"><reftxt><refau><snm>Malin</snm>, <fnm>M. C.</fnm></refau> &amp; <refau><snm>
+Edgett</snm>, <fnm>K. S.</fnm></refau> <jtl>Science</jtl> <vid>290</vid>, <ppf>
+1927</ppf>&ndash;<ppl>1937</ppl> (<cd year="2000">2000</cd>).</reftxt></bib>
+<bib id="b3"><reftxt><refau><snm>Hammond</snm>, <fnm>T. G.</fnm></refau> <i>
+et al</i>. <jtl>Nature Med.</jtl> <vid>5</vid>, <ppf>359</ppf> (<cd year="1999">
+1999</cd>).</reftxt></bib>
+</bibl>
+</bm>
+</article>
+<?Pub *0000008914?>

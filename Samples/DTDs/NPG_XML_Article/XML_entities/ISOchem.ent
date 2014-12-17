@@ -1,0 +1,48 @@
+<!-- (C) International Organization for Standardization 1991
+     Permission to copy in any form is granted for use with
+     conforming SGML systems and applications as defined in
+     ISO 8879, provided this notice is included in all copies.
+-->
+<!-- Character entity set. Typical invocation:
+     <!ENTITY % ISOCHEM  PUBLIC
+       "ISO 9573-13:1991//ENTITIES Chemistry //EN">
+     %ISOCHEM;
+-->
+<!ENTITY benzen    "[benzen  ]"> <!--benzene ring-->
+<!ENTITY benzena   "[benzena ]"> <!--benzene ring, one double binding-->
+<!ENTITY benzenb   "[benzenb ]"> <!--benzene ring, one double binding-->
+<!ENTITY benzenc   "[benzenc ]"> <!--benzene ring, one double binding-->
+<!ENTITY benzend   "[benzend ]"> <!--benzene ring, one double binding-->
+<!ENTITY benzene   "[benzene ]"> <!--benzene ring, one double binding-->
+<!ENTITY benzenf   "[benzenf ]"> <!--benzene ring, one double binding-->
+<!ENTITY benzeng   "[benzeng ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzenh   "[benzenh ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzeni   "[benzeni ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzenj   "[benzenj ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzenk   "[benzenk ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzenl   "[benzenl ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzenm   "[benzenm ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzenn   "[benzenn ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzeno   "[benzeno ]"> <!--benzene ring, two double bindings-->
+<!ENTITY benzenp   "[benzenp ]"> <!--benzene ring, three double bindings-->
+<!ENTITY benzenq   "[benzenq ]"> <!--benzene ring, three double bindings-->
+<!ENTITY benzenr   "[benzenr ]"> <!--benzene ring, circle-->
+<!ENTITY hbenzen   "[hbenzen ]"> <!--horizontal benzene ring-->
+<!ENTITY hbenzena  "[hbenzena]"> <!--horizontal benzene ring, one double binding-->
+<!ENTITY hbenzenb  "[hbenzenb]"> <!--horizontal benzene ring, one double binding-->
+<!ENTITY hbenzenc  "[hbenzenc]"> <!--horizontal benzene ring, one double binding-->
+<!ENTITY hbenzend  "[hbenzend]"> <!--horizontal benzene ring, one double binding-->
+<!ENTITY hbenzene  "[hbenzene]"> <!--horizontal benzene ring, one double binding-->
+<!ENTITY hbenzenf  "[hbenzenf]"> <!--horizontal benzene ring, one double binding-->
+<!ENTITY hbenzeng  "[hbenzeng]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzenh  "[hbenzenh]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzeni  "[hbenzeni]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzenj  "[hbenzenj]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzenk  "[hbenzenk]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzenl  "[hbenzenl]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzenm  "[hbenzenm]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzenn  "[hbenzenn]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzeno  "[hbenzeno]"> <!--horizontal benzene ring, two double bindings-->
+<!ENTITY hbenzenp  "[hbenzenp]"> <!--horizontal benzene ring, three double bindings-->
+<!ENTITY hbenzenq  "[hbenzenq]"> <!--horizontal benzene ring, three double bindings-->
+<!ENTITY hbenzenr  "[hbenzenr]"> <!--horizontal benzene ring, circle-->

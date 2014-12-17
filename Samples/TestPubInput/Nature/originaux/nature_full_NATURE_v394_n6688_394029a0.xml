@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<?Pub EntList alpha amp beta bull cir cirf copy delta dtri dtrif gamma kappa  mdash mu ndash omega pi plusmn psi rArr rho sect squ squf squshf star starf  trade utri utrif?>
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_Article.dtd" [
+<!ENTITY figf1 PUBLIC "-//NatureAmerica//FICI 27811//EN" "394029aa.eps.2.gif" NDATA ITEM>
+<!ENTITY m3 PUBLIC "-//NatureAmerica//FICI 27805//EN" "394029as.003.gif" NDATA ITEM>
+<!ENTITY m1 PUBLIC "-//NatureAmerica//FICI 27803//EN" "394029as.001.gif" NDATA ITEM>
+<!ENTITY m2 PUBLIC "-//NatureAmerica//FICI 27804//EN" "394029as.002.gif" NDATA ITEM>
+<!ENTITY m4 PUBLIC "-//NatureAmerica//FICI 27806//EN" "394029as.004.gif" NDATA ITEM>
+<!ENTITY m5 PUBLIC "-//NatureAmerica//FICI 27807//EN" "394029as.005.gif" NDATA ITEM>
+<!ENTITY m6 PUBLIC "-//NatureAmerica//FICI 27808//EN" "394029as.006.gif" NDATA ITEM>
+]>
+<article id="27801" language="eng" publish="issue" relation="no" origsrc="yes">
+<!--394029A0-->
+<pubfm>
+<jtl>Nature</jtl>
+<vol>394</vol>
+<iss>6688</iss>
+<idt>19980702</idt>
+<categ id="sc"/>
+<pp><spn>29</spn><epn>30</epn><cnt>2</cnt></pp>
+<issn type="print">0028-0836</issn>
+<cpg><cpy>1998</cpy><cpn>Macmillan Magazines Ltd.</cpn></cpg>
+<doi>10.1038/27801</doi></pubfm>
+<fm>
+<atl>Density of states reflects diameter in nanotubes</atl>
+<aug>
+<au><fnm>C. T.</fnm><snm>White</snm><inits>C T</inits><orf rid="a1"/></au>
+<au><fnm>J. W.</fnm><snm>Mintmire</snm><inits>J W</inits><orf rid="a1"/></au>
+<aff><oid id="a1"/><org>Code 6179, Naval Research Laboratory</org>, <st>Washington
+</st>, <zip>DC 20375</zip>, <cny>USA</cny> <newline/>e-mail: <email>white@alchemy.nrl.navy.mil
+</email></aff>
+</aug>
+</fm>
+<bdy>
+<fp>
+<p>Dresselhaus<bibr rid="b1"/> asked recently why scanning tunnelling microscopy
+and spectroscopy experiments<bibr rid="b2"/>,<bibr rid="b3"/> find a similar
+number of peaks, in the density of states near the Fermi level, for a range
+of semiconducting single-wall carbon nanotubes with roughly the same diameters.
+After all, semiconducting achiral zigzag single-wall nanotubes can have translational
+unit cells more than an order of magnitude smaller than those of chiral semiconducting
+single-wall nanotubes with a similar diameter, so they might be expected to
+have fewer but sharper peaks in their density of states<bibr rid="b1"/>. We
+show that all semiconducting single-wall nanotubes with similar diameters
+should have a similar density of states near the Fermi level, independent
+of translational unit cell size or chiral angle.</p>
+</fp>
+<p>A single-wall nanotube (SWNT) can be constructed by rolling up a single
+sheet of graphite (graphene) along one of its two-dimensional lattice vectors <b>
+R</b> = <i>n</i><sub>1</sub><b>R</b><sub>1</sub>+<i>n</i><sub>2</sub><b>R
+</b><sub>2</sub> to form an (<i>n</i><sub>1</sub>, <i>n</i><sub>2</sub>) nanotube
+with diameter <i>D</i> = |<b>R</b>|/&pi;. To a first approximation, the allowed
+electron states of the SWNT are the graphene bands satisfying the periodic
+boundary conditions <b>k</b>&middot;<b>R</b> = 2&pi;<i>m</i>, with <i>m</i>
+being an integer.</p>
+<p>Graphically, these allowed <b>k</b>values lie along the parallel lines
+in <figr rid="f1">Fig. 1a</figr>, which are perpendicular to <b>R</b> with
+an interline spacing of 2/<i>D</i>. The Fermi level, <i>&epsi;</i><sub>F</sub>,
+is given by states at the corner points of the hexagonal Brillouin zone in <figr rid="f1">Fig. 1a</figr>. So, neglecting the effects of curvature, nanotubes
+are either metallic or semiconducting depending on whether or not
+<b>k</b><sub>F</sub>&middot;<b>R</b> = 2&pi;<i>m</i>, where <b>k</b><sub>F</sub> = 4&pi;(<b>
+R</b><sub>1</sub>&minus;<b>R</b><sub>2</sub>)/9<i>d</i><super>2</super> and <i>
+d</i> is the carbon-carbon bond distance<bibr rid="b4"/>.</p>
+<p>The two-dimensional dispersion relation of the occupied states of graphene
+is given to lowest order in <i>d</i>|<b>k</b>&minus;<b>k</b><sub>F</sub>|
+by <i>&epsi;</i>_(<b>k</b>) = &minus;<f><mathimg entname="m1" show="yes"/><!--v394n6688/394029AS.001.gif-->
+</f> |<i>V</i><sub>pp&pi;</sub>|<i>d</i>|<b>k</b>&minus;<b>k</b><sub>F</sub>|,
+where <i>V</i><sub>pp&pi;</sub>is the nearest-neighbour pp&pi; interaction<bibr rid="b5"/>. Hence, near <i>&epsi;</i><sub>F</sub>, <i>&epsi;</i>_(<b>k</b>)
+is radially symmetric about the point <i>k</i><sub>F</sub> located by <b>k
+</b><sub>F</sub> and decreases with increasing |<b>k</b>&minus;<b>k</b><sub>
+F</sub>|.</p>
+<p>For semiconducting SWNTs, the point of closest approach to <i>k</i><sub>
+F</sub>in any allowed line therefore yields to good approximation a local
+maximum in the one-dimensional band structure as long as <i>d</i>|<b>k</b>&minus;<b>
+k</b><sub>F</sub>| &Lt; 1, leading to a van Hove singularity and a divergence
+in the occupied density of states (DOS) near <i>&epsi;</i><sub>F</sub>. These
+special points also yield peaks in the unoccupied DOS because the dispersion
+relation for the unoccupied states is given by <i>&epsi;</i><sub>+</sub>(<b>
+k</b>) = &minus;<i>&epsi;</i>_(<b>k</b>). The special point on the line closest
+to <i>k</i><sub>F</sub> (labelled as <i>k</i><sub>A</sub>in <figr rid="f1">
+Fig. 1b</figr>) also yields the SWNT band gap<bibr rid="b5"/>,<bibr rid="b6"/>.
+This point is separated from <i>k</i><sub>F</sub> by a distance |<b>k</b><sub>
+A</sub>&minus;<b>k</b><sub>F</sub>| = <f><mathimg entname="m2" show="yes"/><!--v394n6688/394029AS.002.gif-->
+</f>, one-third the interline spacing &mdash; a result easily confirmed by
+projecting <b>k</b><sub>A</sub>&minus;<b>k</b><sub>F</sub> along <b>R</b>.
+So <i>k</i><sub>A</sub>generates peaks in the DOS near <i>&epsi;</i><sub>
+&plusmn;</sub>(<b>k</b><sub>A</sub>) = &plusmn;|<i>V</i><sub>pp&pi;</sub>|<i>
+d</i>/<i>D</i> and a band gap near 2|<i>V</i><sub>pp&pi;</sub>|<i>d</i>/<i>
+D</i> when <f><mathimg entname="m3" show="yes"/><!--v394n6688/394029AS.003.gif--></f>&Lt;
+1.</p>
+<p>Incrementing by the interline spacing, 2/<i>D</i>, the next two special
+points yield peaks in the DOS near <i>&epsi;</i><sub>&plusmn;</sub>(<b>k</b><sub>
+B</sub>) = 2<i>&epsi;</i><sub>&plusmn;</sub>(<b>k</b><sub>A</sub>) = &plusmn;2|<i>
+V</i><sub>pp&pi;</sub>|<i>d</i>/<i>D</i> when <f><mathimg entname="m4" show="yes"/><!--v394n6688/394029AS.004.gif-->
+</f>&Lt; 1, and peaks near <i>&epsi;</i><sub>&plusmn;</sub>(<b>k</b><sub>
+C</sub>) = 4<i>&epsi;</i><sub>&plusmn;</sub>(<b>k</b><sub>A</sub>) = &plusmn;4<i>
+V</i><sub>pp&pi;</sub><i>d</i>/<i>D</i> when <f><mathimg entname="m5" show="yes"/><!--v394n6688/394029AS.005.gif-->
+</f> &Lt; 1. Changing chirality at a given SWNT diameter effectively rotates
+the lines of allowed states around <i>k</i><sub>F</sub> without changing the
+distances between the points along the lines and <i>k</i><sub>F</sub>. Therefore
+the DOS of two semiconducting SWNTs with differing chiral angles but similar
+diameters are similar in the vicinity of <i>&epsi;</i><sub>F</sub> because <i>
+&epsi;</i><sub>&plusmn;</sub>(<b>k</b>) is radially symmetric about <i>k</i><sub>
+F</sub>. A parallel analysis shows that all metallic SWNTs with similar diameters
+have similar DOS near <i>&epsi;</i><sub>F</sub> within the graphene sheet model
+but with peaks close to &plusmn;3|<i>V</i><sub>pp&pi;</sub>|<i>d</i>/<i>D
+</i> when <f><mathimg entname="m6" show="yes"/><!--v394n6688/394029AS.006.gif--></f> &Lt;1.
+</p>
+<p>All of these predictions are consistent with the numerical results shown
+in <figr rid="f1">Fig. 1c</figr>. Because the semiconducting and metallic
+SWNTs studied experimentally all have <i>d</i>/<i>D</i>&ap;0.1 and <i>V</i><sub>
+pp&pi;</sub>&ap;2.7 eV, these predictions explain the observed peak spacing
+in the SWNT DOS<bibr rid="b2"/>,<bibr rid="b3"/>, further confirming the band
+structure theory of these nanowires<bibr rid="b4 b5 b6 b7 b8 b9"/>.</p>
+</bdy>
+<bm>
+<objects>
+<fig id="f1" type="eps" entname="figf1">
+<!--394029aa.eps-->
+<figtl>Density of states in nanotubes.</figtl>
+<caption>
+<p><b>a</b>, Hexagonal central Brillouin zone of graphene. Parallel lines
+depict allowed states for (11,9) SWNT. Circle at bottom right encloses region
+of states near <i>&epsi;</i><sub>F</sub>. <b>b</b>, Expanded depiction of
+allowed states near <i>&epsi;</i><sub>F</sub>, with dotted line parallel to <b>
+R</b>, <i>k</i><sub>F</sub> corner of hexagon with energy <i>&epsi;</i><sub>
+F</sub>, and <i>k</i><sub>A</sub>, <i>k</i><sub>B</sub> and
+<i>k</i><sub>C</sub> special points of closest approach to <i>k</i><sub>F</sub> of three
+nearest allowed-state lines in reciprocal space. <b>c</b>, DOS per carbon,
+&rho;(<i>E</i>)<i>,</i> as a function of energy in units of &alpha; = |<i>V</i><sub>
+pp&pi;</sub>|<i>d/D</i> computed using the full graphene dispersion relation <newline/><i>
+&epsi;</i><sub>&plusmn;</sub>(<b>k</b>) &equals; &plusmn;|<i>V</i><sub>pp&pi;</sub>|{3+2cos(<b>
+k</b>&middot;<b>R</b><sub>1</sub>)+2cos(<b>k</b>&middot;<b>R</b><sub>2</sub>)+2cos[<b>
+k</b>&middot;(<b>R</b><sub>1</sub>&minus;<b>R</b><sub>2</sub>)]}<super>1/2</super> <newline/>
+for six different SWNTs with similar diameters, <i>D</i>, for a range of chiral
+angles, <i>&phis;</i>, and number of atoms in the translation unit cell, <i>
+N</i><sub>T</sub>. The average <i>D</i> for these six tubes is <i>&Dmacr;
+</i> = 1.33 nm for <i>d</i> = 0.142 nm with all <i>D</i> varying less than
+3% from <i>&Dmacr;.</i>Also, &alpha; = 0.29 eV for <i>V</i><sub>pp&pi;</sub>
+= &minus;2.7 eV and <i>D</i> = <i>&Dmacr;</i>. All DOS are broadened by a
+lorentzian of width 0.01&alpha;. Shown are the DOS for the (17,0) [solid line; <i>
+D</i> = 1.33 nm, <i>&phis;</i> = 0&deg;, <i>N</i><sub>T</sub> = 68], (13,6)
+[dashed line; <i>D</i> = 1.32 nm, <i>&phis;</i> = 18&deg;, <i>N</i><sub>T
+</sub> = 1,132] and (11,9) [dotted line; <i>D</i> = 1.36 nm, <i>&phis;</i>
+= 27&deg;, <i>N</i><sub>T</sub> = 1,204] semiconducting SWNTs. Vertical lines
+A, B and C (corresponding to <b>k</b><sub>A</sub>, <b>k</b><sub>B</sub>, and <b>
+k</b><sub>C</sub> in <figr rid="f1">Fig. 1b</figr>) are peak positions in the
+occupied semiconducting DOS predicted using <i>&epsi;</i>_(<b>k</b>) = &minus;
+3/2 |<i>V</i><sub>pp&pi;</sub>|<i>d</i>|<b>k</b> - <b>k</b><sub>F</sub>| approximately
+valid for |<i>&epsi;</i>_&minus;<i>&epsi;</i><sub>F</sub>| &Lt; 3/2|<i>
+V</i><sub>pp&pi;</sub>|. Also shown are the DOS for the (10,10)
+[solid line; <i>D</i> = 1.36 nm, <i>&phis;</i> = 30&deg;, <i>N</i><sub>T</sub>
+= 40], (14,5) [dashed line; <i>D</i> = 1.34 nm, <i>&phis;</i> = 15&deg;, <i>
+N</i><sub>T</sub> = 1,164] and (16,1) [dotted line; <i>D</i> = 1.29 nm &phis;
+= 3&deg;, <i>N</i><sub>T</sub> = 1,092] metallic SWNTs offset upward by 0.03.
+Vertical line A&prime; is the first peak position in the occupied metallic
+DOS predicted from the approximate theory. Curvature introduces a small gap
+at <i>&epsi;</i><sub>F</sub> in the non-armchair metallic tubes which is probably
+smeared out in the experimental results<bibr rid="b2"/>,<bibr rid="b3"/>.</p>
+</caption>
+</fig>
+</objects>
+<bibl>
+<bib id="b1"><reftxt><refau><snm>Dresselhaus</snm>, <fnm>M. S.</fnm></refau> <jtl>
+Nature</jtl> <vid>391</vid>, <ppf>19</ppf>&ndash;<ppl>20</ppl> (<cd year="1998">
+1998</cd>).</reftxt></bib>
+<bib id="b2"><reftxt><refau><snm>Wild&ouml;er</snm>, <fnm>J. W. G.</fnm></refau>, <refau><snm>
+Venema</snm>, <fnm>L. C.</fnm></refau>, <refau><snm>Rinzler</snm>, <fnm>A.
+G.</fnm></refau>, <refau><snm>Smalley</snm>, <fnm>R. E.</fnm></refau> &amp; <refau><snm>
+Dekker</snm>, <fnm>C.</fnm></refau> <jtl>Nature</jtl> <vid>391</vid>, <ppf>
+59</ppf>&ndash;<ppl>62</ppl> (<cd year="1998">1998</cd>).</reftxt></bib>
+<bib id="b3"><reftxt><refau><snm>Odom</snm>, <fnm>T. W.</fnm></refau>, <refau><snm>
+Huang</snm>, <fnm>J-L.</fnm></refau>, <refau><snm>Kim</snm>, <fnm>P.</fnm></refau>
+&amp; <refau><snm>Lieber</snm>, <fnm>C. M.</fnm></refau> <jtl>Nature</jtl> <vid>
+391</vid>, <ppf>62</ppf>&ndash;<ppl>64</ppl> (<cd year="1998">1998</cd>).
+</reftxt></bib>
+<bib id="b4"><reftxt>Dresselhaus, M. S., Dresselhaus, G. &amp; Eklund, P.
+C. <i>Science of Fullerenes and Carbon Nanotubes</i> (Academic, New York,
+1997).</reftxt></bib>
+<bib id="b5"><reftxt><refau><snm>Mintmire</snm>, <fnm>J. W.</fnm></refau>, <refau><snm>
+Robertson</snm>, <fnm>D. H.</fnm></refau> &amp; <refau><snm>White</snm>, <fnm>
+C. T.</fnm></refau> <btl>J. Chem. Phys. Solids</btl> <vid>54</vid>, <ppf>
+1835</ppf>&ndash;<ppl>1840</ppl> (<cd year="1993">1993</cd>).</reftxt></bib>
+<bib id="b6"><reftxt><refau><snm>White</snm>, <fnm>C. T.</fnm></refau>, <refau><snm>
+Robertson</snm>, <fnm>D. H.</fnm></refau> &amp; <refau><snm>Mintmire</snm>, <fnm>
+J. W.</fnm></refau> <btl>Phys. Rev. B</btl> <vid>47</vid>, <ppf>5485</ppf>&ndash;<ppl>
+5488</ppl> (<cd year="1993">1993</cd>).</reftxt></bib>
+<bib id="b7"><reftxt><refau><snm>Mintmire</snm>, <fnm>J. W.</fnm></refau>, <refau><snm>
+Dunlap</snm>, <fnm>B. I.</fnm></refau> &amp; <refau><snm>White</snm>, <fnm>
+C. T.</fnm></refau> <btl>Phys. Rev. Lett.</btl> <vid>68</vid>, <ppf>631</ppf>&ndash;<ppl>
+634</ppl> (<cd year="1992">1992</cd>).</reftxt></bib>
+<bib id="b8"><reftxt><refau><snm>Hamada</snm>, <fnm>N.</fnm></refau>, <refau><snm>
+Sawada</snm>, <fnm>A.</fnm></refau> &amp; <refau><snm>Oshiyama</snm>, <fnm>
+A.</fnm></refau> <btl>Phys. Rev. Lett.</btl> <vid>68</vid>, <ppf>1579</ppf>&ndash;<ppl>
+1581</ppl> (<cd year="1992">1992</cd>).</reftxt></bib>
+<bib id="b9"><reftxt><refau><snm>Saito</snm>, <fnm>R.</fnm></refau>, <refau><snm>
+Fujita</snm>, <fnm></fnm></refau>, <refau><snm>Dresselhaus</snm>, <fnm>G.
+</fnm></refau> &amp; <refau><snm>Dresselhaus</snm>, <fnm>M. S.</fnm></refau> <btl>
+Appl. Phys. Lett.</btl> <vid>60</vid>, <ppf>2204</ppf>&ndash;<ppl>2206</ppl>
+(<cd year="1992">1992</cd>).</reftxt></bib>
+</bibl>
+</bm>
+</article>
+<?Pub *0000013496?>

@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE article SYSTEM "http://ej.iop.org/dtd/iopv1_5_2.dtd">
+<article artid="jphysd400830">
+<article-metadata>
+<jnl-data jnlid="jphysd">
+<jnl-fullname>Journal of Physics D: Applied Physics</jnl-fullname>
+<jnl-abbreviation>J. Phys. D: Appl. Phys.</jnl-abbreviation>
+<jnl-shortname>JPhysD</jnl-shortname>
+<jnl-issn>0022-3727</jnl-issn>
+<jnl-coden>JPAPBE</jnl-coden>
+<jnl-imprint>IOP Publishing</jnl-imprint>
+<jnl-web-address>stacks.iop.org/JPhysD</jnl-web-address>
+</jnl-data>
+<volume-data><year-publication>2011</year-publication>
+<volume-number>44</volume-number>
+</volume-data>
+<issue-data>
+<issue-number>42</issue-number>
+<coverdate>26 October 2011</coverdate>
+</issue-data>
+<article-data>
+<article-type type="paper" sort="regular"/>
+<type-number type="paper" numbering="article" artnum="425201"/>
+<article-number>400830</article-number>
+<first-page>1</first-page>
+<last-page>8</last-page>
+<length>8</length>
+<pii>S0022-3727(11)00830-8</pii>
+<doi>10.1088/0022-3727/44/42/425201</doi>
+<copyright>2011 IOP Publishing Ltd</copyright>
+<ccc>0022-3727/11/425201&plus;08&dollar;33.00</ccc>
+<printed>Printed in the UK &amp; the USA</printed>
+<features colour="global" mmedia="no" suppdata="no"/>
+</article-data>
+</article-metadata>
+<header>
+<title-group>
+<title>The 2D plasma potential distribution in a HiPIMS discharge</title>
+<short-title>The 2D plasma potential distribution in a HiPIMS discharge</short-title>
+<ej-title>The 2D plasma potential distribution in a HiPIMS discharge</ej-title>
+</title-group>
+<author-group>
+<author address="jphysd400830ad1"><first-names>A</first-names><second-name>Mishra</second-name></author>
+<author address="jphysd400830ad2"><first-names>P J</first-names><second-name>Kelly</second-name></author>
+<author address="jphysd400830ad1" email="jphysd400830ea1"><first-names>J W</first-names><second-name>Bradley</second-name></author>
+</author-group>
+<address-group>
+<address id="jphysd400830ad1"><orgname>Department of Electrical Engineering and Electronics, University of Liverpool</orgname>, Brownlow Hill, Liverpool, L69 3GJ, <country>UK</country></address>
+<address id="jphysd400830ad2"><orgname>Surface Engineering Group, Dalton Research Institute, John Dalton Building, Manchester Metropolitan University</orgname>, Chester Street, Manchester, M1 5GD, <country>UK</country></address>
+<e-address id="jphysd400830ea1"><email mailto="j.w.bradley@liv.ac.uk">j.w.bradley@liv.ac.uk</email></e-address>
+</address-group>
+<history received="15 July 2011" finalform="20 September 2011" online="10 October 2011"/>
+<abstract-group>
+<abstract>
+<heading>Abstract</heading>
+<p indent="no">Using an emissive probe the spatial-temporal distribution of the plasma potential <italic>V</italic><sub>p</sub> in a high power impulse magnetron sputtering discharge has been measured. The magnetron (with a planar circular titanium target) was operated in argon gas at a fixed pressure of 0.54&thinsp;Pa, a pulse frequency of 100&thinsp;Hz with a 100&thinsp;&micro;s on-time and average power of 650&thinsp;W. In the early part of the voltage pulse (&sim;6&ndash;8&thinsp;&micro;s), <italic>V</italic><sub>p</sub> attains deep negative values (&sim;&minus;150&thinsp;V) at positions close to the target (10&thinsp;mm) and above the racetrack, diminishing with distance, but never reaching ground potential, even at excursions of 80&thinsp;mm. In the confined plasma region, extraordinarily high axial and radial electric field components, up to several kV&thinsp;m<sup>&minus;1</sup>, are calculated from the plasma potential measurements.</p>
+<p>As the plasma develops and the discharge current reaches a maximum (at &sim;40&thinsp;&micro;s), <italic>V</italic><sub>p</sub> is elevated everywhere in the plasma, however, still with deep negative values (down to &minus;40&thinsp;V) at positions closest to the target. From the derived electric fields and modelled (vacuum) magnetic field, the 2D distribution of <italic>E</italic> &times; <italic>B</italic> electron drift velocities has been determined. During the early discharge phase, a broad drift channel is predicted above the racetrack, with drift speeds up to &sim;3 &times; 10<sup>5</sup>&thinsp;ms<sup>&minus;1</sup> centred &sim;30&thinsp;mm above the target racetrack. As the discharge develops, these speeds reduce by about a factor 3 and the centre of the velocity distribution moves further away from the target and inwards towards the discharge axis, resembling that observed in dc and pulsed-dc magnetron operation.</p></abstract>
+</abstract-group>
+</header>
+<body numbering="bysection">
+<sec-level1 id="jphysd400830s1" label="1"><heading>Introduction</heading>
+<p indent="no">High power impulse magnetron sputtering (HiPIMS) [<cite linkend="jphysd400830bib01">1</cite>] is an interesting variant on conventional mid-frequency pulsed-dc sputtering, providing short duty cycles, but ultra-high peak powers leading to dense plasmas (up to 10<sup>19</sup>&thinsp;m<sup>&minus;3</sup>) with high fractions of the sputtered metal species being ionized [<cite linkend="jphysd400830bib02">2</cite>, <cite linkend="jphysd400830bib03">3</cite>]. The technique is finding promise in a number of niche areas particularly in the production of engineering quality and high performance thin-films and coatings [<cite linkend="jphysd400830bib01">1</cite>], including applications in non-reactive [<cite linkend="jphysd400830bib04">4</cite>] and reactive [<cite linkend="jphysd400830bib05">5</cite>, <cite linkend="jphysd400830bib06">6</cite>] sputtering, pre-treatment ion cleaning [<cite linkend="jphysd400830bib07">7</cite>], and potentially in ion implantation [<cite linkend="jphysd400830bib08">8</cite>].</p>
+<p>Despite the growing interest in HiPIMS as a coatings tool, many of underlying physical and chemical processes are not well understood or are inadequately characterized. To address this a number of researchers have undertaken detailed diagnostic studies of the discharge, utilizing a variety of invasive and non-invasive diagnostic tools to yield information on: the bulk electron energies and densities [<cite linkend="jphysd400830bib09" range="bib9,bib10,bib11">9&ndash;11</cite>], the ion bombarding energies [<cite linkend="jphysd400830bib12" range="bib12,bib13,bib14,bib15">12&ndash;15</cite>], the total heat fluxes at the substrate [<cite linkend="jphysd400830bib16">16</cite>], the plasma species composition (by optical emission, absorption or 2D imaging) [<cite linkend="jphysd400830bib17">17</cite>, <cite linkend="jphysd400830bib18">18</cite>], currents in the plasma [<cite linkend="jphysd400830bib19">19</cite>], plasma instabilities [<cite linkend="jphysd400830bib20">20</cite>], and the electric potential and fields [<cite linkend="jphysd400830bib21">21</cite>].</p>
+<p>Although the charged particle densities and energies have been studied extensively, little is known about the structure and evolution of the electric potential (and field) throughout the HiPIMS plasma. The global structure of the plasma potential is particularly important, for it has already been seen in conventional magnetron sputtering (and in some recent HiPIMS studies) that it influences self-consistently the electron transport across the magnetic field [<cite linkend="jphysd400830bib22">22</cite>], the structure of the circulating charged particle drifts [<cite linkend="jphysd400830bib23">23</cite>], the distribution of negative ions in reactive sputtering [<cite linkend="jphysd400830bib24">24</cite>], the trajectories of positive ions arriving at the cathode [<cite linkend="jphysd400830bib25">25</cite>] and it determines to a large extent the energy of positive ions arriving at a grounded substrate [<cite linkend="jphysd400830bib13">13</cite>, <cite linkend="jphysd400830bib26">26</cite>].</p>
+<p>Using the Langmuir probe technique, detailed measurements of the temporal evolution of the plasma potential <italic>V</italic><sub>p</sub> have already been made at a limited number of positions (remote from the target) but close to the substrate in several HiPIMS discharge configurations [<cite linkend="jphysd400830bib09">9</cite>, <cite linkend="jphysd400830bib13">13</cite>, <cite linkend="jphysd400830bib27" range="bib27,bib28,bib29,bib30,bib31,bib32">27&ndash;32</cite>]. In some cases only a mean figure for the plasma potential during plasma on-time [<cite linkend="jphysd400830bib33">33</cite>, <cite linkend="jphysd400830bib34">34</cite>] is quoted, obtained as spot points in the time-resolved plasma measurement data set.</p>
+<p>Although the magnitude of the measured values for <italic>V</italic><sub>p</sub> varies for different configurations and target materials, the results do show a consistent trend that <italic>V</italic><sub>p</sub> is most negative at the start of the pulse and grows more positive during the on-time. That is, climbing from initial values either close to ground (0&thinsp;V) or in some configurations a few tens of volts below ground, up to values typically a few volts above ground. In the pulse off-time, <italic>V</italic><sub>p</sub> tends towards ground potential over typically several 100&thinsp;&micro;s as the plasma decays. These general trends were seen for instance in [<cite linkend="jphysd400830bib27">27</cite>] where <italic>V</italic><sub>p</sub> was measured at &minus;1&thinsp;V in the bulk plasma (20&thinsp;cm from the target) 40&thinsp;&micro;s after pulse initiation, becoming positive for the rest of the pulse period with peak values of <italic>V</italic><sub>p</sub> &sim; &plus;5&thinsp;V at the end of the &lsquo;on-time&rsquo; (of duration of 100&thinsp;&micro;s). The time evolution of <italic>V</italic><sub>p</sub> has also been measured 9&thinsp;cm from the target for a variation in working pressure in [<cite linkend="jphysd400830bib29">29</cite>], with positive <italic>V</italic><sub>p</sub> values seen during the entire pulse period and higher <italic>V</italic><sub>p</sub> values (up to &plus;5&thinsp;V) obtained at lower pressure. These observations are consistent with the more limited results in [<cite linkend="jphysd400830bib33">33</cite>, <cite linkend="jphysd400830bib34">34</cite>] showing <italic>V</italic><sub>p</sub> between &plus;3 and &plus;3.5&thinsp;V in the pulse on-time. Generally, in the afterglow phase <italic>V</italic><sub>p</sub> is seen to decrease but still remain significantly above ground even at the end of the off-time (often durations &gt;400&thinsp;&micro;s), for instance decreasing to &sim; &plus;0.5&thinsp;V [<cite linkend="jphysd400830bib27">27</cite>] and between &plus;1 and &plus;1.7&thinsp;V in [<cite linkend="jphysd400830bib29">29</cite>]. Spatial-temporal measurements of <italic>V</italic><sub>p</sub> have also been made in [<cite linkend="jphysd400830bib29">29</cite>] with <italic>V</italic><sub>p</sub> determined at three radial locations (<italic>r</italic> &equals; 0, 5 and 7&thinsp;cm from the discharge axis) in the plasma bulk. The results show, in this particular case, that <italic>V</italic><sub>p</sub> is almost spatially invariant with peak values of <italic>V</italic><sub>p</sub> &sim; &plus;3.5&thinsp;V at the end of the on-time (100&thinsp;&micro;s) at the chosen positions.</p>
+<p>In a different HiPIMS discharge configuration [<cite linkend="jphysd400830bib28">28</cite>], with a 200&thinsp;&micro;s pulse &lsquo;on-time&rsquo;, measurements showed <italic>V</italic><sub>p</sub> has two peaks per pulse period, with values of &plus;2.5&thinsp;V and &plus;3.5&thinsp;V, the first occurring in the &lsquo;on-time&rsquo; (at &sim;50&thinsp;&micro;s) and the second in the off-time (at &sim;225&thinsp;&micro;s). It was also reported in the same publication that marginally higher discharge currents give rise to higher peak values of the <italic>V</italic><sub>p</sub> (e.g. &plus;2.5&thinsp;V at 5&thinsp;A and &plus;3.5&thinsp;V at 50&thinsp;A) measured in the afterglow (at 225&thinsp;&micro;s).</p>
+<p>Although positive values of <italic>V</italic><sub>p</sub> are often found close to the substrate position in the driven phase of the discharge, this is not always the case. For instance, in non-reactive HiPIMS [<cite linkend="jphysd400830bib09">9</cite>, <cite linkend="jphysd400830bib30">30</cite>] and reactive HiPIMS plasmas [<cite linkend="jphysd400830bib30">30</cite>] it has been shown that during the on-time, even at remote positions from the target, <italic>V</italic><sub>p</sub> has values that are negative (e.g. &minus;25&thinsp;V at 100&thinsp;mm and &minus;21&thinsp;V at 65&thinsp;mm in [<cite linkend="jphysd400830bib09">9</cite>, <cite linkend="jphysd400830bib30">30</cite>], respectively). These rise to values above ground potential in the off-time and more negative plasma potentials are observed in lower current discharges [<cite linkend="jphysd400830bib30">30</cite>] in agreement with [<cite linkend="jphysd400830bib28">28</cite>]. Negative plasma potentials in the early discharge phase have also been seen in a smaller device maintained by a simmer source [<cite linkend="jphysd400830bib31">31</cite>, <cite linkend="jphysd400830bib32">32</cite>].</p>
+<p>These results do convey useful information; however, little is known about the spatial structure of the plasma potential, or what the <italic>V</italic><sub>p</sub> values are at positions close to the target in HiPIMS plasmas. To address this, Mishra <italic>et al</italic> [<cite linkend="jphysd400830bib21">21</cite>] used an emissive probe to make detailed spatially resolved measurements of <italic>V</italic><sub>p</sub> above the racetrack and along an axial line from a position close to the target up to a distance of 100&thinsp;mm (typical position of a substrate). The emissive probe technique, which is superior to the Langmuir probe for determining <italic>V</italic><sub>p</sub>, was first used in the magnetron configuration by Thompson and co-workers [<cite linkend="jphysd400830bib35">35</cite>].</p>
+<p>The results in [<cite linkend="jphysd400830bib21">21</cite>] showed that during the first few &mu;s of the discharge (on-time duration 100&thinsp;&micro;s) <italic>V</italic><sub>p</sub> attained negative voltages (as deep as &minus;210&thinsp;V), at positions close to the target, but still outside the cathode sheath. With increasing distance from the target these values rise towards ground potential but never reach 0&thinsp;V. As the discharge develops, these deep values collapse, but even at the time of maximum discharge current, <italic>V</italic><sub>p</sub> still attains negative values (&minus;25&thinsp;V) inside the closed-field of region the magnetic trap (a region of extension 50&thinsp;mm from the target) with <italic>V</italic><sub>p</sub> rising up to &plus;1&thinsp;V at positions outside the trap close to the substrate. It was argued these large gradients in <italic>V</italic><sub>p</sub> (in the confined plasma) can act as a potential barrier so reducing the transport of the positively charged ions to the substrate, and lowering the deposition rate in HiPIMS.</p>
+<p>Here, we use the emissive probe technique described in [<cite linkend="jphysd400830bib21">21</cite>] to extend the 1D study to 2D, allowing us to map the plasma potential in most of the bulk plasma as a function of time during the discharge pulse. From this, it is possible to derive the electric field strength <italic>E</italic>. This will then allow us to better understand the ion dynamics in the discharge, namely the nature of any (electric potential) barrier to ion transport from target to substrate, but also provide information on particle drifts through construction of the distribution of azimuthal electron drifts by considering the <italic>E</italic> and <italic>B</italic> fields [<cite linkend="jphysd400830bib35">35</cite>].</p>
+</sec-level1>
+<sec-level1 id="jphysd400830s2" label="2"><heading>Experimental details and procedure</heading>
+<p indent="no">In this study a planar circular magnetron (V-TECH 150 from GENCOA Ltd) was used, equipped with a 150&thinsp;mm diameter pure titanium (99.99&percnt;) target. The magnetron was housed in a purpose built vacuum chamber (70&thinsp;cm in length and 40&thinsp;cm in diameter) which was evacuated by a turbo-molecular pump backed by a rotary pump to a base pressure of 2 &times; 10<sup>&minus;4</sup>&thinsp;Pa. The magnetron was powered by a SINEX 3.0 HiPIMS power supply (from Chemfilt Ion Sputtering) and operated at a fixed frequency of 100&thinsp;Hz and pulse on-time of 100&thinsp;&micro;s. The target was sputtered in argon gas (purity 99.99&percnt;) at a pressure of 0.54&thinsp;Pa with a time-averaged power of 650&thinsp;W. The peak target power and current densities were &sim;0.6&thinsp;kW&thinsp;cm<sup>&minus;2</sup> and &sim;1.3&thinsp;A&thinsp;cm<sup>&minus;2</sup>, respectively. A schematic diagram of the magnetron arrangement, magnetic geometry and the area over which emissive probe measurements were made are shown in figure <figref linkend="jphysd400830fig01">1</figref>. The 2D magnetic field was measured using a Hall probe. One important region of the discharge is the magnetic trap, indicated in the figure and defined by a region enclosed by the magnetic field lines that intersect the target twice. The cathode voltage (<italic>V</italic><sub>d</sub>) and current (<italic>I</italic><sub>d</sub>) waveforms were measured at an intermediary test box placed between the HiPIMS power supply and magnetron source using a &times;100 voltage probe (Tektronix Ltd model P5100) and a &times;20 current transformer (Tektronix Ltd Model CT-4) in conjunction with &times;10 current probe (Tektronix Ltd Model TCP 202). These waveforms are shown in figure <figref linkend="jphysd400830fig02">2</figref>. A reference time <italic>t</italic> &equals; 0 was defined as the zero voltage crossing point between the &lsquo;off&rsquo; and &lsquo;on&rsquo; phases of the voltage (<italic>V</italic><sub>d</sub>) pulse.
+<figure id="jphysd400830fig01" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/jphysd400830fig01.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd400830fig01.jpg"/></graphic>
+<caption id="jphysd400830fc01" label="Figure 1"><p indent="no">A schematic diagram of magnetron source, the magnetic field lines, the emissive probe, and the rectangular grid region where the measurements were carried out. The probe was inserted from the side port of the chamber.</p>
+</caption>
+</figure>
+<figure id="jphysd400830fig02" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/jphysd400830fig02.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd400830fig02.jpg"/></graphic>
+<caption id="jphysd400830fc02" label="Figure 2"><p indent="no">The cathode voltage (<italic>V</italic><sub>d</sub>) and current (<italic>I</italic><sub>d</sub>) waveforms produced by the SINEX 3.0 HiPIMS power supply for an average discharge power of 650&thinsp;W and a gas pressure of 0.54&thinsp;Pa.</p>
+</caption>
+</figure></p>
+<p>The plasma potential <italic>V</italic><sub>p</sub> was measured using an emissive probe (described in detail in [<cite linkend="jphysd400830bib21">21</cite>]) at 285 positions on a rectangular grid. These were over axial and radial distances of 10 &les; <italic>z</italic> &les; 80&thinsp;mm and 0 &les; <italic>r</italic> &les; 90&thinsp;mm, respectively, with a spatial resolution of 5&thinsp;mm in both directions, see figure <figref linkend="jphysd400830fig01">1</figref>. Measurements in the cathode sheath and immediate pre-sheath regions adjacent to the target (i.e. <italic>z</italic> &lt; 10&thinsp;mm) could not be carried out since the probe strongly perturbs the plasma in this region, significantly lowering the discharge current. The emissive probe electrical arrangement and measuring circuitry used here are described in [<cite linkend="jphysd400830bib21">21</cite>, <cite linkend="jphysd400830bib23">23</cite>, <cite linkend="jphysd400830bib25">25</cite>]. The emissive probe itself was made of a thoriated tungsten wire of diameter 125&thinsp;&micro;m, looped in a semicircle of diameter 2&thinsp;mm and push-fitted into a ceramic housing containing enamelled copper connecting wires of 250&thinsp;&micro;m diameter that carry the external heating current. The probe loop was heated by passing a 50&thinsp;Hz ac current through it, supplied by two separate transformers. The centre tap of the second transformer was connected to a fast oscilloscope (TDS3014, 1&thinsp;M&Omega; input impedance, Tektronix Ltd) via a single strand wire (used to minimize the capacitance to ground) to obtain the mean voltage (floating potential) across the loop and hence a good estimate of <italic>V</italic><sub>p</sub>. The floating potential data was then averaged over 128 discharge pulses and then stored to minimize the random error in the electrical signal. The error in <italic>V</italic><sub>p</sub> using this method is estimated to be less than the voltage equivalent of the local electron temperature <italic>kT</italic><sub>e</sub>/<italic>e</italic> [<cite linkend="jphysd400830bib21">21</cite>, <cite linkend="jphysd400830bib36">36</cite>], with a temporal resolution better than 20&thinsp;ns [<cite linkend="jphysd400830bib36">36</cite>].</p>
+<p>To ensure that sufficient heating current is applied to produce strong electron emission, giving reliable estimates of <italic>V</italic><sub>p</sub>, preliminary studies were conducted in which the probe floating potential was recorded as a function of the heating current. This was done at one particular position in the discharge (<italic>z</italic> &equals; 30&thinsp;mm, <italic>r</italic> &equals; 45&thinsp;mm) and at one chosen time in the pulse cycle (<italic>t</italic> &equals; 7&thinsp;&micro;s) and for two angles of the probe relative to the local <italic>B</italic>-field. As shown in figure <figref linkend="jphysd400830fig03">3</figref> a heating current of <italic>I</italic><sub>h</sub> &equals; 2.5&ndash;3.5&thinsp;A is required together with a probe-plane oriented parallel to the local magnetic field (&thetas; &equals; 0) for full electron emission to be achieved. At this condition <italic>V</italic><sub>f</sub> &rarr; <italic>V</italic><sub>p</sub> (i.e. <italic>V</italic><sub>f</sub> attains its most positive value). Issues concerned with the orientation of the emissive probe relative to the magnetic field are discussed further in [<cite linkend="jphysd400830bib21">21</cite>].
+<figure id="jphysd400830fig03" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/jphysd400830fig03.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd400830fig03.jpg"/></graphic>
+<caption id="jphysd400830fc03" label="Figure 3"><p indent="no">A plot of measured emissive probe floating potential (<italic>V</italic><sub>f</sub>) versus loop heating current (<italic>I</italic><sub>h</sub>) at one position (<italic>z</italic> &equals; 30&thinsp;mm <italic>r</italic> &equals; 45&thinsp;mm) at the time of the &lsquo;first peak&rsquo; (<italic>t</italic> &equals; 7&thinsp;&micro;s) in two orientation of probe-plane with respect to <italic>B</italic>-field lines. It should be noted that at <italic>I</italic><sub>h</sub> &gt; 2.5&thinsp;A, the floating potential <italic>V</italic><sub>f</sub> approaches the plasma potential <italic>V</italic><sub>p</sub>.</p>
+</caption>
+</figure></p>
+<p>From the plasma potential measurements the axial and radial components of the electric field can be derived namely <italic>E</italic><sub><italic>z</italic></sub> &equals; &minus;d<italic>V</italic><sub>p</sub>/d<italic>z</italic> and <italic>E</italic><sub><italic>r</italic></sub> &equals; &minus;d<italic>V</italic><sub>p</sub>/d<italic>r</italic>. To estimate the azimuthal electron drift velocities the vector product (<italic>E</italic> &times; <italic>B</italic>)/<italic>B</italic><sup>2</sup> was calculated, using the vacuum magnetic field <italic>B</italic> measured on the bench top using a Hall probe. The probe resolves both the radial (<italic>B</italic><sub><italic>z</italic></sub>) and axial components (<italic>B</italic><sub><italic>r</italic></sub>), respectively.</p>
+</sec-level1>
+<sec-level1 id="jphysd400830s3" label="3"><heading>Results and discussion</heading>
+<sec-level2 id="jphysd400830s3-1" label="3.1"><heading>Time-evolution of V<sub><italic>p</italic></sub> in the bulk plasma</heading>
+<p indent="no">Figure <figref linkend="jphysd400830fig04">4</figref> shows the time-evolution of <italic>V</italic><sub>p</sub> measured at a position close to the typical position of substrate, <italic>z</italic> &equals; 80&thinsp;mm, <italic>r</italic> &equals; 45&thinsp;mm together with the discharge voltage waveform (<italic>V</italic><sub>d</sub>), with both traces recorded simultaneously on the oscilloscope. <italic>V</italic><sub>p</sub> readily responds to changes in <italic>V</italic><sub>d</sub>, sinking rapidly just after pulse initiation, and then climbing towards ground as the discharge develops. The initial phase of the on-time is characterized by three peaks in <italic>V</italic><sub>p</sub>, features however not seen in <italic>V</italic><sub>d</sub>, at potentials of &minus;16, &minus;14 and &minus;13&thinsp;V occurring at times <italic>t</italic> &sim; 7&thinsp;&micro;s, 17&thinsp;&micro;s and 25&thinsp;&micro;s, respectively. The times of these peaks jitter by &plusmn;1&thinsp;&micro;s throughout the pulse cycle. We denote these peaks as the &lsquo;<italic>first</italic>&rsquo;, &lsquo;<italic>second&rsquo;</italic> and &lsquo;<italic>third&rsquo;</italic> peaks' and speculation on the origin of these features is discussed briefly in [<cite linkend="jphysd400830bib21">21</cite>].
+<figure id="jphysd400830fig04" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/jphysd400830fig04.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd400830fig04.jpg"/></graphic>
+<caption id="jphysd400830fc04" label="Figure 4"><p indent="no">A plot of the time-evolution of typical plasma potential (<italic>V</italic><sub>p</sub>) measured at one position (<italic>z</italic> &equals; 80&thinsp;mm and <italic>r</italic> &equals; 45&thinsp;mm) together with cathode discharge voltage <italic>V</italic><sub>d</sub>, at an average discharge power of 650&thinsp;W and a gas pressure of 0.54&thinsp;Pa. Here, we identify the &lsquo;first peak&rsquo;, &lsquo;second peak&rsquo;, &lsquo;third peak&rsquo; and the time of the maximum in the discharge current &lsquo;<italic>I</italic><sub>Dmax</sub> &rsquo; (see figure <figref linkend="jphysd400830fig02">2</figref>). The discharge voltage reaches zero at <italic>t</italic> &equals; 57&thinsp;&micro;s.</p>
+</caption>
+</figure></p>
+<p>Inspection of figure <figref linkend="jphysd400830fig04">4</figref> shows that at this probe position, <italic>V</italic><sub>p</sub> is negative for about half of the pulse on-time, rising to cross ground potential at <italic>t</italic> &sim; 57&thinsp;&micro;s, some 17&thinsp;&micro;s after the time of maximum current (see figure <figref linkend="jphysd400830fig02">2</figref>). After this, <italic>V</italic><sub>p</sub> reaches a plateau at &sim;&plus;4&thinsp;V, a value consistent with other studies [<cite linkend="jphysd400830bib27" range="bib27,bib28,bib29">27&ndash;29</cite>, <cite linkend="jphysd400830bib33">33</cite>, <cite linkend="jphysd400830bib34">34</cite>] before displaying a kink at <italic>t</italic> &equals; 100&thinsp;&micro;s. The latter occurs at the point where <italic>V</italic><sub>d</sub> abruptly rises to 0&thinsp;V as the pulse enters the off-time. In the afterglow, <italic>V</italic><sub>p</sub> decreases and stabilizes at &sim;&plus;2&thinsp;V (and for whole of the pulse off-time, however, not shown). The finite positive plasma potentials in the off-time have been seen before in other HiPIMS plasmas and indicate the very slow decay of the plasma [<cite linkend="jphysd400830bib31">31</cite>].</p>
+</sec-level2>
+<sec-level2 id="jphysd400830s3-2" label="3.2"><heading>2D spatial distributions of V<sub><italic>p</italic></sub></heading>
+<p indent="no">Figures <figref linkend="jphysd400830fig05">5(<italic>a</italic>), (<italic>b</italic>) and (<italic>c</italic>)</figref> show 2D maps of <italic>V</italic><sub>p</sub> at for three different times during the on-time, namely at the &lsquo;<italic>first peak</italic>&rsquo; (<italic>t</italic> &equals; 7&thinsp;&micro;s), &lsquo;<italic>second peak</italic>&rsquo; (<italic>t</italic> &equals; 17&thinsp;&micro;s) and also at the time of maximum discharge current (<italic>t</italic> &equals; 40&thinsp;&micro;s). The direction of the magnetic field lines is represented by the arrows of unit length in each of the figures. In the first case, <italic>V</italic><sub>p</sub> is negative at almost all positions in the measured plane except in the remote outer region with values up to &plus;4&thinsp;V. Deep potentials (&sim;&minus;150&thinsp;V) are measured in a broad region above the racetrack and close to the target (10 &lt; <italic>z</italic> &lt; 15, 40 &lt; <italic>r</italic> &lt; 50&thinsp;mm). With increasing distances from the target and moving radially outwards and towards the discharge axis <italic>V</italic><sub>p</sub> becomes more positive, forming approximately elliptically shaped equipotential lines, with the focus at <italic>r</italic> &sim; 45&thinsp;mm, the position of maximum target erosion when the source is operated in dc and pulsed-dc modes [<cite linkend="jphysd400830bib37">37</cite>]. The negative plasma potentials exhibit the steepest gradients inside the magnetic trap; the closed field region defined in figure <figref linkend="jphysd400830fig01">1</figref>, with axially downward and inward pointing electrical fields, calculated in excess of 1&thinsp;kV&thinsp;m<sup>&minus;1</sup>. This field structure (tangents to <italic>V</italic><sub>p</sub> equipotentials) essentially draws ions into the target from a wide region, funnelling them down to the racetrack. Outside the trap, in regions close to any substrate, the <italic>E</italic>-fields fall to below 0.4&thinsp;kV&thinsp;m<sup>&minus;1</sup>.
+<figure id="jphysd400830fig05" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/jphysd400830fig05.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd400830fig05.jpg"/></graphic>
+<caption id="jphysd400830fc05" label="Figure 5"><p indent="no">2D plots of the measured plasma potential <italic>V</italic><sub>p</sub> measured in volts at (<italic>a</italic>) the time of the &lsquo;first peak&rsquo; (<italic>t</italic> &equals; 7&thinsp;&micro;s), (<italic>b</italic>) the time of the second peak (<italic>t</italic> &equals; 17&thinsp;&micro;s) and (<italic>c</italic>) at time of maximum current (<italic>t</italic> &equals; 40&thinsp;&micro;s). The direction of the magnetic field lines is indicated by the arrows of unit length.</p>
+</caption>
+</figure></p>
+<p>It is clear from figure <figref linkend="jphysd400830fig05">5(<italic>a</italic>)</figref> that at this time in the pulse cycle, there is a large plasma potential drop across the bulk plasma with &Delta;<italic>V</italic><sub>p</sub> &sim; 140&thinsp;V in a line above the racetrack. These values are significantly higher than those measured in conventional pulsed-dc magnetron sputtering discharges [<cite linkend="jphysd400830bib23">23</cite>, <cite linkend="jphysd400830bib25">25</cite>, <cite linkend="jphysd400830bib35">35</cite>] and larger than the drop of &Delta;<italic>V</italic><sub>p</sub> &sim; <italic>kT</italic><sub>e</sub>/<italic>e</italic> predicted by the Bohm criterion (where <italic>T</italic><sub>e</sub> is the electron temperature) required to accelerate ions to the ion acoustic speed in the pre-sheath as they enter the sheath [<cite linkend="jphysd400830bib38">38</cite>]. We are assuming that <italic>kT</italic><sub>e</sub>/<italic>e</italic> is only of the order of a few eV [<cite linkend="jphysd400830bib09">9</cite>]; however, very high electron temperatures (&gt;80&thinsp;eV) have been observed in the period (<italic>t</italic> &equals; 1&ndash;4&thinsp;&micro;s) preceding this first peak in <italic>V</italic><sub>p</sub>.</p>
+<p>In figures <figref linkend="jphysd400830fig05">5(<italic>b</italic>) and (<italic>c</italic>)</figref> we see that at the time of the second peak in <italic>V</italic><sub>d</sub> (<italic>t</italic> &equals; 17&thinsp;&micro;s) and later at the time of maximum current <italic>I</italic><sub>d</sub> (<italic>t</italic> &equals; 40&thinsp;&micro;s) the magnitude of the bulk plasma potentials reduce markedly above the racetrack and in the bulk. The deepest potentials recorded are about &minus;40&thinsp;V, 10&thinsp;mm from the target. The bulk axial and radial electric fields' strengths decrease to several 100&thinsp;V&thinsp;m<sup>&minus;1</sup>; however, the field directions (tangents to <italic>V</italic><sub>p</sub> contours) still show there is still a marked funnelling of ions to the target. Downstream, at <italic>t</italic> &equals; 40&thinsp;&micro;s (figure <figref linkend="jphysd400830fig05">5(<italic>c</italic>)</figref>), <italic>V</italic><sub>p</sub> is positive at the sides of the map (centreline and remote plasma), but still remains negative in a large region that would be occupied by a substrate (i.e. at <italic>z</italic> &equals; 80&thinsp;mm). One can see that as the discharge develops the centre of the equipotential contours shifts from <italic>r</italic> &sim; 45&thinsp;mm to <italic>r</italic> &sim; 50&thinsp;mm. In previous work it has been observed that when the magnetron is operated in HiPIMS mode the racetrack broadens compared to dc conditions [<cite linkend="jphysd400830bib37">37</cite>]. The results here indicate that this is related to the different shape of the equipotential contours in HiPIMS and that the position of the centre of the racetrack moves during the HiPIMS pulse, in this case from 45 to 50&thinsp;mm. Despite the reduced negative potentials with increased times, the potential drops across the plasma (&Delta;<italic>V</italic><sub>p</sub> &sim; 40&thinsp;V) remain much higher than predicted by the Bohm criterion for non-magnetized boundaries. Such anomalous behaviour of the pre-sheath has been observed in other magnetized systems including dc and pulsed-dc magnetron discharges [<cite linkend="jphysd400830bib21">21</cite>, <cite linkend="jphysd400830bib25">25</cite>, <cite linkend="jphysd400830bib35">35</cite>] and has been predicted for low-pressure magnetron operation using Particle-in-Cell Monte Carlo collisional modelling [<cite linkend="jphysd400830bib39">39</cite>] and fluid simulations incorporating classical electron diffusion rates [<cite linkend="jphysd400830bib40">40</cite>]. It can be argued simply that the presence of the magnetic field perpendicular to the main electric field above the racetrack increases the cross-field resistivity necessitating self-consistently large potentials to drive electrons from the magnetic trap to the walls.</p>
+<p>The results in figures <figref linkend="jphysd400830fig05">5(<italic>c</italic>)</figref> show that during the time of maximum sputtering, positive ions (post-ionized neutrals) created from a region close to the target would need a forward energy of about 40&thinsp;eV and to surmount the potential hill above the racetrack to reach a substrate at <italic>z</italic> &equals; 80&thinsp;mm. Sputtered atoms characterized by the Sigmund Thomson energy distribution [<cite linkend="jphysd400830bib38">38</cite>] ionized in magnetic trap will have a small probability of reaching the substrate as discussed in [<cite linkend="jphysd400830bib21">21</cite>]. However, ions created outside the magnetic trap, even with small forward energies can readily reach the substrate, surmounting only &sim;3&thinsp;eV to do so. The presence therefore of the large variation plasma potential in the bulk may contribute to the reduced deposition rates observed in HiPIMS operation, with those ions reaching the substrate being ones only created locally.</p>
+</sec-level2>
+<sec-level2 id="jphysd400830s3-3" label="3.3"><heading>The distribution of electron E &times; B drifts velocities</heading>
+<p indent="no">From the plasma potential measurements in figures <figref linkend="jphysd400830fig05">5(<italic>a</italic>) and (<italic>c</italic>)</figref>, the electric field components <italic>E</italic><sub><italic>z</italic></sub> and <italic>E</italic><sub><italic>r</italic></sub> of the have been calculated (shown in figure <figref linkend="jphysd400830fig06">6</figref>) using the central difference method. Along the discharge central axis at <italic>r</italic> &equals; 0&thinsp;mm, the boundary condition <italic>E</italic><sub><italic>r</italic></sub> &equals; 0 was imposed. At the time of the first peak in <italic>V</italic><sub>p</sub> (<italic>t</italic> &equals; 7&thinsp;&micro;s), <italic>E</italic><sub><italic>z</italic></sub> has largest values at positions close to the cathode, as the potential gradient steepens approaching the cathode sheath region; however, interestingly this is not the case at the time of the maximum discharge current (<italic>t</italic> &equals; 40&thinsp;&micro;s), where the largest <italic>E</italic><sub><italic>z</italic></sub> is found 40&thinsp;mm from the cathode. Figure <figref linkend="jphysd400830fig06">6(<italic>d</italic>)</figref> shows clearly that in the phase of the discharge there is a reduction in <italic>E</italic><sub><italic>z</italic></sub> in the plasma bulk approaching the cathode. For axial distances &lt;10&thinsp;mm the potential must curve steeply down to the target potential. Such reductions in the bulk electric field and even reversals in potential leading to opposite sign electric fields have been predicted through modelling of HiPIMS discharges [<cite linkend="jphysd400830bib22">22</cite>]. Here we see no reversal to positive electric fields, but this may be due to the relatively large distance between measurements. 1D plasma potential measurements in the same system [<cite linkend="jphysd400830bib21">21</cite>] do, however, show some evidence of the existence of a triple layer close to the cathode in which there is a zero in <italic>E</italic><sub><italic>z</italic></sub>.
+<figure id="jphysd400830fig06" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/jphysd400830fig06.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd400830fig06.jpg"/></graphic>
+<caption id="jphysd400830fc06" label="Figure 6"><p indent="no">The electric field components <italic>E</italic><sub><italic>r</italic></sub> (<italic>a</italic>) and <italic>E</italic><sub><italic>z</italic></sub> (<italic>b</italic>) at the time of the &lsquo;first peak&rsquo; (<italic>t</italic> &equals; 7&thinsp;&micro;s) and <italic>E</italic><sub><italic>r</italic></sub> (<italic>c</italic>) and <italic>E</italic><sub><italic>z</italic></sub> (<italic>d</italic>) at time of maximum current (<italic>t</italic> &equals; 40&thinsp;&micro;s).</p>
+</caption>
+</figure></p>
+<p>Using the derived <italic>E</italic>-fields and the measured values of <italic>B</italic> (the unperturbed vacuum field), the vector field of the <italic>E</italic> &times; <italic>B</italic> electron drift velocity, <italic>v</italic><sub><italic>E</italic>&times;<italic>B</italic></sub> &equals; <italic>E</italic> &times; <italic>B</italic>/<italic>B</italic><sup>2</sup> can be calculated. The azimuthal component of this vector product is the electron Hall drift velocity, given as <italic>v</italic><sub>H</sub> &equals; (<italic>E</italic><sub><italic>z</italic></sub><italic>B</italic><sub><italic>r</italic></sub> &minus; <italic>B</italic><sub><italic>z</italic></sub><italic>E</italic><sub><italic>r</italic></sub>)/<italic>B</italic><sup>2</sup> and velocity distributions corresponding to times at the first peak in <italic>V</italic><sub>p</sub>(<italic>t</italic> &equals; 7&thinsp;&micro;s) and maximum discharge current (<italic>t</italic> &equals; 40&thinsp;&micro;s), are shown in figures <figref linkend="jphysd400830fig07">7(<italic>a</italic>) and (<italic>b</italic>)</figref>. One should note that the checked area shown at the top left hand corner of the contour plots is the region where &verbar;<italic>B</italic>&verbar; is small and the electrons are un-magnetized (their Larmor radii are greater than their distance from the discharge central line). Ions, which are un-magnetized, should have no <italic>E</italic> &times; <italic>B</italic> drift; however, recent observation in [<cite linkend="jphysd400830bib15">15</cite>] shows that ions do in fact orbit above racetrack due to a net azimuthal force in the plasma, possibly driven by a two-stream instability.
+<figure id="jphysd400830fig07" pageposition="top">
+<graphic>
+<graphic-file version="print" format="EPS" align="middle" filename="images/jphysd400830fig07.eps" width="XXX"/>
+<graphic-file version="ej" format="JPEG" align="middle" filename="images/jphysd400830fig07.jpg"/></graphic>
+<caption id="jphysd400830fc07" label="Figure 7"><p indent="no">2D plots of the <italic>E</italic> &times; <italic>B</italic> electron drift speeds at (<italic>a</italic>) the time of the &lsquo;first peak&rsquo; and (<italic>b</italic>) the time of the maximum discharge current.</p>
+</caption>
+</figure></p>
+<p>The two plots in figure <figref linkend="jphysd400830fig07">7</figref> of the electron drift speeds show some similarities but also some clear differences. At the time of the first peak (<italic>t</italic> &equals; 7&thinsp;&micro;s) we see a diagonal region of high drift speeds extending from <italic>r</italic> &equals; 50&thinsp;mm, <italic>z</italic> &equals; 10&thinsp;mm (above the racetrack) up and towards the discharge central axis at <italic>r</italic> &equals; 35&thinsp;mm <italic>z</italic> &equals; 40&thinsp;mm, with maximum drift speed found to be 3.25 &times; 10<sup>5</sup>&thinsp;ms<sup>&minus;1</sup> (a significant fraction of estimated thermal speed of &sim;1 &times; 10<sup>6</sup>&thinsp;ms<sup>&minus;1</sup> assuming <italic>kT</italic><sub>e</sub>/<italic>e</italic> &sim; 4&thinsp;eV [[<cite linkend="jphysd400830bib09">9</cite>]). As the discharge develops and at the time of maximum discharge current (<italic>t</italic> &equals; 40&thinsp;&micro;s) these speeds reduce by about a factor 3 (as <italic>E</italic> falls) and the rectangular region of high drift speeds narrows and moves upwards and inwards, now extending from <italic>r</italic> &equals; 40&thinsp;mm, <italic>z</italic> &equals; 45&thinsp;mm to <italic>r</italic> &equals; 20&thinsp;mm, <italic>z</italic> &equals; 65&thinsp;mm. This distribution of electron drift velocity is similar to that measured during dc and pulsed-dc magnetron operation [<cite linkend="jphysd400830bib35">35</cite>]. The small negative drift velocities close to discharge axis in figures <figref linkend="jphysd400830fig07">7(<italic>a</italic>) and (<italic>b</italic>)</figref> are due to imprecision in the measurement method and these must necessarily tend to zero. At radii greater than 75&thinsp;mm the radial component of magnetic field changes sign leading to counter drifting electrons in the outer region.</p>
+<p>The measured <italic>E</italic> &times; <italic>B</italic> drift speeds in the HiPIM mode at the time of the first peak (<italic>t</italic> &equals; 7&thinsp;&micro;s) are about twice as large as those measured in dc operation [<cite linkend="jphysd400830bib35">35</cite>] in the same magnetron. However, at the time of maximum current (<italic>t</italic> &equals; 40&thinsp;&micro;s) there is much closer agreement between the different modes of operation. These speeds (up to 1.5 &times; 10<sup>5</sup>&thinsp;m<sup>&minus;2</sup>) are marginally higher than the curvature drift and grad <italic>B</italic> drift speeds, their combination determined in the discharge &sim;4 &times; 10<sup>4</sup>&thinsp;ms<sup>&minus;1</sup> [<cite linkend="jphysd400830bib35">35</cite>]; these quantities being almost independent of the means of operation, since for a fixed magnetic field geometry they depend only on <italic>T</italic><sub>e</sub>, which varies little between HiPIMS and dc modes, when the HiPIMS discharge reaches its quiescent driven phase. However, the calculated azimuthal electron drift speeds here are an order of magnitude higher than those determined in a different HiPIMS system developed in the group of Helmersson [<cite linkend="jphysd400830bib20">20</cite>], where the drift speeds were obtained from knowledge of <italic>E</italic> (via spatial measurements of <italic>V</italic><sub>p</sub>). This HiPIMS plasma was characterized by having azimuthal electron current densities <italic>J</italic><sub>H</sub> only two to four times larger than the discharge current density <italic>J</italic><sub>D</sub>. This regime is described as &lsquo;super-Bohm&rsquo; diffusion [<cite linkend="jphysd400830bib19">19</cite>], where ratio <italic>J</italic><sub>H</sub>/<italic>J</italic><sub>D</sub> is significantly below the empirically determined Bohm value of 16.</p>
+<p>In a system similar to that described in [<cite linkend="jphysd400830bib20">20</cite>] but operating with a copper target rather than titanium, the current densities <italic>J</italic><sub>H</sub> and <italic>J</italic><sub>D</sub> were measured by Rogowski coil [<cite linkend="jphysd400830bib19">19</cite>]. For different heights above the racetrack (<italic>z</italic> &equals; 50 to 80&thinsp;mm) the ratios <italic>J</italic><sub>H</sub>/<italic>J</italic><sub>D</sub> were found to lie mostly between 2 and 5, i.e. the discharge is operating in the &lsquo;super-Bohm&rsquo; regime. At the time of maximum current the azimuthal current density was <italic>J</italic><sub>H</sub> &equals; 2 &times; 10<sup>4</sup>&thinsp;A&thinsp;m<sup>&minus;2</sup>. However, in this work, at the time of maximum current <italic>J</italic><sub>H</sub> (determined where <italic>v</italic><sub>H</sub> is maximum, <italic>z</italic> &equals; 50&thinsp;mm) is somewhat larger than reported in [<cite linkend="jphysd400830bib19">19</cite>], estimated to be <italic>J</italic><sub>H</sub> &sim; 1.2 &times; 10<sup>5</sup>&thinsp;A&thinsp;m<sup>&minus;2</sup>. With <italic>J</italic><sub>D</sub> &equals; 1.3 &times; 10<sup>4</sup>&thinsp;A&thinsp;m<sup>&minus;2</sup>at this time in the discharge it gives a ratio of about <italic>J</italic><sub>H</sub>/<italic>J</italic><sub>D</sub> &sim; 11. Here we have assumed a plasma density of 6 &times; 10<sup>18</sup>&thinsp;m<sup>&minus;3</sup> taken from [<cite linkend="jphysd400830bib09">9</cite>]. So, our magnetron may be operating in a mode closer to Bohm diffusion as seen in dc discharges [<cite linkend="jphysd400830bib35">35</cite>] rather than &lsquo;super-Bohm&rsquo; as observed in [<cite linkend="jphysd400830bib19">19</cite>, <cite linkend="jphysd400830bib20">20</cite>], but also in pulsed-dc magnetrons using a <italic>B</italic>-dot probe [<cite linkend="jphysd400830bib41">41</cite>]. Clearly more work is required to understand better how anomalous electron transport is affected by geometry and operating conditions in HiPIMS discharges.</p>
+</sec-level2>
+</sec-level1>
+<sec-level1 id="jphysd400830s4" label="4"><heading>Conclusions</heading>
+<p indent="no">Using the emissive probe technique, the spatial distribution of plasma potential <italic>V</italic><sub>p</sub> in a high power impulse magnetron sputtering (HiPIMS) discharge has been measured at different times during the 100&thinsp;Hz pulse cycle with a 100&thinsp;&micro;s on-time. In the early part of the voltage pulse (&sim;7&thinsp;&micro;s), roughly semi-elliptical contours in <italic>V</italic><sub>p</sub> are seen above the racetrack with deep negative values (&sim;&minus;150&thinsp;V) being measured 10&thinsp;mm from the target. With increasing axial distance <italic>V</italic><sub>p</sub> diminishes in magnitude, approaching but not reaching ground potential at distances up to 80&thinsp;mm, demonstrating the existence of bulk electric field strengths of several kV&thinsp;m<sup>&minus;1</sup>. As the discharge develops and at the time of maximum discharge current, the values of <italic>V</italic><sub>p</sub> collapse substantially but still remain negative with values down to &minus;40&thinsp;V some 10&thinsp;mm from the target.</p>
+<p>From the measured magnetic field and derived electric fields, the distribution of <italic>E</italic> &times; <italic>B</italic> electron drift velocities has been determined. In the initial discharge phase (&sim;7&thinsp;&micro;s), a broad drift channel above the racetrack is seen, with high drift speeds (&sim;3 &times; 10<sup>5</sup>&thinsp;m&thinsp;s<sup>&minus;1</sup>) up to 40&thinsp;mm from the target. As the discharge develops, these speeds reduce to &sim;1 &times; 10<sup>5</sup>&thinsp;m&thinsp;s<sup>&minus;1</sup> and the drift channel (contours of velocity) move away from the target consistent with observations in dc and pulsed-dc magnetrons.</p>
+</sec-level1>
+<acknowledgment>
+<heading>Acknowledgments</heading>
+<p indent="no">The authors would like to thank the EPSRC for funding the research. One of the authors AM was awarded an ORSAS scholarship so aiding his study.</p>
+</acknowledgment>
+</body>
+<back>
+<references>
+<heading>References</heading>
+<reference-list type="numeric">
+<journal-ref id="jphysd400830bib01" num="1">
+<authors>
+<au><second-name>Ehiasarian</second-name><first-names>A P</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>Pure Appl. Chem.</jnl-title>
+<volume>82</volume>
+<pages>1247</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1351/PAC-CON-09-10-43</cr_doi>
+<cr_issn type="print">0033-4545</cr_issn>
+<cr_issn type="electronic">1365-3075</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib02" num="2">
+<authors>
+<au><second-name>Sarakinos</second-name><first-names>K</first-names></au>
+<au><second-name>Alami</second-name><first-names>J</first-names></au>
+<au><second-name>Konstantinidis</second-name><first-names>S</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>Surf. Coat. Technol.</jnl-title>
+<volume>204</volume>
+<pages>1661</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.surfcoat.2009.11.013</cr_doi>
+<cr_issn type="print">02578972</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib03" num="3">
+<authors>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+<au><second-name>Lattermann</second-name><first-names>M</first-names></au>
+<au><second-name>Bohlmark</second-name><first-names>J</first-names></au>
+<au><second-name>Ehiasarian</second-name><first-names>A P</first-names></au>
+<au><second-name>Gudmundsson</second-name><first-names>J T</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Thin Solid Films</jnl-title>
+<volume>513</volume>
+<pages>1</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.tsf.2006.03.033</cr_doi>
+<cr_issn type="print">00406090</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib04" num="4">
+<authors>
+<au><second-name>Alami</second-name><first-names>J</first-names></au>
+<au><second-name>Persson</second-name><first-names>P O A</first-names></au>
+<au><second-name>Music</second-name><first-names>D</first-names></au>
+<au><second-name>Gudmundsson</second-name><first-names>J T</first-names></au>
+</authors>
+<year>2005</year>
+<jnl-title>J. Vac. Sci. Technol.</jnl-title>
+<part>A</part>
+<volume>23</volume>
+<pages>278</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1116/1.1861049</cr_doi>
+<cr_issn type="print">07342101</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib05" num="5">
+<authors>
+<au><second-name>Ehiasarian</second-name><first-names>A P</first-names></au>
+<au><second-name>Munz</second-name><first-names>W-D</first-names></au>
+<au><second-name>Hultman</second-name><first-names>L</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+<au><second-name>Petrov</second-name><first-names>I</first-names></au>
+</authors>
+<year>2003</year>
+<jnl-title>Surf. Coat. Technol.</jnl-title>
+<volume>163</volume>
+<pages>267</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/S0257-8972(02)00479-6</cr_doi>
+<cr_issn type="print">02578972</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib06" num="6">
+<authors>
+<au><second-name>Konstantinidis</second-name><first-names>S</first-names></au>
+<au><second-name>Dauchot</second-name><first-names>J P</first-names></au>
+<au><second-name>Hecq</second-name><first-names>M</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Thin Solid Films</jnl-title>
+<volume>515</volume>
+<pages>1182</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.tsf.2006.07.089</cr_doi>
+<cr_issn type="print">00406090</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib07" num="7">
+<authors>
+<au><second-name>Lattemann</second-name><first-names>M</first-names></au>
+<au><second-name>Ehiasarian</second-name><first-names>A P</first-names></au>
+<au><second-name>Bohlmark</second-name><first-names>J</first-names></au>
+<au><second-name>Persson</second-name><first-names>P A O</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Surf. Coat. Techol.</jnl-title>
+<volume>200</volume>
+<pages>6495</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.surfcoat.2005.11.082</cr_doi>
+<cr_issn type="print">02578972</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib08" num="8">
+<authors>
+<au><second-name>Anders</second-name><first-names>A</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>Surf. Coat. Technol.</jnl-title>
+<volume>204</volume>
+<pages>2864</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.surfcoat.2010.01.047</cr_doi>
+<cr_issn type="print">02578972</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib09" num="9">
+<authors>
+<au><second-name>Poolcharuansin</second-name><first-names>P</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>Plasma Sources Sci. Technol.</jnl-title>
+<volume>19</volume>
+<pages>025010</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0963-0252/19/2/025010</cr_doi>
+<cr_issn type="print">0963-0252</cr_issn>
+<cr_issn type="electronic">1361-6595</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib10" num="10">
+<authors>
+<au><second-name>Gudmundsson</second-name><first-names>J T</first-names></au>
+<au><second-name>Sigurjonsson</second-name><first-names>P</first-names></au>
+<au><second-name>Larsson</second-name><first-names>P</first-names></au>
+<au><second-name>Lundin</second-name><first-names>D</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+</authors>
+<year>2009</year>
+<jnl-title>J. Appl. Phys.</jnl-title>
+<volume>105</volume>
+<pages>123302</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1063/1.3151953</cr_doi>
+<cr_issn type="print">00218979</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib11" num="11">
+<authors>
+<au><second-name>Vetushka</second-name><first-names>A</first-names></au>
+<au><second-name>Ehiasarian</second-name><first-names>A P</first-names></au>
+</authors>
+<year>2008</year>
+<jnl-title>J. Phys. D: Appl. Phys.</jnl-title>
+<volume>41</volume>
+<pages>015204</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0022-3727/41/1/015204</cr_doi>
+<cr_issn type="print">0022-3727</cr_issn>
+<cr_issn type="electronic">1361-6463</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib12" num="12">
+<authors>
+<au><second-name>Hecimovic</second-name><first-names>A</first-names></au>
+<au><second-name>Ehiasarian</second-name><first-names>A P</first-names></au>
+</authors>
+<year>2009</year>
+<jnl-title>J. Phys. D: Appl. Phys.</jnl-title>
+<volume>42</volume>
+<pages>135209</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0022-3727/42/13/135209</cr_doi>
+<cr_issn type="print">0022-3727</cr_issn>
+<cr_issn type="electronic">1361-6463</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib13" num="13">
+<authors>
+<au><second-name>Hecimovic</second-name><first-names>A</first-names></au>
+<au><second-name>Burcalova</second-name><first-names>K</first-names></au>
+<au><second-name>Ehiasarian</second-name><first-names>A P</first-names></au>
+</authors>
+<year>2008</year>
+<jnl-title>J. Phys. D: Appl. Phys.</jnl-title>
+<volume>41</volume>
+<pages>095203</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0022-3727/41/9/095203</cr_doi>
+<cr_issn type="print">0022-3727</cr_issn>
+<cr_issn type="electronic">1361-6463</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib14" num="14">
+<authors>
+<au><second-name>Jouan</second-name><first-names>P Y</first-names></au>
+<au><second-name>Le Brizoul</second-name><first-names>L</first-names></au>
+<au><second-name>Ganciu</second-name><first-names>M</first-names></au>
+<au><second-name>Cardinaud</second-name><first-names>C</first-names></au>
+<au><second-name>Tricot</second-name><first-names>S</first-names></au>
+<au><second-name>Djouadi</second-name><first-names>M A</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>IEEE Trans. Plasma Sci.</jnl-title>
+<volume>38</volume>
+<pages>3089</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1109/TPS.2010.2073688</cr_doi>
+<cr_issn type="print">0093-3813</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib15" num="15">
+<authors>
+<au><second-name>Lundin</second-name><first-names>D</first-names></au>
+<au><second-name>Larsson</second-name><first-names>P</first-names></au>
+<au><second-name>Wallin</second-name><first-names>E</first-names></au>
+<au><second-name>Lattemann</second-name><first-names>M</first-names></au>
+<au><second-name>Brenning</second-name><first-names>N</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+</authors>
+<year>2008</year>
+<jnl-title>Plasma Sources Sci. Technol.</jnl-title>
+<volume>17</volume>
+<pages>035021</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0963-0252/17/3/035021</cr_doi>
+<cr_issn type="print">0963-0252</cr_issn>
+<cr_issn type="electronic">1361-6595</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib16" num="16">
+<authors>
+<au><second-name>Lundin</second-name><first-names>D</first-names></au>
+<au><second-name>Stahl</second-name><first-names>M</first-names></au>
+<au><second-name>Kersten</second-name><first-names>H</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+</authors>
+<year>2009</year>
+<jnl-title>J. Phys. D: Appl. Phys.</jnl-title>
+<volume>42</volume>
+<pages>185202</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0022-3727/42/18/185202</cr_doi>
+<cr_issn type="print">0022-3727</cr_issn>
+<cr_issn type="electronic">1361-6463</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib17" num="17">
+<authors>
+<au><second-name>Hala</second-name><first-names>M</first-names></au>
+<au><second-name>Zabeida</second-name><first-names>O</first-names></au>
+<au><second-name>Baloukas</second-name><first-names>B</first-names></au>
+<au><second-name>Klemberg-Sapieha</second-name><first-names>J E</first-names></au>
+<au><second-name>Martinu</second-name><first-names>L</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>IEEE Trans. Plasma Sci.</jnl-title>
+<volume>38</volume>
+<pages>3035</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1109/TPS.2010.2064183</cr_doi>
+<cr_issn type="print">0093-3813</cr_issn>
+<cr_issn type="electronic">1939-9375</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib18" num="18">
+<authors>
+<au><second-name>Macak</second-name><first-names>K</first-names></au>
+<au><second-name>Kouznetsov</second-name><first-names>V</first-names></au>
+<au><second-name>Schneider</second-name><first-names>J</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+<au><second-name>Petrov</second-name><first-names>I</first-names></au>
+</authors>
+<year>2000</year>
+<jnl-title>J. Vac. Sci. Technol.</jnl-title>
+<part>A</part>
+<volume>18</volume>
+<pages>1533</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1116/1.582380</cr_doi>
+<cr_issn type="print">07342101</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib19" num="19">
+<authors>
+<au><second-name>Lundin</second-name><first-names>D</first-names></au>
+<au><second-name>Al Sahab</second-name><first-names>S</first-names></au>
+<au><second-name>Brenning</second-name><first-names>N</first-names></au>
+<au><second-name>Huo</second-name><first-names>C</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+</authors>
+<year>2011</year>
+<art-title>Internal Current Measurements in high power impulse magnetron sputtering</art-title>
+<jnl-title>Plasma Sources Sci. Technol.</jnl-title>
+<volume>20</volume>
+<pages>045003</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0963-0252/20/4/045003</cr_doi>
+<cr_issn type="print">0963-0252</cr_issn>
+<cr_issn type="electronic">1361-6595</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib20" num="20">
+<authors>
+<au><second-name>Lundin</second-name><first-names>D</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+<au><second-name>Kirkpatrick</second-name><first-names>S</first-names></au>
+<au><second-name>Rohde</second-name><first-names>S</first-names></au>
+<au><second-name>Brenning</second-name><first-names>N</first-names></au>
+</authors>
+<year>2008</year>
+<jnl-title>Plasma Sources Sci. Technol.</jnl-title>
+<volume>17</volume>
+<pages>025007</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0963-0252/17/2/025007</cr_doi>
+<cr_issn type="print">0963-0252</cr_issn>
+<cr_issn type="electronic">1361-6595</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib21" num="21">
+<authors>
+<au><second-name>Mishra</second-name><first-names>A</first-names></au>
+<au><second-name>Kelly</second-name><first-names>P J</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>Plasma Sources Sci. Technol.</jnl-title>
+<volume>19</volume>
+<pages>045014</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0963-0252/19/4/045014</cr_doi>
+<cr_issn type="print">0963-0252</cr_issn>
+<cr_issn type="electronic">1361-6595</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib22" num="22">
+<authors>
+<au><second-name>Brenning</second-name><first-names>N</first-names></au>
+<au><second-name>Axnas</second-name><first-names>I</first-names></au>
+<au><second-name>Raadu</second-name><first-names>M A</first-names></au>
+<au><second-name>Lundin</second-name><first-names>D</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+</authors>
+<year>2008</year>
+<jnl-title>Plasma Sources Sci. Technol.</jnl-title>
+<volume>17</volume>
+<pages>045009</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0963-0252/17/4/045009</cr_doi>
+<cr_issn type="print">0963-0252</cr_issn>
+<cr_issn type="electronic">1361-6595</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib23" num="23">
+<authors>
+<au><second-name>Vetushka</second-name><first-names>A</first-names></au>
+<au><second-name>Karkari</second-name><first-names>S K</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+</authors>
+<year>2004</year>
+<jnl-title>J. Vac. Sci. Technol.</jnl-title>
+<part>A</part>
+<volume>22</volume>
+<pages>2459</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1116/1.1810167</cr_doi>
+<cr_issn type="print">07342101</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib24" num="24">
+<authors>
+<au><second-name>Bultinck</second-name><first-names>E</first-names></au>
+<au><second-name>Bogaerts</second-name><first-names>A</first-names></au>
+</authors>
+<year>2009</year>
+<jnl-title>New J. Phys.</jnl-title>
+<volume>11</volume>
+<pages>103010</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/1367-2630/11/10/103010</cr_doi>
+<cr_issn type="electronic">1367-2630</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib25" num="25">
+<authors>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+<au><second-name>Karkari</second-name><first-names>S K</first-names></au>
+<au><second-name>Vetushka</second-name><first-names>A</first-names></au>
+</authors>
+<year>2004</year>
+<jnl-title>Surf. Eng.</jnl-title>
+<volume>20</volume>
+<pages>186</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1179/026708404225016355</cr_doi>
+<cr_issn type="print">02670844</cr_issn>
+<cr_issn type="electronic">17432944</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib26" num="26">
+<authors>
+<au><second-name>Misina</second-name><first-names>M</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+<au><second-name>B&auml;cker</second-name><first-names>H</first-names></au>
+<au><second-name>Aranda-Gonzalvo</second-name><first-names>Y</first-names></au>
+<au><second-name>Karkari</second-name><first-names>S K</first-names></au>
+<au><second-name>Forder</second-name><first-names>D</first-names></au>
+</authors>
+<year>2003</year>
+<jnl-title>Vacuum</jnl-title>
+<volume>68</volume>
+<pages>171</pages>
+</journal-ref>
+<journal-ref id="jphysd400830bib27" num="27">
+<authors>
+<au><second-name>Gudmundsson</second-name><first-names>J T</first-names></au>
+<au><second-name>Alami</second-name><first-names>J</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>Appl. Phys. Lett.</jnl-title>
+<volume>78</volume>
+<pages>3427</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1063/1.1376150</cr_doi>
+<cr_issn type="print">00036951</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib28" num="28">
+<authors>
+<au><second-name>Pajdarova</second-name><first-names>A D</first-names></au>
+<au><second-name>Vlcek</second-name><first-names>J</first-names></au>
+<au><second-name>Kudlacek</second-name><first-names>P</first-names></au>
+<au><second-name>Lukas</second-name><first-names>J</first-names></au>
+</authors>
+<year>2009</year>
+<jnl-title>Plasma Sources. Sci. Technol.</jnl-title>
+<volume>18</volume>
+<pages>025008</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0963-0252/18/2/025008</cr_doi>
+<cr_issn type="print">0963-0252</cr_issn>
+<cr_issn type="electronic">1361-6595</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib29" num="29">
+<authors>
+<au><second-name>Gudmundsson</second-name><first-names>J T</first-names></au>
+<au><second-name>Alami</second-name><first-names>J</first-names></au>
+<au><second-name>Helmersson</second-name><first-names>U</first-names></au>
+</authors>
+<year>2002</year>
+<jnl-title>Surf. Coat. Technol.</jnl-title>
+<volume>161</volume>
+<pages>249</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/S0257-8972(02)00518-2</cr_doi>
+<cr_issn type="print">02578972</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib30" num="30">
+<authors>
+<au><second-name>Stranak</second-name><first-names>V</first-names></au>
+<au><second-name>Hubicka</second-name><first-names>Z</first-names></au>
+<au><second-name>Adamek</second-name><first-names>P</first-names></au>
+<au><second-name>Blazek</second-name><first-names>J</first-names></au>
+<au><second-name>Tichy</second-name><first-names>M</first-names></au>
+<au><second-name>Spatenka</second-name><first-names>P</first-names></au>
+<au><second-name>Hippler</second-name><first-names>R</first-names></au>
+<au><second-name>Wrende</second-name><first-names>S</first-names></au>
+</authors>
+<year>2006</year>
+<jnl-title>Surf. Coat. Technol.</jnl-title>
+<volume>201</volume>
+<pages>2512</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.surfcoat.2006.04.013</cr_doi>
+<cr_issn type="print">02578972</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib31" num="31">
+<authors>
+<au><second-name>Poolcharuansin</second-name><first-names>P</first-names></au>
+<au><second-name>Liebig</second-name><first-names>B</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>IEEE Trans. Plasma Sci.</jnl-title>
+<volume>38</volume>
+<pages>3007</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1109/TPS.2010.2069572</cr_doi>
+<cr_issn type="print">0093-3813</cr_issn>
+<cr_issn type="electronic">1939-9375</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib32" num="32">
+<authors>
+<au><second-name>Poolcharuansin</second-name><first-names>P</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+</authors>
+<year>2011</year>
+<jnl-title>Surf. Coat. Technol.</jnl-title>
+<volume>205</volume>
+<pages>S307</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1016/j.surfcoat.2010.12.023</cr_doi>
+<cr_issn type="print">02578972</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib33" num="33">
+<authors>
+<au><second-name>Stranak</second-name><first-names>V</first-names></au>
+<au><second-name>Cada</second-name><first-names>M</first-names></au>
+<au><second-name>Hubicka</second-name><first-names>Z</first-names></au>
+<au><second-name>Tichy</second-name><first-names>M</first-names></au>
+<au><second-name>Hippler</second-name><first-names>R</first-names></au>
+</authors>
+<year>2010</year>
+<jnl-title>J. Appl. Phys.</jnl-title>
+<volume>108</volume>
+<pages>043305</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1063/1.3467001</cr_doi>
+<cr_issn type="print">00218979</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib34" num="34">
+<authors>
+<au><second-name>Stranak</second-name><first-names>V</first-names></au>
+<au><second-name>Drache</second-name><first-names>S</first-names></au>
+<au><second-name>Cada</second-name><first-names>M</first-names></au>
+<au><second-name>Hubicka</second-name><first-names>Z</first-names></au>
+<au><second-name>Tichy</second-name><first-names>M</first-names></au>
+<au><second-name>Hippler</second-name><first-names>R</first-names></au>
+</authors>
+<year>2011</year>
+<jnl-title>Contrib. Plasma Phys.</jnl-title>
+<volume>51</volume>
+<pages>237</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/ctpp.201000065</cr_doi>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib35" num="35">
+<authors>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+<au><second-name>Thompson</second-name><first-names>S</first-names></au>
+<au><second-name>Gonzalvo</second-name><first-names>Y A</first-names></au>
+</authors>
+<year>2001</year>
+<jnl-title>Plasma Sources Sci. Technol.</jnl-title>
+<volume>10</volume>
+<pages>490</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0963-0252/10/3/314</cr_doi>
+<cr_issn type="print">0963-0252</cr_issn>
+<cr_issn type="electronic">1361-6595</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib36" num="36">
+<authors>
+<au><second-name>Karkari</second-name><first-names>S K</first-names></au>
+<au><second-name>Vetushka</second-name><first-names>A</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+</authors>
+<year>2003</year>
+<jnl-title>J. Vac. Sci. Technol.</jnl-title>
+<part>A</part>
+<volume>21</volume>
+<pages>L28</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1116/1.1622673</cr_doi>
+<cr_issn type="print">07342101</cr_issn>
+</crossref>
+</journal-ref>
+<journal-ref id="jphysd400830bib37" num="37">
+<authors>
+<au><second-name>Clarke</second-name><first-names>G</first-names></au>
+<au><second-name>Mishra</second-name><first-names>A</first-names></au>
+<au><second-name>Kelly</second-name><first-names>P J</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+</authors>
+<year>2009</year>
+<jnl-title>Plasma Process. Polym.</jnl-title>
+<volume>6</volume>
+<pages>S548</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1002/ppap.200931201</cr_doi>
+</crossref>
+</journal-ref>
+<book-ref id="jphysd400830bib38" num="38">
+<authors>
+<au><second-name>Chapman</second-name><first-names>B</first-names></au>
+</authors>
+<year>1980</year>
+<book-title>Glow Discharge Processes</book-title>
+<publication>
+<place>New York</place>
+<publisher>Wiley</publisher>
+</publication>
+</book-ref>
+<journal-ref id="jphysd400830bib39" num="39">
+<authors>
+<au><second-name>van der Straaten</second-name><first-names>T A</first-names></au>
+<au><second-name>Cramer</second-name><first-names>N F</first-names></au>
+<au><second-name>Falconer</second-name><first-names>I S</first-names></au>
+<au><second-name>James</second-name><first-names>B W</first-names></au>
+</authors>
+<year>1998</year>
+<jnl-title>J. Phys. D: Appl. Phys.</jnl-title>
+<volume>31</volume>
+<pages>177</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0022-3727/31/2/004</cr_doi>
+<cr_issn type="print">0022-3727</cr_issn>
+<cr_issn type="electronic">1361-6463</cr_issn>
+</crossref>
+</journal-ref>
+<book-ref id="jphysd400830bib40" num="40">
+<authors>
+<au><second-name>Wasa</second-name><first-names>K</first-names></au>
+<au><second-name>Hayakawa</second-name><first-names>S</first-names></au>
+</authors>
+<year>1992</year>
+<book-title>Handbook of Sputter Deposition Technology: Principles, Technology, and Applications</book-title>
+<publication>
+<place>Park Ridge, NJ</place>
+<publisher>Noyes</publisher>
+</publication>
+</book-ref>
+<journal-ref id="jphysd400830bib41" num="41">
+<authors>
+<au><second-name>Vetushka</second-name><first-names>A</first-names></au>
+<au><second-name>Bradley</second-name><first-names>J W</first-names></au>
+</authors>
+<year>2007</year>
+<jnl-title>J. Phys. D: Appl. Phys.</jnl-title>
+<volume>40</volume>
+<pages>2037</pages>
+<crossref>
+<cr_doi>http://dx.doi.org/10.1088/0022-3727/40/7/028</cr_doi>
+<cr_issn type="print">0022-3727</cr_issn>
+<cr_issn type="electronic">1361-6463</cr_issn>
+</crossref>
+</journal-ref>
+</reference-list>
+</references>
+</back>
+</article>

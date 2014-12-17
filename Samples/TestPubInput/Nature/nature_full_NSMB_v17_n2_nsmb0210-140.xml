@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "../../DTDs/NPG_XML_Article/NPG_XML_Article.dtd" [
+<!ENTITY figf1 PUBLIC "-//NatureAmerica//FICI nsmb0210-140-F1//EN" "nsmb0210-140-F1" NDATA ITEM>
+]>
+<article id="nsmb0210-140" language="eng" publish="issue" relation="no">
+  <pubfm>
+    <jtl>Nature Structural &amp; Molecular Biology</jtl>
+    <vol>17</vol>
+    <iss>2</iss>
+    <idt>201002</idt>
+    <categ id="nv"/>
+    <pp>
+      <spn>140</spn>
+      <epn>141</epn>
+      <cnt>2</cnt>
+    </pp>
+    <issn type="print">1545-9993</issn>
+    <issn type="electronic">1545-9985</issn>
+    <cpg>
+      <cpy>2010</cpy>
+      <cpn>Nature Publishing Group</cpn>
+    </cpg>
+    <nvid extrefid="nsmb.1743"/>
+    <doi>10.1038/nsmb0210-140</doi>
+  </pubfm>
+  <fm>
+    <atl>Substrate check of γ-secretase</atl>
+    <aug>
+      <au>
+        <fnm>Yun-wu</fnm>
+        <snm>Zhang</snm>
+        <inits>Y</inits>
+        <orf rid="a1"/>
+      </au>
+      <cau>
+        <fnm>Huaxi</fnm>
+        <snm>Xu</snm>
+        <inits>H</inits>
+        <orf rid="a1"/>
+        <corf rid="c1"/>
+      </cau>
+      <aff><oid id="a1"/>Yun-wu Zhang and Huaxi Xu are at the <org>Institute for Biomedical Research and the Fujian Provincial Key Laboratory of Neurodegenerative Disease and Aging Research, Xiamen University</org>, <cty>Xiamen</cty>, <cny>China</cny>, and the <org>Neurodegenerative Disease Research Program, Burnham Institute for Medical Research</org>, <cty>La Jolla</cty>, <st>California</st>, <cny>USA</cny>.</aff>
+      <caff>
+        <coid id="c1"/>
+        <email>xuh@burnham.org</email>
+      </caff>
+    </aug>
+    <stndfrst>γ-secretase cleaves multiple substrates with essential roles from development to neurodegeneration, and its aberrant processing underlies human disorders including Alzheimer's disease (AD). Tian <i>et al</i>. now identify a domain in the β-amyloid precursor protein (APP) that inhibits γ-secretase activity and show that certain familial AD-linked APP mutations within this domain impair this inhibition, resulting in increased β-amyloid generation. The study thus reveals a novel mechanism whereby γ-secretase's activity is influenced by its own substrate.</stndfrst>
+  </fm>
+  <bdy>
+    <p>γ-secretase is a macromolecular complex that contains at least four proteins: presenilin (PS, including PS1 and PS2), nicastrin, APH-1 and PEN-2, all of which are obligatory for protease activity<bibr rid="b1 b2 b3"/>. In addition, CD147 (ref. <bibrinl rid="b4">4</bibrinl>) and TMP21 (ref. <bibrinl rid="b5">5</bibrinl>) have been reported to associate with the complex and to play a regulatory role in γ-secretase activity. γ-secretase has recently moved to the forefront of basic research and drug development for various diseases, for a number of reasons. First, it is an unusual catalyst that hydrolyzes peptide bonds in the lipid bilayer. Second, it is involved in various signaling pathways that control cell renewal, proliferation, differentiation and degeneration. Third, it is a promising target for Alzheimer's disease (AD) and cancer therapies. γ-secretase cleaves a series of type I transmembrane proteins, including two important substrates, APP and Notch. Processing of APP yields β-amyloid (Aβ) peptides that are associated with AD, whereas cleavage of Notch1 releases its intracellular domain (NICD), which is crucial for development<bibr rid="b1 b2 b3"/>. However, little is known about the regulation of γ-secretase activity. All substrates of γ-secretase are products of earlier cleavage events by other proteases<bibr rid="b1 b2 b3"/>. In the case of Aβ, APP is initially processed by β-secretase; this cleavage event removes the large extracellular domain of APP and generates a fragment termed β-secretase-cleaved APP C-terminal fragment (βCTF), the actual substrate for γ-secretase. Therefore, the first cleavage event functions as a gate to control the availability of γ-secretase substrates. On <xnav extrefid="nsmb.1743">page 151</xnav> of this issue<bibr rid="b6"/>, Tian and colleagues reveal another mode of γ-secretase regulation: the substrate itself contains an internal sequence that negatively modulates γ-secretase activity. This sequence, corresponding to Aβ<sub>17-23</sub> (LVFFAED), is located N-terminally to the scissile bond and is referred to as the APP substrate inhibitory domain (ASID) (<figr rid="f1">Fig. 1a</figr>).</p>
+    <p>Shah <i>et al</i>.<bibr rid="b7"/> had proposed a working model in which β-secretase cleavage frees the N terminus of βCTF, which is then recognized and recruited by nicastrin, making the substrate accessible to the active site of γ-secretase for proteolysis. However, understanding of the regulation of γ-secretase activity and specificity after the first cleavage has been elusive. Mutations of genes encoding APP, PS1 and PS2 have been associated with early onset familial AD (FAD) and have provided a powerful model for elucidating the physiological and pathological mechanisms of APP processing and Aβ production. By investigating a cluster of FAD APP mutations within the region of Aβ, Tian <i>et al</i>.<bibr rid="b6"/> identified the domain Aβ<sub>17-23</sub>(LVFFAED) as the ASID that helps to regulate Aβ production (<figr rid="f1">Fig. 1a</figr>). In this model, the newly identified inhibitory domain within βCTF specifically interacts with the ASID binding site (named the E<sub>I</sub> site by Tian <i>et al</i>.<bibr rid="b6"/>) in the γ-secretase complex which is distinct from the active site. But binding of the ASID to the E<sub>I</sub> site affects the active site and reduces the catalytic efficiency of Aβ production. The Flemish mutation (A21G) located in the ASID weakens this inhibitory effect on γ-secretase and leads to an increase in Aβ production (<figr rid="f1">Fig. 1a</figr>). The non-active site substrate recognition has been used to achieve specificity in multiple protein-complex systems. The work by Tian <i>et al</i>.<bibr rid="b6"/> suggests that the non-active site substrate-enzyme interaction can also act as a <i>cis</i> element that modulates enzyme activity and specificity. This study clearly provides a potential molecular basis for the Flemish FAD mutation in the pathogenesis of AD. Moreover, it raises the interesting question of whether there are other factors that affect this regulatory machinery, leading to altered Aβ production and AD incidence. Identification of these factors could help to develop a better understanding of the pathogenesis and diagnosis of AD.</p>
+    <p>Although inhibition of γ-secretase activity seems to be a promising strategy for AD intervention, the existence of multiple γ-secretase substrates implies potential side effects for such drugs. Indeed, nonselective inhibition of γ-secretase could cause toxicity in the gastrointestinal tract due to blockage of Notch1 signaling<bibr rid="b8"/>. Therefore, efforts are underway to develop selective γ-secretase inhibitors (GSI) that target Aβ production. In this regard, γ-secretase modulators (GSM)<bibr rid="b9"/>, Notch1-sparing GSI<bibr rid="b10"/> and allosteric GSI (AGSI)<bibr rid="b11"/>, all of which are selective for Aβ production, have been reported. In the study by Tian <i>et al</i>.<bibr rid="b6"/>, synthesized peptides based on the APP ASID sequence showed some inhibition selectivity for Aβ production over Notch1 cleavage. These peptide inhibitors likely cannot be used <i>in vivo</i>, due to their low potency and bioavailability (<i>i.e</i>., the extent to and rate at which a drug enters systemic circulation and the site of action). However, this study indicates that the ASID E<sub>I</sub> binding site on γ-secretase could be used as a novel target for the development of specific inhibitors to treat AD. In addition, it will be of interest to investigate the effect of Notch1-sparing GSI and AGSI on the ASID binding site to further define their relationship and mechanism of action.</p>
+    <p>Finally, this study brings up the important question of whether ASIDs are present in other γ-secretase substrates and are involved in the regulation of their own processing by interacting with specific binding sites in γ-secretase (<figr rid="f1">Fig. 1b</figr>). If there are additional unique ASIDs that bind to separate sites for each substrate of γ-secretase, they would also be very attractive targets for therapeutic development. For example, abnormal Notch1 signaling contributes to human malignancies, and this might be corrected by targeting unique Notch1 ASID binding sites on γ-secretase. From a broader perspective, whether this novel model of enzyme regulation by ASID goes beyond γ-secretase and serves as a general mechanism for enzyme regulation deserves further investigation.</p>
+  </bdy>
+  <bm>
+    <objects>
+      <fig id="f1" type="bmp" entname="figf1">
+        <figtl>Model for negative regulation of γ-secretase.</figtl>
+        <caption>
+          <p>(<b>a</b>) The internal inhibitory domain in APP βCTF (ASID, containing the sequence LVFFAED and represented as a red triangle) modulates γ-secretase activity for Aβ production. γ-secretase contains two distinct substrate binding sites, the E<sub>I</sub> site and the active site, responsible for ASID binding and proteolysis, respectively. The interaction of ASID with the E<sub>I</sub> site allosterically alters the active site of γ-secretase, resulting in a selective reduction of Aβ production. The Flemish mutation within ASID decreases this negative regulation and leads to enhanced Aβ production. (<b>b</b>) Model of multiple ASID binding sites in γ-secretase. This model suggests that each γ-secretase substrate (represented by A, B and C) contains a unique ASID (represented by A<sub>ASID</sub>, B<sub>ASID</sub> and C<sub>ASID</sub>, respectively) and binds to a specific site on γ-secretase to control its own processing.</p>
+        </caption>
+      </fig>
+    </objects>
+    <audecl conflct="no"/>
+    <bibl>
+      <bib id="b1">
+        <reftxt><refau><snm>De Strooper</snm>, <fnm>B.</fnm></refau><jtl>Neuron</jtl><vid>38</vid>, <ppf>9</ppf>-<ppl>12</ppl> (<cd year="2003">2003</cd>).</reftxt>
+      </bib>
+      <bib id="b2">
+        <reftxt><refau><snm>Edbauer</snm>, <fnm>D.</fnm></refau><i>et al</i>. <jtl>Nat. Cell Biol.</jtl><vid>5</vid>, <ppf>486</ppf>-<ppl>488</ppl> (<cd year="2003">2003</cd>).</reftxt>
+      </bib>
+      <bib id="b3">
+        <reftxt><refau><snm>Iwatsubo</snm>, <fnm>T.</fnm></refau><jtl>Curr. Opin. Neurobiol.</jtl><vid>14</vid>, <ppf>379</ppf>-<ppl>383</ppl> (<cd year="2004">2004</cd>).</reftxt>
+      </bib>
+      <bib id="b4">
+        <reftxt><refau><snm>Zhou</snm>, <fnm>S.</fnm></refau>, <refau><snm>Zhou</snm>, <fnm>H.</fnm></refau>, <refau><snm>Walian</snm>, <fnm>P.J.</fnm></refau> &amp; <refau><snm>Jap</snm>, <fnm>B.K.</fnm></refau> <jtl>Proc. Natl. Acad. Sci. USA</jtl> <vid>102</vid>, <ppf>7499</ppf>-<ppl>7504</ppl> (<cd year="2005">2005</cd>).</reftxt>
+      </bib>
+      <bib id="b5">
+        <reftxt><refau><snm>Chen</snm>, <fnm>F.</fnm></refau><i>et al</i>. <jtl>Nature</jtl><vid>440</vid>, <ppf>1208</ppf>-<ppl>1212</ppl> (<cd year="2006">2006</cd>).</reftxt>
+      </bib>
+      <bib id="b6">
+        <reftxt><refau><snm>Tian</snm>, <fnm>Y.</fnm></refau>, <refau><snm>Bassit</snm>, <fnm>B.</fnm></refau>, <refau><snm>Chau</snm>, <fnm>D.</fnm></refau> &amp; <refau><snm>Li</snm>, <fnm>Y.M.</fnm></refau> <jtl>Nat. Struct. Mol. Biol.</jtl> <vid>17</vid>, <ppf>151</ppf>-<ppl>158</ppl> (<cd year="2010">2010</cd>).</reftxt>
+      </bib>
+      <bib id="b7">
+        <reftxt><refau><snm>Shah</snm>, <fnm>S.</fnm></refau><i>et al</i>. <jtl>Cell</jtl><vid>122</vid>, <ppf>435</ppf>-<ppl>447</ppl> (<cd year="2005">2005</cd>).</reftxt>
+      </bib>
+      <bib id="b8">
+        <reftxt><refau><snm>van Es</snm>, <fnm>J.H.</fnm></refau><i>et al</i>. <jtl>Nature</jtl><vid>435</vid>, <ppf>959</ppf>-<ppl>963</ppl> (<cd year="2005">2005</cd>).</reftxt>
+      </bib>
+      <bib id="b9">
+        <reftxt><refau><snm>Weggen</snm>, <fnm>S.</fnm></refau><i>et al</i>. <jtl>Nature</jtl><vid>414</vid>, <ppf>212</ppf>-<ppl>216</ppl> (<cd year="2001">2001</cd>).</reftxt>
+      </bib>
+      <bib id="b10">
+        <reftxt><refau><snm>Mayer</snm>, <fnm>S.C.</fnm></refau><i>et al</i>. <jtl>J. Med. Chem.</jtl><vid>51</vid>, <ppf>7348</ppf>-<ppl>7351</ppl> (<cd year="2008">2008</cd>).</reftxt>
+      </bib>
+      <bib id="b11">
+        <reftxt><refau><snm>Shelton</snm>, <fnm>C.C.</fnm></refau><i>et al</i>. <jtl>Proc. Natl. Acad. Sci. USA</jtl><vid>106</vid>, <ppf>20228</ppf>-<ppl>20233</ppl> (<cd year="2009">2009</cd>).</reftxt>
+      </bib>
+    </bibl>
+  </bm>
+</article>

@@ -1,0 +1,1115 @@
+
+<!-- ******************************************************************* -->
+<!--                                                                     -->
+<!--                   Royal Society of Chemistry                        -->
+<!--                                                                     -->
+<!--                   RSC Primary Article DTD 3.6                       -->
+<!--                                                                     -->
+<!-- ******************************************************************* -->
+<!--                                                                     -->
+<!-- DTD Ident:     "RSCPA3.6"                                           -->
+<!--                                                                     -->
+<!-- PUBLIC identifier: "-//RSC//DTD RSC Primary Article DTD 3.6//EN"    -->
+<!--                                                                     -->
+<!-- DTD filename:  RSCART36.DTD                                         -->
+<!--                                                                     -->
+<!-- SGML Declaration filename:  RSCART33.DCL                            -->
+<!--                                                                     -->
+<!-- SGML Open catalog filename (SGML usage):  RSCART3S.CAT              -->
+<!-- SGML Open catalog filename (XML usage):  RSCART3X.CAT               -->
+<!--                                                                     -->
+<!-- Description:   This is the SGML Document Type Definition            -->
+<!--                for the primary journal articles of the              -->
+<!--                Royal Society of Chemistry.                          -->
+<!--                                                                     -->
+<!-- Copyright:     Copyright (c) 2000 The Royal Society of Chemistry    -->
+<!--                All Rights Reserved                                  -->
+<!--                                                                     -->
+<!-- Authors:       Richard Light (richard@light.demon.co.uk)            -->
+<!--                Neil Hunter   (HUNTERN@rsc.org)                      -->
+<!--                                                                     -->
+<!-- Date:          11 May 2001                                          -->
+<!--                                                                     -->
+<!-- Publisher:     The Royal Society of Chemistry                       -->
+<!--                                                                     -->
+<!-- Address:       Thomas Graham House                                  -->
+<!--                Science Park                                         -->
+<!--                Milton Road                                          -->
+<!--                Cambridge                                            -->
+<!--                United Kingdom CB4 4WF                               -->
+<!--                                                                     -->
+<!-- Tel:           +44 (0)1223 420066                                   -->
+<!--                                                                     -->
+<!-- ******************************************************************* -->
+<!-- Maintenance updates to version 3.3:
+
+     - volumeno, issueno are now optional in journalcit
+     - pubplace, editor have been defined
+     - citpub has been introduced to avoid the org nesting required by
+       publisher
+     - section has been introduced as an optional extra in the backmatter
+       (with type - so it can be used for corrigenda)
+     - emphasis elements have been added to the content model of citation
+
+     plus a note on usage - we will use <date role="accepted"> instead of
+     creating a new element
+-->
+<!-- Maintenance updates to DTD for version 3.4:
+
+     - optional footnote(s) after person in content model of author;
+     - change all elements with content model m.text-or-paras to
+       m.simple-text-or-paras (allowing subelements within the text);
+     - all 'reference' elements now have content model m.emph to allow
+       for style changes within the reference string;
+     - add a 'qualifier' element to persname, before and after subelements,
+       so that footnotes and other non-name material can be added without
+       disturbing fname and surname;
+     - for TeX, ugraphic now has a 'src2' attribute of type ENTITY.  When 
+required,
+       give src2 an entity name that is similar to the 'base' entity, but with
+       the suffix 't';
+     - the RSC entity set has been 'filled out';
+     - 'simple' entities will be added for Charlesworth support;
+     - add new arttitle element within %m.citation;
+     - there is an 'admin-event' element within art-admin, containing a.type,
+       agent (i.e. a person with a role), date and address within a mixed 
+content
+       model;
+     - within published, volumeref, issueref and pubfront are now optional;
+     - the content model for eqntext is now %m.simple-text-or-paras; - note 
+that
+       it _can_ be used between paragraphs (requires typesetting support);
+     - the element type url has been added to the class 'general', which allows
+       it to be used anywhere within text;
+     - the 'fixed' DTD version has been changed to '3.4';
+     - journalref, volumeref and issueref now have the same content model as
+       journal, volume and issue respectively.  This allows links to be 
+replaced
+       by the relevant content without invalidating the document;
+     - price-code attribute added to article;
+     - journal now has an optional repeatable logo element, containing a 
+graphic;
+-->
+<!-- Maintenance updates to DTD for version 3.5:
+     - the 'fixed' DTD version has been changed to '3.5';
+     - coden element type added to header information;
+     - authgrp within art-front is now optional;
+     - org within aff is now [optional and] repeatable; org and address 
+repeatable
+       as a pair;
+     - <ack> now has an optional title attribute;
+     - content model for trans made the same as that for citation. N.B. this
+       change is not upwards-compatible.  The previous content model for
+       trans allowed citext.  This is replaced by the 'mixed content with
+       %emph;' approach offered by %m.citation;
+     - email has been added to the %gen; content model class, allowing email
+       addresses to appear wherever this class is allowed (which is pretty
+       well anywhere in textual content);
+     - url and email have been added to the %m.citation; content model class;
+     - there is a new element type - <a> - designed to support hyperlinks which 
+
+     	use an image as the clickable link;
+     - within the content model for <journalcit>, <link> has been made into an
+       'optional extra', so that citations can be supported by e.g. a DOI and a
+       COI;
+     - <link> now has a type attribute;
+     - [usage convention only:] within suppinf, the content of the link
+       element should now be 'INFO' or 'CRYSTAL'.  'INFO' corresponds to the
+       single value that was previously allowed ('TRUE');
+-->
+<!-- Maintenance updates to DTD for version 3.6:
+	 - the new element type a is now actually allowed within a document;
+	 - the parameter entity a.dtd has been altered to RSCPA3.6, and is now 
+	   actually used!;
+	 - the new 'generated' set of entity declarations rsc_x.ent is used;
+	 - element type no now has a content model of 'simple text' instead of
+	   just #PCDATA;
+	 - the common attributes for graphics (%a.graphic;) now have a prefix
+	   attribute, which can have values 'prefix' (default) or 'noprefix';
+	 - year and pages are now optional within journalcit; additional 
+	   arttitle element added between citauth and title;
+	 - citext content model is now %m.simple-text-or-paras; to allow new
+	   paragraphs (or at least line breaks);
+	 - citation content model (%m.citation;) now includes pages;
+	 - new element commentary added within citgroup;
+	 - subsect2 and subsect3 can now have zero or more citref elements 
+	   immediately after the section title;
+	 - table cells can now contain paragraphs
+-->
+
+<!-- ================================ -->
+<!--         XML/SGML CONFORMANCE     -->
+<!-- ================================ -->
+
+<!-- By default the DTD is XML conformant, which means that it cannot contain
+     tag omission indicators.  This is indicated by setting the parameter 
+entity
+     DTD-IS-XML to the value "INCLUDE", which in turn causes the parameter 
+entity
+     DTD-IS-SGML to have the value "IGNORE".  This setting can be overridden by
+     setting DTD-IS-XML to "IGNORE" in the document's internal subset.
+
+     The principal effect of this XML option is to remove the tag omission
+     indicators from element declarations.
+-->
+
+<!ENTITY % DTD-IS-XML "INCLUDE">
+<![ %DTD-IS-XML; [
+<!ENTITY % DTD-IS-SGML "IGNORE">
+]]>
+<!ENTITY % DTD-IS-SGML "INCLUDE">
+
+<![ %DTD-IS-XML; [
+<!ENTITY % no-omission "">
+<!ENTITY % omit-end-tag "">
+]]>
+
+<![ %DTD-IS-SGML; [
+<!ENTITY % no-omission "- -">
+<!ENTITY % omit-end-tag "- O">
+]]>
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!--                                                                     -->
+<!--                       CHARACTER ENTITIES                            -->
+<!--                                                                     -->
+<!--  Character entity sets are now declared using PUBLIC identifiers.   -->
+<!--                                                                     -->
+<!--  Also, the ISO sets have been rationalised into a single set, so    -->
+<!--  that it is easier to decide which entity should be used in each    -->
+<!--  case.                                                              -->
+<!--                                                                     -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<![ %DTD-IS-XML; [
+<!ENTITY % ISOUnicode PUBLIC "-//RSC//ISO Entities RSC version 1.0//EN" 
+"entities/isoxml_s.ent" >
+<!ENTITY % RSCSpecific PUBLIC "-//RSC//ENTITIES Additional Symbols 2.0//EN" 
+"entities/rscxml_s.ent" >
+<!ENTITY % RSCCharacters PUBLIC "-//RSC//RSC characters version 1.0//EN" 
+"entities/rsc_x.ent" >
+]]>
+
+<![ %DTD-IS-SGML; [
+<!ENTITY % ISOUnicode PUBLIC "-//RSC//ISO Entities RSC version 1.0//EN" 
+"entities/isosgm_s.ent"  >
+<!ENTITY % RSCSpecific PUBLIC "-//RSC//ENTITIES Additional Symbols 2.0//EN" 
+"entities/rscsgm_s.ent" >
+<!ENTITY % RSCCharacters PUBLIC "-//RSC//RSC characters version 1.0//EN" 
+"entities/rsc_s.ent" >
+]]>
+
+<!--
+%ISOUnicode;
+%RSCSpecific;
+-->
+%RSCCharacters;
+
+<!-- Default entity allows undeclared entities to be mapped
+     automatically to a warning message.  This feature is
+     not supported in XML: -->
+<![ %DTD-IS-SGML; [
+<!ENTITY #DEFAULT " *** UNDECLARED ENTITY *** " >
+]]>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!--                                                                     -->
+<!--                            NOTATIONS                                -->
+<!--                                                                     -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+<!NOTATION bmp PUBLIC
+"+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Microsoft Windows 
+bitmap//EN" "">
+<!NOTATION cgm PUBLIC
+  "-//USA-DCD//NOTATION Computer Graphics Metafile//EN" "">
+<!NOTATION cgm-binary PUBLIC
+  "ISO 8632/3//NOTATION Binary encoding//EN" "">
+<!NOTATION cgm-char PUBLIC
+  "ISO 8632/2//NOTATION Character encoding//EN" "">
+<!NOTATION cgm-clear PUBLIC
+  "ISO 8632/4//NOTATION Clear text encoding//EN" "">
+<!NOTATION eps PUBLIC
+  "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Adobe Systems
+  Encapulated PostScript//EN" "">
+<!NOTATION fax PUBLIC
+  "-//USA-DOD//NOTATION CCITT Group 4 Facsimile Type 1 Untiled Raster//EN" "">
+<!NOTATION gif PUBLIC
+  "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Compuserve Graphic
+  Interchange Format//EN" "">
+<!NOTATION iges	PUBLIC
+  "-//USA-DOD//NOTATION (ASME/ANSI Y14.26M-1987) Initial Graphics
+  Exchange Specification//EN" "">
+<!NOTATION jpeg PUBLIC
+  "ISO/IEC 10918:1993//NOTATION Digital Compression and Coding of
+  Continuous-tone Still Images (JPEG)//EN" "">
+<!NOTATION mpeg1aud PUBLIC
+  "ISO/IEC 11172-3:1993//NOTATION Information technology -
+  Coding of moving pictures and associated audio for digital storage
+  media at up to about 1,5 Mbit/s - Part 3: Audio//EN" "">
+<!NOTATION mpeg1vid PUBLIC
+  "ISO/IEC 11172-2:1993//NOTATION Information technology -
+  Coding of moving pictures and associated audio for digital storage
+  media at up to about 1,5 Mbit/s - Part 2: Video//EN" "">
+<!NOTATION mpeg2aud PUBLIC
+  "ISO/IEC 13818-3:1995//NOTATION Coding of moving pictures and
+  associated audio: Part 3. Audio//EN" "">
+<!NOTATION mpeg2vid PUBLIC
+  "ISO/IEC 13818-2:1995//NOTATION Information technology -
+  Coding of moving pictures and associated audio: Part 2. Video//EN" "">
+<!NOTATION pcx PUBLIC
+  "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION ZSoft PCX bitmap//EN" "">
+<!NOTATION pict PUBLIC
+  "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Apple Computer Quickdraw
+  Picture//EN" "">
+<!NOTATION sgml PUBLIC
+  "+//ISO 8879:1986//NOTATION Information processing - Text and office systems 
+-
+  Standard Generalized Markup Language (SGML)//EN" "">
+<!NOTATION tex PUBLIC
+  "+//ISBN 0-201-13448-9::Knuth//NOTATION The TeXbook//EN" "">
+<!NOTATION tiff PUBLIC
+  "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Aldus/Microsoft Tagged
+  Interchange File Format//EN" "">
+<!NOTATION wmf PUBLIC
+  "+//ISBN 0-7923-9432-1::Graphic Notation//NOTATION Microsoft Windows
+  Metafile//EN" "">
+
+<!-- Notations for which no Public identifier has been traced:           -->
+
+<!NOTATION chemdraw SYSTEM "ChemDraw">
+<!NOTATION eqn SYSTEM "Equation">
+<!NOTATION pdf SYSTEM "Portable Document File">
+<!NOTATION ps SYSTEM "PostScript">
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!--                                                                     -->
+<!--                       PARAMETER ENTITIES                            -->
+<!--                                                                     -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--       GENERAL OPTIONS          -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!-- ================================ -->
+<!--         ELEMENT CLASSES          -->
+<!-- ================================ -->
+
+<!-- new class of font-modifiers created to support font changes
+     within the stack element type, 1.4.1999: -->
+<!ENTITY % font-modifiers "roman|it|bo|bi|scp|sansserif" >
+<!ENTITY % emph        "%font-modifiers;|ul|sup|inf" >
+<!ENTITY % gen         "list|footnote|note|overbar|underbar|stack|fraction|
+                        warning|unknown|email|url">
+<!ENTITY % chem        "compname">
+<!-- these can occur within OR between paragraphs: -->
+<!ENTITY % para-graphic "ugraphic|eqntext" >
+<!ENTITY % graphic     "figure|scheme|plate|chart|a" >
+<!ENTITY % eqn         "equation" >
+<!ENTITY % box         "box" >
+<!-- table added to 'table' elements to allow un-numbered tables: -->
+<!ENTITY % tab         "table-entry|table" >
+<!ENTITY % ref         "compoundref|textref|figref|schemref|plateref|chartref|
+                        eqnref|boxref|tableref|citref|fnoteref|affref" >
+<!-- edits added RBL 13.5.1998 to support editorial comments in the text:-->
+<!ENTITY % edits       "editnote">
+<!ENTITY % text-elts   "%emph;|%gen;|%para-graphic;|%chem;|%ref;|%edits;"  >
+<!ENTITY % inter-para-elts "%graphic;|%para-graphic;|%eqn;|%box;|%tab;"  >
+<!ENTITY % para-elts   "%text-elts;|%graphic;|%eqn;|%box;|%tab;"  >
+<!ENTITY % art-front-matter
+                       ""  >
+
+
+<!-- ================================ -->
+<!--         ATTRIBUTE VALUES         -->
+<!-- ================================ -->
+
+<!ENTITY % a.required-id "
+          id             ID             #REQUIRED">
+<!ENTITY % a.id "
+          id             ID             #IMPLIED" >
+<!ENTITY % a.required-idrefs "
+          idrefs         IDREFS         #REQUIRED">
+<!ENTITY % a.idrefs "
+          idrefs         IDREFS         #IMPLIED
+          presence       (missing|notmissing) 'notmissing' ">
+<!ENTITY % a.type "
+          type           CDATA          #IMPLIED" >
+<!ENTITY % a.src "
+          src            ENTITY         #IMPLIED" >
+<!ENTITY % a.dtd "
+          dtd            CDATA  #FIXED 'RSCPA3.6' " >
+<!ENTITY % a.role "
+          role           CDATA          #IMPLIED" >
+<!-- prefix attribute added for version 3.6: -->       
+<!ENTITY % a.graphic "
+          height        NMTOKEN                  #IMPLIED
+          width         NMTOKEN                  #IMPLIED
+          pos           (float|fixed)            #IMPLIED
+          prefix  		(prefix|noprefix) 		 'prefix'" >
+<!ENTITY % a.background "
+          background    ENTITY         #IMPLIED" >
+
+<!-- ================================ -->
+<!--         CONTENT MODELS           -->
+<!-- ================================ -->
+
+<!ENTITY % m.characters-only "(#PCDATA|%font-modifiers;)*" >
+<!ENTITY % m.emph "(#PCDATA|%emph;)*" >
+<!ENTITY % m.simple-text "(#PCDATA|%text-elts;)*" >
+<!ENTITY % m.text-or-link "(#PCDATA|%text-elts;|link)*" >
+<!-- FOOTNOTE added to table cell model, 30.1.1999; then removed 14.5.1999 when 
+added to
+     general text model ...  -->
+<!-- 3.6: paragraphs added to table cell model.  Whole model put into a '*'
+	group so that it can be declared as the value of %tbl.entry.mdl;: -->
+<!ENTITY % m.table-cell-text "(#PCDATA|%text-elts;|%graphic;|%eqn;|p)*">
+<!ENTITY % m.para-text   "(#PCDATA|%para-elts;)*" >
+<!ENTITY % m.simple-text-or-paras "(#PCDATA|%text-elts;|p)*" >
+<!-- 15.9.1999: map all text-or-paras references to simple-text-or-paras:
+  m.text-or-paras was:
+  <!ENTITY % m.text-or-paras "(#PCDATA|p)*" >
+-->
+<!ENTITY % m.text-or-paras "%m.simple-text-or-paras;" >
+<!ENTITY % m.text-or-sections "(#PCDATA|section)*" >
+<!ENTITY % m.citation 
+"(#PCDATA|citauth|title|year|volumeno|issueno|arttitle|biblscope|editor|
+                       citpub|pubplace|link|url|email|trans|pages|%emph;)*">
+<!ENTITY % m.org "(link) | (orgname+, address*)" >
+<!ENTITY % m.address
+           "(city|postcode|state|country|addrelt)+">
+<!ENTITY % m.journal "((link) |
+                       (title+, sercode, byline*, logo*, publisher, issn+, 
+coden?,
+                        board*, info*, advert*, cpyrt, volume*))">
+
+<!-- ================================ -->
+<!--         ELEMENT LINKING          -->
+<!--                                  -->
+<!-- The linking attributes used here -->
+<!-- follow TEI Extended Pointer      -->
+<!-- syntax.  This could be replaced  -->
+<!-- by a different linking syntax    -->
+<!-- if this is desirable.  However,  -->
+<!-- TEI offers compact notation plus -->
+<!-- the ability to use PUBLIC        -->
+<!-- identifiers, which put it ahead  -->
+<!-- of both HyTime and XML pointers  -->
+<!-- at present.                      -->
+<!--                                  -->
+<!-- ================================ -->
+
+<!ENTITY % a.pointer "
+          doc           ENTITY          #IMPLIED
+          from          CDATA           #IMPLIED
+          to            CDATA           #IMPLIED"  >
+<!ELEMENT link          %no-omission;   %m.simple-text;  >
+<!-- 3.5: type attribute added, for e.g. COIs and DOIs: -->
+<!ATTLIST link %a.type;
+               %a.pointer; >
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!--                                                                     -->
+<!--                   ELEMENTS AND ATTRIBUTES                           -->
+<!--                                                                     -->
+<!-- Attributes are now declared below the corresponding element         -->
+<!-- declaration, rather than at the end of the DTD                      -->
+<!--                                                                     -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--       LOW-LEVEL CONCEPTS       -->
+                 <!--                                -->
+                 <!--  Concepts which are used in a  -->
+                 <!--  number of different contexts. -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!-- ================================ -->
+<!--  General                         -->
+<!-- ================================ -->
+
+<!ELEMENT footnote       %no-omission;  %m.text-or-paras;>
+<!ATTLIST footnote %a.required-id; >
+<!ELEMENT note           %no-omission;  %m.text-or-paras;>
+<!ELEMENT overbar        %no-omission;  %m.simple-text;  >
+<!ELEMENT underbar       %no-omission;  %m.simple-text;  >
+<!-- stack, above and below added 1.4.1999: -->
+<!ELEMENT stack          %no-omission;  (above, below)   >
+<!ELEMENT above          %no-omission;  %m.characters-only;  >
+<!ELEMENT below          %no-omission;  %m.characters-only;  >
+<!ELEMENT fraction       %no-omission;  (numer,denom)    >
+<!ATTLIST fraction
+          shape (case|sol) #IMPLIED >
+<!ELEMENT numer          %no-omission;  %m.simple-text;  >
+<!ELEMENT denom          %no-omission;  %m.simple-text;  >
+<!ELEMENT warning        %no-omission;  %m.simple-text;  >
+<!ELEMENT unknown        %no-omission;  %m.simple-text;  >
+<!ATTLIST unknown %a.type; >
+
+<!ELEMENT title          %no-omission;  %m.simple-text-or-paras;>
+<!ATTLIST title %a.type; >
+<!ELEMENT subtitle       %no-omission;  %m.simple-text-or-paras;>
+<!ELEMENT sertitle       %no-omission;  %m.simple-text-or-paras;>
+<!ATTLIST sertitle %a.type; >
+<!-- arttitle added in version 3.4; declared in m.citation: -->
+<!ELEMENT arttitle       %no-omission;  %m.simple-text-or-paras;>
+
+<!ELEMENT list           %no-omission;  (head?,item+)    >
+<!ATTLIST list %a.type; >
+<!ELEMENT item           %no-omission;  %m.simple-text-or-paras;    >
+
+
+<!-- ================================ -->
+<!--  Dates and (potentially) times   -->
+<!-- ================================ -->
+
+<!ENTITY % m.date
+           "year,month?,day?">
+<!ENTITY % a.date "
+          year           CDATA          #IMPLIED
+          month          CDATA          #IMPLIED
+          day            CDATA          #IMPLIED" >
+<!ELEMENT daterange      %no-omission;  (date,date)    >
+<!ELEMENT date           %no-omission;  (%m.date;)     >
+<!ATTLIST date %a.role;  >
+<!ELEMENT year           %no-omission;  (#PCDATA)      >
+<!ELEMENT month          %no-omission;  (#PCDATA)      >
+<!ELEMENT day            %no-omission;  (#PCDATA)      >
+
+<!-- ================================ -->
+<!--  Graphics                        -->
+<!-- ================================ -->
+
+<!ELEMENT figure         %no-omission;  (title?)       >
+<!ATTLIST figure
+          %a.required-id;
+          %a.src;
+          %a.graphic; >
+<!ELEMENT scheme         %no-omission;  (title?)       >
+<!ATTLIST scheme
+          %a.required-id;
+          %a.src;
+          %a.graphic; >
+<!ELEMENT plate          %no-omission;  (title?)       >
+<!ATTLIST plate
+          %a.required-id;
+          %a.src;
+          %a.graphic; >
+<!ELEMENT chart          %no-omission;  (title?)       >
+<!ATTLIST chart
+          %a.required-id;
+          %a.src;
+          %a.graphic; >
+<!ELEMENT ugraphic       %omit-end-tag;  EMPTY         >
+<!ATTLIST ugraphic
+          %a.required-id;
+          %a.src;
+          src2           ENTITY         #IMPLIED
+          %a.graphic;
+          display       (displayed|inline)    #IMPLIED >
+<!ELEMENT icgraphic      %omit-end-tag;  EMPTY         >
+<!ATTLIST icgraphic
+          %a.required-id;
+          %a.src;
+          %a.graphic; >
+
+<!-- ================================ -->
+<!--  Floating boxes                  -->
+<!-- ================================ -->
+
+<!ELEMENT box           %no-omission;  (section)          >
+<!ATTLIST box
+          %a.required-id;
+          height        NMTOKEN                  #IMPLIED
+          width         NMTOKEN                  #IMPLIED
+          tint          NMTOKEN                  #IMPLIED
+          pos           (fixed)                  #IMPLIED >
+
+<!-- ================================== -->
+<!--  Links to supplementary data, etc. -->
+<!-- ================================== -->
+
+<!ELEMENT suppinf        %no-omission; (link)          >
+<!ELEMENT fulltext       %no-omission; (link)          >
+<!-- articleref is used to point to the article, e.g. for generating index 
+entries -->
+<!ELEMENT articleref     %no-omission; (link)          >
+
+<!-- ================================ -->
+<!--  Equations                       -->
+<!-- ================================ -->
+
+<!ELEMENT equation       %no-omission;  (no?,(eqntext|ugraphic)) >
+<!ATTLIST equation %a.required-id; >
+<!-- 3.4: eqntext can now be a sequence of 'paragraphs' representing multi-line
+     equations: -->
+<!ELEMENT eqntext        %no-omission;  %m.simple-text-or-paras;>
+<!ATTLIST eqntext
+          display       (displayed|inline)    #IMPLIED >
+
+<!-- ================================ -->
+<!--  Compounds                       -->
+<!-- ================================ -->
+
+<!ELEMENT compoundgrp    %no-omission;  (compound*)    >
+<!-- need to refine content model for compound definitions? -->
+<!ELEMENT compound       %no-omission;  (compoundref*)>
+<!ATTLIST compound %a.required-id; >
+<!ELEMENT compname       %no-omission;  %m.text-or-link; >
+
+<!-- ================================ -->
+<!--  Tables                          -->
+<!-- ================================ -->
+
+<!-- table-entry acts as a 'cover element' so that inline tables
+     and 'tables-as-graphics' can appear in a single number sequence.
+     It takes a title element, which is to be used in preference
+     to <table><title> to allow numbering-through of 'real' and
+     'graphic' tables:  -->
+<!ELEMENT table-entry    %no-omission;  (title?,subtitle?,(table|ugraphic)) >
+<!ATTLIST table-entry %a.required-id; >
+
+<!-- local copy of CALS DTD fragment, with extra (standard CALS) <tfoot>
+     element type, and (RSC-specific) INDENT attribute: -->
+
+<!-- tfoot and subfields removed from here; tfoot redeclared in the CALS 
+tbl.hdft.mdl pe
+     so it has the same content model as thead:
+**** GONE ****
+<!ELEMENT tfoot         %no-omission; (title?,colspec*,(tnotes|tfnotes)*) >
+<!ELEMENT tnotes        %no-omission; (row+|p+)           >
+<!ELEMENT tfnotes       %no-omission; (tfnote)+           >
+<!ELEMENT tfnote        %no-omission; (row+|p+)           >
+**** GONE ****
+-->
+
+<!-- header/footer model changed to full CALS form: -->
+<!ENTITY % tbl.hdft.mdl                "(colspec*,row+)">
+
+<!-- yesorno pre-declared here so SPANSPEC can use it: -->
+<!-- no if zero(s),yes if any other digits value -->
+<!ENTITY % yesorno 'CDATA'  >
+<!-- titles can't be set to null - but should use higher-level title instead: 
+-->
+<!ENTITY % titles "title?,subtitle?">
+<!ENTITY % tbl.table-main.mdl "tgroup+">
+<!-- was the following, but tfoot has its own place after thead:
+<!ENTITY % tbl.table-main.mdl "tgroup+,tfoot?">
+-->
+<!-- redefine the table attributes to include ORIENT (from the full
+     CALS table model): -->
+<!ENTITY % tbl.table.att        "
+           orient      (port|land)     #IMPLIED
+           pgwide      %yesorno;       #IMPLIED ">
+<!-- don't have an exception here (for XML's sake): table name isn't present in 
+the cell
+     content model anyway -->
+<!ENTITY % tbl.table.excep "">
+<!-- tgroup has tfoot (CALS format) in addition to interoperable subset: -->
+<!-- can't do this in XML (declares two element types in one go):
+<!ENTITY % tbl.hdft.name        "(thead|tfoot)">
+-->
+<!ELEMENT tfoot %no-omission; %tbl.hdft.mdl; >
+<!ENTITY % tbl.tgroup.mdl "colspec*,thead?,tfoot?,tbody">
+
+<!-- this supports the RSC indent attribute: -->
+<!ENTITY % tbl.entry.att "
+        indent   NMTOKEN   #IMPLIED" >
+<!-- paracon is the content model for table cells.  This allows anything that 
+can
+     occur within a paragraph. (3.6: now redundant) 
+<!ENTITY % paracon "%m.table-cell-text;">
+-->
+<!-- 3.6: now declare tbl.entry.mdl directly, since it is no longer 'para 
+	content' as per the CALS default: -->     
+<!ENTITY % tbl.entry.mdl "%m.table-cell-text;" >
+
+<!ENTITY % calstbls PUBLIC "-//OASIS//DTD Exchange Table Model 19960430//EN" 
+"calstab1.dtd">
+%calstbls;
+
+<!-- ================================ -->
+<!--  References                      -->
+<!-- ================================ -->
+
+<!-- 3.4: all references given m.emph content instead of #PCDATA -->
+
+<!ELEMENT compoundref    %no-omission;  %m.emph;     >
+<!ATTLIST compoundref %a.idrefs; >
+<!ELEMENT textref        %no-omission;  %m.emph;       >
+<!ATTLIST textref %a.idrefs; >
+<!ELEMENT figref         %no-omission;  %m.emph;       >
+<!ATTLIST figref %a.idrefs; >
+<!ELEMENT schemref       %no-omission;  %m.emph;       >
+<!ATTLIST schemref %a.idrefs; >
+<!ELEMENT plateref       %no-omission;  %m.emph;       >
+<!ATTLIST plateref %a.idrefs; >
+<!ELEMENT chartref       %no-omission;  %m.emph;       >
+<!ATTLIST chartref %a.idrefs; >
+<!ELEMENT eqnref         %no-omission;  %m.emph;       >
+<!ATTLIST eqnref %a.idrefs; >
+<!ELEMENT boxref         %no-omission;  %m.emph;       >
+<!ATTLIST boxref %a.idrefs; >
+<!ELEMENT tableref       %no-omission;  %m.emph;       >
+<!ATTLIST tableref %a.idrefs; >
+<!ELEMENT citref         %no-omission;  %m.emph;       >
+<!ATTLIST citref %a.idrefs;
+                 position (super|baseline) #IMPLIED    >
+<!ELEMENT fnoteref       %no-omission;  %m.emph;       >
+<!ATTLIST fnoteref %a.idrefs; >
+<!ELEMENT affref         %no-omission;  %m.emph;       >
+<!ATTLIST affref %a.idrefs; >
+
+<!-- ================================ -->
+<!--  Emphasis                        -->
+<!-- ================================ -->
+
+<!-- ... by font changes: -->
+<!ELEMENT roman    %no-omission;  %m.simple-text;        >
+<!ELEMENT it       %no-omission;  %m.simple-text;        >
+<!ELEMENT bo       %no-omission;  %m.simple-text;        >
+<!ELEMENT bi       %no-omission;  %m.simple-text;        >
+<!ELEMENT scp      %no-omission;  %m.simple-text;        >
+<!-- sansserif added 1.4.1999: -->
+<!ELEMENT sansserif %no-omission;  %m.simple-text;       >
+
+<!-- ... by marks and placement shifts: -->
+<!ELEMENT ul       %no-omission;  %m.simple-text;        >
+<!ELEMENT sup      %no-omission;  %m.simple-text;        >
+<!ELEMENT inf      %no-omission;  %m.simple-text;        >
+
+<!-- ================================ -->
+<!--  Other                           -->
+<!-- ================================ -->
+
+<!ELEMENT head           %no-omission;  %m.text-or-paras;>
+<!-- no content model changed from #PCDATA for version 3.6: -->
+<!ELEMENT no             %no-omission;  %m.simple-text;  >
+<!ELEMENT p              %no-omission;  %m.para-text;    >
+
+<!-- ================================ -->
+<!--  Editorial comments:             -->
+<!-- ================================ -->
+
+<!-- editnote element added RBL 13.5.1998:           -->
+<!ELEMENT editnote       %no-omission;  (note,who,date)>
+<!ATTLIST editnote
+          %a.type; >
+<!ELEMENT who            %no-omission;  %m.simple-text;  >
+
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--      JOURNAL INFORMATION       -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+
+<!-- ================================ -->
+<!--                                  -->
+<!-- ================================ -->
+
+<!ELEMENT journal        %no-omission;  %m.journal;    >
+<!ATTLIST journal %a.required-id; >
+<!ELEMENT sercode        %no-omission;  (#PCDATA)      >
+<!ELEMENT byline         %no-omission;  %m.simple-text;  >
+<!ATTLIST byline %a.type; >
+<!ELEMENT logo           %no-omission;  (ugraphic)       >
+<!ATTLIST logo %a.type; >
+<!ELEMENT publisher      %no-omission;  (%m.org;)      >
+<!ATTLIST publisher %a.id; >
+<!ELEMENT issn           %no-omission;  (#PCDATA)      >
+<!-- 3.5: type attribute added: -->
+<!ATTLIST issn %a.type; >
+<!-- 3.5: coden added to journal contents: -->
+<!ELEMENT coden          %no-omission;  (#PCDATA)      >
+<!ELEMENT board          %no-omission;  ((link) |
+                                         (title?, (group|member)*))>
+<!ATTLIST board %a.id; >
+<!ELEMENT group          %no-omission;  (title?, member*)>
+<!ELEMENT member         %no-omission;  (role?, person*)>
+<!ELEMENT role           %omit-end-tag; %m.simple-text;   >
+<!ELEMENT info           %no-omission;  (link|(section+))>
+<!-- the types of information could be an open-ended list -->
+<!ATTLIST info %a.id;
+               type     (author|illustration|distribution) 'author'
+               level    (full|brief|paragraph)    'full' >
+<!-- include grants information as 'adverts' -->
+<!ELEMENT advert         %no-omission;  (link|(section+))>
+<!ATTLIST advert %a.id;
+                 %a.type; >
+<!ELEMENT cpyrt          %no-omission;  %m.simple-text;  >
+<!ELEMENT confgrp        %no-omission;  (conference*)    >
+<!ATTLIST confgrp %a.id; >
+
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--      VOLUME INFORMATION        -->
+                 <!--                                -->
+                 <!--  Information relating to a     -->
+                 <!--  single volume of a journal.   -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!ELEMENT volume         %no-omission;  ((link) |
+                                         (journalref, volumeno, date, issue*))>
+<!ATTLIST volume %a.required-id; >
+<!ELEMENT journalref     %no-omission;  %m.journal;    >
+<!ELEMENT volumeno       %no-omission;  (#PCDATA)      >
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--       ISSUE INFORMATION        -->
+                 <!--                                -->
+                 <!--  Information relating to a     -->
+                 <!--  single issue of a journal.    -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!-- ================================ -->
+<!--     ISSUE-RELATED ENTITIES       -->
+<!-- ================================ -->
+
+<!ENTITY % issue-front-and-back-matter
+           "(board|issue-toc|index|advert|info|confgrp)*">
+
+<!-- ================================ -->
+<!--          ISSUE ELEMENTS          -->
+<!-- ================================ -->
+
+<!ELEMENT issue          %no-omission;  ((link) |
+                                         (journalref?, volumeref?,
+                                          issueno, issueid?,
+                                          issue-front?,
+                                          article*,
+                                          issue-back?))>
+<!ATTLIST issue %a.required-id;
+                %a.dtd;
+                %a.type; >
+
+<!ELEMENT volumeref      %no-omission;  ((link) |
+                                         (journalref?, volumeno, date?, 
+issue*))>
+<!ELEMENT issueno        %no-omission;  (#PCDATA)      >
+<!ELEMENT issueid        %no-omission;  (#PCDATA)      >
+<!ELEMENT issue-front    %no-omission;  (%issue-front-and-back-matter;)>
+<!ELEMENT issue-back     %no-omission;  (%issue-front-and-back-matter;)>
+<!ELEMENT issue-toc      %no-omission;  (toc-head?, toc-entry*)>
+<!-- toc-head may require a more complex structure: see examples -->
+<!ELEMENT toc-head       %no-omission;  %m.simple-text;  >
+<!ELEMENT toc-entry      %no-omission;  %m.text-or-paras;>
+<!-- this index structure may not be necessary: the typesetter may generate it
+     post-SGML -->
+<!ELEMENT index          %no-omission;  (head?, index-entry*)>
+<!ELEMENT index-entry    %no-omission;  (value, articleref+)>
+<!ELEMENT value          %no-omission;  (#PCDATA)      >
+
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--      ARTICLE INFORMATION       -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!ELEMENT article        %no-omission; ((link) |
+                                        (art-admin?, published*, art-links?,
+                                         art-front?, art-body?, appmat?, 
+art-back?))>
+<!-- The TYPE attribute is used to hold the 'class' of article (feature, 
+communication, etc.)
+     By default it is an 'ordinary' article for the journal in question.
+     3.5: 'background' attribute added: -->
+<!ATTLIST article
+                  %a.dtd;
+                  price-code (free|premium|review) 'free'
+                  %a.type;
+                  %a.background;>
+<!ELEMENT art-admin      %no-omission; (ms-id,doi?,pii?,sici?,office?,
+                                        received*,date*,admin-event*) >
+<!ELEMENT ms-id          %no-omission;  (#PCDATA)      >
+<!ELEMENT doi            %no-omission;  (#PCDATA)      >
+<!ELEMENT pii            %no-omission;  (#PCDATA)      >
+<!ELEMENT sici           %no-omission;  (#PCDATA)      >
+<!ELEMENT office         %no-omission;  (#PCDATA)      >
+<!ELEMENT received       %no-omission;  (city?,date)   >
+<!-- admin-event added in 3.4 as a placeholder for RSC management information: 
+-->
+<!ELEMENT admin-event    %no-omission;  
+(#PCDATA|agent|address|date|admin-event)* >
+<!ATTLIST admin-event %a.type; >
+<!-- agent added in 3.4 to encode a person playing a role in a management 
+event: -->
+<!ELEMENT agent          %no-omission;  (person)       >
+<!ATTLIST agent %a.role;  >
+<!-- need to provide structure here that can form a self-contained citation: -->
+
+<!ELEMENT published      %no-omission; 
+((journalref,volumeref?,issueref?,pubfront?)|citext) >
+<!ATTLIST published %a.type;
+                    %a.pointer; >
+<!ELEMENT pubfront       %no-omission;  (fpage,lpage?,no-of-pages,date) >
+<!ELEMENT fpage          %no-omission;  (#PCDATA)         >
+<!ELEMENT lpage          %no-omission;  (#PCDATA)         >
+<!ELEMENT no-of-pages    %no-omission;  (#PCDATA)         >
+<!ELEMENT issueref       %no-omission;  ((link) |
+                                         (journalref?, volumeref?,
+                                          issueno, issueid?,
+                                          issue-front?,
+                                          article*,
+                                          issue-back?))>
+<!ELEMENT art-links      %no-omission;  (suppinf|fulltext)* >
+
+<!-- ================================ -->
+<!--     ARTICLE FRONT MATTER         -->
+<!-- ================================ -->
+
+<!-- 3.5: authgrp now optional: -->
+<!ELEMENT art-front       %no-omission; ((link)|(titlegrp,authgrp?,conference?,
+                                                 
+art-toc-entry?,arttoc?,dedicate?,biography*,
+                                                 abstract*,subject*,keyword*)) >
+
+<!ELEMENT titlegrp        %no-omission; (title+)           >
+<!-- 23.1.2001 rbl: affiliation can't be mandatory for e.g. news item authors: -->
+<!ELEMENT authgrp         %no-omission; (author+,aff*)     >
+<!ELEMENT author          %no-omission; (person,footnote*) >
+<!ATTLIST author
+          aff IDREFS #IMPLIED
+          key CDATA  #IMPLIED
+          role (princ|corres) #IMPLIED >
+<!-- 3.5: org made repeatable; org and address repeatable as a pair: -->
+<!ELEMENT aff             %no-omission;  ((org*, address)+, 
+(phone|fax|email|url)*) >
+<!ATTLIST aff %a.required-id; >
+<!ELEMENT art-toc-entry   %no-omission;  (ictext?,icgraphic?) >
+<!ELEMENT ictext          %no-omission;  %m.text-or-paras; >
+<!ELEMENT arttoc          %no-omission;  (toc-head?, toc-entry*)>
+<!ELEMENT dedicate        %no-omission;  %m.text-or-paras; >
+<!ELEMENT abstract        %no-omission;  %m.text-or-paras; >
+<!-- 3.5: subject element type added, to allow broad categorisation of 
+articles: -->
+<!ELEMENT subject         %no-omission;  %m.simple-text;   >
+<!ATTLIST subject %a.type; >
+<!ELEMENT keyword         %no-omission;  %m.simple-text;   >
+<!ELEMENT pubname         %no-omission;  %m.simple-text;   >
+<!-- ADDRESS removed from LOCATION contents; ADDRELT added; order relaxed.
+     RBL, 13.5.1998:                                                     -->
+<!ELEMENT location           %no-omission;  
+(city|postcode|state|country|addrelt)+  >
+
+<!-- ================================ -->
+<!--     ARTICLE BODY MATTER          -->
+<!-- ================================ -->
+
+<!ELEMENT art-body        %no-omission; (section+|news-section+)     >
+
+<!ELEMENT section         %no-omission; 
+(no?,title?,(p|%inter-para-elts;)*,deflist*,subsect1*)       >
+<!ATTLIST section %a.id;
+                  %a.type; >
+<!ELEMENT subsect1        %no-omission; 
+(no?,title?,(p|%inter-para-elts;)*,deflist*,subsect2*)       >
+<!ATTLIST subsect1 %a.id; >
+<!-- version 3.6: citref added after title: -->
+<!ELEMENT subsect2        %no-omission; 
+(no?,title?,citref*,(p|%inter-para-elts;)*,deflist*,subsect3*)       >
+<!ATTLIST subsect2 %a.id; >
+<!-- version 3.6: citref added after title: -->
+<!ELEMENT subsect3        %no-omission; 
+(no?,title?,citref*,(p|%inter-para-elts;)*,deflist*,subsect4*)>
+<!ATTLIST subsect3 %a.id; >
+<!ELEMENT subsect4        %no-omission; 
+(no?,title?,(p|%inter-para-elts;)*,deflist*,subsect5*)       >
+<!ATTLIST subsect4 %a.id; >
+<!ELEMENT subsect5        %no-omission; 
+(no?,title?,(p|%inter-para-elts;)*,deflist*,subsect6*)       >
+<!ATTLIST subsect5 %a.id; >
+<!ELEMENT subsect6        %no-omission; 
+(no?,title?,(p|%inter-para-elts;)*,deflist*)>
+<!ATTLIST subsect6 %a.id; >
+<!ELEMENT deflist         %no-omission; (head?,def+)   >
+<!ELEMENT def             %no-omission; (term,dd)      >
+<!ELEMENT term            %no-omission; %m.simple-text;  >
+<!ELEMENT dd              %no-omission; %m.text-or-paras;>
+
+<!-- 3.5: 'news section' and related element types added: -->
+<!ELEMENT news-section    %no-omission; (title?, 
+(news-section|news-article|news-item|book-review|advert|info|confgrp|p|%inter-para-elts;)*) 
+>
+<!ATTLIST news-section %a.id;
+                       %a.type; >
+<!ELEMENT news-article    %no-omission; (art-front?, art-body?, appmat?, 
+art-back?) >
+<!ATTLIST news-article %a.id;
+                       %a.type; >
+<!ELEMENT news-item       %no-omission; 
+(title?,authgrp?,abstract?,(p|%inter-para-elts;)*,footer?)>
+<!ATTLIST news-item %a.id; >
+<!ELEMENT book-review     %no-omission; 
+(citation,authgrp?,(p|%inter-para-elts;)+) >
+<!ELEMENT footer          %no-omission; (p+)>
+
+ 
+<!-- ================================ -->
+<!--     ARTICLE BACK MATTER          -->
+<!-- ================================ -->
+
+<!ELEMENT appmat          %no-omission; (appendix)+    >
+<!ELEMENT appendix        %no-omission; (no?,section+) >
+<!ATTLIST appendix %a.id; >
+<!ELEMENT art-back        %no-omission; (ack?,biblist,compoundgrp,section*)>
+<!-- fnotes removed 14.5.1999:
+<!ELEMENT fnotes          %no-omission; (footnote)+    >
+-->
+<!ELEMENT ack             %no-omission; %m.text-or-paras;>
+<!-- 3.5: optional title attribute: can include a 'section number': -->
+<!ATTLIST ack
+          title  CDATA #IMPLIED >
+<!ELEMENT biblist         %no-omission; (#PCDATA|citgroup)* >
+<!-- title attribute added for non-standard titles.  3.5: can include a
+     'section number': -->
+<!ATTLIST biblist
+          title  CDATA #IMPLIED >
+
+<!-- ================================ -->
+<!--  BIBLIST sub-elements            -->
+<!-- ================================ -->
+
+<!ELEMENT citgroup        %no-omission; 
+(no?,(citext|journalcit|citation|citgroup)+, commentary?) >
+<!ATTLIST citgroup %a.required-id; >
+<!-- journalcit added RBL, 2.4.1999 to deal with 'simple' journal article
+     citations.  Anything that doesn't match this model can go as a
+     CITATION (including non-standard journal article citations).
+     7.4.2000: link made into an 'optional extra', so that citations
+     can be supported by e.g. a DOI and a COI
+     28.8.2001: year and pages made optional, to allow for in-publication
+     citations; optional arttitle added (version 3.6)  -->
+<!ELEMENT journalcit      %no-omission; ((citauth+,arttitle?,title,year?,volumeno?,
+                                          issueno?,pages?,jnltrans?),link*) >
+<!-- Possible model for book citations, if it is decided to mark these up 
+specially:
+<!ELEMENT bookcit         %no-omission; 
+(citauth+,in?,title+,editor*,citpub?,pubplace*,year?,biblscope?)>
+     Notes:
+       - 'in' is needed for the many books that quote "A and B in ....".  Could 
+be empty;
+       - title should use the type attribute to distinguish non-italic 
+(descriptive) titles;
+       - biblscope should contain 'simple text' to allow e.g. italic within it.
+     rbl 19.5.1999
+  -->
+<!ELEMENT citation        %no-omission; %m.citation; >
+<!ATTLIST citation %a.id;
+                   %a.type; >
+<!-- commentary added to support 'star rating' of citations: -->
+<!ELEMENT commentary      %m.simple-text; >
+<!ATTLIST commentary
+		rating CDATA #IMPLIED>
+<!-- new CITAUTH element type contains simpler substructure, or a link
+     to a person authority: -->
+<!ELEMENT citauth         %no-omission; ((fname?,surname)|link) >
+<!ELEMENT editor          %no-omission; %m.simple-text;>
+<!ELEMENT citpub          %no-omission; %m.simple-text;>
+<!ELEMENT pubplace        %no-omission; %m.simple-text;>
+<!ELEMENT pages           %no-omission; (fpage,lpage?)>
+<!ELEMENT biblscope       %no-omission; %m.simple-text;>
+<!-- CITELT was provided as a generic analysed citation component, then
+     removed in favour of mixed content within CITATION:
+<!ELEMENT citelt          %no-omission; %m.simple-text;>
+<!ATTLIST citelt  %a.type; >
+-->
+<!ELEMENT jnltrans        %no-omission; (sertitle?,year?,volumeno?,pages*) >
+<!ELEMENT trans           %no-omission; %m.citation; >
+<!-- 3.5: content model for trans made the same as that for citation.
+          Previously was:
+<!ELEMENT trans           %no-omission; 
+((sertitle|year|volumeno|pages)*|citext) >
+-->
+<!-- CITEXT made into an alternative for both CITATION and TRANS.  Should only 
+be used
+     for text which is NOT a citation at all.  RBL, 13.5.1998:
+     28.2.2001: (version 3.6) content model altered from %m.simple-text;
+  -->
+<!ELEMENT citext          %no-omission; %m.simple-text-or-paras;>
+
+
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--       PERSON INFORMATION       -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!ELEMENT person         %no-omission;  ((link) | (persname+, biography?, 
+address*))>
+<!ATTLIST person %a.id; >
+<!ELEMENT persname       %no-omission;  (qualifier?,fname?,surname,qualifier?)>
+<!ELEMENT fname          %no-omission;  %m.simple-text;>
+<!ELEMENT surname        %no-omission;  %m.simple-text;>
+<!ELEMENT qualifier      %no-omission;  %m.simple-text;>
+<!ELEMENT biography      %no-omission;  (link|(section+))>
+<!ATTLIST biography %a.id; >
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--    ORGANISATION INFORMATION    -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!ELEMENT org            %no-omission;  (%m.org;)>
+<!ATTLIST org %a.id; >
+<!ELEMENT orgname        %no-omission;  (nameelt+)   >
+<!ELEMENT nameelt        %no-omission;  %m.simple-text;>
+<!ATTLIST nameelt %a.type; >
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--          ADDRESSES             -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!ELEMENT address  %no-omission;  ((link) | (%m.address;))>
+<!ATTLIST address %a.id;
+                  %a.type; >
+<!ELEMENT city     %no-omission;  (#PCDATA)            >
+<!ELEMENT postcode %no-omission;  (#PCDATA)            >
+<!ELEMENT state    %no-omission;  (#PCDATA)            >
+<!ELEMENT country  %no-omission;  (#PCDATA)            >
+<!ELEMENT addrelt  %no-omission;  %m.simple-text;      >
+<!ATTLIST addrelt %a.type; >
+<!ELEMENT phone    %no-omission;  (#PCDATA)            >
+<!ELEMENT fax      %no-omission;  (#PCDATA)            >
+<!ELEMENT email    %no-omission;  (#PCDATA)            >
+<!ELEMENT url      %no-omission;  (#PCDATA)            >
+<!-- 3.5: url given a 'url' attribute so that its content can be
+		something else: -->
+<!ATTLIST url 
+          url CDATA #IMPLIED >
+<!-- 3.5: <a> element type added as a 'wrapper' for links where it's
+		an image which is to be 'clicked': -->
+<!ELEMENT a        %no-omission;  (%inter-para-elts;)*    >
+<!ATTLIST a %a.src; >
+
+                 <!-- ****************************** -->
+                 <!--                                -->
+                 <!--     CONFERENCE INFORMATION     -->
+                 <!--                                -->
+                 <!-- ****************************** -->
+
+<!ELEMENT conference      %no-omission;  
+(no?,(confname|daterange|location|contact)*)>
+<!ATTLIST conference %a.id; >
+<!ELEMENT confname        %no-omission;  %m.simple-text;  >
+<!ELEMENT contact  %no-omission;  (person|address|phone|fax|email|url)* >
+<!ATTLIST contact %a.id; >

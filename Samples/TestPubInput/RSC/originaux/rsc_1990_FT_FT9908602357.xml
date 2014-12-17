@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE article SYSTEM "http://www.rsc.org/dtds/rscart36.dtd">
+<article dtd="RSCPA3.6" type="ART" price-code="free">
+<art-admin>
+<ms-id>FT9908602357</ms-id>
+<doi>10.1039/FT9908602357</doi>
+</art-admin>
+<published type="print">
+<journalref>
+<link>FT</link>
+</journalref>
+<volumeref>
+<link>86</link>
+</volumeref>
+<issueref>
+<link>13</link>
+</issueref>
+<pubfront>
+<fpage>2357</fpage>
+<lpage>2360</lpage>
+<no-of-pages>4</no-of-pages>
+<date>
+<year>1990</year>
+</date>
+</pubfront>
+</published>
+<published type="subsyear">
+<journalref>
+<link>FT</link>
+</journalref>
+<pubfront>
+<fpage>
+</fpage>
+<lpage>
+</lpage>
+<no-of-pages>
+</no-of-pages>
+<date>
+<year>1990</year>
+</date>
+</pubfront>
+</published>
+<art-front>
+<titlegrp>
+<title>A theoretical study of the infrared absorption spectra of large water clusters</title>
+</titlegrp>
+<authgrp>
+<author>
+<person>
+<persname>
+<fname>Ian P.</fname>
+<surname>Buffey</surname>
+</persname>
+</person>
+</author>
+<author>
+<person>
+<persname>
+<fname>William Byers</fname>
+<surname>Brown</surname>
+</persname>
+</person>
+</author>
+<author>
+<person>
+<persname>
+<fname>H. Alastair</fname>
+<surname>Gebbie</surname>
+</persname>
+</person>
+</author>
+</authgrp>
+<abstract>
+<p>We report the results of a molecular-dynamics study of a few large water clusters, in particular (H<inf>2</inf>O)<inf>20</inf>, whose infrared spectra are of interest in connection with atmospheric absorption phenomena. The molecules are assumed to be rigid and to interact with the MCY pair potential according to classical mechanics. The velocity and dipole autocorrelation functions are obtained by computer simulation at various temperatures and the corresponding power spectra computed as functions of frequency. The results show that the clusters undergo some kind of transition (melting) around 200 K, and that dramatic changes occur in the absorption spectra between 0 K and room temperatures. It is concluded that the results obtained so far support the idea that the observed anomalous absorption of far-infrared radiation by the atmosphere could be due to large &lsquo;liquid&rsquo; water clusters.</p>
+</abstract>
+</art-front>
+<art-body>
+<section type="PDFExtract">
+<title>
+</title>
+<p> J. CHEM. SOC. FARADAY TRANS., 1990,86(13), 2357-2360 A Theoretical Study of the Infrared Absorption Spectra of Large Water Clusters Ian P. Buffey and William Byers Brown* Department of Chemistry, University of Manchester, Manchester M 13 9PL H. Alastair Gebbie Department of Electrical Engineering, Imperial College, London SW7 We report the results of a molecular-dynamics study of a few large water clusters, in particular (H,O),, , whose infrared spectra are of interest in connection with atmospheric absorption phenomena. The molecules are assumed to be rigid and to interact with the MCY pair potential according to classical mechanics. The velocity and dipole autocorrelation functions are obtained by computer simulation at various temperatures and the cor- responding power spectra computed as functions of frequency. </p>
+<p>The results show that the clusters undergo some kind of transition (melting) around 200 K, and that dramatic changes occur in the absorption spectra between 0 K and room temperatures. It is concluded that the results obtained so far support the idea that the observed anomalous absorption of far-infrared radiation by the atmosphere could be due to large &lsquo; liquid &rsquo; water clusters. To account for infrared and millimetre-wave absorption in the atmosphere, which has been extensively studied for many years,1-12 it is necessary to invoke the presence of vapour- phase water species in addition to monomeric H20 mol-ecules.l l The only species with thermodynamic properties such that its equilibrium concentration is significant under atmospheric conditions is the dimer, but both the spectra and acoustic behaviour actually observed over a range of tem- peratures point to the existence of larger clusters (H20), whose concentrations are much greater than the equilibrium Boltzmann values. </p>
+<p>The existence of such metastable species has long been known from the supersaturation produced in cloud chambers by adiabatic expansion and by ultraviolet photon^,&apos;^ but their recognition in the atmosphere is compa- ratively recent.&rdquo; Persuasive arguments for considering clusters composed of ca. 20 and 60 monomer units led to the theoretical investiga- tion of semi-rigid molecular models of these and intermediate sizes using molecular mechanics (MM).lL16 Calculations of the intermolecular vibration modes showed that none of the smaller stable semi-rigid clusters was predicted to have absorption wavelengths in the sub-millimetre region as required by observation. </p>
+<p>Only the 60-mer with an icosahedral structure had eigenwavenumbers less than 10 cm-&rsquo;,but the predicted dipole intensities were too small to account for the observations. 15*16 The purpose of the present paper is to report the results of a molecular dynamics (MD) computer simulation of the intermolecular absorption spectra&rsquo; assuming that classical mechanics is adequate to study the low-wavenumber region (&amp;lo0 cm-&rsquo;) of major interest. Since most general purpose MD programs are intended for bulk simulation and assume periodic boundary condition^,&apos;^ a new program for clusters was written incorporating the MCY potentialI8 to model the interactions of the water molecules. </p>
+<p>Numerous MD runs were performed for clusters of different sizes at a series of increas- ing temperatures, and theoretical absorption spectra were calculated by Fourier-transforming the dipole and velocity autocorrelation functions. Near absolute zero the MD spectra closely resemble the MM normal modes, and at all temperatures the results for (H,O),, are very similar to those of Plummer and Chen,&rdquo; providing checks on our results. As the temperature increases to that of the experimental obser- vations (260-300 K), all the clusters studied appear to &lsquo;melt&rsquo;, and the dominant absorption moves to lower frequencies (0-100 cm-&rsquo;). </p>
+<p>Indeed, many of the calculated spectra have several low-frequency, high-intensity peaks, which is a very exciting result supporting the hypothesis that the observed anomalous absorption is due to large &lsquo;liquid&rsquo; water clusters. Results and Discussion Molecular-dynamics Calculations A program called MDH20 was written to perform the MD calculations. Readily available programs for MD calculations suffer from two drawbacks. (i) They are for liquid simulations. This makes them inefficient to use for cluster simulations, where there are no periodic boundary conditions. (ii) The potential forms used are different from that of the MCY potential. The MCY potential was used for the MD calcu-lations, so that the results could be compared with those obtained by molecular mechanics.16 MDH20 uses the leap-frog algorithm for the centre-of- mass motion,20 and the rotational motion is handled by a method also described by Fincham&rdquo; which uses quaternion parameters to describe orientation space. </p>
+<p>A perennial problem with molecular-dynamics simulations is how large to make the time step between points at which coordinates and velocities are calculated. The value used in this work is 2.5 x s, which is sufficiently small to achieve energy conservation to 1 part in lo4 throughout an MD run. It is necessary to use such a small time step because the moments of inertia of the water molecule are so small. Various clusters were studied using MDH20, the general method being as follows. </p>
+<p>The initial geometry of each cluster is optimized with respect to potential energy. (These minimum-energy structures were obtained from earlier work.14) In MD terms these are structures at 0 K. The cluster is then given a certain amount of kinetic energy such that its temperature after equilibrium is ca. 12.5 K. Next the cluster is subjected to a series of cycles in which it is heated by ca. 12.5 K and then allowed to equilibrate (ca. 1000 time steps are required for equilibration). After equilibration the motion is allowed to proceed for ca. 40000 time steps while the velo- cities and coordinates are recorded for analysis. In principle the MD runs at each temperature should be long enough for all the hydrogen bonds in the cluster to be broken and reformed. In practice this is too time-consuming. </p>
+<p>At low tem- peratures the cluster geometry at the end of a run is almost unchanged at least as far as the connectivity is concerned.   2358 370 4320 h 2 70 s 220 170 120 -350 -300 -250 -200 -i50 energy/kJ mol-&apos; Fig. 1. Plot of temperature (K) us. total energy (kJ per mol of cluster) for a 1Zmolecule cluster (H,O),,, showing the break-up of the cluster at temperatures above ca. 270 K. The dodecahedra1 structure studied by Plummer and Chen retained its integrity up to 315 K. A similar temperature was reached in this work. As the clusters reach these high tem- peratures they begin to break up. To begin with this involves the breaking of hydrogen bonds only ;molecules do not begin to evaporate from the cluster until most of the original struc- ture has been destroyed. </p>
+<p>When hydrogen bonds break the cluster is effectively cooled, as seen in fig. 1. Temperature Dependence of Cluster Energy Plummer and ChenIg produced a plot of total cluster energy against the internal kinetic temperature for the 20-molecule cluster they studied. The equivalent plot of the results of this work is shown in fig. 2 and is very similar to that obtained by Plummer and Chen. The slope of the graph is the heat capac- ity of the cluster. Plummer and Chen ascribed the change in slope at ca. 200 K to a kind of melting. They obtained a heat capacity of 46 J K-l mol-&apos; per molecule for temperatures below the phase change at 200 K and 109 J K-&apos; mol-&apos; per molecule above it. </p>
+<p>The corresponding values deduced from fig. 2 are 44.2 and 101. This agreement is remarkable, given that Plummer and Chen did not assume that the water mol- ecules were rigid but included the internal vibrations in their model, and used a central force pair potential which is signifi- cantly different in form from the MCY potential. In this work clusters of 12 and 35 molecules were also heated from low to high temperatures. These clusters undergo some kind of change at ca. 205 and 230 K, respectively, but the nature of the change is not so clear (see fig. 1and 3). Autocorrelation Functions and Power Spectra The main reason for carrying out the MD simulations was to calculate the power spectra which are related to the absorp- J. </p>
+<p>CHEM. SOC. FARADAY TRANS., 1990, VOL. 86 -350 -400 -450 c I-E -500 z&gt;P 5 -550 -600 -65C I120 170 220 270 320 TIK Fig. 2. Plot of total cluster energy (kJ per mol of cluster) us. tem-perature (K) for a 20-molecule cluster (H,O),, ,showing &apos;melting&apos; at ca. 200 K. -750 -850 -950 c I-E 73 -1050 P c -1150 -125C -135040 80 120 160 200 240 280 T/K Fig. 3. Plot of total cluster energy (kJ per mol of cluster) us. tem-perature (K) for a 35-molecule cluster (H,O),, , showing a transition at CQ. 230 K.   J. CHEM. SOC. FARADAY TRANS., 1990, VOL. 86 tion spectra of clusters. The velocity autocorrelation function is defined as where vkt) is the speed of an atom in the cluster at time t; the angle brackets indicate that a thermodynamic average is taken. </p>
+<p>This is done by averaging the right-hand side of eqn (1) over several time origins. The frequency distribution power spectrum is given by f(o) = ry(t)cos(ot)dt. (2) Obviously this integral cannot be calculated over an infinite time interval. The larger the upper limit of the integral, the better the calculated power spectrum approximates to the theoretical one given by eqn (2). The accuracy of the calcu- lations depends on the length of the molecular-dynamics run and the number of time origins over which eqn (1) is aver- aged. Ideally the time, T, over which y(t) is calculated should be large enough so that y(t &gt; T) is effectively zero. </p>
+<p>The intensity distribution power spectrum is calculated from the dipole autocorrelation function, which is defined as (3) where p(t) is the total cluster dipole moment at time t, and the angle brackets indicate an average over a number of time origins, as with eqn (1). In practice P(t) does not approach zero during the MD runs, so it is necessary to use a corrected dipole moment given by P&apos;W = W)-cr (4) where fi is the average dipole vector for each time origin. The intensity distribution power spectrum is given by g(o) = /?(t)cos(ot) dt. (5)r The frequency and intensity distribution spectra at low temperatures (fig. 4 and 5) are very similar to the frequency distribution histograms and line intensity spectra obtained by normal-mode analysis of the initial geometries used for the MD runs. </p>
+<p>This gives confirmation that all the calculations are being performed properly by MDH20 and the analysis programs. As the cluster&apos;s temperature increases the fre- quency distribution changes, so that most of the vibrations occur at lower frequencies (see fig. 6). The shift of the absorp- tion intensity to low frequencies is even more pronounced 0.81 % 0 100 200 300 400 500 600 700 800 900 loo0 1100 wavenumber/cm -Fig. 4. Frequency distribution power spectrum f(w) in units of the time step (0.25 fs) against wavenumber (cm-&apos;) for a 20-mer (H,O),, with an initial dodecahedra1 configuration at 12.5 K. 100 200 300 400 500 600 700 800 900 1000 1100 wavenumber/cm-&apos; Fig. </p>
+<p>5. Intensity distribution power spectrum g(w) in units of the time step against wavenumber (an-&apos;) for the 20-mer (H,O),, in fig. 3 at the same temperature, 12.5 K. (fig. 7). This shift in frequency distribution and increase in low-frequency absorption was observed in all clusters for which these calculations were performed. Another interesting feature of the intensity distribution spectra is that very high- intensity, low-frequency absorptions appear at certain tem- peratures (fig. 8), only to disappear and be replaced at higher temperatures by high-intensity absorption at different fre- quencies. The absorption shown in fig. 8 is so intense that it shows up clearly in the dipole autocorrelation function (fig. </p>
+<p>9). It is interesting to note that these high-intensity lines are 0.50o*60111 -0.101&apos;&apos; 1 &apos; " "&apos;" 0 100 200 300 400 500 600 700 800 900 loo0 1100 wavenumber/cm-&apos; Fig. 6. Frequency distribution power spectrum f(o)in units of the time step against wavenumber (cm-&apos;) for a 20-mer (H,O),, at 284.7 K. 4 2 0 -2 -44 " " " &apos; " " 0 100 200 300 400 500 600 700 800 900 10001100 wavenum ber/cm -&apos; Fig. 7. Intensity distribution power spectrum do) in units of the time step against wavenumber (cm-&apos;)for a 20-mer (H,O),, at 284.7 K.   2360 J. CHEM. SOC. FARADAY TRANS., 1990, VOL. 86 c24-1.0,22-20 -18-3 ,-10; -1 &apos; &apos; &apos; &apos; &apos; . ,100 200 300 400 500 600 7007 800 900 10001100 wavenumberfcm-&apos; Fig. 8. </p>
+<p>Intensity distribution power spectrum g(o) in units of the time step against wavenumber (cm-&apos;) for a 12-mer (H,O),, at 61.3 K, showing intense low-frequency absorption below 50 cm-&apos;. superimposed on the basic cluster spectrum, which changes only slowly as the cluster is heated. Conclusions The most important general conclusion which can be drawn from the molecular-dynamics study reported here is that it gives encouraging support to the hypothesis that the observed anomalous absorption of the atmosphere in the sub-millimetre wavelength region is due to large &apos;liquid&apos; water clusters." This study therefore supersedes the earlier molecular-mechanics work based on semi-rigid models,&apos;4*&apos; at least for low wavenumbers from 0 to 100 cm-&apos;. However, the region around 700 cm-&apos; is also of considerable interest, and here the MM results may still be the best guide to the spectra pending a proper quantum molecular-dynamics investigation. The present study is clearly a first word rather than a last as far as understanding the possibly complex pro- cesses involved in the anomalous atmospheric absorption phenomena. </p>
+<p>The quantitative aspects of the comparison between the cluster model and observations, starting with the question of cluster sizes and the mechanism by which large clusters are created under conditions when they are thermo- dynamically metastable, require further investigations. However, it is difficult to believe that the broad features of the calculated spectra depend sensitively on the approx- imations involved, such as the form of the potential, the assumption of internal rigidity etc. </p>
+<p>Among the more intrigu- ing of these broad features are the very high intensity absorp- tion peaks which appear as the temperature is raised, and then disappear again. It is tempting to regard them as typical collective non-linear phenomena and label them &apos;giant dipole resonances &apos;. -1.oJ 0 1 2 3 4 tlPS Fig. 9. Plot of dipole autocorrelation function B(t) against time (ps) for the 12-mer (H,O),, at 61.3 K from which fig. 8 is calculated. References 1 H. A. Gebbie, Phys. Rev., 1957, 107, 1194. 2 H. A. Gebbie, W. J. Burroughs, J. E. Harries and R. H. Cameron, Astrophys. J., 1968, 154,405. 3 H. A. Gebbie, W. J. Burroughs and G. </p>
+<p>R. Bird, Proc. R. SOC. (London), Ser. A, 1969,310,579. 4 A. Zavody, R. J. Emery and H. A. Gebbie, Nature (London), 1969,297,462. 5 R. A. Bohlander, H. A. Gebbie and G. W. F. Pardoc, Nature (London), 1970,228,157. 6 H. A. Gebbie, P. M. Kuhn and R. A. Bohlander, Nature (London), 1970,226,71. 7 G. G. Gimmestad and H. A. Gebbie, J. Atmos. Terr. Phys., 1976, 38, 325. 8 P. H. Moffat, R. A. Bohlander, W. R. McCrae and H. A. Gebbie, Nature (London), 1977,269,676. 9 G. G. Gimmestad, R. H. Ware, R. A. Bohlander and H. A. Gebbie, Astrophys. J., 1977, 218, 311. 10 D. T. Llewellyn Jones, R. J. Knight and H. A. Gebbie, Nature (London),1978,274,877. 11 H. A. Gebbie, Nature (London), 1982,2%, 422. 12 P. Dias Lalcaca, N. J. C. Packham and H. A. Gebbie, Znfrared Phys., 1984,24437. 13 C. T. R. Wilson, Trans. R. SOC.(London), Ser. A, 1897, 189, 265; Philos. Trans. R. SOC.(London), Part A, 1899,192,403; 193,289. 14 I. P. Buffey and W. Byers Brown, Chem. Phys. Lett., 1984, 109, 59. 15 I. P. Buffey, W. Byers Brown and H. A. Gebbie, Chem. Phys. Lett., 1988, 148, 281. 16 I. P. Buffey, Ph.D. Thesis (University of Manchester, 1988). 17 M. P. Allen and D. J. Tildesley, Computer Simulation of Liquids (Clarendon Press, Oxford, 1987). 18 0. Matsuoka, E. Clementi and Y. Yoshimine, J. Chem. Phys., 1976,61, 546. 19 P. L. M. Plummer and T. S. Chen, J. Phys. Chem., 1983, 87, 4190. 20 D. Fincham, CCPS Newsletter, 1981,2, 6. Paper 9/03658J; Received 25th August, 1989  </p>
+</section>
+</art-body>
+<art-back>
+<biblist>
+<citgroup id="cit1">
+<journalcit>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>Phys. Rev.</title>
+<year>1957</year>
+<volumeno>107</volumeno>
+<pages>
+<fpage>1194</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit2">
+<journalcit>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<citauth>
+<fname>W. J.</fname>
+<surname>Burroughs</surname>
+</citauth>
+<citauth>
+<fname>J. E.</fname>
+<surname>Harries</surname>
+</citauth>
+<citauth>
+<fname>R. H.</fname>
+<surname>Cameron</surname>
+</citauth>
+<title>Astrophys. J.</title>
+<year>1968</year>
+<volumeno>154</volumeno>
+<pages>
+<fpage>405</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit3">
+<journalcit>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<citauth>
+<fname>W. J.</fname>
+<surname>Burroughs</surname>
+</citauth>
+<citauth>
+<fname>G. R.</fname>
+<surname>Bird</surname>
+</citauth>
+<title>Proc. R. Soc. (London), Ser. A</title>
+<year>1969</year>
+<volumeno>310</volumeno>
+<pages>
+<fpage>579</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit4">
+<journalcit>
+<citauth>
+<fname>A.</fname>
+<surname>Zavody</surname>
+</citauth>
+<citauth>
+<fname>R. J.</fname>
+<surname>Emery</surname>
+</citauth>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>Nature (London)</title>
+<year>1969</year>
+<volumeno>297</volumeno>
+<pages>
+<fpage>462</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit5">
+<journalcit>
+<citauth>
+<fname>R. A.</fname>
+<surname>Bohlander</surname>
+</citauth>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<citauth>
+<fname>G. W. F.</fname>
+<surname>Pardoc</surname>
+</citauth>
+<title>Nature (London)</title>
+<year>1970</year>
+<volumeno>228</volumeno>
+<pages>
+<fpage>157</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit6">
+<journalcit>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<citauth>
+<fname>P. M.</fname>
+<surname>Kuhn</surname>
+</citauth>
+<citauth>
+<fname>R. A.</fname>
+<surname>Bohlander</surname>
+</citauth>
+<title>Nature (London)</title>
+<year>1970</year>
+<volumeno>226</volumeno>
+<pages>
+<fpage>71</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit7">
+<journalcit>
+<citauth>
+<fname>G. G.</fname>
+<surname>Gimmestad</surname>
+</citauth>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>J. Atmos. Terr. Phys.</title>
+<year>1976</year>
+<volumeno>38</volumeno>
+<pages>
+<fpage>325</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit8">
+<journalcit>
+<citauth>
+<fname>P. H.</fname>
+<surname>Moffat</surname>
+</citauth>
+<citauth>
+<fname>R. A.</fname>
+<surname>Bohlander</surname>
+</citauth>
+<citauth>
+<fname>W. R.</fname>
+<surname>McCrae</surname>
+</citauth>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>Nature (London)</title>
+<year>1977</year>
+<volumeno>269</volumeno>
+<pages>
+<fpage>676</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit9">
+<journalcit>
+<citauth>
+<fname>G. G.</fname>
+<surname>Gimmestad</surname>
+</citauth>
+<citauth>
+<fname>R. H.</fname>
+<surname>Ware</surname>
+</citauth>
+<citauth>
+<fname>R. A.</fname>
+<surname>Bohlander</surname>
+</citauth>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>Astrophys. J.</title>
+<year>1977</year>
+<volumeno>218</volumeno>
+<pages>
+<fpage>311</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit10">
+<journalcit>
+<citauth>
+<fname>D. T.</fname>
+<surname>Llewellyn Jones</surname>
+</citauth>
+<citauth>
+<fname>R. J.</fname>
+<surname>Knight</surname>
+</citauth>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>Nature (London)</title>
+<year>1978</year>
+<volumeno>274</volumeno>
+<pages>
+<fpage>877</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit11">
+<journalcit>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>Nature (London)</title>
+<year>1982</year>
+<volumeno>296</volumeno>
+<pages>
+<fpage>422</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit12">
+<journalcit>
+<citauth>
+<fname>P.</fname>
+<surname>Dias Lalcaca</surname>
+</citauth>
+<citauth>
+<fname>N. J. C.</fname>
+<surname>Packham</surname>
+</citauth>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>Infrared Phys.</title>
+<year>1984</year>
+<volumeno>24</volumeno>
+<pages>
+<fpage>437</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit13">
+<journalcit>
+<citauth>
+<fname>C. T. R.</fname>
+<surname>Wilson</surname>
+</citauth>
+<title>Trans. R. Soc. (London), Ser. A</title>
+<year>1897</year>
+<volumeno>189</volumeno>
+<pages>
+<fpage>265</fpage>
+</pages>
+</journalcit>
+<journalcit>
+<citauth>
+<fname>C. T. R.</fname>
+<surname>Wilson</surname>
+</citauth>
+<title>Philos. Trans. R. Soc. (London), Part A</title>
+<year>1899</year>
+<volumeno>192</volumeno>
+<pages>
+<fpage>403</fpage>
+</pages>
+</journalcit>
+<journalcit>
+<citauth>
+<fname>C. T. R.</fname>
+<surname>Wilson</surname>
+</citauth>
+<title>Philos. Trans. R. Soc. (London), Part A</title>
+<year>1899</year>
+<volumeno>193</volumeno>
+<pages>
+<fpage>289</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit14">
+<journalcit>
+<citauth>
+<fname>I. P.</fname>
+<surname>Buffey</surname>
+</citauth>
+<citauth>
+<fname>W.</fname>
+<surname>Byers Brown</surname>
+</citauth>
+<title>Chem. Phys. Lett.</title>
+<year>1984</year>
+<volumeno>109</volumeno>
+<pages>
+<fpage>59</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit15">
+<journalcit>
+<citauth>
+<fname>I. P.</fname>
+<surname>Buffey</surname>
+</citauth>
+<citauth>
+<fname>W.</fname>
+<surname>Byers Brown</surname>
+</citauth>
+<citauth>
+<fname>H. A.</fname>
+<surname>Gebbie</surname>
+</citauth>
+<title>Chem. Phys. Lett.</title>
+<year>1988</year>
+<volumeno>148</volumeno>
+<pages>
+<fpage>281</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit16">
+<citation type="thesis">
+<citauth>
+<fname>I. P.</fname>
+<surname>Buffey</surname>
+</citauth>, <it>Ph.D. Thesis</it>(<citpub>University of Manchester</citpub>, <year>1988</year>).</citation>
+</citgroup>
+<citgroup id="cit17">
+<citation type="book">
+<citauth>
+<fname>M. P.</fname>
+<surname>Allen</surname>
+</citauth> and <citauth>
+<fname>D. J.</fname>
+<surname>Tildesley</surname>
+</citauth>, <title>Computer Simulation of Liquids</title>(<citpub>Clarendon Press</citpub>, <pubplace>Oxford</pubplace>, <year>1987</year>).</citation>
+</citgroup>
+<citgroup id="cit18">
+<journalcit>
+<citauth>
+<fname>O.</fname>
+<surname>Matsuoka</surname>
+</citauth>
+<citauth>
+<fname>E.</fname>
+<surname>Clementi</surname>
+</citauth>
+<citauth>
+<fname>Y.</fname>
+<surname>Yoshimine</surname>
+</citauth>
+<title>J. Chem. Phys.</title>
+<year>1976</year>
+<volumeno>61</volumeno>
+<pages>
+<fpage>546</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit19">
+<journalcit>
+<citauth>
+<fname>P. L. M.</fname>
+<surname>Plummer</surname>
+</citauth>
+<citauth>
+<fname>T. S.</fname>
+<surname>Chen</surname>
+</citauth>
+<title>J. Phys. Chem.</title>
+<year>1983</year>
+<volumeno>87</volumeno>
+<pages>
+<fpage>4190</fpage>
+</pages>
+</journalcit>
+</citgroup>
+<citgroup id="cit20">
+<journalcit>
+<citauth>
+<fname>D.</fname>
+<surname>Fincham</surname>
+</citauth>
+<title>CCP5 Newsletter</title>
+<year>1981</year>
+<volumeno>2</volumeno>
+<pages>
+<fpage>6</fpage>
+</pages>
+</journalcit>
+</citgroup>
+</biblist>
+<compoundgrp>
+</compoundgrp>
+</art-back>
+</article>
+
