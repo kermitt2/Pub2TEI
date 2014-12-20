@@ -7,7 +7,10 @@
 
     <!-- +++++++++++++++ Dates ++++++++++++++++ -->
 
-    <!-- Transforming a fragmented date into an ISO one -->
+
+    <!-- Transforming a fragmented date into an ISO one
+         ***********************************************
+    -->
     <xsl:template name="makeISODateFromComponents">
         <xsl:param name="oldDay"/>
         <xsl:param name="oldMonth"/>
@@ -17,6 +20,20 @@
             <xsl:when test="string-length(normalize-space($oldMonth))=0">
                 <xsl:value-of select="normalize-space($oldYear)"/>
             </xsl:when>
+            
+            <!-- RL : ajout cas intermédiaire
+                 Pour renvoyer YY-MM plutôt que YY-MM-01
+                 lorsque seul $oldDay est indéfini
+            -->
+            <xsl:when test="string-length(normalize-space($oldDay))=0">
+                <xsl:variable name="month"> 
+                    <xsl:call-template name="monthInNum">
+                        <xsl:with-param name="theMonth" select="$oldMonth"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                <xsl:value-of select="concat(normalize-space($oldYear),'-',$month)"/>
+            </xsl:when>
+            
             <xsl:otherwise>
                 <xsl:variable name="month">
                     <xsl:call-template name="monthInNum">
