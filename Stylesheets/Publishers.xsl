@@ -83,8 +83,12 @@
             </xsl:when>
             
             <!-- RL: vérif encore très stricte pour le nouveau cas -->
-            <xsl:when test="contains(/article/article-metadata/article-data/copyright, 'IOP')
-                               and   /article/article-metadata/article-data/article-type[@sort='regular']">
+            <xsl:when test="(
+                               contains(/article/article-metadata/article-data/copyright, 'IOP')
+                            or contains(/article/article-metadata/jnl-data/jnl-imprint, 'IOP')
+                            or contains(/article/article-metadata/jnl-data/jnl-imprint, 'Institute of Physics')
+                            )
+                            and /article/article-metadata/article-data/article-type[@sort='regular']">
                 <xsl:message>Converting an IOP regular article</xsl:message>
             </xsl:when>
             
