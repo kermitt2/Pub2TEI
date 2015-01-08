@@ -10,7 +10,7 @@ Nouvelle feuille pour IOP   => branche nouveau_iop
 L'essentiel est dans IOP.xsl :
   - FAIT traitement du header et de ses métadonnées,
   - TODO les sections du body
-  - TODO bibliography
+  - EN COURS bibliography
 
 Ajout d'exemples     => déjà mergé
 -----------------
