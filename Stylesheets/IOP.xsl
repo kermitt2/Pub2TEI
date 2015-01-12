@@ -27,6 +27,9 @@
            - je ne trouve nulle part la langue
            - les attributs en entrée sont encore souvent ignorés
              dont notamment id et corresp entre affiliations <=> auteurs
+           - les éléments internes de structuration typographique :
+             italic sub sup upright inline-eqn math-text sont sautés par des xsl:value-of
+             dans les titres etc.
            - pour l'identification du doctype utiliser en plus le article-type/type-number ?
            
            £=> et une fois fini mettre un exemple de sortie dans Samples/TestOutputTEI
@@ -44,8 +47,8 @@
         /TEI/teiHeader/fileDesc/sourceDesc/biblStruct >>
     -->
     <xsl:template match="/article[contains(article-metadata/article-data/copyright, 'IOP')]
-                   | /article[contains(article-metadata/jnl-data/jnl-imprint, 'IOP')]
-                   | /article[contains(article-metadata/jnl-data/jnl-imprint, 'Institute of Physics')]">
+                       | /article[contains(article-metadata/jnl-data/jnl-imprint, 'IOP')]
+                       | /article[contains(article-metadata/jnl-data/jnl-imprint, 'Institute of Physics')]">
         <TEI>
             <teiHeader>
                 <fileDesc>
@@ -465,20 +468,57 @@
     <!-- FIN TITRES DE L'ARTICLE*********************** -->
 
 
-    <!-- AUTEURS ***********************
-        IN: /article/header/author-group/*
+
+    <!-- AUTEURS ***************************************
+        
+        Ces templates servent à 2 endroits : <header> et <references>
+        /article/header/author-group/* 
+        /article/back/references//(journal-ref|book-ref|conf-ref|misc-ref)/authors
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        
+        IN: author-group/* 
+            authors/*
+            editors/*
+        
+        OUT: /TEI/teiHeader//sourceDesc/biblStruct
+             /TEI/text/back//listBibl/biblStruct +
+             
+           >> analytic/author+/*
+           >> analytic/editor+/*
     -->
-    <xsl:template match="/article/header/author-group">
-        <!-- On évite de copier la balise <author-group> 
-            + on doit couvrir tous les cas de figure -->
+    
+    <!-- author-group (dans le header) 
+         authors (dans les références biblio)
+         
+         => deux conteneurs de liste d'auteurs, un même comportement
+         
+         TODO: (pour editors uniquement) utiliser éventuellement l'attribut optionnel @order
+    -->
+    <xsl:template match="header/author-group 
+                       | *[ends-with(local-name(),'-ref')]/authors
+                       | *[ends-with(local-name(),'-ref')]/editors">
+        <!-- Pas de liste en TEI, mais on remontera parfois à ce tag 
+             car les author IOP ne sont pas tous des author TEI,
+             notamment pour les editor        -->
         <xsl:apply-templates/>
     </xsl:template>
 
-    <!-- Cas normal
-        IN:/article/header/author-group/ (le précédent)
-           
+
+    <!-- author | au
+         
+         IN: author-group/author (templates au-dessus)
+             authors/au
+             editors/author
+             editors/au
+             
+        OUT: author/persName
+        
+        Cas "auteur normal"
     -->
-    <xsl:template match="author-group/author">
+    <xsl:template match="author-group/author
+                       | author-group/au
+                       | authors/author
+                       | authors/au">
         <author>
             <persName>
                 <!-- ne préjuge pas de l'ordre -->
@@ -486,6 +526,94 @@
             </persName>
         </author>
     </xsl:template>
+    
+    <!-- idem si père = editors -->
+    <xsl:template match="editors/author
+                       | editors/au">
+        <editor>
+            <persName>
+                <!-- ne préjuge pas de l'ordre -->
+                <xsl:apply-templates select="./*[contains(name(),'-name')]"/>
+            </persName>
+        </editor>
+    </xsl:template>
+    
+    
+    <!-- (Cas rares)
+        IN: (authors | author-group | editors)/.
+         << short-author-list
+         << corporate
+         << collaboration
+         << collaboration/group
+         << authors/others
+    -->
+
+    
+    <!-- "les auteurs" : version "condensée conventionnellement"
+        Ex: "K Rahmani et al"
+        Uniquement dans la référence du header (->sourceDesc)
+        
+        TODO <author> ou <bibl> ?
+    -->
+    <xsl:template match="author-group/short-author-list">
+        <author>
+            <xsl:value-of select="."/>
+        </author>
+    </xsl:template>
+    
+    <!-- idem si père = editors -->
+    <xsl:template match="editors/others">
+        <editor>
+            <xsl:value-of select="."/>
+        </editor>
+    </xsl:template>
+
+    
+    <!--authors/collaboration 
+        "Collaborateur" non spécifique => respStmt
+        Ex: "the ASDEX Upgrade Team"
+        
+        TODO : 
+          - éventuellement author/orgName au lieu de respStmt/name ?
+          - attribut @reflist en entrée à examiner et éventuellement reprendre
+    -->
+    <xsl:template match="author-group/collaboration | authors/collaboration | editors/collaboration">
+        <respStmt>
+            <resp/>
+            <name>
+                <xsl:apply-templates/>
+            </name>
+        </respStmt>
+    </xsl:template>
+    
+    <!--authors/collaboration/group
+        (optionnel) le seul sous-élément autorisé de <collaboration>
+        TODO voir si on peut ajouter quelque chose ici
+    -->
+    <xsl:template match="collaboration/group">
+        <xsl:value-of select="."/>
+    </xsl:template>
+    
+    
+    
+    <!--authors/others
+        Ex: "<other><italic>et al.</italic></other>"
+        Vu uniquement dans les références de fin d'article
+    -->
+    <xsl:template match="authors/others">
+        <author ana="other-authors">
+            <xsl:value-of select="normalize-space(.)"/>
+        </author>
+    </xsl:template>
+    
+    <!-- idem si père = editors -->
+    <xsl:template match="editors/others">
+        <editor ana="other-authors">
+            <xsl:value-of select="normalize-space(.)"/>
+        </editor>
+    </xsl:template>
+    
+    
 
     <!-- sous-éléments AUTEURS *************
         NB: utilisables pour le header et pour les refbibs du <back>
@@ -504,33 +632,15 @@
         </forename>
     </xsl:template>
 
+
+    <!-- nom de famille -->
     <xsl:template match="second-name">
         <surname>
             <xsl:value-of select="."/>
         </surname>
     </xsl:template>
 
-    <!-- "Collaborateur" non spécifique => respStmt
-        Ex: "the ASDEX Upgrade Team"
-    -->
-    <xsl:template match="author-group/collaboration">
-        <respStmt>
-            <resp/>
-            <name>
-                <xsl:value-of select="."/>
-            </name>
-        </respStmt>
-    </xsl:template>
 
-    <!-- "les auteurs" : version "condensée conventionnellement"
-        Ex: "K Rahmani et al"
-        TODO <author> ou <bibl> ?
-    -->
-    <xsl:template match="author-group/short-author-list">
-        <author>
-            <xsl:value-of select="."/>
-        </author>
-    </xsl:template>
 
     <!-- FIN AUTEURS *********************** -->
 
@@ -869,25 +979,34 @@
             <!-- n entrées de tag parmi {journal-ref | book-ref | conf-ref | misc-ref} 
                          ou cas "multipart" (imbrication gigogne de plusieurs entrées)
             -->
-            <xsl:apply-templates select="multipart | *[ends-with(local-name(),'-ref')]"/>
+            <xsl:apply-templates select="multipart | ref-group | *[ends-with(local-name(),'-ref')]"/>
         </listBibl>
     </xsl:template> 
     
-    <!-- multipart 
-          (cas refbib gigogne)
+    <!-- multipart | ref-group
+          (cas de refbibs gigognes éventuellement récursives)
           IN:  le précédent
           OUT: listBibl
      -->
-    <xsl:template match="reference-list/multipart">
+    <xsl:template match="reference-list//multipart | reference-list//refgroup">
         <!-- k entrées de tag parmi {journal-ref | book-ref | conf-ref | misc-ref} -->
-        <xsl:apply-templates select="multipart | *[ends-with(local-name(),'-ref')]"/>
+        <xsl:apply-templates select="multipart | ref-group | *[ends-with(local-name(),'-ref')]"/>
     </xsl:template> 
     
     
     <!-- références structurées
-        IN:  article/back/references/reference-list/ <<
-             article/back/references/reference-list/multipart <<
+         ++++++++++++++++++++++
+        IN:  article/back/references/reference-list/.
+             article/back/references/reference-list/multipart//.
+             article/back/references/reference-list/ref-group//.
+             << journal-ref
+             << book-ref
+             << conf-ref
+             << misc-ref
+        
+        +++++++++++++++++++        
         OUT: biblStruct +/*
+        +++++++++++++++++++
     -->
 
     <!--journal-ref
@@ -905,9 +1024,11 @@
             <!-- partie analytique (article) -->
             <analytic>
                 <!-- utilisation pipe xpath => ne préjuge pas de l'ordre -->
-                <xsl:apply-templates select="authors 
-                                           | art-title 
-                                           | art-number 
+                <!-- pour authors => templates là-haut avec celles du header -->
+                <xsl:apply-templates select="authors
+                                           | art-title
+                                           | art-number
+                                           | preprint-info/art-number
                                            | crossref/cr_doi"/>
             </analytic>
             
@@ -915,6 +1036,7 @@
             <monogr>
                 <xsl:apply-templates select="jnl-title 
                                            | conf-title
+                                           | editors
                                            | crossref/cr_issn"/>
                 <!-- dont imprint -->
                 <imprint>
@@ -939,7 +1061,52 @@
                 <xsl:attribute name="n" select="@num"/>
             </xsl:if>
             
-        </biblStruct>     
+            <xsl:choose>
+                <!-- art-title indique que c'est un chapitre -->
+                <!--Du coup les auteurs passent dans analytic-->
+                <xsl:when test="art-title">
+                    <analytic>
+                        <xsl:apply-templates select="authors
+                                                   | art-title"/>
+                    </analytic>
+                    <monogr>
+                        <xsl:apply-templates select="book-title
+                                                   | editors"/>
+                        
+                        <imprint>
+                            <xsl:apply-templates select="year 
+                                                       | volume 
+                                                       | part
+                                                       | chap
+                                                       | pages
+                                                       | publication/place
+                                                       | publication/publisher"/>
+                        </imprint>
+                    </monogr>
+                    <xsl:apply-templates select="series"/>
+                </xsl:when>
+                
+                <!-- Cas général -->
+                <xsl:otherwise>
+                    <monogr>
+                        <xsl:apply-templates select="book-title
+                                                   | authors
+                                                   | editors"/>
+                        
+                        <imprint>
+                            <xsl:apply-templates select="year 
+                                                       | volume 
+                                                       | part
+                                                       | chap
+                                                       | pages
+                                                       | publication/place
+                                                       | publication/publisher"/>
+                        </imprint>
+                    </monogr>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:apply-templates select="series"/>
+        </biblStruct>
     </xsl:template>
     
     <!--conf-ref
@@ -956,7 +1123,6 @@
         </biblStruct>
     </xsl:template>
     
-    
     <!--misc-ref 
         (refbib brevet, logiciel, lien, ...)
     -->
@@ -971,72 +1137,21 @@
         </biblStruct>
     </xsl:template>
 
-
-    <!-- SOUS-ELEMENTS BIBLIO (1/2: pour analytic) ********************
+    
+    <!-- SOUS-ELEMENTS BIBLIO (1/4: pour analytic) ********************
         
-        IN: journal-ref | book-ref | conf-ref | misc-ref
+        IN:  journal-ref | book-ref | conf-ref | misc-ref
+             << art-title
+             << art-number
+             << preprint-info/art-number
+             << crossref/cr_doi
+             
+             TODO     links misc-text preprint-info
+             
         OUT: biblStruct
-        >> analytic/author/*
-        >> analytic/title[@level="a"]
-        >> analytic/idno[@type="..."]
+             >> analytic/title[@level="a"]
+             >> analytic/idno[@type="..."]
     -->
-    
-    <!-- authors -->
-    <xsl:template match="*[ends-with(local-name(),'-ref')]/authors">
-        <!-- comme pour author-group dans le header -->
-        <xsl:apply-templates/>
-    </xsl:template>
-    
-    <!-- authors/au
-         (cas normal)
-         Remarque : ce <au> est très semblable à <author> dans le header
-    -->
-    <xsl:template match="authors/au">
-        <author>
-            <persName>
-                <!-- ne préjuge pas de l'ordre -->
-                <xsl:apply-templates select="./*[contains(name(),'-name')]"/>
-            </persName>
-        </author>
-    </xsl:template>
-    
-    <!-- (cas rares) authors/other 
-                     authors/collaboration
-                     authors/collaboration/group 
-        Remarque : ce <au> est très semblable à <author> dans le header
-    -->
-    
-    <!--authors/others
-         Ex: "<other><italic>et al.</italic></other>"
-    -->
-    <xsl:template match="authors/others">
-        <author ana="other-authors">
-            <xsl:value-of select="normalize-space(.)"/>
-        </author>
-    </xsl:template>
-    
-    <!--authors/collaboration 
-        "Collaborateur" non spécifique => respStmt
-        Ex: "the ASDEX Upgrade Team"
-        
-        TODO : éventuellement author/orgName
-               au lieu de respStmt/name ?
-    -->
-    <xsl:template match="authors/collaboration">
-        <respStmt>
-            <resp/>
-            <name>
-                <xsl:apply-templates/>
-            </name>
-        </respStmt>
-    </xsl:template>
-    
-    <!--authors/collaboration/group
-        (optionnel) le seul sous-élément autorisé de <collaboration>
-     -->
-    <xsl:template match="authors/collaboration/group">
-        <xsl:value-of select="."/>
-    </xsl:template>
 
     <!-- art-title -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/art-title">
@@ -1045,8 +1160,13 @@
         </title>
     </xsl:template>    
     
-    <!-- art-number -->
-    <xsl:template match="*[ends-with(local-name(),'-ref')]/art-number">
+    <!-- art-number 
+         @type observé parmi jcap|jstat|jhep|arxiv (donc émis par la revue ou par un site externe)
+         
+         NB : peut se trouver directement dans *-ref ou bien (plus rare) sous preprint-info
+    -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/art-number 
+                       | *[ends-with(local-name(),'-ref')]/preprint-info/art-number">
         <idno>
             <xsl:attribute name="type" select="@type"/>
             <xsl:value-of select="."/>
@@ -1060,20 +1180,40 @@
         </idno>
     </xsl:template>
     
+    <!--TODO     links misc-text preprint-info-->
+    
 
-    <!-- SOUS-ELEMENTS BIBLIO (2/2: pour monogr) ********************
+    <!-- SOUS-ELEMENTS BIBLIO (2/4: pour monogr) ********************
         
         IN: journal-ref | book-ref | conf-ref | misc-ref
+        <<jnl-title
+        <<book-title
+        <<conf-title
+        <<edition
+        <<crossref/cr_issn
+        <<year
+        <<volume
+        <<part
+        <<chap
+        <<issno
+        <<pages
+        <<publication/publisher
+        <<publication/place
+        
         OUT: biblStruct/monogr
         >> title[@level="j"]
         >> title[@level="m"]
-        >> editor/*
-        >> author/*
-        
+        >> meeting
+        >> edition
+        >> imprint/date[@type="year"]
         >> imprint/biblScope[@unit="vol"]
         >> imprint/biblScope[@unit="part"]
-        >> imprint/biblScope[@unit="pp"]
+        >> imprint/biblScope[@unit="chap"]
         >> imprint/biblScope[@unit="issue"]
+        >> imprint/biblScope[@unit="pp"]
+        >> imprint/publisher
+        >> imprint/pubPlace
+        
     -->
     
     <!-- jnl-title -->
@@ -1083,11 +1223,27 @@
         </title>
     </xsl:template>
     
-    <!-- conf-title -->
+    <!-- book-title -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/book-title">
+        <title level="m">
+            <xsl:value-of select="."/>
+        </title>
+    </xsl:template>
+    
+    <!-- conf-title 
+         ex: "Proc. 9th Int. Conf. on Hyperbolic Problems" -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/conf-title">
         <meeting>
             <xsl:value-of select="."/>
         </meeting>
+    </xsl:template>
+    
+    <!--edition
+        ex: "4th edn" -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/edition">
+        <edition>
+            <xsl:value-of select="."/>
+        </edition>
     </xsl:template>
 
     <!-- crossref/cr_issn -->
@@ -1104,7 +1260,9 @@
     </xsl:template>
     
     
-    <!-- Dorénavant rentre dans >> TEI/.../biblStruct/monogr/imprint -->
+    <!--   - - - - 
+        >> IMPRINT 
+           - - - -    -->
     
     <!-- year
          TODO: attribut ISO @when
@@ -1114,6 +1272,7 @@
             <xsl:value-of select="."/>
         </date>
     </xsl:template>
+    
     
     <!-- volume -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/volume">
@@ -1129,9 +1288,16 @@
         </biblScope>
     </xsl:template>
     
+    <!-- chap   -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/chap">
+        <biblScope unit="chap">
+            <xsl:value-of select="."/>
+        </biblScope>
+    </xsl:template>
+    
     <!-- issno  -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/issue">
-        <biblScope unit="part">
+        <biblScope unit="issue">
             <xsl:value-of select="."/>
         </biblScope>
     </xsl:template>
@@ -1141,7 +1307,49 @@
         <biblScope unit="pp">
             <xsl:value-of select="."/>
         </biblScope>
-    </xsl:template>    
+    </xsl:template>
+    
+    
+    <!-- publication/publisher -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/publication/publisher">
+        <publisher>
+            <xsl:value-of select="."/>
+        </publisher>
+    </xsl:template>
+    
+    <!-- publication/place -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/publication/place">
+        <pubPlace>
+            <xsl:value-of select="."/>
+        </pubPlace>
+    </xsl:template>
+    
+    
+    <!-- SOUS-ELEMENTS BIBLIO (3/4: pour author+ et editor+) ********************
+             +++++++++++++++++
+        Déjà traités plus haut dans /article/header pour /TEI/header/sourceDesc
+             +++++++++++++++++
+        
+    -->
+    
+    <!-- SOUS-ELEMENTS BIBLIO (4/4: pour series) ********************
+       
+    -->
+
+    <!-- series -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/series">
+        <series>
+            <title type="main" level="s">
+                <xsl:value-of select="normalize-space(text())"/>
+            </title>
+            <xsl:if test="volume">
+                <biblScope unit="volume">
+                    <xsl:value-of select="volume"/>
+                </biblScope>        
+            </xsl:if>
+        </series>
+    </xsl:template>
+    
 
     <!-- FIN REFERENCES *********************** -->
 
