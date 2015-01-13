@@ -3,13 +3,6 @@
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" version="2.0" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
     
-    <!--
-    Décommenter la ligne suivante pour éviter les imports en rouge
-                                  ou si jamais cette feuille était 
-                                               utilisée directement
-    -->
-    <xsl:include href="Imports.xsl"/>
-    
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p>created by romain dot loth at inist.fr</xd:p>
@@ -167,7 +160,11 @@
                 <text>
                     <front/>
                     <body>
-                        <xsl:apply-templates select="/article[contains(article-metadata/article-data/copyright, 'IOP')]/body"/>
+                        <!-- Actuellement on évite les templates inclues avec un select identique à article
+                             car l'objectif est dans les refbibs. A terme au contraire on voudra un select "tout-terrain"                        -->
+                        <xsl:apply-templates select="/article[contains(article-metadata/article-data/copyright, 'IOP')]/body
+                            | /article[contains(article-metadata/jnl-data/jnl-imprint, 'IOP')]/body
+                            | /article[contains(article-metadata/jnl-data/jnl-imprint, 'Institute of Physics')]/body"/>
                     </body>
                     <back>
                         
@@ -903,51 +900,18 @@
         ==============
         
         TODO :
-          - pour l'instant seulement intertitres et <p>
-             - donc il reste les citations, l'italique, le mathml, etc.
-          - éviter les redondances avec FullTextTags.xsl
+          - pour l'instant seulement un grand <p> avec tout le contenu
+             - donc il reste tout à faire : les sections, les <p>, les citations, l'italique, le mathml, etc.
+          - utiliser à terme FullTextTags.xsl
     -->
     
     <xsl:template match="article/body">
-            <xsl:apply-templates select="*[starts-with(local-name(),'seclevel')]"/>
-            <xsl:apply-templates select="heading"/>
-            <xsl:apply-templates select="p"/>
-    </xsl:template>
-    
-    <!-- SECLEVEL ***********************
-        IN: /article/body/seclevel.*  <<
-        
-        OUT: text/body
-        >> div1, div2...
-        >> head
-        >> p
-    -->
-    
-    <xsl:template match="body//*[starts-with(local-name(),'seclevel')]">
-        <!-- juste le nombre entier dans "seclevel1" ou "seclevel7" -->
-        <xsl:variable name="level" select="substring(local-name(),8)"/>
-        
-        <xsl:element name="div{$level}">
-            <xsl:apply-templates/>
-        </xsl:element>
-    </xsl:template>
-    
-    <!-- heading => tous types de titres et entêtes
-        ex: "" -->
-    <xsl:template match="heading">
-        <head>
-            <xsl:value-of select="."/>
-        </head>
-    </xsl:template>
-    
-    <xsl:template match="p">
         <p>
             <xsl:value-of select="."/>
         </p>
     </xsl:template>
     
-    
-    <!-- FIN ABS *********************** -->
+    <!-- FIN BODY *********************** -->
     
     
     

@@ -18,10 +18,7 @@
     <xsl:include href="ArticleSetNLMV2.0.xsl"/>
     <xsl:include href="Sage.xsl"/>
 
-	<!-- RL: ajout d'un cas dans IOP.xsl : 
-			 pour faire le header entier, 
-			 et bientôt les sections du body 
-			            + la biblio... -->
+	<!-- RL: ajout de mon cas IOP.xsl (traite tout sauf le body) -->
     <xsl:include href="IOP.xsl"/>
     <!--
 	<xsl:include href="IOPPatch.xsl"/>
