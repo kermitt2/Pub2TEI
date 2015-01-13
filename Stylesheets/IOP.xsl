@@ -8,7 +8,7 @@
                                   ou si jamais cette feuille était 
                                                utilisée directement
     -->
-    <!--<xsl:include href="Imports.xsl"/>-->
+    <xsl:include href="Imports.xsl"/>
     
     <xd:doc scope="stylesheet">
         <xd:desc>
@@ -568,13 +568,33 @@
         </editor>
     </xsl:template>
 
+    <!-- corporate
+        Ex: "K Rahmani et al"
+        
+        TODO <author> ou <bibl> ?
+    -->
+    <xsl:template match="author-group/corportate | authors/corporate">
+        <author>
+            <orgName>
+                <xsl:value-of select="."/>
+            </orgName>
+        </author>
+    </xsl:template>
+    
+    <!-- idem si père = editors -->
+    <xsl:template match="editors/corporate">
+        <editor>
+            <orgName>
+                <xsl:value-of select="."/>
+            </orgName>
+        </editor>
+    </xsl:template>
     
     <!--authors/collaboration 
         "Collaborateur" non spécifique => respStmt
         Ex: "the ASDEX Upgrade Team"
         
-        TODO : 
-          - éventuellement author/orgName au lieu de respStmt/name ?
+        TODO :
           - attribut @reflist en entrée à examiner et éventuellement reprendre
     -->
     <xsl:template match="author-group/collaboration | authors/collaboration | editors/collaboration">
@@ -672,7 +692,7 @@
               IN: address-group/address/country
               OUT: ./country
               ==> rien à faire tant que apply-templates en amont 
-                                 et que et pas de namespaces
+                                 et qu'il n'y pas de namespaces
         
               Ex: "Belgium"
     -->
@@ -701,6 +721,7 @@
         OUT: ./email
         Ex: "sam.gamegie@cityhall.shire"
         ==> rien à faire tant que apply-templates en amont
+                            et qu'il n'y pas de namespaces
     -->
 
     <!-- FIN ADDR *********************** -->
@@ -952,8 +973,12 @@
         >> biblStruct +/analytic
         >> biblStruct +/monographic
         
-        NB: Ces 7 templates forment une structure générale qui 
+       NB:  Ces 7 templates forment une structure générale qui 
             appelle ensuite les sous-éléments ad hoc (plus bas)
+            
+       NB2: On place les identifiants à leur niveau pertinent (DOI article => analytic, ISBN, ISSN => monogr)
+            mais les liens web ref[@url] en dehors d'analytic et monogr, comme dans l'exemple
+            n° 4 (Coombs) de la doc sur www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COBICOL
         
         TODO 
           - harmoniser avec Bibliography.xsl
@@ -1007,6 +1032,15 @@
         +++++++++++++++++++        
         OUT: biblStruct +/*
         +++++++++++++++++++
+        
+        TODO prise en compte des 2 attributs
+             optionnels author et year-label
+             *-ref/@author       ex: "Bousis et al"
+             *-ref/@year-label   ex: "1963a"
+             
+             référencer la template des links autre qu'archive 
+             (2 cas avec que des idno multiples : SPIRES et aps)
+        
     -->
 
     <!--journal-ref
@@ -1024,11 +1058,11 @@
             <!-- partie analytique (article) -->
             <analytic>
                 <!-- utilisation pipe xpath => ne préjuge pas de l'ordre -->
-                <!-- pour authors => templates là-haut avec celles du header -->
                 <xsl:apply-templates select="authors
                                            | art-title
                                            | art-number
                                            | preprint-info/art-number
+                                           | misc-text/extdoi
                                            | crossref/cr_doi"/>
             </analytic>
             
@@ -1046,12 +1080,16 @@
                                                | issno                                             
                                                | pages"/>
                 </imprint>
-            </monogr>  
-        </biblStruct>     
+            </monogr>
+            <!-- notes et url -->
+            <xsl:apply-templates select="preprint-info/preprint
+                                       | misc-text[not(extdoi)]
+                                       | links/arxiv"/>
+        </biblStruct>
     </xsl:template>
     
     <!--book-ref
-        (refbib livre)
+        (refbib livre ou chapitre de livre)
     -->
     <xsl:template match="book-ref">
         <biblStruct type="book">
@@ -1063,7 +1101,7 @@
             
             <xsl:choose>
                 <!-- art-title indique que c'est un chapitre -->
-                <!--Du coup les auteurs passent dans analytic-->
+                <!--Du coup les auteurs passent dans analytic (est-ce tjs valable?)-->
                 <xsl:when test="art-title">
                     <analytic>
                         <xsl:apply-templates select="authors
@@ -1071,7 +1109,8 @@
                     </analytic>
                     <monogr>
                         <xsl:apply-templates select="book-title
-                                                   | editors"/>
+                                                   | editors
+                                                   | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
                         
                         <imprint>
                             <xsl:apply-templates select="year 
@@ -1083,7 +1122,6 @@
                                                        | publication/publisher"/>
                         </imprint>
                     </monogr>
-                    <xsl:apply-templates select="series"/>
                 </xsl:when>
                 
                 <!-- Cas général -->
@@ -1091,7 +1129,8 @@
                     <monogr>
                         <xsl:apply-templates select="book-title
                                                    | authors
-                                                   | editors"/>
+                                                   | editors
+                                                   | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
                         
                         <imprint>
                             <xsl:apply-templates select="year 
@@ -1105,12 +1144,19 @@
                     </monogr>
                 </xsl:otherwise>
             </xsl:choose>
-            <xsl:apply-templates select="series"/>
+            
+            <!-- tout le reste : série, notes, url -->
+            <xsl:apply-templates select="series
+                                       | preprint-info/preprint
+                                       | misc-text[not(extdoi) and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]
+                                       | links/arxiv"/>
         </biblStruct>
     </xsl:template>
     
     <!--conf-ref
         (refbib actes et confs)
+        NB : meeting créé sur place à partir de conf-title et conf-place
+        TODO : extraire la date qu'on trouve parfois dans les conf-place ?
     -->
     <xsl:template match="conf-ref">
         <biblStruct type="conf">
@@ -1120,19 +1166,119 @@
                 <xsl:attribute name="n" select="@num"/>
             </xsl:if>
             
+            <analytic>
+                <xsl:apply-templates select="authors
+                                           | art-title"/>
+            </analytic>
+            <monogr>
+                <!-- conf-title 
+                    ex: "Proc. 9th Int. Conf. on Hyperbolic Problems" -->
+                <xsl:if test="conf-title | conf-place">
+                    <meeting>
+                        <xsl:value-of select="conf-title"/>
+                        <xsl:if test="conf-place">
+                            <!-- conf-place
+                                ex: "Toulouse, 14–17 June 1999" -->
+                            <placeName>
+                                <xsl:value-of select="conf-place"/>
+                            </placeName>
+                        </xsl:if>
+                    </meeting>
+                </xsl:if>
+
+                <xsl:apply-templates select="editors
+                                           | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                <imprint>
+                    <xsl:apply-templates select="year
+                                               | volume
+                                               | pages
+                                               | publication/place
+                                               | publication/publisher"/>
+                </imprint>
+            </monogr>
+
+            
+            <!-- tout le reste : série, notes, url -->
+            <xsl:apply-templates select="series
+                                       | preprint-info/preprint
+                                       | misc-text[not(extdoi) and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]
+                                       | links/arxiv"/>
         </biblStruct>
     </xsl:template>
     
     <!--misc-ref 
-        (refbib brevet, logiciel, lien, ...)
+        (refbib de type thèse, brevet, logiciel, lien, ...)
     -->
     <xsl:template match="misc-ref">
-        <biblStruct type="misc">
+        <biblStruct>
+            
+            <!-- attribut type (pas aussi univoque que pour les autres ref) -->
+            <xsl:attribute name="type">
+                <xsl:choose>
+                    <!-- ne pas hésiter à ajouter d'autres tests -->
+                    <xsl:when test="thesis">thesis</xsl:when>
+                    <xsl:when test="patent-number">patent</xsl:when>
+                    <!-- heuristiques -->
+                    <xsl:when test="misc-title and contains('Report', misc-title)">report</xsl:when>
+                    <xsl:when test="misc-text and starts-with('PAT', misc-text)">patent</xsl:when>
+                    <xsl:otherwise>misc</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            
             <!-- attributs courants -->
             <xsl:attribute name="xml:id" select="@id"/>
             <xsl:if test="@num">
                 <xsl:attribute name="n" select="@num"/>
             </xsl:if>
+            
+            
+            <xsl:choose>
+                <!-- comme pour book-ref -->
+                <xsl:when test="art-title">
+                    <analytic>
+                        <xsl:apply-templates select="authors
+                                                   | art-title"/>
+                    </analytic>
+                    <monogr>
+                        <xsl:apply-templates select="editors
+                                                   | misc-title
+                                                   | patent-number
+                                                   | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                        <imprint>
+                            <xsl:apply-templates select="year
+                                                       | volume
+                                                       | pages
+                                                       | publication/place
+                                                       | publication/publisher
+                                                       | source"/>
+                        </imprint>
+                    </monogr>
+                </xsl:when>
+                <!-- cas général -->
+                <xsl:otherwise>
+                    <monogr>
+                        <xsl:apply-templates select="authors
+                                                   | editors
+                                                   | misc-title
+                                                   | patent-number
+                                                   | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                        <imprint>
+                            <xsl:apply-templates select="year
+                                                       | pages
+                                                       | publication/place
+                                                       | publication/publisher
+                                                       | source"/>
+                        </imprint>
+                    </monogr>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <!-- tout le reste : série, notes, url -->
+            <xsl:apply-templates select="thesis
+                                       | preprint-info/preprint
+                                       | misc-text[not(extdoi) and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]
+                                       | links/arxiv"/>
+            
             
         </biblStruct>
     </xsl:template>
@@ -1146,8 +1292,6 @@
              << preprint-info/art-number
              << crossref/cr_doi
              
-             TODO     links misc-text preprint-info
-             
         OUT: biblStruct
              >> analytic/title[@level="a"]
              >> analytic/idno[@type="..."]
@@ -1155,12 +1299,19 @@
 
     <!-- art-title -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/art-title">
+        <title level="a" type="main">
+            <xsl:value-of select="normalize-space(.)"/>
+        </title>
+    </xsl:template>
+    
+    <!-- misc-title -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/misc-title">
         <title level="a">
             <xsl:value-of select="normalize-space(.)"/>
         </title>
-    </xsl:template>    
+    </xsl:template> 
     
-    <!-- art-number 
+    <!-- art-number | preprint-info/art-number
          @type observé parmi jcap|jstat|jhep|arxiv (donc émis par la revue ou par un site externe)
          
          NB : peut se trouver directement dans *-ref ou bien (plus rare) sous preprint-info
@@ -1173,9 +1324,17 @@
         </idno>
     </xsl:template>
 
+    <!-- misc-text/extdoi 
+         NB: les autres misc-text sont traités en elts <note> après monogr -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/misc-text/extdoi">
+        <idno type="DOI">
+            <xsl:value-of select="."/>
+        </idno>
+    </xsl:template>
+    
     <!-- crossref/cr_doi -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/crossref/cr_doi">
-        <idno type="doi">
+        <idno type="DOI">
             <xsl:value-of select="."/>
         </idno>
     </xsl:template>
@@ -1183,7 +1342,7 @@
     <!--TODO     links misc-text preprint-info-->
     
 
-    <!-- SOUS-ELEMENTS BIBLIO (2/4: pour monogr) ********************
+    <!-- SOUS-ELEMENTS BIBLIO (2/4: pour monogr) *********************
         
         IN: journal-ref | book-ref | conf-ref | misc-ref
         <<jnl-title
@@ -1197,14 +1356,18 @@
         <<chap
         <<issno
         <<pages
+        <<source
         <<publication/publisher
         <<publication/place
+        
+        
+        NB: <<conf-title et <<conf-place traités directement dans conf-ref
         
         OUT: biblStruct/monogr
         >> title[@level="j"]
         >> title[@level="m"]
-        >> meeting
         >> edition
+        >> meeting
         >> imprint/date[@type="year"]
         >> imprint/biblScope[@unit="vol"]
         >> imprint/biblScope[@unit="part"]
@@ -1227,12 +1390,14 @@
     <xsl:template match="*[ends-with(local-name(),'-ref')]/book-title">
         <title level="m">
             <xsl:value-of select="."/>
+            <!-- tei:meeting sous-catégorise le lieu -->
+            <xsl:apply-templates select="../conf-place"/>
         </title>
     </xsl:template>
     
-    <!-- conf-title 
-         ex: "Proc. 9th Int. Conf. on Hyperbolic Problems" -->
-    <xsl:template match="*[ends-with(local-name(),'-ref')]/conf-title">
+    <!-- conf-title *dans les cas rares* d'un parent journal-ref ou misc-ref
+         (pour les conf-ref on ne passe pas par ici)           -->
+    <xsl:template match="journal-ref/conf-title">
         <meeting>
             <xsl:value-of select="."/>
         </meeting>
@@ -1244,6 +1409,14 @@
         <edition>
             <xsl:value-of select="."/>
         </edition>
+    </xsl:template>
+
+    <!--patent-number
+        ex: "US Patent US 2003/0116528 A1" -->
+    <xsl:template match="misc-ref/patent-number">
+        <idno type="docNumber">
+            <xsl:value-of select="."/>
+        </idno>
     </xsl:template>
 
     <!-- crossref/cr_issn -->
@@ -1259,6 +1432,13 @@
         </idno>
     </xsl:template>
     
+    <!-- misc-text/~ISBN-like~
+        NB: les autres misc-text sont traités en elts <note> après monogr -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]">
+        <idno type="ISBN">
+            <xsl:value-of select="."/>
+        </idno>
+    </xsl:template>
     
     <!--   - - - - 
         >> IMPRINT 
@@ -1308,7 +1488,17 @@
             <xsl:value-of select="."/>
         </biblScope>
     </xsl:template>
-    
+
+    <!-- source 
+        ex: l'université pour les thèses de doctorat 
+            (se rencontre surtout dans les misc-ref)
+        TODO : voir si tei:authority convient mieux que tei:publisher
+    -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/source">
+        <publisher>
+            <xsl:value-of select="."/>
+        </publisher>
+    </xsl:template>
     
     <!-- publication/publisher -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/publication/publisher">
@@ -1324,32 +1514,104 @@
         </pubPlace>
     </xsl:template>
     
+
     
-    <!-- SOUS-ELEMENTS BIBLIO (3/4: pour author+ et editor+) ********************
+    
+    <!-- SOUS-ELEMENTS BIBLIO (3/4: pour author+ et editor+) *****************
              +++++++++++++++++
         Déjà traités plus haut dans /article/header pour /TEI/header/sourceDesc
              +++++++++++++++++
         
     -->
     
-    <!-- SOUS-ELEMENTS BIBLIO (4/4: pour series) ********************
+    <!-- SOUS-ELEMENTS BIBLIO (4/4: ni analy. ni monogr.) ********************
        
     -->
 
-    <!-- series -->
+    <!-- series | series/volume -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/series">
         <series>
             <title type="main" level="s">
                 <xsl:value-of select="normalize-space(text())"/>
             </title>
             <xsl:if test="volume">
-                <biblScope unit="volume">
+                <biblScope unit="vol">
                     <xsl:value-of select="volume"/>
-                </biblScope>        
+                </biblScope>
             </xsl:if>
         </series>
     </xsl:template>
     
+    <!-- misc-text
+        
+        NB: malheureusement très varié ! 
+
+        Pourra devenir en TEI l'un des éléments suivants :
+           - idno[@type="DOI|ISBN"]   => traités à part (ci-dessus, resp. dans analytic et dans monogr)
+           - note                     => traités ici
+           - ref[@type="url"]         => traités ici
+        
+        ex: <misc-text>in preparation</misc-text>
+        ex: <misc-text>at press, <extdoi doi="10.1007/s11082-009-9349-3" base="http://dx.doi.org/">doi:10.1007/s11082-009-9349-3</extdoi></misc-text>
+        ex: <misc-text>ISBN 0-9586039-2-8</misc-text>
+        ex: <misc-text><italic>ICTP Internal Report</italic> IC/95/216</misc-text>
+        ex: <misc-text>arXiv:<arxiv url="cond-mat/0408518v1">cond-mat/0408518v1</arxiv></misc-text>
+        ex: <misc-text>On the fluctuating flow characteristics in the vicinity of gate slots <italic>PhD Thesis</italic> Division of Hydraulic Engineering, University of Trondheim, Norwegian Institute of Technology</misc-text>
+        ex: <misc-text>(Book of abstracts 3)</misc-text>
+        ex: <misc-text>OptoDesigner by PhoeniX Software <webref url="http://www.phoenixbv.com/">http://www.phoenixbv.com/</webref>
+    -->
+    <xsl:template name="autres_misc-text"
+                  match="*[ends-with(local-name(),'-ref')]/misc-text[not(extdoi) 
+                                                                 and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]">
+        <note place="inline">
+            <xsl:value-of select="text()"/>
+            <xsl:apply-templates select="webref | arxiv"/>
+        </note>
+    </xsl:template>
+    
+    <!-- liens inclus dans une note -->
+    <xsl:template match="misc-text/webref | misc-text/arxiv | links/arxiv">
+        <ref type="url">
+            <xsl:if test="@url">
+                <xsl:attribute name="target" select="@url"/>
+            </xsl:if>
+            <xsl:value-of select="."/>
+        </ref>
+    </xsl:template>
+    
+    <!-- preprint >> note
+         NB: preprint-info/art-number déjà traité dans les templates pour analytic!
+    -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/preprint-info/preprint
+                       | *[ends-with(local-name(),'-ref')]/preprint">
+        <note place="inline">
+            <xsl:value-of select="."/>
+        </note>
+    </xsl:template>
+    
+    <!-- thesis >> note
+         sert aussi comme test pour l'attribut ../biblStruct[@type]
+    -->
+    <xsl:template match="misc-ref/thesis | book-ref/thesis">
+        <note place="inline">
+            <xsl:value-of select="."/>
+        </note>
+    </xsl:template>
+    
+    <!-- links[not(arxiv)] >> | note
+        ex: <links><spires jnl="GRGVA" vol="33" page="1381">SPIRES</spires></links>
+        ex: <aps jnl="PRL" vol="93" page="080601" start="volume" end="pages"/>
+        
+        TODO actuellement cette template n'est pas référencée
+    -->
+    <xsl:template match="*[ends-with(local-name(),'-ref')]/links[not(arxiv)]">
+        <note place="inline">
+            <xsl:for-each select="//@*">
+                <xsl:value-of select="concat( ., ' ')"/>
+            </xsl:for-each>
+            <xsl:value-of select="."/>
+         </note>
+    </xsl:template>
 
     <!-- FIN REFERENCES *********************** -->
 
