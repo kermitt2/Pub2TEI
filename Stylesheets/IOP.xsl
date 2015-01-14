@@ -570,7 +570,7 @@
         
         TODO <author> ou <bibl> ?
     -->
-    <xsl:template match="author-group/corportate | authors/corporate">
+    <xsl:template match="author-group/corporate | authors/corporate">
         <author>
             <orgName>
                 <xsl:value-of select="."/>
