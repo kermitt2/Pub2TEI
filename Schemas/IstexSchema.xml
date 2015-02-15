@@ -47,6 +47,12 @@
                     </content>
                 </elementSpec>
                 
+<!--                <elementSpec ident="math" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <content>
+                        
+                    </content>
+                </elementSpec>-->
+                
                 <!-- Copied from the TEI example, with Sebastoan Rahtz's comments -->
                 
                 <!-- required to avoid Sanity Checker warnings -->

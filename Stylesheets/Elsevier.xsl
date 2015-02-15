@@ -6,6 +6,8 @@
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
 
     <xsl:output encoding="UTF-8" method="xml"/>
+    
+    <xsl:include href="ElsevierFormula.xsl"/>
 
     <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info]">
         <TEI>

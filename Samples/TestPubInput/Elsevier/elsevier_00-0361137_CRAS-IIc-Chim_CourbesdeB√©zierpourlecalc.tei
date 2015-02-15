@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="main">Courbes de Bézier pour le calcul des indices de
+                    rétention en chromatographie gaz–liquide à température programmée</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Éditions scientifiques et médicales Elsevier SAS</publisher>
+                <date>2000</date>
+                <availability status="restricted">
+                    <p>full-transfer</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author><persName><forename type="first"
+                                    >Leila</forename><surname>Lourici</surname></persName><affiliation><orgName
+                                    type="laboratory">Laboratoire
+                                «Pollution»</orgName><address><addrLine>université Mokhtar-Badji</addrLine><addrLine>BP 12</addrLine><addrLine>23200 Annaba</addrLine><addrLine>Algérie</addrLine></address></affiliation></author>
+                        <author><persName><forename type="first">Mohamed
+                                    Lotfi</forename><surname>Souici</surname></persName><affiliation><orgName
+                                    type="laboratory">Laboratoire
+                                «Pollution»</orgName><address><addrLine>université Mokhtar-Badji</addrLine><addrLine>BP 12</addrLine><addrLine>23200 Annaba</addrLine><addrLine>Algérie</addrLine></address></affiliation></author>
+                        <author><persName><forename type="first"
+                                    >Djelloul</forename><surname>Messadi</surname></persName><email>messadi_d@yahoo.com</email><affiliation><orgName
+                                    type="laboratory">Laboratoire
+                                «Pollution»</orgName><address><addrLine>université Mokhtar-Badji</addrLine><addrLine>BP 12</addrLine><addrLine>23200 Annaba</addrLine><addrLine>Algérie</addrLine></address></affiliation></author>
+                        <title level="a" type="main">Courbes de Bézier pour le calcul des indices de
+                            rétention en chromatographie gaz–liquide à température
+                            programmée</title>
+                    </analytic>
+                    <monogr>
+                        <title level="j" type="abbrev">PXCI</title>
+                        <imprint>
+                            <date type="Accepted" when="2000-03-08"/>
+                        </imprint>
+                    </monogr>
+                    <idno type="DOI">10.1016/S1387-1609(00)00126-2</idno>
+                    <idno type="PII">S1387-1609(00)00126-2</idno>
+                    <idno type="publisherID">105</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <list>
+                        <head>Mots-clé</head>
+                        <item><term>chromatographie en phase gazeuse</term></item>
+                        <item><term>programmation de température</term></item>
+                        <item><term>lissage des données de référence</term></item>
+                        <item><term>fonction indépendante des propriétés locales</term></item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="1999-06-06">Received</change>
+            <change when="2000-03-08">Accepted</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="abstract" xml:lang="en">
+                <head>Abstract</head>
+                <p><hi rend="bold">Bezier curves for the calculation of retention indices in
+                        temperature-programmed gas–liquid chromatography.</hi> Retention indices of
+                    eleven organochlorine species, separated by temperature-programmed gas
+                    chromatography, computed by smoothing reference data with Bezier curves of
+                    orders 7 and 10 are more consistent with the scheme of this retention parameter,
+                    and present standard deviations systematically smaller than those associated
+                    with classical retention indices. These results are reproduced when solutes are
+                    referred to even alternate <hi rend="italic">n</hi>-alkanes. © 2000 Académie des
+                    sciences/Éditions scientifiques et médicales Elsevier SAS<hi rend="bold">gas
+                        chromatography / temperature programming / smoothing of reference data /
+                        independent of local properties function</hi></p>
+            </div>
+            <div type="abstract">
+                <head>Résumé</head>
+                <p>Les indices de rétention de onze composés organochlorés séparés par
+                    chromatographie en phase gazeuse à température programmée, calculés en lissant
+                    les données de référence par des courbes de Bézier d'ordres 7 et 10, sont plus
+                    conformes au schéma de ce paramètre de rétention, et présentent des écarts types
+                    systématiquement plus petits que ceux associés aux indices calculés de façon
+                    classique. On reproduit ces résultats quand on rapporte les solutés à des <hi
+                        rend="italic">n</hi>-alcanes alternés pairs.</p>
+            </div>
+        </front>
+        <body>
+            <div type="ElsevierSections">
+                <p>Un système comme celui des indices de Van den Dool et Kratz, même s'il n'a pas de
+                    fondement théorique comme les indices de Kováts, est très intéressant, car il
+                    est d'un usage facile; on gagnerait donc à rendre son emploi plus commode et à
+                    obtenir des valeurs plus précises.</p>
+                <p>Dans ce but, nous avons suggéré <ref target="#BIB1">[1]</ref> l'emploi de
+                    fonctions possédant la propriété de contrôle local, c'est-à-dire de fonctions
+                    capables de s'adapter à des irrégularités locales sans bouleverser la forme
+                    générale du modèle: fonctions <hi rend="italic">B</hi>-splines et de Bézier.</p>
+                <p>Le lissage des données de calibration par des fonctions <hi rend="italic"
+                    >B</hi>-splines de différents ordres nous a conduit à proposer une méthode de
+                    calcul des indices de rétention, en chromatographie en phase gazeuse à
+                    température programmée (CGPT), qui ne nécessite pas la présence d'hydrocarbures
+                    de référence consécutifs et qui permet de prévoir la variation des indices de
+                    rétention quand on change le jeu de standards <ref target="#BIB2 #BIB3"
+                        >[2,3]</ref>.</p>
+                <p>Le présent travail porte sur les avantages des indices de rétention calculés en
+                    appliquant la technique des fonctions de Bézier à onze composés organochlorés
+                    (considérés comme contaminants de l'eau de boisson <ref target="#BIB4"
+                    >[4]</ref>), élués en programmation linéaire de température sur une colonne
+                    capillaire peu polaire.</p>
+                <p>Les polynômes de Bernstein permettent, par la définition d'une ligne polygonale,
+                    de construire une courbe joignant le premier au dernier point de la courbe, les
+                    sommets intermédiaires servant à modeler la forme de la courbe. De telles
+                    courbes sont appelées courbes de Bézier <ref target="#BIB5">[5]</ref>. Celles-ci
+                    ne sont pas réellement des splines d'interpolation, dans la mesure où,
+                    généralement, elles ne passent pas par tous les points de calibration. À cet
+                    égard, elles présentent certaines similitudes avec les courbes des moindres
+                    carrés.</p>
+                <p>Soit un ensemble de points {(<hi rend="italic">x</hi><hi rend="subscript"><hi
+                            rend="italic">i</hi></hi>,<hi rend="italic">y</hi><hi rend="subscript"
+                            ><hi rend="italic">i</hi></hi>), <hi rend="italic">i</hi>=0,…, <hi
+                        rend="italic">m</hi>}. La courbe de Bézier d'ordre <hi rend="italic">m</hi>,
+                    déterminée par <hi rend="italic">m</hi>+1 points, est définie par l'équation
+                            paramétrique:<formula><formula notation="XMLLatex"><math
+                                xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"><els:fen
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"><els:cp
+                                        type="lcub"/>x=x<els:fen><els:cp type="lpar"/>t<els:cp
+                                            type="rpar"
+                                            /></els:fen>=<els:lim><els:op>∑</els:op><els:ll>i=0</els:ll><els:ul>m</els:ul></els:lim>B<els:inf>(i,m)</els:inf>(t)x<els:inf>i</els:inf>y=y<els:fen><els:cp
+                                            type="lpar"/>t<els:cp type="rpar"
+                                            /></els:fen>=<els:lim><els:op>∑</els:op><els:ll>i=0</els:ll><els:ul>m</els:ul></els:lim>B<els:inf>(i,m)</els:inf>(t)y<els:inf>i</els:inf></els:fen></math></formula></formula><hi
+                        rend="italic">t</hi> variant entre 0 et 1, <hi rend="italic">B</hi><hi
+                        rend="subscript">(<hi rend="italic">i</hi>,<hi rend="italic">m</hi>)</hi>
+                    étant un polynôme de Bernstein:<formula><formula notation="XMLLatex"><math
+                                xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">B<els:inf
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >(i,m)</els:inf><els:fen
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"><els:cp
+                                        type="lpar"/>t<els:cp type="rpar"/></els:fen>=C<els:inf
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >i</els:inf><els:sup
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >m</els:sup>t<els:sup
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >i</els:sup><els:fen
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"><els:cp
+                                        type="lpar"/>1−t<els:cp type="rpar"/></els:fen><els:sup
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                >m−1</els:sup></math></formula></formula>Les coefficients du
+                            binôme:<formula><formula notation="XMLLatex"><math
+                                xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">C<els:inf
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >i</els:inf><els:sup
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >m</els:sup>=<els:fr
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                        ><els:nu>m!</els:nu><els:de>i!<els:fen><els:cp type="lpar"
+                                                />m−i<els:cp type="rpar"
+                                    /></els:fen>!</els:de></els:fr></math></formula></formula>étant
+                    calculés par une relation de récurrence:<formula><formula notation="XMLLatex"
+                                ><math xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">C<els:inf
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >i</els:inf><els:sup
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >m</els:sup>=C<els:inf
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >i</els:inf><els:sup
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >m−1</els:sup>+C<els:inf
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >i−1</els:inf><els:sup
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                >m−1</els:sup></math></formula></formula>Les indices de rétention
+                    ainsi déterminés, en rapportant les organochlorés à différents mélanges de <hi
+                        rend="italic">n</hi>-alcanes, seront comparés aux indices de rétention
+                    obtenus de façon classique en utilisant la relation de Van den Dool et Kratz (en
+                    y remplaçant la température de rétention par les temps de rétention) et une
+                    série complète d'hydrocarbures de référence.</p>
+                <p>Les analyses, répétées dix fois, ont été réalisées sur une colonne capillaire en
+                    quartz (longueur: 25 m; diamètre intérieur: 0,2 mm) à parois internes imprégnées
+                    d'une phase de type méthylsilicone OV-101, d'épaisseur 0,27 μm, montée sur un
+                    chromatographe Philips (PU-304) muni d'un régulateur de pression, et équipé d'un
+                    détecteur à ionisation de flamme DIF (différentiel à deux flammes) ainsi que
+                    d'un intégrateur (CDP1). Nous avons adopté un mode d'injection avec diviseur
+                    d'entrée (1% de l'échantillon pénétrant dans la colonne). La température de la
+                    colonne est élevée de 80 à 200°C à raison de 2°C·min<hi rend="superscript"
+                        >–1</hi>.</p>
+                <p>Un programme en Turbo Pascal, compatible sur PC, a été utilisé pour les calculs.
+                    Pour faciliter l'exploitation des résultats, on fait imprimer les valeurs des
+                    fonctions de Bézier pour 200 points de l'intervalle d'interpolation.</p>
+                <p>Nous avons réuni dans le <ref target="#TBL1"><hi rend="italic"
+                        >tableau</hi></ref><ptr target="#TBL1"/> les valeurs des températures de
+                    rétention des <hi rend="italic">n</hi>-alcanes de référence et des composés
+                    tests, mesurés dix fois, ainsi que les valeurs moyennes des dix indices de
+                    rétention, et les écarts types correspondants, obtenus de façon classique (<hi
+                        rend="italic">I</hi><hi rend="subscript">L</hi>), et avec lissage par courbe
+                    de Bézier d'ordre 7 (<hi rend="italic">I</hi><hi rend="superscript">7</hi><hi
+                        rend="subscript">Be</hi>) en rapportant les organochlorés tests aux huit
+                    alcanes consécutifs C<hi rend="subscript">8</hi>–C<hi rend="subscript"
+                    >15</hi>.</p>
+                <p>En général, les <hi rend="italic">I</hi><hi rend="subscript">L</hi> sont
+                    supérieurs aux <hi rend="italic">I</hi><hi rend="superscript">7</hi><hi
+                        rend="subscript">Be</hi> correspondants de 11,2 unités d'indice (u.i.) en
+                    moyenne, cette différence pouvant atteindre 22 u.i. dans la région où les
+                    données de calibration ne se distribuent pas linéairement. Ce résultat est de
+                    loin meilleur que celui obtenu avec une interpolation polynomiale simple de même
+                    ordre (=7), la différence pouvant alors atteindre 40 u.i.</p>
+                <p>Les écarts types associés aux indices de rétention calculés par la technique des
+                    fonctions de Bézier (<hi rend="italic">σ</hi><hi rend="subscript">Be</hi>) sont
+                    systématiquement plus petits que ceux correspondant aux indices de rétention
+                    obtenus de façon classique (<hi rend="italic">σ</hi><hi rend="subscript"
+                    >L</hi>). Ce fait est confirmé par les résultats (logiciel MINITAB) du test-<hi
+                        rend="italic">t</hi> à deux échantillons (probabilité <hi rend="italic"
+                        >P</hi>=0,0071&lt;<hi rend="italic">α</hi>=0,05).</p>
+                <p>Les valeurs de la somme des carrés des différences secondes divisées ont été
+                    calculées pour les organochlorés successifs, lorsque les indices de rétention
+                    sont déterminés par interpolation linéaire (∑<hi rend="subscript">L</hi>) et
+                    lissage par courbe de Bézier (∑<hi rend="subscript">Be</hi>). Ces valeurs, qui sont:<table>
+                        <row>
+                            <cell>∑<hi rend="subscript">L</hi></cell>
+                            <cell><hi rend="italic">σ</hi></cell>
+                            <cell>∑<hi rend="subscript">Be</hi></cell>
+                            <cell><hi rend="italic">σ</hi></cell>
+                        </row>
+                        <row>
+                            <cell>28,4</cell>
+                            <cell>8,88</cell>
+                            <cell>4,3</cell>
+                            <cell>0,66</cell>
+                        </row>
+                    </table>montrent que les résultats fournis par le modèle des courbes de Bézier
+                    sont plus conformes au schéma des indices de rétention, puisque la somme ∑<hi
+                        rend="subscript">M</hi> (où M=L, Be) s'annule pour un ensemble de points se
+                    disposant sur une même droite.</p>
+                <p>En rapportant les composés tests à un autre mélange de <hi rend="italic"
+                    >n</hi>-alcanes consécutifs (C<hi rend="subscript">7</hi>–C<hi rend="subscript"
+                        >17</hi>) on augmente de 7 à 10 l'ordre de la courbe de Bézier, ce qui
+                    entraı̂ne une augmentation de ∑<hi rend="subscript">Be</hi> [=5,8 (0,59)],
+                    cependant que les écarts types (pour <hi rend="italic">I</hi><hi
+                        rend="superscript">7</hi><hi rend="subscript">Be</hi> et <hi rend="italic"
+                        >I</hi><hi rend="superscript">10</hi><hi rend="subscript">Be</hi>) restent
+                    comparables dans l'ensemble; la différence (<hi rend="italic">I</hi><hi
+                        rend="subscript">L</hi>−<hi rend="italic">I</hi><hi rend="superscript"
+                        >10</hi><hi rend="subscript">Be</hi>) est alors de l'ordre de 18 u.i. en
+                    moyenne.</p>
+                <p>La droite de régression:<formula><formula notation="XMLLatex"><math
+                                xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">I<els:sup
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                    >7</els:sup><els:inf
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                        ><els:rm>Be</els:rm></els:inf>=a+bI<els:inf
+                                    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+                                        ><els:rm>L</els:rm></els:inf></math></formula></formula>reliant
+                    les <hi rend="italic">N</hi>=11 couples de valeurs <hi rend="italic">I</hi><hi
+                        rend="subscript">L</hi>/<hi rend="italic">I</hi><hi rend="superscript"
+                        >7</hi><hi rend="subscript">Be</hi> et l'analyse de variance qui s'ensuit
+                    ont été déterminées par la méthode des moindres carrés. Les calculs donnent pour
+                    une probabilité <hi rend="italic">P</hi>=0,999.<table>
+                        <row>
+                            <cell><hi rend="italic">a</hi></cell>
+                            <cell>SE(<hi rend="italic">a</hi>)</cell>
+                            <cell><hi rend="italic">b</hi></cell>
+                            <cell>SE(<hi rend="italic">b</hi>)</cell>
+                            <cell><hi rend="italic">F</hi><hi rend="subscript">obs</hi></cell>
+                            <cell>SE(<hi rend="italic">I</hi>)</cell>
+                        </row>
+                        <row>
+                            <cell>−37,2</cell>
+                            <cell>13,78</cell>
+                            <cell>1,024</cell>
+                            <cell>0,0121</cell>
+                            <cell>7 103,2</cell>
+                            <cell>6,69</cell>
+                        </row>
+                    </table>Les écarts types SE(<hi rend="italic">a</hi>) et SE(<hi rend="italic"
+                        >b</hi>) mesurent la précision avec laquelle ont été obtenus les paramètres
+                        <hi rend="italic">a</hi> et <hi rend="italic">b</hi> si l'on tient compte du
+                    nombre de degrés de liberté (<hi rend="italic">N</hi>−2). Ils ont été utilisés
+                    pour calculer les bornes des intervalles de confiance de <hi rend="italic"
+                        >a</hi> et <hi rend="italic">b</hi> qui ont servi à tester la conformité des
+                    paramètres de la droite (5).</p>
+                <p>Nos résultats sont compatibles, pour une probabilité <hi rend="italic"
+                    >P</hi>=0,999, avec une droite de régression passant par l'origine des
+                    coordonnées, et dont la pente ne s'éloigne pas de façon significative de
+                    l'unité.</p>
+                <p>La valeur de <hi rend="italic">F</hi><hi rend="subscript">obs</hi> montre une
+                    corrélation hautement significative entre <hi rend="italic">I</hi><hi
+                        rend="superscript">7</hi><hi rend="subscript">Be</hi> et <hi rend="italic"
+                        >I</hi><hi rend="subscript">L</hi> (régression quasi-linéaire). L'erreur
+                    standard SE(<hi rend="italic">I</hi>), qui est de l'ordre de 7, mesure l'écart
+                    des couples <hi rend="italic">I</hi><hi rend="subscript">L</hi>/<hi
+                        rend="italic">I</hi><hi rend="superscript">7</hi><hi rend="subscript"
+                        >Be</hi> par rapport à la droite de régression; plus des deux tiers des
+                    points définissant la régression vérifient cette limite.</p>
+                <p>Des considérations pratiques peuvent conduire à rapporter les solutés à des <hi
+                        rend="italic">n</hi>-alcanes alternés, c'est pourquoi nous avons comparé les
+                    indices de rétention calculés par les deux techniques en utilisant les deux
+                    mélanges de standards (C<hi rend="subscript">8</hi>C<hi rend="subscript"
+                        >10</hi>C<hi rend="subscript">12</hi>C<hi rend="subscript">14</hi>C<hi
+                        rend="subscript">16</hi>) et (C<hi rend="subscript">7</hi>C<hi
+                        rend="subscript">9</hi>C<hi rend="subscript">11</hi>C<hi rend="subscript"
+                        >13</hi>C<hi rend="subscript">15</hi>).</p>
+                <p>Comme on peut le voir, la technique des fonctions de Bézier conduit encore à la
+                    meilleure «linéarité» des indices de rétention, qui est même améliorée pour les
+                    deux mélanges de référence, alors que, pour l'interpolation polygonale, on
+                    observe, soit une amélioration (standards alternés impairs), soit une
+                    détérioration (standards alternés pairs) de cette linéarité.<table>
+                        <row>
+                            <cell/>
+                            <cell>Mélange (C<hi rend="subscript">8</hi>–C<hi rend="subscript"
+                                    >10</hi>–C<hi rend="subscript">12</hi>–C<hi rend="subscript"
+                                    >14</hi>–C<hi rend="subscript">16</hi>)</cell>
+                            <cell>Mélange (C<hi rend="subscript">7</hi>–C<hi rend="subscript"
+                                    >9</hi>–C<hi rend="subscript">11</hi>–C<hi rend="subscript"
+                                    >13</hi>–C<hi rend="subscript">15</hi>)</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell><hi rend="italic">I</hi><hi rend="superscript">4</hi><hi
+                                    rend="subscript">Be</hi></cell>
+                            <cell><hi rend="italic">I</hi><hi rend="subscript">L</hi></cell>
+                            <cell><hi rend="italic">I</hi><hi rend="superscript">4</hi><hi
+                                    rend="subscript">Be</hi></cell>
+                            <cell><hi rend="italic">I</hi><hi rend="subscript">L</hi></cell>
+                        </row>
+                        <row>
+                            <cell>∑<hi rend="subscript">M</hi> (<hi rend="italic">σ</hi>)</cell>
+                            <cell>2,1 (0,26)</cell>
+                            <cell>76,0 (20,58)</cell>
+                            <cell>3,9 (0,46)</cell>
+                            <cell>16,9 (7,20)</cell>
+                        </row>
+                    </table></p>
+                <p>À l'exception des écarts types associés aux indices <hi rend="italic">I</hi><hi
+                        rend="superscript">4</hi><hi rend="subscript">Be</hi> (standards pairs) qui
+                    sont les plus petits (<hi rend="italic">P</hi>=0,0042), les écarts types
+                    associés aux trois autres indices ne présentent pas de différences
+                    significatives (pour un risque <hi rend="italic">α</hi>=0,05) avec les écarts
+                    types présentés par les indices de rétention correspondants <hi rend="italic"
+                        >I</hi><hi rend="subscript">L</hi>, calculés de façon classique en
+                    rapportant les solutés à un mélange de <hi rend="italic">n</hi>-alcanes
+                    consécutifs.</p>
+            </div>
+        </body>
+        <back>
+            <div type="references">
+                <head>Références</head>
+                <listBibl>
+                    <biblStruct xml:id="BIB1" n="[1]">
+                        <analytic>
+                            <author><forename type="first"
+                                >L.</forename><surname>Ferchichi</surname></author>
+                            <author><forename type="first"
+                                >D.</forename><surname>Messadi</surname></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">Analusis</title>
+                            <imprint>
+                                <biblScope unit="vol">22</biblScope>
+                                <date when="1994">1994</date>
+                                <biblScope unit="page" from="392">392</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB2" n="[2]">
+                        <analytic>
+                            <author><forename type="first"
+                                >L.</forename><surname>Lourici</surname></author>
+                            <author><forename type="first"
+                                >M.L.</forename><surname>Souici</surname></author>
+                            <author><forename type="first"
+                                >D.</forename><surname>Messadi</surname></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">C. R. Acad. Sci. Paris, série IIc</title>
+                            <imprint>
+                                <biblScope unit="vol">2</biblScope>
+                                <date when="1999">1999</date>
+                                <biblScope unit="page" from="107">107</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <bibl xml:id="BIB3" n="[3]">Lourici L., Souici M.L., Rebbani N., Messadi D.,
+                        Analusis 27 (1999) 249.</bibl>
+                    <bibl xml:id="BIB4" n="[4]">Organisation mondiale de la santé, Directive de
+                        qualité pour l'eau de boisson, vol. 1, Recommandations, Genève, 1985.</bibl>
+                    <bibl xml:id="BIB5" n="[5]">Martin P., Informatique: méthode et application,
+                        Ellipses, Paris, 1989.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
