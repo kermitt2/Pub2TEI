@@ -1,2 +1,61 @@
 <?xml version="1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en"><teiHeader><fileDesc><titleStmt><title>Istex</title><author>Laurent Romary</author></titleStmt><publicationStmt><p>for use by whoever wants it</p></publicationStmt><notesStmt><note type="ns">http://www.example.org/ns/nonTEI</note></notesStmt><sourceDesc><p>created on Sunday 05th October 2014 06:25:09 AM</p></sourceDesc></fileDesc></teiHeader><text><front><divGen type="toc"/></front><body><p>Schema de d&#xE9;veloppement pour le projet Istex, visant &#xE0; couvrir les fichiers TEI g&#xE9;n&#xE9;r&#xE9;s &#xE0; partir des donn&#xE9;es &#xE9;diteur ou de l'extraction automatique issu de Grobid.</p><schemaSpec ident="IstexSchema" docLang="en" prefix="tei_" xml:lang="en"><moduleRef key="core" except=""/><moduleRef key="tei" except=""/><moduleRef key="header" except=""/><moduleRef key="textstructure" except=""/><moduleRef key="namesdates" except=""/><moduleRef key="linking" except=""/><moduleRef key="figures" except=""/></schemaSpec></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Istex</title>
+                <author>Laurent Romary</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>for use by whoever wants it</p>
+            </publicationStmt>
+            <notesStmt>
+                <note type="ns">http://www.example.org/ns/nonTEI</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>created on Sunday 05th October 2014 06:25:09 AM</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p>Schema de d&#xE9;veloppement pour le projet Istex, visant &#xE0; couvrir les fichiers
+                TEI g&#xE9;n&#xE9;r&#xE9;s &#xE0; partir des donn&#xE9;es &#xE9;diteur ou de
+                l'extraction automatique issu de Grobid.</p>
+            <schemaSpec ident="IstexSchema" docLang="en" prefix="tei_" xml:lang="en">
+                <moduleRef url="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/mathml2-main.rng"/>
+                <moduleRef key="core" except=""/>
+                <moduleRef key="tei" except=""/>
+                <moduleRef key="header" except=""/>
+                <moduleRef key="textstructure" except=""/>
+                <moduleRef key="namesdates" except=""/>
+                <moduleRef key="linking" except=""/>
+                <moduleRef key="figures" except=""/>
+                <elementSpec module="figures" ident="formula" mode="change">
+                    <content>
+                        <rng:zeroOrMore>
+                            <rng:choice>
+                                <rng:text/>
+                                <rng:ref name="model.graphicLike"/>
+                                <rng:ref name="model.hiLike"/>
+                                <rng:ref name="mathml.math"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                </elementSpec>
+                
+                <!-- Copied from the TEI example, with Sebastoan Rahtz's comments -->
+                
+                <!-- required to avoid Sanity Checker warnings -->
+                <elementSpec ident="handNote" mode="delete" module="header"/>
+                <elementSpec ident="typeNote" mode="delete" module="header"/>
+                <elementSpec ident="scriptNote" mode="delete" module="header"/>
+                <!-- sanity checker still fails tho, as it cannot find element
+	mathml.math -->
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>

@@ -1,17 +1,1357 @@
 default namespace = "http://www.tei-c.org/ns/1.0"
 namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 namespace ns1 = "http://www.isocat.org/ns/dcr"
+namespace ns2 = "http://www.w3.org/1998/Math/MathML"
 namespace rng = "http://relaxng.org/ns/structure/1.0"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2014-10-05T08:34:11Z. 
-# Edition: Version 2.7.0. Last updated on
+# Schema generated from ODD source 2015-02-15T15:33:50Z. .
+# TEI Edition: Version 2.7.0. Last updated on
 #	16th September 2014, revision 13036
-# Edition Location: http://www.tei-c.org/Vault/P5/Version 2.7.0/
+# TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.7.0/
 #
 
 #
+div {
+  div {
+    math_XLINK.xmlns.attrib = empty
+    MATHML.xmlns.extra.attrib = math_XLINK.xmlns.attrib
+    MATHML.xmlns.attrib = empty, MATHML.xmlns.extra.attrib
+  }
+  MATHML.NamespaceDecl.attrib = MATHML.xmlns.attrib
+  MATHML.Common.attrib =
+    MATHML.NamespaceDecl.attrib,
+    attribute xlink:href { text }?,
+    attribute xlink:type { text }?,
+    attribute class { text }?,
+    attribute style { text }?,
+    attribute id { xsd:ID }?,
+    attribute xref { xsd:IDREF }?,
+    attribute other { text }?
+  mathml.att-fontsize = attribute fontsize { text }?
+  mathml.att-fontweight = attribute fontweight { "normal" | "bold" }?
+  mathml.att-fontstyle = attribute fontstyle { "normal" | "italic" }?
+  mathml.att-fontfamily = attribute fontfamily { text }?
+  mathml.att-color = attribute color { text }?
+  mathml.att-mathvariant = attribute mathvariant { text }?
+  mathml.att-mathsize = attribute mathsize { text }?
+  mathml.att-mathcolor = attribute mathcolor { text }?
+  mathml.att-mathbackground = attribute mathbackground { text }?
+  mathml.att-fontinfo =
+    mathml.att-fontsize,
+    mathml.att-fontweight,
+    mathml.att-fontstyle,
+    mathml.att-fontfamily,
+    mathml.att-color,
+    mathml.att-mathvariant,
+    mathml.att-mathsize,
+    mathml.att-mathcolor,
+    mathml.att-mathbackground
+  mathml.att-form = attribute form { "prefix" | "infix" | "postfix" }?
+  mathml.att-fence = attribute fence { "true" | "false" }?
+  mathml.att-separator = attribute separator { "true" | "false" }?
+  mathml.att-lspace = attribute lspace { text }?
+  mathml.att-rspace = attribute rspace { text }?
+  mathml.att-stretchy = attribute stretchy { "true" | "false" }?
+  mathml.att-symmetric = attribute symmetric { "true" | "false" }?
+  mathml.att-maxsize = attribute maxsize { text }?
+  mathml.att-minsize = attribute minsize { text }?
+  mathml.att-largeop = attribute largeop { "true" | "false" }?
+  mathml.att-movablelimits =
+    attribute movablelimits { "true" | "false" }?
+  mathml.att-accent = attribute accent { "true" | "false" }?
+  mathml.att-opinfo =
+    mathml.att-form,
+    mathml.att-fence,
+    mathml.att-separator,
+    mathml.att-lspace,
+    mathml.att-rspace,
+    mathml.att-stretchy,
+    mathml.att-symmetric,
+    mathml.att-maxsize,
+    mathml.att-minsize,
+    mathml.att-largeop,
+    mathml.att-movablelimits,
+    mathml.att-accent
+  mathml.att-width = attribute width { text }?
+  mathml.att-height = attribute height { text }?
+  mathml.att-depth = attribute depth { text }?
+  mathml.att-linebreak = attribute linebreak { text }?
+  mathml.att-sizeinfo =
+    mathml.att-width, mathml.att-height, mathml.att-depth
+  mathml.att-lquote = attribute lquote { text }?
+  mathml.att-rquote = attribute rquote { text }?
+  mathml.att-linethickness = attribute linethickness { text }?
+  mathml.att-scriptlevel = attribute scriptlevel { text }?
+  mathml.att-displaystyle = attribute displaystyle { "true" | "false" }?
+  mathml.att-scriptsizemultiplier =
+    attribute scriptsizemultiplier { text }?
+  mathml.att-scriptminsize = attribute scriptminsize { text }?
+  mathml.att-background = attribute background { text }?
+  mathml.att-veryverythinmathspace =
+    attribute veryverythinmathspace { text }?
+  mathml.att-verythinmathspace = attribute verythinmathspace { text }?
+  mathml.att-thinmathspace = attribute thinmathspace { text }?
+  mathml.att-mediummathspace = attribute mediummathspace { text }?
+  mathml.att-thickmathspace = attribute thickmathspace { text }?
+  mathml.att-verythickmathspace = attribute verythickmathspace { text }?
+  mathml.att-veryverythickmathspace =
+    attribute veryverythickmathspace { text }?
+  mathml.att-open = attribute open { text }?
+  mathml.att-close = attribute close { text }?
+  mathml.att-separators = attribute separators { text }?
+  mathml.att-subscriptshift = attribute subscriptshift { text }?
+  mathml.att-superscriptshift = attribute superscriptshift { text }?
+  mathml.att-accentunder = attribute accentunder { "true" | "false" }?
+  mathml.att-align = attribute align { text }?
+  mathml.att-numalign = attribute numalign { text }?
+  mathml.att-denomalign = attribute denomalign { text }?
+  mathml.att-rowalign = attribute rowalign { text }?
+  mathml.att-columnalign = attribute columnalign { text }?
+  mathml.att-columnwidth = attribute columnwidth { text }?
+  mathml.att-groupalign = attribute groupalign { text }?
+  mathml.att-alignmentscope = attribute alignmentscope { text }?
+  mathml.att-rowspacing = attribute rowspacing { text }?
+  mathml.att-columnspacing = attribute columnspacing { text }?
+  mathml.att-rowlines = attribute rowlines { text }?
+  mathml.att-columnlines = attribute columnlines { text }?
+  mathml.att-frame = attribute frame { "none" | "solid" | "dashed" }?
+  mathml.att-side =
+    attribute side {
+      "left" | "right" | "leftoverlap" | "rightoverlap"
+    }?
+  mathml.att-framespacing = attribute framespacing { text }?
+  mathml.att-equalrows = attribute equalrows { text }?
+  mathml.att-equalcolumns = attribute equalcolumns { text }?
+  mathml.att-tableinfo =
+    mathml.att-align,
+    mathml.att-rowalign,
+    mathml.att-columnalign,
+    mathml.att-columnwidth,
+    mathml.att-groupalign,
+    mathml.att-alignmentscope,
+    mathml.att-side,
+    mathml.att-rowspacing,
+    mathml.att-columnspacing,
+    mathml.att-rowlines,
+    mathml.att-columnlines,
+    mathml.att-width,
+    mathml.att-frame,
+    mathml.att-framespacing,
+    mathml.att-equalrows,
+    mathml.att-equalcolumns,
+    mathml.att-displaystyle
+  mathml.att-rowspan = attribute rowspan { text }?
+  mathml.att-columnspan = attribute columnspan { text }?
+  mathml.att-edge = attribute edge { "left" | "right" }?
+  mathml.att-actiontype = attribute actiontype { text }?
+  mathml.att-selection = attribute selection { text }?
+  mathml.att-name = attribute name { text }?
+  mathml.att-alt = attribute alt { text }?
+  mathml.att-index = attribute index { text }?
+  mathml.att-bevelled = attribute bevelled { text }?
+  mathml.ptoken =
+    mathml.mi | mathml.mn | mathml.mo | mathml.mtext | mathml.ms
+  mathml.attlist-mi &= MATHML.Common.attrib, mathml.att-fontinfo
+  mathml.attlist-mn &= MATHML.Common.attrib, mathml.att-fontinfo
+  mathml.attlist-mo &=
+    MATHML.Common.attrib, mathml.att-fontinfo, mathml.att-opinfo
+  mathml.attlist-mtext &= MATHML.Common.attrib, mathml.att-fontinfo
+  mathml.attlist-ms &=
+    MATHML.Common.attrib,
+    mathml.att-fontinfo,
+    mathml.att-lquote,
+    mathml.att-rquote
+  mathml.petoken = mathml.mspace
+  mathml.mspace = element ns2:mspace { mathml.attlist-mspace, empty }
+  mathml.any |= mathml.mspace
+  mathml.attlist-mspace &=
+    mathml.att-sizeinfo, mathml.att-linebreak, MATHML.Common.attrib
+  mathml.pgenschema =
+    mathml.mrow
+    | mathml.mfrac
+    | mathml.msqrt
+    | mathml.mroot
+    | mathml.menclose
+    | mathml.mstyle
+    | mathml.merror
+    | mathml.mpadded
+    | mathml.mphantom
+    | mathml.mfenced
+  mathml.attlist-mrow &= MATHML.Common.attrib
+  mathml.attlist-mfrac &=
+    MATHML.Common.attrib,
+    mathml.att-bevelled,
+    mathml.att-numalign,
+    mathml.att-denomalign,
+    mathml.att-linethickness
+  mathml.attlist-msqrt &= MATHML.Common.attrib
+  mathml.attlist-menclose &=
+    MATHML.Common.attrib,
+    [ a:defaultValue = "longdiv" ] attribute notation { text }?
+  mathml.attlist-mroot &= MATHML.Common.attrib
+  mathml.attlist-mstyle &=
+    MATHML.Common.attrib,
+    mathml.att-fontinfo,
+    mathml.att-opinfo,
+    mathml.att-lquote,
+    mathml.att-rquote,
+    mathml.att-linethickness,
+    mathml.att-scriptlevel,
+    mathml.att-scriptsizemultiplier,
+    mathml.att-scriptminsize,
+    mathml.att-background,
+    mathml.att-veryverythinmathspace,
+    mathml.att-verythinmathspace,
+    mathml.att-thinmathspace,
+    mathml.att-mediummathspace,
+    mathml.att-thickmathspace,
+    mathml.att-verythickmathspace,
+    mathml.att-veryverythickmathspace,
+    mathml.att-open,
+    mathml.att-close,
+    mathml.att-separators,
+    mathml.att-subscriptshift,
+    mathml.att-superscriptshift,
+    mathml.att-accentunder,
+    mathml.att-tableinfo,
+    mathml.att-rowspan,
+    mathml.att-columnspan,
+    mathml.att-edge,
+    mathml.att-actiontype,
+    mathml.att-selection
+  mathml.attlist-merror &= MATHML.Common.attrib
+  mathml.attlist-mpadded &=
+    MATHML.Common.attrib, mathml.att-sizeinfo, mathml.att-lspace
+  mathml.attlist-mphantom &= MATHML.Common.attrib
+  mathml.attlist-mfenced &=
+    MATHML.Common.attrib,
+    mathml.att-open,
+    mathml.att-close,
+    mathml.att-separators
+  mathml.pscrschema =
+    mathml.msub
+    | mathml.msup
+    | mathml.msubsup
+    | mathml.munder
+    | mathml.mover
+    | mathml.munderover
+    | mathml.mmultiscripts
+  mathml.attlist-msub &= MATHML.Common.attrib, mathml.att-subscriptshift
+  mathml.attlist-msup &=
+    MATHML.Common.attrib, mathml.att-superscriptshift
+  mathml.attlist-msubsup &=
+    MATHML.Common.attrib,
+    mathml.att-subscriptshift,
+    mathml.att-superscriptshift
+  mathml.attlist-munder &= MATHML.Common.attrib, mathml.att-accentunder
+  mathml.attlist-mover &= MATHML.Common.attrib, mathml.att-accent
+  mathml.attlist-munderover &=
+    MATHML.Common.attrib, mathml.att-accent, mathml.att-accentunder
+  mathml.attlist-mmultiscripts &=
+    MATHML.Common.attrib,
+    mathml.att-subscriptshift,
+    mathml.att-superscriptshift
+  mathml.pscreschema = mathml.mprescripts | mathml.none
+  mathml.mprescripts =
+    element ns2:mprescripts { mathml.attlist-mprescripts, empty }
+  mathml.any |= mathml.mprescripts
+  mathml.attlist-mprescripts &= MATHML.xmlns.attrib
+  mathml.none = element ns2:none { mathml.attlist-none, empty }
+  mathml.any |= mathml.none
+  mathml.attlist-none &= MATHML.xmlns.attrib
+  mathml.ptabschema =
+    mathml.mtable | mathml.mtr | mathml.mlabeledtr | mathml.mtd
+  mathml.attlist-mtable &= MATHML.Common.attrib, mathml.att-tableinfo
+  mathml.attlist-mtr &=
+    MATHML.Common.attrib,
+    mathml.att-rowalign,
+    mathml.att-columnalign,
+    mathml.att-groupalign
+  mathml.attlist-mlabeledtr &=
+    MATHML.Common.attrib,
+    mathml.att-rowalign,
+    mathml.att-columnalign,
+    mathml.att-groupalign
+  mathml.attlist-mtd &=
+    MATHML.Common.attrib,
+    mathml.att-rowalign,
+    mathml.att-columnalign,
+    mathml.att-groupalign,
+    mathml.att-rowspan,
+    mathml.att-columnspan
+  mathml.plschema =
+    mathml.pgenschema | mathml.pscrschema | mathml.ptabschema
+  mathml.peschema = mathml.maligngroup | mathml.malignmark
+  mathml.malignmark =
+    element ns2:malignmark { mathml.attlist-malignmark, empty }
+  mathml.any |= mathml.malignmark
+  mathml.attlist-malignmark &= mathml.att-edge
+  mathml.maligngroup =
+    element ns2:maligngroup { mathml.attlist-maligngroup, empty }
+  mathml.any |= mathml.maligngroup
+  mathml.attlist-maligngroup &=
+    MATHML.Common.attrib, mathml.att-groupalign
+  mathml.mglyph = element ns2:mglyph { mathml.attlist-mglyph, empty }
+  mathml.any |= mathml.mglyph
+  mathml.attlist-mglyph &=
+    mathml.att-alt, mathml.att-fontfamily, mathml.att-index
+  mathml.pactions = mathml.maction
+  mathml.attlist-maction &=
+    MATHML.Common.attrib, mathml.att-actiontype, mathml.att-selection
+  mathml.PresInCont =
+    mathml.ptoken
+    | mathml.petoken
+    | mathml.plschema
+    | mathml.peschema
+    | mathml.pactions
+  mathml.Presentation =
+    mathml.ptoken
+    | mathml.petoken
+    | mathml.pscreschema
+    | mathml.plschema
+    | mathml.peschema
+    | mathml.pactions
+  mathml.att-base = [ a:defaultValue = "10" ] attribute base { text }?
+  mathml.att-closure =
+    [ a:defaultValue = "closed" ] attribute closure { text }?
+  mathml.att-definition =
+    [ a:defaultValue = "" ] attribute definitionURL { text }?
+  mathml.att-encoding =
+    [ a:defaultValue = "" ] attribute encoding { text }?
+  mathml.att-nargs = [ a:defaultValue = "1" ] attribute nargs { text }?
+  mathml.att-occurrence =
+    [ a:defaultValue = "function-model" ] attribute occurrence { text }?
+  mathml.att-order =
+    [ a:defaultValue = "numeric" ] attribute order { text }?
+  mathml.att-scope =
+    [ a:defaultValue = "local" ] attribute scope { text }?
+  mathml.att-type = attribute type { text }?
+  mathml.ctoken = mathml.csymbol | mathml.ci | mathml.cn
+  mathml.attlist-ci &=
+    MATHML.Common.attrib,
+    mathml.att-type,
+    mathml.att-definition,
+    mathml.att-encoding
+  mathml.attlist-csymbol &=
+    MATHML.Common.attrib,
+    mathml.att-encoding,
+    mathml.att-type,
+    mathml.att-definition
+  mathml.attlist-cn &=
+    MATHML.Common.attrib,
+    mathml.att-type,
+    mathml.att-base,
+    mathml.att-definition,
+    mathml.att-encoding
+  mathml.cspecial = mathml.apply | mathml.reln | mathml.lambda
+  mathml.attlist-apply &= MATHML.Common.attrib
+  mathml.attlist-reln &= MATHML.Common.attrib
+  mathml.attlist-lambda &= MATHML.Common.attrib
+  mathml.cother = mathml.condition | mathml.declare | mathml.sep
+  mathml.attlist-condition &= MATHML.Common.attrib
+  mathml.attlist-declare &=
+    MATHML.Common.attrib,
+    mathml.att-type,
+    mathml.att-scope,
+    mathml.att-nargs,
+    mathml.att-occurrence,
+    mathml.att-definition,
+    mathml.att-encoding
+  mathml.sep = element ns2:sep { mathml.attlist-sep, empty }
+  mathml.any |= mathml.sep
+  mathml.attlist-sep &= MATHML.xmlns.attrib
+  mathml.csemantics =
+    mathml.semantics | mathml.annotation | mathml.annotation-xml
+  mathml.attlist-semantics &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.attlist-annotation &= MATHML.Common.attrib, mathml.att-encoding
+  mathml.attlist-annotation-xml &=
+    MATHML.Common.attrib, mathml.att-encoding
+  mathml.cconstructor =
+    mathml.interval
+    | mathml.list
+    | mathml.matrix
+    | mathml.matrixrow
+    | mathml.set
+    | mathml.vector
+    | mathml.piecewise
+  mathml.attlist-interval &= MATHML.Common.attrib, mathml.att-closure
+  mathml.attlist-set &= MATHML.Common.attrib, mathml.att-type
+  mathml.attlist-list &= MATHML.Common.attrib, mathml.att-order
+  mathml.attlist-vector &= MATHML.Common.attrib
+  mathml.attlist-matrix &= MATHML.Common.attrib
+  mathml.attlist-matrixrow &= MATHML.Common.attrib
+  mathml.attlist-piecewise &= MATHML.Common.attrib
+  mathml.attlist-piece &= MATHML.Common.attrib
+  mathml.attlist-otherwise &= MATHML.Common.attrib
+  mathml.c0ary =
+    mathml.integers
+    | mathml.reals
+    | mathml.rationals
+    | mathml.naturalnumbers
+    | mathml.complexes
+    | mathml.primes
+    | mathml.exponentiale
+    | mathml.imaginaryi
+    | mathml.notanumber
+    | mathml.true
+    | mathml.false
+    | mathml.emptyset
+    | mathml.pi
+    | mathml.eulergamma
+    | mathml.infinity
+  mathml.integers =
+    element ns2:integers { mathml.attlist-integers, empty }
+  mathml.any |= mathml.integers
+  mathml.attlist-integers &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.reals = element ns2:reals { mathml.attlist-reals, empty }
+  mathml.any |= mathml.reals
+  mathml.attlist-reals &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.rationals =
+    element ns2:rationals { mathml.attlist-rationals, empty }
+  mathml.any |= mathml.rationals
+  mathml.attlist-rationals &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.naturalnumbers =
+    element ns2:naturalnumbers { mathml.attlist-naturalnumbers, empty }
+  mathml.any |= mathml.naturalnumbers
+  mathml.attlist-naturalnumbers &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.complexes =
+    element ns2:complexes { mathml.attlist-complexes, empty }
+  mathml.any |= mathml.complexes
+  mathml.attlist-complexes &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.primes = element ns2:primes { mathml.attlist-primes, empty }
+  mathml.any |= mathml.primes
+  mathml.attlist-primes &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.exponentiale =
+    element ns2:exponentiale { mathml.attlist-exponentiale, empty }
+  mathml.any |= mathml.exponentiale
+  mathml.attlist-exponentiale &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.imaginaryi =
+    element ns2:imaginaryi { mathml.attlist-imaginaryi, empty }
+  mathml.any |= mathml.imaginaryi
+  mathml.attlist-imaginaryi &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.notanumber =
+    element ns2:notanumber { mathml.attlist-notanumber, empty }
+  mathml.any |= mathml.notanumber
+  mathml.attlist-notanumber &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.true = element ns2:true { mathml.attlist-true, empty }
+  mathml.any |= mathml.true
+  mathml.attlist-true &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.false = element ns2:false { mathml.attlist-false, empty }
+  mathml.any |= mathml.false
+  mathml.attlist-false &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.emptyset =
+    element ns2:emptyset { mathml.attlist-emptyset, empty }
+  mathml.any |= mathml.emptyset
+  mathml.attlist-emptyset &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.pi = element ns2:pi { mathml.attlist-pi, empty }
+  mathml.any |= mathml.pi
+  mathml.attlist-pi &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.eulergamma =
+    element ns2:eulergamma { mathml.attlist-eulergamma, empty }
+  mathml.any |= mathml.eulergamma
+  mathml.attlist-eulergamma &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.infinity =
+    element ns2:infinity { mathml.attlist-infinity, empty }
+  mathml.any |= mathml.infinity
+  mathml.attlist-infinity &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cfuncop1ary =
+    mathml.inverse
+    | mathml.ident
+    | mathml.domain
+    | mathml.codomain
+    | mathml.image
+  mathml.inverse = element ns2:inverse { mathml.attlist-inverse, empty }
+  mathml.any |= mathml.inverse
+  mathml.attlist-inverse &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.domain = element ns2:domain { mathml.attlist-domain, empty }
+  mathml.any |= mathml.domain
+  mathml.attlist-domain &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.codomain =
+    element ns2:codomain { mathml.attlist-codomain, empty }
+  mathml.any |= mathml.codomain
+  mathml.attlist-codomain &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.image = element ns2:image { mathml.attlist-image, empty }
+  mathml.any |= mathml.image
+  mathml.attlist-image &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cfuncopnary = mathml.fn | mathml.compose
+  mathml.attlist-fn &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.ident = element ns2:ident { mathml.attlist-ident, empty }
+  mathml.any |= mathml.ident
+  mathml.attlist-ident &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.compose = element ns2:compose { mathml.attlist-compose, empty }
+  mathml.any |= mathml.compose
+  mathml.attlist-compose &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.carithop1ary =
+    mathml.abs
+    | mathml.conjugate
+    | mathml.exp
+    | mathml.factorial
+    | mathml.arg
+    | mathml.real
+    | mathml.imaginary
+    | mathml.floor
+    | mathml.ceiling
+  mathml.exp = element ns2:exp { mathml.attlist-exp, empty }
+  mathml.any |= mathml.exp
+  mathml.attlist-exp &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.abs = element ns2:abs { mathml.attlist-abs, empty }
+  mathml.any |= mathml.abs
+  mathml.attlist-abs &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arg = element ns2:arg { mathml.attlist-arg, empty }
+  mathml.any |= mathml.arg
+  mathml.attlist-arg &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.real = element ns2:real { mathml.attlist-real, empty }
+  mathml.any |= mathml.real
+  mathml.attlist-real &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.imaginary =
+    element ns2:imaginary { mathml.attlist-imaginary, empty }
+  mathml.any |= mathml.imaginary
+  mathml.attlist-imaginary &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.conjugate =
+    element ns2:conjugate { mathml.attlist-conjugate, empty }
+  mathml.any |= mathml.conjugate
+  mathml.attlist-conjugate &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.factorial =
+    element ns2:factorial { mathml.attlist-factorial, empty }
+  mathml.any |= mathml.factorial
+  mathml.attlist-factorial &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.floor = element ns2:floor { mathml.attlist-floor, empty }
+  mathml.any |= mathml.floor
+  mathml.attlist-floor &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.ceiling = element ns2:ceiling { mathml.attlist-ceiling, empty }
+  mathml.any |= mathml.ceiling
+  mathml.attlist-ceiling &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.carithop1or2ary = mathml.minus
+  mathml.minus = element ns2:minus { mathml.attlist-minus, empty }
+  mathml.any |= mathml.minus
+  mathml.attlist-minus &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.carithop2ary =
+    mathml.quotient | mathml.divide | mathml.power | mathml.rem
+  mathml.quotient =
+    element ns2:quotient { mathml.attlist-quotient, empty }
+  mathml.any |= mathml.quotient
+  mathml.attlist-quotient &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.divide = element ns2:divide { mathml.attlist-divide, empty }
+  mathml.any |= mathml.divide
+  mathml.attlist-divide &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.power = element ns2:power { mathml.attlist-power, empty }
+  mathml.any |= mathml.power
+  mathml.attlist-power &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.rem = element ns2:rem { mathml.attlist-rem, empty }
+  mathml.any |= mathml.rem
+  mathml.attlist-rem &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.carithopnary =
+    mathml.plus
+    | mathml.times
+    | mathml.max
+    | mathml.min
+    | mathml.gcd
+    | mathml.lcm
+  mathml.plus = element ns2:plus { mathml.attlist-plus, empty }
+  mathml.any |= mathml.plus
+  mathml.attlist-plus &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.max = element ns2:max { mathml.attlist-max, empty }
+  mathml.any |= mathml.max
+  mathml.attlist-max &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.min = element ns2:min { mathml.attlist-min, empty }
+  mathml.any |= mathml.min
+  mathml.attlist-min &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.times = element ns2:times { mathml.attlist-times, empty }
+  mathml.any |= mathml.times
+  mathml.attlist-times &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.gcd = element ns2:gcd { mathml.attlist-gcd, empty }
+  mathml.any |= mathml.gcd
+  mathml.attlist-gcd &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.lcm = element ns2:lcm { mathml.attlist-lcm, empty }
+  mathml.any |= mathml.lcm
+  mathml.attlist-lcm &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.carithoproot = mathml.root
+  mathml.root = element ns2:root { mathml.attlist-root, empty }
+  mathml.any |= mathml.root
+  mathml.attlist-root &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.clogicopquant = mathml.exists | mathml.forall
+  mathml.exists = element ns2:exists { mathml.attlist-exists, empty }
+  mathml.any |= mathml.exists
+  mathml.attlist-exists &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.forall = element ns2:forall { mathml.attlist-forall, empty }
+  mathml.any |= mathml.forall
+  mathml.attlist-forall &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.clogicopnary = mathml.and | mathml.or | mathml.xor
+  mathml.and = element ns2:and { mathml.attlist-and, empty }
+  mathml.any |= mathml.and
+  mathml.attlist-and &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.or = element ns2:or { mathml.attlist-or, empty }
+  mathml.any |= mathml.or
+  mathml.attlist-or &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.xor = element ns2:xor { mathml.attlist-xor, empty }
+  mathml.any |= mathml.xor
+  mathml.attlist-xor &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.clogicop1ary = mathml.not
+  mathml.not = element ns2:not { mathml.attlist-not, empty }
+  mathml.any |= mathml.not
+  mathml.attlist-not &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.clogicop2ary = mathml.implies
+  mathml.implies = element ns2:implies { mathml.attlist-implies, empty }
+  mathml.any |= mathml.implies
+  mathml.attlist-implies &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.ccalcop =
+    mathml.log
+    | mathml.int
+    | mathml.diff
+    | mathml.partialdiff
+    | mathml.divergence
+    | mathml.grad
+    | mathml.curl
+    | mathml.laplacian
+  mathml.divergence =
+    element ns2:divergence { mathml.attlist-divergence, empty }
+  mathml.any |= mathml.divergence
+  mathml.attlist-divergence &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.grad = element ns2:grad { mathml.attlist-grad, empty }
+  mathml.any |= mathml.grad
+  mathml.attlist-grad &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.curl = element ns2:curl { mathml.attlist-curl, empty }
+  mathml.any |= mathml.curl
+  mathml.attlist-curl &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.laplacian =
+    element ns2:laplacian { mathml.attlist-laplacian, empty }
+  mathml.any |= mathml.laplacian
+  mathml.attlist-laplacian &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.log = element ns2:log { mathml.attlist-log, empty }
+  mathml.any |= mathml.log
+  mathml.attlist-log &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.int = element ns2:int { mathml.attlist-int, empty }
+  mathml.any |= mathml.int
+  mathml.attlist-int &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.diff = element ns2:diff { mathml.attlist-diff, empty }
+  mathml.any |= mathml.diff
+  mathml.attlist-diff &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.partialdiff =
+    element ns2:partialdiff { mathml.attlist-partialdiff, empty }
+  mathml.any |= mathml.partialdiff
+  mathml.attlist-partialdiff &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.ccalcop1ary = mathml.ln
+  mathml.ln = element ns2:ln { mathml.attlist-ln, empty }
+  mathml.any |= mathml.ln
+  mathml.attlist-ln &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.csetop1ary = mathml.card
+  mathml.card = element ns2:card { mathml.attlist-card, empty }
+  mathml.any |= mathml.card
+  mathml.attlist-card &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.csetop2ary = mathml.setdiff
+  mathml.setdiff = element ns2:setdiff { mathml.attlist-setdiff, empty }
+  mathml.any |= mathml.setdiff
+  mathml.attlist-setdiff &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.csetopnary =
+    mathml.union | mathml.intersect | mathml.cartesianproduct
+  mathml.union = element ns2:union { mathml.attlist-union, empty }
+  mathml.any |= mathml.union
+  mathml.attlist-union &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.intersect =
+    element ns2:intersect { mathml.attlist-intersect, empty }
+  mathml.any |= mathml.intersect
+  mathml.attlist-intersect &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cartesianproduct =
+    element ns2:cartesianproduct {
+      mathml.attlist-cartesianproduct, empty
+    }
+  mathml.any |= mathml.cartesianproduct
+  mathml.attlist-cartesianproduct &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cseqop = mathml.sum | mathml.product | mathml.limit
+  mathml.sum = element ns2:sum { mathml.attlist-sum, empty }
+  mathml.any |= mathml.sum
+  mathml.attlist-sum &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.product = element ns2:product { mathml.attlist-product, empty }
+  mathml.any |= mathml.product
+  mathml.attlist-product &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.limit = element ns2:limit { mathml.attlist-limit, empty }
+  mathml.any |= mathml.limit
+  mathml.attlist-limit &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.ctrigop =
+    mathml.sin
+    | mathml.cos
+    | mathml.tan
+    | mathml.sec
+    | mathml.csc
+    | mathml.cot
+    | mathml.sinh
+    | mathml.cosh
+    | mathml.tanh
+    | mathml.sech
+    | mathml.csch
+    | mathml.coth
+    | mathml.arcsin
+    | mathml.arccos
+    | mathml.arctan
+    | mathml.arccosh
+    | mathml.arccot
+    | mathml.arccoth
+    | mathml.arccsc
+    | mathml.arccsch
+    | mathml.arcsec
+    | mathml.arcsech
+    | mathml.arcsinh
+    | mathml.arctanh
+  mathml.sin = element ns2:sin { mathml.attlist-sin, empty }
+  mathml.any |= mathml.sin
+  mathml.attlist-sin &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cos = element ns2:cos { mathml.attlist-cos, empty }
+  mathml.any |= mathml.cos
+  mathml.attlist-cos &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.tan = element ns2:tan { mathml.attlist-tan, empty }
+  mathml.any |= mathml.tan
+  mathml.attlist-tan &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.sec = element ns2:sec { mathml.attlist-sec, empty }
+  mathml.any |= mathml.sec
+  mathml.attlist-sec &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.csc = element ns2:csc { mathml.attlist-csc, empty }
+  mathml.any |= mathml.csc
+  mathml.attlist-csc &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cot = element ns2:cot { mathml.attlist-cot, empty }
+  mathml.any |= mathml.cot
+  mathml.attlist-cot &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.sinh = element ns2:sinh { mathml.attlist-sinh, empty }
+  mathml.any |= mathml.sinh
+  mathml.attlist-sinh &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cosh = element ns2:cosh { mathml.attlist-cosh, empty }
+  mathml.any |= mathml.cosh
+  mathml.attlist-cosh &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.tanh = element ns2:tanh { mathml.attlist-tanh, empty }
+  mathml.any |= mathml.tanh
+  mathml.attlist-tanh &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.sech = element ns2:sech { mathml.attlist-sech, empty }
+  mathml.any |= mathml.sech
+  mathml.attlist-sech &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.csch = element ns2:csch { mathml.attlist-csch, empty }
+  mathml.any |= mathml.csch
+  mathml.attlist-csch &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.coth = element ns2:coth { mathml.attlist-coth, empty }
+  mathml.any |= mathml.coth
+  mathml.attlist-coth &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arcsin = element ns2:arcsin { mathml.attlist-arcsin, empty }
+  mathml.any |= mathml.arcsin
+  mathml.attlist-arcsin &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arccos = element ns2:arccos { mathml.attlist-arccos, empty }
+  mathml.any |= mathml.arccos
+  mathml.attlist-arccos &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arctan = element ns2:arctan { mathml.attlist-arctan, empty }
+  mathml.any |= mathml.arctan
+  mathml.attlist-arctan &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arccosh = element ns2:arccosh { mathml.attlist-arccosh, empty }
+  mathml.any |= mathml.arccosh
+  mathml.attlist-arccosh &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arccot = element ns2:arccot { mathml.attlist-arccot, empty }
+  mathml.any |= mathml.arccot
+  mathml.attlist-arccot &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arccoth = element ns2:arccoth { mathml.attlist-arccoth, empty }
+  mathml.any |= mathml.arccoth
+  mathml.attlist-arccoth &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arccsc = element ns2:arccsc { mathml.attlist-arccsc, empty }
+  mathml.any |= mathml.arccsc
+  mathml.attlist-arccsc &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arccsch = element ns2:arccsch { mathml.attlist-arccsch, empty }
+  mathml.any |= mathml.arccsch
+  mathml.attlist-arccsch &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arcsec = element ns2:arcsec { mathml.attlist-arcsec, empty }
+  mathml.any |= mathml.arcsec
+  mathml.attlist-arcsec &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arcsech = element ns2:arcsech { mathml.attlist-arcsech, empty }
+  mathml.any |= mathml.arcsech
+  mathml.attlist-arcsech &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arcsinh = element ns2:arcsinh { mathml.attlist-arcsinh, empty }
+  mathml.any |= mathml.arcsinh
+  mathml.attlist-arcsinh &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.arctanh = element ns2:arctanh { mathml.attlist-arctanh, empty }
+  mathml.any |= mathml.arctanh
+  mathml.attlist-arctanh &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cstatopnary =
+    mathml.mean
+    | mathml.sdev
+    | mathml.variance
+    | mathml.median
+    | mathml.mode
+  mathml.mean = element ns2:mean { mathml.attlist-mean, empty }
+  mathml.any |= mathml.mean
+  mathml.attlist-mean &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.sdev = element ns2:sdev { mathml.attlist-sdev, empty }
+  mathml.any |= mathml.sdev
+  mathml.attlist-sdev &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.variance =
+    element ns2:variance { mathml.attlist-variance, empty }
+  mathml.any |= mathml.variance
+  mathml.attlist-variance &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.median = element ns2:median { mathml.attlist-median, empty }
+  mathml.any |= mathml.median
+  mathml.attlist-median &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.mode = element ns2:mode { mathml.attlist-mode, empty }
+  mathml.any |= mathml.mode
+  mathml.attlist-mode &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cstatopmoment = mathml.moment
+  mathml.moment = element ns2:moment { mathml.attlist-moment, empty }
+  mathml.any |= mathml.moment
+  mathml.attlist-moment &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.clalgop1ary = mathml.determinant | mathml.transpose
+  mathml.determinant =
+    element ns2:determinant { mathml.attlist-determinant, empty }
+  mathml.any |= mathml.determinant
+  mathml.attlist-determinant &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.transpose =
+    element ns2:transpose { mathml.attlist-transpose, empty }
+  mathml.any |= mathml.transpose
+  mathml.attlist-transpose &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.clalgop2ary =
+    mathml.vectorproduct | mathml.scalarproduct | mathml.outerproduct
+  mathml.vectorproduct =
+    element ns2:vectorproduct { mathml.attlist-vectorproduct, empty }
+  mathml.any |= mathml.vectorproduct
+  mathml.attlist-vectorproduct &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.scalarproduct =
+    element ns2:scalarproduct { mathml.attlist-scalarproduct, empty }
+  mathml.any |= mathml.scalarproduct
+  mathml.attlist-scalarproduct &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.outerproduct =
+    element ns2:outerproduct { mathml.attlist-outerproduct, empty }
+  mathml.any |= mathml.outerproduct
+  mathml.attlist-outerproduct &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.clalgopnary = mathml.selector
+  mathml.selector =
+    element ns2:selector { mathml.attlist-selector, empty }
+  mathml.any |= mathml.selector
+  mathml.attlist-selector &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cgenrel2ary = mathml.neq | mathml.factorof
+  mathml.neq = element ns2:neq { mathml.attlist-neq, empty }
+  mathml.any |= mathml.neq
+  mathml.attlist-neq &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.factorof =
+    element ns2:factorof { mathml.attlist-factorof, empty }
+  mathml.any |= mathml.factorof
+  mathml.attlist-factorof &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cgenrelnary =
+    mathml.eq
+    | mathml.leq
+    | mathml.lt
+    | mathml.geq
+    | mathml.gt
+    | mathml.equivalent
+    | mathml.approx
+  mathml.eq = element ns2:eq { mathml.attlist-eq, empty }
+  mathml.any |= mathml.eq
+  mathml.attlist-eq &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.equivalent =
+    element ns2:equivalent { mathml.attlist-equivalent, empty }
+  mathml.any |= mathml.equivalent
+  mathml.attlist-equivalent &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.approx = element ns2:approx { mathml.attlist-approx, empty }
+  mathml.any |= mathml.approx
+  mathml.attlist-approx &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.gt = element ns2:gt { mathml.attlist-gt, empty }
+  mathml.any |= mathml.gt
+  mathml.attlist-gt &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.lt = element ns2:lt { mathml.attlist-lt, empty }
+  mathml.any |= mathml.lt
+  mathml.attlist-lt &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.geq = element ns2:geq { mathml.attlist-geq, empty }
+  mathml.any |= mathml.geq
+  mathml.attlist-geq &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.leq = element ns2:leq { mathml.attlist-leq, empty }
+  mathml.any |= mathml.leq
+  mathml.attlist-leq &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.csetrel2ary =
+    mathml.in | mathml.notin | mathml.notsubset | mathml.notprsubset
+  mathml.in = element ns2:in { mathml.attlist-in, empty }
+  mathml.any |= mathml.in
+  mathml.attlist-in &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.notin = element ns2:notin { mathml.attlist-notin, empty }
+  mathml.any |= mathml.notin
+  mathml.attlist-notin &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.notsubset =
+    element ns2:notsubset { mathml.attlist-notsubset, empty }
+  mathml.any |= mathml.notsubset
+  mathml.attlist-notsubset &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.notprsubset =
+    element ns2:notprsubset { mathml.attlist-notprsubset, empty }
+  mathml.any |= mathml.notprsubset
+  mathml.attlist-notprsubset &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.csetrelnary = mathml.subset | mathml.prsubset
+  mathml.subset = element ns2:subset { mathml.attlist-subset, empty }
+  mathml.any |= mathml.subset
+  mathml.attlist-subset &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.prsubset =
+    element ns2:prsubset { mathml.attlist-prsubset, empty }
+  mathml.any |= mathml.prsubset
+  mathml.attlist-prsubset &=
+    MATHML.Common.attrib, mathml.att-definition, mathml.att-encoding
+  mathml.cseqrel2ary = mathml.tendsto
+  mathml.tendsto = element ns2:tendsto { mathml.attlist-tendsto, empty }
+  mathml.any |= mathml.tendsto
+  mathml.attlist-tendsto &=
+    MATHML.Common.attrib,
+    mathml.att-definition,
+    mathml.att-encoding,
+    mathml.att-type
+  mathml.cquantifier =
+    mathml.lowlimit
+    | mathml.uplimit
+    | mathml.bvar
+    | mathml.degree
+    | mathml.logbase
+    | mathml.momentabout
+    | mathml.domainofapplication
+  mathml.attlist-lowlimit &= MATHML.Common.attrib
+  mathml.attlist-uplimit &= MATHML.Common.attrib
+  mathml.attlist-bvar &= MATHML.Common.attrib
+  mathml.attlist-degree &= MATHML.Common.attrib
+  mathml.attlist-logbase &= MATHML.Common.attrib
+  mathml.attlist-momentabout &= MATHML.Common.attrib
+  mathml.attlist-domainofapplication &= MATHML.Common.attrib
+  mathml.cop1ary =
+    mathml.cfuncop1ary
+    | mathml.carithop1ary
+    | mathml.clogicop1ary
+    | mathml.ccalcop1ary
+    | mathml.ctrigop
+    | mathml.clalgop1ary
+    | mathml.csetop1ary
+  mathml.cop2ary =
+    mathml.carithop2ary
+    | mathml.clogicop2ary
+    | mathml.clalgop2ary
+    | mathml.csetop2ary
+  mathml.copnary =
+    mathml.cfuncopnary
+    | mathml.carithopnary
+    | mathml.clogicopnary
+    | mathml.csetopnary
+    | mathml.cstatopnary
+    | mathml.clalgopnary
+  mathml.copmisc =
+    mathml.carithoproot
+    | mathml.carithop1or2ary
+    | mathml.ccalcop
+    | mathml.cseqop
+    | mathml.cstatopmoment
+    | mathml.clogicopquant
+  mathml.crel2ary =
+    mathml.cgenrel2ary | mathml.csetrel2ary | mathml.cseqrel2ary
+  mathml.crelnary = mathml.cgenrelnary | mathml.csetrelnary
+  mathml.Content =
+    mathml.ctoken
+    | mathml.cspecial
+    | mathml.cother
+    | mathml.csemantics
+    | mathml.c0ary
+    | mathml.cconstructor
+    | mathml.cquantifier
+    | mathml.cop1ary
+    | mathml.cop2ary
+    | mathml.copnary
+    | mathml.copmisc
+    | mathml.crel2ary
+    | mathml.crelnary
+  mathml.ContInPres =
+    mathml.ci
+    | mathml.csymbol
+    | mathml.cn
+    | mathml.c0ary
+    | mathml.apply
+    | mathml.fn
+    | mathml.lambda
+    | mathml.reln
+    | mathml.cconstructor
+    | mathml.semantics
+    | mathml.declare
+  mathml.ContentExpression = (mathml.Content | mathml.PresInCont)*
+  mathml.PresExpression = (mathml.Presentation | mathml.ContInPres)*
+  mathml.MathExpression = (mathml.PresInCont | mathml.ContInPres)*
+  mathml.MathMLCharacters = text | mathml.mglyph
+  mathml.ci =
+    element ns2:ci {
+      mathml.attlist-ci, (mathml.MathMLCharacters | mathml.PresInCont)*
+    }
+  mathml.any |= mathml.ci
+  mathml.csymbol =
+    element ns2:csymbol {
+      mathml.attlist-csymbol,
+      (mathml.MathMLCharacters | mathml.PresInCont)*
+    }
+  mathml.any |= mathml.csymbol
+  mathml.cn =
+    element ns2:cn {
+      mathml.attlist-cn,
+      (mathml.MathMLCharacters | mathml.sep | mathml.PresInCont)*
+    }
+  mathml.any |= mathml.cn
+  mathml.apply =
+    element ns2:apply { mathml.attlist-apply, mathml.ContentExpression }
+  mathml.any |= mathml.apply
+  mathml.reln =
+    element ns2:reln { mathml.attlist-reln, mathml.ContentExpression }
+  mathml.any |= mathml.reln
+  mathml.lambda =
+    element ns2:lambda {
+      mathml.attlist-lambda, mathml.ContentExpression
+    }
+  mathml.any |= mathml.lambda
+  mathml.condition =
+    element ns2:condition {
+      mathml.attlist-condition, mathml.ContentExpression
+    }
+  mathml.any |= mathml.condition
+  mathml.declare =
+    element ns2:declare {
+      mathml.attlist-declare, mathml.ContentExpression
+    }
+  mathml.any |= mathml.declare
+  mathml.semantics =
+    element ns2:semantics {
+      mathml.attlist-semantics, mathml.ContentExpression
+    }
+  mathml.any |= mathml.semantics
+  mathml.Annotation.content = text
+  mathml.annotation =
+    element ns2:annotation {
+      mathml.attlist-annotation, mathml.Annotation.content
+    }
+  mathml.any |= mathml.annotation
+  mathml.annotation-xml =
+    element ns2:annotation-xml {
+      mathml.attlist-annotation-xml, mathml.any
+    }
+  mathml.any |= mathml.annotation-xml
+  mathml.interval =
+    element ns2:interval {
+      mathml.attlist-interval, mathml.ContentExpression
+    }
+  mathml.any |= mathml.interval
+  mathml.set =
+    element ns2:set { mathml.attlist-set, mathml.ContentExpression }
+  mathml.any |= mathml.set
+  mathml.list =
+    element ns2:list { mathml.attlist-list, mathml.ContentExpression }
+  mathml.any |= mathml.list
+  mathml.vector =
+    element ns2:vector {
+      mathml.attlist-vector, mathml.ContentExpression
+    }
+  mathml.any |= mathml.vector
+  mathml.matrix =
+    element ns2:matrix {
+      mathml.attlist-matrix, mathml.ContentExpression
+    }
+  mathml.any |= mathml.matrix
+  mathml.matrixrow =
+    element ns2:matrixrow {
+      mathml.attlist-matrixrow, mathml.ContentExpression
+    }
+  mathml.any |= mathml.matrixrow
+  mathml.piecewise =
+    element ns2:piecewise {
+      mathml.attlist-piecewise, mathml.piece*, mathml.otherwise?
+    }
+  mathml.any |= mathml.piecewise
+  mathml.piece =
+    element ns2:piece { mathml.attlist-piece, mathml.ContentExpression }
+  mathml.any |= mathml.piece
+  mathml.otherwise =
+    element ns2:otherwise {
+      mathml.attlist-otherwise, mathml.ContentExpression
+    }
+  mathml.any |= mathml.otherwise
+  mathml.fn =
+    element ns2:fn { mathml.attlist-fn, mathml.ContentExpression }
+  mathml.any |= mathml.fn
+  mathml.lowlimit =
+    element ns2:lowlimit {
+      mathml.attlist-lowlimit, mathml.ContentExpression
+    }
+  mathml.any |= mathml.lowlimit
+  mathml.uplimit =
+    element ns2:uplimit {
+      mathml.attlist-uplimit, mathml.ContentExpression
+    }
+  mathml.any |= mathml.uplimit
+  mathml.bvar =
+    element ns2:bvar { mathml.attlist-bvar, mathml.ContentExpression }
+  mathml.any |= mathml.bvar
+  mathml.degree =
+    element ns2:degree {
+      mathml.attlist-degree, mathml.ContentExpression
+    }
+  mathml.any |= mathml.degree
+  mathml.logbase =
+    element ns2:logbase {
+      mathml.attlist-logbase, mathml.ContentExpression
+    }
+  mathml.any |= mathml.logbase
+  mathml.momentabout =
+    element ns2:momentabout {
+      mathml.attlist-momentabout, mathml.ContentExpression
+    }
+  mathml.any |= mathml.momentabout
+  mathml.domainofapplication =
+    element ns2:domainofapplication {
+      mathml.attlist-domainofapplication, mathml.ContentExpression
+    }
+  mathml.any |= mathml.domainofapplication
+  mathml.mstyle =
+    element ns2:mstyle { mathml.attlist-mstyle, mathml.PresExpression }
+  mathml.any |= mathml.mstyle
+  mathml.merror =
+    element ns2:merror { mathml.attlist-merror, mathml.PresExpression }
+  mathml.any |= mathml.merror
+  mathml.mphantom =
+    element ns2:mphantom {
+      mathml.attlist-mphantom, mathml.PresExpression
+    }
+  mathml.any |= mathml.mphantom
+  mathml.mrow =
+    element ns2:mrow { mathml.attlist-mrow, mathml.PresExpression }
+  mathml.any |= mathml.mrow
+  mathml.mfrac =
+    element ns2:mfrac { mathml.attlist-mfrac, mathml.PresExpression }
+  mathml.any |= mathml.mfrac
+  mathml.msqrt =
+    element ns2:msqrt { mathml.attlist-msqrt, mathml.PresExpression }
+  mathml.any |= mathml.msqrt
+  mathml.menclose =
+    element ns2:menclose {
+      mathml.attlist-menclose, mathml.PresExpression
+    }
+  mathml.any |= mathml.menclose
+  mathml.mroot =
+    element ns2:mroot { mathml.attlist-mroot, mathml.PresExpression }
+  mathml.any |= mathml.mroot
+  mathml.msub =
+    element ns2:msub { mathml.attlist-msub, mathml.PresExpression }
+  mathml.any |= mathml.msub
+  mathml.msup =
+    element ns2:msup { mathml.attlist-msup, mathml.PresExpression }
+  mathml.any |= mathml.msup
+  mathml.msubsup =
+    element ns2:msubsup {
+      mathml.attlist-msubsup, mathml.PresExpression
+    }
+  mathml.any |= mathml.msubsup
+  mathml.mmultiscripts =
+    element ns2:mmultiscripts {
+      mathml.attlist-mmultiscripts, mathml.PresExpression
+    }
+  mathml.any |= mathml.mmultiscripts
+  mathml.munder =
+    element ns2:munder { mathml.attlist-munder, mathml.PresExpression }
+  mathml.any |= mathml.munder
+  mathml.mover =
+    element ns2:mover { mathml.attlist-mover, mathml.PresExpression }
+  mathml.any |= mathml.mover
+  mathml.munderover =
+    element ns2:munderover {
+      mathml.attlist-munderover, mathml.PresExpression
+    }
+  mathml.any |= mathml.munderover
+  mathml.mtable =
+    element ns2:mtable { mathml.attlist-mtable, mathml.PresExpression }
+  mathml.any |= mathml.mtable
+  mathml.mtr =
+    element ns2:mtr { mathml.attlist-mtr, mathml.PresExpression }
+  mathml.any |= mathml.mtr
+  mathml.mlabeledtr =
+    element ns2:mlabeledtr {
+      mathml.attlist-mlabeledtr, mathml.PresExpression
+    }
+  mathml.any |= mathml.mlabeledtr
+  mathml.mtd =
+    element ns2:mtd { mathml.attlist-mtd, mathml.PresExpression }
+  mathml.any |= mathml.mtd
+  mathml.maction =
+    element ns2:maction {
+      mathml.attlist-maction, mathml.PresExpression
+    }
+  mathml.any |= mathml.maction
+  mathml.mfenced =
+    element ns2:mfenced {
+      mathml.attlist-mfenced, mathml.PresExpression
+    }
+  mathml.any |= mathml.mfenced
+  mathml.mpadded =
+    element ns2:mpadded {
+      mathml.attlist-mpadded, mathml.PresExpression
+    }
+  mathml.any |= mathml.mpadded
+  mathml.mi =
+    element ns2:mi {
+      mathml.attlist-mi, (mathml.MathMLCharacters | mathml.malignmark)*
+    }
+  mathml.any |= mathml.mi
+  mathml.mn =
+    element ns2:mn {
+      mathml.attlist-mn, (mathml.MathMLCharacters | mathml.malignmark)*
+    }
+  mathml.any |= mathml.mn
+  mathml.mo =
+    element ns2:mo {
+      mathml.attlist-mo, (mathml.MathMLCharacters | mathml.malignmark)*
+    }
+  mathml.any |= mathml.mo
+  mathml.mtext =
+    element ns2:mtext {
+      mathml.attlist-mtext,
+      (mathml.MathMLCharacters | mathml.malignmark)*
+    }
+  mathml.any |= mathml.mtext
+  mathml.ms =
+    element ns2:ms {
+      mathml.attlist-ms, (mathml.MathMLCharacters | mathml.malignmark)*
+    }
+  mathml.any |= mathml.ms
+  mathml.att-macros = attribute macros { text }?
+  mathml.att-mode = attribute mode { text }?
+  mathml.att-display = attribute display { text }?
+  mathml.att-topinfo =
+    MATHML.Common.attrib,
+    mathml.att-macros,
+    mathml.att-mode,
+    mathml.att-display
+  mathml.att-baseline = attribute baseline { text }?
+  mathml.att-overflow =
+    [ a:defaultValue = "scroll" ]
+    attribute overflow { "scroll" | "elide" | "truncate" | "scale" }?
+  mathml.att-altimg = attribute altimg { text }?
+  mathml.att-alttext = attribute alttext { text }?
+  mathml.att-browif =
+    mathml.att-type,
+    mathml.att-name,
+    mathml.att-height,
+    mathml.att-width,
+    mathml.att-baseline,
+    mathml.att-overflow,
+    mathml.att-altimg,
+    mathml.att-alttext
+  mathml.math =
+    element ns2:math { mathml.attlist-math, mathml.MathExpression }
+  mathml.any |= mathml.math
+  mathml.attlist-math &= mathml.att-topinfo, mathml.att-browif
+  mathml.any |= text
+}
 tei_macro.paraContent =
   (text
    | tei_model.gLike
@@ -440,48 +1780,6 @@ tei_att.global.attribute.xmlspace =
     | 
       ## indicates the intent that applications preserve all white space
       "preserve"
-  }?
-tei_att.handFeatures.attribute.scribe =
-  
-  ## gives a name or other identifier for the scribe believed to be responsible for this hand.
-  attribute scribe { tei_data.name }?
-tei_att.handFeatures.attribute.scribeRef =
-  
-  ## points to a full description of the scribe concerned, typically supplied by a person element elsewhere in the description.
-  attribute scribeRef {
-    list { tei_data.pointer+ }
-  }?
-tei_att.handFeatures.attribute.script =
-  
-  ## characterizes the particular script or writing style used by this hand, for example secretary, copperplate, Chancery, Italian, etc.
-  attribute script {
-    list { tei_data.name+ }
-  }?
-tei_att.handFeatures.attribute.scriptRef =
-  
-  ## points to a full description of the script or writing style used by this hand, typically supplied by a scriptNote element elsewhere in the description.
-  attribute scriptRef {
-    list { tei_data.pointer+ }
-  }?
-tei_att.handFeatures.attribute.medium =
-  
-  ## describes the tint or type of ink, e.g. brown, or other writing medium, e.g. pencil
-  attribute medium {
-    list { tei_data.enumerated+ }
-  }?
-tei_att.handFeatures.attribute.scope =
-  
-  ## specifies how widely this hand is used in the manuscript.
-  attribute scope {
-    
-    ## only this hand is used throughout the manuscript
-    "sole"
-    | 
-      ## this hand is used through most of the manuscript
-      "major"
-    | 
-      ## this hand is used occasionally in the manuscript
-      "minor"
   }?
 tei_att.internetMedia.attributes =
   tei_att.internetMedia.attribute.mimeType
@@ -1060,6 +2358,7 @@ tei_model.offsetLike_sequenceOptional = tei_offset?, tei_geogFeat?
 tei_model.offsetLike_sequenceOptionalRepeatable =
   tei_offset*, tei_geogFeat*
 tei_model.offsetLike_sequenceRepeatable = tei_offset+, tei_geogFeat+
+tei_model.pPart.msdesc = notAllowed
 tei_model.pPart.editorial = tei_choice | tei_abbr | tei_expan
 tei_model.pPart.editorial_alternation =
   tei_choice | tei_abbr | tei_expan
@@ -1115,6 +2414,7 @@ tei_model.pPart.transcriptional_sequenceRepeatable =
 tei_model.pPart.edit =
   tei_model.pPart.editorial | tei_model.pPart.transcriptional
 tei_model.ptrLike = tei_ptr | tei_ref
+tei_model.lPart = notAllowed
 tei_model.global.meta =
   tei_index
   | tei_link
@@ -1127,6 +2427,14 @@ tei_model.global.meta =
 tei_model.milestoneLike =
   tei_milestone | tei_gb | tei_pb | tei_lb | tei_cb | tei_anchor
 tei_model.gLike = notAllowed
+tei_model.oddDecl = notAllowed
+tei_model.oddDecl_alternation = notAllowed
+tei_model.oddDecl_sequence = empty
+tei_model.oddDecl_sequenceOptional = empty
+tei_model.oddDecl_sequenceOptionalRepeatable = empty
+tei_model.oddDecl_sequenceRepeatable = notAllowed
+tei_model.phrase.xml = notAllowed
+tei_model.specDescLike = notAllowed
 tei_model.biblLike =
   tei_bibl | tei_biblStruct | tei_listBibl | tei_biblFull
 tei_model.biblLike_alternation =
@@ -1396,6 +2704,7 @@ tei_model.divWrapper =
   | tei_docDate
 tei_model.divTopPart = tei_model.headLike | tei_opener | tei_signed
 tei_model.divTop = tei_model.divWrapper | tei_model.divTopPart
+tei_model.frontPart.drama = notAllowed
 tei_model.pLike.front =
   tei_head
   | tei_byline
@@ -1506,7 +2815,8 @@ tei_model.biblPart =
   | tei_extent
   | tei_availability
   | tei_listRelation
-tei_model.frontPart = tei_divGen | tei_titlePage
+tei_model.frontPart =
+  tei_model.frontPart.drama | tei_divGen | tei_titlePage
 tei_model.addrPart =
   tei_model.nameLike
   | tei_addrLine
@@ -1520,6 +2830,7 @@ tei_model.pPart.data =
   | tei_model.nameLike
 tei_model.inter =
   tei_model.egLike
+  | tei_model.oddDecl
   | tei_model.biblLike
   | tei_model.labelLike
   | tei_model.listLike
@@ -1530,14 +2841,20 @@ tei_model.phrase =
   tei_model.segLike
   | tei_model.highlighted
   | tei_model.graphicLike
+  | tei_model.pPart.msdesc
   | tei_model.pPart.edit
   | tei_model.ptrLike
+  | tei_model.lPart
+  | tei_model.phrase.xml
+  | tei_model.specDescLike
   | tei_model.pPart.data
 tei_model.limitedPhrase =
   tei_model.hiLike
   | tei_model.emphLike
+  | tei_model.pPart.msdesc
   | tei_model.pPart.editorial
   | tei_model.ptrLike
+  | tei_model.phrase.xml
   | tei_model.pPart.data
 tei_model.divLike = tei_div
 tei_model.divGenLike = tei_divGen
@@ -5313,7 +6630,7 @@ tei_formula =
   
   ## contains a mathematical or other formula. [14.2. ]
   element formula {
-    (text | tei_model.graphicLike | tei_model.hiLike)*,
+    (text | tei_model.graphicLike | tei_model.hiLike | mathml.math)*,
     tei_att.global.attributes,
     
     ## names the notation used for the content of the element.
