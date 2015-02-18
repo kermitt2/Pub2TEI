@@ -126,9 +126,11 @@
             <xsl:value-of select="@year"/>
         </date>
         <availability status="restricted">
-            <p>
-                <xsl:value-of select="@type"/>
-            </p>
+			<licence>
+            	<p>
+               		<xsl:value-of select="@type"/>
+            	</p>
+			</licence>
         </availability>
     </xsl:template>
 
