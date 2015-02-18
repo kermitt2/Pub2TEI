@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../Schemas/IstexSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
     <teiHeader>
         <fileDesc>
@@ -131,10 +132,16 @@
                                 xmlns:xlink="http://www.w3.org/1999/xlink"><els:fen
                                     xmlns:els="http://www.elsevier.com/xml/ja/dtd"><els:cp
                                         type="lcub"/>x=x<els:fen><els:cp type="lpar"/>t<els:cp
-                                            type="rpar"
-                                            /></els:fen>=<els:lim><els:op>∑</els:op><els:ll>i=0</els:ll><els:ul>m</els:ul></els:lim>B<els:inf>(i,m)</els:inf>(t)x<els:inf>i</els:inf>y=y<els:fen><els:cp
-                                            type="lpar"/>t<els:cp type="rpar"
-                                            /></els:fen>=<els:lim><els:op>∑</els:op><els:ll>i=0</els:ll><els:ul>m</els:ul></els:lim>B<els:inf>(i,m)</els:inf>(t)y<els:inf>i</els:inf></els:fen></math></formula></formula><hi
+                                            type="rpar"/></els:fen>=<els:lim>
+                                        <els:op>∑</els:op>
+                                        <els:ll>i=0</els:ll>
+                                        <els:ul>m</els:ul>
+                                    </els:lim>B<els:inf>(i,m)</els:inf>(t)x<els:inf>i</els:inf>y=y<els:fen><els:cp
+                                            type="lpar"/>t<els:cp type="rpar"/></els:fen>=<els:lim>
+                                        <els:op>∑</els:op>
+                                        <els:ll>i=0</els:ll>
+                                        <els:ul>m</els:ul>
+                                    </els:lim>B<els:inf>(i,m)</els:inf>(t)y<els:inf>i</els:inf></els:fen></math></formula></formula><hi
                         rend="italic">t</hi> variant entre 0 et 1, <hi rend="italic">B</hi><hi
                         rend="subscript">(<hi rend="italic">i</hi>,<hi rend="italic">m</hi>)</hi>
                     étant un polynôme de Bernstein:<formula><formula notation="XMLLatex"><math

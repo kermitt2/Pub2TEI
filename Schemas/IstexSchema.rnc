@@ -2,11 +2,12 @@ default namespace = "http://www.tei-c.org/ns/1.0"
 namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
 namespace ns1 = "http://www.isocat.org/ns/dcr"
 namespace ns2 = "http://www.w3.org/1998/Math/MathML"
+namespace ns3 = "http://www.elsevier.com/xml/ja/dtd"
 namespace rng = "http://relaxng.org/ns/structure/1.0"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2015-02-15T15:33:50Z. .
+# Schema generated from ODD source 2015-02-18T15:18:04Z. .
 # TEI Edition: Version 2.7.0. Last updated on
 #	16th September 2014, revision 13036
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.7.0/
@@ -6630,7 +6631,11 @@ tei_formula =
   
   ## contains a mathematical or other formula. [14.2. ]
   element formula {
-    (text | tei_model.graphicLike | tei_model.hiLike | mathml.math)*,
+    (text
+     | tei_model.graphicLike
+     | tei_model.hiLike
+     | mathml.math
+     | els_math)*,
     tei_att.global.attributes,
     
     ## names the notation used for the content of the element.
@@ -6671,4 +6676,204 @@ tei_figDesc =
   element figDesc {
     tei_macro.limitedContent, tei_att.global.attributes, empty
   }
+els_math =
+  
+  ##
+  element ns3:math {
+    mixed { tei_model.fData* }
+  }
+tei_model.fData =
+  els_a
+  | els_ovl
+  | els_ov
+  | els_ovr
+  | els_unl
+  | els_un
+  | els_unr
+  | els_lim
+  | els_fen
+  | els_cp
+  | els_box
+  | els_fr
+  | els_rad
+  | els_arrow
+  | els_ar
+  | els_sup
+  | els_inf
+  | els_b
+  | els_ge
+  | els_it
+  | els_of
+  | els_sc
+  | els_scp
+  | els_ssf
+  | els_ty
+  | els_rm
+els_a =
+  
+  ##
+  element ns3:a { text }
+els_ovl =
+  
+  ##
+  element ns3:ovl { text }
+els_ov =
+  
+  ##
+  element ns3:ov { text }
+els_ovr =
+  
+  ##
+  element ns3:ovr { text }
+els_unl =
+  
+  ##
+  element ns3:unl { text }
+els_un =
+  
+  ##
+  element ns3:un { text }
+els_unr =
+  
+  ##
+  element ns3:unr { text }
+els_lim =
+  
+  ##
+  element ns3:lim { els_op, els_ll?, els_ul? }
+els_op =
+  
+  ##
+  element ns3:op {
+    mixed { tei_model.fData* }
+  }
+els_ll =
+  
+  ##
+  element ns3:ll {
+    mixed { tei_model.fData* }
+  }
+els_ul =
+  
+  ##
+  element ns3:ul {
+    mixed { tei_model.fData* }
+  }
+els_fen =
+  
+  ##
+  element ns3:fen {
+    mixed { (tei_model.fData | els_cp)* }
+  }
+els_cp =
+  
+  ##
+  element ns3:cp {
+    empty,
+    tei_att.typed.attributes,
+    
+    ##
+    attribute style { text }?,
+    empty
+  }
+els_box =
+  
+  ##
+  element ns3:box { text }
+els_fr =
+  
+  ##
+  element ns3:fr {
+    els_nu,
+    els_de,
+    
+    ##
+    attribute shape { text }?,
+    
+    ##
+    attribute align { text }?,
+    
+    ##
+    attribute style { text }?,
+    empty
+  }
+els_nu =
+  
+  ##
+  element ns3:nu {
+    mixed { tei_model.fData* }
+  }
+els_de =
+  
+  ##
+  element ns3:de {
+    mixed { tei_model.fData* }
+  }
+els_rad =
+  
+  ##
+  element ns3:rad { text }
+els_arrow =
+  
+  ##
+  element ns3:arrow { text }
+els_ar =
+  
+  ##
+  element ns3:ar { text }
+els_sup =
+  
+  ##
+  element ns3:sup {
+    mixed { tei_model.fData* }
+  }
+els_inf =
+  
+  ##
+  element ns3:inf {
+    mixed { tei_model.fData* },
+    
+    ##
+    attribute loc { text }?,
+    
+    ##
+    attribute arrange { text }?,
+    empty
+  }
+els_b =
+  
+  ##
+  element ns3:b { text }
+els_ge =
+  
+  ##
+  element ns3:ge { text }
+els_it =
+  
+  ##
+  element ns3:it { text }
+els_of =
+  
+  ##
+  element ns3:of { text }
+els_sc =
+  
+  ##
+  element ns3:sc { text }
+els_scp =
+  
+  ##
+  element ns3:scp { text }
+els_ssf =
+  
+  ##
+  element ns3:ssf { text }
+els_ty =
+  
+  ##
+  element ns3:ty { text }
+els_rm =
+  
+  ##
+  element ns3:rm { text }
 start = tei_TEI | tei_teiCorpus
