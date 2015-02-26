@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.isocat.org/ns/dcr" xmlns:dcr="http://www.isocat.org/ns/dcr" xmlns:mathml="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://www.tei-c.org/ns/1.0" xmlns:dtd="http://www.elsevier.com/xml/ja/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xs:import namespace="http://www.elsevier.com/xml/ja/dtd" schemaLocation="dtd.xsd"/>
+  <xs:import namespace="http://www.tei-c.org/ns/1.0" schemaLocation="IstexSchema.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="mathml.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:attribute name="datcat">
+    <xs:annotation>
+      <xs:documentation>contains a PID (persistent identifier) that aligns the given element with the appropriate Data Category (or categories) in ISOcat.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction>
+        <xs:simpleType>
+          <xs:list itemType="ns1:tei_data.pointer"/>
+        </xs:simpleType>
+        <xs:minLength value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="valueDatcat">
+    <xs:annotation>
+      <xs:documentation>contains a PID (persistent identifier) that aligns the content of the given element or the value of the given attribute with the appropriate simple Data Category (or categories) in ISOcat.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction>
+        <xs:simpleType>
+          <xs:list itemType="ns1:tei_data.pointer"/>
+        </xs:simpleType>
+        <xs:minLength value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>
