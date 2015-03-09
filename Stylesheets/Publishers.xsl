@@ -17,8 +17,12 @@
     <xsl:include href="Nature.xsl"/>
     <xsl:include href="ArticleSetNLMV2.0.xsl"/>
     <xsl:include href="Sage.xsl"/>
-    <xsl:include href="IOPPatch.xsl"/>
-    
+
+	<!-- RL: ajout de mon cas IOP.xsl (traite tout sauf le body) -->
+    <xsl:include href="IOP.xsl"/>
+    <!--
+	<xsl:include href="IOPPatch.xsl"/>
+    -->
     <xsl:include href="SpringerCommon.xsl"/>
 
     <xsl:include href="SpringerStage2.xsl"/>
@@ -74,6 +78,17 @@
             <xsl:when test="tei:TEI">
                 <xsl:message>Converting a TEI article into TEI (probably a damned IOP)</xsl:message>
             </xsl:when>
+            
+            <!-- RL: vérif encore très stricte pour le nouveau cas -->
+            <xsl:when test="(
+                               contains(/article/article-metadata/article-data/copyright, 'IOP')
+                            or contains(/article/article-metadata/jnl-data/jnl-imprint, 'IOP')
+                            or contains(/article/article-metadata/jnl-data/jnl-imprint, 'Institute of Physics')
+                            )
+                            and /article/article-metadata/article-data/article-type[@sort='regular']">
+                <xsl:message>Converting an IOP regular article</xsl:message>
+            </xsl:when>
+            
             <xsl:otherwise>
                 <xsl:message>Converting a non-identified article: - name: <xsl:value-of
                         select="name(*)"/> - local-name: <xsl:value-of select="local-name(*)"/> -

@@ -13,6 +13,9 @@
     <!-- Springer: KeywordGroup, Keyword -->
     <!-- Sage: keywords, keyword -->
     <!-- Elsevier: ce:keyword -->
+    
+    <!-- IOP: classifications/ puis comme Sage keywords/keyword
+              pour l'instant directement traité dans IOP.xsl    -->
 
     <xsl:template
         match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords | BookSubjectGroup">
