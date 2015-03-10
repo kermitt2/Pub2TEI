@@ -21,19 +21,22 @@
         match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords | BookSubjectGroup">
         <textClass>
             <keywords>
-                <list>
-                    <xsl:apply-templates/>
-                </list>
+				<!-- PL: can we sometime grab a @scheme here? -->
+				<!-- PL: <list> under <keywords> is deprecated and <head> not allowed under <keywords> -->
+                <!--list-->
+                    <xsl:apply-templates select="*[not(self::ce:section-title)]"/>
+				<!--/list-->
             </keywords>
         </textClass>
     </xsl:template>
 
     <xsl:template match="keyword | Keyword | ce:keyword | kwd">
-        <item>
+		<!-- PL: <list><item> under <keywords> is deprecated -->
+        <!--item-->
             <term>
                 <xsl:apply-templates/>
             </term>
-        </item>
+		<!--/item-->
     </xsl:template>
 
     <xsl:template match="BookSubject">
@@ -60,17 +63,19 @@
     </xsl:template>
 
     <xsl:template match="compound-kwd-part[@content-type='keyword']">
-        <item>
+		<!-- PL: <list><item> under <keywords> is deprecated -->
+        <!--item-->
             <term>
                 <xsl:apply-templates/>
             </term>
-        </item>
+		<!--/item-->
     </xsl:template>
 
     <xsl:template match="kwd-group/title">
-        <head>
+		<!-- PL: <head> not allowed under <keywords> -->
+        <!--head>
             <xsl:apply-templates/>
-        </head>
+        </head-->
     </xsl:template>
 
     <!-- ABSTRACTS -->
@@ -79,11 +84,11 @@
     <!-- ScholarOne: abstract -->
     <!-- NLM 2.0: Abstract -->
     <!-- NLM 2.3: abstract -->
-    <!--  Elsevier:  -->
+    <!--  Elsevier:  --> <!-- PL: removed, Elsevier abstracts are processed in Elsevier.xsl -->
     <!-- Springer: Abstract, Heading, Para -->
 
 
-    <xsl:template match="abstract | Abstract | ce:abstract">
+    <xsl:template match="abstract | Abstract">
         <xsl:if test=".!=''">
             <div type="abstract">
                 <xsl:variable name="theLanguage">
@@ -109,9 +114,9 @@
 	                    </xsl:attribute>
 					</xsl:if>
                 </xsl:if>
-                <xsl:if test="not(ce:section-title) and not(Heading)">
+                <!--xsl:if test="not(ce:section-title) and not(Heading)">
                     <head>Abstract</head>
-                </xsl:if>
+                </xsl:if-->
                 <xsl:choose>
                     <xsl:when test="p | Para | ce:abstract-sec | AbstractSection">
                         <xsl:apply-templates/>
