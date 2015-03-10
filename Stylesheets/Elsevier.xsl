@@ -70,8 +70,11 @@
                         </biblStruct>
                     </sourceDesc>
                 </fileDesc>
-                <xsl:if test="els:head/ce:keywords | head/ce:keywords">
+                <xsl:if test="els:head/ce:keywords | head/ce:keywords | els:head/ce:abstract | head/ce:abstract">
                     <profileDesc>
+						<!-- PL: abstract is moved from <front> to here -->
+						<xsl:apply-templates select="els:head/ce:abstract | head/ce:abstract"/>
+						
                         <xsl:apply-templates select="els:head/ce:keywords | head/ce:keywords"/>
                     </profileDesc>
                 </xsl:if>
@@ -98,9 +101,10 @@
                 </xsl:if>
             </teiHeader>
             <text>
-                <front>
+				<!-- PL: abstract is moved from <front> to <abstract> under <profileDesc> -->
+                <!--front>
                     <xsl:apply-templates select="els:head/ce:abstract | head/ce:abstract"/>
-                </front>
+                </front-->
                 <body>
                     <xsl:apply-templates select="els:body/*"/>
                     <xsl:apply-templates select="body/*"/>
@@ -136,6 +140,19 @@
 
     <xsl:template match="ce:keyword/ce:text">
         <xsl:apply-templates/>
+    </xsl:template>
+	
+	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
+    <xsl:template match="els:head/ce:abstract | head/ce:abstract">
+		<abstract>
+			<xsl:if test="@xml:lang">
+				<xsl:attribute name="xml:lang">
+					<xsl:value-of select="@xml:lang"/>
+				</xsl:attribute>
+			</xsl:if>		
+			<!-- PL: only paragraphs are taken because <div> are not allowed under <abstract> currently -->
+			<xsl:apply-templates select="*/ce:simple-para"/>
+		</abstract>
     </xsl:template>
 
     <xsl:template match="els:display | ce:display">
