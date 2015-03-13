@@ -38,6 +38,9 @@
                 </fileDesc>
                 <xsl:if test="ArticleHeader/KeywordGroup">
                     <profileDesc>
+						<!-- PL: abstract is moved here from <front> -->
+						<xsl:apply-templates select="ArticleHeader/Abstract"/>
+						
                         <xsl:apply-templates select="ArticleHeader/KeywordGroup"/>
                     </profileDesc>
                 </xsl:if>
@@ -46,9 +49,10 @@
                 </xsl:if>
             </teiHeader>
             <text>
-                <front>
+				<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
+                <!--front>
                     <xsl:apply-templates select="ArticleHeader/Abstract"/>
-                </front>
+                </front-->
                 <body>
                     <xsl:apply-templates select="Body/*"/>
                 </body>

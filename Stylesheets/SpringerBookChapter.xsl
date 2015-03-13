@@ -47,6 +47,10 @@
                     <xsl:otherwise>
                         <xsl:if test="Journal/Volume/Issue/Article/ArticleHeader/KeywordGroup">
                             <profileDesc>
+								<!-- PL: abstract is moved to here from <front> -->
+			                    <xsl:apply-templates
+			                        select="Series/Book/descendant::Chapter/ChapterHeader/Abstract"/>
+								
                                 <xsl:apply-templates
                                     select="Journal/Volume/Issue/Article/ArticleHeader/KeywordGroup"
                                 />
@@ -60,12 +64,13 @@
                 </xsl:choose>
 
             </teiHeader>
-            <text>
+			<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
+            <!--text>
                 <front>
                     <xsl:apply-templates
                         select="Series/Book/descendant::Chapter/ChapterHeader/Abstract"/>
                 </front>
-            </text>
+            </text-->
         </TEI>
     </xsl:template>
 

@@ -28,6 +28,9 @@
                 </fileDesc>
                 <xsl:if test="toBeCompleted">
                     <profileDesc>
+						<!-- PL: abstract is moved from <front> to here -->
+						<xsl:apply-templates select="art-front/abstract"/>
+						
                         <xsl:apply-templates select="front/article-meta/kwd-group"/>
                     </profileDesc>
                 </xsl:if>
@@ -36,9 +39,10 @@
                 </xsl:if>
             </teiHeader>
             <text>
-                <front>
+				<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
+                <!--front>
                     <xsl:apply-templates select="art-front/abstract"/>
-                </front>
+                </front-->
                 <body>
                     <xsl:apply-templates select="art-body/*"/>
                 </body>

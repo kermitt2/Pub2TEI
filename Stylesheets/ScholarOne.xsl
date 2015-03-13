@@ -108,6 +108,9 @@
                 </fileDesc>
                 <xsl:if test="@lang">
                     <profileDesc>
+						<!-- PL: abstract is moved to here from <front> -->
+						<xsl:apply-templates select="abstract"/>
+						
                         <langUsage>
                             <language>
                                 <xsl:attribute name="ident">
@@ -121,9 +124,10 @@
                 </xsl:if>
             </teiHeader>
             <text>
-                <front>
+				<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
+                <!--front>
                     <xsl:apply-templates select="abstract"/>
-                </front>
+                </front-->
                 <body>
                     <xsl:apply-templates select="body/*"/>
                 </body>

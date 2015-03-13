@@ -131,9 +131,7 @@
         </date>
         <availability status="restricted">
 			<licence>
-            	<p>
-               		<xsl:value-of select="@type"/>
-            	</p>
+            	<p><xsl:value-of select="@type"/></p>
 			</licence>
         </availability>
     </xsl:template>
@@ -143,26 +141,23 @@
     </xsl:template>
 	
 	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
-    <xsl:template match="els:head/ce:abstract | head/ce:abstract">
+    <!--xsl:template match="els:head/ce:abstract | head/ce:abstract">
 		<abstract>
 			<xsl:if test="@xml:lang">
 				<xsl:attribute name="xml:lang">
 					<xsl:value-of select="@xml:lang"/>
 				</xsl:attribute>
-			</xsl:if>		
-			<!-- PL: only paragraphs are taken because <div> are not allowed under <abstract> currently -->
+			</xsl:if>
 			<xsl:apply-templates select="*/ce:simple-para"/>
 		</abstract>
-    </xsl:template>
+    </xsl:template-->
 
     <xsl:template match="els:display | ce:display">
         <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="ce:correspondence/ce:text">
-        <p>
-            <xsl:apply-templates/>
-        </p>
+        <p><xsl:apply-templates/></p>
     </xsl:template>
 
     <!-- Revision information -->

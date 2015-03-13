@@ -44,14 +44,18 @@
                 </fileDesc>
                 <xsl:if test="body/keywords">
                     <profileDesc>
+						<!-- PL: abstract is moved from <front> to here -->
+						<xsl:apply-templates select="body/abstract"/>
+						
                         <xsl:apply-templates select="body/keywords"/>
                     </profileDesc>
                 </xsl:if>
             </teiHeader>
             <text>
-                <front>
+				<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
+                <!--front>
                     <xsl:apply-templates select="body/abstract"/>
-                </front>
+                </front-->
                 <body>
                     <xsl:apply-templates select="body/*[name()!='keywords' and name()!='abstract']"
                     />

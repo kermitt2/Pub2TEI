@@ -57,6 +57,18 @@
                     <xsl:otherwise>
                         <xsl:if test="Journal/Volume/Issue/Article/ArticleHeader/KeywordGroup">
                             <profileDesc>
+								<!-- PL: abstract is moved here from <front> -->
+			                    <xsl:choose>
+			                        <xsl:when test="Journal/JournalOnlineFirst">
+			                            <xsl:apply-templates
+			                                select="Journal/JournalOnlineFirst/Article/ArticleHeader/Abstract"/>
+			                        </xsl:when>
+			                        <xsl:otherwise>
+			                            <xsl:apply-templates
+			                                select="Journal/Volume/Issue/Article/ArticleHeader/Abstract"/>
+			                        </xsl:otherwise>
+			                    </xsl:choose>
+								
                                 <xsl:apply-templates
                                     select="Journal/Volume/Issue/Article/ArticleHeader/KeywordGroup"
                                 />
@@ -68,9 +80,9 @@
                         </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
-
             </teiHeader>
-            <text>
+			<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
+            <!--text>
                 <front>
                     <xsl:choose>
                         <xsl:when test="Journal/JournalOnlineFirst">
@@ -83,7 +95,7 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </front>
-            </text>
+            </text-->
         </TEI>
     </xsl:template>
 

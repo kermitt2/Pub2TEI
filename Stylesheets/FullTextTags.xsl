@@ -10,9 +10,7 @@
     <!-- Springer: Para, SimplePara -->
 
     <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para">
-        <p>
-            <xsl:apply-templates/>
-        </p>
+        <p><xsl:apply-templates/></p>
     </xsl:template>
     
     
@@ -169,25 +167,19 @@
     <xsl:template
         match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic']">
         <xsl:if test=".!=''">
-            <hi rend="italic">
-                <xsl:apply-templates/>
-            </hi>
+            <hi rend="italic"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 
     <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold']">
         <xsl:if test=".!=''">
-            <hi rend="bold">
-                <xsl:apply-templates/>
-            </hi>
+            <hi rend="bold"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 
     <xsl:template match="Emphasis[@Type='SmallCaps'] | ce:small-caps | sc | scp">
         <xsl:if test=".!=''">
-            <hi rend="smallCaps">
-                <xsl:apply-templates/>
-            </hi>
+            <hi rend="smallCaps"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 
@@ -223,25 +215,19 @@
 
     <xsl:template match="Subscript | sub | ce:inf">
         <xsl:if test=".!=''">
-            <hi rend="subscript">
-                <xsl:apply-templates/>
-            </hi>
+            <hi rend="subscript"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 
     <xsl:template match="Superscript | sup | ce:sup">
         <xsl:if test=".!=''">
-            <hi rend="superscript">
-                <xsl:apply-templates/>
-            </hi>
+            <hi rend="superscript"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 
     <xsl:template match="underline | ce:underline">
         <xsl:if test=".!=''">
-            <hi rend="underline">
-                <xsl:apply-templates/>
-            </hi>
+            <hi rend="underline"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 

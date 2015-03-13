@@ -42,6 +42,9 @@
                 </fileDesc>
                 <xsl:if test="classinfo">
                     <profileDesc>
+						<!-- PL: abstract is moved from <front> to here -->
+						<xsl:apply-templates select="abstract"/>
+						
                         <xsl:apply-templates select="classinfo"/>
                     </profileDesc>
                 </xsl:if>
@@ -54,9 +57,10 @@
                 </xsl:if>
             </teiHeader>
             <text>
-                <front>
+				<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
+                <!--front>
                     <xsl:apply-templates select="abstract"/>
-                </front>
+                </front-->
                 <body>
                     <xsl:apply-templates select="body/*"/>
                 </body>

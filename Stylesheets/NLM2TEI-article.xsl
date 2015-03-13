@@ -52,6 +52,13 @@
                 </fileDesc>
                 <xsl:if test="front/article-meta/kwd-group">
                     <profileDesc>
+						<!-- PL: abstract is moved from <front> to here -->
+		                <xsl:if test="front/article-meta/abstract">
+		                    <front>
+		                        <xsl:apply-templates select="front/article-meta/abstract"/>
+		                    </front>
+		                </xsl:if>
+						
                         <xsl:apply-templates select="front/article-meta/kwd-group"/>
                     </profileDesc>
                 </xsl:if>
@@ -60,11 +67,12 @@
                 </xsl:if>
             </teiHeader>
             <text>
-                <xsl:if test="front/article-meta/abstract">
+				<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
+                <!--xsl:if test="front/article-meta/abstract">
                     <front>
                         <xsl:apply-templates select="front/article-meta/abstract"/>
                     </front>
-                </xsl:if>
+                </xsl:if-->
                 <!-- No test if made for body since it is considered a mandatory element -->
                 <body>
                     <xsl:apply-templates select="body/*"/>

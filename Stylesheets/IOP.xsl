@@ -138,6 +138,10 @@
                 
                 <!-- métadonnées de profil (thématique et historique du doc) -->
                 <profileDesc>
+					
+                    <!-- Le résumé: abstract -->
+                    <xsl:apply-templates select="header/abstract-group"/>
+					
                     <!-- Reprise directe de toutes les classifications de l'article -->
                     <xsl:apply-templates select="header/classifications"/>
                     <!-- textClass ==> les classCode "pacs"
@@ -146,12 +150,7 @@
                     
                     <!-- history => creation/date+ -->
                     <xsl:apply-templates select="header/history"/>
-                    
-                    <!-- Le résumé: abstract -->
-                    <xsl:apply-templates select="header/abstract-group"/>
-                    <!-- L'abstract doit-il figurer ici dans profileDesc  
-                        ou bien plus bas dans <front> ?  -->
-                    
+
                 </profileDesc>
                 
                 <!-- TODO ici <encodingDesc> ? -->
