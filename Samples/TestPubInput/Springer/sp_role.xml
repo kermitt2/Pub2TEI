@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<Publisher>
+    <PublisherInfo>
+        <PublisherName>Tnoyre Ireynt</PublisherName>
+        <PublisherLocation>Jvrfonqra</PublisherLocation>
+    </PublisherInfo>
+    <Journal>
+        <JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+            <JournalID>87821</JournalID>
+            <JournalPrintISSN>8185-8377</JournalPrintISSN>
+            <JournalElectronicISSN>8315-0589</JournalElectronicISSN>
+            <JournalTitle>Pbagebyyvat haq Znantrzrag</JournalTitle>
+            <JournalSubTitle>Mrvgfpuevsg süe Pbagebyyvat haq Znantrzrag</JournalSubTitle>
+            <JournalAbbreviatedTitle>M Pbageby Znant</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Type="Primary" Code="W">Rpbabzvpf / Znantrzrag
+                    Fpvrapr</JournalSubject>
+                <JournalSubject Type="Secondary" Priority="1" Code="W23016">Nppbhagvat/Nhqvgvat</JournalSubject>
+                <JournalSubject Type="Secondary" Priority="2" Code="W23008">Ohfvarff/Znantrzrag
+                    Fpvrapr, trareny</JournalSubject>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume>
+            <VolumeInfo VolumeType="Regular" TocLevels="0">
+                <VolumeIDStart>52</VolumeIDStart>
+                <VolumeIDEnd>52</VolumeIDEnd>
+                <VolumeIssueCount>F8</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Supplement">
+                <IssueInfo TocLevels="0">
+                    <IssueIDStart>8</IssueIDStart>
+                    <IssueIDEnd>8</IssueIDEnd>
+                    <IssueArticleCount>81</IssueArticleCount>
+                    <IssueHistory>
+                        <CoverDate>
+                            <Year>7996</Year>
+                            <Month>0</Month>
+                        </CoverDate>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>Fcevatre Snpuzrqvra Jvrfonqra</CopyrightHolderName>
+                        <CopyrightYear>7996</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <Article ID="Art8">
+                    <ArticleInfo ArticleType="OriginalPaper" Language="De" TocLevels="0" NumberingStyle="Unnumbered" ContainsESM="No">
+                        <ArticleID>OS96700272</ArticleID>
+                        <ArticleDOI>89.8992/OS96700272</ArticleDOI>
+                        <ArticleSequenceNumber>3</ArticleSequenceNumber>
+                        <ArticleTitle Language="De">Qvr Ohqtrgvrehat orv FXS vfg urhgr ivry
+                            fgäexre na qre fgengrtvfpura Cynahat bevragvreg</ArticleTitle>
+                        <ArticleCategory>Cenkvf &amp; Oenapura</ArticleCategory>
+                        <ArticleFirstPage>07</ArticleFirstPage>
+                        <ArticleLastPage>06</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>7987</Year>
+                                <Month>1</Month>
+                                <Day>81</Day>
+                            </RegistrationDate>
+                            <OnlineDate>
+                                <Year>7987</Year>
+                                <Month>3</Month>
+                                <Day>5</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>Fcevatre Snpuzrqvra Jvrfonqra</CopyrightHolderName>
+                            <CopyrightYear>7996</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="Restricted"/>
+                            <BodyHTMLGrant Grant="Restricted"/>
+                            <BibliographyGrant Grant="Restricted"/>
+                            <ESMGrant Grant="Restricted"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff1" CorrespondingAffiliationID="Aff1">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Thaane</GivenName>
+                                    <FamilyName>Terzyva</FamilyName>
+                                </AuthorName>
+                                <Role>Rkrphgvir Ivpr Cerfvqrag qre NO FXS, qre Zhggretrfryyfpunsg
+                                    qre FXS Tehccr haq Ibefvgmraqre qre Trfpuäsgfsüuehat
+                                    qre qrhgfpura</Role>
+                            </Author>
+                            <Affiliation ID="Aff1">
+                                <OrgAddress>
+                                    <Country>Qrhgfpuynaq</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>

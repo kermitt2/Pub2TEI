@@ -1,0 +1,76 @@
+<!-- Macmillan ELS Entities -->
+<!-- Created 6/6/95, updated 9/1 and 13/2/96 by Ashwin Mistry, updated 9/11/98, 6/3/00 by Derek Revill -->
+
+<!ENTITY disk  "[disk ]"> <!--solid disk-->
+<!ENTITY empty  "[empty ]"> <!--empty set-->
+<!ENTITY frac17  "[frac17 ]"> <!--fraction one seventh-->
+<!ENTITY hash  "[hash ]"> <!--hash-->
+<!ENTITY image  "[image ]"> <!--black-letter I-->
+<!ENTITY phis  "[phis ]"> <!--greek small letter phi-->
+<!ENTITY real  "[real ]"> <!--black-letter R  -->
+<!ENTITY rlhar2  "[rlhar2 ]"> <!--right harpoon over left harpoon-->
+<!ENTITY weierp  "[weierp ]"> <!--script P-->
+<!ENTITY xtilde  "[xtilde ]"> <!--xtilde-->
+<!ENTITY tab  "[tab ]"> <!--Hard Tab-->
+<!ENTITY space  "[space ]"> <!--Hard Space-->
+<!ENTITY rbreve  "[rbreve ]"> <!--r breve-->
+<!ENTITY diamond  "[diamond ]"> <!--black diamond-->
+<!ENTITY dotmin  "[dotmin ]"> <!--dot minus-->
+<!ENTITY Vdot  "[Vdot ]"> <!--V dot-->
+<!ENTITY vdot  "[vdot ]"> <!--v dot-->
+<!ENTITY Qdot  "[Qdot ]"> <!--Q dot-->
+<!ENTITY increm  "[increm ]"> <!--Increment -->
+<!ENTITY larr2  "[larr2 ]"> <!--Left Paired Arrows -->
+<!ENTITY lrarr2  "[lrarr2 ]"> <!--Left Arrow over Right Arrow -->
+<!ENTITY lrhar2  "[lrhar2 ]"> <!--Left Harpoon over Right Harpoon -->
+<!ENTITY nequiv  "[nequiv ]"> <!--Not Identical To -->
+<!ENTITY rarr2  "[rarr2 ]"> <!--Right Paired Arrows -->
+<!ENTITY rhom  "[rhom ]"> <!--White Diamond -->
+<!ENTITY rhomf  "[rhomf ]"> <!--Black Diamond -->
+<!ENTITY rlarr2  "[rlarr2 ]"> <!--Right Arrow over Left Arrow -->
+<!ENTITY ualdarr  "[ualdarr ]"> <!--Up Arrow Left of Down Arrow -->
+<!ENTITY uarr2  "[uarr2 ]"> <!--Up Paired Arrows -->
+<!ENTITY vlolly  "[vlolly ]"> <!--Forms Heavy Up and Light Down -->
+<!ENTITY vmacr  "[vmacr ]"> <!--v Macron -->
+<!ENTITY wavyline  "[wavyline ]"> <!--Wavyline -->
+<!ENTITY xrtri  "[xrtri ]"> <!--White Right Pointing Triangle -->
+<!ENTITY xsquf  "[xsquf ]"> <!--Black Square -->
+<!ENTITY xutrif  "[xutrif ]"> <!--Black Up Pointing Triangle -->
+<!ENTITY Ddot  "[Ddot ]"> <!--D dot -->
+<!ENTITY cirf  "[cirf ]"> <!--Black Circle -->
+<!ENTITY darr2  "[darr2 ]"> <!--Down Paired Arrows -->
+<!ENTITY frachalf  "[frachalf ]"> <!--Fraction one half -->
+<!ENTITY mgrave  "[mgrave ]"> <!--m grave -->
+<!ENTITY ocaron  "[ocaron ]"> <!--o caron -->
+<!ENTITY xmacr  "[xmacr ]"> <!--x macron -->
+<!ENTITY vmltx  "[vmltx ]"> <!--heavy multiplication x -->
+<!ENTITY vert  "[vert ]"> <!--vertical pipe character -->
+
+<!ENTITY Asubiital  "[Asubiital ]"> <!--cap A, superscript i -->
+<!ENTITY Esup1sub0  "[Esup1sub0 ]"> <!--cap italic E, superscript 1, subscript 0 -->
+<!ENTITY Esup1sub0red  "[Esup1sub0red ]"> <!--cap italic E, superscript 1, subscript '0(red)' -->
+<!ENTITY Hsupplus  "[Hsupplus ]"> <!--cap H, superscript plus-->
+<!ENTITY Hsupplussub4  "[Hsupplussub4 ]"> <!--cap H, superscript plus subscript 4-->
+<!ENTITY krarr  "[krarr ]"> <!--small italic k with right facing arrow above-->
+<!ENTITY klarr  "[klarr ]"> <!--small italic k with left facing arrow above-->
+<!ENTITY Kcirc  "[Kcicr ]"> <!--cap K with circumflex-->
+<!ENTITY Ktilde  "[Ktilde ]"> <!--cap K with tilde-->
+<!ENTITY lswirl  "[lswirl ]"> <!--small swirling l-->
+<!ENTITY msup2sub6  "[msup2sub6 ]"> <!--small m, superscript 2 subscript 6-->
+<!ENTITY Nitalmacr  "[Nitalmacr ]"> <!--cap italic N with macron-->
+<!ENTITY Osupminsub2  "[Osupminsub2 ]"> <!--cap O, superscript minus subscript 2-->
+<!ENTITY Osupminsub3  "[Osupminsub3 ]"> <!--cap O, superscipt minus subscript 3-->
+<!ENTITY Odiasupminsub2  "[Odiasupminsub2 ]"> <!--cap O, diatomic oxygen radical, superscript minus -->
+<!ENTITY ksubcat  "[ksubcat ]"> <!--small italic k with subscript 'cat'-->
+<!ENTITY qitalcirc  "[qitalcirc ]"> <!--small italic q with circumflex-->
+<!ENTITY Osup2minsub3  "[Osup2minsub3 ]"> <!--cap O, superscript 2 minus, subscript 3-->
+<!ENTITY Ssub2  "[Ssub2 ]"> <!--cap S, subscript 2-->
+<!ENTITY Ssup2minsub2  "[Ssup2minsub2 ]"> <!--cap S, superscript 2 minus, subscript 2-->
+<!ENTITY sup3sub2T  "[sup3sub2T ]"> <!--superscript 3, subscript2, cap T-->
+<!ENTITY vmacr  "[vmacr ]"> <!--small v with macron-->
+<!ENTITY xitalsuprsubi  "[xitalsuprsubi ]"> <!--small italic x, superscript r, subscript i-->
+<!ENTITY zitalsup2  "[zitalsup2 ]"> <!--small italic z, superscript 2-->
+<!ENTITY Piscripts  "[Piscripts ]"> <!--cap Pi, superscript italic n, subscript i=1-->
+<!ENTITY phimacrital  "[phimacrital ]"> <!--small italic phi with macron-->
+<!ENTITY deltarbar  "[deltarbar ]"> <!--delta small r with overbar-->
+<!ENTITY Yshape  "[Yshape ]"> <!--Y shape symbol-->

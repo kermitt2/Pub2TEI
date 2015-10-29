@@ -1,0 +1,143 @@
+<!--    Elsevier Journal Article Input DTD version 5.1.0
+        Public Identifier: -//ES//DTD journal article DTD version 5.1.0//EN//XML
+        
+        Copyright (c) 1993-2008 Elsevier B.V.
+        $Id: art510.dtd,v 1.4 2008/08/28 06:17:15 rschrauw Exp $
+-->
+
+<!--    Permission to copy and distribute verbatim copies of this document is granted, 
+        provided this notice is included in all copies, but changing it is not allowed. 
+
+        Documentation available at http://www.elsevier.com/locate/xml
+-->
+
+<!--    Supported doctypes: article, simple-article, book-review, exam
+
+        Typical invocations:
+
+        <!DOCTYPE article
+          PUBLIC "-//ES//DTD journal article DTD version 5.1.0//EN//XML"
+          "art510.dtd">
+
+        <!DOCTYPE simple-article 
+          PUBLIC "-//ES//DTD journal article DTD version 5.1.0//EN//XML"
+          "art510.dtd">
+
+        <!DOCTYPE book-review
+          PUBLIC "-//ES//DTD journal article DTD version 5.1.0//EN//XML"
+          "art510.dtd">
+
+        <!DOCTYPE exam
+          PUBLIC "-//ES//DTD journal article DTD version 5.1.0//EN//XML"
+          "art510.dtd">
+
+-->
+
+<!-- include the common element pool -->
+
+<!ENTITY % common.ent
+    PUBLIC "-//ES//ELEMENTS common element pool version 1.1.5//EN//XML"
+    "common115.ent">
+%common.ent;
+
+<!-- namespaces and public identifiers -->
+
+<!ENTITY % ESJA.xmlns       "'http://www.elsevier.com/xml/ja/dtd'" >
+
+<!-- attribute type entities -->
+
+<!ENTITY % docsubtype       "(abs|add|adv|ann|brv|cal|chp|cnf|con|cop|cor|dis|dup|edb|edi|err|exm|
+                              fla|ind|lit|mis|nws|ocn|pgl|pnt|prp|prv|pub|rem|req|ret|rev|sco|ssu)" >
+
+<!-- attribute group entities -->
+
+<!ENTITY % top-level.att
+               "xmlns           CDATA               #FIXED  %ESJA.xmlns;
+                version         CDATA               #FIXED  '5.1'
+                xmlns:ce        CDATA               #FIXED  %ESCE.xmlns;
+                xmlns:sb        CDATA               #FIXED  %ESSB.xmlns;
+                xmlns:xlink     CDATA               #FIXED  %XLINK.xmlns;
+                xml:lang        %iso639;            'en'">
+
+<!-- article -->
+
+<!ELEMENT   article             ( item-info, ce:floats?, head, body?, tail? )>
+<!ATTLIST   article
+                %top-level.att;
+                docsubtype      %docsubtype;        "fla">
+
+<!-- simplified article, suitable for edi, cor and other pits -->
+
+<!ELEMENT   simple-article      ( item-info, ce:floats?, simple-head, body?, simple-tail? )>
+<!ATTLIST   simple-article
+                %top-level.att;
+                docsubtype      %docsubtype;        #REQUIRED>
+
+<!-- book review -->
+
+<!ELEMENT   book-review         ( item-info, ce:floats?, book-review-head, body?, simple-tail? )>
+<!ATTLIST   book-review
+                %top-level.att;
+                docsubtype      (brv|err)           "brv">
+
+<!-- examination -->
+
+<!ELEMENT   exam                ( item-info, ce:floats?, simple-head,
+                                ( ce:exam-answers | ce:exam-questions )+ )>
+<!ATTLIST   exam
+                %top-level.att;
+                docsubtype      (exm|err)           "exm">
+
+<!-- information about the item -->
+
+<!ELEMENT   item-info           ( jid, aid?, ce:pii, ce:doi?,
+                                  ce:document-thread?, ce:copyright, ce:doctopics?, ce:preprint? )>
+<!ELEMENT   jid                 ( %string.data; )* >
+<!ELEMENT   aid                 ( %string.data; )* >
+
+<!-- article front matter -->
+
+<!ELEMENT   head                ( ce:article-footnote*, ce:markers?,
+                                  ce:dochead?, ce:label?, ce:title, ce:subtitle?,
+                                  ( ce:alt-title, ce:alt-subtitle? )*,
+                                  ce:presented?, ce:dedication?, ce:author-group+, 
+                                  ce:date-received?, ce:date-revised*, ce:date-accepted?,
+                                  ce:miscellaneous?,
+                                  ce:abstract*, ce:keywords*, ce:stereochem* )>
+
+<!ELEMENT   simple-head         ( ce:article-footnote*, ce:markers?,
+                                  ( ( ce:label?, ce:title ) | ( ce:dochead, ce:label?, ce:title? )),
+                                  ce:subtitle?,
+                                  ( ce:alt-title, ce:alt-subtitle? )*,
+                                  ce:author-group*, 
+                                  ce:date-received?, ce:date-revised*, ce:date-accepted?, 
+                                  ce:miscellaneous?,
+                                  ce:abstract*, ce:keywords* )>
+
+<!ELEMENT   book-review-head    ( ce:article-footnote*, ce:markers?,
+                                  ( ( ce:label?, ce:title, ce:alt-title* ) | 
+                                    ( ce:dochead, ce:label?, ( ce:title, ce:alt-title* )? ) ), 
+                                  ( sb:reference | ce:other-ref )+,
+                                  ce:author-group+,
+                                  ce:date-received?, ce:date-revised*, ce:date-accepted?,
+                                  ce:miscellaneous? )>
+
+<!-- article body -->
+
+<!ELEMENT   body                ( ce:nomenclature?, ce:salutation?,
+                                  ce:sections, ce:acknowledgment?, ce:appendices? )>
+<!ATTLIST   body
+               %common-view.att; >
+
+<!-- article back matter -->
+
+<!ELEMENT   tail                ( ce:bibliography?, ce:further-reading?, 
+                                  ce:glossary?, ce:biography*,
+                                  ( ce:exam-answers | ce:exam-questions | ce:exam-reference )* )>
+<!ATTLIST   tail
+               %common-view.att; >
+
+<!ELEMENT   simple-tail         ( ce:bibliography?, ce:further-reading?,
+                                  ce:glossary?, ce:biography* )>
+<!ATTLIST   simple-tail
+               %common-view.att; >

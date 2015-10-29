@@ -1,0 +1,90 @@
+<!-- ISO PUB: Publishing -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY blank	"&#x2423;"> <!-- significant blank symbol -->
+<!ENTITY blk12	"&#x2592;"> <!-- 50% shaded block -->
+<!ENTITY blk14	"&#x2591;"> <!-- 25% shaded block -->
+<!ENTITY blk34	"&#x2593;"> <!-- 75% shaded block -->
+<!ENTITY block	"&#x2588;"> <!-- full block -->
+<!ENTITY bull	"&#x2022;"> <!-- round bullet, filled -->
+<!ENTITY caret	"&#x2041;"> <!-- caret (insertion mark) -->
+<!ENTITY check	"&#x2713;"> <!-- tick, check mark -->
+<!ENTITY cir	"&#x25CB;"> <!-- circle, open -->
+<!ENTITY clubs	"&#x2663;"> <!-- club suit symbol -->
+<!ENTITY copysr	"&#x2117;"> <!-- sound recording copyright sign -->
+<!ENTITY cross	"&#x2717;"> <!-- ballot cross -->
+<!ENTITY Dagger	"&#x2021;"> <!-- double dagger -->
+<!ENTITY dagger	"&#x2020;"> <!-- dagger -->
+<!ENTITY dash	"&#x2010;"> <!-- hyphen (true graphic) -->
+<!ENTITY diams	"&#x2666;"> <!-- diamond suit symbol -->
+<!ENTITY dlcrop	"&#x230D;"> <!-- downward left crop mark -->
+<!ENTITY drcrop	"&#x230C;"> <!-- downward right crop mark -->
+<!ENTITY dtri	"&#x25BF;"> <!-- down triangle, open -->
+<!ENTITY dtrif	"&#x25BE;"> <!-- dn tri, filled -->
+<!ENTITY emsp	"&#x2003;"> <!-- em space -->
+<!ENTITY emsp13	"&#x2004;"> <!-- 1/3-em space -->
+<!ENTITY emsp14	"&#x2005;"> <!-- 1/4-em space -->
+<!ENTITY ensp	"&#x2002;"> <!-- en space (1/2-em) -->
+<!ENTITY female	"&#x2640;"> <!-- female symbol -->
+<!ENTITY ffilig	"&#xFB03;"> <!-- small ffi ligature -->
+<!ENTITY fflig	"&#xFB00;"> <!-- small ff ligature -->
+<!ENTITY ffllig	"&#xFB04;"> <!-- small ffl ligature -->
+<!ENTITY filig	"&#xFB01;"> <!-- small fi ligature -->
+<!--     fjlig	Unknown unicode character. not in MathML -->
+<!ENTITY flat	"&#x266D;"> <!-- musical flat -->
+<!ENTITY fllig	"&#xFB02;"> <!-- small fl ligature -->
+<!ENTITY frac13	"&#x2153;"> <!-- fraction one-third -->
+<!ENTITY frac15	"&#x2155;"> <!-- fraction one-fifth -->
+<!ENTITY frac16	"&#x2159;"> <!-- fraction one-sixth -->
+<!ENTITY frac23	"&#x2154;"> <!-- fraction two-thirds -->
+<!ENTITY frac25	"&#x2156;"> <!-- fraction two-fifths -->
+<!ENTITY frac35	"&#x2157;"> <!-- fraction three-fifths -->
+<!ENTITY frac45	"&#x2158;"> <!-- fraction four-fifths -->
+<!ENTITY frac56	"&#x215A;"> <!-- fraction five-sixths -->
+<!ENTITY hairsp	"&#x200A;"> <!-- hair space -->
+<!ENTITY hearts	"&#x2665;"> <!-- heart suit symbol -->
+<!ENTITY hellip	"&#x2026;"> <!-- ellipsis (horizontal) -->
+<!ENTITY hybull	"&#x2043;"> <!-- rectangle, filled (hyphen bullet) -->
+<!ENTITY incare	"&#x2105;"> <!-- in care-of symbol-->
+<!ENTITY ldquor	"&#x201E;"> <!-- rising dbl quote, left (low) -->
+<!ENTITY lhblk	"&#x2584;"> <!-- lower half block -->
+<!ENTITY loz	"&#x25CA;"> <!-- lozenge or total mark -->
+<!ENTITY lozf	"&#x29EB;"> <!-- black lozenge -->
+<!ENTITY lsquor	"&#x201A;"> <!-- rising single quote, left (low) -->
+<!ENTITY ltri	"&#x25C3;"> <!-- l triangle, open -->
+<!ENTITY ltrif	"&#x25C2;"> <!-- l tri, filled -->
+<!ENTITY male	"&#x2642;"> <!-- male symbol -->
+<!ENTITY malt	"&#x2720;"> <!-- maltese cross -->
+<!ENTITY marker	"&#x25AE;"> <!-- histogram marker -->
+<!ENTITY mdash	"&#x2014;"> <!-- em dash -->
+<!ENTITY mldr	"&#x2026;"> <!-- em leader -->
+<!ENTITY natur	"&#x266E;"> <!-- music natural -->
+<!ENTITY ndash	"&#x2013;"> <!-- en dash -->
+<!ENTITY nldr	"&#x2025;"> <!-- double baseline dot (en leader) -->
+<!ENTITY numsp	"&#x2007;"> <!-- digit space (width of a number) -->
+<!ENTITY phone	"&#x260E;"> <!-- telephone symbol -->
+<!ENTITY puncsp	"&#x2008;"> <!-- punctuation space (width of comma) -->
+<!ENTITY rdquor	"&#x201D;"> <!-- rising dbl quote, right (high) -->
+<!ENTITY rect	"&#x25AD;"> <!-- rectangle, open -->
+<!ENTITY rsquor	"&#x2019;"> <!-- rising single quote, right (high) -->
+<!ENTITY rtri	"&#x25B9;"> <!-- r triangle, open -->
+<!ENTITY rtrif	"&#x25B8;"> <!-- r tri, filled -->
+<!ENTITY rx	"&#x211E;"> <!-- Pharmaceutical prescription (Rx) -->
+<!ENTITY sext	"&#x2736;"> <!-- sextile (6-pointed star) -->
+<!ENTITY sharp	"&#x266F;"> <!-- musical sharp -->
+<!ENTITY spades	"&#x2660;"> <!-- spades suit symbol-->
+<!ENTITY squ	"&#x25A1;"> <!-- square, open -->
+<!ENTITY squf	"&#x25AA;"> <!-- sq bullet, filled -->
+<!ENTITY star	"&#x22C6;"> <!-- Star operator. MathML: 2606 for star, open -->
+<!ENTITY starf	"&#x2605;"> <!-- star, filled -->
+<!ENTITY target	"&#x2316;"> <!-- register mark or target -->
+<!ENTITY telrec	"&#x2315;"> <!-- telephone recorder, symbol -->
+<!ENTITY thinsp	"&#x2009;"> <!-- thin space (1/6-em) -->
+<!ENTITY uhblk	"&#x2580;"> <!-- upper half block -->
+<!ENTITY ulcrop	"&#x230F;"> <!-- upward left crop mark -->
+<!ENTITY urcrop	"&#x230E;"> <!-- upward right crop mark -->
+<!ENTITY utri	"&#x25B5;"> <!-- up triangle, open -->
+<!ENTITY utrif	"&#x25B4;"> <!-- up tri, filled -->
+<!ENTITY vellip	"&#x22EE;"> <!-- verticle ellipsis -->

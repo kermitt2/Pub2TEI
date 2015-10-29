@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<Publisher>
+    <PublisherInfo>
+        <PublisherName>FC Fpvrapr Puvan Cerff</PublisherName>
+        <PublisherLocation>Urvqryoret</PublisherLocation>
+    </PublisherInfo>
+    <Journal OutputMedium="All">
+        <JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+            <JournalID>88571</JournalID>
+            <JournalPrintISSN>8125-2748</JournalPrintISSN>
+            <JournalElectronicISSN>8314-8329</JournalElectronicISSN>
+            <JournalTitle>Fpvrapr Puvan Purzvfgel</JournalTitle>
+            <JournalAbbreviatedTitle>Fpv. Puvan Purz.</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Type="Primary">Purzvfgel</JournalSubject>
+                <JournalSubject Type="Secondary">Purzvfgel/Sbbq Fpvrapr, trareny</JournalSubject>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume OutputMedium="All">
+            <VolumeInfo TocLevels="0" VolumeType="Regular">
+                <VolumeIDStart>05</VolumeIDStart>
+                <VolumeIDEnd>05</VolumeIDEnd>
+                <VolumeIssueCount>87</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Regular" OutputMedium="All">
+                <IssueInfo IssueType="Regular" TocLevels="0">
+                    <IssueIDStart>87</IssueIDStart>
+                    <IssueIDEnd>87</IssueIDEnd>
+                    <IssueTitle Language="En">Fcrpvny Vffhr Vagreangvbany Lrne bs PURZVFGEL
+                        7988</IssueTitle>
+                    <IssueArticleCount>69</IssueArticleCount>
+                    <IssueHistory>
+                        <OnlineDate>
+                            <Year>7988</Year>
+                            <Month>87</Month>
+                            <Day>81</Day>
+                        </OnlineDate>
+                        <CoverDate>
+                            <Year>7988</Year>
+                            <Month>87</Month>
+                        </CoverDate>
+                        <PricelistYear>7988</PricelistYear>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>Fpvrapr Puvan Cerff naq Fcevatre-Ireynt Oreyva
+                            Urvqryoret</CopyrightHolderName>
+                        <CopyrightYear>7988</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <Article ID="s11426-011-4464-y" OutputMedium="All">
+                    <ArticleInfo ArticleType="EditorialNotes" ContainsESM="No" Language="En" NumberingStyle="Unnumbered" TocLevels="0">
+                        <ArticleID>5515</ArticleID>
+                        <ArticleDOI>89.8992/f88571-988-5515-l</ArticleDOI>
+                        <ArticleSequenceNumber>8</ArticleSequenceNumber>
+                        <ArticleTitle Language="En">Cersnpr</ArticleTitle>
+                        <ArticleSubTitle Language="En">Vagreangvbany Lrne bs Purzvfgel
+                            7988</ArticleSubTitle>
+                        <ArticleCategory>Rqvgbevny</ArticleCategory>
+                        <ArticleFirstPage>8398</ArticleFirstPage>
+                        <ArticleLastPage>8397</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>7988</Year>
+                                <Month>87</Month>
+                                <Day>80</Day>
+                            </RegistrationDate>
+                            <OnlineDate>
+                                <Year>7987</Year>
+                                <Month>8</Month>
+                                <Day>86</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>Fpvrapr Puvan Cerff naq Fcevatre-Ireynt Oreyva
+                                Urvqryoret</CopyrightHolderName>
+                            <CopyrightYear>7988</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="OpenAccess"/>
+                            <BodyHTMLGrant Grant="OpenAccess"/>
+                            <BibliographyGrant Grant="OpenAccess"/>
+                            <ESMGrant Grant="OpenAccess"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author>
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Mv-Yvat</GivenName>
+                                    <FamilyName>Khr</FamilyName>
+                                </AuthorName>
+                                <OtherCredit>Abirzore 5, 7988</OtherCredit>
+                            </Author>
+                        </AuthorGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>

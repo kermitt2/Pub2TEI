@@ -1,0 +1,9 @@
+iop-file-type: text
+$Id$
+
+The files in this directory contain the official W3C definitions of ISO-8879
+entities, copied from http://www.w3.org/2003/entities/iso8879doc/overview.html
+
+Do not modify these files, except to keep them up to date with the W3C
+definitions. The W3C Id CVS tags should be preserved by changing the dollar
+signs to percent signs.

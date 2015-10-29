@@ -1,0 +1,807 @@
+<!--    Elsevier Common Element Pool v1.1.3
+
+        Copyright (c) 2002-2004 Elsevier B.V.
+        $Id: common113.ent,v 1.1 2004/03/02 12:17:47 rschrauw Exp $
+-->
+
+<!--    Permission to copy and distribute verbatim copies of this document is granted, 
+        provided this notice is included in all copies, but changing it is not allowed. 
+
+        Documentation available at http://www.elsevier.com/locate/xml
+-->
+
+<!--    Typical invocation:
+        <!ENTITY % common.ent
+            PUBLIC "-//ES//ELEMENTS common element pool version 1.1.3//EN//XML"
+            "common113.ent">
+        %common.ent;
+-->
+
+<!-- namespaces and public identifiers -->
+
+<!ENTITY % ESCE.xmlns	"'http://www.elsevier.com/xml/common/dtd'">
+<!ENTITY % ESSB.xmlns   "'http://www.elsevier.com/xml/common/struct-bib/dtd'" >
+<!ENTITY % ESTB.xmlns   "'http://www.elsevier.com/xml/common/table/dtd'" >
+<!ENTITY % XLINK.xmlns  "'http://www.w3.org/1999/xlink'" >
+<!ENTITY % CALS.xmlns	"'http://www.elsevier.com/xml/common/cals/dtd'" >
+
+<!-- notations -->
+
+<!NOTATION TEXT        PUBLIC "-//ES//NOTATION text format//EN" 
+                       "http://www.elsevier.com/xml/common/dtd/notation/text">
+<!NOTATION IMAGE       PUBLIC "-//ES//NOTATION image format//EN" 
+                       "http://www.elsevier.com/xml/common/dtd/notation/image">
+<!NOTATION AUDIO       PUBLIC "-//ES//NOTATION audio format//EN" 
+                       "http://www.elsevier.com/xml/common/dtd/notation/audio">
+<!NOTATION VIDEO       PUBLIC "-//ES//NOTATION video format//EN"
+                       "http://www.elsevier.com/xml/common/dtd/notation/video">
+<!NOTATION APPLICATION PUBLIC "-//ES//NOTATION application format//EN"
+                        "http://www.elsevier.com/xml/common/dtd/notation/application">
+<!NOTATION XML         PUBLIC "-//ES//NOTATION XML format//EN" 
+                       "http://www.elsevier.com/xml/common/dtd/notation/xml">
+
+<!-- element group entities -->
+
+<!ENTITY % font-change      "ce:bold|ce:italic|ce:monospace|ce:sans-serif|ce:small-caps" >
+<!ENTITY % text-effect      "%font-change;|ce:sup|ce:inf|ce:underline|ce:cross-out|ce:hsp|ce:vsp" >
+<!ENTITY % lists            "ce:def-list|ce:list" >
+<!ENTITY % display          "ce:display|ce:displayed-quote|ce:enunciation" >
+<!ENTITY % cross-ref        "ce:cross-ref|ce:intra-ref" >
+<!ENTITY % cross-refs       "ce:cross-refs|ce:intra-refs" >
+<!ENTITY % cross-ref-s      "%cross-ref;|%cross-refs;" >
+<!ENTITY % inter-ref-s      "ce:inter-ref|ce:inter-refs" >
+<!ENTITY % cell-borders     "tb:top-border|tb:left-border|tb:bottom-border|tb:right-border" >
+
+<!-- content entities, local variants defined in DTDs -->
+
+<!ENTITY % local.string.data     "" >
+<!ENTITY % local.richstring.data "" >
+<!ENTITY % local.text.data       "" >
+<!ENTITY % local.textfn.data     "" >
+<!ENTITY % local.textref.data    "" >
+<!ENTITY % local.nondisplay.data "" >
+<!ENTITY % local.note.data       "" >
+<!ENTITY % local.cell.data       "" >
+<!ENTITY % local.spar.data       "" >
+<!ENTITY % local.par.data        "" >
+<!ENTITY % string.data      "#PCDATA %local.string.data;" >
+<!ENTITY % richstring.data  "#PCDATA|ce:glyph|%text-effect;|ce:inline-figure 
+                             %local.richstring.data;" >
+<!ENTITY % text.data        "%richstring.data;|mml:math %local.text.data;" >
+<!ENTITY % textfn.data      "%text.data;|ce:footnote|%cross-ref-s; %local.textfn.data;" >
+<!ENTITY % textref.data     "%text.data;|%cross-ref-s;|%inter-ref-s; %local.textref.data;" >
+<!ENTITY % nondisplay.data  "%textref.data;|ce:footnote|ce:anchor %local.nondisplay.data;" >
+<!ENTITY % note.data        "%textref.data;|%display;|%lists;|ce:anchor %local.note.data;" >
+<!ENTITY % cell.data        "%textref.data;|%display;|%lists;|%cell-borders;|tb:alignmark|ce:br
+                             %local.cell.data;" >
+<!ENTITY % spar.data        "%textref.data;|%display;|%lists;|ce:footnote|ce:anchor
+                             %local.spar.data;" >
+<!ENTITY % par.data         "%textref.data;|ce:float-anchor|%display;|%lists;|ce:footnote|ce:anchor
+                             %local.par.data;" >
+
+<!-- content model entities -->
+
+<!ENTITY % copyright        "ce:copyright" >
+<!ENTITY % name             "( ( ce:given-name, ce:surname ) | ( ce:surname, ce:given-name? ) ),
+                              ce:suffix?" >
+<!ENTITY % parsec           "( ce:para | ce:section )+" >
+<!ENTITY % titles           "( ce:title, ce:subtitle?, ( ce:alt-title, ce:alt-subtitle? )* )" >
+<!ENTITY % sb.titles        "( ( sb:title, sb:translated-title? ) | sb:translated-title )" >
+<!ENTITY % see              "ce:see" >
+
+<!-- attribute type entities -->
+
+<!ENTITY % abstract-class   "(author|editor|graphical|teaser)" >
+<!ENTITY % copyright-type   "(full-transfer|limited-transfer|no-transfer|unknown|us-gov|crown|
+                              society|other|joint)" >
+<!ENTITY % e-address-type   "(email|url)" >
+<!ENTITY % hline            "(bar|tcub|bcub|tsqb|bsqb|circ|tilde|larr|rarr|harr|lharu|rharu|
+                              tpar|bpar)" >
+<!ENTITY % language         "(de|en|es|fr|it|pt|ru)" >
+<!ENTITY % language-type    "(en|non-en|iso|unknown)" >
+<!ENTITY % loc              "(pre|post)" >
+<!ENTITY % style            "(s|d|t|da|dot|b|bl|n)" >
+<!ENTITY % view             "(compact|standard|extended|compact-standard|standard-extended|all)" >
+<!ENTITY % vline            "(lpar|rpar|lsqb|rsqb|lcub|rcub|lang|rang|vb|sol|bsol|lceil|rceil|
+                              lfloor|rfloor|dharr|uharr|darr|uarr|varr)" >
+
+<!-- attribute type entities iso -->
+
+<!-- see links at http://www.w3.org/TR/REC-xml#sec-lang-tag -->
+<!ENTITY % iso639-cur       "aa|ab|af|am|ar|as|ay|az|ba|be|bg|bh|bi|bn|bo|br|ca|co|cs|cy|da|de|dz|
+  el|en|eo|es|et|eu|fa|fi|fj|fo|fr|fy|ga|gd|gl|gn|gu|ha|he|hi|hr|hu|hy|ia|id|ie|ik|is|it|ja|jw|ka|
+  kk|kl|km|kn|ko|ks|ku|ky|la|ln|lo|lt|lv|mg|mi|mk|ml|mn|mo|mr|ms|mt|my|na|ne|nl|no|oc|om|or|pa|pl|
+  ps|pt|qu|rm|rn|ro|ru|rw|sa|sd|sg|si|sk|sl|sm|sn|so|sq|sr|ss|st|su|sv|sw|ta|te|tg|th|ti|tk|tl|tn|
+  to|tr|ts|tt|tw|uk|ur|uz|vi|vo|wo|xh|yi|yo|zh|zu" >
+<!ENTITY % iso639-obs       "" >
+<!ENTITY % iso639           "(%iso639-cur; %iso639-obs;)" >
+
+<!ENTITY % glyph-names      '(S|bigdot|btmlig|camb|ctl|dbnd|dbnd6|dcurt|dlcorn|drcorn|ggrave|hbar|
+  heng|herma|hris|hriss|hrttrh|ht|jnodot|lbd2bd|lbd2td|lbond2|lbond3|lozf|lozfl|lozfr|lris|
+  lriss|ncurt|nsmid|nspar|pSlash|pdbdtd|pdbond|pent|phktp|ptbdbd|ptbdtd|qbnd|qbnd6|rad|rbd2bd|
+  rbd2td|rbond2|rbond3|refhrl|resmck|risfla|risfls|sbnd|sbw|smid|spar|sqfb|sqfne|sqfsw|sqft|tbnd|
+  tbnd6|tcurt|trisla|trnomeg)' >
+
+<!-- attribute group entities -->
+
+<!-- optref: optional target for a cross-ref or intra-ref -->
+<!-- reqref: target for a cross-ref or intra-ref -->
+<!-- link:   optional target for an external link -->
+<!ENTITY % common-link.att        "id      ID       #IMPLIED" >
+<!ENTITY % common-optref-link.att "id      ID       #IMPLIED" >
+<!ENTITY % common-optref.att      "id      ID       #IMPLIED" >
+<!ENTITY % common-reqref-link.att "id      ID       #REQUIRED" >
+<!ENTITY % common-reqref.att      "id      ID       #REQUIRED" >
+<!ENTITY % common-role.att        "role    CDATA    #IMPLIED" >
+<!ENTITY % common-altimg.att      "altimg  CDATA    #IMPLIED" >
+<!ENTITY % common-view.att        "view    %view;   'all'" >
+<!ENTITY % external-file.att      "locator ENTITY  #REQUIRED">
+
+<!-- general purpose elements -->
+
+<!ELEMENT   ce:text             ( %text.data; )* >
+<!ATTLIST   ce:text
+                %common-link.att; >
+<!ELEMENT   ce:textfn           ( %textfn.data; )* >
+<!ATTLIST   ce:textfn
+                %common-link.att; >
+<!ELEMENT   ce:textref          ( %textref.data; )* >
+<!ATTLIST   ce:textref
+                %common-link.att; >
+<!ELEMENT   ce:label            ( %text.data; )* >
+<!ELEMENT   ce:section-title    ( %nondisplay.data; )* >
+<!ATTLIST   ce:section-title
+                %common-link.att; >
+
+<!-- information about the item -->
+
+<!ELEMENT   ce:pii              ( %string.data; )* >
+<!ELEMENT   ce:doi              ( %string.data; )* >
+<!ELEMENT   ce:isbn             ( %string.data; )* >
+<!ELEMENT   ce:issn             ( %string.data; )* >
+<!ELEMENT   ce:document-thread  ( ce:refers-to-document+ ) >
+<!ELEMENT   ce:refers-to-document ( ce:doi | ( ce:pii, ce:doi? ) ) >
+<!ELEMENT   ce:copyright        ( %string.data; )* >
+<!ATTLIST   ce:copyright
+                type            %copyright-type;    #REQUIRED
+                year            NMTOKEN             #REQUIRED>
+<!ELEMENT   ce:copyright-line   ( %richstring.data; )* >
+<!ELEMENT   ce:imprint          ( %richstring.data; )* >
+<!ELEMENT   ce:edition          ( %string.data; )* >
+<!ELEMENT   ce:doctopics        ( ce:doctopic+ )>
+<!ELEMENT   ce:doctopic         ( ce:text, ce:doctopic? )>
+<!ATTLIST   ce:doctopic
+                %common-role.att; >
+<!ELEMENT   ce:preprint         ( ce:inter-ref )>
+
+<!-- article footnote -->
+
+<!ELEMENT   ce:article-footnote ( ce:label?, ce:note-para+ )>
+
+<!-- article dochead, article title, alternative-language title, subtitle -->
+
+<!ELEMENT   ce:dochead          ( ce:textfn, ce:dochead? )>
+<!ELEMENT   ce:title            ( %textfn.data; )* >
+<!ELEMENT   ce:alt-title        ( %textfn.data; )* >
+<!ATTLIST   ce:alt-title
+                xml:lang        %language;          #REQUIRED>
+<!ELEMENT   ce:subtitle         ( %textfn.data; )* >
+<!ELEMENT   ce:alt-subtitle     ( %textfn.data; )* >
+<!ATTLIST   ce:alt-subtitle
+                xml:lang        %language;          #REQUIRED>
+
+<!-- presented by/at, dedication -->
+
+<!ELEMENT   ce:presented        ( %textfn.data; )* >
+<!ELEMENT   ce:dedication       ( %textfn.data; )* >
+
+<!-- author group -->
+
+<!ELEMENT   ce:author-group     ( ( ce:collaboration | ce:author )+,
+                                  ce:affiliation*, ce:correspondence*, ce:footnote* )>
+
+<!ELEMENT   ce:collaboration    ( ce:indexed-name?, ce:text, (%cross-ref;)*, ce:collab-aff? )>
+                                    <!-- only 1-1 xrefs to affiliation,correspondence,footnote -->
+<!ATTLIST   ce:collaboration
+                %common-link.att; 
+                %common-role.att; >
+<!ELEMENT   ce:collab-aff       ( %text.data; )* >
+
+<!ELEMENT   ce:author           ( ce:initials?, ce:indexed-name?, ce:degrees?, %name;, ce:degrees?,
+                                  ce:ranking?, ce:roles?, (%cross-ref;)*, ce:e-address*, ce:link? )>
+                                    <!-- only 1-1 xrefs to affiliation,correspondence,footnote -->
+<!ATTLIST   ce:author
+                %common-link.att;
+                %common-role.att;
+                author-id       CDATA               #IMPLIED
+                biographyid     IDREF               #IMPLIED>
+<!ELEMENT   ce:initials         ( %string.data; )* >
+<!ELEMENT   ce:indexed-name     ( %string.data; )* >
+<!ELEMENT   ce:degrees          ( %richstring.data; )* >
+<!ELEMENT   ce:given-name       ( %richstring.data; )* >
+<!ELEMENT   ce:surname          ( %text.data; )* >
+<!ELEMENT   ce:suffix           ( %richstring.data; )* >
+<!ELEMENT   ce:ranking          ( %richstring.data; )* >
+<!ELEMENT   ce:roles            ( %richstring.data; )* >
+
+<!ELEMENT   ce:correspondence   ( ce:label, ce:text )>
+<!ATTLIST   ce:correspondence
+                %common-reqref.att; >
+
+<!ELEMENT   ce:e-address        ( %text.data; )* >
+<!ATTLIST   ce:e-address
+                type            %e-address-type;          "email">
+
+<!ELEMENT   ce:affiliation      ( ce:label?, ce:textfn ) >
+<!ATTLIST   ce:affiliation
+                %common-optref-link.att; 
+                %common-role.att; >
+
+<!-- editors -->
+
+<!ELEMENT   ce:editors          ( ce:author-group+ ) >
+
+<!-- article history -->
+
+<!ELEMENT   ce:date-received    EMPTY>
+<!ATTLIST   ce:date-received
+                day             NMTOKEN             #IMPLIED
+                month           NMTOKEN             #REQUIRED
+                year            NMTOKEN             #REQUIRED>
+<!ELEMENT   ce:date-revised     EMPTY>
+<!ATTLIST   ce:date-revised
+                day             NMTOKEN             #IMPLIED
+                month           NMTOKEN             #REQUIRED
+                year            NMTOKEN             #REQUIRED>
+<!ELEMENT   ce:date-accepted    EMPTY>
+<!ATTLIST   ce:date-accepted
+                day             NMTOKEN             #IMPLIED
+                month           NMTOKEN             #REQUIRED
+                year            NMTOKEN             #REQUIRED>
+<!ELEMENT   ce:miscellaneous    ( %text.data; )* >
+
+<!-- abstract -->
+
+<!ELEMENT   ce:abstract         ( ce:section-title?, ce:abstract-sec+, ce:figure? )>
+<!ATTLIST   ce:abstract
+                %common-link.att;
+                class           %abstract-class;    "author"
+                xml:lang        %iso639;            #IMPLIED>
+<!ELEMENT   ce:abstract-sec     ( ce:section-title?, ce:simple-para+ )>
+
+<!-- keywords -->
+
+<!ELEMENT   ce:keywords         ( ce:section-title?, ce:keyword+ )>
+<!ATTLIST   ce:keywords
+                class           CDATA               "keyword"
+                xml:lang        %language;          #IMPLIED>
+<!ELEMENT   ce:keyword          ( ce:text, ce:keyword* )>
+
+<!-- stereochemistry abstracts -->
+
+<!ELEMENT   ce:stereochem       ( ce:compound-struct, ( ce:compound-formula |
+                                  ( ce:compound-name, ce:compound-formula? ) ), ce:compound-info )>
+<!ELEMENT   ce:compound-struct  ( ce:link )>
+<!ELEMENT   ce:compound-name    ( %text.data; )* >
+<!ELEMENT   ce:compound-formula ( %text.data; )* >
+<!ELEMENT   ce:compound-info    ( ce:list-item+ )>
+
+<!-- nomenclature -->
+
+<!ELEMENT   ce:nomenclature     ( ce:section-title?, ce:def-list+ )>
+
+<!-- article body -->
+
+<!ELEMENT   ce:salutation       ( %text.data; )* >
+<!ELEMENT   ce:sections         ( %parsec; )>
+<!ELEMENT   ce:appendices       ( ce:section+ )>
+<!ATTLIST   ce:appendices
+                %common-view.att; >
+<!ELEMENT   ce:section          ( ( ( ce:section-title | ( ce:label, ce:section-title? ) ), 
+                                  %parsec; ) | ce:section+ )>
+<!ATTLIST   ce:section
+                %common-optref-link.att;
+                %common-role.att;
+                %common-view.att; >
+<!ELEMENT   ce:para             ( %par.data; )* >
+<!ATTLIST   ce:para
+                %common-link.att;
+                %common-role.att;
+                %common-view.att; >
+<!ELEMENT   ce:simple-para      ( %spar.data; )* >
+<!ATTLIST   ce:simple-para
+                %common-link.att;
+                %common-role.att;
+                %common-view.att; >
+<!ELEMENT   ce:note-para        ( %note.data; )* >
+<!ATTLIST   ce:note-para
+                %common-link.att; >
+<!ELEMENT   ce:intro            ( ce:para+ )>
+
+<!-- acknowledgement -->
+
+<!ELEMENT   ce:acknowledgment   ( ce:section-title?, ce:para+ )>
+<!ATTLIST   ce:acknowledgment
+                %common-link.att; >
+
+<!-- bibliography -->
+
+<!ELEMENT   ce:bibliography     ( ce:section-title, ce:bibliography-sec+ )>
+<!ATTLIST   ce:bibliography
+                %common-optref.att;
+                %common-role.att; 
+                %common-view.att; >
+<!ELEMENT   ce:bibliography-sec ( ce:section-title?, ce:bib-reference+ )>
+<!ATTLIST   ce:bibliography-sec
+                %common-optref.att;
+                %common-role.att; >
+<!ELEMENT   ce:bib-reference    ( ce:label, ( ce:note |
+                                  ( ( sb:reference | ce:other-ref )+, ce:note? ) ) )>
+<!ATTLIST   ce:bib-reference
+                %common-reqref-link.att; >
+<!ELEMENT   ce:note             ( ce:simple-para+ )>
+
+<!-- structured bibliographic reference (in name space ESSB) -->
+
+<!ELEMENT   sb:reference        ( ce:label?, sb:comment?, ( sb:contribution, sb:comment? )?,
+                                  ( sb:host, sb:comment? )+ )>
+<!ATTLIST   sb:reference
+                %common-optref-link.att;
+                xmlns:sb        CDATA               #FIXED  %ESSB.xmlns;>
+
+<!ELEMENT   sb:contribution     ( sb:authors?, (%sb.titles;)? )>
+<!ATTLIST   sb:contribution
+                langtype        %language-type;     "en"
+                xml:lang        %iso639;            #IMPLIED>
+<!ELEMENT   sb:host             ( ( ( sb:issue, sb:pages? ) | sb:book
+                                  | ( sb:edited-book, sb:pages? ) | sb:e-host ), ce:doi? )>
+
+<!ELEMENT   sb:comment          ( %nondisplay.data; )* >
+
+<!ELEMENT   sb:authors          ( ( sb:collaboration | ( sb:author, sb:et-al? ) )+ )>
+<!ELEMENT   sb:collaboration    ( %text.data; )* >
+<!ELEMENT   sb:author           ( %name; )>
+<!ELEMENT   sb:et-al            EMPTY>
+<!ELEMENT   sb:title            ( sb:maintitle, sb:subtitle? )>
+<!ELEMENT   sb:translated-title ( sb:maintitle, sb:subtitle? )>
+<!ELEMENT   sb:maintitle        ( %text.data; )* >
+<!ELEMENT   sb:subtitle         ( %text.data; )* >
+<!ELEMENT   sb:issue            ( sb:editors?, (%sb.titles;)?, sb:conference?,
+                                  sb:series, sb:issue-nr?, sb:date )>
+<!ELEMENT   sb:conference       ( %text.data; )* >
+<!ELEMENT   sb:editors          ( sb:editor+, sb:et-al? )>
+<!ELEMENT   sb:editor           ( %name; )>
+<!ELEMENT   sb:series           ( (%sb.titles;), sb:issn?, sb:volume-nr? )>
+<!ELEMENT   sb:volume-nr        ( %richstring.data; )* >
+<!ELEMENT   sb:issue-nr         ( %richstring.data; )* >
+<!ELEMENT   sb:date             ( %richstring.data; )* >
+<!ELEMENT   sb:pages            ( sb:first-page, sb:last-page? )>
+<!ELEMENT   sb:first-page       ( %richstring.data; )* >
+<!ELEMENT   sb:last-page        ( %richstring.data; )* >
+<!ELEMENT   sb:book             ( (%sb.titles;)?, sb:edition?, sb:book-series?, sb:date+,
+                                  sb:publisher?, sb:isbn? )>
+<!ELEMENT   sb:edition          ( %richstring.data; )* >
+<!ELEMENT   sb:publisher        ( sb:name, sb:location? )>
+<!ELEMENT   sb:name             ( %richstring.data; )* >
+<!ELEMENT   sb:location         ( %richstring.data; )* >
+<!ELEMENT   sb:edited-book      ( sb:editors?, (%sb.titles;)?, sb:conference?, sb:edition?,
+                                  sb:book-series?, sb:date+, sb:publisher?, sb:isbn? )>
+<!ELEMENT   sb:book-series      ( sb:editors?, sb:series )>
+<!ELEMENT   sb:e-host           ( ce:inter-ref?, sb:date? )>
+<!ELEMENT   sb:issn             ( %string.data; )* >
+<!ELEMENT   sb:isbn             ( %string.data; )* >
+
+<!-- unstructured bibliographic reference -->
+
+<!ELEMENT   ce:other-ref        ( ce:label?, ce:textref )> 
+<!ATTLIST   ce:other-ref
+                %common-optref-link.att; >
+
+<!-- further reading -->
+
+<!ELEMENT   ce:further-reading  ( ce:section-title, ce:further-reading-sec+ )>
+<!ATTLIST   ce:further-reading
+                %common-optref.att;
+                %common-role.att; 
+                %common-view.att; >
+<!ELEMENT   ce:further-reading-sec ( ce:section-title?, ( ce:para | ce:bib-reference )+ )>
+<!ATTLIST   ce:further-reading-sec          
+                %common-optref.att;
+                %common-role.att; >
+
+<!-- glossary -->
+
+<!ELEMENT   ce:glossary         ( ce:section-title, ce:intro?, ce:glossary-sec+ )>
+<!ATTLIST   ce:glossary
+                %common-optref.att;
+                %common-role.att; 
+                %common-view.att; >
+<!ELEMENT   ce:glossary-sec     ( ce:section-title?, ce:intro?, ce:glossary-entry+ )>
+<!ATTLIST   ce:glossary-sec
+                %common-optref.att;
+                %common-role.att; >
+<!ELEMENT   ce:glossary-entry   ( ce:glossary-heading, ce:glossary-def*, (%cross-ref;)*,
+                                  ce:glossary-entry* )>
+<!ATTLIST   ce:glossary-entry
+                %common-optref-link.att;
+                %common-role.att; >
+<!ELEMENT   ce:glossary-heading ( %textref.data; )* >
+<!ELEMENT   ce:glossary-def     ( %text.data; )* >
+
+<!-- index -->
+
+<!ELEMENT   ce:index            ( ce:section-title, ce:intro?, ce:index-sec+ )>
+<!ATTLIST   ce:index
+                %common-optref.att;
+                %common-role.att; 
+                %common-view.att; >
+<!ELEMENT   ce:index-sec        ( ce:section-title?, ce:intro?, ce:index-entry+ )>
+<!ATTLIST   ce:index-sec
+                %common-optref.att;
+                %common-role.att; >
+<!ELEMENT   ce:index-entry      ( ce:index-heading, ( (%see;) | (%cross-ref;)+ )?,
+                                  ( ce:see-also | ce:index-entry | ce:reader-see)* )>
+<!ATTLIST   ce:index-entry
+                %common-optref-link.att;
+                %common-role.att; >
+
+<!ELEMENT   ce:index-heading    ( %textref.data; )* >
+
+<!ELEMENT   ce:see              ( %text.data; )* >
+<!ATTLIST   ce:see
+                refid           IDREF               #REQUIRED>
+
+<!ELEMENT   ce:see-also         ( %text.data; )* >
+<!ATTLIST   ce:see-also
+                refid           IDREF               #REQUIRED>
+
+<!ELEMENT   ce:reader-see       ( %text.data; )* >
+
+<!-- index flag -->
+
+<!ELEMENT   ce:index-flag       ( ce:index-flag-term, ce:index-flag-see?,
+                                  ( ce:index-flag-see-also | ce:index-flag )* )>
+<!ATTLIST   ce:index-flag
+                 %common-reqref.att;
+                 %common-role.att; >
+<!ELEMENT   ce:index-flag-term  ( %text.data; )* >
+<!ELEMENT   ce:index-flag-see   ( %text.data; )* >
+<!ELEMENT   ce:index-flag-see-also ( %text.data; )* >
+
+<!-- biography -->
+
+<!ELEMENT   ce:biography        ( ce:link?, ce:simple-para+ )>
+<!ATTLIST   ce:biography
+                %common-optref.att; 
+                %common-view.att; >
+
+<!-- footnote  -->
+
+<!ELEMENT   ce:footnote         ( ce:label, ce:note-para+ )>
+<!ATTLIST   ce:footnote
+                %common-reqref.att; >
+
+<!-- anchor in text, the target of e.g. a cross-ref -->
+
+<!ELEMENT   ce:anchor           ( %richstring.data; )* >
+<!ATTLIST   ce:anchor
+                %common-reqref-link.att;
+                %common-role.att; >
+
+<!-- displayed quotation -->
+
+<!ELEMENT   ce:displayed-quote  ( ce:simple-para+ )>
+<!ATTLIST   ce:displayed-quote
+                %common-link.att; 
+                %common-role.att; >
+
+<!-- enunciation -->
+
+<!ELEMENT   ce:enunciation      ( ce:label, ce:section-title?, ce:para+ )>
+<!ATTLIST   ce:enunciation
+                %common-optref-link.att;
+                %common-role.att; >
+
+<!-- reference to an external entity -->
+
+<!ELEMENT   ce:link             EMPTY>
+<!ATTLIST   ce:link
+                %common-link.att;
+                %external-file.att; >
+
+<!-- reference to an external lower-level doctype -->
+
+<!ELEMENT   ce:include-item     ( ce:pii, ce:doi?, ( %titles; )?, ce:pages* )>
+<!ATTLIST   ce:include-item
+                %common-role.att; 
+                %common-view.att; >
+<!ELEMENT   ce:pages            ( ce:first-page, ce:last-page? )>
+<!ELEMENT   ce:first-page       ( %richstring.data; )* >
+<!ELEMENT   ce:last-page        ( %richstring.data; )* >
+
+<!-- reference to objects in this document -->
+
+<!ELEMENT   ce:cross-ref        ( %text.data; )* >
+<!ATTLIST   ce:cross-ref
+                refid           IDREF               #REQUIRED>
+
+<!ELEMENT   ce:cross-refs       ( %text.data; )* >
+<!ATTLIST   ce:cross-refs
+                refid           IDREFS              #REQUIRED>
+
+<!-- reference to objects in related documents -->
+
+<!ELEMENT   ce:intra-ref        ( %text.data; )* >
+<!ATTLIST   ce:intra-ref
+                %common-link.att;
+                xlink:type      (simple)            #FIXED  "simple"
+                xlink:role      CDATA               #IMPLIED
+                xlink:href      CDATA               #REQUIRED>
+
+<!ELEMENT   ce:intra-refs       ( ce:intra-refs-text, ce:intra-ref-end+, ce:intra-refs-link )>
+<!ATTLIST   ce:intra-refs
+                xlink:type      (extended)          #FIXED  "extended">
+<!ELEMENT   ce:intra-refs-text  ( %text.data; )* >
+<!ATTLIST   ce:intra-refs-text
+                %common-link.att;
+                xlink:type      (resource)          #FIXED  "resource"
+                xlink:label     (intra-refs-start)  #FIXED  "intra-refs-start">
+<!ELEMENT   ce:intra-ref-end    ( ce:intra-ref-title? )>
+<!ATTLIST   ce:intra-ref-end
+                xlink:type      (locator)           #FIXED  "locator"
+                xlink:label     (intra-ref-end)     #FIXED  "intra-ref-end"
+                xlink:role      CDATA               #IMPLIED
+                xlink:href      CDATA               #REQUIRED>
+<!ELEMENT   ce:intra-ref-title  ( %text.data; )* >
+<!ATTLIST   ce:intra-ref-title
+                xlink:type      (title)             #FIXED  "title">
+<!ELEMENT   ce:intra-refs-link  EMPTY>
+<!ATTLIST   ce:intra-refs-link
+                xlink:type      (arc)               #FIXED  "arc"
+                xlink:from      (intra-refs-start)  #FIXED  "intra-refs-start"
+                xlink:to        (intra-ref-end)     #FIXED  "intra-ref-end">
+
+<!-- reference to global external entity -->
+
+<!ELEMENT   ce:inter-ref        ( %text.data; )* >
+<!ATTLIST   ce:inter-ref
+                %common-link.att;
+                xlink:type      (simple)            #FIXED  "simple"
+                xlink:role      CDATA               #IMPLIED
+                xlink:href      CDATA               #REQUIRED>
+
+<!ELEMENT   ce:inter-refs       ( ce:inter-refs-text?, ce:inter-ref-end+, ce:inter-refs-link )>
+<!ATTLIST   ce:inter-refs
+                xlink:type      (extended)          #FIXED  "extended">
+<!ELEMENT   ce:inter-refs-text  ( %text.data; )* >
+<!ATTLIST   ce:inter-refs-text
+                %common-link.att;
+                xlink:type      (resource)          #FIXED  "resource"
+                xlink:label     (inter-refs-start)  #FIXED  "inter-refs-start">
+<!ELEMENT   ce:inter-ref-end    ( ce:inter-ref-title? ) >
+<!ATTLIST   ce:inter-ref-end
+                xlink:type      (locator)           #FIXED  "locator"
+                xlink:label     (inter-ref-end)     #FIXED  "inter-ref-end"
+                xlink:role      CDATA               #IMPLIED
+                xlink:href      CDATA               #REQUIRED>
+<!ELEMENT   ce:inter-ref-title  ( %text.data; )* >
+<!ATTLIST   ce:inter-ref-title
+                xlink:type      (title)             #FIXED  "title">
+<!ELEMENT   ce:inter-refs-link  EMPTY>
+<!ATTLIST   ce:inter-refs-link
+                xlink:type      (arc)               #FIXED  "arc"
+                xlink:from      (inter-refs-start)  #FIXED  "inter-refs-start"
+                xlink:to        (inter-ref-end)     #FIXED  "inter-ref-end">
+
+<!-- list  -->
+
+<!ELEMENT   ce:list             ( ce:label?, ce:section-title?, ce:list-item+ )>
+<!ATTLIST   ce:list
+                %common-optref.att;>
+<!ELEMENT   ce:list-item        ( ce:label?, ce:para+ )>
+<!ATTLIST   ce:list-item
+                %common-optref.att;>
+
+<!-- definition list -->
+
+<!ELEMENT   ce:def-list         ( ce:label?, ce:section-title?,
+                                  ( ce:def-term, ce:def-description? )+ )>
+<!ATTLIST   ce:def-list
+                %common-optref.att;>
+<!ELEMENT   ce:def-term         ( %text.data; )* >
+<!ATTLIST   ce:def-term
+                %common-optref-link.att;>
+<!ELEMENT   ce:def-description  ( ce:para+ )>
+
+<!-- inline figure  -->
+
+<!ELEMENT   ce:inline-figure    ( ce:link )>
+<!ATTLIST   ce:inline-figure   
+                baseline        NMTOKEN             "0.0">
+
+<!-- chemistry -->
+
+<!ELEMENT   ce:chem             ( %textfn.data; )* >
+
+<!-- float and display containers -->
+
+<!ELEMENT   ce:floats           ( ce:figure*, ce:table*, ce:textbox*, ce:e-component* )>
+<!ELEMENT   ce:float-anchor     EMPTY>
+<!ATTLIST   ce:float-anchor
+                refid           IDREF               #REQUIRED>
+
+<!ELEMENT   ce:display          ( ce:figure | ce:table | ce:textbox | ce:e-component | ce:formula )>
+
+<!ELEMENT   ce:caption          ( ce:simple-para+ )>
+<!ATTLIST   ce:caption
+                %common-role.att;
+                xml:lang        %iso639;            #IMPLIED>
+
+<!ELEMENT   ce:source           ( %note.data; )* >
+
+<!-- formulas -->
+
+<!ELEMENT   ce:formula          ( ce:label?, ( mml:math | ce:chem | ce:link | ce:formula+ )) >
+<!ATTLIST   ce:formula
+                %common-optref-link.att; >
+
+<!-- figure  -->
+
+<!ELEMENT   ce:figure           ( ce:label?, ce:caption*, ce:source?, ( %copyright; )?,
+                                  ( ce:link | ce:figure )+ )>
+<!ATTLIST   ce:figure
+                %common-optref-link.att;>
+
+<!-- textboxes -->
+
+<!ELEMENT   ce:textbox          ( ce:label?, ce:caption*, ce:source?, ( %copyright; )?, 
+                                  ce:textbox-head?, ce:textbox-body, ce:textbox-tail? ) > 
+<!ATTLIST   ce:textbox
+                %common-optref-link.att;
+                %common-role.att; >
+
+<!ELEMENT   ce:textbox-head     ( ce:title?, ce:subtitle?, (ce:alt-title, ce:alt-subtitle?)*,
+                                  ce:author-group*, ce:intro? )>
+<!ELEMENT   ce:textbox-body     ( ce:sections, ce:acknowledgment?, ce:appendices? )>
+<!ELEMENT   ce:textbox-tail     ( ce:bibliography?, ce:further-reading?,
+                                  ce:glossary?, ce:biography* )>
+
+<!-- multi-media component -->
+
+<!ELEMENT   ce:e-component      ( ce:label?, ce:caption*, ce:source?, ( %copyright; )?,
+                                  ( ( ce:link, ce:alt-e-component? ) | ce:e-component )+ ) >
+<!ATTLIST   ce:e-component
+                %common-optref-link.att;>
+<!ELEMENT   ce:alt-e-component  ( ce:link | ( ce:caption+, ce:link? ) )>
+
+<!-- text effects -->
+
+<!ELEMENT   ce:bold             ( %richstring.data; )* >
+<!ELEMENT   ce:italic           ( %richstring.data; )* >
+<!ELEMENT   ce:sans-serif       ( %richstring.data; )* >
+<!ELEMENT   ce:monospace        ( %richstring.data; )* >
+<!ELEMENT   ce:small-caps       ( %richstring.data; )* >
+
+<!ELEMENT   ce:underline        ( %richstring.data; )* >
+<!ELEMENT   ce:cross-out        ( %richstring.data; )* >
+								
+<!ELEMENT   ce:sup              ( %richstring.data; )* >
+<!ATTLIST   ce:sup
+                loc             %loc;               "post">
+<!ELEMENT   ce:inf              ( %richstring.data; )* >
+<!ATTLIST   ce:inf
+                loc             %loc;               "post">
+<!ELEMENT   ce:hsp              EMPTY>
+<!ATTLIST   ce:hsp
+                sp              NMTOKEN             "1.0">
+<!ELEMENT   ce:vsp              EMPTY>
+<!ATTLIST   ce:vsp
+                sp              NMTOKEN             "1.0">
+<!ELEMENT   ce:br               EMPTY>
+
+<!-- non-Unicode glyphs -->
+
+<!ELEMENT   ce:glyph            EMPTY >
+<!ATTLIST   ce:glyph
+                name            %glyph-names;               #REQUIRED>
+
+<!-- examination -->
+
+<!ELEMENT   ce:exam-reference      ( ce:inter-ref )>
+<!ATTLIST   ce:exam-reference
+                %common-view.att; >
+<!ELEMENT   ce:exam-questions      ( ce:section-title?, %parsec; )>
+<!ATTLIST   ce:exam-questions
+                %common-optref-link.att;
+                %common-role.att; 
+                %common-view.att; >
+<!ELEMENT   ce:exam-answers        ( ce:section-title?, %parsec; )>
+<!ATTLIST   ce:exam-answers
+                %common-optref-link.att;
+                %common-role.att; 
+                %common-view.att; >
+
+<!-- MathML2, with namespace prefix mml -->
+
+<!ENTITY % MATHML.prefixed      "INCLUDE" >
+<!ENTITY % MATHML.prefix        "mml" >
+
+<!ENTITY % mtext.mdl
+    " %nondisplay.data; | %MATHML.prefix;:mglyph | %MATHML.prefix;:malignmark " >
+
+<!ENTITY % mathml-dtd
+    PUBLIC "-//W3C//DTD MathML 2.0 Mod ES//EN"
+    "mathml2-mod-ES.dtd">
+%mathml-dtd;
+
+<!-- Extended CALS table model -->
+
+<!ELEMENT   ce:legend           ( ce:simple-para+ )>
+<!ELEMENT   ce:table-footnote   ( ce:label, ce:note-para+ )>
+<!ATTLIST   ce:table-footnote
+                %common-reqref.att; >
+
+<!ENTITY % yesorno              "(0|1)" >
+<!ELEMENT   tb:top-border                           EMPTY>
+<!ATTLIST   tb:top-border          
+                type            %hline;             'bar'
+                style           %style;             's'>
+<!ELEMENT   tb:left-border                          EMPTY>
+<!ATTLIST   tb:left-border         
+                type            %vline;             'vb'
+                style           %style;             's'>
+<!ELEMENT   tb:bottom-border                        EMPTY>
+<!ATTLIST   tb:bottom-border       
+                type            %hline;             'bar'
+                style           %style;             's'>
+<!ELEMENT   tb:right-border                         EMPTY>
+<!ATTLIST   tb:right-border        
+                type            %vline;             'vb'
+                style           %style;             's'>
+<!ELEMENT   tb:alignmark                            EMPTY >
+<!ELEMENT   tb:colspec                              EMPTY >
+<!ATTLIST   tb:colspec
+                colnum          NMTOKEN             #IMPLIED
+                colname         NMTOKEN             #IMPLIED
+                colwidth        CDATA               #IMPLIED
+                colsep          %yesorno;           #IMPLIED
+                rowsep          %yesorno;           #IMPLIED
+                align           (mark)              #FIXED  'mark' >
+
+<!ENTITY % tbl.titles           "ce:label?, ce:caption*, ce:source?, ( %copyright; )?" >
+<!ENTITY % tbl.back             "ce:legend?, ce:table-footnote*" >
+
+<!ENTITY % tbl.table.name       "ce:table" >
+<!ENTITY % tbl.table-titles.mdl "%tbl.titles;," >
+<!ENTITY % tbl.table-back.mdl   ",%tbl.back;" >
+<!ENTITY % tbl.table-main.mdl   "(tgroup | ce:link)+" >
+<!ENTITY % tbl.table.mdl        "%tbl.table-titles.mdl; %tbl.table-main.mdl; %tbl.table-back.mdl;" >
+<!ENTITY % tbl.table.att        '
+                %common-optref-link.att;
+                xmlns           CDATA               #FIXED  %CALS.xmlns;
+                xmlns:tb        CDATA               #FIXED  %ESTB.xmlns; '>
+<!ENTITY % tbl.tgroup.mdl       "(colspec | tb:colspec)*, thead?, tbody">
+<!ENTITY % tbl.tgroup.att       '
+                %common-altimg.att; '>
+<!ENTITY % tbl.entry.mdl        "(%cell.data;)*" >
+<!ENTITY % tbl.entry.att        '
+                %common-role.att;
+                xmlns           CDATA               #FIXED  %ESCE.xmlns; '>
+<!ENTITY % tbl.colspec.att      '
+                %common-role.att; '>
+<!ENTITY % tbl.row.att          '
+                %common-role.att; '>
+
+
+<!ENTITY % CALS-dtd
+    PUBLIC "-//OASIS//DTD XML Exchange Table Model 19990315//EN" 
+    "soextblx.dtd">
+%CALS-dtd;
+
+<!-- extra entity names -->
+
+<!ENTITY % esextra
+    PUBLIC "-//ES//ENTITIES extra entities 1.0.0//EN"
+    "ESextra.ent" > 
+%esextra;
+

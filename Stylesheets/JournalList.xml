@@ -1,0 +1,2527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:ht="http://www.w3.org/TR/REC-html40">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>List of Peer journals</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>...</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>...</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <table>
+                    <head type="Publisher">BMJ Publishing Group</head>
+                    <row>
+                        <cell role="Journal">British Journal of Ophthalmology</cell>
+                        <cell role="ISSN">0007-1161</cell>
+                        <cell role="Publisher">BMJ Publishing Group</cell>
+                        <cell role="EUAuthors">46%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Epidemiology and Community Health</cell>
+                        <cell role="ISSN">0143-005X</cell>
+                        <cell role="eISSN">1470-2738</cell>
+                        <cell role="Publisher">BMJ Publishing Group</cell>
+                        <cell role="EUAuthors">58%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Neurology, Neurosurgery and Psychiatry
+                            (including Practical Neurology)</cell>
+                        <cell role="ISSN">0022-3050</cell>
+                        <cell role="Publisher">BMJ Publishing Group</cell>
+                        <cell role="EUAuthors">70%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Tobacco Control</cell>
+                        <cell role="ISSN">0964-4563</cell>
+                        <cell role="Publisher">BMJ Publishing Group</cell>
+                        <cell role="EUAuthors">20%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">5</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Medical Genetics</cell>
+                        <cell role="ISSN">0022-2593</cell>
+                        <cell role="Publisher">BMJ Publishing Group</cell>
+                        <cell role="EUAuthors">58%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">5</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Sexually Transmitted Infections</cell>
+                        <cell role="ISSN">1368-4973</cell>
+                        <cell role="Publisher">BMJ Publishing Group</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">5</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Cambridge University Press</head>
+                    <row>
+                        <cell role="Journal">The Journal of Agricultural Science</cell>
+                        <cell role="ISSN">0021-8596</cell>
+                        <cell role="Publisher">Cambridge University Press</cell>
+                        <cell role="EUAuthors">48%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Bilingualism: Language and Cognition</cell>
+                        <cell role="ISSN">1366-7289</cell>
+                        <cell role="eISSN">1469-1841</cell>
+                        <cell role="Publisher">Cambridge University Press</cell>
+                        <cell role="EUAuthors">48%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Biosocial Science</cell>
+                        <cell role="ISSN">0021-9320</cell>
+                        <cell role="Publisher">Cambridge University Press</cell>
+                        <cell role="EUAuthors">31%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Helminthology</cell>
+                        <cell role="ISSN">0022-149X</cell>
+                        <cell role="Publisher">Cambridge University Press</cell>
+                        <cell role="EUAuthors">42%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Science in Context</cell>
+                        <cell role="ISSN">0269-8897</cell>
+                        <cell role="eISSN">1474-0664</cell>
+                        <cell role="Publisher">Cambridge University Press</cell>
+                        <cell role="EUAuthors">35%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Urban History</cell>
+                        <cell role="ISSN">0963-9268</cell>
+                        <cell role="eISSN">1469-8706</cell>
+                        <cell role="Publisher">Cambridge University Press</cell>
+                        <cell role="EUAuthors">75%(est.)</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Elsevier</head>
+                    <row>
+                        <cell role="Journal">Annales d'Endocrinologie</cell>
+                        <cell role="ISSN">0003-4266</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">60%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language">Fr</cell>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Annales de Dermatologie et de Venereologie</cell>
+                        <cell role="ISSN">0151-9638</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">86%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language">fr</cell>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Annales Medico-Psychologiques</cell>
+                        <cell role="ISSN">0003-4487</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">88%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language">fr</cell>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Annals of Pure and Applied Logic</cell>
+                        <cell role="ISSN">0168-0072</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Applied Acoustics</cell>
+                        <cell role="ISSN">0003-682X</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Applied Thermal Engineering</cell>
+                        <cell role="ISSN">1359-4311</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Astroparticle Physics</cell>
+                        <cell role="ISSN">0927-6505</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">52%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Biochemical Pharmacology</cell>
+                        <cell role="ISSN">0006-2952</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">38%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Biochimica et Biophysica Acta (BBA) – Molecular Basis
+                            of Disease</cell>
+                        <cell role="ISSN">0925-4439</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">40%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Biomass and Bioenergy</cell>
+                        <cell role="ISSN">0961-9534</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">46%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Biophysical Chemistry</cell>
+                        <cell role="ISSN">0301-4622</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Blood Cells Molecules and Diseases</cell>
+                        <cell role="ISSN">1079-9796</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">48%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Brain and Language</cell>
+                        <cell role="ISSN">0093-934X</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Cell Calcium</cell>
+                        <cell role="ISSN">0143-4160</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">62%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Composites Science and Technology</cell>
+                        <cell role="ISSN">0266-3538</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">44%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Computer Speech &amp; Language</cell>
+                        <cell role="ISSN">0885-2308</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">36%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Computers and Geotechnics</cell>
+                        <cell role="ISSN">0266-352X</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">38%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Energy</cell>
+                        <cell role="ISSN">0360-5442</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Enfermedades infecciosas y Microbiologia Clinica</cell>
+                        <cell role="ISSN">0213-005X</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">88%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language">Sp</cell>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Mechanics - A/Solids</cell>
+                        <cell role="ISSN">0997-7538</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">55%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Radiology</cell>
+                        <cell role="ISSN">0720-048X</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">49%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Soil Biology</cell>
+                        <cell role="ISSN">1164-5563</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">57%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Surgical Oncology (EJSO)</cell>
+                        <cell role="ISSN">0748-7983</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">70%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Experimental and Toxicologic Pathology</cell>
+                        <cell role="ISSN">0940-2993</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">58%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Experimental Gerontology</cell>
+                        <cell role="ISSN">0531-5565</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">56%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Fire Safety Journal</cell>
+                        <cell role="ISSN">0379-7112</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Human Movement Science</cell>
+                        <cell role="ISSN">0167-9457</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Icarus</cell>
+                        <cell role="ISSN">0019-1035</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Immunology Letters</cell>
+                        <cell role="ISSN">0165-2478</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Antimicrobial Agents</cell>
+                        <cell role="ISSN">0924-8579</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">47%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Impact Engineering</cell>
+                        <cell role="ISSN">0734-743X</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">43%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Non-Linear Mechanics</cell>
+                        <cell role="ISSN">0020-7462</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">42%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Econometrics</cell>
+                        <cell role="ISSN">0304-4076</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">34%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">36</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Economic Behavior &amp;
+                            Organization</cell>
+                        <cell role="ISSN">0167-2681</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">36</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Economic Dynamics &amp; Control</cell>
+                        <cell role="ISSN">0165-1889</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">47%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">36</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Experimental Social Psychology</cell>
+                        <cell role="ISSN">0022-1031</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">32%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">36</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Geodynamics</cell>
+                        <cell role="ISSN">0264-3707</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">62%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Physics and Chemistry of Solids</cell>
+                        <cell role="ISSN">0022-3697</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">36%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Pragmatics</cell>
+                        <cell role="ISSN">0378-2166</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">56%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Theoretical Biology</cell>
+                        <cell role="ISSN">0022-5193</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Marine Environmental Research</cell>
+                        <cell role="ISSN">0141-1136</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">51%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Materials Science in Semiconductor Processing</cell>
+                        <cell role="ISSN">1369-8001</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">43%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Molecular and Cellular Endocrinology</cell>
+                        <cell role="ISSN">0303-7207</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">40%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Nuclear Engineering and Design</cell>
+                        <cell role="ISSN">0029-5493</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">40%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Physics of the Earth and Planetary Interiors</cell>
+                        <cell role="ISSN">0031-9201</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Pulmonary Pharmacology &amp; Therapeutics</cell>
+                        <cell role="ISSN">1094-5539</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">55%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Radiotherapy and Oncology</cell>
+                        <cell role="ISSN">0167-8140</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">63%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Sociologie du Travail</cell>
+                        <cell role="ISSN">0038-0296</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">84%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language">Fr</cell>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Solar Energy</cell>
+                        <cell role="ISSN">0038-092X</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Speech Communication</cell>
+                        <cell role="ISSN">0167-6393</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">38%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Statistics &amp; Probability Letters</cell>
+                        <cell role="ISSN">0167-7152</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Telecommunications Policy</cell>
+                        <cell role="ISSN">0308-5961</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">38%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Veterinary Microbiology</cell>
+                        <cell role="ISSN">0378-1135</cell>
+                        <cell role="Publisher">Elsevier</cell>
+                        <cell role="EUAuthors">53%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Institute of Physics Publishing</head>
+                    <row>
+                        <cell role="Journal">Classical and Quantum Gravity</cell>
+                        <cell role="ISSN">0264-9381</cell>
+                        <cell role="Publisher">Institute of Physics Publishing</cell>
+                        <cell role="EUAuthors">51%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Physics A: Mathematical and
+                            Theoretical</cell>
+                        <cell role="ISSN">1751-8113</cell>
+                        <cell role="Publisher">Institute of Physics Publishing</cell>
+                        <cell role="EUAuthors">44%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Physics B: Atomic, Molecular and Optical
+                            Physics</cell>
+                        <cell role="ISSN">0953-4075</cell>
+                        <cell role="Publisher">Institute of Physics Publishing</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Physics D: Applied Physics</cell>
+                        <cell role="ISSN">0022-3727</cell>
+                        <cell role="Publisher">Institute of Physics Publishing</cell>
+                        <cell role="EUAuthors">34%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Physics G: Nuclear and Particle
+                            Physics</cell>
+                        <cell role="ISSN">0954-3899</cell>
+                        <cell role="Publisher">Institute of Physics Publishing</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Physics: Condensed Matter</cell>
+                        <cell role="ISSN">0953-8984</cell>
+                        <cell role="Publisher">Institute of Physics Publishing</cell>
+                        <cell role="EUAuthors">50%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Nature Publishing Group</head>
+                    <row>
+                        <cell role="Journal">Bone Marrow Transplantation</cell>
+                        <cell role="ISSN">0268-3369</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">38%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Cell Death and Differentiation</cell>
+                        <cell role="ISSN">1350-9047</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Embo Journal, The</cell>
+                        <cell role="ISSN">0261-4189</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Clinical Nutrition</cell>
+                        <cell role="ISSN">0954-3007</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">54%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Human Genetics</cell>
+                        <cell role="ISSN">1018-4813</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">69%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Gene Therapy</cell>
+                        <cell role="ISSN">0969-7128</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">28%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Genes and Immunity</cell>
+                        <cell role="ISSN">1466-4879</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">43%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Leukemia</cell>
+                        <cell role="ISSN">0887-6924</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">62%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Molecular Psychiatry</cell>
+                        <cell role="ISSN">1359-4184</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType"/>
+                    </row>
+                    <row>
+                        <cell role="Journal">Nature Genetics</cell>
+                        <cell role="ISSN">1061-4036</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Nature Immunology</cell>
+                        <cell role="ISSN">1529-2908</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">14%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Nature Neuroscience</cell>
+                        <cell role="ISSN">1097-6256</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">22%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Nature Structural &amp; Molecular Biology</cell>
+                        <cell role="ISSN">1545-9993</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">21%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType"/>
+                    </row>
+                    <row>
+                        <cell role="Journal">Neuropsychopharmacology</cell>
+                        <cell role="ISSN">0893-133X</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">23%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Oncogene</cell>
+                        <cell role="ISSN">0950-9232</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">34%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Prostate Cancer and Prostatic Diseases</cell>
+                        <cell role="ISSN">1365-7852</cell>
+                        <cell role="Publisher">Nature Publishing Group</cell>
+                        <cell role="EUAuthors">44%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Oxford University Press</head>
+                    <row>
+                        <cell role="Journal">Family Practice</cell>
+                        <cell role="ISSN">0263-2136</cell>
+                        <cell role="Publisher">Oxford University Press</cell>
+                        <cell role="EUAuthors">79%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Epidemiology</cell>
+                        <cell role="ISSN">0300-5771</cell>
+                        <cell role="Publisher">Oxford University Press</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Molecular Biology and Evolution</cell>
+                        <cell role="ISSN">0737-4038</cell>
+                        <cell role="Publisher">Oxford University Press</cell>
+                        <cell role="EUAuthors">30%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Systematic Biology</cell>
+                        <cell role="ISSN">1063-5157</cell>
+                        <cell role="Publisher">Oxford University Press</cell>
+                        <cell role="EUAuthors">34%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Annals of Occupational Hygiene</cell>
+                        <cell role="ISSN">0003-4878</cell>
+                        <cell role="Publisher">Oxford University Press</cell>
+                        <cell role="EUAuthors">65%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Plankton Research</cell>
+                        <cell role="ISSN">0142-7873</cell>
+                        <cell role="Publisher">Oxford University Press</cell>
+                        <cell role="EUAuthors">50%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Portland Press</head>
+                    <row>
+                        <cell role="Journal">Clinical Science</cell>
+                        <cell role="ISSN">0143-5221</cell>
+                        <cell role="Publisher">Portland Press</cell>
+                        <cell role="EUAuthors">58%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                </table>
+                <table>
+                    <head>Sage</head>
+                    <row>
+                        <cell role="Journal">Active Learning in Higher Education</cell>
+                        <cell role="ISSN">1469-7874</cell>
+                        <cell role="eISSN">1741-2625</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Concurrent Engineering</cell>
+                        <cell role="ISSN">1063-293X</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">20%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Cultural Geographies</cell>
+                        <cell role="ISSN">1474-4740</cell>
+                        <cell role="eISSN">1477-0881</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">57%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Ethnicities</cell>
+                        <cell role="ISSN">1468-7968</cell>
+                        <cell role="eISSN">1741-2706</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">36%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Cultural Studies</cell>
+                        <cell role="ISSN">1367-5494</cell>
+                        <cell role="eISSN">1460-3551</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Industrial Relations</cell>
+                        <cell role="ISSN">0959-6801</cell>
+                        <cell role="eISSN">1461-7129</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">83%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Women's Studies</cell>
+                        <cell role="ISSN">1350-5068</cell>
+                        <cell role="eISSN">1461-7420</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">94%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Union Politics</cell>
+                        <cell role="ISSN">1465-1165</cell>
+                        <cell role="eISSN">1741-2757</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">73%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Global Social Policy</cell>
+                        <cell role="ISSN">1468-0181</cell>
+                        <cell role="eISSN">1741-2803</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Group Processes and Intergroup Relations</cell>
+                        <cell role="ISSN">1368-4302</cell>
+                        <cell role="eISSN">1461-7188</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">25%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Health</cell>
+                        <cell role="ISSN">1363-4593</cell>
+                        <cell role="eISSN">1461-7196</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">52%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">History of Psychiatry</cell>
+                        <cell role="ISSN">0957-154X</cell>
+                        <cell role="eISSN">1740-2360</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">62%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Damage Mechanics</cell>
+                        <cell role="ISSN">1056-7895</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">21%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Biomaterials Applications</cell>
+                        <cell role="ISSN">0885-3282</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Plastic Film and Sheeting</cell>
+                        <cell role="ISSN">8756-0879</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">30%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Thermoplastic Composite Materials</cell>
+                        <cell role="ISSN">0892-7057</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">23%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Public Understanding of Science</cell>
+                        <cell role="ISSN">0963-6625</cell>
+                        <cell role="eISSN">1361-6609</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">18</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Second Language Research</cell>
+                        <cell role="ISSN">0267-6583</cell>
+                        <cell role="eISSN">1477-0326</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Time &amp; Society</cell>
+                        <cell role="ISSN">0961-463X</cell>
+                        <cell role="eISSN">1461-7463</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">67%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Vascular Medicine</cell>
+                        <cell role="ISSN">1358-863X</cell>
+                        <cell role="Publisher">Sage</cell>
+                        <cell role="EUAuthors">34%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Springer</head>
+                    <row>
+                        <cell role="Journal">Agriculture and Human Values</cell>
+                        <cell role="ISSN">0889-048X</cell>
+                        <cell role="eISSN">1572-8366</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">25%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Annals of Hematology</cell>
+                        <cell role="ISSN">0939-5555</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">58%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Biotechnology Letters</cell>
+                        <cell role="ISSN">0141-5492</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">20%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Breast Cancer Research and Treatment</cell>
+                        <cell role="ISSN">0167-6806</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">36%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Cancer Chemotherapy and Pharmacology</cell>
+                        <cell role="ISSN">0344-5704</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">29%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Celestial Mechanics</cell>
+                        <cell role="ISSN">0923-2958</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">54%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Crime Law and Social Change</cell>
+                        <cell role="ISSN">0925-4994</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">54%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Child &amp; Adolescent Psychiatry</cell>
+                        <cell role="ISSN">1018-8827</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">76%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Clinical Microbiology &amp;
+                            Infectious Diseases</cell>
+                        <cell role="ISSN">0934-9723</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">58%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Clinical Pharmacology</cell>
+                        <cell role="ISSN">0031-6970</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">69%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Epidemiology</cell>
+                        <cell role="ISSN">0393-2990</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">63%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Population</cell>
+                        <cell role="AltJournal">European Journal of Population / Revue européenne de
+                            Démographie</cell>
+                        <cell role="ISSN">0168-6577</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">77%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Journal of Wildlife Research</cell>
+                        <cell role="ISSN">1612-4642</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">73%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Formal Aspects of Computing</cell>
+                        <cell role="ISSN">0934-5043</cell>
+                        <cell role="eISSN">1433-299X</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">73%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Helgoland Marine Research</cell>
+                        <cell role="ISSN">1438-387X</cell>
+                        <cell role="eISSN">1438-3888</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">82%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Holz Als Roh und Werkstoff</cell>
+                        <cell role="ISSN">0018-3768</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">63%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language">deu</cell>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Ornithology</cell>
+                        <cell role="ISSN">0021-8375</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">83%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Public Health</cell>
+                        <cell role="ISSN">0943-1853</cell>
+                        <cell role="eISSN">1613-2238</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">84%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Molecular Modeling</cell>
+                        <cell role="ISSN">1610-2940</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Seismology</cell>
+                        <cell role="ISSN">1383-4649</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">64%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Linguistics and Philosophy</cell>
+                        <cell role="ISSN">0165-0157</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">31%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Neophilologus</cell>
+                        <cell role="ISSN">0028-2677</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">44%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">6</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Nonlinear Dynamics</cell>
+                        <cell role="ISSN">0924-090X</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">58%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Queueing Systems</cell>
+                        <cell role="ISSN">0257-0130</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">46%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Review of World Economics</cell>
+                        <cell role="ISSN">1610-2878</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">68%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Revue de Synthese</cell>
+                        <cell role="ISSN">0035-1776</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language">Fr</cell>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Rheumatology International</cell>
+                        <cell role="ISSN">0172-8172</cell>
+                        <cell role="Publisher">Springer</cell>
+                        <cell role="EUAuthors">34%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Taylor &amp; Francis</head>
+                    <row>
+                        <cell role="Journal">Aids Care</cell>
+                        <cell role="ISSN">0954-0121</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">18%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Applied Economics</cell>
+                        <cell role="ISSN">0003-6846</cell>
+                        <cell role="eISSN">1466-4283</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Applied Economics Letters</cell>
+                        <cell role="ISSN">1350-4851</cell>
+                        <cell role="eISSN">1466-4291</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Avian Pathology</cell>
+                        <cell role="ISSN">0307-9457</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">54%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">British Journal of Guidance and Counselling</cell>
+                        <cell role="ISSN">0306-9885</cell>
+                        <cell role="eISSN">1469-3534</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">71%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">British Poultry Science</cell>
+                        <cell role="ISSN">0007-1668</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">53%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Civil Engineering and Environmental Systems</cell>
+                        <cell role="ISSN">1028-6608</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">49%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Communications in Statistics – Simulation and
+                            Computation</cell>
+                        <cell role="ISSN">0361-0918</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">26%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Communications in Statistics – Theory and
+                            Methods</cell>
+                        <cell role="ISSN">0361-0926</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">28%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Engineering Optimization</cell>
+                        <cell role="ISSN">0305-215X</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">26%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Ergonomics</cell>
+                        <cell role="ISSN">0014-0139</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Ethnic and Racial Studies</cell>
+                        <cell role="ISSN">0141-9870</cell>
+                        <cell role="eISSN">1466-4356</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">58%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Europe-Asia Studies</cell>
+                        <cell role="ISSN">0966-8136</cell>
+                        <cell role="eISSN">1465-3427</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">57%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Food Additives &amp; Contaminants (Part A)</cell>
+                        <cell role="ISSN">0265-203X</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">66%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Computer Integrated
+                            Manufacturing</cell>
+                        <cell role="ISSN">0951-192X</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Computer Mathematics</cell>
+                        <cell role="ISSN">0020-7160</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">24%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Environmental Analytical
+                            Chemistry</cell>
+                        <cell role="ISSN">0306-7319</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">55%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Production Research</cell>
+                        <cell role="ISSN">0020-7543</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">27%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Psychology</cell>
+                        <cell role="ISSN">0020-7594</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">26%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Remote Sensing</cell>
+                        <cell role="ISSN">0143-1161</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">36%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Science Education</cell>
+                        <cell role="ISSN">0950-0693</cell>
+                        <cell role="eISSN">1464-5289</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">53%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Systems Science</cell>
+                        <cell role="ISSN">0020-7721</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">34%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Development Studies</cell>
+                        <cell role="ISSN">0022-0388</cell>
+                        <cell role="eISSN">1743-9140</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">42%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Engineering Design</cell>
+                        <cell role="ISSN">0954-4828</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">48%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Modern Optics</cell>
+                        <cell role="ISSN">0950-0340</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">35%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Natural History</cell>
+                        <cell role="ISSN">0022-2933</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">44%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Sports Sciences</cell>
+                        <cell role="ISSN">0264-0414</cell>
+                        <cell role="eISSN">1466-447X</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">57%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Molecular Physics</cell>
+                        <cell role="ISSN">0026-8976</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">55%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Molecular Simulation</cell>
+                        <cell role="ISSN">0892-7022</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">25%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Optimization Methods and Software</cell>
+                        <cell role="ISSN">1055-6788</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">22%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Phase Transitions</cell>
+                        <cell role="ISSN">0141-1594</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">73%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Philosophical Magazine</cell>
+                        <cell role="ISSN">1478-6435</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Philosophical Magazine Letters</cell>
+                        <cell role="ISSN">0950-0839</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">34%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Psychotherapy Research</cell>
+                        <cell role="ISSN">1050-3307</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Psychology &amp; Health</cell>
+                        <cell role="ISSN">0887-0446</cell>
+                        <cell role="eISSN">1476-8321</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">56%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Quantitative Finance</cell>
+                        <cell role="ISSN">1469-7688</cell>
+                        <cell role="eISSN">1469-7696</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">60%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Regional Studies</cell>
+                        <cell role="ISSN">0034-3404</cell>
+                        <cell role="eISSN">1360-0591</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">94%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Supramolecular Chemistry</cell>
+                        <cell role="ISSN">1061-0278</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">51%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Technology Analysis &amp; Strategic
+                            Management</cell>
+                        <cell role="ISSN">0953-7325</cell>
+                        <cell role="eISSN">1465-3990</cell>
+                        <cell role="Publisher">Taylor &amp; Francis</cell>
+                        <cell role="EUAuthors">80%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                </table>
+                <table>
+                    <head type="Publisher">Wiley-Blackwell</head>
+                    <row>
+                        <cell role="Journal">Alimentary Pharmacology &amp; Therapeutics</cell>
+                        <cell role="ISSN">0269-2813</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">62%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Allergy</cell>
+                        <cell role="ISSN">0105-4538</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">77%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">American Journal of Hematology</cell>
+                        <cell role="ISSN">0361-8609</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">21%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Applied Cognitive Psychology</cell>
+                        <cell role="ISSN">0888-4080</cell>
+                        <cell role="eISSN">1099-0720</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">38%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Applied Organometallic Chemistry</cell>
+                        <cell role="ISSN">0268-2605</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">30%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Bioethics</cell>
+                        <cell role="ISSN">0269-9702</cell>
+                        <cell role="eISSN">1467-8519</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">24%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Biomedical Chromatography</cell>
+                        <cell role="ISSN">0269-3879</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">27%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Biopharmaceutics and Drug Disposition</cell>
+                        <cell role="ISSN">0142-2782</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">9%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Biotechnology Journal</cell>
+                        <cell role="ISSN">1860-6768</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">British Journal of Haematology</cell>
+                        <cell role="ISSN">0007-1048</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">52%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Cell Biochemistry and Function</cell>
+                        <cell role="ISSN">0263-6484</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">15%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Clinical Endocrinology</cell>
+                        <cell role="ISSN">0300-0664</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">66%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Computer Animation and Virtual Worlds</cell>
+                        <cell role="ISSN">1546-4261</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">36%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Concurrency and Computation: Practice &amp;
+                            Experience</cell>
+                        <cell role="ISSN">1532-0626</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">48%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Contrast Media and Molecular Imaging</cell>
+                        <cell role="ISSN">1555-4309</cell>
+                        <cell role="eISSN">1555-4317</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Corporate Governance</cell>
+                        <cell role="AltJournal">Corporate Governance- An International Review</cell>
+                        <cell role="ISSN">0964-8410</cell>
+                        <cell role="eISSN">1467-8683</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">48%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Developing World Bioethics</cell>
+                        <cell role="ISSN">1471-8731</cell>
+                        <cell role="eISSN">1471-8847</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Developmental Science</cell>
+                        <cell role="ISSN">1363-755X</cell>
+                        <cell role="eISSN">1467-7687</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">37%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Electrophoresis</cell>
+                        <cell role="ISSN">0173-0835</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">47%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Law Journal</cell>
+                        <cell role="ISSN">1351-5993</cell>
+                        <cell role="eISSN">1468-0386</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">European Transactions on Electrical Power</cell>
+                        <cell role="ISSN">1430-144X</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Forest Pathology</cell>
+                        <cell role="ISSN">1437-4781</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Fuel Cells</cell>
+                        <cell role="ISSN">1615-6846</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">80%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Global Change Biology</cell>
+                        <cell role="ISSN">1354-1013</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Haemophilia</cell>
+                        <cell role="ISSN">1351-8216</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">49%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Higher Education Quarterly</cell>
+                        <cell role="ISSN">0951-5224</cell>
+                        <cell role="eISSN">1468-2273</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Hippocampus</cell>
+                        <cell role="ISSN">1050-9631</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">20%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Histopathology</cell>
+                        <cell role="ISSN">0309-0167</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">56%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Human Brain Mapping</cell>
+                        <cell role="ISSN">1065-9471</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">43%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Human Mutation</cell>
+                        <cell role="ISSN">1059-7794</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">57%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Infant and Child Development</cell>
+                        <cell role="ISSN">1522-7227</cell>
+                        <cell role="eISSN">1522-7219</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">62%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal for Numerical Methods in
+                            Engineering</cell>
+                        <cell role="ISSN">0029-5981</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Adaptive Control and Signal
+                            Processing</cell>
+                        <cell role="ISSN">0890-6327</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">33%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Applied Linguistics</cell>
+                        <cell role="ISSN">0802-6106</cell>
+                        <cell role="eISSN">1473-4192</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Clinical Practice</cell>
+                        <cell role="ISSN">1368-5031</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">47%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Osteoarchaeology</cell>
+                        <cell role="ISSN">1047-482X</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">60%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">International Journal of Systematic Theology</cell>
+                        <cell role="ISSN">1463-1652</cell>
+                        <cell role="eISSN">1468-2400</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Advanced Nursing</cell>
+                        <cell role="ISSN">0309-2402</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">46%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Clinical Periodontology</cell>
+                        <cell role="ISSN">0303-6979</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">55%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Community &amp; Applied Social
+                            Psychology</cell>
+                        <cell role="ISSN">1052-9284</cell>
+                        <cell role="eISSN">1099-1298 </cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">54%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Medical Virology</cell>
+                        <cell role="ISSN">0146-6615</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">40%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Molecular Recognition</cell>
+                        <cell role="ISSN">0952-3499</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">56%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Physical Organic Chemistry</cell>
+                        <cell role="ISSN">0894-3230</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">55%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Sociolinguistics</cell>
+                        <cell role="ISSN">1360-6441</cell>
+                        <cell role="eISSN">1467-9841</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">45%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Luminescence</cell>
+                        <cell role="ISSN">1522-7235</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">21%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Marine Ecology</cell>
+                        <cell role="ISSN">0173-9565</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">33%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Modern Theology</cell>
+                        <cell role="ISSN">0266-7177</cell>
+                        <cell role="eISSN">1468-0025</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Molecular Microbiology</cell>
+                        <cell role="ISSN">0950-382X</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">39%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Oral Diseases</cell>
+                        <cell role="ISSN">1354-523X</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">41%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Particle and Particle Systems Characterization</cell>
+                        <cell role="ISSN">0934-0866</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">71%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Pediatric Anesthesia</cell>
+                        <cell role="ISSN">1155-5645</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">29%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Journal of Clinical Ultrasound</cell>
+                        <cell role="ISSN">0091-2751</cell>
+                        <cell role="eISSN">1097-0096</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">26%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Pediatric Pulmonology</cell>
+                        <cell role="ISSN">8755-6863</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">32%</cell>
+                        <cell role="Domain">Medicine</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Phytotherapy Research</cell>
+                        <cell role="ISSN">0951-418X</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">16%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Polymers for Advanced Technologies</cell>
+                        <cell role="ISSN">1042-7147</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">21%</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">River Research and Application</cell>
+                        <cell role="ISSN">1535-1459</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">23%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Social Development</cell>
+                        <cell role="ISSN">0961-205X</cell>
+                        <cell role="eISSN">1467-9507</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">32%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Social Policy &amp; Administration</cell>
+                        <cell role="ISSN">0144-5596</cell>
+                        <cell role="eISSN">1467-9515</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">71%</cell>
+                        <cell role="Domain">Social Sciences &amp; Humanities</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">ZAAC - Zeitschrift für anorganische und allgemeine
+                            Chemie / Journal of Inorganic and General Chemistry</cell>
+                        <cell role="ISSN">0044-2313</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">N/A</cell>
+                        <cell role="Domain">Physical Sciences</cell>
+                        <cell role="Embargo">24</cell>
+                        <cell role="Language">Ger or Eng</cell>
+                        <cell role="DepositType">Publisher</cell>
+                    </row>
+                    <row>
+                        <cell role="Journal">Zoo Biology</cell>
+                        <cell role="ISSN">0733-3188</cell>
+                        <cell role="Publisher">Wiley-Blackwell</cell>
+                        <cell role="EUAuthors">22%</cell>
+                        <cell role="Domain">Life Sciences</cell>
+                        <cell role="Embargo">12</cell>
+                        <cell role="Language"/>
+                        <cell role="DepositType">Author</cell>
+                    </row>
+                </table>
+            </div>
+        </body>
+    </text>
+</TEI>

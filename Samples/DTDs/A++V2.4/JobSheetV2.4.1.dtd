@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ....................................................................... -->
+<!-- JobSheet top level elements                                             -->
+<!-- ....................................................................... -->
+<!ELEMENT JobSheet (IssueJobSheet | ArticleJobSheet | BookJobSheet | PartJobSheet | ChapterJobSheet)>
+<!ATTLIST JobSheet
+	Version (2.4.1) #REQUIRED
+	ObjectID CDATA #IMPLIED
+	JobSheetDate CDATA #REQUIRED
+	PurchaseOrderNumber CDATA #IMPLIED
+	Supplier (Printer | FullServiceVendor | Application | ExternalPublisher) #IMPLIED
+>
+<!ELEMENT IssueJobSheet (PublisherInfo, JournalInfo, VolumeInfo, IssueInfo, ProductionInfo)>
+<!ELEMENT ArticleJobSheet (PublisherInfo, JournalInfo, ArticleInfo, AuthorGroup?, ProductionInfo)>
+<!ELEMENT BookJobSheet (PublisherInfo, (SeriesInfo+, SubSeriesInfo?, SeriesHeader?)?, BookInfo, AuthorGroup?, EditorGroup?, CollaboratorGroup?, ProductionInfo)>
+<!ELEMENT PartJobSheet (PublisherInfo, BookInfo, PartInfo, AuthorGroup?, EditorGroup?, ProductionInfo)>
+<!ELEMENT ChapterJobSheet (PublisherInfo, (BookInfo | (SeriesInfo, BookInfo?)), EditorGroup?, ChapterInfo, AuthorGroup?, CollaboratorGroup?, ProductionInfo)>
+<!-- ....................................................................... -->
+<!-- ProductionInfo elements                                                 -->
+<!-- ....................................................................... -->
+<!-- ....................................................................... -->
+<!-- ArticleJobSheet and ChapterJobSheet: DiscreteObjectTechnicalInfo?       -->
+<!-- IssueJobSheet: (CompoundObjectTechnicalInfo?,DiscreteIssueObjectInfo*)  -->
+<!--                If TaskType='UpdateIssueMetadata' no DiscreteIssueObjectInfo  -->
+<!-- PartJobSheet: DiscreteBookObjectInfo+                                   -->
+<!-- BookJobSheet: (PartInfoGroup*, DiscreteBookObjectInfo+)                 -->
+<!-- ....................................................................... -->
+<!ELEMENT ProductionInfo (SPACEInfo?, ManuscriptInfo?, GrantNumber?, ProductionEditor?, ContactPerson?, ProductionCostCenter?, ProductionLocation?, EditorialInfo?, QualifyingProductionNotes?, SupplementInfo?, TechnicalInfo?, (DiscreteObjectTechnicalInfo? | (CompoundObjectTechnicalInfo?, ((CompoundIssueObjectInfo?, DiscreteIssueObjectInfo*) | (CompoundBookObjectInfo*, (PartInfoGroup?, DiscreteBookObjectInfo?)*)))), WorkflowInfo)>
+<!-- ....................................................................... -->
+<!-- SPACEInfo                                                               -->
+<!-- ....................................................................... -->
+<!ELEMENT SPACEInfo EMPTY>
+<!ATTLIST SPACEInfo
+	PublicationObjectID CDATA #IMPLIED
+	SupplierSPACEID CDATA #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- ManuscriptInfo elements                                                 -->
+<!-- ....................................................................... -->
+<!ELEMENT ManuscriptInfo (PeerReviewSystem?, EditorialManuscriptNumber?, ManuscriptNumberOfPages?, ManuscriptNumberOfGraphics?, ManuscriptNumberOfTables?, RemarkByEditor?, ElectronicDelivery, PostalDelivery)>
+<!ELEMENT PeerReviewSystem (#PCDATA)>
+<!-- under construction: might use attribute with pre-defined names and versions -->
+<!ELEMENT EditorialManuscriptNumber (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfPages (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfGraphics (#PCDATA)>
+<!ELEMENT ManuscriptNumberOfTables (#PCDATA)>
+<!ELEMENT RemarkByEditor (#PCDATA)>
+<!ELEMENT ElectronicDelivery EMPTY>
+<!ATTLIST ElectronicDelivery
+	Delivery (Complete | Incomplete | None) #REQUIRED
+>
+<!ELEMENT PostalDelivery EMPTY>
+<!ATTLIST PostalDelivery
+	Delivery (Complete | Incomplete | None) #REQUIRED
+>
+<!-- ....................................................................... -->
+<!-- ProductionEditor elements                                               -->
+<!-- ....................................................................... -->
+<!ELEMENT ProductionEditor (ProductionEditorName, Contact)>
+<!ELEMENT ProductionEditorName (%NameModel;)>
+<!ELEMENT ProductionCostCenter (#PCDATA)>
+<!ELEMENT ProductionLocation (#PCDATA)>
+<!ELEMENT EditorialInfo (PublishingUnit?, PublishingDiscipline?, PublishingSegment?)>
+<!ELEMENT PublishingUnit (#PCDATA)>
+<!ELEMENT PublishingDiscipline (#PCDATA)>
+<!ELEMENT PublishingSegment (#PCDATA)>
+<!ELEMENT QualifyingProductionNotes (QualifyingProductionNotesAds?, QualifyingProductionNotesCdDvdEsm?, QualifyingProductionNotesComplimentaryCopies?, QualifyingProductionNotesCopyEditing?, QualifyingProductionNotesFrontmatter?, QualifyingProductionNotesIndex?, QualifyingProductionNotesManufacturing?, QualifyingProductionNotesProductionClassification?, QualifyingProductionNotesSpringerDotCom?, QualifyingProductionNotesMiscellaneous?, QualifyingProductionNotesManuscriptMaterial?, QualifyingProductionNotesLayout?, QualifyingProductionNotesProof?, QualifyingProductionNotesColorFigures?)>
+<!ELEMENT QualifyingProductionNotesAds (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesCdDvdEsm (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesComplimentaryCopies (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesCopyEditing (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesFrontmatter (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesIndex (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesManufacturing (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesProductionClassification (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesSpringerDotCom (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesMiscellaneous (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesManuscriptMaterial (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesLayout (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesProof (#PCDATA)>
+<!ELEMENT QualifyingProductionNotesColorFigures (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- TechnicalInfo elements                                                  -->
+<!-- ....................................................................... -->
+<!-- DiscreteObjectTechnicalInfo elements                                    -->
+<!--                                                                         -->
+<!ELEMENT DiscreteObjectTechnicalInfo (StyleInfo?, ColorImagesInPrint?, ColorImagesOnPage*, OffprintOrder?, RecipientInvoice?, NumberOfFreeCopies?, ProductionClassification?, EmbargoDate?)>
+<!-- insert ObjectID? -->
+<!ATTLIST DiscreteObjectTechnicalInfo
+	ContainsColorImages %BooleanAttrValues; #IMPLIED
+	ColorInPrint %BooleanAttrValues; #IMPLIED
+>
+<!ELEMENT OffprintOrder (OffprintPriceList?, NumberOfFreeOffprints, NumberOfPaidOffprints?, (FreeElectronicOffprint | PaidElectronicOffprint)?, NumberOfPaidPosters?, OffprintRecipient?, PurchaseOrderNumber?)>
+<!ELEMENT OffprintPriceList (OffprintPrice+)>
+<!ELEMENT OffprintPrice (Price)>
+<!ATTLIST OffprintPrice
+	NumberOfOffprints CDATA #REQUIRED
+>
+<!ELEMENT Price (Currency, Amount)>
+<!ELEMENT Currency (#PCDATA)>
+<!ELEMENT Amount (#PCDATA)>
+<!ELEMENT NumberOfPaidOffprints (#PCDATA)>
+<!ELEMENT NumberOfFreeOffprints (#PCDATA)>
+<!ELEMENT FreeElectronicOffprint EMPTY>
+<!ELEMENT PaidElectronicOffprint EMPTY>
+<!ELEMENT NumberOfPaidPosters (#PCDATA)>
+<!ELEMENT OffprintRecipient (OffprintRecipientName, OffprintAddress)>
+<!ELEMENT OffprintRecipientName (%NameModel;)>
+<!ATTLIST OffprintRecipientName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT OffprintAddress ((OrgDivision?, OrgName)?, (%AddressModel;)*)>
+<!ELEMENT RecipientInvoice (RecipientName, RecipientAddress, InvoiceItem+, (CreditCardInformation | BankAccountInformation)?, VATRegistrationNumber?, PurchaseOrderNumber?, GrossPrice?)?>
+<!ATTLIST RecipientInvoice
+	PaymentMethod (CreditCard | BankAccount | Bill) #IMPLIED
+	PaymentID CDATA #IMPLIED
+>
+<!ELEMENT RecipientName (%NameModel;)>
+<!ATTLIST RecipientName
+	SAPID CDATA #IMPLIED
+>
+<!ELEMENT RecipientAddress ((OrgDivision?, OrgName)?, (%AddressModel;)*)>
+<!ELEMENT InvoiceItem (InvoiceAmount, InvoiceVATRate)>
+<!ATTLIST InvoiceItem
+	Type (OpenChoice | OffprintCharge | ColorCharge | ElectronicOffprint | PosterCharge) #REQUIRED
+	Currency (EUR | USD | GBP | JPY | CHF) #REQUIRED
+>
+<!ELEMENT InvoiceAmount (#PCDATA)>
+<!ELEMENT InvoiceVATRate (#PCDATA)>
+<!ELEMENT CreditCardInformation (CreditCardNumber, CreditCardHolderName, CreditCardValidity)>
+<!ATTLIST CreditCardInformation
+	Type (MasterCard | Visa | AmericanExpress) #REQUIRED
+>
+<!ELEMENT CreditCardNumber (#PCDATA)>
+<!ELEMENT CreditCardHolderName (#PCDATA)>
+<!ELEMENT CreditCardValidity (Month, Year)>
+<!ELEMENT BankAccountInformation (BankName, BankCode, BankAccountNumber)>
+<!ELEMENT BankName (#PCDATA)>
+<!ELEMENT BankCode (#PCDATA)>
+<!ELEMENT BankAccountNumber (#PCDATA)>
+<!ELEMENT VATRegistrationNumber (#PCDATA)>
+<!ELEMENT GrossPrice (#PCDATA)>
+<!ATTLIST GrossPrice
+	Currency (EUR | USD | GBP | JPY | CHF) #REQUIRED
+>
+<!ELEMENT NumberOfFreeCopies (#PCDATA)>
+<!ELEMENT EmbargoDate (%YearMonthDayModel;)>
+<!ATTLIST EmbargoDate
+    Type (OpenAccess | PermanentFreeAccess) #REQUIRED
+    Period CDATA #REQUIRED
+>
+<!--                                                                         -->
+<!-- CompoundObjectTechnicalInfo elements      -->
+<!--                                                                         -->
+<!-- Currently CoverProductionInfo?, InnerworkProductionInfo?, FoldOut?, Insert? are covered by ManufactoringProfile
+<!ELEMENT CompoundObjectTechnicalInfo (CompoundObjectFirstPage?, CompoundObjectLastPage?, CompoundObjectNumberOfAPages?, 
+CompoundObjectProductionHistory?, CoverProductionInfo?, InnerworkProductionInfo?, FoldOut?, Insert?)>
+-->
+<!ELEMENT CompoundObjectTechnicalInfo (SplittingNumberOfParts?, SplittingNumberOfChapters?, SplittingNumberOfAPageObjects?, ManuscriptNumberOfPages?, CompoundObjectFirstPage?, CompoundObjectLastPage?, CompoundObjectNumberOfAPages?, CompoundObjectTotalNumberOfPages*, CompoundObjectNumberOfArabicPages?, CompoundObjectNumberOfRomanPages?, CompoundObjectNumberOfColorPages*, CompoundObjectNumberOfImages?, ColorImagesInPrint?, ColorImagesOnPage*, CompoundObjectProductionHistory?, ProductionClassification?, PODInformation*, ManufacturingProfile?, PrintQuality?, PrintRun*, Shares*, ReprintNumber*, FormatTrimSize*, NumberOfVolumes?, CopyEditing?, Typesetting?, ProductionEvent*)>
+<!ELEMENT SplittingNumberOfParts (#PCDATA)>
+<!ELEMENT SplittingNumberOfChapters (#PCDATA)>
+<!ELEMENT SplittingNumberOfAPageObjects (#PCDATA)>
+<!ELEMENT ManufacturingProfile EMPTY>
+<!ATTLIST ManufacturingProfile
+	Name (Profile1) #REQUIRED
+>
+<!-- update value as available -->
+<!ELEMENT CompoundObjectFirstPage (#PCDATA)>
+<!ELEMENT CompoundObjectLastPage (#PCDATA)>
+<!ELEMENT CompoundObjectNumberOfAPages (#PCDATA)>
+<!ATTLIST CompoundObjectNumberOfAPages
+	NumberOfEditorialPages CDATA #IMPLIED
+	NumberOfIndexPages CDATA #IMPLIED
+>
+<!ELEMENT CompoundObjectTotalNumberOfPages (#PCDATA)>
+<!ATTLIST CompoundObjectTotalNumberOfPages
+	MultiVolumeSequenceNumber CDATA #IMPLIED
+	CompoundObjectID IDREF #IMPLIED
+>
+<!ELEMENT CompoundObjectNumberOfArabicPages (#PCDATA)>
+<!ELEMENT CompoundObjectNumberOfRomanPages (#PCDATA)>
+<!ELEMENT CompoundObjectNumberOfColorPages (#PCDATA)>
+<!ATTLIST CompoundObjectNumberOfColorPages
+	MultiVolumeSequenceNumber CDATA #IMPLIED
+	CompoundObjectID IDREF #IMPLIED
+>
+<!ELEMENT CompoundObjectNumberOfImages EMPTY>
+<!ATTLIST CompoundObjectNumberOfImages
+	Illustrations CDATA #REQUIRED
+	Halftones CDATA #IMPLIED
+	Linearts CDATA #IMPLIED
+	PrintImagesColor CDATA #IMPLIED
+	PrintImagesBlackWhite CDATA #IMPLIED
+>
+<!ELEMENT CompoundObjectProductionHistory (ScheduledToPrintDate?, SentToPrintDate)>
+<!ELEMENT ScheduledToPrintDate (%YearMonthDayModel;)>
+<!ELEMENT SentToPrintDate (%YearMonthDayModel;)>
+<!ELEMENT ProductionClassification EMPTY>
+<!ATTLIST ProductionClassification
+	Type (A_Pawn | B_Bishop | C_Knight | D_Queen | E_King | F_Rook) #REQUIRED
+>
+<!ELEMENT PODInformation EMPTY>
+<!ATTLIST PODInformation
+	Suitable (Yes | No) #REQUIRED
+	Active (Yes | No) #REQUIRED
+	CompoundObjectID IDREF #REQUIRED
+>
+<!ELEMENT ProductionEvent (%YearMonthDayModel;)>
+<!ATTLIST ProductionEvent
+	Type (SentToPrintDate | EarliestDateStart | EarliestDateEnd | ActualDateStart | ActualDateEnd) #REQUIRED
+>
+<!ELEMENT ReprintNumber (#PCDATA)>
+<!ATTLIST ReprintNumber
+	CompoundObjectID IDREF #REQUIRED
+>
+<!-- StyleInfo -->
+<!ELEMENT StyleInfo (MarkupProfile, PrepressProfile)>
+<!ELEMENT PrepressProfile EMPTY>
+<!ATTLIST PrepressProfile
+	Name (Profile1) #REQUIRED
+>
+<!-- update value as available -->
+<!ELEMENT MarkupProfile EMPTY>
+<!ATTLIST MarkupProfile
+	Name (Profile1) #IMPLIED
+>
+<!--                                                                         -->
+<!-- TechnicalInfo elements      -->
+<!--                                                                         -->
+<!ELEMENT TechnicalInfo (TitleAdditionalLanguage*, TitleUpperCase?, AuthorInformationStyle?, HistoryStyle?, AbstractInDocumentLanguage?, AbstractAdditionalLanguage*, StructuredAbstract?, KeywordsInDocumentLanguage?, KeywordsAdditionalLanguage*, CaptionAdditionalLanguage*, ClassificationStyle*, BibliographyStyle?, CitationStyle?, BodyMarkup?, Typesetting?, TextSpecifications?, ColorSpecifications*, Inserts*, FormatTrimSize*, TocInfo?, NumberOfVolumes?, SpecialShippingRemark?, CoverProductionInfo*, BookComponents*, Binding*, ReferencePDFStyle?)>
+<!ELEMENT TitleAdditionalLanguage EMPTY>
+<!ATTLIST TitleAdditionalLanguage
+	Language %LanguageAttrValues; #REQUIRED
+	Type (Required | Desired | Permitted) #REQUIRED
+>
+<!ELEMENT TitleUpperCase EMPTY>
+<!ATTLIST TitleUpperCase
+	Letters (InitialWord | InitialLetters | Nonstandard) #REQUIRED
+>
+<!ELEMENT AuthorInformationStyle EMPTY>
+<!ATTLIST AuthorInformationStyle
+	Biography (Permitted | Desired | Required | No) #REQUIRED
+	Photograph (Permitted | Desired | Required | No) #REQUIRED
+	CapturePrefix (Yes | No) #IMPLIED
+>
+<!ELEMENT HistoryStyle EMPTY>
+<!ATTLIST HistoryStyle
+	Received (Yes | No) #REQUIRED
+	Revised (Yes | No) #REQUIRED
+	Accepted (Yes | No) #REQUIRED
+>
+<!ELEMENT AbstractInDocumentLanguage EMPTY>
+<!ATTLIST AbstractInDocumentLanguage
+	Type (Required | Desired | Permitted | NotPermitted) #REQUIRED
+>
+<!ELEMENT AbstractAdditionalLanguage EMPTY>
+<!ATTLIST AbstractAdditionalLanguage
+	Language %LanguageAttrValues; #REQUIRED
+	Type (Required | Desired | Permitted) #REQUIRED
+>
+<!ELEMENT StructuredAbstract EMPTY>
+<!ATTLIST StructuredAbstract
+	Type (Required | Desired | Permitted | NotPermitted) #REQUIRED
+>
+<!ELEMENT KeywordsInDocumentLanguage EMPTY>
+<!ATTLIST KeywordsInDocumentLanguage
+	Type (Required | Desired | Permitted | NotPermitted) #REQUIRED
+>
+<!ELEMENT KeywordsAdditionalLanguage EMPTY>
+<!ATTLIST KeywordsAdditionalLanguage
+	Language %LanguageAttrValues; #REQUIRED
+	Type (Required | Desired | Permitted) #REQUIRED
+>
+<!ELEMENT CaptionAdditionalLanguage EMPTY>
+<!ATTLIST CaptionAdditionalLanguage
+	Language %LanguageAttrValues; #REQUIRED
+	Type (Required | Desired | Permitted) #REQUIRED
+>
+<!ELEMENT ClassificationStyle EMPTY>
+<!ATTLIST ClassificationStyle
+	Scheme (PACS | MSC | JEL) #REQUIRED
+	Type (Required | Desired | Permitted | NotPermitted) #REQUIRED
+>
+<!ELEMENT BibliographyStyle EMPTY>
+<!ATTLIST BibliographyStyle
+	Type (Basic | Vancouver | APA | MathPhysSci | APS | Chemistry | Chicago | AsInManuscript) #REQUIRED
+>
+<!ELEMENT CitationStyle EMPTY>
+<!ATTLIST CitationStyle
+	Type (Numbered | NameYear | Alphanumeric | Nonstandard) #REQUIRED
+>
+<!ELEMENT BodyMarkup EMPTY>
+<!ATTLIST BodyMarkup
+	Type (XML | TEX | XMLandTEX | None) #REQUIRED
+>
+<!ELEMENT Typesetting (EndsheetsContentOnPage*)>
+<!ATTLIST Typesetting
+	Layout CDATA #REQUIRED
+	StartPage (RightLeft | Right) #IMPLIED
+	RunningHead (Standard | Option | Nonstandard) #REQUIRED
+	LogoOnFirstPage (Yes | No) #IMPLIED
+	EndsheetsContent (Yes | No) #IMPLIED
+	Profile (EditedWork | AuthoredWork) #IMPLIED
+	StandardFrontmatter (Yes | No) #IMPLIED
+>
+<!ELEMENT EndsheetsContentOnPage (#PCDATA)>
+<!ELEMENT TextSpecifications EMPTY>
+<!ATTLIST TextSpecifications
+	GutterMargin CDATA #REQUIRED
+	HeadMargin CDATA #REQUIRED
+	Bleeds (TopMargin | GutterMargin | OutsideMargin | BottomMargin | TopAndOutsideMargins | OutsideAndBottomMargins | TopOutsideAndBottomMargins | AllFourMargins | None) #REQUIRED
+	TypeareaHeight CDATA #REQUIRED
+	TypeareaWidth CDATA #REQUIRED
+	PaperStock CDATA #IMPLIED
+>
+<!ELEMENT ColorSpecifications (LayoutColorName+, AdditionalColorName*, PrintingColorName*)>
+<!ATTLIST ColorSpecifications
+	LayoutColorCount (1 | 2 | 3 | 4 | 5 | 6) #REQUIRED
+	AdditionalColorCount (1 | 2 | 3 | 4 | 5 | 6) #IMPLIED
+	PrintingColorCount (1 | 2 | 3 | 4 | 5 | 6) #IMPLIED
+	CompoundObjectID IDREF #IMPLIED
+	MultiVolumeSequenceNumber CDATA #IMPLIED
+>
+<!ELEMENT LayoutColorName (#PCDATA)>
+<!ELEMENT PrintingColorName (#PCDATA)>
+<!ELEMENT AdditionalColorName (AdditionalColorPage*)>
+<!ATTLIST AdditionalColorName
+	Name CDATA #REQUIRED
+>
+<!ELEMENT AdditionalColorPage (#PCDATA)>
+<!ELEMENT Inserts EMPTY>
+<!ATTLIST Inserts
+	Type (Plates | Foldouts) #REQUIRED
+	Number CDATA #REQUIRED
+	PageCount CDATA #REQUIRED
+	Placement (Exact | BetweenSignatures) #REQUIRED
+	Stock (70-C2S | 80-C2S) #IMPLIED
+	Bleeds (TopMargin | GutterMargin | OutsideMargin | BottomMargin | TopAndOutsideMargins | OutsideAndBottomMargins | TopOutsideAndBottomMargins | AllFourMargins | None) #REQUIRED
+	PageSize CDATA #REQUIRED
+>
+<!ELEMENT FormatTrimSize (#PCDATA)>
+<!ATTLIST FormatTrimSize
+	TrimWidthMm CDATA #IMPLIED
+	TrimHeightMm CDATA #IMPLIED
+	TrimWidthInch CDATA #IMPLIED
+	TrimHeightInch CDATA #IMPLIED
+	CompoundObjectID IDREF #IMPLIED
+>
+<!ELEMENT TocInfo EMPTY>
+<!ATTLIST TocInfo
+	Style (Standard | Option | Nonstandard) #REQUIRED
+	Location (A3 | FrontCover | BackCover | Nonstandard) #REQUIRED
+>
+<!ELEMENT NumberOfVolumes (#PCDATA)>
+<!ELEMENT SpecialShippingRemark (#PCDATA)>
+<!ELEMENT CoverProductionInfo (CoverExteriorColorName*, CoverInteriorColorName*, EndsheetsLayoutColorName*, EndsheetsPrintingColorName*, SpineWidth*)>
+<!ATTLIST CoverProductionInfo
+	Style (Hardcover | Softcover | ClothBound | SpiralBinding | RingBinding | JewelCase | CDSalesFolder | CDSleevePackaging | CDSpecialPackaging) #IMPLIED
+	PaperStock CDATA #REQUIRED
+	SpineWidth CDATA #IMPLIED
+	Printing (Silkscreen | Offset | Digital) #IMPLIED
+	Stamping (Yes | No) #REQUIRED
+	BinderBoards CDATA #IMPLIED
+	Finishing CDATA #REQUIRED
+	ChangingImages (Yes | No) #REQUIRED
+	Creases (2 | 4WithSideglue) #IMPLIED
+	Dustjacket (Yes | No) #REQUIRED
+	CompoundObjectID IDREF #REQUIRED
+	CoverExteriorColorCount (1 | 2 | 3 | 4 | 5 | 6) #IMPLIED
+	CoverInteriorColorCount (0 | 1 | 2 | 3 | 4 | 5 | 6) #IMPLIED
+	EndsheetsLayoutColorCount (1 | 2 | 3 | 4 | 5 | 6) #IMPLIED
+	EndsheetsPrintingColorCount (1 | 2 | 3 | 4 | 5 | 6) #IMPLIED
+>
+<!ELEMENT CoverExteriorColorName (#PCDATA)>
+<!ELEMENT CoverInteriorColorName (#PCDATA)>
+<!ELEMENT EndsheetsLayoutColorName (#PCDATA)>
+<!ELEMENT EndsheetsPrintingColorName (#PCDATA)>
+<!ELEMENT SpineWidth (#PCDATA)>
+<!ATTLIST SpineWidth
+	MultiVolumeSequenceNumber CDATA #IMPLIED
+>
+<!ELEMENT BookComponents EMPTY>
+<!ATTLIST BookComponents
+	Type (CD | DVD | LooseInsert | BoundInsert) #REQUIRED
+	Number CDATA #REQUIRED
+	Placement (Cover2 | Cover3 | Cover2And3) #IMPLIED
+	CompoundObjectID IDREF #REQUIRED
+>
+<!ELEMENT Binding (BookmarkRibbonColor*)>
+<!ATTLIST Binding
+	Type (Notch | Sewn | Perfect | Spiral | Wire-O | SaddleStitch | LoopStitching) #REQUIRED
+	EndsheetsPaper (Standard | Special) #REQUIRED
+	EndsheetsPaperColor CDATA #IMPLIED
+	HeadBandsColor CDATA #IMPLIED
+	BookBackType (Round | Straight) #IMPLIED
+	BookmarkRibbonCount CDATA #REQUIRED
+	CompoundObjectID IDREF #REQUIRED
+>
+<!ELEMENT BookmarkRibbonColor (#PCDATA)>
+<!ELEMENT PrintQuality EMPTY>
+<!ATTLIST PrintQuality
+	Level (Normal | High) #REQUIRED
+>
+<!ELEMENT ReferencePDFStyle EMPTY>
+<!ATTLIST ReferencePDFStyle
+	Type (Edited | Unedited) #REQUIRED
+>
+<!ELEMENT PrintRun EMPTY>
+<!ATTLIST PrintRun
+	Total CDATA #REQUIRED
+	Normal CDATA #IMPLIED
+	Promotional CDATA #IMPLIED
+	Extra CDATA #IMPLIED
+	CompoundObjectID IDREF #IMPLIED
+>
+<!ELEMENT Shares (Share+)>
+<!ATTLIST Shares
+	CompoundObjectID IDREF #REQUIRED
+>
+<!ELEMENT Share EMPTY>
+<!ATTLIST Share
+	Type CDATA #REQUIRED
+	Quantity CDATA #REQUIRED
+>
+<!ELEMENT ColorImagesOnPage (#PCDATA)>
+<!ATTLIST ColorImagesOnPage
+	MultiVolumeSequenceNumber CDATA #IMPLIED
+	CompoundObjectID IDREF #IMPLIED
+>
+<!ELEMENT ColorImagesInPrint (#PCDATA)>
+<!-- ....................................................................... -->
+<!-- Discrete Object Info for compound objects elements                      -->
+<!-- ....................................................................... -->
+<!ELEMENT DiscreteIssueObjectInfo ((CoverInfo | AdditionalCoverInfo | IssueFrontmatterInfo | AdvertisementInfo | ArticleInfo | IssueBackmatterInfo | BlankPageInfo), AuthorGroup?, DiscreteObjectTechnicalInfo?)>
+<!ATTLIST DiscreteIssueObjectInfo
+	ID ID #REQUIRED
+>
+<!ELEMENT CompoundIssueObjectInfo (PurchaseOrderNumber?)>
+<!ATTLIST CompoundIssueObjectInfo
+	ID ID #REQUIRED
+	PageCount CDATA #REQUIRED
+>
+<!ELEMENT BlankPageInfo (BlankPageFirstPage, BlankPageLastPage)>
+<!ELEMENT BlankPageFirstPage (#PCDATA)>
+<!ELEMENT BlankPageLastPage (#PCDATA)>
+<!ELEMENT PartInfoGroup (PartInfo, AuthorGroup?, EditorGroup?, DiscreteBookObjectInfo*)>
+<!ELEMENT CompoundBookObjectInfo (ISBN, EAN?, BookMultiVolumeCount?, BookMultiVolumeSplitAfterChapter*, PurchaseOrderNumber?)>
+<!ATTLIST CompoundBookObjectInfo
+	ID ID #REQUIRED
+	Type (Print | Electronic) #REQUIRED
+	MediaType CDATA #IMPLIED
+	SeriesID IDREF #IMPLIED
+>
+<!ELEMENT EAN (#PCDATA)>
+<!ELEMENT BookMultiVolumeSplitAfterChapter (#PCDATA)>
+<!ELEMENT PurchaseOrderNumber (#PCDATA)>
+<!ELEMENT DiscreteBookObjectInfo ((CoverInfo | BookFrontmatterInfo | AdvertisementInfo | ChapterInfo | BookBackmatterInfo), AuthorGroup?, DiscreteObjectTechnicalInfo?)>
+<!ATTLIST DiscreteBookObjectInfo
+	ID ID #REQUIRED
+	CompoundObjectID IDREF #IMPLIED
+>
+<!-- ....................................................................... -->
+<!-- WorkflowInfo                                                            -->
+<!-- ....................................................................... -->
+<!ELEMENT WorkflowInfo (Priority, Deadline?, Supplier)>
+<!ATTLIST WorkflowInfo
+	TaskType (ImportManuscriptData | PrepareContent | PerformProof | DistributeDigitalContent | CreateHardCopy | UpdateIssueMetadata | UpdateArticleMetadata | UpdateBookMetadata | Migration | Corrigendum | DeliverDiscreteObject | DeliverCompoundObject | RetrieveDiscreteObject | ManuscriptSplitting | AuthorInput | CreateOffprints | VendorInformationSubmission | UpdateArchivedContent) #REQUIRED
+>
+<!ELEMENT Priority EMPTY>
+<!ATTLIST Priority
+	Level (Standard | High) "Standard"
+>
+<!ELEMENT Deadline ((OnlineFirstDeadline, FixedPublicationDate?) | (TypesetterDeadline, FixedPublicationDate?) | (PrinterDeadline, FixedPublicationDate?) | (S200TypesetterDeadline, S300TypesetterDeadline, (S600TypesetterDeadline, S650TypesetterDeadline, S700PrinterDeadline, S800PrintDistributionDeadline, S900ElectronicDistributionDeadline, FixedPublicationDate?, PlannedPublicationDate*)?) | (S50TypesetterDeadline, S200TypesetterDeadline?, S300TypesetterDeadline?, S600TypesetterDeadline, S650TypesetterDeadline, S700PrinterDeadline, S800PrintDistributionDeadline, S900ElectronicDistributionDeadline, FixedPublicationDate?, PlannedPublicationDate*))>
+<!ELEMENT OnlineFirstDeadline (%YearMonthDayModel;)>
+<!ELEMENT TypesetterDeadline (%YearMonthDayModel;)>
+<!ELEMENT PrinterDeadline (%YearMonthDayModel;)>
+<!ELEMENT S50TypesetterDeadline (%YearMonthDayModel;)>
+<!ELEMENT S200TypesetterDeadline (%YearMonthDayModel;)>
+<!ELEMENT S300TypesetterDeadline (%YearMonthDayModel;)>
+<!ELEMENT S600TypesetterDeadline (%YearMonthDayModel;)>
+<!ELEMENT S650TypesetterDeadline (%YearMonthDayModel;)>
+<!ELEMENT S700PrinterDeadline (%YearMonthDayModel;)>
+<!ELEMENT S800PrintDistributionDeadline (%YearMonthDayModel;)>
+<!ELEMENT S900ElectronicDistributionDeadline (%YearMonthDayModel;)>
+<!ELEMENT FixedPublicationDate (%YearMonthDayModel;, Hour?, Reason?)>
+<!ELEMENT PlannedPublicationDate (%YearMonthModel;, Day?)>
+<!ATTLIST PlannedPublicationDate
+	CompoundObjectID IDREF #REQUIRED
+>
+<!--                                                                         -->
+<!-- Elements for Suppliers                                                  -->
+<!--                                                                         -->
+<!ELEMENT Supplier (FullServiceVendor | Printer | Application | AuthorQueryApplication | ExternalPublisher)>
+<!ENTITY % SupplierModel "CompanyName, Contact?, ContactPerson?, RemarkFrom?, RemarkTo?, CopyEditing?, 
+ProofInfo?, FilesToSupplier, Deliverables, DispatcherAddress?, FilesToPublisher">
+<!ELEMENT FullServiceVendor (%SupplierModel;)>
+<!ELEMENT Printer (%SupplierModel;)>
+<!ELEMENT ExternalPublisher (CompanyName, Contact?, ContactPerson?, Deliverables, FilesToPublisher)>
+<!ENTITY % ApplicationModel "Event?, FilesToApplication, Deliverables, FilesToPublisher">
+<!ELEMENT Application (%ApplicationModel;)>
+<!ATTLIST Application
+	Name (PRS | DDS | PPM | ArticleTracking | BookTracking | SpringerReference) #REQUIRED
+>
+<!ELEMENT AuthorQueryApplication ((%ApplicationModel;), CopyrightTransfer?)>
+<!ATTLIST AuthorQueryApplication
+	ColorForFree %BooleanAttrValues; #REQUIRED
+	OpenChoiceActive %BooleanAttrValues; #REQUIRED
+	BlackAndWhiteJournal %BooleanAttrValues; #REQUIRED
+	PrinterCompanyName CDATA #REQUIRED
+	SocietyStatement %BooleanAttrValues; "No"
+	WorkflowScenario (Standard | Yen) "Standard"
+>
+<!ELEMENT CopyrightTransfer (Reason, Timestamp, OrgName?)>
+<!ATTLIST CopyrightTransfer
+	Given (Yes | No) #REQUIRED
+>
+<!ELEMENT Reason (#PCDATA)>
+<!ELEMENT Timestamp (#PCDATA)>
+<!ELEMENT Event (EventName, EventDate)>
+<!ELEMENT EventName (#PCDATA)>
+<!ELEMENT EventDate (%YearMonthDayModel;)>
+<!ELEMENT CompanyName (#PCDATA)>
+<!-- ContactPerson: Is this needed? How to store in collaborators table? Or just to be filled by Vendor? -->
+<!ELEMENT ContactPerson (ContactPersonName, Contact?)>
+<!ELEMENT ContactPersonName (%NameModel;)>
+<!ELEMENT RemarkFrom (#PCDATA)>
+<!ELEMENT RemarkTo (#PCDATA)>
+<!ELEMENT CopyEditing (CopyEditor?)>
+<!ATTLIST CopyEditing
+	Category (0 | 1 | 2 | 3) #REQUIRED
+>
+<!-- CopyEditor will not be used at start of JWF, since not in SpACE; use RemarkTo instead -->
+<!ELEMENT CopyEditor (CopyEditorName, Contact)>
+<!ELEMENT CopyEditorName (%NameModel;)>
+<!ELEMENT ProofInfo (ProofRecipient*, ProofCoRecipient*, ProofContact?)>
+<!ATTLIST ProofInfo
+	ProofStage (Discrete | Compound | DiscreteAndCompound | None) #IMPLIED
+>
+<!ELEMENT ProofRecipient (Author | ProductionEditor | Editor | InstitutionalAuthor | InstitutionalEditor)>
+<!ATTLIST ProofRecipient
+	CorrectionsRequired (Yes | No) #IMPLIED
+	ProofType (Discrete | Compound | FrontBackmatter | DiscreteAndCompound | DiscreteAndFrontBackmatter) #IMPLIED
+>
+<!ELEMENT ProofCoRecipient (ProofCoRecipientName, Contact)>
+<!ATTLIST ProofCoRecipient
+	CorrectionsRequired (Yes | No) #IMPLIED
+>
+<!ELEMENT ProofCoRecipientName (%NameModel;)>
+<!ATTLIST ProofCoRecipientName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT ProofContactName (%NameModel;)>
+<!ATTLIST ProofContactName
+	DisplayOrder (Western | Eastern) "Western"
+>
+<!ELEMENT ProofContact ((ProofContactName, Contact) | Editor)?>
+<!ATTLIST ProofContact
+	ProofContactType (FS_Vendor | Editor | Other) "FS_Vendor"
+>
+<!ELEMENT FilesToSupplier (ContentFiles | NoFiles)>
+<!ELEMENT FilesToApplication (ContentFiles | NoFiles)>
+<!ELEMENT FilesToPublisher (ContentFiles | NoFiles | ToBeCompleted)>
+<!ELEMENT ContentFiles (File+)>
+<!ELEMENT File (AplusplusRootFile | AplusplusRelatedObjectFile | MediaObject | TextFile | SupportingItem | RenditionItem | WorkItem | Archive | Cover | Advertisement | APageFile | BlankPage)>
+<!ATTLIST File
+	DiscreteObjectID IDREF #IMPLIED
+	CompoundObjectID IDREF #IMPLIED
+	MultiVolumeSequenceNumber CDATA #IMPLIED
+>
+<!ELEMENT BlankPage (BlankPageInfo, BodyRef)>
+<!--                                                                    -->
+<!-- AplusplusRootFile references content of spr_article, spr_chapter,  -->
+<!-- spr_bookfrontmatter or spr_bookbackmatter                          -->
+<!--                                                                    -->
+<!ELEMENT AplusplusRootFile EMPTY>
+<!ATTLIST AplusplusRootFile
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+>
+<!--                                                                    -->
+<!-- AplusplusRelatedObjectFile references content of an A++ file that  -->
+<!-- belonging to an spr_article or spr_chapter related to the article  -->
+<!-- or chapter A++ referenced in the AplusplusRootFile                 -->
+<!--                                                                    -->
+<!ELEMENT AplusplusRelatedObjectFile EMPTY>
+<!ATTLIST AplusplusRelatedObjectFile
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+>
+<!--                                                                    -->
+<!-- TextFile references content of spr_text_file -->
+<!--                                                                    -->
+<!ELEMENT TextFile EMPTY>
+<!ATTLIST TextFile
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	FileFormat (TEX | XML) #IMPLIED
+	TEXRootFile (Yes) #IMPLIED
+>
+<!--                                                                    -->
+<!-- SupportingItem references content of spr_supporting_item -->
+<!--                                                                    -->
+<!ELEMENT SupportingItem EMPTY>
+<!ATTLIST SupportingItem
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	SupportingItemType (TEX | StyleSheet | Manuscript | AuthorComment | ReviewerReport) #IMPLIED
+	ID ID #IMPLIED
+	RefID IDREF #IMPLIED
+	Name CDATA #IMPLIED
+	Date CDATA #IMPLIED
+>
+<!--                                                                    -->
+<!-- RenditionItem references content of spr_rendition_item -->
+<!--                                                                    -->
+<!ELEMENT RenditionItem EMPTY>
+<!ATTLIST RenditionItem
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	TargetType (OnlinePDF | PrintPDF | eBookPDF | eOffprintPDF) #IMPLIED
+	colorProfile (sRGB | ISOcoated_v2_300_eci | Legacy) #IMPLIED
+	grayscaleProfile (Gamma2.2 | Legacy) #IMPLIED
+>
+<!--                                                                    -->
+<!-- WorkItem references content of spr_work_item -->
+<!--                                                                    -->
+<!ELEMENT WorkItem EMPTY>
+<!ATTLIST WorkItem
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	ItemType (ReferencePDF | DeltaPDF | EpsilonPDF | CopyrightTransfer | OpenAccessStatement | OffprintOrder | AuthorFeedback | Pit-Stop-Report | PRS-Metadata | ProductionEditorFeedback200 | ProductionEditorFeedback300 | ProductionEditorFeedback600 | ProductionEditorFeedback650 | Barcode | Checklist | ProofFeedback | CorrectionSheet) #IMPLIED
+>
+<!--                                                                    -->
+<!-- Archive references content of spr_archive -->
+<!--                                                                    -->
+<!ELEMENT Archive EMPTY>
+<!ATTLIST Archive
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	Content (Manuscript | ManuscriptCorrections | TEX | HTML | CoverRawData | PrintImages) #REQUIRED
+>
+<!ELEMENT APageFile EMPTY>
+<!ATTLIST APageFile
+	FileRef CDATA #REQUIRED
+	ObjectID CDATA #IMPLIED
+	FirstPage CDATA #IMPLIED
+	LastPage CDATA #IMPLIED
+	Position (Frontmatter | Backmatter) #REQUIRED
+	Type (Toc | ImprintTexts | AuthorInstructions | EditorialTexts | Index | CompleteFrontmatter | CompleteBackmatter) #REQUIRED
+	TargetType (OnlinePDF | PrintPDF | eBookPDF) #REQUIRED
+>
+<!ELEMENT NoFiles EMPTY>
+<!ATTLIST NoFiles
+	Reason (QualityDisapproved | WrongOriginalData | CorruptOriginalData | Receipt | Notification | NotificationProofRun | ManuscriptUpdate | WrongInstructions | StructureOnly | CopyrightReasons) #IMPLIED
+	WrongInstructionsType (SplittingInstructionsWrong | CopyEditingLevelWrong | ProductionCategoryWrong | SeeRemark) #IMPLIED
+>
+<!ELEMENT ToBeCompleted EMPTY>
+<!--                                                                    -->
+<!-- Deliverables elements                                              -->
+<!--                                                                    -->
+<!ELEMENT Deliverables (NoDeliverables | DeliverablesForDiscreteObjects | DeliverablesForCompoundObjects | DeliverablesForDiscreteBookObjects | DeliverablesForCompoundBookObjects)>
+<!ELEMENT NoDeliverables EMPTY>
+<!ELEMENT DeliverablesForDiscreteObjects EMPTY>
+<!ATTLIST DeliverablesForDiscreteObjects
+	XMLWithBody %BooleanAttrValues; #REQUIRED
+	XMLWithBodyRefsOnly %BooleanAttrValues; #REQUIRED
+	OnlinePDF %BooleanAttrValues; #REQUIRED
+	PrintPDF %BooleanAttrValues; #REQUIRED
+	eBookPDF %BooleanAttrValues; #REQUIRED
+	TEX %BooleanAttrValues; #REQUIRED
+	OnlineMediaObjects (IfApplies | No) #REQUIRED
+	PrintMediaObjects (IfApplies | No) #REQUIRED
+	ReferencePDF %BooleanAttrValues; #REQUIRED
+	AuthorFeedbackPDF %BooleanAttrValues; #REQUIRED
+	DeltaPDF %BooleanAttrValues; #REQUIRED
+	CopyrightTransfer (Yes | IfApplies | No) #REQUIRED
+	OpenAccessStatement (IfApplies | No) #REQUIRED
+	OffprintOrder (IfApplies | No) #REQUIRED
+	Pit-Stop-Reports %BooleanAttrValues; #REQUIRED
+	PRS-Metadata %BooleanAttrValues; #REQUIRED
+	Manuscript %BooleanAttrValues; #REQUIRED
+	EpsilonPDF %BooleanAttrValues; #REQUIRED
+	CorrectionSheet (IfApplies) #IMPLIED
+	OpenPeerReviewPDFs %BooleanAttrValues; #IMPLIED
+>
+<!ELEMENT DeliverablesForCompoundObjects EMPTY>
+<!ATTLIST DeliverablesForCompoundObjects
+	CoverPrintPDF %BooleanAttrValues; #REQUIRED
+	CoverFigure %BooleanAttrValues; #REQUIRED
+	FrontmatterPrintPDF %BooleanAttrValues; #REQUIRED
+	BackmatterPrintPDF %BooleanAttrValues; #REQUIRED
+	AdvertisementPrintPDF (IfApplies | No) #REQUIRED
+	DiscreteContentObjectOnlinePDF %BooleanAttrValues; #REQUIRED
+	DiscreteContentObjectPrintPDF %BooleanAttrValues; #REQUIRED
+	Pit-Stop-Reports %BooleanAttrValues; #REQUIRED
+	DiscreteContentObjectXMLWithBody (Yes | IfApplies | No) #REQUIRED
+	DiscreteContentObjectXMLWithBodyRefsOnly (Yes | IfApplies | No) #REQUIRED
+	DiscreteContentObjectOnlineMediaObjects (IfApplies | No) #REQUIRED
+	IssuePrintPDF %BooleanAttrValues; #IMPLIED
+	CorrectionSheet (IfApplies) #IMPLIED
+>
+<!ELEMENT DeliverablesForDiscreteBookObjects EMPTY>
+<!ATTLIST DeliverablesForDiscreteBookObjects
+	XMLWithBody %BooleanAttrValues; #REQUIRED
+	XMLWithBodyRefsOnly %BooleanAttrValues; #REQUIRED
+	ElectronicPDF %BooleanAttrValues; #REQUIRED
+	TEX %BooleanAttrValues; #REQUIRED
+	OnlineMediaObjects (IfApplies | No) #REQUIRED
+	PrintMediaObjects (IfApplies | No) #REQUIRED
+	ReferencePDF %BooleanAttrValues; #REQUIRED
+	ProofFeedbackPDF %BooleanAttrValues; #REQUIRED
+	DeltaPDF %BooleanAttrValues; #REQUIRED
+	EpsilonPDF %BooleanAttrValues; #REQUIRED
+	Pit-Stop-Reports %BooleanAttrValues; #REQUIRED
+	Manuscript %BooleanAttrValues; #REQUIRED
+	CorrectionSheet (IfApplies) #IMPLIED
+>
+<!ELEMENT DeliverablesForCompoundBookObjects EMPTY>
+<!ATTLIST DeliverablesForCompoundBookObjects
+	CoverPrintPDF %BooleanAttrValues; #REQUIRED
+	CoverFigure %BooleanAttrValues; #REQUIRED
+	DustJacketPDF %BooleanAttrValues; #REQUIRED
+	TocElectronicPDF %BooleanAttrValues; #REQUIRED
+	FrontmatterElectronicPDF %BooleanAttrValues; #REQUIRED
+	BackmatterElectronicPDF (Yes | IfApplies | No) #REQUIRED
+	FrontmatterXML (Yes | No) #IMPLIED
+	BackmatterXML (Yes | IfApplies | No) #IMPLIED
+	BookElectronicPDF %BooleanAttrValues; #REQUIRED
+	ChapterElectronicPDF %BooleanAttrValues; #REQUIRED
+	BookPrintPDF %BooleanAttrValues; #REQUIRED
+	Pit-Stop-Reports %BooleanAttrValues; #REQUIRED
+	BookProofFeedbackPDF %BooleanAttrValues; #REQUIRED
+	BookEpsilonPDF %BooleanAttrValues; #REQUIRED
+	ChapterXMLWithBody %BooleanAttrValues; #REQUIRED
+	ChapterXMLWithBodyRefsOnly %BooleanAttrValues; #REQUIRED
+	ChapterOnlineMediaObjects (IfApplies | No) #REQUIRED
+	ChapterPrintMediaObjects (IfApplies | No) #REQUIRED
+	PartFrontmatterElectronicPDF (IfApplies | No) #REQUIRED
+	PartBackmatterElectronicPDF (IfApplies | No) #REQUIRED
+	Manuscript %BooleanAttrValues; #REQUIRED
+	PartFrontmatterManuscripts (IfApplies | No) #REQUIRED
+	PartBackmatterManuscripts (IfApplies | No) #REQUIRED
+	PartFrontmatterXML (Yes | No) #IMPLIED
+	PartBackmatterXML (IfApplies | No) #IMPLIED
+	CorrectionSheet (IfApplies) #IMPLIED
+	ChapterTEX %BooleanAttrValues; #IMPLIED
+	BookDeltaPDF %BooleanAttrValues; #IMPLIED
+>
+<!-- Dispatcher address -->
+<!ELEMENT DispatcherAddress ((%AddressModel;)*)>

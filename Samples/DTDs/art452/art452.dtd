@@ -1,0 +1,218 @@
+<!--    Elsevier Journal Article Input DTD version 4.5.2
+
+        Copyright (c) 2003 Elsevier B.V.
+        $Id: art452.dtd,v 1.2 2003/06/16 07:20:01 rschrauw Exp $
+-->
+
+<!--    Permission to copy and distribute verbatim copies of this document is granted, 
+        provided this notice is included in all copies, but changing it is not allowed. 
+
+        Documentation available at http://www.elsevier.com/locate/sgml
+-->
+
+<!--    This DTD, DTD 'four-and-a-half', is meant as target DTD for conversion of
+        the documents structured with the Full-Length Article DTDs 2.1, 3.0, 4.1-4.3.
+
+        Supported doctype: converted-article
+
+        Typical invocation:
+
+        <!DOCTYPE converted-article
+          PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML"
+          "art452.dtd">
+
+-->
+
+<!-- element group entities -->
+
+<!ENTITY % font-change      "ce:bold|ce:italic|ce:monospace|ce:sans-serif|ce:small-caps" >
+<!ENTITY % text-effect      "%font-change;|ce:sup|ce:inf|ce:underline|ce:cross-out|ce:hsp|ce:vsp" >
+<!ENTITY % lists            "ce:def-list|ce:list" >
+<!ENTITY % display          "display|ce:displayed-quote|ce:enunciation" >
+<!ENTITY % cross-ref        "ce:cross-ref|ce:intra-ref" >
+<!ENTITY % cross-refs       "ce:cross-refs|ce:intra-refs" >
+<!ENTITY % cross-ref-s      "%cross-ref;|%cross-refs;" >
+<!ENTITY % inter-ref-s      "ce:inter-ref|ce:inter-refs" >
+<!ENTITY % cell-borders     "tb:top-border|tb:left-border|tb:bottom-border|tb:right-border" >
+
+<!ENTITY % all.data         "#PCDATA|ce:glyph|math|%text-effect;|ce:inline-figure|ce:footnote|ce:anchor|
+                             %cross-ref-s;|%inter-ref-s;|ce:float-anchor|%display;|%lists;">
+
+<!ENTITY % string.data      "%all.data;" >
+<!ENTITY % richstring.data  "%all.data;" >
+<!ENTITY % text.data        "%all.data;" >
+<!ENTITY % textfn.data      "%all.data;" >
+<!ENTITY % textref.data     "%all.data;" >
+<!ENTITY % nondisplay.data  "%all.data;" >
+<!ENTITY % note.data        "%all.data;" >
+<!ENTITY % cell.data        "%all.data;|%cell-borders;|tb:alignmark" >
+<!ENTITY % spar.data        "%all.data;" >
+<!ENTITY % par.data         "%all.data;" >
+
+<!-- namespaces and public identifiers -->
+
+<!ENTITY % ESCJA.xmlns      "'http://www.elsevier.com/xml/ja/dtd'" >
+
+<!-- include the common element pool -->
+
+<!ENTITY % common.ent
+    PUBLIC "-//ES//ELEMENTS common element pool version 1.1.0//EN//XML"
+    "common110.ent">
+%common.ent;
+
+<!-- attribute type entities -->
+
+<!ENTITY % docsubtype       "(abs|add|adv|ann|brv|cal|cnf|con|cor|dis|edb|edi|err|exm|fla|ind|lit|
+                              mis|nws|ocn|pnt|prp|prv|pub|req|rev|sco|ssu)" >
+
+<!-- attribute group entities -->
+
+<!ENTITY % top-level.att
+               "xmlns           CDATA               #FIXED  %ESCJA.xmlns;
+                version         CDATA               #FIXED  '4.5.2'
+                xmlns:ce        CDATA               #FIXED  %ESCE.xmlns;
+                xmlns:sb        CDATA               #FIXED  %ESSB.xmlns;
+                xmlns:xlink     CDATA               #FIXED  %XLINK.xmlns;
+                xml:lang        %language;          'en'">
+
+<!-- article -->
+
+<!ELEMENT   converted-article   ( item-info, ce:floats?, head?, body?, tail? )>
+<!ATTLIST   converted-article
+                %top-level.att;
+                docsubtype      %docsubtype;        "fla">
+
+<!-- information about the item -->
+
+<!ELEMENT   item-info           ( jid, aid?, ce:pii, ce:doi?,
+                                  ce:document-thread?, ce:copyright, ce:doctopics?, ce:preprint? )>
+<!ELEMENT   jid                 ( %string.data; )* >
+<!ELEMENT   aid                 ( %string.data; )* >
+
+<!-- article front matter -->
+
+<!ELEMENT   head                ( ce:article-footnote*, 
+                                  ( ce:title | ( ce:dochead, ce:title? )), ce:subtitle?,
+                                  ( ce:alt-title, ce:alt-subtitle? )*,
+                                  ce:presented?, ce:dedication?, ce:author-group*,
+                                  ce:date-received?, ce:date-revised*, ce:date-accepted?, 
+                                  ce:miscellaneous?,
+                                  ce:abstract*, ce:keywords*, ce:stereochem* )>
+
+<!-- article body -->
+
+<!ELEMENT   body                ( ce:nomenclature?, ce:salutation?,
+                                  ce:sections, ce:acknowledgment?, ce:appendices? )>
+
+<!-- article back matter -->
+
+<!ELEMENT   tail                ( ce:bibliography?, ce:further-reading?, 
+                                  ce:glossary?, ce:biography* )>
+
+<!-- custom elements -->
+
+<!ELEMENT   display             ( ce:figure | ce:table | ce:textbox | ce:e-component | formula )>
+<!ATTLIST   display
+               xmlns            CDATA              #FIXED %ESCJA.xmlns; >
+<!ELEMENT   formula             ( ce:label?, ( math | ce:link | formula+ )) >
+<!ATTLIST   formula
+                %common-optref-link.att;>
+
+<!-- legacy math/chemical formula fragment -->
+
+<!ENTITY % f.data       "%all.data;|a|ovl|ov|ovr|unl|un|unr|lim|fen|box|fr|rad|arrow|ar|sup|inf|
+                         b|ge|it|of|sc|scp|ssf|ty|rm" >
+<!ENTITY % c.data       "%f.data;|%cell-borders;|tb:alignmark" >
+
+<!ELEMENT   math                ( %f.data; )*>
+<!ATTLIST   math
+               xmlns            CDATA              #FIXED %ESCJA.xmlns; 
+               altimg           CDATA              #REQUIRED>
+
+<!ENTITY % accent-pos   "(u|m|d)" >
+<!ENTITY % arrange      "(staggered)" >
+<!ENTITY % fr-align     "(l|c|r)" >
+<!ENTITY % halign       "(l|c|r|j|d|vmk)" >
+<!ENTITY % shape        "(built|case|sol)" >
+<!ENTITY % valign       "(t|m|b|vj)" >
+
+<!ELEMENT   a                   ( ac, ac )>
+<!ATTLIST   a
+                valign          %accent-pos;        'u'>      
+<!ELEMENT   ac                  ( %f.data; )* >
+<!ELEMENT   ovl                 ( %f.data; )* >
+<!ATTLIST   ovl
+                type            %hline;             #REQUIRED
+                style           %style;             's'>
+<!ELEMENT   ov                  EMPTY>
+<!ATTLIST   ov
+                id              ID                  #REQUIRED
+                type            %hline;             #REQUIRED
+                style           %style;             's'>
+<!ELEMENT   ovr                 EMPTY>
+<!ATTLIST   ovr
+                refid           IDREF               #REQUIRED>
+<!ELEMENT   unl                 ( %f.data; )* >
+<!ATTLIST       unl
+                type            %hline;             #REQUIRED
+                style           %style;             's'>
+<!ELEMENT   un                  EMPTY>
+<!ATTLIST   un
+                id              ID                  #REQUIRED
+                type            %hline;             #REQUIRED
+                style           %style;             's'>
+<!ELEMENT   unr                 EMPTY>
+<!ATTLIST   unr
+                refid           IDREF               #REQUIRED>
+<!ELEMENT   lim                 ( op, ll?, ul? )>
+<!ELEMENT   op                  ( %f.data; )* >
+<!ELEMENT   ll                  ( %f.data; )* >
+<!ELEMENT   ul                  ( %f.data; )* >
+<!ELEMENT   fen                 ( %f.data; | cp )* >
+<!ELEMENT   cp                  EMPTY>
+<!ATTLIST   cp
+                type            %vline;             #REQUIRED
+                style           %style;             's'>
+<!ELEMENT   box                 ( %f.data; )* >
+<!ATTLIST   box
+                style           %style;             's'>
+<!ELEMENT   fr                  ( nu, de )>
+<!ATTLIST   fr
+                shape           %shape;             'built'
+                align           %fr-align;          'c'
+                style           %style;             's'>
+<!ELEMENT   nu                  ( %f.data; )* >
+<!ELEMENT   de                  ( %f.data; )* >
+<!ELEMENT   rad                 ( rcd, rdx? )>
+<!ELEMENT   rcd                 ( %f.data; )* >
+<!ELEMENT   rdx                 ( %f.data; )* >
+<!ELEMENT   arrow               ( %f.data; )* >
+
+<!ELEMENT   sup                 ( %f.data; )* >
+<!ATTLIST   sup
+                loc             %loc;               "post"
+                arrange         %arrange;           #IMPLIED>
+<!ELEMENT   inf                 ( %f.data; )* >
+<!ATTLIST   inf
+                loc             %loc;               "post"
+                arrange         %arrange;           #IMPLIED>
+
+<!ELEMENT   b                   ( %f.data; )* >
+<!ELEMENT   it                  ( %f.data; )* >
+<!ELEMENT   of                  ( %f.data; )* >
+<!ELEMENT   sc                  ( %f.data; )* >
+<!ELEMENT   ge                  ( %f.data; )* >
+<!ELEMENT   ssf                 ( %f.data; )* >
+<!ELEMENT   ty                  ( %f.data; )* >
+<!ELEMENT   scp                 ( %f.data; )* >
+<!ELEMENT   rm                  ( %f.data; )* >
+
+<!ELEMENT   ar                  ( r+ )>
+<!ELEMENT   r                   ( c+ )>
+<!ELEMENT   c                   ( %c.data; )* >
+<!ATTLIST   c
+                xmlns:tb        CDATA               #FIXED  %ESTB.xmlns;
+                cspan           NMTOKEN             '1'
+                rspan           NMTOKEN             '1'
+                ca              %halign;            'l'
+                ra              %valign;            't'>

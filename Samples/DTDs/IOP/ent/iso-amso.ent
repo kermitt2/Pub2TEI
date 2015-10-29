@@ -1,0 +1,25 @@
+<!-- ISO AMS O: Ordinary -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY ang	"&#x2220;"> <!-- angle -->
+<!ENTITY angmsd	"&#x2221;"> <!-- angle-measured -->
+<!ENTITY beth	"&#x2136;"> <!-- beth, Hebrew -->
+<!ENTITY bprime	"&#x2035;"> <!-- reverse prime -->
+<!ENTITY comp	"&#x2201;"> <!-- complement sign -->
+<!ENTITY daleth	"&#x2138;"> <!-- dalet, Hebrew -->
+<!ENTITY ell	"&#x2113;"> <!-- SCRIPT SMALL L -->
+<!ENTITY empty	"&#x2205;"> <!-- zero, slash -->
+<!ENTITY gimel	"&#x2137;"> <!-- gimel, Hebrew -->
+<!ENTITY image	"&#x2111;"> <!-- imaginary -->
+<!-- This is in iso-lat2 as well
+  <!ENTITY inodot	"&#x0131;"> --> <!-- small i, no dot -->
+<!--     jnodot	UNKNOWN          small j, no dot -->
+<!ENTITY nexist	"&#x2204;"> <!-- negated exists -->
+<!ENTITY oS	"&#x24C8;"> <!-- captal S in circle -->
+<!ENTITY planck	"&#x210F;"> <!-- Planck's over 2pi -->
+<!ENTITY real	"&#x211C;"> <!-- real -->
+<!ENTITY sbsol	"&#xFE68;"> <!-- SMALL REVERSE SOLIDUS. Not in MathML -->
+<!--     vprime	Unknown unicode character. Not in MathML -->
+<!ENTITY weierp	"&#x2118;"> <!-- Weierstrass p -->

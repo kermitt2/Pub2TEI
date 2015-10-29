@@ -1,0 +1,19 @@
+This package contains the ES JA DTD version 5.1.0, and accompanying
+files.
+
+File listing
+---------------
+
+README:            This file
+art510.dtd:        ES FLA DTD version 5.1.0
+common115.ent:     ES Common Element Pool version 1.1.5
+ESextra.ent:       ES Extra entities version 1.0.0
+soextblx.dtd:      OASIS XML Exchange Table Model 19990315
+mathml2-mod-ES.dtd, mathml2-qname-1.mod, iso8879/*.ent,
+iso9573-13/*.ent, mathml/*.ent, html/*.ent:
+                   MathML modified DTD and entities, from the MathML2
+                   specification.
+catalog:           SGML Open catalog
+catalog.xml:       Oasis XML catalog
+relnote510.pdf:    Release Notes
+esgrid.pdf:        ES Grid in Unicode

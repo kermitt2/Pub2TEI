@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<?xml-model href="tei_odds.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en"
+    xmlns:rng="http://relaxng.org/ns/structure/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Istex</title>
+                <author>Laurent Romary</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>for use by whoever wants it</p>
+            </publicationStmt>
+            <notesStmt>
+                <note type="ns">http://www.example.org/ns/nonTEI</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>created on Sunday 05th October 2014 06:25:09 AM</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p>Schema de d&#xE9;veloppement pour le projet Istex, visant &#xE0; couvrir les fichiers
+                TEI g&#xE9;n&#xE9;r&#xE9;s &#xE0; partir des donn&#xE9;es &#xE9;diteur ou de
+                l'extraction automatique issu de Grobid.</p>
+            <schemaSpec ident="IstexSchema" docLang="en" prefix="tei_" xml:lang="en">
+                <moduleRef
+                    url="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/mathml2-main.rng"/>
+                <moduleRef key="core" except=""/>
+                <moduleRef key="tei" except=""/>
+                <moduleRef key="header" except=""/>
+                <moduleRef key="textstructure" except=""/>
+                <moduleRef key="namesdates" except=""/>
+                <moduleRef key="linking" except=""/>
+                <moduleRef key="figures" except=""/>
+                <elementSpec module="figures" ident="formula" mode="change">
+                    <content>
+                        <rng:zeroOrMore>
+                            <rng:choice>
+                                <rng:text/>
+                                <rng:ref name="model.graphicLike"/>
+                                <rng:ref name="model.hiLike"/>
+                                <rng:ref name="mathml.math"/>
+                                <rng:ref name="els_math"/>
+                            </rng:choice>
+                        </rng:zeroOrMore>
+                    </content>
+                </elementSpec>
+
+				<!-- PL: allow <text> under <TEI> to be optional -->
+		        <elementSpec ident="TEI" mode="change" module="textstructure">
+		          <content>
+					<rng:ref name="teiHeader"/>
+		            <rng:optional>
+		                <rng:ref name="model.resourceLike"/>
+		            </rng:optional>
+		            <rng:optional>
+		                <rng:ref name="text"/>
+		            </rng:optional>
+		          </content>
+		        </elementSpec>
+
+                <!-- Copied from the TEI example, with Sebastoan Rahtz's comments -->
+
+                <!-- required to avoid Sanity Checker warnings -->
+                <elementSpec ident="handNote" mode="delete" module="header"/>
+                <elementSpec ident="typeNote" mode="delete" module="header"/>
+                <elementSpec ident="scriptNote" mode="delete" module="header"/>
+                <!-- sanity checker still fails tho, as it cannot find element
+	mathml.math -->
+
+                <!-- modèle de formule athématiques XMLLATEX utilisé par Elsevier -->
+                <elementSpec ident="math" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.fData"/>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                </elementSpec>
+
+                <classSpec ident="model.fData" type="model"/>
+
+                <elementSpec ident="a" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ovl" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ov" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ovr" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="unl" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="un" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="unr" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="lim" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:group>
+                            <rng:ref name="els_op"/>
+                            <rng:optional>
+                                <rng:ref name="els_ll"/>
+                            </rng:optional>
+                            <rng:optional>
+                                <rng:ref name="els_ul"/>
+                            </rng:optional>
+                        </rng:group>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="op" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.fData"/>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ll" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.fData"/>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ul" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.fData"/>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="fen" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:choice>
+                                    <rng:ref name="model.fData"/>
+                                    <rng:ref name="els_cp"/>
+                                </rng:choice>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="cp" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                        <memberOf key="att.typed"/>
+                    </classes>
+                    <content>
+                        <rng:empty/>
+                    </content>
+                    <attList>
+                        <attDef ident="style">
+                            <datatype>
+                                <rng:text/>
+                            </datatype>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+
+                <elementSpec ident="box" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="fr" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:ref key="els_nu"/>
+                        <rng:ref key="els_de"/>
+                    </content>
+                    <attList>
+                        <attDef ident="shape">
+                            <datatype>
+                                <rng:text/>
+                            </datatype>
+                        </attDef>
+                        <attDef ident="align">
+                            <datatype>
+                                <rng:text/>
+                            </datatype>
+                        </attDef>
+                        <attDef ident="style">
+                            <datatype>
+                                <rng:text/>
+                            </datatype>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+
+                <elementSpec ident="nu" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.fData"/>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="de" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.fData"/>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="rad" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="arrow" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ar" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="sup" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.fData"/>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="inf" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:mixed>
+                            <rng:zeroOrMore>
+                                <rng:ref name="model.fData"/>
+                            </rng:zeroOrMore>
+                        </rng:mixed>
+                    </content>
+                    <attList>
+                        <attDef ident="loc">
+                            <datatype>
+                                <rng:text/>
+                            </datatype>
+                        </attDef>
+                        <attDef ident="arrange">
+                            <datatype>
+                                <rng:text/>
+                            </datatype>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+
+                <elementSpec ident="b" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ge" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="it" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="of" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="sc" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="scp" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ssf" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="ty" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+                <elementSpec ident="rm" ns="http://www.elsevier.com/xml/ja/dtd" prefix="els_">
+                    <classes>
+                        <memberOf key="model.fData"/>
+                    </classes>
+                    <content>
+                        <rng:text/>
+                    </content>
+                </elementSpec>
+
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>

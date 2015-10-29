@@ -1,0 +1,19 @@
+<!-- ISO DIA: Diacritical marks -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY acute	"&#x0301;"> <!-- acute accent. MathML: x00B4 -->
+<!ENTITY breve	"&#x0306;"> <!-- breve. MathML: x02DB -->
+<!ENTITY caron	"&#x030C;"> <!-- caron/hacek. MathML: x02C7 -->
+<!ENTITY cedil	"&#x0327;"> <!-- cedilla. MathML: x00B8 -->
+<!ENTITY circ	"&#x0302;"> <!-- circumflex accent. MathML: x02C6 -->
+<!ENTITY dblac	"&#x030B;"> <!-- double acute accent. MathML: x02DD -->
+<!ENTITY die	"&#x0308;"> <!-- diaeresis. MathML: x00A8 -->
+<!ENTITY dot	"&#x0307;"> <!-- dot above. MathML: x02D9 -->
+<!ENTITY grave	"&#x0300;"> <!-- grave accent. MathML: x0060 -->
+<!ENTITY macr	"&#x0304;"> <!-- macron. MathML: x00AF -->
+<!ENTITY ogon	"&#x0328;"> <!-- ogonek. MathML: x02DB -->
+<!ENTITY ring	"&#x030A;"> <!-- ring. MathML: x02DA -->
+<!ENTITY tilde	"&#x0303;"> <!-- tilde. MathML: x02DC -->
+<!ENTITY uml	"&#x0308;"> <!-- umlaut mark. MathML: x00A8 -->

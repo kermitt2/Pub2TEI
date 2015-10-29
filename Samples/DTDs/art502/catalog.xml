@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
+         prefer="public">
+
+<group>
+
+<!-- ......................... JA DTD .......................... -->
+<public publicId="-//ES//DTD journal article DTD version 5.0.2//EN//XML"
+        uri="art502.dtd"/>
+<!-- ......................... CEP DTD .......................... -->
+<public publicId="-//ES//ELEMENTS common element pool version 1.1.0.1//EN//XML"
+        uri="common110_1.ent"/>
+<public publicId="-//ES//ENTITIES extra entities 1.0.0//EN"
+        uri="ESextra.ent"/>
+
+<!-- ......................... MathML DTD .......................... -->
+<public publicId="-//W3C//DTD MathML 2.0 Mod ES//EN"
+        uri="mathml2-mod-ES.dtd"/>
+
+</group>
+
+<group>
+<!-- ......................... XHTML ............................ -->
+<public publicId="-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+        uri="xhtml-math11-f.dtd"/>
+
+</group>
+
+<group>
+<!-- ......................... MathML ........................... -->
+<public publicId="-//W3C//DTD MathML 2.0//EN"
+        uri="mathml2.dtd"/>
+<public publicId="-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN"
+        uri="mathml2-qname-1.mod"/>
+</group>
+
+<group>
+<!-- MathML Character Entities .................................. -->
+
+<!-- Entity sets from ISO Technical Report 9573-13 ..... -->
+
+<public publicId="-//W3C//ENTITIES Added Math Symbols: Arrow Relations for MathML 2.0//EN"
+        uri="iso9573-13/isoamsa.ent"/>
+
+<public publicId="-//W3C//ENTITIES Added Math Symbols: Binary Operators for MathML 2.0//EN"
+        uri="iso9573-13/isoamsb.ent"/>
+
+<public publicId="-//W3C//ENTITIES Added Math Symbols: Delimiters for MathML 2.0//EN"
+        uri="iso9573-13/isoamsc.ent"/>
+
+<public publicId="-//W3C//ENTITIES Added Math Symbols: Negated Relations for MathML 2.0//EN"
+        uri="iso9573-13/isoamsn.ent"/>
+
+<public publicId="-//W3C//ENTITIES Added Math Symbols: Ordinary for MathML 2.0//EN"
+        uri="iso9573-13/isoamso.ent"/>
+
+<public publicId="-//W3C//ENTITIES Added Math Symbols: Relations for MathML 2.0//EN"
+        uri="iso9573-13/isoamsr.ent"/>
+
+<public publicId="-//W3C//ENTITIES Greek Symbols for MathML 2.0//EN"
+        uri="iso9573-13/isogrk3.ent"/>
+
+<public publicId="-//W3C//ENTITIES Math Alphabets: Fraktur for MathML 2.0//EN"
+        uri="iso9573-13/isomfrk.ent"/>
+
+<public publicId="-//W3C//ENTITIES Math Alphabets: Open Face for MathML 2.0//EN"
+        uri="iso9573-13/isomopf.ent"/>
+
+<public publicId="-//W3C//ENTITIES Math Alphabets: Script for MathML 2.0//EN"
+        uri="iso9573-13/isomscr.ent"/>
+
+<public publicId="-//W3C//ENTITIES General Technical for MathML 2.0//EN"
+        uri="iso9573-13/isotech.ent"/>
+
+<!-- Entity sets from informative annex to ISO 8879:1986 (SGML) ....... -->
+
+<public publicId="-//W3C//ENTITIES Box and Line Drawing for MathML 2.0//EN"
+        uri="iso8879/isobox.ent"/>
+
+<public publicId="-//W3C//ENTITIES Russian Cyrillic for MathML 2.0//EN"
+        uri="iso8879/isocyr1.ent"/>
+
+<public publicId="-//W3C//ENTITIES Non-Russian Cyrillic for MathML 2.0//EN"
+        uri="iso8879/isocyr2.ent"/>
+
+<public publicId="-//W3C//ENTITIES Diacritical Marks for MathML 2.0//EN"
+        uri="iso8879/isodia.ent"/>
+
+<public publicId="-//W3C//ENTITIES Added Latin 1 for MathML 2.0//EN"
+        uri="iso8879/isolat1.ent"/>
+
+<public publicId="-//W3C//ENTITIES Added Latin 2 for MathML 2.0//EN"
+        uri="iso8879/isolat2.ent"/>
+
+<public publicId="-//W3C//ENTITIES Numeric and Special Graphic for MathML 2.0//EN"
+        uri="iso8879/isonum.ent"/>
+
+<public publicId="-//W3C//ENTITIES Publishing for MathML 2.0//EN"
+        uri="iso8879/isopub.ent"/>
+
+<!-- New characters defined by MathML ............................ -->
+
+<public publicId="-//W3C//ENTITIES Extra for MathML 2.0//EN"
+        uri="mathml/mmlextra.ent"/>
+
+<!-- MathML aliases for characters defined above ................. -->
+
+<public publicId="-//W3C//ENTITIES Aiases for MathML 2.0//EN"
+        uri="mathml/mmlalias.ent"/>
+
+</group>
+
+<group>
+<!-- ......................... CALS table model .................. -->
+<public publicId="-//OASIS//DTD XML Exchange Table Model 19990315//EN"
+        uri="soextblx.dtd"/>
+</group>
+</catalog>
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.elsevier.com/xml/ja/dtd" xmlns:dcr="http://www.isocat.org/ns/dcr" xmlns:mathml="http://www.w3.org/1998/Math/MathML" xmlns:ns1="http://www.tei-c.org/ns/1.0" xmlns:dtd="http://www.elsevier.com/xml/ja/dtd" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <xs:import namespace="http://www.isocat.org/ns/dcr" schemaLocation="dcr.xsd"/>
+  <xs:import namespace="http://www.tei-c.org/ns/1.0" schemaLocation="IstexSchema.xsd"/>
+  <xs:import namespace="http://www.w3.org/1998/Math/MathML" schemaLocation="mathml.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+  <xs:element name="math">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="ns1:tei_model.fData"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="a" type="xs:string"/>
+  <xs:element name="ovl" type="xs:string"/>
+  <xs:element name="ov" type="xs:string"/>
+  <xs:element name="ovr" type="xs:string"/>
+  <xs:element name="unl" type="xs:string"/>
+  <xs:element name="un" type="xs:string"/>
+  <xs:element name="unr" type="xs:string"/>
+  <xs:element name="lim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="dtd:op"/>
+        <xs:element minOccurs="0" ref="dtd:ll"/>
+        <xs:element minOccurs="0" ref="dtd:ul"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="op">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="ns1:tei_model.fData"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ll">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="ns1:tei_model.fData"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ul">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="ns1:tei_model.fData"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fen">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:group ref="ns1:tei_model.fData"/>
+        <xs:element ref="dtd:cp"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cp">
+    <xs:complexType>
+      <xs:attributeGroup ref="ns1:tei_att.typed.attributes"/>
+      <xs:attribute name="style"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="box" type="xs:string"/>
+  <xs:element name="fr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="dtd:nu"/>
+        <xs:element ref="dtd:de"/>
+      </xs:sequence>
+      <xs:attribute name="shape"/>
+      <xs:attribute name="align"/>
+      <xs:attribute name="style"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nu">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="ns1:tei_model.fData"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="de">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="ns1:tei_model.fData"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="rad" type="xs:string"/>
+  <xs:element name="arrow" type="xs:string"/>
+  <xs:element name="ar" type="xs:string"/>
+  <xs:element name="sup">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="ns1:tei_model.fData"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inf">
+    <xs:complexType mixed="true">
+      <xs:group minOccurs="0" maxOccurs="unbounded" ref="ns1:tei_model.fData"/>
+      <xs:attribute name="loc"/>
+      <xs:attribute name="arrange"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="b" type="xs:string"/>
+  <xs:element name="ge" type="xs:string"/>
+  <xs:element name="it" type="xs:string"/>
+  <xs:element name="of" type="xs:string"/>
+  <xs:element name="sc" type="xs:string"/>
+  <xs:element name="scp" type="xs:string"/>
+  <xs:element name="ssf" type="xs:string"/>
+  <xs:element name="ty" type="xs:string"/>
+  <xs:element name="rm" type="xs:string"/>
+</xs:schema>

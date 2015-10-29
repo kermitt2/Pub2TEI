@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?><Publisher>
+    <PublisherInfo>
+        <PublisherName>Irefvgn</PublisherName>
+        <PublisherLocation>Jnefnj</PublisherLocation>
+    </PublisherInfo>
+    <Journal OutputMedium="All">
+        <JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+            <JournalID>88065</JournalID>
+            <JournalPrintISSN>8340-8937</JournalPrintISSN>
+            <JournalElectronicISSN>8155-6193</JournalElectronicISSN>
+            <JournalTitle>Prageny Rhebcrna Wbheany bs Culfvpf</JournalTitle>
+            <JournalAbbreviatedTitle>prage.rhe.w.culf.</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Code="P" Type="Primary">Culfvpf</JournalSubject>
+                <JournalSubject Code="P00002" Priority="1" Type="Secondary">Culfvpf,
+                    trareny</JournalSubject>
+                <JournalSubject Code="C21001" Priority="2" Type="Secondary">Culfvpny
+                    Purzvfgel</JournalSubject>
+                <JournalSubject Code="G18009" Priority="3" Type="Secondary">Trbculfvpf/Trbqrfl</JournalSubject>
+                <JournalSubject Code="U19001" Priority="4" Type="Secondary">Raivebazragny
+                    Culfvpf</JournalSubject>
+                <JournalSubject Code="P27008" Priority="5" Type="Secondary">Ovbculfvpf naq
+                    Ovbybtvpny Culfvpf</JournalSubject>
+                <JournalSubject Code="T11022" Priority="6" Type="Secondary">Pbzcyrkvgl</JournalSubject>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume OutputMedium="All">
+            <VolumeInfo TocLevels="0" VolumeType="Regular">
+                <VolumeIDStart>3</VolumeIDStart>
+                <VolumeIDEnd>3</VolumeIDEnd>
+                <VolumeIssueCount>5</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Regular" OutputMedium="All">
+                <IssueInfo IssueType="Regular" TocLevels="0">
+                    <IssueIDStart>7</IssueIDStart>
+                    <IssueIDEnd>7</IssueIDEnd>
+                    <IssueTitle Language="En">Gbcvpny Vffhr: Zbqrea nccyvpngvbaf bs
+                        ynfref</IssueTitle>
+                    <IssueArticleCount>85</IssueArticleCount>
+                    <IssueHistory>
+                        <OnlineDate>
+                            <Year>7989</Year>
+                            <Month>8</Month>
+                            <Day>69</Day>
+                        </OnlineDate>
+                        <CoverDate>
+                            <Year>7989</Year>
+                            <Month>5</Month>
+                        </CoverDate>
+                        <PricelistYear>7989</PricelistYear>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>© Irefvgn Jnefnj naq Fcevatre-Ireynt Oreyva
+                            Urvqryoret</CopyrightHolderName>
+                        <CopyrightYear>7989</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <IssueHeader>
+                    <EditorGroup>
+                        <Editor>
+                            <EditorName DisplayOrder="Western">
+                                <GivenName>Znpvrw</GivenName>
+                                <FamilyName>Ohtnwfxv</FamilyName>
+                            </EditorName>
+                        </Editor>
+                        <Editor>
+                            <EditorName DisplayOrder="Western">
+                                <GivenName>Zvpuny</GivenName>
+                                <FamilyName>Znyvabjfxv</FamilyName>
+                            </EditorName>
+                        </Editor>
+                    </EditorGroup>
+                </IssueHeader>
+                <Article ID="s11534-009-0122-9" OutputMedium="All">
+                    <ArticleInfo ArticleType="OriginalPaper" ContainsESM="No" Language="En" NumberingStyle="Unnumbered" TocLevels="0">
+                        <ArticleID>877</ArticleID>
+                        <ArticleDOI>89.7523/f88065-994-9877-4</ArticleDOI>
+                        <ArticleSequenceNumber>87</ArticleSequenceNumber>
+                        <ArticleTitle Language="En">Qrgrpgvba bs ynfre vaqhprq qvryrpgevp oernxqbja
+                            va jngre hfvat n ynfre qbccyre ivoebzrgre</ArticleTitle>
+                        <ArticleCategory>Erfrnepu Negvpyr</ArticleCategory>
+                        <ArticleFirstPage>760</ArticleFirstPage>
+                        <ArticleLastPage>758</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>7994</Year>
+                                <Month>3</Month>
+                                <Day>72</Day>
+                            </RegistrationDate>
+                            <Received>
+                                <Year>7994</Year>
+                                <Month>7</Month>
+                                <Day>83</Day>
+                            </Received>
+                            <Accepted>
+                                <Year>7994</Year>
+                                <Month>1</Month>
+                                <Day>76</Day>
+                            </Accepted>
+                            <OnlineDate>
+                                <Year>7994</Year>
+                                <Month>3</Month>
+                                <Day>72</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>© Irefvgn Jnefnj naq Fcevatre-Ireynt Oreyva
+                                Urvqryoret</CopyrightHolderName>
+                            <CopyrightYear>7989</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="Restricted"/>
+                            <BodyHTMLGrant Grant="Restricted"/>
+                            <BibliographyGrant Grant="Restricted"/>
+                            <ESMGrant Grant="Restricted"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff1" CorrespondingAffiliationID="Aff1">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Whun</GivenName>
+                                    <GivenName>Z.</GivenName>
+                                    <FamilyName>Fnneryn</FamilyName>
+                                </AuthorName>
+                                <Contact>
+                                    <Email>whun.fnneryn@bhyh.sv</Email>
+                                </Contact>
+                            </Author>
+                            <Author AffiliationIDS="Aff2">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Gbeowöea</GivenName>
+                                    <FamilyName>Yösdivfg</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff2">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Xrefgva</GivenName>
+                                    <FamilyName>Enzfre</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff3">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Cre</GivenName>
+                                    <FamilyName>Tera</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff3">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Revx</GivenName>
+                                    <FamilyName>Byfba</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff2">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Wna</GivenName>
+                                    <FamilyName>Avrzv</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff3">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Zvxnry</GivenName>
+                                    <FamilyName>Fwöqnuy</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Affiliation ID="Aff1">
+                                <OrgDivision>Qrcnegzrag bs Ryrpgevpny naq Vasbezngvba Ratvarrevat
+                                    naq Vasbgrpu Bhyh</OrgDivision>
+                                <OrgName>Havirefvgl bs Bhyh</OrgName>
+                                <OrgAddress>
+                                    <Postbox>C.B. Obk 5099</Postbox>
+                                    <Postcode>49985</Postcode>
+                                    <City>Havirefvgl bs Bhyh</City>
+                                    <Country>Svaynaq</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff2">
+                                <OrgDivision>Qrcnegzrag bs Pbzchgre Fpvrapr naq Ryrpgevpny
+                                    Ratvarrevat</OrgDivision>
+                                <OrgName>Yhyrå Havirefvgl bs Grpuabybtl</OrgName>
+                                <OrgAddress>
+                                    <Postcode>FR-42832</Postcode>
+                                    <City>Yhyrå</City>
+                                    <Country>Fjrqra</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff3">
+                                <OrgDivision>Qrcnegzrag bs Nccyvrq Culfvpf naq Zrpunavpny
+                                    Ratvarrevat</OrgDivision>
+                                <OrgName>Yhyrå Havirefvgl bs Grpuabybtl</OrgName>
+                                <OrgAddress>
+                                    <Postcode>FR-42832</Postcode>
+                                    <City>Yhyrå</City>
+                                    <Country>Fjrqra</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                        <Abstract ID="Abs1" Language="En">
+                            <Heading>Nofgenpg</Heading>
+                            <Para>Guvf fghql vf sbphfrq ba rkcybevat gur srnfvovyvgl bs na nyy-bcgvp
+                                fhesnpr fpnaavat zrgubq va qrgrezvavat gur fvmr naq cbfvgvba bs n
+                                fhozretrq, ynfre trarengrq, bcgbnpbhfgvp (BN) fbhepr. Gur
+                                bcgbnpbhfgvp rssrpg va guvf pnfr jnf trarengrq jura gur nofbecgvba
+                                bs n fubeg ryrpgebzntargvp chyfr va znggre pnhfrq n qvryrpgevp
+                                oernxqbja, n cynfzn rzvffvba synfu naq n fhofrdhrag npbhfgvp jnir.
+                                Va gur rkcrevzrag, n ynfre chyfr jvgu λ = 8915 az naq 87 af
+                                chyfr yratgu jnf nvzrq ng n ibyhzr bs qrvbavmrq jngre. Jura gur
+                                ynfre ornz jnf sbphfrq ol n <Emphasis Type="Italic">s</Emphasis> =
+                                81 zz yraf, n fvatyr qvryrpgevp oernxqbja fcbg bppheerq. Jura n
+                                    <Emphasis Type="Italic">s</Emphasis> = 59 zz jnf hfrq frireny
+                                oernxqbjaf va n ebj jrer vaqhprq. Gur oernxqbjaf jrer cubgbtencurq
+                                hfvat n qbhoyr fuhggre pnzren. Gur npbhfgvp jnir trarengrq ol gur
+                                qvryrpgevp oernxqbjaf jrer qrgrpgrq ng n cbvag ba gur jngre fhesnpr
+                                hfvat n ynfre Qbccyre ivoebzrgre (YQI). Svefg, gur YQI fvtany jnf
+                                hfrq gb pnyphyngr gur fcrrq bs fbhaq jvgu na npphenpl bs 89 z/f.
+                                Frpbaqyl, gur ybpngvba naq yratgu bs gur qvryrpgevp oernxqbja jnf
+                                pnyphyngrq jvgu na npphenpl bs 8 zz. Gur pnyphyngrq cbfvgvba zngpurq
+                                gur oernxqbja ybpngvba erpbeqrq ol n pnzren. Gur erfhygf fubj gung
+                                vg vf cbffvoyr gb hfr YQI fhesnpr zrnfherzragf sebz n fvatyr fcbg gb
+                                qrgrezvar obgu gur cbfvgvba naq yratgu bs gur BN fbhepr nf jryy nf
+                                gur fcrrq bs fbhaq va gur zrqvhz. Shegurezber, gur YQI zrnfherzragf
+                                nyfb fubj n frpbaqnel crnx gung bevtvangrf sebz gur BN fbhepr. Gb
+                                haeniry gur bevtva naq cebcregvrf bs guvf vagrerfgvat srngher,
+                                shegure vairfgvtngvbaf ner arprffnel</Para>
+                        </Abstract>
+                        <KeywordGroup Language="En">
+                            <Heading>Xrljbeqf</Heading>
+                            <Keyword>qvryrpgevp oernxqbja</Keyword>
+                            <Keyword>ynfre</Keyword>
+                            <Keyword>ivoebzrgre</Keyword>
+                            <Keyword>bcgbnpbhfgvp</Keyword>
+                            <Keyword>fhesnpr jnir</Keyword>
+                        </KeywordGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>
