@@ -1,1 +1,0 @@
-Le point d’entrée de toutes les feuilles de style est: Publisher.xsl
