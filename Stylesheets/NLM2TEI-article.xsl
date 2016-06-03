@@ -50,7 +50,7 @@
                         <xsl:apply-templates select="front" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
-                <xsl:if test="front/article-meta/kwd-group">
+                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
 		                <xsl:if test="front/article-meta/abstract">
