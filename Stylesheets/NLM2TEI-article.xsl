@@ -54,9 +54,7 @@
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
 		                <xsl:if test="front/article-meta/abstract">
-		                    <front>
-		                        <xsl:apply-templates select="front/article-meta/abstract"/>
-		                    </front>
+		                	<xsl:apply-templates select="front/article-meta/abstract"/>
 		                </xsl:if>
 						
                         <xsl:apply-templates select="front/article-meta/kwd-group"/>
