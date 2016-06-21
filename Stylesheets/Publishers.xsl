@@ -75,8 +75,14 @@
             <xsl:when test="article/art-admin">
                 <xsl:message>Converting a Royal Chemical Society article</xsl:message>
             </xsl:when>
-            <xsl:when test="tei:TEI">
-                <xsl:message>Converting a TEI article into TEI (probably a damned IOP)</xsl:message>
+            <xsl:when test="article/pubfm">
+                <xsl:message>Converting a NPG article</xsl:message>
+            </xsl:when>
+            <xsl:when test="article/pubfm">
+                <xsl:message>Converting a NPG article</xsl:message>
+            </xsl:when>
+            <xsl:when test="component">
+                <xsl:message>Converting a Wiley article</xsl:message>
             </xsl:when>
             
             <!-- RL: vérif encore très stricte pour le nouveau cas -->

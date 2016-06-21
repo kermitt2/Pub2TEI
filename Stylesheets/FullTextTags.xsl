@@ -126,7 +126,31 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
+	
+    <xsl:template match="bibr">
+        <ref type="bibr">
+            <xsl:attribute name="target">
+                <xsl:value-of select="concat('#',@rid)"/>
+            </xsl:attribute>
+        </ref>
+    </xsl:template>
+	
+    <xsl:template match="figr">
+        <ref type="figure">
+            <xsl:attribute name="target">
+                <xsl:value-of select="concat('#',@rid)"/>
+            </xsl:attribute>
+        </ref>
+    </xsl:template>
 
+    <xsl:template match="tablr">
+        <ref type="table">
+            <xsl:attribute name="target">
+                <xsl:value-of select="concat('#',@rid)"/>
+            </xsl:attribute>
+        </ref>
+    </xsl:template>
+	
     <xsl:template match="schemref">
         <ref type="schema">
             <xsl:attribute name="target">
@@ -166,9 +190,7 @@
 
     <xsl:template
         match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic']">
-        <xsl:if test=".!=''">
-            <hi rend="italic"><xsl:apply-templates/></hi>
-        </xsl:if>
+        <xsl:if test=".!=''"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold']">
@@ -219,7 +241,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="Superscript | sup | ce:sup">
+    <xsl:template match="Superscript | sup | ce:sup | super">
         <xsl:if test=".!=''">
             <hi rend="superscript"><xsl:apply-templates/></hi>
         </xsl:if>
@@ -267,4 +289,24 @@
     
     <xsl:template match="ce:vsp"/>
     
+	<!-- Entity markers (NPG) -->
+	<xsl:template match="named-entity"><rs><xsl:apply-templates/></rs></xsl:template>
+	
+    <xsl:template match="sec">
+        <div>
+            <xsl:attribute name="n">
+                <xsl:value-of select="@level"/>
+            </xsl:attribute>
+            <xsl:apply-templates select="sectitle | p"/>
+		</div>
+    </xsl:template>
+	
+    <xsl:template match="sectitle">
+        <head>
+            <xsl:apply-templates/>
+		</head>
+    </xsl:template>
+	
+    <xsl:template match="online-methods"><xsl:apply-templates/></xsl:template>
+	
 </xsl:stylesheet>

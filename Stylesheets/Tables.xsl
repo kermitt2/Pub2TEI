@@ -111,5 +111,21 @@
         <xsl:apply-templates/>
     </xsl:template>
 
+    <xsl:template match="bm/table">
+        <figure type="table">>
+            <xsl:if test="@id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@id"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </figure>
+    </xsl:template>
+	
+    <xsl:template match="table/title">
+        <head>
+            <xsl:apply-templates/>
+        </head>
+    </xsl:template>
 
 </xsl:stylesheet>

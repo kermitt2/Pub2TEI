@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><component xmlns="http://www.wiley.com/namespaces/wiley" version="2.0" type="serialArticle" xml:lang="en">
+
+<header>
+<publicationMeta level="product">
+<publisherInfo>
+<publisherName>Blackwell Publishing Ltd</publisherName>
+<publisherLoc>Oxford, UK</publisherLoc>
+</publisherInfo>
+<doi origin="wiley" registered="yes">10.1111/(ISSN)1365-2753</doi>
+<issn type="print">1356-1294</issn>
+<issn type="electronic">1365-2753</issn>
+<idGroup>
+<id type="product" value="JEP"/>
+<id type="publisherDivision" value="ST"/>
+</idGroup>
+<titleGroup>
+<title type="main" sort="JOURNAL OF EVALUATION IN CLINICAL PRACTICE">Journal of Evaluation in Clinical Practice</title>
+</titleGroup>
+</publicationMeta>
+<publicationMeta level="part" position="02101">
+<doi origin="wiley">10.1111/jep.2011.17.issue-1</doi>
+<numberingGroup>
+<numbering type="journalVolume" number="17">17</numbering>
+<numbering type="journalIssue" number="1">1</numbering>
+</numberingGroup>
+<coverDate startDate="2011-02">February 2011</coverDate>
+</publicationMeta>
+<publicationMeta level="unit" type="article" position="10" status="forIssue">
+<doi origin="wiley">10.1111/j.1365-2753.2010.01369.x</doi>
+<idGroup>
+<id type="unit" value="JEP1369"/>
+</idGroup>
+<countGroup>
+<count type="pageTotal" number="10"/>
+</countGroup>
+<titleGroup>
+<title type="tocHeading1">ORIGINAL ARTICLES</title>
+</titleGroup>
+<copyright>© 2010 Blackwell Publishing Ltd</copyright>
+<eventGroup><event type="xmlConverted" agent="Converter:BPG_TO_WML3G version:2.4.8 mode:FullText" date="2011-04-01"/><event type="publishedOnlineEarlyUnpaginated" date="2010-08-30"/><event type="publishedOnlineFinalForm" date="2011-01-18"/><event type="firstOnline" date="2010-08-30"/><event type="xmlConverted" agent="Converter:WILEY_ML3G_TO_WILEY_ML3GV2 version:3.8.8" date="2014-01-30"/><event type="xmlConverted" agent="Converter:WML3G_To_WML3G version:4.1.7 mode:FullText,remove_FC" date="2014-10-30"/></eventGroup>
+<numberingGroup>
+<numbering type="pageFirst" number="61">61</numbering>
+<numbering type="pageLast" number="70">70</numbering>
+</numberingGroup>
+<correspondenceTo>Dr Martin Schulz&#8232;Center for Drug Information and Pharmacy Practice&#8232;Department of Medicine&#8232;ABDA – Federal Union of German Associations of Pharmacists&#8232;Jaegerstrasse 49/50&#8232;10117 Berlin&#8232;Germany&#8232;E‐mail: <email>zapp@abda.aponet.de</email></correspondenceTo>
+<objectNameGroup>
+<objectName elementName="appendix">Appendices</objectName>
+</objectNameGroup>
+<linkGroup>
+<link type="toTypesetVersion" href="file:JEP.JEP1369.pdf"/>
+
+</linkGroup>
+</publicationMeta>
+<contentMeta>
+<unparsedEditorialHistory>Accepted for publication: 19 October 2009</unparsedEditorialHistory>
+<countGroup>
+<count type="figureTotal" number="3"/>
+<count type="tableTotal" number="4"/>
+<count type="formulaTotal" number="0"/>
+<count type="referenceTotal" number="28"/>
+<count type="wordTotal" number="5261"/>
+<count type="linksPubMed" number="0"/>
+<count type="linksCrossRef" number="0"/>
+</countGroup>
+<titleGroup>
+<title type="main">Pharmacist‐led intervention study to improve inhalation technique in asthma and COPD patients</title>
+<title type="shortAuthors">A. Hämmerlein <i>et al.</i></title>
+<title type="short">Improvement of inhalation technique</title>
+</titleGroup>
+<creators>
+<creator creatorRole="author" xml:id="cr1" affiliationRef="#a1">
+<personName>
+<givenNames>Andrea</givenNames>
+<familyName>Hämmerlein</familyName>
+<degrees>PhD</degrees>
+</personName>
+</creator>
+<creator creatorRole="author" xml:id="cr2" affiliationRef="#a1">
+<personName>
+<givenNames>Uta</givenNames>
+<familyName>Müller</familyName>
+<degrees>PhD MPH</degrees>
+</personName>
+</creator>
+<creator creatorRole="author" xml:id="cr3" affiliationRef="#a2" corresponding="yes">
+<personName>
+<givenNames>Martin</givenNames>
+<familyName>Schulz</familyName>
+<degrees>PhD</degrees>
+</personName>
+</creator>
+</creators>
+<affiliationGroup>
+<affiliation xml:id="a1" countryCode="DE">
+<unparsedAffiliation>Research Associate, Center for Drug Information and Pharmacy Practice, Department of Medicine, ABDA – Federal Union of German Associations of Pharmacists, Berlin, Germany</unparsedAffiliation>
+</affiliation>
+<affiliation xml:id="a2" countryCode="DE">
+<unparsedAffiliation>Head, Center for Drug Information and Pharmacy Practice, Director, Department of Medicine, ABDA, Berlin, Germany and Adjunct Professor, Department of Pharmacology, Goethe‐University, Frankfurt, Germany</unparsedAffiliation>
+</affiliation>
+</affiliationGroup>
+<keywordGroup xml:lang="en">
+<keyword xml:id="k1">asthma</keyword>
+<keyword xml:id="k2">COPD</keyword>
+<keyword xml:id="k3">guidelines</keyword>
+<keyword xml:id="k4">inhalation technique</keyword>
+<keyword xml:id="k5">intervention</keyword>
+<keyword xml:id="k6">pharmacy practice</keyword>
+</keywordGroup>
+<abstractGroup>
+<abstract type="main" xml:lang="en">
+<title type="main">Abstract</title>
+<p><b>Rational and aims </b> Inhaled therapy is the mainstay of treatment in patients with asthma and chronic obstructive pulmonary disease (COPD). For effectiveness of pharmacotherapy, correct use of medication is required. The aims of this study were to survey the quality of inhalation technique in patients and to determine the effect of a single intervention in community pharmacies by means of standardized procedures.</p>
+<p><b>Methods </b> A total of 757 patients with asthma or COPD were randomly selected by 55 community pharmacies. At baseline, patients were interviewed and their inhalation technique was assessed with a 21‐items checklist. Any error was recorded and, if necessary, patients were instructed in the proper use of their device. After 4–6 weeks, demonstration of inhalation technique was repeated in the community pharmacies and a pre–post comparison was performed.</p>
+<p><b>Results </b> A total of 597 patients (78.9%) made at least one mistake in performing the inhalation technique at baseline. This number dropped to 214 (28.3%) from the first to the second appointment. All patients did benefit from the pharmacists' intervention regardless of their former training experiences.</p>
+<p><b>Conclusions </b> Inhalation technique of asthma and COPD patients is poor. In daily practice, community pharmacy‐based pharmacists are well suited to significantly supplement doctor‐based education in inhalation technique.</p>
+</abstract>
+</abstractGroup>
+</contentMeta>
+<noteGroup>
+<note xml:id="fn1">
+<p>Conflict of interest: None declared.</p>
+</note>
+</noteGroup>
+</header>
+<body sectionsNumbered="no">
+<section xml:id="ss6" xml:lang="en">
+<title type="main">Introduction</title>
+<p>Chronic obstructive lung diseases like asthma and chronic obstructive pulmonary disease (COPD) are accompanied by a major burden of symptoms, health care utilization, lost of productivity and cost of medications on the individual and society. Although effective drugs and evidence‐based guidelines have been developed, no major change in morbidity and mortality can be recognized and data indicate that asthma and COPD in most patients are not well controlled <link href="#b1">[1]</link>. One reason can be found in the inability of patients to use their inhaler devices correctly <link href="#b2">[2]</link>.</p>
+<p>The mainstay of asthma and COPD treatment is by inhalation of medication to the site of the disease process. The major advantage of inhalation therapy is that drugs are delivered directly into the airways, achieving higher local concentrations with significantly less risk of systemic side effects <link href="#b3">[3]</link>. The deposition pattern of inhaled drug in the respiratory tract is determined by a complex interaction between the device, the aerosol formulation and the patient's inhalation technique <link href="#b4">[4]</link>. The use of an inhaler device involves a complex series of steps, which need to be performed correctly. Failing to perform one or more steps correctly can substantially reduce delivery and hence effectiveness, and safety of medication <link href="#b5">[5]</link>. Further difficulties occur because proliferation of inhaler devices has resulted in a confusing number of choices, and patients are rarely prescribed just one inhaled medication. Each inhaler type has unique operating instructions and requires different ways of handling. This additionally creates the possibility of confusion among patients and increases errors in usage <link href="#b6">[6]</link>.</p>
+<p>Several studies have demonstrated that 50–80% of patients fail to use their inhaler devices correctly <link href="#b7 #b8 #b9 #b10 #b11">[7–11]</link>. Patients are often not aware that they use their inhaled medication inadequately, and overestimate their own abilities <link href="#b12">[12]</link>. Incorrect use of inhalation devices may lead to uncontrolled disease state, unwanted side effects and can also cause higher treatment costs. According to Fink and Rubin, 5–7 Mio. $US are annually wasted in the USA because of inhaler misuse <link href="#b5">[5]</link>.</p>
+<p>National and international guidelines for asthma and COPD management state that inhalation technique should be assessed regularly, and corrected if inadequate <link href="#b3 #b13 #b14 #b15">[3,13–15]</link>. Regarding these recommendations, there is a need of studies to explore the effectiveness and frequency of patient education and consider interventions to improve inhalation technique <link href="#b4">[4]</link>. Our study objectives therefore were to survey the quality of inhalation technique in patients with asthma or COPD and to determine the effect of a single intervention on inhalation technique in community pharmacies by means of standardized procedures.</p>
+</section>
+<section xml:id="ss7" xml:lang="en">
+<title type="main">Methods and materials</title>
+<p>The study was run over 3 months from August till October 2007. It was designed as a prospective multi‐centre intervention study. Intervention comprised pharmaceutical counselling on correct inhalation technique. For evaluation of the intervention effect, a pre–post comparison was reasonable because controlled studies have clearly shown a positive effect of pharmacists' intervention on inhalation technique, and also its acceptance by patients <link href="#b16 #b17 #b18 #b19">[16–19]</link>. In Germany, institutional review board approval has been waived when all patients receive the intervention like in this study.</p>
+<section xml:id="ss8" xml:lang="en">
+<title type="main">Setting and study population</title>
+<p>By means of a regular newsletter, the study idea with a call for participation was sent to a mailing list, to which around 4000 community pharmacists (CPs) from throughout Germany interested in pharmaceutical care (PC) have subscribed. Inclusion criterion for CPs was successful completion of the certified continuing education programme in PC for patients with asthma/COPD. Germany‐wide this is a 9‐hour standardized curriculum based on the recommendations of the Federal Chamber of Pharmacists in Germany. An extra training was not provided. Recruited CPs were provided with a project folder containing the study description as well as all necessary and supporting material to conduct the study (e.g. prepared letter to inform eligible patients by mail, patient handouts, several sheets of the standardized patient interview as well as of the checklist to assess inhalation technique, <link href="#ss18 #ss19">Appendixes 1 and 2</link>). Pharmacists were additionally provided with the <i>Manual – Pharmaceutical Care for Asthma Patients</i><link href="#b20">[20]</link>. This manual contains information on correct inhalation technique of different types of devices as well as master copies to provide written information including pictures for patients, among others. CPs were asked to recruit 15 (maximum 30) asthma or COPD patients. Patients should be at least 18 years old, use inhalation medications on a permanent (daily) basis and have signed the consent form. Eligible patients could be identified upon prescription of inhalation drugs and/or upon patient data on file in the pharmacy. Patients were informed about the study either directly at the respective study pharmacy, by writing letters, or by telephone contacts. Pharmacists made appointments with interested patients asking them to bring along all their inhalation medications at the first visit in the pharmacy.</p>
+</section>
+<section xml:id="ss9" xml:lang="en">
+<title type="main">Quality check of inhalation technique</title>
+<p>At baseline (<i>t</i><sub>1</sub>), standardized patient interviews were conducted to record basic data like age, gender, diagnosis, duration of disease, number of prescribed inhalation medications and instructions on inhalation technique received in the past. Subsequently, they were asked to demonstrate inhalation technique. Inhalation technique of only one drug was demonstrated; primarily the inhaled corticosteroid (ICS) was chosen because in contrast to non‐ICS drugs additional aspects are important to avoid adverse drug events (e.g. rinse out mouth/eat something after use of glucocorticoid). No further specifications according the choice of drug were made. To assess inhalation technique, a 21‐items checklist had been developed, which could be used for all types of inhalation devices i.e. metered‐dose inhaler (MDI), MDI plus spacer, breath‐actuated MDI and dry‐powder inhaler (DPI). Assessed were overall condition of device (3 items), preparation of inhalation (3 items), inhalation technique (11 items; note: step 11 comprises 3 items on the inhalation checklist) and termination of inhalation (4 items). Along with the patient performing the inhalation, each single step should be marked as been performed correctly or incorrectly by the pharmacist. In that, not all steps were relevant for each inhaler system, for example, shaking the inhaler in case of a DPI, non‐relevant steps should be marked as correct. If necessary, patients were instructed once in the proper use of their device and inhalation technique. They were given the opportunity to practise the procedure again in the pharmacy. Written instructions could be provided as supplement. At the end of the first consultation, a second appointment (<i>t</i><sub>2</sub>) 4–6 weeks later was made asking the patient to demonstrate inhalation technique again in the pharmacy. Inhalation checks (at <i>t</i><sub>1</sub> and <i>t</i><sub>2</sub>) had to be performed with the same inhalation system/drug by each patient.</p>
+<p>Community pharmacists were paid for their involvement: €20 for a complete documentation of a patient when documentation forms were submitted till the end of September 2007, and €15 when documents were submitted till the end of October 2007.</p>
+</section>
+<section xml:id="ss10" xml:lang="en">
+<title type="main">Sample size estimation</title>
+<p>Calculation of sample size was carried out with the programme G*Power Version 3.0.5 (<url href="http://www.downloadforge.com">http://www.downloadforge.com</url>). The basis of calculation was literature data stating incorrect use of inhalation medications in 50–80% of patients, on average 65% <link href="#b7 #b8 #b9 #b10 #b11">[7–11]</link>. Correspondingly, 35% of patients performed inhalation correctly. This number (<i>P</i> = 0.35) was used as baseline value (<i>t</i><sub>1</sub>) for computation of the sample size. The objective was defined as an 18% difference, equivalent to an increase of more than 50%, in the number of patients who perform inhalation without making any mistake. An average percentage of 43% of discordant pairs was taken as basis for calculation. The calculated odds ratio amounted to OR = 2.3. The McNemar test in the exact version (binomial distribution) was used for calculation. Alpha was defined as 0.05, and beta as 0.8.</p>
+<p>Based on these assumptions, the resulting number of study participants per subgroup amounted to <i>n</i> = 91. The smallest relevant subgroup was the one comprising participants in the German asthma and COPD disease management programmes. Nationwide, the number of participants enrolled in these programmes has been estimated at 10–15%. This resulted in a theoretically required total case number of <i>n</i> = 607 up to <i>n</i> = 910, on average 759 study participants to be included in the study.</p>
+</section>
+<section xml:id="ss11" xml:lang="en">
+<title type="main">Statistical evaluation</title>
+<p>The primary effect variable was reduction of the number of patients who make errors when inhaling their medication. The secondary effect variable was reduction of the average number of errors per patient. Analysis of study data was performed using SPSS 15.0 (SPSS Inc., Chicago, IL, USA). The chi‐squared test according to McNemar was performed to measure the effect variables, if data were dichotomous. With metric data, the <i>t</i>‐test was performed for paired random samples, because due to the selected before–after comparison a dependence of data was given. According to data scaling, comparison of two subgroups was performed by means of chi‐squared test in case of dichotomous data, and by means of <i>U</i>‐test according to Mann–Whitney in case of ordinal scaled data. In case of metric data, independent sample <i>t</i>‐test was used, and if there were more than two classes, simple variance analyses were run for interval scaled data. As a matter of principle, an error probability of less than 5% was demanded (<i>P</i> &lt; 0.05). Testing was always performed two‐sidedly.</p>
+</section>
+</section>
+<section xml:id="ss12" xml:lang="en">
+<title type="main">Results</title>
+<p>In total, 74 CPs were recruited. Before baseline assessment, 19 pharmacists withdrew from the study because of lack of time, staff shortages, illness or difficulties in patient recruiting, resulting in a final number of 55 CPs. Altogether, 781 patients were included in the study. This was on average 14.2 patients per pharmacy. Twenty‐four patients were excluded from evaluation because they were under 18 years of age (11 patients), had changed to another inhalation medication (6 patients), did not show up for their second appointment (5 patients), or because <i>t</i><sub>1</sub> was assessed after the pharmacist's intervention (1 patient). One patient died during the study period. Thus, 757 study participants became part of the evaluation.</p>
+<section xml:id="ss13" xml:lang="en">
+<title type="main">Basic characteristics of study population</title>
+<p>An overview of basic characteristics of the study population is shown in <link href="#t1">Table 1</link>. In addition, 67.1% of patients stated that they were treated medically directly after diagnosis. Further 14.7% stated that therapy started up to 5 years after diagnosis. The average duration until starting pharmacotherapy was up to 3 years after diagnosis.</p>
+<tabular xml:id="t1">
+<label>1</label>
+<title type="main">Basic characteristics of study population (<i>n</i> = 757)</title>
+<table frame="topbot">
+<tgroup cols="3" align="left">
+<colspec colnum="1" colname="col1"/>
+<colspec colnum="2" colname="col2"/>
+<colspec colnum="3" colname="col3"/>
+<tbody valign="top">
+<row>
+<entry morerows="2">Gender</entry>
+<entry>Male</entry>
+<entry>298 (39.4%)</entry>
+</row>
+<row>
+<entry>Female</entry>
+<entry>456 (60.2%)</entry>
+</row>
+<row>
+<entry>Missing data</entry>
+<entry>3 (0.4%)</entry>
+</row>
+<row>
+<entry>Age in years (mean)</entry>
+<entry/>
+<entry>61.0 (SD: 15.2, range 18–94)</entry>
+</row>
+<row>
+<entry morerows="3">Education in years</entry>
+<entry>9 or less</entry>
+<entry>362 (47.8%)</entry>
+</row>
+<row>
+<entry>10 or 11</entry>
+<entry>232 (30.7%)</entry>
+</row>
+<row>
+<entry>12 or more</entry>
+<entry>146 (19.3%)</entry>
+</row>
+<row>
+<entry>Missing data</entry>
+<entry>17 (2.3%)</entry>
+</row>
+<row>
+<entry morerows="5">Indication</entry>
+<entry>Asthma</entry>
+<entry>380 (50.2%)</entry>
+</row>
+<row>
+<entry>COPD</entry>
+<entry>184 (24.3%)</entry>
+</row>
+<row>
+<entry>Mixed disease state</entry>
+<entry>109 (14.4%)</entry>
+</row>
+<row>
+<entry>Miscellaneous</entry>
+<entry>7 (0.9%)</entry>
+</row>
+<row>
+<entry>Unknown</entry>
+<entry>66 (8.7%)</entry>
+</row>
+<row>
+<entry>Missing data</entry>
+<entry>11 (1.5%)</entry>
+</row>
+<row>
+<entry morerows="5">Duration of disease in years</entry>
+<entry>≤1</entry>
+<entry>83 (11.0%)</entry>
+</row>
+<row>
+<entry>2–5</entry>
+<entry>163 (21.5%)</entry>
+</row>
+<row>
+<entry>6–10</entry>
+<entry>143 (18.9%)</entry>
+</row>
+<row>
+<entry>11–15</entry>
+<entry>84 (11.1%)</entry>
+</row>
+<row>
+<entry>≥16</entry>
+<entry>267 (35.3%)</entry>
+</row>
+<row>
+<entry>Missing data</entry>
+<entry>17 (2.2%)</entry>
+</row>
+<row>
+<entry morerows="5">Duration of inhalation therapy in years (mean)</entry>
+<entry>≤1</entry>
+<entry>102 (13.5%)</entry>
+</row>
+<row>
+<entry>2–5</entry>
+<entry>179 (23.6%)</entry>
+</row>
+<row>
+<entry>6–10</entry>
+<entry>153 (20.2%)</entry>
+</row>
+<row>
+<entry>11–15</entry>
+<entry>82 (10.8%)</entry>
+</row>
+<row>
+<entry>≥16</entry>
+<entry>228 (30.1%)</entry>
+</row>
+<row>
+<entry>Missing data</entry>
+<entry>13 (1.7%)</entry>
+</row>
+<row>
+<entry>Participation in a disease management programme</entry>
+<entry>Yes</entry>
+<entry>65 (8.6%)</entry>
+</row>
+<row>
+<entry morerows="3">Number of instruction sessions (training experience)</entry>
+<entry>None</entry>
+<entry>93 (12.3%)</entry>
+</row>
+<row>
+<entry>1</entry>
+<entry>342 (45.2%)</entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>174 (23.0%)</entry>
+</row>
+<row>
+<entry>3 and more</entry>
+<entry>148 (19.6%)</entry>
+</row>
+<row>
+<entry morerows="4">Number of different inhalation medications</entry>
+<entry>1</entry>
+<entry>292 (38.6%)</entry>
+</row>
+<row>
+<entry>2</entry>
+<entry>330 (43.6%)</entry>
+</row>
+<row>
+<entry>3</entry>
+<entry>107 (14.1%)</entry>
+</row>
+<row>
+<entry>4 and more</entry>
+<entry>26 (3.4%)</entry>
+</row>
+<row>
+<entry>Missing data</entry>
+<entry>2 (0.7%)</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<noteGroup>
+<note xml:id="t1_note81" numbered="no">
+<p>Data are presented as absolute and relative numbers (<i>n</i> or %), mean and standard deviation values (SD).</p>
+</note>
+</noteGroup>
+</tabular>
+<p>Of study participants, significantly more men than women, 12.3% stated that they had never received an introduction into correct usage of their inhalation medications. A total of 45.2% patients had attended one instruction session on how to perform correct inhalation technique, 23.0% indicated two and 19.6% three or more sessions (<link href="#t1">Table 1</link>). More than 55% of patients had already attended an instruction session in a doctor's office, 27% in a pharmacy and 9% in a hospital. Concerning the nature of instruction experienced, multiple answers could be given. According to that, study participants had most often demonstrations (38.9%) and oral instructions (31.0%). Reading of package insert or practising under guidance of an expert was mentioned less often (17.6% and 12.0%, respectively).</p>
+<p>More than 80% of study participants indicated that they were currently using one (38.6%) or two (43.6%) different inhalation medications at the same time. The minority of patients took three, four or more than four different inhalation medications (14.1% and 3.4%, respectively, <link href="#t1">Table 1</link>). <link href="#f1">Figure 1</link> shows the distribution of inhalation systems used by study participants for the inhalation check. DPI is broken down per type of device, and the five leading DPI devices are shown. In addition, the distribution of prescribed inhalation systems during the study period in Germany according to data of the German Institute for Drug Use Evaluation (GIDE) is shown <link href="#b21">[21]</link>. The five most frequently prescribed DPI devices are listed as well.</p>
+<figure xml:id="f1">
+<label>1</label>
+<mediaResourceGroup>
+<mediaResource alt="image" href="urn:x-wiley:13561294:media:JEP1369:JEP_1369_f1"/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webOriginal" href=""/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webLoRes" href=""/>
+</mediaResourceGroup>
+<caption>
+<p>Distribution of inhalation systems in our study compared with nationwide claims data (GIDE) <link href="#b21">[21]</link>.</p>
+</caption>
+</figure>
+</section>
+<section xml:id="ss14" xml:lang="en">
+<title type="main">Quality of inhalation technique</title>
+<p>At baseline (<i>t</i><sub>1</sub>), 597 patients (78.9%) made at least one error in performing their inhalation. This number dropped to 214 (28.3%) from the first to the second appointment (<i>P</i> &lt; 0.001) (<link href="#f2">Fig. 2</link>).</p>
+<figure xml:id="f2">
+<label>2</label>
+<mediaResourceGroup>
+<mediaResource alt="image" href="urn:x-wiley:13561294:media:JEP1369:JEP_1369_f2"/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webOriginal" href=""/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webLoRes" href=""/>
+</mediaResourceGroup>
+<caption>
+<p>Number (%) of correct and incorrect inhalation check performances at <i>t</i><sub>1</sub> and <i>t</i><sub>2</sub> (<i>n</i> = 757).</p>
+</caption>
+</figure>
+<p>Absolute and relative frequencies of possible sources of errors are shown in <link href="#t2">Table 2</link>. The average number of errors dropped from 2.5 to 0.5 per patient (<i>P</i> &lt; 0.001). Quality of inhalation technique showed no significant dependencies on different inhaler devices. Evaluations were done for general inhalation systems (MDI, MDI + spacer, MDI‐breath and DPI, <link href="#t3">Table 3</link>), as well as for specific types of MDI‐breath and DPI devices, respectively. Furthermore, evaluation of quality of inhalation technique showed no significant dependencies, neither on socio‐demographic characteristics like age, gender or education nor on time since diagnosis of the disease.</p>
+<tabular xml:id="t2">
+<label>2</label>
+<title type="main">(Relative) Frequency of individual errors in <i>n</i> = 757 patients at <i>t</i><sub>1</sub> and <i>t</i><sub>2</sub></title>
+<table frame="topbot">
+<tgroup cols="5" align="left">
+<colspec colnum="1" colname="col1"/>
+<colspec colnum="2" colname="col2"/>
+<colspec colnum="3" colname="col3"/>
+<colspec colnum="4" colname="col4"/>
+<colspec colnum="5" colname="col5"/>
+<thead valign="bottom">
+<row>
+<entry morerows="1">Possible sources of error</entry>
+<entry rowsep="1" namest="col2" nameend="col3"> <i>t</i>
+                      <sub>1</sub> </entry>
+<entry rowsep="1" namest="col4" nameend="col5"> <i>t</i>
+                      <sub>2</sub> </entry>
+</row>
+<row rowsep="1">
+<entry> <i>n</i> </entry>
+<entry>%</entry>
+<entry> <i>n</i> </entry>
+<entry>%</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Hold breath after inhaling (5–10 seconds)</entry>
+<entry>271</entry>
+<entry>35.8</entry>
+<entry>63</entry>
+<entry>8.3</entry>
+</row>
+<row>
+<entry>Exhale through pursed lips or nose (Refers to the moment after drug inhalation and holding breath)</entry>
+<entry>228</entry>
+<entry>30.1</entry>
+<entry>50</entry>
+<entry>6.6</entry>
+</row>
+<row>
+<entry>Lean head slightly back (MDI)</entry>
+<entry>170</entry>
+<entry>22.5</entry>
+<entry>47</entry>
+<entry>6.2</entry>
+</row>
+<row>
+<entry>Exhale (normally) (Refers to the moment before starting drug inhalation)</entry>
+<entry>167</entry>
+<entry>22.1</entry>
+<entry>33</entry>
+<entry>4.4</entry>
+</row>
+<row>
+<entry>Wipe saliva off mouthpiece (DPI)</entry>
+<entry>161</entry>
+<entry>21.3</entry>
+<entry>44</entry>
+<entry>5.8</entry>
+</row>
+<row>
+<entry>Rinse out mouth/eat something after use of corticosteroid</entry>
+<entry>136</entry>
+<entry>18.0</entry>
+<entry>17</entry>
+<entry>2.2</entry>
+</row>
+<row>
+<entry>Inhale slowly and deeply (MDI, MDI‐breath, MDI + S) or quickly and deeply (DPI) (Refers to the way of inhalation)</entry>
+<entry>135</entry>
+<entry>17.8</entry>
+<entry>33</entry>
+<entry>4.4</entry>
+</row>
+<row>
+<entry>Shake well before use (usually for MDI, MDI‐breath, MDI + S)</entry>
+<entry>83</entry>
+<entry>11.0</entry>
+<entry>7</entry>
+<entry>0.9</entry>
+</row>
+<row>
+<entry>MDI‐breath and DPI: Inhale with forceful breath(s) (Refers to the beginning of inhalation)</entry>
+<entry>79</entry>
+<entry>10.4</entry>
+<entry>24</entry>
+<entry>3.2</entry>
+</row>
+<row>
+<entry>Perform steps correctly to make the device ready to use (e.g. pull lever, attach spacer) (MDI‐breath, MDI + S, DPI)</entry>
+<entry>74</entry>
+<entry>9.8</entry>
+<entry>11</entry>
+<entry>1.5</entry>
+</row>
+<row>
+<entry>Cleanliness satisfactory</entry>
+<entry>74</entry>
+<entry>9.8</entry>
+<entry>11</entry>
+<entry>1.5</entry>
+</row>
+<row>
+<entry>Hold device correctly (MDI, MDI‐breath, MDI + S: Hold mouthpiece down, DPI: usually horizontally)</entry>
+<entry>66</entry>
+<entry>8.7</entry>
+<entry>13</entry>
+<entry>1.7</entry>
+</row>
+<row>
+<entry>Avoid exhaling into device</entry>
+<entry>57</entry>
+<entry>7.5</entry>
+<entry>14</entry>
+<entry>1.8</entry>
+</row>
+<row>
+<entry>Close lips (tightly for MDI‐breath and DPI)</entry>
+<entry>56</entry>
+<entry>7.4</entry>
+<entry>11</entry>
+<entry>1.5</entry>
+</row>
+<row>
+<entry>MDI: Spray and inhale at the same time, as exception also for Jethaler<sup>®</sup> device (DPI)</entry>
+<entry>40</entry>
+<entry>5.3</entry>
+<entry>9</entry>
+<entry>1.2</entry>
+</row>
+<row>
+<entry>Close device immediately</entry>
+<entry>33</entry>
+<entry>4.4</entry>
+<entry>5</entry>
+<entry>0.7</entry>
+</row>
+<row>
+<entry>Device technically functional</entry>
+<entry>12</entry>
+<entry>1.6</entry>
+<entry>0</entry>
+<entry>0.0</entry>
+</row>
+<row>
+<entry>MDI + S: Release in spacer and inhale directly (&lt;3–5 seconds)</entry>
+<entry>6</entry>
+<entry>0.8</entry>
+<entry>3</entry>
+<entry>0.4</entry>
+</row>
+<row>
+<entry>Device components fit together</entry>
+<entry>6</entry>
+<entry>0.8</entry>
+<entry>0</entry>
+<entry>0.0</entry>
+</row>
+<row>
+<entry>Remove locking cap</entry>
+<entry>4</entry>
+<entry>0.5</entry>
+<entry>2</entry>
+<entry>0.3</entry>
+</row>
+<row>
+<entry>Release the device (MDI‐breath)</entry>
+<entry>2</entry>
+<entry>0.3</entry>
+<entry>1</entry>
+<entry>0.1</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<noteGroup>
+<note xml:id="t2_note112" numbered="no">
+<p>Data are presented as absolute (<i>n</i>) and relative number of patients (%).</p>
+</note>
+<note xml:id="t2_note113" numbered="no">
+<p>If no specific device is mentioned, single items were relevant for all types of inhalation devices. In case that single items had to be considered when using specific inhalation device(s), only these devices are explicitly mentioned.</p>
+</note>
+<note xml:id="t2_note114" numbered="no">
+<p>DPI, dry‐powder inhaler; MDI, metered‐dose inhaler; MDI‐breath, breath‐actuated MDI; MDI + S, MDI plus spacer.</p>
+</note>
+</noteGroup>
+</tabular>
+<tabular xml:id="t3">
+<label>3</label>
+<title type="main">Average number of correct steps at <i>t</i><sub>1</sub> and <i>t</i><sub>2</sub> depending on type of inhalation device</title>
+<table frame="topbot">
+<tgroup cols="5" align="left">
+<colspec colnum="1" colname="col1"/>
+<colspec colnum="2" colname="col2"/>
+<colspec colnum="3" colname="col3"/>
+<colspec colnum="4" colname="col4"/>
+<colspec colnum="5" colname="col5"/>
+<thead valign="bottom">
+<row>
+<entry morerows="1">Type of device</entry>
+<entry morerows="1">Number of patients</entry>
+<entry rowsep="1" namest="col3" nameend="col4">Mean number of correct steps (max. 21)</entry>
+<entry morerows="1"> <i>P</i>‐value</entry>
+</row>
+<row rowsep="1">
+<entry> <i>t</i>
+                      <sub>1</sub> </entry>
+<entry> <i>t</i>
+                      <sub>2</sub> </entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>MDI</entry>
+<entry>225</entry>
+<entry>18.3</entry>
+<entry>20.4</entry>
+<entry>&lt;0.001</entry>
+</row>
+<row>
+<entry>MDI + spacer</entry>
+<entry>19</entry>
+<entry>19.0</entry>
+<entry>20.9</entry>
+<entry>&lt;0.001</entry>
+</row>
+<row>
+<entry>MDI breath‐actuated</entry>
+<entry>33</entry>
+<entry>19.2</entry>
+<entry>20.7</entry>
+<entry>&lt;0.001</entry>
+</row>
+<row>
+<entry>DPI</entry>
+<entry>479</entry>
+<entry>18.6</entry>
+<entry>20.5</entry>
+<entry>&lt;0.001</entry>
+</row>
+<row>
+<entry>Missing data</entry>
+<entry>1</entry>
+<entry>–</entry>
+<entry>–</entry>
+<entry>–</entry>
+</row>
+<row>
+<entry>Total</entry>
+<entry>757</entry>
+<entry>18.5</entry>
+<entry>20.5</entry>
+<entry>&lt;0.001</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<noteGroup>
+<note xml:id="t3_note36" numbered="no">
+<p>DPI, dry‐powder inhaler; MDI, metered‐dose inhaler.</p>
+</note>
+</noteGroup>
+</tabular>
+<p>Patients who stated at study entry that they had never received a training in correct inhalation technique made more errors in performing inhalation at baseline than those who have had one or more instruction sessions before the study (3.2 vs. 2.4 errors, <i>P</i> = 0.001). However, after intervention there was no significant difference between groups observable and the mean error rate was similar for both groups (0.6 vs. 0.5 errors) (<link href="#t4">Table 4</link>).</p>
+<tabular xml:id="t4">
+<label>4</label>
+<title type="main">Quality of inhalation technique at <i>t</i><sub>1</sub> versus <i>t</i><sub>2</sub> depending on prior training experience</title>
+<table frame="topbot">
+<tgroup cols="6" align="left">
+<colspec colnum="1" colname="col1"/>
+<colspec colnum="2" colname="col2"/>
+<colspec colnum="3" colname="col3"/>
+<colspec colnum="4" colname="col4"/>
+<colspec colnum="5" colname="col5"/>
+<colspec colnum="6" colname="col6"/>
+<thead valign="bottom">
+<row>
+<entry morerows="1">Patient subgroups</entry>
+<entry morerows="1">Number of patients (%)</entry>
+<entry rowsep="1" namest="col3" nameend="col4">Number of patients with incorrect execution (%)</entry>
+<entry rowsep="1" namest="col5" nameend="col6">Mean number of errors per patient</entry>
+</row>
+<row rowsep="1">
+<entry> <i>t</i>
+                      <sub>1</sub> </entry>
+<entry> <i>t</i>
+                      <sub>2</sub> </entry>
+<entry> <i>t</i>
+                      <sub>1</sub> </entry>
+<entry> <i>t</i>
+                      <sub>2</sub> </entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry>Patients without prior instruction in inhalation technique</entry>
+<entry>93 (12.3%)</entry>
+<entry>84 (11.1%)</entry>
+<entry>31<link href="#t4n1">*</link> (4.1%)</entry>
+<entry>3.2</entry>
+<entry>0.6<link href="#t4n1">*</link></entry>
+</row>
+<row>
+<entry>Patients with prior instruction in inhalation technique</entry>
+<entry>664 (87.7%)</entry>
+<entry>513 (67.8%)</entry>
+<entry>183<link href="#t4n1">*</link> (24.2%)</entry>
+<entry>2.4</entry>
+<entry>0.5<link href="#t4n1">*</link></entry>
+</row>
+<row>
+<entry>Total numbers</entry>
+<entry>757 (100.0%)</entry>
+<entry>597 (78.9%)</entry>
+<entry>214<link href="#t4n1">*</link> (28.3%)</entry>
+<entry>2.5</entry>
+<entry>0.5<link href="#t4n1">*</link></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<noteGroup>
+<note xml:id="t4n1">
+<label>*</label>
+<p>
+                        Compared with <i>t</i><sub>1</sub>: <i>P</i> &lt; 0.001.</p>
+</note>
+</noteGroup>
+</tabular>
+<p>The pharmacists' average (median) time needed to assess the inhalation technique and to perform the intervention including documentation was 13 (15) minutes.</p>
+</section>
+</section>
+<section xml:id="ss15" xml:lang="en">
+<title type="main">Discussion</title>
+<p>This study has shown that almost 80% of patients with chronic lung diseases in ambulatory care made one or more errors when inhaling their medication. A one‐time, standardized intervention by qualified pharmacists has shown to significantly improve patients' inhalation technique. The percentage of patients making errors was reduced by 65% to 28.3% from the first to the second appointment. The average number of errors dropped from 2.5 to 0.5 per patient. All patients did benefit from the pharmacists' intervention regardless of their former training experiences.</p>
+<p>In the literature, there is consistency that a high percentage of patients have poor inhalation technique. Checklists used for inhalation technique assessment thereby differ between studies. They were mostly limited to a few important points to be checked or specific to a single type of inhaler. Hence and in general, comparing results between different studies and settings remain difficult. In the present study, a newly developed checklist was used. This checklist can be used to assess patients' performed inhalation technique with all different types of inhalation systems. The 21‐items checklist allows detailed assessment of every single step of inhalation device usage.</p>
+<p>The most common errors detected in the study were similar to those found in other studies, for example, failure to hold breath after inhalation, inappropriate inspiration flow and failure to shake the canister before use <link href="#b7 #b9 #b11 #b22">[7,9,11,22]</link>. In consequence to the detailed assessment of inhalation technique, other sources of errors were reported frequently, like failure to lean head slightly back (MDI), failure to wipe saliva off mouthpiece (DPI) and failure to rinse out mouth/eat something after using an ICS. These errors were also found to be relevant because they may have an impact on effectiveness as well as safety of the inhaled medication. Results showed no significant dependencies on different inhaler devices. In contrast to other studies <link href="#b8 #b23 #b24">[8,23,24]</link>, the frequently observed errors in our study were mostly device‐independent like failure to breath‐hold after inhalation. Regarding this point, it has to be stated that identifying differences between devices was no study objective, and the chosen study design presumably did not have the power to find possible differences. Similar to other studies, we found no significant dependencies on socio‐demographic data like age, gender or education <link href="#b11 #b23 #b25">[11,23,25]</link>. Quality of inhalation technique was also independent of the number of inhaled medications. Because of practicability reasons, the different types of inhalation devices used by a patient were not recorded by CPs, and quality of inhalation technique was only assessed for one inhalation device per patient. Therefore, we do not know whether parallel usage of different types of inhalation systems (MDI + DPI) may increase error rate in patient usage versus usage of the same type of inhalation system (MDI + MDI or DPI + DPI).</p>
+<p>In case of errors, patients are in need to be educated in correct inhalation technique. Pharmacists' intervention comprised step‐by‐step demonstration of correct inhalation technique, verbal instructions as well as practical exercises. These methods in educating patients have shown to be effective, leading to an improved inhalation technique <link href="#b26 #b27 #b28">[26–28]</link>.</p>
+<p>Based on our study data, no answer can be given whether the positive effect of intervention on inhalation technique will sustain for a longer period, like in our 12 months PC studies on asthma <link href="#b18 #b19">[18,19]</link>. Presumably, it would be necessary to repeat such intervention on a regular basis. A further limitation of the study is that a selection bias cannot be fully excluded because such offers are usually accepted more frequently by motivated patients rather than by unmotivated patients. Furthermore, any inhalation training session that might have taken place outside the pharmacy in the period of 6 weeks (between <i>t</i><sub>1</sub> and <i>t</i><sub>2</sub>) was not recorded; but this would only have distorted the results false‐positively. However, this error is probably negligible with respect to the size of effect found. Finally, the results show that such one‐time interventions are not sufficient for all patients to learn how to perform error‐free inhalation technique. Additional follow‐up instructions and exercises would probably increase the number of patients who inhale their medication without making any mistake. However, even then, probably not all patients would be capable of performing proper inhalation technique in the long run.</p>
+<p>The results presented here have a high practice relevance. They have shown that there is a clear need for a specific and probably regularly repeated training of patients to ensure correct inhalation technique. Implementation of this service in daily community pharmacy practice is therefore highly recommended, and qualified CPs are in an ideal position to perform these tasks. The results, in addition to the results of our PC studies on asthma <link href="#b18 #b19">[18,19]</link>, gave German pharmacists the opportunity to contribute to the revision of the German disease management guideline for asthma <link href="#b14">[14]</link>. For the first time, pharmacists are now involved in the asthma care process in Germany supporting ensurance of correct inhalation technique in close collaboration with the prescribing doctors. In <link href="#f3">Fig. 3</link>, the algorithm is shown that was agreed on by doctors and pharmacists.</p>
+<figure xml:id="f3">
+<label>3</label>
+<mediaResourceGroup>
+<mediaResource alt="image" href="urn:x-wiley:13561294:media:JEP1369:JEP_1369_f3"/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webOriginal" href=""/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webLoRes" href=""/>
+</mediaResourceGroup>
+<caption>
+<p>Ensuring correct inhalation technique (according to German Disease Management Guideline for Asthma, 2009 <link href="#b14">[14]</link>).</p>
+</caption>
+</figure>
+<p>Accordingly, evaluation of inhalation technique should be done on a regular basis with instructions adjusted to the patients' needs. When the doctor prescribes an inhalation device for the first time or when a switch to another device is necessary, he educates the patient in correct use of the device. Shortly after the first instruction (within 4 weeks) evaluation of inhalation technique should be repeated by the doctor or the pharmacist. Patients who inhale without making any mistake should repeat this process once a year or when they switch to another inhalation device/medication. Patients who make mistakes in carrying out their inhalation should receive instructions in the pharmacy. If this does not lead to an error‐free inhalation technique, remedial training should be given by the doctor and his asthma/COPD team. Implementing these services in close collaboration between doctors and pharmacists would substantially support effective and safe pharmacotherapy, and reduce wasted resources.</p>
+</section>
+<section xml:id="ss16" type="acknowledgments" xml:lang="en">
+<title type="main">Acknowledgements</title>
+<p>We thank all participating community pharmacies for making this piece of research possible, Christiane Sauerwein for generating the database, and data analysis, and Susanne vom Scheidt, both from the Center for Drug Information and Pharmacy Practice, for supporting study organization, and critical reading of the manuscript.</p>
+</section>
+<bibliography xml:id="ss17" style="numbered">
+<title type="main">References</title>
+<bib xml:id="b1">
+<label>1</label>
+<citation type="journal" xml:id="cit1">
+<author><familyName>Rabe</familyName>, <givenNames>K. F.</givenNames></author>, 
+<author><familyName>Adachi</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>Lai</familyName>, <givenNames>C. K.</givenNames></author>, 
+<author><familyName>Soriano</familyName>, <givenNames>J. B.</givenNames></author>, 
+<author><familyName>Vermeire</familyName>, <givenNames>P. A.</givenNames></author>, 
+<author><familyName>Weiss</familyName>, <givenNames>K. B.</givenNames></author> &amp; 
+<author><familyName>Weiss</familyName>, <givenNames>S. T.</givenNames></author> (<pubYear year="2004">2004</pubYear>) <articleTitle>Worldwide severity and control of asthma in children and adults: the global asthma insights and reality surveys</articleTitle>. 
+<journalTitle>Journal of Allergy and Clinical Immunology</journalTitle>, <vol>114</vol>, <pageFirst>40</pageFirst>–<pageLast>47</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b2">
+<label>2</label>
+<citation type="journal" xml:id="cit2">
+<author><familyName>Crompton</familyName>, <givenNames>G. K.</givenNames></author>, 
+<author><familyName>Barnes</familyName>, <givenNames>P. J.</givenNames></author>, 
+<author><familyName>Broeders</familyName>, <givenNames>M.</givenNames></author>, <i>et al.</i> (<pubYear year="2006">2006</pubYear>) <articleTitle>The need to improve inhalation technique in Europe: a report from the Aerosol Drug Management Improvement Team</articleTitle>. 
+<journalTitle>Respiratory Medicine</journalTitle>, <vol>100</vol>, <pageFirst>1479</pageFirst>–<pageLast>1494</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b3">
+<label>3</label>
+<citation type="other" xml:id="cit3">
+<groupName>Global Initiative for Asthma (GINA)</groupName> (<pubYear year="2008">2008</pubYear>) <otherTitle><i>Global strategy for asthma management and prevention</i></otherTitle>. Update 2008. Available at: <url href="http://www.ginasthma.org">http://www.ginasthma.org</url> (last accessed February 2010).</citation>
+</bib>
+<bib xml:id="b4">
+<label>4</label>
+<citation type="journal" xml:id="cit4">
+<author><familyName>Brocklebank</familyName>, <givenNames>D.</givenNames></author>, 
+<author><familyName>Ram</familyName>, <givenNames>F.</givenNames></author>, 
+<author><familyName>Wright</familyName>, <givenNames>J.</givenNames></author>, 
+<author><familyName>Barry</familyName>, <givenNames>P.</givenNames></author>, 
+<author><familyName>Cates</familyName>, <givenNames>C.</givenNames></author>, 
+<author><familyName>Davies</familyName>, <givenNames>L.</givenNames></author>, 
+<author><familyName>Douglas</familyName>, <givenNames>G.</givenNames></author>, 
+<author><familyName>Muers</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>Smith</familyName>, <givenNames>D.</givenNames></author> &amp; 
+<author><familyName>White</familyName>, <givenNames>J.</givenNames></author> (<pubYear year="2001">2001</pubYear>) <articleTitle>Comparison of the effectiveness of inhaler devices in asthma and chronic obstructive airways disease: a systematic review of the literature</articleTitle>. 
+<journalTitle>Health Technology Assessment</journalTitle>, <vol>5</vol>, <pageFirst>1</pageFirst>–<pageLast>149</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b5">
+<label>5</label>
+<citation type="journal" xml:id="cit5">
+<author><familyName>Fink</familyName>, <givenNames>J. B.</givenNames></author> &amp; 
+<author><familyName>Rubin</familyName>, <givenNames>B. K.</givenNames></author> (<pubYear year="2005">2005</pubYear>) <articleTitle>Problems with inhaler use: a call for improved clinician and patient education</articleTitle>. 
+<journalTitle>Respiratory Care</journalTitle>, <vol>50</vol>, <pageFirst>1360</pageFirst>–<pageLast>1374</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b6">
+<label>6</label>
+<citation type="journal" xml:id="cit6">
+<author><familyName>van der Palen</familyName>, <givenNames>J.</givenNames></author>, 
+<author><familyName>Klein</familyName>, <givenNames>J.</givenNames></author>, 
+<author><familyName>van Herwaarden</familyName>, <givenNames>C.</givenNames></author>, 
+<author><familyName>Zielhuis</familyName>, <givenNames>G.</givenNames></author> &amp; 
+<author><familyName>Seydel</familyName>, <givenNames>E.</givenNames></author> (<pubYear year="1999">1999</pubYear>) <articleTitle>Multiple inhalers confuse asthma patients</articleTitle>. 
+<journalTitle>European Respiratory Journal</journalTitle>, <vol>14</vol>, <pageFirst>1034</pageFirst>–<pageLast>1037</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b7">
+<label>7</label>
+<citation type="journal" xml:id="cit7">
+<author><familyName>Carrion</familyName>, <givenNames>V. F.</givenNames></author>, 
+<author><familyName>Maya</familyName>, <givenNames>M. M.</givenNames></author>, 
+<author><familyName>Fontana</familyName>, <givenNames>S. I.</givenNames></author>, 
+<author><familyName>Diaz</familyName>, <givenNames>L. J.</givenNames></author> &amp; 
+<author><familyName>Marin</familyName>, <givenNames>P. J.</givenNames></author> (<pubYear year="2000">2000</pubYear>) <articleTitle>[Inhalation technique in patients with chronic respiratory diseases]</articleTitle>. 
+<journalTitle>Archivos De Bronconeumologia</journalTitle>, <vol>36</vol>, <pageFirst>236</pageFirst>–<pageLast>240</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b8">
+<label>8</label>
+<citation type="journal" xml:id="cit8">
+<author><familyName>Girodet</familyName>, <givenNames>P. O.</givenNames></author>, 
+<author><familyName>Raherison</familyName>, <givenNames>C.</givenNames></author>, 
+<author><familyName>Abouelfath</familyName>, <givenNames>A.</givenNames></author>, 
+<author><familyName>Lignot</familyName>, <givenNames>S.</givenNames></author>, 
+<author><familyName>Depont</familyName>, <givenNames>F.</givenNames></author>, 
+<author><familyName>Moore</familyName>, <givenNames>N.</givenNames></author> &amp; 
+<author><familyName>Molimard</familyName>, <givenNames>M.</givenNames></author> (<pubYear year="2003">2003</pubYear>) <articleTitle>[Real‐life use of inhaler devices for chronic obstructive pulmonary disease in primary care]</articleTitle>. 
+<journalTitle>Therapie</journalTitle>, <vol>58</vol>, <pageFirst>499</pageFirst>–<pageLast>504</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b9">
+<label>9</label>
+<citation type="journal" xml:id="cit9">
+<author><familyName>Larsen</familyName>, <givenNames>J. S.</givenNames></author>, 
+<author><familyName>Hahn</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>Ekholm</familyName>, <givenNames>B.</givenNames></author> &amp; 
+<author><familyName>Wick</familyName>, <givenNames>K. A.</givenNames></author> (<pubYear year="1994">1994</pubYear>) <articleTitle>Evaluation of conventional press‐and‐breath metered‐dose inhaler technique in 501 patients</articleTitle>. 
+<journalTitle>Journal of Asthma</journalTitle>, <vol>31</vol>, <pageFirst>193</pageFirst>–<pageLast>199</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b10">
+<label>10</label>
+<citation type="journal" xml:id="cit10">
+<author><familyName>Molimard</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>Raherison</familyName>, <givenNames>C.</givenNames></author>, 
+<author><familyName>Lignot</familyName>, <givenNames>S.</givenNames></author>, 
+<author><familyName>Depont</familyName>, <givenNames>F.</givenNames></author>, 
+<author><familyName>Abouelfath</familyName>, <givenNames>A.</givenNames></author> &amp; 
+<author><familyName>Moore</familyName>, <givenNames>N.</givenNames></author> (<pubYear year="2003">2003</pubYear>) <articleTitle>Assessment of handling of inhaler devices in real life: an observational study in 3811 patients in primary care</articleTitle>. 
+<journalTitle>Journal of Aerosol Medicine</journalTitle>, <vol>16</vol>, <pageFirst>249</pageFirst>–<pageLast>254</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b11">
+<label>11</label>
+<citation type="journal" xml:id="cit11">
+<author><familyName>Shrestha</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>Parupia</familyName>, <givenNames>H.</givenNames></author>, 
+<author><familyName>Andrews</familyName>, <givenNames>B.</givenNames></author>, 
+<author><familyName>Kim</familyName>, <givenNames>S. W.</givenNames></author>, 
+<author><familyName>Martin</familyName>, <givenNames>M. S.</givenNames></author>, 
+<author><familyName>Park</familyName>, <givenNames>D. I.</givenNames></author> &amp; 
+<author><familyName>Gee</familyName>, <givenNames>E.</givenNames></author> (<pubYear year="1996">1996</pubYear>) <articleTitle>Metered‐dose inhaler technique of patients in an urban ED: prevalence of incorrect technique and attempt at education</articleTitle>. 
+<journalTitle>American Journal of Emergency Medicine</journalTitle>, <vol>14</vol>, <pageFirst>380</pageFirst>–<pageLast>384</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b12">
+<label>12</label>
+<citation type="journal" xml:id="cit12">
+<author><familyName>Erickson</familyName>, <givenNames>S. R.</givenNames></author>, 
+<author><familyName>Horton</familyName>, <givenNames>A.</givenNames></author> &amp; 
+<author><familyName>Kirking</familyName>, <givenNames>D. M.</givenNames></author> (<pubYear year="1998">1998</pubYear>) <articleTitle>Assessing metered‐dose inhaler technique: comparison of observation vs. patient self‐report</articleTitle>. 
+<journalTitle>Journal of Asthma</journalTitle>, <vol>35</vol>, <pageFirst>575</pageFirst>–<pageLast>583</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b13">
+<label>13</label>
+<citation type="other" xml:id="cit13">
+<groupName>German Medical Association, National Association of Statutory Health Insurance Physicians, &amp; Association of the Scientific Medical Societies in Germany</groupName> (<pubYear year="2006">2006</pubYear>) <otherTitle><i>National disease management guideline for COPD</i></otherTitle>. Available at: <url href="http://www.versorgungsleitlinien.de/themen/copd">http://www.versorgungsleitlinien.de/themen/copd</url> (last accessed February 2010).</citation>
+</bib>
+<bib xml:id="b14">
+<label>14</label>
+<citation type="other" xml:id="cit14">
+<groupName>German Medical Association, National Association of Statutory Health Insurance Physicians, &amp; Association of the Scientific Medical Societies in Germany</groupName> (<pubYear year="2009">2009</pubYear>) <otherTitle><i>National disease management guideline for asthma</i></otherTitle>. Available at: <url href="http://www.versorgungsleitlinien.de/themen/asthma">http://www.versorgungsleitlinien.de/themen/asthma</url> (last accessed February 2010).</citation>
+</bib>
+<bib xml:id="b15">
+<label>15</label>
+<citation type="other" xml:id="cit15">
+<groupName>Global Initiative for Obstructive Lung Disease (GOLD)</groupName> (<pubYear year="2007">2007</pubYear>) <otherTitle><i>Global strategy for the diagnosis, management, and prevention of chronic obstructive pulmonary disease</i></otherTitle>. Available at: <url href="http://www.goldcopd.com">http://www.goldcopd.com</url> (last accessed February 2010).</citation>
+</bib>
+<bib xml:id="b16">
+<label>16</label>
+<citation type="journal" xml:id="cit16">
+<author><familyName>Armour</familyName>, <givenNames>C.</givenNames></author>, 
+<author><familyName>Bosnic‐Anticevich</familyName>, <givenNames>S.</givenNames></author>, 
+<author><familyName>Brillant</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>Burton</familyName>, <givenNames>D.</givenNames></author>, 
+<author><familyName>Emmerton</familyName>, <givenNames>L.</givenNames></author>, 
+<author><familyName>Krass</familyName>, <givenNames>I.</givenNames></author>, 
+<author><familyName>Saini</familyName>, <givenNames>B.</givenNames></author>, 
+<author><familyName>Smith</familyName>, <givenNames>L.</givenNames></author> &amp; 
+<author><familyName>Stewart</familyName>, <givenNames>K.</givenNames></author> (<pubYear year="2007">2007</pubYear>) <articleTitle>Pharmacy Asthma Care Program (PACP) improves outcomes for patients in the community</articleTitle>. 
+<journalTitle>Thorax</journalTitle>, <vol>62</vol>, <pageFirst>496</pageFirst>–<pageLast>502</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b17">
+<label>17</label>
+<citation type="journal" xml:id="cit17">
+<author><familyName>Cordina</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>McElnay</familyName>, <givenNames>J. C.</givenNames></author> &amp; 
+<author><familyName>Hughes</familyName>, <givenNames>C. M.</givenNames></author> (<pubYear year="2001">2001</pubYear>) <articleTitle>Assessment of a community pharmacy‐based program for patients with asthma</articleTitle>. 
+<journalTitle>Pharmacotherapy</journalTitle>, <vol>21</vol>, <pageFirst>1196</pageFirst>–<pageLast>1203</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b18">
+<label>18</label>
+<citation type="journal" xml:id="cit18">
+<author><familyName>Mangiapane</familyName>, <givenNames>S.</givenNames></author>, 
+<author><familyName>Schulz</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>Mühlig</familyName>, <givenNames>S.</givenNames></author>, 
+<author><familyName>Ihle</familyName>, <givenNames>P.</givenNames></author>, 
+<author><familyName>Schubert</familyName>, <givenNames>I.</givenNames></author> &amp; 
+<author><familyName>Waldmann</familyName>, <givenNames>H. C.</givenNames></author> (<pubYear year="2005">2005</pubYear>) <articleTitle>Community pharmacy‐based pharmaceutical care for asthma patients</articleTitle>. 
+<journalTitle>Annals of Pharmacotherapy</journalTitle>, <vol>39</vol>, <pageFirst>1817</pageFirst>–<pageLast>1822</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b19">
+<label>19</label>
+<citation type="journal" xml:id="cit19">
+<author><familyName>Schulz</familyName>, <givenNames>M.</givenNames></author>, 
+<author><familyName>Verheyen</familyName>, <givenNames>F.</givenNames></author>, 
+<author><familyName>Mühlig</familyName>, <givenNames>S.</givenNames></author>, 
+<author><familyName>Müller</familyName>, <givenNames>J. M.</givenNames></author>, 
+<author><familyName>Mühlbauer</familyName>, <givenNames>K.</givenNames></author>, 
+<author><familyName>Knop‐Schneickert</familyName>, <givenNames>E.</givenNames></author>, 
+<author><familyName>Petermann</familyName>, <givenNames>F.</givenNames></author> &amp; 
+<author><familyName>Bergmann</familyName>, <givenNames>K. C.</givenNames></author> (<pubYear year="2001">2001</pubYear>) <articleTitle>Pharmaceutical care services for asthma patients: a controlled intervention study</articleTitle>. 
+<journalTitle>Journal of Clinical Pharmacology</journalTitle>, <vol>41</vol>, <pageFirst>668</pageFirst>–<pageLast>676</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b20">
+<label>20</label>
+<citation type="book" xml:id="cit20">
+<author><familyName>Mangiapane</familyName>, <givenNames>S.</givenNames></author>, 
+<author><familyName>Schulz</familyName>, <givenNames>M.</givenNames></author> &amp; 
+<author><familyName>Verheyen</familyName>, <givenNames>F.</givenNames></author> (<pubYear year="2005">2005</pubYear>) <bookTitle>[Pharmaceutical Care Manuals. Issue 2: Asthma]</bookTitle>, <edition>4th</edition>
+					edn.
+					Eschborn: <publisherName>GOVI Publisher &amp; Co</publisherName>.
+</citation>
+</bib>
+<bib xml:id="b21">
+<label>21</label>
+<citation type="journal" xml:id="cit21">
+<author><familyName>Schussel</familyName>, <givenNames>K.</givenNames></author> &amp; 
+<author><familyName>Schulz</familyName>, <givenNames>M.</givenNames></author> (<pubYear year="2006">2006</pubYear>) <articleTitle>Prescribing of COX‐2 inhibitors in Germany after safety warnings and market withdrawals</articleTitle>. 
+<journalTitle>Pharmazie</journalTitle>, <vol>61</vol>, <pageFirst>878</pageFirst>–<pageLast>886</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b22">
+<label>22</label>
+<citation type="journal" xml:id="cit22">
+<author><familyName>Rau</familyName>, <givenNames>J. L.</givenNames></author> (<pubYear year="2006">2006</pubYear>) <articleTitle>Practical problems with aerosol therapy in COPD</articleTitle>. 
+<journalTitle>Respiratory Care</journalTitle>, <vol>51</vol>, <pageFirst>158</pageFirst>–<pageLast>172</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b23">
+<label>23</label>
+<citation type="journal" xml:id="cit23">
+<author><familyName>Golpe</familyName>, <givenNames>G. R.</givenNames></author>, 
+<author><familyName>Mateos</familyName>, <givenNames>C. A.</givenNames></author> &amp; 
+<author><familyName>Soto</familyName>, <givenNames>F. I.</givenNames></author> (<pubYear year="2001">2001</pubYear>) <articleTitle>[Inadequate technique in the use of inhalers in patients seen at a pneumology clinic]</articleTitle>. 
+<journalTitle>Anales De Medicina Interna</journalTitle>, <vol>18</vol>, <pageFirst>69</pageFirst>–<pageLast>73</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b24">
+<label>24</label>
+<citation type="journal" xml:id="cit24">
+<author><familyName>Hesselink</familyName>, <givenNames>A. E.</givenNames></author>, 
+<author><familyName>Penninx</familyName>, <givenNames>B. W.</givenNames></author>, 
+<author><familyName>Wijnhoven</familyName>, <givenNames>H. A.</givenNames></author>, 
+<author><familyName>Kriegsman</familyName>, <givenNames>D. M.</givenNames></author> &amp; 
+<author><familyName>van Eijk</familyName>, <givenNames>J. T.</givenNames></author> (<pubYear year="2001">2001</pubYear>) <articleTitle>Determinants of an incorrect inhalation technique in patients with asthma or COPD</articleTitle>. 
+<journalTitle>Scandinavian Journal of Primary Health Care</journalTitle>, <vol>19</vol>, <pageFirst>255</pageFirst>–<pageLast>260</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b25">
+<label>25</label>
+<citation type="journal" xml:id="cit25">
+<author><familyName>Gray</familyName>, <givenNames>S. L.</givenNames></author>, 
+<author><familyName>Williams</familyName>, <givenNames>D. M.</givenNames></author>, 
+<author><familyName>Pulliam</familyName>, <givenNames>C. C.</givenNames></author>, 
+<author><familyName>Sirgo</familyName>, <givenNames>M. A.</givenNames></author>, 
+<author><familyName>Bishop</familyName>, <givenNames>A. L.</givenNames></author> &amp; 
+<author><familyName>Donohue</familyName>, <givenNames>J. F.</givenNames></author> (<pubYear year="1996">1996</pubYear>) <articleTitle>Characteristics predicting incorrect metered‐dose inhaler technique in older subjects</articleTitle>. 
+<journalTitle>Archives of Internal Medicine</journalTitle>, <vol>156</vol>, <pageFirst>984</pageFirst>–<pageLast>988</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b26">
+<label>26</label>
+<citation type="journal" xml:id="cit26">
+<author><familyName>Basheti</familyName>, <givenNames>I. A.</givenNames></author>, 
+<author><familyName>Reddel</familyName>, <givenNames>H. K.</givenNames></author>, 
+<author><familyName>Armour</familyName>, <givenNames>C. L.</givenNames></author> &amp; 
+<author><familyName>Bosnic‐Anticevich</familyName>, <givenNames>S. Z.</givenNames></author> (<pubYear year="2005">2005</pubYear>) <articleTitle>Counseling about turbuhaler technique: needs assessment and effective strategies for community pharmacists</articleTitle>. 
+<journalTitle>Respiratory Care</journalTitle>, <vol>50</vol>, <pageFirst>617</pageFirst>–<pageLast>623</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b27">
+<label>27</label>
+<citation type="journal" xml:id="cit27">
+<author><familyName>Ekedahl</familyName>, <givenNames>A.</givenNames></author> (<pubYear year="1996">1996</pubYear>) <articleTitle>Open‐ended questions' and ‘show‐and‐tell’‐a way to improve pharmacist counselling and patients' handling of their medicines</articleTitle>. 
+<journalTitle>Clinical Pharmacology and Therapeutics</journalTitle>, <vol>21</vol>, <pageFirst>95</pageFirst>–<pageLast>99</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b28">
+<label>28</label>
+<citation type="journal" xml:id="cit28">
+<author><familyName>Self</familyName>, <givenNames>T. H.</givenNames></author>, 
+<author><familyName>Brooks</familyName>, <givenNames>J. B.</givenNames></author>, 
+<author><familyName>Lieberman</familyName>, <givenNames>P.</givenNames></author> &amp; 
+<author><familyName>Ryan</familyName>, <givenNames>M. R.</givenNames></author> (<pubYear year="1983">1983</pubYear>) <articleTitle>The value of demonstration and role of the pharmacist in teaching the correct use of pressurized bronchodilators</articleTitle>. 
+<journalTitle>Canadian Medical Association Journal</journalTitle>, <vol>128</vol>, <pageFirst>129</pageFirst>–<pageLast>131</pageLast>.
+</citation>
+</bib>
+</bibliography>
+<appendix xml:id="s1-3">
+<title type="appendixName">Appendices</title>
+<section xml:id="ss18" xml:lang="en">
+<title type="main">Appendix I: patient interview</title>
+<p> <inlineGraphic alt="inline image" location="image_n/JEP_1369_fu1.gif" href=""/> </p>
+</section>
+<section xml:id="ss19" xml:lang="en">
+<title type="main">Appendix II: checklist – correct use of inhalation medication</title>
+<p> <inlineGraphic alt="inline image" location="image_n/JEP_1369_fu2.gif" href=""/> </p>
+</section>
+</appendix>
+</body>
+</component>

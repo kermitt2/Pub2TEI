@@ -9,11 +9,11 @@
     <!-- Références bibliographiques à la fin d'un article -->
     <!-- ref-list: NLM article, ScholarOne -->
 
-    <xsl:template match="ref-list | biblist | ce:bibliography">
+    <xsl:template match="ref-list | biblist | ce:bibliography | bibl">
         <div type="references">
             <xsl:apply-templates select="title | ce:section-title"/>
             <listBibl>
-                <xsl:apply-templates select="ref | citgroup | ce:bibliography-sec"/>
+                <xsl:apply-templates select="ref | citgroup | ce:bibliography-sec | bib"/>
             </listBibl>
         </div>
     </xsl:template>
@@ -331,11 +331,31 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="sb:author">
+    <xsl:template match="sb:author | refau">
         <author>
             <xsl:apply-templates/>
         </author>
     </xsl:template>
-
+	
+    <xsl:template match="bib">
+        <biblStruct>
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+			<analytic>
+				<xsl:apply-templates select="reftxt/atl"/>
+            	<xsl:apply-templates select="reftxt/refau"/>
+			</analytic>
+			<monogr>	
+				<xsl:apply-templates select="reftxt/jtl"/>
+				<imprint>
+					<xsl:apply-templates select="reftxt/vid"/>
+					<xsl:apply-templates select="reftxt/ppf"/>
+					<xsl:apply-templates select="reftxt/ppl"/>
+					<xsl:apply-templates select="reftxt/cd"/>
+				</imprint>	
+			</monogr>	
+        </biblStruct>
+    </xsl:template>
 
 </xsl:stylesheet>

@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><component xmlns="http://www.wiley.com/namespaces/wiley" version="2.0" type="serialArticle" xml:lang="en">
+
+<header>
+<publicationMeta level="product">
+<publisherInfo>
+<publisherName>Blackwell Publishing Ltd</publisherName>
+<publisherLoc>Oxford, UK</publisherLoc>
+</publisherInfo>
+<doi origin="wiley" registered="yes">10.1111/(ISSN)1399-3038</doi>
+<issn type="print">0905-6157</issn>
+<issn type="electronic">1399-3038</issn>
+<idGroup>
+<id type="product" value="PAI"/>
+<id type="publisherDivision" value="ST"/>
+</idGroup>
+<titleGroup>
+<title type="main" sort="PEDIATRIC ALLERGY IMMUNOLOGY">Pediatric Allergy and Immunology</title>
+</titleGroup>
+</publicationMeta>
+<publicationMeta level="part" position="05103">
+<doi origin="wiley">10.1111/pai.2011.22.issue-3</doi>
+<numberingGroup>
+<numbering type="journalVolume" number="22">22</numbering>
+<numbering type="journalIssue" number="3">3</numbering>
+</numberingGroup>
+<coverDate startDate="2011-05">May 2011</coverDate>
+</publicationMeta>
+<publicationMeta level="unit" type="article" position="7" status="forIssue">
+<doi origin="wiley">10.1111/j.1399-3038.2010.01105.x</doi>
+<idGroup>
+<id type="unit" value="PAI1105"/>
+</idGroup>
+<countGroup>
+<count type="pageTotal" number="7"/>
+</countGroup>
+<titleGroup>
+<title type="tocHeading1">ORIGINAL ARTICLES</title>
+<title type="tocHeading2"><i>Lower airways</i></title>
+<title type="articleCategory">ORIGINAL ARTICLE</title>
+</titleGroup>
+<copyright>© 2010 John Wiley &amp; Sons A/S</copyright>
+<eventGroup><event type="xmlConverted" agent="Converter:BPG_TO_WML3G version:2.4.8 mode:FullText" date="2011-04-19"/><event type="publishedOnlineEarlyUnpaginated" date="2010-10-20"/><event type="publishedOnlineFinalForm" date="2011-04-04"/><event type="firstOnline" date="2010-10-20"/><event type="xmlConverted" agent="Converter:WILEY_ML3G_TO_WILEY_ML3GV2 version:4.0.1" date="2014-03-20"/><event type="xmlConverted" agent="Converter:WML3G_To_WML3G version:4.1.7 mode:FullText,remove_FC" date="2014-11-03"/></eventGroup>
+<numberingGroup>
+<numbering type="pageFirst" number="298">298</numbering>
+<numbering type="pageLast" number="304">304</numbering>
+</numberingGroup>
+<correspondenceTo>Cevdet Ozdemir, Seher yildizi sokak 16/10 Etiler, 34337, Istanbul, Turkey&#8232;Tel.: +90 216 327 1010‐Ext 788&#8232;E‐mail: <email>cozdemir@superonline.com</email></correspondenceTo>
+<linkGroup>
+<link type="toTypesetVersion" href="file:PAI.PAI1105.pdf"/>
+
+</linkGroup>
+</publicationMeta>
+<contentMeta>
+<unparsedEditorialHistory>Accepted for publication 2 September 2010</unparsedEditorialHistory>
+<countGroup>
+<count type="figureTotal" number="2"/>
+<count type="tableTotal" number="1"/>
+</countGroup>
+<titleGroup>
+<title type="main">Serum immunoglobulin levels as a predictive factor for a better outcome of non‐atopic childhood asthma</title>
+<title type="shortAuthors">Baris et al.</title>
+<title type="short"><b>Serum immunoglobulins as a predictor of childhood asthma</b></title>
+</titleGroup>
+<creators>
+<creator creatorRole="author" xml:id="cr1" affiliationRef="#aff-1-1">
+<personName>
+<givenNames>Safa</givenNames>
+<familyName>Baris</familyName>
+</personName>
+</creator>
+<creator creatorRole="author" xml:id="cr2" affiliationRef="#aff-1-1">
+<personName>
+<givenNames>Elif</givenNames>
+<familyName>Karakoc‐Aydiner</familyName>
+</personName>
+</creator>
+<creator creatorRole="author" xml:id="cr3" affiliationRef="#aff-1-1">
+<personName>
+<givenNames>Ahmet</givenNames>
+<familyName>Ozen</familyName>
+</personName>
+</creator>
+<creator creatorRole="author" xml:id="cr4" affiliationRef="#aff-1-1">
+<personName>
+<givenNames>Cevdet</givenNames>
+<familyName>Ozdemir</familyName>
+</personName>
+</creator>
+<creator creatorRole="author" xml:id="cr5" affiliationRef="#aff-1-1">
+<personName>
+<givenNames>Nerin N.</givenNames>
+<familyName>Bahceciler</familyName>
+</personName>
+</creator>
+<creator creatorRole="author" xml:id="cr6" affiliationRef="#aff-1-1">
+<personName>
+<givenNames>Isil B.</givenNames>
+<familyName>Barlan</familyName>
+</personName>
+</creator>
+</creators>
+<affiliationGroup>
+<affiliation xml:id="aff-1-1" countryCode="TR">
+<unparsedAffiliation>Division of Pediatric Allergy and Immunology, Marmara University, Istanbul, Turkey</unparsedAffiliation>
+</affiliation>
+</affiliationGroup>
+<keywordGroup xml:lang="en">
+<keyword xml:id="k1">atopy</keyword>
+<keyword xml:id="k2">childhood asthma</keyword>
+<keyword xml:id="k3">hypogammaglobulinemia</keyword>
+<keyword xml:id="k4">transforming growth factor‐beta</keyword>
+</keywordGroup>
+<abstractGroup>
+<abstract type="main" xml:lang="en">
+<section xml:id="sec-sum-1">
+<p> <b>To cite this article:</b> Baris S, Karakoc‐Aydiner E, Ozen A, Ozdemir C, Bahceciler NN, Barlan IB. Serum immunoglobulin levels as a predictive factor for a better outcome of non‐atopic childhood asthma. <i>Pediatr Allergy Immunol</i> 2011; <b>22</b>: 298–304.</p>
+</section>
+<section xml:id="abs1-1">
+<title type="main">Abstract</title>
+<p>Childhood asthma is a heterogeneous condition with different phenotypes. Hereby, we aimed to study impact of serum immunoglobulin levels on clinical phenotypes and outcome of asthma. Seventy‐eight children (M: 26, F: 52) aged less than 10 yrs (mean = 8.56 ± 3.23 yrs) and diagnosed as mild‐moderate persistent asthma, followed up for at least 1 yr were included into the study. Asthmatic children were divided into two groups based on serum immunoglobulin levels at admission and were evaluated with respect to demographic data, allergic sensitization, symptom scores, medication usage, pulmonary functions, and non‐specific bronchial hyper‐reactivity. The age at onset of symptoms (40.88 ± 32.02 vs. 23.04 ± 26.97 months) was significantly younger in children with hypogammaglobulinemia (n = 28) compared to normogammaglobulinemia group (n = 50) (p = 0.016). Mean follow‐up duration was 3.8 ± 2.1 yrs. Atopic sensitization rate was higher in those with normal immunoglobulin levels (81.2% vs. 17.9%), (p &lt; 0.0001). Normal serum immunoglobulin levels were associated with atopic asthma (OR, 4.5; 95% confidence interval (CI): 2.0–10.1). For the prediction of atopic asthma, having normal immunoglobulin levels yielded predictive values of: sensitivity = 88.6%, specificity = 71.8%, positive predictive value = 81.1%, negative predictive value = 82.1%. Furthermore, percentages of atopic dermatitis and allergic conjunctivitis, elevated serum total IgE levels, eosinophilia, and bronchial hyper‐reactivity were more common in normogammaglobulinemia with asthma group (p = 0.040, p = 0.003, p = 0.024, p = 0.030, p = 0.040, respectively). Although marked reductions in asthma scores and inhaled corticosteroid usage were observed in both groups over time, the rate of decline was significantly higher and earlier in hypogammaglobulinemia group (p = 0.0001, p = 0.004, respectively). In conclusion, asthmatic children with hypogammaglobulinemia presented at an earlier age, with lower rates of atopy, and earlier clinical improvement accompanied with earlier discontinuation of inhaled corticosteroids than children with normal immunoglobulin levels. Our data demonstrated that in children currently named as early‐onset non‐atopic asthma, hypogammaglobulinemia might be accompanying, providing evidence for a different phenotype of childhood asthma.</p>
+</section>
+</abstract>
+</abstractGroup>
+</contentMeta>
+<noteGroup>
+<note xml:id="fn1">
+<p>Authors declare no conflict of interest.</p>
+</note>
+</noteGroup>
+</header>
+<body sectionsNumbered="no">
+<section xml:id="ss1" xml:lang="en">
+<p>Asthma is a heterogeneous condition with different clinical presentations that vary with age, gender, genetic background, and environmental exposures. The general consensus now emerging is that childhood asthma presents with different phenotypes and subphenotypes, rather than a single, uniform disease (<link href="#b1">1</link>). It was suggested that these various and overlapping phenotypes might represent distinct time points in a single underlying pathological process – airway inflammation – in people with individual susceptibility to different triggers (<link href="#b2">2</link>).</p>
+<p>Several epidemiologically distinct wheezing phenotypes in early childhood have been described. Previously, three longitudinal patterns (early, late, and persistent wheezers) were identified among children between 0 to 6 yrs of age (<link href="#b3">3</link>). More recently, six different longitudinal patterns of wheezing between birth and the age of 13 yrs were described adding further complexity to the previous classification (<link href="#b1">1</link>). In addition to exposure to the offending allergen, recurrent respiratory tract infections have been suggested to be one of the major factors triggering bronchial hyper‐reactivity and asthma exacerbations (<link href="#b4 #b5">4, 5</link>). This association has been supported by the knowledge of high prevalence of asthma seen in various immune deficiency disorders (<link href="#b6 #b7 #b8">6–8</link>), in which recurrent respiratory tract infections predominate the clinical picture. Therefore, childhood hypogammaglobulinemia leading to recurrent upper and lower respiratory tract infections, and bronchial hyper‐reactivity related with respiratory tract infections may have an impact on the outcome of childhood asthma (<link href="#b9">9</link>).</p>
+<p>To date, a number of studies have described high frequency of asthma among children with hypogammaglobulinemia (<link href="#b6 #b10">6, 10</link>). Most of those researches had a particular emphasis on other aspects of hypogammaglobulinemia and none have specifically addressed phenotypic features of hypogammaglobulinemia‐associated asthma. In this study, we aimed to investigate clinical features of asthma associated with hypogammaglobulinemia with respect to those asthmatics with normal immunoglobulin levels.</p>
+</section>
+<section xml:id="ss2" xml:lang="en">
+<title type="main">Material and methods</title>
+<section xml:id="ss3" xml:lang="en">
+<title type="main">Patients and inclusion criteria</title>
+<p>We reviewed medical records of 352 children who had been followed‐up at the Marmara University Pediatric Allergy and Immunology clinic with diagnosis of mild–moderate persistent asthma according to Global Initiative for Asthma (GINA) guidelines (<link href="#b11">11</link>). Among patients, we analyzed those children (n = 78) (i) with available serum immunoglobulin levels measured during the follow‐up, (ii) who were followed‐up for at least 1 yr, (iii) who had completed symptom and medication scores during follow‐up, and (iv) who were less than 10 yrs old at referral. Thereafter, asthmatic children were divided into two groups based on the serum immunoglobulin levels at admission. Those with normal immunoglobulin levels were named as normogammaglobulinemia group (NGG), while asthmatic children with low immunoglobulin levels represented the hypogammaglobulinemia (HGG) group. HGG consisted of children with unclassified hypogammaglobulinemia who had only asthmatic symptoms without any chronic lung disease. None of those patients ever received prophylactic antibiotics or intravenous immunoglobulin treatment for infections previously. Definition of unclassified hypogammaglobulinemia was made based on the following criteria: (i) a serum IgG level and/or more of the immunoglobulin major classes below ‐2 standard deviation (s.d.) of the age defined norms, (ii) normal production of specific antibody to pneumococcal vaccine and isohemagglutinin, (iii) normal cellular immunity, and (iv) persistent low immunoglobulin levels during follow‐up (<link href="#b12">12</link>). Those with common variable immunodeficiency and selective IgA deficiency, immunodeficiencies secondary to other systemic diseases (chromosomal abnormalities, lymphoma, thymoma, asplenia, protein‐losing enteropathy, nephrotic syndrome) or drugs, and hypogammaglobulinemia associated with genetic syndromes, hypogammaglobulinemia associated with cellular immune deficiencies, and primary immunodeficiencies because of defined underlying causes (e.g., Bruton agammaglobulinemia, CD40 ligand deficiency, ataxia‐telangiectasia) were not included into the study.</p>
+<p>Clinical and laboratory data of subjects including demographic features, allergic sensitization, symptom scores, medication usage, pulmonary functions, and non‐specific bronchial hyper‐reactivity were recorded in a data‐based computer program. Children in both groups were also subdivided as atopic and non‐atopic for comparisons. Finally, peripheral blood mononuclear cells were isolated, cultured and T helper (Th)1, Th2, T regulatory, and Th17 cytokine levels were determined in randomly selected NGG and HGG atopic children.</p>
+</section>
+<section xml:id="ss4" xml:lang="en">
+<title type="main">Clinical follow‐up</title>
+<p>During 3.8 ± 2.1 yrs follow‐up period, patients were assessed at admission and re‐evaluated periodically at intervals of 3–6 months.</p>
+</section>
+<section xml:id="ss5" xml:lang="en">
+<title type="main">Demographic data</title>
+<p>Age at onset of symptoms, age at diagnosis, gender, presence of concomitant allergic manifestations, presence of either recurrent and/or severe infections, a positive family history of atopy, annual attack numbers, and number of hospitalizations for asthma were recorded. Children with recurrent infections were defined as more than six episodes of upper respiratory infections and/or more than three episodes of acute otitis media and/or more than one episode of acute sinusitis and/or more than one episode of bronchopneumonia annually. Additionally, history of severe infections such as severe pneumonia, organ abscesses, meningitis, septicemia, and severe sinusitis were recorded.</p>
+</section>
+<section xml:id="ss6" xml:lang="en">
+<title type="main">Symptom scoring and medication status</title>
+<p>Mean annual duration of inhaled corticosteroid usage (months/year) and mean daily inhaled corticosteroid dose (μg budesonide/day) of subjects were calculated. All patients were asked to complete daily asthma symptom diaries for their respiratory complaints (cough, wheezing, and breathlessness), which were based on a 3‐point scoring system. Zero point stands for no symptoms, whereas 1 point for mild, 2 points for moderate, and 3 points for severe symptoms. Symptom diaries were completed for at least 3 months following referral to our unit as well as the last 3 months of follow‐up.</p>
+</section>
+<section xml:id="ss7" xml:lang="en">
+<title type="main">Atopy</title>
+<p>Atopic status was evaluated at the age of diagnosis and at the end of follow‐up period by skin‐prick testing. Skin‐prick test was performed with 21 common aeroallergens including <i>Dermatophagoides farinae</i>, <i>Dermatophagoides pteronyssinus</i>, Alternaria, Aspergillus mix, Cladosporium, Penicillium mix, Betulaceae, <i>Aesculus ippo, Olea europaea, Secale ceraale, Triticum vulg, Zea mays,</i> mixture of five grasses (bent grass, Bermuda grass, rye grass, timothy, wild oat), Plantago, Artemisia, Parietaria, feather mixture (duck, goose, hen), cockroach, cat hair, and dog hair (Alk‐Abello, Lainate, Italy). Histamine and dihydrochloride saline were used as positive and negative controls, respectively. A drop of each allergen extract was introduced via lancets into the skin on the volar surface of the forearm. After 15 min, the wheal reaction was measured as the mean of the longest diameter and the length of the perpendicular line through its middle. A wheal size ≥3 mm in the presence of non‐reactive saline response was considered positive (<link href="#b13">13</link>).</p>
+<p>Serum total IgE level was measured by Immulite method (Euro/DPC, Llnberis, UK). Absolute eosinophil counts were recorded and considering 400 cell/μl as cut off for eosinophilia (<link href="#b14">14</link>).</p>
+</section>
+<section xml:id="ss8" xml:lang="en">
+<title type="main">Pulmonary function and non‐specific bronchial provocation tests</title>
+<p>Pulmonary function tests were performed by means of maximal forced expiratory volume curves (Zan Flowhandy II; Zan Messgerate GmbH, Oberthulba, Germany). The patients used nose clips and were coached through standard forced expiratory maneuvers. Patients in standing position were asked to take as deep a breath as possible and blow as quick and hard as she or he can into the mouthpiece. The best of three successful maneuvers was recorded and expressed as the percentage of predicted values for gender, age, and height as FEV1, forced vital capacity (FVC), forced mid‐expiratory flow rate (FEF25–75%), and peak expiratory flow rate (PEF) (<link href="#b15">15</link>). Non‐specific challenge was started from 0.0625 mg/ml methacholine dose. The dose was doubled until the methacholine dose causing a 20% fall in baseline FEV1 (PC20) or when reached to the maximum dose of 8 mg/ml (<link href="#b16">16</link>).</p>
+</section>
+<section xml:id="ss9" xml:lang="en">
+<title type="main">Determination of serum immunoglobulin levels</title>
+<p>Serum immunoglobulin levels (IgG, IgA, IgM, IgG subclasses) were analyzed by nephelometric method (BN ProSpec System, Dade Behring Marburg Gmbh, Marburg, Germany) and compared to age‐matched serum immunoglobulin reference ranges of Turkish children (<link href="#b17">17</link>). We analyzed the association between normo/hypogammaglobulinemia and asthma phenotypes (atopic vs. non‐atopic), and we calculated sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV) values and also investigated whether serum immunoglobulin levels have a predictive role in detecting those phenotypes.</p>
+</section>
+<section xml:id="ss10" xml:lang="en">
+<title type="main">Peripheral blood mononuclear cell isolation, culture, and cytokine measurements</title>
+<p>From randomly selected cases, peripheral blood mononuclear cells (PBMC) were isolated by Ficoll–Hypaque density gradient centrifugation and then suspended in RPMI 1640 with 2 m<sc>m l</sc>‐glutamine (Gibco, Invitrogen, Grand Island, NY, USA), 100 U/ml penicillin/streptomycin, and 10% fetal calf serum (Sigma Chem Co., St Louis, MO, USA). PBMCs (6 × 105) were incubated with and without 5 μg/ml recombinant Der‐p‐1 (Indoor Biotechnologies Ltd, Cardiff, UK) in 1000 μl each in 48‐well plates (Costar Corp., Cambridge, MA, USA) at 37°C with 5% CO<sub>2</sub> for 5 days. The supernatants were collected and stored at −20°C until tested. IL‐4, IL‐5, IL‐10, IL‐13, IFN‐γ, TGF‐β, and IL‐17 (Invitrogen<sup>®</sup>, Camarillo, CA, USA) levels of PBMC culture supernatants were determined using commercial human ELISA kit according to the manufacturer’s instructions.</p>
+</section>
+<section xml:id="ss11" xml:lang="en">
+<title type="main">Statistical analyses</title>
+<p>Data were described as frequencies, median, and means with standard deviations (s.d.) unless otherwise indicated. The normality Kolmogorov–Smirnov test was performed to determine whether continuous variables were normally distributed. Data were analyzed using the Student’s t‐tests, analysis of variance (<sc>anova</sc>) with Tukey honestly significant differences, Mann–Whitney <i>U</i>‐test, Wilcoxon Signed Ranks Test, and Friedman test. Differences between groups were assessed by chi‐squared analysis for categorical variables. All analyses were performed using Statistical Package for the Social Sciences (<sc>spss</sc>) program (Version 16.0; SPSS Inc., Chicago, IL, USA) using default settings. <i>P</i> &lt; 0.05 was set as the level of statistical significance.</p>
+</section>
+</section>
+<section xml:id="ss12" xml:lang="en">
+<title type="main">Results</title>
+<section xml:id="ss13" xml:lang="en">
+<title type="main">Demographic data</title>
+<p>Seventy‐eight asthmatic children (M: 26, F: 52; mean age: 8.56 ± 3.23 yrs) who met to validate criteria were included into the study. Of those, at onset, 50 had normal serum immunoglobulin levels consisted the NGG group, while 28 had low serum immunoglobulin levels consisted the HGG group. Mean follow‐up duration was 3.8 ± 2.1 yrs. The mean ages at onset of symptoms and at diagnosis were significantly lower in HGG groups (p = 0.016, p = 0.035, respectively). At the end of study, there were two patients in NGG and two patients in HGG dropped‐out from the study because of lost follow‐up. Baseline serum immunoglobulin levels, as well as demographic data and clinical characteristics of patients are presented in <link href="#t1">Table 1</link>.</p>
+<tabular xml:id="t1">
+<label>1</label>
+<title type="main"> The demographics and clinical characteristics of patients</title>
+<table frame="topbot">
+<tgroup cols="4" align="left">
+<colspec colname="col1" colnum="1"/>
+<colspec colname="col2" colnum="2"/>
+<colspec colname="col3" colnum="3"/>
+<colspec colname="col4" colnum="4"/>
+<thead valign="bottom">
+<row rowsep="1">
+<entry/>
+<entry>Normogammaglobulinemia (n = 50)</entry>
+<entry>Hypogammaglobulinemia (n = 28)</entry>
+<entry>p value</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row>
+<entry nameend="col4" namest="col1">Demographic data</entry>
+</row>
+<row>
+<entry> Age at presentation (months)</entry>
+<entry>40.88 ± 32.02</entry>
+<entry>23.04 ± 26.97</entry>
+<entry>0.016*</entry>
+</row>
+<row>
+<entry> Age at diagnosis (months)</entry>
+<entry>72.56 ± 36.97</entry>
+<entry>53.96 ± 37.29</entry>
+<entry>0.036*</entry>
+</row>
+<row>
+<entry> Gender, female (%)</entry>
+<entry>35 (70.0)</entry>
+<entry>17 (60.7)</entry>
+<entry>0.400†</entry>
+</row>
+<row>
+<entry nameend="col4" namest="col1">Atopic status</entry>
+</row>
+<row>
+<entry> Family history of atopy (%)</entry>
+<entry>19 (38.8)</entry>
+<entry>11 (40.7)</entry>
+<entry>0.860†</entry>
+</row>
+<row>
+<entry> Atopic dermatitis (%)</entry>
+<entry>7 (14.3)</entry>
+<entry>0</entry>
+<entry>0.040†</entry>
+</row>
+<row>
+<entry> Allergic rhinitis (%)</entry>
+<entry>42 (85.7)</entry>
+<entry>21 (75)</entry>
+<entry>0.290†</entry>
+</row>
+<row>
+<entry> Allergic conjunctivitis (%)</entry>
+<entry>12 (24.8)</entry>
+<entry>0</entry>
+<entry>0.003†</entry>
+</row>
+<row>
+<entry> Food allergy (%)</entry>
+<entry>2 (4)</entry>
+<entry>0</entry>
+<entry>0.530†</entry>
+</row>
+<row>
+<entry> Atopy (%)</entry>
+<entry>39 (81.2)</entry>
+<entry>5 (17.9)</entry>
+<entry>0.0001†</entry>
+</row>
+<row>
+<entry> Eosinophilia, &gt;400 cell/μl (%)</entry>
+<entry>25 (78.1)</entry>
+<entry>7 (21.9)</entry>
+<entry>0.030†</entry>
+</row>
+<row>
+<entry nameend="col4" namest="col1">Infections</entry>
+</row>
+<row>
+<entry> Recurrent infections (%)</entry>
+<entry>13 (26.5)</entry>
+<entry>21 (75)</entry>
+<entry>0.0001†</entry>
+</row>
+<row>
+<entry> Severe infections (%)</entry>
+<entry>4 (8.2)</entry>
+<entry>8 (28.6)</entry>
+<entry>0.020†</entry>
+</row>
+<row>
+<entry nameend="col4" namest="col1">Immunoglobulin levels</entry>
+</row>
+<row>
+<entry> Serum IgA (mg/dl)</entry>
+<entry>112.70 ± 50.76</entry>
+<entry>56.89 ± 33.08</entry>
+<entry>0.000†</entry>
+</row>
+<row>
+<entry> Serum IgM (mg/dl)</entry>
+<entry>120.95 ± 51.59</entry>
+<entry>69.04 ± 50.10</entry>
+<entry>0.008†</entry>
+</row>
+<row>
+<entry> Serum IgG (mg/dl)</entry>
+<entry>974.56 ± 300.92</entry>
+<entry>723.54 ± 233.55</entry>
+<entry>0.0001†</entry>
+</row>
+<row>
+<entry> Serum IgE (IU/ml) (median)</entry>
+<entry>155 (16–2000)</entry>
+<entry>65 (3–1090)</entry>
+<entry>0.024‡</entry>
+</row>
+<row>
+<entry nameend="col4" namest="col1">Pulmonary function and bronchial provocation tests</entry>
+</row>
+<row>
+<entry> %FEV1 (mean ± s.d.)</entry>
+<entry>95.9 ± 15.8</entry>
+<entry>97.5 ± 12.4</entry>
+<entry>0.740*</entry>
+</row>
+<row>
+<entry> %FVC (mean ± s.d.)</entry>
+<entry>92.2 ± 17.2</entry>
+<entry>88.2 ± 11.7</entry>
+<entry>0.469*</entry>
+</row>
+<row>
+<entry> %PEF (mean ± s.d.)</entry>
+<entry>83.0 ± 20.8</entry>
+<entry>96.08 ± 25.9</entry>
+<entry>0.096*</entry>
+</row>
+<row>
+<entry> %PEF 25–75 (mean ± s.d.)</entry>
+<entry>99.0 ± 24.7</entry>
+<entry>114.7 ± 27.6</entry>
+<entry>0.079*</entry>
+</row>
+<row>
+<entry> BHR positive (%)§</entry>
+<entry>10 (20)</entry>
+<entry>3 (10)</entry>
+<entry>0.040†</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<noteGroup>
+<note xml:id="t1_note93" numbered="no">
+<p>FVC, forced vital capacity; PEF, peak expiratory flow rate. *Unpaired <i>t</i>‐test; †Chi‐squared test; ‡Mann–Whitney <i>U</i>‐test; §BHR, bronchial provocation test at the end of study.</p>
+</note>
+</noteGroup>
+</tabular>
+</section>
+<section xml:id="ss14" xml:lang="en">
+<title type="main">Atopic status</title>
+<p>Skin‐prick test positivity and sensitization to house dust mite (HDM) were significantly more common in NGG group (n = 39; 81.2% vs. n = 5; 17.9%), (p &lt; 0.0001). Normal serum immunoglobulin levels were associated with atopic asthma (OR, 4.5; 95%CI: 2.0–10.1). Upon detecting this association, we investigated predictive role of having normal immunoglobulin levels for the detection of atopic phenotype of asthma. This analysis revealed a sensitivity of 88.6%, specificity of 71.8%, PPV of 81.1%, and NPV of 82.1%. Likewise, percentages of atopic dermatitis (n = 7; 14.3% in NGG group, none in HGG group), (p = 0.040) and allergic conjunctivitis (n = 12; 24.8% in NGG group, none in HGG group), (p = 0.003) were significantly higher in NGG group, while percentages of allergic rhinitis (n = 42; 85.7% in NGG group, 21 (75%) in HGG group; p = 0.290) and food allergy (n = 2; 4% in NGG group, none in HGG group; p = 0.530) were similar in both groups. Serum total IgE levels and eosinophilia were statistically higher in NGG group (<link href="#t1">Table 1</link>).</p>
+</section>
+<section xml:id="ss15" xml:lang="en">
+<title type="main">Infections during follow‐up</title>
+<p>In both NGG and HGG groups, none of the patients had severe infections such as sepsis, osteomyelitis, and meningitis except pneumonia. The number of recurrent (n = 13; 26.5% in NGG group, n = 21; 75% in HGG group) and severe infections (n = 4; 8.2% in NGG group, n = 8; 28.6% in HGG group) showed a significant difference between the two groups (p ≤ 0.0001, p = 0.020, respectively), (<link href="#t1">Table 1</link>). Decreased IgG<sub>3</sub> levels were found to be more frequent in HGG group (n = 25; 92.6%), (p &lt; 0.0001). Those patients were less atopic (p &lt; 0.0001), experiencing more frequent recurrent (p &lt; 0.0001), and severe infections (p = 0.010) compared to patients with normal IgG<sub>3</sub> levels.</p>
+</section>
+<section xml:id="ss16" xml:lang="en">
+<title type="main">Outcome of asthma</title>
+<p>In both NGG and HGG groups, marked reductions in asthma scores (from 0.80 ± 0.54 to 0.46 ± 0.41 in NGG group, from 0.5 ± 0.28 to 0.26 ± 0.21 in HGG group; p = 0.001 in both groups) and inhaled corticosteroid usage (from 351.1 ± 126.8 to 221.1 ± 169.2 mcg in NGG group, from 345.6 ± 152.5 to 171.4 ± 232.2 mcg in HGG group; p = 0.008, p = 0.005, respectively) were observed throughout follow‐up period. The rate of decline was significantly higher and earlier in the HGG group compared to NGG group (p = 0.0001, p = 0.004 vs. p = 0.004, p = 0.029, respectively) (<link href="#f1">Fig. 1</link>).</p>
+<figure xml:id="f1">
+<label>1</label>
+<mediaResourceGroup>
+<mediaResource alt="image" href="urn:x-wiley:09056157:media:PAI1105:PAI_1105_f1"/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webOriginal" href=""/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webLoRes" href=""/>
+</mediaResourceGroup>
+<caption>
+<p> (a) Daily symptom scores of study groups in the first and 4th years. (b) Daily ICS doses. (c) Trend in the dose of ICS needed to control asthma. NGG, Normogammaglobulinemia group; HGG, Hypogammaglobulinemia group.</p>
+</caption>
+</figure>
+<p>The pulmonary function tests, both at admission and at the end of follow‐up, showed no significant difference between two groups. At the end of the study, bronchial hyperresponsiveness to methacholine yielded a significant difference, with higher positivity in the NGG group (n = 10; 20% vs. n = 3; 10%, p = 0.040).</p>
+</section>
+<section xml:id="ss17" xml:lang="en">
+<title type="main">Cytokine responses</title>
+<p>Der‐p‐1‐induced cytokine levels were evaluated in a randomly selected subpopulation of NGG (n = 7) and HGG (n = 6) children who were sensitized to HDM. Interestingly, we observed that TGF‐β measured in supernatants of unstimulated PBMCs in the HGG atopic group was significantly higher than NGG atopic children (p = 0.005), (<link href="#f2">Fig. 2</link>). Also, Der‐p‐1‐stimulated TGF‐β levels tended to be higher in this group (p = 0.090). Der‐p‐1‐stimulated and Der‐p‐1‐unstimulated PBMCs from each study group showed no statistically significant differences for other cytokines measured interleukin (IL)‐4, IL‐5, IL‐10, IL‐13, IL‐17, and interferon (IFN)‐γ) (data not shown).</p>
+<figure xml:id="f2">
+<label>2</label>
+<mediaResourceGroup>
+<mediaResource alt="image" href="urn:x-wiley:09056157:media:PAI1105:PAI_1105_f2"/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webOriginal" href=""/>
+<mediaResource alt="image" mimeType="image/gif" rendition="webLoRes" href=""/>
+</mediaResourceGroup>
+<caption>
+<p> TGF‐β levels of groups. HGG, Hypogammaglobulinemia group; NGG, Normogammaglobulinemia group.</p>
+</caption>
+</figure>
+</section>
+</section>
+<section xml:id="ss18" xml:lang="en">
+<title type="main">Discussion</title>
+<p>The current study demonstrated that in children with asthma accompanied by hypogammaglobulinemia, symptoms initiate at an earlier age with less frequency of atopy when compared to their peers with normal serum immunoglobulin levels. However, during the course of the disease, a significant decline was detected in HGG group both in asthma symptom scores and use of inhaled corticosteroids. Children with NGG were more frequently atopic with less resolution of symptoms. TGF‐β levels of atopic children with hypogammaglobulinemia were significantly higher than the NGG atopic counterparts.</p>
+<p>Several birth cohorts evaluated the phenotypical features of wheezing during childhood. The phenotype of wheezing, which is associated with viral infections, is commonly seen during early childhood, especially at the first year of life. Wheezing episodes are mostly because of viral respiratory infections that will soon disappear in early school years (<link href="#b3 #b18 #b19">3, 18, 19</link>). These children generally have normal lung functions and are commonly non‐atopic (<link href="#b20">20</link>). In our study population, children with hypogammaglobulinemia appeared to have less atopy and an early onset of asthma, which resolved earlier than atopic cases, which resembles the phenotype of viral induced wheezing. It was previously reported that there was an inverse relationship between the frequency of infections in asthmatic children in the first 3 years of life and atopy (<link href="#b19 #b20">19, 20</link>). On the other hand, this relationship has not been studied based on immunoglobulin levels.</p>
+<p>Our data showed a significant difference between NGG and HGG groups in regard to bronchial hyper‐reactivity (BHR). Atopy could be a major contributing factor for the higher methacholine responsiveness in the NGG group. As previously demonstrated, atopic asthma cases were shown to have greater BHR to methacholine than non‐atopic ones (<link href="#b21">21</link>). According to Tucson children’s respiratory study data (<link href="#b22">22</link>), children with atopic asthma were associated with both methacholine responsiveness and increased peak flow variability; however, non‐atopic group was only associated with increased peak flow variability. These differences may point toward separate pathogenetic mechanisms underlying BHR in non‐atopic cases and allergic airway inflammation. In HGG group, probably because of increased frequency of infections, children are more prone to development of transient acute airway obstruction in relation to infection.</p>
+<p>Hypogammaglobulinemia was associated with higher frequency of recurrent infections and earlier outgrowing of asthma symptoms. Immunologic assessment of hypogammaglobulinemia patients revealed that TGF‐β production of lymphocytes in unstimulated condition was higher compared to that of normogammaglobulinemia group. Whether hypogammaglobulinemia <i>per se</i> or the recurrent infections result in these immunologic alterations and accompanying phenotypic differences between those two groups remains unknown. A plausible explanation might be that an infection‐mediated induction of T cell responses may be contributing to the generation of TGF‐β. It is known that this cytokine reduces proinflammatory cytokine release from various inflammatory cells (<link href="#b23 #b24">23, 24</link>).</p>
+<p>In patients with asthma, because of enhanced inflammation, secretion of TGF‐β was increased. TGF‐β regulates the airway remodeling process in epithelial mesenchymal trophic unit. In the airway remodeling, structural changes were characterized by epithelial goblet cell hyperplasia and metaplasia, proliferation in bronchial smooth muscles and angiogenesis, and deposition of collagens (<link href="#b25">25</link>). TGF‐β is mainly cytokine for regulatory T cells in the inhibition of the inflammation and impaired excessive secretion leads to airway remodeling. Recently, some studies showed that regulatory T‐cell function has been impaired in some allergic patients (<link href="#b26">26</link>). With this regard, achieving desirable levels of TGF‐β is important for regulating the airway remodeling process. On‐the‐side interesting observation, TGF‐β production of lymphocytes was found higher in NGG group, which might be related with early recovery of disease. Further studies are essential to determine the role of TGF‐β allergic disease.</p>
+<p>Based on long‐term follow‐up studies, complete resolution of symptoms was observed in approximately 75% of asthmatic children by adulthood (<link href="#b27">27</link>). Among the factors known to have impact on the outcome of childhood asthma, one is the severity of disease, which determines deteriorated lung functions in adulthood. The Melbourne Epidemiological Study of Childhood Asthma have demonstrated that at the age of 42, lung function in those with episodic asthma did not differ significantly from controls (<link href="#b28">28</link>), while subjects with persistent asthma had significantly reduced lung function. Atopy, duration of the illness, and tobacco exposure are the remaining risk factors (<link href="#b29">29</link>). Also, impact of early prescription of inhaled corticosteroids on the clinical course of asthma has been pointed out in several studies (<link href="#b30">30</link>). In our study, during the follow‐up, a significant decline in inhaled corticosteroid usage and asthma symptom scores in both groups was detected, more markedly in the HGG group. Our data provided evidence that early assessment of serum immunoglobulin levels may be useful in detecting the clinical course of childhood asthma.</p>
+<p>One of the limitations of our study is the small sample size in which cytokine responses could be measured. By detecting elevated TGF‐ β levels in atopic HGG group, we proposed that early recovery could be related with this condition. On the other hand, it would be more valuable to demonstrate the proinflammatory cytokine responses in asthmatic airways by induced sputum or bronchoalveolar lavage sampling.</p>
+<p>In conclusion, low immunoglobulin levels can be detected in a significant proportion of children with asthma, especially in non‐atopic cases. In the presence of hypogammaglobulinemia, children present earlier have more frequent respiratory infections and outgrow their symptoms at a younger age. Our data provide evidence for the first time that hypogammaglobulinemia‐associated asthma represents a distinct entity among asthma phenotypes.</p>
+</section>
+<bibliography xml:id="ss19" style="numbered">
+<title type="main">References</title>
+<bib xml:id="b1">
+<label>1</label>
+<citation type="journal" xml:id="cit1">
+<author><familyName>Matricardi</familyName> <givenNames>PM</givenNames></author>, 
+<author><familyName>Illi</familyName> <givenNames>S</givenNames></author>, 
+<author><familyName>Grüber</familyName> <givenNames>C</givenNames></author>, <i>et al.</i> 
+<articleTitle>Wheezing in childhood: incidence, longitudinal patterns and factors predicting persistence</articleTitle>. 
+<journalTitle>Eur Respir J</journalTitle> 
+<pubYear year="2008">2008</pubYear>: <vol>32</vol>: <pageFirst>585</pageFirst>–<pageLast>92</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b2">
+<label>2</label>
+<citation type="journal" xml:id="cit2">
+<groupName>E<sc>ditorial</sc></groupName>. 
+<articleTitle>A plea to abandon asthma as a disease concept</articleTitle>. 
+<journalTitle>Lancet</journalTitle> 
+<pubYear year="2006">2006</pubYear>: <vol>368</vol>: <pageFirst>705</pageFirst>.
+</citation>
+</bib>
+<bib xml:id="b3">
+<label>3</label>
+<citation type="journal" xml:id="cit3">
+<author><familyName>Martinez</familyName> <givenNames>FD</givenNames></author>, 
+<author><familyName>Wright</familyName> <givenNames>AL</givenNames></author>, 
+<author><familyName>Taussig</familyName> <givenNames>LM</givenNames></author>, <i>et al.</i> 
+<articleTitle>Asthma and wheezing in the first six years of life</articleTitle>. 
+<journalTitle>N Engl J Med</journalTitle> 
+<pubYear year="1995">1995</pubYear>: <vol>332</vol>: <pageFirst>133</pageFirst>–<pageLast>8</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b4">
+<label>4</label>
+<citation type="journal" xml:id="cit4">
+<author><familyName>Oddy</familyName> <givenNames>WH</givenNames></author>, 
+<author><familyName>
+                De Klerk</familyName> <givenNames>NH</givenNames></author>, 
+<author><familyName>Sly</familyName> <givenNames>PD</givenNames></author>, 
+<author><familyName>Holt</familyName> <givenNames>PG</givenNames></author>. 
+<articleTitle>The effects of respiratory infections, atopy, and breastfeeding on childhood asthma</articleTitle>. 
+<journalTitle>Eur Respir J</journalTitle> 
+<pubYear year="2002">2002</pubYear>: <vol>19</vol>: <pageFirst>899</pageFirst>–<pageLast>905</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b5">
+<label>5</label>
+<citation type="journal" xml:id="cit5">
+<author><familyName>Sly</familyName> <givenNames>PD</givenNames></author>, 
+<author><familyName>Boner</familyName> <givenNames>AL</givenNames></author>, 
+<author><familyName>Björksten</familyName> <givenNames>B</givenNames></author>, <i>et al.</i> 
+<articleTitle>Early identification of atopy in the prediction of persistent asthma in children</articleTitle>. 
+<journalTitle>Lancet</journalTitle> 
+<pubYear year="2008">2008</pubYear>: <vol>372</vol>: <pageFirst>1100</pageFirst>–<pageLast>6</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b6">
+<label>6</label>
+<citation type="journal" xml:id="cit6">
+<author><familyName>Dogu</familyName> <givenNames>F</givenNames></author>, 
+<author><familyName>Ikinciogullari</familyName> <givenNames>A</givenNames></author>, 
+<author><familyName>Babacan</familyName> <givenNames>E</givenNames></author>. 
+<articleTitle>Transient hypogammaglobulinemia of infancy and early childhood: outcome of 30 cases</articleTitle>. 
+<journalTitle>Turk J Pediatr</journalTitle> 
+<pubYear year="2004">2004</pubYear>: <vol>46</vol>: <pageFirst>120</pageFirst>–<pageLast>4</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b7">
+<label>7</label>
+<citation type="journal" xml:id="cit7">
+<author><familyName>Papadopoulou</familyName> <givenNames>A</givenNames></author>, 
+<author><familyName>Mermiri</familyName> <givenNames>D</givenNames></author>, 
+<author><familyName>Taousani</familyName> <givenNames>S</givenNames></author>, 
+<author><familyName>Triga</familyName> <givenNames>M</givenNames></author>, 
+<author><familyName>Nicolaidou</familyName> <givenNames>P</givenNames></author>, 
+<author><familyName>Priftis</familyName> <givenNames>KN</givenNames></author>. 
+<articleTitle>Bronchial hyper‐responsiveness in selective IgA deficiency</articleTitle>. 
+<journalTitle>Pediatr Allergy Immunol</journalTitle> 
+<pubYear year="2005">2005</pubYear>: <vol>16</vol>: <pageFirst>495</pageFirst>–<pageLast>500</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b8">
+<label>8</label>
+<citation type="journal" xml:id="cit8">
+<author><familyName>Agondi</familyName> <givenNames>RC</givenNames></author>, 
+<author><familyName>Barros</familyName> <givenNames>MT</givenNames></author>, 
+<author><familyName>Rizzo</familyName> <givenNames>LY</givenNames></author>, 
+<author><familyName>Kalil</familyName> <givenNames>J</givenNames></author>, 
+<author><familyName>Giavina‐Bianchi</familyName> <givenNames>P</givenNames></author>. 
+<articleTitle>Allergic asthma in patients with common variable immunodeficiency</articleTitle>. 
+<journalTitle>Allergy</journalTitle> 
+<pubYear year="2010">2010</pubYear>: <vol>65</vol>: <pageFirst>510</pageFirst>–<pageLast>5</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b9">
+<label>9</label>
+<citation type="journal" xml:id="cit9">
+<author><familyName>Kotaniemi‐Syrjänen</familyName> <givenNames>A</givenNames></author>, 
+<author><familyName>Reijonen</familyName> <givenNames>TM</givenNames></author>, 
+<author><familyName>Korhonen</familyName> <givenNames>K</givenNames></author>, 
+<author><familyName>Waris</familyName> <givenNames>M</givenNames></author>, 
+<author><familyName>Vainionpää</familyName> <givenNames>R</givenNames></author>, 
+<author><familyName>Korppi</familyName> <givenNames>M</givenNames></author>. 
+<articleTitle>Wheezing due to rhinovirus infection in infancy: bronchial hyperresponsiveness at school age</articleTitle>. 
+<journalTitle>Pediatr Int</journalTitle> 
+<pubYear year="2008">2008</pubYear>: <vol>50</vol>: <pageFirst>506</pageFirst>–<pageLast>10</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b10">
+<label>10</label>
+<citation type="journal" xml:id="cit10">
+<author><familyName>Walker</familyName> <givenNames>AM</givenNames></author>, 
+<author><familyName>Kemp</familyName> <givenNames>AS</givenNames></author>, 
+<author><familyName>Hill</familyName> <givenNames>DJ</givenNames></author>, 
+<author><familyName>Shelton</familyName> <givenNames>MJ</givenNames></author>. 
+<articleTitle>Features of transient hypogammaglobulinemia in infants screened for immunological abnormalities</articleTitle>. 
+<journalTitle>Arch Dis Child</journalTitle> 
+<pubYear year="1994">1994</pubYear>: <vol>70</vol>: <pageFirst>183</pageFirst>–<pageLast>6</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b11">
+<label>11</label>
+<citation type="book" xml:id="cit11">
+<groupName>N<sc>ational</sc> I<sc>nstitutes of</sc> H<sc>ealth</sc></groupName>. 
+<bookTitle>Global Initiative for Asthma. Global Strategy for Asthma Management and Prevention Revision</bookTitle>. 2002: <publisherName>National Institutes of Health, National Heart, Lung, and Blood Institute</publisherName>. NIH Publication Number 02‐3659, Bethesda, MD, USA.
+</citation>
+</bib>
+<bib xml:id="b12">
+<label>12</label>
+<citation type="journal" xml:id="cit12">
+<author><familyName>Kutukculer</familyName> <givenNames>N</givenNames></author>, 
+<author><familyName>Gulez</familyName> <givenNames>N</givenNames></author>. 
+<articleTitle>The outcome of patients with unclassified hypogammaglobulinemia in early childhood</articleTitle>. 
+<journalTitle>Pediatr Allergy Immunol</journalTitle> 
+<pubYear year="2009">2009</pubYear>: <vol>20</vol>: <pageFirst>693</pageFirst>–<pageLast>8</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b13">
+<label>13</label>
+<citation type="journal" xml:id="cit13">
+<author><familyName>Dreborg</familyName> <givenNames>S</givenNames></author>, 
+<author><familyName>Frew</familyName> <givenNames>AJ</givenNames></author>. 
+<articleTitle>Position paper: Allergen standardization and skin tests. The European Academy of Allergology and Clinical Immunology</articleTitle>. 
+<journalTitle>Allergy</journalTitle> 
+<pubYear year="1993">1993</pubYear>: <vol>48</vol>: <pageFirst>48</pageFirst>–<pageLast>82</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b14">
+<label>14</label>
+<citation type="journal" xml:id="cit14">
+<author><familyName>Tefferi</familyName> <givenNames>A</givenNames></author>. 
+<articleTitle>Blood eosinophilia: a new paradigm in disease classification, diagnosis, and treatment</articleTitle>. 
+<journalTitle>Mayo Clin Proc</journalTitle> 
+<pubYear year="2005">2005</pubYear>: <vol>80</vol>: <pageFirst>75</pageFirst>–<pageLast>83</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b15">
+<label>15</label>
+<citation type="book" xml:id="cit15">
+<author><familyName>Polgar</familyName> <givenNames>P</givenNames></author>, 
+<author><familyName>Promadhat</familyName> <givenNames>V</givenNames></author>. 
+<bookTitle>Pulmonary Testing in Children</bookTitle>. Philadelphia, PA: <publisherName>W.B. Saunders</publisherName>, <pubYear year="1971">1971</pubYear>.
+</citation>
+</bib>
+<bib xml:id="b16">
+<label>16</label>
+<citation type="journal" xml:id="cit16">
+<author><familyName>Hargreave</familyName> <givenNames>FE</givenNames></author>, 
+<author><familyName>Ramsdale</familyName> <givenNames>EH</givenNames></author>, 
+<author><familyName>Sterk</familyName> <givenNames>PJ</givenNames></author>, 
+<author><familyName>Juniper</familyName> <givenNames>EF</givenNames></author>. 
+<articleTitle>Advances in the use of inhalation provocation tests in clinical evaluation</articleTitle>. 
+<journalTitle>Chest</journalTitle> 
+<pubYear year="1985">1985</pubYear>: <vol>87</vol>: <pageFirst>32S</pageFirst>–<pageLast>5S</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b17">
+<label>17</label>
+<citation type="journal" xml:id="cit17">
+<author><familyName>Tezcan</familyName> <givenNames>I</givenNames></author>, 
+<author><familyName>Berkel</familyName> <givenNames>AI</givenNames></author>, 
+<author><familyName>Ersoy</familyName> <givenNames>F</givenNames></author>, 
+<author><familyName>Sanal</familyName> <givenNames>O</givenNames></author>. 
+<articleTitle>Sağlıklı Türk çocukları ve erişkinlerde turbidometrik yöntemle bakılan serum immunoglobulin düzeyleri</articleTitle>. 
+<journalTitle>Çocuk Sağlığı ve Hastalıkları Dergisi</journalTitle> 
+<pubYear year="1996">1996</pubYear>: <vol>39</vol>: <pageFirst>649</pageFirst>–<pageLast>56</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b18">
+<label>18</label>
+<citation type="journal" xml:id="cit18">
+<author><familyName>Martinez</familyName> <givenNames>FD</givenNames></author>, 
+<author><familyName>Morgan</familyName> <givenNames>WJ</givenNames></author>, 
+<author><familyName>Wright</familyName> <givenNames>AL</givenNames></author>, 
+<author><familyName>Holberg</familyName> <givenNames>CJ</givenNames></author>, 
+<author><familyName>Taussig</familyName> <givenNames>LM</givenNames></author>. 
+<articleTitle>Diminished lung function as a predisposing factor for wheezing respiratory illness in infants</articleTitle>. 
+<journalTitle>N Engl J Med</journalTitle> 
+<pubYear year="1988">1988</pubYear>: <vol>319</vol>: <pageFirst>1112</pageFirst>–<pageLast>7</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b19">
+<label>19</label>
+<citation type="journal" xml:id="cit19">
+<author><familyName>
+                Von Mutius</familyName> <givenNames>E</givenNames></author>, 
+<author><familyName>Illi</familyName> <givenNames>S</givenNames></author>, 
+<author><familyName>Hirsch</familyName> <givenNames>T</givenNames></author>, 
+<author><familyName>Leupold</familyName> <givenNames>W</givenNames></author>, 
+<author><familyName>Keil</familyName> <givenNames>U</givenNames></author>, 
+<author><familyName>Weiland</familyName> <givenNames>S</givenNames></author>. 
+<articleTitle>Frequency of infections in the first years of life and risk of asthma, atopy and airway hyperresponsiveness among school age children</articleTitle>. 
+<journalTitle>Eur Respir J</journalTitle> 
+<pubYear year="1999">1999</pubYear>: <vol>14</vol>: <pageFirst>4</pageFirst>–<pageLast>11</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b20">
+<label>20</label>
+<citation type="journal" xml:id="cit20">
+<author><familyName>Calvani</familyName> <givenNames>M</givenNames></author>, 
+<author><familyName>Alessandri</familyName> <givenNames>C</givenNames></author>, 
+<author><familyName>Bonci</familyName> <givenNames>E</givenNames></author>. 
+<articleTitle>Fever episodes in early life and the development of atopy in children with asthma</articleTitle>. 
+<journalTitle>Eur Respir J</journalTitle> 
+<pubYear year="2002">2002</pubYear>: <vol>20</vol>: <pageFirst>391</pageFirst>–<pageLast>6</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b21">
+<label>21</label>
+<citation type="journal" xml:id="cit21">
+<author><familyName>Kim</familyName> <givenNames>DK</givenNames></author>, 
+<author><familyName>Choi</familyName> <givenNames>SH</givenNames></author>, 
+<author><familyName>Yu</familyName> <givenNames>J</givenNames></author>, 
+<author><familyName>Yoo</familyName> <givenNames>Y</givenNames></author>, 
+<author><familyName>Koh</familyName> <givenNames>YY</givenNames></author>. 
+<articleTitle>Bronchial responsiveness to methacholine and adenosine 5′‐monophosphate in atopic and non‐atopic preschool children with recurrent wheezing</articleTitle>. 
+<journalTitle>Clin Exp Allergy</journalTitle> 
+<pubYear year="2007">2007</pubYear>: <vol>37</vol>: <pageFirst>15</pageFirst>–<pageLast>21</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b22">
+<label>22</label>
+<citation type="journal" xml:id="cit22">
+<author><familyName>Taussig</familyName> <givenNames>LM</givenNames></author>, 
+<author><familyName>Wright</familyName> <givenNames>AL</givenNames></author>, 
+<author><familyName>Holberg</familyName> <givenNames>CJ</givenNames></author>, 
+<author><familyName>Halonen</familyName> <givenNames>M</givenNames></author>, 
+<author><familyName>Morgan</familyName> <givenNames>WJ</givenNames></author>, 
+<author><familyName>Martinez</familyName> <givenNames>FD</givenNames></author>. 
+<articleTitle>Tucson children’s respiratory study: 1980 to present</articleTitle>. 
+<journalTitle>J Allergy Clin Immunol</journalTitle> 
+<pubYear year="2003">2003</pubYear>: <vol>111</vol>: <pageFirst>661</pageFirst>–<pageLast>75</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b23">
+<label>23</label>
+<citation type="journal" xml:id="cit23">
+<author><familyName>Francis</familyName> <givenNames>JN</givenNames></author>, 
+<author><familyName>Till</familyName> <givenNames>SJ</givenNames></author>, 
+<author><familyName>Durham</familyName> <givenNames>SR</givenNames></author>. 
+<articleTitle>Induction of IL‐10+CD4+CD25+ T cells by grass pollen immunotherapy</articleTitle>. 
+<journalTitle>J Allergy Clin Immunol</journalTitle> 
+<pubYear year="2003">2003</pubYear>: <vol>111</vol>: <pageFirst>1255</pageFirst>–<pageLast>61</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b24">
+<label>24</label>
+<citation type="journal" xml:id="cit24">
+<author><familyName>Jutel</familyName> <givenNames>M</givenNames></author>, 
+<author><familyName>Akdis</familyName> <givenNames>M</givenNames></author>, 
+<author><familyName>Budak</familyName> <givenNames>F</givenNames></author>, <i>et al.</i> 
+<articleTitle>IL‐10 and TGF‐beta cooperate in the regulatory T cell response to mucosal allergens in normal immunity and specific immunotherapy</articleTitle>. 
+<journalTitle>Eur J Immunol</journalTitle> 
+<pubYear year="2003">2003</pubYear>: <vol>33</vol>: <pageFirst>1205</pageFirst>–<pageLast>14</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b25">
+<label>25</label>
+<citation type="journal" xml:id="cit25">
+<author><familyName>Panettieri</familyName> <givenNames>RA</givenNames> <nameSuffix>Jr</nameSuffix></author>. 
+<articleTitle>Airway smooth muscle: immunomodulatory cells that modulate airway remodeling?</articleTitle>. 
+<journalTitle>Respir Physiol Neurobiol</journalTitle> 
+<pubYear year="2003">2003</pubYear>: <vol>137</vol>: <pageFirst>277</pageFirst>–<pageLast>93</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b26">
+<label>26</label>
+<citation type="journal" xml:id="cit26">
+<author><familyName>Hartl</familyName> <givenNames>D</givenNames></author>, 
+<author><familyName>Koller</familyName> <givenNames>B</givenNames></author>, 
+<author><familyName>Mehlhorn</familyName> <givenNames>AT</givenNames></author>, <i>et al.</i> 
+<articleTitle>Quantitative and functional impairment of pulmonary CD4+CD25hi regulatory T cells in pediatric asthma</articleTitle>. 
+<journalTitle>J Allergy Clin Immunol</journalTitle> 
+<pubYear year="2007">2007</pubYear>: <vol>119</vol>: <pageFirst>1258</pageFirst>–<pageLast>66</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b27">
+<label>27</label>
+<citation type="journal" xml:id="cit27">
+<author><familyName>
+                De Marco</familyName> <givenNames>R</givenNames></author>, 
+<author><familyName>Marcon</familyName> <givenNames>A</givenNames></author>, 
+<author><familyName>Jarvis</familyName> <givenNames>D</givenNames></author>, <i>et al.</i> 
+<articleTitle>Prognostic factors of asthma severity: a 9‐year international prospective cohort study</articleTitle>. 
+<journalTitle>J Allergy Clin Immunol</journalTitle> 
+<pubYear year="2006">2006</pubYear>: <vol>117</vol>: <pageFirst>1249</pageFirst>–<pageLast>56</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b28">
+<label>28</label>
+<citation type="journal" xml:id="cit28">
+<author><familyName>Phelan</familyName> <givenNames>PD</givenNames></author>, 
+<author><familyName>Robertson</familyName> <givenNames>CF</givenNames></author>, 
+<author><familyName>Olinsky</familyName> <givenNames>A</givenNames></author>. 
+<articleTitle>The Melbourne Asthma Study: 1964–1999</articleTitle>. 
+<journalTitle>J Allergy Clin Immunol</journalTitle> 
+<pubYear year="2002">2002</pubYear>: <vol>109</vol>: <pageFirst>189</pageFirst>–<pageLast>94</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b29">
+<label>29</label>
+<citation type="journal" xml:id="cit29">
+<author><familyName>Strachan</familyName> <givenNames>DP</givenNames></author>, 
+<author><familyName>Butland</familyName> <givenNames>BK</givenNames></author>, 
+<author><familyName>Anderson</familyName> <givenNames>HR</givenNames></author>. 
+<articleTitle>Incidence and prognosis of asthma and wheezing illness from early childhood to age 33 in a national British cohort</articleTitle>. 
+<journalTitle>BMJ</journalTitle> 
+<pubYear year="1996">1996</pubYear>: <vol>312</vol>: <pageFirst>1195</pageFirst>–<pageLast>9</pageLast>.
+</citation>
+</bib>
+<bib xml:id="b30">
+<label>30</label>
+<citation type="journal" xml:id="cit30">
+<author><familyName>Laitinen</familyName> <givenNames>LA</givenNames></author>, 
+<author><familyName>Laitinen</familyName> <givenNames>A</givenNames></author>, 
+<author><familyName>Haahtela</familyName> <givenNames>TA</givenNames></author>. 
+<articleTitle>Comparative study of the effects of an inhaled corticosteroids, budesonide, and a β2 agonist, terbutaline, on airway inflammation in newly diagnosed asthma: a randomized, double‐ blind, parallel‐group controlled trial</articleTitle>. 
+<journalTitle>J Allergy Clin Immunol</journalTitle> 
+<pubYear year="1992">1992</pubYear>: <vol>90</vol>: <pageFirst>32</pageFirst>–<pageLast>42</pageLast>.
+</citation>
+</bib>
+</bibliography>
+</body>
+</component>

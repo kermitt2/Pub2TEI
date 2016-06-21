@@ -6,9 +6,11 @@
     <xsl:output encoding="UTF-8" method="xml"/>
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
     <xsl:template match="name | persname">
-        <persName>
-            <xsl:apply-templates/>
-        </persName>
+		<author>
+			<persName>
+            	<xsl:apply-templates/>
+        	</persName>
+		</author>
     </xsl:template>
 
     <xsl:template match="collab | sb:collaboration">
@@ -25,7 +27,7 @@
     <!-- Sage: ln, per_aut/fn, mn, suffix, role (fn ambigue avec footnote) -->
     <!-- BMJ: corresponding-author-firstname, corresponding-author-lastname, corresponding-author-middlename -->
     <xsl:template
-        match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | corresponding-author-firstname | fname">
+        match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | corresponding-author-firstname | fname | fnm">
         <xsl:if test=".!=''">
             <forename type="first">
                 <xsl:apply-templates/>
@@ -50,7 +52,7 @@
     </xsl:template>
     
     <xsl:template
-        match="last_name | LastName | ce:surname | FamilyName | ln | surname | corresponding-author-lastname | surname">
+        match="last_name | LastName | ce:surname | FamilyName | ln | surname | corresponding-author-lastname | surname | snm">
         <xsl:if test=".!=''">
             <surname>
                 <xsl:apply-templates/>

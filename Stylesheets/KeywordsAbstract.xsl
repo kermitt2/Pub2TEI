@@ -89,7 +89,7 @@
     <!-- Springer: Abstract, Heading, Para -->
 
 	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
-    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract">
+    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs">
 		<xsl:if test=".!=''">
 			<abstract>
 	            <xsl:variable name="theLanguage">

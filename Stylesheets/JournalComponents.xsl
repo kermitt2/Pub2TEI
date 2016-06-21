@@ -11,7 +11,7 @@
 
     <!-- Article title -->
     <!-- NLM V2.0: ArticleTitle -->
-    <!-- NLM V2.3 article: article-title, alt-title -->
+    <!-- NLM V2.3 article: article-title, alt-title, atl -->
     <!-- BMJ: article-title -->
     <!-- Elsevier: ce:title -->
     <!-- Sage: art_title -->
@@ -21,7 +21,7 @@
 
 
     <xsl:template
-        match="article-title/title | ArticleTitle | article-title | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title">
+        match="article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title">
         <xsl:if test=".!=''">
             <title level="a" type="main">
                 <xsl:if test="@Language">
@@ -102,7 +102,7 @@
     <!-- Elsevier: els:jid, ce:issn -->
 
     <xsl:template
-        match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title">
+        match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl">
         <xsl:if test=".!=''">
             <title level="j" type="main">
                 <xsl:apply-templates/>
@@ -178,7 +178,7 @@
     </xsl:template>
 
     <xsl:template
-        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper | SeriesPrintISSN">
+        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper | SeriesPrintISSN | issn[@type='print']">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
@@ -196,7 +196,7 @@
     </xsl:template>
 
     <xsl:template
-        match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN">
+        match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN | issn[@type='electronic']">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
@@ -287,7 +287,7 @@
     <!-- Elements for Imprint components in BMJ (issue-number, volume) -->
     <!-- Elements for Imprint components in Elsevier () -->
 
-    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr">
+    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid">
         <xsl:if test=".!=''">
             <biblScope unit="vol">
                 <xsl:apply-templates/>
@@ -356,7 +356,7 @@
 
     <!-- Pagination -->
 
-    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage">
+    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf">
         <xsl:if test=".!=''">
             <biblScope unit="page" from="{.}">
                 <xsl:apply-templates/>
@@ -364,7 +364,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page">
+    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl">
         <xsl:if test=".!=''">
             <biblScope unit="page" to="{.}">
                 <xsl:apply-templates/>
@@ -395,6 +395,14 @@
                 <xsl:apply-templates/>
             </pubPlace>
         </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="reftxt/cd">
+        <date>
+            <xsl:attribute name="when">
+				<xsl:apply-templates select="text()"/>
+			</xsl:attribute>
+        </date>
     </xsl:template>
 
 </xsl:stylesheet>
