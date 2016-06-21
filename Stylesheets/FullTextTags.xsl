@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-    xmlns="http://www.tei-c.org/ns/1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML/"
+    xmlns="http://www.tei-c.org/ns/1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML/" 
+	xmlns:wiley="http://www.wiley.com/namespaces/wiley"
     exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
@@ -9,7 +10,7 @@
     <!-- Macrostructure -->
     <!-- Springer: Para, SimplePara -->
 
-    <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para">
+    <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para | wiley:p">
         <p><xsl:apply-templates/></p>
     </xsl:template>
     
@@ -124,6 +125,15 @@
             <xsl:attribute name="target">
                 <xsl:value-of select="concat('#',@idrefs)"/>
             </xsl:attribute>
+        </ref>
+    </xsl:template>
+	
+    <xsl:template match="wiley:link">
+        <ref type="bibr">
+            <xsl:attribute name="target">
+                <xsl:value-of select="@href"/>
+            </xsl:attribute>
+			<xsl:value-of select="text()"/>
         </ref>
     </xsl:template>
 	
@@ -301,7 +311,16 @@
 		</div>
     </xsl:template>
 	
-    <xsl:template match="sectitle">
+    <xsl:template match="wiley:section">
+        <div>
+            <xsl:attribute name="xml:lang">
+                <xsl:value-of select="@xml:lang"/>
+            </xsl:attribute>
+            <xsl:apply-templates select="wiley:title | wiley:p"/>
+		</div>
+    </xsl:template>
+	
+    <xsl:template match="wiley:title">
         <head>
             <xsl:apply-templates/>
 		</head>

@@ -112,7 +112,8 @@
     </xsl:template>
 
     <xsl:template match="bm/table">
-        <figure type="table">>
+        <figure>
+            <xsl:attribute name="type">table</xsl:attribute>
             <xsl:if test="@id">
                 <xsl:attribute name="xml:id">
                     <xsl:value-of select="@id"/>
