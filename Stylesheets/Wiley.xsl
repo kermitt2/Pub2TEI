@@ -24,16 +24,22 @@
 						</title>
                     </titleStmt>
                     <publicationStmt>
-						<xsl:if test="header/publisherInfo/publicationMeta/publisherInfo/publisherName">
-                       	 	<xsl:apply-templates select="header/publisherInfo/publicationMeta/publisherInfo/publisherName"/>
+						<xsl:if test="header/publicationMeta/publisherInfo/publisherName">
+                       	 	<xsl:apply-templates select="header/publicationMeta/publisherInfo/publisherName"/>
 						</xsl:if>
-						<xsl:if test="not(front/journal-meta/publisher)">
+						<xsl:if test="not(header/publicationMeta/publisherInfo/publisherName)">
                        	 	<publisher>Blackwell Publishing Ltd</publisher>
 						</xsl:if>
                         <xsl:apply-templates select="header/publicationMeta/copyright"/>
+						<!-- date -->
+						<xsl:if test="header/publicationMeta[@level='part']/coverDate">
+							<date type="published">
+								<xsl:attribute name="when"><xsl:value-of select="header/publicationMeta[@level='part']/coverDate/@startDate"/></xsl:attribute>
+							</date>
+						</xsl:if>
                     </publicationStmt>
                     <sourceDesc>
-                        <xsl:apply-templates select="header/publicationMeta" mode="sourceDesc"/>
+                        <xsl:apply-templates select="header" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
                 <xsl:if test="header/contentMeta/abstractGroup | header/contentMeta/keywordGroup">
@@ -60,15 +66,9 @@
                 </xsl:if>
             </teiHeader>
             <text>
-				<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
-                <!--xsl:if test="front/article-meta/abstract">
-                    <front>
-                        <xsl:apply-templates select="front/article-meta/abstract"/>
-                    </front>
-                </xsl:if-->
                 <!-- No test if made for body since it is considered a mandatory element -->
                 <body>
-                    <xsl:apply-templates select="body/section"/>
+                    <xsl:apply-templates select="body" mode="bodyOnly"/>
                 </body>
                 <xsl:if test="body/bibliography">
                     <back>
@@ -79,56 +79,29 @@
         </TEI>
     </xsl:template>
 
+	<!-- abstract content -->
 	<xsl:template match="/component/header/contentMeta/abstractGroup/abstract/p"> 
         <xsl:choose>
             <xsl:when test="b">
 				<div>
 					<head><xsl:value-of select="b/text()"/></head>
 					<p><xsl:value-of select="text()"/></p>
-				</div>	
+				</div>
 			</xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates select="p"/>
             </xsl:otherwise>
         </xsl:choose>
 	</xsl:template>
-
-   <!-- We do not care about components from <article-meta> which are 
-    not explicitely addressed by means of an XPath in another template-->
-    <xsl:template match="article-meta"/>
-
+	
     <!-- Building the sourceDesc bibliographical representation -->
-    <xsl:template match="front | pubfm" mode="sourceDesc">
+    <xsl:template match="header" mode="sourceDesc">
         <biblStruct>
-            <xsl:variable name="articleType" select="/article/@article-type"/>
+            <xsl:variable name="articleType" select="/article/@type"/>
             <xsl:if test="$articleType != ''">
                 <xsl:choose>
-                    <xsl:when test="$articleType='research-article'">
+                    <xsl:when test="$articleType='serialArticle'">
                         <xsl:attribute name="type">article</xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="$articleType='review-article'">
-                        <xsl:attribute name="type">article</xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="$articleType='correction'">
-                        <xsl:attribute name="type">erratum</xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="$articleType='other'">
-                        <xsl:attribute name="type">other</xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="$articleType='book-review'">
-                        <xsl:attribute name="type">bookReview</xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="$articleType='books-received'">
-                        <xsl:attribute name="type">booksReceived</xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="$articleType='editorial'">
-                        <xsl:attribute name="type">editorial</xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="$articleType='brief-report'">
-                        <xsl:attribute name="type">briefReport</xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="$articleType='letter'">
-                        <xsl:attribute name="type">letter</xsl:attribute>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:message terminate="no">Article-type inconnu: <xsl:value-of
@@ -138,47 +111,58 @@
             </xsl:if>
 
             <analytic>
-                <!-- All authors are included here -->
-                <xsl:apply-templates select="article-meta/contrib-group/*[name()!='aff']"/>
-				<xsl:if test="/article/fm/aug">
-					<xsl:apply-templates select="/article/fm/aug/*"/>
-				</xsl:if>
                 <!-- Title information related to the paper goes here -->
-                <xsl:apply-templates select="article-meta/title-group/*"/>
+                <xsl:apply-templates select="contentMeta/titleGroup"/>
+				
+                <!-- All authors are included here -->
+				<xsl:if test="contentMeta/creators">
+					<xsl:apply-templates select="contentMeta/creators"/>
+				</xsl:if>
             </analytic>
             <monogr>
-                <xsl:apply-templates select="journal-meta/journal-title | jtl"/>
-                <xsl:apply-templates select="journal-meta/journal-id"/>
-                <xsl:apply-templates select="journal-meta/abbrev-journal-title"/>
-                <xsl:apply-templates select="journal-meta/issue-title"/>
-                
-                <xsl:apply-templates select="journal-meta/issn | issn"/>
-				<xsl:apply-templates select="doi"/>
+				<title level="j">
+					<xsl:apply-templates select="publicationMeta[@level='product']/titleGroup/title"/>
+				</title>	
+                <xsl:apply-templates select="publicationMeta[@level='product']/issn"/>
+               
+				<xsl:apply-templates select="publicationMeta[@level='unit']/doi"/>
                 <imprint>
-                    <xsl:apply-templates select="journal-meta/publisher/*"/>
-
-                    <xsl:for-each select="article-meta/pub-date">
-                        <xsl:message>Current: <xsl:value-of select="@pub-type"/></xsl:message>
-                        <xsl:if test="year != '' and year !='0000'">
-                            <xsl:message>Pubdate year: <xsl:value-of select="year"/></xsl:message>
-                            <xsl:apply-templates select="."/>
-                        </xsl:if>
-                    </xsl:for-each>
-
-					<!-- the special date notation <idt>201211</idt> -->
-					<xsl:apply-templates select="idt"/>
+	                <xsl:apply-templates select="publicationMeta[@level='part']/numberingGroup/numbering[@type='journalVolume']"/>
+	                <xsl:apply-templates select="publicationMeta[@level='part']/numberingGroup/numbering[@type='journalIssue']"/>
 					
-                    <xsl:apply-templates
-                        select="article-meta/volume | vol | article-meta/issue | iss
-                        | article-meta/fpage | pp/spn | pp/epn | article-meta/lpage 
-                        | article-meta/elocation-id"
-                    />
+	                <xsl:apply-templates select="publicationMeta[@level='unit']/numberingGroup/numbering[@type='pageFirst']"/>
+	                <xsl:apply-templates select="publicationMeta[@level='unit']/numberingGroup/numbering[@type='pageLast']"/>
+					
+					<xsl:if test="publicationMeta/publisherInfo/publisherName">
+                   	 	<xsl:apply-templates select="publicationMeta/publisherInfo/publisherName"/>
+					</xsl:if>
+					
+					<xsl:if test="publicationMeta[@level='part']/coverDate">
+						<date type="published">
+							<xsl:attribute name="when"><xsl:value-of select="publicationMeta[@level='part']/coverDate/@startDate"/></xsl:attribute>
+						</date>
+					</xsl:if>
                 </imprint>
             </monogr>
             <xsl:apply-templates select="article-meta/article-id"/>
         </biblStruct>
     </xsl:template>
 
+	<!-- title group -->
+	<xsl:template match="titleGroup"> 
+		<title leval= "a" type="main">
+        	<xsl:value-of select="title[@type='main']"/>
+		</title>
+		<title leval= "a" type="short">
+        	<xsl:value-of select="title[@type='short']"/>
+		</title>
+	</xsl:template>
+ 
+ 	<!-- Body content -->
+    <xsl:template match="body" mode="bodyOnly">
+        <xsl:apply-templates select="section"/>
+    </xsl:template>
+ 
     <!-- Generic rules for IDs -->
     <xsl:template match="article-id">
         <idno>
@@ -189,36 +173,28 @@
         </idno>
     </xsl:template>
 
-    <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- author related information -->
+    <xsl:template match="creator">
+		<xsl:if test="@creatorRole='author'">
+			<author>
+	            <xsl:apply-templates/>
 
-    <xsl:template match="aug/au">
-		<author>
-			<persName>
-            	<xsl:apply-templates/>
-        	</persName>
-			<!-- affiliation -->
-			<xsl:if test="../aff">
-				<xsl:apply-templates select="../aff" mode="sourceDesc"/>
-			</xsl:if>
-		</author>
-    </xsl:template>
-	
-    <xsl:template match="contrib[@contrib-type='author' or not(@contrib-type)]">
-        <author>
-            <xsl:if test="@corresp='yes'">
-                <xsl:attribute name="type">
-                    <xsl:text>corresp</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </author>
-    </xsl:template>
+				<!-- affiliation -->
+				<xsl:if test="../aff">
+					<xsl:apply-templates select="../aff" mode="sourceDesc"/>
+				</xsl:if>
+			</author>
+		</xsl:if>
+		<xsl:if test="@creatorRole='editor'">
+			<editor>
+	            <xsl:apply-templates/>
 
-    <xsl:template match="contrib[@contrib-type='editor']">
-        <editor>
-            <xsl:apply-templates/>
-        </editor>
+				<!-- affiliation -->
+				<xsl:if test="../aff">
+					<xsl:apply-templates select="../aff" mode="sourceDesc"/>
+				</xsl:if>
+			</editor>
+		</xsl:if>
     </xsl:template>
 
     <xsl:template match="contrib">
@@ -323,231 +299,11 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="author-comment">
-        <note type="author-comment">
-            <xsl:apply-templates/>
-        </note>
-    </xsl:template>
-
-
-
-    <!-- Macrostructure of main body if the text -->
-    <xsl:template match="sec[not(parent::boxed-text)]">
-        <div>
-            <xsl:if test="@sec-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@sec-type"/>
-                </xsl:attribute>
-            </xsl:if>
-
-            <xsl:if test="parent::boxed-text">
-                <xsl:attribute name="rend">
-                    <xsl:text>boxed-text</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-
-            <xsl:if test="label">
-                <xsl:attribute name="n">
-                    <xsl:value-of select="label"/>
-                </xsl:attribute>
-            </xsl:if>
-
-            <!-- We treat boxed-text as independant divisions right after the current division 
-            to avoid getting a division within a paragraph by accident -->
-            <xsl:choose>
-                <xsl:when test="not(descendant::sec) and descendant::boxed-text">
-                    <xsl:comment>Boxed-text</xsl:comment>
-                    <xsl:apply-templates/>
-                    <xsl:apply-templates select="descendant::boxed-text/sec" mode="boxed-text"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:apply-templates/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </div>
-    </xsl:template>
-
-    <xsl:template match="sec[parent::boxed-text]"/>
-
-    <xsl:template match="sec" mode="boxed-text">
-        <div>
-            <xsl:if test="@sec-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@sec-type"/>
-                </xsl:attribute>
-            </xsl:if>
-
-            <xsl:if test="parent::boxed-text">
-                <xsl:attribute name="rend">
-                    <xsl:text>boxed-text</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-
-            <xsl:if test="label">
-                <xsl:attribute name="n">
-                    <xsl:value-of select="label"/>
-                </xsl:attribute>
-            </xsl:if>
-
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-
     <xsl:template match="ack">
         <div type="acknowledgements">
             <head>Acknowledgements</head>
             <xsl:apply-templates/>
         </div>
-    </xsl:template>
-
-    <xsl:template match="statement">
-        <div type="statement">
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-
-    <xsl:template match="named-content">
-        <name>
-            <xsl:if test="@content-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@content-type"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </name>
-    </xsl:template>
-
-    <xsl:template match="comment">
-        <note type="comment">
-            <xsl:apply-templates/>
-        </note>
-    </xsl:template>
-
-    <!-- The default case (when <abbrev> appears in isolation) -->
-    <xsl:template match="abbrev[not(def)]">
-        <abbr>
-            <xsl:apply-templates/>
-        </abbr>
-    </xsl:template>
-
-    <xsl:template match="abbrev[def]">
-        <choice>
-            <abbr>
-                <xsl:apply-templates/>
-            </abbr>
-            <xsl:apply-templates select="def" mode="inTerm"/>
-        </choice>
-    </xsl:template>
-
-    <!-- Definitions in terms are treated through a dedicated named template -->
-    <xsl:template match="abbrev/def"/>
-
-    <!-- When they appear in <term> they need to be treated as <expan>s -->
-    <xsl:template match="abbrev/def" mode="inTerm">
-        <expan>
-            <xsl:apply-templates/>
-        </expan>
-    </xsl:template>
-
-    <!-- We just get rid of all <p>s in <def>s -->
-    <xsl:template match="def/p">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="styled-content">
-        <hi>
-            <xsl:if test="@style">
-                <xsl:attribute name="rend">
-                    <xsl:value-of select="@style"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </hi>
-    </xsl:template>
-
-    <!-- Quoted passages -->
-    <xsl:template match="disp-quote">
-        <cit>
-            <xsl:if test="attrib">
-                <xsl:attribute name="rend">
-                    <xsl:text>block</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <quote>
-                <xsl:apply-templates select="*[not(name()='attrib')]"/>
-            </quote>
-            <xsl:apply-templates select="child::attrib"/>
-        </cit>
-    </xsl:template>
-
-    <xsl:template match="disp-quote/attrib">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <!-- Glossaries -->
-    <xsl:template match="glossary">
-        <div type="glossary">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-
-    <xsl:template match="gloss-group">
-        <!-- Should be treated like glossaries in V3.0, does not exist any more -->
-        <div type="glossary">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-
-    <xsl:template match="def-list">
-        <list type="termlist">
-            <!-- To be compliant with the ISO style for terms and definitions ;-) -->
-            <xsl:apply-templates/>
-        </list>
-    </xsl:template>
-
-    <xsl:template match="def-item">
-        <item>
-            <!-- To be compliant with the ISO style for terms and definitions ;-) -->
-            <xsl:apply-templates/>
-        </item>
-    </xsl:template>
-
-    <xsl:template match="term">
-        <term>
-            <!-- To be compliant with the ISO style for terms and definitions ;-) -->
-            <xsl:apply-templates/>
-        </term>
-    </xsl:template>
-
-    <xsl:template match="def">
-        <gloss>
-            <!-- To be compliant with the ISO style for terms and definitions ;-) -->
-            <xsl:apply-templates/>
-        </gloss>
-    </xsl:template>
-
-    <!-- Lists -->
-
-    <xsl:template match="list">
-        <list>
-            <xsl:if test="@list-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@list-type"/>
-                </xsl:attribute>
-                <xsl:apply-templates/>
-            </xsl:if>
-        </list>
-    </xsl:template>
-
-    <xsl:template match="list-item">
-        <item>
-            <xsl:apply-templates/>
-        </item>
     </xsl:template>
 
     <!-- Figures -->
@@ -707,8 +463,6 @@
         </authority>
     </xsl:template>
 
-    <xsl:template match="allowbreak"/>
-
     <xsl:template match="pub-date">
         <date>
             <xsl:choose>
@@ -728,13 +482,6 @@
                 </xsl:call-template>
             </xsl:attribute>
         </date>
-    </xsl:template>
-
-    <!-- Revision information -->
-    <xsl:template match="history">
-        <revisionDesc>
-            <xsl:apply-templates/>
-        </revisionDesc>
     </xsl:template>
 
     <xsl:template match="date[@date-type='received']">
@@ -788,18 +535,5 @@
             <xsl:text>Accepted</xsl:text>
         </change>
     </xsl:template>
-
-	<!-- custom date format <idt>19731128</idt> -->
-	<xsl:template match="idt">
-		<date>
-            <xsl:attribute name="when">
-				<xsl:if test="string-length(text()) > 0">
-					<xsl:value-of select='substring(text(),0,5)'/>
-				</xsl:if>
-				<xsl:if test="string-length(text()) > 4">-<xsl:value-of select='substring(text(),5,2)'/></xsl:if>
-				<xsl:if test="string-length(text()) > 6">-<xsl:value-of select='substring(text(),7,2)'/></xsl:if>
-            </xsl:attribute>
-		</date>	
-	</xsl:template>
 
 </xsl:stylesheet>

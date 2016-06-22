@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
-	xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" exclude-result-prefixes="#all">
+	xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" 
+	xmlns:wiley="http://www.wiley.com/namespaces/wiley" exclude-result-prefixes="#all">
     <xsl:output encoding="UTF-8" method="xml"/>
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
     <xsl:template match="name | persname">
@@ -27,7 +28,7 @@
     <!-- Sage: ln, per_aut/fn, mn, suffix, role (fn ambigue avec footnote) -->
     <!-- BMJ: corresponding-author-firstname, corresponding-author-lastname, corresponding-author-middlename -->
     <xsl:template
-        match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | corresponding-author-firstname | fname | fnm">
+        match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | corresponding-author-firstname | fname | fnm | wiley:givenNames">
         <xsl:if test=".!=''">
             <forename type="first">
                 <xsl:apply-templates/>
@@ -52,7 +53,7 @@
     </xsl:template>
     
     <xsl:template
-        match="last_name | LastName | ce:surname | FamilyName | ln | surname | corresponding-author-lastname | surname | snm">
+        match="last_name | LastName | ce:surname | FamilyName | ln | surname | corresponding-author-lastname | surname | snm | wiley:familyName">
         <xsl:if test=".!=''">
             <surname>
                 <xsl:apply-templates/>
@@ -89,7 +90,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="degree | corresponding-author-title | person_title | degrees | ce:degree">
+    <xsl:template match="degree | corresponding-author-title | person_title | degrees | ce:degree | wiley:degrees" >
         <xsl:if test=".!=''">
             <roleName type="degree">
                 <xsl:apply-templates/>

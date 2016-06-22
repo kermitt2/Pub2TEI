@@ -3,7 +3,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
-    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley" 
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
@@ -18,7 +19,6 @@
     <!-- Springer: ArticleTitle -->
     <!-- ScholarOne: article_title, article_sub_title -->
     <!-- EDP: ArticleTitle/Title -->
-
 
     <xsl:template
         match="article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title">
@@ -178,7 +178,7 @@
     </xsl:template>
 
     <xsl:template
-        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper | SeriesPrintISSN | issn[@type='print']">
+        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper | SeriesPrintISSN | issn[@type='print'] | wiley:issn[@type='print'] ">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
@@ -196,7 +196,7 @@
     </xsl:template>
 
     <xsl:template
-        match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN | issn[@type='electronic']">
+        match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN | issn[@type='electronic'] | wiley:issn[@type='electronic']">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
@@ -287,7 +287,7 @@
     <!-- Elements for Imprint components in BMJ (issue-number, volume) -->
     <!-- Elements for Imprint components in Elsevier () -->
 
-    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid">
+    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume']">
         <xsl:if test=".!=''">
             <biblScope unit="vol">
                 <xsl:apply-templates/>
@@ -319,7 +319,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref">
+    <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue']">
         <xsl:if test=".!=''">
             <biblScope unit="issue">
                 <xsl:apply-templates/>
@@ -356,7 +356,7 @@
 
     <!-- Pagination -->
 
-    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf">
+    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst']">
         <xsl:if test=".!=''">
             <biblScope unit="page" from="{.}">
                 <xsl:apply-templates/>
@@ -364,7 +364,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl">
+    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast']">
         <xsl:if test=".!=''">
             <biblScope unit="page" to="{.}">
                 <xsl:apply-templates/>
@@ -381,7 +381,7 @@
     <!-- Springer: PublisherName, PublisherLocation -->
 
     <xsl:template
-        match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher']">
+        match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher'] | wiley:publisherName">
         <xsl:if test=".!=''">
             <publisher>
                 <xsl:apply-templates/>

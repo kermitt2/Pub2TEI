@@ -129,12 +129,35 @@
     </xsl:template>
 	
     <xsl:template match="wiley:link">
-        <ref type="bibr">
-            <xsl:attribute name="target">
-                <xsl:value-of select="@href"/>
-            </xsl:attribute>
-			<xsl:value-of select="text()"/>
-        </ref>
+		<!-- for wiley we don't know in advance which type of object is referenced but 
+		it seems that we can use the identifier string to have a reliable information -->
+		<xsl:if test="string-length(@href) > 0">
+			<!--xsl:message><xsl:value-of select="substring(@href,2,1)"/></xsl:message-->
+			<xsl:if test="substring(@href,2,1) = 'b'">
+				<ref type="bibr">
+		            <xsl:attribute name="target">
+		                <xsl:value-of select="@href"/>
+		            </xsl:attribute>
+					<xsl:value-of select="text()"/>
+		        </ref>
+			</xsl:if>
+			<xsl:if test="substring(@href,2,1) = 'f'">
+				<ref type="figure">
+		            <xsl:attribute name="target">
+		                <xsl:value-of select="@href"/>
+		            </xsl:attribute>
+					<xsl:value-of select="text()"/>
+		        </ref>
+			</xsl:if>
+			<xsl:if test="substring(@href,2,1) = 't'">
+				<ref type="table">
+		            <xsl:attribute name="target">
+		                <xsl:value-of select="@href"/>
+		            </xsl:attribute>
+					<xsl:value-of select="text()"/>
+		        </ref>
+			</xsl:if>
+		</xsl:if>
     </xsl:template>
 	
     <xsl:template match="bibr">
@@ -199,14 +222,12 @@
     <!-- Springer: Emphasis[@Type='Italic'], Emphasis[@Type='Bold'], Subscript, Superscript -->
 
     <xsl:template
-        match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic']">
+        match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i">
         <xsl:if test=".!=''"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
-    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold']">
-        <xsl:if test=".!=''">
-            <hi rend="bold"><xsl:apply-templates/></hi>
-        </xsl:if>
+    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b">
+        <xsl:if test=".!=''"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="Emphasis[@Type='SmallCaps'] | ce:small-caps | sc | scp">
@@ -245,16 +266,12 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="Subscript | sub | ce:inf">
-        <xsl:if test=".!=''">
-            <hi rend="subscript"><xsl:apply-templates/></hi>
-        </xsl:if>
+    <xsl:template match="Subscript | sub | ce:inf | wiley:sub">
+        <xsl:if test=".!=''"><hi rend="subscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
-    <xsl:template match="Superscript | sup | ce:sup | super">
-        <xsl:if test=".!=''">
-            <hi rend="superscript"><xsl:apply-templates/></hi>
-        </xsl:if>
+    <xsl:template match="Superscript | sup | ce:sup | super | wiley:sup">
+        <xsl:if test=".!=''"><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="underline | ce:underline">
@@ -316,7 +333,12 @@
             <xsl:attribute name="xml:lang">
                 <xsl:value-of select="@xml:lang"/>
             </xsl:attribute>
-            <xsl:apply-templates select="wiley:title | wiley:p"/>
+			<xsl:if test="wiley:title">
+		        <head>
+		            <xsl:apply-templates select="wiley:title"/>
+				</head>
+			</xsl:if>	
+			<xsl:apply-templates select="* except wiley:title"/>
 		</div>
     </xsl:template>
 	
