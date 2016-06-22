@@ -161,6 +161,9 @@
  	<!-- Body content -->
     <xsl:template match="body" mode="bodyOnly">
         <xsl:apply-templates select="section"/>
+		<xsl:apply-templates select="figure"/>
+		<xsl:apply-templates select="table"/>
+		<xsl:apply-templates select="note"/>
     </xsl:template>
  
     <!-- Generic rules for IDs -->
@@ -178,11 +181,13 @@
 		<xsl:if test="@creatorRole='author'">
 			<author>
 	            <xsl:apply-templates/>
-
+				<!-- the affiliation id for this person -->
+				<xsl:variable name="affID" select="@affiliationRef"/>
+				
 				<!-- affiliation -->
-				<xsl:if test="../aff">
-					<xsl:apply-templates select="../aff" mode="sourceDesc"/>
-				</xsl:if>
+				<xsl:if test="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]">
+					<xsl:apply-templates select="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]"/>
+				</xsl:if>	
 			</author>
 		</xsl:if>
 		<xsl:if test="@creatorRole='editor'">
@@ -195,6 +200,14 @@
 				</xsl:if>
 			</editor>
 		</xsl:if>
+    </xsl:template>
+
+    <xsl:template match="affiliation">	
+		<xsl:if test="unparsedAffiliation">
+	        <affiliation>
+	        	<xsl:value-of select="unparsedAffiliation/text()"/>
+	        </affiliation>
+		</xsl:if>	
     </xsl:template>
 
     <xsl:template match="contrib">

@@ -2,18 +2,19 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
-    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" exclude-result-prefixes="#all">
+    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley"
+	exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- Références bibliographiques à la fin d'un article -->
     <!-- ref-list: NLM article, ScholarOne -->
 
-    <xsl:template match="ref-list | biblist | ce:bibliography | bibl">
+    <xsl:template match="ref-list | biblist | ce:bibliography | bibl | wiley:bibliography">
         <div type="references">
             <xsl:apply-templates select="title | ce:section-title"/>
             <listBibl>
-                <xsl:apply-templates select="ref | citgroup | ce:bibliography-sec | bib"/>
+                <xsl:apply-templates select="ref | citgroup | ce:bibliography-sec | bib | wiley:bib"/>
             </listBibl>
         </div>
     </xsl:template>
@@ -261,7 +262,7 @@
         </author>
     </xsl:template>
 
-    <xsl:template match="string-name | citauth">
+    <xsl:template match="string-name | citauth | wiley:author">
         <author>
             <persName>
                 <xsl:apply-templates/>
@@ -353,6 +354,27 @@
 					<xsl:apply-templates select="reftxt/ppf"/>
 					<xsl:apply-templates select="reftxt/ppl"/>
 					<xsl:apply-templates select="reftxt/cd"/>
+				</imprint>	
+			</monogr>	
+        </biblStruct>
+    </xsl:template>
+	
+    <xsl:template match="wiley:bib">
+        <biblStruct>
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="wiley:citation/@xml:id"/>
+            </xsl:attribute>
+			<analytic>
+				<xsl:apply-templates select="wiley:citation/wiley:author"/>
+            	<xsl:apply-templates select="wiley:citation/wiley:articleTitle"/>
+			</analytic>
+			<monogr>	
+				<xsl:apply-templates select="wiley:citation/wiley:journalTitle"/>
+				<imprint>
+					<xsl:apply-templates select="wiley:citation/wiley:vol"/>
+					<xsl:apply-templates select="wiley:citation/wiley:pageFirst"/>
+					<xsl:apply-templates select="wiley:citation/wiley:pageLast"/>
+					<xsl:apply-templates select="wiley:citation/wiley:pubYear"/>
 				</imprint>	
 			</monogr>	
         </biblStruct>

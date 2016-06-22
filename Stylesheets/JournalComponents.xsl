@@ -21,7 +21,7 @@
     <!-- EDP: ArticleTitle/Title -->
 
     <xsl:template
-        match="article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title">
+        match="article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title | wiley:articleTitle">
         <xsl:if test=".!=''">
             <title level="a" type="main">
                 <xsl:if test="@Language">
@@ -102,7 +102,7 @@
     <!-- Elsevier: els:jid, ce:issn -->
 
     <xsl:template
-        match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl">
+        match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl | wiley:journalTitle">
         <xsl:if test=".!=''">
             <title level="j" type="main">
                 <xsl:apply-templates/>
