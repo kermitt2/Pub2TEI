@@ -582,14 +582,6 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="tbody">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="thead">
-        <xsl:apply-templates/>
-    </xsl:template>
-
     <xsl:template match="tfooter"/>
     <xsl:template match="colspec"/>
 

@@ -8,14 +8,17 @@
 
 
     <!-- Royal Chemical Society: table-entry; NLM: table-wrap -->
-    <xsl:template match="table-entry | table-wrap">
+    <xsl:template match="table-entry | table-wrap | table">
         <figure type="table">
             <xsl:if test="@id">
                 <xsl:attribute name="xml:id">
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="* except tgroup"/>
+			<table>
+				<xsl:apply-templates select="tgroup"/>
+			</table>
         </figure>
     </xsl:template>
 

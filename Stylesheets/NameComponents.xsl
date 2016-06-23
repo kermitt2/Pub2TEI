@@ -44,7 +44,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="Initials">
+    <xsl:template match="Initials | inits">
         <xsl:if test=".!=''">
             <forename full="init">
                 <xsl:apply-templates/>
@@ -106,7 +106,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="suffix | Suffix | wiley:nameSuffix">
+    <xsl:template match="suffix | Suffix | suff | wiley:nameSuffix">
         <xsl:if test=".!=''">
             <genName>
                 <xsl:apply-templates/>

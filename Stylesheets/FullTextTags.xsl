@@ -173,7 +173,7 @@
 		</xsl:choose>
     </xsl:template>
 	
-    <xsl:template match="bibr">
+    <xsl:template match="bibr | bibrinl">
         <ref type="bibr">
             <xsl:attribute name="target">
                 <xsl:value-of select="concat('#',@rid)"/>
@@ -235,11 +235,11 @@
     <!-- Springer: Emphasis[@Type='Italic'], Emphasis[@Type='Bold'], Subscript, Superscript -->
 
     <xsl:template
-        match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i">
+        match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i | i">
         <xsl:if test=".!=''"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
-    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b">
+    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b | b">
         <xsl:if test=".!=''"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
@@ -339,6 +339,12 @@
             </xsl:attribute>
             <xsl:apply-templates select="sectitle | p"/>
 		</div>
+    </xsl:template>
+	
+    <xsl:template match="sectitle">
+        <head>
+			<xsl:apply-templates/>
+		</head>	
     </xsl:template>
 	
     <xsl:template match="wiley:section">
