@@ -219,7 +219,7 @@
     <!-- NLM 2.3 article: article-id[@pub-id-type='doi'] -->
 
     <xsl:template
-        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI">
+        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI | wiley:doi">
         <xsl:if test=".!=''">
             <xsl:variable name="DOIValue" select="string(.)"/>
             <idno type="DOI">
@@ -287,7 +287,7 @@
     <!-- Elements for Imprint components in BMJ (issue-number, volume) -->
     <!-- Elements for Imprint components in Elsevier () -->
 
-    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume']">
+    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume'] | wiley:vol">
         <xsl:if test=".!=''">
             <biblScope unit="vol">
                 <xsl:apply-templates/>
@@ -356,7 +356,7 @@
 
     <!-- Pagination -->
 
-    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst']">
+    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst'] | wiley:pageFirst">
         <xsl:if test=".!=''">
             <biblScope unit="page" from="{.}">
                 <xsl:apply-templates/>
@@ -364,7 +364,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast']">
+    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast'] | wiley:pageLast">
         <xsl:if test=".!=''">
             <biblScope unit="page" to="{.}">
                 <xsl:apply-templates/>
@@ -404,5 +404,17 @@
 			</xsl:attribute>
         </date>
     </xsl:template>
+	
+    <xsl:template match="wiley:pubYear">
+        <date>
+            <xsl:attribute name="when">
+				<xsl:apply-templates select="text()"/>
+			</xsl:attribute>
+        </date>
+    </xsl:template>
+	
+	<xsl:template match="wiley:titleGroup/wiley:title">
+		<xsl:apply-templates/>
+	</xsl:template>
 
 </xsl:stylesheet>

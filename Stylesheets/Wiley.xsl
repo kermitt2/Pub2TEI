@@ -30,7 +30,13 @@
 						<xsl:if test="not(header/publicationMeta/publisherInfo/publisherName)">
                        	 	<publisher>Blackwell Publishing Ltd</publisher>
 						</xsl:if>
-                        <xsl:apply-templates select="header/publicationMeta/copyright"/>
+						<xsl:if test="header/publicationMeta/copyright">
+							<availability>
+								<licence>
+                        			<xsl:apply-templates select="header/publicationMeta/copyright/*"/>
+								</licence>
+							</availability>
+						</xsl:if>
 						<!-- date -->
 						<xsl:if test="header/publicationMeta[@level='part']/coverDate">
 							<date type="published">
@@ -161,9 +167,9 @@
  	<!-- Body content -->
     <xsl:template match="body" mode="bodyOnly">
         <xsl:apply-templates select="section"/>
-		<xsl:apply-templates select="figure"/>
-		<xsl:apply-templates select="table"/>
-		<xsl:apply-templates select="note"/>
+		<xsl:apply-templates select="//figure"/>
+		<xsl:apply-templates select="//tabular"/>
+		<xsl:apply-templates select="//noteGroup"/>
     </xsl:template>
  
     <!-- Generic rules for IDs -->
@@ -175,6 +181,10 @@
             <xsl:value-of select="."/>
         </idno>
     </xsl:template>
+
+	<xsl:template match="creators">
+		 <xsl:apply-templates/>
+	</xsl:template>
 
     <!-- author related information -->
     <xsl:template match="creator">
@@ -206,7 +216,7 @@
 			</editor>
 		</xsl:if>
     </xsl:template>
-
+	
     <xsl:template match="affiliation">	
 		<xsl:if test="unparsedAffiliation">
 	        <affiliation>
@@ -244,172 +254,11 @@
             <xsl:value-of select="."/>
         </date>
     </xsl:template>
-
-    <xsl:template match="title-group/fn-group"/>
-
-    <!-- Inline affiliation (embedded in <contrib>) -->
-    <xsl:template match="aff | contrib/address">
-		<xsl:if test="not(/article/pubfm)">
-			<!-- this only apply to NPG articles not containing a pubfm style component -->
-	        <affiliation>
-	            <xsl:apply-templates select="*[name(.)!='addr-line' and name(.)!='country']"/>
-	            <xsl:if test="addr-line | country">
-	                <address>
-	                    <xsl:apply-templates select="addr-line | country"/>
-	                </address>
-	            </xsl:if>
-				<xsl:value-of select="."/>
-	        </affiliation>
-		</xsl:if>
-    </xsl:template>
 	
     <xsl:template match="aff" mode="sourceDesc">
         <affiliation>
 			<xsl:value-of select="."/>
         </affiliation>
-    </xsl:template>
-
-    <xsl:template match="aff/bold">
-        <ref>
-            <xsl:apply-templates/>
-        </ref>
-    </xsl:template>
-
-    <xsl:template match="aff/label">
-        <ref>
-            <xsl:apply-templates/>
-        </ref>
-    </xsl:template>
-
-    <!-- redirected affiliation by means of basic index (BMJ - 3.0 example) -->
-    <xsl:template match="xref[@ref-type='aff']">
-        <xsl:variable name="numberedIndex">
-            <xsl:value-of select="./sup"/>
-        </xsl:variable>
-        <xsl:choose>
-            <xsl:when test="@rid">
-                <xsl:variable name="index" select="@rid"/>
-                <xsl:apply-templates select="//aff[@id=$index]"/>
-            </xsl:when>
-            <xsl:when
-                test="ancestor::article-meta/descendant::aff/sup[normalize-space(.)=normalize-space($numberedIndex)]/following-sibling::text()[1]">
-                <affiliation>
-                    <xsl:apply-templates
-                        select="ancestor::article-meta/descendant::aff/sup[normalize-space(.)=normalize-space($numberedIndex)]/following-sibling::text()[1]"
-                    />
-                </affiliation>
-            </xsl:when>
-        </xsl:choose>
-    </xsl:template>
-
-    <!-- specific notes attached to authors (PNAS - 3.0 example)-->
-    <xsl:template match="xref[@ref-type='author-notes']">
-        <xsl:variable name="index" select="@rid"/>
-        <xsl:variable name="strip-string">
-            <xsl:value-of select="."/>
-        </xsl:variable>
-        <xsl:apply-templates select="ancestor::article-meta/descendant::author-notes/fn[@id=$index]"
-        />
-    </xsl:template>
-
-    <!-- additional information attached to corresponding authors (Cambridge example)-->
-    <xsl:template match="xref[@ref-type='corresp']">
-        <xsl:variable name="index" select="@rid"/>
-        <xsl:variable name="refCorresp"
-            select="ancestor::article-meta/descendant::author-notes/corresp[@id=$index]"/>
-        <xsl:apply-templates select="$refCorresp/email"/>
-        <!-- Cambridge may provide country in "author-notes/corresp" instead of "aff" -->
-        <xsl:if test="$refCorresp/country">
-            <address>
-                <xsl:apply-templates select="$refCorresp/addr-line | $refCorresp/country| $refCorresp/institution"/>
-               </address>
-        </xsl:if>
-    </xsl:template>
-
-    <xsl:template match="ack">
-        <div type="acknowledgements">
-            <head>Acknowledgements</head>
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-
-    <!-- Tables -->
-
-    <xsl:template match="hr">
-        <milestone unit="hr"/>
-    </xsl:template>
-
-
-    <xsl:template match="back/fn-group">
-        <div type="fn-group">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-
-    <xsl:template match="fn-group/fn">
-        <note place="inline">
-            <xsl:if test="@fn-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@fn-type"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </note>
-    </xsl:template>
-
-    <xsl:template match="fn/label">
-        <ref>
-            <xsl:apply-templates/>
-        </ref>
-    </xsl:template>
-
-    <!-- References in main text -->
-    <xsl:template match="xref">
-        <ref>
-            <xsl:attribute name="type">
-                <xsl:value-of select="@ref-type"/>
-            </xsl:attribute>
-            <xsl:attribute name="target">
-                <xsl:value-of select="concat('#',@rid)"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </ref>
-    </xsl:template>
-
-    <xsl:template match="ext-link">
-        <ref>
-            <xsl:attribute name="type">
-                <xsl:value-of select="@ext-link-type"/>
-            </xsl:attribute>
-
-            <xsl:attribute name="target">
-                <xsl:choose>
-                    <xsl:when test="@xlink:href">
-                        <xsl:value-of select="@xlink:href"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="."/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
-
-            <xsl:apply-templates/>
-        </ref>
-    </xsl:template>
-
-    <xsl:template match="supplementary-material">
-        <ref>
-            <xsl:attribute name="type"> supplementary-material </xsl:attribute>
-            <xsl:attribute name="target">
-                <xsl:value-of select="@xlink:href"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </ref>
     </xsl:template>
 
     <!-- Copyright related information to appear in <publicationStmt> -->
@@ -421,39 +270,10 @@
         </availability>
     </xsl:template>
 
-    <xsl:template match="permissions/license">
-        <availability>
-            <xsl:if test="@license-type">
-                <xsl:attribute name="status">
-                    <xsl:choose>
-                        <xsl:when test="@license-type='open-access'">OpenAccess</xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="@license-type"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </availability>
-    </xsl:template>
-
     <xsl:template match="license/p">
         <p>
             <xsl:apply-templates/>
         </p>
-    </xsl:template>
-
-    <xsl:template match="copyright-year | cpy">
-        <date>
-            <xsl:apply-templates/>
-        </date>
-    </xsl:template>
-
-    <xsl:template match="copyright-holder | cpn">
-        <authority>
-            <xsl:apply-templates/>
-        </authority>
     </xsl:template>
 
     <xsl:template match="pub-date">
@@ -477,56 +297,18 @@
         </date>
     </xsl:template>
 
-    <xsl:template match="date[@date-type='received']">
-        <change>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="day"/>
-                    <xsl:with-param name="oldMonth" select="month"/>
-                    <xsl:with-param name="oldYear" select="year"/>
-                </xsl:call-template>
-            </xsl:attribute>
-            <xsl:text>Received</xsl:text>
-        </change>
+	<!-- Structure a note block-->
+    <xsl:template match="noteGroup">
+        <xsl:apply-templates select="note"/>
     </xsl:template>
-    
-    <xsl:template match="date[@date-type='received-final']">
-        <change>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="day"/>
-                    <xsl:with-param name="oldMonth" select="month"/>
-                    <xsl:with-param name="oldYear" select="year"/>
-                </xsl:call-template>
+	
+    <xsl:template match="note">
+		<note>
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
-            <xsl:text>Received final</xsl:text>
-        </change>
-    </xsl:template>
-
-    <xsl:template match="date[@date-type='rev-recd']">
-        <change>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="day"/>
-                    <xsl:with-param name="oldMonth" select="month"/>
-                    <xsl:with-param name="oldYear" select="year"/>
-                </xsl:call-template>
-            </xsl:attribute>
-            <xsl:text>Revised</xsl:text>
-        </change>
-    </xsl:template>
-
-    <xsl:template match="date[@date-type='accepted']">
-        <change>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="day"/>
-                    <xsl:with-param name="oldMonth" select="month"/>
-                    <xsl:with-param name="oldYear" select="year"/>
-                </xsl:call-template>
-            </xsl:attribute>
-            <xsl:text>Accepted</xsl:text>
-        </change>
+        	<xsl:apply-templates/>
+		</note>
     </xsl:template>
 
 </xsl:stylesheet>

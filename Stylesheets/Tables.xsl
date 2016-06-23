@@ -47,7 +47,7 @@
         </note>
     </xsl:template>
 
-    <xsl:template match="thead/tr | cals:thead/cals:row">
+    <xsl:template match="thead/tr | cals:thead/cals:row | wiley:row">
         <row role="label">
             <xsl:apply-templates/>
         </row>
@@ -75,8 +75,8 @@
         </ab>
     </xsl:template>
 
-    <!-- exception Elsevier si on est déjà dans un paragraph -->
-    <xsl:template match="ce:para/els:display/ce:table">
+    <!-- exception Elsevier si on est déjà dans un paragraph et Wiley dans un <tabular> -->
+    <xsl:template match="ce:para/els:display/ce:table | wiley:table">
         <table>
             <xsl:apply-templates/>
         </table>
@@ -142,7 +142,7 @@
                     <xsl:value-of select="@xml:id"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="* except wiley:noteGroup"/>
         </figure>
     </xsl:template>
 	
@@ -153,7 +153,7 @@
     </xsl:template>
 
     <xsl:template match="wiley:colspec | wiley:thead | wiley:tbody | wiley:tgroup">
-		<!-- not useful for TEI transformation? -->
+		<!-- not obvious to use in TEI transformation -->
 		<xsl:apply-templates select="*"/>
     </xsl:template>
 	

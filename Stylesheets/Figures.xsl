@@ -6,7 +6,7 @@
 	exclude-result-prefixes="#all" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0">
 
-    <!-- NLM -->
+    <!-- NPG -->
     <xsl:template match="bm/fig">
         <figure>
             <xsl:if test="@id">

@@ -131,33 +131,46 @@
     <xsl:template match="wiley:link">
 		<!-- for wiley we don't know in advance which type of object is referenced but 
 		it seems that we can use the identifier string to have a reliable information -->
-		<xsl:if test="string-length(@href) > 0">
-			<!--xsl:message><xsl:value-of select="substring(@href,2,1)"/></xsl:message-->
-			<xsl:if test="substring(@href,2,1) = 'b'">
-				<ref type="bibr">
-		            <xsl:attribute name="target">
-		                <xsl:value-of select="@href"/>
-		            </xsl:attribute>
-					<xsl:value-of select="text()"/>
-		        </ref>
-			</xsl:if>
-			<xsl:if test="substring(@href,2,1) = 'f'">
-				<ref type="figure">
-		            <xsl:attribute name="target">
-		                <xsl:value-of select="@href"/>
-		            </xsl:attribute>
-					<xsl:value-of select="text()"/>
-		        </ref>
-			</xsl:if>
-			<xsl:if test="substring(@href,2,1) = 't'">
-				<ref type="table">
-		            <xsl:attribute name="target">
-		                <xsl:value-of select="@href"/>
-		            </xsl:attribute>
-					<xsl:value-of select="text()"/>
-		        </ref>
-			</xsl:if>
-		</xsl:if>
+		<xsl:choose>
+			<xsl:when test="string-length(@href) > 0">
+				<!--xsl:message><xsl:value-of select="substring(@href,2,1)"/></xsl:message-->
+				<xsl:if test="contains(@href, 'n')">
+					<!-- we have a note (normally) -->
+			        <ref type="note">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+						<xsl:apply-templates/>
+					</ref>	
+				</xsl:if>
+			</xsl:when>
+			<xsl:otherwise>	
+				<xsl:if test="substring(@href,2,1) = 'b'">
+					<ref type="bibr">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+						<xsl:value-of select="text()"/>
+			        </ref>
+				</xsl:if>
+				<xsl:if test="substring(@href,2,1) = 'f'">
+					<ref type="figure">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+						<xsl:value-of select="text()"/>
+			        </ref>
+				</xsl:if>
+				<xsl:if test="substring(@href,2,1) = 't'">
+					<ref type="table">
+		            	<xsl:attribute name="target">
+		                	<xsl:value-of select="@href"/>
+		            	</xsl:attribute>
+						<xsl:value-of select="text()"/>
+		        	</ref>
+				</xsl:if>
+			</xsl:otherwise>	
+		</xsl:choose>
     </xsl:template>
 	
     <xsl:template match="bibr">
@@ -338,8 +351,23 @@
 		            <xsl:apply-templates select="wiley:title"/>
 				</head>
 			</xsl:if>	
-			<xsl:apply-templates select="* except wiley:title"/>
+			<xsl:apply-templates select="* except (wiley:title|wiley:figure|wiley:tabular|wiley:noteGroup)"/>
 		</div>
+    </xsl:template>
+	
+	<xsl:template match="wiley:section/wiley:title">
+		<xsl:apply-templates/>
+	</xsl:template>	
+	
+    <xsl:template match="wiley:url">
+        <ref type="url">
+          	<xsl:value-of select="@href"/>
+		</ref>	
+    </xsl:template>
+	
+	<!-- no idea what it this <sc> tag in Wiley - apparently a styling element -->
+    <xsl:template match="wiley:sc">
+        <xsl:apply-templates/>
     </xsl:template>
 	
     <xsl:template match="online-methods"><xsl:apply-templates/></xsl:template>

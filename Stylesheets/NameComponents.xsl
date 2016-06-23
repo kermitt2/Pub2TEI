@@ -106,14 +106,14 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="suffix | Suffix">
+    <xsl:template match="suffix | Suffix | wiley:nameSuffix">
         <xsl:if test=".!=''">
             <genName>
                 <xsl:apply-templates/>
             </genName>
         </xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="role | prefix | ce:roles">
         <xsl:if test="normalize-space(.)!=''">
             <roleName>
@@ -122,6 +122,13 @@
         </xsl:if>
     </xsl:template>
     
+
+	<xsl:template match="wiley:personName">
+		<persName>
+			<xsl:apply-templates/>
+		</persName>
+	</xsl:template>
+	
     <!-- Champs dans la description des noms qui ne sont pas retenus -->
     <xsl:template match="NoGivenName"/>
     <xsl:template match="ce:indexed-name"/>
