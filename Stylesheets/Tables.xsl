@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
     xmlns:cals="http://www.elsevier.com/xml/common/cals/dtd"
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd" exclude-result-prefixes="#all" version="2.0"
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley"
+	exclude-result-prefixes="#all" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0">
 
 
@@ -123,10 +124,38 @@
         </figure>
     </xsl:template>
 	
-    <xsl:template match="table/title">
+    <xsl:template match="table/title | wiley:tabular/wiley:title">
         <head>
             <xsl:apply-templates/>
         </head>
     </xsl:template>
+	
+    <xsl:template match="wiley:label">
+        <label><xsl:value-of select="text()"/></label>
+    </xsl:template>
+	
+    <xsl:template match="wiley:tabular">
+        <figure>
+            <xsl:attribute name="type">table</xsl:attribute>
+            <xsl:if test="@xml:id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </figure>
+    </xsl:template>
+	
+    <xsl:template match="wiley:entry">
+		<cell>
+        	<xsl:apply-templates/>
+		</cell>
+    </xsl:template>
+
+    <xsl:template match="wiley:colspec | wiley:thead | wiley:tbody | wiley:tgroup">
+		<!-- not useful for TEI transformation? -->
+		<xsl:apply-templates select="*"/>
+    </xsl:template>
+	
 
 </xsl:stylesheet>

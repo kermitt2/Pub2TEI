@@ -180,6 +180,11 @@
     <xsl:template match="creator">
 		<xsl:if test="@creatorRole='author'">
 			<author>
+				<xsl:if test="@corresponding">
+		            <xsl:attribute name="type">
+		                <xsl:text>corresp</xsl:text>
+		            </xsl:attribute>
+				</xsl:if>	
 	            <xsl:apply-templates/>
 				<!-- the affiliation id for this person -->
 				<xsl:variable name="affID" select="@affiliationRef"/>
@@ -206,6 +211,15 @@
 		<xsl:if test="unparsedAffiliation">
 	        <affiliation>
 	        	<xsl:value-of select="unparsedAffiliation/text()"/>
+				<xsl:if test="@countryCode">
+					<address>
+						<country>
+				            <xsl:attribute name="key">
+				                <xsl:value-of select="@countryCode"/>
+				            </xsl:attribute>
+						</country>
+					</address>
+				</xsl:if>
 	        </affiliation>
 		</xsl:if>	
     </xsl:template>
@@ -317,40 +331,6 @@
             <head>Acknowledgements</head>
             <xsl:apply-templates/>
         </div>
-    </xsl:template>
-
-    <!-- Figures -->
-    <xsl:template match="fig">
-        <figure>
-            <xsl:attribute name="xml:id">
-                <xsl:value-of select="@id"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </figure>
-    </xsl:template>
-
-    <xsl:template match="fig/label">
-        <head type="label">
-            <xsl:apply-templates/>
-        </head>
-    </xsl:template>
-
-    <xsl:template match="caption">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="caption/title">
-        <head type="caption-title">
-            <xsl:apply-templates/>
-        </head>
-    </xsl:template>
-
-    <xsl:template match="graphic">
-        <graphic>
-            <xsl:attribute name="url">
-                <xsl:value-of select="@xlink:href"/>
-            </xsl:attribute>
-        </graphic>
     </xsl:template>
 
     <!-- Tables -->

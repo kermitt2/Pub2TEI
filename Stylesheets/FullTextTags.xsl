@@ -342,12 +342,6 @@
 		</div>
     </xsl:template>
 	
-    <xsl:template match="wiley:title">
-        <head>
-            <xsl:apply-templates/>
-		</head>
-    </xsl:template>
-	
     <xsl:template match="online-methods"><xsl:apply-templates/></xsl:template>
 	
 </xsl:stylesheet>
