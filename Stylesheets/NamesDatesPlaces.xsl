@@ -279,7 +279,7 @@
     <!-- NLM 2.2: email -->
     <!-- Springer: Email -->
 
-    <xsl:template match="email | corresponding-author-email | Email | eml">
+    <xsl:template match="corresponding-author-email | Email | eml">
         <xsl:if test=".!=''">
             <email>
                 <xsl:apply-templates/>

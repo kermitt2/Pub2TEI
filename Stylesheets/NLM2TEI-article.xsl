@@ -16,7 +16,7 @@
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
-    <xsl:template match="article[front] | article[pubfm]">
+    <xsl:template match="article[front] | article[pubfm] | headerx">
         <xsl:message>NLM2TEI-article.xsl</xsl:message>
         <TEI>
             <xsl:if test="@xml:lang">
@@ -55,11 +55,11 @@
                         <xsl:apply-templates select="front | pubfm" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
-                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs">
+                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
-		                <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs">
-		                	<xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs"/>
+		                <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp">
+		                	<xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp"/>
 		                </xsl:if>
 						
                         <xsl:apply-templates select="front/article-meta/kwd-group"/>
@@ -78,7 +78,7 @@
                 </xsl:if-->
                 <!-- No test if made for body since it is considered a mandatory element -->
                 <body>
-                    <xsl:apply-templates select="body/* | bdy/p | bdy/sec"/>
+                    <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres | bdy"/>
 					<xsl:apply-templates select="bm/objects/*"/>
                 </body>
                 <xsl:if test="back| bm">
@@ -137,8 +137,8 @@
             <analytic>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="article-meta/contrib-group/*[name()!='aff']"/>
-				<xsl:if test="/article/fm/aug">
-					<xsl:apply-templates select="/article/fm/aug/*"/>
+                <xsl:if test="/article/fm/aug | /headerx/fm/aug">
+                    <xsl:apply-templates select="/article/fm/aug/*| /headerx/fm/aug/*"/>
 				</xsl:if>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="article-meta/title-group/*"/>
@@ -185,21 +185,47 @@
             <xsl:value-of select="."/>
         </idno>
     </xsl:template>
+    <xsl:template match="ArticleId">
+        <idno>
+            <xsl:attribute name="type">
+                <xsl:value-of select="ArticleId"/>
+            </xsl:attribute>
+            <xsl:value-of select="."/>
+        </idno>
+    </xsl:template>
 
     <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- author related information -->
 
-    <xsl:template match="aug/au">
+    <xsl:template match="aug/au | aug/cau">
 		<author>
-			<persName>
+		    <persName>
             	<xsl:apply-templates/>
         	</persName>
+		    <!-- email -->
+		    <xsl:if test="../caff/coid">
+		            <xsl:apply-templates select="../caff[coid[@id=current()/corf/@rid]]" mode="sourceDesc"/>
+		    </xsl:if>
 			<!-- affiliation -->
-			<xsl:if test="../aff">
-				<xsl:apply-templates select="../aff" mode="sourceDesc"/>
-			</xsl:if>
+		    <xsl:choose>
+		        <!-- SG - cas quand les affiliations n'ont pas de liens auteurs/affiliations définis explicitement ex: nature_headerx_315736a0.xml -->
+		        <xsl:when test="../aff and not(../aff/oid)">
+		            <affiliation xmlns="http://www.loc.gov/mods/v3">
+		                <xsl:value-of select="following-sibling::aff"/>
+		            </affiliation>
+		        </xsl:when>
+		        <xsl:when test="../aff/oid">
+		            <xsl:apply-templates select="../aff[oid[@id=current()/orf/@rid]]" mode="sourceDesc"/>
+		        </xsl:when>
+		        <xsl:when test="../aff">
+		            <xsl:apply-templates select="../aff" mode="sourceDesc"/>
+		        </xsl:when>
+		    </xsl:choose>
+		    <xsl:if test="../caff"/>
 		</author>
     </xsl:template>
+    
+    <xsl:template match="caff"/>
 	
     <xsl:template match="contrib[@contrib-type='author' or not(@contrib-type)]">
         <author>
@@ -243,7 +269,7 @@
 
     <!-- Inline affiliation (embedded in <contrib>) -->
     <xsl:template match="aff | contrib/address">
-		<xsl:if test="not(/article/pubfm)">
+        <xsl:if test="not(/article/pubfm | /headerx/pubfm)">
 			<!-- this only apply to NPG articles not containing a pubfm style component -->
 	        <affiliation>
 	            <xsl:apply-templates select="*[name(.)!='addr-line' and name(.)!='country']"/>
@@ -256,13 +282,65 @@
 	        </affiliation>
 		</xsl:if>
     </xsl:template>
-	
+    
+    <xsl:template match="caff" mode="sourceDesc">
+        <xsl:choose>
+            <xsl:when test="email">
+                <email>
+                <xsl:value-of select="email"/>
+                </email>
+            </xsl:when>
+            <xsl:otherwise>
+                <affiliation>
+                    <xsl:value-of select="."/> 
+                </affiliation>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template match="aff" mode="sourceDesc">
         <affiliation>
-			<xsl:value-of select="."/>
+            <xsl:choose>
+                <xsl:when test="org | street | cny | zip | cty ">
+            <xsl:if test="org">
+                <orgName type="institution">
+                    <xsl:value-of select="org"/>
+                </orgName>
+            </xsl:if>
+            <xsl:if test="street | cny | zip | cty">
+                <address>
+                    <xsl:if test="street">
+                        <street>
+                    <xsl:value-of select="street"/>
+                            </street>
+                        </xsl:if>
+                     <xsl:if test="zip">
+                        <postCode>
+                    <xsl:value-of select="zip"/>
+                            </postCode>
+                        </xsl:if>
+                     <xsl:if test="cty">
+                        <settlement>
+                    <xsl:value-of select="cty"/>
+                            </settlement>
+                        </xsl:if>
+                    <xsl:if test="cny">
+                        <country>
+                            <xsl:attribute name="key">
+                                <!-- faire le lien avec la feuille countryCodes -->
+                            </xsl:attribute>
+                    <xsl:value-of select="cny"/>
+                            </country>
+                        </xsl:if>
+                </address>
+            </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="."/>
+                </xsl:otherwise>
+            </xsl:choose>
         </affiliation>
     </xsl:template>
-
     <xsl:template match="aff/bold">
         <ref>
             <xsl:apply-templates/>
@@ -295,7 +373,7 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-
+    
     <!-- specific notes attached to authors (PNAS - 3.0 example)-->
     <xsl:template match="xref[@ref-type='author-notes']">
         <xsl:variable name="index" select="@rid"/>

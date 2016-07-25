@@ -347,8 +347,10 @@
 				<xsl:apply-templates select="reftxt/atl"/>
             	<xsl:apply-templates select="reftxt/refau"/>
 			</analytic>
-			<monogr>	
-				<xsl:apply-templates select="reftxt/jtl"/>
+			<monogr>
+			    <xsl:if test="reftxt/jtl | reftxt/btl">
+			        <xsl:apply-templates select="reftxt/jtl | reftxt/btl"/>
+			    </xsl:if>
 				<imprint>
 					<xsl:apply-templates select="reftxt/vid"/>
 					<xsl:apply-templates select="reftxt/ppf"/>

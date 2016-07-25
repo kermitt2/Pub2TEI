@@ -173,6 +173,12 @@
 		</xsl:choose>
     </xsl:template>
 	
+    <xsl:template match="greeting">
+        <salute>
+            <xsl:apply-templates/>
+        </salute>
+    </xsl:template>
+    
     <xsl:template match="bibr | bibrinl">
         <ref type="bibr">
             <xsl:attribute name="target">

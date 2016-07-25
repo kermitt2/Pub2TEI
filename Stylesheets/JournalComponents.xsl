@@ -109,6 +109,14 @@
             </title>
         </xsl:if>
     </xsl:template>
+    
+    <xsl:template match="btl">
+        <xsl:if test=".!=''">
+            <title level="m" type="main">
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
 
     <!-- Additional journal namings -->
 
