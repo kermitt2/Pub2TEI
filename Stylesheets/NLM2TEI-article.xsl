@@ -208,9 +208,25 @@
 		    </xsl:if>
 			<!-- affiliation -->
 		    <xsl:choose>
+		        <!-- SG - cas quand les liens auteurs/affiliations sont définis dans <super> ex: nature_headerx_315773a0.xml -->
+		        <xsl:when test="super">
+		            <xsl:for-each select="super">
+		                <xsl:variable name="super">
+		                    <xsl:value-of select="//aff[super=current()/.]"/>
+		                </xsl:variable>
+		                <xsl:choose>
+		                    <xsl:when test="$super">
+		                        <!-- SG: nettoyage de la balise <super> polluant l'affiliation -->
+		                        <affiliation> 
+		                            <xsl:value-of select="normalize-space(substring-after($super,../super))"/>
+		                        </affiliation>
+		                    </xsl:when>
+		                </xsl:choose>
+		            </xsl:for-each> 
+		        </xsl:when>
 		        <!-- SG - cas quand les affiliations n'ont pas de liens auteurs/affiliations définis explicitement ex: nature_headerx_315736a0.xml -->
 		        <xsl:when test="../aff and not(../aff/oid)">
-		            <affiliation xmlns="http://www.loc.gov/mods/v3">
+		            <affiliation>
 		                <xsl:value-of select="following-sibling::aff"/>
 		            </affiliation>
 		        </xsl:when>
@@ -226,6 +242,7 @@
     </xsl:template>
     
     <xsl:template match="caff"/>
+    <xsl:template match="au/super"/>
 	
     <xsl:template match="contrib[@contrib-type='author' or not(@contrib-type)]">
         <author>
