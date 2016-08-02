@@ -17,9 +17,18 @@
         </xsl:message>
         <xsl:if test=".!=''">
             <xsl:element name="{name(.)}">
+                <!-- SG - récupération des attributs -->
+                <xsl:apply-templates select="@*"/>
                 <xsl:apply-templates/>
             </xsl:element>
         </xsl:if>
+    </xsl:template>
+    
+    <!-- SG - récupération des attributs -->
+    <xsl:template match="@*">
+        <xsl:attribute name="{name(.)}">
+            <xsl:value-of select=". "/>
+        </xsl:attribute>
     </xsl:template>
 
     <!-- Default rules for MathML -->
