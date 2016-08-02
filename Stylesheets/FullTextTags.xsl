@@ -14,7 +14,56 @@
         <p><xsl:apply-templates/></p>
     </xsl:template>
     
-    
+    <!-- SG Nature <crosshd> Titre paragraphe -->
+    <xsl:template match="crosshd">
+        <p><hi rend="bold"><xsl:apply-templates/></hi></p>
+    </xsl:template>
+    <!-- SG Nature reprise balise bdy -->
+    <xsl:template match="bi">
+        <hi rend="bold italic"><xsl:apply-templates/></hi>
+    </xsl:template>
+    <xsl:template match="deflistr">
+        <ref>
+            <xsl:attribute name="type">definition</xsl:attribute>
+            <xsl:attribute name="target">
+                <xsl:text>#</xsl:text>
+               <xsl:apply-templates select="@rid"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
+    <xsl:template match="scientific">
+        <ref>
+            <xsl:attribute name="corresp">
+                <xsl:apply-templates select="@id"/>
+            </xsl:attribute>
+            <xsl:attribute name="type">
+                <xsl:apply-templates select="@type"/>
+            </xsl:attribute>
+            <xsl:attribute name="subtype">
+                <xsl:apply-templates select="@dbtype"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
+    <xsl:template match="deflist">
+        <list type='gloss'>
+            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates/>
+        </list>
+    </xsl:template>
+    <xsl:template match="deflist/term">
+        <label>
+            <xsl:apply-templates/>
+        </label>
+    </xsl:template>
+    <xsl:template match="deflist/defn">
+        <item>
+            <xsl:apply-templates/>
+        </item>
+    </xsl:template>
+    <!-- SG - Nature: nettoyage du <bdy> polluant -->
+    <xsl:template match="bdy"/>
     <!-- Lists -->
     
     <xsl:template match="ce:list">
@@ -127,7 +176,7 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
-	
+    
     <xsl:template match="wiley:link">
 		<!-- for wiley we don't know in advance which type of object is referenced but 
 		it seems that we can use the identifier string to have a reliable information -->
@@ -241,7 +290,7 @@
     <!-- Springer: Emphasis[@Type='Italic'], Emphasis[@Type='Bold'], Subscript, Superscript -->
 
     <xsl:template
-        match="it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i | i">
+        match="i | it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i">
         <xsl:if test=".!=''"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
