@@ -240,6 +240,18 @@
 		    <xsl:if test="../caff"/>
 		</author>
     </xsl:template>
+    <!--SG: reprise biographie des auteurs -->
+    <xsl:template match="bio">
+        <state>
+            <xsl:attribute name="type">biography</xsl:attribute>
+            <xsl:apply-templates/>
+        </state>
+    </xsl:template>
+    <xsl:template match="bio/p">
+        <desc>
+            <xsl:apply-templates/>
+        </desc>
+    </xsl:template>
     
     <xsl:template match="caff"/>
     <xsl:template match="au/super"/>
