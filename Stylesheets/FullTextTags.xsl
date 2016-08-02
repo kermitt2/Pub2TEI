@@ -46,6 +46,14 @@
             <xsl:apply-templates/>
         </ref>
     </xsl:template>
+    <xsl:template match="weblink">
+        <ref>
+            <xsl:attribute name="target">
+                <xsl:apply-templates select="@url"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
     <xsl:template match="deflist">
         <list type='gloss'>
             <xsl:apply-templates select="@*"/>
@@ -64,6 +72,8 @@
     </xsl:template>
     <!-- SG - Nature: nettoyage du <bdy> polluant -->
     <xsl:template match="bdy"/>
+    <!-- SG - Nature: nettoyage du <linkgrp> polluant -->
+    <xsl:template match="linkgrp"/>
     <!-- Lists -->
     
     <xsl:template match="ce:list">
