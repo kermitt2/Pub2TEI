@@ -21,7 +21,7 @@
     <!-- EDP: ArticleTitle/Title -->
 
     <xsl:template
-        match="article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title | wiley:articleTitle">
+        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title | wiley:articleTitle">
         <xsl:if test=".!=''">
             <title level="a" type="main">
                 <xsl:if test="@Language">
@@ -408,7 +408,9 @@
     <xsl:template match="reftxt/cd">
         <date>
             <xsl:attribute name="when">
-				<xsl:apply-templates select="text()"/>
+                <!-- SG reprise de la date (ex:nrn3258_subject.xml)(26 Aug  2011)
+                cibler sur attribut @year et non plus sur le text()-->
+                    <xsl:apply-templates select="@year"/>
 			</xsl:attribute>
         </date>
     </xsl:template>

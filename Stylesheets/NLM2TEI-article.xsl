@@ -55,13 +55,18 @@
                         <xsl:apply-templates select="front | pubfm" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
-                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp">
+                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
 		                <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp">
 		                	<xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp"/>
 		                </xsl:if>
-						
+                        <!-- SG NLM subject -->
+                        <xsl:if test="pubfm/subject">
+                            <textClass>
+                                <xsl:apply-templates select="pubfm/subject"/>
+                            </textClass>
+                        </xsl:if>
                         <xsl:apply-templates select="front/article-meta/kwd-group"/>
                     </profileDesc>
                 </xsl:if>
@@ -78,8 +83,14 @@
                 </xsl:if-->
                 <!-- No test if made for body since it is considered a mandatory element -->
                 <body>
-                    <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres | bdy"/>
+                    <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres/*"/>
 					<xsl:apply-templates select="bm/objects/*"/>
+                    <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
+                    <xsl:if test="//headerx/bdy">
+                        <p>
+                            <xsl:value-of select="//headerx/bdy"/>
+                        </p>
+                    </xsl:if>
                 </body>
                 <xsl:if test="back| bm">
                     <back>
@@ -140,8 +151,15 @@
                 <xsl:if test="/article/fm/aug | /headerx/fm/aug">
                     <xsl:apply-templates select="/article/fm/aug/*| /headerx/fm/aug/*"/>
 				</xsl:if>
+                <xsl:if test="//bdy/corres/aug">
+                    <xsl:apply-templates select="//bdy/corres/aug/*"/>
+                </xsl:if>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="article-meta/title-group/*"/>
+                    <!-- SG - ajout articleID -->
+                <idno type="articleId">
+                    <xsl:value-of select="//ArticleId |//article/@id"/>
+                </idno>
             </analytic>
             <monogr>
                 <xsl:apply-templates select="journal-meta/journal-title | jtl"/>
@@ -625,7 +643,7 @@
             <xsl:apply-templates/>
         </list>
     </xsl:template>
-
+    
     <xsl:template match="def-item">
         <item>
             <!-- To be compliant with the ISO style for terms and definitions ;-) -->
@@ -659,7 +677,7 @@
             </xsl:if>
         </list>
     </xsl:template>
-
+    
     <xsl:template match="list-item">
         <item>
             <xsl:apply-templates/>

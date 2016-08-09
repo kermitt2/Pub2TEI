@@ -30,6 +30,15 @@
             </keywords>
         </textClass>
     </xsl:template>
+    <!-- SG - ajout subject NLM/Nature -->
+    <xsl:template match="pubfm/subject">
+            <classCode>
+                <xsl:attribute name="scheme">
+                    <xsl:apply-templates select="@type"/>
+                </xsl:attribute>
+                <xsl:value-of select="@code"/>
+            </classCode>
+    </xsl:template>
 
     <xsl:template match="keyword | Keyword | ce:keyword | kwd">
 		<!-- PL: <list><item> under <keywords> is deprecated -->

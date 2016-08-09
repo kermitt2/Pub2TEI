@@ -24,7 +24,7 @@
         </head>
     </xsl:template>
 
-    <xsl:template match="fig/caption">
+    <xsl:template match="fig/caption/p">
         <figDesc>
             <xsl:apply-templates/>
         </figDesc>

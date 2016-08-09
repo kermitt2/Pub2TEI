@@ -32,6 +32,17 @@
             <xsl:apply-templates/>
         </ref>
     </xsl:template>
+    <!-- SG supplementary information -->
+    <xsl:template match="sir">
+        <ref>
+            <xsl:attribute name="type">suppinfo</xsl:attribute>
+            <xsl:attribute name="target">
+                <xsl:text>#</xsl:text>
+                <xsl:apply-templates select="@rid"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
     <xsl:template match="scientific">
         <ref>
             <xsl:attribute name="corresp">
@@ -55,10 +66,13 @@
         </ref>
     </xsl:template>
     <xsl:template match="deflist">
-        <list type='gloss'>
+        <list>
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates/>
         </list>
+    </xsl:template>
+    <xsl:template match="deflist/@type">
+        <xsl:attribute name="type">gloss</xsl:attribute>
     </xsl:template>
     <xsl:template match="deflist/term">
         <label>
@@ -72,6 +86,10 @@
     </xsl:template>
     <!-- SG - Nature: nettoyage du <bdy> polluant -->
     <xsl:template match="bdy"/>
+    <!-- SG - Nature: nettoyage des auteurs coincés dans le bdy (ex:nature_body_corres.xml) -->
+    <xsl:template match="bdy/corres/aug"/>
+    <xsl:template match="deflist/@colwd"/>
+    <xsl:template match="deflist/@sepch"/>
     <!-- SG - Nature: nettoyage du <linkgrp> polluant -->
     <xsl:template match="linkgrp"/>
     <!-- Lists -->
