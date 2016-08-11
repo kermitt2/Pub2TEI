@@ -229,14 +229,14 @@
 		        <!-- SG - cas quand les liens auteurs/affiliations sont définis dans <super> ex: nature_headerx_315773a0.xml -->
 		        <xsl:when test="super">
 		            <xsl:for-each select="super">
+		                <!-- SG: nettoyage de la balise <super> polluant l'affiliation, ne prendre que le texte -->
 		                <xsl:variable name="super">
-		                    <xsl:value-of select="//aff[super=current()/.]"/>
+		                    <xsl:value-of select="//aff[super=current()/.]/text()"/>
 		                </xsl:variable>
 		                <xsl:choose>
 		                    <xsl:when test="$super">
-		                        <!-- SG: nettoyage de la balise <super> polluant l'affiliation -->
 		                        <affiliation> 
-		                            <xsl:value-of select="normalize-space(substring-after($super,../super))"/>
+		                            <xsl:value-of select="normalize-space($super)"/>
 		                        </affiliation>
 		                    </xsl:when>
 		                </xsl:choose>
