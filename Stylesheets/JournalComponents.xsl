@@ -42,7 +42,12 @@
             </title>
         </xsl:if>
     </xsl:template>
-
+    <!--SG - <topic> dans titre remplacé par <hi>-->
+    <xsl:template match="atl/topic">
+        <hi>
+            <xsl:apply-templates/>
+        </hi>
+    </xsl:template>
     <!-- BMJ: short-title -->
     <xsl:template match="short-title">
         <xsl:if test=".!=''">

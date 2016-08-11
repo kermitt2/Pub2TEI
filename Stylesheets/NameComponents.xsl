@@ -6,7 +6,7 @@
 	xmlns:wiley="http://www.wiley.com/namespaces/wiley" exclude-result-prefixes="#all">
     <xsl:output encoding="UTF-8" method="xml"/>
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
-    <xsl:template match="name | persname">
+    <xsl:template match="name | persname | auname">
 		<author>
 			<persName>
             	<xsl:apply-templates/>

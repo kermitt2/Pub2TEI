@@ -29,6 +29,11 @@
             <xsl:apply-templates/>
         </figDesc>
     </xsl:template>
+    <xsl:template match="fig/credit">
+        <p>
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
 	
 	<!-- Wiley -->
     <xsl:template match="wiley:figure">

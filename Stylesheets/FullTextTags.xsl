@@ -11,7 +11,9 @@
     <!-- Springer: Para, SimplePara -->
 
     <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para | wiley:p">
-        <p><xsl:apply-templates/></p>
+        <p>
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
     
     <!-- SG Nature <crosshd> Titre paragraphe -->
@@ -22,6 +24,22 @@
     <xsl:template match="bi">
         <hi rend="bold italic"><xsl:apply-templates/></hi>
     </xsl:template>
+    <!-- SG Nature reprise illustration -->
+    <xsl:template match="illus">
+        <figure>
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@id"/>
+                </xsl:attribute>
+            
+            <figDesc>
+                <xsl:value-of select="caption/p"/> 
+            </figDesc>
+            <p>
+                <xsl:value-of select="credit"/> 
+            </p>
+        </figure>
+    </xsl:template>
+    <!-- SG Nature reprise deflistr -->
     <xsl:template match="deflistr">
         <ref>
             <xsl:attribute name="type">definition</xsl:attribute>
@@ -263,12 +281,30 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
+    <!-- SG ajout ref <xnav> -->
+    <xsl:template match="xnav">
+        <ref type="bibr">
+            <xsl:attribute name="target">
+                <xsl:value-of select="concat('#',@extrefid)"/>
+            </xsl:attribute>
+        </ref>
+    </xsl:template>
 	
     <xsl:template match="figr">
         <ref type="figure">
             <xsl:attribute name="target">
                 <xsl:value-of select="concat('#',@rid)"/>
             </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
+    <!-- SG - ajout illustration à figure -->
+    <xsl:template match="illusr">
+        <ref type="figure">
+            <xsl:attribute name="target">
+                <xsl:value-of select="concat('#',@rid)"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
         </ref>
     </xsl:template>
 

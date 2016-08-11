@@ -352,10 +352,15 @@
 			        <xsl:apply-templates select="reftxt/jtl | reftxt/btl"/>
 			    </xsl:if>
 				<imprint>
-					<xsl:apply-templates select="reftxt/vid"/>
-					<xsl:apply-templates select="reftxt/ppf"/>
-					<xsl:apply-templates select="reftxt/ppl"/>
-					<xsl:apply-templates select="reftxt/cd"/>
+				    <xsl:choose>
+				        <xsl:when test="reftxt/vid | reftxt/ppf  | reftxt/ppl  | reftxt/cd">
+				            <xsl:apply-templates select="reftxt/vid | reftxt/ppf  | reftxt/ppl  | reftxt/cd"/>
+				        </xsl:when>
+				        <xsl:otherwise>
+				            <!-- ajout <publisher> vide pour validation TEI quand <imprint> est vide -->
+				            <publisher/>
+				        </xsl:otherwise>
+				    </xsl:choose>
 				</imprint>	
 			</monogr>	
         </biblStruct>
