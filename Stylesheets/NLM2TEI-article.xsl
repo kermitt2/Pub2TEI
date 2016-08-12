@@ -675,6 +675,15 @@
                 </xsl:attribute>
                 <xsl:apply-templates/>
             </xsl:if>
+            <xsl:if test="@id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@id"/>
+                </xsl:attribute>
+                <xsl:apply-templates/>
+            </xsl:if>
+            <xsl:if test="li">
+                    <xsl:apply-templates/>
+            </xsl:if>
         </list>
     </xsl:template>
     

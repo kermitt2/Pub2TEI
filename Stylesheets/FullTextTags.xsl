@@ -20,9 +20,47 @@
     <xsl:template match="crosshd">
         <p><hi rend="bold"><xsl:apply-templates/></hi></p>
     </xsl:template>
-    <!-- SG Nature reprise balise bdy -->
+    <!-- SG Nature reprise balise bi -->
     <xsl:template match="bi">
         <hi rend="bold italic"><xsl:apply-templates/></hi>
+    </xsl:template>
+    <!-- SG Nature reprise balise bxr texte contenu dans des box dans colonne externe-->
+    <xsl:template match="bxr">
+        <ref type="box">
+            <xsl:attribute name="target">
+                <xsl:value-of select="concat('#',@rid)"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
+    <xsl:template match="bx">
+        <floatingText type="box">
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+            <body>
+                <xsl:apply-templates/>
+            </body>
+        </floatingText>
+    </xsl:template>
+    <xsl:template match="bxtitle">
+        <head>
+            <xsl:apply-templates/>
+        </head>
+    </xsl:template>
+    <xsl:template match="li">
+        <item>
+            <xsl:apply-templates/>
+        </item>
+    </xsl:template>
+    <!-- SG Nature reprise fnr -->
+    <xsl:template match="fnr">
+        <ref type="footnote">
+            <xsl:attribute name="target">
+                <xsl:value-of select="concat('#',@rid)"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
     </xsl:template>
     <!-- SG Nature reprise illustration -->
     <xsl:template match="illus">
@@ -30,13 +68,16 @@
                 <xsl:attribute name="xml:id">
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
-            
-            <figDesc>
-                <xsl:value-of select="caption/p"/> 
-            </figDesc>
-            <p>
-                <xsl:value-of select="credit"/> 
-            </p>
+            <xsl:if test="caption/p">
+                <figDesc>
+                    <xsl:value-of select="caption/p"/> 
+                </figDesc>
+            </xsl:if>
+            <xsl:if test="credit">
+                <p>
+                    <xsl:value-of select="credit"/> 
+                </p>
+            </xsl:if>
         </figure>
     </xsl:template>
     <!-- SG Nature reprise deflistr -->
@@ -125,7 +166,7 @@
     </xsl:template>
 
     <!-- Formules mathématiques -->
-    <xsl:template match="Formula | formula | inline-formula | disp-formula | ce:formula">
+    <xsl:template match="f|Formula | formula | inline-formula | disp-formula | ce:formula">
         <formula>
             <xsl:if test="@id">
                 <xsl:attribute name="xml:id">
@@ -398,7 +439,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="Subscript | sub | ce:inf | wiley:sub">
+    <xsl:template match="inf|Subscript | sub | ce:inf | wiley:sub">
         <xsl:if test=".!=''"><hi rend="subscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
