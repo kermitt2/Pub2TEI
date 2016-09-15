@@ -34,6 +34,8 @@
         </ref>
     </xsl:template>
     <xsl:template match="bx">
+        <!-- SG - encapsulage dans div -->
+        <div>
         <floatingText type="box">
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@id"/>
@@ -42,6 +44,7 @@
                 <xsl:apply-templates/>
             </body>
         </floatingText>
+        </div>
     </xsl:template>
     <xsl:template match="bxtitle">
         <head>
