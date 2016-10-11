@@ -21,9 +21,12 @@
     <!-- EDP: ArticleTitle/Title -->
 
     <xsl:template
-        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title | wiley:articleTitle">
+        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle">
         <xsl:if test=".!=''">
             <title level="a" type="main">
+                <xsl:choose>
+                    <xsl:when test="wiley:citation[@type='book']"></xsl:when>
+                </xsl:choose>
                 <xsl:if test="@Language">
                     <xsl:attribute name="xml:lang">
                         <xsl:choose>
@@ -110,6 +113,26 @@
         match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl | wiley:journalTitle">
         <xsl:if test=".!=''">
             <title level="j" type="main">
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- SG - ajout des refs book -->
+    <xsl:template
+        match="wiley:bookTitle">
+        <xsl:if test=".!=''">
+            <title level="m" type="main">
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- SG - ajout des refs series -->
+    <xsl:template
+        match="wiley:bookSeriesTitle">
+        <xsl:if test=".!=''">
+            <title level="s" type="main">
                 <xsl:apply-templates/>
             </title>
         </xsl:if>
@@ -377,10 +400,11 @@
         </xsl:if>
     </xsl:template>
 
+<!-- SG: nettoyage caractéres polluants dans les données -->
     <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast'] | wiley:pageLast">
         <xsl:if test=".!=''">
-            <biblScope unit="page" to="{.}">
-                <xsl:apply-templates/>
+            <biblScope unit="page" to="{translate(.,'.','')}">
+                <xsl:value-of select="translate(.,'.','')"/>
             </biblScope>
         </xsl:if>
     </xsl:template>
@@ -402,7 +426,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="publisher-loc | pub_location | PublisherLocation">
+    <xsl:template match="publisher-loc | pub_location | PublisherLocation | wiley:publisherLoc">
         <xsl:if test=".!=''">
             <pubPlace>
                 <xsl:apply-templates/>
@@ -420,10 +444,11 @@
         </date>
     </xsl:template>
 	
+    <!-- SG: nettoyage caractéres polluants dans les données -->
     <xsl:template match="wiley:pubYear">
         <date>
             <xsl:attribute name="when">
-				<xsl:apply-templates select="text()"/>
+                <xsl:value-of select="translate(.,'.','')"/>
 			</xsl:attribute>
         </date>
     </xsl:template>

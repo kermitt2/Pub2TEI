@@ -128,6 +128,16 @@
 			<xsl:apply-templates/>
 		</persName>
 	</xsl:template>
+    
+    <!-- SG - ajout email -->
+    <xsl:template match="wiley:contactDetails">
+        <email>
+            <xsl:apply-templates/>
+        </email>
+    </xsl:template>
+    <xsl:template match="wiley:email">
+        <xsl:apply-templates/>
+    </xsl:template>
 	
     <!-- Champs dans la description des noms qui ne sont pas retenus -->
     <xsl:template match="NoGivenName"/>

@@ -19,7 +19,7 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-						<title leval= "a" type="main">
+						<title level= "a" type="main">
                         	<xsl:value-of select="header/contentMeta/titleGroup/title[@type='main']"/>
 						</title>
                     </titleStmt>
@@ -32,8 +32,9 @@
 						</xsl:if>
 						<xsl:if test="header/publicationMeta/copyright">
 							<availability>
+							    <!-- SG: ajout licence -->
 								<licence>
-                        			<xsl:apply-templates select="header/publicationMeta/copyright/*"/>
+								    <xsl:apply-templates select="header/publicationMeta/copyright/text()"/>
 								</licence>
 							</availability>
 						</xsl:if>
@@ -53,7 +54,10 @@
 						<!-- PL: abstract is moved from <front> to here -->
 		                <xsl:if test="header/contentMeta/abstractGroup/abstract/p">
 							<abstract>
-		                		<xsl:apply-templates select="header/contentMeta/abstractGroup/abstract/p"/>
+							    <!-- reprise SG: apply-templates ne matche pas, remplacé par value-of + ajout <p>-->
+							    <p>
+							        <xsl:value-of select="header/contentMeta/abstractGroup/abstract/p"/>
+							    </p>
 							</abstract>
 		                </xsl:if>
 						<xsl:if test="header/contentMeta/keywordGroup">
@@ -73,9 +77,17 @@
             </teiHeader>
             <text>
                 <!-- No test if made for body since it is considered a mandatory element -->
-                <body>
-                    <xsl:apply-templates select="body" mode="bodyOnly"/>
-                </body>
+                <!-- SG test sur body si vide information minimale à reporter pour validation TEI -->
+                <xsl:choose>
+                    <xsl:when test="body/p">
+                        <body>
+                            <xsl:apply-templates select="body" mode="bodyOnly"/>
+                        </body>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <body><div><p></p></div></body>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:if test="body/bibliography">
                     <back>
                         <xsl:apply-templates select="body/bibliography"/>
@@ -156,10 +168,10 @@
 
 	<!-- title group -->
 	<xsl:template match="titleGroup"> 
-		<title leval= "a" type="main">
+		<title level= "a" type="main">
         	<xsl:value-of select="title[@type='main']"/>
 		</title>
-		<title leval= "a" type="short">
+		<title level= "a" type="short">
         	<xsl:value-of select="title[@type='short']"/>
 		</title>
 	</xsl:template>
@@ -191,7 +203,7 @@
 		<xsl:if test="@creatorRole='author'">
 			<author>
 				<xsl:if test="@corresponding">
-		            <xsl:attribute name="type">
+		            <xsl:attribute name="role">
 		                <xsl:text>corresp</xsl:text>
 		            </xsl:attribute>
 				</xsl:if>	

@@ -526,8 +526,13 @@
 	
 	<xsl:template match="wiley:section/wiley:title">
 		<xsl:apply-templates/>
-	</xsl:template>	
-	
+	</xsl:template>
+    
+	<!-- SG ajout citation "other" -->
+    <xsl:template match="wiley:citation">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
     <xsl:template match="wiley:url">
         <ref type="url">
           	<xsl:value-of select="@href"/>
