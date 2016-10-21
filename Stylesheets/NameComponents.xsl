@@ -131,12 +131,12 @@
     
     <!-- SG - ajout email -->
     <xsl:template match="wiley:contactDetails">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="wiley:contactDetails/wiley:email">
         <email>
             <xsl:apply-templates/>
         </email>
-    </xsl:template>
-    <xsl:template match="wiley:email">
-        <xsl:apply-templates/>
     </xsl:template>
 	
     <!-- Champs dans la description des noms qui ne sont pas retenus -->

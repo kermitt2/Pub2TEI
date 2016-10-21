@@ -84,6 +84,12 @@
                             <xsl:apply-templates select="body" mode="bodyOnly"/>
                         </body>
                     </xsl:when>
+                    <!-- SG ajout du niveau section -->
+                    <xsl:when test="body/section">
+                        <body>
+                            <xsl:apply-templates select="body" mode="bodyOnly"/>
+                        </body>
+                    </xsl:when>
                     <xsl:otherwise>
                         <body><div><p></p></div></body>
                     </xsl:otherwise>

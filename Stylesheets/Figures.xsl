@@ -48,8 +48,12 @@
             <xsl:apply-templates select="wiley:caption"/>
         </figure>
     </xsl:template>
-	
+    
+    <!-- SG - reprise traitement des figures wiley -->
     <xsl:template match="wiley:caption">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="wiley:caption/wiley:p">
         <figDesc>
             <xsl:apply-templates/>
         </figDesc>

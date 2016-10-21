@@ -133,7 +133,7 @@
         </head>
     </xsl:template>
 	
-    <xsl:template match="wiley:label">
+    <xsl:template match="wiley:p/wiley:label">
         <label><xsl:value-of select="text()"/></label>
     </xsl:template>
 	

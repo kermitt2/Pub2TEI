@@ -56,6 +56,22 @@
             <xsl:apply-templates/>
         </item>
     </xsl:template>
+    
+    <!-- SG - ajout des listes pour wiley -->
+    <xsl:template match="wiley:listItem">
+        <item>
+            <xsl:apply-templates/>
+        </item>
+    </xsl:template>
+    
+    <!-- SG - ajout wiley floatingText -->
+    <xsl:template match="wiley:blockFixed">
+        <floatingText>
+            <body>
+            <xsl:apply-templates/>
+            </body>
+        </floatingText>
+    </xsl:template>
     <!-- SG Nature reprise fnr -->
     <xsl:template match="fnr">
         <ref type="footnote">
@@ -255,7 +271,36 @@
             </xsl:copy>
         </formula>
     </xsl:template>
-
+    
+    <!-- SG - WILEY ajout élément latex -->
+    <xsl:template match="wiley:span[@type='tex']">
+        <hi>
+            <formula notation="TeX">
+                <!-- http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/examples-formula.html -->
+                <xsl:apply-templates/>
+            </formula>
+        </hi>
+    </xsl:template>
+    
+    <!-- SG - WILEY traitement mathml - voir notice ZYGO.ZYGO1222.xml -->
+    <xsl:template match="wiley:displayedItem[@type='mathematics']">
+        <formula notation="mathml">
+        <xsl:apply-templates/>
+        </formula>
+    </xsl:template>
+    <xsl:template match="wiley:displayedItem[@type='mathematics']/wiley:label"/>
+    <xsl:template match="wiley:mediaResourceGroup">
+            <xsl:apply-templates/>
+        <xsl:if test="wiley:mediaResource/@href">
+                <media mimeType="image/png">
+                    <xsl:attribute name="url">
+                        <xsl:value-of select="wiley:mediaResource/@href"/>
+                    </xsl:attribute>
+                </media>
+            
+        </xsl:if>
+    </xsl:template>
+    
     <!-- References in text -->
     <!-- citref for RCS (Royal CHemical Society) -->
 
@@ -512,9 +557,11 @@
 	
     <xsl:template match="wiley:section">
         <div>
+            <xsl:if test="@xml:lang">
             <xsl:attribute name="xml:lang">
                 <xsl:value-of select="@xml:lang"/>
             </xsl:attribute>
+            </xsl:if>
 			<xsl:if test="wiley:title">
 		        <head>
 		            <xsl:apply-templates select="wiley:title"/>
