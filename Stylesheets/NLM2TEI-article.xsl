@@ -348,16 +348,16 @@
     <xsl:template match="aff" mode="sourceDesc">
         <affiliation>
             <xsl:choose>
-                <xsl:when test="org | street | cny | zip | cty ">
+                <xsl:when test="org | street | cny | zip | cty | st">
 		            <xsl:if test="org">
 		                <orgName type="institution">
 		                    <xsl:value-of select="org"/>
 		                </orgName>
 		            </xsl:if>
-		            <xsl:if test="street | cny | zip | cty">
+		            <xsl:if test="street | cny | zip | cty | st">
 		                <address>
 		                    <xsl:if test="cny | cty | zip | street">
-								<xsl:apply-templates select="cty | cny | zip | street"/>
+								<xsl:apply-templates select="cty | cny | zip | street | st"/>
 		                    </xsl:if>
 		                </address>
 		            </xsl:if>

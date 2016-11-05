@@ -198,8 +198,8 @@
         <xsl:value-of select="$resultCode"/>
     </xsl:template>
 
-
-    <xsl:template match="State | state | corresponding-author-state | province">
+	<!-- PL: add st for Nature -->
+    <xsl:template match="State | state | corresponding-author-state | province | st">
         <xsl:if test="normalize-space(.)!=''">
             <region>
                 <xsl:apply-templates/>
