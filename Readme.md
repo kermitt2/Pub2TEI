@@ -22,7 +22,7 @@ The following publisher's formats should be properly processed:
 - BMJ: metadata, header, bibliography, body
 - Elsevier (journals and conferences): metadata, header, bibliography, body
 - IOP: metadata, header, bibliography. 
-- Nature: metadata, header, bibliography, body 
+- NPG (Nature): metadata, header, bibliography, body 
 - NLM: metadata, header, bibliography, body 
 - OUP: ?
 - PNAS: metadata, header, bibliography, body
@@ -30,6 +30,7 @@ The following publisher's formats should be properly processed:
 - Sage: metadata, header
 - ScholarOne: metadata, header
 - Springer: metadata, header, bibliography, body
+- Wiley: metadata, header, bibliography, body
 
 ## License
 

@@ -25,11 +25,11 @@
     </xsl:template>
     
     <!-- SG - récupération des attributs -->
-    <xsl:template match="@*">
+    <!--xsl:template match="@*">
         <xsl:attribute name="{name(.)}">
             <xsl:value-of select=". "/>
         </xsl:attribute>
-    </xsl:template>
+    </xsl:template-->
 
     <!-- Default rules for MathML -->
     <xsl:template match="*[namespace-uri() = 'http://www.w3.org/1998/Math/MathML']">

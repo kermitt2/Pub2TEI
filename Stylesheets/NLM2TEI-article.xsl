@@ -329,7 +329,7 @@
 	        </affiliation>
 		</xsl:if>
     </xsl:template>
-    
+
     <xsl:template match="caff" mode="sourceDesc">
         <xsl:choose>
             <xsl:when test="email">
@@ -344,43 +344,23 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+
     <xsl:template match="aff" mode="sourceDesc">
         <affiliation>
             <xsl:choose>
                 <xsl:when test="org | street | cny | zip | cty ">
-            <xsl:if test="org">
-                <orgName type="institution">
-                    <xsl:value-of select="org"/>
-                </orgName>
-            </xsl:if>
-            <xsl:if test="street | cny | zip | cty">
-                <address>
-                    <xsl:if test="street">
-                        <street>
-                    <xsl:value-of select="street"/>
-                            </street>
-                        </xsl:if>
-                     <xsl:if test="zip">
-                        <postCode>
-                    <xsl:value-of select="zip"/>
-                            </postCode>
-                        </xsl:if>
-                     <xsl:if test="cty">
-                        <settlement>
-                    <xsl:value-of select="cty"/>
-                            </settlement>
-                        </xsl:if>
-                    <xsl:if test="cny">
-                        <country>
-                            <xsl:attribute name="key">
-                                <!-- faire le lien avec la feuille countryCodes -->
-                            </xsl:attribute>
-                    <xsl:value-of select="cny"/>
-                            </country>
-                        </xsl:if>
-                </address>
-            </xsl:if>
+		            <xsl:if test="org">
+		                <orgName type="institution">
+		                    <xsl:value-of select="org"/>
+		                </orgName>
+		            </xsl:if>
+		            <xsl:if test="street | cny | zip | cty">
+		                <address>
+		                    <xsl:if test="cny | cty | zip | street">
+								<xsl:apply-templates select="cty | cny | zip | street"/>
+		                    </xsl:if>
+		                </address>
+		            </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:value-of select="."/>
@@ -420,7 +400,7 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    
+
     <!-- specific notes attached to authors (PNAS - 3.0 example)-->
     <xsl:template match="xref[@ref-type='author-notes']">
         <xsl:variable name="index" select="@rid"/>

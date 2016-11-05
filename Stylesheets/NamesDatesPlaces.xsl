@@ -140,9 +140,10 @@
     <!-- ScholarOne: city, state, country, province? -->
     <!-- Sage: country -->
     <!-- NLM 2.3 article: country -->
+	<!-- PL: Nanture: cny -->
     <!-- BMJ: corresponding-author-city, corresponding-author-country, corresponding-author-state, corresponding-author-zipcode -->
 
-    <xsl:template match="Country | country | corresponding-author-country">
+    <xsl:template match="Country | country | corresponding-author-country | cny">
         <xsl:if test="normalize-space(.)!=''">
             <xsl:variable name="countryWithNoSpace" select="normalize-space(.)"/>
             <country>
@@ -206,8 +207,9 @@
         </xsl:if>
     </xsl:template>
 
+	<!-- PL: add cty for Nature -->
     <xsl:template
-        match="City | city | corresponding-author-city | named-content[@content-type='city']">
+        match="City | city | corresponding-author-city | named-content[@content-type='city'] | cty">
         <xsl:if test="normalize-space(.)!=''">
             <settlement>
                 <xsl:apply-templates/>
@@ -215,8 +217,9 @@
         </xsl:if>
     </xsl:template>
 
+	<!-- PL: add zip for Nature -->
     <xsl:template
-        match="Postcode | post_code | corresponding-author-zipcode | named-content[@content-type='postcode'] | postcode">
+        match="Postcode | post_code | corresponding-author-zipcode | named-content[@content-type='postcode'] | postcode | zip">
         <xsl:if test="normalize-space(.)!=''">
             <postCode>
                 <xsl:apply-templates/>
@@ -259,7 +262,8 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="Street | named-content[@content-type='street']">
+	<!-- PL: add street or Nature -->
+    <xsl:template match="Street | street | named-content[@content-type='street']">
         <xsl:if test=".!=''">
             <street>
                 <xsl:apply-templates/>

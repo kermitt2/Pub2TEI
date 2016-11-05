@@ -24,9 +24,9 @@
         match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle">
         <xsl:if test=".!=''">
             <title level="a" type="main">
-                <xsl:choose>
+                <!--xsl:choose>
                     <xsl:when test="wiley:citation[@type='book']"></xsl:when>
-                </xsl:choose>
+                </xsl:choose-->
                 <xsl:if test="@Language">
                     <xsl:attribute name="xml:lang">
                         <xsl:choose>

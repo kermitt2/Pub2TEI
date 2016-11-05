@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_Article.dtd" [
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "../../DTDs/NPG_XML_Article/NPG_XML_Article.dtd" [
 <!ENTITY figf1 PUBLIC "-//NatureAmerica//FICI nsmb.2311-F1//EN" "nsmb.2311-F1" NDATA ITEM>
 <!ENTITY figf2 PUBLIC "-//NatureAmerica//FICI nsmb.2311-F2//EN" "nsmb.2311-F2" NDATA ITEM>
 <!ENTITY figf3 PUBLIC "-//NatureAmerica//FICI nsmb.2311-F3//EN" "nsmb.2311-F3" NDATA ITEM>
