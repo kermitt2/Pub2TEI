@@ -438,9 +438,10 @@
         <date>
             <xsl:attribute name="when">
                 <!-- SG reprise de la date (ex:nrn3258_subject.xml)(26 Aug  2011)
-                cibler sur attribut @year et non plus sur le text()-->
-                    <xsl:apply-templates select="@year"/>
-			</xsl:attribute>
+                cibler sur attribut @year et non plus sur le text() + PL: cleaning of alphabetical characters in the year string -->
+                    <!--xsl:apply-templates select="@year"/-->
+					<xsl:value-of select="replace(@year, '[a-zA-Z]', '')"/>
+			</xsl:attribute> 
         </date>
     </xsl:template>
 	
