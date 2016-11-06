@@ -51,6 +51,17 @@
                             </availability>
                         </xsl:if>
                     </publicationStmt>
+					<!-- PL: pour les suppinfo, sous fileDesc/editionStmt/edition/ref, solution de HAL --> 
+					<xsl:if test="pubfm/suppinfo">
+						<editionStmt>
+							<edition>
+					            <xsl:attribute name="xml:id">
+									<xsl:value-of select="pubfm/suppinfo/@id"/>
+					            </xsl:attribute>
+								<xsl:apply-templates select="pubfm/suppinfo/suppobj"/>
+							</edition>	
+						</editionStmt>
+					</xsl:if>	
                     <sourceDesc>
                         <xsl:apply-templates select="front | pubfm" mode="sourceDesc"/>
                     </sourceDesc>
@@ -936,6 +947,27 @@
 				<xsl:if test="string-length(text()) > 6">-<xsl:value-of select='substring(text(),7,2)'/></xsl:if>
             </xsl:attribute>
 		</date>	
+	</xsl:template>
+	
+	<!-- PL: supplementary info presetn as external files -->
+	<xsl:template match="suppobj">
+		<ref>
+            <xsl:attribute name="type">
+				<xsl:text>file</xsl:text>
+            </xsl:attribute>
+            <xsl:attribute name="subtype">
+				<xsl:value-of select="@format"/>
+            </xsl:attribute>
+            <xsl:attribute name="xml:id">
+				<xsl:value-of select="@extrefid"/>
+            </xsl:attribute>
+			<title>
+				<xsl:value-of select="title"/>
+			</title>
+			<note>
+				<xsl:apply-templates select="descrip/*"/>
+			</note>
+		</ref>	
 	</xsl:template>
 
 </xsl:stylesheet>
