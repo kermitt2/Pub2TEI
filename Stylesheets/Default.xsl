@@ -15,13 +15,13 @@
                 <xsl:for-each select="attribute::*">
                 <xsl:value-of select="name(.)"/>="<xsl:value-of select="."/>" </xsl:for-each>
         </xsl:message>
-        <xsl:if test=".!=''">
+        <!-- SG - récupération des attributs -->
+        <!--xsl:if test=".!=''">
             <xsl:element name="{name(.)}">
-                <!-- SG - récupération des attributs -->
                 <xsl:apply-templates select="@*"/>
                 <xsl:apply-templates/>
             </xsl:element>
-        </xsl:if>
+        </xsl:if-->
     </xsl:template>
     
     <!-- SG - récupération des attributs -->
@@ -39,5 +39,8 @@
         </xsl:message>
         <xsl:copy-of select="."/>
     </xsl:template>
+
+	<!-- PL: to avoid unwanted/extra line break and spaces -->
+	<!--xsl:strip-space elements="*" /-->
 
 </xsl:stylesheet>

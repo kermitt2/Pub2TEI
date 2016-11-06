@@ -58,8 +58,8 @@
                 <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
-		                <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp">
-		                	<xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp"/>
+		                <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
+		                	<xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm"/>
 		                </xsl:if>
                         <!-- SG NLM subject -->
                         <xsl:if test="pubfm/subject">
@@ -218,10 +218,14 @@
     <xsl:template match="aug/au | aug/cau">
 		<author>
 		    <persName>
-            	<xsl:apply-templates/>
+            	<xsl:apply-templates select="* except bio"/>
         	</persName>
+			<!-- PL: biography are put under author -->
+		    <xsl:if test="bio">
+		            <xsl:apply-templates select="bio"/>
+		    </xsl:if>
 		    <!-- email -->
-		    <xsl:if test="../caff/coid">
+		    <xsl:if test="../caff/coid and corf and corf/@rid">
 		            <xsl:apply-templates select="../caff[coid[@id=current()/corf/@rid]]" mode="sourceDesc"/>
 		    </xsl:if>
 			<!-- affiliation -->
@@ -255,16 +259,18 @@
 		            <xsl:apply-templates select="../aff" mode="sourceDesc"/>
 		        </xsl:when>
 		    </xsl:choose>
-		    <xsl:if test="../caff"/>
+		    <!--xsl:if test="../caff"/-->
 		</author>
     </xsl:template>
-    <!--SG: reprise biographie des auteurs -->
+    
+	<!--SG: reprise biographie des auteurs -->
     <xsl:template match="bio">
         <state>
             <xsl:attribute name="type">biography</xsl:attribute>
             <xsl:apply-templates/>
         </state>
     </xsl:template>
+	
     <xsl:template match="bio/p">
         <desc>
             <xsl:apply-templates/>
