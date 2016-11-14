@@ -228,6 +228,24 @@
 
     <xsl:template match="aug/au | aug/cau">
 		<author>
+			<xsl:variable name="i" select="position()-1" />
+			<xsl:attribute name="xml:id">
+				<xsl:choose>
+				  <xsl:when test="$i &lt; 10">
+				  	<xsl:value-of select="concat('author-000', $i)"/>
+				  </xsl:when>
+				  <xsl:when test="$i &lt; 100">
+				  	<xsl:value-of select="concat('author-00', $i)"/>
+				  </xsl:when>
+				  <xsl:when test="$i &lt; 1000">
+				  	<xsl:value-of select="concat('author-0', $i)"/>
+				  </xsl:when>
+				  <xsl:otherwise>
+				  	<xsl:value-of select="concat('author-', $i)"/>
+				  </xsl:otherwise>
+				</xsl:choose>
+				<xsl:variable name="i" select="$i + 1" />
+            </xsl:attribute>
 		    <persName>
             	<xsl:apply-templates select="* except bio"/>
         	</persName>
