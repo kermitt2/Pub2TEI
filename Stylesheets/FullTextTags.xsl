@@ -289,17 +289,6 @@
         </formula>
     </xsl:template>
     <xsl:template match="wiley:displayedItem[@type='mathematics']/wiley:label"/>
-    <xsl:template match="wiley:mediaResourceGroup">
-            <xsl:apply-templates/>
-        <xsl:if test="wiley:mediaResource/@href">
-                <media mimeType="image/png">
-                    <xsl:attribute name="url">
-                        <xsl:value-of select="wiley:mediaResource/@href"/>
-                    </xsl:attribute>
-                </media>
-            
-        </xsl:if>
-    </xsl:template>
     
     <!-- References in text -->
     <!-- citref for RCS (Royal CHemical Society) -->
@@ -327,9 +316,26 @@
 						<xsl:apply-templates/>
 					</ref>	
 				</xsl:if>
+			    <!-- SG ajout lien figure et bibr --> 
+			    <xsl:if test="contains(@href, 'fig')">
+			        <ref type="figure">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+			            <xsl:apply-templates/>
+			        </ref>	
+			    </xsl:if>
+			    <xsl:if test="contains(@href, 'bib')">
+			        <ref type="bibr">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+			            <xsl:apply-templates/>
+			        </ref>	
+			    </xsl:if>
 			</xsl:when>
 			<xsl:otherwise>	
-				<xsl:if test="substring(@href,2,1) = 'b'">
+				<xsl:if test="contains(@href,'bib')">
 					<ref type="bibr">
 			            <xsl:attribute name="target">
 			                <xsl:value-of select="@href"/>
@@ -566,15 +572,14 @@
 		        <head>
 		            <xsl:apply-templates select="wiley:title"/>
 				</head>
-			</xsl:if>	
-			<xsl:apply-templates select="* except (wiley:title|wiley:figure|wiley:tabular|wiley:noteGroup)"/>
-		</div>
+			</xsl:if>
+			<xsl:apply-templates select="* except (wiley:title|wiley:tabular|wiley:noteGroup)"/>
+        </div>
     </xsl:template>
 	
 	<xsl:template match="wiley:section/wiley:title">
 		<xsl:apply-templates/>
 	</xsl:template>
-    
 	<!-- SG ajout citation "other" -->
     <xsl:template match="wiley:citation">
         <xsl:apply-templates/>

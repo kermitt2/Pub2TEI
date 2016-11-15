@@ -19,7 +19,7 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-						<title level= "a" type="main">
+						<title level="a" type="main">
                         	<xsl:value-of select="header/contentMeta/titleGroup/title[@type='main']"/>
 						</title>
                     </titleStmt>
@@ -175,17 +175,31 @@
 	<!-- title group -->
 	<xsl:template match="titleGroup"> 
 		<title level= "a" type="main">
+		    <!-- SG : ajout de la langue du titre -->
+		    <xsl:if test="title[@type='main']/@xml:lang">
+		        <xsl:attribute name="xml:lang">
+		            <xsl:value-of select="title[@type='main']/@xml:lang"/>
+		        </xsl:attribute>
+		    </xsl:if>
         	<xsl:value-of select="title[@type='main']"/>
 		</title>
-		<title level= "a" type="short">
-        	<xsl:value-of select="title[@type='short']"/>
-		</title>
+	    <!-- SG - ajout conditionnel -->
+	    <xsl:if test="title[@type='short']">
+	        <title level= "a" type="short">
+	            <!-- SG - ajout de la langue du titre -->
+	            <xsl:if test="title[@type='short']/@xml:lang">
+	                <xsl:attribute name="xml:lang">
+	                    <xsl:value-of select="title[@type='short']/@xml:lang"/>
+	                </xsl:attribute>
+	            </xsl:if>
+	            <xsl:value-of select="title[@type='short']"/>
+	        </title>
+	    </xsl:if>
 	</xsl:template>
  
  	<!-- Body content -->
     <xsl:template match="body" mode="bodyOnly">
         <xsl:apply-templates select="section"/>
-		<xsl:apply-templates select="//figure"/>
 		<xsl:apply-templates select="//tabular"/>
 		<xsl:apply-templates select="//noteGroup"/>
     </xsl:template>
@@ -206,33 +220,52 @@
 
     <!-- author related information -->
     <xsl:template match="creator">
-		<xsl:if test="@creatorRole='author'">
-			<author>
-				<xsl:if test="@corresponding">
-		            <xsl:attribute name="role">
-		                <xsl:text>corresp</xsl:text>
-		            </xsl:attribute>
-				</xsl:if>	
-	            <xsl:apply-templates/>
-				<!-- the affiliation id for this person -->
-				<xsl:variable name="affID" select="@affiliationRef"/>
-				
-				<!-- affiliation -->
-				<xsl:if test="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]">
-					<xsl:apply-templates select="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]"/>
-				</xsl:if>	
-			</author>
-		</xsl:if>
-		<xsl:if test="@creatorRole='editor'">
-			<editor>
-	            <xsl:apply-templates/>
-
-				<!-- affiliation -->
-				<xsl:if test="../aff">
-					<xsl:apply-templates select="../aff" mode="sourceDesc"/>
-				</xsl:if>
-			</editor>
-		</xsl:if>
+        <xsl:choose>
+            <xsl:when test="@creatorRole='author'">
+                <author>
+                    <xsl:if test="@corresponding">
+                        <xsl:attribute name="role">
+                            <xsl:text>corresp</xsl:text>
+                        </xsl:attribute>
+                    </xsl:if>	
+                    <xsl:apply-templates/>
+                    <!-- the affiliation id for this person -->
+                    <xsl:variable name="affID" select="@affiliationRef"/>
+                    
+                    <!-- affiliation -->
+                    <xsl:if test="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]">
+                        <xsl:apply-templates select="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]"/>
+                    </xsl:if>	
+                </author>
+            </xsl:when>
+            <!-- ajout SG si pas d'@creatorRole  -->
+            <xsl:otherwise>
+                <author>
+                    <xsl:if test="@corresponding">
+                        <xsl:attribute name="role">
+                            <xsl:text>corresp</xsl:text>
+                        </xsl:attribute>
+                    </xsl:if>	
+                    <xsl:apply-templates/>
+                    <!-- the affiliation id for this person -->
+                    <xsl:variable name="affID" select="@affiliationRef"/>
+                    
+                    <!-- affiliation -->
+                    <xsl:if test="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]">
+                        <xsl:apply-templates select="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]"/>
+                    </xsl:if>	
+                </author>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:if test="@creatorRole='editor'">
+            <editor>
+                <xsl:apply-templates/>
+                <!-- affiliation -->
+                <xsl:if test="../aff">
+                    <xsl:apply-templates select="../aff" mode="sourceDesc"/>
+                </xsl:if>
+            </editor>
+        </xsl:if>
     </xsl:template>
 	
     <xsl:template match="affiliation">	

@@ -131,11 +131,8 @@
     
     <!-- SG - ajout email -->
     <xsl:template match="wiley:contactDetails">
-            <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="wiley:contactDetails/wiley:email">
         <email>
-            <xsl:apply-templates/>
+            <xsl:value-of select="wiley:email"/>
         </email>
     </xsl:template>
 	

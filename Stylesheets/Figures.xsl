@@ -35,7 +35,7 @@
         </p>
     </xsl:template>
 	
-	<!-- Wiley -->
+    <!-- Wiley -->
     <xsl:template match="wiley:figure">
         <figure>
             <xsl:if test="@xml:id">
@@ -43,20 +43,43 @@
                     <xsl:value-of select="@xml:id"/>
                 </xsl:attribute>
             </xsl:if>
-			<xsl:apply-templates select="wiley:label"/>
-<xsl:message><xsl:value-of select="wiley:label"/></xsl:message>			
+            <xsl:apply-templates select="wiley:label"/>
+            <xsl:message><xsl:value-of select="wiley:label"/></xsl:message>
+            <xsl:apply-templates select="wiley:mediaResourceGroup"/>
             <xsl:apply-templates select="wiley:caption"/>
         </figure>
     </xsl:template>
-    
+    <!-- SG - mimetype -->
+    <!--<media mimeType="image/png" url="fig1.png"/>-->
+    <xsl:template match="wiley:mediaResourceGroup">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="wiley:mediaResource">
+        <media>
+            <xsl:choose>
+                <xsl:when test="@mimeType !=''">
+                    <xsl:attribute name="mimeType">
+                        <xsl:apply-templates select="@mimeType"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="mimeType">image</xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <xsl:attribute name="url">
+                <xsl:apply-templates select="@href"/>
+            </xsl:attribute>
+        </media>
+    </xsl:template>
     <!-- SG - reprise traitement des figures wiley -->
     <xsl:template match="wiley:caption">
-            <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="wiley:caption/wiley:p">
         <figDesc>
             <xsl:apply-templates/>
         </figDesc>
+    </xsl:template>
+    <xsl:template match="wiley:caption/wiley:p">
+            <xsl:apply-templates/>
     </xsl:template>
 	
 </xsl:stylesheet>

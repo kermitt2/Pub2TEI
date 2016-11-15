@@ -244,7 +244,7 @@
 				  	<xsl:value-of select="concat('author-', $i)"/>
 				  </xsl:otherwise>
 				</xsl:choose>
-				<xsl:variable name="i" select="$i + 1" />
+				<!--<xsl:variable name="i" select="$i + 1" />-->
             </xsl:attribute>
 		    <persName>
             	<xsl:apply-templates select="* except bio"/>
