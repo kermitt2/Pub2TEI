@@ -389,7 +389,7 @@
             <xsl:when test="wiley:citation/wiley:articleTitle">
                 <biblStruct type="journal">
                     <xsl:attribute name="xml:id">
-                        <xsl:value-of select="wiley:citation/@xml:id"/>
+                        <xsl:value-of select="@xml:id"/>
                     </xsl:attribute>
                     <analytic>
                         <xsl:apply-templates select="wiley:citation/wiley:author"/>
@@ -455,7 +455,7 @@
             <xsl:when test="wiley:citation/wiley:bookTitle">
                 <biblStruct type="book">
                     <xsl:attribute name="xml:id">
-                        <xsl:value-of select="wiley:citation/@xml:id"/>
+                        <xsl:value-of select="@xml:id"/>
                     </xsl:attribute>
                     <monogr>
                         <xsl:apply-templates select="wiley:citation/wiley:author"/>
@@ -483,14 +483,22 @@
             <xsl:when test="wiley:citation/wiley:otherTitle">
                 <biblStruct type="other">
                     <xsl:attribute name="xml:id">
-                        <xsl:value-of select="wiley:citation/@xml:id"/>
+                        <xsl:value-of select="@xml:id"/>
                     </xsl:attribute>
                     <analytic>
                         <xsl:apply-templates select="wiley:citation/wiley:groupName"/>
+                        <xsl:apply-templates select="wiley:citation/wiley:author"/>
+                        <xsl:apply-templates select="wiley:citation/wiley:editor"/>
                         <xsl:apply-templates select="wiley:citation/wiley:otherTitle"/>
                     </analytic>
                     <monogr>	
                         <xsl:apply-templates select="wiley:citation/wiley:journalTitle"/>
+                        <!-- SG reprise lien url dans référence -->
+                        <xsl:if test="wiley:citation/wiley:url">
+                            <idno type="URI">
+                                <xsl:apply-templates select="wiley:citation/wiley:url"/>  
+                            </idno>
+                        </xsl:if>
                         <!-- SG - reprise imprint vide -->
                         <xsl:choose>
                             <xsl:when test="wiley:citation/wiley:vol|wiley:citation/wiley:pageFirst|wiley:citation/wiley:pageLast|wiley:citation/wiley:pubYear">
@@ -505,7 +513,6 @@
                                 <imprint><date/></imprint>
                             </xsl:otherwise>
                         </xsl:choose>
-                        
                     </monogr>	
                 </biblStruct> 
             </xsl:when>
@@ -513,7 +520,7 @@
                 <xsl:if test="wiley:citation">
                     <bibl type="other">
                         <xsl:attribute name="xml:id">
-                            <xsl:value-of select="wiley:citation/@xml:id"/>
+                            <xsl:value-of select="@xml:id"/>
                         </xsl:attribute>
                         <analytic>
                         <xsl:apply-templates/>

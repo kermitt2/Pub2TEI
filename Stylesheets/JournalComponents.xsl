@@ -249,13 +249,30 @@
         </xsl:if>
     </xsl:template>
 
+    <!-- SG - ajout DOI niveau book - pour matcher avec les reversement du Hub de métadonnées-->
+    <xsl:template match="wiley:publicationMeta[@level='product']/wiley:doi">
+        <xsl:if test=".!=''">
+            <xsl:variable name="DOIValue" select="string(.)"/>
+            <idno type="bookDOI">
+                <xsl:choose>
+                    <xsl:when test=" starts-with($DOIValue,'DOI')">
+                        <xsl:value-of select="normalize-space( substring-after($DOIValue,'DOI'))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="normalize-space($DOIValue)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </idno>
+        </xsl:if>
+    </xsl:template>
+
     <!-- DOI numbers -->
     <!-- BMJ: doi -->
     <!-- Elsevier: ce:doi -->
     <!-- NLM 2.3 article: article-id[@pub-id-type='doi'] -->
 
     <xsl:template
-        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI | wiley:doi">
+        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI | wiley:publicationMeta[@level='unit']/wiley:doi">
         <xsl:if test=".!=''">
             <xsl:variable name="DOIValue" select="string(.)"/>
             <idno type="DOI">
@@ -408,6 +425,15 @@
             </biblScope>
         </xsl:if>
     </xsl:template>
+    
+    <!--SG - ajout nombre de pages -->
+    <xsl:template match="wiley:count[@type='pageTotal']">
+        <xsl:if test="@number !=''">
+            <biblScope unit="countPage">
+                <xsl:value-of select="@number"/>
+            </biblScope>
+        </xsl:if>
+    </xsl:template>
 
     <!-- Publishers -->
     <!-- NLM V2.0: PublisherName -->
@@ -449,7 +475,14 @@
     <xsl:template match="wiley:pubYear">
         <date>
             <xsl:attribute name="when">
-                <xsl:value-of select="translate(.,'.','')"/>
+                <xsl:choose>
+                    <xsl:when test="@year">
+                            <xsl:value-of select="translate(@year,',.[a-zA-Z]','')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="translate(.,',.[a-zA-Z]','')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
 			</xsl:attribute>
         </date>
     </xsl:template>

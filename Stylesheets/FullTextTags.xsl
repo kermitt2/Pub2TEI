@@ -16,6 +16,14 @@
         </p>
     </xsl:template>
     
+    <xsl:template match="wiley:p">
+        <p>
+            <xsl:apply-templates/>
+            <!--xsl:apply-templates select="*[not(self::mathStatement)]"/-->
+        </p>
+        <!--xsl:apply-templates select="wiley:mathStatement"/-->
+    </xsl:template>     
+    
     <!-- SG Nature <crosshd> Titre paragraphe -->
     <xsl:template match="crosshd">
         <p><hi rend="bold"><xsl:apply-templates/></hi></p>
@@ -58,7 +66,23 @@
     </xsl:template>
     
     <!-- SG - ajout des listes pour wiley -->
+    <xsl:template match="wiley:list">
+        <list>
+            <xsl:if test="@style">
+                <xsl:copy-of select="@style"/>  
+            </xsl:if>
+            <xsl:apply-templates/>
+        </list>
+    </xsl:template>
     <xsl:template match="wiley:listItem">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="wiley:listItem/wiley:label">
+        <label>
+            <xsl:apply-templates/>
+        </label>
+    </xsl:template>
+    <xsl:template match="wiley:listItem/wiley:p">
         <item>
             <xsl:apply-templates/>
         </item>
@@ -283,12 +307,12 @@
     </xsl:template>
     
     <!-- SG - WILEY traitement mathml - voir notice ZYGO.ZYGO1222.xml -->
-    <xsl:template match="wiley:displayedItem[@type='mathematics']">
+   <!-- <xsl:template match="wiley:displayedItem[@type='mathematics']">
         <formula notation="mathml">
         <xsl:apply-templates/>
         </formula>
     </xsl:template>
-    <xsl:template match="wiley:displayedItem[@type='mathematics']/wiley:label"/>
+    <xsl:template match="wiley:displayedItem[@type='mathematics']/wiley:label"/>-->
     
     <!-- References in text -->
     <!-- citref for RCS (Royal CHemical Society) -->
@@ -325,13 +349,22 @@
 			            <xsl:apply-templates/>
 			        </ref>	
 			    </xsl:if>
-			    <xsl:if test="contains(@href, 'bib')">
+			   <!-- <xsl:if test="contains(@href, 'bib')">
 			        <ref type="bibr">
 			            <xsl:attribute name="target">
 			                <xsl:value-of select="@href"/>
 			            </xsl:attribute>
 			            <xsl:apply-templates/>
 			        </ref>	
+			    </xsl:if>-->
+			    <!-- SG ajout reference WILEY -->
+			    <xsl:if test="contains(@href,'b') or contains(@href,'bib')">
+			        <ref type="bibr">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+			            <xsl:value-of select="text()"/>
+			        </ref>
 			    </xsl:if>
 			</xsl:when>
 			<xsl:otherwise>	
@@ -568,12 +601,21 @@
                 <xsl:value-of select="@xml:lang"/>
             </xsl:attribute>
             </xsl:if>
+            <!-- SG - ajout numéro de section -->
+            <xsl:if test="@xml:id">
+                <xsl:attribute name="n">
+                    <xsl:value-of select="translate(@xml:id,'sec','')"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="contains(@xml:id,'sec')">
+                <xsl:attribute name="type">section</xsl:attribute>
+            </xsl:if>
 			<xsl:if test="wiley:title">
 		        <head>
 		            <xsl:apply-templates select="wiley:title"/>
 				</head>
 			</xsl:if>
-			<xsl:apply-templates select="* except (wiley:title|wiley:tabular|wiley:noteGroup)"/>
+			<xsl:apply-templates select="* except (wiley:title)"/>
         </div>
     </xsl:template>
 	
@@ -585,15 +627,35 @@
         <xsl:apply-templates/>
     </xsl:template>
     
-    <xsl:template match="wiley:url">
+    <xsl:template match="wiley:p/wiley:url">
         <ref type="url">
           	<xsl:value-of select="@href"/>
 		</ref>	
+    </xsl:template>
+    <!-- SG reprise url dans reference -->
+    <xsl:template match="wiley:citation/wiley:url">
+            <xsl:value-of select="@href"/>
     </xsl:template>
 	
 	<!-- no idea what it this <sc> tag in Wiley - apparently a styling element -->
     <xsl:template match="wiley:sc">
         <xsl:apply-templates/>
+    </xsl:template>
+    
+    <!-- SG reprise wiley:inlineGraphic dans body -->
+    <xsl:template match="wiley:inlineGraphic">
+        <graphic>
+            <xsl:if test="@location !=''">
+                <xsl:attribute name="url">
+                    <xsl:value-of select="@location"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@alt !=''">
+                <xsl:attribute name="rend">
+                    <xsl:value-of select="@alt"/>
+                </xsl:attribute>
+            </xsl:if>
+        </graphic>
     </xsl:template>
 	
     <xsl:template match="online-methods"><xsl:apply-templates/></xsl:template>

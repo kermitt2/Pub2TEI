@@ -6,15 +6,56 @@
 	exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
-
+    <xsl:variable name="codeGenre1">
+        <xsl:value-of select="//component/header/publicationMeta[@level='unit']/@type"/>
+    </xsl:variable>
+    <xsl:variable name="codeGenre">
+        <xsl:choose>
+            <xsl:when test="normalize-space($codeGenre1)='article'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='reviewArticle'">review-article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='editorial'">editorial</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='bookReview'">book-reviews</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='shortCommunication'">brief-communication</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='shortArticle'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='rapidCommunication'">brief-communication</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='caseStudy'">case-report</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='abstract'">abstract</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='letter'">review-article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='news'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='commentary'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='meetingReport'">conference</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='rapidPublication'">brief-communication</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='serialArticle'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='miscellaneous'">other</xsl:when>
+            <xsl:otherwise>
+                <xsl:text>other</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="component">
         <xsl:message>Wiley.xsl</xsl:message>
         <TEI>
-            <xsl:if test="body/section[@xml:lang]">
-				<xsl:attribute name="xml:lang">
-                	<xsl:value-of select="body/section[1]/@xml:lang"/>
-				</xsl:attribute>
+            <xsl:choose>
+                <xsl:when test="body/section[@xml:lang]">
+                    <xsl:attribute name="xml:lang">
+                        <xsl:value-of select="body/section[1]/@xml:lang"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <!-- SG ajout langue si non contenu dans le body aller la chercher dans la racine -->
+                <xsl:otherwise>
+                    <xsl:if test="@xml:lang">
+                        <xsl:attribute name="xml:lang">
+                            <xsl:value-of select="@xml:lang"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
+            <!-- SG - ajout du codeGenre article -->
+            <xsl:if test="header/publicationMeta[@level='unit']/@type">
+                <xsl:attribute name="type">
+                    <xsl:value-of select="$codeGenre"/>
+                </xsl:attribute>
             </xsl:if>
             <teiHeader>
                 <fileDesc>
@@ -30,6 +71,10 @@
 						<xsl:if test="not(header/publicationMeta/publisherInfo/publisherName)">
                        	 	<publisher>Blackwell Publishing Ltd</publisher>
 						</xsl:if>
+                        <!-- SG ajout publisherLoc -->
+                        <xsl:if test="header/publicationMeta/publisherInfo/publisherLoc">
+                            <xsl:apply-templates select="header/publicationMeta/publisherInfo/publisherLoc"/>
+                        </xsl:if>
 						<xsl:if test="header/publicationMeta/copyright">
 							<availability>
 							    <!-- SG: ajout licence -->
@@ -52,19 +97,27 @@
                 <xsl:if test="header/contentMeta/abstractGroup | header/contentMeta/keywordGroup">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
-		                <xsl:if test="header/contentMeta/abstractGroup/abstract/p">
-							<abstract>
-							    <!-- reprise SG: apply-templates ne matche pas, remplacé par value-of + ajout <p>-->
-							    <p>
-							        <xsl:value-of select="header/contentMeta/abstractGroup/abstract/p"/>
-							    </p>
+                        <xsl:if test="header/contentMeta/abstractGroup/abstract/p and not(header/contentMeta/abstractGroup/abstract/p/list)">
+                            <!-- SG - reprise de tous les abstracts -->
+                            <xsl:for-each select="header/contentMeta/abstractGroup/abstract">
+                            <abstract>
+							    <!--SG - ajout langue -->
+							    <xsl:if test="@xml:lang !=''">
+							        <xsl:copy-of select="@xml:lang"/>
+							    </xsl:if>
+                                <xsl:apply-templates select="p"/>
 							</abstract>
+                            </xsl:for-each>
 		                </xsl:if>
-						<xsl:if test="header/contentMeta/keywordGroup">
+						<xsl:if test="header/contentMeta/keywordGroup/keyword !=''">
 							<textClass>
 								<keywords>
+								    <!--SG - ajout langue -->
+								    <xsl:if test="header/contentMeta/keywordGroup/@xml:lang !=''">
+								        <xsl:copy-of select="header/contentMeta/keywordGroup/@xml:lang"/>
+								    </xsl:if>
 									<xsl:for-each select="header/contentMeta/keywordGroup/keyword">
-										<term><xsl:value-of 											select="text()"/></term>
+										<term><xsl:value-of select="normalize-space(.)"/></term>
 									</xsl:for-each>
 								</keywords>
 							</textClass>
@@ -102,9 +155,24 @@
             </text>
         </TEI>
     </xsl:template>
+    
+    <xsl:template match="header/contentMeta/abstractGroup/abstract/p">
+        <p>
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+    
+    <xsl:template match="abstractGroup/abstract/p/i">
+        <xsl:if test=".!=''"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="abstractGroup/abstract/p/bold">
+        <xsl:if test=".!=''"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
+    </xsl:template>
+  
 
-	<!-- abstract content -->
-	<xsl:template match="/component/header/contentMeta/abstractGroup/abstract/p"> 
+	<!-- SG - abstract content - mis de coté pour le moment / attente validation TEI board -->
+	<!--<xsl:template match="/component/header/contentMeta/abstractGroup/abstract/p"> 
         <xsl:choose>
             <xsl:when test="b">
 				<div>
@@ -116,7 +184,7 @@
                 <xsl:apply-templates select="p"/>
             </xsl:otherwise>
         </xsl:choose>
-	</xsl:template>
+	</xsl:template>-->
 	
     <!-- Building the sourceDesc bibliographical representation -->
     <xsl:template match="header" mode="sourceDesc">
@@ -144,11 +212,17 @@
 				</xsl:if>
             </analytic>
             <monogr>
-				<title level="j">
+				<title level="j" type="main">
 					<xsl:apply-templates select="publicationMeta[@level='product']/titleGroup/title"/>
-				</title>	
+				</title>
+                <!-- SG ajout titre alternatif -->
+                <xsl:if test="publicationMeta[@level='product']/titleGroup/title/@sort !=''">
+                    <title level="j" type="alt">
+                        <xsl:apply-templates select="publicationMeta[@level='product']/titleGroup/title/@sort"/>
+                    </title>
+                </xsl:if>
                 <xsl:apply-templates select="publicationMeta[@level='product']/issn"/>
-               
+                <xsl:apply-templates select="publicationMeta[@level='product']/doi"/>
 				<xsl:apply-templates select="publicationMeta[@level='unit']/doi"/>
                 <imprint>
 	                <xsl:apply-templates select="publicationMeta[@level='part']/numberingGroup/numbering[@type='journalVolume']"/>
@@ -156,10 +230,16 @@
 					
 	                <xsl:apply-templates select="publicationMeta[@level='unit']/numberingGroup/numbering[@type='pageFirst']"/>
 	                <xsl:apply-templates select="publicationMeta[@level='unit']/numberingGroup/numbering[@type='pageLast']"/>
+                    <!-- SG - ajout nombre de pages -->
+                    <xsl:apply-templates select="publicationMeta[@level='unit']/countGroup/count[@type='pageTotal']"/>
 					
 					<xsl:if test="publicationMeta/publisherInfo/publisherName">
                    	 	<xsl:apply-templates select="publicationMeta/publisherInfo/publisherName"/>
 					</xsl:if>
+                    <!-- SG ajout publisherLoc -->
+                    <xsl:if test="publicationMeta/publisherInfo/publisherLoc">
+                        <xsl:apply-templates select="publicationMeta/publisherInfo/publisherLoc"/>
+                    </xsl:if>
 					
 					<xsl:if test="publicationMeta[@level='part']/coverDate">
 						<date type="published">
@@ -200,7 +280,6 @@
  	<!-- Body content -->
     <xsl:template match="body" mode="bodyOnly">
         <xsl:apply-templates select="section"/>
-		<xsl:apply-templates select="//tabular"/>
 		<xsl:apply-templates select="//noteGroup"/>
     </xsl:template>
  
@@ -223,11 +302,17 @@
         <xsl:choose>
             <xsl:when test="@creatorRole='author'">
                 <author>
+                    <!-- SG - ajout de @corresponding et @noteRef -->
                     <xsl:if test="@corresponding">
                         <xsl:attribute name="role">
                             <xsl:text>corresp</xsl:text>
                         </xsl:attribute>
-                    </xsl:if>	
+                    </xsl:if>
+                    <xsl:if test="@noteRef !=''">
+                        <xsl:attribute name="corresp">
+                            <xsl:value-of select="@noteRef"/>
+                        </xsl:attribute>
+                    </xsl:if>
                     <xsl:apply-templates/>
                     <!-- the affiliation id for this person -->
                     <xsl:variable name="affID" select="@affiliationRef"/>
@@ -353,11 +438,16 @@
         <xsl:apply-templates select="note"/>
     </xsl:template>
 	
-    <xsl:template match="note">
+    <xsl:template match="header/noteGroup/note">
 		<note>
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
+		    <xsl:if test="label">
+		        <label>
+		            <xsl:value-of select="label"/>
+		        </label>
+		    </xsl:if>
         	<xsl:apply-templates/>
 		</note>
     </xsl:template>

@@ -137,7 +137,7 @@
         <label><xsl:value-of select="text()"/></label>
     </xsl:template>
 	
-    <xsl:template match="wiley:tabular">
+   <xsl:template match="wiley:tabular">
         <figure>
             <xsl:attribute name="type">table</xsl:attribute>
             <xsl:if test="@xml:id">
@@ -145,7 +145,7 @@
                     <xsl:value-of select="@xml:id"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates select="* except wiley:noteGroup"/>
+            <xsl:apply-templates select="*"/>
         </figure>
     </xsl:template>
 	

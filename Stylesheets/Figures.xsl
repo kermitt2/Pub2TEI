@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
     xmlns:cals="http://www.elsevier.com/xml/common/cals/dtd"
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley"
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley" xmlns:wiley2="http://www.wiley.com/namespaces/wiley/wiley" xmlns:m="http://www.w3.org/1998/Math/MathML/"
 	exclude-result-prefixes="#all" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0">
 
@@ -43,7 +43,11 @@
                     <xsl:value-of select="@xml:id"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates select="wiley:label"/>
+            <xsl:if test="wiley:label">
+                <label>
+                <xsl:value-of select="wiley:label"/>
+                </label>
+            </xsl:if>
             <xsl:message><xsl:value-of select="wiley:label"/></xsl:message>
             <xsl:apply-templates select="wiley:mediaResourceGroup"/>
             <xsl:apply-templates select="wiley:caption"/>
@@ -52,7 +56,9 @@
     <!-- SG - mimetype -->
     <!--<media mimeType="image/png" url="fig1.png"/>-->
     <xsl:template match="wiley:mediaResourceGroup">
+        <p>
         <xsl:apply-templates/>
+        </p>
     </xsl:template>
     <xsl:template match="wiley:mediaResource">
         <media>
@@ -70,6 +76,16 @@
             <xsl:attribute name="url">
                 <xsl:apply-templates select="@href"/>
             </xsl:attribute>
+            <xsl:if test="@rendition">
+                <xsl:attribute name="rendition">
+                    <xsl:apply-templates select="@rendition"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@alt">
+                <xsl:attribute name="rend">
+                    <xsl:apply-templates select="@alt"/>
+                </xsl:attribute>
+            </xsl:if>
         </media>
     </xsl:template>
     <!-- SG - reprise traitement des figures wiley -->
@@ -81,5 +97,81 @@
     <xsl:template match="wiley:caption/wiley:p">
             <xsl:apply-templates/>
     </xsl:template>
+    
+    <!-- SG - traitement des formula mathML -->
+    <xsl:template match="wiley:mathStatement">
+        <div>
+            <xsl:if test="@xml:id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="wiley:title">
+                <head>
+                    <xsl:value-of select="wiley:title"/>
+                </head>
+            </xsl:if>
+            
+            <xsl:message><xsl:value-of select="wiley:title"/></xsl:message>
+            <xsl:apply-templates select="wiley:p"/>
+        </div>
+    </xsl:template>
+    
+    <!-- SG - WILEY traitement mathml - voir notice ZYGO.ZYGO1222.xml -->
+    <xsl:template match="wiley:displayedItem[@type='mathematics']">
+        <div>
+            <formula xmlns:m="http://www.w3.org/1998/Math/MathML" notation="mathml">
+                <xsl:apply-templates select="m:math"/>
+            </formula>
+        </div>
+    </xsl:template>
+ 
+   <!-- <xsl:template match="wiley:displayedItem[@type='mathematics']/wiley:label"/>-->
+    
+    <!--xsl:template match="wiley:displayedItem[@type='mathematics']/wiley2:math">
+        <m:math>
+            <xsl:apply-templates/>
+        </m:math>
+    </xsl:template>
+    <xsl:template match="wiley2:mi">
+        <m:mi>
+            <xsl:apply-templates/>
+        </m:mi>
+    </xsl:template>
+    <xsl:template match="wiley2:mo">
+        <m:mo>
+            <xsl:apply-templates/>
+        </m:mo>
+    </xsl:template>
+    <xsl:template match="wiley2:mn">
+        <m:mn>
+            <xsl:apply-templates/>
+        </m:mn>
+    </xsl:template>
+    <xsl:template match="wiley2:mfrac">
+        <m:mfrac>
+            <xsl:apply-templates/>
+        </m:mfrac>
+    </xsl:template>
+    <xsl:template match="wiley2:mrow">
+        <m:mrow>
+            <xsl:apply-templates/>
+        </m:mrow>
+    </xsl:template>
+    <xsl:template match="wiley2:msup">
+        <m:msup>
+            <xsl:apply-templates/>
+        </m:msup>
+    </xsl:template>
+    <xsl:template match="wiley2:msub">
+        <m:msub>
+            <xsl:apply-templates/>
+        </m:msub>
+    </xsl:template>
+    <xsl:template match="wiley2:mover">
+        <m:mover>
+            <xsl:apply-templates/>
+        </m:mover>
+    </xsl:template-->
 	
 </xsl:stylesheet>
