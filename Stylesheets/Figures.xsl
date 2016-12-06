@@ -88,12 +88,14 @@
             </xsl:if>
         </media>
     </xsl:template>
+    
     <!-- SG - reprise traitement des figures wiley -->
     <xsl:template match="wiley:caption">
         <figDesc>
             <xsl:apply-templates/>
         </figDesc>
     </xsl:template>
+    
     <xsl:template match="wiley:caption/wiley:p">
             <xsl:apply-templates/>
     </xsl:template>
@@ -119,13 +121,16 @@
     
     <!-- SG - WILEY traitement mathml - voir notice ZYGO.ZYGO1222.xml -->
     <xsl:template match="wiley:displayedItem[@type='mathematics']">
-        <div>
             <formula xmlns:m="http://www.w3.org/1998/Math/MathML" notation="mathml">
-                <xsl:apply-templates select="m:math"/>
+                <!--xsl:apply-templates select="m:math"/-->
+                <xsl:apply-templates />
             </formula>
-        </div>
     </xsl:template>
- 
+    
+    <!-- PL: neutralize Wiley specific presentation attribute in MathML element math -->
+    <xsl:template match="@*[local-name()='location']" mode="mathml"/>
+    <xsl:template match="@altimg" mode="mathml"/>
+    
    <!-- <xsl:template match="wiley:displayedItem[@type='mathematics']/wiley:label"/>-->
     
     <!--xsl:template match="wiley:displayedItem[@type='mathematics']/wiley2:math">

@@ -10,7 +10,7 @@
     <!-- Macrostructure -->
     <!-- Springer: Para, SimplePara -->
 
-    <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para | wiley:p">
+    <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para">
         <p>
             <xsl:apply-templates/>
         </p>

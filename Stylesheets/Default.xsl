@@ -5,6 +5,7 @@
     xmlns:mml="http://www.w3.org/1998/Math/MathML" 
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" 
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+    xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
     exclude-result-prefixes="#all">
 
     <!-- Default rules -->
@@ -31,13 +32,21 @@
         </xsl:attribute>
     </xsl:template-->
 
-    <!-- Default rules for MathML -->
+    <!-- Default rules for MathML, PL: copy is via template to allow selective copy -->
     <xsl:template match="*[namespace-uri() = 'http://www.w3.org/1998/Math/MathML']">
         <xsl:message terminate="no">MathML: <xsl:value-of select="name(.)"/> - <xsl:for-each
-                select="attribute::*">
-                <xsl:value-of select="name(.)"/>="<xsl:value-of select="."/>" </xsl:for-each>
+            select="attribute::*">
+            <xsl:value-of select="name(.)"/>="<xsl:value-of select="."/>" </xsl:for-each>
         </xsl:message>
-        <xsl:copy-of select="."/>
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()" mode="mathml"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template match="node() | @*" mode="mathml">
+        <xsl:copy>
+            <xsl:apply-templates select="node() | @*"/>
+        </xsl:copy>
     </xsl:template>
 
 	<!-- PL: to avoid unwanted/extra line break and spaces -->
