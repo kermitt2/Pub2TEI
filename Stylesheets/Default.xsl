@@ -38,13 +38,13 @@
             select="attribute::*">
             <xsl:value-of select="name(.)"/>="<xsl:value-of select="."/>" </xsl:for-each>
         </xsl:message>
-        <xsl:copy>
+        <xsl:copy copy-namespaces="no">
             <xsl:apply-templates select="@*|node()" mode="mathml"/>
         </xsl:copy>
     </xsl:template>
     
     <xsl:template match="node() | @*" mode="mathml">
-        <xsl:copy>
+        <xsl:copy copy-namespaces="no">
             <xsl:apply-templates select="node() | @*"/>
         </xsl:copy>
     </xsl:template>

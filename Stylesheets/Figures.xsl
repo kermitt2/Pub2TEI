@@ -101,7 +101,7 @@
     </xsl:template>
     
     <!-- SG - traitement des formula mathML -->
-    <xsl:template match="wiley:mathStatement">
+    <!--xsl:template match="wiley:mathStatement">
         <div>
             <xsl:if test="@xml:id">
                 <xsl:attribute name="xml:id">
@@ -117,7 +117,7 @@
             <xsl:message><xsl:value-of select="wiley:title"/></xsl:message>
             <xsl:apply-templates select="wiley:p"/>
         </div>
-    </xsl:template>
+    </xsl:template-->
     
     <!-- SG - WILEY traitement mathml - voir notice ZYGO.ZYGO1222.xml -->
     <xsl:template match="wiley:displayedItem[@type='mathematics']">
