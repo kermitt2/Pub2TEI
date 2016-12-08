@@ -367,7 +367,40 @@
 					</address>
 				</xsl:if>
 	        </affiliation>
-		</xsl:if>	
+		</xsl:if>
+        <xsl:if test="orgName | orgDiv">
+            <affiliation>
+                <xsl:if test="orgDiv">
+                    <orgDiv>
+                        <xsl:value-of select="orgDiv/text()"/>
+                    </orgDiv>
+                </xsl:if>
+                <xsl:if test="orgName">
+                    <orgName>
+                        <xsl:value-of select="orgName/text()"/>
+                    </orgName>
+                </xsl:if>
+                <xsl:if test="@countryCode">
+                    <address>
+                        <xsl:if test="address/city">
+                            <settlement type="city">
+                                <xsl:value-of select="address/city/text()"/>
+                            </settlement>
+                        </xsl:if>
+                        <xsl:if test="address/postCode">
+                            <postCode type="city">
+                                <xsl:value-of select="address/postCode/text()"/>
+                            </postCode>
+                        </xsl:if>
+						<country>
+				            <xsl:attribute name="key">
+				                <xsl:value-of select="@countryCode"/>
+				            </xsl:attribute>
+						</country>
+					</address>
+                </xsl:if>
+            </affiliation>
+        </xsl:if>	
     </xsl:template>
 
     <xsl:template match="contrib">

@@ -50,8 +50,26 @@
         </note>
     </xsl:template>
 
-    <xsl:template match="thead/tr | cals:thead/cals:row | wiley:row">
-        <row role="label">
+    <xsl:template match="thead/tr | cals:thead/cals:row">
+        <row>
+            <xsl:apply-templates/>
+        </row>
+    </xsl:template>
+    
+    <!-- SG - traitement tables WILEY -->
+    <xsl:template match="wiley:thead/wiley:row">
+        <row>
+            <xsl:if test="@rowsep">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </row>
+    </xsl:template>
+    <xsl:template match="wiley:tbody/wiley:row">
+        <row>
+            <xsl:if test="@rowsep">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </row>
     </xsl:template>
@@ -151,6 +169,12 @@
 	
     <xsl:template match="wiley:entry">
 		<cell>
+		    <xsl:if test="@rowsep">
+		        <xsl:attribute name="role">label</xsl:attribute>
+		    </xsl:if>
+		    <xsl:if test="@morerows &gt;1">
+		        <xsl:attribute name="role">label</xsl:attribute>
+		    </xsl:if>
         	<xsl:apply-templates/>
 		</cell>
     </xsl:template>
