@@ -478,9 +478,18 @@
                     <xsl:attribute name="xml:id">
                         <xsl:value-of select="$id"/>
                     </xsl:attribute>
+                    <xsl:if test="wiley:chapterTitle">
+                        <analytic>
+                            <xsl:apply-templates select="wiley:author"/>
+                            <xsl:apply-templates select="wiley:editor"/>
+                            <xsl:apply-templates select="wiley:chapterTitle"/>
+                        </analytic>
+                    </xsl:if>
                     <monogr>
+                        <xsl:if test="not(wiley:chapterTitle)">
                         <xsl:apply-templates select="wiley:author"/>
                         <xsl:apply-templates select="wiley:editor"/>
+                        </xsl:if>
                         <xsl:apply-templates select="wiley:bookTitle"/>
                         
                         <xsl:choose>
