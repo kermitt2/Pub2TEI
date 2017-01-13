@@ -64,6 +64,38 @@
                         	<xsl:value-of select="header/contentMeta/titleGroup/title[@type='main']"/>
 						</title>
                     </titleStmt>
+                    <!-- SG - ajout <enrichedObject> -->
+                    <xsl:if test="header/contentMeta/enrichedObjectGroup">
+                        <editionStmt>
+                            <edition>
+                                <xsl:variable name="ana">
+                                    <xsl:value-of select="header/contentMeta/enrichedObjectGroup/@type"/>
+                                </xsl:variable>
+                                <xsl:attribute name="ana">
+                                    <xsl:text>wiley:</xsl:text>
+                                    <xsl:value-of select="$ana"/>
+                                </xsl:attribute>
+                                <xsl:for-each select="header/contentMeta/enrichedObjectGroup/enrichedObject">
+                                    <ref>
+                                        <xsl:attribute name="xml:id">
+                                            <xsl:value-of select="@xml:id"/>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="n">
+                                            <xsl:value-of select="@associatedDataRef"/>
+                                        </xsl:attribute>
+                                        <xsl:if test="label !=''">
+                                        <label>
+                                            <xsl:value-of select="label"/>
+                                        </label>
+                                        </xsl:if>
+                                        <idno type="URN">
+                                            <xsl:value-of select="mediaResourceGroup/mediaResource/@href"/>
+                                        </idno>
+                                    </ref>
+                                </xsl:for-each>
+                            </edition>
+                        </editionStmt>
+                    </xsl:if>
                     <publicationStmt>
 						<xsl:if test="header/publicationMeta/publisherInfo/publisherName">
                        	 	<xsl:apply-templates select="header/publicationMeta/publisherInfo/publisherName"/>
@@ -105,7 +137,13 @@
 							    <xsl:if test="@xml:lang !=''">
 							        <xsl:copy-of select="@xml:lang"/>
 							    </xsl:if>
-                                <xsl:apply-templates select="p"/>
+                                <xsl:if test="@type !='main'">
+                                    <xsl:attribute name="rendition">
+                                        <xsl:apply-templates select="@type"/>
+                                    </xsl:attribute>
+                                </xsl:if>
+                                <xsl:apply-templates/>
+                                <!--<xsl:apply-templates select="p"/>-->
 							</abstract>
                             </xsl:for-each>
 		                </xsl:if>
@@ -117,7 +155,10 @@
 								        <xsl:copy-of select="header/contentMeta/keywordGroup/@xml:lang"/>
 								    </xsl:if>
 									<xsl:for-each select="header/contentMeta/keywordGroup/keyword">
-										<term><xsl:value-of select="normalize-space(.)"/></term>
+										<term>
+										    <xsl:apply-templates/>
+										    <!--<xsl:value-of select="normalize-space(.)"/>-->
+										</term>
 									</xsl:for-each>
 								</keywords>
 							</textClass>
@@ -160,6 +201,22 @@
         <p>
             <xsl:apply-templates/>
         </p>
+    </xsl:template>
+    
+    <xsl:template match="header/contentMeta/abstractGroup/abstract/p/infoAsset">
+            <term>
+                <xsl:if test="@type">
+                    <xsl:attribute name="type">
+                        <xsl:value-of select="translate(@type,' ','_')"/>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:if test="@xml:id">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="@xml:id"/>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:apply-templates/>
+            </term>
     </xsl:template>
     
     <xsl:template match="abstractGroup/abstract/p/i">
@@ -280,7 +337,7 @@
  	<!-- Body content -->
     <xsl:template match="body" mode="bodyOnly">
         <xsl:apply-templates select="section"/>
-		<xsl:apply-templates select="//noteGroup"/>
+		<!--<xsl:apply-templates select="//noteGroup"/>-->
     </xsl:template>
  
     <!-- Generic rules for IDs -->
@@ -303,42 +360,34 @@
             <xsl:when test="@creatorRole='author'">
                 <author>
                     <!-- SG - ajout de @corresponding et @noteRef -->
-                    <xsl:if test="@corresponding">
+                    <xsl:if test="@corresponding='yes'">
                         <xsl:attribute name="role">
                             <xsl:text>corresp</xsl:text>
                         </xsl:attribute>
                     </xsl:if>
-                    <xsl:if test="@noteRef !=''">
+                    <!--<xsl:if test="@noteRef !=''">
                         <xsl:attribute name="corresp">
                             <xsl:value-of select="@noteRef"/>
                         </xsl:attribute>
-                    </xsl:if>
+                    </xsl:if>-->
                     <xsl:apply-templates/>
-                    <!-- the affiliation id for this person -->
-                    <xsl:variable name="affID" select="@affiliationRef"/>
-                    
-                    <!-- affiliation -->
-                    <xsl:if test="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]">
-                        <xsl:apply-templates select="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]"/>
-                    </xsl:if>	
+                    <xsl:if test="//affiliationGroup">
+                        <xsl:call-template name="affiliation"/>
+                    </xsl:if>
                 </author>
             </xsl:when>
             <!-- ajout SG si pas d'@creatorRole  -->
             <xsl:otherwise>
                 <author>
-                    <xsl:if test="@corresponding">
+                    <xsl:if test="@corresponding='yes'">
                         <xsl:attribute name="role">
                             <xsl:text>corresp</xsl:text>
                         </xsl:attribute>
                     </xsl:if>	
                     <xsl:apply-templates/>
-                    <!-- the affiliation id for this person -->
-                    <xsl:variable name="affID" select="@affiliationRef"/>
-                    
-                    <!-- affiliation -->
-                    <xsl:if test="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]">
-                        <xsl:apply-templates select="../../affiliationGroup/affiliation[@xml:id=substring($affID,2)]"/>
-                    </xsl:if>	
+                    <xsl:if test="//affiliationGroup">
+                        <xsl:call-template name="affiliation"/>
+                    </xsl:if>
                 </author>
             </xsl:otherwise>
         </xsl:choose>
@@ -352,10 +401,11 @@
             </editor>
         </xsl:if>
     </xsl:template>
-	
+    
     <xsl:template match="affiliation">	
 		<xsl:if test="unparsedAffiliation">
 	        <affiliation>
+	            <!-- 
 	        	<xsl:value-of select="unparsedAffiliation/text()"/>
 				<xsl:if test="@countryCode">
 					<address>
@@ -365,15 +415,15 @@
 				            </xsl:attribute>
 						</country>
 					</address>
-				</xsl:if>
+				</xsl:if>-->
 	        </affiliation>
-		</xsl:if>
+		</xsl:if> 
         <xsl:if test="orgName | orgDiv">
             <affiliation>
                 <xsl:if test="orgDiv">
-                    <orgDiv>
+                    <orgName>
                         <xsl:value-of select="orgDiv/text()"/>
-                    </orgDiv>
+                    </orgName>
                 </xsl:if>
                 <xsl:if test="orgName">
                     <orgName>
@@ -484,5 +534,980 @@
         	<xsl:apply-templates/>
 		</note>
     </xsl:template>
+    
+    <!-- SG - reprise traitement des affiliations multiples -->
+    <!-- Traitement de plusieurs affiliations dans 1 seul attribut "@affiliationRef" ex: "#ffj3188-aff-0001 #ffj3188-aff-0002" -->
+    <xsl:template name="affiliation">
+        <xsl:choose>
+            <xsl:when test="@affiliationRef">
+                <xsl:call-template name="tokenize"/>
+                <xsl:call-template name="tokenizeCor"/>
+                <xsl:call-template name="tokenizeCur"/>
+                <xsl:call-template name="tokenizeNot"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="not(//creator/@affiliationRef) and //creator/@xml:id[string-length() &gt; 0 ] and //affiliation/@xml:id[string-length() &gt; 0 ]">
+                        <xsl:call-template name="affiliationLienRompu"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:if test="not(//creator/@affiliationRef)">
+                            <xsl:call-template name="affiliation2"/>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
+    <xsl:template match="@affiliationRef" name="tokenize">
+        <xsl:param name="text" select="@affiliationRef"/>
+        <xsl:param name="separator" select="' '"/>
+        <xsl:choose>
+            <xsl:when test="not(contains($text, $separator))">
+                <xsl:variable name="aff">
+                    <xsl:value-of select="translate($text,'#','')"/>
+                </xsl:variable>
+                <xsl:if test="normalize-space(//affiliation[@xml:id=$aff])">
+                    <affiliation>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
+                            <orgName>
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/orgDiv/text()"/>
+                            </orgName>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ]">
+                            <orgName>
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/orgName/text()"/>
+                            </orgName>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart | //affiliation[@xml:id=$aff]/address/postCode | //affiliation[@xml:id=$aff]/address/city | //affiliation[@xml:id=$aff]/address/state | //affiliation[@xml:id=$aff]/address/country">
+                            <address>
+                                <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ]">
+                                <street>
+                                 <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/street/text()"/>   
+                                </street>
+                                    </xsl:if>
+                                <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]">
+                                <settlement type="city">
+                                 <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/city/text()"/>   
+                                </settlement>
+                                    </xsl:if>
+                                <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ]">
+                                <postCode>
+                                 <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/postCode/text()"/>   
+                                </postCode>
+                                    </xsl:if>
+                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
+                                <state>
+                                 <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state/text()"/>   
+                                </state>
+                                    </xsl:if>
+                                <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
+                                <region>
+                                 <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/countryPart/text()"/>   
+                                </region>
+                                    </xsl:if>
+                               <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
+						<country>
+				            <xsl:attribute name="key">
+				                <xsl:value-of select="//affiliation[@xml:id=$aff]/@countryCode"/>
+				            </xsl:attribute>
+						    <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                 <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/country/text()"/>
+                                    </xsl:if>
+						</country>
+                        </xsl:if>
+                            </address>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
+                                <address>
+                                <country>
+                                    <xsl:attribute name="key">
+                                        <xsl:value-of select="//affiliation[@xml:id=$aff]/@countryCode"/>
+                                    </xsl:attribute>
+                                </country>
+                                    </address>
+                            </xsl:if>
+                        </xsl:if>
+                    </affiliation>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <affiliation>
+                    <xsl:variable name="translate">
+                        <xsl:value-of select="translate($text,'#','')"/>
+                    </xsl:variable>
+                    <xsl:variable name="aff">
+                        <xsl:value-of select="normalize-space(substring-before($translate, $separator))"/>
+                    </xsl:variable>
+                    <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
+                        <address>
+						<country>
+				            <xsl:attribute name="key">
+				                <xsl:value-of select="//affiliation[@xml:id=$aff]/@countryCode"/>
+				            </xsl:attribute>
+						</country>
+					</address>
+                    </xsl:if>
+                </affiliation>
+                <xsl:call-template name="tokenize">
+                    <xsl:with-param name="text" select="substring-after($text, $separator)"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="@correspondenceRef" name="tokenizeCor">
+        <xsl:param name="text" select="@correspondenceRef"/>
+        <xsl:param name="separator" select="' '"/>
+        <xsl:choose>
+            <xsl:when test="not(contains($text, $separator))">
+                <xsl:variable name="aff">
+                    <xsl:value-of select="translate($text,'#','')"/>
+                </xsl:variable>
+                <xsl:if test="//affiliation[@xml:id=$aff]">
+                    <affiliation>
+                        <xsl:text>Correspondence address: </xsl:text>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
+                            <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv">
+                                <xsl:variable name="aff2">
+                                    <xsl:apply-templates select="."/>
+                                </xsl:variable>
+                                <xsl:value-of select="normalize-space($aff2)"/>
+                                <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                    | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                    <xsl:text>, </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ]">
+                            <xsl:for-each select="//affiliation[@xml:id=$aff]/orgName">
+                                <xsl:variable name="aff2">
+                                    <xsl:apply-templates select="."/>
+                                </xsl:variable>
+                                <xsl:value-of select="normalize-space($aff2)"/>
+                                <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                    | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                    <xsl:text>, </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/street"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/countryPart"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/postCode"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/city"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/country"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                        </xsl:if>
+                    </affiliation>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <affiliation>
+                    <xsl:text>Correspondence address: </xsl:text>
+                    <xsl:variable name="translate">
+                        <xsl:value-of select="translate($text,'#','')"/>
+                    </xsl:variable>
+                    <xsl:variable name="aff">
+                        <xsl:value-of select="normalize-space(substring-before($translate, $separator))"/>
+                    </xsl:variable>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
+                        <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="."/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ]">
+                        <xsl:for-each select="//affiliation[@xml:id=$aff]/orgName">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="."/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/street"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                            | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/countryPart"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/postCode"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/city"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/country"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                    </xsl:if>
+                </affiliation>
+                <xsl:call-template name="tokenizeCor">
+                    <xsl:with-param name="text" select="substring-after($text, $separator)"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="@currentRef" name="tokenizeCur">
+        <xsl:param name="text" select="@currentRef"/>
+        <xsl:param name="separator" select="' '"/>
+        <xsl:choose>
+            <xsl:when test="not(contains($text, $separator))">
+                <xsl:variable name="aff">
+                    <xsl:value-of select="translate($text,'#','')"/>
+                </xsl:variable>
+                <xsl:if test="//affiliation[@xml:id=$aff]">
+                    <affiliation>
+                        <xsl:text>Current Address: </xsl:text>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
+                            <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv">
+                                <xsl:variable name="aff2">
+                                    <xsl:apply-templates select="."/>
+                                </xsl:variable>
+                                <xsl:value-of select="normalize-space($aff2)"/>
+                                <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                    | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                    <xsl:text>, </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ]">
+                            <xsl:for-each select="//affiliation[@xml:id=$aff]/orgName">
+                                <xsl:variable name="aff2">
+                                    <xsl:apply-templates select="."/>
+                                </xsl:variable>
+                                <xsl:value-of select="normalize-space($aff2)"/>
+                                <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                    | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                    <xsl:text>, </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/street"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/countryPart"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/postCode"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/city"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/country"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                        </xsl:if>
+                    </affiliation>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <affiliation>
+                    <xsl:text>Current Address: </xsl:text>
+                    <xsl:variable name="translate">
+                        <xsl:value-of select="translate($text,'#','')"/>
+                    </xsl:variable>
+                    <xsl:variable name="aff">
+                        <xsl:value-of select="normalize-space(substring-before($translate, $separator))"/>
+                    </xsl:variable>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
+                        <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="."/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/orgName[string-length() &gt; 0 ]">
+                        <xsl:for-each select="//affiliation[@xml:id=$aff]/orgName">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="."/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/street"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]
+                            | //affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/countryPart"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/postCode[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/postCode"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/city[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/city"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/country"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                    </xsl:if>
+                </affiliation>
+                <xsl:call-template name="tokenizeCur">
+                    <xsl:with-param name="text" select="substring-after($text, $separator)"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!--<xsl:variable name="cor" select="translate(@correspondenceRef,'#','')"/>
+    <xsl:variable name="cur" select="translate(@currentRef ,'#','')"/>
+    <xsl:variable name="not" select="translate(@noteRef ,'#','')"/>-->
+    <xsl:template match="@xml:id" name="tokenize2">
+        <xsl:param name="text" select="@xml:id"/>
+        <xsl:param name="separator" select="' '"/>
+        <xsl:choose>
+            <xsl:when test="not(contains($text, $separator))">
+                <xsl:variable name="aff">
+                    <xsl:value-of select="translate($text,'cr','')"/>
+                </xsl:variable>
+                <xsl:if test="normalize-space(//affiliation[translate(@xml:id,'aff-1-','')=$aff])">
+                    <affiliation>
+                        <xsl:if test="//affiliation[translate(@xml:id,'aff-1-','')=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[translate(@xml:id,'aff-1-','')=$aff]/unparsedAffiliation"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                        </xsl:if>
+                    </affiliation>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <affiliation>
+                    <xsl:variable name="translate">
+                        <xsl:value-of select="translate($text,'cr','')"/>
+                    </xsl:variable>
+                    <xsl:variable name="aff">
+                        <xsl:value-of select="normalize-space(substring-before($translate, $separator))"/>
+                    </xsl:variable>
+                    <xsl:if test="//affiliation[translate(@xml:id,'aff-1-','')=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[translate(@xml:id,'aff-1-','')=$aff]/unparsedAffiliation"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                    </xsl:if>
+                </affiliation>
+                <xsl:call-template name="tokenize">
+                    <xsl:with-param name="text" select="substring-after($text, $separator)"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <!--janvier 2016 probleme de liens incorrectes dans notices-->
+    <xsl:template name="affiliationLienRompu">
+        <xsl:choose>
+            <xsl:when test="@xml:id">
+                <xsl:call-template name="tokenizeLien"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="@xml:id" name="tokenizeLien">
+        <xsl:param name="text" select="@xml:id"/>
+        <xsl:param name="separator" select="' '"/>
+        <xsl:choose>
+            <xsl:when test="not(contains($text, $separator))">
+                <xsl:variable name="aff">
+                    <xsl:value-of select="translate($text,'cr','')"/>
+                </xsl:variable>
+                <xsl:if test="normalize-space(//affiliation[substring-after(@xml:id,'aff-1-')=$aff])">
+                    <affiliation>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgDiv[string-length() &gt; 0 ]">
+                            <xsl:for-each select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgDiv">
+                                <xsl:variable name="aff2">
+                                    <xsl:apply-templates select="."/>
+                                </xsl:variable>
+                                <xsl:value-of select="normalize-space($aff2)"/>
+                                <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgName[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                    | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                    <xsl:text>, </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgName[string-length() &gt; 0 ]">
+                            <xsl:for-each select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgName">
+                                <xsl:variable name="aff2">
+                                    <xsl:apply-templates select="."/>
+                                </xsl:variable>
+                                <xsl:value-of select="normalize-space($aff2)"/>
+                                <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                    | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                    <xsl:text>, </xsl:text>
+                                </xsl:if>
+                            </xsl:for-each>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/street[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/street"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/unparsedAffiliation"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                        </xsl:if>
+                    </affiliation>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <affiliation>
+                    <xsl:variable name="translate">
+                        <xsl:value-of select="translate($text,'cr','')"/>
+                    </xsl:variable>
+                    <xsl:variable name="aff">
+                        <xsl:value-of select="normalize-space(substring-before($translate, $separator))"/>
+                    </xsl:variable>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgDiv[string-length() &gt; 0 ]">
+                        <xsl:for-each select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgDiv">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="."/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgName[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgName[string-length() &gt; 0 ]">
+                        <xsl:for-each select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgName">
+                            <xsl:variable name="aff2">
+                                <xsl:apply-templates select="."/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($aff2)"/>
+                            <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]
+                                | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/street[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/street"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]
+                            | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ] | //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/postCode"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/city"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ] |//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]| //affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                        <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/country"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                    </xsl:if>
+                    <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                        <xsl:variable name="aff2">
+                            <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/unparsedAffiliation"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($aff2)"/>
+                    </xsl:if>
+                </affiliation>
+                <xsl:call-template name="tokenizeLien">
+                    <xsl:with-param name="text" select="substring-after($text, $separator)"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="affiliation2">
+        <xsl:for-each select="//affiliation">
+            <affiliation>
+                <xsl:if test="orgDiv[string-length() &gt; 0 ]">
+                    <xsl:for-each select="orgDiv">
+                        <xsl:variable name="orgDiv">
+                            <xsl:apply-templates select="."/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($orgDiv)"/>
+                        <xsl:if test="orgName[string-length() &gt; 0 ] | address/street[string-length() &gt; 0 ] | address/countryPart[string-length() &gt; 0 ]
+                            | address/postCode[string-length() &gt; 0 ] | address/city[string-length() &gt; 0 ]| address/state[string-length() &gt; 0 ]| address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="orgName[string-length() &gt; 0 ]">
+                    <xsl:for-each select="orgName">
+                        <xsl:variable name="orgName">
+                            <xsl:apply-templates select="."/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($orgName)"/>
+                        <xsl:if test="address/street[string-length() &gt; 0 ] | address/countryPart[string-length() &gt; 0 ]
+                            | address/postCode[string-length() &gt; 0 ] | address/city[string-length() &gt; 0 ]| address/state[string-length() &gt; 0 ]| address/country[string-length() &gt; 0 ]">
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="address/street[string-length() &gt; 0 ]">
+                    <xsl:variable name="street">
+                        <xsl:apply-templates select="address/street"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($street)"/>
+                    <xsl:if test="address/countryPart[string-length() &gt; 0 ]
+                        | address/postCode[string-length() &gt; 0 ] | address/city[string-length() &gt; 0 ]| address/state[string-length() &gt; 0 ]| address/country[string-length() &gt; 0 ]">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="address/postCode[string-length() &gt; 0 ]">
+                    <xsl:variable name="postCode">
+                        <xsl:apply-templates select="address/postCode"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($postCode)"/>
+                    <xsl:if test="address/city[string-length() &gt; 0 ]| address/state[string-length() &gt; 0 ]| address/country[string-length() &gt; 0 ]">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="address/city[string-length() &gt; 0 ]">
+                    <xsl:variable name="city">
+                        <xsl:apply-templates select="address/city"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($city)"/>
+                    <xsl:if test="address/countryPart[string-length() &gt; 0 ]|address/state[string-length() &gt; 0 ]| address/country[string-length() &gt; 0 ]">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="address/countryPart[string-length() &gt; 0 ]">
+                    <xsl:variable name="countryPart">
+                        <xsl:apply-templates select="address/countryPart"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($countryPart)"/>
+                    <xsl:if test="address/state[string-length() &gt; 0 ]| address/country[string-length() &gt; 0 ]">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="address/state[string-length() &gt; 0 ]">
+                    <xsl:variable name="state">
+                        <xsl:apply-templates select="address/state"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($state)"/>
+                    <xsl:if test="address/country[string-length() &gt; 0 ]">
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:if test="address/country[string-length() &gt; 0 ]">
+                    <xsl:variable name="country">
+                        <xsl:apply-templates select="address/country"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($country)"/>
+                </xsl:if>
+                <xsl:if test="unparsedAffiliation[string-length() &gt; 0 ]">
+                    <xsl:variable name="unparsedAffiliation">
+                        <xsl:apply-templates select="unparsedAffiliation"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($unparsedAffiliation)"/>
+                </xsl:if>
+            </affiliation>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="@noteRef" name="tokenizeNot">
+        <xsl:param name="text" select="@noteRef"/>
+        <xsl:param name="separator" select="' '"/>
+        <xsl:choose>
+            <xsl:when test="not(contains($text, $separator))">
+                <xsl:variable name="note">
+                    <xsl:value-of select="translate($text,'#','')"/>
+                </xsl:variable>
+                    <xsl:if test="//noteGroup/note[@xml:id=$note][string-length() &gt; 0 ]">
+                        <xsl:for-each select="//noteGroup/note[@xml:id=$note]">
+                            <note type="foot">
+                                <xsl:value-of select="normalize-space(p)"/>
+                            </note>
+                            <xsl:if test="p/email">
+                                <email>
+                                    <xsl:value-of select="normalize-space(p/email)"/>
+                                </email>  
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:if>
+            </xsl:when>
+            <xsl:otherwise>
+                <affiliation>
+                    <xsl:text>Note: </xsl:text>
+                    <xsl:variable name="translate">
+                        <xsl:value-of select="translate($text,'#','')"/>
+                    </xsl:variable>
+                    <xsl:variable name="note">
+                        <xsl:value-of select="normalize-space(substring-before($translate, $separator))"/>
+                    </xsl:variable>
+                    <xsl:if test="//noteGroup/note[@xml:id=$note][string-length() &gt; 0 ]">
+                        <xsl:for-each select="//noteGroup/note[@xml:id=$note]">
+                            <xsl:variable name="noteRef">
+                                <xsl:apply-templates select="."/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($noteRef)"/>
+                        </xsl:for-each>
+                    </xsl:if>
+                </affiliation>
+                <xsl:call-template name="tokenizeNot">
+                    <xsl:with-param name="text" select="substring-after($text, $separator)"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template name="nameAut">
+        <name>
+            <xsl:attribute name="type">personal</xsl:attribute>
+            <xsl:if test="honorifics">
+                <namePart>
+                    <xsl:attribute name="type">termsOfAddress</xsl:attribute>
+                    <xsl:variable name="honor">
+                        <xsl:apply-templates select="honorifics"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($honor)"/>
+                </namePart>
+            </xsl:if>
+            <xsl:if test="givenNames[string-length() &gt; 0]">
+                <namePart>
+                    <xsl:attribute name="type">given</xsl:attribute>
+                    <xsl:variable name="given">
+                        <xsl:apply-templates select="givenNames"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($given)"/>
+                </namePart>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="unparsedName[string-length()&gt;0]">
+                    <namePart>
+                        <xsl:attribute name="type">family</xsl:attribute>
+                        <xsl:variable name="unparsedName">
+                            <xsl:apply-templates select="unparsedName"/>
+                        </xsl:variable>
+                        <xsl:value-of select="normalize-space($unparsedName)"/>
+                    </namePart>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:if test="familyName[string-length()&gt;0]">
+                        <namePart>
+                            <xsl:attribute name="type">family</xsl:attribute>
+                            <xsl:if test="familyNamePrefix">
+                                <xsl:variable name="familyNamePrefix">
+                                    <xsl:apply-templates select="familyNamePrefix"/>
+                                </xsl:variable>
+                                <xsl:value-of select="normalize-space($familyNamePrefix)"/>
+                                <xsl:text> </xsl:text>
+                            </xsl:if>
+                            <xsl:variable name="familyName">
+                                <xsl:apply-templates select="familyName"/>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($familyName)"/>
+                            <xsl:if test="nameSuffix">
+                                <xsl:text> </xsl:text>
+                                <xsl:variable name="nameSuffix">
+                                    <xsl:apply-templates select="nameSuffix"/>
+                                </xsl:variable>
+                                <xsl:value-of select="normalize-space($nameSuffix)"/>
+                            </xsl:if>
+                        </namePart>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:if test="titlesAfterNames [string-length()&gt;0]">
+                <namePart>
+                    <xsl:attribute name="type">termsOfAddress</xsl:attribute>
+                    <xsl:variable name="titlesAfterNames">
+                        <xsl:apply-templates select="titlesAfterNames"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($titlesAfterNames)"/>
+                </namePart>
+            </xsl:if>
+            <xsl:if test="degrees[string-length() &gt; 0]">
+                <namePart>
+                    <xsl:attribute name="type">termsOfAddress</xsl:attribute>
+                    <xsl:variable name="degrees">
+                        <xsl:apply-templates select="degrees"/>
+                    </xsl:variable>
+                    <xsl:value-of select="normalize-space($degrees)"/>
+                </namePart>
+            </xsl:if>
+            <role>
+                <roleTerm>
+                    <xsl:attribute name="type">text</xsl:attribute>
+                    <xsl:text>author</xsl:text>
+                </roleTerm>
+            </role>
+        </name>
+    </xsl:template>
 </xsl:stylesheet>

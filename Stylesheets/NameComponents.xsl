@@ -7,11 +7,11 @@
     <xsl:output encoding="UTF-8" method="xml"/>
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
     <xsl:template match="name | persname | auname">
-		<author>
+		
 			<persName>
             	<xsl:apply-templates/>
         	</persName>
-		</author>
+		
     </xsl:template>
 
     <xsl:template match="collab | sb:collaboration">
@@ -27,8 +27,7 @@
     <!-- Elements for name components in Springer stage 2/3 (FamilyName, GivenName, Initials, Suffix, Particle...) -->
     <!-- Sage: ln, per_aut/fn, mn, suffix, role (fn ambigue avec footnote) -->
     <!-- BMJ: corresponding-author-firstname, corresponding-author-lastname, corresponding-author-middlename -->
-    <xsl:template
-        match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | corresponding-author-firstname | fname | fnm | wiley:givenNames">
+    <xsl:template match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | corresponding-author-firstname | fname | fnm | wiley:givenNames">
         <xsl:if test=".!=''">
             <forename type="first">
                 <xsl:apply-templates/>

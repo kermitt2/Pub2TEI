@@ -94,14 +94,25 @@
                 </xsl:if-->
                 <!-- No test if made for body since it is considered a mandatory element -->
                 <body>
-                    <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres/*"/>
-					<xsl:apply-templates select="bm/objects/*"/>
-                    <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
-                    <xsl:if test="//headerx/bdy">
-                        <p>
-                            <xsl:value-of select="//headerx/bdy"/>
-                        </p>
-                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*">
+                            <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres/*"/>
+                            <xsl:apply-templates select="bm/objects/*"/>
+                            <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
+                            <xsl:if test="//headerx/bdy">
+                                <p>
+                                    <xsl:value-of select="//headerx/bdy"/>
+                                </p>
+                            </xsl:if>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <body>
+                                <div>
+                                    <p/>
+                                </div>
+                            </body>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </body>
                 <xsl:if test="back| bm">
                     <back>
@@ -835,15 +846,25 @@
             <xsl:if test="@license-type">
                 <xsl:attribute name="status">
                     <xsl:choose>
-                        <xsl:when test="@license-type='open-access'">OpenAccess</xsl:when>
+                        <xsl:when test="@license-type='open-access'">free</xsl:when>
                         <xsl:otherwise>
                             <xsl:value-of select="@license-type"/>
                         </xsl:otherwise>
                     </xsl:choose>
-
                 </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates/>
+            <xsl:choose>
+                <xsl:when test="license-p">
+                    <p>
+                        <xsl:value-of select="license-p"/>
+                    </p>
+                </xsl:when>
+                <xsl:otherwise>
+                    <p>
+                    <xsl:apply-templates/>
+                    </p>
+                </xsl:otherwise>
+            </xsl:choose>
         </availability>
     </xsl:template>
 

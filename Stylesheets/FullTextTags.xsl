@@ -22,6 +22,22 @@
             <!--xsl:apply-templates select="*[not(self::mathStatement)]"/-->
         </p>
         <!--xsl:apply-templates select="wiley:mathStatement"/-->
+    </xsl:template>
+    <xsl:template match="wiley:infoAsset">
+        <term>
+            <xsl:if test="@type">
+                <xsl:attribute name="type">
+                <xsl:value-of select="translate(@type,' ','_')"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@xml:id">
+                <xsl:attribute name="xml:id">
+                <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+            <!--xsl:apply-templates select="*[not(self::mathStatement)]"/-->
+        </term>
     </xsl:template>     
     
     <!-- SG Nature <crosshd> Titre paragraphe -->
@@ -340,6 +356,16 @@
 						<xsl:apply-templates/>
 					</ref>	
 				</xsl:if>
+			    <!--SG - Enriched Object ex:<link href="#aoc1856-eo-0001"/> -->
+			    <xsl:if test="contains(@href, 'eo')">
+			        <!-- we have an Enriched Object -->
+			        <ref type="enrichedObject">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+			            <xsl:apply-templates/>
+			        </ref>	
+			    </xsl:if>
 			    <!-- SG ajout lien figure et bibr --> 
 			    <xsl:if test="contains(@href, 'fig')">
 			        <ref type="figure">
@@ -363,11 +389,27 @@
 			            <xsl:attribute name="target">
 			                <xsl:value-of select="@href"/>
 			            </xsl:attribute>
+			            <xsl:apply-templates/>
+			        </ref>
+			    </xsl:if>
+			    <xsl:if test="contains(@href,'t')">
+			        <ref type="table">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+			            <xsl:value-of select="text()"/>
+			        </ref>
+			    </xsl:if>
+			    <xsl:if test="contains(@href,'f')">
+			        <ref type="figure">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
 			            <xsl:value-of select="text()"/>
 			        </ref>
 			    </xsl:if>
 			</xsl:when>
-			<xsl:otherwise>	
+			<xsl:otherwise>
 				<xsl:if test="contains(@href,'bib')">
 					<ref type="bibr">
 			            <xsl:attribute name="target">
@@ -384,7 +426,7 @@
 						<xsl:value-of select="text()"/>
 			        </ref>
 				</xsl:if>
-				<xsl:if test="substring(@href,2,1) = 't'">
+			    <xsl:if test="substring(@href,2,1) = 't'">
 					<ref type="table">
 		            	<xsl:attribute name="target">
 		                	<xsl:value-of select="@href"/>
@@ -392,6 +434,7 @@
 						<xsl:value-of select="text()"/>
 		        	</ref>
 				</xsl:if>
+			   
 			</xsl:otherwise>	
 		</xsl:choose>
     </xsl:template>
@@ -604,7 +647,7 @@
             <!-- SG - ajout numéro de section -->
             <xsl:if test="@xml:id">
                 <xsl:attribute name="n">
-                    <xsl:value-of select="translate(@xml:id,'sec','')"/>
+                    <xsl:value-of select="@xml:id"/>
                 </xsl:attribute>
             </xsl:if>
             <xsl:if test="contains(@xml:id,'sec')">
@@ -623,7 +666,7 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 	<!-- SG ajout citation "other" -->
-    <xsl:template match="wiley:citation">
+    <xsl:template match="wiley:citation [@type='other']">
         <xsl:apply-templates/>
     </xsl:template>
     
@@ -631,10 +674,6 @@
         <ref type="url">
           	<xsl:value-of select="@href"/>
 		</ref>	
-    </xsl:template>
-    <!-- SG reprise url dans reference -->
-    <xsl:template match="wiley:citation/wiley:url">
-            <xsl:value-of select="@href"/>
     </xsl:template>
 	
 	<!-- no idea what it this <sc> tag in Wiley - apparently a styling element -->

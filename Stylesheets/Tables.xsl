@@ -57,6 +57,9 @@
     </xsl:template>
     
     <!-- SG - traitement tables WILEY -->
+    <xsl:template match="wiley:thead">
+            <xsl:apply-templates/>
+    </xsl:template>
     <xsl:template match="wiley:thead/wiley:row">
         <row>
             <xsl:if test="@rowsep">
@@ -99,10 +102,18 @@
     <!-- exception Elsevier si on est déjà dans un paragraph et Wiley dans un <tabular> -->
     <xsl:template match="ce:para/els:display/ce:table | wiley:table">
         <table>
+            <xsl:if test="wiley:tgroup/@cols">
+                <xsl:attribute name="cols">
+                    <xsl:value-of select="wiley:tgroup/@cols"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </table>
     </xsl:template>
 
+    <xsl:template match="wiley:chemicalStructure">
+                <xsl:apply-templates/>
+    </xsl:template>
     <xsl:template match="array">
         <ab type="array">
             <table>
@@ -150,7 +161,19 @@
             <xsl:apply-templates/>
         </head>
     </xsl:template>
-	
+    <xsl:template match="wiley:tabular/wiley:noteGroup/wiley:note">
+        <note>
+            <xsl:if test="@xml:id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </note>
+    </xsl:template>
+    <xsl:template match="wiley:note/wiley:label">
+        <label><xsl:apply-templates/></label>
+    </xsl:template>
     <xsl:template match="wiley:p/wiley:label">
         <label><xsl:value-of select="text()"/></label>
     </xsl:template>
@@ -168,18 +191,18 @@
     </xsl:template>
 	
     <xsl:template match="wiley:entry">
-		<cell>
-		    <xsl:if test="@rowsep">
-		        <xsl:attribute name="role">label</xsl:attribute>
-		    </xsl:if>
-		    <xsl:if test="@morerows &gt;1">
-		        <xsl:attribute name="role">label</xsl:attribute>
-		    </xsl:if>
-        	<xsl:apply-templates/>
-		</cell>
+        <cell>
+            <xsl:if test="@rowsep">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@morerows &gt;1">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </cell>
     </xsl:template>
 
-    <xsl:template match="wiley:colspec | wiley:thead | wiley:tbody | wiley:tgroup">
+    <xsl:template match="wiley:colspec | wiley:tbody | wiley:tgroup">
 		<!-- not obvious to use in TEI transformation -->
 		<xsl:apply-templates select="*"/>
     </xsl:template>

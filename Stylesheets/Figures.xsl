@@ -48,6 +48,11 @@
                 <xsl:value-of select="wiley:label"/>
                 </label>
             </xsl:if>
+            <xsl:if test="wiley:title">
+                <head>
+                    <xsl:value-of select="wiley:title"/>
+                </head>
+            </xsl:if>
             <xsl:message><xsl:value-of select="wiley:label"/></xsl:message>
             <xsl:apply-templates select="wiley:mediaResourceGroup"/>
             <xsl:apply-templates select="wiley:caption"/>
@@ -55,6 +60,9 @@
     </xsl:template>
     <!-- SG - mimetype -->
     <!--<media mimeType="image/png" url="fig1.png"/>-->
+    <xsl:template match="wiley:chemicalStructure/wiley:mediaResourceGroup">
+            <xsl:apply-templates/>
+    </xsl:template>
     <xsl:template match="wiley:mediaResourceGroup">
         <p>
         <xsl:apply-templates/>
@@ -66,6 +74,11 @@
                 <xsl:when test="@mimeType !=''">
                     <xsl:attribute name="mimeType">
                         <xsl:apply-templates select="@mimeType"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@alt !=''">
+                    <xsl:attribute name="mimeType">
+                        <xsl:apply-templates select="@alt"/>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:otherwise>
