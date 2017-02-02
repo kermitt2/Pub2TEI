@@ -18,10 +18,19 @@
     
     <xsl:template match="wiley:p">
         <p>
+            <xsl:if test="@xml:id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@xml:id"></xsl:value-of>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
-            <!--xsl:apply-templates select="*[not(self::mathStatement)]"/-->
+            <!--<xsl:apply-templates select="*[not(self::wiley:mathStatement)]"/>-->
         </p>
         <!--xsl:apply-templates select="wiley:mathStatement"/-->
+    </xsl:template>
+    <xsl:template match="wiley:mathStatement/wiley:p">
+        <xsl:text> </xsl:text>
+            <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="wiley:infoAsset">
         <term>
@@ -84,23 +93,24 @@
     <!-- SG - ajout des listes pour wiley -->
     <xsl:template match="wiley:list">
         <list>
+            <xsl:if test="@xml:id">
+                <xsl:copy-of select="@xml:id"/>  
+            </xsl:if>
             <xsl:if test="@style">
                 <xsl:copy-of select="@style"/>  
             </xsl:if>
             <xsl:apply-templates/>
         </list>
     </xsl:template>
+   <xsl:template match="wiley:listItem/wiley:label">
+            <xsl:apply-templates/>
+    </xsl:template>
     <xsl:template match="wiley:listItem">
-        <xsl:apply-templates/>
-    </xsl:template>
-    <xsl:template match="wiley:listItem/wiley:label">
-        <label>
-            <xsl:apply-templates/>
-        </label>
-    </xsl:template>
-    <xsl:template match="wiley:listItem/wiley:p">
         <item>
-            <xsl:apply-templates/>
+            <xsl:attribute name="n">
+                <xsl:apply-templates select="wiley:label"/>
+            </xsl:attribute>
+            <xsl:apply-templates select="wiley:p"/>
         </item>
     </xsl:template>
     
@@ -108,7 +118,7 @@
     <xsl:template match="wiley:blockFixed">
         <floatingText>
             <body>
-            <xsl:apply-templates/>
+                <xsl:apply-templates select="wiley:mediaResourceGroup | wiley:p"/>
             </body>
         </floatingText>
     </xsl:template>
@@ -392,6 +402,14 @@
 			            <xsl:apply-templates/>
 			        </ref>
 			    </xsl:if>
+			    <xsl:if test="contains(@href,'sec')">
+			        <ref type="section">
+			            <xsl:attribute name="target">
+			                <xsl:value-of select="@href"/>
+			            </xsl:attribute>
+			            <xsl:apply-templates/>
+			        </ref>
+			    </xsl:if>
 			    <xsl:if test="contains(@href,'t')">
 			        <ref type="table">
 			            <xsl:attribute name="target">
@@ -533,7 +551,7 @@
         <xsl:if test=".!=''"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
-    <xsl:template match="Emphasis[@Type='SmallCaps'] | ce:small-caps | sc | scp">
+    <xsl:template match="Emphasis[@Type='SmallCaps'] | ce:small-caps | sc | scp | wiley:sc">
         <xsl:if test=".!=''">
             <hi rend="smallCaps"><xsl:apply-templates/></hi>
         </xsl:if>
@@ -586,6 +604,27 @@
     <xsl:template match="break">
         <lb/>
     </xsl:template>
+    <xsl:template match="wiley:fc">
+        <xsl:if test=".!=''">
+            <hi rend="fc"><xsl:apply-templates/></hi>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="wiley:fr">
+        <xsl:if test=".!=''">
+            <hi rend="fr"><xsl:apply-templates/></hi>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="wiley:fi">
+        <xsl:if test=".!=''">
+            <hi rend="fi"><xsl:apply-templates/></hi>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="wiley:span">
+        <xsl:if test=".!=''">
+            <span><xsl:apply-templates/></span>
+        </xsl:if>
+    </xsl:template>
+    
 
     <!-- Footnotes
     Springer: Footnote/@ID-->
@@ -637,7 +676,7 @@
 		</head>	
     </xsl:template>
 	
-    <xsl:template match="wiley:section">
+    <xsl:template match="wiley:body/wiley:section">
         <div>
             <xsl:if test="@xml:lang">
             <xsl:attribute name="xml:lang">
@@ -646,7 +685,7 @@
             </xsl:if>
             <!-- SG - ajout numéro de section -->
             <xsl:if test="@xml:id">
-                <xsl:attribute name="n">
+                <xsl:attribute name="xml:id">
                     <xsl:value-of select="@xml:id"/>
                 </xsl:attribute>
             </xsl:if>
@@ -660,6 +699,33 @@
 			</xsl:if>
 			<xsl:apply-templates select="* except (wiley:title)"/>
         </div>
+    </xsl:template>
+    <xsl:template match="wiley:section/wiley:section">
+        <div>
+            <xsl:if test="@xml:lang">
+                <xsl:attribute name="xml:lang">
+                    <xsl:value-of select="@xml:lang"/>
+                </xsl:attribute>
+            </xsl:if>
+            <!-- SG - ajout numéro de section -->
+            <xsl:if test="@xml:id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@xml:id"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="contains(@xml:id,'sec')">
+                <xsl:attribute name="type">section</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="wiley:title">
+                <head>
+                    <xsl:apply-templates select="wiley:title"/>
+                </head>
+            </xsl:if>
+            <xsl:apply-templates select="* except (wiley:title)"/>
+        </div>
+    </xsl:template>
+    <xsl:template match="wiley:abstract/wiley:section">
+        <xsl:apply-templates/>
     </xsl:template>
 	
 	<xsl:template match="wiley:section/wiley:title">
@@ -677,9 +743,9 @@
     </xsl:template>
 	
 	<!-- no idea what it this <sc> tag in Wiley - apparently a styling element -->
-    <xsl:template match="wiley:sc">
+   <!-- <xsl:template match="wiley:sc">
         <xsl:apply-templates/>
-    </xsl:template>
+    </xsl:template>-->
     
     <!-- SG reprise wiley:inlineGraphic dans body -->
     <xsl:template match="wiley:inlineGraphic">

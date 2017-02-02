@@ -58,24 +58,42 @@
     
     <!-- SG - traitement tables WILEY -->
     <xsl:template match="wiley:thead">
-            <xsl:apply-templates/>
+        <xsl:apply-templates select="wiley:row"/>
     </xsl:template>
-    <xsl:template match="wiley:thead/wiley:row">
+    <xsl:template match="wiley:tbody">
+        <xsl:apply-templates select="wiley:row"/>
+    </xsl:template>
+    <xsl:template match="wiley:row">
         <row>
             <xsl:if test="@rowsep">
                 <xsl:attribute name="role">label</xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="wiley:entry"/>
         </row>
     </xsl:template>
-    <xsl:template match="wiley:tbody/wiley:row">
-        <row>
+    <xsl:template match="wiley:entry">
+        <cell>
             <xsl:if test="@rowsep">
                 <xsl:attribute name="role">label</xsl:attribute>
             </xsl:if>
+            <xsl:if test="@morerows &gt;1">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@align">
+                <xsl:attribute name="style"><xsl:text>align(</xsl:text><xsl:apply-templates select="@align"/><xsl:text>)</xsl:text></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@colname">
+                <xsl:attribute name="cols"><xsl:value-of select="translate(@colname,'col','')"></xsl:value-of></xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
-        </row>
+        </cell>
     </xsl:template>
+    
+    <xsl:template match="wiley:colspec | wiley:tgroup">
+        <!-- not obvious to use in TEI transformation -->
+        <xsl:apply-templates select="*"/>
+    </xsl:template>
+    
 
     <xsl:template match="tr | cals:row">
         <row>
@@ -190,22 +208,6 @@
         </figure>
     </xsl:template>
 	
-    <xsl:template match="wiley:entry">
-        <cell>
-            <xsl:if test="@rowsep">
-                <xsl:attribute name="role">label</xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@morerows &gt;1">
-                <xsl:attribute name="role">label</xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </cell>
-    </xsl:template>
-
-    <xsl:template match="wiley:colspec | wiley:tbody | wiley:tgroup">
-		<!-- not obvious to use in TEI transformation -->
-		<xsl:apply-templates select="*"/>
-    </xsl:template>
-	
+    
 
 </xsl:stylesheet>

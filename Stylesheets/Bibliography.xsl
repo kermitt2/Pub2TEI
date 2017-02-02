@@ -14,6 +14,38 @@
         <div type="references">
             <xsl:apply-templates select="title | ce:section-title"/>
             <listBibl>
+                <xsl:for-each select="wiley:bib">
+                <bibl>
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="@xml:id"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="corresp">
+                        <xsl:variable name="bib">
+                            <xsl:for-each select="wiley:citation/@xml:id">
+                                <xsl:text> #</xsl:text>
+                                <xsl:value-of select="."/>
+                            </xsl:for-each>
+                        </xsl:variable>
+                            <xsl:value-of select="normalize-space($bib)"/>
+                    </xsl:attribute>
+                </bibl>
+                </xsl:for-each>
+                <xsl:for-each select="wiley:bibSection/wiley:bib">
+                    <bibl>
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@xml:id"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="corresp">
+                            <xsl:variable name="bib">
+                                <xsl:for-each select="wiley:citation/@xml:id">
+                                    <xsl:text> #</xsl:text>
+                                    <xsl:value-of select="."/>
+                                </xsl:for-each>
+                            </xsl:variable>
+                            <xsl:value-of select="normalize-space($bib)"/>
+                        </xsl:attribute>
+                    </bibl>
+                </xsl:for-each>
                 <xsl:apply-templates select="ref | citgroup | ce:bibliography-sec | bib | wiley:bib | wiley:bibSection"/>
             </listBibl>
         </div>
@@ -404,10 +436,7 @@
         <xsl:choose>
             <xsl:when test="wiley:articleTitle | wiley:journalTitle">
                <biblStruct type="journal">
-                    <xsl:attribute name="xml:id">
-                        <xsl:value-of select="$id"/>
-                    </xsl:attribute>
-                   <xsl:attribute name="n">
+                   <xsl:attribute name="xml:id">
                        <xsl:value-of select="@xml:id"/>
                    </xsl:attribute>
                    <xsl:if test="wiley:articleTitle | wiley:chapterTitle | wiley:author | wiley:groupName">
@@ -476,7 +505,7 @@
             <xsl:when test="wiley:bookTitle">
                 <biblStruct type="book">
                     <xsl:attribute name="xml:id">
-                        <xsl:value-of select="$id"/>
+                        <xsl:value-of select="@xml:id"/>
                     </xsl:attribute>
                     <xsl:if test="wiley:chapterTitle">
                         <analytic>
@@ -549,9 +578,6 @@
             <xsl:otherwise>
                     <bibl type="other">
                         <xsl:attribute name="xml:id">
-                            <xsl:value-of select="$id"/>
-                        </xsl:attribute>
-                        <xsl:attribute name="n">
                             <xsl:value-of select="@xml:id"/>
                         </xsl:attribute>
                         <xsl:apply-templates/>
