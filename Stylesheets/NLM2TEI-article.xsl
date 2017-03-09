@@ -16,7 +16,7 @@
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
-    <xsl:template match="article[front] | article[pubfm] | headerx">
+    <xsl:template match="article[front] | article[pubfm] | article[suppfm] | headerx">
         <xsl:message>NLM2TEI-article.xsl</xsl:message>
         <TEI>
             <xsl:if test="@xml:lang">
@@ -63,7 +63,7 @@
 						</editionStmt>
 					</xsl:if>	
                     <sourceDesc>
-                        <xsl:apply-templates select="front | pubfm" mode="sourceDesc"/>
+                        <xsl:apply-templates select="front | pubfm |suppfm" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
                 <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject">
@@ -106,11 +106,9 @@
                             </xsl:if>
                         </xsl:when>
                         <xsl:otherwise>
-                            <body>
                                 <div>
                                     <p/>
                                 </div>
-                            </body>
                         </xsl:otherwise>
                     </xsl:choose>
                 </body>
@@ -184,7 +182,7 @@
                 </idno>
             </analytic>
             <monogr>
-                <xsl:apply-templates select="journal-meta/journal-title | jtl"/>
+                <xsl:apply-templates select="journal-meta/journal-title | jtl | suppmast/jtl"/>
                 <xsl:apply-templates select="journal-meta/journal-id"/>
                 <xsl:apply-templates select="journal-meta/abbrev-journal-title"/>
                 <xsl:apply-templates select="journal-meta/issue-title"/>

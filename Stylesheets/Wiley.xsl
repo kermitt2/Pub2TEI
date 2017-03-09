@@ -51,6 +51,44 @@
                     </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
+            <!-- Genre     -->
+            <xsl:variable name="codeGenre1">
+                <xsl:value-of select="header/publicationMeta[@level='unit']/@type"/>
+            </xsl:variable>
+            <xsl:variable name="codeGenre">
+                <xsl:choose>
+                    <xsl:when test="normalize-space($codeGenre1)='technicalNote'">article</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='article'">article</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='reviewArticle'">review-article</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='editorial'">editorial</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='bookReview'">book-reviews</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='shortCommunication'">brief-communication</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='shortArticle'">article</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='rapidCommunication'">brief-communication</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='caseStudy'">case-report</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='abstract'">abstract</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='letter'">review-article</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='news'">article</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='commentary'">article</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='meetingReport'">conference</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='rapidPublication'">brief-communication</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='serialArticle'">article</xsl:when>
+                    <xsl:when test="normalize-space($codeGenre1)='miscellaneous'">
+                        <xsl:choose>
+                            <xsl:when test="//abstract[string-length() &gt; 0]">article</xsl:when>
+                            <xsl:otherwise>other</xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>other</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:variable>
+            <xsl:if test="header/publicationMeta[@level='unit']/@type[string-length()&gt; 0]">
+                <xsl:attribute name="type">
+                    <xsl:value-of select="normalize-space($codeGenre)"/>
+                </xsl:attribute>
+            </xsl:if>
             <teiHeader>
                 <fileDesc>
                     <!-- SG - titre brut -->
@@ -368,9 +406,27 @@
 
     <!-- author related information -->
     <xsl:template match="creator">
+        <author>
+            <xsl:attribute name="xml:id">
+                <xsl:variable name="i" select="position()-1" />
+                <xsl:choose>
+                    <xsl:when test="$i &lt; 10">
+                        <xsl:value-of select="concat('author-000', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 100">
+                        <xsl:value-of select="concat('author-00', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 1000">
+                        <xsl:value-of select="concat('author-0', $i)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="concat('author-', $i)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
         <xsl:choose>
             <xsl:when test="@creatorRole='author'">
-                <author>
+                    
                     <!-- SG - ajout de @corresponding et @noteRef -->
                     <xsl:if test="@corresponding='yes'">
                         <xsl:attribute name="role">
@@ -386,11 +442,9 @@
                     <xsl:if test="//affiliationGroup">
                         <xsl:call-template name="affiliation"/>
                     </xsl:if>
-                </author>
             </xsl:when>
             <!-- ajout SG si pas d'@creatorRole  -->
             <xsl:otherwise>
-                <author>
                     <xsl:if test="@corresponding='yes'">
                         <xsl:attribute name="role">
                             <xsl:text>corresp</xsl:text>
@@ -400,9 +454,9 @@
                     <xsl:if test="//affiliationGroup">
                         <xsl:call-template name="affiliation"/>
                     </xsl:if>
-                </author>
             </xsl:otherwise>
         </xsl:choose>
+        </author>
         <xsl:if test="@creatorRole='editor'">
             <editor>
                 <xsl:apply-templates/>
