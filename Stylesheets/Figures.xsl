@@ -67,39 +67,76 @@
         <xsl:apply-templates select="wiley:mediaResource"/>
     </xsl:template>
     <xsl:template match="wiley:mediaResource">
-        <p>
-            <media>
-                <xsl:if test="ancestor::wiley:chemicalStructure/@xml:id">
-                    <xsl:attribute name="xml:id">
-                        <xsl:value-of select="ancestor::wiley:chemicalStructure/@xml:id"/>
-                    </xsl:attribute>
-                </xsl:if>
-                <xsl:choose>
-                    <xsl:when test="@mimeType !=''">
-                        <xsl:attribute name="mimeType">
-                            <xsl:apply-templates select="@mimeType"/>
+        <xsl:choose>
+            <xsl:when test="ancestor::wiley:abstract and not(ancestor::wiley:blockFixed) ">
+                <media>
+                    <xsl:if test="ancestor::wiley:chemicalStructure/@xml:id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="ancestor::wiley:chemicalStructure/@xml:id"/>
                         </xsl:attribute>
-                    </xsl:when>
-                    <xsl:when test="@alt !=''">
-                        <xsl:attribute name="mimeType">
-                            <xsl:apply-templates select="@alt"/>
-                        </xsl:attribute>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:attribute name="mimeType">image</xsl:attribute>
-                    </xsl:otherwise>
-                </xsl:choose>
-                
-                <xsl:attribute name="url">
-                    <xsl:apply-templates select="@href"/>
-                </xsl:attribute>
-                <xsl:if test="@rendition">
-                    <xsl:attribute name="rendition">
-                        <xsl:apply-templates select="@rendition"/>
+                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="@mimeType !=''">
+                            <xsl:attribute name="mimeType">
+                                <xsl:apply-templates select="@mimeType"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:when test="@alt !=''">
+                            <xsl:attribute name="mimeType">
+                                <xsl:apply-templates select="@alt"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="mimeType">image</xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    
+                    <xsl:attribute name="url">
+                        <xsl:apply-templates select="@href"/>
                     </xsl:attribute>
-                </xsl:if>
-            </media>
-        </p>
+                    <xsl:if test="@rendition">
+                        <xsl:attribute name="rendition">
+                            <xsl:apply-templates select="@rendition"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                </media>
+            </xsl:when>
+            <xsl:otherwise>
+                <p>
+                    <media>
+                        <xsl:if test="ancestor::wiley:chemicalStructure/@xml:id">
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="ancestor::wiley:chemicalStructure/@xml:id"/>
+                            </xsl:attribute>
+                        </xsl:if>
+                        <xsl:choose>
+                            <xsl:when test="@mimeType !=''">
+                                <xsl:attribute name="mimeType">
+                                    <xsl:apply-templates select="@mimeType"/>
+                                </xsl:attribute>
+                            </xsl:when>
+                            <xsl:when test="@alt !=''">
+                                <xsl:attribute name="mimeType">
+                                    <xsl:apply-templates select="@alt"/>
+                                </xsl:attribute>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:attribute name="mimeType">image</xsl:attribute>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        
+                        <xsl:attribute name="url">
+                            <xsl:apply-templates select="@href"/>
+                        </xsl:attribute>
+                        <xsl:if test="@rendition">
+                            <xsl:attribute name="rendition">
+                                <xsl:apply-templates select="@rendition"/>
+                            </xsl:attribute>
+                        </xsl:if>
+                    </media>
+                </p>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <!-- SG - reprise traitement des figures wiley -->

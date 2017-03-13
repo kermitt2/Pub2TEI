@@ -9,8 +9,8 @@
     <xsl:template match="name | persname | auname">
 		
 			<persName>
-            	<xsl:apply-templates/>
-        	</persName>
+			    <xsl:apply-templates/>
+			</persName>
 		
     </xsl:template>
 

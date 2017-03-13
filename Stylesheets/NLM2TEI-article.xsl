@@ -36,8 +36,8 @@
 						</xsl:if>
                         <xsl:apply-templates select="front/article-meta/permissions/*"/>
                         <xsl:if test="not(front/article-meta/permissions)">
-                            <xsl:apply-templates select="front/article-meta/copyright-statement | pubfm/cpg/cpn"/>
-                            <xsl:apply-templates select="front/article-meta/copyright-year | pubfm/cpg/cpy"/>
+                            <xsl:apply-templates select="front/article-meta/copyright-statement | pubfm/cpg/cpn | suppfm/cpg/cpn"/>
+                            <xsl:apply-templates select="front/article-meta/copyright-year | pubfm/cpg/cpy | suppfm/cpg/cpy"/>
                         </xsl:if>
                         <xsl:if
                             test="front/article-meta/custom-meta-wrap/custom-meta[string(meta-name)='unlocked' and string(meta-value)='Yes']">
@@ -61,12 +61,22 @@
 								<xsl:apply-templates select="pubfm/suppinfo/suppobj"/>
 							</edition>	
 						</editionStmt>
-					</xsl:if>	
+					</xsl:if>
+                    <xsl:if test="suppfm/suppinfo">
+                        <editionStmt>
+                            <edition>
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="suppfm/suppinfo/@id"/>
+                                </xsl:attribute>
+                                <xsl:apply-templates select="suppfm/suppinfo/suppobj"/>
+                            </edition>	
+                        </editionStmt>
+                    </xsl:if>	
                     <sourceDesc>
                         <xsl:apply-templates select="front | pubfm |suppfm" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
-                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject">
+                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
 		                <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
@@ -76,6 +86,11 @@
                         <xsl:if test="pubfm/subject">
                             <textClass>
                                 <xsl:apply-templates select="pubfm/subject"/>
+                            </textClass>
+                        </xsl:if>
+                        <xsl:if test="suppfm/subject">
+                            <textClass>
+                                <xsl:apply-templates select="suppfm/subject"/>
                             </textClass>
                         </xsl:if>
                         <xsl:apply-templates select="front/article-meta/kwd-group"/>
@@ -126,7 +141,7 @@
     <xsl:template match="article-meta"/>
 
     <!-- Building the sourceDesc bibliographical representation -->
-    <xsl:template match="front | pubfm" mode="sourceDesc">
+    <xsl:template match="front | pubfm | suppfm" mode="sourceDesc">
         <biblStruct>
             <xsl:variable name="articleType" select="/article/@article-type"/>
             <xsl:if test="$articleType != ''">
@@ -165,8 +180,7 @@
                 </xsl:choose>
             </xsl:if>
 
-            <analytic>
-                <!-- All authors are included here -->
+            <analytic>                <!-- All authors are included here -->
                 <xsl:apply-templates select="article-meta/contrib-group/*[name()!='aff']"/>
                 <xsl:if test="/article/fm/aug | /headerx/fm/aug">
                     <xsl:apply-templates select="/article/fm/aug/*| /headerx/fm/aug/*"/>
@@ -176,18 +190,19 @@
                 </xsl:if>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="article-meta/title-group/*"/>
+                <xsl:apply-templates select="//fm/atl"/>
                     <!-- SG - ajout articleID -->
                 <idno type="articleId">
                     <xsl:value-of select="//ArticleId |//article/@id"/>
                 </idno>
             </analytic>
             <monogr>
-                <xsl:apply-templates select="journal-meta/journal-title | jtl | suppmast/jtl"/>
+                <xsl:apply-templates select="journal-meta/journal-title | jtl | suppmast/jtl | suppmast/suppttl"/>
                 <xsl:apply-templates select="journal-meta/journal-id"/>
                 <xsl:apply-templates select="journal-meta/abbrev-journal-title"/>
                 <xsl:apply-templates select="journal-meta/issue-title"/>
                 
-                <xsl:apply-templates select="journal-meta/issn | issn"/>
+                <xsl:apply-templates select="journal-meta/issn | issn |parent/issn"/>
 				<xsl:apply-templates select="doi"/>
                 <imprint>
                     <xsl:apply-templates select="journal-meta/publisher/*"/>
@@ -201,13 +216,13 @@
                     </xsl:for-each>
 
 					<!-- the special date notation <idt>201211</idt> -->
-					<xsl:apply-templates select="idt"/>
-					
+                    <xsl:apply-templates select="idtidt | suppmast/idt"/>
                     <xsl:apply-templates
-                        select="article-meta/volume | vol | article-meta/issue | iss
+                        select="article-meta/volume | vol | suppmast/vol | suppmast/iss |article-meta/issue | iss
                         | article-meta/fpage | pp/spn | pp/epn | article-meta/lpage 
                         | article-meta/elocation-id"
                     />
+                    <xsl:apply-templates select="copyright-year | cpg/cpy"/>
                 </imprint>
             </monogr>
             <xsl:apply-templates select="article-meta/article-id"/>
@@ -264,7 +279,7 @@
 		    </xsl:if>
 		    <!-- email -->
 		    <xsl:if test="../caff/coid and corf and corf/@rid">
-		            <xsl:apply-templates select="../caff[coid[@id=current()/corf/@rid]]" mode="sourceDesc"/>
+		        <xsl:apply-templates select="../caff[coid[@id=current()/corf/@rid]]" mode="sourceDesc"/>
 		    </xsl:if>
 			<!-- affiliation -->
 		    <xsl:choose>
@@ -285,6 +300,9 @@
 		            </xsl:for-each> 
 		        </xsl:when>
 		        <!-- SG - cas quand les affiliations n'ont pas de liens auteurs/affiliations définis explicitement ex: nature_headerx_315736a0.xml -->
+		        <xsl:when test="../aff/org and not(../aff/oid)">
+		                <xsl:apply-templates select="../aff" mode="sourceDesc"/>
+		        </xsl:when>
 		        <xsl:when test="../aff and not(../aff/oid)">
 		            <affiliation>
 		                <xsl:value-of select="following-sibling::aff"/>
@@ -297,10 +315,13 @@
 		            <xsl:apply-templates select="../aff" mode="sourceDesc"/>
 		        </xsl:when>
 		    </xsl:choose>
-		    <!--xsl:if test="../caff"/-->
+		    <xsl:if test="aufnr/@rid">
+		        <affiliation>
+		            <xsl:value-of select="//aufn[@id=current()/aufnr/@rid]"/>
+		        </affiliation>
+		    </xsl:if>
 		</author>
     </xsl:template>
-    
 	<!--SG: reprise biographie des auteurs -->
     <xsl:template match="bio">
         <state>
@@ -360,7 +381,7 @@
 
     <!-- Inline affiliation (embedded in <contrib>) -->
     <xsl:template match="aff | contrib/address">
-        <xsl:if test="not(/article/pubfm | /headerx/pubfm)">
+        <xsl:if test="not(/article/pubfm | /headerx/pubfm |/article/suppfm)">
 			<!-- this only apply to NPG articles not containing a pubfm style component -->
 	        <affiliation>
 	            <xsl:apply-templates select="*[name(.)!='addr-line' and name(.)!='country']"/>
@@ -375,18 +396,14 @@
     </xsl:template>
 
     <xsl:template match="caff" mode="sourceDesc">
-        <xsl:choose>
-            <xsl:when test="email">
-                <email>
-                <xsl:value-of select="email"/>
-                </email>
-            </xsl:when>
-            <xsl:otherwise>
+       <xsl:if test="email">
+                   <email>
+                       <xsl:value-of select="email"/>
+                   </email>
+           </xsl:if>
                 <affiliation>
                     <xsl:value-of select="."/> 
                 </affiliation>
-            </xsl:otherwise>
-        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="aff" mode="sourceDesc">
@@ -974,7 +991,7 @@
     </xsl:template>
 
 	<!-- custom date format <idt>19731128</idt> -->
-	<xsl:template match="idt">
+	<xsl:template match="idt | suppmast/idt">
 		<date>
             <xsl:attribute name="when">
 				<xsl:if test="string-length(text()) > 0">

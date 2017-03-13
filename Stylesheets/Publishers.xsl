@@ -76,6 +76,9 @@
             <xsl:when test="article/pubfm">
                 <xsl:message>Converting a NPG article</xsl:message>
             </xsl:when>
+            <xsl:when test="article/suppfm">
+                <xsl:message>Converting a NPG article</xsl:message>
+            </xsl:when>
             <xsl:when test="wiley:component">
                 <xsl:message>Converting a Wiley article</xsl:message>
             </xsl:when>

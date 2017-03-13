@@ -401,14 +401,14 @@
     </xsl:template>
 
 	<xsl:template match="creators">
-		 <xsl:apply-templates/>
+		 <xsl:apply-templates select="creator"/>
 	</xsl:template>
 
     <!-- author related information -->
     <xsl:template match="creator">
         <author>
             <xsl:attribute name="xml:id">
-                <xsl:variable name="i" select="position()-1" />
+                <xsl:variable name="i" select="position()-1"/>
                 <xsl:choose>
                     <xsl:when test="$i &lt; 10">
                         <xsl:value-of select="concat('author-000', $i)"/>

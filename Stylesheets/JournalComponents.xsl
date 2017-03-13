@@ -109,10 +109,16 @@
     <!-- Nature: journal-title -->
     <!-- Elsevier: els:jid, ce:issn -->
 
-    <xsl:template
-        match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl | wiley:journalTitle">
+    <xsl:template match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl | wiley:journalTitle">
         <xsl:if test=".!=''">
             <title level="j" type="main">
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="suppttl">
+        <xsl:if test=".!=''">
+            <title level="j" type="sub">
                 <xsl:apply-templates/>
             </title>
         </xsl:if>
@@ -339,7 +345,7 @@
     <!-- Elements for Imprint components in Springer Stage 3 (ArticleFirstPage, ArticleLastPage) -->
     <!-- Elements for Imprint components in BMJ (issue-number, volume) -->
     <!-- Elements for Imprint components in Elsevier () -->
-
+    
     <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume'] | wiley:vol">
         <xsl:if test=".!=''">
             <biblScope unit="vol">

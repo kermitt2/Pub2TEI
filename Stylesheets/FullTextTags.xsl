@@ -470,6 +470,14 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
+    <xsl:template match="cite">
+        <ref type="cit">
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
     <!-- SG ajout ref <xnav> -->
     <xsl:template match="xnav">
         <ref type="bibr">

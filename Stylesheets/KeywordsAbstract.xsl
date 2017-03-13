@@ -31,7 +31,7 @@
         </textClass>
     </xsl:template>
     <!-- SG - ajout subject NLM/Nature -->
-    <xsl:template match="pubfm/subject">
+    <xsl:template match="pubfm/subject |suppfm/subject">
             <classCode>
                 <xsl:attribute name="scheme">
                     <xsl:apply-templates select="@type"/>
