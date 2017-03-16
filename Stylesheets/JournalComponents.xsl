@@ -259,7 +259,7 @@
     <xsl:template match="wiley:publicationMeta[@level='product']/wiley:doi">
         <xsl:if test=".!=''">
             <xsl:variable name="DOIValue" select="string(.)"/>
-            <idno type="bookDOI">
+            <idno type="book-DOI">
                 <xsl:choose>
                     <xsl:when test=" starts-with($DOIValue,'DOI')">
                         <xsl:value-of select="normalize-space( substring-after($DOIValue,'DOI'))"/>
@@ -292,6 +292,11 @@
                 </xsl:choose>
             </idno>
         </xsl:if>
+    </xsl:template>
+    <xsl:template match="wiley:publicationMeta[@level='unit']/wiley:idGroup/wiley:id">
+            <idno type="article-ID">
+                <xsl:apply-templates select="@value"/>
+            </idno>
     </xsl:template>
 
     <!-- pii -->
@@ -435,7 +440,7 @@
     <!--SG - ajout nombre de pages -->
     <xsl:template match="wiley:count[@type='pageTotal']">
         <xsl:if test="@number !=''">
-            <biblScope unit="countPage">
+            <biblScope unit="count-page">
                 <xsl:value-of select="@number"/>
             </biblScope>
         </xsl:if>

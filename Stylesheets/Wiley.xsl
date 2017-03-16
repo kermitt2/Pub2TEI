@@ -317,6 +317,8 @@
 				<xsl:if test="contentMeta/creators">
 					<xsl:apply-templates select="contentMeta/creators"/>
 				</xsl:if>
+                <xsl:apply-templates select="publicationMeta[@level='unit']/doi"/>
+                <xsl:apply-templates select="publicationMeta[@level='unit']/idGroup/id"/>
             </analytic>
             <monogr>
 				<title level="j" type="main">
@@ -330,7 +332,6 @@
                 </xsl:if>
                 <xsl:apply-templates select="publicationMeta[@level='product']/issn"/>
                 <xsl:apply-templates select="publicationMeta[@level='product']/doi"/>
-				<xsl:apply-templates select="publicationMeta[@level='unit']/doi"/>
                 <imprint>
 	                <xsl:apply-templates select="publicationMeta[@level='part']/numberingGroup/numbering[@type='journalVolume']"/>
 	                <xsl:apply-templates select="publicationMeta[@level='part']/numberingGroup/numbering[@type='journalIssue']"/>
