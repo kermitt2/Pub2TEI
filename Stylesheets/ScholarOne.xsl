@@ -282,13 +282,6 @@
 
     <xsl:template match="allowbreak"/>
 
-    <xsl:template match="title">
-        <head>
-            <xsl:apply-templates/>
-        </head>
-    </xsl:template>
-
-
     <xsl:template match="web_publish_date" mode="inImprint">
         <xsl:if test="year != ''">
             <date>

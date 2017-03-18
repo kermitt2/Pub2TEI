@@ -512,12 +512,6 @@
 
     <xsl:template match="allowbreak"/>
 
-    <xsl:template match="title">
-        <head>
-            <xsl:apply-templates/>
-        </head>
-    </xsl:template>
-
     <!-- Lists in Springer format -->
     <xsl:template match="OrderedList">
         <list type="ordered">
