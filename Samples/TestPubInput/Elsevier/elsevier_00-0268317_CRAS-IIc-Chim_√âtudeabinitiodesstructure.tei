@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="main">Étude ab initio des structures électroniques et
+                    magnétiques des systèmes YFe<hi rend="subscript">2</hi> et YFe<hi
+                        rend="subscript">2</hi>H<hi rend="subscript">3</hi> au sein de la théorie de
+                    la fonctionnelle de la densité (DFT)</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Éditions scientifiques et médicales Elsevier SAS</publisher>
+                <date>2000</date>
+                <availability status="restricted">
+                    <p>full-transfer</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author><persName><forename type="first">Samir
+                                    F</forename><surname>Matar</surname></persName><affiliation><orgName
+                                    type="department">Institut de chimie de la matière condensée de
+                                    Bordeaux</orgName><address><addrLine>ICMCB–UPR9048–CNRS</addrLine><addrLine>Château Brivazac</addrLine><addrLine>av. du Docteur-Albert-Schweitzer</addrLine><addrLine>33608 Pessac cedex</addrLine><country key="FR">FRANCE</country></address></affiliation></author>
+                        <author><persName><forename type="first"
+                                    >Valérie</forename><surname>Paul-Boncour</surname></persName><affiliation><orgName
+                                    type="laboratory">Laboratoire de chimie métallurgique des terres
+                                    rares</orgName><address><addrLine>CNRS UPR209</addrLine><addrLine>2–8</addrLine><addrLine>rue Henri-Dunant</addrLine><addrLine>94320 Thiais cedex</addrLine><country key="FR">FRANCE</country></address></affiliation></author>
+                        <title level="a" type="main">Étude ab initio des structures électroniques et
+                            magnétiques des systèmes YFe<hi rend="subscript">2</hi> et YFe<hi
+                                rend="subscript">2</hi>H<hi rend="subscript">3</hi> au sein de la
+                            théorie de la fonctionnelle de la densité (DFT)</title>
+                    </analytic>
+                    <monogr>
+                        <title level="j" type="abbrev">PXCI</title>
+                        <imprint>
+                            <date type="Accepted" when="2000-01-28"/>
+                        </imprint>
+                    </monogr>
+                    <idno type="DOI">10.1016/S1387-1609(00)00108-0</idno>
+                    <idno type="PII">S1387-1609(00)00108-0</idno>
+                    <idno type="publisherID">89</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <list>
+                        <head>Mots-clé</head>
+                        <item><term>phases de Laves</term></item>
+                        <item><term>alliages</term></item>
+                        <item><term>hydrures</term></item>
+                        <item><term>magnétisme</term></item>
+                        <item><term>DFT</term></item>
+                        <item><term>LSDA</term></item>
+                        <item><term>liaison chimque</term></item>
+                    </list>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2000-01-11">Received</change>
+            <change when="2000-01-28">Accepted</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <div type="abstract" xml:lang="en">
+                <head>Abstract</head>
+                <p><hi rend="bold">First principles investigation of the electronic and magnetic
+                        properties of YFe</hi><hi rend="subscript"><hi rend="bold">2</hi></hi>
+                    <hi rend="bold">and YFe</hi><hi rend="subscript"><hi rend="bold">2</hi></hi><hi
+                        rend="bold">H</hi><hi rend="subscript"><hi rend="bold">3</hi></hi>
+                    <hi rend="bold">within the density functional theory (DFT).</hi> The electronic
+                    and magnetic properties of YFe<hi rend="subscript">2</hi> and of its hydride
+                    system YFe<hi rend="subscript">2</hi>H<hi rend="subscript">3</hi> are studied
+                    within the local spin density functional theory. Analyses of the density of
+                    states (DOS) and of the crystal orbital overlap populations (COOP) allowed us to
+                    provide an explanation for the role played by hydrogen as to the increase of the
+                    magnetisation as well as to the chemical bond with the metal constituents Y and
+                    Fe. © 2000 Académie des sciences/Éditions scientifiques et médicales Elsevier
+                        SAS<hi rend="bold">Laves phases / alloys / hydrides / magnetism / DFT / LSDA
+                        / chemical-bonding</hi></p>
+            </div>
+            <div type="abstract">
+                <head>Résumé</head>
+                <p>Les structures électroniques et magnétiques de YFe<hi rend="subscript">2</hi> et
+                    d'un hydrure YFe<hi rend="subscript">2</hi>H<hi rend="subscript">3</hi> sont
+                    calculées au sein de la théorie de la fonctionnelle locale de la densité de
+                    spins utilisant la méthode de l'onde sphérique augmentée. L'analyse des
+                    résultats obtenus quant aux densités d’états (DOS) et aux populations de
+                    recouvrement (COOP) permet d'expliquer le rôle joué par l'hydrogène, tant au
+                    niveau de l'augmentation de l'aimantation globale que de celui de la liaison
+                    chimique contractée avec Y et Fe.</p>
+            </div>
+        </front>
+        <body>
+            <div type="ElsevierSections">
+                <div n="1">
+                    <head>Introduction et cadre de l'étude</head>
+                    <p>Les alliages binaires appartenant à la famille des phases de Laves AB<hi
+                            rend="subscript">2</hi> (A=terre rare ou actinide, B=élément de
+                        transition) cristallisent dans une structure, soit cubique à faces centrées
+                        (C15), soit hexagonale (C14) <ref target="#BIB1">[1]</ref>. Auprès de
+                        l'aspect fondamental que présente l’étude des alliages purs, par exemple
+                        l’étude de l'origine du magnétisme dans les UB<hi rend="subscript">2</hi>
+                        (B=Mn, Fe) <ref target="#BIB2">[2]</ref>, un intérêt particulier est suscité
+                        par la capacité de ces alliages d'absorber l'hydrogène à des températures
+                        voisines de l'ambiante, avec toutes les applications potentielles des
+                        hydrures résultants. L'étude expérimentale des hydrures de composés YFe<hi
+                            rend="subscript">2</hi> et YMn<hi rend="subscript">2</hi> a montré que
+                        l'absorption d'hydrogène entraı̂ne à la fois une l'augmentation du volume de
+                        maille, qui modifie les distances interatomiques, et une mise en ordre de
+                        l'hydrogène, qui abaisse la symétrie et modifie l'environnement local des
+                        atomes <ref target="#BIB3 #BIB4">[3,4]</ref>. L'évolution des propriétés
+                        électroniques et magnétiques de ces hydrures est liée à ces modifications
+                        structurales, ainsi qu'à une modification des liaisons chimiques, due aux
+                        atomes d'hydrogène insérés.</p>
+                    <p>L'objectif de cette communication est de présenter les résultats d'une
+                        approche théorique des propriétés des structures électroniques et
+                        magnétiques, d'une part, et celles des liaisons chimiques, d'autre part,
+                        observées pour l'alliage YFe<hi rend="subscript">2</hi> et pour l'hydrure
+                            YFe<hi rend="subscript">2</hi>H<hi rend="subscript">3</hi>. Une telle
+                        approche des structures électroniques et magnétiques et des propriétés de
+                        liaison chimique peut être entreprise d'une manière quantitative au sein de
+                        la théorie de la fonctionnelle de la densité (DFT) <ref target="#BIB5"
+                            >[5]</ref>. Les calculs reposent sur la solution ab initio et
+                        auto-cohérente de l’équation d'onde à une particule, dans un potentiel
+                        effectif où les effets d’échange et de corrélation sont pris en compte
+                        essentiellement dans le cadre de l'approximation de la densité de spin
+                        locale (LSDA), utilisant les schémas de paramétrage de von Barth et Hedin et
+                        de Janak <ref target="#BIB6">[6]</ref>. C'est une théorie de champ effectif
+                        moyen, basée sur un gaz d’électrons homogène en interaction, polarisé en
+                        spin.</p>
+                    <p>Les calculs sont effectués à l'aide de <hi rend="italic">la méthode de l'onde
+                            sphérique augmentée ASW</hi>
+                        <ref target="#BIB7">[7]</ref>, qui, outre la LSDA, utilise l'approximation
+                        de la sphère atomique ASA, imposant un volume de maille égal au volume des
+                        sphères atomiques. Le potentiel, ainsi que la densité électronique au sein
+                        de ces sphères, sont sphériquement moyennés. L'intérêt de l'utilisation de
+                        cette méthode tient de son suivi depuis 1979, tant au niveau des
+                        améliorations apportées quant à la précision des conditions de convergence
+                        des charges et de l’énergie que de celui du magnétisme de spin et
+                        orbitalaire et que de celui de l'accès à la nature de la <hi rend="italic"
+                            >liaison chimique</hi> (liante, antiliante ou non liante), récemment
+                        rendu possible grâce au calcul des COOP (<hi rend="italic">crystal orbital
+                            overlap populations</hi>) <ref target="#BIB8">[8]</ref>. Lorsqu'une
+                        dépendance en spin est prise en compte, le calcul permet d'accéder aux
+                        moments magnétiques, ainsi qu'au terme <hi rend="italic">Fermi contact</hi>
+                        du champ hyperfin: <hi rend="italic">H</hi><hi rend="subscript">FC</hi>.</p>
+                    <p>Pour l'alliage pur, ainsi que pour la phase riche en hydrogène, les calculs
+                        ont été effectués avec les paramètres de maille expérimentaux <ref
+                            target="#BIB3">[3]</ref> (<ref target="#TBL1"><hi rend="italic"
+                                >tableau</hi></ref><ptr target="#TBL1"/>). Notons qu'une recherche
+                        ab initio du paramètre cristallin dans le cadre de la LSDA est possible,
+                        mais n'a pas été effectuée dans le cadre de ce travail. Les valeurs
+                        calculées sont systématiquement de 3 à 5% inférieures aux valeurs
+                        expérimentales, du fait du caractère surliant de cette approximation. Notre
+                        utilisation du paramètre expérimental se trouve justifiée, compte tenu de la
+                        proximité entre valeurs mesurées et calculées, d'une part, et du fait que
+                        nous ne recherchons pas les grandeurs résultant de tels calculs, comme le
+                        module d'incompressibilité, d'autre part. Enfin, une optimisation des rayons
+                        des sphères minimisant leur recouvrement dans l'ASA a permis d'adopter un
+                        rapport <hi rend="italic">r</hi><hi rend="subscript">Y</hi>/<hi
+                            rend="italic">r</hi><hi rend="subscript">Fe</hi>=1,17.</p>
+                </div>
+                <div n="2">
+                    <head>Le système YFe<hi rend="subscript">2</hi></head>
+                    <div n="2.1">
+                        <head>Calculs non-magnétiques (NSP: non spin polarisés)</head>
+                        <p>À la convergence autocohérente, les transferts de charges montrent un
+                            départ de 0,35 électron depuis Y vers Fe. Ce léger transfert, non
+                            significatif, d'effets ioniques — d'ailleurs rarement apparents dans le
+                            cadre de nos calculs — montre une redistribution des deux électrons <hi
+                                rend="italic">s</hi> de Y sur ses trois états de valence, lui
+                            conférant ainsi un caractère <hi rend="italic">d</hi>, du fait de son
+                            hybridation avec Fe(3<hi rend="italic">d</hi>). Ainsi, l'effet majeur
+                            est celui de l'hybridation des différents états de valence entre eux, et
+                            non le transfert de charges.</p>
+                        <p>En ne tenant compte que d'une population de spins totaux, on peut
+                            examiner les densités d’états (DOS) et évaluer les instabilités
+                            magnétiques possibles pour chaque constituant dans le cadre de la
+                            théorie de Stoner du ferromagnétisme de bande (voir détails plus loin).
+                            De plus, une analyse de la liaison chimique entre les différents états
+                            peut être entreprise au travers des COOP.</p>
+                        <div n="2.1.1">
+                            <head>Analyse des densités d’états (DOS)</head>
+                            <p>Les DOS projetées suivant chaque site atomique tenant compte de sa
+                                multiplicité (1Y pour 2Fe) sont représentées sur la <ref
+                                    target="#FIG1"><hi rend="italic">figure 1a</hi></ref><ptr
+                                    target="#FIG1"/>. L'origine des énergies suivant l'axe des
+                                abscisses est prise au niveau de Fermi. Il en sera de même pour tous
+                                les tracés présentés dans ce travail. Pour plus de clarté, les DOS
+                                de l'yttrium ont été déplacées verticalement. L'allure des tracés
+                                montre la prédominance des états du fer, surtout près du niveau de
+                                Fermi, et la présence d'un certain mélange FeY au niveau du bas de
+                                la bande de valence BV (états <hi rend="italic">sp</hi> entre −6 et
+                                −2eV) et vers le haut de la BV (états <hi rend="italic">d</hi>).
+                                Dans la BC, il y a une prédominance des états 4<hi rend="italic"
+                                    >f</hi> vides de l'yttrium. L'occupation des états 3<hi
+                                    rend="italic">d</hi> de Fe à 6,68 électrons correspond à une
+                                forte densité d’états à <hi rend="italic">E</hi><hi rend="subscript"
+                                    >F</hi>. En revanche, Y montre une très faible DOS au niveau de
+                                Fermi. Ces résultats permettront de mettre en évidence le fait que,
+                                dans le cadre de la théorie de Stoner de ferromagnétisme de bande,
+                                seul le fer doit porter un moment propre.</p>
+                        </div>
+                        <div n="2.1.2">
+                            <head>Analyse des populations de recouvrement (COOP)</head>
+                            <p>L'analyse de la liaison chimique est rendue quantitative au travers
+                                des COOP données sur la <ref target="#FIG1"><hi rend="italic">figure
+                                        1b</hi></ref>. Suivant l'axe des ordonnées les valeurs
+                                positives, nulles et négatives correspondent à des interactions
+                                liantes, non-liantes et antiliantes respectivement. Les COOP
+                                partielles (atome à atome) pour les interactions FeFe, YFe et YY
+                                sont représentées (cf. <ref target="#TBL1"><hi rend="italic"
+                                        >tableau</hi></ref> pour les distances interatomiques). Une
+                                constatation préliminaire est que les COOP ont des intensités qui
+                                décroissent lorsque la distance augmente, c'est-à-dire que la
+                                liaison est la plus forte pour l'interaction FeFe et la moins forte
+                                pour YY. Mais un autre aspect, prenant en compte la population
+                                électronique, est à considérer pour compléter l'analyse des
+                                différentes interactions. La liaison YFe est liante jusqu'au niveau
+                                de Fermi et même au-dessus de <hi rend="italic">E</hi><hi
+                                    rend="subscript">F</hi>; ceci provient du fait que les états de
+                                valence disponibles de l'yttrium étant essentiellement vides, ils
+                                interagiront alors avec les électrons du fer en formant des liaisons
+                                liantes. Cet effet se voit d'ailleurs pour les interactions YY qui,
+                                quoique de faible intensité, sont liantes dans le même domaine que
+                                YFe. Un des intérêts de ces tracés est la mise en évidence d'une
+                                interaction liante FeFe dans la BV, qui devient antiliante à partir
+                                de <hi rend="italic">E</hi><hi rend="subscript">F</hi>, ce qui
+                                signifie qu'une partie des électrons du fer participe à la <hi
+                                    rend="italic">liaison métallique</hi> FeFe, qui semble
+                                prédominante dans cet alliage. Notons que le caractère d'ensemble
+                                des COOP de la BV est fortement liant, ce qui est en relation avec
+                                la stabilité chimique. Mais cette situation, décrite pour une
+                                population de spins totaux, ne retrace que partiellement la
+                                situation physique, car l’étude des COOP au niveau de Fermi permet
+                                de suggérer que la forte intensité des DOS à <hi rend="italic"
+                                    >E</hi><hi rend="subscript">F</hi> (<ref target="#FIG1"><hi
+                                        rend="italic">figure 1a</hi></ref>) est due à des états
+                                antiliants FeFe déstabilisant l'alliage dans une configuration non
+                                magnétique. Une étude rendant compte de deux populations de spins
+                                devient alors indispensable.</p>
+                        </div>
+                        <div n="2.1.3">
+                            <head>Analyse des DOS dans le cadre de la théorie de Stoner</head>
+                            <p>Ce résultat est analysé dans le cadre de la théorie de Stoner du
+                                ferromagnétisme de bande, en formulant le problème à 0K (état
+                                fondamental, zéro entropie) depuis la configuration non magnétique.
+                                L’énergie totale du système de spin résulte du bilan des énergies
+                                d’échange et cinétique. Lorsqu'un spin est “retourné” de manière à
+                                provoquer la création d'un moment magnétique, l’énergie d’échange
+                                diminue mais l’énergie cinétique augmente. Le bilan est donné par
+                                l'expression de l’énergie comptée depuis la configuration non
+                                        magnétique:<formula><formula notation="XMLLatex"><math
+                                            xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                            xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                            xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">E=<fr
+                                                xmlns="http://www.tei-c.org/ns/1.0"
+                                                  ><nu>1</nu><de>2</de></fr>[m<sup
+                                                xmlns="http://www.tei-c.org/ns/1.0">2</sup>/n(E<inf
+                                                xmlns="http://www.tei-c.org/ns/1.0"
+                                                ><rm>F</rm></inf>)][1<rm
+                                                xmlns="http://www.tei-c.org/ns/1.0">−</rm>In(E<inf
+                                                xmlns="http://www.tei-c.org/ns/1.0"
+                                            ><rm>F</rm></inf>)]</math></formula></formula>avec <hi
+                                    rend="italic">I</hi> l'intégrale d’échange–corrélation de Stoner
+                                (quantité atomique obtenue à partir de calculs spin-polarisés <ref
+                                    target="#BIB9">[9]</ref>) et <hi rend="italic">n</hi>(<hi
+                                    rend="italic">E</hi><hi rend="subscript">F</hi>) la densité
+                                d’état à <hi rend="italic">E</hi><hi rend="subscript">F</hi> dans la
+                                configuration non magnétique. Dans l'expression ci-dessus, le
+                                produit <hi rend="italic">I</hi><hi rend="italic">n</hi>(<hi
+                                    rend="italic">E</hi><hi rend="subscript">F</hi>) constitue un
+                                critère pour la stabilité du système de spins. Une configuration non
+                                magnétique (occupation égale des deux états de spin) sera
+                                défavorisée vis-à-vis de la polarisation des spins (occupation
+                                inégale des deux états de spin) si <hi rend="italic">I</hi>.<hi
+                                    rend="italic">n</hi>(<hi rend="italic">E</hi><hi
+                                    rend="subscript">F</hi>)&gt;1. Le système se stabilise au
+                                travers d'un gain d’énergie dû à l’échange. L'analyse montre que Fe
+                                est instable dans la configuration NSP et qu'une polarisation
+                                intra-bande doit se produire sous les effets d’échange, pour
+                                stabiliser le système dans une configuration magnétique plus stable
+                                énergétiquement. Plus analytiquement la NSP <hi rend="italic"
+                                    >n</hi>(E<hi rend="subscript">F</hi>) multipliée par l'intégrale
+                                d’échange–corrélation de Stoner <hi rend="italic">I</hi> donne le
+                                produit de Stoner (à 0K, calcul des propriétés de l’état
+                                fondamental) <hi rend="italic">n</hi>(E<hi rend="subscript"
+                                    >F</hi>).<hi rend="italic">I</hi>. Si le produit est &gt;1, le
+                                système est instable dans la configuration NSP. Alors que Fe obéit
+                                largement à cette condition avec un produit de 3, nous remarquons
+                                que Y n'obéit pas au critère de Stoner, à cause de sa très faible
+                                valeur de <hi rend="italic">n</hi>(E<hi rend="subscript">F</hi>).
+                                Donc, si un moment est porté par Y, il doit être en grande partie
+                                induit par celui du fer.</p>
+                        </div>
+                    </div>
+                    <div n="2.2">
+                        <head>Calculs magnétiques (SP spin polarisés)</head>
+                        <div n="2.2.1">
+                            <head>Moments magnétiques et champs hyperfins</head>
+                            <p>Les calculs magnétiques sont entrepris en rendant compte initialement
+                                de deux populations de spin pour chaque espèce en présence et en
+                                faisant converger les calculs moyennant les deux conditions
+                                suivantes: <hi rend="italic">Z</hi><hi rend="subscript">v</hi>=<hi
+                                    rend="italic">n</hi>(↑)+<hi rend="italic">n</hi>(↓) et <hi
+                                    rend="italic">m</hi>=<hi rend="italic">n</hi>(↑)−<hi
+                                    rend="italic">n</hi>(↓), où <hi rend="italic">Z</hi><hi
+                                    rend="subscript">v</hi> est le nombre d’électrons de valence,
+                                    <hi rend="italic">n</hi>(↑) et <hi rend="italic">n</hi>(↓) sont
+                                respectivement les populations de spins majoritaires et minoritaires
+                                et <hi rend="italic">m</hi> le moment magnétique. Pour YFe<hi
+                                    rend="subscript">2</hi>, le calcul magnétique donne une
+                                stabilisation énergétique de 0.95eV·maille<hi rend="superscript"
+                                    >–1</hi>.</p>
+                            <p>Les moments magnétiques portés sont: −0,50 et 1,85μ<hi
+                                    rend="subscript">B</hi> pour Y et Fe respectivement, avec une
+                                aimantation <hi rend="italic">M</hi><hi rend="subscript"
+                                    >maille</hi>=6,37μ<hi rend="subscript">B</hi>, soit 3,18μ<hi
+                                    rend="subscript">B</hi> par unité formulaire. Cette valeur est
+                                voisine de celle expérimentale de 2,9μ<hi rend="subscript">B</hi>
+                                <ref target="#BIB10">[10]</ref> et de celle calculée par Mohn et
+                                Schwarz <ref target="#BIB11">[11]</ref>. Ainsi, YFe<hi
+                                    rend="subscript">2</hi> est un composé <hi rend="italic"><hi
+                                        rend="bold">ferrimagnétique</hi></hi>, ce qui contredit
+                                certains résultats expérimentaux qui l'annonçaient comme
+                                ferromagnétique, avec un moment nul sur l'yttrium <ref
+                                    target="#BIB10">[10]</ref>. La densité de spin au noyau pour les
+                                états <hi rend="italic">ns</hi> provenant de la polarisation des
+                                électrons <hi rend="italic">s</hi> par les moments <hi rend="italic"
+                                    >d</hi> permet d'accéder au terme «contact de Fermi» <hi
+                                    rend="italic">H</hi><hi rend="subscript">FC</hi>, contribuant au
+                                champ hyperfin. On obtient ainsi <hi rend="italic">H</hi><hi
+                                    rend="subscript">FC</hi>(Y)=−431kGauss et <hi rend="italic"
+                                    >H</hi><hi rend="subscript">FC</hi>(Fe)=−250kGauss, cette
+                                dernière valeur pouvant être approchée de la valeur expérimentale de
+                                −220kGauss <ref target="#BIB10">[10]</ref>.</p>
+                        </div>
+                        <div n="2.2.2">
+                            <head>DOS</head>
+                            <p>La <ref target="#FIG2"><hi rend="italic">figure 2</hi></ref><ptr
+                                    target="#FIG2"/> présente les résultats de la polarisation des
+                                spins dans YFe<hi rend="subscript">2</hi> pour les DOS. Le résultat
+                                discuté plus haut sur les moments magnétiques montre que la
+                                polarisation affecte principalement les états du fer, et beaucoup
+                                moins ceux de l'yttrium. Ceci est illustré par le déplacement des
+                                bandes (↑) vers les basses énergies et celles (↓) à plus haute
+                                énergie, plus important pour le fer que pour l'yttrium. Cependant,
+                                ce n'est pas un mécanisme de déplacement rigide des bandes qui régit
+                                le magnétisme dans ce système comme dans le cas du Fe(α). C'est
+                                celui d'un comportement de <hi rend="italic">magnétisme
+                                    covalent</hi> démontré pour ZrFe<hi rend="subscript">2</hi>
+                                <ref target="#BIB5">[5]</ref>. Cet effet se traduit par un moment de
+                                l'yttrium provenant de la covalence de la liaison YFe plutôt que du
+                                déplacement rigide des bandes d'un état non magnétique. La
+                                conséquence est que les DOS n'ont pas la même allure suivant la
+                                direction des spins.</p>
+                        </div>
+                        <div n="2.2.3">
+                            <head>COOP</head>
+                            <p>Nous illustrons la liaison chimique résolue en spins dans YFe<hi
+                                    rend="subscript">2</hi> par l’étude de la nature des
+                                interactions dans le réseau. La <ref target="#FIG3"><hi
+                                        rend="italic">figure 3</hi></ref><ptr target="#FIG3"/>
+                                montre les COOP pour les interactions: FeFe (a), YFe (b) et YY
+                                (c). Commençant par les premières (<ref target="#FIG3"><hi
+                                        rend="italic">figure 3a</hi></ref> et aussi <ref
+                                    target="#FIG2"><hi rend="italic">figure 2</hi></ref>), la moitié
+                                de la bande 3<hi rend="italic">d</hi>(↑) correspond à des
+                                interactions FeFe liantes, et l'autre moitié à des interactions
+                                antiliantes, alors que, pour 3<hi rend="italic">d</hi>(↓), on peut
+                                constater que toute la BV est liante, les interactions antiliantes
+                                n'apparaissant qu'au-dessus du niveau de Fermi. Ceci est la
+                                conséquence du remplissage de la bande 3<hi rend="italic">d</hi>(↑)
+                                à 4,2 électrons (presque à moitié pleine), alors que la bande 3<hi
+                                    rend="italic">d</hi>(↓) n'est remplie qu’à 2,5 électrons. Par
+                                conséquent, les liaisons FeFe(↑) seront pour moitié dans des états
+                                liants et pour moitié dans des états antiliants, alors que les
+                                liaisons FeFe(↓) seront toutes liantes. Un aspect à souligner pour
+                                ces interactions est que les états liants sont proches (covalence)
+                                de ceux antiliants dans la bande ↑, alors qu'ils sont bien séparés
+                                pour la bande ↓ (ceci permettant de suggérer en termes de chimiste
+                                une plus grande <hi rend="italic">ionicité</hi>). Les interactions
+                                YFe montrées au second panneau à la même échelle sont liantes dans
+                                toute la bande de valence, mais ont des aspects différents selon que
+                                l'on examine YFe(↑) ou bien YFe(↓). L'allure de cette dernière
+                                ressemble surtout à celle des COOP FeFe(↓) et beaucoup moins à
+                                celles de FeFe(↑), qui sont davantage engagées dans la liaison au
+                                sein du réseau de fer; donc la liaison FeFe s’établit au moyen des
+                                spins majoritaires. De plus, on peut expliquer le moment magnétique
+                                porté par Y, de signe opposé à celui de Fe, comme une conséquence de
+                                l'hybridation de ses états avec ceux du Fe(↓). Cet aspect est
+                                d'ailleurs appuyé par les COOP des interactions YY, qui sont
+                                identiques suivant les deux directions de spin pour les hautes
+                                énergies (états <hi rend="italic">f</hi> vides) et présentent des
+                                poids très différents en dessous de <hi rend="italic">E</hi><hi
+                                    rend="subscript">F</hi> (remarquer le pic à −1eV). Un tel
+                                comportement d'une «liaison chimique résolue en spin» cadre bien
+                                avec le modèle de magnétisme covalent, comme on l'a discuté plus
+                                haut sur les DOS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div n="3">
+                    <head>Le système YFe<hi rend="subscript">2</hi>H<hi rend="subscript"
+                        >3</hi></head>
+                    <p>Dans la structure C15 (groupe d'espace F<hi rend="italic">d</hi>3̄<hi
+                            rend="italic">m</hi>) de YFe<hi rend="subscript">2</hi>, où Y et Fe
+                        occupent respectivement les sites 8a de positions atomiques réduites (1/8,
+                        1/8, 1/8) et 16d (<formula notation="XMLLatex"><math
+                                xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"><fr
+                                    xmlns="http://www.tei-c.org/ns/1.0"
+                                ><nu>1</nu><de>2</de></fr></math></formula>
+                        <formula notation="XMLLatex"><math
+                                xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"><fr
+                                    xmlns="http://www.tei-c.org/ns/1.0"
+                                ><nu>1</nu><de>2</de></fr></math></formula>
+                        <formula notation="XMLLatex"><math
+                                xmlns="http://www.elsevier.com/xml/ja/dtd"
+                                xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+                                xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"><fr
+                                    xmlns="http://www.tei-c.org/ns/1.0"
+                                ><nu>1</nu><de>2</de></fr></math></formula>), trois sites
+                        tétraédriques s'offrent potentiellement à l'insertion d'hydrogène, i.e. Fe4
+                        ou 8b (3/8, 3/8, 3/8), YFe3 ou 32e (9/32 9/32 9/32) et Y2Fe2 ou 96g (5/16,
+                        5/16, 1/8). Les études par diffraction neutronique des différents hydrures
+                            <ref target="#BIB4">[4]</ref> ont montré que ce sont les sites 96g qui
+                        sont préférentiellement occupés par l'hydrogène.</p>
+                    <p>Nous examinons dans ce paragraphe les effets magnétovolumiques de
+                        l'introduction d'hydrogène dans la structure en considérant la phase, i.e.
+                            YFe<hi rend="subscript">2</hi>H<hi rend="subscript">3</hi>. Cette
+                        composition a été choisie afin de rendre plus aisée une analyse de la
+                        liaison chimique au sein de la structure.<hi rend="italic"><hi rend="bold"
+                                >Remarque sur la mise au point de la structure pour les
+                            calculs</hi></hi></p>
+                    <p>Malgré la composition riche en H de la phase considérée Y<hi rend="subscript"
+                            >2</hi>Fe<hi rend="subscript">4</hi>H<hi rend="subscript">6</hi>,
+                        seulement 6 des 24 positions 96g (i.e. les sites tétraédriques «Y2Fe2») sont
+                        occupées d'une manière statistique dans la structure cubique C15. Une telle
+                        situation étant très difficile à simuler pour les calculs, une mise en ordre
+                        artificielle a été réalisée en appliquant le critère géométrique qui impose
+                        que la distance entre deux sites interstitiels occupés par des atomes
+                        d'hydrogène soit supérieure ou égale à 3,97u.a. <hi rend="bold">(12).</hi>
+                        Les distances H(Y,Fe) restent respectivement équivalentes et montrent une
+                        distance FeH plus courte (<ref target="#TBL1"><hi rend="italic"
+                                >tableau</hi></ref>). Tout en conservant une symétrie cubique, un
+                        mode P avec l'identité (E) pour opération de symétrie a été imposé par la
+                        différentiation des différents sites atomiques pour les calculs.</p>
+                    <p>Seuls les calculs magnétiques seront présentés et discutés ici.</p>
+                </div>
+                <div n="4">
+                    <head>Résultats et discussions</head>
+                    <div n="4.1">
+                        <head>Moments magnétiques</head>
+                        <p>En considérant le nombre total d'unités formulaires par maille (<hi
+                                rend="italic">Z</hi>=2), par rapport à YFe<hi rend="subscript"
+                                >2</hi>: (<hi rend="italic">M</hi>=6,37μ<hi rend="subscript"
+                            >B</hi>), l'aimantation de YFe<hi rend="subscript">2</hi>H<hi
+                                rend="subscript">3</hi> (<hi rend="italic">M</hi>=7,55μ<hi
+                                rend="subscript">B</hi>) montre une forte augmentation, due
+                            essentiellement au moment porté par les atomes de fer (<ref
+                                target="#TBL1"><hi rend="italic">tableau</hi></ref>). Cette dernière
+                            valeur est proche de celle mesurée expérimentalement (3,7μ<hi
+                                rend="subscript">B/f.u.</hi>). Cependant, ce moment d'amplitude
+                            voisine de 2μ<hi rend="subscript">B/Fe</hi> montre un net abaissement
+                            par rapport à celui du fer dans sa structure α (ferromagnétique dans sa
+                            structure cubique centrée). En effet, pour un rayon de la sphère
+                            atomique du fer <hi rend="italic">r</hi>(Fe)=2,64u.a. dans nos calculs,
+                            Fe (α) a un moment de 2,5μ<hi rend="subscript">B</hi>. Le choix de Fe(α)
+                            a ici pour seul objectif de servir d’élément de comparaison
+                            supplémentaire pour les effets magnéto-volumiques. On doit en conclure
+                            en effet que l'augmentation volumique n'est pas la seule qui soit
+                            prédominante dans la phase hydrurée et que la liaison chimique
+                            contractée avec l'hydrogène devrait jouer un rôle prépondérant dans
+                            l'abaissement de l'amplitude de l'aimantation. Malgré les distances YY
+                            et YFe, plus grandes par rapport à leurs valeurs dans YFe<hi
+                                rend="subscript">2</hi>, l'yttrium a un moment inférieur en valeur
+                            absolue à celui dans l'alliage pur. L'explication pourrait se trouver
+                            également dans la liaison chimique.</p>
+                        <p>L'augmentation du moment magnétique moyen du fer conduit à un
+                            accroissement de la valeur absolue du terme contact de Fermi du champ
+                            hyperfin à −232kGauss.</p>
+                        <p>Afin d'observer les effets volumiques et de liaison chimique, nous
+                            examinons dans les sections suivantes les DOS et les COOP de YFe<hi
+                                rend="subscript">2</hi>H<hi rend="subscript">3</hi>.</p>
+                    </div>
+                    <div n="4.2">
+                        <head>Densités d’états (DOS)</head>
+                        <p>La <ref target="#FIG4"><hi rend="italic">figure 4a</hi></ref><ptr
+                                target="#FIG4"/> présente les résultats magnétiques dans YFe<hi
+                                rend="subscript">2</hi>H<hi rend="subscript">3</hi> pour les DOS
+                            partielles projetées sur les sites respectifs des trois sortes d'atomes
+                            dans la maille (i.e. pour 2Y, 4Fe, 6H). Tout comme dans l'alliage non
+                            hydruré, et en accord avec l'analyse préliminaire des moments
+                            magnétiques, la polarisation affecte principalement les états du fer et
+                            beaucoup moins ceux de l'yttrium. Ceci est illustré par un déplacement
+                            des bandes (↑) par rapport à celles (↓) nettement plus important que
+                            celui observé sur la <ref target="#FIG2"><hi rend="italic">figure
+                                2</hi></ref>. Compte tenu de l'aimantation plus importante du fer,
+                            l’éclatement d’échange est plus grand ici. L'effet résultant est que le
+                            niveau de Fermi se trouve dans un minimum de DOS de la bande (↑),
+                            signalant un plus grand remplissage de la bande 3d par rapport à
+                            l'alliage pur: Le nombre d’électrons d passe de 4,2 à 4,7 électrons. En
+                            revanche, pour la bande d(↓), le remplissage passe de 2,5 à 2,2
+                            électrons, la différence correspondant à des électrons promus aux états
+                            de spins majoritaires.</p>
+                        <p>Une différence supplémentaire caractérisant les DOS du système hydrogéné
+                            par rapport à l'alliage pur est celle de la dissipation du caractère de
+                            bande large observé dans le cas de l'alliage pur. En effet,
+                            l'observation de l'aspect plus localisé des DOS est plus net pour les
+                            états du fer que pour ceux de l'yttrium. Ceci est dû en partie à un
+                            abaissement de symétrie par l'insertion d'hydrogène dans le cadre de la
+                            mise au point de nos calculs, mais surtout à l'interaction des atomes
+                            métalliques avec les atomes d'hydrogène H. Les DOS de ceux-ci
+                            s'observent à basse énergie, entre −8, et −4eV), ce qui laisse suggérer
+                            que la liaison chimique H(Y,Fe) se produit dans ce domaine énergétique.
+                            Ainsi, l'abaissement en énergie des bandes (↑) et (↓) est aussi relié à
+                            la liaison chimique entre l'hydrogène et les états <hi rend="italic"
+                                >d</hi> des atomes de métal (Y et Fe). L'analyse des COOP partielles
+                            permettra d'expliciter ces observations.</p>
+                    </div>
+                    <div n="4.3">
+                        <head>COOP</head>
+                        <p>La <ref target="#FIG4"><hi rend="italic">figure 4b</hi></ref> présente
+                            les résultats magnétiques dans YFe<hi rend="subscript">2</hi>H<hi
+                                rend="subscript">3</hi> pour les COOP partielles projetées pour les
+                            interactions YH et FeH, les interactions métal–métal étant semblables
+                            à celles décrites dans l'alliage pur. Clairement, le second type
+                            d'interaction, i.e. FeH, est prédominant pour les états liants ainsi
+                            qu'antiliants. Ceci ne provient pas uniquement d'un nombre d'atomes de
+                            fer deux fois plus important que celui d'yttrium, les DOS ne montrant
+                            pas simplement un doublement en passant de l'un à l'autre, mais d'une
+                            interaction plus forte entre Fe et H, en partie expliquée par une
+                            liaison FeH plus courte que YH (<ref target="#TBL1"><hi rend="italic"
+                                    >tableau</hi></ref>). Il est intéressant de noter dans ce
+                            contexte que, par ailleurs, il n'existe pas de phase stable entre Fe et
+                            H.</p>
+                        <p>Contrairement à la liaison YFe liante dans la bande de valence en
+                            dessous de <hi rend="italic">E</hi><hi rend="subscript">F</hi> dans
+                                YFe<hi rend="subscript">2</hi>, la liaison H(Y,Fe) est pour moitié
+                            liante et pour moitié antiliante dans le composé contenant l'hydrogène.
+                            Il est intéressant de noter que ce sont les états à majorité de spins
+                            (↑) qui sont liants pour FeH (trait plein) — sauf juste en dessous de
+                                <hi rend="italic">E</hi><hi rend="subscript">F</hi> où les états de
+                            Fe sont engagés dans la liaison FeFe (<ref target="#FIG3"><hi
+                                    rend="italic">figure 3a</hi></ref>) — et que ceux de minorité de
+                            spin (↓) sont antiliants pour les deux types d'interactions. Ainsi
+                            a-t-on une liaison chimique résolue en spin comme dans l'alliage
+                            pur.</p>
+                    </div>
+                </div>
+                <div n="5">
+                    <head>Conclusion et perspectives</head>
+                    <p>La première partie de ce travail a porté sur une étude complète de la
+                        structure électronique et magnétique et des propriétés de liaison chimique
+                        dans l'alliage de Laves YFe<hi rend="subscript">2</hi>. En plus de l'accord
+                        avec les observations expérimentales, il a été proposé une approche de la
+                        liaison chimique résolue en spin, soulignant les rôles dissymétriques des
+                        électrons appartenant aux deux canaux de spins. L'introduction d'hydrogène a
+                        été simulée afin d'expliquer le rôle de celui-ci dans le magnétisme et la
+                        liaison chimique. Il a été montré notamment que l'expansion de la maille de
+                        l'alliage devant conduire à une augmentation de l'aimantation —
+                        essentiellement le fer — est contrecarrée par la liaison chimique contractée
+                        avec les atomes du réseau métallique.</p>
+                    <p>Cette recherche sera étendue aux structures d'hydrures plus complexes, dues
+                        notamment à l'abaissement de symétrie lié à la mise en ordre de l'hydrogène.
+                        On pourra alors avoir un accès plus quantitatif aux aspects de <hi
+                            rend="italic">liaison chimique</hi> par rapport à ceux dans l'alliage
+                        pur.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="references">
+                <head>Références</head>
+                <listBibl>
+                    <biblStruct xml:id="BIB1" n="[1]">
+                        <analytic>
+                            <author><forename type="first"
+                                >F.</forename><surname>Laves</surname></author>
+                        </analytic>
+                        <monogr>
+                            <imprint>
+                                <biblScope unit="page" from="124">124</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB2" n="[2]">
+                        <analytic>
+                            <author><forename type="first"
+                                >A.M.</forename><surname>Boring</surname></author>
+                            <author><forename type="first"
+                                >R.C.</forename><surname>Albers</surname></author>
+                            <author><forename type="first"
+                                >G.H</forename><surname>Schadler</surname></author>
+                            <author><forename type="first"
+                                >A.C.</forename><surname>Lawso</surname></author>
+                            <author><forename type="first"
+                                    >P.</forename><surname>Weinberger</surname></author>
+                            <author><forename type="first"
+                                    >N.E.</forename><surname>Christensen</surname></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">Phys. Rev. B</title>
+                            <imprint>
+                                <biblScope unit="vol">36</biblScope>
+                                <date when="1987">1987</date>
+                                <biblScope unit="page" from="5507">5507</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB3" n="[3]">
+                        <analytic>
+                            <author><forename type="first"
+                                    >V.</forename><surname>Paul-Boncour</surname></author>
+                            <author><forename type="first"
+                                >L.</forename><surname>Guénée</surname></author>
+                            <author><forename type="first"
+                                >M.</forename><surname>Latroche</surname></author>
+                            <author><forename type="first"
+                                >M.</forename><surname>Escorne</surname></author>
+                            <author><forename type="first"
+                                    >A.</forename><surname>Percheron-Guegan</surname></author>
+                            <author><forename type="first"
+                                >C.</forename><surname>Reichl</surname></author>
+                            <author><forename type="first"
+                                >G.</forename><surname>Wiesinger</surname></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">J. Alloys and Compounds</title>
+                            <imprint>
+                                <biblScope unit="vol">253–254</biblScope>
+                                <date when="1997">1997</date>
+                                <biblScope unit="page" from="272">272</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB4" n="[4]">
+                        <analytic>
+                            <author><forename type="first"
+                                    >V.</forename><surname>Paul-Boncour</surname></author>
+                            <author><forename type="first"
+                                >L.</forename><surname>Guénée</surname></author>
+                            <author><forename type="first"
+                                >M.</forename><surname>Latroche</surname></author>
+                            <author><forename type="first"
+                                    >A.</forename><surname>Percheron-Guegan</surname></author>
+                            <author><forename type="first"
+                                >B.</forename><surname>Ouladdiaf</surname></author>
+                            <author><forename type="first"
+                                    >F.</forename><surname>Bourée-Vigneron</surname></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">J. Solid State Chemistry</title>
+                            <imprint>
+                                <biblScope unit="vol">142</biblScope>
+                                <date when="1999">1999</date>
+                                <biblScope unit="page" from="120">120</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <bibl xml:id="BIB5" n="[5]">Kohn W., Vashishta P., in : Lundquist S., March N.H.
+                        (éds), Theory of the inhomogeneous electron gas, Plenum Press, New York,
+                        1983, pp. 79–147.</bibl>
+                    <bibl xml:id="BIB6" n="[6]">von Barth J., Hedin D., J. Phys. C 5 (1972) 1629;
+                        Janak J.F., Solid State Commun. 25 (1978) 53.</bibl>
+                    <biblStruct xml:id="BIB7" n="[7]">
+                        <analytic>
+                            <author><forename type="first"
+                                    >A.R.</forename><surname>Williams</surname></author>
+                            <author><forename type="first"
+                                >J.</forename><surname>Kübler</surname></author>
+                            <author><forename type="first"
+                                    >C.D.</forename><surname>Gelatt</surname><suffix>Jr.</suffix></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">Phys. Rev.</title>
+                            <imprint>
+                                <biblScope unit="vol">B19</biblScope>
+                                <date when="1979">1979</date>
+                                <biblScope unit="page" from="6094">6094</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <bibl xml:id="BIB8" n="[8]">Eyert V. Matar S.F. Résultats non publiés (1994);
+                        Eyert V., Electronic structure calculations for crystalline materials, in:
+                        Springborg M. (éd.), Density functional methods: Applications in Chemistry
+                        and Materials science, Wiley, Chichester, 1977, 233–304; Janak J.F., Phys.
+                        Rev. 16 (1977) 255.</bibl>
+                    <biblStruct xml:id="BIB9" n="[9]">
+                        <analytic>
+                            <author><forename type="first"
+                                >K.</forename><surname>Kanematsu</surname></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">J. Appl. Phys.</title>
+                            <imprint>
+                                <biblScope unit="vol">75</biblScope>
+                                <date when="1994">1994</date>
+                                <biblScope unit="page" from="7105">7105</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB10" n="[10]">
+                        <analytic>
+                            <author><forename type="first"
+                                >P.</forename><surname>Mohn</surname></author>
+                            <author><forename type="first"
+                                >K.</forename><surname>Schwarz</surname></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">Physica B</title>
+                            <imprint>
+                                <biblScope unit="vol">130</biblScope>
+                                <date when="1985">1985</date>
+                                <biblScope unit="page" from="26">26</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                    <biblStruct xml:id="BIB11" n="[11]">
+                        <analytic>
+                            <author><forename type="first"
+                                    >D.G.</forename><surname>Westlake</surname></author>
+                        </analytic>
+                        <monogr>
+                            <title type="main">J. Less Common Met.</title>
+                            <imprint>
+                                <biblScope unit="vol">75</biblScope>
+                                <date when="1980">1980</date>
+                                <biblScope unit="page" from="177">177</biblScope>
+                            </imprint>
+                        </monogr>
+                    </biblStruct>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
