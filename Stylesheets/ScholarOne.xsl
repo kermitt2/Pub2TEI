@@ -277,12 +277,7 @@
 
     <xsl:template match="galleyDeliveryType"/>
 
-    <xsl:template match="author-comment">
-        <note type="author-comment">
-            <xsl:apply-templates/>
-        </note>
-    </xsl:template>
-
+   
     <!-- Fin de la bibliographie -->
 
     <xsl:template match="allowbreak"/>
