@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
     <xsl:variable name="countryCodes" select="document('CountryCodes.xml')"/>
@@ -17,23 +16,23 @@
         <xsl:param name="oldYear"/>
 
         <xsl:choose>
-            <xsl:when test="string-length(normalize-space($oldMonth))=0">
+            <xsl:when test="string-length(normalize-space($oldMonth)) = 0">
                 <xsl:value-of select="normalize-space($oldYear)"/>
             </xsl:when>
-            
+
             <!-- RL : ajout cas intermédiaire
                  Pour renvoyer YY-MM plutôt que YY-MM-01
                  lorsque seul $oldDay est indéfini
             -->
-            <xsl:when test="string-length(normalize-space($oldDay))=0">
-                <xsl:variable name="month"> 
+            <xsl:when test="string-length(normalize-space($oldDay)) = 0">
+                <xsl:variable name="month">
                     <xsl:call-template name="monthInNum">
                         <xsl:with-param name="theMonth" select="$oldMonth"/>
                     </xsl:call-template>
                 </xsl:variable>
-                <xsl:value-of select="concat(normalize-space($oldYear),'-',$month)"/>
+                <xsl:value-of select="concat(normalize-space($oldYear), '-', $month)"/>
             </xsl:when>
-            
+
             <xsl:otherwise>
                 <xsl:variable name="month">
                     <xsl:call-template name="monthInNum">
@@ -42,18 +41,18 @@
                 </xsl:variable>
                 <xsl:variable name="day">
                     <xsl:choose>
-                        <xsl:when test="string-length(normalize-space($oldDay))=0">
+                        <xsl:when test="string-length(normalize-space($oldDay)) = 0">
                             <xsl:text>01</xsl:text>
                         </xsl:when>
-                        <xsl:when test="string-length(normalize-space($oldDay))=1">
-                            <xsl:value-of select="concat('0',normalize-space($oldDay))"/>
+                        <xsl:when test="string-length(normalize-space($oldDay)) = 1">
+                            <xsl:value-of select="concat('0', normalize-space($oldDay))"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:value-of select="normalize-space($oldDay)"/>
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:variable>
-                <xsl:value-of select="concat(normalize-space($oldYear),'-',$month,'-',$day)"/>
+                <xsl:value-of select="concat(normalize-space($oldYear), '-', $month, '-', $day)"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -61,48 +60,48 @@
     <xsl:template name="monthInNum">
         <xsl:param name="theMonth"/>
         <xsl:choose>
-            <xsl:when test="string-length(normalize-space($theMonth))=0">
+            <xsl:when test="string-length(normalize-space($theMonth)) = 0">
                 <xsl:text>01</xsl:text>
             </xsl:when>
-            <xsl:when test="string-length(normalize-space($theMonth))=1">
-                <xsl:value-of select="concat('0',normalize-space($theMonth))"/>
+            <xsl:when test="string-length(normalize-space($theMonth)) = 1">
+                <xsl:value-of select="concat('0', normalize-space($theMonth))"/>
             </xsl:when>
-            <xsl:when test="string-length(normalize-space($theMonth))>2">
+            <xsl:when test="string-length(normalize-space($theMonth)) > 2">
                 <xsl:choose>
-                    <xsl:when test="contains(normalize-space($theMonth),'Jan')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Jan')">
                         <xsl:text>01</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Feb')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Feb')">
                         <xsl:text>02</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Mar')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Mar')">
                         <xsl:text>03</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Apr')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Apr')">
                         <xsl:text>04</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'May')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'May')">
                         <xsl:text>05</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Jun')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Jun')">
                         <xsl:text>06</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Jul')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Jul')">
                         <xsl:text>07</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Aug')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Aug')">
                         <xsl:text>08</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Sep')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Sep')">
                         <xsl:text>09</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Oct')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Oct')">
                         <xsl:text>10</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Nov')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Nov')">
                         <xsl:text>11</xsl:text>
                     </xsl:when>
-                    <xsl:when test="contains(normalize-space($theMonth),'Dec')">
+                    <xsl:when test="contains(normalize-space($theMonth), 'Dec')">
                         <xsl:text>12</xsl:text>
                     </xsl:when>
                 </xsl:choose>
@@ -140,11 +139,11 @@
     <!-- ScholarOne: city, state, country, province? -->
     <!-- Sage: country -->
     <!-- NLM 2.3 article: country -->
-	<!-- PL: Nanture: cny -->
+    <!-- PL: Nanture: cny -->
     <!-- BMJ: corresponding-author-city, corresponding-author-country, corresponding-author-state, corresponding-author-zipcode -->
 
     <xsl:template match="Country | country | corresponding-author-country | cny">
-        <xsl:if test="normalize-space(.)!=''">
+        <xsl:if test="normalize-space(.) != ''">
             <xsl:variable name="countryWithNoSpace" select="normalize-space(.)"/>
             <country>
                 <xsl:choose>
@@ -177,50 +176,46 @@
     <xsl:template name="normalizeISOCountry">
         <xsl:param name="country"/>
         <xsl:variable name="resultCode">
-            <xsl:value-of
-                select="$countryCodes/descendant::tei:row[tei:cell/text()=$country]/tei:cell[@role='a2code']"
-            />
+            <xsl:value-of select="$countryCodes/descendant::tei:row[tei:cell/text() = $country]/tei:cell[@role = 'a2code']"/>
         </xsl:variable>
-        <xsl:message>Country: <xsl:value-of select="$country"/> - Code: <xsl:value-of
-                select="$resultCode"/></xsl:message>
+        <xsl:if test="not(normalize-space($resultCode))">
+            <xsl:message>Country: <xsl:value-of select="$country"/> - Code not found</xsl:message>
+        </xsl:if>
         <xsl:value-of select="$resultCode"/>
     </xsl:template>
 
     <xsl:template name="normalizeISOCountryName">
         <xsl:param name="country"/>
         <xsl:variable name="resultCode">
-            <xsl:value-of
-                select="$countryCodes/descendant::tei:row[tei:cell/text()=$country]/tei:cell[@role='name' and @xml:lang='en']"
-            />
+            <xsl:value-of select="$countryCodes/descendant::tei:row[tei:cell/text() = $country]/tei:cell[@role = 'name' and @xml:lang = 'en']"/>
         </xsl:variable>
-        <xsl:message>Country: <xsl:value-of select="$country"/> - normalized: <xsl:value-of
-                select="$resultCode"/></xsl:message>
+        <xsl:if test="not(normalize-space($resultCode))">
+            <xsl:message>Country: <xsl:value-of select="$country"/> - Code not found</xsl:message>
+        </xsl:if>
         <xsl:value-of select="$resultCode"/>
     </xsl:template>
 
-	<!-- PL: add st for Nature -->
+    <!-- PL: add st for Nature -->
     <xsl:template match="State | state | corresponding-author-state | province | st">
-        <xsl:if test="normalize-space(.)!=''">
+        <xsl:if test="normalize-space(.) != ''">
             <region>
                 <xsl:apply-templates/>
             </region>
         </xsl:if>
     </xsl:template>
 
-	<!-- PL: add cty for Nature -->
-    <xsl:template
-        match="City | city | corresponding-author-city | named-content[@content-type='city'] | cty">
-        <xsl:if test="normalize-space(.)!=''">
+    <!-- PL: add cty for Nature -->
+    <xsl:template match="City | city | corresponding-author-city | named-content[@content-type = 'city'] | cty">
+        <xsl:if test="normalize-space(.) != ''">
             <settlement>
                 <xsl:apply-templates/>
             </settlement>
         </xsl:if>
     </xsl:template>
 
-	<!-- PL: add zip for Nature -->
-    <xsl:template
-        match="Postcode | post_code | corresponding-author-zipcode | named-content[@content-type='postcode'] | postcode | zip">
-        <xsl:if test="normalize-space(.)!=''">
+    <!-- PL: add zip for Nature -->
+    <xsl:template match="Postcode | post_code | corresponding-author-zipcode | named-content[@content-type = 'postcode'] | postcode | zip">
+        <xsl:if test="normalize-space(.) != ''">
             <postCode>
                 <xsl:apply-templates/>
             </postCode>
@@ -228,7 +223,7 @@
     </xsl:template>
 
     <xsl:template match="Postbox">
-        <xsl:if test=".!=''">
+        <xsl:if test=". != ''">
             <postBox>
                 <xsl:apply-templates/>
             </postBox>
@@ -239,14 +234,13 @@
     <!-- BMJ: corresponding-author-address-1, corresponding-author-address-1 -->
     <!-- Springer 2: OrgAddress  -->
 
-    <xsl:template
-        match="addr-line | addr1 | addr2 | addr3 | corresponding-author-address-1 | corresponding-author-address-2 | addrelt">
-        <xsl:if test="normalize-space(.)!=''">
+    <xsl:template match="addr-line | addr1 | addr2 | addr3 | corresponding-author-address-1 | corresponding-author-address-2 | addrelt">
+        <xsl:if test="normalize-space(.) != ''">
             <xsl:choose>
                 <xsl:when test="*">
-                    <xsl:if test="text()[.!=', ']">
+                    <xsl:if test="text()[. != ', ']">
                         <addrLine>
-                            <xsl:for-each select="text()[.!=', ']">
+                            <xsl:for-each select="text()[. != ', ']">
                                 <xsl:value-of select="."/>
                             </xsl:for-each>
                         </addrLine>
@@ -262,9 +256,9 @@
         </xsl:if>
     </xsl:template>
 
-	<!-- PL: add street or Nature -->
-    <xsl:template match="Street | street | named-content[@content-type='street']">
-        <xsl:if test=".!=''">
+    <!-- PL: add street or Nature -->
+    <xsl:template match="Street | street | named-content[@content-type = 'street']">
+        <xsl:if test=". != ''">
             <street>
                 <xsl:apply-templates/>
             </street>
@@ -284,7 +278,7 @@
     <!-- Springer: Email -->
 
     <xsl:template match="corresponding-author-email | Email | eml">
-        <xsl:if test=".!=''">
+        <xsl:if test=". != ''">
             <email>
                 <xsl:apply-templates/>
             </email>
@@ -292,7 +286,7 @@
     </xsl:template>
 
     <xsl:template match="phone | Phone">
-        <xsl:if test=".!=''">
+        <xsl:if test=". != ''">
             <note type="phone">
                 <xsl:apply-templates/>
             </note>
@@ -300,7 +294,7 @@
     </xsl:template>
 
     <xsl:template match="fax | Fax">
-        <xsl:if test=".!=''">
+        <xsl:if test=". != ''">
             <note type="fax">
                 <xsl:apply-templates/>
             </note>
@@ -308,7 +302,7 @@
     </xsl:template>
 
     <xsl:template match="uri | url | URL">
-        <xsl:if test=".!=''">
+        <xsl:if test=". != ''">
             <ptr type="url">
                 <xsl:attribute name="target">
                     <xsl:apply-templates/>
@@ -325,7 +319,7 @@
     </xsl:template>
 
     <xsl:template match="room">
-        <xsl:if test=".!=''">
+        <xsl:if test=". != ''">
             <note type="room">
                 <xsl:apply-templates/>
             </note>
@@ -338,9 +332,8 @@
     <!-- ScholarOne: inst, dept -->
     <!-- Springer 2/3: OrgDivision, OrgName -->
 
-    <xsl:template
-        match="institution | corresponding-author-institution | inst | OrgName | Institution">
-        <xsl:if test="normalize-space(.)!=''">
+    <xsl:template match="institution | corresponding-author-institution | inst | OrgName | Institution">
+        <xsl:if test="normalize-space(.) != ''">
             <orgName type="institution">
                 <xsl:apply-templates/>
             </orgName>
@@ -348,7 +341,7 @@
     </xsl:template>
 
     <xsl:template match="dept | OrgDivision | Department">
-        <xsl:if test="normalize-space(.)!=''">
+        <xsl:if test="normalize-space(.) != ''">
             <orgName type="department">
                 <xsl:apply-templates/>
             </orgName>

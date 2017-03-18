@@ -1612,6 +1612,7 @@
                         <cell role="a2code">VN</cell>
                         <cell role="a3code">VNM</cell>
                         <cell role="name" xml:lang="fr">VIET NAM</cell>
+                        <cell role="nameAlt" xml:lang="fr">Vietnam</cell>
                         <cell role="name" xml:lang="en">VIET NAM</cell>
                         <cell role="nameAlt" xml:lang="en">Viet Nam</cell>
                     </row>
