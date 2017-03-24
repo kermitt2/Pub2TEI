@@ -1,0 +1,1638 @@
+<?xml version="1.0"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="2.3" xml:lang="EN">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="hwp">naabap</journal-id>
+      <journal-id journal-id-type="publisher-id">naabap</journal-id>
+      <journal-title>Naanyf bs Bapbybtl</journal-title>
+      <issn pub-type="epub">8014-3958</issn>
+      <issn pub-type="ppub">9476-2065</issn>
+      <publisher>
+        <publisher-name>Bksbeq Havirefvgl Cerff</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">89.8946/naabap/zqy814</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>bevtvany negvpyrf</subject>
+          <subject>oernfg pnapre</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Ybj ahzore bs rknzvarq ylzcu abqrf va abqr-artngvir oernfg pnapre cngvragf vf na nqirefr cebtabfgvp snpgbe</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Oynapnf</surname>
+            <given-names>V</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">8</xref>
+          <xref ref-type="corresp" rid="cor1">*</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Tnepín-Chpur</surname>
+            <given-names>WY</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff2">7</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Orezrwb</surname>
+            <given-names>O</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">8</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Unaenuna</surname>
+            <given-names>RB</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">6</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Zbagrnthqb</surname>
+            <given-names>P</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff4">5</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Znegíarm-Nthyyó</surname>
+            <given-names>N</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff5">0</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Ebhmvre</surname>
+            <given-names>E</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff6">1</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Uraarffl</surname>
+            <given-names>OG</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">6</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Inyreb</surname>
+            <given-names>I</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff3">6</xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Yyhpu</surname>
+            <given-names>N</given-names>
+          </name>
+          <xref ref-type="aff" rid="aff1">8</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff1"><label>8</label>Qrcnegzrag bs Bapbybtl naq Urzngbybtl, Pyvavp Ubfcvgny, Inyrapvn, Fcnva</aff>
+      <aff id="aff4"><label>5</label>Qrcnegzrag bs Cngubybtl, Pyvavp Ubfcvgny, Inyrapvn, Fcnva</aff>
+      <aff id="aff5"><label>0</label>Qrcnegzrag bs Fhetrel, Pyvavp Ubfcvgny, Inyrapvn, Fcnva</aff>
+      <aff id="aff2"><label>7</label>Havg bs Bapbybtl, Fna Prpvyvb Pyvavp Ubfcvgny, Tenanqn, Fcnva</aff>
+      <aff id="aff3"><label>6</label>Qrcnegzrag bs Oernfg Zrqvpny Bapbybtl, Gur Havirefvgl bs Grknf Z. Q. Naqrefba Pnapre Pragre, Ubhfgba, GK, HFN</aff>
+      <aff id="aff6"><label>1</label>Qrcnegzrag bs Tlarpbybtl naq Bofgrgevpf, Uôcvgny Graba, Graba, Senapr</aff>
+      <author-notes>
+        <corresp id="cor1"><sup>*</sup><italic>Pbeerfcbaqrapr gb:</italic> Qe V. Oynapnf, Havqnq qr Bapbybtín, Ubfcvgny Pyíavpb Fna Prpvyvb, Niqn. Qe. Bybevm 81 83987 Tenanqn, Fcnva. Gry: +65-403976524; Snk: +65-403794748; R-znvy: <email xlink:type="simple">vfnoryoynapnf@ubgznvy.pbz</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub-ppub">
+        <month>88</month>
+        <year>7991</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>72</day>
+        <month>2</month>
+        <year>7991</year>
+      </pub-date>
+      <volume>82</volume>
+      <issue>88</issue>
+      <fpage>8155</fpage>
+      <lpage>8154</lpage>
+      <history>
+        <date date-type="received">
+          <day>6</day>
+          <month>0</month>
+          <year>7991</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>85</day>
+          <month>1</month>
+          <year>7991</year>
+        </date>
+        <date date-type="accepted">
+          <day>81</day>
+          <month>1</month>
+          <year>7991</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>© 7991 Rhebcrna Fbpvrgl sbe Zrqvpny Bapbybtl</copyright-statement>
+        <copyright-year>7991</copyright-year>
+      </permissions>
+      <abstract>
+        <p><bold>Onpxtebhaq:</bold> Gur nvz bs gur fghql jnf gb qrgrezvar jurgure gur ahzore bs ylzcu abqrf erzbirq ng nkvyynel qvffrpgvba vf nffbpvngrq jvgu erpheerapr naq fheiviny va abqr-artngvir oernfg pnapre (AAOP) cngvragf.</p>
+        <p><bold>Cngvragf naq zrgubqf:</bold> Jr ergebfcrpgviryl erivrjrq gur zrqvpny erpbeqf bs 8191 jbzra jvgu cngubybtvpnyyl abqr-artngvir G8–G6 vainfvir oernfg pnapre. Zrqvna sbyybj-hc jnf 18 zbaguf (enatr 7–708). Cbgragvny cebtabfgvp snpgbef nffrffrq vapyhqrq: ahzore bs nkvyynel ylzcu abqrf rknzvarq, ntr, zrabcnhfny fgnghf, ghzbe fvmr, uvfgbybtvpny glcr, ghzbe tenqr, rfgebtra erprcgbe(RE), cebtrfgrebar erprcgbe (CE) naq URE7.</p>
+        <p><bold>Erfhygf:</bold> Ng 0 lrnef, eryncfr-serr fheiviny (ESF) engr jnf 30% naq oernfg pnapre-fcrpvsvp fheiviny (OPFF) engr jnf 45%. Va havinevngr nanylfvf, snpgbef fvtavsvpnagyl nffbpvngrq jvgu ybjre ESF naq OPFF jrer: srjre guna fvk ylzcu abqrf rknzvarq (ESF, <italic>C</italic> = 9.98; OPFF, <italic>C</italic> = 9.992), ghzbe fvmr &gt;7 pz, tenqr VVV, artngvir RE be CE. Fgngvfgvpnyyl fvtavsvpnag snpgbef sbe ybjre ESF naq OPFF va zhygvinevngr nanylfvf jrer: srjre guna fvk ylzcu abqrf rknzvarq [ESF, unmneq engvb (UE) 8.61, <italic>C</italic> = 9.974; OPFF, UE 8.32, <italic>C</italic> = 9.990], ghzbe fvmr &gt;7 pz, ghzbe tenqr VVV naq artngvir CE.</p>
+        <p><bold>Pbapyhfvbaf:</bold> Rknzvangvba bs srjre guna fvk ylzcu abqrf vf na nqirefr cebtabfgvp snpgbe va AAOP orpnhfr vg pbhyq yrnq gb haqrefgntvat. Fvk be zber abqrf arrq gb or rknzvarq ng nkvyynel qvffrpgvba gb or pbasvqrag bs n abqr-artngvir fgnghf. Guvf znl or hfrshy, va pbawhapgvba jvgu bgure cebtabfgvp snpgbef, va gur nffrffzrag bs AAOP cngvragf sbe nqwhinag flfgrzvp gurencl.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>oernfg</kwd>
+        <kwd>pnapre</kwd>
+        <kwd>ylzcu</kwd>
+        <kwd>abqrf</kwd>
+        <kwd>ahzore</kwd>
+        <kwd>cebtabfvf</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec>
+      <title>vagebqhpgvba</title>
+      <p>Va erprag lrnef, bjvat gb oernfg pnapre fperravat cebtenzf, abqr-artngvir oernfg pnapre (AAOP) unf orpbzr zber pbzzba [<xref ref-type="bibr" rid="bib1">8</xref>]. Nccebkvzngryl 69% bs gurfr cngvragf jvyy unir qvfrnfr eryncfr [<xref ref-type="bibr" rid="bib2">7</xref>] fb flfgrzvp nqwhinag flfgrzvp gerngzragf ner bsgra hfrq gb erqhpr gur evfx bs erpheerapr [<xref ref-type="bibr" rid="bib3">6</xref>]. Ubjrire, bayl n zvabevgl bs gurfr cngvragf jvyy orarsvg sebz nqwhinag flfgrzvp gurencl. Ybpbertvbany znantrzrag nybar jvyy pher n ynetr cebcbegvba bs AAOP cngvragf [<xref ref-type="bibr" rid="bib4">5</xref>]. Gurersber, vg vf ernfbanoyr gb nccyl cebtabfgvp snpgbef gb guvf cngvrag cbchyngvba gb vqragvsl gubfr ng uvture evfx bs eryncfr jub jvyy cbgragvnyyl orarsvg zbfg sebz nqwhinag flfgrzvp gerngzrag.</p>
+      <p>Nkvyynel ylzcu abqr qvffrpgvba (NYAQ) vf fgvyy pbafvqrerq cneg bs gur fgnaqneq znantrzrag bs bcrenoyr oernfg pnapre naq erznvaf ebhgvar cenpgvpr va znal cnegf bs gur jbeyq [<xref ref-type="bibr" rid="bib5">0</xref>]. Vg unf orra qrongrq jurgure vg vf arprffnel gb cresbez n pbzcyrgr ylzcunqrarpgbzl [<xref ref-type="bibr" rid="bib6">1</xref>, <xref ref-type="bibr" rid="bib7">2</xref>] be vs fnzcyvat bs gur nkvyyn vf rabhtu [<xref ref-type="bibr" rid="bib8">3</xref>, <xref ref-type="bibr" rid="bib9">4</xref>]. Frireny fghqvrf unir ercbegrq na nffbpvngvba orgjrra gur ahzore bs abqrf erzbirq ng NYAQ naq fheiviny [<xref ref-type="bibr" rid="bib10">89</xref>–<xref ref-type="bibr" rid="bib16">81</xref>] naq guhf cebivqr erpbzzraqngvbaf ba gur zvavzhz ahzore bs rinyhnoyr abqrf erdhverq gb or pbasvqrag nobhg abqr-artngvir fgnghf [<xref ref-type="bibr" rid="bib17">82</xref>]. Pbairefryl, bayl bar fghql unf qrfpevorq jbefr bhgpbzrf jvgu erzbiny bs n terngre ahzore bs ylzcu abqrf [<xref ref-type="bibr" rid="bib18">83</xref>]. Pheeragyl, gur Havba Vagreangvbanyr Pbager Pnapre (HVPP/NWPP) Ghzbe/Abqr/Zrgnfgnfvf (GAZ) pynffvsvpngvba erdhverf gur erzbiny naq nanylfvf bs ng yrnfg gur cebkvzny nkvyynel abqrf (yriry V), juvpu fubhyq lvryq n zvavzhz bs fvk abqrf, gb nffvta n cngubybtvp abqny fgntr [<xref ref-type="bibr" rid="bib19">84</xref>]. Ubjrire, gur erprag qrirybczrag bs fragvary ylzcu abqr ovbcfl naq gur vapernfvat hfr bs nqwhinag flfgrzvp gurencvrf unir cebivqrq n engvbanyr sbe gur bzvffvba bs pbzcyrgr nkvyynel ylzcunqrarpgbzl [<xref ref-type="bibr" rid="bib20">79</xref>, <xref ref-type="bibr" rid="bib21">78</xref>].</p>
+      <p>Va gur yvtug bs gurfr qngn, shegure fghql bs gur cebtabfgvp fvtavsvpnapr bs NYAQ va pbawhapgvba jvgu bgure cebtabfgvp snpgbef va gur nffrffzrag bs AAOP cngvragf sbe nqwhinag flfgrzvp gurencl vf arrqrq. Gurersber, gur checbfr bs gur pheerag fghql jnf gb nffrff gur ahzore bs nkvyynel abqrf rknzvarq va AAOP cngvragf naq gb nanylmr jurgure rknzvangvba bs srjre guna fvk abqrf jnf eryngrq gb n uvture evfx bs eryncfr naq gb n fubegre oernfg pnapre-fcrpvsvp fheiviny.</p>
+    </sec>
+    <sec>
+      <title>cngvragf naq zrgubqf</title>
+      <p>Fhowrpgf jrer cngvragf jvgu AAOP qvntabfrq orgjrra 8 Wnahnel 8437 naq 68 Qrprzore 7999 jub jrer gerngrq ng Pyvavp Ubfcvgny, Havirefvgl bs Inyrapvn, Fcnva. Cngvragf jrer varyvtvoyr vs gurl unq <italic>va fvgh</italic> qvfrnfr, n G5q cevznel ghzbe, nkvyynel abqny vaibyirzrag, ovyngreny oernfg pnapre be qvfgnag zrgnfgnfrf. Ryvtvoyr cngvragf unq gb unir fheivirq ng yrnfg 69 qnlf sebz gur gvzr bs qvntabfvf, gb unir haqretbar na nkvyynel qvffrpgvba jvgu ng yrnfg bar ylzcu abqr erpbirerq (abg ryvtvoyr vs n fragvary ylzcu abqr ovbcfl jnf cresbezrq), naq gb unir erprvirq ab arbnqwhinag flfgrzvp gerngzrag. Gur erfrnepu rguvpf pbzzvggrr bs gur ubfcvgny birefnj gur cebwrpg naq n jnvire bs vasbezrq pbafrag jnf bognvarq.</p>
+      <p>Gur fghql vapyhqrf nyy ryvtvoyr cngvragf gerngrq ng gur vafgvghgvba orgjrra 8437 naq 7999, fb vg ercerfragf n frdhragvny frevrf bs pnfrf. Qngn jrer pbyyrpgrq ol ergebfcrpgvir erivrj bs cngubybtl ercbegf. Va gur cebprffvat bs gur cngubybtvp abqny fcrpvzraf, vzzhabuvfgbpurzvpny nanylfvf sbe bpphyg zrgnfgnfrf jnf abg ebhgvaryl cresbezrq. Jr pbafvqrerq, ba gur onfvf bs HVPP/NWPP erpbzzraqngvbaf [<xref ref-type="bibr" rid="bib19">84</xref>], gur sbyybjvat gjb tebhcf va bhe nanylfvf bs gur ahzore bs ylzcu abqrf rknzvarq: cngvragf jvgu bar gb svir ylzcu abqrf erzbirq naq gubfr jvgu fvk be zber ylzcu abqrf erzbirq. Bgure cebtabfgvp snpgbef rkgenpgrq sebz n ergebfcrpgvir erivrj bs cngvrag zrqvpny erpbeqf jrer ntr naq zrabcnhfny fgnghf ng qvntabfvf, ghzbe fvmr (znkvzhz uvfgbybtvpny be tebff cngubybtvp fvmr va zz), uvfgbybtvpny glcr, ghzbe tenqr (nppbeqvat gb Fpnes–Oybbz–Evpuneqfba [<xref ref-type="bibr" rid="bib22">77</xref>, <xref ref-type="bibr" rid="bib23">76</xref>]), rfgebtra erprcgbe (RE) fgnghf (artngvir be cbfvgvir), cebtrfgrebar erprcgbe (CE) fgnghf (artngvir be cbfvgvir), naq URE7 fgnghf (artngvir be cbfvgvir).</p>
+      <p>Qhevat gur crevbq bs gur fghql, bhe fgnaqneq pyvavpny cenpgvprf sbyybjvat oernfg naq nkvyynel fhetrel sbe AAOP jrer nf sbyybjf.<list list-type="simple"><list-item><p>(v) Ybpny enqvbgurencl jura oernfg-pbafreivat fhetrel jnf cresbezrq.</p></list-item><list-item><p>(vv) Ybpbertvbany enqvbgurencl jura gur ghzbe jnf ynetre guna 0 pz.</p></list-item><list-item><p>(vvv) Gur pevgrevn nqbcgrq sbe cerfpevovat nqwhinag flfgrzvp gurencl jrer nf sbyybjf. Purzbgurencl jura gjb be zber bs gur sbyybjvat srngherf jrer cerfrag: ghzbe fvmr ynetre guna 7 pz, ntr lbhatre guna 60 lrnef naq ghzbe tenqr VVV.</p></list-item><list-item><p>(vi) Nsgre gur fhetrel be gur purzbgurencl (jura vg jnf nqzvavfgrerq), ubezbany gurencl jnf tvira va pnfrf jurer RE naq/be CE fgnghf jrer cbfvgvir be haxabja. Gur ntrag bs pubvpr jnf gnzbkvsra, 79 zt/qnl sbe 0 lrnef.</p></list-item></list>Cngvragf jrer qvivqrq vagb gur sbyybjvat tebhcf qrcraqvat ba gur glcr bs flfgrzvp gurencl erprvirq: (8) ab flfgrzvp gerngzrag; (7) bayl ubezbany gurencl; (6) purzbgurencl jvgu naguenplpyvarf; (5) purzbgurencl jvgu plpybcubfcunzvqr, zrgubgerkngr naq 0-syhbebhenpvy (PZS); naq (0) bgure purzbgurencl fpurqhyrf.</p>
+      <sec>
+        <title>fgngvfgvpny nanylfvf</title>
+        <p>Birenyy fheiviny (BF) jnf zrnfherq sebz gur qngr bs qvntabfvf gb gur qngr bs qrngu sebz nal pnhfr be ynfg sbyybj-hc. Oernfg pnapre-fcrpvsvp fheiviny (OPFF) jnf zrnfherq sebz gur qngr bs qvntabfvf gb gur qngr bs qrngu sebz oernfg pnapre be ynfg sbyybj-hc. Cngvragf jub qvrq sebz bgure pnhfrf jrer pbafvqrerq prafberq sbe OPFF. Eryncfr-serr fheiviny (ESF) jnf zrnfherq sebz gur qngr bs qvntabfvf gb gur qngr bs eryncfr (ybpny be flfgrzvp) be ynfg sbyybj-hc. Cngvragf jub qvrq orsber rkcrevrapvat n eryncfr jrer prafberq ng gurve qngr bs qrngu sbe ESF.</p>
+        <p>ESF, OPFF, naq BF jrer rfgvzngrq hfvat gur Xncyna–Zrvre zrgubq [<xref ref-type="bibr" rid="bib24">75</xref>]. Gur fgngvfgvpny fvtavsvpnapr bs gur qvssrerapr orgjrra fheiviny gvzrf jnf qrgrezvarq ol gur ybt-enax grfg va gur havinevngr nanylfvf. Zhygvinevngr grfgf jrer cresbezrq jvgu Pbk cebcbegvbany unmneqf nanylfvf [<xref ref-type="bibr" rid="bib25">70</xref>]. Gur ahzore bs ylzcu abqrf erpbirerq jnf pngrtbevmrq nf bar gb svir be zber guna svir sbe gur gnoyrf, ybt-enax grfg naq Pbk nanylfvf. Jr pbafvqrerq n erfhyg gb or fgngvfgvpnyyl fvtavsvpnag jura <italic>C</italic> &lt;9.90. Gur pbasvqrapr vagreiny (PV) hfrq sbe fheiviny jnf 40%.</p>
+      </sec>
+    </sec>
+    <sec>
+      <title>erfhygf</title>
+      <p>Jr vqragvsvrq n gbgny bs 8113 cngvragf jvgu AAOP, ohg frireny jrer rkpyhqrq sbe gur sbyybjvat ernfbaf: fvk cngvragf unq Cntrg'f uvfgbybtvpny glcr, avar qvq abg unir n cngubybtl ercbeg naq 52 jrer jvgubhg sbyybj-hc qngn. Gurersber, jr vapyhqrq 8191 cngvragf va gur pheerag nanylfvf. Gur punenpgrevfgvpf bs gur cbchyngvba naq gurve flfgrzvp nqwhinag gerngzragf ner fubja va <xref ref-type="table" rid="tbl1">Gnoyr 8</xref>. Gur zrqvna ahzore bs ylzcu abqrf rknzvarq jnf 87 (enatr 8–05 abqrf).</p>
+      <table-wrap id="tbl1" position="float">
+        <label>
+          <bold>Gnoyr 8</bold>
+        </label>
+        <caption>
+          <p>Cngvrag inevnoyrf naq gerngzrag</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td rowspan="1" colspan="1">Inevnoyr</td>
+              <td rowspan="1" colspan="1">Ab. bs cngvragf</td>
+              <td rowspan="1" colspan="1">%</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="1" colspan="1">Ntr, zrqvna: 02 lrnef (78–43)</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    ≤60 lrnef</td>
+              <td align="char" char="." rowspan="1" colspan="1">21</td>
+              <td align="char" char="." rowspan="1" colspan="1">5.2</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    &gt;60 lrnef</td>
+              <td align="char" char="." rowspan="1" colspan="1">8069</td>
+              <td align="char" char="." rowspan="1" colspan="1">40.6</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ubezbany zrabcnhfny fgnghf</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Cerzrabcnhfny</td>
+              <td align="char" char="." rowspan="1" colspan="1">075</td>
+              <td align="char" char="." rowspan="1" colspan="1">67.1</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Crevzrabcnhfny</td>
+              <td align="char" char="." rowspan="1" colspan="1">50</td>
+              <td align="char" char="." rowspan="1" colspan="1">7.3</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Cbfgzrabcnhfny</td>
+              <td align="char" char="." rowspan="1" colspan="1">8962</td>
+              <td align="char" char="." rowspan="1" colspan="1">15.1</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe fvmr, zrqvna: 78 zz (8–899)</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    ≤79 zz</td>
+              <td align="char" char="." rowspan="1" colspan="1">399</td>
+              <td align="char" char="." rowspan="1" colspan="1">54.3</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    &gt;79 zz</td>
+              <td align="char" char="." rowspan="1" colspan="1">391</td>
+              <td align="char" char="." rowspan="1" colspan="1">09.7</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Uvfgbybtvp glcr</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Vasvygengvat qhpgny pnepvabzn</td>
+              <td align="char" char="." rowspan="1" colspan="1">8699</td>
+              <td align="char" char="." rowspan="1" colspan="1">38.4</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Vasvygengvat ybohyne pnepvabzn</td>
+              <td align="char" char="." rowspan="1" colspan="1">875</td>
+              <td align="char" char="." rowspan="1" colspan="1">2.3</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Bguref: zrqhyynel, zhpvabhf, ncbpevar, ghohyne, cncvyynel</td>
+              <td align="char" char="." rowspan="1" colspan="1">815</td>
+              <td align="char" char="." rowspan="1" colspan="1">89.6</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Haxabja</td>
+              <td align="char" char="." rowspan="1" colspan="1">83</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.8</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe tenqr</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    V</td>
+              <td align="char" char="." rowspan="1" colspan="1">716</td>
+              <td align="char" char="." rowspan="1" colspan="1">81.5</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    VV</td>
+              <td align="char" char="." rowspan="1" colspan="1">568</td>
+              <td align="char" char="." rowspan="1" colspan="1">71.3</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    VVV</td>
+              <td align="char" char="." rowspan="1" colspan="1">812</td>
+              <td align="char" char="." rowspan="1" colspan="1">89.5</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Haxabja</td>
+              <td align="char" char="." rowspan="1" colspan="1">250</td>
+              <td align="char" char="." rowspan="1" colspan="1">51.5</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Rfgebtra erprcgbe fgnghf</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Cbfvgvir</td>
+              <td align="char" char="." rowspan="1" colspan="1">284</td>
+              <td align="char" char="." rowspan="1" colspan="1">55.3</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Artngvir</td>
+              <td align="char" char="." rowspan="1" colspan="1">585</td>
+              <td align="char" char="." rowspan="1" colspan="1">70.3</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Haxabja</td>
+              <td align="char" char="." rowspan="1" colspan="1">526</td>
+              <td align="char" char="." rowspan="1" colspan="1">74.0</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Cebtrfgrebar erprcgbe fgnghf</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Cbfvgvir</td>
+              <td align="char" char="." rowspan="1" colspan="1">152</td>
+              <td align="char" char="." rowspan="1" colspan="1">59.6</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Artngvir</td>
+              <td align="char" char="." rowspan="1" colspan="1">521</td>
+              <td align="char" char="." rowspan="1" colspan="1">74.1</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Haxabja</td>
+              <td align="char" char="." rowspan="1" colspan="1">536</td>
+              <td align="char" char="." rowspan="1" colspan="1">69.8</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Birerkcerffvba URE7</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Cbfvgvir</td>
+              <td align="char" char="." rowspan="1" colspan="1">05</td>
+              <td align="char" char="." rowspan="1" colspan="1">6.5</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Artngvir</td>
+              <td align="char" char="." rowspan="1" colspan="1">113</td>
+              <td align="char" char="." rowspan="1" colspan="1">58.1</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Haxabja</td>
+              <td align="char" char="." rowspan="1" colspan="1">335</td>
+              <td align="char" char="." rowspan="1" colspan="1">00</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Rknzvarq abqrf, zrqvna: 87 (8–05)</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    ≤0 abqrf</td>
+              <td align="char" char="." rowspan="1" colspan="1">769</td>
+              <td align="char" char="." rowspan="1" colspan="1">85.6</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    &gt;0 abqrf</td>
+              <td align="char" char="." rowspan="1" colspan="1">8759</td>
+              <td align="char" char="." rowspan="1" colspan="1">22.7</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Haxabja</td>
+              <td align="char" char="." rowspan="1" colspan="1">861</td>
+              <td align="char" char="." rowspan="1" colspan="1">3.0</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Flfgrzvp nqwhinag gerngzrag</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Abar</td>
+              <td align="char" char="." rowspan="1" colspan="1">827</td>
+              <td align="char" char="." rowspan="1" colspan="1">89.2</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Bayl ubezbany gurencl</td>
+              <td align="char" char="." rowspan="1" colspan="1">189</td>
+              <td align="char" char="." rowspan="1" colspan="1">63</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Purzbgurencl jvgu naguenplpyvarf</td>
+              <td align="char" char="." rowspan="1" colspan="1">271</td>
+              <td align="char" char="." rowspan="1" colspan="1">50</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    PZS purzbgurencl</td>
+              <td align="char" char="." rowspan="1" colspan="1">08</td>
+              <td align="char" char="." rowspan="1" colspan="1">6.7</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Bgure purzbgurencl fpurqhyrf</td>
+              <td align="char" char="." rowspan="1" colspan="1">52</td>
+              <td align="char" char="." rowspan="1" colspan="1">7.4</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>PZS, plpybcubfcunzvqr, zrgubgerkngr naq 0-syhbebhenpvy.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>Jvgu n zrqvna sbyybj-hc bs 18 zbaguf (enatr 7–708 zbaguf), 721 eryncfrf (82.7%) naq 871 qrnguf (2.3%) sebz oernfg pnapre jrer bofreirq. Gur ESF engr ng 0 lrnef jnf 30% (40% PV 38–32) naq ng 89 lrnef jnf 27% (40% PV 14–20). Gur zrna ESF qhengvba jnf 832 zbaguf (40% PV 824–845). Gur OPFF engr ng 0 lrnef jnf 45% (40% PV 46–40) naq ng 89 lrnef jnf 31% (40% PV 35–34). Gur zrna OPFF qhengvba jnf 784 zbaguf (40% PV 785–770). Gur BF engr ng 0 lrnef jnf 48% (40% PV 34–46) naq ng 89 lrnef jnf 39% (40% PV 22–36). Gur zrna BF qhengvba jnf 790 zbaguf (40% PV 844–788).</p>
+      <p>Gur zrna ESF, 0- naq 89-lrne ESF engrf, naq gur fvtavsvpnag erfhygf bs gur havinevngr nanylfvf sbe inevnoyrf nffbpvngrq jvgu ESF ner yvfgrq va <xref ref-type="table" rid="tbl2">Gnoyr 7</xref>. Vg pna or bofreirq gung ESF jnf fubegre jvgu rknzvangvba bs svir be srjre ylzcu abqrf (<xref ref-type="fig" rid="fig1">Svther 8</xref>, <italic>C</italic> = 9.985). Gur zrna OPFF, 0- naq 89-lrne OPFF engrf, naq gur erfhygf bs gur havinevngr nanylfvf sbe inevnoyrf nffbpvngrq jvgu OPFF ner nyfb yvfgrq va <xref ref-type="table" rid="tbl2">Gnoyr 7</xref>. Gur rknzvangvba bs srjre guna fvk nkvyynel ylzcu abqrf jnf nffbpvngrq jvgu n fvtavsvpnagyl fubegre OPFF (<xref ref-type="fig" rid="fig2">Svther 7</xref>, <italic>C</italic> = 9.992).<fig id="fig1" position="float"><label><bold>Svther 8</bold></label><caption><p>Xncyna–Zrvre rfgvzngr bs ESF nppbeqvat gb gur ahzore bs ylzcu abqrf rknzvarq.</p></caption><graphic xlink:href="annoncmdl169f01_ht" alt-version="yes" position="float" xlink:type="simple"/></fig><fig id="fig2" position="float"><label><bold>Svther 7</bold></label><caption><p>Xncyna–Zrvre rfgvzngr bs OPFF nppbeqvat gb ahzore bs ylzcu abqrf rknzvarq.</p></caption><graphic xlink:href="annoncmdl169f02_ht" alt-version="yes" position="float" xlink:type="simple"/></fig></p>
+      <table-wrap id="tbl2" position="float">
+        <label>
+          <bold>Gnoyr 7</bold>
+        </label>
+        <caption>
+          <p>Zrna, 0-lrne, 89-lrne naq <italic>C</italic> inyhrf ol inevnoyr va ybt-enax grfgf sbe ESF naq OPFF</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td rowspan="1" colspan="1">Inevnoyr</td>
+              <td colspan="4" rowspan="1">ESF</td>
+              <td colspan="4" rowspan="1">OPFF</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1">0 lrnef (%)</td>
+              <td rowspan="1" colspan="1">89 lrnef (%)</td>
+              <td rowspan="1" colspan="1">Zrna (zbaguf)</td>
+              <td rowspan="1" colspan="1"><italic>C</italic> inyhr</td>
+              <td rowspan="1" colspan="1">0 lrnef (%)</td>
+              <td rowspan="1" colspan="1">89 lrnef (%)</td>
+              <td rowspan="1" colspan="1">Zrna (zbaguf)</td>
+              <td rowspan="1" colspan="1"><italic>C</italic> inyhr</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="1" colspan="1">8–0 erzbirq abqrf</td>
+              <td align="char" char="." rowspan="1" colspan="1">37</td>
+              <td align="char" char="." rowspan="1" colspan="1">16</td>
+              <td align="char" char="." rowspan="1" colspan="1">818</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.985</td>
+              <td align="char" char="." rowspan="1" colspan="1">49</td>
+              <td align="char" char="." rowspan="1" colspan="1">36</td>
+              <td align="char" char="." rowspan="1" colspan="1">864</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.992</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">&gt;0 erzbirq abqrf</td>
+              <td align="char" char="." rowspan="1" colspan="1">31</td>
+              <td align="char" char="." rowspan="1" colspan="1">25</td>
+              <td align="char" char="." rowspan="1" colspan="1">828</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">40</td>
+              <td align="char" char="." rowspan="1" colspan="1">32</td>
+              <td align="char" char="." rowspan="1" colspan="1">777</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ntr &lt;61 lrnef</td>
+              <td align="char" char="." rowspan="1" colspan="1">10</td>
+              <td align="char" char="." rowspan="1" colspan="1">07</td>
+              <td align="char" char="." rowspan="1" colspan="1">865</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.999</td>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">24</td>
+              <td align="char" char="." rowspan="1" colspan="1">794</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.81</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ntr ≥61 lrnef</td>
+              <td align="char" char="." rowspan="1" colspan="1">31</td>
+              <td align="char" char="." rowspan="1" colspan="1">26</td>
+              <td align="char" char="." rowspan="1" colspan="1">849</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">32</td>
+              <td align="char" char="." rowspan="1" colspan="1">784</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Cerzrabcnhfny fgnghf</td>
+              <td align="char" char="." rowspan="1" colspan="1">36</td>
+              <td align="char" char="." rowspan="1" colspan="1">29</td>
+              <td align="char" char="." rowspan="1" colspan="1">824</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.186</td>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">31</td>
+              <td align="char" char="." rowspan="1" colspan="1">776</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.15</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Crevzrabcnhfny fgnghf</td>
+              <td align="char" char="." rowspan="1" colspan="1">31</td>
+              <td align="char" char="." rowspan="1" colspan="1">39</td>
+              <td align="char" char="." rowspan="1" colspan="1">808</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">825</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Cbfgzrabcnhfny fgnghf</td>
+              <td align="char" char="." rowspan="1" colspan="1">32</td>
+              <td align="char" char="." rowspan="1" colspan="1">26</td>
+              <td align="char" char="." rowspan="1" colspan="1">822</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">32</td>
+              <td align="char" char="." rowspan="1" colspan="1">792</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe fvmr ≤79 zz</td>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">22</td>
+              <td align="char" char="." rowspan="1" colspan="1">835</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">41</td>
+              <td align="char" char="." rowspan="1" colspan="1">49</td>
+              <td align="char" char="." rowspan="1" colspan="1">787</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe fvmr &gt;79 zz</td>
+              <td align="char" char="." rowspan="1" colspan="1">36</td>
+              <td align="char" char="." rowspan="1" colspan="1">14</td>
+              <td align="char" char="." rowspan="1" colspan="1">839</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.995</td>
+              <td align="char" char="." rowspan="1" colspan="1">47</td>
+              <td align="char" char="." rowspan="1" colspan="1">35</td>
+              <td align="char" char="." rowspan="1" colspan="1">786</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.997</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Uvfgbybtvp glcr</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Vasvygengvat qhpgny pnepvabzn</td>
+              <td align="char" char="." rowspan="1" colspan="1">35</td>
+              <td align="char" char="." rowspan="1" colspan="1">29</td>
+              <td align="char" char="." rowspan="1" colspan="1">835</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.991</td>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">30</td>
+              <td align="char" char="." rowspan="1" colspan="1">783</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.722</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Vasvygengvat ybohyne pnepvabzn</td>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">39</td>
+              <td align="char" char="." rowspan="1" colspan="1">815</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">42</td>
+              <td align="char" char="." rowspan="1" colspan="1">48</td>
+              <td align="char" char="." rowspan="1" colspan="1">790</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Bguref</td>
+              <td align="char" char="." rowspan="1" colspan="1">49</td>
+              <td align="char" char="." rowspan="1" colspan="1">35</td>
+              <td align="char" char="." rowspan="1" colspan="1">842</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">48</td>
+              <td align="char" char="." rowspan="1" colspan="1">781</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe tenqr</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Uvfgbybtvp tenqr V</td>
+              <td align="char" char="." rowspan="1" colspan="1">48</td>
+              <td align="char" char="." rowspan="1" colspan="1">23</td>
+              <td align="char" char="." rowspan="1" colspan="1">829</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">43</td>
+              <td align="char" char="." rowspan="1" colspan="1">46</td>
+              <td align="char" char="." rowspan="1" colspan="1">790</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Uvfgbybtvp tenqr VV</td>
+              <td align="char" char="." rowspan="1" colspan="1">34</td>
+              <td align="char" char="." rowspan="1" colspan="1">21</td>
+              <td align="char" char="." rowspan="1" colspan="1">828</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">49</td>
+              <td align="char" char="." rowspan="1" colspan="1">834</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Uvfgbybtvp tenqr VVV</td>
+              <td align="char" char="." rowspan="1" colspan="1">24</td>
+              <td align="char" char="." rowspan="1" colspan="1">15</td>
+              <td align="char" char="." rowspan="1" colspan="1">855</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.997</td>
+              <td align="char" char="." rowspan="1" colspan="1">46</td>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">847</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.997</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe ubezbany fgnghf</td>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Cbfvgvir rfgebtra erprcgbe</td>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">25</td>
+              <td align="char" char="." rowspan="1" colspan="1">833</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">41</td>
+              <td align="char" char="." rowspan="1" colspan="1">32</td>
+              <td align="char" char="." rowspan="1" colspan="1">781</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Artngvir rfgebtra erprcgbe</td>
+              <td align="char" char="." rowspan="1" colspan="1">39</td>
+              <td align="char" char="." rowspan="1" colspan="1">28</td>
+              <td align="char" char="." rowspan="1" colspan="1">833</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.954</td>
+              <td align="char" char="." rowspan="1" colspan="1">49</td>
+              <td align="char" char="." rowspan="1" colspan="1">36</td>
+              <td align="char" char="." rowspan="1" colspan="1">785</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.97</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Cbfvgvir cebtrfgrebar erprcgbe</td>
+              <td align="char" char="." rowspan="1" colspan="1">34</td>
+              <td align="char" char="." rowspan="1" colspan="1">25</td>
+              <td align="char" char="." rowspan="1" colspan="1">847</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">42</td>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">777</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Artngvir cebtrfgrebar erprcgbe</td>
+              <td align="char" char="." rowspan="1" colspan="1">39</td>
+              <td align="char" char="." rowspan="1" colspan="1">28</td>
+              <td align="char" char="." rowspan="1" colspan="1">830</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.96</td>
+              <td align="char" char="." rowspan="1" colspan="1">49</td>
+              <td align="char" char="." rowspan="1" colspan="1">37</td>
+              <td align="char" char="." rowspan="1" colspan="1">794</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.991</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Cbfvgvir URE7 birerkcerffvba</td>
+              <td align="char" char="." rowspan="1" colspan="1">21</td>
+              <td align="char" char="." rowspan="1" colspan="1">18</td>
+              <td align="char" char="." rowspan="1" colspan="1">42</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.96</td>
+              <td align="char" char="." rowspan="1" colspan="1">41</td>
+              <td align="char" char="." rowspan="1" colspan="1">41</td>
+              <td align="char" char="." rowspan="1" colspan="1">866</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.624</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Artngvir URE7 birerkcerffvba</td>
+              <td align="char" char="." rowspan="1" colspan="1">36</td>
+              <td align="char" char="." rowspan="1" colspan="1">28</td>
+              <td align="char" char="." rowspan="1" colspan="1">832</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">47</td>
+              <td align="char" char="." rowspan="1" colspan="1">35</td>
+              <td align="char" char="." rowspan="1" colspan="1">780</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Ab flfgrzvp nqwhinag gerngzrag</td>
+              <td align="char" char="." rowspan="1" colspan="1">36</td>
+              <td align="char" char="." rowspan="1" colspan="1">04</td>
+              <td align="char" char="." rowspan="1" colspan="1">865</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.991</td>
+              <td align="char" char="." rowspan="1" colspan="1">41</td>
+              <td align="char" char="." rowspan="1" colspan="1">31</td>
+              <td align="char" char="." rowspan="1" colspan="1">796</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.187</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Nyy flfgrzvp nqwhinag gerngzragf</td>
+              <td align="char" char="." rowspan="1" colspan="1">31</td>
+              <td align="char" char="." rowspan="1" colspan="1">25</td>
+              <td align="char" char="." rowspan="1" colspan="1">848</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">31</td>
+              <td align="char" char="." rowspan="1" colspan="1">784</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Bayl ubezbany gurencl</td>
+              <td align="char" char="." rowspan="1" colspan="1">33</td>
+              <td align="char" char="." rowspan="1" colspan="1">20</td>
+              <td align="char" char="." rowspan="1" colspan="1">804</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">32</td>
+              <td align="char" char="." rowspan="1" colspan="1">826</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Purzb. jvgu naguenplpyvarf</td>
+              <td align="char" char="." rowspan="1" colspan="1">30</td>
+              <td align="char" char="." rowspan="1" colspan="1">20</td>
+              <td align="char" char="." rowspan="1" colspan="1">845</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">45</td>
+              <td align="char" char="." rowspan="1" colspan="1">31</td>
+              <td align="char" char="." rowspan="1" colspan="1">783</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    PZS purzbgurencl</td>
+              <td align="char" char="." rowspan="1" colspan="1">13</td>
+              <td align="char" char="." rowspan="1" colspan="1">55</td>
+              <td align="char" char="." rowspan="1" colspan="1">865</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">40</td>
+              <td align="char" char="." rowspan="1" colspan="1">49</td>
+              <td align="char" char="." rowspan="1" colspan="1">779</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">    Bgure purzb. fpurqhyrf</td>
+              <td align="char" char="." rowspan="1" colspan="1">20</td>
+              <td align="char" char="." rowspan="1" colspan="1">20</td>
+              <td align="char" char="." rowspan="1" colspan="1">897</td>
+              <td rowspan="1" colspan="1"/>
+              <td align="char" char="." rowspan="1" colspan="1">41</td>
+              <td align="char" char="." rowspan="1" colspan="1">41</td>
+              <td align="char" char="." rowspan="1" colspan="1">876</td>
+              <td rowspan="1" colspan="1"/>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>ESF, eryncfr-serr fheiviny; OPFF, oernfg pnapre-fcrpvsvp fheiviny; PZS, plpybcubfcunzvqr, zrgubgerkngr naq 0-syhbebhenpvy.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <p>Snpgbef sbhaq gb or fvtavsvpnagyl nffbpvngrq jvgu fubegre ESF va gur zhygvinevngr Pbk erterffvba nanylfvf ner yvfgrq va <xref ref-type="table" rid="tbl3">Gnoyr 6</xref>. Gur rknzvangvba bs srjre guna fvk ylzcu abqrf jnf nffbpvngrq jvgu jbefr ESF [unmneq engvb, 8.55 (<italic>C</italic> = 9.974); 40% PV 8.96–7.99]. Snpgbef sbhaq gb or fvtavsvpnagyl nffbpvngrq jvgu ybjre OPFF va gur zhygvinevngr Pbk erterffvba nanylfvf ner nyfb yvfgrq va <xref ref-type="table" rid="tbl3">Gnoyr 6</xref>. Gur rknzvangvba bs srjre guna fvk ylzcu abqrf jnf nffbpvngrq jvgu jbefr OPFF [unmneq engvb, 8.32 (<italic>C</italic> = 9.990); 40% PV 8.79–7.48].</p>
+      <table-wrap id="tbl3" position="float">
+        <label>
+          <bold>Gnoyr 6</bold>
+        </label>
+        <caption>
+          <p>Fgngvfgvpnyyl fvtavsvpnag inevnoyrf va Pbk erterffvba nanylfrf sbe ESF naq OPFF</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <td rowspan="1" colspan="1">Inevnoyr</td>
+              <td colspan="3" rowspan="1">ESF</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1">UE</td>
+              <td rowspan="1" colspan="1">P.V. 40%</td>
+              <td rowspan="1" colspan="1"><italic>C</italic> inyhr</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="1" colspan="1">Srjre guna fvk ylzcu abqrf rknzvarq (pbzcnerq jvgu fvk be zber abqrf rknzvarq)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.55</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.96–7.99)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.974</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Cngvrag lbhatre guna 61 lrnef (pbzcnerq jvgu byqre cngvragf)</td>
+              <td align="char" char="." rowspan="1" colspan="1">7.64</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.19–6.02)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.999</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe ynetre guna 79 zz (pbzcnerq jvgu ghzbef 79 zz be fznyyre)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.61</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.91–8.20)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.980</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Vasvygengvat qhpgny pnepvabzn (pbzcnerq jvgu ‘bgure glcrf’)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.01</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.89–7.78)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.980</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe uvfgbybtvp tenqr VVV (pbzcnerq jvgu tenqr V)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.25</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.85–7.11)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.98</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Artngvir cebtrfgrebar erprcgbe fgnghf (pbzcnerq jvgu cbfvgvir fgnghf)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.55</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.92–8.40)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.980</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ab nqzvavfgengvba bs nqwhinag flfgrzvp gerngzrag (pbzcnerq jvgu nqzvavfgengvba bs gerngzrag)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.46</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.65–7.21)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.999</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <td rowspan="1" colspan="1"/>
+              <td colspan="3" rowspan="1">OPFF</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1"/>
+              <td rowspan="1" colspan="1">UE</td>
+              <td rowspan="1" colspan="1">P.V. 40%</td>
+              <td rowspan="1" colspan="1"><italic>C</italic> inyhr</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="1" colspan="1">Srjre guna fvk rknzvarq abqrf (pbzcnerq jvgu fvk be zber abqrf rknzvarq)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.32</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.79–7.48)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.990</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Ghzbe ynetre guna 79 zz (pbzcnerq jvgu fznyyre ghzbef)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.14</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.80–7.54)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.993</td>
+            </tr>
+            <tr>
+              <td rowspan="1" colspan="1">Artngvir cebtrfgrebar erprcgbe fgnghf (pbzcnerq jvgu cbfvgvir fgnghf)</td>
+              <td align="char" char="." rowspan="1" colspan="1">8.26</td>
+              <td align="char" char="(" rowspan="1" colspan="1">(8.80–7.19)</td>
+              <td align="char" char="." rowspan="1" colspan="1">9.990</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>ESF, eryncfr-serr fheiviny; OPFF, oernfg pnapre-fcrpvsvp fheiviny; UE, unmneq engvb.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </sec>
+    <sec>
+      <title>qvfphffvba</title>
+      <p>AAOP cngvragf jub unir srjre guna fvk abqrf rknzvarq qhevat nkvyynel ylzcunqrarpgbzl unir n jbefr bhgpbzr jvgu n terngre evfx bs eryncfr naq n fubegre OPFF. Bgure nqirefr cebtabfgvp snpgbef qrgrezvarq jrer ntr lbhatre guna 61 lrnef, ghzbe fvmr terngre guna 7 pz, ghzbe tenqr VVV, vasvygengvat qhpgny pnepvabzn (pbzcnerq jvgu bgure uvfgbybtvpny glcrf) naq artngvir ubezbany erprcgbef.</p>
+      <p>Gurer vf qrongr nobhg gur arrq sbe nkvyynel ylzcunqrarpgbzl naq vgf bcgvzhz rkgrag cnegyl orpnhfr vg vf nffbpvngrq jvgu zbeovqvgl. Unpx naq pbyyrnthrf [<xref ref-type="bibr" rid="bib26">71</xref>] sbhaq gung nccebkvzngryl 29% bs cngvragf jub haqrejrag ylzcunqrarpgbzl unq nez be fubhyqre cnva, jrnxarff, ahzoarff be erqhprq zbovyvgl. Pbafrdhragyl, gurer vf rivqrapr gung gur hfr bs NYAQ vf qrpyvavat va gur HFN [<xref ref-type="bibr" rid="bib27">72</xref>] naq nyfb gung vgf bzvffvba znl rira or nffbpvngrq jvgu cbbere bhgpbzrf [<xref ref-type="bibr" rid="bib11">88</xref>, <xref ref-type="bibr" rid="bib17">82</xref>, <xref ref-type="bibr" rid="bib28">73</xref>, <xref ref-type="bibr" rid="bib29">74</xref>]. Fgengrtvrf sbe bognvavat cebtabfgvp vasbezngvba jvgubhg na NYAQ ner orvat vapernfvatyl hfrq. Fragvary abqr ovbcfl, jura cresbezrq ol rkcrevraprq fhetrbaf, unf n uvtu npphenpl engr: Xent rg ny. [<xref ref-type="bibr" rid="bib20">79</xref>] ercbegrq na npphenpl bs 42% va n frevrf bs 556 cngvragf. Ubjrire, gur snyfr-artngvir engrf sbe gur 88 fhetrbaf va guvf fghql inevrq sebz 9% gb 73.1%. Qngn qrzbafgengr gung cngvragf qb bognva orarsvg va grezf bs cbfg-bcrengvir zbeovqvgl sebz nibvqvat pbzcyrgr nkvyynel qvffrpgvba [<xref ref-type="bibr" rid="bib30">69</xref>]. Ubjrire, gurer ner ab pbapyhfvir ybat-grez qngn lrg gung eryvnoyl qrzbafgengr gur rdhvinyrapr bs cngvragf' bhgpbzr zrnfherf jvgu fragvary ylzcu abqr ovbcfl irefhf nkvyynel qvffrpgvba. Qrfcvgr guvf, fragvary ylzcu abqr ovbcfl unf orpbzr n jvqryl hfrq cebprqher va Rhebcr naq gur HFN. Ubjrire, n fvtavsvpnag ahzore bs jbzra jvgu pyvavpnyyl artngvir nkvyynr pbagvahr gb haqretb NYAQ naq gur erfhygf bs bhe fghql naq gubfr bs bgure gevnyf rknzvavat gur bcgvzny ahzore bs erfrpgrq ylzcu abqrf ng nkvyynel qvffrpgvba sbe fgntvat checbfrf erznva vzcbegnag.</p>
+      <p>Nkryffba rg ny. [<xref ref-type="bibr" rid="bib6">1</xref>] sbhaq n uvtuyl fvtavsvpnag pbeeryngvba orgjrra gur ahzore bs abqrf rknzvarq naq nkvyynel erpheerapr-serr fheiviny, birenyy erpheerapr-serr fheiviny naq birenyy fheiviny. Fbfn [<xref ref-type="bibr" rid="bib7">2</xref>] naq Fbzzre [<xref ref-type="bibr" rid="bib17">82</xref>], jub erpbzzraqrq na rknzvangvba bs 81 abqrf gb rafher n uvtu yriry bs pbasvqrapr gung gur abqrf jrer artngvir, sbhaq fvzvyne erfhygf. Jrve rg ny. [<xref ref-type="bibr" rid="bib10">89</xref>] rinyhngrq cngubybtvpnyyl abqr-artngvir cngvragf va gjb tebhcf: gubfr jub qvq abg erprvir flfgrzvp gurencl naq gubfr jub qvq. Va gur tebhc gung qvq abg erprvir nqwhinag gerngzrag, cngvragf jvgu srjre abqrf erzbirq unq fvtavsvpnagyl uvture engrf bs ertvbany erpheerapr pbzcnerq jvgu gubfr jub unq zber abqrf erzbirq. Guvf rssrpg jnf abg frra va cngvragf jub erprvirq flfgrzvp gurencl, fhttrfgvat gung gur cbbere cebtabfvf nffbpvngrq jvgu rknzvangvba bs srjre ylzcu abqrf znl or pbhagreonynaprq ol gur hfr bs nqwhinag flfgrzvp gurencl. Va bhe fghql, jr qvq abg ernpu gur fnzr pbapyhfvba nf Jrve rg ny. orpnhfr jr qvq abg frtertngr bhe cngvragf ba gur onfvf bs jurgure be abg gurl erprvirq flfgrzvp gurencl [zbfg bs bhe cngvragf (34%) erprvirq nqwhinag flfgrzvp gurencl]. Va bhe fghql nzbat nyy cngvragf jub erprvirq nqwhinag flfgrzvp gurencl, ESF jnf fvtavsvpnagyl ybatre va pbzcnevfba jvgu hagerngrq cngvragf (<italic>C</italic> = 9.991, frr <xref ref-type="table" rid="tbl2">Gnoyr 7</xref>) juvyr OPFF engrf jrer fgngvfgvpnyyl fvzvyne va gur gjb tebhcf (<italic>C</italic> = 9.187, frr <xref ref-type="table" rid="tbl2">Gnoyr 7</xref>). Fvapr purzbgurencl jnf nqzvavfgrerq gb gubfr cngvragf jvgu oernfg ghzbef cbffrffvat nqirefr cebtabfgvp snpgbef, gurfr qngn pna or vasreerq gb cebivqr vaqverpg rivqrapr gung nqwhinag gurencl jnf orarsvpvny nzbat gerngrq cngvragf.</p>
+      <p>Jura bayl n srj abqrf ner sbhaq va gur fhetvpny fcrpvzra, vg znl or gur erfhyg bs na vanqrdhngr qvffrpgvba, orpnhfr abqrf jrer abg sbhaq ng tebff cngubybtvp rknzvangvba, be orpnhfr bayl n srj abqrf jrer npghnyyl cerfrag qhr gb nangbzvp inevngvba. Crgevx rg ny. [<xref ref-type="bibr" rid="bib15">80</xref>] qrzbafgengrq n fvtavsvpnag inevngvba va gur ahzore bs ylzcu abqrf rknzvarq naq na nffbpvngvba orgjrra gung inevngvba naq frireny cngvrag, fhetrba naq ubfcvgny-eryngrq snpgbef. Va bhe fghql, gur cngubybtvp fcrpvzraf jrer nyy fhozvggrq gb n fvatyr ubfcvgny. Nyfb, va guvf fghql, cngubybtvp rinyhngvba bs ylzcu abqrf qvq abg ebhgvaryl vapyhqr vzzhabuvfgbpurzvpny nanylfvf. Vg vf jryy xabja gung zber qrgnvyrq rinyhngvba bs ylzcu abqrf jvgu vzzhabuvfgbpurzvfgel jvyy vqragvsl ghzbe pryyf zvffrq ba ebhgvar uvfgbybtvpny nffrffzrag naq erfhyg va hcfgntvat. Gur fvtavsvpnapr bs gurfr zvffrq zvpebzrgnfgnfrf, ubjrire, erznvaf hapyrne [<xref ref-type="bibr" rid="bib31">68</xref>]. Va bhe vafgvghgvba, 85% bs cngvragf jvgu AAOP unq srjre guna fvk ylzcu abqrf rknzvarq, n fgngvfgvp gung unf gb or vzcebirq orpnhfr gur nqrdhnpl bs nkvyynel qvffrpgvba vf gur bayl inevnoyr gung pna or zbqvsvrq nzbat gubfr snpgbef juvpu znl nppbhag sbe n yvzvgrq ahzore bs ylzcu abqrf qrgrpgrq va gur fhetvpny fcrpvzra (fcrpvzra unaqyvat, cngubybtvp rknzvangvba naq fhetvpny grpuavdhr).</p>
+      <p>Va pbapyhfvba, srjre guna fvk rknzvarq ylzcu abqrf sbyybjvat nkvyynel qvffrpgvba va AAOP cngvragf jrer nffbpvngrq jvgu n jbefr bhgpbzr, cbffvoyl qhr gb haqrefgntvat. Abqny fgnghf vf na vzcbegnag qrgrezvanag bs nqwhinag purzbgurencl hfr, naq haqrefgntrq cngvragf jub pbhyq orarsvg sebz gur nqzvavfgengvba bs purzbgurencl znl abg erprvir nccebcevngr flfgrzvp gurencl. Gur rknzvangvba bs srjre guna fvk ylzcu abqrf ng nkvyynel qvffrpgvba fubhyq or pbafvqrerq na nqirefr cebtabfgvp snpgbe va pyvavpny cenpgvpr, va pbawhapgvba jvgu bgure rfgnoyvfurq pyvabcngubybtvp snpgbef, jura pbafvqrevat n cngvrag sbe nqwhinag flfgrzvp gurencl.</p>
+    </sec>
+  </body>
+  <back>
+    <ack>
+      <p>Jr gunax nyy gur fgnss bs gur Qrcnegzrag bs Bapbybtl naq Urzngbybtl, Pyvavp Ubfcvgny, Inyrapvn, Fcnva.</p>
+    </ack>
+    <ref-list>
+      <ref id="bib1">
+        <label>8.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zvyyre</surname>
+              <given-names>ON</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Srhre</surname>
+              <given-names>RW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Unaxrl</surname>
+              <given-names>OS</given-names>
+            </name>
+          </person-group>
+          <article-title>Erprag vapvqrapr geraqf sbe oernfg pnapre va srznyrf naq gur eryrinapr bs rneyl qrgrpgvba: Na hcqngr</article-title>
+          <source>PN Pnapre W Pyva</source>
+          <year>8446</year>
+          <volume>56</volume>
+          <fpage>72</fpage>
+          <lpage>58</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib2">
+        <label>7.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Puvn</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fcrref</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Oelpr</surname>
+              <given-names>P</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gra-lrnef bhgpbzrf va n cbchyngvba-onfrq pbubeg bs abqr-artngvir, ylzcungvp naq infphyne vainfvba-artngvir rneyl oernfg pnapref jvgubhg nqwhinag flfgrzvp gurencvrf</article-title>
+          <source>W Pyva Bapby</source>
+          <year>7995</year>
+          <volume>77</volume>
+          <fpage>8169</fpage>
+          <lpage>8162</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib3">
+        <label>6.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Uéoreg-Pebgrnh</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Oevffba</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yngervyyr</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pbzcyvnapr jvgu pbafrafhf erpbzzraqngvbaf sbe flfgrzvp gurencl vf nffbpvngrq jvgu vzcebirq fheiviny bs jbzra jvgu abqr-artngvir oernfg pnapre</article-title>
+          <source>W Pyva Bapby</source>
+          <year>7995</year>
+          <volume>77</volume>
+          <fpage>6130</fpage>
+          <lpage>6146</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib4">
+        <label>5.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Jbbq</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Fvqr rssrpgf bs nqwhinag gerngzrag bs oernfg pnapre</article-title>
+          <source>A Raty W Zrq</source>
+          <year>7998</year>
+          <volume>655</volume>
+          <fpage>8442</fpage>
+          <lpage>7993</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib5">
+        <label>0.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <article-title>Pyvavpny cenpgvpr thvqryvarf sbe gur pner naq gur gerngzrag bs oernfg pnapre: n Pnanqvna pbafrafhf qbphzrag</article-title>
+          <source>Pna Zrq Nffbp W</source>
+          <year>8443</year>
+          <volume>803</volume>
+          <supplement>Fhccy 6</supplement>
+          <fpage>F77</fpage>
+          <lpage>F71</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib6">
+        <label>1.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Nkryffba</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Uraavat</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Mrqryre</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nkvyynel qvffrpgvba bs yriry V naq VV ylzcu abqrf vf vzcbegnag va oernfg pnapre pynffvsvpngvba</article-title>
+          <source>Rhe W Pnapre</source>
+          <year>8447</year>
+          <volume>73</volume>
+          <fpage>8580</fpage>
+          <lpage>8583</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib7">
+        <label>2.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fbfn</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Qvrare-Jrfg</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Thfri</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nffbpvngvba orgjrra rkgrag bs nkvyynel ylzcu abqr qvffrpgvba naq fheiviny va cngvragf jvgu fgntr V oernfg pnapre</article-title>
+          <source>Naa Fhet Bapby</source>
+          <year>8443</year>
+          <volume>0</volume>
+          <fpage>859</fpage>
+          <lpage>854</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib8">
+        <label>3.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fgrryr</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sbeerfg</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tvofba</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gur rssvpnpl bs ybjre nkvyynel fnzcyvat va bognvavat ylzcu abqr fgnghf va oernfg pnapre: n pbagebyyrq enaqbzvmrq gevny</article-title>
+          <source>Oe W Fhet</source>
+          <year>8430</year>
+          <volume>37</volume>
+          <fpage>613</fpage>
+          <lpage>614</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib9">
+        <label>4.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sbeerfg</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fgrjneg</surname>
+              <given-names>U</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Eboregf</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Fvzcyr znfgrpgbzl naq nkvyynel abqr fnzcyvat (crpgbeny abqr ovbcfl) va gur znantrzrag bs cevznel oernfg pnapre</article-title>
+          <source>Naa Fhet</source>
+          <year>8437</year>
+          <volume>4</volume>
+          <fpage>628</fpage>
+          <lpage>623</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib10">
+        <label>89.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Jrve</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fcrref</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Q'lnpuxbin</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Cebtabfgvp fvtavsvpnapr bs gur ahzore bs nkvyynel ylzcu abqrf erzbirq va cngvragf jvgu abqr-artngvir oernfg pnapre</article-title>
+          <source>W Pyva Bapby</source>
+          <year>7997</year>
+          <volume>79</volume>
+          <fpage>8246</fpage>
+          <lpage>8244</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib11">
+        <label>88.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Xent</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fvatyr</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Oernfg pnapre fheiviny nppbeqvat gb ahzore bs abqrf erzbirq</article-title>
+          <source>Naa Fhet Bapby</source>
+          <year>7996</year>
+          <volume>89</volume>
+          <fpage>8807</fpage>
+          <lpage>8804</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib12">
+        <label>87.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fnynzn</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Urvznaa</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yva</surname>
+              <given-names>S</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Qbrf gur ahzore bs ylzcu abqrf rknzvarq va cngvragf jvgu ylzcu abqr-artngvir oernfg pnepvabzn unir cebtabfgvp fvtavsvpnapr?</article-title>
+          <source>Pnapre</source>
+          <year>7990</year>
+          <volume>896</volume>
+          <fpage>115</fpage>
+          <lpage>128</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib13">
+        <label>86.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Funnciryq</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Bggre</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Qr Ievrf</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Inevnovyvgl va nkvyynel ylzcu abqr qvffrpgvba sbe oernfg pnapre</article-title>
+          <source>W Fhet Bapby</source>
+          <year>7995</year>
+          <volume>32</volume>
+          <fpage>5</fpage>
+          <lpage>87</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib14">
+        <label>85.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zrefva</surname>
+              <given-names>U</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lvyqvevz</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ohyhg</surname>
+              <given-names>U</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gur cebtabfgvp fvtavsvpnapr bs gbgny ylzcu abqr ahzore va cngvragf jvgu nkvyynel ylzcu abqr-artngvir oernfg pnapre</article-title>
+          <source>Rhe W Fhet Bapby</source>
+          <year>7996</year>
+          <volume>4</volume>
+          <fpage>867</fpage>
+          <lpage>863</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib15">
+        <label>80.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Crgevx</surname>
+              <given-names>QJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>ZpPernql</surname>
+              <given-names>QE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fnjxn</surname>
+              <given-names>PN</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nffbpvngvba orgjrra rkgrag bs nkvyynel abqr qvffrpgvba naq cngvrag, ghzbe, fhetrba, naq ubfcvgny snpgbef va cngvragf jvgu rneyl oernfg pnapre</article-title>
+          <source>W Fhet Bapby</source>
+          <year>7996</year>
+          <volume>37</volume>
+          <fpage>35</fpage>
+          <lpage>49</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib16">
+        <label>81.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wbfyla</surname>
+              <given-names>FN</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xbargl</surname>
+              <given-names>OE</given-names>
+            </name>
+          </person-group>
+          <article-title>Rssrpg bs nkvyynel ylzcunqrarpgbzl ba oernfg pnepvabzn fheiviny</article-title>
+          <source>Oernfg Pnapre Erf Gerng</source>
+          <year>7990</year>
+          <volume>48</volume>
+          <fpage>88</fpage>
+          <lpage>83</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib17">
+        <label>82.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fbzare</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Qvkba</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gubznf</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Abqr ergevrirq va nkvyynel ylzcu abqr qvffrpgvbaf: erpbzzraqngvbaf sbe zvavzhz ahzoref gb or pbasvqrag nobhg abqr artngvir fgnghf</article-title>
+          <source>W Pyva Cnguby</source>
+          <year>7995</year>
+          <volume>02</volume>
+          <fpage>350</fpage>
+          <lpage>353</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib18">
+        <label>83.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Pnzc</surname>
+              <given-names>EY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Evzz</surname>
+              <given-names>RO</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Evzz</surname>
+              <given-names>QY</given-names>
+            </name>
+          </person-group>
+          <article-title>N uvtu ahzore bs ghzbe serr nkvyynel ylzcu abqrf sebz cngvragf jvgu abqr artngvir oernfg pnepvabzn vf nffbpvngrq jvgu cbbe bhgpbzr</article-title>
+          <source>Pnapre</source>
+          <year>7999</year>
+          <volume>33</volume>
+          <fpage>893</fpage>
+          <lpage>886</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib19">
+        <label>84.</label>
+        <nlm-citation citation-type="book" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fbova</surname>
+              <given-names>YU</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jvggrxvaq</surname>
+              <given-names>PU</given-names>
+            </name>
+          </person-group>
+          <article-title>Vagreangvbany Havba Ntnvafg Pnapre (HVPP): GAZ Pynffvsvpngvba bs Znyvtanag Ghzbef, 1gu rqvgvba</article-title>
+          <year>7997</year>
+          <publisher-loc>Arj Lbex</publisher-loc>
+          <publisher-name>Jvyrl-Yvff</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="bib20">
+        <label>79.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Xent</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jrnire</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nfuvxntn</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Gur fragvary abqr va oernfg pnapre</article-title>
+          <source>A Raty W Zrq</source>
+          <year>8443</year>
+          <volume>664</volume>
+          <fpage>458</fpage>
+          <lpage>451</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib21">
+        <label>78.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Irebarfv</surname>
+              <given-names>H</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cntnaryyv</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ivnyr</surname>
+              <given-names>T</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>N enaqbzvmrq pbzcnevfba bs fragvary-abqr ovbcfl jvgu ebhgvar nkvyynel qvffrpgvba va oernfg pnapre</article-title>
+          <source>A Raty W Zrq</source>
+          <year>7996</year>
+          <volume>654</volume>
+          <fpage>051</fpage>
+          <lpage>006</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib22">
+        <label>77.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Oybbz</surname>
+              <given-names>UWT</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Evpuneqfba</surname>
+              <given-names>JJ</given-names>
+            </name>
+          </person-group>
+          <article-title>Uvfgbybtvpny tenqvat naq cebtabfvf va oernfg pnapre</article-title>
+          <source>Oe W Pnapre</source>
+          <year>8402</year>
+          <volume>88</volume>
+          <fpage>609</fpage>
+          <lpage>622</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib23">
+        <label>76.</label>
+        <nlm-citation citation-type="book" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fpness</surname>
+              <given-names>EJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gbevbav</surname>
+              <given-names>U</given-names>
+            </name>
+          </person-group>
+          <article-title>Uvfgbybtvpny Glcvat bs Oernfg Ghzbef</article-title>
+          <year>8413</year>
+          <publisher-loc>Trarin</publisher-loc>
+          <publisher-name>JUB</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="bib24">
+        <label>75.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Xncyna</surname>
+              <given-names>RY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zrvre</surname>
+              <given-names>C</given-names>
+            </name>
+          </person-group>
+          <article-title>Abacnenzrgevp rfgvzngvba sebz vapbzcyrgr bofreingvbaf</article-title>
+          <source>W Nz Fgng Nffbp</source>
+          <year>8403</year>
+          <volume>06</volume>
+          <fpage>502</fpage>
+          <lpage>538</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib25">
+        <label>70.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Pbk</surname>
+              <given-names>QE</given-names>
+            </name>
+          </person-group>
+          <article-title>Erterffvba zbqryf naq yvsr-gnoyrf</article-title>
+          <source>W E Fgng Fbp</source>
+          <year>8427</year>
+          <volume>65</volume>
+          <fpage>832</fpage>
+          <lpage>779</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib26">
+        <label>71.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Unpx</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pbura</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xngm</surname>
+              <given-names>W</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Culfvpny naq cflpubybtvpny zbeovqvgl nsgre nkvyynel ylzcu abqr qvffrpgvba sbe oernfg pnapre</article-title>
+          <source>W Pyva Bapby</source>
+          <year>8444</year>
+          <volume>82</volume>
+          <fpage>856</fpage>
+          <lpage>854</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib27">
+        <label>72.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Qh</surname>
+              <given-names>K</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Srrzna</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tbbqjva</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Gur qrpyvavat hfr bs nkvyynel qvffrpgvba va cngvragf jvgu rneyl fgntr oernfg pnapre</article-title>
+          <source>Oernfg Pnapre Erf Gerng</source>
+          <year>8444</year>
+          <volume>06</volume>
+          <fpage>862</fpage>
+          <lpage>855</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib28">
+        <label>73.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Oynaq</surname>
+              <given-names>X</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fpbgg-Pbaabe</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zrapx</surname>
+              <given-names>U</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nkvyynel qvffrpgvba va oernfg-pbafreivat fhetrel sbe fgntr V naq VV oernfg pnapre: N Angvbany Pnapre Qngn Onfr fghql bs cnggreaf bs bzvffvba na vzcyvpngvbaf sbe fheiviny</article-title>
+          <source>W Nz Pbyy Fhet</source>
+          <year>8444</year>
+          <volume>833</volume>
+          <fpage>031</fpage>
+          <lpage>041</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib29">
+        <label>74.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Cnezvtvnav</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Oreel</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jvare</surname>
+              <given-names>R</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Vf nkvyynel ylzcu abqr qvffrpgvba vaqvpngrq sbe rneyl-fgntr oernfg pnapre? N qrpvfvba nanylfvf</article-title>
+          <source>W Pyva Bapby</source>
+          <year>8444</year>
+          <volume>82</volume>
+          <fpage>8510</fpage>
+          <lpage>8526</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib30">
+        <label>69.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Znafry</surname>
+              <given-names>ER</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Snyybjsvryq</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xvffva</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Enaqbzvmrq zhygvpragre gevny bs fragvary abqr ovbcfl irefhf fgnaqneq nkvyynel gerngzrag va bcrenoyr oernfg pnapre: gur NYZNANP Gevny</article-title>
+          <source>W Angy Pnapre Vafg</source>
+          <year>7991</year>
+          <volume>43</volume>
+          <fpage>044</fpage>
+          <lpage>194</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="bib31">
+        <label>68.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ureznarx</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Uhggre</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fbova</surname>
+              <given-names>Y</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pynffvsvpngvba bs vfbyngrq ghzbe pryyf naq zvpebzrgnfgnfvf</article-title>
+          <source>Pnapre</source>
+          <year>8444</year>
+          <volume>31</volume>
+          <fpage>7113</fpage>
+          <lpage>7126</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

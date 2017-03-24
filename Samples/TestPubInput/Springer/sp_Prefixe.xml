@@ -1,89 +1,85 @@
+<?xml version="1.0"?>
 <Publisher>
     <PublisherInfo>
-        <PublisherName>Springer-Verlag</PublisherName>
-        <PublisherLocation>Berlin/Heidelberg</PublisherLocation>
+        <PublisherName>Fcevatre-Ireynt</PublisherName>
+        <PublisherLocation>Oreyva/Urvqryoret</PublisherLocation>
     </PublisherInfo>
     <Journal OutputMedium="All">
         <JournalInfo JournalProductType="Magazine" NumberingStyle="Unnumbered">
-            <JournalID>108</JournalID>
-            <JournalPrintISSN>0020-9554</JournalPrintISSN>
-            <JournalElectronicISSN>1432-1289</JournalElectronicISSN>
-            <JournalTitle>Der Internist</JournalTitle>
-            <JournalSubTitle>Organ des Berufsverbandes Deutscher InternistenOrgan der Deutschen
-                Gesellschaft f&#252;r Innere Medizin</JournalSubTitle>
-            <JournalAbbreviatedTitle>Internist</JournalAbbreviatedTitle>
+            <JournalID>893</JournalID>
+            <JournalPrintISSN>9979-4005</JournalPrintISSN>
+            <JournalElectronicISSN>8567-8734</JournalElectronicISSN>
+            <JournalTitle>Qre Vagreavfg</JournalTitle>
+            <JournalSubTitle>Betna qrf Orehsfireonaqrf Qrhgfpure VagreavfgraBetna qre Qrhgfpura
+                Trfryyfpunsg süe Vaarer Zrqvmva</JournalSubTitle>
+            <JournalAbbreviatedTitle>Vagreavfg</JournalAbbreviatedTitle>
             <JournalSubjectGroup>
-                <JournalSubject Code="H" Type="Primary">Medicine &amp; Public
-                    Health</JournalSubject>
-                <JournalSubject Code="H33002" Priority="1" Type="Secondary">Internal
-                    Medicine</JournalSubject>
-                <JournalSubject Code="H24003" Priority="2" Type="Secondary">General Practice /
-                    Family Medicine</JournalSubject>
-                <JournalSubject Code="H33037" Priority="3" Type="Secondary"
-                    >Cardiology</JournalSubject>
-                <JournalSubject Code="H33061" Priority="4" Type="Secondary"
-                    >Gastroenterology</JournalSubject>
-                <JournalSubject Code="H33088" Priority="5" Type="Secondary"
-                    >Hepatology</JournalSubject>
-                <JournalSubject Code="H33126" Priority="6" Type="Secondary"
-                    >Nephrology</JournalSubject>
+                <JournalSubject Code="H" Type="Primary">Zrqvpvar &amp; Choyvp
+                    Urnygu</JournalSubject>
+                <JournalSubject Code="H33002" Priority="1" Type="Secondary">Vagreany
+                    Zrqvpvar</JournalSubject>
+                <JournalSubject Code="H24003" Priority="2" Type="Secondary">Trareny Cenpgvpr /
+                    Snzvyl Zrqvpvar</JournalSubject>
+                <JournalSubject Code="H33037" Priority="3" Type="Secondary">Pneqvbybtl</JournalSubject>
+                <JournalSubject Code="H33061" Priority="4" Type="Secondary">Tnfgebragrebybtl</JournalSubject>
+                <JournalSubject Code="H33088" Priority="5" Type="Secondary">Urcngbybtl</JournalSubject>
+                <JournalSubject Code="H33126" Priority="6" Type="Secondary">Arcuebybtl</JournalSubject>
             </JournalSubjectGroup>
         </JournalInfo>
         <Volume OutputMedium="All">
             <VolumeInfo TocLevels="0" VolumeType="Regular">
-                <VolumeIDStart>51</VolumeIDStart>
-                <VolumeIDEnd>51</VolumeIDEnd>
-                <VolumeIssueCount>12</VolumeIssueCount>
+                <VolumeIDStart>08</VolumeIDStart>
+                <VolumeIDEnd>08</VolumeIDEnd>
+                <VolumeIssueCount>87</VolumeIssueCount>
             </VolumeInfo>
             <Issue IssueType="Regular" OutputMedium="All">
                 <IssueInfo IssueType="Regular" TocLevels="0">
-                    <IssueIDStart>9</IssueIDStart>
-                    <IssueIDEnd>9</IssueIDEnd>
-                    <IssueArticleCount>15</IssueArticleCount>
+                    <IssueIDStart>4</IssueIDStart>
+                    <IssueIDEnd>4</IssueIDEnd>
+                    <IssueArticleCount>80</IssueArticleCount>
                     <IssueHistory>
                         <OnlineDate>
-                            <Year>2010</Year>
-                            <Month>9</Month>
-                            <Day>17</Day>
+                            <Year>7989</Year>
+                            <Month>4</Month>
+                            <Day>82</Day>
                         </OnlineDate>
                         <CoverDate>
-                            <Year>2010</Year>
-                            <Month>9</Month>
+                            <Year>7989</Year>
+                            <Month>4</Month>
                         </CoverDate>
-                        <PricelistYear>2010</PricelistYear>
+                        <PricelistYear>7989</PricelistYear>
                     </IssueHistory>
                     <IssueCopyright>
-                        <CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
-                        <CopyrightYear>2010</CopyrightYear>
+                        <CopyrightHolderName>Fcevatre-Ireynt</CopyrightHolderName>
+                        <CopyrightYear>7989</CopyrightYear>
                     </IssueCopyright>
                 </IssueInfo>
                 <Article ID="s00108-010-2596-3" OutputMedium="All">
-                    <ArticleInfo ArticleCitation="ArticleFirstPage" ArticleType="OriginalPaper"
-                        ContainsESM="No" Language="De" NumberingStyle="Unnumbered" TocLevels="0">
-                        <ArticleID>2596</ArticleID>
-                        <ArticleDOI>10.1007/s00108-010-2596-3</ArticleDOI>
-                        <ArticleSequenceNumber>4</ArticleSequenceNumber>
-                        <ArticleTitle Language="De">Angeborene
-                            Thrombozytenfunktionsst&#246;rungen</ArticleTitle>
-                        <ArticleTitle Language="En">Congenital thrombocytopathies</ArticleTitle>
-                        <ArticleCategory>Schwerpunkt</ArticleCategory>
-                        <ArticleFirstPage>1109</ArticleFirstPage>
-                        <ArticleLastPage>1117</ArticleLastPage>
+                    <ArticleInfo ArticleCitation="ArticleFirstPage" ArticleType="OriginalPaper" ContainsESM="No" Language="De" NumberingStyle="Unnumbered" TocLevels="0">
+                        <ArticleID>7041</ArticleID>
+                        <ArticleDOI>89.8992/f99893-989-7041-6</ArticleDOI>
+                        <ArticleSequenceNumber>5</ArticleSequenceNumber>
+                        <ArticleTitle Language="De">Natroberar
+                            Guebzobmlgrashaxgvbaffgöehatra</ArticleTitle>
+                        <ArticleTitle Language="En">Pbatravgny guebzobplgbcnguvrf</ArticleTitle>
+                        <ArticleCategory>Fpujrechaxg</ArticleCategory>
+                        <ArticleFirstPage>8894</ArticleFirstPage>
+                        <ArticleLastPage>8882</ArticleLastPage>
                         <ArticleHistory>
                             <RegistrationDate>
-                                <Year>2010</Year>
-                                <Month>2</Month>
-                                <Day>9</Day>
+                                <Year>7989</Year>
+                                <Month>7</Month>
+                                <Day>4</Day>
                             </RegistrationDate>
                             <OnlineDate>
-                                <Year>2010</Year>
-                                <Month>8</Month>
-                                <Day>21</Day>
+                                <Year>7989</Year>
+                                <Month>3</Month>
+                                <Day>78</Day>
                             </OnlineDate>
                         </ArticleHistory>
                         <ArticleCopyright>
-                            <CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
-                            <CopyrightYear>2010</CopyrightYear>
+                            <CopyrightHolderName>Fcevatre-Ireynt</CopyrightHolderName>
+                            <CopyrightYear>7989</CopyrightYear>
                         </ArticleCopyright>
                         <ArticleGrants Type="Regular">
                             <MetadataGrant Grant="OpenAccess"/>
@@ -96,22 +92,21 @@
                     </ArticleInfo>
                     <ArticleHeader>
                         <AuthorGroup>
-                            <Author AffiliationIDS="Aff1_2596"
-                                CorrespondingAffiliationID="Aff1_2596">
+                            <Author AffiliationIDS="Aff1_2596" CorrespondingAffiliationID="Aff1_2596">
                                 <AuthorName DisplayOrder="Western">
-                                    <Prefix>PD Dr.</Prefix>
-                                    <GivenName>C.M.</GivenName>
-                                    <FamilyName>Kirchmaier</FamilyName>
+                                    <Prefix>CQ Qe.</Prefix>
+                                    <GivenName>P.Z.</GivenName>
+                                    <FamilyName>Xvepuznvre</FamilyName>
                                 </AuthorName>
                                 <Contact>
-                                    <Email>kirchmaier.hst@dkd-wiesbaden.de</Email>
+                                    <Email>xvepuznvre.ufg@qxq-jvrfonqra.qr</Email>
                                 </Contact>
                                 <Biography>
                                     <FormalPara RenderingStyle="Style1">
-                                        <Heading>PD Dr. C.M. Kirchmaier </Heading>
+                                        <Heading>CQ Qe. P.Z. Xvepuznvre </Heading>
                                         <Para>
                                             <Figure Category="Standard" Float="No" ID="Figa_2596">
-                                                <MediaObject>[IMAGE]</MediaObject>
+                                                <MediaObject>[VZNTR]</MediaObject>
                                             </Figure>
                                         </Para>
                                     </FormalPara>
@@ -119,63 +114,63 @@
                             </Author>
                             <Author AffiliationIDS="Aff1_2596">
                                 <AuthorName DisplayOrder="Western">
-                                    <GivenName>D.</GivenName>
-                                    <FamilyName>Pillitteri</FamilyName>
+                                    <GivenName>Q.</GivenName>
+                                    <FamilyName>Cvyyvggrev</FamilyName>
                                 </AuthorName>
                             </Author>
                             <Affiliation ID="Aff1_2596">
-                                <OrgDivision>Sektion Innere Medizin I</OrgDivision>
-                                <OrgName>Deutsche Klinik f&#252;r Diagnostik</OrgName>
+                                <OrgDivision>Frxgvba Vaarer Zrqvmva V</OrgDivision>
+                                <OrgName>Qrhgfpur Xyvavx süe Qvntabfgvx</OrgName>
                                 <OrgAddress>
-                                    <Street>Aukammallee 33</Street>
-                                    <Postcode>65191</Postcode>
-                                    <City>Wiesbaden</City>
-                                    <Country>Deutschland</Country>
+                                    <Street>Nhxnzznyyrr 66</Street>
+                                    <Postcode>10848</Postcode>
+                                    <City>Jvrfonqra</City>
+                                    <Country>Qrhgfpuynaq</Country>
                                 </OrgAddress>
                             </Affiliation>
                         </AuthorGroup>
                         <Abstract ID="Abs1" Language="De">
-                            <Heading>Zusammenfassung</Heading>
-                            <Para>Heredit&#228;re St&#246;rungen der Thrombozytenfunktion
-                                f&#252;hren teilweise zu einer schweren Blutungsneigung und werden
-                                oft nicht erkannt. Ihnen liegen unterschiedliche Defekte der
-                                Thrombozyten zugrunde, die auf St&#246;rungen der
-                                Adh&#228;sivit&#228;t, der Thrombozytenrezeptoren,
-                                Freisetzungsst&#246;rungen der Pl&#228;ttcheninhaltstoffe und
-                                Blockaden der Signaltransduktionswege zur&#252;ckzuf&#252;hren sind.
-                                In einigen F&#228;llen sind sie mit einer moderaten
-                                Thrombozytopenie, Riesenpl&#228;ttchen und verschiedenen
-                                Komorbidit&#228;ten vergesellschaftet. In diesem Artikel wird eine
-                                &#220;bersicht &#252;ber die unterschiedlichen Defekte, ihre
-                                Diagnosen und die Behandlungsm&#246;glichkeiten gegeben.</Para>
+                            <Heading>Mhfnzzrasnffhat</Heading>
+                            <Para>Urerqvgäer Fgöehatra qre Guebzobmlgrashaxgvba
+                                süuera grvyjrvfr mh rvare fpujrera Oyhghatfarvthat haq jreqra
+                                bsg avpug rexnaag. Vuara yvrtra hagrefpuvrqyvpur Qrsrxgr qre
+                                Guebzobmlgra mhtehaqr, qvr nhs Fgöehatra qre
+                                Nquäfvivgäg, qre Guebzobmlgraermrcgbera,
+                                Servfrgmhatffgöehatra qre Cyäggpuravaunygfgbssr haq
+                                Oybpxnqra qre Fvtanygenafqhxgvbafjrtr mheüpxmhsüuera fvaq.
+                                Va rvavtra Säyyra fvaq fvr zvg rvare zbqrengra
+                                Guebzobmlgbcravr, Evrfracyäggpura haq irefpuvrqrara
+                                Xbzbeovqvgägra iretrfryyfpunsgrg. Va qvrfrz Negvxry jveq rvar
+                                Üorefvpug üore qvr hagrefpuvrqyvpura Qrsrxgr, vuer
+                                Qvntabfra haq qvr Orunaqyhatfzötyvpuxrvgra trtrora.</Para>
                         </Abstract>
                         <Abstract ID="Abs2" Language="En">
-                            <Heading>Abstract</Heading>
-                            <Para>Inherited thrombocytopathies are much less frequent in comparison
-                                to acquired platelet function disorders. However, congenital
-                                disorders can lead to severe bleeding tendency and are often not
-                                diagnosed. They are induced by different platelet defects based on
-                                disorders of platelet adhesion, receptors, secretion and signal
-                                transduction. In some cases they are associated with
-                                thrombocytopenia, giant platelets and various comorbidities. This
-                                article gives an overview regarding diverse defects, their diagnosis
-                                and treatment options.</Para>
+                            <Heading>Nofgenpg</Heading>
+                            <Para>Vaurevgrq guebzobplgbcnguvrf ner zhpu yrff serdhrag va pbzcnevfba
+                                gb npdhverq cyngryrg shapgvba qvfbeqref. Ubjrire, pbatravgny
+                                qvfbeqref pna yrnq gb frirer oyrrqvat graqrapl naq ner bsgra abg
+                                qvntabfrq. Gurl ner vaqhprq ol qvssrerag cyngryrg qrsrpgf onfrq ba
+                                qvfbeqref bs cyngryrg nqurfvba, erprcgbef, frpergvba naq fvtany
+                                genafqhpgvba. Va fbzr pnfrf gurl ner nffbpvngrq jvgu
+                                guebzobplgbcravn, tvnag cyngryrgf naq inevbhf pbzbeovqvgvrf. Guvf
+                                negvpyr tvirf na bireivrj ertneqvat qvirefr qrsrpgf, gurve qvntabfvf
+                                naq gerngzrag bcgvbaf.</Para>
                         </Abstract>
                         <KeywordGroup Language="De">
-                            <Heading>Schl&#252;sselw&#246;rter</Heading>
-                            <Keyword>Thrombozytopathie</Keyword>
-                            <Keyword>Thrombasthenie Glanzmann</Keyword>
-                            <Keyword>Storage-Pool-Defekt</Keyword>
-                            <Keyword>Riesenpl&#228;ttchen</Keyword>
-                            <Keyword>Pl&#228;ttchenrezeptoren</Keyword>
+                            <Heading>Fpuyüffryjöegre</Heading>
+                            <Keyword>Guebzobmlgbcnguvr</Keyword>
+                            <Keyword>Guebzonfguravr Tynamznaa</Keyword>
+                            <Keyword>Fgbentr-Cbby-Qrsrxg</Keyword>
+                            <Keyword>Evrfracyäggpura</Keyword>
+                            <Keyword>Cyäggpuraermrcgbera</Keyword>
                         </KeywordGroup>
                         <KeywordGroup Language="En">
-                            <Heading>Keywords</Heading>
-                            <Keyword>Thrombocytopathy</Keyword>
-                            <Keyword>Thrombasthenia Glanzmann</Keyword>
-                            <Keyword>Storage pool disease</Keyword>
-                            <Keyword>Giant platelets</Keyword>
-                            <Keyword>Platelet receptors</Keyword>
+                            <Heading>Xrljbeqf</Heading>
+                            <Keyword>Guebzobplgbcngul</Keyword>
+                            <Keyword>Guebzonfguravn Tynamznaa</Keyword>
+                            <Keyword>Fgbentr cbby qvfrnfr</Keyword>
+                            <Keyword>Tvnag cyngryrgf</Keyword>
+                            <Keyword>Cyngryrg erprcgbef</Keyword>
                         </KeywordGroup>
                     </ArticleHeader>
                     <NoBody/>

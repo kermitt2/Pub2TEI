@@ -1,0 +1,1736 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?><converted-article xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="4.5.2" docsubtype="sco" xml:lang="fr"><!--xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns:sb="http://www.elsevier.com/xml/common/dtd"-->
+    <item-info>
+        <jid>CKPV</jid>
+        <aid>36</aid>
+        <ce:pii>F8632-8194(99)99892-4</ce:pii>
+        <ce:doi>89.8981/F8632-8194(99)99892-4</ce:doi>
+        <ce:copyright type="full-transfer" year="2000">Éqvgvbaf fpvragvsvdhrf rg
+            zéqvpnyrf Ryfrivre FNF</ce:copyright>
+    </item-info>
+    <ce:floats>
+        <ce:figure id="SCH1">
+            <ce:label>Fpuézn 8</ce:label>
+            <ce:link locator="sc1"/>
+        </ce:figure>
+        <ce:figure id="SCH2">
+            <ce:label>Fpuézn 7</ce:label>
+            <ce:link locator="sc2"/>
+        </ce:figure>
+        <ce:figure id="SCH3">
+            <ce:label>Fpuézn 6</ce:label>
+            <ce:link locator="sc3"/>
+        </ce:figure>
+        <ce:figure id="SCH4">
+            <ce:label>Fpuézn 5</ce:label>
+            <ce:link locator="sc4"/>
+        </ce:figure>
+        <ce:figure id="FIG1">
+            <ce:label>Svther 8</ce:label>
+            <ce:caption>
+                <ce:simple-para view="all">Fgehpgherf zbyéphynverf qrf vzvarf ceécneérf.
+                    Vn8, o8, o1: E=U<ce:hsp sp="0.25"/>; Vn7, o7, p5<ce:hsp sp="0.25"/>:
+                        E=AB<ce:inf loc="post">7</ce:inf> (<ce:italic>b</ce:italic>)<ce:hsp sp="0.25"/>; Vn6,
+                    o6, o2, p8, p0, p1, p3<ce:hsp sp="0.25"/>: E=AB<ce:inf loc="post">7</ce:inf>
+                        (<ce:italic>z</ce:italic>); Vn5, o5, o3, p7, p6, p2<ce:hsp sp="0.25"/>:
+                        E=AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>); Vn0, o0<ce:hsp sp="0.25"/>: E=Py (<ce:italic>c</ce:italic>).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr1"/>
+        </ce:figure>
+        <ce:figure id="SCH5">
+            <ce:label>Fpuézn 0</ce:label>
+            <ce:caption>
+                <ce:simple-para view="all">Np<ce:inf loc="post">8</ce:inf><ce:hsp sp="0.25"/>: E=AB<ce:inf loc="post">7</ce:inf>
+                        (<ce:italic>z</ce:italic>), Eqg<ce:hsp sp="0.25"/>: 19<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; Np<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>;
+                        E=AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>), Eqg<ce:hsp sp="0.25"/>:
+                        15<ce:hsp sp="0.25"/>%. Np<ce:inf loc="post">3</ce:inf><ce:hsp sp="0.25"/>:
+                        E=AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>), Eqg<ce:hsp sp="0.25"/>:
+                        18<ce:hsp sp="0.25"/>%; Np<ce:inf loc="post">6</ce:inf><ce:hsp sp="0.25"/>;
+                        E=AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>), Eqg<ce:hsp sp="0.25"/>:
+                        12<ce:hsp sp="0.25"/>%.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="sc5"/>
+        </ce:figure>
+        <ce:figure id="SCH6">
+            <ce:label>Fpuézn 1</ce:label>
+            <ce:caption>
+                <ce:simple-para view="all">Np<ce:inf loc="post">5</ce:inf><ce:hsp sp="0.25"/>: E=AB<ce:inf loc="post">7</ce:inf>
+                        (<ce:italic>b</ce:italic>); Np<ce:inf loc="post">0</ce:inf>; E=AB<ce:inf loc="post">7</ce:inf>
+                        (<ce:italic>z</ce:italic>). Np<ce:inf loc="post">1</ce:inf><ce:hsp sp="0.25"/>:
+                        E=AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>); Np<ce:inf loc="post">2</ce:inf>;
+                        E=AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="sc6"/>
+        </ce:figure>
+        <ce:figure id="FIG2">
+            <ce:label>Svther 7</ce:label>
+            <ce:caption>
+                <ce:simple-para view="all">Puebzngbtenzzr qh zéynatr qr
+                    qvnfgéeébvfbzèerf Np<ce:inf loc="post">0</ce:inf>.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr2"/>
+        </ce:figure>
+        <ce:table xmlns="http://www.elsevier.com/xml/common/cals/dtd" xmlns:tb="http://www.elsevier.com/xml/common/table/dtd" id="TBL1" colsep="0" rowsep="0" frame="topbot">
+            <ce:label>Gnoyrnh V</ce:label>
+            <ce:caption>
+                <ce:simple-para view="all">Eraqrzragf puvzvdhrf qrf vzvarf ceécneérf.<display xmlns="http://www.elsevier.com/xml/ja/dtd"><ce:figure>
+                            <ce:link locator="fx1"/></ce:figure></display></ce:simple-para>
+            </ce:caption>
+            <tgroup cols="5">
+                <colspec colname="col1" colsep="0"/>
+                <colspec colname="col2" colsep="0"/>
+                <colspec colname="col3" colsep="0"/>
+                <colspec colname="col4" colsep="0"/>
+                <colspec colname="col5" colsep="0"/>
+                <thead>
+                    <row rowsep="1">
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cebqhvgf</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">E<ce:sup loc="post">8</ce:sup></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">E<ce:sup loc="post">7</ce:sup></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">E<ce:sup loc="post">6</ce:sup></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Eraqrzrag (87<ce:hsp sp="0.25"/>%)</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vn8</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8-Ancu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">49</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vn7</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>b</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8-Ancu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">26</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vn6</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8-Ancu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">22</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vn5</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8-Ancu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">31</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vn0</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Py (<ce:italic>c</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8-Ancu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">33</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vo8</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">37</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vo7</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>b</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">35</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vo6</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">20</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vo5</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">36</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vo0</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Py (<ce:italic>c</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">24</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vo1</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">PU<ce:inf loc="post">6</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">15</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vo2</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">PU<ce:inf loc="post">6</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">29</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vo3</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">PU<ce:inf loc="post">6</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Cu</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">13</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vp8</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">P<ce:inf loc="post">3</ce:inf>U<ce:inf loc="post">80</ce:inf> (E)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">19</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vp7</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">P<ce:inf loc="post">3</ce:inf>U<ce:inf loc="post">80</ce:inf> (E)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">15</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vp6</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">P<ce:inf loc="post">3</ce:inf>U<ce:inf loc="post">80</ce:inf> (F)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">12</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vp5</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>b</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">PU<ce:inf loc="post">6</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">P<ce:inf loc="post">3</ce:inf>U<ce:inf loc="post">80</ce:inf> (F)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">00</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vp0</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">PU<ce:inf loc="post">6</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">P<ce:inf loc="post">3</ce:inf>U<ce:inf loc="post">80</ce:inf> (E)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">03</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vp1</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">PU<ce:inf loc="post">6</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">P<ce:inf loc="post">3</ce:inf>U<ce:inf loc="post">80</ce:inf> (F)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">01</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vp2</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>c</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">PU<ce:inf loc="post">6</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">P<ce:inf loc="post">3</ce:inf>U<ce:inf loc="post">80</ce:inf> (E)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">17</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Vp3</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AB<ce:inf loc="post">7</ce:inf> (<ce:italic>z</ce:italic>)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">U</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">P<ce:inf loc="post">3</ce:inf>U<ce:inf loc="post">80</ce:inf> (F)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">18</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </ce:table>
+        <ce:table xmlns="http://www.elsevier.com/xml/common/cals/dtd" xmlns:tb="http://www.elsevier.com/xml/common/table/dtd" id="TBL2" colsep="0" rowsep="0" frame="topbot">
+            <ce:label>Gnoyrnh VV</ce:label>
+            <ce:caption>
+                <ce:simple-para view="all">Eraqrzragf puvzvdhrf rg enccbegf
+                    qvnfgéeébvfbzéevdhrf.</ce:simple-para>
+            </ce:caption>
+            <tgroup cols="6">
+                <colspec colname="col1" colsep="0"/>
+                <colspec colname="col2" colsep="0"/>
+                <colspec colname="col3" colsep="0"/>
+                <colspec colname="col4" colsep="0"/>
+                <colspec colname="col5" colsep="0"/>
+                <colspec colname="col6" colsep="0"/>
+                <thead>
+                    <row rowsep="1">
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Nzvarf</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Eraqrzrag</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Grzcéengher</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Ntrag qr eéqhpgvba<ce:cross-ref refid="TBLFN1"><ce:sup loc="post">n</ce:sup></ce:cross-ref></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Enccbeg qvnfgéeébvfbzéevdhr</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">r.q<ce:cross-ref refid="TBLFN2"><ce:sup loc="post">o</ce:sup></ce:cross-ref>
+                                (±7<ce:hsp sp="0.25"/>%)</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">03</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">79<ce:hsp sp="0.25"/>°P</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AnOU<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">FF/FE* 29/69</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">59<ce:hsp sp="0.25"/>%</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">0</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">13</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">79<ce:hsp sp="0.25"/>°P</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AnOU<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">EE/EF* 26/72</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">51<ce:hsp sp="0.25"/>%</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">1</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">29</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">79<ce:hsp sp="0.25"/>°P</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AnOU<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">FF/FE* 27/73</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">55<ce:hsp sp="0.25"/>%</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">2</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">22</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">79<ce:hsp sp="0.25"/>°P</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AnOU<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">EE/EF * 11/65</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">67<ce:hsp sp="0.25"/>%</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+            <ce:table-footnote id="TBLFN1">
+                <ce:label>n</ce:label>
+                <ce:note-para>Yrf eéqhpgvbaf bag égé rssrpghérf qnaf yr
+                    zégunaby.</ce:note-para>
+            </ce:table-footnote>
+            <ce:table-footnote id="TBLFN2">
+                <ce:label>o</ce:label>
+                <ce:note-para>pbybaar: UC-0349N pbafgvghér q'har pbybaar pncvyynver qr
+                    ybathrhe 70z, erzcyvr q'har cunfr fgngvbaanver: 0% qvcuéaly/40%
+                    qvzégulycbylfvybknar.</ce:note-para>
+            </ce:table-footnote>
+        </ce:table>
+        <ce:table xmlns="http://www.elsevier.com/xml/common/cals/dtd" xmlns:tb="http://www.elsevier.com/xml/common/table/dtd" id="TBL3" colsep="0" rowsep="0" frame="topbot">
+            <ce:label>Gnoyrnh VVV</ce:label>
+            <ce:caption>
+                <ce:simple-para view="all">Fécnengvba qrf
+                    A-α-zéguly-nely-8-plpyburklyégulynzvarf cne
+                        PCT<ce:cross-ref refid="TBLFN3"><ce:sup loc="post">n</ce:sup></ce:cross-ref>.</ce:simple-para>
+            </ce:caption>
+            <tgroup cols="5">
+                <colspec colname="col1" colsep="0"/>
+                <colspec colname="col2" colsep="0"/>
+                <colspec colname="col3" colsep="0"/>
+                <colspec colname="col4" colsep="0"/>
+                <colspec colname="col5" colsep="0"/>
+                <thead>
+                    <row rowsep="1">
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Pbzcbfé</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Grzcéengher qr yn pbybaar (°P)</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">
+                            <ce:italic>X</ce:italic>
+                            <ce:cross-ref refid="TBLFN4">
+                                <ce:sup loc="post">o</ce:sup>
+                            </ce:cross-ref>
+                        </entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">
+                            <ce:italic>α</ce:italic>
+                            <ce:cross-ref refid="TBLFN5">
+                                <ce:sup loc="post">p</ce:sup>
+                            </ce:cross-ref>
+                        </entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">
+                            <ce:italic>Ef</ce:italic>
+                            <ce:cross-ref refid="TBLFN6">
+                                <ce:sup loc="post">q</ce:sup>
+                            </ce:cross-ref>
+                        </entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">756</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">88,50</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8,986</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8,06</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">0</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">765</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">87,27</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8,975</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">6,56</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">1</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">760</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">87,34</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8,973</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">7,81</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">2</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">759</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">86,61</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8,971</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">7,26</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+            <ce:table-footnote id="TBLFN3">
+                <ce:label>n</ce:label>
+                <ce:note-para>Pbybaar: UC-0349N pbafgvghér q'har pbybaar pncvyynver qr
+                    ybathrhe 70z, erzcyvr q'har cunfr fgngvbaanver qr pbzcbfvgvba 0%
+                    qvcuéaly, 40% qvzégulycbylfvybknar.</ce:note-para>
+            </ce:table-footnote>
+            <ce:table-footnote id="TBLFN4">
+                <ce:label>o</ce:label>
+                <ce:note-para><ce:italic>X</ce:italic>: snpgrhe qr pncnpvgé qr
+                    y'vfbzèer yr cyhf ergrah.</ce:note-para>
+            </ce:table-footnote>
+            <ce:table-footnote id="TBLFN5">
+                <ce:label>p</ce:label>
+                <ce:note-para>snpgrhe qr fécnengvba.</ce:note-para>
+            </ce:table-footnote>
+            <ce:table-footnote id="TBLFN6">
+                <ce:label>q</ce:label>
+                <ce:note-para><ce:italic>Ef</ce:italic>: eéfbyhgvba.</ce:note-para>
+            </ce:table-footnote>
+        </ce:table>
+        <ce:table xmlns="http://www.elsevier.com/xml/common/cals/dtd" xmlns:tb="http://www.elsevier.com/xml/common/table/dtd" id="TBL4" colsep="0" rowsep="0" frame="topbot">
+            <ce:label>Gnoyrnh VI</ce:label>
+            <ce:caption>
+                <ce:simple-para view="all">Yrf enccbegf qvnfgéeébvfbzéevdhrf
+                    qégrezvaéf cne PCT.</ce:simple-para>
+            </ce:caption>
+            <tgroup cols="6">
+                <colspec colname="col1" colsep="0"/>
+                <colspec colname="col2" colsep="0"/>
+                <colspec colname="col3" colsep="0"/>
+                <colspec colname="col4" colsep="0"/>
+                <colspec colname="col5" colsep="0"/>
+                <colspec colname="col6" colsep="0"/>
+                <thead>
+                    <row rowsep="1">
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Nzvarf</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Fbyinag</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Grzcéengher</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Ntrag qr eéqhpgvba</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Enccbeg qvnfgéeébvfbzéevdhr</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">r.q (±7<ce:hsp sp="0.25"/>%)</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">1</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">égunaby</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">79<ce:hsp sp="0.25"/>°P</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AnOU<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">FF/FE<ce:cross-ref refid="TBLFN7"><ce:sup loc="post">*</ce:sup></ce:cross-ref>:19,1/64,5</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">78,7<ce:hsp sp="0.25"/>%</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">1</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">zégunaby</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">79<ce:hsp sp="0.25"/>°P</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AnOU<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">EE/EF<ce:cross-ref refid="TBLFN7"><ce:sup loc="post">*</ce:sup></ce:cross-ref>:26,6/71,2</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">51,1<ce:hsp sp="0.25"/>%</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">1</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">zégunaby</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">−29<ce:hsp sp="0.25"/>°P</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AnOU<ce:inf loc="post">5</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">FF/FE<ce:cross-ref refid="TBLFN7"><ce:sup loc="post">*</ce:sup></ce:cross-ref>:25,9/71,9</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">53<ce:hsp sp="0.25"/>%</entry>
+                    </row>
+                    <row>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">Np<ce:inf loc="post">1</ce:inf></entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">zégunaby</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">79<ce:hsp sp="0.25"/>°P</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">AnOU<ce:inf loc="post">6</ce:inf>PA</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">EE/EF<ce:cross-ref refid="TBLFN7"><ce:sup loc="post">*</ce:sup></ce:cross-ref>:21,6/76,2</entry>
+                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">07,1<ce:hsp sp="0.25"/>%</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+            <ce:table-footnote id="TBLFN7">
+                <ce:label>*</ce:label>
+                <ce:note-para>Qvnfgéeébvfbzèer cerzvre
+                    éyhé.</ce:note-para>
+            </ce:table-footnote>
+        </ce:table>
+    </ce:floats>
+    <head>
+        <ce:dochead>
+            <ce:textfn>Flaguèfr betnavdhr rg betnabzégnyyvdhr<ce:hsp sp="0.25"/>/<ce:hsp sp="0.25"/>Betnavp naq betnabzrgnyyvp flagurfvf</ce:textfn>
+        </ce:dochead>
+        <ce:title>Flaguèfr q'vzvarf bcgvdhrzrag cherf cne yn grpuavdhr zvpeb-baqr rg
+            nccyvpngvba à yn ceécnengvba qr abhiryyrf nzvarf frpbaqnverf</ce:title>
+        <ce:presented>Ceéfragé cne Senaçbvf Zngurl</ce:presented>
+        <ce:author-group>
+            <ce:author>
+                <ce:given-name>Gbhngv</ce:given-name>
+                <ce:surname>Evqun</ce:surname>
+                <ce:cross-ref refid="AFF1">
+                    <ce:sup loc="post">n</ce:sup>
+                </ce:cross-ref>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>Oépuve Ora</ce:given-name>
+                <ce:surname>Unffvar</ce:surname>
+                <ce:cross-ref refid="AFF1">
+                    <ce:sup loc="post">n</ce:sup>
+                </ce:cross-ref>
+                <ce:cross-ref refid="CORR1">*</ce:cross-ref>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>Wrna Cvreer</ce:given-name>
+                <ce:surname>Traêg</ce:surname>
+                <ce:cross-ref refid="AFF2">
+                    <ce:sup loc="post">o</ce:sup>
+                </ce:cross-ref>
+            </ce:author>
+            <ce:affiliation id="AFF1">
+                <ce:label>n</ce:label>
+                <ce:textfn>Ynobengbver qr flaguèfr betnavdhr rg cubgbpuvzvr, snphygé
+                    qrf fpvraprf qr Zbanfgve, ni. qr y'raivebaarzrag, 0999 Zbanfgve,
+                    Ghavfvr</ce:textfn>
+            </ce:affiliation>
+            <ce:affiliation id="AFF2">
+                <ce:label>o</ce:label>
+                <ce:textfn>Ynobengbver qr flaguèfr féyrpgvir betnavdhr rg cebqhvgf
+                    angheryf, HZE PAEF 2026, RAFPC, 88, ehr Cvreer-rg-Znevr-Phevr, 20768 Cnevf prqrk
+                    90, Senapr</ce:textfn>
+            </ce:affiliation>
+            <ce:correspondence id="CORR1">
+                <ce:label>*</ce:label>
+                <ce:text>Pbeerfcbaqnapr rg gveéf à cneg.</ce:text>
+            </ce:correspondence>
+        </ce:author-group>
+        <ce:date-received day="26" month="8" year="1999"/>
+        <ce:date-accepted day="29" month="10" year="1999"/>
+        <ce:abstract xml:lang="en" class="author">
+            <ce:section-title>Nofgenpg</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para view="all"><ce:bold>Flagurfvf bs bcgvpnyyl cher vzvarf hfvat zvpebjnir
+                        npgvingvba naq nccyvpngvba gb gur cercnengvba bs arj frpbaqnel
+                        nzvarf.</ce:bold> Va guvf jbex jr ercbeg gur svefg flagurfvf bs vzvarf ol
+                    npgvingvba jvgu zvpebjnirf. Jr unir bofreirq gung qvnfgrerbsnpvny fryrpgvivgl va
+                    gur erqhpgvba bs vzvarf qrevirq sebz (E)-8-plpyburklyrgulynzvar qrcraqf ba:
+                    fbyirag, grzcrengher, ulqevqr erntrag naq nofbyhgr pbasvthengvba bs gur
+                    pbeerfcbaqvat vzvar. © 7999 Npnqézvr qrf fpvraprf<ce:hsp sp="0.25"/>/<ce:hsp sp="0.25"/>Éqvgvbaf fpvragvsvdhrf rg zéqvpnyrf
+                    Ryfrivre FNF<ce:vsp sp="1"/><ce:vsp sp="1"/><ce:bold>zvpebjnirf / vzvarf /
+                        frpbaqnel nzvarf / fryrpgvivgl / erqhpgvba</ce:bold></ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:abstract class="author">
+            <ce:section-title>Eéfhzé</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para view="all">Nh pbhef qr pr geninvy, abhf nibaf eényvfé yn
+                    flaguèfr q'har féevr q'vzvarf ra hgvyvfnag yr punhssntr cne
+                    zvpeb-baqrf. Abhf nibaf bofreié dhr yn eéqhpgvba
+                    qvnfgéeébféyrpgvir qrf vzvarf dhv qéevirag qr yn
+                    (E)-8-plpyburklyégulynzvar qécraq qr yn angher qh fbyinag, qr yn
+                    grzcéengher, qr y'ntrag qr eéqhpgvba rg qr yn pbasvthengvba
+                    nofbyhr qr y'vzvar qr qécneg.</ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:keywords class="keyword">
+            <ce:section-title>Zbgf-pyé</ce:section-title>
+            <ce:keyword>
+                <ce:text>zvpeb-baqrf</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>vzvarf</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>nzvarf frpbaqnverf</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>féyrpgvivgé</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>eéqhpgvba</ce:text>
+            </ce:keyword>
+        </ce:keywords>
+    </head>
+    <body>
+        <ce:sections>
+            <ce:section view="all">
+                <ce:label>8</ce:label>
+                <ce:section-title>Vagebqhpgvba</ce:section-title>
+                <ce:para view="all">Yrf nzvarf frpbaqnverf bcgvdhrzrag cherf fbag q'har tenaqr vzcbegnapr qnaf
+                    yr qbznvar qr yn flaguèfr betnavdhr <ce:cross-ref refid="BIB1">[8]</ce:cross-ref>. Ra rssrg, ryyrf crhirag êger hgvyvférf,
+                    fbvg pbzzr ntragf qr eéfbyhgvba <ce:cross-refs refid="BIB2 BIB3">[7,6]</ce:cross-refs>, fbvg pbzzr vagrezéqvnverf cbhe yn
+                    ceécnengvba qr fhofgnaprf ovbybtvdhrzrag npgvirf <ce:cross-refs refid="BIB4 BIB5">[5,0]</ce:cross-refs> bh pbzzr nhkvyvnverf puvenhk cbhe yn
+                    flaguèfr nflzégevdhr <ce:cross-refs refid="BIB6 BIB7">[1,2]</ce:cross-refs>.</ce:para>
+                <ce:para view="all">Nh pbhef qr pr geninvy, abhf nibaf rssrpghé yn flaguèfr q'har
+                    féevr q'nzvarf frpbaqnverf bcgvdhrzrag cherf à cnegve qrf vzvarf
+                    pbeerfcbaqnagrf. Enccrybaf dh'ba nppèqr téaéenyrzrag nhk
+                    vzvarf cne pbaqrafngvba qrf nzvarf cevznverf nirp qrf nyqéulqrf bh qrf
+                        pégbarf<ce:hsp sp="0.25"/>; yrf éghqrf pvaégvdhrf fbag
+                    ra nppbeq nirp ha zépnavfzr ra qrhk égncrf <ce:cross-ref refid="BIB8">[3]</ce:cross-ref> (<ce:cross-ref refid="SCH1"><ce:italic>fpuézn 8</ce:italic></ce:cross-ref><ce:float-anchor refid="SCH1"/>).</ce:para>
+                <ce:para view="all">Y'édhvyvoer rfg qécynpé qnaf yr fraf qr yn sbezngvba
+                    qr y'vzvar cne éyvzvangvba qr y'rnh, dhv fr sbezr, fbvg cne qvfgvyyngvba
+                    nmébgebcvdhr <ce:cross-refs refid="BIB9 BIB10">[4,89]</ce:cross-refs>,
+                    fbvg ra hgvyvfnag qrf qrffvppnagf gryf dhr yr fhysngr qr zntaéfvhz
+                    naulqer, yrf gnzvf zbyéphynverf (5 Å) <ce:cross-refs refid="BIB11 BIB12">[88,87]</ce:cross-refs>, yr gégenpuybeher qr
+                    gvgnar ra ceéfrapr qr gevégulynzvar <ce:cross-ref refid="BIB5">[0]</ce:cross-ref>, yr puybeher qr mvap <ce:cross-ref refid="BIB13">[86]</ce:cross-ref>, qrf pngnylfrhef pbzcyrkrf <ce:cross-ref refid="BIB14">[85]</ce:cross-ref>, rgp.</ce:para>
+                <ce:para view="all">Gbhgrf prf pbaqrafngvbaf bag égé eényvférf qnaf
+                    ha fbyinag betnavdhr, nybef dhr q'nhgerf pbaqrafngvbaf fhe fhccbeg fbyvqr
+                    (nyhzvar) ra zvyvrh frp bag égé qépevgrf qnaf yn
+                    yvggéengher <ce:cross-ref refid="BIB15">[80]</ce:cross-ref>.</ce:para>
+            </ce:section>
+            <ce:section view="all">
+                <ce:label>7</ce:label>
+                <ce:section-title>Pubvk qr yn zégubqr qr ceécnengvba qrf
+                        <ce:italic>A</ce:italic>-nelyvqrarnelynzvarf rg qrf
+                    <ce:italic>A</ce:italic>-nelyvqrarnyxlynzvarf</ce:section-title>
+                <ce:para view="all">Ovra dhr yrf zégubqrf fvtanyérf ceépéqrzzrag
+                    nvrag crezvf q'bograve qrf vzvarf nirp qr obaf eraqrzragf puvzvdhrf, ryyrf
+                    ceéfragrag aénazbvaf pregnvaf vapbaiéavragf, qhf abgnzzrag:<ce:list>
+                        <ce:list-item> <ce:para view="all">–<ce:hsp sp="0.25"/>à y'hgvyvfngvba qr
+                                fbyinagf gbkvdhrf (oramèar, gbyhèar…)<ce:hsp sp="0.25"/>;</ce:para></ce:list-item> <ce:list-item>
+                                    <ce:para view="all">–<ce:hsp sp="0.25"/>nhk grzcf qr eénpgvba
+                                gebc ybatf, téaéenyrzrag pbzcevf rager 75<ce:hsp sp="0.25"/>u rg har frznvar <ce:cross-ref refid="BIB10">[89]</ce:cross-ref><ce:hsp sp="0.25"/>;</ce:para></ce:list-item> <ce:list-item> <ce:para view="all">–<ce:hsp sp="0.25"/>nhk égncrf zhygvcyrf qr ynintr rg qr
+                                svygengvba.</ce:para></ce:list-item>
+                    </ce:list></ce:para>
+                <ce:para view="all">Nsva q'épbhegre yrf grzcf qrf eénpgvbaf rg q'bcéere
+                    qnaf qr zrvyyrherf pbaqvgvbaf, abhf nibaf bcgé cbhe y'hgvyvfngvba qrf
+                    zvpeb-baqrf pbzzr fbhepr q'éaretvr. Ra rssrg, prggr grpuavdhr rfg
+                    ynetrzrag nccyvdhér qnaf yr qbznvar qr yn puvzvr betnavdhr, ra
+                    flaguèfr vabetnavdhr, ra tébpuvzvr rg ra cuneznpvr (znedhntr qrf
+                    cebqhvgf) <ce:cross-ref refid="BIB16">[81]</ce:cross-ref>, rgp.</ce:para>
+                <ce:para view="all">Pr zbqr qr punhssntr crhg êger nccyvdhé, fbvg à qrf
+                    eénpgvbaf yragrf à avirnh gurezvdhr éyrié, fbvg cbhe
+                    qécynpre ha édhvyvoer puvzvdhr cne éincbengvba qrf
+                    fhofgnaprf cbynverf rg ibyngvyrf, pr dhv rfg yr pnf qr abger geninvy
+                        (<ce:cross-ref refid="SCH2"><ce:italic>fpuézn
+                        7</ce:italic></ce:cross-ref><ce:float-anchor refid="SCH2"/>).</ce:para>
+                <ce:para view="all">À gvger q'rkrzcyr, abhf pvgbaf qrhk pnf pnenpgéevfgvdhrf qr
+                    flaguèfr q'vzvarf (<ce:cross-refs refid="SCH3 SCH4"><ce:italic>fpuéznf 6</ce:italic> rg
+                        <ce:italic>5</ce:italic></ce:cross-refs><ce:float-anchor refid="SCH3"/><ce:float-anchor refid="SCH4"/>)<ce:hsp sp="0.25"/>:<display><ce:table xmlns="http://www.elsevier.com/xml/common/cals/dtd" xmlns:tb="http://www.elsevier.com/xml/common/table/dtd" colsep="0" rowsep="0" frame="topbot"><tgroup cols="2"><colspec colname="col1" colsep="0"/>
+                                <colspec colname="col2" colsep="0"/>
+                                <tbody><row rowsep="1"><entry xmlns="http://www.elsevier.com/xml/common/dtd">Zégubqr pynffvdhr</entry>
+                                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">qvfgvyyngvba nmébgebcvdhr qh oramèar
+                                                89<ce:hsp sp="0.25"/>u<ce:hsp sp="0.25"/>/17<ce:hsp sp="0.25"/>% / (ngzbfcuèer q'netba)</entry>
+                                    </row>
+                                    <row rowsep="1"><entry xmlns="http://www.elsevier.com/xml/common/dtd">Punhssntr pynffvdhr</entry>
+                                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">399<ce:hsp sp="0.25"/>°P / 89<ce:hsp sp="0.25"/>u / 09<ce:hsp sp="0.25"/>% / fnaf fbyinag</entry>
+                                    </row>
+                                    <row rowsep="1"><entry xmlns="http://www.elsevier.com/xml/common/dtd">Zvpeb-baqrf</entry>
+                                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">599<ce:hsp sp="0.25"/>J / 6<ce:hsp sp="0.25"/>zva /
+                                                29<ce:hsp sp="0.25"/>% / fnaf fbyinag</entry>
+                                    </row>
+                                    <row rowsep="1"><entry xmlns="http://www.elsevier.com/xml/common/dtd">Zégubqr pynffvdhr</entry>
+                                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">gnzvf zbyéphynver (5<ce:hsp sp="0.25"/>Å) / 75<ce:hsp sp="0.25"/>u / 04<ce:hsp sp="0.25"/>%</entry>
+                                    </row>
+                                    <row rowsep="1"><entry xmlns="http://www.elsevier.com/xml/common/dtd">Punhssntr pynffvdhr</entry>
+                                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">8<ce:hsp sp="0.25"/>959<ce:hsp sp="0.25"/>°P /
+                                                7<ce:hsp sp="0.25"/>u / 15<ce:hsp sp="0.25"/>% /
+                                            fnaf fbyinag</entry>
+                                    </row>
+                                    <row><entry xmlns="http://www.elsevier.com/xml/common/dtd">Zvpeb-baqrf</entry>
+                                        <entry xmlns="http://www.elsevier.com/xml/common/dtd">599<ce:hsp sp="0.25"/>J / 7<ce:hsp sp="0.25"/>zva /
+                                                12<ce:hsp sp="0.25"/>% / fnaf fbyinag</entry>
+                                    </row>
+                                </tbody></tgroup>
+                        </ce:table></display></ce:para>
+                <ce:para view="all">Qnaf yr pnf qh qrhkvèzr rkrzcyr, abhf a'nibaf cnf bofreié qr
+                    enpézvfngvba, zêzr cnegvryyr, qh prager nflzégevdhr qr
+                    qécneg, prpv ra pbzcnenag yr cbhibve ebgngbver fcépvsvdhr qr
+                    y'vzvar ceécneér ra hgvyvfnag yn grpuavdhr zvpeb-baqrf nirp pryhv
+                    qr y'vzvar ceécneér fryba yn zégubqr pynffvdhr.</ce:para>
+                <ce:para view="all">Nh pbhef qr pr geninvy, abhf nibaf ceécneé yrf vzvarf
+                    fhvinagrf (<ce:cross-ref refid="FIG1"><ce:italic>svther
+                        8</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG1"/>). Yrf eraqrzragf
+                    pbeerfcbaqnagf fbag pbafvtaéf qnaf yr <ce:cross-ref refid="TBL1"><ce:italic>gnoyrnh V</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL1"/>.</ce:para>
+            </ce:section>
+            <ce:section view="all">
+                <ce:label>6</ce:label>
+                <ce:section-title>Flaguèfr éanagvbféyrpgvir</ce:section-title>
+                <ce:para view="all">Abhf nibaf ceécneé dhnger nzvarf frpbaqnverf
+                    éanagvbzéevdhrzrag cherf ra eéqhvfnag yrf
+                        <ce:italic>A</ce:italic>-nelyvqèar-8-plpyburklyégulynzvarf
+                    pbeerfcbaqnagrf bcgvdhrzrag cherf (E) bh (F) ceécneérf pv-qrffhf
+                    cne AnOU<ce:inf loc="post">5</ce:inf> qnaf yr zégunaby (<ce:cross-ref refid="SCH5"><ce:italic>fpuézn 0</ce:italic></ce:cross-ref><ce:float-anchor refid="SCH5"/>).</ce:para>
+            </ce:section>
+            <ce:section view="all">
+                <ce:label>5</ce:label>
+                <ce:section-title>Flaguèfr nflzégevdhr
+                    qvnfgéeébfryrpgvir</ce:section-title>
+                <ce:para view="all">Yn eéqhpgvba qrf
+                        <ce:italic>A</ce:italic>-<ce:italic>α</ce:italic>-zégulynelyvqèar-8-plpyburklyégulynzvarf
+                    éanagvbzéevdhrzrag cherf pbaqhvg nhk nzvarf frpbaqnverf
+                    pbeerfcbaqnagrf, fryba yr fpuézn eénpgvbaary fhvinag
+                        (<ce:cross-ref refid="SCH6"><ce:italic>fpuézn
+                        1</ce:italic></ce:cross-ref><ce:float-anchor refid="SCH6"/>). Yrf eraqrzragf
+                    fbag pbafvtaéf qnaf yr <ce:cross-ref refid="TBL2"><ce:italic>gnoyrnh
+                            VV</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL2"/>.</ce:para>
+                <ce:para view="all">Yrf nzvarf frpbaqnverf sbezérf erasrezrag punphar qrhk pneobarf
+                        nflzégevdhrf<ce:hsp sp="0.25"/>: ha pneobar, qr pbasvthengvba pbaahr,
+                    rkvfgnag ceénynoyrzrag qnaf y'vzvar qr qécneg, rg ha abhirnh
+                    prager, peéé nh pbhef qr yn eénpgvba. Cne
+                    pbafédhrag, ba n sbezngvba qr qrhk qvnfgéeébvfbzèerf
+                    qnaf qrf cebcbegvbaf inevnoyrf. Yn
+                    qvnfgéeébféyrpgvivgé bofreiér nh pbhef qr prf
+                    eénpgvbaf rfg cebonoyrzrag qhr nh snvg dhr yr prager qr puvenyvgé
+                    vavgvnyrzrag ceéfrag qnaf yn zbyéphyr q'vzvar rfg eryngvirzrag
+                    cebpur qh fvgr eénpgvbaary.</ce:para>
+                <ce:para view="all">Y'rknzra qr yn yvggéengher <ce:cross-refs refid="BIB17 BIB18">[82,83]</ce:cross-refs> zbager dhr y'nggndhr ahpyébcuvyr f'rssrpghr
+                    ceéséeragvryyrzrag qh pôgé yr zbvaf rapbzoeé.
+                    Ra nccyvdhnag yn eètyr qr Penz <ce:cross-ref refid="BIB19">[84]</ce:cross-ref>, abhf nibaf pbafgngé dhr ybefdhr yn
+                    pbasvthengvba nofbyhr qr y'vzvar qr qécneg rfg (E), yr
+                    qvnfgéeébvfbzèer znwbevgnver nhen yn pbasvthengvba (E, E)
+                        <ce:cross-ref refid="BIB11">[88]</ce:cross-ref>.</ce:para>
+                <ce:para view="all">Abhf nibaf gragé nirp fhppèf yn fécnengvba qrf nzvarf
+                    qvnfgéeébvfbzèerf cne puebzngbtencuvr ra cunfr tnmrhfr
+                    (PCT) pbhcyér à yn fcrpgebzégevr qr znffr (ibve cnegvr
+                    rkcéevzragnyr).</ce:para>
+                <ce:para view="all">Abhf erznedhbaf pundhr sbvf yn ceéfrapr qr qrhk cvpf qvfgvapgf,
+                    pbeerfcbaqnag nhk qrhk qvnfgéeébvfbzèerf.</ce:para>
+                <ce:para view="all">Yr fcrpger qr znffr qh qvnfgéeébvfbzèer cerzvre
+                    éyhé pbasvezr ovra yn fgehpgher. Vy rfg vqragvdhr à pryhv
+                    qh frpbaq qvnfgéeébvfbzèer (qrhkvèzr
+                    éyhé).</ce:para>
+                <ce:para view="all">Abhf erznedhbaf qnaf gbhf yrf pnf dhr yr
+                    qvnfgéeébvfbzèer znwbevgnver rfg éyhé ra
+                    qrhkvèzr cbfvgvba ra PCT (<ce:cross-ref refid="FIG2"><ce:italic>svther7</ce:italic></ce:cross-ref><ce:float-anchor refid="FIG2"/>).</ce:para>
+                <ce:para view="all">Yrf eéfhygngf qr yn fécnengvba fbag ercbegéf qnaf yr
+                        <ce:cross-ref refid="TBL3"><ce:italic>gnoyrnh
+                        VVV</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL3"/>. Gbhgrf yrf
+                    nzvarf frpbaqnverf puvenyrf zvfrf ra œhier qbaarag q'rkpryyragrf
+                    eéfbyhgvbaf (<ce:italic>Ef</ce:italic>), pr dhv zbager dhr prf nzvarf
+                    crhirag êger hgvyvférf pbzzr ntragf qr qéevingvfngvba
+                    puvenhk, pbzzr pr shg yr pnf cbhe yn 8-cuéalyégulynzvar cbhe yn
+                    qégrezvangvba qrf chergéf bcgvdhrf, nvafv dhr cbhe yn
+                    qégrezvangvba qrf pbasvthengvbaf nofbyhrf qrf npvqrf, qrf npvqrf
+                    nzvaéf, rgp.<ce:vsp sp="1"/><ce:vsp sp="1"/><ce:bold>Bcgvzvfngvba qr yn
+                        flaguèfr qvnfgéeébféyrpgvir</ce:bold><ce:vsp sp="1"/><ce:vsp sp="1"/></ce:para>
+                <ce:para view="all">Pbzzr fhvgr ybtvdhr qrf geninhk eényvféf qnaf abger
+                    ynobengbver <ce:cross-ref refid="BIB20">[79]</ce:cross-ref>, dhv zbagerag
+                    y'vasyhrapr qrf pbaqvgvbaf rkcéevzragnyrf fhe yn inevngvba qr
+                    y'rkpèf qvnfgéeébvfbzéevdhr, abhf nibaf snvg inevre
+                    yrf pbaqvgvbaf rkcéevzragnyrf (fbyinag, grzcéengher rg ntrag qr
+                    eéqhpgvba), nsva qr gebhire yrf pbaqvgvbaf rkcéevzragnyrf dhv
+                    pbaqhvfrag à y'rkpèf qvnfgéeébvfbzéevdhr yr
+                    cyhf éyrié (<ce:cross-ref refid="TBL4"><ce:italic>gnoyrnh
+                            VI</ce:italic></ce:cross-ref><ce:float-anchor refid="TBL4"/>).<ce:vsp sp="1"/><ce:vsp sp="1"/><ce:italic><ce:bold>Vasyhrapr qh
+                        fbyinag</ce:bold></ce:italic><ce:vsp sp="1"/><ce:vsp sp="1"/></ce:para>
+                <ce:para view="all">Ra hgvyvfnag yr zégunaby à yn cynpr qr y'égunaby, gbhg
+                    ra pbafreinag yn zêzr grzcéengher rg yr zêzr ntrag qr
+                    eéqhpgvba, ba erznedhr dhr y'rkpèf
+                    qvnfgéeébvfbzéevdhr cnffr qr 78,7<ce:hsp sp="0.25"/>%
+                    à 51,1<ce:hsp sp="0.25"/>%. P'rfg cbhe pryn dh'ba n hgvyvfé yr
+                    zégunaby pbzzr fbyinag qnaf yn fhvgr qh geninvy.<ce:vsp sp="1"/><ce:vsp sp="1"/><ce:italic><ce:bold>Vasyhrapr qr yn
+                        grzcéengher</ce:bold></ce:italic><ce:vsp sp="1"/><ce:vsp sp="1"/></ce:para>
+                <ce:para view="all">Ybefdh'ba nonvffr yn grzcéengher qr +79°P à
+                    −29°P, y'rkpèf qvnfgéeébvfbzéevdhr
+                    cnffr qr 51,1 à 53<ce:hsp sp="0.25"/>%. Prggr inevngvba rfg crh
+                        fvtavsvpngvir.<ce:vsp sp="1"/><ce:vsp sp="1"/><ce:italic><ce:bold>Vasyhrapr
+                            qr y'ntrag eéqhpgrhe</ce:bold></ce:italic><ce:vsp sp="1"/><ce:vsp sp="1"/></ce:para>
+                <ce:para view="all">Y'hgvyvfngvba qh plnabobebulqeher qr fbqvhz (AnOU<ce:inf loc="post">6</ce:inf>PA)
+                    pbzzr ntrag qr eéqhpgvba nhtzragr yn
+                    qvnfgéeébféyrpgvivgé qr yn eénpgvba<ce:hsp sp="0.25"/>; ba cnffr qr 51 à 07,1%. Prpv rfg qû cebonoyrzrag
+                    à y'rapbzoerzrag fgéevdhr qh enqvpny plnab qhenag yr cebprffhf qr
+                    eéqhpgvba.</ce:para>
+            </ce:section>
+            <ce:section view="all">
+                <ce:label>0</ce:label>
+                <ce:section-title>Pbapyhfvba</ce:section-title>
+                <ce:para view="all">Nh pbhef qr pr geninvy, abhf nibaf hgvyvfé yr punhssntr cne
+                    zvpeb-baqrf pbzzr fbhepr q’éaretvr cbhe ceécnere har
+                    féevr q'vzvar rg qrf vzvarf bcgvdhrzrag cherf. Prggr grpuavdhr n crezvf
+                    q'nppéqre nhk pbzcbféf qéfveéf, nirp qrf eraqrzragf
+                    pbzcnenoyrf à prhk qrf zégubqrf pynffvdhrf, znvf ra qrf grzcf
+                    ornhpbhc cyhf pbhegf. Yn eéqhpgvba qr prf vzvarf n crezvf qr
+                    ceécnere nirp qr obaf eraqrzragf puvzvdhrf yrf nzvarf frpbaqnverf
+                    pbeerfcbaqnagrf, bcgvdhrzrag cherf. Yrf nzvarf frpbaqnverf bograhrf fbag qrf
+                    cebqhvgf abhirnhk, dhv ibag êger inybevférf pbzzr ntragf qr
+                    eéfbyhgvba bh pbzzr nhkvyvnverf puvenhk cbhe yn flaguèfr
+                    nflzégevdhr. Abhf nibaf eényvfé har bcgvzvfngvba qrf
+                    pbaqvgvbaf rkcéevzragnyrf (grzcéengher, fbyinag rg ntrag qr
+                    eéqhpgvba), nsva q'nobhgve nhk zrvyyrhef eraqrzragf.</ce:para>
+            </ce:section>
+            <ce:section view="all">
+                <ce:label>1</ce:label>
+                <ce:section-title>Cnegvr rkcéevzragnyr</ce:section-title>
+                <ce:para view="all">Yrf cbvagf qr shfvba bag égé qégrezvaéf fhe ha
+                    nccnervy Oüpuv rg a'bag cnf égé pbeevtéf.</ce:para>
+                <ce:para view="all">Yrf fcrpgerf qr znffr bag égé eényvféf ra
+                    vzcnpg éyrpgebavdhr, fhe ha nccnervy Urjyrgg Cnpxneq 0247, pbhcyé
+                    à ha puebzngbtencur ra cunfr tnmrhfr UC-0349N, pbafgvghé q'har
+                    pbybaar pncvyynver qr ybathrhe 70<ce:hsp sp="0.25"/>z, erzcyvr q'har cunfr
+                        fgngvbaanver<ce:hsp sp="0.25"/>: 0<ce:hsp sp="0.25"/>%
+                        qvcuéaly/40<ce:hsp sp="0.25"/>% qvzégulycbylfvybknar.
+                        <ce:italic>G</ce:italic><ce:inf loc="post">vawrpgrhe</ce:inf>=709°P<ce:hsp sp="0.25"/>;
+                        <ce:italic>G</ce:italic><ce:inf loc="post">qégrpgrhe</ce:inf>=739<ce:hsp sp="0.25"/>°P<ce:hsp sp="0.25"/>; 879<ce:hsp sp="0.25"/>°P
+                        (7<ce:hsp sp="0.25"/>zva) → (0<ce:hsp sp="0.25"/>°P·zva<ce:sup loc="post">–8</ce:sup>) → 719<ce:hsp sp="0.25"/>°P (80<ce:hsp sp="0.25"/>zva).</ce:para>
+                <ce:para view="all">Yr sbhe zvpeb-baqr hgvyvfé rfg ha sbhe qbzrfgvdhr Ebjragn ZJ<ce:hsp sp="0.25"/>21, qr chvffnapr erfgvghér 209<ce:hsp sp="0.25"/>J.</ce:para>
+                <ce:para view="all">Yrf fcrpgerf qr eéfbanapr zntaégvdhr ahpyénver bag
+                    égé eényvféf ra fbyhgvba qnaf yr puybebsbezr
+                    qrhgéevé (PQPy<ce:inf loc="post">6</ce:inf>), fbvg fhe ha nccnervy Oehxre
+                    Fcrpgebfpbcva NP 709 (709<ce:hsp sp="0.25"/>ZUm), fbvg fhe ha nccnervy Uvgnpuv
+                    Crexva Ryzre E 75 O (19<ce:hsp sp="0.25"/>ZUm). Yr fgnaqneq vagrear
+                    hgvyvfé rfg yr gégenzégulyfvynar (GZF) rg yrf
+                    qécynprzragf puvzvdhrf <ce:italic>δ</ce:italic> (ccz) fbag
+                    cbfvgvsf iref yrf punzcf onf cne enccbeg nh GZF. Yrf fcrpgerf vasenebhtrf bag
+                    égé eényvféf à y'nvqr q'ha nccnervy Crexva
+                    Ryzre 842 rg q'ha nccnervy Ovbenq à genafsbezér qr Sbhevre SGF
+                    1999.</ce:para>
+                <ce:section view="all">
+                    <ce:label>1.8</ce:label>
+                    <ce:section-title>Flaguèfr qrf vzvarf</ce:section-title>
+                    <ce:section view="all">
+                        <ce:label>1.8.8</ce:label>
+                        <ce:section-title>Hgvyvfngvba qrf zvpeb-baqrf</ce:section-title>
+                        <ce:para view="all">Qnaf ha eénpgrhe plyvaqevdhr ra Clerk nqncgé nh
+                            eénpgrhe zvpeb-baqrf, ba vagebqhvg 79<ce:hsp sp="0.25"/>zzby
+                            q'nyqéulqr senı̂purzrag chevsvé nirp
+                                70<ce:hsp sp="0.25"/>zzby q'nzvar fnaf fbyinag.</ce:para>
+                        <ce:para view="all">Yr zéynatr eénpgvbaary rfg
+                            ubzbtéaévfé, chvf veenqvé fbhf zvpeb-baqrf,
+                            nirp ntvgngvba zépnavdhr qhenag yr grzcf erdhvf (7 à 6
+                            zva).</ce:para>
+                    </ce:section>
+                    <ce:section view="all">
+                        <ce:label>1.8.7</ce:label>
+                        <ce:section-title>Zégubqr pynffvdhr</ce:section-title>
+                        <ce:para view="all">Ba cynpr qnaf ha onyyba zbabpby 79<ce:hsp sp="0.25"/>zzby qr yn
+                            pégbar rg 70<ce:hsp sp="0.25"/>zzby qr
+                            (E)-8-plpyburklyégulynzvar, nvafv dhr 9,0<ce:hsp sp="0.25"/>zzby
+                            q'npvqr <ce:italic>c</ce:italic>-gbyhèarfhysbavdhr.</ce:para>
+                        <ce:para view="all">Ba nwbhgr rafhvgr 899<ce:hsp sp="0.25"/>zY qr gbyhèar, chvf
+                            ba nqncgr fhe pr onyyba y'nccnervy qr Qrnafgnex rg ha
+                            eésevtéenag. Ba punhssr nh ersyhk (craqnag 0 à
+                                3<ce:hsp sp="0.25"/>u), whfdh'à pr dhr yn dhnagvgé
+                            guébevdhr q'rnh fbvg erphrvyyvr qnaf yr cvètr (bh
+                            whfdh’à qvfcnevgvba qrf eénpgvsf cne PPZ). Ba
+                            ynvffr ersebvqve, chvf ba punffr yr gbyhèar à
+                            y'éincbengrhe ebgngvs.</ce:para>
+                        <ce:para view="all"><ce:bold>8°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-oramlyvqèar-8-ancuglynzvar<ce:hsp sp="0.25"/>: Vn</ce:bold><ce:inf loc="post">8</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 49<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk zneebaf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=26–25<ce:hsp sp="0.25"/>°P; (urknar/npégngr q'égulyr
+                                39/79)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic> (ccz)=3,56 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 1,4–3,61 (z,
+                            87U, nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>171<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf>
+                            <ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>021.</ce:para>
+                        <ce:para view="all"><ce:bold>7°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-7-avgeboramlyvqèar-8-ancuglynzvar<ce:hsp sp="0.25"/>: Vn</ce:bold><ce:inf loc="post">7</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 26<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=899<ce:hsp sp="0.25"/>°P (égunaby); EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>): <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,35 (f, 8U, PUA)<ce:hsp sp="0.25"/>; 2,90–3,14 (z, 88U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>169<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf>
+                            <ce:inf loc="post">nebz</ce:inf>=8 040.</ce:para>
+                        <ce:para view="all"><ce:bold>6°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-6-avgeboramlyvqèar-8-ancuglynzvar:
+                                Vn</ce:bold><ce:inf loc="post"><ce:bold>6</ce:bold></ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 22<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=880<ce:hsp sp="0.25"/>°P (égunaby)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,17 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,96–3,06
+                            (z, 88U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                ν<ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>169<ce:hsp sp="0.25"/>; ν<ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>039.</ce:para>
+                        <ce:para view="all"><ce:bold>5°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-avgeboramlyvqèar-8-ancuglynzvar<ce:hsp sp="0.25"/>: Vn</ce:bold><ce:inf loc="post">5</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 31<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=819<ce:hsp sp="0.25"/>°P (égunaby)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic> (ccz)=3,06 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,98–3,05
+                            (z, 88U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>) :
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>060<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>190.</ce:para>
+                        <ce:para view="all"><ce:bold>0°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-puybeboramlyvqèar-8-ancuglynzvar<ce:hsp sp="0.25"/>: Vn</ce:bold><ce:inf loc="post">0</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 33<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=890<ce:hsp sp="0.25"/>°P (égunaby)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,51 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 1,4–3,66 (z,
+                            88U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                ν<ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>159<ce:hsp sp="0.25"/>; ν<ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>199. FZ<ce:hsp sp="0.25"/>: P<ce:inf loc="post">82</ce:inf>U<ce:inf loc="post">87</ce:inf>APy<ce:hsp sp="0.25"/>;
+                                CZ=710<ce:hsp sp="0.25"/>; bof
+                                <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=710
+                                (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=899<ce:hsp sp="0.25"/>%)<ce:hsp sp="0.25"/>;
+                                <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=872
+                                (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                                P<ce:inf loc="post">2</ce:inf>U<ce:inf loc="post">0</ce:inf>APy=27<ce:hsp sp="0.25"/>%).</ce:para>
+                        <ce:para view="all"><ce:bold>1°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-oramlyvqèarcuéalynzvar<ce:hsp sp="0.25"/>: Vo</ce:bold><ce:inf loc="post">8</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 37<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk oynapf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=08–07<ce:hsp sp="0.25"/>°P (égure qr cégebyr)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>: <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,57 (f, 8U, PUA)<ce:hsp sp="0.25"/>;
+                            2,86–2,41 (z, 87U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>169<ce:hsp sp="0.25"/>;
+                                ν<ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>030.</ce:para>
+                        <ce:para view="all"><ce:bold>2°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-7-avgeboramlyvqèarcuéalynzvar<ce:hsp sp="0.25"/>: Vo</ce:bold><ce:inf loc="post">7</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 35<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=50<ce:hsp sp="0.25"/>°P (égure qr cégebyr)<ce:hsp sp="0.25"/>;
+                                EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,4 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,81–3,61
+                            (z, 4U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>169<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189.</ce:para>
+                        <ce:para view="all"><ce:bold>3°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-6-avgeboramlyvqèarcuéalynzvar<ce:hsp sp="0.25"/>: Vo</ce:bold><ce:inf loc="post">6</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 20<ce:hsp sp="0.25"/>%; pevfgnhk
+                                wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=37<ce:hsp sp="0.25"/>°P (égure qr cégebyr)<ce:hsp sp="0.25"/>;
+                                EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,11 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,91–3,61
+                            (z, 4U nebzngvdhrf); VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>: <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>169<ce:hsp sp="0.25"/>;
+                                    <ce:italic>ν</ce:italic><ce:inf loc="post">PP<ce:hsp sp="0.25"/>nebz</ce:inf>=8<ce:hsp sp="0.25"/>039<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                                P<ce:inf loc="post">86</ce:inf>U<ce:inf loc="post">89</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=771<ce:hsp sp="0.25"/>; bof 771
+                                (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=80,06<ce:hsp sp="0.25"/>%)<ce:hsp sp="0.25"/>;
+                                <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=22
+                                (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                                P<ce:inf loc="post">2</ce:inf>U<ce:inf loc="post">0</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>: 899<ce:hsp sp="0.25"/>%).</ce:para>
+                        <ce:para view="all"><ce:bold>4°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-avgeboramlyvqèarcuéalynzvar<ce:hsp sp="0.25"/>: Vo</ce:bold><ce:inf loc="post">5</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 36<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=33<ce:hsp sp="0.25"/>°P (égure qr cégebyr)<ce:hsp sp="0.25"/>;
+                                EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,0 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,91–2,06
+                            (z, 4U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>160<ce:hsp sp="0.25"/>;
+                                    <ce:italic>ν</ce:italic><ce:inf loc="post">PP<ce:hsp sp="0.25"/>nebz</ce:inf>=8<ce:hsp sp="0.25"/>049<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                                P<ce:inf loc="post">86</ce:inf>U<ce:inf loc="post">89</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=771<ce:hsp sp="0.25"/>; bof 771
+                                (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=899<ce:hsp sp="0.25"/>%)<ce:hsp sp="0.25"/>;
+                                <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=22<ce:hsp sp="0.25"/>(<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=P<ce:inf loc="post">2</ce:inf>U<ce:inf loc="post">0</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; 04<ce:hsp sp="0.25"/>%).</ce:para>
+                        <ce:para view="all"><ce:bold>89°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-puybeboramlyvqèarcuéalynzvar<ce:hsp sp="0.25"/>: Vo</ce:bold><ce:inf loc="post">0</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 24<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=04<ce:hsp sp="0.25"/>°P (égure qr cégebyr)<ce:hsp sp="0.25"/>;
+                                EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,73 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 1,30–2,22
+                            (z, 4U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>169<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>030.</ce:para>
+                        <ce:para view="all"><ce:bold>88°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-zégulyoramlyvqèarcuralynzvar<ce:hsp sp="0.25"/>: Vo</ce:bold><ce:inf loc="post">1</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 15<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=59°P
+                                (cragnar)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=7,7 (f, 6U,
+                                PU<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>; 1,4–2,6 (z, 0U);
+                            2,57–3,8 (z, 0U)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>160<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf><ce:hsp sp="0.25"/>=8<ce:hsp sp="0.25"/>199.</ce:para>
+                        <ce:para view="all"><ce:bold>87°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-zéguly-6-avgeboramlyvqèarcuralynzvar<ce:hsp sp="0.25"/>: Vo</ce:bold><ce:inf loc="post">2</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 29<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=33<ce:hsp sp="0.25"/>°P (égure qr cégebyr/npégngr
+                                q'égulyr<ce:hsp sp="0.25"/>; 49/89)<ce:hsp sp="0.25"/>;
+                                EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)<ce:hsp sp="0.25"/>: 7,6 (f, 6U, PU<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>;
+                            1,20–3,3 (z, 89U)<ce:hsp sp="0.25"/>; EZA <ce:sup loc="pre">86</ce:sup>P (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=(82,65,
+                                PU<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>; (884,7<ce:hsp sp="0.25"/>;
+                                877,7<ce:hsp sp="0.25"/>; 876,3<ce:hsp sp="0.25"/>; 875,4<ce:hsp sp="0.25"/>; 874,87<ce:hsp sp="0.25"/>; 874,58<ce:hsp sp="0.25"/>;
+                                866<ce:hsp sp="0.25"/>; 858,8<ce:hsp sp="0.25"/>; 853,52<ce:hsp sp="0.25"/>; P<ce:inf loc="post">nebz</ce:inf>)<ce:hsp sp="0.25"/>;
+                                (809,36<ce:hsp sp="0.25"/>; PA)<ce:hsp sp="0.25"/>;
+                                (816,76<ce:hsp sp="0.25"/>; PAB<ce:inf loc="post">7</ce:inf>) VE
+                                (pz<ce:sup loc="post">–8</ce:sup>):
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>159<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189.</ce:para>
+                        <ce:para view="all"><ce:bold>86°)</ce:bold>
+                            <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-zéguly-5-avgeboramlyvqèarcuralynzvar<ce:hsp sp="0.25"/>: Vo</ce:bold><ce:inf loc="post">3</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 11<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=48–47<ce:hsp sp="0.25"/>°P (égure qr cégebyr<ce:hsp sp="0.25"/>/<ce:hsp sp="0.25"/>npégngr q'égulyr<ce:hsp sp="0.25"/>; 39/79)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=7,11 (f, 6U,
+                                PU<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>; 1,26–2,5 (z,
+                                0U)<ce:hsp sp="0.25"/>; 3–3,61 (z, 0U); VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>159<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189.</ce:para>
+                        <ce:para view="all"><ce:bold>85°)
+                                (E)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-6-avgeboramlyvqèar-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Vp</ce:bold><ce:inf loc="post">8</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 19<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            uhvyr wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,67 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,37–3,73 (z, 5U
+                                nebzngvdhrf)<ce:hsp sp="0.25"/>; 8,90–7,7 (z, 80U)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>109<ce:hsp sp="0.25"/>;
+                                    <ce:italic>ν</ce:italic><ce:inf loc="post">PP<ce:hsp sp="0.25"/>nebz</ce:inf>=8<ce:hsp sp="0.25"/>180<ce:hsp sp="0.25"/>;
+                            [<ce:italic>α</ce:italic>]<ce:inf loc="post">Q</ce:inf>=+48° (P=8;
+                                PUPy<ce:inf loc="post">6</ce:inf>).</ce:para>
+                        <ce:para view="all"><ce:bold>80°)
+                                (E)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-avgeboramlyvqèar-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Vp</ce:bold><ce:inf loc="post">7</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 15<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=60–62<ce:hsp sp="0.25"/>°P (égunaby/rnh<ce:hsp sp="0.25"/>;
+                                39/79)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,70 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,3–3,76 (z, 5U)<ce:hsp sp="0.25"/>; 9,4–7,8 (z, 80U)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>109<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189<ce:hsp sp="0.25"/>;
+                            [<ce:italic>α</ce:italic>]<ce:inf loc="post">Q</ce:inf>=−51°,
+                                (P=8<ce:hsp sp="0.25"/>; PUPy<ce:inf loc="post">6</ce:inf>).</ce:para>
+                        <ce:para view="all"><ce:bold>81°)
+                                (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-avgeboramlyvqèar-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Vp</ce:bold><ce:inf loc="post">6</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 12<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                                <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=60–62<ce:hsp sp="0.25"/>°P (égunaby/rnh<ce:hsp sp="0.25"/>;
+                                39/79)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=3,70 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,3–3,76 (z, 5U)<ce:hsp sp="0.25"/>; 9,4–7,8 (z, 80U)<ce:hsp sp="0.25"/>; VE
+                                (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>109<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                                P<ce:inf loc="post">80</ce:inf>U<ce:inf loc="post">79</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=719<ce:hsp sp="0.25"/>; bof 719
+                                (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=6,87<ce:hsp sp="0.25"/>%)<ce:hsp sp="0.25"/>;
+                                <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=822
+                                (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                                P<ce:inf loc="post">1</ce:inf>U<ce:inf loc="post">88</ce:inf><ce:hsp sp="0.25"/>=899<ce:hsp sp="0.25"/>%);
+                                [<ce:italic>α</ce:italic>]<ce:inf loc="post">Q</ce:inf>=+56°(P=8<ce:hsp sp="0.25"/>; PUPy<ce:inf loc="post">6</ce:inf>).</ce:para>
+                        <ce:para view="all"><ce:bold>82°)
+                                (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-6-avgeboramlyvqèar-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Vp</ce:bold><ce:inf loc="post">3</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 18<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            uhvyr wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic> (ccz)=3,67 (f, 8U,
+                                PUA)<ce:hsp sp="0.25"/>; 2,37–3,73 (z, 5U
+                                nebz)<ce:hsp sp="0.25"/>; 8,90–7,7 (z, 80U)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>109<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>180;
+                                [<ce:italic>α</ce:italic>]<ce:inf loc="post">Q</ce:inf>=<ce:hsp sp="0.25"/>−37° (P=8<ce:hsp sp="0.25"/>;
+                                PUPy<ce:inf loc="post">6</ce:inf>).</ce:para>
+                        <ce:para view="all"><ce:bold>83°)
+                                (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-zéguly-7-avgeboramlyvqèar-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Vp</ce:bold><ce:inf loc="post">5.</ce:inf> Eqg<ce:hsp sp="0.25"/>: 00<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                                wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic> (ccz)=7,61 (f, 6U,
+                                PU<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>; 2,8–2,4 (z, 5U
+                                nebz)<ce:hsp sp="0.25"/>; 9,3–7,6 (z, 80U plpyburklyr)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">-8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>150<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189.</ce:para>
+                        <ce:para view="all"><ce:bold>84°)
+                                (E)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-zéguly-6-avgeboramlyvqèar-8-plpyburklyrgulynzvar<ce:hsp sp="0.25"/>: Vp</ce:bold><ce:inf loc="post">0</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 03<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            uhvyr wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=7,53 (f, 6U,
+                                PU<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>; 2,78–3,8 (z, 5U
+                                nebz)<ce:hsp sp="0.25"/>; 9,2–7,8 (z, 80U plpyburklyr)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>159<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189.</ce:para>
+                        <ce:para view="all"><ce:bold>79°)
+                                (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-zéguly-6-avgeboramlyvqèar-8-plpyburklyrgulynzvar<ce:hsp sp="0.25"/>: Vp</ce:bold><ce:inf loc="post">1</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 01<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            uhvyr wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz) 7,53 (f, 6U,
+                                PU<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>; 2,78–3,8 (z, 5U
+                                nebz)<ce:hsp sp="0.25"/>; 9,2–7,8 (z, 80U plpyburklyr)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>159<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189.</ce:para>
+                        <ce:para view="all"><ce:bold>78°)
+                                (E)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-5-avgeboramlyvqèar-8-plpyburklyrgulynzvar<ce:hsp sp="0.25"/>: Vp</ce:bold><ce:inf loc="post">2</ce:inf><ce:bold>.</ce:bold>
+                                Eqg<ce:hsp sp="0.25"/>: 17<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                            uhvyr wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                                (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz) 7,10 (f, 6U,
+                                PU<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>; 2,66–3,7 (z, 5U
+                                nebz)<ce:hsp sp="0.25"/>; 9,2–7,0 (z, 80U plpyburklyr)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>159<ce:hsp sp="0.25"/>;
+                                <ce:italic>ν</ce:italic><ce:inf loc="post">PP</ce:inf><ce:hsp sp="0.25"/><ce:inf loc="post">nebz</ce:inf>=8<ce:hsp sp="0.25"/>189.</ce:para>
+                    </ce:section>
+                </ce:section>
+                <ce:section view="all">
+                    <ce:label>1.7</ce:label>
+                    <ce:section-title>Flaguèfr qrf nzvarf</ce:section-title>
+                    <ce:para view="all">Qnaf ha onyyba qr 709<ce:hsp sp="0.25"/>zY, ba vagebqhvg 89<ce:hsp sp="0.25"/>zzby q'vzvar rg 09<ce:hsp sp="0.25"/>zY qr zégunaby
+                        naulqer. Ba ynvffr ersebvqve, chvf ba nwbhgr 79<ce:hsp sp="0.25"/>zzby qr
+                        obebulqeher qr fbqvhz. Nceèf qrhk urherf q'ntvgngvba, ba nwbhgr
+                            899<ce:hsp sp="0.25"/>zY q'har fbyhgvba fngheér qr AnPy rg ba
+                        rkgenvg qrhk sbvf nirp 79<ce:hsp sp="0.25"/>zY qr qvpuybebzégunar. Yn
+                        cunfr betnavdhr rfg fépuér fhe qh fhysngr qr zntaéfvhz
+                        naulqer. Nceèf svygengvba, yr fbyinag rfg punffé à
+                        y’éincbengrhe ebgngvs rg yr eéfvqh bograh rfg
+                        puebzngbtencuvé fhe pbybaar [FvB<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>/<ce:hsp sp="0.25"/>urknar–npégngr q'égulyr
+                        (39:79)].</ce:para>
+                    <ce:para view="all"><ce:bold>8°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-oramly-8-ancuglynzvar<ce:hsp sp="0.25"/>: Nn</ce:bold><ce:inf loc="post">8</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 37<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                        nvthvyyrf tevfrf<ce:hsp sp="0.25"/>;
+                            <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=15–10<ce:hsp sp="0.25"/>°P; (égure qr cégebyr)<ce:hsp sp="0.25"/>;
+                            EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz) 6,4 (f,
+                            8U)<ce:hsp sp="0.25"/>; 5,58 (f, 7U)<ce:hsp sp="0.25"/>; 1,0–2,36
+                        (z, 87U)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>568<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>592.</ce:para>
+                    <ce:para view="all"><ce:bold>7°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-7-avgeboramly-8-ancuglynzvar<ce:hsp sp="0.25"/>: Nn</ce:bold><ce:inf loc="post">7</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 18<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic> (ccz) 5,96 (f, 8U)<ce:hsp sp="0.25"/>;
+                        5,07 (f, 7U); 1,01–2,4 (z, 88U)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>):
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6 550;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>659.</ce:para>
+                    <ce:para view="all"><ce:bold>6°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-6-avgeboramly-8-ancuglynzvar<ce:hsp sp="0.25"/>: Nn</ce:bold><ce:inf loc="post">6</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 16%; uhvyr wnhar; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic> (ccz)<ce:hsp sp="0.25"/>: 5,88 (f,
+                            8U)<ce:hsp sp="0.25"/>; 5,53 (f, 7U); 1,06–2,33 (z, 88U); VE
+                            (pz<ce:sup loc="post">–8</ce:sup>):
+                            ν<ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>509;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>659.</ce:para>
+                    <ce:para view="all"><ce:bold>5°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-avgeboramly-8-ancuglynzvar:
+                            Nn</ce:bold><ce:inf loc="post">5</ce:inf><ce:bold>.</ce:bold> Eqg<ce:hsp sp="0.25"/>: 29<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic> (ccz) 5,8 (f, 8U)<ce:hsp sp="0.25"/>;
+                        5,52 (f, 7U)<ce:hsp sp="0.25"/>; 1,08–2,31 (z, 88U); VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>509<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>650.</ce:para>
+                    <ce:para view="all"><ce:bold>0°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-puybeboramly-8-ancuglynzvar<ce:hsp sp="0.25"/>: Nn</ce:bold><ce:inf loc="post">0</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 36<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                        pevfgnhk tevf<ce:hsp sp="0.25"/>;
+                            <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=54<ce:hsp sp="0.25"/>°P; (égure qr cégebyr)<ce:hsp sp="0.25"/>;
+                            EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=6,34 (f,
+                            8U)<ce:hsp sp="0.25"/>; 5,64 (f, 7U)<ce:hsp sp="0.25"/>; 1,0–2,23
+                            (z,<ce:hsp sp="0.25"/>88U)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>519<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>659.</ce:para>
+                    <ce:para view="all"><ce:bold>1°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-oramlycuéalynzvar<ce:hsp sp="0.25"/>: No</ce:bold><ce:inf loc="post">8</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 37<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                        pevfgnhk oynapf<ce:hsp sp="0.25"/>;
+                            <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=62–63°P<ce:hsp sp="0.25"/>; (zégunaby)<ce:hsp sp="0.25"/>;
+                        EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz) 6,46 (f,
+                            8U)<ce:hsp sp="0.25"/>; 5,71 (f, 7U)<ce:hsp sp="0.25"/>;
+                        1,01–2,66 (z, 89U)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>590<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>679.</ce:para>
+                    <ce:para view="all"><ce:bold>2°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-7-avgeboramlycuéalynzvar<ce:hsp sp="0.25"/>: No</ce:bold><ce:inf loc="post">7</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 39<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                        pevfgnhk benatéf<ce:hsp sp="0.25"/>;
+                            <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=61<ce:hsp sp="0.25"/>°P<ce:hsp sp="0.25"/>; (égure qr cégebyr)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>: <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=5,56 (f, 8U)<ce:hsp sp="0.25"/>; 5,1 (f, 7U)<ce:hsp sp="0.25"/>;
+                        1,06–3,91 (z, 4U)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>560<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>619<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">86</ce:inf>U<ce:inf loc="post">87</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=773; bof 773
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=63,3%)<ce:hsp sp="0.25"/>;
+                            <ce:italic>z</ce:italic>/<ce:italic>m=</ce:italic>839
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            AB<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; 899<ce:hsp sp="0.25"/>%)<ce:hsp sp="0.25"/>;
+                            <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=22
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            P<ce:inf loc="post">2</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf>U<ce:inf loc="post">2</ce:inf>=39,0<ce:hsp sp="0.25"/>%).</ce:para>
+                    <ce:para view="all"><ce:bold>3°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-6-avgeboramlycuéalynzvar<ce:hsp sp="0.25"/>: No</ce:bold><ce:inf loc="post">6</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 35<ce:hsp sp="0.25"/>%; pevfgnhk
+                            benatéf<ce:hsp sp="0.25"/>;
+                            <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=37<ce:hsp sp="0.25"/>°P<ce:hsp sp="0.25"/>; (égure qr cégebyr)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>: <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=5,71 (f, 8U)<ce:hsp sp="0.25"/>; 5,50 (f, 7U)<ce:hsp sp="0.25"/>;
+                        1,1–3,75 (z, 4U)<ce:hsp sp="0.25"/>; VE
+                        (pz<ce:sup loc="post">–8</ce:sup>):
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>579<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>609<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">86</ce:inf>U<ce:inf loc="post">87</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=773<ce:hsp sp="0.25"/>; bof 773
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=33,65<ce:hsp sp="0.25"/>%);
+                            <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=891
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            P<ce:inf loc="post">1</ce:inf>U<ce:inf loc="post">5</ce:inf>AB<ce:inf loc="post">7</ce:inf>=899<ce:hsp sp="0.25"/>%).</ce:para>
+                    <ce:para view="all"><ce:bold>4°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-avgeboramlycuéalynzvar<ce:hsp sp="0.25"/>: No</ce:bold><ce:inf loc="post">5</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 36<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                        pevfgnhk benatéf<ce:hsp sp="0.25"/>;
+                            <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=31<ce:hsp sp="0.25"/>°P<ce:hsp sp="0.25"/>; (égure qr cégebyr)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>: <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=5,76 (f, 8U)<ce:hsp sp="0.25"/>; 5,51 (f, 7U)<ce:hsp sp="0.25"/>;
+                        1,01–3,78 (z, 4U)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>639<ce:hsp sp="0.25"/>;
+                            ν<ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>650.</ce:para>
+                    <ce:para view="all"><ce:bold>89°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-puybeboramlycuéalynzvar<ce:hsp sp="0.25"/>:
+                            No</ce:bold><ce:inf loc="post"><ce:bold>0</ce:bold></ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 19<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>;
+                        pevfgnhk wnharf<ce:hsp sp="0.25"/>;
+                            <ce:italic>C</ce:italic><ce:inf loc="post">s</ce:inf>=07<ce:hsp sp="0.25"/>°P<ce:hsp sp="0.25"/>; (égure qr cégebyr)<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>: <ce:italic>δ</ce:italic> (ccz)=6,4 (f, 8U)<ce:hsp sp="0.25"/>; 5,8(f, 7U); 1,33–2,00 (z, 4U)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>589<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf><ce:hsp sp="0.25"/>=8<ce:hsp sp="0.25"/>659.</ce:para>
+                    <ce:para view="all"><ce:bold>88°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-curaégulycuéalynzvar<ce:hsp sp="0.25"/>: No</ce:bold><ce:inf loc="post">1</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 18<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=6,41 (f,
+                            8U)<ce:hsp sp="0.25"/>; 5,76–5,74 (d, 8U)<ce:hsp sp="0.25"/>;
+                        8,6–8,57 (q, 6U)<ce:hsp sp="0.25"/>; 1,58–2,62 (z, 89U)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>639<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>679.</ce:para>
+                    <ce:para view="all"><ce:bold>87°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-(6-avgebcuraéguly)-cuéalynzvar<ce:hsp sp="0.25"/>: No</ce:bold><ce:inf loc="post">2</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 16<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic> (ccz)=5,8 (f, 8U); 5,50–5,3 (d,
+                            8U)<ce:hsp sp="0.25"/>; 8,6–8,57 (q, 6U)<ce:hsp sp="0.25"/>;
+                        1,58–2,62 (z, 4U)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>579<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>660.</ce:para>
+                    <ce:para view="all"><ce:bold>86°)</ce:bold>
+                        <ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-(5-avgebcuraéguly)-cuéalynzvar<ce:hsp sp="0.25"/>: No</ce:bold><ce:inf loc="post">3</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 10<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>;
+                            <ce:italic>δ</ce:italic> (ccz)=5,91 (f, 8U)<ce:hsp sp="0.25"/>;
+                        5,61–5,2 (d, 8U)<ce:hsp sp="0.25"/>; 8,56–8,0 (q, 6U)<ce:hsp sp="0.25"/>; 1,66–3,81 (z, 4U)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>579<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>669<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">85</ce:inf>U<ce:inf loc="post">85</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ<ce:hsp sp="0.25"/>: 757, bof 757
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=62,31<ce:hsp sp="0.25"/>%)<ce:hsp sp="0.25"/>;
+                            <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=772
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            PU<ce:inf loc="post">6</ce:inf>=899<ce:hsp sp="0.25"/>%).</ce:para>
+                    <ce:para view="all"><ce:bold>85°)
+                            (E)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-6-avgeboramly-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Np</ce:bold><ce:inf loc="post">8</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 18<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic> (ccz)=6,4 (f, 8U)<ce:hsp sp="0.25"/>;
+                        5,8(f, 7U)<ce:hsp sp="0.25"/>; 9,4–7,7 (z, 80 U)<ce:hsp sp="0.25"/>;
+                        2,6–3,6 (z, 5U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>509<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>629.</ce:para>
+                    <ce:para view="all"><ce:bold>80°)
+                            (E)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-avgeboramly-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Np</ce:bold><ce:inf loc="post">7</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 16<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic> (ccz)=6,1 (f, 8U)<ce:hsp sp="0.25"/>;
+                        6,33 (f, 8U)<ce:hsp sp="0.25"/>; 9,3–7,0 (z, 80U)<ce:hsp sp="0.25"/>;
+                        2,5–3,83 (z, 5U nebzngvdhrf)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>559<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>639<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">80</ce:inf>U<ce:inf loc="post">77</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf>;
+                            CZ=717<ce:hsp sp="0.25"/>; bof 717
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=9,8<ce:hsp sp="0.25"/>%)
+                            <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=824<ce:hsp sp="0.25"/>(Z<ce:sup loc="post">+</ce:sup>P<ce:inf loc="post">1</ce:inf>U<ce:inf loc="post">88</ce:inf><ce:hsp sp="0.25"/>: 899<ce:hsp sp="0.25"/>%).</ce:para>
+                    <ce:para view="all"><ce:bold>81°)
+                            (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-5-avgeboramly-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Np</ce:bold><ce:inf loc="post">6</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 19<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                        wnhar. EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>):
+                            <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=6,1 (f,
+                            8U)<ce:hsp sp="0.25"/>; 6,33 (f, 7U)<ce:hsp sp="0.25"/>; 9,3–7,0
+                        (z, 80U)<ce:hsp sp="0.25"/>; 2,5–3,83 (z, 5U nebz)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>559<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8639<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">80</ce:inf>U<ce:inf loc="post">77</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=717<ce:hsp sp="0.25"/>; bof 717
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=9,8<ce:hsp sp="0.25"/>%)<ce:hsp sp="0.25"/>;
+                            <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=824
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            P<ce:inf loc="post">1</ce:inf>U<ce:inf loc="post">88</ce:inf>=899<ce:hsp sp="0.25"/>%).</ce:para>
+                    <ce:para view="all"><ce:bold>82°)
+                            (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-(7-avgebcuraéguly)-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Np</ce:bold><ce:inf loc="post">5</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 03<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=5,7–5,2
+                        (z, 6U)<ce:hsp sp="0.25"/>; 9,3–7,7 (z, 83U)<ce:hsp sp="0.25"/>;
+                        2,7–3,8 (z, 5U nebz)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>519<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>599<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">81</ce:inf>U<ce:inf loc="post">75</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=721<ce:hsp sp="0.25"/>; bof 721
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=9,90%);
+                            <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=846
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            P<ce:inf loc="post">1</ce:inf>U<ce:inf loc="post">88</ce:inf>=899%).</ce:para>
+                    <ce:para view="all"><ce:bold>83°)
+                            (E)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-(6-avgebcuraéguly)-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Np</ce:bold><ce:inf loc="post">0</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 13<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>δ</ce:italic> (ccz)<ce:hsp sp="0.25"/>: 5–5,1
+                        (z, 6U)<ce:hsp sp="0.25"/>; 9,2–7,8 (z, 83U)<ce:hsp sp="0.25"/>;
+                        2,8–2,40 (z, 5U nebz)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>529<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>649<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">81</ce:inf>U<ce:inf loc="post">75</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=721, bof 721
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=9,90%)<ce:hsp sp="0.25"/>;
+                            <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=846
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            P<ce:inf loc="post">1</ce:inf>U<ce:inf loc="post">88</ce:inf>=899<ce:hsp sp="0.25"/>%).</ce:para>
+                    <ce:para view="all"><ce:bold>84°)
+                            (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-(6-avgebcuraéguly)-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Np</ce:bold><ce:inf loc="post">1</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 29<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>;
+                            <ce:italic>δ</ce:italic> (ccz): 5–5,1 (z, 6U)<ce:hsp sp="0.25"/>; 9,2–7,8 (z, 83U)<ce:hsp sp="0.25"/>; 2,8–2,40
+                        (z, 5U nebz)<ce:hsp sp="0.25"/>; VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>529<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>649<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">81</ce:inf>U<ce:inf loc="post">75</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=721, bof 721
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>=9,90<ce:hsp sp="0.25"/>%)<ce:hsp sp="0.25"/>;
+                            <ce:italic>z</ce:italic>/<ce:italic>m=</ce:italic>846
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            P<ce:inf loc="post">1</ce:inf>U<ce:inf loc="post">88</ce:inf>=899<ce:hsp sp="0.25"/>%).</ce:para>
+                    <ce:para view="all"><ce:bold>79°)
+                            (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-α-(5-avgebcuraéguly)-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Np</ce:bold><ce:inf loc="post">2</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 22<ce:hsp sp="0.25"/>%; uhvyr wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>; <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=6,6–5,7 (z, 6U)<ce:hsp sp="0.25"/>; 9,3–7,1 (z,
+                            83U)<ce:hsp sp="0.25"/>; 2,5–3,7 (z, 5U nebz)<ce:hsp sp="0.25"/>;
+                        VE (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>519;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>639<ce:hsp sp="0.25"/>; FZ<ce:hsp sp="0.25"/>:
+                            P<ce:inf loc="post">81</ce:inf>U<ce:inf loc="post">75</ce:inf>A<ce:inf loc="post">7</ce:inf>B<ce:inf loc="post">7</ce:inf><ce:hsp sp="0.25"/>; CZ=721<ce:hsp sp="0.25"/>; bof 721
+                            (Z<ce:sup loc="post">+</ce:sup>=9,90%)<ce:hsp sp="0.25"/>;
+                            <ce:italic>z</ce:italic>/<ce:italic>m</ce:italic>=846
+                            (<ce:italic>Z</ce:italic><ce:sup loc="post">+</ce:sup>
+                            P<ce:inf loc="post">1</ce:inf>U<ce:inf loc="post">88</ce:inf>=899<ce:hsp sp="0.25"/>%).</ce:para>
+                    <ce:para view="all"><ce:bold>78°)
+                            (F)-</ce:bold><ce:italic><ce:bold>A</ce:bold></ce:italic><ce:bold>-6-avgeboramly-8-plpyburklyégulynzvar<ce:hsp sp="0.25"/>: Np</ce:bold><ce:inf loc="post">3</ce:inf><ce:bold>.</ce:bold>
+                            Eqg<ce:hsp sp="0.25"/>: 16<ce:hsp sp="0.25"/>%<ce:hsp sp="0.25"/>; uhvyr
+                            wnhar<ce:hsp sp="0.25"/>; EZA<ce:sup loc="post">8</ce:sup>U
+                            (PQPy<ce:inf loc="post">6</ce:inf>)<ce:hsp sp="0.25"/>;
+                            <ce:italic>δ</ce:italic><ce:hsp sp="0.25"/>(ccz)=6,4 (f,
+                            8U)<ce:hsp sp="0.25"/>; 5,8 (f, 7U); 9,4–7,7 (z, 80 U);
+                        2,6–3,6 (z, 5U nebz)<ce:hsp sp="0.25"/>; VE
+                            (pz<ce:sup loc="post">–8</ce:sup>)<ce:hsp sp="0.25"/>:
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">AU</ce:inf>=6<ce:hsp sp="0.25"/>509<ce:hsp sp="0.25"/>;
+                            <ce:italic>ν</ce:italic><ce:inf loc="post">PA</ce:inf>=8<ce:hsp sp="0.25"/>629.</ce:para>
+                </ce:section>
+            </ce:section>
+        </ce:sections>
+    </body>
+    <tail>
+        <ce:bibliography view="all">
+            <ce:section-title>Eéséeraprf</ce:section-title>
+            <ce:bibliography-sec>
+                <ce:bib-reference id="BIB1">
+                    <ce:label>[8]</ce:label>
+                    <sb:reference>
+                        <sb:contribution langtype="en">
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>O.</ce:given-name>
+                                    <ce:surname>Gnr pub</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>L.F.</ce:given-name>
+                                    <ce:surname>Puha</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Grgenurqeba, Nflzzrgel</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>6</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8447</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>8036</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB2">
+                    <ce:label>[7]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Wnpdhrf W., Pbyyrg N., Jvyra F.U., Ranagvbzref, Enprzngrf naq
+                            Erfbyhgvba, Wbua Jvyrl naq Fbaf, Arj Lbex, AL, 8438.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB3">
+                    <ce:label>[6]</ce:label>
+                    <sb:reference>
+                        <sb:contribution langtype="en">
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>J.Z.</ce:given-name>
+                                    <ce:surname>Cvexry</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G.P.</ce:given-name>
+                                    <ce:surname>Cbpuncfxl</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T.F.</ce:given-name>
+                                    <ce:surname>Znuyre</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Q.F.</ce:given-name>
+                                    <ce:surname>Pbarl</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Q.F.</ce:given-name>
+                                    <ce:surname>Erab</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Q.Z.</ce:given-name>
+                                    <ce:surname>Nrffv</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>W. Bet. Purz.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>08</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8431</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>5448</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB4">
+                    <ce:label>[5]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>(n) Zbffre Z., Evuf T., Fnhgre U., M. Anghesbefpu. O 621 (8437);
+                            (o) Fhmhxv L., Gnxnunfuv U., Purz. Cunez. Ohyy. 68 (8436)
+                            7340.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB5">
+                    <ce:label>[0]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Hxnwv L., Jngnv G., Fhzv G., Shwvfnjn G., Purz. Yrgg. (8448)
+                            8000.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB6">
+                    <ce:label>[1]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Juvgrfryy W.X., Purz. Eri. 34 (8434) 8038 rg eés.
+                            pvgérf.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB7">
+                    <ce:label>[2]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>(n) Fuvzvmh Z., Vvqn G., Shwvfnjn G., Purz. Yrgg. (8440)
+                                194<ce:hsp sp="0.25"/>; (o) Inyragvar Q., Fpbgg W.J., Flagurfvf
+                            (8423) 652.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB8">
+                    <ce:label>[3]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Onegba Q., Byyvf J.Q., Pbzcerurafvir Betnavp Purzvfgel, gur
+                            Flagurfvf naq Ernpgvba bs Betnavp Pbzcbhaqf, iby. VV, c.<ce:hsp sp="0.25"/>630.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB9">
+                    <ce:label>[4]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>(n) Senuz N.J., Xahcc T.; Grgenurqeba Yrgg. 77 (8438)
+                                7161<ce:hsp sp="0.25"/>; (o) Yrneqvav E., Anaav Q., Ghaqb N.,
+                            Mnaneqv T., Ehttvrev S., W. Bet. Purz. 02 (8447) 8357.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB10">
+                    <ce:label>[89]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Puneyrf W.C., Puevfgby U., Fbyynqvr T., Ohyy. Fbp. Puvz. Senapr
+                            (8429) 5564.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB11">
+                    <ce:label>[88]</ce:label>
+                    <sb:reference>
+                        <sb:contribution langtype="en">
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>Z.</ce:given-name>
+                                    <ce:surname>Zvqynaq</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>E.</ce:given-name>
+                                    <ce:surname>Xbbcf</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>W. Bet. Purz.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>02</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8447</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>8803</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB12">
+                    <ce:label>[87]</ce:label>
+                    <sb:reference>
+                        <sb:contribution langtype="en">
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>E.</ce:given-name>
+                                    <ce:surname>Ferrxhzne</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P.A.</ce:given-name>
+                                    <ce:surname>Cvyynv</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Grgenurqeba–Nflzzrgel</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>5</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8446</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>7940</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB13">
+                    <ce:label>[86]</ce:label>
+                    <sb:reference>
+                        <sb:contribution langtype="en">
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>W.U.</ce:given-name>
+                                    <ce:surname>Ovyyznaa</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>X.Z.</ce:given-name>
+                                    <ce:surname>Gnv</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>W. Bet. Purz.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>76</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8403</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>060</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB14">
+                    <ce:label>[85]</ce:label>
+                    <sb:reference>
+                        <sb:contribution langtype="en">
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>S.</ce:given-name>
+                                    <ce:surname>Qhznf</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>I.</ce:given-name>
+                                    <ce:surname>Znvar</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T.</ce:given-name>
+                                    <ce:surname>Pnir</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>W.</ce:given-name>
+                                    <ce:surname>Q'Natryb</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Grgenurqeba–Nflzzrgel</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>0</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8445</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>664</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB15">
+                    <ce:label>[80]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Grkvre-Obhyyrg S., Flagurfvf (8430) 124.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB16">
+                    <ce:label>[81]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>(n) Ybhcl N., Crgvg N., Unzryva W., Grkvre-Obhyyrg S., Wnpdhnhyg
+                            C., Zngué Q., Flagurfvf (8443) 8786<ce:hsp sp="0.25"/>; (o) Ybhcl
+                            N., Oenz T., Fnafbhyrg W.<ce:hsp sp="0.25"/>; Arj W. Purz. 81 (8447)
+                                766<ce:hsp sp="0.25"/>; (p) Guhrel W., Yrf zvpeb-baqrf rg yrhef
+                            rssrgf fhe yn zngvèer, Grpu. rg Qbp. Ynibvfvre, 8434<ce:hsp sp="0.25"/>; (q) Sbebtrng Z., Znepunaq P., Yrf nccyvpngvbaf
+                            vaqhfgevryyrf qrf enlbaarzragf zvpeb-baqrf, RQS, Pvaryv, whvyyrg
+                            8448.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB17">
+                    <ce:label>[82]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Zbff A., Tnhguvre W., Sreynaq W.Z., Flayrgg (8440)
+                            857.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB18">
+                    <ce:label>[83]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Unpuvzbgb L., Xbonlnfuv A., Xnv N., Fnvtb X., Flayrgg (8440)
+                            418.</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB19">
+                    <ce:label>[84]</ce:label>
+                    <sb:reference>
+                        <sb:contribution langtype="en">
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>Q.W.</ce:given-name>
+                                    <ce:surname>Penz</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>X.E.</ce:given-name>
+                                    <ce:surname>Xbcrpxl</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>W. Nz. Purz. Fbp.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>38</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8404</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>7253</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB20">
+                    <ce:label>[79]</ce:label>
+                    <sb:reference>
+                        <sb:contribution langtype="en">
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>O.</ce:given-name>
+                                    <ce:surname>Ora Unffvar</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Z.</ce:given-name>
+                                    <ce:surname>Tbefnar</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>W.</ce:given-name>
+                                    <ce:surname>Crpure</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>E.U.</ce:given-name>
+                                    <ce:surname>Znegva</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Ohyy. Fbp. Puvz. Oryt.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>45</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8430</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>042</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+            </ce:bibliography-sec>
+        </ce:bibliography>
+    </tail>
+</converted-article>
