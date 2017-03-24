@@ -30,6 +30,15 @@
             </keywords>
         </textClass>
     </xsl:template>
+    <!-- SG - ajout subject NLM/Nature -->
+    <xsl:template match="pubfm/subject |suppfm/subject">
+            <classCode>
+                <xsl:attribute name="scheme">
+                    <xsl:apply-templates select="@type"/>
+                </xsl:attribute>
+                <xsl:value-of select="@code"/>
+            </classCode>
+    </xsl:template>
 
     <xsl:template match="keyword | Keyword | ce:keyword | kwd">
 		<!-- PL: <list><item> under <keywords> is deprecated -->
@@ -89,9 +98,20 @@
     <!-- Springer: Abstract, Heading, Para -->
 
 	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
-    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract">
+    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm">
 		<xsl:if test=".!=''">
 			<abstract>
+				<!-- PL: indicate the type in case of executive summary or web summary (Nature) -->
+				<xsl:if test="name() = 'execsumm'">
+					<xsl:attribute name="type">
+						<xsl:text>executive-summary</xsl:text>
+					</xsl:attribute>	
+				</xsl:if> 
+				<xsl:if test="name() = 'websumm'">
+					<xsl:attribute name="type">
+						<xsl:text>web-summary</xsl:text>
+					</xsl:attribute>	
+				</xsl:if> 
 	            <xsl:variable name="theLanguage">
 	                <xsl:choose>
 	                    <xsl:when test="@Language">

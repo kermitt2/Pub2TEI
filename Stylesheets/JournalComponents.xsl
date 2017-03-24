@@ -3,7 +3,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
-    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley" 
+	xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
@@ -11,7 +12,7 @@
 
     <!-- Article title -->
     <!-- NLM V2.0: ArticleTitle -->
-    <!-- NLM V2.3 article: article-title, alt-title -->
+    <!-- NLM V2.3 article: article-title, alt-title, atl -->
     <!-- BMJ: article-title -->
     <!-- Elsevier: ce:title -->
     <!-- Sage: art_title -->
@@ -19,11 +20,13 @@
     <!-- ScholarOne: article_title, article_sub_title -->
     <!-- EDP: ArticleTitle/Title -->
 
-
     <xsl:template
-        match="article-title/title | ArticleTitle | article-title | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle | titlegrp/title | sb:title">
+        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle">
         <xsl:if test=".!=''">
             <title level="a" type="main">
+                <!--xsl:choose>
+                    <xsl:when test="wiley:citation[@type='book']"></xsl:when>
+                </xsl:choose-->
                 <xsl:if test="@Language">
                     <xsl:attribute name="xml:lang">
                         <xsl:choose>
@@ -42,7 +45,12 @@
             </title>
         </xsl:if>
     </xsl:template>
-
+    <!--SG - <topic> dans titre remplacé par <hi>-->
+    <xsl:template match="atl/topic">
+        <hi>
+            <xsl:apply-templates/>
+        </hi>
+    </xsl:template>
     <!-- BMJ: short-title -->
     <xsl:template match="short-title">
         <xsl:if test=".!=''">
@@ -101,10 +109,44 @@
     <!-- Nature: journal-title -->
     <!-- Elsevier: els:jid, ce:issn -->
 
-    <xsl:template
-        match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title">
+    <xsl:template match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl | wiley:journalTitle">
         <xsl:if test=".!=''">
             <title level="j" type="main">
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="suppttl">
+        <xsl:if test=".!=''">
+            <title level="j" type="sub">
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- SG - ajout des refs book -->
+    <xsl:template
+        match="wiley:bookTitle">
+        <xsl:if test=".!=''">
+            <title level="m" type="main">
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- SG - ajout des refs series -->
+    <xsl:template
+        match="wiley:bookSeriesTitle">
+        <xsl:if test=".!=''">
+            <title level="s" type="main">
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="btl">
+        <xsl:if test=".!=''">
+            <title level="m" type="main">
                 <xsl:apply-templates/>
             </title>
         </xsl:if>
@@ -178,7 +220,7 @@
     </xsl:template>
 
     <xsl:template
-        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper | SeriesPrintISSN">
+        match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper | SeriesPrintISSN | issn[@type='print'] | wiley:issn[@type='print'] ">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
@@ -196,7 +238,7 @@
     </xsl:template>
 
     <xsl:template
-        match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN">
+        match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN | issn[@type='electronic'] | wiley:issn[@type='electronic']">
         <xsl:if test=".!=''">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
@@ -213,13 +255,30 @@
         </xsl:if>
     </xsl:template>
 
+    <!-- SG - ajout DOI niveau book - pour matcher avec les reversement du Hub de métadonnées-->
+    <xsl:template match="wiley:publicationMeta[@level='product']/wiley:doi">
+        <xsl:if test=".!=''">
+            <xsl:variable name="DOIValue" select="string(.)"/>
+            <idno type="book-DOI">
+                <xsl:choose>
+                    <xsl:when test=" starts-with($DOIValue,'DOI')">
+                        <xsl:value-of select="normalize-space( substring-after($DOIValue,'DOI'))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="normalize-space($DOIValue)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </idno>
+        </xsl:if>
+    </xsl:template>
+
     <!-- DOI numbers -->
     <!-- BMJ: doi -->
     <!-- Elsevier: ce:doi -->
     <!-- NLM 2.3 article: article-id[@pub-id-type='doi'] -->
 
     <xsl:template
-        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI">
+        match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI | wiley:publicationMeta[@level='unit']/wiley:doi">
         <xsl:if test=".!=''">
             <xsl:variable name="DOIValue" select="string(.)"/>
             <idno type="DOI">
@@ -233,6 +292,11 @@
                 </xsl:choose>
             </idno>
         </xsl:if>
+    </xsl:template>
+    <xsl:template match="wiley:publicationMeta[@level='unit']/wiley:idGroup/wiley:id">
+            <idno type="article-ID">
+                <xsl:apply-templates select="@value"/>
+            </idno>
     </xsl:template>
 
     <!-- pii -->
@@ -286,8 +350,8 @@
     <!-- Elements for Imprint components in Springer Stage 3 (ArticleFirstPage, ArticleLastPage) -->
     <!-- Elements for Imprint components in BMJ (issue-number, volume) -->
     <!-- Elements for Imprint components in Elsevier () -->
-
-    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr">
+    
+    <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume'] | wiley:vol">
         <xsl:if test=".!=''">
             <biblScope unit="vol">
                 <xsl:apply-templates/>
@@ -319,7 +383,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref">
+    <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue']">
         <xsl:if test=".!=''">
             <biblScope unit="issue">
                 <xsl:apply-templates/>
@@ -356,7 +420,7 @@
 
     <!-- Pagination -->
 
-    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage">
+    <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst'] | wiley:pageFirst">
         <xsl:if test=".!=''">
             <biblScope unit="page" from="{.}">
                 <xsl:apply-templates/>
@@ -364,10 +428,20 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page">
+<!-- SG: nettoyage caractéres polluants dans les données -->
+    <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast'] | wiley:pageLast">
         <xsl:if test=".!=''">
-            <biblScope unit="page" to="{.}">
-                <xsl:apply-templates/>
+            <biblScope unit="page" to="{translate(.,'.','')}">
+                <xsl:value-of select="translate(.,'.','')"/>
+            </biblScope>
+        </xsl:if>
+    </xsl:template>
+    
+    <!--SG - ajout nombre de pages -->
+    <xsl:template match="wiley:count[@type='pageTotal']">
+        <xsl:if test="@number !=''">
+            <biblScope unit="count-page">
+                <xsl:value-of select="@number"/>
             </biblScope>
         </xsl:if>
     </xsl:template>
@@ -381,7 +455,7 @@
     <!-- Springer: PublisherName, PublisherLocation -->
 
     <xsl:template
-        match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher']">
+        match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher'] | wiley:publisherName">
         <xsl:if test=".!=''">
             <publisher>
                 <xsl:apply-templates/>
@@ -389,12 +463,43 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="publisher-loc | pub_location | PublisherLocation">
+    <xsl:template match="publisher-loc | pub_location | PublisherLocation | wiley:publisherLoc">
         <xsl:if test=".!=''">
             <pubPlace>
                 <xsl:apply-templates/>
             </pubPlace>
         </xsl:if>
     </xsl:template>
+
+    <xsl:template match="reftxt/cd">
+        <date>
+            <xsl:attribute name="when">
+                <!-- SG reprise de la date (ex:nrn3258_subject.xml)(26 Aug  2011)
+                cibler sur attribut @year et non plus sur le text() + PL: cleaning of alphabetical characters in the year string -->
+                    <!--xsl:apply-templates select="@year"/-->
+					<xsl:value-of select="replace(@year, '[a-zA-Z]', '')"/>
+			</xsl:attribute> 
+        </date>
+    </xsl:template>
+	
+    <!-- SG: nettoyage caractéres polluants dans les données -->
+    <xsl:template match="wiley:pubYear">
+        <date>
+            <xsl:attribute name="when">
+                <xsl:choose>
+                    <xsl:when test="@year">
+                            <xsl:value-of select="translate(@year,',.[a-zA-Z]','')"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="translate(.,',.[a-zA-Z]','')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+			</xsl:attribute>
+        </date>
+    </xsl:template>
+	
+	<xsl:template match="wiley:titleGroup/wiley:title">
+		<xsl:apply-templates/>
+	</xsl:template>
 
 </xsl:stylesheet>

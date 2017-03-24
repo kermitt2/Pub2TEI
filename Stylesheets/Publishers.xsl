@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" 
     xmlns:mml="http://www.w3.org/1998/Math/MathML"
-    xmlns:els="http://www.elsevier.com/xml/ja/dtd" 
+    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
     <xsl:output encoding="UTF-8" method="xml"/>   
 
@@ -24,16 +24,14 @@
 	<xsl:include href="IOPPatch.xsl"/>
     -->
     <xsl:include href="SpringerCommon.xsl"/>
-
     <xsl:include href="SpringerStage2.xsl"/>
     <xsl:include href="SpringerStage3.xsl"/>
     <xsl:include href="SpringerBookChapter.xsl"/>
-    
     <xsl:include href="RoyalChemicalSociety.xsl"/>
-
+	<xsl:include href="Wiley.xsl"/>
 
     <xsl:template match="/">
-        <xsl:choose>
+        <xsl:choose> 
             <xsl:when test="metadata">
                 <xsl:message>Converting a BMJ article</xsl:message>
             </xsl:when>
@@ -75,8 +73,14 @@
             <xsl:when test="article/art-admin">
                 <xsl:message>Converting a Royal Chemical Society article</xsl:message>
             </xsl:when>
-            <xsl:when test="tei:TEI">
-                <xsl:message>Converting a TEI article into TEI (probably a damned IOP)</xsl:message>
+            <xsl:when test="article/pubfm">
+                <xsl:message>Converting a NPG article</xsl:message>
+            </xsl:when>
+            <xsl:when test="article/suppfm">
+                <xsl:message>Converting a NPG article</xsl:message>
+            </xsl:when>
+            <xsl:when test="wiley:component">
+                <xsl:message>Converting a Wiley article</xsl:message>
             </xsl:when>
             
             <!-- RL: vérif encore très stricte pour le nouveau cas -->

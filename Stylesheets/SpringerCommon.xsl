@@ -512,12 +512,6 @@
 
     <xsl:template match="allowbreak"/>
 
-    <xsl:template match="title">
-        <head>
-            <xsl:apply-templates/>
-        </head>
-    </xsl:template>
-
     <!-- Lists in Springer format -->
     <xsl:template match="OrderedList">
         <list type="ordered">
@@ -579,14 +573,6 @@
     </xsl:template>
 
     <xsl:template match="tgroup">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="tbody">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="thead">
         <xsl:apply-templates/>
     </xsl:template>
 
