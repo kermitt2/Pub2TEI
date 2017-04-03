@@ -28,7 +28,7 @@
                         </address>
                      </affiliation>
                   </author>
-                  <author type="corresp">
+                  <author role="corresp">
                      <persName>
                         <forename type="first">L.</forename>
                         <forename type="first">C.</forename>
