@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" type="main" xml:lang="en">Semi-automatic Endogenous Enrichment of
+                            Collaboratively Constructed Lexical Resources: Piggybacking onto
+                            Wiktionary</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Springer-Verlag Berlin
+                                Heidelberg</authority>
+            <date>2010</date>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <author>
+                     <persName>
+                        <forename type="first">Franck</forename>
+                        <surname>Sajous</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">CLLE-ERSS, CNRS &amp; Université de Toulouse</orgName>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Emmanuel</forename>
+                        <surname>Navarro</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">IRIT, CNRS &amp; Université de Toulouse</orgName>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Bruno</forename>
+                        <surname>Gaume</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">CLLE-ERSS, CNRS &amp; Université de Toulouse</orgName>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Laurent</forename>
+                        <surname>Prévot</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">LPL, CNRS &amp; Université de Provence</orgName>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Yannick</forename>
+                        <surname>Chudy</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">CLLE-ERSS, CNRS &amp; Université de Toulouse</orgName>
+                     </affiliation>
+                  </author>
+                  <title level="a" type="main" xml:lang="en">Semi-automatic Endogenous Enrichment of
+                            Collaboratively Constructed Lexical Resources: Piggybacking onto
+                            Wiktionary</title>
+               </analytic>
+               <monogr>
+                  <title level="m">Advances in Natural Language Processing</title>
+                  <title level="m" type="sub">7th International Conference on NLP, IceTAL 2010, Reykjavik, Iceland,
+                    August 16-18, 2010</title>
+                  <idno type="ISBN">978-3-642-14770-8</idno>
+                  <imprint>
+                     <publisher>Springer Berlin Heidelberg</publisher>
+                     <pubPlace>Berlin, Heidelberg</pubPlace>
+                     <biblScope unit="page" from="332">332</biblScope>
+                     <biblScope unit="page" to="344">344</biblScope>
+                     <biblScope unit="chap">37</biblScope>
+                  </imprint>
+               </monogr>
+               <series>
+                  <author>
+                     <persName>
+                        <forename type="first">David</forename>
+                        <surname>Hutchison</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Lancaster University</orgName>
+                        <address>
+                           <settlement>Lancaster</settlement>
+                           <country key="GB">UNITED KINGDOM</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Takeo</forename>
+                        <surname>Kanade</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Carnegie Mellon University</orgName>
+                        <address>
+                           <settlement>Pittsburgh</settlement>
+                           <region>PA</region>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Josef</forename>
+                        <surname>Kittler</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">University of Surrey</orgName>
+                        <address>
+                           <settlement>Guildford</settlement>
+                           <country key="GB">UNITED KINGDOM</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Jon</forename>
+                        <forename type="first">M.</forename>
+                        <surname>Kleinberg</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Cornell University</orgName>
+                        <address>
+                           <settlement>Ithaca</settlement>
+                           <region>NY</region>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Friedemann</forename>
+                        <surname>Mattern</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">ETH Zurich</orgName>
+                        <address>
+                           <settlement>Zurich</settlement>
+                           <country key="CH">SWITZERLAND</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">John</forename>
+                        <forename type="first">C.</forename>
+                        <surname>Mitchell</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Stanford University</orgName>
+                        <address>
+                           <settlement>Stanford</settlement>
+                           <region>CA</region>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Moni</forename>
+                        <surname>Naor</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Weizmann Institute of Science</orgName>
+                        <address>
+                           <settlement>Rehovot</settlement>
+                           <country key="IL">ISRAEL</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Oscar</forename>
+                        <surname>Nierstrasz</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">University of Bern</orgName>
+                        <address>
+                           <settlement>Bern</settlement>
+                           <country key="CH">SWITZERLAND</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">C.</forename>
+                        <surname>Pandu Rangan</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Indian Institute of Technology</orgName>
+                        <address>
+                           <settlement>Madras</settlement>
+                           <country key="IN">INDIA</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Bernhard</forename>
+                        <surname>Steffen</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">University of Dortmund</orgName>
+                        <address>
+                           <settlement>Dortmund</settlement>
+                           <country key="DE">GERMANY</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Madhu</forename>
+                        <surname>Sudan</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Massachusetts Institute of Technology</orgName>
+                        <address>
+                           <region>MA</region>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Demetri</forename>
+                        <surname>Terzopoulos</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">University of California</orgName>
+                        <address>
+                           <settlement>Los Angeles</settlement>
+                           <region>CA</region>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Doug</forename>
+                        <surname>Tygar</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">University of California</orgName>
+                        <address>
+                           <settlement>Berkeley</settlement>
+                           <region>CA</region>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Moshe</forename>
+                        <forename type="first">Y.</forename>
+                        <surname>Vardi</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Rice University</orgName>
+                        <address>
+                           <settlement>Houston</settlement>
+                           <region>TX</region>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Gerhard</forename>
+                        <surname>Weikum</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Max-Planck Institute of Computer Science</orgName>
+                        <address>
+                           <settlement>Saarbrücken</settlement>
+                           <country key="DE">GERMANY</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <title level="s">Lecture Notes in Computer Science</title>
+                  <idno type="pISSN">0302-9743</idno>
+                  <idno type="eISSN">1611-3349</idno>
+                  <idno type="seriesID">558</idno>
+               </series>
+               <idno type="DOI">10.1007/978-3-642-14770-8_37</idno>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+</TEI>
