@@ -13,6 +13,11 @@
     <public 
         publicId="-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" 
         uri="publishing2.3/journalpublishing.dtd"/>
+    
+    <public 
+        publicId="-//ES//DTD journal article DTD version 4.5.2//EN//XML" 
+        uri="art452/art452.dtd"/>
+    
 </catalog>
 
 

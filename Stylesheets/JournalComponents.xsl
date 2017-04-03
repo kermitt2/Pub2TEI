@@ -156,7 +156,7 @@
 
     <xsl:template
         match="journal_abbreviation | abbrev-journal-title | els:jid | jid | JournalShortTitle | j-shorttitle">
-        <xsl:if test="normalize-space()">
+        <xsl:if test=".!=''">
             <title level="j" type="abbrev">
                 <xsl:value-of select="normalize-space()"/>
             </title>

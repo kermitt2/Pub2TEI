@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" type="main">The prevalence of left ventricular hypertrophy in elite professional footballers</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Elsevier Science Ireland Ltd</publisher>
+            <date>1999</date>
+            <availability status="restricted">
+               <licence>
+                  <p>full-transfer</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <author>
+                     <persName>
+                        <forename type="first">Douglas F</forename>
+                        <surname>Muir</surname>
+                     </persName>
+                     <email>d.f.muir@clinmed.gla.ac.uk</email>
+                     <affiliation>
+                        <orgName type="department">Department of Medicine and Therapeutics</orgName>
+                        <address>
+                           <addrLine>Western Infirmary</addrLine>
+                           <addrLine>University of Glasgow</addrLine>
+                           <addrLine>Glasgow</addrLine>
+                           <addrLine>Scotland G11 6NT</addrLine>
+                           <country key="GB">UNITED KINGDOM</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Graham D</forename>
+                        <surname>MacGregor</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="department">Department of Medicine and Therapeutics</orgName>
+                        <address>
+                           <addrLine>Western Infirmary</addrLine>
+                           <addrLine>University of Glasgow</addrLine>
+                           <addrLine>Glasgow</addrLine>
+                           <addrLine>Scotland G11 6NT</addrLine>
+                           <country key="GB">UNITED KINGDOM</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">Gerald P</forename>
+                        <surname>McCann</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="department">Department of Medicine and Therapeutics</orgName>
+                        <address>
+                           <addrLine>Western Infirmary</addrLine>
+                           <addrLine>University of Glasgow</addrLine>
+                           <addrLine>Glasgow</addrLine>
+                           <addrLine>Scotland G11 6NT</addrLine>
+                           <country key="GB">UNITED KINGDOM</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author>
+                     <persName>
+                        <forename type="first">W.Stewart</forename>
+                        <surname>Hillis</surname>
+                     </persName>
+                     <affiliation>
+                        <orgName type="department">Department of Medicine and Therapeutics</orgName>
+                        <address>
+                           <addrLine>Western Infirmary</addrLine>
+                           <addrLine>University of Glasgow</addrLine>
+                           <addrLine>Glasgow</addrLine>
+                           <addrLine>Scotland G11 6NT</addrLine>
+                           <country key="GB">UNITED KINGDOM</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <title level="a" type="main">The prevalence of left ventricular hypertrophy in elite professional footballers</title>
+               </analytic>
+               <monogr>
+                  <title level="j" type="abbrev">IJCA</title>
+                  <imprint>
+                     <date type="Accepted" when="1999-07-16"/>
+                  </imprint>
+               </monogr>
+               <idno type="DOI">10.1016/S0167-5273(99)00133-3</idno>
+               <idno type="PII">S0167-5273(99)00133-3</idno>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>
+               <hi rend="italic">Background</hi>: We evaluated the prevalence of left ventricular hypertrophy in elite footballers compared with sedentary controls. A total of 141
+                    elite male professional footballers and 32 healthy sedentary controls were studied. Echocardiographic and demographic variables were compared between groups by unpaired
+                        <hi rend="italic">t</hi>-test. <hi rend="italic">Results</hi>: The prevalence of left ventricular hypertrophy with maximal wall thickness values outwith the normal range (&gt;12
+                    mm) was noted. Footballers were significantly younger than controls (20.9 vs. 24.3 years, <hi rend="italic">P</hi>&lt;0.005: 95% CI (−5.2, −1.73)) but there were
+                    no significant differences in height, weight or body surface area between the groups. Each of inter-ventricular septum (10.4 vs. 9.1 mm, <hi rend="italic">P</hi>&lt;0.0001; 95%
+                    CI (0.88, 1.72)), posterior wall (9.2 vs. 8.5 mm, <hi rend="italic">P</hi>&lt;0.01; 95% CI (0.22, 1.21)), left ventricular cavity (systolic and diastolic) (34.5 vs. 28.4 mm,
+                        <hi rend="italic">P</hi>&lt;0.0001; 95% CI (4.31, 7.76) in systole; 50.1 vs. 48.2 mm, <hi rend="italic">P</hi>&lt;0.05; 95% CI (0.15, 3.74) in diastole), aortic root
+                    size (29.1 vs. 27.8 mm, <hi rend="italic">P</hi>&lt;0.05; 95% CI (0.03,2.49)) and left ventricular mass index (112 vs. 89 g/m<hi rend="superscript">2</hi>,
+                    <hi rend="italic">P</hi>&lt;0.0001; 95% CI (14.4, 32.1)) were significantly greater in footballers than in controls. Absolute left ventricular wall thickness &gt;12 mm was present
+                    in 17 footballers (12%) (range 13–15 mm) and in no controls. <hi rend="italic">Conclusions</hi>: Elite professional footballers have increased cardiac dimensions compared
+                    with healthy controls. The prevalence of absolute wall thicknesses outwith the normal range is relatively high.</p>
+            <p>
+               <hi rend="italic">Background</hi>: We evaluated the prevalence of left ventricular hypertrophy in elite footballers compared with sedentary controls. A total of 141
+                    elite male professional footballers and 32 healthy sedentary controls were studied. Echocardiographic and demographic variables were compared between groups by unpaired
+                        <hi rend="italic">t</hi>-test. <hi rend="italic">Results</hi>: The prevalence of left ventricular hypertrophy with maximal wall thickness values outwith the normal range (&gt;12
+                    mm) was noted. Footballers were significantly younger than controls (20.9 vs. 24.3 years, <hi rend="italic">P</hi>&lt;0.005: 95% CI (−5.2, −1.73)) but there were
+                    no significant differences in height, weight or body surface area between the groups. Each of inter-ventricular septum (10.4 vs. 9.1 mm, <hi rend="italic">P</hi>&lt;0.0001; 95%
+                    CI (0.88, 1.72)), posterior wall (9.2 vs. 8.5 mm, <hi rend="italic">P</hi>&lt;0.01; 95% CI (0.22, 1.21)), left ventricular cavity (systolic and diastolic) (34.5 vs. 28.4 mm,
+                        <hi rend="italic">P</hi>&lt;0.0001; 95% CI (4.31, 7.76) in systole; 50.1 vs. 48.2 mm, <hi rend="italic">P</hi>&lt;0.05; 95% CI (0.15, 3.74) in diastole), aortic root
+                    size (29.1 vs. 27.8 mm, <hi rend="italic">P</hi>&lt;0.05; 95% CI (0.03,2.49)) and left ventricular mass index (112 vs. 89 g/m<hi rend="superscript">2</hi>,
+                    <hi rend="italic">P</hi>&lt;0.0001; 95% CI (14.4, 32.1)) were significantly greater in footballers than in controls. Absolute left ventricular wall thickness &gt;12 mm was present
+                    in 17 footballers (12%) (range 13–15 mm) and in no controls. <hi rend="italic">Conclusions</hi>: Elite professional footballers have increased cardiac dimensions compared
+                    with healthy controls. The prevalence of absolute wall thicknesses outwith the normal range is relatively high.</p>
+         </abstract>
+         <textClass>
+            <keywords>
+               <term>
+                Athletes heart
+            </term>
+               <term>
+                Football
+            </term>
+               <term>
+                Exercise
+            </term>
+               <term>
+                Echocardiography
+            </term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      <revisionDesc>
+         <change when="1999-07-15">Received</change>
+         <change when="1999-07-16">Accepted</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="ElsevierSections">
+            <div n="1">
+               <head>Introduction</head>
+               <p>Long-term high intensity athletic training is known to increase cardiac dimensions <ref target="#BIB1 #BIB2">[1,2]</ref>, in particular, left ventricular
+                    cavity size and wall thickness <ref target="#BIB3">[3]</ref>. However, there is a ‘grey area’ between athletes who appear to have particularly large
+                    left ventricular wall dimensions and those with pathological forms of left ventricular hypertrophy (LVH) such as hypertrophic cardiomyopathy. In order to aid differentiation
+                    between normal physiological adaptation and hypertrophic cardiomyopathy, an ‘upper limit’ of physiological hypertrophy of 16 mm has been suggested, although few
+                    athletes in this study had maximum wall thickness &gt;12 mm <ref target="#BIB4">[4]</ref>.</p>
+               <p>Certain sports such as rowing, canoeing and cycling which involve both isotonic and isometric exercise have been identified as being more likely to cause cardiac enlargement
+                        <ref target="#BIB4 #BIB5">[4,5]</ref>, although reports of cardiac enlargement in strength athletes, such as weightlifters or bodybuilders are more
+                    controversial due to their extremely large body size <ref target="#BIB6 #BIB7">[6,7]</ref>. There are few data examining elite football players, studies having
+                    relatively small numbers <ref target="#BIB8 #BIB9 #BIB10 #BIB11">[8–11]</ref> or being included in larger groups of athletes from other disciplines
+                        <ref target="#BIB4">[4]</ref>.</p>
+               <p>The purpose of this study was to examine, by echocardiography, the cardiac dimensions in elite football players in comparison to healthy controls and to further define the
+                    prevalence of ‘athlete’s heart’ in this population.</p>
+            </div>
+            <div n="2">
+               <head>Materials and methods</head>
+               <p>A total of 141 full-time male football players and 32 healthy male controls were studied. The football players were from the playing staff of two Scottish Premier Division
+                    football clubs and from the national youth squad. Many of the players had represented their country at international level and hence comprised an ‘elite’ group.
+                    Controls were recruited from healthy members of hospital staff and were matched for height, weight and body surface area and were not taking regular physical exercise. Assuming an
+                    expected difference in left ventricular mass index (LVMI) between footballers and controls of 15 g/m<hi rend="superscript">2</hi> and a standard deviation of 20 g/m<hi rend="superscript">2</hi>, the
+                    above sample sizes provide a power of 0.97 to detect a difference at <hi rend="italic">P</hi>&lt;0.05. Age, height, weight and body surface area (BSA) by Dubois’ formula
+                        <ref target="#BIB12">[12]</ref>) were recorded for each subject and control. Each footballer’s normal playing position was noted.</p>
+               <p>Echocardiography was performed on an Acuson 128XP/10c computed sonography platform with a variable frequency (2–5 MHz) vector array format transducer. M-Mode images
+                    were obtained by one of two experienced echocardiographers (DM, GMcC) from left parasternal and apical views with the subjects in the left recumbent position. M-Mode images were
+                    obtained by direct visualisation of the left ventricle, left atrium or aortic root in order to ensure perpendicular sections. All examinations were recorded on S-VHS videotape and
+                    analysed later using the on-board software package by one operator (DM) and according to American Society of Echocardiography (ASE) guidelines <ref target="#BIB13 #BIB14 #BIB15">[13–15]</ref>. Particular effort was made not to include overlying trabeculations in the ventricular septum or posterior wall
+                    measurements, which may overestimate wall thickness. Each measurement was made on three consecutive cardiac cycles and an average of the three values was noted. Left ventricular
+                    mass (LVmass) was calculated by Devereux’ formula <ref target="#BIB16">[16]</ref> and left ventricular mass index by dividing LVmass by body surface area.
+                    Relative wall thickness in diastole (RWTd) was calculated according to the following formula, in order to classify the type of hypertrophy, where present:Four patterns of left ventricular
+                    geometry were therefore defined, based on an upper normal limit for LVMI of 124 g/m<hi rend="superscript">2</hi> and RWTd of 0.44, according to previously defined criteria <ref target="#BIB17">[17]</ref>: (1) concentric hypertrophy (increased LVMI and RWTd); (2) eccentric hypertrophy (increased LVMI and normal RWTd); (3) concentric remodelling
+                    (normal LVMI and increased RWTd); and (4) normal geometry (normal LVMI and normal RWTd).</p>
+               <p>Left ventricular diastolic filling patterns were assessed by mitral pulse-wave Doppler echocardiography using standard techniques. Aortic valve flow was assessed by continuous
+                    wave Doppler in order to exclude significant valvular or sub-valvular obstruction.</p>
+               <p>Statistical analysis was carried out using unpaired <hi rend="italic">t</hi>-tests between groups. Statistical significance is stated as <hi rend="italic">P</hi>&lt;0.05
+                    and 95% confidence intervals (CI) are given.</p>
+               <p>In addition to formal statistical testing, the number of subjects and controls with an absolute maximum wall thickness outside the normal range (8–12 mm) were noted in
+                    order to further define the prevalence of ‘athlete’s heart’.</p>
+            </div>
+            <div n="3">
+               <head>Results</head>
+               <p>Demographic characteristics of the two groups are shown in <ref target="#TBL1">Table 1</ref>
+                  <ptr target="#TBL1"/>. Footballers were slightly younger
+                    than controls but there were no significant differences in height, weight or body surface area. Heart rate was significantly lower in footballers than in controls.</p>
+               <p>The echocardiographic dimensions are shown in <ref target="#TBL2">Table 2</ref>
+                  <ptr target="#TBL2"/>. Each of inter-ventricular septum, left
+                    ventricular diastolic dimension, left ventricular posterior wall, left ventricular systolic dimension and aortic root were significantly greater in players than controls. LVmass
+                    and LVMI were also both significantly greater in players than in controls.</p>
+               <p>Doppler measurements are shown in <ref target="#TBL3">Table 3</ref>
+                  <ptr target="#TBL3"/>. The functional indices of diastolic filling were normal in
+                    both footballers and controls, although E/A ratio was higher in footballers than in controls. Aortic velocity was significantly higher in controls than footballers although within
+                    the normal range in both groups.</p>
+               <p>No controls had interventricular septum or posterior wall dimensions greater than 12 mm. Results from subjects with LVH are shown in <ref target="#TBL4">Table
+                        4</ref>
+                  <ptr target="#TBL4"/>. In all, 17 footballers (12%) had a maximal wall thickness &gt;12 mm, which was not, in general, associated with cavity dilatation.
+                    An heterogeneous pattern of left ventricular geometry was observed (seven subjects with concentric hypertrophy; seven subjects with eccentric hypertrophy, and three subjects with
+                    concentric remodelling).</p>
+               <p>No specific playing position was associated with LVH, all playing positions being represented in the group with maximum wall thickness &gt;12 mm.</p>
+            </div>
+            <div n="4">
+               <head>Discussion</head>
+               <p>Football places demands on the cardiovascular system characterised by intermittent high intensity exercise. Analysis of elite Danish footballers showed a time–activity
+                    profile for an entire game of: standing (17.1%), walking (40.4%), low intensity activities including jogging (35.1%), moderate speed running (5.3%), high speed running (2.1%) and
+                    sprinting (0.7%) <ref target="#BIB18">[18]</ref>. However, the cardiovascular adaptations to exercise in this population are more likely to reflect the workload of
+                    training, since more time is spent in training than in competitive match-play. Little work has been done in this area, but energy expenditure during training has been estimated at
+                    around 6100 kJ/session <ref target="#BIB19">[19]</ref>, whereas energy expenditure during match-play has been estimated at around 5700 kJ <ref target="#BIB20">[20]</ref>. In general, most footballers train as a squad and perform both aerobic and resistance work during each session, although goalkeepers tend to
+                    undergo more specifically tailored regimes.</p>
+               <p>The largest study in footballers to date, including 62 Olympic standard players, suggests that wall thickness is not increased outwith the normal range <ref target="#BIB4">[4]</ref>, and other smaller studies agree with this observation <ref target="#BIB8 #BIB9 #BIB10 #BIB11">[8–11]</ref>. However, the
+                    present study indicates that elite footballers have significantly increased cardiac dimensions compared with healthy controls. In contrast to other data suggesting that it is
+                    mainly cavity size that is enlarged in endurance athletes (i.e. eccentric hypertrophy) <ref target="#BIB1 #BIB21 #BIB22">[1,21,22]</ref>, both left ventricular
+                    cavity size and wall thickness are significantly greater in footballers than in controls and a variety of left ventricular geometric patterns are seen. The present study shows that
+                    a maximal wall thickness &gt;12 mm was present in 17 subjects (12%), the highest measurement being 15 mm. In general, most of these footballers did not have co-existing cavity
+                    dilatation outwith the normal range (≤55 mm). Increased wall thickness without cavity dilatation has been suggested to be more in keeping with hypertrophic cardiomyopathy
+                    than ‘athlete’s heart’, but this is not borne out in this population.</p>
+               <p>It has been suggested that maximum wall thickness rarely exceeds 13 mm in ‘athlete’s heart’ <ref target="#BIB4">[4]</ref>, and that
+                    maximum wall thickness outwith this range is suggestive of hypertrophic cardiomyopathy. None of our subjects with maximal wall thickness ≥13 mm had other features of
+                    hypertrophic cardiomyopathy such as systolic anterior motion of the mitral valve, left ventricular outflow tract gradient, abnormal doppler filling pattern or abnormal ECGs and we
+                    consider it very unlikely that any of the subjects had hypertrophic cardiomyopathy. In addition, the prevalence of hypertrophic cardiomyopathy is around 1 in 500 <ref target="#BIB23">[23]</ref>, making the diagnosis statistically improbable in a study group of this size. No subject had other identifiable causes of left ventricular
+                    hypertrophy such as hypertension or aortic valve disease. Our data show a higher E/A ratio in footballers compared with controls, in keeping with improved diastolic function. This
+                    is in contrast to other causes of LVH, which cause diastolic dysfunction <ref target="#BIB24 #BIB25 #BIB26">[24–26]</ref> and E/A reversal.</p>
+               <p>The echocardiographic examinations were performed taking care to ensure that the M-mode section was perpendicular to the left ventricle in order to minimise measurement errors
+                    and special attention was given to overlying structures such as the moderator band, which may be erroneously included in the septal dimension. Therefore overestimation of the LV
+                    wall thickness is an unlikely explanation for the LVH.</p>
+               <p>The reason why the present study found a higher proportion of subjects with LVH than previous studies and why the type of LVH was different (increased wall thickness without
+                    chamber enlargement) is not clear. The study group is larger than in other studies, but even allowing for this the proportion seems high. It is recognised that the classical
+                    ‘British’ style of play is characterised by high work rates for outfield players <ref target="#BIB27">[27]</ref> and therefore a very high degree of
+                    cardiovascular fitness is necessary. Consequently, training methods in the UK may differ from those of the populations previously studied, although we are not aware of any
+                    published data to indicate that this is the case. A further possible explanation for the LVH is different training regimes with more emphasis on resistance training. However,
+                    objective information from the training staff does not indicate that this is the case as all players underwent resistance training two or three times per week in addition to
+                    communal ‘squad-based’ training. There was no apparent effect of different playing positions on the development of LVH in this study, although the study may not be
+                    sufficiently powered to detect such an influence.</p>
+               <p>In conclusion, the present study shows that a high proportion of elite footballers develop left ventricular enlargement, especially an increase in LV wall thickness. This
+                    knowledge is important in distinguishing ‘athlete’s heart’ from hypertrophic cardiomyopathy in this population. Further work is required to establish why only
+                    some elite athletes develop LVH and whether this confers a performance benefit. Since training regimes are similar, a genetic predisposition for the development of LVH seems
+                    probable.</p>
+            </div>
+        </div>
+      </body>
+      <back>
+         <div type="references">
+            <head>References</head>
+            <listBibl>
+                <biblStruct xml:id="BIB1" n="[1]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">J</forename>
+                                    <surname>Morganroth</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">B.J</forename>
+                                    <surname>Maron</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">W.L</forename>
+                                    <surname>Henry</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Comparative left ventricular dimensions in trained athletes</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Ann Intern Med</title>
+                     <imprint>
+                        <biblScope unit="vol">82</biblScope>
+                        <date when="1975">1975</date>
+                        <biblScope unit="page" from="521">521</biblScope>
+                        <biblScope unit="page" to="524">524</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB2" n="[2]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">W.R</forename>
+                                    <surname>Roeske</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">R.A</forename>
+                                    <surname>O’Rourke</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>Klein</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Non-invasive evaluation of ventricular hypertrophy in professional athletes</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Circulation</title>
+                     <imprint>
+                        <biblScope unit="vol">53</biblScope>
+                        <date when="1976">1976</date>
+                        <biblScope unit="page" from="286">286</biblScope>
+                        <biblScope unit="page" to="292">292</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB3" n="[3]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">B.J</forename>
+                                    <surname>Maron</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Structural features of the athlete heart as defined by echocardiography</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">J Am Coll Cardiol</title>
+                     <imprint>
+                        <biblScope unit="vol">7</biblScope>
+                        <date when="1986">1986</date>
+                        <biblScope unit="page" from="190">190</biblScope>
+                        <biblScope unit="page" to="203">203</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB4" n="[4]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>Pelliccia</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">B.J</forename>
+                                    <surname>Maron</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>Spataro</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">The upper limit of physiological hypertrophy in highly trained elite athletes</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">N Engl J Med</title>
+                     <imprint>
+                        <biblScope unit="vol">324</biblScope>
+                        <date when="1991">1991</date>
+                        <biblScope unit="page" from="295">295</biblScope>
+                        <biblScope unit="page" to="301">301</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB5" n="[5]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">R</forename>
+                                    <surname>Rost</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">The athlete’s heart</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Eur Heart J</title>
+                     <imprint>
+                        <biblScope unit="vol">3</biblScope>
+                        <date when="1982">1982</date>
+                        <biblScope unit="page" from="193">193</biblScope>
+                        <biblScope unit="page" to="198">198</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB6" n="[6]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>Pelliccia</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>Spataro</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">G</forename>
+                                    <surname>Caselli</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Absence of left ventricular wall thickening in athletes engaged in intense power training</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Am J Cardiol</title>
+                     <imprint>
+                        <biblScope unit="vol">72</biblScope>
+                        <date when="1993">1993</date>
+                        <biblScope unit="page" from="1048">1048</biblScope>
+                        <biblScope unit="page" to="1054">1054</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB7" n="[7]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>Urhausen</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">W</forename>
+                                    <surname>Kindermann</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Echocardiographic findings in strength- and endurance-trained athletes</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Sports Medicine</title>
+                     <imprint>
+                        <biblScope unit="vol">13</biblScope>
+                        <date when="1992">1992</date>
+                        <biblScope unit="page" from="270">270</biblScope>
+                        <biblScope unit="page" to="284">284</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB8" n="[8]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">V</forename>
+                                    <surname>Di Bello</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">G</forename>
+                                    <surname>Cini</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">G</forename>
+                                    <surname>Santoro</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Echocardiographic evaluation of left ventricular mass and performance in football-players</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">J Sports Cardiol</title>
+                     <imprint>
+                        <biblScope unit="vol">2</biblScope>
+                        <date when="1985">1985</date>
+                        <biblScope unit="page" from="32">32</biblScope>
+                        <biblScope unit="page" to="37">37</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB9" n="[9]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">N</forename>
+                                    <surname>Muss</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>Aigner</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">F</forename>
+                                    <surname>Haslauer</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Echocardiographic and ergospirometric examinations of the players in an Austrian first division football team</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Schweizerische Zeitschrift fur Sportmedizin</title>
+                     <imprint>
+                        <biblScope unit="vol">28</biblScope>
+                        <date when="1980">1980</date>
+                        <biblScope unit="page" from="104">104</biblScope>
+                        <biblScope unit="page" to="109">109</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB10" n="[10]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">C</forename>
+                                    <surname>Cuspidi</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">L</forename>
+                                    <surname>Sampieri</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">L</forename>
+                                    <surname>Boselli</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Left ventricular diastolic function in athletes and borderline hypertensives with mild cardiac hypertrophy</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Cardiology</title>
+                     <imprint>
+                        <biblScope unit="vol">78</biblScope>
+                        <date when="1991">1991</date>
+                        <biblScope unit="page" from="278">278</biblScope>
+                        <biblScope unit="page" to="281">281</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB11" n="[11]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>Urhausen</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">T</forename>
+                                    <surname>Monz</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">W</forename>
+                                    <surname>Kindermann</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Sports-specific adaptation of left ventricular muscle mass in athletes heart II: an echocardiographic study with 400-m runners and soccer
+                                    players</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Int J Sports Med</title>
+                     <imprint>
+                        <biblScope unit="vol">17</biblScope>
+                        <date when="1996">1996</date>
+                        <biblScope unit="page" from="152">152</biblScope>
+                        <biblScope unit="page" to="156">156</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB12" n="[12]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">D</forename>
+                                    <surname>Dubois</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">E.F</forename>
+                                    <surname>Dubois</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">A formula to estimate the approximate surface area if height and weight be known</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Arch Intern Med</title>
+                     <imprint>
+                        <biblScope unit="vol">17</biblScope>
+                        <date when="1916">1916</date>
+                        <biblScope unit="page" from="863">863</biblScope>
+                        <biblScope unit="page" to="871">871</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB13" n="[13]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">W.L</forename>
+                                    <surname>Henry</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>DeMaria</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">R</forename>
+                                    <surname>Gramiak</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Report of the American Society of Echocardiography committee on nomenclature and standards in two-dimensional echocardiography</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Circulation</title>
+                     <imprint>
+                        <biblScope unit="vol">62</biblScope>
+                        <date when="1980">1980</date>
+                        <biblScope unit="page" from="212">212</biblScope>
+                        <biblScope unit="page" to="217">217</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB14" n="[14]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">D.J</forename>
+                                    <surname>Sahn</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">A</forename>
+                                    <surname>DeMaria</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">J</forename>
+                                    <surname>Kisslo</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Recommendations regarding quantitation in M-Mode echocardiography: results of a survey of echocardiographic measurements</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Circulation</title>
+                     <imprint>
+                        <biblScope unit="vol">58</biblScope>
+                        <date when="1978">1978</date>
+                        <biblScope unit="page" from="1072">1072</biblScope>
+                        <biblScope unit="page" to="1083">1083</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB15" n="[15]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">N.B</forename>
+                                    <surname>Schiller</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Two-dimensional echocardiographic determination of left ventricular volume, systolic function, and mass. Summary and discussion of the 1989
+                                    recommendations of the American Society of Echocardiography</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Circulation</title>
+                     <imprint>
+                        <biblScope unit="vol">84</biblScope>
+                        <date when="1991">1991</date>
+                        <biblScope unit="page" from="I280">I280</biblScope>
+                        <biblScope unit="page" to="I287">I287</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB16" n="[16]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">R.B</forename>
+                                    <surname>Devereux</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Detection of left ventricular hypertrophy by M-mode echocardiography: anatomic validation, standardization, and comparison to other methods</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Hypertension</title>
+                     <imprint>
+                        <biblScope unit="vol">9</biblScope>
+                        <date when="1987">1987</date>
+                        <biblScope unit="page" from="II19">II19</biblScope>
+                        <biblScope unit="page" to="II26">II26</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB17" n="[17]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">H</forename>
+                                    <surname>Tomiyama</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">N</forename>
+                                    <surname>Doba</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">T</forename>
+                                    <surname>Kushiro</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Prospective studies on left ventricular geometric patterns and exercise tolerance in unmedicated men with borderline and mild hypertension</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">J Hypertens</title>
+                     <imprint>
+                        <biblScope unit="vol">14</biblScope>
+                        <date when="1996">1996</date>
+                        <biblScope unit="page" from="1223">1223</biblScope>
+                        <biblScope unit="page" to="1228">1228</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB18" n="[18]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">J</forename>
+                                    <surname>Bangsbo</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">The physiology of soccer</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Acta Physiol Scand</title>
+                     <imprint>
+                        <biblScope unit="vol">151</biblScope>
+                        <date when="1994">1994</date>
+                        <biblScope unit="page" from="1">1</biblScope>
+                        <biblScope unit="page" to="155">155</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB19" n="[19]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">T</forename>
+                                    <surname>Reilly</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">V</forename>
+                                    <surname>Thomas</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Estimated daily energy expenditures of professional association footballers</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Ergonomics</title>
+                     <imprint>
+                        <biblScope unit="vol">22</biblScope>
+                        <date when="1979">1979</date>
+                        <biblScope unit="page" from="541">541</biblScope>
+                        <biblScope unit="page" to="548">548</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB20" n="[20]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">J</forename>
+                                    <surname>Bangsbo</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Energy demands in competitive soccer</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">J Sports Sci</title>
+                     <imprint>
+                        <biblScope unit="vol">12</biblScope>
+                        <date when="1994">1994</date>
+                        <biblScope unit="page" from="S5">S5</biblScope>
+                        <biblScope unit="page" to="S12">S12</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB21" n="[21]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">R.H</forename>
+                                    <surname>Underwood</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">J.L</forename>
+                                    <surname>Schwade</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Noninvasive analysis of cardiac function in elite distance runners: echocardiography, vectorcardigraphy and cardiac intervals</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Ann NY Acad Sci</title>
+                     <imprint>
+                        <biblScope unit="vol">301</biblScope>
+                        <date when="1977">1977</date>
+                        <biblScope unit="page" from="297">297</biblScope>
+                        <biblScope unit="page" to="309">309</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB22" n="[22]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">G.W</forename>
+                                    <surname>Heath</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">J.M</forename>
+                                    <surname>Hagberg</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">A.A</forename>
+                                    <surname>Eshani</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">A physiological comparison of young and older endurance athletes</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">J Appl Physiol (Respir Environ Exerc Physiol)</title>
+                     <imprint>
+                        <biblScope unit="vol">51</biblScope>
+                        <date when="1981">1981</date>
+                        <biblScope unit="page" from="634">634</biblScope>
+                        <biblScope unit="page" to="640">640</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB23" n="[23]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">B.J</forename>
+                                    <surname>Maron</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">J.M</forename>
+                                    <surname>Gardin</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">J.M</forename>
+                                    <surname>Flack</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Prevalence of hypertrophic cardiomyopathy in a general population of young adults. Echocardiographic analysis of 4111 subjects in the CARDIA
+                                    Study</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Circulation</title>
+                     <imprint>
+                        <biblScope unit="vol">92</biblScope>
+                        <date when="1995">1995</date>
+                        <biblScope unit="page" from="785">785</biblScope>
+                        <biblScope unit="page" to="789">789</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB24" n="[24]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">B.J</forename>
+                                    <surname>Maron</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">P</forename>
+                                    <surname>Spirito</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">K.J</forename>
+                                    <surname>Green</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Noninvasive assessment of left ventricular diastolic function by pulsed doppler echocardiography in patients with hypertrophic
+                                    cardiomyopathy</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">J Am Coll Cardiol</title>
+                     <imprint>
+                        <biblScope unit="vol">10</biblScope>
+                        <date when="1987">1987</date>
+                        <biblScope unit="page" from="733">733</biblScope>
+                        <biblScope unit="page" to="742">742</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB25" n="[25]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">B</forename>
+                                    <surname>Villari</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">G</forename>
+                                    <surname>Vassalli</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">E.S</forename>
+                                    <surname>Monrad</surname>
+                                </author>
+                                
+                            <title level="a" type="main">
+                                <title type="main">Normalization of diastolic dysfunction late after valve replacement</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">Circulation</title>
+                     <imprint>
+                        <biblScope unit="vol">91</biblScope>
+                        <date when="1995">1995</date>
+                        <biblScope unit="page" from="235">235</biblScope>
+                        <biblScope unit="page" to="238">238</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB26" n="[26]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">B.H</forename>
+                                    <surname>Lorell</surname>
+                                </author>
+                                <author>
+                                    <forename type="first">W</forename>
+                                    <surname>Grossman</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Cardiac hypertrophy: the consequences for diastole</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <title type="main">J Am Coll Cardiol</title>
+                     <imprint>
+                        <biblScope unit="vol">9</biblScope>
+                        <date when="1987">1987</date>
+                        <biblScope unit="page" from="1189">1189</biblScope>
+                        <biblScope unit="page" to="1193">1193</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+                <biblStruct xml:id="BIB27" n="[27]">
+                  <analytic>
+                                <author>
+                                    <forename type="first">T</forename>
+                                    <surname>Reilly</surname>
+                                </author>
+                            <title level="a" type="main">
+                                <title type="main">Motion characteristics</title>
+                            </title>
+                  </analytic>
+                  <monogr>
+                     <imprint>
+                        <biblScope unit="page" from="39">39</biblScope>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+            </listBibl>
+         </div>
+      </back>
+   </text>
+</TEI>
