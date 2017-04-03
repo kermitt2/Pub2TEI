@@ -86,8 +86,7 @@
     <!-- PL: removed, Elsevier abstracts are processed in Elsevier.xsl -->
     <!-- Springer: Abstract, Heading, Para -->
 
-    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm">
-        <xsl:if test=". != ''">
+    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm"><xsl:if test=". != ''">
             <abstract>
                 <!-- PL: indicate the type in case of executive summary or web summary (Nature) -->
                 <xsl:if test="name() = 'execsumm'">
@@ -99,7 +98,51 @@
                     <xsl:attribute name="type">
                         <xsl:text>web-summary</xsl:text>
                     </xsl:attribute>
-                </xsl:if>
+                </xsl:if> 
+	            <xsl:variable name="theLanguage">
+	                <xsl:choose>
+	                    <xsl:when test="@Language">
+	                        <xsl:value-of select="@Language"/>
+	                    </xsl:when>
+	                    <xsl:when test="@xml:lang">
+							<xsl:if test="@xml:lang">
+								<xsl:if test="@xml:lang != ''">
+									<xsl:value-of select="@xml:lang"/>
+								</xsl:if>
+							</xsl:if>	
+	                    </xsl:when>
+	                </xsl:choose>
+	            </xsl:variable> 
+	            <xsl:if test="$theLanguage">
+					<xsl:if test="$theLanguage != ''">
+	                    <xsl:attribute name="xml:lang">
+	                        <xsl:call-template name="Varia2ISO639">
+	                            <xsl:with-param name="code" select="$theLanguage"/>
+	                        </xsl:call-template>
+	                    </xsl:attribute>
+					</xsl:if>
+	            </xsl:if>
+				<!-- PL: only paragraphs are taken because <div> are not allowed under <abstract> currently -->
+				<xsl:apply-templates select="*/ce:simple-para"/>
+	            <xsl:choose>
+	                <xsl:when test="ce:abstract-sec">
+	                    <xsl:apply-templates select="*/ce:simple-para"/>
+	                </xsl:when>
+	                <xsl:when test="p | Para | ce:abstract-sec | AbstractSection">
+	                    <xsl:apply-templates/>
+	                </xsl:when>
+	                <xsl:otherwise>
+	                    <p><xsl:apply-templates/></p>
+	                </xsl:otherwise>
+	            </xsl:choose>
+			</abstract>
+		</xsl:if>
+    </xsl:template>
+
+
+    <!--xsl:template match="abstract | Abstract">
+        <xsl:if test=".!=''">
+            <div type="abstract">
                 <xsl:variable name="theLanguage">
                     <xsl:choose>
                         <xsl:when test="@Language">
@@ -123,7 +166,7 @@
                         </xsl:attribute>
                     </xsl:if>
                 </xsl:if>
-                <!-- PL: only paragraphs are taken because <div> are not allowed under <abstract> currently -->
+                
                 <xsl:apply-templates select="*/ce:simple-para"/>
                 <xsl:choose>
                     <xsl:when test="ce:abstract-sec">
@@ -140,7 +183,7 @@
                 </xsl:choose>
             </abstract>
         </xsl:if>
-    </xsl:template>
+    </xsl:template>-->
 
     <!-- Specific to SPringer: AbstractSection -->
     <xsl:template match="AbstractSection">

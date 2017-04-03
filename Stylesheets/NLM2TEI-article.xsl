@@ -25,6 +25,27 @@
                     <titleStmt>
                         <xsl:apply-templates select="front/article-meta/title-group/article-title | fm/atl"/>
                     </titleStmt>
+                    <!-- PL: pour les suppinfo, sous fileDesc/editionStmt/edition/ref, solution de HAL --> 
+                    <xsl:if test="pubfm/suppinfo">
+                        <editionStmt>
+                            <edition>
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="pubfm/suppinfo/@id"/>
+                                </xsl:attribute>
+                                <xsl:apply-templates select="pubfm/suppinfo/suppobj"/>
+                            </edition>	
+                        </editionStmt>
+                    </xsl:if>
+                    <xsl:if test="suppfm/suppinfo">
+                        <editionStmt>
+                            <edition>
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="suppfm/suppinfo/@id"/>
+                                </xsl:attribute>
+                                <xsl:apply-templates select="suppfm/suppinfo/suppobj"/>
+                            </edition>	
+                        </editionStmt>
+                    </xsl:if>
                     <publicationStmt>
                         <xsl:if test="front/journal-meta/publisher">
                             <xsl:apply-templates select="front/journal-meta/publisher/*"/>
@@ -192,16 +213,15 @@
                 <idno type="articleId">
                     <xsl:value-of select="//ArticleId | //article/@id"/>
                 </idno>
+                <xsl:apply-templates select="doi"/>
             </analytic>
             <monogr>
                 <xsl:apply-templates select="journal-meta/journal-title | jtl | suppmast/jtl | suppmast/suppttl"/>
                 <xsl:apply-templates select="journal-meta/journal-id"/>
                 <xsl:apply-templates select="journal-meta/abbrev-journal-title"/>
                 <xsl:apply-templates select="journal-meta/issue-title"/>
-
-                <xsl:apply-templates select="journal-meta/issn | issn | parent/issn"/>
-                <xsl:apply-templates select="doi"/>
-                <imprint>
+                <xsl:apply-templates select="journal-meta/issn | issn |parent/issn"/>
+				<imprint>
                     <xsl:apply-templates select="journal-meta/publisher/*"/>
 
                     <xsl:for-each select="article-meta/pub-date">
@@ -392,7 +412,6 @@
             </affiliation>
         </xsl:if>
     </xsl:template>
-
     <xsl:template match="caff" mode="sourceDesc">
         <xsl:if test="email">
             <email>
@@ -403,7 +422,6 @@
             <xsl:value-of select="."/>
         </affiliation>
     </xsl:template>
-
     <xsl:template match="aff" mode="sourceDesc">
         <affiliation>
             <xsl:choose>
@@ -425,6 +443,16 @@
                     <xsl:value-of select="."/>
                 </xsl:otherwise>
             </xsl:choose>
+        </affiliation>
+    </xsl:template>
+    <xsl:template match="caff" mode="sourceDesc">
+        <xsl:if test="email">
+            <email>
+                <xsl:value-of select="email"/>
+            </email>
+        </xsl:if>
+        <affiliation>
+            <xsl:value-of select="."/> 
         </affiliation>
     </xsl:template>
     <xsl:template match="aff/bold">
@@ -891,9 +919,12 @@
     </xsl:template>
 
     <xsl:template match="copyright-holder | cpn">
-        <authority>
-            <xsl:apply-templates/>
-        </authority>
+        <availability>
+            <!-- SG: ajout licence -->
+            <licence>
+                <xsl:apply-templates/>
+            </licence>
+        </availability>
     </xsl:template>
 
     <xsl:template match="allowbreak"/>
