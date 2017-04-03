@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+  <PublisherInfo>
+    <PublisherName>Springer-Verlag</PublisherName>
+    <PublisherLocation>Berlin/Heidelberg</PublisherLocation>
+  </PublisherInfo>
+  <Journal>
+    <JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+      <JournalID>428</JournalID>
+      <JournalPrintISSN>0376-0081</JournalPrintISSN>
+      <JournalElectronicISSN>1432-2307</JournalElectronicISSN>
+      <JournalTitle>Virchows Archiv für pathologische Anatomie und Physiologie und für klinische Medizin</JournalTitle>
+      <JournalAbbreviatedTitle>Virchows Arch. path Anat.</JournalAbbreviatedTitle>
+      <JournalSubjectGroup>
+        <JournalSubject Type="Primary">Medicine &amp; Public Health</JournalSubject>
+        <JournalSubject Type="Secondary">Pathology</JournalSubject>
+      </JournalSubjectGroup>
+    </JournalInfo>
+    <Volume>
+      <VolumeInfo TocLevels="0" VolumeType="Regular">
+        <VolumeIDStart>326</VolumeIDStart>
+        <VolumeIDEnd>326</VolumeIDEnd>
+        <VolumeIssueCount>6</VolumeIssueCount>
+      </VolumeInfo>
+      <Issue IssueType="Regular">
+        <IssueInfo TocLevels="0">
+          <IssueIDStart>1</IssueIDStart>
+          <IssueIDEnd>1</IssueIDEnd>
+          <IssueArticleCount>7</IssueArticleCount>
+          <IssueHistory>
+            <CoverDate>
+              <DateString>8. NOVEMBER 1954</DateString>
+              <Year>1954</Year>
+              <Month>11</Month>
+            </CoverDate>
+          </IssueHistory>
+          <IssueCopyright>
+            <CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
+            <CopyrightYear>1954</CopyrightYear>
+          </IssueCopyright>
+        </IssueInfo>
+        <Article ID="Art6">
+          <ArticleInfo ArticleType="OriginalPaper" ContainsESM="No" Language="De" NumberingStyle="Unnumbered" TocLevels="0">
+            <ArticleID>BF02438653</ArticleID>
+            <ArticleDOI>10.1007/BF02438653</ArticleDOI>
+            <ArticleSequenceNumber>6</ArticleSequenceNumber>
+            <ArticleTitle Language="De">Histochemische Untersuchungen an primären Lipoidosen: Amaurotische Idiotie, Gargoylismus, Niemann-Picksche Krankheit, Gauchersche Krankheit, mit besonderer Berücksichtigung des Zentralnervensystems</ArticleTitle>
+            <ArticleFirstPage>89</ArticleFirstPage>
+            <ArticleLastPage>118</ArticleLastPage>
+            <ArticleHistory>
+              <RegistrationDate>
+                <Year>2006</Year>
+                <Month>5</Month>
+                <Day>29</Day>
+              </RegistrationDate>
+              <Received>
+                <Year>1954</Year>
+                <Month>6</Month>
+                <Day>1</Day>
+              </Received>
+            </ArticleHistory>
+            <ArticleCopyright>
+              <CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
+              <CopyrightYear>1954</CopyrightYear>
+            </ArticleCopyright><ArticleGrants Type="Regular"><MetadataGrant Grant="OpenAccess"/><AbstractGrant Grant="OpenAccess"/><BodyPDFGrant Grant="Restricted"/><BodyHTMLGrant Grant="Restricted"/><BibliographyGrant Grant="Restricted"/><ESMGrant Grant="Restricted"/></ArticleGrants>
+            <ArticleContext>
+              <JournalID>428</JournalID>
+              <VolumeIDStart>326</VolumeIDStart>
+              <VolumeIDEnd>326</VolumeIDEnd>
+              <IssueIDStart>1</IssueIDStart>
+              <IssueIDEnd>1</IssueIDEnd>
+            </ArticleContext>
+          </ArticleInfo>
+          <ArticleHeader>
+            <AuthorGroup>
+              <Author AffiliationIDS="Aff1 Aff2">
+                <AuthorName DisplayOrder="Western">
+                  <Prefix>Dr.</Prefix>
+                  <GivenName>Paul</GivenName>
+                  <GivenName>Bernd</GivenName>
+                  <FamilyName>Diezel</FamilyName>
+                </AuthorName>
+              </Author>
+              <Affiliation ID="Aff1">
+                <OrgDivision>Neuropathologische Abteilung</OrgDivision>
+                <OrgName>Max-Planck-Institut für Hirnforschung Gießen</OrgName>
+                <OrgAddress>
+                  <City>Gießen</City>
+                  <Country>Deutschland</Country>
+                </OrgAddress>
+              </Affiliation>
+              <Affiliation ID="Aff2">
+                <OrgName>Pathologisches Institut der Universität</OrgName>
+                <OrgAddress>
+                  <Street>Voßstraße 2</Street>
+                  <City>Heidelberg</City>
+                </OrgAddress>
+              </Affiliation>
+            </AuthorGroup>
+            <ArticleNote Type="Misc">
+              <SimplePara>Mit 6 Textabbildungen.</SimplePara>
+            </ArticleNote>
+            <ArticleNote Type="Misc">
+              <SimplePara>Die Untersuchung wurde mit Unterstützung der Deutschen Forschungs-gemeinschaft durchgeführt.</SimplePara>
+            </ArticleNote>
+          </ArticleHeader>
+<NoBody></NoBody>
+</Article>
+      </Issue>
+    </Volume>
+  </Journal>
+</Publisher>

@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://ej.iop.org/dtd/nlm-3.0/journalpublishing3.dtd">
+-->
+<!DOCTYPE article SYSTEM "../../../../../Workbench/Pub2TEIPrivate/Samples/DTDs/publishing/journalpublishing3.dtd">
+<article article-type="research-article" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ansn</journal-id>
+            <journal-id journal-id-type="coden">ANSNCK</journal-id>
+            <journal-title-group>
+                <journal-title>Advances in Natural Sciences: Nanoscience and Nanotechnology</journal-title>
+                <abbrev-journal-title abbrev-type="IOP">ANSN</abbrev-journal-title>
+                <abbrev-journal-title abbrev-type="publisher">Adv. Nat. Sci.: Nanosci. Nanotechnol.</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">2043-6262</issn>
+            <issn pub-type="epub">2043-6254</issn>
+            <publisher>
+                <publisher-name>IOP Publishing</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="publisher-id">ansn432005</article-id>
+            <article-id pub-id-type="doi">10.1088/2043-6262/3/3/035002</article-id>
+            <article-id pub-id-type="manuscript">432005</article-id>
+            <article-categories>
+                <subj-group subj-group-type="article-type">
+                    <subject>Paper</subject>
+                </subj-group>
+                <subj-group subj-group-type="section">
+                    <subject>Reviews</subject>
+                </subj-group>
+            </article-categories>
+            <title-group>
+                <article-title>Preparation and anti-cancer activity of polymer-encapsulated curcumin nanoparticles</article-title>
+                <alt-title alt-title-type="ascii">Preparation and anti-cancer activity of polymer-encapsulated curcumin nanoparticles</alt-title>
+                <alt-title alt-title-type="short">Preparation and anti-cancer activity of polymer-encapsulated curcumin nanoparticles</alt-title>
+                <alt-title alt-title-type="short-ascii">Preparation and anti-cancer activity of polymer-encapsulated curcumin nanoparticles</alt-title>
+            </title-group>
+            <contrib-group content-type="all">
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Ha</surname>
+                        <given-names>Phuong Thu</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432005af1">1</xref>
+                    <xref ref-type="aff" rid="ansn432005em1"/>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Le</surname>
+                        <given-names>Mai Huong</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432005af2">2</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Hoang</surname>
+                        <given-names>Thi My Nhung</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432005af3">3</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Huong Le</surname>
+                        <given-names>Thi Thu</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432005af4">4</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Duong</surname>
+                        <given-names>Tuan Quang</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432005af5">5</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Ha Tran</surname>
+                        <given-names>Thi Hong</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432005af2">2</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Tran</surname>
+                        <given-names>Dai Lam</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432005af1">1</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Nguyen</surname>
+                        <given-names>Xuan Phuc</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432005af1">1</xref>
+                    <xref ref-type="aff" rid="ansn432005em2"/>
+                </contrib>
+                <aff id="ansn432005af1"><label>1</label><institution>Institute of Materials Science (IMS)</institution>, Vietnam Academy of Science and Technology (VAST), 18 Hoang Quoc Viet, Hanoi,
+                        <country>Vietnam</country></aff>
+                <aff id="ansn432005af2"><label>2</label><institution>Institute of Natural Products Chemistry</institution>, Vietnam Academy of Science and Technology (VAST), 18 Hoang Quoc Viet, Hanoi,
+                        <country>Vietnam</country></aff>
+                <aff id="ansn432005af3"><label>3</label><institution>Hanoi University of Science</institution>, <institution>Vietnam National University</institution>, 334 Nguyen Trai, Thanh Xuan,
+                    Hanoi, <country>Vietnam</country></aff>
+                <aff id="ansn432005af4"><label>4</label><institution>Hanoi</institution>
+                    <country>University</country>
+                    <institution>of Agriculture</institution>, Trau Quy, Gia Lam, Hanoi, <country>Vietnam</country></aff>
+                <aff id="ansn432005af5"><label>5</label>Department of Chemistry, <institution>Hue University</institution>, 34 Le Loi, Hue City, <country>Vietnam</country></aff>
+                <ext-link ext-link-type="email" id="ansn432005em1">thuhp@ims.vast.ac.vn</ext-link>
+                <ext-link ext-link-type="email" id="ansn432005em2">phucnx@ims.vast.ac.vn</ext-link>
+                <author-comment content-type="short-author-list">
+                    <p>P T Ha <italic>et al</italic></p>
+                </author-comment>
+            </contrib-group>
+            <pub-date pub-type="ppub">
+                <month>9</month>
+                <year>2012</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>29</day>
+                <month>5</month>
+                <year>2012</year>
+            </pub-date>
+            <volume>3</volume>
+            <issue>3</issue>
+            <elocation-id content-type="artnum">035002</elocation-id>
+            <history>
+                <date date-type="received">
+                    <day>14</day>
+                    <month>2</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>28</day>
+                    <month>2</month>
+                    <year>2012</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>&copy; 2012 Vietnam Academy of Science &amp; Technology</copyright-statement>
+                <copyright-year>2012</copyright-year>
+            </permissions>
+            <self-uri xlink:href="http://stacks.iop.org/ANSN/3/035002"/>
+            <abstract>
+                <title>Abstract</title>
+                <p>Curcumin (Cur) is a yellow compound isolated from rhizome of the herb <italic>curcuma longa</italic>. Curcumin possesses antioxidant, anti-inflammatory, anti-carcinogenic and
+                    antimicrobial properties, and suppresses proliferation of many tumor cells. However, the clinical application of curcumin in cancer treatment is considerably limited due to its
+                    serious poor delivery characteristics. In order to increase the hydrophilicity and drug delivery capability, we encapsulated curcumin into copolymer PLA-TPGS, 1,3-beta-glucan
+                    (Glu), O-carboxymethyl chitosan (OCMCs) and folate-conjugated OCMCs (OCMCs-Fol). These polymer-encapsulated curcumin nanoparticles (Cur-PLA-TPGS, Cur-Glu, Cur-OCMCs and
+                    Cur-OCMCs-Fol) were characterized by infrared (IR), fluorescence (FL), photoluminescence (PL) spectra, field emission scanning electron microscopy (FE-SEM), and found to be
+                    spherical particles with an average size of 50&ndash;100&nbsp;nm, being suitable for drug delivery applications. They were much more soluble in water than not only free curcumin
+                    but also other biodegradable polymer-encapsulated curcumin nanoparticles. The anti-tumor promoting assay was carried out, showing the positive effects of Cur-Glu and Cur-PLA-TPGS
+                    on tumor promotion of Hep-G2 cell line <italic>in vitro</italic>. Confocal microscopy revealed that the nano-sized curcumin encapsulated by polymers OCMCs and OCMCs-Fol
+                    significantly enhanced the cellular uptake (cancer cell HT29 and HeLa).</p>
+            </abstract>
+            <kwd-group kwd-group-type="author-pacs">
+                <kwd>2.05</kwd>
+                <kwd>5.09</kwd>
+            </kwd-group>
+            <kwd-group kwd-group-type="author">
+                <kwd>curcumin</kwd>
+                <kwd>nanoparticles</kwd>
+                <kwd>anti&hyphen;cancer activity</kwd>
+                <kwd>tumor promotion</kwd>
+                <kwd>cellular uptake</kwd>
+            </kwd-group>
+            <counts>
+                <page-count count="7"/>
+            </counts>
+            <custom-meta-group>
+                <custom-meta>
+                    <meta-name>ccc</meta-name>
+                    <meta-value>2043-6262/12/035002&plus;07&dollar;33.00</meta-value>
+                </custom-meta>
+            </custom-meta-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec id="ansn432005s1">
+            <label>1.</label>
+            <title>Introduction</title>
+            <p>Cancer as a leading cause of death worldwide is of great concern, not only among the scientific community, especially pharmacists, biologists and chemists, but increasingly among the
+                general population. The common treatments of cancer are surgery, radiation and chemotherapy. For chemotherapy, agents such as cisplatin, mitoxantrone, estramustine, doxorubicin,
+                etoposide, vinblastine, paclitaxel, vinorelbine, or a combination drugs have been widely used in cancer treatment and they ultimately improve quality of life&nbsp;[<xref
+                    ref-type="bibr" rid="ansn432005bib01">1</xref>&ndash;<xref ref-type="bibr" rid="ansn432005bib03">3</xref>]. However, these agents also show unexpected toxicity to normal organs and
+                the patients suffer from serious side effects. Furthermore, most of the chemotherapeutic agents may not kill all cancer cells and their repeated administration develops drug resistance
+                or androgen refractory stage which is most difficult to cure&nbsp;[<xref ref-type="bibr" rid="ansn432005bib04">4</xref>].</p>
+            <p>Therefore, there is an urgent need to develop therapeutic modalities with no or minimal side effects to normal organs. In this regard, a variety of natural dietary compounds have been
+                investigated. As a potential candidate, curcumin [1,7-Bis(4-hydroxy-3-medithoxyphenyl)-1,6-heptadiene-3,5-dione], a yellow compound isolated from rhizome of the herb <italic>curcuma
+                    longa</italic>, has been receiving considerable attention because of its putative cancer prevention and anti-cancer activities which are mediated through influencing multiple
+                signaling pathways&nbsp;[<xref ref-type="bibr" rid="ansn432005bib05">5</xref>, <xref ref-type="bibr" rid="ansn432005bib06">6</xref>].</p>
+            <p>Although curcumin proves to be remarkably non-toxic and has promising anti-cancer activities, its application in anti-cancer therapies is limited due to its low aqueous solubility and
+                poor bioavailability. To deal with this obstacle, a variety of methods including the incorporation of curcumin into liposomes and into phospholipid vesicles are being
+                    studied&nbsp;[<xref ref-type="bibr" rid="ansn432005bib07">7</xref>, <xref ref-type="bibr" rid="ansn432005bib08">8</xref>]. More recently, the approach of biodegradable polymer
+                nanoparticles has been developed&nbsp;[<xref ref-type="bibr" rid="ansn432005bib09">9</xref>&ndash;<xref ref-type="bibr" rid="ansn432005bib11">11</xref>]. This offers promising
+                therapeutic performance of anti-cancer drugs by increasing their bioavailability, solubility and retention time&nbsp;[<xref ref-type="bibr" rid="ansn432005bib12">12</xref>]. These drug
+                formulations are superior to traditional medicines with respect to control release, targeted delivery and therapeutic impact.</p>
+            <p>Polymeric nanoparticles act as nanocarriers with many advantages, such as low toxicity and high stability. Several drugs formulated in polymeric micelles are used in clinical trial
+                development for the treatment of various cancers&nbsp;[<xref ref-type="bibr" rid="ansn432005bib13">13</xref>]. As indicated in&nbsp;[<xref ref-type="bibr" rid="ansn432005bib14"
+                    >14</xref>], nanocurcumin particles less than 100&nbsp;nm in size could be synthesized using a cross-linked and random copolymer of N-isopropyl crylamid (NIPAAM) with
+                N-vinyl-2-pyrrolidone (VP) and poly(ethyleneglicol)monoacrylate (PEG-A), which demonstrate superior efficacy compared to free (bulk) curcumin in human cancer cell line models.
+                Polymeric nanoparticles have attracted significant attention in the study of drug delivery systems as they offer a means for localized or targeted delivery systems of a drug to
+                specific tissue/organ sites of interest with an optimal release rate&nbsp;[<xref ref-type="bibr" rid="ansn432005bib15">15</xref>].</p>
+            <p>The above-mentioned drug delivery systems are usually restricted by the poor biocompatibility of the polymeric matrix material and the surfactant used in the formulation process. For
+                formalization of curcumin nanosystem we consider in our study three polymer materials derived from natural product. Firstly, we aimed at synthesis of an amphiphilic copolymer, which
+                comprises polylactide (PLA)&mdash;often used in studies of drug delivery due to its very low toxicity and D-<italic>&alpha;</italic>-tocopheryl polyethylene glycol succinate (TPGS)
+                &mdash;a safe and effective form of vitamin E due to its good oral bioavailability. The PLA&ndash;TPGS copolymer has many other potential applications, such as solubilizer, absorption
+                enhancer and as a vehicle for lipid-based drug delivery formulations as well as enhancement of cytotoxicity of anticancer agents such as doxorubicin, vinblastine, paclitaxel and
+                    curcumin&nbsp;[<xref ref-type="bibr" rid="ansn432005bib16">16</xref>]. Secondly, <italic>Hericium erinaceus</italic>, a traditional edible mushroom, was chosen for investigation
+                because of its biological activities&nbsp;[<xref ref-type="bibr" rid="ansn432005bib17">17</xref>]. <italic>Hericium erinaceus</italic> was also reported to have cytotoxic effects on
+                cancer cell lines thanks to its polysaccharide 1,3-<italic>&beta;</italic>-glucan&nbsp;[<xref ref-type="bibr" rid="ansn432005bib18">18</xref>]. The third polymer was O-carboxymethyl
+                chitosan (OCMCs)&mdash;an amphiprotic ether exhibiting non-toxicity, biodegradability, biocompatibility and strong bioactivity. It has therefore stimulated increasing interest in
+                biomedical applications. More interestingly, OCMCs can load hydrophobic anticancer drugs effectively&nbsp;[<xref ref-type="bibr" rid="ansn432005bib19">19</xref>&ndash;<xref
+                    ref-type="bibr" rid="ansn432005bib21">21</xref>] and also immobilize a targeting agent such as folic acid (Fol). Several studies have recently reported that OCMCs-Fol is a
+                potential targeted drug delivery system&nbsp;[<xref ref-type="bibr" rid="ansn432005bib22">22</xref>&ndash;<xref ref-type="bibr" rid="ansn432005bib25">25</xref>].</p>
+            <p>In this paper, we not only present the procedures for the encapsulation of curcumin by copolymer PLA&ndash;TPGS, polysaccharide Glu, OCMCs and OCMCs-Fol, but also indicate the
+                improvements of the solubility and anti-cancer activity of the fabricated nanosystems.</p>
+        </sec>
+        <sec id="ansn432005s2">
+            <label>2.</label>
+            <title>Experimental</title>
+            <sec id="ansn432005s2-1">
+                <label>2.1.</label>
+                <title>Materials</title>
+                <p>Lactide (3,6-dimethyl-1,4-dioxane, C<sub>6</sub>H<sub>8</sub>O<sub>4</sub>), stannous octoate (Sn (OOCC<sub>7</sub>H<sub>15</sub>)<sub>2</sub>), O-carboxymethyl chitosan and folic
+                    acid, ethanol (&ges;&nbsp;99.5&percnt;), chloroform (&ges;&nbsp;99.5&percnt;), dimethylsulfoxide (DMSO) (&ges;&nbsp;99.9&percnt;), triethylamine (TEA),
+                    <italic>N</italic>-hydroxysuccinimide (NHS) and 1-[3-dimethylamino)propyl]-3-ethylcarbodiimide hydrochloride (EDC), tris base, trichloroacetic (TCA), sulforhodamine B (SRB), acetic
+                    acid, fetal bovine serum (FBS), fetal bovine serum minimum essential medium (FBS-MEM), phosphate buffered saline (PBS), agar, agarose, cell culture media like Dulbecco&apos;s
+                    modified eagle medium, Roswell Park Memorial Institute (RPMI) 1640 medium, and tumor initiator N-methyl-N&prime;-nitro-N-nitrosoguanidine (MNNG) were purchased from Sigma-Aldrich.
+                    Vitamin E TPGS (d-<italic>&alpha;</italic>-tocopheryl polyethylene glycol 1000 succinate) and C<sub>33</sub>O<sub>5</sub>H<sub>54</sub>(CH<sub>2</sub>CH<sub>2</sub>O)<sub>23</sub>
+                    were from Merck. Curcumin (&ges;&nbsp;95&percnt; purity, (E,E)-1,7-bis(4-hydroxy-3-methoxyphenyl)-1,6-heptadiene-3,5-dione) was purchased from Mumbai, India.
+                        1,3-<italic>&beta;</italic>-Glucan was isolated from medicinal mushroom <italic>Hericium erinaceus</italic> SH. Anti-tumor promotion assay <italic>in&nbsp;vitro</italic> on
+                    human hepatocellular carcinoma cell line (HepG2) (the cell line obtained from National Institute of Hygienic Epidemy&mdash;NIHE) has been performed at Experimental Biology
+                    Lab&mdash;Institute of Natural Products Chemistry, Vietnam Academy of Science and Technology. Human hepatocellular carcinoma cell lines HT29, HeLa were obtained from Department of
+                    Biology, Hanoi University of Science. All chemicals were used as received without further purification.</p>
+            </sec>
+            <sec id="ansn432005s2-2">
+                <label>2.2.</label>
+                <title>Preparation of polymers</title>
+                <p>PLA-TPGS copolymer was synthesized by ring-opening bulk polymerization of lactide monomer (3,6-dimethyl-1,4-dioxane, C<sub>6</sub>H<sub>8</sub>O<sub>4</sub>) with vitamin E TPGS in
+                    the presence of stannous octoate as catalyst&nbsp;[<xref ref-type="bibr" rid="ansn432005bib26">26</xref>].</p>
+                <p>1,3-<italic>&beta;</italic>-glucan with short chain and molecular weight of 990 was obtained from polysaccharides isolated from the mushroom <italic>Hericium erinaceus</italic>.
+                    Amylase enzyme was used to break down the long chain of the polysaccharides and eliminate 1,4-<italic>&alpha;</italic>-glucan&nbsp;[<xref ref-type="bibr" rid="ansn432005bib27"
+                        >27</xref>].</p>
+            </sec>
+            <sec id="ansn432005s2-3">
+                <label>2.3.</label>
+                <title>Encapsulation of curcumin</title>
+                <p>Nanoprecipitation technique was used to prepare the polymer-encapsulated curcumin. Polymers were first dissolved in double distilled water. Curcumin dissolved in absolute ethanol
+                    was added into solutions of polymer. The resulting solutions were then stirred or ultrasonically vibrated for hours. This dispersion of nanoparticles was vacuum evaporated to
+                    eliminate the organic solvent completely. Larger aggregates and free polymers were removed by centrifugation at 5000&nbsp;rpm for 15&nbsp;min. The supernatant containing
+                    curcumin-encapsulated nanoparticles was recovered by ultra-centrifugation at 30&thinsp;000&nbsp;rpm.</p>
+                <p>Folate was attached to the surface amino groups of OCMCs via a carbodiimide reaction&nbsp;[<xref ref-type="bibr" rid="ansn432005bib22">22</xref>,<xref ref-type="bibr"
+                        rid="ansn432005bib23">23</xref>]. Briefly, folic acid was dissolved into a mixture of anhydrous DMSO, TEA and activated by equal amounts of EDC and NHS under nitrogen anhydrous
+                    conditions for 2&nbsp;h at room temperature. The OCMCs were dissolved in distilled water, and stirred until the solutions were optically transparent. Then activated folic acid was
+                    added dropwise to OCMCs solution. The resulting mixture was stirred at room temperature for about 24&nbsp;h under nitrogen atmosphere to let folic acid conjugate onto OCMCs
+                    molecules, and then titrated to pH 9.0 with 0.1&nbsp;M NH<sub>3</sub> solution to terminate the reaction. The solution was dialysed first against phosphate buffer saline (PBS,
+                    pH&nbsp;&equals;&nbsp;7.4) for 3 days to remove excess of unreacted substrates and then against distilled water for 3 days to obtain OCMCs-Fol solution.</p>
+                <p>Curcumin was then encapsulated to OCMCs-Fol solution to form Cur-OCMCs-Fol in a similar way of preparation to Cur-OCMCs.</p>
+            </sec>
+            <sec id="ansn432005s2-4">
+                <label>2.4.</label>
+                <title>Characterization</title>
+                <p>Infrared spectra were recorded with a Fourier transform infrared (FTIR) spectrometer SHIMADZU, using KBr pellets, in the region of 400&ndash;4000&nbsp;cm<sup>&minus;1</sup>. Field
+                    emission scanning electron microscope (FE-SEM) images were taken by a Hitachi S-4800. Fluorescence spectra were recorded by using a Jobin-Yvon FL3-22. Photoluminsescence spectra
+                    were taken with a 442&nbsp;nm excitation line. Encapsulated curcumin were estimated using the calibration curve of curcumin solution in acetone or ethanol.</p>
+            </sec>
+        </sec>
+        <sec id="ansn432005s3">
+            <label>3.</label>
+            <title>Results and discussion</title>
+            <sec id="ansn432005s3-1">
+                <label>3.1.</label>
+                <title>Encapsulation efficiency</title>
+                <p>The polymer-encapsulated curcumin nanoparticles show enormous improvements in aqueous solubility characteristics. While free curcumin immediately precipitates in aqueous medium due
+                    to very low solubility (&sim;&nbsp;20&nbsp;<italic>&mu;</italic>g&nbsp;ml<sup>&minus;1</sup>), the absolute concentration of curcumin in filtered 1,3-<italic>&beta;</italic>-glucan
+                    solution was found to be 4&nbsp;mg&nbsp;ml<sup>&minus;1</sup>, which is 220-folds compared with the solubility of curcumin encapsulated by hydrophobically modified starch
+                        (HMS)&nbsp;[<xref ref-type="bibr" rid="ansn432005bib28">28</xref>]. The aqueous solubility of Cur-Glu was 2-folds compared with that of Cur-PLA-TPGS
+                        (2&nbsp;mg&nbsp;ml<sup>&minus;1</sup>) and 4-folds compared with that of Cur-OCMCs or Cur-OCMCs-Fol (1&nbsp;mg&nbsp;ml<sup>&minus;1</sup>). The higher solubility
+                    characteristics of Cur-Glu may result from better compatibility to curcumin of 1,3-<italic>&beta;</italic>-Glucan due to its short chain.</p>
+                <p>Lyophilized Cur-Glu, Cur-PLA-TPGS, Cur-OCMCs and Cur-OCMCs-Fol powder were reconstituted with water. These powders dissolved back into clear solution very quickly and easily, with
+                    no noticeable curcumin precipitates (figure <xref ref-type="fig" rid="ansn432005fig1">1</xref>). The results suggested that curcumin was indeed trapped in the micelles and the
+                    complex of polymers and curcumin could resist against freeze-drying.</p>
+                <fig id="ansn432005fig1" position="float">
+                    <label>Figure 1.</label>
+                    <caption id="ansn432005fc1">
+                        <p>Solubility of (a) Cur nanoparticles and (b) Cur in water.</p>
+                    </caption>
+                    <graphic id="ansn432005f1_eps" content-type="print" xlink:href="ansn432005f1_pr.eps"/>
+                    <graphic id="ansn432005f1_online" content-type="online" xlink:href="ansn432005f1_online.jpg"/>
+                </fig>
+            </sec>
+            <sec id="ansn432005s3-2">
+                <label>3.2.</label>
+                <title>FTIR spectra</title>
+                <p>All FTIR spectra of Cur-Glu, Cur-PLA-TPGS, Cur-OCMCs and Cur-OCMCs-Fol have several shifts as compared to those of free curcumin or polymers. This indicates the formation of
+                    polymer-encapsulated curcumin nanoparticles. For example, compared with that of pure 1,3-<italic>&beta;</italic>-Glucan, the IR spectrum of Cur-Glu showed a band shift from 3400 to
+                        3417&nbsp;cm<sup>&minus;1</sup>, which is probably due to the hydrogen bonding between&ndash;OH groups in curcumin and 1,3-<italic>&beta;</italic>-Glucan (spectra omitted for
+                    brevity). The FTIR spectrum of OCMCs showed broad bank at 3420&nbsp;cm<sup>&minus;1</sup> due to the stretching vibration of hydroxyl group. A peak at
+                        1634&nbsp;cm<sup>&minus;1</sup> corresponds to the stretching vibrations of carbonyl. Comparing OCMCs and Cur-OCMCs, peak shifts were observed from 3420 to
+                        3261&nbsp;cm<sup>&minus;1</sup> and 1634 to 1625&nbsp;cm<sup>&minus;1</sup>. The result confirmed the presence of curcumin in the Cur-OCMCs. The characteristic absorption band
+                    of OCMCs that appeared at 1598&nbsp;cm<sup>&minus;1</sup> was assigned to the N&ndash;H banding vibration of the primary amine. In the case of Cur-OCMCs-Fol this peak is shifted to
+                        1635&nbsp;cm<sup>&minus;1</sup>. The increased absorption of amide band may be due to the formation of the amide linkage between the amino acid group on the OCMCs and the
+                    carboxyl group of folic acid (figure <xref ref-type="fig" rid="ansn432005fig2">2</xref>).</p>
+                <fig id="ansn432005fig2" position="float">
+                    <label>Figure 2.</label>
+                    <caption id="ansn432005fc2">
+                        <p>FTIR spectra of Cur, Cur-OCMCs and Cur-OCMCs-Fol.</p>
+                    </caption>
+                    <graphic id="ansn432005f2_eps" content-type="print" xlink:href="ansn432005f2_pr.eps"/>
+                    <graphic id="ansn432005f2_online" content-type="online" xlink:href="ansn432005f2_online.jpg"/>
+                </fig>
+            </sec>
+            <sec id="ansn432005s3-3">
+                <label>3.3.</label>
+                <title>Fluorescence spectra</title>
+                <p>The fluorescence spectra of curcumin and polymer-encapsulated curcumin are shown in figure <xref ref-type="fig" rid="ansn432005fig3">3</xref>. Curcumin in ethanolic solution
+                    exhibits an absorption peak at 540&nbsp;nm, while the solutions of Cur-Glu, Cur-PLA-TPGS, Cur-OCMCs and Cur-OCMCs-Fol show peaks at 529, 530, 491 and 525&nbsp;nm, respectively. The
+                    blue-shifts in the fluorescence are likely due to the intermolecular hydrogen bonding between curcumin and polymers. Especially, the appearance of a weak peak at 435&nbsp;nm in the
+                    fluorescence spectrum of Cur-OCMCs-Fol might be explained by the presence of folate on the nanoparticles.</p>
+                <fig id="ansn432005fig3" position="float">
+                    <label>Figure 3.</label>
+                    <caption id="ansn432005fc3">
+                        <p>Fluorescence spectra of Cur, Cur-OCMCs and Cur-OCMCs-Fol.</p>
+                    </caption>
+                    <graphic id="ansn432005f3_eps" content-type="print" xlink:href="ansn432005f3_pr.eps"/>
+                    <graphic id="ansn432005f3_online" content-type="online" xlink:href="ansn432005f3_online.jpg"/>
+                </fig>
+                <p>While the fluorescence intensity of Cur-OCMCs-Fol is slightly lower than that of Curcumin itself, the much higher fluorescence intensity of Cur-PLA-TPGS, Cur-Glu, Cur-OCMCs suggests
+                    that curcumin is encapsulated in the hydrophobic core of micelle of PLA-TPGS and curcumin is present in the Cur-Glu and Cur-OCMCs.</p>
+            </sec>
+            <sec id="ansn432005s3-4">
+                <label>3.4.</label>
+                <title>Surface morphology</title>
+                <p>The size and morphology of the polymer-encapsulated curcumin nanoparticles were confirmed by FE-SEM imaging. Figure <xref ref-type="fig" rid="ansn432005fig4">4</xref> shows FE-SEM
+                    images of the curcumin encapsulated by PLA-TPGS (a), Glu (b), OCMCs (c) and OCMCs-Fol (d). It is shown that the particles have an average size of 50&ndash;100&nbsp;nm, which lies
+                    in the optimal size range (below 200&nbsp;nm) suitable for drug delivery applications. There is a significant decrease in size of curcumin nanoparticles compared to that of
+                    curcumin. This is probably because the hydrophilic polymers prevent the aggregation of hydrophobic curcumin.</p>
+                <fig id="ansn432005fig4" position="float">
+                    <label>Figure 4.</label>
+                    <caption id="ansn432005fc4">
+                        <p>FE-SEM images of Cur-PLA-TPGS (a), Cur-Glu (b), Cur-OCMCs (c) and Cur-OCMCs-Fol (d).</p>
+                    </caption>
+                    <graphic id="ansn432005f4_eps" content-type="print" xlink:href="ansn432005f4_pr.eps"/>
+                    <graphic id="ansn432005f4_online" content-type="online" xlink:href="ansn432005f4_online.jpg"/>
+                </fig>
+                <p>A PL image of free curcumin dispersed in ethanolic solution is shown in figure <xref ref-type="fig" rid="ansn432005fig5">5</xref>(a). The spherical shape of the particles is seen
+                    with a size of 1&ndash;10&nbsp;<italic>&mu;</italic>m. Figures <xref ref-type="fig" rid="ansn432005fig5">5</xref>(b) and (c) show PL images of the polymer-encapsulated curcumin
+                    with a large range of sizes similar to that of curcumin. Curcumin in the form of nanoparticles is a strong PL substance, thus when used to treat cancer it could also act as a
+                    labeling material. Hence we can determine the efficiency of the drug transport process in different conditions. PL images of Cur-PLA-TPGS (figure <xref ref-type="fig"
+                        rid="ansn432005fig5">5</xref>(b)) and Cur-Glu (figure <xref ref-type="fig" rid="ansn432005fig5">5</xref>(c)) show that both nanoparticles are highly fluorescent, implying that
+                    these materials can be used not only for cancer treatment but also for biolabeling.</p>
+                <fig id="ansn432005fig5" position="float">
+                    <label>Figure 5.</label>
+                    <caption id="ansn432005fc5">
+                        <p>Fluorescent images of Cur (a), Cur-PLA-TPGS (b) and Cur-Glu (c).</p>
+                    </caption>
+                    <graphic id="ansn432005f5_eps" content-type="print" xlink:href="ansn432005f5_pr.eps"/>
+                    <graphic id="ansn432005f5_online" content-type="online" xlink:href="ansn432005f5_online.jpg"/>
+                </fig>
+            </sec>
+            <sec id="ansn432005s3-5">
+                <label>3.5.</label>
+                <title>Colony assays in soft agar</title>
+                <p>Cell survival cytotoxicity experiments using sulforhodamine B method were performed in order to determine the maximal doses of test materials for anti-tumor-promoting activity
+                    assays. Soft agar colony assay anti-tumor-promoting activity was estimated based on the inhibition of soft agar colony induction in the Hep-G2 cell line. The cells were cultured in
+                    10&percnt; FBS-MEM medium at 36.5&nbsp;&deg;C in an incubator with 5&percnt; CO<sub>2</sub> and 95&percnt; air. Cells growing logarithmically in a monolayer culture were
+                    trypsinized and suspended in 0.33&percnt; agar medium containing 10&percnt; FBS with or without samples at the concentrations of
+                        25&nbsp;<italic>&mu;</italic>g&nbsp;ml<sup>&minus;1</sup>. For anti-tumor promoting assay, in duplicate 6-well plate, 500&nbsp;<italic>&mu;</italic>l of the suspension
+                        (1&nbsp;&times;&nbsp;10<sup>4</sup> cells) was poured onto an agar layer containing the same concentration of sample (10&nbsp;<italic>&mu;</italic>g&nbsp;ml<sup>&minus;1</sup>)
+                    in 5&percnt; DMSO. Soft agar colonies of cells were investigated after 2 weeks&rsquo; incubation under an inverted microscope with camera to compare the visual cell in their tumor
+                    formation, the tumor size and morphology. The inhibitory activities were the average of two independent experiments and expressed as a percentage of that of the control.</p>
+                <p>The results showed that there were no distinct differences of cell survival in cytotoxicity assay, and the ratio of tumor promotion in anti-tumor promoting assay with the Cur, Glu,
+                    PLA-TPGS alone was comparable to the control, but there were clear changes in size and morphology of tumor between the control and all the tested samples, especially curcumin
+                    encapsulated with glucan copolymer. In the control wells, the tumor size was much larger and their surface was very rough in comparison to the tumor on the tested wells (figure
+                        <xref ref-type="fig" rid="ansn432005fig6">6</xref>). It was obvious that encapsulated curcumin had positive effects on tumor promotion of Hep-G2 cell line <italic>in
+                        vitro</italic>.</p>
+                <fig id="ansn432005fig6" position="float">
+                    <label>Figure 6.</label>
+                    <caption id="ansn432005fc6">
+                        <p>Anti-tumor-promoting effects of the curcumin encapsulated by copolymer in Hep-G2 cell lines after two weeks of cell growth on agar: control (a), Cur (b) and Cur-PLA-TPGS
+                            (c)&nbsp;under inverted microscope &times;100.</p>
+                    </caption>
+                    <graphic id="ansn432005f6_eps" content-type="print" xlink:href="ansn432005f6_pr.eps"/>
+                    <graphic id="ansn432005f6_online" content-type="online" xlink:href="ansn432005f6_online.jpg"/>
+                </fig>
+            </sec>
+            <sec id="ansn432005s3-6">
+                <label>3.6.</label>
+                <title>Intracellular uptake of nanoparticles</title>
+                <p>To study the uptake of the nanoparticles Cur-OCMCs and OCMCs-Cur-Fol, confocal imaging was performed on Hela and HT29 cells at 4 and 12&nbsp;h. Hela, HT29 cells were maintained
+                    24&nbsp;h and then incubated with Cur-OCMCs and Cur-OCMCs-Fol within 4 and 12&nbsp;h. Immunofluorescent stains were processed and cells were visualized in confocal laser scanning
+                    microscopy LSM-510. Fluorescence intensities in specimens were compared to evaluate the quantity of curcumin within cancer cells.</p>
+                <p>From the confocal microscope images (figure <xref ref-type="fig" rid="ansn432005fig7">7</xref>) the folate-conjugated nanoparticles were found to be distributed in the zone of
+                    nucleus, indicating cellular uptake instead of adhesion to the surface, and that the nanoparticles preferentially targeted the cancer cells and were internalized. This
+                    internalization might be due to the folate receptor mediated endocytosis&nbsp;[<xref ref-type="bibr" rid="ansn432005bib23">23</xref>]. This observation clearly infers that
+                    folate-conjugated carboxymethyl chitosan may be very effective carrier to use as delivery system for targeted anticancer drug.</p>
+                <fig id="ansn432005fig7" position="float">
+                    <label>Figure 7.</label>
+                    <caption id="ansn432005fc7">
+                        <p>Fluorescent Image of HT29 after 4&nbsp;h incubating with control (a), Cur-OCMCs (b) and Cur-OCMCs-Fol (c).</p>
+                    </caption>
+                    <graphic id="ansn432005f7_eps" content-type="print" xlink:href="ansn432005f7_pr.eps"/>
+                    <graphic id="ansn432005f7_online" content-type="online" xlink:href="ansn432005f7_online.jpg"/>
+                </fig>
+                <p>The rate of Cur-OCMCs and Cur-OCMCS-Fol in HT29 and HeLa indicates a different level of uptake of curcumin. This is consistent with the level of expression of folate receptor on
+                    cell surface: HT29-overexpression and Hela-mediated expression.</p>
+                <p>Fluorescence intensity of Cur-OCMCs-Fol inside the cell at 12&nbsp;h (figure <xref ref-type="fig" rid="ansn432005fig8">8</xref>(b)) shows a lower content than that at 4&nbsp;h
+                    (figure <xref ref-type="fig" rid="ansn432005fig8">8</xref>(a)). This can be explained by the degradation of curcumin to form smaller molecules such as
+                    trans-6-(4-hydroxy-3-methoxyphenul)-2,4-dioxo-5-hexenal, vaniline, ferulic acid, feruloy methane which can no longer remain auto-fluorescence like curumin&nbsp;[<xref
+                        ref-type="bibr" rid="ansn432005bib29">29</xref>]. However, fluorescence intensity of Cur-OCMCs at 12&nbsp;h shows a higher content than that at 4&nbsp;h.</p>
+                <fig id="ansn432005fig8" position="float">
+                    <label>Figure 8.</label>
+                    <caption id="ansn432005fc8">
+                        <p>Comparison of cellular uptake between Cur-OCMCS and Cur-OCMCS-Fol on HT29 and Hela cell lines at 4&nbsp;h (a) and 12&nbsp;h (b).</p>
+                    </caption>
+                    <graphic id="ansn432005f8_eps" content-type="print" xlink:href="ansn432005f8_pr.eps"/>
+                    <graphic id="ansn432005f8_online" content-type="online" xlink:href="ansn432005f8_online.jpg"/>
+                </fig>
+                <p>The key difference may come from the presence of folic acid, which actively leads the nanosystem to the cancer cells with expression of folate receptor on its surface. In that case
+                    curcumin can be transferred to the cancer cells more quickly and efficiently.</p>
+            </sec>
+        </sec>
+        <sec id="ansn432005s4">
+            <label>4.</label>
+            <title>Conclusion</title>
+            <p>In the present studies copolymer PLA-TPGS, 1,3-<italic>&beta;</italic>-Glucan, O-carboxymethyl chitosan and folate-conjugated O-carboxymethyl chitosan-encapsulated curcumin
+                nanoparticles were prepared successfully by nanoprecipitation technique. It was found that these particles have a good solubility in water. As spherical particles with an average size
+                from 50 to 100&nbsp;nm, they are also believed to be suitable for drug delivery applications. Confocal microscopy revealed that folate enhances the uptake of curcumin into cancer cells
+                expressing folate receptor. Besides, the anti-tumor promoting assay also shows strong positive effects of Cur-PLA-TPGS and Cur-Glu on tumor promotion of Hep-G2 cell line <italic>in
+                    vitro</italic>. With all these good features that have been found, Cur-PLA-TPGS, Cur-Glu, Cur-OCMCs and Cur-OCMCS-Fol, could be used toward cancer therapy.</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title>Acknowledgments</title>
+            <p>This work was financially supported by an IMS research grant, the National Foundation for Science and Technology Development of Vietnam NAFOSTED grant No 106.99-2010.42 (HPT), No
+                106.03.84.09 (MHL) and the Ministry of Science and Technology grant (No 04/ 02 /742/2009/HD-DTDL). The authors are thankful to Professor, Academician Nguyen Van Hieu for his
+                encouragement and interest in this research. The authors would like to acknowledge all members of IMS-VAST Key Laboratory for providing laboratory facilities.</p>
+        </ack>
+        <ref-list content-type="numerical">
+            <title>References</title>
+            <ref id="ansn432005bib01">
+                <label>1</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Berry</surname>
+                            <given-names>W R</given-names>
+                        </name>
+                    </person-group>
+                    <year>2005</year>
+                    <source>Urology</source>
+                    <volume>65</volume>
+                    <fpage>2</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.urology.2005.03.080</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib02">
+                <label>2</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Oh</surname>
+                            <given-names>W K</given-names>
+                        </name>
+                        <name>
+                            <surname>Tay</surname>
+                            <given-names>M H</given-names>
+                        </name>
+                        <name>
+                            <surname>Huang</surname>
+                            <given-names>J</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>Cancer</source>
+                    <volume>109</volume>
+                    <fpage>477</fpage>
+                    <pub-id pub-id-type="doi">10.1002/(ISSN)1097-0142</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib03">
+                <label>3</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Petrylak</surname>
+                            <given-names>D P</given-names>
+                        </name>
+                    </person-group>
+                    <year>2005</year>
+                    <source>Urology</source>
+                    <volume>65</volume>
+                    <fpage>8</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.urology.2005.04.020</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib04">
+                <label>4</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Urakami</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Shiina</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Sumura</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        <name>
+                            <surname>Honda</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Wake</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Hiraoka</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Inoue</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Ishikawa</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Igawa</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>Int. Urol. Nephrol.</source>
+                    <volume>40</volume>
+                    <fpage>365</fpage>
+                    <pub-id pub-id-type="doi">10.1007/s11255-007-9301-z</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib05">
+                <label>5</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Karmakar</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Banik</surname>
+                            <given-names>N L</given-names>
+                        </name>
+                        <name>
+                            <surname>Patel</surname>
+                            <given-names>S J</given-names>
+                        </name>
+                        <name>
+                            <surname>Ray</surname>
+                            <given-names>S K</given-names>
+                        </name>
+                    </person-group>
+                    <year>2006</year>
+                    <source>Neurosci. Lett.</source>
+                    <volume>407</volume>
+                    <fpage>53</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.neulet.2006.08.013</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib06">
+                <label>6</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Anand</surname>
+                            <given-names>P</given-names>
+                        </name>
+                        <name>
+                            <surname>Sundaram</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Jhurani</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Kunnumakkara</surname>
+                            <given-names>A B</given-names>
+                        </name>
+                        <name>
+                            <surname>Aggarwal</surname>
+                            <given-names>B B</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>Cancer Lett.</source>
+                    <volume>267</volume>
+                    <fpage>133</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.canlet.2008.03.025</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib07">
+                <label>7</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Li</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        <name>
+                            <surname>Braiteh</surname>
+                            <given-names>F S</given-names>
+                        </name>
+                        <name>
+                            <surname>Kurzrock</surname>
+                            <given-names>R</given-names>
+                        </name>
+                    </person-group>
+                    <year>2005</year>
+                    <source>Cancer</source>
+                    <volume>104</volume>
+                    <fpage>1322</fpage>
+                    <pub-id pub-id-type="doi">10.1002/(ISSN)1097-0142</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib08">
+                <label>8</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Sou</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Inenaga</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Takeoka</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Tsuchida</surname>
+                            <given-names>E</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>Int. J. Pharm.</source>
+                    <volume>325</volume>
+                    <fpage>287</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.ijpharm.2007.10.033</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib09">
+                <label>9</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Yallapu</surname>
+                            <given-names>M M</given-names>
+                        </name>
+                        <name>
+                            <surname>Jaggi</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        <name>
+                            <surname>Chauhan</surname>
+                            <given-names>S C</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>Colloids Surf. <named-content content-type="jnl-part">B</named-content></source>
+                    <volume>79</volume>
+                    <fpage>113</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.colsurfb.2010.03.039</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib10">
+                <label>10</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Anand</surname>
+                            <given-names>P</given-names>
+                        </name>
+                        <name>
+                            <surname>Nair</surname>
+                            <given-names>H B</given-names>
+                        </name>
+                        <name>
+                            <surname>Sung</surname>
+                            <given-names>B</given-names>
+                        </name>
+                        <name>
+                            <surname>Kunnumakkara</surname>
+                            <given-names>A B</given-names>
+                        </name>
+                        <name>
+                            <surname>Yadav</surname>
+                            <given-names>V R</given-names>
+                        </name>
+                        <name>
+                            <surname>Tekmal</surname>
+                            <given-names>R R</given-names>
+                        </name>
+                        <name>
+                            <surname>Aggarwal</surname>
+                            <given-names>B B</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>Biochem. Pharmacol.</source>
+                    <volume>79</volume>
+                    <fpage>330</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.bcp.2009.09.003</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib11">
+                <label>11</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Tran</surname>
+                            <given-names>D L</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2010</year>
+                    <source>Colloids Surf. <named-content content-type="jnl-part">A</named-content></source>
+                    <volume>371</volume>
+                    <fpage>104</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.colsurfa.2010.09.011</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib12">
+                <label>12</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Shenoy</surname>
+                            <given-names>D B</given-names>
+                        </name>
+                        <name>
+                            <surname>Amiji</surname>
+                            <given-names>M M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2005</year>
+                    <source>Int. J. Pharm</source>
+                    <volume>293</volume>
+                    <fpage>261</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.ijpharm.2004.12.010</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib13">
+                <label>13</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Sahu</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        <name>
+                            <surname>Bora</surname>
+                            <given-names>U</given-names>
+                        </name>
+                        <name>
+                            <surname>Kasoju</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Goswami</surname>
+                            <given-names>P</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>Acta Biomater.</source>
+                    <volume>4</volume>
+                    <fpage>1752</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.actbio.2008.04.021</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib14">
+                <label>14</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Bisht</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Feldmann</surname>
+                            <given-names>G</given-names>
+                        </name>
+                        <name>
+                            <surname>Soni</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Ravi</surname>
+                            <given-names>R</given-names>
+                        </name>
+                        <name>
+                            <surname>Karikar</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Amornath</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        <name>
+                            <surname>Aniirban</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>J. Nanobiotechnol.</source>
+                    <volume>5</volume>
+                    <fpage>3</fpage>
+                    <pub-id pub-id-type="doi">10.1186/1477-3155-5-3</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib15">
+                <label>15</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Mu</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        <name>
+                            <surname>Seow</surname>
+                            <given-names>P H</given-names>
+                        </name>
+                    </person-group>
+                    <year>2006</year>
+                    <source>Colloids Surf. <named-content content-type="jnl-part">B</named-content></source>
+                    <volume>47</volume>
+                    <fpage>90</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.colsurfb.2005.08.016</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib16">
+                <label>16</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Pan</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Feng</surname>
+                            <given-names>S S</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>Biomaterials</source>
+                    <volume>29</volume>
+                    <fpage>2663</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.biomaterials.2008.02.020</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib17">
+                <label>17</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Nakatsugawa</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        <name>
+                            <surname>Takahashi</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Takezawa</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Nakajima</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Harada</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Sugawara</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Kobayashi</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Kondo</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Abe</surname>
+                            <given-names>S</given-names>
+                        </name>
+                    </person-group>
+                    <year>2003</year>
+                    <source>Int. Med.</source>
+                    <volume>42</volume>
+                    <fpage>1219</fpage>
+                    <pub-id pub-id-type="doi">10.2169/internalmedicine.42.1219</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib18">
+                <label>18</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Mizuno</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Wasa</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Ito</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Suzuki</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Ukai</surname>
+                            <given-names>N</given-names>
+                        </name>
+                    </person-group>
+                    <year>1992</year>
+                    <source>Biosci. Biotechnol. Biochem.</source>
+                    <volume>56</volume>
+                    <fpage>347</fpage>
+                    <pub-id pub-id-type="doi">10.1271/bbb.56.347</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib19">
+                <label>19</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Zhu</surname>
+                            <given-names>A P</given-names>
+                        </name>
+                        <name>
+                            <surname>Liu</surname>
+                            <given-names>J H</given-names>
+                        </name>
+                        <name>
+                            <surname>Ye</surname>
+                            <given-names>W H</given-names>
+                        </name>
+                    </person-group>
+                    <year>2006</year>
+                    <source>Carbohydr. Polym.</source>
+                    <volume>63</volume>
+                    <fpage>89</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.carbpol.2005.08.002</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib20">
+                <label>20</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Ha</surname>
+                            <given-names>P T</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2011</year>
+                    <source>Chem. Lett.</source>
+                    <volume>40</volume>
+                    <fpage>1264</fpage>
+                    <pub-id pub-id-type="doi">10.1246/cl.2011.1264</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib21">
+                <label>21</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Anitha</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        <name>
+                            <surname>Maya</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Deepa</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Chennazhi</surname>
+                            <given-names>K P</given-names>
+                        </name>
+                        <name>
+                            <surname>Nair</surname>
+                            <given-names>S V</given-names>
+                        </name>
+                        <name>
+                            <surname>Tamura</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Jayakumar</surname>
+                            <given-names>R</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>Carbohydr. Polym.</source>
+                    <volume>83</volume>
+                    <fpage>452</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.carbpol.2010.08.008</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib22">
+                <label>22</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>F</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhang</surname>
+                            <given-names>D</given-names>
+                        </name>
+                        <name>
+                            <surname>Duan</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Jia</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        <name>
+                            <surname>Feng</surname>
+                            <given-names>F</given-names>
+                        </name>
+                        <name>
+                            <surname>Liu</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Hao</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhang</surname>
+                            <given-names>Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>Carbohydr. Polym.</source>
+                    <volume>84</volume>
+                    <fpage>1192</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.carbpol.2011.01.017</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib23">
+                <label>23</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Sahu</surname>
+                            <given-names>S K</given-names>
+                        </name>
+                        <name>
+                            <surname>Mallick</surname>
+                            <given-names>S K</given-names>
+                        </name>
+                        <name>
+                            <surname>Santra</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Maiti</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Ghosh</surname>
+                            <given-names>S K</given-names>
+                        </name>
+                        <name>
+                            <surname>Pramanik</surname>
+                            <given-names>P</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>J. Mater. Sci.: Mater. Med.</source>
+                    <volume>21</volume>
+                    <fpage>1587</fpage>
+                    <pub-id pub-id-type="doi">10.1007/s10856-010-3998-4</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib24">
+                <label>24</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Yang</surname>
+                            <given-names>S J</given-names>
+                        </name>
+                        <name>
+                            <surname>Lin</surname>
+                            <given-names>F H</given-names>
+                        </name>
+                        <name>
+                            <surname>Tsai</surname>
+                            <given-names>H M</given-names>
+                        </name>
+                        <name>
+                            <surname>Lin</surname>
+                            <given-names>C F</given-names>
+                        </name>
+                        <name>
+                            <surname>Chin</surname>
+                            <given-names>H C</given-names>
+                        </name>
+                        <name>
+                            <surname>Wong</surname>
+                            <given-names>J M</given-names>
+                        </name>
+                        <name>
+                            <surname>Shieh</surname>
+                            <given-names>M J</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>Biomaterials</source>
+                    <volume>32</volume>
+                    <fpage>2174</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.biomaterials.2010.11.039</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib25">
+                <label>25</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Low</surname>
+                            <given-names>P S</given-names>
+                        </name>
+                        <name>
+                            <surname>Kularatne</surname>
+                            <given-names>S A</given-names>
+                        </name>
+                    </person-group>
+                    <year>2009</year>
+                    <source>Curr. Opin. Chem. Biol.</source>
+                    <volume>13</volume>
+                    <fpage>256</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.cbpa.2009.03.022</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib26">
+                <label>26</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Ha</surname>
+                            <given-names>P T</given-names>
+                        </name>
+                        <name>
+                            <surname>Tran</surname>
+                            <given-names>T M N</given-names>
+                        </name>
+                        <name>
+                            <surname>Pham</surname>
+                            <given-names>H D</given-names>
+                        </name>
+                        <name>
+                            <surname>Nguyen</surname>
+                            <given-names>Q H</given-names>
+                        </name>
+                        <name>
+                            <surname>Nguyen</surname>
+                            <given-names>X P</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>Adv. Nature Sci.: Nanosci. Nanotechnol.</source>
+                    <volume>1</volume>
+                    <elocation-id content-type="artnum">015012</elocation-id>
+                    <pub-id pub-id-type="doi">10.1088/2043-6254/1/1/015012</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib27">
+                <label>27</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Le</surname>
+                            <given-names>M H</given-names>
+                        </name>
+                        <name>
+                            <surname>Ha</surname>
+                            <given-names>P T</given-names>
+                        </name>
+                        <name>
+                            <surname>Nguyen</surname>
+                            <given-names>T B T</given-names>
+                        </name>
+                        <name>
+                            <surname>Tran</surname>
+                            <given-names>T H H</given-names>
+                        </name>
+                        <name>
+                            <surname>Ha</surname>
+                            <given-names>T M T</given-names>
+                        </name>
+                        <name>
+                            <surname>Mai</surname>
+                            <given-names>T&nbsp;T</given-names>
+                        </name>
+                        <name>
+                            <surname>Tran</surname>
+                            <given-names>T N H</given-names>
+                        </name>
+                        <name>
+                            <surname>Do</surname>
+                            <given-names>H N</given-names>
+                        </name>
+                        <name>
+                            <surname>Nguyen</surname>
+                            <given-names>X P</given-names>
+                        </name>
+                        <name>
+                            <surname>Duong</surname>
+                            <given-names>T Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>Chem. Lett.</source>
+                    <volume>40</volume>
+                    <fpage>846</fpage>
+                    <pub-id pub-id-type="doi">10.1246/cl.2011.846</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib28">
+                <label>28</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Yu</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Huang</surname>
+                            <given-names>Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source><italic>Food Chem</italic>.</source>
+                    <volume>11</volume>
+                    <fpage>669</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.foodchem.2009.07.018</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432005bib29">
+                <label>29</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Aggarwal</surname>
+                            <given-names>B B</given-names>
+                        </name>
+                        <name>
+                            <surname>Surh</surname>
+                            <given-names>Y J</given-names>
+                        </name>
+                        <name>
+                            <surname>Shishodia</surname>
+                            <given-names>S</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>Adv. Exp. Med. Biol.</source>
+                    <volume>595</volume>
+                    <fpage>269</fpage>
+                </element-citation>
+            </ref>
+        </ref-list>
+    </back>
+</article>

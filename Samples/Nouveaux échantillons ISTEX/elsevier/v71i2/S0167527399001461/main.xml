@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "art452.dtd" [
+<!ENTITY gr1 SYSTEM "gr1" NDATA IMAGE><!ENTITY gr2 SYSTEM "gr2" NDATA IMAGE>]>
+<converted-article version="4.5.2" docsubtype="fla" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+<item-info>
+<jid>IJCA</jid>
+<aid>3754</aid>
+<ce:pii>S0167-5273(99)00146-1</ce:pii><ce:doi>10.1016/S0167-5273(99)00146-1</ce:doi>
+<ce:copyright type="full-transfer" year="1999">Elsevier Science Ireland Ltd</ce:copyright></item-info>
+<ce:floats><ce:figure id="FIG1">
+<ce:label>Fig. 1</ce:label>
+<ce:caption>
+<ce:simple-para>Left. Relation between wall motion at the noninfarcted area and wall motion at the infarcted area at the first week, (top), and at the sixth month, (bottom). Right. Relation between wall motion at the noninfarcted area and end-systolic volume at the first week, (top) and at the sixth month, (bottom). Abbreviations: ESV=end-systolic volume. NI WM=wall motion at the noninfarcted area. WM=wall motion at the infarcted area. 1w=first week. 6m=sixth month.</ce:simple-para></ce:caption>
+<ce:link locator="gr1" /></ce:figure><ce:figure id="FIG2">
+<ce:label>Fig. 2</ce:label>
+<ce:caption>
+<ce:simple-para>Plot of the improvement in noninfarct zone function at the sixth month compared with baseline (first week) function. Improvement in noninfarct zone wall motion was greater when initial motion was more impaired. Abbreviations: NI WM-1w=wall motion at the noninfarcted area at the first week. &#x0394;NIWM-6m=change in noninfarcted area wall motion from the first week to the sixth month.</ce:simple-para></ce:caption>
+<ce:link locator="gr2" /></ce:figure><ce:table id="TBL1" colsep="0" rowsep="0" frame="topbot"><ce:label>Table 1</ce:label><ce:caption>
+<ce:simple-para>Ventriculogaphic and angiographic parameters in the study patients</ce:simple-para></ce:caption><tgroup cols="3"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<tbody><row><entry></entry>
+<entry rowsep="1">1 Week</entry>
+<entry rowsep="1">6 Months</entry>
+</row>
+<row><entry></entry>
+<entry>(<ce:italic>n</ce:italic>=43)</entry>
+<entry>(<ce:italic>n</ce:italic>=27)</entry>
+</row>
+<row><entry>Noninfarcted area wall motion (SD/chord)</entry>
+<entry>0.24&#x00B1;1.2</entry>
+<entry>0.1&#x00B1;1.2</entry>
+</row>
+<row><entry>Patients with Noninfarcted area&#x003C;&#x2212;1SD/chord</entry>
+<entry>8/43 (18%)</entry>
+<entry>4/27 (15%)</entry>
+</row>
+<row><entry>Patients with Noninfarcted area>&#x2212;1SD/chord</entry>
+<entry>35/43 (82%)</entry>
+<entry>23/27 (85%)</entry>
+</row>
+<row><entry>Infarcted area wall motion (SD/chord)</entry>
+<entry>&#x2212;2.3&#x00B1;0.9</entry>
+<entry>&#x2212;1.9&#x00B1;1.2</entry>
+</row>
+<row><entry>Ejection fraction (%)</entry>
+<entry>57&#x00B1;14</entry>
+<entry>58&#x00B1;13</entry>
+</row>
+<row><entry>Residual stenosis (%)</entry>
+<entry>72&#x00B1;24</entry>
+<entry>71&#x00B1;26</entry>
+</row>
+<row><entry>Patients with residual stenosis>70%</entry>
+<entry>26/43 (61%)</entry>
+<entry>11/27 (40%)</entry>
+</row>
+<row><entry>Patients with residual stenosis&#x003C;70%</entry>
+<entry>17/43 (39%)</entry>
+<entry>16/27 (60%)</entry>
+</row>
+<row><entry>Occluded infarct-related artery</entry>
+<entry>8/43 (19%)</entry>
+<entry>6/27 (22%)</entry>
+</row>
+<row><entry>Patent infarct-related artery</entry>
+<entry>35/43 (81%)</entry>
+<entry>21/27 (78%)</entry>
+</row>
+</tbody></tgroup>
+</ce:table><ce:table id="TBL2" colsep="0" rowsep="0" frame="topbot"><ce:label>Table 2</ce:label><ce:caption>
+<ce:simple-para>Correlations between wall motion at the noninfarcted area with the different ventriculographic and angiographic variables analysed at the first week and at the sixth month</ce:simple-para></ce:caption><tgroup cols="5"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<tbody><row><entry></entry>
+<entry namest="col2" nameend="col3" rowsep="1">1 week</entry>
+<entry colname="col4" namest="col4" nameend="col5" rowsep="1">6 months</entry>
+</row>
+<row><entry></entry>
+<entry namest="col2" nameend="col3">(<ce:italic>n</ce:italic>=43)</entry>
+<entry colname="col4" namest="col4" nameend="col5">(<ce:italic>n</ce:italic>=27)</entry>
+</row>
+<row><entry></entry>
+<entry><ce:italic>r</ce:italic></entry>
+<entry><ce:italic>p</ce:italic></entry>
+<entry><ce:italic>r</ce:italic></entry>
+<entry><ce:italic>p</ce:italic></entry>
+</row>
+<row><entry>Infarcted area wall motion</entry>
+<entry align="char" char=".">0.53</entry>
+<entry align="char" char=".">&#x003C;0.0001</entry>
+<entry align="char" char=".">0.52</entry>
+<entry align="char" char=".">0.01</entry>
+</row>
+<row><entry>Ejection fraction</entry>
+<entry align="char" char=".">0.69</entry>
+<entry align="char" char=".">&#x003C;0.0001</entry>
+<entry align="char" char=".">0.56</entry>
+<entry align="char" char=".">0.006</entry>
+</row>
+<row><entry>Residual stenosis</entry>
+<entry align="char" char=".">0.09</entry>
+<entry>ns</entry>
+<entry align="char" char=".">0.06</entry>
+<entry>ns</entry>
+</row>
+<row><entry>Patency</entry>
+<entry align="char" char=".">0.04</entry>
+<entry>ns</entry>
+<entry align="char" char=".">0.06</entry>
+<entry>ns</entry>
+</row>
+<row><entry>End-diastolic volume</entry>
+<entry align="char" char=".">&#x2212;0.48</entry>
+<entry align="char" char=".">0.002</entry>
+<entry align="char" char=".">&#x2212;0.48</entry>
+<entry align="char" char=".">0.02</entry>
+</row>
+<row><entry>End-systolic volume</entry>
+<entry align="char" char=".">&#x2212;0.70</entry>
+<entry align="char" char=".">&#x003C;0.0001</entry>
+<entry align="char" char=".">&#x2212;0.64</entry>
+<entry align="char" char=".">0.001</entry>
+</row>
+<row><entry>&#x0394;Noninfarcted area<ce:cross-ref refid="TBLFN2A"><ce:sup>a</ce:sup></ce:cross-ref></entry>
+<entry align="char" char=".">&#x2212;0.58</entry>
+<entry align="char" char=".">0.003</entry>
+<entry></entry>
+<entry></entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN2A">
+<ce:label>a</ce:label>
+<ce:note-para>&#x0394;Noninfarcted area: Improvement at the noninfarcted area from the first week to the sixth month.</ce:note-para></ce:table-footnote></ce:table></ce:floats>
+<head>
+<ce:title>Wall motion of noninfarcted myocardium</ce:title><ce:subtitle>Relationship to regional and global systolic function and to early and late left ventricular dilation</ce:subtitle>
+<ce:author-group>
+<ce:author>
+<ce:given-name>Vicent</ce:given-name>
+<ce:surname>Bod&#x0131;&#x0301;</ce:surname>
+<ce:degrees>MD</ce:degrees><ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref><ce:cross-ref refid="CORR1">*</ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Juan</ce:given-name>
+<ce:surname>Sanchis</ce:surname>
+<ce:degrees>MD FESC,</ce:degrees><ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Alberto</ce:given-name>
+<ce:surname>Berenguer</ce:surname>
+<ce:degrees>PhD</ce:degrees><ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Luis D</ce:given-name>
+<ce:surname>Insa</ce:surname>
+<ce:degrees>MD</ce:degrees><ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Francisco J</ce:given-name>
+<ce:surname>Chorro</ce:surname>
+<ce:degrees>MD FESC</ce:degrees><ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Angel</ce:given-name>
+<ce:surname>Ll&#x00E1;cer</ce:surname>
+<ce:degrees>MD</ce:degrees><ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Vicente</ce:given-name>
+<ce:surname>L&#x00F3;pez-Merino</ce:surname>
+<ce:degrees>MD</ce:degrees><ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:affiliation id="AFF1"><ce:label>a</ce:label><ce:textfn>Cardiology Unit, Hospital Marina Baixa, La Vila Joiosa, Spain</ce:textfn></ce:affiliation>
+<ce:affiliation id="AFF2"><ce:label>b</ce:label><ce:textfn>Cardiology Department, Hospital Cl&#x0131;&#x0301;nic Universitari, Valencia, Spain</ce:textfn></ce:affiliation>
+<ce:correspondence id="CORR1">
+<ce:label>*</ce:label><ce:text>Corresponding author. Tel.: +34-96-685-9894; fax: +34-96-685-9900</ce:text></ce:correspondence></ce:author-group>
+<ce:date-received day="24" month="5" year="1999" />
+<ce:date-revised day="9" month="7" year="1999" />
+<ce:date-accepted day="6" month="8" year="1999" />
+<ce:abstract>
+<ce:section-title>Abstract</ce:section-title><ce:abstract-sec>
+<ce:simple-para>We studied the wall motion of the noninfarcted area and its role in left ventricular remodeling. The study group consisted of 43 patients with a first Q-wave acute myocardial infarction and single-vessel disease. Cardiac catheterization was performed at the first week, and was repeated six months later. Left ventricular volumes, wall motion at the infarcted and noninfarcted area, ejection fraction and infarction-related artery status were quantified. Hyperkinesia was only found at the first week in 22% of cases, and at the sixth month in 26% of cases. Wall motion at the noninfarcted area correlated with wall motion at the infarcted area (one week: <ce:italic>r</ce:italic>=0.53 <ce:italic>p</ce:italic>&#x003C;0.0001; six months: <ce:italic>r</ce:italic>=0.52 <ce:italic>p</ce:italic>=0.01), ejection fraction (one week: <ce:italic>r</ce:italic>=0.69 <ce:italic>p</ce:italic>&#x003C;0.0001; six months: <ce:italic>r</ce:italic>=0.56 <ce:italic>p</ce:italic>=0.006), end-diastolic volume (one week: <ce:italic>r</ce:italic>=&#x2212;0.48 <ce:italic>p</ce:italic>=0.002; six months: <ce:italic>r</ce:italic>=&#x2212;0.48 <ce:italic>p</ce:italic>=0.02) and end-systolic volume (one week: <ce:italic>r</ce:italic>=&#x2212;0.70 <ce:italic>p</ce:italic>&#x003C;0.0001; six months: <ce:italic>r</ce:italic>=&#x2212;0.64 <ce:italic>p</ce:italic>=0.001). The improvement of the noninfarcted area (from the first week to the sixth month) was only related to basal (one week) wall motion in this area (<ce:italic>r</ce:italic>=&#x2212;0.58 <ce:italic>p</ce:italic>=0.003). We conclude that after an intermediate&#x2013;large infarction, most patients exhibit a normal or hypokinetic noninfarcted area. Patients with a more depressed infarcted area show poorer contractility at the noninfarcted area. Hypokinesia at the noninfarcted area is independently related to more enlarged volumes. Those cases with a more depressed noninfarcted area exhibit greater progressive improvement.</ce:simple-para></ce:abstract-sec></ce:abstract>
+<ce:keywords>
+<ce:section-title>Keywords</ce:section-title>
+<ce:keyword><ce:text>Noninfarcted area</ce:text></ce:keyword>
+<ce:keyword><ce:text>Remodeling</ce:text></ce:keyword>
+<ce:keyword><ce:text>Myocardial infarction</ce:text></ce:keyword></ce:keywords></head>
+<body><ce:sections>
+<ce:section>
+<ce:label>1</ce:label>
+<ce:section-title>Introduction</ce:section-title>
+<ce:para>After acute myocardial infarction increased contractile function in the noninfarct region has been reported in up to two thirds of patients by semiquantitative analysis <ce:cross-refs refid="BIB1 BIB2 BIB3">[1&#x2013;3]</ce:cross-refs>. Early remote region hyperkinesis is less demonstrable in patients with multivessel coronary disease <ce:cross-refs refid="BIB1 BIB2">[1,2]</ce:cross-refs>, and may imply a worse prognosis <ce:cross-ref refid="BIB2">[2]</ce:cross-ref>. Nevertheless, more recent reports involving methods developed to quantitatively assess regional function have demonstrated reduced wall motion throughout the left ventricle, including remote noninfarcted regions even in those patients with single-vessel disease <ce:cross-refs refid="BIB4 BIB5 BIB6 BIB7 BIB8 BIB9 BIB10 BIB11">[4&#x2013;11]</ce:cross-refs>.</ce:para>
+<ce:para>Previous studies have analyzed the factors which condition ventricular remodeling after infarction <ce:cross-refs refid="BIB12 BIB13 BIB14">[12&#x2013;14]</ce:cross-refs>. It has been universally accepted that left ventricular dilation involves both the infarcted and the noninfarcted areas <ce:cross-refs refid="BIB12 BIB13 BIB14">[12&#x2013;14]</ce:cross-refs>, and the role of wall motion of the former has been clearly demonstrated <ce:cross-refs refid="BIB12 BIB13 BIB14 BIB15">[12&#x2013;15]</ce:cross-refs>. Nevertheless, data are scarce on the independent impact of contractility at the remote noninfarcted area upon early and late left ventricular volumes <ce:cross-refs refid="BIB8 BIB11">[8,11]</ce:cross-refs>.</ce:para>
+<ce:para>In the present study, left ventricular volumes and regional function (both at the infarcted and at the noninfarcted areas) have been quantified at the end of the first week (end of infarct expansion phase) and at six months after a first acute myocardial infarction in a group of patients with single-vessel disease, using contrast left ventriculography. The aims were: (a) To characterize noninfarcted area wall motion early after acute myocardial infarction and its evolution during the first six months postinfarction; (b) analyze the relationship between wall motion at the infarcted area and wall motion at the remote noninfarcted area; and (c) to separately evaluate the role of contractility at the infarcted and noninfarcted areas and of the infarct-related artery status on early and late left ventricular remodeling.</ce:para></ce:section>
+<ce:section>
+<ce:label>2</ce:label>
+<ce:section-title>Materials and methods</ce:section-title>
+<ce:section>
+<ce:label>2.1</ce:label>
+<ce:section-title>Patient population</ce:section-title>
+<ce:para>The study group consisted of 43 consecutive patients with a first intermediate&#x2013;large (four or more Q waves) acute myocardial infarction and single-vessel disease. The mean age was 59&#x00B1;11 years. The infarction was anterior in 36 patients and inferior in seven cases. Thrombolytic treatment was administered in all patients. RT-PA was used in all cases. All patients were treated with angiotensin converting enzyme inhibitors (enalapril) from the third day postinfarction (up to 20 mg per day) throughout follow-up. All cases were subjected to predischarge cardiac catheterization (7&#x00B1;1 day postinfarction); the latter was repeated six months later (176&#x00B1;25 days) in 27 cases.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.2</ce:label>
+<ce:section-title>Left ventriculography</ce:section-title>
+<ce:para>Left ventriculography was performed using a pigtail catheter. Forty ml of contrast were injected at an injection speed of 12 ml/s, in the 30-degree right anterior oblique projection. The software of an X-ray digital imaging system (Integris HM 3000, Philips) was used for global and regional left ventriculogram analysis. Endocardial end-diastolic and end-systolic contours were automatically traced, and the left ventricular end-diastolic and end-systolic volumes were determined. These values were normalized by body surface (ml/m<ce:sup>2</ce:sup>). The ejection fraction was also quantified (area&#x2013;length method).</ce:para>
+<ce:para>Centerline chord motion method was used to quantitatively assess regional left ventricular function. In this technique, endocardial motion is measured along 100 chords constructed perpendicular to a centerline drawn midway between the end-diastolic and end-systolic contours in the right anterior oblique projection. The motion of each chord is normalized by the end-diastolic circumference to yield a fractional shortening. This value is then converted into units of standard deviations (SD) from the normal mean motion of each chord as derived from a normal reference population (45 patients without regional systolic dysfunction in left ventriculography and normal echocardiogram).</ce:para>
+<ce:para>In the case of anterior infarctions, the infarcted area was regarded as those chords in the distribution territory of the left anterior descending artery (10&#x2013;66 chords), while the noninfarcted area was regarded as those chords remote from this territory (67&#x2013;80 chords). Chords 1&#x2013;10 and 81&#x2013;100 were excluded from analysis to avoid the confounding factor of mitral and aortic apparatus on systolic function. Consequently, in the case of inferior infarctions, the infarcted area was considered as those chords in the territory of the dominant left circumflex or right coronary arteries (51&#x2013;80 chords), and the noninfarcted area was regarded as those chords remote from this territory (10&#x2013;50 chords). Therefore, those chords shared by the inferior and anterior territories (51&#x2013;66 chords) were excluded from analysis of the noninfarcted area wall motion in order to avoid the influence of tethering of the infarcted to the noninfarcted myocardium.</ce:para>
+<ce:para>Mean motion of each of these territories (i.e., the sum of the SD of all the chords divided by the number of chords belonging to the territory analyzed) was calculated and expressed in units of SD/chord. The noninfarcted area was considered hypokinetic if its wall motion was less than &#x2212;1 SD/chord.</ce:para>
+<ce:para>Late regional functional recovery was quantified by the difference between wall motion in the late angiogram minus wall motion in the early angiogram in both the infarcted and noninfarcted area.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.3</ce:label>
+<ce:section-title>Coronary angiogram</ce:section-title>
+<ce:para>Coronary angiograms were performed by the Judkins technique. The angiograms were obtained after administering intracoronary nitroglycerine to minimize the effect of variations in vasomotor tone upon vessel diameter. Multiple injections were performed in the right and left oblique view, including cranial&#x2013;caudal angulations. The infarction artery was identified by analysis of the acute ECG changes, the regional wall motion abnormalities and the coronary angiograms.</ce:para>
+<ce:para>Flow in the infarction-related artery was graded according to the TIMI criteria; grades 0 and 1 were regarded as total occlusion. Quantitative analysis was performed using the automatic edge method included in the software of the Integris HM 3000 system (Philips). The end-diastolic frames showing the narrowest stenotic diameter were selected for analysis. Patients with stenosis of 50% or more in the infarct-nonrelated arteries were excluded from analysis.</ce:para>
+<ce:para>Percutaneous transluminal coronary angioplasty (PTCA) in the infarction artery was performed by standard techniques in the same time as the diagnostic angiogram in 16 patients &#x2013; with a successful outcome in 14 cases. Informed consent was obtained from each patient before cardiac catheterization. PTCA was performed in eight cases with an abnormal pre-discharge exercise testing, in four cases with an unstable clinical status and in four stable patients with an amenable stenosis in the infarction-related artery.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.4</ce:label>
+<ce:section-title>Statistical analysis</ce:section-title>
+<ce:para>Values are expressed as mean&#x00B1;standard deviation. Continuous variables were compared by the paired or unpaired <ce:italic>t</ce:italic>-test. Univariate linear and multivariate stepwise regression analyses were performed. The multivariate analysis included those variables with <ce:italic>p</ce:italic>&#x003C;0.1 in the univariate analysis. A <ce:italic>p</ce:italic> value of &#x003C;0.05 was considered to be statistically significant.</ce:para></ce:section></ce:section>
+<ce:section>
+<ce:label>3</ce:label>
+<ce:section-title>Results</ce:section-title>
+<ce:section>
+<ce:label>3.1</ce:label>
+<ce:section-title>Early cardiac catheterization</ce:section-title>
+<ce:para>A first cardiac catheterization was performed at the first week (day 7&#x00B1;1 postinfarction) in all patients (<ce:italic>n</ce:italic>=43); regional and global systolic function, left ventricular volumes and coronariographic data are expressed in <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref><ce:float-anchor refid="TBL1" />.</ce:para>
+<ce:section>
+<ce:label>3.1.1</ce:label>
+<ce:section-title>Systolic function</ce:section-title>
+<ce:para>Hyperkinesia at the noninfarcted area (>1SD/chord) was only found in nine cases (22%). Noninfarcted area wall motion was hypokinetic (less than &#x2212;1SD/chord) in eight cases (18%) and normal (between &#x2212;1 and 1 SD/chord) in 26 (60%). Wall motion at the noninfarcted area correlated with both wall motion at the infarcted area (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref><ce:float-anchor refid="FIG1" />) and with ejection fraction (<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref><ce:float-anchor refid="TBL2" />). Those patients with a hypokinetic noninfarcted area (less than &#x2212;1SD/chord; <ce:italic>n</ce:italic>=10) showed a poorer wall motion at the infarcted area (&#x2212;2.7&#x00B1;0.7 SD/chord versus &#x2212;1.9&#x00B1;0.9 SD/chord <ce:italic>p</ce:italic>=0.02), and a more depressed ejection fraction (41&#x00B1;10% versus 61&#x00B1;12% <ce:italic>p</ce:italic>&#x003C;0.0001) than patients with a normal or a hyperkinetic noninfarcted area (greater than &#x2212;1SD/chord; <ce:italic>n</ce:italic>=33).</ce:para>
+<ce:para>Wall motion at the infarcted area (<ce:italic>r</ce:italic>=0.64 <ce:italic>p</ce:italic>=0.0001) and at the noninfarcted area (<ce:italic>r</ce:italic>=0.49 <ce:italic>p</ce:italic>=0.01) analysed at the first week showed a positive correlation with ejection fraction analysed at the sixth month but not with the increase of ejection fraction between both studies.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.1.2</ce:label>
+<ce:section-title>Left ventricular volumes</ce:section-title>
+<ce:para>Wall motion at the noninfarcted area was inversely correlated to the end-diastolic and end-systolic volume (<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>) (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>). Patients with a hypokinetic noninfarcted area showed a more dilated end-systolic volume (53&#x00B1;18 ml/m<ce:sup>2</ce:sup> versus 27&#x00B1;14 ml/m<ce:sup>2</ce:sup> <ce:italic>p</ce:italic>&#x003C;0.0001) and a greater end-diastolic volume (88&#x00B1;23 ml/m<ce:sup>2</ce:sup> versus 66&#x00B1;20 ml/m<ce:sup>2</ce:sup> <ce:italic>p</ce:italic>=0.01) than patients with a normal noninfarcted area.</ce:para>
+<ce:para>Wall motion at the infarcted area also correlated to both the end-diastolic (<ce:italic>r</ce:italic>=&#x2212;0.38 <ce:italic>p</ce:italic>=0.01) and end-systolic volume (<ce:italic>r</ce:italic>=&#x2212;0.67 <ce:italic>p</ce:italic>&#x003C;0.0001).</ce:para>
+<ce:para>In the multivariate analysis (including those variables that exhibited a <ce:italic>p</ce:italic> value of less than 0.1 in the univariate analysis: wall motion at the infarcted area and wall motion at the noninfarcted area), the only variable included in the case of the end-diastolic volume was wall motion at the noninfarcted area (<ce:italic>F</ce:italic>=11.5 <ce:italic>p</ce:italic>=0.002). In the case of the end-systolic volume, both wall motion at the infarcted area (<ce:italic>F</ce:italic>=30 <ce:italic>p</ce:italic>&#x003C;0.0001) and wall motion at the noninfarcted area (<ce:italic>F</ce:italic>=38 <ce:italic>p</ce:italic>&#x003C;0.0001) added independent information.</ce:para>
+<ce:para>Wall motion at the infarcted area (end-diastolic volume: <ce:italic>r</ce:italic>=&#x2212;0.44 <ce:italic>p</ce:italic>=0.01 / end-systolic volume: <ce:italic>r</ce:italic>=&#x2212;0.69 <ce:italic>p</ce:italic>=0.0001) and at the noninfarcted area (end-diastolic volume: <ce:italic>r</ce:italic>=&#x2212;0.58 <ce:italic>p</ce:italic>=0.001 / end-systolic volume: <ce:italic>r</ce:italic>=&#x2212;0.66 <ce:italic>p</ce:italic>=0.0001) analysed at the first week maintained a negative correlation with left ventricular volumes analysed at the sixth month but not with their increase between both studies.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.1.3</ce:label>
+<ce:section-title>Infarction-related artery</ce:section-title>
+<ce:para>No significant correlation was found between residual stenosis at the infarct-related artery and wall motion at the noninfarcted area (<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>) or at the infarcted area (<ce:italic>r</ce:italic>&#x003C;0.1 <ce:italic>p</ce:italic>=ns). The residual stenosis was similar between patients with a hypokinetic and a normal noninfarcted area (71&#x00B1;34% versus 73&#x00B1;22% p=ns). The percentage of patients with an occluded artery (13% versus 21% <ce:italic>p</ce:italic>=ns) was similar in both groups. No significant correlation was found between the infarct-related artery status (TIMI grade, residual stenosis or patency/occlusion) and left ventricular volumes or ejection fraction.</ce:para></ce:section></ce:section>
+<ce:section>
+<ce:label>3.2</ce:label>
+<ce:section-title>Late cardiac catheterization</ce:section-title>
+<ce:para>Repeat cardiac catheterization was performed at the sixth month (176&#x00B1;25 days postinfarction) in 27 patients. Follow-up was not completed in 16 cases (four reinfarctions, four deaths and eight cases due to patient decision); these patients did not show any significant difference regarding systolic function, left ventricular volumes and coronary artery status with respect to the study group. Regional and global systolic function and coronariographic data are expressed in <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref>.</ce:para>
+<ce:section>
+<ce:label>3.2.1</ce:label>
+<ce:section-title>Systolic function</ce:section-title>
+<ce:para>The noninfarcted area was hypokinetic (less than &#x2212;1SD/chord) in four cases (15%), normal (between &#x2212;1 and 1 SD/chord) in 16 (59%) and hyperkinetic (>1SD/chord) in seven cases (26%). Five cases (18%) improved (from less than &#x2212;1 to more than &#x2212;1 SD/chord) while 22 patients (82%) remained in the same subgroup; no patient with a normal or hyperkinetic noninfarcted area at the first week showed hypokinesia at the sixth month. The noninfarcted area showed a mean increase of 0.16 SD/chord (from &#x2212;1.5 to 1.5 SD/chord).</ce:para>
+<ce:para>Correlations between wall motion at the noninfarcted area to both wall motion at the infarcted area (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>) and to ejection fraction were maintained at the sixth month (<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>). Those patients with a hypokinetic noninfarcted area (less than &#x2212;1SD/chord; <ce:italic>n</ce:italic>=4) exhibited poorer wall motion at the infarcted area (&#x2212;2.6&#x00B1;1 SD/chord versus &#x2212;1.5&#x00B1;1.2 SD/chord <ce:italic>p</ce:italic>=0.1), and a more depressed ejection fraction (48&#x00B1;4% versus 60&#x00B1;13% <ce:italic>p</ce:italic>=0.01) than patients with a normal noninfarcted area (greater than &#x2212;1SD/chord; <ce:italic>n</ce:italic>=23).</ce:para>
+<ce:para>The improvement at the noninfarcted area from the first week to the sixth month (wall motion at the sixth month minus wall motion at the first week) only correlated to noninfarcted area wall motion at the first week: the poorer the contractility, the greater the improvement (<ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref><ce:float-anchor refid="FIG2" />)(<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>). The other variables analyzed (i.e., infarcted area wall motion, infarcted area improvement, ejection fraction, coronary artery status and left ventricular volumes) showed no significant correlation to noninfarcted area improvement.</ce:para>
+<ce:para>No baseline variable (residual stenosis, wall motion at the infarcted and noninfarcted area, left ventricular volumes) correlated with change in ejection fraction from the first week to the sixth month. Only the improvement at the noninfarcted area was significantly related to change in ejection fraction (<ce:italic>r</ce:italic>=0.45 <ce:italic>p</ce:italic>=0.04).</ce:para></ce:section>
+<ce:section>
+<ce:label>3.2.2</ce:label>
+<ce:section-title>Left ventricular volumes</ce:section-title>
+<ce:para>In a similar manner as was observed after the first week, at the sixth month noninfarcted area wall motion was inversely correlated to end-diastolic and end-systolic volume (<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>) (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>). Patients with a hypokinetic noninfarcted area had a more dilated end-systolic volume (62&#x00B1;23 ml/m<ce:sup>2</ce:sup> versus 29&#x00B1;14 ml/m<ce:sup>2</ce:sup> <ce:italic>p</ce:italic>=0.001), and a greater end-diastolic volume (99&#x00B1;33 ml/m<ce:sup>2</ce:sup> versus 72&#x00B1;17 ml/m<ce:sup>2</ce:sup> <ce:italic>p</ce:italic>=0.02) than patients with a normal noninfarcted area.</ce:para>
+<ce:para>Wall motion at the infarcted area maintained its correlation to end-systolic volume (<ce:italic>r</ce:italic>=&#x2212;0.56 <ce:italic>p</ce:italic>=0.004), but not to end-diastolic volume (<ce:italic>r</ce:italic>=&#x2212;0.28 <ce:italic>p</ce:italic>=0.2). No significant correlation was found between the infarct-related artery status (TIMI grade, residual stenosis or patency/occlusion) and the left ventricular volumes. In the multivariate analysis, the only variable included in the case of the end-systolic volume was wall motion at the infarcted area (<ce:italic>F</ce:italic>=11 <ce:italic>p</ce:italic>=0.004).</ce:para>
+<ce:para>Changes in left ventricular volumes from the first week to the sixth month did not correlate with baseline wall motion at the infarcted or noninfarcted area or with their changes between both studies.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.2.3</ce:label>
+<ce:section-title>Infarction-related artery</ce:section-title>
+<ce:para>No significant correlation was found between wall motion at the noninfarcted area and the infarction-related coronary artery status (<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>). PTCA did not show any significant influence on systolic function or left ventricular volumes. Restenosis (>50%) was observed in 6 of 14 patients (43%) in whom PTCA was performed; no significant difference existed in terms of noninfarcted area wall motion at the sixth month between those cases with (0.48&#x00B1;0.67 SD/chord) and without restenosis(0.15&#x00B1;1.3SD/chord).</ce:para></ce:section></ce:section></ce:section>
+<ce:section>
+<ce:label>4</ce:label>
+<ce:section-title>Discussion</ce:section-title>
+<ce:para>The present study addresses wall motion at the noninfarcted area, its relationship to global and regional (at the infarcted area) systolic function, and its relationship with early and late left ventricular remodeling. The main findings are: (A) Wall motion at the noninfarcted area is directly related to contractility at the infarcted myocardium. Therefore, compensatory increased contractile function in the noninfarct region is unusual in those patients with severe dysfunction at the infarcted area. (B) Wall motion at the noninfarcted area is related to postinfarction left ventricular dilation &#x2013; this being greater in those cases with more depressed noninfarcted area wall motion.</ce:para>
+<ce:section>
+<ce:label>4.1</ce:label>
+<ce:section-title>Regional and global systolic function</ce:section-title>
+<ce:para>Hyperkinesis of remote noninfarcted myocardium has been reported in the first hours after acute myocardial infarction <ce:cross-refs refid="BIB1 BIB2 BIB3">[1&#x2013;3]</ce:cross-refs>. Jaarsma et al. <ce:cross-ref refid="BIB2">[2]</ce:cross-ref> found hyperkinesis (with echocardiography) at the remote myocardium in 67% of cases during the first 12 h after admission; hypokinesis was associated to multivessel disease and to a higher mortality rate. In a group of 30 patients (eight with single-vessel disease) studied 15 days after acute myocardial infarction by means of echocardiography, Stamm et al. <ce:cross-ref refid="BIB1">[1]</ce:cross-ref> in turn found remote hyperkinesis in 4.5% of cases with multivessel disease, but in 50% with single vessel disease. In an experimental study, Kerber et al. <ce:cross-ref refid="BIB3">[3]</ce:cross-ref> observed acute hyperkinesis at the noninfarcted region in 60% of cases.</ce:para>
+<ce:para>Increased contractile function in the noninfarct region is usually expected to compensate for decreased wall motion in the infarct region. However, recent reports employing quantitative techniques have found reduced myocardial contractility throughout the left ventricle. In this sense, Kramer et al. <ce:cross-ref refid="BIB6">[6]</ce:cross-ref> found contractility at the noninfarcted area to be lower in patients than in control subjects at the fifth day postinfarction in 28 patients studied with magnetic resonance imaging. Similar results were obtained by the same authors in an experimental study <ce:cross-ref refid="BIB8">[8]</ce:cross-ref>. Yoshino et al. <ce:cross-ref refid="BIB4">[4]</ce:cross-ref> have reported depressed wall motion in the noninfarct region in patients with poor left ventricular function (both determined by quantitative analysis of left contrast ventriculography). Wall motion at the noninfarcted area was quantitatively analyzed by means of the left ventriculogram and the centerline motion method in two further reports: Stadius et al. <ce:cross-ref refid="BIB9">[9]</ce:cross-ref> found remote hyperkinesis in 32%, and Grines et al. <ce:cross-ref refid="BIB5">[5]</ce:cross-ref> in 13% of cases.</ce:para>
+<ce:para>In agreement with the second group of reports, remote hyperkinesis was unusual in our study (22% of patients), and a more depressed systolic function in the noninfarcted myocardium was associated to poorer global and regional contractility &#x2013; these results being maintained at the sixth month postinfarction.</ce:para>
+<ce:para>Two factors could explain the higher prevalence of hyperkinesis in the first group of reports: (a) Most of these studies were performed during the first days postinfarction; in this sense, a deterioration or &#x201C;regression to the mean&#x201D; <ce:cross-ref refid="BIB5">[5]</ce:cross-ref> has been observed at the noninfarcted area during the first week postinfarction. Therefore, the finding of remote hyperkinesis may be more frequent in very early analyses. (b) On the other hand, most of these studies used qualitative or semiquantitative methods <ce:cross-refs refid="BIB1 BIB2 BIB3">[1&#x2013;3]</ce:cross-refs>. A lesser accuracy of these techniques, and adoption of the infarcted area (rather than a normal population) as wall motion of reference could also account for the discordant results obtained.</ce:para>
+<ce:para>Several potential mechanisms could explain the hypokinesis (or absence of compensatory hyperkinesis), as well as the direct correlation between noninfarcted area wall motion with the infarcted area contractility and the ejection fraction found in our study and also by other authors: (a) Reduced coronary flow <ce:cross-ref refid="BIB2">[2]</ce:cross-ref>. This factor did not affect our study because patients with significant stenosis in arteries other than the infarction artery were excluded. (b) Reduced coronary flow reserve despite the absence of any epicardial lesion <ce:cross-ref refid="BIB6">[6]</ce:cross-ref>. (c) Increased remote loading on noninfarcted regions in the case of large infarcts <ce:cross-ref refid="BIB7">[7]</ce:cross-ref>. (d) Mechanical tethering of noninfarcted regions to infarcted myocardium <ce:cross-ref refid="BIB7">[7]</ce:cross-ref>. In our study, those chords adjacent to the infarcted area and shared by the anterior and inferior territories (chords 50&#x2013;65) were excluded, and only the more remote chords were analyzed. Nevertheless, mechanical tethering could have played a role in our results.</ce:para></ce:section>
+<ce:section>
+<ce:label>4.2</ce:label>
+<ce:section-title>Left ventricular volumes</ce:section-title>
+<ce:para>Left ventricular dilation after acute myocardial infarction takes place in two different phases. Early dilation is related to a local phenomenon of infarct expansion <ce:cross-ref refid="BIB16">[16]</ce:cross-ref>; it usually occurs within the first week postinfarction <ce:cross-refs refid="BIB16 BIB17">[16,17]</ce:cross-refs>, and infarct size is its main determinant <ce:cross-refs refid="BIB11 BIB12 BIB13 BIB14 BIB15 BIB16 BIB17">[11&#x2013;17]</ce:cross-refs>. An additional late ventricular enlargement can develop at the non-infarct zone, becoming evident by day 28 <ce:cross-ref refid="BIB17">[17]</ce:cross-ref>. Several studies suggest that cases with larger infarctions <ce:cross-refs refid="BIB11 BIB12 BIB13 BIB14 BIB15 BIB16 BIB17 BIB18">[11&#x2013;18]</ce:cross-refs>, an anterior location <ce:cross-ref refid="BIB18">[18]</ce:cross-ref>, persistent infarct-related artery occlusion <ce:cross-refs refid="BIB18 BIB19">[18,19]</ce:cross-refs>, and a lack of myocardial viability exhibit major late dilation <ce:cross-refs refid="BIB20 BIB21">[20,21]</ce:cross-refs> &#x2013; this being prevented by the administration of angiotensin converting enzyme inhibitors <ce:cross-ref refid="BIB22">[22]</ce:cross-ref>. In our study group all patients had been treated with thrombolytic agents and all of them were taking angiotensin converting enzyme inhibitors since the first week; therefore, these factors did not influence the final results of any of the subgroups analysed.</ce:para>
+<ce:para>Although poor contractility at the infarcted area has been demonstrated to be the main predictor of left ventricular enlargement <ce:cross-refs refid="BIB11 BIB12 BIB13 BIB14 BIB15 BIB16 BIB17 BIB18 BIB19">[11&#x2013;19]</ce:cross-refs>, the role of wall motion at the noninfarcted zone has been scarcely studied <ce:cross-refs refid="BIB8 BIB11">[8,11]</ce:cross-refs>. Kramer et al. <ce:cross-ref refid="BIB8">[8]</ce:cross-ref>, in an experimental study, found that left ventricular dilation during remodeling was associated to a transient decrease in wall motion and lengthening of the adjacent noninfarcted area.</ce:para>
+<ce:para>In our protocol, the ventricular volumes were measured at day seven (i.e., probably when the infarct expansion phase was concluding) and at six months. Our results confirm the correlation between wall motion at the infarcted area and left ventricular volumes; nevertheless, in both studies the strongest correlations were found with noninfarcted area contractility. This fact highlights the role of systolic function in the remote zones as one of the main variables to be taken into account for predicting postinfarction left ventricular dilation. Probably the mechanism involved is a greater overload in the noninfarcted zone in those cases with larger infarctions <ce:cross-ref refid="BIB7">[7]</ce:cross-ref>; when both areas fail to recover systolic function, maximum ventricular enhancement takes place.</ce:para>
+<ce:para>However, it should be taken into account that the correlations between wall motion at the noninfarcted area and left ventricular volumes were not highly significant; moreover, these correlations did not improve over the follow-up. Therefore, although wall motion at remote myocardium seems to play a significant role in left ventricular remodeling, this phenomenon is multifacorial and influenced by several variables not definitively clarified.</ce:para></ce:section>
+<ce:section>
+<ce:label>4.3</ce:label>
+<ce:section-title>Infarction-related artery</ce:section-title>
+<ce:para>Grines et al. <ce:cross-ref refid="BIB5">[5]</ce:cross-ref> and Stamm et al. <ce:cross-ref refid="BIB1">[1]</ce:cross-ref> have reported an independent role of multivessel disease on wall motion at the noninfarcted areas. Interactions between vascular beds can be quiet complex, with occlusion in one bed leading to ischemia in the other. On the other hand, acute coronary occlusion may impair recruitment of collateral flow and prevent augmented contraction of remote myocardium <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>. According to these observations, those cases with a stenosis of more than 50% in a noninfarct vessel were excluded from analysis in our protocol.</ce:para>
+<ce:para>The impact of patency or occlusion in the infarct-related artery on remote myocardium of patients with single-vessel disease is unclear. Grines et al. <ce:cross-ref refid="BIB5">[5]</ce:cross-ref> found that a higher TIMI flow grade in the infarction artery was related to major improvement in regional wall motion of the noninfarcted zone. Recently, Yoshino et al. <ce:cross-ref refid="BIB4">[4]</ce:cross-ref> have reported a worse systolic function at the remote myocardium in patients with an anterior infarction and a proximal lesion in the left anterior descending coronary artery.</ce:para>
+<ce:para>In our study none of the coronariographic data were related to wall motion of the noninfarcted myocardium. This discrepancy may be explained by the different criteria followed in the definition of the remote noninfarcted area: while previous studies <ce:cross-refs refid="BIB4 BIB5">[4,5]</ce:cross-refs> regarded as noninfarcted myocardium the mean motion of the most abnormally contracting chords (probably including in many cases the chords adjacent to the infarcted area), in our work only those chords most remote from the infarcted zone were analyzed. Consequently, improvement of the infarcted area or tethering rather than enhancement of noninfarcted area wall motion could be the reason for their results in cases with a patent infarct-related artery.</ce:para></ce:section>
+<ce:section>
+<ce:label>4.4</ce:label>
+<ce:section-title>Improvement in noninfarct zone at the sixth month</ce:section-title>
+<ce:para>Improvement at the infarcted area has been demonstrated in both revascularized (&#x201C;hibernating myocardium&#x201D; <ce:cross-refs refid="BIB23 BIB24">[23,24]</ce:cross-refs>) and nonrevascularized patients (&#x201C;stunned myocardium&#x201D; <ce:cross-refs refid="BIB25 BIB26">[25,26]</ce:cross-refs>). Nevertheless, little is known about the evolution of the noninfarcted area. Grines et al. <ce:cross-ref refid="BIB5">[5]</ce:cross-ref> observed recovery in the function of the noninfarct zone within the first week postinfarction &#x2013; this being greater in those cases with a more impaired baseline function at the noninfarcted area. These authors defined the phenomenon as a &#x201C;regression to the mean&#x201D;, whereby improvement takes place when this area is acutely depressed <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>.</ce:para>
+<ce:para>Our results confirm these observations over a longer follow-up period (six months). Taking into account the direct correlation observed between ejection fraction and noninfarcted area wall motion, this phenomenon may in part explain the changes observed in global systolic function in some postinfarction patients.</ce:para></ce:section>
+<ce:section>
+<ce:label>4.5</ce:label>
+<ce:section-title>Limitations</ce:section-title>
+<ce:para>Only one projection (right anterior oblique) was used to assess myocardial contractility by left ventriculography. In patients with regional dysfunction, like ours, this might affect the results regarding left ventricular volumes.</ce:para></ce:section>
+<ce:section>
+<ce:label>4.6</ce:label>
+<ce:section-title>Clinical implications</ce:section-title>
+<ce:para>Enhanced contractility in the noninfarcted area is unusual within the first six months after an intermediate&#x2013;large myocardial infarction, and its improvement is chiefly related to the initial level of impairment. A worse contractility in the noninfarct zone is associated to two important predictors of survival: A more severe left ventricular dilation and a poorer ejection fraction. Therefore, analysis of regional wall motion throughout the left ventricle and not only in the infarcted area could further help to identify high-risk patients.</ce:para></ce:section></ce:section></ce:sections></body>
+<tail>
+<ce:bibliography>
+<ce:section-title>References</ce:section-title><ce:bibliography-sec>
+<ce:bib-reference id="BIB1">
+<ce:label>[1]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.B</ce:given-name><ce:surname>Stamm</ce:surname></sb:author><sb:author><ce:given-name>R.S</ce:given-name><ce:surname>Gibson</ce:surname></sb:author><sb:author><ce:given-name>H.L</ce:given-name><ce:surname>Bishop</ce:surname></sb:author><sb:author><ce:given-name>B.A</ce:given-name><ce:surname>Carabello</ce:surname></sb:author><sb:author><ce:given-name>G.A</ce:given-name><ce:surname>Beller</ce:surname></sb:author><sb:author><ce:given-name>R.P</ce:given-name><ce:surname>Martin</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Echocardiographic detection of infarct-localized asynergy and remote asynergy during acute myocardial infarction: correlation with the extent of angiographic coronary disease</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>67</sb:volume-nr></sb:series>
+<sb:date>1983</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>233</sb:first-page>
+<sb:last-page>244</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB2">
+<ce:label>[2]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>W</ce:given-name><ce:surname>Jaarsma</ce:surname></sb:author><sb:author><ce:given-name>C.A</ce:given-name><ce:surname>Visser</ce:surname></sb:author><sb:author><ce:given-name>M.J</ce:given-name><ce:surname>Eenige</ce:surname></sb:author><sb:author><ce:given-name>J.C</ce:given-name><ce:surname>Res</ce:surname></sb:author><sb:author><ce:given-name>A.J</ce:given-name><ce:surname>Kupper</ce:surname></sb:author><sb:author><ce:given-name>F.W</ce:given-name><ce:surname>Verheugt</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Prognostic implications of regional hyperkinesia and remote asynergy of noninfarcted myocardium</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am J Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>58</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>394</sb:first-page>
+<sb:last-page>398</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB3">
+<ce:label>[3]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.E</ce:given-name><ce:surname>Kerber</ce:surname></sb:author><sb:author><ce:given-name>M.L</ce:given-name><ce:surname>Marcus</ce:surname></sb:author><sb:author><ce:given-name>R</ce:given-name><ce:surname>Wilson</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Ehrhardt</ce:surname></sb:author><sb:author><ce:given-name>F.M</ce:given-name><ce:surname>Abboud</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Effects of acute coronary occlusion on the motion and perfusion of the normal and ischemic interventricular septum</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>54</sb:volume-nr></sb:series>
+<sb:date>1976</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>928</sb:first-page>
+<sb:last-page>935</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB4">
+<ce:label>[4]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H</ce:given-name><ce:surname>Yoshino</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Taniuchi</ce:surname></sb:author><sb:author><ce:given-name>E</ce:given-name><ce:surname>Kachi</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Asynergy of the noninfarcted left ventricular inferior wall in anterior wall acute myocardial infarction secondary to isolated occlusion of the left anterior descending artery</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am J Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>81</sb:volume-nr></sb:series>
+<sb:date>1998</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>828</sb:first-page>
+<sb:last-page>833</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB5">
+<ce:label>[5]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>C.L</ce:given-name><ce:surname>Grines</ce:surname></sb:author><sb:author><ce:given-name>E.J</ce:given-name><ce:surname>Topol</ce:surname></sb:author><sb:author><ce:given-name>R.M</ce:given-name><ce:surname>Califf</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Prognostic implications and predictors of enhanced regional wall motion of the noninfarct zone after thrombolysis and angioplasty therapy of acute myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>80</sb:volume-nr></sb:series>
+<sb:date>1989</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>245</sb:first-page>
+<sb:last-page>253</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB6">
+<ce:label>[6]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>C.M</ce:given-name><ce:surname>Kramer</ce:surname></sb:author><sb:author><ce:given-name>W.J</ce:given-name><ce:surname>Rogers</ce:surname></sb:author><sb:author><ce:given-name>T.M</ce:given-name><ce:surname>Theobald</ce:surname></sb:author><sb:author><ce:given-name>T.P</ce:given-name><ce:surname>Power</ce:surname></sb:author><sb:author><ce:given-name>S</ce:given-name><ce:surname>Petruolo</ce:surname></sb:author><sb:author><ce:given-name>N</ce:given-name><ce:surname>Reichek</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Remote noninfarcted region dysfunction soon after first anterior myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>94</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>660</sb:first-page>
+<sb:last-page>666</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB7">
+<ce:label>[7]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H.L</ce:given-name><ce:surname>Wyatt</ce:surname></sb:author><sb:author><ce:given-name>J.S</ce:given-name><ce:surname>Forrester</ce:surname></sb:author><sb:author><ce:given-name>P.L</ce:given-name><ce:surname>Da Luz</ce:surname></sb:author><sb:author><ce:given-name>G.A</ce:given-name><ce:surname>Diamond</ce:surname></sb:author><sb:author><ce:given-name>R</ce:given-name><ce:surname>Chagrasulis</ce:surname></sb:author><sb:author><ce:given-name>H.C</ce:given-name><ce:surname>Swan</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Functional abnormalities in nonoccluded regions of myocardium after experimental coronary occlusion</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am J Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>37</sb:volume-nr></sb:series>
+<sb:date>1976</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>366</sb:first-page>
+<sb:last-page>372</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB8">
+<ce:label>[8]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>C.M</ce:given-name><ce:surname>Kramer</ce:surname></sb:author><sb:author><ce:given-name>J.A</ce:given-name><ce:surname>Lima</ce:surname></sb:author><sb:author><ce:given-name>N</ce:given-name><ce:surname>Reichek</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Regional differences in function within noninfarcted myocardium during left ventricular remodelling</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>88</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1279</sb:first-page>
+<sb:last-page>1288</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB9">
+<ce:label>[9]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.L</ce:given-name><ce:surname>Stadius</ce:surname></sb:author><sb:author><ce:given-name>C</ce:given-name><ce:surname>Maynard</ce:surname></sb:author><sb:author><ce:given-name>J.K</ce:given-name><ce:surname>Fritz</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Coronary anatomy and left ventricular function in the first 12 hours of acute myocardial infarction: the Western Washington Randomized Intracoronary Streptokinase Trial</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>72</sb:volume-nr></sb:series>
+<sb:date>1985</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>292</sb:first-page>
+<sb:last-page>301</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB10">
+<ce:label>[10]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.J</ce:given-name><ce:surname>Ahrens</ce:surname></sb:author><sb:author><ce:given-name>F.H</ce:given-name><ce:surname>Sheehan</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Vom Dahl</ce:surname></sb:author><sb:author><ce:given-name>R</ce:given-name><ce:surname>Uebis</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Extension of hypokinesia into angiographically perfused myocardium in patients with acute infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J Am Coll Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>22</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1010</sb:first-page>
+<sb:last-page>1015</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB11">
+<ce:label>[11]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>V</ce:given-name><ce:surname>Bod&#x0131;&#x0301;</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Sanchis</ce:surname></sb:author><sb:author><ce:given-name>L</ce:given-name><ce:surname>Insa</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Ll&#x00E1;cer</ce:surname></sb:author><sb:author><ce:given-name>F.J</ce:given-name><ce:surname>Chorro</ce:surname></sb:author><sb:author><ce:given-name>V</ce:given-name><ce:surname>L&#x00F3;pez-Merino</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Influence of remote noninfarcted regional function on early and late remodelling after a first myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Eur Heart J</sb:maintitle></sb:title>
+<sb:volume-nr>18</sb:volume-nr></sb:series>
+<sb:date>1997</sb:date>
+</sb:issue>
+<sb:pages>
+<sb:first-page>579</sb:first-page></sb:pages></sb:host><sb:comment>Abstract</sb:comment></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB12">
+<ce:label>[12]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>V</ce:given-name><ce:surname>Bod&#x0131;&#x0301;</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Sanchis</ce:surname></sb:author><sb:author><ce:given-name>L</ce:given-name><ce:surname>Insa</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Influence of infarct size and residual coronary stenosis on early and late remodelling after myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Eur Heart J</sb:maintitle></sb:title>
+<sb:volume-nr>18</sb:volume-nr></sb:series>
+<sb:date>1997</sb:date>
+</sb:issue>
+<sb:pages>
+<sb:first-page>60</sb:first-page></sb:pages></sb:host><sb:comment>Abstract</sb:comment></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB13">
+<ce:label>[13]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J</ce:given-name><ce:surname>Sanchis</ce:surname></sb:author><sb:author><ce:given-name>L</ce:given-name><ce:surname>Insa</ce:surname></sb:author><sb:author><ce:given-name>V</ce:given-name><ce:surname>Bod&#x0131;&#x0301;</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Role of infarction artery status in left ventricular remodeling after acute myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Int J Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>59</sb:volume-nr></sb:series>
+<sb:date>1997</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>189</sb:first-page>
+<sb:last-page>195</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB14">
+<ce:label>[14]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>V</ce:given-name><ce:surname>Bod&#x0131;&#x0301;</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Sanchis</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Ll&#x00E1;cer</ce:surname></sb:author><sb:author><ce:given-name>L</ce:given-name><ce:surname>Insa</ce:surname></sb:author><sb:author><ce:given-name>F.J</ce:given-name><ce:surname>Chorro</ce:surname></sb:author><sb:author><ce:given-name>V</ce:given-name><ce:surname>L&#x00F3;pez-Merino</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>ST-segment elevation on Q-leads at rest and during exercise. Relationship with myocardial viability and left ventricular remodeling within the first six months postinfarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am Heart J</sb:maintitle></sb:title>
+<sb:volume-nr>137</sb:volume-nr></sb:series>
+<sb:date>1999</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1107</sb:first-page>
+<sb:last-page>1115</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB15">
+<ce:label>[15]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P</ce:given-name><ce:surname>Chareonthaitawee</ce:surname></sb:author><sb:author><ce:given-name>T.F</ce:given-name><ce:surname>Christian</ce:surname></sb:author><sb:author><ce:given-name>K</ce:given-name><ce:surname>Hirose</ce:surname></sb:author><sb:author><ce:given-name>R.J</ce:given-name><ce:surname>Gibbons</ce:surname></sb:author><sb:author><ce:given-name>J.A</ce:given-name><ce:surname>Rumberger</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Relation of initial infarct size to extent of left ventricular remodeling in the year after acute myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J Am Coll Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>25</sb:volume-nr></sb:series>
+<sb:date>1995</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>567</sb:first-page>
+<sb:last-page>573</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB16">
+<ce:label>[16]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>G.M</ce:given-name><ce:surname>Hutchins</ce:surname></sb:author><sb:author><ce:given-name>B.H</ce:given-name><ce:surname>Bulkley</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Infarct expansion versus extension: two different complications of acute myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am J Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>41</sb:volume-nr></sb:series>
+<sb:date>1978</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1127</sb:first-page>
+<sb:last-page>1132</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB17">
+<ce:label>[17]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H</ce:given-name><ce:surname>Ito</ce:surname></sb:author><sb:author><ce:given-name>H</ce:given-name><ce:surname>Yu</ce:surname></sb:author><sb:author><ce:given-name>T</ce:given-name><ce:surname>Tomooka</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Incidence and time course of left ventricular dilation in the early convalescent stage of reperfused anterior wall acute myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am J Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>73</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>539</sb:first-page>
+<sb:last-page>543</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB18">
+<ce:label>[18]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P</ce:given-name><ce:surname>Gaudron</ce:surname></sb:author><sb:author><ce:given-name>C</ce:given-name><ce:surname>Eilles</ce:surname></sb:author><sb:author><ce:given-name>I</ce:given-name><ce:surname>Kugler</ce:surname></sb:author><sb:author><ce:given-name>G</ce:given-name><ce:surname>Ertl</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Progressive left ventricular dysfunction and remodeling after myocardial infarction. Potential mechanisms and early predictors</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>87</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>755</sb:first-page>
+<sb:last-page>763</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB19">
+<ce:label>[19]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>A.D</ce:given-name><ce:surname>Popovic</ce:surname></sb:author><sb:author><ce:given-name>A.N</ce:given-name><ce:surname>Neskovic</ce:surname></sb:author><sb:author><ce:given-name>R</ce:given-name><ce:surname>Babic</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Independent impact of thrombolytic therapy and vessel patency on left ventricular dilation after myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>90</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>800</sb:first-page>
+<sb:last-page>807</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB20">
+<ce:label>[20]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>F</ce:given-name><ce:surname>Nijland</ce:surname></sb:author><sb:author><ce:given-name>O</ce:given-name><ce:surname>Kamp</ce:surname></sb:author><sb:author><ce:given-name>P.M</ce:given-name><ce:surname>Verhorst</ce:surname></sb:author><sb:author><ce:given-name>W</ce:given-name><ce:surname>de Voogt</ce:surname></sb:author><sb:author><ce:given-name>H.G</ce:given-name><ce:surname>Bosch</ce:surname></sb:author><sb:author><ce:given-name>C.A</ce:given-name><ce:surname>Visser</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Impact of myocardial viability on left ventricular dilatation following acute myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J Am Coll Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>31</sb:volume-nr></sb:series>
+<sb:date>1998</sb:date>
+</sb:issue>
+<sb:pages>
+<sb:first-page>408A</sb:first-page></sb:pages></sb:host><sb:comment>Abstract</sb:comment></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB21">
+<ce:label>[21]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>V</ce:given-name><ce:surname>Bod&#x0131;&#x0301;</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Sanchis</ce:surname></sb:author><sb:author><ce:given-name>L</ce:given-name><ce:surname>Insa</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Predictors of early and late ventricular remodeling after acute myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Eur Heart J</sb:maintitle></sb:title>
+<sb:volume-nr>19</sb:volume-nr></sb:series>
+<sb:date>1998</sb:date>
+</sb:issue>
+<sb:pages>
+<sb:first-page>165</sb:first-page></sb:pages></sb:host><sb:comment>Abstract</sb:comment></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB22">
+<ce:label>[22]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.A</ce:given-name><ce:surname>Pfeffer</ce:surname></sb:author><sb:author><ce:given-name>E</ce:given-name><ce:surname>Braunwald</ce:surname></sb:author><sb:author><ce:given-name>L</ce:given-name><ce:surname>Moye</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Effect of captopril on mortality and morbidity in patients with left ventricular dysfunction after myocardial infarction</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>N Engl J Med</sb:maintitle></sb:title>
+<sb:volume-nr>327</sb:volume-nr></sb:series>
+<sb:date>1992</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>669</sb:first-page>
+<sb:last-page>677</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB23">
+<ce:label>[23]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>C.G</ce:given-name><ce:surname>Cigarroa</ce:surname></sb:author><sb:author><ce:given-name>C.R</ce:given-name><ce:surname>deFilippi</ce:surname></sb:author><sb:author><ce:given-name>E</ce:given-name><ce:surname>Brickner</ce:surname></sb:author><sb:author><ce:given-name>L.G</ce:given-name><ce:surname>Alvarez</ce:surname></sb:author><sb:author><ce:given-name>M.A</ce:given-name><ce:surname>Wait</ce:surname></sb:author><sb:author><ce:given-name>P.A</ce:given-name><ce:surname>Grayburn</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Dobutamine stress echocardiography identifies hibernating myocardium and predicts recovery of left ventricular function after coronary revascularization</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>88</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>430</sb:first-page>
+<sb:last-page>436</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB24">
+<ce:label>[24]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J</ce:given-name><ce:surname>Sanchis</ce:surname></sb:author><sb:author><ce:given-name>V</ce:given-name><ce:surname>Bod&#x0131;&#x0301;</ce:surname></sb:author><sb:author><ce:given-name>L</ce:given-name><ce:surname>Insa</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Low-dose dobutamine testing using contrast left ventriculography in the same session as coronary angiography predicts the improvement of left ventricular function after coronary angioplasty in postinfarction patients</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am J Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>83</sb:volume-nr></sb:series>
+<sb:date>1999</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>15</sb:first-page>
+<sb:last-page>20</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB25">
+<ce:label>[25]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>L.A</ce:given-name><ce:surname>Pi&#x00E9;rard</ce:surname></sb:author><sb:author><ce:given-name>C.M</ce:given-name><ce:surname>De Landsheere</ce:surname></sb:author><sb:author><ce:given-name>C</ce:given-name><ce:surname>Berthe</ce:surname></sb:author><sb:author><ce:given-name>P</ce:given-name><ce:surname>Rigo</ce:surname></sb:author><sb:author><ce:given-name>H.E</ce:given-name><ce:surname>Kulbertus</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Identification of viable myocardium by echocardiography during dobutamine infusion in patients with myocardial infarction after thrombolytic therapy: comparison with positron emission tomography</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J Am Coll Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>15</sb:volume-nr></sb:series>
+<sb:date>1990</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1021</sb:first-page>
+<sb:last-page>1031</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB26">
+<ce:label>[26]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J</ce:given-name><ce:surname>Sanchis</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Mu&#x00F1;oz</ce:surname></sb:author><sb:author><ce:given-name>F.J</ce:given-name><ce:surname>Chorro</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Stunned myocardium after thrombolytic treatment. Identification by dobutamine echocardiography and role of the residual stenosis in the infarction artery</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Int J Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>53</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>5</sb:first-page>
+<sb:last-page>13</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference></ce:bibliography-sec></ce:bibliography></tail></converted-article>

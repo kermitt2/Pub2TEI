@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+  <PublisherInfo>
+    <PublisherName>Springer Berlin Heidelberg</PublisherName>
+    <PublisherLocation>Berlin, Heidelberg</PublisherLocation>
+  </PublisherInfo>
+  <Series>
+    <SeriesInfo SeriesType="Series" TocLevels="0">
+      <SeriesID>558</SeriesID>
+      <SeriesPrintISSN>0302-9743</SeriesPrintISSN>
+      <SeriesElectronicISSN>1611-3349</SeriesElectronicISSN>
+      <SeriesTitle Language="En">Lecture Notes in Computer Science</SeriesTitle>
+    </SeriesInfo>
+    <SeriesHeader>
+      <EditorGroup>
+        <Editor AffiliationIDS="Aff1">
+          <EditorName DisplayOrder="Western">
+            <GivenName>David</GivenName>
+            <FamilyName>Hutchison</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff2">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Takeo</GivenName>
+            <FamilyName>Kanade</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff3">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Josef</GivenName>
+            <FamilyName>Kittler</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff4">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Jon</GivenName>
+            <GivenName>M.</GivenName>
+            <FamilyName>Kleinberg</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff5">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Friedemann</GivenName>
+            <FamilyName>Mattern</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff6">
+          <EditorName DisplayOrder="Western">
+            <GivenName>John</GivenName>
+            <GivenName>C.</GivenName>
+            <FamilyName>Mitchell</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff7">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Moni</GivenName>
+            <FamilyName>Naor</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff8">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Oscar</GivenName>
+            <FamilyName>Nierstrasz</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff9">
+          <EditorName DisplayOrder="Western">
+            <GivenName>C.</GivenName>
+            <FamilyName>Pandu Rangan</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff10">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Bernhard</GivenName>
+            <FamilyName>Steffen</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff11">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Madhu</GivenName>
+            <FamilyName>Sudan</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff12">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Demetri</GivenName>
+            <FamilyName>Terzopoulos</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff13">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Doug</GivenName>
+            <FamilyName>Tygar</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff14">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Moshe</GivenName>
+            <GivenName>Y.</GivenName>
+            <FamilyName>Vardi</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor AffiliationIDS="Aff15">
+          <EditorName DisplayOrder="Western">
+            <GivenName>Gerhard</GivenName>
+            <FamilyName>Weikum</FamilyName>
+          </EditorName>
+        </Editor>
+        <Affiliation ID="Aff1">
+          <OrgName>Lancaster University</OrgName>
+          <OrgAddress>
+            <City>Lancaster</City>
+            <Country>UK</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff2">
+          <OrgName>Carnegie Mellon University</OrgName>
+          <OrgAddress>
+            <City>Pittsburgh</City>
+            <State>PA</State>
+            <Country>USA</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff3">
+          <OrgName>University of Surrey</OrgName>
+          <OrgAddress>
+            <City>Guildford</City>
+            <Country>UK</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff4">
+          <OrgName>Cornell University</OrgName>
+          <OrgAddress>
+            <City>Ithaca</City>
+            <State>NY</State>
+            <Country>USA</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff5">
+          <OrgName>ETH Zurich</OrgName>
+          <OrgAddress>
+            <City>Zurich</City>
+            <Country>Switzerland</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff6">
+          <OrgName>Stanford University</OrgName>
+          <OrgAddress>
+            <City>Stanford</City>
+            <State>CA</State>
+            <Country>USA</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff7">
+          <OrgName>Weizmann Institute of Science</OrgName>
+          <OrgAddress>
+            <City>Rehovot</City>
+            <Country>Israel</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff8">
+          <OrgName>University of Bern</OrgName>
+          <OrgAddress>
+            <City>Bern</City>
+            <Country>Switzerland</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff9">
+          <OrgName>Indian Institute of Technology</OrgName>
+          <OrgAddress>
+            <City>Madras</City>
+            <Country>India</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff10">
+          <OrgName>University of Dortmund</OrgName>
+          <OrgAddress>
+            <City>Dortmund</City>
+            <Country>Germany</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff11">
+          <OrgName>Massachusetts Institute of Technology</OrgName>
+          <OrgAddress>
+            <State>MA</State>
+            <Country>USA</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff12">
+          <OrgName>University of California</OrgName>
+          <OrgAddress>
+            <City>Los Angeles</City>
+            <State>CA</State>
+            <Country>USA</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff13">
+          <OrgName>University of California</OrgName>
+          <OrgAddress>
+            <City>Berkeley</City>
+            <State>CA</State>
+            <Country>USA</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff14">
+          <OrgName>Rice University</OrgName>
+          <OrgAddress>
+            <City>Houston</City>
+            <State>TX</State>
+            <Country>USA</Country>
+          </OrgAddress>
+        </Affiliation>
+        <Affiliation ID="Aff15">
+          <OrgName>Max-Planck Institute of Computer Science</OrgName>
+          <OrgAddress>
+            <City>Saarbrücken</City>
+            <Country>Germany</Country>
+          </OrgAddress>
+        </Affiliation>
+      </EditorGroup>
+    </SeriesHeader>
+    <Book Language="En">
+      <BookInfo BookProductType="Proceedings" ContainsESM="No" Language="En" MediaType="eBook" NumberingStyle="ContentOnly" OutputMedium="All" TocLevels="0">
+        <BookID>978-3-642-10631-6</BookID>
+        <BookTitle>Algorithms and Computation</BookTitle>
+        <BookSubTitle>20th International Symposium, ISAAC 2009, Honolulu, Hawaii, USA, December 16-18, 2009. Proceedings</BookSubTitle>
+        <BookVolumeNumber>5878</BookVolumeNumber>
+        <BookSequenceNumber>5878</BookSequenceNumber>
+        <BookDOI>10.1007/978-3-642-10631-6</BookDOI>
+        <BookTitleID>193416</BookTitleID>
+        <BookPrintISBN>978-3-642-10630-9</BookPrintISBN>
+        <BookElectronicISBN>978-3-642-10631-6</BookElectronicISBN>
+        <BookChapterCount>122</BookChapterCount>
+        <BookCopyright>
+          <CopyrightHolderName>Springer-Verlag Berlin Heidelberg</CopyrightHolderName>
+          <CopyrightYear>2009</CopyrightYear>
+        </BookCopyright>
+        <BookSubjectGroup>
+          <BookSubject Code="I" Type="Primary">Computer Science</BookSubject>
+          <BookSubject Code="I16021" Priority="1" Type="Secondary">Algorithm Analysis and Problem Complexity</BookSubject>
+          <BookSubject Code="I17028" Priority="2" Type="Secondary">Discrete Mathematics in Computer Science</BookSubject>
+          <BookSubject Code="M14018" Priority="3" Type="Secondary">Algorithms</BookSubject>
+          <BookSubject Code="I1603X" Priority="4" Type="Secondary">Logics and Meanings of Programs</BookSubject>
+          <BookSubject Code="I1701X" Priority="5" Type="Secondary">Numeric Computing</BookSubject>
+          <BookSubject Code="I16048" Priority="6" Type="Secondary">Mathematical Logic and Formal Languages</BookSubject>
+          <SubjectCollection Code="SUCO11645">Computer Science</SubjectCollection>
+        </BookSubjectGroup>
+        <BookContext>
+          <SeriesID>558</SeriesID>
+        </BookContext>
+      </BookInfo>
+      <BookHeader>
+        <EditorGroup>
+          <Editor AffiliationIDS="Aff16">
+            <EditorName DisplayOrder="Western">
+              <GivenName>Yingfei</GivenName>
+              <FamilyName>Dong</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>yingfei@hawaii.edu</Email>
+            </Contact>
+          </Editor>
+          <Editor AffiliationIDS="Aff17">
+            <EditorName DisplayOrder="Western">
+              <GivenName>Ding-Zhu</GivenName>
+              <FamilyName>Du</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>dzdu@utdallas.edu</Email>
+            </Contact>
+          </Editor>
+          <Editor AffiliationIDS="Aff18">
+            <EditorName DisplayOrder="Western">
+              <GivenName>Oscar</GivenName>
+              <FamilyName>Ibarra</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>ibarra@cs.ucsb.edu</Email>
+            </Contact>
+          </Editor>
+          <Affiliation ID="Aff16">
+            <OrgDivision>Dept. of Electrical and Computer Engineering</OrgDivision>
+            <OrgName>University of Hawaii</OrgName>
+            <OrgAddress>
+              <Street>Holmes Hall 483, 2540 Dole Street</Street>
+              <Postcode>96822</Postcode>
+              <City>Honolulu</City>
+              <State>HI</State>
+              <Country>USA</Country>
+            </OrgAddress>
+          </Affiliation>
+          <Affiliation ID="Aff17">
+            <OrgDivision>Department of Computer Science</OrgDivision>
+            <OrgName>University of Texas at Dallas</OrgName>
+            <OrgAddress>
+              <Postcode>75083</Postcode>
+              <City>Dallas</City>
+              <State>TX</State>
+              <Country>USA</Country>
+            </OrgAddress>
+          </Affiliation>
+          <Affiliation ID="Aff18">
+            <OrgDivision>Department of Computer Science</OrgDivision>
+            <OrgName>University of California</OrgName>
+            <OrgAddress>
+              <Postcode>93106</Postcode>
+              <City>Santa Barbara</City>
+              <State>CA</State>
+              <Country>USA</Country>
+            </OrgAddress>
+          </Affiliation>
+        </EditorGroup>
+      </BookHeader>
+      <Chapter ID="Chap115" Language="En">
+        <ChapterInfo ChapterType="OriginalPaper" ContainsESM="No" NumberingStyle="ContentOnly" TocLevels="0">
+          <ChapterID>115</ChapterID>
+          <ChapterDOI>10.1007/978-3-642-10631-6_115</ChapterDOI>
+          <ChapterSequenceNumber>115</ChapterSequenceNumber>
+          <ChapterTitle Language="En">Distributed Scheduling of Parallel Hybrid Computations</ChapterTitle>
+          <ChapterFirstPage>1144</ChapterFirstPage>
+          <ChapterLastPage>1154</ChapterLastPage>
+          <ChapterCopyright>
+            <CopyrightHolderName>Springer-Verlag Berlin Heidelberg</CopyrightHolderName>
+            <CopyrightYear>2009</CopyrightYear>
+          </ChapterCopyright>
+          <ChapterGrants Type="Regular"><MetadataGrant Grant="OpenAccess"/><AbstractGrant Grant="OpenAccess"/><BodyPDFGrant Grant="Restricted"/><BodyHTMLGrant Grant="Restricted"/><BibliographyGrant Grant="Restricted"/><ESMGrant Grant="Restricted"/></ChapterGrants><ChapterContext>
+            <SeriesID>558</SeriesID>
+            <BookID>978-3-642-10631-6</BookID>
+            <BookTitle>Algorithms and Computation</BookTitle>
+          </ChapterContext>
+        </ChapterInfo>
+        <ChapterHeader>
+          <AuthorGroup>
+            <Author AffiliationIDS="Aff19">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Shivali</GivenName>
+                <FamilyName>Agarwal</FamilyName>
+              </AuthorName>
+              <Contact>
+                <Email>shivaaga@in.ibm.com</Email>
+              </Contact>
+            </Author>
+            <Author AffiliationIDS="Aff19">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Ankur</GivenName>
+                <FamilyName>Narang</FamilyName>
+              </AuthorName>
+              <Contact>
+                <Email>annarang@in.ibm.com</Email>
+              </Contact>
+            </Author>
+            <Author AffiliationIDS="Aff20">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Rudrapatna</GivenName>
+                <GivenName>K.</GivenName>
+                <FamilyName>Shyamasundar</FamilyName>
+              </AuthorName>
+              <Contact>
+                <Email>shyam@tifr.res.in</Email>
+              </Contact>
+            </Author>
+            <Affiliation ID="Aff19">
+              <OrgName>IBM India Research Laboratory</OrgName>
+              <OrgAddress>
+                <City>New Delhi</City>
+              </OrgAddress>
+            </Affiliation>
+            <Affiliation ID="Aff20">
+              <OrgName>Tata Institute of Fundamental Research</OrgName>
+              <OrgAddress>
+                <City>Mumbai</City>
+              </OrgAddress>
+            </Affiliation>
+          </AuthorGroup>
+          <Abstract ID="Abs1" Language="En">
+            <Heading>Abstract</Heading>
+            <Para>Multicore computing is fast becoming the norm. Improving parallel programming productivity without compromising performance on multicores is a serious challenge facing research community and systems vendors. Towards this end, efficient run-time scheduling of parallel programs helps programmer by dynamically mapping tasks onto processors and scheduling them in appropriate order. Distributed scheduling of parallel computations on multiple <Emphasis Type="Italic">places</Emphasis> while ensuring low time and message complexity in bounded space is a very challenging problem. We attempt to address this challenge for <Emphasis Type="Italic">hybrid</Emphasis> parallel computations which contain tasks that have pre-specified affinity to a place and also tasks that can be mapped to any place in the system. This paper presents online distributed scheduling algorithms for <Emphasis Type="Italic">hybrid</Emphasis> parallel computations assuming both unconstrained and bounded space per place. We also present the time and message complexity for distributed scheduling of <Emphasis Type="Italic">hybrid</Emphasis> computations. To the best of our knowledge, this is the first time distributed scheduling algorithms for <Emphasis Type="Italic">hybrid</Emphasis> parallel computations have been presented and analyzed for time and message bounds under both unconstrained space and bounded space.</Para>
+          </Abstract>
+          <KeywordGroup Language="En">
+            <Heading>Keywords</Heading>
+            <Keyword>Work Stealing</Keyword>
+            <Keyword>Scheduling</Keyword>
+            <Keyword>Multithreaded Computation</Keyword>
+            <Keyword>Algorithm</Keyword>
+          </KeywordGroup>
+        </ChapterHeader>
+<NoBody></NoBody>
+</Chapter>
+    </Book>
+  </Series>
+</Publisher>

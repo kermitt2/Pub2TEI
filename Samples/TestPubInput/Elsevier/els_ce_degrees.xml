@@ -1,418 +1,420 @@
-<?xml version="1.0"?>
-<article xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en" docsubtype="fla">
+<article xmlns="http://www.elsevier.com/xml/ja/dtd" version="5.0"
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" docsubtype="fla">
     <item-info>
-        <jid>AF</jid>
-        <aid>4599971T</aid>
-        <ce:pii>9979-2534(45)99971-T</ce:pii>
-        <ce:doi>89.8981/9979-2534(45)99971-T</ce:doi>
+        <jid>NS</jid>
+        <aid>9400026G</aid>
+        <ce:pii>0020-7489(94)00026-G</ce:pii>
+        <ce:doi>10.1016/0020-7489(94)00026-G</ce:doi>
         <ce:copyright type="unknown" year="1995"/>
     </item-info>
 
     <head>
-        <ce:title>Fheirl naq pevgvdhr bs fghqvrf eryngrq gb fuvsg yratgu inevngvbaf va ahefvat sebz
-            8429 gb 8446</ce:title>
+        <ce:title>Survey and critique of studies related to shift length variations in nursing from
+            1970 to 1993</ce:title>
         <ce:author-group>
             <ce:author>
-                <ce:given-name>Znkvar</ce:given-name>
-                <ce:surname>Oreaerhgre</ce:surname>
-                <ce:degrees>Z.F.A., E.A., P.A.N.N.</ce:degrees>
+                <ce:given-name>Maxine</ce:given-name>
+                <ce:surname>Bernreuter</ce:surname>
+                <ce:degrees>M.S.N., R.N., C.N.A.A.</ce:degrees>
             </ce:author>
             <ce:author>
-                <ce:given-name>Znevyla</ce:given-name>
-                <ce:surname>Fhyyvina</ce:surname>
-                <ce:degrees>Z.F., E.A.</ce:degrees>
+                <ce:given-name>Marilyn</ce:given-name>
+                <ce:surname>Sullivan</ce:surname>
+                <ce:degrees>M.S., R.N.</ce:degrees>
             </ce:author>
             <ce:affiliation>
-                <ce:textfn>Gur Havirefvgl bs Nynonzn ng Ovezvatunz, Fpubby bs Ahefvat, Ovezvatunz,
-                    Nynonzn, H.F.N.</ce:textfn>
+                <ce:textfn>The University of Alabama at Birmingham, School of Nursing, Birmingham,
+                    Alabama, U.S.A.</ce:textfn>
             </ce:affiliation>
         </ce:author-group>
         <ce:abstract>
-            <ce:section-title>Nofgenpg</ce:section-title>
+            <ce:section-title>Abstract</ce:section-title>
             <ce:abstract-sec>
-                <ce:simple-para>Gur checbfr bs guvf fghql jnf gb qrfpevor gur pheerag fgnghf, fgntr
-                    bs fgnssvat punatr, naq svaqvatf bs erfrnepu eryngvat gb fuvsg yratgu inevngvbaf
-                    va ahefvat. Guvf jnf nppbzcyvfurq guebhtu n erivrj bs gur yvgrengher gb (n)
-                    rinyhngr gur dhnyvgl bs gur erfrnepu, (o) fhzznevmr naq qenj pbapyhfvbaf eryngrq
-                    gb inevngvbaf va ahefvat fuvsg yratgu, naq (p) vqragvsl tncf va gur yvgrengher
-                    sbe gur checbfr bs znxvat erpbzzraqngvbaf sbe shgher fghqvrf eryngrq gb ahefvat
-                    fuvsg yratgu inevngvbaf.</ce:simple-para>
-                <ce:simple-para>Zhygvcyr zrgubqf jrer hgvyvmrq sbe ybpngvat cbgragvny fghqvrf gb
-                    vapyhqr va guvf cebwrpg. Fzvgu naq Fghyyraonetre'f (8448) Dhnyvgl bs Fghql
-                    vafgehzrag jnf hfrq gb engr gur fghqvrf. Abar bs gur erfrnepu erivrjrq
-                    rkcyvpvgyl vqragvsvrq n pbaprcghny be gurbergvpny senzrjbex be zbqry, naq srj
-                    fghqvrf pbhyq or pynffvsvrq nf fpvragvsvpnyyl evtbebhf.</ce:simple-para>
-                <ce:simple-para>Guvf fghql vyyhzvangrf gur fgngr bs gur neg naq svaqvatf eryngrq gb
-                    yratgu bs fuvsg inevngvbaf va ahefvat, naq nf fhpu unf vzcyvpngvbaf sbe cenpgvpr
-                    naq erfrnepu va ahefvat freivpr nqzvavfgengvba.</ce:simple-para>
+                <ce:simple-para>The purpose of this study was to describe the current status, stage
+                    of staffing change, and findings of research relating to shift length variations
+                    in nursing. This was accomplished through a review of the literature to (a)
+                    evaluate the quality of the research, (b) summarize and draw conclusions related
+                    to variations in nursing shift length, and (c) identify gaps in the literature
+                    for the purpose of making recommendations for future studies related to nursing
+                    shift length variations.</ce:simple-para>
+                <ce:simple-para>Multiple methods were utilized for locating potential studies to
+                    include in this project. Smith and Stullenbarger's (1991) Quality of Study
+                    instrument was used to rate the studies. None of the research reviewed
+                    explicitly identified a conceptual or theoretical framework or model, and few
+                    studies could be classified as scientifically rigorous.</ce:simple-para>
+                <ce:simple-para>This study illuminates the state of the art and findings related to
+                    length of shift variations in nursing, and as such has implications for practice
+                    and research in nursing service administration.</ce:simple-para>
             </ce:abstract-sec>
         </ce:abstract>
     </head>
     <tail>
         <ce:bibliography>
-            <ce:section-title>Ersreraprf</ce:section-title>
+            <ce:section-title>References</ce:section-title>
             <ce:bibliography-sec>
                 <ce:bib-reference id="BIB1">
-                    <ce:label>Ngjbbq naq Uvafunj, 8422</ce:label>
+                    <ce:label>Atwood and Hinshaw, 1977</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>W.</ce:given-name>
-                                    <ce:surname>Ngjbbq</ce:surname>
+                                    <ce:given-name>J.</ce:given-name>
+                                    <ce:surname>Atwood</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>N.F.</ce:given-name>
-                                    <ce:surname>Uvafunj</ce:surname>
+                                    <ce:given-name>A.S.</ce:given-name>
+                                    <ce:surname>Hinshaw</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Zhygvcyr vaqvpngbef bs ahefr naq cngvrag bhgpbzrf nf n
-                                    zrgubq sbe rinyhngvat n punatr va fgnssvat
-                                    cnggreaf</sb:maintitle>
+                                <sb:maintitle>Multiple indicators of nurse and patient outcomes as a
+                                    method for evaluating a change in staffing
+                                    patterns</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:edited-book>
                                 <sb:editors>
                                     <sb:editor>
-                                        <ce:given-name>Z.W.</ce:given-name>
-                                        <ce:surname>Ongrl</ce:surname>
+                                        <ce:given-name>M.J.</ce:given-name>
+                                        <ce:surname>Batey</ce:surname>
                                     </sb:editor>
                                 </sb:editors>
                                 <sb:title>
-                                    <sb:maintitle>Pbzzhavpngvat Ahefvat Erfrnepu. Ibyhzr 89.
-                                        Bcgvzvmvat Raivebazragf sbe Urnygu: Ahefvat'f
-                                        Crefcrpgvir</sb:maintitle>
+                                    <sb:maintitle>Communicating Nursing Research. Volume 10.
+                                        Optimizing Environments for Health: Nursing's
+                                        Perspective</sb:maintitle>
                                 </sb:title>
-                                <sb:date>8422</sb:date>
+                                <sb:date>1977</sb:date>
                                 <sb:publisher>
-                                    <sb:name>Jrfgrea Pbhapvy ba Uvture Rqhpngvba sbe
-                                        Ahefvat</sb:name>
-                                    <sb:location>Obhyqre, PB</sb:location>
+                                    <sb:name>Western Council on Higher Education for
+                                        Nursing</sb:name>
+                                    <sb:location>Boulder, CO</sb:location>
                                 </sb:publisher>
                             </sb:edited-book>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB2">
-                    <ce:label>Onpba naq Xha, 8431</ce:label>
+                    <ce:label>Bacon and Kun, 1986</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>A.</ce:given-name>
-                                    <ce:surname>Onpba</ce:surname>
+                                    <ce:given-name>N.</ce:given-name>
+                                    <ce:surname>Bacon</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>C.W.</ce:given-name>
-                                    <ce:surname>Xha</ce:surname>
+                                    <ce:given-name>P.J.</ce:given-name>
+                                    <ce:surname>Kun</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Ybat fuvsgf: n gevny rinyhngrq</sb:maintitle>
+                                <sb:maintitle>Long shifts: a trial evaluated</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Nhfgeny. Ahefrf W.</sb:maintitle>
+                                        <sb:maintitle>Austral. Nurses J.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>81</sb:volume-nr>
+                                    <sb:volume-nr>16</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>5</sb:issue-nr>
-                                <sb:date>8431</sb:date>
+                                <sb:issue-nr>4</sb:issue-nr>
+                                <sb:date>1986</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>55</sb:first-page>
-                                <sb:last-page>51</sb:last-page>
+                                <sb:first-page>44</sb:first-page>
+                                <sb:last-page>46</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB3">
-                    <ce:label>Onwabx, 8420</ce:label>
+                    <ce:label>Bajnok, 1975</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>V.</ce:given-name>
-                                    <ce:surname>Onwabx</ce:surname>
+                                    <ce:given-name>I.</ce:given-name>
+                                    <ce:surname>Bajnok</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Gur 87-ubhe fuvsg: Vg'f tbbq sbe ahefrf, ohg vf vg
-                                    tbbq sbe cngvragf?</sb:maintitle>
+                                <sb:maintitle>The 12-hour shift: It's good for nurses, but is it
+                                    good for patients?</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ubfc. Nqzva. Pnanqn</sb:maintitle>
+                                        <sb:maintitle>Hosp. Admin. Canada</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>82</sb:volume-nr>
+                                    <sb:volume-nr>17</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>4</sb:issue-nr>
-                                <sb:date>8420</sb:date>
+                                <sb:issue-nr>9</sb:issue-nr>
+                                <sb:date>1975</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>70</sb:first-page>
-                                <sb:last-page>71</sb:last-page>
+                                <sb:first-page>25</sb:first-page>
+                                <sb:last-page>26</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB4">
-                    <ce:label>Qnivf, 8437</ce:label>
-                    <sb:reference>
-                        <sb:contribution>
-                            <sb:authors>
-                                <sb:author>
-                                    <ce:given-name>P.</ce:given-name>
-                                    <ce:surname>Qnivf</ce:surname>
-                                </sb:author>
-                            </sb:authors>
-                            <sb:title>
-                                <sb:maintitle>Rinyhngvat gur 87-ubhe fuvsg</sb:maintitle>
-                            </sb:title>
-                        </sb:contribution>
-                        <sb:host>
-                            <sb:issue>
-                                <sb:series>
-                                    <sb:title>
-                                        <sb:maintitle>Qvzra. Uygu Frei.</sb:maintitle>
-                                    </sb:title>
-                                    <sb:volume-nr>04</sb:volume-nr>
-                                </sb:series>
-                                <sb:issue-nr>1</sb:issue-nr>
-                                <sb:date>8437</sb:date>
-                            </sb:issue>
-                            <sb:pages>
-                                <sb:first-page>698</sb:first-page>
-                                <sb:last-page>666</sb:last-page>
-                            </sb:pages>
-                        </sb:host>
-                    </sb:reference>
-                </ce:bib-reference>
-                <ce:bib-reference id="BIB5">
-                    <ce:label>Rngba naq Tbggfryvt, 8439</ce:label>
+                    <ce:label>Davis, 1982</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
                                     <ce:given-name>C.</ce:given-name>
-                                    <ce:surname>Rngba</ce:surname>
-                                </sb:author>
-                                <sb:author>
-                                    <ce:given-name>F.</ce:given-name>
-                                    <ce:surname>Tbggfryvt</ce:surname>
+                                    <ce:surname>Davis</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Rssrpgf bs ybatre ubhef, fubegre jrrx sbe vagrafvir
-                                    pner ahefrf</sb:maintitle>
+                                <sb:maintitle>Evaluating the 12-hour shift</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Qvzra. Uygu Frei.</sb:maintitle>
+                                        <sb:maintitle>Dimen. Hlth Serv.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>02</sb:volume-nr>
+                                    <sb:volume-nr>59</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>3</sb:issue-nr>
-                                <sb:date>8439</sb:date>
+                                <sb:issue-nr>6</sb:issue-nr>
+                                <sb:date>1982</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>70</sb:first-page>
-                                <sb:last-page>72</sb:last-page>
+                                <sb:first-page>301</sb:first-page>
+                                <sb:last-page>333</sb:last-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB5">
+                    <ce:label>Eaton and Gottselig, 1980</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>P.</ce:given-name>
+                                    <ce:surname>Eaton</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>S.</ce:given-name>
+                                    <ce:surname>Gottselig</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                            <sb:title>
+                                <sb:maintitle>Effects of longer hours, shorter week for intensive
+                                    care nurses</sb:maintitle>
+                            </sb:title>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Dimen. Hlth Serv.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>57</sb:volume-nr>
+                                </sb:series>
+                                <sb:issue-nr>8</sb:issue-nr>
+                                <sb:date>1980</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>25</sb:first-page>
+                                <sb:last-page>27</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB6">
-                    <ce:label>Svryqf naq Ybirevqtr, 8433</ce:label>
+                    <ce:label>Fields and Loveridge, 1988</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>J.Y.</ce:given-name>
-                                    <ce:surname>Svryqf</ce:surname>
+                                    <ce:given-name>W.L.</ce:given-name>
+                                    <ce:surname>Fields</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>P.</ce:given-name>
-                                    <ce:surname>Ybirevqtr</ce:surname>
+                                    <ce:given-name>C.</ce:given-name>
+                                    <ce:surname>Loveridge</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Pevgvpny guvaxvat naq sngvthr: Ubj qb ahefrf ba 3- naq
-                                    87-ubhe fuvsgf pbzcner?</sb:maintitle>
+                                <sb:maintitle>Critical thinking and fatigue: How do nurses on 8- and
+                                    12-hour shifts compare?</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ahef. Rpba.</sb:maintitle>
+                                        <sb:maintitle>Nurs. Econ.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>1</sb:volume-nr>
+                                    <sb:volume-nr>6</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>5</sb:issue-nr>
-                                <sb:date>8433</sb:date>
+                                <sb:issue-nr>4</sb:issue-nr>
+                                <sb:date>1988</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>834</sb:first-page>
-                                <sb:last-page>848</sb:last-page>
+                                <sb:first-page>189</sb:first-page>
+                                <sb:last-page>191</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB7">
-                    <ce:label>Tbjryy naq Obirevr, 8447</ce:label>
+                    <ce:label>Gowell and Boverie, 1992</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>L.Z.</ce:given-name>
-                                    <ce:surname>Tbjryy</ce:surname>
+                                    <ce:given-name>Y.M.</ce:given-name>
+                                    <ce:surname>Gowell</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>C.R.</ce:given-name>
-                                    <ce:surname>Obirevr</ce:surname>
+                                    <ce:given-name>P.E.</ce:given-name>
+                                    <ce:surname>Boverie</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Fgerff naq fngvfsnpgvba nf n erfhyg bs fuvsg naq
-                                    ahzore bs ubhef jbexrq</sb:maintitle>
+                                <sb:maintitle>Stress and satisfaction as a result of shift and
+                                    number of hours worked</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ahef. Nqzva. Dhneg.</sb:maintitle>
+                                        <sb:maintitle>Nurs. Admin. Quart.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>81</sb:volume-nr>
+                                    <sb:volume-nr>16</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>5</sb:issue-nr>
-                                <sb:date>8447</sb:date>
+                                <sb:issue-nr>4</sb:issue-nr>
+                                <sb:date>1992</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>85</sb:first-page>
-                                <sb:last-page>84</sb:last-page>
+                                <sb:first-page>14</sb:first-page>
+                                <sb:last-page>19</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB8">
-                    <ce:label>Tevzfehq, 8432</ce:label>
+                    <ce:label>Grimsrud, 1987</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>Q.</ce:given-name>
-                                    <ce:surname>Tevzfehq</ce:surname>
+                                    <ce:given-name>D.</ce:given-name>
+                                    <ce:surname>Grimsrud</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Fgnssvat zrgubqf ng Zntarg Ubfcvgnyf</sb:maintitle>
+                                <sb:maintitle>Staffing methods at Magnet Hospitals</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ubfc. Gbcvpf</sb:maintitle>
+                                        <sb:maintitle>Hosp. Topics</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>10</sb:volume-nr>
+                                    <sb:volume-nr>65</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>8</sb:issue-nr>
-                                <sb:date>8432</sb:date>
+                                <sb:issue-nr>1</sb:issue-nr>
+                                <sb:date>1987</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>87</sb:first-page>
-                                <sb:last-page>85</sb:last-page>
+                                <sb:first-page>12</sb:first-page>
+                                <sb:last-page>14</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB9">
-                    <ce:label>Urnfyvc, 8433</ce:label>
+                    <ce:label>Heaslip, 1988</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>W.</ce:given-name>
-                                    <ce:surname>Urnfyvc</ce:surname>
+                                    <ce:given-name>J.</ce:given-name>
+                                    <ce:surname>Heaslip</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Fghqrag ernpgvba gb gur 87-ubhe fuvsg va na
-                                    haqretenqhngr onppnynherngr ahefvat cebtenz</sb:maintitle>
+                                <sb:maintitle>Student reaction to the 12-hour shift in an
+                                    undergraduate baccalaureate nursing program</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>W. Ahef. Rqhp.</sb:maintitle>
+                                        <sb:maintitle>J. Nurs. Educ.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>72</sb:volume-nr>
+                                    <sb:volume-nr>27</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>8</sb:issue-nr>
-                                <sb:date>8433</sb:date>
+                                <sb:issue-nr>1</sb:issue-nr>
+                                <sb:date>1988</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>84</sb:first-page>
-                                <sb:last-page>77</sb:last-page>
+                                <sb:first-page>19</sb:first-page>
+                                <sb:last-page>22</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB10">
-                    <ce:label>Uvooreq, 8426</ce:label>
+                    <ce:label>Hibberd, 1973</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>W.Z.</ce:given-name>
-                                    <ce:surname>Uvooreq</ce:surname>
+                                    <ce:given-name>J.M.</ce:given-name>
+                                    <ce:surname>Hibberd</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>87-Ubhe fuvsgf sbe ahefvat fgnss: N svryq
-                                    rkcrevzrag</sb:maintitle>
+                                <sb:maintitle>12-Hour shifts for nursing staff: A field
+                                    experiment</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ubfc. Nqzva. Pnanqn</sb:maintitle>
+                                        <sb:maintitle>Hosp. Admin. Canada</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>80</sb:volume-nr>
+                                    <sb:volume-nr>15</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>8</sb:issue-nr>
-                                <sb:date>8426</sb:date>
+                                <sb:issue-nr>1</sb:issue-nr>
+                                <sb:date>1973</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>71</sb:first-page>
-                                <sb:last-page>69</sb:last-page>
+                                <sb:first-page>26</sb:first-page>
+                                <sb:last-page>30</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB11">
-                    <ce:label>Yrjva, 8408</ce:label>
+                    <ce:label>Lewin, 1951</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>X.</ce:given-name>
-                                    <ce:surname>Yrjva</ce:surname>
+                                    <ce:given-name>K.</ce:given-name>
+                                    <ce:surname>Lewin</ce:surname>
                                 </sb:author>
                             </sb:authors>
                         </sb:contribution>
@@ -421,373 +423,373 @@
                                 <sb:book-series>
                                     <sb:series>
                                         <sb:title>
-                                            <sb:maintitle>Svryq Gurbel va Fbpvny
-                                                Fpvrapr</sb:maintitle>
+                                            <sb:maintitle>Field Theory in Social
+                                                Science</sb:maintitle>
                                         </sb:title>
                                     </sb:series>
                                 </sb:book-series>
-                                <sb:date>8408</sb:date>
+                                <sb:date>1951</sb:date>
                                 <sb:publisher>
-                                    <sb:name>Unecre naq Oebguref</sb:name>
-                                    <sb:location>Arj Lbex</sb:location>
+                                    <sb:name>Harper and Brothers</sb:name>
+                                    <sb:location>New York</sb:location>
                                 </sb:publisher>
                             </sb:edited-book>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB12">
-                    <ce:label>ZpTvyyvpx, 8436</ce:label>
+                    <ce:label>McGillick, 1983</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>X.</ce:given-name>
-                                    <ce:surname>ZpTvyyvpx</ce:surname>
+                                    <ce:given-name>K.</ce:given-name>
+                                    <ce:surname>McGillick</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Zbqvslvat fpurqhyrf znxrf wbof zber
-                                    fngvfslvat</sb:maintitle>
+                                <sb:maintitle>Modifying schedules makes jobs more
+                                    satisfying</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ahef. Znantr.</sb:maintitle>
+                                        <sb:maintitle>Nurs. Manage.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>85</sb:volume-nr>
+                                    <sb:volume-nr>14</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>87</sb:issue-nr>
-                                <sb:date>8436</sb:date>
+                                <sb:issue-nr>12</sb:issue-nr>
+                                <sb:date>1983</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>06</sb:first-page>
-                                <sb:last-page>01</sb:last-page>
+                                <sb:first-page>53</sb:first-page>
+                                <sb:last-page>56</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB13">
-                    <ce:label>Zrgpnys, 8437</ce:label>
+                    <ce:label>Metcalf, 1982</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>Z.Y.</ce:given-name>
-                                    <ce:surname>Zrgpnys</ce:surname>
+                                    <ce:given-name>M.L.</ce:given-name>
+                                    <ce:surname>Metcalf</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Gur 87-ubhe jrrxraq cyna—Qbrf gur ahefvat fgnss
-                                    ernyyl yvxr vg?</sb:maintitle>
+                                <sb:maintitle>The 12-hour weekend plan&#x2014;Does the nursing staff
+                                    really like it?</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>W. Ahef. Nqzva.</sb:maintitle>
+                                        <sb:maintitle>J. Nurs. Admin.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>87</sb:volume-nr>
+                                    <sb:volume-nr>12</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>89</sb:issue-nr>
-                                <sb:date>8437</sb:date>
+                                <sb:issue-nr>10</sb:issue-nr>
+                                <sb:date>1982</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>81</sb:first-page>
-                                <sb:last-page>82</sb:last-page>
+                                <sb:first-page>16</sb:first-page>
+                                <sb:last-page>17</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB14">
-                    <ce:label>Zvyyf rg ny., 8436</ce:label>
+                    <ce:label>Mills et al., 1983</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>Z.R.</ce:given-name>
-                                    <ce:surname>Zvyyf</ce:surname>
+                                    <ce:given-name>M.E.</ce:given-name>
+                                    <ce:surname>Mills</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>O.</ce:given-name>
-                                    <ce:surname>Neabyq</ce:surname>
+                                    <ce:given-name>B.</ce:given-name>
+                                    <ce:surname>Arnold</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>P.Z.</ce:given-name>
-                                    <ce:surname>Jbbq</ce:surname>
+                                    <ce:given-name>C.M.</ce:given-name>
+                                    <ce:surname>Wood</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Pber-87: N pbagebyyrq fghql bs gur vzcnpg bs 87-ubhe
-                                    fpurqhyvat</sb:maintitle>
+                                <sb:maintitle>Core-12: A controlled study of the impact of 12-hour
+                                    scheduling</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ahef. Erf.</sb:maintitle>
+                                        <sb:maintitle>Nurs. Res.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>67</sb:volume-nr>
+                                    <sb:volume-nr>32</sb:volume-nr>
                                 </sb:series>
-                                <sb:date>8436</sb:date>
+                                <sb:date>1983</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>601</sb:first-page>
-                                <sb:last-page>618</sb:last-page>
+                                <sb:first-page>356</sb:first-page>
+                                <sb:last-page>361</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB15">
-                    <ce:label>Aryfba naq Oynfqryy, 8433</ce:label>
+                    <ce:label>Nelson and Blasdell, 1988</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>O.W.</ce:given-name>
-                                    <ce:surname>Aryfba</ce:surname>
+                                    <ce:given-name>B.J.</ce:given-name>
+                                    <ce:surname>Nelson</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>N.Y.</ce:given-name>
-                                    <ce:surname>Oynfqryy</ce:surname>
+                                    <ce:given-name>A.L.</ce:given-name>
+                                    <ce:surname>Blasdell</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Pbzcnevat dhnyvgl ba rvtug- naq gjryir-ubhe
-                                    fuvsgf</sb:maintitle>
+                                <sb:maintitle>Comparing quality on eight- and twelve-hour
+                                    shifts</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ahef. Znantr.</sb:maintitle>
+                                        <sb:maintitle>Nurs. Manage.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>84</sb:volume-nr>
+                                    <sb:volume-nr>19</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>88</sb:issue-nr>
-                                <sb:date>8433</sb:date>
+                                <sb:issue-nr>11</sb:issue-nr>
+                                <sb:date>1988</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>15N</sb:first-page>
-                                <sb:last-page>15U</sb:last-page>
+                                <sb:first-page>64A</sb:first-page>
+                                <sb:last-page>64H</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB16">
-                    <ce:label>Arjzna, 8448</ce:label>
+                    <ce:label>Newman, 1991</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>X.Z.</ce:given-name>
-                                    <ce:surname>Arjzna</ce:surname>
+                                    <ce:given-name>K.M.</ce:given-name>
+                                    <ce:surname>Newman</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Ninvynovyvgl bs fpurqhyvat bcgvbaf
-                                    vzcbegnag</sb:maintitle>
+                                <sb:maintitle>Availability of scheduling options
+                                    important</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>W. Ahef. Nqzva.</sb:maintitle>
+                                        <sb:maintitle>J. Nurs. Admin.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>78</sb:volume-nr>
+                                    <sb:volume-nr>21</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>2/3</sb:issue-nr>
-                                <sb:date>8448</sb:date>
+                                <sb:issue-nr>7/8</sb:issue-nr>
+                                <sb:date>1991</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>51</sb:first-page>
-                                <sb:last-page>54</sb:last-page>
+                                <sb:first-page>46</sb:first-page>
+                                <sb:last-page>49</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB17">
-                    <ce:label>Craqretnfg rg ny., 8431</ce:label>
+                    <ce:label>Pendergast et al., 1986</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>Z.O.</ce:given-name>
-                                    <ce:surname>Craqretnfg</ce:surname>
+                                    <ce:given-name>M.B.</ce:given-name>
+                                    <ce:surname>Pendergast</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>Z.O.</ce:given-name>
-                                    <ce:surname>Sbkra</ce:surname>
+                                    <ce:given-name>M.B.</ce:given-name>
+                                    <ce:surname>Foxen</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>W.Y.</ce:given-name>
-                                    <ce:surname>Yrbaneq</ce:surname>
+                                    <ce:given-name>J.L.</ce:given-name>
+                                    <ce:surname>Leonard</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>F.R.</ce:given-name>
-                                    <ce:surname>Gbqq</ce:surname>
+                                    <ce:given-name>S.E.</ce:given-name>
+                                    <ce:surname>Todd</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>N.T.</ce:given-name>
-                                    <ce:surname>Fuveb</ce:surname>
+                                    <ce:given-name>A.G.</ce:given-name>
+                                    <ce:surname>Shiro</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Na nanylfvf bs gur vzcyrzragngvba bs n 89-ubhe qnl
-                                    senzrjbex sbe fgnss rqhpngvba</sb:maintitle>
+                                <sb:maintitle>An analysis of the implementation of a 10-hour day
+                                    framework for staff education</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>W. Pbagva. Rqhp. Ahef.</sb:maintitle>
+                                        <sb:maintitle>J. Contin. Educ. Nurs.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>82</sb:volume-nr>
+                                    <sb:volume-nr>17</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>7</sb:issue-nr>
-                                <sb:date>8431</sb:date>
+                                <sb:issue-nr>2</sb:issue-nr>
+                                <sb:date>1986</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>05</sb:first-page>
-                                <sb:last-page>03</sb:last-page>
+                                <sb:first-page>54</sb:first-page>
+                                <sb:last-page>58</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB18">
-                    <ce:label>Ervq rg ny., 8448</ce:label>
+                    <ce:label>Reid et al., 1991</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>A.</ce:given-name>
-                                    <ce:surname>Ervq</ce:surname>
+                                    <ce:given-name>N.</ce:given-name>
+                                    <ce:surname>Reid</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>P.</ce:given-name>
-                                    <ce:surname>Gbqq</ce:surname>
+                                    <ce:given-name>C.</ce:given-name>
+                                    <ce:surname>Todd</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>T.</ce:given-name>
-                                    <ce:surname>Ebovafba</ce:surname>
+                                    <ce:given-name>G.</ce:given-name>
+                                    <ce:surname>Robinson</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Rqhpngvbany npgvivgvrf ba jneqf haqre 87 ubhe
-                                    fuvsgf</sb:maintitle>
+                                <sb:maintitle>Educational activities on wards under 12 hour
+                                    shifts</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Vag. W. Ahef. Fghqf</sb:maintitle>
+                                        <sb:maintitle>Int. J. Nurs. Studs</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>73</sb:volume-nr>
+                                    <sb:volume-nr>28</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>8</sb:issue-nr>
-                                <sb:date>8448</sb:date>
+                                <sb:issue-nr>1</sb:issue-nr>
+                                <sb:date>1991</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>52</sb:first-page>
-                                <sb:last-page>05</sb:last-page>
+                                <sb:first-page>47</sb:first-page>
+                                <sb:last-page>54</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB19">
-                    <ce:label>Erireol, 8432</ce:label>
+                    <ce:label>Reverby, 1987</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>F.</ce:given-name>
-                                    <ce:surname>Erireol</ce:surname>
+                                    <ce:given-name>S.</ce:given-name>
+                                    <ce:surname>Reverby</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Beqrerq gb Pner. Gur Qvyrzzn bs Nzrevpna Ahefvat,
-                                    8309–8450</sb:maintitle>
+                                <sb:maintitle>Ordered to Care. The Dilemma of American Nursing,
+                                    1850&#x2013;1945</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:book>
-                                <sb:date>8432</sb:date>
+                                <sb:date>1987</sb:date>
                                 <sb:publisher>
-                                    <sb:name>Pnzoevqtr Havirefvgl Cerff</sb:name>
-                                    <sb:location>Arj Lbex</sb:location>
+                                    <sb:name>Cambridge University Press</sb:name>
+                                    <sb:location>New York</sb:location>
                                 </sb:publisher>
                             </sb:book>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB20">
-                    <ce:label>Elna, 8420</ce:label>
+                    <ce:label>Ryan, 1975</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>F.Z.</ce:given-name>
-                                    <ce:surname>Elna</ce:surname>
+                                    <ce:given-name>S.M.</ce:given-name>
+                                    <ce:surname>Ryan</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Gur zbqvsvrq jbex jrrx sbe ahefvat fgnss ba gjb
-                                    crqvngevp havgf</sb:maintitle>
+                                <sb:maintitle>The modified work week for nursing staff on two
+                                    pediatric units</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>W. Ahef. Nqzva.</sb:maintitle>
+                                        <sb:maintitle>J. Nurs. Admin.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>0</sb:volume-nr>
+                                    <sb:volume-nr>5</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>1</sb:issue-nr>
-                                <sb:date>8420</sb:date>
+                                <sb:issue-nr>6</sb:issue-nr>
+                                <sb:date>1975</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>68</sb:first-page>
-                                <sb:last-page>65</sb:last-page>
+                                <sb:first-page>31</sb:first-page>
+                                <sb:last-page>34</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB21">
-                    <ce:label>Fryynef rg ny., 8426</ce:label>
+                    <ce:label>Sellars et al., 1973</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>G.I.</ce:given-name>
-                                    <ce:surname>Fryynef</ce:surname>
+                                    <ce:given-name>T.V.</ce:given-name>
+                                    <ce:surname>Sellars</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Gur 5/59: Qbrf vg envfr crefbaary
-                                    pbfgf?</sb:maintitle>
+                                <sb:maintitle>The 4/40: Does it raise personnel
+                                    costs?</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ubfcvgnyf</sb:maintitle>
+                                        <sb:maintitle>Hospitals</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>52</sb:volume-nr>
+                                    <sb:volume-nr>47</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>82</sb:issue-nr>
-                                <sb:date>8426</sb:date>
+                                <sb:issue-nr>17</sb:issue-nr>
+                                <sb:date>1973</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>45</sb:first-page>
+                                <sb:first-page>94</sb:first-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
@@ -795,28 +797,28 @@
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>G.I.</ce:given-name>
-                                    <ce:surname>Fryynef</ce:surname>
+                                    <ce:given-name>T.V.</ce:given-name>
+                                    <ce:surname>Sellars</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Gur 5/59: Qbrf vg envfr crefbaary
-                                    pbfgf?</sb:maintitle>
+                                <sb:maintitle>The 4/40: Does it raise personnel
+                                    costs?</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ubfcvgnyf</sb:maintitle>
+                                        <sb:maintitle>Hospitals</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>52</sb:volume-nr>
+                                    <sb:volume-nr>47</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>82</sb:issue-nr>
-                                <sb:date>8426</sb:date>
+                                <sb:issue-nr>17</sb:issue-nr>
+                                <sb:date>1973</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>41</sb:first-page>
+                                <sb:first-page>96</sb:first-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
@@ -824,139 +826,139 @@
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>G.I.</ce:given-name>
-                                    <ce:surname>Fryynef</ce:surname>
+                                    <ce:given-name>T.V.</ce:given-name>
+                                    <ce:surname>Sellars</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Gur 5/59: Qbrf vg envfr crefbaary
-                                    pbfgf?</sb:maintitle>
+                                <sb:maintitle>The 4/40: Does it raise personnel
+                                    costs?</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Ubfcvgnyf</sb:maintitle>
+                                        <sb:maintitle>Hospitals</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>52</sb:volume-nr>
+                                    <sb:volume-nr>47</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>82</sb:issue-nr>
-                                <sb:date>8426</sb:date>
+                                <sb:issue-nr>17</sb:issue-nr>
+                                <sb:date>1973</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>899</sb:first-page>
-                                <sb:last-page>898</sb:last-page>
+                                <sb:first-page>100</sb:first-page>
+                                <sb:last-page>101</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB22">
-                    <ce:label>Fvyin, 8431</ce:label>
+                    <ce:label>Silva, 1986</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>Z.P.</ce:given-name>
-                                    <ce:surname>Fvyin</ce:surname>
+                                    <ce:given-name>M.C.</ce:given-name>
+                                    <ce:surname>Silva</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Erfrnepu grfgvat ahefvat gurbel: fgngr bs gur
-                                    neg</sb:maintitle>
+                                <sb:maintitle>Research testing nursing theory: state of the
+                                    art</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Nqi. Ahef. Fpv.</sb:maintitle>
+                                        <sb:maintitle>Adv. Nurs. Sci.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>4</sb:volume-nr>
+                                    <sb:volume-nr>9</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>8</sb:issue-nr>
-                                <sb:date>8431</sb:date>
+                                <sb:issue-nr>1</sb:issue-nr>
+                                <sb:date>1986</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>8</sb:first-page>
-                                <sb:last-page>88</sb:last-page>
+                                <sb:first-page>1</sb:first-page>
+                                <sb:last-page>11</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB23">
-                    <ce:label>Fzvgu naq Fghyyraonetre, 8448</ce:label>
+                    <ce:label>Smith and Stullenbarger, 1991</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>Z.P.</ce:given-name>
-                                    <ce:surname>Fzvgu</ce:surname>
+                                    <ce:given-name>M.C.</ce:given-name>
+                                    <ce:surname>Smith</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>R.</ce:given-name>
-                                    <ce:surname>Fghyyraonetre</ce:surname>
+                                    <ce:given-name>E.</ce:given-name>
+                                    <ce:surname>Stullenbarger</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>N cebgbglcr sbe vagrtengvir erivrj naq zrgn-nanylfvf
-                                    bs ahefvat erfrnepu</sb:maintitle>
+                                <sb:maintitle>A prototype for integrative review and meta-analysis
+                                    of nursing research</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>W. Nqi. Ahef.</sb:maintitle>
+                                        <sb:maintitle>J. Adv. Nurs.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>81</sb:volume-nr>
+                                    <sb:volume-nr>16</sb:volume-nr>
                                 </sb:series>
-                                <sb:date>8448</sb:date>
+                                <sb:date>1991</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>8727</sb:first-page>
-                                <sb:last-page>8736</sb:last-page>
+                                <sb:first-page>1272</sb:first-page>
+                                <sb:last-page>1283</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB24">
-                    <ce:label>Fzvgu rg ny., 8446</ce:label>
+                    <ce:label>Smith et al., 1993</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>Z.P.</ce:given-name>
-                                    <ce:surname>Fzvgu</ce:surname>
+                                    <ce:given-name>M.C.</ce:given-name>
+                                    <ce:surname>Smith</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>R.</ce:given-name>
-                                    <ce:surname>Fghyyraonetre</ce:surname>
+                                    <ce:given-name>E.</ce:given-name>
+                                    <ce:surname>Stullenbarger</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>W.E.</ce:given-name>
-                                    <ce:surname>Ubypbzor</ce:surname>
+                                    <ce:given-name>J.R.</ce:given-name>
+                                    <ce:surname>Holcombe</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>C.A.</ce:given-name>
-                                    <ce:surname>Qnssva</ce:surname>
+                                    <ce:given-name>P.N.</ce:given-name>
+                                    <ce:surname>Daffin</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>C.F.</ce:given-name>
-                                    <ce:surname>Jevtug</ce:surname>
+                                    <ce:given-name>P.S.</ce:given-name>
+                                    <ce:surname>Wright</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>T.T.</ce:given-name>
-                                    <ce:surname>Btyrgerr</ce:surname>
+                                    <ce:given-name>G.G.</ce:given-name>
+                                    <ce:surname>Ogletree</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>N.</ce:given-name>
-                                    <ce:surname>Nthfgfqbggve</ce:surname>
+                                    <ce:given-name>A.</ce:given-name>
+                                    <ce:surname>Agustsdottir</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Vagrtengvir Erfrnepu naq Zrgn-nanylfvf bs Cngvrag
-                                    Eryngrq Bapbybtl Ahefvat Erfrnepu</sb:maintitle>
+                                <sb:maintitle>Integrative Research and Meta-analysis of Patient
+                                    Related Oncology Nursing Research</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
@@ -964,94 +966,94 @@
                                 <sb:book-series>
                                     <sb:series>
                                         <sb:title>
-                                            <sb:maintitle>Grpuavpny Ercbeg</sb:maintitle>
+                                            <sb:maintitle>Technical Report</sb:maintitle>
                                         </sb:title>
                                     </sb:series>
                                 </sb:book-series>
-                                <sb:date>8446</sb:date>
+                                <sb:date>1993</sb:date>
                                 <sb:publisher>
-                                    <sb:name>Havirefvgl bs Nynonzn</sb:name>
-                                    <sb:location>Ovezvatunz, NY</sb:location>
+                                    <sb:name>University of Alabama</sb:name>
+                                    <sb:location>Birmingham, AL</sb:location>
                                 </sb:publisher>
                             </sb:edited-book>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB25">
-                    <ce:label>Fgvafba naq Unmyrgg, 8420</ce:label>
+                    <ce:label>Stinson and Hazlett, 1975</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>F.Z.</ce:given-name>
-                                    <ce:surname>Fgvafba</ce:surname>
+                                    <ce:given-name>S.M.</ce:given-name>
+                                    <ce:surname>Stinson</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>P.O.</ce:given-name>
-                                    <ce:surname>Unmyrgg</ce:surname>
+                                    <ce:given-name>C.B.</ce:given-name>
+                                    <ce:surname>Hazlett</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Ahefr naq culfvpvna bcvavba bs n zbqvsvrq jbex jrrx
-                                    gevny</sb:maintitle>
+                                <sb:maintitle>Nurse and physician opinion of a modified work week
+                                    trial</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>W. Ahef. Nqzva.</sb:maintitle>
+                                        <sb:maintitle>J. Nurs. Admin.</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>0</sb:volume-nr>
+                                    <sb:volume-nr>5</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>2</sb:issue-nr>
-                                <sb:date>8420</sb:date>
+                                <sb:issue-nr>7</sb:issue-nr>
+                                <sb:date>1975</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>78</sb:first-page>
-                                <sb:last-page>71</sb:last-page>
+                                <sb:first-page>21</sb:first-page>
+                                <sb:last-page>26</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>
                 </ce:bib-reference>
                 <ce:bib-reference id="BIB26">
-                    <ce:label>Gbqq rg ny., 8434</ce:label>
+                    <ce:label>Todd et al., 1989</ce:label>
                     <sb:reference>
                         <sb:contribution>
                             <sb:authors>
                                 <sb:author>
-                                    <ce:given-name>P.</ce:given-name>
-                                    <ce:surname>Gbqq</ce:surname>
+                                    <ce:given-name>C.</ce:given-name>
+                                    <ce:surname>Todd</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>A.</ce:given-name>
-                                    <ce:surname>Ervq</ce:surname>
+                                    <ce:given-name>N.</ce:given-name>
+                                    <ce:surname>Reid</ce:surname>
                                 </sb:author>
                                 <sb:author>
-                                    <ce:given-name>T.</ce:given-name>
-                                    <ce:surname>Ebovafba</ce:surname>
+                                    <ce:given-name>G.</ce:given-name>
+                                    <ce:surname>Robinson</ce:surname>
                                 </sb:author>
                             </sb:authors>
                             <sb:title>
-                                <sb:maintitle>Gur dhnyvgl bs ahefvat pner ba jneqf jbexvat rvtug naq
-                                    gjryir ubhe fuvsgf: N ercrngrq zrnfherf fghql hfvat gur ZBAVGBE
-                                    vaqrk bs dhnyvgl bs pner</sb:maintitle>
+                                <sb:maintitle>The quality of nursing care on wards working eight and
+                                    twelve hour shifts: A repeated measures study using the MONITOR
+                                    index of quality of care</sb:maintitle>
                             </sb:title>
                         </sb:contribution>
                         <sb:host>
                             <sb:issue>
                                 <sb:series>
                                     <sb:title>
-                                        <sb:maintitle>Vag. W. Ahef. Fghqf</sb:maintitle>
+                                        <sb:maintitle>Int. J. Nurs. Studs</sb:maintitle>
                                     </sb:title>
-                                    <sb:volume-nr>71</sb:volume-nr>
+                                    <sb:volume-nr>26</sb:volume-nr>
                                 </sb:series>
-                                <sb:issue-nr>5</sb:issue-nr>
-                                <sb:date>8434</sb:date>
+                                <sb:issue-nr>4</sb:issue-nr>
+                                <sb:date>1989</sb:date>
                             </sb:issue>
                             <sb:pages>
-                                <sb:first-page>604</sb:first-page>
-                                <sb:last-page>613</sb:last-page>
+                                <sb:first-page>359</sb:first-page>
+                                <sb:last-page>368</sb:last-page>
                             </sb:pages>
                         </sb:host>
                     </sb:reference>

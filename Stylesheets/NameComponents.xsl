@@ -38,8 +38,7 @@
                 <xsl:apply-templates/>
             </forename>
         </xsl:if>
-    </xsl:template> 
-
+    </xsl:template>
     <xsl:template match="middle_name | MiddleName | mn | corresponding-author-middlename">
         <xsl:if test=". != ''">
             <forename type="middle">
@@ -92,7 +91,6 @@
             </roleName>
         </xsl:if>
     </xsl:template>
-
     <xsl:template match="degree | corresponding-author-title | person_title | degrees | ce:degrees | wiley:degrees">
         <xsl:if test=". != ''">
             <roleName type="degree">
@@ -108,7 +106,6 @@
             </nameLink>
         </xsl:if>
     </xsl:template>
-
     <xsl:template match="suffix | Suffix | suff | wiley:nameSuffix | ce:suffix">
         <xsl:if test="normalize-space()">
             <genName>

@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "art452.dtd" [
+<!ENTITY gr1 SYSTEM "gr1" NDATA IMAGE>]>
+<converted-article version="4.5.2" docsubtype="fla" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+<item-info>
+<jid>IJCA</jid>
+<aid>3749</aid>
+<ce:pii>S0167-5273(99)00141-2</ce:pii><ce:doi>10.1016/S0167-5273(99)00141-2</ce:doi>
+<ce:copyright type="full-transfer" year="1999">Elsevier Science Ireland Ltd</ce:copyright></item-info>
+<ce:floats><ce:figure id="FIG1">
+<ce:label>Fig. 1</ce:label>
+<ce:caption>
+<ce:simple-para>Relation between pacing induced changes in rate pressure product (RPP) and myocardial oxygen consumption (MVO<ce:inf>2</ce:inf>) at control (<ce:italic>n</ce:italic>=21) (upper panel), during administration of nitroglycerin (NTG) 1 &#x03BC;g/kg/min (<ce:italic>n</ce:italic>=11) (middle panel), and during general anaesthesia (<ce:italic>n</ce:italic>=10) (lower panel). Pacing induced changes are expressed as % change from values during sinus rhythm. The solid lines represent the regression lines with their 95% confidence intervals (dotted lines). Dashed lines delineate the 95% prediction intervals.</ce:simple-para></ce:caption>
+<ce:link locator="gr1" /></ce:figure><ce:table id="TBL1" colsep="0" rowsep="0" frame="topbot"><ce:label>Table 1</ce:label><ce:caption>
+<ce:simple-para>Systemic and coronary haemodynamics at sinus rhythm and during pacing<ce:cross-ref refid="TBLFN1A"><ce:sup>a</ce:sup></ce:cross-ref></ce:simple-para></ce:caption><tgroup cols="7"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<colspec colname="col6" colsep="0" />
+<colspec colname="col7" colsep="0" />
+<thead><row><entry colname="col2" namest="col2" nameend="col3" rowsep="1">Control (<ce:italic>n</ce:italic>=21)</entry>
+<entry colname="col4" namest="col4" nameend="col5" rowsep="1">NTG 1 &#x03BC;g/kg/min (<ce:italic>n</ce:italic>=11)</entry>
+<entry colname="col6" namest="col6" nameend="col7" rowsep="1">anaesthesia (<ce:italic>n</ce:italic>=10)</entry>
+</row>
+<row><entry colname="col2" rowsep="1">SR</entry>
+<entry rowsep="1">Pacing</entry>
+<entry rowsep="1">SR</entry>
+<entry rowsep="1">Pacing</entry>
+<entry rowsep="1">SR</entry>
+<entry rowsep="1">Pacing</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>HR (1/min)</entry>
+<entry>63&#x00B1;9</entry>
+<entry>91&#x00B1;8*</entry>
+<entry>68&#x00B1;9</entry>
+<entry>96&#x00B1;9*</entry>
+<entry>58&#x00B1;6</entry>
+<entry>88&#x00B1;6*</entry>
+</row>
+<row><entry>SBP (mmHg)</entry>
+<entry>147&#x00B1;25</entry>
+<entry>153&#x00B1;29</entry>
+<entry>143&#x00B1;19**</entry>
+<entry>148&#x00B1;19*</entry>
+<entry>113&#x00B1;29**</entry>
+<entry>129&#x00B1;29<ce:sup>*,**</ce:sup></entry>
+</row>
+<row><entry>DBP (mmHg)</entry>
+<entry>71&#x00B1;10</entry>
+<entry>79&#x00B1;12*</entry>
+<entry>71&#x00B1;10</entry>
+<entry>77&#x00B1;8*</entry>
+<entry>60&#x00B1;14**</entry>
+<entry>70&#x00B1;13<ce:sup>*,**</ce:sup></entry>
+</row>
+<row><entry>MAP (mmHg)</entry>
+<entry>99&#x00B1;14</entry>
+<entry>107&#x00B1;17*</entry>
+<entry>95&#x00B1;12**</entry>
+<entry>101&#x00B1;10*</entry>
+<entry>79&#x00B1;19**</entry>
+<entry>91&#x00B1;18<ce:sup>*,**</ce:sup></entry>
+</row>
+<row><entry>PAP (mmHg)</entry>
+<entry>21&#x00B1;6</entry>
+<entry>25&#x00B1;8*</entry>
+<entry>18&#x00B1;6**</entry>
+<entry>18&#x00B1;6**</entry>
+<entry>22&#x00B1;7</entry>
+<entry>24&#x00B1;7*</entry>
+</row>
+<row><entry>RAP (mmHg)</entry>
+<entry>7&#x00B1;3</entry>
+<entry>5&#x00B1;4*</entry>
+<entry>5&#x00B1;3**</entry>
+<entry>4&#x00B1;3**</entry>
+<entry>8&#x00B1;4</entry>
+<entry>7&#x00B1;4</entry>
+</row>
+<row><entry>PCWP (mmHg)</entry>
+<entry>11&#x00B1;5</entry>
+<entry>10&#x00B1;5</entry>
+<entry>7&#x00B1;3**</entry>
+<entry>6&#x00B1;2**</entry>
+<entry>11&#x00B1;3</entry>
+<entry>11&#x00B1;3</entry>
+</row>
+<row><entry>CI (l/min/m<ce:sup>2</ce:sup>)</entry>
+<entry>2.7&#x00B1;0.6</entry>
+<entry>3.5&#x00B1;0.6*</entry>
+<entry>3.0&#x00B1;0.6</entry>
+<entry>3.4&#x00B1;0.7*</entry>
+<entry>2.3&#x00B1;0.6</entry>
+<entry>3.2&#x00B1;0.7*</entry>
+</row>
+<row><entry>SVR (dynes.s/cm<ce:sup>5</ce:sup>)</entry>
+<entry>1347&#x00B1;342</entry>
+<entry>1180&#x00B1;243*</entry>
+<entry>1276&#x00B1;318</entry>
+<entry>1236&#x00B1;343</entry>
+<entry>1299&#x00B1;455**</entry>
+<entry>1128&#x00B1;373<ce:sup>*,**</ce:sup></entry>
+</row>
+<row><entry>CSBF (ml/min)</entry>
+<entry>121&#x00B1;44</entry>
+<entry>171&#x00B1;77*</entry>
+<entry>108&#x00B1;33</entry>
+<entry>137&#x00B1;40*</entry>
+<entry>102&#x00B1;37**</entry>
+<entry>149&#x00B1;48<ce:sup>*,**</ce:sup></entry>
+</row>
+<row><entry>MVO<ce:inf>2</ce:inf> (mlO<ce:inf>2</ce:inf>/min)</entry>
+<entry>15.3&#x00B1;6.8</entry>
+<entry>21.4&#x00B1;11.0*</entry>
+<entry>13.0&#x00B1;3.3**</entry>
+<entry>17.0&#x00B1;4.2<ce:sup>*,**</ce:sup></entry>
+<entry>12.4&#x00B1;5.7**</entry>
+<entry>18.2&#x00B1;8.0<ce:sup>*,**</ce:sup></entry>
+</row>
+<row><entry>RPP (mmHg/min)</entry>
+<entry>9256 &#x00B1;2253</entry>
+<entry>14008&#x00B1;2843*</entry>
+<entry>9729&#x00B1;1550</entry>
+<entry>14126&#x00B1;1458*</entry>
+<entry>6654&#x00B1;2187**</entry>
+<entry>11377&#x00B1;2631<ce:sup>*,**</ce:sup></entry>
+</row>
+<row><entry>AVOX (ml O<ce:inf>2</ce:inf>/dl)</entry>
+<entry>12.6&#x00B1;1.9</entry>
+<entry>12.4&#x00B1;1.8</entry>
+<entry>12.4&#x00B1;1.8</entry>
+<entry>12.6&#x00B1;1.3</entry>
+<entry>11.8&#x00B1;2.0**</entry>
+<entry>11.9&#x00B1;2.1**</entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN1A">
+<ce:label>a</ce:label>
+<ce:note-para>Values are mean&#x00B1;SD. Values of heart rate (HR), systolic blood pressure (SBP), diastolic blood pressure (DBP), mean arterial blood pressure (MAP), mean pulmonary artery pressure (PAP), mean right atrial pressure (RAP), pulmonary capillary wedge pressure (PCWP), cardiac index (CI), systemic vascular resistance (SVR), coronary sinus blood flow (CSBF), myocardial oxygen consumption (MVO<ce:inf>2</ce:inf>), systolic rate pressure product (RPP) and coronary arterio-venous oxygen content difference (AVOX) are shown at sinus rhythm (SR) and during pacing, for each condition: at control, during infusion of NTG 1 &#x03BC;g/kg/min and during general anaesthesia. *<ce:italic>P</ce:italic>&#x003C;0.05 versus value at sinus rhythm. **P &#x003C;0.05 versus corresponding control value.</ce:note-para></ce:table-footnote></ce:table><ce:table id="TBL2" colsep="0" rowsep="0" frame="topbot"><ce:label>Table 2</ce:label><ce:caption>
+<ce:simple-para>Clinical studies reporting on the relation between RPP and MVO<ce:inf>2</ce:inf><ce:cross-ref refid="TBLFN2A"><ce:sup>a</ce:sup></ce:cross-ref></ce:simple-para></ce:caption><tgroup cols="7"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<colspec colname="col6" colsep="0" />
+<colspec colname="col7" colsep="0" />
+<thead><row><entry rowsep="1">Author</entry>
+<entry rowsep="1">Year</entry>
+<entry rowsep="1">CAD</entry>
+<entry rowsep="1"><ce:italic>n</ce:italic></entry>
+<entry rowsep="1">Data points per subject</entry>
+<entry rowsep="1">Conditions</entry>
+<entry rowsep="1"><ce:italic>r</ce:italic> value</entry>
+</row>
+</thead>
+<tbody>
+<row><entry>Holmberg<ce:cross-ref refid="BIB11">[11]</ce:cross-ref></entry>
+<entry>1971</entry>
+<entry>No</entry>
+<entry>10</entry>
+<entry>2&#x2013;4</entry>
+<entry>Control and 1&#x2013;3 stages of exercise</entry>
+<entry>0.98</entry>
+</row>
+<row><entry>Holmberg<ce:cross-ref refid="BIB12">[12]</ce:cross-ref></entry>
+<entry>1971</entry>
+<entry>No</entry>
+<entry>14</entry>
+<entry>3</entry>
+<entry>Control, pacing and</entry>
+<entry>0.92</entry>
+</row>
+<row><entry colname="col6">pacing+exercise</entry>
+</row>
+<row><entry>Kitamura<ce:cross-ref refid="BIB13">[13]</ce:cross-ref></entry>
+<entry>1972</entry>
+<entry>No</entry>
+<entry>10</entry>
+<entry>2&#x2013;3</entry>
+<entry>2&#x2013;3 stages of upright exercise</entry>
+<entry>0.90</entry>
+</row>
+<row><entry>Jorgensen<ce:cross-ref refid="BIB14">[14]</ce:cross-ref></entry>
+<entry>1973</entry>
+<entry>No</entry>
+<entry>9</entry>
+<entry>2</entry>
+<entry>2 stages of upright exercise with</entry>
+<entry>0.85</entry>
+</row>
+<row><entry colname="col6">propranolol</entry>
+</row>
+<row><entry>Nelson<ce:cross-ref refid="BIB15">[15]</ce:cross-ref></entry>
+<entry>1974</entry>
+<entry>No</entry>
+<entry>10</entry>
+<entry>3</entry>
+<entry>Upright exercise,</entry>
+<entry>0.88</entry>
+</row>
+<row><entry colname="col6">static exercise, and combined</entry>
+</row>
+<row><entry>Gobel<ce:cross-ref refid="BIB16">[16]</ce:cross-ref></entry>
+<entry>1977</entry>
+<entry>Yes</entry>
+<entry>27</entry>
+<entry>2</entry>
+<entry>Control and supine exercise</entry>
+<entry>0.83</entry>
+</row>
+<row><entry>Wilkinson<ce:cross-ref refid="BIB17">[17]</ce:cross-ref></entry>
+<entry>1978</entry>
+<entry>Yes</entry>
+<entry>16</entry>
+<entry>2</entry>
+<entry>Control <ce:italic>v</ce:italic> 2 stages during anaesthesia</entry>
+<entry>0.78</entry>
+</row>
+<row><entry>Sonntag<ce:cross-ref refid="BIB18">[18]</ce:cross-ref></entry>
+<entry>1979</entry>
+<entry>No</entry>
+<entry>7</entry>
+<entry>1</entry>
+<entry>Awake</entry>
+<entry>0.28</entry>
+</row>
+<row><entry colname="col5">2</entry>
+<entry>Low and high dose halothane anaesthesia</entry>
+<entry>0.50</entry>
+</row>
+<row><entry>Reiz<ce:cross-ref refid="BIB19">[19]</ce:cross-ref></entry>
+<entry>1981</entry>
+<entry>Yes</entry>
+<entry>8</entry>
+<entry>2</entry>
+<entry>Awake and anaesthesia</entry>
+<entry>0.46</entry>
+</row>
+<row><entry>Reiz<ce:cross-ref refid="BIB20">[20]</ce:cross-ref></entry>
+<entry>1981</entry>
+<entry>Yes</entry>
+<entry>8</entry>
+<entry>2</entry>
+<entry>Awake and anaesthesia</entry>
+<entry>0.37</entry>
+</row>
+<row><entry>Sonntag<ce:cross-ref refid="BIB21">[21]</ce:cross-ref></entry>
+<entry>1982</entry>
+<entry>Yes</entry>
+<entry>9</entry>
+<entry>4</entry>
+<entry>4 stages during anaesthesia</entry>
+<entry>0.66</entry>
+</row>
+<row><entry>Reiz<ce:cross-ref refid="BIB22">[22]</ce:cross-ref></entry>
+<entry>1982</entry>
+<entry>Yes</entry>
+<entry>10</entry>
+<entry>2</entry>
+<entry>Awake and anaesthesia</entry>
+<entry>0.66</entry>
+</row>
+<row><entry>Moffitt<ce:cross-ref refid="BIB23">[23]</ce:cross-ref></entry>
+<entry>1984</entry>
+<entry>Yes</entry>
+<entry>25</entry>
+<entry>1</entry>
+<entry>Awake</entry>
+<entry>0.09</entry>
+</row>
+<row><entry colname="col5">1</entry>
+<entry>Anaesthesia</entry>
+<entry>0.38</entry>
+</row>
+<row><entry>Hoeft<ce:cross-ref refid="BIB24">[24]</ce:cross-ref></entry>
+<entry>1991</entry>
+<entry>Yes</entry>
+<entry>62</entry>
+<entry>3</entry>
+<entry>Awake and 2 stages during anaesthesia</entry>
+<entry>0.77</entry>
+</row>
+<row><entry>Kodama<ce:cross-ref refid="BIB25">[25]</ce:cross-ref></entry>
+<entry>1993</entry>
+<entry>Yes</entry>
+<entry>11</entry>
+<entry>5&#x2013;6</entry>
+<entry>5&#x2013;6 stages of supine exercise</entry>
+<entry>0.81</entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN2A">
+<ce:label>a</ce:label>
+<ce:note-para>CAD indicates coronary artery disease. n indicates number of subjects included in the correlation analysis. Data points per subject refers to the number of data points from each subject that was used for the statistical analysis. The <ce:italic>r</ce:italic> value denotes the correlation coefficient.</ce:note-para></ce:table-footnote></ce:table></ce:floats>
+<head>
+<ce:title>A critical appraisal of the rate pressure product as index of myocardial oxygen consumption for the study of metabolic coronary flow regulation<ce:cross-ref refid="FN1"><ce:sup>1</ce:sup></ce:cross-ref><ce:footnote id="FN1">
+<ce:label>1</ce:label>
+<ce:note-para>Presented in part at the annual meeting of the European Society of Anaesthesiologists, Amsterdam, The Netherlands, June 1999 <ce:cross-ref refid="BIB1">[1]</ce:cross-ref>.</ce:note-para></ce:footnote></ce:title>
+<ce:author-group>
+<ce:author>
+<ce:given-name>Jasper E.</ce:given-name>
+<ce:surname>Kal</ce:surname>
+<ce:degrees>MD</ce:degrees>
+<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref>
+<ce:cross-ref refid="COR1">*</ce:cross-ref><ce:e-address>J.E.Kal@amc.uva.nl</ce:e-address></ce:author>
+<ce:author>
+<ce:given-name>Harry B.</ce:given-name>
+<ce:surname>Van Wezel</ce:surname>
+<ce:degrees>MD PhD</ce:degrees>
+<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Isabelle</ce:given-name>
+<ce:surname>Vergroesen</ce:surname>
+<ce:degrees>PhD</ce:degrees>
+<ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:affiliation id="AFF1"><ce:label>a</ce:label><ce:textfn>Department of Anaesthesiology, Cardiovascular Research Institute Amsterdam (CRIA), Academic Medical Center, Meibergdreef 9, 1105 AZ Amsterdam, Netherlands</ce:textfn></ce:affiliation>
+<ce:affiliation id="AFF2"><ce:label>b</ce:label><ce:textfn>Department of Medical Physics, Cardiovascular Research Institute Amsterdam (CRIA), Academic Medical Center, Amsterdam, Netherlands</ce:textfn></ce:affiliation>
+<ce:correspondence id="COR1">
+<ce:label>*</ce:label><ce:text>Corresponding author. Tel.: +31-20-566-9111; fax: +31-20-697-9441</ce:text></ce:correspondence></ce:author-group>
+<ce:date-received day="20" month="4" year="1999" />
+<ce:date-revised day="28" month="7" year="1999" />
+<ce:date-accepted day="6" month="8" year="1999" />
+<ce:abstract><ce:section-title>Abstract</ce:section-title><ce:abstract-sec>
+<ce:simple-para>For the assessment of metabolic coronary vasodilatation, changes in systolic rate pressure product (RPP) are frequently used to estimate the pacing- or exercise induced changes in myocardial oxygen consumption (MVO<ce:inf>2</ce:inf>). The present study was designed to test whether this is justified in patients with coronary artery disease. To study the relation between RPP and changes in MVO<ce:inf>2</ce:inf> under different conditions, we used data from 21 patients who participated in two previous studies investigating the effect of nitroglycerin (NTG) and anaesthesia on metabolic coronary flow regulation. At control, during administration of NTG 1 &#x03BC;g/kg/min (<ce:italic>n</ce:italic>=11), and during anaesthesia (<ce:italic>n</ce:italic>=10), coronary sinus blood flow, MVO<ce:inf>2</ce:inf> and RPP were measured at sinus rhythm and during atrial pacing (30 bpm above sinus rate) and the relation between the percentage increase in RPP (<ce:italic>&#x0394;</ce:italic>%RPP) and MVO<ce:inf>2</ce:inf> (<ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf>) was analysed, using standard linear regression analysis. Although a significant relation between <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> and <ce:italic>&#x0394;</ce:italic>%RPP was found at control and during anaesthesia, prediction intervals were very wide and only 40% and 60% of the variation in <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf>, respectively, could be explained by the variation in <ce:italic>&#x0394;</ce:italic>%RPP. During administration of NTG 1 &#x03BC;g/kg/min no significant relation was found between <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> and <ce:italic>&#x0394;</ce:italic>%RPP. Thus, for the study of metabolic coronary flow regulation, pacing induced changes in MVO<ce:inf>2</ce:inf> cannot be predicted accurately from changes in RPP.</ce:simple-para></ce:abstract-sec></ce:abstract>
+<ce:keywords><ce:section-title>Keywords</ce:section-title>
+<ce:keyword><ce:text>Rate pressure product</ce:text></ce:keyword>
+<ce:keyword><ce:text>Myocardial oxygen consumption</ce:text></ce:keyword>
+<ce:keyword><ce:text>Metabolic flow regulation</ce:text></ce:keyword>
+<ce:keyword><ce:text>Anaesthesia</ce:text></ce:keyword>
+<ce:keyword><ce:text>nitroglycerin</ce:text></ce:keyword></ce:keywords></head>
+<body><ce:sections>
+<ce:section>
+<ce:label>1</ce:label><ce:section-title>Introduction</ce:section-title>
+<ce:para>Metabolic coronary flow regulation can be characterised by the linear dependency of coronary blood flow on myocardial oxygen consumption (MVO<ce:inf>2</ce:inf>) <ce:cross-refs refid="BIB2 BIB3">[2,3]</ce:cross-refs>.</ce:para>
+<ce:para>To study this regulation process in patients with and without coronary artery disease (CAD), a growing number of investigators is using the coronary flow-velocity Doppler catheter in combination with quantitative coronary angiography <ce:cross-refs refid="BIB4 BIB5 BIB6 BIB7 BIB8 BIB9">[4&#x2013;9]</ce:cross-refs>. Only in a limited number of studies a coronary sinus catheter is introduced to draw blood for the measurement of coronary sinus oxygen content. <ce:cross-ref refid="BIB4">[4]</ce:cross-ref> Direct calculation of changes in MVO<ce:inf>2</ce:inf> is therefore frequently omitted and in stead, several haemodynamic parameters, such as systolic rate pressure product (RPP) are used to estimate the metabolically induced changes in MVO<ce:inf>2</ce:inf> <ce:cross-refs refid="BIB6 BIB7 BIB8 BIB9 BIB10">[6&#x2013;10]</ce:cross-refs>. However, it remains questionable whether this is justified. To date, the studies describing the relation between <ce:italic>absolute</ce:italic> values of MVO<ce:inf>2</ce:inf> and RPP in humans have yielded conflicting results, which may be related to methodological pitfalls or to the different interventions and conditions that were studied <ce:cross-refs refid="BIB11 BIB12 BIB13 BIB14 BIB15 BIB16 BIB17 BIB18 BIB19 BIB20 BIB21 BIB22 BIB23 BIB24 BIB25">[11&#x2013;25]</ce:cross-refs>. Although the majority of these studies reported a significant correlation between <ce:italic>absolute</ce:italic> values of MVO<ce:inf>2</ce:inf> and RPP, the accuracy to predict <ce:italic>changes</ce:italic> in MVO<ce:inf>2</ce:inf> from <ce:italic>changes</ce:italic> in RPP has never been established.</ce:para>
+<ce:para>Since there is evidence that of all haemodynamic parameters RPP correlates best with MVO<ce:inf>2</ce:inf> <ce:cross-refs refid="BIB13 BIB15">[13,15]</ce:cross-refs>, the present study was designed to evaluate the accuracy and usefulness of the change in RPP as a predictor of the change in MVO<ce:inf>2</ce:inf> for the study of metabolic coronary vasodilatation. Therefore, we studied changes in MVO<ce:inf>2</ce:inf> and RPP, induced by atrial pacing, in patients undergoing coronary artery surgery.</ce:para></ce:section>
+<ce:section>
+<ce:label>2</ce:label><ce:section-title>Materials and methods</ce:section-title>
+<ce:section>
+<ce:label>2.1</ce:label><ce:section-title>Patients</ce:section-title>
+<ce:para>Data from 21 patients with stable CAD, who participated in two previous studies investigating the effect of nitroglycerin (NTG) and anaesthesia on metabolic coronary flow regulation <ce:cross-refs refid="BIB26 BIB27">[26,27]</ce:cross-refs>, were used to study the relation between pacing induced changes in MVO<ce:inf>2</ce:inf> and RPP. All patients were scheduled for elective coronary artery surgery and gave written informed consent to participate in these studies, which were approved by the local ethical committee.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.2</ce:label><ce:section-title>Instrumentation</ce:section-title>
+<ce:para>All patients received a 20-gauge radial artery catheter, a thermodilution pulmonary artery catheter (Baxter Health Care Corporation, Irvine, CA) and a coronary sinus thermodilution catheter (Wilton-Webster Laboratories, Altadena, CA) as described previously <ce:cross-ref refid="BIB26">[26]</ce:cross-ref>. Coronary sinus blood flow (CSBF) was measured with the thermodilution technique, using normal saline at room temperature at a rate of 45 ml/min as indicator <ce:cross-ref refid="BIB28">[28]</ce:cross-ref>.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.3</ce:label><ce:section-title>Protocol</ce:section-title>
+<ce:para>In all 21 participating patients, series of measurements were performed during sinus rhythm, during pacing (at a pacing rate of 30 beats per minute (bpm) above sinus rate) and after discontinuation of pacing. After these control measurements, infusion of NTG at a rate of 1 &#x03BC;g/kg/min was started in 11 consecutive patients and additional series of measurements were performed at sinus rhythm, during pacing at the same pacing rate as during control pacing, and after the cessation of pacing. In the 10 remaining patients, these series of measurements were repeated 15 minutes after the induction of general anaesthesia (fentanyl 100 &#x03BC;g/kg and pancuronium bromide 8 mg), endotracheal intubation and the start of mechanical ventilation (F<ce:inf>i</ce:inf>O<ce:inf>2</ce:inf>=0.5).</ce:para></ce:section>
+<ce:section>
+<ce:label>2.4</ce:label><ce:section-title>Measurements</ce:section-title>
+<ce:para>Each series of measurements included the recording of coronary sinus blood flow (CSBF), arterial blood pressure (ABP), pulmonary artery pressure (PAP), right atrial pressure (RAP), and ECG lead II for at least 30 seconds of steady state, the measurement of pulmonary capillary wedge pressure and cardiac output (in triplicate) and the simultaneous drawing of blood samples from the coronary sinus and radial artery, for determination of plasma haemoglobin concentration, oxygen partial pressure (ABL III, Radiometer, Copenhagen, Denmark), haemoglobin oxygen saturation (OSM-II haemoxymeter, Radiometer, Copenhagen, Denmark) and lactate concentrations <ce:cross-ref refid="BIB29">[29]</ce:cross-ref>.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.5</ce:label><ce:section-title>Data analysis</ce:section-title>
+<ce:para>All recordings were digitised on line by a custom made A/D converter at a sampling rate of 80 Hz and stored on disk of a personal computer for off line analysis. Using a signal analysis program (Matlab v. 4.2c, MathWorks Inc., Natick, MA), mean values of CSBF, ABP, PAP and RAP were calculated for each series of measurements, by averaging the recording over a period of 30 seconds. Oxygen content was calculated according to the standard formula. MVO<ce:inf>2</ce:inf> was calculated as the product of mean CSBF and the arterio-venous oxygen content difference, RPP was calculated as the product of systolic blood pressure (SBP) and HR, whereas myocardial lactate extraction (MLE) was determined as the quotient of the arterio-venous lactate concentration difference and the arterial lactate concentration.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.6</ce:label><ce:section-title>Statistical analysis</ce:section-title>
+<ce:para>Values obtained during sinus rhythm and values obtained during pacing were compared using two way paired standard <ce:italic>t</ce:italic>-tests (i.e. the comparison of control vs. NTG, and control vs. anaesthesia). Results are presented as mean&#x00B1;SD. A value of <ce:italic>p</ce:italic>&#x003C;0.05 was considered significant.</ce:para>
+<ce:para>To study the relation between the percentage increase in RPP (<ce:italic>&#x0394;</ce:italic>%RPP) and the percentage increase in MVO<ce:inf>2</ce:inf> (<ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf>) induced by pacing, linear regression analysis was used (Statistical Package for Social Sciences, version 6.1), yielding equations for the regression lines obtained at control, during administration of NTG 1 &#x03BC;g/kg/min and during anaesthesia. The slopes of theses regression lines are reported with their 95% confidence intervals and are compared using analysis of variance for differences between regression slopes <ce:cross-ref refid="BIB30">[30]</ce:cross-ref>. The accuracy of the prediction of <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> from <ce:italic>&#x0394;</ce:italic>%RPP, was assessed by calculating the 95% prediction intervals which are depicted in the accompanying scatterplots.</ce:para></ce:section></ce:section>
+<ce:section>
+<ce:label>3</ce:label><ce:section-title>Results</ce:section-title>
+<ce:para><ce:cross-ref refid="TBL1">Table 1</ce:cross-ref><ce:float-anchor refid="TBL1" /> shows systemic and coronary haemodynamic variables and the coronary arterio-venous oxygen content differences from which values of RPP and MVO<ce:inf>2</ce:inf> were derived. Values obtained at sinus rhythm and during pacing are reported for the three conditions studied: control, during administration of NTG 1 &#x03BC;g/kg/min and during anaesthesia. In each condition, the values obtained at sinus rhythm after cessation of pacing, were similar to the values obtained at sinus rhythm before pacing. Therefore, post-pacing values are not included in <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref>.</ce:para>
+<ce:para>During the study period in which patients were awake, none of the patients experienced episodes of angina. MLE did not change in response to pacing and remained positive in all our patients during all measurements series, both at control, during administration of NTG and during anaesthesia. Furthermore, we did not observe electrocardiographical signs of myocardial ischaemia. This implies that the possible confounding effects of myocardial ischaemia did not play a role in the present study.</ce:para>
+<ce:para>To investigate whether individual changes in RPP can be used to predict the pacing induced changes in MVO<ce:inf>2</ce:inf>, we analysed the relation between <ce:italic>&#x0394;</ce:italic>%RPP and <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf>. At control (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref><ce:float-anchor refid="FIG1" />, upper panel), the regression analysis resulted in a regression line with a slope of 0.87 (95% CI: 0.35&#x2013;1.39, <ce:italic>p</ce:italic>=0.002). The <ce:italic>R</ce:italic><ce:sup>2</ce:sup> value was 0.40, which indicates that despite the statistically significant slope, the majority of the variability in <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> could not be explained by the variation in <ce:italic>&#x0394;</ce:italic>%RPP.</ce:para>
+<ce:para>During administration of NTG 1 &#x03BC;g/kg/min (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>, middle panel), the slope of the regression line was &#x2212;0.27 (95% CI: &#x2212;1.33&#x2013;0.77, <ce:italic>p</ce:italic>=0.56, <ce:italic>R</ce:italic><ce:sup>2</ce:sup>=0.04). Thus, after the start of the infusion of NTG, there no longer was a significant relation between <ce:italic>&#x0394;</ce:italic>%RPP and <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf>. In addition, analysis of variance revealed that the slope of the regression line obtained during infusion of NTG was significantly different from the regression line obtained at control.</ce:para>
+<ce:para>During general anaesthesia (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>, lower panel), the regression line was characterised by a slope of 0.78 (95% CI: 0.26&#x2013;1.31, <ce:italic>p</ce:italic>=0.009). The <ce:italic>R</ce:italic><ce:sup>2</ce:sup> value (0.60) indicated that 60% of the variability in <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> could be attributed to the variation in <ce:italic>&#x0394;</ce:italic>%RPP. Thus, only at control and during anaesthesia, but not during administration of NTG, a significant relation between <ce:italic>&#x0394;</ce:italic>%RPP and <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> was found. The wide confidence intervals of the regression coefficients (i.e. slope of regression lines) however indicate that there is considerable doubt about the strength of the estimated relationship.</ce:para>
+<ce:para><ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref> also shows the 95% prediction intervals for the prediction of <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> for any given individual <ce:italic>&#x0394;</ce:italic>%RPP. Both at control and during anaesthesia, these prediction intervals were very wide, which indicates that for a given <ce:italic>&#x0394;</ce:italic>%RPP there is a substantial uncertainty about the accuracy of the prediction of <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf>. At control for example, a 50% increase in RPP resulted in a prediction interval of &#x2212;7% to 76%. There is thus a 95% probability of an individual&#x2019;s <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> being within this interval, given the 50% increase in RPP. These wide prediction intervals imply that it is practically impossible to predict relative changes in MVO<ce:inf>2</ce:inf> from relative changes in RPP.</ce:para></ce:section>
+<ce:section>
+<ce:label>4</ce:label><ce:section-title>Discussion</ce:section-title>
+<ce:para>For the assessment of metabolic coronary flow regulation, information about the metabolically induced changes in MVO<ce:inf>2</ce:inf> is a prerequisite. Frequently, the RPP is used as an index of MVO<ce:inf>2</ce:inf> <ce:cross-refs refid="BIB6 BIB7 BIB8 BIB9 BIB10">[6&#x2013;10]</ce:cross-refs>, based on the assumption that changes in MVO<ce:inf>2</ce:inf> are directly reflected by changes in RPP. However, the results from the present study do not support this assumption.</ce:para>
+<ce:para><ce:cross-ref refid="TBL2">Table 2</ce:cross-ref><ce:float-anchor refid="TBL2" /> summarises most of the clinical studies describing the relation between RPP and MVO<ce:inf>2</ce:inf>. The majority of these studies originates from the field of cardiology, since Robinson et al. <ce:cross-ref refid="BIB31">[31]</ce:cross-ref> showed that the onset of angina in response to various types of exercise, was consistently related to a fixed, critical level of RPP. Many investigators also studied the relationship between RPP and MVO<ce:inf>2</ce:inf> in the peri-operative period, since it would provide the anaesthesiologist with a potentially useful and readily available predictor of myocardial ischaemia <ce:cross-refs refid="BIB17 BIB18 BIB19 BIB20 BIB21 BIB22 BIB23 BIB24">[17&#x2013;24]</ce:cross-refs>. In patients undergoing coronary artery surgery, Wilkinson et al. <ce:cross-ref refid="BIB17">[17]</ce:cross-ref> found a significant correlation (<ce:italic>r</ce:italic>=0.78) between the two parameters and concluded that the haemodynamic changes which occurred during anaesthesia did not decrease the sensitivity of RPP as an index of MVO<ce:inf>2</ce:inf>. However, the clinical usefulness of this alleged relationship was disputed by others. <ce:cross-refs refid="BIB23 BIB32 BIB33">[23,32,33]</ce:cross-refs> Moffitt et al. <ce:cross-ref refid="BIB23">[23]</ce:cross-ref> could not confirm Wilkinson&#x2019;s findings in a similar, though larger study, pointing out possible methodological pitfalls in the statistical analysis of the relation between RPP and MVO<ce:inf>2</ce:inf>.</ce:para>
+<ce:para>Since in most studies shown in <ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>, a repeated measures design was employed, several observations were obtained in each subject under different conditions. But, when multiple data points from individual subjects are included in a single regression analysis, the assumption of independent error terms (i.e. the error for each observation is independent of the error terms of other observations) is probably violated <ce:cross-ref refid="BIB30">[30]</ce:cross-ref>. The pooling of non-independent data may thus have resulted in inadvertently positive correlations.</ce:para>
+<ce:para><ce:cross-ref refid="TBL2">Table 2</ce:cross-ref> illustrates that high correlations between MVO<ce:inf>2</ce:inf> and RPP (<ce:italic>r</ce:italic> values: 0.77&#x2013;0.92) were only found in those studies in which more than two data points from each patient were included in the analysis. <ce:cross-refs refid="BIB11 BIB12 BIB13 BIB14 BIB15 BIB16 BIB17 BIB24 BIB25">[11&#x2013;17,24,25]</ce:cross-refs> In contrast, low correlations (<ce:italic>r</ce:italic> values: 0.09&#x2013;0.28) were found in those studies in which only single data points from each subject were used to analyse the correlation of MVO<ce:inf>2</ce:inf> to RPP <ce:cross-refs refid="BIB18 BIB23">[18,23]</ce:cross-refs>. This supports the conclusion that correlations obtained from pooled data of multiple observations from individual subjects should be interpreted with caution and stresses the importance of using independent observations for regression analysis, which implies that only single data points per individual should be used <ce:cross-ref refid="BIB34">[34]</ce:cross-ref>.</ce:para>
+<ce:section>
+<ce:label>4.1</ce:label><ce:section-title>Relation between pacing induced <ce:italic>&#x0394;</ce:italic>%RPP and <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf></ce:section-title>
+<ce:para>To avoid pooling of non-independent data points in the present study, we analysed the relation between relative changes in RPP and MVO<ce:inf>2</ce:inf> using only single data points per subject for the regression analysis. The regression of <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> to <ce:italic>&#x0394;</ce:italic>%RPP was statistically significant at control and during anaesthesia. However, whether this relation is clinically important is quite a different matter, because both at control and during anaesthesia, only 40% and 60% of the variation in <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf>, respectively, could be explained by the variation in <ce:italic>&#x0394;</ce:italic>%RPP (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>). In addition, the 95% prediction intervals showed that for a given value of <ce:italic>&#x0394;</ce:italic>%RPP there is a substantial uncertainty about the accuracy of the prediction of <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf>. To justify the use of the change in RPP for the prediction of the change in MVO<ce:inf>2</ce:inf>, a much tighter prediction interval is needed.</ce:para>
+<ce:para>It is interesting that during administration of NTG the relationship between <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> and <ce:italic>&#x0394;</ce:italic>%RPP disappeared (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>, middle panel), which suggests that the magnitude of the pacing-induced increase in MVO<ce:inf>2</ce:inf> during NTG was influenced by other factors than the change in RPP. One possible factor may be found in the study by Bernstein et al. <ce:cross-ref refid="BIB35">[35]</ce:cross-ref> who demonstrated that blockade of nitric oxide (NO) synthesis with L-nitro-arginine resulted in an augmented increase in MVO<ce:inf>2</ce:inf> for comparable increases in triple product. They concluded that NO directly impaired myocardial metabolism, possibly by inhibiting the mitochondrial respiration <ce:cross-ref refid="BIB36">[36]</ce:cross-ref>, leading to reduction in MVO<ce:inf>2</ce:inf> for comparable levels of cardiac work. Our previous finding that administration of NTG as an NO donor attenuates the pacing induced increase in MVO<ce:inf>2</ce:inf> <ce:cross-ref refid="BIB27">[27]</ce:cross-ref>, supports the notion that NO may impair myocardial metabolism directly <ce:cross-refs refid="BIB37 BIB38">[37,38]</ce:cross-refs>. This may explain why NTG and L-nitro-arginine may alter the magnitude of the metabolically induced change in MVO<ce:inf>2</ce:inf>, while this change is not being reflected in the RPP. Thus, it is important to measure MVO<ce:inf>2</ce:inf> invasively, which can be illustrated by the following examples. Based on the observation that RPP and coronary flow responses to pacing were similar before and after inhibition of NO, Canty et al. <ce:cross-ref refid="BIB39">[39]</ce:cross-ref> and Egashira et al. <ce:cross-ref refid="BIB6">[6]</ce:cross-ref> concluded that NO had no effect on metabolic coronary vasodilatation. However, they did not measure MVO<ce:inf>2</ce:inf>. If the pacing induced change in MVO<ce:inf>2</ce:inf> was greater after inhibition of NO, as reported by Bernstein et al. <ce:cross-ref refid="BIB35">[35]</ce:cross-ref>, a greater change in coronary blood flow should have occurred. The fact that the associated increase in flow remained unchanged after inhibition of NO, suggests that, in contrast to their conclusion, metabolic coronary vasodilatation may have been impaired.</ce:para></ce:section>
+<ce:section>
+<ce:label>4.2</ce:label><ce:section-title>Limitations</ce:section-title>
+<ce:para>Because of the absence of a Gold Standard technique for the measurement of coronary blood flow, human studies addressing MVO<ce:inf>2</ce:inf> are always subjected to inaccuracies related to the method of coronary flow measurement <ce:cross-ref refid="BIB40">[40]</ce:cross-ref>. In the present study, the coronary venous thermodilution technique was chosen, because this technique measures the volume of coronary flow, allows sampling of coronary venous blood, and can be repeated several times so that each patient can serve as his/her own control. However, there are a number of limitations to its use, that are primarily related to the existence of cardiac venous intercommunications, resulting in drainage of left anterior descending blood through routes other than the coronary sinus <ce:cross-ref refid="BIB41">[41]</ce:cross-ref>. As a result, absolute values of CSBF, and thus MVO<ce:inf>2</ce:inf>, may be underestimated, which makes it difficult to compare absolute values of CSBF <ce:italic>between</ce:italic> several patients. In addition, since the larger the underestimation of CSBF the smaller the increase in CSBF, absolute (pacing induced) flow responses may become dependent on initial flow values. In the present study, these possible confounding effects were minimised by using each patient as his own control and by focusing on the relative in stead of absolute, changes in CSBF and MVO<ce:inf>2</ce:inf>. Furthermore, recalculation of data (using single observations per individual) from studies in which different methods of coronary flow measurement were employed <ce:cross-refs refid="BIB11 BIB12 BIB16">[11,12,16]</ce:cross-refs>, revealed that prediction intervals were similar to the ones found in the present study. This suggests that the accuracy of the relationship between <ce:italic>&#x0394;</ce:italic>%RPP and <ce:italic>&#x0394;</ce:italic>%MVO<ce:inf>2</ce:inf> was not substantially affected by the technique of coronary flow measurement.</ce:para></ce:section>
+<ce:section>
+<ce:label>4.3</ce:label><ce:section-title>Implications</ce:section-title>
+<ce:para>The present study demonstrated that pacing induced changes in MVO<ce:inf>2</ce:inf> cannot be predicted accurately from changes in RPP. Therefore, studies reporting on metabolic coronary vasodilatation using changes in RPP as index of changes in MVO<ce:inf>2</ce:inf>, should be interpreted with caution. Direct measurement of the changes in MVO<ce:inf>2</ce:inf> is recommended.</ce:para></ce:section></ce:section></ce:sections>
+<ce:acknowledgment><ce:section-title>Acknowledgements</ce:section-title>
+<ce:para>The authors thank Marjolein Porsius RN for her technical assistance.</ce:para></ce:acknowledgment></body>
+<tail>
+<ce:bibliography><ce:section-title>References</ce:section-title><ce:bibliography-sec>
+<ce:bib-reference id="BIB1">
+<ce:label>[1]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.E.</ce:given-name><ce:surname>Kal</ce:surname></sb:author><sb:author><ce:given-name>H.B.</ce:given-name><ce:surname>Van Wezel</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>A critical appraisal of the rate pressure product as index of metabolic demand for the study of metabolic coronary vasodilatation</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Br J Anaesth</sb:maintitle></sb:title>
+<sb:volume-nr>85</sb:volume-nr></sb:series>
+<sb:date>1999</sb:date>
+</sb:issue>
+<sb:pages>
+<sb:first-page>S52</sb:first-page></sb:pages></sb:host><sb:comment>(abstract)</sb:comment></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB2">
+<ce:label>[2]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>E.O.</ce:given-name><ce:surname>Feigl</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Coronary physiology. Physiol Rev</sb:maintitle></sb:title>
+<sb:volume-nr>63</sb:volume-nr></sb:series>
+<sb:date>1983</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1</sb:first-page>
+<sb:last-page>205</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB3">
+<ce:label>[3]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>I.</ce:given-name><ce:surname>Vergroesen</ce:surname></sb:author><sb:author><ce:given-name>M.I.M.</ce:given-name><ce:surname>Noble</ce:surname></sb:author><sb:author><ce:given-name>P.A.</ce:given-name><ce:surname>Wieringa</ce:surname></sb:author><sb:author><ce:given-name>J.A.E.</ce:given-name><ce:surname>Spaan</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Quantification of O<ce:inf>2</ce:inf> consumption and arterial pressure as independent determinants of coronary flow</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am J Physiol</sb:maintitle></sb:title>
+<sb:volume-nr>252</sb:volume-nr></sb:series>
+<sb:date>1987</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>H545</sb:first-page>
+<sb:last-page>H553</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB4">
+<ce:label>[4]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>A.A.</ce:given-name><ce:surname>Quyyumi</ce:surname></sb:author><sb:author><ce:given-name>N.</ce:given-name><ce:surname>Dakak</ce:surname></sb:author><sb:author><ce:given-name>N.P.</ce:given-name><ce:surname>Andrews</ce:surname></sb:author><sb:author><ce:given-name>D.M.</ce:given-name><ce:surname>Gilligan</ce:surname></sb:author><sb:author><ce:given-name>J.A.</ce:given-name><ce:surname>Panza</ce:surname></sb:author><sb:author><ce:given-name>R.O.</ce:given-name><ce:surname>Cannon</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Contribution of nitric oxide to metabolic coronary vasodilation in the human heart</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>92</sb:volume-nr></sb:series>
+<sb:date>1995</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>320</sb:first-page>
+<sb:last-page>326</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB5">
+<ce:label>[5]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>E.G.</ce:given-name><ce:surname>Nabel</ce:surname></sb:author><sb:author><ce:given-name>A.P.</ce:given-name><ce:surname>Selwyn</ce:surname></sb:author><sb:author><ce:given-name>P.</ce:given-name><ce:surname>Ganz</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Paradoxical narrowing of atherosclerotic coronary arteries induced by increases in heart rate</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>81</sb:volume-nr></sb:series>
+<sb:date>1990</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>850</sb:first-page>
+<sb:last-page>859</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB6">
+<ce:label>[6]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>K.</ce:given-name><ce:surname>Egashira</ce:surname></sb:author><sb:author><ce:given-name>Y.</ce:given-name><ce:surname>Katsuda</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Mohri</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Role of endothelium-derived nitric oxide in coronary vasodilatation induced by pacing tachycardia in humans</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circ Res</sb:maintitle></sb:title>
+<sb:volume-nr>79</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>331</sb:first-page>
+<sb:last-page>335</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB7">
+<ce:label>[7]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.J.</ce:given-name><ce:surname>Nahser</ce:surname><ce:suffix>Jr.</ce:suffix></sb:author><sb:author><ce:given-name>R.E.</ce:given-name><ce:surname>Brown</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>Oskarsson</ce:surname></sb:author><sb:author><ce:given-name>M.D.</ce:given-name><ce:surname>Winniford</ce:surname></sb:author><sb:author><ce:given-name>J.D.</ce:given-name><ce:surname>Rossen</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Maximal coronary flow reserve and metabolic coronary vasodilation in patients with diabetes mellitus</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>91</sb:volume-nr></sb:series>
+<sb:date>1995</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>635</sb:first-page>
+<sb:last-page>640</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB8">
+<ce:label>[8]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>Y.</ce:given-name><ce:surname>Nishikawa</ce:surname></sb:author><sb:author><ce:given-name>S.</ce:given-name><ce:surname>Ogawa</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Importance of nitric oxide in the coronary artery at rest and during pacing in humans</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J Am Coll Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>29</sb:volume-nr></sb:series>
+<sb:date>1997</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>85</sb:first-page>
+<sb:last-page>92</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB9">
+<ce:label>[9]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>G.</ce:given-name><ce:surname>Sambuceti</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Marzilli</ce:surname></sb:author><sb:author><ce:given-name>P.</ce:given-name><ce:surname>Marraccini</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Coronary vasoconstriction during myocardial ischemia induced by rises in metabolic demand in patients with coronary artery disease</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>95</sb:volume-nr></sb:series>
+<sb:date>1997</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>2652</sb:first-page>
+<sb:last-page>2659</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB10">
+<ce:label>[10]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>G.</ce:given-name><ce:surname>Sambuceti</ce:surname></sb:author><sb:author><ce:given-name>P.</ce:given-name><ce:surname>Marzullo</ce:surname></sb:author><sb:author><ce:given-name>A.</ce:given-name><ce:surname>Giorgetti</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Global alteration in perfusion response to increasing oxygen consumption in patients with single-vessel coronary artery disease</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>90</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1696</sb:first-page>
+<sb:last-page>1705</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB11">
+<ce:label>[11]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.</ce:given-name><ce:surname>Holmberg</ce:surname></sb:author><sb:author><ce:given-name>W.</ce:given-name><ce:surname>Serzysko</ce:surname></sb:author><sb:author><ce:given-name>E.</ce:given-name><ce:surname>Varnauskas</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Coronary circulation during heavy exercise in control subjects and patients with coronary heart disease</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Acta Med. Scand.</sb:maintitle></sb:title>
+<sb:volume-nr>190</sb:volume-nr></sb:series>
+<sb:date>1971</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>465</sb:first-page>
+<sb:last-page>480</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB12">
+<ce:label>[12]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.</ce:given-name><ce:surname>Holmberg</ce:surname></sb:author><sb:author><ce:given-name>E.</ce:given-name><ce:surname>Varnauskas</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Coronary circulation during pacing-induced tachycardia</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Acta Med. Scand.</sb:maintitle></sb:title>
+<sb:volume-nr>190</sb:volume-nr></sb:series>
+<sb:date>1971</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>481</sb:first-page>
+<sb:last-page>490</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB13">
+<ce:label>[13]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>K.</ce:given-name><ce:surname>Kitamura</ce:surname></sb:author><sb:author><ce:given-name>C.R.</ce:given-name><ce:surname>Jorgensen</ce:surname></sb:author><sb:author><ce:given-name>F.L.</ce:given-name><ce:surname>Gobel</ce:surname></sb:author><sb:author><ce:given-name>H.L.</ce:given-name><ce:surname>Taylor</ce:surname></sb:author><sb:author><ce:given-name>Y.</ce:given-name><ce:surname>Wang</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Hemodynamic correlates of myocardial oxygen consumption during upright exercise</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J Appl Physiol</sb:maintitle></sb:title>
+<sb:volume-nr>32</sb:volume-nr></sb:series>
+<sb:date>1972</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>516</sb:first-page>
+<sb:last-page>522</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB14">
+<ce:label>[14]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>C.R.</ce:given-name><ce:surname>Jorgensen</ce:surname></sb:author><sb:author><ce:given-name>K.</ce:given-name><ce:surname>Wang</ce:surname></sb:author><sb:author><ce:given-name>Y.</ce:given-name><ce:surname>Wang</ce:surname></sb:author><sb:author><ce:given-name>F.L.</ce:given-name><ce:surname>Gobel</ce:surname></sb:author><sb:author><ce:given-name>R.R.</ce:given-name><ce:surname>Nelson</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>Taylor</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Effect of propranolol on myocardial oxygen consumption and its hemodynamic correlates during upright exercise</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>48</sb:volume-nr></sb:series>
+<sb:date>1973</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1173</sb:first-page>
+<sb:last-page>1182</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB15">
+<ce:label>[15]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.R.</ce:given-name><ce:surname>Nelson</ce:surname></sb:author><sb:author><ce:given-name>F.L.</ce:given-name><ce:surname>Gobel</ce:surname></sb:author><sb:author><ce:given-name>C.R.</ce:given-name><ce:surname>Jorgensen</ce:surname></sb:author><sb:author><ce:given-name>K.</ce:given-name><ce:surname>Wang</ce:surname></sb:author><sb:author><ce:given-name>Y.</ce:given-name><ce:surname>Wang</ce:surname></sb:author><sb:author><ce:given-name>H.L.</ce:given-name><ce:surname>Taylor</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Hemodynamic predictors of myocardial oxygen consumption during static and dynamic exercise</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>50</sb:volume-nr></sb:series>
+<sb:date>1974</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1179</sb:first-page>
+<sb:last-page>1189</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB16">
+<ce:label>[16]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>F.L.</ce:given-name><ce:surname>Gobel</ce:surname></sb:author><sb:author><ce:given-name>L.A.</ce:given-name><ce:surname>Norstrom</ce:surname></sb:author><sb:author><ce:given-name>R.R.</ce:given-name><ce:surname>Nelson</ce:surname></sb:author><sb:author><ce:given-name>C.R.</ce:given-name><ce:surname>Jorgensen</ce:surname></sb:author><sb:author><ce:given-name>Y.</ce:given-name><ce:surname>Wang</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>The rate-pressure product as an index of myocardial oxygen consumption during exercise in patients with angina pectoris</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>57</sb:volume-nr></sb:series>
+<sb:date>1978</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>549</sb:first-page>
+<sb:last-page>556</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB17">
+<ce:label>[17]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.L.</ce:given-name><ce:surname>Wilkinson</ce:surname></sb:author><sb:author><ce:given-name>J.R.</ce:given-name><ce:surname>Moyers</ce:surname></sb:author><sb:author><ce:given-name>T.</ce:given-name><ce:surname>Ports</ce:surname></sb:author><sb:author><ce:given-name>K.</ce:given-name><ce:surname>Chatterjee</ce:surname></sb:author><sb:author><ce:given-name>D.</ce:given-name><ce:surname>Ullyott</ce:surname></sb:author><sb:author><ce:given-name>W.K.</ce:given-name><ce:surname>Hamilton</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Rate-pressure product and myocardial oxygen consumption during surgery for coronary artery bypass</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>60</sb:volume-nr></sb:series>
+<sb:date>1979</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>170</sb:first-page>
+<sb:last-page>173</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB18">
+<ce:label>[18]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H.</ce:given-name><ce:surname>Sonntag</ce:surname></sb:author><sb:author><ce:given-name>R.G.</ce:given-name><ce:surname>Merin</ce:surname></sb:author><sb:author><ce:given-name>U.</ce:given-name><ce:surname>Donath</ce:surname></sb:author><sb:author><ce:given-name>J.</ce:given-name><ce:surname>Radke</ce:surname></sb:author><sb:author><ce:given-name>H.D.</ce:given-name><ce:surname>Schenk</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Myocardial metabolism and oxygenation in man awake and during halothane anesthesia</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Anesthesiology</sb:maintitle></sb:title>
+<sb:volume-nr>51</sb:volume-nr></sb:series>
+<sb:date>1979</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>204</sb:first-page>
+<sb:last-page>210</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB19">
+<ce:label>[19]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.</ce:given-name><ce:surname>Reiz</ce:surname></sb:author><sb:author><ce:given-name>E.</ce:given-name><ce:surname>Balfors</ce:surname></sb:author><sb:author><ce:given-name>S.</ce:given-name><ce:surname>Haggmark</ce:surname></sb:author><sb:author><ce:given-name>S.</ce:given-name><ce:surname>Nath</ce:surname></sb:author><sb:author><ce:given-name>A.</ce:given-name><ce:surname>Rydvall</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>Truedsson</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Myocardial oxygen consumption and coronary haemodynamics during fentanyl-droperidol-nitrous oxide anaesthesia in patients with ischaemic heart disease</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Acta Anaesthesiol Scand</sb:maintitle></sb:title>
+<sb:volume-nr>25</sb:volume-nr></sb:series>
+<sb:date>1981</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>286</sb:first-page>
+<sb:last-page>292</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB20">
+<ce:label>[20]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.</ce:given-name><ce:surname>Reiz</ce:surname></sb:author><sb:author><ce:given-name>E.</ce:given-name><ce:surname>Balfors</ce:surname></sb:author><sb:author><ce:given-name>A.</ce:given-name><ce:surname>Friedman</ce:surname></sb:author><sb:author><ce:given-name>S.</ce:given-name><ce:surname>Haggmark</ce:surname></sb:author><sb:author><ce:given-name>T.</ce:given-name><ce:surname>Peter</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Effects of thiopentone on cardiac performance, coronary hemodynamics and myocardial oxygen consumption in chronic ischemic heart disease</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Acta Anaesthesiol Scand</sb:maintitle></sb:title>
+<sb:volume-nr>25</sb:volume-nr></sb:series>
+<sb:date>1981</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>103</sb:first-page>
+<sb:last-page>110</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB21">
+<ce:label>[21]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H.</ce:given-name><ce:surname>Sonntag</ce:surname></sb:author><sb:author><ce:given-name>R.</ce:given-name><ce:surname>Larsen</ce:surname></sb:author><sb:author><ce:given-name>O.</ce:given-name><ce:surname>Hilfiker</ce:surname></sb:author><sb:author><ce:given-name>D.</ce:given-name><ce:surname>Kettler</ce:surname></sb:author><sb:author><ce:given-name>B.</ce:given-name><ce:surname>Brockschnieder</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Myocardial blood flow and oxygen consumption during high-dose fentanyl anesthesia in patients with coronary artery disease</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Anesthesiology</sb:maintitle></sb:title>
+<sb:volume-nr>56</sb:volume-nr></sb:series>
+<sb:date>1982</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>412</sb:first-page>
+<sb:last-page>417</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB22">
+<ce:label>[22]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.</ce:given-name><ce:surname>Reiz</ce:surname></sb:author><sb:author><ce:given-name>E.</ce:given-name><ce:surname>Balfors</ce:surname></sb:author><sb:author><ce:given-name>B.</ce:given-name><ce:surname>Gustavsson</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Effects of halothane on coronary haemodynamics and myocardial metabolism in patients with ischaemic heart disease and heart failure</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Acta Anaesthesiol Scand</sb:maintitle></sb:title>
+<sb:volume-nr>26</sb:volume-nr></sb:series>
+<sb:date>1982</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>133</sb:first-page>
+<sb:last-page>138</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB23">
+<ce:label>[23]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>E.A.</ce:given-name><ce:surname>Moffitt</ce:surname></sb:author><sb:author><ce:given-name>D.H.</ce:given-name><ce:surname>Sethna</ce:surname></sb:author><sb:author><ce:given-name>R.J.</ce:given-name><ce:surname>Gray</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>De Robertis</ce:surname></sb:author><sb:author><ce:given-name>J.M.</ce:given-name><ce:surname>Matloff</ce:surname></sb:author><sb:author><ce:given-name>J.A.</ce:given-name><ce:surname>Bussell</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Rate-pressure product correlates poorly with myocardial oxygen consumption during anaesthesia in coronary patients</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Can Anaesth Soc J</sb:maintitle></sb:title>
+<sb:volume-nr>31</sb:volume-nr></sb:series>
+<sb:date>1984</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>5</sb:first-page>
+<sb:last-page>12</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB24">
+<ce:label>[24]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>A.</ce:given-name><ce:surname>Hoeft</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>Sonntag</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>Stephan</ce:surname></sb:author><sb:author><ce:given-name>D.</ce:given-name><ce:surname>Kettler</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Validation of myocardial oxygen demand indices in patients awake and during anesthesia</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Anesthesiology</sb:maintitle></sb:title>
+<sb:volume-nr>75</sb:volume-nr></sb:series>
+<sb:date>1991</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>49</sb:first-page>
+<sb:last-page>56</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB25">
+<ce:label>[25]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>Y.</ce:given-name><ce:surname>Kodama</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Yokota</ce:surname></sb:author><sb:author><ce:given-name>T.</ce:given-name><ce:surname>Miyahara</ce:surname></sb:author><sb:author><ce:given-name>T.</ce:given-name><ce:surname>Matsunami</ce:surname></sb:author><sb:author><ce:given-name>T.</ce:given-name><ce:surname>Sobue</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>Saito</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Effect of antianginal agents on the relationship between rate- pressure product and myocardial oxygen uptake</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am Heart J</sb:maintitle></sb:title>
+<sb:volume-nr>126</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>587</sb:first-page>
+<sb:last-page>593</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB26">
+<ce:label>[26]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H.B.</ce:given-name><ce:surname>Van Wezel</ce:surname></sb:author><sb:author><ce:given-name>J.E.</ce:given-name><ce:surname>Kal</ce:surname></sb:author><sb:author><ce:given-name>I.</ce:given-name><ce:surname>Vergroesen</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Rate of coronary flow adaptation in response to changes in heart rate before and during anesthesia for coronary artery surgery</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Anesthesiology</sb:maintitle></sb:title>
+<sb:volume-nr>84</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1107</sb:first-page>
+<sb:last-page>1118</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB27">
+<ce:label>[27]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.E.</ce:given-name><ce:surname>Kal</ce:surname></sb:author><sb:author><ce:given-name>I.</ce:given-name><ce:surname>Vergroesen</ce:surname></sb:author><sb:author><ce:given-name>H.B.</ce:given-name><ce:surname>Van Wezel</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>The effect of nitroglycerin on pacing-induced changes in myocardial oxygen consumption and metabolic coronary vasodilation in patients with coronary artery disease</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Anesth Analg</sb:maintitle></sb:title>
+<sb:volume-nr>88</sb:volume-nr></sb:series>
+<sb:date>1999</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>271</sb:first-page>
+<sb:last-page>278</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB28">
+<ce:label>[28]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>W.</ce:given-name><ce:surname>Ganz</ce:surname></sb:author><sb:author><ce:given-name>K.</ce:given-name><ce:surname>Tamura</ce:surname></sb:author><sb:author><ce:given-name>H.S.</ce:given-name><ce:surname>Marcus</ce:surname></sb:author><sb:author><ce:given-name>R.</ce:given-name><ce:surname>Donoso</ce:surname></sb:author><sb:author><ce:given-name>S.</ce:given-name><ce:surname>Yoshida</ce:surname></sb:author><sb:author><ce:given-name>H.J.C.</ce:given-name><ce:surname>Swan</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Measurement of coronary sinus blood flow by continuous thermodilution in man</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>44</sb:volume-nr></sb:series>
+<sb:date>1971</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>181</sb:first-page>
+<sb:last-page>195</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB29">
+<ce:label>[29]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>W.</ce:given-name><ce:surname>Lamprecht</ce:surname></sb:author><sb:author><ce:given-name>P.</ce:given-name><ce:surname>Stein</ce:surname></sb:author><sb:author><ce:given-name>F.</ce:given-name><ce:surname>Heinz</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:edited-book>
+<sb:title><sb:maintitle>Lactate Methoden der Enzymatischen Analyse</sb:maintitle></sb:title>
+<sb:date>1974</sb:date>
+
+<sb:publisher>
+<sb:name>Verlag Chemie</sb:name>
+<sb:location>Weinheim</sb:location></sb:publisher></sb:edited-book><sb:pages>
+<sb:first-page>1729</sb:first-page>
+<sb:last-page>1737</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB30">
+<ce:label>[30]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.</ce:given-name><ce:surname>Armitage</ce:surname></sb:author><sb:author><ce:given-name>G.</ce:given-name><ce:surname>Berry</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Further analysis of straight-line data</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:edited-book>
+<sb:title><sb:maintitle>Statistical Methods in Medical Research</sb:maintitle></sb:title>
+<sb:date>1994</sb:date>
+
+<sb:publisher>
+<sb:name>Blackwell Science Ltd</sb:name>
+<sb:location>London</sb:location></sb:publisher></sb:edited-book><sb:pages>
+<sb:first-page>283</sb:first-page>
+<sb:last-page>311</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB31">
+<ce:label>[31]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>B.F.</ce:given-name><ce:surname>Robinson</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Relation of heart rate and systolic blood pressure to the onset of pain in angina pectoris</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>35</sb:volume-nr></sb:series>
+<sb:date>1967</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1073</sb:first-page>
+<sb:last-page>1083</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB32">
+<ce:label>[32]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.G.</ce:given-name><ce:surname>Barash</ce:surname></sb:author><sb:author><ce:given-name>C.J.</ce:given-name><ce:surname>Kopriva</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>The rate-pressure product in clinical anesthesia: boon or bane?</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Anesth Analg</sb:maintitle></sb:title>
+<sb:volume-nr>59</sb:volume-nr></sb:series>
+<sb:date>1980</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>229</sb:first-page>
+<sb:last-page>231</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB33">
+<ce:label>[33]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>I.</ce:given-name><ce:surname>Kissin</ce:surname></sb:author><sb:author><ce:given-name>J.G.</ce:given-name><ce:surname>Reves</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Mardis</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Is the rate-pressure product a misleading guide?</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Anesthesiology</sb:maintitle></sb:title>
+<sb:volume-nr>52</sb:volume-nr></sb:series>
+<sb:date>1980</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>373</sb:first-page>
+<sb:last-page>374</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB34">
+<ce:label>[34]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>D.G.</ce:given-name><ce:surname>Altman</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Relation between two continuous variables</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:edited-book>
+<sb:editors>
+<sb:editor><ce:given-name>D.G.</ce:given-name><ce:surname>Altman</ce:surname></sb:editor></sb:editors>
+<sb:title><sb:maintitle>Practical Statistics For Medical Research</sb:maintitle></sb:title>
+<sb:date>1997</sb:date>
+
+<sb:publisher>
+<sb:name>Chapman &#x0026; Hall</sb:name>
+<sb:location>London</sb:location></sb:publisher></sb:edited-book><sb:pages>
+<sb:first-page>277</sb:first-page>
+<sb:last-page>324</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB35">
+<ce:label>[35]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.D.</ce:given-name><ce:surname>Bernstein</ce:surname></sb:author><sb:author><ce:given-name>F.Y.</ce:given-name><ce:surname>Ochoa</ce:surname></sb:author><sb:author><ce:given-name>X.</ce:given-name><ce:surname>Xu</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>Function and production of nitric oxide in the coronary circulation of the conscious dog during exercise</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circ Res</sb:maintitle></sb:title>
+<sb:volume-nr>79</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>840</sb:first-page>
+<sb:last-page>848</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB36">
+<ce:label>[36]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>Y.W.</ce:given-name><ce:surname>Xie</ce:surname></sb:author><sb:author><ce:given-name>W.</ce:given-name><ce:surname>Shen</ce:surname></sb:author><sb:author><ce:given-name>G.</ce:given-name><ce:surname>Zhao</ce:surname></sb:author><sb:author><ce:given-name>X.</ce:given-name><ce:surname>Xu</ce:surname></sb:author><sb:author><ce:given-name>M.S.</ce:given-name><ce:surname>Wolin</ce:surname></sb:author><sb:author><ce:given-name>T.H.</ce:given-name><ce:surname>Hintze</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Role of endothelium-derived nitric oxide in the modulation of canine myocardial mitochondrial respiration in vitro. Implications for the development of heart failure</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circ Res</sb:maintitle></sb:title>
+<sb:volume-nr>79</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>381</sb:first-page>
+<sb:last-page>387</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB37">
+<ce:label>[37]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>W.</ce:given-name><ce:surname>Shen</ce:surname></sb:author><sb:author><ce:given-name>X.</ce:given-name><ce:surname>Xu</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Ochoa</ce:surname></sb:author><sb:author><ce:given-name>G.</ce:given-name><ce:surname>Zhao</ce:surname></sb:author><sb:author><ce:given-name>M.S.</ce:given-name><ce:surname>Wolin</ce:surname></sb:author><sb:author><ce:given-name>T.H.</ce:given-name><ce:surname>Hintze</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Role of nitric oxide in the regulation of oxygen consumption in conscious dogs</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circ Res</sb:maintitle></sb:title>
+<sb:volume-nr>75</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1086</sb:first-page>
+<sb:last-page>1095</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB38">
+<ce:label>[38]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.</ce:given-name><ce:surname>Forfia</ce:surname></sb:author><sb:author><ce:given-name>X.</ce:given-name><ce:surname>Zhang</ce:surname></sb:author><sb:author><ce:given-name>D.R.</ce:given-name><ce:surname>Knight</ce:surname></sb:author><sb:et-al /></sb:authors>
+<sb:title><sb:maintitle>NO modulates myocardial O<ce:inf>2</ce:inf> consumption in the non-human primate: an additional mechanism of action of amlodipine</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am J Physiol</sb:maintitle></sb:title>
+<sb:volume-nr>276</sb:volume-nr></sb:series>
+<sb:date>1999</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>H2069</sb:first-page>
+<sb:last-page>H2075</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB39">
+<ce:label>[39]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.M.</ce:given-name><ce:surname>Canty</ce:surname><ce:suffix>Jr.</ce:suffix></sb:author><sb:author><ce:given-name>J.S.</ce:given-name><ce:surname>Schwartz</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Nitric oxide mediates flow-dependent epicardial coronary vasodilation to changes in pulse frequency but not mean flow in conscious dogs</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>89</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>375</sb:first-page>
+<sb:last-page>384</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB40">
+<ce:label>[40]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.G.</ce:given-name><ce:surname>Sakka</ce:surname></sb:author><sb:author><ce:given-name>D.R.</ce:given-name><ce:surname>Wallbridge</ce:surname></sb:author><sb:author><ce:given-name>G.</ce:given-name><ce:surname>Heusch</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Glossary: methods for the measurement of coronary blood flow and myocardial perfusion</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Basic Res Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>91</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>155</sb:first-page>
+<sb:last-page>178</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB41">
+<ce:label>[41]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>W.B.</ce:given-name><ce:surname>Hood</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Regional venous drainage of the human heart</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Br Heart J</sb:maintitle></sb:title>
+<sb:volume-nr>30</sb:volume-nr></sb:series>
+<sb:date>1968</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>105</sb:first-page>
+<sb:last-page>109</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference></ce:bibliography-sec></ce:bibliography></tail></converted-article>

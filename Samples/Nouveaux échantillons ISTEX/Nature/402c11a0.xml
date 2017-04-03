@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<?Pub EntList alpha amp beta bull cir cirf copy delta dtri dtrif gamma kappa  mdash mu ndash omega pi plusmn psi rArr rho sect squ squf squshf star starf  trade utri utrif?>
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_Article.dtd" [
+<!ENTITY illus1 PUBLIC "-//NatureAmerica//FICI 35011506//EN" "//snapple/web_d/web/npg/nature/journal/v402/n6761supp/images/402c11ab.2.jpg" NDATA ITEM>
+<!ENTITY figf1 PUBLIC "-//NatureAmerica//FICI 35011505//EN" "//snapple/web_d/web/npg/nature/journal/v402/n6761supp/images/402c11aa.2.jpg" NDATA ITEM>
+<!ENTITY tbl1 PUBLIC "-//NatureAmerica//FICI 35011507//EN" "//snapple/web_d/web/npg/nature/journal/v402/n6761supp/images/402c11at-001.gif" NDATA ITEM>
+]>
+<article id="35011503" language="eng" publish="issue" relation="no" origsrc="yes">
+    <!--402c11a0-->
+    <suppfm supptype="editorial">
+        <suppmast>
+            <jtl>Nature</jtl>
+            <suppttl>Impacts of foreseeable science</suppttl>
+            <vol>402</vol>
+            <iss>6761supp<?Pub Caret?></iss>
+            <idt>19991202</idt>
+        </suppmast>
+        <parent>
+            <jtl>Nature</jtl>
+            <vol>402</vol>
+            <iss>6761</iss>
+            <idt>19991202</idt>
+            <issn type="print">0028-0836</issn>
+            <cpg>
+                <cpy>1999</cpy>
+                <cpn>Macmillan Magazines Ltd.</cpn>
+            </cpg>
+        </parent>
+        <categ id="categtxt"/>
+        <categtxt>impacts</categtxt>
+        <pp>
+            <spn>C11</spn>
+            <epn>C14</epn>
+            <cnt>4</cnt>
+        </pp>
+    </suppfm>
+    <fm>
+        <atl>How common are habitable planets?</atl>
+        <aug>
+            <cau>
+                <fnm>Jack J.</fnm>
+                <snm>Lissauer</snm>
+                <inits>J J</inits>
+                <corf rid="c1"/>
+            </cau>
+            <caff><coid id="c1"/>Jack J. Lissauer is at the <org>Space Science Division, MS 245-3, NASA Ames Research Center</org>, <cty>Moffett Field</cty>, <st> California</st>
+                <zip>94035</zip>, <cny>USA</cny>.<newline/> e-mail: <email> lissauer@ringside.arc.nasa.gov</email></caff>
+        </aug>
+        <stndfrst>The Earth is teeming with life, which occupies a diverse array of environments; other bodies in our Solar System offer fewer, if any, niches that are habitable by life as we know it.
+            Nonetheless, astronomical studies suggest that many habitable planets may be present within our Galaxy.</stndfrst>
+    </fm>
+    <bdy>
+        <p>One of the most basic questions that has been pondered by Natural Philosophers for many millennia concerns humanity's place in the Universe: are we alone? This question has been approached
+            from many different viewpoints, and similar reasoning has led to widely diverse answers. Copernicus, Kepler, Galileo and Newton each demonstrated convincingly that other planets that were
+            qualitatively similar to Earth orbit the Sun. In the past few years, more than 20 planets have been discovered in orbit about stars other than our Sun; these are &lsquo;extrasolar&rsquo;
+            planets.</p>
+        <p>The intellectual and technological advances of the past century leave us poised at the turn of the millennium to investigate the possibility of extraterrestrial life along numerous paths of
+            experimental, observational and theoretical studies in both the physical and life sciences.</p>
+        <crosshd>Prerequisites for habitability</crosshd>
+        <p>Here I assume that extraterrestrial life would be carbon-based and use liquid water (characteristics common to all life found on Earth), and I define a &lsquo;habitable planet&rsquo; as one
+            capable of supporting such life.</p>
+        <p>Life on Earth has been able to evolve and thrive thanks to billions of years of benign climate. Mars seems to have had a climate sufficiently mild for liquid water to have flowed on its
+            surface when the Solar System was roughly one-tenth its current age, but at present, its low atmospheric pressure means that liquid water is not stable on the martian surface. Venus is too
+            hot, with a massive atmosphere dominated by carbon dioxide; we cannot say whether or not young Venus had a mild Earth-like climate. Indeed, as models of stellar evolution predict that the
+            young Sun was about 25 per cent less luminous than at present, we do not understand why Earth, much less Mars, was warm enough to be covered by liquid oceans 4 billion years ago, when life
+            is thought to have originated.</p>
+        <p>Carbon dioxide is important for carbon-based life. On Earth, this compound cycles &mdash; on a wide range of timescales &mdash; between the atmosphere, the oceans, living organisms, fossil
+            fuels and carbonate rocks. The carbonate rocks form the largest reservoir, and are produced by reactions involving water (and in some cases living organisms). Carbon dioxide is recycled
+            from carbonates back into the atmosphere as tectonic plates descend into the Earth's mantle and are heated. Carbonates are not readily recycled on a geologically inactive planet such as
+            Mars, and they are not formed on planets like Venus, which lack surface water. Larger planets of a given composition remain geologically active for longer, as they have smaller ratios of
+            surface area to mass, and thus retain heat from accretion and radioactive decay for longer. The number of variables involved in determining a planet's habitability precludes a complete
+            discussion, but some of the main issues are summarized in <figr rid="f1"> Fig. 1</figr> (compare <bibrinl rid="b1">ref. 1</bibrinl>).</p>
+        <crosshd>Stellar properties and habitability</crosshd>
+        <p>Stars are huge balls of plasma that radiate energy from their surfaces and liberate energy through thermonuclear fusion reactions in their interiors. During a star's long-lived
+            &lsquo;main-sequence phase&rsquo;, hydrogen in its core is gradually &lsquo;burned up&rsquo; to maintain sufficient pressure to balance gravity. The star's luminosity (energy output) grows
+            slowly during this phase, as fusion increases the mean particle mass in the core and greater temperature is required to achieve pressure balance. Once the hydrogen in the core is used up,
+            the star's structure and luminosity change much more rapidly. Both Sun-like stars and larger stars expand and become &lsquo;red giants&rsquo;; those stars with an initial mass greater than
+            about eight solar masses can end their lives in spectacular supernova explosions.</p>
+        <p>What stars are most likely to have habitable planets? To make the astronomical problem more straightforward, I assume that the single factor required for supporting life on a planet is the
+            presence of water on its surface over a long timescale. The main-sequence phase of low-mass stars (such as our Sun) provides &lsquo;continuously habitable zones&rsquo;; when in orbits
+            within these zones, planets may maintain liquid water on their surfaces for billions of years. High-mass stars are much hotter than low-mass stars and use up their fuel far more rapidly.
+            Thus, even if Earth-like planets form around high-mass stars at distances where liquid water is stable, it is unlikely that benign conditions exist for long enough on these planets to
+            enable life to form and evolve. However, the greater flux of ultraviolet radiation may speed up biological evolution enough to compensate for the shorter lifetime of a moderately massive
+            star. At the other end of the size spectrum, the smallest, faintest stars can live for trillions of years, but they emit almost all of their luminosity at infrared wavelengths and their
+            luminosity varies by tens of per cent owing to flares and large &lsquo;starspots&rsquo; (analogous to sunspots). In addition, habitable-zone planets orbit so close to these faint stars
+            that their rotation is tidally synchronized (as the Moon's rotation is relative to Earth); thus no day&ndash;night cycle occurs, and if the planet's atmosphere is thin it would freeze on
+            the perpetually dark, cold hemisphere<bibr rid="b2"/>.</p>
+        <crosshd>Stability of planetary systems</crosshd>
+        <p>Although isolated single-planet systems are stable essentially indefinitely, mutual gravitational perturbations within multiple-planet systems can lead to collisions and ejections from the
+            system. To a first approximation the star's gravity dominates, but planets exchange orbital energy and angular momentum, so that over millions or billions of orbits, even weak
+            perturbations could move planets out of orbits that were initially in the habitable zone. Resonances among various orbital and precession (that is, rotation of the spatial orientation of
+            the orbit ellipse) frequencies are the main source of chaos in planetary systems. There are no simple criteria for determining the stability of systems with many planets, but in general,
+            larger spacing between orbits, smaller eccentricities and inclinations, and lower-mass planets are more stable<bibr rid="b3"/>.</p>
+        <p>One of these criteria &mdash; large spacing between orbits &mdash; has important implications. There is a minimum separation required for a system of Earth-mass planets to be stable for
+            long periods of time. This separation is comparable to the width of a star's continuously habitable zone. Thus, arguments based on orbital stability support the possibility that most stars
+            could have one or even two planets with liquid water on their surfaces. But unless greenhouse effects conspire to substantially compensate for increasing distance from the star, larger
+            numbers of habitable planets per system are unlikely.</p>
+        <crosshd>Planet formation</crosshd>
+        <p>Stars are observed to be forming within cold regions of our Galaxy called molecular clouds. Even a very slowly rotating molecular-cloud core of stellar mass has far too much angular
+            momentum to collapse down to an object of stellar dimensions. This leads to a (proto)star surrounded by a rotating disk of material; a significant fraction of the material in a collapsing
+            core falls onto this disk. Such a disk has the same initial elemental composition as the growing star. At sufficient distances from the central star, it is cool enough for about 1&ndash;2
+            per cent of this material to be in solid form, either remnant interstellar grains or condensates formed within the disk. The growth from micrometre-sized dust to kilometre-sized solid
+            bodies called planetesimals remains poorly understood<bibr rid="b4"/>.</p>
+        <p>Kilometre-sized and larger planetesimals in protoplanetary disks travel on elliptical orbits that are altered by mutual gravitational interactions and physical collisions. These
+            interactions lead to accretion (and in some cases, erosion and fragmentation) of planetesimals. Gravitational encounters within a &lsquo;swarm&rsquo; of planetesimals can produce
+            velocities that exceed the &lsquo;escape velocity&rsquo; from the largest common planetesimals in the swarm<bibr rid="b5"/>, and sufficiently massive and dense planets far enough from the
+            star can hurl material into interstellar space. Comets in the Oort cloud &mdash; the vast comet reservoir &sim;5,000&ndash;50,000 au from the Sun &mdash; are believed to be icy
+            planetesimals that were sent outwards at nearly the Solar System escape velocity, and were perturbed into long-lived orbits around the Sun by close stars, interstellar clouds or the tidal
+            forces of the Galactic disk.</p>
+        <p>We do not at present have enough data to determine the range of planetary systems that occur in nature. The gravitational pull of known extrasolar planets induce velocity variations in
+            their stars much larger than would a planetary system like our own, and surveys so far accomplished have not detected low-mass and long-period planets<bibr rid="b6"/>. Our own Solar System
+            may represent a biased sample of a different kind, because it contains a planet with conditions suitable for life to evolve to the point of being able to ask questions about other
+            planetary systems<bibr rid="b7"/>. Unfortunately, we lack the capability to develop planet-formation models from first principles, or even from observations of protostellar disks, whose
+            detailed properties are poorly known. But theory suggests that a great of diversity of planetary systems are possible<bibr rid="b8"/>.</p>
+        <p>We do, however, possess planet-formation models that can predict the growth times of giant planets (such as Jupiter). Current models<bibr rid="b9"/> predict growth times that are similar to
+            estimates of the lifetime of gaseous protoplanetary disks. Thus, giant planets might not form in most protoplanetary disks. Although giant planets themselves are unlikely abodes for life,
+            they may harbour habitable moons. Moreover, they affect both the stability of the orbits of Earth-like planets and the flux of materials striking these planets<bibr rid="b7"/>. Such
+            impacts can have a devastating effect on life &mdash; a fact that no dinosaur is likely to argue with.</p>
+        <crosshd>Impacts and dinosaurs</crosshd>
+        <p>Impacts, like earthquakes, come in various sizes, with the large ones much rarer but vastly more hazardous than the small ones (<tablr rid="t1">Table 1</tablr>). Because of the destruction
+            that impacts may produce, impact frequency is an important factor in planetary habitability. The impact rate on the terrestrial planets of our Solar System was orders of magnitude larger
+            four billion years ago than it is at present. In a planetary system like our own, but with smaller planets replacing Jupiter and Saturn, large impact fluxes could continue, making planets
+            with Earth-like compositions and radiation fluxes hostile abodes for living organisms<bibr rid="b7"/>.</p>
+        <p>The largest mass extinction of the past 200 million years or so occurred 65 million years ago, when roughly half of the genera of multicellular organisms on Earth, including all of the
+            dinosaurs, suddenly died off. The geological record shows a layer of impact-produced minerals and iridium, an element rare in the Earth's crust but more abundant in primitive meteorites,
+            deposited at the time that the dinosaurs vanished (at the Cretaceous/Tertiary or K/T boundary). Additionally, the largest known crater on Earth dated at less than one billion years old was
+            formed at this time. Taken together, these data imply that this K/T mass extinction was caused by the impact of an asteroid or comet, about 10 km in radius, into the Yucatan peninsula<bibr
+                rid="b10"/>. </p>
+        <crosshd>A deluge of data to come</crosshd>
+        <p>The speculation about advanced civilizations on Mars that was rampant a century ago has been quashed by better observations. However, evidence for a wet Mars billions of years ago suggests
+            that life might have formed on that planet, and microbes may still be present below the surface<bibr rid="b11"/>. Interplanetary spacecraft will soon attempt to determine whether or not
+            life ever existed on Mars, and if so what were (or are) its characteristics<bibr rid="b12"/>. NASA plans to investigate a possible subsurface ocean in Jupiter's moon Europa<bibr rid="b13"
+            />, and the Cassini mission en route to Saturn will study the properties of Titan's atmosphere<bibr rid="b14"/>. Although Titan's surface is too cold for liquid water, this large moon has
+            a methane-rich atmosphere in which photochemical reactions create organic molecules. Analogous processes may have occurred within Earth's early atmosphere.</p>
+        <p>Interstellar probes for <i>in situ</i> exploration of extrasolar planets require substantial technological advances. Even with gravity assists by the planets and the Sun, payloads sent with
+            current rocket propulsion systems would require thousands of years to reach the nearest stars. Thus at present, interstellar travel remains in the realm of science fiction, but considering
+            the advances of the past millennium, voyages over such vast distances may become practical in the coming centuries.</p>
+        <p>Another approach to the detection of habitable planets is to search for signals that have been sent, intentionally or otherwise, by inhabitants of those worlds. This is being done by the
+            Search for ExtraTerrestrial Intelligence (SETI) (see <bxr rid="bx1">Box 1</bxr>).</p>
+        <p>Although we are not yet able to reach the stars, we are nonetheless entering a golden age of extrasolar planetary study by means of telescopic observations. All of the known extrasolar
+            planets have been identified indirectly, through the gravitational force that they exert on their star, and all have been found during the 1990s. The first two extrasolar planets to be
+            discovered orbit a rapidly spinning neutron star, which emits a substantial fraction of its luminosity as X-rays. The extrasolar planets known to orbit main-sequence stars are each more
+            massive than Saturn. They were discovered using the Doppler technique, which measures changes in the radial velocity of the star in response to the planet's gravitational tug.</p>
+        <p>Various techniques should increase our knowledge of extrasolar planets in the coming decades. Doppler studies should continue to find giant extrasolar planets<bibr rid="b6"/>: the current
+            precision of this technique is sufficient to detect Jupiter-mass planets in Jupiter-like orbits, and Uranus-mass planets orbiting very close to their stars. Better precision may eventually
+            lead to identification of smaller and more distant planets, but turbulence and other variability of stellar atmospheres will make detection of Earth analogues using the Doppler technique
+            impractical if not impossible.</p>
+        <p>Planets may also be detected through the wobble that they induce in the motion of their stars projected into the plane of the sky. This astrometric technique is most sensitive to massive
+            planets orbiting stars that are relatively close to the Earth. Because the star's motion is detectable in two dimensions, a better estimate of the planet's mass can be obtained than by
+            using radial velocities. No astrometric claim of detecting an extrasolar planet has yet been confirmed, but technological advances (especially the development of optical and infrared
+            interferometry) suggest that Jupiter-mass (and possibly smaller) planets will be detected from the ground using this technique within the next decade. Even higher precision is likely to be
+            achievable from spacecraft observations. The ultimate limit to astrometric precision is likely to be differences between the positions of a star's centre of mass and its centre of light,
+            which result from &lsquo;starspots&rsquo; and other variations in brightness.</p>
+        <crosshd>Earth-sized extrasolar planets?</crosshd>
+        <p>If the Earth lies in or near the orbital plane of an extrasolar planet, that planet passes in front of the disk of its star once each orbit as viewed from Earth. Precise photometry can
+            reveal such transits, which can be distinguished from rotationally modulated 'starspots' and intrinsic stellar variability by their periodicity, and would provide the size and orbital
+            period of the detected planet. Scintillation in, and variability of, the Earth's atmosphere limit photometric precision to roughly one-thousandth of a magnitude, allowing detection from
+            the ground of transits by Jupiter-sized planets but not by Earth-sized planets<bibr rid="b15"/>. Far greater precision is achievable above the atmosphere, with planets as small as Earth
+            likely to be detectable<bibr rid="b16"/>. This technique has the greatest potential for detecting Earth analogues within the next ten years.</p>
+        <p>Distant planets are very faint objects which are located near much brighter objects (the star or stars that they orbit), and thus they are extremely difficult to image. Efforts are
+            currently underway to image giant planets directly from the ground using adaptive optics (which adjusts telescope mirrors to compensate for the variability of Earth's atmosphere) and
+            coronagraphs (which block the light from the star that the planet orbits). NASA and the European Space Agency, ESA, are both currently designing space missions for the second decade of the
+            twenty-first century that will use interferometry and nulling to search for Earth-like planets around nearby stars<bibr rid="b17"/>. Assuming such planets are detected, spectroscopic
+            investigations of their atmospheres, to search for gases such as oxygen, ozone and methane, will follow. Obtaining resolved images of the disks of extrasolar Earth-like planets requires
+            substantially better optics and much greater light-gathering capability than available at present, but unlike interstellar travel, such distant resolved images should be achievable within
+            the twenty-first century.</p>
+        <p>Observations of planetary formation provide information on properties of planets as a class, and typical fluxes of material (impactors) to which Earth-like planets are exposed. The infrared
+            region of the spectrum is likely to provide the greatest information about star and planet formation in the coming decades, because planetary regions radiate most of their energy in the
+            mid-infrared and dusty interstellar clouds transmit far more scattered starlight in the near-infrared than in the visible range. Advances in infrared detectors, interferometry and new
+            large telescopes (on the ground with adaptive optics, and in space<bibr rid="b18"/>) will provide data that are vastly superior to those available today.</p>
+        <crosshd>Prospects</crosshd>
+        <p>Predictions have a miserable success rate, and forecasts centuries into the future tend to be particularly conservative. In part, this reflects deficiencies in the human imagination.
+            However, the average rate of change greatly exceeds the median rate. Consider the implication of joining the Galactic club of civilizations a billion years more advanced than our own
+            (assuming such a community exists!). Such a revelation would lead to changes far more fundamental than the invention of movable type, the industrial revolution and the information age have
+            brought to us within the past millennium.</p>
+        <p>We still do not know whether Earth-like planets on which liquid water flows are rare, are usual for solar-type stars or have intermediate abundances. Nonetheless, I personally believe that,
+            as there are billions of Sun-like stars in our Galaxy, planets with liquid water oceans lasting for long periods of time are common enough to ensure that if we are the only advanced life
+            form in our part of the Galaxy, biological factors are much more likely to be the principal limiting factor than are astronomical causes.</p>
+    </bdy>
+    <bm>
+        <objects>
+            <bx id="bx1" placement="external" type="reg">
+                <bxtitle>Box 1 Interstellar eavesdropping</bxtitle>
+                <p>The Search for ExtraTerrestrial Intelligence (SETI) is an endeavour to detect signals from alien life forms<bibr rid="b21"/>. A clear detection of such a signal would probably
+                    change humanity's world view as much as any other scientific discovery in history. As our society is in its technological infancy, another civilization capable of communicating
+                    over interstellar distances is likely to be enormously advanced compared with our own &mdash; compare our technology to that of a mere millennium ago and then extrapolate millions
+                    or billions of years into the future! Thus, a dialogue with extraterrestrials could alter our society in unimaginable ways (and they could probably answer most if not all of the
+                    questions raised in this article).</p>
+                <p>The primary instrument used by SETI is the radiotelescope. Most radio waves propagate with little loss through the interstellar medium, and many wavelengths also easily pass through
+                    the Earth's atmosphere. They are easy to generate and to detect. Radio thus appears to be an excellent means of interstellar communication, whether data are being exchanged between
+                    a community of civilizations around different stars or broadcast to the Galaxy in order to reach unknown societies in their technological infancy. Signals used for local purposes,
+                    such as radar and television on Earth, also escape and could be detected at great distances.</p>
+                <p>The first deliberate SETI radiotelescope observations were performed by Frank Drake in 1960. Since that time, improvements in receivers, data processing capabilities and
+                    radiotelescopes have doubled the capacity of SETI searches roughly every 8 months. Nonetheless, only a minuscule fraction of directions and frequencies have been searched, so one
+                    should not be discouraged by the lack of success so far.</p>
+            </bx>
+            <table tocentry="0" verified="0" frame="topbot" colsep="0" rowsep="1" orient="port" pgwide="1" id="t1" hcp="0" esds="0" tabcols="5" security="u">
+                <title security="u">Impacts and life</title>
+                <tgroup cols="5" colsep="0" rowsep="1" align="center" charoff="50" char="" show="yes" security="u">
+                    <colspec colnum="1" colname="1" align="left" colwidth="1*"/>
+                    <colspec colnum="2" colname="2" align="left" colwidth="1*"/>
+                    <colspec colnum="3" colname="3" align="left" colwidth="1*"/>
+                    <colspec colnum="4" colname="4" align="left" colwidth="1*"/>
+                    <colspec colnum="5" colname="5" align="left" colwidth="1*"/>
+                    <thead valign="top" security="u">
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Size<illusr rid="illus1" align="right"/></entry>
+                            <entry rotate="0" valign="top" security="u">Example(s)</entry>
+                            <entry rotate="0" valign="top" security="u">Most recent</entry>
+                            <entry rotate="0" valign="top" security="u">Planetary effects</entry>
+                            <entry rotate="0" valign="top" security="u">Effects on life</entry>
+                        </row>
+                    </thead>
+                    <tbody valign="top" security="u">
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Super colossal <i>R</i>&gt;2,000 km</entry>
+                            <entry rotate="0" valign="top" security="u">Moon-forming event</entry>
+                            <entry rotate="0" valign="top" security="u">4.45&times;10<super>9</super> yr ago</entry>
+                            <entry rotate="0" valign="top" security="u">Melts planet</entry>
+                            <entry rotate="0" valign="top" security="u">Drives off volatiles; wipes out life on planet</entry>
+                        </row>
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Colossal <i>R</i>&gt;700 km</entry>
+                            <entry rotate="0" valign="top" security="u">Pluto 1 Ceres (borderline)</entry>
+                            <entry rotate="0" valign="top" security="u">&gsim;4.3 &times;10<super>9</super> yr ago</entry>
+                            <entry rotate="0" valign="top" security="u">Melts crust</entry>
+                            <entry rotate="0" valign="top" security="u">Wipes out life on planet</entry>
+                        </row>
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Huge <i>R</i> &gt; 200 km</entry>
+                            <entry rotate="0" valign="top" security="u">4 Vesta (large asteroid)</entry>
+                            <entry rotate="0" valign="top" security="u">&sim;4.0 &times; 10<super>9</super> yr ago</entry>
+                            <entry rotate="0" valign="top" security="u">Vaporizes oceans</entry>
+                            <entry rotate="0" valign="top" security="u">Life may survive below surface</entry>
+                        </row>
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Extra large <i>R</i>&gt;70 km</entry>
+                            <entry rotate="0" valign="top" security="u">Chiron (largest active comet)</entry>
+                            <entry rotate="0" valign="top" security="u">3.8&times;10<super>9</super> yr ago</entry>
+                            <entry rotate="0" valign="top" security="u">Vaporizes upper 100 m of oceans</entry>
+                            <entry rotate="0" valign="top" security="u">Pressure-cooks photic zone; may wipe out photosynthesis</entry>
+                        </row>
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Large <i>R</i> &gt; 30 km</entry>
+                            <entry rotate="0" valign="top" security="u">Comet Hale&ndash;;Bopp</entry>
+                            <entry rotate="0" valign="top" security="u">&sim;2&times;10<super>9</super> yr ago</entry>
+                            <entry rotate="0" valign="top" security="u">Heats atmosphere and surface to &sim;1,000 K</entry>
+                            <entry rotate="0" valign="top" security="u">Continents cauterized</entry>
+                        </row>
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Medium <i>R</i>&gt;10 km</entry>
+                            <entry rotate="0" valign="top" security="u">K/T impactor 433 Eros (largest NEA)</entry>
+                            <entry rotate="0" valign="top" security="u">65&times;10<super>6</super> yr ago</entry>
+                            <entry rotate="0" valign="top" security="u">Fires, dust, darkness; atmosphere/ocean chemical changes; large temperature swings</entry>
+                            <entry rotate="0" valign="top" security="u">Half of species extinct</entry>
+                        </row>
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Small <i>R</i>&gt;1 km</entry>
+                            <entry rotate="0" valign="top" security="u">&sim;500 NEAs</entry>
+                            <entry rotate="0" valign="top" security="u">&sim;300,000 yr ago</entry>
+                            <entry rotate="0" valign="top" security="u">Global dusty atmosphere for months</entry>
+                            <entry rotate="0" valign="top" security="u">Photosynthesis interrupted; individuals die but few species extinct; civilization threatened</entry>
+                        </row>
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">Very small <i>R</i> &gt; 100 m</entry>
+                            <entry rotate="0" valign="top" security="u">Tonguska event</entry>
+                            <entry rotate="0" valign="top" security="u">91 yr ago</entry>
+                            <entry rotate="0" valign="top" security="u">Major local effects; minor hemispheric effects; dusty atmosphere</entry>
+                            <entry rotate="0" valign="top" security="u">Newspaper headlines; romantic sunsets increase birth rate</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+                <tgroup cols="1" colsep="0" rowsep="0" align="center" charoff="50" char="" show="yes" security="u">
+                    <colspec colnum="1" colname="1" align="left" colwidth="1*"/>
+                    <tbody valign="top" security="u">
+                        <row security="u">
+                            <entry rotate="0" valign="top" security="u">
+                                <fn id="t1-fn1" type="footnote">
+                                    <p>The effects of an impact on life depend in a qualitative way on the impact energy. The smallest space debris to hit Earth's atmosphere is slowed to benign speeds
+                                        by gas drag or vaporized before it hits the ground. The largest impactors can melt a planet's crust and eliminate life entirely. Strong iron impactors ranging
+                                        in size from that of a car to that of a house may hit the ground at high velocity, killing living beings in their path. The rocky bolide that exploded over
+                                        Tonguska, Siberia, in 1908 was about the size of a football field; it produced a blast wave that knocked over trees tens of kilometres away. An impactor a few
+                                        kilometres in size would throw enough dust into the upper atmosphere to substantially darken the sky for much of a growing season<bibr rid="b19"/>; the threat
+                                        of such an impactor to human food supplies has led NASA to initiate a programme to detect all near-Earth asteroids (NEAs) larger than about 1 km. Mass
+                                        extinctions (such as that at the K/T boundary; see text) result from even larger impacts, which load the atmosphere with dust and chemicals (from vapour and
+                                        pulverized matter originating in both the impactor and the crater ejecta); radiation from high-velocity ejecta re-entering the atmosphere may cause global
+                                        fires. Even larger impacts fill the atmosphere with enough hot ejecta and greenhouse gases to vaporize part or all of the planet's oceans<bibr rid="b20"/>.
+                                        Indeed, phylogenetic evidence implies that the last common ancestor of all life on Earth was a thermophilic prokaryote, which would have been most capable of
+                                        surviving such a scalding impact. Even larger impacts would destroy all life on the planet, although it is possible that some organisms could survive in
+                                        meteoroids ejected by the impact, and subsequently re-establish themselves on the planet (or another planet orbiting the same star) by a fortuitously gentle
+                                        return after conditions on the planet had improved.</p>
+                                </fn>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+                <tblimg entname="tbl1" show="no"/>
+                <!--402c11AT-001-->
+            </table>
+            <fig id="f1" type="eps" entname="figf1">
+                <!--402c11aa-->
+                <figtl>Environments on small and large Earth-like planets.</figtl>
+                <caption>
+                    <p>Earth is depicted in the central panel of the figure. A smaller planet (left) made of the same material as Earth would be less dense, because the pressure in the interior would
+                        be lower. Such a planet would have a larger ratio of surface area to mass, so its interior would cool faster. Its lower surface gravity and more rigid crust would allow for
+                        higher mountains and deeper valleys than are seen on Earth. Most important to life is that it would have a much smaller surface pressure as a result of four factors: a larger
+                        ratio of surface area to mass, lower surface gravity, more volatiles sequestered in crust as there is less crustal recycling, and more atmospheric volatiles escaping to space.
+                        Among other things, this would imply a lower surface temperature, because there would be less greenhouse gases in the atmosphere. Some remedial measures that could improve the
+                        habitability of such a mass-deprived planet are: (1) move it closer to the star, so less greenhouse effect would be needed to keep the surface temperatures comfortable; (2) add
+                        extra atmospheric volatiles; and (3) include a larger fraction of long-lived radioactive nuclei than on Earth, to maintain crustal recycling. A larger planet (right) made of
+                        the same material as Earth would be denser and have a hotter interior. Its higher surface gravity and less rigid crust would lead to muted topography. It would have a much
+                        greater atmospheric pressure, and, unless its greenhouse effect was strong enough to boil away its water, much deeper oceans, probably covering its entire surface. Some
+                        remedial measures that could improve the habitability of such a mass-gifted planet are: (1) move it farther from the star; and (2) include a smaller fraction of atmospheric
+                        volatiles. It is not clear that more active crustal recycling would be a problem, within limits.</p>
+                </caption>
+                <credit>NASA/CORBIS/OAR/NURP</credit>
+            </fig>
+            <illus id="illus1" type="eps" entname="illus1" embed="yes" display="print-online">
+                <!--402c11ab--></illus>
+        </objects>
+        <ack>
+            <p>I thank J. Cuzzi, F. Drake and G. Marcy for insightful discussions.</p>
+        </ack>
+        <bibl>
+            <bib id="b1">
+                <reftxt><refau><snm>Lewis</snm>, <fnm>J. S.</fnm></refau>
+                    <btl> Worlds Without End: The Exploration of Planets Known and Unknown</btl> (Helix, Reading, Massachusetts, <cd year="1998">1998</cd>).</reftxt>
+            </bib>
+            <bib id="b2">
+                <reftxt><refau><snm>Joshi</snm>, <fnm>M. M.</fnm></refau>, <refau><snm> Haberle</snm>, <fnm>R. M.</fnm></refau> &amp; <refau><snm>Reynolds</snm>, <fnm> R. T.</fnm></refau>
+                    <jtl>Icarus</jtl>
+                    <vid>129</vid>, <ppf>450</ppf>&ndash;<ppl> 465</ppl> (<cd year="1997">1997</cd>).</reftxt>
+            </bib>
+            <bib id="b3">
+                <reftxt><refau><snm>Lissauer</snm>, <fnm>J. J.</fnm></refau>
+                    <jtl> Rev. Mod. Phys.</jtl>
+                    <vid>71</vid>, <ppf>835</ppf>&ndash;<ppl>845</ppl> (<cd year="1999">1999</cd>).</reftxt>
+            </bib>
+            <bib id="b4">
+                <reftxt><refau><snm>Weidenschilling</snm>, <fnm>S. J.</fnm></refau> &amp; <refau><snm>Cuzzi</snm>, <fnm>J. N.</fnm></refau> in <btl>Protostars and Planets III</btl> (eds Levy, E. H.
+                    &amp; Lunine, J. I.) <ppf>1031</ppf>&ndash;<ppl> 1060</ppl> (Univ. Arizona Press, Tucson, <cd year="1993">1993</cd>).</reftxt>
+            </bib>
+            <bib id="b5">
+                <reftxt><refau><snm>Safronov</snm>, <fnm>V. S.</fnm></refau>
+                    <btl> Evolution of the Protoplanetary Cloud and Formation of the Earth and Planets </btl> (Nauka Press, Moscow, <cd year="1969">1969</cd>) (in Russian); Publication TTF-677, NASA,
+                        <cd year="1972">1972</cd> (English transl.).</reftxt>
+            </bib>
+            <bib id="b6">
+                <reftxt>
+                    <url>http://www.physics.sfsu.edu/~gmarcy/planetsearch/planetsearch.html </url>
+                </reftxt>
+            </bib>
+            <bib id="b7">
+                <reftxt><refau><snm>Wetherill</snm>, <fnm>G. W.</fnm></refau>
+                    <jtl> Astrophys. Space Sci.</jtl>
+                    <vid>212</vid>, <ppf>23</ppf>&ndash;<ppl>32</ppl> (<cd year="1994">1994</cd>).</reftxt>
+            </bib>
+            <bib id="b8">
+                <reftxt><refau><snm>Lissauer</snm>, <fnm>J. J.</fnm></refau>
+                    <jtl> Icarus</jtl>
+                    <vid>114</vid>, <ppf>217</ppf>&ndash;<ppl>236</ppl> (<cd year="1995"> 1995</cd>).</reftxt>
+            </bib>
+            <bib id="b9">
+                <reftxt><refau><snm>Pollack</snm>, <fnm>J. B.</fnm></refau>
+                    <i> et al</i>. <jtl>Icarus</jtl>
+                    <vid>124</vid>, <ppf>62</ppf>&ndash;<ppl>85</ppl> (<cd year="1996">1996</cd>).</reftxt>
+            </bib>
+            <bib id="b10">
+                <reftxt><refau><snm>Chapman</snm>, <fnm>C. R.</fnm></refau> &amp; <refau><snm>Morrison</snm>, <fnm>D.</fnm></refau>
+                    <jtl>Nature</jtl>
+                    <vid> 367</vid>, <ppf>33</ppf>&ndash;<ppl>40</ppl> (<cd year="1994">1994</cd>). </reftxt>
+            </bib>
+            <bib id="b11">
+                <reftxt><refau><snm>McKay</snm>, <fnm>C. P.</fnm></refau>
+                    <jtl> Orig. Life Evol. Biosphere</jtl>
+                    <vid>27</vid>, <ppf>263</ppf>&ndash;<ppl> 289</ppl> (<cd year="1997">1997</cd>).</reftxt>
+            </bib>
+            <bib id="b12">
+                <reftxt>
+                    <url>http://mpfwww.jpl.nasa.gov/</url>
+                </reftxt>
+            </bib>
+            <bib id="b13">
+                <reftxt>
+                    <url>http://www.jpl.nasa.gov/ice_fire//europao.htm</url>
+                </reftxt>
+            </bib>
+            <bib id="b14">
+                <reftxt>
+                    <url>http://www.jpl.nasa.gov/cassini/</url>
+                </reftxt>
+            </bib>
+            <bib id="b15">
+                <reftxt>
+                    <url>http://web99.arc.nasa.gov/~mars/vulcan/</url>
+                </reftxt>
+            </bib>
+            <bib id="b16">
+                <reftxt>
+                    <url>http://www.kepler.arc.nasa.gov/</url>
+                </reftxt>
+            </bib>
+            <bib id="b17">
+                <reftxt>
+                    <url>http://astro1.bnsc.rl.ac.uk:80/darwin/</url>
+                </reftxt>
+            </bib>
+            <bib id="b18">
+                <reftxt>
+                    <url>http://ngst.gsfc.nasa.gov/</url>
+                </reftxt>
+            </bib>
+            <bib id="b19">
+                <reftxt><refau><snm>Toon</snm>, <fnm>O. B.</fnm></refau>, <refau><snm> Zahnle</snm>, <fnm>K.</fnm></refau>, <refau><snm>Morrison</snm>, <fnm>D.</fnm></refau>, <refau><snm> Turco</snm>,
+                            <fnm>R. P.</fnm></refau> &amp; <refau><snm>Covey</snm>, <fnm> C.</fnm></refau>
+                    <jtl>Rev. Geophys.</jtl>
+                    <vid>35</vid>, <ppf>41</ppf>&ndash;<ppl> 78</ppl> (<cd year="1997">1997</cd>).</reftxt>
+            </bib>
+            <bib id="b20">
+                <reftxt><refau><snm>Sleep</snm>, <fnm>N. H.</fnm></refau>, <refau><snm> Zahnle</snm>, <fnm>K. J.</fnm></refau>, <refau><snm>Kasting</snm>, <fnm>J. F.</fnm></refau> &amp;
+                            <refau><snm>Morowitz</snm>, <fnm>H. J.</fnm></refau>
+                    <jtl> Nature</jtl>
+                    <vid>342</vid>, <ppf>139</ppf>&ndash;<ppl>142</ppl> (<cd year="1989"> 1989</cd>).</reftxt>
+            </bib>
+            <bib id="b21">
+                <reftxt>
+                    <url>http://www.seti.org/</url>
+                </reftxt>
+            </bib>
+        </bibl>
+    </bm>
+</article>
+<?Pub *0000034415?>

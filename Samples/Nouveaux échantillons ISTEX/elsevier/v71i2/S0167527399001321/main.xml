@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "art452.dtd" [
+]>
+<converted-article version="4.5.2" docsubtype="sco" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd">
+    <item-info>
+        <jid>IJCA</jid>
+        <aid>3738</aid>
+        <ce:pii>S0167-5273(99)00132-1</ce:pii>
+        <ce:doi>10.1016/S0167-5273(99)00132-1</ce:doi>
+        <ce:copyright type="full-transfer" year="1999">Elsevier Science Ireland Ltd</ce:copyright>
+    </item-info>
+
+    <head>
+        <ce:dochead>
+            <ce:textfn>Letter</ce:textfn>
+        </ce:dochead>
+        <ce:title>Femoral neuropathy following cardiac catheterization for balloon mitral valvotomy</ce:title>
+        <ce:author-group>
+            <ce:author>
+                <ce:given-name>Abraham</ce:given-name>
+                <ce:surname>Kuruvilla</ce:surname>
+                <ce:cross-ref refid="AFF1">
+                    <ce:sup>a</ce:sup>
+                </ce:cross-ref>
+                <ce:cross-ref refid="COR1">*</ce:cross-ref>
+                <ce:e-address>akuruvilla@doctor4u.com</ce:e-address>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>Gigy</ce:given-name>
+                <ce:surname>Kuruttukulam</ce:surname>
+                <ce:cross-ref refid="AFF1">
+                    <ce:sup>a</ce:sup>
+                </ce:cross-ref>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>Bimal</ce:given-name>
+                <ce:surname>Francis</ce:surname>
+                <ce:cross-ref refid="AFF2">
+                    <ce:sup>b</ce:sup>
+                </ce:cross-ref>
+            </ce:author>
+            <ce:affiliation id="AFF1">
+                <ce:label>a</ce:label>
+                <ce:textfn>Department of Neurology, Sree Chitra Tirunal Institute for Medical Sciences and Technology, Trivandrum 695 011, India</ce:textfn>
+            </ce:affiliation>
+            <ce:affiliation id="AFF2">
+                <ce:label>b</ce:label>
+                <ce:textfn>Department of Cardiology, Sree Chitra Tirunal Institute for Medical Sciences and Technology, Trivandrum 695 011, India</ce:textfn>
+            </ce:affiliation>
+            <ce:correspondence id="COR1">
+                <ce:label>*</ce:label>
+                <ce:text>Corresponding author. Tel.: +91-471-443-152; fax: +91-471-449-338</ce:text>
+            </ce:correspondence>
+        </ce:author-group>
+        <ce:date-received day="8" month="7" year="1999"/>
+        <ce:date-accepted day="14" month="7" year="1999"/>
+        <ce:abstract>
+            <ce:section-title>Abstract</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para>Femoral neuropathy is a very rare complication of cardiac catheterization. We report an adult female who developed femoral neuropathy after undergoing cardiac
+                    catheterization through femoral vein for balloon mitral valvotomy. Neuropathy was confirmed by electromyography and nerve conduction studies and the patient showed spontaneous
+                    recovery over a course of 6 months. Use of prolonged digital pressure for post-procedural hemostasis is implicated as possible etiology. Such complications can be prevented by
+                    minimising the procedural time, avoiding injury to the vessels and maintaining optimal posture of patient&#x2019;s thigh by limiting abduction and external rotation of
+                    hip.</ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:keywords class="keyword">
+            <ce:section-title>Keywords</ce:section-title>
+            <ce:keyword>
+                <ce:text>Femoral neuropathy</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>Cardiac catheterization</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>Femoral vessel catheterization</ce:text>
+            </ce:keyword>
+        </ce:keywords>
+    </head>
+    <body>
+        <ce:sections>
+            <ce:section>
+                <ce:label>1</ce:label>
+                <ce:section-title>Introduction</ce:section-title>
+                <ce:para>Incidence of neuropathic complications following femoral cannulation is very low. However, with the increasing number of cardiac diagnostic and interventional procedures,
+                    cardiologists and vascular surgeons are confronted with more and more of arteriovenous fistulas and pseudoaneurysms. Femoral neuropathy may be the only sign in these patients
+                        <ce:cross-ref refid="BIB1">[1]</ce:cross-ref>. Complications like traumatic neuropathy can also occur during cardiac catheterization secondary to mechanical or digital pressure
+                    for achieving hemostasis <ce:cross-refs refid="BIB2 BIB3">[2,3]</ce:cross-refs>. Femoral nerve injury can result from retroperitoneal hematoma following systemic anticoagulation
+                    therapy after percutaneous transluminal coronary angioplasty (PTCA) <ce:cross-ref refid="BIB4">[4]</ce:cross-ref>. We report a case of femoral neuropathy complicating cardiac
+                    catheterization through femoral vein for balloon mitral valvotomy (BMV).</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>2</ce:label>
+                <ce:section-title>Case report</ce:section-title>
+                <ce:para>A 32-year-old woman, with severe mitral stenosis secondary to rheumatic heart disease, was subjected to balloon mitral valvotomy for which the right femoral vein and left
+                    femoral artery were punctured using an Inoue catheter. After the procedure, there was difficulty in controlling bleeding from the puncture site on the right. Continuous local
+                    digital pressure was applied for achieving hemostasis. The same evening, she developed numbness over the anteromedial aspect of right thigh along with &#x2018;buckling&#x2019; of
+                    knee while walking. Examination revealed no evidence for hematoma or swelling at the puncture site. Neurological examination revealed abnormalities confined to the right lower
+                    extremity with moderate weakness of the quadriceps muscle, absent knee jerk and sensory loss along the medical aspect of thigh and leg. Electrophysiological examination (EMG/NCS)
+                    done on the second day after the onset of symptoms revealed significant conduction block across the right inguinal ligament on motor stimulation of the femoral nerve. A follow-up
+                    evaluation, after 6 weeks, showed evidence for active as well as chronic denervation changes in the right rectus femoris muscle. The clinical as well as electrodiagnostic
+                    evaluation supported the diagnosis of femoral neuropathy at the level of the inguinal ligament. The patient showed full spontaneous recovery after 6 months.</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>3</ce:label>
+                <ce:section-title>Discussion</ce:section-title>
+                <ce:para>Femoral neuropathy following cardiac catheterization can be initially disabling, but it is often completely reversible. Kent et al. <ce:cross-ref refid="BIB5"
+                        >[5]</ce:cross-ref>, in a study of 9585 cardiac catheterizations, done over a 5-year period, reported that the incidence of femoral neuropathy was only 0.21% (20 patients). Of
+                    these 20 patients, 16 had retroperitoneal hematomas and four had groin hematomas or false aneurysm.</ce:para>
+                <ce:para>Simon <ce:cross-ref refid="BIB2">[2]</ce:cross-ref> in a study to evaluate mechanical pressure versus digital pressure for hemostasis following cardiac catheterization,
+                    concluded that traumatic femoral neuropathy in addition to hematoma formation, arterial occlusion and ischemia could occur as a complication. There was no significant difference in
+                    rate of complication between the groups. Our patient did not have any evidence for retroperitoneal hematoma, pseudoaneurysm or hematoma at the puncture site. The likely etiology of
+                    femoral neuropathy in our patient could have been the application of prolonged pressure at the puncture site.</ce:para>
+                <ce:para>We report this case to emphasize that femoral neuropathy can result as a complication of femoral vessel catheterization. As in our case, use of prolonged digital pressure for
+                    post-procedural hemostasis is implicated as one of the causes. Such complication can be reduced by minimising the duration of the procedure, avoiding trauma to the vessels and by
+                    proper positioning of the lower extremity by avoiding undue abduction and external rotation of hip. This becomes more relevant in the new millennium, when cardiac diagnostic and
+                    interventional procedures are becoming more and more popular.</ce:para>
+            </ce:section>
+        </ce:sections>
+    </body>
+    <tail>
+        <ce:bibliography>
+            <ce:section-title>References</ce:section-title>
+            <ce:bibliography-sec>
+                <ce:bib-reference id="BIB1">
+                    <ce:label>[1]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>M.J.</ce:given-name>
+                                    <ce:surname>Jacobs</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>I.D.</ce:given-name>
+                                    <ce:surname>Gregoric</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G.J.</ce:given-name>
+                                    <ce:surname>Reul</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                            <sb:title>
+                                <sb:maintitle>Profunda femoral artery pseudoaneurysm after percutaneous transluminal procedures manifested by neuropathy</sb:maintitle>
+                            </sb:title>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Cardiovasc. Surg.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>6</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1992</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>729</sb:first-page>
+                                <sb:last-page>731</sb:last-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB2">
+                    <ce:label>[2]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A.W.</ce:given-name>
+                                    <ce:surname>Simon</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                            <sb:title>
+                                <sb:maintitle>Use of a mechanical pressure device for hemostasis following cardiac catheterization</sb:maintitle>
+                            </sb:title>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Am. J. Crit. Care</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>1</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1994</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>62</sb:first-page>
+                                <sb:last-page>64</sb:last-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB3">
+                    <ce:label>[3]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>S.</ce:given-name>
+                                    <ce:surname>Pradhan</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A.</ce:given-name>
+                                    <ce:surname>Gupta</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                            <sb:title>
+                                <sb:maintitle>Iatrogenic median and femoral neuropathy</sb:maintitle>
+                            </sb:title>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Assoc. Phys. India</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>43</sb:volume-nr>
+                                </sb:series>
+                                <sb:issue-nr>2</sb:issue-nr>
+                                <sb:date>1995</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>141</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB4">
+                    <ce:label>[4]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>B.S.</ce:given-name>
+                                    <ce:surname>Warfel</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>S.G.</ce:given-name>
+                                    <ce:surname>Marini</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>E.A.</ce:given-name>
+                                    <ce:surname>Lachmann</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>W.</ce:given-name>
+                                    <ce:surname>Nagler</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                            <sb:title>
+                                <sb:maintitle>Delayed femoral nerve palsy following femoral vessel catheterization</sb:maintitle>
+                            </sb:title>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Arch. Phys. Med. Rehabil.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>74</sb:volume-nr>
+                                </sb:series>
+                                <sb:issue-nr>11</sb:issue-nr>
+                                <sb:date>1993</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1211</sb:first-page>
+                                <sb:last-page>1215</sb:last-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB5">
+                    <ce:label>[5]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>K.C.</ce:given-name>
+                                    <ce:surname>Kent</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M.</ce:given-name>
+                                    <ce:surname>Moscucci</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>S.G.</ce:given-name>
+                                    <ce:surname>Gallagher</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>S.T.</ce:given-name>
+                                    <ce:surname>Di Mattia</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.J.</ce:given-name>
+                                    <ce:surname>Skillman</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                            <sb:title>
+                                <sb:maintitle>Neuropathy after cardiac catheterization: incidence, clinical patterns and long term outcome</sb:maintitle>
+                            </sb:title>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Vasc. Surg.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>19</sb:volume-nr>
+                                </sb:series>
+                                <sb:issue-nr>6</sb:issue-nr>
+                                <sb:date>1994</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1008</sb:first-page>
+                                <sb:last-page>1013</sb:last-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+            </ce:bibliography-sec>
+        </ce:bibliography>
+    </tail>
+</converted-article>

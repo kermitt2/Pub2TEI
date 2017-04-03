@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE header SYSTEM "http://ej.iop.org/dtd/header.dtd">
+<header>
+  <ident>
+    <issn>2040-8986</issn>
+    <volume>14</volume>
+    <issue>1</issue>
+    <artnum>015403</artnum>
+    <ecs>403333</ecs>
+    <serial>8887898</serial>
+    <inspec/>
+    <pii></pii>
+    <doi>10.1088/2040-8978/14/1/015403</doi>
+    <attributes text_type="abs" refs="22" art_type="paper" cites="1"/>
+    <!--INSERT(art_focus)-->
+    <pages range="015403 (7pp)" type="article" start="015403" extent="7"/>
+    <availability services="ej"/>
+    <!--INSERT(external_id)-->
+  </ident>
+  <title>
+    <surtitle>Paper</surtitle>
+    <title_full lang="en">Channel capacity study of underwater wireless optical communications links based on Monte Carlo simulation</title_full>
+    <title_short>Channel capacity study of underwater wireless optical communications links based on Monte Carlo simulation</title_short>
+    
+  </title>
+  <authors>
+    
+    <author affil="1,2">Jing Li</author>
+    <author affil="1,2">Yong Ma</author>
+    <author affil="1,2">Qunqun Zhou</author>
+    <author affil="1,2">Bo Zhou</author>
+    <author affil="1">Hongyuan Wang</author>
+    <author_granular order="given-surname" affil="1,2">
+      <given>Jing</given>
+      <surname>Li</surname>
+    </author_granular>
+    <author_granular order="given-surname" affil="1,2">
+      <given>Yong</given>
+      <surname>Ma</surname>
+    </author_granular>
+    <author_granular order="given-surname" affil="1,2">
+      <given>Qunqun</given>
+      <surname>Zhou</surname>
+    </author_granular>
+    <author_granular order="given-surname" affil="1,2">
+      <given>Bo</given>
+      <surname>Zhou</surname>
+    </author_granular>
+    <author_granular order="given-surname" affil="1">
+      <given>Hongyuan</given>
+      <surname>Wang</surname>
+    </author_granular>
+    <affil id="1">Electronic and Information Department, Huazhong University of Science and Technology, 1037 Luoyu Road, Wuhan 430074, People&#8217;s Republic of China
+            </affil>
+    <affil id="2">National Laboratory for Opto-electronics, Huazhong University of Science and Technology, 1037 Luoyu Road, Wuhan 430074, People&#8217;s Republic of China
+            </affil>
+    <aaffil email="mayong@mail.hust.edu.cn">
+
+</aaffil>
+  <authors_toc>Jing Li, Yong Ma, Qunqun Zhou, Bo Zhou and Hongyuan Wang</authors_toc>
+</authors>
+  <dates>
+    <date_cover readable="January 2012">2012-01-01</date_cover>
+    <date_history accepted="2011-11-30" epub="2011-12-22" received="2011-08-10"/>
+    <date_online fulltext="2011-12-22" header="2011-12-22"/><date_alert>2011-12-23</date_alert>
+    <date_modified checkedby="rachaelk">2011-12-22 09:51:48</date_modified>
+  <date_modified_history user="rachaelk" date="2011-12-22 09:51:48">cgi/release: Article released</date_modified_history>
+<date_modified_history user="rachaelk" date="2011-12-22 09:51:48">insert subject codes:domex_pacs</date_modified_history>
+<date_modified_history user="rck" date="2011-12-21 09:43:43">bin/incoming: New from .zip</date_modified_history>
+</dates>
+  
+  <text>
+    
+    <fulltext pdf="jopt12_1_015403.pdf"/>
+    <!--INSERT(special_material)-->
+    <info_top/>
+    <info_bottom/>
+    <copyright_text>2012 IOP Publishing Ltd</copyright_text>
+  </text>
+</header>

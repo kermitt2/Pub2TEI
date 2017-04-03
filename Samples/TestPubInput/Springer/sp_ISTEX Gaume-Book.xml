@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+    <PublisherInfo>
+        <PublisherName>Springer Berlin Heidelberg</PublisherName>
+        <PublisherLocation>Berlin, Heidelberg</PublisherLocation>
+    </PublisherInfo>
+    <Series>
+        <SeriesInfo SeriesType="Series" TocLevels="0">
+            <SeriesID>558</SeriesID>
+            <SeriesPrintISSN>0302-9743</SeriesPrintISSN>
+            <SeriesElectronicISSN>1611-3349</SeriesElectronicISSN>
+            <SeriesTitle Language="En">Lecture Notes in Computer Science</SeriesTitle>
+        </SeriesInfo>
+        <SeriesHeader>
+            <AuthorGroup>
+                <Author AffiliationIDS="Aff1">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>David</GivenName>
+                        <FamilyName>Hutchison</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff2">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Takeo</GivenName>
+                        <FamilyName>Kanade</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff3">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Josef</GivenName>
+                        <FamilyName>Kittler</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff4">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Jon</GivenName>
+                        <GivenName>M.</GivenName>
+                        <FamilyName>Kleinberg</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff5">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Friedemann</GivenName>
+                        <FamilyName>Mattern</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff6">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>John</GivenName>
+                        <GivenName>C.</GivenName>
+                        <FamilyName>Mitchell</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff7">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Moni</GivenName>
+                        <FamilyName>Naor</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff8">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Oscar</GivenName>
+                        <FamilyName>Nierstrasz</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff9">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>C.</GivenName>
+                        <FamilyName>Pandu Rangan</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff10">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Bernhard</GivenName>
+                        <FamilyName>Steffen</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff11">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Madhu</GivenName>
+                        <FamilyName>Sudan</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff12">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Demetri</GivenName>
+                        <FamilyName>Terzopoulos</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff13">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Doug</GivenName>
+                        <FamilyName>Tygar</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff14">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Moshe</GivenName>
+                        <GivenName>Y.</GivenName>
+                        <FamilyName>Vardi</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff15">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Gerhard</GivenName>
+                        <FamilyName>Weikum</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Affiliation ID="Aff1">
+                    <OrgName>Lancaster University</OrgName>
+                    <OrgAddress>
+                        <City>Lancaster</City>
+                        <Country>UK</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff2">
+                    <OrgName>Carnegie Mellon University</OrgName>
+                    <OrgAddress>
+                        <City>Pittsburgh</City>
+                        <State>PA</State>
+                        <Country>USA</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff3">
+                    <OrgName>University of Surrey</OrgName>
+                    <OrgAddress>
+                        <City>Guildford</City>
+                        <Country>UK</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff4">
+                    <OrgName>Cornell University</OrgName>
+                    <OrgAddress>
+                        <City>Ithaca</City>
+                        <State>NY</State>
+                        <Country>USA</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff5">
+                    <OrgName>ETH Zurich</OrgName>
+                    <OrgAddress>
+                        <City>Zurich</City>
+                        <Country>Switzerland</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff6">
+                    <OrgName>Stanford University</OrgName>
+                    <OrgAddress>
+                        <City>Stanford</City>
+                        <State>CA</State>
+                        <Country>USA</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff7">
+                    <OrgName>Weizmann Institute of Science</OrgName>
+                    <OrgAddress>
+                        <City>Rehovot</City>
+                        <Country>Israel</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff8">
+                    <OrgName>University of Bern</OrgName>
+                    <OrgAddress>
+                        <City>Bern</City>
+                        <Country>Switzerland</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff9">
+                    <OrgName>Indian Institute of Technology</OrgName>
+                    <OrgAddress>
+                        <City>Madras</City>
+                        <Country>India</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff10">
+                    <OrgName>University of Dortmund</OrgName>
+                    <OrgAddress>
+                        <City>Dortmund</City>
+                        <Country>Germany</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff11">
+                    <OrgName>Massachusetts Institute of Technology</OrgName>
+                    <OrgAddress>
+                        <State>MA</State>
+                        <Country>USA</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff12">
+                    <OrgName>University of California</OrgName>
+                    <OrgAddress>
+                        <City>Los Angeles</City>
+                        <State>CA</State>
+                        <Country>USA</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff13">
+                    <OrgName>University of California</OrgName>
+                    <OrgAddress>
+                        <City>Berkeley</City>
+                        <State>CA</State>
+                        <Country>USA</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff14">
+                    <OrgName>Rice University</OrgName>
+                    <OrgAddress>
+                        <City>Houston</City>
+                        <State>TX</State>
+                        <Country>USA</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff15">
+                    <OrgName>Max-Planck Institute of Computer Science</OrgName>
+                    <OrgAddress>
+                        <City>Saarbrücken</City>
+                        <Country>Germany</Country>
+                    </OrgAddress>
+                </Affiliation>
+            </AuthorGroup>
+        </SeriesHeader>
+        <SubSeries>
+            <SubSeriesInfo>
+                <SubSeriesID>1244</SubSeriesID>
+                <SubSeriesPrintISSN>0302-9743</SubSeriesPrintISSN>
+                <SubSeriesElectronicISSN>1611-3349</SubSeriesElectronicISSN>
+                <SubSeriesTitle Language="En">Lecture Notes in Artificial
+                    Intelligence</SubSeriesTitle>
+            </SubSeriesInfo>
+            <SubSeriesHeader>
+                <AuthorGroup>
+                    <Author AffiliationIDS="Aff16">
+                        <AuthorName DisplayOrder="Western">
+                            <GivenName>Randy</GivenName>
+                            <FamilyName>Goebel</FamilyName>
+                        </AuthorName>
+                    </Author>
+                    <Author AffiliationIDS="Aff17">
+                        <AuthorName DisplayOrder="Western">
+                            <GivenName>Jörg</GivenName>
+                            <FamilyName>Siekmann</FamilyName>
+                        </AuthorName>
+                    </Author>
+                    <Author AffiliationIDS="Aff18">
+                        <AuthorName DisplayOrder="Western">
+                            <GivenName>Wolfgang</GivenName>
+                            <FamilyName>Wahlster</FamilyName>
+                        </AuthorName>
+                    </Author>
+                    <Affiliation ID="Aff16">
+                        <OrgName>University of Alberta</OrgName>
+                        <OrgAddress>
+                            <City>Edmonton</City>
+                            <Country>Canada</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                    <Affiliation ID="Aff17">
+                        <OrgName>University of Saarland</OrgName>
+                        <OrgAddress>
+                            <City>Saarbrücken</City>
+                            <Country>Germany</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                    <Affiliation ID="Aff18">
+                        <OrgName>DFKI and University of Saarland</OrgName>
+                        <OrgAddress>
+                            <City>Saarbrücken</City>
+                            <Country>Germany</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                </AuthorGroup>
+            </SubSeriesHeader>
+        </SubSeries>
+        <Book Language="En">
+            <BookInfo BookProductType="Proceedings" ContainsESM="No" Language="En" MediaType="eBook"
+                NumberingDepth="2" NumberingStyle="ContentOnly" OutputMedium="All" TocLevels="0">
+                <BookID>978-3-642-14770-8</BookID>
+                <BookTitle>Advances in Natural Language Processing</BookTitle>
+                <BookSubTitle>7th International Conference on NLP, IceTAL 2010, Reykjavik, Iceland,
+                    August 16-18, 2010</BookSubTitle>
+                <BookVolumeNumber>6233</BookVolumeNumber>
+                <BookSequenceNumber>6233</BookSequenceNumber>
+                <BookDOI>10.1007/978-3-642-14770-8</BookDOI>
+                <BookTitleID>212780</BookTitleID>
+                <BookPrintISBN>978-3-642-14769-2</BookPrintISBN>
+                <BookElectronicISBN>978-3-642-14770-8</BookElectronicISBN>
+                <BookChapterCount>45</BookChapterCount>
+                <BookCopyright>
+                    <CopyrightHolderName>Springer-Verlag Berlin Heidelberg</CopyrightHolderName>
+                    <CopyrightYear>2010</CopyrightYear>
+                </BookCopyright>
+                <BookSubjectGroup>
+                    <BookSubject Code="I" Type="Primary">Computer Science</BookSubject>
+                    <BookSubject Code="I21017" Priority="1" Type="Secondary">Artificial Intelligence
+                        (incl. Robotics)</BookSubject>
+                    <BookSubject Code="I18032" Priority="2" Type="Secondary">Information Storage and
+                        Retrieval</BookSubject>
+                    <BookSubject Code="I18040" Priority="3" Type="Secondary">Information Systems
+                        Applications (incl.Internet)</BookSubject>
+                    <BookSubject Code="I18024" Priority="4" Type="Secondary">Database
+                        Management</BookSubject>
+                    <BookSubject Code="I18030" Priority="5" Type="Secondary">Data Mining and
+                        Knowledge Discovery</BookSubject>
+                    <BookSubject Code="I16048" Priority="6" Type="Secondary">Mathematical Logic and
+                        Formal Languages</BookSubject>
+                    <SubjectCollection Code="SUCO11645">Computer Science</SubjectCollection>
+                </BookSubjectGroup>
+                <BookContext>
+                    <SeriesID>558</SeriesID>
+                    <SubSeriesID>1244</SubSeriesID>
+                </BookContext>
+            </BookInfo>
+            <BookHeader>
+                <EditorGroup>
+                    <Editor AffiliationIDS="Aff19">
+                        <EditorName DisplayOrder="Western">
+                            <GivenName>Hrafn</GivenName>
+                            <FamilyName>Loftsson</FamilyName>
+                        </EditorName>
+                        <Contact>
+                            <Email>hrafn@ru.is</Email>
+                        </Contact>
+                    </Editor>
+                    <Editor AffiliationIDS="Aff20">
+                        <EditorName DisplayOrder="Western">
+                            <GivenName>Eiríkur</GivenName>
+                            <FamilyName>Rögnvaldsson</FamilyName>
+                        </EditorName>
+                        <Contact>
+                            <Email>eirikur@hi.is</Email>
+                        </Contact>
+                    </Editor>
+                    <Editor AffiliationIDS="Aff21">
+                        <EditorName DisplayOrder="Western">
+                            <GivenName>Sigrún</GivenName>
+                            <FamilyName>Helgadóttir</FamilyName>
+                        </EditorName>
+                        <Contact>
+                            <Email>sigruhel@hi.is</Email>
+                        </Contact>
+                    </Editor>
+                    <Affiliation ID="Aff19">
+                        <OrgDivision>School of Computer Science</OrgDivision>
+                        <OrgName>Reykjavik University</OrgName>
+                        <OrgAddress>
+                            <Street>Kringlan 1</Street>
+                            <Postcode>103</Postcode>
+                            <City>Reykjavik</City>
+                            <Country>Iceland</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                    <Affiliation ID="Aff20">
+                        <OrgDivision>Department of Icelandic</OrgDivision>
+                        <OrgName>University of Iceland</OrgName>
+                        <OrgAddress>
+                            <Street>Árnagardur v/Sudurgötu, 101</Street>
+                            <City>Reykjavik</City>
+                            <Country>Iceland</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                    <Affiliation ID="Aff21">
+                        <OrgName>Arni Magnusson Institute for Icelandic Studies</OrgName>
+                        <OrgAddress>
+                            <Street>Neshagi 16</Street>
+                            <Postcode>101</Postcode>
+                            <City>Reykjavik</City>
+                            <Country>Iceland</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                </EditorGroup>
+            </BookHeader>
+            <Part ID="Part2">
+                <PartInfo TocLevels="0">
+                    <PartID>2</PartID>
+                    <PartSequenceNumber>2</PartSequenceNumber>
+                    <PartTitle>Research Papers</PartTitle>
+                    <PartChapterCount>43</PartChapterCount>
+                    <PartContext>
+                        <SeriesID>558</SeriesID>
+                        <BookTitle>Advances in Natural Language Processing</BookTitle>
+                    </PartContext>
+                </PartInfo>
+                <Chapter ID="Chap37" Language="En">
+                    <ChapterInfo ChapterType="OriginalPaper" ContainsESM="No" NumberingDepth="2"
+                        NumberingStyle="ContentOnly" TocLevels="0">
+                        <ChapterID>37</ChapterID>
+                        <ChapterDOI>10.1007/978-3-642-14770-8_37</ChapterDOI>
+                        <ChapterSequenceNumber>37</ChapterSequenceNumber>
+                        <ChapterTitle Language="En">Semi-automatic Endogenous Enrichment of
+                            Collaboratively Constructed Lexical Resources: Piggybacking onto
+                            Wiktionary</ChapterTitle>
+                        <ChapterFirstPage>332</ChapterFirstPage>
+                        <ChapterLastPage>344</ChapterLastPage>
+                        <ChapterCopyright>
+                            <CopyrightHolderName>Springer-Verlag Berlin
+                                Heidelberg</CopyrightHolderName>
+                            <CopyrightYear>2010</CopyrightYear>
+                        </ChapterCopyright>
+                        <ChapterGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="Restricted"/>
+                            <BodyHTMLGrant Grant="Restricted"/>
+                            <BibliographyGrant Grant="Restricted"/>
+                            <ESMGrant Grant="Restricted"/>
+                        </ChapterGrants>
+                        <ChapterContext>
+                            <SeriesID>558</SeriesID>
+                            <PartID>2</PartID>
+                            <BookID>978-3-642-14770-8</BookID>
+                            <BookTitle>Advances in Natural Language Processing</BookTitle>
+                        </ChapterContext>
+                    </ChapterInfo>
+                    <ChapterHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff22">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Franck</GivenName>
+                                    <FamilyName>Sajous</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff23">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Emmanuel</GivenName>
+                                    <FamilyName>Navarro</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff22">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Bruno</GivenName>
+                                    <FamilyName>Gaume</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff24">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Laurent</GivenName>
+                                    <FamilyName>Prévot</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff22">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Yannick</GivenName>
+                                    <FamilyName>Chudy</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Affiliation ID="Aff22">
+                                <OrgName>CLLE-ERSS, CNRS &amp; Université de Toulouse</OrgName>
+                                <OrgAddress>
+                                    <Country> </Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff23">
+                                <OrgName>IRIT, CNRS &amp; Université de Toulouse</OrgName>
+                                <OrgAddress>
+                                    <Country> </Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff24">
+                                <OrgName>LPL, CNRS &amp; Université de Provence</OrgName>
+                                <OrgAddress>
+                                    <Country> </Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                        <Abstract ID="Abs1" Language="En">
+                            <Heading>Abstract</Heading>
+                            <Para>The lack of large-scale, freely available and durable lexical
+                                resources, and the consequences for NLP, is widely acknowledged but
+                                the attempts to cope with usual bottlenecks preventing their
+                                development often result in dead-ends. This article introduces a
+                                language-independent, semi-automatic and endogenous method for
+                                enriching lexical resources, based on collaborative editing and
+                                random walks through existing lexical relationships, and shows how
+                                this approach enables us to overcome recurrent impediments. It
+                                compares the impact of using different data sources and similarity
+                                measures on the task of improving synonymy networks. Finally, it
+                                defines an architecture for applying the presented method to
+                                Wiktionary and explains how it has been implemented.</Para>
+                        </Abstract>
+                    </ChapterHeader>
+                    <NoBody/>
+                </Chapter>
+            </Part>
+        </Book>
+    </Series>
+</Publisher>

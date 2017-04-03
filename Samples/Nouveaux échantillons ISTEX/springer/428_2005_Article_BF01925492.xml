@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+<PublisherInfo>
+<PublisherName>Springer-Verlag</PublisherName>
+<PublisherLocation>Berlin/Heidelberg</PublisherLocation>
+</PublisherInfo>
+<Journal>
+<JournalInfo JournalProductType="ArchiveJournal" NumberingStyle="Unnumbered">
+<JournalID>428</JournalID>
+<JournalPrintISSN>0720-8723</JournalPrintISSN>
+<JournalElectronicISSN>1432-2307</JournalElectronicISSN>
+<JournalTitle>Archiv für pathologische Anatomie und Physiologie und für klinische Medicin</JournalTitle>
+<JournalAbbreviatedTitle>Archiv f. pathol. Anat.</JournalAbbreviatedTitle>
+      <JournalSubjectGroup>
+        <JournalSubject Type="Primary">Medicine &amp; Public Health</JournalSubject>
+        <JournalSubject Type="Secondary">Pathology</JournalSubject>
+      </JournalSubjectGroup>
+</JournalInfo>
+<Volume>
+<VolumeInfo VolumeType="Regular" TocLevels="0">
+<VolumeIDStart>161</VolumeIDStart>
+<VolumeIDEnd>161</VolumeIDEnd>
+<VolumeIssueCount>3</VolumeIssueCount>
+</VolumeInfo>
+<Issue IssueType="Regular">
+<IssueInfo TocLevels="0">
+<IssueIDStart>2</IssueIDStart>
+<IssueIDEnd>2</IssueIDEnd>
+<IssueArticleCount>8</IssueArticleCount>
+<IssueHistory>
+<CoverDate>
+<DateString>6. August</DateString>
+<Year>1900</Year>
+<Month>8</Month>
+</CoverDate>
+</IssueHistory>
+<IssueCopyright>
+<CopyrightHolderName>Druck und Verlag von Georg Reimer</CopyrightHolderName>
+<CopyrightYear>1900</CopyrightYear>
+</IssueCopyright>
+</IssueInfo>
+<Article ID="Art2">
+<ArticleInfo Language="De" ArticleType="OriginalPaper" NumberingStyle="Unnumbered" TocLevels="0" ContainsESM="No">
+<ArticleID>BF01925492</ArticleID>
+<ArticleDOI>10.1007/BF01925492</ArticleDOI>
+<ArticleSequenceNumber>2</ArticleSequenceNumber>
+<ArticleTitle Language="De">Das Myelom in anatomischer und klinischer Beziehung</ArticleTitle>
+<ArticleFirstPage>252</ArticleFirstPage>
+<ArticleLastPage>283</ArticleLastPage>
+<ArticleHistory>
+<RegistrationDate>
+<Year>2005</Year>
+<Month>6</Month>
+<Day>27</Day>
+</RegistrationDate>
+</ArticleHistory>
+<ArticleCopyright>
+<CopyrightHolderName>Druck und Verlag von Georg Reimer</CopyrightHolderName>
+<CopyrightYear>1900</CopyrightYear>
+</ArticleCopyright><ArticleGrants Type="Regular"><MetadataGrant Grant="OpenAccess"/><AbstractGrant Grant="OpenAccess"/><BodyPDFGrant Grant="Restricted"/><BodyHTMLGrant Grant="Restricted"/><BibliographyGrant Grant="Restricted"/><ESMGrant Grant="Restricted"/></ArticleGrants>
+<ArticleContext>
+<JournalID>428</JournalID>
+<VolumeIDStart>161</VolumeIDStart>
+<VolumeIDEnd>161</VolumeIDEnd>
+<IssueIDStart>2</IssueIDStart>
+<IssueIDEnd>2</IssueIDEnd>
+</ArticleContext>
+</ArticleInfo>
+<ArticleHeader>
+<AuthorGroup>
+<Author AffiliationIDS="Aff1">
+<AuthorName DisplayOrder="Western">
+<Prefix>Dr. med.</Prefix>
+<GivenName>Karl</GivenName>
+<FamilyName>Winkler</FamilyName>
+</AuthorName>
+<Role>Assistenten am Kgl. Pathologischen Institut</Role>
+</Author>
+<Affiliation ID="Aff1">
+<OrgName>Kgl. Pathologischen Institut zu Breslau</OrgName>
+<OrgAddress>
+<City>Breslau</City>
+<Country>Polen</Country>
+</OrgAddress>
+</Affiliation>
+</AuthorGroup>
+</ArticleHeader>
+<NoBody></NoBody>
+</Article>
+</Issue>
+</Volume>
+</Journal>
+</Publisher>

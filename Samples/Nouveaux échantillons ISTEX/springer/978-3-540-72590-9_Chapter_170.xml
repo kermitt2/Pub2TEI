@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+  <PublisherInfo>
+    <PublisherName>Springer Berlin Heidelberg</PublisherName>
+    <PublisherLocation>Berlin, Heidelberg</PublisherLocation>
+  </PublisherInfo>
+  <Series>
+    <SeriesInfo SeriesType="Series" TocLevels="0">
+      <SeriesID>558</SeriesID>
+      <SeriesPrintISSN>0302-9743</SeriesPrintISSN>
+      <SeriesElectronicISSN>1611-3349</SeriesElectronicISSN>
+      <SeriesTitle Language="En">Lecture Notes in Computer Science</SeriesTitle>
+      <SeriesAbbreviatedTitle>LNCS</SeriesAbbreviatedTitle>
+    </SeriesInfo>
+    <SeriesHeader>
+      <EditorGroup>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>David</GivenName>
+            <FamilyName>Hutchison</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Takeo</GivenName>
+            <FamilyName>Kanade</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Josef</GivenName>
+            <FamilyName>Kittler</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Jon</GivenName>
+            <GivenName>M.</GivenName>
+            <FamilyName>Kleinberg</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Friedemann</GivenName>
+            <FamilyName>Mattern</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>John</GivenName>
+            <GivenName>C.</GivenName>
+            <FamilyName>Mitchell</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Moni</GivenName>
+            <FamilyName>Naor</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Oscar</GivenName>
+            <FamilyName>Nierstrasz</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>C.</GivenName>
+            <GivenName>Pandu</GivenName>
+            <FamilyName>Rangan</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Bernhard</GivenName>
+            <FamilyName>Steffen</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Madhu</GivenName>
+            <FamilyName>Sudan</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Demetri</GivenName>
+            <FamilyName>Terzopoulos</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Doug</GivenName>
+            <FamilyName>Tygar</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Moshe</GivenName>
+            <GivenName>Y.</GivenName>
+            <FamilyName>Vardi</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Gerhard</GivenName>
+            <FamilyName>Weikum</FamilyName>
+          </EditorName>
+        </Editor>
+      </EditorGroup>
+    </SeriesHeader>
+    <Book Language="En">
+      <BookInfo BookProductType="Proceedings" ContainsESM="No" Language="En" MediaType="eBook" NumberingStyle="Unnumbered" OutputMedium="All" TocLevels="0">
+        <BookID>978-3-540-72590-9</BookID>
+        <BookTitle>Computational Science – ICCS 2007</BookTitle>
+        <BookSubTitle>7th International Conference, Beijing, China, May 27 - 30, 2007, Proceedings, Part IV</BookSubTitle>
+        <BookVolumeNumber>4490</BookVolumeNumber>
+        <BookSequenceNumber>4490</BookSequenceNumber>
+        <BookDOI>10.1007/978-3-540-72590-9</BookDOI>
+        <BookTitleID>149867</BookTitleID>
+        <BookPrintISBN>978-3-540-72589-3</BookPrintISBN>
+        <BookElectronicISBN>978-3-540-72590-9</BookElectronicISBN>
+        <BookChapterCount>180</BookChapterCount>
+        <BookCopyright>
+          <CopyrightHolderName>Springer-Verlag Berlin Heidelberg</CopyrightHolderName>
+          <CopyrightYear>2007</CopyrightYear>
+        </BookCopyright>
+        <BookSubjectGroup>
+          <BookSubject Code="I" Type="Primary">Computer Science</BookSubject>
+          <BookSubject Code="I16005" Priority="1" Type="Secondary">Theory of Computation</BookSubject>
+          <BookSubject Code="I14002" Priority="2" Type="Secondary">Software Engineering/Programming and Operating Systems</BookSubject>
+          <BookSubject Code="I1701X" Priority="3" Type="Secondary">Numeric Computing</BookSubject>
+          <BookSubject Code="I18008" Priority="4" Type="Secondary">Information Systems and Communication Service</BookSubject>
+          <BookSubject Code="I21025" Priority="5" Type="Secondary">Simulation and Modeling</BookSubject>
+          <BookSubject Code="I22005" Priority="6" Type="Secondary">Computer Imaging, Vision, Pattern Recognition and Graphics</BookSubject>
+          <SubjectCollection Code="SUCO11645">Computer Science</SubjectCollection>
+        </BookSubjectGroup>
+      </BookInfo>
+      <BookHeader>
+        <EditorGroup>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Yong</GivenName>
+              <FamilyName>Shi</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>yshi@mail.unomaha.edu</Email>
+            </Contact>
+          </Editor>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Geert</GivenName>
+              <GivenName>Dick</GivenName>
+              <Particle>van</Particle>
+              <FamilyName>Albada</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>dick@science.uva.nl</Email>
+            </Contact>
+          </Editor>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Jack</GivenName>
+              <FamilyName>Dongarra</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>dongarra@cs.utk.edu</Email>
+            </Contact>
+          </Editor>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Peter</GivenName>
+              <GivenName>M.</GivenName>
+              <GivenName>A.</GivenName>
+              <FamilyName>Sloot</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>sloot@science.uva.nl</Email>
+            </Contact>
+          </Editor>
+        </EditorGroup>
+      </BookHeader>
+      <Chapter ID="Chap170" Language="En">
+        <ChapterInfo ChapterType="OriginalPaper" ContainsESM="No" NumberingStyle="Unnumbered" TocLevels="0">
+          <ChapterID>170</ChapterID>
+          <ChapterDOI>10.1007/978-3-540-72590-9_170</ChapterDOI>
+          <ChapterSequenceNumber>170</ChapterSequenceNumber>
+          <ChapterTitle Language="En">A WSN Coalition Formation Algorithm Based on Ant Colony with Dual-Negative Feedback</ChapterTitle>
+          <ChapterFirstPage>1139</ChapterFirstPage>
+          <ChapterLastPage>1146</ChapterLastPage>
+          <ChapterCopyright>
+            <CopyrightHolderName>Springer Berlin Heidelberg</CopyrightHolderName>
+            <CopyrightYear>2007</CopyrightYear>
+          </ChapterCopyright>
+          <ChapterGrants Type="Regular">
+            <MetadataGrant Grant="OpenAccess"/>
+            <AbstractGrant Grant="OpenAccess"/>
+            <BodyPDFGrant Grant="Restricted"/>
+            <BodyHTMLGrant Grant="Restricted"/>
+            <BibliographyGrant Grant="Restricted"/>
+            <ESMGrant Grant="Restricted"/>
+          </ChapterGrants>
+        </ChapterInfo>
+        <ChapterHeader>
+          <AuthorGroup>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Na</GivenName>
+                <FamilyName>Xia</FamilyName>
+              </AuthorName>
+            </Author>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Jianguo</GivenName>
+                <FamilyName>Jiang</FamilyName>
+              </AuthorName>
+              <Contact>
+                <Email>jgjiang@hfut.edu.cn</Email>
+              </Contact>
+            </Author>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Meibin</GivenName>
+                <FamilyName>Qi</FamilyName>
+              </AuthorName>
+            </Author>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Chunhua</GivenName>
+                <FamilyName>Yu</FamilyName>
+              </AuthorName>
+            </Author>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Yue</GivenName>
+                <FamilyName>Huang</FamilyName>
+              </AuthorName>
+            </Author>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Qi</GivenName>
+                <FamilyName>Zhang</FamilyName>
+              </AuthorName>
+            </Author>
+            <Affiliation ID="Aff1">
+              <OrgName>School of Computer and Information, Hefei University of Technology, Hefei, 230009</OrgName>
+              <OrgAddress>
+                <Country>P.R. China</Country>
+              </OrgAddress>
+            </Affiliation>
+          </AuthorGroup>
+          <Abstract ID="Abs1" Language="En">
+            <Heading>Abstract</Heading>
+            <Para>In large-scale, complicated Wireless Sensor Networks, the cooperation among sensor nodes is a key topic, and has been receiving more and more attention. The dynamic coalition mechanism in Multi-Agent System is an important method for this topic, and then an energy-efficient coalition formation algorithm is needed since the energy resource of WSN is restricted. This paper proposes a WSN coalition formation algorithm based on Ant Colony System with dual-negative feedback characteristic. Coalition sponsor inclines to wake those sensor nodes which seldom or never joined coalitions before to form coalition, which can balance the energy consumption among sensor nodes, so as to extend the network lifetime for more tasks. The results of simulation experiment show the validity of this algorithm.</Para>
+          </Abstract>
+          <KeywordGroup Language="En">
+            <Heading>Keywords</Heading>
+            <Keyword>Wireless Sensor Networks (WSN)</Keyword>
+            <Keyword>Cooperation</Keyword>
+            <Keyword>Coalition</Keyword>
+            <Keyword>Ant Colony System</Keyword>
+          </KeywordGroup>
+        </ChapterHeader>
+<NoBody></NoBody>
+</Chapter>
+    </Book>
+  </Series>
+</Publisher>

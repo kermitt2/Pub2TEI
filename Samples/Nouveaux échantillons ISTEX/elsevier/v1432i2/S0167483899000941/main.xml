@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "art452.dtd" [
+<!ENTITY fx1 SYSTEM "fx1" NDATA IMAGE><!ENTITY fx2 SYSTEM "fx2" NDATA IMAGE><!ENTITY gr1 SYSTEM "gr1" NDATA IMAGE><!ENTITY gr2 SYSTEM "gr2" NDATA IMAGE><!ENTITY gr3 SYSTEM "gr3" NDATA IMAGE><!ENTITY gr4 SYSTEM "gr4" NDATA IMAGE><!ENTITY gr5 SYSTEM "gr5" NDATA IMAGE><!ENTITY gr6 SYSTEM "gr6" NDATA IMAGE><!ENTITY gr7 SYSTEM "gr7" NDATA IMAGE><!ENTITY gr8 SYSTEM "gr8" NDATA IMAGE><!ENTITY gr9 SYSTEM "gr9" NDATA IMAGE>]>
+<converted-article version="4.5.2" docsubtype="fla" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+<item-info>
+<jid>BBAPRO</jid>
+<aid>35922</aid>
+<ce:pii>S0167-4838(99)00094-1</ce:pii><ce:doi>10.1016/S0167-4838(99)00094-1</ce:doi>
+<ce:copyright type="full-transfer" year="1999">Elsevier Science B.V.</ce:copyright></item-info>
+<ce:floats><ce:figure id="FIG1">
+<ce:label>Fig. 1</ce:label>
+<ce:caption>
+<ce:simple-para><ce:sup>1</ce:sup>H-<ce:sup>13</ce:sup>C HMQC spectra of 0.7 mM COHbA acetylated using a 10-fold molar excess of [1&#x2032;-<ce:sup>13</ce:sup>C]ASA at 37&#x00B0;C for 1, 3, 6 and 12 h, as indicated. The COHbA adducts were dialyzed in 20 mM PBK (pH 7). 10% (v/v) of D<ce:inf>2</ce:inf>O was added to the NMR samples for field/frequency locking. The spectra were acquired with 2048 <ce:italic>t</ce:italic><ce:inf>2</ce:inf> data points and 128 complex <ce:italic>t</ce:italic><ce:inf>1</ce:inf> data points, with 16 scans per <ce:italic>t</ce:italic><ce:inf>1</ce:inf> increment. A &#x223C;90&#x00B0; shifted sine squared function was applied in both dimensions, and the data were zero filled to 4096&#x00D7;2048 points, prior to Fourier transformation. Peaks are numbered arbitrarily, approximately following the order of the <ce:sup>13</ce:sup>C shifts. &#x2018;Ace&#x2019; denotes the resonance of [1-<ce:sup>13</ce:sup>C]acetate which is folded into the region of observation.</ce:simple-para></ce:caption>
+<ce:link locator="gr1" /></ce:figure><ce:figure id="FIG2">
+<ce:label>Fig. 2</ce:label>
+<ce:caption>
+<ce:simple-para>Plot of resonance intensity of the spectra shown in <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref> as a function of the time of acetylation. The peak intensities (in arbitrary units) are denoted by: peak 1: &#x25A0;, peak 2: &#x2666;, peak 3: &#x25B4;, peak 4: &#x25CB;, peak 5: &#x00D7;, peak 6: &#x2022;, peak 7: &#x25CA;, peak 8: &#x25B5;, peak 9: &#x25A1;.</ce:simple-para></ce:caption>
+<ce:link locator="gr2" /></ce:figure><ce:figure id="FIG3">
+<ce:label>Fig. 3</ce:label>
+<ce:caption>
+<ce:simple-para>Effect of IHP on hemoglobin acetylation. <ce:sup>1</ce:sup>H-<ce:sup>13</ce:sup>C HMQC spectra of 0.7 mM COHbA acetylated by [1&#x2032;-<ce:sup>13</ce:sup>C]ASA in 20 mM PBK (pH 7). The spectra were acquired at 37&#x00B0;C using acquisition and processing parameters identical to those of <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>. Acetylation of COHbA (2 mM) by a 10 fold molar excess [1&#x2032;-<ce:sup>13</ce:sup>C]ASA was carried out in the presence of 0, 2.5 or 5 fold excess of IHP, as indicated. The spectral resonances are labeled arbitrarily, following the same convention used in <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>.</ce:simple-para></ce:caption>
+<ce:link locator="gr3" /></ce:figure><ce:figure id="FIG4">
+<ce:label>Fig. 4</ce:label>
+<ce:caption>
+<ce:simple-para><ce:sup>1</ce:sup>H-<ce:sup>13</ce:sup>C HMQC spectra of 2 mM COHbA acetylated by 10 fold molar excess of [1&#x2032;-<ce:sup>13</ce:sup>C]ASA at 37&#x00B0;C for 12 h (A), and acetylated subsequent to reaction with equimolar BDSF at 37&#x00B0;C for 2 h (B), respectively. The spectra were acquired at 25&#x00B0;C, with 64 scans per <ce:italic>t</ce:italic><ce:inf>1</ce:inf> increment. All other acquisition and processing parameters were the same as those described in <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>.</ce:simple-para></ce:caption>
+<ce:link locator="gr4" /></ce:figure><ce:figure id="FIG5">
+<ce:label>Fig. 5</ce:label>
+<ce:caption>
+<ce:simple-para><ce:sup>1</ce:sup>H-<ce:sup>13</ce:sup>C HSQC spectra of [1&#x2032;-<ce:sup>13</ce:sup>C]ASA-acetylated COHbA (1.29 mM). For the spectrum on the right, the sample was also spin-labeled at &#x03B2;Cys93, as described in <ce:cross-ref refid="SEC1">Section 2</ce:cross-ref>. The spectra were acquired at 25&#x00B0;C with 64 complex <ce:italic>t</ce:italic><ce:inf>1</ce:inf> data points and 128 scans per <ce:italic>t</ce:italic><ce:inf>1</ce:inf> increment. All other acquisition parameters were the same as those described in <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>.</ce:simple-para></ce:caption>
+<ce:link locator="gr5" /></ce:figure><ce:figure id="FIG6">
+<ce:label>Fig. 6</ce:label>
+<ce:caption>
+<ce:simple-para><ce:sup>1</ce:sup>H-<ce:sup>13</ce:sup>C HMQC spectra of 0.23 mM &#x03B2;V1MH2&#x0394;K144R hemoglobin treated with [1&#x2032;-<ce:sup>13</ce:sup>C]ASA for 12 h. The spectra were acquired at 25&#x00B0;C, with 64 complex <ce:italic>t</ce:italic><ce:inf>1</ce:inf> data points and 1048 scans per <ce:italic>t</ce:italic><ce:inf>1</ce:inf> increment. All other acquisition and processing parameters were the same as those described in <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>. Those resonances of the COHbA adducts (A) tentatively assigned are numbered using the same convention as in <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>, whereas those of the mutant (B) are labeled with suffix &#x2018;m&#x2019;. A low contour level was used in the plot to show the presence of the minor unassigned peaks.</ce:simple-para></ce:caption>
+<ce:link locator="gr6" /></ce:figure><ce:figure id="FIG7">
+<ce:label>Fig. 7</ce:label>
+<ce:caption>
+<ce:simple-para>Schematic representation of pseudo-contact induced paramagnetic shifts of COHbA. The axial component of the g-tensor is assumed to lie along he Fe-C(O) bond, and the rhombic component parallel to the plane of the proximal histidine. Since the acetylated positions are, in general, far from the heme, and the details of the acetyl lysine conformation are unknown, we use the lysine N&#x03F5; position as an approximation for the positions of both the acetyl carbonyl and methyl nuclei: (<ce:italic>r</ce:italic><ce:inf>C</ce:inf>,<ce:italic>&#x03B8;</ce:italic><ce:inf>C</ce:inf>,<ce:italic>&#x03C6;</ce:italic><ce:inf>C</ce:inf>)&#x223C;(<ce:italic>r</ce:italic><ce:inf>H</ce:inf>,<ce:italic>&#x03B8;</ce:italic><ce:inf>H</ce:inf>,<ce:italic>&#x03C6;</ce:italic><ce:inf>H</ce:inf>)&#x223C;(<ce:italic>r</ce:italic><ce:inf>N&#x03F5;</ce:inf>,<ce:italic>&#x03B8;</ce:italic><ce:inf>N&#x03F5;</ce:inf>,<ce:italic>&#x03C6;</ce:italic><ce:inf>N&#x03F5;</ce:inf>).</ce:simple-para></ce:caption>
+<ce:link locator="gr7" /></ce:figure><ce:figure id="FIG8">
+<ce:label>Fig. 8</ce:label>
+<ce:caption>
+<ce:simple-para><ce:sup>1</ce:sup>H-<ce:sup>13</ce:sup>C HMQC spectra of 1.2 mM [1&#x2032;-<ce:sup>13</ce:sup>C-acetyl]COHbA and CNHbA in 20 mM PBK (pH 7). Acetylation of hemoglobin was achieved by reaction with 10-fold molar excess [1&#x2032;-<ce:sup>13</ce:sup>C]ASA at 37&#x00B0;C for 2 h. The spectra were acquired and processed similarly to those of <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>. The two spectra were overlaid to highlight the changes in chemical shifts of the adducts. The resonances are labeled with the same convention used in <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>, with suffix &#x2018;a&#x2019; and &#x2018;b&#x2019; to identify peaks in COHbA and CNHbA adducts, respectively.</ce:simple-para></ce:caption>
+<ce:link locator="gr8" /></ce:figure><ce:figure id="FIG9">
+<ce:label>Fig. 9</ce:label>
+<ce:caption>
+<ce:simple-para>Connolly surface accessibility for the amino groups of COHbA. Calculations used a probe of a 3 &#x00C5; radius, and were based on the COHbA crystal structure determined by Silva et al. (<ce:cross-ref refid="BIB28">[28]</ce:cross-ref> PDB # 1BBB). The results for the two &#x03B1; (panel A) and &#x03B2; chains (panel B) are given as chain A (shaded) and C (cross-hatched), and B (shaded) and D (cross-hatched), respectively.</ce:simple-para></ce:caption>
+<ce:link locator="gr9" /></ce:figure><ce:table id="TBL1" colsep="0" rowsep="0" frame="topbot"><ce:label>Table 1</ce:label><ce:caption>
+<ce:simple-para>Chemical shift of [1&#x2032;-<ce:sup>13</ce:sup>C]acetyl COHbA and [1&#x2032;-<ce:sup>13</ce:sup>C]acetyl CNHbA<ce:cross-ref refid="TBLFN1A"><ce:sup>a</ce:sup></ce:cross-ref></ce:simple-para></ce:caption><tgroup cols="7"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<colspec colname="col6" colsep="0" />
+<colspec colname="col7" colsep="0" />
+<tbody><row><entry>Peak #</entry>
+<entry namest="col2" nameend="col3" rowsep="1">Acetylated COHbA</entry>
+<entry colname="col4" namest="col4" nameend="col6" rowsep="1">Acetylated CNMetA</entry>
+<entry colname="col7">Normalized average</entry>
+</row>
+<row rowsep="1"><entry></entry>
+<entry><ce:italic>&#x03B4;</ce:italic>(<ce:sup>1</ce:sup>H) (ppm)</entry>
+<entry><ce:italic>&#x03B4;</ce:italic>(<ce:sup>13</ce:sup>C) (ppm)</entry>
+<entry><ce:italic>&#x03B4;</ce:italic>(<ce:sup>1</ce:sup>H) (ppm)</entry>
+<entry><ce:italic>&#x03B4;</ce:italic>(<ce:sup>13</ce:sup>C) (ppm)</entry>
+<entry>&#x0394;<ce:sup>13</ce:sup>C/&#x0394;<ce:sup>1</ce:sup>H</entry>
+<entry align="char" char="."></entry>
+</row>
+<row><entry>1</entry>
+<entry>1.94</entry>
+<entry>174.92</entry>
+<entry>2.02</entry>
+<entry>175.00</entry>
+<entry align="char" char=".">0.08/0.08</entry>
+<entry align="char" char=".">0.49</entry>
+</row>
+<row><entry>2</entry>
+<entry>1.96</entry>
+<entry>174.7</entry>
+<entry>1.99</entry>
+<entry>174.73</entry>
+<entry align="char" char=".">0.03/0.03</entry>
+<entry align="char" char=".">0.18</entry>
+</row>
+<row><entry>3</entry>
+<entry>1.93</entry>
+<entry>174.63</entry>
+<entry>1.83</entry>
+<entry>174.53</entry>
+<entry align="char" char=".">&#x2212;0.10/&#x2212;0.10</entry>
+<entry align="char" char=".">&#x2212;0.61</entry>
+</row>
+<row><entry>4</entry>
+<entry>1.95</entry>
+<entry>174.56</entry>
+<entry>1.93</entry>
+<entry>174.55</entry>
+<entry align="char" char=".">&#x2212;0.01/&#x2212;0.02</entry>
+<entry align="char" char=".">0.09</entry>
+</row>
+<row><entry>5</entry>
+<entry>1.93</entry>
+<entry>174.47</entry>
+<entry>2.07</entry>
+<entry>174.63</entry>
+<entry align="char" char=".">0.16/0.14</entry>
+<entry align="char" char=".">0.91</entry>
+</row>
+<row><entry>6</entry>
+<entry>1.92</entry>
+<entry>174.45</entry>
+<entry>2.08</entry>
+<entry>174.63</entry>
+<entry align="char" char=".">0.17/0.16</entry>
+<entry align="char" char=".">1.00</entry>
+</row>
+<row><entry>7</entry>
+<entry>1.88</entry>
+<entry>174.52</entry>
+<entry>2.03</entry>
+<entry>174.68</entry>
+<entry align="char" char=".">0.16/0.16</entry>
+<entry align="char" char=".">0.97</entry>
+</row>
+<row><entry>8</entry>
+<entry>1.87</entry>
+<entry>174.35</entry>
+<entry>2.00</entry>
+<entry>174.47</entry>
+<entry align="char" char=".">0.12/0.13</entry>
+<entry align="char" char=".">0.76</entry>
+</row>
+<row><entry>9</entry>
+<entry>1.91</entry>
+<entry>174.35</entry>
+<entry>2.07</entry>
+<entry>174.54</entry>
+<entry align="char" char=".">0.19/0.16</entry>
+<entry align="char" char=".">1.06<ce:cross-ref refid="TBLFN1B"><ce:sup>b</ce:sup></ce:cross-ref></entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN1A">
+<ce:label>a</ce:label>
+<ce:note-para>Chemical shifts were measured in the <ce:sup>1</ce:sup>H-<ce:sup>13</ce:sup>C HMQC spectra of COHbA and CNHbA acetylated using a 10-fold molar excess of [1&#x2032;-<ce:sup>13</ce:sup>C]ASA at 37&#x00B0;C for 12 h, with reference to 0.0 and &#x2212;2.0 ppm for TSP in the <ce:sup>1</ce:sup>H and <ce:sup>13</ce:sup>C dimensions, respectively. The normalized average shift values are calculated as [(&#x0394;<ce:sup>13</ce:sup>C<ce:inf>i</ce:inf>+&#x0394;<ce:sup>1</ce:sup>H<ce:inf>i</ce:inf>)/(&#x0394;<ce:sup>13</ce:sup>C<ce:inf>6</ce:inf>+&#x0394;<ce:sup>1</ce:sup>H<ce:inf>6</ce:inf>), where subscripts i and 6 denote resonances i and 6, respectively.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN1B">
+<ce:label>b</ce:label>
+<ce:note-para>Spectral analysis indicates that the paramagnetic shifts of peaks 6 and 9 are identical. The difference in the values shown arises from round-off error.</ce:note-para></ce:table-footnote></ce:table><ce:table id="TBL2" colsep="0" rowsep="0" frame="topbot"><ce:label>Table 2</ce:label><ce:caption>
+<ce:simple-para>Theoretical dipolar shifts for modified lysine residues</ce:simple-para></ce:caption><tgroup cols="7"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<colspec colname="col6" colsep="0" />
+<colspec colname="col7" colsep="0" />
+<tbody><row rowsep="1"><entry>Residue<ce:cross-ref refid="TBLFN2A"><ce:sup>a</ce:sup></ce:cross-ref></entry>
+<entry><ce:italic>r</ce:italic>(Fe-N)<ce:cross-ref refid="TBLFN2B"><ce:sup>b</ce:sup></ce:cross-ref></entry>
+<entry><ce:italic>&#x03B8;</ce:italic><ce:cross-ref refid="TBLFN2B"><ce:sup>b</ce:sup></ce:cross-ref></entry>
+<entry><ce:italic>&#x03C6;</ce:italic><ce:cross-ref refid="TBLFN2B"><ce:sup>b</ce:sup></ce:cross-ref></entry>
+<entry align="char" char="."><ce:italic>&#x03B4;</ce:italic>/<ce:italic>&#x03B4;</ce:italic>K144<ce:cross-ref refid="TBLFN2C"><ce:sup>c</ce:sup></ce:cross-ref></entry>
+<entry><ce:italic>&#x03B4;</ce:italic>av/<ce:italic>&#x03B4;</ce:italic>K82av<ce:cross-ref refid="TBLFN2D"><ce:sup>d</ce:sup></ce:cross-ref></entry>
+<entry>Exp.<ce:cross-ref refid="TBLFN2E"><ce:sup>e</ce:sup></ce:cross-ref></entry>
+</row>
+<row><entry>K-82B</entry>
+<entry align="char" char=".">17.36</entry>
+<entry align="char" char=".">140.14</entry>
+<entry align="char" char=".">85.93</entry>
+<entry align="char" char=".">0.54</entry>
+<entry align="char" char=".">1.0</entry>
+<entry align="char" char=".">1.0</entry>
+</row>
+<row><entry>K-82D</entry>
+<entry align="char" char=".">18.64</entry>
+<entry align="char" char=".">120.47</entry>
+<entry align="char" char=".">66.29</entry>
+<entry align="char" char=".">0.07</entry>
+<entry align="char" char="."></entry>
+<entry align="char" char="."></entry>
+</row>
+<row><entry>K-59B</entry>
+<entry align="char" char=".">15.98</entry>
+<entry align="char" char=".">50.31</entry>
+<entry align="char" char=".">96.02</entry>
+<entry align="char" char=".">0.25</entry>
+<entry align="char" char=".">0.46</entry>
+<entry align="char" char=".">0.49</entry>
+</row>
+<row><entry>K-59D</entry>
+<entry align="char" char=".">16.15</entry>
+<entry align="char" char=".">56.75</entry>
+<entry align="char" char=".">102.07</entry>
+<entry align="char" char=".">0.03</entry>
+<entry align="char" char="."></entry>
+<entry align="char" char="."></entry>
+</row>
+<row><entry>K-90A</entry>
+<entry align="char" char=".">13.28</entry>
+<entry align="char" char=".">123.40</entry>
+<entry align="char" char=".">93.28</entry>
+<entry align="char" char=".">0.00</entry>
+<entry align="char" char=".">&#x2212;0.48</entry>
+<entry align="char" char=".">&#x2212;0.59</entry>
+</row>
+<row><entry>K-90C</entry>
+<entry align="char" char=".">9.76</entry>
+<entry align="char" char=".">118.52</entry>
+<entry align="char" char=".">100.73</entry>
+<entry align="char" char=".">&#x2212;0.29</entry>
+<entry align="char" char="."></entry>
+<entry align="char" char="."></entry>
+</row>
+<row><entry>K-99A</entry>
+<entry align="char" char=".">17.57</entry>
+<entry align="char" char=".">97.13</entry>
+<entry align="char" char=".">137.87</entry>
+<entry align="char" char=".">&#x2212;1.30</entry>
+<entry align="char" char=".">&#x2212;4.39</entry>
+<entry align="char" char="."></entry>
+</row>
+<row><entry>K-99C</entry>
+<entry align="char" char=".">17.46</entry>
+<entry align="char" char=".">100.70</entry>
+<entry align="char" char=".">142.40</entry>
+<entry align="char" char=".">&#x2212;1.38</entry>
+<entry align="char" char="."></entry>
+<entry align="char" char="."></entry>
+</row>
+<row><entry>K-144B</entry>
+<entry align="char" char=".">15.72</entry>
+<entry align="char" char=".">169.75</entry>
+<entry align="char" char=".">1.73</entry>
+<entry align="char" char=".">0.97</entry>
+<entry align="char" char=".">3.28</entry>
+<entry align="char" char=".">0.76</entry>
+</row>
+<row><entry>K-144D</entry>
+<entry align="char" char=".">15.95</entry>
+<entry align="char" char=".">173.7</entry>
+<entry align="char" char=".">122.50</entry>
+<entry align="char" char=".">1.03</entry>
+<entry align="char" char="."></entry>
+<entry align="char" char="."></entry>
+</row>
+<row><entry>V-1B</entry>
+<entry align="char" char=".">20.40</entry>
+<entry align="char" char=".">117.45</entry>
+<entry align="char" char=".">72.76</entry>
+<entry align="char" char=".">0.10</entry>
+<entry align="char" char=".">0.08</entry>
+<entry align="char" char="."></entry>
+</row>
+<row><entry>V-1D</entry>
+<entry align="char" char=".">19.67</entry>
+<entry align="char" char=".">108.52</entry>
+<entry align="char" char=".">74.95</entry>
+<entry align="char" char=".">&#x2212;0.05</entry>
+<entry align="char" char="."></entry>
+<entry align="char" char="."></entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN2A">
+<ce:label>a</ce:label>
+<ce:note-para>The residues included in the table are those reported to be acetylated by aspirin or other analogs such as bis-(3,5-dibromosalicyl) fumarate. The four hemoglobin chains are labeled A, B, C, and D, as defined by Silva et al. (PDB # 1BBB <ce:cross-ref refid="BIB28">[28]</ce:cross-ref>). Chains A and C are &#x03B1; chains and chains B and D are &#x03B2; chains.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN2B">
+<ce:label>b</ce:label>
+<ce:note-para>Values for <ce:italic>r</ce:italic>, <ce:italic>&#x03B8;</ce:italic>, and <ce:italic>&#x03C6;</ce:italic> correspond to the heme in the same chain as the lysine, which typically, although not always, makes the dominant shift contribution. The value for <ce:italic>&#x03C6;</ce:italic>, calculated using standard analytical geometry expressions, corresponds to either &#x007C;<ce:italic>&#x03C6;</ce:italic>&#x007C; or to &#x007C;180&#x00B0;&#x2212;<ce:italic>&#x03C6;</ce:italic>&#x007C;, for which the cos2<ce:italic>&#x03C6;</ce:italic> calculations are identical.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN2C">
+<ce:label>c</ce:label>
+<ce:note-para>Shift values are normalized relative to the mean value calculated for acetyl &#x03B2;Lys144, because the theoretical values calculated for the B and D chains are in close agreement.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN2D">
+<ce:label>d</ce:label>
+<ce:note-para>Shift values from previous column have been normalized relative to the mean shift for peak 6, assigned to acetyl &#x03B2;Lys82.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN2E">
+<ce:label>e</ce:label>
+<ce:note-para>Experimental values are for peaks 6 (acetyl &#x03B2;Lys82), 1 (acetyl &#x03B2;Lys59), 3 (acetyl &#x03B1;Lys90), and 8 (acetyl &#x03B2;Lys144), and are normalized relative to the value for peak 6.</ce:note-para></ce:table-footnote></ce:table></ce:floats>
+<head>
+<ce:title>NMR study of the sites of human hemoglobin acetylated by aspirin</ce:title>
+<ce:author-group>
+<ce:author>
+<ce:given-name>Arron S.L</ce:given-name>
+<ce:surname>Xu</ce:surname>
+<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Jeffrey M</ce:given-name>
+<ce:surname>Macdonald</ce:surname>
+<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Richard J</ce:given-name>
+<ce:surname>Labotka</ce:surname>
+<ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Robert E</ce:given-name>
+<ce:surname>London</ce:surname>
+<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref><ce:cross-ref refid="CORR1">*</ce:cross-ref><ce:e-address>london@niehs.nih.gov</ce:e-address></ce:author>
+<ce:affiliation id="AFF1"><ce:label>a</ce:label><ce:textfn>Laboratory of Structural Biology, National Institute of Environmental Health Sciences, P.O. Box 12233, Research Triangle Park, NC 27709-2233, USA</ce:textfn></ce:affiliation>
+<ce:affiliation id="AFF2"><ce:label>b</ce:label><ce:textfn>Department of Pediatrics, University of Illinois at Chicago, Chicago, IL 60612-7324, USA</ce:textfn></ce:affiliation><ce:correspondence id="CORR1">
+<ce:label>*</ce:label><ce:text>Corresponding author. Fax: +1 (919) 5415707</ce:text></ce:correspondence></ce:author-group>
+<ce:date-received day="7" month="12" year="1998" />
+<ce:date-revised day="12" month="4" year="1999" />
+<ce:date-accepted day="13" month="4" year="1999" />
+<ce:abstract>
+<ce:section-title>Abstract</ce:section-title><ce:abstract-sec>
+<ce:simple-para>Acetylation of hemoglobin by aspirin and other acetylating agents has been used to generate hemoglobin analogs with altered structural and functional properties, and may prove useful in the treatment of sickle cell disease. We have studied the acetylation of human hemoglobin using [1&#x2032;-<ce:sup>13</ce:sup>C]acetylsalicylic acid in combination with two-dimensional HMQC and HSQC NMR analysis. The spectra of the acetylated hemoglobin exhibit a number of well resolved resonances. Several spectral assignment strategies were used: blocking the 2,3-DPG binding site non-covalently with inositol hexaphosphate or covalently with a cross-linking agent, selective carbamylation of the N-terminal valine amino groups with cyanate, spin-labeling the hemoglobin at &#x03B2;Cys93, and analysis of a hemoglobin triple mutant: &#x03B2;V1MH2&#x0394;K144R, in which &#x03B2;Lys144 is replaced by an arginine residue. These studies support the conclusion that the most rapidly acetylated residue is &#x03B2;Lys82 rather than &#x03B2;Lys144, as previously reported. Further, it is apparent that acetyl &#x03B2;Lys82 can give rise to several resonances due to additional acetylation of &#x03B2;Lys82&#x2032; or other nearby residues. An additional assignment strategy involving comparison of the chemical shifts of the acetyl resonances observed for adducts of diamagnetic carbonmonoxyhemoglobin with the shifts observed in paramagnetic cyanomethemoglobin provides information about the location of the acetyl derivatives relative to the heme irons. This approach is limited, however, by the lack of well defined structural information for the lysine residues on the protein surface. Additional tentative assignments have also been made, using the above approaches.</ce:simple-para></ce:abstract-sec></ce:abstract>
+<ce:keywords class="keyword">
+<ce:section-title>Keywords</ce:section-title>
+<ce:keyword><ce:text>Hemoglobin</ce:text></ce:keyword>
+<ce:keyword><ce:text>Aspirin</ce:text></ce:keyword>
+<ce:keyword><ce:text>Nuclear magnetic resonance</ce:text></ce:keyword>
+<ce:keyword><ce:text>Protein acetylation</ce:text></ce:keyword></ce:keywords>
+<ce:keywords class="abr">
+<ce:section-title>Abbreviations</ce:section-title>
+<ce:keyword><ce:text>BDSF, bis-(3,5-dibromosalicyl) fumarate</ce:text></ce:keyword>
+<ce:keyword><ce:text>COHbA, carbonmonoxyhemoglobin A</ce:text></ce:keyword>
+<ce:keyword><ce:text>CNHbA, cyanomethemoglobin A</ce:text></ce:keyword>
+<ce:keyword><ce:text>OxyHbA, oxyhemoglobin A</ce:text></ce:keyword>
+<ce:keyword><ce:text>HbS, sickle hemoglobin</ce:text></ce:keyword>
+<ce:keyword><ce:text>MAP, methyl acetylphosphate</ce:text></ce:keyword>
+<ce:keyword><ce:text>IHP, inositol hexaphosphate</ce:text></ce:keyword>
+<ce:keyword><ce:text>HMQC, heteronuclear multiple-quantum coherence spectroscopy</ce:text></ce:keyword>
+<ce:keyword><ce:text>HSQC, heteronuclear single-quantum coherence spectroscopy</ce:text></ce:keyword>
+<ce:keyword><ce:text>2,3-DPG, 2,3-diphosphoglycerate</ce:text></ce:keyword>
+<ce:keyword><ce:text>[1&#x2032;-<ce:sup>13</ce:sup>C]ASA, [1&#x2032;-<ce:sup>13</ce:sup>C]acetylsalicylic acid</ce:text></ce:keyword>
+<ce:keyword><ce:text>PBK, potassium phosphate buffered KCl</ce:text></ce:keyword></ce:keywords></head>
+<body><ce:sections>
+<ce:section>
+<ce:label>1</ce:label>
+<ce:section-title>Introduction</ce:section-title>
+<ce:para>Studies of the chemical modification of hemoglobin have been performed for physiological, biochemical and pharmacological reasons. Cross-linked hemoglobin analogs with greater stability are of potential use as blood substitutes <ce:cross-refs refid="BIB1 BIB2 BIB3 BIB4">[1&#x2013;4]</ce:cross-refs>; &#x2018;double-headed aspirin&#x2019; molecules have been among the most useful agents for stabilizing hemoglobin tetramers (<ce:cross-ref refid="BIB2">[2]</ce:cross-ref>, and references therein). Pharmacological agents which modify sickle hemoglobin (HbS) can alter the aggregation behavior which is important in the pathology of sickle cell disease <ce:cross-ref refid="BIB5">[5]</ce:cross-ref>. Acetylsalicylic acid (Aspirin) was one of the earliest agents to show promise for the treatment of sickle cell disease, based on its effects on HbS polymerization. Hence, an understanding of the residue selectivity of aspirin modification and of the effects of acetylation on protein structure is central to the development of more useful agents. Indeed, several recently proposed anti-sickling agents also act to acetylate hemoglobin, so that the analysis of acetylated Hb derivatives continues to be pertinent to the development of new therapeutic agents for the treatment of sickle cell disease (<ce:cross-ref refid="BIB6">[6]</ce:cross-ref>, and references therein).</ce:para>
+<ce:para>Acetylation of proteins such as hemoglobin leads to a combination of relatively transient derivatives of tyrosine and histidine residues <ce:cross-refs refid="BIB7 BIB8">[7,8]</ce:cross-refs> as well as more stable amide linkages formed with lysine side chains and N-terminal amino groups. Hemoglobin has 12 amino groups per chain, corresponding to 11 lysine residues and an N-terminal valine. Thus, in theory there are 48 potential amino modification sites, with only 24 of these sites being structurally inequivalent. Among these residues, &#x03B2;Val1, &#x03B2;Lys82, &#x03B2;Lys144 are located approximately 5&#x2013;21 &#x00C5; apart in the cationic &#x03B2; cleft. Several surface lysine residues including &#x03B2;Lys59, &#x03B2;Lys65, &#x03B1;Lys11, &#x03B1;Lys61, and &#x03B1;Lys90 are surrounded by nearby lysine and histidine residues. In theory, these residues are likely to be sites of significant acetylation. Using conventional protein chemistry techniques to study the modification reaction, Klotz and co-workers <ce:cross-ref refid="BIB9">[9]</ce:cross-ref> concluded that the primary aspirin acetylation sites are &#x03B2;Lys144, &#x03B2;Lys59, and &#x03B1;Lys90. &#x03B2;Lys144 is located within the vicinity of the hemoglobin &#x03B2;-cleft, the region directly involved in the binding of 2,3-diphosphoglycerate (2,3-DPG), a modulator of hemoglobin oxygen binding affinity. Aspirin-acetylated hemoglobin was found to possess slightly increased oxygen affinity <ce:cross-refs refid="BIB10 BIB11">[10,11]</ce:cross-refs>. Other studies suggest a lower specificity of acetylation by aspirin <ce:cross-ref refid="BIB11">[11]</ce:cross-ref>. A series of &#x2018;double-headed&#x2019; aspirin analogs including bis(3,5-dibromosalicyl) fumarate (BDSF) have been reported to cross-link hemoglobin either by reacting with the two &#x03B2;Lys82 groups of oxyhemoglobin (OxyHbA) <ce:cross-refs refid="BIB1 BIB2">[1,2]</ce:cross-refs>, or the two &#x03B1;Lys99 residues of deoxyhemoglobin <ce:cross-ref refid="BIB3">[3]</ce:cross-ref>. In comparison with the unmodified hemoglobin, &#x03B2;Lys82-&#x03B2;Lys82&#x2032; cross-linked hemoglobin is characterized by increased oxygen affinity <ce:cross-refs refid="BIB1 BIB2">[1,2]</ce:cross-refs>, whereas the &#x03B1;Lys99-&#x03B1;Lys99&#x2032; cross-linked stable hemoglobin tetramer shows a lower oxygen affinity <ce:cross-ref refid="BIB3">[3]</ce:cross-ref>. The difference in residue selectivity between the bifunctional and monofunctional aspirin analogs was proposed to be primarily due to the favorable orientation of the fumarate or succinate linkers, which enable the bifunctional analogs to bridge the two &#x03B2;Lys82 or the two &#x03B1;Lys99 residues of oxy- and deoxyhemoglobin, respectively. More recently, methyl acetyl phosphate (MAP), an inhibitor originally designed to target <ce:small-caps>d</ce:small-caps>-3-hydroxybutyrate dehydrogenase <ce:cross-ref refid="BIB12">[12]</ce:cross-ref>, was shown to be a potent acetylating agent for hemoglobin, targeting primarily &#x03B2;Val1, &#x03B2;Lys82 and &#x03B2;Lys144 and to a smaller degree, &#x03B1;Lys99, resulting in increased oxygen affinity and greater solubility of HbS (<ce:cross-ref refid="BIB6">[6]</ce:cross-ref>, and references therein). The variability of acetylation sites among several aspirin analogs and MAP, and the presence of minor acetylation adducts of aspirin <ce:cross-ref refid="BIB11">[11]</ce:cross-ref>, and the increasingly diverse therapeutic applications of aspirin as a non-steroidal anti-inflammatory (NSAID) agent, support the need to revisit the residue selectivity of aspirin acetylation.</ce:para>
+<ce:para>Modern two-dimensional NMR methods offer the possibility of resolving the resonances corresponding to many of the individual adduct sites with relatively high sensitivity if the acetyl group contains a stable isotope label <ce:cross-ref refid="BIB13">[13]</ce:cross-ref>. Furthermore, once an acetylation resonance is assigned to a particular residue, the acetylation of this residue by other agents can be readily studied without the need for extensive assignment work. The resonances of many adducts can be resolved in a single spectrum, without the need for the separation of globin chains and digestion of hemoglobin adducts. The reaction kinetics of various sites can also be followed simultaneously in real time. Finally, information on the structural perturbation and dynamic changes of hemoglobin resulting from chemical modification can also be obtained. In contrast, characterization of the sites of chemical modification by conventional protein chemistry techniques often requires multiple steps of isolation and purification of the modified radio-labeled hemoglobin adducts and their enzyme digested products, amino acid analysis by methods such as Edman degradation, and peptide mapping. Such an approach is, in general, tedious and often results in the loss of trace amounts of protein adducts or loss of modified sites if the bond is too weak. In the present study, we report our NMR investigation into the selectivity and extent of acetylation of human hemoglobin A by [1&#x2032;-<ce:sup>13</ce:sup>C]acetyl salicylic acid ([1&#x2032;-<ce:sup>13</ce:sup>C]ASA).</ce:para></ce:section>
+<ce:section id="SEC1">
+<ce:label>2</ce:label>
+<ce:section-title>Materials and methods</ce:section-title>
+<ce:para>Potassium cyanate, ether, methylene chloride and pyridine are from Aldrich Chemical (Milwaukee, WI); D<ce:inf>2</ce:inf>O, Total Hemoglobin kit, glycylglycine and 3-(2-iodoacetamido)-proxyl are from Sigma (St. Louis, MO); [1-<ce:sup>13</ce:sup>C]acetic acid sodium salt and [1-<ce:sup>13</ce:sup>C]acetyl chloride are from Isotec (Miamisburg, OH); inositol hexaphosphate sodium salt (IHP) is from Calbiochem-Novabiochem Co. (San Diego, CA); salicylic acid is from Fluka (Ronkonkoma, NY); bis-(3,5-dibromosalicyl) fumarate potassium salt (BDSF) is from Polysciences (Warrington, PA); Slide-A-Lyzer dialysis membrane cassettes (molecular weight cut-off 10 kDa) were obtained from Pierce (Rockford, IL). Centriprep and Centricon membrane concentrators are from Millipore (Bedford, MA). All other reagents are of analytical grade.</ce:para>
+<ce:section>
+<ce:label>2.1</ce:label>
+<ce:section-title>Purification of hemoglobin</ce:section-title>
+<ce:para>Human carbonmonoxyhemoglobin (COHbA) was separated using a procedure similar to that reported earlier <ce:cross-ref refid="BIB14">[14]</ce:cross-ref>. Human blood from healthy donors was obtained from the American Red Cross. The red cells were washed (&#x00D7;3) in phosphate buffered KCl (PBK, 20 mM KH<ce:inf>2</ce:inf>PO<ce:inf>4</ce:inf>-K<ce:inf>2</ce:inf>HPO<ce:inf>4</ce:inf>; 140 mM KCl, pH 7) to remove the plasma and preservative buffer. The cells were then gassed by humidified CO to convert oxyhemoglobin to COHbA. This was followed by lysis of the cells in a mixed solvent of CO-saturated H<ce:inf>2</ce:inf>O and ether (volume ratio of red cell suspension:H<ce:inf>2</ce:inf>O:ether=3:3:1), followed by sufficient mixing to extract hemoglobin. The hemoglobin-containing aqueous phase was collected, and filtered through a Whatman number one paper filter. The residual ether was then removed by rotary evaporation prior to dialysis in PBK. The hemoglobin solution was reconcentrated to 2&#x2013;3 mM using the Centricon or Centriprep nitrocellulose membrane filters. Unless otherwise stated, COHbA was used for the acetylation study. The CO form of hemoglobin was selected because it is more stable than oxyHbA, thereby avoiding paramagnetic contributions arising from any deoxyhemoglobin which might form, as well as oxidation of the protein during long spectral acquisition periods. Under the present conditions, no significant shift of the absorption frequency was found in acetyl COHbA, thus suggesting insignificant oxidation of hemoglobin. For preparation of acetylated cyanomethemoglobin A (CNHbA), COHbA (2.5 mM) was reacted with Drabkin&#x2019;s reagent (1 ml COHbA: 250 ml Drabkin&#x2019;s reagent, Sigma), at 25&#x00B0;C for &#x223C;120 min; this extended reaction time was needed to ensure the complete oxidation of COHbA to CNHbA. The CNHbA solution was then concentrated prior to being treated with [1&#x2032;-<ce:sup>13</ce:sup>C]ASA. Hemoglobin concentration was routinely determined by measuring spectrophotometrically the absorbance of CNHbA at 540 nm using the Sigma Total Hemoglobin kit.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.2</ce:label>
+<ce:section-title>Synthesis of [1&#x2032;-<ce:sup>13</ce:sup>C]ASA</ce:section-title>
+<ce:para>[1&#x2032;-<ce:sup>13</ce:sup>C]ASA was synthesized using a procedure derived from a previously reported method <ce:cross-ref refid="BIB15">[15]</ce:cross-ref> by reacting [1-<ce:sup>13</ce:sup>C]acetyl chloride with salicylic acid. Salicylic acid (1.5 g) was dissolved in 90 ml methylene chloride containing 1.8 ml pyridine. A solution of 20% [1-<ce:sup>13</ce:sup>C]acetyl chloride in methylene chloride (14 ml) was added. The reaction container was capped and allowed to react for 15 h at 22&#x00B0;C. The reaction container was then uncapped, the methylene chloride was evaporated by heating (45&#x00B0;C) and then lyophilized. The purity of the [1&#x2032;-<ce:sup>13</ce:sup>C]ASA was determined by <ce:sup>1</ce:sup>H NMR to be >99%. The isotopically labeled aspirin was stored in a desiccator at &#x2212;20&#x00B0;C. [1&#x2032;-<ce:sup>13</ce:sup>C]ASA was freshly dissolved in 200 mM phosphate buffer and the pH adjusted to 7 prior to being used for acetylation of hemoglobin. [2&#x2032;-<ce:sup>13</ce:sup>C]ASA was made by an analogous procedure, starting with [2-<ce:sup>13</ce:sup>C]acetyl chloride.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.3</ce:label>
+<ce:section-title>Acetylation of hemoglobin</ce:section-title>
+<ce:para>The acetylation of the &#x03F5;-NH<ce:inf>2</ce:inf> of lysine and &#x03B1;-NH<ce:inf>2</ce:inf> of N-terminal residues of hemoglobin by [1&#x2032;-<ce:sup>13</ce:sup>C]ASA was carried out under the following conditions:<display><ce:figure>
+<ce:link locator="fx1" /></ce:figure></display>COHbA or CNHbA (typically 2 mM) was reacted with a 10-fold molar excess of [1&#x2032;-<ce:sup>13</ce:sup>C]ASA in PBK (&#x223C;35 mM phosphate, 140 mM KCl, pH 7) at 37&#x00B0;C for 1&#x2013;12 h as indicated. At the completion of the incubation the hemoglobin adducts were dialyzed immediately against a 1000 fold excess volume of cold PBK at 4&#x00B0;C overnight, with two to three changes of buffer to quench the reaction and to remove the unreacted [1&#x2032;-<ce:sup>13</ce:sup>C]ASA and acetate. The dialyzed hemoglobin adduct solutions were then reconcentrated to the required concentrations for NMR experiments using a membrane microconcentrator.</ce:para>
+<ce:para>Modification of hemoglobin by BDSF was carried out at 37&#x00B0;C for 2 h under oxy-conditions; the oxyhemoglobin A (OxyHbA) was incubated with BDSF at molar ratios of BDSF:COHbA of 0.1, 0.2, 0.5 and 1.0. The excess of BDSF was removed by immediate dialysis against cold PBK buffer. The oxyhemoglobin adducts were then converted to COHbA adducts, prior to incubation with a 10-fold excess of [1&#x2032;-<ce:sup>13</ce:sup>C]ASA at 37&#x00B0;C for 12 h.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.4</ce:label>
+<ce:section-title>Carbamylation of hemoglobin</ce:section-title>
+<ce:para>The carbamylation of N-terminal valine of COHbA (2 mM) in 20 mM PBK (pH 7) was carried out by reacting hemoglobin with up to a 100-fold molar excess potassium cyanate at 37&#x00B0;C for 3 h.<display><ce:figure>
+<ce:link locator="fx2" /></ce:figure></display>The carbamylation reaction was terminated by adding 50 mM ice cold glycylglycine. This was followed by immediate dialysis in the same buffer at 4&#x00B0;C overnight. The cyanate reacted COHbA samples were then acetylated by [1&#x2032;-<ce:sup>13</ce:sup>C]ASA using the protocol described in this section. The doubly modified hemoglobin was extensively dialyzed in the 20 mM PBK (pH 7) prior to NMR study to assess adduct formation.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.5</ce:label>
+<ce:section-title>Preparation of acetylated, spin-labeled hemoglobin</ce:section-title>
+<ce:para>Hemoglobin which had been acetylated with [1&#x2032;-<ce:sup>13</ce:sup>C]ASA for 12 h using the protocol described above was subsequently incubated with a two-fold molar excess of spin label 3-(2-iodoacetamido)-proxyl at 37&#x00B0;C for 12 h. The molar excess of 3-(2-iodoacetamido)-proxyl was necessary to label both &#x03B2;Cys93 residues of hemoglobin. The remaining spin label was then dialyzed away prior to NMR examination of the sample.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.6</ce:label>
+<ce:section-title>NMR studies</ce:section-title>
+<ce:para>The HMQC and HSQC experiments were adapted to acquire the spectra of the chemically modified hemoglobin adducts. All the NMR spectra were acquired on a Varian Unity-Plus 500 MHz spectrometer equipped with 5 mm inverse-detection triple resonance probe (Nalorac, Martinez, CA). The HMQC spectra were acquired using a pulse sequence based on the original HMQC sequence <ce:cross-ref refid="BIB16">[16]</ce:cross-ref>. A 1.7 s presaturation pulse was used to suppress the H<ce:inf>2</ce:inf>O resonances in the HMQC experiment. Typically 32 scans were acquired for each <ce:italic>t</ce:italic><ce:inf>1</ce:inf> increment, with 2048 total <ce:italic>t</ce:italic><ce:inf>2</ce:inf> data points, and 128 complex <ce:italic>t</ce:italic><ce:inf>1</ce:inf> data points, resulting in acquisition times of 180 (<ce:italic>t</ce:italic><ce:inf>2</ce:inf>) and 256 (<ce:italic>t</ce:italic><ce:inf>1</ce:inf>) ms. Phase sensitive spectra in <ce:italic>F</ce:italic><ce:inf>1</ce:inf> were acquired using the States method <ce:cross-ref refid="BIB17">[17]</ce:cross-ref>. In addition, a 1 s recovery delay, preceding the presaturation interval, was used to allow a sufficiently long recovery time between scans (2.7 s), to minimize overpulsing effects. In the HSQC experiments, the H<ce:inf>2</ce:inf>O resonance was suppressed using the WATERGATE gradient echo sequence, incorporating a 3-9-19 selective inversion pulse <ce:cross-ref refid="BIB18">[18]</ce:cross-ref>. The recovery delay in the HSQC experiments was routinely set at 1 s unless otherwise indicated. The relative spectral intensities of adduct resonances determined from spectra acquired with different recovery times ranging from 1 to 8 s appear to be similar. The 2D data were processed with a &#x223C;90&#x00B0; shifted sine bell window function applied to both the <ce:italic>t</ce:italic><ce:inf>1</ce:inf> and <ce:italic>t</ce:italic><ce:inf>2</ce:inf> dimensions and zero filled to 4k&#x00D7;2k data points prior to Fourier transformation. The spectral peak volumes were measured using the VNMR (version 6.1a) software package.</ce:para></ce:section></ce:section>
+<ce:section>
+<ce:label>3</ce:label>
+<ce:section-title>Results</ce:section-title>
+<ce:section>
+<ce:label>3.1</ce:label>
+<ce:section-title>Acetylation kinetics</ce:section-title>
+<ce:para>To identify the adduct resonances of the more readily acetylated residues, and to establish the conditions for maximum adduct formation, COHbA was reacted with [1&#x2032;-<ce:sup>13</ce:sup>C]ASA for 1, 3, 6 and 12 h, and adduct formation was followed by obtaining HMQC spectra of the adducts collected at these times (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref><ce:float-anchor refid="FIG1" />). The HMQC spectra of hemoglobin adducts formed using [2&#x2032;-<ce:sup>13</ce:sup>C]ASA were also obtained (results not shown here), however, the carbonyl labeled acetyl groups proved more useful due to the greater chemical shift dispersion. Hence, all of the remaining studies of aspirin acetylation were performed with the [1&#x2032;-<ce:sup>13</ce:sup>C]ASA. These spectra exhibit many well resolved adduct resonances, thus permitting the assessment of the relative selectivity of the aspirin acetylation reaction. Typically, after a 12 h reaction period, at least 10 resolved peaks could be distinguished, although in general, additional smaller and more variable peaks can be observed in the spectra.</ce:para>
+<ce:para>The resonance at (<ce:italic>&#x03B4;</ce:italic><ce:sup>1</ce:sup>H,<ce:italic>&#x03B4;</ce:italic><ce:sup>13</ce:sup>C)=(1.90,174.25 ppm) is assigned to [1-<ce:sup>13</ce:sup>C]acetate based on direct addition of the labeled compound (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref>). The <ce:sup>13</ce:sup>C shift corresponds to the acetate carbonyl resonance as a result of folding the resonance at 182.14 ppm (<ce:sup>13</ce:sup>C value) into the region of interest. The use of a smaller spectral window which resulted in the folding of the acetate resonance allowed improved spectral resolution. We note that despite the long period of dialysis, some residual acetate was typically present in the sample. This may reflect some binding of the acetate to the hemoglobin, or the decomposition of labile adducts which can be formed with tyrosyl or histidyl residues.</ce:para>
+<ce:para>Hydroxyl and amino groups as well as the ring nitrogens of histidines can all be subject to acetylation <ce:cross-refs refid="BIB7 BIB19 BIB20 BIB21">[7,19&#x2013;21]</ce:cross-refs>. However, the serine hydroxyl groups are considerably less reactive, and the acetylated adducts of tyrosine and histidine are generally significantly less stable. As noted in recent studies of acetylated ubiquitin <ce:cross-ref refid="BIB13">[13]</ce:cross-ref>, adducts formed with amino groups can be identified on the basis of deuterium isotope shifts of the acetamide resonances which are most easily observed in 50/50 H<ce:inf>2</ce:inf>O/D<ce:inf>2</ce:inf>O solution. We observed these shifts in the <ce:sup>13</ce:sup>C dimension (<ce:italic>&#x03B4;</ce:italic>&#x223C;0.09 ppm, spectra not shown here) for most of the hemoglobin adduct resonances, and in the remaining cases, the observation of clear isotope shifts was limited by the congestion in some regions of the spectra or by poor signal/noise for some of the weaker resonances.</ce:para>
+<ce:para>Since human hemoglobin A contains 24 inequivalent &#x03B1;- and &#x03F5;-amino groups, at very low levels of modification at which only approximately one residue/molecule is acetylated, in theory a maximum of 24 distinct resonances would be anticipated. Similarly, fully acetylated hemoglobin would also be expected to exhibit 24 distinct resonances. However, at intermediate levels of modification, a distribution of acetylated species exists which could in principle lead to additional resonances. This is particularly true for residues which are close in space such as &#x03B2;Lys82 and &#x03B2;Lys82&#x2032; in the 2,3-DPG binding cleft, so that the acetylation of one lysine residue could perturb the chemical shift of the neighboring acetyl lysine. In other words, two resonances are expected for an individual lysyl residue if a nearby second residue is partially modified. Thus, acetylation of two closely spaced lysine residues could in principle lead to four resonances corresponding to the two singly acetylated residues and to the doubly acetylated species. In the case of two corresponding residues on different chains close enough to affect each other&#x2019;s chemical shift, such as &#x03B2;Lys82 and &#x03B2;Lys82&#x2032;, there would be two possible resonances corresponding to hemoglobin singly or doubly modified at &#x03B2;Lys82. This effect is most likely to be significant for residues located in the &#x03B2;-cleft, since these lysines have a relatively high probability of modification, and since the proximity of amino groups from the two &#x03B2; chains might be expected to lead to interactions among the modified residues.</ce:para>
+<ce:para>Analysis of the time dependence of the peak volumes, summarized in <ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref><ce:float-anchor refid="FIG2" />, provides evidence for the type of shift perturbation noted above. Data for eight of the resonances were quantified in this way. Although the three major adduct resonances 1, 3, and 6 continued to increase in intensity over the entire 12 h period of acetylation, the apparent rate of modification for peak 6 declined significantly as the experiment progressed. In contrast, the other significantly modified residues giving rise to peaks 1 and 3 show a more consistent rate of increase. The remaining resonances show some variation, although the lower signal/noise of these peaks makes quantitation more difficult. One possible explanation for the decrease in the rate of modification of the residue corresponding to peak 6 is a time-dependent decrease in pH. Despite substantial buffering of the solution (&#x223C;35 mM phosphate, pH 7), there was typically a drop of &#x223C;0.5 pH units during the course of the experiment, which would be expected to lower the acetylation rate. However, this drop in pH does not appear to perturb substantially the rate of modification of peaks 1 or 3. Alternatively, if as discussed above the modification of a nearby residue(s) can lead to multiple peaks from a single modified residue, then the intensity of resonances formed at early times will be expected to level off and ultimately to decrease. The total intensity of all adduct resonances corresponding to a particular residue will, however, continue to increase. The rapid initial acetylation leading to resonance 6 may thus continue, with the intensity of the modified lysine resonance distributed among two or more separate resonances. The best candidate for such a second resonance is peak 9. In particular, studies of the chemical shifts observed in the oxidized CNHbA show that resonances 6 and 9 are subject to identical paramagnetic shifts, and therefore appear to have identical orientations relative to the heme irons. Thus, we hypothesize that resonance 6 corresponds to the initial acetylation of a particular residue, and resonance 9 to the same residue in multiply acetylated hemoglobin. This observation is consistent with the kinetic data shown in <ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref>. Resonance 5, which also shows a similar, although not identical shift, may also correspond to the same acetyllysine residue, in yet another multiply acetylated form.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.2</ce:label>
+<ce:section-title>Blocking the 2,3-DPG binding site with IHP</ce:section-title>
+<ce:para>2,3-DPG, an important physiological regulator of the oxygen affinity of hemoglobin, is known to bind to deoxyhemoglobin in the cleft formed by the two &#x03B2; chains <ce:cross-ref refid="BIB14">[14]</ce:cross-ref>. In order to identify the acetylated residues located in the 2,3-DPG binding site, acetylation studies of COHbA were performed in the presence of IHP which has an affinity (<ce:italic>K</ce:italic><ce:inf>D</ce:inf>=10<ce:sup>&#x2212;4</ce:sup> M; <ce:cross-ref refid="BIB22">[22]</ce:cross-ref>) higher than that of 2,3-DPG (<ce:italic>K</ce:italic><ce:inf>D</ce:inf>=2.4&#x00D7;10<ce:sup>&#x2212;3</ce:sup> M; <ce:cross-ref refid="BIB14">[14]</ce:cross-ref>) for this site. For these studies, COHbA was incubated in the presence of [1&#x2032;-<ce:sup>13</ce:sup>C]ASA for a 12 h period at 37&#x00B0;C in the presence of a 2.5 or a 5.0-fold excess of IHP. Based on the <ce:italic>K</ce:italic><ce:inf>D</ce:inf> value given above, these concentrations should be sufficient to saturate 96.8% and 98.8% of the 2,3-DPG binding sites, respectively, assuming a 1:1 binding ratio of IHP binding to hemoglobin and negligible association with other sites on the hemoglobin. In the presence of IHP, the HMQC spectra of the acetylated COHbA (<ce:cross-ref refid="FIG3">Fig. 3</ce:cross-ref><ce:float-anchor refid="FIG3" />) exhibit a substantial reduction in the intensities of resonances 6, 8, and 9. At an IHP:COHbA ratio of 2.5:1, the intensity losses for resonances 6, 8, and 9 were approximately 67, 81, and 77%, respectively. In addition, the intensities of peaks 3 and 5 also decrease, but to a smaller degree. The intensities of the remaining resonances did not appear to be significantly reduced. At IHP concentrations &#x2265;5 mM (IHP:COHbA=5:1), we began to observe an apparent general decrease of resonance intensities presumably resulting from non-specific protection of all of the amino groups. Hence, the highly anionic IHP molecule apparently exhibits some affinity for other accessible amino groups. The greater decrease of spectral intensity of peaks 6, 8 and 9 in the presence of IHP indicates that the corresponding residues are situated in the &#x03B2;-cleft, in agreement with the results from the spin-labeling study discussed below.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.3</ce:label>
+<ce:section-title>Selectivity of protection by BDSF</ce:section-title>
+<ce:para>The &#x2018;double-headed&#x2019; aspirin analog, BDSF, has previously been used for cross-linking the two hemoglobin &#x03B1;&#x03B2; dimers in order to stabilize the tetramer, which is of potential use as an artificial blood substitute <ce:cross-refs refid="BIB1 BIB3">[1,3]</ce:cross-refs>. The fumarate linkage is reported to occur predominantly between the two &#x03B2;Lys82 residues and the two &#x03B1;Lys99 residues of oxyhemoglobin and deoxyhemoglobin, respectively <ce:cross-refs refid="BIB1 BIB3">[1,3]</ce:cross-refs>. This reaction is not reported to be completely selective, and the cross-linked hemoglobin must be separated from other derivatized variants. However, cross-linking is believed to be the dominant reaction <ce:cross-refs refid="BIB1 BIB3">[1,3]</ce:cross-refs>. Oxyhemoglobin samples containing various BDSF:OxyHbA ratios ranging from 0.1 to 1.0 were allowed to react at 37&#x00B0;C for 2 h followed by extensive dialysis to remove unreacted BDSF, prior to acetylation by [1&#x2032;-<ce:sup>13</ce:sup>C]ASA. HMQC spectra for acetylated COHbA pre-treated at a 1:1 BDSF:OxyHbA ratio are shown in <ce:cross-ref refid="FIG4">Fig. 4</ce:cross-ref><ce:float-anchor refid="FIG4" />. In general, all of the acetyl resonances are attenuated to some extent. However, BDSF appeared to produce the greatest protection against aspirin acetylation for residues corresponding to peaks 5, 6, and 9. A significant protective effect is also apparent for peak 8, although, given that this resonance is relatively weak initially, the change is less significant. The major protective effect of BDSF was somewhat unexpected, since previous studies have indicated that aspirin targets primarily &#x03B2;Lys144, &#x03B2;lys59 and &#x03B1;Lys90 <ce:cross-ref refid="BIB9">[9]</ce:cross-ref>, while BDSF targets primarily &#x03B2;Lys82 of oxyHbA. Yet, both IHP binding and BDSF pre-modification appear to dramatically reduce the same group of resonances: peaks 5, 6, and 9, with a somewhat weaker targeting of resonance 8. Since the characterization of the cross-linked hemoglobin is more extensive <ce:cross-refs refid="BIB1 BIB3">[1,3]</ce:cross-refs>, these data lead to the tentative proposal that peaks 5, 6, and 9 which, as discussed below appear to correspond to a single residue in multiply acetylated hemoglobin, most likely arise from acetyl &#x03B2;Lys82, while the less significantly protected resonance 8, which also corresponds to a residue in the DPG binding site, would arise from acetyl &#x03B2;Lys144. This protection of &#x03B2;Lys144 from aspirin acetylation could reflect protection resulting from formation of a fumarate adduct with &#x03B2;Lys144, or a general reduced accessibility of residues in the &#x03B2;-cleft region in the &#x03B2;Lys82-&#x03B2;Lys82&#x2032; cross-linked hemoglobin, and/or the reduced charge of the &#x03B2;-cleft in the cross-linked hemoglobin.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.4</ce:label>
+<ce:section-title>NMR analysis of acetylated, spin-labeled hemoglobin</ce:section-title>
+<ce:para>In order to evaluate further the proposal that resonances 5, 6, and 9 correspond to acetyl &#x03B2;Lys82, while resonance 8 corresponds to acetyl &#x03B2;Lys144, studies utilizing the spin label 3-(2-iodoacetamido)-proxyl were performed. The &#x03B2;Cys93 residues of hemoglobin have been shown to possess high reactivity toward reactive halogenated molecules <ce:cross-refs refid="BIB23 BIB24 BIB25">[23&#x2013;25]</ce:cross-refs>, and this has served as the basis for the preparation of hemoglobin selectively spin-labeled at this residue <ce:cross-refs refid="BIB26 BIB27">[26,27]</ce:cross-refs>. Analysis of the crystal structure of COHbA (PDB # 1BBB <ce:cross-ref refid="BIB28">[28]</ce:cross-ref>) indicates that the side-chain amino groups of &#x03B2;Lys144 and &#x03B2;Lys82 are 6.5&#x2013;6.9 &#x00C5; and 12.9&#x2013;15.4 &#x00C5;, respectively, from the &#x03B2;Cys93 sulfur atom. Hence, introduction of a spin label at this position should dramatically broaden the acetyl &#x03B2;Lys144 resonance, and depending on the orientation of the spin label, might also be anticipated to have some broadening effect on the acetyl &#x03B2;Lys82 adduct resonance as well. In the <ce:sup>1</ce:sup>H-<ce:sup>13</ce:sup>C HSQC spectrum of acetylated hemoglobin which was subsequently spin-labeled using 3-(2-iodoacetamido)-proxyl as described in <ce:cross-ref refid="SEC1">Section 2</ce:cross-ref>, resonance 8 appears to be eliminated, while resonance 6 is reduced but still observable (<ce:cross-ref refid="FIG5">Fig. 5</ce:cross-ref><ce:float-anchor refid="FIG5" />). These results are consistent with conclusions derived above on the basis of the protective effect of BDSF, and suggest assignment of resonance 8 to acetyl &#x03B2;Lys144 and assignments of peaks 5, 6, and 9 to acetyl &#x03B2;Lys82, with peaks 5 and 9 arising from multiple acetylated hemoglobin molecules obtained at an intermediate degree of acetylation.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.5</ce:label>
+<ce:section-title>Acetylation of a hemoglobin mutant</ce:section-title>
+<ce:para>The use of site-directed protein mutants provides one of the most unequivocal basis for the assignment of adduct resonances <ce:cross-refs refid="BIB13 BIB29 BIB30 BIB31">[13,29&#x2013;31]</ce:cross-refs>. We obtained a small amount of a human hemoglobin mutant containing three &#x03B2; chain mutations: Val1&#x2192;Met1, His2 deletion, Lys144&#x2192;Arg144 (&#x03B2;V1MH2&#x0394;K144R). This mutant, which has previously been studied by vibrational spectroscopy <ce:cross-ref refid="BIB32">[32]</ce:cross-ref>, although possessing the desired &#x03B2; chain K144R mutation which would allow assignment of the acetylated K144 resonance, is characterized by two additional modifications of the &#x03B2; cleft which may also alter 2,3-DPG binding and could lead to additional shift perturbations. Since only a small amount of this hemoglobin mutant was available, it was only possible to perform a single study at a much lower concentration (0.23 mM) than used for the remaining studies (typically 1&#x2013;2 mM). Since there is a small tendency of acetylated hemoglobin to precipitate over the extended period of the NMR experiment at 37&#x00B0;C, the studies were performed at a lower temperature (25&#x00B0;C) for the &#x03B2;V1MH2&#x0394;K144R mutant which had been acetylated with [1&#x2032;-<ce:sup>13</ce:sup>C]ASA for a 12 h period (<ce:cross-ref refid="FIG6">Fig. 6</ce:cross-ref><ce:float-anchor refid="FIG6" />). An HMQC spectrum of an acetylated sample of COHbA obtained at the same temperature is also shown in <ce:cross-ref refid="FIG6">Fig. 6</ce:cross-ref> for comparison. The HMQC spectrum of acetylated &#x03B2;V1MH2&#x0394;K144R shows four major adduct resonances plus that of acetate. Resonances labeled 1m, 3m, 6m, and 7m are assigned to the corresponding peaks 1, 3, 6, and 7 in the acetylated COHbA, while there is no resonance in the mutant which corresponds closely to resonance 8 in the COHbA. The disappearance of resonance 8 is consistent with identification of this peak with acetyl &#x03B2;Lys144. Resonance 6m, which may be subject to a small shift perturbation, approximately 0.01 ppm upfield <ce:sup>1</ce:sup>H shift relative to resonance 6 in the acetylated COHbA, is nevertheless present in the mutant, and so can be assigned to &#x03B2;Lys82, consistent with the above data derived from IHP and BDSF protection, and proximity to spin-labeled &#x03B2;Cys93.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.6</ce:label>
+<ce:section-title>Carbamylation studies</ce:section-title>
+<ce:para>The carbamylation of amino groups by cyanate is a strong function of the basicity (p<ce:italic>K</ce:italic>) of the amino group. The N-terminal &#x03B1; and &#x03B2; chain valine residues have p<ce:italic>K</ce:italic> values &#x223C;8 <ce:cross-ref refid="BIB33">[33]</ce:cross-ref>, whereas the surface lysine residues have amino p<ce:italic>K</ce:italic> values &#x223C;10, and the p<ce:italic>K</ce:italic><ce:inf>a</ce:inf> for isocyanic acid is &#x223C;3.8 <ce:cross-ref refid="BIB34">[34]</ce:cross-ref>. Cyanate has been reported to carbamylate &#x03B1;Val1 and &#x03B2;Val1 with a rate approximately two orders of magnitude greater than the carbamylation of the &#x03F5;-NH<ce:inf>2</ce:inf> of lysine residues <ce:cross-ref refid="BIB35">[35]</ce:cross-ref>, consistent with the difference in p<ce:italic>K</ce:italic> values. However, aspirin has not been reported to acetylate either of the N-terminal valine amino groups, even though &#x03B2;Val1 is one of the residues of the &#x03B2;-cleft near the reported major acetylation site (&#x03B2;Lys144). In this study, the possibility of a selective protective effect on the N-terminal valine residues by carbamylation was explored. Hemoglobin was carbamylated with varying concentrations of sodium cyanate for a period of 3 h prior to the incubation with [1&#x2032;-<ce:sup>13</ce:sup>C]ASA at 37&#x00B0;C. Although many of the acetyl resonances exhibit significant reductions in intensity (spectra not shown), the relative differences in protection were not sufficiently pronounced to allow assignment of any of the resonances to &#x03B1; or &#x03B2; N-terminal valine adducts. In fact, as discussed below, the valine residues are apparently more accessible to the cyanate molecule than to the larger aspirin molecule. These results suggest that the &#x03B1; and &#x03B2;Val1 residues are unlikely to be among the amino groups highly acetylated by aspirin.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.7</ce:label>
+<ce:section-title>Pseudo-contact shifts in cyanomethemoglobin</ce:section-title>
+<ce:para>One potential approach for the assignment of adducts in hemoglobin involves the use of the through space dipolar or &#x2018;pseudo-contact&#x2019; shifts produced by the heme. Following this approach, we assume that the diamagnetic COHbA and the paramagnetic CNHbA are isostructural. This approximation, which has often been made in studies of myoglobin <ce:cross-ref refid="BIB36">[36]</ce:cross-ref>, is most reasonable for residues which are relatively far from the heme group, as expected for most of the modified lysines. We make the further assumptions that the acetyl groups introduced are all relatively far from the heme iron, in general, >10 &#x00C5;, and, in the absence of more detailed structural information, we use the lysine N&#x03F5; position as an approximation for the positions of both the acetyl carbonyl and methyl nuclei (<ce:cross-ref refid="FIG7">Fig. 7</ce:cross-ref><ce:float-anchor refid="FIG7" />), i.e. (<ce:italic>r</ce:italic><ce:inf>C</ce:inf>,<ce:italic>&#x03B8;</ce:italic><ce:inf>C</ce:inf>,<ce:italic>&#x03C6;</ce:italic><ce:inf>C</ce:inf>)&#x223C;(<ce:italic>r</ce:italic><ce:inf>H</ce:inf>,<ce:italic>&#x03B8;</ce:italic><ce:inf>H</ce:inf>,<ce:italic>&#x03C6;</ce:italic><ce:inf>H</ce:inf>)&#x223C;(<ce:italic>r</ce:italic><ce:inf>N&#x03F5;</ce:inf>,<ce:italic>&#x03B8;</ce:italic><ce:inf>N&#x03F5;</ce:inf>,<ce:italic>&#x03C6;</ce:italic><ce:inf>N&#x03F5;</ce:inf>). Thus, on the basis of these assumptions, it is predicted that the shift differences of the peaks in the HMQC spectra of COHbA and CNHbA will exhibit a slope of 1, i.e. the dipolar shifts in ppm for the carbonyl carbon and the methyl protons will be approximately the same.</ce:para>
+<ce:para>The validity of the assumptions used in the analysis of the pseudo-contact shifts is most clearly demonstrated by a comparison of HMQC spectra for COHbA and CNHbA which have been exposed to the [1&#x2032;-<ce:sup>13</ce:sup>C]ASA for a relatively short period (2 h at 37&#x00B0;C), so that only three major adduct resonances are significant (<ce:cross-ref refid="FIG8">Fig. 8</ce:cross-ref><ce:float-anchor refid="FIG8" />). The HMQC spectra of the acetylated CNHbA showed significant changes of the chemical shift dispersion of the adduct resonances with respect to the acetylated COHbA control. As can be seen from this figure, the slopes (&#x0394;<ce:sup>13</ce:sup>C/&#x0394;<ce:sup>1</ce:sup>H) for the three major acetyl groups are all similar and close to 1 (<ce:cross-ref refid="TBL1">Table 1</ce:cross-ref><ce:float-anchor refid="TBL1" />). A small additional peak at (<ce:italic>&#x03B4;</ce:italic><ce:sup>1</ce:sup>H,<ce:italic>&#x03B4;</ce:italic><ce:sup>13</ce:sup>C)=(2.05,174.59) in the CNHbA spectrum is unassigned.</ce:para>
+<ce:para>For the analysis of the pseudo-contact shifts of acetylated CNHbA, there appear to be no available data on the orientation of the heme g-tensors in hemoglobin, so we have treated the four hemes independently based on the reported myoglobin studies <ce:cross-refs refid="BIB36 BIB37">[36,37]</ce:cross-refs>, which indicate that the g-tensor of myoglobin exhibits rhombic symmetry. The axial component lies approximately along the FeCO tilt axis in the isostructural COHbA complex, while the rhombic magnetic axes align closely with the projection of the proximal histidine imidazole plane onto the heme. There are several approaches which can be used to predict the shifts. Based on the above g-tensor, we have calculated the polar angle <ce:italic>&#x03B8;</ce:italic> as the angle defined by the C(O)-Fe-Lys-N&#x03F5; atoms, and the azimuthal angle <ce:italic>&#x03C6;</ce:italic> as the angle defined by His-C&#x03B4;-His-N&#x03F5;-Fe-Lys-N&#x03F5;. Based on the assumption of a planar imidazole ring, the His-C&#x03F5; could also be used for the calculation which as given below, has a cos 2<ce:italic>&#x03C6;</ce:italic> dependence. This procedure effectively projects the rhombal <ce:italic>x</ce:italic>-axis onto the <ce:italic>x</ce:italic>-<ce:italic>y</ce:italic> plane after, rather than before, the rotation of the <ce:italic>z</ce:italic>-axis, a distinction which we believe to be inconsequential in terms of the available information on the g-tensor and the present level of approximation. As discussed by Emerson and La Mar <ce:cross-ref refid="BIB36">[36]</ce:cross-ref>, the pseudo-contact or dipolar shift is then given by:<display><formula><math altimg="si1.gif">&#x03B4;<inf><rm>dip</rm></inf>=<fr>
+<nu><rm>&#x0394;</rm>&#x03C7;<inf><rm>ax</rm></inf></nu>
+<de>3Nr<sup>3</sup><inf><rm>FeN</rm></inf></de></fr>(3<rm>cos</rm><sup>2</sup>&#x03B8;&#x2212;1)&#x2212;<fr>
+<nu><rm>&#x0394;</rm>&#x03C7;<inf><rm>rh</rm></inf></nu>
+<de>2Nr<sup>3</sup><inf><rm>FeN</rm></inf></de></fr>(<rm>sin</rm><sup>2</sup>&#x03B8;<rm>cos</rm>2&#x03C6;)</math></formula></display>where &#x0394;<ce:italic>&#x03C7;</ce:italic><ce:inf>ax</ce:inf>=<ce:italic>&#x03C7;</ce:italic><ce:inf>zz</ce:inf>&#x2212;1/2(<ce:italic>&#x03C7;</ce:italic><ce:inf>xx</ce:inf>+<ce:italic>&#x03C7;</ce:italic><ce:inf>yy</ce:inf>)=2198&#x00D7;10<ce:sup>&#x2212;12</ce:sup> m<ce:sup>3</ce:sup>/mol at 25&#x00B0;C, &#x0394;<ce:italic>&#x03C7;</ce:italic><ce:inf>rh</ce:inf>=<ce:italic>&#x03C7;</ce:italic><ce:inf>xx</ce:inf>&#x2212;<ce:italic>&#x03C7;</ce:italic><ce:inf>yy</ce:inf>=&#x2212;573&#x00D7;10<ce:sup>&#x2212;12</ce:sup> m<ce:sup>3</ce:sup>/mol, <ce:italic>r</ce:italic><ce:inf>FeN</ce:inf> is the distance between each heme iron and the &#x03F5;N of each lysine, and <ce:italic>N</ce:italic> is Avogadro&#x2019;s number.</ce:para>
+<ce:para>Chemical shifts have been normalized relative to the larger downfield shift for resonance 6 which, as discussed above, is tentatively assigned to acetyl &#x03B2;Lys82 on the basis of studies with BDSF, spin-labeled hemoglobin, and acetylation of a triply mutated hemoglobin. Resonances 1 and 3 have been assigned to acetyl &#x03B2;Lys59 and acetyl &#x03B1;Lys90, respectively, on the basis of the studies of Shamsuddin et al. <ce:cross-ref refid="BIB9">[9]</ce:cross-ref>, the lack of protective effect of IHP or BDSF which block modification at 2,3-DPG binding site, and the signs of their predicted paramagnetic shifts in CNHbA. Setting the paramagnetic shift of peak 6 equal to 1.0, and assigning this peak to acetyl &#x03B2;Lys82, leads to relative predicted paramagnetic shifts for &#x03B2;Lys82, &#x03B2;Lys59 and &#x03B1;Lys90 of 1.0, 0.46, and &#x2212;0.48, respectively (<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref><ce:float-anchor refid="TBL2" />). These values compare with relative measured shifts for peaks 6, 1, and 3 of 1.0, 0.49, and &#x2212;0.61, respectively. Given the variation in the calculated shifts for the individual lysine residues (<ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>), this agreement must be considered fortuitous. Further, the there appear to be no resonances exhibiting the large predicted downfield shift of 3.28 ppm predicted for acetyl &#x03B2;Lys144, which according to Shamsuddin et al. <ce:cross-ref refid="BIB9">[9]</ce:cross-ref> is among the most heavily acetylated lysine residues in hemoglobin. The variation in the predicted shifts between corresponding lysyl residues on identical chains, shown in <ce:cross-ref refid="TBL2">Table 2</ce:cross-ref>, results from the large variations in the orientation of the lysine residues located on the surface of the protein in the crystal structure <ce:cross-ref refid="BIB28">[28]</ce:cross-ref>. For example, the distance of &#x03B1;Lys90 N&#x03F5; from the heme iron is 13.28 &#x00C5; on the &#x03B1; (A) chain, but only 9.76 &#x00C5; on the other &#x03B1; (C) chain. As noted below, large &#x03B1;A/&#x03B1;C and &#x03B2;B/&#x03B2;D variations in the calculated surface accessibility of the pairs of equivalent lysine N&#x03F5; groups are also derived from the crystal structure data. This appears to be the most significant limitation on the application of this technique to the prediction of paramagnetic shifts of protein adducts.</ce:para>
+<ce:para>Other sites which have been reported to be modified by aspirin or related analogs include &#x03B2;Lys144, &#x03B1;Lys99, and &#x03B2;Val1. The predicted shifts for &#x03B2;Lys144 and &#x03B1;Lys99 shown in <ce:cross-ref refid="TBL2">Table 2</ce:cross-ref> are considerably larger than any observed. This result casts some doubt on the identification of resonance 8 as corresponding to acetyl &#x03B2;Lys144 although, as discussed above, the quantitative value of such predictions for residues located on the surface of the protein is limited. The acetyl &#x03B2;Val1 resonance may correspond to one of the less heavily modified resonances such as peak 2 or 4.</ce:para>
+<ce:para>In addition to the specific assignment information discussed above, it was particularly apparent from a comparison of the spectra obtained for COHbA and CNHbA after a 12 h period of exposure to [1&#x2032;-<ce:sup>13</ce:sup>C]ASA that: peaks 6 and 9 shift as a group (spectrum not shown here), so that their relative positions are maintained in the COHbA and CNHbA systems. This is not completely apparent from the data in <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref> due to round-off errors in reporting the peak positions. Peak 5 shows a similar, although not identical shift, and may also correspond to the same acetyl lysine residue in another polyacetylated analog. Although this behavior could be coincidental, this similarity would result if all of the resonances in this group correspond to a single residue &#x2013; &#x03B2;Lys82, with the shift variation reflecting differences in the degree of modification of nearby residues, presumably the second &#x03B2;Lys82&#x2032;, or possibly &#x03B2;Lys144, or &#x03B2;Val1. The residues in the &#x03B2;-cleft should be particularly susceptible to this type of effect, since there are a number of nearby cationic groups located in a relatively small volume which defines the 2,3-DPG binding site. This result is also suggested by kinetic data outlined above (<ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref>).</ce:para></ce:section>
+<ce:section>
+<ce:label>3.8</ce:label>
+<ce:section-title>Surface accessibility of hemoglobin amino groups</ce:section-title>
+<ce:para>The surface accessibility of the amino groups of COHbA (PDB # 1BBB <ce:cross-ref refid="BIB28">[28]</ce:cross-ref>) estimated based on the contact areas of a probe of 3 &#x00C5; radius determined using the Connolly algorithm in the program Insight II (Molecular Simulation, Inc., V97) is shown in <ce:cross-ref refid="FIG9">Fig. 9</ce:cross-ref><ce:float-anchor refid="FIG9" />. Accessibility data is given as a ratio relative to the accessibility of the &#x03F5;-amino group of free lysine. The 3 &#x00C5; radius yields a sphere with a diameter of 6 &#x00C5; which roughly corresponds to the largest molecular dimension of aspirin (7.27 &#x00C5;). In general, the use of probe spheres with larger radii gives qualitatively analogous results. These calculations provide an explanation for the lack of a significant protective effect on acetylated adduct resonances by cyanate. The &#x03B1;Val1 amino nitrogens are almost completely inaccessible to a 3 &#x00C5; probe, and the &#x03B2;Val1 amino groups only slightly more accessible. Thus, it is unlikely that there is significant acetylation of the Val1 amino groups by aspirin. Probably a smaller acetylating agent such as acetic anhydride would modify these residues to a greater extent. It is also apparent that accessibility alone is not a good predictor of the residue susceptibility to modification under the conditions of the study. The most highly modified residue, &#x03B2;Lys82, is among the least accessible. Hence, binding to the cationic DPG bindite cleft is a more important determinant of the degree of modification.</ce:para>
+<ce:para>As is also apparent from <ce:cross-ref refid="FIG9">Fig. 9</ce:cross-ref>, there are large differences in accessibility for many of the residues between the two &#x03B1; or two &#x03B2; chains. This variation is analogous with the variation in orientation of the lysine side chains relative to the hemes which limit the predictive value of the paramagnetic dipolar shifts, as discussed above. The shallowness of the potential energy surfaces for the surface lysine residues and their resulting disorder limits the predictive value of both the surface accessibility and the orientation-dependent shift calculations.</ce:para></ce:section></ce:section>
+<ce:section>
+<ce:label>4</ce:label>
+<ce:section-title>Discussion</ce:section-title>
+<ce:para>Acylation of hemoglobin by aspirin and other acylating agents has been used to generate analogs with improved structural and functional properties (<ce:cross-refs refid="BIB1 BIB10 BIB38 BIB39 BIB40">[1,10,38&#x2013;40]</ce:cross-refs> and references therein). Stable, cross-linked hemoglobin tetramers have potential as oxygen delivery therapeutic agents <ce:cross-ref refid="BIB4">[4]</ce:cross-ref>. Among the bi-functional analogues, BDSF was shown to target primarily two &#x03B2;Lys82 residues of oxyhemoglobin, thus forming a cross-linked hemoglobin tetramer with increased oxygen affinity relative to native hemoglobin <ce:cross-ref refid="BIB1">[1]</ce:cross-ref>. The acetylation of human hemoglobin by acetylsalicylic acid <ce:cross-refs refid="BIB9 BIB10 BIB11">[9&#x2013;11]</ce:cross-refs> is a biochemical action unrelated to its principal therapeutic use as a NSAID. The lack of sufficient residue selectivity has limited its use as an anti-sickling agent, despite the modest increase of oxygen affinity of aspirin-acetylated sickle hemoglobin <ce:cross-ref refid="BIB10">[10]</ce:cross-ref>. Previous studies suggested a significant discrepancy between the target residues of aspirin and of bi-functional analogs such as BDSF. Thus, the former agent was not reported to modify &#x03B2;Lys82, while the latter cross-links hemoglobin at this residue. In the present studies, the combination of data derived from the protection afforded by using a bifunctional acylation agent, BDSF, as a blocking agent for &#x03B2;Lys82, spin-labeling &#x03B2;Cys93 that is in proximity to &#x03B2;Lys144, and acetylation of a triple mutant hemoglobin analog all support the identity of &#x03B2;Lys82 as the principal target of aspirin acetylation, rather than &#x03B2;Lys144, as previously reported <ce:cross-ref refid="BIB9">[9]</ce:cross-ref>. This result may also be considered qualitatively consistent with the analysis of paramagnetic, dipolar shifts in cyanomethemoglobin, although the large variations in the positions of surface lysine residues limit the quantitative utility of this approach as an assignment tool.</ce:para>
+<ce:para>Despite the size of the hemoglobin molecule, the HMQC spectra of hemoglobin acetylated with [1&#x2032;-<ce:sup>13</ce:sup>C]ASA are readily obtained at 1 mM concentrations, even though the weak, two bond J-coupling interaction between the acetyl carbonyl carbon and the protons of the methyl group is used for these studies. The success of this approach is presumably based on the fact that there is substantial mobility at the end of the long acetyl lysine chains, while local structural differences remain sufficient to provide significant chemical shift dispersion. The mobility results in a lengthened <ce:italic>T</ce:italic><ce:inf>2</ce:inf> value, allowing polarization transfer even using the weaker, two-bond coupling interaction.</ce:para>
+<ce:para>Previous studies of protein modification have yielded data suggesting that individual modified residues might give rise to multiple resonances <ce:cross-ref refid="BIB13">[13]</ce:cross-ref>. This effect can arise because modification at additional, usually nearby sites can perturb the shift of the previously modified resonance. The present studies provide strong support for this effect in hemoglobin. The strongly modified &#x03B2;Lys82 residue yields an intense acetyl resonance, peak 6, after a short reaction period, while after a longer reaction period this peak tends to remain fairly constant as other, nearby resonances appear. In paramagnetic CNHbA, this group of resonances appears to shift as a unit, indicating nearly identical orientations relative to the paramagnetic heme irons. It is particularly reasonable for &#x03B2;Lys82 to yield two resonances, with peak 6 corresponding to COHbA molecules containing a single acetyl &#x03B2;Lys82 group, and peak 9 containing two acetyl &#x03B2;Lys82 groups. The relatively high probability of modification of this residue and the relatively close proximity of the two &#x03B2;Lys82 sidechains support this interpretation. Indeed, if these resonances can be specifically assigned to these modifications, then the ratio of COHbA containing double/single &#x03B2;Lys82 modifications can be determined. However, the possible identity of peak 5 as also arising from acetylated &#x03B2;Lys82 limits further interpretation of these shifts at present.</ce:para>
+<ce:para>In summary, incubation of hemoglobin with [1&#x2032;-<ce:sup>13</ce:sup>C]ASA indicates modification of many of the accessible lysine residues, with &#x03B2;Lys82 the most rapidly and highly acetylated. This residue is among the least accessible to a 3 &#x00C5; spherical probe, so that modification must arise due to a specific binding interaction of aspirin in the &#x03B2;-cleft. This conclusion is inconsistent with a previous study based on peptide analysis <ce:cross-ref refid="BIB9">[9]</ce:cross-ref>, but is supported by a variety of strategies utilized here, including examination of a triple hemoglobin mutant. It is also consistent with previous studies indicating that &#x2018;double-headed aspirin&#x2019; cross-linking agents can link the pair of &#x03B2;Lys82 residues in hemoglobin, although in principle, the cross-linking agents could exhibit different specificity than aspirin. We have also found that as the molecule becomes more highly acetylated, single residues can correspond to multiple peaks due to additional modification of nearby residues. This is most apparent for &#x03B2;Lys82, which has a high susceptibility to acetylation and has neighboring residues, including &#x03B2;Lys82&#x2032;, which can also be acetylated.</ce:para></ce:section></ce:sections>
+<ce:acknowledgment>
+<ce:section-title>Acknowledgements</ce:section-title>
+<ce:para>This work was also supported in part by HHS 5RO1 HL57604 (R.J.L.) and by an NIH intramural visiting fellowship (A.S.L.X.). We wish to thank Dr. Clara Fronticelli for providing the mutant &#x03B2;V1MH2&#x0394;K144R hemoglobin, and Mr. Joseph Vance and Dr. Eugene DeRose for their assistance in the initial NMR experiments.</ce:para></ce:acknowledgment></body>
+<tail>
+<ce:bibliography>
+<ce:section-title>References</ce:section-title><ce:bibliography-sec>
+<ce:bib-reference id="BIB1">
+<ce:label>[1]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.A</ce:given-name><ce:surname>Walder</ce:surname></sb:author><sb:author><ce:given-name>R.H</ce:given-name><ce:surname>Zaugg</ce:surname></sb:author><sb:author><ce:given-name>R.Y</ce:given-name><ce:surname>Walder</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Steele</ce:surname></sb:author><sb:author><ce:given-name>I.M</ce:given-name><ce:surname>Klotz</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Diaspirins that cross-link &#x03B2; chains of hemoglobin: bis(3,5-dibromosalicyl) succinate and bis(3,5-dibromosalicyl) fumarate</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>18</sb:volume-nr></sb:series>
+<sb:date>1979</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>4265</sb:first-page>
+<sb:last-page>4270</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB2">
+<ce:label>[2]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.H</ce:given-name><ce:surname>Zaugg</ce:surname></sb:author><sb:author><ce:given-name>J.A</ce:given-name><ce:surname>Walder</ce:surname></sb:author><sb:author><ce:given-name>R.Y</ce:given-name><ce:surname>Walder</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Steele</ce:surname></sb:author><sb:author><ce:given-name>I.M</ce:given-name><ce:surname>Klotz</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Modification of hemoglobin with analogs of aspirin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>255</sb:volume-nr></sb:series>
+<sb:date>1980</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>2816</sb:first-page>
+<sb:last-page>2822</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB3">
+<ce:label>[3]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R</ce:given-name><ce:surname>Chatterjee</ce:surname></sb:author><sb:author><ce:given-name>E.V</ce:given-name><ce:surname>Welty</ce:surname></sb:author><sb:author><ce:given-name>R.Y</ce:given-name><ce:surname>Walder</ce:surname></sb:author><sb:author><ce:given-name>S.L</ce:given-name><ce:surname>Pruitt</ce:surname></sb:author><sb:author><ce:given-name>P.L</ce:given-name><ce:surname>Rogers</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Arnone</ce:surname></sb:author><sb:author><ce:given-name>J.A</ce:given-name><ce:surname>Walder</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Isolation and characterization of a new hemoglobin derivative cross-linked between the &#x03B1; chains (lysine 99&#x03B1;1-lysine 99&#x03B1;2)</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>261</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>9929</sb:first-page>
+<sb:last-page>9937</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB4">
+<ce:label>[4]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.T</ce:given-name><ce:surname>Jones</ce:surname></sb:author><sb:author><ce:given-name>D.T</ce:given-name><ce:surname>Shih</ce:surname></sb:author><sb:author><ce:given-name>T.S</ce:given-name><ce:surname>Fujita</ce:surname></sb:author><sb:author><ce:given-name>Y</ce:given-name><ce:surname>Song</ce:surname></sb:author><sb:author><ce:given-name>H</ce:given-name><ce:surname>Xiao</ce:surname></sb:author><sb:author><ce:given-name>C</ce:given-name><ce:surname>Head</ce:surname></sb:author><sb:author><ce:given-name>R</ce:given-name><ce:surname>Kluger</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>A doubly cross-linked human hemoglobin, effects of cross-links between different subunits</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>271</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>675</sb:first-page>
+<sb:last-page>680</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB5">
+<ce:label>[5]</ce:label>
+<ce:other-ref><ce:textref>E. Beulter, The sickle cell diseases and related disorders, in: W.J. Williams, E. Beulter, A.J. Erslev, M.A. Lichtman (Eds.), Hemoglobins, McGraw-Hill, New York, 1983, pp. 583&#x2013;609.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB6">
+<ce:label>[6]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H</ce:given-name><ce:surname>Ueno</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Manning</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Methyl acetyl phosphate, a new type of antisickling agent: site-specific acetylatin agent toward the 2,3-DPG binding site in hemoglobin S</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Am. J. Pediatr. Hematol. Oncol.</sb:maintitle></sb:title>
+<sb:volume-nr>10</sb:volume-nr></sb:series>
+<sb:date>1988</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>348</sb:first-page>
+<sb:last-page>350</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB7">
+<ce:label>[7]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.F</ce:given-name><ce:surname>Riordan</ce:surname></sb:author><sb:author><ce:given-name>W.E.C</ce:given-name><ce:surname>Wacker</ce:surname></sb:author><sb:author><ce:given-name>B.L</ce:given-name><ce:surname>Vallee</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle><ce:italic>N</ce:italic>-Acetylimidazole: a reagent for determination of &#x2018;free&#x2019; tyrosyl residues in proteins</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>4</sb:volume-nr></sb:series>
+<sb:date>1965</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1758</sb:first-page>
+<sb:last-page>1765</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB8">
+<ce:label>[8]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>G.J</ce:given-name><ce:surname>Moore</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Kinetics of acetylation-deacetylation of angiotensin II</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Int. J. Peptide Protein Res.</sb:maintitle></sb:title>
+<sb:volume-nr>26</sb:volume-nr></sb:series>
+<sb:date>1985</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>469</sb:first-page>
+<sb:last-page>481</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB9">
+<ce:label>[9]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M</ce:given-name><ce:surname>Shamsuddin</ce:surname></sb:author><sb:author><ce:given-name>R.G</ce:given-name><ce:surname>Mason</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Ritchey</ce:surname></sb:author><sb:author><ce:given-name>G.R</ce:given-name><ce:surname>Honig</ce:surname></sb:author><sb:author><ce:given-name>I.M</ce:given-name><ce:surname>Klotz</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Sites of acetylation of sickle cell hemoglobin by aspirin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Proc. Natl. Acad. Sci. USA</sb:maintitle></sb:title>
+<sb:volume-nr>71</sb:volume-nr></sb:series>
+<sb:date>1974</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>4693</sb:first-page>
+<sb:last-page>4697</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB10">
+<ce:label>[10]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>I.M</ce:given-name><ce:surname>Klotz</ce:surname></sb:author><sb:author><ce:given-name>J.W.O</ce:given-name><ce:surname>Tam</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Acetylation of sickle cell hemoglobin by aspirin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Proc. Natl. Acad. Sci. USA</sb:maintitle></sb:title>
+<sb:volume-nr>70</sb:volume-nr></sb:series>
+<sb:date>1973</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1313</sb:first-page>
+<sb:last-page>1315</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB11">
+<ce:label>[11]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>K.R</ce:given-name><ce:surname>Bridges</ce:surname></sb:author><sb:author><ce:given-name>G.J</ce:given-name><ce:surname>Schmidt</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Jensen</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Gerami</ce:surname></sb:author><sb:author><ce:given-name>H.F</ce:given-name><ce:surname>Bunn</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>The acetylation of hemoglobin by aspirin in vitro and in vivo</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Clin. Invest.</sb:maintitle></sb:title>
+<sb:volume-nr>56</sb:volume-nr></sb:series>
+<sb:date>1975</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>201</sb:first-page>
+<sb:last-page>207</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB12">
+<ce:label>[12]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R</ce:given-name><ce:surname>Kluger</ce:surname></sb:author><sb:author><ce:given-name>W.-C</ce:given-name><ce:surname>Tsui</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Reaction of the anionic acetylation agent methyl acetyl phosphate with D-3-hydroxybutyrate dehydrogenase</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochem. Cell Biol.</sb:maintitle></sb:title>
+<sb:volume-nr>64</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>434</sb:first-page>
+<sb:last-page>440</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB13">
+<ce:label>[13]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Macdonald</ce:surname></sb:author><sb:author><ce:given-name>D.A</ce:given-name><ce:surname>LeBlanc</ce:surname></sb:author><sb:author><ce:given-name>A.L</ce:given-name><ce:surname>Haas</ce:surname></sb:author><sb:author><ce:given-name>R.E</ce:given-name><ce:surname>London</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>An NMR analysis of the reaction of ubiquitin with [acetyl-1-<ce:sup>13</ce:sup>C]aspirin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochem. Pharmacol.</sb:maintitle></sb:title>
+<sb:volume-nr>57</sb:volume-nr></sb:series>
+<sb:date>1999</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1233</sb:first-page>
+<sb:last-page>1244</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB14">
+<ce:label>[14]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.J</ce:given-name><ce:surname>Labotka</ce:surname></sb:author><sb:author><ce:given-name>C.M</ce:given-name><ce:surname>Schwab</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>A dialysis cell for nuclear magnetic resonance spectroscopic measurement of protein-small molecule binding</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Anal. Biochem.</sb:maintitle></sb:title>
+<sb:volume-nr>191</sb:volume-nr></sb:series>
+<sb:date>1990</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>376</sb:first-page>
+<sb:last-page>383</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB15">
+<ce:label>[15]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.T</ce:given-name><ce:surname>Gerig</ce:surname></sb:author><sb:author><ce:given-name>K.E</ce:given-name><ce:surname>Katz</ce:surname></sb:author><sb:author><ce:given-name>J.D</ce:given-name><ce:surname>Reinheimer</ce:surname></sb:author><sb:author><ce:given-name>G.R</ce:given-name><ce:surname>Sullivan</ce:surname></sb:author><sb:author><ce:given-name>J.D</ce:given-name><ce:surname>Roberts</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Examination of the aspirin acetylation site of human serum albumin by <ce:sup>13</ce:sup>C NMR spectroscopy</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Org. Magn. Reson.</sb:maintitle></sb:title>
+<sb:volume-nr>15</sb:volume-nr></sb:series>
+<sb:date>1981</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>158</sb:first-page>
+<sb:last-page>161</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB16">
+<ce:label>[16]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.F</ce:given-name><ce:surname>Summers</ce:surname></sb:author><sb:author><ce:given-name>L.G</ce:given-name><ce:surname>Marzilli</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Bax</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Complete <ce:sup>1</ce:sup>H and <ce:sup>13</ce:sup>C assignments of coenzyme B<ce:inf>12</ce:inf> through the use of new two-dimensional NMR experiments</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Am. Chem. Soc.</sb:maintitle></sb:title>
+<sb:volume-nr>108</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>4285</sb:first-page>
+<sb:last-page>4294</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB17">
+<ce:label>[17]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>D.J</ce:given-name><ce:surname>States</ce:surname></sb:author><sb:author><ce:given-name>R.A</ce:given-name><ce:surname>Haberkorn</ce:surname></sb:author><sb:author><ce:given-name>D.J</ce:given-name><ce:surname>Ruben</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>A two-dimensional nuclear Overhauser experiment with pure absorption phase in four quadrants</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Magn. Reson.</sb:maintitle></sb:title>
+<sb:volume-nr>48</sb:volume-nr></sb:series>
+<sb:date>1982</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>286</sb:first-page>
+<sb:last-page>292</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB18">
+<ce:label>[18]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>V</ce:given-name><ce:surname>Sklenar</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Piotto</ce:surname></sb:author><sb:author><ce:given-name>R</ce:given-name><ce:surname>Leppik</ce:surname></sb:author><sb:author><ce:given-name>V</ce:given-name><ce:surname>Saudek</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Gradient-tailored water suppression for <ce:sup>1</ce:sup>H-<ce:sup>15</ce:sup>N HSQC experiments optimized to retain full sensitivity</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Magn. Reson. A</sb:maintitle></sb:title>
+<sb:volume-nr>102</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>241</sb:first-page>
+<sb:last-page>245</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB19">
+<ce:label>[19]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>V.B</ce:given-name><ce:surname>DeSatz</ce:surname></sb:author><sb:author><ce:given-name>J.A</ce:given-name><ce:surname>Santome</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Acetylation of bovine growth hormone by <ce:italic>N</ce:italic>-acetylimidazole</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Int. J. Peptide Protein Res.</sb:maintitle></sb:title>
+<sb:volume-nr>18</sb:volume-nr></sb:series>
+<sb:date>1981</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>492</sb:first-page>
+<sb:last-page>499</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB20">
+<ce:label>[20]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P</ce:given-name><ce:surname>Kaliman</ce:surname></sb:author><sb:author><ce:given-name>M.R</ce:given-name><ce:surname>Ermacora</ce:surname></sb:author><sb:author><ce:given-name>C</ce:given-name><ce:surname>Nowicki</ce:surname></sb:author><sb:author><ce:given-name>C</ce:given-name><ce:surname>Wolfenstein-Todel</ce:surname></sb:author><sb:author><ce:given-name>J.A</ce:given-name><ce:surname>Santome</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Chemical modification of human growth hormone with <ce:italic>N</ce:italic>-acetylimidazole</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Int. J. Peptide Protein Res.</sb:maintitle></sb:title>
+<sb:volume-nr>38</sb:volume-nr></sb:series>
+<sb:date>1991</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>38</sb:first-page>
+<sb:last-page>46</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB21">
+<ce:label>[21]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.M</ce:given-name><ce:surname>Kinnunen</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>De Michele</ce:surname></sb:author><sb:author><ce:given-name>L.G</ce:given-name><ce:surname>Lange</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Chemical modification of acetyl-CoA:cholesterol <ce:italic>O</ce:italic>-acyltransferase. 1. Identification of acyl-CoA:cholesterol <ce:italic>O</ce:italic>-acyltransferase subtypes by differential diethylpyrocarbonate sensitivity</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>27</sb:volume-nr></sb:series>
+<sb:date>1988</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>7344</sb:first-page>
+<sb:last-page>7350</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB22">
+<ce:label>[22]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J</ce:given-name><ce:surname>Brygier</ce:surname></sb:author><sb:author><ce:given-name>S.H</ce:given-name><ce:surname>De Bruin</ce:surname></sb:author><sb:author><ce:given-name>P.M.K.B</ce:given-name><ce:surname>Van Hoof</ce:surname></sb:author><sb:author><ce:given-name>H.S</ce:given-name><ce:surname>Rollema</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>The interaction of organic phosphates with human and chicken hemoglobin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Eur. J. Biochem.</sb:maintitle></sb:title>
+<sb:volume-nr>60</sb:volume-nr></sb:series>
+<sb:date>1975</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>379</sb:first-page>
+<sb:last-page>383</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB23">
+<ce:label>[23]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>W.H</ce:given-name><ce:surname>Huestis</ce:surname></sb:author><sb:author><ce:given-name>M.A</ce:given-name><ce:surname>Raftery</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>A study of cooperative interactions in hemoglobin using fluorine nuclear magnetic resonance</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>11</sb:volume-nr></sb:series>
+<sb:date>1972</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1648</sb:first-page>
+<sb:last-page>1654</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB24">
+<ce:label>[24]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.C</ce:given-name><ce:surname>Garel</ce:surname></sb:author><sb:author><ce:given-name>Y</ce:given-name><ce:surname>Beuzard</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Thillet</ce:surname></sb:author><sb:author><ce:given-name>G</ce:given-name><ce:surname>Domenget</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Martin</ce:surname></sb:author><sb:author><ce:given-name>F</ce:given-name><ce:surname>Galacteros</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Rosa</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Binding of 21 thiol reagents to human hemoglobin in solution and in intact cells</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Eur. J. Biochem.</sb:maintitle></sb:title>
+<sb:volume-nr>123</sb:volume-nr></sb:series>
+<sb:date>1982</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>513</sb:first-page>
+<sb:last-page>519</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB25">
+<ce:label>[25]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.A</ce:given-name><ce:surname>Fowler</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Andracki</ce:surname></sb:author><sb:author><ce:given-name>G</ce:given-name><ce:surname>Hurst</ce:surname></sb:author><sb:author><ce:given-name>V.A</ce:given-name><ce:surname>Honkan</ce:surname></sb:author><sb:author><ce:given-name>J</ce:given-name><ce:surname>Walder</ce:surname></sb:author><sb:author><ce:given-name>D.A</ce:given-name><ce:surname>Casteel</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Prolongation of the intravascular retention of hemoglobin modified with a long-chain fatty acid derivative</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Artif. Cells Blood Substit. Immobil. Biotechnol.</sb:maintitle></sb:title>
+<sb:volume-nr>22</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>27</sb:first-page>
+<sb:last-page>42</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB26">
+<ce:label>[26]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.T</ce:given-name><ce:surname>Gerig</ce:surname></sb:author><sb:author><ce:given-name>J.C</ce:given-name><ce:surname>Klinkenborg</ce:surname></sb:author><sb:author><ce:given-name>R.A</ce:given-name><ce:surname>Nieman</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Assignment of fluorine nuclear magnetic resonance signals from rabbit cyanomethemoglobin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>22</sb:volume-nr></sb:series>
+<sb:date>1983</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>2076</sb:first-page>
+<sb:last-page>2087</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB27">
+<ce:label>[27]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.T</ce:given-name><ce:surname>Manoharn</ce:surname></sb:author><sb:author><ce:given-name>J.T</ce:given-name><ce:surname>Wang</ce:surname></sb:author><sb:author><ce:given-name>K</ce:given-name><ce:surname>Alston</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Rifkind</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Spin label probes for the environment of cysteine &#x03B2;-93 in hemoglobin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Hemoglobin</sb:maintitle></sb:title>
+<sb:volume-nr>14</sb:volume-nr></sb:series>
+<sb:date>1990</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>41</sb:first-page>
+<sb:last-page>67</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB28">
+<ce:label>[28]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.M</ce:given-name><ce:surname>Silva</ce:surname></sb:author><sb:author><ce:given-name>P.H</ce:given-name><ce:surname>Rogers</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Arnone</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>A third quaternary structure of human heoglobin A at 1.7-&#x00C5; resolution</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>267</sb:volume-nr></sb:series>
+<sb:date>1992</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>17248</sb:first-page>
+<sb:last-page>17256</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB29">
+<ce:label>[29]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M</ce:given-name><ce:surname>Zhang</ce:surname></sb:author><sb:author><ce:given-name>H.J</ce:given-name><ce:surname>Vogel</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Determination of the side chain p<ce:italic>K</ce:italic><ce:inf>a</ce:inf> values of the lysine residues in calmodulin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>268</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>22420</sb:first-page>
+<sb:last-page>22428</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB30">
+<ce:label>[30]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M</ce:given-name><ce:surname>Zhang</ce:surname></sb:author><sb:author><ce:given-name>E</ce:given-name><ce:surname>Huque</ce:surname></sb:author><sb:author><ce:given-name>H.J</ce:given-name><ce:surname>Vogel</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Characterization of trimethyllysine 115 in calmodulin by <ce:sup>14</ce:sup>N and <ce:sup>13</ce:sup>C NMR</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>269</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>5099</sb:first-page>
+<sb:last-page>5105</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB31">
+<ce:label>[31]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M</ce:given-name><ce:surname>Zhang</ce:surname></sb:author><sb:author><ce:given-name>E</ce:given-name><ce:surname>Thulin</ce:surname></sb:author><sb:author><ce:given-name>H.J</ce:given-name><ce:surname>Vogel</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Reductive methylation and p<ce:italic>K</ce:italic><ce:inf>a</ce:inf> determinateron of the lysine side chains in calbindin D<ce:inf>9K</ce:inf></sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Protein Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>13</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>527</sb:first-page>
+<sb:last-page>535</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB32">
+<ce:label>[32]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>V</ce:given-name><ce:surname>Militello</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Cupane</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Leone</ce:surname></sb:author><sb:author><ce:given-name>W.S</ce:given-name><ce:surname>Brinigar</ce:surname></sb:author><sb:author><ce:given-name>A.-L</ce:given-name><ce:surname>Lu</ce:surname></sb:author><sb:author><ce:given-name>C</ce:given-name><ce:surname>Fronticelli</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Dynamic properties of some &#x03B2;-chain mutant hemoglobins</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Proteins Struct. Funct. Genet.</sb:maintitle></sb:title>
+<sb:volume-nr>22</sb:volume-nr></sb:series>
+<sb:date>1995</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>12</sb:first-page>
+<sb:last-page>19</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB33">
+<ce:label>[33]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.H</ce:given-name><ce:surname>Garner</ce:surname></sb:author><sb:author><ce:given-name>R.A</ce:given-name><ce:surname>Bogardt</ce:surname><ce:suffix>Jr.</ce:suffix></sb:author><sb:author><ce:given-name>F.R.N</ce:given-name><ce:surname>Gurd</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Determination of the p<ce:italic>K</ce:italic> values for the alpha-amino groups of human hemoglobin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>240</sb:volume-nr></sb:series>
+<sb:date>1975</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>4398</sb:first-page>
+<sb:last-page>4404</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB34">
+<ce:label>[34]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>A.M</ce:given-name><ce:surname>Nigen</ce:surname></sb:author><sb:author><ce:given-name>B.D</ce:given-name><ce:surname>Bass</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Manning</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Reactivity of cyanate with valine-1 (&#x03B1;) of hemoglobin</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>251</sb:volume-nr></sb:series>
+<sb:date>1976</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>7636</sb:first-page>
+<sb:last-page>7643</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB35">
+<ce:label>[35]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M</ce:given-name><ce:surname>Jensen</ce:surname></sb:author><sb:author><ce:given-name>D.G</ce:given-name><ce:surname>Nathan</ce:surname></sb:author><sb:author><ce:given-name>H.F</ce:given-name><ce:surname>Bunn</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>The reaction of cyanate with the &#x03B1; and &#x03B2; subunits in hemoglobin, effects of oxygenation, phosphates and carbon dioxide</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Biol. Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>248</sb:volume-nr></sb:series>
+<sb:date>1973</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>8057</sb:first-page>
+<sb:last-page>8063</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB36">
+<ce:label>[36]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.D</ce:given-name><ce:surname>Emerson</ce:surname></sb:author><sb:author><ce:given-name>G.N</ce:given-name><ce:surname>La Mar</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>NMR determination of the orientation of the magnetic susceptibility tensor in cyanomethmyoglobin: a new probe of steric tilt of bound ligand</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>29</sb:volume-nr></sb:series>
+<sb:date>1990</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1556</sb:first-page>
+<sb:last-page>1566</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB37">
+<ce:label>[37]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H</ce:given-name><ce:surname>Hori</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Analysis of the principal g-tensors in single crystals of ferrimyoglobin complexes</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochim. Biophys. Acta</sb:maintitle></sb:title>
+<sb:volume-nr>251</sb:volume-nr></sb:series>
+<sb:date>1971</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>227</sb:first-page>
+<sb:last-page>235</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB38">
+<ce:label>[38]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H</ce:given-name><ce:surname>Ueno</ce:surname></sb:author><sb:author><ce:given-name>M.A</ce:given-name><ce:surname>Pospischil</ce:surname></sb:author><sb:author><ce:given-name>R</ce:given-name><ce:surname>Kluger</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Manning</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Methyl acetyl phosphate: a novel acetyllating agent. Its site-specific modification of human hemoglobin A</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Chromatogr.</sb:maintitle></sb:title>
+<sb:volume-nr>359</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>193</sb:first-page>
+<sb:last-page>201</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB39">
+<ce:label>[39]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>H</ce:given-name><ce:surname>Ueno</ce:surname></sb:author><sb:author><ce:given-name>M.A</ce:given-name><ce:surname>Pospischil</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Manning</ce:surname></sb:author><sb:author><ce:given-name>R</ce:given-name><ce:surname>Kluger</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Site-specific modification of hemoglobin by methyl acetyl phosphate</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Arch. Biochem. Biophys.</sb:maintitle></sb:title>
+<sb:volume-nr>244</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>795</sb:first-page>
+<sb:last-page>800</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB40">
+<ce:label>[40]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Manning</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Preparation of hemoglobin derivatives selectivlely or randomly modified at amino groups</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Methods Enzymol.</sb:maintitle></sb:title>
+<sb:volume-nr>231</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>225</sb:first-page>
+<sb:last-page>246</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference></ce:bibliography-sec></ce:bibliography></tail></converted-article>

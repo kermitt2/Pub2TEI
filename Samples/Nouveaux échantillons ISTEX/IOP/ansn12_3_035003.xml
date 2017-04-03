@@ -1,0 +1,2354 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Publishing DTD v3.0 20080202//EN" "http://ej.iop.org/dtd/nlm-3.0/journalpublishing3.dtd">
+<article article-type="research-article" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="publisher-id">ansn</journal-id>
+            <journal-id journal-id-type="coden">ANSNCK</journal-id>
+            <journal-title-group>
+                <journal-title>Advances in Natural Sciences: Nanoscience and Nanotechnology</journal-title>
+                <abbrev-journal-title abbrev-type="IOP">ANSN</abbrev-journal-title>
+                <abbrev-journal-title abbrev-type="publisher">Adv. Nat. Sci.: Nanosci. Nanotechnol.</abbrev-journal-title>
+            </journal-title-group>
+            <issn pub-type="ppub">2043-6262</issn>
+            <issn pub-type="epub">2043-6254</issn>
+            <publisher>
+                <publisher-name>IOP Publishing</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="publisher-id">ansn432030</article-id>
+            <article-id pub-id-type="doi">10.1088/2043-6262/3/3/035003</article-id>
+            <article-id pub-id-type="manuscript">432030</article-id>
+            <article-categories>
+                <subj-group subj-group-type="article-type">
+                    <subject>Paper</subject>
+                </subj-group>
+            </article-categories>
+            <title-group>
+                <article-title>Development of a fluorescent label tool based on lanthanide nanophosphors for viral biomedical application</article-title>
+                <alt-title alt-title-type="ascii">Development of a fluorescent label tool based on lanthanide nanophosphors for viral biomedical application</alt-title>
+                <alt-title alt-title-type="short">Development of a fluorescent label tool based on lanthanide nanophosphors for viral biomedical application</alt-title>
+                <alt-title alt-title-type="short-ascii">Development of a fluorescent label tool based on lanthanide nanophosphors for viral biomedical application</alt-title>
+            </title-group>
+            <contrib-group content-type="all">
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Le</surname>
+                        <given-names>Quoc Minh</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af1">1</xref>
+                    <xref ref-type="aff" rid="ansn432030af2">2</xref>
+                    <xref ref-type="aff" rid="ansn432030em1"/>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Tran</surname>
+                        <given-names>Thu Huong</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af1">1</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Nguyen</surname>
+                        <given-names>Thanh Huong</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af1">1</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Hoang</surname>
+                        <given-names>Thi Khuyen</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af1">1</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Nguyen</surname>
+                        <given-names>Thanh Binh</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af1">1</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Do</surname>
+                        <given-names>Khanh Tung</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af1">1</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Tran</surname>
+                        <given-names>Kim Anh</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af1">1</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Nguyen</surname>
+                        <given-names>Dang Hien</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af3">3</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Le</surname>
+                        <given-names>Thi Luan</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af3">3</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Nguyen</surname>
+                        <given-names>Thi Quy</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af3">3</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Dang</surname>
+                        <given-names>Mai Dung</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af3">3</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Thu Nguyen</surname>
+                        <given-names>Nu Anh</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af3">3</xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Nguyen</surname>
+                        <given-names>Van Man</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="ansn432030af3">3</xref>
+                </contrib>
+                <aff id="ansn432030af1"><label>1</label><institution>Institute of Materials Science</institution>, Vietnam Academy of Science and Technology, 18 Hoang Quoc Viet, Cau Giay, Hanoi,
+                        <country>Vietnam</country></aff>
+                <aff id="ansn432030af2"><label>2</label>University of Engineering and Technology, <institution>Vietnam University Hanoi</institution>, Xuan Thuy, Cau Giay, Hanoi, Vietnam</aff>
+                <aff id="ansn432030af3"><label>3</label><institution>Center for Research and Production of Vaccines and Biologicals</institution>, Vietnam Ministry of Health, 135 Lo Duc, Hai Ba Trung,
+                    Hanoi, <country>Vietnam</country></aff>
+                <ext-link ext-link-type="email" id="ansn432030em1">lequocminh@ims.vast.ac.vn</ext-link>
+                <author-comment content-type="short-author-list">
+                    <p>Quoc Minh Le <italic>et al</italic></p>
+                </author-comment>
+            </contrib-group>
+            <pub-date pub-type="ppub">
+                <month>9</month>
+                <year>2012</year>
+            </pub-date>
+            <pub-date pub-type="epub">
+                <day>29</day>
+                <month>5</month>
+                <year>2012</year>
+            </pub-date>
+            <volume>3</volume>
+            <issue>3</issue>
+            <elocation-id content-type="artnum">035003</elocation-id>
+            <history>
+                <date date-type="received">
+                    <day>9</day>
+                    <month>4</month>
+                    <year>2012</year>
+                </date>
+                <date date-type="accepted">
+                    <day>12</day>
+                    <month>4</month>
+                    <year>2012</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>&copy; 2012 Vietnam Academy of Science &amp; Technology</copyright-statement>
+                <copyright-year>2012</copyright-year>
+            </permissions>
+            <self-uri xlink:href="http://stacks.iop.org/ANSN/3/035003"/>
+            <abstract>
+                <title>Abstract</title>
+                <p>We report for the first time the preparation of luminescent lanthanide nanomaterial (LLN) linked bioconjugates and their application as a label tool for recognizing virus in the
+                    processing line of vaccine industrial fabrication. Several LLNs with the nanostructure forms of particles or rods/wires with europium (III) and terbium (III) ions in lattices of
+                    vanadate, phosphate and metal organic complex were prepared to develop novel fluorescent conjugates able to be applied as labels in fluorescence immunoassay analysis of
+                    virus/vaccine.</p>
+                <p>With regard to the LLNs, we have successfully synthesized nanoparticles around 10&nbsp;nm of YVO<sub>4</sub>:Eu(III), with high emission in the red spectral region, nanorod and
+                    nanowire of TbPO<sub>4</sub>&middot;H<sub>2</sub>O and Eu<sub>1-<italic>x</italic></sub>Tb<sub><italic>x</italic></sub>PO<sub>4</sub>&middot;H<sub>2</sub>O, width 5&ndash;7&nbsp;nm
+                    and length 300&nbsp;nm, showing very bright luminescence in green, and core/shell nanosized Eu(III) and Tb(III)/Eu(III) complexes with naphthoyl trifluoroacetone and
+                        tri-<italic>n</italic>-octylphosphineoxide (Eu.NTA.TOPO@PVP, Eu<sub><italic>X</italic></sub>Tb<sub>1-<italic>X</italic></sub>.NTA.TOPO). The appropriated core/shell structures
+                    can play a double role, one for enhancing luminescence efficiency and another for providing nanophosphors with better stability in water media for facilitating the penetration of
+                    nanophosphor core into a biomedical environment.</p>
+                <p>The organic functionalizations of the obtained LLNs were done through their surface encapsulation with a functional polysiloxane including active groups such as amine
+                        (NH<sub>2</sub>), thiocyanate (SCN) or mecarpto (SH). The properties of functional sol-gel matrix have great influence on the luminescence properties, especially luminescence
+                    intensity of YVO<sub>4</sub>:Eu(III), Eu.NTA.TOPO@PVP, TbPO<sub>4</sub>&middot;H<sub>2</sub>O and
+                        Eu<sub><italic>x</italic></sub>Tb<sub>1-<italic>x</italic></sub>PO<sub>4</sub>&middot;H<sub>2</sub>O. Bioconjugation processes of the functionalized LLNs have been studied with
+                    some bioactive molecules such as biotin, protein immunoglobulin G (IgG) or bovine serum albumin (BSA).</p>
+                <p>The results of LLN-bioconjugate linking with IgG for recognizing virus (vaccine) will be presented in brief. It is consistent to state that the LLN bioconjugates prepared from
+                        YVO<sub>4</sub>:Eu(III)&ndash;nanoparticles, TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorod or wire and EuNTA.TOPO@PVP nanosized core/shell complex could be used as labels for
+                    recognizing virus in diagnosis or in vaccine production by use of the fluorescence immunoassay (FIA) method. The fluorescence images of the incubated specimens consisting of LLN
+                    bioconjugate and vaccine fabricate could be obtained well in terms of sharpness, reproductivity and stability.</p>
+                <p>However, much work still needs to be done to develop an ordinary LLN-conjugate using the FIA method for analysis of virus and, moreover, to extend the study of biomedical cell
+                    processes at nano/microscale in practical application.</p>
+            </abstract>
+            <kwd-group kwd-group-type="author-pacs">
+                <kwd>2.05</kwd>
+                <kwd>4.03</kwd>
+                <kwd>4.06</kwd>
+                <kwd>4.07</kwd>
+            </kwd-group>
+            <kwd-group kwd-group-type="author">
+                <kwd>nanoparticles</kwd>
+                <kwd>functionalization</kwd>
+                <kwd>conjugation</kwd>
+                <kwd>label</kwd>
+                <kwd>fluorescence immunoassay</kwd>
+                <kwd>vaccine</kwd>
+            </kwd-group>
+            <counts>
+                <page-count count="10"/>
+            </counts>
+            <custom-meta-group>
+                <custom-meta>
+                    <meta-name>ccc</meta-name>
+                    <meta-value>2043-6262/12/035003&plus;10&dollar;33.00</meta-value>
+                </custom-meta>
+            </custom-meta-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec id="ansn432030s1">
+            <label>1.</label>
+            <title>Background</title>
+            <p>Nanophotonics broadly impacts biomedical research and engineering for studying fundamental interactions and dynamics at single cell/molecule level, as well as for light-guided detection
+                and light-activated therapy in nanomedicine. Nanomedicine is an emerging field that deals with utilization of nanomaterials in the development of new methods of minimally invasive
+                diagnostics for early detection and recognition of diseases, as well as for facilitating and real-time monitoring of drug-vaccine action.</p>
+            <p>Among the nanomaterials luminescent ones become increasingly more effective biomedical tools&nbsp;[<xref ref-type="bibr" rid="ansn432030bib01">1</xref>], especially for labeling in
+                    diagnosis&nbsp;[<xref ref-type="bibr" rid="ansn432030bib02">2</xref>] and cell imaging&nbsp;[<xref ref-type="bibr" rid="ansn432030bib03">3</xref>]. Development and potential
+                application of nanotechnology tools for biomolecules, cell and especially virus detection by emergent photonic nanotechnology are likely to revolutionize diagnosis and to determine
+                treatment endpoints for life-threatening virus infections&nbsp;[<xref ref-type="bibr" rid="ansn432030bib04">4</xref>]. Virus particles are natural nanomaterials and have received
+                particular attention as novel building blocks for designing, elucidating and determining. Medical diagnostics, especially in the field of clinical virology, significantly depends on
+                detection of viral antigen, virus particles or genomic materials in samples from infected individuals. The visualization, characterization and quantification of biological processes at
+                the molecular and cellular levels in humans and other organisms are the vast and most critical applications of nanotechnology in viral biology and infected disease medicine&nbsp;[<xref
+                    ref-type="bibr" rid="ansn432030bib05">5</xref>].</p>
+            <p>The introduction of labeling agents into biological viral systems is usually required as an organism lacks sensitive detectable signals. Biological analysis was first introduced by
+                American scientists Yalow and Benson in the form of radioimmunoassay (RIA)&nbsp;[<xref ref-type="bibr" rid="ansn432030bib06">6</xref>]. Although there are many advantages in using RIA,
+                owing to its high sensitivity and wide application, it does have a number of drawbacks, such as its radioactivity and inherently short half life&nbsp;[<xref ref-type="bibr"
+                    rid="ansn432030bib07">7</xref>]. Therefore, various nonradiative labeling techniques based on enzyme-catalyzed reactions, bio/chemiluminescence&apos;s and fluorescence, for
+                example, have emerged, among which fluorescent labeling is the most widely used&nbsp;[<xref ref-type="bibr" rid="ansn432030bib08">8</xref>,<xref ref-type="bibr" rid="ansn432030bib09"
+                    >9</xref>]. Organic dyes are amongst the earliest types of classical fluorescent labels used in biology. Despite their inherent drawbacks such as having a short Stockes shift, poor
+                photochemical stability, susceptibility to photobleaching and decomposition under repeated excitation, organic dyes are still popular due to their low cost, availability and ease of
+                    usage&nbsp;[<xref ref-type="bibr" rid="ansn432030bib10">10</xref>]. Recently quantum dots (QDs), semiconductor nanocrystals composed of atoms from groups II&ndash;VI or III&ndash;V
+                of the periodic table, show unique optical properties making them appealing as fluorescent labels in biological investigations. However, despite QDs&rsquo; potential and success so far
+                in biological applications, there exist several limitations associated with their use. A typical problem with QDs is optical blinking, which makes the application of QDs in qualitative
+                assays difficult. Furthermore, QDs themselves are not biocompatible and have to be surface modified before they are used in live cell or animal experiments. In regards to sustainable
+                development, QDs have great problems with toxicity of the heavy metals they are fabricated from&nbsp;[<xref ref-type="bibr" rid="ansn432030bib11">11</xref>].</p>
+            <p>On the other hand, like semiconductor-based luminescent materials, conventional lanthanide-doped bulk phosphors have played a vital role in numerous practical applications such as
+                laser, monitor screen, fluorescent lamp and display. The energy flow in the lanthanide compound is derived by the transition from excited singlet level through intersystem crossing to
+                triplet state and from this triplet state to the imitative levels of the lanthanide ion. Figure <xref ref-type="fig" rid="ansn432030fig1">1</xref> shows a simplified diagram of the
+                relevant energy levels of various luminescent lanthanides. Among the lanthanides there are two elements, Eu and Tb, with strong emission potential in red or green spectral regions, as
+                the most attractive tools for biomedical labeling or imaging.</p>
+            <fig id="ansn432030fig1" position="float">
+                <label>Figure 1.</label>
+                <caption id="ansn432030fc1">
+                    <p>Energy level of the 4F<sub>n</sub> configuration of luminescent trivalent lanthanide ions.</p>
+                </caption>
+                <graphic id="ansn432030f1_eps" content-type="print" xlink:href="ansn432030f1_pr.eps"/>
+                <graphic id="ansn432030f1_online" content-type="online" xlink:href="ansn432030f1_online.jpg"/>
+            </fig>
+            <p>However, studies on nanoparticles of these materials are largely behind those of quantum dots. Increasingly, efforts have been focused on lanthanide-doped luminescent nanoparticles and
+                this has yielded notable progress. Several research groups have reported the synthesis of well dispersed colloids of yttrium vanadate and lanthanum fluoride nanoparticles doped with
+                lanthanide (III)&nbsp;[<xref ref-type="bibr" rid="ansn432030bib12">12</xref>&ndash;<xref ref-type="bibr" rid="ansn432030bib15">15</xref>].</p>
+            <p>Especially, the approach for synthesis of the core/shell nanoparticles, in which the core is doped with luminescent lanthanide ion, has solved the problem of low quantum yield that is
+                inherent to lanthanide-doped with lanthanide luminescent nanoparticles&nbsp;[<xref ref-type="bibr" rid="ansn432030bib16">16</xref>,<xref ref-type="bibr" rid="ansn432030bib17"
+                >17</xref>]. In particular, they are strongly fluorescent, less toxic and readily synthesized in water, which greatly facilitates further biofunctionalization. More recently, there was
+                the first report on inorganic lanthanide phosphate fluorescent nanorods as fluorescent labels in human umbilical vein endothelical cells (HUVEC), 760-O cells&nbsp;[<xref
+                    ref-type="bibr" rid="ansn432030bib12">12</xref>] in live cell biology&nbsp;[<xref ref-type="bibr" rid="ansn432030bib18">18</xref>] and later on functionalized europium hydroxide
+                nanorods for <italic>in vitro</italic> imaging of human lung carcinoma cells&nbsp;[<xref ref-type="bibr" rid="ansn432030bib19">19</xref>]. Indeed lanthanide orthophosphate
+                    (LnPO<sub>4</sub>) belongs to two polymorphic types, the monoclinic monazite type (for La to Gd) and quadratic xenotime type (for Tb to Lu). Due to high quantum efficiency (QE),
+                bulk lanthanide phosphate as an ideal host in fluorescent lamps, cathode ray type (CRT) and plasma display panel (PDP), has been extensively investigated. It is expected that nanosized
+                rare earth (RE) compounds can increase luminescent QE and display resolution. To improve luminescent properties of nanocrystalline phosphors, many preparation methods have been used
+                such as solid state reactions, sol&ndash;gel techniques, hydroxide preparation, and hydrothermal synthesis, spray pyrolysis, laser-heated evaporation, combustion synthesis with the
+                assistance of ultrasound and microwave. Currently, the luminescent RE-doped low dimensional nanomaterials such as LaPO<sub>4</sub> nanowires&nbsp;[<xref ref-type="bibr"
+                    rid="ansn432030bib20">20</xref>], Y<sub>2</sub>O<sub>3</sub>:RE and La<sub>2</sub>O<sub>3</sub>:Eu nanotubes/nanowires&nbsp;[<xref ref-type="bibr" rid="ansn432030bib21">21</xref>]
+                are also attracting considerable interest. One-dimensional 1D and 2D structures, such as tubes, wires, rods and belts, have aroused remarkable attention over the past decade due to a
+                great deal of potential applications, such as data storage&nbsp;[<xref ref-type="bibr" rid="ansn432030bib22">22</xref>], advanced catalyst&nbsp;[<xref ref-type="bibr"
+                    rid="ansn432030bib23">23</xref>] and photoelectronic devices&nbsp;[<xref ref-type="bibr" rid="ansn432030bib24">24</xref>]. On the other hand, in comparison with 0D structures, the
+                space anisotropy of 1D structures provides a better model system to study the dependence of electronic transport and optical and mechanical properties on size confinement and
+                    dimensionality&nbsp;[<xref ref-type="bibr" rid="ansn432030bib25">25</xref>]. Therefore, it is expected that the effect of 0D and 1D nanomaterials based on lanthanide luminescent
+                nanocrystals will clearly happen in the field of biology and medicine.</p>
+            <p>Despite the above attractive features, the forbidden nature of <sup>4</sup>f<sub>5</sub>&ndash;<sup>4</sup>f<sub>5</sub> transition of lanthanide ions has nevertheless limited the
+                brightness of lanthanide-based biolabels for cell and virus imaging. Antenna-lanthanide ion energy transfer is an effective way to improve the quantum efficiency of lanthanide
+                    materials&nbsp;[<xref ref-type="bibr" rid="ansn432030bib26">26</xref>]. As a matter of fact, lanthanide-based nanomaterials are stable and are easy to fabricate and functionalize.
+                The lanthanide nanophosphors can readily be internalized by cells and generally exhibit no apparent detrimental effect on cell viability. Thus, besides biolabeling, they are also good
+                candidates for <italic>in vitro</italic> and <italic>in vivo</italic> targeted drug/gene delivery vehicles. Nevertheless, most nanoparticles reported in past immunoassays are
+                &gt;30&nbsp;nm in diameter. These particles sizes are proven to bring obvious prolonged equilibration time and enhanced nonspecific adsorption&nbsp;[<xref ref-type="bibr"
+                    rid="ansn432030bib27">27</xref>]. Therefore nanoparticles have a smaller size, their kinetic properties could meanwhile be improved and nonspecific adsorption decreased. Moreover,
+                the nanoparticles should be big enough to bind several proteins on the surface, which is expected to increase the immunological affinity.</p>
+            <p>In the field of lanthanide luminescent nanomaterials, nanosized lanthanide chelates have a special position. The lanthanide chelate labels in biological studies contain typically
+                organic chromospheres, which sensitize the absorption of the excitation light and the energy transfer to the lanthanide ions. Consequently, lanthanide chelates exhibit broad excitation
+                spectra owing to the organic ligands and narrow emission spectra resulting from the lanthanide ions. Recently, their application to biological labeling has attracted growing interest
+                due to their high photostability, quantum yield and good water solubility, and because they possess a reactive group that allows covalent attachment to the biomolecular system. The
+                spectral characteristics include a long fluorescence lifetime (submicrosecond to millisecond range), sharply and spiky emission spectra, with full-width at half-maximum (FWHM) less
+                than 10&nbsp;nm, large stock shifts and high quantum yield&nbsp;[<xref ref-type="bibr" rid="ansn432030bib28">28</xref>].</p>
+            <p>Besides, rare earth upcoverting fluorescence nanophoshors have been developed as a novel generation of luminescent labels due to their super optical features in the near infrared
+                spectral region from 800 to 1000&nbsp;nm&nbsp;[<xref ref-type="bibr" rid="ansn432030bib29">29</xref>]. As this field is rapidly developing, we can expect that rare earth doped
+                nanophosphors will find their way into even more elaborate biotechnological application in the future due to their relatively simple nanocomposition, deep penetration depth of near
+                infrared (NIR) light and other advantageous photonic features&nbsp;[<xref ref-type="bibr" rid="ansn432030bib30">30</xref>,<xref ref-type="bibr" rid="ansn432030bib31">31</xref>].</p>
+            <p>In regards to developing a targeted biolabel, imaging tool, drug delivery and therapy, specific targeting functional groups on the surface of nanophosphors are desired to be conjugated
+                to biomolecules, such as small molecules like biotin, avidine, streptavidin, macromolecules as peptides, antibodies or proteins. Apart from that, PEGylation, or linker incorporations
+                on the surface may possibly be involved for certain labeling, imaging or therapy purposes. Once LLNs have been formed, an additional layer of linker molecules with various reactive
+                functional groups (e.g. amine, thiol, thiocyanat or carboxyl) is often attached. These functional groups can act as a scaffold for the grafting of biological moieties by means of
+                standard covalent bioconjugation schemes such as thioures coupling, base Schiff, thiol tag, amide forming and click chemistry&nbsp;[<xref ref-type="bibr" rid="ansn432030bib32"
+                    >32</xref>] (figure&nbsp;<xref ref-type="fig" rid="ansn432030fig2">2</xref>). In addition to covalent binding to the LLNs&rsquo; surface, bio-labeling entities can also be
+                physically adsorbed onto the LLNs&rsquo; surface using electrostatic interactions between LLNs and charged adapter molecules&nbsp;[<xref ref-type="bibr" rid="ansn432030bib33"
+                    >33</xref>,<xref ref-type="bibr" rid="ansn432030bib34">34</xref>]. However, covalent binding of biomolecules to LLNs is preferred, not only to avoid desorbtion from the LLNs
+                surface, but also to control the number and orientation of the immunobilized bi-recognition entities, which could be useable to develop a consistent tool for biomedical
+                application.</p>
+            <fig id="ansn432030fig2" position="float">
+                <label>Figure 2.</label>
+                <caption id="ansn432030fc2">
+                    <p>Bioconjugation routes based on chemical modification of nanostructures&rsquo; surface with a biosystem to make a biosensor.</p>
+                </caption>
+                <graphic id="ansn432030f2_eps" content-type="print" xlink:href="ansn432030f2_pr.eps"/>
+                <graphic id="ansn432030f2_online" content-type="online" xlink:href="ansn432030f2_online.jpg"/>
+            </fig>
+            <p>To the best of our knowledge, there is no report on the study of LLNs (0D) and nanorod (1D) as a micro-optical fluorescent label for viral biomedical application. Based on these
+                backgrounds the aim of our work is to develop a new biolabel tool (biosensor) derived from the Eu(III) or Tb(III) lanthanide nanophosphors with 0D or 1D configuration. Furthermore, the
+                LLN linked bioconjugate will be used as a biomedical label for recognizing virus/vaccine using fluorescence immunoassay (FIA). The first stage is synthesis of nanoparticles as
+                    YVO<sub>4</sub>:Eu(III) and Eu.NTA.TOPO complex and of nanorods EuPO<sub>4</sub>&middot;H<sub>2</sub>O and TbPO<sub>4</sub>&middot;H<sub>2</sub>O to matching fluorescent biomedical
+                label tool. Then the binding of the lanthanide nanophosphors with an immunstimulative system such as immunoglobulin G (IgG) or bovine serum albumin (BSA) was investigated in the
+                preparation of a new conjugate for biomedical application, in particular for fluorescent immunoassay analysis of virus or vaccine. In our work, the study was done by using a
+                fluorescent optical microscope to detect and determine emission microplace on the surface of a specimen of the biomedical label expired vaccine. The results indicated that the
+                bioconjugation method and LLN conjugate were effective and set the foundation for real application of lanthanide nanophosphors in research of viral biomedical process and potential
+                application in quality control for industrial production of vaccine.</p>
+        </sec>
+        <sec id="ansn432030s2">
+            <label>2.</label>
+            <title>Experimental procedures</title>
+            <sec id="ansn432030s2-1">
+                <label>2.1.</label>
+                <title>Synthesis of luminescent lanthanide nanomaterials</title>
+                <p>We have synthesized all the lanthanide nanophosphors in water for biomedical application. Nanosynthesis controlling the size, shape, structures and morphology was used thoroughly
+                    for lanthanide nanophosphors in the form of nanoparticles or nanorods&nbsp;[<xref ref-type="bibr" rid="ansn432030bib35">35</xref>]. Nanoparticle YVO<sub>4</sub>: Eu(III) was
+                    synthesized by several techniques in an aqueous solution such as coprecipitation or in the presence of soft template&nbsp;[<xref ref-type="bibr" rid="ansn432030bib36"
+                        >36</xref>,<xref ref-type="bibr" rid="ansn432030bib37">37</xref>]. Nanosized core/shell Eu.NTA.TOPO@PVP or silica was prepared with vortex technique in colloidal solvent system
+                    at room temperature&nbsp;[<xref ref-type="bibr" rid="ansn432030bib38">38</xref>]. Nanorods and wires EuPO<sub>4</sub>&middot;H<sub>2</sub>O, TbPO<sub>4</sub>&middot;H<sub>2</sub>O,
+                            Eu<sub><italic>X</italic></sub>Tb<sub>1-<italic>X</italic></sub> PO<sub>4</sub>&middot;H<sub>2</sub>O have been synthesized with assisted microwave heating in an opening
+                    reactor system&nbsp;[<xref ref-type="bibr" rid="ansn432030bib39">39</xref>,<xref ref-type="bibr" rid="ansn432030bib40">40</xref>].</p>
+            </sec>
+            <sec id="ansn432030s2-2">
+                <label>2.2.</label>
+                <title>Organic functionalization and binding of lanthanide nanophosphors with biomolecule</title>
+                <p>The functionalization of the nanophosphors is a key step toward biomedical application. As mentioned above, applications of nanoparticles require preliminary grafting at
+                    nanophosphor surface of organic or bio-organic functions. Different approaches are used such as encapsulation with functional polymers&nbsp;[<xref ref-type="bibr"
+                        rid="ansn432030bib41">41</xref>] or direct grafting of biofunctional ligands&nbsp;[<xref ref-type="bibr" rid="ansn432030bib42">42</xref>]. In this study, we used the approach
+                    that relies on the encapsulation of nanoparticles or nanorod with a thin layer of functional polysiloxane. They have been largely developed for the surface modification of various
+                    substrates such as flat silica or silicon wafer for adhesion promotion&nbsp;[<xref ref-type="bibr" rid="ansn432030bib24">24</xref>] or biochips&nbsp;[<xref ref-type="bibr"
+                        rid="ansn432030bib25">25</xref>]. Functionalization of colloidal nanoparticles has also been studied in many systems such as silica&nbsp;[<xref ref-type="bibr"
+                        rid="ansn432030bib43">43</xref>], magnetite&nbsp;[<xref ref-type="bibr" rid="ansn432030bib44">44</xref>] and quantum dot&nbsp;[<xref ref-type="bibr" rid="ansn432030bib45"
+                        >45</xref>]. It has also been used in the case of lanthanide doped compounds such as gadolinium oxide&nbsp;[<xref ref-type="bibr" rid="ansn432030bib46">46</xref>] and lanthanum
+                    fluoride or ceriumphosphate&nbsp;[<xref ref-type="bibr" rid="ansn432030bib47">47</xref>,<xref ref-type="bibr" rid="ansn432030bib48">48</xref>].</p>
+                <p>In this study, the organic functionalization of YVO<sub>4</sub>:Eu(III), Eu.NTA.TOPO nanoparticles and TbPO<sub>4</sub>&middot;H<sub>2</sub>O;
+                    EuPO<sub>4</sub>&middot;H<sub>2</sub>O, (Eu,Tb)PO<sub>4</sub>&middot;H<sub>2</sub>O nanorods has used sol&ndash;gel technology. The first step is to build a protection shell for
+                    the nanophosphor core from the external microenvironment. In the meantime the protection shell provides improvement of the core stability, spectroscopic and physical properties.
+                    Besides, organic groups such as amine, mercapto, isothiocynate or carboxyl in the shell layer can be used for linking with biomolecule via a chemical reaction route. Shell
+                    materials bearing good biocompatibility will also improve the water emulsion stability, reduce unexpected immunophysiological side effects <italic>in vivo</italic>, and facilitate
+                    the penetration of nanophosphor core in biomedical environment.</p>
+                <sec id="ansn432030s2-2-1">
+                    <label>2.2.1.</label>
+                    <title>Fabrication of the primary silicate shell as protect layer.</title>
+                    <p>10&nbsp;ml of methyltetraoxysililan and tetraethoxysililane (1/2) in absolute ethanol and 10&nbsp;ml of as-synthesized TbPO<sub>4</sub>&middot;H<sub>2</sub>O solution was mixed
+                        by a magnetic stirring overnight at room temperature. The pH of this solution was adjusted to the range of 11&ndash;12 by adding NH<sub>4</sub>OH 10&nbsp;M. The resulting
+                        products were collected, centrifuged and washed several times with ethanol and distilled water. The final products were dried at 60&nbsp;&deg;C for 24&nbsp;h in air.</p>
+                </sec>
+                <sec id="ansn432030s2-2-2">
+                    <label>2.2.2.</label>
+                    <title>Trialkoxysilane shell deposition.</title>
+                    <p>We have studied two trialkoxysilanes, aminopropyltrimetoxysililane (APTMS) or thiocyanate propyltrimetoxysililane (TCTMS) with NH<sub>2</sub> or SCN as functional groups. In
+                        typical synthesis, 22.5&nbsp;ml of absolute ethanol and 2&nbsp;ml of trialkoxysilane (either APTMS or TCTMS) were put in a 100&nbsp;ml three-necked flask under magnetic
+                        stirring at room temperature for 30&nbsp;min. The solution is heated up to 60&nbsp;&deg;C under reflux. Then 5&nbsp;ml of the TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorod
+                        solution at pH 8 is added drop wise. The reaction time is about 3&nbsp;h. The solution is then gently stirred for 20&nbsp;h. The resulted products were collected by three
+                        centrifugation/dispersion steps in a water/ethanol mixture (2:5, <italic>v</italic>/<italic>v</italic>). The final products were dried at 60&nbsp;&deg;C for 24&nbsp;h in
+                        air.</p>
+                </sec>
+                <sec id="ansn432030s2-2-3">
+                    <label>2.2.3.</label>
+                    <title>Protein binding with sol&ndash;gel functionalized nanophosphors.</title>
+                    <p>Coupling of protein as immunoglobulin to the APTMS functionalized nanoparticles or nanorods was achieved using an amine reactive linker as glutaraldehyde or
+                            carbodimide&nbsp;[<xref ref-type="bibr" rid="ansn432030bib49">49</xref>, <xref ref-type="bibr" rid="ansn432030bib50">50</xref>], or on the other hand to the thiocyanate by
+                        forming thioure linker&nbsp;[<xref ref-type="bibr" rid="ansn432030bib32">32</xref>, <xref ref-type="bibr" rid="ansn432030bib51">51</xref>]. The APTMS treated
+                            TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorod solution and glutaraldehyde were dispersed in phosphate buffered saline (PBS, 0.1 M, pH&nbsp;5) with concentration of
+                            5&nbsp;g&nbsp;l<sup>&minus;1</sup>. Immunoglobulin G (IgG) (Aldrich) of different concentration was added to 5&nbsp;ml of the above solution. These reaction mixtures were
+                        incubated at 30&nbsp;&deg;C for 4&nbsp;h. The resulting products were collected, centrifuged at 5900&nbsp;rpm, and washed several times using ethanol and distilled water. The
+                        IgG linked TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods were stored in closed box at 4&nbsp;&deg;C in a refrigerator.</p>
+                </sec>
+            </sec>
+            <sec id="ansn432030s2-3">
+                <label>2.3.</label>
+                <title>Fluorescent immunoassay analysis</title>
+                <p>To demonstrate the application potential of IgG coupled LLNs in viral biology and medicine the investigation of the new nanolabel for detection of measles or rota viruses by using
+                    fluorescent immunoassay has been implemented. Vero cells of 3&ndash;4 days are detached by trypsin ethylendiaminetetraacetic acetic acid (EDTA) 0.05&percnt; solution making cell
+                    suspension at final concentration of 200,000 cell&nbsp;ml<sup>&minus;1</sup>. Add 3 ml-cell suspension/well (the coverslip was prior put in each well), incubate at 37&nbsp;&deg;C
+                    for three days in an incubator with 5&percnt; CO<sub>2</sub>. Measles vaccine vial is reconstituted by 5.5&nbsp;ml of distilled water and mixed well. Vaccine solution is diluted 10
+                    times by minimum essential medium eagle (MEM) with 5&percnt; bovine serum, incubated 0.1&nbsp;ml well (on cover slip vero cell), virus absorption at 37&nbsp;&deg;C, 60&nbsp;min.
+                    Add 3&nbsp;ml of MEM 2&percnt; bovine serum/well and incubate at 37&nbsp;&deg;C and 5&percnt; CO<sub>2</sub> for three days. Take out cover slip from the well and put in the tube
+                    with hole, inactivate the cell by acetone for 15&nbsp;min, then wash 3 times by phosphate buffered saline (PBS). Dry the cover slip and set it on a slide glass. Put Ig-linked NP or
+                    NR on the surface of the cells. Close the tray and incubate at 37&nbsp;&deg;C for 60&nbsp;min. Treat again with PBS 3 times. Dry the cover slip and then bring the specimen to
+                    imaging by a fluorescent optical microscopy for recognizing the virus.</p>
+            </sec>
+            <sec id="ansn432030s2-4">
+                <label>2.4.</label>
+                <title>Measuring equipment and measurements</title>
+                <p>The morphology of the as-synthesized samples was observed by using a field emission scanning electron microscopy (FE-SEM, Hitachi and S-4800). X-ray diffraction (XRD) measurements
+                    were performed on an x-ray diffractometer Siemens D5000 with <italic>&lambda;</italic>&nbsp;&equals;&nbsp;1.5406&nbsp;&Aring; in the range of 15<sup>o</sup>&nbsp;&le;&nbsp;
+                        2<italic>&theta;</italic> &le;75&deg;).</p>
+                <p>The photoluminescent (PL) spectra of the nanophosphors were also determined by using a spectrometer HORIBA JOBIN YVON IHR 550, NANOLOG iHR 320, HORIBA and conducted at room
+                    temperature. High-tech cleaning platforms for vaccine industrial production were used throughout the experimental cell incubation and FIA analysis. The microsized images of the
+                    specimens from the virus infected cells exposure with the conjugates from nanoparticles or nanorods have been viewed by a fluorescent microscopic equipment Olympus BX-40 (Japan)
+                    and pictured by a digital camera Nikon, D5000 with resolution of 12.30, f/3.5&ndash;5.6 G&nbsp;VR.</p>
+            </sec>
+        </sec>
+        <sec id="ansn432030s4">
+            <label>3.</label>
+            <title>Results and discussion</title>
+            <sec id="ansn432030s4-1">
+                <label>3.1.</label>
+                <title>The structures of the LLNs</title>
+                <sec id="ansn432030s4-1-1">
+                    <label>3.1.1.</label>
+                    <title>YVO<sub>4</sub>:Eu(III) nanoparticles&nbsp;[<xref ref-type="bibr" rid="ansn432030bib52">52</xref>].</title>
+                    <p>The mean size of the YVO<sub><sc>4</sc></sub>:Eu(III) nanoparticles at 160&ndash;180&nbsp;&deg;C prepared by using the hydrothermal technique is about 18&ndash;20&nbsp;nm. As
+                        temperature increases 200&ndash;220&nbsp;&deg;C, the mean size decreases to around 10&nbsp;nm. When increasing the reaction time from 1 to 24&nbsp;h, the particle size is
+                        reduced from 12 to 8&nbsp;nm and distributed more evenly. Thus, with the factors of temperature and reaction time, we can control the desired nanoparticles size. Most of the
+                        nanoparticles reported in past immunoassays are from 30 to 20&nbsp;nm in diameter. Particle sizes over 30&nbsp;nm are proven to bring obviously prolonged equilibration time and
+                        enhanced nonspecific adsorption&nbsp;[<xref ref-type="bibr" rid="ansn432030bib24">24</xref>]. The nanoparticles with smaller sizes have improved kinetic properties and
+                        non-specific adsorption. Moreover, the nanoparticles should be big enough to bind several proteins on the surface, which is expected to increase the immunological
+                            affinity&nbsp;[<xref ref-type="bibr" rid="ansn432030bib50">50</xref>]. The XRD pattern of the YVO<sub><sc>4</sc></sub>:Eu(III) nanoparticles is investigated in detail. The
+                        crystal form of the obtained YVO<sub><sc>4</sc></sub>:Eu(III) nanoparticles is wakefieldite (Y) tetragonal.</p>
+                </sec>
+                <sec id="ansn432030s4-1-2">
+                    <label>3.1.2.</label>
+                    <title>Eu<sub>X</sub>Tb<sub>1&minus;X</sub>.NTA.TOPO&nbsp;[<xref ref-type="bibr" rid="ansn432030bib38">38</xref>].</title>
+                    <p>In this research uniform fluorescent nanoparticles were synthesized in one step at room temperature. From the FESEM images of synthesized nanoparticles of Tb(III) doped Eu(III)
+                        chelate with TOPO and NTA ligands, aggregation of nanoparticles is not observed. The obtained nanosized particles were uniform with a mean diameter of 25 &plusmn; 5&nbsp;nm and
+                        shell thickness of 10&nbsp;nm.</p>
+                    <p>The Fourier transform infrared (FTIR) spectra of the synthesized nanoparticles of Tb(III)-doped Eu(III) chelates showing a broad band at wavenumber of
+                            3444&nbsp;cm<sup>&minus;1</sup> is attributed to the H<sub>2</sub>O molecule, and the band at 1650&nbsp;cm<sup>&minus;1</sup> related to the C &equals; O group of the
+                        ligand. The complexation between Eu(III) and Tb(III) with NTA.TOPO ligands is evidenced by a narrow band located at 1388&nbsp;cm<sup>&minus;1</sup>, which appeared to prove
+                        that Eu(III) or Tb(III) ions may be coordinated to two oxygen atoms of ligands.</p>
+                    <p>The successful synthesis of a nanosized metalorganic complex having the active rare earth mixing ions Tb and Eu with high quantum yield emission, high photostability and their
+                        good water solubility provides promising research for biomedical photonic engineering.</p>
+                </sec>
+                <sec id="ansn432030s4-1-3">
+                    <label>3.1.3.</label>
+                    <title>EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods&nbsp;[<xref ref-type="bibr" rid="ansn432030bib37">37</xref>], TbPO<sub>4</sub>&middot;H<sub>2</sub>O&nbsp;[<xref
+                            ref-type="bibr" rid="ansn432030bib36">36</xref>, <xref ref-type="bibr" rid="ansn432030bib39">39</xref>] and Eu<sub>X</sub>Tb<sub>1-X</sub>
+                            PO<sub>4</sub>&middot;H<sub>2</sub>O nanorods and nanowires&nbsp;[<xref ref-type="bibr" rid="ansn432030bib40">40</xref>].</title>
+                    <p>From the FE-SEM images, one can estimated that the mean size of the EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods is about 15&ndash;20&nbsp;nm in diameter and
+                        300&ndash;500&nbsp;nm in length. For the case of the EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods prepared by using diethylene glycol (DEG), the length of
+                            EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods became shorter with 100&ndash;300&nbsp;nm, while the diameter is almost the same. Similarly, by using polyethylene glycol
+                        (PEG) in the preparative procedure of EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods, the mean sizes of EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods are about
+                        15&ndash;20&nbsp;nm in diameter and 200&ndash;300&nbsp;nm in length. Therefore, with results of FE-SEM, a pivotal role of soft template agents in reducing the nanorods&rsquo;
+                        mean length was clarified.</p>
+                    <p>The EuPO<sub>4</sub>&middot;H<sub>2</sub>O prepared at pH &equals; 2 indicates that the nanorods have bundle shapes with the lengths of rod about 300&ndash;500&nbsp;nm and
+                        diameter of rod about 15&ndash;20&nbsp;nm. With the increase in pH value to pH &equals; 6 or pH &equals; 8, the length of nanorods was decreased to about 150&ndash;250&nbsp;nm
+                        while the diameter of nanorods was unchanged.</p>
+                    <p>The prepared EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods showed a rhabdophane-type hexagonal form. Qualitatively, the use of DEG and PEG as soft template agents causes no
+                        change in crystalline phase composition.</p>
+                    <p>The hydrated europium orthophosphate was always obtained as a unique product. It is a real perspective result with regard to biological fluorescence labeling application, which
+                        required luminescent nanomaterials to react with biological species readily&nbsp;[<xref ref-type="bibr" rid="ansn432030bib29">29</xref>].</p>
+                    <p>The FE-SEM images of TbPO<sub>4</sub>&middot;H<sub>2</sub>O samples synthesized by using microwave (MW) heating of an aqueous solution containing Tb(NO<sub>3</sub>)<sub>3</sub>
+                        and NH<sub>4</sub>H<sub>2</sub>PO<sub>4</sub> at pH &equals; 2 with various microwave irradiated powers ranged from 300 to 900 W were studied. The nanorods/nanowires are
+                        uniformly distributed with diameters in the range of 5&ndash;10&nbsp;nm and lengths ranged from 150 to 350&nbsp;nm (figure&nbsp;<xref ref-type="fig" rid="ansn432030fig3"
+                            >3</xref>). There exists a critical value of irradiated power of 500 W for these nanorods/nanowires tending to bunch with the further increase in microwave irradiated
+                        powers.</p>
+                    <fig id="ansn432030fig3" position="float">
+                        <label>Figure 3.</label>
+                        <caption id="ansn432030fc3">
+                            <p>FE-SEM of TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires, MW power &lt;500&nbsp;W.</p>
+                        </caption>
+                        <graphic id="ansn432030f3_eps" content-type="print" xlink:href="ansn432030f3_pr.eps"/>
+                        <graphic id="ansn432030f3_online" content-type="online" xlink:href="ansn432030f3_online.jpg"/>
+                    </fig>
+                    <p>XRD patterns of the as-synthesized TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires indicate only single crystalline phase of TbPO<sub>4</sub>&middot;H<sub>2</sub>O.
+                        All diffraction peaks can be distinctly indexed to a rhabdophane-type pure hexagonal phase. These results are as similar as those reported previously&nbsp;[<xref
+                            ref-type="bibr" rid="ansn432030bib12">12</xref>]. Qualitatively, the switching of microwave irradiated power causes no change in chemical composition as well as crystalline
+                        phase. This implied that, by using microwave synthesis apparatus and an aqueous solution containing Tb(NO<sub>3</sub>)<sub>3</sub> and NH<sub>4</sub>H<sub>2</sub>PO<sub>4</sub>
+                        at suitable reaction conditions on pH value, the hydrated terbium orthophosphate, was always obtained as a unique product instead of anhydrous TbPO<sub>4</sub>. In the crystal
+                        structure of this monohydrate salt, each Tb<sup>3&plus;</sup> cation is not coordinated by oxygen atoms which reside at two different crystallographic sites, O1 and O2, of
+                            PO<sub>4</sub><sup>3-</sup> anions only as observed in the case of TbPO<sub>4</sub>, but is also connected to oxygen atoms (O3w) of two hydrate water molecules. The
+                        interatomic distances between Tb<sup>3&plus;</sup> cation and oxygen atoms of two hydrate water molecules of about 2.6&nbsp;&Aring; are significantly longer than those of
+                            Tb<sup>3&plus;</sup> cation and oxygen atoms of PO<sub>4</sub><sup>3-</sup> anions (about 2.3&nbsp;&Aring;).</p>
+                    <p>As a result, it is quite reasonable to expect that TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanomaterials exhibit higher hydrophilability and are better distributed in water
+                        medium than those of anhydrous TbPO<sub>4</sub>. Indeed these material features of TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorod enable more chemical activity and also more
+                        compatibility with a biomedical system. It is really a perspective result regarding biomedical labeling, which requires high hydrophilability and biocompatibility of
+                        luminescent nanomaterials.</p>
+                    <p>In our laboratory for the first time Eu<sub><italic>X</italic></sub>,Tb<sub>1-<italic>X</italic></sub> PO<sub>4</sub>&middot;H<sub>2</sub>O nanorods and nanowires with lengths
+                        from 150&ndash;200&nbsp;nm and widths of about 5&ndash;6&nbsp;nm were successfully synthesized with various concentration rates (X) of Eu and Tb by using different MW power.
+                        The decrease in Eu<sup>3&plus;</sup> molar concentration led to the increase in length of nanorods/nanowires from 150 to 300&nbsp;nm and, at the same time, the increase in
+                        their width from 5 to 10&nbsp;nm. (Eu,Tb)PO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires indicate only single crystalline phase. All reflections of the XRD patterns can
+                        be distinctly indexed to a rhabdophane-type pure hexagonal phase (figure&nbsp;<xref ref-type="fig" rid="ansn432030fig4">4</xref>).</p>
+                    <fig id="ansn432030fig4" position="float">
+                        <label>Figure 4.</label>
+                        <caption id="ansn432030fc4">
+                            <p>XRD patterns of Eu<sub><italic>X</italic></sub>Tb<sub>1-<italic>X</italic></sub>PO<sub>4</sub>&middot;H<sub>2</sub>O nanorod synthesized by using MW heating with
+                                different Eu<sup>3&plus;</sup>/Tb<sup>3&plus;</sup> molar ratios. ET16- code: Eu <sub>0.0625</sub>Tb <sub>0.9375</sub> PO<sub>4</sub>&middot;H<sub>2</sub>O; ET18-code:
+                                Eu <sub>0.0555</sub>Tb <sub>0.9445</sub>PO<sub>4</sub>&middot;H<sub>2</sub>O; ET4-code: Eu<sub>0.2500</sub>Tb<sub>0.7500</sub>PO<sub>4</sub>&middot;H<sub>2</sub>O;
+                                ET0-code: TbPO<sub>4</sub>&middot;H<sub>2</sub>O.</p>
+                        </caption>
+                        <graphic id="ansn432030f4_eps" content-type="print" xlink:href="ansn432030f4_pr.eps"/>
+                        <graphic id="ansn432030f4_online" content-type="online" xlink:href="ansn432030f4_online.jpg"/>
+                    </fig>
+                    <p>This implies that the crystal structures of all Eu<sup>3&plus;</sup>-doped terbium orthophosphate monohydrates are isostructural to that of pure
+                            TbPO<sub>4</sub>&middot;H<sub>2</sub>O.</p>
+                    <p>Thus, by using microwave synthesis method and an aqueous solution containing nitrates of trivalent rare-earth ions and NH<sub>4</sub>H<sub>2</sub>PO<sub>4</sub> at a suitable pH
+                        value of 2 the hexagonal phase of europium/terbium orthophosphate monohydrate (Eu,Tb)PO<sub>4</sub>&middot;H<sub>2</sub>O, was obtained as a unique product with Eu(III) molar
+                        concentration ranging from 6 up to 20 at.&percnt;.</p>
+                </sec>
+            </sec>
+            <sec id="ansn432030s4-2">
+                <label>3.2.</label>
+                <title>The photoluminescence properties</title>
+                <sec id="ansn432030s4-2-1">
+                    <label>3.2.1.</label>
+                    <title>YVO<sub>4</sub>:Eu(III) nanoparticles&nbsp;[<xref ref-type="bibr" rid="ansn432030bib52">52</xref>].</title>
+                    <p>YVO<sub>4</sub>:Eu(III) nanoparticles exhibit strong red luminescence with narrow bands corresponding to the intra-4f transitions of
+                                <sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub><italic>j</italic></sub>(<italic>j</italic> &equals; 1, 2, 3, 4) Eu<sup>3&plus;</sup>. The peaks were found at
+                        594&nbsp;nm (<sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>1</sub>), 619&nbsp;nm (<sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>2</sub>), 651&nbsp;nm
+                            (<sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>3</sub>), and 697&nbsp;nm (<sup>5</sup>D<sub>4</sub>&ndash;<sup>7</sup>F<sub>4</sub>), with the strongest emission at
+                        619&nbsp;nm. The emission peak at 619&nbsp;nm of europium ions was split into two sharp peaks at 615 and 619&nbsp;nm because of the change of ligand field of
+                            Eu<sup>3&plus;</sup>.</p>
+                </sec>
+                <sec id="ansn432030s4-2-2">
+                    <label>3.2.2.</label>
+                    <title>Nanosized Eu.NTA.TOPO chelates&nbsp;[<xref ref-type="bibr" rid="ansn432030bib38">38</xref>].</title>
+                    <p>Emission spectra of nanostructured Eu(III) chelates and Tb(III)-doped Eu(III) chelates in aqueous solution were measured under excitation of
+                            <italic>&lambda;</italic><sub>exc</sub> &equals; 325&nbsp;nm and <italic>&lambda;</italic><sub>exc</sub> &equals; 370&nbsp;nm. It can be seen that the nanoparticle
+                        complexes exhibit the characteristic narrow emission peaks at 616&nbsp;nm of trivalent lanthanide ions. The emission spectra consist of four main peaks at 593, 616, 652 and
+                        702&nbsp;nm, which correspond to the <sup>5</sup>D<sub>0</sub> &rarr;<sup>7</sup>F<sub><italic>n</italic></sub> (<italic>n</italic> &equals; 1, 2, 3, 4) transitions of
+                            Eu(<sup>5</sup>D<sub>0</sub>&nbsp;&rarr;&nbsp;<sup>7</sup>F<sub>1</sub> at 593&nbsp;nm, <sup>5</sup>D<sub>0</sub> &rarr;<sup>7</sup>F<sub>2</sub> at 616&nbsp;nm,
+                            <sup>5</sup>D<sub>0</sub> &rarr;<sup>7</sup>F<sub>3</sub> at 652&nbsp;nm and <sup>5</sup>D<sub>0</sub> &rarr;<sup>7</sup>F<sub>4</sub> at 702&nbsp;nm).</p>
+                    <p>The influence of the dopant to optical properties of the nanoparticle complexes of Tb(III)-doped Eu(III) was investigated. The shape of the spectra of Tb(III)-doped Eu(III)
+                        chelate nanoparticles is similar to that of Eu(III) nanoparticles and the emission maximum is not shifted. However, the fluorescent intensity of nanoparticles in aqueous
+                        solution depends strongly on the ratio of Tb(III) in Eu(III) chelates.</p>
+                </sec>
+                <sec id="ansn432030s4-2-3">
+                    <label>3.2.3.</label>
+                    <title>EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods&nbsp;[<xref ref-type="bibr" rid="ansn432030bib37">37</xref>], TbPO<sub>4</sub>&middot;H<sub>2</sub>O&nbsp;[<xref
+                            ref-type="bibr" rid="ansn432030bib36">36</xref>,<xref ref-type="bibr" rid="ansn432030bib39">39</xref>] and
+                        Eu<sub>X</sub>Tb<sub>1-X</sub>PO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires&nbsp;[<xref ref-type="bibr" rid="ansn432030bib40">40</xref>].</title>
+                    <p>A photoluminescence excitation spectrum of the EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods can either be optically excited in the UV region or in the visible one. The
+                        excitation wavelengths of the EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods were 317, 361, 375, 393, 414 and 464&nbsp;nm. The excitation of
+                            EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods at any of these wavelengths resulted in similar emission spectra in the red spectral region.</p>
+                    <p>The main emission peaks for EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods were observed at 594, 619, 652 and 697&nbsp;nm (due to the
+                            <sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>1</sub>, <sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>2</sub>,
+                            <sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>3</sub> and <sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>4</sub> transitions of Eu(III), respectively) under
+                        excitation at 393 or 464&nbsp;nm. EuPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods yielded the characteristic emission of Eu(III), in which the magnetic dipole allowed
+                            <sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>1</sub> transition at 594&nbsp;nm is the most prominent emission line. This transition is stronger than the electric
+                        dipole allowed <sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>2</sub> transition of Eu<sup>3&plus;</sup> due to the higher symmetry of active ion. Nevertheless, in all the
+                        fluorescence spectra of EuPO<sub>4</sub>&middot;H<sub>2</sub>O only a small nib at 578&nbsp;nm has been found, which can be assigned to
+                            <sup>5</sup>D<sub>0</sub>&ndash;<sup>7</sup>F<sub>0</sub> transition.</p>
+                    <p>In photoluminescence excitation spectra of TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires monitored at 542&nbsp;nm emission line there were the bands of 310, 350, 370
+                        and 480&nbsp;nm. The peak in photoluminescence excitation spectra at 480&nbsp;nm is due to the spin allowed <sup>7</sup>F<sub>6</sub>&ndash;<sup>5</sup>D<sub>4</sub> transition
+                        of the Tb(III) ions. The other peaks at 350&ndash;370 and 310&nbsp;nm are assigned to the intra 4f<sup>8</sup> transitions between the
+                            <sup>7</sup>F<sub>6</sub>&ndash;<sup>5</sup>L<sub>10&ndash;7</sub> and <sup>7</sup>F<sub>6</sub>&ndash;<sup>5</sup>H<sub>7&ndash;4</sub>, respectively. It can be concluded
+                        that the excitation spectra of TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires arise from the optical transitions of trivalent terbium ion Tb(III).</p>
+                    <p>The photoluminescence spectra under 370&nbsp;nm excitation of TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanowires synthesized by using different irradiated powers have the emission
+                        intensity varied as a function of irradiated power and reached a maximum value with 500&nbsp;W. For TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires, the emission
+                        bands centered at 488, 542, 584 and 620&nbsp;nm are assigned to <sup>5</sup>D<sub>4</sub> &rarr; <sup>7</sup>F<sub><italic>J</italic></sub> transitions (<italic>J</italic>
+                        &equals; 6, 5, 4, 3), respectively. The maximum emission peak is found at 542&nbsp;nm of wavelength corresponding to <sup>5</sup>D<sub>4</sub>&ndash;<sup>7</sup>F<sub>5</sub>
+                        transition.</p>
+                    <p>The photoluminescence spectra of Eu<sub><italic>X</italic></sub>Tb<sub>1-<italic>X</italic></sub>PO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires of all investigated
+                        Eu(III)/Tb(III) molar ratios were recorded under 370&nbsp;nm excitation. The intensity of four emission peaks found at 589, 615, 650 and 695&nbsp;nm varied as a function of the
+                        Eu(III)/Tb(III) molar ratio and reached a maximum value with the Eu<sup>3&plus;</sup>/Tb<sup>3&plus;</sup> molar ratio of 1/8. This originated from the energy transfer from
+                        Tb(III) to Eu(III) ions due to the energy overlap between the donor Tb(III) and the acceptor Eu(III).</p>
+                    <p>The emission spectra with characteristic red emission of Eu(III) ions corresponding to the transitions from <sup>5</sup>D<sub>0</sub> to the ground states
+                                <sup>7</sup>F<sub><italic>j</italic></sub> (<italic>j</italic> &equals; 1, 2, 3, 4) are observed, respectively. It is quite interesting that the strongest energy
+                        transfer from Tb(III) to Eu(III) ions was found with the Eu<sup>3&plus;</sup> molar concentration of about 11&percnt;. This value is significantly higher than that reported in
+                        previous works (about 5 at.&percnt;) [53]. For all samples containing Tb(III) ions, the characteristic fluorescence emission peak of 543&nbsp;nm was observed. The intensity of
+                        this peak, however, was suppressed with the increase of Eu<sup>3&plus;</sup> incorporated into the host lattice due to the inhibition of spontaneous emission [54]. The strong
+                        enhancement in intensity of four emission peaks of Eu<sub>0.125</sub>Tb<sub>0.875</sub> PO<sub>4</sub>&middot;H<sub>2</sub>O sample at 589, 615, 650 and 695&nbsp;nm with
+                        respect to that of the pure EuPO<sub>4</sub>&middot;H<sub>2</sub>O sample confirms once again the existence of the energy transfer in (Eu,Tb)
+                            PO<sub>4</sub>&middot;H<sub>2</sub>O nanorods/nanowires.</p>
+                </sec>
+            </sec>
+            <sec id="ansn432030s4-3">
+                <label>3.3.</label>
+                <title>Organic functionalization and bioconjugation</title>
+                <p>The conditions used for silica deposition were chosen to optimize the functional group on the surface for the lowest possible thickness and also to keep the emission properties
+                    unchanged.</p>
+                <p>We present here the influence of the shells and organic functionalization on the photoluminescent characterization of some typical Ln-nanophosphors, for instance, in
+                        TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorod.</p>
+                <p>Surface defects also play important roles in quenching the luminescence of nanophosphor due to the large surface-to-volume ratio of nanophosphors.</p>
+                <p>Based on experimental and theoretical studies, many reports have confirmed that surface and interior environments are different for Ln-ions doped in nanophosphors (figure&nbsp;<xref
+                        ref-type="fig" rid="ansn432030fig5">5</xref>(a)). The situation was substantially changed when the nanophosphor is coated with a functional group linked shell such as amine
+                        (NH<sub>2</sub>) or thiocyanate (SCN) (figures <xref ref-type="fig" rid="ansn432030fig5">5</xref>(b) and (<xref ref-type="fig" rid="ansn432030fig6">6</xref>)). The decreasing
+                    fluorescence intensities of coated nanophosphors TbPO<sub>4</sub>&middot;H<sub>2</sub>O (1), TbPO<sub>4</sub>&middot;H<sub>2</sub>O@Silica (2),
+                        TbPO<sub>4</sub>&middot;H<sub>2</sub>O@Silica-NCS (3) and TbPO<sub>4</sub>&middot;H<sub>2</sub>O @Silica-NCS&harr;IgG (4) are presented in figure&nbsp;<xref ref-type="fig"
+                        rid="ansn432030fig7">7</xref>. It is noted that the organic groups NH<sub>2</sub> or SCN are rather strong dipole. In this case they may strongly attack core surface to reduce
+                    the luminescence.</p>
+                <fig id="ansn432030fig5" position="float">
+                    <label>Figure 5.</label>
+                    <caption id="ansn432030fc5">
+                        <p>FESEM of TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorod@Silica (a) and TbPO<sub>4</sub>&middot;H<sub>2</sub>O nanorod@Silica-NCS (b).</p>
+                    </caption>
+                    <graphic id="ansn432030f5_eps" content-type="print" xlink:href="ansn432030f5_pr.eps"/>
+                    <graphic id="ansn432030f5_online" content-type="online" xlink:href="ansn432030f5_online.jpg"/>
+                </fig>
+                <fig id="ansn432030fig6" position="float">
+                    <label>Figure 6.</label>
+                    <caption id="ansn432030fc6">
+                        <p>FESEM of TbPO<sub>4</sub>&middot;H<sub>2</sub>O -nanorod@Silica-(NCS) &harr;IgG.</p>
+                    </caption>
+                    <graphic id="ansn432030f6_eps" content-type="print" xlink:href="ansn432030f6_pr.eps"/>
+                    <graphic id="ansn432030f6_online" content-type="online" xlink:href="ansn432030f6_online.jpg"/>
+                </fig>
+                <fig id="ansn432030fig7" position="float">
+                    <label>Figure 7.</label>
+                    <caption id="ansn432030fc7">
+                        <p>Photoluminescence spectra of TbPO<sub>4</sub>&middot;H<sub>2</sub>O (1); TbPO<sub>4</sub>&middot;H<sub>2</sub>O@Silica (2); TbPO<sub>4</sub>&middot;H<sub>2</sub>O@Silica-NCS
+                            (3) and TbPO<sub>4</sub>&middot;H<sub>2</sub>O@Silica-NCS&harr;IgG (4). <italic>&lambda;</italic><sub>exc</sub> at 325&nbsp;nm.</p>
+                    </caption>
+                    <graphic id="ansn432030f7_eps" content-type="print" xlink:href="ansn432030f7_pr.eps"/>
+                    <graphic id="ansn432030f7_online" content-type="online" xlink:href="ansn432030f7_online.jpg"/>
+                </fig>
+                <p>To develop a new conjugate being suitable for labeling we focused on some strong bioaffinity molecules and organisms such as biotin, protein immunoglobulin G (IgG) or bovine serum
+                    albumin (BSA).</p>
+                <p>Based on the immunoreactions between antibody of conjugate and antigen of virus/vaccine the products of immunoreactions can be detected by a fluorescence optical microscope and
+                    imaged by a digital camera. In this study, we have used two coupling reaction processes to build a conjugate. They consisted of forming thiourea from isothiocyanate and amine and
+                    linking this functional group with biomolecule via intermediate glutaraldehyde molecule. With the obtained conjugates using IgG as targeting biomolecule we have demonstrated the
+                    analysis of measles or rota vaccines which are the key products of the Industrial Centre for Investigation and Production of Vaccine and Biologicals (POLYVAC).</p>
+            </sec>
+            <sec id="ansn432030s4-4">
+                <label>3.4.</label>
+                <title>Application in fluorescent immunoassay (FIA) of viruses/vaccine</title>
+                <p>We applied the comparative analysis method and used the conjugate of Ig-linked nanoparticles or nanorod as well as the commercial conjugate (for the reference) in the cell
+                    incubation procedure of POLYVAC for vaccine production. We have experimentally researched different conjugated materials in two forms of nanoparticle or nanorod such as
+                        IgG-YVO<sub>4</sub>:Eu(III)-NP, Eu.NTA.TOPO-NP, TbPO<sub>4</sub>&middot;H<sub>2</sub>O-NR, EuPO<sub>4</sub>&middot;H<sub>2</sub>O-NP and (Eu,
+                        Tb)PO<sub>4</sub>&middot;H<sub>2</sub>O-NR in incubation process with vaccine fabricates.</p>
+                <p>The images for reference obtained from fluorescent microscopic measurements and cameras pictured are shown in figure&nbsp;<xref ref-type="fig" rid="ansn432030fig8">8</xref>. In
+                        figure&nbsp;<xref ref-type="fig" rid="ansn432030fig8">8</xref>(a), one can see the picture of the fluorescent microscope BX-40 equipment (Japan), and the images of the specimen
+                    surface of incubated Vero cells as standard raw cells for vaccine fabrication are in figure&nbsp;<xref ref-type="fig" rid="ansn432030fig8">8</xref>(b). Figure <xref ref-type="fig"
+                        rid="ansn432030fig8">8</xref>(c), shows the images of Vero cells (figure&nbsp;<xref ref-type="fig" rid="ansn432030fig8">8</xref> (c)) and infected with measles virus, both
+                    researched specimens used a commercial conjugate as reference.</p>
+                <fig id="ansn432030fig8" position="float">
+                    <label>Figure 8.</label>
+                    <caption id="ansn432030fc8">
+                        <p>Fluorescent microscope Olympus BX-40 (Japan) (a), Vero cells (b) and Vero cell infected with measles virus (c).</p>
+                    </caption>
+                    <graphic id="ansn432030f8_eps" content-type="print" xlink:href="ansn432030f8_pr.eps"/>
+                    <graphic id="ansn432030f8_online" content-type="online" xlink:href="ansn432030f8_online.jpg"/>
+                </fig>
+                <p>Figure <xref ref-type="fig" rid="ansn432030fig9">9</xref> showed the potential application of LLNs linked with IgG as a fluorescence immunolabel to measles vaccine. The incubation
+                    procedure with exposure of the conjugate was used for preparing the measured specimens. The micro-image of the specimens with measles virus infected Vero cells using
+                        TbPO<sub>4</sub>-IgG code: 020911 (figure&nbsp;<xref ref-type="fig" rid="ansn432030fig9">9</xref>(a)), (Tb,Eu)PO<sub>4</sub>-IgG code: 030911 (figure&nbsp;<xref ref-type="fig"
+                        rid="ansn432030fig9">9</xref>(b)), EuPO<sub>4</sub>-GD-IgG code: 040911(figure&nbsp;<xref ref-type="fig" rid="ansn432030fig9">9</xref>(c)) as fluorescent immunoassay probe were
+                    presented.</p>
+                <fig id="ansn432030fig9" position="float">
+                    <label>Figure 9.</label>
+                    <caption id="ansn432030fc9">
+                        <p>Micro-image of measles virus infected Vero cells using TbPO<sub>4</sub>-IgG code: 020911 (a) (Tb, Eu)PO<sub>4</sub>-IgG code: 030911 (b) and EuPO<sub>4</sub>-GDA-IgG code:
+                            040911 (c).</p>
+                    </caption>
+                    <graphic id="ansn432030f9_eps" content-type="print" xlink:href="ansn432030f9_pr.eps"/>
+                    <graphic id="ansn432030f9_online" content-type="online" xlink:href="ansn432030f9_online.jpg"/>
+                </fig>
+
+                <p>The results indicated that some fabricated conjugates could be well used for detection and viewing of the presence of measles vaccine and quality of the fabrication. In comparison
+                    with nanoparticle derived biolabels, the LLN conjugates based on nanorods or nanowires have been shown to be much more effective. The reason for this may be explained by the
+                    stronger internalization effect of anisotropic properties of nanorods to biocells&nbsp;[<xref ref-type="bibr" rid="ansn432030bib12">12</xref>]. Primarily it can be stated that
+                        Ig-TbPO<sub>4</sub>&middot;H<sub>2</sub>O-NR, IgG-EuPO<sub>4</sub>&middot;H<sub>2</sub>O-NR and IgG-(Eu,Tb)PO<sub>4</sub>&middot;H<sub>2</sub>O-NR are usable for the FIA
+                    analysis method. The properties of fluorescence microscopic images clearly enabled estimation of measles vaccine containing big clusters on the surface of the specimens. The
+                    quality of the investigated lanthanide conjugates for FIA analysis could be comparable with the used reference label. Nevertheless, the prepared lanthanide conjugates have shown a
+                    high stable fluorescence color and reproducible fluorescent intensity in a broad range of pH value, and in biological microenvironment of vaccine fabrication. The fluorescence
+                    properties of the assayed specimens clearly remained for several months.</p>
+            </sec>
+        </sec>
+        <sec id="ansn432030s5">
+            <label>4.</label>
+            <title>Conclusion</title>
+            <p>In conclusion, it was demonstrated that high luminescent nanoparticles and nanorods from YVO<sub>4</sub>:Eu(III), EuNTA.TOPO, TbPO<sub>4</sub>&middot;H<sub>2</sub>O,
+                    EuPO<sub>4</sub>&middot;H<sub>2</sub>O and (Tb,Eu)PO<sub>4</sub>&middot;H<sub>2</sub>O have been prepared by coprecipitation synthesis in aqueous medium, with the assistance of
+                microwave and a soft template. These nanophosphors with controlled size, shape and structures were coated with organic silica toward functionalizing with organic groups NH<sub>2</sub>,
+                SH, SCN and OH. Then SCN- or NH<sub>2</sub>-containing silica layers on nanophosphor surface were covalently coupled with biotin, IgG or BSA via coupling reaction. Based on the
+                application results it has been stated that the procedure consisting of the virus infected standard cell incubation protocol and the exposure with IgG-linked LLN conjugates were
+                provided with a new fluorescent label tool for FIA analysis of virus in diagnosis or in vaccine production. In comparison with nanoparticle derived biolabels the LLN label tools from
+                nanorods or nanowires have shown to be much more effective. Furthermore, the IgG (BSA)-linked LLN-conjugates may have wide application in biolabel and bioimaging of bioorganisms such
+                as protein, cells and virus, and also for technological development of vaccine industrial production. Besides, these LLN conjugates will be used for the development of novel diagnostic
+                tools in biomedicine and agriculture. However, much work still needs to be done before these LLN conjugates become a useful and ordinary biophotonic label or sensor in practical
+                application.</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title>Acknowledgments</title>
+            <p>This work was supported by Vietnam Ministry Science and Technology, project no 2&ndash;2&ndash;742/ DTDLNN 09&ndash;12 and partly NAFOSTED foundation, projects no. 103.06.46.09 included
+                and implementing in Institute of Materials Science (IMS), in Key laboratory of Electronic Materials and Devices, Vietnam Academy of Science and Technology, in long term and close
+                collaboration with Center of Research and Production of Vaccine and Biologicals (POLYVAC), in framework of joint project of basic research for development of fabrication technology no
+                05/2009&ndash;09&ndash;12. We thank Professor Wieslaw Strek (Poland), Professor Chia Chen Hsu (Taiwan) and Professor Tamio Endo (Japan) for international cooperation. We are grateful
+                for the encouragement and continuous support of Professor Acad. Nguyen Van Hieu (Vietnam).</p>
+        </ack>
+        <ref-list content-type="numerical">
+            <title>References</title>
+            <ref id="ansn432030bib01">
+                <label>1</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Slata</surname>
+                            <given-names>O V</given-names>
+                        </name>
+                    </person-group>
+                    <year>2004</year>
+                    <source>J. Nanobiotechnol.</source>
+                    <volume>2</volume>
+                    <fpage>3</fpage>
+                    <pub-id pub-id-type="doi">10.1186/1477-3155-2-3</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib02">
+                <label>2</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>F</given-names>
+                        </name>
+                        <name>
+                            <surname>Tan</surname>
+                            <given-names>W B</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhang</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Fan</surname>
+                            <given-names>X</given-names>
+                        </name>
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2006</year>
+                    <source>Nanotechnology</source>
+                    <volume>17</volume>
+                    <fpage>R1</fpage>
+                    <pub-id pub-id-type="doi">10.1088/0957-4484/17/1/R01</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib03">
+                <label>3</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Liu</surname>
+                            <given-names>Z</given-names>
+                        </name>
+                        <name>
+                            <surname>Kiesling</surname>
+                            <given-names>F</given-names>
+                        </name>
+                        <name>
+                            <surname>Gaetjens</surname>
+                            <given-names>J</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>J. Nanomater.</source>
+                    <comment>Article <ext-link ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://dx.doi.org/10.1155/2010/894303">ID894303</ext-link></comment>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib04">
+                <label>4</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Kanngangai</surname>
+                            <given-names>R</given-names>
+                        </name>
+                        <name>
+                            <surname>Abraham</surname>
+                            <given-names>A M</given-names>
+                        </name>
+                        <name>
+                            <surname>Sanker</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Sridharan</surname>
+                            <given-names>G</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>J. Med. Microbiol.</source>
+                    <volume>28</volume>
+                    <fpage>95</fpage>
+                    <pub-id pub-id-type="doi">10.4103/0255-0857.62482</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib05">
+                <label>5</label>
+                <element-citation publication-type="book">
+                    <person-group person-group-type="editor">
+                        <name>
+                            <surname>Manchester</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        <name>
+                            <surname>Steinmetz</surname>
+                            <given-names>N F</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>Viruses and Nanotechnology</source>
+                    <publisher-loc>Heidelberg</publisher-loc>
+                    <publisher-name>Springer</publisher-name>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib06">
+                <label>6</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Yalow</surname>
+                            <given-names>R S</given-names>
+                        </name>
+                        <name>
+                            <surname>Benson</surname>
+                            <given-names>S A</given-names>
+                        </name>
+                    </person-group>
+                    <year>1959</year>
+                    <source>Nature</source>
+                    <volume>184</volume>
+                    <fpage>1648</fpage>
+                    <pub-id pub-id-type="doi">10.1038/1841648b0</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib07">
+                <label>7</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Holmes</surname>
+                            <given-names>KL</given-names>
+                        </name>
+                        <name>
+                            <surname>Lantz</surname>
+                            <given-names>LM</given-names>
+                        </name>
+                    </person-group>
+                    <year>2001</year>
+                    <source>Methods Cell Biol.</source>
+                    <volume>63</volume>
+                    <fpage>185</fpage>
+                    <pub-id pub-id-type="doi">10.1016/S0091-679X(01)63013-9</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib08">
+                <label>8</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Kirchner</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Liedl</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Kudera</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Pellegrino</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Javier</surname>
+                            <given-names>A M</given-names>
+                        </name>
+                        <name>
+                            <surname>Gaub</surname>
+                            <given-names>H E</given-names>
+                        </name>
+                        <name>
+                            <surname>St&ouml;lzle</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Fertig</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Parak</surname>
+                            <given-names>J W</given-names>
+                        </name>
+                    </person-group>
+                    <year>2005</year>
+                    <source>Nanoletter</source>
+                    <volume>5</volume>
+                    <fpage>331</fpage>
+                    <pub-id pub-id-type="doi">10.1021/nl047996m</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib09">
+                <label>9</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Stowdam</surname>
+                            <given-names>J W</given-names>
+                        </name>
+                        <name>
+                            <surname>van Veggel</surname>
+                            <given-names>F</given-names>
+                        </name>
+                    </person-group>
+                    <year>2004</year>
+                    <source>Langmuir</source>
+                    <volume>20</volume>
+                    <fpage>11763</fpage>
+                    <pub-id pub-id-type="doi">10.1021/la048379g</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib10">
+                <label>10</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Rokowski</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Haase</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2003</year>
+                    <source>J. Phys. Chem. <named-content content-type="jnl-part">B</named-content></source>
+                    <volume>102</volume>
+                    <fpage>10129</fpage>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib11">
+                <label>11</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>K&ouml;mpe</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Borchert</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Storz</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Lobo</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        <name>
+                            <surname>Adam</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>M&ouml;ller</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Haase</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2003</year>
+                    <source><italic>Angew. Chem. Int. Engl</italic>.</source>
+                    <volume>42</volume>
+                    <fpage>5513</fpage>
+                    <pub-id pub-id-type="doi">10.1002/(ISSN)1521-3773</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib12">
+                <label>12</label>
+                <element-citation publication-type="preprint">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Patta</surname>
+                            <given-names>C R</given-names>
+                        </name>
+                        <name>
+                            <surname>Bhattacharya</surname>
+                            <given-names>R</given-names>
+                        </name>
+                        <name>
+                            <surname>Pattra</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Basu</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Mukherjee</surname>
+                            <given-names>P</given-names>
+                        </name>
+                        <name>
+                            <surname>Mukhopadhyay</surname>
+                            <given-names>D</given-names>
+                        </name>
+                    </person-group>
+                    <year>2006</year>
+                    <source>J. Nanobiotechnol.</source>
+                    <volume>4</volume>
+                    <fpage>11</fpage>
+                    <pub-id pub-id-type="doi">10.1186/1477-3155-4-11</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib13">
+                <label>13</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Wong</surname>
+                            <given-names>K-L</given-names>
+                        </name>
+                        <name>
+                            <surname>Law</surname>
+                            <given-names>G-L</given-names>
+                        </name>
+                        <name>
+                            <surname>Murphy</surname>
+                            <given-names>M B</given-names>
+                        </name>
+                        <name>
+                            <surname>Tanner</surname>
+                            <given-names>P A</given-names>
+                        </name>
+                        <name>
+                            <surname>Wong</surname>
+                            <given-names>W-T</given-names>
+                        </name>
+                        <name>
+                            <surname>Lam</surname>
+                            <given-names>P K-S</given-names>
+                        </name>
+                        <name>
+                            <surname>Lam</surname>
+                            <given-names>M H-W</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>Inorg. Chem.</source>
+                    <volume>47</volume>
+                    <fpage>5190</fpage>
+                    <pub-id pub-id-type="doi">10.1021/ic8000416</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib14">
+                <label>14</label>
+                <element-citation publication-type="book">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Liu</surname>
+                            <given-names>G</given-names>
+                        </name>
+                        <name>
+                            <surname>Chen</surname>
+                            <given-names>X</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>Handbook of the Physics and Chemistry of Rare Earth, Optical Spectroscopy</source>
+                    <volume>vol 37</volume>
+                    <publisher-loc>Amsterdam</publisher-loc>
+                    <publisher-name>North-Holland</publisher-name>
+                    <chapter-title>chapter 233</chapter-title>
+                    <fpage>99</fpage>
+                    <lpage>169</lpage>
+                    <page-range>pp 99&ndash;169</page-range>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib15">
+                <label>15</label>
+                <element-citation publication-type="book">
+                    <person-group person-group-type="guest-editor">
+                        <name>
+                            <surname>Minh</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                        <name>
+                            <surname>Strek</surname>
+                            <given-names>W</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Yu</surname>
+                            <given-names>K</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>Nanomater. Lumin. Nanomater.</source>
+                    <comment>2007 (Special issue) ID43812</comment>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib16">
+                <label>16</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Stouwdam</surname>
+                            <given-names>J W</given-names>
+                        </name>
+                        <name>
+                            <surname>Hebbink</surname>
+                            <given-names>G A</given-names>
+                        </name>
+                        <name>
+                            <surname>Huskens</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Van</surname>
+                            <given-names>V</given-names>
+                        </name>
+                        <name>
+                            <surname>Frank</surname>
+                            <given-names>C J M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2003</year>
+                    <source>Chem. Mater.</source>
+                    <volume>15</volume>
+                    <fpage>4604</fpage>
+                    <pub-id pub-id-type="doi">10.1021/cm034495d</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib17">
+                <label>17</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Meyssamy</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Riwotzki</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Kornowski</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        <name>
+                            <surname>Naused</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Haase</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2004</year>
+                    <source>Adv. Mater.</source>
+                    <volume>11</volume>
+                    <fpage>16697</fpage>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib18">
+                <label>18</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Wu</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Qin</surname>
+                            <given-names>W</given-names>
+                        </name>
+                        <name>
+                            <surname>Qin</surname>
+                            <given-names>G</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhao</surname>
+                            <given-names>D</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhang</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Huang</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Lu</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Liu</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Lin</surname>
+                            <given-names>H</given-names>
+                        </name>
+                    </person-group>
+                    <year>2003</year>
+                    <source>Appl. Phys. Lett.</source>
+                    <volume>82</volume>
+                    <fpage>520</fpage>
+                    <pub-id pub-id-type="doi">10.1063/1.1542685</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib19">
+                <label>19</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Wu</surname>
+                            <given-names>X</given-names>
+                        </name>
+                        <name>
+                            <surname>Tao</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Song</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Mao</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Dong</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhu</surname>
+                            <given-names>J</given-names>
+                        </name>
+                    </person-group>
+                    <year>2006</year>
+                    <source>J. Phys. Chem. <named-content content-type="jnl-part">B</named-content></source>
+                    <volume>110</volume>
+                    <fpage>15791</fpage>
+                    <pub-id pub-id-type="doi">10.1021/jp060527j</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib20">
+                <label>20</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Duan</surname>
+                            <given-names>X</given-names>
+                        </name>
+                        <name>
+                            <surname>Yang</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Cui</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Lieber</surname>
+                            <given-names>C</given-names>
+                        </name>
+                    </person-group>
+                    <year>2001</year>
+                    <source>Nature</source>
+                    <volume>409</volume>
+                    <fpage>66</fpage>
+                    <pub-id pub-id-type="doi">10.1038/35051047</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib21">
+                <label>21</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Pan</surname>
+                            <given-names>Z</given-names>
+                        </name>
+                        <name>
+                            <surname>Dai</surname>
+                            <given-names>Z</given-names>
+                        </name>
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>Z</given-names>
+                        </name>
+                    </person-group>
+                    <year>2001</year>
+                    <source>Science</source>
+                    <volume>291</volume>
+                    <fpage>1947</fpage>
+                    <pub-id pub-id-type="doi">10.1126/science.1058120</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib22">
+                <label>22</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Hreniak</surname>
+                            <given-names>D</given-names>
+                        </name>
+                        <name>
+                            <surname>Doskocz</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Gluchowski</surname>
+                            <given-names>P</given-names>
+                        </name>
+                        <name>
+                            <surname>Lisiecki</surname>
+                            <given-names>R</given-names>
+                        </name>
+                        <name>
+                            <surname>Strek</surname>
+                            <given-names>W</given-names>
+                        </name>
+                        <name>
+                            <surname>Vu</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Loc</surname>
+                            <given-names>D X</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Bettinelli</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        <name>
+                            <surname>Speghinia</surname>
+                            <given-names>A</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>J. Lumin.</source>
+                    <volume>131</volume>
+                    <fpage>473</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.jlumin.2010.10.028</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib23">
+                <label>23</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Law</surname>
+                            <given-names>G L</given-names>
+                        </name>
+                        <name>
+                            <surname>Wong</surname>
+                            <given-names>K L</given-names>
+                        </name>
+                        <name>
+                            <surname>Kwok</surname>
+                            <given-names>W M</given-names>
+                        </name>
+                        <name>
+                            <surname>Wong</surname>
+                            <given-names>W T</given-names>
+                        </name>
+                        <name>
+                            <surname>Tanner</surname>
+                            <given-names>P A</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>J. Phys. Chem. <named-content content-type="jnl-part">B</named-content></source>
+                    <volume>111</volume>
+                    <fpage>1058</fpage>
+                    <pub-id pub-id-type="doi">10.1021/jp0755185</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib24">
+                <label>24</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Soulka</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Paukkunen</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Haermae</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>L&ouml;nnberg</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Lindroos</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>L&ouml;vgren</surname>
+                            <given-names>T</given-names>
+                        </name>
+                    </person-group>
+                    <year>2001</year>
+                    <source>Clin. Chem.</source>
+                    <volume>47</volume>
+                    <fpage>1269</fpage>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib25">
+                <label>25</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Harma</surname>
+                            <given-names>H</given-names>
+                        </name>
+                        <name>
+                            <surname>Graf</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Hannienen</surname>
+                            <given-names>P</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>J. Nanopart. Res.</source>
+                    <volume>10</volume>
+                    <fpage>1224</fpage>
+                    <pub-id pub-id-type="doi">10.1007/s11051-008-9380-5</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib26">
+                <label>26</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Li</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        <name>
+                            <surname>Selvin</surname>
+                            <given-names>P R</given-names>
+                        </name>
+                    </person-group>
+                    <year>1997</year>
+                    <source>Bioconjug. Chem.</source>
+                    <volume>8</volume>
+                    <fpage>127</fpage>
+                    <pub-id pub-id-type="doi">10.1021/bc960085m</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib27">
+                <label>27</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>F</given-names>
+                        </name>
+                        <name>
+                            <surname>Liu</surname>
+                            <given-names>X</given-names>
+                        </name>
+                    </person-group>
+                    <year>2009</year>
+                    <source>Chem. Soc. Rev.</source>
+                    <volume>38</volume>
+                    <fpage>976</fpage>
+                    <pub-id pub-id-type="doi">10.1039/b809132n</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib28">
+                <label>28</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Li</surname>
+                            <given-names>Z</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhanf</surname>
+                            <given-names>Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Jiang</surname>
+                            <given-names>S</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>Adv. Mater.</source>
+                    <volume>20</volume>
+                    <fpage>4765</fpage>
+                    <pub-id pub-id-type="doi">10.1002/adma.v20:24</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib29">
+                <label>29</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Park</surname>
+                            <given-names>Y I</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2009</year>
+                    <source>Adv. Mater.</source>
+                    <volume>21</volume>
+                    <fpage>4467</fpage>
+                    <pub-id pub-id-type="doi">10.1002/adma.v21:44</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib30">
+                <label>30</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Xiong</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                        <name>
+                            <surname>Chen</surname>
+                            <given-names>Z G</given-names>
+                        </name>
+                        <name>
+                            <surname>Yu</surname>
+                            <given-names>M X</given-names>
+                        </name>
+                        <name>
+                            <surname>Li</surname>
+                            <given-names>F Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Liu</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Huang</surname>
+                            <given-names>C H</given-names>
+                        </name>
+                    </person-group>
+                    <year>2009</year>
+                    <source>Biomaterials</source>
+                    <volume>30</volume>
+                    <fpage>5592</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.biomaterials.2009.06.015</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib31">
+                <label>31</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Lam</surname>
+                            <given-names>T K G</given-names>
+                        </name>
+                        <name>
+                            <surname>Opalinska</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        <name>
+                            <surname>Chudoba</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Benkowski</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        <name>
+                            <surname>Lojkowski</surname>
+                            <given-names>W</given-names>
+                        </name>
+                        <name>
+                            <surname>Tran</surname>
+                            <given-names>K A</given-names>
+                        </name>
+                        <name>
+                            <surname>Nguyen</surname>
+                            <given-names>T B</given-names>
+                        </name>
+                        <name>
+                            <surname>Le</surname>
+                            <given-names>Q M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>Adv. Nature Sci., Nanosci. Nanotechnol.</source>
+                    <volume>1</volume>
+                    <elocation-id content-type="artnum">025008</elocation-id>
+                    <pub-id pub-id-type="doi">10.1088/2043-6254/1/2/025008</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib32">
+                <label>32</label>
+                <element-citation publication-type="book">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Hermanson</surname>
+                            <given-names>G T</given-names>
+                        </name>
+                    </person-group>
+                    <year>2008</year>
+                    <source>Bioconjugate Techniques</source>
+                    <edition>2nd edn</edition>
+                    <publisher-loc>New York</publisher-loc>
+                    <publisher-name>Elsevier</publisher-name>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib33">
+                <label>33</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Roy</surname>
+                            <given-names>I</given-names>
+                        </name>
+                        <name>
+                            <surname>Ohulchanskyy</surname>
+                            <given-names>T Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Bharali</surname>
+                            <given-names>D J</given-names>
+                        </name>
+                        <name>
+                            <surname>Pudavar</surname>
+                            <given-names>H E</given-names>
+                        </name>
+                        <name>
+                            <surname>Mistretta</surname>
+                            <given-names>R A</given-names>
+                        </name>
+                        <name>
+                            <surname>Kaur</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Prasad</surname>
+                            <given-names>P N</given-names>
+                        </name>
+                    </person-group>
+                    <year>2005</year>
+                    <source>Proc. Natl Acad. Sci. USA</source>
+                    <volume>102</volume>
+                    <fpage>279</fpage>
+                    <pub-id pub-id-type="doi">10.1073/pnas.0408039101</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib34">
+                <label>34</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Zhu</surname>
+                            <given-names>S G</given-names>
+                        </name>
+                        <etal/>
+                    </person-group>
+                    <year>2004</year>
+                    <source>Biotechnol. Appl. Biochem.</source>
+                    <volume>39</volume>
+                    <fpage>179</fpage>
+                    <pub-id pub-id-type="doi">10.1042/BA20030077</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib35">
+                <label>35</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Minh</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                        <name>
+                            <surname>Endo</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>T T</given-names>
+                        </name>
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>N T</given-names>
+                        </name>
+                        <name>
+                            <surname>Giang</surname>
+                            <given-names>L T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Tuyen</surname>
+                            <given-names>L D</given-names>
+                        </name>
+                        <name>
+                            <surname>Loc</surname>
+                            <given-names>D X</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                    </person-group>
+                    <year>2010</year>
+                    <source>Trans. MRS Japan</source>
+                    <volume>35</volume>
+                    <fpage>417</fpage>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib36">
+                <label>36</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>T T</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Khuyen</surname>
+                            <given-names>H T</given-names>
+                        </name>
+                        <name>
+                            <surname>Hien</surname>
+                            <given-names>P T</given-names>
+                        </name>
+                        <name>
+                            <surname>Minh</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2012</year>
+                    <source>Adv. Nature Sci., Nanosci. Nanotechnol.</source>
+                    <volume>3</volume>
+                    <elocation-id content-type="artnum">015010</elocation-id>
+                    <pub-id pub-id-type="doi">10.1088/2043-6262/3/1/015010</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib37">
+                <label>37</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>T T</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Vinh</surname>
+                            <given-names>L T</given-names>
+                        </name>
+                        <name>
+                            <surname>Strek</surname>
+                            <given-names>W</given-names>
+                        </name>
+                        <name>
+                            <surname>Khuyen</surname>
+                            <given-names>H T</given-names>
+                        </name>
+                        <name>
+                            <surname>Minh</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>J. Rare Earths</source>
+                    <volume>29</volume>
+                    <fpage>1174</fpage>
+                    <pub-id pub-id-type="doi">10.1016/S1002-0721(10)60620-5</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib38">
+                <label>38</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Khuyen</surname>
+                            <given-names>H T</given-names>
+                        </name>
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>N T</given-names>
+                        </name>
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>T T</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Binh</surname>
+                            <given-names>N T</given-names>
+                        </name>
+                        <name>
+                            <surname>Minh Le</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>Adv. Nature Sci., Nanosci. Nanotechnol.</source>
+                    <volume>2</volume>
+                    <elocation-id content-type="artnum">025015</elocation-id>
+                    <pub-id pub-id-type="doi">10.1088/2043-6262/2/2/025015</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib39">
+                <label>39</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>N T</given-names>
+                        </name>
+                        <name>
+                            <surname>Khuyen</surname>
+                            <given-names>H T</given-names>
+                        </name>
+                        <name>
+                            <surname>Duc Van</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Tien</surname>
+                            <given-names>D M</given-names>
+                        </name>
+                        <name>
+                            <surname>Binh</surname>
+                            <given-names>N T</given-names>
+                        </name>
+                        <name>
+                            <surname>Minh</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2012</year>
+                    <source>Adv. Nature. Sci., Nanosci. Nanotechnol.</source>
+                    <volume>3</volume>
+                    <elocation-id content-type="artnum">015007</elocation-id>
+                    <pub-id pub-id-type="doi">10.1088/2043-6262/3/1/015007</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib40">
+                <label>40</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>N T</given-names>
+                        </name>
+                        <name>
+                            <surname>Duc Van</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Tien</surname>
+                            <given-names>D M</given-names>
+                        </name>
+                        <name>
+                            <surname>Tung</surname>
+                            <given-names>D K</given-names>
+                        </name>
+                        <name>
+                            <surname>Binh</surname>
+                            <given-names>N T</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Minh</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>J. Rare Earths</source>
+                    <volume>29</volume>
+                    <fpage>1170</fpage>
+                    <pub-id pub-id-type="doi">10.1016/S1002-0721(10)60619-9</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib41">
+                <label>41</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Mornet</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Vasseur</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Grasser</surname>
+                            <given-names>F</given-names>
+                        </name>
+                        <name>
+                            <surname>Dugnet</surname>
+                            <given-names>E</given-names>
+                        </name>
+                    </person-group>
+                    <year>2004</year>
+                    <source>J. Mater. Chem.</source>
+                    <volume>14</volume>
+                    <fpage>2161</fpage>
+                    <pub-id pub-id-type="doi">10.1039/b402025a</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib42">
+                <label>42</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Traina</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Schwartz</surname>
+                            <given-names>A</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>Langmuir</source>
+                    <volume>23</volume>
+                    <fpage>9158</fpage>
+                    <pub-id pub-id-type="doi">10.1021/la701653v</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib43">
+                <label>43</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Howarter</surname>
+                            <given-names>J A</given-names>
+                        </name>
+                        <name>
+                            <surname>Youngblood</surname>
+                            <given-names>J P</given-names>
+                        </name>
+                    </person-group>
+                    <year>2006</year>
+                    <source>Langmuir</source>
+                    <volume>22</volume>
+                    <fpage>11142</fpage>
+                    <pub-id pub-id-type="doi">10.1021/la061240g</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib44">
+                <label>44</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Flesch</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Robert</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        <name>
+                            <surname>Bourgeay-Lami</surname>
+                            <given-names>E</given-names>
+                        </name>
+                        <name>
+                            <surname>Mornet</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Duguet</surname>
+                            <given-names>E</given-names>
+                        </name>
+                        <name>
+                            <surname>Delaire</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Durmas</surname>
+                            <given-names>P</given-names>
+                        </name>
+                    </person-group>
+                    <year>2005</year>
+                    <source>Colloids Surf. <named-content content-type="jnl-part">A</named-content></source>
+                    <volume>262</volume>
+                    <fpage>150</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.colsurfa.2005.04.039</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib45">
+                <label>45</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Douce</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Boilot</surname>
+                            <given-names>J-P</given-names>
+                        </name>
+                        <name>
+                            <surname>Biteau</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Scodellaro</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        <name>
+                            <surname>Jimenez</surname>
+                            <given-names>A</given-names>
+                        </name>
+                    </person-group>
+                    <year>2004</year>
+                    <source>Thin Solid Films</source>
+                    <volume>466</volume>
+                    <fpage>114</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.tsf.2004.03.024</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib46">
+                <label>46</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Philipse</surname>
+                            <given-names>A P</given-names>
+                        </name>
+                        <name>
+                            <surname>Nechifor</surname>
+                            <given-names>A-M</given-names>
+                        </name>
+                        <name>
+                            <surname>Patmamanoharan</surname>
+                            <given-names>C</given-names>
+                        </name>
+                    </person-group>
+                    <year>1994</year>
+                    <source>Langmuir</source>
+                    <volume>10</volume>
+                    <fpage>4451</fpage>
+                    <pub-id pub-id-type="doi">10.1021/la00024a013</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib47">
+                <label>47</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Gerion</surname>
+                            <given-names>D</given-names>
+                        </name>
+                        <name>
+                            <surname>Pinaud</surname>
+                            <given-names>F</given-names>
+                        </name>
+                        <name>
+                            <surname>Williams</surname>
+                            <given-names>S C</given-names>
+                        </name>
+                        <name>
+                            <surname>Parak</surname>
+                            <given-names>W J</given-names>
+                        </name>
+                        <name>
+                            <surname>Zancher</surname>
+                            <given-names>D</given-names>
+                        </name>
+                        <name>
+                            <surname>Wriss</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Alivisatos</surname>
+                            <given-names>A P</given-names>
+                        </name>
+                    </person-group>
+                    <year>2001</year>
+                    <source>J. Phys. Chem.</source>
+                    <volume>105</volume>
+                    <fpage>8861</fpage>
+                    <pub-id pub-id-type="doi">10.1021/jp0105488</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib48">
+                <label>48</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Loc</surname>
+                            <given-names>D X</given-names>
+                        </name>
+                        <name>
+                            <surname>Chi</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>T T</given-names>
+                        </name>
+                        <name>
+                            <surname>Vu</surname>
+                            <given-names>N</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Strek</surname>
+                            <given-names>W</given-names>
+                        </name>
+                        <name>
+                            <surname>Minh</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>J. Rare Earths</source>
+                    <volume>29</volume>
+                    <fpage>1174</fpage>
+                    <pub-id pub-id-type="doi">10.1016/S1002-0721(10)60614-X</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib49">
+                <label>49</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Louis</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        <name>
+                            <surname>Bazzi</surname>
+                            <given-names>R</given-names>
+                        </name>
+                        <name>
+                            <surname>Marquette</surname>
+                            <given-names>C A</given-names>
+                        </name>
+                        <name>
+                            <surname>Bridot</surname>
+                            <given-names>J-L</given-names>
+                        </name>
+                        <name>
+                            <surname>Roux</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Ledoux</surname>
+                            <given-names>G</given-names>
+                        </name>
+                        <name>
+                            <surname>Mercier</surname>
+                            <given-names>B</given-names>
+                        </name>
+                        <name>
+                            <surname>Blum</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        <name>
+                            <surname>Perriat</surname>
+                            <given-names>P</given-names>
+                        </name>
+                        <name>
+                            <surname>Tillement</surname>
+                            <given-names>O</given-names>
+                        </name>
+                    </person-group>
+                    <year>2005</year>
+                    <source>Chem. Mater.</source>
+                    <volume>17</volume>
+                    <fpage>1673</fpage>
+                    <pub-id pub-id-type="doi">10.1021/cm0480162</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib50">
+                <label>50</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Sivakumar</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        <name>
+                            <surname>Diamente</surname>
+                            <given-names>P R</given-names>
+                        </name>
+                        <name>
+                            <surname>Van Veggel</surname>
+                            <given-names>F C J M</given-names>
+                        </name>
+                    </person-group>
+                    <year>2006</year>
+                    <source>Chem.&mdash;Eur. J.</source>
+                    <volume>12</volume>
+                    <fpage>5878</fpage>
+                    <pub-id pub-id-type="doi">10.1002/(ISSN)1521-3765</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib51">
+                <label>51</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Kang</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhang</surname>
+                            <given-names>X Y</given-names>
+                        </name>
+                        <name>
+                            <surname>Sun</surname>
+                            <given-names>L D</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhang</surname>
+                            <given-names>X X</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>Talanta</source>
+                    <volume>71</volume>
+                    <fpage>1186</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.talanta.2006.06.022</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib52">
+                <label>52</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Huong</surname>
+                            <given-names>T T</given-names>
+                        </name>
+                        <name>
+                            <surname>Tu</surname>
+                            <given-names>V D</given-names>
+                        </name>
+                        <name>
+                            <surname>Anh</surname>
+                            <given-names>T K</given-names>
+                        </name>
+                        <name>
+                            <surname>Vinh</surname>
+                            <given-names>L T</given-names>
+                        </name>
+                        <name>
+                            <surname>Minh</surname>
+                            <given-names>L Q</given-names>
+                        </name>
+                    </person-group>
+                    <year>2011</year>
+                    <source>J. Rare Earths</source>
+                    <volume>29</volume>
+                    <fpage>1137</fpage>
+                    <pub-id pub-id-type="doi">10.1016/S1002-0721(10)60612-6</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib53">
+                <label>53</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Di</surname>
+                            <given-names>W</given-names>
+                        </name>
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>X</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhu</surname>
+                            <given-names>P</given-names>
+                        </name>
+                        <name>
+                            <surname>Chen</surname>
+                            <given-names>B</given-names>
+                        </name>
+                    </person-group>
+                    <year>2007</year>
+                    <source>J. Solid State Chem.</source>
+                    <volume>180</volume>
+                    <fpage>467</fpage>
+                    <pub-id pub-id-type="doi">10.1016/j.jssc.2006.11.006</pub-id>
+                </element-citation>
+            </ref>
+            <ref id="ansn432030bib54">
+                <label>54</label>
+                <element-citation publication-type="journal">
+                    <person-group person-group-type="author">
+                        <name>
+                            <surname>Yang</surname>
+                            <given-names>Z</given-names>
+                        </name>
+                        <name>
+                            <surname>Huang</surname>
+                            <given-names>X</given-names>
+                        </name>
+                        <name>
+                            <surname>Sun</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        <name>
+                            <surname>Zhou</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        <name>
+                            <surname>Yang</surname>
+                            <given-names>G</given-names>
+                        </name>
+                        <name>
+                            <surname>Li</surname>
+                            <given-names>B</given-names>
+                        </name>
+                        <name>
+                            <surname>Yu</surname>
+                            <given-names>C</given-names>
+                        </name>
+                    </person-group>
+                    <year>2009</year>
+                    <source>J. Appl. Phys.</source>
+                    <volume>105</volume>
+                    <elocation-id content-type="artnum">083523</elocation-id>
+                    <pub-id pub-id-type="doi">10.1063/1.3112007</pub-id>
+                </element-citation>
+            </ref>
+        </ref-list>
+    </back>
+</article>

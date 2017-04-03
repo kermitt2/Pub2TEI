@@ -1,0 +1,1589 @@
+<?xml version="1.0"?>
+<article id="35005508" language="eng" publish="issue" relation="no" origsrc="yes">
+  <!--402d006A0-->
+  <suppfm supptype="reprint">
+    <suppmast>
+      <jtl>Nature</jtl>
+      <suppttl>Immunology</suppttl>
+      <vol>402</vol>
+      <iss>6763supp</iss>
+      <idt>19991216</idt>
+    </suppmast>
+    <parent>
+      <jtl>Nature</jtl>
+      <vol>402</vol>
+      <iss>6763</iss>
+      <idt>19991216</idt>
+      <issn type="print">0028-0836</issn>
+      <cpg>
+        <cpy>1999</cpy>
+        <cpn>Macmillan Magazines Ltd.</cpn>
+      </cpg>
+    </parent>
+    <sponsor type="com">BIOGEN</sponsor>
+    <categ id="rv"/>
+    <pp>
+      <spn>6</spn>
+      <epn>13</epn>
+      <cnt>8</cnt>
+    </pp>
+  </suppfm>
+  <fm>
+    <atl>Selecting and maintaining a diverse T-cell repertoire</atl>
+    <aug>
+      <au>
+        <fnm>Ananda W.</fnm>
+        <snm>Goldrath</snm>
+        <inits>A W</inits>
+      </au>
+      <cau>
+        <fnm>Michael J.</fnm>
+        <snm>Bevan</snm>
+        <inits>M J</inits>
+        <corf rid="c1"/>
+      </cau>
+      <aff><org>Department of Immunology and Howard Hughes Medical Institute, University of
+          Washington</org>, <cty>Seattle</cty>, <st>Washington</st>
+        <zip>98195</zip>, <cny> USA</cny></aff>
+      <caff><coid id="c1"/>Correspondence should be addressed to M.J.B. (e-mail: <email>
+          mbevan@u.washington.edu</email>).<newline/><newline/></caff>
+    </aug>
+    <abs>
+      <p>To provide a T-cell population that will respond promptly to foreign antigen, the immune
+        system looks inward, using the variety of self-antigens to select and maintain a diverse
+        repertoire of receptors. A protective immune system must include a T-lymphocyte population
+        that is poised to respond to foreign antigenic peptides presented by self-major
+        histocompatibility complex molecules. As the organism cannot predict the precise
+        pathogen-derived antigens that will be encountered, the system uses the diverse array of
+        self-peptides bound to self-major histocompatibility complex molecules, not only to select a
+        receptor repertoire in the thymus, but also to keep nainodot; uml;ve T cells alive and
+        lsquo;ready for actionrsquo; in the periphery.</p>
+    </abs>
+  </fm>
+  <bdy>
+    <p>Originally published as <cite id="n1"><jtl>Nature</jtl>
+        <vid>402</vid>, <ppf> 255</ppf>ndash;<ppl>262</ppl>; <cd year="1999">1999</cd></cite></p>
+    <p>The revelation that T lymphocytes recognize foreign antigen only when presented by major
+      histocompatibility complex (MHC) molecules was made 25 years ago and remains the cornerstone
+      of our understanding of cellular immunity<bibr rid="b1"/>. The nature of antigen presentation
+      was unknown for more than a decade until it became clear that foreign antigen has to be
+      processed into peptides that can bind stably to the groove of an MHC molecule to allow
+      recognition by the T-cell receptor (TCR)<bibr rid="b2 b3"/>. MHC genes are extremely
+      polymorphic and the various allelic products bind a broad spectrum of different peptides,
+      explaining MHC restriction of T-cell recognition. During T-cell development, immature T cells
+      are chosen to mature on the basis of the ability of their clonally expressed TCR to interact
+      weakly with self-MHC molecules expressed in the thymus. During this process of positive
+      selection, self-peptides bound in the MHC groove are also recognized. Thus, the selection of
+      the TCR repertoire is not based solely on the recognition of one or a few self-MHC structures,
+      but on the recognition of those structures modified by the binding of an enormous diversity of
+      self-peptides. Low-affinity interactions between the newly expressed TCRs and
+      self-peptidendash;MHC molecules select a diverse repertoire that will be fine-tuned to react
+      strongly to pathogen-derived peptides bound to the same MHC in the periphery. Even after
+      maturing and leaving the thymus, T cells continue to depend on survival signals transmitted by
+      the interaction of the TCR with self-peptidendash;MHC complexes. The long-term homeostasis of
+      nainodot; uml;ve T cells depends on continuous tickling of the TCR, and the rebound of the
+      size and complexity of the peripheral lymphocyte pool after any marked loss in cell numbers
+      involves recognition of self-peptidendash;MHC complexes. Infection often results in massive
+      clonal expansion and development of effector function that initially overrides the balance of
+      lymphocyte pools. When the pathogen is cleared, balance is restored: effector cells are
+      eliminated and a long veteran's retirement is guaranteed for the surviving memory cells, which
+      are no longer dependent on recognition of self-antigen. The veterans may be recalled to action
+      quickly by a subsequent infection with the same pathogen. To provide protection against both
+      unknown new pathogens and the recurrence of old infections, the immune system must maintain
+      separate populations of nainodot; uml;ve cells and memory cells. In addition, the system
+      must retain an appropriate mixture of CD4<super>+</super> helper T cells and CD8<super>
+        +</super> cytotoxic T cells in both nainodot; uml;ve and memory pools.</p>
+    <sec level="1">
+      <sectitle>Thymocyte development</sectitle>
+      <p>Bone marrow stem cells enter the thymus and commit to the T lineage in response to signals
+        from the microenvironment<bibr rid="b4"/>. The stages of development of the major lineages
+        of T cells are delineated by the surface expression of the co-receptor molecules CD4 and
+        CD8. The earliest precursors are CD4<super>-</super>CD8<super>-</super> double negative (DN)
+        in phenotype, comprising about 3% of the total thymocyte numbers. These proliferate
+        extensively and become CD4<super>+</super>CD8<super>+</super> double positive (DP) cells,
+        which are still immature and are the targets for TCR-based selection events. The MHC
+        molecules expressed by the epithelial elements of the thymus are critically involved in the
+        process of positive selection, which allows a small fraction of the DP population to mature
+        into single positive CD4 lineage or CD8 lineage T cells<bibr rid="b5 b6"/>.</p>
+      <sec level="2">
+        <sectitle>Assembling the TCR</sectitle>
+        <p> As is the case for antibodies, functional TCR genes are assembled from separate V, D and
+          J region segments by genetic recombination<bibr rid="b7"/>. For T cells expressing
+          alpha;beta; receptors, this process of gene rearrangement occurs in the thymus. Mice and
+          humans carry in their germline a large number of V gene segments, which encode roughly the
+          first 90 residues of a mature TCRalpha; or TCRbeta; chain. The TCRbeta; chain gene is
+          assembled at the DN stage of T-cell development. A short D gene segment is juxtaposed to a
+          short J segment and this is followed by rearrangement of a V segment to the assembled
+          downstream DJ segment. In the case of TCRalpha; chains which rearrange later at the DP
+          stage there are no D segments; a large number of Valpha; segments may rearrange to a
+          large number of J segments. The immunoglobulin-like fold of the TCR chains positions three
+          loops or complementarity determining regions (CDRs) from each chain in close proximity to
+          each other, creating a binding face that will contact antigen. Two of these CDR loops,
+          namely 1 and 2, are encoded by the V gene segment and have only the diversity provided by
+          the number of germline V region gene segments, around 20ndash;70thinsp;Valpha; and
+          Vbeta; segments in mice and humans. The third CDR loop is created by the juxtaposition of
+          VJ or V(D)J segments and provides much more diversity, a result of the ability of each V
+          segment to rearrange to any (D)J segment compounded by the fact that the joining of the
+          coding sequences is imprecise. Nucleotides may be added or deleted at each of these
+          junctions. If there were only 50thinsp;Valpha; and 50thinsp;Vbeta; genes to encode the
+          TCR repertoire, combinatorial pairing would provide only <f>50 times; 50 = 2,500</f>
+          TCRs. The addition of (D)J segments and the imprecision of joining boosts this number into
+          the billions, with sequence diversity concentrated in the CDR3 loops.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>TCR interaction with ligand</sectitle>
+        <p> Crystal structures of MHC class I and class II molecules have revealed their mode of
+          function (<figr rid="f1">Fig. 1</figr>). Although differing in detail, both MHC class I
+          and class II molecules have peptide-binding grooves to present antigen to T cells<bibr
+            rid="b8 b9 b10"/>. In each case, the groove is made up of a lsquo;floorrsquo; of
+          beta;-sheets and lsquo;wallsrsquo; of long alpha;-helical regions. The most
+          polymorphic residues in the MHC molecules protrude into the groove, thus altering the
+          spectrum of peptides that can be bound. The remarkable feature of MHCndash;peptide
+          binding is that it is both extremely stable yet promiscuous, allowing many different
+          peptides to bind each allele. Many of the stabilizing interactions are between the
+          backbone of the peptide and the MHC, whereas a few pockets in the groove select for
+          certain side chains on the so-called lsquo;anchor residuesrsquo; of the peptide. MHC
+          class I molecules load peptides soon after synthesis in the endoplasmic reticulum before
+          trafficking to the cell surface. In contrast, the groove of MHC class II molecules is
+          protected from peptide loading until the molecules reach endocytic vesicles. Once loaded
+          with a peptide derived from lysosomal processing, the class-IIndash;peptide complex, like
+          the class-Indash;peptide complex, is expressed stably at the cell surface.</p>
+        <p>Mature T cells discriminate between self and foreign by recognition of peptides presented
+          in the groove of self-MHC molecules. The membrane-distal face of the peptidendash;MHC
+          complex that is presented to the T cell consists of a flat surface made up principally of
+          the alpha;-helices of the MHC surrounding a central peptide. High-resolution structures
+          of the TCR complexed with peptidendash;MHC ligand have shown how this is achieved (<figr
+            rid="f1">Fig. 1</figr>). Crystal structures of a murine TCR interacting with MHC class I
+          and peptide<bibr rid="b11 b12"/>, and two human TCRs complexed with the HLA-A2 class I
+          molecule bound to the same viral peptide<bibr rid="b13 b14"/> have been solved, and all of
+          the structures showed the same basic topology of interaction<bibr
+            rid="b11 b12 b13 b14 b15 b16"/>. The TCR is positioned in a diagonal orientation over
+          the face of the peptidendash;MHC complex with the CDR1 and CDR2 loops of the TCRalpha;
+          chain lying over the N-terminal half of the peptide and the corresponding regions of the
+          TCRbeta; chain lying over the C-terminal half. Many of the interactions of the V gene
+          segment-encoded CDR1 and CDR2 regions of the TCR are actually with MHC residues. In
+          particular, the CDR1 and CDR2 loops of the Valpha; chain have almost identical sites of
+          interactions with peptidendash;MHC in all structures solved so far, and this match-up may
+          be critical in establishing the overall configuration. The most variable loops of the TCR,
+          namely the CDR3 regions of the TCRalpha; and TCRbeta; chains, lie centrally and have
+          most contact with protruding peptide side chains. Thus, the most variable region of the
+          TCR (CDR3 loops) has best access to the most variable region of the ligand (peptide).</p>
+      </sec>
+      <sec level="2">
+        <sectitle>The unselected TCR repertoire</sectitle>
+        <p> The lymphoid-specific components of immunoreceptor gene rearrangement, the
+          recombinase-activating gene (RAG) products, are first expressed in thymocytes soon after
+          entry in the thymus and operate initially on the TCRbeta; loci. Successful VDJ
+          rearrangement resulting in the production of a functional, in-frame TCRbeta; chain is
+          tested by assembly of the new gene product (TCRbeta;) along with an invariant surrogate
+          TCRalpha; chain, pre-Talpha;, plus signalling components of the TCR, the CD3
+            complex<bibr rid="b17"/>. Proper assembly of this complex with the newly generated
+          TCRbeta; chain signals the CD4<super>-</super>CD8<super>-</super> pre-T-cell to switch
+          off expression of RAG proteins, to go through several rounds of division and to proceed to
+          the CD4<super>+</super>CD8<super>+</super> stage of thymocyte maturation. This check
+          point, called beta;-selection, does not involve the recognition of any ligand by the
+          pre-TCR, as truncated versions of TCRbeta; and pre-Talpha; lacking the extracellular
+          domain can trigger progression to the DP compartment<bibr rid="b18"/>. The mere assembly
+          of the CD3ndash;pre-Talpha;ndash;TCRbeta; complex appears to be sufficient to activate
+          the downstream signalling pathway. It is possible, although perhaps unlikely, that some
+          TCRbeta; chains are lost in this selection if they cannot assemble with CD3 and/or
+          pre-Talpha;.</p>
+        <p>At the DP stage of thymocyte differentiation, the RAG genes are expressed once again, and
+          the cells now focus on rearranging TCR Valpha;. to Jalpha;. Production of a new
+          TCRalpha; chain that can pair with the existing TCRbeta; chain allows surface expression
+          of the TCRalpha;beta;ndash;CD3 complex. Co-expression of randomly rearranged
+          TCRalpha;beta; at the DP cell surface is an expression of the germline, or unselected
+          TCR repertoire. The repertoire that is allowed to leave the thymus for the peripheral
+          lymphoid organs is only a subset of this larger pool. To complete maturation, the germline
+          repertoire is positively and negatively selected for interactions with MHC molecules in
+          the thymus. Ultimately, only about 5% of the DPs are allowed to emigrate. In a murine
+          thymus that lacks expression of any MHC molecule, T-cell development is blocked at the DP
+          stage. DP thymocytes from such a MHC-deficient environment are immature and unresponsive
+          to conventional antigen, yet tricks have been used to study the specificity of their
+          germline TCRs. In one case, maturation of the thymocytes was induced in foetal thymic
+          organ culture by receptor engagement with anti-TCR antibodies<bibr rid="b19"/>. The mature
+            CD4<super>+</super> T cells that developed were cloned as hybridomas to allow analysis
+          of their TCR specificity. In another case, DP thymocytes from MHC-deficient mice were
+          isolated and reaggregated with MHC wild-type thymus stromal cells. In such reaggregate
+          cultures, the fraction of cells that respond to MHC class I or MHC class II could be
+          scored by examining the upregulation of surface markers that are normally turned on during
+          thymocyte selection<bibr rid="b20"/>. Both of these approaches showed that the germline
+          TCR repertoire is skewed to the recognition of MHC molecules. Somewhere between 5 and 20%
+          of the DP population from MHC-deficient mice was responsive to the set of MHC molecules
+          expressed in any one mouse strain. This is a much higher frequency than would be expected
+          by the generation of receptors through the random rearrangement of gene sequences that do
+          not have an inherent predisposition for interactions with MHC. Evolution has shaped the
+          TCR genes, presumably the CDR1 and CDR2 regions encoded by the V gene segments, so that
+          their alpha;beta; product will preferentially match MHC molecules.</p>
+        <p>Certain Valpha; gene segments have evolved to interact preferentially with either class
+          I or class II molecules. TCRs bearing these Valpha; segments are preferentially selected
+          into the CD8<super>+</super> (MHC class I reactive) or CD4<super>+</super> (MHC class II
+          reactive) T-cell subset during normal thymocyte selection. Swapping individual residues in
+          the CDR1 or CDR2 regions of the Valpha; gene is sufficient to change the selection of
+          these TCRs from the CD4<super>+</super> to the CD8<super>+</super> subset<bibr rid="b21"
+          />. Furthermore, certain mouse strains differ consistently in the ratio of CD4<super>
+            +</super> to CD8<super>+</super> T cells in peripheral organs, and one of the loci
+          controlling this phenotype maps with the TCRalpha; locus<bibr rid="b22"/>. </p>
+      </sec>
+      <sec level="2">
+        <sectitle>Positive selection of thymocytes</sectitle>
+        <p> Even though they express a TCR at the surface, in the absence of MHC recognition
+            CD4<super> +</super>CD8<super>+</super> thymocytes will undergo apoptotic death because
+          of receptor neglect (<figr rid="f2">Fig. 2</figr>). During their approximate 3-day life
+          span, the DP thymocytes will continue to express the RAG genes and continue to rearrange
+          TCRalpha; chain genes. TCR engagement with MHC class I or class II molecules on the
+          cortical thymic epithelial cells is required to rescue the cell from death by neglect and
+          to switch off further TCRalpha; chain gene rearrangement. Only those DP thymocytes that
+          bind self-MHC with sufficiently low affinity will be rescued. In contrast, DP cells that
+          express a receptor that interacts with high affinity with MHC in the thymus will be
+          eliminated in a process referred to as negative selection. Almost half of the cells
+          reacting with self-MHC are lost through this mechanism<bibr rid="b23"/> (<figr rid="f2"
+            >Fig. 2</figr>). The low-affinity recognition of self-MHC not only promotes thymocyte
+          survival but also determines commitment of the DP thymocyte to either the CD4 or the CD8
+            lineage<bibr rid="b5 b6 b24"/>. Recognition of MHC class I results in commitment to the
+          CD8 lineage, whereas recognition of class II results in CD4<super>+</super> T cells. Thus,
+          function and lineage are correlated with MHC class recognition. How positive selection on
+          MHC class I versus class II is distinguished by the thymocyte is unknown. Lineage choice
+          may be steered by qualitative or quantitative differences in signalling, or may be random
+          but confirmed by later selective events.</p>
+        <p>The molecular nature of the TCRndash;MHC recognition event in positive selection has
+          been an area of active research. Initial experiments showed that mutations affecting only
+          the inside of the groove of a murine class I molecule drastically altered the selected
+          repertoire of CD8<super>+</super> T cells<bibr rid="b25 b26"/>. These experiments
+          suggested strongly that self-peptides bound to the MHC groove are recognized by thymocytes
+          and are critical for positive selection. Further analysis of this recognition required the
+          use of an <i>in vitro</i> organ culture system, using thymus lobes from mice deficient in
+          class I expression in which peptides could be added back to reconstitute positive
+          selection. Disruption of the beta;<sub>2</sub>-microglobulin gene, encoding the light
+          chain of class I molecules, or of the TAP genes encoding a transporter that delivers
+          peptides to nascent class I molecules in the endoplasmic reticulum, leads to a drastic
+          decrease in selection of CD8 lineage cells. Surface expression of MHC class I can be
+          restored to some extent by the addition of single peptides or peptide mixtures to organ
+          culture systems. Initial experiments using thymic lobes from mice that express a normal,
+          germline TCR repertoire suggested that a complex mixture of peptides restored selection of
+            CD8<super> +</super> T cells better than single peptides which bound and stabilized MHC
+          to the same degree<bibr rid="b27 b28"/>. Follow-up experiments in this peptide add-back
+          system using mice that express rearranged TCR transgenes of known ligand specificity
+          suggested a stringent requirement for peptide recognition in the positive selection of CD8
+          lineage T cells<bibr rid="b29 b30 b31"/>. Peptides that bind MHC class I and form a
+          low-affinity ligand for the TCR induced the maturation of functional CD8<super>+</super>
+          cytotoxic T cells most efficiently<bibr rid="b32"/>. The measured TCR affinities for
+          foreign peptidendash;MHC ligands fall into the 1ndash;10thinsp;micro;M range<bibr
+            rid="b33"/>. Compared with this, the affinities for ligands that can efficiently induce
+          positive selection, but cannot induce negative selection, are only 5ndash;9-fold
+            lower<bibr rid="b34"/>.</p>
+        <p>Is a single self-peptide actually responsible for the maturation of a cohort of
+          thymocytes? Or do a larger number of self-peptides select each TCR? Natural peptides
+          eluted from MHC class I molecules can induce selection of certain TCR transgenic
+          thymocytes when added back to TAP-deficient thymus lobes<bibr rid="b35 b36"/>, although
+          whether these are expressed at the appropriate level in the thymus cortex is not known.
+          Antibodies that react in a peptide-specific fashion with only a subset of class II
+          molecules prevent the thymic selection of a specific subset of CD4<super>+</super> T
+            cells<bibr rid="b37"/>. Certainly, it can be concluded that a subset of self-peptides,
+          and possibly a single self-peptide, bound to self-MHC acts as the ligand that permits the
+          maturation of each T cell. In this way, these self-peptides act as low-affinity mimics or
+          lsquo;stand insrsquo; to prime the immune system to interact later in the periphery with
+          high-affinity ligands for the TCR such as foreign peptide bound to the same MHC<bibr
+            rid="b38"/>.</p>
+        <p>In the study of CD4<super>+</super> T-cell selection in the thymus, researchers have
+          generated mice in which all or a large fraction of the class II molecules in an individual
+          mouse are occupied by the same peptide, and have asked how many T cells can one
+          peptidendash;MHC ligand select. The invariant chain Ii is a chaperone for MHC class II
+          that contains a region, CLIP, that occupies the class II groove in the endoplasmic
+          reticulum and prohibits other peptides from binding until the molecules reach
+          endosomal/lysosomal vesicles. At this site, CLIP is removed by the action of the peptide
+          exchange catalyst, H2ndash;M. Mice deficient in H2ndash;M express near normal levels of
+          class-IIndash;peptide on their surface, but in this case, most remain occupied by the
+          CLIP peptide<bibr rid="b39 b40 b41"/>. Another strategy has been to generate a covalently
+          linked class-IIndash;peptide construct that assembles with the single peptide lsquo;sewn
+          inrsquo; to the MHC groove and to express these as transgenes in mice that lack wild-type
+          MHC class II<bibr rid="b42 b43"/>.</p>
+        <p>Initial results from these lsquo;single peptidersquo; systems were remarkable in
+          showing that the mice developed a large and broad CD4<super>+</super> T-cell repertoire.
+          They contained 20ndash;50% of the normal numbers of CD4<super> +</super> T cells, with
+          diverse TCRs as assessed by Vbeta; and Valpha; usage. Could a single peptidendash;MHC
+          complex select a near-normal CD4<super>+ </super> T-cell repertoire? More recent analysis
+          has shown quite clearly that the repertoire in these animals is far from normal. First,
+          none of the single-peptide mice can positively select TCRs of known specificity that are
+          selected in normal mice<bibr rid="b44 b45 b46"/>. Second, closer analysis of the
+          TCRalpha; chain usage in the mutant versus wild-type mice shows that the selected
+          repertoire is markedly constrained in the mutants<bibr rid="b47"/>. Last, even when 95% of
+          class II molecules are occupied by a single peptide, most of the CD4<super> +</super> T
+          cells that emerge from the thymus are actually selected on the 5% of molecules that are
+          occupied by a diverse mixture of unknown self-peptides. The CLIP region of Ii was replaced
+          with a tight-binding peptide, so that in mice that were Ii-deficient, 95% of surface MHC
+          class II molecules were occupied by the substituted sequence<bibr rid="b48"/>. Under these
+          conditions, large numbers of CD4<super>+</super> T cells were selected. The critical
+          experiment was to breed these mice to an H2ndash;M-deficient background which resulted in
+          no apparent change in the level of MHC class II expression, but a 70% decline in the
+          number of CD4<super>+</super> T cells selected. The simple conclusion is that the
+          lsquo;backgroundrsquo; of diverse peptides bound to class II must have a major role in
+          selection even though such complexes are present at extremely low levels.</p>
+        <p>Positive selection of immature DP thymocytes by low-affinity interactions with
+          self-peptidendash;MHC complexes implies that cells at this stage of development are more
+          sensitive to low-affinity ligands than are their mature descendents. This has been shown
+          to be the case, despite the fact that they express 10-fold less TCR on their surface<bibr
+            rid="b49 b50"/>. Low-affinity ligands stimulated early activation events in DP
+          thymocytes but not in mature T cells bearing the same TCR; however, from what we have
+          learned recently about the homeostasis of peripheral T cells, we might assume that under
+          certain circumstances, mature T cells can also respond to low-affinity self-ligands. </p>
+      </sec>
+    </sec>
+    <sec level="1">
+      <sectitle>Peripheral T-cell homeostasis</sectitle>
+      <p>After the selection and maturation of T cells in the thymus, naive T cells enter the
+        periphery where they circulate throughout the secondary lymphoid organs awaiting an
+        encounter with antigen. The organization of the many cell types that make up the immune
+        system requires complex homeostatic mechanisms to assure the production and survival of each
+        cell type in appropriate numbers to maintain proper immune function. One can imagine many
+        different mechanisms by which appropriate homeostasis of lymphocyte populations is
+        maintained, including control of the rate of production, division of mature cells,
+        trafficking and cell death.</p>
+      <p>To maintain homeostasis of lymphocyte populations, the different cell types must be grouped
+        and counted. Peripheral B- and T-cell populations appear to be independently regulated<bibr
+          rid="b51"/>. This conclusion is based on the fact that similar numbers of mature B cells
+        are found in the periphery of normal mice and in mice that lack T cells<bibr rid="b52"/>.
+        Likewise, the number of T cells found in normal mice does not increase in B-cell-deficient
+          mice<bibr rid="b53"/>. In addition, when small numbers of T cells are introduced into
+        depleted hosts, they undergo expansion equivalently in mice deficient in both B and T cells
+        and in mice deficient only in T cells<bibr rid="b54"/>. All these results suggest the
+        independent homeostatic control of T-cell and B-cell numbers. </p>
+      <p>The pool of peripheral T cells consists of nainodot; uml;ve T cells and previously
+        activated antigen-experienced memory cells. Interestingly, nainodot; uml;ve and memory T
+        cells appear to occupy separate homeostatic niches. After reconstitution of T-cell-deficient
+        mice with memory cells, the transferred cells expand to equal the same total number of
+        memory cells in normal mice. Furthermore, it is not possible to increase the size of the
+        memory pool by transferring large numbers of memory T cells, indicating that there is a set
+        point for memory T-cell number even when no nainodot; uml;ve T cells are present<bibr
+          rid="b55"/>. The separate regulation of memory and nainodot; uml;ve pools makes
+        teleological sense as it is vital to retain both a diverse nainodot; uml;ve repertoire
+        that can respond to invasion by yet unknown pathogens and a memory pool that can respond
+        rapidly to previously encountered pathogens. If these two populations were in competition
+        for survival, the diverse repertoire of nainodot; uml;ve T cells could be replaced by
+        rapidly expanding memory T cells or, conversely, new thymic emigrants could displace memory
+        T cells resulting in the loss of immunological recall<bibr rid="b51"/>. </p>
+      <p>Although CD4<super>+</super> and CD8<super>+</super> cells serve different functions in the
+        immune system and recognize different MHC molecules, many results suggest that they occupy
+        overlapping homeostatic niches<bibr rid="b51"/>. First, relatively normal numbers of total T
+        cells are found in mice deficient in MHC class I or II or in the CD8 or CD4 co-receptors,
+        and thus lacking one T-cell subset. Second, small numbers of mature peripheral T cells will
+        expand when introduced into a T-cell-deficient host, and the co-transfer of large numbers of
+        either CD4<super>+</super> or CD8<super>+</super> mature T cells can suppress this
+          expansion<bibr rid="b56 b57"/>. Last, in TCR transgenic mice in which the T-cell
+        population is skewed toward either the CD4<super>+</super> or CD8<super>+</super> subset,
+        total T-cell numbers are typically near normal. Thus, CD4<super>+</super> and
+          CD8<super>+</super> T cells appear to be counted together for purposes of maintaining the
+        homeostasis of T-cell numbers. However, some distinction is clearly made between
+          CD4<super>+</super> and CD8<super> +</super> T cells, as the ratio of CD4<super>+</super>
+        to CD8<super>+</super> T cells is tightly regulated in normal mice and will rapidly readjust
+        after transfer of large numbers of either subset<bibr rid="b56"/>.</p>
+      <p>The size of the nainodot; uml;ve pool of T cells remains more or less constant in spite
+        of the continuing contribution of recent thymic emigrants, the loss of T cells due to normal
+        cell death, the expansion and waning of effector populations during immune responses, and
+        the diversion of cells into the memory pool after an immune response. The size of the
+        peripheral T-cell pool does not appear to influence the rate of thymocyte production or
+        export of nainodot; uml;ve T cells, as changes in the number of peripheral T cells do not
+        change the rate of thymocyte output<bibr rid="b58"/>. These data suggest that homeostatic
+        control over the size of the nainodot; uml;ve peripheral pool is regulated by the loss of
+        T cells in the periphery<bibr rid="b58"/>. How recent thymic emigrants are incorporated into
+        the peripheral pool is not entirely understood. Clearly, recent thymic emigrants must
+        displace other nainodot; uml;ve T cells to maintain homeostasis of the peripheral T-cell
+        pool. Newly generated T cells could either randomly displace resident T cells in the
+        periphery or selectively displace resident cells on the basis of a criterion such as
+          age<bibr rid="b51 b58 b59"/>. Even in the absence of thymic export, the nainodot; uml;ve
+        pool remains rather constant in size, indicating that the life span of nainodot; uml;ve T
+        cells is under homeostatic control<bibr rid="b59 b60"/>.</p>
+      <p>Relatively little is known about the mechanisms that determine life span, capacity for
+        renewal and survival of nainodot; uml;ve T cells in the periphery in the absence of
+        antigen. Nainodot; uml;ve T cells were considered to be quiescent lsquo;spore-likersquo;
+        cells that persist indefinitely without antigenic stimulation<bibr rid="b61 b62 b63 b64 b65"
+        />; however, evidence now suggests that nainodot; uml;ve T cells may require input signals
+        to support their survival in the periphery. Expression of transcription factors such as lung
+        Kruppel-like factor and NFAT4 are crucial for the maintenance of a resting, nainodot;
+        uml;ve population of T cells<bibr rid="b66 b67"/>. In addition, cytokine signals influence
+        the survival, homing and activation of nainodot; uml;ve T cells, which in turn alter the
+        activation state and homeostasis of the nainodot; uml;ve compartment<bibr rid="b68 b69"/>.
+        The bcl-2 family of molecules, which are intimately involved in the survival of many cell
+        types, are also involved in the maintenance of the nainodot; uml;ve pool of T cells<bibr
+          rid="b70"/>. Now it appears that TCR interactions with self-MHC direct a signal required
+        for maintenance of nainodot; uml;ve T cells.</p>
+      <sec level="2">
+        <sectitle>MHC in peripheral maintenance</sectitle>
+        <p> Although self-peptidendash;MHC molecules are known to be crucial in the generation of a
+          T-cell repertoire with a wide spectrum of specificities, only recently have data emerged
+          that implicate TCR interaction with self-MHC in the survival and expansion of peripheral T
+          cells (<figr rid="f2">Fig. 2</figr>). Several groups have shown that MHC molecules are
+          important in maintaining a peripheral pool of T cells<bibr rid="b71"/>. </p>
+        <p>In many experimental systems, nainodot; uml;ve CD4<super>+</super> T cells demonstrate
+          a requirement for MHC class II molecules for long-term survival<bibr rid="b72 b73 b74 b75"
+          />. CD4<super>+</super> T cells were positively selected in MHC class-II-expressing
+          thymuses and then assayed for survival in a periphery that was engineered to lack
+          expression of the positively selecting MHC class II allele. In all cases,
+            CD4<super>+</super> T cells declined in numbers in the absence of self-MHC class II. One
+          report has shown that expression of MHC class II on dendritic cells is sufficient to
+          support CD4<super>+</super> T cells in the periphery<bibr rid="b74"/>.</p>
+        <p>An important role for MHC class I in maintaining nainodot; uml;ve CD8<super> +</super>
+          T cells has been demonstrated by the transfer of TCR transgenic CD8<super>+</super> T
+          cells into MHC class-I-deficient hosts<bibr rid="b76 b77"/>. Both studies showed that the
+          nainodot; uml;ve CD8<super>+</super> T cells fade away in hosts that lack peripheral
+          expression of MHC class I. Furthermore, the MHC class I allele that positively selected
+          the T cell in the thymus is strictly required for nainodot; uml;ve T-cell survival<bibr
+            rid="b76"/>. The inability of CD8<super>+</super> T cells to accumulate in mice
+          expressing very low levels of MHC class I when grafted with a wild-type thymus further
+          supports a role for TCR engagement by MHC in the periphery to permit survival of T
+            cells<bibr rid="b78"/>. Although some differences were reported in these studies, the
+          trend remains clear: the retention of both CD8<super>+</super> and CD4<super>+</super> T
+          cells is enhanced when MHC class I and II, respectively, are expressed in the
+          periphery.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>MHC in recovery of peripheral homeostasis</sectitle>
+        <p> The nainodot; uml;ve T-cell pool consists mostly of resting cells compared with the
+          memory pool in which cells turn over more rapidly<bibr rid="b63"/>. Upon close
+          examination, however, low levels of division are observed in nainodot; uml;ve T-cell
+          populations in the absence of conventional antigen stimulation<bibr rid="b61 b63"/>.
+          Furthermore, even without conventional antigen stimulation, nainodot; uml;ve T cells
+          have a great potential for division when transferred into hosts with low numbers of
+            lymphocytes<bibr rid="b56 b60 b62 b65 b79 b80 b81 b82 b83"/>. This proliferation of
+          nainodot; uml;ve cells after transfer into lymphopenic hosts has been speculated to
+          involve cytokine release, the expression ofnbsp;environmental antigens or interactions
+          with self-MHC molecules<bibr rid="b57 b65 b82 b84 b85 b86"/>. Recently, the molecular
+          interactions that support the expansion of nainodot; uml;ve T cells in lymphopenic
+          environments have become of significant interest, and several groups have studied the
+          function of MHC in this process. There is a clear consensus that both CD4<super>+</super>
+          and CD8<super>+</super> T cells require expression of MHC ligands for efficient
+          homeostatic expansion in lymphopenic hosts<bibr rid="b54 b57 b77 b86 b87 b88 b89"/>.</p>
+        <p>When polyclonal or TCR transgenic monoclonal CD4<super>+</super> T-cell populations are
+          transferred into syngeneic hosts that have been T-cell depleted, they divide without
+          direct antigenic stimulation. If the CD4<super>+</super> cells are transferred into class
+          II-deficient hosts or hosts expressing MHC class II other than the positively selecting
+          class II molecule, however, little division is observed<bibr rid="b54 b57 b86 b87"/>.
+          Similarly, both polyclonal and TCR transgenic CD8<super>+</super> T cells expand in
+          wild-type hosts expressing MHC class I, but minimally in hosts with low or no levels of
+          MHC class I molecules<bibr rid="b77 b88 b89"/>. Thus, both CD8<super>+</super> and
+            CD4<super>+</super> T cells proliferate much more efficiently in a lymphopenic host
+          expressing MHC class I or MHC class II molecules, respectively. These data show that MHC
+          recognition contributes to division of nainodot; uml;ve T cells responding to
+          homeostatic signals.</p>
+        <p>What is the specificity of the TCRndash;MHC interaction that promotes homeostasis-driven
+          expansion? Experiments comparing CD4<super>+</super> T cells transferred into hosts with
+          wild-type self-peptidendash;MHC class II or hosts expressing MHC class II bound to a
+          limited repertoire of self-peptides show that CD4<super>+</super> T cells undergo
+          expansion efficiently only when transferred into a host with a self-peptidendash;MHC
+          class II repertoire from the background in which the T cells developed. Division of
+          wild-type CD4<super>+</super> T cells was observed in T-cell-depleted wild-type hosts but
+          only minimally in H2ndash;M-deficient hosts. As expected, CD4<super> +</super> T cells
+          that were positively selected in the H2ndash;M-deficient background were able to divide
+          when transferred into T-cell-depleted Hndash;2M-deficient hosts<bibr rid="b57 b86"/>.
+          These data make a strong case that peptide-specific recognition of MHC class II complexes
+          by T cells promotes division in T-cell-depleted environments<bibr rid="b57 b86"/>.
+          Furthermore, they suggest that this recognition is specific for the same peptides that T
+          cells previously recognized with low affinity during their positive selection in the
+            thymus<bibr rid="b57 b86"/>. </p>
+        <p>CD8<super>+</super> T cells also exhibit a requirement for specific recognition of
+          peptidendash;MHC class I complexes to undergo homeostatic expansion. Proliferation of TCR
+          transgenic CD8<super>+</super> T cells in TAP-deficient hosts expressing low levels of MHC
+          class I was restored by the addition of a single MHC class-I-binding peptide<bibr
+            rid="b89"/>. Recognition was peptide specific, as a low-affinity peptide known to
+          positively select the TCR transgenic T cells promoted expansion, whereas a control peptide
+          did not. Thus, the signal for homeostatic proliferation may be characterized by
+          low-affinity TCR interactions with self-peptidendash;MHC complexes. This suggests that
+          the specific recognition of self-peptidendash;MHC complexes drives homeostatic
+          proliferation of peripheral T cells, and that this interaction has a specificity similar
+          to the recognition of self-peptidendash;MHC during positive selection. It is possible
+          that the positively selecting peptide(s) may not necessarily be expressed in the
+          periphery, but that other ligands of similar affinity or avidity for the TCR function in
+          this capacity (<figr rid="f2">Fig. 2</figr>).</p>
+      </sec>
+      <sec level="2">
+        <sectitle>The response to T-cell depletion</sectitle>
+        <p> To what extent does homeostasis-driven proliferation of peripheral T cells in a
+          self-peptidendash;MHC-specific manner contribute to a useful immune system? One
+          possibility is that it ensures the diversity of the peripheral T-cell repertoire. It is
+          appealing to consider that a requirement for peptide-specific recognition during
+          homeostatic proliferation would reinforce the requirement for self-recognition established
+          during positive selection for an individual clone to survive over time and contribute to
+          the long-lived pool of peripheral T cells. Furthermore, the ability of a nainodot;
+          uml;ve T cell to receive TCRndash;self-peptidendash;MHC signals may determine to what
+          extent a given cell contributes to reconstitution after a decline in T-cell numbers. This
+          could have important implications for peripheral homeostasis after a loss of peripheral T
+          cells in adults, as the ability of the thymus to replenish a nainodot; uml;ve T-cell
+          pool with diverse specificities may be insufficient to repopulate the periphery
+            efficiently<bibr rid="b84"/>. The clinical relevancy of such a mechanism certainly
+          exists for patients with T-cell immunodeficiencies resulting from infection (such as AIDS)
+          or from therapeutic treatments (such as chemotherapy or irradiation).</p>
+        <p>Until recently, it was thought that nainodot; uml;ve T cells did not recognize
+          self-peptidendash;MHC ligands in the periphery. However, the existence of mechanisms for
+          MHC-dependent homeostasis-driven proliferation and survival suggest that low-affinity
+          interactions between the TCR of peripheral T cells and self-peptidendash;MHC complexes
+          are involved in regulating homeostasis of peripheral T-cell populations. T cells
+          proliferate in response to low-affinity self-ligands when T-cell numbers are reduced,
+          which demonstrates that the sensitivity of the TCR or the response to TCR-mediated signals
+          can be altered by global homeostatic signals. We can envisage at least three different
+          mechanisms by which this could work (<figr rid="f3">Fig. 3</figr>). Under normal
+          conditions, T cells crowding through lymph nodes may be competing for ligands on
+          presenting cells. Competition may be for MHC itself or for some other growth factor;
+          lymphopenia would decrease the competition. Alternatively, T cells may lsquo;countrsquo;
+          their own numbers by sending inhibitory signals to each other, or by inhibiting the
+          stimulatory properties of a presenting cell. Decreasing T-cell numbers would sensitize the
+          T cell or activate the presenting cell (<figr rid="f3"> Fig. 3</figr>).</p>
+        <p>One implication of nainodot; uml;ve T cells being induced to proliferate in
+          T-cell-depleted environments is that what has previously been considered
+          lsquo;maintenancersquo; is likely to be the sum of survival and proliferation. The
+          decline of T cells in the absence of MHC may be partially due to their inability to
+          undergo homeostatic proliferation. Thus, it is necessary at this point to re-evaluate our
+          understanding of T-cell maintenance to accommodate a more complex regulation of T-cell
+          homeostasis.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>Maintenance of the memory T-cell pool</sectitle>
+        <p> Memory T cells often divide in the periphery long after antigen stimulation, even
+          without evidence for the persistence of antigen. Furthermore, the rules for the
+          persistence of memory T cells appear to be different from those that nainodot; uml;ve
+          T-cells obey. Recent studies have shown that CD4<super>+</super> and CD8<super> +</super>
+          memory T cells have a much less stringent requirement for TCRndash;MHC interactions for
+          survival and homeostatic proliferation compared with nainodot; uml;ve T cells.</p>
+        <p>The survival of memory CD8<super>+</super> T cells is much less dependent on MHC class I
+          than that of nainodot; uml;ve CD8<super>+</super> T cells. Both polyclonal and TCR
+          transgenic memory CD8<super>+</super> T cells specific for lymphocytic choriomeningitis
+          virus (LCMV) survive indefinitely in MHC-deficient hosts<bibr rid="b77"/>. Memory
+            CD8<super>+</super> T cells, expressing the TCR transgene specific for the male antigen
+          HY, survived and proliferated without a preference for the restricting allele<bibr
+            rid="b76"/>. However, unlike the LCMV-specific memory T cells, the memory T cells
+          specific for the HY antigen disappeared after transfer into mice expressing low levels of
+          MHC class I<bibr rid="b76 b90"/>. In both experimental systems, CD8<super>+</super> memory
+          T cells were able to proliferate in lymphopenic hosts even when MHC class I was not
+          expressed, showing that homeostatic proliferation of memory CD8<super>+</super> T cells is
+          MHC class I independent<bibr rid="b76 b77"/>. Although some differences in conclusions
+          from these studies may be attributed to distinct experimental systems, the data with
+          polyclonal CD8<super>+</super> T cells specific for many LCMV antigens present a
+          convincing argument for MHC independence for homeostatic proliferation and survival of
+          memory CD8<super> +</super> T cells<bibr rid="b77"/>. Similarly, memory
+            CD4<super>+</super> T cells survive indefinitely in hosts that do not express their
+          positively selecting MHC class II molecule<bibr rid="b91"/> or any class II molecules at
+            all<bibr rid="b92"/>. Thus, CD4<super>+</super> memory T cells appear to have no
+          requirement for the presence of self-MHC class II to support their long-term survival. An
+          obvious corollary of these observations is that neither CD8<super>+</super> nor
+            CD4<super>+</super> memory T cells need continuous exposure to their cognate antigen to
+          survive, a subject of much previous debate.</p>
+      </sec>
+      <sec level="2">
+        <sectitle>The response to infection</sectitle>
+        <p>
+          <?Pub Caret?>There is concern that certain infectious agents may overwhelm the immune
+          system because of their high replicative potential; however, the opposite problem may
+          arise. Analyses have shown that, in some cases, the specific immune response can threaten
+          to overwhelm the lymphoid compartment. Use of peptidendash;MHC tetramers to stain T cells
+          on the basis of TCR specificty, and of single-cell assays to detect interferon-gamma;
+          secretion, have revolutionized our appreciation of the numerology of the
+            CD8<super>+</super> T-cell response to infection<bibr rid="b93 b94"/>. For mice infected
+          with the natural pathogen LCMV, total CD8<super> +</super> T-cell numbers increase
+          2ndash;10-fold by eight days after exposure (<figr rid="f4">Fig. 4</figr>). Remarkably,
+          most of the CD8<super>+</super> T-cell expansion is antigen-specific! The rare,
+          antigen-specific, nainodot; uml;ve CD8<super>+</super> T cells present before infection
+          can divide 13ndash;16 times in this time, so that their frequency may go from 1 in
+            10<super>4</super>ndash;10<super> 5</super> to making up most of the
+            CD8<super>+</super> T-cell population. Such rapid proliferation leads to the production
+          of enormous numbers of effectors capable of killing infected cells and releasing cytokines
+          upon antigen encounter. Such a massive CD8<super>+</super> T-cell response is not unique
+          to LCMV infection, as large numbers of antigen-specific T cells are generated in other
+          human and animal infections<bibr rid="b95 b96 b97 b98 b99"/>. In this case of a viral or
+          bacterial pathogen in which multiple pathogen-derived epitopes are known and the specific
+            CD8<super>+</super> T-cell response to each one can be quantitated by tetramer staining,
+          the composition of the memory pool reflects the epitope specificity of the effector
+            population<bibr rid="b94 b100"/>. The dominant epitopes in the initial response remain
+          dominant in the memory repertoire. </p>
+        <p>The problem for the immune system is how to revert to homeostasis from a situation at the
+          height of response when over half of the CD8<super>+</super> T cells in the infected
+          animal are effector cells specific for one pathogen. The system copes extremely well.
+          During the few days after antigen has been cleared, 90ndash;99% of the effector cells
+          die, leaving an expanded population of new memory cells. The original nainodot; uml;ve
+            CD8<super>+</super> T-cell pool is left intact, except for the promotion of the
+          pathogen-specific members, whereas the memory pool adds some new members (<figr rid="f4"
+            >Fig. 4</figr>). A recent experiment in which memory T cells were irreversibly marked by
+          the activation of a modified granzyme B promoter suggests that a specific subset of
+          effector cells contributes to memory<bibr rid="b101"/>. What regulates the contraction of
+          the overwhelming numbers of effector CD8<super>+</super> T cells into reasonable numbers
+          of memory cells is unknown. There is no evidence that Fas/FasL or any other
+          tumour-necrosis factor family member is involved in the massive apoptosis of the effector
+            cells<bibr rid="b102"/>. Cessation of antigen stimulation and withdrawal of growth
+          factors at the end of the response may lead to death. By whatever mechanism the immune
+          system pulls it off, this represents a remarkable example of the recovery of homeostasis
+          in the T-cell repertoire.</p>
+      </sec>
+    </sec>
+    <sec level="1">
+      <sectitle>The lives of a T cell</sectitle>
+      <p>CD4<super>+</super> and CD8<super>+</super> T cells depend on TCR interactions with
+        self-peptides presented by MHC molecules for both their maturation in the thymus and their
+        maintenance in peripheral lymphoid organs. The signals delivered in the periphery through
+        interactions with self maintain the homeostasis of the nainodot; uml;ve T-cell pool by
+        keeping cells alive and by stimulating a low level of proliferation when the need arises.
+        Low-affinity interactions with self-peptidendash;MHC may keep nainodot; uml;ve T cells
+        alert and is a way for them to reaffirm their potential to respond to higher affinity
+        interactions with foreign peptide. The recognition of self-peptidendash;MHC by developing
+        thymocytes does more than simply deliver a survival signalmdash;it also allows the
+        preferential selection of T cells on the basis of their ability to detect self-ligands with
+        high specificity and low affinity. Because the composition of self-peptides bound to MHC is
+        diverse, the specificity of T cells selected to mature is also diverse. The fact that
+        peripheral T cells remain sensitive to self-peptidendash;MHC suggests that a continuum of
+        self-recognition ensures diversity within the T-cell pool long after positive selection in
+        the thymus is completed.</p>
+      <p>The factors that govern the production and maintenance of the memory T-cell pool are a
+        mystery. This issue is further compounded by the finding that memory T cells are
+        heterogeneous and can be subclassified into those that retain receptors for entering
+        secondary lymphoid organs and those that preferentially enter inflamed tissues and perform
+        immediate effector function<bibr rid="b103"/>. In contrast to nainodot; uml;ve T cells, T
+        cells that have responded to foreign antigen and graduated to the memory pool no longer
+        require self-antigen stimulation to survive. An obvious rational for this is that once a T
+        cell has responded to a first encounter with a pathogen, it does not need to reaffirm its
+        usefulness in the memory pool. A pathogen that came once may certainly come again. Another
+        reason why memory T cells should be less responsive to self-antigen is that they are
+        potentially more dangerous than nainodot; uml;ve cells. Memory T cells are easier to
+        trigger, faster to respond, and may enter tissues more readily than nainodot; uml;ve T
+        cells, allowing them to see a broader range of self-antigens. Thus, compared with nainodot;
+        uml;ve T cells, they pose an increased threat to upset the balance of discrimination
+        between self and non-self. On the basis of this realization, one may propose a way in which
+        a fraction of effector cells from a primary response is allowed to revert to memory status.
+        The effector cells that have responded well to foreign antigen, yet are the least sensitive
+        to low-affinity self-peptidendash;MHC interactions, may be the ones chosen to enter the
+        memory pool. Their lower sensitivity to self-antigen would guard against a harmful
+        autoimmune response due to unforeseen cross-reactivity with self. This lowered sensitivity
+        to self may be based on the specificity of their TCR in a polyclonal population, or on some
+        stochastic change in their ability to perceive low-affinity ligands in a monoclonal
+        setting.</p>
+      <p>The goal of vaccination is to induce long-lived memory cells. Understanding the
+        developmental progression of T lymphocytes from the thymus, to nainodot; uml;ve peripheral
+        cell, to effector cell to memory cell is a challenge for the future. Advances in the way
+        that we are able to identify T cells on the basis of their specificity, and expanding
+        knowledge of signalling pathways will allow rapid progress in this area.</p>
+    </sec>
+  </bdy>
+  <bm>
+    <objects>
+      <fig id="f1" type="bmp" entname="figf1">
+        <!--402d006AA-->
+        <figtl>The nature of TCR interaction with peptidendash;MHC ligand.</figtl>
+        <caption>
+          <p><b>a</b>, Positioning of the three CDR loops of the TCRalpha; and TCRbeta; chains in
+            the ligand-binding face of the TCR. <b>b</b>,nbsp;Footprint of the TCR on the
+            peptidendash;MHC complex. <b>c</b>, MHC class I molecule with bound peptide. The long
+            alpha;-helices of MHC enclose the peptide. Reprinted with permission from Garcia <i>et
+              al</i>.<bibr rid="b11"/>. The crystal structure of a TCR interaction with a MHC class
+            II ligand has not been reported but is likely to follow the same rules.</p>
+        </caption>
+      </fig>
+      <fig id="f2" type="bmp" entname="figf2">
+        <!--402d006AB-->
+        <figtl>Consequences of TCR interactions with ligands of varying affinity in the thymus and
+          periphery.</figtl>
+        <caption>
+          <p>TCRndash;MHC interactions may facilitate maturation, survival, proliferation or death.
+            The consequences of TCR binding to peptidendash;MHC are dictated by the affinity of the
+            interaction, as well as the maturation state of the T cell. Immature thymocytes require
+            a positively selecting signal, which is delivered through low-affinity interactions of
+            their newly rearranged TCR with self-peptidendash;MHC. If no signal is delivered to the
+            thymocyte because of an inability of the TCR to interact with self-peptidendash;MHC
+            complexes, it will undergo programmed cell death known as death by neglect.
+            Alternatively, a thymocyte may express a TCR that has high affinity for
+            self-peptidendash;MHC. These cells must be eliminated by negative selection as they are
+            potentially autoreactive. In the periphery mature T cells require low-affinity
+            interactions with self-peptidendash;MHC to ensure survival. Furthermore, low-affinity
+            interactions with self-peptidendash;MHC allow nainodot; uml;ve T cells to expand when
+            T-cell numbers are reduced. High-affinity interactions between a nainodot; uml;ve
+            T-cell in the periphery and peptidendash;MHC typically initiate the immune response
+            against a foreign antigen. This leads to rapid proliferation and the development of the
+            effector function culminating in the emergence of a few antigen-experienced cells that
+            join the pool of memory T cells to await a subsequent encounter with antigen.</p>
+        </caption>
+      </fig>
+      <fig id="f3" type="bmp" entname="figf3">
+        <!--402d006AC-->
+        <figtl>Possible mechanisms to explain the proliferation by nainodot; uml;ve T cells in
+          response to low-affinity ligands following T-cell depletion.</figtl>
+        <caption>
+          <p>The lymphopenic state renders nainodot; uml;ve T cells capable of responding by
+            proliferation to peptidendash;MHC complexes that are not stimulatory during normal
+            conditions. <b>a</b>, Competition for niches or space on the antigen-presenting cell
+            (APC) would be reduced when T-cell numbers are depleted, thereby allowing greater
+            accessibility to ligands or growth factors. Such decreased competition for
+            non-MHC-derived stimulatory signals such as growth factors or ligands could make signals
+            accessible that would allow T cells to detect self-peptidendash;MHC complexes resulting
+            in proliferation. It seems improbable that a decrease in direct competition for
+            peptidendash;MHC complexes explains the ability of T cells to proliferate in response
+            to self-peptidendash;MHC ligands because CD4<super>+</super> and CD8<super>+</super> T
+            cells recognize distinct ligands yet appear to occupy largely overlapping homeostatic
+            niches. <b>b</b>, T cells could somehow lsquo;sensersquo; a drop in T-cell number. T
+            cell/T cell interactions could inhibit proliferation or decrease sensitivity to TCR
+            signals. A release from autoinhibition during lymphopenia would allow T cells to receive
+            a signal for proliferation following interactions with low-affinity ligands for the TCR.
+              <b>c</b>, T-cell loss could be detected by another cell type that would upregulate the
+            expression of a factor promoting T-cell division by influencing the T-cell response or
+            sensitivity to TCR interactions with low-affinity peptidendash;MHC ligands.</p>
+        </caption>
+      </fig>
+      <fig id="f4" type="bmp" entname="figf4">
+        <!--402d006AD-->
+        <figtl>Response to infection and the recovery of homeostasis.</figtl>
+        <caption>
+          <p>The case of the murine CD8<super>+</super> T-cell response to LCMV is depicted. After
+            viral infection, nainodot; uml;ve CD8<super>+</super> T cells that recognize LCMV
+            epitopes may go through 13 or more divisions within 8 days, producing massive numbers of
+            effector cells. When antigen is cleared, most of the effector cells die, leaving an
+            expanded population of LCMV-specific T cells, which join the memory pool.</p>
+        </caption>
+      </fig>
+    </objects>
+    <bibl>
+      <bib id="b1">
+        <reftxt><refau><snm>Zinkernagel</snm>,<fnm>R. M.</fnm></refau> amp;
+              <refau><snm>Doherty</snm>,<fnm>P. C.</fnm></refau>
+          <atl>Restriction of <i>in vitro</i> T cell-mediated cytotoxicity in lymphocytic
+            choriomeningitis within a syngeneic or semiallogeneic system.</atl>
+          <jtl>Nature</jtl>
+          <vid> 248</vid>, <ppf>701</ppf>ndash;<ppl>710</ppl> (<cd year="1974">1974</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b2">
+        <reftxt><refau><snm>Babbitt</snm>,<fnm>B. P.</fnm></refau>, <refau><snm> Allen</snm>,<fnm>P.
+              M.</fnm></refau>, <refau><snm>Matsueda</snm>,<fnm>G.</fnm></refau>, <refau><snm>
+              Haber</snm>,<fnm>E.</fnm></refau> amp; <refau><snm>Unanue</snm>,<fnm>E. R.
+            </fnm></refau>
+          <atl>Binding of immunogenic peptides to Ia histocompatibility molecules.</atl>
+          <jtl>Nature</jtl>
+          <vid>317</vid>, <ppf>359</ppf>ndash;<ppl> 361</ppl> (<cd year="1985">1985</cd>).</reftxt>
+      </bib>
+      <bib id="b3">
+        <reftxt><refau><snm>Townsend</snm>,<fnm>A. R.</fnm></refau>, <refau><snm>
+              Gotch</snm>,<fnm>F. M.</fnm></refau> amp; <refau><snm>Davey</snm>,<fnm>J.
+            </fnm></refau>
+          <atl>Cytotoxic T cells recognize fragments of the influenza nucleoprotein.</atl>
+          <jtl>Cell</jtl>
+          <vid>42</vid>, <ppf>457</ppf>ndash;<ppl> 467</ppl> (<cd year="1985">1985</cd>).</reftxt>
+      </bib>
+      <bib id="b4">
+        <reftxt><refau><snm>Shortman</snm>,<fnm>K.</fnm></refau> amp; <refau><snm>
+              Wu</snm>,<fnm>L.</fnm></refau>
+          <atl>Early T lymphocyte progenitors.</atl>
+          <jtl> Annu. Rev. Immunol.</jtl>
+          <vid>14</vid>, <ppf>29</ppf>ndash;<ppl>47</ppl> (<cd year="1996">1996</cd>).</reftxt>
+      </bib>
+      <bib id="b5">
+        <reftxt><refau><snm>Jameson</snm>,<fnm>S. C.</fnm></refau>, <refau><snm>
+              Hogquist</snm>,<fnm>K. A.</fnm></refau> amp; <refau><snm>Bevan</snm>,<fnm> M.
+              J.</fnm></refau>
+          <atl>Positive selection of thymocytes.</atl>
+          <jtl>Annu. Rev. Immunol.</jtl>
+          <vid>13</vid>, <ppf>93</ppf>ndash;<ppl>126</ppl> (<cd year="1995">1995</cd>).</reftxt>
+      </bib>
+      <bib id="b6">
+        <reftxt><refau><snm>Kisielow</snm>,<fnm>P.</fnm></refau> amp; <refau><snm> von
+              Boehmer</snm>,<fnm>H.</fnm></refau>
+          <atl>Development and selection of T cells: facts and puzzles.</atl>
+          <jtl>Adv. Immunol.</jtl>
+          <vid>58</vid>, <ppf> 87</ppf>ndash;<ppl>209</ppl> (<cd year="1995">1995</cd>).</reftxt>
+      </bib>
+      <bib id="b7">
+        <reftxt><refau><snm>Davis</snm>,<fnm>M. M.</fnm></refau> amp; <refau><snm>
+              Bjorkman</snm>,<fnm>P. J.</fnm></refau>
+          <atl>T-cell antigen receptor genes and T-cell recognition.</atl>
+          <jtl>Nature</jtl>
+          <vid>334</vid>, <ppf>395</ppf>ndash;<ppl> 402</ppl> (<cd year="1988">1988</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b8">
+        <reftxt><refau><snm>Bjorkman</snm>,<fnm>P. J.</fnm></refau>
+          <i> et al</i>. <atl>Structure of the human class I histocompatibility antigen,
+            HLA-A2.</atl>
+          <jtl>Nature</jtl>
+          <vid>329</vid>, <ppf>506</ppf>ndash;<ppl> 512</ppl> (<cd year="1987">1987</cd>).</reftxt>
+      </bib>
+      <bib id="b9">
+        <reftxt><refau><snm>Brown</snm>,<fnm>J. H.</fnm></refau>
+          <i> et al</i>. <atl>Three-dimensional structure of the human class II histocompatibility
+            antigen HLA-DR1.</atl>
+          <jtl>Nature</jtl>
+          <vid>364</vid>, <ppf>33</ppf>ndash;<ppl> 39</ppl> (<cd year="1993">1993</cd>).</reftxt>
+        <natlink extrefid="00000"/>
+        <!--364033a0-->
+      </bib>
+      <bib id="b10">
+        <reftxt><refau><snm>Scott</snm>,<fnm>C. A.</fnm></refau>, <refau><snm>
+              Peterson</snm>,<fnm>P. A.</fnm></refau>, <refau><snm>Teyton</snm>,<fnm>L.
+            </fnm></refau> amp; <refau><snm>Wilson</snm>,<fnm>I. A.</fnm></refau>
+          <atl> Crystal structures of two I-Ad-peptide complexes reveal that high affinity can be
+            achieved without large anchor residues.</atl>
+          <jtl>Immunity</jtl>
+          <vid> 8</vid>, <ppf>319</ppf>ndash;<ppl>329</ppl> (<cd year="1998">1998</cd>). </reftxt>
+      </bib>
+      <bib id="b11">
+        <reftxt><refau><snm>Garcia</snm>,<fnm>K. C.</fnm></refau>
+          <i> et al</i>. <atl>An alpha beta T cell receptor structure at 2.5thinsp;angst; and its
+            orientation in the TCRndash;MHC complex.</atl>
+          <jtl>Science</jtl>
+          <vid> 274</vid>, <ppf>209</ppf>ndash;<ppl>219</ppl> (<cd year="1996">1996</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b12">
+        <reftxt><refau><snm>Garcia</snm>,<fnm>K. C.</fnm></refau>
+          <i> et al</i>. <atl>Structural basis of plasticity in T cell receptor recognition of a
+            self peptidendash;MHC antigen.</atl>
+          <jtl>Science</jtl>
+          <vid>279</vid>, <ppf> 1166</ppf>ndash;<ppl>1172</ppl> (<cd year="1998"
+          >1998</cd>).</reftxt>
+      </bib>
+      <bib id="b13">
+        <reftxt><refau><snm>Garboczi</snm>,<fnm>D. N.</fnm></refau>
+          <i> et al</i>. <atl>Structure of the complex between human T-cell receptor, viral peptide
+            and HLA-A2.</atl>
+          <jtl>Nature</jtl>
+          <vid>384</vid>, <ppf>134</ppf>ndash;<ppl> 141</ppl> (<cd year="1996">1996</cd>).</reftxt>
+        <natlink extrefid="00000"/>
+        <!--384134a0-->
+      </bib>
+      <bib id="b14">
+        <reftxt><refau><snm>Ding</snm>,<fnm>Y. H.</fnm></refau>
+          <i> et al</i>. <atl>Two human T cell receptors bind in a similar diagonal mode to the
+            HLA-A2/Tax peptide complex using different TCR amino acids.</atl>
+          <jtl> Immunity</jtl>
+          <vid>8</vid>, <ppf>403</ppf>ndash;<ppl>411</ppl> (<cd year="1998"> 1998</cd>).</reftxt>
+      </bib>
+      <bib id="b15">
+        <reftxt><refau><snm>Garcia</snm>,<fnm>K. C.</fnm></refau>, <refau><snm>
+              Teyton</snm>,<fnm>L.</fnm></refau> amp; <refau><snm>Wilson</snm>,<fnm>I.
+            A.</fnm></refau>
+          <atl>Structural basis of T cell recognition.</atl>
+          <jtl> Annu. Rev. Immunol.</jtl>
+          <vid>17</vid>, <ppf>369</ppf>ndash;<ppl>397</ppl> (<cd year="1999">1999</cd>).</reftxt>
+      </bib>
+      <bib id="b16">
+        <reftxt><refau><snm>Teng</snm>,<fnm>M. K.</fnm></refau>
+          <i> et al</i>. <atl>Identification of a common docking topology with substantial variation
+            among different TCRndash;peptidendash;MHC complexes.</atl>
+          <jtl> Curr. Biol.</jtl>
+          <vid>8</vid>, <ppf>409</ppf>ndash;<ppl>412</ppl> (<cd year="1998"> 1998</cd>).</reftxt>
+      </bib>
+      <bib id="b17">
+        <reftxt><refau><snm>Fehling</snm>,<fnm>H. J.</fnm></refau> amp; <refau><snm> von
+              Boehmer</snm>,<fnm>H.</fnm></refau>
+          <atl>Early alpha beta T cell development in the thymus of normal and genetically altered
+            mice.</atl>
+          <jtl>Curr. Opin. Immunol.</jtl>
+          <vid>9</vid>, <ppf>263</ppf>ndash;<ppl>275</ppl> (<cd year="1997"> 1997</cd>).</reftxt>
+      </bib>
+      <bib id="b18">
+        <reftxt><refau><snm>Irving</snm>,<fnm>B. A.</fnm></refau>, <refau><snm> Alt</snm>,<fnm>F.
+              W.</fnm></refau> amp; <refau><snm>Killeen</snm>,<fnm>N. </fnm></refau>
+          <atl>Thymocyte development in the absence of pre-T cell receptor extracellular
+            immunoglobulin domains.</atl>
+          <jtl>Science</jtl>
+          <vid>280</vid>, <ppf> 905</ppf>ndash;<ppl>908</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b19">
+        <reftxt><refau><snm>Zerrahn</snm>,<fnm>J.</fnm></refau>, <refau><snm>
+              Held</snm>,<fnm>W.</fnm></refau> amp; <refau><snm>Raulet</snm>,<fnm>D. H.
+            </fnm></refau>
+          <atl>The MHC reactivity of the T cell repertoire prior to positive and negative
+            selection.</atl>
+          <jtl>Cell</jtl>
+          <vid>88</vid>, <ppf>627</ppf>ndash;<ppl> 636</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b20">
+        <reftxt><refau><snm>Merkenschlager</snm>,<fnm>M.</fnm></refau>
+          <i> et al</i>. <atl>How many thymocytes audition for selection?</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>186</vid>, <ppf>1149</ppf>ndash;<ppl>1158</ppl> (<cd year="1997"
+          >1997</cd>).</reftxt>
+      </bib>
+      <bib id="b21">
+        <reftxt><refau><snm>Sim</snm>,<fnm>B. C.</fnm></refau>, <refau><snm>
+              Zerva</snm>,<fnm>L.</fnm></refau>, <refau><snm>Greene</snm>,<fnm>M. I.</fnm></refau>
+          amp; <refau><snm>Gascoigne</snm>,<fnm>N. R. J.</fnm></refau>
+          <atl>Control of MHC restriction by TCR Valpha CDR1 and CDR2.</atl>
+          <jtl>Science</jtl>
+          <vid> 273</vid>, <ppf>963</ppf>ndash;<ppl>966</ppl> (<cd year="1996">1996</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b22">
+        <reftxt><refau><snm>Sim</snm>,<fnm>B. C.</fnm></refau>
+          <i>et al</i>. <atl>Thymic skewing of the CD4/CD8 ratio maps with the T-cell receptor
+            alphachain locus.</atl>
+          <jtl>Curr. Biol.</jtl>
+          <vid>8</vid>, <ppf>701</ppf>ndash;<ppl> 704</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b23">
+        <reftxt><refau><snm>van Meerwijk</snm>,<fnm>J. P. M.</fnm></refau>
+          <i> et al</i>. <atl>Quantitative impact of thymic clonal deletion on the T cell
+            repertoire.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>185</vid>, <ppf>377</ppf>ndash;<ppl> 383</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b24">
+        <reftxt><refau><snm>Robey</snm>,<fnm>E.</fnm></refau> amp; <refau><snm>
+              Fowlkes</snm>,<fnm>B. J.</fnm></refau>
+          <atl>Selective events in T cell development. </atl>
+          <jtl>Annu. Rev. Immunol.</jtl>
+          <vid>12</vid>, <ppf>675</ppf>ndash;<ppl> 705</ppl> (<cd year="1994">1994</cd>).</reftxt>
+      </bib>
+      <bib id="b25">
+        <reftxt><refau><snm>Nikolic-Zugic</snm>,<fnm>J.</fnm></refau> amp;
+              <refau><snm>Bevan</snm>,<fnm>M. J.</fnm></refau>
+          <atl>Role of self-peptides in positively selecting the T-cell repertoire.</atl>
+          <jtl>Nature</jtl>
+          <vid> 344</vid>, <ppf>65</ppf>ndash;<ppl>67</ppl> (<cd year="1990">1990</cd>). </reftxt>
+      </bib>
+      <bib id="b26">
+        <reftxt><refau><snm>Sha</snm>,<fnm>W. C.</fnm></refau>
+          <i>et al</i>. <atl>Positive selection of transgenic receptor-bearing thymocytes by Kb
+            antigen is altered by Kb mutations that involve peptide binding.</atl>
+          <jtl> Proc. Natl Acad. Sci.</jtl>
+          <vid>87</vid>, <ppf>6186</ppf>ndash;<ppl>6190 </ppl> (<cd year="1990"
+          >1990</cd>).</reftxt>
+      </bib>
+      <bib id="b27">
+        <reftxt><refau><snm>Hogquist</snm>,<fnm>K. A.</fnm></refau>, <refau><snm>
+              Gavin</snm>,<fnm>M. A.</fnm></refau> amp; <refau><snm>Bevan</snm>,<fnm>M.
+            J.</fnm></refau>
+          <atl>Positive selection of CD8<super>+</super> T cells induced by major histocompatibility
+            complex binding peptides in fetal thymic organ culture.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>177</vid>, <ppf>1469</ppf>ndash;<ppl> 1473</ppl> (<cd year="1993"
+          >1993</cd>).</reftxt>
+      </bib>
+      <bib id="b28">
+        <reftxt><refau><snm>Ashton-Rickardt</snm>,<fnm>P. G.</fnm></refau>, <refau><snm> Van
+              Kaer</snm>,<fnm>L.</fnm></refau>, <refau><snm>Schumacher</snm>,<fnm>T.
+            N.</fnm></refau>, <refau><snm>Ploegh</snm>,<fnm>H. L.</fnm></refau> amp; <refau><snm>
+              Tonegawa</snm>,<fnm>S.</fnm></refau>
+          <atl>Peptide contributes to the specificity of positive selection of CD8<super>+</super> T
+            cells in the thymus.</atl>
+          <jtl> Cell</jtl>
+          <vid>73</vid>, <ppf>1041</ppf>ndash;<ppl>1049</ppl> (<cd year="1993">
+          1993</cd>).</reftxt>
+      </bib>
+      <bib id="b29">
+        <reftxt><refau><snm>Ashton-Rickardt</snm>,<fnm>P. G.</fnm></refau>
+          <i> et al</i>. <atl>Evidence for a differential avidity model of T cell selection in the
+            thymus.</atl>
+          <jtl>Cell</jtl>
+          <vid>76</vid>, <ppf>651</ppf>ndash;<ppl> 663</ppl> (<cd year="1994">1994</cd>).</reftxt>
+      </bib>
+      <bib id="b30">
+        <reftxt><refau><snm>Hogquist</snm>,<fnm>K. A.</fnm></refau>
+          <i> et al</i>. <atl>T cell receptor antagonist peptides induce positive selection. </atl>
+          <jtl>Cell</jtl>
+          <vid>76</vid>, <ppf>17</ppf>ndash;<ppl>27</ppl> (<cd year="1994">1994</cd>).</reftxt>
+      </bib>
+      <bib id="b31">
+        <reftxt><refau><snm>Sebzda</snm>,<fnm>E.</fnm></refau>
+          <i>et al</i>. <atl>Mature T cell reactivity altered by peptide agonist that induces
+            positive selection.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>183</vid>, <ppf>1093 </ppf>ndash;<ppl>1104</ppl> (<cd year="1996"
+          >1996</cd>).</reftxt>
+      </bib>
+      <bib id="b32">
+        <reftxt><refau><snm>Hogquist</snm>,<fnm>K. A.</fnm></refau>, <refau><snm>
+              Jameson</snm>,<fnm>S. C.</fnm></refau> amp; <refau><snm>Bevan</snm>,<fnm> M.
+            J.</fnm></refau>
+          <atl>Strong agonist ligands for the T cell receptor do not mediate positive selection of
+            functional CD8<super>+</super> T cells. </atl>
+          <jtl>Immunity</jtl>
+          <vid>3</vid>, <ppf>79</ppf>ndash;<ppl>86</ppl> (<cd year="1995">1995</cd>).</reftxt>
+      </bib>
+      <bib id="b33">
+        <reftxt><refau><snm>Davis</snm>,<fnm>M. M.</fnm></refau>
+          <i> et al</i>. <atl>Ligand recognition by alpha beta T cell receptors.</atl>
+          <jtl> Annu. Rev. Immunol.</jtl>
+          <vid>16</vid>, <ppf>523</ppf>ndash;<ppl>544</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b34">
+        <reftxt><refau><snm>Alam</snm>,<fnm>S. M.</fnm></refau>
+          <i> et al</i>. <atl>T-cell-receptor affinity and thymocyte positive selection. </atl>
+          <jtl>Nature</jtl>
+          <vid>381</vid>, <ppf>558</ppf>ndash;<ppl>559</ppl> (<cd year="1996">1996</cd>).</reftxt>
+        <natlink extrefid="00000"/>
+        <!--381558a0-->
+      </bib>
+      <bib id="b35">
+        <reftxt><refau><snm>Hogquist</snm>,<fnm>K. A.</fnm></refau>
+          <i> et al</i>. <atl>Specific recognition of thymic self-peptides induces the positive
+            selection of cytotoxic T lymphocytes.</atl>
+          <jtl>Immunity</jtl>
+          <vid>7</vid>, <ppf> 221</ppf>ndash;<ppl>231</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b36">
+        <reftxt><refau><snm>Hu</snm>,<fnm>Q.</fnm></refau>
+          <i>et al </i>. <atl>Specific recognition of thymic self-peptides induces the positive
+            selection of cytotoxic T lymphocytes.</atl>
+          <jtl>Immunity</jtl>
+          <vid>7</vid>, <ppf> 221</ppf>ndash;<ppl>231</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b37">
+        <reftxt><refau><snm>Baldwin</snm>,<fnm>K. K.</fnm></refau>, <refau><snm> Reay</snm>,<fnm>P.
+              A.</fnm></refau>, <refau>Wu, <fnm>L.</fnm></refau>, <refau><snm>
+              Farr</snm>,<fnm>A.</fnm></refau> amp; <refau><snm>Davis</snm>,<fnm>M. M.
+            </fnm></refau>
+          <atl>A T cell receptor-specific blockade of positive selection. </atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>189</vid>, <ppf>13</ppf>ndash;<ppl>24 </ppl> (<cd year="1999">1999</cd>).</reftxt>
+      </bib>
+      <bib id="b38">
+        <reftxt><refau><snm>Kersh</snm>,<fnm>G. J.</fnm></refau> amp; <refau><snm>
+              Allen</snm>,<fnm>P. M.</fnm></refau>
+          <atl>Essential flexibility in the T-cell recognition of antigen.</atl>
+          <jtl>Nature</jtl>
+          <vid>380</vid>, <ppf>495</ppf>ndash;<ppl> 498</ppl> (<cd year="1996">1996</cd>).</reftxt>
+        <natlink extrefid="00000"/>
+        <!--380495a0-->
+      </bib>
+      <bib id="b39">
+        <reftxt><refau><snm>Fung-Leung</snm>,<fnm>W. P.</fnm></refau>
+          <i> et al</i>. <atl>Antigen presentation and T cell development in H2-M-deficient
+            mice.</atl>
+          <jtl>Science</jtl>
+          <vid>271</vid>, <ppf>1278</ppf>ndash;<ppl> 1281</ppl> (<cd year="1996"
+          >1996</cd>).</reftxt>
+      </bib>
+      <bib id="b40">
+        <reftxt><refau><snm>Martin</snm>,<fnm>W. D.</fnm></refau>
+          <i> et al</i>. <atl>H2-M mutant mice are defective in the peptide loading of class II
+            molecules, antigen presentation, and T cell repertoire selection.</atl>
+          <jtl> Cell</jtl>
+          <vid>84</vid>, <ppf>543</ppf>ndash;<ppl>550</ppl> (<cd year="1996"> 1996</cd>).</reftxt>
+      </bib>
+      <bib id="b41">
+        <reftxt><refau><snm>Miyazaki</snm>,<fnm>T.</fnm></refau>
+          <i> et al</i>. <atl>Mice lacking H2-M complexes, enigmatic elements of the MHC class II
+            peptide-loading pathway.</atl>
+          <jtl>Cell</jtl>
+          <vid>84</vid>, <ppf> 531</ppf>ndash;<ppl>541</ppl> (<cd year="1996">1996</cd>).</reftxt>
+      </bib>
+      <bib id="b42">
+        <reftxt><refau><snm>Ignatowicz</snm>,<fnm>L.</fnm></refau>, <refau><snm>
+              Kappler</snm>,<fnm>J.</fnm></refau> amp; <refau><snm>Marrack</snm>,<fnm>
+            P.</fnm></refau>
+          <atl>The repertoire of T cells shaped by a single MHC/peptide ligand.</atl>
+          <jtl>Cell</jtl>
+          <vid>84</vid>, <ppf>521</ppf>ndash;<ppl>541 </ppl> (<cd year="1996">1996</cd>).</reftxt>
+      </bib>
+      <bib id="b43">
+        <reftxt><refau><snm>Fukui</snm>,<fnm>Y.</fnm></refau>
+          <i>et al</i>. <atl>Positive and negative CD4<super>+</super> thymocyte selection by a
+            single MHC class II/peptide ligand affected by its expression level in the thymus.</atl>
+          <jtl>Immunity</jtl>
+          <vid>6</vid>, <ppf>401</ppf>ndash;<ppl> 410</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b44">
+        <reftxt><refau><snm>Grubin</snm>,<fnm>C. E.</fnm></refau>, <refau><snm>
+              Kovats</snm>,<fnm>S.</fnm></refau>, <refau><snm>deRoos</snm>,<fnm>P.</fnm></refau>
+          amp; <refau><snm>Rudensky</snm>,<fnm>A. Y.</fnm></refau>
+          <atl>Deficient positive selection of CD4 T cells in mice displaying altered repertoires of
+            MHC class II-bound self-peptides.</atl>
+          <jtl>Immunity</jtl>
+          <vid>7</vid>, <ppf>197</ppf>ndash;<ppl> 208</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b45">
+        <reftxt><refau><snm>Tourne</snm>,<fnm>S.</fnm></refau>
+          <i>et al</i>. <atl>Selection of a broad repertoire of CD4<super>+</super> T cells in
+            H-2Ma0/0 mice.</atl>
+          <jtl>Immunity</jtl>
+          <vid>7</vid>, <ppf>187</ppf>ndash;<ppl> 195</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b46">
+        <reftxt><refau><snm>Surh</snm>,<fnm>C. D.</fnm></refau>, <refau><snm> Lee</snm>,<fnm>D.
+              S.</fnm></refau>, <refau><snm>Fung-Leung</snm>,<fnm>W. P. </fnm></refau>,
+              <refau><snm>Karlsson</snm>,<fnm>L.</fnm></refau> amp; <refau><snm>
+              Sprent</snm>,<fnm>J.</fnm></refau>
+          <atl>Thymic selection by a single MHC/peptide ligand produces a semidiverse repertoire of
+              CD4<super>+</super> T cells.</atl>
+          <jtl> Immunity</jtl>
+          <vid>7</vid>, <ppf>209</ppf>ndash;<ppl>219</ppl> (<cd year="1997"> 1997</cd>).</reftxt>
+      </bib>
+      <bib id="b47">
+        <reftxt><refau><snm>Sant'Angelo</snm>,<fnm>D. B.</fnm></refau>
+          <i> et al</i>. <atl>The imprint of intrathymic self-peptides on the mature T cell receptor
+            repertoire.</atl>
+          <jtl>Immunity</jtl>
+          <vid>7</vid>, <ppf>517</ppf>ndash;<ppl> 524</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b48">
+        <reftxt><refau><snm>Barton</snm>,<fnm>G. M.</fnm></refau> amp; <refau><snm>
+              Rudensky</snm>,<fnm>A. Y.</fnm></refau>
+          <atl>Requirement for diverse, low-abundance peptides in positive selection of T
+            cells.</atl>
+          <jtl>Science</jtl>
+          <vid> 283</vid>, <ppf>67</ppf>ndash;<ppl>70</ppl> (<cd year="1999">1999</cd>). </reftxt>
+      </bib>
+      <bib id="b49">
+        <reftxt><refau><snm>Davey</snm>,<fnm>G. M.</fnm></refau>
+          <i> et al</i>. <atl>Preselection thymocytes are most sensitive to T cell receptor
+            stimulation than mature T cells.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>188</vid>, <ppf> 1867</ppf>ndash;<ppl>1874</ppl> (<cd year="1998"
+          >1998</cd>).</reftxt>
+      </bib>
+      <bib id="b50">
+        <reftxt><refau><snm>Lucas</snm>,<fnm>B.</fnm></refau>, <refau><snm>
+              Stefanova</snm>,<fnm>I.</fnm></refau>, <refau><snm>Yasutomo</snm>,<fnm>K.
+            </fnm></refau>, <refau><snm>Dautigny</snm>,<fnm>N.</fnm></refau> amp; <refau><snm>
+              Germain</snm>,<fnm>R. N.</fnm></refau>
+          <atl>Divergent changes in the sensitivity of maturing T cells to structurally related
+            ligands underlies formation of a useful T cell repertoire.</atl>
+          <jtl>Immunity</jtl>
+          <vid>10</vid>, <ppf> 367</ppf>ndash;<ppl>376</ppl> (<cd year="1999">1999</cd>).</reftxt>
+      </bib>
+      <bib id="b51">
+        <reftxt><refau><snm>Tanchot</snm>,<fnm>C.</fnm></refau>, <refau><snm> Rosado</snm>,<fnm>M.
+              M.</fnm></refau>, <refau><snm>Agenes</snm>,<fnm>F.</fnm></refau>, <refau><snm>
+              Freitas</snm>,<fnm>A. A.</fnm></refau> amp; <refau><snm>Rocha</snm>,<fnm>
+            B.</fnm></refau>
+          <atl>Lymphocyte homeostasis.</atl>
+          <jtl>Semin. Immunol.</jtl>
+          <vid> 9</vid>, <ppf>331</ppf>ndash;<ppl>337</ppl> (<cd year="1997">1997</cd>). </reftxt>
+      </bib>
+      <bib id="b52">
+        <reftxt><refau><snm>Mombaerts</snm>,<fnm>P.</fnm></refau>
+          <i> et al</i>. <atl>Mutations in T-cell antigen receptor genes alpha and beta block
+            thymocyte development at different stages.</atl>
+          <jtl>Nature</jtl>
+          <vid> 360</vid>, <ppf>225</ppf>ndash;<ppl>231</ppl> (<cd year="1992">1992</cd>). </reftxt>
+        <natlink extrefid="00000"/>
+        <!--360225a0-->
+      </bib>
+      <bib id="b53">
+        <reftxt><refau><snm>Kitamura</snm>,<fnm>D.</fnm></refau>, <refau><snm>
+              Roes</snm>,<fnm>J.</fnm></refau>, <refau><snm>Kuhn</snm>,<fnm>R.</fnm></refau> amp;
+              <refau><snm>Rajewsky</snm>,<fnm>K.</fnm></refau>
+          <atl>A B-cell deficient mouse by targeted disruption of the membrane exon of the
+            immunoglobulin mu chain gene.</atl>
+          <jtl>Nature</jtl>
+          <vid>350</vid>, <ppf>423</ppf>ndash;<ppl> 426</ppl> (<cd year="1991">1991</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b54">
+        <reftxt><refau><snm>Bender</snm>,<fnm>J.</fnm></refau>, <refau><snm>
+              Mitchell</snm>,<fnm>T.</fnm></refau>, <refau><snm>Kappler</snm>,<fnm>J.</fnm></refau>
+          amp; <refau><snm>Marrack</snm>,<fnm>P.</fnm></refau>
+          <atl>CD4<super>+</super> T cell division in irradiated mice requires peptides distinct
+            from those responsible for thymic selection.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>190</vid>, <ppf> 367</ppf>ndash;<ppl>374</ppl> (<cd year="1999">1999</cd>).</reftxt>
+      </bib>
+      <bib id="b55">
+        <reftxt><refau><snm>Tanchot</snm>,<fnm>C.</fnm></refau> amp; <refau><snm>
+              Rocha</snm>,<fnm>B.</fnm></refau>
+          <atl>The peripheral T cell repertoire: independent homeostatic regulation of virgin and
+            activated CD8<super>+</super> T cell pools.</atl>
+          <jtl>Eur. J. Immunol.</jtl>
+          <vid>25</vid>, <ppf>2127</ppf>ndash;<ppl> 2136</ppl> (<cd year="1995"
+          >1995</cd>).</reftxt>
+      </bib>
+      <bib id="b56">
+        <reftxt><refau><snm>Rocha</snm>,<fnm>B.</fnm></refau>, <refau><snm>
+              Dautigny</snm>,<fnm>N.</fnm></refau> amp; <refau><snm>Pereira</snm>,<fnm>
+            P.</fnm></refau>
+          <atl>Peripheral T lymphocytes: expansion potential and homeostatic regulation of pool
+            sizes and CD4/CD8 ratios <i>in vivo</i>.</atl>
+          <jtl>Eur. J. Immunol.</jtl>
+          <vid>19</vid>, <ppf>905</ppf>ndash;<ppl>911</ppl> (<cd year="1989">1989</cd>).</reftxt>
+      </bib>
+      <bib id="b57">
+        <reftxt><refau><snm>Ernst</snm>,<fnm>B.</fnm></refau>, <refau><snm>
+            Lee</snm>,<fnm>D.</fnm></refau>
+          <refau><snm>Chang</snm>,<fnm>J. M.</fnm></refau>, <refau><snm>
+            Sprent</snm>,<fnm>J.</fnm></refau> amp; <refau><snm>Surh</snm>,<fnm>C. D.
+            </fnm></refau>
+          <atl>The peptide ligands mediating positive selection in the thymus control T cell
+            survival and homeostatic proliferation in the periphery. </atl>
+          <jtl>Immunity</jtl>
+          <vid>11</vid>, <ppf>173</ppf>ndash;<ppl>181</ppl> (<cd year="1999">1999</cd>).</reftxt>
+      </bib>
+      <bib id="b58">
+        <reftxt><refau><snm>Berzins</snm>,<fnm>S. P.</fnm></refau>, <refau><snm> Boyd</snm>,<fnm>R.
+              L.</fnm></refau> amp; <refau><snm>Miller</snm>,<fnm>J. F. A. P.</fnm></refau>
+          <atl>The role of the thymus and recent thymic migrants in the maintenance of the adult
+            peripheral lymphocyte pool.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>187</vid>, <ppf>1839</ppf>ndash;<ppl>1848</ppl> (<cd year="1998"
+          >1998</cd>).</reftxt>
+      </bib>
+      <bib id="b59">
+        <reftxt><refau><snm>Tanchot</snm>,<fnm>C.</fnm></refau> amp; <refau><snm>
+              Rocha</snm>,<fnm>B.</fnm></refau>
+          <atl>Peripheral selection of T cell repertoires: the role of continuous thymus
+            output.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid> 186</vid>, <ppf>1099</ppf>ndash;<ppl>1106</ppl> (<cd year="1997">1997</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b60">
+        <reftxt><refau><snm>Bell</snm>,<fnm>E. B.</fnm></refau>, <refau><snm>
+              Sparshott</snm>,<fnm>S. M.</fnm></refau>, <refau><snm>Drayson</snm>,<fnm> M.
+            T.</fnm></refau> amp; <refau><snm>Ford</snm>,<fnm>W. L.</fnm></refau>
+          <atl> The stable and permanent expansion of functional T lymphocytes in athymic nude rats
+            after a single injection of mature T cells.</atl>
+          <jtl>J. Immunol. </jtl>
+          <vid>139</vid>, <ppf>1379</ppf>ndash;<ppl>1384</ppl> (<cd year="1987">
+          1987</cd>).</reftxt>
+      </bib>
+      <bib id="b61">
+        <reftxt><refau><snm>Sprent</snm>,<fnm>J.</fnm></refau>
+          <atl> Lifespans of naive, memory and effector lymphocytes.</atl>
+          <jtl>Curr. Opin. Immunol.</jtl>
+          <vid>5</vid>, <ppf>433</ppf>ndash;<ppl>438</ppl> (<cd year="1993"> 1993</cd>).</reftxt>
+      </bib>
+      <bib id="b62">
+        <reftxt><refau><snm>Sprent</snm>,<fnm>J.</fnm></refau>, <refau><snm>
+              Schaefer</snm>,<fnm>M.</fnm></refau>, <refau><snm>Hurd</snm>,<fnm>M.</fnm></refau>,
+              <refau><snm> Surh</snm>,<fnm>C. D.</fnm></refau> amp;
+              <refau><snm>Ron</snm>,<fnm>Y.</fnm></refau>
+          <atl> Mature murine B and T cells transferred to SCID mice can survive indefinitely and
+            many maintain a virgin phenotype.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid> 174</vid>, <ppf>717</ppf>ndash;<ppl>728</ppl> (<cd year="1991">1991</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b63">
+        <reftxt><refau><snm>Tough</snm>,<fnm>D. F</fnm></refau> amp; <refau><snm>
+              Sprent</snm>,<fnm>J.</fnm></refau>
+          <atl>Turnover of naive- and memory-phenotype T cells.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>179</vid>, <ppf>1127</ppf>ndash;<ppl> 1135</ppl> (<cd year="1994"
+          >1994</cd>).</reftxt>
+      </bib>
+      <bib id="b64">
+        <reftxt><refau><snm>von Boehmer</snm>,<fnm>H.</fnm></refau> amp;
+              <refau><snm>Hafen</snm>,<fnm>K.</fnm></refau>
+          <atl>The life span of naive alpha;/beta; T cells in secondary lymphoid organs.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>177</vid>, <ppf>891</ppf>ndash;<ppl>896</ppl> (<cd year="1993"> 1993</cd>).</reftxt>
+      </bib>
+      <bib id="b65">
+        <reftxt><refau><snm>Bruno</snm>,<fnm>L.</fnm></refau>, <refau><snm> von
+              Boehmer</snm>,<fnm>H.</fnm></refau> amp; <refau><snm>Kirberg</snm>,<fnm>
+            J.</fnm></refau>
+          <atl>Cell division in the compartment of naive and memory T lymphocytes.</atl>
+          <jtl>Eur. J. Immunol.</jtl>
+          <vid>26</vid>, <ppf>3179 </ppf>ndash;<ppl>3184</ppl> (<cd year="1996"
+          >1996</cd>).</reftxt>
+      </bib>
+      <bib id="b66">
+        <reftxt><refau><snm>Kuo</snm>,<fnm>C. T.</fnm></refau>, <refau><snm> Veselitis</snm>,<fnm>M.
+              L.</fnm></refau> amp; <refau><snm>Leiden</snm>,<fnm> J. M.</fnm></refau>
+          <atl>LKLF: a transcriptional regulator of single-positive T cell quiescence and
+            survival.</atl>
+          <jtl>Science</jtl>
+          <vid>277</vid>, <ppf> 1986</ppf>ndash;<ppl>1990</ppl> (<cd year="1997"
+          >1997</cd>).</reftxt>
+      </bib>
+      <bib id="b67">
+        <reftxt><refau><snm>Oukka</snm>,<fnm>M.</fnm></refau>
+          <i>et al</i>. <atl>The transcription factor NFAT4 is involved in the generation and
+            survival of T cells.</atl>
+          <jtl>Immunity</jtl>
+          <vid>9</vid>, <ppf>295 </ppf>ndash;<ppl>304</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b68">
+        <reftxt><refau><snm>Lodolce</snm>,<fnm>J. P.</fnm></refau>
+          <i> et al</i>. <atl>IL-15 receptor maintains lymphoid homeostasis by supporting lymphocyte
+            homing and proliferation.</atl>
+          <jtl>Immunity</jtl>
+          <vid>9</vid>, <ppf> 669</ppf>ndash;<ppl>676</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b69">
+        <reftxt><refau><snm>Nakajima</snm>,<fnm>H.</fnm></refau>, <refau><snm> Shores</snm>,<fnm>E.
+              W.</fnm></refau>, <refau><snm>Noguchi</snm>,<fnm>M.</fnm></refau> amp;
+              <refau><snm>Leonard</snm>,<fnm>W. J.</fnm></refau>
+          <atl>The common cytokine receptor gamma;nbsp;chainnbsp;plays an essential role in
+            regulating lymphoid homeostasis.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>185</vid>, <ppf>189</ppf>ndash;<ppl> 195</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b70">
+        <reftxt><refau><snm>Veis</snm>,<fnm>D. J.</fnm></refau>, <refau><snm> Sorenson</snm>,<fnm>C.
+              M.</fnm></refau>, <refau><snm>Shutter</snm>,<fnm>J. R.</fnm></refau> amp;
+              <refau><snm>Korsmeyer</snm>,<fnm>S. J.</fnm></refau>
+          <atl> Bcl-2-deficient mice demonstrate fulminant lymphoid apoptosis, polycystic kidneys,
+            and hypopigmented hair.</atl>
+          <jtl>Cell</jtl>
+          <vid>75</vid>, <ppf> 229</ppf>ndash;<ppl>240</ppl> (<cd year="1993">1993</cd>).</reftxt>
+      </bib>
+      <bib id="b71">
+        <reftxt><refau><snm>Freitas</snm>,<fnm>A. A.</fnm></refau> amp; <refau><snm>
+              Rocha</snm>,<fnm>B.</fnm></refau>
+          <atl>Peripheral T cell survival.</atl>
+          <jtl> Curr. Opin. Immunol.</jtl>
+          <vid>11</vid>, <ppf>152</ppf>ndash;<ppl>156</ppl> (<cd year="1999">1999</cd>).</reftxt>
+      </bib>
+      <bib id="b72">
+        <reftxt><refau><snm>Kirber</snm>,<fnm>J.</fnm></refau>, <refau><snm>
+              Berns</snm>,<fnm>A.</fnm></refau> amp; <refau><snm>von Boehmer</snm>,<fnm>
+            H.</fnm></refau>
+          <atl>Peripheral T cell survival requires continual ligation of the T cell receptor to
+            major histocompatibility complex-encoded molecules. </atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>186</vid>, <ppf>1269</ppf>ndash;<ppl> 1275</ppl> (<cd year="1997"
+          >1997</cd>).</reftxt>
+      </bib>
+      <bib id="b73">
+        <reftxt><refau><snm>Takeda</snm>,<fnm>S.</fnm></refau>, <refau><snm>
+              Rodewald</snm>,<fnm>H.-R.</fnm></refau>, <refau><snm>Arakawa</snm>,<fnm>H.
+            </fnm></refau>, <refau><snm>Bluethmann</snm>,<fnm>H.</fnm></refau> amp; <refau><snm>
+              Shimizu</snm>,<fnm>T.</fnm></refau>
+          <atl>MHC class II molecules are not required for survival of newly generated
+              CD4<super>+</super> T cells, but affect their long-term life span.</atl>
+          <jtl>Immunity</jtl>
+          <vid>5</vid>, <ppf>217</ppf>ndash;<ppl> 228</ppl> (<cd year="1996">1996</cd>).</reftxt>
+      </bib>
+      <bib id="b74">
+        <reftxt><refau><snm>Brocker</snm>,<fnm>T.</fnm></refau>
+          <atl> Survival of mature CD4 T lymphocytes is dependent on major histocompatibility
+            complex class II-expressing dendritic cells.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid> 186</vid>, <ppf>1223</ppf>ndash;<ppl>1232</ppl> (<cd year="1997">1997</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b75">
+        <reftxt><refau><snm>Rooke</snm>,<fnm>R.</fnm></refau>, <refau><snm>
+              Waltzinger</snm>,<fnm>C.</fnm></refau>, <refau><snm>Benoist</snm>,<fnm>C.
+            </fnm></refau> amp; <refau><snm>Mathis</snm>,<fnm>D.</fnm></refau>
+          <atl> Targeted complementation of MHC class II deficiency by intrathymic delivery of
+            recombinant adenoviruses.</atl>
+          <jtl>Immunity</jtl>
+          <vid>7</vid>, <ppf> 123</ppf>ndash;<ppl>134</ppl> (<cd year="1997">1997</cd>).</reftxt>
+      </bib>
+      <bib id="b76">
+        <reftxt><refau><snm>Tanchot</snm>,<fnm>C.</fnm></refau>, <refau><snm>
+              Lemonnier</snm>,<fnm>F. A.</fnm></refau>, <refau><snm>Perarnau</snm>,<fnm>
+            B.</fnm></refau>, <refau><snm>Freitas</snm>,<fnm>A. A.</fnm></refau> amp; <refau><snm>
+              Rocha</snm>,<fnm>B.</fnm></refau>
+          <atl>Differential requirements for survival and proliferation of CD8 naive or memory T
+            cells.</atl>
+          <jtl>Science</jtl>
+          <vid> 276</vid>, <ppf>2057</ppf>ndash;<ppl>2062</ppl> (<cd year="1997">1997</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b77">
+        <reftxt><refau><snm>Murali-Krishna</snm>,<fnm>K.</fnm></refau>
+          <i> et al</i>. <atl>Persistence of memory CD8 T cells in MHC class I deficient mice.</atl>
+          <jtl>Science</jtl> (in the press). </reftxt>
+      </bib>
+      <bib id="b78">
+        <reftxt><refau><snm>Nesic</snm>,<fnm>D.</fnm></refau> amp; <refau><snm>
+              Vukmanovic</snm>,<fnm>S.</fnm></refau>
+          <atl>MHC class I is required for peripheral accumulation of CD8<super>+</super> thymic
+            emigrants.</atl>
+          <jtl>J. Immunol. </jtl>
+          <vid>160</vid>, <ppf>3705</ppf>ndash;<ppl>3712</ppl> (<cd year="1998">
+          1998</cd>).</reftxt>
+      </bib>
+      <bib id="b79">
+        <reftxt><refau><snm>Bell</snm>,<fnm>E. B.</fnm></refau>, <refau><snm>
+              Sparshott</snm>,<fnm>S. M.</fnm></refau>, <refau><snm>Drayson</snm>,<fnm> M.
+            T.</fnm></refau> amp; <refau><snm>Hunt</snm>,<fnm>S. V.</fnm></refau>
+          <atl> The origin of T cells in permanently reconstituted old athymic nude rats. Analysis
+            using chromosome or allotype markers.</atl>
+          <jtl>Immunology</jtl>
+          <vid> 68</vid>, <ppf>547</ppf>ndash;<ppl>556</ppl> (<cd year="1989">1989</cd>). </reftxt>
+      </bib>
+      <bib id="b80">
+        <reftxt><refau><snm>McDonagh</snm>,<fnm>M.</fnm></refau> amp; <refau><snm>
+              Bell</snm>,<fnm>E. B.</fnm></refau>
+          <atl>The survival and turnover of mature and immature CD8 T cells.</atl>
+          <jtl>Immunology</jtl>
+          <vid>84</vid>, <ppf> 514</ppf>ndash;<ppl>520</ppl> (<cd year="1995">1995</cd>).</reftxt>
+      </bib>
+      <bib id="b81">
+        <reftxt><refau><snm>Pereira</snm>,<fnm>P.</fnm></refau> amp; <refau><snm>
+              Rocha</snm>,<fnm>B.</fnm></refau>
+          <atl>Post-thymic <i>in vivo</i> expansion of mature alpha;beta; T cells.</atl>
+          <jtl>Int. Immunol.</jtl>
+          <vid>3</vid>, <ppf> 1077</ppf>ndash;<ppl>1080</ppl> (<cd year="1991">1991</cd>).</reftxt>
+      </bib>
+      <bib id="b82">
+        <reftxt><refau><snm>Oehen</snm>,<fnm>S.</fnm></refau> amp; <refau><snm>
+              Brduscha-Riem</snm>,<fnm>K.</fnm></refau>
+          <atl>Naive cytotoxic T lymphocytes spontaneously acquire effector function in
+            lymphocytopenic recipients: A pitfall for T cell memory studies?</atl>
+          <jtl>Eur. J. Immunol.</jtl>
+          <vid>29</vid>, <ppf> 608</ppf>ndash;<ppl>614</ppl> (<cd year="1999">1999</cd>).</reftxt>
+      </bib>
+      <bib id="b83">
+        <reftxt><refau><snm>Sprent</snm>,<fnm>J.</fnm></refau>, <refau><snm> Surh</snm>,<fnm>C.
+              D.</fnm></refau> amp; <refau><snm>Tough</snm>,<fnm>D. </fnm></refau>
+          <atl>Fate of T and B cells transferred to SCID mice.</atl>
+          <jtl> Res. Immunol.</jtl>
+          <vid>145</vid>, <ppf>328</ppf>ndash;<ppl>331</ppl> (<cd year="1994">1994</cd>).</reftxt>
+      </bib>
+      <bib id="b84">
+        <reftxt><refau><snm>Bell</snm>,<fnm>E. B.</fnm></refau> amp; <refau><snm>
+              Sparshott</snm>,<fnm>S. M.</fnm></refau>
+          <atl>The peripheral T-cell pool: regulation by non-antigen induced proliferation?</atl>
+          <jtl>Semin. Immunol. </jtl>
+          <vid>9</vid>, <ppf>347</ppf>ndash;<ppl>353</ppl> (<cd year="1997"> 1997</cd>).</reftxt>
+      </bib>
+      <bib id="b85">
+        <reftxt><refau><snm>Mackall</snm>,<fnm>C. L.</fnm></refau>
+          <i> et al</i>. <atl>Thymic-independent T cell regeneration occurs via antigen-driven
+            expansion of peripheral T cells resulting in a repertoire that is limited in diversity
+            and prone to skewing.</atl>
+          <jtl>J. Immunol.</jtl>
+          <vid>156</vid>, <ppf> 4609</ppf>ndash;<ppl>4616</ppl> (<cd year="1996"
+          >1996</cd>).</reftxt>
+      </bib>
+      <bib id="b86">
+        <reftxt><refau><snm>Viret</snm>,<fnm>C.</fnm></refau>, <refau><snm> Wong</snm>,<fnm>F.
+              S.</fnm></refau> amp; <refau><snm>Janeway</snm>,<fnm> C. S.</fnm></refau>
+          <atl>Designing and maintaining the mature TCR repertoire: the continuum of
+            self-peptide:self-MHC complex recognition.</atl>
+          <jtl>Immunity </jtl>
+          <vid>10</vid>, <ppf>559</ppf>ndash;<ppl>568</ppl> (<cd year="1999"> 1999</cd>).</reftxt>
+      </bib>
+      <bib id="b87">
+        <reftxt><refau><snm>Beutner</snm>,<fnm>U.</fnm></refau> amp; <refau><snm>
+              MacDonald</snm>,<fnm>H. R.</fnm></refau>
+          <atl>TCRndash;MHC class II interaction is required for peripheral expansion of CD4 cells
+            in a T cell-deficient host. </atl>
+          <jtl>Int. Immun.</jtl>
+          <vid>10</vid>, <ppf>305</ppf>ndash;<ppl>310 </ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b88">
+        <reftxt><refau><snm>Kieper</snm>,<fnm>W. C.</fnm></refau> amp; <refau><snm>
+              Jameson</snm>,<fnm>S. C.</fnm></refau>
+          <atl>Homeostatic expansion and phenotypic conversion of naive T cells in response to self
+            peptide/MHC ligands.</atl>
+          <jtl> Proc. Natl Acad. Sci. USA</jtl> (in the press). </reftxt>
+      </bib>
+      <bib id="b89">
+        <reftxt><refau><snm>Goldrath</snm>,<fnm>A. W.</fnm></refau> amp;
+              <refau><snm>Bevan</snm>,<fnm>M. J.</fnm></refau>
+          <atl>Low affinity ligands for the TCR drive proliferation of mature CD8<super>+</super> T
+            cells in lymphopenic hosts.</atl>
+          <jtl>Immunity</jtl>
+          <vid>11</vid>, <ppf>183</ppf>ndash;<ppl> 190</ppl> (<cd year="1999">1999</cd>).</reftxt>
+      </bib>
+      <bib id="b90">
+        <reftxt><refau><snm>Markiewicz</snm>,<fnm>M. A.</fnm></refau>
+          <i> et al</i>. <atl>Long-term T cells memory requires the surface expression of
+            self-peptide/major histocompatibility complex molecules.</atl>
+          <jtl>Proc. Natl Acad. Sic. USA</jtl>
+          <vid>95</vid>, <ppf>3065</ppf>ndash;<ppl>3070</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b91">
+        <reftxt><refau><snm>Garcia</snm>,<fnm>S.</fnm></refau>, <refau><snm>
+              DiSanto</snm>,<fnm>J.</fnm></refau> amp; <refau><snm>Stockinger</snm>,<fnm>
+            B.</fnm></refau>
+          <atl>Following the development of a CD4 T cell immune response <i> in vivo</i>: from
+            activation to memory formation.</atl>
+          <jtl>Immunity</jtl>
+          <vid> 11</vid>, <ppf>163</ppf>ndash;<ppl>171</ppl> (<cd year="1999">1999</cd>). </reftxt>
+      </bib>
+      <bib id="b92">
+        <reftxt><refau><snm>Swain</snm>,<fnm>S.</fnm></refau>, <refau><snm>
+            Hui</snm>,<fnm>H.</fnm></refau> amp; <refau><snm>Huston</snm>,<fnm>G.</fnm></refau>
+          <atl> Class II-independent generation of CD4 memory T cells from effectors.</atl>
+          <jtl> Science</jtl> (in the press).</reftxt>
+      </bib>
+      <bib id="b93">
+        <reftxt><refau><snm>Butz</snm>,<fnm>E. A.</fnm></refau> amp; <refau><snm>
+              Bevan</snm>,<fnm>M. J.</fnm></refau>
+          <atl>Massive expansion of antigen-specific CD8<super>+</super> T cells during an acute
+            virus infection.</atl>
+          <jtl>Immunity </jtl>
+          <vid>8</vid>, <ppf>167</ppf>ndash;<ppl>175</ppl> (<cd year="1998"> 1998</cd>).</reftxt>
+      </bib>
+      <bib id="b94">
+        <reftxt><refau><snm>Murali-Krishna</snm>,<fnm>K.</fnm></refau>
+          <i> et al</i>. <atl>Counting antigen-specific CD8 T cells: a reevaluation of bystander
+            activation during viral infection.</atl>
+          <jtl>Immunity</jtl>
+          <vid>8</vid>, <ppf> 177</ppf>ndash;<ppl>187</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b95">
+        <reftxt><refau><snm>Busch</snm>,<fnm>D. H.</fnm></refau>, <refau><snm> Pilip</snm>,<fnm>I.
+              M.</fnm></refau>, <refau><snm>Vijh</snm>,<fnm>S.</fnm></refau> amp;
+              <refau><snm>Pamer</snm>,<fnm>E. G.</fnm></refau>
+          <atl>Coordinate regulation of complex T cell populations responding to bacterial
+            infection.</atl>
+          <jtl> Immunity</jtl>
+          <vid>8</vid>, <ppf>353</ppf>ndash;<ppl>362</ppl> (<cd year="1998"> 1998</cd>).</reftxt>
+      </bib>
+      <bib id="b96">
+        <reftxt><refau><snm>Callan</snm>,<fnm>M. F.</fnm></refau>
+          <i> et al</i>. <atl>Direct visualization of antigen-specific CD8<super>+</super> T cells
+            during the primary immune response to Epsteinndash;Barr virus <i> in vivo</i>.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid>187</vid>, <ppf>1395</ppf>ndash;<ppl> 1402</ppl> (<cd year="1998"
+          >1998</cd>).</reftxt>
+      </bib>
+      <bib id="b97">
+        <reftxt><refau><snm>Cose</snm>,<fnm>S. C.</fnm></refau>, <refau><snm> Jones</snm>,<fnm>C.
+              M.</fnm></refau>, <refau><snm>Wallace</snm>,<fnm>M. E. </fnm></refau>,
+              <refau><snm>Heath</snm>,<fnm>W. R.</fnm></refau> amp; <refau><snm>
+              Carbone</snm>,<fnm>F. R.</fnm></refau>
+          <atl>Antigen-specific CD8<super>+</super> T cell subset distribution in lymph nodes
+            draining the site of herpes simplex virus infection.</atl>
+          <jtl>Eur. J. Immunol.</jtl>
+          <vid>27</vid>, <ppf>2310 </ppf>ndash;<ppl>2316</ppl> (<cd year="1997"
+          >1997</cd>).</reftxt>
+      </bib>
+      <bib id="b98">
+        <reftxt><refau><snm>Flynn</snm>,<fnm>K. J.</fnm></refau>
+          <i> et al</i>. <atl>Virus-specific CD8<super>+</super> T cells in primary and secondary
+            influenza pneumonia.</atl>
+          <jtl>Immunity</jtl>
+          <vid>8</vid>, <ppf> 683</ppf>ndash;<ppl>691</ppl> (<cd year="1998">1998</cd>).</reftxt>
+      </bib>
+      <bib id="b99">
+        <reftxt><refau><snm>Zimmermann</snm>,<fnm>C.</fnm></refau> amp; <refau><snm>
+              Pircher</snm>,<fnm>H.</fnm></refau>
+          <atl>A novel approach to visualize polyclonal virus-specific CD8 T cells <i>in
+            vivo</i>.</atl>
+          <jtl>J. Immunol.</jtl>
+          <vid> 162</vid>, <ppf>5178</ppf>ndash;<ppl>5182</ppl> (<cd year="1999">1999</cd>).
+        </reftxt>
+      </bib>
+      <bib id="b100">
+        <reftxt><refau><snm>Busch</snm>,<fnm>D. H.</fnm></refau>, <refau><snm>
+              Pilip</snm>,<fnm>I.</fnm></refau> amp; <refau><snm>Pamer</snm>,<fnm>E. G.
+            </fnm></refau>
+          <atl>Evolution of a complex T cell receptor repertoire during primary and recall bacterial
+            infection.</atl>
+          <jtl>J. Exp. Med.</jtl>
+          <vid> 188</vid>, <ppf>61</ppf>ndash;<ppl>70</ppl> (<cd year="1998">1998</cd>). </reftxt>
+      </bib>
+      <bib id="b101">
+        <reftxt><refau><snm>Jacob</snm>,<fnm>J.</fnm></refau> amp; <refau><snm>
+              Baltimore</snm>,<fnm>D.</fnm></refau>
+          <atl>Modelling T-cell memory by genetic marking of memory T cells <i>in vivo</i>.</atl>
+          <jtl>Nature</jtl>
+          <vid>399 </vid>, <ppf>593</ppf>ndash;<ppl>597</ppl> (<cd year="1999">1999</cd>).</reftxt>
+        <natlink extrefid="00000"/>
+        <!--399593a0-->
+      </bib>
+      <bib id="b102">
+        <reftxt><refau><snm>Razvi</snm>,<fnm>E. S.</fnm></refau>, <refau><snm>
+              Jiang</snm>,<fnm>Z.</fnm></refau>, <refau><snm>Woda</snm>,<fnm>B. A.</fnm></refau>
+          amp; <refau><snm>Welsh</snm>,<fnm>R. M.</fnm></refau>
+          <atl>Lymphocyte apoptosis during the silencing of the immune response to acute viral
+            infections in normal, Ipr, and Bcl-2-transgenic mice.</atl>
+          <jtl>Am. J. Pathol.</jtl>
+          <vid>147</vid>, <ppf> 79</ppf>ndash;<ppl>91</ppl> (<cd year="1995">1995</cd>).</reftxt>
+      </bib>
+      <bib id="b103">
+        <reftxt><refau><snm>Sallusto</snm>,<fnm>F.</fnm></refau>, <refau><snm>
+              Lenig</snm>,<fnm>D.</fnm></refau>, <refau><snm>Fouml;rster</snm>,<fnm>R.
+            </fnm></refau>, <refau><snm>Lipp</snm>,<fnm>M.</fnm></refau> amp; <refau><snm>
+              Lanzavecchia</snm>,<fnm>A.</fnm></refau>
+          <atl>Two subsets of memory T lymphocytes with distinct homing potentials and effector
+            functions.</atl>
+          <jtl>Nature </jtl>
+          <vid>401</vid>, <ppf>708</ppf>ndash;<ppl>712</ppl> (<cd year="1999"> 1999</cd>).</reftxt>
+        <natlink extrefid="00000"/>
+        <!--401708a0-->
+      </bib>
+    </bibl>
+  </bm>
+</article>
+<?Pub *0000094238?>

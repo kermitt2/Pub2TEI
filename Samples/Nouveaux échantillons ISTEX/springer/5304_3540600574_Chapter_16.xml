@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+<PublisherInfo>
+<PublisherName>Springer Berlin Heidelberg</PublisherName>
+<PublisherLocation>Berlin, Heidelberg</PublisherLocation>
+</PublisherInfo>
+<Series>
+<SeriesInfo TocLevels="0">
+<SeriesID>5304</SeriesID>
+<SeriesPrintISSN>0075-8450</SeriesPrintISSN>
+<SeriesElectronicISSN>1616-6361</SeriesElectronicISSN>
+<SeriesTitle Language="En">Lecture Notes in Physics</SeriesTitle>
+<SeriesAbbreviatedTitle>Lect Notes Phys</SeriesAbbreviatedTitle>
+</SeriesInfo>
+<SeriesHeader>
+<EditorGroup>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>H.</GivenName>
+<FamilyName>Araki</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>E.</GivenName>
+<FamilyName>Brézin</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>J.</GivenName>
+<FamilyName>Ehlers</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>U.</GivenName>
+<FamilyName>Frisch</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>K.</GivenName>
+<FamilyName>Hepp</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>R.</GivenName>
+<GivenName>L.</GivenName>
+<FamilyName>Jaffe</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>R.</GivenName>
+<FamilyName>Kippenhahn</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>H.</GivenName>
+<GivenName>A.</GivenName>
+<FamilyName>Weidenmüller</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>J.</GivenName>
+<FamilyName>Wess</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>J.</GivenName>
+<FamilyName>Zittartz</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>W.</GivenName>
+<FamilyName>Beiglböck</FamilyName>
+</EditorName>
+</Editor>
+</EditorGroup>
+</SeriesHeader>
+<Book Language="En">
+<BookInfo MediaType="eBook" Language="En" BookProductType="Proceedings" TocLevels="0" NumberingStyle="Unnumbered">
+<BookID>3540600574</BookID>
+<BookTitle>Flares and Flashes</BookTitle>
+<BookSubTitle>Proceedings of IAU Colloqium No. 151 Held in Sonneberg, Germany, 5–9 December 1994</BookSubTitle>
+<BookVolumeNumber>454</BookVolumeNumber>
+<BookDOI>10.1007/3-540-60057-4</BookDOI>
+<BookTitleID>43030</BookTitleID>
+<BookPrintISBN>978-3-540-60057-2</BookPrintISBN>
+<BookElectronicISBN>978-3-540-49420-1</BookElectronicISBN>
+<BookChapterCount>110</BookChapterCount>
+<BookCopyright>
+<CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
+<CopyrightYear>1995</CopyrightYear>
+</BookCopyright>
+<BookSubjectGroup>
+<BookSubject Code="P" Type="Primary">Physics</BookSubject>
+<BookSubject Code="P22030" Priority="1" Type="Secondary">Extraterrestrial Physics, Space Sciences</BookSubject>
+<BookSubject Code="G18009" Priority="2" Type="Secondary">Geophysics/Geodesy</BookSubject>
+<BookSubject Code="P26001" Priority="3" Type="Secondary">Electromagnetism, Optics and Lasers</BookSubject>
+<SubjectCollection Code="SUCO11651">Physics and Astronomy</SubjectCollection>
+</BookSubjectGroup>
+</BookInfo>
+<BookHeader>
+<EditorGroup>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>Jochen</GivenName>
+<FamilyName>Greiner</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>Hilmar</GivenName>
+<GivenName>W.</GivenName>
+<FamilyName>Duerbeck</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>Roald</GivenName>
+<GivenName>E.</GivenName>
+<FamilyName>Gershberg</FamilyName>
+</EditorName>
+</Editor>
+</EditorGroup>
+</BookHeader>
+<Chapter ID="Chap16" Language="En">
+<ChapterInfo ChapterType="ReviewPaper" NumberingStyle="Unnumbered" TocLevels="0" ContainsESM="No">
+<ChapterID>16</ChapterID>
+<ChapterDOI>10.1007/3-540-60057-4_236</ChapterDOI>
+<ChapterSequenceNumber>16</ChapterSequenceNumber>
+<ChapterTitle Language="En">New EUV selected flare stars</ChapterTitle>
+<ChapterCategory>Flares in Late-type Stars: Radio and Optical</ChapterCategory>
+<ChapterFirstPage>67</ChapterFirstPage>
+<ChapterLastPage>68</ChapterLastPage>
+<ChapterCopyright>
+<CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
+<CopyrightYear>1995</CopyrightYear>
+</ChapterCopyright>
+<ChapterHistory>
+<OnlineDate>
+<Year>2005</Year>
+<Month>7</Month>
+<Day>22</Day>
+</OnlineDate>
+</ChapterHistory>
+<ChapterGrants Type="Regular"><MetadataGrant Grant="OpenAccess"/><AbstractGrant Grant="OpenAccess"/><BodyPDFGrant Grant="Restricted"/><BodyHTMLGrant Grant="Restricted"/><BibliographyGrant Grant="Restricted"/><ESMGrant Grant="Restricted"/></ChapterGrants><ChapterContext>
+<SeriesID>5304</SeriesID>
+<BookID>3540600574</BookID>
+<BookTitle>Flares and Flashes</BookTitle>
+</ChapterContext>
+</ChapterInfo>
+<ChapterHeader>
+<AuthorGroup>
+<Author AffiliationIDS="Aff1">
+<AuthorName DisplayOrder="Western">
+<GivenName>Bill</GivenName>
+<FamilyName>Ball</FamilyName>
+</AuthorName>
+</Author>
+<Author AffiliationIDS="Aff1">
+<AuthorName DisplayOrder="Western">
+<GivenName>Gordon</GivenName>
+<FamilyName>Bromage</FamilyName>
+</AuthorName>
+</Author>
+<Affiliation ID="Aff1">
+<OrgDivision>Centre for Astrophysics</OrgDivision>
+<OrgName>University of Central Lancashire</OrgName>
+<OrgAddress>
+<Postcode>PR1 2HE</Postcode>
+<City>Preston</City>
+<Country>UK</Country>
+</OrgAddress>
+</Affiliation>
+</AuthorGroup>
+</ChapterHeader>
+<NoBody></NoBody>
+</Chapter>
+</Book>
+</Series>
+</Publisher>

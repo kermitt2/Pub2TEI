@@ -1,0 +1,3165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "../../DTDs/art452/art452.dtd" [
+<!ENTITY fx1 SYSTEM "fx1" NDATA IMAGE>
+<!ENTITY fx2 SYSTEM "fx2" NDATA IMAGE>
+<!ENTITY fx3 SYSTEM "fx3" NDATA IMAGE>
+<!ENTITY fx4 SYSTEM "fx4" NDATA IMAGE>
+<!ENTITY fx5 SYSTEM "fx5" NDATA IMAGE>
+<!ENTITY fx6 SYSTEM "fx6" NDATA IMAGE>
+<!ENTITY fx7 SYSTEM "fx7" NDATA IMAGE>
+<!ENTITY fx8 SYSTEM "fx8" NDATA IMAGE>
+<!ENTITY fx9 SYSTEM "fx9" NDATA IMAGE>
+<!ENTITY fx10 SYSTEM "fx10" NDATA IMAGE>
+<!ENTITY fx11 SYSTEM "fx11" NDATA IMAGE>
+<!ENTITY fx12 SYSTEM "fx12" NDATA IMAGE>
+<!ENTITY fx13 SYSTEM "fx13" NDATA IMAGE>
+<!ENTITY fx14 SYSTEM "fx14" NDATA IMAGE>
+<!ENTITY fx15 SYSTEM "fx15" NDATA IMAGE>
+<!ENTITY fx16 SYSTEM "fx16" NDATA IMAGE>
+<!ENTITY fx17 SYSTEM "fx17" NDATA IMAGE>
+<!ENTITY fx18 SYSTEM "fx18" NDATA IMAGE>
+<!ENTITY fx19 SYSTEM "fx19" NDATA IMAGE>
+<!ENTITY fx20 SYSTEM "fx20" NDATA IMAGE>
+<!ENTITY fx21 SYSTEM "fx21" NDATA IMAGE>]>
+
+<converted-article version="4.5.2" docsubtype="sco" xml:lang="fr">
+    <item-info>
+        <jid>PXOLDC</jid>
+        <aid>8</aid>
+        <ce:pii>S1387-1609(00)01187-7</ce:pii>
+        <ce:doi>10.1016/S1387-1609(00)01187-7</ce:doi>
+        <ce:copyright type="joint" year="2001">Acad&#x00E9;mie des sciences&#x00A0;/ &#x00C9;ditions
+            scientifiques et m&#x00E9;dicales Elsevier SAS</ce:copyright>
+    </item-info>
+    <ce:floats>
+        <ce:figure id="FIG1">
+            <ce:label>Figure 1</ce:label>
+            <ce:caption>
+                <ce:simple-para>Repr&#x00E9;sentation sch&#x00E9;matique des diff&#x00E9;rents type
+                    de nitroxydes couramment utilis&#x00E9;s.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx1"/>
+        </ce:figure>
+        <ce:figure id="FIG2">
+            <ce:label>Figure 2</ce:label>
+            <ce:caption>
+                <ce:simple-para>Repr&#x00E9;sentation sch&#x00E9;matique du
+                    <ce:italic>p</ce:italic>-nitroph&#x00E9;nylenitronyle-nitroxyde.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx2"/>
+        </ce:figure>
+        <ce:figure id="FIG3">
+            <ce:label>Figure 3</ce:label>
+            <ce:caption>
+                <ce:simple-para>Repr&#x00E9;sentation sch&#x00E9;matique de l&#x2019;adamantane bis
+                    nitroxyde.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx3"/>
+        </ce:figure>
+        <ce:figure id="FIG4">
+            <ce:label>Figure 4</ce:label>
+            <ce:caption>
+                <ce:simple-para>Repr&#x00E9;sentation sch&#x00E9;matique des cha&#x00EE;nes obtenues
+                    par coordination sur un centre
+                    hexaac&#x00E9;tylac&#x00E9;tonate.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx4"/>
+        </ce:figure>
+        <ce:figure id="FIG5">
+            <ce:label>Figure 5</ce:label>
+            <ce:caption>
+                <ce:simple-para>Sch&#x00E9;ma de synth&#x00E8;se des
+                    nitronyle-nitroxydes.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx5"/>
+        </ce:figure>
+        <ce:figure id="FIG6">
+            <ce:label>Figure 6</ce:label>
+            <ce:caption>
+                <ce:simple-para>Sch&#x00E9;ma de synth&#x00E8;se des
+                    imino-nitroxydes.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx6"/>
+        </ce:figure>
+        <ce:figure id="FIG7">
+            <ce:label>Figure 7</ce:label>
+            <ce:caption>
+                <ce:simple-para>Repr&#x00E9;sentation sch&#x00E9;matique de quelques bis-radicaux
+                    &#x00E0; base de pyridine et de bipyridines pr&#x00E9;par&#x00E9;es durant ce
+                    programme.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx7"/>
+        </ce:figure>
+        <ce:figure id="FIG8">
+            <ce:label>Figure 8</ce:label>
+            <ce:caption>
+                <ce:simple-para>Structure aux rayons X du d&#x00E9;riv&#x00E9; 2,6-bis-NIT-pyridine
+                    (&#x00E0; droite) et variation de son spectre RPE en solution dans le
+                    dichlorom&#x00E9;thane en fonction de la temp&#x00E9;rature (&#x00E0;
+                    gauche).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx8"/>
+        </ce:figure>
+        <ce:figure id="FIG9">
+            <ce:label>Figure 9</ce:label>
+            <ce:caption>
+                <ce:simple-para>Structure aux rayons X du complexe au cuivre du ligand
+                    6,6&#x2019;-bis-NIT-2,2&#x2019;-bipyridine (&#x00E0; droite) et son comportement
+                    magn&#x00E9;tique en fonction de la temp&#x00E9;rature (&#x00E0; gauche). Le
+                    trait en plein repr&#x00E9;sente la param&#x00E9;trisation du comportement
+                    magn&#x00E9;tique.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx9"/>
+        </ce:figure>
+        <ce:figure id="FIG10">
+            <ce:label>Figure 10</ce:label>
+            <ce:caption>
+                <ce:simple-para>Structure aux rayons X du complexe au nickel du ligand
+                    6,6&#x2019;-bis-NIT-2,2&#x2019;-bipyridine (&#x00E0; droite) et son comportement
+                    magn&#x00E9;tique en fonction de la temp&#x00E9;rature (&#x00E0; gauche). Le
+                    trait en plein est la param&#x00E9;trisation du comportement
+                    magn&#x00E9;tique.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx10"/>
+        </ce:figure>
+        <ce:figure id="FIG11">
+            <ce:label>Figure 11</ce:label>
+            <ce:caption>
+                <ce:simple-para>Structure aux rayons X du complexe au nickel du ligand
+                    5,5&#x2019;-bis-NIT-2,2&#x2019;-bipyridine (&#x00E0; droite) et son comportement
+                    magn&#x00E9;tique en fonction de la temp&#x00E9;rature (&#x00E0;
+                    gauche).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx11"/>
+        </ce:figure>
+        <ce:figure id="FIG12">
+            <ce:label>Figure 12</ce:label>
+            <ce:caption>
+                <ce:simple-para>Structure aux rayons X du complexe au nickel du ligand
+                    4&#x2019;-NIT-2,2&#x2019;:6&#x2019;,6&#x2019;&#x2019;-terpyridine (&#x00E0;
+                    droite) et son comportement magn&#x00E9;tique en fonction de la
+                    temp&#x00E9;rature (&#x00E0; gauche). Le trait en plein est la
+                    param&#x00E9;trisation du comportement magn&#x00E9;tique.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx12"/>
+        </ce:figure>
+        <ce:figure id="FIG13">
+            <ce:label>Figure 13</ce:label>
+            <ce:caption>
+                <ce:simple-para>Sch&#x00E9;ma de synth&#x00E8;se du radical chlorom&#x00E9;thyle
+                    nitronyle-nitroxyde.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx13"/>
+        </ce:figure>
+        <ce:figure id="FIG14">
+            <ce:label>Figure 14</ce:label>
+            <ce:caption>
+                <ce:simple-para>Sch&#x00E9;ma de synth&#x00E8;se des radicaux greff&#x00E9;es
+                    obtenus par alkylation de fonctions ph&#x00E9;nol ou amines
+                    primaires.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx14"/>
+        </ce:figure>
+        <ce:figure id="FIG15">
+            <ce:label>Figure 15</ce:label>
+            <ce:caption>
+                <ce:simple-para>Repr&#x00E9;sentation sch&#x00E9;matique
+                    d&#x2019;&#x00E9;ther-couronnes greff&#x00E9;es avec des radicaux
+                    nitroxydes.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx15"/>
+        </ce:figure>
+        <ce:figure id="FIG16">
+            <ce:label>Figure 16</ce:label>
+            <ce:caption>
+                <ce:simple-para>Repr&#x00E9;sentation sch&#x00E9;matique
+                    d&#x2019;&#x00E9;ther-couronnes appel&#x00E9;es
+                        <ce:italic>Kryptospin</ce:italic> et greff&#x00E9;es avec des radicaux
+                    m&#x00E9;thyl nitronyle-nitroxydes.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx16"/>
+        </ce:figure>
+        <ce:figure id="FIG17">
+            <ce:label>Figure 17</ce:label>
+            <ce:caption>
+                <ce:simple-para>&#x00C9;volution du spectre RPE du <ce:italic>Kryptospin</ce:italic>
+                    <ce:bold>2.2</ce:bold> &#x00E0; temp&#x00E9;rature ambiante
+                        (10<ce:sup>&#x2013;4</ce:sup>&#x00A0;M dans le
+                    dichlorom&#x00E9;thane-tolu&#x00E8;ne 1:1)&#x00A0;: en l'absence d&#x2019;ion
+                    alcalin (<ce:bold>a</ce:bold>), en pr&#x00E9;sence de Li<ce:sup>+</ce:sup>
+                        (<ce:bold>b</ce:bold>), Na<ce:sup>+</ce:sup> (<ce:bold>c</ce:bold>),
+                        K<ce:sup>+</ce:sup> (<ce:bold>d</ce:bold>), Rb<ce:sup>+</ce:sup>
+                        (<ce:bold>e</ce:bold>), Cs<ce:sup>+</ce:sup>
+                    (<ce:bold>f</ce:bold>).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx17"/>
+        </ce:figure>
+        <ce:figure id="FIG18">
+            <ce:label>Figure 18</ce:label>
+            <ce:caption>
+                <ce:simple-para>Repr&#x00E9;sentation sch&#x00E9;matique de calix[4]ar&#x00E8;nes
+                    greff&#x00E9;s avec des radicaux m&#x00E9;thyle
+                    nitronyle-nitroxydes.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx18"/>
+        </ce:figure>
+        <ce:figure id="FIG19">
+            <ce:label>Figure 19</ce:label>
+            <ce:caption>
+                <ce:simple-para>Structure aux rayons X du podand bipyridine (&#x00E0; droite) et son
+                    comportement magn&#x00E9;tique en fonction de la temp&#x00E9;rature (&#x00E0;
+                    gauche).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx19"/>
+        </ce:figure>
+        <ce:figure id="FIG20">
+            <ce:label>Figure 20</ce:label>
+            <ce:caption>
+                <ce:simple-para>Structure aux rayons X du complexe au nickel du ligand podand
+                    bipyridine (&#x00E0; droite) et son comportement magn&#x00E9;tique en fonction
+                    de la temp&#x00E9;rature (&#x00E0; gauche).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx20"/>
+        </ce:figure>
+        <ce:figure id="FIG21">
+            <ce:label>Figure 21</ce:label>
+            <ce:caption>
+                <ce:simple-para>Structure aux rayons X du complexe au cuivre du ligand podand
+                    bipyridine (&#x00E0; droite) et son comportement magn&#x00E9;tique en fonction
+                    de la temp&#x00E9;rature (&#x00E0; gauche).</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="fx21"/>
+        </ce:figure>
+    </ce:floats>
+    <head>
+        <ce:dochead>
+            <ce:textfn>m&#x00E9;moire court / short paper</ce:textfn>
+        </ce:dochead>
+        <ce:title>Radicaux imidazoline-nitroxyde, briques mol&#x00E9;culaires paramagn&#x00E9;tiques
+            pour la construction d&#x2019;&#x00E9;difices magn&#x00E9;tiques</ce:title>
+        <ce:dedication>Article d&#x00E9;di&#x00E9; &#x00E0; la m&#x00E9;moire du professeur Olivier
+            Kahn</ce:dedication>
+        <ce:author-group>
+            <ce:author>
+                <ce:given-name>Gilles</ce:given-name>
+                <ce:surname>Ulrich</ce:surname>
+                <ce:cross-ref refid="ADR1">
+                    <ce:sup>a</ce:sup>
+                </ce:cross-ref>
+                <ce:cross-ref refid="COR1">*</ce:cross-ref>
+                <ce:e-address>ulrich@ramses.ups-tlse.fr</ce:e-address>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>Christophe</ce:given-name>
+                <ce:surname>Stroh</ce:surname>
+                <ce:cross-ref refid="ADR2">
+                    <ce:sup>b</ce:sup>
+                </ce:cross-ref>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>Raymond</ce:given-name>
+                <ce:surname>Ziessel</ce:surname>
+                <ce:cross-ref refid="ADR2">
+                    <ce:sup>b</ce:sup>
+                </ce:cross-ref>
+            </ce:author>
+            <ce:affiliation id="ADR1">
+                <ce:label>a</ce:label>
+                <ce:textfn>Laboratoire de synth&#x00E8;se et de physicochimie de mol&#x00E9;cules
+                    d&#x2019;int&#x00E9;r&#x00EA;t biologique, UMR 5068, universit&#x00E9;
+                    Paul-Sabatier, Toulouse-3, 118, route de Narbonne, 31062 Toulouse cedex 4,
+                    France</ce:textfn>
+            </ce:affiliation>
+            <ce:affiliation id="ADR2">
+                <ce:label>b</ce:label>
+                <ce:textfn>Laboratoire de chimie, d&#x2019;&#x00E9;lectronique et de photonique
+                    mol&#x00E9;culaires, ECPM/ULP, 25, rue Becquerel, BP 08, 67087&#x00A0;Strasbourg
+                    cedex 02, France</ce:textfn>
+            </ce:affiliation>
+            <ce:correspondence id="COR1">
+                <ce:label>*</ce:label>
+                <ce:text>Correspondance et tir&#x00E9;s &#x00E0; part</ce:text>
+            </ce:correspondence>
+        </ce:author-group>
+        <ce:date-received day="6" month="6" year="2000"/>
+        <ce:date-accepted day="19" month="7" year="2000"/>
+        <ce:abstract xml:lang="en">
+            <ce:section-title>Abstract</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para>The synthesis, characterization and magnetic properties of new
+                    series of metal complexes based on spin-labelled pyridine, bipyridine,
+                    terpyridine, polyaza-macrocycles and calix[4]arene scaffolds have been
+                    described. Magneto-structural correlations revealed that the nature and the
+                    amplitude of the magnetic interactions strongly depend on the torsion angles
+                    between the radical and the metallic centre. In the
+                        6,6&#x2019;-bis-NIT-2,2&#x2019;-bipyridine/Cu<ce:sup>2+</ce:sup> case, the
+                    interaction is antiferromagnetic, with
+                        <ce:italic>J</ce:italic>&#x00A0;&#x2248;&#x00A0;&#x2013;167&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>,
+                    while with Ni<ce:sup>2+</ce:sup> a large range of ferromagnetic interactions is
+                    found, depending on the geometry of the first coordination sphere [from 40 to
+                        7&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>], NIT for a nitronyle-nitroxyde
+                    radical. The presence of a pyridine spacer between the NIT radical and the
+                    metallic centre
+                    (4&#x2019;-NIT-2,2&#x2019;:6&#x2019;,6&#x2019;&#x2019;-terpyridine case) notably
+                    mitigates the interaction, which remains antiferromagnetic in all cases
+                        (<ce:italic>J</ce:italic>&#x00A0;&#x2248;&#x00A0;&#x2013;7&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>
+                    with Ni<ce:sup>2+</ce:sup>). In the podand bipyridine-ligand, one nitroxide arm
+                    is bound equatorially and the second arm is axially coordinated to
+                        Cu<ce:sup>2+</ce:sup>. With the Ni<ce:sup>2+</ce:sup> and
+                        Zn<ce:sup>2+</ce:sup> cations, both radicals are axially bounded. In all
+                    complexes, the bipyridine/aminomethyl fragment is meridionally complexed to the
+                    metal centre.</ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:abstract>
+            <ce:section-title>R&#x00E9;sum&#x00E9;</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para>Des familles de mol&#x00E9;cules porteuses de spin, &#x00E0; base de
+                    pyridine, bipyridine, terpyridine, de macrocycles polyazot&#x00E9;s et de
+                    calix[4]ar&#x00E8;ne ont &#x00E9;t&#x00E9; pr&#x00E9;par&#x00E9;es et
+                    caract&#x00E9;ris&#x00E9;es&#x00A0;; leur aptitude &#x00E0; complexer des
+                    cations diamagn&#x00E9;tiques et paramagn&#x00E9;tiques a &#x00E9;t&#x00E9;
+                    &#x00E9;tudi&#x00E9;e. L&#x2019;analyse des propri&#x00E9;t&#x00E9;s
+                    magn&#x00E9;tiques r&#x00E9;v&#x00E8;le que le signe et l&#x2019;amplitude de
+                    l&#x2019;interaction magn&#x00E9;tique d&#x00E9;pendent notoirement des
+                    distances et angles form&#x00E9;s entre le radical et le m&#x00E9;tal. Dans le
+                    cas de la 6,6&#x2019;-bis-NIT-2,2&#x2019;-bipyridine et du cuivre(II)
+                    l&#x2019;interaction d&#x2019;&#x00E9;change est antiferromagn&#x00E9;tique
+                        [<ce:italic>J</ce:italic>&#x00A0;&#x2248;&#x00A0;&#x2013;167&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>],
+                    tandis qu&#x2019;avec le nickel(II) cette interaction est ferromagn&#x00E9;tique
+                    et varie de 40 &#x00E0; 7&#x00A0;cm<ce:sup>&#x2013;1</ce:sup> en fonction de la
+                    g&#x00E9;om&#x00E9;trie du complexe (NIT pour un radical nitronyle-nitroxyde).
+                    La pr&#x00E9;sence d&#x2019;un espaceur pyridine entre le radical NIT et le
+                    centre m&#x00E9;tallique paramagn&#x00E9;tique (cas de la
+                    4&#x2019;-NIT-2,2&#x2019;;6&#x2019;,6&#x2019;&#x2019;-terpyridine)
+                    att&#x00E9;nue sensiblement l&#x2019;amplitude de l&#x2019;interaction, qui est
+                    dans tous les cas de figure de nature antiferromagn&#x00E9;tique
+                        [<ce:italic>J</ce:italic>&#x00A0;&#x2248;&#x00A0;&#x2013;7&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>
+                    avec des cations Ni<ce:sup>2+</ce:sup>]. Dans le cas du podand bipyridine
+                    poss&#x00E9;dant des bras flexibles porteurs de spin, la coordination
+                    d&#x2019;un des radicaux se fait en position &#x00E9;quatoriale, tandis que la
+                    coordination du deuxi&#x00E8;me radical est axiale avec un cation
+                        Cu<ce:sup>2+</ce:sup>. Au contraire, avec des cations Ni<ce:sup>2+</ce:sup>
+                    et Zn<ce:sup>2+</ce:sup>, la coordination des deux radicaux est axiale. Dans
+                    l&#x2019;ensemble des complexes &#x00E9;tudi&#x00E9;s, la coordination du
+                    fragment bipyridine/aminom&#x00E9;thyle est m&#x00E9;ridionale.</ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:keywords xml:lang="en">
+            <ce:section-title>Keywords</ce:section-title>
+            <ce:keyword>
+                <ce:text>nitroxides</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>pyridine</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>bipyridine</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>terpyridine</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>complexes</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>detection</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>magnetism</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>RPE</ce:text>
+            </ce:keyword>
+        </ce:keywords>
+        <ce:keywords>
+            <ce:section-title>Mots-cl&#x00E9;</ce:section-title>
+            <ce:keyword>
+                <ce:text>nitroxydes</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>pyridine</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>bipyridine</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>terpyridine</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>complexes</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>d&#x00E9;tection</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>magn&#x00E9;tisme</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>RPE</ce:text>
+            </ce:keyword>
+        </ce:keywords>
+    </head>
+    <body>
+        <ce:sections>
+            <ce:section>
+                <ce:label>1</ce:label>
+                <ce:section-title>Introduction</ce:section-title>
+                <ce:para>Dans cet article, nous allons d&#x00E9;crire une partie de nos
+                    r&#x00E9;sultats obtenus avec des d&#x00E9;riv&#x00E9;s oligopyridiniques
+                    portant des sites paramagn&#x00E9;tiques organiques. Des mol&#x00E9;cules
+                    portant des radicaux nitroxydes stables ont &#x00E9;t&#x00E9;
+                    synth&#x00E9;tis&#x00E9;es d&#x00E8;s le d&#x00E9;but du vingti&#x00E8;me
+                    si&#x00E8;cle, bien que le caract&#x00E8;re radicalaire ne f&#x00FB;t pas mis en
+                    &#x00E9;vidence <ce:cross-refs refid="BIB1 BIB2 BIB3"
+                        >[1&#x2013;3]</ce:cross-refs>. C&#x2019;est dans les ann&#x00E9;es 60 que la
+                    chimie des nitroxydes prit son essor, sous l&#x2019;impulsion des &#x00E9;quipes
+                    de Rassat <ce:cross-refs refid="BIB4 BIB5">[4, 5]</ce:cross-refs> en France et
+                    de Rosantzev <ce:cross-refs refid="BIB6 BIB7">[6, 7]</ce:cross-refs> en Union
+                    sovi&#x00E9;tique. La haute stabilit&#x00E9; des radicaux nitroxydes,
+                    manipulables dans des conditions ordinaires de laboratoire, en a fait des outils
+                    de choix pour le marquage de spin <ce:cross-refs
+                        refid="BIB8 BIB9 BIB10 BIB11 BIB12">[8&#x2013;12]</ce:cross-refs>. La
+                    fonction nitroxyde (aussi appel&#x00E9;e nitroxyle ou aminoxyle) se
+                    d&#x00E9;finit comme un syst&#x00E8;me &#x00E0; trois &#x00E9;lectrons
+                    partag&#x00E9;s entre l&#x2019;azote et l&#x2019;oxyg&#x00E8;ne. Il
+                    s&#x2019;agit d&#x2019;une liaison &#x03C3; et d&#x2019;un &#x00E9;lectron non
+                    appari&#x00E9; &#x03C0;, localis&#x00E9; dans les orbitales 2px de la liaison
+                    N&#x2013;O <ce:cross-ref refid="BIB13">[13]</ce:cross-ref>. Pour que ces
+                    d&#x00E9;riv&#x00E9;s soient stables, il ne faut en aucun cas avoir
+                    d&#x2019;atome d&#x2019;hydrog&#x00E8;ne sur les carbones en &#x03B1; de
+                    l&#x2019;azote, ceci afin d&#x2019;&#x00E9;viter une r&#x00E9;action de
+                    dim&#x00E9;risation <ce:cross-ref refid="BIB14">[14]</ce:cross-ref>. Ceci
+                    explique les structures perm&#x00E9;thyl&#x00E9;es en &#x03B1; des radicaux
+                    d&#x00E9;riv&#x00E9;s du TEMPO (aussi appel&#x00E9;s TANOL) <ce:cross-refs
+                        refid="BIB4 BIB5 BIB15">[4, 5, 15]</ce:cross-refs>, et la localisation du
+                    spin magn&#x00E9;tique sur la liaison N&#x2013;O. Ces unit&#x00E9;s sont
+                    tr&#x00E8;s utilis&#x00E9;es en marquage de spin <ce:cross-refs
+                        refid="BIB8 BIB9 BIB10 BIB11 BIB12">[8&#x2013;12]</ce:cross-refs>, en raison
+                    de la simplicit&#x00E9; de leur spectre RPE en solution. Cependant, des radicaux
+                    d&#x00E9;riv&#x00E9;s de ces nitroxydes, le
+                    <ce:italic>t</ce:italic>-butylnitroxyde <ce:cross-refs
+                        refid="BIB16 BIB17 BIB18 BIB19">[16&#x2013;19]</ce:cross-refs>, port&#x00E9;
+                    par un substrat aromatique, ou le radical nitronyle-nitroxyde d&#x2019;Ullmann
+                        <ce:cross-refs refid="BIB20 BIB21 BIB22 BIB23"
+                        >[20&#x2013;23]</ce:cross-refs>, permettent une communication
+                    magn&#x00E9;tique au travers d&#x2019;un connecteur organique (<ce:cross-ref
+                        refid="FIG1">figure&#x00A0;1</ce:cross-ref><ce:float-anchor refid="FIG1"/>).
+                    Dans ces deux familles de radicaux, l&#x2019;&#x00E9;lectron libre est
+                    d&#x00E9;localis&#x00E9; sur les liaisons &#x03C0;. Ceci explique leur
+                    utilisation dans le domaine des mat&#x00E9;riaux magn&#x00E9;tiques, o&#x00F9;
+                    une coop&#x00E9;ration entre les diff&#x00E9;rentes unit&#x00E9;s
+                    paramagn&#x00E9;tiques est recherch&#x00E9;e. Deux buts furent cibl&#x00E9;s par
+                    diff&#x00E9;rentes &#x00E9;quipes &#x00E0; travers le monde, soit
+                    l&#x2019;obtention d&#x2019;aimants purement organiques, soit
+                    l&#x2019;utilisation de radicaux organiques comme espaceurs magn&#x00E9;tiques
+                    pour organiser des superstructures organom&#x00E9;talliques.</ce:para>
+                <ce:para>L&#x2019;approche purement organique fut stimul&#x00E9;e d&#x00E8;s le
+                    d&#x00E9;but des ann&#x00E9;es 90 par la d&#x00E9;couverte d&#x2019;une
+                    interaction ferromagn&#x00E9;tique dans la phase cristalline
+                        <ce:italic>&#x03B2;</ce:italic> du
+                    <ce:italic>p</ce:italic>-nitroph&#x00E9;nyl-nitronyle-nitroxyde <ce:cross-refs
+                        refid="BIB24 BIB25">[24, 25]</ce:cross-refs> (<ce:cross-ref refid="FIG2"
+                        >figure&#x00A0;2</ce:cross-ref><ce:float-anchor refid="FIG2"/>). De
+                    nombreuses strat&#x00E9;gies furent alors d&#x00E9;velopp&#x00E9;es pour obtenir
+                    des comportements magn&#x00E9;tiques avec ce type de compos&#x00E9;s, soit en
+                    jouant sur l&#x2019;orthogonalit&#x00E9; entre les groupements
+                    paramagn&#x00E9;tiques, comme dans l&#x2019;adamantane de Rassat <ce:cross-ref
+                        refid="BIB26">[26]</ce:cross-ref> (<ce:cross-ref refid="FIG3"
+                        >figure&#x00A0;3</ce:cross-ref><ce:float-anchor refid="FIG3"/>), soit en
+                    associant les nitroxydes avec des unit&#x00E9;s &#x00E9;lectroactives pour
+                    former des complexes de transfert de charge <ce:cross-ref refid="BIB27"
+                        >[27]</ce:cross-ref>, soit encore en associant ces unit&#x00E9;s par des
+                    liaisons hydrog&#x00E8;ne <ce:cross-refs refid="BIB28 BIB29">[28,
+                        29]</ce:cross-refs>.</ce:para>
+                <ce:para>L&#x2019;approche m&#x00E9;tal&#x2013;radical est celle sur laquelle se
+                    fonda une grande partie de nos travaux. Cette approche fut initi&#x00E9;e par
+                    les groupes de Gatteschi et Rey <ce:cross-refs refid="BIB30 BIB31">[30,
+                        31]</ce:cross-refs>, qui entreprirent des &#x00E9;tudes de complexation de
+                    nombreuses mol&#x00E9;cules portant des radicaux nitronyle-nitroxyde avec des
+                    m&#x00E9;taux de transitions paramagn&#x00E9;tiques. En raison de la faible
+                    basicit&#x00E9; des fonctions N&#x00A0;&#x2192;&#x00A0;O des nitroxydes et afin
+                    de les coordiner sur des centres m&#x00E9;talliques acides, ils
+                    utilis&#x00E8;rent des complexes de
+                    l&#x2019;hexafluoroac&#x00E9;tylac&#x00E9;tone (<ce:cross-ref refid="FIG4"
+                        >figure&#x00A0;4</ce:cross-ref><ce:float-anchor refid="FIG4"/>). Ils
+                    obtinrent par cette m&#x00E9;thode d&#x2019;extraordinaires structures
+                    polym&#x00E9;talliques pr&#x00E9;sentant des propri&#x00E9;t&#x00E9;s ferro- ou
+                    ferri-magn&#x00E9;tiques, comme par exemple une structure cyclique
+                    poss&#x00E9;dant six atomes de mangan&#x00E8;se(II) pont&#x00E9;s par des
+                    fonctions NIT et ayant un spin r&#x00E9;sultant &#x00E9;lev&#x00E9;
+                        (<ce:italic>S</ce:italic>&#x00A0;=&#x00A0;12) <ce:cross-refs
+                        refid="BIB32 BIB33">[32, 33]</ce:cross-refs>. Olivier Kahn et son
+                    &#x00E9;quipe ont pr&#x00E9;par&#x00E9; des structures infinies qui, outre leur
+                    esth&#x00E9;tisme, ont des propri&#x00E9;t&#x00E9;s magn&#x00E9;tiques des plus
+                    int&#x00E9;ressantes. Dans ces structures, le motif de base est un r&#x00E9;seau
+                    bidimensionnel compos&#x00E9; d&#x2019;hexagones form&#x00E9;s de six atomes de
+                    Mn(II) et de six atomes de Cu(II) pont&#x00E9;s par de
+                    l&#x2019;orthoph&#x00E9;nyl&#x00E8;ne-bis-oxamate, o&#x00F9; les atomes de
+                    Mn(II) joignent les mailles. L&#x2019;entrelacement des motifs de base
+                    cr&#x00E9;e une structure tridimensionnelle dans laquelle le
+                        <ce:italic>p</ce:italic>-NIT-m&#x00E9;thyl-pyridinium, introduit comme
+                    contre-cation, ponte deux hexagones entrelac&#x00E9;s en coordinant un atome de
+                    Cu de chaque hexagone. De plus, en dessous de 23&#x00A0;K, le compos&#x00E9; se
+                    comporte comme un aimant <ce:cross-ref refid="BIB34">[34]</ce:cross-ref>. Cette
+                    strat&#x00E9;gie fut reprise avec succ&#x00E8;s par l&#x2019;&#x00E9;quipe
+                    d&#x2019;Iwamura <ce:cross-ref refid="BIB35">[35]</ce:cross-ref>, avec cette
+                    fois des radicaux du type <ce:italic>t</ce:italic>-butylnitroxyde, ce qui leur
+                    permit d&#x2019;obtenir des structures en nid d&#x2019;abeille tr&#x00E8;s
+                    &#x00E9;l&#x00E9;gantes, en utilisant un triradical comme connecteur entre les
+                    cations de mangan&#x00E8;se <ce:cross-refs refid="BIB36 BIB37">[36,
+                        37]</ce:cross-refs>.</ce:para>
+                <ce:para>Afin de pallier &#x00E0; l&#x2019;utilisation de centres m&#x00E9;talliques
+                    acides, et de pouvoir ainsi augmenter les possibilit&#x00E9;s de structures,
+                    nous nous sommes tout d&#x2019;abord int&#x00E9;ress&#x00E9;s &#x00E0; la
+                    synth&#x00E8;se de ligands ch&#x00E9;latants poss&#x00E9;dant des radicaux
+                    nitroxydes. Notre recherche s&#x2019;est port&#x00E9;e sur la synth&#x00E8;se
+                    d&#x2019;oligopyridines sym&#x00E9;triques porteuses de deux radicaux NIT
+                        <ce:cross-ref refid="BIB38">[38]</ce:cross-ref>. Ces mol&#x00E9;cules
+                    pr&#x00E9;sentent deux types de sites de complexation. Le c&#x0153;ur du ligand
+                    forme, dans un premier temps, des complexes mononucl&#x00E9;aires, qui
+                    permettent d&#x2019;&#x00E9;tudier et de moduler les interactions entre les
+                    sites radicalaires organiques et le m&#x00E9;tal paramagn&#x00E9;tique. Dans un
+                    deuxi&#x00E8;me temps, il sera possible d&#x2019;utiliser ces complexes comme
+                    briques structurales et de les cimenter entre elles par des centres
+                    m&#x00E9;talliques acides que viendront coordiner les nitroxydes disponibles.
+                    Bien que nos travaux s&#x2019;inscrivent dans le domaine des mat&#x00E9;riaux
+                    magn&#x00E9;tiques, rimant pour bon nombre de chimistes avec les aimants
+                    mol&#x00E9;culaires, nous avons fait une incursion dans le domaine de la
+                    d&#x00E9;tection mol&#x00E9;culaire magn&#x00E9;tique, en utilisant la
+                    r&#x00E9;sonance paramagn&#x00E9;tique &#x00E9;lectronique (RPE).</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>2</ce:label>
+                <ce:section-title>Ligands oligopyridiniques porteurs de fonctions
+                    nitroxydes</ce:section-title>
+                <ce:section>
+                    <ce:label>2.1</ce:label>
+                    <ce:section-title>Imidazoline-nitroxydes</ce:section-title>
+                    <ce:para>La synth&#x00E8;se mise au point par Ullman <ce:cross-refs
+                            refid="BIB20 BIB21 BIB22 BIB23">[20&#x2013;23]</ce:cross-refs>, &#x00E0;
+                        la fin des ann&#x00E9;es 60, repose sur la polycondensation d&#x2019;une
+                        bis-hydroxylamine, la
+                        2,3-diamino-N,N&#x2019;-dihydroxy-2,3-dim&#x00E9;thyl-butane <ce:cross-ref
+                            refid="BIB39">[39]</ce:cross-ref>, sur un ald&#x00E9;hyde (<ce:cross-ref
+                            refid="FIG5">figure&#x00A0;5</ce:cross-ref><ce:float-anchor refid="FIG5"
+                        />). Cette condensation s&#x2019;effectue avec de bons rendements dans du
+                        m&#x00E9;thanol, la
+                            bis-<ce:italic>N</ce:italic>,<ce:italic>N&#x2019;</ce:italic>-hydroxyimidazolidine
+                        alors form&#x00E9;e pr&#x00E9;cipite en g&#x00E9;n&#x00E9;ral au cours de la
+                        r&#x00E9;action d&#x00E9;pla&#x00E7;ant l&#x2019;&#x00E9;quilibre
+                        r&#x00E9;actionnel. Le produit secondaire le plus courant est la
+                            <ce:italic>N</ce:italic>-hydroxyimidazoline, issue de la
+                        d&#x00E9;shydratation du produit de condensation. Celle-ci peut &#x00EA;tre
+                        favoris&#x00E9;e par des traces d&#x2019;acides ou d&#x2019;impuret&#x00E9;s
+                        issues de la synth&#x00E8;se des ald&#x00E9;hydes, comme le dioxyde de
+                        s&#x00E9;l&#x00E9;nium. En effet, nous avons montr&#x00E9; que ce
+                        r&#x00E9;actif est un excellent catalyseur de d&#x00E9;shydratation de la
+                            bis-<ce:italic>N</ce:italic>,<ce:italic>N&#x2019;</ce:italic>-hydroxyimidazolidine
+                            <ce:cross-ref refid="BIB40">[40]</ce:cross-ref> (<ce:cross-ref
+                            refid="FIG6">figure&#x00A0;6</ce:cross-ref><ce:float-anchor refid="FIG6"
+                        />).</ce:para>
+                    <ce:para>Ces pr&#x00E9;curseurs sont ensuite oxyd&#x00E9;s pour obtenir le
+                        radical nitronyle-nitroxyde (NIT) par oxydation de la
+                            bis-<ce:italic>N</ce:italic>,<ce:italic>N&#x2019;</ce:italic>-hydroxyimidazolidine,
+                        et le radical imino-nitroxyde (IM) par oxydation de la
+                            <ce:italic>N</ce:italic>-hydroxyimidazoline. De nombreuses
+                        m&#x00E9;thodes d&#x2019;oxydation ont &#x00E9;t&#x00E9; utilis&#x00E9;es
+                        pour oxyder des hydroxylamines en radical nitroxyde (<ce:cross-ref
+                            refid="FIG5">figure&#x00A0;5</ce:cross-ref>). Les oxydes
+                        m&#x00E9;talliques ont &#x00E9;t&#x00E9; les premiers utilis&#x00E9;s, comme
+                        l&#x2019;oxyde d&#x2019;argent par Wieland <ce:cross-refs
+                            refid="BIB1 BIB2 BIB3">[1&#x2013;3]</ce:cross-refs>, mais la
+                        m&#x00E9;thode la plus efficace est une oxydation par transfert de phase
+                        avec du periodate de sodium dans un m&#x00E9;lange
+                        eau/dichlorom&#x00E9;thane <ce:cross-ref refid="BIB41">[41]</ce:cross-ref>.
+                        Cette m&#x00E9;thode permet d&#x2019;obtenir rapidement et avec de bons
+                        rendements l&#x2019;entit&#x00E9; radicalaire qui transite dans la phase
+                        organique en &#x00E9;vitant une sur-oxydation pouvant conduire &#x00E0; une
+                        nitrone.</ce:para>
+                    <ce:para>Les radicaux ainsi form&#x00E9;s sont purifi&#x00E9;s par
+                        chromatographie sur gel de silice ou support d&#x2019;alumine.
+                        L&#x2019;absorption &#x00E9;lectronique des nitroxydes est
+                        caract&#x00E9;ris&#x00E9;e par une transition n&#x2013;&#x03C0;* dans la
+                        partie visible du spectre d&#x2019;absorption, responsable de la couleur
+                            <ce:cross-ref refid="BIB41">[41]</ce:cross-ref> rouge d&#x2019;un NIT
+                        aliphatique, bleu&#x2013;vert d&#x2019;un NIT aromatique et orange
+                        d&#x2019;un IM. Ces compos&#x00E9;s sont par ailleurs tr&#x00E8;s stables et
+                        ne se d&#x00E9;composent qu&#x2019;&#x00E0; partir de 200&#x00A0;&#x00B0;C.
+                        Le spectre RPE caract&#x00E9;ristique d&#x2019;un NIT en RPE est un
+                        quintuplet, d&#x2019;intensit&#x00E9; 1:2:3:2:1 et avec une constante de
+                        couplage hyperfine <ce:italic>a</ce:italic><ce:inf>N</ce:inf> de
+                        l&#x2019;ordre de 7,5&#x00A0;G <ce:cross-ref refid="BIB41"
+                            >[41]</ce:cross-ref>. L&#x2019;&#x00E9;lectron &#x00E9;tant
+                        d&#x00E9;localis&#x00E9; sur les liaisons ONCNO, les deux azotes sont
+                        &#x00E9;quivalents. Dans nos mol&#x00E9;cules poss&#x00E9;dant deux
+                        fonctions NIT en &#x00E9;change fort, un signal correspondant &#x00E0;
+                        quatre azotes &#x00E9;quivalents est observ&#x00E9; sous la forme
+                        d&#x2019;un nonet (d&#x2019;intensit&#x00E9; relative
+                        1:4:10:16:19:16:10:4:1), avec une constante de couplage hyperfine de
+                        l&#x2019;ordre de 3,7&#x00A0;G. En raison de l&#x2019;in&#x00E9;quivalence
+                        des deux atomes d&#x2019;azotes du radical IM, sept raies
+                        d&#x2019;intensit&#x00E9; relative (1:1:2:1:2:1:1) sont observ&#x00E9;es.
+                        Deux constantes de couplage hyperfin sont alors obtenues, l&#x2019;une de
+                        l&#x2019;ordre de 9&#x00A0;G et l&#x2019;autre autour de
+                        4,5&#x00A0;G.</ce:para>
+                    <ce:para>La pr&#x00E9;sence d&#x2019;&#x00E9;lectrons libres fait de ces
+                        mol&#x00E9;cules des entit&#x00E9;s &#x00E9;lectroactives. Les radicaux NIT
+                        sont oxyd&#x00E9;s de fa&#x00E7;on quasi-r&#x00E9;versible en cations
+                        nitrosonium aux alentours de 0,3&#x2013;0,5&#x00A0;V vs
+                            Ag/Ag<ce:sup>+</ce:sup>
+                        <ce:cross-refs refid="BIB36 BIB37 BIB42 BIB43">[36, 37, 42,
+                            43]</ce:cross-refs>. En revanche, ils sont r&#x00E9;duits de
+                        fa&#x00E7;on irr&#x00E9;versible en anions, qui r&#x00E9;agissent avec toute
+                        trace d&#x2019;eau pour former des dihydroxylamines <ce:cross-refs
+                            refid="BIB36 BIB37 BIB44">[36, 37, 44]</ce:cross-refs>. Cependant, cette
+                        r&#x00E9;duction s&#x2019;effectue &#x00E0; des potentiels relativement
+                        n&#x00E9;gatifs, de l&#x2019;ordre de &#x2013;1,5 &#x00E0;
+                        &#x2013;1,7&#x00A0;V vs Ag/Ag<ce:sup>+</ce:sup>, ce qui permet notamment
+                        d&#x2019;associer cette unit&#x00E9; &#x00E0; d&#x2019;autres esp&#x00E8;ces
+                        &#x00E9;lectroactives pouvant g&#x00E9;n&#x00E9;rer des radicaux-anions,
+                        comme par exemple un fuller&#x00E8;ne C<ce:inf>60</ce:inf>, dont la
+                        premi&#x00E8;re vague de r&#x00E9;duction se situe avant la r&#x00E9;duction
+                        du NIT <ce:cross-ref refid="BIB45">[45]</ce:cross-ref>.</ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>2.2</ce:label>
+                    <ce:section-title>D&#x00E9;riv&#x00E9;s de pyridines</ce:section-title>
+                    <ce:para>Les ligands les plus simples que nous avons pr&#x00E9;par&#x00E9;s sont
+                        deux pyridines fonctionnalis&#x00E9;es par des radicaux NIT ou IM en
+                        position 2,6 et 2,5 <ce:cross-refs refid="BIB40 BIB46">[40,
+                            46]</ce:cross-refs> (<ce:cross-ref refid="FIG7"
+                            >figure&#x00A0;7</ce:cross-ref><ce:float-anchor refid="FIG7"/>). Le
+                        premier ligand, celui du 2,6-bis-NITpy, se comporte comme un ligand
+                        tridentate ONO en formant des complexes octa&#x00E9;driques de Cu(II) et de
+                        Ni(II), de st&#x0153;chiom&#x00E9;trie deux ligands pour un m&#x00E9;tal
+                            <ce:cross-ref refid="BIB38">[38]</ce:cross-ref>. R&#x00E9;cemment, le
+                        comportement magn&#x00E9;tique de ces complexes a &#x00E9;t&#x00E9;
+                        &#x00E9;tudi&#x00E9; <ce:cross-ref refid="BIB47">[47]</ce:cross-ref>, mais
+                        c&#x2019;est le comportement magn&#x00E9;tique des ligands qui amena les
+                        r&#x00E9;sultats les plus inattendus. La pr&#x00E9;sence des fonctions NIT
+                        en ortho de l&#x2019;azote pyridinique induit une g&#x00EA;ne
+                        st&#x00E9;rique et &#x00E9;lectronique, induite par le doublet sur
+                        l&#x2019;azote de la pyridine et qui perturbe l&#x2019;interaction
+                        spin&#x2013;spin entre les deux sous-unit&#x00E9;s NIT <ce:cross-ref
+                            refid="BIB38">[38]</ce:cross-ref>. Ceci se traduit pour le
+                        compos&#x00E9; 2,6-bisNITpy par une variation du spectre RPE en fonction de
+                        la temp&#x00E9;rature, qui passe du spectre d&#x2019;un biradical &#x00E0;
+                        celui d&#x2019;un monoradical en abaissant la temp&#x00E9;rature
+                            (<ce:cross-ref refid="FIG8"
+                            >figure&#x00A0;8</ce:cross-ref><ce:float-anchor refid="FIG8"
+                        />).</ce:para>
+                    <ce:para>Cette g&#x00EA;ne st&#x00E9;r&#x00E9;o&#x00E9;lectronique est
+                        &#x00E9;galement mise en &#x00E9;vidence dans la structure solide du
+                        compos&#x00E9; 2,6-bisNITpy, qui montre un angle prononc&#x00E9; entre la
+                        fonction NIT et le noyau pyridine. De plus, une polarisation de spin
+                        favorable induit un couplage ferromagn&#x00E9;tique entre les deux
+                        sous-unit&#x00E9;s paramagn&#x00E9;tiques <ce:cross-ref refid="BIB38"
+                            >[38]</ce:cross-ref>. Le compos&#x00E9; 2,6-bis-IMpy est lui aussi un
+                        ligand tridentate, qui pourrait &#x00EA;tre compar&#x00E9; &#x00E0; une
+                        terpyridine <ce:cross-ref refid="BIB48">[48]</ce:cross-ref>&#x00A0;;
+                        malheureusement, il ne semble pas vouloir se coordiner par les trois azotes,
+                        mais plut&#x00F4;t en utilisant la triade NNO, favorisant alors la formation
+                        de cha&#x00EE;nes unidimensionnelles <ce:cross-ref refid="BIB49"
+                            >[49]</ce:cross-ref>.</ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>2.3</ce:label>
+                    <ce:section-title>D&#x00E9;riv&#x00E9;s de bipyridines</ce:section-title>
+                    <ce:para>Dans le but de synth&#x00E9;tiser des ch&#x00E9;lates porteurs de sites
+                        paramagn&#x00E9;tiques organiques, nous nous sommes attach&#x00E9;s &#x00E0;
+                        la synth&#x00E8;se de d&#x00E9;riv&#x00E9;s de la 2,2&#x2019;-bipyridine et
+                        de la 1,10-ph&#x00E9;nanthroline, porteurs de deux groupements NIT en
+                        position <ce:italic>ortho</ce:italic> du site de ch&#x00E9;lation
+                            (<ce:cross-ref refid="FIG7">figure&#x00A0;7</ce:cross-ref>)
+                            <ce:cross-ref refid="BIB46">[46]</ce:cross-ref>. Ces compos&#x00E9;s se
+                        comportent comme des pinces mol&#x00E9;culaires planes &#x00E0; quatre sites
+                        donneurs <ce:cross-ref refid="BIB50">[50]</ce:cross-ref>. Seuls les
+                        complexes de la bipyridine substitu&#x00E9;e en position &#x03B1; des atomes
+                        d&#x2019;azote ont fait l&#x2019;objet d&#x2019;&#x00E9;tudes approfondies
+                        des propri&#x00E9;t&#x00E9;s cristallographiques et magn&#x00E9;tiques
+                            <ce:cross-refs refid="BIB51 BIB52">[51, 52]</ce:cross-refs>. La
+                        bipyridine et les deux groupements NIT se mettent en configuration
+                            <ce:italic>cis</ce:italic> lors de la complexation, offrant un site de
+                        coordination t&#x00E9;tradentate de type
+                        &#x00AB;&#x00A0;ONNO&#x00A0;&#x00BB;. Ces ligands complexent la plupart des
+                        m&#x00E9;taux de transition, sous forme de complexes octa&#x00E9;driques,
+                        o&#x00F9; la <ce:italic>pince</ce:italic> ONNO vient coordiner en position
+                        &#x00E9;quatoriale, les deux positions axiales &#x00E9;tant occup&#x00E9;es
+                        par un contre-ion et/ou une mol&#x00E9;cule d&#x2019;eau (<ce:cross-ref
+                            refid="FIG9">figure&#x00A0;9</ce:cross-ref><ce:float-anchor refid="FIG9"
+                        />) <ce:cross-refs refid="BIB51 BIB52">[51, 52]</ce:cross-refs>. Une forte
+                        interaction antiferromagn&#x00E9;tique a &#x00E9;t&#x00E9; observ&#x00E9;e
+                        avec du Cu<ce:sup>2+</ce:sup>
+                            [<ce:italic>J</ce:italic>&#x00A0;=&#x00A0;&#x2013;167&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>],
+                        tandis qu&#x2019;un comportement ferromagn&#x00E9;tique a &#x00E9;t&#x00E9;
+                        d&#x00E9;termin&#x00E9; avec le cation Ni<ce:sup>2+</ce:sup>. Dans ce cas,
+                        l&#x2019;amplitude et la nature du couplage d&#x00E9;pendent de
+                        l&#x2019;angle form&#x00E9; entre le radical et le plan contenant
+                        l&#x2019;atome de nickel. Lorsque le radical et le m&#x00E9;tal sont
+                        co-planaires, une orthogonalit&#x00E9; des orbitales magn&#x00E9;tiques
+                        implique un comportement ferromagn&#x00E9;tique. C&#x2019;est le cas du
+                        complexe ayant une mol&#x00E9;cule d&#x2019;eau et un anion perchlorate
+                        coordin&#x00E9;
+                        (<ce:italic>J</ce:italic><ce:inf>1,2</ce:inf>&#x00A0;=&#x00A0;27,8 et
+                            <ce:italic>J</ce:italic><ce:inf>2,3</ce:inf>&#x00A0;=&#x00A0;6,9&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>&#x00A0;;
+                            <ce:cross-ref refid="FIG10"
+                            >figure&#x00A0;10</ce:cross-ref><ce:float-anchor refid="FIG10"/>). Une
+                        distorsion marqu&#x00E9;e entra&#x00EE;ne une interaction
+                        antiferromagn&#x00E9;tique comme celle observ&#x00E9;e avec le nickel
+                        poss&#x00E9;dant deux mol&#x00E9;cules d&#x2019;eau coordin&#x00E9;es
+                            (<ce:italic>J</ce:italic><ce:inf>1,2</ce:inf>&#x00A0;=&#x00A0;39,6 et
+                            <ce:italic>J</ce:italic><ce:inf>2,3</ce:inf>&#x00A0;=&#x00A0;&#x2013;48,7&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>).</ce:para>
+                    <ce:para>Notons que de multiples autres ch&#x00E9;lates porteurs de spin ont
+                        ainsi pu &#x00EA;tre pr&#x00E9;par&#x00E9;s par une strat&#x00E9;gie
+                        analogue. Il a en particulier &#x00E9;t&#x00E9; pr&#x00E9;par&#x00E9;e une
+                        bipyridine comportant deux radicaux en position 5,5&#x2019; (<ce:cross-ref
+                            refid="FIG7">figure&#x00A0;7</ce:cross-ref>) et trois de ces
+                        entit&#x00E9;s ont &#x00E9;t&#x00E9; complex&#x00E9;es autour d&#x2019;un
+                        atome de Ni<ce:sup>2+</ce:sup>. La structure mol&#x00E9;culaire de ce
+                        complexe a &#x00E9;t&#x00E9; d&#x00E9;termin&#x00E9;e et confirme que nous
+                        sommes en pr&#x00E9;sence d&#x2019;un nickel octa&#x00E9;drique
+                        complex&#x00E9; par trois unit&#x00E9;s bipyridine porteuses chacune de deux
+                        radicaux NIT (<ce:cross-ref refid="FIG11"
+                            >figure&#x00A0;11</ce:cross-ref><ce:float-anchor refid="FIG11"/>). Le
+                        moment magn&#x00E9;tique &#x00E0; temp&#x00E9;rature ambiante confirme que
+                        nous sommes en pr&#x00E9;sence d&#x2019;un atome de nickel
+                            (<ce:italic>S</ce:italic>&#x00A0;=&#x00A0;1) et de six radicaux
+                            (<ce:italic>S</ce:italic>&#x00A0;=&#x00A0;1/2). Enfin, notons que des
+                        ligands bipyridiniques greff&#x00E9;s par un radical NIT ou IM ont
+                        &#x00E9;galement &#x00E9;t&#x00E9; synth&#x00E9;tis&#x00E9;s. La 6-IM-bipy
+                        portant trois atomes d&#x2019;azote donneurs se comporte comme un ligand
+                        tridentate favorisant une coordination m&#x00E9;ridionale, mod&#x00E8;le
+                        d&#x2019;une terpyridine classique <ce:cross-ref refid="BIB48"
+                            >[48]</ce:cross-ref>.</ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>2.4</ce:label>
+                    <ce:section-title>D&#x00E9;riv&#x00E9;s de terpyridine</ce:section-title>
+                    <ce:para>Ce ligand pr&#x00E9;sente l&#x2019;avantage de former des complexes
+                        tr&#x00E8;s stables par ch&#x00E9;lation m&#x00E9;ridionale des trois atomes
+                        d&#x2019;azote. En cons&#x00E9;quence, plusieurs ligands porteurs de
+                        radicaux NIT ou IM ont &#x00E9;t&#x00E9; pr&#x00E9;par&#x00E9;s au cours de
+                        ce travail et la position et le nombre de substituants radicalaires ont
+                        &#x00E9;t&#x00E9; modifi&#x00E9;s selon la disponibilit&#x00E9; des
+                        ald&#x00E9;hydes correspondants. La terpyridine (terpy) substitu&#x00E9;e en
+                        position 4&#x2019; donne des complexes de g&#x00E9;om&#x00E9;trie
+                        octa&#x00E9;drique et de st&#x0153;chiom&#x00E9;trie de deux ligands pour un
+                        m&#x00E9;tal. Dans le cas du Ni<ce:sup>2+</ce:sup> les angles di&#x00E8;dres
+                        entre le plan moyen de la terpyridine et les radicaux NIT sont de 27&#x00B0;
+                        et 18&#x00B0; (<ce:cross-ref refid="FIG12"
+                            >figure&#x00A0;12</ce:cross-ref><ce:float-anchor refid="FIG12"/>). Le
+                        comportement antiferromagn&#x00E9;tique entre le m&#x00E9;tal et le radical
+                        a pu &#x00EA;tre d&#x00E9;termin&#x00E9; &#x00E0; l&#x2019;aide d&#x2019;un
+                        mod&#x00E8;le de trim&#x00E8;re lin&#x00E9;aire et
+                        sym&#x00E9;trique&#x00A0;; il en r&#x00E9;sulte une interaction
+                            <ce:italic>J</ce:italic>&#x00A0;=&#x00A0;&#x2013;6,7&#x00A0;cm<ce:sup>&#x2013;1</ce:sup>.
+                        D&#x2019;autres complexes avec le Zn<ce:sup>2+</ce:sup> et le
+                            Cu<ce:sup>2+</ce:sup> ont &#x00E9;galement &#x00E9;t&#x00E9;
+                        pr&#x00E9;par&#x00E9;s et pr&#x00E9;sentent un comportement
+                        antiferromagn&#x00E9;tique similaire &#x00E0; celui du
+                        Ni<ce:sup>2+</ce:sup>. Il en va de m&#x00EA;me des complexes obtenus avec le
+                        ligand 4&#x2019;-IM-terpy, ceux-ci ayant &#x00E9;t&#x00E9;
+                        caract&#x00E9;ris&#x00E9;s par une structure mol&#x00E9;culaire aux
+                        rayons&#x00A0;X et leurs comportements magn&#x00E9;tiques avec un
+                        susceptom&#x00E8;tre SQUID <ce:cross-ref refid="BIB53"
+                        >[53]</ce:cross-ref>.</ce:para>
+                </ce:section>
+            </ce:section>
+            <ce:section>
+                <ce:label>3</ce:label>
+                <ce:section-title>Podands porteurs de bras nitroxydes</ce:section-title>
+                <ce:section>
+                    <ce:label>3.1</ce:label>
+                    <ce:section-title>Principe synth&#x00E9;tique</ce:section-title>
+                    <ce:para>La principale difficult&#x00E9; pour l&#x2019;obtention d&#x2019;un
+                        radical NIT est la synth&#x00E8;se de l&#x2019;ald&#x00E9;hyde
+                        pr&#x00E9;curseur. En effet, il n&#x2019;est pas toujours ais&#x00E9;
+                        d&#x2019;obtenir, pour des raisons synth&#x00E9;tiques, certaines
+                        plates-formes mol&#x00E9;culaires avec des fonctions ald&#x00E9;hydes. Il
+                        est encore moins ais&#x00E9;, pour des raisons de stabilit&#x00E9;,
+                        d&#x2019;obtenir des polyald&#x00E9;hydes. Cette entrave &#x00E0; la
+                        synth&#x00E8;se de radicaux originaux nous a amen&#x00E9; &#x00E0;
+                        d&#x00E9;velopper une chimie bas&#x00E9;e sur les radicaux NIT
+                        eux-m&#x00EA;mes&#x00A0;; ceux-ci sont bien souvent plus stables que leurs
+                        pr&#x00E9;curseurs dihydroxy-imidazolidines et ald&#x00E9;hydes. Par cette
+                        m&#x00E9;thode, largement employ&#x00E9;e dans le cas des radicaux TEMPO
+                            <ce:cross-refs refid="BIB6 BIB7 BIB54">[6, 7, 54]</ce:cross-refs>, de
+                        nombreux &#x00E9;difices structuraux peuvent &#x00EA;tre envisag&#x00E9;s
+                        par greffage.</ce:para>
+                    <ce:para>Notre strat&#x00E9;gie repose sur l&#x2019;&#x00E9;laboration
+                        d&#x2019;un synthon tr&#x00E8;s simple ayant une fonction NIT et un
+                        groupement nucl&#x00E9;ofuge, la chlorom&#x00E9;thyle-NIT (<ce:cross-ref
+                            refid="FIG13">figure&#x00A0;13</ce:cross-ref><ce:float-anchor
+                            refid="FIG13"/>) <ce:cross-ref refid="BIB41">[41]</ce:cross-ref>. Ce
+                        synthon relativement stable peut &#x00EA;tre obtenu en grande
+                        quantit&#x00E9;, mais le chlore de ce compos&#x00E9; &#x00E9;tant peu
+                        nucl&#x00E9;ofuge, la substitution du chlore ne s&#x2019;effectue
+                        efficacement qu&#x2019;en pr&#x00E9;sence d&#x2019;une quantit&#x00E9;
+                        catalytique d&#x2019;iodure d&#x2019;alcalin. Cette m&#x00E9;thode permet de
+                        greffer ais&#x00E9;ment le fragment paramagn&#x00E9;tique
+                        m&#x00E9;thyle-NIT, par substitution nucl&#x00E9;ophile, en milieu basique
+                        sur des mol&#x00E9;cules poss&#x00E9;dant des groupements
+                        nucl&#x00E9;ophiles tels que les amines ou les ph&#x00E9;nols (<ce:cross-ref
+                            refid="FIG14">figure&#x00A0;14</ce:cross-ref><ce:float-anchor
+                            refid="FIG14"/>).</ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>3.2</ce:label>
+                    <ce:section-title>Kryptospin</ce:section-title>
+                    <ce:para>L&#x2019;association entre un &#x00E9;ther-couronne et une
+                        sous-unit&#x00E9; porteuse de spin a permis de d&#x00E9;velopper des sondes
+                        pour la d&#x00E9;tection d&#x2019;ions par RPE. Les premiers syst&#x00E8;mes
+                        &#x00E9;tudi&#x00E9;s au milieu des ann&#x00E9;es 80 &#x00E9;taient
+                        bas&#x00E9;s sur l&#x2019;utilisation du radical TEMPO, o&#x00F9; la
+                        localisation du spin ne permet pas de fortes interactions avec l&#x2019;ion
+                        coordin&#x00E9; <ce:cross-refs refid="BIB55 BIB56">[55, 56]</ce:cross-refs>.
+                        Seul le syst&#x00E8;me mis en &#x0153;uvre par Sosnovsky a permis
+                        d&#x2019;observer un couplage hyperfin avec l&#x2019;atome de sodium
+                            <ce:cross-ref refid="BIB57">[57]</ce:cross-ref> (<ce:cross-ref
+                            refid="FIG15">figure&#x00A0;15</ce:cross-ref><ce:float-anchor
+                            refid="FIG15"/>). Ce syst&#x00E8;me, dans lequel le centre
+                        paramagn&#x00E9;tique est dans la sph&#x00E8;re de coordination de
+                        l&#x2019;alcalin, est tr&#x00E8;s &#x00E9;l&#x00E9;gant, mais issu
+                        d&#x2019;une synth&#x00E8;se fastidieuse. Nous avons envisag&#x00E9; la
+                        synth&#x00E8;se d&#x2019;une famille de polyamines macrocycliques et
+                        d&#x2019;&#x00E9;thers couronnes portant des bras m&#x00E9;thyle-NIT, en
+                        mettant en &#x0153;uvre la strat&#x00E9;gie de synth&#x00E8;se utilisant un
+                        synthon radicalaire <ce:cross-ref refid="BIB58"
+                        >[58]</ce:cross-ref>.</ce:para>
+                    <ce:para>Le spectre RPE observ&#x00E9; sera plus complexe que dans le cas de
+                        sous-unit&#x00E9; TEMPO (triplet vs quintuplet), mais la partie
+                        magn&#x00E9;tiquement active de la mol&#x00E9;cule sera plus accessible, ce
+                        qui permet d&#x2019;obtenir davantage d&#x2019;interactions avec le milieu,
+                        et donc de plus grandes modifications du spectre. Les r&#x00E9;sultats les
+                        plus significatifs furent obtenus avec les d&#x00E9;riv&#x00E9;s des
+                            <ce:italic>Kryptofix</ce:italic>, fonctionnalis&#x00E9;s par deux bras
+                        m&#x00E9;thyle-NIT. Ces mol&#x00E9;cules, appel&#x00E9;es
+                            <ce:italic>Kryptospin</ce:italic> (<ce:cross-ref refid="FIG16"
+                            >figure&#x00A0;16</ce:cross-ref><ce:float-anchor refid="FIG16"/>),
+                        pr&#x00E9;sentent un spectre RPE tr&#x00E8;s fortement perturb&#x00E9; en
+                        pr&#x00E9;sence d&#x2019;ions alcalins. En effet, dans le cas du ligand
+                        libre, seule une interaction spin&#x2013;spin directe moyenne &#x00E0;
+                        travers l&#x2019;espace est observ&#x00E9;e (nonet d&#x00E9;form&#x00E9;),
+                        &#x00E0; laquelle s&#x2019;ajoute un couplage hyperfin d&#x00FB; aux protons
+                        du pont m&#x00E9;thyl&#x00E8;ne. Lors de l&#x2019;addition d&#x2019;un
+                        cation alcalin, il y a rupture de l&#x2019;interaction spin&#x2013;spin par
+                        complexation du cation (<ce:cross-ref refid="FIG17"
+                            >figure&#x00A0;17</ce:cross-ref><ce:float-anchor refid="FIG17"/>). De
+                        plus, suivant la taille de l&#x2019;&#x00E9;ther couronne, un affinement du
+                        couplage hyperfin avec les deux hydrog&#x00E8;nes devenus
+                        diast&#x00E9;r&#x00E9;otopes est observ&#x00E9; lorsque la complexation est
+                        optimale. Le syst&#x00E8;me hyperfin est mieux r&#x00E9;solu pour les gros
+                        cations comme le c&#x00E9;sium pour l&#x2019;&#x00E9;ther couronne 2.2 et
+                        inversement mieux r&#x00E9;solu pour le lithium avec le
+                            <ce:italic>Kryptospin</ce:italic> 1.1 <ce:cross-ref refid="BIB59"
+                            >[59]</ce:cross-ref>.</ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>3.3</ce:label>
+                    <ce:section-title>Calixar&#x00E8;nes</ce:section-title>
+                    <ce:para>L&#x2019;extension de notre m&#x00E9;thodologie de synth&#x00E8;se,
+                        utilisant un synthon radicalaire, s&#x2019;est faite vers la
+                        fonctionnalisation de calixar&#x00E8;nes. Ces entit&#x00E9;s
+                        polyph&#x00E9;noliques poss&#x00E8;dent des fonctions hydroxyles sur
+                        lesquelles des greffages s&#x00E9;lectifs peuvent &#x00EA;tre
+                        effectu&#x00E9;s en fonction de la nature de la base utilis&#x00E9;e. La
+                        v&#x00E9;rification de la conformation et de la substitution sur la
+                        plate-forme calixar&#x00E8;ne est confirm&#x00E9;e par RMN apr&#x00E8;s
+                        r&#x00E9;duction d&#x2019;un &#x00E9;chantillon par de l&#x2019;acide
+                        ascorbique <ce:cross-ref refid="BIB60">[60]</ce:cross-ref>. Nous avons pu de
+                        cette fa&#x00E7;on obtenir et confirmer la structure d&#x2019;un
+                        calix[4]ar&#x00E8;ne portant quatre NIT, en conformation c&#x00F4;ne
+                            <ce:cross-ref refid="BIB61">[61]</ce:cross-ref>. L&#x2019;association au
+                        sein de la cavit&#x00E9; d&#x2019;un calixar&#x00E8;ne de sous-unit&#x00E9;s
+                        complexantes et de sous-unit&#x00E9;s magn&#x00E9;tiquement actives, en
+                        l&#x2019;occurrence deux bipyridines et deux NIT (<ce:cross-ref
+                            refid="FIG18">figure&#x00A0;18</ce:cross-ref><ce:float-anchor
+                            refid="FIG18"/>), nous a permis de mettre en &#x00E9;vidence un
+                        changement significatif dans le spectre RPE en pr&#x00E9;sence de cations
+                        m&#x00E9;talliques. En effet, l&#x2019;interaction spin&#x2013;spin
+                        observ&#x00E9;e dans le cas du ligand libre (nonet) est interrompue lors de
+                        l&#x2019;addition de cations Zn<ce:sup>2+</ce:sup> (quintet), par
+                        complexation de celui-ci <ce:cross-ref refid="BIB61">[61]</ce:cross-ref>. De
+                        tels changements de spectre furent aussi observ&#x00E9; par
+                        l&#x2019;&#x00E9;quipe de Shinkai, en pr&#x00E9;sence d&#x2019;ions
+                        alcalins, avec un syst&#x00E8;me de calix[8]ar&#x00E8;ne portant des
+                        fonctions ester et des radicaux TEMPO <ce:cross-ref refid="BIB62"
+                            >[62]</ce:cross-ref>.</ce:para>
+                    <ce:para>Ces travaux nous laissent penser que des syst&#x00E8;mes o&#x00F9; il
+                        existera une association entre une cavit&#x00E9; de coordination
+                        sp&#x00E9;cifique et une entit&#x00E9; magn&#x00E9;tiquement active, tel que
+                        le NIT, pourront &#x00EA;tre des sondes efficaces pour la d&#x00E9;tection
+                        par RPE de mol&#x00E9;cules diamagn&#x00E9;tiques.</ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>3.4</ce:label>
+                    <ce:section-title>Bipyridine</ce:section-title>
+                    <ce:para>Ce podand a &#x00E9;t&#x00E9; pr&#x00E9;par&#x00E9; par alkylation
+                        d&#x2019;un synthon amino-m&#x00E9;thyle-bipyridine par le
+                        chlorom&#x00E9;thyle-NIT. Une d&#x00E9;termination de la structure
+                        mol&#x00E9;culaire aux rayons X r&#x00E9;v&#x00E8;le
+                        l&#x2019;orthogonalit&#x00E9; intramol&#x00E9;culaire quasi parfaite des
+                        deux radicaux NIT (<ce:cross-ref refid="FIG19"
+                            >figure&#x00A0;19</ce:cross-ref><ce:float-anchor refid="FIG19"/>). Cette
+                        g&#x00E9;om&#x00E9;trie particuli&#x00E8;re et inattendue est favorable
+                        &#x00E0; une interaction ferromagn&#x00E9;tique, retrouv&#x00E9;e dans le
+                        comportement magn&#x00E9;tique mesur&#x00E9; par SQUID.</ce:para>
+                    <ce:para>Par ailleurs, deux complexes de m&#x00EA;me st&#x0153;chiom&#x00E9;trie
+                        (un ligand pour un m&#x00E9;tal), mais de g&#x00E9;om&#x00E9;tries
+                        diff&#x00E9;rentes, ont &#x00E9;t&#x00E9; pr&#x00E9;par&#x00E9;s. La
+                        sous-unit&#x00E9; amino-m&#x00E9;thyl-bipyridine est dans un plan
+                        m&#x00E9;ridional dans chaque complexe, tandis que les deux radicaux
+                        occupent, soit des positions perpendiculaires &#x00E0; ce plan (cas du
+                            Ni<ce:sup>2+</ce:sup> et du Zn<ce:sup>2+</ce:sup>), les sph&#x00E8;res
+                        de coordination &#x00E9;tant compl&#x00E9;t&#x00E9;es par une
+                        mol&#x00E9;cule d&#x2019;eau (<ce:cross-ref refid="FIG20"
+                            >figure&#x00A0;20</ce:cross-ref><ce:float-anchor refid="FIG20"/>), soit
+                        dans le plan. Dans le cas du complexe du cuivre, un des radical est
+                        coordin&#x00E9; dans le plan &#x00E9;quatorial contenant la bipyridine,
+                        alors que le second radical est coordin&#x00E9; perpendiculairement &#x00E0;
+                        ce plan. Dans ce dernier cas, la sph&#x00E8;re de coordination est
+                        compl&#x00E9;t&#x00E9;e par un anion
+                            ClO<ce:inf>4</ce:inf><ce:sup>&#x2013;</ce:sup> (<ce:cross-ref
+                            refid="FIG21">figure&#x00A0;21</ce:cross-ref><ce:float-anchor
+                            refid="FIG21"/>). Une telle situation est favorable &#x00E0; un
+                        recouvrement ferromagn&#x00E9;tique et antiferromagn&#x00E9;tique dans le
+                        cas de la coordination perpendiculaire et coplanaire respectivement. Un
+                        comportement global antiferromagn&#x00E9;tique a &#x00E9;t&#x00E9;
+                        observ&#x00E9; et un mod&#x00E8;le math&#x00E9;matique simple incluant ces
+                        deux type d&#x2019;interactions a permis de rendre compte du comportement
+                        magn&#x00E9;tique observ&#x00E9; <ce:cross-ref refid="BIB63"
+                            >[63]</ce:cross-ref>.</ce:para>
+                </ce:section>
+            </ce:section>
+            <ce:section>
+                <ce:label>4</ce:label>
+                <ce:section-title>Conclusion</ce:section-title>
+                <ce:para>Nous avons au cours de ce programme de recherche synth&#x00E9;tis&#x00E9;
+                    des ligands azot&#x00E9;s porteurs de spins. Un nombre croissant de cycles
+                    pyridiniques (de 1 &#x00E0; 3) a permis d&#x2019;obtenir des objets
+                    paramagn&#x00E9;tiques ayant une aptitude &#x00E0; former des complexes de
+                    st&#x0153;chiom&#x00E9;trie et de g&#x00E9;om&#x00E9;trie diff&#x00E9;rentes.
+                    Parmi ces complexes, une coordination directe de la fonction N&#x2192;O sur le
+                    m&#x00E9;tal engendre des couplages antiferromagn&#x00E9;tiques forts, tandis
+                    qu&#x2019;une orthogonalit&#x00E9; des orbitales magn&#x00E9;tiques
+                    g&#x00E9;n&#x00E8;re des couplages ferromagn&#x00E9;tiques marqu&#x00E9;s.
+                    Remarquons que l&#x2019;interaction magn&#x00E9;tique entre un radical NIT ou IM
+                    et un m&#x00E9;tal paramagn&#x00E9;tique au travers d&#x2019;un cycle pyridine
+                    est att&#x00E9;nu&#x00E9; et g&#x00E9;n&#x00E9;ralement de nature
+                    antiferromagn&#x00E9;tique. La pr&#x00E9;paration de mol&#x00E9;cules plus
+                    flexibles, mais comportant des bras porteurs de spin, a &#x00E9;galement
+                    &#x00E9;t&#x00E9; d&#x00E9;velopp&#x00E9;e. Certaines de ces mol&#x00E9;cules
+                    comportent une plate-forme macrocyclique utilis&#x00E9;e pour d&#x00E9;tecter
+                    des cations alcalins par RPE. Malgr&#x00E9; un effort synth&#x00E9;tique
+                    consid&#x00E9;rable, le contr&#x00F4;le du signe et de l&#x2019;amplitude de
+                    l&#x2019;interaction magn&#x00E9;tique est un paradigme qui n&#x2019;a pas
+                    &#x00E9;t&#x00E9; atteint. Il reste certes beaucoup de chemin &#x00E0; parcourir
+                    avant qu&#x2019;une telle aventure puisse &#x00EA;tre men&#x00E9;e &#x00E0; son
+                    terme. Le caract&#x00E8;re tr&#x00E8;s empirique de ce domaine de recherche
+                    ouvre au chimiste de synth&#x00E8;se de larges horizons
+                    inexplor&#x00E9;s.</ce:para>
+            </ce:section>
+        </ce:sections>
+        <ce:acknowledgment>
+            <ce:section-title>Remerciements</ce:section-title>
+            <ce:para>Nous avons tous &#x00E9;t&#x00E9; particuli&#x00E8;rement sensibles aux
+                encouragements constants que le professeur Olivier Kahn nous a prodigu&#x00E9; au
+                cours de ce travail <ce:italic>fastidieux</ce:italic>. Avec ce m&#x00E9;moire nous
+                rendons hommage &#x00E0; l&#x2019;homme de science fascin&#x00E9; par la
+                beaut&#x00E9; et la versatilit&#x00E9; des objets mol&#x00E9;culaires
+                sculpt&#x00E9;s par les chimistes. Nous tenons &#x00E9;galement &#x00E0; remercier
+                les Drs Pierre Rabu et Marc Drillon pour leurs expertises dans la
+                compr&#x00E9;hension des processus d&#x2019;&#x00E9;changes magn&#x00E9;tiques et le
+                professeur Philippe Turek (ICS, Strasbourg) pour sa contribution dans
+                l&#x2019;analyse des spectres RPE et des processus chimiques qui en
+                d&#x00E9;coulent. Enfin, nous remercions Martine Ziessel pour une lecture attentive
+                et critique du manuscrit.</ce:para>
+        </ce:acknowledgment>
+    </body>
+    <tail>
+        <ce:bibliography>
+            <ce:section-title>R&#x00E9;f&#x00E9;rences</ce:section-title>
+            <ce:bibliography-sec>
+                <ce:bib-reference id="BIB1">
+                    <ce:label>[1]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>O</ce:given-name>
+                                    <ce:surname>Piloty</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>B</ce:given-name>
+                                    <ce:surname>Schwering</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Chem. Ber.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>34</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1901</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1870</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB2">
+                    <ce:label>[2]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>O</ce:given-name>
+                                    <ce:surname>Piloty</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>W</ce:given-name>
+                                    <ce:surname>Vogel</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Chem. Ber.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>36</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1903</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1283</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB3">
+                    <ce:label>[3]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Wieland</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Offenb&#x00E4;cher</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Chem. Ber.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>47</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1914</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2111</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB4">
+                    <ce:label>[4]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Bri&#x00E8;re</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Lemaire</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Rassat</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Bull. Soc. Chim. France.</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1965</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>3273</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB5">
+                    <ce:label>[5]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Bri&#x00E8;re</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R.M</ce:given-name>
+                                    <ce:surname>Dupeyre</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Lemaire</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>C</ce:given-name>
+                                    <ce:surname>Morat</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Rassat</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Bull. Soc. Chim. France.</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1965</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>3290</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB6">
+                    <ce:label>[6]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>E.G</ce:given-name>
+                                    <ce:surname>Rosantzev</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Scholle</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Synthesis</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1971</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>190</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB7">
+                    <ce:label>[7]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>E.G</ce:given-name>
+                                    <ce:surname>Rosantzev</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Scholle</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Synthesis</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1971</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>401</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB8">
+                    <ce:label>[8]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H.M</ce:given-name>
+                                    <ce:surname>McConnell</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Phys.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>39</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1963</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1910</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB9">
+                    <ce:label>[9]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>S</ce:given-name>
+                                    <ce:surname>Ohnishi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H.M</ce:given-name>
+                                    <ce:surname>McConnell</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Am. Chem. Soc.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>87</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1965</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2293</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB10">
+                    <ce:label>[10]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H.M</ce:given-name>
+                                    <ce:surname>Swartz</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Pure Appl. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>62</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1990</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>235</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB11">
+                    <ce:label>[11]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G.I</ce:given-name>
+                                    <ce:surname>Liktenstein</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Pure Appl. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>62</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1990</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>281</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB12">
+                    <ce:label>[12]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>O.H</ce:given-name>
+                                    <ce:surname>Griffith</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A.S</ce:given-name>
+                                    <ce:surname>Waggoner</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Acc. Chem. Res.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>2</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1969</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>17</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB13">
+                    <ce:label>[13]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Berthier</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Lemaire</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Rassat</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Veillard</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Theor. Chim. Acta</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>3</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1965</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>213</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB14">
+                    <ce:label>[14]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>J</ce:given-name>
+                                    <ce:surname>Martinie-Hombrouk</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Rassat</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Tetrahedron</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>30</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1974</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>433</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB15">
+                    <ce:label>[15]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Rassat</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Pure Appl. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>62</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1990</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>223</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB16">
+                    <ce:label>[16]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Lemaire</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Y</ce:given-name>
+                                    <ce:surname>Marechal</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ramasseul</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Rassat</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Bull. Soc. Chim. France</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1975</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>372</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB17">
+                    <ce:label>[17]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Lemaire</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Y</ce:given-name>
+                                    <ce:surname>Marechal</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ramasseul</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Rassat</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Bull. Soc. Chim. France</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1975</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>378</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB18">
+                    <ce:label>[18]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Calder</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A.R</ce:given-name>
+                                    <ce:surname>Forrester</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. C</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1969</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1459</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB19">
+                    <ce:label>[19]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Calder</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A.R</ce:given-name>
+                                    <ce:surname>Forrester</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P.G</ce:given-name>
+                                    <ce:surname>James</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G.R</ce:given-name>
+                                    <ce:surname>Luckhurst</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Am. Chem. Soc.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>91</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1969</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>3724</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB20">
+                    <ce:label>[20]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>D.G.B</ce:given-name>
+                                    <ce:surname>Boocock</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Darcy</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>E.F</ce:given-name>
+                                    <ce:surname>Ullman</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Am. Chem. Soc</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>90</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1968</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>5945</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB21">
+                    <ce:label>[21]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>D.G.B</ce:given-name>
+                                    <ce:surname>Boocock</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>E.F</ce:given-name>
+                                    <ce:surname>Ullman</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Am. Chem. Soc</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>90</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1968</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>6873</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB22">
+                    <ce:label>[22]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>E.F</ce:given-name>
+                                    <ce:surname>Ullman</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D.G.B</ce:given-name>
+                                    <ce:surname>Boocock</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. Chem. Comm.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>20</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1969</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1161</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB23">
+                    <ce:label>[23]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>E.F</ce:given-name>
+                                    <ce:surname>Ullman</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>L</ce:given-name>
+                                    <ce:surname>Call</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.H</ce:given-name>
+                                    <ce:surname>Osiecki</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Org. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>35</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1970</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>3623</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB24">
+                    <ce:label>[24]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Tamura</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Y</ce:given-name>
+                                    <ce:surname>Nakasawa</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Shiomi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Nozawa</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Y</ce:given-name>
+                                    <ce:surname>Hosokoshi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Ishikawa</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Takahashi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Kinoshita</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Chem. Phys. Lett.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>186</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1991</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>401</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB25">
+                    <ce:label>[25]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Kinoshita</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Turek</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Tamura</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Nozawa</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Shiomi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Y</ce:given-name>
+                                    <ce:surname>Nakasawa</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Ishikawa</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Takahashi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Awaga</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T</ce:given-name>
+                                    <ce:surname>Inabe</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Chem. Lett.</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1991</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1225</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB26">
+                    <ce:label>[26]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Chiarelli</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M.A</ce:given-name>
+                                    <ce:surname>Novak</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Rassat</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.L</ce:given-name>
+                                    <ce:surname>Tholence</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Nature</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>363</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1993</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>147</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB27">
+                    <ce:label>[27]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>S</ce:given-name>
+                                    <ce:surname>Nakatsuji</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Anzai</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Mater. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>7</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1997</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2161</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB28">
+                    <ce:label>[28]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>T</ce:given-name>
+                                    <ce:surname>Okuno</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T</ce:given-name>
+                                    <ce:surname>Otsuka</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Awaga</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. Chem. Comm.</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1995</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>827</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB29">
+                    <ce:label>[29]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>J</ce:given-name>
+                                    <ce:surname>Cirujeda</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>E</ce:given-name>
+                                    <ce:surname>Hernandez-Gasio</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>C</ce:given-name>
+                                    <ce:surname>Rovira</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.L</ce:given-name>
+                                    <ce:surname>Stanger</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Turek</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J</ce:given-name>
+                                    <ce:surname>Veciana</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Mater. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>5</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1995</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>243</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB30">
+                    <ce:label>[30]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Caneschi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Gatteschi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Sessoli</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Rey</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Acc. Chem. Res.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>22</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1989</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>392</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB31">
+                    <ce:label>[31]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Caneschi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Gatteschi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Rey</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Prog. Inorg. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>39</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1991</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>331</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB32">
+                    <ce:label>[32]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Caneschi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Gatteschi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.P</ce:given-name>
+                                    <ce:surname>Renard</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Rey</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Sessoli</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Inorg. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>28</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1989</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1976</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB33">
+                    <ce:label>[33]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Caneschi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Gatteschi</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J</ce:given-name>
+                                    <ce:surname>Laugier</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Rey</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Sessoli</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>C</ce:given-name>
+                                    <ce:surname>Zanchini</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Am. Chem. Soc.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>110</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1988</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2795</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB34">
+                    <ce:label>[34]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H.O</ce:given-name>
+                                    <ce:surname>Stumpf</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>L</ce:given-name>
+                                    <ce:surname>Ouahab</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Y</ce:given-name>
+                                    <ce:surname>Pei</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Grandjean</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>O</ce:given-name>
+                                    <ce:surname>Kahn</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Science</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>261</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1993</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>447</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB35">
+                    <ce:label>[35]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Iwamura</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Inoue</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T</ce:given-name>
+                                    <ce:surname>Hayamizu</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Pure Appl. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>68</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1996</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>243</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB36">
+                    <ce:label>[36]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Inoue</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Iwamura</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Am. Chem. Soc.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>116</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1994</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>3173</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB37">
+                    <ce:label>[37]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>T</ce:given-name>
+                                    <ce:surname>Mitsunori</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Inoue</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>N</ce:given-name>
+                                    <ce:surname>Koga</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Iwamura</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Am. Chem. Soc.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>117</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1995</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2467</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB38">
+                    <ce:label>[38]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Ulrich</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R.C</ce:given-name>
+                                    <ce:surname>Lawson</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>L</ce:given-name>
+                                    <ce:surname>Echegoyen</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Mater. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>9</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1999</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1435</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB39">
+                    <ce:label>[39]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Lamchen</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T.W</ce:given-name>
+                                    <ce:surname>Mittag</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. (C)</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1966</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2300</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB40">
+                    <ce:label>[40]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Ulrich</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Tetrahedron Lett.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>35</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1994</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1215</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB41">
+                    <ce:label>[41]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>E.F</ce:given-name>
+                                    <ce:surname>Ullman</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.H</ce:given-name>
+                                    <ce:surname>Osiecki</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G.B</ce:given-name>
+                                    <ce:surname>Boocock</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Darcy</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Am. Chem. Soc.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>94</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1972</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>7049</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB42">
+                    <ce:label>[42]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Tamura</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>C</ce:given-name>
+                                    <ce:surname>Iwakura</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Tsunaga</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Electrochim. Acta</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>18</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1973</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>241</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB43">
+                    <ce:label>[43]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>T</ce:given-name>
+                                    <ce:surname>Malinski</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J.R</ce:given-name>
+                                    <ce:surname>Fish</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>S.G</ce:given-name>
+                                    <ce:surname>Swarts</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M.D</ce:given-name>
+                                    <ce:surname>Svilla</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Phys. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>92</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1988</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>3745</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB44">
+                    <ce:label>[44]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Serve</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Electrochim. Acta.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>20</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1975</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>469</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB45">
+                    <ce:label>[45]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Matsuda</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Ulrich</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Iwamura</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. Perkin Trans.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>2</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1998</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1581</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB46">
+                    <ce:label>[46]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Ulrich</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Luneau</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Rey</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Tetrahedron Lett.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>35</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1994</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1211</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB47">
+                    <ce:label>[47]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Francese</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>F.M</ce:given-name>
+                                    <ce:surname>Romero</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Neels</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Stoeckli-Evans</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>S</ce:given-name>
+                                    <ce:surname>Decurtins</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Inorg. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>39</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>2000</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2087</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB48">
+                    <ce:label>[48]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>C</ce:given-name>
+                                    <ce:surname>Stroh</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Tetrahedron Lett.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>40</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1999</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>4543</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB49">
+                    <ce:label>[49]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Oshio</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T</ce:given-name>
+                                    <ce:surname>Watanabe</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>Ohto</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T</ce:given-name>
+                                    <ce:surname>Ito</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Inorg. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>36</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1997</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>1608</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB50">
+                    <ce:label>[50]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Luneau</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J</ce:given-name>
+                                    <ce:surname>Laugier</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Rey</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Ulrich</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Legoll</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Drillon</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. Chem. Comm.</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1994</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>741</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB51">
+                    <ce:label>[51]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Luneau</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>F.M</ce:given-name>
+                                    <ce:surname>Romero</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. Chem. Comm.</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1998</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>551</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB52">
+                    <ce:label>[52]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>D</ce:given-name>
+                                    <ce:surname>Luneau</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>F.M</ce:given-name>
+                                    <ce:surname>Romero</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Inorg. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>37</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1998</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>5078</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB53">
+                    <ce:label>[53]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Stroh C., Turek P., Ziessel R., Inorg. Chem.
+                            (soumis)</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB54">
+                    <ce:label>[54]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>J.F.W</ce:given-name>
+                                    <ce:surname>Keana</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Chem. Rev.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>78</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1978</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>37</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB55">
+                    <ce:label>[55]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Dugas</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Keroak</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Ptak</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Can. J. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>62</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1984</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>489</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB56">
+                    <ce:label>[56]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>J.F.W</ce:given-name>
+                                    <ce:surname>Keana</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J</ce:given-name>
+                                    <ce:surname>Cuomo</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>L</ce:given-name>
+                                    <ce:surname>Lex</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>S.E</ce:given-name>
+                                    <ce:surname>Seyedrazai</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Org. Chem.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>48</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1983</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2647</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB57">
+                    <ce:label>[57]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Sosnovsky</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J</ce:given-name>
+                                    <ce:surname>Lukszo</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P.L</ce:given-name>
+                                    <ce:surname>Gutierrez</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Scheffler</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Z. Naturforsch.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>42</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1987</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>376</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB58">
+                    <ce:label>[58]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Ulrich</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Turek</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>A</ce:given-name>
+                                    <ce:surname>De Cian</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>J</ce:given-name>
+                                    <ce:surname>Fischer</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. Chem. Comm.</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1996</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2461</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB59">
+                    <ce:label>[59]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Turek P., Ulrich G., Ziessel R., r&#x00E9;sultats non
+                            publi&#x00E9;s</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB60">
+                    <ce:label>[60]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Sosnovsky</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>M</ce:given-name>
+                                    <ce:surname>Konieczny</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Synthesis</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1977</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>619</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB61">
+                    <ce:label>[61]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>G</ce:given-name>
+                                    <ce:surname>Ulrich</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>P</ce:given-name>
+                                    <ce:surname>Turek</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Ziessel</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Tetrahedron Lett.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>37</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>1996</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>8755</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB62">
+                    <ce:label>[62]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>K</ce:given-name>
+                                    <ce:surname>Araki</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>R</ce:given-name>
+                                    <ce:surname>Nakamura</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>H</ce:given-name>
+                                    <ce:surname>Otsuka</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>S</ce:given-name>
+                                    <ce:surname>Shinkai</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>J. Chem. Soc. Chem. Comm.</sb:maintitle>
+                                    </sb:title>
+                                </sb:series>
+                                <sb:date>1995</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>2121</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB63">
+                    <ce:label>[63]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Stroh C., Turek P., Ziessel R., Inorg. Chem
+                            (soumis)</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+            </ce:bibliography-sec>
+        </ce:bibliography>
+    </tail>
+</converted-article>

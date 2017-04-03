@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<?Pub EntList alpha amp beta bull cir cirf copy delta dtri dtrif gamma kappa mdash mu ndash omega pi plusmn psi rArr rho sect squ squf squshf star starf trade utri utrif?>
+<!DOCTYPE article PUBLIC "-//NPG//DTD XML Article//EN" "NPG_XML_Article.dtd" [
+<!ENTITY figf1 PUBLIC "-//NatureAmerica//FICI 47237//EN" "//snapple/web_d/web/npg/nature/journal/v402/n6764/images/402871aa.eps.2.gif" NDATA ITEM>
+<!ENTITY figf2 PUBLIC "-//NatureAmerica//FICI 47238//EN" "//snapple/web_d/web/npg/nature/journal/v402/n6764/images/402871ab.eps.2.gif" NDATA ITEM>
+]>
+<article id="47235" language="eng" publish="issue" relation="no" origsrc="yes">
+    <!--402871A0-->
+    <pubfm>
+        <jtl>Nature</jtl>
+        <vol>402</vol>
+        <iss>6764</iss>
+        <idt>19991223</idt>
+        <categ id="lt"/>
+        <pp>
+            <spn>871</spn>
+            <epn>873</epn>
+            <cnt>3</cnt>
+        </pp>
+        <issn type="print">0028-0836</issn>
+        <cpg>
+            <cpy>1999</cpy>
+            <cpn>Macmillian Magazines Ltd.</cpn>
+        </cpg>
+        <doi>10.1038/47235</doi>
+    </pubfm>
+    <fm>
+        <atl>Seismic anisotropy of the Earth's inner core resulting from flow induced by Maxwell stresses</atl>
+        <aug>
+            <cau>
+                <fnm>Shun-ichiro</fnm>
+                <snm>Karato</snm>
+                <inits>S-i</inits>
+                <corf rid="c1"/>
+            </cau>
+            <aff><org>Department of Geology and Geophysics, University of Minnesota</org>, <cty>Minneapolis</cty>, <st>Minnesota</st>
+                <zip>55455</zip>, <cny>USA</cny></aff>
+            <caff><coid id="c1"/>Correspondence and requests for materials should be addressed to the author (e-mail: <email>karato&commat;tc.umn.edu</email>).</caff>
+        </aug>
+        <hst>
+            <re year="1999" month="03" day="16"/>
+            <acc year="1999" month="11" day="01"/>
+        </hst>
+    </fm>
+    <bdy>
+        <fp>
+            <p>Seismological observations indicate that the inner core of the Earth is elastically anisotropic<bibr rid="b1"/>. Anisotropic structures are likely to be formed by dynamic processes and
+                therefore such observations have the potential to provide constraints on flow in the inner core and on the geodynamo itself. But in addition to the difficulties in estimating the
+                relevant physical properties of iron under inner-core conditions<bibr rid="b2 b3 b4"/>, even the macroscopic processes responsible for generating seismic anisotropy in this region have
+                yet to be determined<bibr rid="b5 b6 b7 b8 b9"/>. As a result, the geodynamic significance of seismic anisotropy in the inner core has remained unknown. Here I propose&mdash;based on
+                geodynamic and mineral physics considerations&mdash;that flow induced by the stress due to the magnetic field, the Maxwell stress, near the inner-core boundary produces an axisymmetric
+                fabric responsible for the observed seismic anisotropy. The resultant seismic anisotropy reflects the geometry of the magnetic field near the inner-core boundary and therefore
+                seismological observations might provide constraints on the geodynamo. This flow also causes non-uniform release of energy at the inner-core boundary, associated with solidification
+                and melting which may affect the pattern of convection in the outer core.</p>
+        </fp>
+        <p>The seismic anisotropy of the Earth's inner core<bibr rid="b1"/> and the rotation of the inner core with respect to the mantle (&ldquo;super-rotation&rdquo;)<bibr rid="b10 b11"/> suggest
+            that this central portion of our planet is dynamically active. The super-rotation and the observed nearly axisymmetric seismic anisotropy suggest an important interaction between the inner
+            and the outer core. Super-rotation is considered to be due to the interaction between the inner and the outer core through the Maxwell stress<bibr rid="b12 b13"/>, but there has been no
+            consensus as to the likely macroscopic processes that could cause seismic anisotropy. Here I will review some of the previous models of anisotropy in the inner core, and then show that the
+            Maxwell stress could also play a critical role in the formation of the anisotropic fabric in the inner core that causes seismic anisotropy.</p>
+        <p>As theoretical analysis indicates an effective draining of possible melt from the inner core<bibr rid="b14"/>, the most likely cause of seismic anisotropy in the inner core is the lattice
+            preferred orientation (LPO) of iron. In identifying likely macroscopic processes of anisotropic structure formation by LPO, it is important to appreciate that large-strain deformation
+            and/or the long-term action of stress are needed for the development of significant LPO. A plausible macroscopic process must also explain the nearly axial symmetry of anisotropy.</p>
+        <p>Some previous studies suggested that deformation-induced fabric (that is, LPO) of iron crystals due to thermal convection is the origin of seismic anisotropy<bibr rid="b5 b15"/>, in much
+            the same way as in the upper mantle. However, theoretical analysis of the energy budget and heat transfer strongly indicates that thermal convection is unlikely in the inner core, because
+            of a low concentration of heat-generating elements and the efficient thermal conduction<bibr rid="b16 b17"/>. Furthermore, the axial symmetry of anisotropy is not readily explained by this
+            model.</p>
+        <p>An alternative model is the texturing of iron crystals during solidification from the liquid outer core<bibr rid="b6 b7"/>. Although this model can explain the axial symmetry of anisotropy,
+            a major problem of this model is that such a texture is likely to be modified by large-strain plastic flow in the central portions of the inner core, if the inner core&nbsp;has a low
+            viscosity as suggested by mineral physics<bibr rid="b18"/> and geodynamic considerations<bibr rid="b19"/>.</p>
+        <p>Gravitational interaction of the inner core with the mantle may cause plastic strain which may be responsible for seismic anisotropy in the inner core<bibr rid="b8"/>. However, this is
+            unlikely to be a dominant mechanism for seismic anisotropy for two reasons. First, Buffett<bibr rid="b19"/> showed that the stress due to this interaction must be relaxed quickly
+            (&sim;1&thinsp;yr), and that the average stress due to this interaction is &sim;10<super>3</super>&thinsp;Pa or less (corresponding to a torque of
+            &sim;10<super>19</super>&thinsp;N&thinsp;m or less), so that the net effects of this force will not be large. Second, even if the magnitude of this stress was comparable to or larger than
+            stresses due to other processes, the magnitude of the net strain is not large (&sim;10<super>-4</super>). Furthermore, the strain in each cycle of rotation of the inner core with respect
+            to the mantle is not cumulative, so the total contribution of this force to the production of the LPO will not be very large.</p>
+        <p>Yoshida <i>et al.</i><bibr rid="b9"/> proposed that the stress due to anisotropic growth of the inner core causes fabric through stress-induced recrystallization. The stress due to this
+            process is proportional to the viscosity as&nbsp;&sim;&eta;<i>u</i>/<i>a</i> (here &eta; is the viscosity of the inner core, <i>u</i> is the rate of inner-core growth; and <i>a</i> is the
+            radius of the inner core). Using the viscosity estimated from mineral physics and geodynamic considerations<bibr rid="b18 b19"/> (<f>10<sup location="post" arrange="compact">15</sup> &lt;
+                &eta; (Pa&thinsp;s) &lt; 10<sup location="post" arrange="compact">17</sup></f>), the stress associated with this process would be <f>&sigma; &ap; 10<sup location="post"
+                    arrange="compact">-2</sup>&ndash;1&thinsp;Pa</f>; under such a stress, the alignment of minerals to form anisotropic structure would take an exceedingly long time, greater than the
+            age of the Earth.</p>
+        <p>Another important source for stress that could last throughout most of the Earth's history is the Maxwell stress<bibr rid="b20"/> caused by the magnetic field <b>B</b>, <f>&sigma;<inf
+                    location="post" arrange="compact"><italic>ij</italic></inf> = [<italic>B</italic><inf location="post" arrange="compact"><italic>i</italic></inf><italic>B</italic><inf
+                    location="post" arrange="compact"><italic>j</italic></inf> - (1/2)&delta;<inf location="post" arrange="compact"><italic>ij</italic></inf>&verbar;<italic>B</italic>&verbar;<sup
+                    location="post" arrange="compact">2</sup>]/&mu;<inf location="post" arrange="compact">0</inf></f> (here &mu;<sub>0</sub> is the magnetic permeability of the vacuum,
+                    &delta;<sub><i>ij</i></sub> is Kronecker's delta), or equivalently the Lorentz force <f><italic>f</italic> = (1/&mu;<inf location="post" arrange="compact"
+                    >0</inf>)curl&thinsp;<bold>B</bold> &times; <bold>B</bold></f>. The importance of the magnetic field in the exertion of forces on the inner core has been recognized in relation to
+            the super-rotation which may be caused by the balance of magnetic torque, <f>&Gamma; = (&int;<italic>B</italic><inf location="post" arrange="compact"
+                    ><italic>r</italic></inf><italic>B</italic><inf location="post" arrange="compact">&phis;</inf><italic>r</italic>&thinsp;sin&thinsp;&thetas;d<italic>S</italic>)/&micro;<inf
+                    location="post" arrange="compact">0</inf></f>, with the torque due to viscous force<bibr rid="b12 b13"/>, where <i>S</i> is surface area and <i>r</i> is the distance from the
+            centre. In this case, the product of radial field (poloidal field, <i>B</i><sub><i>r</i></sub>) and zonal (toroidal) field (<i>B</i><sub>&phis;</sub>) gives rise to a torque causing
+            rotation. When <i>B</i><sub>&phis;</sub> is stronger than <i>B</i><sub><i>r</i></sub>, as suggested by some dynamo models<bibr rid="b21 b22 b23 b24 b25"/>, the normal stress due to the
+            zonal (toroidal) field <f>&sigma;<inf location="post" arrange="compact"><italic>rr</italic></inf> = -<italic>B</italic><sup location="post" arrange="compact">2</sup><inf location="post"
+                    arrange="compact">&phis;</inf>/2&micro;<inf location="post" arrange="compact">0</inf></f> would be significantly larger than the stress causing super-rotation, and could play an
+            important role in the deformation of the inner core. For a range of estimates<bibr rid="b13"/> of <i>B</i><sub>&phis;</sub> (10<super>-2</super>&ndash;10<super>-1</super>&thinsp;T), the
+            stress magnitude is estimated to be <f>&sigma; &ap; 10<sup location="post" arrange="compact">2</sup>&ndash;10<sup location="post" arrange="compact">4</sup>&thinsp;Pa</f>. Notice that
+            although this stress could fluctuate, the flow caused by this stress will assume a nearly constant pattern&mdash;at least over an average period of constant magnetic polarity
+                (0.1&ndash;10&thinsp;Myr)<bibr rid="b23"/>, which is much longer than the timescale of fluctuation of gravitational force due to inner-core/mantle interaction
+                (&sim;10<super>2</super>&ndash;10<super>3</super>&thinsp;yr) (refs <bibrinl rid="b17">17</bibrinl>, <bibrinl rid="b18">18</bibrinl>). As a result, the magnitude of strain associated
+            with this process will be significantly larger than that due to deformation by gravitational interaction.</p>
+        <p>To investigate the nature of flow due to this stress, I consider a case where the zonal (toroidal) field dominates at the boundary of the inner and outer core. In this case, the Lorentz
+            force squeezes inner-core materials towards the rotation axis of the inner core, and moves materials from the regions of high stress to the regions of low stress (<figr rid="f1">Fig.
+                1</figr>). The materials that reach the low-stress regions will melt, and the materials that have been removed from the high-stress regions will be replaced by the solidification of
+            molten iron in the nearby regions. The heat released or absorbed by these processes is likely to be carried away quickly through the outer core relative to the rate of flow in the inner
+            core, because the outer-core materials have a much lower viscosity than the inner-core materials. In this case, the shape of the inner core is defined by the melting temperature of iron,
+            and will remain unchanged despite large flow.</p>
+        <p>I have calculated the flow field by solving the Stokes equation with appropriate boundary conditions. The boundary conditions for this&nbsp;problem are (1) no singularities at the centre of
+            the inner core,&nbsp;(2) no shear traction at the inner&ndash;outer core boundary (<f><italic>r</italic> = <italic>a</italic></f>, where <i>a</i> is the radius of the inner core) and
+            (3)&nbsp;the continuation of normal traction (&sigma;<sub><i>rr</i></sub>) at the inner&ndash;outer core boundary. I assume that the normal stress at the inner&ndash;outer core boundary is
+            determined by the Maxwell stress, &sigma;<sub>M</sub>(&thetas;, &phis;), thus, <f>&sigma;<inf location="post" arrange="compact"><italic>rr</italic></inf>(<italic>a</italic>, &thetas;,
+                &phis;) = -<italic>B</italic><sup location="post" arrange="compact">2</sup>/2&mu;<inf location="post" arrange="compact">0</inf> &equiv; -&sigma;<inf location="post" arrange="compact"
+                    >M</inf>(&thetas;, &phis;)</f> where the zonal (toroidal) field <i>B</i><sub>&phis;</sub> is written as <i>B</i> for simplicity, &thetas; is co-latitude and &phis; is
+            longitude.</p>
+        <p>To illustrate the basic physics, I consider simple cases where the&nbsp;Maxwell stress has the following form, <f>&sigma;<inf location="post" arrange="compact">M</inf>(&thetas;, &phis;) =
+                    <italic>A</italic>(1 - cos 2&thetas;)</f> or <f>&sigma;<inf location="post" arrange="compact">M</inf>(&thetas;, &phis;) = <italic>A</italic>(1 - cos 4&thetas;)</f>, corresponding
+            to the symmetric (<f><italic>B</italic> &prop; sin &thetas;</f>) or antisymmetric (<f><italic>B</italic> &prop; sin 2&thetas;</f>) toroidal field, respectively. The flow patterns
+            corresponding to these patterns of Maxwell stress are shown in <figr rid="f2">Fig. 2</figr>. The symmetric field causes a flow pattern dominated by the degree 2 pattern: flow from
+            equatorial regions to the polar regions. The antisymmetric field causes a flow pattern that contains both degree 2 and 4 components, but because the field is strong near the polar regions,
+            the flow pattern is dominated by the flow from the polar regions to the equatorial regions. The stress magnitude is <f>&sim;<italic>A</italic> &ap; 10<sup location="post" arrange="compact"
+                    >3</sup>&thinsp;Pa</f>. The velocity of this flow is of the order of <f>&sim;<italic>aA</italic>/10&eta; &ap; 10<sup location="post" arrange="compact">-9</sup> - 10<sup
+                    location="post" arrange="compact">-7</sup>&thinsp;m&thinsp;s<sup location="post" arrange="compact">-1</sup></f>. Thus the timescale of the flow is
+                    <f>&sim;10&eta;/<italic>A</italic> &ap; 1&ndash;100&thinsp;Myr</f>. This timescale is comparable to (or somewhat greater than) the timescale of magnetic field polarity. When a
+            reversal occurs, there will be a short period (10<super>3</super>&ndash;10<super>4</super>&thinsp;yr; ref. <bibrinl rid="b23">23</bibrinl>) in which the magnetic field assumes very
+            different geometry, but the geometry of the Maxwell stress will be similar to that for the reversed magnetic polarity. Therefore the flow pattern will not be significantly affected by a
+            field reversal.</p>
+        <p>This Maxwell-stress-induced flow has two important consequences. First, the flow results in a large strain and hence could cause significant fabric (LPO) of inner-core materials. The
+            geometry of anisotropy is closely related to the geometry of the magnetic field near the inner&ndash;outer core boundary. The LPO due to this process has axial symmetry, regardless of the
+            actual mechanisms causing it. The seismic anisotropy caused by the flow depends on the microscopic mechanism of LPO and the elastic constants of iron. For the flow pattern caused by the
+            antisymmetric toroidal field which corresponds to the &alpha;&omega;-dynamo<bibr rid="b24"/> or the &alpha;<super>2</super>&omega;-dynamo<bibr rid="b25"/>, for example, the elastic
+            constants determined by Singh <i>et al.</i><bibr rid="b3"/> and the dominant prismatic slip along the <i>c</i>-axis are consistent with the seismological observation of the fast P-wave
+            velocity along the rotation axis. However, neither the elastic constants nor the dominant slip systems in inner-core materials are well constrained at present.</p>
+        <p>Second, the flow causes non-uniform energy release at the inner&ndash;outer core boundary due to the melting or solidification of iron. Because the flow velocity in this model
+                (&sim;10<super>-9</super>&ndash;10<super>-7</super>&thinsp;m&thinsp;s<super>-1</super>) is comparable to (or faster than) the likely growth velocity of the inner core
+                (&sim;10<super>-10</super>&thinsp;m&thinsp;s<super>-1</super>; ref. <bibrinl rid="b17">17</bibrinl>), the amount of latent heat release due to this flow can be very large. This
+            heterogeneous heat release at the inner&ndash;outer core boundary is likely to have an important effect on the convection pattern in the outer core: hence the inner core may have an
+            important influence on the geodynamo through thermal effects, as well as through the effects of geometrical control of the convection pattern<bibr rid="b24"/>. For example, the flow
+            corresponding to the antisymmetric magnetic field causes excess heat generation (or absorption) at the inner&ndash;outer core boundary that has 2&thetas; and 4&thetas; terms, and hence two
+            peaks: one major peak (heat flow maximum) at polar regions and a minor peak at the equatorial region. Such a heat flow pattern is consistent with some dynamo calculations<bibr rid="b25"
+            />.</p>
+        <p>The present model suggests a strong link between the dynamics of the inner and outer core through mechanical coupling via the Maxwell stress. The Maxwell-stress-induced inner-core dynamics
+            provide an explanation for both seismic anisotropy and super-rotation of the inner core<bibr rid="b12 b13"/>, and suggests possible effects on geodynamo processes. However, several
+            problems remain. First, mineral physics data such as the phase diagram<bibr rid="b26"/>, elastic constants<bibr rid="b2 b3"/> and the mechanisms of deformation and recrystallization in
+            iron in the inner core<bibr rid="b4"/> are still poorly constrained. Further studies on these mineral physics issues are required to explore the geodynamic implications of seismic
+            anisotropy. Second, it is also important to investigate the effects of large energy release at the inner&ndash;outer core boundary on the convection, and hence on the geodynamo processes
+            in the outer core. Thermal boundary conditions at the inner&ndash;outer core boundary, as well as at the core&ndash;mantle boundary<bibr rid="b27"/>, may be important in the geodynamo, and
+            hence the core may not be a slave of the mantle. In this regard, further studies of the structure and dynamics of the boundary layer between the inner core and outer core are critical to
+            our understanding of the mechanisms of feedback between the flow in the inner core and convection in the outer core. Strong feedback may modify the flow pattern in the outermost regions of
+            the inner core that corresponds to a given magnetic field. Such a study may provide an explanation for the sharp transition from an isotropic (shallow) layer to an anisotropic (deep) layer
+            found by Song and Helmberger<bibr rid="b28"/>. Third, there are considerable uncertainties in the magnitude of the magnetic field in the boundary between the inner and the outer cores<bibr
+                rid="b23 b24"/>. A significantly smaller magnetic field than assumed here would result in much weaker flow in the inner core. If this was the case, other processes&mdash;such as the
+            flow caused by gravitational force<bibr rid="b19"/>&mdash;may make important additional contributions to anisotropy, but the details of these processes have not been investigated.</p>
+    </bdy>
+    <bm>
+        <objects>
+            <fig id="f1" type="bmp" entname="figf1">
+                <!--402871AA.001-->
+                <figtl>A schematic diagram showing the structure and dynamics of the inner core.</figtl>
+                <caption>
+                    <p>The dynamics of the outer portion of the inner core (dark-green, thin layer) is dominated by the&nbsp;direct effects of the Lorentz force (the Maxwell stress). The dynamics in
+                        the deep portions are controlled by the force balance between the pressure gradient and the viscous force, with a constraint imposed by the boundary conditions near the surface
+                        of the inner core which are dominated by the Maxwell stress. The Lorentz force (the Maxwell stress) caused by the toroidal magnetic field squeezes inner-core materials towards
+                        the rotation axis, and causes a flow from strong-field regions to weak-field regions. The flow pattern is sensitive to the geometry of the magnetic field (see <figr rid="f2"
+                            >Fig. 2</figr>). Black arrows, Lorentz force; red arrows, flow directions; blue lines with arrows, magnetic field lines.</p>
+                </caption>
+            </fig>
+            <fig id="f2" type="bmp" entname="figf2">
+                <!--402871AB.002-->
+                <figtl>Flow field caused by the magnetic field at the boundary between the inner and the outer core.</figtl>
+                <caption>
+                    <p>Flow velocity vectors in a meridional plane are shown. The geometry of the flow field is determined by the geometry of the magnetic field at the inner&ndash;outer core boundary.
+                        The flow field corresponding to the Maxwell stress of (panel <b>a</b>) <f>&sigma;<inf location="post" arrange="compact">M</inf>(&thetas;, &phis;) = <italic>A</italic>(1 -
+                            cos2&thetas;)</f> (corresponding to the symmetric toroidal field) and (panel <b>b</b>) <f>&sigma;<inf location="post" arrange="compact">M</inf>(&thetas;, &phis;) =
+                                <italic>A</italic>(1 - cos 4&thetas;)</f> (corresponding to the antisymmetric toroidal field) are shown.</p>
+                </caption>
+            </fig>
+        </objects>
+        <ack>
+            <p>I thank Y. Abe, S. Banerjee, M. Bergman, J. Bloxham, B. Buffett, F. Busse, R. Coe, K.&nbsp;Creager, D. Gubbins, R. Merrill, F. Stacey and D. Stevenson for discussions. This work was
+                supported by Alexander von Humboldt Stiftung.</p>
+        </ack>
+        <bibl>
+            <bib id="b1">
+                <reftxt><refau><snm>Song</snm>,<fnm>X. D.</fnm></refau>
+                    <atl>Anisotropy of the Earth's inner core.</atl>
+                    <jtl>Rev. Geophys.</jtl>
+                    <vid>35</vid>, <ppf>297</ppf>&ndash;<ppl>313</ppl> (<cd year="1997">1997</cd>).</reftxt>
+            </bib>
+            <bib id="b2">
+                <reftxt><refau><snm>Stixrude</snm>,<fnm>L.</fnm></refau> &amp; <refau><snm>Cohen</snm>,<fnm>R. E.</fnm></refau>
+                    <atl>High-pressure elasticity of iron and anisotropy of Earth's inner core.</atl>
+                    <jtl>Science</jtl>
+                    <vid>267</vid>, <ppf>1972</ppf>&ndash;<ppl>1975</ppl> (<cd year="1995">1995</cd>).</reftxt>
+            </bib>
+            <bib id="b3">
+                <reftxt><refau><snm>Singh</snm>,<fnm>A. K.</fnm></refau>, <refau><snm>Mao</snm>,<fnm>H-K.</fnm></refau>, <refau><snm>Shu</snm>,<fnm>J.</fnm></refau> &amp;
+                            <refau><snm>Hemley</snm>,<fnm>R. J.</fnm></refau>
+                    <atl>Estimation of single-crystal moduli from X-ray diffraction at high pressure: application to FeO and iron.</atl>
+                    <jtl>Phys. Rev. Lett.</jtl>
+                    <vid>80</vid>, <ppf>2157</ppf>&ndash;<ppl>2160</ppl> (<cd year="1998">1998</cd>).</reftxt>
+            </bib>
+            <bib id="b4">
+                <reftxt><refau><snm>Poirier</snm>,<fnm>J-P.</fnm></refau> &amp; <refau><snm>Price</snm>,<fnm>G. D.</fnm></refau>
+                    <atl>Primary slip system of &epsi;-iron and anisotropy of the Earth's inner core.</atl>
+                    <jtl>Phys. Planet. Inter.</jtl>
+                    <vid>110</vid>, <ppf>147</ppf>&ndash;<ppl>156</ppl> (<cd year="1999">1999</cd>).</reftxt>
+            </bib>
+            <bib id="b5">
+                <reftxt><refau><snm>Jeanloz</snm>,<fnm>R.</fnm></refau> &amp; <refau><snm>Wenk</snm>,<fnm>H-R.</fnm></refau>
+                    <atl>Convection and anisotropy of the inner core.</atl>
+                    <jtl>Geophys. Res. Lett.</jtl>
+                    <vid>15</vid>, <ppf>72</ppf>&ndash;<ppl>75</ppl> (<cd year="1988">1988</cd>).</reftxt>
+            </bib>
+            <bib id="b6">
+                <reftxt><refau><snm>Karato</snm>,<fnm>S.</fnm></refau>
+                    <atl>Inner core anisotropy due to magnetic field-induced preferred orientation of iron.</atl>
+                    <jtl>Science</jtl>
+                    <vid>262</vid>, <ppf>1708</ppf>&ndash;<ppl>1711</ppl> (<cd year="1993">1993</cd>).</reftxt>
+            </bib>
+            <bib id="b7">
+                <reftxt><refau><snm>Bergman</snm>,<fnm>M. I.</fnm></refau>
+                    <atl>Measurements of elastic anisotropy due to solidification texturing and the implications for the Earth's inner core.</atl>
+                    <jtl>Nature</jtl>
+                    <vid>389</vid>, <ppf>60</ppf>&ndash;<ppl>63</ppl> (<cd year="1997">1997</cd>).</reftxt>
+                <natlink extrefid="00000"/>
+                <!--389060a0-->
+            </bib>
+            <bib id="b8">
+                <reftxt><refau><snm>Buffett</snm>,<fnm>B. A.</fnm></refau> &amp; <refau><snm>Creager</snm>,<fnm>K. C.</fnm></refau>
+                    <atl>Rotation and deformation of the inner core.</atl>
+                    <jtl>Eos</jtl>
+                    <vid>79</vid>, <ppf>S218</ppf>&ndash;<ppl>S219</ppl> (<cd year="1998">1998</cd>).</reftxt>
+            </bib>
+            <bib id="b9">
+                <reftxt><refau><snm>Yoshida</snm>,<fnm>S.</fnm></refau>, <refau><snm>Sumita</snm>,<fnm>I.</fnm></refau> &amp; <refau><snm>Kumazawa</snm>,<fnm>M.</fnm></refau>
+                    <atl>Growth model of the inner core coupled with outer core dynamics and the resultant elastic anisotropy.</atl>
+                    <jtl>J. Geophys. Res.</jtl>
+                    <vid>101</vid>, <ppf>28085</ppf>&ndash;<ppl>28103</ppl> (<cd year="1996">1996</cd>).</reftxt>
+            </bib>
+            <bib id="b10">
+                <reftxt><refau><snm>Song</snm>,<fnm>X. D.</fnm></refau> &amp; <refau><snm>Richards</snm>,<fnm>P. G.</fnm></refau>
+                    <atl>Seismological evidence for the rotation of the Earth's inner core.</atl>
+                    <jtl>Nature</jtl>
+                    <vid>382</vid>, <ppf>221</ppf>&ndash;<ppl>224</ppl> (<cd year="1996">1996</cd>).</reftxt>
+                <natlink extrefid="00000"/>
+                <!--382221a0-->
+            </bib>
+            <bib id="b11">
+                <reftxt><refau><snm>Su</snm>,<fnm>W. J.</fnm></refau>, <refau><snm>Dziewonski</snm>,<fnm>A. M.</fnm></refau> &amp; <refau><snm>Jeanloz</snm>,<fnm>R.</fnm></refau>
+                    <atl>Planet within a planet: rotation of the inner core of Earth.</atl>
+                    <jtl>Science</jtl>
+                    <vid>274</vid>, <ppf>1883</ppf>&ndash;<ppl>1887</ppl> (<cd year="1996">1996</cd>).</reftxt>
+            </bib>
+            <bib id="b12">
+                <reftxt><refau><snm>Glatzmaier</snm>,<fnm>G. A.</fnm></refau> &amp; <refau><snm>Roberts</snm>,<fnm>P. H.</fnm></refau>
+                    <atl>Rotation and magnetism of the Earth's inner core.</atl>
+                    <jtl>Science</jtl>
+                    <vid>274</vid>, <ppf>1887</ppf>&ndash;<ppl>1891</ppl> (<cd year="1996">1996</cd>).</reftxt>
+            </bib>
+            <bib id="b13">
+                <reftxt><refau><snm>Aurnou</snm>,<fnm>J.</fnm></refau>, <refau><snm>Brito</snm>,<fnm>D.</fnm></refau> &amp; <refau><snm>Olson</snm>,<fnm>P.</fnm></refau>
+                    <atl>Anomalous rotation of the inner core and the toroidal magnetic field.</atl>
+                    <jtl>J. Geophys. Res.</jtl>
+                    <vid>103</vid>, <ppf>9721</ppf>&ndash;<ppl>9738</ppl> (<cd year="1998">1998</cd>).</reftxt>
+            </bib>
+            <bib id="b14">
+                <reftxt><refau><snm>Sumita</snm>,<fnm>I.</fnm></refau>, <refau><snm>Yoshida</snm>,<fnm>S.</fnm></refau>, <refau><snm>Kumazawa</snm>,<fnm>M.</fnm></refau> &amp;
+                            <refau><snm>Hamano</snm>,<fnm>Y.</fnm></refau>
+                    <atl>A model for sedimentary compaction of a viscous medium and its application to inner-core growth.</atl>
+                    <jtl>Geophys. J. Int.</jtl>
+                    <vid>124</vid>, <ppf>502</ppf>&ndash;<ppl>524</ppl> (<cd year="1996">1996</cd>).</reftxt>
+            </bib>
+            <bib id="b15">
+                <reftxt><refau><snm>Baumgardner</snm>,<fnm>J. R.</fnm></refau>, <refau><snm>Tome</snm>,<fnm>C. N.</fnm></refau>, <refau><snm>Lebensohn</snm>,<fnm>R.</fnm></refau> &amp;
+                            <refau><snm>Wenk</snm>,<fnm>H-R.</fnm></refau>
+                    <atl>Inner core anisotropy: texture as an alternative to a single crystal.</atl>
+                    <jtl>Eos</jtl>
+                    <vid>78</vid>, <ppf>F458</ppf> (<cd year="1997">1997</cd>).</reftxt>
+            </bib>
+            <bib id="b16">
+                <reftxt><refau><snm>Yukutake</snm>,<fnm>T.</fnm></refau>
+                    <atl>Implausibility of thermal convection in the Earth's solid inner core.</atl>
+                    <jtl>Phys. Earth Planet. Inter.</jtl>
+                    <vid>108</vid>, <ppf>1</ppf>&ndash;<ppl>13</ppl> (<cd year="1998">1998</cd>).</reftxt>
+            </bib>
+            <bib id="b17">
+                <reftxt><refau><snm>Buffett</snm>,<fnm>B. A.</fnm></refau> in <btl>Mineral Physics and Seismic Tomography</btl> (eds Karato, S. <i>et al.</i>) (American Geophysical Union, Washington
+                    DC, in the press).</reftxt>
+            </bib>
+            <bib id="b18">
+                <reftxt><refau><snm>Frost</snm>,<fnm>H. J.</fnm></refau> &amp; <refau><snm>Ashby</snm>,<fnm>M. F.</fnm></refau>
+                    <btl>Deformation Mechanism Maps</btl> (Pergamon, Oxford, <cd year="1982">1982</cd>).</reftxt>
+            </bib>
+            <bib id="b19">
+                <reftxt><refau><snm>Buffett</snm>,<fnm>B. A.</fnm></refau>
+                    <atl>Geodynamic estimates of the viscosity of the Earth's inner core.</atl>
+                    <jtl>Nature</jtl>
+                    <vid>388</vid>, <ppf>571</ppf>&ndash;<ppl>573</ppl> (<cd year="1997">1997</cd>).</reftxt>
+                <natlink extrefid="00000"/>
+                <!--388571a0-->
+            </bib>
+            <bib id="b20">
+                <reftxt><refau><snm>Chandrasekhar</snm>,<fnm>S.</fnm></refau>
+                    <btl>Hydrodynamic and Hydromagnetic Stability</btl> (Oxford Univ. Press, <cd year="1961">1961</cd>).</reftxt>
+            </bib>
+            <bib id="b21">
+                <reftxt><refau><snm>Glatzmaier</snm>,<fnm>G. A.</fnm></refau> &amp; <refau><snm>Roberts</snm>,<fnm>P. H.</fnm></refau>
+                    <atl>A three-dimensional convective dynamo solution with rotating and finally conducting inner core and mantle.</atl>
+                    <jtl>Phys. Earth Planet. Inter.</jtl>
+                    <vid>91</vid>, <ppf>63</ppf>&ndash;<ppl>75</ppl> (<cd year="1995">1995</cd>).</reftxt>
+            </bib>
+            <bib id="b22">
+                <reftxt><refau><snm>Kageyama</snm>,<fnm>A.</fnm></refau> &amp; <refau><snm>Sato</snm>,<fnm>T.</fnm></refau>
+                    <atl>Generation mechanism of a dipole field by a magnetohydrodynamic dynamo.</atl>
+                    <jtl>Phys. Rev. E</jtl>
+                    <vid>55</vid>, <ppf>4617</ppf>&ndash;<ppl>4626</ppl> (<cd year="1997">1997</cd>).</reftxt>
+            </bib>
+            <bib id="b23">
+                <reftxt><refau><snm>Merrill</snm>,<fnm>R. T.</fnm></refau>, <refau><snm>McElhinney</snm>,<fnm>M. W.</fnm></refau> &amp; <refau><snm>McFaddon</snm>,<fnm>P. L.</fnm></refau>
+                    <btl>The Magnetic Field of the Earth</btl> (Academic, San Diego, <cd year="1998">1998</cd>).</reftxt>
+            </bib>
+            <bib id="b24">
+                <reftxt><refau><snm>Olson</snm>,<fnm>P.</fnm></refau> &amp; <refau><snm>Glatzmaier</snm>,<fnm>G. A.</fnm></refau>
+                    <atl>Magnetoconvection in a rotating spherical shell: structure of flow in the outer core.</atl>
+                    <jtl>Phys. Earth Planet. Inter.</jtl>
+                    <vid>92</vid>, <ppf>109</ppf>&ndash;<ppl>118</ppl> (<cd year="1995">1995</cd>).</reftxt>
+            </bib>
+            <bib id="b25">
+                <reftxt><refau><snm>Olson</snm>,<fnm>P.</fnm></refau>, <refau><snm>Christensen</snm>,<fnm>U.</fnm></refau> &amp; <refau><snm>Glatzmaier</snm>,<fnm>G. A.</fnm></refau>
+                    <atl>Numerical modeling of the geodynamo: Mechanisms of field generation and equilibration.</atl>
+                    <jtl>J. Geophys. Res.</jtl>
+                    <vid>104</vid>, <ppf>10383</ppf>&ndash;<ppl>10404</ppl> (<cd year="1999">1999</cd>).</reftxt>
+            </bib>
+            <bib id="b26">
+                <reftxt><refau><snm>Yoo</snm>,<fnm>C. S.</fnm></refau>, <refau><snm>Akella</snm>,<fnm>J.</fnm></refau>, <refau><snm>Campbell</snm>,<fnm>A. J.</fnm></refau>,
+                            <refau><snm>Mao</snm>,<fnm>H.-K.</fnm></refau> &amp; <refau><snm>Hemley</snm>,<fnm>R. J.</fnm></refau>
+                    <atl>Phase diagram of iron by in-situ X-ray diffraction: implications for Earth's core.</atl>
+                    <jtl>Science</jtl>
+                    <vid>270</vid>, <ppf>1473</ppf>&ndash;<ppl>1475</ppl> (<cd year="1995">1995</cd>).</reftxt>
+            </bib>
+            <bib id="b27">
+                <reftxt><refau><snm>Olson</snm>,<fnm>P.</fnm></refau> &amp; <refau><snm>Glatzmaier</snm>,<fnm>G. A.</fnm></refau>
+                    <atl>Magnetoconvection and thermal coupling of the Earth's core and mantle.</atl>
+                    <jtl>Phil. Trans. R. Soc. Lond. A</jtl>
+                    <vid>354</vid>, <ppf>1413</ppf>&ndash;<ppl>1424</ppl> (<cd year="1996">1996</cd>).</reftxt>
+            </bib>
+            <bib id="b28">
+                <reftxt><refau><snm>Song</snm>,<fnm>X.</fnm></refau> &amp; <refau><snm>Helmberger</snm>,<fnm>D. V.</fnm></refau>
+                    <atl>Seismic evidence for an inner core transition zone.</atl>
+                    <jtl>Science</jtl>
+                    <vid>282</vid>, <ppf>924</ppf>&ndash;<ppl>927</ppl> (<cd year="1998">1998</cd>).</reftxt>
+            </bib>
+        </bibl>
+    </bm>
+</article>

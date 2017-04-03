@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "art452.dtd" [
+<!ENTITY gr1 SYSTEM "gr1" NDATA IMAGE><!ENTITY gr2 SYSTEM "gr2" NDATA IMAGE><!ENTITY gr3 SYSTEM "gr3" NDATA IMAGE><!ENTITY gr4 SYSTEM "gr4" NDATA IMAGE><!ENTITY gr5 SYSTEM "gr5" NDATA IMAGE>]>
+<converted-article version="4.5.2" docsubtype="fla" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+<item-info>
+<jid>BBAPRO</jid>
+<aid>35923</aid>
+<ce:pii>S0167-4838(99)00096-5</ce:pii><ce:doi>10.1016/S0167-4838(99)00096-5</ce:doi>
+<ce:copyright type="full-transfer" year="1999">Elsevier Science B.V.</ce:copyright></item-info>
+<ce:floats><ce:figure id="FIG1">
+<ce:label>Fig. 1</ce:label>
+<ce:caption>
+<ce:simple-para>Near (A) and far UV CD spectra (B) of ribosomal S6 protein from <ce:italic>Thermus thermophilus</ce:italic> (1) and its permuted variants <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> (2) and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> (3) obtained in direct and fusion expression systems, respectively. Spectra of completely unfolded by 8 M GdmCl protein are also shown (4). Measurements were carried out at 25&#x00B0;C in 20 mM sodium phosphate buffer, pH 7.4. Protein concentration was 1.0 mg/ml. Cell pathlength was 10.0 and 0.19 mm, for near and far UV CD measurements, respectively.</ce:simple-para></ce:caption>
+<ce:link locator="gr1" /></ce:figure><ce:figure id="FIG2">
+<ce:label>Fig. 2</ce:label>
+<ce:caption>
+<ce:simple-para>Tryptophan fluorescence spectra measured for <ce:italic>wt</ce:italic>S6 (1) protein, its permuted variants <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> (2) and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> (3), as well as for the completely unfolded by 8 M GdmCl protein (4). Measurements were carried out at 25&#x00B0;C in 20 mM sodium phosphate buffer, pH 7.4. Protein concentration was 0.01 mg/ml. Cell pathlength was 10.0 mm. Fluorescence was excited at 290 nm.</ce:simple-para></ce:caption>
+<ce:link locator="gr2" /></ce:figure><ce:figure id="FIG3">
+<ce:label>Fig. 3</ce:label>
+<ce:caption>
+<ce:simple-para><ce:sup>1</ce:sup>H-NMR spectra of <ce:italic>wt</ce:italic>S6 (1), <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> (2) and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> (3) proteins. Measurements were carried out at 30&#x00B0;C in 50 mM aqueous solution of ammonium citrate, pH 7.9, containing 10% D<ce:inf>2</ce:inf>O.</ce:simple-para></ce:caption>
+<ce:link locator="gr3" /></ce:figure><ce:figure id="FIG4">
+<ce:label>Fig. 4</ce:label>
+<ce:caption>
+<ce:simple-para>Excess heat capacity curves measured for <ce:italic>wt</ce:italic>S6 (1), <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> (2) and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> (3) proteins in 20 mM sodium phosphate buffer, pH 7.4. The protein concentration was &#x223C;2.1 mg/ml.</ce:simple-para></ce:caption>
+<ce:link locator="gr4" /></ce:figure><ce:figure id="FIG5">
+<ce:label>Fig. 5</ce:label>
+<ce:caption>
+<ce:simple-para>Urea-induced unfolding of <ce:italic>wt</ce:italic>S6 (1), <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> (2) and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> (3) proteins in 20 mM sodium phosphate buffer, pH 7.4. (A) Normalized unfolding curves determined from the denaturant-induced changes of Trp fluorescence spectrum of the proteins as the dependence of parameter <ce:italic>A</ce:italic> on urea concentration. Protein concentration was 0.01 mg/ml. Fluorescence was excited at 290 nm. (B) &#x0394;<ce:italic>G</ce:italic><ce:inf>fold</ce:inf> for <ce:italic>wt</ce:italic>S6, <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> proteins as a function of urea concentration. The experimental data were calculated from the data presented in A using <ce:cross-ref refid="FD1">Eq. 1</ce:cross-ref> of the text. The thermodynamic parameters estimated from these data are given in <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref>.</ce:simple-para></ce:caption>
+<ce:link locator="gr5" /></ce:figure><ce:table id="TBL1" colsep="0" rowsep="0" frame="topbot"><ce:label>Table 1</ce:label><ce:caption>
+<ce:simple-para>Thermodynamic parameters of urea-induced unfolding of <ce:italic>wt</ce:italic>S6, <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> proteins</ce:simple-para></ce:caption><tgroup cols="5"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<tbody><row rowsep="1"><entry>Protein</entry>
+<entry>[Urea]<ce:inf>1/2</ce:inf> (M)</entry>
+<entry>&#x0394;<ce:italic>G</ce:italic><ce:sup>H<ce:inf>2</ce:inf>O</ce:sup><ce:inf><ce:italic>fold</ce:italic></ce:inf> (kcal mol<ce:sup>&#x2212;1</ce:sup>)</entry>
+<entry><ce:italic>m</ce:italic> (kcal mol<ce:sup>&#x2212;1</ce:sup> M<ce:sup>&#x2212;1</ce:sup>)</entry>
+<entry>&#x0394;<ce:italic>&#x03BD;</ce:italic><ce:sup>eff</ce:sup></entry>
+</row>
+<row><entry><ce:italic>wt</ce:italic>S6</entry>
+<entry>8.68&#x00B1;0.04</entry>
+<entry>11.55&#x00B1;0.05</entry>
+<entry>1.33&#x00B1;0.05</entry>
+<entry>12.5&#x00B1;0.5</entry>
+</row>
+<row><entry><ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic></entry>
+<entry>5.18&#x00B1;0.04</entry>
+<entry>6.55&#x00B1;0.05</entry>
+<entry>1.27&#x00B1;0.05</entry>
+<entry>10.8&#x00B1;0.5</entry>
+</row>
+<row><entry><ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic></entry>
+<entry>4.69&#x00B1;0.04</entry>
+<entry>5.81&#x00B1;0.06</entry>
+<entry>1.24&#x00B1;0.05</entry>
+<entry>9.6&#x00B1;0.5</entry>
+</row>
+<row><entry></entry>
+<entry></entry>
+<entry></entry>
+<entry></entry>
+<entry></entry>
+</row>
+<row><entry>Natural protein</entry>
+<entry>&#x2013;</entry>
+<entry>5&#x003C;&#x0394;<ce:italic>G</ce:italic><ce:sup>H<ce:inf>2</ce:inf>O</ce:sup><ce:inf><ce:italic>fold</ce:italic></ce:inf>&#x003C;10</entry>
+<entry><ce:italic>m</ce:italic>>1</entry>
+<entry>N&#x2192;U<ce:cross-ref refid="TBLFN1A"><ce:sup>a</ce:sup></ce:cross-ref>: 8.9&#x00B1;2.0</entry>
+</row>
+<row><entry></entry>
+<entry></entry>
+<entry></entry>
+<entry></entry>
+<entry>MG&#x2192;U<ce:cross-ref refid="TBLFN1B"><ce:sup>b</ce:sup></ce:cross-ref>: 3.4&#x00B1;2.0</entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN1A">
+<ce:label>a</ce:label>
+<ce:note-para>Calculated for the natural protein of 11 kDa by <ce:cross-ref refid="FD4">Eq. 4</ce:cross-ref> <ce:cross-ref refid="BIB15">[15]</ce:cross-ref>, see the text.</ce:note-para></ce:table-footnote><ce:table-footnote id="TBLFN1B">
+<ce:label>b</ce:label>
+<ce:note-para>Calculated for the natural protein of 11 kDa by <ce:cross-ref refid="FD5">Eq. 5</ce:cross-ref> <ce:cross-ref refid="BIB15">[15]</ce:cross-ref>, see the text.</ce:note-para></ce:table-footnote></ce:table></ce:floats>
+<head>
+<ce:title>Structure and stability of recombinant protein depend on the extra N-terminal methionine residue: S6 permutein from direct and fusion expression systems</ce:title>
+<ce:author-group>
+<ce:author>
+<ce:given-name>Vladimir N</ce:given-name>
+<ce:surname>Uversky</ce:surname>
+<ce:cross-ref refid="AFF1"><ce:sup>a</ce:sup></ce:cross-ref><ce:cross-ref refid="AFF2"><ce:sup>b</ce:sup></ce:cross-ref><ce:cross-ref refid="CORR1">*</ce:cross-ref><ce:e-address>uversky@hydrogen.ucsc.edu</ce:e-address></ce:author>
+<ce:author>
+<ce:given-name>Ziedulla Kh</ce:given-name>
+<ce:surname>Abdullaev</ce:surname>
+<ce:cross-ref refid="AFF3"><ce:sup>c</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Alexander S</ce:given-name>
+<ce:surname>Arseniev</ce:surname>
+<ce:cross-ref refid="AFF3"><ce:sup>c</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Eduard V</ce:given-name>
+<ce:surname>Bocharov</ce:surname>
+<ce:cross-ref refid="AFF3"><ce:sup>c</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Dmitry A</ce:given-name>
+<ce:surname>Dolgikh</ce:surname>
+<ce:cross-ref refid="AFF3"><ce:sup>c</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Ramil F</ce:given-name>
+<ce:surname>Latypov</ce:surname>
+<ce:cross-ref refid="AFF4"><ce:sup>d</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Tatyana N</ce:given-name>
+<ce:surname>Melnik</ce:surname>
+<ce:cross-ref refid="AFF4"><ce:sup>d</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Konstantin S</ce:given-name>
+<ce:surname>Vassilenko</ce:surname>
+<ce:cross-ref refid="AFF4"><ce:sup>d</ce:sup></ce:cross-ref></ce:author>
+<ce:author>
+<ce:given-name>Mikhail P</ce:given-name>
+<ce:surname>Kirpichnikov</ce:surname>
+<ce:cross-ref refid="AFF3"><ce:sup>c</ce:sup></ce:cross-ref></ce:author><ce:affiliation id="AFF1"><ce:label>a</ce:label><ce:textfn>Institute for Biological Instrumentation, Russian Academy of Sciences, 142292 Pushchino, Moscow Region, Russia</ce:textfn></ce:affiliation>
+<ce:affiliation id="AFF2"><ce:label>b</ce:label><ce:textfn>Department of Chemistry and Biochemistry, University of California, Santa Cruz, CA 95064, USA</ce:textfn></ce:affiliation>
+<ce:affiliation id="AFF3"><ce:label>c</ce:label><ce:textfn>Shemyakin and Ovchinnikov Institute of Bioorganic Chemistry, Russian Academy of Sciences, 117871 Moscow, Russia</ce:textfn></ce:affiliation>
+<ce:affiliation id="AFF4"><ce:label>d</ce:label><ce:textfn>Institute of Protein Research, Russian Academy of Sciences, 142292 Pushchino, Moscow Region, Russia</ce:textfn></ce:affiliation><ce:correspondence id="CORR1">
+<ce:label>*</ce:label><ce:text>Corresponding author. Present address: Department of Chemistry and Biochemistry, University of California, Santa Cruz, CA 95064, USA. Fax: +1-831-459-2935</ce:text></ce:correspondence></ce:author-group>
+<ce:date-received day="27" month="1" year="1999" />
+<ce:date-revised day="25" month="3" year="1999" />
+<ce:date-accepted day="21" month="4" year="1999" />
+<ce:abstract>
+<ce:section-title>Abstract</ce:section-title><ce:abstract-sec>
+<ce:simple-para>Two permuted variants of S6 ribosomal protein were obtained in direct and fusion expression systems, respectively. The product of direct expression contained the extra N-terminal methionine residue. The structural properties and conformational stability of these permuteins were compared using 1-D <ce:sup>1</ce:sup>H-NMR, circular dichroism, intrinsic fluorescence, differential scanning calorimetry and resistance to urea-induced unfolding. A pronounced difference in all the parameters studied has been demonstrated. This means that the structure of recombinant protein can be sensitive to peculiarities of the expression and purification procedures, leading particularly to the presence or absence of the Met at the first position in the target protein sequence.</ce:simple-para></ce:abstract-sec></ce:abstract>
+<ce:keywords class="keyword">
+<ce:section-title>Keywords</ce:section-title>
+<ce:keyword><ce:text>Permuted protein</ce:text></ce:keyword>
+<ce:keyword><ce:text>Recombinant protein</ce:text></ce:keyword>
+<ce:keyword><ce:text>Protein structure</ce:text></ce:keyword>
+<ce:keyword><ce:text>Conformational stability</ce:text></ce:keyword></ce:keywords></head>
+<body><ce:sections>
+<ce:section>
+<ce:label>1</ce:label>
+<ce:section-title>Introduction</ce:section-title>
+<ce:para>Extremely rapid development of recombinant DNA techniques during the last decades has generated cloned genes for numerous proteins. At present, this technology has attracted special attention in the search for a way to obtain large quantities of protein of interest. The crucial step in this direction will be the expression of a foreign gene in a heterologous cell. Though the large variety of expression systems dealing with different cells and organisms has been elaborated, the most frequently used approach is the expression of a target gene in <ce:italic>Escherichia coli</ce:italic> <ce:cross-ref refid="BIB1">[1]</ce:cross-ref>. In addition to the great number of obvious advantages of this system, it has some important drawbacks, including the propensity of foreign protein to form inclusion bodies during intracellular expression <ce:cross-ref refid="BIB2">[2]</ce:cross-ref>, and rapid degradation of foreign proteins in the new host if they are not protected from intracellular proteases <ce:cross-ref refid="BIB3">[3]</ce:cross-ref>. It is a widespread belief that these problems can be solved if the target protein is synthesized not from its own N-terminus, but as a fusion protein (i.e. as a hybrid with another protein attached to the amino-terminus) <ce:cross-ref refid="BIB3">[3]</ce:cross-ref>. The other attractive feature of this method is that the fusion protein can be more easily purified <ce:cross-ref refid="BIB3">[3]</ce:cross-ref>.</ce:para>
+<ce:para>In the present paper, we attempt to answer the question whether the difference in the expression system and in the purification procedure can affect the structural properties and conformational stability of recombinant protein. To this end, the gene coding the permuted amino acid sequence of ribosomal protein S6 from <ce:italic>Thermus thermophilus</ce:italic> was cloned into two different vectors (ensuring direct and fusion expression) and expressed in <ce:italic>E. coli</ce:italic>. The structural properties and conformational stability of the obtained products were compared by several physicochemical methods.</ce:para></ce:section>
+<ce:section id="SEC1">
+<ce:label>2</ce:label>
+<ce:section-title>Materials and methods</ce:section-title>
+<ce:section>
+<ce:label>2.1</ce:label>
+<ce:section-title>Protein expression and isolation</ce:section-title>
+<ce:para>The gene of wild-type S6 protein was cloned into expression vector pGEMEX-1 (Promega), while coding the permuted S6 protein was cloned into the same vector and also into vector pMAL-c (New England Biolabs). Both these vectors was expressed in <ce:italic>E. coli</ce:italic>. Wild-type and permuted proteins were isolated as described elsewhere <ce:cross-ref refid="BIB4">[4]</ce:cross-ref>.</ce:para>
+<ce:para>As it has been reported earlier <ce:cross-refs refid="BIB4 BIB5">[4,5]</ce:cross-refs>, we have constructed the gene coding the circularly permuted amino acid sequence of <ce:italic>T. thermophilus</ce:italic> ribosomal protein S6. The goal of such permutation was to obtain the protein with an unusual &#x03B1;&#x03B2;&#x03B2;&#x03B1;&#x03B2;&#x03B2; fold which was suspected of being the target topology for the de novo protein albebetin <ce:cross-refs refid="BIB6 BIB7">[6,7]</ce:cross-refs>. The following changes were induced in <ce:italic>wt</ce:italic>S6 in order to have <ce:italic>cp</ce:italic>S6 protein: (1) first four C-terminal residues were removed together with its N-terminal Met and Arg; (2) the polypeptide chain was cut between Asn-13 and Leu-14; and (3) the old termini were linked through an Ala-Ser-Thr-Thr-Pro-Gly loop.</ce:para>
+<ce:para>To have large quantities of proteins, the gene of wild-type S6 protein was cloned into expression vector pGEMEX-1 (Promega), whereas the gene coding the <ce:italic>cp</ce:italic>S6 sequence was cloned into the two different vectors, pMAL-c and pGEMEX-1. The first vector expresses the target product as a fusion with the maltose-binding protein which can be then split off. The second vector expresses <ce:italic>cp</ce:italic>S6 directly from the T7 phage promoter (in this case, an additional ATG codon corresponding to the N-terminus Met residue was included into the gene). Nucleotide sequences of the genes were confirmed by DNA sequencing. The genes were expressed in <ce:italic>E. coli</ce:italic>. As the result, two forms of the permuted protein <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> (here symbols <ce:italic>f</ce:italic> and <ce:italic>d</ce:italic> correspond to the fusion and direct expression) were obtained. A detailed description of the design, genetic, cloning and expression procedures as well as the process of protein purification were presented in our previous papers <ce:cross-refs refid="BIB4 BIB5">[4,5]</ce:cross-refs>. HPLC and PAGE were used to analyze the protein purity, which was no less than 95% according to these methods. N-terminal sequence analysis has shown that <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> protein contained the extra methionine residue at the first position, while the <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> variant began from Leu.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.2</ce:label>
+<ce:section-title>Circular dichroism studies</ce:section-title>
+<ce:para>Circular dichroism studies were carried out using Jasco-600 spectropolarimeter (Japan Spectroscopic, Tokyo, Japan), equipped with a temperature-controlled holder. The protein concentration for near and far UV CD measurements was 0.8 mg/ml. The cell pathlength was 0.19 and 10 mm for far and near UV CD measurements, respectively.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.3</ce:label>
+<ce:section-title>Microcalorimetry measurements</ce:section-title>
+<ce:para>Calorimetric measurements were done with a new precise differential adiabatic scanning microcalorimeter SCAL-1 (Scal, Pushchino, Russia), equipped with a newly designed calorimetric unit with cylindrical glass cells (0.34 ml) providing high chemical resistance and excellent dynamic characteristics. The protein concentration for microcalorimetric measurements was 2.1 mg/ml; the scanning rate was 0.9 K/min. The van &#x2019;t Hoff and calorimetric enthalpies of melting were calculated as described in <ce:cross-refs refid="BIB8 BIB9">[8,9]</ce:cross-refs>.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.4</ce:label>
+<ce:section-title><ce:sup>1</ce:sup>H-NMR measurements</ce:section-title>
+<ce:para><ce:sup>1</ce:sup>H-NMR spectra were recorded at 30&#x00B0;C in a 50 mM aqueous solution of ammonium citrate, pH 7.9, containing 10% D<ce:inf>2</ce:inf>O, in a UNITY-600 spectrometer (Varian) at a working proton frequency of 600 MHz.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.5</ce:label>
+<ce:section-title>Fluorescence measurements</ce:section-title>
+<ce:para>Fluorescence measurements were carried out using the Aminco (SPF-1000cs) corrected spectrofluorimeter (American Instrument, Silver Spring, MD, USA) equipped with a temperature-controlled holder. Fluorescence was excited at 290 nm. Protein concentration was 0.01 mg/ml. Cell pathlength was 10.0 mm. Measurements were carried out at 25&#x00B0;C.</ce:para></ce:section>
+<ce:section>
+<ce:label>2.6</ce:label>
+<ce:section-title>Urea-induced unfolding</ce:section-title>
+<ce:para>Urea-induced unfolding of permuted protein was studied by the characteristic red shift of the tryptophan fluorescence spectrum maximum <ce:cross-ref refid="BIB10">[10]</ce:cross-ref>. The unfolding curve was analyzed in accordance with type I analysis <ce:cross-refs refid="BIB11 BIB12">[11,12]</ce:cross-refs>, or type II analysis <ce:cross-refs refid="BIB13 BIB14 BIB15">[13&#x2013;15]</ce:cross-refs>. Type I analysis was done assuming an all-or-none mechanism of the transition between the initial (native) and final (unfolded) states. In this case it is possible to estimate the free energy of the initial state relative to that of the unfolded one, &#x0394;<ce:italic>G</ce:italic><ce:inf>fold</ce:inf>, under the given conditions as in <ce:cross-ref refid="BIB11">[11]</ce:cross-ref>:<display><formula id="FD1"><ce:label>(1)</ce:label><math altimg="si1.gif"><rm>&#x0394;</rm>G<inf>fold</inf>=&#x2212;RT<ce:hsp sp="0.25" /><rm>ln</rm><ce:hsp sp="0.25" />K<inf>eq</inf></math></formula></display>where <ce:italic>K</ce:italic><ce:inf>eq</ce:inf> is the equilibrium constant of the transition. The value of &#x0394;<ce:italic>G</ce:italic><ce:inf>fold</ce:inf> within the transition region, where it can be measured, varies linearly with the denaturant concentration <ce:cross-ref refid="BIB12">[12]</ce:cross-ref>:<display><formula><ce:label>(2)</ce:label><math altimg="si2.gif"><rm>&#x0394;</rm>G<inf>fold</inf>=<rm>&#x0394;</rm>G<sup><rm>H<inf>2</inf>O</rm></sup><inf>fold</inf>+m<ce:hsp sp="0.25" />[<rm>denaturant</rm>].</math></formula></display></ce:para>
+<ce:para>The parameter <ce:italic>m</ce:italic> reflects the dependence of the free energy on the denaturant concentration, [denaturant]; whereas the values of &#x0394;<ce:italic>G</ce:italic><ce:inf>fold</ce:inf> are usually extrapolated linearly to determine its value in the absence of denaturant, &#x0394;<ce:italic>G</ce:italic><ce:sup>H<ce:inf>2</ce:inf>O</ce:sup><ce:inf><ce:italic>fold</ce:italic></ce:inf>.</ce:para>
+<ce:para>In type II analysis the value of &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:sup>eff</ce:sup> (which is the difference in the number of denaturant molecules &#x2018;bound&#x2019; to one protein molecule in its two states) is determined from the unfolded curve by equation <ce:cross-ref refid="BIB13">[13]</ce:cross-ref><display><formula><ce:label>(3)</ce:label><math altimg="si3.gif"><rm>&#x0394;</rm>v<sup><rm>eff</rm></sup>=4a<inf><it>t</it></inf>(<fr>
+<nu><rm>&#x2202;</rm>&#x0398;</nu>
+<de><rm>&#x2202;</rm>a</de></fr>)a=a<inf><it>t</it></inf></math></formula></display>where <ce:italic>a<ce:inf>t</ce:inf></ce:italic> is the denaturant activity at midpoint, and <ce:italic>&#x0398;</ce:italic> is the fraction of molecules in the unfolded state.</ce:para></ce:section></ce:section>
+<ce:section>
+<ce:label>3</ce:label>
+<ce:section-title>Results</ce:section-title>
+<ce:para>It was already noted that there is a difference in the <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> amino acid sequences, namely <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> has an extra Met residue at the first position (see <ce:cross-ref refid="SEC1">Section 2</ce:cross-ref>). The presence of zero formyl-methionine is a common feature of a recombinant protein expressed in <ce:italic>E. coli</ce:italic> <ce:cross-ref refid="BIB16">[16]</ce:cross-ref>. In the case of <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic>, this methionine is split off together with the maltose-binding protein. On the other hand, the attached maltose-binding protein can affect the in vivo folding and the structure of <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic>. The structural perturbations in the target protein can be retained after the digestion of maltose-binding protein. Both these factors may obviously lead to the appearance of the structural divergence between the studied proteins. Data presented below were addressed to answer the questions: Is there any difference between <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> structural properties and conformational stability? And if so, why do the products of different expression systems behave differently?</ce:para>
+<ce:section>
+<ce:label>3.1</ce:label>
+<ce:section-title>Near UV CD spectra</ce:section-title>
+<ce:para>A rigid asymmetric environment of aromatic amino acid residues gives rise to a pronounced CD spectrum in the near UV region <ce:cross-ref refid="BIB17">[17]</ce:cross-ref>. The studied proteins had almost identical aromatic amino acid content (Trp-1/1 (<ce:italic>wt</ce:italic>S6/<ce:italic>cp</ce:italic>S6), Tyr-5/5 (<ce:italic>wt</ce:italic>S6/<ce:italic>cp</ce:italic>S6) and Phe-2/1 (<ce:italic>wt</ce:italic>S6/<ce:italic>cp</ce:italic>S6), sole Phe-97 was substituted by Gly during mutagenesis. <ce:cross-ref refid="FIG1">Fig. 1A</ce:cross-ref><ce:float-anchor refid="FIG1" /> represents the near UV CD spectra of two permuted variants (<ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic>) and <ce:italic>wt</ce:italic>S6 protein. The spectrum of protein completely unfolded by 8 M GdmCl is also shown for comparison. All three proteins are characterized by intense spectra, reflecting the fact that they have a rigid tertiary structure. However, <ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref> clearly shows that there is a remarkable difference between <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic>. It can be seen that spectra of permutein from the direct expression system and wild-type protein are close in their intensities. Some discrepancy between the long-wave parts of the spectra can be attributed to the appearance of a permutation-induced difference in the Trp environment. On the other hand, the <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> spectrum has a shape similar to that of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic>, while its intensity is about 1.35-times lower. This suggests that the structure of permutein from the fusion expression system is somewhat disturbed as compared with that of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>wt</ce:italic>S6.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.2</ce:label>
+<ce:section-title>Far UV CD spectra</ce:section-title>
+<ce:para><ce:cross-ref refid="FIG1">Fig. 1B</ce:cross-ref> shows the far UV CD spectra of the proteins and gives an additional confirmation of the above suggestion. It is seen that the spectra of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>wt</ce:italic>S6 coincide almost completely, assuming the identity of the secondary structure content in these two proteins. Analysis of the <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> far UV CD spectrum shows that the secondary structure of this protein is slightly more disordered than that of the wild-type protein and S6 from the direct expression system. This conclusion follows from the pronounced shift of the intersection point to a shorter wavelength, an overall decrease of spectrum intensity and the increase of [<ce:italic>&#x03B8;</ce:italic>]<ce:inf>208</ce:inf>/[<ce:italic>&#x03B8;</ce:italic>]<ce:inf>222</ce:inf> ratio (the value of this parameter is 1.07, 1.04 and 1.16 for the wild-type, <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic>, respectively) <ce:cross-ref refid="BIB17">[17]</ce:cross-ref>.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.3</ce:label>
+<ce:section-title>Tryptophan fluorescence spectra</ce:section-title>
+<ce:para>The position and intensity of the tryptophan fluorescence spectrum is sensitive to the surroundings of this chromophore group <ce:cross-ref refid="BIB18">[18]</ce:cross-ref>. For example, it has been established that the fluorescence spectrum of the solvated tryptophan residue has a maximal value in the vicinity of 350 nm, whereas its embedding into the non-polar environment leads to the characteristic blue shift of the maximum position <ce:cross-refs refid="BIB7 BIB19 BIB20 BIB21">[7,19&#x2013;21]</ce:cross-refs>. This observation is commonly used for investigation of structural transformations of a protein molecule. <ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref><ce:float-anchor refid="FIG2" /> represents the Trp fluorescence spectrum of wild-type S6 protein as well as that of its two permuted forms. The spectrum of the completely unfolded by 8 M GdmCl S6 protein is also shown for comparison. It is seen that the fluorescence spectrum of wild-type S6 protein is relatively red shifted (<ce:italic>&#x03BB;</ce:italic><ce:inf>max</ce:inf>=345 nm). This observation is consistent with the assumption that Trp residues of the protein are relatively exposed to solvent. Nevertheless, the unfolding of S6 protein is accompanied by a pronounced long-wave shift of the fluorescence spectrum maximum (from 345 to 355 nm) and by about a 3-fold decrease in fluorescence intensity. <ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref> clearly shows that the spectra of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>wt</ce:italic>S6 concur, reflecting the fact that the Trp residues of these two proteins have very similar environments. It should be emphasized that the fluorescence behavior of <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> is quite different from that of <ce:italic>wt</ce:italic>S6 and <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic>: the spectrum is characterized by a visible shift of maximum towards a longer wavelength (&#x223C;348 nm) and by an approximately 1.3-fold intensity decrease. Both these facts verify the existence of some perturbations in the microenvironment of the Trp residues in S6 permutein from the fusion expression system and show their increased accessibility to the solvent.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.4</ce:label>
+<ce:section-title><ce:sup>1</ce:sup>H-NMR spectroscopy data</ce:section-title>
+<ce:para>The <ce:sup>1</ce:sup>H-NMR spectra of wild-type S6 protein and its two permuted forms exhibited a number of specific features of native globular proteins. Particularly, the dispersion of chemical shifts for the amide and C&#x03B1;-protons points in favor of a pronounced secondary structure in all three proteins. The methyl regions of the <ce:sup>1</ce:sup>H-NMR spectra of these proteins are presented in <ce:cross-ref refid="FIG3">Fig. 3</ce:cross-ref><ce:float-anchor refid="FIG3" />. Analysis of these spectra suggests that the values of the chemical shifts for methyl groups and their dispersion in all the forms of S6 protein are characteristic of proteins with a globular tertiary structure, where the aromatic residues and methyl groups are close to each other. On the other hand, the increased half-width of the signals from the polypeptide backbone protons (e.g. from C&#x03B1;-protons) may result from the increased flexibility of the tertiary structure in the millisecond range, or from protein association. Finally, <ce:cross-ref refid="FIG3">Fig. 3</ce:cross-ref> shows that all three proteins are characterized by different spectra. This is a very important finding as it allows conclude that the structures of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> are different.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.5</ce:label>
+<ce:section-title>DSC data</ce:section-title>
+<ce:para>Effect of temperature on <ce:italic>wt</ce:italic>S6, <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> structures was studied by means of differential scanning calorimetry, a method which is one of the most powerful approaches in protein stability investigations <ce:cross-refs refid="BIB5 BIB6 BIB22">[5,6,22]</ce:cross-refs>. <ce:cross-ref refid="FIG4">Fig. 4</ce:cross-ref><ce:float-anchor refid="FIG4" /> collects the temperature dependencies of excess heat capacity (calorimetric curves) measured for all three proteins. The considerable difference in the calorimetric behavior of these proteins can be seen. Indeed, <ce:italic>wt</ce:italic>S6 is characterized by an extremely high resistance to the temperature (<ce:italic>T</ce:italic><ce:inf>m</ce:inf>=372 K) which is expected for protein from thermophilic organisms. On the other hand, <ce:cross-ref refid="FIG4">Fig. 4</ce:cross-ref> shows that permutation causes considerable destabilization of the protein molecule (<ce:italic>T</ce:italic><ce:inf>m</ce:inf>=347 and 342 K for <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic>, respectively). Interestingly, calorimetric analysis confirmed the considerable effect of the expression method on the protein structure, <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> was shown to be less stable than <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic>.</ce:para></ce:section>
+<ce:section>
+<ce:label>3.6</ce:label>
+<ce:section-title>Urea-induced unfolding</ce:section-title>
+<ce:para>Studies of protein stability to the urea- or GdmCl-induced unfolding are frequently used to characterize natural, mutated and artificial proteins. Such analysis yields important information on the conformational stability of a protein in the absence of denaturant, &#x0394;<ce:italic>G</ce:italic><ce:sup>H<ce:inf>2</ce:inf>O</ce:sup><ce:inf><ce:italic>fold</ce:italic></ce:inf> (see above).</ce:para>
+<ce:para>We analyzed the unfolding behavior of S6 protein and its permuted variants from the urea-induced changes in the Trp fluorescence spectra. It follows from <ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref> that the unfolding of any of the proteins studied is accompanied by the pronounced change of the fluorescence spectrum. The unfolding curves were obtained as the dependence of parameter <ce:italic>A</ce:italic> value (<ce:italic>A</ce:italic>=<ce:italic>I</ce:italic><ce:inf>370</ce:inf>/<ce:italic>I</ce:italic><ce:inf>320</ce:inf>, where <ce:italic>I</ce:italic><ce:inf>370</ce:inf> and <ce:italic>I</ce:italic><ce:inf>320</ce:inf> correspond to the intensity values at 370 and 320 nm, respectively) on the urea concentration, which is sensitive to changes in position and shape of the fluorescence spectrum <ce:cross-ref refid="BIB23">[23]</ce:cross-ref>. The main advantage of this approach is that we could decrease considerably the protein concentration (from &#x223C;2.0 mg/ml used for DSC measurements up to 0.01 mg/ml), thus avoiding uncertainties connected with protein association.</ce:para>
+<ce:para><ce:cross-ref refid="FIG5">Fig. 5A</ce:cross-ref><ce:float-anchor refid="FIG5" /> depicts the normalized urea-unfolding curves for <ce:italic>wt</ce:italic>S6, <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> proteins. It is necessary to underline that the unfolding data perfectly fitted within the frame of the two-state model for all three proteins. This allowed us to perform the usual analysis suggested by Tanford <ce:cross-ref refid="BIB11">[11]</ce:cross-ref> and developed by Pace <ce:cross-ref refid="BIB12">[12]</ce:cross-ref> (see <ce:cross-ref refid="SEC1">Section 2</ce:cross-ref>).</ce:para>
+<ce:para>Results of such analysis for S6 proteins are presented in <ce:cross-ref refid="FIG5">Fig. 5B</ce:cross-ref> (as &#x0394;<ce:italic>G</ce:italic><ce:inf>fold</ce:inf> versus [urea] dependencies) and in <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref><ce:float-anchor refid="TBL1" />. <ce:cross-ref refid="FIG5">Fig. 5B</ce:cross-ref> shows that the data points for all three proteins fitted well by straight lines, reflecting the validity of the all-or-none approximation for the description of unfolding of these proteins. It was established that typical value of <ce:italic>m</ce:italic> is about 1 kcal/(mol M) for urea-induced unfolding of native natural proteins, whereas that of &#x0394;<ce:italic>G</ce:italic><ce:sup>H<ce:inf>2</ce:inf>O</ce:sup><ce:inf><ce:italic>fold</ce:italic></ce:inf> is between 5 and 10 kcal/mol <ce:cross-ref refid="BIB24">[24]</ce:cross-ref>. As follows from <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref>, <ce:italic>wt</ce:italic>S6, <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> are extremely stable to urea-induced unfolding ([urea]<ce:inf>1/2</ce:inf>>4.5 M, &#x0394;<ce:italic>G</ce:italic><ce:sup>H<ce:inf>2</ce:inf>O</ce:sup><ce:inf><ce:italic>fold</ce:italic></ce:inf>>5 kcal/mol and <ce:italic>m</ce:italic>>1 kcal/(mol M).</ce:para>
+<ce:para>Additional confirmation of this suggestion was obtained by type II analysis of the unfolding data. It has been shown that the steepness of urea- or guanidinium chloride-induced unfolding curve depends strongly on whether a given protein has a unique tertiary structure (i.e. it is native) or it is already denatured and exists as a molten globule <ce:cross-refs refid="BIB14 BIB15">[14,15]</ce:cross-refs>. To this end, the corresponding value of the difference in the number of denaturant molecules &#x2018;bound&#x2019; to one protein molecule in its two states, &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:sup>eff</ce:sup> (see <ce:cross-ref refid="SEC1">Section 2</ce:cross-ref>), should be determined. Then this quantity should be compared with &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:inf>N&#x2192;U</ce:inf><ce:sup>eff</ce:sup> and &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:inf>MG&#x2192;U</ce:inf><ce:sup>eff</ce:sup> values corresponding to the native-coil and molten globule-coil transitions in globular protein of a given molecular mass. These two parameters can be estimated from <ce:cross-ref refid="BIB15">[15]</ce:cross-ref>:<display><formula id="FD4"><ce:label>(4)</ce:label><math altimg="si4.gif"><rm>log&#x0394;</rm>&#x03BD;<sup><rm>eff</rm></sup><inf>N&#x2192;U</inf>=0.97<ce:hsp sp="0.25" /><rm>log</rm><ce:hsp sp="0.25" />M&#x2212;0.07,</math></formula></display><display><formula id="FD5"><ce:label>(5)</ce:label><math altimg="si5.gif"><rm>log&#x0394;</rm>&#x03BD;<sup><rm>eff</rm></sup><inf>MG&#x2192;U</inf>=0.89<ce:hsp sp="0.25" /><rm>log</rm><ce:hsp sp="0.25" />M&#x2212;0.4,</math></formula></display>where <ce:italic>M</ce:italic> is the protein molecular mass in kDa. For native-coil and molten globule-coil transitions in natural proteins of 11 kDa (as in S6 protein) these equations give &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:inf>N&#x2192;U</ce:inf><ce:sup>eff</ce:sup>=8.9&#x00B1;2.0 and &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:inf>MG&#x2192;U</ce:inf><ce:sup>eff</ce:sup>=3.4&#x00B1;2.0, respectively. The value of standard deviation (&#x00B1;2.0) in these cases was determined from the corresponding figures in <ce:cross-ref refid="BIB15">[15]</ce:cross-ref>. The &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:sup>eff</ce:sup> values calculated for S6 proteins (see <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref>) show that the proteins studied have a rigid native-like tertiary structure and are highly resistant to the denaturant action, as &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:sup>eff</ce:sup>>8.9 for all three.</ce:para>
+<ce:para>On the other hand, the data presented in <ce:cross-refs refid="FIG5 TBL1">Fig. 5 and Table 1</ce:cross-refs> are consistent with the conclusion that there is a considerable difference in the unfolding behavior of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> proteins. <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref> shows that all the unfolding parameters of <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> ([urea]<ce:inf>1/2</ce:inf>, <ce:italic>m</ce:italic>, &#x0394;<ce:italic>G</ce:italic><ce:sup>H<ce:inf>2</ce:inf>O</ce:sup><ce:inf><ce:italic>fold</ce:italic></ce:inf> and &#x0394;<ce:italic>&#x03BD;</ce:italic><ce:sup>eff</ce:sup>) are substantially lower than those of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic>. This means that the expression method can affect the conformational stability of recombinant protein.</ce:para></ce:section></ce:section>
+<ce:section>
+<ce:label>4</ce:label>
+<ce:section-title>Discussion</ce:section-title>
+<ce:para>The main result of the present study is to ascertain that <ce:italic>two forms</ce:italic> of <ce:italic>one protein</ce:italic> obtained from an <ce:italic>identical gene</ce:italic> expressed in <ce:italic>two different vectors</ce:italic> are quite different in their structural properties and conformational stability. Identical purification procedures without denaturing steps <ce:cross-ref refid="BIB4">[4]</ce:cross-ref> were applied for both products of the gene, coding the permuted S6 ribosomal protein sequence. Both proteins were investigated in the same conditions (including identical buffers). This means that the found divergence in structure and stability of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> proteins are definitely due to the difference in the expression and purification methods. The cardinal distinction between the two approaches is that the <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> protein was obtained after splitting off the maltose-binding protein from the fusion product of the pMAL-c vector, whereas <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> was produced in the direct expression system. Let us try to understand the driving forces for the difference.</ce:para>
+<ce:para>First of all, one could expect the existence of some effect of the attached maltose-binding protein on the in vivo folding and, as a consequence, on the structure of permuted S6 protein. The <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> can retain these structural peculiarities, even after the digestion of maltose-binding protein. However, we have established that the urea-induced unfolding of wild-type protein, as well as that of its two permuted variants is reversible. This means that the effect of maltose-binding protein can be excluded. In other words, the observed difference between <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> proteins cannot be explained by the discrepancy between their in vivo folding. Secondly, the expression methods induced a distinction in the N-terminal part of the protein amino acid sequence. The direct expression system requires the inclusion of Met at the first N-terminal position and that is why we had to introduce this residue into the gene of <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic>. NH<ce:inf>2</ce:inf>-terminal sequence analysis has proved the divergence in the N-terminal sequences of both proteins, namely, <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> protein contained an extra methionine residue at the first position, while the <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> variant began from Leu. Thus, we assume that the difference in structural properties and conformational stability between <ce:italic>cp</ce:italic>S6<ce:italic>f</ce:italic> and <ce:italic>cp</ce:italic>S6<ce:italic>d</ce:italic> can be due to the presence or absence of methionine residue at the first position.</ce:para>
+<ce:para>The same conclusion was recently drawn for a couple of other proteins <ce:cross-refs refid="BIB25 BIB26 BIB27 BIB28 BIB29 BIB30 BIB31 BIB32">[25&#x2013;32]</ce:cross-refs>. In the case of &#x03B1;-lactalbumin, the Ca<ce:sup>2+</ce:sup> binding constant of recombinant protein was shown to be one order of magnitude lower than that of the authentic protein isolated from milk <ce:cross-ref refid="BIB25">[25]</ce:cross-ref>. Recombinant &#x03B1;-lactalbumin possessed a remarkable decrease in conformational stability <ce:cross-refs refid="BIB25 BIB26 BIB27 BIB28 BIB29 BIB30 BIB31 BIB32">[25&#x2013;32]</ce:cross-refs>. It was suggested that this was primarily due to excess conformational entropy of the N-terminal Met in the unfolded state, and also due to exposure of hydrophobic surface on unfolding <ce:cross-ref refid="BIB27">[27]</ce:cross-ref>. Destabilizing effect of zero methionine was also shown for recombinant apo-myoglobin <ce:cross-ref refid="BIB28">[28]</ce:cross-ref> and hen egg white lysozyme <ce:cross-ref refid="BIB29">[29]</ce:cross-ref>. Contrary to these cases, the attachment of methionine appears to stabilize S6 permutein structure. The same behaviour was described for recombinant ribonuclease A <ce:cross-ref refid="BIB30">[30]</ce:cross-ref>. On the other hand, neither structural properties, nor conformational stability of recombinant apolipoprotein AIV <ce:cross-ref refid="BIB31">[31]</ce:cross-ref> and calbinding D9k <ce:cross-ref refid="BIB32">[32]</ce:cross-ref> were affected by the attachment of the extra methionine residue. The fact that there is difficult to predict whether protein structure will be stabilized, destabilized or unaffected by an extra N-terminal methionine shows that there are no general rules in the structural consequence of this modification, and that details of this effect have not yet been well understood.</ce:para>
+<ce:para>The data presented in our paper unambiguously show that the structural properties and conformational stability of recombinant protein can depend on the peculiarities of the protein expression and purification procedure. We assume that the more disturbed the tertiary structure of recombinant protein, the more the effect of expression and purification. This point should be taken into account especially in the cases when one deals with mutated and artificial proteins.</ce:para></ce:section></ce:sections>
+<ce:acknowledgment>
+<ce:section-title>Acknowledgements</ce:section-title>
+<ce:para>This work was supported in part by grants from the Russian Foundation for Basic Research and the International Science and Technology Center, Moscow.</ce:para></ce:acknowledgment></body>
+<tail>
+<ce:bibliography>
+<ce:section-title>References</ce:section-title><ce:bibliography-sec>
+<ce:bib-reference id="BIB1">
+<ce:label>[1]</ce:label>
+<ce:other-ref><ce:textref>G.T. Yarranton, A. Mountain, in: A.R. Rees, M.J.E. Sternberg, R. Wetzel (Eds.), Protein Engineering. A Practical Approach, IRL Press, Oxford, 1992, pp. 303&#x2013;325.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB2">
+<ce:label>[2]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>G.H</ce:given-name><ce:surname>Schein</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biotechnology</sb:maintitle></sb:title>
+<sb:volume-nr>7</sb:volume-nr></sb:series>
+<sb:date>1989</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1141</sb:first-page>
+<sb:last-page>1149</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB3">
+<ce:label>[3]</ce:label>
+<ce:other-ref><ce:textref>R.W. Old, S.B. Primrose, Principles of Gene Manipulation. An Introduction to Genetic Enginnering, 5th edn., Blackwell Science, Cambridge, 1994.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB4">
+<ce:label>[4]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>R.F</ce:given-name><ce:surname>Latypov</ce:surname></sb:author><sb:author><ce:given-name>Z.Kh</ce:given-name><ce:surname>Abdullaev</ce:surname></sb:author><sb:author><ce:given-name>A.Ya</ce:given-name><ce:surname>Badretdinov</ce:surname></sb:author><sb:author><ce:given-name>E.V</ce:given-name><ce:surname>Bocharov</ce:surname></sb:author><sb:author><ce:given-name>T.N</ce:given-name><ce:surname>Mel&#x2019;nik</ce:surname></sb:author><sb:author><ce:given-name>I.Yu</ce:given-name><ce:surname>Afasizheva</ce:surname></sb:author><sb:author><ce:given-name>A.S</ce:given-name><ce:surname>Arsen&#x2019;ev</ce:surname></sb:author><sb:author><ce:given-name>D.A</ce:given-name><ce:surname>Dolgikh</ce:surname></sb:author><sb:author><ce:given-name>V.N</ce:given-name><ce:surname>Uverskii</ce:surname></sb:author><sb:author><ce:given-name>A.V</ce:given-name><ce:surname>Finkelstein</ce:surname></sb:author><sb:author><ce:given-name>M.P</ce:given-name><ce:surname>Kirpichnikov</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Mol. Biol. (Moscow)</sb:maintitle></sb:title>
+<sb:volume-nr>32</sb:volume-nr></sb:series>
+<sb:date>1998</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>109</sb:first-page>
+<sb:last-page>116</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB5">
+<ce:label>[5]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>Z.Kh</ce:given-name><ce:surname>Abdullaev</ce:surname></sb:author><sb:author><ce:given-name>R.F</ce:given-name><ce:surname>Latypov</ce:surname></sb:author><sb:author><ce:given-name>A.Ya</ce:given-name><ce:surname>Badretdinov</ce:surname></sb:author><sb:author><ce:given-name>D.A</ce:given-name><ce:surname>Dolgikh</ce:surname></sb:author><sb:author><ce:given-name>V.N</ce:given-name><ce:surname>Uversky</ce:surname></sb:author><sb:author><ce:given-name>A.V</ce:given-name><ce:surname>Finkelstein</ce:surname></sb:author><sb:author><ce:given-name>M.P</ce:given-name><ce:surname>Kirpichnikov</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>FEBS Lett.</sb:maintitle></sb:title>
+<sb:volume-nr>414</sb:volume-nr></sb:series>
+<sb:date>1997</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>243</sb:first-page>
+<sb:last-page>246</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB6">
+<ce:label>[6]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>D.A</ce:given-name><ce:surname>Dolgikh</ce:surname></sb:author><sb:author><ce:given-name>A.N</ce:given-name><ce:surname>Fedorov</ce:surname></sb:author><sb:author><ce:given-name>V.V</ce:given-name><ce:surname>Chemeris</ce:surname></sb:author><sb:author><ce:given-name>B.K</ce:given-name><ce:surname>Chernov</ce:surname></sb:author><sb:author><ce:given-name>A.V</ce:given-name><ce:surname>Finkelstein</ce:surname></sb:author><sb:author><ce:given-name>A.A</ce:given-name><ce:surname>Shulga</ce:surname></sb:author><sb:author><ce:given-name>Yu.B</ce:given-name><ce:surname>Alakhov</ce:surname></sb:author><sb:author><ce:given-name>M.P</ce:given-name><ce:surname>Kirpichnikov</ce:surname></sb:author><sb:author><ce:given-name>O.B</ce:given-name><ce:surname>Ptitsyn</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Dokl. Acad. Nauk. SSSR</sb:maintitle></sb:title>
+<sb:volume-nr>320</sb:volume-nr></sb:series>
+<sb:date>1991</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1266</sb:first-page>
+<sb:last-page>1270</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB7">
+<ce:label>[7]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>A.N</ce:given-name><ce:surname>Fedorov</ce:surname></sb:author><sb:author><ce:given-name>D.A</ce:given-name><ce:surname>Dolgikh</ce:surname></sb:author><sb:author><ce:given-name>V.V</ce:given-name><ce:surname>Chemeris</ce:surname></sb:author><sb:author><ce:given-name>B.K</ce:given-name><ce:surname>Chernov</ce:surname></sb:author><sb:author><ce:given-name>A.V</ce:given-name><ce:surname>Finkelstein</ce:surname></sb:author><sb:author><ce:given-name>A.A</ce:given-name><ce:surname>Shulga</ce:surname></sb:author><sb:author><ce:given-name>Yu.B</ce:given-name><ce:surname>Alakhov</ce:surname></sb:author><sb:author><ce:given-name>M.P</ce:given-name><ce:surname>Kirpichnikov</ce:surname></sb:author><sb:author><ce:given-name>O.B</ce:given-name><ce:surname>Ptitsyn</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Mol. Biol.</sb:maintitle></sb:title>
+<sb:volume-nr>225</sb:volume-nr></sb:series>
+<sb:date>1992</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>927</sb:first-page>
+<sb:last-page>931</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB8">
+<ce:label>[8]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.L</ce:given-name><ce:surname>Privalov</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Adv. Protein Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>33</sb:volume-nr></sb:series>
+<sb:date>1979</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>167</sb:first-page>
+<sb:last-page>241</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB9">
+<ce:label>[9]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>P.L</ce:given-name><ce:surname>Privalov</ce:surname></sb:author><sb:author><ce:given-name>S.A</ce:given-name><ce:surname>Potekhin</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Methods Enzymol.</sb:maintitle></sb:title>
+<sb:volume-nr>131</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>4</sb:first-page>
+<sb:last-page>51</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB10">
+<ce:label>[10]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>L</ce:given-name><ce:surname>Stryer</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Science</sb:maintitle></sb:title>
+<sb:volume-nr>162</sb:volume-nr></sb:series>
+<sb:date>1968</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>526</sb:first-page>
+<sb:last-page>540</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB11">
+<ce:label>[11]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>C</ce:given-name><ce:surname>Tanford</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Adv. Protein Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>23</sb:volume-nr></sb:series>
+<sb:date>1968</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>121</sb:first-page>
+<sb:last-page>282</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB12">
+<ce:label>[12]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>C.N</ce:given-name><ce:surname>Pace</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Methods Enzymol.</sb:maintitle></sb:title>
+<sb:volume-nr>131</sb:volume-nr></sb:series>
+<sb:date>1986</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>266</sb:first-page>
+<sb:last-page>280</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB13">
+<ce:label>[13]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>K.C</ce:given-name><ce:surname>Aune</ce:surname></sb:author><sb:author><ce:given-name>C</ce:given-name><ce:surname>Tanford</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>8</sb:volume-nr></sb:series>
+<sb:date>1969</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>4586</sb:first-page>
+<sb:last-page>4590</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB14">
+<ce:label>[14]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>O.B</ce:given-name><ce:surname>Ptitsyn</ce:surname></sb:author><sb:author><ce:given-name>V.N</ce:given-name><ce:surname>Uversky</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>FEBS Lett.</sb:maintitle></sb:title>
+<sb:volume-nr>341</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>15</sb:first-page>
+<sb:last-page>18</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB15">
+<ce:label>[15]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>V.N</ce:given-name><ce:surname>Uversky</ce:surname></sb:author><sb:author><ce:given-name>O.B</ce:given-name><ce:surname>Ptitsyn</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Folding Design</sb:maintitle></sb:title>
+<sb:volume-nr>1</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>117</sb:first-page>
+<sb:last-page>122</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB16">
+<ce:label>[16]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>K</ce:given-name><ce:surname>Marcker</ce:surname></sb:author><sb:author><ce:given-name>F</ce:given-name><ce:surname>Sander</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Mol. Biol.</sb:maintitle></sb:title>
+<sb:volume-nr>8</sb:volume-nr></sb:series>
+<sb:date>1964</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>354</sb:first-page>
+<sb:last-page>360</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB17">
+<ce:label>[17]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>A.J</ce:given-name><ce:surname>Adler</ce:surname></sb:author><sb:author><ce:given-name>N.J</ce:given-name><ce:surname>Greenfield</ce:surname></sb:author><sb:author><ce:given-name>G.D</ce:given-name><ce:surname>Fasman</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Methods Enzymol.</sb:maintitle></sb:title>
+<sb:volume-nr>27</sb:volume-nr></sb:series>
+<sb:date>1973</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>675</sb:first-page>
+<sb:last-page>735</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB18">
+<ce:label>[18]</ce:label>
+<ce:other-ref><ce:textref>G. Weber, F.W.J. Teale, in: H. Neurath (Ed.), The Proteins, Vol. 3, Academic Press, New York, 1966, pp. 445&#x2013;452.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB19">
+<ce:label>[19]</ce:label>
+<ce:other-ref><ce:textref>G.M. Barenboim, A.N. Domanski, K.K. Turoverov, Luminescence of Biopolymers and Cells, Plenum Press, New York, 1969.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB20">
+<ce:label>[20]</ce:label>
+<ce:other-ref><ce:textref>E.A. Burshtein, Luminescence of Protein Chromophores. Model Investigations. Itogi Nauki i Tekhniki (Biofizika, Vol. 6) Moscow, 1976.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB21">
+<ce:label>[21]</ce:label>
+<ce:other-ref><ce:textref>E.A. Permyakov, Luminescence Spectroscopy of Proteins, CRC Press, London, 1993.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB22">
+<ce:label>[22]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>O.B</ce:given-name><ce:surname>Ptitsyn</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Adv. Protein Chem.</sb:maintitle></sb:title>
+<sb:volume-nr>47</sb:volume-nr></sb:series>
+<sb:date>1995</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>83</sb:first-page>
+<sb:last-page>229</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB23">
+<ce:label>[23]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>K.K</ce:given-name><ce:surname>Turoverov</ce:surname></sb:author><sb:author><ce:given-name>S.Yu</ce:given-name><ce:surname>Khaitlina</ce:surname></sb:author><sb:author><ce:given-name>G.P</ce:given-name><ce:surname>Pinaev</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>FEBS Lett.</sb:maintitle></sb:title>
+<sb:volume-nr>62</sb:volume-nr></sb:series>
+<sb:date>1976</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>4</sb:first-page>
+<sb:last-page>7</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB24">
+<ce:label>[24]</ce:label>
+<ce:other-ref><ce:textref>T.E. Creighton, Proteins &#x2013; Structure and Molecular Properties, W.H. Freeman, New York, 1993, pp. 289&#x2013;291.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB25">
+<ce:label>[25]</ce:label>
+<ce:other-ref><ce:textref>D.B. Veprintsev, Thermodynamic and structural aspects of bivalent ion binding by proteins. Candidates dissertation (in Russian), Pushchino, 1997.</ce:textref></ce:other-ref></ce:bib-reference>
+<ce:bib-reference id="BIB26">
+<ce:label>[26]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>N</ce:given-name><ce:surname>Ishikawa</ce:surname></sb:author><sb:author><ce:given-name>T</ce:given-name><ce:surname>Chiba</ce:surname></sb:author><sb:author><ce:given-name>L.T</ce:given-name><ce:surname>Chen</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Shimizu</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Ikeguchi</ce:surname></sb:author><sb:author><ce:given-name>S</ce:given-name><ce:surname>Sugai</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Protein Eng.</sb:maintitle></sb:title>
+<sb:volume-nr>11</sb:volume-nr></sb:series>
+<sb:date>1998</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>333</sb:first-page>
+<sb:last-page>335</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB27">
+<ce:label>[27]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>T.K</ce:given-name><ce:surname>Chaudhuri</ce:surname></sb:author><sb:author><ce:given-name>K</ce:given-name><ce:surname>Horii</ce:surname></sb:author><sb:author><ce:given-name>T</ce:given-name><ce:surname>Yoda</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Arai</ce:surname></sb:author><sb:author><ce:given-name>S</ce:given-name><ce:surname>Nagata</ce:surname></sb:author><sb:author><ce:given-name>T.P</ce:given-name><ce:surname>Terada</ce:surname></sb:author><sb:author><ce:given-name>H</ce:given-name><ce:surname>Uchiyama</ce:surname></sb:author><sb:author><ce:given-name>T</ce:given-name><ce:surname>Ikura</ce:surname></sb:author><sb:author><ce:given-name>K</ce:given-name><ce:surname>Tsumoto</ce:surname></sb:author><sb:author><ce:given-name>H</ce:given-name><ce:surname>Kataoka</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Matsushima</ce:surname></sb:author><sb:author><ce:given-name>K</ce:given-name><ce:surname>Kuwajima</ce:surname></sb:author><sb:author><ce:given-name>I</ce:given-name><ce:surname>Kumagai</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J. Mol. Biol.</sb:maintitle></sb:title>
+<sb:volume-nr>285</sb:volume-nr></sb:series>
+<sb:date>1999</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1179</sb:first-page>
+<sb:last-page>1194</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB28">
+<ce:label>[28]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.S</ce:given-name><ce:surname>Hargrove</ce:surname></sb:author><sb:author><ce:given-name>S</ce:given-name><ce:surname>Krzywda</ce:surname></sb:author><sb:author><ce:given-name>A.J</ce:given-name><ce:surname>Wilkinson</ce:surname></sb:author><sb:author><ce:given-name>Y</ce:given-name><ce:surname>Dou</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Ikeda-Saito</ce:surname></sb:author><sb:author><ce:given-name>J.S</ce:given-name><ce:surname>Olson</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>33</sb:volume-nr></sb:series>
+<sb:date>1994</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>11767</sb:first-page>
+<sb:last-page>11775</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB29">
+<ce:label>[29]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S</ce:given-name><ce:surname>Mine</ce:surname></sb:author><sb:author><ce:given-name>T</ce:given-name><ce:surname>Ueda</ce:surname></sb:author><sb:author><ce:given-name>Y</ce:given-name><ce:surname>Hashimoto</ce:surname></sb:author><sb:author><ce:given-name>T</ce:given-name><ce:surname>Imoto</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Protein Eng.</sb:maintitle></sb:title>
+<sb:volume-nr>10</sb:volume-nr></sb:series>
+<sb:date>1997</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1333</sb:first-page>
+<sb:last-page>1338</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB30">
+<ce:label>[30]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>D.A</ce:given-name><ce:surname>Schultz</ce:surname></sb:author><sb:author><ce:given-name>R.L</ce:given-name><ce:surname>Baldwin</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Protein Sci.</sb:maintitle></sb:title>
+<sb:volume-nr>1</sb:volume-nr></sb:series>
+<sb:date>1992</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>910</sb:first-page>
+<sb:last-page>916</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB31">
+<ce:label>[31]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>N</ce:given-name><ce:surname>Duverger</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Murry-Brelier</ce:surname></sb:author><sb:author><ce:given-name>M</ce:given-name><ce:surname>Latta</ce:surname></sb:author><sb:author><ce:given-name>S</ce:given-name><ce:surname>Reboul</ce:surname></sb:author><sb:author><ce:given-name>G</ce:given-name><ce:surname>Castro</ce:surname></sb:author><sb:author><ce:given-name>J.F</ce:given-name><ce:surname>Mayaux</ce:surname></sb:author><sb:author><ce:given-name>J.C</ce:given-name><ce:surname>Fruchart</ce:surname></sb:author><sb:author><ce:given-name>J.M</ce:given-name><ce:surname>Taylor</ce:surname></sb:author><sb:author><ce:given-name>A</ce:given-name><ce:surname>Steinmetz</ce:surname></sb:author><sb:author><ce:given-name>P</ce:given-name><ce:surname>Denefle</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Eur. J. Biochem.</sb:maintitle></sb:title>
+<sb:volume-nr>201</sb:volume-nr></sb:series>
+<sb:date>1991</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>373</sb:first-page>
+<sb:last-page>383</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB32">
+<ce:label>[32]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>J</ce:given-name><ce:surname>Kordel</ce:surname></sb:author><sb:author><ce:given-name>S</ce:given-name><ce:surname>Forsen</ce:surname></sb:author><sb:author><ce:given-name>W.J</ce:given-name><ce:surname>Chazin</ce:surname></sb:author></sb:authors></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Biochemistry</sb:maintitle></sb:title>
+<sb:volume-nr>28</sb:volume-nr></sb:series>
+<sb:date>1989</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>7065</sb:first-page>
+<sb:last-page>7074</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference></ce:bibliography-sec></ce:bibliography></tail></converted-article>

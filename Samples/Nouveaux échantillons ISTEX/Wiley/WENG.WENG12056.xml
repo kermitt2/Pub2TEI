@@ -1,0 +1,2185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><component xmlns="http://www.wiley.com/namespaces/wiley" version="2.0" type="serialArticle" xml:lang="en" xml:id="WENG12056">
+<header>
+<publicationMeta level="product">
+<doi origin="wiley" registered="yes">10.1111/(ISSN)1467-971X</doi>
+<issn type="print">0883-2919</issn>
+<issn type="electronic">1467-971X</issn>
+<idGroup>
+<id type="product" value="WENG"/>
+</idGroup>
+<titleGroup>
+<title type="main" sort="WORLD ENGLISHES">World Englishes</title>
+<title type="short">World Englishes</title>
+</titleGroup>
+</publicationMeta>
+<publicationMeta level="part" position="12104">
+<doi>10.1111/weng.2013.32.issue-4</doi>
+<titleGroup>
+<title type="specialIssueTitle">SYMPOSIUM ON WORLD ENGLISHES AND INTERNATIONAL CALL CENTRES</title>
+</titleGroup>
+<copyright ownership="publisher">Copyright © 2013 John Wiley &amp; Sons Ltd</copyright>
+<numberingGroup>
+<numbering type="journalVolume" number="32">32</numbering>
+<numbering type="journalIssue">4</numbering>
+</numberingGroup>
+<creators>
+<creator xml:id="sped1" creatorRole="guestEditor">
+<personName><givenNames>KINGSLEY</givenNames><familyName>BOLTON</familyName></personName>
+</creator>
+</creators>
+<coverDate startDate="2013-12">December 2013</coverDate>
+</publicationMeta>
+<publicationMeta level="unit" position="20" type="article" status="forIssue">
+<doi origin="wiley">10.1111/weng.12056</doi>
+<idGroup>
+<id type="unit" value="WENG12056"/>
+</idGroup>
+<countGroup>
+<count type="pageTotal" number="19"/>
+</countGroup>
+<titleGroup>
+<title type="articleCategory">Articles</title>
+<title type="tocHeading1">Papers</title>
+</titleGroup>
+<copyright ownership="publisher">© 2013 John Wiley &amp; Sons Ltd</copyright>
+<eventGroup><event type="manuscriptReceived" date="2013-07-25"/><event type="xmlCreated" agent="Aptara" date="2013-09-10"/><event type="xmlConverted" agent="Converter:WILEY_ML3G_TO_WILEY_ML3GV2 version:3.2.6 mode:FullText" date="2013-11-19"/><event type="firstOnline" date="2013-11-19"/><event type="publishedOnlineFinalForm" date="2013-11-19"/><event type="xmlConverted" agent="Converter:WML3G_To_WML3G version:4.6.4 mode:FullText" date="2015-10-02"/></eventGroup>
+<numberingGroup>
+<numbering type="pageFirst">476</numbering>
+<numbering type="pageLast">494</numbering>
+</numberingGroup>
+<objectNameGroup>
+<objectName elementName="appendix">APPENDIX</objectName>
+</objectNameGroup>
+<linkGroup>
+<link type="toTypesetVersion" href="file:WENG.WENG12056.pdf"/>
+
+
+</linkGroup>
+</publicationMeta>
+<contentMeta>
+<titleGroup>
+<title type="main">Second language errors and features of world Englishes</title>
+<title type="shortAuthors">M. Obaidul Hamid and Richard B. Baldauf Jr</title>
+<title type="short">Second language errors and features of world Englishes</title>
+</titleGroup>
+<creators>
+<creator xml:id="weng12056-cr-0001" creatorRole="author" affiliationRef="#weng12056-aff-0001">
+<personName><givenNames>M. OBAIDUL</givenNames><familyName>HAMID</familyName>
+</personName>
+<contactDetails>
+<email>m.hamid@uq.edu.au</email>
+</contactDetails>
+</creator> AND
+<creator xml:id="weng12056-cr-0002" creatorRole="author" affiliationRef="#weng12056-aff-0002">
+<personName><givenNames>RICHARD B.</givenNames><familyName>BALDAUF</familyName><nameSuffix>JR</nameSuffix>
+</personName>
+<contactDetails>
+<email>r.baldauf@uq.edu.au</email>
+</contactDetails>
+</creator>
+</creators>
+<affiliationGroup>
+<affiliation xml:id="weng12056-aff-0001" countryCode="AU">
+<orgDiv>School of Education</orgDiv>
+<orgName>The University of Queensland</orgName>
+<address>
+<city>Brisbane</city>
+<postCode>4072</postCode>
+<country>Australia</country>
+</address>
+</affiliation>
+<affiliation xml:id="weng12056-aff-0002" countryCode="AU">
+<orgDiv>School of Education</orgDiv>
+<orgName>The University of Queensland</orgName>
+<address>
+<city>Brisbane</city>
+<postCode>4072</postCode>
+<country>Australia</country>
+</address>
+</affiliation>
+</affiliationGroup>
+<abstractGroup>
+<abstract type="main">
+<title type="main">ABSTRACT</title>
+<p>While exocentric norms (e.g. British and American English) informed by a second language acquisition (SLA) perspective are prevalent in the Outer Circle, there is a growing recognition of local varieties of Englishes belonging to the world Englishes (WE) paradigm. However, what constitutes an error or a varietal feature is hard to decide, particularly in the absence of codification of non‐native Englishes in many Outer Circle contexts. Yet, distinguishing between errors and varietal features is a pedagogical requirement for correcting learners’ errors and nurturing their linguistic creativity. Although the WE literature suggests criteria to determine the status of neologisms, these have their limitations. On the other hand, insufficient attention has been given to the agency of English teachers who are in a critical position to mediate language standards and their variations. Against this background, this paper reports a small‐scale study involving practising English teachers in Bangladesh to provide a pedagogical perspective on error/innovation issues. Acknowledging the underlying complexity, we argue that understanding teachers’ perspectives should be seen as an important research agenda to address learner English/L2 variety issues in L2 pedagogy.</p></abstract>
+</abstractGroup>
+</contentMeta>
+</header>
+<body sectionsNumbered="no">
+<section xml:id="weng12056-sec-0010">
+<title type="main">INTRODUCTON</title>
+<p>In second language acquisition (SLA), norms typically are provided by the target language (TL), for example, British or American English in the case of English as a second or foreign language. Accordingly, second language (L2) errors are defined as ‘deviations’ from norms which embody socially acceptable notions of correctness (Bartsch <link href="#weng12056-bib-0004"/>). Error analysis, which identifies, classifies and explains L2 errors against TL norms, has been an important area within SLA (Ellis <link href="#weng12056-bib-0018"/>), although in the 1970s it gave way to interlanguage theory. Nevertheless, the study of L2 errors continues to attract applied linguists, SLA researchers, and L2 practitioners for theoretical as well as pedagogical reasons.</p>
+<p>However, the growing recognition of varieties of L2 Englishes, commonly labelled world Englishes (WE),<link href="#weng12056-note-0001"/> problematises traditional conceptualisations of L2 errors and error studies carried out from an SLA perspective because:
+<blockFixed type="quotation"><p>the goal of SLA is, or ought to be, to acquire native‐like competence in the target language […] and hence the success of the learner's acquisition is to be judged accordingly. (Sridhar and Sridhar <link href="#weng12056-bib-0065"/>: 5)</p></blockFixed></p>
+<p>Against such assumptions (see Kachru <link href="#weng12056-bib-0034"/>; Kachru <link href="#weng12056-bib-0031"/>; Bhatt <link href="#weng12056-bib-0007"/>; Kirkpatrick <link href="#weng12056-bib-0037"/>) that have made the Inner Circle English ‘the unchallenged norm’ and L2 English ‘errors’, ‘deviations’, ‘aberrations’, ‘deficit forms’ ‘fossilisations’ and ‘interlanguage’, the WE perspective essentially argues that:
+<list xml:id="weng12056-list-0001" style="1">
+<listItem>There exists a repertoire of models for English, not just the NS varieties.</listItem>
+<listItem>Localised innovations in English which have their pragmatic bases deserve recognition.</listItem>
+<listItem>The ownership of English lies with all those who use it. (Kachru <link href="#weng12056-bib-0029"/>, cited in Brown <link href="#weng12056-bib-0010"/>: 233)</listItem>
+</list></p>
+<p>In many Outer Circle polities, where English has gone through a process of nativisation, the SLA perspective may be irrelevant to the kind of Englishes produced by speakers in response to local sociocultural realities (Bamgboṣe <link href="#weng12056-bib-0002"/>; Tan <link href="#weng12056-bib-0066"/>; Patil <link href="#weng12056-bib-0055"/>; Guzman 2009). As Kachru (<link href="#weng12056-bib-0028"/>: 30) explained:
+<blockFixed type="quotation"><p>In my view, the global diffusion of English has taken an interesting turn: the native speakers of this language seem to have lost the exclusive prerogative to control its standardization […] What we need now are new paradigms and perspectives for linguistic creativity in multilingual situations across cultures.</p></blockFixed></p>
+<p>The main argument that Kachru and other WE scholars have put forward is that many features of L2 English are natural innovations in language‐contact situations (see Leitner <link href="#weng12056-bib-0040"/>) and should be treated as such and not judged against Inner Circle standards, as has been the case in traditional SLA research. Although the WE literature, underpinned by such arguments, has thrived over the past three decades, the paradigm gap between the WE and SLA is yet to be bridged (Sridhar and Sridhar <link href="#weng12056-bib-0065"/>; Andreasson <link href="#weng12056-bib-0001"/>; Bamgboṣe <link href="#weng12056-bib-0002"/>; see also Mukherjee and Hundt <link href="#weng12056-bib-0050"/>). Consequently, error studies continue to use Inner Circle varieties as norms, while WE research, increasingly, focuses on innovative features of L2 Englishes together with their intelligibility and acceptability (Baumgardner <link href="#weng12056-bib-0005"/>; Smith <link href="#weng12056-bib-0063"/>), although many of these innovations are yet to be recognised as legitimate varieties in their own right. Consequently, an emerging critical question concerns distinguishing between errors in the SLA sense and features of L2 varieties in the WE sense (Kenkel and Tucker <link href="#weng12056-bib-0036"/>; Bamgboṣe <link href="#weng12056-bib-0002"/>; Davies et al. <link href="#weng12056-bib-0016"/>; Mollin <link href="#weng12056-bib-0049"/>; Guzman 2009; Groves <link href="#weng12056-bib-0021"/>; Li <link href="#weng12056-bib-0041"/>; van Rooy <link href="#weng12056-bib-0070"/>). As Bamgboṣe (<link href="#weng12056-bib-0002"/>: 1–2) explained:
+<blockFixed type="quotation"><p>The main question that arises with innovation is the need to decide when an observed feature of language use is indeed an innovation and when it is simply an error. An innovation is seen as an acceptable variant, while an error is simply a mistake or uneducated usage.</p></blockFixed></p>
+<p>Nowhere is this distinction between errors and innovations more desirable than in L2 pedagogy. English language teachers in the Outer Circle<link href="#weng12056-note-0002"/> need to work on L2 data and provide corrective feedback to students. Essentially, the feedback procedure has a gate‐keeping role in that some features of L2 English would be evaluated as errors needing correction while others would be seen as features of a variety requiring teacher approval, support and nurturance. As Gupta (<link href="#weng12056-bib-0022"/>: 108) observed: ‘Teachers should do their best to establish what they should correct firmly, what they should correct tentatively and, what they should accept as correct’.</p>
+<p>L2 pedagogy, particularly in the Outer Circle, is a site where issues of learner English and L2 variety exhibit their full complexity. National English language policies may prescribe exocentric norms as curricular goals, showing little regard for features of English on the ground (see Tomlinson <link href="#weng12056-bib-0068"/>). Such policy prescriptions would be impractical in contexts where locally produced English textbooks are used for instruction that reflect, almost unavoidably, local flavours of English. Moreover, as speakers of local varieties, English teachers may have limited exposure to exocentric norms, facing a dilemma: How can they live up to policy expectations with their own variable commands of exocentric norms and judge varied features of Englishes produced by their students and the general populace? Teachers’ judgments may become problematic because many features of L2 English are yet to be codified and disseminated in recognition of the claim to an L2 variety status. On the other hand, despite policy prescriptions, teachers often exercise their agency and develop their own criteria and strategies to deal with various pedagogical challenges in response to the reality on the ground in the interests of their students (Lin <link href="#weng12056-bib-0043"/>; Martin <link href="#weng12056-bib-0045"/>). As mediators between students and the official curriculum, teachers are thus gate‐keepers of language standards and varieties in society (Lee <link href="#weng12056-bib-0039"/>; Tupas 2010). Although there have been attempts at drawing out criteria (discussion follows) to distinguish between errors and innovations, not much attention has been given to practising teachers and the pedagogical perspective. The present study represents an initial attempt to understand teachers’ judgments on errors and varietal features and to develop teacher agency‐driven criteria and strategies to inform the existing criteria to distinguish between errors and innovations. In line with this goal, the study pursued three questions:
+<list xml:id="weng12056-list-0002" style="1">
+<listItem>What kinds of judgments do English teachers have on features of L2 English in terms of acceptability?</listItem>
+<listItem>How do they categorise those features of L2 English in terms of standards, varieties and learner English?</listItem>
+<listItem>What insights can be derived from a comparison of their judgment and categorisation of L2 Englishes?</listItem>
+</list></p>
+</section>
+<section xml:id="weng12056-sec-0020">
+<title type="main">ERRORS VERSUS VARIETAL FEATURES</title>
+<p>Kachru (<link href="#weng12056-bib-0030"/>) made a distinction between errors and innovations, which he labelled ‘mistakes’ and ‘deviations’ respectively, arguing that while mistakes may be unacceptable to native speakers of English, deviations may not which are produced in the new context of English and are systematic within a variety (see Mollin <link href="#weng12056-bib-0049"/>). While the characteristic of ‘consistency’ underpinning ‘deviation’ can helpfully explain many features of new Englishes (see Van Rooy <link href="#weng12056-bib-0070"/>), Bamgboṣe (<link href="#weng12056-bib-0002"/>), based on Kachru's distinctions, proposed an elaborate treatise consisting of five criteria: (1) demographic strength or number of users using the form; (2) geographic spread; (3) authority of influential people or media behind the form; (4) its codification; and (5) acceptability. Of these, the second criterion, as Li (<link href="#weng12056-bib-0041"/>) argues, is hard to measure. He also argues that the number of users of a particular form can be identified by doing a Google/Yahoo search which he adds as the sixth criterion, but, more appropriately, it can replace the criterion of demographic strength. Bamgboṣe (<link href="#weng12056-bib-0002"/>) rightly argues that of the five criteria codification and acceptability are the most important ones. Okunrinmeta (<link href="#weng12056-bib-0053"/>) emphasises acceptability together with grammaticality, appropriateness and intelligibility in determining the status of syntactic features of Nigerian English based on corpus material. Intelligibility has also been argued by other scholars (e.g. Smith and Nelson <link href="#weng12056-bib-0064"/>; Nelson <link href="#weng12056-bib-0051"/>; 2012; Smith <link href="#weng12056-bib-0063"/>).<link href="#weng12056-note-0003"/></p>
+<p>However, as we discuss later in the paper, many of these criteria have their conceptual and practical limitations. More crucially, there have been limited attempts at revisiting these criteria in the light of empirical insights. The present study is expected to make a modest contribution in this regard as well.</p>
+</section>
+<section xml:id="weng12056-sec-0030">
+<title type="main">PREVIOUS RESEARCH</title>
+<p>Although pedagogical ramifications of varieties of English have been emphasised in the literature (e.g. Kachru <link href="#weng12056-bib-0030"/>; Brown <link href="#weng12056-bib-0010"/>; Bhatt <link href="#weng12056-bib-0007"/>; McKay <link href="#weng12056-bib-0046"/>; Kirkpatrick <link href="#weng12056-bib-0037"/>; <link href="#weng12056-bib-0038"/>; Guzman 2009; Sharifian <link href="#weng12056-bib-0060"/>), tensions between errors and innovations, representing the two conflicting paradigms, have not received much attention. The paradigmatic divide can be illustrated by pointing out that while WE continues describing innovative features of L2 English (Kachru <link href="#weng12056-bib-0032"/>; Kachru et al. <link href="#weng12056-bib-0033"/>; Mesthrie <link href="#weng12056-bib-0048"/>; Shin and Kubota <link href="#weng12056-bib-0061"/>), error studies continue to be informed by the SLA perspective (e.g. Granger <link href="#weng12056-bib-0020"/>; Chan <link href="#weng12056-bib-0013"/>).</p>
+<p>However, an important segment of WE research has investigated social attitudes towards varieties of L2 English in general and specific features of those Englishes in particular (Baumgardner 1993; Crismore, Ngeow and Soo <link href="#weng12056-bib-0014"/>; Lick and Alsagoff <link href="#weng12056-bib-0042"/>; Butler <link href="#weng12056-bib-0011"/>; Timmis <link href="#weng12056-bib-0067"/>; Jin <link href="#weng12056-bib-0027"/>; Xiaoqiong <link href="#weng12056-bib-0071"/>; Mollin <link href="#weng12056-bib-0049"/>; Bernaisch <link href="#weng12056-bib-0003"/>; see also Llurda <link href="#weng12056-bib-0044"/> for a review). Understanding how people perceive varieties of L2 English and their exponents can be an important step in resolving tensions between errors and innovations (Mollin <link href="#weng12056-bib-0049"/>). Nevertheless, eliciting social attitudes and acceptability judgements on L2 English without comparing them to actual errors which reflect language deficiency may have limited pedagogical value. Moreover, attitudes surveys are muddled by contradictions between actual linguistic behaviours and desirable linguistic norms (e.g. Baumgardner <link href="#weng12056-bib-0005"/> for Pakistani English; Wiebesiek et al. <link href="#weng12056-bib-0072"/> for South African Indian English), or by ambivalence between the local variety in the abstract and its actual samples (e.g. Bautista <link href="#weng12056-bib-0006"/>, cited in Guzman 2009). The present study, therefore, moved beyond social acceptability judgments and asked participants to categorise features of L2 English to create an opportunity to examine relationships between social acceptability of L2 items and their categorisation as errors or varietal features.</p>
+<p>Research on errors and variants can be argued to be at its earliest stage at present. A few studies that have highlighted distinctions between them (e.g. Kenkel and Tucker <link href="#weng12056-bib-0036"/>; Li <link href="#weng12056-bib-0041"/>; Okunrinmeta <link href="#weng12056-bib-0053"/>; van Rooy <link href="#weng12056-bib-0070"/>) have done so mainly with reference to L2 corpus data. Research that focuses on error/variant distinction based on people's judgments includes a study by French (<link href="#weng12056-bib-0019"/>) which investigated whether there was a consensus among teachers in their evaluations of grammatical infelicities in the written work of Japanese English users. The study involved a written corpus of 248 papers written by undergraduate students at different stages of composition (first, second and final drafts) which were corrected by four university teachers: two American, one British and one Japanese. From the ways the teachers pointed out different grammatical errors in the students’ written work across the drafts, the researcher found that with some small exceptions:
+<blockFixed type="quotation"><p>there is little acceptance of third person “‐s,” article and plural errors in student writing, but there is a measured degree of the acceptance of errors with regards to sentence combining and fragments, omission of subject, generalizing or obscuring of subjects, and omission of expected superlatives. (French <link href="#weng12056-bib-0019"/>: 381)</p></blockFixed></p>
+<p>The study shows which grammatical features of Japanese English might receive acceptance as varietal features through pedagogical approval. However, the types and frequencies of errors pointed out by the teachers are not reliable because they did not follow strict patterns in identifying or ignoring errors in students’ work. Mollin's (<link href="#weng12056-bib-0049"/>) acceptability judgment survey included 20 mainly grammatical items which are believed to be features of the so‐called Euro‐English. The responses of 427 academics of 21 first language backgrounds working in universities across Europe showed that only a handful of the items received an acceptability rating of over 50 per cent, suggesting the preference of exocentric norms among the academics. While the teacher judgements provided an important attitudinal basis for commenting on the institutionalisation of Euro–English, there should have been more lexical items on the questionnaire which usually deviate more from exocentric norms than grammatical features (see the Conclusion).</p>
+<p>A more noteworthy study was carried out by O'Hara‐Davies (<link href="#weng12056-bib-0052"/>) which asked 29 pre‐tertiary students with higher levels of English proficiency to judge the acceptability of 20 sentences eight of which followed standard English (SE) norms while the remaining 12 (6 grammatical and 6 lexical) reflected the variety of Brunei English which would be considered unacceptable against exocentric norms. Of the eight SE sentences, 66 per cent of the judges considered them correct, 23 per cent rated them incorrect while 11 per cent could not decide on their correctness. Of the six grammatically unacceptable items, 46.5 per cent judges considered them correct, 45 per cent incorrect and 8.5 per cent were not sure. Finally, 58 per cent of the students were happy to accept the six lexically unacceptable sentences, 33 per cent considered them incorrect while 9 per cent not being able to decide.</p>
+<p>Although the students recognised that the survey items diverged from SE, they considered Brunei English a more appropriate choice, particularly for social interaction. However, the students also judged some features of Brunei English as incorrect which suggests that there were no identifiable patterns in the students’ judgements. This can partly be attributed to the judges themselves who were students and, despite their relatively high levels of English proficiency, did not have the expertise to judge the ‘correct’ use of English. A more reliable strategy would be to involve practising English teachers to examine how they judge features of L2 English and whether there is a consensus in their understandings and categorisations of features of L2 English as errors or varieties.</p>
+</section>
+<section xml:id="weng12056-sec-0040">
+<title type="main">RESEARCH METHODOLOGY</title>
+<section xml:id="weng12056-sec-0050">
+<title type="main">Context</title>
+<p>The present study is located in Bangladesh, a South Asian nation of over 170 million people, which underwent British colonial rule for almost 200 years together with India and Pakistan. At present, although teaching English to a sizable learner population from Year 1 consumes a large amount of resources from public and private sources, the actual use of English in this generally monolingual society is rather limited, particularly outside the capital. The WE literature commonly locates Bangladesh in the Outer Circle, giving English an L2 status. However, the application of Mollin's criteria (<link href="#weng12056-bib-0049"/>) previously mentioned, or locating Bangladesh in Schneider's (<link href="#weng12056-bib-0057"/>) dynamic model, would not accord the polity an L2 variety status. In fact, in their investigation of the use of hypothetical <i>if</i>‐clauses in South Asian Englishes (SAEs), drawing on data from local English newspapers in Bangladesh, India, Pakistan and Sri Lanka, Hundt et al. (<link href="#weng12056-bib-0026"/>: 160) have argued: ‘English in Bangladesh is, in essence, a foreign language’. From this perspective, Bangladeshi English may not be seen as an institutionalised variety with distinct endocentric norms. However, we would argue that endocentric norm development cannot be seen in either/or terms, as Schneider's (<link href="#weng12056-bib-0057"/>) evolutionary process of post‐colonial variety of English shows that there are lengthy stages of language interactions between speakers of indigenous and settling languages between the foundation and norm differentiation. In the absence of adequate resources, power and expertise required of language planning and management (see Kaplan and Baldauf <link href="#weng12056-bib-0035"/>; Bolton, Graddol and Meierkord <link href="#weng12056-bib-0009"/>), Bangladesh and other comparable polities may be unable to codify local Englishes in dictionaries and other authoritative publications. However, these features of English may reach the pedagogical domain and the larger social spaces via other outlets as we illustrate in the present study. Using this specific context of Bangladesh – where English may be located at an early stage of nativisation in Schneider's (<link href="#weng12056-bib-0057"/>) model but certainly moving forward to norm development – as a case, we explore how English teachers judge the acceptability of these features of L2 English against the background of an L2 variety in the making. We emphasise that our use of Bangladeshi English (BE) in the article is not meant to be taken as an institutionalised variety such as Indian English, but rather as an emerging – at the same time – problematic category (see Conclusion).</p>
+</section>
+<section xml:id="weng12056-sec-0060">
+<title type="main">Participants</title>
+<p>Twenty five English language teachers who worked at different universities in Bangladesh participated in the present study. Each of the teachers had at least an MA in English literature, applied linguistics or TESOL and taught at the undergraduate and postgraduate levels. Only a few of the teachers had obtained postgraduate qualifications (MA and/or PhD) from traditional English‐speaking polities (TESP). All participants spoke Bangla as their L1. The majority of them were females.</p>
+<p>The participants had varying lengths of teaching experience ranging from two to 25 years. Although they were not asked to self‐assess their English proficiency, based on the first author's experience of working with the majority of them, they had advanced levels of English, with some possessing native‐like proficiency. The universities where they work are teaching‐focused and it is not imperative for them to engage in research and publication, but nonetheless some were involved in small‐scale research projects for promotions and/or out of academic interests (see Hamid <link href="#weng12056-bib-0024"/>). None of the teachers had expertise in world Englishes, although they would have some familiarity with issues of varieties of Englishes from their academic studies and teaching experience in an Outer Circle context where colonial and post‐colonial views of English are prevalent.</p>
+</section>
+<section xml:id="weng12056-sec-0070">
+<title type="main">Corpus</title>
+<p>The features of L2 English used in the study were selected from a locally published volume entitled <i>Miseries of millions in Bangladesh</i> (Shahiduzzaman <link href="#weng12056-bib-0059"/>). Whether the teachers judge the items favourably or unfavourably, these had passed through a crucial gate‐keeping process of publication and had attained some legitimacy through codification. The volume contained 71 feature articles by local trainee journalists on a range of topics including politics, education, culture, poverty, malnutrition, environment, technology, health and gender. It was published by a donor‐funded organisation called News Network based in Dhaka, the Bangladeshi capital. The volume targeted an international readership, although the book was available locally.</p>
+</section>
+<section xml:id="weng12056-sec-0080">
+<title type="main">Questionnaire survey</title>
+<p>Sixteen examples of L2 constructions related to syntax, tense, lexis and discourse selected from the volume were arranged on a questionnaire. Each construction was accompanied by the title of the article as well as an extended text containing the structure which was underlined<link href="#weng12056-note-0004"/> (see the <link href="#weng12056-app-0001">Appendix</link>). Of the two questions included in the questionnaire, the first asked the participants to judge the acceptability of each item on a scale of 1–5 where 1 = fully acceptable, 2 = looks ok, 3 = not sure, 4 = looks unacceptable and 5 = totally unacceptable. The second question asked the participants to describe each item choosing from four descriptors: (1) Standard English (SE); (2) Bangladesh English globally intelligible (BE<sub>g</sub>); (3) Bangladesh English locally intelligible (BE<sub>l</sub>); and (4) errors, and/or to use their own description under the category of ‘other’. The participants’ responses to the questions are reported in the next section.</p>
+</section>
+</section>
+<section xml:id="weng12056-sec-0090">
+<title type="main">FINDINGS</title>
+<section xml:id="weng12056-sec-0100">
+<title type="main">Acceptability</title>
+<p>Table <link href="#weng12056-tbl-0001"/> presents the teachers’ (in rows) acceptability judgements of the L2 items (in columns). Their responses are divergent, but nevertheless some patterns can be identified. From an individual perspective, no two teachers responded to any item the same way, making it impossible to have reached a consensus. However, based on their judgments, the teachers can be located on different points on a continuum that indicates their attitudes towards errors and variants. Twelve teachers (T1, T2, T3, T4, T6, T7, T8, T11, T13, T15, T16, and T17) can be placed on one end based on their negative judgments (X and X<sub>1</sub> combined) on 14 or more items. On the other hand, only T21 and possibly T10 can be placed towards the other end for their generally favourable judgments on more than half of the items. T5, T9 and T18 were divided in their judgments, with T5 being more doubtful than the other two. The remaining teachers can be located at different points from the middle towards the end of the continuum for different degrees of negative judgment.</p>
+<tabular xml:id="weng12056-tbl-0001" pRights="unknown" eRights="yes" copyright="John Wiley &amp; Sons, Ltd.">
+<title type="main">Teacher's acceptability judgements of L2 English</title>
+<table frame="topbot">
+<tgroup cols="23">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="center"/>
+<colspec colnum="3" colname="col3" align="center"/>
+<colspec colnum="4" colname="col4" align="center"/>
+<colspec colnum="5" colname="col5" align="center"/>
+<colspec colnum="6" colname="col6" align="center"/>
+<colspec colnum="7" colname="col7" align="center"/>
+<colspec colnum="8" colname="col8" align="center"/>
+<colspec colnum="9" colname="col9" align="center"/>
+<colspec colnum="10" colname="col10" align="center"/>
+<colspec colnum="11" colname="col11" align="center"/>
+<colspec colnum="12" colname="col12" align="center"/>
+<colspec colnum="13" colname="col13" align="center"/>
+<colspec colnum="14" colname="col14" align="center"/>
+<colspec colnum="15" colname="col15" align="center"/>
+<colspec colnum="16" colname="col16" align="center"/>
+<colspec colnum="17" colname="col17" align="center"/>
+<colspec colnum="18" colname="col18" align="center"/>
+<colspec colnum="19" colname="col19" align="center"/>
+<colspec colnum="20" colname="col20" align="center"/>
+<colspec colnum="21" colname="col21" align="center"/>
+<colspec colnum="22" colname="col22" align="center"/>
+<colspec colnum="23" colname="col23" align="center"/>
+<thead>
+<row>
+<entry colname="col1">Items</entry>
+<entry colname="col2"/>
+<entry colname="col3" align="center"/>
+<entry colname="col4" align="center"/>
+<entry colname="col5" align="center"/>
+<entry colname="col6" align="center"/>
+<entry colname="col7" align="center"/>
+<entry colname="col8" align="center"/>
+<entry colname="col9" align="center"/>
+<entry colname="col10" align="center"/>
+<entry colname="col11" align="center"/>
+<entry colname="col12" align="center"/>
+<entry colname="col13" align="center"/>
+<entry colname="col14" align="center"/>
+<entry colname="col15" align="center"/>
+<entry colname="col16" align="center"/>
+<entry colname="col17" align="center"/>
+<entry colname="col18" align="center"/>
+<entry colname="col19" align="center"/>
+<entry colname="col20" align="center"/>
+<entry colname="col21" align="center"/>
+<entry colname="col22" align="center"/>
+<entry colname="col23" align="center"/>
+</row>
+<row rowsep="1">
+<entry colname="col1">Teachers</entry>
+<entry colname="col2" align="center">i2</entry>
+<entry colname="col3" align="center">i3</entry>
+<entry colname="col4" align="center">i6</entry>
+<entry colname="col5" align="center">i7</entry>
+<entry colname="col6" align="center">i4</entry>
+<entry colname="col7" align="center">i14</entry>
+<entry colname="col8" align="center">i15</entry>
+<entry colname="col9" align="center">i1</entry>
+<entry colname="col10" align="center">i8</entry>
+<entry colname="col11" align="center">i16</entry>
+<entry colname="col12" align="center">i5</entry>
+<entry colname="col13" align="center">i9</entry>
+<entry colname="col14" align="center">i11</entry>
+<entry colname="col15" align="center">i13</entry>
+<entry colname="col16" align="center">i10</entry>
+<entry colname="col17" align="center">i12</entry>
+<entry colname="col18" align="center"/>
+<entry colname="col19" align="center">X</entry>
+<entry colname="col20" align="center">X<sub>1</sub></entry>
+<entry colname="col21" align="center">?</entry>
+<entry colname="col22" align="center">√<sub>1</sub></entry>
+<entry colname="col23" align="center">√</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">T1</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">?</entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X<sub>1</sub></entry>
+<entry colname="col6">X<sub>1</sub></entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">X<sub>1</sub></entry>
+<entry colname="col11">√<sub>1</sub></entry>
+<entry colname="col12">X<sub>1</sub></entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">X<sub>1</sub></entry>
+<entry colname="col17">X<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">5</entry>
+<entry colname="col20">9</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22">1</entry>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T2</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X</entry>
+<entry colname="col4">X<sub>1</sub></entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">√<sub>1</sub></entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X<sub>1</sub></entry>
+<entry colname="col9">X</entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">X</entry>
+<entry colname="col16">X<sub>1</sub></entry>
+<entry colname="col17">√</entry>
+<entry colname="col18"/>
+<entry colname="col19">10</entry>
+<entry colname="col20">4</entry>
+<entry colname="col21"/>
+<entry colname="col22">1</entry>
+<entry colname="col23">1</entry>
+</row>
+<row>
+<entry colname="col1">T3</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X</entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X</entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X</entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">X</entry>
+<entry colname="col16">X</entry>
+<entry colname="col17">X</entry>
+<entry colname="col18"/>
+<entry colname="col19">16</entry>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T4</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X<sub>1</sub></entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X<sub>1</sub></entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X</entry>
+<entry colname="col14">X<sub>1</sub></entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">X</entry>
+<entry colname="col17">√<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">9</entry>
+<entry colname="col20">6</entry>
+<entry colname="col21"/>
+<entry colname="col22">1</entry>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T5</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">?</entry>
+<entry colname="col5">X<sub>1</sub></entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X<sub>1</sub></entry>
+<entry colname="col8">?</entry>
+<entry colname="col9">√<sub>1</sub></entry>
+<entry colname="col10">?</entry>
+<entry colname="col11">?</entry>
+<entry colname="col12">?</entry>
+<entry colname="col13">?</entry>
+<entry colname="col14">?</entry>
+<entry colname="col15">√<sub>1</sub></entry>
+<entry colname="col16">X<sub>1</sub></entry>
+<entry colname="col17">?</entry>
+<entry colname="col18"/>
+<entry colname="col19">2</entry>
+<entry colname="col20">4</entry>
+<entry colname="col21">8</entry>
+<entry colname="col22">2</entry>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T6</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">√<sub>1</sub></entry>
+<entry colname="col15">√</entry>
+<entry colname="col16">X</entry>
+<entry colname="col17">X<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">10</entry>
+<entry colname="col20">4</entry>
+<entry colname="col21"/>
+<entry colname="col22">1</entry>
+<entry colname="col23">1</entry>
+</row>
+<row>
+<entry colname="col1">T7</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X</entry>
+<entry colname="col4">X<sub>1</sub></entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X<sub>1</sub></entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">?</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">X<sub>1</sub></entry>
+<entry colname="col17">?</entry>
+<entry colname="col18"/>
+<entry colname="col19">8</entry>
+<entry colname="col20">6</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T8</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X</entry>
+<entry colname="col10">X<sub>1</sub></entry>
+<entry colname="col11">X<sub>1</sub></entry>
+<entry colname="col12">X<sub>1</sub></entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">X<sub>1</sub></entry>
+<entry colname="col15">X</entry>
+<entry colname="col16">X<sub>1</sub></entry>
+<entry colname="col17">X</entry>
+<entry colname="col18"/>
+<entry colname="col19">9</entry>
+<entry colname="col20">7</entry>
+<entry colname="col21"/>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T9</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X<sub>1</sub></entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">√<sub>1</sub></entry>
+<entry colname="col7">?</entry>
+<entry colname="col8">√<sub>1</sub></entry>
+<entry colname="col9">X</entry>
+<entry colname="col10">?</entry>
+<entry colname="col11">√<sub>1</sub></entry>
+<entry colname="col12">√<sub>1</sub></entry>
+<entry colname="col13">X</entry>
+<entry colname="col14">X<sub>1</sub></entry>
+<entry colname="col15">√<sub>1</sub></entry>
+<entry colname="col16">?</entry>
+<entry colname="col17">?</entry>
+<entry colname="col18"/>
+<entry colname="col19">4</entry>
+<entry colname="col20">3</entry>
+<entry colname="col21">4</entry>
+<entry colname="col22">5</entry>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T10</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">√<sub>1</sub></entry>
+<entry colname="col4">X<sub>1</sub></entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">?</entry>
+<entry colname="col7">√<sub>1</sub></entry>
+<entry colname="col8">X<sub>1</sub></entry>
+<entry colname="col9">√<sub>1</sub></entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">√</entry>
+<entry colname="col12">X<sub>1</sub></entry>
+<entry colname="col13">√<sub>1</sub></entry>
+<entry colname="col14">√<sub>1</sub></entry>
+<entry colname="col15">?</entry>
+<entry colname="col16">√</entry>
+<entry colname="col17">√<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">3</entry>
+<entry colname="col20">3</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22">6</entry>
+<entry colname="col23">2</entry>
+</row>
+<row>
+<entry colname="col1">T11</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X</entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X</entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">X</entry>
+<entry colname="col17">X<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">13</entry>
+<entry colname="col20">3</entry>
+<entry colname="col21"/>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T12</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X<sub>1</sub></entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X<sub>1</sub></entry>
+<entry colname="col9">X</entry>
+<entry colname="col10">√<sub>1</sub></entry>
+<entry colname="col11">√<sub>1</sub></entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">√<sub>1</sub></entry>
+<entry colname="col14">√<sub>1</sub></entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">?</entry>
+<entry colname="col17">√</entry>
+<entry colname="col18"/>
+<entry colname="col19">6</entry>
+<entry colname="col20">4</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22">4</entry>
+<entry colname="col23">1</entry>
+</row>
+<row>
+<entry colname="col1">T13</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X</entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X<sub>1</sub></entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X</entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X</entry>
+<entry colname="col14">√<sub>1</sub></entry>
+<entry colname="col15">X</entry>
+<entry colname="col16">X<sub>1</sub></entry>
+<entry colname="col17">X</entry>
+<entry colname="col18"/>
+<entry colname="col19">13</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21"/>
+<entry colname="col22">1</entry>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T14</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X</entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">?</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">√<sub>1</sub></entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">√<sub>1</sub></entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">X</entry>
+<entry colname="col16">√<sub>1</sub></entry>
+<entry colname="col17">√</entry>
+<entry colname="col18"/>
+<entry colname="col19">10</entry>
+<entry colname="col20">1</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22">3</entry>
+<entry colname="col23">1</entry>
+</row>
+<row>
+<entry colname="col1">T15</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X<sub>1</sub></entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">X<sub>1</sub></entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X<sub>1</sub></entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">?</entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">X</entry>
+<entry colname="col17">X<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">7</entry>
+<entry colname="col20">8</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T16</entry>
+<entry colname="col2">X<sub>1</sub></entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X<sub>1</sub></entry>
+<entry colname="col7">?</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">X<sub>1</sub></entry>
+<entry colname="col11">X<sub>1</sub></entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X</entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">X<sub>1</sub></entry>
+<entry colname="col17">?</entry>
+<entry colname="col18"/>
+<entry colname="col19">6</entry>
+<entry colname="col20">8</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T17</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">?</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">X</entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">X</entry>
+<entry colname="col16">X</entry>
+<entry colname="col17">X<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">12</entry>
+<entry colname="col20">3</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T18</entry>
+<entry colname="col2">X<sub>1</sub></entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">√<sub>1</sub></entry>
+<entry colname="col6">?</entry>
+<entry colname="col7">√<sub>1</sub></entry>
+<entry colname="col8">X<sub>1</sub></entry>
+<entry colname="col9">√<sub>1</sub></entry>
+<entry colname="col10">X<sub>1</sub></entry>
+<entry colname="col11">X<sub>1</sub></entry>
+<entry colname="col12">X</entry>
+<entry colname="col13">√<sub>1</sub></entry>
+<entry colname="col14">√</entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">√<sub>1</sub></entry>
+<entry colname="col17">√</entry>
+<entry colname="col18"/>
+<entry colname="col19">2</entry>
+<entry colname="col20">6</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22">5</entry>
+<entry colname="col23">2</entry>
+</row>
+<row>
+<entry colname="col1">T19</entry>
+<entry colname="col2">X<sub>1</sub></entry>
+<entry colname="col3">?</entry>
+<entry colname="col4">X<sub>1</sub></entry>
+<entry colname="col5">X<sub>1</sub></entry>
+<entry colname="col6">X<sub>1</sub></entry>
+<entry colname="col7">X<sub>1</sub></entry>
+<entry colname="col8">?</entry>
+<entry colname="col9">√<sub>1</sub></entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X<sub>1</sub></entry>
+<entry colname="col12">√<sub>1</sub></entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">X<sub>1</sub></entry>
+<entry colname="col15">X</entry>
+<entry colname="col16">?</entry>
+<entry colname="col17">√<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">2</entry>
+<entry colname="col20">8</entry>
+<entry colname="col21">3</entry>
+<entry colname="col22">3</entry>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T20</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X<sub>1</sub></entry>
+<entry colname="col5">?</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">√<sub>1</sub></entry>
+<entry colname="col8">X<sub>1</sub></entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">?</entry>
+<entry colname="col12">?</entry>
+<entry colname="col13">√<sub>1</sub></entry>
+<entry colname="col14">X<sub>1</sub></entry>
+<entry colname="col15">X<sub>1</sub></entry>
+<entry colname="col16">√</entry>
+<entry colname="col17">√</entry>
+<entry colname="col18"/>
+<entry colname="col19">3</entry>
+<entry colname="col20">6</entry>
+<entry colname="col21">3</entry>
+<entry colname="col22">2</entry>
+<entry colname="col23">2</entry>
+</row>
+<row>
+<entry colname="col1">T21</entry>
+<entry colname="col2">X<sub>1</sub></entry>
+<entry colname="col3">√<sub>1</sub></entry>
+<entry colname="col4">√<sub>1</sub></entry>
+<entry colname="col5">√<sub>1</sub></entry>
+<entry colname="col6">√<sub>1</sub></entry>
+<entry colname="col7">√<sub>1</sub></entry>
+<entry colname="col8">X<sub>1</sub></entry>
+<entry colname="col9">√</entry>
+<entry colname="col10">?</entry>
+<entry colname="col11">√<sub>1</sub></entry>
+<entry colname="col12">√<sub>1</sub></entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">X<sub>1</sub></entry>
+<entry colname="col15">√</entry>
+<entry colname="col16">√<sub>1</sub></entry>
+<entry colname="col17">√<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20">4</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22">9</entry>
+<entry colname="col23">2</entry>
+</row>
+<row>
+<entry colname="col1">T22</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">?</entry>
+<entry colname="col5">√<sub>1</sub></entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X</entry>
+<entry colname="col8">X</entry>
+<entry colname="col9">√<sub>1</sub></entry>
+<entry colname="col10">√</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">√</entry>
+<entry colname="col13">X</entry>
+<entry colname="col14">X</entry>
+<entry colname="col15">?</entry>
+<entry colname="col16">?</entry>
+<entry colname="col17">X</entry>
+<entry colname="col18"/>
+<entry colname="col19">8</entry>
+<entry colname="col20">1</entry>
+<entry colname="col21">3</entry>
+<entry colname="col22">2</entry>
+<entry colname="col23">2</entry>
+</row>
+<row>
+<entry colname="col1">T23</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X</entry>
+<entry colname="col4">X<sub>1</sub></entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X<sub>1</sub></entry>
+<entry colname="col8">√<sub>1</sub></entry>
+<entry colname="col9">√<sub>1</sub></entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X</entry>
+<entry colname="col12">X<sub>1</sub></entry>
+<entry colname="col13">√<sub>1</sub></entry>
+<entry colname="col14">√</entry>
+<entry colname="col15">?</entry>
+<entry colname="col16">√<sub>1</sub></entry>
+<entry colname="col17">X<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">6</entry>
+<entry colname="col20">4</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22">4</entry>
+<entry colname="col23">1</entry>
+</row>
+<row>
+<entry colname="col1">T24</entry>
+<entry colname="col2">X</entry>
+<entry colname="col3">X</entry>
+<entry colname="col4">X</entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X<sub>1</sub></entry>
+<entry colname="col8">√<sub>1</sub></entry>
+<entry colname="col9">X</entry>
+<entry colname="col10">X<sub>1</sub></entry>
+<entry colname="col11">X<sub>1</sub></entry>
+<entry colname="col12">√<sub>1</sub></entry>
+<entry colname="col13">X<sub>1</sub></entry>
+<entry colname="col14">X<sub>1</sub></entry>
+<entry colname="col15">√<sub>1</sub></entry>
+<entry colname="col16">X<sub>1</sub></entry>
+<entry colname="col17">X<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">6</entry>
+<entry colname="col20">7</entry>
+<entry colname="col21"/>
+<entry colname="col22">3</entry>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">T25</entry>
+<entry colname="col2">X<sub>1</sub></entry>
+<entry colname="col3">X<sub>1</sub></entry>
+<entry colname="col4">X<sub>1</sub></entry>
+<entry colname="col5">X</entry>
+<entry colname="col6">X</entry>
+<entry colname="col7">X<sub>1</sub></entry>
+<entry colname="col8">√<sub>1</sub></entry>
+<entry colname="col9">X<sub>1</sub></entry>
+<entry colname="col10">X</entry>
+<entry colname="col11">X<sub>1</sub></entry>
+<entry colname="col12">√<sub>1</sub></entry>
+<entry colname="col13">?</entry>
+<entry colname="col14">√<sub>1</sub></entry>
+<entry colname="col15">√<sub>1</sub></entry>
+<entry colname="col16">√<sub>1</sub></entry>
+<entry colname="col17">X<sub>1</sub></entry>
+<entry colname="col18"/>
+<entry colname="col19">3</entry>
+<entry colname="col20">7</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22">5</entry>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">X (%)</entry>
+<entry colname="col2">80</entry>
+<entry colname="col3">32</entry>
+<entry colname="col4">52</entry>
+<entry colname="col5">68</entry>
+<entry colname="col6">64</entry>
+<entry colname="col7">48</entry>
+<entry colname="col8">44</entry>
+<entry colname="col9">32</entry>
+<entry colname="col10">48</entry>
+<entry colname="col11">44</entry>
+<entry colname="col12">48</entry>
+<entry colname="col13">28</entry>
+<entry colname="col14">36</entry>
+<entry colname="col15">28</entry>
+<entry colname="col16">24</entry>
+<entry colname="col17">16</entry>
+<entry colname="col18">73</entry>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">X<sub>1</sub> (%)</entry>
+<entry colname="col2">20</entry>
+<entry colname="col3">52</entry>
+<entry colname="col4">32</entry>
+<entry colname="col5">16</entry>
+<entry colname="col6">12</entry>
+<entry colname="col7">28</entry>
+<entry colname="col8">32</entry>
+<entry colname="col9">40</entry>
+<entry colname="col10">24</entry>
+<entry colname="col11">28</entry>
+<entry colname="col12">20</entry>
+<entry colname="col13">40</entry>
+<entry colname="col14">28</entry>
+<entry colname="col15">36</entry>
+<entry colname="col16">32</entry>
+<entry colname="col17">32</entry>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">? (%)</entry>
+<entry colname="col2"/>
+<entry colname="col3">8</entry>
+<entry colname="col4">12</entry>
+<entry colname="col5">4</entry>
+<entry colname="col6">12</entry>
+<entry colname="col7">8</entry>
+<entry colname="col8">8</entry>
+<entry colname="col9"/>
+<entry colname="col10">16</entry>
+<entry colname="col11">8</entry>
+<entry colname="col12">8</entry>
+<entry colname="col13">8</entry>
+<entry colname="col14">8</entry>
+<entry colname="col15">12</entry>
+<entry colname="col16">16</entry>
+<entry colname="col17">16</entry>
+<entry colname="col18">9</entry>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">√<sub>1</sub> (%)</entry>
+<entry colname="col2"/>
+<entry colname="col3">8</entry>
+<entry colname="col4">4</entry>
+<entry colname="col5">12</entry>
+<entry colname="col6">12</entry>
+<entry colname="col7">16</entry>
+<entry colname="col8">16</entry>
+<entry colname="col9">24</entry>
+<entry colname="col10">8</entry>
+<entry colname="col11">16</entry>
+<entry colname="col12">20</entry>
+<entry colname="col13">24</entry>
+<entry colname="col14">20</entry>
+<entry colname="col15">16</entry>
+<entry colname="col16">20</entry>
+<entry colname="col17">16</entry>
+<entry colname="col18">18</entry>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+<row>
+<entry colname="col1">√ (%)</entry>
+<entry colname="col2"/>
+<entry colname="col3"/>
+<entry colname="col4"/>
+<entry colname="col5"/>
+<entry colname="col6"/>
+<entry colname="col7"/>
+<entry colname="col8"/>
+<entry colname="col9">4</entry>
+<entry colname="col10">4</entry>
+<entry colname="col11">4</entry>
+<entry colname="col12">4</entry>
+<entry colname="col13"/>
+<entry colname="col14">8</entry>
+<entry colname="col15">8</entry>
+<entry colname="col16">8</entry>
+<entry colname="col17">20</entry>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+<entry colname="col23"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+<noteGroup>
+<note xml:id="weng12056-tbl1-note-0001" numbered="no"><p>√ = fully acceptable; √<sub>1</sub> = Looks ok; ? = Not sure; X<sub>1</sub> = looks unacceptable; X = totally unacceptable.</p></note>
+</noteGroup>
+</tabular>
+<p>Looking at the L2 items from a collective perspective, nearly three quarters of the teachers (73%) considered them unacceptable (X = 43.25%, X<sub>1</sub> = 29.5%). Fifteen of the 16 items received an unacceptability rating of at least 56 per cent (X and X<sub>1</sub> combined). This rating for the remaining item (i12) is also close to 50 per cent. Conversely, the acceptability rating of the items as a whole was just over 18 per cent in which full acceptability rating was less than 4 per cent. Overall, the majority judgment was not in favour of accepting the features of L2 English, providing support for the dominance of an exonormative orientation.</p>
+<p>This overall pattern underlying the data should be viewed against teachers’ collective judgements on individual items. Except for i2 (‘The <span cssStyle="text-decoration:underline">worrying</span> is that …’) which was unacceptable to all 25 teachers, the remaining 15 items were acceptable to some judges and unacceptable to others, although overall unacceptability was still dominant. Fourteen items were judged unacceptable by over 60 per cent of the teachers. The teachers were divided in the judgments on two items (i10 and i12), although acceptability ratings of these items were not very high (see Table <link href="#weng12056-tbl-0001"/>).</p>
+<p>In summary, it can be argued that teacher judgments reflected an exonormative orientation (in this sense, the SLA paradigm) probably in the absence of the lack of variety status of Bangladeshi English (see discussion in the last section), although teacher responses were marked by subjectivity reflecting their individual agency.</p>
+</section>
+<section xml:id="weng12056-sec-0110">
+<title type="main">Categorisation</title>
+<p>The second question asked the teachers to categorise the 16 items and their responses are reported in Table <link href="#weng12056-tbl-0002"/>. Taken together, of a total 400 (18 × 25) possible responses, 45.5 per cent were errors, 40 per cent features of BE (BE<sub>g</sub> and BE<sub>l</sub> combined) and 9.5 per cent SE and 4 per cent of other. Compared to the unacceptability rating (73%) in Table <link href="#weng12056-tbl-0001"/>, the proportion of errors is considerably low implying that an L2 construction can be unacceptable even when it is not an error.</p>
+<tabular xml:id="weng12056-tbl-0002" pRights="unknown" eRights="yes" copyright="John Wiley &amp; Sons, Ltd.">
+<title type="main">Teacher categorisations of the L2 items</title>
+<table frame="topbot">
+<tgroup cols="22">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="center"/>
+<colspec colnum="3" colname="col3" align="center"/>
+<colspec colnum="4" colname="col4" align="center"/>
+<colspec colnum="5" colname="col5" align="center"/>
+<colspec colnum="6" colname="col6" align="center"/>
+<colspec colnum="7" colname="col7" align="center"/>
+<colspec colnum="8" colname="col8" align="center"/>
+<colspec colnum="9" colname="col9" align="center"/>
+<colspec colnum="10" colname="col10" align="center"/>
+<colspec colnum="11" colname="col11" align="center"/>
+<colspec colnum="12" colname="col12" align="center"/>
+<colspec colnum="13" colname="col13" align="center"/>
+<colspec colnum="14" colname="col14" align="center"/>
+<colspec colnum="15" colname="col15" align="center"/>
+<colspec colnum="16" colname="col16" align="center"/>
+<colspec colnum="17" colname="col17" align="center"/>
+<colspec colnum="18" colname="col18" align="center"/>
+<colspec colnum="19" colname="col19" align="center"/>
+<colspec colnum="20" colname="col20" align="center"/>
+<colspec colnum="21" colname="col21" align="center"/>
+<colspec colnum="22" colname="col22" align="center"/>
+<thead>
+<row>
+<entry colname="col1">Items</entry>
+<entry colname="col2"/>
+<entry colname="col3"/>
+<entry colname="col4"/>
+<entry colname="col5"/>
+<entry colname="col6"/>
+<entry colname="col7"/>
+<entry colname="col8"/>
+<entry colname="col9"/>
+<entry colname="col10"/>
+<entry colname="col11"/>
+<entry colname="col12"/>
+<entry colname="col13"/>
+<entry colname="col14"/>
+<entry colname="col15"/>
+<entry colname="col16"/>
+<entry colname="col17"/>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row rowsep="1">
+<entry colname="col1">Teachers</entry>
+<entry colname="col2" align="center">i2</entry>
+<entry colname="col3" align="center">i3</entry>
+<entry colname="col4" align="center">i6</entry>
+<entry colname="col5" align="center">i7</entry>
+<entry colname="col6" align="center">i4</entry>
+<entry colname="col7" align="center">i14</entry>
+<entry colname="col8" align="center">i15</entry>
+<entry colname="col9" align="center">i1</entry>
+<entry colname="col10" align="center">i8</entry>
+<entry colname="col11" align="center">i16</entry>
+<entry colname="col12" align="center">i5</entry>
+<entry colname="col13" align="center">i9</entry>
+<entry colname="col14" align="center">i11</entry>
+<entry colname="col15" align="center">i13</entry>
+<entry colname="col16" align="center">i10</entry>
+<entry colname="col17" align="center">i12</entry>
+<entry colname="col18" align="center">ER</entry>
+<entry colname="col19" align="center">BE<sub>g</sub></entry>
+<entry colname="col20" align="center">BE<sub>l</sub></entry>
+<entry colname="col21" align="center">SE</entry>
+<entry colname="col22" align="center">OT</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">T1</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">BE<sub>g</sub></entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">BE<sub>l</sub></entry>
+<entry colname="col6">BE<sub>g</sub></entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>g</sub></entry>
+<entry colname="col10">BE<sub>g</sub></entry>
+<entry colname="col11">SE</entry>
+<entry colname="col12">BE<sub>g</sub></entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">BE<sub>g</sub></entry>
+<entry colname="col16">BE<sub>g</sub></entry>
+<entry colname="col17">BE<sub>g</sub></entry>
+<entry colname="col18">5</entry>
+<entry colname="col19">9</entry>
+<entry colname="col20">1</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T2</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">BE<sub>l</sub></entry>
+<entry colname="col4">BE<sub>g</sub></entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">SE</entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">BE<sub>g</sub></entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">BE<sub>l</sub></entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">BE<sub>g</sub></entry>
+<entry colname="col17">SE</entry>
+<entry colname="col18">8</entry>
+<entry colname="col19">3</entry>
+<entry colname="col20">3</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T3</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">OT</entry>
+<entry colname="col5">BE<sub>g</sub></entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">OT</entry>
+<entry colname="col13">BE<sub>l</sub></entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">BE<sub>g</sub></entry>
+<entry colname="col17">BE<sub>l</sub></entry>
+<entry colname="col18">8</entry>
+<entry colname="col19">2</entry>
+<entry colname="col20">4</entry>
+<entry colname="col21"/>
+<entry colname="col22">2</entry>
+</row>
+<row>
+<entry colname="col1">T4</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">BE<sub>g</sub></entry>
+<entry colname="col9">ER</entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">BE<sub>g</sub></entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">ER</entry>
+<entry colname="col14">BE<sub>g</sub></entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">ER</entry>
+<entry colname="col17">BE<sub>g</sub></entry>
+<entry colname="col18">12</entry>
+<entry colname="col19">4</entry>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T5</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">BE<sub>l</sub></entry>
+<entry colname="col5">BE<sub>g</sub></entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">BE<sub>g</sub></entry>
+<entry colname="col9">BE<sub>g</sub></entry>
+<entry colname="col10">BE<sub>g</sub></entry>
+<entry colname="col11">BE<sub>g</sub></entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">BE<sub>g</sub></entry>
+<entry colname="col15">BE<sub>g</sub></entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">ER</entry>
+<entry colname="col18">6</entry>
+<entry colname="col19">8</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T6</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">BE<sub>g</sub></entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">BE<sub>l</sub></entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">BE<sub>l</sub></entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">SE</entry>
+<entry colname="col15">SE</entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">BE<sub>g</sub></entry>
+<entry colname="col18">6</entry>
+<entry colname="col19">3</entry>
+<entry colname="col20">5</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T7</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">OT</entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>g</sub></entry>
+<entry colname="col10">BE<sub>g</sub></entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">BE<sub>l</sub></entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">BE<sub>g</sub></entry>
+<entry colname="col18">10</entry>
+<entry colname="col19">3</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21"/>
+<entry colname="col22">1</entry>
+</row>
+<row>
+<entry colname="col1">T8</entry>
+<entry colname="col2">BE<sub>l</sub></entry>
+<entry colname="col3">BE<sub>g</sub></entry>
+<entry colname="col4">BE<sub>l</sub></entry>
+<entry colname="col5">BE<sub>l</sub></entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">BE<sub>g</sub></entry>
+<entry colname="col13">BE<sub>l</sub></entry>
+<entry colname="col14">BE<sub>g</sub></entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">ER</entry>
+<entry colname="col17">BE<sub>l</sub></entry>
+<entry colname="col18">7</entry>
+<entry colname="col19">3</entry>
+<entry colname="col20">6</entry>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T9</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">SE</entry>
+<entry colname="col4">BE<sub>l</sub></entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">SE</entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">SE</entry>
+<entry colname="col9">SE</entry>
+<entry colname="col10">OT</entry>
+<entry colname="col11">SE</entry>
+<entry colname="col12">SE</entry>
+<entry colname="col13">ER</entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">SE</entry>
+<entry colname="col16">BE<sub>g</sub></entry>
+<entry colname="col17">BE<sub>g</sub></entry>
+<entry colname="col18">4</entry>
+<entry colname="col19">2</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21">7</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T10</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">SE</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">BE<sub>l</sub></entry>
+<entry colname="col7">BE<sub>g</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>g</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">SE</entry>
+<entry colname="col12">BE<sub>l</sub></entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">SE</entry>
+<entry colname="col15">BE<sub>g</sub></entry>
+<entry colname="col16">SE</entry>
+<entry colname="col17">BE<sub>g</sub></entry>
+<entry colname="col18">5</entry>
+<entry colname="col19">5</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21">4</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T11</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">OT</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">ER</entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">BE<sub>l</sub></entry>
+<entry colname="col16">ER</entry>
+<entry colname="col17">BE<sub>l</sub></entry>
+<entry colname="col18">12</entry>
+<entry colname="col19"/>
+<entry colname="col20">3</entry>
+<entry colname="col21"/>
+<entry colname="col22">1</entry>
+</row>
+<row>
+<entry colname="col1">T12</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">ER</entry>
+<entry colname="col10">BE<sub>l</sub></entry>
+<entry colname="col11">BE<sub>g</sub></entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">BE<sub>g</sub></entry>
+<entry colname="col15">BE<sub>g</sub></entry>
+<entry colname="col16">BE<sub>g</sub></entry>
+<entry colname="col17">SE</entry>
+<entry colname="col18">8</entry>
+<entry colname="col19">5</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T13</entry>
+<entry colname="col2">BE<sub>g</sub></entry>
+<entry colname="col3">BE<sub>l</sub></entry>
+<entry colname="col4">BE<sub>l</sub></entry>
+<entry colname="col5">BE<sub>l</sub></entry>
+<entry colname="col6">BE<sub>l</sub></entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">BE<sub>l</sub></entry>
+<entry colname="col11">BE<sub>l</sub></entry>
+<entry colname="col12">BE<sub>l</sub></entry>
+<entry colname="col13">ER</entry>
+<entry colname="col14">BE<sub>g</sub></entry>
+<entry colname="col15">BE<sub>l</sub></entry>
+<entry colname="col16">BE<sub>g</sub></entry>
+<entry colname="col17">ER</entry>
+<entry colname="col18">3</entry>
+<entry colname="col19">3</entry>
+<entry colname="col20">10</entry>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T14</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">BE<sub>g</sub></entry>
+<entry colname="col6">SE</entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>g</sub></entry>
+<entry colname="col10">OT</entry>
+<entry colname="col11">BE<sub>g</sub></entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">SE</entry>
+<entry colname="col17">SE</entry>
+<entry colname="col18">7</entry>
+<entry colname="col19">4</entry>
+<entry colname="col20">1</entry>
+<entry colname="col21">3</entry>
+<entry colname="col22">1</entry>
+</row>
+<row>
+<entry colname="col1">T15</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">OT</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">BE<sub>l</sub></entry>
+<entry colname="col6">BE<sub>l</sub></entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">BE<sub>l</sub></entry>
+<entry colname="col11">BE<sub>l</sub></entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">BE<sub>l</sub></entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">OT</entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">BE<sub>l</sub></entry>
+<entry colname="col18">5</entry>
+<entry colname="col19"/>
+<entry colname="col20">9</entry>
+<entry colname="col21"/>
+<entry colname="col22">2</entry>
+</row>
+<row>
+<entry colname="col1">T16</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">BE<sub>g</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">ER</entry>
+<entry colname="col10">BE<sub>g</sub></entry>
+<entry colname="col11">BE<sub>l</sub></entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">ER</entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">BE<sub>g</sub></entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">BE<sub>g</sub></entry>
+<entry colname="col18">10</entry>
+<entry colname="col19">4</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T17</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">BE<sub>l</sub></entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">BE<sub>g</sub></entry>
+<entry colname="col9">ER</entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">SE</entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">ER</entry>
+<entry colname="col17">SE</entry>
+<entry colname="col18">11</entry>
+<entry colname="col19">1</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T18</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">BE<sub>g</sub></entry>
+<entry colname="col6">OT</entry>
+<entry colname="col7">BE<sub>g</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">SE</entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">SE</entry>
+<entry colname="col18">8</entry>
+<entry colname="col19">3</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22">1</entry>
+</row>
+<row>
+<entry colname="col1">T19</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>g</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">BE<sub>g</sub></entry>
+<entry colname="col12">SE</entry>
+<entry colname="col13">BE<sub>l</sub></entry>
+<entry colname="col14">BE<sub>g</sub></entry>
+<entry colname="col15">ER</entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">SE</entry>
+<entry colname="col18">8</entry>
+<entry colname="col19">3</entry>
+<entry colname="col20">3</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T20</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">BE<sub>l</sub></entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">BE<sub>g</sub></entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">SE</entry>
+<entry colname="col8">BE<sub>l</sub></entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">BE<sub>g</sub></entry>
+<entry colname="col11">SE</entry>
+<entry colname="col12">BE<sub>g</sub></entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">BE<sub>g</sub></entry>
+<entry colname="col16">SE</entry>
+<entry colname="col17">SE</entry>
+<entry colname="col18">4</entry>
+<entry colname="col19">5</entry>
+<entry colname="col20">3</entry>
+<entry colname="col21">4</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T21</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">BE<sub>l</sub></entry>
+<entry colname="col4">BE<sub>g</sub></entry>
+<entry colname="col5">BE<sub>g</sub></entry>
+<entry colname="col6">BE<sub>l</sub></entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">BE<sub>l</sub></entry>
+<entry colname="col10">BE<sub>g</sub></entry>
+<entry colname="col11">BE<sub>l</sub></entry>
+<entry colname="col12">SE</entry>
+<entry colname="col13">ER</entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">SE</entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">BE<sub>g</sub></entry>
+<entry colname="col18">4</entry>
+<entry colname="col19">4</entry>
+<entry colname="col20">6</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T22</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">BE<sub>l</sub></entry>
+<entry colname="col4">OT</entry>
+<entry colname="col5">SE</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">ER</entry>
+<entry colname="col9">OT</entry>
+<entry colname="col10">SE</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">SE</entry>
+<entry colname="col13">ER</entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">OT</entry>
+<entry colname="col16">ER</entry>
+<entry colname="col17">OT</entry>
+<entry colname="col18">8</entry>
+<entry colname="col19"/>
+<entry colname="col20">1</entry>
+<entry colname="col21">3</entry>
+<entry colname="col22">4</entry>
+</row>
+<row>
+<entry colname="col1">T23</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">SE</entry>
+<entry colname="col9">BE<sub>g</sub></entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">ER</entry>
+<entry colname="col13">BE<sub>g</sub></entry>
+<entry colname="col14">BE<sub>g</sub></entry>
+<entry colname="col15">BE<sub>l</sub></entry>
+<entry colname="col16">BE<sub>g</sub></entry>
+<entry colname="col17">BE<sub>l</sub></entry>
+<entry colname="col18">9</entry>
+<entry colname="col19">4</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21">1</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">T24</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">OT</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">ER</entry>
+<entry colname="col8">BE<sub>g</sub></entry>
+<entry colname="col9">ER</entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">BE<sub>l</sub></entry>
+<entry colname="col13">ER</entry>
+<entry colname="col14">ER</entry>
+<entry colname="col15">BE<sub>g</sub></entry>
+<entry colname="col16">BE<sub>l</sub></entry>
+<entry colname="col17">OT</entry>
+<entry colname="col18">10</entry>
+<entry colname="col19">2</entry>
+<entry colname="col20">2</entry>
+<entry colname="col21"/>
+<entry colname="col22">2</entry>
+</row>
+<row>
+<entry colname="col1">T25</entry>
+<entry colname="col2">ER</entry>
+<entry colname="col3">ER</entry>
+<entry colname="col4">ER</entry>
+<entry colname="col5">ER</entry>
+<entry colname="col6">ER</entry>
+<entry colname="col7">BE<sub>l</sub></entry>
+<entry colname="col8">SE</entry>
+<entry colname="col9">ER</entry>
+<entry colname="col10">ER</entry>
+<entry colname="col11">ER</entry>
+<entry colname="col12">BE<sub>g</sub></entry>
+<entry colname="col13">BE<sub>l</sub></entry>
+<entry colname="col14">SE</entry>
+<entry colname="col15">BE<sub>g</sub></entry>
+<entry colname="col16">BE<sub>g</sub></entry>
+<entry colname="col17">BE<sub>l</sub></entry>
+<entry colname="col18">8</entry>
+<entry colname="col19">3</entry>
+<entry colname="col20">3</entry>
+<entry colname="col21">2</entry>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">ER (%)</entry>
+<entry colname="col2">92</entry>
+<entry colname="col3">44</entry>
+<entry colname="col4">68</entry>
+<entry colname="col5">56</entry>
+<entry colname="col6">64</entry>
+<entry colname="col7">36</entry>
+<entry colname="col8">60</entry>
+<entry colname="col9">24</entry>
+<entry colname="col10">52</entry>
+<entry colname="col11">48</entry>
+<entry colname="col12">48</entry>
+<entry colname="col13">32</entry>
+<entry colname="col14">56</entry>
+<entry colname="col15">36</entry>
+<entry colname="col16">20</entry>
+<entry colname="col17">8</entry>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">BE<sub>g</sub> (%)</entry>
+<entry colname="col2">4</entry>
+<entry colname="col3">12</entry>
+<entry colname="col4">8</entry>
+<entry colname="col5">24</entry>
+<entry colname="col6">4</entry>
+<entry colname="col7">12</entry>
+<entry colname="col8">20</entry>
+<entry colname="col9">28</entry>
+<entry colname="col10">24</entry>
+<entry colname="col11">20</entry>
+<entry colname="col12">16</entry>
+<entry colname="col13">36</entry>
+<entry colname="col14">28</entry>
+<entry colname="col15">32</entry>
+<entry colname="col16">32</entry>
+<entry colname="col17">32</entry>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">BE<sub>l (%)</sub></entry>
+<entry colname="col2">4</entry>
+<entry colname="col3">24</entry>
+<entry colname="col4">16</entry>
+<entry colname="col5">16</entry>
+<entry colname="col6">16</entry>
+<entry colname="col7">44</entry>
+<entry colname="col8">8</entry>
+<entry colname="col9">40</entry>
+<entry colname="col10">12</entry>
+<entry colname="col11">16</entry>
+<entry colname="col12">16</entry>
+<entry colname="col13">28</entry>
+<entry colname="col14"/>
+<entry colname="col15">12</entry>
+<entry colname="col16">36</entry>
+<entry colname="col17">24</entry>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">SE (%)</entry>
+<entry colname="col2"/>
+<entry colname="col3">8</entry>
+<entry colname="col4"/>
+<entry colname="col5">4</entry>
+<entry colname="col6">12</entry>
+<entry colname="col7">4</entry>
+<entry colname="col8">12</entry>
+<entry colname="col9">4</entry>
+<entry colname="col10">4</entry>
+<entry colname="col11">16</entry>
+<entry colname="col12">16</entry>
+<entry colname="col13">4</entry>
+<entry colname="col14">16</entry>
+<entry colname="col15">12</entry>
+<entry colname="col16">12</entry>
+<entry colname="col17">28</entry>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+<row>
+<entry colname="col1">OT (%)</entry>
+<entry colname="col2"/>
+<entry colname="col3">12</entry>
+<entry colname="col4">8</entry>
+<entry colname="col5"/>
+<entry colname="col6">4</entry>
+<entry colname="col7">4</entry>
+<entry colname="col8"/>
+<entry colname="col9">4</entry>
+<entry colname="col10">8</entry>
+<entry colname="col11"/>
+<entry colname="col12">4</entry>
+<entry colname="col13"/>
+<entry colname="col14"/>
+<entry colname="col15">8</entry>
+<entry colname="col16"/>
+<entry colname="col17">8</entry>
+<entry colname="col18"/>
+<entry colname="col19"/>
+<entry colname="col20"/>
+<entry colname="col21"/>
+<entry colname="col22"/>
+</row>
+</tbody>
+</tgroup>
+</table>
+<noteGroup>
+<note xml:id="weng12056-tbl2-note-0001" numbered="no"><p>ER = Error; BE<sub>g =</sub> Bangladesh English with global intelligibility; BE<sub>l</sub> = Bangladesh English with local intelligibility; SE = Standard English; OT = Other categories.</p></note>
+</noteGroup>
+</tabular>
+<p>From an individual teacher perspective, the variable categorisations reflect subjective judgment of the teachers. If we draw an error‐non‐error binary (i.e. comparing the proportion of errors against the total of non‐error categories including features of BE, SE and OT), over 50 per cent of the items were categorised as errors by seven teachers, as non‐errors by 11 teachers while the remaining seven teachers were equally divided between errors and non‐errors (8 items on each side). Seen this way, if the acceptability judgment task shows that the teachers were informed by the SLA perspective, the categorisation task shows the dominance of the WE perspective.</p>
+<p>Looking at the teachers’ collective categorisations, seven of the 16 items were described as errors by over 50 per cent of the teachers in which i2 received an overwhelming 92 per cent rating as error which was considered unacceptable by all teachers. On the other hand, 5 items were labelled BE (BE<sub>g</sub> and BE<sub>l</sub> combined) with two items (i1 and i10) receiving a highest BE rating of 68 per cent each. Some teachers also used SE to describe the items, the highest rating (28%) being awarded to i12.</p>
+<p>To compare the data from the two tasks, if an item is labelled error, it was unlikely to be considered acceptable. For instance, of the 400 responses, 186 were labelled errors (Table <link href="#weng12056-tbl-0002"/>) and of these 128 were considered ‘totally unacceptable’, 51 ‘looks unacceptable’ and the remaining seven ‘not sure’. In other words, not a single item categorised as error was considered acceptable by any teacher. Similarly, of the 38 SE responses, only four were considered ‘unacceptable’ (X = 1, X<sub>1</sub> = 3) and two ‘not sure’; the remaining 33 (87%) were either ‘fully acceptable’ (11) or ‘looks acceptable’ (21). The categories of BE<sub>g</sub> and BE<sub>l</sub> produced somewhat mixed results, but still there was a clear pattern. Items categorised as BE with global intelligibility were more likely to be considered acceptable (35%) than BE items with local intelligibility (13%). The latter were more likely to be considered unacceptable than the former (BE<sub>l</sub> = 79%; BE<sub>g</sub> = 45%).</p>
+</section>
+<section xml:id="weng12056-sec-0120">
+<title type="main">Errors or features of an L2 variety?</title>
+<p>In Table <link href="#weng12056-tbl-0003"/>, an attempt is made to re‐categorise the teachers’ responses to the categorisation task as error or varietal features. The ratings of error from Table <link href="#weng12056-tbl-0002"/> are reproduced (column 3) while the new category of varietal feature (column 4) is created by combining the categories of BE and SE from Table <link href="#weng12056-tbl-0002"/> based on the argument that both can be seen as varieties. The category of ‘Other’ is left out because it is difficult to predict what sort of status the teachers assigned to items belonging to this category.</p>
+<tabular xml:id="weng12056-tbl-0003" pRights="unknown" eRights="yes" copyright="John Wiley &amp; Sons, Ltd.">
+<title type="main">Distinguishing between errors and varietal features</title>
+<table frame="topbot">
+<tgroup cols="4">
+<colspec colnum="1" colname="col1" align="left"/>
+<colspec colnum="2" colname="col2" align="left"/>
+<colspec colnum="3" colname="col3" align="left"/>
+<colspec colnum="4" colname="col4" align="left"/>
+<thead>
+<row rowsep="1">
+<entry colname="col1">Items</entry>
+<entry colname="col2">Type</entry>
+<entry colname="col3">Rating as error (%)</entry>
+<entry colname="col4">Rating as varietal feature (%)</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">i1</entry>
+<entry colname="col2">Lexical creativity</entry>
+<entry colname="col3">24</entry>
+<entry colname="col4">72</entry>
+</row>
+<row>
+<entry colname="col1">i2</entry>
+<entry colname="col2">Phrase structure</entry>
+<entry colname="col3">92</entry>
+<entry colname="col4">8</entry>
+</row>
+<row>
+<entry colname="col1">i3</entry>
+<entry colname="col2">Lexical choice</entry>
+<entry colname="col3">44</entry>
+<entry colname="col4">44</entry>
+</row>
+<row>
+<entry colname="col1">i4</entry>
+<entry colname="col2">Syntax</entry>
+<entry colname="col3">64</entry>
+<entry colname="col4">32</entry>
+</row>
+<row>
+<entry colname="col1">i5</entry>
+<entry colname="col2">Tense</entry>
+<entry colname="col3">48</entry>
+<entry colname="col4">48</entry>
+</row>
+<row>
+<entry colname="col1">i6</entry>
+<entry colname="col2">Syntax (direct translation)</entry>
+<entry colname="col3">68</entry>
+<entry colname="col4">24</entry>
+</row>
+<row>
+<entry colname="col1">i7</entry>
+<entry colname="col2">Syntax</entry>
+<entry colname="col3">56</entry>
+<entry colname="col4">40</entry>
+</row>
+<row>
+<entry colname="col1">i8</entry>
+<entry colname="col2">Tense/ lexical choice</entry>
+<entry colname="col3">52</entry>
+<entry colname="col4">40</entry>
+</row>
+<row>
+<entry colname="col1">i9</entry>
+<entry colname="col2">Phrase structure (modifier drop)</entry>
+<entry colname="col3">32</entry>
+<entry colname="col4">68</entry>
+</row>
+<row>
+<entry colname="col1">i10</entry>
+<entry colname="col2">Syntax (object drop)</entry>
+<entry colname="col3">20</entry>
+<entry colname="col4">80</entry>
+</row>
+<row>
+<entry colname="col1">i11</entry>
+<entry colname="col2">Tense</entry>
+<entry colname="col3">56</entry>
+<entry colname="col4">44</entry>
+</row>
+<row>
+<entry colname="col1">i12</entry>
+<entry colname="col2">Lexical creativity</entry>
+<entry colname="col3">8</entry>
+<entry colname="col4">84</entry>
+</row>
+<row>
+<entry colname="col1">i13</entry>
+<entry colname="col2">Word order</entry>
+<entry colname="col3">36</entry>
+<entry colname="col4">56</entry>
+</row>
+<row>
+<entry colname="col1">i14</entry>
+<entry colname="col2">Lexical creativity</entry>
+<entry colname="col3">36</entry>
+<entry colname="col4">60</entry>
+</row>
+<row>
+<entry colname="col1">i15</entry>
+<entry colname="col2">Lexical choice (discourse marker)</entry>
+<entry colname="col3">60</entry>
+<entry colname="col4">40</entry>
+</row>
+<row>
+<entry colname="col1">i16</entry>
+<entry colname="col2">Lexical choice</entry>
+<entry colname="col3">48</entry>
+<entry colname="col4">52</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</tabular>
+<p>Drawing an arbitrary 50–50 cut‐off point, we can see that seven of the 16 items fall in the category of error while nine items to varietal features. Because of the higher error rating of i2, we can safely declare this item as an error. On the other hand, i10 and i12 can be seen as varietal features rather than errors. The higher rating of an item may give us more confidence in declaring an item error or variant, but what remains an issue is what will be an agreeable cut‐off point. Should we set the minimum requirement as high as 95 per cent, comparable to confidence interval? This is probably unrealistically high because there is the likelihood of erroneous judgments being applied by mistake or due to inadequate knowledge and/or social attitudes may make it impossible to reach a high degree of consensus. Based on a more realistic target of two‐thirds majority, we may declare i6 an error while i1 and i9 as examples of a variety. As for i4, i7, i8, i11, i13 and i14, we have to seek judgments from more teachers to determine their status. Acceptability ratings might be taken into consideration in categorising items as errors or varietal features. However, although this judgment may boost our confidence in labelling items as errors, this may be unhelpful in categorising items as variants (see Table <link href="#weng12056-tbl-0001"/> for the acceptability ratings of the seven items with over 50 per cent rating as varietal feature in Table <link href="#weng12056-tbl-0003"/>). This is probably because acceptability judgment tends to encourage teachers to be guided by the SLA perspective while categorisation task encourages them to follow the WE perspective.</p>
+<p>Although it is difficult to predict the criteria that the teachers might have applied in their judgment and categorisation, examining the linguistic characteristics of the items categorised as errors or varietal features by the majority of the teachers may provide some useful insights. We acknowledge that analysing L2 items linguistically to locate errors/problems in them are not only difficult but also a subjective activity (see Hamid <link href="#weng12056-bib-0025"/>). Moreover, our teacher sample size is not large enough to support any strong claims. Bearing these caveats in mind, it appears that grammaticality was an important consideration for the teachers in judging items as errors or variants. For instance, i1, i9, i10, i12 and i15 do not violate basic L2 grammar rules. Although i9 and i10 contain minor grammatical infelicities (e.g. dropping modifier and indirect object), these two items convey meanings unambiguously and are intelligible. Likewise, the majority of items that were categorised as errors and/or were not considered as features of varieties had grammatical issues related to syntax (i4, i6 and i7) and tense markers (i5, i8 and i11). While items containing issues of lexical choice were complex (e.g. i3, i15 and i16), lexical creativity underlying items i1 (‘delivery leave’) i12 (‘war of choice’) and i14 (‘Mobile‐phone holding teenagers’) was appreciated by the majority of the teachers.</p>
+</section>
+</section>
+<section xml:id="weng12056-sec-0130">
+<title type="main">CONCLUSION</title>
+<p>The increasing recognition of varieties of L2 Englishes has given rise to a complex problem of distinguishing between errors and variants which cannot be easily resolved. The present study has argued for viewing the problem from teachers’ perspectives because of their crucial agentive role in mediating language standards and their variations in society. Accordingly, an exploratory study was carried out with a sample of Bangladeshi English teachers, who were asked to evaluate and categorise features of L2 English, to understand whether they considered those features errors or varietal features and whether there was a consensus in their judgments. That the majority of the constructions were unacceptable to the teachers can be compared to the findings reported in Lee (<link href="#weng12056-bib-0039"/>) in which both Australian and Hong Kong teachers considered the majority of 33 features of English unacceptable.<sup>4</sup> On the other hand, the lack of consensus among the teachers in their evaluation, which can be found in O'Hara‐Davies (<link href="#weng12056-bib-0052"/>) as well, is also unsurprising given that Bangladeshi English is yet to be recognised as an institutionalised variety and, consequently, teachers would have variable understandings, attitudes and judgments towards L2 norms and varieties.</p>
+<p>The dominance of unacceptability in the first task and a substantial recognition of BE in the second task (see Table <link href="#weng12056-tbl-0002"/> and Table <link href="#weng12056-tbl-0003"/>) point to a critical methodological issue in error/variant research. The acceptability judgment task tends to activate the SLA perspective, which, in the absence of specific criteria, may encourage people to apply value‐laden personal criteria. The categorisation task, on the other hand, provides multiple categories and therefore judgments are likely to reflect multiplicity of norms. In a recent study on attitudes towards Sri Lankan English, Bernaisch (<link href="#weng12056-bib-0003"/>) also shows the recognition of multiple varieties including British English, American English, Indian English and Sri Lankan English. The categorisation task appears to be more appropriate because it recognises that L2 data are likely to contain errors as well as features of varieties. An important feature of this task is that it gives an opportunity to teachers to view varietal features in relation to errors as well as features of exocentric norms, not in isolation. The task also approximates the sociolinguistic reality of English in the contemporary world by an implicit indication that features of L2 varieties exist in their own right and are not to be seen as deviations from SE and be considered errors by default. Including errors and features of L2 varieties and SE in the same task can be one way of bringing the SLA and WE together (Mukherjee and Hundt <link href="#weng12056-bib-0050"/>).</p>
+<p>Although the methodological limitations of the study including the use of small samples of teachers and L2 data, the use of a single method for eliciting teacher judgments would require cautious interpretations of the findings, we would argue that using categorisation tasks with multiple options may sensitise teachers to issues of errors and variants and elicit judgments that could be interpreted for distinguishing between errors and varietal features. Teacher judgments are important because these are expressions of their agency which is mediated by their understanding of and attitudes towards Englishes, national curricular prescriptions and institutional policies and students’ experience with language in the context of L2 pedagogy. In relying on teacher judgment, a critical issue is to determine an acceptable level of consensus. We have argued that this target should be set realistically rather than idealistically. We have also observed that examining characteristics of L2 items in question might provide useful insights since the teachers seemed to have placed emphasis on grammaticality and lexical creativity. Based on our analysis of teacher responses, it can be argued that lexical innovations have a greater likelihood of social acceptance than grammatical deviations (see Mollin <link href="#weng12056-bib-0049"/>) and are more important as exponents of an L2 variety.</p>
+<p>Although further research is needed for conclusive assertions, our findings suggest that acceptability as a criterion to distinguish between errors and variants requires a critical examination. Scholars including Bamgboṣe (<link href="#weng12056-bib-0002"/>), Li (<link href="#weng12056-bib-0041"/>) and Okunrinmeta (<link href="#weng12056-bib-0053"/>) refer to the acceptability of L2 forms in corpus data to understand how widely a particular form has been accepted. However, using acceptability and other criteria to distinguish errors from varietal features has their problems. First, the spread of L2 forms and their acceptability are both long‐term and relative processes. For instance, it is unclear how widely L2 features have to spread to be accepted as varietal features. Moreover, these criteria may work only retrospectively, that is, after a certain form has spread and been accepted quite substantially. For instance, van Rooy (<link href="#weng12056-bib-0070"/>) was able to distinguish between errors and variants in the use of ‘the progressive aspect’ and ‘can be able to’ in South African English and ‘enable + bare infinitive verb’ in East African English because there had already been numerous occurrences of these forms in different contexts of communication. If variants emerge from forms that might have started out as errors, as van Rooy (<link href="#weng12056-bib-0070"/>) argues, an early application of these criteria may abort the birth of innovations, although at the initial stages (as in Schneider's model) it may be difficult to predict whether an L2 feature will live long enough to be considered a varietal feature or simply die out as an error.</p>
+<p>Thus, the very concept of variety or innovation is conceptually imprecise, if not problematic. In WE variety is understood as social – ‘conventionalized innovation’ (van Rooy <link href="#weng12056-bib-0070"/>) – or communal (Mollin <link href="#weng12056-bib-0049"/>). At issue is whether this conceptualisation can be useful in exploring errors vis‐à‐vis variants. Language being a shared semiotic tool probably cannot tolerate individual creativity, but a variety first emerges as an individual feature which gradually becomes social, winning social sanctions. The teachers in the present study seem to have experienced tensions between individuality and conventionality in language use as reflected in their judgments. For instance, i12 and i14 are not used widely by Bangladeshi English speakers which, therefore, are instances of individual creativity rather than features of BE in the WE sense. Nevertheless, both features made sense (intelligible) to the majority of the teachers, as can be seen in Table <link href="#weng12056-tbl-0003"/>.</p>
+<p>The teachers’ divided judgments on the majority of the 16 items suggest that the social (acceptability) and spatio‐temporal (geographic, demographic and time) requirements underlying the criteria may not be useful in the pedagogical context where teachers have to deal with L2 features at all stages of their evolution. On the other hand, the fact that the teachers’ judgments and categorisations did not have a very high degree of consensus suggests pedagogical uncertainty in the classroom where L2 students, in principle, would produce both errors and innovative forms. In the absence of this consensus, it is unclear which features of the L2 would be penalised and which ones would be nurtured and encouraged by teachers and what sociocultural (e.g. sense of self and identify as marked by these features) and academic consequences (e.g. placement decisions and assessment outcomes) these would have for L2 students.</p>
+<p>In order to facilitate teachers’ understanding of local varieties of English, it appears imperative to push for codification of L2 Englishes, as emphasised by WE scholars including Bamgboṣe (<link href="#weng12056-bib-0002"/>). However, arguing for codification is tantamount to making a case for standardisation (endonormative), although principally as a vehicle against standardisation (exonormative) that WE came into being.<link href="#weng12056-note-0005"/> As Guzman (2009: 328) explained with reference to the Philippines:
+<blockFixed type="quotation"><p>However, if the Philippine Variety of English (and other Asian varieties as well) is to be made acceptable in the academe and/or for academic purposes it likewise has to undergo a process of standardization, intellectualization and finally, codification. Again, one can never escape standards.</p></blockFixed></p>
+<p>On the other hand, if new varieties of English are not standardised, how are they going to be distinguished from native varieties (see Davies <link href="#weng12056-bib-0015"/>: 138)? Therefore, codification appears to be a double‐edged sword: desirable and undesirable at the same time.</p>
+<p>In the absence of local standards, L2 practitioners may be advised to apply the notion of intelligibility as a criterion to judge L2 use which has been advocated by scholars (see Smith and Nelson <link href="#weng12056-bib-0064"/>; Nelson <link href="#weng12056-bib-0051"/>; 2012; McKay <link href="#weng12056-bib-0046"/>; Patil <link href="#weng12056-bib-0055"/>; Pickering <link href="#weng12056-bib-0056"/>; Smith <link href="#weng12056-bib-0063"/>). While the concept is useful in oral communication, its overemphasis may result in distortion of language forms in written communication. For instance, deleting functional words from a sentence may disfigure its syntax and result in telegraphic form of communication, as in text messages, and yet the construction may retain intelligibility. The question, then, is: what will be the allowable limit of this syntactic distortion and who will decide on this limit? Moreover, intelligibility is the outcome of subjective interpretation of language use (Hamid <link href="#weng12056-bib-0025"/>). The same L2 construction may appear intelligible to some and unintelligible to others. Melchers and Shaw (<link href="#weng12056-bib-0047"/>) have classified intelligibility into international intelligibility, national intelligibility and local intelligibility which is useful because this suggests that although intelligibility at a local level may not be a problem, it can be problematic at a global level. As Nihalni (1997; cited in Patil <link href="#weng12056-bib-0055"/>: 106) observed:
+<blockFixed type="quotation"><p>Two foreigners of the same nationality can converse with mutual understanding in English in their own phonetic and phonological systems. They run a serious risk, however, of being quite unintelligible to a speaker of English from the outer or inner circle.</p></blockFixed></p>
+<p>Apparently, the data in the present study validated the relevance of intelligibility. As previously mentioned, acceptability ratings for BE<sub>g</sub> items (35%) were higher than those of BE<sub>l</sub> items (13%). Nevertheless, although intelligibility is desirable in grammar, it is probably unreasonable in lexis. For instance, how would ‘prepone’ (see Li <link href="#weng12056-bib-0041"/>) be intelligible to someone who has never come across this innovation in Indian English?</p>
+<p>In short, the theoretical criteria including the codification of L2 Englishes or intelligibility may not work as foolproof solutions for distinguishing between errors and variants at all stages of the evolution of L2 features. On the other hand, the study shows some cautious optimism that asking teachers to categorise items giving them a range of options is a step worth further exploring. However, categorisation tasks should be seen as a mere first step to be followed up by in‐depth investigations that will ask teachers to articulate factors and strategies that they use in dividing items into the categories of errors, variety and SE. In addition, pedagogical inquiries into L2 classrooms in various contexts may shed light on how conflicts between errors and variants are perceived, reacted to and managed by L2 practitioners. Such inquiries using enriched methodological tools including teacher surveys, interviews and focus group discussions and classroom ethnographies would help devise bottom‐up insights to inform the existing criteria.</p>
+<p>Several scholars have pointed out that rather than referring to binary norms (either native or non‐native Englishes), a transformative (Canagarajah <link href="#weng12056-bib-0012"/>; Dewey <link href="#weng12056-bib-0017"/>; Seargeant and Tagg <link href="#weng12056-bib-0058"/>) that suggests the possibility of taking into consideration multiple norms would be more appropriate in a post‐modern, globalised world. While English language teacher education needs to develop teacher awareness of plurality of Englishes, multiplicity of norms and the value of multilingualism (Sifakis <link href="#weng12056-bib-0062"/>), it cannot be denied that the L2 English pedagogical domain in different parts of the world is still informed by exocentric norms prescribed by national policy and curriculum. School is the place from where language standards are disseminated to society through the mediation of teacher agency. Therefore, error‐variant dichotomies may neither be avoided in the near future nor be resolved without involving the crucial gate‐keepers of languages and varieties operating in the pedagogical sphere.</p>
+</section>
+<section xml:id="weng12056-sec-0140" type="acknowledgments">
+<title type="main">ACKNOWLEDGEMENTS</title>
+<p>The authors would like to thank the two anonymous reviewers for their valuable comments and suggestions which have been incorporated into the final version of the article.</p></section>
+<noteGroup>
+<title type="main">NOTES</title>
+<note xml:id="weng12056-note-0001"><p>‘World Englishes’ has been used to refer to English in different senses (see Bolton <link href="#weng12056-bib-0008"/>). In this paper we use it mainly to refer to Outer Circle Englishes, although the issues we discuss will have relevance for English as a Lingua Franca (ELF) and the Expanding Circle as well.</p></note>
+<note xml:id="weng12056-note-0002"><p>This would be the case in many Expanding Circle polities as well, but our focus in this paper is the Outer Circle.</p></note>
+<note xml:id="weng12056-note-0003"><p>Mollin (<link href="#weng12056-bib-0049"/>: 45–52), based on her review of the literature, draws out a criteria catalogue to investigate the legitimacy of Euro‐English as an ESL variety. The catalogue includes a number of requirements under the categories of function (expansion), form (nativisation) and attitudes (institutionalisation). We have not adopted her taxonomy and labels because some of the macro‐level issues (e.g. functions of English in different domains) are beyond the scope of the present article. However, some of her requirements are already included in Bamgboṣe's (<link href="#weng12056-bib-0002"/>) more often‐cited treatise.</p></note>
+<note xml:id="weng12056-note-0004"><p>Some of the L2 items included in the study contain error/innovation issues in different areas. However, teachers’ attention was drawn to specific aspects by underlining the items.</p></note>
+<note xml:id="weng12056-note-0005"><p>Although Lee (<link href="#weng12056-bib-0039"/>) acknowledges the WE paradigm implicitly, the L2 features used as corpus for the study (e.g. <i>Drive slow</i>; <i>This pen is very different than that one</i>) were not named features of L2 varieties; instead these were called ‘disputed usages’.</p></note>
+</noteGroup>
+<appendix xml:id="weng12056-app-0001" numbered="yes">
+<label>A</label>
+<title type="appendixName">APPENDIX</title>
+<section xml:id="weng12056-sec-0150">
+<title type="main">Features of non–native English used in the survey</title>
+<p>[Sub–headings are the titles of the articles from which the items were selected]</p>
+<p><b>Breast–feeding is a child's fundamental right</b>
+<list xml:id="weng12056-list-0003" style="custom">
+<listItem><label>1.</label> Under a 2001 government order, Nahar should have been at home for at least four months for post–childbirth recovery. She should have used this period to breast–feed her baby. It has not happened to her case because the bank [a private bank where she works] permitted her only 42–day <span cssStyle="text-decoration:underline">delivery leave</span>.</listItem>
+</list></p>
+<p><b>Thousands of children die of cancer every year in Bangladesh</b>
+<list xml:id="weng12056-list-0004" style="custom">
+<listItem><label>2.</label> <span cssStyle="text-decoration:underline">The worrying is that</span> there is no dependable data how many children are affected with cancer every year in Bangladesh.</listItem>
+</list></p>
+<p><b>Industrial wastes have threatened the environment along the Turag river</b>
+<list xml:id="weng12056-list-0005" style="custom">
+<listItem><label>3.</label> “Our bio–diversity will be destroyed if we can't stop this pollution”, says Islam, one of Bangladesh's <span cssStyle="text-decoration:underline">authentic environment experts</span>.</listItem>
+</list></p>
+<p><b>Tenants suffer in Bangladesh capital city</b>
+<list xml:id="weng12056-list-0006" style="custom">
+<listItem><label>4.</label> For example, <span cssStyle="text-decoration:underline">if a tenant is hospitable and likes to invite relatives and friends too often that must change.</span></listItem>
+</list></p>
+<p><b>The best way to deal with social safety nets is to have a mainstream growth</b>
+<list xml:id="weng12056-list-0007" style="custom">
+<listItem><label>5.</label> Detached from their families, some eighteen victims at Rajshahi Safe Home [a temporary shelter for women rescued from being trafficked] are in a wretched condition. The authorities said there <span cssStyle="text-decoration:underline">are</span> none to take them back.</listItem>
+<listItem><label>6.</label> Shahnaz, 17, a garment worker of Natore, was shifted to the Home from Rajshahi Central Jail where she was kept under ‘safe custody’ two years ago. <span cssStyle="text-decoration:underline">Three years have passed then</span>, but it could not bring any change in her life.</listItem>
+</list></p>
+<p><b>Why has the government's costly mass literacy campaign failed?</b>
+<list xml:id="weng12056-list-0008" style="custom">
+<listItem><label>7.</label> Women lag behind men here too. The rate of literacy among women is about 36 per cent compared to about 48 per cent for men. <span cssStyle="text-decoration:underline">Muslims are behind than the non–Muslims</span>, it [an education report] says.</listItem>
+</list></p>
+<p><b>HIV patients suffer social castigation in Bangladesh</b>
+<list xml:id="weng12056-list-0009" style="custom">
+<listItem><label>8.</label> Everybody knows Sabiha and Sumon – not their real names – have HIV/AIDS and they should be kept away. Sabiha and Sumon <span cssStyle="text-decoration:underline">get</span> the HIV virus from their parents by birth.</listItem>
+</list></p>
+<p><b>Hindu women in Bangladesh suffer for absence of marriage registration</b>
+<list xml:id="weng12056-list-0010" style="custom">
+<listItem><label>9.</label> Minati Karmakar, in her 20s, suffers at her husband's house <span cssStyle="text-decoration:underline">for inability to bring</span> dowry.</listItem>
+<listItem><label>10.</label> Fed up, one day she leaves her husband's house and returns to her parents. <span cssStyle="text-decoration:underline">The husband is still after her and insists to return to him with dowry money</span>.</listItem>
+</list></p>
+<p><b>The secrets behind explosive economic success in South Korea</b>
+<list xml:id="weng12056-list-0011" style="custom">
+<listItem><label>11.</label> “You know <span cssStyle="text-decoration:underline">once we're</span> very poor, we didn't even have enough money to buy food to take, we had to struggle hard for a better life,” Kim narrates.</listItem>
+</list></p>
+<p><b>Marriage dilemmas of British Bangladeshis</b>
+<list xml:id="weng12056-list-0012" style="custom">
+<listItem><label>12.</label> Tanya, a British–born Bangladeshi and a graduate student at X University, is extremely angry with her father because he is pressuring her to marry a boy from Bangladesh whom Tanya has never seen in her life. This <span cssStyle="text-decoration:underline">war of choice</span> between Bangladeshi parents and their children living in the United Kingdom has been there since the first Bangladeshi people arrived in Britain in the early 1950s.</listItem>
+</list></p>
+<p><b>How to deal with mobile phones</b>
+<list xml:id="weng12056-list-0013" style="custom">
+<listItem><label>13.</label> <span cssStyle="text-decoration:underline">It is today unthinkable</span> to live in a world without mobile phone and the Internet.</listItem>
+<listItem><label>14.</label> <span cssStyle="text-decoration:underline">Mobile phone–holding teenagers</span> build up relationships with their friends mostly for meaningless conversation.</listItem>
+</list></p>
+<p><b>The capital city is becoming a place of shopping malls</b>
+<list xml:id="weng12056-list-0014" style="custom">
+<listItem><label>15.</label> According to one theory, businessmen invest their money in shopping malls considering it safe. <span cssStyle="text-decoration:underline">Otherwise</span> the country's investment climate is not as good as it should be.</listItem>
+</list></p>
+<p><b>Health services in Bangladesh are in shamble</b>
+<list xml:id="weng12056-list-0015" style="custom">
+<listItem><label>16.</label> Even some good doctors help pathological clinics <span cssStyle="text-decoration:underline">get patients and business</span>. Such doctors allegedly get commission for providing such medical centers business.</listItem>
+</list></p>
+</section>
+</appendix>
+<bibliography xml:id="weng12056-bibl-0001" style="nameDate">
+<title type="main">REFERENCES</title>
+<bib xml:id="weng12056-bib-0001">
+<citation type="journal" xml:id="weng12056-cit-0001"><author><familyName>Andreasson</familyName>, <givenNames>Ann‐Marie</givenNames></author>. <pubYear year="1994">1994</pubYear>. <articleTitle>Norm as a pedagogical paradigm</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>13</vol>(<issue>3</issue>).<pageFirst>395</pageFirst>–<pageLast>409</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0002">
+<citation type="journal" xml:id="weng12056-cit-0002"><author><familyName>Bamgboṣe</familyName>, <givenNames>Ayọ</givenNames></author>. <pubYear year="1998">1998</pubYear>. <articleTitle>Torn between the norms: Innovations in world Englishes</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>17</vol>(<issue>1</issue>).<pageFirst>1</pageFirst>–<pageLast>14</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0003">
+<citation type="journal" xml:id="weng12056-cit-0003"><author><familyName>Bernaisch</familyName>, <givenNames>Tobias</givenNames></author>. <pubYear year="2012">2012</pubYear>. <articleTitle>Attitudes towards Englishes in Sri Lanka</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>31</vol>(<issue>3</issue>).<pageFirst>279</pageFirst>–<pageLast>91</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0004">
+<citation type="book" xml:id="weng12056-cit-0004"><author><familyName>Bartsch</familyName>, <givenNames>Renate</givenNames></author>. <pubYear year="1987">1987</pubYear>. <bookTitle>Norms of language: Theoretical and practical aspects</bookTitle>. <publisherLoc>London</publisherLoc>: <publisherName>Longman</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0005">
+<citation type="journal" xml:id="weng12056-cit-0005"><author><familyName>Baumgardner</familyName>, <givenNames>Robert J</givenNames></author>. <pubYear year="1995">1995</pubYear>. <articleTitle>Pakistani English: Acceptability and the norm</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>14</vol>(<issue>2</issue>).<pageFirst>261</pageFirst>–<pageLast>71</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0006">
+<citation type="journal" xml:id="weng12056-cit-0006"><author><familyName>Bautista</familyName>, <givenNames>Maria L</givenNames></author>. <pubYear year="2001">2001</pubYear>. <articleTitle>Attitudes of English language faculty in three leading universities toward Philippine English</articleTitle>. <journalTitle>Asian Englishes</journalTitle> <vol>4</vol>(<issue>1</issue>).<pageFirst>4</pageFirst>–<pageLast>32</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0007">
+<citation type="journal" xml:id="weng12056-cit-0007"><author><familyName>Bhatt</familyName>, <givenNames>Rakesh M</givenNames></author>. <pubYear year="2001">2001</pubYear>. <articleTitle>World Englishes</articleTitle>. <journalTitle>Annual Review of Anthropology</journalTitle> <vol>30</vol>.<pageFirst>527</pageFirst>–<pageLast>50</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0008">
+<citation type="book" xml:id="weng12056-cit-0008"><author><familyName>Bolton</familyName>, <givenNames>Kingsley</givenNames></author>. <pubYear year="2006">2006</pubYear>. <chapterTitle>World Englishes today</chapterTitle>. <bookTitle>The handbook of world Englishes</bookTitle>, ed. by <editor><givenNames>B. B.</givenNames> <familyName>Kachru</familyName></editor>, <editor><givenNames>Y.</givenNames> <familyName>Kachru</familyName></editor> and <editor><givenNames>C. L.</givenNames> <familyName>Nelson</familyName></editor>, <pageFirst>240</pageFirst>–<pageLast>69</pageLast>. <publisherLoc>Oxford</publisherLoc>: <publisherName>Wiley–Blackwell</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0009">
+<citation type="journal" xml:id="weng12056-cit-0009"><author><familyName>Bolton</familyName>, <givenNames>Kingsley</givenNames></author>, <author><givenNames>David</givenNames> <familyName>Graddol</familyName></author>, and <author><givenNames>Christiane</givenNames> <familyName>Meierkord</familyName></author>. <pubYear year="2011">2011</pubYear>. <articleTitle>Towards developmental world Englishes</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>30</vol>(<issue>4</issue>).<pageFirst>459</pageFirst>–<pageLast>80</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0010">
+<citation type="journal" xml:id="weng12056-cit-0010"><author><familyName>Brown</familyName>, <givenNames>Kimberley</givenNames></author>. <pubYear year="1995">1995</pubYear>. <articleTitle>World Englishes: To teach or not to teach</articleTitle>? <journalTitle>World Englishes</journalTitle> <vol>14</vol>(<issue>2</issue>). <pageFirst>233</pageFirst>–<pageLast>45</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0011">
+<citation type="journal" xml:id="weng12056-cit-0011"><author><familyName>Butler</familyName>, <givenNames>Susan</givenNames></author>. <pubYear year="1999">1999</pubYear>. <articleTitle>A view on standards in South–East Asia</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>18</vol>(<issue>2</issue>).<pageFirst>187</pageFirst>–<pageLast>98</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0012">
+<citation type="journal" xml:id="weng12056-cit-0012"><author><familyName>Canagarajah</familyName>, <givenNames>Suresh</givenNames></author>. <pubYear year="2006">2006</pubYear>. <articleTitle>The place of world Englishes in composition: Pluralization continued</articleTitle>. <journalTitle>College Composition and Communication</journalTitle> <vol>57</vol>(<issue>4</issue>).<pageFirst>586</pageFirst>–<pageLast>619</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0013">
+<citation type="journal" xml:id="weng12056-cit-0013"><author><familyName>Chan</familyName>, <givenNames>Alice Y. W.</givenNames></author> <pubYear year="2010">2010</pubYear>. <articleTitle>Toward a taxonomy of written errors: Investigation into the written errors of Hong Kong Cantonese ESL learners</articleTitle>. <journalTitle>TESOL Quarterly</journalTitle> <vol>44</vol>(<issue>2</issue>).<pageFirst>295</pageFirst>–<pageLast>319</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0014">
+<citation type="journal" xml:id="weng12056-cit-0014"><author><familyName>Crismore</familyName>, <givenNames>Avon</givenNames></author>, <author><givenNames>Karen</givenNames> <familyName>Ngeow</familyName></author>, and <author><givenNames>Keng‐Soon</givenNames> <familyName>Soo</familyName></author>. <pubYear year="1996">1996</pubYear>. <articleTitle>Attitudes towards English in Malaysia</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>15</vol>(<issue>3</issue>).<pageFirst>319</pageFirst>–<pageLast>35</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0015">
+<citation type="book" xml:id="weng12056-cit-0015"><author><familyName>Davies</familyName>, <givenNames>Alan</givenNames></author>. <pubYear year="2007">2007</pubYear>. <bookTitle>An introduction to applied linguistics</bookTitle>, <edition>2nd ed.</edition> <publisherLoc>Edinburgh</publisherLoc>: <publisherName>Edinburgh University Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0016">
+<citation type="journal" xml:id="weng12056-cit-0016"><author><familyName>Davies</familyName>, <givenNames>Alan</givenNames></author>, <author><givenNames>Liz</givenNames> <familyName>Hamp–Lyons</familyName></author>, and <author><givenNames>Charlotte</givenNames> <familyName>Kemp</familyName></author>. <pubYear year="2003">2003</pubYear>. <articleTitle>Whose norms? International proficiency tests in English</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>22</vol>(<issue>4</issue>).<pageFirst>571</pageFirst>–<pageLast>84</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0017">
+<citation type="journal" xml:id="weng12056-cit-0017"><author><familyName>Dewey</familyName>, <givenNames>Martin</givenNames></author>. <pubYear year="2007">2007</pubYear>. <articleTitle>English as a lingua franca and globalization: An interconnected perspective</articleTitle>. <journalTitle>International Journal of Applied Linguistics</journalTitle> <vol>17</vol>(<issue>3</issue>).<pageFirst>332</pageFirst>–<pageLast>54</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0018">
+<citation type="book" xml:id="weng12056-cit-0018"><author><familyName>Ellis</familyName>, <givenNames>Rod</givenNames></author>. <pubYear year="1994">1994</pubYear>. <bookTitle>The study of second language acquisition</bookTitle>. <publisherLoc>Oxford</publisherLoc>: <publisherName>Oxford University Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0019">
+<citation type="journal" xml:id="weng12056-cit-0019"><author><familyName>French</familyName>, <givenNames>Gary</givenNames></author>. <pubYear year="2005">2005</pubYear>. <articleTitle>The cline of errors in the writing of Japanese university students</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>24</vol>(<issue>3</issue>).<pageFirst>371</pageFirst>–<pageLast>82</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0020">
+<citation type="journal" xml:id="weng12056-cit-0020"><author><familyName>Granger</familyName>, <givenNames>Sylviane</givenNames></author>. <pubYear year="2003">2003</pubYear>. <articleTitle>The international corpus of learner English: A new resource for foreign language learning and teaching and second language acquisition research</articleTitle>. <journalTitle>TESOL Quarterly</journalTitle> <vol>37</vol>(<issue>3</issue>).<pageFirst>538</pageFirst>–<pageLast>46</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0021">
+<citation type="journal" xml:id="weng12056-cit-0021"><author><familyName>Groves</familyName>, <givenNames>Julie</givenNames></author>. <pubYear year="2010">2010</pubYear>. <articleTitle>Error or feature? The issue of interlanguage and deviations in non‐ native varieties of English</articleTitle>. <journalTitle>HKBU Papers in Applied Language Studies</journalTitle> <vol>14</vol>(<issue>1</issue>).<pageFirst>108</pageFirst>–<pageLast>29</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0022">
+<citation type="book" xml:id="weng12056-cit-0022"><author><familyName>Gupta</familyName>, <givenNames>Anthea F.</givenNames></author> <pubYear year="2006">2006</pubYear>. <chapterTitle>Standard English in the world</chapterTitle>. <bookTitle>English in the world: Global rules, global roles</bookTitle>, ed. by <editor><givenNames>R.</givenNames> <familyName>Rubdy</familyName></editor> and <editor><givenNames>M.</givenNames> <familyName>Saraceni</familyName></editor>, <pageFirst>95</pageFirst>–<pageLast>109</pageLast>. <publisherLoc>London</publisherLoc>: <publisherName>Continuum</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0023">
+<citation type="book" xml:id="weng12056-cit-0023"><author><familyName>Guzman</familyName>, <givenNames>M.</givenNames></author>, and <author><familyName>Rosario</familyName> <givenNames>Y.</givenNames></author> <pubYear year="2009">2009</pubYear>. <chapterTitle>How's my “English”? Philippine variety of English in the academe</chapterTitle>. <bookTitle>English and Asia</bookTitle>, ed. by <editor><givenNames>Normala</givenNames> <familyName>Othman</familyName></editor> and <editor><givenNames>Subramanian</givenNames> <familyName>Govindasamy</familyName></editor>, <pageFirst>323</pageFirst>–<pageLast>30</pageLast>. <publisherLoc>Kuala Lumpur</publisherLoc>: <publisherName>International Islamic University Malaysia Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0024">
+<citation type="journal" xml:id="weng12056-cit-0024"><author><familyName>Hamid</familyName>, <givenNames>M. Obaidul</givenNames></author>. <pubYear year="2006">2006</pubYear>. <articleTitle>English teachers’ choice of language for publication: Qualitative insights from Bangladesh</articleTitle>. <journalTitle>Current Issues in Language Planning</journalTitle> <vol>7</vol>(<issue>1</issue>).<pageFirst>126</pageFirst>–<pageLast>40</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0025">
+<citation type="journal" xml:id="weng12056-cit-0025"><author><familyName>Hamid</familyName>, <givenNames>M. Obaidul</givenNames></author>. <pubYear year="2007">2007</pubYear>. <articleTitle>Identifying second language errors: How plausible are plausible reconstructions?</articleTitle> <journalTitle>ELT Journal</journalTitle> <vol>61</vol>(<issue>2</issue>).<pageFirst>107</pageFirst>–<pageLast>16</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0026">
+<citation type="journal" xml:id="weng12056-cit-0026"><author><familyName>Hundt</familyName>, <givenNames>Mariane</givenNames></author>, <author><givenNames>Sebastian</givenNames> <familyName>Hoffman</familyName></author>, and <author><givenNames>Joybrata</givenNames> <familyName>Mukherjee</familyName></author>. <pubYear year="2012">2012</pubYear>. <articleTitle>The hypothetical subjunctive in South Asian Englishes: Local developments in the use of a global construction</articleTitle>. <journalTitle>English World–Wide</journalTitle> <vol>33</vol>(<issue>2</issue>).<pageFirst>147</pageFirst>–<pageLast>64</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0027">
+<citation type="journal" xml:id="weng12056-cit-0027"><author><familyName>Jin</familyName>, <givenNames>Jong</givenNames></author>. <pubYear year="2005">2005</pubYear>. <articleTitle>Which is better in China, a local or a native English–speaking teacher?</articleTitle> <journalTitle>English Today</journalTitle> <vol>21</vol>(<issue>3</issue>).<pageFirst>39</pageFirst>–<pageLast>46</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0028">
+<citation type="journal" xml:id="weng12056-cit-0028"><author><familyName>Kachru</familyName>, <givenNames>Braj B</givenNames></author>. <pubYear year="1985">1985</pubYear>. <articleTitle>The bilingual's creativity</articleTitle>. <journalTitle>Annual Review of Applied Linguistics</journalTitle> <vol>6</vol>.<pageFirst>20</pageFirst>–<pageLast>33</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0029">
+<citation type="journal" xml:id="weng12056-cit-0029"><author><familyName>Kachru</familyName>, <givenNames>Braj B</givenNames></author>. <pubYear year="1988">1988</pubYear>. <articleTitle>Teaching World Englishes</articleTitle>. <journalTitle>ERIC/CLL News Bulletin</journalTitle>, <vol>12</vol>(<issue>1</issue>).1, 3, 4, 8.</citation></bib>
+<bib xml:id="weng12056-bib-0030">
+<citation type="journal" xml:id="weng12056-cit-0030"><author><familyName>Kachru</familyName>, <givenNames>Braj B</givenNames></author>. <pubYear year="1992">1992</pubYear>. <articleTitle>World Englishes: Approaches, issues and resources</articleTitle>. <journalTitle>Language Teaching</journalTitle> <vol>25</vol>(<issue>1</issue>).<pageFirst>1</pageFirst>–<pageLast>14</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0031">
+<citation type="journal" xml:id="weng12056-cit-0031"><author><familyName>Kachru</familyName>, <givenNames>Braj B</givenNames></author>. <pubYear year="1997">1997</pubYear>. <articleTitle>World Englishes and English‐using communities</articleTitle>. <journalTitle>Annual Review of Applied Linguistics</journalTitle> <vol>17</vol>.<pageFirst>66</pageFirst>–<pageLast>87</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0032">
+<citation type="book" xml:id="weng12056-cit-0032"><author><familyName>Kachru</familyName>, <givenNames>Braj B</givenNames></author>. <pubYear year="2005">2005</pubYear>. <bookTitle>Asian Englishes: Beyond the canon</bookTitle>. <publisherLoc>Hong Kong</publisherLoc>: <publisherName>Hong Kong University Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0033">
+<citation type="book" xml:id="weng12056-cit-0033"><author><familyName>Kachru</familyName>, <givenNames>Braj B.</givenNames></author>, <author><givenNames>Yamuna</givenNames> <familyName>Kachru</familyName></author> Y, and <author><givenNames>Cecil L.</givenNames> <familyName>Nelson</familyName></author>. (eds.) <pubYear year="2006">2006</pubYear>. <bookTitle>The handbook of world Englishes</bookTitle>. <publisherLoc>Malden, MA</publisherLoc>: <publisherName>Blackwell</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0034">
+<citation type="journal" xml:id="weng12056-cit-0034"><author><familyName>Kachru</familyName>, <givenNames>Yamuna</givenNames></author>. <pubYear year="1994">1994</pubYear>. <articleTitle>Monolingual bias in SLA research</articleTitle>. <journalTitle>TESOL Quarterly</journalTitle> <vol>28</vol>(<issue>4</issue>).<pageFirst>795</pageFirst>–<pageLast>800</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0035">
+<citation type="book" xml:id="weng12056-cit-0035"><author><familyName>Kaplan</familyName>, <givenNames>Robert. B.</givenNames></author>, and <author><givenNames>Richard B.</givenNames> <familyName>Baldauf</familyName>, <nameSuffix>Jr</nameSuffix></author>. <pubYear year="1997">1997</pubYear>. <bookTitle>Language planning: From practice to theory</bookTitle>. <publisherLoc>Clevedon</publisherLoc>: <publisherName>Multilingual Matters</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0036">
+<citation type="journal" xml:id="weng12056-cit-0036"><author><familyName>Kenkel</familyName>, <givenNames>James. M.</givenNames></author>, and <author><givenNames>Richard W.</givenNames> <familyName>Tucker</familyName></author>. <pubYear year="1989">1989</pubYear>. <articleTitle>Evaluation of institutionalized varieties of English and its implications for placement and pedagogy</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>8</vol>(<issue>2</issue>).<pageFirst>201</pageFirst>–<pageLast>14</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0037">
+<citation type="book" xml:id="weng12056-cit-0037"><author><familyName>Kirkpatrick</familyName>, <givenNames>Andy</givenNames></author>. <pubYear year="2007">2007</pubYear>. <bookTitle>World Englishes: Implications for international communication and English language teaching</bookTitle>. <publisherLoc>Cambridge</publisherLoc>: <publisherName>Cambridge University Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0038">
+<citation type="book" xml:id="weng12056-cit-0038"><author><familyName>Kirkpatrick</familyName>, <givenNames>Andy</givenNames></author>. <pubYear year="2011">2011</pubYear>. <bookTitle>English as a lingua franca in ASEAN: A multilingual model</bookTitle>. <publisherLoc>Hong Kong</publisherLoc>: <publisherName>Hong Kong University Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0039">
+<citation type="journal" xml:id="weng12056-cit-0039"><author><familyName>Lee</familyName>, <givenNames>Jackie. F. K.</givenNames></author> <pubYear year="2001">2001</pubYear>. <articleTitle>Teachers’ attitudes towards disputable usages</articleTitle>. <journalTitle>RELC Journal</journalTitle> <vol>32</vol>(<issue>2</issue>).<pageFirst>1</pageFirst>–<pageLast>15</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0040">
+<citation type="book" xml:id="weng12056-cit-0040"><author><familyName>Leitner</familyName>, <givenNames>Gerhard</givenNames></author>. <pubYear year="2004">2004</pubYear>. <bookTitle>Australia's many voices: Australian English – the national language</bookTitle>. <publisherLoc>Berlin</publisherLoc>: <publisherName>Mouton de Gruyter</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0041">
+<citation type="book" xml:id="weng12056-cit-0041"><author><familyName>Li</familyName>, <givenNames>David C. S.</givenNames></author> <pubYear year="2010">2010</pubYear>. <chapterTitle>When does an unconventional form become and innovation?</chapterTitle> <bookTitle>The Routledge handbook of world Englishes</bookTitle>, ed. by <editor><givenNames>Andy</givenNames> <familyName>Kirkpatrick</familyName></editor>, <pageFirst>617</pageFirst>–<pageLast>33</pageLast>. <publisherLoc>London</publisherLoc>: <publisherName>Routledge</publisherName></citation></bib>
+<bib xml:id="weng12056-bib-0042">
+<citation type="book" xml:id="weng12056-cit-0042"><author><familyName>Lick</familyName>, <givenNames>Ho C.</givenNames></author>, and <author><givenNames>Lubna</givenNames> <familyName>Alsagoff</familyName></author>. <pubYear year="1998">1998</pubYear>. <chapterTitle>Is Singlish grammatical: Two notions of grammaticality</chapterTitle>. <bookTitle>Language, society and education in Singapore</bookTitle>, ed. by <editor><givenNames>Saravaran</givenNames> <familyName>Gopinathan</familyName></editor>, <editor><givenNames>Anne</givenNames> <familyName>Pakir</familyName></editor>, <editor><givenNames>Ho Wah</givenNames> <familyName>Kam</familyName></editor> and <editor><givenNames>Vanithamani</givenNames> <familyName>Saravaran</familyName></editor>, <pageFirst>281</pageFirst>–<pageLast>90</pageLast>. <publisherLoc>Singapore</publisherLoc>: <publisherName>Times Academic Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0043">
+<citation type="journal" xml:id="weng12056-cit-0043"><author><familyName>Lin</familyName>, <givenNames>Angel M. Y.</givenNames></author> <pubYear year="1999">1999</pubYear>. <articleTitle>Doing–English–lessons in the reproduction or transformation of social worlds</articleTitle>. <journalTitle>TESOL Quarterly</journalTitle> <vol>23</vol>(<issue>3</issue>).<pageFirst>392</pageFirst>–<pageLast>412</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0044">
+<citation type="book" xml:id="weng12056-cit-0044"><author><familyName>Llurda</familyName>, <givenNames>Enric</givenNames></author>. <pubYear year="2009">2009</pubYear>. <chapterTitle>Attitudes towards English as an international language: The pervasiveness of native models among L2 users and teachers</chapterTitle>. <bookTitle>English as an international language: Perspectives and pedagogical issues</bookTitle>, ed. by <editor><givenNames>Farzad</givenNames> <familyName>Sharifian</familyName></editor>, <pageFirst>119</pageFirst>–<pageLast>34</pageLast>. <publisherLoc>Bristol</publisherLoc>: <publisherName>Multilingual Matters</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0045">
+<citation type="book" xml:id="weng12056-cit-0045"><author><familyName>Martin</familyName>, <givenNames>Peter</givenNames></author>. <pubYear year="2005">2005</pubYear>. <chapterTitle>Talking knowledge into being in an upriver primary school in Brunei</chapterTitle>. <bookTitle>Reclaiming the local in language policy and practice</bookTitle>, ed. by <editor><givenNames>A. Suresh</givenNames> <familyName>Canagarajah</familyName></editor>, <pageFirst>225</pageFirst>–<pageLast>46</pageLast>. <publisherLoc>Mahwah, NJ</publisherLoc>: <publisherName>Lawrence Erlbaum</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0046">
+<citation type="book" xml:id="weng12056-cit-0046"><author><familyName>McKay</familyName>, <givenNames>Sandra L.</givenNames></author> <pubYear year="2002">2002</pubYear>. <bookTitle>Teaching English as an international language</bookTitle>. <publisherLoc>Oxford</publisherLoc>: <publisherName>Oxford University Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0047">
+<citation type="book" xml:id="weng12056-cit-0047"><author><familyName>Melchers</familyName>, <givenNames>Gunnel</givenNames></author>, and <author><givenNames>Philip</givenNames> <familyName>Shaw</familyName></author>. <pubYear year="2003">2003</pubYear>. <bookTitle>World Englishes: An introduction</bookTitle>. <publisherLoc>London</publisherLoc>: <publisherName>Arnold</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0048">
+<citation type="book" xml:id="weng12056-cit-0048"><author><familyName>Mesthrie</familyName>, <givenNames>Rajend</givenNames></author>. (ed.) <pubYear year="2008">2008</pubYear>. <bookTitle>Varieties of English: Africa, South and Southeast Asia</bookTitle> (Vol. <vol>4</vol>). <publisherLoc>Berlin</publisherLoc>: <publisherName>Mouton de Gruyter</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0049">
+<citation type="book" xml:id="weng12056-cit-0049"><author><familyName>Mollin</familyName>, <givenNames>Sandra</givenNames></author>. <pubYear year="2006">2006</pubYear>. <bookTitle>Euro–English: Assessing variety status</bookTitle>. <publisherLoc>Tubingen</publisherLoc>: <publisherName>Gunter Narr</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0050">
+<citation type="book" xml:id="weng12056-cit-0050"><author><familyName>Mukherjee</familyName>, <givenNames>Joybrata</givenNames></author>, and <author><givenNames>Mariane</givenNames> <familyName>Hundt</familyName></author>, (eds.) <pubYear year="2011">2011</pubYear>. <bookTitle>Exploring second–language varieties of English and learner Englishes</bookTitle>. <publisherLoc>Amsterdam</publisherLoc>: <publisherName>John Benjamins</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0051">
+<citation type="journal" xml:id="weng12056-cit-0051"><author><familyName>Nelson</familyName>, <givenNames>Cecil L.</givenNames></author> <pubYear year="1995">1995</pubYear>. <articleTitle>Intelligibility and world Englishes in the classroom</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>14</vol>(<issue>2</issue>).<pageFirst>273</pageFirst>–<pageLast>79</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0052">
+<citation type="journal" xml:id="weng12056-cit-0052"><author><familyName>O'Hara–Davies</familyName>, <givenNames>Breda</givenNames></author>. <pubYear year="2010">2010</pubYear>. <articleTitle>Brunei English: A developing variety</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>29</vol>(<issue>3</issue>).<pageFirst>406</pageFirst>–<pageLast>19</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0053">
+<citation type="journal" xml:id="weng12056-cit-0053"><author><familyName>Okunrinmeta</familyName>, <givenNames>Uriel</givenNames></author>. <pubYear year="2011">2011</pubYear>. <articleTitle>Izon syntax and the English of Izon–English bilinguals</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>30</vol>(<issue>2</issue>).<pageFirst>211</pageFirst>–<pageLast>28</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0055">
+<citation type="journal" xml:id="weng12056-cit-0055"><author><familyName>Patil</familyName>, <givenNames>Zumbarlal. N.</givenNames></author> <pubYear year="2006">2006</pubYear>. <articleTitle>On the nature and role of English in Asia</articleTitle>. <journalTitle>The Linguistics Journal</journalTitle> <vol>1</vol>(<issue>2</issue>).<pageFirst>88</pageFirst>–<pageLast>131</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0056">
+<citation type="journal" xml:id="weng12056-cit-0056"><author><familyName>Pickering</familyName>, <givenNames>Lucy</givenNames></author>. <pubYear year="2006">2006</pubYear>. <articleTitle>Current research on intelligibility in English as a lingua franca</articleTitle>. <journalTitle>Annual Review of Applied Linguistics</journalTitle> <vol>26</vol>.<pageFirst>219</pageFirst>–<pageLast>33</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0057">
+<citation type="book" xml:id="weng12056-cit-0057"><author><familyName>Schneider</familyName>, <givenNames>Edgar</givenNames></author>. <pubYear year="2007">2007</pubYear>. <bookTitle>Post–colonial English: Varieties around the world</bookTitle>. <publisherLoc>Cambridge</publisherLoc>: <publisherName>Cambridge University Press</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0058">
+<citation type="journal" xml:id="weng12056-cit-0058"><author><familyName>Seargeant</familyName>, <givenNames>Philip</givenNames></author>, and <author><givenNames>Caroline</givenNames> <familyName>Tagg</familyName></author>. <pubYear year="2011">2011</pubYear>. <articleTitle>English in the internet and a ‘post–varieties’ approach to language</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>30</vol>(<issue>4</issue>).<pageFirst>496</pageFirst>–<pageLast>514</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0059">
+<citation type="book" xml:id="weng12056-cit-0059"><author><familyName>Shahiduzzaman</familyName></author> (ed.). <pubYear year="2005">2005</pubYear>. <bookTitle>Miseries of millions in Bangladesh</bookTitle>. <publisherLoc>Dhaka</publisherLoc>: <publisherName>News Network</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0060">
+<citation type="book" xml:id="weng12056-cit-0060"><author><familyName>Sharifian</familyName>, <givenNames>Farzad</givenNames></author> (ed.). <pubYear year="2009">2009</pubYear>. <bookTitle>English as an international language: Perspectives and pedagogical issues</bookTitle>. <publisherLoc>Bristol</publisherLoc>: <publisherName>Multilingual Matters</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0061">
+<citation type="book" xml:id="weng12056-cit-0061"><author><familyName>Shin</familyName>, <givenNames>Hyunjung</givenNames></author>, and <author><givenNames>Ryuko</givenNames> <familyName>Kubota</familyName></author>. <pubYear year="2008">2008</pubYear>. <chapterTitle>Post–colonialism and globalization in language education</chapterTitle>. <bookTitle>The handbook of educational linguistics</bookTitle>, ed. by <editor><givenNames>Bernard</givenNames> <familyName>Spolsky</familyName></editor>, <pageFirst>206</pageFirst>–<pageLast>19</pageLast>. <publisherLoc>Oxford</publisherLoc>: <publisherName>Blackwell</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0062">
+<citation type="journal" xml:id="weng12056-cit-0062"><author><familyName>Sifakis</familyName>, <givenNames>Nicos</givenNames></author>. <pubYear year="2007">2007</pubYear>. <articleTitle>The education of teachers of English as a lingua franca: A transformative perspective</articleTitle>. <journalTitle>International Journal of Applied Linguistics</journalTitle> <vol>17</vol>(<issue>3</issue>).<pageFirst>355</pageFirst>–<pageLast>75</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0063">
+<citation type="book" xml:id="weng12056-cit-0063"><author><familyName>Smith</familyName>, <givenNames>Larry E</givenNames></author>. <pubYear year="2009">2009</pubYear>. <chapterTitle>Dimensions of understanding in cross–cultural communication</chapterTitle>. <bookTitle>Global Englishes in Asian contexts: Current and future debates</bookTitle>, ed. by <editor><givenNames>K.</givenNames> <familyName>Murata</familyName></editor> and <editor><givenNames>J.</givenNames> <familyName>Jenkins</familyName></editor>, <pageFirst>17</pageFirst>–<pageLast>25</pageLast>. <publisherLoc>Basingstoke</publisherLoc>: <publisherName>Palgrave Macmillan</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0064">
+<citation type="journal" xml:id="weng12056-cit-0064"><author><familyName>Smith</familyName>, <givenNames>Larry E.</givenNames></author>, and <author><givenNames>Cecil</givenNames> <familyName>Nelson</familyName></author> <pubYear year="1985">1985</pubYear>. <articleTitle>International intelligibility of English: Directions and resources</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>4</vol>(<issue>3</issue>).<pageFirst>333</pageFirst>–<pageLast>42</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0065">
+<citation type="journal" xml:id="weng12056-cit-0065"><author><familyName>Sridhar</familyName>, <givenNames>Kamal K.</givenNames></author>, and, <author><givenNames>Shikaripur N.</givenNames> <familyName>Sridhar</familyName></author>. <pubYear year="1986">1986</pubYear>. <articleTitle>Bridging the paradigm gap: Second language acquisition theory and indigenized varieties of English</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>5</vol>(<issue>1</issue>).<pageFirst>3</pageFirst>–<pageLast>14</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0066">
+<citation type="journal" xml:id="weng12056-cit-0066"><author><familyName>Tan</familyName>, <givenNames>Melinda</givenNames></author>. <pubYear year="2005">2005</pubYear>. <articleTitle>Authentic language or language errors? Lessons from a learner corpus</articleTitle>. <journalTitle>ELT Journal</journalTitle> <vol>59</vol>(<issue>2</issue>).<pageFirst>126</pageFirst>–<pageLast>34</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0067">
+<citation type="journal" xml:id="weng12056-cit-0067"><author><familyName>Timmis</familyName>, <givenNames>Ivor</givenNames></author>. <pubYear year="2002">2002</pubYear>. <articleTitle>Native–speaker norms and international English: A classroom view</articleTitle>. <journalTitle>ELT Journal</journalTitle> <vol>56</vol>(<issue>3</issue>).<pageFirst>240</pageFirst>–<pageLast>49</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0068">
+<citation type="book" xml:id="weng12056-cit-0068"><author><familyName>Tomlinson</familyName>, <givenNames>Brian</givenNames></author>. <pubYear year="2010">2010</pubYear>. <chapterTitle>What test of which English and why?</chapterTitle> <bookTitle>The Routledge handbook of world Englishes</bookTitle>, ed. by <editor><givenNames>A.</givenNames> <familyName>Kirkpatrick</familyName></editor>, <pageFirst>599</pageFirst>–<pageLast>616</pageLast>. <publisherLoc>London</publisherLoc>: <publisherName>Routledge</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0069">
+<citation type="book" xml:id="weng12056-cit-0069"><author><familyName>Tupas</familyName>, <givenNames>T.</givenNames></author> and <author><givenNames>F.</givenNames> <familyName>Ruanni</familyName></author>. <pubYear year="2010">2010</pubYear>. <chapterTitle>Which norms in everyday practice: and why</chapterTitle>? <bookTitle>The Routledge handbook of world Englishes</bookTitle>, ed. by <editor><givenNames>A.</givenNames> <familyName>Kirkpatrick</familyName></editor>, <pageFirst>617</pageFirst>–<pageLast>79</pageLast>. <publisherLoc>London</publisherLoc>: <publisherName>Routledge</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0070">
+<citation type="book" xml:id="weng12056-cit-0070"><author><familyNamePrefix>van</familyNamePrefix> <familyName>Rooy</familyName>, <givenNames>Bertus</givenNames></author>. <pubYear year="2011">2011</pubYear>. <chapterTitle>A principled distinction between error and conventionalized innovation in African Englishes</chapterTitle>. <bookTitle>Exploring second–language varieties of English and learner Englishes: Bridging a paradigm gap</bookTitle>, ed. by <editor><givenNames>J.</givenNames> <familyName>Mukherjee</familyName></editor> and <editor><givenNames>M.</givenNames> <familyName>Hundt</familyName></editor>, <pageFirst>189</pageFirst>–<pageLast>207</pageLast>. <publisherLoc>Amsterdam</publisherLoc>: <publisherName>John Benjamins</publisherName>.</citation></bib>
+<bib xml:id="weng12056-bib-0071">
+<citation type="journal" xml:id="weng12056-cit-0071"><author><familyName>Xiaoqiong</familyName>, <givenNames>Hu</givenNames></author>. <pubYear year="2005">2005</pubYear>. <articleTitle>China English, at home and in the world</articleTitle>. <journalTitle>English Today</journalTitle> <vol>21</vol>(<issue>1</issue>).<pageFirst>27</pageFirst>–<pageLast>38</pageLast>.</citation></bib>
+<bib xml:id="weng12056-bib-0072">
+<citation type="journal" xml:id="weng12056-cit-0072"><author><familyName>Wiebesiek</familyName>, <givenNames>Lisa</givenNames></author>, <author><givenNames>Stephanie</givenNames> <familyName>Rudwick</familyName></author>, and <author><givenNames>Jochem</givenNames> <familyName>Zeller</familyName></author>. <pubYear year="2011">2011</pubYear>. <articleTitle>South African Indian English: A qualitative study of attitudes</articleTitle>. <journalTitle>World Englishes</journalTitle> <vol>30</vol>(<issue>2</issue>).<pageFirst>251</pageFirst>–<pageLast>68</pageLast>.</citation></bib>
+</bibliography>
+</body>
+</component>

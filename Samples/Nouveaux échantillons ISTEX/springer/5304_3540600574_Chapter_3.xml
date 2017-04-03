@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+<PublisherInfo>
+<PublisherName>Springer Berlin Heidelberg</PublisherName>
+<PublisherLocation>Berlin, Heidelberg</PublisherLocation>
+</PublisherInfo>
+<Series>
+<SeriesInfo TocLevels="0">
+<SeriesID>5304</SeriesID>
+<SeriesPrintISSN>0075-8450</SeriesPrintISSN>
+<SeriesElectronicISSN>1616-6361</SeriesElectronicISSN>
+<SeriesTitle Language="En">Lecture Notes in Physics</SeriesTitle>
+<SeriesAbbreviatedTitle>Lect Notes Phys</SeriesAbbreviatedTitle>
+</SeriesInfo>
+<SeriesHeader>
+<EditorGroup>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>H.</GivenName>
+<FamilyName>Araki</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>E.</GivenName>
+<FamilyName>Brézin</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>J.</GivenName>
+<FamilyName>Ehlers</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>U.</GivenName>
+<FamilyName>Frisch</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>K.</GivenName>
+<FamilyName>Hepp</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>R.</GivenName>
+<GivenName>L.</GivenName>
+<FamilyName>Jaffe</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>R.</GivenName>
+<FamilyName>Kippenhahn</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>H.</GivenName>
+<GivenName>A.</GivenName>
+<FamilyName>Weidenmüller</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>J.</GivenName>
+<FamilyName>Wess</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>J.</GivenName>
+<FamilyName>Zittartz</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>W.</GivenName>
+<FamilyName>Beiglböck</FamilyName>
+</EditorName>
+</Editor>
+</EditorGroup>
+</SeriesHeader>
+<Book Language="En">
+<BookInfo MediaType="eBook" Language="En" BookProductType="Proceedings" TocLevels="0" NumberingStyle="Unnumbered">
+<BookID>3540600574</BookID>
+<BookTitle>Flares and Flashes</BookTitle>
+<BookSubTitle>Proceedings of IAU Colloqium No. 151 Held in Sonneberg, Germany, 5–9 December 1994</BookSubTitle>
+<BookVolumeNumber>454</BookVolumeNumber>
+<BookDOI>10.1007/3-540-60057-4</BookDOI>
+<BookTitleID>43030</BookTitleID>
+<BookPrintISBN>978-3-540-60057-2</BookPrintISBN>
+<BookElectronicISBN>978-3-540-49420-1</BookElectronicISBN>
+<BookChapterCount>110</BookChapterCount>
+<BookCopyright>
+<CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
+<CopyrightYear>1995</CopyrightYear>
+</BookCopyright>
+<BookSubjectGroup>
+<BookSubject Code="P" Type="Primary">Physics</BookSubject>
+<BookSubject Code="P22030" Priority="1" Type="Secondary">Extraterrestrial Physics, Space Sciences</BookSubject>
+<BookSubject Code="G18009" Priority="2" Type="Secondary">Geophysics/Geodesy</BookSubject>
+<BookSubject Code="P26001" Priority="3" Type="Secondary">Electromagnetism, Optics and Lasers</BookSubject>
+<SubjectCollection Code="SUCO11651">Physics and Astronomy</SubjectCollection>
+</BookSubjectGroup>
+</BookInfo>
+<BookHeader>
+<EditorGroup>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>Jochen</GivenName>
+<FamilyName>Greiner</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>Hilmar</GivenName>
+<GivenName>W.</GivenName>
+<FamilyName>Duerbeck</FamilyName>
+</EditorName>
+</Editor>
+<Editor>
+<EditorName DisplayOrder="Western">
+<GivenName>Roald</GivenName>
+<GivenName>E.</GivenName>
+<FamilyName>Gershberg</FamilyName>
+</EditorName>
+</Editor>
+</EditorGroup>
+</BookHeader>
+<Chapter ID="Chap3" Language="En">
+<ChapterInfo ChapterType="ReviewPaper" NumberingStyle="Unnumbered" TocLevels="0" ContainsESM="No">
+<ChapterID>3</ChapterID>
+<ChapterDOI>10.1007/3-540-60057-4_223</ChapterDOI>
+<ChapterSequenceNumber>3</ChapterSequenceNumber>
+<ChapterTitle Language="En">Radio emission from flares in single late-type stars</ChapterTitle>
+<ChapterCategory>Flares in Late-type Stars: Radio and Optical</ChapterCategory>
+<ChapterFirstPage>21</ChapterFirstPage>
+<ChapterLastPage>31</ChapterLastPage>
+<ChapterCopyright>
+<CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
+<CopyrightYear>1995</CopyrightYear>
+</ChapterCopyright>
+<ChapterHistory>
+<OnlineDate>
+<Year>2005</Year>
+<Month>7</Month>
+<Day>22</Day>
+</OnlineDate>
+</ChapterHistory>
+<ChapterGrants Type="Regular"><MetadataGrant Grant="OpenAccess"/><AbstractGrant Grant="OpenAccess"/><BodyPDFGrant Grant="Restricted"/><BodyHTMLGrant Grant="Restricted"/><BibliographyGrant Grant="Restricted"/><ESMGrant Grant="Restricted"/></ChapterGrants><ChapterContext>
+<SeriesID>5304</SeriesID>
+<BookID>3540600574</BookID>
+<BookTitle>Flares and Flashes</BookTitle>
+</ChapterContext>
+</ChapterInfo>
+<ChapterHeader>
+<AuthorGroup>
+<Author AffiliationIDS="Aff1">
+<AuthorName DisplayOrder="Western">
+<GivenName>Arnold</GivenName>
+<GivenName>O.</GivenName>
+<FamilyName>Benz</FamilyName>
+</AuthorName>
+</Author>
+<Affiliation ID="Aff1">
+<OrgName>Institute of Astronomy</OrgName>
+<OrgAddress>
+<Street>ETH-Zentrum</Street>
+<Postcode>CH-8092</Postcode>
+<City>Zürich</City>
+<Country>Switzerland</Country>
+</OrgAddress>
+</Affiliation>
+</AuthorGroup>
+<Abstract ID="Abs1" Language="En">
+<Heading>Abstract</Heading>
+<Para>Radio observations provide the most direct information on nonthermal electrons in stellar flares and in the coronae of late-type stars. Radio emissions of single main-sequence F, G, and of many K stars have recently been discovered, in addition to the well-known dwarf M stars. Their long-duration radio flares with low circular polarization, slow variations and broad bandwidth can be attributed to gyrosynchrotron emission of mildly relativistic electrons. The same holds for the low-level (‘quiescent’) radio emission. On the other hand, highly polarized radio flares of M stars have been interpreted by coherent emissions from loss-cone instabilities of magnetically trapped electrons. These conjectures are consistent with recent VLBI observations. The identification of the radio emission process allows to estimate the high-energy component of the flare and compare it to the total flare energy. The weakly polarized radio emission may serve as a proxy for hard X-ray signatures of relativistic electrons. The fraction of primary energy released into energetic electrons then appears to be large and similar to solar flares.</Para>
+</Abstract>
+</ChapterHeader>
+<NoBody></NoBody>
+</Chapter>
+</Book>
+</Series>
+</Publisher>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+-->
+<?xml-stylesheet type="text/xsl" href="../../../../../Workbench/Pub2TEIPrivate/Stylesheets/Publishers.xsl"?>
+<!DOCTYPE Publisher SYSTEM "../../../../../Workbench/Pub2TEIPrivate/Samples/DTDs/A++V2.4/A++V2.4.dtd">
+<Publisher>
+  <PublisherInfo>
+    <PublisherName>Springer Berlin Heidelberg</PublisherName>
+    <PublisherLocation>Berlin, Heidelberg</PublisherLocation>
+  </PublisherInfo>
+  <Series>
+    <SeriesInfo TocLevels="0">
+      <SeriesID>5304</SeriesID>
+      <SeriesPrintISSN>0075-8450</SeriesPrintISSN>
+      <SeriesElectronicISSN>1616-6361</SeriesElectronicISSN>
+      <SeriesTitle Language="En">Lecture Notes in Physics</SeriesTitle>
+      <SeriesAbbreviatedTitle>Lect Notes Phys</SeriesAbbreviatedTitle>
+    </SeriesInfo>
+    <SeriesHeader>
+      <EditorGroup>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>H.</GivenName>
+            <FamilyName>Araki</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>E.</GivenName>
+            <FamilyName>Brézin</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>J.</GivenName>
+            <FamilyName>Ehlers</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>U.</GivenName>
+            <FamilyName>Frisch</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>K.</GivenName>
+            <FamilyName>Hepp</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>R.</GivenName>
+            <GivenName>L.</GivenName>
+            <FamilyName>Jaffe</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>R.</GivenName>
+            <FamilyName>Kippenhahn</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>H.</GivenName>
+            <GivenName>A.</GivenName>
+            <FamilyName>Weidenmüller</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>J.</GivenName>
+            <FamilyName>Wess</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>J.</GivenName>
+            <FamilyName>Zittartz</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>W.</GivenName>
+            <FamilyName>Beiglböck</FamilyName>
+          </EditorName>
+        </Editor>
+      </EditorGroup>
+    </SeriesHeader>
+    <Book Language="En">
+      <BookInfo MediaType="eBook" Language="En" BookProductType="Proceedings" TocLevels="0" NumberingStyle="Unnumbered">
+        <BookID>3540600574</BookID>
+        <BookTitle>Flares and Flashes</BookTitle>
+        <BookSubTitle>Proceedings of IAU Colloqium No. 151 Held in Sonneberg, Germany, 5–9 December 1994</BookSubTitle>
+        <BookVolumeNumber>454</BookVolumeNumber>
+        <BookDOI>10.1007/3-540-60057-4</BookDOI>
+        <BookTitleID>43030</BookTitleID>
+        <BookPrintISBN>978-3-540-60057-2</BookPrintISBN>
+        <BookElectronicISBN>978-3-540-49420-1</BookElectronicISBN>
+        <BookChapterCount>110</BookChapterCount>
+        <BookCopyright>
+          <CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
+          <CopyrightYear>1995</CopyrightYear>
+        </BookCopyright>
+        <BookSubjectGroup>
+          <BookSubject Code="P" Type="Primary">Physics</BookSubject>
+          <BookSubject Code="P22030" Priority="1" Type="Secondary">Extraterrestrial Physics, Space Sciences</BookSubject>
+          <BookSubject Code="G18009" Priority="2" Type="Secondary">Geophysics/Geodesy</BookSubject>
+          <BookSubject Code="P26001" Priority="3" Type="Secondary">Electromagnetism, Optics and Lasers</BookSubject>
+          <SubjectCollection Code="SUCO11651">Physics and Astronomy</SubjectCollection>
+        </BookSubjectGroup>
+      </BookInfo>
+      <BookHeader>
+        <EditorGroup>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Jochen</GivenName>
+              <FamilyName>Greiner</FamilyName>
+            </EditorName>
+          </Editor>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Hilmar</GivenName>
+              <GivenName>W.</GivenName>
+              <FamilyName>Duerbeck</FamilyName>
+            </EditorName>
+          </Editor>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Roald</GivenName>
+              <GivenName>E.</GivenName>
+              <FamilyName>Gershberg</FamilyName>
+            </EditorName>
+          </Editor>
+        </EditorGroup>
+      </BookHeader>
+      <Chapter ID="Chap107" Language="En">
+        <ChapterInfo ChapterType="ReviewPaper" NumberingStyle="Unnumbered" TocLevels="0" ContainsESM="No">
+          <ChapterID>107</ChapterID>
+          <ChapterDOI>10.1007/3-540-60057-4_327</ChapterDOI>
+          <ChapterSequenceNumber>107</ChapterSequenceNumber>
+          <ChapterTitle Language="En">Wide-field X-ray optics</ChapterTitle>
+          <ChapterCategory>All-Sky Monitoring</ChapterCategory>
+          <ChapterFirstPage>435</ChapterFirstPage>
+          <ChapterLastPage>438</ChapterLastPage>
+          <ChapterCopyright>
+            <CopyrightHolderName>Springer-Verlag</CopyrightHolderName>
+            <CopyrightYear>1995</CopyrightYear>
+          </ChapterCopyright>
+          <ChapterHistory>
+            <OnlineDate>
+              <Year>2005</Year>
+              <Month>7</Month>
+              <Day>22</Day>
+            </OnlineDate>
+          </ChapterHistory>
+          <ChapterGrants Type="Regular">
+            <MetadataGrant Grant="OpenAccess"/>
+            <AbstractGrant Grant="OpenAccess"/>
+            <BodyPDFGrant Grant="Restricted"/>
+            <BodyHTMLGrant Grant="Restricted"/>
+            <BibliographyGrant Grant="Restricted"/>
+            <ESMGrant Grant="Restricted"/>
+          </ChapterGrants>
+          <ChapterContext>
+            <SeriesID>5304</SeriesID>
+            <BookID>3540600574</BookID>
+            <BookTitle>Flares and Flashes</BookTitle>
+          </ChapterContext>
+        </ChapterInfo>
+        <ChapterHeader>
+          <AuthorGroup>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>René</GivenName>
+                <FamilyName>Hudec</FamilyName>
+              </AuthorName>
+            </Author>
+            <Author AffiliationIDS="Aff2">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Adolf</GivenName>
+                <FamilyName>Inneman</FamilyName>
+              </AuthorName>
+            </Author>
+            <Author AffiliationIDS="Aff3">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Ladislav</GivenName>
+                <FamilyName>Pina</FamilyName>
+              </AuthorName>
+            </Author>
+            <Author AffiliationIDS="Aff4">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Petr</GivenName>
+                <FamilyName>Řehák</FamilyName>
+              </AuthorName>
+            </Author>
+            <Author AffiliationIDS="Aff5">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Paul</GivenName>
+                <FamilyName>Gorenstein</FamilyName>
+              </AuthorName>
+            </Author>
+            <Affiliation ID="Aff1">
+              <OrgDivision>Astronomical Institute</OrgDivision>
+              <OrgName>Academy of Sciences of Czech Republic</OrgName>
+              <OrgAddress>
+                <Postcode>251 65</Postcode>
+                <City>Ondřejov</City>
+                <Country>Czech Republic</Country>
+              </OrgAddress>
+            </Affiliation>
+            <Affiliation ID="Aff2">
+              <OrgName>KOMA, Composite Materials</OrgName>
+              <OrgAddress>
+                <Street>K lesu 965</Street>
+                <Postcode>CZ-142 00</Postcode>
+                <City>Praha 4</City>
+                <Country>Czech Republic</Country>
+              </OrgAddress>
+            </Affiliation>
+            <Affiliation ID="Aff3">
+              <OrgDivision>Faculty of Nuclear Engineering</OrgDivision>
+              <OrgName>Czech Technical University</OrgName>
+              <OrgAddress>
+                <Street>Břehová 7</Street>
+                <Postcode>CZ-115 01</Postcode>
+                <City>Praha 1</City>
+                <Country>Czech Republic</Country>
+              </OrgAddress>
+            </Affiliation>
+            <Affiliation ID="Aff4">
+              <OrgName>Development-Optical Workshop of the Academy of Sciences of Czech Republic</OrgName>
+              <OrgAddress>
+                <Street>Skálova 89</Street>
+                <Postcode>CZ-511 01</Postcode>
+                <City>Turnov</City>
+                <Country>Czech Republic</Country>
+              </OrgAddress>
+            </Affiliation>
+            <Affiliation ID="Aff5">
+              <OrgName>Harvard-Smithsonian Center for Astrophysics</OrgName>
+              <OrgAddress>
+                <Street>60 Garden Street</Street>
+                <Postcode>02138</Postcode>
+                <City>Cambridge</City>
+                <State>MA</State>
+                <Country>USA</Country>
+              </OrgAddress>
+            </Affiliation>
+          </AuthorGroup>
+          <Abstract ID="Abs1" Language="En">
+            <Heading>Abstract</Heading>
+            <Para>Classical X-ray mirror optics usually has a limited Field of View (FoV) of ≈ 1°. Wide-field imaging can be achieved by lobster-eye type reflecting X-ray optics. We summarise several
+              different approaches and suggest an innovative technology for the production of X-ray reflecting flats and cells necessary to develop one- or two-dimensional wide-field X-ray optics. The
+              technology is based on double-sided, replicated reflecting foils produced by electroforming and CF/composite technologies.</Para>
+          </Abstract>
+        </ChapterHeader>
+        <NoBody/>
+      </Chapter>
+    </Book>
+  </Series>
+</Publisher>

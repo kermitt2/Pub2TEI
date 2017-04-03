@@ -1,0 +1,1888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//ES//DTD journal article DTD version 5.0.1//EN//XML" "../../DTDs/art501/art501.dtd">
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?>
+<article xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="fr" docsubtype="fla">
+	<item-info>
+		<jid>PXOLDC</jid>
+		<aid>00884613</aid>
+		<ce:pii>S1387-1609(00)88461-3</ce:pii>
+		<ce:doi>10.1016/S1387-1609(00)88461-3</ce:doi>
+		<ce:copyright type="unknown" year="1999">Académie des sciences / Éditions scientifiques et médicales Elsevier SAS</ce:copyright>
+		<ce:doctopics>
+			<ce:doctopic>
+				<ce:text>Chimie de l'état solide et cristallochimie</ce:text>
+			</ce:doctopic>
+		</ce:doctopics>
+	</item-info>
+	<head>
+		<ce:dochead>
+			<ce:textfn>Mise au point</ce:textfn>
+		</ce:dochead>
+		<ce:title>Les réactions solvothermales : implications en recherche de base et dans les procédés industriels</ce:title>
+		<ce:alt-title xml:lang="en">Solvothermal reaction: involvement in basic research and industrial applications</ce:alt-title>
+		<ce:presented>**</ce:presented>
+		<ce:author-group>
+			<ce:author>
+				<ce:given-name>Gérard</ce:given-name>
+				<ce:surname>Demazeau</ce:surname>
+				<ce:cross-ref refid="aff1">
+					<ce:sup>a</ce:sup>
+				</ce:cross-ref>
+				<ce:cross-ref refid="aff2">
+					<ce:sup>b</ce:sup>
+				</ce:cross-ref>
+				<ce:e-address type="email">demazeau@icmcb.u-bordeaux.fr</ce:e-address>
+			</ce:author>
+			<ce:affiliation id="aff1">
+				<ce:label>a</ce:label>
+				<ce:textfn>Institut de chimie de la matière condensée de Bordeaux, ICMCB-UPR-CNRS 9048, 87, av. du Dr-A.-Schweitzer, 33608, Pessac cedex, France</ce:textfn>
+			</ce:affiliation>
+			<ce:affiliation id="aff2">
+				<ce:label>b</ce:label>
+				<ce:textfn>≪Interface hautes pressions≫ (ICMCB-ENSCPB), École nationale supérieure de chimie et de physique de Bordeaux, av. Pey-Berland, B.P. 108, 33402 Talence cedex, France</ce:textfn>
+			</ce:affiliation>
+		</ce:author-group>
+		<ce:date-received day="25" month="10" year="1999"/>
+		<ce:date-accepted day="22" month="11" year="1999"/>
+		<ce:abstract id="ab1" class="author" xml:lang="fr">
+			<ce:section-title>Résumé</ce:section-title>
+			<ce:abstract-sec>
+				<ce:simple-para>Les réactions solvothermales ont été récemment largement utilisées, tant en chimie du solide qu'en science des matériaux. Dans une première approche, on peut considérer sept grands domaines d'application de ces réactions : (i) la synthèse de nouveaux matériaux, (ii) la mise au point de procédés originaux, (iii) la préparation de microcristallites, (iv) le dépôt de films minces, (v) le frittage et (vi) la croissance cristalline à température modérée par rapport aux procédés conventionnels, (vii) le retraitement des déchets. Ces domaines d'activités, qui ont trait tant à la recherche fondamentale qu'aux applications industrielles, notamment dans le secteur des céramiques, sont successivement présentés et leurs potentialités de développement à moyen terme analysées.</ce:simple-para>
+			</ce:abstract-sec>
+		</ce:abstract>
+		<ce:abstract id="ab2" class="author" xml:lang="en">
+			<ce:section-title>Abstract</ce:section-title>
+			<ce:abstract-sec>
+				<ce:simple-para>Solvothermal reactions have been developed both in solid state chemistry and in material science. In a first approach, seven main domains can be defined for the applications of such reactions: (i) the synthesis of new materials, (ii) the development of new processes, (iii) the preparation of microcrystallites, (iv) the thin film deposition, (v) the sintering and (vi) the crystal growth at moderate temperature compared to the conventional processes, (vii) the waste-retreatment. These different domains involving either the basic research or the industrial applications, in particular in the area of ceramics, are presented and their potential developments are analysed.</ce:simple-para>
+			</ce:abstract-sec>
+		</ce:abstract>
+		<ce:keywords class="keyword" xml:lang="en">
+			<ce:keyword>
+				<ce:text>hautes pressions</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>solvant domaine sub-critique</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>domaine supercritique</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>matériaux</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>cristallogenèse</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>céramiques</ce:text>
+			</ce:keyword>
+		</ce:keywords>
+		<ce:keywords class="keyword" xml:lang="en">
+			<ce:keyword>
+				<ce:text>high pressures</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>solvent</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>subcritical domain</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>supercritical domain</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>materials</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>crystal growth</ce:text>
+			</ce:keyword>
+			<ce:keyword>
+				<ce:text>ceramics</ce:text>
+			</ce:keyword>
+		</ce:keywords>
+	</head>
+	<tail>
+		<ce:bibliography>
+			<ce:section-title>Références bibliographiques</ce:section-title>
+			<ce:bibliography-sec>
+				<ce:bib-reference id="bib1">
+					<ce:label>[1]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Shaw</ce:surname>
+									<ce:given-name>R.W.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Brill</ce:surname>
+									<ce:given-name>T.B.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Clifford</ce:surname>
+									<ce:given-name>A.A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Eckert</ce:surname>
+									<ce:given-name>CA.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Franck</ce:surname>
+									<ce:given-name>E.U.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:title>
+									<sb:maintitle>C&amp;EN</sb:maintitle>
+								</sb:title>
+								<sb:date>December 23, 1991</sb:date>
+							</sb:edited-book>
+							<sb:pages>
+								<sb:first-page>26</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib2">
+					<ce:label>[2]</ce:label>
+					<sb:reference>
+						<sb:comment>(Gakujutsu Bunken Fukyu-Kai)</sb:comment>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Hydrothermal Reactions</ce:surname>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:editors>
+									<sb:editor>
+										<ce:surname>Somiya</ce:surname>
+										<ce:given-name>S.</ce:given-name>
+									</sb:editor>
+								</sb:editors>
+								<sb:title>
+									<sb:maintitle>Proceedings of the First International Symposium on Hydrothermal Reactions, Tokyo, Japon (22–26 mars 1982)</sb:maintitle>
+								</sb:title>
+								<sb:date>1983</sb:date>
+							</sb:edited-book>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib3">
+					<ce:label>[3]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Wang</ce:surname>
+									<ce:given-name>A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Capitain</ce:surname>
+									<ce:given-name>F.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Monnier</ce:surname>
+									<ce:given-name>V.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Matar</ce:surname>
+									<ce:given-name>S.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Materials Synthesis and Processing</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>5</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>3</sb:issue-nr>
+								<sb:date>1997</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>235</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib4">
+					<ce:label>[4]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Reig</ce:surname>
+									<ce:given-name>P.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Naslain</ce:surname>
+									<ce:given-name>R.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Mater Sci.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>32</sb:volume-nr>
+								</sb:series>
+								<sb:date>1997</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>4189</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib5">
+					<ce:label>[5]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Reig</ce:surname>
+									<ce:given-name>P.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Naslain</ce:surname>
+									<ce:given-name>R.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Eur. J. Sol. State Inorg.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>32</sb:volume-nr>
+								</sb:series>
+								<sb:date>1995</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>4339</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib6">
+					<ce:label>[6]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Reid</ce:surname>
+									<ce:given-name>R.C.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Prausnitz</ce:surname>
+									<ce:given-name>J.M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Sherwood</ce:surname>
+									<ce:given-name>T.K.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+							<sb:title>
+								<sb:maintitle>Properties of gases and liquids</sb:maintitle>
+							</sb:title>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:date>1985</sb:date>
+								<sb:publisher>
+									<sb:name>Mc Graw-Hill</sb:name>
+								</sb:publisher>
+							</sb:edited-book>
+							<sb:pages>
+								<sb:first-page>11</sb:first-page>
+								<sb:last-page>28</sb:last-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib7">
+					<ce:label>[7]</ce:label>
+					<sb:reference>
+						<sb:comment>Chap. XIII</sb:comment>
+						<sb:contribution langtype="iso" xml:lang="fr">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+							<sb:title>
+								<sb:maintitle>Le carbone dans tous ses états</sb:maintitle>
+							</sb:title>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:editors>
+									<sb:editor>
+										<ce:surname>Bernier</ce:surname>
+										<ce:given-name>P.</ce:given-name>
+									</sb:editor>
+									<sb:editor>
+										<ce:surname>Lefrant</ce:surname>
+										<ce:given-name>S.</ce:given-name>
+									</sb:editor>
+								</sb:editors>
+								<sb:title>
+									<sb:maintitle>Diamant et matériaux dérivés</sb:maintitle>
+								</sb:title>
+								<sb:date>1997</sb:date>
+								<sb:publisher>
+									<sb:name>Gordon and Breach Science Publishers</sb:name>
+									<sb:location>Tokyo</sb:location>
+								</sb:publisher>
+							</sb:edited-book>
+							<sb:pages>
+								<sb:first-page>481</sb:first-page>
+								<sb:last-page>508</sb:last-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib8">
+					<ce:label>[8]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Cohen</ce:surname>
+									<ce:given-name>MX.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Phil. Trans. Soc. London A</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>334</sb:volume-nr>
+								</sb:series>
+								<sb:date>1991</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>501</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib9">
+					<ce:label>[9]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>De Vries</ce:surname>
+									<ce:given-name>R.C.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Mat. Res. Innovat.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>1</sb:volume-nr>
+								</sb:series>
+								<sb:date>1997</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>161</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib10">
+					<ce:label>[10]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Matsumoto</ce:surname>
+									<ce:given-name>S.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Xie</ce:surname>
+									<ce:given-name>E.Q.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Irumi</ce:surname>
+									<ce:given-name>E</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Diam. Relat. Mater.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>8</sb:volume-nr>
+								</sb:series>
+								<sb:date>1999</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>1175</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib11">
+					<ce:label>[11]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Teter</ce:surname>
+									<ce:given-name>D.M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Hemley</ce:surname>
+									<ce:given-name>R.J.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Science</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>271</sb:volume-nr>
+								</sb:series>
+								<sb:date>1996</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>53</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib12">
+					<ce:label>[12]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Montigaud H., Courjault S., Demazeau G., Tanguy B., Materials Science and Engineering: Advanced Materials (sous presse).</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib13">
+					<ce:label>[13]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Montigaud</ce:surname>
+									<ce:given-name>H.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Tanguy</ce:surname>
+									<ce:given-name>B.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Alves</ce:surname>
+									<ce:given-name>I.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Birot</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Dunogues</ce:surname>
+									<ce:given-name>J.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Diamond Relat. Mater.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>8</sb:volume-nr>
+								</sb:series>
+								<sb:date>1999</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>1707</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib14">
+					<ce:label>[14]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Montigaud H., Demazeau G, Tanguy B., Alves I., Caurjault S., J. Mater. Sci. (sous presse).</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib15">
+					<ce:label>[15]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Demazeau G., Courjault S., Montigaud H., Tanguy B., Jaouen M., Hug G., High Pressure Research (en cours de parution).</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib16">
+					<ce:label>[16]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Vel</ce:surname>
+									<ce:given-name>L.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Étourneau</ce:surname>
+									<ce:given-name>J.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+							<sb:title>
+								<sb:maintitle>Materials Science and Engineering</sb:maintitle>
+							</sb:title>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Solid State Materials for Advanced Technology B</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>10</sb:volume-nr>
+								</sb:series>
+								<sb:date>1991</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>149</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib17">
+					<ce:label>[17]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Solozhenko</ce:surname>
+									<ce:given-name>V.L.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Leonidon</ce:surname>
+									<ce:given-name>Y.V.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Zh. Fiz. Khim</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>62</sb:volume-nr>
+								</sb:series>
+								<sb:date>1988</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>3145</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Solozhenko</ce:surname>
+									<ce:given-name>V.L.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Leonidon</ce:surname>
+									<ce:given-name>Y.V.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Traduction anglaise J. Phys. Chem.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>62</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>11</sb:issue-nr>
+								<sb:date>1988</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>1646</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib18">
+					<ce:label>[18]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Solozhenko</ce:surname>
+									<ce:given-name>V.L.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Thermochimica Acta</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>218</sb:volume-nr>
+								</sb:series>
+								<sb:date>1993</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>221</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib19">
+					<ce:label>[19]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Gonnet</ce:surname>
+									<ce:given-name>V.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Solozhenko</ce:surname>
+									<ce:given-name>V.L.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Tanguy</ce:surname>
+									<ce:given-name>B.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Montigaud</ce:surname>
+									<ce:given-name>H.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>C.R.Acad.Sci.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>320</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>série IIb</sb:issue-nr>
+								<sb:date>1995</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>419</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib20">
+					<ce:label>[20]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Collado C, Demazeau G., Berdeu B., Largeteau A., Garcia J.-C, Guyaux J.-L., Massies J., C. R. Acad. Sci. Paris (sous presse).</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib21">
+					<ce:label>[21]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Collado C, Demazeau G., Berdeu B., Largeteau et Lai Tiong W., High Pressure Research (sous presse).</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib22">
+					<ce:label>[22]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Deines P., in : Proceedings of Advanced Materials '96 (ISAM'96), Tsukuba, Japon, National Institute for Research in Inorganic Materials, p. 61.</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib23">
+					<ce:label>[23]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Haggerty S.E., in : Proceedings of Advanced Materials '96 (ISAM'96), Tsukuba, Japon, National Institute for Research in Inorganic Materials, p. 65.</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib24">
+					<ce:label>[24]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Szymanski</ce:surname>
+									<ce:given-name>A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Abgarowicz</ce:surname>
+									<ce:given-name>E.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Bakon</ce:surname>
+									<ce:given-name>A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Niedbalska</ce:surname>
+									<ce:given-name>A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Salacinski</ce:surname>
+									<ce:given-name>R.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Sentek</ce:surname>
+									<ce:given-name>J.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Diam. Relat. Mater.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>4</sb:volume-nr>
+								</sb:series>
+								<sb:date>1995</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>234</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib25">
+					<ce:label>[25]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Roy</ce:surname>
+									<ce:given-name>R.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Ravichandran</ce:surname>
+									<ce:given-name>D.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Ravindranathan</ce:surname>
+									<ce:given-name>P.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Badzian</ce:surname>
+									<ce:given-name>A.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Mater. Res.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>11</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>5</sb:issue-nr>
+								<sb:date>1996</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>1164</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib26">
+					<ce:label>[26]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Zhao</ce:surname>
+									<ce:given-name>X.Z.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Roy</ce:surname>
+									<ce:given-name>R.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Cherian</ce:surname>
+									<ce:given-name>K.A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Badzian</ce:surname>
+									<ce:given-name>A.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Nature</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>385</sb:volume-nr>
+								</sb:series>
+								<sb:date>1997</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>513</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib27">
+					<ce:label>[27]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Chhor</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Bocquet</ce:surname>
+									<ce:given-name>J.-E</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Pommier</ce:surname>
+									<ce:given-name>C</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Mater. Chem. Phys.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>32</sb:volume-nr>
+								</sb:series>
+								<sb:date>1992</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>249</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib28">
+					<ce:label>[28]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Aksay</ce:surname>
+									<ce:given-name>I.A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Chun</ce:surname>
+									<ce:given-name>CM.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Lee</ce:surname>
+									<ce:given-name>T.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:book-series>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Solvothermal Reactions, Proceedings of the 2nd International Conference on Solvothermal Reactions, Takamatsu, Japon (18–20 décembre 1996)</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>vol. 2</sb:volume-nr>
+									</sb:series>
+								</sb:book-series>
+								<sb:date>1996</sb:date>
+							</sb:edited-book>
+							<sb:pages>
+								<sb:first-page>82</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib29">
+					<ce:label>[29]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Stambough</ce:surname>
+									<ce:given-name>E.P.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Miller</ce:surname>
+									<ce:given-name>J.F.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:editors>
+									<sb:editor>
+										<ce:surname>Somiya</ce:surname>
+										<ce:given-name>S.</ce:given-name>
+									</sb:editor>
+								</sb:editors>
+								<sb:title>
+									<sb:maintitle>Proceedings of the First International Symposium on Hydrothermal Reactions, Tokyo, Japon (22–26 mars 1982)</sb:maintitle>
+								</sb:title>
+								<sb:date>1983</sb:date>
+							</sb:edited-book>
+							<sb:pages>
+								<sb:first-page>859</sb:first-page>
+							</sb:pages>
+						</sb:host>
+						<sb:comment>(Gakujutsu Bunken Fukyu-Kai)</sb:comment>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib30">
+					<ce:label>[30]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Gogotsy</ce:surname>
+									<ce:given-name>Y.G.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Yoshimura</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Nature</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>367</sb:volume-nr>
+								</sb:series>
+								<sb:date>1994</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>628</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib31">
+					<ce:label>[31]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Lan</ce:surname>
+									<ce:given-name>X.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Sakane</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Wada</ce:surname>
+									<ce:given-name>H.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:book-series>
+									<sb:series>
+										<sb:title>
+											<sb:maintitle>Solvothermal Reactions, Proceedings of the 2nd International Conference on Solvothermal Reactions (Takamatsu, 18–20 décembre 1996, Japon)</sb:maintitle>
+										</sb:title>
+										<sb:volume-nr>vol. 2</sb:volume-nr>
+									</sb:series>
+								</sb:book-series>
+								<sb:date>1996</sb:date>
+							</sb:edited-book>
+							<sb:pages>
+								<sb:first-page>150</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib32">
+					<ce:label>[32]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Yoshimura</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Urushimara</ce:surname>
+									<ce:given-name>W.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Yashima</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Kakihana</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Intermetallics</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>3</sb:volume-nr>
+								</sb:series>
+								<sb:date>1995</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>125</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib33">
+					<ce:label>[33]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Yamasaki</ce:surname>
+									<ce:given-name>N.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Yanagisawa</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Nishioka</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Nakahara</ce:surname>
+									<ce:given-name>S.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Mater. Sci. Lett.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>5</sb:volume-nr>
+								</sb:series>
+								<sb:date>1986</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>355</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib34">
+					<ce:label>[34]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Yanagisawa</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Sasaki</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Nishioka</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Ioku</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Yamasaki</ce:surname>
+									<ce:given-name>N.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Mater. Sci. Lett.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>13</sb:volume-nr>
+								</sb:series>
+								<sb:date>1994</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>765</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib35">
+					<ce:label>[35]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Yamasaki</ce:surname>
+									<ce:given-name>N.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Kai</ce:surname>
+									<ce:given-name>T.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Nishioka</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Yanagisawa</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Ioku</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Mater. Sci. Lett.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>9</sb:volume-nr>
+								</sb:series>
+								<sb:date>1990</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>1150</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib36">
+					<ce:label>[36]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Yamasaki</ce:surname>
+									<ce:given-name>N.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Weiping</ce:surname>
+									<ce:given-name>T.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Yanagisawa</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Mater. Res.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>8</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>8</sb:issue-nr>
+								<sb:date>1993</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>1972</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib37">
+					<ce:label>[37]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Hosoi</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Kawai</ce:surname>
+									<ce:given-name>S.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Yanagisawa</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Yamasaki</ce:surname>
+									<ce:given-name>N.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Mater. Sci.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>26</sb:volume-nr>
+								</sb:series>
+								<sb:date>1991</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>6448</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib38">
+					<ce:label>[38]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Mizuta</ce:surname>
+									<ce:given-name>H.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Oda</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Shibasaki</ce:surname>
+									<ce:given-name>Y</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Maeda</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Machida</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Ohshima</ce:surname>
+									<ce:given-name>K.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Am. Ceram. Soc.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>75</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>2</sb:issue-nr>
+								<sb:date>1992</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>469</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib39">
+					<ce:label>[39]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Spezia</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Acad. Sci. Torino Att.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>40</sb:volume-nr>
+								</sb:series>
+								<sb:date>1965</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>254</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib40">
+					<ce:label>[40]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Laudise</ce:surname>
+									<ce:given-name>R.A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Nielsen</ce:surname>
+									<ce:given-name>J.W.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Solid State Phys.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>12</sb:volume-nr>
+								</sb:series>
+								<sb:date>1961</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>149</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib41">
+					<ce:label>fr</ce:label>
+					<sb:reference>
+						<ce:label>[41]</ce:label>
+						<sb:comment>11 et (5-6) 17</sb:comment>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Lafon</ce:surname>
+									<ce:given-name>F.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+							<sb:title>
+								<sb:maintitle>Matériaux et Techniques (3-4)</sb:maintitle>
+							</sb:title>
+						</sb:contribution>
+						<sb:host>
+							<sb:book>
+								<sb:date>1997</sb:date>
+							</sb:book>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib42">
+					<ce:label>[42]</ce:label>
+					<sb:reference>
+						<sb:comment>(Gakujutsu Bunken Fukyu-Kai)</sb:comment>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Laudise</ce:surname>
+									<ce:given-name>R.A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Kolb</ce:surname>
+									<ce:given-name>E.D.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Key</ce:surname>
+									<ce:given-name>P.L.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:editors>
+									<sb:editor>
+										<ce:surname>Somiya</ce:surname>
+										<ce:given-name>S.</ce:given-name>
+									</sb:editor>
+								</sb:editors>
+								<sb:title>
+									<sb:maintitle>Proceedings of the First International Symposium on Hydrothermal Reactions, Tokyo, Japon (22–26 mars 1982)</sb:maintitle>
+								</sb:title>
+								<sb:date>1983</sb:date>
+							</sb:edited-book>
+							<sb:pages>
+								<sb:first-page>527</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib43">
+					<ce:label>[43]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Kolb</ce:surname>
+									<ce:given-name>E.D.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Laudise</ce:surname>
+									<ce:given-name>R.A.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Am. Ceram. Soc.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>48</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>7</sb:issue-nr>
+								<sb:date>1965</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>342</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib44">
+					<ce:label>[44]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Laudise</ce:surname>
+									<ce:given-name>R.A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Ballman</ce:surname>
+									<ce:given-name>A.A.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Phys. Chem.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>64</sb:volume-nr>
+								</sb:series>
+								<sb:date>1960</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>688</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib45">
+					<ce:label>[45]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Laudise</ce:surname>
+									<ce:given-name>R.A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Ballman</ce:surname>
+									<ce:given-name>A.A.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Am. Chem. Soc.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>80</sb:volume-nr>
+								</sb:series>
+								<sb:date>1958</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>2655</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib46">
+					<ce:label>[46]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Kolb</ce:surname>
+									<ce:given-name>E.D.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Barns</ce:surname>
+									<ce:given-name>R.L.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Laudise</ce:surname>
+									<ce:given-name>R.A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Grenier</ce:surname>
+									<ce:given-name>J.-C</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>J. Cryst. Growth</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>50</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>2</sb:issue-nr>
+								<sb:date>1980</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>404</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib47">
+					<ce:label>[47]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Detaint</ce:surname>
+									<ce:given-name>J.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Capelle</ce:surname>
+									<ce:given-name>B.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Zarka</ce:surname>
+									<ce:given-name>A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Palmier</ce:surname>
+									<ce:given-name>D.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Ann. Chim. Sci. Mat.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>22</sb:volume-nr>
+								</sb:series>
+								<sb:date>1997</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>651</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib48">
+					<ce:label>[48]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Wang</ce:surname>
+									<ce:given-name>A.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Matar</ce:surname>
+									<ce:given-name>S.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Cillard</ce:surname>
+									<ce:given-name>J.-D.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>High Pressure Research</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>12</sb:volume-nr>
+								</sb:series>
+								<sb:date>1994</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>343</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib49">
+					<ce:label>[49]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Yamasaki</ce:surname>
+									<ce:given-name>N.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Fujita</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Moriya</ce:surname>
+									<ce:given-name>T.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Kanazawa</ce:surname>
+									<ce:given-name>M.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Shigenkankyotaisaki</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>34</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>4</sb:issue-nr>
+								<sb:date>1978</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>33</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib50">
+					<ce:label>[50]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Yamasaki</ce:surname>
+									<ce:given-name>N.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Sekiyu Gakkaishi</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>41</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>3</sb:issue-nr>
+								<sb:date>1998</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>175</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib51">
+					<ce:label>[51]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Hirth</ce:surname>
+									<ce:given-name>T.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Franck</ce:surname>
+									<ce:given-name>E.U.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Ber. Bunsenges Phys. Chem.</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>97</sb:volume-nr>
+								</sb:series>
+								<sb:issue-nr>9</sb:issue-nr>
+								<sb:date>1993</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>1092</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib52">
+					<ce:label>[52]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Hirth</ce:surname>
+									<ce:given-name>Th.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Schweppe</ce:surname>
+									<ce:given-name>R.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Jahnke</ce:surname>
+									<ce:given-name>S.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Bunte</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Eisenreich</ce:surname>
+									<ce:given-name>N.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Krause</ce:surname>
+									<ce:given-name>H.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:edited-book>
+								<sb:editors>
+									<sb:editor>
+										<ce:surname>Von Rohr</ce:surname>
+										<ce:given-name>R.</ce:given-name>
+									</sb:editor>
+									<sb:editor>
+										<ce:surname>Trepp</ce:surname>
+										<ce:given-name>C</ce:given-name>
+									</sb:editor>
+								</sb:editors>
+								<sb:title>
+									<sb:maintitle>High Pressure Chemical Engineering</sb:maintitle>
+								</sb:title>
+								<sb:date>1996</sb:date>
+								<sb:publisher>
+									<sb:name>Elsevier Science BV</sb:name>
+								</sb:publisher>
+							</sb:edited-book>
+							<sb:pages>
+								<sb:first-page>163</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib53">
+					<ce:label>[53]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Berdeu B., Demazeau G., Garrabos Y., Largeteau A., Sentagnes D., Brevet d'Électrolyse n∘94.14664, déposé le 06/12/1994.</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib54">
+					<ce:label>[54]</ce:label>
+					<sb:reference>
+						<sb:contribution langtype="en">
+							<sb:authors>
+								<sb:author>
+									<ce:surname>Beslin</ce:surname>
+									<ce:given-name>E</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Cansell</ce:surname>
+									<ce:given-name>F.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Garrabos</ce:surname>
+									<ce:given-name>Y.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Demazeau</ce:surname>
+									<ce:given-name>G.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Berdeu</ce:surname>
+									<ce:given-name>B.</ce:given-name>
+								</sb:author>
+								<sb:author>
+									<ce:surname>Sentagnes</ce:surname>
+									<ce:given-name>D.</ce:given-name>
+								</sb:author>
+							</sb:authors>
+						</sb:contribution>
+						<sb:host>
+							<sb:issue>
+								<sb:series>
+									<sb:title>
+										<sb:maintitle>Déchets Sciences et Techniques</sb:maintitle>
+									</sb:title>
+									<sb:volume-nr>5</sb:volume-nr>
+								</sb:series>
+								<sb:date>1997</sb:date>
+							</sb:issue>
+							<sb:pages>
+								<sb:first-page>17</sb:first-page>
+							</sb:pages>
+						</sb:host>
+					</sb:reference>
+				</ce:bib-reference>
+				<ce:bib-reference id="bib55">
+					<ce:label>[55]</ce:label>
+					<ce:other-ref>
+						<ce:textref>Demazeau G., Cros C. (éds), Solvothermal Reactions, Proceedings of the 3rd International Conference on Solvothermal Reactions (ICSTR-3), 19–23 juillet 1999, Bordeaux), High Pressure Research (Gordon and Breach) (sous presse).</ce:textref>
+					</ce:other-ref>
+				</ce:bib-reference>
+			</ce:bibliography-sec>
+		</ce:bibliography>
+	</tail>
+</article>

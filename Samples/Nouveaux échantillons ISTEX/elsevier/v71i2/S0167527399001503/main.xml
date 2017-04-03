@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE converted-article PUBLIC "-//ES//DTD journal article DTD version 4.5.2//EN//XML" "art452.dtd" [
+<!ENTITY gr1 SYSTEM "gr1" NDATA IMAGE><!ENTITY gr2 SYSTEM "gr2" NDATA IMAGE><!ENTITY gr3 SYSTEM "gr3" NDATA IMAGE>]>
+<converted-article version="4.5.2" docsubtype="fla" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd">
+<item-info>
+<jid>IJCA</jid>
+<aid>3758</aid>
+<ce:pii>S0167-5273(99)00150-3</ce:pii><ce:doi>10.1016/S0167-5273(99)00150-3</ce:doi>
+<ce:copyright type="full-transfer" year="1999">Elsevier Science Ireland Ltd</ce:copyright></item-info>
+<ce:floats><ce:figure id="FIG1">
+<ce:label>Fig. 1</ce:label>
+<ce:caption>
+<ce:simple-para>The relationship between the height of E+A velocity and calculated &#x2223;PP-RR&#x2223;/RR. Closed circles showed patients with audible intermittent S3 and open circles with no intermittent S3.</ce:simple-para></ce:caption>
+<ce:link locator="gr1" /></ce:figure><ce:figure id="FIG2">
+<ce:label>Fig. 2</ce:label>
+<ce:caption>
+<ce:simple-para>Upper panel: VVI pacing with retrograde P wave, middle panel: VVI pacing with independent P wave, lower panel: sinus rhythm with absent AV block (from the 4th to 8th beats). Intermittent S3 was audible only in the middle tracing.</ce:simple-para></ce:caption>
+<ce:link locator="gr2" /></ce:figure><ce:figure id="FIG3">
+<ce:label>Fig. 3</ce:label>
+<ce:caption>
+<ce:simple-para>Representative case of audible intermittent S3 (Case 35). ECG: Electrocardiogram, PCG: Phonocardiogram</ce:simple-para></ce:caption>
+<ce:link locator="gr3" /></ce:figure><ce:table id="TBL1" colsep="0" rowsep="0" frame="topbot"><ce:label>Table 1</ce:label><ce:caption>
+<ce:simple-para>All data in this study</ce:simple-para></ce:caption><tgroup cols="10"><colspec colname="col1" colsep="0" />
+<colspec colname="col2" colsep="0" />
+<colspec colname="col3" colsep="0" />
+<colspec colname="col4" colsep="0" />
+<colspec colname="col5" colsep="0" />
+<colspec colname="col6" colsep="0" />
+<colspec colname="col7" colsep="0" />
+<colspec colname="col8" colsep="0" />
+<colspec colname="col9" colsep="0" />
+<colspec colname="col10" colsep="0" />
+<thead><row><entry rowsep="1">No</entry>
+<entry rowsep="1">age</entry>
+<entry rowsep="1">sex<ce:cross-ref refid="TBLFN1A"><ce:sup>a</ce:sup></ce:cross-ref></entry>
+<entry rowsep="1">&#x2223;PP-RR&#x2223;/RR</entry>
+<entry rowsep="1">PP</entry>
+<entry rowsep="1">RR</entry>
+<entry rowsep="1">A+E</entry>
+<entry rowsep="1">A</entry>
+<entry rowsep="1">E</entry>
+<entry rowsep="1">S3<ce:cross-ref refid="TBLFN1A"><ce:sup>a</ce:sup></ce:cross-ref></entry>
+</row>
+</thead>
+<tbody>
+<row><entry align="char" char=".">1</entry>
+<entry align="char" char=".">24</entry>
+<entry align="char" char=".">M</entry>
+<entry align="char" char=".">0.30</entry>
+<entry align="char" char=".">1120</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">65</entry>
+<entry align="char" char=".">30</entry>
+<entry align="char" char=".">45</entry>
+<entry align="char" char=".">N</entry>
+</row>
+<row><entry align="char" char=".">2</entry>
+<entry align="char" char=".">80</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.10</entry>
+<entry align="char" char=".">770</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">70</entry>
+<entry align="char" char=".">50</entry>
+<entry align="char" char=".">50</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">3</entry>
+<entry align="char" char=".">54</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.09</entry>
+<entry align="char" char=".">940</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">75</entry>
+<entry align="char" char=".">40</entry>
+<entry align="char" char=".">50</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">4</entry>
+<entry align="char" char=".">59</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.05</entry>
+<entry align="char" char=".">920</entry>
+<entry align="char" char=".">880</entry>
+<entry align="char" char=".">75</entry>
+<entry align="char" char=".">30</entry>
+<entry align="char" char=".">65</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">5</entry>
+<entry align="char" char=".">70</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.10</entry>
+<entry align="char" char=".">900</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">55</entry>
+<entry align="char" char=".">45</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">6</entry>
+<entry align="char" char=".">80</entry>
+<entry>F</entry>
+<entry align="char" char=".">1.05</entry>
+<entry align="char" char=".">2050</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">84</entry>
+<entry align="char" char=".">40</entry>
+<entry align="char" char=".">65</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">7</entry>
+<entry align="char" char=".">60</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.02</entry>
+<entry align="char" char=".">800</entry>
+<entry align="char" char=".">820</entry>
+<entry align="char" char=".">85</entry>
+<entry align="char" char=".">20</entry>
+<entry align="char" char=".">75</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">8</entry>
+<entry align="char" char=".">72</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.36</entry>
+<entry align="char" char=".">640</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">90</entry>
+<entry align="char" char=".">60</entry>
+<entry align="char" char=".">40</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">9</entry>
+<entry align="char" char=".">42</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.19</entry>
+<entry align="char" char=".">1020</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">90</entry>
+<entry align="char" char=".">40</entry>
+<entry align="char" char=".">65</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">10</entry>
+<entry align="char" char=".">68</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.98</entry>
+<entry align="char" char=".">1700</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">70</entry>
+<entry align="char" char=".">60</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">11</entry>
+<entry align="char" char=".">80</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.10</entry>
+<entry align="char" char=".">1100</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">90</entry>
+<entry align="char" char=".">60</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">12</entry>
+<entry align="char" char=".">78</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.21</entry>
+<entry align="char" char=".">1040</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">70</entry>
+<entry align="char" char=".">50</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">13</entry>
+<entry align="char" char=".">44</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.27</entry>
+<entry align="char" char=".">660</entry>
+<entry align="char" char=".">900</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">40</entry>
+<entry align="char" char=".">80</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">14</entry>
+<entry align="char" char=".">76</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.03</entry>
+<entry align="char" char=".">970</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">75</entry>
+<entry align="char" char=".">75</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">15</entry>
+<entry align="char" char=".">87</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.35</entry>
+<entry align="char" char=".">640</entry>
+<entry align="char" char=".">980</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">75</entry>
+<entry align="char" char=".">50</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">16</entry>
+<entry align="char" char=".">72</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.05</entry>
+<entry align="char" char=".">840</entry>
+<entry align="char" char=".">880</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">70</entry>
+<entry align="char" char=".">60</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">17</entry>
+<entry align="char" char=".">65</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.05</entry>
+<entry align="char" char=".">900</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">90</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">18</entry>
+<entry align="char" char=".">82</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.09</entry>
+<entry align="char" char=".">960</entry>
+<entry align="char" char=".">880</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">60</entry>
+<entry>N</entry>
+</row>
+<row><entry align="char" char=".">19</entry>
+<entry align="char" char=".">73</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.22</entry>
+<entry align="char" char=".">780</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">55</entry>
+<entry align="char" char=".">35</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">20</entry>
+<entry align="char" char=".">44</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.86</entry>
+<entry align="char" char=".">1600</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">90</entry>
+<entry align="char" char=".">45</entry>
+<entry align="char" char=".">80</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">21</entry>
+<entry align="char" char=".">81</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.17</entry>
+<entry align="char" char=".">760</entry>
+<entry align="char" char=".">920</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">65</entry>
+<entry align="char" char=".">45</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">22</entry>
+<entry align="char" char=".">62</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.16</entry>
+<entry align="char" char=".">840</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">23</entry>
+<entry align="char" char=".">60</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.17</entry>
+<entry align="char" char=".">830</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">62</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">24</entry>
+<entry align="char" char=".">80</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.07</entry>
+<entry align="char" char=".">920</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">25</entry>
+<entry align="char" char=".">49</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.56</entry>
+<entry align="char" char=".">380</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">60</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">26</entry>
+<entry align="char" char=".">72</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.19</entry>
+<entry align="char" char=".">1020</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">70</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">27</entry>
+<entry align="char" char=".">50</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.15</entry>
+<entry align="char" char=".">740</entry>
+<entry align="char" char=".">870</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">50</entry>
+<entry align="char" char=".">75</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">28</entry>
+<entry align="char" char=".">65</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.16</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">29</entry>
+<entry align="char" char=".">77</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.08</entry>
+<entry align="char" char=".">920</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">90</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">30</entry>
+<entry align="char" char=".">76</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.16</entry>
+<entry align="char" char=".">720</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">120</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">31</entry>
+<entry align="char" char=".">80</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.21</entry>
+<entry align="char" char=".">940</entry>
+<entry align="char" char=".">780</entry>
+<entry align="char" char=".">120</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">80</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">32</entry>
+<entry align="char" char=".">74</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.21</entry>
+<entry align="char" char=".">740</entry>
+<entry align="char" char=".">940</entry>
+<entry align="char" char=".">120</entry>
+<entry align="char" char=".">80</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">33</entry>
+<entry align="char" char=".">76</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.14</entry>
+<entry align="char" char=".">1140</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">120</entry>
+<entry align="char" char=".">70</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">34</entry>
+<entry align="char" char=".">80</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.04</entry>
+<entry align="char" char=".">960</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">120</entry>
+<entry align="char" char=".">95</entry>
+<entry align="char" char=".">70</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">35</entry>
+<entry align="char" char=".">76</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.20</entry>
+<entry align="char" char=".">800</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">140</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">60</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">36</entry>
+<entry align="char" char=".">79</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.09</entry>
+<entry align="char" char=".">940</entry>
+<entry align="char" char=".">860</entry>
+<entry align="char" char=".">140</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">100</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">37</entry>
+<entry align="char" char=".">79</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.40</entry>
+<entry align="char" char=".">600</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">140</entry>
+<entry align="char" char=".">120</entry>
+<entry align="char" char=".">80</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">38</entry>
+<entry align="char" char=".">68</entry>
+<entry>M</entry>
+<entry align="char" char=".">0.07</entry>
+<entry align="char" char=".">820</entry>
+<entry align="char" char=".">880</entry>
+<entry align="char" char=".">130</entry>
+<entry align="char" char=".">110</entry>
+<entry align="char" char=".">80</entry>
+<entry>Y</entry>
+</row>
+<row><entry align="char" char=".">39</entry>
+<entry align="char" char=".">56</entry>
+<entry>F</entry>
+<entry align="char" char=".">0.04</entry>
+<entry align="char" char=".">960</entry>
+<entry align="char" char=".">1000</entry>
+<entry align="char" char=".">160</entry>
+<entry align="char" char=".">100</entry>
+<entry align="char" char=".">120</entry>
+<entry>Y</entry>
+</row>
+</tbody></tgroup>
+<ce:table-footnote id="TBLFN1A">
+<ce:label>a</ce:label>
+<ce:note-para>M: male, F: female, N: Intermittent S3 not audible, Y: Intermittent S3 audible.</ce:note-para></ce:table-footnote></ce:table></ce:floats>
+<head>
+<ce:title>Intermittently audible the &#x201C;third heart sound&#x201D; as a sign of complete atrio-ventricular block in patients with a VVI pacemaker</ce:title>
+<ce:author-group>
+<ce:author>
+<ce:given-name>Kanji</ce:given-name>
+<ce:surname>Iga</ce:surname><ce:cross-ref refid="COR1">*</ce:cross-ref><ce:e-address>igakan@kcn.ne.jp</ce:e-address></ce:author>
+<ce:author>
+<ce:given-name>Takashi</ce:given-name>
+<ce:surname>Konishi</ce:surname></ce:author>
+<ce:affiliation><ce:textfn>Department of Cardiology, Tenri Hospital, 200 Mishimacho, Tenri City, 6328552 Japan</ce:textfn></ce:affiliation>
+<ce:correspondence id="COR1">
+<ce:label>*</ce:label><ce:text>Corresponding author. Fax: +81-743-62-1903</ce:text></ce:correspondence></ce:author-group>
+<ce:date-received day="21" month="6" year="1999" />
+<ce:date-revised day="26" month="7" year="1999" />
+<ce:date-accepted day="5" month="8" year="1999" />
+<ce:abstract>
+<ce:section-title>Abstract</ce:section-title><ce:abstract-sec>
+<ce:simple-para><ce:italic>Background</ce:italic>: It is not known that an S3 can be audible intermittently. We have recognized this in patients with VVI pacing in whom sinus rhythm has been preserved. <ce:italic>Subjects and methods</ce:italic>: Subjects consisted of consecutive 39 patients with VVI pacemaker implantation and preservation of sinus rhythm. We tried to find out what percentage of these patients have an intermittent S3 and also to elucidate the mechanism of this sound by Doppler echocardiography. The PP interval and RR intervals were measured and &#x2223;PP-RR&#x2223;/RR was calculated. One doctor carried out auscultation from the left sternal border to the apex for 5&#x2013;6 consecutive beats while the patients held their breath. Transmitral flow velocity was measured by pulsed Doppler echocardiography with a paper speed of 100 cm/sec. A wave velocity was measured when a P wave coincided with late diastole. E wave velocity was measured when no A wave was present in early diastole. The maximal summation of E and A waves (E+A) velocity was measured. <ce:italic>Result</ce:italic>: An intermittent S3, being audible in 21 patients (group A) and not audible in 18 patients (group B), coincided with maximal E+A velocity. There was no statistical age difference between the two groups. Both maximal E+A velocity, and A velocity were higher in group A than group B (116.2 cm/sec Vs 90.8 cm/sec <ce:italic>P</ce:italic>&#x003C;0.0001, 80.6 cm/sec Vs 56.4 cm/sec <ce:italic>P</ce:italic>&#x003C;0.0001 respectively), while E velocity was not statistically different (68.3 cm/sec Vs 60.3 cm/sec). In 5 of 9 cases in whom an intermittent S3 was not audible regardless of more than 100 cm/sec of E+A velocity, the calculated &#x2223;PP-RR&#x2223;/RR was less than 0.1. <ce:italic>Conclusion</ce:italic>: An intermittently audible S3 is one of the physical signs of complete atrio-ventricular block. It occurs when a strong atrial contraction develops exactly at the time of rapid left ventricular filling. However, when the PP and RR intervals are too close, the S3 may be difficult to discern.</ce:simple-para></ce:abstract-sec></ce:abstract>
+<ce:keywords>
+<ce:section-title>Keywords</ce:section-title>
+<ce:keyword><ce:text>Intermittent S3, VVI pacing, Echo-Doppler, Early diastolic sound</ce:text></ce:keyword></ce:keywords></head>
+<body><ce:sections>
+<ce:section>
+<ce:label>1</ce:label><ce:section-title>Introduction</ce:section-title>
+<ce:para>The mechanism of the S3 involves the following 3 pathologic or physiologic conditions; increasing chamber stiffness of the left ventricle usually due to congestive heart failure <ce:cross-ref refid="BIB1">[1]</ce:cross-ref>, rapid ventricular relaxation as in young healthy people <ce:cross-refs refid="BIB2 BIB3">[2,3]</ce:cross-refs>, and increased transmitral flow usually as in mitral regurgitation. S3 is a low-pitched sound and is audible in every beat unless it is very soft. In this paper, we have recognized a condition that a loud S3 was audible intermittently in patients with VVI pacing and preservation of sinus rhythm, and elucidated the mechanism by Doppler echocardiography.</ce:para></ce:section>
+<ce:section>
+<ce:label>2</ce:label><ce:section-title>Subjects and methods</ce:section-title>
+<ce:para>We prospectively studied 39 consecutive patients who had had VVI pacemaker implantation and who were in sinus rhythm. The VVI pacemaker had been implanted more than 10 years ago in all the patients because of symptomatic complete atrio-ventricular block. Patients with NYHA class III or IV and/or with a constantly audible S3 were excluded. The ventricular rates were fixed at 70/min or were rate-responsive at a lower rate of 60/min. Auscultation was made from the left sternal border to the apex by one of the authors (K.I.) for 5&#x2013;6 consecutive beats while the patients held their breath. On the same day, transmitral flow velocity was measured by pulsed Doppler echocardiography with a paper speed of 100 cm/sec. A wave velocity was measured when a P wave was seen in late diastole while E wave velocity was measured when there was no A wave in early diastole. The maximal summation of the E and A wave (E+A) was measured. Statistical analysis was made by student t test and <ce:italic>P</ce:italic>&#x003C;0.05 was considered to be significant.</ce:para></ce:section>
+<ce:section>
+<ce:label>3</ce:label><ce:section-title>Results</ce:section-title>
+<ce:para>All data are shown in <ce:cross-ref refid="TBL1">Table 1</ce:cross-ref><ce:float-anchor refid="TBL1" /> and the values were expressed as mean&#x00B1;SD. An intermittent S3 was easily audible in 21 patients (group A) and was not audible in 18 patients (group B). Mean age was 69.4&#x00B1;11.5 years-old in group A and 66.3&#x00B1;16.6 years-old in group B (NS). Both E+A and A waves were significantly higher in group A in comparison with group B (E+A: 116.2&#x00B1;18.6 cm/sec Vs 90.8&#x00B1;13.6 cm/sec: <ce:italic>p</ce:italic>&#x003C;0.0001, A: 80.6&#x00B1;20.4 cm/sec Vs 56.4&#x00B1;20.8 cm/sec: <ce:italic>p</ce:italic>&#x003C;0.0001). However, the E wave was not significantly different between group A and group B (68.3&#x00B1;18.2 cm/sec Vs 60.3&#x00B1;13.4 cm/sec: NS). In 5 of 9 cases in whom an intermittent S3 was not audible regardless of E+A velocity of more than 100 cm/sec, the calculated &#x2223;PP-RR&#x2223;/RR was less than 0.1 (<ce:cross-ref refid="FIG1">Fig. 1</ce:cross-ref><ce:float-anchor refid="FIG1" />). In a patient, VVI pacing was associated with sinus rhythm when an intermittent S3 was audible, while either VVI pacing with retrograde P or sinus rhythm with absent atrio-ventricular block were present when an intermittent S3 was not audible (<ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref><ce:float-anchor refid="FIG2" />). <ce:cross-ref refid="FIG3">Fig. 3</ce:cross-ref><ce:float-anchor refid="FIG3" /> shows a representative case with audible intermittment S3.</ce:para></ce:section>
+<ce:section>
+<ce:label>4</ce:label><ce:section-title>Discussion</ce:section-title>
+<ce:para>The importance of physical examination has been re-emphasized recently although color Doppler echocardiography and other imaging procedures in the field of cardiology have developed as complementary procedures enabling us to make a diagnosis more easily <ce:cross-refs refid="BIB4 BIB5">[4,5]</ce:cross-refs>.</ce:para>
+<ce:para>In our study, an easily heard low-pitched sound in early diastole, intermittently audible in about 50% of the study group, was consistent with an S3 by auscultation. Echo-Doppler showed that this sound coincided with increased transmitral flow in early diastole when atrial contribution was superimposed exactly on the timing of early left ventricular filling. Strictly speaking this sound is not an S3 but rather a summation of S3 and S4 audible in early diastole, because the S3 is a sound associated with rapid filling of the left ventricle and is consistent with early deceleration of the E wave of transmitral flow signal <ce:cross-refs refid="BIB6 BIB7">[6,7]</ce:cross-refs>. An intermittent S3 was audible when the summation wave of E+A was high but was not audible when it was not high. Because the height of E wave was statistically insignificant, the summation wave depended on the height of A wave. Therefore a strong atrial contraction appears to be necessary to generate this sound.</ce:para>
+<ce:para>To our knowledge, there has been no report of an intermittent S3 in patients with complete atrio-ventricular block. Cannon A waves and changing loudness of the first sound are the two well-known physical signs of complete atrio-ventricular block. The chance that atrial contraction occurs just at the time of early left ventricular filling during routine physical examination in a patient with complete atrio-ventricular block and no electronic pacemaker was low because the ventricular rate is usually less than 50/min. However, the chance might increase because the ventricular rate is more than 60/min in our study. In 5 of 9 cases in whom an intermittent S3 was not audible regardless of E+A of more than 100 cm/sec, the calculated &#x2223;PP-RR&#x2223;/RR was less than 0.1. Therefore, even if the ventricular rate is about 70/min and the atrial contraction is strong enough to generate a high summation velocity, it is difficult to recognize an intermittent S3 by routine auscultation of 5&#x2013;6 beats if PP interval and RR interval are nearly equal. An S3 may be continuously audible if atrial contraction occurs continuously during early left ventricular filling, while it would only be intermittently audible if it occurs only during early left ventricular filling.</ce:para>
+<ce:para>Recently with the development of sophisticated pacing, the number of VVI implantation is decreasing if sinus rhythm is maintained <ce:cross-ref refid="BIB8">[8]</ce:cross-ref>. DDD pacing or VDD pacing has replaced VVI pacing for the treatment of bradycardia. In all 39 patients we studied, the VVI pacemaker was implanted more than 10 years ago and this kind of pacing would not as likely be implanted in the near future. However, if atrial sensing doesn&#x2019;t work or the battery is exhausted, the DDD or VDD mode changes to VVI spontaneously. If an intermittent S3 becomes audible in these patients, then the VVI mode with normal sinus rhythm may be suspected by physical examination. In addition, as shown in <ce:cross-ref refid="FIG2">Fig. 2</ce:cross-ref>, if a known intermittent S3 disappears in a patient with VVI pacing, then VVI pacing with retrograde P wave or sinus rhythm with absent AV block should be considered by physical examination.</ce:para>
+<ce:para>In conclusion, an intermittently audible S3 is one of the physical signs of the complete atrio-ventricular block especially if the ventricular rate is more than 60/min. It occurs when a strong atrial contraction develops exactly on rapid left ventricular filling. However, when the PP and RR intervals are too close, the S3 may be difficult to discern during routine physical examination.</ce:para></ce:section></ce:sections>
+<ce:acknowledgment>
+<ce:section-title>Acknowledgments</ce:section-title>
+<ce:para>We acknowledge the helpful advice and comment of Dr. Jules Constant.</ce:para></ce:acknowledgment></body>
+<tail>
+<ce:bibliography><ce:section-title>References</ce:section-title><ce:bibliography-sec>
+<ce:bib-reference id="BIB1">
+<ce:label>[1]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>T.</ce:given-name><ce:surname>Kono</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>Rosman</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Alam</ce:surname></sb:author><sb:author><ce:given-name>P.D.</ce:given-name><ce:surname>Stein</ce:surname></sb:author><sb:author><ce:given-name>H.N.</ce:given-name><ce:surname>Sabbah</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Hemodynamic correlates of the third heart sound during the evolution of chronic heart failure</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J Am Coll Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>21</sb:volume-nr></sb:series>
+<sb:date>1993</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>419</sb:first-page>
+<sb:last-page>423</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB2">
+<ce:label>[2]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>G.</ce:given-name><ce:surname>Ewing</ce:surname></sb:author><sb:author><ce:given-name>J.</ce:given-name><ce:surname>Mazumdar</ce:surname></sb:author><sb:author><ce:given-name>E.</ce:given-name><ce:surname>Goldblatt</ce:surname></sb:author><sb:author><ce:given-name>N.</ce:given-name><ce:surname>Fazzalari</ce:surname></sb:author><sb:author><ce:given-name>E.</ce:given-name><ce:surname>Von Vollenhoven</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>A non-invasive study of the third heart sound in children by phono and echo-cardiography</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Acta Cardiol</sb:maintitle></sb:title>
+<sb:volume-nr>39</sb:volume-nr></sb:series>
+<sb:date>1984</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>241</sb:first-page>
+<sb:last-page>254</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB3">
+<ce:label>[3]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>F.</ce:given-name><ce:surname>Van de Werf</ce:surname></sb:author><sb:author><ce:given-name>J.</ce:given-name><ce:surname>Minten</ce:surname></sb:author><sb:author><ce:given-name>P.</ce:given-name><ce:surname>Carmeliet</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>De Geest</ce:surname></sb:author><sb:author><ce:given-name>H.</ce:given-name><ce:surname>Kesteloot</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>The genesis of the third and fourth heart sounds</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>A pressure-flow study in dogs. J Clin Invest.</sb:maintitle></sb:title>
+<sb:volume-nr>73</sb:volume-nr></sb:series>
+<sb:date>1984</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1400</sb:first-page>
+<sb:last-page>1407</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB4">
+<ce:label>[4]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>E.</ce:given-name><ce:surname>Craige</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Auscultation should be rehabilitated</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>N Engl J Med</sb:maintitle></sb:title>
+<sb:volume-nr>318</sb:volume-nr></sb:series>
+<sb:date>1988</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1611</sb:first-page>
+<sb:last-page>1613</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB5">
+<ce:label>[5]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.B.</ce:given-name><ce:surname>Issenberg</ce:surname></sb:author><sb:author><ce:given-name>J.M.</ce:given-name><ce:surname>Felner</ce:surname></sb:author><sb:author><ce:given-name>D.D.</ce:given-name><ce:surname>Brown</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Cardiac auscultation skills of physician in training</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>JAMA</sb:maintitle></sb:title>
+<sb:volume-nr>278</sb:volume-nr></sb:series>
+<sb:date>1997</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>1740</sb:first-page>
+<sb:last-page>1741</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB6">
+<ce:label>[6]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>T.R.</ce:given-name><ce:surname>Downes</ce:surname></sb:author><sb:author><ce:given-name>W.</ce:given-name><ce:surname>Dunson</ce:surname></sb:author><sb:author><ce:given-name>A.M.</ce:given-name><ce:surname>Nomeir</ce:surname></sb:author><sb:author><ce:given-name>W.C.</ce:given-name><ce:surname>Little</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Mechanism of physiologic S3 gallop sounds</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>J Am Soc Echocardiogr</sb:maintitle></sb:title>
+<sb:volume-nr>5</sb:volume-nr></sb:series>
+<sb:date>1992</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>211</sb:first-page>
+<sb:last-page>218</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB7">
+<ce:label>[7]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>M.</ce:given-name><ce:surname>Pozzoli</ce:surname></sb:author><sb:author><ce:given-name>O.</ce:given-name><ce:surname>Febo</ce:surname></sb:author><sb:author><ce:given-name>R.</ce:given-name><ce:surname>Tramarin</ce:surname></sb:author><sb:author><ce:given-name>G.</ce:given-name><ce:surname>Pinna</ce:surname></sb:author><sb:author><ce:given-name>F.</ce:given-name><ce:surname>Cobelli</ce:surname></sb:author><sb:author><ce:given-name>G.</ce:given-name><ce:surname>Specchia</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Pulsed Doppler evaluation of left ventricular filling in subjects with pathologic and physiologic third heart sound</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Eur Heart J</sb:maintitle></sb:title>
+<sb:volume-nr>11</sb:volume-nr></sb:series>
+<sb:date>1990</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>5000</sb:first-page>
+<sb:last-page>5008</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference>
+<ce:bib-reference id="BIB8">
+<ce:label>[8]</ce:label>
+<sb:reference>
+<sb:contribution>
+<sb:authors>
+<sb:author><ce:given-name>S.J.</ce:given-name><ce:surname>Connolly</ce:surname></sb:author><sb:author><ce:given-name>C.</ce:given-name><ce:surname>Kerr</ce:surname></sb:author><sb:author><ce:given-name>M.</ce:given-name><ce:surname>Gent</ce:surname></sb:author><sb:author><ce:given-name>S.</ce:given-name><ce:surname>Yusuf</ce:surname></sb:author></sb:authors>
+<sb:title><sb:maintitle>Dual-chamber versus ventricular pacing: critical appraisal of current data</sb:maintitle></sb:title></sb:contribution>
+<sb:host>
+<sb:issue>
+<sb:series>
+<sb:title><sb:maintitle>Circulation</sb:maintitle></sb:title>
+<sb:volume-nr>94</sb:volume-nr></sb:series>
+<sb:date>1996</sb:date>
+</sb:issue><sb:pages>
+<sb:first-page>578</sb:first-page>
+<sb:last-page>583</sb:last-page></sb:pages></sb:host></sb:reference></ce:bib-reference></ce:bibliography-sec></ce:bibliography></tail></converted-article>

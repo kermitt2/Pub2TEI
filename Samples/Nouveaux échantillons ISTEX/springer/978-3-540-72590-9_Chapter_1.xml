@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Publisher
+  PUBLIC "-//Springer-Verlag//DTD A++ V2.4//EN" "http://devel.springer.de/A++/V2.4/DTD/A++V2.4.dtd">
+<Publisher>
+  <PublisherInfo>
+    <PublisherName>Springer Berlin Heidelberg</PublisherName>
+    <PublisherLocation>Berlin, Heidelberg</PublisherLocation>
+  </PublisherInfo>
+  <Series>
+    <SeriesInfo SeriesType="Series" TocLevels="0">
+      <SeriesID>558</SeriesID>
+      <SeriesPrintISSN>0302-9743</SeriesPrintISSN>
+      <SeriesElectronicISSN>1611-3349</SeriesElectronicISSN>
+      <SeriesTitle Language="En">Lecture Notes in Computer Science</SeriesTitle>
+      <SeriesAbbreviatedTitle>LNCS</SeriesAbbreviatedTitle>
+    </SeriesInfo>
+    <SeriesHeader>
+      <EditorGroup>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>David</GivenName>
+            <FamilyName>Hutchison</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Takeo</GivenName>
+            <FamilyName>Kanade</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Josef</GivenName>
+            <FamilyName>Kittler</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Jon</GivenName>
+            <GivenName>M.</GivenName>
+            <FamilyName>Kleinberg</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Friedemann</GivenName>
+            <FamilyName>Mattern</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>John</GivenName>
+            <GivenName>C.</GivenName>
+            <FamilyName>Mitchell</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Moni</GivenName>
+            <FamilyName>Naor</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Oscar</GivenName>
+            <FamilyName>Nierstrasz</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>C.</GivenName>
+            <GivenName>Pandu</GivenName>
+            <FamilyName>Rangan</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Bernhard</GivenName>
+            <FamilyName>Steffen</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Madhu</GivenName>
+            <FamilyName>Sudan</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Demetri</GivenName>
+            <FamilyName>Terzopoulos</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Doug</GivenName>
+            <FamilyName>Tygar</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Moshe</GivenName>
+            <GivenName>Y.</GivenName>
+            <FamilyName>Vardi</FamilyName>
+          </EditorName>
+        </Editor>
+        <Editor>
+          <EditorName DisplayOrder="Western">
+            <GivenName>Gerhard</GivenName>
+            <FamilyName>Weikum</FamilyName>
+          </EditorName>
+        </Editor>
+      </EditorGroup>
+    </SeriesHeader>
+    <Book Language="En">
+      <BookInfo BookProductType="Proceedings" ContainsESM="No" Language="En" MediaType="eBook" NumberingStyle="Unnumbered" OutputMedium="All" TocLevels="0">
+        <BookID>978-3-540-72590-9</BookID>
+        <BookTitle>Computational Science – ICCS 2007</BookTitle>
+        <BookSubTitle>7th International Conference, Beijing, China, May 27 - 30, 2007, Proceedings, Part IV</BookSubTitle>
+        <BookVolumeNumber>4490</BookVolumeNumber>
+        <BookSequenceNumber>4490</BookSequenceNumber>
+        <BookDOI>10.1007/978-3-540-72590-9</BookDOI>
+        <BookTitleID>149867</BookTitleID>
+        <BookPrintISBN>978-3-540-72589-3</BookPrintISBN>
+        <BookElectronicISBN>978-3-540-72590-9</BookElectronicISBN>
+        <BookChapterCount>180</BookChapterCount>
+        <BookCopyright>
+          <CopyrightHolderName>Springer-Verlag Berlin Heidelberg</CopyrightHolderName>
+          <CopyrightYear>2007</CopyrightYear>
+        </BookCopyright>
+        <BookSubjectGroup>
+          <BookSubject Code="I" Type="Primary">Computer Science</BookSubject>
+          <BookSubject Code="I16005" Priority="1" Type="Secondary">Theory of Computation</BookSubject>
+          <BookSubject Code="I14002" Priority="2" Type="Secondary">Software Engineering/Programming and Operating Systems</BookSubject>
+          <BookSubject Code="I1701X" Priority="3" Type="Secondary">Numeric Computing</BookSubject>
+          <BookSubject Code="I18008" Priority="4" Type="Secondary">Information Systems and Communication Service</BookSubject>
+          <BookSubject Code="I21025" Priority="5" Type="Secondary">Simulation and Modeling</BookSubject>
+          <BookSubject Code="I22005" Priority="6" Type="Secondary">Computer Imaging, Vision, Pattern Recognition and Graphics</BookSubject>
+          <SubjectCollection Code="SUCO11645">Computer Science</SubjectCollection>
+        </BookSubjectGroup>
+      </BookInfo>
+      <BookHeader>
+        <EditorGroup>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Yong</GivenName>
+              <FamilyName>Shi</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>yshi@mail.unomaha.edu</Email>
+            </Contact>
+          </Editor>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Geert</GivenName>
+              <GivenName>Dick</GivenName>
+              <Particle>van</Particle>
+              <FamilyName>Albada</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>dick@science.uva.nl</Email>
+            </Contact>
+          </Editor>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Jack</GivenName>
+              <FamilyName>Dongarra</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>dongarra@cs.utk.edu</Email>
+            </Contact>
+          </Editor>
+          <Editor>
+            <EditorName DisplayOrder="Western">
+              <GivenName>Peter</GivenName>
+              <GivenName>M.</GivenName>
+              <GivenName>A.</GivenName>
+              <FamilyName>Sloot</FamilyName>
+            </EditorName>
+            <Contact>
+              <Email>sloot@science.uva.nl</Email>
+            </Contact>
+          </Editor>
+        </EditorGroup>
+      </BookHeader>
+      <Chapter ID="Chap1" Language="En">
+        <ChapterInfo ChapterType="OriginalPaper" ContainsESM="No" NumberingStyle="Unnumbered" TocLevels="0">
+          <ChapterID>1</ChapterID>
+          <ChapterDOI>10.1007/978-3-540-72590-9_1</ChapterDOI>
+          <ChapterSequenceNumber>1</ChapterSequenceNumber>
+          <ChapterTitle Language="En">Roadmapping and <Emphasis Type="Italic">i</Emphasis>-Systems</ChapterTitle>
+          <ChapterFirstPage>1</ChapterFirstPage>
+          <ChapterLastPage>8</ChapterLastPage>
+          <ChapterCopyright>
+            <CopyrightHolderName>Springer Berlin Heidelberg</CopyrightHolderName>
+            <CopyrightYear>2007</CopyrightYear>
+          </ChapterCopyright>
+          <ChapterGrants Type="Regular">
+            <MetadataGrant Grant="OpenAccess"/>
+            <AbstractGrant Grant="OpenAccess"/>
+            <BodyPDFGrant Grant="Restricted"/>
+            <BodyHTMLGrant Grant="Restricted"/>
+            <BibliographyGrant Grant="Restricted"/>
+            <ESMGrant Grant="Restricted"/>
+          </ChapterGrants>
+        </ChapterInfo>
+        <ChapterHeader>
+          <AuthorGroup>
+            <Author AffiliationIDS="Aff1 Aff2 Aff3">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Tieju</GivenName>
+                <FamilyName>Ma</FamilyName>
+              </AuthorName>
+              <Contact>
+                <Email>tieju@jaist.ac.jp</Email>
+              </Contact>
+            </Author>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Hongbin</GivenName>
+                <FamilyName>Yan</FamilyName>
+              </AuthorName>
+              <Contact>
+                <Email>hongbinyan@jaist.ac.jp</Email>
+              </Contact>
+            </Author>
+            <Author AffiliationIDS="Aff1">
+              <AuthorName DisplayOrder="Western">
+                <GivenName>Yoshiteru</GivenName>
+                <FamilyName>Nakamori</FamilyName>
+              </AuthorName>
+              <Contact>
+                <Email>nakamori@jaist.ac.jp</Email>
+              </Contact>
+            </Author>
+            <Affiliation ID="Aff1">
+              <OrgName>School of Knowledge Science, Japan Advanced Institute of Science and Technology, 1-1 Asahidai, Tatsunokuchi, Ishikawa 923-1292</OrgName>
+              <OrgAddress>
+                <Country>Japan</Country>
+              </OrgAddress>
+            </Affiliation>
+            <Affiliation ID="Aff2">
+              <OrgName>Research Center on Data Technology and Knowledge Economy, CAS Beijing</OrgName>
+              <OrgAddress>
+                <Country>China</Country>
+              </OrgAddress>
+            </Affiliation>
+            <Affiliation ID="Aff3">
+              <OrgName>International Institute for Applied Systems Analysis, A-2361 Laxenburg</OrgName>
+              <OrgAddress>
+                <Country>Austria</Country>
+              </OrgAddress>
+            </Affiliation>
+          </AuthorGroup>
+          <Abstract ID="Abs1" Language="En">
+            <Heading>Abstract</Heading>
+            <Para>The abstract should summarize the contents of the paper and should contain at least 70 and at most 150 words. It should be set in 9-point font size and should be inset 1.0 cm from
+              the right and left margins. There should be two blank (10-point) lines before and after the abstract. This document is in the required format. Roadmapping, as a strategic planning tool,
+              is attracting increasing applications in industries. By applying the principles of Interactive Planning (IP), this paper puts forward a new solution for making personal academic research
+              roadmaps. Then this paper introduces an ongoing project that is to develop a roadmapping support system based on the solution, and gives some considerations about applying the <Emphasis
+                Type="Italic">i</Emphasis>-System Methodology for enhancing the knowledge creation in a roadmapping process.</Para>
+          </Abstract>
+        </ChapterHeader>
+        <NoBody/>
+      </Chapter>
+    </Book>
+  </Series>
+</Publisher>
