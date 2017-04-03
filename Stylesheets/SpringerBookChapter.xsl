@@ -117,7 +117,6 @@
                 <xsl:apply-templates select="SeriesInfo/SeriesElectronicISSN"/>
                 <xsl:apply-templates select="SeriesInfo/SeriesID"/>
             </series>
-
         </biblStruct>
     </xsl:template>
 

@@ -38,7 +38,8 @@
                 <xsl:apply-templates/>
             </forename>
         </xsl:if>
-    </xsl:template>
+    </xsl:template> 
+    
     <xsl:template match="middle_name | MiddleName | mn | corresponding-author-middlename">
         <xsl:if test=". != ''">
             <forename type="middle">
