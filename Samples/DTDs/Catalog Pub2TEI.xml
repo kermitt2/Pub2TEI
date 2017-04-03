@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE catalog 
+<!--<!DOCTYPE catalog 
       PUBLIC "-//OASIS//DTD XML Catalogs V1.1//EN" 
       "http://www.oasis-open.org/committees/entity/release/1.1/catalog.dtd">
+-->
+<!DOCTYPE catalog 
+      PUBLIC "-//OASIS//DTD XML Catalogs V1.1//EN" 
+      "catalog.dtd">
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <public 
         publicId="-//NPG//DTD XML Article//EN" 
-        uri="/Users/romary/Documents/Workbench/Pub2TEI-LR/Samples/DTDs/NPG_XML_Article/NPG_XML_Article.dtd"/>
+        uri="NPG_XML_Article/NPG_XML_Article.dtd"/>
     <public 
         publicId="-//NLM//DTD Journal Publishing DTD v2.3 20070202//EN" 
-        uri="/Users/romary/Documents/Workbench/Pub2TEI-LR/Samples/DTDs/publishing2.3/journalpublishing.dtd"/>
+        uri="publishing2.3/journalpublishing.dtd"/>
 </catalog>
 
 
