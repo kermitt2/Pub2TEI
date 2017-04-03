@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" type="main">Perception of three-dimensional shape influences colour perception through mutual illumination</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Nature Publishing Group</publisher>
+            <authority>Macmillian Magazines Ltd.</authority>
+            <date>1999</date>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <analytic>
+                  <author xml:id="author-0000">
+                     <persName>
+                        <forename type="first">M. G.</forename>
+                        <surname>Bloj</surname>
+                        <forename full="init">M G</forename>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Physiological Sciences, Medical School</orgName>
+                        <address>
+                           <settlement>Newcastle upon Tyne</settlement>
+                           <postCode>NE2 4HH</postCode>
+                           <country key="GB">UNITED KINGDOM</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author xml:id="author-0001">
+                     <persName>
+                        <forename type="first">D.</forename>
+                        <surname> Kersten</surname>
+                        <forename full="init">D</forename>
+                     </persName>
+                     <affiliation>
+                        <orgName type="institution">Psychology Department, University of Minnesota</orgName>
+                        <address>
+                           <street>75 East River Road</street>
+                           <settlement>Minneapolis</settlement>
+                           <region>Minnesota</region>
+                           <postCode>55455</postCode>
+                           <country key="US">UNITED STATES</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <author xml:id="author-0002">
+                     <persName>
+                        <forename type="first">A. C.</forename>
+                        <surname>Hurlbert</surname>
+                        <forename full="init">A C</forename>
+                     </persName>
+                     <email>anya.hurlbert@ncl.ac.uk</email>
+                     <affiliation>Correspondence and requests for materials should be addressed to A.C.H. (e-mail: anya.hurlbert@ncl.ac.uk).</affiliation>
+                     <affiliation>
+                        <orgName type="institution">Physiological Sciences, Medical School</orgName>
+                        <address>
+                           <settlement>Newcastle upon Tyne</settlement>
+                           <postCode>NE2 4HH</postCode>
+                           <country key="GB">UNITED KINGDOM</country>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <title level="a" type="main">Perception of three-dimensional shape influences colour perception through mutual illumination</title>
+                  <idno type="articleId">47245</idno>
+               </analytic>
+               <monogr>
+                  <title level="j" type="main">Nature</title>
+                  <idno type="pISSN">0028-0836</idno>
+                  <idno type="DOI">10.1038/47245</idno>
+                  <imprint>
+                     <biblScope unit="vol">402</biblScope>
+                     <biblScope unit="issue">6764</biblScope>
+                     <biblScope unit="page" from="877">877</biblScope>
+                     <biblScope unit="page" to="879">879</biblScope>
+                     <date>1999</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Objects in the natural world possess different visual attributes, including shape, colour, surface texture and motion. Previous perceptual studies have assumed that the brain analyses
+                the colour of a surface independently of its three-dimensional shape and viewing geometry<ref type="bibr" target="#b1 b2"/>, although there are neural connections between colour and two-dimensional
+                form processing early in the visual pathway<ref type="bibr" target="#b3 b4"/>. Here we show that colour perception is strongly influenced by three-dimensional shape perception in a novel, chromatic
+                version of the Mach Card—a concave folded card with one side made of magenta paper and the other of white paper. The light reflected from the magenta paper casts a pinkish glow
+                on the white side. The perceived colour of the white side changes from pale pink to deep magenta when the perceived shape of the card flips from concave to convex. The effect
+                demonstrates that the human visual system incorporates knowledge of mutual illumination—the physics of light reflection between surfaces—at an early stage in colour
+                perception.</p>
+         </abstract>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>To quantify this phenomenon, we constructed a concave card with trapezoidal sides which appeared rectangular when viewed from a distance (<ref type="figure" target="#f1">Fig. 1a</ref>). We painted the left
+            side of the card magenta, the right white. Mutual illumination between the two sides generated a strong chromatic gradient across the white side, so that its measured chromaticity varied
+            from deep pink near the crease to pale pink at its outer edge (<ref type="figure" target="#f1">Fig. 1b</ref>). By diluting the magenta paint with increasing amounts of white paint, we created a set of 23
+            alternative matching colours on small chips, densely sampling a rough line from magenta to white in uniform colour space (inset, <ref type="figure" target="#f2">Fig. 2</ref>). The card was attached to the
+            back wall of a black box (the stimulus box) and illuminated by a hidden incandescent lamp regulated by a dimmer. A panel containing the coloured chips was attached to the back of a second
+            black box (the matching box) and illuminated by two hidden incandescent bulbs. The illumination in each box was adjusted to produce the same chromaticity and luminance from a central white
+            card, which was removed prior to the experiment.</p>
+         <p>In the ‘roof’ condition, observers viewed the card through a pseudoscope, a binocular viewing stand fitted with Dove prisms. The prisms invert the image in each eye from left to
+            right, thereby reversing binocular stereo disparities and with them, the depths of objects in the image. The card therefore appeared convex. In the ‘corner’ condition,
+            observers viewed the card through empty but otherwise identical viewing tubes. The card now appeared concave, its true shape. In the roof condition, the white side of the card appeared on
+            the left; in the corner condition, the white side appeared on the right (<ref type="figure" target="#f1">Fig. 1c</ref>). Because the contour cues indicated a flat card and there were no visible shadows in
+            the black stimulus box, the primary cue to the card's three-dimensional shape was from binocular disparities. Observers were instructed to match the colour of the left (roof) or right
+            (corner) side by selecting from the matching panel a chip identical in colour appearance (see <ref type="anchor" target="#mt">Methods</ref>). In the control condition, observers followed the same
+            procedure to match the colour of an unfolded, pink card, viewed with and without the pseudoscope.</p>
+         <p>The results (shown for 23 observers in <ref type="figure" target="#f2">Fig. 2</ref>) demonstrate a significant shift in perceived colour of the white side from a desaturated pink in the corner condition to
+            a more saturated magenta in the roof condition. There is no shift in perceived colour of the flat control card under the two viewing conditions (<ref type="figure" target="#f3">Fig. 3a</ref>; the two
+            distributions are statistically indistinguishable [<formula>F(1,90) = 0.05</formula> at <formula>
+               <hi rend="italic">P</hi> = 0.8</formula>]).</p>
+         <p>The effect cannot be explained in the same way as the classical Mach Card effect. The original Mach Card is a convex folded grey card, one side brightly illuminated and the other in
+                shadow<ref type="bibr" target="#b5"/>. When the card is perceived correctly to be convex (roof), the two sides appear the same grey; when perceived to be an inward-pointing corner, the shaded side
+            appears to be painted a darker grey than the lit side. Mach concluded that the human visual system assumes that the direction of illumination is the same for both configurations, so that
+            in the roof, the dark side is turned away from the light source, but not in the corner. In a quantitative demonstration of the phenomenon, Beck<ref type="bibr" target="#b6"/> confirmed that observers'
+            assumptions about the number and positions of light sources illuminating the card did indeed influence their lightness matches to both sides. Other studies support the explanation that
+            implicit knowledge about light source and scene geometries or perceived surface layout may directly influence surface lightness perception<ref type="bibr" target="#b7 b8 b9 b10 b11 b23"/>.</p>
+         <p>The chromatic effect we report here cannot be explained by the above lightness effects, for two reasons. Firstly, in our setup, the light source is deliberately hidden, so that observers
+            cannot be certain of any fixed direction of illumination. In fact, under these conditions, the classical Mach Card effect does not obtain, as we have shown in another experiment<ref type="bibr" target="#b12"/>. Secondly, even if observers were to deduce the approximate location of the light source, they would conclude that the white side received more direct illumination in the
+            corner shape than in the roof shape, because of the inversion induced by pseudoscopic viewing (<ref type="figure" target="#f1">Fig. 1c</ref>). Mach's explanation would therefore predict that the white
+            side should appear darker in the corner than in the roof. This prediction cannot account for our results, because the less saturated matching chips neither are nor appear darker, as we
+            demonstrated in a separate ranking experiment under the same illumination conditions.</p>
+         <p>Instead, the chromatic effect appears to depend on an inbuilt, perceptual understanding of the laws of mutual illumination. Mutual illumination—the indirect illumination created by
+            light reflected from surfaces onto each other, as opposed to direct illumination from the primary light source—has largely been neglected in analyses of surface colour and shape
+            perception, with a few exceptions<ref type="bibr" target="#b13 b14"/>. Recent analyses have shown that the chromatic component of mutual illumination may provide cues to the intrinsic surface reflectance
+            of participating surfaces, and therefore enhance colour constancy<ref type="bibr" target="#b15"/>. Psychophysical studies of colour constancy in real<ref type="bibr" target="#b16 b17"/> and computer-simulated
+                scenes<ref type="bibr" target="#b18"/> suggest that the human visual system may indeed exploit the information that mutual illumination conveys to recover constant surface colours.</p>
+         <p>Our present study demonstrates that surface colour perception is contingent on three-dimensional shape perception. A simple model based on bayesian inference<ref type="bibr" target="#b19"/> demonstrates
+            that this shape–colour contingency arises because the human visual system must intrinsically understand the effects of mutual illumination.</p>
+         <p>The model computes how an ideal observer would perform when asked to select the paper most likely to constitute the ‘white’ side under the two conditions. The ideal observer is
+            limited only by the internal matching noise and is provided with the following physical information for the task: (1) an understanding of the physics of light reflection, and specifically
+            of mutual illumination; (2) an <hi rend="italic">a priori</hi> assumption of a single light source and independent knowledge of its energy spectrum; (3) independent knowledge of the card's shape; and (4)
+            independent knowledge of the surface reflectance function of the magenta side, as well as of the matching chips (see <ref type="anchor" target="#mt">Methods</ref>). This information determines the
+            likelihood that the surface reflectance of a particular chip would give rise to the observed colour of the ‘white’ side; this likelihood determines the probability that the
+            ideal observer selects that chip.</p>
+         <p>The predicted colour of the ‘white’ side for a particular surface reflectance varies with the direction of the light source. For the model we assume that each direction is
+            equally probable, and integrate over all light source directions to obtain the <hi rend="italic">a posteriori</hi> probability for each matching chip. This calculation is equivalent to the “generic
+            view” method<ref type="bibr" target="#b20"/>, using the direction of the incident illumination as the generic variable. The only difference between the calculation of the predicted match for the
+            corner and roof configurations is that mutual illumination is allowed in the former but not in the latter.</p>
+         <p>This single feature—the presence or absence of mutual illumination—is necessary and sufficient to make the predicted probability distributions significantly different for the
+            roof and corner configurations (<ref type="figure" target="#f3">Fig. 3b</ref>). Furthermore, the behaviour of the ideal observer predicts the crucial features of the observed matches: the difference
+            between their means (31 chroma units, statistically indistinguishable from the observed mean difference of <formula>35 ± 17</formula>), and the spread and overlap of the non-normal
+            distributions (standard deviations of 26 versus observed <formula>22 ± 10</formula>, and 32 versus observed <formula>35 ± 7</formula>, for the roof and corner conditions, respectively; see <ref type="anchor" target="#mt">Methods</ref>).</p>
+         <p>The model predictions demonstrate that the real observer behaves close to the ideal, and, in particular, that the real observer's visual system incorporates accurate knowledge of the
+            effects of mutual illumination. The systematic shift in the absolute values of the observed means compared with the predicted means (<ref type="figure" target="#f3">Fig. 3b</ref>) suggests that the real
+            observer lacks the ideal observer's access to accurate and complete physical measurements, in particular the illuminant spectrum.</p>
+         <p>It is important to emphasize that the real observer's task was to match the colour of the ‘white’ side, a direct sensory match, not to select the paper from which it was most
+            likely to be constructed, an indirect match requiring a judgement of surface identity<ref type="bibr" target="#b1"/>. The observer perceives two different colours from the same retinal stimulus under the
+            two different configurations. The model performs a high-level, indirect match, and yet predicts the observed difference in low-level, direct matches. This fact suggests that there is a
+            top-down influence of surface recognition on colour perception, similar to the reported effects of lightness judgements on perceived brightness in the achromatic domain<ref type="bibr" target="#b11"/>.
+            This influence is mediated by an in-built knowledge of the chromatic effects of mutual illumination, which dictates that the perception of surface colour and three-dimensional shape are
+            fundamentally linked.</p>
+         <div>
+            <head>
+               <anchor xml:id="mt"/>Methods</head>
+            <div>
+               <head>Matching procedure</head>
+               <p> After securing a fused image of a test circle against a grid through the pseudoscope, the observer viewed the folded test card or flat control card in the stimulus box for at least
+                    10 seconds, at a viewing distance of 57 cm. The observer reported whether the folded card was a ‘roof’ or ‘corner’ shape. He then moved to the
+                    adjacent matching box where the matching chips (each 3 degrees square) were displayed in a <formula>5 × 5</formula> array with 1-degree-wide gaps, against a black background. Each of
+                    four such panels, each with a different random arrangement of chips, was displayed in one of four different rotational positions, randomised across trials, to yield a total of 16
+                    different matching displays. The observer selected the chip (by marking its equivalent position on a paper grid) that best matched the specified left or right side of the card. For
+                    each change in stimulus, the experimenter drew a black cloth across the front of the stimulus box, so that the observer's view of the card was always through the viewing tubes.
+                    Observers were randomly assigned to one of two groups: corner or roof condition first, with the control conditions interleaved between two trials of the same condition. Matches are
+                    reported for the first-viewing-only conditions.</p>
+            </div>
+            <div>
+               <head>Calculation of lightness and chroma</head>
+               <p> The lightness (<hi rend="italic">L</hi>*) of a surface it is relative brightness compared to a white surface under the same illumination. Chroma (<hi rend="italic">C</hi>) is defined as the colourfulness of a
+                    surface judged as a proportion of the brightness of a similarly illuminated surface that appears white. Their numerical correlates are calculated as:</p>
+               <p/>
+               <p/>
+               <p/>
+               <p/>
+               <p>where <hi rend="italic">Y</hi>
+                  <hi rend="subscript">n</hi>, <hi rend="italic">u</hi>
+                  <hi rend="subscript">n</hi> and <hi rend="italic">v</hi>
+                  <hi rend="subscript">n</hi> are the chromaticity coordinates of a flat white reference paper (<formula>
+                     <hi rend="italic">C</hi> = 0</formula> and
+                            <formula>
+                     <hi rend="italic">L</hi>* = 100</formula>) under the illumination conditions of the stimulus box, in CIE <hi rend="italic">L</hi>*<hi rend="italic">u</hi>′<hi rend="italic">v</hi>′ colour space<ref type="bibr" target="#b21"/>.</p>
+            </div>
+            <div>
+               <head>Ideal observer model</head>
+               <p> For the corner configuration, a vertically infinite surface of reflectance ρ<hi rend="subscript">2</hi>(λ) forms an angle β of 70 degrees with another of reflectance
+                        ρ<hi rend="subscript">1</hi>(λ). The illuminant <hi rend="italic">E</hi>(λ) forms angles α<hi rend="subscript">2</hi> and α<hi rend="subscript">1</hi> with the two surface normals, respectively (see <ref type="figure" target="#f1">Fig. 1</ref>). The one-bounce model of mutual illumination<ref type="bibr" target="#b15"/> yields the intensity equation for surface 1: <formula>
+                     <hi rend="italic">I</hi>
+                     <hi rend="subscript">1</hi>(λ,<hi rend="italic">x</hi>) = <hi rend="italic">E</hi>(λ)ρ<hi rend="subscript">1</hi>(λ) [cos α<hi rend="subscript">1</hi> + <hi rend="italic">f</hi>
+                     <hi rend="subscript">21</hi>(<hi rend="italic">x</hi>)ρ<hi rend="subscript">2</hi>(λ)  cos α<hi rend="subscript">2</hi>]</formula>, where the first term represents the direct illumination
+                    and the second term represents indirect (mutual) illumination due to light reflected from surface 2. <hi rend="italic">f</hi>
+                  <hi rend="subscript">21</hi>(<hi rend="italic">x</hi>) is the β-dependent form factor describing
+                    the extent to which surface 2 reflects light onto surface 1 at distance <hi rend="italic">x</hi> from the vertex. ρ<hi rend="subscript">2</hi>(λ) is specified as the measured reflectance function of
+                    chip 23 (identical to the magenta side of the card). <hi rend="italic">E</hi>(λ) is a tungsten illuminant spectrum reconstructed from the measured chromaticity values of a white reference
+                    paper under the illumination conditions in the stimulus box, using the Cohen basis functions<ref type="bibr" target="#b21"/>. The surface reflectance
+                    ρ<hi rend="superscript">
+                     <hi rend="italic">i</hi>
+                  </hi>
+                  <hi rend="subscript">1</hi>(λ) is the measured surface reflectance of the <hi rend="italic">i</hi>th matching chip (<formula>
+                     <hi rend="italic">i</hi> = 1,2, … 23</formula>).
+                    Reflectance functions and the illuminant spectrum are specified in 10-nm steps. For the corner shape, surface 1 receives direct illumination for values of α<hi rend="subscript">1</hi>
+                    between 0 (normal to surface 1) and 90 degrees, and indirect illumination for α<hi rend="subscript">1</hi> from 20 to 110 degrees (normal to surface 2). For each value of
+                        α<hi rend="subscript">1</hi> between 0 and 110 degrees, in 1-degree steps, and for each surface reflectance ρ<hi rend="superscript">
+                     <hi rend="italic">i</hi>
+                  </hi>
+                  <hi rend="subscript">1</hi>(λ), the predicted light
+                    intensity <hi rend="italic">I</hi>
+                  <hi rend="superscript">
+                     <hi rend="italic">i</hi>
+                  </hi>
+                  <hi rend="subscript">1</hi>(λ,<hi rend="italic">x</hi>), at each of four positions <hi rend="italic">x</hi> on surface 1, is computed according to the above formula. From
+                            <hi rend="italic">I</hi>
+                  <hi rend="superscript">
+                     <hi rend="italic">i</hi>
+                  </hi>
+                  <hi rend="subscript">1</hi>(λ,<hi rend="italic">x</hi>), the predicted luminance, hue and chroma of the ‘white’ side is computed using the CIE 1964
+                    supplementary standard colorimetric observer and standard colorimetric formulae—the predicted colour of the ‘white’ side if its surface reflectance were
+                            ρ<hi rend="superscript">
+                     <hi rend="italic">i</hi>
+                  </hi>
+                  <hi rend="subscript">1</hi>(λ) and it participated in mutual illumination with the magenta side. The differences between the predicted chroma
+                            <hi rend="italic">C</hi>
+                  <hi rend="superscript">
+                     <hi rend="italic">i</hi>
+                  </hi>(α<hi rend="subscript">1</hi>,<hi rend="italic">x</hi>) and the measured chroma <hi rend="italic">C</hi>
+                  <hi rend="subscript">obs</hi>(<hi rend="italic">x</hi>) at each position <hi rend="italic">x</hi> on the ‘white’
+                    side are computed and converted to an <hi rend="italic">a posteriori</hi> probability <hi rend="italic">P</hi> for the <hi rend="italic">i</hi>th matching chip, by summing over all (110) illuminant directions α<hi rend="subscript">1</hi>
+                    and all four sample positions <hi rend="italic">x</hi>, and normalizing areas under the curves to unity: <formula>
+                     <hi rend="italic">P</hi>(ρ<hi rend="superscript">
+                        <hi rend="italic">i</hi>
+                     </hi>
+                     <hi rend="subscript">1</hi>|<hi rend="italic">C</hi>
+                     <hi rend="subscript">obs</hi>) =
+                            (1/<hi rend="bold">k</hi>)Σ<hi rend="subscript">α</hi>Σ<hi rend="subscript">
+                        <hi rend="italic">x</hi>
+                     </hi> exp -
+                            (|<hi rend="italic">C</hi>
+                     <hi rend="subscript">obs</hi> - <hi rend="italic">C</hi>
+                     <hi rend="superscript">
+                        <hi rend="italic">i</hi>
+                     </hi>(α,<hi rend="italic">x</hi>)|<hi rend="superscript">2</hi>/(2σ<hi rend="superscript">2</hi>))</formula>,
+                    where <hi rend="bold">k</hi> is the normalizing constant. Here σ is the only free parameter, representing the internal observation error; it is therefore chosen as the value that best
+                    predicts the distribution of chroma matches to the flat control card (that is, <formula>σ = 20.36</formula>).</p>
+               <p>For the roof configuration, the intensity equation for surface 1 is <formula>
+                     <hi rend="italic">I</hi>
+                     <hi rend="subscript">1</hi>(λ) =
+                            <hi rend="italic">E</hi>(λ)ρ<hi rend="subscript">1</hi>(λ) cos α<hi rend="subscript">1</hi>
+                  </formula>.
+                    Because surface 1 receives neither direct nor indirect illumination for values of α<hi rend="subscript">1</hi> between 90 and 110 degrees, in this computation α<hi rend="subscript">1</hi> is allowed
+                    to vary only from 0 to 90 degrees. Otherwise, the calculation is the same as for the corner configuration.</p>
+            </div>
+            <div>
+               <head>Calculation of observed mean and standard deviation errors</head>
+               <p> The 95% confidence intervals for the standard deviations and differences between roof and corner means were estimated by resampling<ref type="bibr" target="#b22"/>.</p>
+            </div>
+         </div>
+         <figure xml:id="f1">
+            <head>The experimental stimulus.</head>
+            <figDesc>
+               <hi rend="bold">a</hi>, The chromatic Mach card. The large drawing gives its actual dimensions, with exaggerated perspective cues; the small drawing shows its actual appearance. Average
+                        luminance and chromaticity values: 56.58, 0.49, 0.52 (magenta side) and 42.43, 0.45, 0.52 (white side) (CIE 1976 <hi rend="italic">L</hi>*<hi rend="italic">u</hi>′<hi rend="italic">v</hi>′ coordinates).
+                            <hi rend="bold">b</hi>, Solid lines, measured variation in chroma (magenta line) and lightness (black line) horizontally and centrally across the card (see <ref type="anchor" target="#mt">Methods</ref>). Dashed lines, measurements without mutual illumination (obtained by replacing alternate sides with black paper). <hi rend="bold">c</hi>, Plan views of the stimulus,
+                        illustrating the inversion of the card under pseudoscopic viewing, and the approximate direction of the light source <hi rend="italic">E</hi>.</figDesc>
+         </figure>
+         <figure xml:id="f2">
+            <head>Average (<hi rend="italic">u</hi>′,<hi rend="italic">v</hi>′) coordinates of the matches selected for the white side of the card.</head>
+            <figDesc>Data is shown when seen as a corner, without pseudoscope (triangles), and as a roof, with pseudoscope (squares). Error bars show s.e.m. (<formula>
+                  <hi rend="italic">n</hi> = 24</formula> corner,
+                                <formula>
+                  <hi rend="italic">n</hi> = 20</formula> roof). The difference between the roof and corner average matches is approximately ten times larger than threshold. Inset, the
+                        distribution of <hi rend="italic">u</hi>′ and <hi rend="italic">v</hi>′ chromaticity coordinates (CIE 1976 <hi rend="italic">L</hi>*<hi rend="italic">u</hi>′<hi rend="italic">v</hi>′) of the 23 matching chips under the
+                        illumination conditions used during the experiment. The rectangle indicates the area represented in the main graph. </figDesc>
+         </figure>
+         <figure xml:id="f3">
+            <head>Observed matches and model predictions.</head>
+            <figDesc>
+               <hi rend="bold">a</hi>, Distribution in chroma of matches to flat control card with (black bars) and without (grey bars) pseudoscope, for 46 total matches by 23 observers, for each condition.
+                        Bin size 10; the magenta chip (number 23) has chroma 149. Arrow indicates actual chroma (86) of control card. <hi rend="bold">b</hi>, Distribution in chroma of matches to the white side of
+                        the chromatic Mach card. Grey bars, corner shape, without pseudoscope (<formula>
+                  <hi rend="italic">n</hi> = 24</formula>). Black bars, roof shape, with pseudoscope (<formula>
+                  <hi rend="italic">n</hi> =
+                        20</formula>). Overlaid curves show the predicted probability distributions as described in <ref type="anchor" target="#mt">Methods</ref>.</figDesc>
+         </figure>
+      </body>
+      <back>
+         <div type="acknowledgements">
+            <head>Acknowledgements</head>
+            <p>We thank J. Artigas Verde for use of the spectroradiometer, the late P. Callaghan for construction of the pseudoscope, and A. D. Logvinenko for technical information. The research was
+                supported by the Wellcome Trust (A.C.H. and M.G.B.) and by the National Science Foundation (D.K.). M.G.B. was supported by British Federation of Women Graduates, Ian Karten Charitable
+                Trust, an Overseas Research Student Award and the University of Newcastle. Thanks to A. Rees, M. Ridley and P. Schrater for helpful comments on earlier drafts of the manuscript. </p>
+         </div>
+         <div type="references">
+            <listBibl>
+               <biblStruct xml:id="b1">
+                  <analytic>
+                     <title level="a" type="main">Simultaneous color constancy.</title>
+                     <author>
+                        <surname>Arend</surname>,<forename type="first">L. E.</forename>
+                     </author>
+                     <author>
+                        <surname>Reeves</surname>,<forename type="first">A.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">J. Opt. Soc. Am. A</title>
+                     <imprint>
+                        <biblScope unit="vol">3</biblScope>
+                        <biblScope unit="page" from="1743">1743</biblScope>
+                        <biblScope unit="page" to="1751">1751</biblScope>
+                        <date when="1986"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b2">
+                  <analytic>
+                     <author>
+                        <surname>Troost</surname>,<forename type="first">J. M.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="m" type="main">Perceptual Constancy—Why Things Look As They Do</title>
+                     <imprint>
+                        <date when="1998"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b3">
+                  <analytic>
+                     <title level="a" type="main">Processing of color, form and motion in macaque area V2.</title>
+                     <author>
+                        <surname>Gegenfurtner</surname>,<forename type="first">K. R.</forename>
+                     </author>
+                     <author>
+                        <surname>Kiper</surname>,<forename type="first">D. C.</forename>
+                     </author>
+                     <author>
+                        <surname>Fenstemaker</surname>,<forename type="first">S. B.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Vis. Neurosci.</title>
+                     <imprint>
+                        <biblScope unit="vol">13</biblScope>
+                        <biblScope unit="page" from="161">161</biblScope>
+                        <biblScope unit="page" to="172">172</biblScope>
+                        <date when="1996"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b4">
+                  <analytic>
+                     <title level="a" type="main">Modular Connections between areas V2 and V4 of macaque monkey visual cortex.</title>
+                     <author>
+                        <surname>Zeki</surname>,<forename type="first">S.</forename>
+                     </author>
+                     <author>
+                        <surname>Shipp</surname>,<forename type="first">S.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Eur. J. Neurosci.</title>
+                     <imprint>
+                        <biblScope unit="vol">1</biblScope>
+                        <biblScope unit="page" from="494">494</biblScope>
+                        <biblScope unit="page" to="506">506</biblScope>
+                        <date when="1989"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b5">
+                  <analytic>
+                     <author>
+                        <surname>Mach</surname>,<forename type="first">E.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="m" type="main">The Analysis of Sensations</title>
+                     <imprint>
+                        <date when="1886"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b6">
+                  <analytic>
+                     <title level="a" type="main">Apparent spatial position and the perception of lightness.</title>
+                     <author>
+                        <surname>Beck</surname>,<forename type="first">J.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">J. Exp. Psychol.</title>
+                     <imprint>
+                        <biblScope unit="vol">69</biblScope>
+                        <biblScope unit="page" from="170">170</biblScope>
+                        <biblScope unit="page" to="179">179</biblScope>
+                        <date when="1965"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b7">
+                  <analytic>
+                     <title level="a" type="main">Perceived lightness depends on perceived spatial arrangement.</title>
+                     <author>
+                        <surname>Gilchrist</surname>,<forename type="first">A. L.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Science</title>
+                     <imprint>
+                        <biblScope unit="vol">195</biblScope>
+                        <biblScope unit="page" from="185">185</biblScope>
+                        <date when="1977"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b8">
+                  <analytic>
+                     <title level="a" type="main">The classification and integration of edges as critical to the perception of reflectance and illumination.</title>
+                     <author>
+                        <surname>Gilchrist</surname>,<forename type="first">A.</forename>
+                     </author>
+                     <author>
+                        <surname>Delman</surname>,<forename type="first">S.</forename>
+                     </author>
+                     <author>
+                        <surname>Jacobsen</surname>,<forename type="first">A.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Percept. Psychophys.</title>
+                     <imprint>
+                        <biblScope unit="vol">33</biblScope>
+                        <biblScope unit="page" from="425">425</biblScope>
+                        <biblScope unit="page" to="436">436</biblScope>
+                        <date when="1983"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b9">
+                  <analytic>
+                     <title level="a" type="main">Perception of shape from shading.</title>
+                     <author>
+                        <surname>Ramachandran</surname>,<forename type="first">V. S.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Nature</title>
+                     <imprint>
+                        <biblScope unit="vol">331</biblScope>
+                        <biblScope unit="page" from="163">163</biblScope>
+                        <biblScope unit="page" to="166">166</biblScope>
+                        <date when="1988"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b10">
+                  <analytic>
+                     <title level="a" type="main">Apparent surface curvature affects lightness perception.</title>
+                     <author>
+                        <surname>Knill</surname>,<forename type="first">D. C.</forename>
+                     </author>
+                     <author>
+                        <surname>Kersten</surname>,<forename type="first">D.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Nature</title>
+                     <imprint>
+                        <biblScope unit="vol">351</biblScope>
+                        <biblScope unit="page" from="228">228</biblScope>
+                        <biblScope unit="page" to="230">230</biblScope>
+                        <date when="1991"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b11">
+                  <analytic>
+                     <title level="a" type="main">Perceptual organization and the judgement of brightness.</title>
+                     <author>
+                        <surname>Adelson</surname>,<forename type="first">E. H.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Science</title>
+                     <imprint>
+                        <biblScope unit="vol">262</biblScope>
+                        <biblScope unit="page" from="2042">2042</biblScope>
+                        <biblScope unit="page" to="2044">2044</biblScope>
+                        <date when="1993"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b12">
+                  <analytic>
+                     <title level="a" type="main">The influence of shape and illuminant position cues on surface lightness perception.</title>
+                     <author>
+                        <surname>Bloj</surname>,<forename type="first">M. G.</forename>
+                     </author>
+                     <author>
+                        <surname>Hurlbert</surname>,<forename type="first">A. C.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Invest. Ophthalmol. Vis. Sci.</title>
+                     <imprint>
+                        <biblScope unit="vol">40</biblScope>
+                        <biblScope unit="page" from="S981">S981</biblScope>
+                        <date when="1999"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b13">
+                  <analytic>
+                     <title level="a" type="main">Shape from shading in the light of mutual illumination.</title>
+                     <author>
+                        <surname>Forsyth</surname>,<forename type="first">D.</forename>
+                     </author>
+                     <author>
+                        <surname>Zisserman</surname>,<forename type="first">A.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Image Vision Comput.</title>
+                     <imprint>
+                        <biblScope unit="vol">8</biblScope>
+                        <biblScope unit="page" from="42">42</biblScope>
+                        <biblScope unit="page" to="49">49</biblScope>
+                        <date when="1990"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b14">
+                  <analytic>
+                     <title level="a" type="main">Shape from interreflections.</title>
+                     <author>
+                        <surname>Nayar</surname>,<forename type="first">S. K.</forename>
+                     </author>
+                     <author>
+                        <surname>Ikeuchi</surname>,<forename type="first">K.</forename>
+                     </author>
+                     <author>
+                        <surname>Kanade</surname>,<forename type="first">T.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Int. J. Comput. Vis.</title>
+                     <imprint>
+                        <biblScope unit="vol">6</biblScope>
+                        <biblScope unit="page" from="173">173</biblScope>
+                        <biblScope unit="page" to="195">195</biblScope>
+                        <date when="1991"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b15">
+                  <analytic>
+                     <title level="a" type="main">Color constancy from mutual reflection.</title>
+                     <author>
+                        <surname>Funt</surname>,<forename type="first">B.</forename>
+                     </author>
+                     <author>
+                        <surname>Drew</surname>,<forename type="first">M.</forename>
+                     </author>
+                     <author>
+                        <surname>Ho</surname>,<forename type="first">J.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Int. J. Comput. Vis.</title>
+                     <imprint>
+                        <biblScope unit="vol">6</biblScope>
+                        <biblScope unit="page" from="5">5</biblScope>
+                        <biblScope unit="page" to="24">24</biblScope>
+                        <date when="1991"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b16">
+                  <analytic>
+                     <title level="a" type="main">On constant perception of colour.</title>
+                     <author>
+                        <surname>Nuberg</surname>,<forename type="first">N. D.</forename>
+                     </author>
+                     <author>
+                        <surname>Bongard</surname>,<forename type="first">M. M.</forename>
+                     </author>
+                     <author>
+                        <surname>Nikolaev</surname>,<forename type="first">P. P. I.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Biophysika</title>
+                     <imprint>
+                        <biblScope unit="vol">16</biblScope>
+                        <biblScope unit="page" from="285">285</biblScope>
+                        <biblScope unit="page" to="293">293</biblScope>
+                        <date when="1971"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b17">
+                  <analytic>
+                     <title level="a" type="main">Mechanisms of colour constancy under nearly natural viewing.</title>
+                     <author>
+                        <surname>Kraft</surname>,<forename type="first">J. M.</forename>
+                     </author>
+                     <author>
+                        <surname>Brainard</surname>,<forename type="first">D. H.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Proc. Natl Acad. Sci. USA</title>
+                     <imprint>
+                        <biblScope unit="vol">96</biblScope>
+                        <biblScope unit="page" from="307">307</biblScope>
+                        <biblScope unit="page" to="312">312</biblScope>
+                        <date when="1999"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b18">
+                  <analytic>
+                     <title level="a" type="main">Does mutual illumination improve human colour constancy?</title>
+                     <author>
+                        <surname>Bloj</surname>,<forename type="first">M. G.</forename>
+                     </author>
+                     <author>
+                        <surname>Hurlbert</surname>,<forename type="first">A. C.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Invest. Ophthalmol. Vis. Sci.</title>
+                     <imprint>
+                        <biblScope unit="vol">36</biblScope>
+                        <biblScope unit="page" from="S639">S639</biblScope>
+                        <date when="1995"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b19">
+                  <analytic>
+                     <author>
+                        <surname>Knill</surname>,<forename type="first">D. C.</forename>
+                     </author>
+                     <author>
+                        <surname>Richards</surname>,<forename type="first">W.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="m" type="main">Perception as Bayesian Inference</title>
+                     <imprint>
+                        <date when="1996"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b20">
+                  <analytic>
+                     <title level="a" type="main">The generic viewpoint assumption in a framework for visual perception.</title>
+                     <author>
+                        <surname>Freeman</surname>,<forename type="first">W. T.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Nature</title>
+                     <imprint>
+                        <biblScope unit="vol">368</biblScope>
+                        <biblScope unit="page" from="542">542</biblScope>
+                        <biblScope unit="page" to="545">545</biblScope>
+                        <date when="1994"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b21">
+                  <analytic>
+                     <author>
+                        <surname>Wyszecki</surname>,<forename type="first">G.</forename>
+                     </author>
+                     <author>
+                        <surname>Stiles</surname>,<forename type="first">W. S.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="m" type="main">Color Science: Concepts and <ref type="anchor" target="#mt">Methods</ref>, Quantitative Data and Formulae</title>
+                     <imprint>
+                        <date when="1982"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b22">
+                  <analytic>
+                     <author>
+                        <surname>Efron</surname>,<forename type="first">B.</forename>
+                     </author>
+                     <author>
+                        <surname>Tibshirani</surname>,<forename type="first">R.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="m" type="main">An Introduction to the Bootstrap</title>
+                     <imprint>
+                        <date when="1993"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+               <biblStruct xml:id="b23">
+                  <analytic>
+                     <title level="a" type="main">The influence of depicted illumination on brightness.</title>
+                     <author>
+                        <surname>Williams</surname>,<forename type="first">S. M.</forename>
+                     </author>
+                     <author>
+                        <surname>McCoy</surname>,<forename type="first">A. N.</forename>
+                     </author>
+                     <author>
+                        <surname>Purves</surname>,<forename type="first">D.</forename>
+                     </author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" type="main">Proc. Natl Acad. Sci., USA</title>
+                     <imprint>
+                        <biblScope unit="vol">95</biblScope>
+                        <biblScope unit="page" from="13296">13296</biblScope>
+                        <biblScope unit="page" to="13300">13300</biblScope>
+                        <date when="1998"/>
+                     </imprint>
+                  </monogr>
+               </biblStruct>
+            </listBibl>
+         </div>
+      </back>
+   </text>
+</TEI>

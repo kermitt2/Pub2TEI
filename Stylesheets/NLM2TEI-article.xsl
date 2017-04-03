@@ -269,7 +269,7 @@
                 <!--<xsl:variable name="i" select="$i + 1" />-->
             </xsl:attribute>
             <persName>
-                <xsl:apply-templates select="* except (bio, corf, orf)"/>
+                <xsl:apply-templates select="* except (bio,corf,orf)"/>
             </persName>
             <!-- PL: biography are put under author -->
             <xsl:if test="bio">
