@@ -262,9 +262,9 @@
     </xsl:template>
 
     <xsl:template match="elocation-id">
-        <biblScope type="elocation-id">
+        <idno type="{@content-type}">
             <xsl:apply-templates/>
-        </biblScope>
+        </idno>
     </xsl:template>
 
     <xsl:template match="person-group[@person-group-type='author']">
@@ -388,6 +388,10 @@
 
     <xsl:template match="sb:authors">
         <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="sb:et-al">
+        <author role="et-al"/>
     </xsl:template>
 
     <xsl:template match="sb:author | refau">

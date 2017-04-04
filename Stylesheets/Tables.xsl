@@ -132,6 +132,7 @@
     <xsl:template match="wiley:chemicalStructure">
                 <xsl:apply-templates/>
     </xsl:template>
+    
     <xsl:template match="array">
         <ab type="array">
             <table>

@@ -9,7 +9,7 @@
     
     <xsl:include href="ElsevierFormula.xsl"/>
 
-    <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info]">
+    <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info] | converted-article[item-info]">
         <TEI>
             <xsl:if test="@xml:lang">
                 <xsl:copy-of select="@xml:lang"/>
@@ -152,7 +152,7 @@
 		</abstract>
     </xsl:template-->
 
-    <xsl:template match="els:display | ce:display">
+    <xsl:template match="els:display | ce:display | display">
         <xsl:apply-templates/>
     </xsl:template>
 
@@ -322,7 +322,7 @@
             <xsl:apply-templates/>
         </meeting>
     </xsl:template>
-
+    
     <xsl:template match="ce:author">
         <author>
             <xsl:variable name="structId" select="ce:cross-ref/@refid"/>
@@ -408,13 +408,6 @@
             <!--xsl:apply-templates select="ce:cross-ref"/-->
 
         </author>
-    </xsl:template>
-
-    <xsl:template match="ce:suffix">
-        <!-- this is the suffix in a title name, e.g. jr for junior -->
-        <suffix>
-            <xsl:value-of select="text()"/>
-        </suffix>
     </xsl:template>
 
     <xsl:template match="ce:affiliation">
