@@ -55,7 +55,7 @@
             </forename>
         </xsl:if>
     </xsl:template>
-
+    
     <xsl:template match="last_name | LastName | ce:surname | FamilyName | ln | surname | corresponding-author-lastname | surname | snm | wiley:familyName">
         <xsl:if test=". != ''">
             <surname>
