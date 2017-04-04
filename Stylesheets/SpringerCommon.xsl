@@ -159,7 +159,7 @@
     <xsl:template match="AuthorGroup/Author | AuthorGroup/InstitutionalAuthor">
         <author>
             <xsl:if test="@corresp='yes' or @CorrespondingAffiliationID">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>
@@ -494,7 +494,7 @@
 
 
     <!-- Copyright related information to appear in <publicationStmt> -->
-    <xsl:template match="ArticleCopyright">
+    <xsl:template match="ArticleCopyright | ChapterCopyright">
         <xsl:apply-templates/>
     </xsl:template>
 
@@ -584,6 +584,10 @@
     </xsl:template>
 
     <xsl:template match="Stack">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="VolumeInfo">
         <xsl:apply-templates/>
     </xsl:template>
 

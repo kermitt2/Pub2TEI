@@ -265,11 +265,13 @@
         </xsl:if>
     </xsl:template>
 
+    <!-- Springer -->
     <xsl:template match="OrgAddress">
-        <!-- Springer -->
-        <address>
-            <xsl:apply-templates/>
-        </address>
+        <xsl:if test="normalize-space()">
+            <address>
+                <xsl:apply-templates/>
+            </address>
+        </xsl:if>
     </xsl:template>
 
     <!-- Rule for email, phone, fax -->

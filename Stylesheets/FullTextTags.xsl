@@ -314,7 +314,8 @@
 
     <!-- Specific rile for Elsevier inline pathematical objects -->
 
-    <xsl:template match="els:math">
+    <!-- 2017-04-03: Vérifier le traitement des éléments de XMLLatex -->
+    <xsl:template match="els:math | math">
         <formula notation="XMLLatex">
             <xsl:copy exclude-result-prefixes="#all">
                 <xsl:apply-templates/>
@@ -537,6 +538,17 @@
             </xsl:attribute>
         </ref>
     </xsl:template>
+    
+    <xsl:template match="ancref">
+        <ref type="anchor" target="{concat('#',@rid)}">
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
+    
+    <xsl:template match="anchor">
+        <anchor xml:id="{@id}"/>
+    </xsl:template>
+    
     
     <!-- Elsevier pointers -->
     

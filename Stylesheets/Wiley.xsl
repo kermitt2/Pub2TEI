@@ -439,7 +439,7 @@
                             <xsl:value-of select="@noteRef"/>
                         </xsl:attribute>
                     </xsl:if>-->
-                    <xsl:apply-templates/>
+                    <xsl:apply-templates select="* except email"/>
                     <xsl:if test="//affiliationGroup">
                         <xsl:call-template name="affiliation"/>
                     </xsl:if>

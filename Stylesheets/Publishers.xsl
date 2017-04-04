@@ -43,7 +43,7 @@
             <xsl:when test="article[front]">
                 <xsl:message>Converting an NLM 2.2 article</xsl:message>
             </xsl:when>
-            <xsl:when test="els:article[els:item-info] | els:converted-article[els:item-info]">
+            <xsl:when test="els:article[els:item-info] | els:converted-article[els:item-info] | converted-article[item-info]">
                 <xsl:message>Converting an Elsevier article</xsl:message>
             </xsl:when>
             <xsl:when test="nihms-submit">

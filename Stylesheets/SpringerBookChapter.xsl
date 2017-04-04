@@ -83,6 +83,8 @@
                 <xsl:apply-templates
                     select="Book/descendant::Chapter/ChapterHeader//AuthorGroup/InstitutionalAuthor"/><!-- Title information related to the chapter goes here -->
                 <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterTitle"/>
+                <xsl:apply-templates select="Volume/Issue/Article/@ID"/>
+                <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterDOI"/>
             </analytic>
             <monogr>
                 <xsl:apply-templates select="Book//BookHeader/AuthorGroup/Author"/>
@@ -116,18 +118,7 @@
                 <xsl:apply-templates select="SeriesInfo/SeriesID"/>
             </series>
 
-
-
-            <xsl:apply-templates select="Volume/Issue/Article/@ID"/>
-            <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterDOI"/>
-
-
-
         </biblStruct>
-    </xsl:template>
-
-    <xsl:template match="VolumeInfo">
-        <xsl:apply-templates/>
     </xsl:template>
 
 </xsl:stylesheet>

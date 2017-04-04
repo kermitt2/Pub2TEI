@@ -183,9 +183,5 @@
 
         </biblStruct>
     </xsl:template>
-    
-    <xsl:template match="VolumeInfo">
-        <xsl:apply-templates/>
-    </xsl:template>
 
 </xsl:stylesheet>
