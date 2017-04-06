@@ -124,7 +124,7 @@
     </xsl:template>
 
     <xsl:template match="JournalID">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <idno type="JournalID">
                 <xsl:apply-templates/>
             </idno>
@@ -132,7 +132,7 @@
     </xsl:template>
 
     <xsl:template match="ArticleInfo/ArticleID">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <idno type="ArticleID">
                 <xsl:apply-templates/>
             </idno>

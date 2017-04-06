@@ -22,7 +22,7 @@
 
     <xsl:template
         match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="a" type="main">
                 <!--xsl:choose>
                     <xsl:when test="wiley:citation[@type='book']"></xsl:when>
@@ -53,7 +53,7 @@
     </xsl:template>
     <!-- BMJ: short-title -->
     <xsl:template match="short-title">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="a" type="short">
                 <xsl:if test="@Language">
                     <xsl:attribute name="xml:lang">
@@ -68,7 +68,7 @@
     </xsl:template>
 
     <xsl:template match="subtitle | article_sub_title">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="a" type="sub">
                 <xsl:apply-templates/>
             </title>
@@ -76,7 +76,7 @@
     </xsl:template>
 
     <xsl:template match="vernacular_title">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="a" type="vernacular">
                 <xsl:apply-templates/>
             </title>
@@ -110,14 +110,14 @@
     <!-- Elsevier: els:jid, ce:issn -->
 
     <xsl:template match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl | wiley:journalTitle">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="j" type="main">
                 <xsl:apply-templates/>
             </title>
         </xsl:if>
     </xsl:template>
     <xsl:template match="suppttl">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="j" type="sub">
                 <xsl:apply-templates/>
             </title>
@@ -127,7 +127,7 @@
     <!-- SG - ajout des refs book -->
     <xsl:template
         match="wiley:bookTitle">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="m" type="main">
                 <xsl:apply-templates/>
             </title>
@@ -137,7 +137,7 @@
     <!-- SG - ajout des refs series -->
     <xsl:template
         match="wiley:bookSeriesTitle">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="s" type="main">
                 <xsl:apply-templates/>
             </title>
@@ -145,7 +145,7 @@
     </xsl:template>
     
     <xsl:template match="btl">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="m" type="main">
                 <xsl:apply-templates/>
             </title>
@@ -156,7 +156,7 @@
 
     <xsl:template
         match="journal_abbreviation | abbrev-journal-title | els:jid | jid | JournalShortTitle | j-shorttitle">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="j" type="abbrev">
                 <xsl:value-of select="normalize-space()"/>
             </title>
@@ -164,7 +164,7 @@
     </xsl:template>
 
     <xsl:template match="pubmed_abbreviation">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="j" type="pubmed">
                 <xsl:value-of select="normalize-space()"/>
             </title>
@@ -172,7 +172,7 @@
     </xsl:template>
 
     <xsl:template match="journal-id">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="j" type="{@journal-id-type}">
                 <xsl:apply-templates/>
             </title>
@@ -180,7 +180,7 @@
     </xsl:template>
 
     <xsl:template match="j-edpsname | JournalEDPSName">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="j" type="EDPSName">
                 <xsl:apply-templates/>
             </title>
@@ -189,7 +189,7 @@
 
     <!-- Issue titles -->
     <xsl:template match="issue_description | issue-title | IssueTitle">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <title level="j" type="issue">
                 <xsl:apply-templates/>
             </title>
@@ -204,7 +204,7 @@
     <!-- Rem.: @pub-typr not considered -->
 
     <xsl:template match="Issn | ISSN | issn | ce:issn">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
             </xsl:variable>
@@ -221,7 +221,7 @@
 
     <xsl:template
         match="JournalPrintISSN | issn[@issn_type='print'] | issn[@pub-type='ppub'] | PrintISSN | issn-paper | SeriesPrintISSN | issn[@type='print'] | wiley:issn[@type='print'] ">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
             </xsl:variable>
@@ -239,7 +239,7 @@
 
     <xsl:template
         match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN | issn[@type='electronic'] | wiley:issn[@type='electronic']">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <xsl:variable name="ISSNCode">
                 <xsl:value-of select="."/>
             </xsl:variable>
@@ -257,7 +257,7 @@
 
     <!-- SG - ajout DOI niveau book - pour matcher avec les reversement du Hub de métadonnées-->
     <xsl:template match="wiley:publicationMeta[@level='product']/wiley:doi">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <xsl:variable name="DOIValue" select="string(.)"/>
             <idno type="book-DOI">
                 <xsl:choose>
@@ -279,7 +279,7 @@
 
     <xsl:template
         match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI | wiley:publicationMeta[@level='unit']/wiley:doi">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <xsl:variable name="DOIValue" select="string(.)"/>
             <idno type="DOI">
                 <xsl:choose>
@@ -307,7 +307,7 @@
 
     <xsl:template
         match="ce:pii | article_id[@id_type='pii'] | article-id[@pub-id-type='pii'] | ArticleId[@IdType='pii']">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <idno type="PII">
                 <xsl:value-of select="."/>
             </idno>
@@ -323,7 +323,7 @@
     <!-- BMJ: manuscript-number; Springer: ArticleID -->
 
     <xsl:template match="manuscript-number | @ms_no | ArticleID ">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <idno type="manuscript">
                 <xsl:value-of select="."/>
             </idno>
@@ -352,7 +352,7 @@
     <!-- Elements for Imprint components in Elsevier () -->
     
     <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume'] | wiley:vol">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <biblScope unit="vol">
                 <xsl:apply-templates/>
             </biblScope>
@@ -362,7 +362,7 @@
     <!-- 2 special rules for Springer that provides, beginning and end volume number -->
 
     <xsl:template match="VolumeIDStart">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <biblScope unit="vol" from="{.}">
                 <xsl:apply-templates/>
             </biblScope>
@@ -370,7 +370,7 @@
     </xsl:template>
 
     <xsl:template match="VolumeIDEnd">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <biblScope unit="vol" to="{.}">
                 <xsl:apply-templates/>
             </biblScope>
@@ -384,7 +384,7 @@
     </xsl:template>
 
     <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue']">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <biblScope unit="issue">
                 <xsl:apply-templates/>
             </biblScope>
@@ -394,7 +394,7 @@
     <!-- 2 special rules for Springer that provides, beginning and end volume number -->
 
     <xsl:template match="IssueIDStart">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <biblScope unit="issue" from="{.}">
                 <xsl:apply-templates/>
             </biblScope>
@@ -402,7 +402,7 @@
     </xsl:template>
 
     <xsl:template match="IssueIDEnd">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <biblScope unit="issue" to="{.}">
                 <xsl:apply-templates/>
             </biblScope>
@@ -421,7 +421,7 @@
     <!-- Pagination -->
 
     <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst'] | wiley:pageFirst">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <biblScope unit="page" from="{.}">
                 <xsl:apply-templates/>
             </biblScope>
@@ -430,7 +430,7 @@
 
 <!-- SG: nettoyage caractéres polluants dans les données -->
     <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast'] | wiley:pageLast">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <biblScope unit="page" to="{translate(.,'.','')}">
                 <xsl:value-of select="translate(.,'.','')"/>
             </biblScope>
@@ -456,7 +456,7 @@
 
     <xsl:template
         match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher'] | wiley:publisherName">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <publisher>
                 <xsl:apply-templates/>
             </publisher>
@@ -464,7 +464,7 @@
     </xsl:template>
 
     <xsl:template match="publisher-loc | pub_location | PublisherLocation | wiley:publisherLoc">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <pubPlace>
                 <xsl:apply-templates/>
             </pubPlace>

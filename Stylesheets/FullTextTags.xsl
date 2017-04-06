@@ -564,21 +564,21 @@
 
     <xsl:template
         match="i | it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i">
-        <xsl:if test=".!=''"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="normalize-space()"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b | b">
-        <xsl:if test=".!=''"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="normalize-space()"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="Emphasis[@Type='SmallCaps'] | ce:small-caps | sc | scp | wiley:sc">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <hi rend="smallCaps"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 
     <xsl:template match="Emphasis | emph">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <hi>
                 <xsl:choose>
                     <xsl:when test="@Type">
@@ -608,15 +608,15 @@
     </xsl:template>
 
     <xsl:template match="inf|Subscript | sub | ce:inf | wiley:sub">
-        <xsl:if test=".!=''"><hi rend="subscript"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="normalize-space()"><hi rend="subscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="Superscript | sup | ce:sup | super | wiley:sup">
-        <xsl:if test=".!=''"><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="normalize-space()"><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="underline | ce:underline">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <hi rend="underline"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
@@ -625,22 +625,22 @@
         <lb/>
     </xsl:template>
     <xsl:template match="wiley:fc">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <hi rend="fc"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:fr">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <hi rend="fr"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:fi">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <hi rend="fi"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:span">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <span><xsl:apply-templates/></span>
         </xsl:if>
     </xsl:template>

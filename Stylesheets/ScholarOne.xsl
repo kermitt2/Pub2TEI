@@ -243,7 +243,7 @@
     </xsl:template>
 
     <xsl:template match="comments">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space()">
             <note>
                 <xsl:apply-templates/>
             </note>

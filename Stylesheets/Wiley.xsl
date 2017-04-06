@@ -270,11 +270,11 @@
     </xsl:template>
     
     <xsl:template match="abstractGroup/abstract/p/i">
-        <xsl:if test=".!=''"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="normalize-space()"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
     
     <xsl:template match="abstractGroup/abstract/p/bold">
-        <xsl:if test=".!=''"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="normalize-space()"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
   
 
