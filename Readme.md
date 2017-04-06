@@ -38,5 +38,5 @@ Pub2TEI is distributed under [BSD 2-clause](https://opensource.org/licenses/BSD-
 
 authors: 
 * __Laurent Romary__, Laurent.Romary@inria.fr
-* __Stephanie Greogorio__, stef.gregorio@gmail.com
+* __Stephanie Gregorio__, stephanie.gregorio@inist.fr
 * __Patrice Lopez__, patrice.lopez@science-miner.com
