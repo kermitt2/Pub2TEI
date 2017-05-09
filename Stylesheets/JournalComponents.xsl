@@ -163,7 +163,7 @@
     </xsl:template>
 
     <xsl:template match="pubmed_abbreviation">
-        <xsl:if test="normalize-space()">
+        <xsl:if test="normalize-space(.)">
             <title level="j" type="pubmed">
                 <xsl:value-of select="normalize-space()"/>
             </title>

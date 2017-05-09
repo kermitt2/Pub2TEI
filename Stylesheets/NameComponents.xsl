@@ -25,7 +25,7 @@
     <!-- Sage: ln, per_aut/fn, mn, suffix, role (fn ambigue avec footnote) -->
     <!-- BMJ: corresponding-author-firstname, corresponding-author-lastname, corresponding-author-middlename -->
     <xsl:template match="wiley:honorifics">
-        <xsl:if test=". != ''">
+        <xsl:if test="normalize-space(.)">
             <addName>
                 <xsl:apply-templates/>
             </addName>
@@ -33,7 +33,7 @@
     </xsl:template>
     
     <xsl:template match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | corresponding-author-firstname | fname | fnm | wiley:givenNames">
-        <xsl:if test=". != ''">
+        <xsl:if test="normalize-space(.)">
             <forename type="first">
                 <xsl:apply-templates/>
             </forename>
@@ -41,7 +41,7 @@
     </xsl:template> 
     
     <xsl:template match="middle_name | MiddleName | mn | corresponding-author-middlename">
-        <xsl:if test=". != ''">
+        <xsl:if test="normalize-space(.)">
             <forename type="middle">
                 <xsl:apply-templates/>
             </forename>
@@ -49,15 +49,15 @@
     </xsl:template>
 
     <xsl:template match="Initials | inits">
-        <xsl:if test=". != ''">
+        <xsl:if test="normalize-space(.)">
             <forename full="init">
                 <xsl:apply-templates/>
             </forename>
         </xsl:if>
     </xsl:template>
-    
-    <xsl:template match="last_name | LastName | ce:surname | FamilyName | ln | surname | corresponding-author-lastname | surname | snm | wiley:familyName">
-        <xsl:if test=". != ''">
+    <xsl:template
+        match="last_name | LastName | ce:surname | FamilyName | ln | surname | corresponding-author-lastname | surname | snm | wiley:familyName">
+        <xsl:if test="normalize-space(.)">
             <surname>
                 <xsl:apply-templates/>
             </surname>
@@ -65,7 +65,7 @@
     </xsl:template>
 
     <xsl:template match="InstitutionalAuthorName" mode="simple">
-        <xsl:if test=". != ''">
+        <xsl:if test="normalize-space(.)">
             <orgName type="institution">
                 <xsl:apply-templates/>
             </orgName>
@@ -73,7 +73,7 @@
     </xsl:template>
 
     <xsl:template match="InstitutionalAuthorName">
-        <xsl:if test=". != ''">
+        <xsl:if test="normalize-space(.)">
             <orgName type="institution">
                 <xsl:apply-templates/>
             </orgName>
@@ -86,7 +86,7 @@
     </xsl:template>
 
     <xsl:template match="salutation">
-        <xsl:if test=". != ''">
+        <xsl:if test="normalize-space(.)">
             <roleName type="salutation">
                 <xsl:apply-templates/>
             </roleName>
@@ -99,16 +99,15 @@
             </roleName>
         </xsl:if>
     </xsl:template>
-
-    <xsl:template match="Particle | wiley:familyNamePrefix">
-        <xsl:if test=". != ''">
+    <xsl:template match="Particle">
+        <xsl:if test="normalize-space(.)">
             <nameLink>
                 <xsl:apply-templates/>
             </nameLink>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="suffix | Suffix | suff | wiley:nameSuffix | ce:suffix">
-        <xsl:if test="normalize-space()">
+    <xsl:template match="suffix | Suffix | suff | wiley:nameSuffix">
+        <xsl:if test="normalize-space(.)">
             <genName>
                 <xsl:apply-templates/>
             </genName>

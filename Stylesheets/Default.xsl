@@ -16,8 +16,7 @@
                 <xsl:for-each select="attribute::*">
                 <xsl:value-of select="name(.)"/>="<xsl:value-of select="."/>" </xsl:for-each>
         </xsl:message>
-        <!-- SG - récupération des attributs -->
-        <!--xsl:if test="normalize-space()">
+        <!--xsl:if test="normalize-space(.)">
             <xsl:element name="{name(.)}">
                 <xsl:apply-templates select="@*"/>
                 <xsl:apply-templates/>

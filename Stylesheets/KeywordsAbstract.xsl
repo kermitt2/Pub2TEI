@@ -85,20 +85,28 @@
     <!--  Elsevier:  -->
     <!-- PL: removed, Elsevier abstracts are processed in Elsevier.xsl -->
     <!-- Springer: Abstract, Heading, Para -->
-
-    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm"><xsl:if test=". != ''">
-            <abstract>
-                <!-- PL: indicate the type in case of executive summary or web summary (Nature) -->
-                <xsl:if test="name() = 'execsumm'">
-                    <xsl:attribute name="type">
-                        <xsl:text>executive-summary</xsl:text>
-                    </xsl:attribute>
-                </xsl:if>
-                <xsl:if test="name() = 'websumm'">
-                    <xsl:attribute name="type">
-                        <xsl:text>web-summary</xsl:text>
-                    </xsl:attribute>
-                </xsl:if> 
+	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
+    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm">
+        <xsl:if test="normalize-space(.)">
+			<abstract>
+				<!-- PL: indicate the type in case of executive summary or web summary (Nature) -->
+				<!-- SG: pas encore validé par la TEI technicalBoard, je propose de mettre le type dans un titre -->
+			    <xsl:if test="name() = 'execsumm'">
+					<!--<xsl:attribute name="type">
+						<xsl:text>executive-summary</xsl:text>
+					</xsl:attribute>-->
+			        <p>
+			            <title>Executive-summary</title>
+			        </p>
+				</xsl:if> 
+				<xsl:if test="name() = 'websumm'">
+					<!--<xsl:attribute name="type">
+						<xsl:text>web-summary</xsl:text>
+					</xsl:attribute>-->
+				    <p>
+				        <title>Web-summary</title>
+				    </p>
+				</xsl:if>
 	            <xsl:variable name="theLanguage">
 	                <xsl:choose>
 	                    <xsl:when test="@Language">
@@ -106,8 +114,8 @@
 	                    </xsl:when>
 	                    <xsl:when test="@xml:lang">
 							<xsl:if test="@xml:lang">
-								<xsl:if test="@xml:lang != ''">
-									<xsl:value-of select="@xml:lang"/>
+							    <xsl:if test="normalize-space(@xml:lang)">
+							        <xsl:value-of select="normalize-space(@xml:lang)"/>
 								</xsl:if>
 							</xsl:if>	
 	                    </xsl:when>
@@ -141,7 +149,7 @@
 
 
     <!--xsl:template match="abstract | Abstract">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space(.)">
             <div type="abstract">
                 <xsl:variable name="theLanguage">
                     <xsl:choose>
