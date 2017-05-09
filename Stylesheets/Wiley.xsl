@@ -154,7 +154,8 @@
                     </sourceDesc>
                 </fileDesc>
                 <!-- SG - ajout du codeGenre article -->
-                <xsl:if test="header/publicationMeta[@level='unit']/@type">
+               <!-- revoir code genre niveau host -->
+                <!-- <xsl:if test="header/publicationMeta[@level='unit']/@type">
                     <encodingDesc>
                         <classDecl>
                             <taxonomy>
@@ -167,7 +168,7 @@
                             </taxonomy>
                         </classDecl>
                     </encodingDesc>
-                </xsl:if>
+                </xsl:if>-->
                 <xsl:if test="header/contentMeta/abstractGroup | header/contentMeta/keywordGroup">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
