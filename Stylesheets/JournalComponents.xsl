@@ -294,7 +294,10 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:publicationMeta[@level='unit']/wiley:idGroup/wiley:id">
-            <idno type="article-ID">
+            <idno>
+                <xsl:attribute name="type">
+                    <xsl:apply-templates select="@type"/>
+                </xsl:attribute>
                 <xsl:apply-templates select="@value"/>
             </idno>
     </xsl:template>
@@ -421,7 +424,7 @@
     <!-- Pagination -->
 
     <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst'] | wiley:pageFirst">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
             <biblScope unit="page" from="{normalize-space(.)}">
                 <xsl:value-of select="normalize-space(.)"/>
             </biblScope>
@@ -430,7 +433,7 @@
 
 <!-- SG: nettoyage caractéres polluants dans les données -->
     <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast'] | wiley:pageLast">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
             <biblScope unit="page" to="{translate(.,'normalize-space(.)','')}">
                 <xsl:value-of select="translate(.,'normalize-space(.)','')"/>
             </biblScope>
@@ -498,8 +501,4 @@
         </date>
     </xsl:template>
 	
-	<xsl:template match="wiley:titleGroup/wiley:title">
-		<xsl:apply-templates/>
-	</xsl:template>
-
 </xsl:stylesheet>

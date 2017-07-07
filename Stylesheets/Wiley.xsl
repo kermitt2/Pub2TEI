@@ -4,13 +4,16 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xpath-default-namespace="http://www.wiley.com/namespaces/wiley"
 	exclude-result-prefixes="#all">
-
     <xsl:output encoding="UTF-8" method="xml"/>
+    <xsl:param name="idistex"/>
+    <xsl:param name="arkistex"/>
+    <!-- code genre -->
     <xsl:variable name="codeGenre1">
         <xsl:value-of select="//component/header/publicationMeta[@level='unit']/@type"/>
     </xsl:variable>
-    <xsl:variable name="codeGenre">
+    <xsl:variable name="codeGenreA">
         <xsl:choose>
+            <xsl:when test="normalize-space($codeGenre1)='technicalNote'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='article'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='reviewArticle'">review-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='editorial'">editorial</xsl:when>
@@ -32,61 +35,111 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
+    <!-- lien vers data.istex.fr -->
+    <xsl:variable name="codeGenreArkA">
+        <xsl:choose>
+            <xsl:when test="normalize-space($codeGenreA)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='other'">https://content-type.data.istex.fr/ark:/67375/XTP-7474895G-0</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='book-reviews'">https://content-type.data.istex.fr/ark:/67375/XTP-PBH5VBM9-4</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='abstract'">https://content-type.data.istex.fr/ark:/67375/XTP-HPN7T1Q2-R</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='review-article'">https://content-type.data.istex.fr/ark:/67375/XTP-L5L7X3NF-P</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='brief-communication'">https://content-type.data.istex.fr/ark:/67375/XTP-S9SX2MFS-0</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='editorial'">https://content-type.data.istex.fr/ark:/67375/XTP-STW636XV-K</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='case-report'">https://content-type.data.istex.fr/ark:/67375/XTP-29919SZJ-6</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='conference'">https://content-type.data.istex.fr/ark:/67375/XTP-BFHXPBJJ-3</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
+            <xsl:when test="normalize-space($codeGenreA)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
+        </xsl:choose>
+    </xsl:variable>
+    <!-- codeLangue -->
+    <xsl:variable name="codeLangue">
+        <xsl:choose>
+            <xsl:when test="component/header/publicationMeta/issn[@type='print']='0378-5599'">
+                <xsl:text>fr</xsl:text>
+            </xsl:when>
+            <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1002/(SICI)1099-0682(199809)1998:9&lt;1205::AID-EJIC1205&gt;3.0.CO;2-F' or //component/header/publicationMeta[@level='unit']/doi='10.1002/(SICI)1521-3897(199910)341:7&lt;657::AID-PRAC657&gt;3.0.CO;2-P'or //component/header/publicationMeta[@level='unit']/doi='10.1002/(SICI)1521-3897(199908)341:6&lt;568::AID-PRAC568&gt;3.0.CO;2-H'">
+                <xsl:text>en</xsl:text>
+            </xsl:when>
+            <!-- correction ouzbeck 10.1002/asna.2103030307 -->
+            <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1550-7408.1980.tb04229.x' or //component/header/publicationMeta[@level='unit']/doi='10.1111/j.1365-3180.1990.tb01689.x'or //component/header/publicationMeta[@level='unit']/doi='10.1002/asna.2103030307'or //component/header/publicationMeta[@level='unit']/doi='10.1002/asna.2103030305'">
+                <xsl:text>de</xsl:text>
+            </xsl:when>
+            <!-- correction arabe 10.1002/1522-239X(200210)113:5/6&lt;342::AID-FEDR342&gt;3.0.CO;2-S -->
+            <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1002/1522-239X(200210)113:5/6&lt;342::AID-FEDR342&gt;3.0.CO;2-S'">
+                <xsl:text>es</xsl:text>
+            </xsl:when>
+            <xsl:when test="@xml:lang and component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00477.x' ">
+                <xsl:text>de</xsl:text>
+            </xsl:when>
+            <xsl:when test="@xml:lang and component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00484.x'">
+                <xsl:text>es</xsl:text>
+            </xsl:when>
+            <xsl:when test="@xml:lang and component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2007.00453.x'">
+                <xsl:text>it</xsl:text>
+            </xsl:when>
+            <xsl:when test="@xml:lang and component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00459.x'">
+                <xsl:text>fr</xsl:text>
+            </xsl:when>
+            <xsl:when test="@xml:lang ='be'">
+                <xsl:text>nl</xsl:text>
+            </xsl:when>
+            <xsl:when test="@xml:lang='ka'">
+                <xsl:choose>
+                    <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00489.x'">
+                        <xsl:text>it</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>de</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="component/header/contentMeta/titleGroup/title[@type='main']/@xml:lang">
+                        <xsl:value-of select="component/header/contentMeta/titleGroup/title[@type='main']/@xml:lang"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="translate(component/@xml:lang,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="corrTitre">
+        <xsl:choose>
+            <xsl:when test="//header/publicationMeta[@level='unit']/doi='10.1046/j.1523-1739.1997.0110051265.x'">
+                <xsl:text>Erratum: Diploid expected heterozygosity and haploid allelic diversity equations misprinted</xsl:text>
+            </xsl:when>
+            <xsl:when test="//header/publicationMeta[@level='unit']/doi='10.1002/(SICI)1521-401X(199809)26:5&lt;253::AID-AHEH253&gt;3.0.CO;2-S'">
+                <xsl:text>Vertical and Annual Distribution of Ferric and Ferrous Iron in Acid Mining Lakes</xsl:text> 
+            </xsl:when>
+            <xsl:when test="//header/publicationMeta[@level='unit']/doi='10.1002/(SICI)1521-4133(199811)100:11&lt;513::AID-LIPI513&gt;3.0.CO;2-I'">
+                <xsl:text>Die Bleichung von Speisefetten und Ölen V Aus dem Arbeitskreis "Technologien der industriellen"</xsl:text> 
+            </xsl:when>
+            <xsl:when test="//publicationMeta[@level='unit']/doi='10.1111/insr.12044'">
+                <xsl:text>Table of contents</xsl:text> 
+            </xsl:when>
+            <xsl:when test="//header/publicationMeta[@level='unit']/doi='10.1002/sres.2200'">
+                <xsl:text>Editorial</xsl:text> 
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='main'])"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="component">
         <xsl:message>Wiley.xsl</xsl:message>
         <TEI>
-            <xsl:choose>
-                <xsl:when test="body/section[@xml:lang]">
-                    <xsl:attribute name="xml:lang">
-                        <xsl:value-of select="body/section[1]/@xml:lang"/>
-                    </xsl:attribute>
-                </xsl:when>
-                <!-- SG ajout langue si non contenu dans le body aller la chercher dans la racine -->
-                <xsl:otherwise>
-                    <xsl:if test="@xml:lang">
-                        <xsl:attribute name="xml:lang">
-                            <xsl:value-of select="@xml:lang"/>
-                        </xsl:attribute>
-                    </xsl:if>
-                </xsl:otherwise>
-            </xsl:choose>
+            <!-- correction des codes langues suivant les données -->
+            <xsl:attribute name="xml:lang">
+                <xsl:value-of select="$codeLangue"/>
+            </xsl:attribute>
             <!-- Genre     -->
-            <xsl:variable name="codeGenre1">
-                <xsl:value-of select="header/publicationMeta[@level='unit']/@type"/>
-            </xsl:variable>
-            <xsl:variable name="codeGenre">
-                <xsl:choose>
-                    <xsl:when test="normalize-space($codeGenre1)='technicalNote'">article</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='article'">article</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='reviewArticle'">review-article</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='editorial'">editorial</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='bookReview'">book-reviews</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='shortCommunication'">brief-communication</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='shortArticle'">article</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='rapidCommunication'">brief-communication</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='caseStudy'">case-report</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='abstract'">abstract</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='letter'">review-article</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='news'">article</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='commentary'">article</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='meetingReport'">conference</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='rapidPublication'">brief-communication</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='serialArticle'">article</xsl:when>
-                    <xsl:when test="normalize-space($codeGenre1)='miscellaneous'">
-                        <xsl:choose>
-                            <xsl:when test="//abstract[string-length() &gt; 0]">article</xsl:when>
-                            <xsl:otherwise>other</xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>other</xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:variable>
             <xsl:if test="header/publicationMeta[@level='unit']/@type[string-length()&gt; 0]">
                 <xsl:attribute name="type">
-                    <xsl:value-of select="normalize-space($codeGenre)"/>
+                    <xsl:value-of select="normalize-space($codeGenreA)"/>
                 </xsl:attribute>
             </xsl:if>
             <teiHeader>
@@ -94,7 +147,11 @@
                     <!-- SG - titre brut -->
                     <titleStmt>
 						<title level="a" type="main">
-                        	<xsl:value-of select="header/contentMeta/titleGroup/title[@type='main']"/>
+						    <xsl:attribute name="xml:lang">
+						        <xsl:value-of select="$codeLangue"/>
+						    </xsl:attribute>
+						    <!-- redressement des titres vides -->
+						    <xsl:value-of select="$corrTitre"/>
 						</title>
                     </titleStmt>
                     <!-- SG - ajout <enrichedObject> -->
@@ -149,26 +206,50 @@
 							</date>
 						</xsl:if>
                     </publicationStmt>
+                    <!-- SG - ajout du codeGenre article et revue -->
+                    <notesStmt>
+                        <!-- niveau article / chapter -->
+                        <note n="1">
+                            <xsl:attribute name="type">
+                                <xsl:value-of select="$codeGenreA"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="ana">
+                                <xsl:value-of select="$codeGenre1"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="scheme">
+                                <xsl:value-of select="$codeGenreArkA"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="$codeGenreA"/>
+                        </note>
+                        <!-- niveau revue / book -->
+                        <xsl:choose>
+                            <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
+                                <note n="2"><xsl:attribute name="type">book-series</xsl:attribute>
+                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <xsl:text>book-series</xsl:text>
+                                </note>
+                            </xsl:when>
+                            <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
+                                <note n="2">
+                                    <xsl:attribute name="type">book</xsl:attribute>
+                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <xsl:text>book</xsl:text>
+                                </note>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <note n="2">
+                                    <xsl:attribute name="type">journal</xsl:attribute><xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
+                                    <xsl:text>journal</xsl:text>
+                                </note>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </notesStmt>
                     <sourceDesc>
                         <xsl:apply-templates select="header" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
-                <!-- SG - ajout du codeGenre article -->
-               <!-- revoir code genre niveau host -->
-                <!-- <xsl:if test="header/publicationMeta[@level='unit']/@type">
-                    <encodingDesc>
-                        <classDecl>
-                            <taxonomy>
-                                <category>
-                                    <catDesc>componentType</catDesc>
-                                    <category>
-                                        <catDesc><xsl:value-of select="$codeGenre"/></catDesc>
-                                    </category>
-                                </category>
-                            </taxonomy>
-                        </classDecl>
-                    </encodingDesc>
-                </xsl:if>-->
+                
+               
                 <xsl:if test="header/contentMeta/abstractGroup | header/contentMeta/keywordGroup">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
@@ -177,7 +258,7 @@
                             <xsl:for-each select="header/contentMeta/abstractGroup/abstract">
                             <abstract>
 							    <!--SG - ajout langue -->
-							    <xsl:if test="@xml:lang !=''">
+							    <xsl:if test="normalize-space(@xml:lang)">
 							        <xsl:copy-of select="@xml:lang"/>
 							    </xsl:if>
                                 <xsl:if test="@type !='main'">
@@ -185,7 +266,7 @@
                                         <xsl:apply-templates select="@type"/>
                                     </xsl:attribute>
                                 </xsl:if>
-                                <xsl:if test="@xml:id !=''">
+                                <xsl:if test="normalize-space(@xml:id)">
                                     <xsl:copy-of select="@xml:id"/>
                                 </xsl:if>
                                 <xsl:apply-templates/>
@@ -197,7 +278,7 @@
 							<textClass>
 								<keywords>
 								    <!--SG - ajout langue -->
-								    <xsl:if test="header/contentMeta/keywordGroup/@xml:lang !=''">
+								    <xsl:if test="normalize-space(header/contentMeta/keywordGroup/@xml:lang)">
 								        <xsl:copy-of select="header/contentMeta/keywordGroup/@xml:lang"/>
 								    </xsl:if>
 									<xsl:for-each select="header/contentMeta/keywordGroup/keyword">
@@ -318,12 +399,24 @@
 				<xsl:if test="contentMeta/creators">
 					<xsl:apply-templates select="contentMeta/creators"/>
 				</xsl:if>
+                
+                <!-- ajout identifiants ISTEX et ARK -->
+                <xsl:if test="string-length($idistex) &gt; 0 ">
+                    <idno type="istex">
+                        <xsl:value-of select="$idistex"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="string-length($arkistex) &gt; 0 ">
+                    <idno type="ark">
+                        <xsl:value-of select="$arkistex"/>
+                    </idno>
+                </xsl:if>
                 <xsl:apply-templates select="publicationMeta[@level='unit']/doi"/>
                 <xsl:apply-templates select="publicationMeta[@level='unit']/idGroup/id"/>
             </analytic>
             <monogr>
 				<title level="j" type="main">
-					<xsl:apply-templates select="publicationMeta[@level='product']/titleGroup/title"/>
+					<xsl:value-of select="publicationMeta[@level='product']/titleGroup/title"/>
 				</title>
                 <!-- SG ajout titre alternatif -->
                 <xsl:if test="publicationMeta[@level='product']/titleGroup/title/@sort !=''">
@@ -365,12 +458,22 @@
 	<xsl:template match="titleGroup"> 
 		<title level= "a" type="main">
 		    <!-- SG : ajout de la langue du titre -->
-		    <xsl:if test="title[@type='main']/@xml:lang">
-		        <xsl:attribute name="xml:lang">
-		            <xsl:value-of select="title[@type='main']/@xml:lang"/>
-		        </xsl:attribute>
-		    </xsl:if>
-        	<xsl:apply-templates select="title[@type='main']"/>
+		    <xsl:choose>
+		        <xsl:when test="$codeLangue">
+		            <xsl:attribute name="xml:lang">
+		                <xsl:value-of select="$codeLangue"/>
+		            </xsl:attribute>
+		        </xsl:when>
+		        <xsl:otherwise>
+		            <xsl:if test="title[@type='main']/@xml:lang">
+		                <xsl:attribute name="xml:lang">
+		                    <xsl:value-of select="title[@type='main']/@xml:lang"/>
+		                </xsl:attribute>
+		            </xsl:if>
+		        </xsl:otherwise>
+		    </xsl:choose>
+		    <!-- redressement des titres vides -->
+		    <xsl:value-of select="$corrTitre"/>
 		</title>
 	    <!-- SG - ajout conditionnel -->
 	    <xsl:if test="title[@type='short']">
@@ -381,7 +484,7 @@
 	                    <xsl:value-of select="title[@type='short']/@xml:lang"/>
 	                </xsl:attribute>
 	            </xsl:if>
-	            <xsl:apply-templates select="title[@type='short']"/>
+	            <xsl:value-of select="title[@type='short']"/>
 	        </title>
 	    </xsl:if>
 	</xsl:template>
