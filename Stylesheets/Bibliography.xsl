@@ -14,7 +14,7 @@
         <div type="references">
             <xsl:apply-templates select="title | ce:section-title"/>
             <listBibl>
-                <xsl:for-each select="wiley:bib">
+               <!-- <xsl:for-each select="wiley:bib">
                 <bibl>
                     <xsl:attribute name="xml:id">
                         <xsl:value-of select="@xml:id"/>
@@ -29,7 +29,7 @@
                             <xsl:value-of select="normalize-space($bib)"/>
                     </xsl:attribute>
                 </bibl>
-                </xsl:for-each>
+                </xsl:for-each>-->
                 <xsl:for-each select="wiley:bibSection/wiley:bib">
                     <bibl>
                         <xsl:attribute name="xml:id">
@@ -449,11 +449,11 @@
                    </xsl:attribute>
                    <xsl:if test="wiley:articleTitle | wiley:chapterTitle | wiley:author | wiley:groupName">
                     <analytic>
-                        <xsl:apply-templates select="wiley:author"/>
-                        <xsl:apply-templates select="wiley:groupName"/>
                         <xsl:apply-templates select="wiley:articleTitle"/>
                         <!-- SG - ajout chapterTitle -->
                         <xsl:apply-templates select="wiley:chapterTitle"/>
+                        <xsl:apply-templates select="wiley:author"/>
+                        <xsl:apply-templates select="wiley:groupName"/>
                     </analytic>
                    </xsl:if>
                     <monogr>	
@@ -463,6 +463,7 @@
                             <xsl:when test="wiley:vol|wiley:pageFirst|wiley:pageLast|wiley:pubYear">
                                 <imprint>
                                     <xsl:apply-templates select="wiley:vol"/>
+                                    <xsl:apply-templates select="wiley:issue"/>
                                     <xsl:apply-templates select="wiley:pageFirst"/>
                                     <xsl:apply-templates select="wiley:pageLast"/>
                                     <xsl:apply-templates select="wiley:pubYear"/>
@@ -523,11 +524,11 @@
                         </analytic>
                     </xsl:if>
                     <monogr>
+                        <xsl:apply-templates select="wiley:bookTitle"/>
                         <xsl:if test="not(wiley:chapterTitle)">
                         <xsl:apply-templates select="wiley:author"/>
                         <xsl:apply-templates select="wiley:editor"/>
                         </xsl:if>
-                        <xsl:apply-templates select="wiley:bookTitle"/>
                         
                         <xsl:choose>
                             <xsl:when test="wiley:vol|wiley:pageFirst|wiley:pageLast|wiley:pubYear">
@@ -553,10 +554,10 @@
                         <xsl:value-of select="@xml:id"/>
                     </xsl:attribute>
                     <analytic>
+                        <xsl:apply-templates select="wiley:otherTitle"/>
                         <xsl:apply-templates select="wiley:groupName"/>
                         <xsl:apply-templates select="wiley:author"/>
                         <xsl:apply-templates select="wiley:editor"/>
-                        <xsl:apply-templates select="wiley:otherTitle"/>
                     </analytic>
                     <monogr>	
                         <xsl:apply-templates select="wiley:journalTitle"/>

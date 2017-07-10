@@ -281,7 +281,7 @@
                 <xsl:apply-templates select="@value"/>
             </idno>
     </xsl:template>
-
+    
     <!-- DOI numbers -->
     <!-- BMJ: doi -->
     <!-- Elsevier: ce:doi -->
@@ -310,6 +310,14 @@
                 </xsl:attribute>
                 <xsl:apply-templates select="@value"/>
             </idno>
+    </xsl:template>
+    <xsl:template match="wiley:publicationMeta[@level='unit']/wiley:linkGroup/wiley:link">
+        <idno>
+            <xsl:attribute name="type">
+                <xsl:apply-templates select="@type"/>
+            </xsl:attribute>
+            <xsl:apply-templates select="@href"/>
+        </idno>
     </xsl:template>
 
     <!-- pii -->
@@ -396,7 +404,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue']">
+    <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue'] | wiley:issue">
         <xsl:if test="normalize-space(.)">
             <biblScope unit="issue">
                 <xsl:apply-templates/>

@@ -125,11 +125,9 @@
     
     <!-- SG - ajout wiley floatingText -->
     <xsl:template match="wiley:blockFixed">
-        <floatingText>
-            <body>
+        <figure type="box">
                 <xsl:apply-templates select="wiley:mediaResourceGroup | wiley:p"/>
-            </body>
-        </floatingText>
+        </figure>
     </xsl:template>
     <!-- SG Nature reprise fnr -->
     <xsl:template match="fnr">
@@ -367,34 +365,70 @@
 		<xsl:choose>
 			<xsl:when test="string-length(@href) > 0">
 				<!--xsl:message><xsl:value-of select="substring(@href,2,1)"/></xsl:message-->
-				<xsl:if test="contains(@href, 'n')">
-					<!-- we have a note (normally) -->
-			        <ref type="note">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-						<xsl:apply-templates/>
-					</ref>	
-				</xsl:if>
-			    <!--SG - Enriched Object ex:<link href="#aoc1856-eo-0001"/> -->
-			    <xsl:if test="contains(@href, 'eo')">
-			        <!-- we have an Enriched Object -->
-			        <ref type="enrichedObject">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:apply-templates/>
-			        </ref>	
-			    </xsl:if>
-			    <!-- SG ajout lien figure et bibr --> 
-			    <xsl:if test="contains(@href, 'fig')">
-			        <ref type="figure">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:apply-templates/>
-			        </ref>	
-			    </xsl:if>
+				<xsl:choose>
+				    <!-- SG ajout reference WILEY -->
+				    <xsl:when test="contains(@href,'b') or contains(@href,'bib')">
+				        <ref type="bibr">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>
+				    </xsl:when>
+				    <xsl:when test="contains(@href, 'n')">
+				        <!-- we have a note (normally) -->
+				        <ref type="note">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>
+				    </xsl:when>
+				    
+				    <xsl:when test="contains(@href,'sec')">
+				        <ref type="section">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>
+				    </xsl:when>
+				    <xsl:when test="contains(@href,'t')">
+				        <ref type="table">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:value-of select="text()"/>
+				        </ref>
+				    </xsl:when>
+				    <xsl:when test="contains(@href,'f')">
+				        <ref type="figure">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:value-of select="text()"/>
+				        </ref>
+				    </xsl:when>
+				    <!--SG - Enriched Object ex:<link href="#aoc1856-eo-0001"/> -->
+				    <xsl:when test="contains(@href, 'eo')">
+				        <!-- we have an Enriched Object -->
+				        <ref type="enrichedObject">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>	
+				    </xsl:when>
+				    <!-- SG ajout lien figure et bibr --> 
+				    <xsl:when test="contains(@href, 'fig')">
+				        <ref type="figure">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>	
+				    </xsl:when>
+				</xsl:choose>
 			   <!-- <xsl:if test="contains(@href, 'bib')">
 			        <ref type="bibr">
 			            <xsl:attribute name="target">
@@ -403,39 +437,6 @@
 			            <xsl:apply-templates/>
 			        </ref>	
 			    </xsl:if>-->
-			    <!-- SG ajout reference WILEY -->
-			    <xsl:if test="contains(@href,'b') or contains(@href,'bib')">
-			        <ref type="bibr">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:apply-templates/>
-			        </ref>
-			    </xsl:if>
-			    <xsl:if test="contains(@href,'sec')">
-			        <ref type="section">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:apply-templates/>
-			        </ref>
-			    </xsl:if>
-			    <xsl:if test="contains(@href,'t')">
-			        <ref type="table">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:value-of select="text()"/>
-			        </ref>
-			    </xsl:if>
-			    <xsl:if test="contains(@href,'f')">
-			        <ref type="figure">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:value-of select="text()"/>
-			        </ref>
-			    </xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:if test="contains(@href,'bib')">

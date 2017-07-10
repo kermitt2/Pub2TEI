@@ -195,7 +195,7 @@
 							<availability>
 							    <!-- SG: ajout licence -->
 								<licence>
-								    <xsl:apply-templates select="header/publicationMeta/copyright/text()"/>
+								    <xsl:apply-templates select="header/publicationMeta[@level='unit']/copyright/text()"/>
 								</licence>
 							</availability>
 						</xsl:if>
@@ -434,12 +434,19 @@
                 </xsl:if>
                 <xsl:apply-templates select="publicationMeta[@level='unit']/doi"/>
                 <xsl:apply-templates select="publicationMeta[@level='unit']/idGroup/id"/>
+                <xsl:apply-templates select="publicationMeta[@level='unit']/linkGroup/link"/>
             </analytic>
             <monogr>
 				<title level="j" type="main">
 					<xsl:value-of select="publicationMeta[@level='product']/titleGroup/title"/>
 				</title>
                 <!-- SG ajout titre alternatif -->
+                <xsl:if test="publicationMeta[@level='part']/titleGroup/title/@type ='specialIssueTitle'">
+                    <title level="j" type="sub">
+                        <xsl:value-of select="normalize-space(publicationMeta[@level='part']/titleGroup/title[@type ='specialIssueTitle'])"/>
+                    </title>
+                </xsl:if>
+                <!-- SG ajout titre specialIssue -->
                 <xsl:if test="publicationMeta[@level='product']/titleGroup/title/@sort !=''">
                     <title level="j" type="alt">
                         <xsl:apply-templates select="publicationMeta[@level='product']/titleGroup/title/@sort"/>
