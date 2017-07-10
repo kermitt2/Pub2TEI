@@ -87,7 +87,7 @@
     <!-- Springer: Abstract, Heading, Para -->
 	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
     <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test=".[string-length()&gt;0]">
 			<abstract>
 				<!-- PL: indicate the type in case of executive summary or web summary (Nature) -->
 				<!-- SG: pas encore validé par la TEI technicalBoard, je propose de mettre le type dans un titre -->

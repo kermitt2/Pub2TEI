@@ -107,10 +107,19 @@
     </xsl:template>
     <xsl:template match="wiley:listItem">
         <item>
-            <xsl:attribute name="n">
-                <xsl:apply-templates select="wiley:label"/>
-            </xsl:attribute>
-            <xsl:apply-templates select="wiley:p"/>
+            <xsl:if test="wiley:label[string-length()&gt;0]">
+                <xsl:attribute name="n">
+                    <xsl:apply-templates select="wiley:label"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="wiley:p">
+                    <xsl:apply-templates select="wiley:p"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates/>
+                </xsl:otherwise>
+            </xsl:choose>
         </item>
     </xsl:template>
     
@@ -608,15 +617,15 @@
     </xsl:template>
 
     <xsl:template match="inf|Subscript | sub | ce:inf | wiley:sub">
-        <xsl:if test="normalize-space(.)"><hi rend="subscript"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="."><hi rend="subscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="Superscript | sup | ce:sup | super | wiley:sup">
-        <xsl:if test="normalize-space(.)"><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="."><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="underline | ce:underline">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test=".">
             <hi rend="underline"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
@@ -625,22 +634,22 @@
         <lb/>
     </xsl:template>
     <xsl:template match="wiley:fc">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test=".">
             <hi rend="fc"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:fr">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test=".">
             <hi rend="fr"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:fi">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test=".">
             <hi rend="fi"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:span">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test=".">
             <span><xsl:apply-templates/></span>
         </xsl:if>
     </xsl:template>

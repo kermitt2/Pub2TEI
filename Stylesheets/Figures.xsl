@@ -102,7 +102,6 @@
                 </media>
             </xsl:when>
             <xsl:otherwise>
-                <p>
                     <media>
                         <xsl:if test="ancestor::wiley:chemicalStructure/@xml:id">
                             <xsl:attribute name="xml:id">
@@ -134,7 +133,6 @@
                             </xsl:attribute>
                         </xsl:if>
                     </media>
-                </p>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

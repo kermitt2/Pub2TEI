@@ -271,6 +271,16 @@
             </idno>
         </xsl:if>
     </xsl:template>
+    
+    <!-- SG - ajout identifiants de production-->
+    <xsl:template match="wiley:publicationMeta[@level='product']/wiley:idGroup/wiley:id">
+            <idno>
+                <xsl:attribute name="type">
+                    <xsl:apply-templates select="@type"/>
+                </xsl:attribute>
+                <xsl:apply-templates select="@value"/>
+            </idno>
+    </xsl:template>
 
     <!-- DOI numbers -->
     <!-- BMJ: doi -->

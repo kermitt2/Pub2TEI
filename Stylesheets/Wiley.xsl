@@ -213,10 +213,10 @@
                             <xsl:attribute name="type">
                                 <xsl:value-of select="$codeGenreA"/>
                             </xsl:attribute>
-                            <xsl:attribute name="ana">
+                            <xsl:attribute name="source">
                                 <xsl:value-of select="$codeGenre1"/>
                             </xsl:attribute>
-                            <xsl:attribute name="scheme">
+                            <xsl:attribute name="sameAs">
                                 <xsl:value-of select="$codeGenreArkA"/>
                             </xsl:attribute>
                             <xsl:value-of select="$codeGenreA"/>
@@ -225,20 +225,21 @@
                         <xsl:choose>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
                                 <note n="2"><xsl:attribute name="type">book-series</xsl:attribute>
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <xsl:attribute name="sameAs">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
                                 <note n="2">
                                     <xsl:attribute name="type">book</xsl:attribute>
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <xsl:attribute name="sameAs">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:otherwise>
                                 <note n="2">
-                                    <xsl:attribute name="type">journal</xsl:attribute><xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
+                                    <xsl:attribute name="type">journal</xsl:attribute>
+                                    <xsl:attribute name="sameAs">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
                                     <xsl:text>journal</xsl:text>
                                 </note>
                             </xsl:otherwise>
@@ -250,35 +251,34 @@
                 </fileDesc>
                 
                
-                <xsl:if test="header/contentMeta/abstractGroup | header/contentMeta/keywordGroup">
+                <xsl:if test="header/contentMeta/abstractGroup | header/contentMeta/keywordGroup | header/publicationMeta[@level='unit']/subjectInfo">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
-                        <xsl:if test="header/contentMeta/abstractGroup/abstract/p and not(header/contentMeta/abstractGroup/abstract/p/list)">
+                        <xsl:if test="header/contentMeta/abstractGroup/abstract">
                             <!-- SG - reprise de tous les abstracts -->
                             <xsl:for-each select="header/contentMeta/abstractGroup/abstract">
                             <abstract>
 							    <!--SG - ajout langue -->
-							    <xsl:if test="normalize-space(@xml:lang)">
+                                <xsl:if test="@xml:lang">
 							        <xsl:copy-of select="@xml:lang"/>
 							    </xsl:if>
-                                <xsl:if test="@type !='main'">
-                                    <xsl:attribute name="rendition">
-                                        <xsl:apply-templates select="@type"/>
+                                <xsl:if test="@type">
+                                    <xsl:attribute name="style">
+                                        <xsl:value-of select="@type"/>
                                     </xsl:attribute>
                                 </xsl:if>
-                                <xsl:if test="normalize-space(@xml:id)">
+                                <xsl:if test="@xml:id">
                                     <xsl:copy-of select="@xml:id"/>
                                 </xsl:if>
                                 <xsl:apply-templates/>
-                                <!--<xsl:apply-templates select="p"/>-->
 							</abstract>
                             </xsl:for-each>
 		                </xsl:if>
-						<xsl:if test="header/contentMeta/keywordGroup/keyword !=''">
+                        <xsl:if test="header/contentMeta/keywordGroup/keyword[string-length()&gt;0]| header/publicationMeta[@level='unit']/subjectInfo[string-length()&gt;0]">
 							<textClass>
 								<keywords>
 								    <!--SG - ajout langue -->
-								    <xsl:if test="normalize-space(header/contentMeta/keywordGroup/@xml:lang)">
+								    <xsl:if test="header/contentMeta/keywordGroup/@xml:lang[string-length()&gt;0]">
 								        <xsl:copy-of select="header/contentMeta/keywordGroup/@xml:lang"/>
 								    </xsl:if>
 									<xsl:for-each select="header/contentMeta/keywordGroup/keyword">
@@ -289,6 +289,24 @@
 										</term>
 									</xsl:for-each>
 								</keywords>
+							    <xsl:if test="header/publicationMeta[@level='unit']/subjectInfo[string-length()&gt;0]">
+							                <xsl:for-each select="header/publicationMeta[@level='unit']/subjectInfo/subject">
+							                    <classCode>
+							                        <xsl:if test="@role">
+							                            <xsl:attribute name="corresp">
+							                                <xsl:value-of select="@role"/>
+							                            </xsl:attribute>
+							                        </xsl:if>
+							                        <xsl:if test="@href">
+							                            <xsl:attribute name="scheme">
+							                                <xsl:value-of select="@href"/>
+							                            </xsl:attribute>
+							                        </xsl:if>
+							                        <xsl:value-of select="normalize-space(.)"/>
+							                    </classCode>
+							                </xsl:for-each>
+							            
+							    </xsl:if>
 							</textClass>
 						</xsl:if>
                     </profileDesc>
@@ -325,12 +343,15 @@
         </TEI>
     </xsl:template>
     <xsl:template match="header/contentMeta/abstractGroup/abstract/title">
-        <p>
+        <head>
             <xsl:apply-templates/>
-        </p>
+        </head>
     </xsl:template>
     <xsl:template match="header/contentMeta/abstractGroup/abstract/p">
         <p>
+            <xsl:if test="@xml:id">
+                <xsl:copy-of select="@xml:id"/>
+            </xsl:if>
             <xsl:apply-templates/>
         </p>
     </xsl:template>
@@ -426,6 +447,7 @@
                 </xsl:if>
                 <xsl:apply-templates select="publicationMeta[@level='product']/issn"/>
                 <xsl:apply-templates select="publicationMeta[@level='product']/doi"/>
+                <xsl:apply-templates select="publicationMeta[@level='product']/idGroup/id"/>
                 <imprint>
 	                <xsl:apply-templates select="publicationMeta[@level='part']/numberingGroup/numbering[@type='journalVolume']"/>
 	                <xsl:apply-templates select="publicationMeta[@level='part']/numberingGroup/numbering[@type='journalIssue']"/>
