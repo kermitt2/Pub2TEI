@@ -127,7 +127,7 @@
                     <titleStmt>
                         <xsl:choose>
                             <xsl:when test="//header/contentMeta/titleGroup/title">
-                                <xsl:for-each select="//header/contentMeta/titleGroup/title">
+                                <xsl:for-each select="//header/contentMeta/titleGroup/title[@type='main']">
                                     <title level="a" type="main">
                                         <xsl:if test="@xml:lang">
                                             <xsl:attribute name="xml:lang">
@@ -492,7 +492,7 @@
 	<xsl:template match="titleGroup">
 		    <xsl:choose>
 		        <xsl:when test="//header/contentMeta/titleGroup/title">
-		            <xsl:for-each select="//header/contentMeta/titleGroup/title">
+		            <xsl:for-each select="//header/contentMeta/titleGroup/title[@type='main']">
 		                <title level="a" type="main">
 		                    <xsl:if test="@xml:lang">
 		                        <xsl:attribute name="xml:lang">
