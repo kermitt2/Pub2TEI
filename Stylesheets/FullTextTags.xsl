@@ -28,6 +28,12 @@
         </p>
         <!--xsl:apply-templates select="wiley:mathStatement"/-->
     </xsl:template>
+    <!-- ajout élément sourceà <figure> -->
+    <xsl:template match="wiley:source">
+            <source>
+                <xsl:apply-templates/>
+            </source>
+    </xsl:template>
     <xsl:template match="wiley:mathStatement/wiley:p">
         <xsl:text> </xsl:text>
             <xsl:apply-templates/>
@@ -127,6 +133,7 @@
     <xsl:template match="wiley:blockFixed">
         <figure type="box">
                 <xsl:apply-templates select="wiley:mediaResourceGroup | wiley:p"/>
+            <xsl:apply-templates select="wiley:lineatedText"/>
         </figure>
     </xsl:template>
     <!-- SG Nature reprise fnr -->
@@ -721,6 +728,11 @@
             </xsl:if>
             <xsl:if test="contains(@xml:id,'sec')">
                 <xsl:attribute name="type">section</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@type">
+                <xsl:attribute name="subtype">
+                    <xsl:value-of select="@type"/>
+                </xsl:attribute>
             </xsl:if>
 			<xsl:if test="wiley:title">
 		        <head>

@@ -256,10 +256,26 @@
 
     <!-- SG - ajout DOI niveau book - pour matcher avec les reversement du Hub de métadonnées-->
     <xsl:template match="wiley:publicationMeta[@level='product']/wiley:doi">
-
         <xsl:if test="normalize-space(.)">
             <xsl:variable name="DOIValue" select="string(.)"/>
             <idno type="book-DOI">
+                <xsl:choose>
+                    <xsl:when test=" starts-with($DOIValue,'DOI')">
+                        <xsl:value-of select="normalize-space( substring-after($DOIValue,'DOI'))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="normalize-space($DOIValue)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </idno>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- SG - ajout DOI niveau book-part-->
+    <xsl:template match="wiley:publicationMeta[@level='part']/wiley:doi">
+        <xsl:if test="normalize-space(.)">
+            <xsl:variable name="DOIValue" select="string(.)"/>
+            <idno type="book-part-DOI">
                 <xsl:choose>
                     <xsl:when test=" starts-with($DOIValue,'DOI')">
                         <xsl:value-of select="normalize-space( substring-after($DOIValue,'DOI'))"/>

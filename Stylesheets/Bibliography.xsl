@@ -297,7 +297,8 @@
     <xsl:template match="string-name | citauth | wiley:author">
         <author>
             <persName>
-                <xsl:apply-templates/>
+                <xsl:apply-templates select="wiley:givenNames"/>
+                <xsl:apply-templates select="wiley:familyName"/>
             </persName>
         </author>
     </xsl:template>

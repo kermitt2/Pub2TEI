@@ -124,7 +124,11 @@
 
     <xsl:template match="wiley:personName">
         <persName>
-            <xsl:apply-templates/>
+            <xsl:apply-templates select="wiley:honorifics"/>
+            <xsl:apply-templates select="wiley:nameSuffix"/>
+            <xsl:apply-templates select="wiley:givenNames"/>
+            <xsl:apply-templates select="wiley:familyName"/>
+            <xsl:apply-templates select="wiley:degrees"/>
         </persName>
     </xsl:template>
 

@@ -137,6 +137,17 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template match="wiley:lineatedText">
+        <listBibl>
+            <xsl:apply-templates select="wiley:line"/>
+        </listBibl>
+    </xsl:template>
+    <xsl:template match="wiley:line">
+        <bibl>
+            <xsl:apply-templates/>
+        </bibl>
+    </xsl:template>
+    
     <!-- SG - reprise traitement des figures wiley -->
     <xsl:template match="wiley:caption">
         <figDesc>
