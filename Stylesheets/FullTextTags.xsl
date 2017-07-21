@@ -806,5 +806,15 @@
     </xsl:template>
 	
     <xsl:template match="online-methods"><xsl:apply-templates/></xsl:template>
-	
+    <xsl:template match="wiley:header/wiley:contentMeta/wiley:supportingInformation">
+        <xsl:apply-templates select="wiley:supportingInfoItem"/>
+    </xsl:template>
+    <!-- reprise supportingInformation -->
+    <xsl:template match="wiley:supportingInfoItem">
+        <div type="appendice">
+            <p>
+                <xsl:apply-templates/>
+            </p>
+        </div>
+    </xsl:template>
 </xsl:stylesheet>

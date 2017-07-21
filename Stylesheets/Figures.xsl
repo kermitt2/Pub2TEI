@@ -150,9 +150,18 @@
     
     <!-- SG - reprise traitement des figures wiley -->
     <xsl:template match="wiley:caption">
-        <figDesc>
-            <xsl:apply-templates/>
-        </figDesc>
+        <xsl:choose>
+            <xsl:when test="ancestor::wiley:supportingInfoItem">
+                <desc>
+                    <xsl:apply-templates/>
+                </desc>
+            </xsl:when>
+            <xsl:otherwise>
+                <figDesc>
+                    <xsl:apply-templates/>
+                </figDesc>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="wiley:caption/wiley:p">

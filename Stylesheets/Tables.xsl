@@ -208,7 +208,4 @@
             <xsl:apply-templates select="*"/>
         </figure>
     </xsl:template>
-	
-    
-
 </xsl:stylesheet>
