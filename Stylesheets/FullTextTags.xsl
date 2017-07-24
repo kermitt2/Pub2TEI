@@ -38,6 +38,9 @@
         <xsl:text> </xsl:text>
             <xsl:apply-templates/>
     </xsl:template>
+    <xsl:template match="wiley:biographyInfo/wiley:p">
+            <xsl:apply-templates/>
+    </xsl:template>
     <xsl:template match="wiley:infoAsset">
         <term>
             <xsl:if test="@type">

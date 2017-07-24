@@ -99,6 +99,16 @@
             </roleName>
         </xsl:if>
     </xsl:template>
+    <xsl:template match="wiley:biographyInfo">
+        <roleName type="biography">
+            <xsl:apply-templates/>
+        </roleName>
+    </xsl:template>
+    <xsl:template match="wiley:email">
+        <email>
+            <xsl:apply-templates/>
+        </email>
+    </xsl:template>
     <xsl:template match="Particle">
         <xsl:if test="normalize-space(.)">
             <nameLink>
@@ -129,6 +139,8 @@
             <xsl:apply-templates select="wiley:givenNames"/>
             <xsl:apply-templates select="wiley:familyName"/>
             <xsl:apply-templates select="wiley:degrees"/>
+           <!-- <xsl:apply-templates select="ancestor::wiley:creator/wiley:biographyInfo"/>-->
+            <xsl:apply-templates select="wiley:biographyInfo/wiley:email"/>
         </persName>
     </xsl:template>
 

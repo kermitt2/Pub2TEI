@@ -5,7 +5,7 @@
     xmlns:els="http://www.elsevier.com/xml/ja/dtd"
     xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
-    <xsl:output encoding="UTF-8" method="xml"/>
+    <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
     <xsl:include href="Imports.xsl"/>
 
     <xsl:include href="BMJ.xsl"/>

@@ -501,7 +501,7 @@
     </xsl:template>
 
     <xsl:template match="publisher-loc | pub_location | PublisherLocation | wiley:publisherLoc">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test="normalize-space()">
             <pubPlace>
                 <xsl:apply-templates/>
             </pubPlace>

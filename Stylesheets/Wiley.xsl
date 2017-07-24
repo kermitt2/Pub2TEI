@@ -292,6 +292,9 @@
                         <xsl:if test="header/noteGroup/note">
                               <xsl:apply-templates select="header/noteGroup/note"/> 
                         </xsl:if>
+                        <xsl:if test="body/noteGroup/note">
+                            <xsl:apply-templates select="body/noteGroup/note"/> 
+                        </xsl:if>
                     </notesStmt>
                     <sourceDesc>
                         <xsl:apply-templates select="header" mode="sourceDesc"/>
@@ -340,32 +343,47 @@
 							</abstract>
                             </xsl:for-each>
 		                </xsl:if>
-                        <xsl:if test="header/contentMeta/keywordGroup/keyword[string-length()&gt;0]| header/publicationMeta[@level='unit']/subjectInfo[string-length()&gt;0]">
+                        <xsl:if test="header/contentMeta/keywordGroup/keyword[string-length()&gt;0]| header/publicationMeta[@level='unit']/subjectInfo[string-length()&gt;0] or 
+                            header/publicationMeta[@level='unit']/titleGroup/title[@type][string-length()&gt;0]">
 							<textClass>
-								<keywords>
-								    <!--SG - ajout langue -->
-								    <xsl:if test="header/contentMeta/keywordGroup/@xml:lang[string-length()&gt;0]">
-								        <xsl:copy-of select="header/contentMeta/keywordGroup/@xml:lang"/>
-								    </xsl:if>
-									<xsl:for-each select="header/contentMeta/keywordGroup/keyword">
-										<term>
-										    <xsl:copy-of select="@xml:id"/>
-										    <xsl:apply-templates/>
-										    <!--<xsl:value-of select="normalize-space(.)"/>-->
-										</term>
-									</xsl:for-each>
-								</keywords>
+							    <xsl:if test="header/contentMeta/keywordGroup/keyword[string-length()&gt;0]">
+							        <keywords>
+							            <!--SG - ajout langue -->
+							            <xsl:if test="header/contentMeta/keywordGroup/@xml:lang[string-length()&gt;0]">
+							                <xsl:copy-of select="header/contentMeta/keywordGroup/@xml:lang"/>
+							            </xsl:if>
+							            <xsl:for-each select="header/contentMeta/keywordGroup/keyword">
+							                <term>
+							                    <xsl:copy-of select="@xml:id"/>
+							                    <xsl:apply-templates/>
+							                    <!--<xsl:value-of select="normalize-space(.)"/>-->
+							                </term>
+							            </xsl:for-each>
+							        </keywords>
+							    </xsl:if>
 							    <xsl:if test="header/publicationMeta[@level='unit']/subjectInfo[string-length()&gt;0]">
 							        <xsl:for-each select="header/publicationMeta[@level='unit']/subjectInfo/subject">
 							            <classCode>
 							                <xsl:if test="@role">
-							                    <xsl:attribute name="corresp">
+							                    <xsl:attribute name="scheme">
 							                        <xsl:value-of select="@role"/>
 							                    </xsl:attribute>
 							                </xsl:if>
 							                <xsl:if test="@href">
 							                    <xsl:attribute name="scheme">
 							                        <xsl:value-of select="@href"/>
+							                    </xsl:attribute>
+							                </xsl:if>
+							                <xsl:value-of select="normalize-space(.)"/>
+							            </classCode>
+							        </xsl:for-each>
+							    </xsl:if>
+							    <xsl:if test="header/publicationMeta[@level='unit']/titleGroup/title[string-length()&gt;0]">
+							        <xsl:for-each select="header/publicationMeta[@level='unit']/titleGroup/title">
+							            <classCode>
+							                <xsl:if test="@type">
+							                    <xsl:attribute name="scheme">
+							                        <xsl:value-of select="@type"/>
 							                    </xsl:attribute>
 							                </xsl:if>
 							                <xsl:value-of select="normalize-space(.)"/>
@@ -503,9 +521,18 @@
                 <xsl:apply-templates select="publicationMeta[@level='unit']/linkGroup/link"/>
             </analytic>
             <monogr>
-				<title level="j" type="main">
-					<xsl:value-of select="publicationMeta[@level='product']/titleGroup/title"/>
-				</title>
+                <xsl:choose>
+                    <xsl:when test="publicationMeta[@level='product']/titleGroup/title[@type ='main']">
+                        <title level="j" type="main">
+                            <xsl:value-of select="publicationMeta[@level='product']/titleGroup/title[@type ='main']"/>
+                        </title>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <title level="j" type="main">
+                            <xsl:value-of select="publicationMeta[@level='product']/titleGroup/title"/>
+                        </title>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <!-- SG ajout titre alternatif -->
                 <xsl:if test="publicationMeta[@level='part']/titleGroup/title/@type ='specialIssueTitle'">
                     <title level="j" type="sub">
@@ -636,6 +663,17 @@
 		    </xsl:choose>
 		
 	    <!-- SG - ajout conditionnel -->
+	    <xsl:if test="title[@type='subtitle']">
+	        <title level= "a" type="sub">
+	            <!-- SG - ajout de la langue du titre -->
+	            <xsl:if test="title[@type='subtitle']/@xml:lang">
+	                <xsl:attribute name="xml:lang">
+	                    <xsl:value-of select="title[@type='short']/@xml:lang"/>
+	                </xsl:attribute>
+	            </xsl:if>
+	            <xsl:value-of select="title[@type='subtitle']"/>
+	        </title>
+	    </xsl:if>
 	    <xsl:if test="title[@type='short']">
 	        <title level= "a" type="short">
 	            <!-- SG - ajout de la langue du titre -->
@@ -691,8 +729,7 @@
             </xsl:attribute>
         <xsl:choose>
             <xsl:when test="@creatorRole='author'">
-                    
-                    <!-- SG - ajout de @corresponding et @noteRef -->
+                <!-- SG - ajout de @corresponding et @noteRef -->
                     <xsl:if test="@corresponding='yes'">
                         <xsl:attribute name="role">
                             <xsl:text>corresp</xsl:text>
@@ -703,10 +740,13 @@
                             <xsl:value-of select="@noteRef"/>
                         </xsl:attribute>
                     </xsl:if>-->
-                <xsl:apply-templates select="* except email"/>
+                <xsl:apply-templates select="* except email | * except biographyInfo"/>
                     <xsl:if test="//affiliationGroup">
                         <xsl:call-template name="affiliation"/>
                     </xsl:if>
+                <xsl:if test="@corresponding='yes'">
+                    <xsl:call-template name="affiliationCorresp"/>
+                </xsl:if>
             </xsl:when>
             <!-- ajout SG si pas d'@creatorRole  -->
             <xsl:otherwise>
@@ -864,6 +904,19 @@
 		    </xsl:if>
         	<xsl:apply-templates/>
 		</note>
+    </xsl:template>
+    <xsl:template match="body/noteGroup/note">
+        <note type="note">
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@xml:id"/>
+            </xsl:attribute>
+            <xsl:if test="label">
+                <label>
+                    <xsl:value-of select="label"/>
+                </label>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </note>
     </xsl:template>
     
     <!-- SG - reprise traitement des affiliations multiples -->
@@ -1745,87 +1798,10 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template name="nameAut">
-        <name>
-            <xsl:attribute name="type">personal</xsl:attribute>
-            <xsl:if test="honorifics">
-                <namePart>
-                    <xsl:attribute name="type">termsOfAddress</xsl:attribute>
-                    <xsl:variable name="honor">
-                        <xsl:apply-templates select="honorifics"/>
-                    </xsl:variable>
-                    <xsl:value-of select="normalize-space($honor)"/>
-                </namePart>
-            </xsl:if>
-            <xsl:if test="givenNames[string-length() &gt; 0]">
-                <namePart>
-                    <xsl:attribute name="type">given</xsl:attribute>
-                    <xsl:variable name="given">
-                        <xsl:apply-templates select="givenNames"/>
-                    </xsl:variable>
-                    <xsl:value-of select="normalize-space($given)"/>
-                </namePart>
-            </xsl:if>
-            <xsl:choose>
-                <xsl:when test="unparsedName[string-length()&gt;0]">
-                    <namePart>
-                        <xsl:attribute name="type">family</xsl:attribute>
-                        <xsl:variable name="unparsedName">
-                            <xsl:apply-templates select="unparsedName"/>
-                        </xsl:variable>
-                        <xsl:value-of select="normalize-space($unparsedName)"/>
-                    </namePart>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:if test="familyName[string-length()&gt;0]">
-                        <namePart>
-                            <xsl:attribute name="type">family</xsl:attribute>
-                            <xsl:if test="familyNamePrefix">
-                                <xsl:variable name="familyNamePrefix">
-                                    <xsl:apply-templates select="familyNamePrefix"/>
-                                </xsl:variable>
-                                <xsl:value-of select="normalize-space($familyNamePrefix)"/>
-                                <xsl:text> </xsl:text>
-                            </xsl:if>
-                            <xsl:variable name="familyName">
-                                <xsl:apply-templates select="familyName"/>
-                            </xsl:variable>
-                            <xsl:value-of select="normalize-space($familyName)"/>
-                            <xsl:if test="nameSuffix">
-                                <xsl:text> </xsl:text>
-                                <xsl:variable name="nameSuffix">
-                                    <xsl:apply-templates select="nameSuffix"/>
-                                </xsl:variable>
-                                <xsl:value-of select="normalize-space($nameSuffix)"/>
-                            </xsl:if>
-                        </namePart>
-                    </xsl:if>
-                </xsl:otherwise>
-            </xsl:choose>
-            <xsl:if test="titlesAfterNames [string-length()&gt;0]">
-                <namePart>
-                    <xsl:attribute name="type">termsOfAddress</xsl:attribute>
-                    <xsl:variable name="titlesAfterNames">
-                        <xsl:apply-templates select="titlesAfterNames"/>
-                    </xsl:variable>
-                    <xsl:value-of select="normalize-space($titlesAfterNames)"/>
-                </namePart>
-            </xsl:if>
-            <xsl:if test="degrees[string-length() &gt; 0]">
-                <namePart>
-                    <xsl:attribute name="type">termsOfAddress</xsl:attribute>
-                    <xsl:variable name="degrees">
-                        <xsl:apply-templates select="degrees"/>
-                    </xsl:variable>
-                    <xsl:value-of select="normalize-space($degrees)"/>
-                </namePart>
-            </xsl:if>
-            <role>
-                <roleTerm>
-                    <xsl:attribute name="type">text</xsl:attribute>
-                    <xsl:text>author</xsl:text>
-                </roleTerm>
-            </role>
-        </name>
+    <xsl:template name="affiliationCorresp">
+        <affiliation>
+            <xsl:value-of select="normalize-space(//correspondenceTo)"/>
+        </affiliation>
     </xsl:template>
+    
 </xsl:stylesheet>
