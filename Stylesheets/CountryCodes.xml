@@ -63,6 +63,14 @@
                         <cell role="nameAlt" xml:lang="de">Deutschland</cell>
                     </row>
                     <row>
+                        <cell role="a2code">DE</cell>
+                        <cell role="a3code">DEU</cell>
+                        <cell role="name" xml:lang="fr">REPUBLIQUE FEDERALE D'ALLEMAGNE</cell>
+                        <cell role="name" xml:lang="en">FEDERAL REPUBLIC OF GERMANY</cell>
+                        <cell role="nameAlt" xml:lang="en">Federal Republic of Germany</cell>
+                        <cell role="nameAlt" xml:lang="de">Bundesrepublik Deutschland</cell>
+                    </row>
+                    <row>
                         <cell role="a2code">AD</cell>
                         <cell role="a3code">AND</cell>
                         <cell role="name" xml:lang="fr">ANDORRE</cell>

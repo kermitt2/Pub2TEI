@@ -105,27 +105,39 @@
             <analytic>
                 <xsl:choose>
                     <xsl:when test="JournalOnlineFirst">
+                        <!-- Title information related to the paper goes here -->
+                        <xsl:apply-templates
+                            select="JournalOnlineFirst/Article/ArticleInfo/ArticleTitle"/>
                         <!-- All authors are included here -->
                         <xsl:apply-templates
                         select="JournalOnlineFirst/Article/ArticleHeader/AuthorGroup/Author"/>
                         <xsl:apply-templates
                             select="JournalOnlineFirst/Article/ArticleHeader/AuthorGroup/InstitutionalAuthor"/>
-                        <!-- Title information related to the paper goes here -->
-                        <xsl:apply-templates
-                            select="JournalOnlineFirst/Article/ArticleInfo/ArticleTitle"/>
                     </xsl:when>
                     <xsl:otherwise>
+                        <!-- Title information related to the paper goes here -->
+                        <xsl:apply-templates select="Volume/Issue/Article/ArticleInfo/ArticleTitle"
+                        />
                         <!-- All authors are included here -->
                         <xsl:apply-templates
                         select="Volume/Issue/Article/ArticleHeader/AuthorGroup/Author"/>
                         <xsl:apply-templates
                             select="Volume/Issue/Article/ArticleHeader/AuthorGroup/InstitutionalAuthor"/>
-                        <!-- Title information related to the paper goes here -->
-                        <xsl:apply-templates select="Volume/Issue/Article/ArticleInfo/ArticleTitle"
-                        />
                     </xsl:otherwise>
                 </xsl:choose>
-
+                <xsl:choose>
+                    <xsl:when test="JournalOnlineFirst">
+                        <xsl:apply-templates select="JournalOnlineFirst/Article/@ID"/>
+                        <xsl:apply-templates select="JournalOnlineFirst/Article/ArticleInfo/ArticleDOI"/>
+                        <xsl:apply-templates select="JournalOnlineFirst/Article/ArticleInfo/ArticleID"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="Volume/Issue/Article/@ID"/>
+                        <xsl:apply-templates select="Volume/Issue/Article/ArticleInfo/ArticleDOI"/>
+                        <xsl:apply-templates select="Volume/Issue/Article/ArticleInfo/ArticleID"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                
             </analytic>
             <monogr>
                 <xsl:apply-templates select="JournalInfo/JournalTitle"/>
@@ -167,20 +179,6 @@
                     <xsl:apply-templates select="Volume/Issue/IssueInfo/IssueIDEnd"/>
                 </imprint>
             </monogr>
-
-            <xsl:choose>
-                <xsl:when test="JournalOnlineFirst">
-                    <xsl:apply-templates select="JournalOnlineFirst/Article/@ID"/>
-                    <xsl:apply-templates select="JournalOnlineFirst/Article/ArticleInfo/ArticleDOI"/>
-                    <xsl:apply-templates select="JournalOnlineFirst/Article/ArticleInfo/ArticleID"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:apply-templates select="Volume/Issue/Article/@ID"/>
-                    <xsl:apply-templates select="Volume/Issue/Article/ArticleInfo/ArticleDOI"/>
-                    <xsl:apply-templates select="Volume/Issue/Article/ArticleInfo/ArticleID"/>
-                </xsl:otherwise>
-            </xsl:choose>
-
         </biblStruct>
     </xsl:template>
 

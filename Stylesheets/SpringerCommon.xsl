@@ -167,6 +167,9 @@
             <xsl:call-template name="createSpringerAffiliations">
                 <xsl:with-param name="restAff" select="@AffiliationIDS"/>
             </xsl:call-template>
+            <xsl:call-template name="createSpringerAffiliations2">
+                <xsl:with-param name="restAff2" select="@PresentAffiliationID"/>
+            </xsl:call-template>
         </author>
     </xsl:template>
     
@@ -177,6 +180,9 @@
             <xsl:apply-templates/>
             <xsl:call-template name="createSpringerAffiliations">
                 <xsl:with-param name="restAff" select="@AffiliationIDS"/>
+            </xsl:call-template>
+            <xsl:call-template name="createSpringerAffiliations2">
+                <xsl:with-param name="restAff2" select="@PresentAffiliationID"/>
             </xsl:call-template>
         </editor>
     </xsl:template>
@@ -193,6 +199,21 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates select="../Affiliation[@ID=$restAff]"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template name="createSpringerAffiliations2">
+        <xsl:param name="restAff2"/>
+        <xsl:message>Affiliations: <xsl:value-of select="$restAff2"/></xsl:message>
+        <xsl:choose>
+            <xsl:when test=" contains($restAff2,' ')">
+                <xsl:apply-templates select="../Affiliation[@ID=substring-before($restAff2,' ')]"/>
+                <xsl:call-template name="createSpringerAffiliations">
+                    <xsl:with-param name="restAff" select="substring-after($restAff2,' ')"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="../Affiliation[@ID=$restAff2]"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
