@@ -100,9 +100,11 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:biographyInfo">
-        <roleName type="biography">
-            <xsl:apply-templates/>
-        </roleName>
+        <state type="biography">
+            <desc>
+                <xsl:apply-templates/>
+            </desc>
+        </state>
     </xsl:template>
     <xsl:template match="wiley:email">
         <email>

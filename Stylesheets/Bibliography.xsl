@@ -240,7 +240,7 @@
     </xsl:template>
 
     <xsl:template match="citation">
-        <xsl:apply-templates/>
+            <xsl:apply-templates/>
     </xsl:template>
 
     <!-- Unspecified reference (3.0 style) -->

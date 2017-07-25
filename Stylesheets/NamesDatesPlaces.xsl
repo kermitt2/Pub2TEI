@@ -307,7 +307,14 @@
         <xsl:if test=". != ''">
             <ptr type="url">
                 <xsl:attribute name="target">
-                    <xsl:apply-templates/>
+                    <xsl:choose>
+                        <xsl:when test="contains(.,'?ReadForm&amp;c%PS')">
+                            <xsl:value-of select="substring-before(.,'?ReadForm&amp;c%PS')"/>  
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates/>  
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </xsl:attribute>
             </ptr>
         </xsl:if>

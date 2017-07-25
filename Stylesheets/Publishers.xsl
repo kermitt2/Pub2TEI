@@ -6,6 +6,8 @@
     xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
+    <xsl:param name="idistex"/>
+    <xsl:param name="arkistex"/>
     <xsl:include href="Imports.xsl"/>
 
     <xsl:include href="BMJ.xsl"/>

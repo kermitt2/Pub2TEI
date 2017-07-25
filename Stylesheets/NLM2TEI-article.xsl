@@ -12,7 +12,55 @@
     </xd:doc>
 
     <xsl:output encoding="UTF-8" method="xml"/>
-
+    <!-- code genre -->
+    <xsl:variable name="codeGenre2">
+        <xsl:value-of select="article/@article-type"/>
+    </xsl:variable>
+    <xsl:variable name="codeGenre">
+        <xsl:choose>
+            <xsl:when test="normalize-space($codeGenre2)='abstract'">abstract</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='addendum'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='announcement'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='article-commentary'">review-article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='book-review'">book-reviews</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='books-received'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='brief-report'">brief-communication</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='calendar'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='case-report'">case-report</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='collection'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='correction'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='dissertation'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='discussion'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='editorial'">editorial</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='in-brief'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='introduction'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='letter'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='meeting-report'">conference</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='news'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='obituary'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='oration'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='other'">
+                <xsl:choose>
+                    <xsl:when test="article/front/article-meta/abstract[string-length() &gt; 0] and contains(//article-meta/fpage,'s') or contains(//article-meta/fpage,'S')">article</xsl:when>
+                    <xsl:otherwise>other</xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='partial-retraction'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='poster'">conference</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='product-review'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='rapid-communication'">brief-communication</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='reply'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='reprint'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='research-article'">research-article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='retraction'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='review-article'">review-article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='translation'">other</xsl:when>
+            <xsl:otherwise>
+                <xsl:text>other</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
+   
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="article[front] | article[pubfm] | article[suppfm] | headerx">
         <xsl:message>NLM2TEI-article.xsl</xsl:message>
@@ -69,6 +117,40 @@
                             </availability>
                         </xsl:if>
                     </publicationStmt>
+                    <!-- SG - ajout du codeGenre article et revue -->
+                    <notesStmt>
+                        <!-- niveau article / chapter -->
+                        <note type="content-type">
+                            <xsl:attribute name="source">
+                                <xsl:value-of select="$codeGenre2"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="scheme">
+                                <xsl:value-of select="$codeGenreArkA"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="$codeGenre"/>
+                        </note>
+                        <!-- niveau revue / book -->
+                        <xsl:choose>
+                            <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
+                                <note type="publication-type">
+                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <xsl:text>book-series</xsl:text>
+                                </note>
+                            </xsl:when>
+                            <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
+                                <note type="publication-type">
+                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <xsl:text>book</xsl:text>
+                                </note>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <note type="publication-type">
+                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
+                                    <xsl:text>journal</xsl:text>
+                                </note>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </notesStmt>
                     <!-- PL: pour les suppinfo, sous fileDesc/editionStmt/edition/ref, solution de HAL -->
                     <xsl:if test="pubfm/suppinfo">
                         <editionStmt>
@@ -209,11 +291,19 @@
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="article-meta/title-group/*"/>
                 <xsl:apply-templates select="//fm/atl"/>
-                <!-- SG - ajout articleID -->
-                <idno type="articleId">
-                    <xsl:value-of select="//ArticleId | //article/@id"/>
-                </idno>
+                <!-- ajout identifiants ISTEX et ARK -->
+                <xsl:if test="string-length($idistex) &gt; 0 ">
+                    <idno type="istex">
+                        <xsl:value-of select="$idistex"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="string-length($arkistex) &gt; 0 ">
+                    <idno type="ark">
+                        <xsl:value-of select="$arkistex"/>
+                    </idno>
+                </xsl:if>
                 <xsl:apply-templates select="doi"/>
+                <xsl:apply-templates select="article-meta/article-id"/>
             </analytic>
             <monogr>
                 <xsl:apply-templates select="journal-meta/journal-title | jtl | suppmast/jtl | suppmast/suppttl"/>
@@ -239,10 +329,12 @@
                             article-meta/volume | vol | suppmast/vol | suppmast/iss | article-meta/issue | iss
                             | article-meta/fpage | pp/spn | pp/epn | article-meta/lpage
                             | article-meta/elocation-id"/>
+				    <biblScope unit="count-page">
+				        <xsl:value-of select="//article/front/article-meta/counts/page-count/@count"/>
+				    </biblScope>
                     <xsl:apply-templates select="copyright-year | cpg/cpy"/>
-                </imprint>
+				</imprint>
             </monogr>
-            <xsl:apply-templates select="article-meta/article-id"/>
         </biblStruct>
     </xsl:template>
 

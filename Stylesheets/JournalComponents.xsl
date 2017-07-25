@@ -348,11 +348,6 @@
             <idno type="PII">
                 <xsl:value-of select="normalize-space(.)"/>
             </idno>
-            <xsl:if test="//publisher-name = 'Cambridge University Press'">
-                <idno type="publisherID">
-                    <xsl:value-of select="normalize-space(.)"/>
-                </idno>
-            </xsl:if>
         </xsl:if>
     </xsl:template>
 
@@ -389,11 +384,22 @@
     <!-- Elements for Imprint components in Elsevier () -->
     
     <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume'] | wiley:vol">
-        <xsl:if test="normalize-space(.)">
-            <biblScope unit="vol">
-                <xsl:apply-templates/>
-            </biblScope>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="ancestor::citation | ancestor::mixed-citation">
+                <bibl>
+                    <biblScope unit="vol">
+                        <xsl:apply-templates/>
+                    </biblScope>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="normalize-space(.)">
+                    <biblScope unit="vol">
+                        <xsl:apply-templates/>
+                    </biblScope>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- 2 special rules for Springer that provides, beginning and end volume number -->
@@ -421,11 +427,22 @@
     </xsl:template>
 
     <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue'] | wiley:issue">
-        <xsl:if test="normalize-space(.)">
-            <biblScope unit="issue">
-                <xsl:apply-templates/>
-            </biblScope>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="ancestor::citation | ancestor::mixed-citation">
+                <bibl>
+                    <biblScope unit="issue">
+                        <xsl:apply-templates/>
+                    </biblScope>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="normalize-space(.)">
+                    <biblScope unit="issue">
+                        <xsl:apply-templates/>
+                    </biblScope>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- 2 special rules for Springer that provides, beginning and end volume number -->
@@ -458,20 +475,42 @@
     <!-- Pagination -->
 
     <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst'] | wiley:pageFirst">
-        <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
-            <biblScope unit="page" from="{normalize-space(.)}">
-                <xsl:value-of select="normalize-space(.)"/>
-            </biblScope>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="ancestor::citation | ancestor::mixed-citation">
+                <bibl>
+                    <biblScope unit="page" from="{normalize-space(.)}">
+                        <xsl:value-of select="normalize-space(.)"/>
+                    </biblScope>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
+                    <biblScope unit="page" from="{normalize-space(.)}">
+                        <xsl:value-of select="normalize-space(.)"/>
+                    </biblScope>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
 <!-- SG: nettoyage caractéres polluants dans les données -->
     <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast'] | wiley:pageLast">
-        <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
-            <biblScope unit="page" to="{translate(.,'normalize-space(.)','')}">
-                <xsl:value-of select="translate(.,'normalize-space(.)','')"/>
-            </biblScope>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="ancestor::citation | ancestor::mixed-citation">
+                <bibl>
+                    <biblScope unit="page" to="{translate(.,'normalize-space(.)','')}">
+                        <xsl:value-of select="translate(.,'normalize-space(.)','')"/>
+                    </biblScope>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
+                    <biblScope unit="page" to="{translate(.,'normalize-space(.)','')}">
+                        <xsl:value-of select="translate(.,'normalize-space(.)','')"/>
+                    </biblScope>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <!--SG - ajout nombre de pages -->
