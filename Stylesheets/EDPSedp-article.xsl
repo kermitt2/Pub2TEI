@@ -139,7 +139,7 @@
     <xsl:template match="/edp-article/author" mode="EDP">
         <author>
             <xsl:if test="@corresp='yes'">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>

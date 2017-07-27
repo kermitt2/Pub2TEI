@@ -48,7 +48,7 @@
         <!-- pi="yes" corrpi="yes" ?????? -->
         <author>
             <xsl:if test="@corresp='yes'">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>

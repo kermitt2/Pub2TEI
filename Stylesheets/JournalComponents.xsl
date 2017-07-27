@@ -385,7 +385,7 @@
     
     <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume'] | wiley:vol">
         <xsl:choose>
-            <xsl:when test="ancestor::citation | ancestor::mixed-citation">
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation">
                 <bibl>
                     <biblScope unit="vol">
                         <xsl:apply-templates/>
@@ -428,7 +428,7 @@
 
     <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue'] | wiley:issue">
         <xsl:choose>
-            <xsl:when test="ancestor::citation | ancestor::mixed-citation">
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation">
                 <bibl>
                     <biblScope unit="issue">
                         <xsl:apply-templates/>
@@ -476,7 +476,7 @@
 
     <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst'] | wiley:pageFirst">
         <xsl:choose>
-            <xsl:when test="ancestor::citation | ancestor::mixed-citation">
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation">
                 <bibl>
                     <biblScope unit="page" from="{normalize-space(.)}">
                         <xsl:value-of select="normalize-space(.)"/>
@@ -496,7 +496,7 @@
 <!-- SG: nettoyage caractéres polluants dans les données -->
     <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast'] | wiley:pageLast">
         <xsl:choose>
-            <xsl:when test="ancestor::citation | ancestor::mixed-citation">
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation">
                 <bibl>
                     <biblScope unit="page" to="{translate(.,'normalize-space(.)','')}">
                         <xsl:value-of select="translate(.,'normalize-space(.)','')"/>

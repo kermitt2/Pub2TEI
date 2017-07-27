@@ -141,7 +141,7 @@
         <author>
             <xsl:if
                 test="@corresp='yes' or (Affiliation and not(preceding-sibling::Author/Affiliation))">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>

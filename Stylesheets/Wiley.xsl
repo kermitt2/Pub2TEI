@@ -1091,17 +1091,6 @@
                                     </address>
                         </xsl:if>
                     </xsl:if>
-                    
-                    <!--<xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
-                    <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
-                        <address>
-						<country>
-				            <xsl:attribute name="key">
-				                <xsl:value-of select="//affiliation[@xml:id=$aff]/@countryCode"/>
-				            </xsl:attribute>
-						</country>
-					</address>
-                    </xsl:if>-->
                 </affiliation>
                 <xsl:call-template name="tokenize">
                     <xsl:with-param name="text" select="substring-after($text, $separator)"/>

@@ -328,7 +328,7 @@
             <xsl:variable name="structId" select="ce:cross-ref/@refid"/>
             <xsl:for-each select="$structId">
                 <xsl:if test="//ce:correspondence[@id=.]">
-                    <xsl:attribute name="type">
+                    <xsl:attribute name="role">
                         <xsl:text>corresp</xsl:text>
                     </xsl:attribute>
                 </xsl:if>

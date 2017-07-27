@@ -129,7 +129,7 @@
     <xsl:template match="/article/art-front/authgrp/author">
         <author>
             <xsl:if test="@role='corres'">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>

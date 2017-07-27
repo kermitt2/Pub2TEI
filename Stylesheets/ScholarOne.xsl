@@ -210,7 +210,7 @@
     <xsl:template match="author">
         <author>
             <xsl:if test="@corr='true'">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>

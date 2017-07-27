@@ -113,15 +113,20 @@
     <xsl:template name="createArticle">
         <xsl:param name="entry"/>
         <biblStruct type="article">
-            <xsl:apply-templates select="@id"/>
+            <xsl:attribute name="xml:id">
+                <xsl:apply-templates select="$entry/@id"/>
+            </xsl:attribute>
             <analytic>
-                <!-- All authors are included here -->
-                <xsl:apply-templates select="$entry/person-group | $entry/citauth"/>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="$entry/article-title"/>
+                <!-- All authors are included here -->
+                    <xsl:apply-templates select="$entry/person-group | $entry/citauth | $entry/name"/>
+                <xsl:apply-templates select="$entry/object-id"/>
             </analytic>
             <monogr>
                 <xsl:apply-templates select="$entry/source | $entry/title"/>
+               <xsl:choose>
+                   <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
                 <imprint>
                     <xsl:apply-templates select="$entry/year"/>
                     <xsl:apply-templates select="$entry/volume | $entry/volumeno"/>
@@ -129,6 +134,13 @@
                     <xsl:apply-templates select="$entry/descendant::fpage"/>
                     <xsl:apply-templates select="$entry/descendant::lpage"/>
                 </imprint>
+                   </xsl:when>
+                   <xsl:otherwise>
+                       <imprint>
+                           <date/>
+                       </imprint>
+                   </xsl:otherwise>
+               </xsl:choose>
             </monogr>
             <xsl:apply-templates select="nlm-citation/pub-id"/>
         </biblStruct>
@@ -215,7 +227,9 @@
     <xsl:template name="createBook">
         <xsl:param name="entry"/>
         <biblStruct type="book">
-            <xsl:apply-templates select="@id"/>
+            <xsl:attribute name="xml:id">
+                <xsl:apply-templates select="$entry/@id"/>
+            </xsl:attribute>
             <monogr>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="$entry/person-group"/>
@@ -234,7 +248,9 @@
     <!-- Unspecified reference (old style) -->
     <xsl:template match="ref">
         <bibl>
-            <xsl:apply-templates select="@id"/>
+            <xsl:attribute name="xml:id">
+                <xsl:apply-templates select="citation/@id"/>
+            </xsl:attribute>
             <xsl:apply-templates select="citation"/>
         </bibl>
     </xsl:template>
@@ -344,7 +360,12 @@
             <xsl:apply-templates/>
         </idno>
     </xsl:template>
-
+    <xsl:template match="object-id">
+        <idno>
+            <xsl:attribute name="type">doi</xsl:attribute>
+            <xsl:apply-templates/>
+        </idno>
+    </xsl:template>
     <!-- Generic transformation of the @id attribute -->
     <!-- If the source contains duplicated values (it does exist!) than the duplicated are renamed by order of appearance -->
 

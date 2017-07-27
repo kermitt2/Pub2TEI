@@ -16,9 +16,9 @@
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates select="* except tgroup"/>
-			<table>
+			<!--<table>
 				<xsl:apply-templates select="tgroup"/>
-			</table>
+			</table>-->
         </figure>
     </xsl:template>
 

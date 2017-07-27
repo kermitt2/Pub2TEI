@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-    xmlns="http://www.tei-c.org/ns/1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML/" 
+    xmlns="http://www.tei-c.org/ns/1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML/" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	xmlns:wiley="http://www.wiley.com/namespaces/wiley"
     exclude-result-prefixes="#all">
 
@@ -793,14 +793,19 @@
     </xsl:template>-->
     
     <!-- SG reprise wiley:inlineGraphic dans body -->
-    <xsl:template match="wiley:inlineGraphic">
+    <xsl:template match="wiley:inlineGraphic | inline-graphic">
         <graphic>
-            <xsl:if test="@location !=''">
+            <xsl:if test="normalize-space(@location)">
                 <xsl:attribute name="url">
                     <xsl:value-of select="@location"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:if test="@alt !=''">
+            <xsl:if test="normalize-space(@xlink:href)">
+                <xsl:attribute name="url">
+                    <xsl:value-of select="@xlink:href"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="normalize-space(@alt)">
                 <xsl:attribute name="rend">
                     <xsl:value-of select="@alt"/>
                 </xsl:attribute>

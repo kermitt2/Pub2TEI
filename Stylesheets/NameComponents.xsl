@@ -6,9 +6,20 @@
     
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
     <xsl:template match="name | persname | auname">
-        <persName>
-            <xsl:apply-templates/>
-        </persName>
+        <xsl:choose>
+            <xsl:when test="ancestor::citation">
+                <author>
+                    <persName>
+                        <xsl:apply-templates/>
+                    </persName>
+                </author>
+            </xsl:when>
+            <xsl:otherwise>
+                <persName>
+                    <xsl:apply-templates/>
+                </persName>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="collab | sb:collaboration">
@@ -93,7 +104,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="degree | corresponding-author-title | person_title | degrees | ce:degrees | wiley:degrees">
-        <xsl:if test=". != ''">
+        <xsl:if test="normalize-space(.)">
             <roleName type="degree">
                 <xsl:apply-templates/>
             </roleName>
@@ -127,7 +138,7 @@
     </xsl:template>
 
     <xsl:template match="role | prefix | ce:roles">
-        <xsl:if test="normalize-space(.) != ''">
+        <xsl:if test="normalize-space(.)">
             <roleName>
                 <xsl:apply-templates/>
             </roleName>
