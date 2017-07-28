@@ -166,7 +166,7 @@
         </date>
     </xsl:template>
 
-    <xsl:template match="title-group/fn-group"/>
+    <!--<xsl:template match="title-group/fn-group"/>-->
 
     <!-- Inline affiliation (embedded in <contrib>) -->
     <xsl:template match="authgrp/aff">

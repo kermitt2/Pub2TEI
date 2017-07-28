@@ -322,9 +322,9 @@
     <xsl:template match="wiley:publicationMeta[@level='unit']/wiley:idGroup/wiley:id">
             <idno>
                 <xsl:attribute name="type">
-                    <xsl:apply-templates select="@type"/>
+                    <xsl:value-of select="@type"/>
                 </xsl:attribute>
-                <xsl:apply-templates select="@value"/>
+                <xsl:value-of select="@value"/>
             </idno>
     </xsl:template>
     <xsl:template match="wiley:publicationMeta[@level='unit']/wiley:linkGroup/wiley:link">
@@ -365,8 +365,7 @@
     <!-- Publisher IDs when different from above -->
     <!-- NLM 2.2: article-id[@pub-id-type='publisher-id'] -->
 
-    <xsl:template
-        match="article-id[@pub-id-type='publisher-id'] | els:aid  | EDPSRef | edps-ref | Article/@ID">
+    <xsl:template match="els:aid  | EDPSRef | edps-ref | Article/@ID">
         <xsl:if test="normalize-space(.) and not(//publisher-name = 'Cambridge University Press')">
             <idno type="publisherID">
                 <xsl:value-of select="."/>
@@ -476,7 +475,7 @@
 
     <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst'] | wiley:pageFirst">
         <xsl:choose>
-            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation">
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation |ancestor::product/.">
                 <bibl>
                     <biblScope unit="page" from="{normalize-space(.)}">
                         <xsl:value-of select="normalize-space(.)"/>
@@ -516,7 +515,7 @@
     <!--SG - ajout nombre de pages -->
     <xsl:template match="wiley:count[@type='pageTotal']">
         <xsl:if test="normalize-space(@number)">
-            <biblScope unit="count-page">
+            <biblScope unit="page-count">
                 <xsl:value-of select="@number"/>
             </biblScope>
         </xsl:if>
@@ -532,19 +531,41 @@
 
     <xsl:template
         match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher'] | wiley:publisherName">
-        <xsl:if test="normalize-space(.)">
-            <publisher>
-                <xsl:apply-templates/>
-            </publisher>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="ancestor::p/. |ancestor::product/.">
+                <bibl>
+                <publisher>
+                    <xsl:apply-templates/>
+                </publisher>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="normalize-space(.)">
+                    <publisher>
+                        <xsl:apply-templates/>
+                    </publisher>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="publisher-loc | pub_location | PublisherLocation | wiley:publisherLoc">
-        <xsl:if test="normalize-space()">
-            <pubPlace>
-                <xsl:apply-templates/>
-            </pubPlace>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="ancestor::p/. |ancestor::product/.">
+                <bibl>
+                    <pubPlace>
+                        <xsl:apply-templates/>
+                    </pubPlace>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="normalize-space(.)">
+                    <pubPlace>
+                        <xsl:apply-templates/>
+                    </pubPlace>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="reftxt/cd">

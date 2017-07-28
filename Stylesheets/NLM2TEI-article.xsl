@@ -150,6 +150,11 @@
                                 </note>
                             </xsl:otherwise>
                         </xsl:choose>
+                        <xsl:if test="front/article-meta/volume-id">
+                            <note type="edition">
+                                <xsl:value-of select="front/article-meta/volume-id"/>
+                            </note>
+                        </xsl:if>
                     </notesStmt>
                     <!-- PL: pour les suppinfo, sous fileDesc/editionStmt/edition/ref, solution de HAL -->
                     <xsl:if test="pubfm/suppinfo">
@@ -176,6 +181,7 @@
                         <xsl:apply-templates select="front | pubfm | suppfm" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
+                <!-- ProfileDesc -->
                 <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject">
                     <profileDesc>
                         <!-- PL: abstract is moved from <front> to here -->
@@ -208,7 +214,8 @@
                     </front>
                 </xsl:if-->
                 <!-- No test if made for body since it is considered a mandatory element -->
-                <xsl:if test="body/* | bdy/p | bdy/sec | bdy/corres/*">
+                <xsl:choose>
+                    <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*">
                 <body>
                     <xsl:choose>
                         <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*">
@@ -233,16 +240,26 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </body>
-                </xsl:if>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <body>
+                            <div>
+                                <p/>
+                            </div>
+                        </body>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:if test="sub-article">
                     <group>
                         <xsl:apply-templates select="sub-article"/>
                     </group>
                 </xsl:if>
                 
-                <xsl:if test="back | bm">
+                <xsl:if test="back | bm |front/article-meta/product">
                     <back>
                         <xsl:apply-templates select="back/* | bm/ack | bm/bibl"/>
+                        <!-- SG - source des book-reviews, données qualifiés de production chez Cambridge -->
+                        <xsl:apply-templates select="front/article-meta/product"/>
                     </back>
                 </xsl:if>
             </text>
@@ -261,6 +278,7 @@
                     <fileDesc>
                         <titleStmt>
                             <xsl:apply-templates select="front/article-meta/title-group/article-title | fm/atl"/>
+                            <xsl:apply-templates select="front/article-meta/fn-group/fn"/>
                         </titleStmt>
                         <!-- PL: pour les suppinfo, sous fileDesc/editionStmt/edition/ref, solution de HAL --> 
                         <xsl:if test="pubfm/suppinfo">
@@ -442,6 +460,7 @@
             <analytic>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="article-meta/title-group/*"/>
+                <xsl:apply-templates select="article-meta/title-group/fn-group/*"/>
                 <xsl:apply-templates select="//fm/atl"/>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="article-meta/contrib-group/*[name() != 'aff']"/>
@@ -464,6 +483,7 @@
                 </xsl:if>
                 <xsl:apply-templates select="doi"/>
                 <xsl:apply-templates select="article-meta/article-id"/>
+                
             </analytic>
             <monogr>
                 <xsl:apply-templates select="journal-meta/journal-title | jtl | suppmast/jtl | suppmast/suppttl | article-meta/issue-title"/>
@@ -489,7 +509,7 @@
                             article-meta/volume | vol | suppmast/vol | suppmast/iss | article-meta/issue | iss
                             | article-meta/fpage | pp/spn | pp/epn | article-meta/lpage
                             | article-meta/elocation-id"/>
-				    <biblScope unit="count-page">
+				    <biblScope unit="page-count">
 				        <xsl:value-of select="//article/front/article-meta/counts/page-count/@count"/>
 				    </biblScope>
                     <xsl:apply-templates select="copyright-year | cpg/cpy"/>
@@ -673,14 +693,10 @@
                     <xsl:when test="addr-line | country">
                         <address>
                             <xsl:if test="addr-line">
-                            <addrLine>
-                                <xsl:value-of select="normalize-space(addr-line)"/>
-                            </addrLine>
+                                <xsl:apply-templates select="addr-line"/>
                             </xsl:if>
                             <xsl:if test="country">
-                                <country>
-                                    <xsl:value-of select="normalize-space(country)"/>
-                                </country>
+                                <xsl:apply-templates select="country"/>
                             </xsl:if>
                         </address>
                     </xsl:when>
@@ -1085,19 +1101,40 @@
     </xsl:template>
 
     <xsl:template match="fn-group/fn">
-        <note place="inline">
-            <xsl:if test="@fn-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@fn-type"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </note>
+        <xsl:choose>
+            <xsl:when test="ancestor::title-group/fn-group/fn">
+                <title type="note">
+                    <note>
+                        <xsl:if test="@fn-type">
+                            <xsl:attribute name="type">
+                                <xsl:value-of select="@fn-type"/>
+                            </xsl:attribute>
+                        </xsl:if>
+                        <xsl:if test="@id">
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="@id"/>
+                            </xsl:attribute>
+                        </xsl:if>
+                        <xsl:apply-templates/>
+                    </note>
+                </title>
+            </xsl:when>
+            <xsl:otherwise>
+                <note place="inline">
+                    <xsl:if test="@fn-type">
+                        <xsl:attribute name="type">
+                            <xsl:value-of select="@fn-type"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </note>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="fn/label">
@@ -1327,6 +1364,13 @@
                 <xsl:apply-templates select="descrip/*"/>
             </note>
         </ref>
+    </xsl:template>
+    <xsl:template match="front/article-meta/product">
+        <div type="product">
+            <p>
+        <xsl:apply-templates/>
+            </p>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>

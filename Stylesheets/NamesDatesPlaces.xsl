@@ -248,11 +248,14 @@
                     <xsl:apply-templates select="*"/>
                 </xsl:when>
              <xsl:otherwise>
-                 <xsl:if test="not(ancestor::corresp)">
+               <!--  <xsl:if test="not(ancestor::corresp)">
                     <addrLine>
                         <xsl:apply-templates/>
                     </addrLine>
-                 </xsl:if>
+                 </xsl:if>-->
+                 <addrLine>
+                     <xsl:apply-templates/>
+                 </addrLine>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
