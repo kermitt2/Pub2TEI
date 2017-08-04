@@ -134,11 +134,11 @@
     </xsl:template>
     
     <xsl:template match="array">
-        <ab type="array">
+        <ref type="array">
             <table>
                 <xsl:apply-templates/>
             </table>
-        </ab>
+        </ref>
     </xsl:template>
 
     <xsl:template match="th">

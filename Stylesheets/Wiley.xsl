@@ -409,10 +409,14 @@
                     <back>
                         <!-- note de bas de page -->
                         <xsl:if test="header/noteGroup/note">
-                            <xsl:apply-templates select="header/noteGroup/note"/> 
+                            <div type="fn-group">
+                            <xsl:apply-templates select="header/noteGroup/note"/>
+                            </div>
                         </xsl:if>
                         <xsl:if test="body/noteGroup/note">
-                            <xsl:apply-templates select="body/noteGroup/note"/> 
+                            <div type="fn-group">
+                            <xsl:apply-templates select="body/noteGroup/note"/>
+                            </div>
                         </xsl:if>
                         <xsl:apply-templates select="body/bibliography"/>
                         <xsl:apply-templates select="header/contentMeta/supportingInformation"/>
@@ -881,8 +885,7 @@
     </xsl:template>
 	
     <xsl:template match="header/noteGroup/note">
-        <div type="note">
-		<note>
+        <note place="inline">
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
@@ -893,11 +896,9 @@
 		    </xsl:if>
         	<xsl:apply-templates/>
 		</note>
-        </div>
     </xsl:template>
     <xsl:template match="body/noteGroup/note">
-        <div type="note">
-        <note>
+        <note place="inline">
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
@@ -908,7 +909,6 @@
             </xsl:if>
             <xsl:apply-templates/>
         </note>
-        </div>
     </xsl:template>
     
     <!-- SG - reprise traitement des affiliations multiples -->
