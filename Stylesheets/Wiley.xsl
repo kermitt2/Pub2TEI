@@ -283,13 +283,6 @@
                                 </note>
                             </xsl:otherwise>
                         </xsl:choose>
-                        <!-- note de bas de page -->
-                        <xsl:if test="header/noteGroup/note">
-                              <xsl:apply-templates select="header/noteGroup/note"/> 
-                        </xsl:if>
-                        <xsl:if test="body/noteGroup/note">
-                            <xsl:apply-templates select="body/noteGroup/note"/> 
-                        </xsl:if>
                     </notesStmt>
                     <sourceDesc>
                         <xsl:apply-templates select="header" mode="sourceDesc"/>
@@ -412,8 +405,15 @@
                         <body><div><p></p></div></body>
                     </xsl:otherwise>
                 </xsl:choose>
-                <xsl:if test="body/bibliography">
+                <xsl:if test="body/bibliography|header/noteGroup/note|body/noteGroup/note">
                     <back>
+                        <!-- note de bas de page -->
+                        <xsl:if test="header/noteGroup/note">
+                            <xsl:apply-templates select="header/noteGroup/note"/> 
+                        </xsl:if>
+                        <xsl:if test="body/noteGroup/note">
+                            <xsl:apply-templates select="body/noteGroup/note"/> 
+                        </xsl:if>
                         <xsl:apply-templates select="body/bibliography"/>
                         <xsl:apply-templates select="header/contentMeta/supportingInformation"/>
                     </back>
@@ -881,6 +881,7 @@
     </xsl:template>
 	
     <xsl:template match="header/noteGroup/note">
+        <div>
 		<note type="foot-note">
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@xml:id"/>
@@ -892,8 +893,10 @@
 		    </xsl:if>
         	<xsl:apply-templates/>
 		</note>
+        </div>
     </xsl:template>
     <xsl:template match="body/noteGroup/note">
+        <div>
         <note type="note">
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@xml:id"/>
@@ -905,6 +908,7 @@
             </xsl:if>
             <xsl:apply-templates/>
         </note>
+        </div>
     </xsl:template>
     
     <!-- SG - reprise traitement des affiliations multiples -->
