@@ -469,7 +469,7 @@
                    <xsl:attribute name="xml:id">
                        <xsl:value-of select="$id"/>
                    </xsl:attribute>
-                   <xsl:attribute name="sortKey">
+                   <xsl:attribute name="n">
                        <xsl:value-of select="@xml:id"/>
                    </xsl:attribute>
                    <xsl:if test="wiley:articleTitle | wiley:chapterTitle | wiley:author | wiley:groupName">
