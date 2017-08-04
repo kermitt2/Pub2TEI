@@ -881,8 +881,8 @@
     </xsl:template>
 	
     <xsl:template match="header/noteGroup/note">
-        <div>
-		<note type="foot-note">
+        <div type="note">
+		<note>
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
@@ -896,8 +896,8 @@
         </div>
     </xsl:template>
     <xsl:template match="body/noteGroup/note">
-        <div>
-        <note type="note">
+        <div type="note">
+        <note>
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@xml:id"/>
             </xsl:attribute>
