@@ -468,9 +468,10 @@
         <xsl:choose>
             <xsl:when test="wiley:articleTitle | wiley:journalTitle">
                <biblStruct type="journal">
-                  <!-- <xsl:attribute name="n">
+                  <xsl:attribute name="corresp">
+                      <xsl:text>#</xsl:text>
                        <xsl:value-of select="$id"/>
-                   </xsl:attribute>-->
+                   </xsl:attribute>
                    <xsl:attribute name="xml:id">
                        <xsl:value-of select="@xml:id"/>
                    </xsl:attribute>
