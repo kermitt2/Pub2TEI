@@ -64,17 +64,12 @@
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="wiley:mediaResourceGroup">
-        <xsl:apply-templates select="wiley:mediaResource"/>
+        <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="wiley:mediaResource">
         <xsl:choose>
             <xsl:when test="ancestor::wiley:abstract and not(ancestor::wiley:blockFixed) ">
                 <media>
-                    <xsl:if test="ancestor::wiley:chemicalStructure/@xml:id">
-                        <xsl:attribute name="xml:id">
-                            <xsl:value-of select="ancestor::wiley:chemicalStructure/@xml:id"/>
-                        </xsl:attribute>
-                    </xsl:if>
                     <xsl:choose>
                         <xsl:when test="@mimeType !=''">
                             <xsl:attribute name="mimeType">
@@ -103,11 +98,7 @@
             </xsl:when>
             <xsl:otherwise>
                     <media>
-                        <xsl:if test="ancestor::wiley:chemicalStructure/@xml:id">
-                            <xsl:attribute name="xml:id">
-                                <xsl:value-of select="ancestor::wiley:chemicalStructure/@xml:id"/>
-                            </xsl:attribute>
-                        </xsl:if>
+                        
                         <xsl:choose>
                             <xsl:when test="@mimeType !=''">
                                 <xsl:attribute name="mimeType">

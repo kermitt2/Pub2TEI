@@ -666,7 +666,7 @@
     </xsl:template>
     <xsl:template match="wiley:span">
         <xsl:if test=".">
-            <span><xsl:apply-templates/></span>
+            <emph><span><xsl:apply-templates/></span></emph>
         </xsl:if>
     </xsl:template>
     
