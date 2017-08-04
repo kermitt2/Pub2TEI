@@ -251,6 +251,9 @@
                     <notesStmt>
                         <!-- niveau article / chapter -->
                         <note type="content-type">
+                            <xsl:attribute name="subtype">
+                                <xsl:value-of select="$codeGenreA"/>
+                            </xsl:attribute>
                             <xsl:attribute name="source">
                                 <xsl:value-of select="$codeGenre1"/>
                             </xsl:attribute>
@@ -262,19 +265,19 @@
                         <!-- niveau revue / book -->
                         <xsl:choose>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
-                                <note type="publication-type">
+                                <note type="publication-type" subtype="book-series">
                                     <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
-                                <note type="publication-type">
+                                <note type="publication-type" subtype="book">
                                     <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:otherwise>
-                                <note type="publication-type">
+                                <note type="publication-type" subtype="journal">
                                     <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
                                     <xsl:text>journal</xsl:text>
                                 </note>

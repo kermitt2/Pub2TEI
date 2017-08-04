@@ -129,6 +129,11 @@
                     <xsl:apply-templates/>
                 </xsl:otherwise>
             </xsl:choose>
+            <xsl:if test="wiley:accessionId[string-length()&gt;0]">
+                <idno>
+                    <xsl:value-of select="wiley:accessionId"/>
+                </idno>
+            </xsl:if>
         </item>
     </xsl:template>
     

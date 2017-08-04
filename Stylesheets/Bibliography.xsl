@@ -467,6 +467,9 @@
             <xsl:when test="wiley:articleTitle | wiley:journalTitle">
                <biblStruct type="journal">
                    <xsl:attribute name="xml:id">
+                       <xsl:value-of select="$id"/>
+                   </xsl:attribute>
+                   <xsl:attribute name="sortKey">
                        <xsl:value-of select="@xml:id"/>
                    </xsl:attribute>
                    <xsl:if test="wiley:articleTitle | wiley:chapterTitle | wiley:author | wiley:groupName">
