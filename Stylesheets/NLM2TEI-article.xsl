@@ -66,12 +66,25 @@
         <xsl:message>NLM2TEI-article.xsl</xsl:message>
         <TEI>
             <xsl:if test="@xml:lang">
-                <xsl:copy-of select="@xml:lang"/>
+                <xsl:choose>
+                    <xsl:when test="normalize-space(//article/@xml:lang)='IW'"><xsl:attribute name="xml:lang">HE</xsl:attribute></xsl:when>
+                    <xsl:when test="normalize-space(//article/@xml:lang)='fn'"><xsl:attribute name="xml:lang">EN</xsl:attribute></xsl:when>
+                    <xsl:otherwise>
+                        <xsl:copy-of select="@xml:lang"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:if>
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-                        <xsl:apply-templates select="front/article-meta/title-group/article-title | fm/atl"/>
+                        <!-- SG ajout corrections des titres vides -->
+                        <xsl:choose>
+                            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055172'"><title level="a" type="main">Semiconductor Materials and Process Technology Handbook</title></xsl:when>
+                            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055160'"><title level="a" type="main">Rapidly Solidified Metals— A Technological Overview</title></xsl:when>
+                            <xsl:otherwise>
+                                <xsl:apply-templates select="front/article-meta/title-group/article-title | fm/atl"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </titleStmt>
                     <!-- PL: pour les suppinfo, sous fileDesc/editionStmt/edition/ref, solution de HAL --> 
                     <xsl:if test="pubfm/suppinfo">
@@ -182,7 +195,7 @@
                     </sourceDesc>
                 </fileDesc>
                 <!-- ProfileDesc -->
-                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject">
+                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject or @xml:lang">
                     <profileDesc>
                         <!-- PL: abstract is moved from <front> to here -->
                         <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
@@ -200,6 +213,22 @@
                             </textClass>
                         </xsl:if>
                         <xsl:apply-templates select="front/article-meta/kwd-group"/>
+                        <!-- language -->
+                        <xsl:if test="@xml:lang">
+                            <langUsage>
+                                <language>
+                                    <xsl:attribute name="ident">
+                            <xsl:choose>
+                                <xsl:when test="normalize-space(//article/@xml:lang)='IW'">HE</xsl:when>
+                                <xsl:when test="normalize-space(//article/@xml:lang)='fn'">EN</xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="@xml:lang"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                                    </xsl:attribute>
+                                </language>
+                            </langUsage>
+                        </xsl:if>
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="front/article-meta/history">
@@ -458,10 +487,17 @@
             </xsl:if>
 
             <analytic>
-                <!-- Title information related to the paper goes here -->
-                <xsl:apply-templates select="article-meta/title-group/*"/>
-                <xsl:apply-templates select="article-meta/title-group/fn-group/*"/>
-                <xsl:apply-templates select="//fm/atl"/>
+                <!-- SG ajout corrections des titres vides -->
+                <xsl:choose>
+                    <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055172'"><title level="a" type="main">Semiconductor Materials and Process Technology Handbook</title></xsl:when>
+                    <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055160'"><title level="a" type="main">Rapidly Solidified Metals— A Technological Overview</title></xsl:when>
+                    <xsl:otherwise>
+                        <!-- Title information related to the paper goes here -->
+                        <xsl:apply-templates select="article-meta/title-group/*"/>
+                        <xsl:apply-templates select="article-meta/title-group/fn-group/*"/>
+                        <xsl:apply-templates select="//fm/atl"/>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="article-meta/contrib-group/*[name() != 'aff']"/>
                 <xsl:if test="/article/fm/aug | /headerx/fm/aug">

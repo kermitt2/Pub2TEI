@@ -24,13 +24,10 @@
         match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle">
         <xsl:if test="normalize-space(.)">
             <title level="a" type="main">
-                <!--xsl:choose>
-                    <xsl:when test="wiley:citation[@type='book']"></xsl:when>
-                </xsl:choose-->
                 <xsl:if test="@Language">
                     <xsl:attribute name="xml:lang">
                         <xsl:choose>
-                            <xsl:when test="@Language='--'">
+                            <xsl:when test="@Language=''">
                                 <xsl:text>en</xsl:text>
                             </xsl:when>
                             <xsl:otherwise>

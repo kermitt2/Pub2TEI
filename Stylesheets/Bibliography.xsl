@@ -30,7 +30,9 @@
                     </xsl:attribute>
                 </bibl>
                 </xsl:for-each>-->
-                <xsl:for-each select="wiley:bibSection/wiley:bib">
+                
+               <!-- <xsl:for-each select="wiley:bibSection/wiley:bib">
+                    
                     <bibl>
                         <xsl:attribute name="xml:id">
                             <xsl:value-of select="@xml:id"/>
@@ -45,7 +47,8 @@
                             <xsl:value-of select="normalize-space($bib)"/>
                         </xsl:attribute>
                     </bibl>
-                </xsl:for-each>
+                </xsl:for-each>-->
+                
                 <xsl:apply-templates select="ref | citgroup | ce:bibliography-sec | bib | wiley:bib | wiley:bibSection"/>
             </listBibl>
         </div>
