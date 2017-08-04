@@ -109,7 +109,6 @@
     <xsl:template match="component">
         <xsl:message>Wiley.xsl</xsl:message>
         <TEI>
-            <!-- correction des codes langues suivant les données -->
             <xsl:attribute name="xml:lang">
                 <xsl:value-of select="$codeLangue"/>
             </xsl:attribute>
@@ -380,6 +379,15 @@
 							    </xsl:if>
 							</textClass>
 						</xsl:if>
+                        <xsl:if test="$codeLangue">
+                        <langUsage>
+                            <language>
+                                <xsl:attribute name="ident">
+                                    <xsl:value-of select="$codeLangue"/>
+                                </xsl:attribute>
+                            </language>
+                        </langUsage>
+                        </xsl:if>
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="front/article-meta/history">
