@@ -54,51 +54,51 @@
     <xsl:variable name="codeLangue">
         <xsl:choose>
             <xsl:when test="component/header/publicationMeta/issn[@type='print']='0378-5599'">
-                <xsl:text>FR</xsl:text>
+                <xsl:text>fr</xsl:text>
             </xsl:when>
             <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1002/(SICI)1099-0682(199809)1998:9&lt;1205::AID-EJIC1205&gt;3.0.CO;2-F' or header/publicationMeta[@level='unit']/doi='10.1002/(SICI)1521-3897(199910)341:7&lt;657::AID-PRAC657&gt;3.0.CO;2-P'or header/publicationMeta[@level='unit']/doi='10.1002/(SICI)1521-3897(199908)341:6&lt;568::AID-PRAC568&gt;3.0.CO;2-H'">
-                <xsl:text>EN</xsl:text>
+                <xsl:text>en</xsl:text>
             </xsl:when>
             <!-- correction ouzbeck 10.1002/asna.2103030307 -->
             <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1550-7408.1980.tb04229.x' or header/publicationMeta[@level='unit']/doi='10.1111/j.1365-3180.1990.tb01689.x'or header/publicationMeta[@level='unit']/doi='10.1002/asna.2103030307'or header/publicationMeta[@level='unit']/doi='10.1002/asna.2103030305'">
-                <xsl:text>DE</xsl:text>
+                <xsl:text>de</xsl:text>
             </xsl:when>
             <!-- correction arabe 10.1002/1522-239X(200210)113:5/6&lt;342::AID-FEDR342&gt;3.0.CO;2-S -->
             <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1002/1522-239X(200210)113:5/6&lt;342::AID-FEDR342&gt;3.0.CO;2-S'">
-                <xsl:text>ES</xsl:text>
+                <xsl:text>es</xsl:text>
             </xsl:when>
             <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00477.x' ">
-                <xsl:text>DE</xsl:text>
+                <xsl:text>de</xsl:text>
             </xsl:when>
             <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00484.x'">
-                <xsl:text>ES</xsl:text>
+                <xsl:text>es</xsl:text>
             </xsl:when>
             <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2007.00453.x'">
-                <xsl:text>IT</xsl:text>
+                <xsl:text>it</xsl:text>
             </xsl:when>
             <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00459.x'">
-                <xsl:text>FR</xsl:text>
+                <xsl:text>fr</xsl:text>
             </xsl:when>
             <xsl:when test="*/@xml:lang ='be'">
-                <xsl:text>NL</xsl:text>
+                <xsl:text>nl</xsl:text>
             </xsl:when>
             <xsl:when test="*/@xml:lang='ka'">
                 <xsl:choose>
                     <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00489.x'">
-                        <xsl:text>IT</xsl:text>
+                        <xsl:text>it</xsl:text>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:text>DE</xsl:text>
+                        <xsl:text>de</xsl:text>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:choose>
-                    <xsl:when test="component/header/contentMeta/titleGroup/title[@type='main']/@xml:lang">
-                        <xsl:value-of select="translate(component/header/contentMeta/titleGroup/title[@type='main']/@xml:lang,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+               <xsl:choose>
+                    <xsl:when test="component/header/contentMeta/titleGroup/title[@type='main'][1]/@xml:lang">
+                        <xsl:value-of select="component/header/contentMeta/titleGroup/title[@type='main'][1]/@xml:lang"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="translate(component/@xml:lang,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+                        <xsl:value-of select="component/@xml:lang"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:otherwise>
