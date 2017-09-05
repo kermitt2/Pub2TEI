@@ -1753,11 +1753,11 @@
                     <xsl:if test="//noteGroup/note[@xml:id=$note][string-length() &gt; 0 ]">
                         <xsl:for-each select="//noteGroup/note[@xml:id=$note]">
                             <note type="foot">
-                                <xsl:value-of select="normalize-space(p)"/>
+                                <xsl:value-of select="p"/>
                             </note>
                             <xsl:if test="p/email">
                                 <email>
-                                    <xsl:value-of select="normalize-space(p/email)"/>
+                                    <xsl:value-of select="p/email"/>
                                 </email>  
                             </xsl:if>
                         </xsl:for-each>

@@ -481,7 +481,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
-                    <biblScope unit="page" from="{normalize-space(.)}">
+                    <biblScope unit="page" from="{translate(.,' ','')}">
                         <xsl:value-of select="normalize-space(.)"/>
                     </biblScope>
                 </xsl:if>
@@ -501,7 +501,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
-                    <biblScope unit="page" to="{translate(.,'normalize-space(.)','')}">
+                    <biblScope unit="page" to="{translate(.,' ','')}">
                         <xsl:value-of select="translate(.,'normalize-space(.)','')"/>
                     </biblScope>
                 </xsl:if>
