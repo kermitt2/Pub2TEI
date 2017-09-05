@@ -114,7 +114,13 @@
                         <xsl:if test="not(front/journal-meta/publisher)">
                             <publisher>Nature Publishing Group</publisher>
                         </xsl:if>
-                        <xsl:apply-templates select="front/article-meta/permissions/*"/>
+                        <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(front/article-meta/permissions/copyright-holder)">
+                            <availability>
+                                <xsl:apply-templates select="front/article-meta/permissions/copyright-statement"/>
+                                <xsl:apply-templates select="front/article-meta/permissions/copyright-holder"/>
+                            </availability>
+                        </xsl:if>
+                        <xsl:apply-templates select="front/article-meta/permissions/copyright-year"/>
                         <xsl:if test="not(front/article-meta/permissions)">
                             <xsl:apply-templates select="front/article-meta/copyright-statement | pubfm/cpg/cpn | suppfm/cpg/cpn"/>
                             <xsl:apply-templates select="front/article-meta/copyright-year | pubfm/cpg/cpy | suppfm/cpg/cpy"/>
@@ -1225,11 +1231,9 @@
 
     <!-- Copyright related information to appear in <publicationStmt> -->
     <xsl:template match="copyright-statement">
-        <availability>
             <p>
                 <xsl:apply-templates/>
             </p>
-        </availability>
     </xsl:template>
 
     <xsl:template match="permissions/license">
@@ -1272,12 +1276,10 @@
     </xsl:template>
 
     <xsl:template match="copyright-holder | cpn">
-        <availability>
             <!-- SG: ajout licence -->
             <licence>
                 <xsl:apply-templates/>
             </licence>
-        </availability>
     </xsl:template>
 
     <xsl:template match="allowbreak"/>
