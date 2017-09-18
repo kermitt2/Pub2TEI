@@ -244,7 +244,7 @@
 
     <xsl:template match="comments">
         <xsl:if test="normalize-space(.)">
->>>>>>> nettoyage des espaces vides dans le contenu des balises
+<!--nettoyage des espaces vides dans le contenu des balises-->
             <note>
                 <xsl:apply-templates/>
             </note>

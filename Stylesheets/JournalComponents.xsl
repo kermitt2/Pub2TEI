@@ -24,15 +24,38 @@
         match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle">
         <xsl:if test="normalize-space(.)">
             <title level="a" type="main">
-                <xsl:if test="@Language">
+                <xsl:if test="@Language | @xml:lang">
                     <xsl:attribute name="xml:lang">
                         <xsl:choose>
-                            <xsl:when test="@Language=''">
+                            <xsl:when test="@Language='' or @xml:lang=''">
                                 <xsl:text>en</xsl:text>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:call-template name="Varia2ISO639">
-                                    <xsl:with-param name="code" select="@Language"/>
+                                    <xsl:with-param name="code" select="@Language | @xml:lang"/>
+                                </xsl:call-template>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:apply-templates/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    <!-- EDP - trans-title-group -->
+    <xsl:template
+        match="trans-title-group">
+        <xsl:if test="normalize-space(.)">
+            <title level="a" type="alt">
+                <xsl:if test="@xml:lang">
+                    <xsl:attribute name="xml:lang">
+                        <xsl:choose>
+                            <xsl:when test="@xml:lang=''">
+                                <xsl:text>en</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:call-template name="Varia2ISO639">
+                                    <xsl:with-param name="code" select="@xml:lang"/>
                                 </xsl:call-template>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -70,6 +93,11 @@
                 <xsl:apply-templates/>
             </title>
         </xsl:if>
+    </xsl:template>
+    
+    <!-- EDP trans-title -->
+    <xsl:template match="trans-title">
+                <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="vernacular_title">

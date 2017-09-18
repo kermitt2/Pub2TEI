@@ -144,7 +144,7 @@
 
     <xsl:template match="Country | country | corresponding-author-country | cny">
         <xsl:if test="normalize-space(.)">
-            <xsl:variable name="countryWithNoSpace" select="normalize-space(.)"/>
+            <xsl:variable name="countryWithNoSpace" select="normalize-space(translate(.,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'))"/>
             <country>
                 <xsl:choose>
                     <xsl:when test="@country_code">
@@ -189,7 +189,7 @@
         <xsl:variable name="resultCode">
             <xsl:value-of select="$countryCodes/descendant::tei:row[tei:cell/text() = $country]/tei:cell[@role = 'name' and @xml:lang = 'en']"/>
         </xsl:variable>
-        <xsl:if test="not(normalize-space($resultCode))">
+       <xsl:if test="not(normalize-space($resultCode))">
             <xsl:message>Country: <xsl:value-of select="$country"/> - Code not found</xsl:message>
         </xsl:if>
         <xsl:value-of select="$resultCode"/>
@@ -238,13 +238,13 @@
         <xsl:if test="normalize-space(.)">
             <xsl:choose>
                 <xsl:when test="*">
-                    <xsl:if test="text()[. != ', ']">
+                 <!-- <xsl:if test="text()[. != ', ']">
                         <addrLine>
                             <xsl:for-each select="text()[. != ', ']">
                                 <xsl:value-of select="."/>
                             </xsl:for-each>
                         </addrLine>
-                    </xsl:if>
+                    </xsl:if>-->
                     <xsl:apply-templates select="*"/>
                 </xsl:when>
              <xsl:otherwise>

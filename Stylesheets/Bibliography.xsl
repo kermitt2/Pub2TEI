@@ -315,6 +315,8 @@
     <xsl:template match="string-name | citauth | wiley:author">
         <author>
             <persName>
+                <xsl:apply-templates select="surname"/>
+                <xsl:apply-templates select="given-names"/>
                 <xsl:apply-templates select="wiley:givenNames"/>
                 <xsl:apply-templates select="wiley:familyName"/>
             </persName>
