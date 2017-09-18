@@ -522,6 +522,11 @@
             </analytic>
             <monogr>
                 <xsl:choose>
+                    <xsl:when test="publicationMeta[@level='part']/creators/creator">
+                        <xsl:apply-templates select="publicationMeta[@level='part']/creators"/>
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:choose>
                     <xsl:when test="publicationMeta[@level='product']/titleGroup/title[@type ='main']">
                         <title level="j" type="main">
                             <xsl:value-of select="publicationMeta[@level='product']/titleGroup/title[@type ='main']"/>
@@ -545,6 +550,7 @@
                         <xsl:apply-templates select="publicationMeta[@level='product']/titleGroup/title/@sort"/>
                     </title>
                 </xsl:if>
+               
                 <xsl:apply-templates select="publicationMeta[@level='product']/issn"/>
                 <xsl:apply-templates select="publicationMeta[@level='product']/doi"/>
                 <xsl:apply-templates select="publicationMeta[@level='part']/doi"/>
@@ -709,6 +715,8 @@
 
     <!-- author related information -->
     <xsl:template match="creator">
+        <xsl:choose>
+            <xsl:when test="@creatorRole='author'">
         <author>
             <xsl:attribute name="xml:id">
                 <xsl:variable name="i" select="position()-1"/>
@@ -762,15 +770,34 @@
             </xsl:otherwise>
         </xsl:choose>
         </author>
-        <xsl:if test="@creatorRole='editor'">
-            <editor>
-                <xsl:apply-templates/>
-                <!-- affiliation -->
-                <xsl:if test="../aff">
-                    <xsl:apply-templates select="../aff" mode="sourceDesc"/>
-                </xsl:if>
-            </editor>
-        </xsl:if>
+            </xsl:when>
+            <xsl:when test="@creatorRole='editor' or @creatorRole='sponsoringEditor'">
+                <editor>
+                    <xsl:attribute name="xml:id">
+                        <xsl:variable name="i" select="position()-1"/>
+                        <xsl:choose>
+                            <xsl:when test="$i &lt; 10">
+                                <xsl:value-of select="concat('editor-000', $i)"/>
+                            </xsl:when>
+                            <xsl:when test="$i &lt; 100">
+                                <xsl:value-of select="concat('editor-00', $i)"/>
+                            </xsl:when>
+                            <xsl:when test="$i &lt; 1000">
+                                <xsl:value-of select="concat('editor-0', $i)"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="concat('editor-', $i)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:attribute>
+                    <xsl:apply-templates/>
+                    <!-- affiliation -->
+                    <xsl:if test="../aff">
+                        <xsl:apply-templates select="../aff" mode="sourceDesc"/>
+                    </xsl:if>
+                </editor>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="affiliation">	
