@@ -102,6 +102,14 @@
             <xsl:with-param name="entry" select="*[@citation-type='journal']"/>
         </xsl:call-template>
     </xsl:template>
+    
+    <!-- Journal paper -->
+    
+    <xsl:template match="ref[*/@citation-type='web']">
+        <xsl:call-template name="createArticle">
+            <xsl:with-param name="entry" select="*[@citation-type='web']"/>
+        </xsl:call-template>
+    </xsl:template>
 
     <!-- Journal paper in RCS -->
 
@@ -116,7 +124,7 @@
         <xsl:param name="entry"/>
         <biblStruct type="article">
             <xsl:attribute name="xml:id">
-                <xsl:apply-templates select="$entry/@id"/>
+                <xsl:apply-templates select="$entry/@id | @id"/>
             </xsl:attribute>
             <analytic>
                 <!-- Title information related to the paper goes here -->
@@ -127,7 +135,8 @@
             </analytic>
             <monogr>
                 <xsl:apply-templates select="$entry/source | $entry/title"/>
-               <xsl:choose>
+                <xsl:apply-templates select="$entry/comment"/>
+                <xsl:choose>
                    <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
                 <imprint>
                     <xsl:apply-templates select="$entry/year"/>
@@ -218,19 +227,19 @@
         </xsl:call-template>
     </xsl:template>
 
-    <!-- Reference to a book (old style) -->
+    <!-- Reference to a book (old style)
 
     <xsl:template match="ref[*/@publication-type='book']">
         <xsl:call-template name="createBook">
             <xsl:with-param name="entry" select="*[@publication-type='book']"/>
         </xsl:call-template>
-    </xsl:template>
+    </xsl:template>-->
 
     <xsl:template name="createBook">
         <xsl:param name="entry"/>
         <biblStruct type="book">
             <xsl:attribute name="xml:id">
-                <xsl:apply-templates select="$entry/@id"/>
+                <xsl:apply-templates select="$entry/@id | @id"/>
             </xsl:attribute>
             <monogr>
                 <!-- All authors are included here -->
@@ -262,7 +271,7 @@
     </xsl:template>
 
     <!-- Unspecified reference (3.0 style) -->
-    <xsl:template match="ref[mixed-citation]">
+   <xsl:template match="ref[mixed-citation]">
         <bibl>
             <xsl:apply-templates select="@id"/>
             <xsl:apply-templates select="mixed-citation"/>

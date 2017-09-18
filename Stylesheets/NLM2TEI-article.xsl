@@ -506,6 +506,7 @@
                 </xsl:choose>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="article-meta/contrib-group/*[name() != 'aff']"/>
+                
                 <xsl:if test="/article/fm/aug | /headerx/fm/aug">
                     <xsl:apply-templates select="/article/fm/aug/* | /headerx/fm/aug/*"/>
                 </xsl:if>
@@ -724,9 +725,28 @@
                             <xsl:apply-templates select="addr-line | country"/>
                         </address>
                     </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select=".except(sup)"/>
+                    </xsl:otherwise>
                 </xsl:choose>
             </affiliation>
         </xsl:if>
+    </xsl:template>
+    <xsl:template match="contrib/aff">
+            <!-- this only apply to NPG articles not containing a pubfm style component -->
+            <affiliation>
+                <xsl:apply-templates select="*[name(.) != 'addr-line' and name(.) != 'country']"/>
+                <xsl:choose>
+                    <xsl:when test="addr-line | country">
+                        <address>
+                            <xsl:apply-templates select="addr-line | country"/>
+                        </address>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select=".except(sup)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </affiliation>
     </xsl:template>
    <xsl:template match="author-notes/corresp">
         <affiliation role="corresp">
