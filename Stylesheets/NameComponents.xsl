@@ -17,6 +17,11 @@
             <xsl:otherwise>
                 <persName>
                     <xsl:apply-templates/>
+                    <xsl:if test="//contrib-group/aff and not(//contrib-group/aff/@id)">
+                        <affiliation>
+                            <xsl:value-of select="//contrib-group/aff"/>
+                        </affiliation>
+                    </xsl:if>
                 </persName>
             </xsl:otherwise>
         </xsl:choose>

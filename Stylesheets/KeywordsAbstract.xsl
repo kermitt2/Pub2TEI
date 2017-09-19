@@ -18,6 +18,9 @@
     <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords | BookSubjectGroup">
         <textClass>
             <keywords>
+                <xsl:attribute name="xml:lang">
+                    <xsl:apply-templates select="@xml:lang"/>
+                </xsl:attribute>
                 <!-- PL: can we sometime grab a @scheme here? -->
                 <xsl:apply-templates select="*[not(self::ce:section-title)]"/>
             </keywords>
@@ -86,7 +89,7 @@
     <!-- PL: removed, Elsevier abstracts are processed in Elsevier.xsl -->
     <!-- Springer: Abstract, Heading, Para -->
 	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
-    <xsl:template match="abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm">
+    <xsl:template match="abstract |trans-abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm">
         <xsl:if test=".[string-length()&gt;0]">
 			<abstract>
 				<!-- PL: indicate the type in case of executive summary or web summary (Nature) -->

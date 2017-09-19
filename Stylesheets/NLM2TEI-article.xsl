@@ -60,6 +60,60 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
+    <!-- SG ajout corrections des titres vides -->
+    <xsl:variable name="repriseTitreVide">
+        <xsl:choose>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055172'"><title level="a" type="main">Semiconductor Materials and Process Technology Handbook</title></xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055160'"><title level="a" type="main">Rapidly Solidified Metals— A Technological Overview</title></xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/yiel/yvs021'">8. Western Europe B. Germany</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/litthe/10.2.148'">ON THE MARGINS OF THE ACCEPTABLE: CHARLOTTE BRONTE'S VILLETTE</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/litthe/10.2.171'">NO 'ELSEWHERE': FISH, SOLOVEITCHIK, AND THE UNAVOIDABILITY OF INTERPRETATION</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/litthe/10.2.160'">THE BODY'S SACRED: ROMANCE AND SACRIFICE IN RELIGIOUS AND JUNGIAN NARRATIVES</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M616'">Authors’ Response to Commentaries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/infdis/106.2.116'">Coagulase Production by Staphylococcus Aureus I. GROWTH AND COAGULASE PRODUCTION IN COMPLEX AND CHEMICALLY DEFINED MEDIUMS-COMPARISON OF CHEMICALLY DEFINED MEDIUMS</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/brain/awq317'">Metaphysics Resurgent</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M603'">Commentary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/jnci/90.19.1489'">CALENDAR OF EVENTS</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M609'">Measuring Functional Decline in Population Aging in a Changing World and an Evolving Biology</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/infdis/104.2.203'">THE ROLE OF MACROPHAGES IN NATURAL IMMUNITY TO SALMONELLAE</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/jnci/89.8.589-a'">Notes</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M606'">Population Aging Across Time and Cultures: Can We Move From Theory to Evidence?</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M611'">Commentary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M601'">Population Aging: A Clinician's View</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M602'">Incorporating Disability Into Population-Level Models of Health Change at Older Ages</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M608'">Commentary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/rpd/ncm134'">Fourteenth International Symposium on Microdosimetry</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M599'">Commentary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M600'">Population Aging: The Benefit of Global Versus Local Theory</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/gerona/59.6.M605'">Commentary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/nq/s11-XII.298.201-e'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/notesj/12.298.201-d'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/notesj/s6-I.13.265-f'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/brain/awg161'">Reply</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/jnci/djm161'">In this issue</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/llc/10.4.304'">Treasurer's Report Financial Year 1 January 1994 to 31 December 1994</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/notesj/s6-I.24.474-d'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/library/s4-IX.3.325'">CAXTON'S SON-IN-LAW</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/ejo/cjm030'">Editorial</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/mnras/201.2.401'">The gravitational evolution of structure in a scale-free universe</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/occmed/kqi148'">Research Methods in Occupational Epidemiology, 2nd edition.</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/cje/ben002'">Erratum : The economics of New Labour: policy and performance</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='6 Series II.28.38g'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='7 Series VI.145.263b'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='6 Series XII.298.204a'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='5 Series XI.270.174b'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='6 Series II.40.277c'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='7 Series VI.145.263a'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='s12-VIII.158.334h'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='5 Series XI.270.174b'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='6 Series II.40.277c'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='7 Series VI.145.263a'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id='s12-VIII.158.334h'">Notes and queries</xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="//front/article-meta/title-group/article-title | fm/atl"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
    
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="article[front] | article[pubfm] | article[suppfm] | headerx">
@@ -77,14 +131,9 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-                        <!-- SG ajout corrections des titres vides -->
-                        <xsl:choose>
-                            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055172'"><title level="a" type="main">Semiconductor Materials and Process Technology Handbook</title></xsl:when>
-                            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055160'"><title level="a" type="main">Rapidly Solidified Metals— A Technological Overview</title></xsl:when>
-                            <xsl:otherwise>
-                                <xsl:apply-templates select="front/article-meta/title-group/article-title | fm/atl"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
+                        <title level="a" type="main">
+                            <xsl:value-of select="$repriseTitreVide"/>
+                        </title>
                     </titleStmt>
                     <!-- PL: pour les suppinfo, sous fileDesc/editionStmt/edition/ref, solution de HAL --> 
                     <xsl:if test="pubfm/suppinfo">
@@ -197,6 +246,13 @@
                         </editionStmt>
                     </xsl:if>
                     <sourceDesc>
+                        <xsl:if test="front/article-meta/title-group/article-title=''">
+                            <titleStmt>
+                                <title level="a" type="main">
+                                    <xsl:value-of select="$repriseTitreVide"/>
+                                </title>
+                            </titleStmt>
+                        </xsl:if>
                         <xsl:apply-templates select="front | pubfm | suppfm" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
@@ -204,8 +260,8 @@
                 <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject or @xml:lang">
                     <profileDesc>
                         <!-- PL: abstract is moved from <front> to here -->
-                        <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
-                            <xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm"/>
+                        <xsl:if test="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
+                            <xsl:apply-templates select="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm"/>
                         </xsl:if>
                         <!-- SG NLM subject -->
                         <xsl:if test="pubfm/subject">
@@ -529,12 +585,13 @@
                 
             </analytic>
             <monogr>
-                <xsl:apply-templates select="journal-meta/journal-title | jtl | suppmast/jtl | suppmast/suppttl | article-meta/issue-title"/>
+                <xsl:apply-templates select="journal-meta/journal-title |journal-meta/journal-title-group/journal-title | jtl | suppmast/jtl | suppmast/suppttl | article-meta/issue-title"/>
+                <xsl:apply-templates select="journal-meta/abbrev-journal-title | journal-meta/journal-title-group/abbrev-journal-title"/>
                 <xsl:apply-templates select="journal-meta/journal-id"/>
-                <xsl:apply-templates select="journal-meta/abbrev-journal-title"/>
                 <xsl:apply-templates select="journal-meta/issue-title"/>
                 <xsl:apply-templates select="journal-meta/issn | issn |parent/issn"/>
-				<imprint>
+                <xsl:apply-templates select="article-meta/elocation-id"/>
+                <imprint>
                     <xsl:apply-templates select="journal-meta/publisher/*"/>
 
                     <xsl:for-each select="article-meta/pub-date">
@@ -551,10 +608,17 @@
                         select="
                             article-meta/volume | vol | suppmast/vol | suppmast/iss | article-meta/issue | iss
                             | article-meta/fpage | pp/spn | pp/epn | article-meta/lpage
-                            | article-meta/elocation-id"/>
-				    <biblScope unit="page-count">
-				        <xsl:value-of select="//article/front/article-meta/counts/page-count/@count"/>
-				    </biblScope>
+                            "/>
+				    <xsl:if test="normalize-space(//article/front/article-meta/counts/page-count/@count)">
+				        <biblScope unit="page-count">
+				            <xsl:value-of select="//article/front/article-meta/counts/page-count/@count"/>
+				        </biblScope>
+				    </xsl:if>
+				    <xsl:if test="normalize-space(//article/front/article-meta/counts/ref-count/@count)">
+				        <biblScope unit="ref-count">
+				            <xsl:value-of select="//article/front/article-meta/counts/ref-count/@count"/>
+				        </biblScope>
+				    </xsl:if>
                     <xsl:apply-templates select="copyright-year | cpg/cpy"/>
 				</imprint>
             </monogr>
@@ -680,7 +744,11 @@
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
-            <xsl:apply-templates select="ancestor::article-meta/author-notes/corresp"></xsl:apply-templates>
+            <xsl:if test="@corresp = 'yes'">
+                <xsl:if test="not(xref/@ref-type='corresp')">
+                    <xsl:apply-templates select="ancestor::article-meta/author-notes/corresp/email"/>
+                </xsl:if>
+            </xsl:if>
         </author>
     </xsl:template>
 
@@ -749,6 +817,7 @@
             </affiliation>
     </xsl:template>
    <xsl:template match="author-notes/corresp">
+       <xsl:if test="*[name(.) != 'addr-line' and name(.) != 'country'] except(email)">
         <affiliation role="corresp">
             <xsl:apply-templates select="*[name(.) != 'addr-line' and name(.) != 'country'] except(email)"/>
                 <xsl:choose>
@@ -764,6 +833,7 @@
                     </xsl:when>
                 </xsl:choose>
             </affiliation>
+       </xsl:if>
     </xsl:template>
     <xsl:template match="caff" mode="sourceDesc">
         <xsl:if test="email">
@@ -1251,9 +1321,20 @@
 
     <!-- Copyright related information to appear in <publicationStmt> -->
     <xsl:template match="copyright-statement">
-            <p>
-                <xsl:apply-templates/>
-            </p>
+        <xsl:choose>
+            <xsl:when test="//article-meta/copyright-statement">
+                <availability>
+                    <p>
+                        <xsl:apply-templates/>
+                    </p>  
+                </availability>
+            </xsl:when>
+            <xsl:otherwise>
+                <p>
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="permissions/license">
@@ -1291,6 +1372,9 @@
 
     <xsl:template match="copyright-year | cpy">
         <date>
+            <xsl:attribute name="when">
+                <xsl:apply-templates/>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </date>
     </xsl:template>
@@ -1315,6 +1399,9 @@
             <xsl:choose>
                 <xsl:when test="@pub-type = 'epub'">
                     <xsl:attribute name="type">ePublished</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@pub-type = 'final'">
+                    <xsl:attribute name="type">FinalPublished</xsl:attribute>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:attribute name="type">Published</xsl:attribute>

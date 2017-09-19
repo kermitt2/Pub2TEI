@@ -289,7 +289,7 @@
     </xsl:template>
 
     <xsl:template match="elocation-id">
-        <idno type="{@content-type}">
+        <idno type="elocation-id">
             <xsl:apply-templates/>
         </idno>
     </xsl:template>
