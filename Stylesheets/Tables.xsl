@@ -6,7 +6,6 @@
 	exclude-result-prefixes="#all" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0">
 
-
     <!-- Royal Chemical Society: table-entry; NLM: table-wrap -->
     <xsl:template match="table-entry | table-wrap | table">
         <figure type="table">

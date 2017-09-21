@@ -16,6 +16,10 @@
         </p>
     </xsl:template>
     
+    <!-- wiley tabularFixed -->
+    <xsl:template match="wiley:tabularFixed">
+        <xsl:apply-templates/>
+    </xsl:template>
     <xsl:template match="wiley:p">
         <p>
             <xsl:if test="@xml:id">

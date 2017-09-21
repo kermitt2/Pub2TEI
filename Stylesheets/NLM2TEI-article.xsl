@@ -64,7 +64,7 @@
     <xsl:variable name="repriseTitreVide">
         <xsl:choose>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055172'"><title level="a" type="main">Semiconductor Materials and Process Technology Handbook</title></xsl:when>
-            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055160'"><title level="a" type="main">Rapidly Solidified Metals— A Technological Overview</title></xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055160'"><title level="a" type="main">Rapidly Solidified Metals - A Technological Overview</title></xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/yiel/yvs021'">8. Western Europe B. Germany</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/litthe/10.2.148'">ON THE MARGINS OF THE ACCEPTABLE: CHARLOTTE BRONTE'S VILLETTE</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/litthe/10.2.171'">NO 'ELSEWHERE': FISH, SOLOVEITCHIK, AND THE UNAVOIDABILITY OF INTERPRETATION</xsl:when>
@@ -109,8 +109,45 @@
             <xsl:when test="//front/article-meta/article-id='6 Series II.40.277c'">Notes and queries</xsl:when>
             <xsl:when test="//front/article-meta/article-id='7 Series VI.145.263a'">Notes and queries</xsl:when>
             <xsl:when test="//front/article-meta/article-id='s12-VIII.158.334h'">Notes and queries</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0714980800010242'">The Work of the Hamburg Research Center in Entrepreneurial History</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.2178/bsl/1305810914'">Gao Su . Invariant descriptive set theory. Pure and applied mathematics. Chapman &amp; Hall/CRC, Boca Raton, 2009, xiv + 392 pp.</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1017/S2046164X00055897'">Reviews of New Works : On the Mortality of Master Mariners. By F. G. P. NEISON, Esq.</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1017/S0714980800007790'">Reviews of: "Cole Thomas R., Van Tassel David D. and Kastenbaum Robert (eds.). Handbook of the Humanities and Aging" and "Kenyon Gary M., Birren James E. and Schroots Johannes J.F. (eds.). Metaphors of Aging in Science and the Humanities"</xsl:when>
             <xsl:otherwise>
-                <xsl:apply-templates select="//front/article-meta/title-group/article-title | fm/atl"/>
+                <xsl:choose>
+                    <xsl:when test="//front/article-meta/title-group/article-title[string-length() &gt; 0] |fm/atl[string-length() &gt; 0]">
+                        <xsl:apply-templates select="//front/article-meta/title-group/article-title | fm/atl "/>
+                    </xsl:when>
+                    <!-- SG: reprise du titre principal dans left si seulement indication 'Book Reviews/Comptes rendus' dans right -->
+                    <xsl:when test="contains(//front/article-meta/title-group/alt-title[@alt-title-type='right-running'],'Book Reviews/Comptes rendus') or contains(//front/article-meta/title-group/alt-title[@alt-title-type='right-running'],'Book Reviews / Comptes rendus')">
+                        <!--cambridge : reprise du titre dans product/source  -->
+                        <xsl:choose>
+                            <xsl:when test="//front/article-meta/product/source[string-length() &gt; 0]">
+                                <xsl:text>Review of "</xsl:text>
+                                <xsl:value-of select="//front/article-meta/product/source"/>
+                                <xsl:text>"</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="//front/article-meta/title-group/alt-title[@alt-title-type='left-running']"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:if test="//front/article-meta/title-group/alt-title[@alt-title-type='right-running'][string-length() &gt; 0]">
+                            <xsl:value-of select="//front/article-meta/title-group/alt-title[@alt-title-type='right-running']"/>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <!--<xsl:choose>
+                    <xsl:when test="//front/article-meta/title-group/article-title[string-length() &gt; 0] |fm/atl[string-length() &gt; 0]">
+                        <xsl:apply-templates select="//front/article-meta/title-group/article-title | fm/atl "/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:if test="//front/article-meta/title-group/alt-title[@alt-title-type='right-running']">
+                        <xsl:apply-templates select="//front/article-meta/title-group/alt-title[@alt-title-type='right-running']"/>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>-->
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
@@ -246,13 +283,6 @@
                         </editionStmt>
                     </xsl:if>
                     <sourceDesc>
-                        <xsl:if test="front/article-meta/title-group/article-title=''">
-                            <titleStmt>
-                                <title level="a" type="main">
-                                    <xsl:value-of select="$repriseTitreVide"/>
-                                </title>
-                            </titleStmt>
-                        </xsl:if>
                         <xsl:apply-templates select="front | pubfm | suppfm" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
@@ -549,10 +579,15 @@
             </xsl:if>
 
             <analytic>
-                <!-- SG ajout corrections des titres vides -->
+                <!-- Cambridge - OUP ... ajout corrections des titres vides -->
                 <xsl:choose>
-                    <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055172'"><title level="a" type="main">Semiconductor Materials and Process Technology Handbook</title></xsl:when>
-                    <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055160'"><title level="a" type="main">Rapidly Solidified Metals— A Technological Overview</title></xsl:when>
+                    <xsl:when test="//article-title ='' and $repriseTitreVide">
+                        <title level="a" type="main">
+                            <xsl:value-of select="$repriseTitreVide"/>
+                        </title>
+                        <xsl:apply-templates select="article-meta/title-group/*"/>
+                        <xsl:apply-templates select="article-meta/title-group/fn-group/*"/>
+                    </xsl:when>
                     <xsl:otherwise>
                         <!-- Title information related to the paper goes here -->
                         <xsl:apply-templates select="article-meta/title-group/*"/>
