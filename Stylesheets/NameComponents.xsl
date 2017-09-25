@@ -26,6 +26,15 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    <xsl:template match="name-alternatives">
+                    <xsl:apply-templates/>
+                    <xsl:if test="//contrib-group/aff and not(//contrib-group/aff/@id)">
+                        <affiliation>
+                            <xsl:value-of select="//contrib-group/aff"/>
+                        </affiliation>
+                    </xsl:if>
+                
+    </xsl:template>
 
     <xsl:template match="collab | sb:collaboration">
         <name type="collab">
