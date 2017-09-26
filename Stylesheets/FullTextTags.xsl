@@ -12,6 +12,11 @@
 
     <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para">
         <p>
+            <xsl:if test="@id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@id"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </p>
     </xsl:template>

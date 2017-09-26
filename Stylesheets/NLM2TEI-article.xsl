@@ -930,16 +930,16 @@
                     </sourceDesc>
                 </fileDesc>
                 <!-- ProfileDesc -->
-                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject or @xml:lang">
+                <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject or @xml:lang or front/article-meta/article-categories">
                     <profileDesc>
                         <!-- PL: abstract is moved from <front> to here -->
                         <xsl:if test="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
                             <xsl:apply-templates select="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm"/>
                         </xsl:if>
                         <!-- SG NLM subject -->
-                        <xsl:if test="pubfm/subject">
+                        <xsl:if test="pubfm/subject | front/article-meta/article-categories/subj-group">
                             <textClass>
-                                <xsl:apply-templates select="pubfm/subject"/>
+                                <xsl:apply-templates select="pubfm/subject | front/article-meta/article-categories/subj-group"/>
                             </textClass>
                         </xsl:if>
                         <xsl:if test="suppfm/subject">
@@ -1676,32 +1676,30 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="sec[parent::boxed-text]"/>
-
-    <xsl:template match="sec" mode="boxed-text">
+    <xsl:template match="sec[parent::boxed-text]">
         <div>
             <xsl:if test="@sec-type">
                 <xsl:attribute name="type">
                     <xsl:value-of select="@sec-type"/>
                 </xsl:attribute>
             </xsl:if>
-
+            
             <xsl:if test="parent::boxed-text">
                 <xsl:attribute name="rend">
                     <xsl:text>boxed-text</xsl:text>
                 </xsl:attribute>
             </xsl:if>
-
+            
             <xsl:if test="label">
                 <xsl:attribute name="n">
                     <xsl:value-of select="label"/>
                 </xsl:attribute>
             </xsl:if>
-
+            
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-
+    
     <xsl:template match="sec/label"/>
 
     <xsl:template match="boxed-text">
@@ -2249,5 +2247,33 @@
         <note>
             <xsl:apply-templates/>
         </note>
+    </xsl:template>
+    <!-- SG: categorisation niveau book -->
+    <xsl:template match="front/article-meta/article-categories/subj-group">
+        <keywords>
+        <xsl:if test="@subj-group-type">
+            <xsl:attribute name="scheme">
+                <xsl:value-of select="@subj-group-type"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:if>
+        </keywords>
+    </xsl:template>
+    <xsl:template match="pubfm/subject">
+        <keywords>
+            <xsl:if test="@subj-group-type">
+                <xsl:attribute name="scheme">
+                    <xsl:value-of select="@subj-group-type"/>
+                </xsl:attribute>
+                <term>
+                <xsl:apply-templates/>
+                </term>
+            </xsl:if>
+        </keywords>
+    </xsl:template>
+    <xsl:template match="front/article-meta/article-categories/subj-group/subject">
+        <term>
+            <xsl:apply-templates/>
+        </term>
     </xsl:template>
 </xsl:stylesheet>

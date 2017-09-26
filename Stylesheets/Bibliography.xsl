@@ -258,10 +258,20 @@
 
     <!-- Unspecified reference (old style) -->
     <xsl:template match="ref">
-        <bibl>
-            <xsl:attribute name="xml:id">
-                <xsl:apply-templates select="citation/@id"/>
-            </xsl:attribute>
+        <bibl type="article">
+            <xsl:choose>
+                <xsl:when test="citation/@id">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="citation/@id"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="xml:id">
+                        <xsl:apply-templates select="@id"/>
+                    </xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
+            
             <xsl:apply-templates select="citation"/>
         </bibl>
     </xsl:template>
@@ -414,9 +424,16 @@
     <!-- Elsevier -->
 
     <xsl:template match="sb:maintitle">
-        <title type="main">
-            <xsl:apply-templates/>
-        </title>
+        <xsl:choose>
+            <xsl:when test="ancestor::sb:series/sb:title">
+                <title level="a" type="main">
+                <xsl:apply-templates/>
+                </title>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- Dates -->

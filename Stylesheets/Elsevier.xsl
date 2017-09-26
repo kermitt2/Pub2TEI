@@ -8,8 +8,55 @@
     <xsl:output encoding="UTF-8" method="xml"/>
     
     <xsl:include href="ElsevierFormula.xsl"/>
+    
+    <xsl:variable name="titre">
+        <xsl:choose>
+            <xsl:when test="//ce:doi='10.1016/S0140-7007(01)00037-8'">
+                <xsl:text>A Word from the Director / Le mot du Directeur</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0923-5965(97)00056-8'">
+                <xsl:text>Foreword</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0377-8398(00)00009-8'">
+                <xsl:text>Introduction : Nannoplankton ecology and palaeoecology</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1006/jfca.1996.0012'">
+                <xsl:text>Book review : The Pacific Islands Food Composition Tables by C. A. Dignan, B. A. Burlingame, J. M. Arthur, R. J. Quigley, and G. C. Milligan</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0165-1684(98)00205-9'">
+                <xsl:text>Editorial</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1006/jfca.1996.0013'">
+                <xsl:text>Book review : Fats and Fatty Acids in New Zealand Foods, by R. J. Quigley, B. A. Burlingame, G. C. Milligan, and J. J. Gibson</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1006/jfca.1996.0014'">
+                <xsl:text>Book review : Quality and Accessibility of Food Related Data, by Heather Greenfield</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0142-9418(00)00029-5'">
+                <xsl:text>Editorial</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0168-9002(99)01283-8'">
+                <xsl:text>Index</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1053/smrv.1999.0085'">
+                <xsl:text>Table of contents</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S1049-3867(01)00088-3'">
+                <xsl:text>Erratum to 'An Intersection of Women’s and Perinatal Health: The Role of Chronic Disease'</xsl:text>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0009-2509(99)00312-7'">
+                <xsl:text>Erratum to 'Conversion-temperature trajectories for well mixed adsorptive reactorsa'</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="textfn">
+                    <xsl:value-of select="//ce:dochead/ce:textfn"/>
+                </xsl:variable>
+                <xsl:value-of select="normalize-space($textfn)"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:variable>
 
-    <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info] | converted-article[item-info]">
+    <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info] | converted-article[item-info] | article[item-info]">
         <TEI>
             <xsl:if test="@xml:lang">
                 <xsl:copy-of select="@xml:lang"/>
@@ -17,7 +64,16 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-                        <xsl:apply-templates select="els:head/ce:title | head/ce:title"/>
+                        <xsl:choose>
+                            <xsl:when test="els:head/ce:title | head/ce:title ='' or not(els:head/ce:title | head/ce:title)">
+                                <title level="a" type="main">
+                                    <xsl:value-of select="$titre"/>
+                                </title>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:apply-templates select="els:head/ce:title | head/ce:title"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </titleStmt>
                     <publicationStmt>
                         <xsl:apply-templates
@@ -30,7 +86,21 @@
                                 <xsl:apply-templates
                                     select="els:head/ce:author-group/ce:author | head/ce:author-group/ce:author"/>
                                 <!-- Title information related to the paper goes here -->
-                                <xsl:apply-templates select="els:head/ce:title | head/ce:title"/>
+                                <!-- rattrapage titres vides -->
+                                <xsl:choose>
+                                    <xsl:when test="els:head/ce:title | head/ce:title ='' or not(els:head/ce:title | head/ce:title)">
+                                        <title level="a" type="main">
+                                            <xsl:value-of select="$titre"/>
+                                        </title>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:apply-templates select="els:head/ce:title | head/ce:title"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                                <xsl:apply-templates select="els:item-info/ce:doi | item-info/ce:doi"/>
+                                <xsl:apply-templates select="els:item-info/ce:pii | item-info/ce:pii"/>
+                                <xsl:apply-templates select="els:item-info/els:aid | item-info/els:aid"
+                                />
                             </analytic>
                             <monogr>
                                 <xsl:apply-templates select="els:item-info/els:jid | item-info/jid"/>
@@ -63,10 +133,6 @@
                                     </xsl:choose>
                                 </imprint>
                             </monogr>
-                            <xsl:apply-templates select="els:item-info/ce:doi | item-info/ce:doi"/>
-                            <xsl:apply-templates select="els:item-info/ce:pii | item-info/ce:pii"/>
-                            <xsl:apply-templates select="els:item-info/els:aid | item-info/els:aid"
-                            />
                         </biblStruct>
                     </sourceDesc>
                 </fileDesc>

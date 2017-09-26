@@ -36,10 +36,16 @@
                 
     </xsl:template>
 
-    <xsl:template match="collab | sb:collaboration">
-        <name type="collab">
+    <xsl:template match="collab">
+        <name>
             <xsl:apply-templates/>
         </name>
+    </xsl:template>
+    
+    <xsl:template match="sb:collaboration">
+        <author role="collab">
+            <xsl:apply-templates/>
+        </author>
     </xsl:template>
 
     <!-- Elements for name components in Scholar One (first_name, middle_name, last_name, salutation, suffix, degree, role, person_title) -->

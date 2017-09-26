@@ -18,9 +18,12 @@
     <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords | BookSubjectGroup">
         <textClass>
             <keywords>
-                <xsl:attribute name="xml:lang">
-                    <xsl:apply-templates select="@xml:lang"/>
-                </xsl:attribute>
+                <!-- langue parfois non présente -->
+                <xsl:if test="@xml:lang">
+                    <xsl:attribute name="xml:lang">
+                        <xsl:apply-templates select="@xml:lang"/>
+                    </xsl:attribute>
+                </xsl:if>
                 <!-- PL: can we sometime grab a @scheme here? -->
                 <xsl:apply-templates select="*[not(self::ce:section-title)]"/>
             </keywords>
@@ -134,10 +137,10 @@
 					</xsl:if>
 	            </xsl:if>
 				<!-- PL: only paragraphs are taken because <div> are not allowed under <abstract> currently -->
-				<xsl:apply-templates select="*/ce:simple-para"/>
+				<!--<xsl:apply-templates select="*/ce:simple-para"/>-->
 	            <xsl:choose>
 	                <xsl:when test="ce:abstract-sec">
-	                    <xsl:apply-templates select="*/ce:simple-para"/>
+	                    <xsl:apply-templates/>
 	                </xsl:when>
 	                <xsl:when test="p | Para | ce:abstract-sec | AbstractSection">
 	                    <xsl:apply-templates/>
