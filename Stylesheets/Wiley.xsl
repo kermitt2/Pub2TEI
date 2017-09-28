@@ -1024,7 +1024,10 @@
                                 </orgName>
                             </xsl:for-each>
                         </xsl:if>
-                        <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart | //affiliation[@xml:id=$aff]/address/postCode | //affiliation[@xml:id=$aff]/address/city | //affiliation[@xml:id=$aff]/address/state | //affiliation[@xml:id=$aff]/address/country">
+                        <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
+                        </xsl:if>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart | //affiliation[@xml:id=$aff]/address/postCode | //affiliation[@xml:id=$aff]/address/city | //affiliation[@xml:id=$aff]/address/state | //affiliation[@xml:id=$aff]/address/country|//affiliation[@xml:id=$aff]/@countryCode">
                             <address>
                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ]">
                                 <street>
@@ -1064,18 +1067,6 @@
 						</country>
                         </xsl:if>
                             </address>
-                        </xsl:if>
-                        <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
-                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
-                            <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
-                                <address>
-                                    <country>
-                                        <xsl:attribute name="key">
-                                            <xsl:value-of select="//affiliation[@xml:id=$aff]/@countryCode"/>
-                                        </xsl:attribute>
-                                    </country>
-                                </address>
-                            </xsl:if>
                         </xsl:if>
                     </affiliation>
                 </xsl:if>
