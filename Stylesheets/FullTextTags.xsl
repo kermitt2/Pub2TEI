@@ -839,4 +839,12 @@
             </p>
         </div>
     </xsl:template>
+    <!-- SG - traitement des book-reviews -->
+    <xsl:template match="wiley:header/wiley:contentMeta/wiley:titleGroup/wiley:title/wiley:citation">
+        <div type="review-of">
+            <bibl>
+                <xsl:apply-templates/>
+            </bibl>
+        </div>
+    </xsl:template>
 </xsl:stylesheet>

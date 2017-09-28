@@ -430,7 +430,7 @@
                         <body><div><p></p></div></body>
                     </xsl:otherwise>
                 </xsl:choose>
-                <xsl:if test="body/bibliography|header/noteGroup/note|body/noteGroup/note">
+                <xsl:if test="body/bibliography|header/noteGroup/note|body/noteGroup/note|header/contentMeta/titleGroup/title/citation">
                     <back>
                         <!-- note de bas de page -->
                         <xsl:if test="header/noteGroup/note">
@@ -445,6 +445,7 @@
                         </xsl:if>
                         <xsl:apply-templates select="body/bibliography"/>
                         <xsl:apply-templates select="header/contentMeta/supportingInformation"/>
+                        <xsl:apply-templates select="header/contentMeta/titleGroup/title/citation"/>
                     </back>
                 </xsl:if>
             </text>
