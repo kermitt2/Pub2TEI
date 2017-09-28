@@ -190,7 +190,18 @@
                                                 <xsl:text>Editorial</xsl:text> 
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:apply-templates/>
+                                                <xsl:choose>
+                                                    <xsl:when test="//header/contentMeta/titleGroup/title[@type='main']/citation[@type='book']">
+                                                        <xsl:if test="//publicationMeta[@level='unit']/titleGroup/title[@type='articleCategory']">
+                                                            <xsl:value-of select="//publicationMeta[@level='unit']/titleGroup/title[@type='articleCategory']"/>
+                                                            <xsl:text> - </xsl:text>
+                                                        </xsl:if>
+                                                        <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='main']/citation[@type='book']/bookTitle)"/>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:apply-templates/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </title>
@@ -293,7 +304,7 @@
                 </fileDesc>
                 
                
-                <xsl:if test="header/contentMeta/abstractGroup | header/contentMeta/keywordGroup | header/publicationMeta[@level='unit']/subjectInfo">
+                <xsl:if test="header/contentMeta/abstractGroup | header/contentMeta/keywordGroup | header/publicationMeta[@level='unit']/subjectInfo | header/publicationMeta[@level='unit']/titleGroup/title[@type='articleCategory']">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
                         <xsl:if test="header/contentMeta/abstractGroup/abstract">
@@ -371,14 +382,16 @@
 							    </xsl:if>
 							    <xsl:if test="header/publicationMeta[@level='unit']/titleGroup/title[string-length()&gt;0]">
 							        <xsl:for-each select="header/publicationMeta[@level='unit']/titleGroup/title">
-							            <classCode>
+							            <keywords>
 							                <xsl:if test="@type">
-							                    <xsl:attribute name="scheme">
+							                    <xsl:attribute name="rend">
 							                        <xsl:value-of select="@type"/>
 							                    </xsl:attribute>
 							                </xsl:if>
+							                <term>
 							                <xsl:value-of select="normalize-space(.)"/>
-							            </classCode>
+							                </term>
+							            </keywords>
 							        </xsl:for-each>
 							    </xsl:if>
 							</textClass>
@@ -664,7 +677,18 @@
 		                            <xsl:text>Editorial</xsl:text> 
 		                        </xsl:when>
 		                        <xsl:otherwise>
-		                            <xsl:apply-templates/>
+		                            <xsl:choose>
+		                                <xsl:when test="//header/contentMeta/titleGroup/title[@type='main']/citation[@type='book']">
+		                                    <xsl:if test="//publicationMeta[@level='unit']/titleGroup/title[@type='articleCategory']">
+		                                        <xsl:value-of select="//publicationMeta[@level='unit']/titleGroup/title[@type='articleCategory']"/>
+		                                        <xsl:text> - </xsl:text>
+		                                    </xsl:if>
+		                                    <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='main']/citation[@type='book']/bookTitle)"/>
+		                                </xsl:when>
+		                                <xsl:otherwise>
+		                                    <xsl:apply-templates/>
+		                                </xsl:otherwise>
+		                            </xsl:choose>
 		                        </xsl:otherwise>
 		                    </xsl:choose>
 		                </title>
