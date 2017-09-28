@@ -57,7 +57,9 @@
     
     <!-- SG - traitement tables WILEY -->
     <xsl:template match="wiley:thead">
-        <xsl:apply-templates select="wiley:row"/>
+        <head>
+            <xsl:value-of select="wiley:row/wiley:entry"/>
+        </head>
     </xsl:template>
     <xsl:template match="wiley:tbody">
         <xsl:apply-templates select="wiley:row"/>
@@ -88,7 +90,7 @@
         </cell>
     </xsl:template>
     
-    <xsl:template match="wiley:colspec | wiley:tgroup">
+    <xsl:template match="wiley:colspec">
         <!-- not obvious to use in TEI transformation -->
         <xsl:apply-templates select="*"/>
     </xsl:template>
@@ -117,11 +119,19 @@
     </xsl:template>
 
     <!-- exception Elsevier si on est déjà dans un paragraph et Wiley dans un <tabular> -->
-    <xsl:template match="ce:para/els:display/ce:table | wiley:table">
+    <xsl:template match="ce:para/els:display/ce:table">
         <table>
-            <xsl:if test="wiley:tgroup/@cols">
+            <xsl:apply-templates/>
+        </table>
+    </xsl:template>
+    <xsl:template match="wiley:table">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="wiley:tgroup">
+        <table>
+            <xsl:if test="@cols">
                 <xsl:attribute name="cols">
-                    <xsl:value-of select="wiley:tgroup/@cols"/>
+                    <xsl:value-of select="@cols"/>
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>

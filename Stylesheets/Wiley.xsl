@@ -1010,6 +1010,9 @@
                 </xsl:variable>
                 <xsl:if test="normalize-space(//affiliation[@xml:id=$aff])">
                     <affiliation>
+                        <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
+                            <xsl:value-of select="normalize-space(//affiliation[@xml:id=$aff]/unparsedAffiliation)"/>
+                        </xsl:if>
                         <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
                             <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv/text()">
                                 <orgName>
@@ -1023,9 +1026,6 @@
                                     <xsl:apply-templates select="."/>
                                 </orgName>
                             </xsl:for-each>
-                        </xsl:if>
-                        <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
-                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
                         </xsl:if>
                         <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart | //affiliation[@xml:id=$aff]/address/postCode | //affiliation[@xml:id=$aff]/address/city | //affiliation[@xml:id=$aff]/address/state | //affiliation[@xml:id=$aff]/address/country|//affiliation[@xml:id=$aff]/@countryCode">
                             <address>
