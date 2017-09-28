@@ -4,7 +4,7 @@
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley" 
-	xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>

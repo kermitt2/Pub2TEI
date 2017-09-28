@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-    xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:mml="http://www.w3.org/1998/Math/MathML" exclude-result-prefixes="#all">
+    xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
@@ -13,6 +13,9 @@
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="Article[ArticleInfo]">
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <xsl:if test="ArticleInfo/@Language">
                 <xsl:attribute name="xml:lang">
                     <xsl:call-template name="Varia2ISO639">

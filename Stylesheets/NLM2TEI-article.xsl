@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0"
-    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" exclude-result-prefixes="#all">
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exclude-result-prefixes="#all">
 
     <xd:doc scope="stylesheet">
         <xd:desc>
@@ -817,6 +817,9 @@
     <xsl:template match="article[front] | article[pubfm] | article[suppfm] | headerx">
         <xsl:message>NLM2TEI-article.xsl</xsl:message>
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <xsl:if test="@xml:lang">
                 <xsl:choose>
                     <xsl:when test="normalize-space(//article/@xml:lang)='IW'"><xsl:attribute name="xml:lang">HE</xsl:attribute></xsl:when>
@@ -985,12 +988,8 @@
                         <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*">
                             <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres/*"/>
                             <xsl:apply-templates select="bm/objects/*"/>
-                            <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
-                            <xsl:if test="//headerx/bdy">
-                                <p>
-                                    <xsl:value-of select="//headerx/bdy"/>
-                                </p>
-                            </xsl:if>
+
+                          
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:choose>
@@ -1008,7 +1007,18 @@
                     <xsl:otherwise>
                         <body>
                             <div>
-                                <p/>
+                                <xsl:choose>
+                                    <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
+                                    <xsl:when test="//headerx/bdy">
+                                        <p>
+                                            <xsl:value-of select="bdy"/>
+                                        </p>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <p/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                                
                             </div>
                         </body>
                     </xsl:otherwise>

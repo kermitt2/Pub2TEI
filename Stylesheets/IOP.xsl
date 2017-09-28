@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" version="2.0" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
     
@@ -43,6 +43,9 @@
                        | /article[contains(article-metadata/jnl-data/jnl-imprint, 'IOP')]
                        | /article[contains(article-metadata/jnl-data/jnl-imprint, 'Institute of Physics')]">
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <teiHeader>
                 <fileDesc>
                     <titleStmt>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all"
@@ -58,6 +58,9 @@
 
     <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info] | converted-article[item-info] | article[item-info]">
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <xsl:if test="@xml:lang">
                 <xsl:copy-of select="@xml:lang"/>
             </xsl:if>
