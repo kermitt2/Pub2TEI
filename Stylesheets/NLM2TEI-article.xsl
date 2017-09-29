@@ -766,6 +766,8 @@
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.2178/bsl/1305810914'">Gao Su . Invariant descriptive set theory. Pure and applied mathematics. Chapman &amp; Hall/CRC, Boca Raton, 2009, xiv + 392 pp.</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1017/S2046164X00055897'">Reviews of New Works : On the Mortality of Master Mariners. By F. G. P. NEISON, Esq.</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1017/S0714980800007790'">Reviews of: "Cole Thomas R., Van Tassel David D. and Kastenbaum Robert (eds.). Handbook of the Humanities and Aging" and "Kenyon Gary M., Birren James E. and Schroots Johannes J.F. (eds.). Metaphors of Aging in Science and the Humanities"</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1016/0266-7681(90)90076-G'">Picture - JOHN TURNER HUESTON B.A. (Fine Arts), M.D., M.S., F.R.C.S., F.R.A.C.S.</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1016/0266-7681(89)90002-8'">Picture - J. WILLIAM LITTLER, M.D., F.A.C.S. </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="//front/article-meta/title-group/article-title[string-length() &gt; 0] |//fm/atl[string-length() &gt; 0]">
@@ -939,10 +941,11 @@
                         <xsl:if test="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
                             <xsl:apply-templates select="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm"/>
                         </xsl:if>
+                        <xsl:apply-templates select="front/article-meta/kwd-group"/>
                         <!-- SG NLM subject -->
-                        <xsl:if test="pubfm/subject | front/article-meta/article-categories/subj-group">
+                        <xsl:if test="pubfm/subject">
                             <textClass>
-                                <xsl:apply-templates select="pubfm/subject | front/article-meta/article-categories/subj-group"/>
+                                <xsl:apply-templates select="pubfm/subject"/>
                             </textClass>
                         </xsl:if>
                         <xsl:if test="suppfm/subject">
@@ -950,7 +953,12 @@
                                 <xsl:apply-templates select="suppfm/subject"/>
                             </textClass>
                         </xsl:if>
-                        <xsl:apply-templates select="front/article-meta/kwd-group"/>
+                        <!-- SG NLM subject -->
+                        <xsl:if test="front/article-meta/article-categories/subj-group">
+                            <textClass>
+                                <xsl:apply-templates select="front/article-meta/article-categories/subj-group"/>
+                            </textClass>
+                        </xsl:if>
                         <!-- language -->
                         <xsl:if test="@xml:lang">
                             <langUsage>
@@ -1250,7 +1258,6 @@
                 </xsl:choose>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="article-meta/contrib-group/*[name() != 'aff']"/>
-                
                 <xsl:if test="/article/fm/aug | /headerx/fm/aug">
                     <xsl:apply-templates select="/article/fm/aug/* | /headerx/fm/aug/*"/>
                 </xsl:if>
@@ -1801,17 +1808,17 @@
 
     <!-- Quoted passages -->
     <xsl:template match="disp-quote">
-        <cit>
+        <!--<cit>
             <xsl:if test="attrib">
                 <xsl:attribute name="rend">
                     <xsl:text>block</xsl:text>
                 </xsl:attribute>
-            </xsl:if>
+            </xsl:if>-->
             <quote>
                 <xsl:apply-templates select="*[not(name() = 'attrib')]"/>
             </quote>
             <xsl:apply-templates select="child::attrib"/>
-        </cit>
+      <!--  </cit>-->
     </xsl:template>
 
     <xsl:template match="disp-quote/attrib">
@@ -1934,7 +1941,6 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-
     <xsl:template match="fn-group/fn">
         <xsl:choose>
             <xsl:when test="ancestor::title-group/fn-group/fn">
@@ -1970,6 +1976,20 @@
                 </note>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    <xsl:template match="back/app-group">
+        <div type="app-group">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="app-group/app">
+        <p>
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+        <xsl:apply-templates/>
+        </p>
     </xsl:template>
 
     <xsl:template match="fn/label">
@@ -2098,9 +2118,18 @@
     <xsl:template match="allowbreak"/>
 
     <xsl:template match="title">
-        <head>
-            <xsl:apply-templates/>
-        </head>
+        <xsl:choose>
+            <xsl:when test="ancestor::app">
+                <title>
+                    <xsl:apply-templates/>
+                </title>
+            </xsl:when>
+            <xsl:otherwise>
+                <head>
+                    <xsl:apply-templates/>
+                </head>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="pub-date">

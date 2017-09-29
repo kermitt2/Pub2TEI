@@ -19,6 +19,11 @@
                         <xsl:apply-templates select="art-front/titlegrp/title"/>
                     </titleStmt>
                     <publicationStmt>
+                        <xsl:if test="//article/published[@type='print']/journalref/publisher/orgname/nameelt">
+                            <publisher>
+                                <xsl:value-of select="//article/published[@type='print']/journalref/publisher/orgname/nameelt"/>
+                            </publisher>
+                        </xsl:if>
                         <xsl:if test="@price-code[string(.)='free']">
                             <availability status="OpenAccess">
                                 <p>Open Access</p>
@@ -47,7 +52,17 @@
                     <xsl:apply-templates select="art-front/abstract"/>
                 </front-->
                 <body>
-                    <xsl:apply-templates select="art-body/*"/>
+                    <xsl:choose>
+                        <xsl:when test="normalize-space(art-body)">
+                            <xsl:apply-templates select="art-body/*"/> 
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <div>
+                               <p></p>
+                            </div>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    
                 </body>
                 <back>
                     <xsl:apply-templates select="art-back/*"/>
@@ -101,13 +116,23 @@
 
 
             <analytic>
-                <!-- All authors are included here -->
-                <xsl:apply-templates select="art-front/authgrp/author"/>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="art-front/titlegrp/*"/>
+                <!-- All authors are included here -->
+                <xsl:apply-templates select="art-front/authgrp/author"/>
             </analytic>
             <monogr>
-                <title level="j" type="main">Royal Chemical Society</title>
+                <title level="j" type="main">
+                    <xsl:value-of select="//article/published[@type='print']/journalref/title[@type='full']"/>
+                </title>
+                <title level="j" type="alt">
+                    <xsl:value-of select="//article/published[@type='print']/journalref/title[@type='abbreviated']"/>
+                </title>
+                <xsl:if test="//article/published[@type='print']/journalref/sercode">
+                    <idno type="sercode">
+                        <xsl:value-of select="//article/published[@type='print']/journalref/sercode"/>
+                    </idno>
+                </xsl:if>
                 <imprint>
                     <xsl:for-each select="article-meta/pub-date">
                         <xsl:message>Current: <xsl:value-of select="@pub-type"/></xsl:message>
@@ -116,10 +141,9 @@
                             <xsl:apply-templates select="."/>
                         </xsl:if>
                     </xsl:for-each>
-
                     <xsl:apply-templates
                         select="published[@type='print']/volumeref | published[@type='print']/issueref 
-                        | published[@type='print']/pubfront/fpage | published[@type='print']/pubfront/lpage"
+                        | published[@type='print']/pubfront/fpage | published[@type='print']/pubfront/lpage|publisher/orgname/nameelt"
                     />
                 </imprint>
             </monogr>
@@ -176,6 +200,7 @@
         <affiliation>
             <xsl:apply-templates select="org/orgname/*"/>
             <xsl:apply-templates select="address"/>
+            <xsl:apply-templates select="email"/>
         </affiliation>
     </xsl:template>
 

@@ -126,6 +126,7 @@
             <xsl:attribute name="xml:id">
                 <xsl:apply-templates select="$entry/@id | @id"/>
             </xsl:attribute>
+            <xsl:if test="$entry/article-title">
             <analytic>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="$entry/article-title"/>
@@ -133,8 +134,13 @@
                     <xsl:apply-templates select="$entry/person-group | $entry/citauth | $entry/name"/>
                 <xsl:apply-templates select="$entry/object-id"/>
             </analytic>
+            </xsl:if>
             <monogr>
                 <xsl:apply-templates select="$entry/source | $entry/title"/>
+                <xsl:if test="not($entry/article-title)">
+                    <xsl:apply-templates select="$entry/person-group"/>
+                </xsl:if>
+                <xsl:apply-templates select="$entry/citauth | $entry/name"/>
                 <xsl:apply-templates select="$entry/comment"/>
                 <xsl:choose>
                    <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
@@ -197,21 +203,6 @@
         </biblStruct>
     </xsl:template>
 
-
-    <!-- Reference to a conference paper (old style) -->
-    <xsl:template match="ref[*/@citation-type='confproc']">
-        <xsl:call-template name="createInConf">
-            <xsl:with-param name="entry" select="*[@citation-type='confproc']"/>
-        </xsl:call-template>
-    </xsl:template>
-
-    <!-- Reference to a conference paper (INSERM style!) -->
-    <xsl:template match="ref[*/@citation-type='confproc']">
-        <xsl:call-template name="createInConf">
-            <xsl:with-param name="entry" select="*[@citation-type='confproc']"/>
-        </xsl:call-template>
-    </xsl:template>
-
     <!-- Reference to a conference paper (3.0 style) -->
     <xsl:template match="ref[*/@publication-type='confproc']">
         <xsl:call-template name="createInConf">
@@ -241,6 +232,11 @@
             <xsl:attribute name="xml:id">
                 <xsl:apply-templates select="$entry/@id | @id"/>
             </xsl:attribute>
+            <xsl:if test="$entry/article-title">
+                <analytic>
+                    <xsl:apply-templates select="$entry/source"/> 
+                </analytic>
+            </xsl:if>
             <monogr>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="$entry/person-group"/>
@@ -250,6 +246,9 @@
                     <xsl:apply-templates select="$entry/year"/>
                     <xsl:apply-templates select="$entry/publisher-loc"/>
                     <xsl:apply-templates select="$entry/publisher-name"/>
+                    <xsl:apply-templates select="$entry/fpage"/>
+                    <xsl:apply-templates select="$entry/lpage"/>
+                    <xsl:apply-templates select="$entry/edition"/>
                 </imprint>
             </monogr>
             <xsl:apply-templates select="$entry/pub-id"/>
@@ -258,26 +257,40 @@
 
     <!-- Unspecified reference (old style) -->
     <xsl:template match="ref">
-        <bibl type="article">
-            <xsl:choose>
-                <xsl:when test="citation/@id">
-                    <xsl:attribute name="xml:id">
-                        <xsl:value-of select="citation/@id"/>
-                    </xsl:attribute>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:attribute name="xml:id">
-                        <xsl:apply-templates select="@id"/>
-                    </xsl:attribute>
-                </xsl:otherwise>
-            </xsl:choose>
-            
-            <xsl:apply-templates select="citation"/>
-        </bibl>
+        <xsl:choose>
+            <xsl:when test="note">
+                <bibl type="note">
+                    <xsl:apply-templates/>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="citation">
+                <bibl type="article">
+                    <xsl:choose>
+                        <xsl:when test="citation/@id">
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="citation/@id"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="xml:id">
+                                <xsl:apply-templates select="@id"/>
+                            </xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    
+                    <xsl:apply-templates select="citation"/>
+                </bibl>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="citation">
             <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="note">
+        <xsl:apply-templates/>
     </xsl:template>
 
     <!-- Unspecified reference (3.0 style) -->
@@ -306,6 +319,7 @@
 
     <xsl:template match="person-group[@person-group-type='author']">
         <xsl:apply-templates select="name" mode="authors"/>
+        <xsl:apply-templates select="collab" mode="authors"/>
     </xsl:template>
 
     <xsl:template match="person-group[@person-group-type='editor']">
@@ -328,6 +342,13 @@
             <xsl:if test="following-sibling::*[1][name()='aff']/email">
                 <xsl:apply-templates select="following-sibling::*[1][name()='aff']/email"/>
             </xsl:if>
+        </author>
+    </xsl:template>
+    <xsl:template match="collab" mode="authors">
+        <author>
+            <name>
+            <xsl:value-of select="."/>
+            </name>
         </author>
     </xsl:template>
 
