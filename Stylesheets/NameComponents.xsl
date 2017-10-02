@@ -7,7 +7,7 @@
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
     <xsl:template match="name | persname | auname">
         <xsl:choose>
-            <xsl:when test="ancestor::ref/citation |ancestor::ref/mixed-citation">
+            <xsl:when test="ancestor::ref/citation |ancestor::ref/mixed-citation and not(ancestor::person-group)">
                 <author>
                     <persName>
                         <xsl:apply-templates/>
@@ -18,23 +18,28 @@
                 <persName>
                     <xsl:apply-templates/>
                 </persName>
-                <xsl:if test="ancestor::contrib-group/aff and not(ancestor::contrib/xref)">
+                <xsl:if test="ancestor::contrib-group/aff | ancestor::article-meta/aff and not(ancestor::contrib/xref)">
                    <affiliation>
                        <xsl:choose>
-                           <xsl:when test="ancestor::contrib-group/aff/institution or ancestor::contrib-group/aff/addr-line">
-                               <xsl:if test="ancestor::contrib-group/aff/institution">
-                                   <xsl:for-each select="ancestor::contrib-group/aff/institution">
+                           <xsl:when test="ancestor::contrib-group/aff/institution or ancestor::article-meta/aff/institution or ancestor::contrib-group/aff/addr-line or ancestor::article-meta/aff/addr-line">
+                               <xsl:if test="ancestor::contrib-group/aff/institution|ancestor::article-meta/aff/institution">
+                                   <xsl:for-each select="ancestor::contrib-group/aff/institution |ancestor::article-meta/aff/institution">
                                        <orgName type="institution">
                                            <xsl:value-of select="."/>
                                        </orgName>
                                    </xsl:for-each>
                                </xsl:if>
-                               <xsl:if test="ancestor::contrib-group/aff/addr-line">
+                               <xsl:if test="ancestor::contrib-group/aff/addr-line |ancestor::article-meta/aff/addr-line | ancestor::contrib-group/aff/country |ancestor::article-meta/aff/country">
                                    <address>
-                                       <xsl:for-each select="ancestor::contrib-group/aff/addr-line">
+                                       <xsl:for-each select="ancestor::contrib-group/aff/addr-line |ancestor::article-meta/aff/addr-line">
                                            <addrLine>
                                                <xsl:value-of select="."/>
                                            </addrLine>
+                                       </xsl:for-each>
+                                       <xsl:for-each select="ancestor::contrib-group/aff/country |ancestor::article-meta/aff/country">
+                                           <country>
+                                               <xsl:value-of select="."/>
+                                           </country>
                                        </xsl:for-each>
                                    </address>
                                </xsl:if>

@@ -1280,6 +1280,7 @@
                         <xsl:value-of select="$arkistex"/>
                     </idno>
                 </xsl:if>
+                <xsl:apply-templates select="journal-id[@journal-id-type='isbn']"/>
                 <xsl:apply-templates select="doi"/>
                 <xsl:apply-templates select="article-meta/article-id"/>
                 
@@ -2007,15 +2008,55 @@
 
     <!-- References in main text -->
     <xsl:template match="xref">
-        <ref>
-            <xsl:attribute name="type">
-                <xsl:value-of select="@ref-type"/>
-            </xsl:attribute>
-            <xsl:attribute name="target">
-                <xsl:value-of select="concat('#', @rid)"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </ref>
+        <xsl:choose>
+            <xsl:when test="@rid and ancestor::contrib">
+                <xsl:variable name="numberedIndex">
+                    <xsl:value-of select="./sup"/>
+                </xsl:variable>
+                <xsl:variable name="numberedIndex2">
+                    <xsl:value-of select="./target"/>
+                </xsl:variable>
+                <xsl:choose>
+                    <xsl:when test="@rid and //aff/target">
+                            <xsl:for-each select="//aff/target[@id=current()/@rid]">
+                                <affiliation>
+                                    <xsl:value-of select="normalize-space(./following-sibling::text()[1])"/> 
+                                </affiliation>
+                            </xsl:for-each>
+                    </xsl:when>
+                    <xsl:when test="@rid">
+                        <xsl:variable name="index" select="@rid"/>
+                        <xsl:apply-templates select="//aff[@id = $index]"/>
+                    </xsl:when>
+                    <xsl:when test="ancestor::article-meta/descendant::aff/sup[normalize-space(.) = normalize-space($numberedIndex)]/following-sibling::text()[1]">
+                        <affiliation>
+                            <xsl:apply-templates select="ancestor::article-meta/descendant::aff/sup[normalize-space(.) = normalize-space($numberedIndex)]/following-sibling::text()[1]"/>
+                        </affiliation>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <ref>
+                    <xsl:choose>
+                        <xsl:when test="@ref-type">
+                            <xsl:attribute name="type">
+                                <xsl:value-of select="@ref-type"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="type">
+                                <xsl:text>bib</xsl:text>
+                            </xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    
+                    <xsl:attribute name="target">
+                        <xsl:value-of select="concat('#', @rid)"/>
+                    </xsl:attribute>
+                    <xsl:apply-templates/>
+                </ref>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="ext-link">

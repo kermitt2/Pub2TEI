@@ -12,7 +12,7 @@
     <!-- SAGE - ajout des issns -->
     <xsl:variable name="sageISSNCode">
         <xsl:choose>
-                    <xsl:when test="normalize-space($codePublisherID1)='AAF'">0308-5759</xsl:when>
+<xsl:when test="normalize-space($codePublisherID1)='AAF'">0308-5759</xsl:when>
 <xsl:when test="normalize-space($codePublisherID1)='AAS'">0095-3997</xsl:when>
 <xsl:when test="normalize-space($codePublisherID1)='ABS'">0002-7642</xsl:when>
 <xsl:when test="normalize-space($codePublisherID1)='ACD'">1038-4162</xsl:when>
@@ -615,7 +615,7 @@
 <xsl:when test="normalize-space($codePublisherID1)='YJJ'">1473-2254</xsl:when>
 <xsl:when test="normalize-space($codePublisherID1)='YOU'">1103-3088</xsl:when>
 <xsl:when test="normalize-space($codePublisherID1)='YVJ'">1541-2040</xsl:when>
-                </xsl:choose>
+</xsl:choose>
             </xsl:variable>
     <!--SAGE - eissn -->
     <xsl:variable name="SAGEeISSNCode">
@@ -1819,7 +1819,9 @@
 <xsl:when test="normalize-space($codePublisherID1)='YJJ'">Youth justice</xsl:when>
 <xsl:when test="normalize-space($codePublisherID1)='YOU'">Young (Stockholm. 1993)</xsl:when>
 <xsl:when test="normalize-space($codePublisherID1)='YVJ'">Youth violence and juvenile justice</xsl:when>
-                                        </xsl:choose>
+            <xsl:when test="//journal-id[@journal-id-type='isbn']='978-0-85404-169-5'"><title>Nanotechnologies in Food</title></xsl:when>
+            <xsl:when test="//journal-id[@journal-id-type='isbn']='978-1-84755-916-6'"><title>Handbook of Culture Media for Food and Water Microbiology (3rd Edition)</title></xsl:when>
+        </xsl:choose>
     </xsl:variable>
     <xsl:template
         match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle">
@@ -2007,7 +2009,7 @@
     </xsl:template>
 
     <xsl:template match="journal-id">
-        <xsl:if test="normalize-space(.)">
+        <xsl:if test="@journal-id-type!='isbn'">
             <title level="j" type="{@journal-id-type}">
                 <xsl:apply-templates/>
             </title>
@@ -2063,6 +2065,7 @@
             </idno>
             </xsl:when>
             <xsl:otherwise>
+                <xsl:if test="$sageISSNCode or $SAGEeISSNCode">
                 <idno type="pISSN">
                     <!-- SAGE - ajout des pissns -->
                     <xsl:value-of select="$sageISSNCode"/>
@@ -2071,10 +2074,10 @@
                     <!-- SAGE - ajout des eissns -->
                     <xsl:value-of select="$SAGEeISSNCode"/>
                 </idno>
+                </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-
     <xsl:template
         match="JournalPrintISSN | issn[@issn_type='print'][string-length()&gt;0] | issn[@pub-type='ppub'][string-length()&gt;0] | PrintISSN | issn-paper | SeriesPrintISSN | issn[@type='print'] | wiley:issn[@type='print'] ">
         <xsl:variable name="ISSNCode">
@@ -2114,7 +2117,13 @@
                 <xsl:value-of select="$ISSNCode"/>
             </idno>
     </xsl:template>
-
+    <xsl:template
+        match="journal-id[@journal-id-type='isbn'][string-length()&gt;0]">
+        
+        <idno type="ISBN">
+            <xsl:value-of select="//journal-id[@journal-id-type='isbn']"/>
+        </idno>
+    </xsl:template>
     <!-- SG - ajout DOI niveau book - pour matcher avec les reversement du Hub de métadonnées-->
     <xsl:template match="wiley:publicationMeta[@level='product']/wiley:doi">
         <xsl:if test="normalize-space(.)">
