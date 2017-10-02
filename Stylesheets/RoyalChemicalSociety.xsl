@@ -25,7 +25,7 @@
                             </publisher>
                         </xsl:if>
                         <xsl:if test="@price-code[string(.)='free']">
-                            <availability status="OpenAccess">
+                            <availability status="free">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>

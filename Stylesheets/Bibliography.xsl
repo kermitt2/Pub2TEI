@@ -142,6 +142,7 @@
                 </xsl:if>
                 <xsl:apply-templates select="$entry/citauth | $entry/name"/>
                 <xsl:apply-templates select="$entry/comment"/>
+                <xsl:apply-templates select="$entry/conference"/>
                 <xsl:choose>
                    <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
                 <imprint>
@@ -238,10 +239,12 @@
                 </analytic>
             </xsl:if>
             <monogr>
-                <!-- All authors are included here -->
-                <xsl:apply-templates select="$entry/person-group"/>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="$entry/source"/>
+                <xsl:apply-templates select="$entry/uri" mode="citation"/>
+                <!-- All authors are included here -->
+                <xsl:apply-templates select="$entry/person-group"/>
+                <xsl:apply-templates select="$entry/name"/>
                 <imprint>
                     <xsl:apply-templates select="$entry/year"/>
                     <xsl:apply-templates select="$entry/publisher-loc"/>
@@ -249,9 +252,9 @@
                     <xsl:apply-templates select="$entry/fpage"/>
                     <xsl:apply-templates select="$entry/lpage"/>
                     <xsl:apply-templates select="$entry/edition"/>
+                    <xsl:apply-templates select="$entry/pub-id"/>
                 </imprint>
             </monogr>
-            <xsl:apply-templates select="$entry/pub-id"/>
         </biblStruct>
     </xsl:template>
 
@@ -303,12 +306,6 @@
 
     <xsl:template match="mixed-citation">
         <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="conf-name">
-        <meeting>
-            <xsl:apply-templates/>
-        </meeting>
     </xsl:template>
 
     <xsl:template match="elocation-id">
@@ -400,7 +397,14 @@
 
     <!-- Journal information for <monogr> -->
     <xsl:template match="source">
-        <title level="j">
+        <title>
+            <xsl:attribute name="level">
+                <xsl:choose>
+                    <xsl:when test="ancestor::citation/@citation-type='journal' or ancestor::mixed-citation/@publication-type='journal'">j</xsl:when>
+                    <xsl:when test="ancestor::citation/@citation-type='book'or ancestor::mixed-citation/@publication-type='journal'">m</xsl:when>
+                    <xsl:otherwise>j</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </title>
     </xsl:template>

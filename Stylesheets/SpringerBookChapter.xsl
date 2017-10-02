@@ -23,7 +23,7 @@
                         <xsl:apply-templates
                             select="Series/Book/descendant::Chapter/ChapterInfo/ChapterCopyright"/>
                         <xsl:if test="//ArticleGrants/BodyPDFGrant[string(@Grant)='OpenAccess']">
-                            <availability status="OpenAccess">
+                            <availability status="free">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>

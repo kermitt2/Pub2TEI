@@ -324,6 +324,13 @@
             </ptr>
         </xsl:if>
     </xsl:template>
+    <xsl:template match="uri" mode="citation">
+        <xsl:if test="normalize-space(.)">
+            <idno type="url">
+                <xsl:apply-templates/>  
+            </idno>
+        </xsl:if>
+    </xsl:template>
 
     <!-- Not satisfactory: should find a better way -->
     <xsl:template match="PublisherURL">

@@ -31,7 +31,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="//ArticleGrants/BodyPDFGrant[string(@Grant)='OpenAccess']">
-                                <availability status="OpenAccess">
+                                <availability status="free">
                                     <p>Open Access</p>
                                 </availability>
                         </xsl:if>

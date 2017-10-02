@@ -17,12 +17,34 @@
             <xsl:otherwise>
                 <persName>
                     <xsl:apply-templates/>
-                    <xsl:if test="ancestor::contrib-group/aff">
-                        <affiliation>
-                            <xsl:value-of select="ancestor::contrib-group/aff"/>
-                        </affiliation>
-                    </xsl:if>
                 </persName>
+                <xsl:if test="ancestor::contrib-group/aff and not(ancestor::contrib/xref)">
+                   <affiliation>
+                       <xsl:choose>
+                           <xsl:when test="ancestor::contrib-group/aff/institution or ancestor::contrib-group/aff/addr-line">
+                               <xsl:if test="ancestor::contrib-group/aff/institution">
+                                   <xsl:for-each select="ancestor::contrib-group/aff/institution">
+                                       <orgName type="institution">
+                                           <xsl:value-of select="."/>
+                                       </orgName>
+                                   </xsl:for-each>
+                               </xsl:if>
+                               <xsl:if test="ancestor::contrib-group/aff/addr-line">
+                                   <address>
+                                       <xsl:for-each select="ancestor::contrib-group/aff/addr-line">
+                                           <addrLine>
+                                               <xsl:value-of select="."/>
+                                           </addrLine>
+                                       </xsl:for-each>
+                                   </address>
+                               </xsl:if>
+                           </xsl:when>
+                           <xsl:otherwise>
+                               <xsl:value-of select="ancestor::contrib-group/aff"/>
+                           </xsl:otherwise>
+                       </xsl:choose>
+                    </affiliation>
+                </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

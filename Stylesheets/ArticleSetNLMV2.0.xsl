@@ -39,7 +39,7 @@
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </xsl:if>
                         <xsl:if test="OpenAccess[string(.)='True']">
-                            <availability status="OpenAccess">
+                            <availability status="free">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>

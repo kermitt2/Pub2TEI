@@ -770,8 +770,8 @@
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1016/0266-7681(89)90002-8'">Picture - J. WILLIAM LITTLER, M.D., F.A.C.S. </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
-                    <xsl:when test="//front/article-meta/title-group/article-title[string-length() &gt; 0] |//fm/atl[string-length() &gt; 0]">
-                        <xsl:apply-templates select="//front/article-meta/title-group/article-title | //fm/atl "/>
+                    <xsl:when test="//article/front/article-meta/title-group/article-title[string-length() &gt; 0] |//fm/atl[string-length() &gt; 0]">
+                        <xsl:apply-templates select="//article/front/article-meta/title-group/article-title | //fm/atl "/>
                     </xsl:when>
                     <!-- SG: reprise du titre principal dans left si seulement indication 'Book Reviews/Comptes rendus' dans right -->
                     <xsl:when test="contains(//front/article-meta/title-group/alt-title[@alt-title-type='right-running'],'Book Reviews/Comptes rendus') or contains(//front/article-meta/title-group/alt-title[@alt-title-type='right-running'],'Book Reviews / Comptes rendus')">
@@ -880,13 +880,20 @@
                             <xsl:apply-templates select="front/article-meta/copyright-year"/>
                         </xsl:if>
                         <xsl:if test="front/article-meta/custom-meta-wrap/custom-meta[string(meta-name) = 'unlocked' and string(meta-value) = 'Yes']">
-                            <availability status="OpenAccess">
+                            <availability status="free">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
                         <xsl:if test="front/article-meta/open-access[string(.) = 'YES']">
-                            <availability status="OpenAccess">
+                            <availability status="free">
                                 <p>Open Access</p>
+                            </availability>
+                        </xsl:if>
+                        <xsl:if test="front/article-meta/permissions/license[@license-type='open-access']">
+                            <availability status="free">
+                                <p>
+                                    <xsl:value-of select="front/article-meta/permissions/license/license-p"/>
+                                </p>
                             </availability>
                         </xsl:if>
                     </publicationStmt>
@@ -1013,22 +1020,24 @@
                 </body>
                     </xsl:when>
                     <xsl:otherwise>
-                        <body>
-                            <div>
-                                <xsl:choose>
-                                    <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
-                                    <xsl:when test="//headerx/bdy">
-                                        <p>
-                                            <xsl:value-of select="bdy"/>
-                                        </p>
-                                    </xsl:when>
-                                    <xsl:otherwise>
-                                        <p/>
-                                    </xsl:otherwise>
-                                </xsl:choose>
-                                
-                            </div>
-                        </body>
+                        <xsl:if test="not(//sub-article)">
+                                <body>
+                                    <div>
+                                        <xsl:choose>
+                                            <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
+                                            <xsl:when test="//headerx/bdy">
+                                                <p>
+                                                    <xsl:value-of select="bdy"/>
+                                                </p>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <p/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        
+                                    </div>
+                                </body> 
+                            </xsl:if>
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:if test="sub-article">
@@ -1096,12 +1105,12 @@
                                 <xsl:apply-templates select="front/article-meta/copyright-year | pubfm/cpg/cpy | suppfm/cpg/cpy"/>
                             </xsl:if>
                             <xsl:if test="front/article-meta/custom-meta-wrap/custom-meta[string(meta-name) = 'unlocked' and string(meta-value) = 'Yes']">
-                                <availability status="OpenAccess">
+                                <availability status="free">
                                     <p>Open Access</p>
                                 </availability>
                             </xsl:if>
                             <xsl:if test="front/article-meta/open-access[string(.) = 'YES']">
-                                <availability status="OpenAccess">
+                                <availability status="free">
                                     <p>Open Access</p>
                                 </availability>
                             </xsl:if>
@@ -1153,11 +1162,7 @@
                         </profileDesc>
                         </xsl:when>
                         <xsl:otherwise>
-                            <profileDesc>
-                                <abstract>
-                                    <p/>
-                                </abstract>
-                            </profileDesc>
+                            <profileDesc/>
                         </xsl:otherwise>
                     </xsl:choose>
                     <xsl:if test="front/article-meta/history">
@@ -1285,7 +1290,7 @@
                 <xsl:apply-templates select="journal-meta/journal-id"/>
                 <xsl:apply-templates select="journal-meta/issue-title"/>
                 <xsl:apply-templates select="journal-meta/issn | issn |parent/issn"/>
-                <xsl:apply-templates select="article-meta/elocation-id"/>
+                <xsl:apply-templates select="//conference"/>
                 <imprint>
                     <xsl:apply-templates select="journal-meta/publisher/*"/>
 
@@ -1433,6 +1438,7 @@
 
     <xsl:template match="contrib[@contrib-type = 'author' or not(@contrib-type)]">
         <author>
+            <xsl:if test="not(ancestor::sub-article)">
             <xsl:attribute name="xml:id">
                 <xsl:variable name="i" select="position()-1"/>
                 <xsl:choose>
@@ -1450,6 +1456,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
+            </xsl:if>
             <xsl:if test="@corresp = 'yes'">
                 <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
@@ -2249,7 +2256,7 @@
         </ref>
     </xsl:template>
     <xsl:template match="front/article-meta/product">
-        <div type="product">
+        <div type="review-of">
             <p>
         <xsl:apply-templates/>
             </p>
@@ -2290,12 +2297,15 @@
     <!-- SG: categorisation niveau book -->
     <xsl:template match="front/article-meta/article-categories/subj-group">
         <keywords>
-        <xsl:if test="@subj-group-type">
             <xsl:attribute name="scheme">
-                <xsl:value-of select="@subj-group-type"/>
+            <xsl:choose>
+                <xsl:when test="@subj-group-type">
+                    <xsl:value-of select="@subj-group-type"/>
+                </xsl:when>
+                <xsl:otherwise>head</xsl:otherwise>
+            </xsl:choose>
             </xsl:attribute>
             <xsl:apply-templates/>
-        </xsl:if>
         </keywords>
     </xsl:template>
     <xsl:template match="pubfm/subject">
@@ -2304,15 +2314,52 @@
                 <xsl:attribute name="scheme">
                     <xsl:value-of select="@subj-group-type"/>
                 </xsl:attribute>
-                <term>
-                <xsl:apply-templates/>
-                </term>
             </xsl:if>
+            <term>
+                <xsl:apply-templates/>
+            </term>
         </keywords>
     </xsl:template>
     <xsl:template match="front/article-meta/article-categories/subj-group/subject">
         <term>
             <xsl:apply-templates/>
         </term>
+    </xsl:template>
+    <!-- conference -->
+    <xsl:template match="//conference">
+        <meeting>
+            <xsl:apply-templates select="conf-name"/>
+            <xsl:apply-templates select="conf-sponsor"/>
+            <xsl:apply-templates select="conf-date"/>
+            <xsl:apply-templates select="conf-loc"/>
+            <xsl:apply-templates select="conf-num"/>
+        </meeting>
+    </xsl:template>
+    <xsl:template match="conf-name">
+        <xsl:if test="normalize-space(.)">
+        <name>
+            <xsl:apply-templates/>
+        </name>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="conf-date">
+        <date>
+            <xsl:apply-templates/>
+        </date>
+    </xsl:template>
+    <xsl:template match="conf-loc">
+        <placeName>
+            <xsl:apply-templates/>
+        </placeName>
+    </xsl:template>
+    <xsl:template match="conf-sponsor">
+        <orgName>
+            <xsl:apply-templates/>
+        </orgName>
+    </xsl:template>
+    <xsl:template match="conf-num">
+        <idno type="conf-num">
+            <xsl:apply-templates/>
+        </idno>
     </xsl:template>
 </xsl:stylesheet>
