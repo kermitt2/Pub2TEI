@@ -19,10 +19,17 @@
                         <xsl:apply-templates select="art-front/titlegrp/title"/>
                     </titleStmt>
                     <publicationStmt>
-                        <xsl:if test="//article/published[@type='print']/journalref/publisher/orgname/nameelt">
+                        <xsl:if test="//article/published[@type='print']|published[@type='book']/journalref/publisher/orgname/nameelt">
                             <publisher>
-                                <xsl:value-of select="//article/published[@type='print']/journalref/publisher/orgname/nameelt"/>
+                                <xsl:value-of select="//article/published[@type='print']|published[@type='book']/journalref/publisher/orgname/nameelt"/>
                             </publisher>
+                        </xsl:if>
+                        <xsl:if test="//article/published[@type='print']|published[@type='book']/journalref/cpyrt">
+                            <availability>
+                                <p>
+                                    <xsl:value-of select="//article/published[@type='print']|published[@type='book']/journalref/cpyrt"/>
+                                </p>
+                            </availability>
                         </xsl:if>
                         <xsl:if test="@price-code[string(.)='free']">
                             <availability status="free">
@@ -62,7 +69,6 @@
                             </div>
                         </xsl:otherwise>
                     </xsl:choose>
-                    
                 </body>
                 <back>
                     <xsl:apply-templates select="art-back/*"/>
@@ -120,18 +126,75 @@
                 <xsl:apply-templates select="art-front/titlegrp/*"/>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="art-front/authgrp/author"/>
+                <xsl:apply-templates select="art-admin/doi"/>
+                <xsl:apply-templates select="art-admin/ms-id"/>
             </analytic>
             <monogr>
-                <title level="j" type="main">
-                    <xsl:value-of select="//article/published[@type='print']/journalref/title[@type='full']"/>
-                </title>
-                <title level="j" type="alt">
-                    <xsl:value-of select="//article/published[@type='print']/journalref/title[@type='abbreviated']"/>
-                </title>
+                <xsl:choose>
+                    <xsl:when test="//article/published[@type='print']/journalref/title[@type='full']">
+                        <title level="j" type="main">
+                            <xsl:value-of select="//article/published[@type='print']/journalref/title[@type='full']"/>
+                        </title>
+                    </xsl:when>
+                    <xsl:when test="//article/published[@type='print']/journalref/title[@type='full']">
+                        <title level="j" type="main">
+                            <xsl:value-of select="//article/published[@type='print']/journalref/title[@type='full']"/>
+                        </title>
+                    </xsl:when>
+                    <xsl:when test="//article/published[@type='print']/journalref/title">
+                        <title level="j" type="main">
+                            <xsl:value-of select="//article/published[@type='print']/journalref/title"/>
+                        </title>
+                    </xsl:when>
+                    <xsl:when test="//article/published[@type='book']/journalref/title[@type='full']">
+                        <title level="m" type="main">
+                            <xsl:value-of select="//article/published[@type='book']/journalref/title[@type='full']"/>
+                        </title>
+                    </xsl:when>
+                    <xsl:when test="//article/published[@type='book']/journalref/title[@type='full']">
+                        <title level="m" type="main">
+                            <xsl:value-of select="//article/published[@type='book']/journalref/title[@type='full']"/>
+                        </title>
+                    </xsl:when>
+                    <xsl:when test="//article/published[@type='book']/journalref/title">
+                        <title level="m" type="main">
+                            <xsl:value-of select="//article/published[@type='book']/journalref/title"/>
+                        </title>
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:if test="//article/published[@type='print']/journalref/title[@type='abbreviated']">
+                    <title level="j" type="alt">
+                        <xsl:value-of select="//article/published[@type='print']/journalref/title[@type='abbreviated']"/>
+                    </title>
+                </xsl:if>
+                <xsl:if test="//article/published[@type='book']/journalref/title[@type='abbreviated']">
+                    <title level="m" type="alt">
+                        <xsl:value-of select="//article/published[@type='book']/journalref/title[@type='abbreviated']"/>
+                    </title>
+                </xsl:if>
                 <xsl:if test="//article/published[@type='print']/journalref/sercode">
                     <idno type="sercode">
-                        <xsl:value-of select="//article/published[@type='print']/journalref/sercode"/>
+                        <xsl:value-of select="//article/published[@type='print']|published[@type='book']/journalref/sercode"/>
                     </idno>
+                </xsl:if>
+                <xsl:if test="//article/published[@type='book']/journalref/sercode">
+                    <idno type="sercode">
+                        <xsl:value-of select="//article/published[@type='book']/journalref/sercode"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="//article/published/journalref/issn">
+                    <xsl:for-each select="//article/published/journalref/issn">
+                    <idno>
+                        <xsl:attribute name="type">
+                        <xsl:choose>
+                            <xsl:when test="//article/published/journalref/issn[@type='isbn']">ISBN</xsl:when>
+                            <xsl:when test="//article/published/journalref/issn[@type='pissn']">pISSN</xsl:when>
+                            <xsl:when test="//article/published/journalref/issn[@type='eissn']">eISSN</xsl:when>
+                        </xsl:choose>
+                        </xsl:attribute>
+                        <xsl:value-of select="."/>
+                    </idno>
+                    </xsl:for-each>
                 </xsl:if>
                 <imprint>
                     <xsl:for-each select="article-meta/pub-date">
@@ -142,8 +205,8 @@
                         </xsl:if>
                     </xsl:for-each>
                     <xsl:apply-templates
-                        select="published[@type='print']/volumeref | published[@type='print']/issueref 
-                        | published[@type='print']/pubfront/fpage | published[@type='print']/pubfront/lpage|publisher/orgname/nameelt"
+                        select="published/volumeref | published/issueref 
+                        | published/pubfront/fpage | published/pubfront/lpage|publisher/orgname/nameelt"
                     />
                 </imprint>
             </monogr>
@@ -226,9 +289,9 @@
     <!-- Macrostructure of main body if the text -->
     <xsl:template match="section">
         <div>
-            <xsl:if test="@type">
+            <xsl:if test="@type|no">
                 <xsl:attribute name="type">
-                    <xsl:value-of select="@type"/>
+                    <xsl:value-of select="@type|no"/>
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
@@ -237,9 +300,9 @@
 
     <xsl:template match="*[starts-with(name(),'subsect')]">
         <div>
-            <xsl:if test="@type">
+            <xsl:if test="@type|no">
                 <xsl:attribute name="type">
-                    <xsl:value-of select="@type"/>
+                    <xsl:value-of select="@type|no"/>
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>

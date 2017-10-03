@@ -233,13 +233,9 @@
             <xsl:attribute name="xml:id">
                 <xsl:apply-templates select="$entry/@id | @id"/>
             </xsl:attribute>
-            <xsl:if test="$entry/article-title">
-                <analytic>
-                    <xsl:apply-templates select="$entry/source"/> 
-                </analytic>
-            </xsl:if>
             <monogr>
                 <!-- Title information related to the paper goes here -->
+                <xsl:apply-templates select="$entry/article-title"/> 
                 <xsl:apply-templates select="$entry/source"/>
                 <xsl:apply-templates select="$entry/uri" mode="citation"/>
                 <!-- All authors are included here -->

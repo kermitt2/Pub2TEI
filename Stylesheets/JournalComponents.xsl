@@ -2189,6 +2189,14 @@
             </idno>
         </xsl:if>
     </xsl:template>
+    <xsl:template
+        match="ms-id">
+        <xsl:if test="normalize-space(.)">
+            <idno type="ms-id">
+                <xsl:value-of select="normalize-space(.)"/>
+            </idno>
+        </xsl:if>
+    </xsl:template>
     <xsl:template match="wiley:publicationMeta[@level='unit']/wiley:idGroup/wiley:id">
             <idno>
                 <xsl:attribute name="type">
@@ -2254,7 +2262,7 @@
     
     <xsl:template match="vol | Volume | VolumeID | volume | volumeref | volumeno | sb:volume-nr | vid | wiley:numbering[@type='journalVolume'] | wiley:vol">
         <xsl:choose>
-            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation">
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation |ancestor::p">
                 <bibl>
                     <biblScope unit="vol">
                         <xsl:apply-templates/>
@@ -2345,7 +2353,7 @@
 
     <xsl:template match="spn | FirstPage | ArticleFirstPage | fpage | first-page | sb:first-page | ChapterFirstPage | ppf | wiley:numbering[@type='pageFirst'] | wiley:pageFirst">
         <xsl:choose>
-            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation |ancestor::product/.">
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation |ancestor::product/. |ancestor::p">
                 <bibl>
                     <biblScope unit="page" from="{normalize-space(.)}">
                         <xsl:value-of select="normalize-space(.)"/>
@@ -2365,7 +2373,7 @@
 <!-- SG: nettoyage caractéres polluants dans les données -->
     <xsl:template match="epn | LastPage | ArticleLastPage | lpage | last-page | ChapterLastPage | sb:last-page | ppl | wiley:numbering[@type='pageLast'] | wiley:pageLast">
         <xsl:choose>
-            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation">
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation |ancestor::p">
                 <bibl>
                     <biblScope unit="page" to="{translate(.,'normalize-space(.)','')}">
                         <xsl:value-of select="translate(.,'normalize-space(.)','')"/>
@@ -2375,7 +2383,7 @@
             <xsl:otherwise>
                 <xsl:if test="normalize-space(.) and not(contains(.,'n/a'))">
                     <biblScope unit="page" to="{translate(.,' ','')}">
-                        <xsl:value-of select="translate(.,'normalize-space(.)','')"/>
+                        <xsl:value-of select="translate(.,' ','')"/>
                     </biblScope>
                 </xsl:if>
             </xsl:otherwise>

@@ -20,6 +20,11 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
+    <xsl:template match="quotation">
+        <quote>
+            <xsl:apply-templates/>
+        </quote>
+    </xsl:template>
     
     <!-- wiley tabularFixed -->
     <xsl:template match="wiley:tabularFixed">
@@ -103,6 +108,11 @@
         </head>
     </xsl:template>
     <xsl:template match="li">
+        <item>
+            <xsl:apply-templates/>
+        </item>
+    </xsl:template>
+    <xsl:template match="item">
         <item>
             <xsl:apply-templates/>
         </item>

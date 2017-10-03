@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley"
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley"
     exclude-result-prefixes="#all">
     <xsl:output encoding="UTF-8" method="xml"/>
-    
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
     <xsl:template match="name | persname | auname">
         <xsl:choose>
@@ -19,25 +18,35 @@
                     <xsl:apply-templates/>
                 </persName>
                 <xsl:if test="ancestor::contrib-group/aff | ancestor::article-meta/aff and not(ancestor::contrib/xref)">
-                   <affiliation>
+                    <xsl:if test="ancestor::contrib-group/aff/email">
+                        <email><xsl:value-of select="ancestor::contrib-group/aff/email"/></email>
+                    </xsl:if>
+                    
+                    <xsl:for-each select="ancestor::contrib-group/aff | ancestor::article-meta/aff">
+                    <affiliation>
                        <xsl:choose>
-                           <xsl:when test="ancestor::contrib-group/aff/institution or ancestor::article-meta/aff/institution or ancestor::contrib-group/aff/addr-line or ancestor::article-meta/aff/addr-line">
-                               <xsl:if test="ancestor::contrib-group/aff/institution|ancestor::article-meta/aff/institution">
-                                   <xsl:for-each select="ancestor::contrib-group/aff/institution |ancestor::article-meta/aff/institution">
+                           <xsl:when test="institution  or addr-line">
+                               <xsl:if test="institution">
+                                   <xsl:for-each select="institution">
                                        <orgName type="institution">
                                            <xsl:value-of select="."/>
                                        </orgName>
                                    </xsl:for-each>
                                </xsl:if>
-                               <xsl:if test="ancestor::contrib-group/aff/addr-line |ancestor::article-meta/aff/addr-line | ancestor::contrib-group/aff/country |ancestor::article-meta/aff/country">
+                               <xsl:if test="addr-line | country">
                                    <address>
-                                       <xsl:for-each select="ancestor::contrib-group/aff/addr-line |ancestor::article-meta/aff/addr-line">
+                                       <xsl:for-each select="addr-line">
                                            <addrLine>
                                                <xsl:value-of select="."/>
                                            </addrLine>
                                        </xsl:for-each>
-                                       <xsl:for-each select="ancestor::contrib-group/aff/country |ancestor::article-meta/aff/country">
+                                       <xsl:for-each select="country">
                                            <country>
+                                               <xsl:attribute name="key">
+                                                   <xsl:call-template name="normalizeISOCountry">
+                                                       <xsl:with-param name="country" select="."/>
+                                                   </xsl:call-template>
+                                               </xsl:attribute>
                                                <xsl:value-of select="."/>
                                            </country>
                                        </xsl:for-each>
@@ -45,10 +54,11 @@
                                </xsl:if>
                            </xsl:when>
                            <xsl:otherwise>
-                               <xsl:value-of select="ancestor::contrib-group/aff"/>
+                               <xsl:value-of select="."/>
                            </xsl:otherwise>
                        </xsl:choose>
                     </affiliation>
+                  </xsl:for-each> 
                 </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
@@ -95,8 +105,7 @@
                 <xsl:apply-templates/>
             </forename>
         </xsl:if>
-    </xsl:template> 
-    
+    </xsl:template>
     <xsl:template match="middle_name | MiddleName | mn | corresponding-author-middlename">
         <xsl:if test="normalize-space(.)">
             <forename type="middle">

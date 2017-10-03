@@ -865,8 +865,18 @@
                         <xsl:if test="front/journal-meta/publisher">
                             <xsl:apply-templates select="front/journal-meta/publisher/*"/>
                         </xsl:if>
-                        <xsl:if test="not(front/journal-meta/publisher)">
-                            <publisher>Nature Publishing Group</publisher>
+                        <xsl:if test="suppfm/sponsor">
+                            <distributor resp="{suppfm/sponsor/@type}">
+                                <xsl:value-of select="suppfm/sponsor"/>
+                            </distributor>
+                        </xsl:if>
+                        <xsl:if test="suppfm/parent/cpg/cpn">
+                            <publisher>
+                                <xsl:value-of select="suppfm/parent/cpg/cpn"/>
+                            </publisher>
+                        </xsl:if>
+                        <xsl:if test="suppfm/parent/cpg/cpy">
+                            <date when="{suppfm/parent/cpg/cpy}"/>
                         </xsl:if>
                         <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
                             <availability>
@@ -1315,6 +1325,13 @@
 				            <xsl:value-of select="//article/front/article-meta/counts/page-count/@count"/>
 				        </biblScope>
 				    </xsl:if>
+                    <!--SG - ajout nombre de pages -->
+                    <xsl:if test="normalize-space(//suppfm/pp/cnt)">
+                        <biblScope unit="page-count">
+                            <xsl:value-of select="//suppfm/pp/cnt"/>
+                        </biblScope>
+                    </xsl:if>
+                    
 				    <xsl:if test="normalize-space(//article/front/article-meta/counts/ref-count/@count)">
 				        <biblScope unit="ref-count">
 				            <xsl:value-of select="//article/front/article-meta/counts/ref-count/@count"/>
@@ -1506,7 +1523,7 @@
         <xsl:if test="not(/article/pubfm | /headerx/pubfm | /article/suppfm)">
             <!-- this only apply to NPG articles not containing a pubfm style component -->
             <affiliation>
-                <xsl:apply-templates select="*[name(.) != 'addr-line' and name(.) != 'country']"/>
+                <xsl:apply-templates select="*[name(.) != 'addr-line' and name(.) != 'country' and name(.) != 'sup']"/>
                 <xsl:choose>
                     <xsl:when test="addr-line | country">
                         <address>
@@ -1514,15 +1531,15 @@
                         </address>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select=".except(sup)"/>
+                        <xsl:value-of select="text()"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </affiliation>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="contrib/aff">
+   <xsl:template match="contrib/aff">
             <!-- this only apply to NPG articles not containing a pubfm style component -->
-            <affiliation>
+          <affiliation>
                 <xsl:apply-templates select="*[name(.) != 'addr-line' and name(.) != 'country']"/>
                 <xsl:choose>
                     <xsl:when test="addr-line | country">
@@ -1556,14 +1573,18 @@
        </xsl:if>
     </xsl:template>
     <xsl:template match="caff" mode="sourceDesc">
-        <xsl:if test="email">
-            <email>
-                <xsl:value-of select="email"/>
-            </email>
-        </xsl:if>
-        <affiliation>
-            <xsl:value-of select="."/>
-        </affiliation>
+        <xsl:choose>
+            <xsl:when test="email">
+                <email>
+                    <xsl:value-of select="normalize-space(email)"/>
+                </email>
+            </xsl:when>
+            <xsl:otherwise>
+                <affiliation>
+                    <xsl:value-of select="."/>
+                </affiliation>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="aff" mode="sourceDesc">
         <affiliation>
@@ -1618,7 +1639,7 @@
         <xsl:choose>
             <xsl:when test="@rid">
                 <xsl:variable name="index" select="@rid"/>
-                <xsl:apply-templates select="//aff[@id = $index]"/>
+                <xsl:apply-templates select="//contrib-group/aff[@id = $index]"/>
             </xsl:when>
             <xsl:when test="ancestor::article-meta/descendant::aff/sup[normalize-space(.) = normalize-space($numberedIndex)]/following-sibling::text()[1]">
                 <affiliation>
@@ -1891,7 +1912,7 @@
                 </xsl:attribute>
                 <xsl:apply-templates/>
             </xsl:if>
-            <xsl:if test="li">
+            <xsl:if test="li|item">
                 <xsl:apply-templates/>
             </xsl:if>
         </list>
@@ -2343,7 +2364,7 @@
                 <xsl:when test="@subj-group-type">
                     <xsl:value-of select="@subj-group-type"/>
                 </xsl:when>
-                <xsl:otherwise>head</xsl:otherwise>
+                <xsl:otherwise>subject</xsl:otherwise>
             </xsl:choose>
             </xsl:attribute>
             <xsl:apply-templates/>
@@ -2351,11 +2372,14 @@
     </xsl:template>
     <xsl:template match="pubfm/subject">
         <keywords>
-            <xsl:if test="@subj-group-type">
-                <xsl:attribute name="scheme">
-                    <xsl:value-of select="@subj-group-type"/>
-                </xsl:attribute>
-            </xsl:if>
+            <xsl:attribute name="scheme">
+                <xsl:choose>
+                    <xsl:when test="@subj-group-type">
+                        <xsl:value-of select="@subj-group-type"/>
+                    </xsl:when>
+                    <xsl:otherwise>subject</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
             <term>
                 <xsl:apply-templates/>
             </term>
@@ -2377,11 +2401,18 @@
         </meeting>
     </xsl:template>
     <xsl:template match="conf-name">
-        <xsl:if test="normalize-space(.)">
-        <name>
-            <xsl:apply-templates/>
-        </name>
-        </xsl:if>
+        <xsl:choose>
+            <xsl:when test="ancestor::ref">
+                <title level="a" type="main">
+                    <xsl:apply-templates/>
+                </title>
+            </xsl:when>
+            <xsl:when test="ancestor::conference and normalize-space(.)">
+                <name>
+                    <xsl:apply-templates/>
+                </name>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="conf-date">
         <date>
