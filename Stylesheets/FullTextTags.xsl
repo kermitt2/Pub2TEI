@@ -611,7 +611,7 @@
         <xsl:if test="normalize-space(.)"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
-    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b | b">
+    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b | b|bo">
         <xsl:if test="normalize-space(.)"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
@@ -659,9 +659,14 @@
         <xsl:if test="."><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
-    <xsl:template match="underline | ce:underline">
+    <xsl:template match="ul |underline | ce:underline">
         <xsl:if test=".">
             <hi rend="underline"><xsl:apply-templates/></hi>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="scr">
+        <xsl:if test=".">
+            <hi rend="script"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 

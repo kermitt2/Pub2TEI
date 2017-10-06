@@ -68,7 +68,22 @@
     <xsl:template match="ce:other-ref">
         <xsl:apply-templates/>
     </xsl:template>
-
+    
+    <!-- Sage -->
+    <xsl:template match="other-ref">
+        <bibl type="other">
+            <xsl:apply-templates/>
+        </bibl>
+    </xsl:template>
+    
+    <!-- Sage -->
+    <xsl:template match="art-ref">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="atl">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
     <xsl:template match="ce:textref">
         <xsl:apply-templates/>
     </xsl:template>
@@ -264,22 +279,21 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="citation">
-                <bibl type="article">
-                    <xsl:choose>
-                        <xsl:when test="citation/@id">
-                            <xsl:attribute name="xml:id">
-                                <xsl:value-of select="citation/@id"/>
-                            </xsl:attribute>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:attribute name="xml:id">
-                                <xsl:apply-templates select="@id"/>
-                            </xsl:attribute>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    
-                    <xsl:apply-templates select="citation"/>
-                </bibl>
+                    <bibl type="article">
+                        <xsl:choose>
+                            <xsl:when test="citation/@id">
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="citation/@id"/>
+                                </xsl:attribute>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:attribute name="xml:id">
+                                    <xsl:apply-templates select="@id"/>
+                                </xsl:attribute>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:apply-templates select="citation"/>
+                    </bibl>
                 </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
@@ -287,6 +301,12 @@
 
     <xsl:template match="citation">
             <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="citation" mode="sage">
+        <xsl:apply-templates select="journal-ref"/>
+        <xsl:apply-templates select="book-ref"/>
+        <xsl:apply-templates select="other-ref"/>
+        <xsl:apply-templates select="conference-ref"/>
     </xsl:template>
     <xsl:template match="note">
         <xsl:apply-templates/>
@@ -324,6 +344,21 @@
     </xsl:template>
 
     <xsl:template match="name" mode="editors">
+        <editor>
+            <xsl:apply-templates select="."/>
+        </editor>
+    </xsl:template>
+    <xsl:template match="edg">
+        <editor>
+            <xsl:apply-templates select="editor"/>
+        </editor>
+    </xsl:template>
+    <xsl:template match="editor">
+        <editor>
+            <xsl:apply-templates/>
+        </editor>
+    </xsl:template>
+    <xsl:template match="ed">
         <editor>
             <xsl:apply-templates select="."/>
         </editor>
@@ -682,4 +717,376 @@
         </xsl:for-each>
     </xsl:template>
 
+    <!-- références structurées
+         ++++++++++++++++++++++
+        IN:  article/back/references/reference-list/.
+             article/back/references/reference-list/multipart//.
+             article/back/references/reference-list/ref-group//.
+             << journal-ref
+             << book-ref
+             << conf-ref
+             << misc-ref
+        
+        +++++++++++++++++++        
+        OUT: biblStruct +/*
+        +++++++++++++++++++
+        
+        TODO prise en compte des 2 attributs
+             optionnels author et year-label
+             *-ref/@author       ex: "Bousis et al"
+             *-ref/@year-label   ex: "1963a"
+             
+             référencer la template des links autre qu'archive 
+             (2 cas avec que des idno multiples : SPIRES et aps)
+        
+    -->
+    
+    
+    <!--journal-ref
+        (refbib article de périodique)
+    -->
+    <xsl:template match="journal-ref">
+        <biblStruct type="article">
+            
+            <!-- attributs courants -->
+            <xsl:if test="@id">
+                <xsl:attribute name="xml:id" select="@id"/>
+            </xsl:if>
+            <xsl:if test="@num">
+                <xsl:attribute name="n" select="@num"/>
+            </xsl:if>
+            
+            <!-- partie analytique (article) -->
+            <analytic>
+                <!-- utilisation pipe xpath => ne préjuge pas de l'ordre -->
+                <xsl:apply-templates select="authors | aut
+                    | art-title | art-ref/atl
+                    | art-number
+                    | preprint-info/art-number
+                    | misc-text/extdoi
+                    | crossref/cr_doi"/>
+                <xsl:apply-templates select="url" mode="citation"/>
+            </analytic>
+            
+            <!-- partie monographique (périodique) -->
+            <monogr>
+                <xsl:apply-templates select="jnl-title |jtl
+                    | conf-title
+                    | editors  |ed
+                    | crossref/cr_issn"/>
+                <!-- dont imprint -->
+                <imprint>
+                    <xsl:apply-templates select="year 
+                        | volume |vid | dte | iid
+                        | part
+                        | issno
+                        |art-ref/ppf
+                        |art-ref/ppl
+                        | pages"/>
+                </imprint>
+            </monogr>
+            <!-- notes et url -->
+            <xsl:apply-templates select="preprint-info/preprint
+                | misc-text[not(extdoi)]
+                | links/arxiv"/>
+        </biblStruct>
+    </xsl:template>
+    
+    <!--book-ref
+        (refbib livre ou chapitre de livre)
+    -->
+    <xsl:template match="book-ref">
+        <biblStruct type="book">
+            <!-- attributs courants -->
+            <xsl:if test="@id">
+                <xsl:attribute name="xml:id" select="@id"/>
+            </xsl:if>
+            <xsl:if test="@num">
+                <xsl:attribute name="n" select="@num"/>
+            </xsl:if>
+            
+            <xsl:choose>
+                <!-- art-title indique que c'est un chapitre -->
+                <!--Du coup les auteurs passent dans analytic (est-ce tjs valable?)-->
+                <xsl:when test="art-title | chaptl">
+                    <analytic>
+                        <xsl:apply-templates select="authors
+                            | art-title | chaptl | aut"/>
+                    </analytic>
+                    <monogr>
+                        <xsl:apply-templates select="book-title |btl
+                            | editors  |ed
+                            | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                        <xsl:apply-templates select="url" mode="citation"/>
+                        <xsl:if test="isbn">
+                            <xsl:apply-templates/>
+                        </xsl:if>
+                        <imprint>
+                            <xsl:choose>
+                                <xsl:when test="year 
+                                    | volume 
+                                    | part
+                                    | chap
+                                    | pages
+                                    | publication/place
+                                    | publication/publisher
+                                    | pub-ref
+                                    | pub-place
+                                    | pub-name">
+                                    <xsl:apply-templates select="year 
+                                        | volume 
+                                        | part
+                                        | chap
+                                        | pages
+                                        | publication/place
+                                        | publication/publisher
+                                        | pub-ref
+                                        | pub-place
+                                        | pub-name"/>
+                                </xsl:when>
+                                <xsl:otherwise><date/></xsl:otherwise>
+                            </xsl:choose>
+                            
+                        </imprint>
+                    </monogr>
+                </xsl:when>
+                
+                <!-- Cas général -->
+                <xsl:otherwise>
+                    <monogr>
+                        <xsl:apply-templates select="book-title | btl | aut
+                            | authors
+                            | editors  |ed
+                            | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                        <xsl:apply-templates select="url" mode="citation"/>
+                        <xsl:if test="isbn">
+                            <xsl:apply-templates/>
+                        </xsl:if>
+                        <imprint>
+                            <xsl:choose>
+                                <xsl:when test="year | dte
+                                    | volume 
+                                    | part
+                                    | chap
+                                    | pages
+                                    | publication/place
+                                    | publication/publisher
+                                    | pub-ref
+                                    | pub-place
+                                    | pub-name">
+                                    <xsl:apply-templates select="year | dte
+                                        | volume 
+                                        | part
+                                        | chap
+                                        | pages
+                                        | publication/place
+                                        | publication/publisher
+                                        | pub-ref
+                                        | pub-place
+                                        | pub-name"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <date/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </imprint>
+                    </monogr>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <!-- tout le reste : série, notes, url -->
+            <xsl:apply-templates select="series
+                | preprint-info/preprint
+                | misc-text[not(extdoi) and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]
+                | links/arxiv"/>
+        </biblStruct>
+    </xsl:template>
+    
+    <!--conf-ref
+        (refbib actes et confs)
+        NB : meeting créé sur place à partir de conf-title et conf-place
+        TODO : extraire la date qu'on trouve parfois dans les conf-place ?
+    -->
+    <xsl:template match="conf-ref">
+        <biblStruct type="conf">
+            <!-- attributs courants -->
+            <xsl:attribute name="xml:id" select="@id"/>
+            <xsl:if test="@num">
+                <xsl:attribute name="n" select="@num"/>
+            </xsl:if>
+            
+            <analytic>
+                <xsl:apply-templates select="authors
+                    | art-title"/>
+            </analytic>
+            <monogr>
+                <!-- conf-title 
+                    ex: "Proc. 9th Int. Conf. on Hyperbolic Problems" -->
+                <xsl:if test="conf-title | conf-place">
+                    <meeting>
+                        <xsl:value-of select="conf-title"/>
+                        <xsl:if test="conf-place">
+                            <!-- conf-place
+                                ex: "Toulouse, 14–17 June 1999" -->
+                            <placeName>
+                                <xsl:value-of select="conf-place"/>
+                            </placeName>
+                        </xsl:if>
+                    </meeting>
+                </xsl:if>
+                <xsl:apply-templates select="editors
+                    | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                <xsl:if test="isbn">
+                    <xsl:apply-templates/>
+                </xsl:if>
+                <imprint>
+                    <xsl:apply-templates select="year
+                        | volume
+                        | pages
+                        | publication/place
+                        | publication/publisher"/>
+                </imprint>
+            </monogr>
+            
+            
+            <!-- tout le reste : série, notes, url -->
+            <xsl:apply-templates select="series
+                | preprint-info/preprint
+                | misc-text[not(extdoi) and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]
+                | links/arxiv"/>
+        </biblStruct>
+    </xsl:template>
+    <xsl:template match="conference-ref">
+        <biblStruct type="conf">
+            <!-- attributs courants -->
+            <xsl:if test="@id">
+                <xsl:attribute name="xml:id" select="@id"/>
+            </xsl:if>
+            <xsl:if test="@num">
+                <xsl:attribute name="n" select="@num"/>
+            </xsl:if>
+            
+            <analytic>
+                <xsl:apply-templates select="conf-tl
+                    | art-title |authors |aut"/>
+            </analytic>
+            <monogr>
+                <!-- conf-title 
+                    ex: "Proc. 9th Int. Conf. on Hyperbolic Problems" -->
+                <xsl:if test="conf-title | conf-place |conftl">
+                    <meeting>
+                        <xsl:value-of select="conf-title|conftl"/>
+                        <xsl:if test="conf-place|confloc">
+                            <!-- conf-place
+                                ex: "Toulouse, 14–17 June 1999" -->
+                            <placeName>
+                                <xsl:value-of select="conf-place|confloc"/>
+                            </placeName>
+                        </xsl:if>
+                        <xsl:if test="conf-date|confdate">
+                            <!-- conf-place
+                                ex: "Toulouse, 14–17 June 1999" -->
+                            <date>
+                                <xsl:value-of select="conf-date|confdate"/>
+                            </date>
+                        </xsl:if>
+                    </meeting>
+                </xsl:if>
+                
+                <xsl:apply-templates select="editors | edg |editor
+                    | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                <xsl:apply-templates select="url" mode="sage"/>
+                <imprint>
+                    <xsl:apply-templates select="year | conf-date
+                        | volume
+                        | pages
+                        | publication/place
+                        | publication/publisher"/>
+                </imprint>
+            </monogr>
+            
+            
+            <!-- tout le reste : série, notes, url -->
+            <xsl:apply-templates select="series
+                | preprint-info/preprint
+                | misc-text[not(extdoi) and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]
+                | links/arxiv"/>
+        </biblStruct>
+    </xsl:template>
+    <!--misc-ref 
+        (refbib de type thèse, brevet, logiciel, lien, ...)
+    -->
+    <xsl:template match="misc-ref">
+        <biblStruct>
+            
+            <!-- attribut type (pas aussi univoque que pour les autres ref) -->
+            <xsl:attribute name="type">
+                <xsl:choose>
+                    <!-- ne pas hésiter à ajouter d'autres tests -->
+                    <xsl:when test="thesis">thesis</xsl:when>
+                    <xsl:when test="patent-number">patent</xsl:when>
+                    <!-- heuristiques -->
+                    <xsl:when test="misc-title and contains('Report', misc-title)">report</xsl:when>
+                    <xsl:when test="misc-text and starts-with('PAT', misc-text)">patent</xsl:when>
+                    <xsl:otherwise>misc</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            
+            <!-- attributs courants -->
+            <xsl:attribute name="xml:id" select="@id"/>
+            <xsl:if test="@num">
+                <xsl:attribute name="n" select="@num"/>
+            </xsl:if>
+            
+            
+            <xsl:choose>
+                <!-- comme pour book-ref -->
+                <xsl:when test="art-title">
+                    <analytic>
+                        <xsl:apply-templates select="authors
+                            | art-title"/>
+                    </analytic>
+                    <monogr>
+                        <xsl:apply-templates select="editors |ed
+                            | misc-title
+                            | patent-number
+                            | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                        <imprint>
+                            <xsl:apply-templates select="year
+                                | volume
+                                | pages
+                                | publication/place
+                                | publication/publisher
+                                | source"/>
+                        </imprint>
+                    </monogr>
+                </xsl:when>
+                <!-- cas général -->
+                <xsl:otherwise>
+                    <monogr>
+                        <xsl:apply-templates select="authors
+                            | editors
+                            | misc-title
+                            | patent-number
+                            | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                        <imprint>
+                            <xsl:apply-templates select="year
+                                | pages
+                                | publication/place
+                                | publication/publisher
+                                | source"/>
+                        </imprint>
+                    </monogr>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <!-- tout le reste : série, notes, url -->
+            <xsl:apply-templates select="thesis
+                | preprint-info/preprint
+                | misc-text[not(extdoi) and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]
+                | links/arxiv"/>
+            
+            
+        </biblStruct>
+    </xsl:template>
 </xsl:stylesheet>

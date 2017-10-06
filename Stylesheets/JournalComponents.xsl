@@ -1824,7 +1824,7 @@
         </xsl:choose>
     </xsl:variable>
     <xsl:template
-        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle">
+        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle | chaptl">
         <xsl:if test="normalize-space(.)">
             <title level="a" type="main">
                 <xsl:if test="@Language | @xml:lang">
@@ -1890,7 +1890,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="subtitle | article_sub_title">
+    <xsl:template match="subtitle | article_sub_title|art_stitle">
         <xsl:if test="normalize-space(.)">
             <title level="a" type="sub">
                 <xsl:apply-templates/>
@@ -2101,7 +2101,7 @@
             </idno>
     </xsl:template>
 
-    <xsl:template match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN | issn[@type='electronic'] | wiley:issn[@type='electronic']">
+    <xsl:template match="JournalElectronicISSN | ElectronicISSN | issn[@issn_type='digital'] | issn[@pub-type='epub'] | issn-elec | SeriesElectronicISSN | issn[@type='electronic'] | wiley:issn[@type='electronic']|E-ISSN">
         <xsl:variable name="ISSNCode">
             <xsl:if test="normalize-space(.)">
                 <xsl:value-of select="normalize-space(.)"/>
@@ -2118,10 +2118,9 @@
             </idno>
     </xsl:template>
     <xsl:template
-        match="journal-id[@journal-id-type='isbn'][string-length()&gt;0]">
-        
+        match="journal-id[@journal-id-type='isbn'][string-length()&gt;0]|//ISBN[string-length()&gt;0]">
         <idno type="ISBN">
-            <xsl:value-of select="//journal-id[@journal-id-type='isbn']"/>
+            <xsl:value-of select="//journal-id[@journal-id-type='isbn']|//ISBN"/>
         </idno>
     </xsl:template>
     <!-- SG - ajout DOI niveau book - pour matcher avec les reversement du Hub de métadonnées-->
@@ -2303,7 +2302,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue'] | wiley:issue">
+    <xsl:template match="iid | iss | Issue | issue | issue-number | IssueID | issueref | wiley:numbering[@type='journalIssue'] | wiley:issue">
         <xsl:choose>
             <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation">
                 <bibl>

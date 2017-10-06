@@ -240,7 +240,7 @@
                        	 	<xsl:apply-templates select="header/publicationMeta/publisherInfo/publisherName"/>
 						</xsl:if>
 						<xsl:if test="not(header/publicationMeta/publisherInfo/publisherName)">
-                       	 	<publisher>Blackwell Publishing Ltd</publisher>
+                       	 	<publisher>Wiley Publishing Ltd</publisher>
 						</xsl:if>
                         <!-- SG ajout publisherLoc -->
                         <xsl:if test="header/publicationMeta/publisherInfo/publisherLoc">
