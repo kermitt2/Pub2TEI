@@ -21,11 +21,12 @@
                     <xsl:if test="ancestor::contrib-group/aff/email">
                         <email><xsl:value-of select="ancestor::contrib-group/aff/email"/></email>
                     </xsl:if>
-                    
                     <xsl:for-each select="ancestor::contrib-group/aff | ancestor::article-meta/aff">
+                        <xsl:if test="not(contains(@id,'cor'))">
+                            <xsl:if test="not(break)">
                     <affiliation>
                        <xsl:choose>
-                           <xsl:when test="institution  or addr-line">
+                           <xsl:when test="institution | addr-line">
                                <xsl:if test="institution">
                                    <xsl:for-each select="institution">
                                        <orgName type="institution">
@@ -58,7 +59,9 @@
                            </xsl:otherwise>
                        </xsl:choose>
                     </affiliation>
-                  </xsl:for-each> 
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:for-each>
                 </xsl:if>
             </xsl:otherwise>
         </xsl:choose>

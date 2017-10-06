@@ -958,8 +958,12 @@
                         <xsl:if test="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
                             <xsl:apply-templates select="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm"/>
                         </xsl:if>
-                        <xsl:apply-templates select="front/article-meta/kwd-group"/>
                         <!-- SG NLM subject -->
+                        <xsl:if test="front/article-meta/article-categories/subj-group">
+                            <textClass>
+                                <xsl:apply-templates select="front/article-meta/article-categories/subj-group"/>
+                            </textClass>
+                        </xsl:if>
                         <xsl:if test="pubfm/subject">
                             <textClass>
                                 <xsl:apply-templates select="pubfm/subject"/>
@@ -970,12 +974,7 @@
                                 <xsl:apply-templates select="suppfm/subject"/>
                             </textClass>
                         </xsl:if>
-                        <!-- SG NLM subject -->
-                        <xsl:if test="front/article-meta/article-categories/subj-group">
-                            <textClass>
-                                <xsl:apply-templates select="front/article-meta/article-categories/subj-group"/>
-                            </textClass>
-                        </xsl:if>
+                        <xsl:apply-templates select="front/article-meta/kwd-group"/>
                         <!-- language -->
                         <xsl:if test="@xml:lang">
                             <langUsage>
@@ -1279,6 +1278,30 @@
                 <xsl:if test="//bdy/corres/aug">
                     <xsl:apply-templates select="//bdy/corres/aug/*"/>
                 </xsl:if>
+                <!-- cas particulier 26F643143005AA7642AD684F8B69A743D0117A8B.xml 
+                        biographies hors contrib-->
+                <xsl:for-each select="//article-meta/aff">
+                    <xsl:if test="contains(@id,'cor')">
+                        <author>
+                            <xsl:attribute name="corresp">
+                                <xsl:variable name="nettoie">
+                                    <xsl:value-of select="translate(@id,'cor','')"/>
+                                </xsl:variable>
+                                <xsl:variable name="nettoie2">
+                                    <xsl:value-of select="translate($nettoie,'123456789','012345678')"/>
+                                </xsl:variable>
+                                <xsl:text>#author-000</xsl:text>
+                                <xsl:value-of select="$nettoie2"/>
+                            </xsl:attribute>
+                            <state type="biography">
+                                <desc>
+                                    <xsl:apply-templates/>
+                                </desc>
+                            </state>
+                        </author>
+                    </xsl:if>
+                </xsl:for-each>
+                
                 <!-- ajout identifiants ISTEX et ARK -->
                 <xsl:if test="string-length($idistex) &gt; 0 ">
                     <idno type="istex">
@@ -1456,9 +1479,8 @@
 
     <xsl:template match="contrib[@contrib-type = 'author' or not(@contrib-type)]">
         <author>
-            <xsl:if test="not(ancestor::sub-article)">
-            <xsl:attribute name="xml:id">
-                <xsl:variable name="i" select="position()-1"/>
+            <xsl:variable name="i" select="position()-1"/>
+            <xsl:variable name="authorNumber">
                 <xsl:choose>
                     <xsl:when test="$i &lt; 10">
                         <xsl:value-of select="concat('author-000', $i)"/>
@@ -1472,7 +1494,11 @@
                     <xsl:otherwise>
                         <xsl:value-of select="concat('author-', $i)"/>
                     </xsl:otherwise>
-                </xsl:choose>
+                </xsl:choose> 
+            </xsl:variable>
+            <xsl:if test="not(ancestor::sub-article)">
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="$authorNumber"/>
             </xsl:attribute>
             </xsl:if>
             <xsl:if test="@corresp = 'yes'">

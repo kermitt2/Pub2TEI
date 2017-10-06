@@ -671,7 +671,10 @@
     </xsl:template>
 
     <xsl:template match="break">
-        <lb/>
+        <xsl:choose>
+            <xsl:when test="ancestor::aff"/>
+            <xsl:otherwise><lb/></xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="wiley:fc">
         <xsl:if test=".">

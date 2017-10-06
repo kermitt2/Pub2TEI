@@ -276,6 +276,23 @@
 
     <xsl:template match="per_aut">
         <author>
+            <xsl:attribute name="xml:id">
+                <xsl:variable name="i" select="position()-1"/>
+                <xsl:choose>
+                    <xsl:when test="$i &lt; 10">
+                        <xsl:value-of select="concat('author-000', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 100">
+                        <xsl:value-of select="concat('author-00', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 1000">
+                        <xsl:value-of select="concat('author-0', $i)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="concat('author-', $i)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
             <persName>
                 <xsl:apply-templates select="fn | mn | ln"/>
             </persName>
