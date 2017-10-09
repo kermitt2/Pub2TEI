@@ -901,9 +901,8 @@
                         </xsl:if>
                         <xsl:if test="front/article-meta/permissions/license[@license-type='open-access']">
                             <availability status="free">
-                                <p>
-                                    <xsl:value-of select="front/article-meta/permissions/license/license-p"/>
-                                </p>
+                                <xsl:apply-templates select="front/article-meta/permissions/license/license-p"/>
+                                <xsl:apply-templates select="front/article-meta/permissions/license/p"/>
                             </availability>
                         </xsl:if>
                     </publicationStmt>
@@ -1057,9 +1056,9 @@
                 
                 <xsl:if test="back | bm |front/article-meta/product">
                     <back>
-                        <xsl:apply-templates select="back/* | bm/ack | bm/bibl"/>
                         <!-- SG - source des book-reviews, données qualifiés de production chez Cambridge -->
                         <xsl:apply-templates select="front/article-meta/product"/>
+                        <xsl:apply-templates select="back/* | bm/ack | bm/bibl"/>
                     </back>
                 </xsl:if>
             </text>
@@ -1477,7 +1476,7 @@
     <xsl:template match="caff"/>
     <xsl:template match="au/super"/>
 
-    <xsl:template match="contrib[@contrib-type = 'author' or not(@contrib-type)]">
+    <xsl:template match="contrib[@contrib-type='author' or not(@contrib-type)]">
         <author>
             <xsl:variable name="i" select="position()-1"/>
             <xsl:variable name="authorNumber">
@@ -1517,6 +1516,28 @@
 
     <xsl:template match="contrib[@contrib-type = 'editor']">
         <editor>
+            <xsl:variable name="i" select="position()-1"/>
+            <xsl:variable name="editorNumber">
+                <xsl:choose>
+                    <xsl:when test="$i &lt; 10">
+                        <xsl:value-of select="concat('editor-000', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 100">
+                        <xsl:value-of select="concat('editor-00', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 1000">
+                        <xsl:value-of select="concat('editor-0', $i)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="concat('editor-', $i)"/>
+                    </xsl:otherwise>
+                </xsl:choose> 
+            </xsl:variable>
+            <xsl:if test="not(ancestor::sub-article)">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="$editorNumber"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </editor>
     </xsl:template>
@@ -1659,20 +1680,79 @@
 
     <!-- redirected affiliation by means of basic index (BMJ - 3.0 example) -->
     <xsl:template match="xref[@ref-type = 'aff']">
-        <xsl:variable name="numberedIndex">
-            <xsl:value-of select="./sup"/>
-        </xsl:variable>
-        <xsl:choose>
-            <xsl:when test="@rid">
-                <xsl:variable name="index" select="@rid"/>
-                <xsl:apply-templates select="//contrib-group/aff[@id = $index]"/>
-            </xsl:when>
-            <xsl:when test="ancestor::article-meta/descendant::aff/sup[normalize-space(.) = normalize-space($numberedIndex)]/following-sibling::text()[1]">
-                <affiliation>
-                    <xsl:apply-templates select="ancestor::article-meta/descendant::aff/sup[normalize-space(.) = normalize-space($numberedIndex)]/following-sibling::text()[1]"/>
-                </affiliation>
-            </xsl:when>
-        </xsl:choose>
+        <xsl:if test="//aff[@id=current()/@rid]">
+            <xsl:if test="//aff[@id=current()/@rid]/email">
+                <email><xsl:value-of select="//aff[@id=current()/@rid]/email"/></email>
+            </xsl:if>
+            <xsl:for-each select="//aff[@id=current()/@rid]">
+                <xsl:if test="not(contains(@id,'cor'))">
+                    <xsl:if test="not(break)">
+                        <affiliation>
+                            <xsl:choose>
+                                <xsl:when test="institution | addr-line">
+                                    <xsl:if test="institution">
+                                        <xsl:for-each select="institution">
+                                            <orgName type="institution">
+                                                <xsl:value-of select="."/>
+                                            </orgName>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                    <xsl:if test="addr-line 
+                                        |country 
+                                        |named-content[@content-type='postcode']
+                                        |named-content[@content-type='city']">
+                                        <xsl:for-each select="addr-line">
+                                            <xsl:if test="institution">
+                                                <xsl:for-each select="institution">
+                                                    <orgName type="institution">
+                                                        <xsl:value-of select="."/>
+                                                    </orgName>
+                                                </xsl:for-each>
+                                            </xsl:if>
+                                            <xsl:if test="country 
+                                                |named-content[@content-type='postbox']
+                                                |named-content[@content-type='postcode']
+                                                |named-content[@content-type='city']">
+                                                <address>
+                                                    <xsl:if test="named-content[@content-type='postbox']">
+                                                        <postBox>
+                                                            <xsl:value-of select="named-content[@content-type='postbox']"/>
+                                                        </postBox>
+                                                    </xsl:if>
+                                                    <xsl:if test="named-content[@content-type='postcode']">
+                                                        <postCode>
+                                                            <xsl:value-of select="named-content[@content-type='postcode']"/>
+                                                        </postCode>
+                                                    </xsl:if>
+                                                    <xsl:if test="named-content[@content-type='city']">
+                                                        <settlement>
+                                                            <xsl:value-of select="named-content[@content-type='city']"/>
+                                                        </settlement>
+                                                    </xsl:if>
+                                                    <xsl:for-each select="country">
+                                                        <country>
+                                                            <xsl:attribute name="key">
+                                                                <xsl:call-template name="normalizeISOCountry">
+                                                                    <xsl:with-param name="country" select="."/>
+                                                                </xsl:call-template>
+                                                            </xsl:attribute>
+                                                            <xsl:value-of select="."/>
+                                                        </country>
+                                                    </xsl:for-each>
+                                                </address>
+                                            </xsl:if>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="."/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </affiliation>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:if>
     </xsl:template>
 
     <!-- specific notes attached to authors (PNAS - 3.0 example)-->
@@ -1709,47 +1789,47 @@
 
     <!-- Macrostructure of main body if the text -->
     <xsl:template match="sec[not(parent::boxed-text)]">
-        <div>
-            <xsl:if test="@sec-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@sec-type"/>
-                </xsl:attribute>
-            </xsl:if>
-
-            <xsl:if test="parent::boxed-text">
-                <xsl:attribute name="rend">
-                    <xsl:text>boxed-text</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-
-            <xsl:if test="label">
-                <xsl:attribute name="n">
-                    <xsl:value-of select="label"/>
-                </xsl:attribute>
-            </xsl:if>
-
-            <!-- We treat boxed-text as independant divisions right after the current division 
+                <div>
+                    <xsl:if test="@sec-type">
+                        <xsl:attribute name="type">
+                            <xsl:value-of select="@sec-type"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    
+                    <xsl:if test="parent::boxed-text">
+                        <xsl:attribute name="rend">
+                            <xsl:text>boxed-text</xsl:text>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    
+                    <xsl:if test="label">
+                        <xsl:attribute name="n">
+                            <xsl:value-of select="label"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    
+                    <!-- We treat boxed-text as independant divisions right after the current division 
             to avoid getting a division within a paragraph by accident -->
-            <xsl:choose>
-                <xsl:when test="not(descendant::sec) and descendant::boxed-text">
-                    <xsl:comment>Boxed-text</xsl:comment>
-                    <xsl:apply-templates/>
-                    <xsl:apply-templates select="descendant::boxed-text/sec" mode="boxed-text"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:apply-templates/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </div>
+                    <xsl:choose>
+                        <xsl:when test="not(descendant::sec) and descendant::boxed-text">
+                            <xsl:comment>Boxed-text</xsl:comment>
+                            <xsl:apply-templates/>
+                            <xsl:apply-templates select="descendant::boxed-text/sec" mode="boxed-text"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </div>
     </xsl:template>
 
     <xsl:template match="sec[parent::boxed-text]">
-        <div>
+        <floatingText>
             <xsl:if test="@sec-type">
                 <xsl:attribute name="type">
                     <xsl:value-of select="@sec-type"/>
@@ -1757,7 +1837,7 @@
             </xsl:if>
             
             <xsl:if test="parent::boxed-text">
-                <xsl:attribute name="rend">
+                <xsl:attribute name="type">
                     <xsl:text>boxed-text</xsl:text>
                 </xsl:attribute>
             </xsl:if>
@@ -1767,9 +1847,10 @@
                     <xsl:value-of select="label"/>
                 </xsl:attribute>
             </xsl:if>
-            
-            <xsl:apply-templates/>
-        </div>
+            <body>
+                <xsl:apply-templates/>
+            </body>
+        </floatingText>
     </xsl:template>
     
     <xsl:template match="sec/label"/>
@@ -1778,10 +1859,24 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="sec/title">
-        <head>
-            <xsl:apply-templates/>
-        </head>
+    <xsl:template match="sec[parent::boxed-text]/title">
+                <div>
+                    <head>
+                        <xsl:apply-templates/>
+                    </head>
+                </div>
+    </xsl:template>
+    <xsl:template match="sec[parent::boxed-text]/list">
+        <div>
+            <list type="{@list-type}">
+                <xsl:apply-templates/>
+            </list>
+        </div>
+    </xsl:template>
+    <xsl:template match="sec[not(parent::boxed-text)]/title">
+            <head>
+                <xsl:apply-templates/>
+            </head>
     </xsl:template>
 
     <xsl:template match="ack">
@@ -1925,23 +2020,48 @@
     <!-- Lists -->
 
     <xsl:template match="list">
-        <list>
-            <xsl:if test="@list-type">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@list-type"/>
-                </xsl:attribute>
-                <xsl:apply-templates/>
-            </xsl:if>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-                <xsl:apply-templates/>
-            </xsl:if>
-            <xsl:if test="li|item">
-                <xsl:apply-templates/>
-            </xsl:if>
-        </list>
+        <xsl:choose>
+            <xsl:when test="parent::boxed-text/sec">
+                <div>
+                    <list>
+                        <xsl:if test="@list-type">
+                            <xsl:attribute name="type">
+                                <xsl:value-of select="@list-type"/>
+                            </xsl:attribute>
+                            <xsl:apply-templates/>
+                        </xsl:if>
+                        <xsl:if test="@id">
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="@id"/>
+                            </xsl:attribute>
+                            <xsl:apply-templates/>
+                        </xsl:if>
+                        <xsl:if test="li|item">
+                            <xsl:apply-templates/>
+                        </xsl:if>
+                    </list>
+                </div>
+            </xsl:when>
+            <xsl:otherwise>
+                <list>
+                    <xsl:if test="@list-type">
+                        <xsl:attribute name="type">
+                            <xsl:value-of select="@list-type"/>
+                        </xsl:attribute>
+                        <xsl:apply-templates/>
+                    </xsl:if>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                        <xsl:apply-templates/>
+                    </xsl:if>
+                    <xsl:if test="li|item">
+                        <xsl:apply-templates/>
+                    </xsl:if>
+                </list>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="list-item">
@@ -1978,12 +2098,22 @@
 
     <xsl:template match="graphic">
         <graphic>
+            <xsl:if test="@xlink:href">
             <xsl:attribute name="url">
                 <xsl:value-of select="@xlink:href"/>
             </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="graphic-file/@filename">
+                <xsl:attribute name="url">
+                    <xsl:for-each select="graphic-file">
+                    <xsl:value-of select="@filename"/>
+                        <xsl:text> ; </xsl:text>
+                    </xsl:for-each>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
         </graphic>
     </xsl:template>
-
     <!-- Tables -->
 
     <xsl:template match="hr">
@@ -2233,8 +2363,14 @@
                 <xsl:when test="@pub-type = 'epub'">
                     <xsl:attribute name="type">ePublished</xsl:attribute>
                 </xsl:when>
+                <xsl:when test="@pub-type = 'epub-original'">
+                    <xsl:attribute name="type">Original-ePublished</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@pub-type = 'collection'">
+                    <xsl:attribute name="type">Collection-Published</xsl:attribute>
+                </xsl:when>
                 <xsl:when test="@pub-type = 'final'">
-                    <xsl:attribute name="type">FinalPublished</xsl:attribute>
+                    <xsl:attribute name="type">Final-Published</xsl:attribute>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:attribute name="type">Published</xsl:attribute>
@@ -2345,9 +2481,9 @@
     </xsl:template>
     <xsl:template match="front/article-meta/product">
         <div type="review-of">
-            <p>
+            <bibl>
         <xsl:apply-templates/>
-            </p>
+            </bibl>
         </div>
     </xsl:template>
     <!-- SG - supplementary information about correction -->
@@ -2459,5 +2595,8 @@
         <idno type="conf-num">
             <xsl:apply-templates/>
         </idno>
+    </xsl:template>
+    <xsl:template match="front/article-meta/permissions/license/license-p">
+            <xsl:apply-templates/>
     </xsl:template>
 </xsl:stylesheet>

@@ -2409,7 +2409,7 @@
     <xsl:template
         match="PublisherName | publisher_name | pub_name | publisher-name | tei:cell[@role='Publisher'] | wiley:publisherName |publisher/orgname/nameelt">
         <xsl:choose>
-            <xsl:when test="ancestor::p/. |ancestor::product/.">
+            <xsl:when test="ancestor::p/.">
                 <bibl>
                 <publisher>
                     <xsl:apply-templates/>
@@ -2428,7 +2428,7 @@
 
     <xsl:template match="publisher-loc | pub_location | PublisherLocation | wiley:publisherLoc">
         <xsl:choose>
-            <xsl:when test="ancestor::p/. |ancestor::product/.">
+            <xsl:when test="ancestor::p/.">
                 <bibl>
                     <pubPlace>
                         <xsl:apply-templates/>

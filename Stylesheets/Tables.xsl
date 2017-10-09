@@ -28,9 +28,9 @@
     </xsl:template>
 
     <xsl:template match="table-wrap-foot">
-        <ab type="table-wrap-foot">
+        <note type="table-wrap-foot">
             <xsl:apply-templates/>
-        </ab>
+        </note>
     </xsl:template>
 
     <xsl:template match="table-wrap-foot/fn">

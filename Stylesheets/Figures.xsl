@@ -34,7 +34,50 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
-	
+	<!-- IOP -->
+    <xsl:template match="figure">
+        <figure>
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </figure>
+    </xsl:template>
+    <xsl:template match="figure/title">
+        <head>
+            <xsl:apply-templates/>
+        </head>
+    </xsl:template>
+    <xsl:template match="caption/p">
+        <figDesc>
+            <xsl:apply-templates/>
+        </figDesc>
+    </xsl:template>
+    <xsl:template match="graphic-file">
+        <desc>
+            <xsl:if test="@version">
+                <xsl:attribute name="type">
+                    <xsl:value-of select="@version"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@filename">
+                <xsl:attribute name="source">
+                    <xsl:value-of select="@filename"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@align">
+                <xsl:attribute name="rend">
+                    <xsl:value-of select="@align"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@width">
+                <xsl:attribute name="rendition">
+                    <xsl:value-of select="@width"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </desc>
+    </xsl:template>
     <!-- Wiley -->
     <xsl:template match="wiley:figure">
         <figure>

@@ -517,8 +517,17 @@
     </xsl:template>
     <xsl:template match="cite">
         <ref type="cit">
+            <xsl:attribute name="target">
+                <xsl:text>#</xsl:text>
+                <xsl:value-of select="@id|@linkend"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
+    <xsl:template match="secref">
+        <ref type="section">
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="@id"/>
+                <xsl:value-of select="@linkend"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </ref>
@@ -742,7 +751,7 @@
 		</div>
     </xsl:template>
 	
-    <xsl:template match="sectitle">
+    <xsl:template match="sectitle |heading">
         <head>
 			<xsl:apply-templates/>
 		</head>	

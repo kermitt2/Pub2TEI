@@ -76,21 +76,6 @@
         </author>
     </xsl:template>
 
-    <xsl:template match="contrib[@contrib-type='editor']">
-        <editor>
-            <xsl:apply-templates/>
-        </editor>
-    </xsl:template>
-
-   <!-- <xsl:template match="contrib">
-        <respStmt>
-            <resp>
-                <xsl:value-of select="@contrib-type"/>
-            </resp>
-            <xsl:apply-templates/>
-        </respStmt>
-    </xsl:template>-->
-
     <xsl:template match="dateStruct">
         <date>
             <xsl:value-of select="."/>

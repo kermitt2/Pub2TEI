@@ -160,7 +160,8 @@
                 <xsl:apply-templates select="$entry/conference"/>
                 <xsl:choose>
                    <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
-                <imprint>
+                       <note><xsl:value-of select="normalize-space(.)"/></note>
+                       <imprint>
                     <xsl:apply-templates select="$entry/year"/>
                     <xsl:apply-templates select="$entry/volume | $entry/volumeno"/>
                     <xsl:apply-templates select="$entry/issue"/>
@@ -349,19 +350,18 @@
         </editor>
     </xsl:template>
     <xsl:template match="edg">
-        <editor>
-            <xsl:apply-templates select="editor"/>
-        </editor>
+        <xsl:apply-templates select="editor"/>
     </xsl:template>
     <xsl:template match="editor">
         <editor>
             <xsl:apply-templates/>
         </editor>
     </xsl:template>
+  
     <xsl:template match="ed">
-        <editor>
-            <xsl:apply-templates select="."/>
-        </editor>
+        <edition>
+            <xsl:apply-templates/>
+        </edition>
     </xsl:template>
 
     <xsl:template match="name" mode="authors">
@@ -758,6 +758,19 @@
             
             <!-- partie analytique (article) -->
             <analytic>
+                <xsl:for-each select="authors/au">
+                    <author>
+                        <persName>
+                            <surname><xsl:value-of select="second-name"/></surname>
+                            <forename type="first"><xsl:value-of select="first-names"/></forename>
+                        </persName>
+                    </author>
+                </xsl:for-each>
+                <xsl:for-each select="authors/others">
+                    <author>
+                        <xsl:value-of select="italic"/>
+                    </author>
+                </xsl:for-each>
                 <!-- utilisation pipe xpath => ne préjuge pas de l'ordre -->
                 <xsl:apply-templates select="authors | aut
                     | art-title | art-ref/atl
@@ -765,6 +778,7 @@
                     | preprint-info/art-number
                     | misc-text/extdoi
                     | crossref/cr_doi"/>
+                
                 <xsl:apply-templates select="url" mode="citation"/>
             </analytic>
             
@@ -815,7 +829,7 @@
                     </analytic>
                     <monogr>
                         <xsl:apply-templates select="book-title |btl
-                            | editors  |ed
+                            | editors  |ed |edg
                             | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
                         <xsl:apply-templates select="url" mode="citation"/>
                         <xsl:if test="isbn">
@@ -856,7 +870,7 @@
                     <monogr>
                         <xsl:apply-templates select="book-title | btl | aut
                             | authors
-                            | editors  |ed
+                            | editors  |ed | edg
                             | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
                         <xsl:apply-templates select="url" mode="citation"/>
                         <xsl:if test="isbn">
@@ -914,17 +928,30 @@
             <xsl:if test="@num">
                 <xsl:attribute name="n" select="@num"/>
             </xsl:if>
-            
-            <analytic>
-                <xsl:apply-templates select="authors
-                    | art-title"/>
-            </analytic>
             <monogr>
+                <xsl:apply-templates select="art-title"/>
+                <xsl:for-each select="authors/au">
+                    <author>
+                        <persName>
+                            <surname><xsl:value-of select="second-name"/></surname>
+                            <forename type="first"><xsl:value-of select="first-names"/></forename>
+                        </persName>
+                    </author>
+                </xsl:for-each>
+                <xsl:for-each select="authors/others">
+                    <author>
+                        <xsl:value-of select="italic"/>
+                    </author>
+                </xsl:for-each>
+                <xsl:apply-templates select="editors
+                    | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
                 <!-- conf-title 
                     ex: "Proc. 9th Int. Conf. on Hyperbolic Problems" -->
                 <xsl:if test="conf-title | conf-place">
                     <meeting>
+                        <name>
                         <xsl:value-of select="conf-title"/>
+                        </name>
                         <xsl:if test="conf-place">
                             <!-- conf-place
                                 ex: "Toulouse, 14–17 June 1999" -->
@@ -934,8 +961,7 @@
                         </xsl:if>
                     </meeting>
                 </xsl:if>
-                <xsl:apply-templates select="editors
-                    | misc-text[matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$')]"/>
+                
                 <xsl:if test="isbn">
                     <xsl:apply-templates/>
                 </xsl:if>

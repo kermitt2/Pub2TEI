@@ -315,22 +315,4 @@
             <xsl:apply-templates/>
         </head>
     </xsl:template>
-
-    <!-- Figures (RCS OK) -->
-    <xsl:template match="figure">
-        <figure>
-            <xsl:attribute name="xml:id">
-                <xsl:value-of select="@id"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </figure>
-    </xsl:template>
-
-    <xsl:template match="figure/title">
-        <head>
-            <xsl:apply-templates/>
-        </head>
-    </xsl:template>
-
-
 </xsl:stylesheet>

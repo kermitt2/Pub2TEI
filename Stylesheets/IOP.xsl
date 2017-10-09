@@ -39,9 +39,7 @@
         /TEI/teiHeader/fileDesc/respStmt
         /TEI/teiHeader/fileDesc/sourceDesc/biblStruct >>
     -->
-    <xsl:template match="/article[contains(article-metadata/article-data/copyright, 'IOP')]
-                       | /article[contains(article-metadata/jnl-data/jnl-imprint, 'IOP')]
-                       | /article[contains(article-metadata/jnl-data/jnl-imprint, 'Institute of Physics')]">
+    <xsl:template match="article">
         <TEI>
             <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
@@ -50,21 +48,32 @@
                 <fileDesc>
                     <titleStmt>
                         <!-- Ici simplement reprise du titre principal (le détail est dans sourceDesc) -->
-                        <title>
+                        <title level="a" type="main">
                             <xsl:value-of select="header/title-group/title"/>
                         </title>
                     </titleStmt>
 
                     <!-- proposition d'un "stamp" Pub2TEI -->
-                    <editionStmt>
+                  <!-- <editionStmt>
                         <edition>TEI version</edition>
                         <respStmt>
                             <resp>Conversion from IOP XML to TEI-conformant markup</resp>
                             <name>Pub2TEI XSLT</name>
                         </respStmt>
-                    </editionStmt>
+                    </editionStmt>-->
                     <publicationStmt>
-                        <p>this TEI version for ISTEX database (CNRS)</p>
+                        <!-- Publisher jnl -->
+                        <xsl:apply-templates
+                            select="article-metadata/jnl-data/jnl-imprint"/>
+                        
+                        <!-- "printed in" ~ pubPlace -->
+                        <xsl:apply-templates
+                            select="article-metadata/article-data/printed"/>
+                       <availability>
+                           <licence>
+                               <xsl:value-of select="//article-metadata/jnl-data/jnl-imprint"/>
+                           </licence>
+                       </availability>
                     </publicationStmt>
 
                     <!-- métadonnées décrivant l'original -->
@@ -75,10 +84,14 @@
                                 <xsl:apply-templates select="header/title-group"/>
 
                                 <!-- Auteurs article -->
-                                <xsl:apply-templates select="header/author-group"/>
+                                <xsl:apply-templates select="header/author-group|author-group/author
+                                    | author-group/au
+                                    | authors/author
+                                    | authors/au
+                                    | collaboration/author"/>
 
                                 <!-- Adresse(s) d'affiliation -->
-                                <xsl:apply-templates select="header/address-group"/>
+                                <xsl:apply-templates select="header/editor-group |author-group/collaboration | authors/collaboration | editors/collaboration"/>
 
                                 <!-- Identifiants article (DOI, PII et 3 IDS internes à IOP ...) -->
                                 <xsl:apply-templates select="article-metadata/article-data/doi"/>
@@ -107,14 +120,15 @@
                                 <imprint>
                                     <!-- VOLUMAISON -->
                                     <xsl:apply-templates
+                                        select="article-metadata/issue-data/coverdate"/>
+                                    <xsl:apply-templates
                                         select="article-metadata/volume-data/year-publication"/>
                                     <xsl:apply-templates
                                         select="article-metadata/volume-data/volume-number"/>
                                                                                          
                                     <xsl:apply-templates
                                         select="article-metadata/issue-data/issue-number"/>
-                                    <xsl:apply-templates
-                                        select="article-metadata/issue-data/coverdate"/>
+                                    
 
 
                                     <!-- Pagination de l'article dans la monographie ou le fascicule -->
@@ -125,14 +139,6 @@
 
                                     <xsl:apply-templates
                                         select="article-metadata/article-data/length"/>
-
-                                    <!-- Publisher jnl -->
-                                    <xsl:apply-templates
-                                        select="article-metadata/jnl-data/jnl-imprint"/>
-
-                                    <!-- "printed in" ~ pubPlace -->
-                                    <xsl:apply-templates
-                                        select="article-metadata/article-data/printed"/>
                                 </imprint>
                             </monogr>
                         </biblStruct>
@@ -160,16 +166,10 @@
 
             </teiHeader>
                 <text>
-                    <front/>
                     <body>
-                        <!-- Actuellement on évite les templates inclues avec un select identique à article
-                             car l'objectif est dans les refbibs. A terme au contraire on voudra un select "tout-terrain"                        -->
-                        <xsl:apply-templates select="/article[contains(article-metadata/article-data/copyright, 'IOP')]/body
-                            | /article[contains(article-metadata/jnl-data/jnl-imprint, 'IOP')]/body
-                            | /article[contains(article-metadata/jnl-data/jnl-imprint, 'Institute of Physics')]/body"/>
+                        <xsl:apply-templates select="//sec-level1"/>
                     </body>
                     <back>
-                        
                         <!-- Lancement des refbibs -->
                         <xsl:apply-templates select="/article/back/references"/>
                         <!-- <listBibl> (<biblStruct/> +) </listBibl> -->
@@ -255,11 +255,9 @@
 
     <!-- length => biblScope pp range  -->
     <xsl:template match="article-data/length">
-        <xsl:comment>
-            article-data/length (de valeur <xsl:value-of select="."/>) 
-            pourrait donner un biblScope unit="pp" ?
-        </xsl:comment>
-        
+       <biblScope unit="page-count">
+           <xsl:value-of select="."/>
+       </biblScope>
     </xsl:template>
 
     <!-- first-page et last-page utilisés directement dans monogr -->
@@ -418,7 +416,7 @@
     <!-- year-publication => année seule => date sans when
         ex: "2007" -->
     <xsl:template match="volume-data/year-publication">
-        <date>
+        <date type="Published">
             <xsl:value-of select="."/>
         </date>
     </xsl:template>
@@ -493,14 +491,13 @@
          
          TODO: (pour editors uniquement) utiliser éventuellement l'attribut optionnel @order
     -->
-    <xsl:template match="header/author-group 
-                       | *[ends-with(local-name(),'-ref')]/authors
-                       | *[ends-with(local-name(),'-ref')]/editors">
+    <xsl:template match="header/author-group">
         <!-- Pas de liste en TEI, mais on remontera parfois à ce tag 
              car les author IOP ne sont pas tous des author TEI,
              notamment pour les editor        -->
         <xsl:apply-templates/>
     </xsl:template>
+    
 
 
     <!-- author | au
@@ -517,12 +514,15 @@
     <xsl:template match="author-group/author
                        | author-group/au
                        | authors/author
-                       | authors/au">
+                       | authors/au
+                       | collaboration/author">
         <author>
             <persName>
                 <!-- ne préjuge pas de l'ordre -->
-                <xsl:apply-templates select="./*[contains(name(),'-name')]"/>
+                <xsl:apply-templates/>
             </persName>
+            <xsl:apply-templates select="/article/header/address-group/e-address/email"/>
+            <xsl:apply-templates select="/article/header/address-group/address"/>
         </author>
     </xsl:template>
     
@@ -597,12 +597,9 @@
           - attribut @reflist en entrée à examiner et éventuellement reprendre
     -->
     <xsl:template match="author-group/collaboration | authors/collaboration | editors/collaboration">
-        <respStmt>
-            <resp/>
-            <name>
-                <xsl:apply-templates/>
-            </name>
-        </respStmt>
+        <xsl:apply-templates select="author"/>
+        <xsl:apply-templates select="editor"/>
+        <xsl:apply-templates select="group"/>
     </xsl:template>
     
     <!--authors/collaboration/group
@@ -610,11 +607,12 @@
         TODO voir si on peut ajouter quelque chose ici
     -->
     <xsl:template match="collaboration/group">
-        <xsl:value-of select="."/>
+        <author>
+            <name>
+        <xsl:apply-templates/>
+            </name>
+        </author>
     </xsl:template>
-    
-    
-    
     <!--authors/others
         Ex: "<other><italic>et al.</italic></other>"
         Vu uniquement dans les références de fin d'article
@@ -643,10 +641,7 @@
     
     <!-- prénoms -->
     <xsl:template match="first-names">
-        <!-- TODO
-            tenter de séparer first-names sur espace ou point et            
-            générer plusieurs forename (pour chaque initiale) -->
-        <forename>
+        <forename type="first">
             <xsl:value-of select="."/>
         </forename>
     </xsl:template>
@@ -658,7 +653,6 @@
             <xsl:value-of select="."/>
         </surname>
     </xsl:template>
-
 
 
     <!-- FIN AUTEURS *********************** -->
@@ -711,8 +705,10 @@
 
 
     <!-- 2) email : conteneur "e-adresse" -->
-    <xsl:template match="e-address">
-        <xsl:apply-templates/>
+    <xsl:template match="/article/header/address-group/e-address/email">
+        <email>
+            <xsl:value-of select="."/>
+        </email>
     </xsl:template>
 
     <!-- email proprement dit
@@ -901,16 +897,23 @@
             BODY
         ==============
         
-        TODO :
-          - pour l'instant seulement un grand <p> avec tout le contenu
-             - donc il reste tout à faire : les sections, les <p>, les citations, l'italique, le mathml, etc.
-          - utiliser à terme FullTextTags.xsl
     -->
-    
-    <xsl:template match="article/body">
-        <p>
-            <xsl:value-of select="."/>
-        </p>
+    <xsl:template match="body">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="sec-level1">
+        <div>
+            <!-- id -->
+            <xsl:attribute name="n" select="@id"/>
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <xsl:template match="sec-level2">
+        <div>
+            <!-- id -->
+            <xsl:attribute name="xml:id" select="@id"/>
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
     
     <!-- FIN BODY *********************** -->
@@ -999,7 +1002,7 @@
 
     <!-- art-title -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/art-title">
-        <title level="a" type="main">
+        <title level="m" type="main">
             <xsl:value-of select="normalize-space(.)"/>
         </title>
     </xsl:template>
@@ -1344,6 +1347,5 @@
     </xsl:template>
     
     <!-- FIN FOOTNOTES *********************** -->
-    
-
+   
 </xsl:stylesheet>

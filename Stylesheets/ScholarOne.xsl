@@ -211,16 +211,18 @@
     <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- author related information -->
 
-    <xsl:template match="author">
+    <xsl:template match="author" mode="scholarOne">
         <author>
             <xsl:if test="@corr='true'">
                 <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>
-            <idno type="author">
-                <xsl:value-of select="@user_id"/>
-            </idno>
+            <xsl:if test="@user_id">
+                <idno type="author">
+                    <xsl:value-of select="@user_id"/>
+                </idno>
+            </xsl:if>
             <persName>
                 <xsl:apply-templates
                     select="salutation | first_name | middle_name | last_name | suffix | degree"/>
@@ -229,12 +231,6 @@
                 select="*[name()!='attribute' and name()!='salutation' and name()!='first_name' and name()!='middle_name' and name()!='last_name' and name()!='suffix' and name()!='degree']"
             />
         </author>
-    </xsl:template>
-
-    <xsl:template match="contrib[@contrib-type='editor']">
-        <editor>
-            <xsl:apply-templates/>
-        </editor>
     </xsl:template>
 
     <xsl:template match="contrib">

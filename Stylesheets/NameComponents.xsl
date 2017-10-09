@@ -17,52 +17,100 @@
                 <persName>
                     <xsl:apply-templates/>
                 </persName>
-                <xsl:if test="ancestor::contrib-group/aff | ancestor::article-meta/aff and not(ancestor::contrib/xref)">
-                    <xsl:if test="ancestor::contrib-group/aff/email">
-                        <email><xsl:value-of select="ancestor::contrib-group/aff/email"/></email>
-                    </xsl:if>
-                    <xsl:for-each select="ancestor::contrib-group/aff | ancestor::article-meta/aff">
-                        <xsl:if test="not(contains(@id,'cor'))">
-                            <xsl:if test="not(break)">
-                    <affiliation>
-                       <xsl:choose>
-                           <xsl:when test="institution | addr-line">
-                               <xsl:if test="institution">
-                                   <xsl:for-each select="institution">
-                                       <orgName type="institution">
-                                           <xsl:value-of select="."/>
-                                       </orgName>
-                                   </xsl:for-each>
-                               </xsl:if>
-                               <xsl:if test="addr-line | country">
-                                   <address>
-                                       <xsl:for-each select="addr-line">
-                                           <addrLine>
-                                               <xsl:value-of select="."/>
-                                           </addrLine>
-                                       </xsl:for-each>
-                                       <xsl:for-each select="country">
-                                           <country>
-                                               <xsl:attribute name="key">
-                                                   <xsl:call-template name="normalizeISOCountry">
-                                                       <xsl:with-param name="country" select="."/>
-                                                   </xsl:call-template>
-                                               </xsl:attribute>
-                                               <xsl:value-of select="."/>
-                                           </country>
-                                       </xsl:for-each>
-                                   </address>
-                               </xsl:if>
-                           </xsl:when>
-                           <xsl:otherwise>
-                               <xsl:value-of select="."/>
-                           </xsl:otherwise>
-                       </xsl:choose>
-                    </affiliation>
-                            </xsl:if>
+                <xsl:choose>
+                    <xsl:when test="ancestor::contrib-group/aff or ancestor::article-meta/aff and not(ancestor::contrib-group/contrib/xref)">
+                        <xsl:if test="ancestor::contrib-group/aff/email">
+                            <email><xsl:value-of select="ancestor::contrib-group/aff/email"/></email>
                         </xsl:if>
-                    </xsl:for-each>
-                </xsl:if>
+                        <xsl:for-each select="ancestor::contrib-group/aff | ancestor::article-meta/aff">
+                            <xsl:if test="not(contains(@id,'cor'))">
+                                <xsl:if test="not(break) and not(ancestor::contrib-group/contrib/xref)">
+                                    <affiliation>
+                                        <xsl:choose>
+                                            <xsl:when test="institution | addr-line">
+                                                <xsl:if test="institution">
+                                                    <xsl:for-each select="institution">
+                                                        <orgName type="institution">
+                                                            <xsl:value-of select="."/>
+                                                        </orgName>
+                                                    </xsl:for-each>
+                                                </xsl:if>
+                                                <xsl:if test="addr-line | country">
+                                                    <address>
+                                                        <xsl:for-each select="addr-line">
+                                                            <addrLine>
+                                                                <xsl:value-of select="."/>
+                                                            </addrLine>
+                                                        </xsl:for-each>
+                                                        <xsl:for-each select="country">
+                                                            <country>
+                                                                <xsl:attribute name="key">
+                                                                    <xsl:call-template name="normalizeISOCountry">
+                                                                        <xsl:with-param name="country" select="."/>
+                                                                    </xsl:call-template>
+                                                                </xsl:attribute>
+                                                                <xsl:value-of select="."/>
+                                                            </country>
+                                                        </xsl:for-each>
+                                                    </address>
+                                                </xsl:if>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of select="."/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </affiliation>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:when>
+                  <!--  <xsl:when test="//aff[@id=current()/ancestor::contrib/xref/@rid]">
+                        <xsl:if test="//aff[@id=current()/ancestor::contrib/xref/@rid]/email">
+                            <email><xsl:value-of select="//aff[@id=current()/ancestor::contrib/xref/@rid]/email"/></email>
+                        </xsl:if>
+                        <xsl:for-each select="//aff[@id=current()/ancestor::contrib/xref/@rid]">
+                            <xsl:if test="not(contains(@id,'cor'))">
+                                <xsl:if test="not(break)">
+                                    <affiliation>
+                                        <xsl:choose>
+                                            <xsl:when test="institution | addr-line">
+                                                <xsl:if test="institution">
+                                                    <xsl:for-each select="institution">
+                                                        <orgName type="institution">
+                                                            <xsl:value-of select="."/>
+                                                        </orgName>
+                                                    </xsl:for-each>
+                                                </xsl:if>
+                                                <xsl:if test="addr-line | country">
+                                                    <address>
+                                                        <xsl:for-each select="addr-line">
+                                                            <addrLine>
+                                                                <xsl:value-of select="."/>
+                                                            </addrLine>
+                                                        </xsl:for-each>
+                                                        <xsl:for-each select="country">
+                                                            <country>
+                                                                <xsl:attribute name="key">
+                                                                    <xsl:call-template name="normalizeISOCountry">
+                                                                        <xsl:with-param name="country" select="."/>
+                                                                    </xsl:call-template>
+                                                                </xsl:attribute>
+                                                                <xsl:value-of select="."/>
+                                                            </country>
+                                                        </xsl:for-each>
+                                                    </address>
+                                                </xsl:if>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of select="."/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                    </affiliation>
+                                </xsl:if>
+                            </xsl:if>
+                        </xsl:for-each>
+                    </xsl:when>-->
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -195,7 +243,7 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="role | prefix | ce:roles">
+    <xsl:template match="prefix | ce:roles">
         <xsl:if test="normalize-space(.)">
             <roleName>
                 <xsl:apply-templates/>
