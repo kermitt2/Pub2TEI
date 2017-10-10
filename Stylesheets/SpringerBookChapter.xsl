@@ -20,6 +20,7 @@
                             select="Series/Book/descendant::Chapter/ChapterInfo/ChapterTitle"/>
                     </titleStmt>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:apply-templates
                             select="Series/Book/descendant::Chapter/ChapterInfo/ChapterCopyright"/>
                         <xsl:if test="//ArticleGrants/BodyPDFGrant[string(@Grant)='OpenAccess']">
@@ -82,11 +83,12 @@
     <xsl:template match="Series" mode="sourceDesc">
         <biblStruct>
             <analytic>
+                <!-- Title information related to the chapter goes here -->
+                <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterTitle"/>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="Book/descendant::Chapter/ChapterHeader/AuthorGroup/Author"/>
                 <xsl:apply-templates
-                    select="Book/descendant::Chapter/ChapterHeader//AuthorGroup/InstitutionalAuthor"/><!-- Title information related to the chapter goes here -->
-                <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterTitle"/>
+                    select="Book/descendant::Chapter/ChapterHeader//AuthorGroup/InstitutionalAuthor"/>
                 <xsl:apply-templates select="Volume/Issue/Article/@ID"/>
                 <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterDOI"/>
             </analytic>

@@ -30,6 +30,7 @@
                     </titleStmt>
                     <xsl:if test="CopyrightInformation">
                         <publicationStmt>
+                            <authority>ISTEX</authority>
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </publicationStmt>
                     </xsl:if>

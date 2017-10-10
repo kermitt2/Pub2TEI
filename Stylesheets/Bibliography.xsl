@@ -279,12 +279,12 @@
                 </bibl>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:if test="citation">
+                <xsl:if test="citation |mixed-citation">
                     <bibl type="article">
                         <xsl:choose>
-                            <xsl:when test="citation/@id">
+                            <xsl:when test="citation/@id|mixed-citation/@id">
                                 <xsl:attribute name="xml:id">
-                                    <xsl:value-of select="citation/@id"/>
+                                    <xsl:value-of select="citation/@id|mixed-citation/@id"/>
                                 </xsl:attribute>
                             </xsl:when>
                             <xsl:otherwise>
@@ -294,6 +294,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:apply-templates select="citation"/>
+                        <xsl:apply-templates select="mixed-citation"/>
                     </bibl>
                 </xsl:if>
             </xsl:otherwise>
@@ -314,12 +315,12 @@
     </xsl:template>
 
     <!-- Unspecified reference (3.0 style) -->
-   <xsl:template match="ref[mixed-citation]">
+  <!-- <xsl:template match="ref[mixed-citation]">
         <bibl>
             <xsl:apply-templates select="@id"/>
             <xsl:apply-templates select="mixed-citation"/>
         </bibl>
-    </xsl:template>
+    </xsl:template>-->
 
     <xsl:template match="mixed-citation">
         <xsl:apply-templates/>

@@ -1941,9 +1941,33 @@
         <xsl:choose>
             <!-- SAGE - traitement des titres de journaux non verbalisés -->
             <xsl:when test="normalize-space(.)">
-                <title level="j" type="main">
-                    <xsl:apply-templates/>
-                </title>
+                <xsl:choose>
+                    <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
+                        <title level="m" type="main">
+                            <xsl:apply-templates/>
+                        </title>
+                    </xsl:when>
+                    <xsl:when test="//article-meta/isbn[string-length() &gt; 0] |//journal-meta/isbn[string-length() &gt; 0] and //journal-meta/issn">
+                        <title level="m" type="main">
+                            <xsl:apply-templates/>
+                        </title>
+                    </xsl:when>
+                    <xsl:when test="//journal-meta/issn[@pub-type='isbn'][string-length() &gt; 0] and contains(//journal-meta/issn/@pub-type,'pub')[string-length() &gt; 0]">
+                        <title level="m" type="main">
+                            <xsl:apply-templates/>
+                        </title>
+                    </xsl:when>
+                    <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
+                        <title level="m" type="main">
+                            <xsl:apply-templates/>
+                        </title>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <title level="j" type="main">
+                            <xsl:apply-templates/>
+                        </title>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="$SageJournalTitle">
@@ -1994,9 +2018,33 @@
 
     <xsl:template match="journal_abbreviation | abbrev-journal-title | els:jid | JournalShortTitle | j-shorttitle">
         <xsl:if test="normalize-space(.)">
-            <title level="j" type="abbrev">
-                <xsl:value-of select="normalize-space()"/>
-            </title>
+            <xsl:choose>
+                <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
+                    <title level="m" type="abbrev">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:when>
+                <xsl:when test="//article-meta/isbn[string-length() &gt; 0] |//journal-meta/isbn[string-length() &gt; 0] and //journal-meta/issn">
+                    <title level="m" type="abbrev">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:when>
+                <xsl:when test="//journal-meta/issn[@pub-type='isbn'][string-length() &gt; 0] and contains(//journal-meta/issn/@pub-type,'pub')[string-length() &gt; 0]">
+                    <title level="m" type="abbrev">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:when>
+                <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
+                    <title level="m" type="abbrev">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:when>
+                <xsl:otherwise>
+                    <title level="j" type="abbrev">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:if>
     </xsl:template>
 
@@ -2027,9 +2075,33 @@
     <!-- Issue titles -->
     <xsl:template match="issue_description | issue-title | IssueTitle">
         <xsl:if test="normalize-space(.)">
-            <title level="j" type="issue">
-                <xsl:apply-templates/>
-            </title>
+            <xsl:choose>
+                <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
+                    <title level="m" type="issue">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:when>
+                <xsl:when test="//article-meta/isbn[string-length() &gt; 0] |//journal-meta/isbn[string-length() &gt; 0] and //journal-meta/issn">
+                    <title level="m" type="issue">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:when>
+                <xsl:when test="//journal-meta/issn[@pub-type='isbn'][string-length() &gt; 0] and contains(//journal-meta/issn/@pub-type,'pub')[string-length() &gt; 0]">
+                    <title level="m" type="issue">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:when>
+                <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
+                    <title level="m" type="issue">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:when>
+                <xsl:otherwise>
+                    <title level="j" type="issue">
+                        <xsl:apply-templates/>
+                    </title>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:if>
     </xsl:template>
 
@@ -2118,10 +2190,20 @@
             </idno>
     </xsl:template>
     <xsl:template
-        match="journal-id[@journal-id-type='isbn'][string-length()&gt;0]|//ISBN[string-length()&gt;0]">
-        <idno type="ISBN">
-            <xsl:value-of select="//journal-id[@journal-id-type='isbn']|//ISBN"/>
-        </idno>
+        match="journal-id[@journal-id-type='isbn'][string-length()&gt;0]|//ISBN[string-length()&gt;0]|//isbn[string-length()&gt;0]">
+        <xsl:choose>
+            <xsl:when test="@content-type='epub'">
+                <idno type="eISBN">
+                    <xsl:value-of select="."/>
+                </idno>
+            </xsl:when>
+            <xsl:otherwise>
+                <idno type="ISBN">
+                    <xsl:value-of select="."/>
+                </idno>
+            </xsl:otherwise>
+        </xsl:choose>
+        
     </xsl:template>
     <!-- SG - ajout DOI niveau book - pour matcher avec les reversement du Hub de métadonnées-->
     <xsl:template match="wiley:publicationMeta[@level='product']/wiley:doi">
@@ -2244,7 +2326,15 @@
 
     <xsl:template match="els:aid  | EDPSRef | edps-ref | Article/@ID">
         <xsl:if test="normalize-space(.) and not(//publisher-name = 'Cambridge University Press')">
-            <idno type="publisherID">
+            <idno type="publisher-id">
+                <xsl:value-of select="."/>
+            </idno>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="article/@id">
+        <xsl:if test="normalize-space(.) and //cpn = 'Nature Publishing Group'">
+            <idno type="article-id">
                 <xsl:value-of select="."/>
             </idno>
         </xsl:if>
@@ -2397,7 +2487,7 @@
             </biblScope>
         </xsl:if>
     </xsl:template>
-
+    
     <!-- Publishers -->
     <!-- NLM V2.0: PublisherName -->
     <!-- NLM V2.3 article: publisher-loc, publisher-name  -->

@@ -19,6 +19,7 @@
                         <xsl:apply-templates select="art-front/titlegrp/title"/>
                     </titleStmt>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:if test="//article/published[@type='print']|published[@type='book']/journalref/publisher/orgname/nameelt">
                             <publisher>
                                 <xsl:value-of select="//article/published[@type='print']|published[@type='book']/journalref/publisher/orgname/nameelt"/>

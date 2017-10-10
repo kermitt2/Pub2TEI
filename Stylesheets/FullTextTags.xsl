@@ -402,7 +402,7 @@
 				<xsl:choose>
 				    <!-- SG ajout reference WILEY -->
 				    <xsl:when test="contains(@href,'b') or contains(@href,'bib')">
-				        <ref type="bibr">
+				        <ref type="bibl">
 				            <xsl:attribute name="target">
 				                <xsl:value-of select="@href"/>
 				            </xsl:attribute>
@@ -464,7 +464,7 @@
 				    </xsl:when>
 				</xsl:choose>
 			   <!-- <xsl:if test="contains(@href, 'bib')">
-			        <ref type="bibr">
+			        <ref type="bibl">
 			            <xsl:attribute name="target">
 			                <xsl:value-of select="@href"/>
 			            </xsl:attribute>
@@ -474,7 +474,7 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:if test="contains(@href,'bib')">
-					<ref type="bibr">
+					<ref type="bibl">
 			            <xsl:attribute name="target">
 			                <xsl:value-of select="@href"/>
 			            </xsl:attribute>
@@ -509,7 +509,7 @@
     </xsl:template>
     
     <xsl:template match="bibr | bibrinl">
-        <ref type="bibr">
+        <ref type="bibl">
             <xsl:attribute name="target">
                 <xsl:value-of select="concat('#',@rid)"/>
             </xsl:attribute>
@@ -534,7 +534,7 @@
     </xsl:template>
     <!-- SG ajout ref <xnav> -->
     <xsl:template match="xnav">
-        <ref type="bibr">
+        <ref type="bibl">
             <xsl:attribute name="target">
                 <xsl:value-of select="concat('#',@extrefid)"/>
             </xsl:attribute>

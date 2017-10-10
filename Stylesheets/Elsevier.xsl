@@ -79,6 +79,7 @@
                         </xsl:choose>
                     </titleStmt>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:apply-templates
                             select="els:item-info/ce:copyright | item-info/ce:copyright"/>
                     </publicationStmt>

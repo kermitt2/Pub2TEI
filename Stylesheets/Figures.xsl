@@ -23,12 +23,6 @@
             <xsl:apply-templates/>
         </head>
     </xsl:template>
-
-    <xsl:template match="fig/caption/p">
-        <figDesc>
-            <xsl:apply-templates/>
-        </figDesc>
-    </xsl:template>
     <xsl:template match="fig/credit">
         <p>
             <xsl:apply-templates/>

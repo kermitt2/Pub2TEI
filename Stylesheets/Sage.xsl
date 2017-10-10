@@ -81,6 +81,7 @@
                         <xsl:apply-templates select="header/art_info/art_title"/>
                     </titleStmt>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:if test="header/jrn_info/pub_info/pub_name">
                             <xsl:apply-templates select="header/jrn_info/pub_info/pub_name"/>
                         </xsl:if>

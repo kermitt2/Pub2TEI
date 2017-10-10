@@ -17,6 +17,7 @@
                         <xsl:apply-templates select="title"/>
                     </titleStmt>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:if test="manuscript">
                             <availability status="embargo">
                                 <p>

@@ -33,6 +33,7 @@
                         </xsl:for-each>
                     </titleStmt>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:apply-templates select="ArticleInfo/ArticleCopyright"/>
                     </publicationStmt>
                     <sourceDesc>

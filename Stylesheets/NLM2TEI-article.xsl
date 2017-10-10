@@ -18,6 +18,9 @@
             <xsl:when test="article/@article-type[string-length() &gt; 0]">
                 <xsl:value-of select="article/@article-type"/>
             </xsl:when>
+            <xsl:when test="//pubfm/categ/@id[string-length() &gt; 0]">
+                <xsl:value-of select="$codeGenreNature"/>
+            </xsl:when>
             <xsl:otherwise>other</xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
@@ -60,6 +63,9 @@
             <xsl:when test="normalize-space($codeGenre2)='retraction'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='review-article'">review-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='translation'">other</xsl:when>
+            <xsl:when test="//pubfm/categ/@id[string-length() &gt; 0]">
+                <xsl:value-of select="$codeGenreNature2"/>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:text>other</xsl:text>
             </xsl:otherwise>
@@ -67,7 +73,7 @@
     </xsl:variable>
     
     <!-- genre -->
-    <xsl:variable name="codeGenreNature1">
+   <xsl:variable name="codeGenreNature1">
         <xsl:value-of select="//pubfm/categ/@id"/>
     </xsl:variable>
     <xsl:variable name="codeGenreNature">
@@ -862,6 +868,7 @@
                         </editionStmt>
                     </xsl:if>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:if test="front/journal-meta/publisher">
                             <xsl:apply-templates select="front/journal-meta/publisher/*"/>
                         </xsl:if>
@@ -870,13 +877,23 @@
                                 <xsl:value-of select="suppfm/sponsor"/>
                             </distributor>
                         </xsl:if>
-                        <xsl:if test="suppfm/parent/cpg/cpn">
-                            <publisher>
-                                <xsl:value-of select="suppfm/parent/cpg/cpn"/>
+                        <xsl:if test="suppfm/parent/cpg/cpn |pubfm/cpg/cpn">
+                            <publisher scheme="https://publisher-list.data.istex.fr">
+                                <xsl:value-of select="suppfm/parent/cpg/cpn|pubfm/cpg/cpn"/>
                             </publisher>
+                        </xsl:if>
+                        <xsl:if test="front/article-meta/article-categories/subj-group[@subj-group-type='access-type']/compound-subject/compound-subject-part[@content-type='code']='access-type-free'">
+                            <availability status="free">
+                                <licence>Open Access</licence>
+                            </availability>
                         </xsl:if>
                         <xsl:if test="suppfm/parent/cpg/cpy">
                             <date when="{suppfm/parent/cpg/cpy}"/>
+                        </xsl:if>
+                        <xsl:if test="pubfm/cpg/cpy">
+                            <date when="{pubfm/cpg/cpy}">
+                                <xsl:value-of select="pubfm/cpg/cpy"/>
+                            </date>
                         </xsl:if>
                         <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
                             <availability>
@@ -926,6 +943,18 @@
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
+                            <xsl:when test="//article-meta/isbn[string-length() &gt; 0] |//journal-meta/isbn[string-length() &gt; 0] and //journal-meta/issn">
+                                <note type="publication-type">
+                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <xsl:text>book-series</xsl:text>
+                                </note>
+                            </xsl:when>
+                            <xsl:when test="//journal-meta/issn[@pub-type='isbn'][string-length() &gt; 0] and contains(//journal-meta/issn/@pub-type,'pub')[string-length() &gt; 0]">
+                                <note type="publication-type">
+                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <xsl:text>book-series</xsl:text>
+                                </note>
+                            </xsl:when>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
                                 <note type="publication-type">
                                     <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
@@ -954,11 +983,14 @@
                 <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject or @xml:lang or front/article-meta/article-categories">
                     <profileDesc>
                         <!-- PL: abstract is moved from <front> to here -->
-                        <xsl:if test="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm">
-                            <xsl:apply-templates select="front/article-meta/trans-abstract |front/article-meta/abstract | bdy/fp | fm/abs | fm/fp | fm/execsumm | fm/websumm"/>
+                        <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs">
+                            <xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs"/>
+                        </xsl:if>
+                        <xsl:if test="front/article-meta/trans-abstract |fm/fp | fm/execsumm | fm/websumm">
+                            <xsl:apply-templates select="front/article-meta/trans-abstract| fm/fp | fm/execsumm | fm/websumm"/>
                         </xsl:if>
                         <!-- SG NLM subject -->
-                        <xsl:if test="front/article-meta/article-categories/subj-group">
+                        <xsl:if test="front/article-meta/article-categories/subj-group/subject">
                             <textClass>
                                 <xsl:apply-templates select="front/article-meta/article-categories/subj-group"/>
                             </textClass>
@@ -1101,6 +1133,7 @@
                             </editionStmt>
                         </xsl:if>
                         <publicationStmt>
+                            <authority>ISTEX</authority>
                             <xsl:if test="front/journal-meta/publisher">
                                 <xsl:apply-templates select="front/journal-meta/publisher/*"/>
                             </xsl:if>
@@ -1315,7 +1348,7 @@
                 <xsl:apply-templates select="journal-id[@journal-id-type='isbn']"/>
                 <xsl:apply-templates select="doi"/>
                 <xsl:apply-templates select="article-meta/article-id"/>
-                
+                <xsl:apply-templates select="//article/@id"/>
             </analytic>
             <monogr>
                 <xsl:apply-templates select="journal-meta/journal-title |journal-meta/journal-title-group/journal-title | jtl | suppmast/jtl | suppmast/suppttl | article-meta/issue-title"/>
@@ -1323,10 +1356,25 @@
                 <xsl:apply-templates select="journal-meta/journal-id"/>
                 <xsl:apply-templates select="journal-meta/issue-title"/>
                 <xsl:apply-templates select="journal-meta/issn | issn |parent/issn"/>
+                <xsl:apply-templates select="journal-meta/issn[@pub-type='isbn'] | //isbn"/>
                 <xsl:apply-templates select="//conference"/>
                 <imprint>
+                    <!-- suppfm/parent/cpg/cpn |pubfm/cpg/cpn -->
+                    <!-- pubfm/cpg/cpy -->
+                    <!-- suppfm/cpg/cpy -->
+                    <xsl:if test="//suppfm/parent/cpg/cpn |//pubfm/cpg/cpn">
+                        <publisher>
+                            <xsl:value-of select="//suppfm/parent/cpg/cpn|//pubfm/cpg/cpn"/>
+                        </publisher>
+                    </xsl:if>
                     <xsl:apply-templates select="journal-meta/publisher/*"/>
-
+                    <xsl:if test="normalize-space(//pubfm/idt)">
+                        <xsl:apply-templates select="//pubfm/idt"/>
+                    </xsl:if>
+                    <xsl:if test="normalize-space(//suppfm/idt)">
+                        <xsl:apply-templates select="//suppfm/idt"/>
+                    </xsl:if>
+                    
                     <xsl:for-each select="article-meta/pub-date">
                         <xsl:message>Current: <xsl:value-of select="@pub-type"/></xsl:message>
                         <xsl:if test="year != '' and year != '0000'">
@@ -1359,6 +1407,13 @@
 				            <xsl:value-of select="//article/front/article-meta/counts/ref-count/@count"/>
 				        </biblScope>
 				    </xsl:if>
+                    <!--SG - ajout nombre de mots -->
+                        <xsl:if test="normalize-space(//word-count/@count)">
+                            <biblScope unit="word-count">
+                                <xsl:value-of select="//word-count/@count"/>
+                            </biblScope>
+                        </xsl:if>
+                    
                     <xsl:apply-templates select="copyright-year | cpg/cpy"/>
 				</imprint>
             </monogr>
@@ -1506,10 +1561,35 @@
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
+            <xsl:if test="contrib-id">
+                <idno type="{translate(contrib-id/@contrib-id-type,' ','')}">
+                    <xsl:value-of select="contrib-id"/>
+                </idno>
+            </xsl:if>
             <xsl:if test="@corresp = 'yes'">
                 <xsl:if test="not(xref/@ref-type='corresp')">
                     <xsl:apply-templates select="ancestor::article-meta/author-notes/corresp/email"/>
                 </xsl:if>
+            </xsl:if>
+            <xsl:if test="//article-meta/contrib-group/aff and not(//article-meta/contrib-group/aff/@id)">
+               <affiliation>
+                   <xsl:if test="//article-meta/contrib-group/aff/institution">
+                       <xsl:for-each select="//article-meta/contrib-group/aff/institution">
+                           <orgName type="institution">
+                               <xsl:value-of select="."/>
+                           </orgName>
+                       </xsl:for-each>
+                   </xsl:if>
+                   <xsl:if test="//article-meta/contrib-group/aff/addr-line">
+                      <address>
+                       <xsl:for-each select="//article-meta/contrib-group/aff/addr-line">
+                           <addrLine>
+                               <xsl:value-of select="."/>
+                           </addrLine>
+                       </xsl:for-each>
+                      </address>
+                   </xsl:if>
+               </affiliation>
             </xsl:if>
         </author>
     </xsl:template>
@@ -1546,8 +1626,14 @@
         <respStmt>
             <resp>
                 <xsl:value-of select="@contrib-type"/>
+                <xsl:if test="contrib-id">
+                    <idno type="{translate(contrib-id/@contrib-id-type,' ','')}">
+                        <xsl:value-of select="contrib-id"/>
+                    </idno>
+                </xsl:if>
             </resp>
             <xsl:apply-templates/>
+            
         </respStmt>
     </xsl:template>
 
@@ -1638,9 +1724,11 @@
             <xsl:choose>
                 <xsl:when test="org | street | cny | zip | cty | st">
                     <xsl:if test="org">
+                        <xsl:for-each select="org">
                         <orgName type="institution">
-                            <xsl:value-of select="org"/>
+                            <xsl:value-of select="."/>
                         </orgName>
+                        </xsl:for-each>
                     </xsl:if>
                     <xsl:if test="street | cny | zip | cty | st">
                         <address>
@@ -2268,9 +2356,9 @@
     </xsl:template>
 
     <!-- Copyright related information to appear in <publicationStmt> -->
-    <xsl:template match="copyright-statement">
+    <xsl:template match="copyright-holder">
         <xsl:choose>
-            <xsl:when test="//article-meta/copyright-statement">
+            <xsl:when test="//article-meta/copyright-holder">
                 <availability>
                     <p>
                         <xsl:apply-templates/>
@@ -2327,14 +2415,14 @@
         </date>
     </xsl:template>
 
-    <xsl:template match="copyright-holder">
+    <xsl:template match="copyright-statement">
             <!-- SG: ajout licence -->
             <licence>
                 <xsl:apply-templates/>
             </licence>
     </xsl:template>
     <xsl:template match="cpn">
-        <!-- SG: ajout licence -->
+        <!-- SG: ajout publisher -->
         <licence>
             <xsl:apply-templates/>
         </licence>
@@ -2474,9 +2562,11 @@
             <title>
                 <xsl:value-of select="title"/>
             </title>
-            <note>
-                <xsl:apply-templates select="descrip/*"/>
-            </note>
+            <xsl:if test="normalize-space(descrip/*)">
+                <note>
+                    <xsl:apply-templates select="descrip/*"/>
+                </note>
+            </xsl:if>
         </ref>
     </xsl:template>
     <xsl:template match="front/article-meta/product">

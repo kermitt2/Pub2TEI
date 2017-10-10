@@ -236,6 +236,7 @@
                         </editionStmt>
                     </xsl:if>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
 						<xsl:if test="header/publicationMeta/publisherInfo/publisherName">
                        	 	<xsl:apply-templates select="header/publicationMeta/publisherInfo/publisherName"/>
 						</xsl:if>

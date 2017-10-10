@@ -62,6 +62,7 @@
                         </respStmt>
                     </editionStmt>-->
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <!-- Publisher jnl -->
                         <xsl:apply-templates
                             select="article-metadata/jnl-data/jnl-imprint"/>

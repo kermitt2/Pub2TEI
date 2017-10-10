@@ -18,6 +18,7 @@
                         <xsl:apply-templates select="Journal//ArticleTitle"/>
                     </titleStmt>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:choose>
                             <xsl:when test="Journal/JournalOnlineFirst">
                                 <xsl:apply-templates
