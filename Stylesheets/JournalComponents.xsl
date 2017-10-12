@@ -1824,7 +1824,7 @@
         </xsl:choose>
     </xsl:variable>
     <xsl:template
-        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle | chaptl">
+        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle | chaptl | book-title">
         <xsl:if test="normalize-space(.)">
             <title level="a" type="main">
                 <xsl:if test="@Language | @xml:lang">
@@ -2057,7 +2057,7 @@
     </xsl:template>
 
     <xsl:template match="journal-id">
-        <xsl:if test="@journal-id-type!='isbn'">
+        <xsl:if test="normalize-space(.) and @journal-id-type!='isbn'">
             <title level="j" type="{@journal-id-type}">
                 <xsl:apply-templates/>
             </title>

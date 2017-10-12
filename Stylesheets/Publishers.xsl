@@ -8,6 +8,7 @@
     <!-- ajout déclaration schema ODD-ISTEX -->
     
     <xsl:output encoding="UTF-8" method="xml" indent="yes"/>
+    <xsl:param name="datecreation"/>
     <xsl:param name="idistex"/>
     <xsl:param name="arkistex"/>
     <xsl:include href="Imports.xsl"/>
@@ -22,7 +23,7 @@
     <xsl:include href="ArticleSetNLMV2.0.xsl"/>
     <xsl:include href="Sage.xsl"/>
 
-	<!-- RL: ajout de mon cas IOP.xsl (traite tout sauf le body) -->
+	<!-- RL: ajout de mon cas IOP.xsl-->
     <xsl:include href="IOP.xsl"/>
     <!--
 	<xsl:include href="IOPPatch.xsl"/>
@@ -33,7 +34,7 @@
     <xsl:include href="SpringerBookChapter.xsl"/>
     <xsl:include href="RoyalChemicalSociety.xsl"/>
 	<xsl:include href="Wiley.xsl"/>
-
+    <xsl:include href="BrepolsBookChapter.xsl"/>
     <xsl:template match="/">
         <xsl:choose> 
             <xsl:when test="metadata">
@@ -85,6 +86,9 @@
             </xsl:when>
             <xsl:when test="wiley:component">
                 <xsl:message>Converting a Wiley article</xsl:message>
+            </xsl:when>
+            <xsl:when test="book/book-meta">
+                <xsl:message>Converting a Brepols book chapter</xsl:message>
             </xsl:when>
             
             <!-- RL: vérif encore très stricte pour le nouveau cas -->

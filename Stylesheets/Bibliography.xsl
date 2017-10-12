@@ -381,7 +381,7 @@
         </author>
     </xsl:template>
 
-    <xsl:template match="string-name | citauth | wiley:author">
+    <xsl:template match="citauth | wiley:author">
         <xsl:choose>
             <xsl:when test="ancestor::name-alternatives">
                 <persName type="byline">
@@ -399,6 +399,14 @@
                 </author>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    <xsl:template match="string-name">
+        <persName>
+            <xsl:apply-templates select="surname"/>
+            <xsl:apply-templates select="given-names"/>
+            <xsl:apply-templates select="wiley:givenNames"/>
+            <xsl:apply-templates select="wiley:familyName"/>
+        </persName>
     </xsl:template>
     
     
