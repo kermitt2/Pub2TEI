@@ -902,8 +902,10 @@
                             </availability>
                         </xsl:if>
                         <xsl:apply-templates select="front/article-meta/permissions/copyright-year"/>
-                        <xsl:if test="not(front/article-meta/permissions)">
+                        <xsl:if test="not(front/article-meta/permissions) and front/article-meta/copyright-statement">
+                            <availability>
                             <xsl:apply-templates select="front/article-meta/copyright-statement"/>
+                            </availability>
                             <xsl:apply-templates select="front/article-meta/copyright-year"/>
                         </xsl:if>
                         <xsl:if test="front/article-meta/custom-meta-wrap/custom-meta[string(meta-name) = 'unlocked' and string(meta-value) = 'Yes']">
@@ -918,8 +920,16 @@
                         </xsl:if>
                         <xsl:if test="front/article-meta/permissions/license[@license-type='open-access']">
                             <availability status="free">
-                                <xsl:apply-templates select="front/article-meta/permissions/license/license-p"/>
-                                <xsl:apply-templates select="front/article-meta/permissions/license/p"/>
+                                <xsl:if test="front/article-meta/permissions/license/license-p">
+                                    <p>
+                                        <xsl:apply-templates select="front/article-meta/permissions/license/license-p"/>
+                                    </p>
+                                </xsl:if>
+                                <xsl:if test="front/article-meta/permissions/license/p">
+                                    <p>
+                                        <xsl:apply-templates select="front/article-meta/permissions/license/p"/>
+                                    </p>
+                                </xsl:if>
                             </availability>
                         </xsl:if>
                     </publicationStmt>
@@ -1407,6 +1417,16 @@
 				            <xsl:value-of select="//article/front/article-meta/counts/ref-count/@count"/>
 				        </biblScope>
 				    </xsl:if>
+                    <xsl:if test="normalize-space(//article/front/article-meta/counts/fig-count/@count)">
+                        <biblScope unit="fig-count">
+                            <xsl:value-of select="//article/front/article-meta/counts/fig-count/@count"/>
+                        </biblScope>
+                    </xsl:if>
+                    <xsl:if test="normalize-space(//article/front/article-meta/counts/table-count/@count)">
+                        <biblScope unit="table-count">
+                            <xsl:value-of select="//article/front/article-meta/counts/table-count/@count"/>
+                        </biblScope>
+                    </xsl:if>
                     <!--SG - ajout nombre de mots -->
                         <xsl:if test="normalize-space(//word-count/@count)">
                             <biblScope unit="word-count">
@@ -1944,7 +1964,9 @@
     <xsl:template match="sec/label"/>
 
     <xsl:template match="boxed-text">
-        <xsl:apply-templates/>
+        <figure type="boxed-text">
+            <xsl:apply-templates/>
+        </figure>
     </xsl:template>
 
     <xsl:template match="sec[parent::boxed-text]/title">

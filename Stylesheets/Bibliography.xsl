@@ -287,11 +287,6 @@
                                     <xsl:value-of select="citation/@id|mixed-citation/@id"/>
                                 </xsl:attribute>
                             </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:attribute name="xml:id">
-                                    <xsl:apply-templates select="@id"/>
-                                </xsl:attribute>
-                            </xsl:otherwise>
                         </xsl:choose>
                         <xsl:apply-templates select="citation"/>
                         <xsl:apply-templates select="mixed-citation"/>
