@@ -724,6 +724,7 @@
         <xsl:choose>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055172'"><title level="a" type="main">Semiconductor Materials and Process Technology Handbook</title></xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0883769400055160'"><title level="a" type="main">Rapidly Solidified Metals - A Technological Overview</title></xsl:when>
+            <!-- OUP -->
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/yiel/yvs021'">8. Western Europe B. Germany</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/litthe/10.2.148'">ON THE MARGINS OF THE ACCEPTABLE: CHARLOTTE BRONTE'S VILLETTE</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1093/litthe/10.2.171'">NO 'ELSEWHERE': FISH, SOLOVEITCHIK, AND THE UNAVOIDABILITY OF INTERPRETATION</xsl:when>
@@ -770,10 +771,103 @@
             <xsl:when test="//front/article-meta/article-id='s12-VIII.158.334h'">Notes and queries</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='pii']='S0714980800010242'">The Work of the Hamburg Research Center in Entrepreneurial History</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.2178/bsl/1305810914'">Gao Su . Invariant descriptive set theory. Pure and applied mathematics. Chapman &amp; Hall/CRC, Boca Raton, 2009, xiv + 392 pp.</xsl:when>
+            <!-- cambridge -->
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1017/S2046164X00055897'">Reviews of New Works : On the Mortality of Master Mariners. By F. G. P. NEISON, Esq.</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1017/S0714980800007790'">Reviews of: "Cole Thomas R., Van Tassel David D. and Kastenbaum Robert (eds.). Handbook of the Humanities and Aging" and "Kenyon Gary M., Birren James E. and Schroots Johannes J.F. (eds.). Metaphors of Aging in Science and the Humanities"</xsl:when>
+            <!-- elsevier -->
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1016/0266-7681(90)90076-G'">Picture - JOHN TURNER HUESTON B.A. (Fine Arts), M.D., M.S., F.R.C.S., F.R.A.C.S.</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1016/0266-7681(89)90002-8'">Picture - J. WILLIAM LITTLER, M.D., F.A.C.S. </xsl:when>
+            <!-- BMJ -->
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.9.suppl_1.i76'">1999 MANAGED CARE ACHIEVEMENTS IN TOBACCO CONTROL AWARDS PROGRAM</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pgmj.75.890.775'">Book Reviews</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.7.4.445'">Calendar of Events</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.8.2.236'">Calendar of Events</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.9.1.116a'">Calendar of Events</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/jnnp.67.5.701'">CORRECTION : Basal forebrain amnesia: does the nucleus accumbens contribute to human memory?</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/jnnp.67.1.133'">CORRECTION : Comparison of mouse bioassay and immunoprecipation assay for botulinum toxin antibodies.</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/jnnp.67.4.559'">CORRECTION : Focal (segmental) dyshidrosis in syringomyelia.</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/gut.45.4.630d'">CORRECTIONS</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/jnnp.66.1.1'">Editorial</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/jnnp.64.1.1'">Editorial announcement</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.84.5.450'">From the library</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.76.1.83'">Instructions to Authors</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pgmj.75.881.192'">International Postgraduate Diary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pgmj.75.882.256'">International Postgraduate Diary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pgmj.75.883.320'">International Postgraduate Diary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pgmj.75.886.512'">International Postgraduate Diary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pgmj.75.887.576'">International Postgraduate Diary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pgmj.75.888.640'">International Postgraduate Diary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pmj.76.891.64'">International Postgraduate Diary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/pmj.76.892.128'">International Postgraduate Diary</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.76.3.292'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.76.5.484'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.77.1.96'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.77.3.278'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.77.5.470'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.78.1.99'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.79.1.96'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.79.3.294'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.79.5.468'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.80.1.104'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.80.3.304'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.80.5.496'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.81.1.100'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.81.5.462'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.82.1.91'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.82.3.274'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.82.5.434'">Lucina</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/adc.81.3.286'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.81.11.934'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.81.12.1030'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.81.5.342'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.81.6.430'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.81.7.526'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.81.8.624'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.81.9.718'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.1.8'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.10.1106'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.11.1230'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.12.1356'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.2.109'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.3.212'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.4.341'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.5.472'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.6.599'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.7.724'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.8.861'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.82.9.987'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.1.5'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.10.1105'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.11.1214'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.12.1319'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.2.136'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.3.260'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.4.389'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.5.513'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.6.642'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.7.766'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.8.892'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.83.9.1001'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.84.1.3'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.84.2.129'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.84.3.238'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/bjo.84.4.346'">Newsdesk</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.7.1.78'">Play It Again</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.7.2.184'">Play It Again</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.7.3.304'">Play It Again</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.8.2.204'">Play It Again</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.8.3.340'">Play It Again</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.8.4.426'">Play It Again</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.7.1.80'">The Lighter Side</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.7.2.183'">The Lighter Side</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.7.3.299'">The Lighter Side</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.7.4.424'">The Lighter Side</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.8.2.202'">The Lighter Side</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.8.3.339'">The Lighter Side</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/tc.8.4.425'">The Lighter Side</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/ard.58.9.523'">Unusual and memorable</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='other']='jnnp;68/2/256b'">CORRECTION : Effects of stimulant medication on the lateralisation of line bisection judgements of children with attention deficit hyperactivity disorder.</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='other']='postgradmedj;76/891/64a'">International Postgraduate Diary</xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="//article/front/article-meta/title-group/article-title[string-length() &gt; 0] |//fm/atl[string-length() &gt; 0]">
@@ -805,18 +899,11 @@
                                 <xsl:value-of select="$codeGenreNature"/>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </xsl:otherwise>
-                </xsl:choose>
-                <!--<xsl:choose>
-                    <xsl:when test="//front/article-meta/title-group/article-title[string-length() &gt; 0] |fm/atl[string-length() &gt; 0]">
-                        <xsl:apply-templates select="//front/article-meta/title-group/article-title | fm/atl "/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:if test="//front/article-meta/title-group/alt-title[@alt-title-type='right-running']">
-                        <xsl:apply-templates select="//front/article-meta/title-group/alt-title[@alt-title-type='right-running']"/>
+                        <xsl:if test="//article-meta/article-id[@pub-id-type='publisher-id'][string-length()&gt; 0] and //publisher-name='Oxford University Press'">
+                                    <xsl:value-of select="normalize-space(//article-meta/article-id[@pub-id-type='publisher-id'])"/>
                         </xsl:if>
                     </xsl:otherwise>
-                </xsl:choose>-->
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
@@ -895,12 +982,6 @@
                                 <xsl:value-of select="pubfm/cpg/cpy"/>
                             </date>
                         </xsl:if>
-                        <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
-                            <availability>
-                                <xsl:apply-templates select="front/article-meta/permissions/copyright-statement"/>
-                                <xsl:apply-templates select="front/article-meta/permissions/copyright-holder | pubfm/cpg/cpn"/>
-                            </availability>
-                        </xsl:if>
                         <xsl:apply-templates select="front/article-meta/permissions/copyright-year"/>
                         <xsl:if test="not(front/article-meta/permissions) and front/article-meta/copyright-statement">
                             <availability>
@@ -918,8 +999,13 @@
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
-                        <xsl:if test="front/article-meta/permissions/license[@license-type='open-access']">
-                            <availability status="free">
+                        <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
+                            <availability>
+                                <xsl:if test="front/article-meta/permissions/license[@license-type='open-access']">
+                                    <xsl:attribute name="status">free</xsl:attribute>
+                                </xsl:if>
+                                <xsl:apply-templates select="front/article-meta/permissions/copyright-statement"/>
+                                <xsl:apply-templates select="front/article-meta/permissions/copyright-holder | pubfm/cpg/cpn"/>
                                 <xsl:if test="front/article-meta/permissions/license/license-p">
                                     <p>
                                         <xsl:apply-templates select="front/article-meta/permissions/license/license-p"/>
@@ -979,9 +1065,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="front/article-meta/volume-id">
-                            <note type="edition">
-                                <xsl:value-of select="front/article-meta/volume-id"/>
-                            </note>
+                                <xsl:apply-templates select="front/article-meta/volume-id"/>
                         </xsl:if>
                     </notesStmt>
                    
@@ -1017,21 +1101,238 @@
                         </xsl:if>
                         <xsl:apply-templates select="front/article-meta/kwd-group"/>
                         <!-- language -->
-                        <xsl:if test="@xml:lang">
                             <langUsage>
                                 <language>
                                     <xsl:attribute name="ident">
-                            <xsl:choose>
-                                <xsl:when test="normalize-space(//article/@xml:lang)='IW'">HE</xsl:when>
-                                <xsl:when test="normalize-space(//article/@xml:lang)='fn'">EN</xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="@xml:lang"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
+                                        <xsl:choose>
+                                            <xsl:when test="normalize-space(//article/@xml:lang)='IW'">HE</xsl:when>
+                                            <xsl:when test="normalize-space(//article/@xml:lang)='fn'">EN</xsl:when>
+                                            <xsl:when test="//front/article-meta/article-id[@pub-id-type='other']='jnnp;68/2/256b'">EN</xsl:when>
+                                            <xsl:when test="//front/article-meta/article-id[@pub-id-type='other']='postgradmedj;76/891/64a'">EN</xsl:when>
+                                            <!--OUP-->
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/kni221'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp063'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn043'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/kni214'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/58.4.471'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.2.181'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp201'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl110'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl077'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/56.1.45'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn131'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/58.4.485'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp015'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp142'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp200'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq004'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm283'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp065'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm258'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl171'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn128'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.1.11'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp128'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.4.463'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq003'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/58.1.61'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm257'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/kni218'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.3.335'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.1.39'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm289'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn024'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl076'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/VII.3.223'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn065'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp125'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn018'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/VII.2.147'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm243'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/kni411'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq037'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl108'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/56.1.15'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XLVI.4.395'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/X.3.231'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/kni288'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/VII.2.140'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/IX.3.227'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/III.3.201'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp273'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XLIX.2.155'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/58.4.552'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp074'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp272'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq055'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq050'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp257'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq026'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XI.1.28'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XX.3.253'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XVI.1.1'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/L.1.35'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/III.3.219'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVIII.2.146'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXIII.4.362'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XLIV.1.34'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LIII.4.405'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXXI.3.294'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVII.1.30'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/III.4.335'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXIII.4.378'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LV.2.167'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/L.4.413'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XIX.2.111'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXV.3.281'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVI.4.405'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LII.4.385'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LII.4.425'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/VII.4.293'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XIII.1.39'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XI.4.293'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/V.2.126'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/II.4.301'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XIII.2.125'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LV.4.499'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/ijl/ecp021'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/58.4.471'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.2.181'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp201'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl110'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl077'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn131'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/58.4.485'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp015'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp142'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp200'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq004'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm283'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp065'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm258'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl171'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn128'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.1.11'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl111'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp128'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.4.463'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq003'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/58.1.61'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm257'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/kni218'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.3.335'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.1.39'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm289'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knm279'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn024'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LII.2.162'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/VII.3.223'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp125'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/57.3.349'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/kni411'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq037'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knl108'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/56.1.15'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XLVI.4.395'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/kni288'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/VII.2.140'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/IX.3.227'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XVI.4.324'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/III.3.201'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp273'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XLIX.2.155'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq055'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq050'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp272'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq026'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XI.1.28'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp006'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XX.3.253'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XVI.1.1'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/L.1.35'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXIII.4.378'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LV.2.167'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/L.4.413'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXV.3.281'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXX.1.43'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVI.4.405'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq021'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XX.2.151'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LII.4.385'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LII.4.425'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/VII.4.293'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XIII.2.125'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/III.3.219'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVIII.2.146'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXIII.4.362'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XLIV.1.34'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LIII.4.405'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXXI.3.294'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVII.1.30'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XIII.1.39'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XI.4.293'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/V.2.126'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/II.4.301'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LV.4.499'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XIII.2.135'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp242'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XIII.2.113'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp117'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp087'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq091'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp170'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp054'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp255'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq081'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/V.3.253'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XLVII.3.295'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp224'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXI.3.220'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/V.1.40'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq009'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVII.4.429'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp139'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXXI.2.129'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXX.4.393'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XVI.2.142'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp024'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp134'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp133'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/L.3.275'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp207'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XIX.1.1'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/1.1.27'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/VIII.3.250'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXXIX.3.305'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LIV.3.277'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/IV.4.345'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LIV.2.177'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/V.4.335'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knn215'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/IX.4.304'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XLVI.2.160'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/58.4.580'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/1.1.37'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq124'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVII.1.1'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/IV.3.208'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/IV.3.216'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/II.4.315'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXVIII.4.385'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXIX.3.257'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/X.1.32'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/LIV.2.154'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knq145'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp106'">FR</xsl:when>
+                                            <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXXIV.2.168'">FR</xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:value-of select="@xml:lang"/>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
                                     </xsl:attribute>
                                 </language>
                             </langUsage>
-                        </xsl:if>
+                        
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="front/article-meta/history">
@@ -1357,6 +1658,13 @@
                 </xsl:if>
                 <xsl:apply-templates select="journal-id[@journal-id-type='isbn']"/>
                 <xsl:apply-templates select="doi"/>
+                <!-- BMJ rattrapage DOI -->
+                <xsl:if test="//article-meta/article-id[@pub-id-type='url'][string-length() &gt; 0] and not(//article-meta/article-id[@pub-id-type='doi'][string-length() &gt; 0])">
+                    <idno>
+                        <xsl:attribute name="type">DOI</xsl:attribute>
+                        <xsl:value-of select="normalize-space(substring-after(//article-meta/article-id[@pub-id-type='url'],'abs/'))"/>
+                    </idno>
+                </xsl:if>
                 <xsl:apply-templates select="article-meta/article-id"/>
                 <xsl:apply-templates select="//article/@id"/>
             </analytic>
@@ -1365,8 +1673,54 @@
                 <xsl:apply-templates select="journal-meta/abbrev-journal-title | journal-meta/journal-title-group/abbrev-journal-title"/>
                 <xsl:apply-templates select="journal-meta/journal-id"/>
                 <xsl:apply-templates select="journal-meta/issue-title"/>
-                <xsl:apply-templates select="journal-meta/issn | issn |parent/issn"/>
-                <xsl:apply-templates select="journal-meta/issn[@pub-type='isbn'] | //isbn"/>
+                <xsl:choose>
+                    <!-- OUP -->
+                    <!-- JJCO -->
+                    <xsl:when test="//issn[@pub-type='epub']='1465-3621'">
+                        <idno>
+                            <xsl:attribute name="type">pISSN</xsl:attribute>
+                            <xsl:text>0368-2811</xsl:text>
+                        </idno>
+                    </xsl:when>
+                    <!-- Journal of Chromatographic Science-->
+                    <xsl:when test="//issn[@pub-type='epub']='1945-239X'">
+                        <idno>
+                            <xsl:attribute name="type">pISSN</xsl:attribute>
+                            <xsl:text>0021-9665</xsl:text>
+                        </idno>
+                    </xsl:when>
+                    <!--  Community Development Journa-->
+                    <xsl:when test="//issn[@pub-type='epub']='b468-2656'">
+                        <idno>
+                            <xsl:attribute name="type">pISSN</xsl:attribute>
+                            <xsl:text>0010-3802</xsl:text>
+                        </idno>
+                    </xsl:when>
+                    <!-- Philosophia Mathematica -->
+                    <xsl:when test="//journal-id[@journal-id-type='publisher-id']='philmat'">
+                        <idno>
+                            <xsl:attribute name="type">pISSN</xsl:attribute>
+                            <xsl:text>0031-8019</xsl:text>
+                        </idno>
+                    </xsl:when>
+                    <xsl:when test="//journal-id[@journal-id-type='publisher-id']='philmat'">
+                        <ino>
+                            <xsl:attribute name="type">eISSN</xsl:attribute>
+                            <xsl:text>1744-6406</xsl:text>
+                        </ino>
+                    </xsl:when>
+                    <!--  Community Development Journa-->
+                    <xsl:when test="//issn[@pub-type='epub']='b468-2656'">
+                        <idno>
+                            <xsl:attribute name="type">eISSN</xsl:attribute>
+                            <xsl:text>1468-2656</xsl:text>
+                        </idno>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="journal-meta/issn | issn |parent/issn"/>
+                        <xsl:apply-templates select="journal-meta/issn[@pub-type='isbn'] | //isbn"/>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:apply-templates select="//conference"/>
                 <imprint>
                     <!-- suppfm/parent/cpg/cpn |pubfm/cpg/cpn -->
@@ -2236,6 +2590,16 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    <xsl:template match="back/notes/fn-group">
+        <div type="fn-group">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/notes[@notes-type='citation-text']">
+        <div type="citation-text">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     <xsl:template match="fn-group/fn">
         <xsl:choose>
             <xsl:when test="ancestor::title-group/fn-group/fn">
@@ -2423,9 +2787,7 @@
     </xsl:template>
 
     <xsl:template match="license/p">
-        <p>
             <xsl:apply-templates/>
-        </p>
     </xsl:template>
 
     <xsl:template match="copyright-year | cpy">
@@ -2709,6 +3071,14 @@
         </idno>
     </xsl:template>
     <xsl:template match="front/article-meta/permissions/license/license-p">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="volume-id">
+        <note type="edition" subtype="volume-id">
+            <xsl:apply-templates/>
+        </note>
+    </xsl:template>
+    <xsl:template match="notes">
             <xsl:apply-templates/>
     </xsl:template>
 </xsl:stylesheet>

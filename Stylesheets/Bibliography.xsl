@@ -160,7 +160,7 @@
                 <xsl:apply-templates select="$entry/conference"/>
                 <xsl:choose>
                    <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
-                       <note><xsl:value-of select="normalize-space(.)"/></note>
+                       <note type="content"><xsl:value-of select="normalize-space(.)"/></note>
                        <imprint>
                     <xsl:apply-templates select="$entry/year"/>
                     <xsl:apply-templates select="$entry/volume | $entry/volumeno"/>

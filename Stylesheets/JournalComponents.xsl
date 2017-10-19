@@ -10,615 +10,623 @@
     <xsl:output encoding="UTF-8" method="xml"/>
     <xsl:variable name="journalList" select="document('JournalList.xml')"/>
     <!-- SAGE - ajout des issns -->
-    <xsl:variable name="sageISSNCode">
+    <xsl:variable name="repriseISSNCode">
         <xsl:choose>
-<xsl:when test="normalize-space($codePublisherID1)='AAF'">0308-5759</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AAS'">0095-3997</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ABS'">0002-7642</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ACD'">1038-4162</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ACH'">1032-3732</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ADB'">1059-7123</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ADH'">1523-4223</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AED'">0004-9441</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AEI'">1534-5084</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AEQ'">0001-8481</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AER'">0002-8312</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AES'">1090-820X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AFF'">0886-1099</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AFS'">0095-327X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AHH'">1474-0222</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AJA'">1533-3175</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AJC'">0972-8201</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AJE'">1098-2140</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AJH'">1049-9091</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AJL'">1559-8276</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AJM'">1062-8606</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AJS'">0363-5465</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ALH'">1469-7874</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ALT'">0304-3754</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ANG'">0506-4287</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ANJ'">0004-8658</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ANM'">1746-8477</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ANN'">0002-7162</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ANP'">0004-8674</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ANT'">1463-4996</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='APA'">0003-0651</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='APH'">1010-5395</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='APM'">0146-6216</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='APR'">1532-673X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='APY'">1039-8562</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ARJ'">1476-7503</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ARP'">0275-0740</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ASJ'">0001-6993</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ASM'">1073-1911</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ASQ'">0001-8392</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ASR'">0003-1224</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AUM'">0312-8962</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='AUT'">1362-3613</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BAS'">0007-6503</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BCQ'">1080-5699</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BIR'">0266-3821</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BJI'">1757-1774</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BJP'">2049-4637</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BJR'">0956-4748</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BMO'">0145-4455</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BMS'">0759-1063</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BOD'">1357-034X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BOS'">0096-3402</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BRN'">1099-8004</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BSE'">0143-6244</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BST'">0270-4676</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BTB'">0146-1079</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='BUL'">0192-6365</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CAC'">0010-8367</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CAD'">0011-1287</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CAN'">1941-4064</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CAP'">1354-067X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CAT'">1076-0296</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CBI'">1476-993X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CBR'">0886-3687</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CCJ'">1043-9862</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CCM'">1470-5958</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CCP'">1359-1045</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CCR'">1069-3971</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CCS'">1534-6501</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CDE'">2165-1434</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CDP'">0963-7214</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CDQ'">1525-7401</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CDY'">0921-3740</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CED'">0973-1849</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CEL'">0021-955X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CEP'">0333-1024</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CER'">1063-293X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CGJ'">1474-4740</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CHC'">1367-4935</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CHD'">0907-5682</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CHI'">1742-3953</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CHP'">2156-5872</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CHR'">0009-4455</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CIN'">0920-203X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CIS'">0069-9667</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CJB'">0093-8548</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CJO'">0315-1034</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CJP'">0887-4034</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CJR'">0734-0168</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CJS'">0829-5735</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CLA'">0069-4770</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CLT'">0265-6590</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CMC'">1741-6590</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CMP'">0738-8942</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CMX'">1077-5595</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CNC'">0309-8168</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CNR'">1054-7738</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CNU'">1474-5151</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='COA'">0308-275X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CON'">1354-8565</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CPJ'">0009-9228</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CPR'">2047-4873</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CPS'">0010-4140</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CPT'">1074-2484</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CQX'">1938-9655</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CRC'">0973-2586</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CRD'">1479-9723</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CRE'">0269-2155</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CRJ'">1748-8958</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CRS'">0896-9205</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CRW'">0091-5521</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CRX'">0093-6502</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CSC'">1532-7086</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CSI'">0011-3921</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CSP'">0261-0183</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CSX'">0094-3061</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CTJ'">1740-7745</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CTR'">0887-302X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CTX'">1536-5042</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='CUS'">1749-9755</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='DAS'">0957-9265</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='DCM'">1750-4813</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='DEM'">1471-3012</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='DIO'">0392-1921</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='DIS'">1461-4456</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='DMS'">1548-5129</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='DPS'">1044-2073</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EAB'">0013-9165</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EAQ'">0013-161X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EAU'">0956-2478</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EBX'">1063-4266</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ECL'">1468-7984</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ECR'">1476-718X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ECS'">1367-5494</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EDM'">1555-3434</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EDQ'">0891-2424</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EDR'">0013-189X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EEG'">1550-0594</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EEP'">0888-3254</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EHP'">0163-2787</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EHQ'">0265-6914</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EID'">0143-831X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EIM'">0046-2039</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EJC'">0267-3231</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EJD'">0959-6801</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EJT'">1354-0661</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EJW'">1350-5068</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EMA'">1741-1432</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EME'">0974-9101</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EMF'">0972-6527</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EMR'">1754-0739</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ENG'">0075-4242</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ENX'">1931-2431</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EPA'">0162-3737</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EPE'">1356-336X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EPM'">0013-1644</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EPT'">1474-8851</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EPX'">0895-9048</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ERG'">1064-8046</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ERX'">0193-841X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ESJ'">1746-1979</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ESP'">0958-9287</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EST'">1368-4310</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ETH'">1466-1381</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ETN'">1468-7968</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EUC'">1477-3708</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EUP'">1465-1165</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EUR'">0969-7764</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EUS'">0013-1245</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EVI'">1356-3890</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='EXT'">0014-5246</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FAP'">0959-3535</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FAS'">1938-6400</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FBR'">0894-4865</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FCX'">1557-0851</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FLA'">0142-7237</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FMX'">1525-822X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FOA'">1088-3576</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FOI'">0014-5858</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FRC'">0957-1558</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FST'">1082-0132</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FTH'">0966-7350</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='FTY'">1464-7001</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GAC'">1555-4120</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GAQ'">0533-3164</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GAS'">0891-2432</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GAZ'">1748-0485</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GBR'">0972-1509</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GCQ'">0016-9862</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GCT'">1076-2175</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GEI'">0261-4294</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GMC'">1742-7665</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GMT'">1048-3713</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GOM'">1059-6011</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GPI'">1368-4302</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GSP'">1468-0181</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='GTD'">0971-8524</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HAS'">0160-5976</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HEA'">1363-4593</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HEJ'">0017-8969</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HET'">0960-3271</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HFS'">0018-7208</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HHC'">1084-8223</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HHS'">0952-6951</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HIJ'">1940-1612</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HIP'">0954-0083</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HJB'">0739-9863</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HOL'">0959-6836</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HPC'">1094-3420</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HPP'">1524-8399</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HPQ'">1359-1053</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HPY'">0957-154X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HRD'">1534-4843</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HSB'">0022-1465</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HSX'">1088-7679</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='HUM'">0018-7267</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IAB'">0020-8345</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IAS'">2233-8659</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IBE'">1420-326X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ICJ'">1057-5677</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ICS'">1367-8779</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ICT'">1534-7354</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IDV'">0266-6669</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IER'">0019-4646</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IFL'">0340-0352</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IHR'">0376-9836</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IJB'">1367-0069</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IJD'">1056-7895</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IJL'">1534-7346</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IJM'">0255-7614</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IJO'">0020-7497</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IJR'">0278-3649</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IJS'">1066-8969</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IJT'">1091-5818</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IMP'">1365-4802</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='INI'">1753-4259</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='INT'">0020-9643</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IOC'">0306-4220</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IPS'">0192-5121</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IRE'">0047-1178</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IRM'">0973-0052</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IRS'">1012-6902</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IRV'">0269-7580</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IRX'">0160-0176</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ISB'">0266-2426</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ISC'">1053-4512</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ISP'">0020-7640</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ISQ'">0020-8817</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ISS'">0268-5809</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ISW'">0020-8728</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ITQ'">0021-1400</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='IVI'">1473-8716</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAB'">0021-8863</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAD'">1087-0547</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAF'">0148-558X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAG'">0733-4648</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAH'">0898-2643</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAP'">1078-3903</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAR'">0743-5584</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAS'">0021-9096</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JAX'">1936-7244</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JBA'">0885-3282</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JBC'">0883-9115</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JBD'">0165-0254</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JBP'">0095-7984</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JBR'">0748-7304</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JBS'">0021-9347</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JBX'">1087-0571</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCA'">1069-0727</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCC'">0022-0221</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCD'">0894-8453</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCE'">0891-2416</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCH'">0022-0094</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCI'">0196-8599</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCL'">0021-9894</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCM'">0021-9983</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCN'">0883-0738</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCR'">0731-4086</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCS'">1468-795X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JCX'">1078-3458</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JDI'">1358-2291</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JDM'">8756-4793</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JDS'">0169-796X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JEA'">0272-4316</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JEB'">1076-9986</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JED'">1070-4965</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JEG'">0162-3532</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JEI'">1053-8151</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JEN'">1744-2591</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JEP'">0095-2443</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JES'">0047-2441</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JFE'">1042-3915</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JFH'">0363-1990</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JFI'">0192-513X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JFM'">1098-612X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JFN'">1074-8407</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JFS'">0734-9041</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JGM'">1741-1343</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JGP'">0891-9887</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHH'">1538-1927</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHI'">1460-4582</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHL'">0890-3344</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHM'">0972-0634</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHN'">0898-0101</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHP'">0022-1678</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHS'">1753-1934</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHT'">1096-3480</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JHV'">0971-6858</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JIA'">2325-9574</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JIC'">0885-0666</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JID'">1744-6295</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JIL'">0534-283X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JIM'">1045-389X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JIR'">0022-1856</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JIS'">0165-5515</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JIT'">1528-0837</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JIV'">0886-2605</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JLO'">1548-0518</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JLS'">0261-927X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMC'">1077-6958</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMD'">0273-4753</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JME'">1052-5629</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMH'">1557-9883</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMI'">1056-4926</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMK'">0276-1467</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMM'">1097-184X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMO'">1522-6379</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMQ'">1077-6990</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMS'">0022-2542</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JMT'">1057-0837</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JNT'">0142-064X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOA'">1932-202X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOB'">0021-9436</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOC'">1469-5405</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOD'">0022-0426</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOE'">0971-3557</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOI'">0974-9306</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOM'">0149-2063</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOP'">0269-8811</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOS'">1440-7833</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOT'">0309-0892</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JOU'">1464-8849</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JPA'">0734-2829</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JPE'">0739-456X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JPF'">8756-0879</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JPH'">1538-5132</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JPL'">0885-4122</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JPO'">1043-4542</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JPP'">0897-1900</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JPR'">0022-3433</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JRC'">0022-4278</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JRI'">1475-2409</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JRM'">0022-4294</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JRN'">1744-9871</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JRP'">0731-6844</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSA'">1469-6053</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSD'">0973-4082</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSE'">1527-0025</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSI'">1028-3153</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSM'">1099-6362</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSP'">0951-8207</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSR'">1094-6705</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSS'">0193-7235</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JSW'">1468-0173</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JTC'">0892-7057</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JTD'">1541-3446</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JTE'">0022-4871</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JTP'">0951-6298</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JTR'">0047-2875</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JUH'">0096-1442</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JVC'">1077-5463</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='JVM'">1356-7667</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LAL'">0963-9470</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LAP'">0094-582X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LAS'">0023-8309</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LCH'">1743-8721</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LDQ'">0731-9487</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LDX'">0022-2194</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LEA'">1742-7150</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LEC'">0269-0942</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LIS'">0961-0006</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LRT'">1477-1535</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LSJ'">0160-449X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LTJ'">0265-5322</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LTR'">1362-1688</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='LUP'">0961-2033</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MAR'">0973-8010</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MCQ'">0893-3189</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MCR'">1077-5587</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MCS'">0163-4437</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MCU'">1359-1835</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MCX'">0097-7004</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MDM'">0272-989X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MEC'">0748-1756</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MEJ'">0027-4321</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MHJ'">0971-9458</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MIE'">0892-0206</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MIL'">0305-8298</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MLI'">0968-5332</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MLQ'">1350-5076</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MLS'">0258-042X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MMD'">1943-8621</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MMJ'">1745-7904</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MMR'">1558-6898</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MMS'">1081-2865</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MSJ'">1352-4585</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MSS'">1750-6980</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MSX'">1029-8649</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MTQ'">1470-5931</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='MWC'">1750-6352</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NAH'">0260-1060</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NCP'">0884-5336</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NEJ'">0969-7330</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NER'">0027-9501</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NMS'">1461-4448</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NNR'">1545-9683</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NRO'">1073-8584</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NSQ'">0894-3184</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='NVS'">0899-7640</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='OAE'">1086-0266</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='OPP'">1078-1552</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ORG'">1350-5084</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ORM'">1094-4281</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='OSS'">0170-8406</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PAA'">1030-570X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PAD'">0367-8822</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PAS'">0032-3292</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PAU'">0369-9838</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PBI'">1098-3007</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PCP'">0367-8849</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PDS'">0971-3336</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PED'">1757-9759</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PEN'">0148-6071</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PFR'">1091-1421</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIA'">1464-9934</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIB'">0954-4054</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIC'">0954-4062</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PID'">0954-4070</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIE'">0954-4089</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIF'">0954-4097</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIG'">0954-4100</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIH'">0954-4119</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PII'">0959-6518</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIJ'">1350-6501</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIK'">1464-4193</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIL'">1464-4207</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIM'">1475-0902</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIN'">1740-3499</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIO'">1748-006X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PIP'">1754-3371</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PLT'">1473-0952</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PME'">0020-3483</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PMJ'">0269-2163</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PNZ'">0032-3187</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='POM'">0305-7356</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='POS'">0048-3931</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PPA'">0952-0767</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PPE'">1470-594X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PPG'">0309-1333</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PPN'">1527-1544</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PPQ'">1354-0688</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PPS'">1745-6916</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PQX'">1098-6111</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PRB'">0264-5505</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PRF'">0267-6591</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PRQ'">1065-9129</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PSC'">0191-4537</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PSP'">0146-1672</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PSR'">1088-8683</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PSS'">0956-7976</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PTX'">0090-5917</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PUN'">1462-4745</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PUS'">0963-6625</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PVS'">1531-0035</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PWM'">1087-724X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='PWQ'">0361-6843</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='QHR'">1049-7323</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='QIX'">1077-8004</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='QRJ'">1468-7941</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='QSW'">1473-3250</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RAC'">0306-3968</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RAS'">0020-8523</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RCB'">0034-3552</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='REA'">1747-0161</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='REL'">0033-6882</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RER'">0034-6543</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='REV'">1557-234X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RMI'">0974-9292</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ROA'">0164-0275</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='ROP'">0734-371X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RRE'">0091-732X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RRP'">0486-6134</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RSH'">1757-9139</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RSM'">1321-103X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RSS'">1043-4631</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RSW'">1049-7315</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='RSX'">1933-7191</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SAC'">1206-3312</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SAD'">0973-1741</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SAE'">1391-5614</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SAG'">1046-8781</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SAR'">0262-7280</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SAS'">0971-5231</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SAX'">1079-0632</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SCE'">0953-9468</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SCH'">0049-0857</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SCP'">0037-7686</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SCV'">1089-2532</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SCX'">1075-5470</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SDI'">0967-0106</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SDJ'">0309-1325</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SED'">0022-4669</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SEX'">1363-4607</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SGR'">8756-0275</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SHM'">1475-9217</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SIH'">0257-6430</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SIM'">0740-6797</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SIR'">0008-4298</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SJP'">1403-4948</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SLG'">0160-323X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SLR'">0267-6583</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SLS'">0964-6639</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SMJ'">1471-082X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SMM'">0962-2802</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SMQ'">1524-5004</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SMR'">0049-1241</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SMX'">0081-1750</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SOC'">0038-0385</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SOE'">0038-0407</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SOQ'">1476-1270</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SPA'">1532-4400</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SPH'">1941-7381</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SPI'">0143-0343</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SPQ'">0190-2725</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SPR'">0265-4075</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SRI'">1553-3506</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SSC'">0894-4393</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SSI'">0539-0184</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='SSS'">0306-3127</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='STH'">0162-2439</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='STS'">0971-7218</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='STX'">0735-2751</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAB'">1759-720X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAG'">1756-283X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAK'">1753-9447</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAM'">1758-8340</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAN'">1756-2856</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAP'">0959-3543</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAR'">1753-4658</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAS'">0961-463X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TAU'">1756-2872</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TCN'">1043-6596</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TCP'">0011-0000</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TCR'">1362-4806</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TCS'">0263-2764</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TDE'">0145-7217</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TEC'">0271-1214</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TES'">0888-4064</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TFJ'">1066-4807</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='THE'">0725-5136</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='THR'">1467-3584</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TIA'">1084-7138</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TIH'">0748-2337</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TIM'">0142-3312</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TJX'">0040-571X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TMT'">1534-7656</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TOP'">0098-6283</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TOU'">1468-7976</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TPA'">0144-7394</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TPJ'">0032-8855</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TPS'">1363-4615</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TRA'">1460-4086</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TRE'">1477-8785</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TRJ'">0040-5175</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TRN'">0265-3788</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TRS'">1024-2589</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TSO'">0092-055X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TTJ'">0040-5736</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TVA'">1524-8380</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='TVN'">1527-4764</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='UAR'">1078-0874</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='UEX'">0042-0859</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='UIX'">0161-7346</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='UPD'">8755-1233</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='USJ'">0042-0980</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='VAW'">1077-8012</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='VCJ'">1470-3572</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='VCU'">1470-4129</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='VES'">1538-5744</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='VIS'">0972-2629</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='WCX'">0741-0883</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='WES'">0950-0170</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='WIH'">0968-3445</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='WJN'">0193-9459</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='WOM'">1048-3950</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='WOX'">0730-8884</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='WPJ'">0740-2775</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='YAS'">0044-118X</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='YEC'">1096-2506</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='YJJ'">1473-2254</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='YOU'">1103-3088</xsl:when>
-<xsl:when test="normalize-space($codePublisherID1)='YVJ'">1541-2040</xsl:when>
-</xsl:choose>
+            <xsl:when test="normalize-space($codePublisherID1)='AAF'">0308-5759</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AAS'">0095-3997</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ABS'">0002-7642</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ACD'">1038-4162</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ACH'">1032-3732</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ADB'">1059-7123</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ADH'">1523-4223</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AED'">0004-9441</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AEI'">1534-5084</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AEQ'">0001-8481</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AER'">0002-8312</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AES'">1090-820X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AFF'">0886-1099</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AFS'">0095-327X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AHH'">1474-0222</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AJA'">1533-3175</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AJC'">0972-8201</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AJE'">1098-2140</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AJH'">1049-9091</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AJL'">1559-8276</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AJM'">1062-8606</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AJS'">0363-5465</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ALH'">1469-7874</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ALT'">0304-3754</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ANG'">0506-4287</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ANJ'">0004-8658</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ANM'">1746-8477</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ANN'">0002-7162</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ANP'">0004-8674</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ANT'">1463-4996</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='APA'">0003-0651</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='APH'">1010-5395</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='APM'">0146-6216</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='APR'">1532-673X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='APY'">1039-8562</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ARJ'">1476-7503</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ARP'">0275-0740</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ASJ'">0001-6993</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ASM'">1073-1911</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ASQ'">0001-8392</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ASR'">0003-1224</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AUM'">0312-8962</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='AUT'">1362-3613</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BAS'">0007-6503</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BCQ'">1080-5699</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BIR'">0266-3821</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BJI'">1757-1774</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BJP'">2049-4637</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BJR'">0956-4748</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BMO'">0145-4455</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BMS'">0759-1063</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BOD'">1357-034X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BOS'">0096-3402</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BRN'">1099-8004</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BSE'">0143-6244</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BST'">0270-4676</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BTB'">0146-1079</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='BUL'">0192-6365</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CAC'">0010-8367</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CAD'">0011-1287</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CAN'">1941-4064</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CAP'">1354-067X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CAT'">1076-0296</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CBI'">1476-993X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CBR'">0886-3687</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CCJ'">1043-9862</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CCM'">1470-5958</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CCP'">1359-1045</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CCR'">1069-3971</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CCS'">1534-6501</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CDE'">2165-1434</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CDP'">0963-7214</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CDQ'">1525-7401</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CDY'">0921-3740</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CED'">0973-1849</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CEL'">0021-955X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CEP'">0333-1024</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CER'">1063-293X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CGJ'">1474-4740</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CHC'">1367-4935</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CHD'">0907-5682</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CHI'">1742-3953</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CHP'">2156-5872</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CHR'">0009-4455</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CIN'">0920-203X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CIS'">0069-9667</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CJB'">0093-8548</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CJO'">0315-1034</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CJP'">0887-4034</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CJR'">0734-0168</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CJS'">0829-5735</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CLA'">0069-4770</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CLT'">0265-6590</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CMC'">1741-6590</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CMP'">0738-8942</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CMX'">1077-5595</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CNC'">0309-8168</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CNR'">1054-7738</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CNU'">1474-5151</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='COA'">0308-275X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CON'">1354-8565</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CPJ'">0009-9228</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CPR'">2047-4873</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CPS'">0010-4140</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CPT'">1074-2484</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CQX'">1938-9655</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CRC'">0973-2586</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CRD'">1479-9723</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CRE'">0269-2155</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CRJ'">1748-8958</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CRS'">0896-9205</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CRW'">0091-5521</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CRX'">0093-6502</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CSC'">1532-7086</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CSI'">0011-3921</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CSP'">0261-0183</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CSX'">0094-3061</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CTJ'">1740-7745</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CTR'">0887-302X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CTX'">1536-5042</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='CUS'">1749-9755</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='DAS'">0957-9265</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='DCM'">1750-4813</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='DEM'">1471-3012</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='DIO'">0392-1921</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='DIS'">1461-4456</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='DMS'">1548-5129</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='DPS'">1044-2073</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EAB'">0013-9165</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EAQ'">0013-161X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EAU'">0956-2478</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EBX'">1063-4266</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ECL'">1468-7984</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ECR'">1476-718X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ECS'">1367-5494</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EDM'">1555-3434</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EDQ'">0891-2424</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EDR'">0013-189X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EEG'">1550-0594</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EEP'">0888-3254</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EHP'">0163-2787</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EHQ'">0265-6914</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EID'">0143-831X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EIM'">0046-2039</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EJC'">0267-3231</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EJD'">0959-6801</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EJT'">1354-0661</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EJW'">1350-5068</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EMA'">1741-1432</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EME'">0974-9101</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EMF'">0972-6527</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EMR'">1754-0739</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ENG'">0075-4242</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ENX'">1931-2431</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EPA'">0162-3737</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EPE'">1356-336X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EPM'">0013-1644</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EPT'">1474-8851</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EPX'">0895-9048</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ERG'">1064-8046</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ERX'">0193-841X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ESJ'">1746-1979</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ESP'">0958-9287</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EST'">1368-4310</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ETH'">1466-1381</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ETN'">1468-7968</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EUC'">1477-3708</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EUP'">1465-1165</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EUR'">0969-7764</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EUS'">0013-1245</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EVI'">1356-3890</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='EXT'">0014-5246</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FAP'">0959-3535</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FAS'">1938-6400</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FBR'">0894-4865</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FCX'">1557-0851</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FLA'">0142-7237</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FMX'">1525-822X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FOA'">1088-3576</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FOI'">0014-5858</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FRC'">0957-1558</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FST'">1082-0132</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FTH'">0966-7350</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='FTY'">1464-7001</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GAC'">1555-4120</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GAQ'">0533-3164</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GAS'">0891-2432</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GAZ'">1748-0485</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GBR'">0972-1509</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GCQ'">0016-9862</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GCT'">1076-2175</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GEI'">0261-4294</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GMC'">1742-7665</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GMT'">1048-3713</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GOM'">1059-6011</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GPI'">1368-4302</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GSP'">1468-0181</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='GTD'">0971-8524</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HAS'">0160-5976</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HEA'">1363-4593</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HEJ'">0017-8969</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HET'">0960-3271</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HFS'">0018-7208</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HHC'">1084-8223</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HHS'">0952-6951</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HIJ'">1940-1612</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HIP'">0954-0083</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HJB'">0739-9863</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HOL'">0959-6836</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HPC'">1094-3420</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HPP'">1524-8399</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HPQ'">1359-1053</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HPY'">0957-154X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HRD'">1534-4843</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HSB'">0022-1465</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HSX'">1088-7679</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='HUM'">0018-7267</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IAB'">0020-8345</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IAS'">2233-8659</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IBE'">1420-326X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ICJ'">1057-5677</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ICS'">1367-8779</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ICT'">1534-7354</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IDV'">0266-6669</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IER'">0019-4646</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IFL'">0340-0352</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IHR'">0376-9836</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IJB'">1367-0069</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IJD'">1056-7895</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IJL'">1534-7346</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IJM'">0255-7614</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IJO'">0020-7497</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IJR'">0278-3649</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IJS'">1066-8969</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IJT'">1091-5818</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IMP'">1365-4802</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='INI'">1753-4259</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='INT'">0020-9643</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IOC'">0306-4220</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IPS'">0192-5121</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IRE'">0047-1178</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IRM'">0973-0052</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IRS'">1012-6902</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IRV'">0269-7580</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IRX'">0160-0176</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ISB'">0266-2426</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ISC'">1053-4512</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ISP'">0020-7640</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ISQ'">0020-8817</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ISS'">0268-5809</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ISW'">0020-8728</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ITQ'">0021-1400</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='IVI'">1473-8716</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAB'">0021-8863</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAD'">1087-0547</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAF'">0148-558X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAG'">0733-4648</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAH'">0898-2643</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAP'">1078-3903</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAR'">0743-5584</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAS'">0021-9096</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JAX'">1936-7244</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JBA'">0885-3282</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JBC'">0883-9115</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JBD'">0165-0254</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JBP'">0095-7984</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JBR'">0748-7304</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JBS'">0021-9347</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JBX'">1087-0571</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCA'">1069-0727</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCC'">0022-0221</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCD'">0894-8453</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCE'">0891-2416</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCH'">0022-0094</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCI'">0196-8599</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCL'">0021-9894</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCM'">0021-9983</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCN'">0883-0738</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCR'">0731-4086</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCS'">1468-795X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JCX'">1078-3458</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JDI'">1358-2291</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JDM'">8756-4793</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JDS'">0169-796X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JEA'">0272-4316</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JEB'">1076-9986</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JED'">1070-4965</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JEG'">0162-3532</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JEI'">1053-8151</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JEN'">1744-2591</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JEP'">0095-2443</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JES'">0047-2441</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JFE'">1042-3915</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JFH'">0363-1990</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JFI'">0192-513X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JFM'">1098-612X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JFN'">1074-8407</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JFS'">0734-9041</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JGM'">1741-1343</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JGP'">0891-9887</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHH'">1538-1927</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHI'">1460-4582</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHL'">0890-3344</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHM'">0972-0634</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHN'">0898-0101</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHP'">0022-1678</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHS'">1753-1934</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHT'">1096-3480</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JHV'">0971-6858</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JIA'">2325-9574</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JIC'">0885-0666</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JID'">1744-6295</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JIL'">0534-283X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JIM'">1045-389X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JIR'">0022-1856</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JIS'">0165-5515</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JIT'">1528-0837</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JIV'">0886-2605</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JLO'">1548-0518</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JLS'">0261-927X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMC'">1077-6958</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMD'">0273-4753</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JME'">1052-5629</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMH'">1557-9883</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMI'">1056-4926</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMK'">0276-1467</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMM'">1097-184X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMO'">1522-6379</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMQ'">1077-6990</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMS'">0022-2542</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JMT'">1057-0837</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JNT'">0142-064X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOA'">1932-202X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOB'">0021-9436</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOC'">1469-5405</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOD'">0022-0426</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOE'">0971-3557</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOI'">0974-9306</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOM'">0149-2063</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOP'">0269-8811</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOS'">1440-7833</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOT'">0309-0892</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JOU'">1464-8849</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JPA'">0734-2829</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JPE'">0739-456X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JPF'">8756-0879</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JPH'">1538-5132</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JPL'">0885-4122</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JPO'">1043-4542</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JPP'">0897-1900</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JPR'">0022-3433</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JRC'">0022-4278</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JRI'">1475-2409</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JRM'">0022-4294</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JRN'">1744-9871</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JRP'">0731-6844</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSA'">1469-6053</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSD'">0973-4082</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSE'">1527-0025</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSI'">1028-3153</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSM'">1099-6362</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSP'">0951-8207</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSR'">1094-6705</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSS'">0193-7235</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JSW'">1468-0173</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JTC'">0892-7057</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JTD'">1541-3446</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JTE'">0022-4871</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JTP'">0951-6298</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JTR'">0047-2875</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JUH'">0096-1442</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JVC'">1077-5463</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='JVM'">1356-7667</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LAL'">0963-9470</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LAP'">0094-582X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LAS'">0023-8309</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LCH'">1743-8721</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LDQ'">0731-9487</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LDX'">0022-2194</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LEA'">1742-7150</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LEC'">0269-0942</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LIS'">0961-0006</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LRT'">1477-1535</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LSJ'">0160-449X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LTJ'">0265-5322</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LTR'">1362-1688</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='LUP'">0961-2033</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MAR'">0973-8010</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MCQ'">0893-3189</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MCR'">1077-5587</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MCS'">0163-4437</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MCU'">1359-1835</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MCX'">0097-7004</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MDM'">0272-989X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MEC'">0748-1756</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MEJ'">0027-4321</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MHJ'">0971-9458</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MIE'">0892-0206</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MIL'">0305-8298</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MLI'">0968-5332</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MLQ'">1350-5076</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MLS'">0258-042X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MMD'">1943-8621</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MMJ'">1745-7904</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MMR'">1558-6898</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MMS'">1081-2865</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MSJ'">1352-4585</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MSS'">1750-6980</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MSX'">1029-8649</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MTQ'">1470-5931</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='MWC'">1750-6352</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NAH'">0260-1060</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NCP'">0884-5336</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NEJ'">0969-7330</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NER'">0027-9501</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NMS'">1461-4448</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NNR'">1545-9683</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NRO'">1073-8584</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NSQ'">0894-3184</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='NVS'">0899-7640</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='OAE'">1086-0266</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='OPP'">1078-1552</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ORG'">1350-5084</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ORM'">1094-4281</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='OSS'">0170-8406</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PAA'">1030-570X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PAD'">0367-8822</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PAS'">0032-3292</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PAU'">0369-9838</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PBI'">1098-3007</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PCP'">0367-8849</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PDS'">0971-3336</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PED'">1757-9759</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PEN'">0148-6071</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PFR'">1091-1421</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIA'">1464-9934</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIB'">0954-4054</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIC'">0954-4062</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PID'">0954-4070</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIE'">0954-4089</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIF'">0954-4097</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIG'">0954-4100</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIH'">0954-4119</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PII'">0959-6518</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIJ'">1350-6501</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIK'">1464-4193</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIL'">1464-4207</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIM'">1475-0902</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIN'">1740-3499</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIO'">1748-006X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PIP'">1754-3371</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PLT'">1473-0952</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PME'">0020-3483</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PMJ'">0269-2163</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PNZ'">0032-3187</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='POM'">0305-7356</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='POS'">0048-3931</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PPA'">0952-0767</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PPE'">1470-594X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PPG'">0309-1333</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PPN'">1527-1544</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PPQ'">1354-0688</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PPS'">1745-6916</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PQX'">1098-6111</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PRB'">0264-5505</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PRF'">0267-6591</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PRQ'">1065-9129</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PSC'">0191-4537</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PSP'">0146-1672</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PSR'">1088-8683</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PSS'">0956-7976</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PTX'">0090-5917</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PUN'">1462-4745</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PUS'">0963-6625</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PVS'">1531-0035</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PWM'">1087-724X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='PWQ'">0361-6843</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='QHR'">1049-7323</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='QIX'">1077-8004</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='QRJ'">1468-7941</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='QSW'">1473-3250</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RAC'">0306-3968</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RAS'">0020-8523</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RCB'">0034-3552</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='REA'">1747-0161</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='REL'">0033-6882</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RER'">0034-6543</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='REV'">1557-234X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RMI'">0974-9292</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ROA'">0164-0275</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='ROP'">0734-371X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RRE'">0091-732X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RRP'">0486-6134</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RSH'">1757-9139</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RSM'">1321-103X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RSS'">1043-4631</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RSW'">1049-7315</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='RSX'">1933-7191</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SAC'">1206-3312</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SAD'">0973-1741</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SAE'">1391-5614</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SAG'">1046-8781</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SAR'">0262-7280</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SAS'">0971-5231</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SAX'">1079-0632</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SCE'">0953-9468</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SCH'">0049-0857</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SCP'">0037-7686</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SCV'">1089-2532</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SCX'">1075-5470</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SDI'">0967-0106</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SDJ'">0309-1325</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SED'">0022-4669</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SEX'">1363-4607</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SGR'">8756-0275</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SHM'">1475-9217</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SIH'">0257-6430</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SIM'">0740-6797</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SIR'">0008-4298</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SJP'">1403-4948</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SLG'">0160-323X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SLR'">0267-6583</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SLS'">0964-6639</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SMJ'">1471-082X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SMM'">0962-2802</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SMQ'">1524-5004</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SMR'">0049-1241</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SMX'">0081-1750</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SOC'">0038-0385</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SOE'">0038-0407</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SOQ'">1476-1270</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SPA'">1532-4400</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SPH'">1941-7381</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SPI'">0143-0343</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SPQ'">0190-2725</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SPR'">0265-4075</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SRI'">1553-3506</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SSC'">0894-4393</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SSI'">0539-0184</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='SSS'">0306-3127</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='STH'">0162-2439</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='STS'">0971-7218</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='STX'">0735-2751</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAB'">1759-720X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAG'">1756-283X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAK'">1753-9447</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAM'">1758-8340</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAN'">1756-2856</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAP'">0959-3543</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAR'">1753-4658</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAS'">0961-463X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TAU'">1756-2872</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TCN'">1043-6596</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TCP'">0011-0000</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TCR'">1362-4806</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TCS'">0263-2764</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TDE'">0145-7217</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TEC'">0271-1214</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TES'">0888-4064</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TFJ'">1066-4807</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='THE'">0725-5136</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='THR'">1467-3584</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TIA'">1084-7138</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TIH'">0748-2337</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TIM'">0142-3312</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TJX'">0040-571X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TMT'">1534-7656</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TOP'">0098-6283</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TOU'">1468-7976</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TPA'">0144-7394</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TPJ'">0032-8855</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TPS'">1363-4615</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TRA'">1460-4086</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TRE'">1477-8785</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TRJ'">0040-5175</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TRN'">0265-3788</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TRS'">1024-2589</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TSO'">0092-055X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TTJ'">0040-5736</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TVA'">1524-8380</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='TVN'">1527-4764</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='UAR'">1078-0874</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='UEX'">0042-0859</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='UIX'">0161-7346</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='UPD'">8755-1233</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='USJ'">0042-0980</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='VAW'">1077-8012</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='VCJ'">1470-3572</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='VCU'">1470-4129</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='VES'">1538-5744</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='VIS'">0972-2629</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='WCX'">0741-0883</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='WES'">0950-0170</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='WIH'">0968-3445</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='WJN'">0193-9459</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='WOM'">1048-3950</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='WOX'">0730-8884</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='WPJ'">0740-2775</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='YAS'">0044-118X</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='YEC'">1096-2506</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='YJJ'">1473-2254</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='YOU'">1103-3088</xsl:when>
+            <xsl:when test="normalize-space($codePublisherID1)='YVJ'">1541-2040</xsl:when>
+            <!-- BMJ -->
+            <xsl:when test="//journal-meta/journal-title='Association Medical Journal'">2041-9996</xsl:when>
+            <xsl:when test="//journal-meta/journal-title='London journal of medicine'">2041-9988</xsl:when>
+            <xsl:when test="//journal-meta/journal-title='BMJ : British Medical Journal'">0959-8138</xsl:when>
+            <xsl:when test="//journal-meta/journal-title='The British Edition of the Medical Letter on Drugs and Therapeutics'">0543-2766</xsl:when>
+            <xsl:when test="//journal-meta/journal-title='Provincial Medical and Surgical Journal' and //pub-date[@pub-type='ppub']/year='1842' or //pub-date[@pub-type='ppub']/year='1843' or //pub-date[@pub-type='ppub']/year='1844'">2041-9961</xsl:when>
+            <xsl:when test="//journal-meta/journal-title='Provincial Medical and Surgical Journal' and //pub-date[@pub-type='ppub']/year='1840' or //pub-date[@pub-type='ppub']/year='1841'">2041-9953</xsl:when>
+            <xsl:when test="//journal-meta/journal-title='Provincial Medical and Surgical Journal' and //pub-date[@pub-type='ppub']/year='1845' or //pub-date[@pub-type='ppub']/year='1846' or //pub-date[@pub-type='ppub']/year='1847'or //pub-date[@pub-type='ppub']/year='1848'or //pub-date[@pub-type='ppub']/year='1849'or //pub-date[@pub-type='ppub']/year='1850'or //pub-date[@pub-type='ppub']/year='1851'or //pub-date[@pub-type='ppub']/year='1852'">2041-997X</xsl:when>
+        </xsl:choose>
             </xsl:variable>
     <!--SAGE - eissn -->
-    <xsl:variable name="SAGEeISSNCode">
+    <xsl:variable name="REPRISEeISSNCode">
                 <xsl:choose>
                      <xsl:when test="normalize-space($codePublisherID1)='AAF'">1740-469X</xsl:when>
 <xsl:when test="normalize-space($codePublisherID1)='AAS'">1552-3039</xsl:when>
@@ -2130,21 +2138,21 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <!-- SAGE - ajout des issns -->
-                        <xsl:value-of select="$sageISSNCode"/>
-                        <xsl:value-of select="$SAGEeISSNCode"/>
+                        <xsl:value-of select="$repriseISSNCode"/>
+                        <xsl:value-of select="$REPRISEeISSNCode"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </idno>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:if test="$sageISSNCode or $SAGEeISSNCode">
+                <xsl:if test="$repriseISSNCode or $REPRISEeISSNCode">
                 <idno type="pISSN">
                     <!-- SAGE - ajout des pissns -->
-                    <xsl:value-of select="$sageISSNCode"/>
+                    <xsl:value-of select="$repriseISSNCode"/>
                 </idno>
                 <idno type="eISSN">
                     <!-- SAGE - ajout des eissns -->
-                    <xsl:value-of select="$SAGEeISSNCode"/>
+                    <xsl:value-of select="$REPRISEeISSNCode"/>
                 </idno>
                 </xsl:if>
             </xsl:otherwise>
@@ -2154,11 +2162,14 @@
         match="JournalPrintISSN | issn[@issn_type='print'][string-length()&gt;0] | issn[@pub-type='ppub'][string-length()&gt;0] | PrintISSN | issn-paper | SeriesPrintISSN | issn[@type='print'] | wiley:issn[@type='print'] ">
         <xsl:variable name="ISSNCode">
             <xsl:choose>
+                <!-- BMJ -->
+                <xsl:when test="//journal-meta/journal-title='Association Medical Journal'">2041-9996</xsl:when>
+                <xsl:when test="//journal-meta/journal-title='London journal of medicine'">2041-9988</xsl:when>
                 <xsl:when test="normalize-space(.)">
                     <xsl:value-of select="normalize-space(.)"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="$sageISSNCode"/>
+                    <xsl:value-of select="$repriseISSNCode"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
