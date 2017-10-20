@@ -164,12 +164,12 @@
                     </xsl:when>
                 </xsl:choose>
                 <xsl:if test="//article/published[@type='print']/journalref/title[@type='abbreviated']">
-                    <title level="j" type="alt">
+                    <title level="j" type="abbrev">
                         <xsl:value-of select="//article/published[@type='print']/journalref/title[@type='abbreviated']"/>
                     </title>
                 </xsl:if>
                 <xsl:if test="//article/published[@type='book']/journalref/title[@type='abbreviated']">
-                    <title level="m" type="alt">
+                    <title level="m" type="abbrev">
                         <xsl:value-of select="//article/published[@type='book']/journalref/title[@type='abbreviated']"/>
                     </title>
                 </xsl:if>

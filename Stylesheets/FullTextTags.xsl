@@ -10,7 +10,7 @@
     <!-- Macrostructure -->
     <!-- Springer: Para, SimplePara -->
 
-    <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para">
+    <xsl:template match="p| ce:simple-para | ce:note-para | ce:para">
         <p>
             <xsl:if test="@id">
                 <xsl:attribute name="xml:id">
@@ -19,6 +19,23 @@
             </xsl:if>
             <xsl:apply-templates/>
         </p>
+    </xsl:template>
+    <xsl:template match="Para | SimplePara">
+        <xsl:choose>
+            <xsl:when test="ancestor::DefinitionListEntry/Description">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise>
+                <p>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="quotation">
         <quote>

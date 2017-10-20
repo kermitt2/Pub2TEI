@@ -2024,7 +2024,7 @@
 
     <!-- Additional journal namings -->
 
-    <xsl:template match="journal_abbreviation | abbrev-journal-title | els:jid | JournalShortTitle | j-shorttitle">
+    <xsl:template match="journal_abbreviation | abbrev-journal-title | els:jid | JournalShortTitle | j-shorttitle|JournalAbbreviatedTitle">
         <xsl:if test="normalize-space(.)">
             <xsl:choose>
                 <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
@@ -2448,6 +2448,12 @@
     <!-- we do not consider the number of issues in a volume (Springer <Publisher>) -->
 
     <xsl:template match="VolumeIssueCount"/>
+    
+    <xsl:template match="BookVolumeNumber">
+        <biblScope unit="vol">
+        <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
 
     <!-- Pagination -->
 
@@ -2488,6 +2494,17 @@
                 </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="BookChapterCount">
+            <biblScope unit="chapter-count">
+                <xsl:apply-templates/>
+            </biblScope>
+    </xsl:template>
+    <xsl:template match="PartChapterCount">
+        <biblScope unit="part-chapter-count">
+            <xsl:apply-templates/>
+        </biblScope>
     </xsl:template>
     
     <!--SG - ajout nombre de pages -->

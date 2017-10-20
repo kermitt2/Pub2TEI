@@ -15,7 +15,7 @@
     <!-- IOP: classifications/ puis comme Sage keywords/keyword
               pour l'instant directement traité dans IOP.xsl    -->
 
-    <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords | BookSubjectGroup">
+    <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords">
         <textClass>
             <keywords>
                 <!-- langue parfois non présente -->
@@ -25,9 +25,37 @@
                     </xsl:attribute>
                 </xsl:if>
                 <!-- PL: can we sometime grab a @scheme here? -->
-                <xsl:apply-templates select="*[not(self::ce:section-title)]"/>
+                <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
             </keywords>
         </textClass>
+    </xsl:template>
+    
+    <xsl:template match="AbbreviationGroup">
+        <textClass>
+            <keywords scheme="abbreviations">
+               <list>
+                  <xsl:apply-templates/>
+               </list>
+            </keywords>
+        </textClass>
+    </xsl:template>
+    <xsl:template match="DefinitionList">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="DefinitionListEntry">
+        <item>
+            <xsl:apply-templates/>
+        </item>
+    </xsl:template>
+    <xsl:template match="Term">
+        <term>
+            <xsl:apply-templates/>
+        </term>
+    </xsl:template>
+    <xsl:template match="Description">
+        <term>
+            <xsl:apply-templates></xsl:apply-templates>
+        </term>
     </xsl:template>
 
     <!-- SG - ajout subject NLM/Nature -->
@@ -39,19 +67,52 @@
             <xsl:value-of select="@code"/>
         </classCode>
     </xsl:template>
+    
+    <xsl:template match="JournalSubjectGroup">
+        <keywords scheme="journal-subject">
+            <xsl:apply-templates select="JournalSubject"/>
+            </keywords>
+    </xsl:template>
+    <xsl:template match="JournalSubject">
+        <term>
+            <xsl:attribute name="type">
+                <xsl:apply-templates select="@Type"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </term>
+    </xsl:template>
 
     <xsl:template match="keyword | Keyword | ce:keyword | kwd">
         <term>
             <xsl:apply-templates/>
         </term>
     </xsl:template>
-
+    <xsl:template match="SubjectCollection">
+        <keywords scheme="book-subject-collection">
+            <list>
+                <label><xsl:value-of select="@Code"/></label>
+                <item>
+                    <term>
+                        <xsl:apply-templates/>
+                    </term>
+                </item>
+            </list>
+        </keywords>
+    </xsl:template>
+    <xsl:template match="BookSubjectGroup">
+        <keywords scheme="book-subject">
+            <list>
+                <xsl:apply-templates select="BookSubject"/>
+            </list>
+        </keywords>
+    </xsl:template>
     <xsl:template match="BookSubject">
-        <label>
-            <xsl:value-of select="@Code"/>
-        </label>
+        <label><xsl:value-of select="@Code"/></label>
         <item>
             <term>
+                <xsl:attribute name="type">
+                    <xsl:apply-templates select="@Type"/>
+                </xsl:attribute>
                 <xsl:apply-templates/>
             </term>
         </item>

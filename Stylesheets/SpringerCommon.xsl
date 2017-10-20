@@ -125,7 +125,7 @@
 
     <xsl:template match="JournalID">
         <xsl:if test="normalize-space(.)">
-            <idno type="JournalID">
+            <idno type="journal-id">
                 <xsl:apply-templates/>
             </idno>
         </xsl:if>
@@ -133,7 +133,7 @@
 
     <xsl:template match="ArticleInfo/ArticleID">
         <xsl:if test="normalize-space(.)">
-            <idno type="ArticleID">
+            <idno type="article-id">
                 <xsl:apply-templates/>
             </idno>
         </xsl:if>
@@ -391,13 +391,18 @@
     <!-- Journal information for <monogr> -->
 
     <xsl:template match="BookTitle">
-        <title level="m">
+        <title level="m" type="main">
             <xsl:apply-templates/>
         </title>
     </xsl:template>
     
     <xsl:template match="BookSubTitle">
         <title level="m" type="sub">
+            <xsl:apply-templates/>
+        </title>
+    </xsl:template>
+    <xsl:template match="PartTitle">
+        <title level="m" type="part">
             <xsl:apply-templates/>
         </title>
     </xsl:template>
@@ -520,13 +525,15 @@
     </xsl:template>
 
     <xsl:template match="CopyrightHolderName">
-        <authority>
+        <availability>
+            <licence>
             <xsl:apply-templates/>
-        </authority>
+            </licence>
+        </availability>
     </xsl:template>
 
     <xsl:template match="CopyrightYear">
-        <date>
+        <date when="{.}">
             <xsl:apply-templates/>
         </date>
     </xsl:template>
