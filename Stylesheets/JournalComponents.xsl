@@ -1833,25 +1833,32 @@
     </xsl:variable>
     <xsl:template
         match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle | chaptl | book-title">
-        <xsl:if test="normalize-space(.)">
-            <title level="a" type="main">
-                <xsl:if test="@Language | @xml:lang">
-                    <xsl:attribute name="xml:lang">
-                        <xsl:choose>
-                            <xsl:when test="@Language='' or @xml:lang=''">
-                                <xsl:text>en</xsl:text>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:call-template name="Varia2ISO639">
-                                    <xsl:with-param name="code" select="@Language | @xml:lang"/>
-                                </xsl:call-template>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:attribute>
+        <xsl:choose>
+            <xsl:when test="ancestor::news-article/art-front/titlegrp">
+                    <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="normalize-space(.)">
+                    <title level="a" type="main">
+                        <xsl:if test="@Language | @xml:lang">
+                            <xsl:attribute name="xml:lang">
+                                <xsl:choose>
+                                    <xsl:when test="@Language='' or @xml:lang=''">
+                                        <xsl:text>en</xsl:text>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:call-template name="Varia2ISO639">
+                                            <xsl:with-param name="code" select="@Language | @xml:lang"/>
+                                        </xsl:call-template>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:attribute>
+                        </xsl:if>
+                        <xsl:apply-templates/>
+                    </title>
                 </xsl:if>
-                <xsl:apply-templates/>
-            </title>
-        </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <!-- EDP - trans-title-group -->
     <xsl:template

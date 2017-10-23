@@ -16,19 +16,24 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-                        <xsl:apply-templates select="art-front/titlegrp/title"/>
+                            <!--<xsl:apply-templates select="art-front/titlegrp/title"/>-->
+                        <xsl:for-each select="//art-body/news-section/news-article/art-front/titlegrp/title">
+                            <title level="a" type="main">
+                                <xsl:value-of select="p"/>
+                            </title>
+                        </xsl:for-each>
                     </titleStmt>
                     <publicationStmt>
                         <authority>ISTEX</authority>
-                        <xsl:if test="//article/published[@type='print']|published[@type='book']/journalref/publisher/orgname/nameelt">
+                        <xsl:if test="//article/published[@type='subsyear']/journalref/publisher/orgname/nameelt">
                             <publisher>
-                                <xsl:value-of select="//article/published[@type='print']|published[@type='book']/journalref/publisher/orgname/nameelt"/>
+                                <xsl:value-of select="//article/published[@type='subsyear']/journalref/publisher/orgname/nameelt"/>
                             </publisher>
                         </xsl:if>
-                        <xsl:if test="//article/published[@type='print']|published[@type='book']/journalref/cpyrt">
+                        <xsl:if test="//article/published[@type='subsyear']/journalref/cpyrt">
                             <availability>
                                 <p>
-                                    <xsl:value-of select="//article/published[@type='print']|published[@type='book']/journalref/cpyrt"/>
+                                    <xsl:value-of select="//article/published[@type='subsyear']/journalref/cpyrt"/>
                                 </p>
                             </availability>
                         </xsl:if>
@@ -37,6 +42,12 @@
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
+                        <date type="published">
+                            <xsl:attribute name="when">
+                                <xsl:value-of select="//article/published[@type='subsyear']/pubfront/date/year"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="//article/published[@type='subsyear']/pubfront/date/year"/>
+                        </date>
                     </publicationStmt>
                     <sourceDesc>
                         <xsl:apply-templates select="." mode="sourceDesc"/>
@@ -55,22 +66,28 @@
                 </xsl:if>
             </teiHeader>
             <text>
-				<!-- PL: abstract is moved to <abstract> under <profileDesc> -->
-                <!--front>
-                    <xsl:apply-templates select="art-front/abstract"/>
-                </front-->
-                <body>
-                    <xsl:choose>
-                        <xsl:when test="normalize-space(art-body)">
+                <xsl:choose>
+                    <xsl:when test="//news-section">
+                        <group type="sub-article">
                             <xsl:apply-templates select="art-body/*"/> 
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <div>
-                               <p></p>
-                            </div>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </body>
+                        </group>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <body>
+                            <xsl:choose>
+                                <xsl:when test="normalize-space(art-body)">
+                                    <xsl:apply-templates select="art-body/*"/> 
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <div>
+                                        <p></p>
+                                    </div>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </body>
+                    </xsl:otherwise>
+                </xsl:choose>
+               
                 <back>
                     <xsl:apply-templates select="art-back/*"/>
                 </back>
@@ -100,33 +117,35 @@
                         <xsl:attribute name="type">other</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType='book-review'">
-                        <xsl:attribute name="type">bookReview</xsl:attribute>
+                        <xsl:attribute name="type">book-reviews</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType='books-received'">
-                        <xsl:attribute name="type">booksReceived</xsl:attribute>
+                        <xsl:attribute name="type">other</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType='EDI'">
                         <xsl:attribute name="type">editorial</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType='brief-report'">
-                        <xsl:attribute name="type">briefReport</xsl:attribute>
+                        <xsl:attribute name="type">brief-communication</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType='LET'">
-                        <xsl:attribute name="type">letter</xsl:attribute>
+                        <xsl:attribute name="type">other</xsl:attribute>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:message terminate="no">Article-type inconnu: <xsl:value-of
-                                select="$articleType"/></xsl:message>
-                    </xsl:otherwise>
+                    <xsl:otherwise>other</xsl:otherwise>
                 </xsl:choose>
             </xsl:if>
 
 
             <analytic>
                 <!-- Title information related to the paper goes here -->
-                <xsl:apply-templates select="art-front/titlegrp/*"/>
+                <!--<xsl:apply-templates select="//art-front/titlegrp/*"/>-->
+                <xsl:for-each select="//art-body/news-section/news-article/art-front/titlegrp/title">
+                    <title level="a" type="main">
+                        <xsl:value-of select="p"/>
+                    </title>
+                </xsl:for-each>
                 <!-- All authors are included here -->
-                <xsl:apply-templates select="art-front/authgrp/author"/>
+                <xsl:apply-templates select="//art-front/authgrp/author"/>
                 <xsl:apply-templates select="art-admin/doi"/>
                 <xsl:apply-templates select="art-admin/ms-id"/>
             </analytic>
@@ -186,16 +205,19 @@
                 <xsl:if test="//article/published/journalref/issn">
                     <xsl:for-each select="//article/published/journalref/issn">
                     <idno>
-                        <xsl:attribute name="type">
                         <xsl:choose>
-                            <xsl:when test="//article/published/journalref/issn[@type='isbn']">ISBN</xsl:when>
-                            <xsl:when test="//article/published/journalref/issn[@type='pissn']">pISSN</xsl:when>
-                            <xsl:when test="//article/published/journalref/issn[@type='eissn']">eISSN</xsl:when>
+                            <xsl:when test="@type='isbn'"><xsl:attribute name="type">ISBN</xsl:attribute></xsl:when>
+                            <xsl:when test="@type='print'"><xsl:attribute name="type">pISSN</xsl:attribute></xsl:when>
+                            <xsl:when test="@type='online'"><xsl:attribute name="type">eISSN</xsl:attribute></xsl:when>
                         </xsl:choose>
-                        </xsl:attribute>
                         <xsl:value-of select="."/>
                     </idno>
                     </xsl:for-each>
+                    <xsl:if test="//coden">
+                        <idno type="CODEN">
+                            <xsl:value-of select="//coden"/>
+                        </idno>
+                    </xsl:if>
                 </xsl:if>
                 <imprint>
                     <xsl:for-each select="article-meta/pub-date">
@@ -205,13 +227,65 @@
                             <xsl:apply-templates select="."/>
                         </xsl:if>
                     </xsl:for-each>
-                    <xsl:apply-templates
-                        select="published/volumeref | published/issueref 
-                        | published/pubfront/fpage | published/pubfront/lpage|publisher/orgname/nameelt"
-                    />
+                    <xsl:apply-templates select="published[@type='subsyear']/volumeref"/>
+                    <xsl:apply-templates select="published[@type='subsyear']/issueref"/>
+                    <xsl:apply-templates select="published[@type='print']/pubfront/fpage"/>
+                    <xsl:apply-templates select="published[@type='print']/pubfront/lpage"/>
+                    <xsl:apply-templates select="published[@type='subsyear']/publisher/orgname/nameelt"/>
                 </imprint>
             </monogr>
         </biblStruct>
+    </xsl:template>
+    
+    <xsl:template match="art-body">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="news-section">
+            <xsl:apply-templates select="news-section/title"/>
+            <xsl:apply-templates select="news-article"/>
+        <xsl:apply-templates select="news-item"/>
+    </xsl:template>
+    <xsl:template match="news-item">
+        <figure type="item">
+            <xsl:apply-templates/>
+        </figure>
+    </xsl:template>
+    <xsl:template match="news-article">
+        <text type="article">
+            <xsl:apply-templates/>
+            
+        </text>
+    </xsl:template>
+    <xsl:template match="news-article/art-front">
+        <front>
+            <div>
+                <biblFull>
+                    <fileDesc>
+                        <titleStmt>
+                            <xsl:apply-templates select="*[not(self::abstract)]"/>
+                        </titleStmt>
+                        <publicationStmt><publisher>RSC</publisher></publicationStmt>
+                        <sourceDesc>
+                            <bibl></bibl>
+                        </sourceDesc>
+                    </fileDesc>
+                    <profileDesc>
+                        <xsl:apply-templates select="abstract"/>
+                    </profileDesc>
+                </biblFull>
+            </div>
+        </front>
+    </xsl:template>
+    <xsl:template match="news-article/art-body">
+        <body>
+            <xsl:apply-templates/>
+        </body>
+    </xsl:template>
+    <xsl:template match="titlegrp">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="box">
+        <xsl:apply-templates/>
     </xsl:template>
 
     <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -289,14 +363,26 @@
 
     <!-- Macrostructure of main body if the text -->
     <xsl:template match="section">
-        <div>
-            <xsl:if test="@type|no">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@type|no"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </div>
+        <xsl:choose>
+            <xsl:when test="ancestor::box">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise>
+                <div>
+                    <xsl:if test="@type|no">
+                        <xsl:attribute name="type">
+                            <xsl:value-of select="@type|no"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="p/box/@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="p/box/@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </div>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="*[starts-with(name(),'subsect')]">

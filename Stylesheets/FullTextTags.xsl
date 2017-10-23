@@ -11,14 +11,27 @@
     <!-- Springer: Para, SimplePara -->
 
     <xsl:template match="p| ce:simple-para | ce:note-para | ce:para">
-        <p>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:apply-templates/>
-        </p>
+        <xsl:choose>
+            <!--RSC plusieurs titres dans le titre contenu par des p-->
+            <xsl:when test="ancestor::title">
+                <title>
+                <xsl:apply-templates/>
+                </title>
+            </xsl:when>
+            <xsl:when test="child::boxref">
+                    <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise>
+                <p>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="Para | SimplePara">
         <xsl:choose>
@@ -590,6 +603,24 @@
                 <xsl:value-of select="concat('#',@idrefs)"/>
             </xsl:attribute>
         </ref>
+    </xsl:template>
+    <xsl:template match="scheme">
+        <figure type="schema">
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+            <xsl:attribute name="rendition">
+                <xsl:value-of select="@height"/>
+            </xsl:attribute>
+            <xsl:attribute name="rend">
+                <xsl:value-of select="@width"/>
+            </xsl:attribute>
+            <xsl:if test="@xsrc">
+            <figDesc>
+                <xsl:value-of select="@xsrc"/>
+            </figDesc>
+            </xsl:if>
+        </figure>
     </xsl:template>
 
     <xsl:template match="figref">

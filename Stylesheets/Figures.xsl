@@ -34,7 +34,22 @@
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="@id"/>
             </xsl:attribute>
+            <xsl:if test="@height">
+            <xsl:attribute name="rendition">
+                <xsl:value-of select="@height"/>
+            </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@width">
+            <xsl:attribute name="rend">
+                <xsl:value-of select="@width"/>
+            </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
+            <xsl:if test="@xsrc">
+            <p>
+                <xsl:value-of select="@xsrc"/>
+            </p>
+            </xsl:if>
         </figure>
     </xsl:template>
     <xsl:template match="figure/title">
