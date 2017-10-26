@@ -57,6 +57,10 @@
     </xsl:variable>
 
     <xsl:template match="els:article[els:item-info] | els:converted-article[els:item-info] | converted-article[item-info] | article[item-info]">
+        <xsl:comment>
+            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:value-of select="$datecreation"/>
+        </xsl:comment>
         <TEI>
             <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>

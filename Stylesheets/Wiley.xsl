@@ -6,6 +6,7 @@
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xpath-default-namespace="http://www.wiley.com/namespaces/wiley"
 	exclude-result-prefixes="#all">
     <xsl:output encoding="UTF-8" method="xml"/>
+    <!-- date de creation -->
     <!-- code genre -->
     <xsl:variable name="codeGenre1">
         <xsl:value-of select="//component/header/publicationMeta[@level='unit']/@type"/>
@@ -108,7 +109,10 @@
     
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="component">
-        <xsl:message>Wiley.xsl</xsl:message>
+        <xsl:comment>
+            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:value-of select="$datecreation"/>
+        </xsl:comment>
         <TEI>
             <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>

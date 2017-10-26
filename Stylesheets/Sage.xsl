@@ -71,6 +71,10 @@
         </xsl:choose>
     </xsl:variable>
     <xsl:template match="SAGEmeta">
+        <xsl:comment>
+            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:value-of select="$datecreation"/>
+        </xsl:comment>
         <TEI>
             <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
