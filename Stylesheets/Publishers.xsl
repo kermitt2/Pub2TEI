@@ -35,6 +35,7 @@
     <xsl:include href="RoyalChemicalSociety.xsl"/>
 	<xsl:include href="Wiley.xsl"/>
     <xsl:include href="BrepolsBookChapter.xsl"/>
+    <xsl:include href="Duke.xsl"/>
     <xsl:template match="/">
         <xsl:choose> 
             <xsl:when test="metadata">
@@ -90,7 +91,9 @@
             <xsl:when test="book/book-meta">
                 <xsl:message>Converting a Brepols book chapter</xsl:message>
             </xsl:when>
-            
+            <xsl:when test="euclid_issue">
+                <xsl:message>Converting a Duke article</xsl:message>
+            </xsl:when>
             <!-- RL: vérif encore très stricte pour le nouveau cas -->
             <xsl:when test="(
                                contains(/article/article-metadata/article-data/copyright, 'IOP')
