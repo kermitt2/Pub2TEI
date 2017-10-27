@@ -110,6 +110,9 @@
     <xsl:template match="component">
         <xsl:message>Wiley.xsl</xsl:message>
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <xsl:attribute name="xml:lang">
                 <xsl:value-of select="$codeLangue"/>
             </xsl:attribute>
@@ -422,6 +425,13 @@
                     <xsl:when test="body/section">
                         <body>
                             <xsl:apply-templates select="body" mode="bodyOnly"/>
+                        </body>
+                    </xsl:when>
+                    <xsl:when test="$rawfulltextpath">
+                        <body>
+                            <div>
+                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                            </div>
                         </body>
                     </xsl:when>
                     <xsl:otherwise>
