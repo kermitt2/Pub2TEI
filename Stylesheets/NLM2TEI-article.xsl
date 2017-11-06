@@ -2820,7 +2820,7 @@
     <xsl:template match="title">
         <xsl:choose>
             <xsl:when test="ancestor::record">
-                <title level="a" type="main">
+                <title level="a" type="main" xml:lang="{translate(@lang,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')}">
                     <xsl:apply-templates/>
                 </title>
             </xsl:when>
