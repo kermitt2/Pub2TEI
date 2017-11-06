@@ -2819,6 +2819,11 @@
 
     <xsl:template match="title">
         <xsl:choose>
+            <xsl:when test="ancestor::record">
+                <title level="a" type="main">
+                    <xsl:apply-templates/>
+                </title>
+            </xsl:when>
             <xsl:when test="ancestor::app">
                 <title>
                     <xsl:apply-templates/>

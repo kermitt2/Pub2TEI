@@ -127,7 +127,7 @@
                         </note>
                     </notesStmt>
                     <sourceDesc>
-                        <xsl:apply-templates select="record" mode="sourceDesc"/>
+                        <xsl:apply-templates select="//record" mode="sourceDesc"/>
                     </sourceDesc>
                 </fileDesc>
                 
@@ -6374,13 +6374,14 @@
 							                        </xsl:attribute>
 							                    </xsl:if>
 							                    <list>
-							                        <label>
-							                            <xsl:value-of select="normalize-space($mscSubjectCode)"/>
-							                        </label>
-							                        <term>
-							                            
-							                            <xsl:value-of select="normalize-space($mscSubjectVerb)"/>
-							                        </term>
+							                        <item>
+							                            <label>
+							                                <xsl:value-of select="normalize-space($mscSubjectCode)"/>
+							                            </label>
+							                            <term>
+							                                <xsl:value-of select="normalize-space($mscSubjectVerb)"/>
+							                            </term> 
+							                        </item>
 							                    </list>
 							                </keywords>
 							            </xsl:for-each>
@@ -6486,14 +6487,6 @@
                     <xsl:apply-templates select="/euclid_issue/issue/issue_data/end_page"/>
                     <xsl:apply-templates select="/euclid_issue/issue/record/start_page"/>
                     <xsl:apply-templates select="/euclid_issue/issue/record/end_page"/>
-					
-                    <publisher>
-                        <xsl:text>Duke University Press</xsl:text>
-                    </publisher>
-                    <publisher>
-                        <xsl:text>Project Euclid</xsl:text>
-                    </publisher>
-                    <pubPlace>Durham, NC 27701,USA</pubPlace>
                     <xsl:if test="//issue/issue_data/issue_publ_date/@iso8601">
 						<date type="published">
 						    <xsl:attribute name="when">
@@ -6506,12 +6499,6 @@
         </biblStruct>
     </xsl:template>
 
-	<!-- title group -->
-	<xsl:template match="title">
-	    <title level="a" type="main">
-	        <xsl:apply-templates/>
-	    </title>
-	</xsl:template>
     <!-- author related information -->
     <xsl:template match="author">
         <author>
@@ -6543,31 +6530,6 @@
     <xsl:template match="editorial_board">
 		 <xsl:apply-templates select="creator"/>
 	</xsl:template>
-    <xsl:template match="editor">
-        <editor>
-            <xsl:attribute name="xml:id">
-                <xsl:variable name="i" select="position()-1"/>
-                <xsl:choose>
-                    <xsl:when test="$i &lt; 10">
-                        <xsl:value-of select="concat('editor-000', $i)"/>
-                    </xsl:when>
-                    <xsl:when test="$i &lt; 100">
-                        <xsl:value-of select="concat('editor-00', $i)"/>
-                    </xsl:when>
-                    <xsl:when test="$i &lt; 1000">
-                        <xsl:value-of select="concat('editor-0', $i)"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="concat('editor-', $i)"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-            <xsl:if test="affiliation">
-                <xsl:apply-templates select="affiliation" mode="sourceDesc"/>
-            </xsl:if>
-        </editor>
-    </xsl:template>
     <xsl:template match="affiliation" mode="sourceDesc">
             <affiliation>
                 <xsl:if test="organization">
@@ -6590,5 +6552,38 @@
 					</address>
                 </xsl:if>
             </affiliation>
+    </xsl:template>
+    <!-- tomaison-->
+    <xsl:template match="/euclid_issue/issue/issue_data/journal_vol_number">
+        <biblScope unit="vol">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <xsl:template match="/euclid_issue/issue/issue_data/issue_number">
+        <biblScope unit="issue">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <!-- pagination niveau issue-->
+    <xsl:template match="/euclid_issue/issue/issue_data/start_page">
+        <biblScope unit="issue-page" from="{normalize-space(.)}">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <xsl:template match="/euclid_issue/issue/issue_data/end_page">
+        <biblScope unit="issue-page" to="{normalize-space(.)}">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <!-- pagination niveau article-->
+    <xsl:template match="/euclid_issue/issue/record/start_page">
+        <biblScope unit="page" from="{normalize-space(.)}">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <xsl:template match="/euclid_issue/issue/record/end_page">
+        <biblScope unit="page" to="{normalize-space(.)}">
+            <xsl:apply-templates/>
+        </biblScope>
     </xsl:template>
 </xsl:stylesheet>

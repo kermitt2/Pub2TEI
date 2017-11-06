@@ -342,6 +342,23 @@
 
     <xsl:template match="name" mode="editors">
         <editor>
+            <xsl:attribute name="xml:id">
+                <xsl:variable name="i" select="position()-1"/>
+                <xsl:choose>
+                    <xsl:when test="$i &lt; 10">
+                        <xsl:value-of select="concat('editor-000', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 100">
+                        <xsl:value-of select="concat('editor-00', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 1000">
+                        <xsl:value-of select="concat('editor-0', $i)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="concat('editor-', $i)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
             <xsl:apply-templates select="."/>
         </editor>
     </xsl:template>
@@ -350,8 +367,30 @@
     </xsl:template>
     <xsl:template match="editor">
         <editor>
+            <xsl:attribute name="xml:id">
+                <xsl:variable name="i" select="position()-1"/>
+                <xsl:choose>
+                    <xsl:when test="$i &lt; 10">
+                        <xsl:value-of select="concat('editor-000', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 100">
+                        <xsl:value-of select="concat('editor-00', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 1000">
+                        <xsl:value-of select="concat('editor-0', $i)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="concat('editor-', $i)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </editor>
+    </xsl:template>
+    <xsl:template match="role">
+        <roleName>
+            <xsl:apply-templates/>
+        </roleName>
     </xsl:template>
   
     <xsl:template match="ed">

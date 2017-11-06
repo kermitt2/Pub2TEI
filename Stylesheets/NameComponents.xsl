@@ -104,7 +104,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | corresponding-author-firstname | fname | fnm | wiley:givenNames">
+    <xsl:template match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | given_name | corresponding-author-firstname | fname | fnm | wiley:givenNames">
         <xsl:if test="normalize-space(.)">
             <forename type="first">
                 <xsl:apply-templates/>
