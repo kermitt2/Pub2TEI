@@ -6365,7 +6365,7 @@
 							                    </xsl:if>
 							                    <xsl:if test="@scheme[string-length()&gt;0]">
 							                        <xsl:attribute name="scheme">
-							                            <xsl:value-of select="normalize-space(@sheme)"/>
+							                            <xsl:value-of select="normalize-space(@scheme)"/>
 							                        </xsl:attribute>
 							                    </xsl:if>
 							                    <xsl:if test="@rank[string-length()&gt;0]">
