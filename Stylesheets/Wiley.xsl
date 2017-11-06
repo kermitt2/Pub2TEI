@@ -427,7 +427,7 @@
                             <xsl:apply-templates select="body" mode="bodyOnly"/>
                         </body>
                     </xsl:when>
-                    <xsl:when test="$rawfulltextpath">
+                    <xsl:when test="string-length($rawfulltextpath) &gt; 0">
                         <body>
                             <div>
                                 <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
