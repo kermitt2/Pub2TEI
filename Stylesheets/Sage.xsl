@@ -203,10 +203,20 @@
                 <!--front>
                     <xsl:apply-templates select="body/abstract"/>
                 </front-->
-                <body>
-                    <xsl:apply-templates select="body/*[name()!='keywords' and name()!='abstract']"
-                    />
-                </body>
+                <xsl:choose>
+                    <xsl:when test="body/*[name()!='keywords' and name()!='abstract']">
+                        <body>
+                            <xsl:apply-templates select="body/*[name()!='keywords' and name()!='abstract']"/>
+                        </body>
+                    </xsl:when>
+                    <xsl:when test="string-length($rawfulltextpath) &gt; 0">
+                        <body>
+                            <div>
+                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                            </div>
+                        </body>
+                    </xsl:when>
+                </xsl:choose>
                 <xsl:if test="note|references">
                     <back>
                         <xsl:if test="note">

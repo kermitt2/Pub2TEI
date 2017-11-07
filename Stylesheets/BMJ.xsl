@@ -69,9 +69,20 @@
                 <!--front>
                     <xsl:apply-templates select="abstract"/>
                 </front-->
-                <body>
-                    <xsl:apply-templates select="body/*"/>
-                </body>
+                <xsl:choose>
+                    <xsl:when test="body/*">
+                        <body>
+                            <xsl:apply-templates select="body/*"/>
+                        </body>
+                    </xsl:when>
+                    <xsl:when test="string-length($rawfulltextpath) &gt; 0">
+                        <body>
+                            <div>
+                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                            </div>
+                        </body>
+                    </xsl:when>
+                </xsl:choose>
                 <back>
                     <xsl:apply-templates select="back/*"/>
                 </back>

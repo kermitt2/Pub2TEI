@@ -1357,8 +1357,6 @@
                         <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*">
                             <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres/*"/>
                             <xsl:apply-templates select="bm/objects/*"/>
-
-                          
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:choose>
@@ -1385,10 +1383,11 @@
                                                 </p>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <p/>
+                                                <xsl:if test="string-length($rawfulltextpath) &gt; 0">
+                                                    <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                                                </xsl:if>
                                             </xsl:otherwise>
                                         </xsl:choose>
-                                        
                                     </div>
                                 </body> 
                             </xsl:if>

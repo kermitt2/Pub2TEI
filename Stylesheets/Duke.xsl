@@ -6424,6 +6424,11 @@
                         <xsl:when test="//euclid_issue/issue/div/record">
                             <xsl:apply-templates select="//euclid_issue/issue/div/record" mode="bodyDiv"/>
                         </xsl:when>
+                        <xsl:when test="string-length($rawfulltextpath) &gt; 0">
+                            <div>
+                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                            </div>
+                        </xsl:when>
                         <xsl:otherwise>
                             <div><p></p></div>
                         </xsl:otherwise>

@@ -82,9 +82,11 @@
                                     <xsl:apply-templates select="art-body/*"/> 
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <div>
-                                        <p></p>
-                                    </div>
+                                    <xsl:if test="string-length($rawfulltextpath) &gt; 0">
+                                        <div>
+                                            <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                                        </div>
+                                    </xsl:if>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </body>
