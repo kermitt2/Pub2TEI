@@ -11,6 +11,8 @@
     <xsl:param name="datecreation"/>
     <xsl:param name="idistex"/>
     <xsl:param name="arkistex"/>
+    <xsl:param name="rawfulltextpath"/>
+    
     <xsl:include href="Imports.xsl"/>
 
     <xsl:include href="BMJ.xsl"/>
