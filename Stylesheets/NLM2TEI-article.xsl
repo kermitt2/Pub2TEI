@@ -1382,10 +1382,13 @@
                                                     <xsl:value-of select="bdy"/>
                                                 </p>
                                             </xsl:when>
+                                            <xsl:when test="string-length($rawfulltextpath) &gt; 0">
+                                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                                            </xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:if test="string-length($rawfulltextpath) &gt; 0">
-                                                    <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
-                                                </xsl:if>
+                                                <body>
+                                                    <div><p></p></div>
+                                                </body>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </div>

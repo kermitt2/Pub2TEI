@@ -6716,9 +6716,11 @@
                 </xsl:choose>
             </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates/>
+            <!-- affiliation mis en exception pour ne pas interferer avec feuille scholarOne -->
+            <xsl:apply-templates select="* except(affiliation)"/>
+            <!-- reprise de l'affiliation -->
             <xsl:if test="affiliation">
-                <xsl:apply-templates select="affiliation" mode="sourceDesc"/>
+                <xsl:apply-templates select="affiliation" mode="Duke"/>
             </xsl:if>
         </author>
     </xsl:template>
@@ -6727,7 +6729,7 @@
     <xsl:template match="editorial_board">
 		 <xsl:apply-templates select="creator"/>
 	</xsl:template>
-    <xsl:template match="affiliation" mode="sourceDesc">
+    <xsl:template match="affiliation" mode="Duke">
             <affiliation>
                 <xsl:if test="organization">
                     <orgName>
@@ -6741,9 +6743,9 @@
                 </xsl:if>
                 <xsl:if test="address">
                     <address>
-                        <xsl:if test="addressline">
+                        <xsl:if test="address/addressline">
                             <addrLine>
-                                <xsl:value-of select="addressline"/>
+                                <xsl:value-of select="address/addressline"/>
                             </addrLine>
                         </xsl:if>
 					</address>

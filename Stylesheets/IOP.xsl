@@ -184,6 +184,11 @@
                                 </div>
                             </body>
                         </xsl:when>
+                        <xsl:otherwise>
+                            <body>
+                                <div><p></p></div>
+                            </body>
+                        </xsl:otherwise>
                     </xsl:choose>
                     <back>
                         <!-- Lancement des refbibs -->

@@ -189,7 +189,7 @@
             </nameLink>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="suffix | Suffix | suff | wiley:nameSuffix">
+    <xsl:template match="suffix | Suffix | suff | wiley:nameSuffix|name_suffix">
         <xsl:if test="normalize-space(.)">
             <genName>
                 <xsl:apply-templates/>
