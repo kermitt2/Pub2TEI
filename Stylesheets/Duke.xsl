@@ -163,10 +163,432 @@
                             </xsl:for-each>
 		                </xsl:if>
                         <xsl:if test="issue/record/subjects[string-length() &gt; 0]">
+                            <xsl:apply-templates select="//record/subjects"/>
+                        </xsl:if>
+                        <xsl:if test="issue/record/@lang">
+                        <langUsage>
+                            <language>
+                                <xsl:attribute name="ident">
+                                    <xsl:value-of select="translate(issue/record/@lang,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
+                                </xsl:attribute>
+                            </language>
+                        </langUsage>
+                        </xsl:if>
+                    </profileDesc>
+                </xsl:if>
+            </teiHeader>
+            <text>
+                <!-- pas de body dans les notices -->
+                <body>
+                    <xsl:choose>
+                        <!-- body seulement pour les table of contents -->
+                        <xsl:when test="//euclid_issue/issue/div/record">
+                            <xsl:apply-templates select="//euclid_issue/issue/div/record" mode="bodyDiv"/>
+                        </xsl:when>
+                        <xsl:when test="string-length($rawfulltextpath) &gt; 0">
+                            <div>
+                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                            </div>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <div><p></p></div>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </body>
+            </text>
+        </TEI>
+    </xsl:template>
+	
+    <!-- Building the sourceDesc bibliographical representation -->
+    <xsl:template match="record" mode="sourceDesc">
+        <biblStruct>
+            <!-- Genre     -->
+            <xsl:if test="@type[string-length()&gt; 0]">
+                <xsl:attribute name="type">
+                    <xsl:value-of select="normalize-space(@type)"/>
+                </xsl:attribute>
+            </xsl:if>
+            <analytic>
+                <!-- Title information related to the paper goes here -->
+                <xsl:apply-templates select="title"/>
+				
+                <!-- All authors are included here -->
+					<xsl:apply-templates select="author"/>
+                
+                <!-- ajout identifiants ISTEX et ARK -->
+                <xsl:if test="string-length($idistex) &gt; 0 ">
+                    <idno type="istex">
+                        <xsl:value-of select="$idistex"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="string-length($arkistex) &gt; 0 ">
+                    <idno type="ark">
+                        <xsl:value-of select="$arkistex"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="identifiers/identifier[string-length() &gt; 0]">
+                    <xsl:for-each select="identifiers/identifier">
+                        <idno type="{@type}">
+                            <xsl:value-of select="normalize-space(.)"/>
+                        </idno>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
+                    <idno type="issue-identifier">
+                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
+                    </idno>
+                </xsl:if>
+            </analytic>
+            <monogr>
+                <title level="j" type="main">Duke Mathematical Journal</title>
+                <!-- ********************************** Identifier *******************************-->
+                <idno type="pISSN">0012-7094</idno>
+                <idno type="eISSN">1547-7398</idno>
+                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
+                    <idno type="publisher-id">
+                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
+                    <idno type="issue-identifier">
+                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="/euclid_issue/issue/issue_data/identifiers/identifier[string-length() &gt; 0]">
+                    <xsl:for-each select="/euclid_issue/issue/issue_data/identifiers/identifier">
+                        <idno type="{@type}">
+                            <xsl:value-of select="normalize-space(.)"/>
+                        </idno>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
+                    <idno type="publisher-id">
+                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
+                    </idno>
+                </xsl:if>
+                <!-- ********************************** Editor *******************************-->
+                <xsl:if test="/euclid_issue/issue/issue_data/editorial_board/editor">
+                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/editorial_board/editor"/>
+                </xsl:if>
+                <imprint>
+                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/journal_vol_number"/>
+                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/issue_number"/>
+                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/start_page"/>
+                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/end_page"/>
+                    <xsl:apply-templates select="/euclid_issue/issue/record/start_page"/>
+                    <xsl:apply-templates select="/euclid_issue/issue/record/end_page"/>
+                    <xsl:if test="//issue/issue_data/issue_publ_date/@iso8601">
+						<date type="published">
+						    <xsl:attribute name="when">
+						        <xsl:value-of select="normalize-space(//issue/issue_data/issue_publ_date/@iso8601)"/>
+						    </xsl:attribute>
+						</date>
+					</xsl:if>
+                </imprint>
+            </monogr>
+        </biblStruct>
+    </xsl:template>
+    
+    <xsl:template match="issue" mode="sourceDescDiv">
+        <biblStruct type="toc">
+            <analytic>
+                <!-- Title information related to the paper goes here -->
+                <title level="a" type="main" xml:lang="en">Table of Contents</title>
+                
+                <!-- All authors are included here -->
+                <xsl:apply-templates select="author"/>
+                
+                <!-- ajout identifiants ISTEX et ARK -->
+                <xsl:if test="string-length($idistex) &gt; 0 ">
+                    <idno type="istex">
+                        <xsl:value-of select="$idistex"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="string-length($arkistex) &gt; 0 ">
+                    <idno type="ark">
+                        <xsl:value-of select="$arkistex"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="identifiers/identifier[string-length() &gt; 0]">
+                    <xsl:for-each select="identifiers/identifier">
+                        <idno type="{@type}">
+                            <xsl:value-of select="normalize-space(.)"/>
+                        </idno>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
+                    <idno type="issue-identifier">
+                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
+                    </idno>
+                </xsl:if>
+            </analytic>
+            <monogr>
+                <title level="j" type="main">Duke Mathematical Journal</title>
+                <!-- ********************************** Identifier *******************************-->
+                <idno type="pISSN">0012-7094</idno>
+                <idno type="eISSN">1547-7398</idno>
+                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
+                    <idno type="publisher-id">
+                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
+                    <idno type="issue-identifier">
+                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
+                    </idno>
+                </xsl:if>
+                <xsl:if test="issue_data/identifiers/identifier[string-length() &gt; 0]">
+                    <xsl:for-each select="issue_data/identifiers/identifier">
+                        <idno type="{@type}">
+                            <xsl:value-of select="normalize-space(.)"/>
+                        </idno>
+                    </xsl:for-each>
+                </xsl:if>
+                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
+                    <idno type="publisher-id">
+                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
+                    </idno>
+                </xsl:if>
+                <!-- ********************************** Editor *******************************-->
+                <xsl:if test="issue_data/editorial_board/editor">
+                    <xsl:apply-templates select="issue_data/editorial_board/editor"/>
+                </xsl:if>
+                <imprint>
+                    <xsl:apply-templates select="issue_data/journal_vol_number"/>
+                    <xsl:apply-templates select="issue_data/issue_number"/>
+                    <xsl:apply-templates select="issue_data/start_page"/>
+                    <xsl:apply-templates select="issue_data/end_page"/>
+                    <xsl:if test="//issue/issue_data/issue_publ_date/@iso8601">
+                        <date type="published">
+                            <xsl:attribute name="when">
+                                <xsl:value-of select="normalize-space(//issue/issue_data/issue_publ_date/@iso8601)"/>
+                            </xsl:attribute>
+                        </date>
+                    </xsl:if>
+                </imprint>
+            </monogr>
+        </biblStruct>
+    </xsl:template>
+    <!-- back toc -->
+    <xsl:template match="record" mode="bodyDiv">
+        <div type="toc">
+            <!-- Genre     -->
+            <xsl:if test="@type[string-length()&gt; 0]">
+                <xsl:attribute name="type">
+                    <xsl:value-of select="normalize-space(@type)"/>
+                </xsl:attribute>
+            </xsl:if>
+            <biblFull>
+                <fileDesc>
+                <!-- Title information related to the paper goes here -->
+                <titleStmt>
+                    <xsl:apply-templates select="title"/>
+                </titleStmt>
+                    <xsl:if test="record_filename[string-length() &gt; 0]">
+                        <editionStmt>
+                            <edition>
+                                <xsl:for-each select="record_filename">
+                                    <ref type="{@filetype}">
+                                        <xsl:value-of select="normalize-space(.)"/>
+                                    </ref>
+                                </xsl:for-each>
+                            </edition>
+                        </editionStmt>
+                    </xsl:if>
+                <publicationStmt>
+                    <publisher>Duke University Press</publisher>
+                </publicationStmt>
+                <sourceDesc>
+                    <biblStruct type="toc">
+                        <analytic>
+                            <xsl:apply-templates select="title"/>
+                            <xsl:if test="identifiers/identifier[string-length() &gt; 0]">
+                                <xsl:for-each select="identifiers/identifier">
+                                    <idno type="{@type}">
+                                        <xsl:value-of select="normalize-space(.)"/>
+                                    </idno>
+                                </xsl:for-each>
+                            </xsl:if>
+                            <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
+                                <idno type="issue-identifier">
+                                    <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
+                                </idno>
+                            </xsl:if>
+                            <!-- All authors are included here -->
+                            <xsl:apply-templates select="author"/>
+                        </analytic>
+                        <monogr>
+                            <title level="j" type="main">Duke Mathematical Journal</title>
+                            <!-- ********************************** Identifier *******************************-->
+                            <idno type="pISSN">0012-7094</idno>
+                            <idno type="eISSN">1547-7398</idno>
+                            <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
+                                <idno type="publisher-id">
+                                    <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
+                                </idno>
+                            </xsl:if>
+                            <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
+                                <idno type="issue-identifier">
+                                    <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
+                                </idno>
+                            </xsl:if>
+                            <xsl:if test="/euclid_issue/issue/issue_data/identifiers/identifier[string-length() &gt; 0]">
+                                <xsl:for-each select="/euclid_issue/issue/issue_data/identifiers/identifier">
+                                    <idno type="{@type}">
+                                        <xsl:value-of select="normalize-space(.)"/>
+                                    </idno>
+                                </xsl:for-each>
+                            </xsl:if>
+                            <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
+                                <idno type="publisher-id">
+                                    <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
+                                </idno>
+                            </xsl:if>
+                            <imprint>
+                                <xsl:apply-templates select="start_page[string-length() &gt; 0]"/>
+                                <xsl:apply-templates select="end_page[string-length() &gt; 0]"/>
+                                <xsl:if test="//issue/issue_data/issue_publ_date/@iso8601">
+                                    <date type="published">
+                                        <xsl:attribute name="when">
+                                            <xsl:value-of select="normalize-space(//issue/issue_data/issue_publ_date/@iso8601)"/>
+                                        </xsl:attribute>
+                                    </date>
+                                </xsl:if>
+                            </imprint>
+                        </monogr>
+                        <xsl:if test="related_item">
+                            <relatedItem>
+                                <bibl>
+                                    <xsl:if test="related_item/label">
+                                        <title level="a" type="sub">
+                                            <xsl:value-of select="related_item/label"/>
+                                        </title>
+                                    </xsl:if>
+                                    <xsl:apply-templates select="related_item/citation"/>
+                                    <xsl:apply-templates select="related_item/citation/identifiers"/>
+                                    <xsl:apply-templates select="related_item/citation/identifiers/identifier"/>
+                                </bibl>
+                            </relatedItem>
+                        </xsl:if>
+                    </biblStruct>
+                </sourceDesc>
+                </fileDesc>
+                <profileDesc>
+                <xsl:if test="abstract | subjects">
+                    <xsl:apply-templates select="abstract"/>
+                    <xsl:apply-templates select="subjects"/>
+                </xsl:if>
+                </profileDesc>
+            </biblFull>
+        </div>
+    </xsl:template>
+    <!-- author related information -->
+    <xsl:template match="author">
+        <author>
+            <xsl:if test="not(//euclid_issue/issue/div)">
+            <xsl:attribute name="xml:id">
+                <xsl:variable name="i" select="position()-1"/>
+                <xsl:choose>
+                    <xsl:when test="$i &lt; 10">
+                        <xsl:value-of select="concat('author-000', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 100">
+                        <xsl:value-of select="concat('author-00', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 1000">
+                        <xsl:value-of select="concat('author-0', $i)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="concat('author-', $i)"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            </xsl:if>
+            <!-- affiliation mis en exception pour ne pas interferer avec feuille scholarOne -->
+            <xsl:apply-templates select="* except(affiliation)"/>
+            <!-- reprise de l'affiliation -->
+            <xsl:if test="affiliation">
+                <xsl:apply-templates select="affiliation" mode="Duke"/>
+            </xsl:if>
+        </author>
+    </xsl:template>
+    
+    <!-- editor related information -->
+    <xsl:template match="editorial_board">
+		 <xsl:apply-templates select="creator"/>
+	</xsl:template>
+    <xsl:template match="affiliation" mode="Duke">
+            <affiliation>
+                <xsl:if test="organization">
+                    <orgName>
+                        <xsl:value-of select="organization"/>
+                    </orgName>
+                </xsl:if>
+                <xsl:if test="department">
+                    <institution>
+                        <xsl:value-of select="department"/>
+                    </institution>
+                </xsl:if>
+                <xsl:if test="address">
+                    <address>
+                        <xsl:if test="address/addressline">
+                            <addrLine>
+                                <xsl:value-of select="address/addressline"/>
+                            </addrLine>
+                        </xsl:if>
+					</address>
+                </xsl:if>
+            </affiliation>
+    </xsl:template>
+    <!-- tomaison-->
+    <xsl:template match="/euclid_issue/issue/issue_data/journal_vol_number">
+        <biblScope unit="vol">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <xsl:template match="/euclid_issue/issue/issue_data/issue_number">
+        <biblScope unit="issue">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <!-- pagination niveau issue-->
+    <xsl:template match="/euclid_issue/issue/issue_data/start_page">
+        <biblScope unit="issue-page" from="{normalize-space(.)}">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <xsl:template match="/euclid_issue/issue/issue_data/end_page">
+        <biblScope unit="issue-page" to="{normalize-space(.)}">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <!-- pagination niveau article-->
+    <xsl:template match="start_page">
+        <biblScope unit="page" from="{normalize-space(.)}">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <xsl:template match="end_page">
+        <biblScope unit="page" to="{normalize-space(.)}">
+            <xsl:apply-templates/>
+        </biblScope>
+    </xsl:template>
+    <!--relatedItem-->
+    <xsl:template match="related_item/citation">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <!--relatedItem idno-->
+    <xsl:template match="related_item/citation/identifiers/identifier">
+        <idno type="{@type}">
+        <xsl:apply-templates/>
+        </idno>
+    </xsl:template>
+    <!-- subject -->
+    <xsl:template match="subjects">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="subject">
 							<textClass>
-							    <xsl:if test="issue/record/subjects[string-length()&gt;0]">
-							        <xsl:for-each select="/euclid_issue/issue/record/subjects">
-							            <xsl:for-each select="subject">
                             <xsl:variable name="mscSubjectCode">
                                 <xsl:value-of select="."/>
                             </xsl:variable>
@@ -6399,400 +6821,7 @@
 							                        </item>
 							                    </list>
 							                </keywords>
-							            </xsl:for-each>
-							        </xsl:for-each>
-							    </xsl:if>
 							</textClass>
-						</xsl:if>
-                        <xsl:if test="issue/record/@lang">
-                        <langUsage>
-                            <language>
-                                <xsl:attribute name="ident">
-                                    <xsl:value-of select="translate(issue/record/@lang,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
-                                </xsl:attribute>
-                            </language>
-                        </langUsage>
-                        </xsl:if>
-                    </profileDesc>
-                </xsl:if>
-            </teiHeader>
-            <text>
-                <!-- pas de body dans les notices -->
-                <body>
-                    <xsl:choose>
-                        <!-- body seulement pour les table of contents -->
-                        <xsl:when test="//euclid_issue/issue/div/record">
-                            <xsl:apply-templates select="//euclid_issue/issue/div/record" mode="bodyDiv"/>
-                        </xsl:when>
-                        <xsl:when test="string-length($rawfulltextpath) &gt; 0">
-                            <div>
-                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
-                            </div>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <div><p></p></div>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </body>
-            </text>
-        </TEI>
-    </xsl:template>
-	
-    <!-- Building the sourceDesc bibliographical representation -->
-    <xsl:template match="record" mode="sourceDesc">
-        <biblStruct>
-            <!-- Genre     -->
-            <xsl:if test="@type[string-length()&gt; 0]">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="normalize-space(@type)"/>
-                </xsl:attribute>
-            </xsl:if>
-            <analytic>
-                <!-- Title information related to the paper goes here -->
-                <xsl:apply-templates select="title"/>
-				
-                <!-- All authors are included here -->
-					<xsl:apply-templates select="author"/>
-                
-                <!-- ajout identifiants ISTEX et ARK -->
-                <xsl:if test="string-length($idistex) &gt; 0 ">
-                    <idno type="istex">
-                        <xsl:value-of select="$idistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="string-length($arkistex) &gt; 0 ">
-                    <idno type="ark">
-                        <xsl:value-of select="$arkistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="identifiers/identifier[string-length() &gt; 0]">
-                    <xsl:for-each select="identifiers/identifier">
-                        <idno type="{@type}">
-                            <xsl:value-of select="normalize-space(.)"/>
-                        </idno>
-                    </xsl:for-each>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
-                    <idno type="issue-identifier">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
-                    </idno>
-                </xsl:if>
-            </analytic>
-            <monogr>
-                <title level="j" type="main">Duke Mathematical Journal</title>
-                <!-- ********************************** Identifier *******************************-->
-                <idno type="pISSN">0012-7094</idno>
-                <idno type="eISSN">1547-7398</idno>
-                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
-                    <idno type="publisher-id">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
-                    <idno type="issue-identifier">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/issue/issue_data/identifiers/identifier[string-length() &gt; 0]">
-                    <xsl:for-each select="/euclid_issue/issue/issue_data/identifiers/identifier">
-                        <idno type="{@type}">
-                            <xsl:value-of select="normalize-space(.)"/>
-                        </idno>
-                    </xsl:for-each>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
-                    <idno type="publisher-id">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
-                    </idno>
-                </xsl:if>
-                <!-- ********************************** Editor *******************************-->
-                <xsl:if test="/euclid_issue/issue/issue_data/editorial_board/editor">
-                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/editorial_board/editor"/>
-                </xsl:if>
-                <imprint>
-                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/journal_vol_number"/>
-                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/issue_number"/>
-                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/start_page"/>
-                    <xsl:apply-templates select="/euclid_issue/issue/issue_data/end_page"/>
-                    <xsl:apply-templates select="/euclid_issue/issue/record/start_page"/>
-                    <xsl:apply-templates select="/euclid_issue/issue/record/end_page"/>
-                    <xsl:if test="//issue/issue_data/issue_publ_date/@iso8601">
-						<date type="published">
-						    <xsl:attribute name="when">
-						        <xsl:value-of select="normalize-space(//issue/issue_data/issue_publ_date/@iso8601)"/>
-						    </xsl:attribute>
-						</date>
-					</xsl:if>
-                </imprint>
-            </monogr>
-        </biblStruct>
-    </xsl:template>
-    
-    <xsl:template match="issue" mode="sourceDescDiv">
-        <biblStruct type="toc">
-            <analytic>
-                <!-- Title information related to the paper goes here -->
-                <title level="a" type="main" xml:lang="en">Table of Contents</title>
-                
-                <!-- All authors are included here -->
-                <xsl:apply-templates select="author"/>
-                
-                <!-- ajout identifiants ISTEX et ARK -->
-                <xsl:if test="string-length($idistex) &gt; 0 ">
-                    <idno type="istex">
-                        <xsl:value-of select="$idistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="string-length($arkistex) &gt; 0 ">
-                    <idno type="ark">
-                        <xsl:value-of select="$arkistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="identifiers/identifier[string-length() &gt; 0]">
-                    <xsl:for-each select="identifiers/identifier">
-                        <idno type="{@type}">
-                            <xsl:value-of select="normalize-space(.)"/>
-                        </idno>
-                    </xsl:for-each>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
-                    <idno type="issue-identifier">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
-                    </idno>
-                </xsl:if>
-            </analytic>
-            <monogr>
-                <title level="j" type="main">Duke Mathematical Journal</title>
-                <!-- ********************************** Identifier *******************************-->
-                <idno type="pISSN">0012-7094</idno>
-                <idno type="eISSN">1547-7398</idno>
-                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
-                    <idno type="publisher-id">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
-                    <idno type="issue-identifier">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="issue_data/identifiers/identifier[string-length() &gt; 0]">
-                    <xsl:for-each select="issue_data/identifiers/identifier">
-                        <idno type="{@type}">
-                            <xsl:value-of select="normalize-space(.)"/>
-                        </idno>
-                    </xsl:for-each>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
-                    <idno type="publisher-id">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
-                    </idno>
-                </xsl:if>
-                <!-- ********************************** Editor *******************************-->
-                <xsl:if test="issue_data/editorial_board/editor">
-                    <xsl:apply-templates select="issue_data/editorial_board/editor"/>
-                </xsl:if>
-                <imprint>
-                    <xsl:apply-templates select="issue_data/journal_vol_number"/>
-                    <xsl:apply-templates select="issue_data/issue_number"/>
-                    <xsl:apply-templates select="issue_data/start_page"/>
-                    <xsl:apply-templates select="issue_data/end_page"/>
-                    <xsl:if test="//issue/issue_data/issue_publ_date/@iso8601">
-                        <date type="published">
-                            <xsl:attribute name="when">
-                                <xsl:value-of select="normalize-space(//issue/issue_data/issue_publ_date/@iso8601)"/>
-                            </xsl:attribute>
-                        </date>
-                    </xsl:if>
-                </imprint>
-            </monogr>
-        </biblStruct>
-    </xsl:template>
-    <!-- back toc -->
-    <xsl:template match="record" mode="bodyDiv">
-        <div type="toc">
-            <!-- Genre     -->
-            <xsl:if test="@type[string-length()&gt; 0]">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="normalize-space(@type)"/>
-                </xsl:attribute>
-            </xsl:if>
-            <biblStruct>
-                <!-- Title information related to the paper goes here -->
-            <analytic>
-                <xsl:apply-templates select="title"/>
-                
-                <!-- All authors are included here -->
-                <xsl:apply-templates select="author"/>
-                
-                <xsl:if test="identifiers/identifier[string-length() &gt; 0]">
-                    <xsl:for-each select="identifiers/identifier">
-                        <idno type="{@type}">
-                            <xsl:value-of select="normalize-space(.)"/>
-                        </idno>
-                    </xsl:for-each>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
-                    <idno type="issue-identifier">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
-                    </idno>
-                </xsl:if>
-            </analytic>
-            <monogr>
-                <title level="j" type="main">Duke Mathematical Journal</title>
-                <!-- ********************************** Identifier *******************************-->
-                <idno type="pISSN">0012-7094</idno>
-                <idno type="eISSN">1547-7398</idno>
-                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
-                    <idno type="publisher-id">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/issue_identifier[string-length() &gt; 0]">
-                    <idno type="issue-identifier">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/issue_identifier)"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/issue/issue_data/identifiers/identifier[string-length() &gt; 0]">
-                    <xsl:for-each select="/euclid_issue/issue/issue_data/identifiers/identifier">
-                        <idno type="{@type}">
-                            <xsl:value-of select="normalize-space(.)"/>
-                        </idno>
-                    </xsl:for-each>
-                </xsl:if>
-                <xsl:if test="/euclid_issue/header/euclid_journal_id[string-length() &gt; 0]">
-                    <idno type="publisher-id">
-                        <xsl:value-of select="normalize-space(/euclid_issue/header/euclid_journal_id)"/>
-                    </idno>
-                </xsl:if>
-                <imprint>
-                    <xsl:apply-templates select="start_page[string-length() &gt; 0]"/>
-                    <xsl:apply-templates select="end_page[string-length() &gt; 0]"/>
-                    <xsl:if test="//issue/issue_data/issue_publ_date/@iso8601">
-                        <date type="published">
-                            <xsl:attribute name="when">
-                                <xsl:value-of select="normalize-space(//issue/issue_data/issue_publ_date/@iso8601)"/>
-                            </xsl:attribute>
-                        </date>
-                    </xsl:if>
-                </imprint>
-            </monogr>
-                <xsl:if test="related_item">
-                    <relatedItem>
-                        <bibl>
-                            <xsl:if test="related_item/label">
-                                <title level="a" type="sub">
-                                    <xsl:value-of select="related_item/label"/>
-                                </title>
-                            </xsl:if>
-                            <xsl:apply-templates select="related_item/citation"/>
-                            <xsl:apply-templates select="related_item/citation/identifiers"/>
-                            <xsl:apply-templates select="related_item/citation/identifiers/identifier"/>
-                        </bibl>
-                    </relatedItem>
-                </xsl:if>
-            </biblStruct>
-        </div>
-    </xsl:template>
-    <!-- author related information -->
-    <xsl:template match="author">
-        <author>
-            <xsl:if test="not(//euclid_issue/issue/div)">
-            <xsl:attribute name="xml:id">
-                <xsl:variable name="i" select="position()-1"/>
-                <xsl:choose>
-                    <xsl:when test="$i &lt; 10">
-                        <xsl:value-of select="concat('author-000', $i)"/>
-                    </xsl:when>
-                    <xsl:when test="$i &lt; 100">
-                        <xsl:value-of select="concat('author-00', $i)"/>
-                    </xsl:when>
-                    <xsl:when test="$i &lt; 1000">
-                        <xsl:value-of select="concat('author-0', $i)"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="concat('author-', $i)"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
-            </xsl:if>
-            <!-- affiliation mis en exception pour ne pas interferer avec feuille scholarOne -->
-            <xsl:apply-templates select="* except(affiliation)"/>
-            <!-- reprise de l'affiliation -->
-            <xsl:if test="affiliation">
-                <xsl:apply-templates select="affiliation" mode="Duke"/>
-            </xsl:if>
-        </author>
-    </xsl:template>
-    
-    <!-- editor related information -->
-    <xsl:template match="editorial_board">
-		 <xsl:apply-templates select="creator"/>
-	</xsl:template>
-    <xsl:template match="affiliation" mode="Duke">
-            <affiliation>
-                <xsl:if test="organization">
-                    <orgName>
-                        <xsl:value-of select="organization"/>
-                    </orgName>
-                </xsl:if>
-                <xsl:if test="department">
-                    <institution>
-                        <xsl:value-of select="department"/>
-                    </institution>
-                </xsl:if>
-                <xsl:if test="address">
-                    <address>
-                        <xsl:if test="address/addressline">
-                            <addrLine>
-                                <xsl:value-of select="address/addressline"/>
-                            </addrLine>
-                        </xsl:if>
-					</address>
-                </xsl:if>
-            </affiliation>
-    </xsl:template>
-    <!-- tomaison-->
-    <xsl:template match="/euclid_issue/issue/issue_data/journal_vol_number">
-        <biblScope unit="vol">
-            <xsl:apply-templates/>
-        </biblScope>
-    </xsl:template>
-    <xsl:template match="/euclid_issue/issue/issue_data/issue_number">
-        <biblScope unit="issue">
-            <xsl:apply-templates/>
-        </biblScope>
-    </xsl:template>
-    <!-- pagination niveau issue-->
-    <xsl:template match="/euclid_issue/issue/issue_data/start_page">
-        <biblScope unit="issue-page" from="{normalize-space(.)}">
-            <xsl:apply-templates/>
-        </biblScope>
-    </xsl:template>
-    <xsl:template match="/euclid_issue/issue/issue_data/end_page">
-        <biblScope unit="issue-page" to="{normalize-space(.)}">
-            <xsl:apply-templates/>
-        </biblScope>
-    </xsl:template>
-    <!-- pagination niveau article-->
-    <xsl:template match="start_page">
-        <biblScope unit="page" from="{normalize-space(.)}">
-            <xsl:apply-templates/>
-        </biblScope>
-    </xsl:template>
-    <xsl:template match="end_page">
-        <biblScope unit="page" to="{normalize-space(.)}">
-            <xsl:apply-templates/>
-        </biblScope>
-    </xsl:template>
-    <!--relatedItem-->
-    <xsl:template match="related_item/citation">
-            <xsl:apply-templates/>
-    </xsl:template>
-    <!--relatedItem idno-->
-    <xsl:template match="related_item/citation/identifiers/identifier">
-        <idno type="{@type}">
-        <xsl:apply-templates/>
-        </idno>
+						
     </xsl:template>
 </xsl:stylesheet>

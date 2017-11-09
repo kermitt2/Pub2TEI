@@ -180,6 +180,9 @@
 	                    <xsl:when test="@Language">
 	                        <xsl:value-of select="@Language"/>
 	                    </xsl:when>
+	                    <xsl:when test="@lang">
+	                        <xsl:value-of select="@lang"/>
+	                    </xsl:when>
 	                    <xsl:when test="@xml:lang">
 							<xsl:if test="@xml:lang">
 							    <xsl:if test="normalize-space(@xml:lang)">
