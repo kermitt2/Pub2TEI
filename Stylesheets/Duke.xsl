@@ -163,7 +163,9 @@
                             </xsl:for-each>
 		                </xsl:if>
                         <xsl:if test="issue/record/subjects[string-length() &gt; 0]">
-                            <xsl:apply-templates select="//record/subjects"/>
+                            <textClass>
+                                <xsl:apply-templates select="issue/record/subjects"/>
+                            </textClass>
                         </xsl:if>
                         <xsl:if test="issue/record/@lang">
                         <langUsage>
@@ -474,10 +476,12 @@
                 </sourceDesc>
                 </fileDesc>
                 <profileDesc>
-                <xsl:if test="abstract | subjects">
-                    <xsl:apply-templates select="abstract"/>
-                    <xsl:apply-templates select="subjects"/>
-                </xsl:if>
+                    <xsl:if test="abstract | subjects">
+                        <xsl:apply-templates select="abstract"/>
+                        <textClass>
+                            <xsl:apply-templates select="subjects"/>
+                        </textClass>
+                    </xsl:if>
                 </profileDesc>
             </biblFull>
         </div>
@@ -525,9 +529,9 @@
                     </orgName>
                 </xsl:if>
                 <xsl:if test="department">
-                    <institution>
+                    <orgName type="department">
                         <xsl:value-of select="department"/>
-                    </institution>
+                    </orgName>
                 </xsl:if>
                 <xsl:if test="address">
                     <address>
@@ -588,7 +592,6 @@
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="subject">
-							<textClass>
                             <xsl:variable name="mscSubjectCode">
                                 <xsl:value-of select="."/>
                             </xsl:variable>
@@ -6821,7 +6824,7 @@
 							                        </item>
 							                    </list>
 							                </keywords>
-							</textClass>
+							
 						
     </xsl:template>
 </xsl:stylesheet>

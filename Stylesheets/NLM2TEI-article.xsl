@@ -1386,9 +1386,7 @@
                                                 <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
                                             </xsl:when>
                                             <xsl:otherwise>
-                                                <body>
-                                                    <div><p></p></div>
-                                                </body>
+                                                <p/>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </div>
@@ -1535,9 +1533,11 @@
                                 <xsl:apply-templates select="bm/objects/*"/>
                                 <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
                                 <xsl:if test="//headerx/bdy">
-                                    <p>
-                                        <xsl:value-of select="//headerx/bdy"/>
-                                    </p>
+                                    <div>
+                                        <p>
+                                            <xsl:value-of select="//headerx/bdy"/>
+                                        </p>
+                                    </div>
                                 </xsl:if>
                             </xsl:when>
                             <xsl:when test="sub-article">
@@ -1950,7 +1950,7 @@
                     <xsl:apply-templates select="ancestor::article-meta/author-notes/corresp/email"/>
                 </xsl:if>
             </xsl:if>
-            <xsl:if test="//article-meta/contrib-group/aff and not(//article-meta/contrib-group/aff/@id)">
+            <xsl:if test="//article-meta/contrib-group/aff and not(//article-meta/contrib-group/aff/@id|//article-meta/contrib-group/aff/target)">
                <affiliation>
                    <xsl:if test="//article-meta/contrib-group/aff/institution">
                        <xsl:for-each select="//article-meta/contrib-group/aff/institution">
@@ -2068,7 +2068,7 @@
    <xsl:template match="author-notes/corresp">
        <xsl:if test="*[name(.) != 'addr-line' and name(.) != 'country'] except(email)">
         <affiliation role="corresp">
-            <xsl:apply-templates select="*[name(.) != 'addr-line' and name(.) != 'country'] except(email)"/>
+            <xsl:apply-templates/>
                 <xsl:choose>
                     <xsl:when test="addr-line | country">
                         <address>
@@ -2680,6 +2680,8 @@
                                 </affiliation>
                             </xsl:for-each>
                     </xsl:when>
+                </xsl:choose>
+                <xsl:choose>
                     <xsl:when test="@rid">
                         <xsl:variable name="index" select="@rid"/>
                         <xsl:apply-templates select="//aff[@id = $index]"/>
@@ -2688,6 +2690,12 @@
                         <affiliation>
                             <xsl:apply-templates select="ancestor::article-meta/descendant::aff/sup[normalize-space(.) = normalize-space($numberedIndex)]/following-sibling::text()[1]"/>
                         </affiliation>
+                    </xsl:when>
+                </xsl:choose>
+                <xsl:choose>
+                    <xsl:when test="@rid">
+                        <xsl:variable name="index" select="@rid"/>
+                        <xsl:apply-templates select="//corresp[@id = $index]"/>
                     </xsl:when>
                 </xsl:choose>
             </xsl:when>

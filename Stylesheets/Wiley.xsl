@@ -446,7 +446,7 @@
                         </body>
                     </xsl:when>
                     <xsl:otherwise>
-                        <body><div><p></p></div></body>
+                        <body><div><p/></div></body>
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:if test="body/bibliography|header/noteGroup/note|body/noteGroup/note|header/contentMeta/titleGroup/title/citation">
@@ -869,7 +869,7 @@
         <xsl:if test="orgName | orgDiv">
             <affiliation>
                 <xsl:if test="orgDiv">
-                    <orgName>
+                    <orgName type="division">
                         <xsl:value-of select="orgDiv/text()"/>
                     </orgName>
                 </xsl:if>
@@ -1036,7 +1036,7 @@
                         </xsl:if>
                         <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
                             <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv/text()">
-                                <orgName>
+                                <orgName type="division">
                                     <xsl:apply-templates select="."/>
                                 </orgName>
                             </xsl:for-each>
@@ -1109,7 +1109,7 @@
                     
                     <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
                         <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv/text()">
-                            <orgName>
+                            <orgName type="division">
                                 <xsl:apply-templates select="."/>
                             </orgName>
                         </xsl:for-each>
@@ -1195,7 +1195,7 @@
                         <xsl:text>Correspondence address: </xsl:text>
                         <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
                             <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv/text()">
-                                <orgName>
+                                <orgName type="division">
                                     <xsl:apply-templates select="."/>
                                 </orgName>
                             </xsl:for-each>
@@ -1274,7 +1274,7 @@
                     </xsl:variable>
                     <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
                         <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv/text()">
-                            <orgName>
+                            <orgName type="division">
                                 <xsl:apply-templates select="."/>
                             </orgName>
                         </xsl:for-each>
@@ -1359,7 +1359,7 @@
                         <xsl:text>Current Address: </xsl:text>
                         <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
                             <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv/text()">
-                                <orgName>
+                                <orgName type="division">
                                     <xsl:apply-templates select="."/>
                                 </orgName>
                             </xsl:for-each>
@@ -1443,7 +1443,7 @@
                     </xsl:variable>
                     <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
                         <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv/text()">
-                            <orgName>
+                            <orgName type="division">
                                 <xsl:apply-templates select="."/>
                             </orgName>
                         </xsl:for-each>
@@ -1566,7 +1566,7 @@
                 <affiliation> 
                     <xsl:if test="//affiliation/orgDiv[string-length() &gt; 0 ]">
                         <xsl:for-each select="//affiliation/orgDiv">
-                            <orgName>
+                            <orgName type="division">
                                 <xsl:apply-templates select="."/>
                             </orgName>
                         </xsl:for-each>
@@ -1649,7 +1649,7 @@
                     <affiliation>
                         <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgDiv[string-length() &gt; 0 ]">
                             <xsl:for-each select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgDiv">
-                                <orgName>
+                                <orgName type="division">
                                     <xsl:apply-templates select="."/>
                                 </orgName>
                             </xsl:for-each>
@@ -1733,7 +1733,7 @@
                     </xsl:variable>
                     <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgDiv[string-length() &gt; 0 ]">
                         <xsl:for-each select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/orgDiv/text()">
-                                <orgName>
+                            <orgName type="division">
                                     <xsl:apply-templates select="."/>
                                 </orgName>
                             </xsl:for-each>
@@ -1811,7 +1811,7 @@
             <affiliation>
                 <xsl:if test="orgDiv[string-length() &gt; 0 ]">
                     <xsl:for-each select="orgDiv">
-                        <orgName>
+                        <orgName type="division">
                         <xsl:value-of select="normalize-space(.)"/>
                         </orgName>
                     </xsl:for-each>
