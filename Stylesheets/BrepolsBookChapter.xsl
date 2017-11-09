@@ -148,7 +148,7 @@
                 <xsl:if test="//body/book-part/book-part-meta/abstract |$docIssue//subj-group/subject">
                     <profileDesc>
                         <xsl:apply-templates select="//body/book-part/book-part-meta/abstract"/>
-                        <textClass>
+                        <textClass ana="subject">
                             <xsl:apply-templates select="$docIssue//book-categories/subj-group"/>
                         </textClass>
                         <xsl:if test="//body/book-part/@xml:lang[string-length()&gt; 0]">

@@ -133,7 +133,7 @@
                                 <xsl:apply-templates
                                     select="Journal/Volume/Issue/Article/ArticleHeader/AbbreviationGroup"
                                 />
-                                <textClass>
+                                <textClass ana="subject">
                                 <xsl:apply-templates
                                     select="Journal/JournalInfo/JournalSubjectGroup"
                                 />
@@ -160,7 +160,7 @@
 			                                select="Journal/Volume/Issue/Article/ArticleHeader/Abstract"/>
 			                        </xsl:otherwise>
 			                    </xsl:choose>
-                                <textClass>
+                                <textClass ana="subject">
                                     <xsl:apply-templates
                                         select="Journal/JournalInfo/JournalSubjectGroup"
                                     />

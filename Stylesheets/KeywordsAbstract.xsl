@@ -31,7 +31,7 @@
     </xsl:template>
     
     <xsl:template match="AbbreviationGroup">
-        <textClass>
+        <textClass ana="abbreviation">
             <keywords scheme="abbreviations">
                <list>
                   <xsl:apply-templates/>

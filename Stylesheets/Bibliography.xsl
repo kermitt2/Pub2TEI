@@ -280,16 +280,27 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="citation |mixed-citation">
-                    <bibl type="article">
+                    <bibl type="{citation/@publication-type
+                        |citation/@citation-type
+                        |nlm-citation/@publication-type
+                        |nlm-citation/@citation-type
+                        |mixed-citation/@publication-type
+                        |mixed-citation/@citation-type}">
                         <xsl:choose>
                             <xsl:when test="citation/@id|mixed-citation/@id">
                                 <xsl:attribute name="xml:id">
                                     <xsl:value-of select="citation/@id|mixed-citation/@id"/>
                                 </xsl:attribute>
                             </xsl:when>
+                            <xsl:when test="@id">
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="@id"/>
+                                </xsl:attribute>
+                            </xsl:when>
                         </xsl:choose>
                         <xsl:apply-templates select="citation"/>
                         <xsl:apply-templates select="mixed-citation"/>
+                        <xsl:apply-templates select="nlm-citation"/>
                     </bibl>
                 </xsl:if>
             </xsl:otherwise>
@@ -342,23 +353,25 @@
 
     <xsl:template match="name" mode="editors">
         <editor>
-            <xsl:attribute name="xml:id">
-                <xsl:variable name="i" select="position()-1"/>
-                <xsl:choose>
-                    <xsl:when test="$i &lt; 10">
-                        <xsl:value-of select="concat('editor-000', $i)"/>
-                    </xsl:when>
-                    <xsl:when test="$i &lt; 100">
-                        <xsl:value-of select="concat('editor-00', $i)"/>
-                    </xsl:when>
-                    <xsl:when test="$i &lt; 1000">
-                        <xsl:value-of select="concat('editor-0', $i)"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="concat('editor-', $i)"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
+            <xsl:if test="not(ancestor::ref)">
+                <xsl:attribute name="xml:id">
+                    <xsl:variable name="i" select="position()-1"/>
+                    <xsl:choose>
+                        <xsl:when test="$i &lt; 10">
+                            <xsl:value-of select="concat('editor-000', $i)"/>
+                        </xsl:when>
+                        <xsl:when test="$i &lt; 100">
+                            <xsl:value-of select="concat('editor-00', $i)"/>
+                        </xsl:when>
+                        <xsl:when test="$i &lt; 1000">
+                            <xsl:value-of select="concat('editor-0', $i)"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="concat('editor-', $i)"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates select="."/>
         </editor>
     </xsl:template>

@@ -1088,17 +1088,17 @@
                         </xsl:if>
                         <!-- SG NLM subject -->
                         <xsl:if test="front/article-meta/article-categories/subj-group/subject">
-                            <textClass>
+                            <textClass ana="subject">
                                 <xsl:apply-templates select="front/article-meta/article-categories/subj-group"/>
                             </textClass>
                         </xsl:if>
                         <xsl:if test="pubfm/subject">
-                            <textClass>
+                            <textClass ana="subject">
                                 <xsl:apply-templates select="pubfm/subject"/>
                             </textClass>
                         </xsl:if>
                         <xsl:if test="suppfm/subject">
-                            <textClass>
+                            <textClass ana="subject">
                                 <xsl:apply-templates select="suppfm/subject"/>
                             </textClass>
                         </xsl:if>
@@ -1504,12 +1504,12 @@
                             </xsl:if>
                             <!-- SG NLM subject -->
                             <xsl:if test="pubfm/subject">
-                                <textClass>
+                                <textClass ana="subject">
                                     <xsl:apply-templates select="pubfm/subject"/>
                                 </textClass>
                             </xsl:if>
                             <xsl:if test="suppfm/subject">
-                                <textClass>
+                                <textClass ana="subject">
                                     <xsl:apply-templates select="suppfm/subject"/>
                                 </textClass>
                             </xsl:if>
@@ -1929,7 +1929,7 @@
                     </xsl:otherwise>
                 </xsl:choose> 
             </xsl:variable>
-            <xsl:if test="not(ancestor::sub-article)">
+            <xsl:if test="not(ancestor::sub-article) or not(ancestor::ref)">
             <xsl:attribute name="xml:id">
                 <xsl:value-of select="$authorNumber"/>
             </xsl:attribute>

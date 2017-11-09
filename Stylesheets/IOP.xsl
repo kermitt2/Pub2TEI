@@ -782,7 +782,7 @@
          (car cet elt recouvre bien tous les 
          contenus possibles de <classifications>) -->
     <xsl:template match="classifications">
-        <textClass>
+        <textClass ana="classification">
             <xsl:apply-templates/>
         </textClass>
     </xsl:template>

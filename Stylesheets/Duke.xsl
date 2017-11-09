@@ -163,7 +163,7 @@
                             </xsl:for-each>
 		                </xsl:if>
                         <xsl:if test="issue/record/subjects[string-length() &gt; 0]">
-                            <textClass>
+                            <textClass ana="subject">
                                 <xsl:apply-templates select="issue/record/subjects"/>
                             </textClass>
                         </xsl:if>

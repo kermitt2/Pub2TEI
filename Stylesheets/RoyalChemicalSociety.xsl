@@ -19,12 +19,18 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-                            <!--<xsl:apply-templates select="art-front/titlegrp/title"/>-->
-                        <xsl:for-each select="//art-body/news-section/news-article/art-front/titlegrp/title">
-                            <title level="a" type="main">
-                                <xsl:value-of select="p"/>
-                            </title>
-                        </xsl:for-each>
+                        <xsl:choose>
+                            <xsl:when test="//art-body/news-section/news-article/art-front/titlegrp/title">
+                                <xsl:for-each select="//art-body/news-section/news-article/art-front/titlegrp/title">
+                                    <title level="a" type="main">
+                                        <xsl:value-of select="p"/>
+                                    </title>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:apply-templates select="art-front/titlegrp/title"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </titleStmt>
                     <publicationStmt>
                         <authority>ISTEX</authority>
@@ -47,9 +53,11 @@
                         </xsl:if>
                         <date type="published">
                             <xsl:attribute name="when">
-                                <xsl:value-of select="//article/published[@type='subsyear']/pubfront/date/year"/>
+                                <xsl:value-of select="//article/published[@type='subsyear']/pubfront/date/year
+                                    |//article/published[@type='book']/pubfront/date/year"/>
                             </xsl:attribute>
-                            <xsl:value-of select="//article/published[@type='subsyear']/pubfront/date/year"/>
+                            <xsl:value-of select="//article/published[@type='subsyear']/pubfront/date/year
+                                |//article/published[@type='book']/pubfront/date/year"/>
                         </date>
                     </publicationStmt>
                     <sourceDesc>
@@ -144,12 +152,18 @@
 
             <analytic>
                 <!-- Title information related to the paper goes here -->
-                <!--<xsl:apply-templates select="//art-front/titlegrp/*"/>-->
-                <xsl:for-each select="//art-body/news-section/news-article/art-front/titlegrp/title">
-                    <title level="a" type="main">
-                        <xsl:value-of select="p"/>
-                    </title>
-                </xsl:for-each>
+                <xsl:choose>
+                    <xsl:when test="//art-body/news-section/news-article/art-front/titlegrp/title">
+                        <xsl:for-each select="//art-body/news-section/news-article/art-front/titlegrp/title">
+                            <title level="a" type="main">
+                                <xsl:value-of select="p"/>
+                            </title>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="art-front/titlegrp/title"/>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="//art-front/authgrp/author"/>
                 <xsl:apply-templates select="art-admin/doi"/>
@@ -233,11 +247,11 @@
                             <xsl:apply-templates select="."/>
                         </xsl:if>
                     </xsl:for-each>
-                    <xsl:apply-templates select="published[@type='subsyear']/volumeref"/>
-                    <xsl:apply-templates select="published[@type='subsyear']/issueref"/>
-                    <xsl:apply-templates select="published[@type='print']/pubfront/fpage"/>
-                    <xsl:apply-templates select="published[@type='print']/pubfront/lpage"/>
-                    <xsl:apply-templates select="published[@type='subsyear']/publisher/orgname/nameelt"/>
+                    <xsl:apply-templates select="published[@type='subsyear']/volumeref |published[@type='book']/volumeref"/>
+                    <xsl:apply-templates select="published[@type='subsyear']/issueref | published[@type='book']/issueref"/>
+                    <xsl:apply-templates select="published[@type='print']/pubfront/fpage |published[@type='book']/pubfront/fpage"/>
+                    <xsl:apply-templates select="published[@type='print']/pubfront/lpage |published[@type='book']/pubfront/lpage"/>
+                    <xsl:apply-templates select="published[@type='subsyear']/publisher/orgname/nameelt | published[@type='book']/publisher/orgname/nameelt"/>
                 </imprint>
             </monogr>
         </biblStruct>

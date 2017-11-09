@@ -151,9 +151,9 @@
                     <xsl:apply-templates select="//Book/descendant::Chapter/ChapterHeader/Abstract"/>
                     <xsl:apply-templates select="//Book/descendant::Chapter/ChapterHeader/AbbreviationGroup"/>
                     <xsl:apply-templates select="//Book/descendant::Chapter/ChapterHeader/KeywordGroup"/>
-                    <textClass>
+                    <textClass ana="subject">
                         <xsl:apply-templates select="//Book/descendant::SubjectCollection"/></textClass>
-                    <textClass><xsl:apply-templates select="//Book/descendant::BookSubjectGroup"/></textClass>
+                    <textClass ana="subject"><xsl:apply-templates select="//Book/descendant::BookSubjectGroup"/></textClass>
                 <xsl:if test="//Chapter/@Language">
                     <langUsage>
                         <language>

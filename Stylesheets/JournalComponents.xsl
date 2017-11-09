@@ -2385,6 +2385,24 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    <xsl:template match="cd">
+        <xsl:choose>
+            <xsl:when test="ancestor::p/citation | ancestor::p/mixed-citation |ancestor::p">
+                <bibl>
+                    <date when="{.}">
+                        <xsl:apply-templates/>
+                    </date>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:if test="normalize-space(.)">
+                    <date when="{.}">
+                        <xsl:apply-templates/>
+                    </date>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
     <!-- 2 special rules for Springer that provides, beginning and end volume number -->
 
