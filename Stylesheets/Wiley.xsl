@@ -200,7 +200,14 @@
                                                             <xsl:value-of select="//publicationMeta[@level='unit']/titleGroup/title[@type='articleCategory']"/>
                                                             <xsl:text> - </xsl:text>
                                                         </xsl:if>
-                                                        <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='main']/citation[@type='book']/bookTitle)"/>
+                                                        <xsl:choose>
+                                                            <xsl:when test="//header/contentMeta/titleGroup/title[@type='tocForm']">
+                                                                    <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='tocForm'])"/>
+                                                            </xsl:when>
+                                                            <xsl:otherwise>
+                                                                <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='main']/citation[@type='book']/bookTitle)"/>
+                                                            </xsl:otherwise>
+                                                        </xsl:choose>
                                                     </xsl:when>
                                                     <xsl:otherwise>
                                                         <xsl:apply-templates/>
@@ -696,7 +703,14 @@
 		                                        <xsl:value-of select="//publicationMeta[@level='unit']/titleGroup/title[@type='articleCategory']"/>
 		                                        <xsl:text> - </xsl:text>
 		                                    </xsl:if>
-		                                    <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='main']/citation[@type='book']/bookTitle)"/>
+		                                    <xsl:choose>
+		                                        <xsl:when test="//header/contentMeta/titleGroup/title[@type='tocForm']">
+		                                            <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='tocForm'])"/>
+		                                        </xsl:when>
+		                                        <xsl:otherwise>
+		                                            <xsl:value-of select="normalize-space(//header/contentMeta/titleGroup/title[@type='main']/citation[@type='book']/bookTitle)"/>
+		                                        </xsl:otherwise>
+		                                    </xsl:choose>
 		                                </xsl:when>
 		                                <xsl:otherwise>
 		                                    <xsl:apply-templates/>
