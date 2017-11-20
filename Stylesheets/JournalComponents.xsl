@@ -2568,6 +2568,14 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    <xsl:template match="publisher-name" mode="conf">
+        <respStmt>
+            <resp>Programme Organizer</resp>
+            <name>
+                <xsl:apply-templates/>
+            </name>
+        </respStmt>
+    </xsl:template>
 
     <xsl:template match="publisher-loc | pub_location | PublisherLocation | wiley:publisherLoc">
         <xsl:choose>

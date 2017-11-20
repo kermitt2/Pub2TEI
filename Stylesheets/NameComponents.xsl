@@ -19,7 +19,7 @@
                 </persName>
                 <xsl:choose>
                     <xsl:when test="ancestor::contrib-group/aff or ancestor::article-meta/aff and not(ancestor::contrib-group/contrib/xref)">
-                        <xsl:if test="ancestor::contrib-group/aff/email">
+                        <xsl:if test="ancestor::contrib-group/aff/email and not(ancestor::contrib-group/contrib/xref)">
                             <email><xsl:value-of select="ancestor::contrib-group/aff/email"/></email>
                         </xsl:if>
                         <xsl:for-each select="ancestor::contrib-group/aff | ancestor::article-meta/aff">
@@ -104,7 +104,7 @@
         </xsl:if>
     </xsl:template>
     
-    <xsl:template match="first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | given_name | corresponding-author-firstname | fname | fnm | wiley:givenNames">
+    <xsl:template match="fname |first_name | FirstName | ce:given-name | GivenName | per_aut/fn | given-names | given_name | corresponding-author-firstname | fname | fnm | wiley:givenNames">
         <xsl:if test="normalize-space(.)">
             <forename type="first">
                 <xsl:apply-templates/>

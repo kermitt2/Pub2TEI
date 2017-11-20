@@ -129,7 +129,7 @@
 
     <xsl:template match="Year | year | yy">
         <date type="year">
-            <xsl:apply-templates/>
+            <xsl:value-of select="translate(.,'abcdefghijklmnopqrstuvwyyz ','')"/>
         </date>
     </xsl:template>
 

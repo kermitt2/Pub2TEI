@@ -1726,6 +1726,12 @@
                         <xsl:apply-templates select="journal-meta/issn[@pub-type='isbn'] | //isbn"/>
                     </xsl:otherwise>
                 </xsl:choose>
+                <xsl:if test="//volume-id[@pub-id-type='isbn']">
+                    <idno>
+                        <xsl:attribute name="type">ISBN</xsl:attribute>
+                        <xsl:value-of select="//volume-id[@pub-id-type='isbn']"/>
+                    </idno>
+                </xsl:if>
                 <xsl:apply-templates select="//conference"/>
                 <imprint>
                     <!-- suppfm/parent/cpg/cpn |pubfm/cpg/cpn -->
@@ -2169,6 +2175,12 @@
                                         |named-content[@content-type='postcode']
                                         |named-content[@content-type='city']">
                                         <xsl:for-each select="addr-line">
+                                            <xsl:choose>
+                                                <xsl:when test="institution
+                                                    |country 
+                                                    |named-content[@content-type='postbox']
+                                                    |named-content[@content-type='postcode']
+                                                    |named-content[@content-type='city']">
                                             <xsl:if test="institution">
                                                 <xsl:for-each select="institution">
                                                     <orgName type="institution">
@@ -2208,6 +2220,15 @@
                                                     </xsl:for-each>
                                                 </address>
                                             </xsl:if>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <address>
+                                                        <addrLine>
+                                                        <xsl:apply-templates/>
+                                                        </addrLine>
+                                                    </address>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
                                         </xsl:for-each>
                                     </xsl:if>
                                 </xsl:when>
@@ -2839,10 +2860,27 @@
                     <xsl:apply-templates/>
                 </title>
             </xsl:when>
+            <xsl:when test="ancestor::citgroup">
+                <title level="m" type="main">
+                    <xsl:apply-templates/>
+                </title>
+            </xsl:when>
             <xsl:otherwise>
                 <head>
                     <xsl:apply-templates/>
                 </head>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="it">
+        <xsl:choose>
+            <xsl:when test="ancestor::citgroup">
+                <title>
+                    <xsl:apply-templates/>
+                </title>
+            </xsl:when>
+            <xsl:otherwise>
+                <hi rend="italic"><xsl:apply-templates/></hi>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -3057,7 +3095,7 @@
     <xsl:template match="conf-name">
         <xsl:choose>
             <xsl:when test="ancestor::ref">
-                <title level="a" type="main">
+                <title level="m">
                     <xsl:apply-templates/>
                 </title>
             </xsl:when>
@@ -3074,9 +3112,9 @@
         </date>
     </xsl:template>
     <xsl:template match="conf-loc">
-        <placeName>
+        <pubPlace>
             <xsl:apply-templates/>
-        </placeName>
+        </pubPlace>
     </xsl:template>
     <xsl:template match="conf-sponsor">
         <orgName>

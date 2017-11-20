@@ -19,10 +19,31 @@
         <textClass>
             <keywords>
                 <!-- langue parfois non présente -->
-                <xsl:if test="@xml:lang">
-                    <xsl:attribute name="xml:lang">
-                        <xsl:apply-templates select="@xml:lang"/>
-                    </xsl:attribute>
+                <xsl:variable name="theLanguage">
+                    <xsl:choose>
+                        <xsl:when test="@Language">
+                            <xsl:value-of select="@Language"/>
+                        </xsl:when>
+                        <xsl:when test="@lang">
+                            <xsl:value-of select="@lang"/>
+                        </xsl:when>
+                        <xsl:when test="@xml:lang">
+                            <xsl:if test="@xml:lang">
+                                <xsl:if test="normalize-space(@xml:lang)">
+                                    <xsl:value-of select="normalize-space(@xml:lang)"/>
+                                </xsl:if>
+                            </xsl:if>	
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable> 
+                <xsl:if test="$theLanguage">
+                    <xsl:if test="$theLanguage != ''">
+                        <xsl:attribute name="xml:lang">
+                            <xsl:call-template name="Varia2ISO639">
+                                <xsl:with-param name="code" select="$theLanguage"/>
+                            </xsl:call-template>
+                        </xsl:attribute>
+                    </xsl:if>
                 </xsl:if>
                 <!-- PL: can we sometime grab a @scheme here? -->
                 <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>

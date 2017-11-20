@@ -664,7 +664,7 @@
     <!-- Springer: Emphasis[@Type='Italic'], Emphasis[@Type='Bold'], Subscript, Superscript -->
 
     <xsl:template
-        match="i | it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i">
+        match="i  | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i">
         <xsl:if test="normalize-space(.)"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 

@@ -129,9 +129,21 @@
     <!-- Journal paper in RCS -->
 
     <xsl:template match="citgroup">
+        <xsl:if test="journalcit">
         <xsl:call-template name="createArticle">
             <xsl:with-param name="entry" select="journalcit"/>
         </xsl:call-template>
+        </xsl:if>
+        <xsl:if test="citation[@type='book']">
+        <xsl:call-template name="createBook">
+            <xsl:with-param name="entry" select="citation[@type='book']"/>
+        </xsl:call-template>
+        </xsl:if>
+        <xsl:if test="citation[@type='other']">
+            <xsl:call-template name="createOther">
+                <xsl:with-param name="entry" select="citation[@type='other']"/>
+            </xsl:call-template>
+        </xsl:if>
     </xsl:template>
 
 
@@ -162,12 +174,14 @@
                    <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
                        <note type="content"><xsl:value-of select="normalize-space(.)"/></note>
                        <imprint>
-                    <xsl:apply-templates select="$entry/year"/>
-                    <xsl:apply-templates select="$entry/volume | $entry/volumeno"/>
-                    <xsl:apply-templates select="$entry/issue"/>
-                    <xsl:apply-templates select="$entry/descendant::fpage"/>
-                    <xsl:apply-templates select="$entry/descendant::lpage"/>
-                </imprint>
+                           <xsl:apply-templates select="$entry/citpub"/>
+                           <xsl:apply-templates select="$entry/pubplace"/>
+                           <xsl:apply-templates select="$entry/year"/>
+                           <xsl:apply-templates select="$entry/volume | $entry/volumeno"/>
+                           <xsl:apply-templates select="$entry/issue"/>
+                           <xsl:apply-templates select="$entry/descendant::fpage"/>
+                           <xsl:apply-templates select="$entry/descendant::lpage"/>
+                       </imprint>
                    </xsl:when>
                    <xsl:otherwise>
                        <imprint>
@@ -179,11 +193,78 @@
             <xsl:apply-templates select="nlm-citation/pub-id"/>
         </biblStruct>
     </xsl:template>
+    
+    <xsl:template name="createOther">
+        <xsl:param name="entry"/>
+        <xsl:choose>
+            <xsl:when test="$entry/source">
+                <biblStruct type="other">
+                    <xsl:attribute name="xml:id">
+                        <xsl:apply-templates select="$entry/@id | @id"/>
+                    </xsl:attribute>
+                    <xsl:if test="$entry/article-title">
+                        <analytic>
+                            <!-- Title information related to the paper goes here -->
+                            <xsl:apply-templates select="$entry/article-title"/>
+                            <!-- All authors are included here -->
+                            <xsl:apply-templates select="$entry/person-group | $entry/citauth | $entry/name"/>
+                            <xsl:apply-templates select="$entry/object-id"/>
+                        </analytic>
+                    </xsl:if>
+                    <monogr>
+                        <xsl:apply-templates select="$entry/source | $entry/title"/>
+                        <xsl:if test="not($entry/article-title)">
+                            <xsl:apply-templates select="$entry/person-group"/>
+                        </xsl:if>
+                        <xsl:apply-templates select="$entry/citauth | $entry/name"/>
+                        <xsl:apply-templates select="$entry/comment"/>
+                        <xsl:apply-templates select="$entry/conference"/>
+                        <xsl:choose>
+                            <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
+                                <note type="content"><xsl:value-of select="normalize-space(.)"/></note>
+                                <imprint>
+                                    <xsl:apply-templates select="$entry/citpub"/>
+                                    <xsl:apply-templates select="$entry/pubplace"/>
+                                    <xsl:apply-templates select="$entry/year"/>
+                                    <xsl:apply-templates select="$entry/volume | $entry/volumeno"/>
+                                    <xsl:apply-templates select="$entry/issue"/>
+                                    <xsl:apply-templates select="$entry/descendant::fpage"/>
+                                    <xsl:apply-templates select="$entry/descendant::lpage"/>
+                                </imprint>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <imprint>
+                                    <date/>
+                                </imprint>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </monogr>
+                    <xsl:apply-templates select="nlm-citation/pub-id"/>
+                </biblStruct>
+            </xsl:when>
+            <xsl:otherwise>
+                <bibl type="other">
+                    <xsl:attribute name="xml:id">
+                        <xsl:apply-templates select="$entry/@id | @id"/>
+                    </xsl:attribute>
+                    <xsl:apply-templates/>
+                </bibl>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
     <!-- Reference to a journal article (3.0 style) -->
     <xsl:template match="ref[element-citation/@publication-type='journal']">
         <xsl:call-template name="createArticle">
             <xsl:with-param name="entry" select="*[@publication-type='journal']"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <!-- Reference to a journal article (3.0 style) -->
+    <xsl:template match="ref[element-citation/@citation-type='other'] 
+        |ref[nlm-citation/@citation-type='other']">
+        <xsl:call-template name="createOther">
+            <xsl:with-param name="entry" select="*[@citation-type='other']"/>
         </xsl:call-template>
     </xsl:template>
 
@@ -202,13 +283,17 @@
             <analytic>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="$entry/person-group"/>
+                <xsl:apply-templates select="$entry/collab" mode="editors"/>
                 <!-- Title information related to the paper goes here -->
                 <xsl:apply-templates select="$entry/article-title"/>
             </analytic>
             <monogr>
                 <xsl:apply-templates select="$entry/source"/>
                 <xsl:apply-templates select="$entry/conf-name"/>
+                <xsl:apply-templates select="$entry/publisher-name" mode="conf"/>
                 <imprint>
+                    <xsl:apply-templates select="$entry/publisher-name"/>
+                    <xsl:apply-templates select="$entry/conf-loc"/>
                     <xsl:apply-templates select="$entry/year"/>
                     <xsl:apply-templates select="$entry/volume"/>
                     <xsl:apply-templates select="$entry/issue"/>
@@ -251,16 +336,20 @@
             </xsl:attribute>
             <monogr>
                 <!-- Title information related to the paper goes here -->
-                <xsl:apply-templates select="$entry/article-title"/> 
                 <xsl:apply-templates select="$entry/source"/>
+                <xsl:apply-templates select="$entry/article-title"/>
                 <xsl:apply-templates select="$entry/uri" mode="citation"/>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="$entry/person-group"/>
                 <xsl:apply-templates select="$entry/name"/>
+                <xsl:apply-templates select="$entry/citauth | $entry/name"/>
+                <xsl:apply-templates select="$entry/editor"/>
                 <imprint>
                     <xsl:apply-templates select="$entry/year"/>
                     <xsl:apply-templates select="$entry/publisher-loc"/>
                     <xsl:apply-templates select="$entry/publisher-name"/>
+                    <xsl:apply-templates select="$entry/citpub"/>
+                    <xsl:apply-templates select="$entry/pubplace"/>
                     <xsl:apply-templates select="$entry/fpage"/>
                     <xsl:apply-templates select="$entry/lpage"/>
                     <xsl:apply-templates select="$entry/edition"/>
@@ -270,6 +359,16 @@
         </biblStruct>
     </xsl:template>
 
+<xsl:template match="citpub">
+    <publisher>
+        <xsl:apply-templates/>
+    </publisher>
+</xsl:template>
+    <xsl:template match="pubplace">
+        <pubPlace>
+            <xsl:apply-templates/>
+        </pubPlace>
+    </xsl:template>
     <!-- Unspecified reference (old style) -->
     <xsl:template match="ref">
         <xsl:choose>
@@ -380,6 +479,7 @@
     </xsl:template>
     <xsl:template match="editor">
         <editor>
+            <xsl:if test="not(ancestor::citation)">
             <xsl:attribute name="xml:id">
                 <xsl:variable name="i" select="position()-1"/>
                 <xsl:choose>
@@ -397,6 +497,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </editor>
     </xsl:template>
@@ -427,6 +528,13 @@
             </name>
         </author>
     </xsl:template>
+    <xsl:template match="collab" mode="editors">
+        <editor>
+            <name>
+                <xsl:value-of select="."/>
+            </name>
+        </editor>
+    </xsl:template>
 
     <xsl:template match="citauth | wiley:author">
         <xsl:choose>
@@ -440,6 +548,7 @@
                     <persName>
                         <xsl:apply-templates select="surname"/>
                         <xsl:apply-templates select="given-names"/>
+                        <xsl:apply-templates select="fname"/>
                         <xsl:apply-templates select="wiley:givenNames"/>
                         <xsl:apply-templates select="wiley:familyName"/>
                     </persName>
@@ -488,7 +597,7 @@
             <xsl:attribute name="level">
                 <xsl:choose>
                     <xsl:when test="ancestor::citation/@citation-type='journal' or ancestor::mixed-citation/@publication-type='journal'">j</xsl:when>
-                    <xsl:when test="ancestor::citation/@citation-type='book'or ancestor::mixed-citation/@publication-type='journal'">m</xsl:when>
+                    <xsl:when test="ancestor::citation/@citation-type='book' or ancestor::nlm-citation/@citation-type='book'or ancestor::mixed-citation/@publication-type='journal'">m</xsl:when>
                     <xsl:otherwise>j</xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>

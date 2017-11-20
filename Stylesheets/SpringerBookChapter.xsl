@@ -168,11 +168,16 @@
             <text>
                 <body>
                     <div>
-                        <xsl:if test="string-length($rawfulltextpath) &gt; 0">
-                            <p>
-                                <xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/>
-                            </p>
-                        </xsl:if>
+                        <xsl:choose>
+                            <xsl:when test="string-length($rawfulltextpath) &gt; 0">
+                                <p>
+                                    <xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/>
+                                </p>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <p/>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </div>
                 </body>
             </text>
