@@ -74,9 +74,9 @@
         </term>
     </xsl:template>
     <xsl:template match="Description">
-        <term>
+        <desc>
             <xsl:apply-templates></xsl:apply-templates>
-        </term>
+        </desc>
     </xsl:template>
 
     <!-- SG - ajout subject NLM/Nature -->

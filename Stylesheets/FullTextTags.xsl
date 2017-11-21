@@ -368,26 +368,45 @@
     <!-- Specific rule for Springer's Inline equation -->
 
     <xsl:template match="InlineEquation | Equation">
-        <formula>
-            <xsl:if test="@ID">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@ID"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="EquationSource/@Format">
-                <xsl:attribute name="notation">
-                    <xsl:value-of select="EquationSource/@Format"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:value-of select="EquationSource"/>
-        </formula>
+        <xsl:choose>
+            <xsl:when test="ancestor::Description">
+                <objectType>
+                    <xsl:if test="EquationNumber">
+                        <xsl:attribute name="n">
+                            <xsl:value-of select="EquationNumber"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </objectType>
+            </xsl:when>
+            <xsl:otherwise>
+                <formula>
+                    <xsl:if test="@ID">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@ID"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="EquationSource/@Format">
+                        <xsl:attribute name="notation">
+                            <xsl:value-of select="EquationSource/@Format"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="EquationNumber">
+                        <xsl:attribute name="n">
+                            <xsl:value-of select="EquationNumber"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </formula>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- Specific rile for Elsevier inline pathematical objects -->
 
     <!-- 2017-04-03: Vérifier le traitement des éléments de XMLLatex -->
     <xsl:template match="els:math | math">
-        <formula notation="XMLLatex">
+        <formula notation="MathML">
             <xsl:copy exclude-result-prefixes="#all">
                 <xsl:apply-templates/>
             </xsl:copy>

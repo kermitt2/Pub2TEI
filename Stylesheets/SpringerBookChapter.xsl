@@ -99,6 +99,7 @@
                                     <xsl:attribute name="type">conference</xsl:attribute>
                                     <xsl:attribute name="source">proceedings</xsl:attribute>
                                     <xsl:attribute name="scheme">https://content-type.data.istex.fr/ark:/67375/XTP-BFHXPBJJ-3</xsl:attribute>
+                                <xsl:text>conference</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:otherwise>
@@ -122,6 +123,7 @@
                                             <xsl:attribute name="subtype">chapter</xsl:attribute>
                                             <xsl:attribute name="source">chapter</xsl:attribute>
                                             <xsl:attribute name="scheme">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:attribute>
+                                            <xsl:text>chapter</xsl:text>
                                         </note>
                                     </xsl:otherwise>
                                 </xsl:choose>
@@ -220,6 +222,7 @@
                 <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterID"/>
                 <xsl:apply-templates select="Book/BookHeader/AuthorGroup/Author"/>
                 <xsl:apply-templates select="Book/BookHeader/EditorGroup/Editor"/>
+                <xsl:apply-templates select="Book/BookInfo/ConferenceInfo"/>
                 <imprint>
                     <xsl:apply-templates select="Book/BookInfo/BookVolumeNumber"/>
                     <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterFirstPage"/>

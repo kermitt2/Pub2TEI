@@ -375,6 +375,13 @@
             </orgName>
         </xsl:if>
     </xsl:template>
+    <xsl:template match="OrgID">
+        <xsl:if test="normalize-space(.)">
+            <idno type="{@Type}" subtype="{@Level}">
+                <xsl:apply-templates/>
+            </idno>
+        </xsl:if>
+    </xsl:template>
 
 
 </xsl:stylesheet>

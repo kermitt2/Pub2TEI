@@ -64,6 +64,9 @@
                     </titleStmt>
                     <publicationStmt>
                         <authority>ISTEX</authority>
+                        <!-- publisher -->
+                        <xsl:apply-templates select="//PublisherName"/>
+                        <xsl:apply-templates select="//PublisherLocation"/>
                         <xsl:choose>
                             <xsl:when test="Journal/JournalOnlineFirst">
                                 <xsl:apply-templates
@@ -172,7 +175,21 @@
                                 <xsl:apply-templates
                                     select="Journal/Volume/Issue/Article/ArticleHeader/KeywordGroup"
                                 />
-                                
+                                <!-- Language -->
+                                <xsl:if test="//ArticleInfo/@Language">
+                                    <langUsage>
+                                        <language>
+                                            <xsl:attribute name="ident">
+                                                <xsl:choose>
+                                                    <xsl:when test="//ArticleDOI='10.1007/BF02584710'">PT</xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:value-of select="translate(//ArticleInfo/@Language,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:attribute>
+                                        </language>
+                                    </langUsage>
+                                </xsl:if>
                             </profileDesc>
                         </xsl:if>
                         <xsl:if test="Journal/Volume/Issue/Article/ArticleInfo/ArticleHistory">

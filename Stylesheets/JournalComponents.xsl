@@ -2622,5 +2622,64 @@
 			</xsl:attribute>
         </date>
     </xsl:template>
-	
+	<!-- conference -->
+    <xsl:template match="ConferenceInfo">
+        <meeting>
+            <xsl:apply-templates select="ConfSeriesName"/>
+            <xsl:apply-templates select="ConfEventAbbreviation"/>
+            <xsl:apply-templates select="ConfNumber"/>
+            <xsl:apply-templates select="ConfSeriesID"/>
+            <xsl:apply-templates select="ConfEventID"/>
+            <xsl:apply-templates select="ConfEventLocation"/>
+            <xsl:if test="ConfEventDateStart |ConfEventDateEnd">
+                <date>
+                    <xsl:attribute name="from">
+                        <xsl:apply-templates select="ConfEventDateStart"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="to">
+                        <xsl:apply-templates select="ConfEventDateEnd"/>
+                    </xsl:attribute>
+                </date>
+            </xsl:if>
+        </meeting>
+    </xsl:template>
+    <xsl:template match="ConfSeriesName">
+        <title type="name">
+            <xsl:apply-templates/>
+        </title>
+    </xsl:template>
+    <xsl:template match="ConfEventAbbreviation">
+        <title type="abbr">
+            <xsl:apply-templates/>
+        </title>
+    </xsl:template>
+    <xsl:template match="ConfNumber">
+        <idno type="conf-number">
+            <xsl:apply-templates/>
+        </idno>
+    </xsl:template>
+    <xsl:template match="ConfEventID">
+        <idno type="conf-ID">
+            <xsl:apply-templates/>
+        </idno>
+    </xsl:template>
+    <xsl:template match="ConfSeriesID">
+        <idno type="{@Type}">
+            <xsl:apply-templates/>
+        </idno>
+    </xsl:template>
+    <xsl:template match="ConfEventLocation">
+        <xsl:if test="City">
+            <settlement><xsl:value-of select="City"/></settlement>
+        </xsl:if>
+        <xsl:if test="Country">
+            <country><xsl:value-of select="Country"/></country>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="ConfEventDateStart">
+        <xsl:value-of select="concat(Year,(format-number(Month,'00')),(format-number(Day,'00')))"/>
+    </xsl:template>
+    <xsl:template match="ConfEventDateEnd">
+        <xsl:value-of select="concat(Year,(format-number(Month,'00')),(format-number(Day,'00')))"/>
+    </xsl:template>
 </xsl:stylesheet>

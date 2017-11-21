@@ -474,13 +474,20 @@
         </figure>
     </xsl:template>
 
-    <xsl:template match="ImageObject">
+   <!-- <xsl:template match="ImageObject">
         <graphic>
             <xsl:attribute name="url">
-                <xsl:value-of select="@FileRef"/>
+                <xsl:choose>
+                    <xsl:when test="@FileRef">
+                        <xsl:value-of select="@FileRef"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="."/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:attribute>
         </graphic>
-    </xsl:template>
+    </xsl:template>-->
 
     <xsl:template match="CaptionNumber">
         <head>
@@ -493,7 +500,12 @@
     </xsl:template>
 
     <xsl:template match="MediaObject">
-        <xsl:apply-templates/>
+        <media mimeType="image" url="{ImageObject}"/>
+        
+    </xsl:template>
+    
+    <xsl:template match="EquationSource">
+                    <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="Caption">
@@ -613,6 +625,10 @@
 
     <xsl:template match="Stack">
         <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="InlineMediaObject">
+        <media mimeType="image" url="{ImageObject}"/>
     </xsl:template>
     
     <xsl:template match="VolumeInfo">
