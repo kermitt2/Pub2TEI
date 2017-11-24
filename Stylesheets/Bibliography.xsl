@@ -502,9 +502,11 @@
         </editor>
     </xsl:template>
     <xsl:template match="role">
-        <roleName>
-            <xsl:apply-templates/>
-        </roleName>
+        <xsl:if test="ancestor::contrib">
+            <roleName>
+                <xsl:apply-templates/>
+            </roleName>
+        </xsl:if>
     </xsl:template>
   
     <xsl:template match="ed">

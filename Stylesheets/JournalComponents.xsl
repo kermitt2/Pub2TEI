@@ -1879,7 +1879,7 @@
                         </xsl:choose>
                     </xsl:attribute>
                 </xsl:if>
-                <xsl:apply-templates/>
+                <xsl:apply-templates select="trans-title"/>
             </title>
         </xsl:if>
     </xsl:template>

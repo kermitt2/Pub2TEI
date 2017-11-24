@@ -22,6 +22,11 @@
                         <xsl:if test="ancestor::contrib-group/aff/email and not(ancestor::contrib-group/contrib/xref)">
                             <email><xsl:value-of select="ancestor::contrib-group/aff/email"/></email>
                         </xsl:if>
+                        <xsl:if test="//author-notes/fn[@id=current()/ancestor::contrib-group/aff/xref/@rid]">
+                            <email>
+                                <xsl:value-of select="normalize-space(//author-notes/fn[@id=current()/ancestor::contrib-group/aff/xref/@rid])"/>
+                            </email>
+                        </xsl:if>
                         <xsl:for-each select="ancestor::contrib-group/aff | ancestor::article-meta/aff">
                             <xsl:if test="not(contains(@id,'cor'))">
                                 <xsl:if test="not(break) and not(ancestor::contrib-group/contrib/xref)">
@@ -35,9 +40,86 @@
                                                         </orgName>
                                                     </xsl:for-each>
                                                 </xsl:if>
-                                                <xsl:if test="addr-line | country">
-                                                    <address>
-                                                        <xsl:for-each select="addr-line">
+                                                <xsl:if test="addr-line 
+                                                    |country
+                                                    |named-content[@content-type='street']
+                                                    |named-content[@content-type='state']
+                                                    |named-content[@content-type='postcode']
+                                                    |named-content[@content-type='city']">
+                                                    <xsl:for-each select="addr-line">
+                                                        <xsl:choose>
+                                                            <xsl:when test="institution
+                                                                |country
+                                                                |named-content[@content-type='street']
+                                                                |named-content[@content-type='state']
+                                                                |named-content[@content-type='postbox']
+                                                                |named-content[@content-type='postcode']
+                                                                |named-content[@content-type='city']">
+                                                                <xsl:if test="institution">
+                                                                    <xsl:for-each select="institution">
+                                                                        <orgName type="institution">
+                                                                            <xsl:value-of select="."/>
+                                                                        </orgName>
+                                                                    </xsl:for-each>
+                                                                </xsl:if>
+                                                                <xsl:if test="country
+                                                                    |named-content[@content-type='street']
+                                                                    |named-content[@content-type='state']
+                                                                    |named-content[@content-type='postbox']
+                                                                    |named-content[@content-type='postcode']
+                                                                    |named-content[@content-type='city']">
+                                                                    <address>
+                                                                        <xsl:if test="named-content[@content-type='street']">
+                                                                            <street>
+                                                                                <xsl:value-of select="named-content[@content-type='street']"/>
+                                                                            </street>
+                                                                        </xsl:if>
+                                                                        <xsl:if test="named-content[@content-type='state']">
+                                                                            <state>
+                                                                                <p>
+                                                                                    <xsl:value-of select="named-content[@content-type='state']"/>
+                                                                                </p>
+                                                                            </state>
+                                                                        </xsl:if>
+                                                                        <xsl:if test="named-content[@content-type='postbox']">
+                                                                            <postBox>
+                                                                                <xsl:value-of select="named-content[@content-type='postbox']"/>
+                                                                            </postBox>
+                                                                        </xsl:if>
+                                                                        <xsl:if test="named-content[@content-type='postcode']">
+                                                                            <postCode>
+                                                                                <xsl:value-of select="named-content[@content-type='postcode']"/>
+                                                                            </postCode>
+                                                                        </xsl:if>
+                                                                        <xsl:if test="named-content[@content-type='city']">
+                                                                            <settlement>
+                                                                                <xsl:value-of select="named-content[@content-type='city']"/>
+                                                                            </settlement>
+                                                                        </xsl:if>
+                                                                        <xsl:for-each select="country">
+                                                                            <country>
+                                                                                <xsl:attribute name="key">
+                                                                                    <xsl:call-template name="normalizeISOCountry">
+                                                                                        <xsl:with-param name="country" select="."/>
+                                                                                    </xsl:call-template>
+                                                                                </xsl:attribute>
+                                                                                <xsl:value-of select="."/>
+                                                                            </country>
+                                                                        </xsl:for-each>
+                                                                    </address>
+                                                                </xsl:if>
+                                                            </xsl:when>
+                                                            <xsl:otherwise>
+                                                                <address>
+                                                                    <addrLine>
+                                                                        <xsl:apply-templates/>
+                                                                    </addrLine>
+                                                                </address>
+                                                            </xsl:otherwise>
+                                                        </xsl:choose>
+                                                    </xsl:for-each>
+                                                </xsl:if>
+                                                        <!--<xsl:for-each select="addr-line">
                                                             <addrLine>
                                                                 <xsl:value-of select="."/>
                                                             </addrLine>
@@ -51,9 +133,7 @@
                                                                 </xsl:attribute>
                                                                 <xsl:value-of select="."/>
                                                             </country>
-                                                        </xsl:for-each>
-                                                    </address>
-                                                </xsl:if>
+                                                        </xsl:for-each>-->
                                             </xsl:when>
                                             <xsl:otherwise>
                                                 <xsl:value-of select="."/>

@@ -1067,7 +1067,9 @@
                                     </xsl:if>
                                  <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
                                 <state>
+                                    <p>
                                  <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state/text()"/>   
+                                    </p>
                                 </state>
                                     </xsl:if>
                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
@@ -1140,7 +1142,9 @@
                                     </xsl:if>
                                  <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
                                 <state>
+                                    <p>
                                  <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state/text()"/>   
+                                    </p>
                                 </state>
                                     </xsl:if>
                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
@@ -1226,7 +1230,9 @@
                                 </xsl:if>
                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
                                     <state>
+                                        <p>
                                         <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state/text()"/>   
+                                        </p>
                                     </state>
                                 </xsl:if>
                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
@@ -1305,7 +1311,9 @@
                             </xsl:if>
                             <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
                                 <state>
+                                    <p>
                                     <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state/text()"/>   
+                                    </p>
                                 </state>
                             </xsl:if>
                             <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
@@ -1390,7 +1398,9 @@
                                 </xsl:if>
                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
                                     <state>
+                                        <p>
                                         <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state/text()"/>   
+                                        </p>
                                     </state>
                                 </xsl:if>
                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
@@ -1474,7 +1484,9 @@
                             </xsl:if>
                             <xsl:if test="//affiliation[@xml:id=$aff]/address/state[string-length() &gt; 0 ]">
                                 <state>
+                                    <p>
                                     <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/state/text()"/>   
+                                    </p>
                                 </state>
                             </xsl:if>
                             <xsl:if test="//affiliation[@xml:id=$aff]/address/countryPart[string-length() &gt; 0 ]">
@@ -1598,7 +1610,9 @@
                             </xsl:if>
                             <xsl:if test="//affiliation/address/state[string-length() &gt; 0 ]">
                                 <state>
+                                    <p>
                                     <xsl:apply-templates select="//affiliation/address/state/text()"/>   
+                                    </p>
                                 </state>
                             </xsl:if>
                             <xsl:if test="//affiliation/address/countryPart[string-length() &gt; 0 ]">
@@ -1681,7 +1695,9 @@
                                 </xsl:if>
                                 <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]">
                                     <state>
+                                        <p>
                                         <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state/text()"/>   
+                                        </p>
                                     </state>
                                 </xsl:if>
                                 <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]">
@@ -1764,7 +1780,9 @@
                                 </xsl:if>
                                 <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state[string-length() &gt; 0 ]">
                                     <state>
+                                        <p>
                                         <xsl:apply-templates select="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/state/text()"/>   
+                                        </p>
                                     </state>
                                 </xsl:if>
                                 <xsl:if test="//affiliation[substring-after(@xml:id,'aff-1-')=$aff]/address/countryPart[string-length() &gt; 0 ]">
@@ -1842,7 +1860,9 @@
                         </xsl:if>
                         <xsl:if test="address/state[string-length() &gt; 0 ]">
                             <state>
+                                <p>
                                 <xsl:apply-templates select="address/state/text()"/>   
+                                </p>
                             </state>
                         </xsl:if>
                         <xsl:if test="address/countryPart[string-length() &gt; 0 ]">

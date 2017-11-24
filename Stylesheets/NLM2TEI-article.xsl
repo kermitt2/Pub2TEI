@@ -2171,13 +2171,17 @@
                                         </xsl:for-each>
                                     </xsl:if>
                                     <xsl:if test="addr-line 
-                                        |country 
+                                        |country
+                                        |named-content[@content-type='street']
+                                        |named-content[@content-type='state']
                                         |named-content[@content-type='postcode']
                                         |named-content[@content-type='city']">
                                         <xsl:for-each select="addr-line">
                                             <xsl:choose>
                                                 <xsl:when test="institution
-                                                    |country 
+                                                    |country
+                                                    |named-content[@content-type='street']
+                                                    |named-content[@content-type='state']
                                                     |named-content[@content-type='postbox']
                                                     |named-content[@content-type='postcode']
                                                     |named-content[@content-type='city']">
@@ -2188,11 +2192,25 @@
                                                     </orgName>
                                                 </xsl:for-each>
                                             </xsl:if>
-                                            <xsl:if test="country 
+                                            <xsl:if test="country
+                                                |named-content[@content-type='street']
+                                                |named-content[@content-type='state']
                                                 |named-content[@content-type='postbox']
                                                 |named-content[@content-type='postcode']
                                                 |named-content[@content-type='city']">
                                                 <address>
+                                                    <xsl:if test="named-content[@content-type='street']">
+                                                        <street>
+                                                            <xsl:value-of select="named-content[@content-type='street']"/>
+                                                        </street>
+                                                    </xsl:if>
+                                                    <xsl:if test="named-content[@content-type='state']">
+                                                        <state>
+                                                            <p>
+                                                            <xsl:value-of select="named-content[@content-type='state']"/>
+                                                            </p>
+                                                        </state>
+                                                    </xsl:if>
                                                     <xsl:if test="named-content[@content-type='postbox']">
                                                         <postBox>
                                                             <xsl:value-of select="named-content[@content-type='postbox']"/>
@@ -3112,9 +3130,9 @@
         </date>
     </xsl:template>
     <xsl:template match="conf-loc">
-        <pubPlace>
+        <placeName>
             <xsl:apply-templates/>
-        </pubPlace>
+        </placeName>
     </xsl:template>
     <xsl:template match="conf-sponsor">
         <orgName>

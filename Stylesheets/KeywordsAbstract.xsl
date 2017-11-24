@@ -18,6 +18,12 @@
     <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords">
         <textClass>
             <keywords>
+                <!-- scheme -->
+                <xsl:if test="@kwd-group-type != ''">
+                    <xsl:attribute name="scheme">
+                        <xsl:value-of select="@kwd-group-type"/>
+                    </xsl:attribute>
+                </xsl:if>
                 <!-- langue parfois non présente -->
                 <xsl:variable name="theLanguage">
                     <xsl:choose>
@@ -46,7 +52,16 @@
                     </xsl:if>
                 </xsl:if>
                 <!-- PL: can we sometime grab a @scheme here? -->
-                <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
+                <xsl:choose>
+                    <xsl:when test="@kwd-group-type != ''">
+                        <list>
+                            <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
+                        </list>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </keywords>
         </textClass>
     </xsl:template>
@@ -143,7 +158,9 @@
     <!-- For NLM - EDPS -->
 
     <xsl:template match="compound-kwd">
+        <item>
         <xsl:apply-templates/>
+        </item>
     </xsl:template>
 
     <xsl:template match="compound-kwd-part[@content-type = 'code']">
