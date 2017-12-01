@@ -2,7 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" 
     xmlns:mml="http://www.w3.org/1998/Math/MathML"
-    xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+    xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
+    xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
+    xmlns:s1="http://www.elsevier.com/xml/si/dtd"
     xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
     <!-- ajout déclaration schema ODD-ISTEX -->
@@ -51,7 +53,7 @@
             <xsl:when test="article[front]">
                 <xsl:message>Converting an NLM 2.2 article</xsl:message>
             </xsl:when>
-            <xsl:when test="els:article[els:item-info] | els:converted-article[els:item-info] | converted-article[item-info]">
+            <xsl:when test="els1:article[els1:item-info] | els2:article[els2:item-info] | els1:converted-article[els1:item-info] | els2:converted-article[els2:item-info] | converted-article[item-info]">
                 <xsl:message>Converting an Elsevier article</xsl:message>
             </xsl:when>
             <xsl:when test="nihms-submit">

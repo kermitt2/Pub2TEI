@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:els="http://www.elsevier.com/xml/ja/dtd" exclude-result-prefixes="#all">
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0" xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
+    xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
+    xmlns:s1="http://www.elsevier.com/xml/si/dtd" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
@@ -15,7 +17,7 @@
     <!-- IOP: classifications/ puis comme Sage keywords/keyword
               pour l'instant directement traité dans IOP.xsl    -->
 
-    <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords | ce:keywords">
+    <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords">
         <textClass>
             <keywords>
                 <!-- scheme -->
@@ -54,6 +56,63 @@
                 <!-- PL: can we sometime grab a @scheme here? -->
                 <xsl:choose>
                     <xsl:when test="@kwd-group-type != ''">
+                        <list>
+                            <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
+                        </list>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </keywords>
+        </textClass>
+    </xsl:template>
+    <!--elsevier-->
+    <xsl:template match="ce:doctopics">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="ce:doctopic">
+        <textClass>
+            <keywords ana="subject">
+                    <xsl:apply-templates/>
+            </keywords>
+        </textClass>
+    </xsl:template>
+         <xsl:template match="ce:keywords">
+             <textClass>
+                 <xsl:if test="contains(ce:section-title,'Abbreviations')">
+                     <xsl:attribute name="ana">abbreviation</xsl:attribute>
+                 </xsl:if>
+            <keywords scheme="{@class}" xml:id="{ce:section-title/@id}">
+                <!-- langue parfois non présente -->
+                <xsl:variable name="theLanguage">
+                    <xsl:choose>
+                        <xsl:when test="@Language">
+                            <xsl:value-of select="@Language"/>
+                        </xsl:when>
+                        <xsl:when test="@lang">
+                            <xsl:value-of select="@lang"/>
+                        </xsl:when>
+                        <xsl:when test="@xml:lang">
+                            <xsl:if test="@xml:lang">
+                                <xsl:if test="normalize-space(@xml:lang)">
+                                    <xsl:value-of select="normalize-space(@xml:lang)"/>
+                                </xsl:if>
+                            </xsl:if>	
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:variable> 
+                <xsl:if test="$theLanguage">
+                    <xsl:if test="$theLanguage != ''">
+                        <xsl:attribute name="xml:lang">
+                            <xsl:call-template name="Varia2ISO639">
+                                <xsl:with-param name="code" select="$theLanguage"/>
+                            </xsl:call-template>
+                        </xsl:attribute>
+                    </xsl:if>
+                </xsl:if>
+                <xsl:choose>
+                    <xsl:when test="ce:keyword/ce:text">
                         <list>
                             <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
                         </list>
@@ -106,22 +165,52 @@
     
     <xsl:template match="JournalSubjectGroup">
         <keywords scheme="journal-subject">
-            <xsl:apply-templates select="JournalSubject"/>
+            <list>
+                <xsl:apply-templates select="JournalSubject"/>
+            </list>
             </keywords>
     </xsl:template>
     <xsl:template match="JournalSubject">
+        <item>
+            <xsl:if test="@Code">
+                <label>
+                    <xsl:apply-templates select="@Code"/>
+                </label>
+            </xsl:if>
+            <term>
+                <xsl:attribute name="type">
+                    <xsl:apply-templates select="@Type"/>
+                </xsl:attribute>
+                <xsl:if test="@Priority">
+                <xsl:attribute name="subtype">
+                    <xsl:text>priority-</xsl:text>
+                    <xsl:apply-templates select="@Priority"/>
+                </xsl:attribute>
+                </xsl:if>
+                <xsl:apply-templates/>
+            </term>
+        </item>
+    </xsl:template>
+
+    <xsl:template match="keyword | Keyword | kwd">
         <term>
-            <xsl:attribute name="type">
-                <xsl:apply-templates select="@Type"/>
-            </xsl:attribute>
             <xsl:apply-templates/>
         </term>
     </xsl:template>
-
-    <xsl:template match="keyword | Keyword | ce:keyword | kwd">
-        <term>
-            <xsl:apply-templates/>
-        </term>
+    <!--elsevier-->
+    <xsl:template match="ce:keyword">
+        <xsl:choose>
+            <xsl:when test="parent::ce:keywords">
+            <item>
+                <xsl:apply-templates/>
+            </item>
+            </xsl:when>
+        <xsl:otherwise>
+            <term>
+                <xsl:apply-templates/>
+            </term>
+        </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="SubjectCollection">
         <keywords scheme="book-subject-collection">
@@ -149,6 +238,12 @@
                 <xsl:attribute name="type">
                     <xsl:apply-templates select="@Type"/>
                 </xsl:attribute>
+                <xsl:if test="@Priority">
+                    <xsl:attribute name="subtype">
+                        <xsl:text>priority-</xsl:text>
+                        <xsl:apply-templates select="@Priority"/>
+                    </xsl:attribute>
+                </xsl:if>
                 <xsl:apply-templates/>
             </term>
         </item>
@@ -192,7 +287,7 @@
     <!-- PL: removed, Elsevier abstracts are processed in Elsevier.xsl -->
     <!-- Springer: Abstract, Heading, Para -->
 	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
-    <xsl:template match="abstract |trans-abstract | Abstract | els:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm">
+    <xsl:template match="abstract |trans-abstract | Abstract | els1:head/ce:abstract | els2:head/ce:abstract | head/ce:abstract | fp | abs | execsumm | websumm">
         <xsl:if test=".[string-length()&gt;0]">
 			<abstract>
 				<!-- PL: indicate the type in case of executive summary or web summary (Nature) -->

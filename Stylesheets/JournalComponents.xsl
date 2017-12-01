@@ -2,8 +2,11 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ce="http://www.elsevier.com/xml/common/dtd"
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+    xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
+    xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
+    xmlns:s1="http://www.elsevier.com/xml/si/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
-    xmlns:els="http://www.elsevier.com/xml/ja/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley" 
+    xmlns:wiley="http://www.wiley.com/namespaces/wiley" 
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="#all">
 
@@ -1832,7 +1835,7 @@
         </xsl:choose>
     </xsl:variable>
     <xsl:template
-        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | sb:title | wiley:articleTitle | wiley:otherTitle | chaptl | book-title">
+        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | wiley:articleTitle | wiley:otherTitle | chaptl | book-title">
         <xsl:choose>
             <xsl:when test="ancestor::news-article/art-front/titlegrp">
                     <xsl:apply-templates/>
@@ -1859,6 +1862,51 @@
                 </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    <!-- elsevier -->
+    <xsl:template
+        match="sb:title">
+                <xsl:if test="normalize-space(sb:maintitle)">
+                    <title level="a" type="main">
+                        <xsl:if test="@Language | @xml:lang">
+                            <xsl:attribute name="xml:lang">
+                                <xsl:choose>
+                                    <xsl:when test="@Language='' or @xml:lang=''">
+                                        <xsl:text>en</xsl:text>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:call-template name="Varia2ISO639">
+                                            <xsl:with-param name="code" select="@Language | @xml:lang"/>
+                                        </xsl:call-template>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:attribute>
+                        </xsl:if>
+                        <xsl:apply-templates select="sb:maintitle"/>
+                    </title>
+                </xsl:if>
+        <xsl:if test="normalize-space(sb:subtitle)">
+            <title level="a" type="sub">
+                <xsl:if test="@Language | @xml:lang">
+                    <xsl:attribute name="xml:lang">
+                        <xsl:choose>
+                            <xsl:when test="@Language='' or @xml:lang=''">
+                                <xsl:text>en</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:call-template name="Varia2ISO639">
+                                    <xsl:with-param name="code" select="@Language | @xml:lang"/>
+                                </xsl:call-template>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:apply-templates select="sb:subtitle"/>
+            </title>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="sb:subtitle">
+        <xsl:apply-templates/>
     </xsl:template>
     <!-- EDP - trans-title-group -->
     <xsl:template
@@ -1912,7 +1960,6 @@
             </title>
         </xsl:if>
     </xsl:template>
-    
     <!-- EDP trans-title -->
     <xsl:template match="trans-title">
                 <xsl:apply-templates/>
@@ -1950,7 +1997,7 @@
     <!-- Elements for general Journal components in SAGE (jrn_title, ISSN) -->
     <!-- Elements for general Journal components in Springer Stage2 (JournalTitle) -->
     <!-- Nature: journal-title -->
-    <!-- Elsevier: els:jid, ce:issn -->
+    <!-- Elsevier: els1:jid |els2:jid, ce:issn -->
 
     <xsl:template match="j-title | JournalTitle | full_journal_title | jrn_title | journal-title | tei:cell[@role='Journal'] | journalcit/title | jtl | wiley:journalTitle">
         <xsl:choose>
@@ -2031,7 +2078,7 @@
 
     <!-- Additional journal namings -->
 
-    <xsl:template match="journal_abbreviation | abbrev-journal-title | els:jid | JournalShortTitle | j-shorttitle|JournalAbbreviatedTitle">
+    <xsl:template match="journal_abbreviation | abbrev-journal-title | els1:jid| els2:jid | JournalShortTitle | j-shorttitle|JournalAbbreviatedTitle">
         <xsl:if test="normalize-space(.)">
             <xsl:choose>
                 <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
@@ -2342,7 +2389,7 @@
     <!-- Publisher IDs when different from above -->
     <!-- NLM 2.2: article-id[@pub-id-type='publisher-id'] -->
 
-    <xsl:template match="els:aid  | EDPSRef | edps-ref | Article/@ID">
+    <xsl:template match="els1:aid  |els2:aid  | EDPSRef | edps-ref | Article/@ID">
         <xsl:if test="normalize-space(.) and not(//publisher-name = 'Cambridge University Press')">
             <idno type="publisher-id">
                 <xsl:value-of select="."/>

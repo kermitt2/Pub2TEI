@@ -219,7 +219,8 @@
                 <xsl:apply-templates select="Book/BookInfo/BookTitleID"/>
                 <xsl:apply-templates select="Book/BookInfo/BookPrintISBN"/>
                 <xsl:apply-templates select="Book/BookInfo/BookElectronicISBN"/>
-                <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterID"/>
+                <xsl:apply-templates select="//Chapter"/>
+                <xsl:apply-templates select="//Part"/>
                 <xsl:apply-templates select="Book/BookHeader/AuthorGroup/Author"/>
                 <xsl:apply-templates select="Book/BookHeader/EditorGroup/Editor"/>
                 <xsl:apply-templates select="Book/BookInfo/ConferenceInfo"/>

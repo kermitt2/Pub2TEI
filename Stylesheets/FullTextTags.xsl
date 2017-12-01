@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
+    xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
+    xmlns:s1="http://www.elsevier.com/xml/si/dtd"
     xmlns="http://www.tei-c.org/ns/1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML/" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	xmlns:wiley="http://www.wiley.com/namespaces/wiley"
     exclude-result-prefixes="#all">
@@ -405,7 +407,7 @@
     <!-- Specific rile for Elsevier inline pathematical objects -->
 
     <!-- 2017-04-03: Vérifier le traitement des éléments de XMLLatex -->
-    <xsl:template match="els:math | math">
+    <xsl:template match="els1:math |els2:math | math">
         <formula notation="MathML">
             <xsl:copy exclude-result-prefixes="#all">
                 <xsl:apply-templates/>

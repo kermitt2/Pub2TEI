@@ -165,7 +165,9 @@
     
     <xsl:template match="sb:collaboration">
         <author role="collab">
+            <name>
             <xsl:apply-templates/>
+            </name>
         </author>
     </xsl:template>
 

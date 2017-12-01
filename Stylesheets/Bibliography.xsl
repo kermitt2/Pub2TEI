@@ -95,7 +95,11 @@
     <xsl:template match="ce:bib-reference[sb:reference]">
         <biblStruct xml:id="{@id}" n="{ce:label}">
             <analytic>
+                <xsl:if test="sb:reference/@id">
+                    <ref xml:id="{sb:reference/@id}"/>
+                </xsl:if>
                 <xsl:apply-templates select="sb:reference/sb:contribution/*"/>
+            
             </analytic>
             <monogr>
                 <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:series/sb:title/*"/>
@@ -524,14 +528,14 @@
         </author>
     </xsl:template>
     <xsl:template match="collab" mode="authors">
-        <author>
+        <author role="collab">
             <name>
             <xsl:value-of select="."/>
             </name>
         </author>
     </xsl:template>
     <xsl:template match="collab" mode="editors">
-        <editor>
+        <editor role="collab">
             <name>
                 <xsl:value-of select="."/>
             </name>
@@ -649,7 +653,7 @@
     <xsl:template match="sb:maintitle">
         <xsl:choose>
             <xsl:when test="ancestor::sb:series/sb:title">
-                <title level="a" type="main">
+                <title level="s" type="main">
                 <xsl:apply-templates/>
                 </title>
             </xsl:when>

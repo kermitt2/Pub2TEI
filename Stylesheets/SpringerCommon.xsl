@@ -225,7 +225,7 @@
     </xsl:template>
 
     <xsl:template match="Contact">
-        <xsl:apply-templates/>
+        <xsl:apply-templates select="Email"/>
     </xsl:template>
 
     <xsl:template match="Biography">

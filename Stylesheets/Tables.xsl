@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
+    xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
+    xmlns:s1="http://www.elsevier.com/xml/si/dtd"
     xmlns:cals="http://www.elsevier.com/xml/common/cals/dtd"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley"
 	exclude-result-prefixes="#all" version="2.0"
@@ -110,7 +112,7 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="table-entry/table | table-wrap/table | els:display[not(parent::ce:para)]/ce:table">
+    <xsl:template match="table-entry/table | table-wrap/table | els1:display[not(parent::ce:para)]/ce:table| els2:display[not(parent::ce:para)]/ce:table">
         <ab>
             <table>
                 <xsl:apply-templates/>
@@ -119,7 +121,7 @@
     </xsl:template>
 
     <!-- exception Elsevier si on est déjà dans un paragraph et Wiley dans un <tabular> -->
-    <xsl:template match="ce:para/els:display/ce:table">
+    <xsl:template match="ce:para/els1:display/ce:table |ce:para/els2:display/ce:table">
         <table>
             <xsl:apply-templates/>
         </table>

@@ -46,9 +46,15 @@
     
     <!-- Numéro du chapitre dans un ouvrage -->
     
-    <xsl:template match="ChapterID">
+    <xsl:template match="Chapter">
         <idno type="chapter-id">
-            <xsl:apply-templates/>
+            <xsl:value-of select="@ID"/>
+        </idno>
+    </xsl:template>
+    
+    <xsl:template match="Part">
+        <idno type="part-id">
+            <xsl:value-of select="@ID"/>
         </idno>
     </xsl:template>
     
