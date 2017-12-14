@@ -55,6 +55,22 @@
     <!-- codeLangue -->
     <xsl:variable name="codeLangue">
         <xsl:choose>
+            <xsl:when test="component/header/publicationMeta[@level='unit']/doi='10.1111/j.1365-2478.1963.tb02022.x' 
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1755-5825.1984.tb00925.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1365-2478.1959.tb01450.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1755-618X.1993.tb00170.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1365-2478.1963.tb02023.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1755-5825.1979.tb01509.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1365-2478.1970.tb02102.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1755-5825.1987.tb01074.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1600-0390.2012.00679.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1754-7121.2012.00236.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1600-0390.2012.00676.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1752-1718.2011.01401.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1600-0390.2012.00677.x'
+                or component/header/publicationMeta[@level='unit']/doi='10.1111/j.1600-0390.2012.00678.x'">
+                <xsl:text>fr</xsl:text>
+            </xsl:when>
             <xsl:when test="component/header/publicationMeta/issn[@type='print']='0378-5599'">
                 <xsl:text>fr</xsl:text>
             </xsl:when>

@@ -176,20 +176,36 @@
                                     select="Journal/Volume/Issue/Article/ArticleHeader/KeywordGroup"
                                 />
                                 <!-- Language -->
-                                <xsl:if test="//ArticleInfo/@Language">
+                                <xsl:choose>
+                                    <xsl:when test="//ArticleTitle[1]/@Language">
                                     <langUsage>
                                         <language>
                                             <xsl:attribute name="ident">
                                                 <xsl:choose>
                                                     <xsl:when test="//ArticleDOI='10.1007/BF02584710'">PT</xsl:when>
                                                     <xsl:otherwise>
-                                                        <xsl:value-of select="translate(//ArticleInfo/@Language,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+                                                        <xsl:value-of select="translate(//ArticleTitle[1]/@Language,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
                                                     </xsl:otherwise>
                                                 </xsl:choose>
                                             </xsl:attribute>
                                         </language>
                                     </langUsage>
-                                </xsl:if>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <langUsage>
+                                            <language>
+                                                <xsl:attribute name="ident">
+                                                    <xsl:choose>
+                                                        <xsl:when test="//ArticleDOI='10.1007/BF02584710'">PT</xsl:when>
+                                                        <xsl:otherwise>
+                                                            <xsl:value-of select="translate(//ArticleInfo/@Language,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+                                                        </xsl:otherwise>
+                                                    </xsl:choose>
+                                                </xsl:attribute>
+                                            </language>
+                                        </langUsage>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </profileDesc>
                         </xsl:if>
                         <xsl:if test="Journal/Volume/Issue/Article/ArticleInfo/ArticleHistory">
