@@ -391,23 +391,6 @@
 							            </xsl:for-each>
 							        </keywords>
 							    </xsl:if>
-							    <xsl:if test="header/publicationMeta[@level='unit']/subjectInfo[string-length()&gt;0]">
-							        <xsl:for-each select="header/publicationMeta[@level='unit']/subjectInfo/subject">
-							            <classCode>
-							                <xsl:if test="@role">
-							                    <xsl:attribute name="scheme">
-							                        <xsl:value-of select="@role"/>
-							                    </xsl:attribute>
-							                </xsl:if>
-							                <xsl:if test="@href">
-							                    <xsl:attribute name="scheme">
-							                        <xsl:value-of select="@href"/>
-							                    </xsl:attribute>
-							                </xsl:if>
-							                <xsl:value-of select="normalize-space(.)"/>
-							            </classCode>
-							        </xsl:for-each>
-							    </xsl:if>
 							    <xsl:if test="header/publicationMeta[@level='unit']/titleGroup/title[string-length()&gt;0]">
 							        <xsl:for-each select="header/publicationMeta[@level='unit']/titleGroup/title">
 							            <keywords>
@@ -424,6 +407,13 @@
 							    </xsl:if>
 							</textClass>
 						</xsl:if>
+                        <xsl:if test="header/publicationMeta/subjectInfo/subject !=''">
+                            <textClass>
+                                <keywords ana="subject">
+                                    <xsl:apply-templates select="header/publicationMeta/subjectInfo/*"/>
+                                </keywords>
+                            </textClass>
+                        </xsl:if>
                         <xsl:if test="$codeLangue">
                         <langUsage>
                             <language>
@@ -1966,5 +1956,15 @@
             <xsl:value-of select="normalize-space(//correspondenceTo)"/>
         </affiliation>
     </xsl:template>
-    
+    <xsl:template match="subjectInfo">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="subject">
+        <term>
+            <xsl:attribute name="ref">
+                <xsl:value-of select="@href"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </term>
+    </xsl:template>
 </xsl:stylesheet>
