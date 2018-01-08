@@ -206,9 +206,7 @@
             </item>
             </xsl:when>
         <xsl:otherwise>
-            <term>
                 <xsl:apply-templates/>
-            </term>
         </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
