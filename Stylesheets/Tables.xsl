@@ -10,7 +10,7 @@
 
     <!-- Royal Chemical Society: table-entry; NLM: table-wrap -->
     <xsl:template match="table-entry | table-wrap | table">
-        <figure type="table">
+        <table>
             <xsl:if test="@id">
                 <xsl:attribute name="xml:id">
                     <xsl:value-of select="@id"/>
@@ -20,7 +20,22 @@
 			<!--<table>
 				<xsl:apply-templates select="tgroup"/>
 			</table>-->
-        </figure>
+        </table>
+    </xsl:template>
+    
+    <!--elsevier-->
+    <xsl:template match="ce:table">
+        <div type="table">
+            <table>
+                <xsl:if test="@id">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="@id"/>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:apply-templates select="*"/>
+                
+            </table>
+        </div>
     </xsl:template>
 
     <xsl:template match="table-entry/title | table-wrap/label | ce:table/ce:caption">

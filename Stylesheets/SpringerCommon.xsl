@@ -608,6 +608,9 @@
 
     <xsl:template match="entry">
         <cell>
+            <xsl:if test="ancestor::thead">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </cell>
     </xsl:template>

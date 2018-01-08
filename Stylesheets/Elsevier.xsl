@@ -279,9 +279,6 @@
                     <sourceDesc>
                         <biblStruct>
                             <analytic>
-                                <!-- All authors are included here -->
-                                <xsl:apply-templates
-                                    select="els1:head/ce:author-group/ce:author |els2:head/ce:author-group/ce:author | head/ce:author-group/ce:author"/>
                                 <!-- Title information related to the paper goes here -->
                                 <!-- rattrapage titres vides -->
                                 <xsl:choose>
@@ -294,6 +291,17 @@
                                         <xsl:apply-templates select="els1:head/ce:title | els2:head/ce:title |head/ce:title"/>
                                     </xsl:otherwise>
                                 </xsl:choose>
+                                <xsl:if test="els1:head/ce:presented |els2:head/ce:presented | head/ce:presented">
+                                    <title level="a" type="sub">
+                                        <xsl:value-of select="els1:head/ce:presented |els2:head/ce:presented | head/ce:presented"/>
+                                    </title>
+                                </xsl:if>
+                                <!-- All authors are included here -->
+                                <xsl:apply-templates
+                                    select="els1:head/ce:author-group/ce:author |els2:head/ce:author-group/ce:author | head/ce:author-group/ce:author"/>
+                                <xsl:apply-templates
+                                    select="els1:head/ce:author-group/ce:collaboration |els2:head/ce:author-group/ce:collaboration | head/ce:author-group/ce:collaboration"/>
+                                
                                 <xsl:apply-templates select="els1:item-info/ce:doi |els2:item-info/ce:doi | item-info/ce:doi"/>
                                 <xsl:apply-templates select="els1:item-info/ce:pii |els2:item-info/ce:pii | item-info/ce:pii"/>
                                 <xsl:apply-templates select="els1:item-info/els1:aid |els2:item-info/els2:aid | item-info/els1:aid| item-info/els2:aid"
@@ -304,6 +312,11 @@
                                 <title level="j" type="abr">
                                     <xsl:value-of select="//els1:item-info/els1:jid |//els2:item-info/els2:jid | //item-info/jid"/>
                                 </title>
+                                <xsl:if test="//els1:item-info/els1:aid |//els2:item-info/els2:aid | //item-info/aid">
+                                    <idno type="aid">
+                                        <xsl:value-of select="//els1:item-info/els1:aid |//els2:item-info/els2:aid | //item-info/aid"/>
+                                    </idno>
+                                </xsl:if>
                                 <!-- PL: note for me, does the issn appears in the biblio section? -->
                                 <xsl:apply-templates select="//ce:issn"/>
                                 <!-- Just in case -->
@@ -407,6 +420,7 @@
                         <body>
                             <xsl:apply-templates select="els1:body|els2:body/*"/>
                             <xsl:apply-templates select="body/*"/>
+                            <xsl:apply-templates select="//ce:floats"/>
                         </body>
                     </xsl:when>
                     <xsl:when test="string-length($rawfulltextpath) &gt; 0">
@@ -457,9 +471,16 @@
     </xsl:template>
 
     <xsl:template match="ce:text">
-        <term xml:id="{@id}">
-            <xsl:apply-templates/>
-        </term>
+        <xsl:choose>
+            <xsl:when test="parent::ce:collaboration">
+                <xsl:value-of select="normalize-space(.)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <term xml:id="{@id}">
+                    <xsl:apply-templates/>
+                </term>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 	
 	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
@@ -621,13 +642,18 @@
     </xsl:template>
 
     <!-- Figures -->
-
     <xsl:template match="ce:figure">
-        <figure>
-            <xsl:apply-templates/>
-        </figure>
+        <div type="figure">
+            <figure>
+                <xsl:if test="@id">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="@id"/>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:apply-templates/>
+            </figure>
+        </div>
     </xsl:template>
-
     <xsl:template match="ce:caption">
         <figDesc>
             <xsl:apply-templates/>
@@ -649,6 +675,149 @@
         <meeting>
             <xsl:apply-templates/>
         </meeting>
+    </xsl:template>
+    
+    <xsl:template match="ce:collaboration">
+        <author role="collab">
+            <xsl:variable name="structId" select="ce:cross-ref/@refid"/>
+            <xsl:for-each select="$structId">
+                <xsl:if test="//ce:correspondence[@id=.]">
+                    <xsl:attribute name="role">
+                        <xsl:text>corresp</xsl:text>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:message>Identifier: <xsl:value-of select="."/></xsl:message>
+            </xsl:for-each>
+            
+            <name>
+                <xsl:apply-templates select="*[name(.)!='ce:cross-ref' and name(.)!='ce:e-address']"
+                />
+            </name>
+            <xsl:choose>
+                <xsl:when test="../ce:footnote[not(@id)]">
+                    <xsl:message>Affiliation sans identifiant</xsl:message>
+                    <xsl:for-each select="../ce:footnote">
+                        <email>
+                            <xsl:value-of select="ce:note-para"/>
+                        </email>
+                    </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:message>On parcourt les affiliations</xsl:message>
+                    <xsl:for-each select="$structId">
+                        <xsl:variable name="localId">
+                            <xsl:value-of select="."/>
+                        </xsl:variable>
+                        <xsl:if test="//ce:footnote[@id=$localId]">
+                            <xsl:message>Trouvé: <xsl:value-of select="$localId"/></xsl:message>
+                            <email>
+                                <xsl:value-of select="//ce:footnote[@id=$localId]/ce:note-para"/>
+                            </email>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:apply-templates select="ce:e-address"/>
+            
+            <xsl:choose>
+                <xsl:when test="../ce:affiliation[not(@id)]">
+                    <xsl:message>Affiliation sans identifiant</xsl:message>
+                    <xsl:for-each select="../ce:affiliation">
+                        <affiliation>
+                            <xsl:call-template name="parseAffiliation">
+                                <xsl:with-param name="theAffil">
+                                    <xsl:value-of select="ce:textfn"/>
+                                </xsl:with-param>
+                            </xsl:call-template>
+                        </affiliation>
+                    </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:message>On parcourt les affiliations</xsl:message>
+                    <xsl:for-each select="$structId">
+                        <xsl:variable name="localId">
+                            <xsl:value-of select="."/>
+                        </xsl:variable>
+                        <xsl:if test="//ce:affiliation[@id=$localId]">
+                            <xsl:message>Trouvé: <xsl:value-of select="$localId"/></xsl:message>
+                            <affiliation>
+                                <xsl:call-template name="parseAffiliation">
+                                    <xsl:with-param name="theAffil">
+                                        <xsl:value-of select="//ce:affiliation[@id=$localId]/ce:textfn"/>
+                                    </xsl:with-param>
+                                </xsl:call-template>
+                            </affiliation>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <xsl:choose>
+                <xsl:when test="../ce:correspondence[not(@id)]">
+                    <xsl:message>Affiliation sans identifiant</xsl:message>
+                    <xsl:for-each select="../ce:correspondence">
+                        <affiliation>
+                            <xsl:call-template name="parseAffiliation">
+                                <xsl:with-param name="theAffil">
+                                    <xsl:value-of select="ce:text"/>
+                                </xsl:with-param>
+                            </xsl:call-template>
+                        </affiliation>
+                    </xsl:for-each>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:message>On parcourt les affiliations</xsl:message>
+                    <xsl:for-each select="$structId">
+                        <xsl:variable name="localId">
+                            <xsl:value-of select="."/>
+                        </xsl:variable>
+                        <xsl:if test="//ce:correspondence[@id=$localId]">
+                            <xsl:message>Trouvé: <xsl:value-of select="$localId"/></xsl:message>
+                            <affiliation>
+                                <xsl:call-template name="parseAffiliation">
+                                    <xsl:with-param name="theAffil">
+                                        <xsl:value-of select="//ce:correspondence[@id=$localId]/ce:text"/>
+                                    </xsl:with-param>
+                                </xsl:call-template>
+                            </affiliation>
+                        </xsl:if>
+                    </xsl:for-each>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <xsl:for-each select="$structId">
+                <xsl:variable name="localId2">
+                    <xsl:value-of select="."/>
+                </xsl:variable>
+                
+                <xsl:if test="//ce:correspondence[@id=$localId2]">
+                    <xsl:variable name="codePays"
+                        select="/els1:article/els1:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text | /els2:article/els2:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text"/>
+                    <xsl:message>Pays Elsevier: <xsl:value-of select="$codePays"/></xsl:message>
+                    <!-- PL: test to avoid empy country block -->
+                    
+                    <xsl:if test="$codePays">
+                        <affiliation>
+                            <address>
+                                <country>
+                                    <xsl:attribute name="key">
+                                        <xsl:value-of select="$codePays"/>
+                                    </xsl:attribute>
+                                    <xsl:call-template name="normalizeISOCountryName">
+                                        <xsl:with-param name="country" select="$codePays"/>
+                                    </xsl:call-template>
+                                </country>
+                            </address>
+                        </affiliation>
+                    </xsl:if>
+                </xsl:if>
+            </xsl:for-each>
+            
+            
+            <!-- PL: no reference markers in the author section -->
+            <!--xsl:apply-templates select="ce:cross-ref"/-->
+            
+        </author>
     </xsl:template>
     
     <xsl:template match="ce:author">
@@ -818,12 +987,22 @@
                 <xsl:choose>
                     <xsl:when test="$testCountry != ''">
                         <country>
-                            <xsl:attribute name="key">
-                                <xsl:value-of select="$testCountry"/>
-                            </xsl:attribute>
-                            <xsl:call-template name="normalizeISOCountryName">
-                                <xsl:with-param name="country" select="$avantVirgule"/>
-                            </xsl:call-template>
+                            <xsl:choose>
+                                <xsl:when test="//ce:doi='10.1016/S0735-1097(98)00474-4'">
+                                    <xsl:attribute name="key">
+                                        <xsl:text>UK</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:text>UNITED KINGDOM</xsl:text>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:attribute name="key">
+                                        <xsl:value-of select="$testCountry"/>
+                                    </xsl:attribute>
+                                    <xsl:call-template name="normalizeISOCountryName">
+                                        <xsl:with-param name="country" select="$avantVirgule"/>
+                                    </xsl:call-template>
+                                </xsl:otherwise>
+                            </xsl:choose>
                         </country>
                     </xsl:when>
                     <xsl:otherwise>
@@ -840,7 +1019,6 @@
                 </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
-
     </xsl:template>
 
     <xsl:template match="ce:correspondence">
@@ -855,7 +1033,20 @@
         </note>
     </xsl:template>
 
-    <xsl:template match="ce:label"/>
+    <xsl:template match="ce:label">
+        <xsl:if test="parent::ce:figure">
+            <head>
+                <xsl:apply-templates/>
+            </head>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="ce:link">
+        <xsl:if test="parent::ce:figure">
+            <link xml:id="{@id}" source="{@locator}">
+                <xsl:apply-templates/>
+            </link>
+        </xsl:if>
+    </xsl:template>
 
     <xsl:template match="ce:hsp">
         <xsl:apply-templates/>

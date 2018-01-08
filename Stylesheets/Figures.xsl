@@ -28,6 +28,10 @@
             <xsl:apply-templates/>
         </p>
     </xsl:template>
+    <!-- elsevier -->
+    <xsl:template match="ce:floats">
+        <xsl:apply-templates/>
+    </xsl:template>
 	<!-- IOP -->
     <xsl:template match="figure">
         <figure>

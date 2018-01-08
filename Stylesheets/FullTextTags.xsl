@@ -23,6 +23,9 @@
             <xsl:when test="child::boxref">
                     <xsl:apply-templates/>
             </xsl:when>
+            <xsl:when test="ancestor::ce:floats">
+                <xsl:apply-templates/>
+            </xsl:when>
             <xsl:otherwise>
                 <p>
                     <xsl:if test="@id">
