@@ -61,18 +61,27 @@
 
     <xsl:template match="ce:bib-reference[sb:reference]">
         <biblStruct xml:id="{@id}" n="{ce:label}">
+            <xsl:if test="sb:reference/sb:contribution">
             <analytic>
                 <xsl:if test="sb:reference/@id">
                     <ref xml:id="{sb:reference/@id}"/>
                 </xsl:if>
                 <xsl:apply-templates select="sb:reference/sb:contribution/*"/>
-            
             </analytic>
+            </xsl:if>
             <monogr>
                 <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:series/sb:title/*"/>
+                <xsl:apply-templates select="sb:reference/sb:host/sb:edited-book/sb:title/*"/>
+                <xsl:apply-templates select="sb:reference/sb:host/sb:edited-book/sb:editors/*"/>
+                <xsl:apply-templates select="sb:reference/sb:host/sb:book/sb:title/*"/>
+                <xsl:apply-templates select="sb:reference/sb:host/sb:book/sb:editors/*"/>
                 <imprint>
                     <xsl:apply-templates
                         select="sb:reference/sb:host/sb:issue/sb:series/*[name()!='sb:title']"/>
+                    <xsl:apply-templates
+                        select="sb:reference/sb:host/sb:edited-book/*[name()!='sb:editors'][name()!='sb:title']"/>
+                    <xsl:apply-templates
+                        select="sb:reference/sb:host/sb:book/*[name()!='sb:editors'][name()!='sb:title']"/>
                     <xsl:apply-templates select="sb:reference/sb:host/sb:issue/sb:date"/>
                     <xsl:apply-templates select="sb:reference/sb:host/sb:pages/*"/>
                 </imprint>
@@ -624,6 +633,11 @@
                 <xsl:apply-templates/>
                 </title>
             </xsl:when>
+            <xsl:when test="ancestor::sb:edited-book/sb:title |ancestor::sb:book/sb:title">
+                <title level="m" type="main">
+                    <xsl:apply-templates/>
+                </title>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates/>
             </xsl:otherwise>
@@ -638,10 +652,24 @@
             <xsl:apply-templates/>
         </date>
     </xsl:template>
+    
+    <xsl:template match="sb:publisher">
+        <publisher>
+            <xsl:value-of select="sb:name"/>
+        </publisher>
+        <xsl:if test="sb:location">
+        <pubPlace>
+            <xsl:value-of select="sb:location"/>
+        </pubPlace>
+        </xsl:if>
+    </xsl:template>
 
     <!-- Authors -->
 
     <xsl:template match="sb:authors">
+        <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="sb:editors">
         <xsl:apply-templates/>
     </xsl:template>
     
@@ -653,6 +681,11 @@
         <author>
             <xsl:apply-templates/>
         </author>
+    </xsl:template>
+    <xsl:template match="sb:editor">
+        <editor>
+            <xsl:apply-templates/>
+        </editor>
     </xsl:template>
 	
     <xsl:template match="bib">

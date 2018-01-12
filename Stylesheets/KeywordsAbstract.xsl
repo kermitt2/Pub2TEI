@@ -83,7 +83,12 @@
                  <xsl:if test="contains(ce:section-title,'Abbreviations')">
                      <xsl:attribute name="ana">abbreviation</xsl:attribute>
                  </xsl:if>
-            <keywords scheme="{@class}" xml:id="{ce:section-title/@id}">
+            <keywords scheme="{@class}">
+                <xsl:if test="ce:section-title/@id">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="ce:section-title/@id"/>
+                    </xsl:attribute>
+                </xsl:if>
                 <!-- langue parfois non présente -->
                 <xsl:variable name="theLanguage">
                     <xsl:choose>

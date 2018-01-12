@@ -2710,6 +2710,15 @@
                                                 </xsl:attribute>
                                             </date>
                                         </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:if test="//item-info/ce:copyright/@year | //els1:item-info/ce:copyright/@year| //els2:item-info/ce:copyright/@year">
+                                            <date type="published">
+                                                <xsl:attribute name="when">
+                                                    <xsl:value-of select="//item-info/ce:copyright/@year | //els1:item-info/ce:copyright/@year| //els2:item-info/ce:copyright/@year"/>
+                                                </xsl:attribute>
+                                            </date>
+                                            </xsl:if>
+                                        </xsl:otherwise>
                                     </xsl:choose>
                                         <!-- volume -->
                                     <xsl:if test="$docIssueEls//vol-first[string-length()&gt; 0] | $docIssueEls//s1:vol-first[string-length()&gt; 0]">
@@ -2853,7 +2862,7 @@
     <xsl:template match="ce:copyright">
         <!-- moved up publisher information -->
         <publisher>
-            <xsl:value-of select="text()"/>
+            <xsl:value-of select="normalize-space(text())"/>
         </publisher>
         <!-- PL: put the date under the paragraph, as it is TEI P5 valid -->
         <!-- LR: moved the date two nodes higher so that the encompassing publicationStmt is closer to what is expected-->
@@ -2868,7 +2877,7 @@
             	        <xsl:value-of select="@year"/>
             	        <xsl:text>, </xsl:text>
             	    </xsl:if>
-            	    <xsl:value-of select="."/>
+            	    <xsl:value-of select="normalize-space(.)"/>
             	</p>
 			</licence>
         </availability>
@@ -2880,7 +2889,12 @@
                 <xsl:value-of select="normalize-space(.)"/>
             </xsl:when>
             <xsl:otherwise>
-                <term xml:id="{@id}">
+                <term>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
                     <xsl:apply-templates/>
                 </term>
             </xsl:otherwise>
@@ -3281,7 +3295,7 @@
                     <xsl:value-of select="."/>
                 </xsl:variable>
                 
-                <xsl:if test="//ce:correspondence[@id=$localId2]">
+                <xsl:if test="//ce:correspondence[@id=$localId2] ">
                     <xsl:variable name="codePays"
                         select="/els1:article/els1:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text | /els2:article/els2:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text"/>
                     <xsl:message>Pays Elsevier: <xsl:value-of select="$codePays"/></xsl:message>
@@ -3301,6 +3315,17 @@
 	                       </address>
                         </affiliation>
                     </xsl:if>
+                </xsl:if>
+                
+                <xsl:if test="//ce:footnote[@id=$localId2]">
+                    <xsl:message>Trouvé: <xsl:value-of select="$localId2"/></xsl:message>
+                    <affiliation ana="footnote">
+                        <xsl:call-template name="parseAffiliation">
+                            <xsl:with-param name="theAffil">
+                                <xsl:value-of select="//ce:footnote[@id=$localId2]/ce:note-para"/>
+                            </xsl:with-param>
+                        </xsl:call-template>
+                    </affiliation>
                 </xsl:if>
             </xsl:for-each>
 
