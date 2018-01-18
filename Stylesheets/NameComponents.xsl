@@ -22,11 +22,11 @@
                         <xsl:if test="ancestor::contrib-group/aff/email and not(ancestor::contrib-group/contrib/xref)">
                             <email><xsl:value-of select="ancestor::contrib-group/aff/email"/></email>
                         </xsl:if>
-                        <xsl:if test="//author-notes/fn[@id=current()/ancestor::contrib-group/aff/xref/@rid]">
+                       <!-- <xsl:if test="//author-notes/fn[@id=current()/ancestor::contrib-group/aff/xref/@rid]/p">
                             <email>
-                                <xsl:value-of select="normalize-space(//author-notes/fn[@id=current()/ancestor::contrib-group/aff/xref/@rid])"/>
+                                <xsl:value-of select="//author-notes/fn[@id=current()/ancestor::contrib-group/aff/xref/@rid]/p"/>
                             </email>
-                        </xsl:if>
+                        </xsl:if>-->
                         <xsl:for-each select="ancestor::contrib-group/aff | ancestor::article-meta/aff">
                             <xsl:if test="not(contains(@id,'cor'))">
                                 <xsl:if test="not(break) and not(ancestor::contrib-group/contrib/xref)">
