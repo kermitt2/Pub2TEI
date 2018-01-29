@@ -62,9 +62,18 @@
         </head>
     </xsl:template>
     <xsl:template match="caption/p">
-        <figDesc>
-            <xsl:apply-templates/>
-        </figDesc>
+        <xsl:choose>
+            <xsl:when test="ancestor::table-wrap">
+                <head>
+                    <xsl:apply-templates/>
+                </head>
+            </xsl:when>
+            <xsl:otherwise>
+                <figDesc>
+                    <xsl:apply-templates/>
+                </figDesc>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="graphic-file">
         <desc>

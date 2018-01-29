@@ -16,6 +16,11 @@
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
             </xsl:if>
+            <xsl:if test="label">
+                <xsl:attribute name="n">
+                    <xsl:value-of select="label"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates select="* except tgroup"/>
 			<!--<table>
 				<xsl:apply-templates select="tgroup"/>
@@ -38,11 +43,17 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="table-entry/title | table-wrap/label | ce:table/ce:caption">
+    <xsl:template match="table-entry/title| ce:table/ce:caption">
         <head>
             <xsl:apply-templates/>
         </head>
     </xsl:template>
+    <!-- le label est reporté dans l'attribut "@n"
+        <xsl:template match="table-wrap/label">
+        <label>
+            <xsl:apply-templates/>
+        </label>
+    </xsl:template>-->
 
     <xsl:template match="table-wrap-foot">
         <note type="table-wrap-foot">
@@ -128,11 +139,12 @@
     </xsl:template>
 
     <xsl:template match="table-entry/table | table-wrap/table | els1:display[not(parent::ce:para)]/ce:table| els2:display[not(parent::ce:para)]/ce:table">
-        <ab>
+       <!-- <ab>
             <table>
                 <xsl:apply-templates/>
             </table>
-        </ab>
+        </ab>-->
+        <xsl:apply-templates/>
     </xsl:template>
 
     <!-- exception Elsevier si on est déjà dans un paragraph et Wiley dans un <tabular> -->

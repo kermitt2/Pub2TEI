@@ -2564,7 +2564,7 @@
                         </xsl:attribute>
                         <xsl:apply-templates/>
                     </xsl:if>
-                    <xsl:if test="li|item">
+                    <xsl:if test="li|item|list-item">
                         <xsl:apply-templates/>
                     </xsl:if>
                 </list>
