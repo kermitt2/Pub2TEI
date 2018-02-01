@@ -539,15 +539,24 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template match="string-name">
-        <persName>
-            <xsl:apply-templates select="surname"/>
-            <xsl:apply-templates select="given-names"/>
-            <xsl:apply-templates select="wiley:givenNames"/>
-            <xsl:apply-templates select="wiley:familyName"/>
-        </persName>
+            <xsl:choose>
+                <xsl:when test="surname|given-names|wiley:givenNames|wiley:familyName">
+                    <persName>
+                    <xsl:apply-templates select="surname"/>
+                    <xsl:apply-templates select="given-names"/>
+                    <xsl:apply-templates select="wiley:givenNames"/>
+                    <xsl:apply-templates select="wiley:familyName"/>
+                    </persName>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:if test="ancestor::name-alternatives">
+                        <name>
+                        <xsl:apply-templates/>
+                        </name>
+                    </xsl:if>
+                </xsl:otherwise>
+            </xsl:choose>
     </xsl:template>
-    
-    
     
     <!-- SG ajout refs groupName -->
     <xsl:template match="wiley:groupName">

@@ -255,12 +255,34 @@
     </xsl:template>
 
     <xsl:template match="contrib">
-        <respStmt>
-            <resp>
-                <xsl:value-of select="@contrib-type"/>
-            </resp>
+        <author>
+            <xsl:variable name="i" select="position()-1"/>
+            <xsl:variable name="authorNumber">
+                <xsl:choose>
+                    <xsl:when test="$i &lt; 10">
+                        <xsl:value-of select="concat('author-000', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 100">
+                        <xsl:value-of select="concat('author-00', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 1000">
+                        <xsl:value-of select="concat('author-0', $i)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="concat('author-', $i)"/>
+                    </xsl:otherwise>
+                </xsl:choose> 
+            </xsl:variable>
+            <xsl:if test="not(ancestor::sub-article) or not(ancestor::ref)">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="$authorNumber"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
-        </respStmt>
+            <roleName>
+                <xsl:value-of select="@contrib-type"/>
+            </roleName>
+        </author>
     </xsl:template>
 
     <xsl:template match="comments">

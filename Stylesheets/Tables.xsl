@@ -17,9 +17,9 @@
                 </xsl:attribute>
             </xsl:if>
             <xsl:if test="label">
-                <xsl:attribute name="n">
+                <head type="label">
                     <xsl:value-of select="label"/>
-                </xsl:attribute>
+                </head>
             </xsl:if>
             <xsl:apply-templates select="* except tgroup"/>
 			<!--<table>

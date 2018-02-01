@@ -1351,22 +1351,18 @@
                 </xsl:if-->
                 <!-- No test if made for body since it is considered a mandatory element -->
                 <xsl:choose>
-                    <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*">
+                    <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*|article/floats-group">
                 <body>
                     <xsl:choose>
                         <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*">
                             <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres/*"/>
                             <xsl:apply-templates select="bm/objects/*"/>
+                            <xsl:apply-templates select="//article/floats-group"/>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:choose>
-                                <xsl:when test="sub-article"/>
-                                <xsl:otherwise>
                                     <div>
                                         <p/>
                                     </div>
-                                </xsl:otherwise>
-                            </xsl:choose>
                         </xsl:otherwise>
                     </xsl:choose>
                 </body>
@@ -1946,11 +1942,6 @@
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
-            <xsl:if test="contrib-id">
-                <idno type="{translate(contrib-id/@contrib-id-type,' ','')}">
-                    <xsl:value-of select="contrib-id"/>
-                </idno>
-            </xsl:if>
             <xsl:if test="@corresp = 'yes'">
                 <xsl:if test="not(xref/@ref-type='corresp')">
                     <xsl:apply-templates select="ancestor::article-meta/author-notes/corresp/email"/>
@@ -1978,7 +1969,11 @@
             </xsl:if>
         </author>
     </xsl:template>
-
+    <xsl:template match="contrib-id">
+        <idno type="{translate(@contrib-id-type,' ','')}">
+            <xsl:apply-templates/>
+        </idno>
+</xsl:template>
     <xsl:template match="contrib[@contrib-type = 'editor']">
         <editor>
             <xsl:variable name="i" select="position()-1"/>
@@ -2579,6 +2574,12 @@
     </xsl:template>
 
     <!-- Figures -->
+    <!-- Figures -->
+    <xsl:template match="floats-group">
+        <div type="figure">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     <xsl:template match="fig">
         <figure>
             <xsl:attribute name="xml:id">
@@ -2963,6 +2964,18 @@
                 </xsl:call-template>
             </xsl:attribute>
             <xsl:text>Received final</xsl:text>
+        </change>
+    </xsl:template>
+    <xsl:template match="date[@date-type = 'read-to-society']">
+        <change>
+            <xsl:attribute name="when">
+                <xsl:call-template name="makeISODateFromComponents">
+                    <xsl:with-param name="oldDay" select="day"/>
+                    <xsl:with-param name="oldMonth" select="month"/>
+                    <xsl:with-param name="oldYear" select="year"/>
+                </xsl:call-template>
+            </xsl:attribute>
+            <xsl:text>Read to Society</xsl:text>
         </change>
     </xsl:template>
 
