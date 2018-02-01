@@ -69,9 +69,11 @@
                 </head>
             </xsl:when>
             <xsl:otherwise>
+                <xsl:if test="normalize-space(.)">
                 <figDesc>
                     <xsl:apply-templates/>
                 </figDesc>
+                </xsl:if>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

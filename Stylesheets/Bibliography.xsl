@@ -319,6 +319,7 @@
                 <xsl:apply-templates select="$entry/source"/>
                 <xsl:apply-templates select="$entry/article-title"/>
                 <xsl:apply-templates select="$entry/uri" mode="citation"/>
+                <xsl:apply-templates select="$entry/pub-id"/>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="$entry/person-group"/>
                 <xsl:apply-templates select="$entry/name"/>
@@ -333,7 +334,6 @@
                     <xsl:apply-templates select="$entry/fpage"/>
                     <xsl:apply-templates select="$entry/lpage"/>
                     <xsl:apply-templates select="$entry/edition"/>
-                    <xsl:apply-templates select="$entry/pub-id"/>
                 </imprint>
             </monogr>
         </biblStruct>

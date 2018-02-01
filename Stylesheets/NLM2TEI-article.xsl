@@ -1967,6 +1967,26 @@
                    </xsl:if>
                </affiliation>
             </xsl:if>
+            <xsl:if test="//article-meta/aff and not(//article-meta/aff/@id)">
+                <affiliation>
+                    <xsl:if test="//article-meta/aff/institution">
+                        <xsl:for-each select="//article-meta/aff/institution">
+                            <orgName type="institution">
+                                <xsl:value-of select="."/>
+                            </orgName>
+                        </xsl:for-each>
+                    </xsl:if>
+                    <xsl:if test="//article-meta/aff/addr-line">
+                        <address>
+                            <xsl:for-each select="//article-meta/aff/addr-line">
+                                <addrLine>
+                                    <xsl:value-of select="."/>
+                                </addrLine>
+                            </xsl:for-each>
+                        </address>
+                    </xsl:if>
+                </affiliation>
+            </xsl:if>
         </author>
     </xsl:template>
     <xsl:template match="contrib-id">
@@ -2390,14 +2410,16 @@
     </xsl:template>
 
     <xsl:template match="statement">
-        <div type="statement">
+        <floatingText type="statement">
             <xsl:if test="@id">
                 <xsl:attribute name="xml:id">
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
             </xsl:if>
+            <body>
             <xsl:apply-templates/>
-        </div>
+            </body>
+        </floatingText>
     </xsl:template>
 
     <xsl:template match="named-content">
@@ -2844,7 +2866,7 @@
     </xsl:template>
 
     <xsl:template match="copyright-year | cpy">
-        <date>
+        <date type="Published">
             <xsl:attribute name="when">
                 <xsl:apply-templates/>
             </xsl:attribute>
@@ -2919,9 +2941,6 @@
                 <xsl:when test="@pub-type = 'final'">
                     <xsl:attribute name="type">Final-Published</xsl:attribute>
                 </xsl:when>
-                <xsl:otherwise>
-                    <xsl:attribute name="type">Published</xsl:attribute>
-                </xsl:otherwise>
             </xsl:choose>
 
             <xsl:attribute name="when">
@@ -2931,6 +2950,9 @@
                     <xsl:with-param name="oldYear" select="year"/>
                 </xsl:call-template>
             </xsl:attribute>
+            <xsl:call-template name="makeISODateFromComponents">
+                <xsl:with-param name="oldYear" select="year"/>
+            </xsl:call-template>
         </date>
     </xsl:template>
 
