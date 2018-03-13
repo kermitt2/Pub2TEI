@@ -2120,9 +2120,9 @@
 
     <xsl:template match="journal-id">
         <xsl:if test="normalize-space(.) and @journal-id-type!='isbn'">
-            <title level="j" type="{@journal-id-type}">
+            <idno type="{@journal-id-type}">
                 <xsl:apply-templates/>
-            </title>
+            </idno>
         </xsl:if>
     </xsl:template>
 
