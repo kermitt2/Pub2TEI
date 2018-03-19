@@ -868,6 +868,11 @@
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1136/ard.58.9.523'">Unusual and memorable</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='other']='jnnp;68/2/256b'">CORRECTION : Effects of stimulant medication on the lateralisation of line bisection judgements of children with attention deficit hyperactivity disorder.</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='other']='postgradmedj;76/891/64a'">International Postgraduate Diary</xsl:when>
+            <!-- EDP -->
+            <xsl:when test="normalize-space(//front/article-meta/article-id[@pub-id-type='pii'])='S0883769400055172'">Semiconductor Materials and Process Technology Handbook</xsl:when>
+            <xsl:when test="normalize-space(//front/article-meta/article-id[@pub-id-type='pii'])='S0883769400055160'">Rapidly Solidified Metals— A Technological Overview</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1051/jp3:1992124'">Erratum</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1051/jphyscol:1982832'">Note - J. Steinberger</xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="//article/front/article-meta/title-group/article-title[string-length() &gt; 0] |//fm/atl[string-length() &gt; 0]">

@@ -1840,6 +1840,46 @@
             <xsl:when test="ancestor::news-article/art-front/titlegrp">
                     <xsl:apply-templates/>
             </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0140-7007(01)00037-8'">
+                <title level="a" type="main">A Word from the Director / Le mot du Directeur</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0923-5965(97)00056-8'">
+                <title level="a" type="main">Foreword</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0377-8398(00)00009-8'">
+                <title level="a" type="main">Introduction : Nannoplankton ecology and palaeoecology</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1006/jfca.1996.0012'">
+                <title level="a" type="main">Book review : The Pacific Islands Food Composition Tables by C. A. Dignan, B. A. Burlingame, J. M. Arthur, R. J.
+                    Quigley, and G. C. Milligan</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0165-1684(98)00205-9'">
+                <title level="a" type="main">Editorial</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1006/jfca.1996.0013'">
+                <title level="a" type="main">Book review : Fats and Fatty Acids in New Zealand Foods, by R. J. Quigley, B. A. Burlingame, G. C. Milligan, and
+                    J. J. Gibson</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1006/jfca.1996.0014'">
+                <title level="a" type="main">Book review : Quality and Accessibility of Food Related Data, by Heather Greenfield</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0142-9418(00)00029-5'">
+                <title level="a" type="main">Editorial</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0168-9002(99)01283-8'">
+                <title level="a" type="main">Index</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1053/smrv.1999.0085'">
+                <title level="a" type="main">Table of contents</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S1049-3867(01)00088-3'">
+                <title level="a" type="main">Erratum to 'An Intersection of
+                    Women’s and Perinatal Health: The Role of Chronic Disease'</title>
+            </xsl:when>
+            <xsl:when test="//ce:doi='10.1016/S0009-2509(99)00312-7'">
+                <title level="a" type="main">Erratum to 'Conversion-temperature trajectories for well mixed adsorptive
+reactorsa'</title>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="normalize-space(.)">
                     <title level="a" type="main">
