@@ -592,6 +592,9 @@
                     <xsl:otherwise>j</xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>
+            <xsl:if test="@xml:lang">
+                <xsl:copy-of select="@xml:lang"/>
+            </xsl:if>
             <xsl:apply-templates/>
         </title>
     </xsl:template>

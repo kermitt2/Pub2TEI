@@ -29,7 +29,7 @@
                         </xsl:if>-->
                         <xsl:for-each select="ancestor::contrib-group/aff | ancestor::article-meta/aff">
                             <xsl:if test="not(contains(@id,'cor'))">
-                                <xsl:if test="not(break) and not(ancestor::contrib-group/contrib/xref)">
+                                <xsl:if test="not(break|target) and not(ancestor::contrib-group/contrib/xref)">
                                     <affiliation>
                                         <xsl:choose>
                                             <xsl:when test="institution | addr-line">

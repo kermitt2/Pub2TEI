@@ -1952,7 +1952,7 @@
                     <xsl:apply-templates select="ancestor::article-meta/author-notes/corresp/email"/>
                 </xsl:if>
             </xsl:if>
-            <xsl:if test="//article-meta/contrib-group/aff and not(//article-meta/contrib-group/aff/@id|//article-meta/contrib-group/aff/target)">
+            <!--<xsl:if test="//article-meta/contrib-group/aff and not(//article-meta/contrib-group/aff/@id|//article-meta/contrib-group/aff/target)">
                <affiliation>
                    <xsl:if test="//article-meta/contrib-group/aff/institution">
                        <xsl:for-each select="//article-meta/contrib-group/aff/institution">
@@ -1971,7 +1971,7 @@
                       </address>
                    </xsl:if>
                </affiliation>
-            </xsl:if>
+            </xsl:if>-->
             <xsl:if test="//article-meta/aff and not(//article-meta/aff/@id)">
                 <affiliation>
                     <xsl:if test="//article-meta/aff/institution">
@@ -2246,16 +2246,6 @@
                                                             <xsl:value-of select="named-content[@content-type='city']"/>
                                                         </settlement>
                                                     </xsl:if>
-                                                    <xsl:for-each select="country">
-                                                        <country>
-                                                            <xsl:attribute name="key">
-                                                                <xsl:call-template name="normalizeISOCountry">
-                                                                    <xsl:with-param name="country" select="."/>
-                                                                </xsl:call-template>
-                                                            </xsl:attribute>
-                                                            <xsl:value-of select="."/>
-                                                        </country>
-                                                    </xsl:for-each>
                                                 </address>
                                             </xsl:if>
                                                 </xsl:when>
@@ -2264,6 +2254,16 @@
                                                         <addrLine>
                                                         <xsl:apply-templates/>
                                                         </addrLine>
+                                                        <xsl:for-each select="../country">
+                                                            <country>
+                                                                <xsl:attribute name="key">
+                                                                    <xsl:call-template name="normalizeISOCountry">
+                                                                        <xsl:with-param name="country" select="."/>
+                                                                    </xsl:call-template>
+                                                                </xsl:attribute>
+                                                                <xsl:value-of select="."/>
+                                                            </country>
+                                                        </xsl:for-each>
                                                     </address>
                                                 </xsl:otherwise>
                                             </xsl:choose>
