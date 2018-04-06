@@ -15,6 +15,9 @@
     <!-- code genre -->
     <xsl:variable name="codeGenre2">
         <xsl:choose>
+            <xsl:when test="contains(/article/front/article-meta/article-categories/subj-group[@subj-group-type='heading']/subject[@content-type='original'],'Case reports')">
+                <xsl:value-of select="/article/front/article-meta/article-categories/subj-group[@subj-group-type='heading']/subject[@content-type='original']"/>
+            </xsl:when>
             <xsl:when test="article/@article-type[string-length() &gt; 0]">
                 <xsl:value-of select="article/@article-type"/>
             </xsl:when>
@@ -24,9 +27,31 @@
             <xsl:otherwise>other</xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
+    <!-- lien vers data.istex.fr -->
+    <xsl:variable name="codeGenreArk2">
+        <xsl:choose>
+            <xsl:when test="normalize-space($codeGenre)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='other'">https://content-type.data.istex.fr/ark:/67375/XTP-7474895G-0</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='book-reviews'">https://content-type.data.istex.fr/ark:/67375/XTP-PBH5VBM9-4</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='abstract'">https://content-type.data.istex.fr/ark:/67375/XTP-HPN7T1Q2-R</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='review-article'">https://content-type.data.istex.fr/ark:/67375/XTP-L5L7X3NF-P</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='brief-communication'">https://content-type.data.istex.fr/ark:/67375/XTP-S9SX2MFS-0</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='editorial'">https://content-type.data.istex.fr/ark:/67375/XTP-STW636XV-K</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='case-report'">https://content-type.data.istex.fr/ark:/67375/XTP-29919SZJ-6</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='conference'">https://content-type.data.istex.fr/ark:/67375/XTP-BFHXPBJJ-3</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
+            <xsl:when test="normalize-space($codeGenre)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
+        </xsl:choose>
+    </xsl:variable>
     <xsl:variable name="codeGenre">
         <xsl:choose>
-            <xsl:when test="normalize-space($codeGenre2)='abstract'">abstract</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='abstract'">
+                <xsl:choose>
+                    <xsl:when test="article/front/article-meta/abstract[string-length() &gt; 0]">article</xsl:when>
+                    <xsl:otherwise>abstract</xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='addendum'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='announcement'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='article-commentary'">review-article</xsl:when>
@@ -35,6 +60,7 @@
             <xsl:when test="normalize-space($codeGenre2)='brief-report'">brief-communication</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='calendar'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='case-report'">case-report</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='Case reports'">case-report</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='collection'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='correction'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='dissertation'">other</xsl:when>
@@ -1035,7 +1061,7 @@
                                 <xsl:value-of select="$codeGenre2"/>
                             </xsl:attribute>
                             <xsl:attribute name="scheme">
-                                <xsl:value-of select="$codeGenreArkA"/>
+                                <xsl:value-of select="$codeGenreArk2"/>
                             </xsl:attribute>
                             <xsl:value-of select="$codeGenre"/>
                         </note>
@@ -3156,6 +3182,9 @@
                 <title level="m">
                     <xsl:apply-templates/>
                 </title>
+                <meeting>
+                    <xsl:apply-templates/>
+                </meeting>
             </xsl:when>
             <xsl:when test="ancestor::conference and normalize-space(.)">
                 <name>
@@ -3170,9 +3199,9 @@
         </date>
     </xsl:template>
     <xsl:template match="conf-loc">
-        <placeName>
+        <pubPlace>
             <xsl:apply-templates/>
-        </placeName>
+        </pubPlace>
     </xsl:template>
     <xsl:template match="conf-sponsor">
         <orgName>

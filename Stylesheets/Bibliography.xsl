@@ -314,16 +314,26 @@
             <xsl:attribute name="xml:id">
                 <xsl:apply-templates select="$entry/@id | @id"/>
             </xsl:attribute>
-            <monogr>
-                <!-- Title information related to the paper goes here -->
-                <xsl:apply-templates select="$entry/source"/>
+            <xsl:if test="$entry/article-title">
+            <analytic>
                 <xsl:apply-templates select="$entry/article-title"/>
-                <xsl:apply-templates select="$entry/uri" mode="citation"/>
-                <xsl:apply-templates select="$entry/pub-id"/>
-                <!-- All authors are included here -->
                 <xsl:apply-templates select="$entry/person-group"/>
                 <xsl:apply-templates select="$entry/name"/>
                 <xsl:apply-templates select="$entry/citauth | $entry/name"/>
+            </analytic>
+            </xsl:if>
+            <monogr>
+                <!-- Title information related to the paper goes here -->
+                <xsl:apply-templates select="$entry/source"/>
+                
+                <xsl:apply-templates select="$entry/uri" mode="citation"/>
+                <xsl:apply-templates select="$entry/pub-id"/>
+                <!-- All authors are included here -->
+                <xsl:if test="not($entry/article-title)">
+                <xsl:apply-templates select="$entry/person-group"/>
+                <xsl:apply-templates select="$entry/name"/>
+                <xsl:apply-templates select="$entry/citauth | $entry/name"/>
+                </xsl:if>
                 <xsl:apply-templates select="$entry/editor"/>
                 <imprint>
                     <xsl:apply-templates select="$entry/year"/>
@@ -361,6 +371,7 @@
                 <xsl:if test="citation |mixed-citation">
                     <bibl type="{citation/@publication-type
                         |citation/@citation-type
+                        |citation/@xlink:type
                         |nlm-citation/@publication-type
                         |nlm-citation/@citation-type
                         |mixed-citation/@publication-type

@@ -53,17 +53,7 @@
                         </xsl:attribute>
                     </xsl:if>
                 </xsl:if>
-                <!-- PL: can we sometime grab a @scheme here? -->
-                <xsl:choose>
-                    <xsl:when test="@kwd-group-type != ''">
-                        <list>
-                            <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
-                        </list>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <xsl:apply-templates select="*[not(self::ce:section-title|self::Heading)]"/>
             </keywords>
         </textClass>
     </xsl:template>
