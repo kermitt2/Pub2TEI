@@ -700,7 +700,16 @@
     </xsl:template>
 
     <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b | b|bo">
-        <xsl:if test="normalize-space(.)"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
+    <xsl:choose>
+        <xsl:when test="ancestor::label">
+                <head type="label">
+                    <hi rend="italic"><xsl:apply-templates/></hi>
+                </head>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:if test="normalize-space(.)"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
+        </xsl:otherwise>
+    </xsl:choose>
     </xsl:template>
 
     <xsl:template match="Emphasis[@Type='SmallCaps'] | ce:small-caps | sc | scp | wiley:sc">

@@ -2643,9 +2643,16 @@
     </xsl:template>
 
     <xsl:template match="fig/label">
-        <head type="label">
-            <xsl:apply-templates/>
-        </head>
+        <xsl:choose>
+            <xsl:when test="bold">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise>
+                <head type="label">
+                <xsl:apply-templates/>
+                </head>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="caption">

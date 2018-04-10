@@ -16,11 +16,6 @@
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:if test="label">
-                <head type="label">
-                    <xsl:value-of select="label"/>
-                </head>
-            </xsl:if>
             <xsl:apply-templates select="* except tgroup"/>
 			<!--<table>
 				<xsl:apply-templates select="tgroup"/>
@@ -28,6 +23,9 @@
         </table>
     </xsl:template>
     
+    <xsl:template match="label">
+                <xsl:apply-templates select="*"/>
+    </xsl:template>
     <!--elsevier-->
     <xsl:template match="ce:table">
         <div type="table">
