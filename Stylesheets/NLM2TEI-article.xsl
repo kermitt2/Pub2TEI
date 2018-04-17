@@ -49,7 +49,7 @@
             <xsl:when test="normalize-space($codeGenre2)='astronomical-observation'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='magnetical-observation'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='meteorological-observation'">research-article</xsl:when>
-            <xsl:when test="normalize-space($codeGenre2)='abstract'">
+            <xsl:when test="normalize-space($codeGenre2)='abstract'or 'Abstract'">
                 <xsl:choose>
                     <xsl:when test="article/front/article-meta/abstract[string-length() &gt; 0]">article</xsl:when>
                     <xsl:otherwise>abstract</xsl:otherwise>
@@ -58,6 +58,7 @@
             <xsl:when test="normalize-space($codeGenre2)='addendum'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='announcement'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='article-commentary'">review-article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='article'or'Article'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='book-review'">book-reviews</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='books-received'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='brief-report'">brief-communication</xsl:when>
@@ -903,6 +904,8 @@
             <xsl:when test="normalize-space(//front/article-meta/article-id[@pub-id-type='pii'])='S0883769400055160'">Rapidly Solidified Metals— A Technological Overview</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1051/jp3:1992124'">Erratum</xsl:when>
             <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1051/jphyscol:1982832'">Note - J. Steinberger</xsl:when>
+            <xsl:when test="//front/article-meta/article-id[@pub-id-type='doi']='10.1098/rsnr.2005.0103'">Editorial - Terry Quinn</xsl:when>
+            <!-- RSL -->
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="//article/front/article-meta/title-group/article-title[string-length() &gt; 0] |//fm/atl[string-length() &gt; 0]">
