@@ -2464,11 +2464,18 @@ reactorsa'</title>
                 </bibl>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:if test="normalize-space(.)">
-                    <biblScope unit="vol">
-                        <xsl:value-of select="normalize-space(.)"/>
-                    </biblScope>
-                </xsl:if>
+                <xsl:choose>
+                    <xsl:when test="normalize-space(.) and ancestor::bold">
+                            <xsl:value-of select="normalize-space(.)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:if test="normalize-space(.)">
+                        <biblScope unit="vol">
+                            <xsl:value-of select="normalize-space(.)"/>
+                        </biblScope>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

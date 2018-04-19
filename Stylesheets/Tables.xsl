@@ -12,9 +12,14 @@
     <xsl:template match="table-entry | table-wrap | table">
         <table>
             <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
+                <xsl:attribute name="n">
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="label">
+                <head type="label">
+                    <xsl:value-of select="label"/>
+                </head>
             </xsl:if>
             <xsl:apply-templates select="* except tgroup"/>
 			<!--<table>

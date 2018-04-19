@@ -319,59 +319,68 @@
 
     <!-- Formules mathématiques -->
     <xsl:template match="f|Formula | formula | inline-formula | disp-formula | ce:formula">
-        <formula>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="label">
-                <xsl:attribute name="n">
-                    <xsl:value-of select="label"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@Notation">
-                <xsl:attribute name="notation">
-                    <xsl:value-of select="@Notation"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@notation">
-                <xsl:attribute name="notation">
-                    <xsl:value-of select="@notation"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@content-type">
-                <xsl:attribute name="notation">
-                    <xsl:value-of select="@content-type"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="tex-math/@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="tex-math/@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="name(.)='inline-formula'">
-                <xsl:attribute name="rend">
-                    <xsl:text>inline</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="name(.)='disp-formula'">
-                <xsl:attribute name="rend">
-                    <xsl:text>display</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:choose>
-                <xsl:when test="tex-math">
-                    <xsl:attribute name="notation">
-                        <xsl:text>TeX</xsl:text>
-                    </xsl:attribute>
-                    <xsl:value-of select="tex-math"/>
-                </xsl:when>
-                <xsl:otherwise>
+        <xsl:choose>
+            <xsl:when test="parent::mixed-citation">
+                <emph>
                     <xsl:apply-templates/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </formula>
+                </emph>
+            </xsl:when>
+            <xsl:otherwise>
+                <formula>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="label">
+                        <xsl:attribute name="n">
+                            <xsl:value-of select="label"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="@Notation">
+                        <xsl:attribute name="notation">
+                            <xsl:value-of select="@Notation"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="@notation">
+                        <xsl:attribute name="notation">
+                            <xsl:value-of select="@notation"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="@content-type">
+                        <xsl:attribute name="notation">
+                            <xsl:value-of select="@content-type"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="tex-math/@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="tex-math/@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="name(.)='inline-formula'">
+                        <xsl:attribute name="rend">
+                            <xsl:text>inline</xsl:text>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="name(.)='disp-formula'">
+                        <xsl:attribute name="rend">
+                            <xsl:text>display</xsl:text>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="tex-math">
+                            <xsl:attribute name="notation">
+                                <xsl:text>TeX</xsl:text>
+                            </xsl:attribute>
+                            <xsl:value-of select="tex-math"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </formula>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="disp-formula/label"/>
@@ -706,8 +715,18 @@
                     <hi rend="italic"><xsl:apply-templates/></hi>
                 </head>
         </xsl:when>
+        <xsl:when test="child::volume">
+            <biblScope unit="vol">
+                <hi rend="italic">
+            <xsl:apply-templates/>
+                </hi>
+            </biblScope>
+        </xsl:when>
         <xsl:otherwise>
-            <xsl:if test="normalize-space(.)"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
+            <xsl:if test="normalize-space(.)">
+                <hi rend="italic">
+                    <xsl:apply-templates/>
+                </hi></xsl:if>
         </xsl:otherwise>
     </xsl:choose>
     </xsl:template>

@@ -1023,6 +1023,7 @@
                                 <xsl:value-of select="pubfm/cpg/cpy"/>
                             </date>
                         </xsl:if>
+                        <xsl:apply-templates select="front/article-meta/pub-date"/>
                         <xsl:apply-templates select="front/article-meta/permissions/copyright-year"/>
                         <xsl:if test="not(front/article-meta/permissions) and front/article-meta/copyright-statement">
                             <availability>
@@ -1367,7 +1368,12 @@
                                             <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/knp106'">FR</xsl:when>
                                             <xsl:when test="//article-id[@pub-id-type='doi']='10.1093/fs/XXXIV.2.168'">FR</xsl:when>
                                             <xsl:otherwise>
-                                                <xsl:value-of select="@xml:lang"/>
+                                                <xsl:choose>
+                                                    <xsl:when test="@xml:lang[string-length()&gt; 0]">
+                                                        <xsl:value-of select="@xml:lang"/>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>zxx</xsl:otherwise>
+                                                </xsl:choose>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:attribute>
@@ -2279,6 +2285,16 @@
                                                             <xsl:value-of select="named-content[@content-type='city']"/>
                                                         </settlement>
                                                     </xsl:if>
+                                                    <xsl:if test="country">
+                                                        <country>
+                                                            <xsl:attribute name="key">
+                                                                <xsl:call-template name="normalizeISOCountry">
+                                                                    <xsl:with-param name="country" select="."/>
+                                                                </xsl:call-template>
+                                                            </xsl:attribute>
+                                                            <xsl:value-of select="country"/>
+                                                        </country>
+                                                    </xsl:if>
                                                 </address>
                                             </xsl:if>
                                                 </xsl:when>
@@ -2911,7 +2927,7 @@
     </xsl:template>
 
     <xsl:template match="copyright-year | cpy">
-        <date type="Published">
+        <date type="Copyright">
             <xsl:attribute name="when">
                 <xsl:apply-templates/>
             </xsl:attribute>
@@ -2977,15 +2993,22 @@
                 <xsl:when test="@pub-type = 'epub'">
                     <xsl:attribute name="type">ePublished</xsl:attribute>
                 </xsl:when>
+                <xsl:when test="@publication-format='print'">
+                    <xsl:attribute name="type">Published</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@publication-format='electronic'">
+                    <xsl:attribute name="type">ePublished</xsl:attribute>
+                </xsl:when>
                 <xsl:when test="@pub-type = 'epub-original'">
-                    <xsl:attribute name="type">Original-ePublished</xsl:attribute>
+                    <xsl:attribute name="type">original-ePublished</xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@pub-type = 'collection'">
-                    <xsl:attribute name="type">Collection-Published</xsl:attribute>
+                    <xsl:attribute name="type">collectionPublished</xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@pub-type = 'final'">
-                    <xsl:attribute name="type">Final-Published</xsl:attribute>
+                    <xsl:attribute name="type">finalPublished</xsl:attribute>
                 </xsl:when>
+                
             </xsl:choose>
 
             <xsl:attribute name="when">
