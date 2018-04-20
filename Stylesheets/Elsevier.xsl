@@ -124,7 +124,12 @@
             <xsl:when test="normalize-space($codeGenre1Elsevier)='fla'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='ind'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='lit'">other</xsl:when>
-            <xsl:when test="normalize-space($codeGenre1Elsevier)='mis'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1Elsevier)='mis'">
+                    <xsl:choose>
+                        <xsl:when test="//els1:head/ce:abstract | //els2:head/ce:abstract | //head/ce:abstract[string-length() &gt; 0]">article</xsl:when>
+                        <xsl:otherwise>other</xsl:otherwise>
+                    </xsl:choose>
+            </xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='nws'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='ocn'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='pnt'">other</xsl:when>

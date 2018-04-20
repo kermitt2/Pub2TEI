@@ -24,7 +24,17 @@
             <xsl:when test="//pubfm/categ/@id[string-length() &gt; 0]">
                 <xsl:value-of select="$codeGenreNature"/>
             </xsl:when>
-            <xsl:otherwise>other</xsl:otherwise>
+            <!-- si non présence d'article-type dans la notice d'origine -->
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="//article/front/article-meta/abstract[string-length()&gt; 0]">
+                        <xsl:text>article</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>other</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
     <!-- lien vers data.istex.fr -->
@@ -49,7 +59,7 @@
             <xsl:when test="normalize-space($codeGenre2)='astronomical-observation'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='magnetical-observation'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='meteorological-observation'">research-article</xsl:when>
-            <xsl:when test="normalize-space($codeGenre2)='abstract'or 'Abstract'">
+            <xsl:when test="normalize-space($codeGenre2)='abstract'">
                 <xsl:choose>
                     <xsl:when test="article/front/article-meta/abstract[string-length() &gt; 0]">article</xsl:when>
                     <xsl:otherwise>abstract</xsl:otherwise>
@@ -58,7 +68,8 @@
             <xsl:when test="normalize-space($codeGenre2)='addendum'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='announcement'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='article-commentary'">review-article</xsl:when>
-            <xsl:when test="normalize-space($codeGenre2)='article'or'Article'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='article'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='Article'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='book-review'">book-reviews</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='books-received'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='brief-report'">brief-communication</xsl:when>
@@ -88,6 +99,7 @@
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='partial-retraction'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='pdf-issue'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='poster'">conference</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='product-review'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='rapid-communication'">brief-communication</xsl:when>

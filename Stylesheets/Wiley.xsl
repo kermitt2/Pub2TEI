@@ -13,6 +13,18 @@
     </xsl:variable>
     <xsl:variable name="codeGenreA">
         <xsl:choose>
+            <xsl:when test="normalize-space($codeGenre1)='chapter'">
+                <xsl:choose>
+                    <xsl:when test="contains(//header/publicationMeta[@level='unit']/titleGroup/title[@type='tocHeading1'],'Brief communications')">brief-communication</xsl:when>
+                    <xsl:when test="contains(//header/publicationMeta[@level='unit']/titleGroup/title[@type='tocHeading1'],'Review Paper')">review-article</xsl:when>
+                    <xsl:otherwise>
+                        <xsl:choose>
+                            <xsl:when test="//abstract[string-length()&gt; 0]">article</xsl:when>
+                            <xsl:otherwise>other</xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='technicalNote'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='article'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='reviewArticle'">review-article</xsl:when>
@@ -29,7 +41,9 @@
             <xsl:when test="normalize-space($codeGenre1)='meetingReport'">conference</xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='rapidPublication'">brief-communication</xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='serialArticle'">article</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='erratum'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre1)='miscellaneous'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1)='historicalPerspective'">research-article</xsl:when>
             <xsl:otherwise>
                 <xsl:text>other</xsl:text>
             </xsl:otherwise>
