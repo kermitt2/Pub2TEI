@@ -73,7 +73,17 @@
                  <xsl:if test="contains(ce:section-title,'Abbreviations')">
                      <xsl:attribute name="ana">abbreviation</xsl:attribute>
                  </xsl:if>
-            <keywords scheme="{@class}">
+            <keywords>
+                <xsl:if test="normalize-space(@class)">
+                    <xsl:attribute name="scheme">
+                        <xsl:value-of select="@class"/>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:if test="normalize-space(ce:section-title)">
+                    <xsl:attribute name="ana">
+                        <xsl:value-of select="ce:section-title"/>
+                    </xsl:attribute>
+                </xsl:if>
                 <xsl:if test="ce:section-title/@id">
                     <xsl:attribute name="xml:id">
                         <xsl:value-of select="ce:section-title/@id"/>

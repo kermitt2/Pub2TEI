@@ -2458,6 +2458,7 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
+                        <xsl:apply-templates select="ce:dochead/ce:textfn"/>
                         <xsl:choose>
                             <xsl:when test="els1:head/ce:title | els2:head/ce:title |head/ce:title ='' or not(els1:head/ce:title | els2:head/ce:title |head/ce:title)">
                                 <title level="a" type="main">
@@ -2533,15 +2534,6 @@
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
-                            <xsl:otherwise>
-                                <note type="publication-type">
-                                    <xsl:attribute name="type">journal</xsl:attribute>
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
-                                    <xsl:text>journal</xsl:text>
-                                </note>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                        <xsl:choose>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
                                 <note type="publication-type" subtype="book-series">
                                     <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
@@ -2555,7 +2547,8 @@
                                 </note>
                             </xsl:when>
                             <xsl:otherwise>
-                                <note type="publication-type" subtype="journal">
+                                <note type="publication-type">
+                                    <xsl:attribute name="type">journal</xsl:attribute>
                                     <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
                                     <xsl:text>journal</xsl:text>
                                 </note>
@@ -2768,10 +2761,12 @@
                         </biblStruct>
                     </sourceDesc>
                 </fileDesc>
-                <xsl:if test="els1:head/ce:keywords |els2:head/ce:keywords | head/ce:keywords | els1:head/ce:abstract |els2:head/ce:abstract | head/ce:abstract">
+                <xsl:if test="//ce:doctopics|head/ce:keywords |els2:head/ce:keywords | head/ce:keywords | els1:head/ce:abstract |els2:head/ce:abstract | head/ce:abstract">
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
                         <xsl:apply-templates select="els1:head/ce:abstract |els2:head/ce:abstract | head/ce:abstract"/>
+                        <xsl:apply-templates select="els1:item-info/ce:doctopics"/>
+                        <xsl:apply-templates select="els2:item-info/ce:doctopics"/>
                         <xsl:apply-templates select="item-info/ce:doctopics"/>
                         <xsl:apply-templates select="els1:head/ce:keywords |els2:head/ce:keywords | head/ce:keywords"/>
                         <!-- language -->
@@ -2836,7 +2831,8 @@
                 <xsl:choose>
                     <xsl:when test="els1:body|els2:body|body">
                         <body>
-                            <xsl:apply-templates select="els1:body|els2:body/*"/>
+                            <xsl:apply-templates select="els1:body/*"/>
+                            <xsl:apply-templates select="els2:body/*"/>
                             <xsl:apply-templates select="body/*"/>
                             <xsl:apply-templates select="//ce:floats"/>
                         </body>
@@ -2854,10 +2850,12 @@
                         </body>
                     </xsl:otherwise>
                 </xsl:choose>
-                <back>
-                    <!-- Bravo: Elsevier a renommé son back en tail... visionnaire -->
-                    <xsl:apply-templates select="els1:back/* | els1:tail/* |els2:back/* | els2:tail/* | tail/*"/>
-                </back>
+                <xsl:if test="els1:back/* | els1:tail/* |els2:back/* | els2:tail/* | tail/*">
+                    <back>
+                        <!-- Bravo: Elsevier a renommé son back en tail... visionnaire -->
+                        <xsl:apply-templates select="els1:back/* | els1:tail/* |els2:back/* | els2:tail/* | tail/*"/>
+                    </back>
+                </xsl:if>
             </text>
         </TEI>
     </xsl:template>
@@ -2867,7 +2865,12 @@
     <xsl:template match="ce:copyright">
         <!-- moved up publisher information -->
         <publisher>
-            <xsl:value-of select="normalize-space(text())"/>
+            <xsl:choose>
+                <xsl:when test="normalize-space(text())">
+                    <xsl:value-of select="normalize-space(text())"/>
+                </xsl:when>
+                <xsl:otherwise>Elsevier</xsl:otherwise>
+            </xsl:choose>
         </publisher>
         <!-- PL: put the date under the paragraph, as it is TEI P5 valid -->
         <!-- LR: moved the date two nodes higher so that the encompassing publicationStmt is closer to what is expected-->
@@ -2882,7 +2885,12 @@
             	        <xsl:value-of select="@year"/>
             	        <xsl:text>, </xsl:text>
             	    </xsl:if>
-            	    <xsl:value-of select="normalize-space(.)"/>
+            	    <xsl:choose>
+            	        <xsl:when test="normalize-space(text())">
+            	            <xsl:value-of select="normalize-space(text())"/>
+            	        </xsl:when>
+            	        <xsl:otherwise>Elsevier.</xsl:otherwise>
+            	    </xsl:choose>
             	</p>
 			</licence>
         </availability>
@@ -3066,7 +3074,6 @@
 
     <!-- Figures -->
     <xsl:template match="ce:figure">
-        <div type="figure">
             <figure>
                 <xsl:if test="@id">
                     <xsl:attribute name="xml:id">
@@ -3075,7 +3082,7 @@
                 </xsl:if>
                 <xsl:apply-templates/>
             </figure>
-        </div>
+        
     </xsl:template>
     <xsl:template match="ce:caption">
         <figDesc>
@@ -3476,7 +3483,12 @@
     </xsl:template>
     <xsl:template match="ce:link">
         <xsl:if test="parent::ce:figure">
-            <link xml:id="{@id}" source="{@locator}">
+            <link source="{@locator}">
+                <xsl:if test="@id">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="@id"/>
+                    </xsl:attribute>
+                </xsl:if>
                 <xsl:apply-templates/>
             </link>
         </xsl:if>

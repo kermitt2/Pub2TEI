@@ -26,6 +26,9 @@
             <xsl:when test="ancestor::ce:floats">
                 <xsl:apply-templates/>
             </xsl:when>
+            <xsl:when test="ancestor::ce:caption">
+                <xsl:apply-templates/>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="child::statement">

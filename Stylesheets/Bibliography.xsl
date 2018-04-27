@@ -61,6 +61,14 @@
 
     <xsl:template match="ce:bib-reference[sb:reference]">
         <biblStruct xml:id="{@id}" n="{ce:label}">
+            <xsl:choose>
+                <xsl:when test="sb:reference/sb:host/sb:edited-book|sb:reference/sb:host/sb:book">
+                    <xsl:attribute name="type">book</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="type">journal</xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:if test="sb:reference/sb:contribution">
             <analytic>
                 <xsl:if test="sb:reference/@id">
