@@ -396,6 +396,11 @@
                                 </xsl:attribute>
                             </xsl:when>
                         </xsl:choose>
+                        <xsl:if test="label">
+                            <xsl:attribute name="n">
+                                <xsl:value-of select="label"/>
+                            </xsl:attribute>
+                        </xsl:if>
                         <xsl:apply-templates select="citation"/>
                         <xsl:apply-templates select="mixed-citation"/>
                         <xsl:apply-templates select="nlm-citation"/>
@@ -438,6 +443,7 @@
 
     <xsl:template match="person-group[@person-group-type='author']">
         <xsl:apply-templates select="name" mode="authors"/>
+        <xsl:apply-templates select="string-name" mode="authors"/>
         <xsl:apply-templates select="collab" mode="authors"/>
     </xsl:template>
 
@@ -515,6 +521,14 @@
     </xsl:template>
 
     <xsl:template match="name" mode="authors">
+        <author>
+            <xsl:apply-templates select="."/>
+            <xsl:if test="following-sibling::*[1][name()='aff']/email">
+                <xsl:apply-templates select="following-sibling::*[1][name()='aff']/email"/>
+            </xsl:if>
+        </author>
+    </xsl:template>
+    <xsl:template match="string-name" mode="authors">
         <author>
             <xsl:apply-templates select="."/>
             <xsl:if test="following-sibling::*[1][name()='aff']/email">

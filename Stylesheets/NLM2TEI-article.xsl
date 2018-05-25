@@ -1027,6 +1027,34 @@
                                 <licence>Open Access</licence>
                             </availability>
                         </xsl:if>
+                        <!--  <license license-type="open-access"
+                    xlink:href="http://creativecommons.org/licenses/by/4.0/">
+                    <license-p>#x00A9; 2014 The Authors. Published by the Royal Society under the
+                        terms of the Creative Commons Attribution License <ext-link
+                            ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="http://creativecommons.org/licenses/by/4.0/"
+                            >http://creativecommons.org/licenses/by/4.0/</ext-link>, which permits
+                        unrestricted use, provided the original author and source are
+                        credited.</license-p>
+                </license> -->
+                        <xsl:if test="//permissions/license[@license-type='open-access']">
+                            <availability status="free">
+                                <licence>
+                                    <xsl:if test="//permissions/license/@xlink:href">
+                                        <xsl:attribute name="target">
+                                            <xsl:value-of select="//permissions/license/@xlink:href"/>
+                                        </xsl:attribute>
+                                    </xsl:if>
+                                    <xsl:if test="//permissions/license/license-p">
+                                        <xsl:for-each select="//permissions/license/license-p">
+                                            <p>
+                                                <xsl:apply-templates/>
+                                            </p>
+                                        </xsl:for-each>
+                                    </xsl:if>
+                                </licence>
+                            </availability>
+                        </xsl:if>
                         <xsl:if test="suppfm/parent/cpg/cpy">
                             <date when="{suppfm/parent/cpg/cpy}"/>
                         </xsl:if>
@@ -2311,9 +2339,21 @@
                                             </xsl:if>
                                                 </xsl:when>
                                                 <xsl:otherwise>
+                                                    <xsl:if test="contains(.,'Department')">
+                                                        <orgName type="department">
+                                                            <xsl:value-of select="."/>
+                                                        </orgName>
+                                                    </xsl:if>
+                                                    <!-- sortir les departements des addr-line pour les classer dans orgName -->
+                                                    <xsl:variable name="department">
+                                                        <xsl:if test="contains(.,'Department')">
+                                                                <xsl:value-of select="."/>
+                                                        </xsl:if>
+                                                    </xsl:variable>
+                                                    <xsl:if test="not(contains(.,'Department'))">
                                                     <address>
                                                         <addrLine>
-                                                        <xsl:apply-templates/>
+                                                            <xsl:apply-templates/>
                                                         </addrLine>
                                                         <xsl:for-each select="../country">
                                                             <country>
@@ -2326,6 +2366,7 @@
                                                             </country>
                                                         </xsl:for-each>
                                                     </address>
+                                                    </xsl:if>
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:for-each>
@@ -2865,6 +2906,7 @@
             </xsl:attribute>
 
             <xsl:attribute name="target">
+                <xsl:variable name="url">
                 <xsl:choose>
                     <xsl:when test="@xlink:href">
                         <xsl:value-of select="@xlink:href"/>
@@ -2873,10 +2915,17 @@
                         <xsl:value-of select="."/>
                     </xsl:otherwise>
                 </xsl:choose>
+                </xsl:variable>
+                <xsl:value-of select="$url"/>
             </xsl:attribute>
-
             <xsl:apply-templates/>
         </ref>
+        <!-- récuperation des doi -->
+        <xsl:if test="contains(.,'doi:')">
+            <ref type="doi">
+                <xsl:value-of select="substring-after(.,'doi:')"/>
+            </ref>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template match="supplementary-material">
@@ -3273,4 +3322,5 @@
     <xsl:template match="notes">
             <xsl:apply-templates/>
     </xsl:template>
+   
 </xsl:stylesheet>
