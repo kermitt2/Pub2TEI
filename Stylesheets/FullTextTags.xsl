@@ -41,6 +41,11 @@
                                     <xsl:value-of select="@id"/>
                                 </xsl:attribute>
                             </xsl:if>
+                            <xsl:if test="@xml:lang">
+                                <xsl:attribute name="xml:lang">
+                                    <xsl:value-of select="@xml:lang"/>
+                                </xsl:attribute>
+                            </xsl:if>
                             <xsl:apply-templates/>
                         </p>
                     </xsl:otherwise>

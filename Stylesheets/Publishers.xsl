@@ -38,7 +38,7 @@
     <xsl:include href="SpringerBookChapter.xsl"/>
     <xsl:include href="RoyalChemicalSociety.xsl"/>
 	<xsl:include href="Wiley.xsl"/>
-    <xsl:include href="BrepolsBookChapter.xsl"/>
+    <xsl:include href="BookChapter.xsl"/>
     <xsl:include href="Duke.xsl"/>
     <xsl:template match="/">
         <xsl:choose> 

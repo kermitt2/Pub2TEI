@@ -18,7 +18,7 @@
               pour l'instant directement traité dans IOP.xsl    -->
 
     <xsl:template match="kwd-group | classinfo | KeywordGroup | keywords">
-        <textClass>
+        <textClass ana="keyword">
             <keywords>
                 <!-- scheme -->
                 <xsl:if test="@kwd-group-type != ''">
@@ -64,7 +64,7 @@
     <xsl:template match="ce:doctopic">
         <textClass>
             <keywords ana="subject">
-                    <xsl:apply-templates/>
+                <xsl:apply-templates/>
             </keywords>
         </textClass>
     </xsl:template>
