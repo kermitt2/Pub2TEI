@@ -1052,7 +1052,8 @@
                 <xsl:if test="normalize-space(//affiliation[@xml:id=$aff])">
                     <affiliation>
                         <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
-                            <xsl:value-of select="normalize-space(//affiliation[@xml:id=$aff]/unparsedAffiliation)"/>
+                            <xsl:call-template name="wileyParseAffiliation"></xsl:call-template>
+                          <!--  <xsl:value-of select="normalize-space(//affiliation[@xml:id=$aff]/unparsedAffiliation)"/>-->
                         </xsl:if>
                         <xsl:if test="//affiliation[@xml:id=$aff]/orgDiv[string-length() &gt; 0 ]">
                             <xsl:for-each select="//affiliation[@xml:id=$aff]/orgDiv/text()">
@@ -1068,7 +1069,7 @@
                                 </orgName>
                             </xsl:for-each>
                         </xsl:if>
-                        <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart | //affiliation[@xml:id=$aff]/address/postCode | //affiliation[@xml:id=$aff]/address/city | //affiliation[@xml:id=$aff]/address/state | //affiliation[@xml:id=$aff]/address/country|//affiliation[@xml:id=$aff]/@countryCode">
+                        <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ] | //affiliation[@xml:id=$aff]/address/countryPart | //affiliation[@xml:id=$aff]/address/postCode | //affiliation[@xml:id=$aff]/address/city | //affiliation[@xml:id=$aff]/address/state | //affiliation[@xml:id=$aff]/address/country">
                             <address>
                                 <xsl:if test="//affiliation[@xml:id=$aff]/address/street[string-length() &gt; 0 ]">
                                 <street>
@@ -1100,10 +1101,10 @@
                                <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode | //affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
 						<country>
 						    <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
-				            <xsl:attribute name="key">
-				                <xsl:value-of select="//affiliation[@xml:id=$aff]/@countryCode[string-length() &gt; 0 ]"/>
-				            </xsl:attribute>
-						        </xsl:if>
+						        <xsl:attribute name="key">
+						            <xsl:value-of select="//affiliation[@xml:id=$aff]/@countryCode[string-length() &gt; 0 ]"/>
+						        </xsl:attribute>
+						    </xsl:if>
 						    <xsl:if test="//affiliation[@xml:id=$aff]/address/country[string-length() &gt; 0 ]">
                                  <xsl:apply-templates select="//affiliation[@xml:id=$aff]/address/country/text()"/>
                                     </xsl:if>
@@ -1187,8 +1188,9 @@
                             </address>
                     </xsl:if>
                     <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
-                        <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
-                        <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
+                            <xsl:call-template name="wileyParseAffiliation"/>
+                            <!--<xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>-->
+                       <!-- <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
                             <address>
                                 <country>
                                     <xsl:attribute name="key">
@@ -1196,7 +1198,7 @@
                                     </xsl:attribute>
                                 </country>
                                     </address>
-                        </xsl:if>
+                        </xsl:if>-->
                     </xsl:if>
                 </affiliation>
                 <xsl:call-template name="tokenize">
@@ -1275,7 +1277,8 @@
                             </address>
                         </xsl:if>
                         <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
-                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
+                            <xsl:call-template name="wileyParseAffiliation"/>
+                            <!--  <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
                             <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
                                 <address>
                                     <country>
@@ -1284,7 +1287,7 @@
                                         </xsl:attribute>
                                     </country>
                                 </address>
-                            </xsl:if>
+                            </xsl:if>-->
                         </xsl:if>
                     </affiliation>
                 </xsl:if>
@@ -1356,7 +1359,8 @@
                         </address>
                     </xsl:if>
                     <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
-                        <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
+                        <xsl:call-template name="wileyParseAffiliation"/>
+                        <!-- <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
                         <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
                             <address>
                                 <country>
@@ -1365,7 +1369,7 @@
                                     </xsl:attribute>
                                 </country>
                             </address>
-                        </xsl:if>
+                        </xsl:if>-->
                     </xsl:if>
                 </affiliation>
                 <xsl:call-template name="tokenizeCor">
@@ -1443,7 +1447,8 @@
                             </address>
                         </xsl:if>
                         <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
-                            <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
+                            <xsl:call-template name="wileyParseAffiliation"/>
+                            <!--<xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
                             <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
                                 <address>
                                     <country>
@@ -1452,7 +1457,7 @@
                                         </xsl:attribute>
                                     </country>
                                 </address>
-                            </xsl:if>
+                            </xsl:if>-->
                         </xsl:if>
                     </affiliation>
                 </xsl:if>
@@ -1529,7 +1534,8 @@
                         </address>
                     </xsl:if>
                     <xsl:if test="//affiliation[@xml:id=$aff]/unparsedAffiliation[string-length() &gt; 0 ]">
-                        <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
+                        <xsl:call-template name="wileyParseAffiliation"/>
+                        <!-- <xsl:apply-templates select="//affiliation[@xml:id=$aff]/unparsedAffiliation/text()"/>
                         <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
                             <address>
                                 <country>
@@ -1538,7 +1544,7 @@
                                     </xsl:attribute>
                                 </country>
                             </address>
-                        </xsl:if>
+                        </xsl:if>-->
                     </xsl:if>
                 </affiliation>
                 <xsl:call-template name="tokenizeCur">
@@ -1980,5 +1986,128 @@
             </xsl:attribute>
             <xsl:apply-templates/>
         </term>
+    </xsl:template>
+    <xsl:template match="unparsedAffiliation" name="wileyParseAffiliation">
+        <xsl:param name="text" select="@affiliationRef"/>
+        <xsl:variable name="aff">
+            <xsl:value-of select="translate($text,'#','')"/>
+        </xsl:variable>
+                <xsl:call-template name="WileyParseAffiliation2">
+                    <xsl:with-param name="theAffil">
+                        <xsl:value-of select="//affiliation[@xml:id=$aff]/unparsedAffiliation"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+    </xsl:template>
+    <xsl:template name="WileyParseAffiliation2">
+        <xsl:param name="text" select="@affiliationRef"/>
+        <xsl:param name="theAffil"/>
+        <xsl:param name="inAddress" select="false()"/>
+        <xsl:variable name="aff">
+            <xsl:value-of select="translate($text,'#','')"/>
+        </xsl:variable>
+        <xsl:for-each select="$theAffil">
+            <xsl:message>Un bout: <xsl:value-of select="."/></xsl:message>
+        </xsl:for-each>
+        <xsl:variable name="avantVirgule">
+            <xsl:choose>
+                <xsl:when test="contains($theAffil,',')">
+                    <xsl:value-of select="normalize-space(substring-before($theAffil,','))"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="normalize-space($theAffil)"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="apresVirgule">
+            <xsl:choose>
+                <xsl:when test="contains($theAffil,',')">
+                    <xsl:value-of select="normalize-space(substring-after($theAffil,','))"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="''"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="testOrganisation">
+            <xsl:call-template name="identifyOrgLevel">
+                <xsl:with-param name="theOrg">
+                    <xsl:value-of select="$avantVirgule"/>
+                </xsl:with-param>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="not($inAddress)">
+                <xsl:choose>
+                    <xsl:when test="$testOrganisation!=''">
+                        <orgName>
+                            <xsl:attribute name="type">
+                                <xsl:value-of select="$testOrganisation"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="$avantVirgule"/>
+                        </orgName>
+                        <xsl:if test="$apresVirgule !=''">
+                            <xsl:call-template name="WileyParseAffiliation2">
+                                <xsl:with-param name="theAffil" select="$apresVirgule"/>
+                            </xsl:call-template>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <address>
+                            <xsl:call-template name="WileyParseAffiliation2">
+                                <xsl:with-param name="theAffil" select="$theAffil"/>
+                                <xsl:with-param name="inAddress" select="true()"/>
+                            </xsl:call-template>
+                            <xsl:if test="//affiliation[@xml:id=$aff]/@countryCode">
+                                <country>
+                                    <xsl:attribute name="key">
+                                        <xsl:value-of select="//affiliation[@xml:id=$aff]/@countryCode[string-length() &gt; 0 ]"/>
+                                    </xsl:attribute>
+                                </country>
+                            </xsl:if>
+                        </address>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="testCountry">
+                    <xsl:call-template name="normalizeISOCountry">
+                        <xsl:with-param name="country" select="$avantVirgule"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                <xsl:choose>
+                    <xsl:when test="$testCountry != ''">
+                        <country>
+                            <xsl:choose>
+                                <xsl:when test="//ce:doi='10.1016/S0735-1097(98)00474-4'">
+                                    <xsl:attribute name="key">
+                                        <xsl:text>UK</xsl:text>
+                                    </xsl:attribute>
+                                    <xsl:text>UNITED KINGDOM</xsl:text>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:attribute name="key">
+                                        <xsl:value-of select="$testCountry"/>
+                                    </xsl:attribute>
+                                    <xsl:call-template name="normalizeISOCountryName">
+                                        <xsl:with-param name="country" select="$avantVirgule"/>
+                                    </xsl:call-template>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </country>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <addrLine>
+                            <xsl:value-of select="$avantVirgule"/>
+                        </addrLine>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:if test="$apresVirgule !=''">
+                    <xsl:call-template name="WileyParseAffiliation2">
+                        <xsl:with-param name="theAffil" select="$apresVirgule"/>
+                        <xsl:with-param name="inAddress" select="true()"/>
+                    </xsl:call-template>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 </xsl:stylesheet>
