@@ -1027,47 +1027,9 @@
                                 <licence>Open Access</licence>
                             </availability>
                         </xsl:if>
-                        <!--  <license license-type="open-access"
-                    xlink:href="http://creativecommons.org/licenses/by/4.0/">
-                    <license-p>#x00A9; 2014 The Authors. Published by the Royal Society under the
-                        terms of the Creative Commons Attribution License <ext-link
-                            ext-link-type="uri" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            xlink:href="http://creativecommons.org/licenses/by/4.0/"
-                            >http://creativecommons.org/licenses/by/4.0/</ext-link>, which permits
-                        unrestricted use, provided the original author and source are
-                        credited.</license-p>
-                </license> -->
-                        <xsl:if test="//permissions/license[@license-type='open-access']">
-                            <availability status="free">
-                                <licence>
-                                    <xsl:if test="//permissions/license/@xlink:href">
-                                        <xsl:attribute name="target">
-                                            <xsl:value-of select="//permissions/license/@xlink:href"/>
-                                        </xsl:attribute>
-                                    </xsl:if>
-                                    <xsl:if test="//permissions/license/license-p">
-                                        <xsl:for-each select="//permissions/license/license-p">
-                                            <p>
-                                                <xsl:apply-templates/>
-                                            </p>
-                                        </xsl:for-each>
-                                    </xsl:if>
-                                </licence>
-                            </availability>
-                        </xsl:if>
-                        <xsl:if test="suppfm/parent/cpg/cpy">
-                            <date when="{suppfm/parent/cpg/cpy}"/>
-                        </xsl:if>
-                        <xsl:if test="pubfm/cpg/cpy">
-                            <date when="{pubfm/cpg/cpy}">
-                                <xsl:value-of select="pubfm/cpg/cpy"/>
-                            </date>
-                        </xsl:if>
-                        <xsl:apply-templates select="front/article-meta/pub-date"/>
-                        <xsl:apply-templates select="front/article-meta/permissions/copyright-year"/>
                         <xsl:if test="not(front/article-meta/permissions) and front/article-meta/copyright-statement">
                             <availability>
-                            <xsl:apply-templates select="front/article-meta/copyright-statement"/>
+                                <xsl:apply-templates select="front/article-meta/copyright-statement"/>
                             </availability>
                             <xsl:apply-templates select="front/article-meta/copyright-year"/>
                         </xsl:if>
@@ -1081,25 +1043,35 @@
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
-                        <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
+                        <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(//permissions/license) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
                             <availability>
-                                <xsl:if test="front/article-meta/permissions/license[@license-type='open-access']">
+                                <xsl:if test="//permissions/license[@license-type='open-access']">
                                     <xsl:attribute name="status">free</xsl:attribute>
                                 </xsl:if>
                                 <xsl:apply-templates select="front/article-meta/permissions/copyright-statement"/>
                                 <xsl:apply-templates select="front/article-meta/permissions/copyright-holder | pubfm/cpg/cpn"/>
-                                <xsl:if test="front/article-meta/permissions/license/license-p">
+                                <xsl:if test="//permissions/license/license-p">
                                     <p>
                                         <xsl:apply-templates select="front/article-meta/permissions/license/license-p"/>
                                     </p>
                                 </xsl:if>
-                                <xsl:if test="front/article-meta/permissions/license/p">
+                                <xsl:if test="//permissions/license/p">
                                     <p>
                                         <xsl:apply-templates select="front/article-meta/permissions/license/p"/>
                                     </p>
                                 </xsl:if>
                             </availability>
                         </xsl:if>
+                        <xsl:if test="suppfm/parent/cpg/cpy">
+                            <date when="{suppfm/parent/cpg/cpy}"/>
+                        </xsl:if>
+                        <xsl:if test="pubfm/cpg/cpy">
+                            <date when="{pubfm/cpg/cpy}">
+                                <xsl:value-of select="pubfm/cpg/cpy"/>
+                            </date>
+                        </xsl:if>
+                        <xsl:apply-templates select="front/article-meta/pub-date"/>
+                        <xsl:apply-templates select="front/article-meta/permissions/copyright-year"/>
                     </publicationStmt>
                     <!-- SG - ajout du codeGenre article et revue -->
                     <notesStmt>
@@ -2373,8 +2345,8 @@
                                     </xsl:if>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:value-of select="."/>
-                                </xsl:otherwise>
+                                    <xsl:call-template name="NLMaffiliation"/>
+                                 </xsl:otherwise>
                             </xsl:choose>
                         </affiliation>
                     </xsl:if>
@@ -3323,4 +3295,103 @@
             <xsl:apply-templates/>
     </xsl:template>
    
+   <!-- parseAffiliation -->
+    <xsl:template name="NLMaffiliation">
+        <xsl:call-template name="NLMparseAffiliation">
+            <xsl:with-param name="theAffil">
+                <xsl:value-of select="."/>
+            </xsl:with-param>
+        </xsl:call-template>
+    </xsl:template>
+    <xsl:template name="NLMparseAffiliation">
+        <xsl:param name="theAffil"/>
+        <xsl:param name="inAddress" select="false()"/>
+        <xsl:for-each select="$theAffil">
+            <xsl:message>Un bout: <xsl:value-of select="."/></xsl:message>
+        </xsl:for-each>
+        <xsl:variable name="avantVirgule">
+            <xsl:choose>
+                <xsl:when test="contains($theAffil,',')">
+                    <xsl:value-of select="normalize-space(substring-before($theAffil,','))"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="normalize-space($theAffil)"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="apresVirgule">
+            <xsl:choose>
+                <xsl:when test="contains($theAffil,',')">
+                    <xsl:value-of select="normalize-space(substring-after($theAffil,','))"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="''"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="testOrganisation">
+            <xsl:call-template name="identifyOrgLevel">
+                <xsl:with-param name="theOrg">
+                    <xsl:value-of select="$avantVirgule"/>
+                </xsl:with-param>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="not($inAddress)">
+                <xsl:choose>
+                    <xsl:when test="$testOrganisation!=''">
+                        <orgName>
+                            <xsl:attribute name="type">
+                                <xsl:value-of select="$testOrganisation"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="$avantVirgule"/>
+                        </orgName>
+                        <xsl:if test="$apresVirgule !=''">
+                            <xsl:call-template name="NLMparseAffiliation">
+                                <xsl:with-param name="theAffil" select="$apresVirgule"/>
+                            </xsl:call-template>
+                        </xsl:if>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <address>
+                            <xsl:call-template name="NLMparseAffiliation">
+                                <xsl:with-param name="theAffil" select="$theAffil"/>
+                                <xsl:with-param name="inAddress" select="true()"/>
+                            </xsl:call-template>
+                        </address>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="testCountry">
+                    <xsl:call-template name="normalizeISOCountry">
+                        <xsl:with-param name="country" select="$avantVirgule"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                <xsl:choose>
+                    <xsl:when test="$testCountry != ''">
+                        <country>
+                                    <xsl:attribute name="key">
+                                        <xsl:value-of select="$testCountry"/>
+                                    </xsl:attribute>
+                                    <xsl:call-template name="normalizeISOCountryName">
+                                        <xsl:with-param name="country" select="$avantVirgule"/>
+                                    </xsl:call-template>
+                        </country>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <addrLine>
+                            <xsl:value-of select="$avantVirgule"/>
+                        </addrLine>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:if test="$apresVirgule !=''">
+                    <xsl:call-template name="NLMparseAffiliation">
+                        <xsl:with-param name="theAffil" select="$apresVirgule"/>
+                        <xsl:with-param name="inAddress" select="true()"/>
+                    </xsl:call-template>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 </xsl:stylesheet>

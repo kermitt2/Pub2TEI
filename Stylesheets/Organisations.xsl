@@ -11,7 +11,7 @@
     <xsl:template name="identifyOrgLevel">
         <xsl:param name="theOrg"/>
         <xsl:choose>
-            <xsl:when test="contains($theOrg,'Universi') or contains($theOrg,'Academy') or contains($theOrg,'Pasteur') or starts-with($theOrg,'Inserm') or starts-with($theOrg,'Insti')">
+            <xsl:when test="contains($theOrg,'Universi') or contains($theOrg,'Academy') or contains($theOrg,'Pasteur') or starts-with($theOrg,'Inserm')  or starts-with($theOrg,'Ministr')">
                 <xsl:text>institution</xsl:text>
             </xsl:when>
             <xsl:when test="contains($theOrg,'Depart') or contains($theOrg,'Dept') or contains($theOrg,'Dipart') or contains($theOrg,'Départ') or contains($theOrg,'School') or contains($theOrg,'Ecole')or contains($theOrg,'Facul')">
