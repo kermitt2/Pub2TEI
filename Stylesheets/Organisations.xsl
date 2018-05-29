@@ -20,6 +20,9 @@
             <xsl:when test="contains($theOrg,'Unit') or contains($theOrg,'Labo') or contains($theOrg,'Servic')">
                 <xsl:text>laboratory</xsl:text>
             </xsl:when>
+            <xsl:when test="contains($theOrg,'Institute')">
+                <xsl:text>institution</xsl:text>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:message>Org inconnue: <xsl:value-of select="$theOrg"/></xsl:message>
                 <xsl:text></xsl:text>

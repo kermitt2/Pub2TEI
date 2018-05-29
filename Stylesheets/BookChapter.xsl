@@ -138,6 +138,7 @@
                                 </xsl:choose>
                             </xsl:when>
                         </xsl:choose>
+                        <xsl:if test="book-meta/pub-date/year[string-length() &gt; 0] |$docIssue//pub-date/year[string-length() &gt; 0]">
                         <availability>
                             <licence>
                                 <xsl:choose>
@@ -152,6 +153,7 @@
                                 </xsl:choose>
                             </licence>
                         </availability>
+                        </xsl:if>
                         <xsl:choose>
                             <xsl:when test="book-meta/pub-date/year[string-length() &gt; 0]">
                                 <date type="published">
@@ -240,9 +242,11 @@
                 <xsl:if test="//body/book-part/book-part-meta/abstract |$docIssue//subj-group/subject">
                     <profileDesc>
                         <xsl:apply-templates select="//body/book-part/book-part-meta/abstract"/>
-                        <textClass ana="subject">
-                            <xsl:apply-templates select="$docIssue//book-categories/subj-group"/>
-                        </textClass>
+                        <xsl:if test="$docIssue//subj-group/subject[string-length() &gt; 0]">
+                            <textClass ana="subject">
+                                <xsl:apply-templates select="$docIssue//book-categories/subj-group"/>
+                            </textClass>
+                        </xsl:if>
                         <xsl:if test="//body/book-part/@xml:lang[string-length()&gt; 0]">
                             <langUsage>
                                 <language>
@@ -354,9 +358,9 @@
                         <xsl:value-of select="$arkistex"/>
                     </idno>
                 </xsl:if>
-                <xsl:if test="//book/book-meta/book-id[@pub-id-type='doi']">
+                <xsl:if test="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']">
                     <idno type="DOI">
-                        <xsl:value-of select="//book/book-meta/book-id[@pub-id-type='doi']"/>
+                        <xsl:value-of select="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']"/>
                     </idno>
                 </xsl:if>
                 <xsl:if test="//book-part-meta/alternate-form">
@@ -381,9 +385,9 @@
                         <xsl:value-of select="$docIssue//book-meta/contrib-group/isbn[@pub-type='epub']"/>
                     </idno>
                 </xsl:if>
-                <xsl:if test="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']">
+                <xsl:if test="//book/book-meta/book-id[@pub-id-type='doi']">
                     <idno type="DOI">
-                        <xsl:value-of select="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']"/>
+                        <xsl:value-of select="//book/book-meta/book-id[@pub-id-type='doi']"/>
                     </idno>
                 </xsl:if>
                 <xsl:apply-templates select="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']"/>

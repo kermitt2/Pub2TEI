@@ -2783,7 +2783,7 @@
                                 <xsl:otherwise>
                                     <xsl:choose>
                                         <xsl:when test="//@xml:lang">
-                                            <xsl:value-of select="normalize-space(translate(//@xml:lang,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'))"/>
+                                            <xsl:value-of select="//@xml:lang"/>
                                         </xsl:when>
                                         <xsl:otherwise>en</xsl:otherwise>
                                     </xsl:choose>

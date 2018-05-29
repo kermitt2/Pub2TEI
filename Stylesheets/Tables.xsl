@@ -114,8 +114,8 @@
             <xsl:if test="@align">
                 <xsl:attribute name="style"><xsl:text>align(</xsl:text><xsl:apply-templates select="@align"/><xsl:text>)</xsl:text></xsl:attribute>
             </xsl:if>
-            <xsl:if test="@colname">
-                <xsl:attribute name="cols"><xsl:value-of select="translate(@colname,'col','')"></xsl:value-of></xsl:attribute>
+            <xsl:if test="@colname and not(@rowsep) or not(@morerows)">
+                <xsl:attribute name="role"><xsl:value-of select="@colname"></xsl:value-of></xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
         </cell>
