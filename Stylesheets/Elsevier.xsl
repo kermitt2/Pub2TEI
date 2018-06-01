@@ -2782,8 +2782,8 @@
                                 <xsl:when test="//ce:doi='10.1016/S0174-3031(82)80096-6'">fr</xsl:when>
                                 <xsl:otherwise>
                                     <xsl:choose>
-                                        <xsl:when test="//@xml:lang">
-                                            <xsl:value-of select="//@xml:lang"/>
+                                        <xsl:when test="@xml:lang">
+                                            <xsl:value-of select="@xml:lang"/>
                                         </xsl:when>
                                         <xsl:otherwise>en</xsl:otherwise>
                                     </xsl:choose>

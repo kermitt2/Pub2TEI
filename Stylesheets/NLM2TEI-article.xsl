@@ -1987,10 +1987,10 @@
                     </xsl:otherwise>
                 </xsl:choose> 
             </xsl:variable>
-            <xsl:if test="not(ancestor::sub-article) or not(ancestor::ref)">
-            <xsl:attribute name="xml:id">
-                <xsl:value-of select="$authorNumber"/>
-            </xsl:attribute>
+            <xsl:if test="not(ancestor::sub-article | ancestor::ref)">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="$authorNumber"/>
+                    </xsl:attribute>
             </xsl:if>
             <xsl:if test="@corresp = 'yes'">
                 <xsl:attribute name="role">
@@ -2033,13 +2033,10 @@
                         </xsl:for-each>
                     </xsl:if>
                     <xsl:if test="//article-meta/aff/addr-line">
-                        <address>
-                            <xsl:for-each select="//article-meta/aff/addr-line">
-                                <addrLine>
-                                    <xsl:value-of select="."/>
-                                </addrLine>
-                            </xsl:for-each>
-                        </address>
+                        <xsl:for-each select="//article-meta/aff/addr-line">
+                            <!-- <xsl:value-of select="."/>-->
+                            <xsl:call-template name="NLMaffiliation"/>
+                        </xsl:for-each>
                     </xsl:if>
                 </affiliation>
             </xsl:if>
@@ -2137,7 +2134,8 @@
                         </address>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select=".except(sup)"/>
+                        <xsl:call-template name="NLMaffiliation"/>
+                       <!-- <xsl:value-of select=".except(sup)"/>-->
                     </xsl:otherwise>
                 </xsl:choose>
             </affiliation>
@@ -2316,18 +2314,23 @@
                                                             <xsl:value-of select="."/>
                                                         </orgName>
                                                     </xsl:if>
+                                                    <xsl:if test="contains(.,'School')">
+                                                        <orgName type="department">
+                                                            <xsl:value-of select="."/>
+                                                        </orgName>
+                                                    </xsl:if>
                                                     <!-- sortir les departements des addr-line pour les classer dans orgName -->
                                                     <xsl:variable name="department">
                                                         <xsl:if test="contains(.,'Department')">
                                                                 <xsl:value-of select="."/>
                                                         </xsl:if>
                                                     </xsl:variable>
-                                                    <xsl:if test="not(contains(.,'Department'))">
+                                                    <xsl:if test="not(contains(.,'Department')or contains(.,'School'))">
                                                     <address>
                                                         <addrLine>
                                                             <xsl:apply-templates/>
                                                         </addrLine>
-                                                        <xsl:for-each select="../country">
+                                                    <xsl:for-each select="../country">
                                                             <country>
                                                                 <xsl:attribute name="key">
                                                                     <xsl:call-template name="normalizeISOCountry">
@@ -2342,6 +2345,7 @@
                                                 </xsl:otherwise>
                                             </xsl:choose>
                                         </xsl:for-each>
+                                        
                                     </xsl:if>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -3371,12 +3375,12 @@
                 <xsl:choose>
                     <xsl:when test="$testCountry != ''">
                         <country>
-                                    <xsl:attribute name="key">
-                                        <xsl:value-of select="$testCountry"/>
-                                    </xsl:attribute>
-                                    <xsl:call-template name="normalizeISOCountryName">
-                                        <xsl:with-param name="country" select="$avantVirgule"/>
-                                    </xsl:call-template>
+                            <xsl:attribute name="key">
+                                <xsl:value-of select="$testCountry"/>
+                            </xsl:attribute>
+                            <xsl:call-template name="normalizeISOCountryName">
+                                <xsl:with-param name="country" select="$avantVirgule"/>
+                            </xsl:call-template>
                         </country>
                     </xsl:when>
                     <xsl:otherwise>

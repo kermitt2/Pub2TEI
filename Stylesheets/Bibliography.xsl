@@ -151,7 +151,15 @@
             </analytic>
             </xsl:if>
             <monogr>
-                <xsl:apply-templates select="$entry/source | $entry/title"/>
+                <!-- palier à l'absence de titre qui est obligatoire dans monogr -->
+                <xsl:choose>
+                    <xsl:when test="$entry/source | $entry/title">
+                        <xsl:apply-templates select="$entry/source | $entry/title"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <title/>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:if test="not($entry/article-title)">
                     <xsl:apply-templates select="$entry/person-group"/>
                 </xsl:if>
@@ -331,8 +339,15 @@
             </analytic>
             </xsl:if>
             <monogr>
-                <!-- Title information related to the paper goes here -->
-                <xsl:apply-templates select="$entry/source"/>
+                <!-- palier à l'absence de titre qui est obligatoire dans monogr -->
+                <xsl:choose>
+                    <xsl:when test="$entry/source">
+                        <xsl:apply-templates select="$entry/source"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <title/>
+                    </xsl:otherwise>
+                </xsl:choose>
                 
                 <xsl:apply-templates select="$entry/uri" mode="citation"/>
                 <xsl:apply-templates select="$entry/pub-id"/>
