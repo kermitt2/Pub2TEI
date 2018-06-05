@@ -1835,7 +1835,7 @@
         </xsl:choose>
     </xsl:variable>
     <xsl:template
-        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | wiley:articleTitle | wiley:otherTitle | chaptl | book-title">
+        match="fm/atl |article-title/title | ArticleTitle | article-title | atl | ce:title | art_title | article_title | nihms-submit/title | ArticleTitle/Title | ChapterTitle |wiley:chapterTitle | titlegrp/title | wiley:articleTitle | wiley:otherTitle | chaptl">
         <xsl:choose>
             <xsl:when test="ancestor::news-article/art-front/titlegrp">
                     <xsl:apply-templates/>

@@ -1987,10 +1987,10 @@
                     </xsl:otherwise>
                 </xsl:choose> 
             </xsl:variable>
-            <xsl:if test="not(ancestor::sub-article | ancestor::ref)">
-                    <xsl:attribute name="xml:id">
-                        <xsl:value-of select="$authorNumber"/>
-                    </xsl:attribute>
+           <xsl:if test="not(ancestor::sub-article | ancestor::ref)">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="$authorNumber"/>
+                </xsl:attribute>
             </xsl:if>
             <xsl:if test="@corresp = 'yes'">
                 <xsl:attribute name="role">
