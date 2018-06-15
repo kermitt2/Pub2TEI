@@ -1972,7 +1972,7 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template name="affiliationCorresp">
-        <affiliation>
+        <affiliation role="corresp">
             <xsl:value-of select="normalize-space(//correspondenceTo)"/>
         </affiliation>
     </xsl:template>

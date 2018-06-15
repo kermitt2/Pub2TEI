@@ -20,7 +20,7 @@
             <xsl:when test="contains($theOrg,'Unit') or contains($theOrg,'Labo') or contains($theOrg,'Servic')">
                 <xsl:text>laboratory</xsl:text>
             </xsl:when>
-            <xsl:when test="contains($theOrg,'Institute')">
+            <xsl:when test="contains($theOrg,'Institut')">
                 <xsl:text>institution</xsl:text>
             </xsl:when>
             <xsl:otherwise>
