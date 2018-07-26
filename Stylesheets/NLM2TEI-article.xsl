@@ -1997,33 +1997,8 @@
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates/>
-            <xsl:if test="@corresp = 'yes'">
-                <xsl:if test="not(xref/@ref-type='corresp')">
-                    <xsl:apply-templates select="ancestor::article-meta/author-notes/corresp/email"/>
-                </xsl:if>
-            </xsl:if>
-            <!--<xsl:if test="//article-meta/contrib-group/aff and not(//article-meta/contrib-group/aff/@id|//article-meta/contrib-group/aff/target)">
-               <affiliation>
-                   <xsl:if test="//article-meta/contrib-group/aff/institution">
-                       <xsl:for-each select="//article-meta/contrib-group/aff/institution">
-                           <orgName type="institution">
-                               <xsl:value-of select="."/>
-                           </orgName>
-                       </xsl:for-each>
-                   </xsl:if>
-                   <xsl:if test="//article-meta/contrib-group/aff/addr-line">
-                      <address>
-                       <xsl:for-each select="//article-meta/contrib-group/aff/addr-line">
-                           <addrLine>
-                               <xsl:value-of select="."/>
-                           </addrLine>
-                       </xsl:for-each>
-                      </address>
-                   </xsl:if>
-               </affiliation>
-            </xsl:if>-->
-            <xsl:if test="//article-meta/aff and not(//article-meta/aff/@id)">
+            <xsl:apply-templates select="name"/>
+           <!-- <xsl:if test="//article-meta/aff and not(//article-meta/aff/@id)">
                 <affiliation>
                     <xsl:if test="//article-meta/aff/institution">
                         <xsl:for-each select="//article-meta/aff/institution">
@@ -2034,14 +2009,75 @@
                     </xsl:if>
                     <xsl:if test="//article-meta/aff/addr-line">
                         <xsl:for-each select="//article-meta/aff/addr-line">
-                            <!-- <xsl:value-of select="."/>-->
                             <xsl:call-template name="NLMaffiliation"/>
                         </xsl:for-each>
                     </xsl:if>
                 </affiliation>
-            </xsl:if>
+            </xsl:if>-->
+            <xsl:choose>
+                <xsl:when test="/article/front/article-meta/aff[@id=current()/xref/@rid] |/article/front/article-meta/contrib-group/aff[@id=current()/xref/@rid] ">
+                    <xsl:apply-templates select="/article/front/article-meta/aff[@id=current()/xref/@rid] |/article/front/article-meta/contrib-group/aff[@id=current()/xref/@rid]"/>
+                </xsl:when>
+                <xsl:when test="ancestor::article-meta and //aff and not(//collab)">
+                    <xsl:apply-templates select="//aff"/>
+                </xsl:when>
+            </xsl:choose>
+            <!-- appelle les affiliations complementaires -->
+            <xsl:choose>
+                <xsl:when test="/article/front/article-meta/author-notes/fn[@id=current()/xref/@rid]">
+                    <xsl:apply-templates select="/article/front/article-meta/author-notes/fn[@id=current()/xref/@rid]"/>
+                </xsl:when>
+            </xsl:choose>
+            <xsl:choose>
+                <xsl:when test="/article/front/article-meta/author-notes/corresp[@id=current()/xref/@rid]">
+                    <xsl:apply-templates select="/article/front/article-meta/author-notes"/>
+                </xsl:when>
+                <xsl:when test="/article/front/article-meta/author-notes/corresp and not(/article/front/article-meta/author-notes/corresp/@id)">
+                    <xsl:apply-templates select="/article/front/article-meta/author-notes/corresp"/>
+                </xsl:when>
+            </xsl:choose>
         </author>
     </xsl:template>
+    <!-- corresp -->
+    <xsl:template match="author-notes">
+        <xsl:apply-templates select="corresp"/>
+    </xsl:template>
+   <xsl:template match="corresp">
+            <xsl:choose>
+                <xsl:when test="email">
+                    <xsl:apply-templates select="email"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:variable name="corresp">
+                        <xsl:apply-templates/>
+                    </xsl:variable>
+                    <affiliation role="corresp">
+                        <xsl:choose>
+                            <xsl:when test="addr-line | country">
+                                <address>
+                                    <xsl:if test="addr-line">
+                                        <xsl:apply-templates select="addr-line"/>
+                                    </xsl:if>
+                                    <xsl:if test="country">
+                                        <xsl:apply-templates select="country"/>
+                                    </xsl:if>
+                                </address>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="normalize-space($corresp)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </affiliation>
+                </xsl:otherwise>
+            </xsl:choose>
+    </xsl:template>
+    <xsl:template match="email">
+        <email>
+            <xsl:apply-templates/>
+        </email>
+    </xsl:template>
+    
+    
     <xsl:template match="contrib-id">
         <idno type="{translate(@contrib-id-type,' ','')}">
             <xsl:apply-templates/>
@@ -2140,7 +2176,7 @@
                 </xsl:choose>
             </affiliation>
     </xsl:template>
-   <xsl:template match="author-notes/corresp">
+   <!--<xsl:template match="author-notes/corresp">
        <xsl:if test="*[name(.) != 'addr-line' and name(.) != 'country'] except(email)">
         <affiliation role="corresp">
             <xsl:apply-templates/>
@@ -2158,7 +2194,7 @@
                 </xsl:choose>
             </affiliation>
        </xsl:if>
-    </xsl:template>
+    </xsl:template>-->
     <xsl:template match="caff" mode="sourceDesc">
         <xsl:choose>
             <xsl:when test="email">

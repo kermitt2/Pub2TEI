@@ -6,7 +6,7 @@
     <!-- Generic rules for the decomposing names (cf. e.g. BMJ) -->
     <xsl:template match="name | persname | auname">
         <xsl:choose>
-            <xsl:when test="ancestor::ref/citation |ancestor::ref/mixed-citation and not(ancestor::person-group)">
+            <xsl:when test="ancestor::ref/element-citation |ancestor::ref/nlm-citation |ancestor::ref/citation |ancestor::ref/mixed-citation and not(ancestor::person-group)">
                 <author>
                     <persName>
                         <xsl:apply-templates/>

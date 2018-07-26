@@ -137,10 +137,26 @@
 
     <xsl:template name="createArticle">
         <xsl:param name="entry"/>
+        <xsl:choose>
+            <!-- enléve les mixed-citation contenant des informations de type abbreviation
+            - enléve tout ce qui n'est pas des références pures-->
+            <xsl:when test="contains(../@id,'jn')"/>
+            <xsl:otherwise>
         <biblStruct type="article">
             <xsl:attribute name="xml:id">
-                <xsl:apply-templates select="$entry/@id | @id"/>
+                <xsl:choose>
+                    <xsl:when test="@id">
+                        <xsl:value-of select="@id"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="../@id"/>
+                    </xsl:otherwise>
+                </xsl:choose>  
             </xsl:attribute>
+                
+           <!-- <xsl:attribute name="xml:id">
+                <xsl:apply-templates select="$entry/@id | @id"/>
+            </xsl:attribute>-->
             <xsl:if test="$entry/article-title">
             <analytic>
                 <!-- Title information related to the paper goes here -->
@@ -188,6 +204,8 @@
             </monogr>
             <xsl:apply-templates select="nlm-citation/pub-id"/>
         </biblStruct>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template name="createOther">
@@ -392,13 +410,34 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="citation |mixed-citation">
-                    <bibl type="{citation/@publication-type
-                        |citation/@citation-type
-                        |citation/@xlink:type
-                        |nlm-citation/@publication-type
-                        |nlm-citation/@citation-type
-                        |mixed-citation/@publication-type
-                        |mixed-citation/@citation-type}">
+                    <bibl>
+                        <xsl:attribute name="type">
+                            <xsl:choose>
+                                <xsl:when test="citation/@publication-type
+                                    |citation/@citation-type
+                                    |citation/@xlink:type
+                                    |nlm-citation/@publication-type
+                                    |nlm-citation/@citation-type
+                                    |mixed-citation/@publication-type
+                                    |mixed-citation/@citation-type">
+                                    <xsl:value-of select="citation/@publication-type
+                                        |citation/@citation-type
+                                        |citation/@xlink:type
+                                        |nlm-citation/@publication-type
+                                        |nlm-citation/@citation-type
+                                        |mixed-citation/@publication-type
+                                        |mixed-citation/@citation-type"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:choose>
+                                        <!-- ACS ex: <ref id="bc980059jn00002">
+            <mixed-citation><comment>Abbreviations:  Abz, <italic toggle="yes">o</italic>-aminobenzoyl; Abz-OH, o-aminobenzoic acid; BTEE, <italic toggle="yes">N</italic>-benzoyl tyrosine ethyl ester; Bop, (benzotriazolyloxy)tris-(dimethylamino)phosphonium hexafluorophosphate; Boc, <italic toggle="yes">tert</italic>-butoxycarbonyl; <italic toggle="yes">  t-</italic>Bu, <italic toggle="yes">tert</italic>-butyl; DCC, <italic toggle="yes">N</italic>,<italic toggle="yes">N</italic>‘-dicyclohexylcarbodiimide; dhbt, 3,4-dihydro-4-oxo-1,2,3-benzotriazo-3-yl; DIEA, diisopropylethylamine; DMF, <italic toggle="yes">N</italic>,<italic toggle="yes">N</italic>-dimethylformamide; DTT, dithiothreitol; DOTA, 1,4,7,10-tetraazacyclododecane-<italic toggle="yes">N</italic>,<italic toggle="yes">N</italic>‘,<italic toggle="yes">N</italic>‘ ‘,<italic toggle="yes">N</italic>‘ ‘‘-tetraacetic acid; EtOH, ethanol; EtOAc, ethyl acetate; EDTA; ethylenediaminetetraacetic acid; Fmoc, fluoren-9-ylmethyloxycarbonyl; HOBt, 1-hydroxybenzotriazole; NO<sub>2</sub>Phe, <italic toggle="yes">p</italic>-nitrophenylalanine; NO<sub>2</sub>Tyr, 3-nitrotyrosine; NMP, 1-methyl-2-pyrrolidone; PEGA, bis(2-acrylamido-1-yl)poly(ethylene glycol) (800) cross-linked dimethyl acrylamide and mono-2-acrylamidoprop-1-yl [2-aminoprop-1-yl]poly(ethylene glycol); pfp, pentafluorophenol; THF, tetrahydrofuran; trt, trityl.</comment></mixed-citation>-->
+                                        <xsl:when test="contains(@id,'jn')">footnote</xsl:when>
+                                        <xsl:when test="contains(@id,'jb')">miscellaneous</xsl:when>
+                                    </xsl:choose>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:attribute>
                         <xsl:choose>
                             <xsl:when test="citation/@id|mixed-citation/@id">
                                 <xsl:attribute name="xml:id">

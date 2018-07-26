@@ -780,7 +780,7 @@
     </xsl:template>
 
     <xsl:template match="Superscript | sup | ce:sup | super | wiley:sup">
-        <xsl:if test="."><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="normalize-space(.)"><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="ul |underline | ce:underline">
