@@ -2976,7 +2976,7 @@
 
     <xsl:template match="els1:head/ce:date-received |els2:head/ce:date-received | head/ce:date-received" mode="inImprint">
         <change>
-            <xsl:attribute name="type">Received</xsl:attribute>
+            <xsl:attribute name="type">received</xsl:attribute>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay" select="@day"/>
@@ -2989,7 +2989,7 @@
 
     <xsl:template match="els1:head/ce:date-accepted |els2:head/ce:date-accepted | head/ce:date-accepted" mode="inImprint">
         <date>
-            <xsl:attribute name="type">Accepted</xsl:attribute>
+            <xsl:attribute name="type">accepted</xsl:attribute>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay" select="@day"/>
@@ -3003,7 +3003,7 @@
     <xsl:template match="els1:head/ce:miscellaneous |els2:head/ce:miscellaneous | head/ce:miscellaneous" mode="inImprint">
         <xsl:variable name="quot">"</xsl:variable>
         <date>
-            <xsl:attribute name="type">Published</xsl:attribute>
+            <xsl:attribute name="type">published</xsl:attribute>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay"

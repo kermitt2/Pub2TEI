@@ -104,11 +104,11 @@
             <xsl:when test="normalize-space($codeGenre2)='product-review'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='rapid-communication'">brief-communication</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='reply'">article</xsl:when>
-            <xsl:when test="normalize-space($codeGenre2)='reprint'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='reprint'">article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='research-article'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='retraction'">other</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='review-article'">review-article</xsl:when>
-            <xsl:when test="normalize-space($codeGenre2)='translation'">other</xsl:when>
+            <xsl:when test="normalize-space($codeGenre2)='translation'">article</xsl:when>
             <xsl:otherwise>
                 <xsl:text>other</xsl:text>
             </xsl:otherwise>
@@ -1636,19 +1636,19 @@
                         <xsl:attribute name="type">bookReview</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType = 'books-received'">
-                        <xsl:attribute name="type">booksReceived</xsl:attribute>
+                        <xsl:attribute name="type">books-received</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType = 'editorial'">
                         <xsl:attribute name="type">editorial</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType = 'brief-report'">
-                        <xsl:attribute name="type">briefReport</xsl:attribute>
+                        <xsl:attribute name="type">brief-report</xsl:attribute>
                     </xsl:when>
                     <xsl:when test="$articleType = 'letter'">
                         <xsl:attribute name="type">letter</xsl:attribute>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:message terminate="no">Article-type inconnu: <xsl:value-of select="$articleType"/></xsl:message>
+                        <xsl:message terminate="no">article-type inconnu: <xsl:value-of select="$articleType"/></xsl:message>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:if>
@@ -1998,6 +1998,7 @@
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates select="name"/>
+            <xsl:apply-templates select="string-name"/>
            <!-- <xsl:if test="//article-meta/aff and not(//article-meta/aff/@id)">
                 <affiliation>
                     <xsl:if test="//article-meta/aff/institution">
@@ -2051,6 +2052,7 @@
                     <xsl:variable name="corresp">
                         <xsl:apply-templates/>
                     </xsl:variable>
+                    <xsl:if test="normalize-space(.)">
                     <affiliation role="corresp">
                         <xsl:choose>
                             <xsl:when test="addr-line | country">
@@ -2068,16 +2070,10 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </affiliation>
+                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
     </xsl:template>
-    <xsl:template match="email">
-        <email>
-            <xsl:apply-templates/>
-        </email>
-    </xsl:template>
-    
-    
     <xsl:template match="contrib-id">
         <idno type="{translate(@contrib-id-type,' ','')}">
             <xsl:apply-templates/>
@@ -2523,7 +2519,6 @@
 
     <xsl:template match="ack">
         <div type="acknowledgements">
-            <head>Acknowledgements</head>
             <xsl:apply-templates/>
         </div>
     </xsl:template>
@@ -3061,29 +3056,28 @@
     </xsl:template>
 
     <xsl:template match="pub-date">
+        <xsl:if test="year!='0'">
         <date>
             <xsl:choose>
                 <xsl:when test="@pub-type = 'epub'">
-                    <xsl:attribute name="type">ePublished</xsl:attribute>
+                    <xsl:attribute name="type">e-published</xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@publication-format='print'">
-                    <xsl:attribute name="type">Published</xsl:attribute>
+                    <xsl:attribute name="type">published</xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@publication-format='electronic'">
-                    <xsl:attribute name="type">ePublished</xsl:attribute>
+                    <xsl:attribute name="type">e-published</xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@pub-type = 'epub-original'">
-                    <xsl:attribute name="type">original-ePublished</xsl:attribute>
+                    <xsl:attribute name="type">original-e-published</xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@pub-type = 'collection'">
-                    <xsl:attribute name="type">collectionPublished</xsl:attribute>
+                    <xsl:attribute name="type">collection-published</xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@pub-type = 'final'">
-                    <xsl:attribute name="type">finalPublished</xsl:attribute>
+                    <xsl:attribute name="type">final-published</xsl:attribute>
                 </xsl:when>
-                
             </xsl:choose>
-
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay" select="day"/>
@@ -3095,6 +3089,7 @@
                 <xsl:with-param name="oldYear" select="year"/>
             </xsl:call-template>
         </date>
+        </xsl:if>
     </xsl:template>
 
     <!-- Revision information -->
@@ -3332,8 +3327,23 @@
         </note>
     </xsl:template>
     <xsl:template match="notes">
+        <note>
             <xsl:apply-templates/>
+        </note>
     </xsl:template>
+    <!-- 
+    <xsl:template match="notes">
+        <xsl:choose>
+            <xsl:when test="ancestor::back">
+                <note>
+                    <xsl:apply-templates/>
+                </note>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template> -->
    
    <!-- parseAffiliation -->
     <xsl:template name="NLMaffiliation">

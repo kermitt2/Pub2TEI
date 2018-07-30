@@ -329,7 +329,7 @@
     <xsl:template match="web_publish_date" mode="inImprint">
         <xsl:if test="year != ''">
             <date>
-                <xsl:attribute name="type">ePublished</xsl:attribute>
+                <xsl:attribute name="type">e-published</xsl:attribute>
                 <xsl:attribute name="when">
                     <xsl:call-template name="makeISODateFromComponents">
                         <xsl:with-param name="oldDay" select="day"/>
@@ -343,7 +343,7 @@
 
     <xsl:template match="custom_fields[@cd_code='Wiley - Published online date']" mode="inImprint">
         <date>
-            <xsl:attribute name="type">Published</xsl:attribute>
+            <xsl:attribute name="type">published</xsl:attribute>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay" select="substring-before(@cd_value,'-')"/>

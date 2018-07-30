@@ -219,7 +219,7 @@
 
     <xsl:template match="history/accepted-date" mode="inImprint">
         <date>
-            <xsl:attribute name="type">Accepted</xsl:attribute>
+            <xsl:attribute name="type">accepted</xsl:attribute>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay"

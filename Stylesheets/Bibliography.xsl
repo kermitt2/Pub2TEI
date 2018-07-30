@@ -15,7 +15,7 @@
             <xsl:apply-templates select="title | ce:section-title"/>
             <listBibl>
                 <!-- SG - attention parfois 2 voir 3 citations par <bibl> pour Wiley -->
-                <xsl:apply-templates select="ref | citgroup | ce:bibliography-sec | bib |wiley:bib | wiley:bibSection"/>
+                <xsl:apply-templates select="ref |citgroup | ce:bibliography-sec | bib |wiley:bib | wiley:bibSection"/>
             </listBibl>
         </div>
     </xsl:template>
@@ -141,69 +141,75 @@
             <!-- enléve les mixed-citation contenant des informations de type abbreviation
             - enléve tout ce qui n'est pas des références pures-->
             <xsl:when test="contains(../@id,'jn')"/>
+           <xsl:when test="element-citation|mixed-citation">
+               <xsl:apply-templates select="element-citation|mixed-citation"/>
+            </xsl:when>
             <xsl:otherwise>
-        <biblStruct type="article">
-            <xsl:attribute name="xml:id">
-                <xsl:choose>
-                    <xsl:when test="@id">
-                        <xsl:value-of select="@id"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="../@id"/>
-                    </xsl:otherwise>
-                </xsl:choose>  
-            </xsl:attribute>
-                
-           <!-- <xsl:attribute name="xml:id">
+                <biblStruct type="article">
+                    <xsl:attribute name="xml:id">
+                        <xsl:choose>
+                            <xsl:when test="@id">
+                                <xsl:value-of select="@id"/>
+                            </xsl:when>
+                            <xsl:when test="citation/@id">
+                                <xsl:value-of select="citation/@id"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="../@id"/>
+                            </xsl:otherwise>
+                        </xsl:choose>  
+                    </xsl:attribute>
+                    
+                    <!-- <xsl:attribute name="xml:id">
                 <xsl:apply-templates select="$entry/@id | @id"/>
             </xsl:attribute>-->
-            <xsl:if test="$entry/article-title">
-            <analytic>
-                <!-- Title information related to the paper goes here -->
-                <xsl:apply-templates select="$entry/article-title"/>
-                <!-- All authors are included here -->
-                    <xsl:apply-templates select="$entry/person-group | $entry/citauth | $entry/name"/>
-                <xsl:apply-templates select="$entry/object-id"/>
-            </analytic>
-            </xsl:if>
-            <monogr>
-                <!-- palier à l'absence de titre qui est obligatoire dans monogr -->
-                <xsl:choose>
-                    <xsl:when test="$entry/source | $entry/title">
-                        <xsl:apply-templates select="$entry/source | $entry/title"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <title/>
-                    </xsl:otherwise>
-                </xsl:choose>
-                <xsl:if test="not($entry/article-title)">
-                    <xsl:apply-templates select="$entry/person-group"/>
-                </xsl:if>
-                <xsl:apply-templates select="$entry/citauth | $entry/name"/>
-                <xsl:apply-templates select="$entry/comment"/>
-                <xsl:apply-templates select="$entry/conference"/>
-                <xsl:choose>
-                   <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
-                       <note type="content"><xsl:value-of select="normalize-space(.)"/></note>
-                       <imprint>
-                           <xsl:apply-templates select="$entry/citpub"/>
-                           <xsl:apply-templates select="$entry/pubplace"/>
-                           <xsl:apply-templates select="$entry/year"/>
-                           <xsl:apply-templates select="$entry/volume | $entry/volumeno"/>
-                           <xsl:apply-templates select="$entry/issue"/>
-                           <xsl:apply-templates select="$entry/descendant::fpage"/>
-                           <xsl:apply-templates select="$entry/descendant::lpage"/>
-                       </imprint>
-                   </xsl:when>
-                   <xsl:otherwise>
-                       <imprint>
-                           <date/>
-                       </imprint>
-                   </xsl:otherwise>
-               </xsl:choose>
-            </monogr>
-            <xsl:apply-templates select="nlm-citation/pub-id"/>
-        </biblStruct>
+                    <xsl:if test="$entry/article-title">
+                        <analytic>
+                            <!-- Title information related to the paper goes here -->
+                            <xsl:apply-templates select="$entry/article-title"/>
+                            <!-- All authors are included here -->
+                            <xsl:apply-templates select="$entry/person-group | $entry/citauth | $entry/name"/>
+                            <xsl:apply-templates select="$entry/object-id"/>
+                        </analytic>
+                    </xsl:if>
+                    <monogr>
+                        <!-- palier à l'absence de titre qui est obligatoire dans monogr -->
+                        <xsl:choose>
+                            <xsl:when test="$entry/source | $entry/title">
+                                <xsl:apply-templates select="$entry/source | $entry/title"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <title/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:if test="not($entry/article-title)">
+                            <xsl:apply-templates select="$entry/person-group"/>
+                        </xsl:if>
+                        <xsl:apply-templates select="$entry/citauth | $entry/name"/>
+                        <xsl:apply-templates select="$entry/comment"/>
+                        <xsl:apply-templates select="$entry/conference"/>
+                        <xsl:choose>
+                            <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
+                                <note type="content"><xsl:value-of select="normalize-space(.)"/></note>
+                                <imprint>
+                                    <xsl:apply-templates select="$entry/citpub"/>
+                                    <xsl:apply-templates select="$entry/pubplace"/>
+                                    <xsl:apply-templates select="$entry/year"/>
+                                    <xsl:apply-templates select="$entry/volume | $entry/volumeno"/>
+                                    <xsl:apply-templates select="$entry/issue"/>
+                                    <xsl:apply-templates select="$entry/descendant::fpage"/>
+                                    <xsl:apply-templates select="$entry/descendant::lpage"/>
+                                </imprint>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <imprint>
+                                    <date/>
+                                </imprint>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </monogr>
+                    <xsl:apply-templates select="nlm-citation/pub-id"/>
+                </biblStruct>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -409,7 +415,9 @@
                 </bibl>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:if test="citation |mixed-citation">
+                <xsl:apply-templates select="element-citation"/>
+                <xsl:apply-templates select="mixed-citation"/>
+                <xsl:if test="citation">
                     <bibl>
                         <xsl:attribute name="type">
                             <xsl:choose>
@@ -485,9 +493,9 @@
         </bibl>
     </xsl:template>-->
 
-    <xsl:template match="mixed-citation">
+   <!-- <xsl:template match="mixed-citation">
         <xsl:apply-templates/>
-    </xsl:template>
+    </xsl:template>-->
 
     <xsl:template match="elocation-id">
         <idno type="elocation-id">
@@ -502,11 +510,15 @@
     </xsl:template>
 
     <xsl:template match="person-group[@person-group-type='editor']">
-        <xsl:apply-templates mode="editors"/>
+        <xsl:apply-templates select="name" mode="editors"/>
+        <xsl:apply-templates select="string-name" mode="editors"/>
     </xsl:template>
 
     <xsl:template match="person-group">
-        <xsl:apply-templates mode="authors"/>
+        <xsl:apply-templates select="name" mode="authors"/>
+        <xsl:apply-templates select="name" mode="editors"/>
+        <xsl:apply-templates select="string-name" mode="authors"/>
+        <xsl:apply-templates select="string-name" mode="editors"/>
     </xsl:template>
 
     <xsl:template match="name" mode="editors">
@@ -530,7 +542,7 @@
                     </xsl:choose>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates select="."/>
+            <xsl:apply-templates/>
         </editor>
     </xsl:template>
     <xsl:template match="edg">
@@ -1360,8 +1372,126 @@
                 | preprint-info/preprint
                 | misc-text[not(extdoi) and not(matches(normalize-space(.), '^ISBN(-1[03])?\s?:?\s[-0-9xX ]{10,17}$'))]
                 | links/arxiv"/>
-            
-            
         </biblStruct>
+    </xsl:template>
+    <!-- références -->
+    <xsl:template match="element-citation|mixed-citation">
+        <xsl:choose>
+            <xsl:when test="contains(../@id,'jn')">
+                <bibl>
+                    <xsl:attribute name="type">
+                        <xsl:text>footnote</xsl:text>
+                    </xsl:attribute>
+                <xsl:apply-templates/>
+                </bibl>
+            </xsl:when>
+            <xsl:when test="not(article-title |source)">
+                <bibl>
+                    <xsl:attribute name="type">
+                        <xsl:text>in-line</xsl:text>
+                    </xsl:attribute>
+                    <xsl:choose>
+                        <xsl:when test="@id">
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="@id"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="../@id"/>
+                            </xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:apply-templates/>
+                </bibl>
+            </xsl:when>
+            <xsl:otherwise>
+                <biblStruct>
+                    <xsl:if test="@citation-type|@publication-type">
+                        <xsl:attribute name="type">
+                            <xsl:apply-templates select="@citation-type|@publication-type"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="@id">
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="@id"/>
+                            </xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="../@id"/>
+                            </xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <analytic>
+                        <xsl:apply-templates select="article-title"/>
+                        <xsl:apply-templates select="name"/>
+                        <xsl:apply-templates select="person-group"/>
+                        <xsl:apply-templates select="elocation-id"/>
+                    </analytic>
+                    <monogr>
+                        <xsl:apply-templates select="source"/>
+                        <!-- cas particulier chez ACS le titre de la 
+                        ressource est contenue parfois dans italic@toggle
+                        dans les mixed-citation-->
+                        <xsl:apply-templates select="italic" mode="toggle"/>
+                        <imprint>
+                            <xsl:choose>
+                                <xsl:when test="publisher-name|publisher-loc|year">
+                                    <xsl:apply-templates select="publisher-name"/>  
+                                    <xsl:apply-templates select="publisher-loc"/>
+                                    <xsl:apply-templates select="year"/>
+                                    <xsl:apply-templates select="volume"/>
+                                    <xsl:apply-templates select="fpage"/>
+                                    <xsl:apply-templates select="lpage"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <!-- imprint ne doit pas rester vide de contenu -->
+                                    <publisher/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </imprint>
+                        <!--  <xsl:otherwise>
+                            <xsl:choose>
+                                <xsl:when test="@citation-type='confproc'">
+                                    <name xmlns="http://www.loc.gov/mods/v3" type="conference">
+                                        <namePart xmlns="http://www.loc.gov/mods/v3">
+                                            <xsl:apply-templates select="source"/>
+                                        </namePart>
+                                        <xsl:apply-templates select="comment"/>
+                                        <xsl:apply-templates select="conf-name"/>
+                                        <xsl:apply-templates select="conf-theme"/> 
+                                        <xsl:apply-templates select="conf-sponsor"/> 
+                                        <xsl:apply-templates select="conf-loc"/>
+                                        <xsl:apply-templates select="conf-date"/>
+                                    </name>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <titleInfo xmlns="http://www.loc.gov/mods/v3">
+                                        <title>
+                                            <xsl:choose>
+                                                <xsl:when test="source">
+                                                    <xsl:apply-templates select="source"></xsl:apply-templates>
+                                                </xsl:when>
+                                              
+                                                <xsl:otherwise>
+                                                    <xsl:apply-templates/>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                            <xsl:value-of select="italic[@toggle='yes']"/> 
+                                        </title>
+                                    </titleInfo>
+                                </xsl:otherwise>
+                            </xsl:choose>-->
+                    </monogr>
+                </biblStruct> 
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="italic" mode="toggle">
+        <title level="j">
+            <xsl:apply-templates/>
+        </title>
     </xsl:template>
 </xsl:stylesheet>

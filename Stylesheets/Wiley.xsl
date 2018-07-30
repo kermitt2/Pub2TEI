@@ -967,10 +967,10 @@
         <date>
             <xsl:choose>
                 <xsl:when test="@pub-type='epub'">
-                    <xsl:attribute name="type">ePublished</xsl:attribute>
+                    <xsl:attribute name="type">e-published</xsl:attribute>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:attribute name="type">Published</xsl:attribute>
+                    <xsl:attribute name="type">published</xsl:attribute>
                 </xsl:otherwise>
             </xsl:choose>
 

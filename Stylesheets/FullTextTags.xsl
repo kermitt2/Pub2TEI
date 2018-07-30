@@ -732,7 +732,7 @@
         </xsl:when>
         <xsl:otherwise>
             <xsl:if test="normalize-space(.)">
-                <hi rend="italic">
+                <hi rend="bold">
                     <xsl:apply-templates/>
                 </hi></xsl:if>
         </xsl:otherwise>
