@@ -1997,6 +1997,7 @@
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>
+            <xsl:apply-templates select="collab"/>
             <xsl:apply-templates select="name"/>
             <xsl:apply-templates select="string-name"/>
            <!-- <xsl:if test="//article-meta/aff and not(//article-meta/aff/@id)">
@@ -3283,6 +3284,16 @@
     </xsl:template>
     <xsl:template match="conf-name">
         <xsl:choose>
+            <xsl:when test="ancestor::conference and normalize-space(.)">
+                <name>
+                    <xsl:apply-templates/>
+                </name>
+            </xsl:when>
+            <xsl:when test="ancestor::nlm-citation">
+                <meeting>
+                    <xsl:apply-templates/>
+                </meeting>
+            </xsl:when>
             <xsl:when test="ancestor::ref">
                 <title level="m">
                     <xsl:apply-templates/>
@@ -3290,11 +3301,6 @@
                 <meeting>
                     <xsl:apply-templates/>
                 </meeting>
-            </xsl:when>
-            <xsl:when test="ancestor::conference and normalize-space(.)">
-                <name>
-                    <xsl:apply-templates/>
-                </name>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -3327,9 +3333,16 @@
         </note>
     </xsl:template>
     <xsl:template match="notes">
-        <note>
-            <xsl:apply-templates/>
-        </note>
+        <xsl:choose>
+            <xsl:when test="ancestor::back">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise>
+                <note>
+                    <xsl:apply-templates/>
+                </note>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <!-- 
     <xsl:template match="notes">

@@ -188,9 +188,13 @@
                         <xsl:apply-templates select="$entry/citauth | $entry/name"/>
                         <xsl:apply-templates select="$entry/comment"/>
                         <xsl:apply-templates select="$entry/conference"/>
+                        <xsl:apply-templates select="$entry/conf-name"/>
                         <xsl:choose>
                             <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
-                                <note type="content"><xsl:value-of select="normalize-space(.)"/></note>
+                                <note type="content">
+                                   <xsl:value-of select="normalize-space(.)"/>
+                                </note>
+                                <xsl:apply-templates select="$entry/access-date"/>
                                 <imprint>
                                     <xsl:apply-templates select="$entry/citpub"/>
                                     <xsl:apply-templates select="$entry/pubplace"/>
@@ -239,6 +243,7 @@
                         <xsl:apply-templates select="$entry/citauth | $entry/name"/>
                         <xsl:apply-templates select="$entry/comment"/>
                         <xsl:apply-templates select="$entry/conference"/>
+                        <xsl:apply-templates select="$entry/conf-name"/>
                         <xsl:choose>
                             <xsl:when test="$entry/year | $entry/volume | $entry/volumeno |$entry/issue | $entry/descendant::fpage|$entry/descendant::lpage">
                                 <note type="content"><xsl:value-of select="normalize-space(.)"/></note>
@@ -369,7 +374,9 @@
                         <xsl:apply-templates select="$entry/source"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <title/>
+                        <title level="m" type="main">
+                            <xsl:value-of select="normalize-space($entry/article-title)"/>
+                        </title>
                     </xsl:otherwise>
                 </xsl:choose>
                 
@@ -507,11 +514,13 @@
         <xsl:apply-templates select="name" mode="authors"/>
         <xsl:apply-templates select="string-name" mode="authors"/>
         <xsl:apply-templates select="collab" mode="authors"/>
+        <xsl:apply-templates select="etal"/>
     </xsl:template>
 
     <xsl:template match="person-group[@person-group-type='editor']">
         <xsl:apply-templates select="name" mode="editors"/>
         <xsl:apply-templates select="string-name" mode="editors"/>
+        <xsl:apply-templates select="etal"/>
     </xsl:template>
 
     <xsl:template match="person-group">
@@ -519,6 +528,7 @@
         <xsl:apply-templates select="name" mode="editors"/>
         <xsl:apply-templates select="string-name" mode="authors"/>
         <xsl:apply-templates select="string-name" mode="editors"/>
+        <xsl:apply-templates select="etal"/>
     </xsl:template>
 
     <xsl:template match="name" mode="editors">
@@ -547,6 +557,12 @@
     </xsl:template>
     <xsl:template match="edg">
         <xsl:apply-templates select="editor"/>
+    </xsl:template>
+    <xsl:template match="etal">
+        <author>
+            <xsl:attribute name="role">et-al</xsl:attribute>
+            <xsl:text>et al.</xsl:text>
+        </author>
     </xsl:template>
     <xsl:template match="editor">
         <editor>

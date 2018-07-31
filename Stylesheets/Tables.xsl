@@ -32,6 +32,11 @@
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
             </xsl:if>
+            <xsl:if test="@position">
+                <xsl:attribute name="rend">
+                    <xsl:value-of select="@position"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:if test="label">
                 <head type="label">
                     <xsl:value-of select="label"/>
@@ -208,12 +213,30 @@
 
     <xsl:template match="th">
         <cell role="th">
+            <xsl:if test="@align">
+                <xsl:attribute name="rend">align(<xsl:value-of select="@align"/>)</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@rowspan">
+                <xsl:attribute name="rows"><xsl:value-of select="@rowspan"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@colspan">
+                <xsl:attribute name="cols"><xsl:value-of select="@colspan"/></xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </cell>
     </xsl:template>
 
     <xsl:template match="td">
         <cell role="td">
+            <xsl:if test="@align">
+                <xsl:attribute name="rend">align(<xsl:value-of select="@align"/>)</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@rowspan">
+                <xsl:attribute name="rows"><xsl:value-of select="@rowspan"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@colspan">
+                <xsl:attribute name="cols"><xsl:value-of select="@colspan"/></xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </cell>
     </xsl:template>

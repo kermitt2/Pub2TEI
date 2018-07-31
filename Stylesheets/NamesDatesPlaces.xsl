@@ -133,6 +133,11 @@
         </date>
     </xsl:template>
 
+    <xsl:template match="access-date">
+        <note type="access-date">
+            <xsl:apply-templates/>
+        </note>
+    </xsl:template>
     <!-- +++++++++++++++ Places ++++++++++++++++ -->
 
     <!-- Springer: City, State, Postcode, Country -->
