@@ -1131,12 +1131,8 @@
                 <xsl:if test="front/article-meta/abstract or front/article-meta/kwd-group or bdy/fp or fm/abs or fm/fp or //pubfm/subject or //suppfm/subject or @xml:lang or front/article-meta/article-categories">
                     <profileDesc>
                         <!-- PL: abstract is moved from <front> to here -->
-                        <xsl:if test="front/article-meta/abstract | bdy/fp | fm/abs">
-                            <xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs"/>
-                        </xsl:if>
-                        <xsl:if test="front/article-meta/trans-abstract |fm/fp | fm/execsumm | fm/websumm">
-                            <xsl:apply-templates select="front/article-meta/trans-abstract| fm/fp | fm/execsumm | fm/websumm"/>
-                        </xsl:if>
+                        <xsl:apply-templates select="front/article-meta/abstract | bdy/fp | fm/abs"/>
+                        <xsl:apply-templates select="front/article-meta/trans-abstract| fm/fp | fm/execsumm | fm/websumm"/>
                         <!-- SG NLM subject -->
                         <xsl:if test="front/article-meta/article-categories/subj-group/subject">
                             <textClass ana="subject">
