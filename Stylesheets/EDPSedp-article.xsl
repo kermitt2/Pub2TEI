@@ -15,9 +15,9 @@
         <xsl:variable name="localISSN">
             <xsl:value-of select="journal-id/issn-paper"/>
         </xsl:variable>
-        <xsl:variable name="journalDescription"
-            select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>
-
+        <xsl:variable name="journalDescription">
+            <xsl:value-of select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>
+        </xsl:variable>
         <TEI>
             <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
