@@ -2005,9 +2005,9 @@
         <xsl:variable name="aff">
             <xsl:value-of select="translate($text,'#','')"/>
         </xsl:variable>
-        <xsl:for-each select="$theAffil">
+        <!--xsl:for-each select="$theAffil">
             <xsl:message>Un bout: <xsl:value-of select="."/></xsl:message>
-        </xsl:for-each>
+        </xsl:for-each-->
         <xsl:variable name="avantVirgule">
             <xsl:choose>
                 <xsl:when test="contains($theAffil,',')">

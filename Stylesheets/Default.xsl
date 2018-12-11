@@ -10,7 +10,7 @@
 
     <!-- Default rules -->
     <xsl:template match="*">
-        <xsl:message terminate="no">Element inconnu: name: <xsl:value-of
+        <xsl:message terminate="no">Unknown element: name: <xsl:value-of
             select="name()"/> - local-name: <xsl:value-of select="local-name()"/> -
             namespace-uri: <xsl:value-of select="namespace-uri()"/> -
                 <xsl:for-each select="attribute::*">

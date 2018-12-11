@@ -3365,9 +3365,9 @@
     <xsl:template name="parseAffiliation">
         <xsl:param name="theAffil"/>
         <xsl:param name="inAddress" select="false()"/>
-        <xsl:for-each select="$theAffil">
+        <!--xsl:for-each select="$theAffil">
             <xsl:message>Un bout: <xsl:value-of select="."/></xsl:message>
-        </xsl:for-each>
+        </xsl:for-each-->
         <xsl:variable name="avantVirgule">
             <xsl:choose>
                 <xsl:when test="contains($theAffil,',')">
