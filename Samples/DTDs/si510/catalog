@@ -1,0 +1,94 @@
+-- .............. Catalog file for Elsevier Science JA DTD ....... --
+-- .............. maintainer Simon Pepping ....................... --
+
+-- ......................... SI DTD .......................... --
+PUBLIC "-//ES//DTD serials issue DTD version 5.1.0//EN//XML" "si510.dtd"
+
+-- ......................... CEP DTD .......................... --
+PUBLIC "-//ES//ELEMENTS common element pool version 1.1.3//EN//XML" "common113.ent"
+PUBLIC "-//ES//ENTITIES extra entities 1.0.0//EN" "ESextra.ent" > 
+
+-- ......................... MathML ........................... --
+PUBLIC "-//W3C//DTD MathML 2.0 Mod ES//EN" "mathml2-mod-ES.dtd"
+
+  -- MathML Character Entities ............................................ --
+
+PUBLIC "-//W3C//DTD MathML 2.0//EN" "mathml2.dtd"
+PUBLIC "-//W3C//ENTITIES MathML 2.0 Qualified Names 1.0//EN" "mathml2-qname-1.mod"
+
+  -- Entity sets from ISO Technical Report 9573-13 ..... --
+
+PUBLIC "-//W3C//ENTITIES Added Math Symbols: Arrow Relations for MathML 2.0//EN" "iso9573-13/isoamsa.ent"
+SYSTEM "isoamsa.ent" "iso9573-13/isoamsa.ent"
+
+PUBLIC "-//W3C//ENTITIES Added Math Symbols: Binary Operators for MathML 2.0//EN" "iso9573-13/isoamsb.ent"
+SYSTEM "isoamsb.ent" "iso9573-13/isoamsb.ent"
+
+PUBLIC "-//W3C//ENTITIES Added Math Symbols: Delimiters for MathML 2.0//EN" "iso9573-13/isoamsc.ent"
+SYSTEM "isoamsc.ent" "iso9573-13/isoamsc.ent"
+
+PUBLIC "-//W3C//ENTITIES Added Math Symbols: Negated Relations for MathML 2.0//EN" "iso9573-13/isoamsn.ent"
+SYSTEM "isoamsn.ent" "iso9573-13/isoamsn.ent"
+
+PUBLIC "-//W3C//ENTITIES Added Math Symbols: Ordinary for MathML 2.0//EN" "iso9573-13/isoamso.ent"
+SYSTEM "isoamso.ent" "iso9573-13/isoamso.ent"
+
+PUBLIC "-//W3C//ENTITIES Added Math Symbols: Relations for MathML 2.0//EN" "iso9573-13/isoamsr.ent"
+SYSTEM "isoamsr.ent" "iso9573-13/isoamsr.ent"
+
+PUBLIC "-//W3C//ENTITIES Greek Symbols for MathML 2.0//EN" "iso9573-13/isogrk3.ent"
+SYSTEM "isogrk3.ent" "iso9573-13/isogrk3.ent"
+
+PUBLIC "-//W3C//ENTITIES Math Alphabets: Fraktur for MathML 2.0//EN" "iso9573-13/isomfrk.ent"
+SYSTEM "isomfrk.ent" "iso9573-13/isomfrk.ent"
+
+PUBLIC "-//W3C//ENTITIES Math Alphabets: Open Face for MathML 2.0//EN" "iso9573-13/isomopf.ent"
+SYSTEM "isomopf.ent" "iso9573-13/isomopf.ent"
+
+PUBLIC "-//W3C//ENTITIES Math Alphabets: Script for MathML 2.0//EN" "iso9573-13/isomscr.ent"
+SYSTEM "isomscr.ent" "iso9573-13/isomscr.ent"
+
+PUBLIC "-//W3C//ENTITIES General Technical for MathML 2.0//EN" "iso9573-13/isotech.ent"
+SYSTEM "isotech.ent" "iso9573-13/isotech.ent"
+
+  -- Entity sets from informative annex to ISO 8879:1986 (SGML) ....... --
+
+PUBLIC "-//W3C//ENTITIES Box and Line Drawing for MathML 2.0//EN" "iso8879/isobox.ent"
+SYSTEM "isobox.ent" "iso8879/isobox.ent"
+
+PUBLIC "-//W3C//ENTITIES Russian Cyrillic for MathML 2.0//EN" "iso8879/isocyr1.ent"
+SYSTEM "isocyr1.ent" "iso8879/isocyr1.ent"
+
+PUBLIC "-//W3C//ENTITIES Non-Russian Cyrillic for MathML 2.0//EN" "iso8879/isocyr2.ent"
+SYSTEM "isocyr2.ent" "iso8879/isocyr2.ent"
+
+PUBLIC "-//W3C//ENTITIES Diacritical Marks for MathML 2.0//EN" "iso8879/isodia.ent"
+SYSTEM "isodia.ent" "iso8879/isodia.ent"
+
+PUBLIC "-//W3C//ENTITIES Added Latin 1 for MathML 2.0//EN" "iso8879/isolat1.ent"
+SYSTEM "isolat1.ent" "iso8879/isolat1.ent"
+
+PUBLIC "-//W3C//ENTITIES Added Latin 2 for MathML 2.0//EN" "iso8879/isolat2.ent"
+SYSTEM "isolat2.ent" "iso8879/isolat2.ent"
+
+PUBLIC "-//W3C//ENTITIES Numeric and Special Graphic for MathML 2.0//EN" "iso8879/isonum.ent"
+SYSTEM "isonum.ent" "iso8879/isonum.ent"
+
+PUBLIC "-//W3C//ENTITIES Publishing for MathML 2.0//EN" "iso8879/isopub.ent"
+SYSTEM "isopub.ent" "iso8879/isopub.ent"
+
+  -- New characters defined by MathML ............................ --
+
+PUBLIC "-//W3C//ENTITIES Extra for MathML 2.0//EN" "mathml/mmlextra.ent"
+SYSTEM "mmlextra.ent" "mathml/mmlextra.ent"
+
+  -- MathML aliases for characters defined above ................. --
+
+PUBLIC "-//W3C//ENTITIES Aiases for MathML 2.0//EN" "mathml/mmlalias.ent"
+SYSTEM "mmlalias.ent" "mathml/mmlalias.ent"
+
+  -- end of MathML Character Entity section --
+
+-- ......................... CALS table model .................. --
+
+PUBLIC "-//OASIS//DTD XML Exchange Table Model 19990315//EN" "DTD/calstable/calstblx.dtd"

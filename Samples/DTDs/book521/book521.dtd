@@ -1,0 +1,237 @@
+<!--    Elsevier Book DTD version 5.2.1
+
+        Copyright (c) 2007 Elsevier Inc.
+        $Id: $
+-->
+
+<!--    Elsevier Book DTD 5.2 (version 5.2.1)
+
+        Refer to the accompanying release note for more information.
+
+        Permission to copy and distribute verbatim copies of this document is granted, 
+        provided this notice is included in all copies, but changing it is not allowed. 
+-->
+
+<!--    Supported doctypes: book, chapter, simple-chapter, examination, fb-non-chapter,
+	glossary, index, introduction, bibliography
+
+	Typical invocation:
+
+        <!DOCTYPE book 
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">
+
+        or
+
+        <!DOCTYPE chapter 
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">	
+          
+        or
+        
+        <!DOCTYPE simple-chapter
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">	
+          
+        or
+
+        <!DOCTYPE examination
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">
+        or
+
+        <!DOCTYPE fb-non-chapter
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">	 
+          
+        or
+
+        <!DOCTYPE glossary 
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">	     
+        
+        or
+
+        <!DOCTYPE index
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">	    
+          
+        or
+
+        <!DOCTYPE introduction
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">	     
+          
+        or
+        
+        <!DOCTYPE bibliography
+          PUBLIC "-//ES//DTD book DTD version 5.2.1//EN//XML"
+          "book521.dtd">	         
+-->
+
+<!-- set local parameter entities -->
+
+<!ENTITY % local.spar.data   "| ce:index-flag">
+<!ENTITY % local.par.data    "| ce:index-flag">
+<!ENTITY % local.textfn.data "| ce:br">
+
+<!-- include the latest version of the common element pool -->
+
+<!ENTITY % common.ent 
+    PUBLIC "-//ES//ELEMENTS common element pool version 1.1.3//EN//XML"
+    "common113.ent">
+%common.ent;
+
+<!-- namespaces and public identifiers -->
+
+<!ENTITY % ES.xmlns "'http://www.elsevier.com/xml/bk/dtd'">
+
+<!-- attribute type entities -->
+
+<!ENTITY % docsubtype "(bk|chp|scp|exm|gls|idx|itr|bib|app|bio|for|pre|ack|ctr|rev|htu|ded)">
+
+<!-- attribute group entities -->
+
+<!ENTITY % top-level.att 
+               "xmlns           CDATA               #FIXED  %ES.xmlns;
+                version         CDATA               #FIXED  '5.2'
+                xmlns:ce        CDATA               #FIXED  %ESCE.xmlns;
+                xmlns:xlink     CDATA               #FIXED  %XLINK.xmlns;
+                xml:lang        %language;          'en'">
+
+<!-- elsevier-book -->
+
+<!ELEMENT   book                ( info, top, ce:floats?, front?, body, rear? )>
+<!ATTLIST   book
+	        %top-level.att; 
+	        docsubtype      %docsubtype;        #FIXED  "bk">
+
+<!ELEMENT   info                ( ce:pii, ce:doi?, ce:isbn, ce:issn?, ce:document-thread?,
+                                  ce:copyright, ce:imprint?, ce:doctopics? )>
+
+<!ELEMENT   top                 ( %titles;, ce:edition?, ce:copyright-line, cover-image?, 
+                                  ce:editors*, ce:author-group*, dedication*, ce:sections )>
+
+<!ELEMENT   cover-image         ( ce:figure )>
+
+<!ELEMENT   dedication		( ce:simple-para+ ) > 
+
+<!ELEMENT   front               ( ce:include-item+ ) >
+
+<!ELEMENT   body                ( volume | part | section | ce:include-item )+ >
+
+<!ELEMENT   volume              ( ce:label?, ce:title?, ce:author-group*, 
+				  ( part | section | ce:include-item )+ )>
+<!ATTLIST   volume
+	        %common-reqref.att; 
+                %common-role.att;>
+
+<!ELEMENT   part                ( ce:label?, ce:title?, ce:author-group*, 
+                                  ( section | ce:include-item | ce:further-reading )+ ) >
+<!ATTLIST   part
+	      %common-reqref.att; 
+              %common-role.att;>
+
+<!ELEMENT   section             ( ce:label?, ce:title?, ce:author-group*, 
+                                  ( ce:include-item | ce:further-reading )+ )>
+<!ATTLIST   section
+	      %common-reqref.att; 
+              %common-role.att;>
+
+<!ELEMENT   introduction        ( info, ce:floats?, ce:title, ce:author-group*,
+                                  ce:sections?, ( ce:bibliography | ce:further-reading )* )>
+<!ATTLIST   introduction
+                %common-reqref.att; 
+	        %top-level.att;
+	        %common-role.att;
+	        docsubtype      %docsubtype;        #FIXED  "itr"> 
+
+<!ELEMENT   chapter             ( ce:footnote*, info, ce:floats?, ce:label?, ce:title, ce:subtitle?,
+                                  ce:author-group*, ce:displayed-quote?, poem?, 
+                                  outline?, objectives?, ce:nomenclature?, ce:acknowledgment?,
+                                  ce:intro?, ( ce:sections | subchapter | exam )+, 
+                                  ( ( ce:bibliography | ce:further-reading )+,
+                                    ( ce:section | exam )* )? )>
+<!ATTLIST   chapter
+                %common-reqref.att;
+                %top-level.att; 
+                %common-role.att;
+                docsubtype      %docsubtype;        #FIXED  "chp"> 
+                
+<!ELEMENT   simple-chapter      ( ce:footnote*, info, ce:floats?, ce:label?, ce:title, ce:subtitle?,
+                                  ce:author-group*, ce:displayed-quote?, poem?, 
+                                  outline?, objectives?, ce:nomenclature?, ce:acknowledgment?,
+                                  ce:intro?, ( ce:sections | subchapter | exam )*, 
+                                  ( ( ce:bibliography | ce:further-reading )+,
+                                    ( ce:section | exam )* )? )>
+<!ATTLIST   simple-chapter
+                %common-reqref.att;
+                %top-level.att;
+                %common-role.att;
+                docsubtype      %docsubtype;        #FIXED  "scp"> 
+
+<!ELEMENT   subchapter          ( ce:footnote*, ce:label?, ce:title, ce:author-group*, 
+                                  ce:displayed-quote?, ce:nomenclature?, ce:acknowledgment?, ce:intro?, 
+                                  ( ce:sections | subchapter | exam )+,
+                                  ( ce:bibliography | ce:further-reading )+,
+                                  ( ce:section | exam )* )>
+<!ATTLIST   subchapter
+	        %common-reqref.att; 
+                %common-role.att;>
+
+<!ELEMENT   rear                ( rearpart+ )>
+
+<!ELEMENT   rearpart            ( ce:label?, ce:title?, ce:author-group*, ce:include-item+ )>
+<!ATTLIST   rearpart
+	        %common-reqref.att; 
+	        %common-role.att;>
+
+<!ELEMENT   fb-non-chapter      ( info, ce:floats?, ce:label?, ce:title, 
+                                  ( ce:author-group | ce:nomenclature | ce:para | ce:section )*, 
+                                  ce:bibliography? , ce:further-reading?)>
+<!ATTLIST   fb-non-chapter
+	        %common-reqref.att; 
+	        %top-level.att; 
+                %common-role.att;
+	        docsubtype      %docsubtype;        #REQUIRED>
+
+<!ELEMENT   exam                ( ce:title?, ce:exam-questions, ce:exam-answers? )>
+
+<!ELEMENT   outline             ( ce:list )>
+
+<!ELEMENT   objectives          ( ce:section-title?, ce:para+ )>
+
+<!ELEMENT   poem		( ce:title?, ce:author?, stanza+, ce:source? )>
+
+<!ELEMENT   stanza		( line+ )>
+
+<!ELEMENT   line		( %richstring.data; )* >
+
+<!ELEMENT   examination         ( info, ce:floats?, ce:label?, ce:title, ce:author-group*,
+                                  ce:intro?, exam* )>
+<!ATTLIST   examination
+	        %common-reqref.att; 
+	        %top-level.att;
+                %common-role.att; 
+	        docsubtype      %docsubtype;        #FIXED  "exm">
+
+<!ELEMENT   glossary            ( info, ce:label?, ce:glossary* )>
+<!ATTLIST   glossary
+	        %common-reqref.att; 
+	        %top-level.att;
+                %common-role.att;
+	        docsubtype      %docsubtype;        #FIXED  "gls">
+
+<!ELEMENT   index               ( info, ce:label?, ce:index* )>
+<!ATTLIST   index
+	        %common-reqref.att; 
+	        %top-level.att;
+                %common-role.att;
+	        docsubtype      %docsubtype;        #FIXED  "idx">
+
+<!ELEMENT   bibliography        ( info, ce:label?, ce:further-reading* )>
+<!ATTLIST   bibliography
+                %common-reqref.att; 
+                %top-level.att;
+                %common-role.att;
+	        docsubtype      %docsubtype;        #FIXED  "bib">

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--    
+        Elsevier CONTRAST schema for EW-Out deliveries for journal items
+        S5, S100, S200 and S250
+        Individual Q300, S300, S350
+        Version 2010.2
+
+        Copyright (c) 2003-2010 Elsevier B.V.
+        $Id: items.xsd,v 1.2 2010/06/28 12:13:47 grajasek Exp $
+-->
+<!--    Permission to copy and distribute verbatim copies of this document is granted, 
+        provided this notice is included in all copies, but changing it is not allowed. 
+
+        Documentation available at http://www.elsevier.com/locate/xml
+-->
+<!--    Typical usage:
+
+        <dataset 
+          xmlns="http://www.elsevier.com/xml/schema/transport/ew-xcr/journal-2010.2/items"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.elsevier.com/xml/schema/transport/ew-xcr/journal-2010.2/items
+            http://www.elsevier.com/xml/schema/transport/ew-xcr/journal-2010.2/items.xsd"
+          schema-version="2010.2">
+
+-->
+<xs:schema targetNamespace="http://www.elsevier.com/xml/schema/transport/ew-xcr/journal-2010.2/items" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.elsevier.com/xml/schema/transport/ew-xcr/journal-2010.2/items" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:include schemaLocation="journal-item-issue.xsd"/>
+    <xs:element name="dataset">
+        <xs:annotation>
+            <xs:documentation>CONTRAST EW-Out dataset for items</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dataset-unique-ids"/>
+                <xs:element name="dataset-properties">
+                    <xs:annotation>
+                        <xs:documentation>Information about the dataset</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dataset-action" type="dataset-actions-list">
+                                <xs:annotation>
+                                    <xs:documentation>Specifies what needs to happen with the dataset (LOAD, RELOAD)</xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                            <xs:element name="production-process">
+                                <xs:annotation>
+                                    <xs:documentation>Indication of the production process (CAP)</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                    <xs:restriction base="production-processes-list">
+                                        <xs:enumeration value="CAP"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="dataset-content">
+                    <xs:annotation>
+                        <xs:documentation>Content of the dataset</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="journal-item" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation>One or more journal items. Has attribute 'type'</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="version">
+                                            <xs:annotation>
+                                                <xs:documentation>Version number and stage of the item</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="version-number">
+                                                        <xs:annotation>
+                                                            <xs:documentation>Version number (e.g., 1.1, 1.2, 1.419, 3.2, S100.1, S300.6, H300.3, etc.)</xs:documentation>
+                                                        </xs:annotation>
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="version-number-patterns">
+                                                                <xs:pattern value="[0-6]\.[1-9]\d{0,3}"/>
+                                                                <xs:pattern value="((S5)|(S100)|(S200)|(S250)|(Q300)|(S300)|(S350))\.[1-9]\d{0,3}"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element name="stage">
+                                                        <xs:annotation>
+                                                            <xs:documentation>Stage of the deliverable (S5, S100, S200)</xs:documentation>
+                                                        </xs:annotation>
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="stages-list">
+                                                                <xs:enumeration value="S5"/>
+                                                                <xs:enumeration value="S100"/>
+                                                                <xs:enumeration value="S200"/>
+                                                                <xs:enumeration value="S250"/>
+                                                                <xs:enumeration value="Q300"/>
+                                                                <xs:enumeration value="S300"/>
+                                                                <xs:enumeration value="S350"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="journal-item-unique-ids">
+                                            <xs:annotation>
+                                                <xs:documentation>Identifications that uniquely determine the journal item</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element ref="pii"/>
+                                                    <xs:element ref="doi" minOccurs="0"/>
+                                                    <xs:element name="jid-aid">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element ref="jid"/>
+                                                                <xs:element ref="issn"/>
+                                                                <xs:element name="aid" type="xs:token">
+                                                                    <xs:annotation>
+                                                                        <xs:documentation>Article AID</xs:documentation>
+                                                                    </xs:annotation>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element ref="journal-item-properties">
+                                            <xs:annotation>
+                                                <xs:documentation>Properties of the item</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="files-info">
+                                            <xs:annotation>
+                                                <xs:documentation>Files belonging to the item</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ml" maxOccurs="2" minOccurs="0">
+                                                        <xs:annotation>
+                                                            <xs:documentation>SGML/XML manifestations</xs:documentation>
+                                                        </xs:annotation>
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element ref="pathname"/>
+                                                                <xs:element ref="filesize"/>
+                                                                <xs:element name="purpose">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="ml-purposes-list">
+                                                                            <xs:enumeration value="MAIN"/>
+                                                                            <xs:enumeration value="CHANGES"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="dtd-version" type="ml-versions-list-journal-item"/>
+                                                                <xs:element name="weight" type="ml-weights-list"/>
+                                                                <xs:element ref="asset" minOccurs="0" maxOccurs="unbounded">
+                                                                    <xs:annotation>
+                                                                        <xs:documentation>Asset belonging to an XML/SGML file</xs:documentation>
+                                                                    </xs:annotation>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="web-pdf" minOccurs="0" maxOccurs="2">
+                                                        <xs:annotation>
+                                                            <xs:documentation>Web PDF manifestations</xs:documentation>
+                                                        </xs:annotation>
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element ref="pathname"/>
+                                                                <xs:element ref="filesize"/>
+                                                                <xs:element name="purpose">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="web-pdf-purposes-list">
+                                                                            <xs:enumeration value="MAIN"/>
+                                                                            <xs:enumeration value="MAIN-ABRIDGED"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <xs:element name="pdf-version" type="web-pdf-versions-list"/>
+                                                                <xs:element name="pdf-property" type="web-pdf-properties-list"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="raw-text" minOccurs="0">
+                                                        <xs:annotation>
+                                                            <xs:documentation>Raw ASCII text</xs:documentation>
+                                                        </xs:annotation>
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element ref="pathname"/>
+                                                                <xs:element ref="filesize"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="journal-item-types-list" use="optional" default="stand-alone"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="schema-version" type="xs:token" use="required" fixed="2010.2"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

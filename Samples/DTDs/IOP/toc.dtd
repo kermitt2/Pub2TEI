@@ -1,0 +1,130 @@
+<!-- ###########################################################################
+#
+#   File name: toc.dtd
+#   Project: Journals
+#   Description: DTD for Tables of Contents
+#
+#
+#   External documents:
+#
+#
+#   Author: Peter Haworth
+#   Date created: 13/08/1999
+#
+#   $Id$
+#
+#   Copyright Institute of Physics Publishing 1999-2009
+#
+############################################################################ -->
+
+
+<!-- Top level element -->
+<!ELEMENT toc (ident,dates,contents,alt_contents?)>
+
+<!-- Include HTML definitions -->
+<!ENTITY % html_include SYSTEM "html.inc">
+%html_include;
+<!ENTITY % img_include SYSTEM "img.inc">
+%img_include;
+
+<!-- Include other common definitions -->
+<!ENTITY % common_include SYSTEM "common.inc">
+%common_include;
+
+<!-- <ident> Provides indentification of the issue -->
+<!ELEMENT ident (issn,volume,issue,issue_title?,page_range?,special_info?)>
+
+<!ELEMENT issn (#PCDATA)>
+<!ELEMENT volume (#PCDATA)>
+<!ELEMENT issue (#PCDATA)>
+<!ATTLIST issue
+  type (regular|special|supplementary|mixed) #REQUIRED
+  status (accel|complete|open) #REQUIRED
+  title CDATA #IMPLIED
+  media NMTOKENS #IMPLIED
+  toc_links (t|f) "t"
+> <!-- title would be something like "Winter" or "Supplement" -->
+  <!-- media is a list of 'print' 'electronic'
+       when different to the journal's default -->
+  <!-- toc_links allows the issue to be shown as one of the
+       current/open issue links on the journal homepage -->
+<!ELEMENT issue_title %html_line;>
+<!ELEMENT page_range (#PCDATA)>
+<!ATTLIST page_range
+  fixed (1) #IMPLIED
+> <!-- fixed means "Don't calculate from article page ranges -->
+<!ELEMENT special_info %html_line;>	<!-- XXX Should this be %html_text;? -->
+
+<!-- <dates> holds various dates -->
+<!ELEMENT dates (date_cover,date_first_art?,date_last_art?,
+  date_modified?,date_modified_history*,date_epub?,date_alert?)>
+
+<!ELEMENT date_cover (#PCDATA)>
+<!ATTLIST date_cover
+  readable CDATA #REQUIRED
+>
+
+<!ELEMENT date_first_art (#PCDATA)>	<!-- Date first article was added -->
+<!ELEMENT date_last_art (#PCDATA)>	<!-- Date most recent art was added -->
+<!-- date_modified{,_history} defined in common.inc -->
+<!ELEMENT date_epub (#PCDATA)>		<!-- Electronic publication date -->
+<!ELEMENT date_alert (#PCDATA)>		<!-- Date became alertable -->
+
+<!-- <contents> holds the actual table of contents -->
+<!-- If <art_num> is used instead of <article>,
+     metadata is fetched from the header file -->
+<!ELEMENT contents (alt_title?,(article|art_num|heading|subheading)*)> <!-- This allows empty ToCs -->
+<!ATTLIST contents
+  browse_order (normal|reverse) "normal"
+  default_toc (yes|no) #IMPLIED
+>
+
+<!ELEMENT article (art_num,
+  art_title+,art_author,art_page?,
+  art_full?,art_special_material?,art_attributes?,
+  art_focus?,art_subject_areas?,
+  art_test?
+)>
+<!ELEMENT art_num (#PCDATA)>		<!-- Article number -->
+<!ELEMENT art_title %html_line;>
+<!ATTLIST art_title
+  lang %languages; #IMPLIED
+>
+<!ELEMENT art_author %html_line;>
+<!ELEMENT art_page (#PCDATA)>
+<!ELEMENT art_test EMPTY>		<!-- Only present for test articles -->
+<!ELEMENT art_full EMPTY>		<!-- Fulltext filenames -->
+<!ATTLIST art_full %fulltext_atts;>
+
+<!ELEMENT art_special_material (#PCDATA)> <!-- Text replaces "Multimedia" -->
+<!ATTLIST art_special_material %special_atts;>
+
+<!ELEMENT art_attributes EMPTY>		<!-- Number of reference links -->
+<!ATTLIST art_attributes
+  %link_atts;
+  %type_atts;
+>
+
+<!ELEMENT art_focus EMPTY>		<!-- Special interest marker -->
+<!ATTLIST art_focus
+  img NMTOKEN #REQUIRED
+  alt CDATA #REQUIRED
+  group CDATA #REQUIRED
+  url CDATA #IMPLIED
+>
+
+<!ELEMENT art_subject_areas (#PCDATA)>	<!-- Subject area, used for NJP -->
+
+<!-- <alt_contents> holds an alternate sorting of the ToC -->
+<!ELEMENT alt_contents (alt_title,(art_num|heading|subheading)*)>
+<!ATTLIST alt_contents
+  browse_order (normal|reverse) "normal"
+  default_toc (yes|no) #IMPLIED
+>
+
+<!ELEMENT alt_title %html_line;>
+
+<!ELEMENT heading %html_line;>
+<!ELEMENT subheading %html_line;>
+
+

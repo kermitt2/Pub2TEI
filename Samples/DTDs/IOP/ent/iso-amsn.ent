@@ -1,0 +1,64 @@
+<!-- ISO AMS N: Negated Relations -->
+<!-- $Id$ -->
+<!-- Derived from the corresponding ISO 8879 standard entity set -->
+<!-- Checked against MathML 2.0 2nd Ed -->
+
+<!ENTITY gnap	"&#x2A8A;"> <!-- greater, not approximate -->
+<!ENTITY gnE	"&#x2269;"> <!-- greater, not dbl equals -->
+<!ENTITY gne	"&#x2A88;"> <!-- greater, not equals -->
+<!ENTITY gnsim	"&#x22E7;"> <!-- greater, not similar -->
+<!ENTITY gvnE	"&#x2269;"> <!-- gt, vert, not dbl eq. MathML: x2269xfe00 -->
+<!ENTITY lnap	"&#x2A89;"> <!-- less, not approximate -->
+<!ENTITY lnE	"&#x2268;"> <!-- less, not double equals -->
+<!ENTITY lne	"&#x2A87;"> <!-- less, not equals -->
+<!ENTITY lnsim	"&#x22E6;"> <!-- less, not similar -->
+<!ENTITY lvnE	"&#x2268;"> <!-- less, ver, not dbl eq. MathML: x2268xfe00 -->
+<!ENTITY nap	"&#x2249;"> <!-- not approximate -->
+<!ENTITY ncong	"&#x2247;"> <!-- not congruent with -->
+<!ENTITY nequiv	"&#x2262;"> <!-- not identical with -->
+<!ENTITY ngE	"&#x2271;"> <!-- not greater, dbl equals. MathML: x2267x0338 -->
+<!ENTITY nge	"&#x2271;"> <!-- not greater-than-or-equal -->
+<!ENTITY nges	"&#x2271;"> <!-- not gt-or-eq, slanted. MathML: x2A7Ex0338 -->
+<!ENTITY ngt	"&#x226F;"> <!-- not greater-than -->
+<!ENTITY nlE	"&#x2270;"> <!-- not less, dbl equals. MathML: x2266x0338 -->
+<!ENTITY nle	"&#x2270;"> <!-- not less-than-or-equal -->
+<!ENTITY nles	"&#x2270;"> <!-- not less-or-eq, slant. MathML: x27ADx0338 -->
+<!ENTITY nlt	"&#x226E;"> <!-- not less-than -->
+<!ENTITY nltri	"&#x22EA;"> <!-- not left triangle -->
+<!ENTITY nltrie	"&#x22EC;"> <!-- not l tri, eq -->
+<!ENTITY nmid	"&#x2224;"> <!-- DOES NOT DIVIDE -->
+<!ENTITY npar	"&#x2226;"> <!-- not parallel -->
+<!ENTITY npr	"&#x2280;"> <!-- not precedes -->
+<!ENTITY npre	"&#x22E0;"> <!-- not precedes, equals. MathML: x2AAFx0338 -->
+<!ENTITY nrtri	"&#x22EB;"> <!-- not rt triangle -->
+<!ENTITY nrtrie	"&#x22ED;"> <!-- not rt tri, eq -->
+<!ENTITY nsc	"&#x2281;"> <!-- not succeeds -->
+<!ENTITY nsce	"&#x22E1;"> <!-- not succeeds, curly eq -->
+<!ENTITY nsim	"&#x2241;"> <!-- not similar -->
+<!ENTITY nsime	"&#x2244;"> <!-- not similar, equals -->
+<!ENTITY nsmid	"&#x2224;"> <!-- DOES NOT DIVIDE -->
+<!ENTITY nspar	"&#x2226;"> <!-- not short parallel -->
+<!ENTITY nsub	"&#x2284;"> <!-- not subset -->
+<!ENTITY nsubE	"&#x2288;"> <!-- not subset, dbl eq. MathML: x2AC5x0338 -->
+<!ENTITY nsube	"&#x2288;"> <!-- not subset, equals -->
+<!ENTITY nsup	"&#x2285;"> <!-- not superset -->
+<!ENTITY nsupE	"&#x2289;"> <!-- not superset, dbl eq. MathML: x2AC6x0338 -->
+<!ENTITY nsupe	"&#x2289;"> <!-- not superset, equals -->
+<!ENTITY nVDash	"&#x22AF;"> <!-- not dbl vert, dbl dash -->
+<!ENTITY nVdash	"&#x22AE;"> <!-- not dbl vertical, dash -->
+<!ENTITY nvDash	"&#x22AD;"> <!-- not vertical, dbl dash -->
+<!ENTITY nvdash	"&#x22AC;"> <!-- not vertical, dash -->
+<!ENTITY prnap	"&#x2AB9;"> <!-- precedes, not approx -->
+<!ENTITY prnE	"&#x2AB5;"> <!-- precedes, not dbl eq -->
+<!ENTITY prnsim	"&#x22E8;"> <!-- precedes, not similar -->
+<!ENTITY scnap	"&#x2ABA;"> <!-- succeeds, not approx -->
+<!ENTITY scnE	"&#x2AB6;"> <!-- succeeds, not dbl eq -->
+<!ENTITY scnsim	"&#x22E9;"> <!-- succeeds, not similar -->
+<!ENTITY subnE	"&#x2ACB;"> <!-- subset, not dbl eq -->
+<!ENTITY subne	"&#x228A;"> <!-- subset, not equals -->
+<!ENTITY supnE	"&#x2ACC;"> <!-- superset, not dbl eq -->
+<!ENTITY supne	"&#x228B;"> <!-- superset, not equals -->
+<!ENTITY vsubnE	"&#x2ACB;"> <!-- subset not dbl eq, var. MathML: x2ACBxFE00 -->
+<!ENTITY vsubne	"&#x228A;"> <!-- subset, not eq, var. Math: x228AxFE00 -->
+<!ENTITY vsupnE	"&#x2ACC;"> <!-- super, not dbl eq, var. MathML: x2ACCxFE00 -->
+<!ENTITY vsupne	"&#x228B;"> <!-- super, not eq, var. MathML: x228BxFE00 -->

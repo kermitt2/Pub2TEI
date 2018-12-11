@@ -1,0 +1,1475 @@
+<!-- ###########################################################################
+#
+#   File name: latexent.ent
+#   Project: Journals
+#   Description: Latex control sequences as entities for inclusion in Journals DTDs
+#
+#
+#   External documents:
+#
+#
+#   Author: Peter Haworth/A J Cox
+#   Date created: 15/03/00
+#
+#   sccs version: 1.00    last changed: 15/03/00
+#
+#   Copyright Institute of Physics Publishing 1999
+#   Portions Copyright International Organization for Standardization 1986
+############################################################################ -->
+
+<!ENTITY percent  "&#37;">     <!-- percent sign -->
+<!ENTITY ndash  "-">       <!-- en dash to hyphen -->
+<!ENTITY mdash  " - ">     <!-- em dash to space hyphen space -->
+<!ENTITY endash  "-">       <!-- en dash to hyphen -->
+<!ENTITY emdash  " - ">     <!-- em dash to space hyphen space -->
+<!ENTITY lquot "'">         <!-- left quote -->
+<!ENTITY rquot "'">         <!-- right quote -->
+<!ENTITY equal " = ">      <!-- equal sign -->
+<!ENTITY minus "-">        <!-- minus sign -->
+<!ENTITY underscore "_">        <!-- underscore -->
+<!ENTITY plus "+">        <!-- minus sign -->
+<!ENTITY lslash  "l">      <!-- l slash approximated to l  -->
+<!ENTITY Lslash  "L">      <!-- L slash approximated to L (NB sometimes used in maths -->
+                            <!-- where this approximation not appropriate!, graphic needed) -->
+                            <!-- graphic not used normally as it screws up names -->
+<!ENTITY pounds  "&#163;"> <!-- pound sign to CN 163 -->
+<!ENTITY sim  "~">         <!-- tilde (\sim) to ~ (CN 126) -->
+<!ENTITY registered "circled R">  <!-- registered trademark -->
+<!ENTITY TM "<SUP>TM</SUP>">  <!-- trademark -->
+<!ENTITY trademark "<SUP>TM</SUP>">  <!-- trademark -->
+
+
+<!ENTITY dollar  "$">
+<!ENTITY calA  "Script A">
+<!ENTITY calB  "Script B">
+<!ENTITY calC  "Script C">
+<!ENTITY calD  "Script D">
+<!ENTITY calE  "Script E">
+<!ENTITY calF  "Script F">
+<!ENTITY calG  "Script G">
+<!ENTITY calH  "Script H">
+<!ENTITY calI  "Script I">
+<!ENTITY calJ  "Script J">
+<!ENTITY calK  "Script K">
+<!ENTITY calL  "Script L">
+<!ENTITY calM  "Script M">
+<!ENTITY calN  "Script N">
+<!ENTITY calO  "Script O">
+<!ENTITY calP  "Script P">
+<!ENTITY calQ  "Script Q">
+<!ENTITY calR  "Script R">
+<!ENTITY calS  "Script S">
+<!ENTITY calT  "Script T">
+<!ENTITY calU  "Script U">
+<!ENTITY calV  "Script V">
+<!ENTITY calW  "Script W">
+<!ENTITY calX  "Script X">
+<!ENTITY calY  "Script Y">
+<!ENTITY calZ  "Script Z">
+<!ENTITY BbbA  "Bbb A">
+<!ENTITY BbbB  "Bbb B">
+<!ENTITY BbbC  "Bbb C">
+<!ENTITY BbbD  "Bbb D">
+<!ENTITY BbbE  "Bbb E">
+<!ENTITY BbbF  "Bbb F">
+<!ENTITY BbbG  "Bbb G">
+<!ENTITY BbbH  "Bbb H">
+<!ENTITY BbbI  "Bbb I">
+<!ENTITY BbbJ  "Bbb J">
+<!ENTITY BbbK  "Bbb K">
+<!ENTITY BbbL  "Bbb L">
+<!ENTITY BbbM  "Bbb M">
+<!ENTITY BbbN  "Bbb N">
+<!ENTITY BbbO  "Bbb O">
+<!ENTITY BbbP  "Bbb P">
+<!ENTITY BbbQ  "Bbb Q">
+<!ENTITY BbbR  "Bbb R">
+<!ENTITY BbbS  "Bbb S">
+<!ENTITY BbbT  "Bbb T">
+<!ENTITY BbbU  "Bbb U">
+<!ENTITY BbbV  "Bbb V">
+<!ENTITY BbbW  "Bbb W">
+<!ENTITY BbbX  "Bbb X">
+<!ENTITY BbbY  "Bbb Y">
+<!ENTITY BbbZ  "Bbb Z">
+<!ENTITY fraka  "fraktur a">
+<!ENTITY frakb  "fraktur b">
+<!ENTITY frakc  "fraktur c">
+<!ENTITY frakd  "fraktur d">
+<!ENTITY frake  "fraktur e">
+<!ENTITY frakf  "fraktur f">
+<!ENTITY frakg  "fraktur g">
+<!ENTITY frakh  "fraktur h">
+<!ENTITY fraki  "fraktur i">
+<!ENTITY frakj  "fraktur j">
+<!ENTITY frakk  "fraktur k">
+<!ENTITY frakl  "fraktur l">
+<!ENTITY frakm  "fraktur m">
+<!ENTITY frakn  "fraktur n">
+<!ENTITY frako  "fraktur o">
+<!ENTITY frakp  "fraktur p">
+<!ENTITY frakq  "fraktur q">
+<!ENTITY frakr  "fraktur r">
+<!ENTITY fraks  "fraktur s">
+<!ENTITY frakt  "fraktur t">
+<!ENTITY fraku  "fraktur u">
+<!ENTITY frakv  "fraktur v">
+<!ENTITY frakw  "fraktur w">
+<!ENTITY frakx  "fraktur x">
+<!ENTITY fraky  "fraktur y">
+<!ENTITY frakz  "fraktur z">
+<!ENTITY frakA  "fraktur A">
+<!ENTITY frakB  "fraktur B">
+<!ENTITY frakC  "fraktur C">
+<!ENTITY frakD  "fraktur D">
+<!ENTITY frakE  "fraktur E">
+<!ENTITY frakF  "fraktur F">
+<!ENTITY frakG  "fraktur G">
+<!ENTITY frakH  "fraktur H">
+<!ENTITY frakI  "fraktur I">
+<!ENTITY frakJ  "fraktur J">
+<!ENTITY frakK  "fraktur K">
+<!ENTITY frakL  "fraktur L">
+<!ENTITY frakM  "fraktur M">
+<!ENTITY frakN  "fraktur N">
+<!ENTITY frakO  "fraktur O">
+<!ENTITY frakP  "fraktur P">
+<!ENTITY frakQ  "fraktur Q">
+<!ENTITY frakR  "fraktur R">
+<!ENTITY frakS  "fraktur S">
+<!ENTITY frakT  "fraktur T">
+<!ENTITY frakU  "fraktur U">
+<!ENTITY frakV  "fraktur V">
+<!ENTITY frakW  "fraktur W">
+<!ENTITY frakX  "fraktur X">
+<!ENTITY frakY  "fraktur Y">
+<!ENTITY frakZ  "fraktur Z">
+<!ENTITY graveA  "<i>&#192;</i>">   <!-- A grave to CN 192 -->
+<!ENTITY graveE  "<i>&#200;</i>">   <!-- E grave to CN 200 -->
+<!ENTITY graveI  "<i>&#204;</i>">   <!-- I grave to CN 204 -->
+<!ENTITY graveO  "<i>&#210;</i>">   <!-- O grave to CN 210 -->
+<!ENTITY graveU  "<i>&#217;</i>">   <!-- U grave to CN 217 -->
+<!ENTITY gravea  "<i>&#224;</i>">   <!-- a grave to CN 224 -->
+<!ENTITY gravee  "<i>&#232;</i>">   <!-- e grave to CN 232 -->
+<!ENTITY gravei  "<i>&#236;</i>">   <!-- i grave to CN 236 -->
+<!ENTITY graveo  "<i>&#242;</i>">   <!-- o grave to CN 242 -->
+<!ENTITY graveu  "<i>&#249;</i>">   <!-- u grave to CN 249 -->
+
+<!ENTITY acuteA  "<i>&#193;</i>">   <!-- A acute to CN 193 -->
+<!ENTITY acuteE  "<i>&#201;</i>">   <!-- E acute to CN 201 -->
+<!ENTITY acuteI  "<i>&#205;</i>">   <!-- I acute to CN 205 -->
+<!ENTITY acuteO  "<i>&#211;</i>">   <!-- O acute to CN 211 -->
+<!ENTITY acuteU  "<i>&#218;</i>">   <!-- U acute to CN 218 -->
+<!ENTITY acuteY  "<i>&#221;</i>">   <!-- Y acute to CN 221 -->
+<!ENTITY acutea  "<i>&#225;</i>">   <!-- a acute to CN 225 -->
+<!ENTITY acutee  "<i>&#233;</i>">   <!-- e acute to CN 233 -->
+<!ENTITY acutei  "<i>&#237;</i>">   <!-- i acute to CN 237 -->
+<!ENTITY acuteo  "<i>&#243;</i>">   <!-- o acute to CN 243 -->
+<!ENTITY acuteu  "&#250;">   <!-- u acute to CN 250 -->
+<!ENTITY acutey  "&#253;">   <!-- y acute to CN 253 -->
+
+<!-- characters with accents not available in HTML -->
+<!ENTITY cacute  "c acute">   
+<!ENTITY nacute  "n acute">   
+<!ENTITY sacute  "s acute">
+<!ENTITY zacute  "z acute">
+<!ENTITY Cacute  "C acute">   
+<!ENTITY Nacute  "N acute">   
+<!ENTITY Sacute  "S acute">
+<!ENTITY Zacute  "Z acute">
+
+<!ENTITY acedil  "a cedilla">
+<!ENTITY bcedil  "b cedilla">
+<!ENTITY dcedil  "d cedilla">
+<!ENTITY ecedil  "e cedilla">
+<!ENTITY fcedil  "f cedilla">
+<!ENTITY gcedil  "g cedilla">
+<!ENTITY hcedil  "h cedilla">
+<!ENTITY icedil  "i cedilla">
+<!ENTITY jcedil  "j cedilla">
+<!ENTITY kcedil  "k cedilla">
+<!ENTITY lcedil  "l cedilla">
+<!ENTITY mcedil  "m cedilla">
+<!ENTITY ncedil  "n cedilla">
+<!ENTITY ocedil  "o cedilla">
+<!ENTITY pcedil  "p cedilla">
+<!ENTITY qcedil  "q cedilla">
+<!ENTITY rcedil  "r cedilla">
+<!ENTITY scedil  "s cedilla">
+<!ENTITY tcedil  "t cedilla">
+<!ENTITY ucedil  "u cedilla">
+<!ENTITY vcedil  "v cedilla">
+<!ENTITY wcedil  "w cedilla">
+<!ENTITY xcedil  "x cedilla">
+<!ENTITY ycedil  "y cedilla">
+<!ENTITY zcedil  "z cedilla">
+
+<!ENTITY Acedil  "A cedilla">
+<!ENTITY Bcedil  "B cedilla">
+<!ENTITY Dcedil  "D cedilla">
+<!ENTITY Ecedil  "E cedilla">
+<!ENTITY Fcedil  "F cedilla">
+<!ENTITY Gcedil  "G cedilla">
+<!ENTITY Hcedil  "H cedilla">
+<!ENTITY Icedil  "I cedilla">
+<!ENTITY Jcedil  "J cedilla">
+<!ENTITY Kcedil  "K cedilla">
+<!ENTITY Lcedil  "L cedilla">
+<!ENTITY Mcedil  "M cedilla">
+<!ENTITY Ncedil  "N cedilla">
+<!ENTITY Ocedil  "O cedilla">
+<!ENTITY Pcedil  "P cedilla">
+<!ENTITY Qcedil  "Q cedilla">
+<!ENTITY Rcedil  "R cedilla">
+<!ENTITY Scedil  "S cedilla">
+<!ENTITY Tcedil  "T cedilla">
+<!ENTITY Ucedil  "U cedilla">
+<!ENTITY Vcedil  "V cedilla">
+<!ENTITY Wcedil  "W cedilla">
+<!ENTITY Xcedil  "X cedilla">
+<!ENTITY Ycedil  "Y cedilla">
+<!ENTITY Zcedil  "Z cedilla">
+
+<!ENTITY zdotacc "z dot">
+
+<!ENTITY acheck  "check a">  <!-- hacek or check accent over character -->
+<!ENTITY bcheck  "check b">
+<!ENTITY ccheck  "check c">
+<!ENTITY dcheck  "check d">
+<!ENTITY echeck  "check e">
+<!ENTITY fcheck  "check f">
+<!ENTITY gcheck  "check g">
+<!ENTITY hcheck  "check h">
+<!ENTITY icheck  "check i">
+<!ENTITY jcheck  "check j">
+<!ENTITY kcheck  "check k">
+<!ENTITY lcheck  "check l">
+<!ENTITY mcheck  "check m">
+<!ENTITY ncheck  "check n">
+<!ENTITY ocheck  "check o">
+<!ENTITY pcheck  "check p">
+<!ENTITY qcheck  "check q">
+<!ENTITY rcheck  "check r">
+<!ENTITY scheck  "check s">
+<!ENTITY tcheck  "check t">
+<!ENTITY ucheck  "check u">
+<!ENTITY vcheck  "check v">
+<!ENTITY wcheck  "check w">
+<!ENTITY xcheck  "check x">
+<!ENTITY ycheck  "check y">
+<!ENTITY zcheck  "check z">
+
+<!ENTITY Acheck  "check A">  <!-- hacek or check accent over character -->
+<!ENTITY Bcheck  "check B">
+<!ENTITY Ccheck  "check C">
+<!ENTITY Dcheck  "check D">
+<!ENTITY Echeck  "check E">
+<!ENTITY Fcheck  "check F">
+<!ENTITY Gcheck  "check G">
+<!ENTITY Hcheck  "check H">
+<!ENTITY Icheck  "check I">
+<!ENTITY Jcheck  "check J">
+<!ENTITY Kcheck  "check K">
+<!ENTITY Lcheck  "check L">
+<!ENTITY Mcheck  "check M">
+<!ENTITY Ncheck  "check N">
+<!ENTITY Ocheck  "check O">
+<!ENTITY Pcheck  "check P">
+<!ENTITY Qcheck  "check Q">
+<!ENTITY Rcheck  "check R">
+<!ENTITY Scheck  "check S">
+<!ENTITY Tcheck  "check T">
+<!ENTITY Ucheck  "check U">
+<!ENTITY Vcheck  "check V">
+<!ENTITY Wcheck  "check W">
+<!ENTITY Xcheck  "check X">
+<!ENTITY Ycheck  "check Y">
+<!ENTITY Zcheck  "check Z">
+
+<!ENTITY abreve  "breve a">  <!-- breve accent over character -->
+<!ENTITY bbreve  "breve b">
+<!ENTITY cbreve  "breve c">
+<!ENTITY dbreve  "breve d">
+<!ENTITY ebreve  "breve e">
+<!ENTITY fbreve  "breve f">
+<!ENTITY gbreve  "breve g">
+<!ENTITY hbreve  "breve h">
+<!ENTITY ibreve  "breve i">
+<!ENTITY jbreve  "breve j">
+<!ENTITY kbreve  "breve k">
+<!ENTITY lbreve  "breve l">
+<!ENTITY mbreve  "breve m">
+<!ENTITY nbreve  "breve n">
+<!ENTITY obreve  "breve o">
+<!ENTITY pbreve  "breve p">
+<!ENTITY qbreve  "breve q">
+<!ENTITY rbreve  "breve r">
+<!ENTITY sbreve  "breve s">
+<!ENTITY tbreve  "breve t">
+<!ENTITY ubreve  "breve u">
+<!ENTITY vbreve  "breve v">
+<!ENTITY wbreve  "breve w">
+<!ENTITY xbreve  "breve x">
+<!ENTITY ybreve  "breve y">
+<!ENTITY zbreve  "breve z">
+
+
+<!ENTITY Abreve  "breve A">  <!-- breve accent over character -->
+<!ENTITY Bbreve  "breve B">
+<!ENTITY Cbreve  "breve C">
+<!ENTITY Dbreve  "breve D">
+<!ENTITY Ebreve  "breve E">
+<!ENTITY Fbreve  "breve F">
+<!ENTITY Gbreve  "breve G">
+<!ENTITY Hbreve  "breve H">
+<!ENTITY Ibreve  "breve I">
+<!ENTITY Jbreve  "breve J">
+<!ENTITY Kbreve  "breve K">
+<!ENTITY Lbreve  "breve L">
+<!ENTITY Mbreve  "breve M">
+<!ENTITY Nbreve  "breve N">
+<!ENTITY Obreve  "breve O">
+<!ENTITY Pbreve  "breve P">
+<!ENTITY Qbreve  "breve Q">
+<!ENTITY Rbreve  "breve R">
+<!ENTITY Sbreve  "breve S">
+<!ENTITY Tbreve  "breve T">
+<!ENTITY Ubreve  "breve U">
+<!ENTITY Vbreve  "breve V">
+<!ENTITY Wbreve  "breve W">
+<!ENTITY Xbreve  "breve X">
+<!ENTITY Ybreve  "breve Y">
+<!ENTITY Zbreve  "breve Z">
+
+<!-- barred characters (in maths) -->
+
+<!ENTITY bara "bar a">
+<!ENTITY barb "bar b">
+<!ENTITY barc "bar c">
+<!ENTITY bard "bar d">
+<!ENTITY bare "bar e">
+<!ENTITY barf "bar f">
+<!ENTITY barg "bar g">
+<!ENTITY barh "bar h">
+<!ENTITY bari "bar i">
+<!ENTITY barj "bar j">
+<!ENTITY bark "bar k">
+<!ENTITY barl "bar l">
+<!ENTITY barm "bar m">
+<!ENTITY barn "bar n">
+<!ENTITY baro "bar o">
+<!ENTITY barp "bar p">
+<!ENTITY barq "bar q">
+<!ENTITY barr "bar r">
+<!ENTITY bars "bar s">
+<!ENTITY bart "bar t">
+<!ENTITY baru "bar u">
+<!ENTITY barv "bar v">
+<!ENTITY barw "bar w">
+<!ENTITY barx "bar x">
+<!ENTITY bary "bar y">
+<!ENTITY barz "bar z">
+<!ENTITY barpartial "bar partial">
+
+<!ENTITY sqrt2 "sqrt2">
+<!ENTITY sqrt3 "sqrt3">
+
+
+<!ENTITY barA "bar A">
+<!ENTITY barB "bar B">
+<!ENTITY barC "bar C">
+<!ENTITY barD "bar D">
+<!ENTITY barE "bar E">
+<!ENTITY barF "bar F">
+<!ENTITY barG "bar G">
+<!ENTITY barH "bar H">
+<!ENTITY barI "bar I">
+<!ENTITY barJ "bar J">
+<!ENTITY barK "bar K">
+<!ENTITY barL "bar L">
+<!ENTITY barM "bar M">
+<!ENTITY barN "bar N">
+<!ENTITY barO "bar O">
+<!ENTITY barP "bar P">
+<!ENTITY barQ "bar Q">
+<!ENTITY barR "bar R">
+<!ENTITY barS "bar S">
+<!ENTITY barT "bar T">
+<!ENTITY barU "bar U">
+<!ENTITY barV "bar V">
+<!ENTITY barW "bar W">
+<!ENTITY barX "bar X">
+<!ENTITY barY "bar Y">
+<!ENTITY barZ "bar Z">
+
+<!ENTITY bar0 "bar 0">
+<!ENTITY bar1 "bar 1">
+<!ENTITY bar2 "bar 2">
+<!ENTITY bar3 "bar 3">
+<!ENTITY bar4 "bar 4">
+<!ENTITY bar5 "bar 5">
+<!ENTITY bar6 "bar 6">
+<!ENTITY bar7 "bar 7">
+<!ENTITY bar8 "bar 8">
+<!ENTITY bar9 "bar 9">
+
+<!ENTITY baralpha "bar alpha">
+<!ENTITY barbeta "bar beta">
+<!ENTITY bargamma "bar gamma">
+<!ENTITY bardelta "bar delta">
+<!ENTITY barepsilon "bar epsilon">
+<!ENTITY barzeta "bar zeta">
+<!ENTITY bareta "bar eta">
+<!ENTITY bartheta "bar theta">
+<!ENTITY bariota "bar iota">
+<!ENTITY barkappa "bar kappa">
+<!ENTITY barlambda "bar lambda">
+<!ENTITY barmu "bar mu">
+<!ENTITY barnu "bar nu">
+<!ENTITY barxi "bar xi">
+<!ENTITY barpi "bar pi">
+<!ENTITY barrho "bar rho">
+<!ENTITY barsigma "bar sigma">
+<!ENTITY bartau "bar tau">
+<!ENTITY barupsilon "bar upsilon">
+<!ENTITY barphi "bar phi">
+<!ENTITY barchi "bar chi">
+<!ENTITY barpsi "bar psi">
+<!ENTITY baromega "bar omega">
+<!ENTITY barvarepsilon "bar varepsilon">
+<!ENTITY barvartheta "bar vartheta">
+<!ENTITY barvarpi "bar varpi">
+<!ENTITY barvarrho "bar varrho">
+<!ENTITY barvarsigma "bar varsigma">
+<!ENTITY barvarphi "bar varphi">
+
+
+<!-- dotted characters (in maths) -->
+
+<!ENTITY dota "dot a">
+<!ENTITY dotb "dot b">
+<!ENTITY dotc "dot c">
+<!ENTITY dotd "dot d">
+<!ENTITY dote "dot e">
+<!ENTITY dotf "dot f">
+<!ENTITY dotg "dot g">
+<!ENTITY doth "dot h">
+<!ENTITY doti "dot i">
+<!ENTITY dotj "dot j">
+<!ENTITY dotk "dot k">
+<!ENTITY dotl "dot l">
+<!ENTITY dotm "dot m">
+<!ENTITY dotn "dot n">
+<!ENTITY doto "dot o">
+<!ENTITY dotp "dot p">
+<!ENTITY dotq "dot q">
+<!ENTITY dotr "dot r">
+<!ENTITY dots "dot s">
+<!ENTITY dott "dot t">
+<!ENTITY dotu "dot u">
+<!ENTITY dotv "dot v">
+<!ENTITY dotw "dot w">
+<!ENTITY dotx "dot x">
+<!ENTITY doty "dot y">
+<!ENTITY dotz "dot z">
+
+<!ENTITY dotA "dot A">
+<!ENTITY dotB "dot B">
+<!ENTITY dotC "dot C">
+<!ENTITY dotD "dot D">
+<!ENTITY dotE "dot E">
+<!ENTITY dotF "dot F">
+<!ENTITY dotG "dot G">
+<!ENTITY dotH "dot H">
+<!ENTITY dotI "dot I">
+<!ENTITY dotJ "dot J">
+<!ENTITY dotK "dot K">
+<!ENTITY dotL "dot L">
+<!ENTITY dotM "dot M">
+<!ENTITY dotN "dot N">
+<!ENTITY dotO "dot O">
+<!ENTITY dotP "dot P">
+<!ENTITY dotQ "dot Q">
+<!ENTITY dotR "dot R">
+<!ENTITY dotS "dot S">
+<!ENTITY dotT "dot T">
+<!ENTITY dotU "dot U">
+<!ENTITY dotV "dot V">
+<!ENTITY dotW "dot W">
+<!ENTITY dotX "dot X">
+<!ENTITY dotY "dot Y">
+<!ENTITY dotZ "dot Z">
+<!ENTITY dotalpha "dot alpha">
+<!ENTITY dotbeta "dot beta">
+<!ENTITY dotgamma "dot gamma">
+<!ENTITY dotdelta "dot delta">
+<!ENTITY dotepsilon "dot epsilon">
+<!ENTITY dotzeta "dot zeta">
+<!ENTITY doteta "dot eta">
+<!ENTITY dottheta "dot theta">
+<!ENTITY dotiota "dot iota">
+<!ENTITY dotkappa "dot kappa">
+<!ENTITY dotlambda "dot lambda">
+<!ENTITY dotmu "dot mu">
+<!ENTITY dotnu "dot nu">
+<!ENTITY dotxi "dot xi">
+<!ENTITY dotpi "dot pi">
+<!ENTITY dotrho "dot rho">
+<!ENTITY dotsigma "dot sigma">
+<!ENTITY dottau "dot tau">
+<!ENTITY dotupsilon "dot upsilon">
+<!ENTITY dotphi "dot phi">
+<!ENTITY dotchi "dot chi">
+<!ENTITY dotpsi "dot psi">
+<!ENTITY dotomega "dot omega">
+<!ENTITY dotvarepsilon "dot varepsilon">
+<!ENTITY dotvartheta "dot vartheta">
+<!ENTITY dotvarpi "dot varpi">
+<!ENTITY dotvarrho "dot varrho">
+<!ENTITY dotvarsigma "dot varsigma">
+<!ENTITY dotvarphi "dot varphi">
+<!ENTITY dotpartial "dot partial">
+<!ENTITY dotell "dot ell">
+<!ENTITY dotnabla "dot nabla">
+
+<!-- tilde characters (in maths) added 4/10 by Jo -->
+
+<!ENTITY tildea "tilde a">
+<!ENTITY tildeb "tilde b">
+<!ENTITY tildec "tilde c">
+<!ENTITY tilded "tilde d">
+<!ENTITY tildee "tilde e">
+<!ENTITY tildef "tilde f">
+<!ENTITY tildeg "tilde g">
+<!ENTITY tildeh "tilde h">
+<!ENTITY tildei "tilde i">
+<!ENTITY tildej "tilde j">
+<!ENTITY tildek "tilde k">
+<!ENTITY tildel "tilde l">
+<!ENTITY tildem "tilde m">
+<!ENTITY tilden "tilde n">
+<!ENTITY tildeo "tilde o">
+<!ENTITY tildep "tilde p">
+<!ENTITY tildeq "tilde q">
+<!ENTITY tilder "tilde r">
+<!ENTITY tildes "tilde s">
+<!ENTITY tildet "tilde t">
+<!ENTITY tildeu "tilde u">
+<!ENTITY tildev "tilde v">
+<!ENTITY tildew "tilde w">
+<!ENTITY tildex "tilde x">
+<!ENTITY tildey "tilde y">
+<!ENTITY tildez "tilde z">
+
+<!ENTITY tildeA "tilde A">
+<!ENTITY tildeB "tilde B">
+<!ENTITY tildeC "tilde C">
+<!ENTITY tildeD "tilde D">
+<!ENTITY tildeE "tilde E">
+<!ENTITY tildeF "tilde F">
+<!ENTITY tildeG "tilde G">
+<!ENTITY tildeH "tilde H">
+<!ENTITY tildeI "tilde I">
+<!ENTITY tildeJ "tilde J">
+<!ENTITY tildeK "tilde K">
+<!ENTITY tildeL "tilde L">
+<!ENTITY tildeM "tilde M">
+<!ENTITY tildeN "tilde N">
+<!ENTITY tildeO "tilde O">
+<!ENTITY tildeP "tilde P">
+<!ENTITY tildeQ "tilde Q">
+<!ENTITY tildeR "tilde R">
+<!ENTITY tildeS "tilde S">
+<!ENTITY tildeT "tilde T">
+<!ENTITY tildeU "tilde U">
+<!ENTITY tildeV "tilde V">
+<!ENTITY tildeW "tilde W">
+<!ENTITY tildeX "tilde X">
+<!ENTITY tildeY "tilde Y">
+<!ENTITY tildeZ "tilde Z">
+
+<!-- tilde-greek characters (in maths) added by Jo 23/10-->
+<!ENTITY tildealpha "tilde alpha">
+<!ENTITY tildebeta "tilde beta">
+<!ENTITY tildegamma "tilde gamma">
+<!ENTITY tildedelta "tilde delta">
+<!ENTITY tildeepsilon "tilde epsilon">
+<!ENTITY tildezeta "tilde zeta">
+<!ENTITY tildeeta "tilde eta">
+<!ENTITY tildetheta "tilde theta">
+<!ENTITY tildeiota "tilde iota">
+<!ENTITY tildekappa "tilde kappa">
+<!ENTITY tildelambda "tilde lambda">
+<!ENTITY tildemu "tilde mu">
+<!ENTITY tildenu "tilde nu">
+<!ENTITY tildexi "tilde xi">
+<!ENTITY tildepi "tilde pi">
+<!ENTITY tilderho "tilde rho">
+<!ENTITY tildesigma "tilde sigma">
+<!ENTITY tildetau "tilde tau">
+<!ENTITY tildeupsilon "tilde upsilon">
+<!ENTITY tildephi "tilde phi">
+<!ENTITY tildechi "tilde chi">
+<!ENTITY tildepsi "tilde psi">
+<!ENTITY tildeomega "tilde omega">
+<!ENTITY tildevarepsilon "tilde varepsilon">
+<!ENTITY tildevartheta "tilde vartheta">
+<!ENTITY tildevarpi "tilde varpi">
+<!ENTITY tildevarrho "tilde varrho">
+<!ENTITY tildevarsigma "tilde varsigma">
+<!ENTITY tildevarphi "tilde varphi">
+
+<!ENTITY tildeGamma "tilde Gamma">
+<!ENTITY tildeDelta "tilde Delta">
+<!ENTITY tildeTheta "tilde Theta">
+<!ENTITY tildeLambda "tilde Lambda">
+<!ENTITY tildeXi "tilde Xi">
+<!ENTITY tildePi "tilde Pi">
+<!ENTITY tildeSigma "tilde Sigma">
+<!ENTITY tildeUpsilon "tilde Upsilon">
+<!ENTITY tildePhi "tilde Phi">
+<!ENTITY tildePsi "tilde Psi">
+<!ENTITY tildeOmega "tilde Omega">
+
+
+<!-- hatted characters (in maths) -->
+
+<!ENTITY hata "hat a">
+<!ENTITY hatb "hat b">
+<!ENTITY hatc "hat c">
+<!ENTITY hatd "hat d">
+<!ENTITY hate "hat e">
+<!ENTITY hatf "hat f">
+<!ENTITY hatg "hat g">
+<!ENTITY hath "hat h">
+<!ENTITY hati "hat i">
+<!ENTITY hatj "hat j">
+<!ENTITY hatk "hat k">
+<!ENTITY hatl "hat l">
+<!ENTITY hatm "hat m">
+<!ENTITY hatn "hat n">
+<!ENTITY hato "hat o">
+<!ENTITY hatp "hat p">
+<!ENTITY hatq "hat q">
+<!ENTITY hatr "hat r">
+<!ENTITY hats "hat s">
+<!ENTITY hatt "hat t">
+<!ENTITY hatu "hat u">
+<!ENTITY hatv "hat v">
+<!ENTITY hatw "hat w">
+<!ENTITY hatx "hat x">
+<!ENTITY haty "hat y">
+<!ENTITY hatz "hat z">
+
+<!ENTITY hatA "hat A">
+<!ENTITY hatB "hat B">
+<!ENTITY hatC "hat C">
+<!ENTITY hatD "hat D">
+<!ENTITY hatE "hat E">
+<!ENTITY hatF "hat F">
+<!ENTITY hatG "hat G">
+<!ENTITY hatH "hat H">
+<!ENTITY hatI "hat I">
+<!ENTITY hatJ "hat J">
+<!ENTITY hatK "hat K">
+<!ENTITY hatL "hat L">
+<!ENTITY hatM "hat M">
+<!ENTITY hatN "hat N">
+<!ENTITY hatO "hat O">
+<!ENTITY hatP "hat P">
+<!ENTITY hatQ "hat Q">
+<!ENTITY hatR "hat R">
+<!ENTITY hatS "hat S">
+<!ENTITY hatT "hat T">
+<!ENTITY hatU "hat U">
+<!ENTITY hatV "hat V">
+<!ENTITY hatW "hat W">
+<!ENTITY hatX "hat X">
+<!ENTITY hatY "hat Y">
+<!ENTITY hatZ "hat Z">
+
+<!ENTITY bhata "bold hat a">
+<!ENTITY bhatb "bold hat b">
+<!ENTITY bhatc "bold hat c">
+<!ENTITY bhatd "bold hat d">
+<!ENTITY bhate "bold hat e">
+<!ENTITY bhatf "bold hat f">
+<!ENTITY bhatg "bold hat g">
+<!ENTITY bhath "bold hat h">
+<!ENTITY bhati "bold hat i">
+<!ENTITY bhatj "bold hat j">
+<!ENTITY bhatk "bold hat k">
+<!ENTITY bhatl "bold hat l">
+<!ENTITY bhatm "bold hat m">
+<!ENTITY bhatn "bold hat n">
+<!ENTITY bhato "bold hat o">
+<!ENTITY bhatp "bold hat p">
+<!ENTITY bhatq "bold hat q">
+<!ENTITY bhatr "bold hat r">
+<!ENTITY bhats "bold hat s">
+<!ENTITY bhatt "bold hat t">
+<!ENTITY bhatu "bold hat u">
+<!ENTITY bhatv "bold hat v">
+<!ENTITY bhatw "bold hat w">
+<!ENTITY bhatx "bold hat x">
+<!ENTITY bhaty "bold hat y">
+<!ENTITY bhatz "bold hat z">
+
+<!ENTITY bhatA "bold hat A">
+<!ENTITY bhatB "bold hat B">
+<!ENTITY bhatC "bold hat C">
+<!ENTITY bhatD "bold hat D">
+<!ENTITY bhatE "bold hat E">
+<!ENTITY bhatF "bold hat F">
+<!ENTITY bhatG "bold hat G">
+<!ENTITY bhatH "bold hat H">
+<!ENTITY bhatI "bold hat I">
+<!ENTITY bhatJ "bold hat J">
+<!ENTITY bhatK "bold hat K">
+<!ENTITY bhatL "bold hat L">
+<!ENTITY bhatM "bold hat M">
+<!ENTITY bhatN "bold hat N">
+<!ENTITY bhatO "bold hat O">
+<!ENTITY bhatP "bold hat P">
+<!ENTITY bhatQ "bold hat Q">
+<!ENTITY bhatR "bold hat R">
+<!ENTITY bhatS "bold hat S">
+<!ENTITY bhatT "bold hat T">
+<!ENTITY bhatU "bold hat U">
+<!ENTITY bhatV "bold hat V">
+<!ENTITY bhatW "bold hat W">
+<!ENTITY bhatX "bold hat X">
+<!ENTITY bhatY "bold hat Y">
+<!ENTITY bhatZ "bold hat Z">
+
+<!ENTITY hatalpha "hat alpha">
+<!ENTITY hatbeta "hat beta">
+<!ENTITY hatgamma "hat gamma">
+<!ENTITY hatdelta "hat delta">
+<!ENTITY hatepsilon "hat epsilon">
+<!ENTITY hatzeta "hat zeta">
+<!ENTITY hateta "hat eta">
+<!ENTITY hattheta "hat theta">
+<!ENTITY hatiota "hat iota">
+<!ENTITY hatkappa "hat kappa">
+<!ENTITY hatlambda "hat lambda">
+<!ENTITY hatmu "hat mu">
+<!ENTITY hatnu "hat nu">
+<!ENTITY hatxi "hat xi">
+<!ENTITY hatpi "hat pi">
+<!ENTITY hatrho "hat rho">
+<!ENTITY hatsigma "hat sigma">
+<!ENTITY hattau "hat tau">
+<!ENTITY hatupsilon "hat upsilon">
+<!ENTITY hatphi "hat phi">
+<!ENTITY hatchi "hat chi">
+<!ENTITY hatpsi "hat psi">
+<!ENTITY hatomega "hat omega">
+<!ENTITY hatvarepsilon "hat varepsilon">
+<!ENTITY hatvartheta "hat vartheta">
+<!ENTITY hatvarpi "hat varpi">
+<!ENTITY hatvarrho "hat varrho">
+<!ENTITY hatvarsigma "hat varsigma">
+<!ENTITY hatvarphi "hat varphi">
+
+<!ENTITY hat0 "hat 0">
+<!ENTITY hat1 "hat 1">
+<!ENTITY hat2 "hat 2">
+<!ENTITY hat3 "hat 3">
+<!ENTITY hat4 "hat 4">
+<!ENTITY hat5 "hat 5">
+<!ENTITY hat6 "hat 6">
+<!ENTITY hat7 "hat 7">
+<!ENTITY hat8 "hat 8">
+<!ENTITY hat9 "hat 9">
+
+<!ENTITY hatGamma "hat Gamma">
+<!ENTITY hatDelta "hat Delta">
+<!ENTITY hatTheta "hat Theta">
+<!ENTITY hatXi "hat Xi">
+<!ENTITY hatPi "hat Pi">
+<!ENTITY hatSigma "hat Sigma">
+<!ENTITY hatUpsilon "hat Upsilon">
+<!ENTITY hatPhi "hat Phi">
+<!ENTITY hatPsi "hat Psi">
+<!ENTITY hatOmega "hat Omega">
+
+<!ENTITY overline0 "overline 0">
+<!ENTITY overline1 "overline 1">
+<!ENTITY overline2 "overline 2">
+<!ENTITY overline3 "overline 3">
+<!ENTITY overline4 "overline 4">
+<!ENTITY overline5 "overline 5">
+<!ENTITY overline6 "overline 6">
+<!ENTITY overline7 "overline 7">
+<!ENTITY overline8 "overline 8">
+<!ENTITY overline9 "overline 9">
+
+<!-- Vectors; characters with over arrow -->
+
+<!ENTITY veca "vec a">
+<!ENTITY vecb "vec b">
+<!ENTITY vecc "vec c">
+<!ENTITY vecd "vec d">
+<!ENTITY vece "vec e">
+<!ENTITY vecf "vec f">
+<!ENTITY vecg "vec g">
+<!ENTITY vech "vec h">
+<!ENTITY veci "vec i">
+<!ENTITY vecj "vec j">
+<!ENTITY veck "vec k">
+<!ENTITY vecl "vec l">
+<!ENTITY vecm "vec m">
+<!ENTITY vecn "vec n">
+<!ENTITY veco "vec o">
+<!ENTITY vecp "vec p">
+<!ENTITY vecq "vec q">
+<!ENTITY vecr "vec r">
+<!ENTITY vecs "vec s">
+<!ENTITY vect "vec t">
+<!ENTITY vecu "vec u">
+<!ENTITY vecv "vec v">
+<!ENTITY vecw "vec w">
+<!ENTITY vecx "vec x">
+<!ENTITY vecy "vec y">
+<!ENTITY vecz "vec z">
+
+<!ENTITY vecA "vec A">
+<!ENTITY vecB "vec B">
+<!ENTITY vecC "vec C">
+<!ENTITY vecD "vec D">
+<!ENTITY vecE "vec E">
+<!ENTITY vecF "vec F">
+<!ENTITY vecG "vec G">
+<!ENTITY vecH "vec H">
+<!ENTITY vecI "vec I">
+<!ENTITY vecJ "vec J">
+<!ENTITY vecK "vec K">
+<!ENTITY vecL "vec L">
+<!ENTITY vecM "vec M">
+<!ENTITY vecN "vec N">
+<!ENTITY vecO "vec O">
+<!ENTITY vecP "vec P">
+<!ENTITY vecQ "vec Q">
+<!ENTITY vecR "vec R">
+<!ENTITY vecS "vec S">
+<!ENTITY vecT "vec T">
+<!ENTITY vecU "vec U">
+<!ENTITY vecV "vec V">
+<!ENTITY vecW "vec W">
+<!ENTITY vecX "vec X">
+<!ENTITY vecY "vec Y">
+<!ENTITY vecZ "vec Z">
+
+<!ENTITY vec0 "vec 0">
+<!ENTITY vec1 "vec 1">
+<!ENTITY vec2 "vec 2">
+<!ENTITY vec3 "vec 3">
+<!ENTITY vec4 "vec 4">
+<!ENTITY vec5 "vec 5">
+<!ENTITY vec6 "vec 6">
+<!ENTITY vec7 "vec 7">
+<!ENTITY vec8 "vec 8">
+<!ENTITY vec9 "vec 9">
+
+<!ENTITY vecalpha "vec alpha">
+<!ENTITY vecbeta "vec beta">
+<!ENTITY vecgamma "vec gamma">
+<!ENTITY vecdelta "vec delta">
+<!ENTITY vecepsilon "vec epsilon">
+<!ENTITY veczeta "vec zeta">
+<!ENTITY veceta "vec eta">
+<!ENTITY vectheta "vec theta">
+<!ENTITY veciota "vec iota">
+<!ENTITY veckappa "vec kappa">
+<!ENTITY veclambda "vec lambda">
+<!ENTITY vecmu "vec mu">
+<!ENTITY vecnu "vec nu">
+<!ENTITY vecxi "vec xi">
+<!ENTITY vecpi "vec pi">
+<!ENTITY vecrho "vec rho">
+<!ENTITY vecsigma "vec sigma">
+<!ENTITY vectau "vec tau">
+<!ENTITY vecupsilon "vec upsilon">
+<!ENTITY vecphi "vec phi">
+<!ENTITY vecchi "vec chi">
+<!ENTITY vecpsi "vec psi">
+<!ENTITY vecomega "vec omega">
+<!ENTITY vecvarepsilon "vec varepsilon">
+<!ENTITY vecvartheta "vec vartheta">
+<!ENTITY vecvarpi "vec varpi">
+<!ENTITY vecvarrho "vec varrho">
+<!ENTITY vecvarsigma "vec varsigma">
+<!ENTITY vecvarphi "vec varphi">
+<!ENTITY vecpartial "vec partial">
+<!ENTITY vecell "vec ell">
+<!ENTITY vecimath "vec imath">
+<!ENTITY vecjmath "vec jmath">
+<!ENTITY vecnabla "vec nabla">
+
+<!ENTITY lbrace  "{">     <!-- left curly brace -->
+<!ENTITY rbrace  "}">     <!-- right curly brace -->
+<!ENTITY S  "&#167;">   <!-- section sign to CN 167 -->
+<!ENTITY P  "&#182;">   <!-- paragraph sign to CN 182 -->
+<!ENTITY hash  "#">        <!-- hash -->
+<!ENTITY muchlt  "&lt;&lt;">  <!-- much less than to two less thans -->
+<!ENTITY muchgt  "&gt;&gt;">  <!-- much greater than to two greater thans -->
+<!ENTITY Angstrom  "&#197;">  <!-- Angstrom sign to CN 197 -->
+<!ENTITY half  "&#189;">      <!-- 1/2 to CN 189 -->
+<!ENTITY quarter  "&#188;">   <!-- 1/4 to CN 188 -->
+<!ENTITY threequarter  "&#190;">  <!-- 3/4 to CN 190 -->
+<!ENTITY threehalves  "3/2">  <!-- 3/2 -->
+<!ENTITY fivehalves  "5/2">  <!-- 5/2 -->
+<!ENTITY sevenhalves  "7/2">  <!-- 7/2 -->
+<!ENTITY ninehalves  "9/2">  <!-- 9/2 -->
+<!ENTITY degree  "&#176;">    <!-- degree sign to CN 176 -->
+<!ENTITY lowast  "*">         <!-- lowast to on line * -->
+<!ENTITY prime  "'">       <!-- prime to single quote (CN 39) -->
+<!ENTITY ldots  "...">  <!-- ldots to ...       -->
+<!ENTITY cdots  "&#183;&#183;&#183;">  <!-- cdots to 3 CN183's -->
+
+<!-- IOP defined LaTeX entities -->
+<!ENTITY ddiff  "d">    <!-- differential d -->
+<!ENTITY eexp  "e">     <!-- exponential e -->
+<!ENTITY iimg  "i">     <!-- imaginary i -->
+<!ENTITY order  "O">    <!-- order of -->
+<!ENTITY Tr   "Tr">     <!-- Trace -->
+<!ENTITY tr   "tr">     <!-- trace -->
+<!ENTITY re   "Re">     <!-- Real -->
+<!ENTITY im   "Im">     <!-- Imaginary -->
+
+<!-- Greek letters -->
+<!ENTITY alpha  "$\alpha$">
+<!ENTITY beta  "$\beta$">
+<!ENTITY gamma  "$\gamma$">
+<!ENTITY delta  "$\delta$">
+<!ENTITY epsilon  "$\epsilon$">
+<!ENTITY varepsilon  "$\varepsilon$">
+<!ENTITY zeta  "$\zeta$">
+<!ENTITY eta  "$\eta$">
+<!ENTITY theta  "$\theta$">
+<!ENTITY vartheta  "$\vartheta$">
+<!ENTITY iota  "$\iota$">
+<!ENTITY kappa  "$\kappa$">
+<!ENTITY lambda  "$\lambda$">
+<!ENTITY mu  "$\mu$">
+<!ENTITY nu  "$\nu$">
+<!ENTITY xi  "$\xi$">
+<!ENTITY pi  "$\pi$">
+<!ENTITY varpi  "$\varpi$">
+<!ENTITY rho  "$\rho$">
+<!ENTITY varrho  "$\varrho$">
+<!ENTITY sigma  "$\sigma$">
+<!ENTITY varsigma  "$\varsigma$">
+<!ENTITY tau  "$\tau$">
+<!ENTITY upsilon  "$\upsilon$">
+<!ENTITY phi  "$\phi$">
+<!ENTITY varphi  "$\varphi$">
+<!ENTITY chi  "$\chi$">
+<!ENTITY psi  "$\psi$">
+<!ENTITY omega  "$\omega$">
+<!ENTITY Gamma  "$\Gamma$">
+<!ENTITY Delta  "$\Delta$">
+<!ENTITY Theta  "$\Theta$">
+<!ENTITY Lambda  "$\Lambda$">
+<!ENTITY Xi  "$\Xi$">
+<!ENTITY Pi  "$\Pi$">
+<!ENTITY Sigma  "$\Sigma$">
+<!ENTITY Upsilon  "$\Upsilon$">
+<!ENTITY Phi  "$\Phi$">
+<!ENTITY Psi  "$\Psi$">
+<!ENTITY Omega  "$\Omega$">
+
+<!-- Bold Greek letters -->
+<!ENTITY balpha  "bold alpha">
+<!ENTITY bbeta  "bold beta">
+<!ENTITY bgamma  "bold gamma">
+<!ENTITY bdelta  "bold delta">
+<!ENTITY bepsilon  "bold epsilon">
+<!ENTITY bvarepsilon  "bold varepsilon">
+<!ENTITY bzeta  "bold zeta">
+<!ENTITY bfeta  "bold eta">
+<!ENTITY btheta  "bold theta">
+<!ENTITY bvartheta  "bold vartheta">
+<!ENTITY biota  "bold iota">
+<!ENTITY bkappa  "bold kappa">
+<!ENTITY blambda  "bold lambda">
+<!ENTITY bmu  "bold mu">
+<!ENTITY bnu  "bold nu">
+<!ENTITY bxi  "bold xi">
+<!ENTITY bpi  "bold pi">
+<!ENTITY bvarpi  "bold varpi">
+<!ENTITY brho  "bold rho">
+<!ENTITY bvarrho  "bold varrho">
+<!ENTITY bsigma  "bold sigma">
+<!ENTITY bvarsigma  "bold varsigma">
+<!ENTITY btau  "bold tau">
+<!ENTITY bupsilon  "bold upsilon">
+<!ENTITY bphi  "bold phi">
+<!ENTITY bvarphi  "bold varphi">
+<!ENTITY bchi  "bold chi">
+<!ENTITY bpsi  "bold psi">
+<!ENTITY bomega  "bold omega">
+<!ENTITY bGamma  "bold Gamma">
+<!ENTITY bDelta  "bold Delta">
+<!ENTITY bTheta  "bold Theta">
+<!ENTITY bLambda  "bold Lambda">
+<!ENTITY bXi  "bold Xi">
+<!ENTITY bPi  "bold Pi">
+<!ENTITY bSigma  "bold Sigma">
+<!ENTITY bUpsilon  "bold Upsilon">
+<!ENTITY bPhi  "bold Phi">
+<!ENTITY bPsi  "bold Psi">
+<!ENTITY bOmega  "bold Omega">
+
+<!ENTITY bnabla  "bold nabla">
+<!-- Miscellaneous maths characters -->
+<!ENTITY aleph  "$\aleph$">
+<!ENTITY hbar  "$\hbar$">
+<!ENTITY imath  "$\imath$">
+<!ENTITY jmath  "$\jmath$">
+<!ENTITY ell  "$\ell$">
+<!ENTITY wp  "$\wp$">
+<!ENTITY Re  "$\Re$">
+<!ENTITY Im  "$\Im$">
+<!ENTITY partial  "$\partial$">
+<!ENTITY infty  "$\infty$">
+<!ENTITY emptyset  "$\emptyset$">
+<!ENTITY nabla  "$\nabla$">
+<!ENTITY surd  "$\surd$">
+<!ENTITY top  "$\top$">
+<!ENTITY bot  "$\bot$">
+<!ENTITY Vert  "||">
+<!ENTITY vert  "|">
+<!ENTITY angle  "$\angle$">
+<!ENTITY triangle  "$\triangle$">
+<!ENTITY backslash  "\">
+<!ENTITY forall  "$\forall$">
+<!ENTITY exists  "$\exists$">
+<!ENTITY neg  "$\neg$">
+<!ENTITY lnot  "$\neg$">
+<!ENTITY flat  "$\flat$">
+<!ENTITY natural  "$\natural$">
+<!ENTITY sharp  "$\sharp$">
+<!ENTITY clubsuit  "$\clubsuit$">
+<!ENTITY diamondsuit  "$\diamondsuit$">
+<!ENTITY heartsuit  "$\heartsuit$">
+<!ENTITY spadesuit  "$\spadesuit$">
+<!ENTITY sum  "$\sum$">
+<!ENTITY prod  "$\prod$">
+<!ENTITY coprod  "$\coprod$">
+<!ENTITY int  "$\int$">
+<!ENTITY oint  "$\oint$">
+<!ENTITY bigcap  "$\bigcap$">
+<!ENTITY bigcup  "$\bigcup$">
+<!ENTITY bigsqcup  "$\bigsqcup$">
+<!ENTITY bigvee  "$\bigvee$">
+<!ENTITY bigwedge  "$\bigwedge$">
+<!ENTITY bigodot  "$\bigodot$">
+
+<!-- Binary operations -->
+<!ENTITY mp  "$\mp$">
+<!ENTITY pm  "&#177;">
+<!ENTITY setminus  "$\setminus$">
+<!ENTITY cdot  "&#183;">
+<!ENTITY ast  "$\ast$">
+<!ENTITY star  "$\star$">
+<!ENTITY diamond  "$\diamond$">
+<!ENTITY circ  "o">
+<!ENTITY bullet  "$\bullet$">
+<!ENTITY div  "$\div$">
+<!ENTITY cap  "$\cap$">
+<!ENTITY cup  "$\cup$">
+<!ENTITY uplus  "$\uplus$">
+<!ENTITY sqcap  "$\sqcap$">
+<!ENTITY sqcup  "$\sqcup$">
+<!ENTITY triangleleft  "$\triangleleft$">
+<!ENTITY triangleright  "$\triangleright$">
+<!ENTITY wr  "$\wr$">
+<!ENTITY bigcirc  "$\bigcirc$">
+<!ENTITY bigtriangleup  "$\bigtriangleup$">
+<!ENTITY bigtriangledown  "$\bigtriangledown$">
+<!ENTITY vee  "$\vee$">
+<!ENTITY lor  "$\vee$">
+<!ENTITY wedge  "$\wedge$">
+<!ENTITY land  "$\wedge$">
+<!ENTITY oplus  "$\oplus$">
+<!ENTITY ominus  "$\ominus$">
+<!ENTITY otimes  "$\otimes$">
+<!ENTITY oslashed  "$\oslash$">
+<!ENTITY odot  "$\odot$">
+<!ENTITY dagger  "$\dagger$">
+<!ENTITY dag  "$\dagger$">
+<!ENTITY ddagger  "$\ddagger$">
+<!ENTITY ddag  "$\ddagger$">
+<!ENTITY amalg  "$\amalg$">
+
+<!-- Relations -->
+
+<!ENTITY leq  "$\leq$">
+<!ENTITY le  "$\leq$">
+<!ENTITY prec  "$\prec$">
+<!ENTITY preceq  "$\preceq$">
+<!ENTITY ll  "$\ll$">
+<!ENTITY subset  "$\subset$">
+<!ENTITY subseteq  "$\subseteq$">
+<!ENTITY sqsubseteq  "$\sqsubseteq$">
+<!ENTITY in  "$\in$">
+<!ENTITY vdash  "$\vdash$">
+<!ENTITY smile  "$\smile$">
+<!ENTITY frown  "$\frown$">
+<!ENTITY geq  "$\geq$">
+<!ENTITY ge  "$\geq$">
+<!ENTITY succ  "$\succ$">
+<!ENTITY succeq  "$\succeq$">
+<!ENTITY gg  "$\gg$">
+<!ENTITY supset  "$\supset$">
+<!ENTITY supseteq  "$\supseteq$">
+<!ENTITY sqsupseteq  "$\sqsupseteq$">
+<!ENTITY ni  "$\ni$">
+<!ENTITY owns  "$\ni$">
+<!ENTITY dashv  "$\dashv$">
+<!ENTITY mid  "$\mid$">
+<!ENTITY parallel  "$\parallel$">
+<!ENTITY equiv  "$\equiv$">
+<!ENTITY simeq  "$\simeq$">
+<!ENTITY asymp  "$\asymp$">
+<!ENTITY approx  "$\approx$">
+<!ENTITY cong  "$\cong$">
+<!ENTITY bowtie  "$\bowtie$">
+<!ENTITY propto  "$\propto$">
+<!ENTITY models  "$\models$">
+<!ENTITY doteq  "$\doteq$">
+<!ENTITY perp  "$\perp$">
+
+<!-- Negated relations -->
+
+<!ENTITY notlt  "$\not\lt$">
+<!ENTITY notleq  "$\not\leq$">
+<!ENTITY notprec  "$\not\prec$">
+<!ENTITY notpreceq  "$\not\preceq$">
+<!ENTITY notsubset  "$\not\subset$">
+<!ENTITY notsubseteq  "$\not\subseteq$">
+<!ENTITY notsqsubseteq  "$\not\sqsubseteq$">
+<!ENTITY notgt  "$\not\gt$">
+<!ENTITY notgeq  "$\not\geq$">
+<!ENTITY notsucc  "$\not\succ$">
+<!ENTITY notsucceq  "$\not\succeq$">
+<!ENTITY notsupset  "$\not\supset$">
+<!ENTITY notsupseteq  "$\not\supseteq$">
+<!ENTITY notsqsupseteq  "$\not\sqsupseteq$">
+<!ENTITY noteq  "$\not=$">
+<!ENTITY neq  "$\not=$">
+<!ENTITY ne  "$\not=$">
+<!ENTITY notequiv  "$\not\equiv$">
+<!ENTITY notsim  "$\not\sim$">
+<!ENTITY notsimeq  "$\not\simeq$">
+<!ENTITY notapprox  "$\not\approx$">
+<!ENTITY notcong  "$\not\cong$">
+<!ENTITY notasymp  "$\not\asymp$">
+
+<!-- Arrows -->
+
+<!ENTITY leftarrow  "$\leftarrow$">
+<!ENTITY gets  "$\leftarrow$">
+<!ENTITY Leftarrow  "$\Leftarrow$">
+<!ENTITY rightarrow  "$\rightarrow$">
+<!ENTITY to  "$\rightarrow$">
+<!ENTITY Rightarrow  "$\Rightarrow$">
+<!ENTITY leftrightarrow  "$\leftrightarrow$">
+<!ENTITY Leftrightarrow  "$\Leftrightarrow$">
+<!ENTITY mapsto  "$\mapsto$">
+<!ENTITY hookleftarrow  "$\hookleftarrow$">
+<!ENTITY leftharpoonup  "$\leftharpoonup$">
+<!ENTITY leftharpoondown  "$\leftharpoondown$">
+<!ENTITY rightleftharpoons  "$\rightleftharpoons$">
+<!ENTITY longleftarrow  "$\longleftarrow$">
+<!ENTITY Longleftarrow  "$\Longleftarrow$">
+<!ENTITY longrightarrow  "$\longrightarrow$">
+<!ENTITY Longrightarrow  "$\Longrightarrow$">
+<!ENTITY longleftrightarrow  "$\longleftrightarrow$">
+<!ENTITY Longleftrightarrow  "$\Longleftrightarrow$">
+<!ENTITY iff  "&nbsp;$\Longleftrightarrow$&nbsp;">
+<!ENTITY longmapsto  "$\longmapsto$">
+<!ENTITY hookrightarrow  "$\hookrightarrow$">
+<!ENTITY rightharpoonup  "$\rightharpoonup$">
+<!ENTITY rightharpoondown  "$\rightharpoondown$">
+<!ENTITY uparrow  "$\uparrow$">
+<!ENTITY Uparrow  "$\Uparrow$">
+<!ENTITY downarrow  "$\downarrow$">
+<!ENTITY Downarrow  "$\Downarrow$">
+<!ENTITY updownarrow  "$\updownarrow$">
+<!ENTITY Updownarrow  "$\Updownarrow$">
+<!ENTITY nearrow  "$\nearrow$">
+<!ENTITY searrow  "$\searrow$">
+<!ENTITY swarrow  "$\swarrow$">
+<!ENTITY nwarrow  "$\nwarrow$">
+
+<!-- Openings and closings -->
+
+<!ENTITY lbrack  "[">
+<!ENTITY lfloor  "$\lfloor$">
+<!ENTITY langle  "$\langle$">
+<!ENTITY lceil  "$\lceil$">
+<!ENTITY rbrack  "]">
+<!ENTITY rfloor  "$\rfloor$">
+<!ENTITY rangle  "$\rangle$">
+<!ENTITY rceil  "$\rceil$">
+
+<!ENTITY arccos  "$\arccos$"> 
+<!ENTITY arcsin  "$\arcsin$"> 
+<!ENTITY arctan  "$\arctan$"> 
+<!ENTITY arg  "$\arg$"> 
+<!ENTITY cos  "$\cos$"> 
+<!ENTITY cosh  "$\cosh$"> 
+<!ENTITY cot  "$\cot$"> 
+<!ENTITY coth  "$\coth$"> 
+<!ENTITY csc  "$\csc$"> 
+<!ENTITY det  "$\det$"> 
+<!ENTITY dim  "$\dim$"> 
+<!ENTITY exp  "$\exp$"> 
+<!ENTITY gcd  "$\gcd$"> 
+<!ENTITY hom  "$\hom$"> 
+<!ENTITY inf  "$\inf$"> 
+<!ENTITY ker  "$\ker$"> 
+<!ENTITY lg  "$\lg$"> 
+<!ENTITY lim  "$\lim$"> 
+<!ENTITY liminf  "$\liminf$"> 
+<!ENTITY limsup  "$\limsup$"> 
+<!ENTITY ln  "$\ln$"> 
+<!ENTITY log  "$\log$"> 
+<!ENTITY max  "$\max$"> 
+<!ENTITY min  "$\min$"> 
+<!ENTITY Pr  "$\Pr$"> 
+<!ENTITY sec  "$\sec$"> 
+<!ENTITY sin  "$\sin$"> 
+<!ENTITY sinh  "$\sinh$"> 
+<!ENTITY sup  "$\sup$"> 
+<!ENTITY tan  "$\tan$"> 
+<!ENTITY tanh  "$\tanh$"> 
+
+<!ENTITY digamma "$\digamma$">
+<!ENTITY varkappa "$\varkappa$">
+<!ENTITY beth "$\beth$">
+<!ENTITY daleth "$\daleth$">
+<!ENTITY gimel "$\gimel$">
+<!ENTITY hslash "$\hslash$">
+<!ENTITY vartriangle "$\vartriangle$">
+<!ENTITY triangledown "$\triangledown$">
+<!ENTITY square "$\square$">
+<!ENTITY lozenge "$\lozenge$">
+<!ENTITY circledS "$\circledS$">
+<!ENTITY measuredangle "$\measuredangle$">
+<!ENTITY nexists "$\nexists$">
+<!ENTITY mho "$\mho$"> 
+<!ENTITY Finv "$\Finv$">
+<!ENTITY Game "$\Game$">
+<!ENTITY Bbbk "$\Bbbk$">
+<!ENTITY backprime "$\backprime$">
+<!ENTITY varnothing "$\varnothing$">
+<!ENTITY blacktriangle "$\blacktriangle$">
+<!ENTITY blacktriangledown "$\blacktriangledown$">
+<!ENTITY blacksquare "$\blacksquare$">
+<!ENTITY blacklozenge "$\blacklozenge$">
+<!ENTITY bigstar "$\bigstar$">
+<!ENTITY sphericalangle "$\sphericalangle$">
+<!ENTITY complement "$\complement$">
+<!-- ENTITY eth "&#240;" previously defined -->
+<!ENTITY diagup "$\diagup$">
+<!ENTITY diagdown "$\diagdown$">
+<!ENTITY dotplus "$\dotplus$">
+<!ENTITY smallsetminus "$\smallsetminus$">
+<!ENTITY Cap "$\Cap$">
+<!ENTITY doublecap "$\doublecap$">
+<!ENTITY Cup "$\Cup$">
+<!ENTITY doublecup "$\doublecup$">
+<!ENTITY barwedge "$\barwedge$">
+<!ENTITY veebar "$\veebar$">
+<!ENTITY doublebarwedge "$\doublebarwedge$">
+<!ENTITY boxminus "$\boxminus$">
+<!ENTITY boxtimes "$\boxtimes$">
+<!ENTITY boxdot "$\boxdot$">
+<!ENTITY boxplus "$\boxplus$">
+<!ENTITY divideontimes "$\divideontimes$">
+<!ENTITY ltimes "$\ltimes$">
+<!ENTITY rtimes "$\rtimes$">
+<!ENTITY leftthreetimes "$\leftthreetimes$">
+<!ENTITY rightthreetimes "$\rightthreetimes$">
+<!ENTITY curlywedge "$\curlywedge$">
+<!ENTITY curlyvee "$\curlyvee$">
+<!ENTITY circleddash "$\circleddash$">
+<!ENTITY circledast "$\circledast$">
+<!ENTITY circledcirc "$\circledcirc$">
+<!ENTITY centerdot "$\centerdot$">
+<!ENTITY intercal "$\intercal$">
+<!ENTITY leqq "$\leqq$">
+<!ENTITY leqslant "$\leqslant$">
+<!ENTITY eqslantless "$\eqslantless$">
+<!ENTITY lesssim "$\lesssim$">
+<!ENTITY lessapprox "$\lessapprox$">
+<!ENTITY approxeq "$\approxeq$">
+<!ENTITY lessdot "$\lessdot$">
+<!ENTITY lll "$\lll$">
+<!ENTITY llless "$\llless$">
+<!ENTITY lessgtr "$\lessgtr$">
+<!ENTITY lesseqgtr "$\lesseqgtr$">
+<!ENTITY lesseqqgtr "$\lesseqqgtr$">
+<!ENTITY doteqdot "$\doteqdot$">
+<!ENTITY Doteq "$\Doteq$">
+<!ENTITY risingdotseq "$\risingdotseq$">
+<!ENTITY fallingdotseq "$\fallingdotseq$">
+<!ENTITY backsim "$\backsim$">
+<!ENTITY backsimeq "$\backsimeq$">
+<!ENTITY subseteqq "$\subseteqq$">
+<!ENTITY Subset "$\Subset$">
+<!ENTITY sqsubset "$\sqsubset$">
+<!ENTITY preccurlyeq "$\preccurlyeq$">
+<!ENTITY curlyeqprec "$\curlyeqprec$">
+<!ENTITY precsim "$\precsim$">
+<!ENTITY precapprox "$\precapprox$">
+<!ENTITY vartriangleleft "$\vartriangleleft$">
+<!ENTITY trianglelefteq "$\trianglelefteq$">
+<!ENTITY vDash "$\vDash$">
+<!ENTITY Vvdash "$\Vvdash$">
+<!ENTITY smallsmile "$\smallsmile$">
+<!ENTITY smallfrown "$\smallfrown$">
+<!ENTITY bumpeq "$\bumpeq$">
+<!ENTITY Bumpeq "$\Bumpeq$">
+<!ENTITY geqq "$\geqq$">
+<!ENTITY geqslant "$\geqslant$">
+<!ENTITY eqslantgtr "$\eqslantgtr$">
+<!ENTITY gtrsim "$\gtrsim$">
+<!ENTITY gtrapprox "$\gtrapprox$">
+<!ENTITY gtrdot "$\gtrdot$">
+<!ENTITY ggg "$\ggg$">
+<!ENTITY gggtr "$\gggtr$">
+<!ENTITY gtrless "$\gtrless$">
+<!ENTITY gtreqless "$\gtreqless$">
+<!ENTITY gtreqqless "$\gtreqqless$">
+<!ENTITY eqcirc "$\eqcirc$">
+<!ENTITY circeq "$\circeq$">
+<!ENTITY triangleq "$\triangleq$">
+<!ENTITY thicksim "$\thicksim$">
+<!ENTITY thickapprox "$\thickapprox$">
+<!ENTITY supseteqq "$\supseteqq$">
+<!ENTITY Supset "$\Supset$">
+<!ENTITY sqsupset "$\sqsupset$">
+<!ENTITY succcurlyeq "$\succcurlyeq$">
+<!ENTITY curlyeqsucc "$\curlyeqsucc$">
+<!ENTITY succsim "$\succsim$">
+<!ENTITY succapprox "$\succapprox$">
+<!ENTITY vartriangleright "$\vartriangleright$">
+<!ENTITY trianglerighteq "$\trianglerighteq$">
+<!ENTITY Vdash "$\Vdash$">
+<!ENTITY shortmid "$\shortmid$">
+<!ENTITY shortparallel "$\shortparallel$">
+<!ENTITY between "$\between$">
+<!ENTITY pitchfork "$\pitchfork$">
+<!ENTITY varpropto "$\varpropto$">
+<!ENTITY blacktriangleleft "$\blacktriangleleft$">
+<!ENTITY therefore "$\therefore$">
+<!ENTITY backepsilon "$\backepsilon$">
+<!ENTITY blacktriangleright "$\blacktriangleright$">
+<!ENTITY because "$\because$">
+<!ENTITY nless "$\nless$">
+<!ENTITY ngtr "$\ngtr$">
+<!ENTITY nleq "$\nleq$">
+<!ENTITY ngeq "$\ngeq$">
+<!ENTITY nleqslant "$\nleqslant$">
+<!ENTITY ngeqslant "$\ngeqslant$">
+<!ENTITY nleqq "$\nleqq$">
+<!ENTITY ngeqq "$\ngeqq$">
+<!ENTITY lneq "$\lneq$">
+<!ENTITY gneq "$\gneq$">
+<!ENTITY lneqq "$\lneqq$">
+<!ENTITY gneqq "$\gneqq$">
+<!ENTITY lvertneqq "$\lvertneqq$">
+<!ENTITY gvertneqq "$\gvertneqq$">
+<!ENTITY lnsim "$\lnsim$">
+<!ENTITY gnsim "$\gnsim$">
+<!ENTITY lnapprox "$\lnapprox$">
+<!ENTITY gnapprox "$\gnapprox$">
+<!ENTITY nprec "$\nprec$">
+<!ENTITY nsucc "$\nsucc$">
+<!ENTITY npreceq "$\npreceq$">
+<!ENTITY nsucceq "$\nsucceq$">
+<!ENTITY precneqq "$\precneqq$">
+<!ENTITY succneqq "$\succneqq$">
+<!ENTITY precnsim "$\precnsim$">
+<!ENTITY succnsim "$\succnsim$">
+<!ENTITY precnapprox "$\precnapprox$">
+<!ENTITY succnapprox "$\succnapprox$">
+<!ENTITY nsim "$\nsim$">
+<!ENTITY ncong "$\ncong$">
+<!ENTITY nshortmid "$\nshortmid$">
+<!ENTITY nshortparallel "$\nshortparallel$">
+<!ENTITY nmid "$\nmid$">
+<!ENTITY nparallel "$\nparallel$">
+<!ENTITY nvdash "$\nvdash$">
+<!ENTITY nvDash "$\nvDash$">
+<!ENTITY nVdash "$\nVdash$">
+<!ENTITY nVDash "$\nVDash$">
+<!ENTITY ntriangleleft "$\ntriangleleft$">
+<!ENTITY ntriangleright "$\ntriangleright$">
+<!ENTITY ntrianglelefteq "$\ntrianglelefteq$">
+<!ENTITY ntrianglerighteq "$\ntrianglerighteq$">
+<!ENTITY nsubseteq "$\nsubseteq$">
+<!ENTITY nsupseteq "$\nsupseteq$">
+<!ENTITY nsubseteqq "$\nsubseteqq$">
+<!ENTITY nsupseteqq "$\nsupseteqq$">
+<!ENTITY subsetneq "$\subsetneq$">
+<!ENTITY supsetneq "$\supsetneq$">
+<!ENTITY varsubsetneq "$\varsubsetneq$">
+<!ENTITY varsupsetneq "$\varsupsetneq$">
+<!ENTITY subsetneqq "$\subsetneqq$">
+<!ENTITY supsetneqq "$\supsetneqq$">
+<!ENTITY varsubsetneqq "$\varsubsetneqq$">
+<!ENTITY varsupsetneqq "$\varsupsetneqq$">
+<!ENTITY leftleftarrows "$\leftleftarrows$">
+<!ENTITY rightrightarrows "$\rightrightarrows$">
+<!ENTITY leftrightarrows "$\leftrightarrows$">
+<!ENTITY rightleftarrows "$\rightleftarrows$">
+<!ENTITY Lleftarrow "$\Lleftarrow$">
+<!ENTITY Rrightarrow "$\Rrightarrow$">
+<!ENTITY twoheadleftarrow "$\twoheadleftarrow$">
+<!ENTITY twoheadrightarrow "$\twoheadrightarrow$">
+<!ENTITY leftarrowtail "$\leftarrowtail$">
+<!ENTITY rightarrowtail "$\rightarrowtail$">
+<!ENTITY looparrowleft "$\looparrowleft$">
+<!ENTITY looparrowright "$\looparrowright$">
+<!ENTITY leftrightharpoons "$\leftrightharpoons$">
+<!ENTITY curvearrowleft "$\curvearrowleft$">
+<!ENTITY curvearrowright "$\curvearrowright$">
+<!ENTITY circlearrowleft "$\circlearrowleft$">
+<!ENTITY circlearrowright "$\circlearrowright$">
+<!ENTITY Lsh "$\Lsh$">
+<!ENTITY Rsh "$\Rsh$">
+<!ENTITY upuparrows "$\upuparrows$">
+<!ENTITY downdownarrows "$\downdownarrows$">
+<!ENTITY upharpoonleft "$\upharpoonleft$">
+<!ENTITY upharpoonright "$\upharpoonright$">
+<!ENTITY restriction "$\restriction$">
+<!ENTITY downharpoonleft "$\downharpoonleft$">
+<!ENTITY downharpoonright "$\downharpoonright$">
+<!ENTITY multimap "$\multimap$">
+<!ENTITY rightsquigarrow "$\rightsquigarrow$">
+<!ENTITY leftrightsquigarrow "$\leftrightsquigarrow$">
+<!ENTITY nleftarrow "$\nleftarrow$">
+<!ENTITY nrightarrow "$\nrightarrow$">
+<!ENTITY nLeftarrow "$\nLeftarrow$">
+<!ENTITY nRightarrow "$\nRightarrow$">
+<!ENTITY nleftrightarrow "$\nleftrightarrow$">
+<!ENTITY nLeftrightarrow "$\nLeftrightarrow$">
+<!ENTITY notin "$\notin$">
+
+<!-- miscellaneous characters from PostScript Times Roman font -->
+<!ENTITY ldchevron  "ldchevron">
+<!ENTITY rdchevron  "rdchevron">
+<!ENTITY lchevron  "lchevron">
+<!ENTITY rchevron  "rchevron">
+
+<!-- Received -->                                          
+<!ENTITY received  "Received ">                  
+<!ENTITY finalform  ", in final form ">          
+<!ENTITY accepted  ", accepted for publication ">
+<!ENTITY online  ", online ">                    

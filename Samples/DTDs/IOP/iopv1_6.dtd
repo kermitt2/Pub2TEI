@@ -1,0 +1,1577 @@
+<!--======================================================================
+
+IOPART DTD
+
+Copyright (C) 2000, 2003 Institute Of Physics  All rights reserved.
+Copyright (C) 2000, TechBooks  All rights reserved.
+
+Filename: iopart.dtd
+
+Change History:
+
+Implemented By:
+        TechBooks
+        11150 Main Street, Suite 402
+        Fairfax, VA 22030
+        USA
+        Telephone: +1 703 352 0001
+        Fax:       +1 703 352 8862
+        Email:     dtd-team@techbooks.com
+
+====================================================================== -->
+<!-- ======================================================================
+     $Id$
+     IOPart XML V1_5_2a DTD
+     Date: 18 August 2010
+     Copyright (C) 2000, 2002, 2003, 2004, 2005, 2006, 2009, 2010
+
+     ====================================================================== -->
+<!-- Changes History V1_6 -->
+<!-- 18/08/10 - Add include-space and include-space-non-latin attributes to
+		author, so we know whether the formatted name should include
+		a space between given and surname
+	-->
+<!-- 30/07/10 - Add non-latin attributes to <first-names> and <second-name>
+		Replace author type attribute with order and order-non-latin
+		This change is not backwards compatible, but it only affects
+		the minority of articles which actually use these attribute
+		Note that first-names and second-name should really be
+		given-names and surname respectively
+	-->
+<!-- Changes History V1_5_2a -->
+<!-- 14/05/08 - change occurrence of graphic in figure from one or more to zero or more -->
+<!-- 04/09/08 - added implied ID to orgname -->
+
+<!-- Changes History V1_5_2 -->
+<!-- 09/10/06 - Added new attribute numbering to <type> with options article or page and page as the default -->
+
+<!-- Changes History V1_5_1 -->
+<!-- 18/04/05 - Added <crossref> and series of children to hold information returned from CrossRef on reference lookup -->
+<!-- 18/04/05 - New element <cr_...> for individual elements of data returned from CrossRef -->
+<!-- 18/04/05 - Changed content model for all reference types (journal, book, conf, misc) to have optional <crossref> element at end -->
+
+<!-- Changes History V1_4_7a -->
+<!-- 28/06/04 - Added arxivppt to article-data so arxiv preprint number can be given (JSTAT, JCAP and JHEP) -->
+<!-- 14/03/05 - Changed content model for authors to allow au, others, collaboration -->
+<!-- 05/04/05 - Changed attributes address, email, url, alt-address and footnote of <author> and <collaboration> from IDREF to IDREFS --> 
+<!-- 06/04/05 - Added similar attributes to <group> as for <author> and <collaboration> -->
+<!-- 23/04/05 - Changed attributes for <author> noted for 5/4/05 hadn't actually been made, now corrected -->
+
+<!-- Changes History V1_4_6 -->
+<!-- 13/11/03 - Added new elements <glossary> to body and <biographies> to <back> --> 
+<!-- 13/11/03 - Added new element <biography> with content (graphic?, (p)*) -->
+<!-- 13/11/03 - Added attribute biog to author to provide link to biography -->
+<!-- 28/01/04 - Added attribute type to <subject-areas> and <keywords> to allow journal specification systems -->
+<!-- 28/01/04 - Added attribute code to <category> and <keyword> so categories and keywords can be specified by code rather than the actual keywords -->
+<!-- 28/01/04 - Added new types (jcap, jstat) to attribute list for <art-number> -->
+<!-- 28/01/04 - Added content %f.extrefs; to links element -->
+<!-- 28/01/04 - Added content <spires> and <extdoi> to %f.extrefs; for spires links and external DOIs -->
+<!-- 28/01/04 - Added new elements <spires> and <extdoi> -->
+<!-- 28/01/04 - Added content <aps> and <edp> to %f.extrefs; for APS and EDP links -->
+<!-- 02/02/04 - Added new elements <aps>, <edp> for external linking -->
+<!-- 02/02/04 - Added extra elements to <stacks> to allow explicit linking from references -->
+<!-- 27/04/04 - Changed subject-areas so that more than one category is allowed -->
+
+<!-- Changes History V1_4_5 -->
+<!-- 22/09/03 - Modified content models of <book-ref> to allow <preprint-info> -->
+<!-- 25/09/03 - Added artnum attribute to type-number to %f.article-data; -->
+<!-- 22/09/03 - Added <doi>? to %f.article-data; -->
+<!-- 22/09/03 - Added new element doi to contain value of DOI (10.1088/<issn>/<volume>/<issue>/artnum) -->
+
+<!-- Changes History V1.4.4 -->
+<!-- 06/09/02 - CORPORATE and COLLABORATION added as new elements within AUTHORS in references --> 
+<!-- 08/14/02 - Content model of table changed from ((caption)?, (tgroup|graphic )+) to ((caption)?, (tgroup|graphic )+)+ (+ added) to allow for multiple page tables -->
+<!-- 09/10/02 - Added attribute after to YEAR to allow for books without authors/editors -->
+<!-- 09/11/02 - Changed content of proclaim to include %f.block; -->
+<!-- 09/12/02 - Added DEFINITION to %f.article-data; and definition made an EMPTY element -->
+<!-- 28/04/03 - Added element volume-title book-ref -->
+<!-- 28/04/03 - Added element upright to %f.emph; for upright material with emphasised material -->
+<!-- 01/05/03 - Added new optional element ej-title to %f.title; for the browser title bar in EJs and to be distinct from short-title which is used as the running head used in print -->
+<!-- 01/05/03 - Changed content for short-title to allow inline equations -->
+<!-- 02/05/03 - Added attribute num to <ref-group> and <multipart> -->
+<!-- 02/05/03 - Added new element source to content model for misc-ref for publication information not in the book format of (place: publisher) -->
+<!-- 14/05/03 - Modified content model of COLLABORATION and added attribute to refine use of collaboration in reference lists  -->
+<!-- 21/05/03 - Modified content model of <journal-ref> so order of <misc-text> and <preprint-info> is arbitrary -->
+<!-- 21/05/03 - Modified content models of <conf-ref> and <misc-ref> to allow <preprint-info> -->
+<!-- 29/05/03 - Added <art-number> to content model of <conf-ref> -->
+<!-- 05/06/03 - Modified attributes to <stacks> element, added article, jnl, issue, artno, mmedia and made mandatory attributes issn, vol optional -->  
+
+<!-- Changes History V1.4.3 -->
+<!-- 07/22/02 - Revised JOURNAL-REF content model to include CONF-TITLE and PREPRINT-INFO -->
+<!-- 07/22/02 - New element PREPRINT-INFO added with elements YEAR, PREPRINT, ART-NUMBER -->
+<!-- 07/22/02 - Revised order of elements in F.REFNAME, NAME-SUFFIX now after FIRST-NAMES -->
+<!-- 07/22/02 - Revised content model for COLLABORATION to include GROUP and AUTHOR -->
+<!-- 07/22/02 - Added new element GROUP for the group within the COLLABORATION text -->
+<!-- 07/22/02 - Changed content model for BOOK-REF to allow multiple instances of CHAP and PAGES -->
+<!-- 07/22/02 - Revised content model of MISC-TEXT to include INLINE-EQN -->
+<!-- 07/22/02 - Revised content model for FIGURE to allow multiple occurrences of graphic and caption (for figures continued over 2 or more pages) -->
+<!-- 07/22/02 - Added extra attribute PAGE to figure (to indicate multipage figures) -->
+<!-- 07/22/02 - Extra attributes CONT and NUMBER added to caption for continued  or unnumbered figures/tables -->
+<!-- 07/22/02 - Added attributes to art-number to handle references to NJP, JOT, Phys. Rev., ArXiV and JHEP articles --> 
+<!-- 07/22/02 - Revised content model of MISC-REF to include PATENT, PATENT-NUMBER and ART-NUMBER -->
+<!-- 07/22/02 - Added new elements PATENT, PATENT-NUMBER to allow linking directly to patents -->
+<!-- 07/22/02 - Revised content model for CAPTION to include MM-TEXT -->
+<!-- 07/22/02 - Added new element MM-TEXT for figures which have associated multimedia -->
+
+<!-- Changes History V1.4.2 -->
+<!--
+03/14/02 - Revised content model of MISC-TEXT to include PREPRINT -->
+<!-- Changes History V1.4.1 -->
+<!--
+09/21/01 - Included new attributes SHOWID and JOINWITH to ADDRESS -->
+<!-- Changes History V1.4 -->
+<!--
+09/04/01 - Included new attribute OVERRIDE to EQNREF, FIGREF, TABREF, FNREF, SECREF and TEXTREF
+09/04/01 - Revised content model of DEFINITION to exclude %f.emph; 
+08/30/01 - Included new attributes OVERRIDE and SHOW to CITE
+08/30/01 - Included new attribute AUTHOR to %a.ref;
+08/30/01 - Included new attribute PRINT to SUBJECT-CODES, KEYWORDS and INDEX-TERMS
+07/31/01 - Revised content model of %f.disptext and %f.block to include DEFINITION
+07/31/01 - Added new elements EQN-GROUP, DEFINITION
+07/31/01 - Included new attribute PATTERN to ORDERED-LIST
+07/31/01 - Included new attribute PRINT to AU
+-->
+<!-- Changes History V1.3.2 -->
+<!--
+06/08/01 - Revised content model of % f.jnl-data to include "jnl-shortname"
+06/04/01 - Revised content model of query-ref to include "#PCDATA | %f.emph;"
+06/04/01 - Added new element "FEATURES"
+06/04/01 - Revised content model of % f.article-data to include "features"
+06/04/01 - Added new attribute "colour" to graphic-file element
+06/04/01 - Added new attribute "print" to class-codes element -->
+<!-- Changes History V1.3.1 -->
+<!--
+03/28/01 - Allowed class-codes multiple times within classifications
+03/28/01 - Included "style" attribute to PROCLAIM element
+03/28/01 - Included "type" attribute to P element
+03/28/01 - Revised "type" attribute of ADDRESS to include 
+           "government"
+03/28/01 - Included "recommended" attribute to HISTORY element
+03/28/01 - Revised content model of HEADER to move 
+           TABLE-OF-CONTENTS after DEDICATION
+03/28/01 - Revised "level" attribute of TABLE-OF-CONTENTS to include "3"
+03/28/01 - Revised content model of %f.article-data to include "type-number"
+03/28/01 - Revised content model of %f.emph to include "query-ref"
+03/28/01 - Revised content model of ARTICLE to include "queries"
+03/28/01 - Include new elements QUERY-REF, QUERIES and QUERY
+-->
+
+<!-- Notation declarations  ....... -->
+
+<!NOTATION DVI SYSTEM "DVI">
+<!NOTATION EPS PUBLIC 
+"+//ISBN 0-201-18127-4::Adobe//NOTATION PostScript Language Ref. Manual//EN">
+<!NOTATION GIF SYSTEM "GIF">
+<!NOTATION GIF87a PUBLIC "-//CompuServe//NOTATION Graphics Interchange Format 87a//EN">
+<!NOTATION GIF89a PUBLIC "-//CompuServe//NOTATION Graphics Interchange Format 89a//EN">
+<!NOTATION JPG SYSTEM "JPG">
+<!NOTATION JPEG SYSTEM "JPG">
+<!NOTATION IGES PUBLIC "-//USA-DOD//NOTATION (ASME/ANSI Y14.26M-1987) Initial Graphics Exchange Specification//EN">
+<!NOTATION PS SYSTEM "PS">
+<!NOTATION TeX PUBLIC "+//ISBN 0-201-13448-9::Knuth//NOTATION The TeXbook//EN">
+<!NOTATION LaTeX PUBLIC "+//ISBN 0-201-13448-9::Knuth//NOTATION The TeXbook//EN">
+
+<!-- ISO character entity sets ..... -->
+
+<!ENTITY % ISOamsa.module "INCLUDE">
+<![%ISOamsa.module;[
+<!ENTITY % ISOamsa PUBLIC "ISO 8879:1986//ENTITIES Added Math Symbols: Arrow Relations//EN//XML" "ent/iso-amsa.ent">
+%ISOamsa;
+<!--end of ISOamsa.module-->]]>
+
+<!ENTITY % ISOamsb.module "INCLUDE">
+<![%ISOamsb.module;[
+<!ENTITY % ISOamsb PUBLIC "ISO 8879:1986//ENTITIES Added Math Symbols: Binary Operators//EN//XML" "ent/iso-amsb.ent">
+%ISOamsb;
+<!--end of ISOamsb.module-->]]>
+
+<!ENTITY % ISOamsc.module "INCLUDE">
+<![%ISOamsc.module;[
+<!ENTITY % ISOamsc PUBLIC "ISO 8879:1986//ENTITIES Added Math Symbols: Delimiters//EN//XML" "ent/iso-amsc.ent">
+%ISOamsc;
+<!--end of ISOamsc.module-->]]>
+
+<!ENTITY % ISOamsn.module "INCLUDE">
+<![%ISOamsn.module;[
+<!ENTITY % ISOamsn PUBLIC "ISO 8879:1986//ENTITIES Added Math Symbols: Negated Relations//EN//XML" "ent/iso-amsn.ent">
+%ISOamsn;
+<!--end of ISOamsn.module-->]]>
+
+<!ENTITY % ISOamso.module "INCLUDE">
+<![%ISOamso.module;[
+<!ENTITY % ISOamso PUBLIC "ISO 8879:1986//ENTITIES Added Math Symbols: Ordinary//EN//XML" "ent/iso-amso.ent">
+%ISOamso;
+<!--end of ISOamso.module-->]]>
+
+<!ENTITY % ISOamsr.module "INCLUDE">
+<![%ISOamsr.module;[
+<!ENTITY % ISOamsr PUBLIC "ISO 8879:1986//ENTITIES Added Math Symbols: Relations//EN//XML" "ent/iso-amsr.ent">
+%ISOamsr;
+<!--end of ISOamsr.module-->]]>
+
+<!ENTITY % ISObox.module "INCLUDE">
+<![%ISObox.module;[
+<!ENTITY % ISObox PUBLIC "ISO 8879:1986//ENTITIES Box and Line Drawing//EN//XML" "ent/iso-box.ent">
+%ISObox;
+<!--end of ISObox.module-->]]>
+
+<!ENTITY % ISOcyr1.module "INCLUDE">
+<![%ISOcyr1.module;[
+<!ENTITY % ISOcyr1 PUBLIC "ISO 8879:1986//ENTITIES Russian Cyrillic//EN//XML" "ent/iso-cyr1.ent">
+%ISOcyr1;
+<!--end of ISOcyr1.module-->]]>
+
+<!ENTITY % ISOcyr2.module "INCLUDE">
+<![%ISOcyr2.module;[
+<!ENTITY % ISOcyr2 PUBLIC "ISO 8879:1986//ENTITIES Non-Russian Cyrillic//EN//XML" "ent/iso-cyr2.ent">
+%ISOcyr2;
+<!--end of ISOcyr2.module-->]]>
+
+<!ENTITY % ISOdia.module "INCLUDE">
+<![%ISOdia.module;[
+<!ENTITY % ISOdia PUBLIC "ISO 8879:1986//ENTITIES Diacritical Marks//EN//XML" "ent/iso-dia.ent">
+%ISOdia;
+<!--end of ISOdia.module-->]]>
+
+<!ENTITY % ISOgrk1.module "INCLUDE">
+<![%ISOgrk1.module;[
+<!ENTITY % ISOgrk1 PUBLIC "ISO 8879:1986//ENTITIES Greek Letters//EN//XML" "ent/iso-grk1.ent">
+%ISOgrk1;
+<!--end of ISOgrk1.module-->]]>
+
+<!ENTITY % ISOgrk2.module "INCLUDE">
+<![%ISOgrk2.module;[
+<!ENTITY % ISOgrk2 PUBLIC "ISO 8879:1986//ENTITIES Monotoniko Greek//EN//XML" "ent/iso-grk2.ent">
+%ISOgrk2;
+<!--end of ISOgrk2.module-->]]>
+
+<!ENTITY % ISOgrk3.module "INCLUDE">
+<![%ISOgrk3.module;[
+<!ENTITY % ISOgrk3 PUBLIC "ISO 8879:1986//ENTITIES Greek Symbols//EN//XML" "ent/iso-grk3.ent">
+%ISOgrk3;
+<!--end of ISOgrk3.module-->]]>
+
+<!ENTITY % ISOgrk4.module "INCLUDE">
+<![%ISOgrk4.module;[
+<!ENTITY % ISOgrk4 PUBLIC "ISO 8879:1986//ENTITIES Alternative Greek Symbols//EN//XML" "ent/iso-grk4.ent">
+%ISOgrk4;
+<!--end of ISOgrk4.module-->]]>
+
+<!ENTITY % ISOlat1.module "INCLUDE">
+<![%ISOlat1.module;[
+<!ENTITY % ISOlat1 PUBLIC "ISO 8879:1986//ENTITIES Added Latin 1//EN//XML" "ent/iso-lat1.ent">
+%ISOlat1;
+<!--end of ISOlat1.module-->]]>
+
+<!ENTITY % ISOlat2.module "INCLUDE">
+<![%ISOlat2.module;[
+<!ENTITY % ISOlat2 PUBLIC "ISO 8879:1986//ENTITIES Added Latin 2//EN//XML" "ent/iso-lat2.ent">
+%ISOlat2;
+<!--end of ISOlat2.module-->]]>
+
+<!ENTITY % ISOnum.module "INCLUDE">
+<![%ISOnum.module;[
+<!ENTITY % ISOnum PUBLIC "ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN//XML" "ent/iso-num.ent">
+%ISOnum;
+<!--end of ISOnum.module-->]]>
+
+<!ENTITY % ISOpub.module "INCLUDE">
+<![%ISOpub.module;[
+<!ENTITY % ISOpub PUBLIC "ISO 8879:1986//ENTITIES Publishing//EN//XML" "ent/iso-pub.ent">
+%ISOpub;
+<!--end of ISOpub.module-->]]>
+
+<!ENTITY % ISOtech.module "INCLUDE">
+<![%ISOtech.module;[
+<!ENTITY % ISOtech PUBLIC "ISO 8879:1986//ENTITIES General Technical//EN//XML" "ent/iso-tech.ent">
+%ISOtech;
+<!--end of ISOtech.module-->]]>
+
+
+<!-- Parameter Entities .............. -->
+
+<!ENTITY % yesorno '(yes|no)'>
+
+<!ENTITY % a.idimp "id ID #IMPLIED">
+
+<!ENTITY % a.idreq "id ID #REQUIRED">
+
+<!ENTITY % a.idref "linkend IDREF #REQUIRED
+                    range   CDATA #IMPLIED">
+
+<!ENTITY % a.ref "num        CDATA #IMPLIED
+                  author     CDATA #IMPLIED
+                  year-label CDATA #IMPLIED ">
+
+<!ENTITY % a.section "appendix  (yes|no)    'no'
+                      type      (num|unnum) 'num'
+                      style     (alpha|ALPHA|roman|ROMAN|arabic|none) 'arabic'
+                      inherit   (yes|no)    'yes'                         
+                      number    CDATA        #IMPLIED 
+                      label     CDATA        #IMPLIED ">
+
+<!ENTITY % a.match "match  (exact|fuzzy)    'exact' ">
+
+<!ENTITY % f.jnl-data "(jnl-fullname, jnl-abbreviation,
+                       jnl-shortname, (jnl-subtitle)?,
+                        jnl-issn, jnl-coden, (jnl-imprint)?,
+                        jnl-web-address)">
+
+<!ENTITY % f.name "(name-prefix)?, (first-names)?, second-name, 
+                    (name-suffix)?, (name-qualifier)? ">
+
+<!-- Changed order of components of name in reference suffix moved to after first names -->
+<!ENTITY % f.refname "second-name,(name-prefix)?,(first-names)?,(name-suffix)?,(name-qualifier)? ">  
+
+<!ENTITY % f.volume-data "(year-publication, volume-number)">
+
+<!ENTITY % f.issue-data "(issue-number, coverdate)">
+
+<!-- Added definition? 12/09/2002 AJC -->
+<!-- Added doi? 22/09/2003 AJC -->
+<!ENTITY % f.article-data "(article-type, type-number, article-number, 
+                           first-page, last-page, length,
+                           pii?, doi?, arxivppt?, copyright, ccc,
+                           printed, features?, definition?)">
+
+<!ENTITY % f.vspacing "vspace | nobreak | pagebreak
+                      |spread ">
+
+<!ENTITY % f.hspacing "hspace | linebreak ">
+
+<!ENTITY % f.equation "inline-eqn | eqn-group | display-eqn">
+
+<!ENTITY % f.inline-special "inline-eqn | inline-graphic | 
+                             chem-structure | astro-object">
+
+<!ENTITY % f.list "ordered-list | itemized-list | definition-list ">
+
+<!-- Added ej-title 1/05/03 for title to go in browser bar (no markup) -->
+<!ENTITY % f.title "(title)+, (subtitle)?, (short-title)?, (ej-title)?,
+                    (title-for-toc)?">
+
+<!ENTITY % f.intrefs "cite | eqnref | figref | tabref | textref | secref ">
+
+<!-- 28/01/04 Added spires, extdoi, aps, edp -->
+<!ENTITY % f.extrefs "webref | email | ftp | arxiv | mmfile | stacks | iophome | spires | extdoi | aps | edp ">
+
+<!ENTITY % f.xrefs "%f.intrefs; | %f.extrefs;">
+
+<!-- Added upright 28/04/03 -->
+<!ENTITY % f.emph "smallcap | upright | italic | bold |
+                    bold-italic | underline |monospace |sup | sub| fnref | query-ref">
+
+<!ENTITY % f.intext "#PCDATA | %f.emph; | %f.xrefs; | 
+                     %f.inline-special; ">
+
+<!ENTITY % f.disptext "#PCDATA | %f.emph; | %f.xrefs; | %f.equation; | definition
+                       | figure | %f.vspacing; ">
+
+<!ENTITY % f.tgroup "(colspec)+, (spanspec)*,((thead)?,
+                     tbody, (tfoot)*)+">
+
+<!ENTITY % f.address "%f.emph; | %f.xrefs; | orgname
+                      | country">
+
+<!ENTITY % f.block "p | table | figure | proclaim | %f.list;
+                    | quote | definition">
+
+<!ENTITY % f.ref "journal-ref | book-ref | conf-ref| misc-ref ">
+
+<!-- End of Parameter Entities -->
+
+<!-- Article Information       -->
+
+<!ELEMENT article (article-metadata, header, body, (back)?,
+                   (extra-data)?, (queries)?)>
+<!ATTLIST article
+                  artid ID #REQUIRED>
+
+<!-- Article Metadata     -->
+<!ELEMENT article-metadata (jnl-data, volume-data,
+                            issue-data, article-data)>
+
+<!-- Article Header     -->
+<!ELEMENT header (title-group, author-group,
+                   address-group, (history)?,
+                   (abstract-group)?, (classifications)?,
+                   (dedication)?, (table-of-contents)?)>
+
+<!-- Journal Information -->
+<!ELEMENT jnl-data (%f.jnl-data;)>
+<!ATTLIST jnl-data
+                   jnlid ID #REQUIRED >
+
+<!-- Volume Information -->
+<!ELEMENT volume-data (%f.volume-data;)>
+
+<!-- Issue Information -->
+<!ELEMENT issue-data (%f.issue-data;)>
+
+<!-- Article Information -->
+<!ELEMENT article-data (%f.article-data;)>
+
+<!-- Body Matter -->
+
+<!ELEMENT body ((p)*, (sec-level1)*, (acknowledgment)?, (appendix)?, 
+                (noteadded)?, (glossary)?)>
+<!ATTLIST body
+               refstyle (alphabetic | numeric | labelled) "numeric"
+               numbering (sequential | bysection) "sequential"
+               toc (yes | no) "no"
+               toclevel CDATA #IMPLIED
+>
+
+<!-- Back Matter -->
+<!-- Added optional biographies (for Phys Bio) 13/11/03 -->
+<!ELEMENT back ((references)+, (biographies)?, (footnotes)?)>
+
+<!-- Section level 1 -->
+<!ELEMENT sec-level1 ((heading)?, (%f.block;)*, (sec-level2)*)>
+<!ATTLIST sec-level1
+                     %a.idreq; 
+                     %a.section;
+>
+
+<!-- Section level 2 -->
+<!ELEMENT sec-level2 ((heading)?, (%f.block;)*, (sec-level3)*)>
+<!ATTLIST sec-level2
+                     %a.idreq; 
+                     %a.section;
+>
+
+<!-- Section level 3 -->
+<!ELEMENT sec-level3 ((heading)?, (%f.block;)*, (sec-level4)*)>
+<!ATTLIST sec-level3
+                     %a.idreq; 
+                     %a.section;
+>
+
+<!-- Section level 4 -->
+<!ELEMENT sec-level4 ((heading)?, (%f.block;)*, (sec-level5)*)>
+<!ATTLIST sec-level4
+                     %a.idreq; 
+                     %a.section;
+>
+
+<!-- Section level 5 -->
+<!ELEMENT sec-level5 ((heading)?, (%f.block;)*)>
+<!ATTLIST sec-level5
+                     %a.idreq; 
+                     %a.section;
+>
+
+<!-- Appendix -->
+<!ELEMENT appendix (sec-level1)+>
+<!ATTLIST appendix
+                   %a.idreq; 
+                   numbering (sequential | bysection) "bysection"
+                   numbers (restart | continue) "restart"
+                   prefix (yes | no) "yes" >
+
+<!-- Acknowledgment -->
+<!ELEMENT acknowledgment ((heading)?, (%f.block;)*)>
+<!ATTLIST acknowledgment
+                         %a.idimp; >
+
+<!-- Glossary (added 13/11/03) -->
+<!ELEMENT glossary ((heading)?, (%f.block;)*)>
+<!ATTLIST glossary
+                         %a.idimp; >
+
+<!-- Biographies section (added 13/11/03) -->
+<!ELEMENT biographies (biography)+ >
+
+<!ELEMENT biography (graphic?, (p)*) >
+<!ATTLIST biography 
+                          %a.idreq; >
+
+
+<!-- Citation References -->
+<!ELEMENT references ((heading)?, (p | reference-list)*)>
+<!ATTLIST references
+                     %a.idimp; >
+
+<!ELEMENT reference-list (ref-group| multipart | %f.ref;)*>
+<!ATTLIST reference-list
+                         type (alphabetic | numeric | labelled) "numeric" >
+
+<!-- Added (2/5/03) extra attribute num for group number or label -->
+<!ELEMENT ref-group (multipart | %f.ref;)*>
+<!ATTLIST ref-group
+                    %a.idimp; 
+                    num        CDATA #IMPLIED>
+
+<!-- Added (2/5/03) extra attribute num for group number or label -->
+<!ELEMENT multipart (%f.ref;)+>
+<!ATTLIST multipart
+                    %a.idimp; 
+                    num        CDATA #IMPLIED>
+
+<!-- Journal Reference -->
+<!-- added conf-title and preprint-info 22/7/02 -->
+<!-- made position of preprint-info and misc-text more flexible (21/5/03 AJC) -->
+<!ELEMENT journal-ref ((misc-text)?, (authors)?,
+                        (year)?, (art-title)?, (conf-title)?,
+                        jnl-title, (part)?,
+                        (volume)?, (issno)?,
+                        (art-number)?, (pages)?, (misc-text | preprint-info)*,(links)?, (crossref)?)>
+
+<!ATTLIST journal-ref
+                      %a.idreq; 
+                      %a.ref; >
+
+<!-- Book Reference -->
+<!-- changed (chap)?, (pages)? to (chap | pages)? 22/07/02 
+added (volume-title)? 28/4/03 -->
+<!-- Added preprint-info to content of book-ref (22/9/03 AJC) -->
+<!ELEMENT book-ref ((misc-text)?, (authors | editors )?,
+                      (year)?, (art-title)?, book-title,
+                      (series)?, (volume)?, (volume-title)?,
+                      (edition)?, (editors)?,
+                      (publication)?, (chap | pages)*, (misc-text | preprint-info)*,
+                      (links)?, (crossref)?)>
+<!ATTLIST book-ref
+                    %a.idreq; 
+                    %a.ref; >
+
+<!-- Conference Reference -->
+<!-- Added preprint-info and art-number to content of conf-ref (21/5/03, 29/5/03 AJC) -->
+<!ELEMENT conf-ref ((misc-text)?, (authors | editors )?, 
+                      (year)?, (art-title)?, conf-title,
+                      (conf-place)?, (series)?,
+                      (volume)?, (editors)?,
+                      (publication)?, (art-number)?, (pages)?,
+                      (misc-text | preprint-info)*, (links)?, (crossref)?)>
+<!ATTLIST conf-ref
+                   %a.idreq; 
+                   %a.ref; >
+
+<!-- Miscellaneous Reference -->
+<!-- Added art-number, patent, patent-number to content of misc-ref (22/7/02 AJC) -->
+<!-- Added source to content of misc-ref (02/5/03 AJC) -->
+<!-- Added preprint-info to content of misc-ref (21/5/03 AJC) -->
+<!ELEMENT misc-ref ((misc-text | authors | editors | year | 
+                      art-title | preprint | thesis | patent | misc-title | source |
+                      publication | art-number | patent-number | pages | preprint-info)*, (links)?, (crossref)?)>
+<!ATTLIST misc-ref
+                   %a.idreq; 
+                   %a.ref;  >
+
+<!-- Notes Added -->
+<!ELEMENT noteadded ((heading)?, (%f.block;)*)>
+<!ATTLIST noteadded
+                    %a.idreq; >
+
+<!-- Figure or table caption -->
+<!-- Added mm-text 22/7/02 -->
+<!ELEMENT caption (p*, mm-text?) >
+<!ATTLIST caption
+                  %a.idreq; 
+                  type (table | figure) #IMPLIED
+                  lang (english | french | german) "english"
+                  number                 %yesorno; "yes"
+                  cont                   %yesorno; "no"
+                  label CDATA #IMPLIED >
+
+<!-- Added element 22/7/02 -->
+<!ELEMENT mm-text (#PCDATA | %f.emph; | %f.xrefs;)* >
+<!ATTLIST mm-text 
+                  type (avi|flash|gif|mov|mpeg|supp|other) #REQUIRED >
+
+<!-- Footnote Group -->
+<!ELEMENT footnotes (footnote)+>
+
+<!-- Extra Information not in print version (EJ only) -->
+<!ELEMENT extra-data (sec-level1)+>
+<!ATTLIST extra-data
+                     %a.idreq; 
+                     type (multimedia | suppdata | mixed) "multimedia"
+                     mmtype (animation | video | audio) #IMPLIED
+                     datatype CDATA #IMPLIED >
+
+<!-- Emphasis Elements -->
+
+<!-- Small Cap -->
+<!ELEMENT smallcap (#PCDATA | %f.emph;)*>
+
+<!-- Upright text (added 28/04/03) -->
+<!ELEMENT upright (#PCDATA | %f.emph;)*>
+
+<!-- Italic -->
+<!ELEMENT italic (#PCDATA | %f.emph;)*>
+
+<!-- Bold -->
+<!ELEMENT bold (#PCDATA | %f.emph;)*>
+
+<!-- Bold Italic -->
+<!ELEMENT bold-italic (#PCDATA | %f.emph;)*>
+
+<!-- Underline -->
+<!ELEMENT underline (#PCDATA | %f.emph;)*>
+
+<!-- Superscript -->
+<!ELEMENT sup (#PCDATA | %f.emph;)*>
+
+<!-- Subscript -->
+<!ELEMENT sub (#PCDATA | %f.emph;)*>
+<!ATTLIST sub
+              valign (yes | no) "no" >
+
+<!-- Monospaced (Typewriter) -->
+<!ELEMENT monospace (#PCDATA | %f.emph;)*>
+
+<!-- Spacing Elements -->
+
+<!-- Vertical Space -->
+<!ELEMENT vspace EMPTY>
+<!ATTLIST vspace
+                 space CDATA #IMPLIED >
+
+<!-- Horizontal Space -->
+<!ELEMENT hspace EMPTY>
+<!ATTLIST hspace
+                  space CDATA #IMPLIED >
+
+<!-- No Break -->
+<!ELEMENT nobreak EMPTY>
+<!ATTLIST nobreak
+                  space CDATA #IMPLIED >
+
+<!-- Vertical Page Break -->
+<!ELEMENT pagebreak EMPTY>
+
+<!-- Line Break -->
+<!ELEMENT linebreak EMPTY>
+
+<!-- Spread -->
+<!ELEMENT spread EMPTY>
+<!ATTLIST spread
+                 long CDATA #IMPLIED >
+
+
+<!-- Internal Reference Elements -->
+<!-- Citation Reference -->
+<!ELEMENT cite (#PCDATA | %f.emph;)*>
+<!ATTLIST cite
+               %a.idref; 
+               type (alphabetic | numeric | labelled) #IMPLIED
+               show (author|year) 'author'
+               override (yes|no) 'no' >
+
+<!-- Equation Reference -->
+<!ELEMENT eqnref (#PCDATA | %f.emph;)*>
+<!ATTLIST eqnref
+                 %a.idref;
+                 override (yes|no) 'no'  >
+
+<!-- Figure Reference -->
+<!ELEMENT figref (#PCDATA | %f.emph;)*>
+<!ATTLIST figref
+                 %a.idref;
+                 override (yes|no) 'no'  >
+
+<!-- Table Reference -->
+<!ELEMENT tabref (#PCDATA | %f.emph;)*>
+<!ATTLIST tabref
+                 %a.idref;
+                 override (yes|no) 'no'  >
+
+<!-- Footnote Reference -->
+<!ELEMENT fnref (#PCDATA | %f.emph;)*>
+<!ATTLIST fnref
+                %a.idref;
+                override (yes|no) 'no'  >
+
+<!-- Section Reference -->
+<!ELEMENT secref (#PCDATA | %f.emph;)*>
+<!ATTLIST secref
+                 %a.idref;
+                 override (yes|no) 'no'  >
+
+<!-- Text Reference -->
+<!ELEMENT textref (#PCDATA | %f.emph;)*>
+<!ATTLIST textref
+                  %a.idref;
+                  override (yes|no) 'no'  >
+
+<!-- External References -->
+<!-- Webaddress Reference -->
+<!ELEMENT webref (#PCDATA | %f.emph;)*>
+<!ATTLIST webref
+                 url CDATA #REQUIRED >
+
+<!-- E-Mail Reference -->
+<!ELEMENT email (#PCDATA | %f.emph;)*>
+<!ATTLIST email
+                mailto CDATA #IMPLIED >
+
+<!-- FTP Reference -->
+<!ELEMENT ftp (#PCDATA | %f.emph;)*>
+<!ATTLIST ftp
+              site CDATA #IMPLIED >
+
+<!-- External File Reference -->
+<!ELEMENT mmfile (#PCDATA | %f.emph;)*>
+<!ATTLIST mmfile
+                 id       ID    #REQUIRED
+                 format   CDATA #REQUIRED
+                 filename CDATA #IMPLIED
+                 mime     CDATA #IMPLIED
+                 size     CDATA #IMPLIED
+                 label    CDATA #IMPLIED >
+
+
+<!ELEMENT arxiv (#PCDATA | %f.emph;)*>
+<!ATTLIST arxiv
+                %a.idimp; 
+                url CDATA #REQUIRED >
+
+<!-- New element added 28/01/04 -->
+<!ELEMENT spires (#PCDATA | %f.emph;)*>
+<!ATTLIST spires
+                root CDATA  #FIXED "www-spires.slac.stanford.edu/spires/find/hep/www?j="
+                jnl  CDATA  #REQUIRED 
+                vol  CDATA  #REQUIRED
+                page CDATA  #REQUIRED >
+
+<!--  New element (external DOI) added 28/01/04 -->
+<!ELEMENT extdoi   (#PCDATA | %f.emph;)*>
+<!ATTLIST extdoi
+          base  CDATA "http://dx.doi.org/" 
+          doi   CDATA #REQUIRED >
+          
+<!-- New element added 2/02/04 -->
+<!ELEMENT aps (#PCDATA | %f.emph;)*>
+<!ATTLIST aps
+                root  CDATA  #FIXED "link.aps.org/abstract/"
+                jnl   CDATA  #REQUIRED 
+                vol   CDATA  #REQUIRED
+                page  CDATA  #REQUIRED 
+                start CDATA  #IMPLIED
+                end   CDATA  #IMPLIED >
+
+<!-- New element added 2/02/04 -->
+<!ELEMENT edp (#PCDATA | %f.emph;)*>
+<!ATTLIST edp
+                root  CDATA #FIXED "publish.edpsciences.org/abstract/"                
+                jnl   CDATA  #REQUIRED 
+                vol   CDATA  #REQUIRED
+                page  CDATA  #REQUIRED 
+                start CDATA  #IMPLIED
+                end   CDATA  #IMPLIED >
+
+          
+
+<!-- IOP Home page Reference -->
+<!ELEMENT iophome (#PCDATA | %f.emph;)*>
+<!ATTLIST iophome
+                  url (www.iop.org | njp.org) "www.iop.org" >
+
+<!-- Stacks (IOP Linking service) Reference -->
+<!-- Attributes changed to allow more flexibility and to make easier to use (5/6/03) -->
+<!-- New attributes start end added 2/2/04 to allow linking withing reference lists --> 
+<!ELEMENT stacks (#PCDATA | %f.emph;)*>
+<!ATTLIST stacks
+               root     CDATA #FIXED "stacks.iop.org"
+               article (this | other) "this"
+               jnl      CDATA #IMPLIED
+               issn     CDATA #IMPLIED
+               vol      CDATA #IMPLIED
+               issue    CDATA #IMPLIED
+               page     CDATA #IMPLIED
+               artno    CDATA #IMPLIED 
+               mmedia   %yesorno; "no" 
+               start    CDATA #IMPLIED
+               end      CDATA #IMPLIED >
+
+<!-- Journal Information -->
+<!-- Journal Title -->
+<!ELEMENT jnl-fullname (#PCDATA | %f.emph;)*>
+
+<!-- Journal Abreviated Title -->
+<!ELEMENT jnl-abbreviation (#PCDATA)>
+
+<!-- Journal Short Name -->
+<!ELEMENT jnl-shortname (#PCDATA)>
+
+<!-- Journal Subtitle -->
+<!ELEMENT jnl-subtitle (#PCDATA | %f.emph;)*>
+
+<!-- Coden -->
+<!ELEMENT jnl-coden (#PCDATA)>
+
+<!-- Imprint -->
+<!ELEMENT jnl-imprint (#PCDATA | %f.emph;)*>
+
+<!-- Web Address -->
+<!ELEMENT jnl-web-address (#PCDATA)>
+
+<!-- ISSN No -->
+<!ELEMENT jnl-issn (#PCDATA)>
+
+<!-- Volume No -->
+<!ELEMENT volume-number (#PCDATA)>
+
+<!-- Volume No -->
+<!ELEMENT volume (#PCDATA)>
+
+<!-- Volume Title (added 28/04/03) -->
+<!ELEMENT volume-title (#PCDATA | %f.emph;)*>
+
+<!-- Publication Date -->
+<!ELEMENT year-publication (#PCDATA)>
+
+<!-- Issue No -->
+<!ELEMENT issue-number (#PCDATA)>
+
+<!-- Issue No -->
+<!ELEMENT issno (#PCDATA)>
+
+<!-- Cover Date -->
+<!ELEMENT coverdate (#PCDATA)>
+
+
+<!-- Article Metadata Information -->
+<!-- Article Sequence Number, numbering attribute added 9/10/06-->
+<!ELEMENT type-number (#PCDATA)>
+<!ATTLIST type-number
+                     type (paper|letter|review|note|editorial|
+                          intro|erratum)   #REQUIRED 
+                     numbering (article | page) 'page'
+                     artnum CDATA        #IMPLIED >
+
+<!-- Article Number (ATOM number, six digits, used for PII and proof file name)  -->
+<!ELEMENT article-number (#PCDATA)>
+
+<!-- Article Type -->
+<!ELEMENT article-type (#PCDATA)>
+<!ATTLIST article-type
+                        type (paper|letter|review|note|editorial|
+                              intro|erratum)   #REQUIRED 
+                        sort (regular|special) 'regular' >
+
+<!-- First Page -->
+<!ELEMENT first-page (#PCDATA)>
+
+<!-- Last Page -->
+<!ELEMENT last-page (#PCDATA)>
+
+<!-- Length -->
+<!ELEMENT length (#PCDATA)>
+
+<!-- Chapter Pages -->
+<!ELEMENT chap (#PCDATA | %f.emph;)*>
+
+<!-- Pages -->
+<!ELEMENT pages (#PCDATA)>
+
+<!-- PII -->
+<!ELEMENT pii (#PCDATA)>
+
+<!-- Digital Object Identifier (added 22/9/03 for inclusion in 2004 articles) -->
+<!ELEMENT doi (#PCDATA)>
+
+<!-- Arxiv preprint number of article (added 28/6/04) -->
+<!ELEMENT arxivppt (#PCDATA)>
+
+<!-- linking data -->
+<!-- 28/01/04 Added %f.extrefs; for cross references -->
+<!ELEMENT links (#PCDATA | %f.extrefs; | %f.emph;)*>
+<!ATTLIST links
+                %a.idimp; >
+
+<!-- CrossRef data -->
+<!ELEMENT crossref (cr_doi?, cr_urn?, cr_author?, cr_date?, cr_volume?, cr_issue?, cr_first_page?, cr_issn*, cr_full_title?, cr_publication_type?, cr_isbn?, cr_series_title?, cr_volume_title?, cr_edition_number?, cr_component_number?)>
+<!ATTLIST crossref
+                status (resolved|unresolved|multiresolved) "resolved" >
+
+<!ELEMENT cr_doi  (#PCDATA)>
+<!ELEMENT cr_urn  (#PCDATA)>
+<!ELEMENT cr_author (#PCDATA)>
+<!ATTLIST cr_author
+                %a.match; >
+<!ELEMENT cr_date (#PCDATA)>
+<!ATTLIST cr_date
+                %a.match; >
+<!ELEMENT cr_volume (#PCDATA)>
+<!ATTLIST cr_volume
+                %a.match; >
+<!ELEMENT cr_issue (#PCDATA)>
+<!ATTLIST cr_issue
+                %a.match; >
+<!ELEMENT cr_first_page (#PCDATA)>
+<!ATTLIST cr_first_page
+                %a.match; >
+<!ELEMENT cr_issn (#PCDATA)>
+<!ATTLIST cr_issn
+                type   (print | electronic)  "print" >
+<!ELEMENT cr_full_title (#PCDATA)>
+<!ATTLIST cr_full_title
+                %a.match; >
+<!ELEMENT cr_publication_type (#PCDATA)>
+<!ATTLIST cr_publication_type
+                %a.match; >
+<!ELEMENT cr_isbn (#PCDATA)>
+<!ATTLIST cr_isbn
+                %a.match; >
+<!ELEMENT cr_series_title (#PCDATA)>
+<!ATTLIST cr_series_title
+                %a.match; >
+<!ELEMENT cr_volume_title (#PCDATA)>
+<!ATTLIST cr_volume_title
+                %a.match; >
+<!ELEMENT cr_edition_number (#PCDATA)>
+<!ATTLIST cr_edition_number
+                %a.match; >
+<!ELEMENT cr_component_number (#PCDATA)>
+<!ATTLIST cr_component_number
+                %a.match; >
+
+<!-- Copyright Information -->
+<!ELEMENT copyright (#PCDATA | %f.emph;)*>
+
+<!-- Copyright Clearance Information -->
+<!ELEMENT ccc (#PCDATA)>
+
+<!-- Print Information -->
+<!ELEMENT printed (#PCDATA)>
+
+<!-- Features (Multimedia/Coloured Figures/Suppliment Data) -->
+<!ELEMENT features EMPTY>
+
+<!ATTLIST features
+                  colour    (global | single | none) 'none'
+                  mmedia   %yesorno;               'no'
+                  suppdata %yesorno;               'no' >
+
+<!-- Title Group -->
+<!ELEMENT title-group (%f.title;)>
+
+<!-- Title -->
+<!ELEMENT title (%f.intext;)*>
+<!ATTLIST title
+                lang (english | french | german) "english" >
+
+<!-- Short Title (added inline-eqn to content model 01/05/03) -->
+<!ELEMENT short-title (#PCDATA | %f.emph; | inline-eqn)*>
+
+<!-- EJ browser bar Title (added 01/05/03) -->
+<!ELEMENT ej-title (#PCDATA ) >
+
+<!-- Sub Title -->
+<!ELEMENT subtitle (%f.intext;)*>
+
+<!-- Toc Title -->
+<!ELEMENT title-for-toc (#PCDATA | %f.emph;)*>
+
+<!-- Author Information -->
+<!-- Author Group (in article header) -->
+<!ELEMENT author-group ((author | collaboration )+,
+                          (short-author-list)?,
+                          (authors-for-toc)?)>
+
+<!-- Authors (in a reference) content model changed 14/03/05 from-->
+<!-- <!ELEMENT authors ((au | collaboration | corporate)*,others?)> -->
+<!ELEMENT authors ((au | collaboration | corporate), (au | collaboration | corporate | others)*)>
+
+<!-- Collaboration -->
+<!-- Added group, author 22/7/02, added au to content model and reflist attribute 14/5/03 -->
+<!ELEMENT collaboration (#PCDATA | group | author | au | %f.emph;)*>
+<!ATTLIST collaboration
+                        address IDREFS #IMPLIED
+                        second-address IDREF #IMPLIED
+                        third-address IDREF #IMPLIED
+                        email IDREFS #IMPLIED
+                        url IDREFS #IMPLIED
+                        alt-address IDREFS #IMPLIED
+                        footnote IDREFS #IMPLIED 
+                        reflist  %yesorno;  "no">
+<!-- New element for group name with collaboration 22/7/02 -->
+<!ELEMENT group (#PCDATA | %f.emph;)*>
+<!ATTLIST group
+                        address IDREFS #IMPLIED
+                        email IDREFS #IMPLIED
+                        url IDREFS #IMPLIED
+                        alt-address IDREFS #IMPLIED
+                        footnote IDREFS #IMPLIED> 
+
+<!-- New element for corporate name added 06/09/02 -->
+<!ELEMENT corporate (#PCDATA | %f.emph;)*>
+
+<!-- Table of Contents Author -->
+<!ELEMENT authors-for-toc (#PCDATA | %f.emph;)*>
+
+<!-- Short Author List -->
+<!ELEMENT short-author-list (#PCDATA | %f.emph;)*>
+
+<!-- Author -->
+<!-- Changed (26-03-04) attributes so address is IDREFS rather than IDREF, so second-address and third-address are no longer necessary --> 
+<!ELEMENT author (%f.name;) >
+<!ATTLIST author
+		 order (first-second | second-first) "first-second"
+		 order-non-latin (first-second | second-first) #IMPLIED
+		 include-space (yes) "yes"
+		 include-space-non-latin (yes | no) "yes"
+                 address IDREFS #IMPLIED
+                 second-address IDREF #IMPLIED
+                 third-address IDREF #IMPLIED
+                 email IDREFS #IMPLIED
+                 url IDREFS #IMPLIED
+                 alt-address IDREFS #IMPLIED
+                 footnote IDREFS #IMPLIED
+                 corres (yes|no) "no" 
+                 biog IDREF #IMPLIED >
+
+<!ELEMENT name-prefix (#PCDATA | %f.emph;)*>
+
+<!ELEMENT name-suffix (#PCDATA | %f.emph;)*>
+
+<!ELEMENT name-qualifier (#PCDATA | %f.emph; | %f.xrefs;)*>
+
+<!-- Depending on author/@order, this may actually be the second name.
+     It should really be called "given-names" -->
+<!ELEMENT first-names (#PCDATA | %f.emph;)*>
+<!ATTLIST first-names
+		non-latin CDATA #IMPLIED
+>
+
+<!-- Depending on author/@order, this may actually be the first name.
+     It should really be called "sur-name" -->
+<!ELEMENT second-name (#PCDATA | %f.emph;)*>
+<!ATTLIST second-name
+		non-latin CDATA #IMPLIED
+>
+
+<!-- Authors in references -->
+<!ELEMENT au (%f.refname;) >
+<!ATTLIST au 
+              print (yes|no) 'yes' >
+
+<!ELEMENT others (#PCDATA | %f.emph;)*>
+
+<!-- Address Information -->
+<!ELEMENT address-group ((address)*,(e-address)*)>
+
+<!-- Address -->
+<!ELEMENT address (#PCDATA|%f.address;)*>
+<!ATTLIST address
+                  %a.idreq; 
+                  alt (yes | no) "no"
+                  showid (yes | no) "yes"
+                  type (academic | business | government |
+                        personal) "academic"
+                  joinwith IDREF #IMPLIED >
+
+<!-- Electronic Address -->
+<!ELEMENT e-address (#PCDATA|%f.emph;|%f.xrefs;)*>
+<!ATTLIST e-address
+                    %a.idreq; 
+                    type (email | web | ftp) "email" >
+
+<!-- Organisation Name -->
+<!ELEMENT orgname (#PCDATA | %f.emph;)*>
+<!ATTLIST orgname
+                  %a.idimp; >
+
+<!-- Country -->
+<!ELEMENT country (#PCDATA | %f.emph;)*>
+<!ATTLIST country
+                  %a.idimp; >
+
+<!-- Table of contents -->
+<!ELEMENT table-of-contents EMPTY >
+<!ATTLIST table-of-contents
+                            level (1|2|3) '2' >
+
+<!-- Article History -->
+<!ELEMENT history (#PCDATA | %f.emph;)*>
+<!ATTLIST history
+                   received   CDATA #IMPLIED
+                   revised    CDATA #IMPLIED
+                   finalform  CDATA #IMPLIED
+                   accepted   CDATA #IMPLIED
+                   online     CDATA #IMPLIED
+                   recommended CDATA #IMPLIED >
+
+
+<!-- Abstract Group -->
+<!ELEMENT abstract-group (abstract)+>
+
+<!-- Abstract -->
+<!ELEMENT abstract ((heading)?, (%f.block;)*)>
+<!ATTLIST abstract
+                    lang (english | french | german) "english" >
+
+<!ELEMENT classifications ((subject-areas)?, (class-codes)*, 
+                (keywords)?, (index-terms)?)>
+
+<!-- Subject -->
+<!-- New attribute type added 28/1/04 -->
+<!ELEMENT subject-areas ((category)+, (sub-category)?)>
+<!ATTLIST subject-areas
+					    print %yesorno; 'no'
+              type  CDATA #IMPLIED >
+          
+<!-- Primary Category -->
+<!-- New attribute code added 28/1/04 -->
+<!ELEMENT category (#PCDATA | %f.emph;)*>
+<!ATTLIST category
+               %a.idimp; 
+               code  CDATA #IMPLIED >
+
+<!-- Secondary Category -->
+<!ELEMENT sub-category (#PCDATA | %f.emph;)*>
+
+<!-- Keyword Group -->
+<!-- New attribute type added 28/1/04 -->
+<!ELEMENT keywords ((heading)?, (keyword)*)>
+<!ATTLIST keywords
+     			    print %yesorno; 'no' 
+              type  CDATA #IMPLIED >
+
+<!-- Individual Keyword -->
+<!-- New attribute code added 28/1/04 -->
+<!ELEMENT keyword (#PCDATA | %f.emph;)*>
+<!ATTLIST keyword
+              code  CDATA #IMPLIED >
+
+<!-- Class -->
+<!ELEMENT class-codes (code)*>
+<!ATTLIST class-codes
+                      scheme (pacs | ams | pmb) #REQUIRED
+					  print %yesorno; 'no'>
+
+<!-- Class Code -->
+<!ELEMENT code (#PCDATA | %f.emph;)*>
+<!ATTLIST code
+                order (primary | secondary) "primary" >
+
+<!-- Index Group -->
+<!ELEMENT index-terms ((heading)?, (idxterm)*)>
+<!ATTLIST index-terms
+					  print %yesorno; 'no' >
+
+<!-- Individual Index Term -->
+<!ELEMENT idxterm (#PCDATA | %f.emph;)*>
+
+<!-- Dedication -->
+<!ELEMENT dedication ((%f.block;)*)>
+
+<!-- Heading -->
+<!ELEMENT heading (%f.intext;)*>
+
+<!-- Math Type Elements -->
+<!-- content of proclaim changed 11/9/02 from (p | table | %f.list; | quote) to (%f.block;) to allow
+proclaim-like structures within other ones -->
+<!ELEMENT proclaim ((heading)?, (%f.block;)*)>
+<!ATTLIST proclaim
+                     id     ID          #REQUIRED
+                     type   CDATA       #REQUIRED 
+                     format (num|unnum) 'num'
+                     num    CDATA       #IMPLIED
+                     style  (italic|upright) 'italic'
+                     label  CDATA       #IMPLIED >
+
+
+<!-- General Elements -->
+<!-- Display Quotation -->
+<!ELEMENT quote (p)+>
+
+<!-- Definition -->
+<!-- content changed from PCDATA to EMPTY, 12/09/2002 AJC -->
+<!ELEMENT definition EMPTY>
+
+<!-- Para -->
+<!ELEMENT p (%f.disptext; | %f.list; | quote 
+                   | table )*>
+<!ATTLIST p
+              looseness NMTOKEN #IMPLIED
+              estretch NMTOKEN #IMPLIED
+              indent (yes | no) "yes"
+              type (run-on|new-line) "new-line" >
+
+<!-- Display Equation Group -->
+<!ELEMENT eqn-group (display-eqn)+>
+<!ATTLIST eqn-group 
+                    id ID #IMPLIED >
+
+<!-- Display Equation -->
+<!ELEMENT display-eqn ((mathml)?, (math-text)?, (eqn-graphic)?)>
+<!ATTLIST display-eqn
+                        id       ID #IMPLIED
+                        notation NOTATION (LaTeX|TeX)  'TeX'
+                        label    CDATA #IMPLIED
+                        textype  (equation|lequation|eqnarray|
+                                  leqnarray) 'equation'
+                        lines    (single|multiline|block) 'single'
+                        type     (simple|complex)          'complex'
+                        font     (italic|upright)          'italic'
+                        number   (yes|no) 'yes'               
+                        eqnnum   CDATA #IMPLIED
+                        numalign (top|bottom|center|
+                                  dropped) 'bottom'
+                        eqnalign (left|indent|center|wide) 'indent' >
+
+<!-- Inline Equation -->
+<!ELEMENT inline-eqn ((mathml)?, (math-text)?, (inline-graphic)?)>
+<!ATTLIST inline-eqn
+                       notation NOTATION (LaTeX|TeX) 'TeX'
+                       type     (simple|complex)     'simple'
+                       font     (italic|bold-italic|upright|
+                                 bold-upright)        'italic' >
+
+
+<!-- Maths-text -->
+<!ELEMENT math-text (#PCDATA|%f.emph;|%f.hspacing;|%f.xrefs;)*>
+
+<!-- MathML  -->
+<!ELEMENT mathml (#PCDATA)>
+
+<!-- Graphic -->
+<!ELEMENT graphic (graphic-file)+>
+<!ATTLIST graphic
+                   id ID #IMPLIED
+                   uselabel   (yes|no)  'no'
+                   label      CDATA     #IMPLIED
+                   position   (left|indented|center|right) 'left'
+                   row        CDATA     #IMPLIED
+                   column     CDATA     #IMPLIED >
+
+<!-- Graphic -->
+<!ELEMENT graphic-file EMPTY>
+<!ATTLIST graphic-file
+                        version     (print|thumbnail|ej) #REQUIRED
+                        format      (EPS|GIF|JPEG|SVG) #REQUIRED
+                        filename    CDATA #REQUIRED
+                        printcolour (yes|no) 'no' 
+                        colour       (yes|no) 'no' 
+                        align       (top|middle|bottom|baseline) 'middle'
+                        height      CDATA #IMPLIED
+                        width       CDATA #IMPLIED
+                        scale       CDATA #IMPLIED
+                        scalefit    CDATA #IMPLIED >
+
+
+<!-- Inline-graphic -->
+<!ELEMENT inline-graphic EMPTY>
+<!ATTLIST inline-graphic
+                         format (PS|EPS|GIF|JPEG|PNG) #REQUIRED
+                         filename CDATA #REQUIRED
+                         align (top|middle|bottom|baseline) 'middle'
+                         height   CDATA #IMPLIED
+                         width    CDATA #IMPLIED
+                         scale    CDATA #IMPLIED
+                         scalefit CDATA #IMPLIED >
+
+
+<!-- Displayed maths graphic -->
+<!ELEMENT eqn-graphic EMPTY>
+<!ATTLIST eqn-graphic
+                      format  (PS|EPS|GIF|JPEG|PNG) #REQUIRED
+                      filename CDATA #REQUIRED
+                      position (left|indent|center|wide) 'indent'
+                      align    (top|middle|bottom|baseline) 'middle'
+                      height   CDATA #IMPLIED
+                      width    CDATA #IMPLIED
+                      scale    CDATA #IMPLIED
+                      scalefit CDATA #IMPLIED >
+
+
+<!-- Chemical Structures -->
+<!ELEMENT chem-structure (chem-text?,inline-graphic?)>
+<!ATTLIST chem-structure
+                          type (simple|complex) 'simple'
+                          font (italic|bold-italic|upright|
+                                bold-upright)   'upright' >
+
+
+<!-- Chemical-text -->
+<!ELEMENT chem-text (#PCDATA|%f.emph;|%f.xrefs;)*>
+
+<!-- Astronomical Objects -->
+<!ELEMENT astro-object (#PCDATA|%f.emph;|%f.xrefs;)*>
+<!ATTLIST astro-object
+                        type (simple|complex) 'simple'
+                        font (italic|bold-italic|upright|
+                              bold-upright)   'upright' >
+
+
+<!-- Footnote -->
+<!ELEMENT footnote (p)+>
+<!ATTLIST footnote
+                   %a.idreq; 
+                   source (title | author | table | figure | text) "text"
+                   type (number | symbol) "number"
+                   marker CDATA #IMPLIED
+>
+
+<!-- Figure -->
+<!ELEMENT figure ((graphic|chem-structure)*, caption)*>
+<!ATTLIST figure
+              %a.idreq; 
+             position      (float | fixed)                 "float"
+             parts         (single | multiple)             "single"
+             width         (column | page)                 "column"
+             printstyle    (normal | sided | sidedcaption) "normal"
+             pageposition  (top | bottom | page | here)    "top"
+             page          (single | multiple)             "single"
+             orientation   (port | land)                   "port"
+             voffset CDATA #IMPLIED >
+
+<!-- List Elements -->
+<!-- Ordered List -->
+<!ELEMENT ordered-list ((ordered-list|itemized-list|list-item)* )>
+<!ATTLIST ordered-list
+                       %a.idimp;
+                        level    CDATA           #IMPLIED
+                        type     (alpha|ALPHA|roman|ROMAN|arabic) 'roman'
+                        style    (hanging|para)  'hanging'
+                        inherit  (yes|no)        'no'
+                        spacing  (compact|normal) 'normal'
+                        continue (yes|no)         'no'
+                        pattern (1|2|3|4|5) #IMPLIED >
+<!--                    1 = right paranthesis
+                        2 = left & right paranthesis
+                        3 = right bracket
+                        4 = left & right bracket
+                       -->
+ 
+<!-- Itemized List -->
+<!ELEMENT itemized-list ((ordered-list|itemized-list|list-item)* )>
+<!ATTLIST itemized-list
+                         %a.idimp; 
+                         level   CDATA            #IMPLIED
+                         type    CDATA            'bullet'
+                         style   (hanging|para)   'hanging'
+                         spacing (compact|normal) 'normal' >
+
+
+<!-- Definition List -->
+<!ELEMENT definition-list ((definition-list|itemized-list|
+                            def-list-item)*) >
+<!ATTLIST definition-list
+                         %a.idimp; 
+                         level     CDATA            #IMPLIED
+                         type      CDATA            #IMPLIED
+                         width     (page|indent|column|natural) 'column'
+                         termwidth CDATA            '5pc' 
+                         spacing   (compact|normal) 'normal' >
+
+<!-- List item -->
+<!ELEMENT list-item (p)+>
+<!ATTLIST list-item
+                    %a.idreq; 
+                    number CDATA #IMPLIED
+                    marker CDATA #IMPLIED >
+
+<!-- Definition-list item -->
+<!ELEMENT def-list-item (term, list-text)>
+<!ATTLIST def-list-item
+                        %a.idimp; 
+                        number CDATA #IMPLIED >
+
+<!-- Term defined in definition list -->
+<!ELEMENT term ( #PCDATA | %f.emph; | inline-eqn )* >
+<!ATTLIST term
+                %a.idimp; >
+
+<!-- List text -->
+<!ELEMENT list-text (p)+ >
+
+<!-- Table Elements -->
+<!ELEMENT table ((caption)?, (tgroup|graphic )+)+ >
+<!ATTLIST table
+     type (formal | informal | inline) "formal"
+     frame (top | bottom | topbot | all | sides | none) #IMPLIED
+     colsep %yesorno; #IMPLIED
+     rowsep %yesorno; #IMPLIED
+     voffset CDATA #IMPLIED
+     hoffset CDATA #IMPLIED
+     width CDATA #IMPLIED
+     continued (continued) #IMPLIED
+     place (top | bottom | page) #IMPLIED
+     position (float | fixed) "float"
+     textwrap %yesorno; #IMPLIED
+     indent CDATA #IMPLIED
+     %a.idreq; >
+
+<!-- Table Group -->
+<!ELEMENT tgroup (%f.tgroup;)>
+<!ATTLIST tgroup
+     cols CDATA #REQUIRED
+     colsep %yesorno; #IMPLIED
+     rowsep %yesorno; #IMPLIED
+     align (left | right | center | justify | char) #IMPLIED
+     char CDATA #IMPLIED
+     charoff CDATA #IMPLIED
+>
+
+<!-- Table Column Specification -->
+<!ELEMENT colspec EMPTY>
+<!ATTLIST colspec
+     colnum CDATA #IMPLIED
+     colname CDATA #IMPLIED
+     colwidth CDATA #IMPLIED
+     colsep %yesorno; #IMPLIED
+     rowsep %yesorno; #IMPLIED
+     align (left | right | center | justify | char) #IMPLIED
+     char CDATA #IMPLIED
+     charoff CDATA #IMPLIED
+     type (p) #IMPLIED
+>
+
+<!-- Table Spanning Specification -->
+<!ELEMENT spanspec EMPTY>
+<!ATTLIST spanspec
+     namest CDATA #REQUIRED
+     nameend CDATA #REQUIRED
+     spanname CDATA #REQUIRED
+     colsep %yesorno; #IMPLIED
+     rowsep %yesorno; #IMPLIED
+     align (left | right | center | justify | char) #IMPLIED
+     char CDATA #IMPLIED
+     charoff CDATA #IMPLIED
+>
+
+<!-- Table Head -->
+<!ELEMENT thead (row)+>
+<!ATTLIST thead
+     valign (top | middle | bottom) #IMPLIED
+     indent CDATA #IMPLIED
+>
+
+<!-- Table Body -->
+<!ELEMENT tbody (row)+>
+<!ATTLIST tbody
+     valign (top | middle | bottom) #IMPLIED
+>
+
+<!-- Table Foot -->
+<!ELEMENT tfoot (%f.intext;)*>
+<!ATTLIST tfoot
+     valign (top | middle | bottom) #IMPLIED
+     indent CDATA #IMPLIED
+>
+
+<!-- Table Row -->
+<!ELEMENT row (entry)+>
+<!ATTLIST row
+     rowsep %yesorno; #IMPLIED
+     valign (top | middle | bottom) #IMPLIED
+>
+
+<!-- Table Entry -->
+<!ELEMENT entry (%f.intext;)*>
+<!ATTLIST entry
+     colname CDATA #IMPLIED
+     namest CDATA #IMPLIED
+     nameend CDATA #IMPLIED
+     spanname CDATA #IMPLIED
+     morerows CDATA #IMPLIED
+     colsep %yesorno; #IMPLIED
+     rowsep %yesorno; #IMPLIED
+     align (left | right | center | justify | char) #IMPLIED
+     char CDATA #IMPLIED
+     charoff CDATA #IMPLIED
+     rotate %yesorno; #IMPLIED
+     valign (top | middle | bottom) #IMPLIED
+>
+
+<!-- Reference Elements -->
+<!-- Book Publication Information -->
+<!ELEMENT publication ((place)?, (publisher)?)>
+
+<!-- Source information (added element 02/05/03)
+to cater for publication data for miscellaneous references, e.g. Theses, software -->
+<!ELEMENT source (#PCDATA | %f.emph; | place | publisher)*>
+
+<!-- Editor Group -->
+<!ELEMENT editors ((au|author)*,others?)>
+<!ATTLIST editors
+                  order (normal | reversed) "normal" >
+
+<!-- Edition Information -->
+<!ELEMENT edition (#PCDATA | %f.emph;)*>
+
+<!-- Publisher Information -->
+<!ELEMENT publisher (#PCDATA | %f.emph;)*>
+
+<!-- Publication Place Information -->
+<!ELEMENT place (#PCDATA | %f.emph;)*>
+
+<!-- Part Information -->
+<!ELEMENT part (#PCDATA | %f.emph;)*>
+
+<!-- Article Number Information in Reference Section -->
+<!-- Added attributes to art-number to distinguish different types of article number -->
+<!-- 28/01/04 Added extra types of article number jcap and jstat for new journals --> 
+<!ELEMENT art-number (#PCDATA | %f.emph;)*>
+<!ATTLIST art-number
+            type (arxiv | jcap | jhep | jot | jstat | njp | pr | other) "other" >
+
+<!-- Patent Number -->
+<!-- Element added 22/7/02 -->
+<!ELEMENT patent-number (#PCDATA | %f.emph;)* >
+<!ATTLIST patent-number
+                   code (AP | AR | AT | AU | BA | BE | BG | BR | CA | CH | CN | CS | CU | CY | CZ | DD | DE | DK | EA | EG | EP | ES | FI | FR | GB | GR | HK | HR | HU | IE | IL | IN | IT | JP | KE | KR | LT | LU | LV | MC | MD | MN | MT | MW | MX | MY | NL | NO | NZ | OA | PH | PL | PT | RD | RO | RU | SE | SG | SI | SK | SU | TP | TR | TW | US | VN | WO | YU | ZA | ZM | ZW | unknown ) #REQUIRED >
+
+<!-- Preprint information for journal reference (added 22/7/02) -->
+<!ELEMENT preprint-info (year?, preprint?, art-number?) >
+
+<!-- Series Information -->
+<!-- expanded definition to include volume and part 22/7/02 -->
+<!ELEMENT series (#PCDATA | %f.emph; | volume | part)*>
+
+<!-- Article Title -->
+<!ELEMENT art-title (#PCDATA | %f.emph; | inline-eqn)*>
+
+<!-- Journal Title -->
+<!ELEMENT jnl-title (#PCDATA | %f.emph; )*>
+
+<!-- Book Title -->
+<!ELEMENT book-title (#PCDATA | %f.emph; | inline-eqn)*>
+
+<!-- Thesis -->
+<!ELEMENT thesis (#PCDATA | %f.emph;)*>
+
+<!-- Patent -->
+<!ELEMENT patent (#PCDATA | %f.emph;)*>
+
+<!-- Preprint -->
+<!ELEMENT preprint (#PCDATA | %f.emph;)*>
+
+<!-- Miscellaneous Title Information -->
+<!ELEMENT misc-title (#PCDATA | %f.emph;)*>
+
+<!-- Miscellaneous Information -->
+<!-- revised content model to include inline equations 22/7/02 -->
+<!ELEMENT misc-text (#PCDATA | preprint | inline-eqn | %f.emph; | %f.xrefs;)*>
+
+<!-- Conference Name -->
+<!ELEMENT conf-title (#PCDATA | %f.emph;)*>
+
+<!-- Conference Place Information -->
+<!ELEMENT conf-place (#PCDATA | %f.emph;)*>
+
+<!-- Year -->
+<!-- Attribute added for cases where year follows title of work (e.g. Encyclopaedias or standard works of reference -->
+<!ELEMENT year (#PCDATA)>
+<!ATTLIST year
+                    after (yes|no)    'no' >
+
+<!-- Author query reference -->
+<!ELEMENT query-ref (#PCDATA | %f.emph;)*>
+<!ATTLIST query-ref
+                    %a.idref;
+                    marker CDATA #IMPLIED >
+
+<!ELEMENT queries (query)+>
+
+<!ELEMENT query (%f.intext;)*>
+<!ATTLIST query
+                %a.idreq;
+                marker CDATA #IMPLIED >
+
+<!-- End of IOPart XML DTD V1.4.6 ......................................... -->
+<!-- ...................................................................... -->

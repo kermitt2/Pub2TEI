@@ -1,0 +1,11 @@
+<!-- Special Nature Publishing Group Non Character Entities -->
+
+<!--
+Change History (yyyy/mm/dd date notation)
+
+2005/12/13 - Changed value of news ad from hard coded journal path to relative variable path so that ad can be used on other websites
+
+-->
+
+<!-- NEWSAD entity used for standard ad include on news@nature pages -->
+<!ENTITY newsad '#cparse("$directoryIncludes/ad_box_300x250.fhtml")'>
