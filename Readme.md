@@ -22,14 +22,14 @@ Here is a usage example with the Open Source Saxon 9 Home Edition (java). You ca
 
 The command will apply the Pub2TEI style sheets to a NLM file and produce a TEI `out.tei.xml`. You can remove the `-t` option for not producing the trace information. 
 
-You can select a directory as input and ouput, in order to process a large amount of files, while compiling the XSLT only one time. The normal behavior is then to trasnform around one hundred files per second. 
+You can select a directory as input and ouput, in order to process a large amount of files, while compiling the XSLT only one time. The normal behavior is then to transform around one hundred files per second. If it's close to one file per hundred seconds, see below... 
 
 
 ### Usual troubleshooting
 
 Remember that XML is from the W3C, so anything simple is by default complicated. In particular, pay attention to the fact that the DTD declared in the source XML file should point locally to the file system, and be sure that your XSLT processor does not try to fetch the DTD on the internet (this will have a disastrous impact on the performance). For saxon, the option `-dtd:off` only applies to the XSLT part (the saxon part) and not to the parsing which will always try to fetch these damn DTDs. 
 
-Alternatively, you can add locally empty DTD files (empty file, yes!) with the same name (see also [here](https://stackoverflow.com/a/18041141)). saxon will intercept the stupid online fetching of DTD with these local version and neutralize validation. 
+Alternatively, you can add locally empty DTD files (empty file, yes!) with the same name (see also [here](https://stackoverflow.com/a/18041141)). saxon will intercept the stupid (but conformant) online fetching of DTD with these local version and neutralize validation. 
 
 Alternatively, you can use a non-validating XML parser like [piccolo](http://piccolo.sourceforge.net/using.html), see also [here](https://www.saxonica.com/html/documentation/sourcedocs/controlling-parsing.html).
 
@@ -48,6 +48,8 @@ The following publisher's formats should be properly processed:
 - ScholarOne: metadata, header
 - Springer: metadata, header, bibliography, body
 - Wiley: metadata, header, bibliography, body
+
+Coverage of NLM and JATS should be comprehensive. 
 
 ## License
 
