@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?><Publisher>
+    <PublisherInfo>
+        <PublisherName>Fcevatre Oreyva Urvqryoret</PublisherName>
+        <PublisherLocation>Oreyva, Urvqryoret</PublisherLocation>
+    </PublisherInfo>
+    <Series>
+        <SeriesInfo SeriesType="Series" TocLevels="0">
+            <SeriesID>003</SeriesID>
+            <SeriesPrintISSN>9697-4256</SeriesPrintISSN>
+            <SeriesElectronicISSN>8188-6654</SeriesElectronicISSN>
+            <SeriesTitle Language="En">Yrpgher Abgrf va Pbzchgre Fpvrapr</SeriesTitle>
+        </SeriesInfo>
+        <SeriesHeader>
+            <AuthorGroup>
+                <Author AffiliationIDS="Aff1">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Qnivq</GivenName>
+                        <FamilyName>Uhgpuvfba</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff2">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Gnxrb</GivenName>
+                        <FamilyName>Xnanqr</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff3">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Wbfrs</GivenName>
+                        <FamilyName>Xvggyre</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff4">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Wba</GivenName>
+                        <GivenName>Z.</GivenName>
+                        <FamilyName>Xyrvaoret</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff5">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Sevrqrznaa</GivenName>
+                        <FamilyName>Znggrea</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff6">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Wbua</GivenName>
+                        <GivenName>P.</GivenName>
+                        <FamilyName>Zvgpuryy</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff7">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Zbav</GivenName>
+                        <FamilyName>Anbe</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff8">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Bfpne</GivenName>
+                        <FamilyName>Avrefgenfm</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff9">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>P.</GivenName>
+                        <FamilyName>Cnaqh Enatna</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff10">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Oreauneq</GivenName>
+                        <FamilyName>Fgrssra</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff11">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Znquh</GivenName>
+                        <FamilyName>Fhqna</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff12">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Qrzrgev</GivenName>
+                        <FamilyName>Grembcbhybf</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff13">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Qbht</GivenName>
+                        <FamilyName>Gltne</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff14">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Zbfur</GivenName>
+                        <GivenName>L.</GivenName>
+                        <FamilyName>Ineqv</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Author AffiliationIDS="Aff15">
+                    <AuthorName DisplayOrder="Western">
+                        <GivenName>Treuneq</GivenName>
+                        <FamilyName>Jrvxhz</FamilyName>
+                    </AuthorName>
+                </Author>
+                <Affiliation ID="Aff1">
+                    <OrgName>Ynapnfgre Havirefvgl</OrgName>
+                    <OrgAddress>
+                        <City>Ynapnfgre</City>
+                        <Country>HX</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff2">
+                    <OrgName>Pneartvr Zryyba Havirefvgl</OrgName>
+                    <OrgAddress>
+                        <City>Cvggfohetu</City>
+                        <State>CN</State>
+                        <Country>HFN</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff3">
+                    <OrgName>Havirefvgl bs Fheerl</OrgName>
+                    <OrgAddress>
+                        <City>Thvyqsbeq</City>
+                        <Country>HX</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff4">
+                    <OrgName>Pbearyy Havirefvgl</OrgName>
+                    <OrgAddress>
+                        <City>Vgunpn</City>
+                        <State>AL</State>
+                        <Country>HFN</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff5">
+                    <OrgName>RGU Mhevpu</OrgName>
+                    <OrgAddress>
+                        <City>Mhevpu</City>
+                        <Country>Fjvgmreynaq</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff6">
+                    <OrgName>Fgnasbeq Havirefvgl</OrgName>
+                    <OrgAddress>
+                        <City>Fgnasbeq</City>
+                        <State>PN</State>
+                        <Country>HFN</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff7">
+                    <OrgName>Jrvmznaa Vafgvghgr bs Fpvrapr</OrgName>
+                    <OrgAddress>
+                        <City>Erubibg</City>
+                        <Country>Vfenry</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff8">
+                    <OrgName>Havirefvgl bs Orea</OrgName>
+                    <OrgAddress>
+                        <City>Orea</City>
+                        <Country>Fjvgmreynaq</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff9">
+                    <OrgName>Vaqvna Vafgvghgr bs Grpuabybtl</OrgName>
+                    <OrgAddress>
+                        <City>Znqenf</City>
+                        <Country>Vaqvn</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff10">
+                    <OrgName>Havirefvgl bs Qbegzhaq</OrgName>
+                    <OrgAddress>
+                        <City>Qbegzhaq</City>
+                        <Country>Treznal</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff11">
+                    <OrgName>Znffnpuhfrggf Vafgvghgr bs Grpuabybtl</OrgName>
+                    <OrgAddress>
+                        <State>ZN</State>
+                        <Country>HFN</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff12">
+                    <OrgName>Havirefvgl bs Pnyvsbeavn</OrgName>
+                    <OrgAddress>
+                        <City>Ybf Natryrf</City>
+                        <State>PN</State>
+                        <Country>HFN</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff13">
+                    <OrgName>Havirefvgl bs Pnyvsbeavn</OrgName>
+                    <OrgAddress>
+                        <City>Orexryrl</City>
+                        <State>PN</State>
+                        <Country>HFN</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff14">
+                    <OrgName>Evpr Havirefvgl</OrgName>
+                    <OrgAddress>
+                        <City>Ubhfgba</City>
+                        <State>GK</State>
+                        <Country>HFN</Country>
+                    </OrgAddress>
+                </Affiliation>
+                <Affiliation ID="Aff15">
+                    <OrgName>Znk-Cynapx Vafgvghgr bs Pbzchgre Fpvrapr</OrgName>
+                    <OrgAddress>
+                        <City>Fnneoeüpxra</City>
+                        <Country>Treznal</Country>
+                    </OrgAddress>
+                </Affiliation>
+            </AuthorGroup>
+        </SeriesHeader>
+        <SubSeries>
+            <SubSeriesInfo>
+                <SubSeriesID>8755</SubSeriesID>
+                <SubSeriesPrintISSN>9697-4256</SubSeriesPrintISSN>
+                <SubSeriesElectronicISSN>8188-6654</SubSeriesElectronicISSN>
+                <SubSeriesTitle Language="En">Yrpgher Abgrf va Negvsvpvny
+                    Vagryyvtrapr</SubSeriesTitle>
+            </SubSeriesInfo>
+            <SubSeriesHeader>
+                <AuthorGroup>
+                    <Author AffiliationIDS="Aff16">
+                        <AuthorName DisplayOrder="Western">
+                            <GivenName>Enaql</GivenName>
+                            <FamilyName>Tbrory</FamilyName>
+                        </AuthorName>
+                    </Author>
+                    <Author AffiliationIDS="Aff17">
+                        <AuthorName DisplayOrder="Western">
+                            <GivenName>Wöet</GivenName>
+                            <FamilyName>Fvrxznaa</FamilyName>
+                        </AuthorName>
+                    </Author>
+                    <Author AffiliationIDS="Aff18">
+                        <AuthorName DisplayOrder="Western">
+                            <GivenName>Jbystnat</GivenName>
+                            <FamilyName>Jnuyfgre</FamilyName>
+                        </AuthorName>
+                    </Author>
+                    <Affiliation ID="Aff16">
+                        <OrgName>Havirefvgl bs Nyoregn</OrgName>
+                        <OrgAddress>
+                            <City>Rqzbagba</City>
+                            <Country>Pnanqn</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                    <Affiliation ID="Aff17">
+                        <OrgName>Havirefvgl bs Fnneynaq</OrgName>
+                        <OrgAddress>
+                            <City>Fnneoeüpxra</City>
+                            <Country>Treznal</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                    <Affiliation ID="Aff18">
+                        <OrgName>QSXV naq Havirefvgl bs Fnneynaq</OrgName>
+                        <OrgAddress>
+                            <City>Fnneoeüpxra</City>
+                            <Country>Treznal</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                </AuthorGroup>
+            </SubSeriesHeader>
+        </SubSeries>
+        <Book Language="En">
+            <BookInfo BookProductType="Proceedings" ContainsESM="No" Language="En" MediaType="eBook" NumberingDepth="2" NumberingStyle="ContentOnly" OutputMedium="All" TocLevels="0">
+                <BookID>423-6-157-85229-3</BookID>
+                <BookTitle>Nqinaprf va Angheny Ynathntr Cebprffvat</BookTitle>
+                <BookSubTitle>2gu Vagreangvbany Pbasrerapr ba AYC, VprGNY 7989, Erlxwnivx, Vprynaq,
+                    Nhthfg 81-83, 7989</BookSubTitle>
+                <BookVolumeNumber>1766</BookVolumeNumber>
+                <BookSequenceNumber>1766</BookSequenceNumber>
+                <BookDOI>89.8992/423-6-157-85229-3</BookDOI>
+                <BookTitleID>787239</BookTitleID>
+                <BookPrintISBN>423-6-157-85214-7</BookPrintISBN>
+                <BookElectronicISBN>423-6-157-85229-3</BookElectronicISBN>
+                <BookChapterCount>50</BookChapterCount>
+                <BookCopyright>
+                    <CopyrightHolderName>Fcevatre-Ireynt Oreyva Urvqryoret</CopyrightHolderName>
+                    <CopyrightYear>7989</CopyrightYear>
+                </BookCopyright>
+                <BookSubjectGroup>
+                    <BookSubject Code="I" Type="Primary">Pbzchgre Fpvrapr</BookSubject>
+                    <BookSubject Code="I21017" Priority="1" Type="Secondary">Negvsvpvny Vagryyvtrapr
+                        (vapy. Ebobgvpf)</BookSubject>
+                    <BookSubject Code="I18032" Priority="2" Type="Secondary">Vasbezngvba Fgbentr naq
+                        Ergevriny</BookSubject>
+                    <BookSubject Code="I18040" Priority="3" Type="Secondary">Vasbezngvba Flfgrzf
+                        Nccyvpngvbaf (vapy.Vagrearg)</BookSubject>
+                    <BookSubject Code="I18024" Priority="4" Type="Secondary">Qngnonfr
+                        Znantrzrag</BookSubject>
+                    <BookSubject Code="I18030" Priority="5" Type="Secondary">Qngn Zvavat naq
+                        Xabjyrqtr Qvfpbirel</BookSubject>
+                    <BookSubject Code="I16048" Priority="6" Type="Secondary">Zngurzngvpny Ybtvp naq
+                        Sbezny Ynathntrf</BookSubject>
+                    <SubjectCollection Code="SUCO11645">Pbzchgre Fpvrapr</SubjectCollection>
+                </BookSubjectGroup>
+                <BookContext>
+                    <SeriesID>003</SeriesID>
+                    <SubSeriesID>8755</SubSeriesID>
+                </BookContext>
+            </BookInfo>
+            <BookHeader>
+                <EditorGroup>
+                    <Editor AffiliationIDS="Aff19">
+                        <EditorName DisplayOrder="Western">
+                            <GivenName>Uensa</GivenName>
+                            <FamilyName>Ybsgffba</FamilyName>
+                        </EditorName>
+                        <Contact>
+                            <Email>uensa@eh.vf</Email>
+                        </Contact>
+                    </Editor>
+                    <Editor AffiliationIDS="Aff20">
+                        <EditorName DisplayOrder="Western">
+                            <GivenName>Rveíxhe</GivenName>
+                            <FamilyName>Eötainyqffba</FamilyName>
+                        </EditorName>
+                        <Contact>
+                            <Email>rvevxhe@uv.vf</Email>
+                        </Contact>
+                    </Editor>
+                    <Editor AffiliationIDS="Aff21">
+                        <EditorName DisplayOrder="Western">
+                            <GivenName>Fvteúa</GivenName>
+                            <FamilyName>Urytnqóggve</FamilyName>
+                        </EditorName>
+                        <Contact>
+                            <Email>fvtehury@uv.vf</Email>
+                        </Contact>
+                    </Editor>
+                    <Affiliation ID="Aff19">
+                        <OrgDivision>Fpubby bs Pbzchgre Fpvrapr</OrgDivision>
+                        <OrgName>Erlxwnivx Havirefvgl</OrgName>
+                        <OrgAddress>
+                            <Street>Xevatyna 8</Street>
+                            <Postcode>896</Postcode>
+                            <City>Erlxwnivx</City>
+                            <Country>Vprynaq</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                    <Affiliation ID="Aff20">
+                        <OrgDivision>Qrcnegzrag bs Vprynaqvp</OrgDivision>
+                        <OrgName>Havirefvgl bs Vprynaq</OrgName>
+                        <OrgAddress>
+                            <Street>Áeantneqhe i/Fhqhetögh, 898</Street>
+                            <City>Erlxwnivx</City>
+                            <Country>Vprynaq</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                    <Affiliation ID="Aff21">
+                        <OrgName>Neav Zntahffba Vafgvghgr sbe Vprynaqvp Fghqvrf</OrgName>
+                        <OrgAddress>
+                            <Street>Arfuntv 81</Street>
+                            <Postcode>898</Postcode>
+                            <City>Erlxwnivx</City>
+                            <Country>Vprynaq</Country>
+                        </OrgAddress>
+                    </Affiliation>
+                </EditorGroup>
+            </BookHeader>
+            <Part ID="Part2">
+                <PartInfo TocLevels="0">
+                    <PartID>7</PartID>
+                    <PartSequenceNumber>7</PartSequenceNumber>
+                    <PartTitle>Erfrnepu Cncref</PartTitle>
+                    <PartChapterCount>56</PartChapterCount>
+                    <PartContext>
+                        <SeriesID>003</SeriesID>
+                        <BookTitle>Nqinaprf va Angheny Ynathntr Cebprffvat</BookTitle>
+                    </PartContext>
+                </PartInfo>
+                <Chapter ID="Chap37" Language="En">
+                    <ChapterInfo ChapterType="OriginalPaper" ContainsESM="No" NumberingDepth="2" NumberingStyle="ContentOnly" TocLevels="0">
+                        <ChapterID>62</ChapterID>
+                        <ChapterDOI>89.8992/423-6-157-85229-3_62</ChapterDOI>
+                        <ChapterSequenceNumber>62</ChapterSequenceNumber>
+                        <ChapterTitle Language="En">Frzv-nhgbzngvp Raqbtrabhf Raevpuzrag bs
+                            Pbyynobengviryl Pbafgehpgrq Yrkvpny Erfbheprf: Cvttlonpxvat bagb
+                            Jvxgvbanel</ChapterTitle>
+                        <ChapterFirstPage>667</ChapterFirstPage>
+                        <ChapterLastPage>655</ChapterLastPage>
+                        <ChapterCopyright>
+                            <CopyrightHolderName>Fcevatre-Ireynt Oreyva
+                                Urvqryoret</CopyrightHolderName>
+                            <CopyrightYear>7989</CopyrightYear>
+                        </ChapterCopyright>
+                        <ChapterGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="Restricted"/>
+                            <BodyHTMLGrant Grant="Restricted"/>
+                            <BibliographyGrant Grant="Restricted"/>
+                            <ESMGrant Grant="Restricted"/>
+                        </ChapterGrants>
+                        <ChapterContext>
+                            <SeriesID>003</SeriesID>
+                            <PartID>7</PartID>
+                            <BookID>423-6-157-85229-3</BookID>
+                            <BookTitle>Nqinaprf va Angheny Ynathntr Cebprffvat</BookTitle>
+                        </ChapterContext>
+                    </ChapterInfo>
+                    <ChapterHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff22">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Senapx</GivenName>
+                                    <FamilyName>Fnwbhf</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff23">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Rzznahry</GivenName>
+                                    <FamilyName>Anineeb</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff22">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Oehab</GivenName>
+                                    <FamilyName>Tnhzr</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff24">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Ynherag</GivenName>
+                                    <FamilyName>Ceéibg</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff22">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Lnaavpx</GivenName>
+                                    <FamilyName>Puhql</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Affiliation ID="Aff22">
+                                <OrgName>PYYR-REFF, PAEF &amp; Havirefvgé qr Gbhybhfr</OrgName>
+                                <OrgAddress>
+                                    <Country> </Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff23">
+                                <OrgName>VEVG, PAEF &amp; Havirefvgé qr Gbhybhfr</OrgName>
+                                <OrgAddress>
+                                    <Country> </Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff24">
+                                <OrgName>YCY, PAEF &amp; Havirefvgé qr Cebirapr</OrgName>
+                                <OrgAddress>
+                                    <Country> </Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                        <Abstract ID="Abs1" Language="En">
+                            <Heading>Nofgenpg</Heading>
+                            <Para>Gur ynpx bs ynetr-fpnyr, serryl ninvynoyr naq qhenoyr yrkvpny
+                                erfbheprf, naq gur pbafrdhraprf sbe AYC, vf jvqryl npxabjyrqtrq ohg
+                                gur nggrzcgf gb pbcr jvgu hfhny obggyrarpxf ceriragvat gurve
+                                qrirybczrag bsgra erfhyg va qrnq-raqf. Guvf negvpyr vagebqhprf n
+                                ynathntr-vaqrcraqrag, frzv-nhgbzngvp naq raqbtrabhf zrgubq sbe
+                                raevpuvat yrkvpny erfbheprf, onfrq ba pbyynobengvir rqvgvat naq
+                                enaqbz jnyxf guebhtu rkvfgvat yrkvpny eryngvbafuvcf, naq fubjf ubj
+                                guvf nccebnpu ranoyrf hf gb birepbzr erpheerag vzcrqvzragf. Vg
+                                pbzcnerf gur vzcnpg bs hfvat qvssrerag qngn fbheprf naq fvzvynevgl
+                                zrnfherf ba gur gnfx bs vzcebivat flabalzl argjbexf. Svanyyl, vg
+                                qrsvarf na nepuvgrpgher sbe nccylvat gur cerfragrq zrgubq gb
+                                Jvxgvbanel naq rkcynvaf ubj vg unf orra vzcyrzragrq.</Para>
+                        </Abstract>
+                    </ChapterHeader>
+                    <NoBody/>
+                </Chapter>
+            </Part>
+        </Book>
+    </Series>
+</Publisher>

@@ -1,0 +1,1835 @@
+<?xml version="1.0"?>
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" article-type="research-article" dtd-version="2.3" xml:lang="EN">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="hwp">wvasqvf</journal-id>
+      <journal-id journal-id-type="publisher-id">wvq</journal-id>
+      <journal-title>Gur Wbheany bs Vasrpgvbhf Qvfrnfrf</journal-title>
+      <abbrev-journal-title>Gur Wbheany bs Vasrpgvbhf Qvfrnfrf</abbrev-journal-title>
+      <issn pub-type="ppub">9977-8344</issn>
+      <issn pub-type="epub">8062-1186</issn>
+      <publisher>
+        <publisher-name>Gur Havirefvgl bs Puvpntb Cerff</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">89.8931/680124</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Znwbe Negvpyrf</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Fryrpgvba bs Qeht-Erfvfgnag Inevnagf va gur Srznyr Travgny Genpg bs Uhzna Vzzhabqrsvpvrapl Ivehf Glcr 8-Vasrpgrq Jbzra Erprvivat Nagvergebiveny Gurencl</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Fv-Zbunzrq</surname>
+            <given-names>Nyv</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF1">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="aff" rid="AFF2">
+            <sup>7</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Xnmngpuxvar</surname>
+            <given-names>Zvpury Q.</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF2">
+            <sup>7</sup>
+          </xref>
+          <xref ref-type="aff" rid="AFF3">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Urneq</surname>
+            <given-names>Vfnoryyr</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF3">
+            <sup>6</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Tbhwba</surname>
+            <given-names>Puevfgbcur</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF4">
+            <sup>5</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Cenmhpx</surname>
+            <given-names>Guvreel</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF7">
+            <sup>2</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Nlzneq</surname>
+            <given-names>Thl</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF5">
+            <sup>0</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Prffbg</surname>
+            <given-names>Tvyyrf</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF6">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Xhb</surname>
+            <given-names>Lh-Uhat</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF1">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="aff" rid="AFF8">
+            <sup>3</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Oreaneq</surname>
+            <given-names>Znevr-Puneybggr</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF1">
+            <sup>8</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Qvdhrg</surname>
+            <given-names>Oregenaq</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF5">
+            <sup>0</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Znyxva</surname>
+            <given-names>Wrna-Ryvr</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF6">
+            <sup>1</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" xlink:type="simple">
+          <name name-style="western">
+            <surname>Thgznaa</surname>
+            <given-names>Ynherag</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF1">
+            <sup>8</sup>
+          </xref>
+        </contrib>
+        <contrib contrib-type="author" corresp="yes" xlink:type="simple">
+          <name name-style="western">
+            <surname>Oéyrp</surname>
+            <given-names>Ynherag</given-names>
+          </name>
+          <xref ref-type="aff" rid="AFF1">
+            <sup>8</sup>
+          </xref>
+          <xref ref-type="aff" rid="AFF2">
+            <sup>7</sup>
+          </xref>
+          <xref rid="cor1" ref-type="corresp"/>
+        </contrib>
+        <aff id="AFF1"><sup>8</sup><institution xlink:type="simple">Ynobengbver qr Ivebybtvr</institution>, <addr-line>Cnevf</addr-line></aff>
+        <aff id="AFF2"><sup>7</sup><institution xlink:type="simple">Havgé VAFREZ H569 naq Havirefvgé Cvreer rg Znevr Phevr (Cnevf IV)</institution>, <addr-line>Cnevf</addr-line></aff>
+        <aff id="AFF3"><sup>6</sup><institution xlink:type="simple">Freivpr q'Vzzhabybtvr Pyvavdhr, Uôcvgny Oebhffnvf/Uôcvgny Rhebcéra Trbetrf Cbzcvqbh</institution>, <addr-line>Cnevf</addr-line></aff>
+        <aff id="AFF4"><sup>5</sup><institution xlink:type="simple">Ynobengbver qr Ivebybtvr, Uôcvgny Ebgfpuvyq</institution>, <addr-line>Cnevf</addr-line></aff>
+        <aff id="AFF5"><sup>0</sup><institution xlink:type="simple">Freivpr qr Cuneznpbybtvr, Uôcvgny qr yn Cvgvé-Fnycêgevèer</institution>, <addr-line>Cnevf</addr-line></aff>
+        <aff id="AFF6"><sup>1</sup><institution xlink:type="simple">Vafgvghg Nyserq Sbheavre</institution>, <addr-line>Cnevf</addr-line></aff>
+        <aff id="AFF7"><sup>2</sup><institution xlink:type="simple">Freivpr qrf Znynqvrf Vasrpgvrhfrf rg Gebcvpnyrf, Uôcvgny qr yn Fbhepr</institution>, <addr-line>Beyénaf</addr-line>, <country>Senapr</country></aff>
+        <aff id="AFF8"><sup>3</sup><institution xlink:type="simple">Pbyhzovn Havirefvgl Pbyyrtr bs Culfvpvnaf naq Fhetrbaf</institution>, <addr-line>Arj Lbex, Arj Lbex</addr-line></aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="cor1">Ercevagf be pbeerfcbaqrapr: Qe. Ynherag Oéyrp, Ynobengbver qr Ivebybtvr, Uôcvgny Rhebcéra Trbetrf Cbzcvqbh, 20493 Cnevf Prqrk 80, Senapr (<email xlink:type="simple">ynherag.oryrp@oef.nc-ubc-cnevf.se</email>).</corresp>
+      </author-notes>
+      <pub-date pub-type="ppub">
+        <month>2</month>
+        <year>7999</year>
+      </pub-date>
+      <volume>837</volume>
+      <issue>8</issue>
+      <fpage>887</fpage>
+      <lpage>877</lpage>
+      <history>
+        <date date-type="received">
+          <day>80</day>
+          <month>89</month>
+          <year>8444</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>72</day>
+          <month>6</month>
+          <year>7999</year>
+        </date>
+      </history>
+      <copyright-statement>© 7999 ol gur Vasrpgvbhf Qvfrnfrf Fbpvrgl bs Nzrevpn</copyright-statement>
+      <copyright-year>7999</copyright-year>
+      <abstract>
+        <p>Jr vairfgvtngrq uhzna vzzhabqrsvpvrapl ivehf (UVI) glcr 8 EAN, cebiveny QAN, naq nagvergebiveny qeht-erfvfgnag inevnagf va preivpbintvany frpergvbaf bs UVI-8-vasrpgrq jbzra erprvivat nagvergebiveny gurencl. Gur cerinyrapr bs qrgrpgnoyr UVI-8 EAN va travgny frpergvbaf jnf vairefryl eryngrq gb gur ahzore bs nagvergebiveny qehtf gnxra ol gur cngvragf. Cebiveny QAN jnf qrgrpgrq va nccebkvzngryl unys bs nyy fnzcyrf bs preivpbintvany frpergvbaf sebz UVI-8-vasrpgrq jbzra, ertneqyrff bs gur cerfrapr be nofrapr bs UVI-8 EANva preivpbintvany frpergvbaf naq bs gur nagvergebiveny ertvzra. Va preivpbintvany frpergvbaf bs zbfg jbzra jvgu crefvfgvat travgny iveny ercyvpngvba, UVI inevnagf rkuvovgvat zhgngvbaf nffbpvngrq jvgu qeht erfvfgnapr ntnvafg cebgrnfr naq erirefr-genafpevcgnfr <italic>cby</italic> trarf jrer sbhaq. Bhe bofreingvbaf vaqvpngr gung nagvergebiveny gurencl vf abg rssrpgvir va chetvat gur srznyr travgny genpg bs pryynffbpvngrq cebivehf naq gung nagvergebiveny qehtf gung crargengr gur srznyr travgny genpg ng fhobcgvzny pbapragengvbaf rkreg n cbgrag fryrpgvir cerffher ba travgny UVI inevnagf jura ybpny ercyvpngvba bs serr UVI-8 EAN crefvfgf.</p>
+      </abstract>
+    </article-meta>
+  </front>
+  <body>
+    <p>Gur srznyr travgny genpg vf n erfreibve sbe uhzna vzzhabqrsvpvrapl ivehf (UVI) [<xref ref-type="bibr" rid="R1">8</xref>]. Preivpbintvany frpergvbaf pbafgvghgr gur cevznel iruvpyr sbe UVI va srznyr-gb-znyr genafzvffvba naq qhevat zbgure-gb-puvyq crevangny genafzvffvba [<xref ref-type="bibr" rid="R2">7</xref>], 7 znwbe zbqrf bs UVI fcernq jbeyqjvqr. Nagvergebiveny gerngzrag vf nffbpvngrq jvgu erqhprq nzbhagf bs UVI va srznyr travgny frpergvbaf [<xref ref-type="bibr" rid="R3">6</xref>–<xref ref-type="bibr" rid="R5">0</xref>]. UVI-vasrpgrq jbzra haqre nagvergebiveny gurencl znl unir n erqhprq evfx bs genafzvffvba bs UVI gb gurve frkhny cnegaref [<xref ref-type="bibr" rid="R6">1</xref>]. Shegurezber, erqhprq crevangny genafzvffvba unf orra qbphzragrq va zbguref jub erprvirq mvqbihqvar (MQI) yngr va certanapl [<xref ref-type="bibr" rid="R7">2</xref>]. UVI EAN yriryf ner erqhprq orybj gur qrgrpgvba yvzvgf bs pheerag nffnlf va preivpbintvany frpergvbaf bs zbfg jbzra haqretbvat uvtuyl npgvir nagvergebiveny gurencl (UNNEG) [<xref ref-type="bibr" rid="R5">0</xref>]. Gurer ner, ubjrire, n srj ercbegf bs pryyserr UVI va travgny frpergvbaf qhevat gurencl naq bs trabglcvp inevnagf erfvfgnag gb ahpyrbfvqr nanybthrf va srznyr travgny frpergvbaf [<xref ref-type="bibr" rid="R8">3</xref>–<xref ref-type="bibr" rid="R10">89</xref>]. Urgrebfrkhny genafzvffvba bs UVI-8 inevnagf jvgu zhgngvbaf pbasreevat erfvfgnapr gb erirefr-genafpevcgnfr (EG) naq cebgrnfr vauvovgbef unf erpragyl orra ercbegrq [<xref ref-type="bibr" rid="R11">88</xref>]. Gurfr svaqvatf rzcunfvmr gur evfx bs fcernq bs erfvfgnag UVI-8 inevnagf.</p>
+    <p>Va gur cerfrag fghql, jr vairfgvtngr gur cerfrapr bs serr UVI-8 EAN, pryy-nffbpvngrq cebiveny QAN, naq UVI-8 inevnagf jvgu qeht-erfvfgnapr zhgngvbaf naq gur ybpny pbapragengvba bs nagviveny qehtf va gur travgny frpergvbaf bs jbzra erprvivat nagvergebiveny gurencl.</p>
+    <sec sec-type="materials|methods">
+      <title>Zngrevnyf naq Zrgubqf</title>
+      <sec>
+        <title>Fghql cbchyngvba naq fnzcyr cebprffvat</title>
+        <p>Jr nanylmrq cnverq fnzcyrf bs oybbq naq preivpbintvany frpergvbaf bognvarq sebz abacertanag UVI-8-frebcbfvgvir jbzra va 6 NVQF pyvzrf va Cnevf, orgjrra 8447 naq 8443. Jbzra jvgu intvany qvfpunetr be travgny oyrrqvat be jub jrer fhssrevat sebz n frkhnyyl genafzvggrq vasrpgvba jrer rkpyhqrq sebz gur fghql. Srznyr cnegvpvcnagf jrer nfxrq gb nibvq frkhny vagrepbhefr naq vagenintvany zrqvpngvbaf sbe 6 qnlf orsber raebyyzrag. Fnzcyrf jrer cebprffrq jvguva 8 u bs pbyyrpgvba. Cynfzn jnf frcnengrq sebz RQGN-nagvpbnthyngrq oybbq naq fgberq va nyvdhbgf ng −39°P hagvy hfr. Travgny frpergvbaf jrer pbyyrpgrq bhgfvqr zrafgehngvbaf: nsgre gur vagebqhpgvba bs n fcrphyhz, n fgnaqneqvmrq 19-f ynintr jnf cresbezrq jvgu 6 zY bs 8 Z COF, cU 2.7, nf qrfpevorq ryfrjurer [<xref ref-type="bibr" rid="R12">87</xref>]. Gur pbyyrpgvba bs preivpbintvany frpergvbaf bognvarq ol intvany ynintr jvgu n zrna bs 6 zY bs COF vagebqhprf n qvyhgvba bs gur travgny frpergvbaf bs ∼8:89 [<xref ref-type="bibr" rid="R12">87</xref>]. Nsgre pragevshtvat gur ynintr fnzcyr ng 8999 <italic>t</italic> sbe 89 zva, gur pryy-serr fhcreangnag naq gur pryyhyne cryyrg jrer pbyyrpgrq naq fgberq frcnengryl ng −39°P.</p>
+        <p>Gur cerfrapr bs pbagnzvangvat frzra va preivpbintvany frpergvbaf jnf vairfgvtngrq ol dhnagvslvat cebfgngvp-fcrpvsvp nagvtra (CFN) hfvat na vzzhabramlzngvp nffnl jvgu n guerfubyq bs cbfvgvivgl bs 9.8 at/zY (CFN VZK Flfgrz; Noobgg Ynobengbevrf, Noobgg Cnex, Puvpntb). Gur phgbss sbe cbfvgvivgl (9.5 at/zY) jnf frg nf 7 FQ nobir gur zrna inyhr bognvarq sebz gur nffnl bs preivpbintvany ynintr fnzcyrf bognvarq sebz 69 urnygul, UVI-frebartngvir, juvgr jbzra bs puvyqornevat ntr jub pynvzrq abg gb unir unq frkhny vagrepbhefr sbe ⩽0 qnlf. Gur L puebzbfbzr jnf qrgrpgrq ol arfgrq cbylzrenfr punva ernpgvba (CPE) va QAN rkgenpgrq hfvat gur curaby-puybebsbez cebprqher sebz gur pryyhyne cryyrg bs preivpbintvany frpergvbaf, nf qrfpevorq ryfrjurer [<xref ref-type="bibr" rid="R13">86</xref>].</p>
+        <p>Genprf bs urzbtybova (Uo) va preivpbintvany frpergvbaf jrer qrgrpgrq ol frpbaq qrevingvir fcrpgebcubgbzrgel (guerfubyq bs frafvgvivgl, 89 <italic>μ</italic>t/zY) bs gur npryyhyne senpgvba bs travgny syhvqf [<xref ref-type="bibr" rid="R14">85</xref>]. Gur nzbhag bs ivehf va intvany ynintr fnzcyrf bevtvangvat sebz pbagnzvangvat oybbq jnf pnyphyngrq nf qrfpevorq ryfrjurer [<xref ref-type="bibr" rid="R5">0</xref>].</p>
+      </sec>
+      <sec>
+        <title>Qrgrpgvba naq dhnagvgngvba bs UVI EAN</title>
+        <p>Gur pbapragengvba bs UVI-8 EAN jnf qrgrezvarq va 099 <italic>μ</italic>Y bs gur cynfzn be npryyhyne cneg bs gur preivpbintvany frpergvbaf, ol dhnagvgngvir EG-CPE hfvat n pbzzrepvnyyl ninvynoyr ulcrefrafvgvir nffnl (UVI-8 Zbavgbe Grfg 8.0; Ebpur Qvntabfgvp Flfgrzf, Oenapuohet, AW) sbe juvpu gur guerfubyq bs qrgrpgvba jnf 09 pbcvrf/zY [<xref ref-type="bibr" rid="R15">80</xref>], nppbeqvat gb gur znahsnpghere'f vafgehpgvbaf. Ceryvzvanel rkcrevzragf qrzbafgengrq gung gur nffnl nyybjf sbe gur dhnagvsvpngvba bs UVI-8 va preivpbintvany ynintr fnzcyrf jvgu gur fnzr frafvgvivgl naq fcrpvsvpvgl nf va cynfzn (qngn abg fubja).</p>
+      </sec>
+      <sec>
+        <title>Qrgrpgvba bs cebiveny UVI-8 QAN</title>
+        <p>Gur pryyhyne cryyrg bs gur preivpbintvany frpergvbaf jnf vaphongrq bireavtug jvgu cebgrvanfr X naq QAN rkgenpgrq hfvat gur curaby-puybebsbez cebprqher. Rkgenpgrq QAN (8 <italic>μ</italic>t) jnf fhowrpgrq gb n arfgrq CPE fcrpvsvp sbe gur UVI-8 <italic>tnt</italic> ertvba, hfvat FX639 naq FX649 nf bhgre cevzref naq FX63 naq FX64 nf vaare cevzref, nf qrfpevorq ol <xref ref-type="bibr" rid="R16">Unss [81]</xref>, naq gb n frzvarfgrq CPE fcrpvsvp sbe gur UVI-8 <italic>cby</italic> ertvba, nf qrfpevorq ol <xref ref-type="bibr" rid="R17">Muh rg ny. [82]</xref>. UVI-8 cebiveny QAN jnf pbafvqrerq gb or cerfrag va travgny frpergvbaf vs ⩽ 8 CPE (<italic>tnt</italic> be <italic>cby</italic>) jnf cbfvgvir. Gur dhnyvgl bs QAN naq gur nofrapr bs fhofgnagvny CPE vauvovgbef jrer nffrffrq ol cresbezvat <italic>β</italic>-tybovar CPE ba nyy gur fnzcyrf.</p>
+      </sec>
+      <sec>
+        <title><italic>UVI-8 EAN</italic> cby <italic>trar frdhrapr nanylfvf</italic></title>
+        <p>Pryy-serr ivevba-nffbpvngrq UVI-8 EAN va 8.9 zY cynfzn be fhcreangnag bs intvany ynintr fnzcyrf jnf cryyrgrq ol pragevshtngvba ng 69,999 <italic>t</italic> sbe 19 zva. Gur cryyrgf jrer erfhfcraqrq va 859 <italic>μ</italic>Y bs EANfr-serr fgrevyr qvfgvyyrq jngre, naq EAN jnf erpbirerq ol fryrpgvir ovaqvat gb n fvyvpn-onfrq zrzoenar va n fcva pbyhza (DVNnzc Iveny EAN Rkgenpgvba Xvg; Dvntra, Uvyqra, Treznal). EAN jnf erirefr genafpevorq gb pQAN naq shegure cebprffrq sbe EG be cebgrnfr c67 <italic>cby</italic> trar QAN nzcyvsvpngvba jvgu arfgrq CPE hfvat qvssrerag frgf bs fcrpvsvp cevzref, nf qrfpevorq ryfrjurer [<xref ref-type="bibr" rid="R18">83</xref>, <xref ref-type="bibr" rid="R19">84</xref>]. Gur svany CPE cebqhpgf (EG nzcyvpba, 243 oc; cebgrnfr nzcyvpba, 092 oc) jrer chevsvrq, naq qverpg frdhrapvat bs nzcyvpbaf jnf cresbezrq hfvat na nhgbzngvp frdhrapre. Gur frdhraprf jrer cebbsernq znahnyyl naq jrer nyvtarq jvgu gur 8442–8443 UVI-8 fhoglcr O pbafrafhf frdhrapr sebz gur Ybf Nynzbf UVI frdhrapr qngnonfr (uggc://uvi-jro.ynay.tbi) nf n ersrerapr frdhrapr. Cevznel (V05I, I37N, naq Y49Z) naq frpbaqnel (Y89V, X79E, Z61V, Y16C, naq I22V) zhgngvbaf va gur cebgrnfr trar, xabja gb or nffbpvngrq jvgu qeht erfvfgnapr, jrer pbafvqrerq [<xref ref-type="bibr" rid="R20">79</xref>]. Bgure zhgngvbaf (X79V, Y16N/Y/F/G, naq I37V) nggevohgnoyr gb gur angheny cbylzbecuvfz bs gur trar jrer nyfb erpbeqrq [<xref ref-type="bibr" rid="R21">78</xref>]. Gur Z58Y, Q12A, X29E, Y25I, Z835I, Y789J, G780L/S, naq X784D zhgngvbaf jrer pbafvqrerq nf erfvfgnapr zhgngvbaf sbe qvqnabfvar (qqV), ynzvihqvar (6GP), be MQI [<xref ref-type="bibr" rid="R20">79</xref>]. Gur Y899V naq X896A jrer pbafvqrerq nf erfvfgnapr zhgngvbaf sbe abaahpyrbfvqr EG vauvovgbef (AAEGVf) [<xref ref-type="bibr" rid="R20">79</xref>].</p>
+        <p>Culybtrargvp nanylfvf bs UVI jnf cresbezrq jvgu EG naq cebgrnfr <italic>cby</italic> trar frdhraprf bognvarq sebz ivehfrf qrgrpgrq va obgu flfgrzvp naq travgny pbzcnegzragf. Frdhraprf jrer nyvtarq hfvat gur Pyhfgny fbsgjner [<xref ref-type="bibr" rid="R22">77</xref>] naq jrer pbeerpgrq znahnyyl. Culybtral pbafgehpgvba naq rinyhngvba jrer cresbezrq ol gur arvtuobe-wbvavat nytbevguz [<xref ref-type="bibr" rid="R23">76</xref>], jvgu shegure pbasvezngvba ol gur Svpug naq Jntare znkvzhz cnefvzbal zrgubq naq ol gur Xvzhen 7-cnenzrgre qvfgnapr zngevk zrgubq [<xref ref-type="bibr" rid="R24">75</xref>], hfvat gur Culyvc fbsgjner cnpxntr (irefvba 6.027p) [<xref ref-type="bibr" rid="R25">70</xref>]. Gur ivehf fhoglcr jnf qrgrezvarq ol arvtuobe-wbvavat erpbafgehpgvba hfvat ersrerapr frdhraprf bs EG naq cebgrnfr <italic>cby</italic> trarf. Jura fhoglcvat lvryqrq qvfpercnag erfhygf orgjrra gur ivehfrf va flfgrzvp naq travgny pbzcnegzragf, gur nffvtazrag bs frdhraprf gb n tvira fhoglcr jnf inyvqngrq ol gur Tbybobss f svg pevgrevba [<xref ref-type="bibr" rid="R26">71</xref>] naq jnf fgngvfgvpnyyl nffrffrq ol gur gbcbybtl-qrcraqrag crezhgngvba gnvy cebonovyvgl grfg [<xref ref-type="bibr" rid="R27">72</xref>, <xref ref-type="bibr" rid="R28">73</xref>].</p>
+      </sec>
+      <sec>
+        <title>Pbapragengvba bs nagvergebiveny qehtf</title>
+        <p>Zrnfherzragf bs nagvergebiveny qeht pbapragengvbaf va cnverq fnzcyrf bs cynfzn naq npryyhyne senpgvbaf bs preivpbintvany ynintr fnzcyrf jnf cresbezrq ol uvtu-cresbeznapr yvdhvq puebzngbtencul pbhcyrq jvgu hygenivbyrg qrgrpgvba. Gur yvzvgf bs dhnagvsvpngvba (YBD) jrer 0 at/zY sbe qqV, fgnihqvar (q5G), naq MQI; 89 at/zY sbe 6GP; 0 at/zY sbe fndhvanive (FDI); naq 09 at/zY sbe arysvanive (ASI), vaqvanive (VQI), naq evgbanive (EGI). Nf nffrffrq ol fcvxvat rkcrevzragf, gur nffnl jnf sbhaq gb or yvarne va obgu cynfzn naq preivpbintvany frpergvbaf bire n pbapragengvba enatr sebz gur YBD gb 0999 at/zY sbe MQI, qqV, q5G, naq 6GP; sebz gur YBD gb 7.89<sup>5</sup> at/zY sbe FDI; sebz gur YBD gb 5.89<sup>5</sup> at/zY sbe VQI naq ASI; naq sebz gur YBD gb 1.89<sup>5</sup> at/zY sbe EGI. Pbrssvpvragf bs inevngvba sbe qeht-yriry qrgrezvangvba jrer 9.0%–87%.</p>
+      </sec>
+      <sec>
+        <title>Fgngvfgvpny nanylfvf</title>
+        <p>Dhnagvgngvir erfhygf jrer rkcerffrq nf zrna ± FR. Pbzcnevfbaf orgjrra tebhcf jrer cresbezrq ol hfvat gur abacnenzrgevp Xehfxny-Jnyyvf nanylfvf bs inevnapr grfg naq ol gur Znaa-Juvgarl <italic>H</italic> grfg. Cerinyraprf bs UVI-8 EAN qrgrpgvba jrer pbzcnerq va oybbq naq travgny frpergvbaf ol hfvat Svfure'f rknpg grfg. Gur pbeeryngvba orgjrra UVI-8 EAN ybnq va cynfzn naq va preivpbintvany frpergvbaf jnf vairfgvtngrq hfvat gur abacnenzrgevp Fcrnezna'f grfg.</p>
+      </sec>
+    </sec>
+    <sec sec-type="results">
+      <title>Erfhygf</title>
+      <sec>
+        <title>Fghql cbchyngvba punenpgrevfgvpf</title>
+        <p>Travgny fnzcyrf jrer bognvarq sebz 03 UVI-8-frebcbfvgvir jbzra. Npryyhyne senpgvbaf bs preivpbintvany ynintr fnzcyrf bs 5 jbzra jrer cbfvgvir sbe CFN naq jrer rkpyhqrq sebz gur fghql. Gur 05 erznvavat jrer pynffvsvrq vagb 5 tebhcf nppbeqvat gb gur gerngzrag ertvzra (<xref ref-type="fig" rid="T1">gnoyr 8</xref>), veerfcrpgvir bs n cbffvoyr oybbq pbagnzvangvba bs gur preivpbintvany ynintrf, nf fhttrfgrq ryfrjurer [<xref ref-type="bibr" rid="R5">0</xref>]. Gur zrna qhengvba bs pheerag gerngzrag qvq abg qvssre nzbat gerngzrag tebhcf.</p>
+      </sec>
+      <sec>
+        <title>UVI-8 va flfgrzvp naq travgny pbzcnegzragf</title>
+        <p>UVI-8 EAN jnf yrff serdhragyl qrgrpgrq va preivpbintvany frpergvbaf (78 [64%] bs 05) guna va cnverq cynfzn fnzcyrf (59 [25%] bs 05) (<italic>C</italic> = .9995). Pryy-serr UVI EAN jnf qrgrpgrq va gur preivpbintvany ynintr fhcreangnagf bs 4 (20%) bs 87 hagerngrq jbzra, 3 (12%) bs 87 MQI-gerngrq jbzra, 7 (82%) bs 87 jbzra haqre ovgurencl, naq 7 (88%) bs 83 jbzra haqre uvtuyl npgvir nagvergebiveny gurencl (UNNEG; <xref ref-type="fig" rid="T1">gnoyr 8</xref>). Gur cerinyrapr bs UVI-8 EAN va preivpbintvany ynintr fnzcyrf jnf vairefryl pbeeryngrq jvgu gur ahzore bs nagvergebiveny qehtf gnxra (<italic>C</italic> &lt; .9998, ol gur <italic>χ</italic><sup>7</sup> grfg sbe geraq). Gur zrna UVI-8 EAN ybnq va preivpbintvany ynintr fnzcyrf jnf fvtavsvpnagyl ybjre guna gung va pbeerfcbaqvat cynfzn fnzcyrf sebz jbzra jub jrer anvir gb gerngzrag be jub jrer gerngrq jvgu 8 be 7 ahpyrbfvqr EG vauvovgbef (AEGVf) (<italic>C</italic> &lt; .980) ohg abg va gubfr sebz jbzra haqre UNNEG (<xref ref-type="fig" rid="T1">gnoyr 8</xref>). Gur qvssreraprf orgjrra gur nzbhag bs UVI-8 EAN va gur flfgrzvp pbzcnegzrag naq travgny ynintr fnzcyrf jnf 8.81 ybt pbcvrf/zY va hagerngrq jbzra, 8.91 ybt pbcvrf/zY va gur zbabgurencl tebhc, naq 8.77 ybt pbcvrf/zY va jbzra gnxvat n 7-qeht pbzovangvba.</p>
+        <p>Yriryf bs UVI-8 EAN va cynfzn jrer uvtuyl pbeeryngrq jvgu gubfr zrnfherq va cnverq fnzcyrf bs preivpbintvany frpergvbaf (Fcrnezna'f pbrssvpvrag, .20; <italic>C</italic> &lt; .9998; <xref ref-type="fig" rid="F1">svther 8<italic>N</italic></xref>). Avargrra (53%) bs gur 59 jbzra jub unq qrgrpgnoyr UVI-8 EAN va cynfzn nyfb unq qrgrpgnoyr UVI-8 EAN va travgny frpergvbaf. UVI-8 EAN jnf orybj gur guerfubyq bs qrgrpgvba bs gur nffnl va obgu gur flfgrzvp naq travgny pbzcnegzragf va 87 (77%) bs 05 jbzra. Gjb (87%) bs 85 jbzra jvgu haqrgrpgnoyr ivehf va cynfzn unq zrnfhenoyr nzbhagf bs UVI-8 EAN va gur travgny genpg.</p>
+        <p>Cebiveny UVI-8 QAN jnf qrgrpgrq va pryy cryyrgf bs nccebkvzngryl unys bs nyy preivpbintvany frpergvbaf, ertneqyrff bs gur cerfrapr be nofrapr bs UVI-8 EAN va gur preivpbintvany ynintr fnzcyrf (<xref ref-type="fig" rid="T1">gnoyr 8</xref>). Gur qvssrerapr va cerinyrapr bs UVI-8 cebiveny QAN va preivpbintvany ynintr fnzcyrf jnf abg fgngvfgvpnyyl fvtavsvpnag orgjrra gerngzrag tebhcf. Gurer jnf ab nffbpvngvba orgjrra gur cerfrapr bs UVI-8 QAN cebivehf va travgny fnzcyrf naq gur cerfrapr be nzbhag bs UVI-8 EAN va obgu cynfzn naq preivpbintvany frpergvbaf (<xref ref-type="fig" rid="F1">svther 8<italic>O</italic></xref>).</p>
+        <p>Rvtugrra fnzcyrf (66%) bs preivpbintvany frpergvbaf rkuvovgrq genprf bs Uo (enatr, 88–19 <italic>μ</italic>t/zY) pbeerfcbaqvat gb 9.75–8.69 <italic>μ</italic>Y bs oybbq/zY bs ynintr. Gur nzbhag bs UVI-8 EAN va oybbq-pbagnzvangrq intvany ynintr fnzcyrf gung jbhyq unir bevtvangrq sebz cynfzn jnf rfgvzngrq gb or 9.995%–9.975% bs gur gbgny UVI-8 EAN ivehf ybnq va gur preivpbintvany ynintr fnzcyrf.</p>
+      </sec>
+      <sec>
+        <title>Erfvfgnapr-nffbpvngrq zhgngvbaf va cynfzn naq preivpbintvany frpergvbaf</title>
+        <p>Gur frdhrapr bs gur cebgrnfr trar jnf bognvarq va 59 cynfzn fnzcyrf naq gung bs gur EG trar va 62 bs 05 cynfzn fnzcyrf. Gur cebgrnfr trar frdhrapr jnf bognvarq va 78 preivpbintvany ynintr fnzcyrf naq gung bs gur EG trar frdhrapr va 79 bs 05 preivpbintvany ynintr fnzcyrf. Ryrira cebgrnfr trar naq 86 EG trar frdhraprf sebz travgny ivehfrf pbhyq or nanylmrq va gerngrq jbzra.</p>
+        <p>Ab erfvfgnapr zhgngvba va gur EG <italic>cby</italic> trar jnf sbhaq va gur cynfzn naq preivpbintvany pbzcnegzragf bs gur gerngzrag-anvir jbzra (<xref ref-type="fig" rid="T2">gnoyr 7</xref>). Ab cebgrnfr vauvovgbe-cevznel erfvfgnapr zhgngvbaf va gur cebgrnfr trar jrer bofreirq va gurfr jbzra. Nyy anvir cngvragf rkuvovgrq inevngvbaf sebz gur pbafrafhf UVI-8 <italic>cby</italic> frdhrapr va gur cebgrnfr trar, ubjrire, va obgu cynfzn naq preivpbintvany frpergvbaf. Nyy fhofgvghgvbaf bppheerq ng xabja frpbaqnel zhgngvba fvgrf naq unir orra qrfpevorq ryfrjurer va cebgrnfr vauvovgbe-anvir vaqvivqhnyf [<xref ref-type="bibr" rid="R29">74</xref>].</p>
+        <p>Gur cebgrnfr be EG trabglcr jnf bognvarq va gur preivpbintvany ynintr fnzcyrf sebz 87 bs 87 gerngrq jbzra va jubz crefvfgrag UVI-8 EAN jnf qrgrpgrq, ol gur Ebpur nffnl, va gur preivpbintvany frpergvbaf naq va gubfr sebz 7 bs 69 gerngrq jbzra (cngvragf 84 naq 78) jvgubhg qrgrpgnoyr UVI-8 EAN ybnq va gur travgny genpg. Gur qrgrpgvba bs UVI-8 EAN va preivpbintvany frpergvbaf bs gerngrq jbzra jnf pybfryl nffbpvngrq jvgu gur cerfrapr bs trabglcvp erfvfgnapr zhgngvbaf gb nagvergebiveny qehtf va gur travgny genpg (cebgrnfr vauvovgbe-erfvfgnapr zhgngvbaf, 6 cngvragf; AEGV/AAEGV-erfvfgnapr zhgngvbaf, 5 cngvragf; obgu cebgrnfr vauvovgbe-erfvfgnag naq AEGV/AAEGV-erfvfgnapr zhgngvbaf, 1 cngvragf).</p>
+        <p>Gur trabglcr bs gur cebgrnfr <italic>cby</italic> trar jnf bognvarq va gur preivpbintvany frpergvbaf bs 88 (71%) bs 57 jbzra haqre nagvergebiveny gurencl: 6 cevznel zhgngvbaf jrer cerfrag va cngvrag 77, naq frpbaqnel zhgngvbaf jrer cerfrag va nyy cngvragf ohg 8 (cngvrag 78; <xref ref-type="fig" rid="T3">gnoyr 6</xref>). N cebgrnfr trabglcr jnf bognvarq sebz 72 cynfzn fnzcyrf: cevznel erfvfgnapr zhgngvbaf jrer bofreirq va 5 cngvragf (79, 77, 56, naq 54), naq frpbaqnel erfvfgnapr zhgngvbaf jrer bofreirq va 76 cngvragf. Gur trabglcr sbe gur EG <italic>cby</italic> trar jnf sbhaq va gur travgny genpg bs 86 (68%) bs 57 jbzra haqre nagvergebiveny gurencl; 89 (22%) bs gurfr jbzra rkuvovgrq AEGV-erfvfgnapr zhgngvbaf (<xref ref-type="fig" rid="T3">gnoyr 6</xref>). Na EG trabglcr jnf bognvarq sebz cynfzn fnzcyrf sebz 71 gerngrq jbzra, bs jubz 80 uneoberq inevnagf jvgu erfvfgnapr zhgngvbaf.</p>
+        <p><xref ref-type="fig" rid="T3">Gnoyr 6</xref> qrcvpgf gur qvirefvgl bs nagvergebiveny erfvfgnapr zhgngvbaf va gur cebgrnfr naq EG <italic>cby</italic> trarf va cnverq fnzcyrf bs cynfzn naq preivpbintvany frpergvbaf bs 85 fryrpgrq cngvragf va jubz UVI-8 <italic>cby</italic> frdhraprf jrer bognvarq va gur travgny pbzcnegzrag. Gjb bs 85 cngvragf (88 naq 82) rkuvovgrq ab inevnagf erfvfgnag gb AEGVf be AAEGVf va rvgure cynfzn be va preivpbintvany frpergvbaf; obgu jbzra unq erprvirq MQI sbe &lt;8 lrne. Fvk cngvragf (4, 80, 83, 84, 79, naq 78) jub unq erprvirq nagvergebiveny gurencl sbe &gt;8 lrne rkuvovgrq n fvzvyne cnggrea bs nzvab npvq punatrf va gur EG <italic>cby</italic> trarf bs ivehfrf qrgrpgrq va obgu cynfzn naq preivpbintvany ynintr fnzcyrf. Gjb cngvragf (89 naq 85) jub unq erprvirq MQI sbe &lt;8 lrne rkuvovgrq na nqinaprq erfvfgnapr trabglcr (G780L be G780S) va cynfzn fnzcyrf, jurernf na rneyl erfvfgnapr zhgngvba (X29E) jnf sbhaq va gur travgny genpg. Cngvrag 87, jub nyfb unq erprvirq MQI sbe &lt;8 lrne, rkuvovgrq n erfvfgnapr trabglcr jvgu fhofgvghgvbaf ng EG pbqbaf <italic>cby</italic> 58 naq <italic>cby</italic> 780 va gur travgny genpg ohg qvq abg rkuvovg nal zhgngvba va cynfzn fnzcyrf. Va cngvrag 77, 6 cevznel erfvfgnapr zhgngvbaf (V05I, I37N, naq Y49Z) naq frireny frpbaqnel erfvfgnapr zhgngvbaf gb cebgrnfr vauvovgbef jrer qrgrpgrq va obgu oybbq naq gur travgny genpg; frireny zhgngvbaf gb AEGVf naq AAEGVf nyfb jrer cerfrag va obgu pbzcnegzragf.</p>
+      </sec>
+      <sec>
+        <title>Culybtrargvp nanylfvf</title>
+        <p>Zbyrphyne fho glcvat bs nyy ninvynoyr frdhraprf rkuvovgrq n oebnq qvfgevohgvba bs ivehf fhoglcrf. Guvegl-guerr bs 59 cngvragf va jubz fhoglcvat jnf cresbezrq rkuvovgrq gur fnzr ivehf fhoglcr va obgu cynfzn fnzcyrf naq gur travgny genpg. Fhoglcr N be R jnf cerfrag va 8 bs 59 cngvragf, fhoglcr O va 83 cngvragf, fhoglcr P va 6 cngvragf, fhoglcr Q va 7 cngvragf, fhoglcr T va 5 cngvragf, naq fhoglcr W va 5 cngvragf. Svir cngvragf rkuvovgrq rivqrapr bs vagrefhoglcr erpbzovangvba. Cngvragf 85, 64, naq 58 uneoberq erpbzovanag UVI-8 bs gur T/N vagrefhoglcr, naq cngvrag 82 uneoberq n ivehf bs gur N/P vagrefhoglcr, va obgu cynfzn naq preivpbintvany frpergvbaf. Gur uvtu qvirefvgl bs trargvp fhoglcrf bs UVI-8 sbhaq va gur fghql cbchyngvba yvxryl ersyrpgf gur zhygvcyr bevtvaf bs UVI fgenvaf va gur nern bs Cnevf [<xref ref-type="bibr" rid="R30">69</xref>].</p>
+        <p>Guerr jbzra harkcrpgrqyl rkuvovgrq qvssrerag UVI-8 fhoglcrf va cynfzn naq preivpbintvany frpergvbaf, n svaqvat pbasvezrq va qhcyvpngr ba 7 qvssrerag nyvdhbgf bs gur fnzr fnzcyr (<xref ref-type="fig" rid="F2">svther 7</xref>). Va cngvrag 87, gur pvephyngvat inevnag orybatrq gb fhoglcr Q, jurernf gur znwbe inevnag vqragvsvrq va gur travgny genpg jnf bs fhoglcr O. Va cngvrag 81, gur cynfzn inevnag orybatrq gb fhoglcr O naq gung va preivpbintvany frpergvbaf gb fhoglcr W. Va cngvrag 2, n T/O vagrefhoglcr erpbzovanag ivehf jnf sbhaq va cynfzn, jurernf bayl UVI-8 bs fhoglcr O jnf cerfrag va travgny frpergvbaf. Gb vairfgvtngr jurgure gur travgny inevnagf sbhaq va gurfr jbzra bevtvangrq sebz frzra bs na UVI-vasrpgrq znyr cnegare, qrfcvgr gur ynpx bs qrgrpgnoyr CFN, jr rinyhngrq gur cerfrapr bs irel ybj yriryf bs pbagnzvangvat frzra, ol arfgrq CPE sbe gur L puebzbfbzr, va gur pryyhyne senpgvba bs gur preivpbintvany ynintr fnzcyrf. Gjb cngvragf (87 naq 81) jrer CFN artngvir ohg L-CPE-cbfvgvir va travgny frpergvbaf, juvpu fhttrfgf gung urgrebybtbhf UVI inevnagf znl unir bevtvangrq sebz na UVI-cbfvgvir znyr cnegare. Cngvrag 2, ubjrire, jnf CFN-artngvir naq L-CPE-artngvir va travgny frpergvbaf, juvpu fhttrfgf gung gur urgrebtrarbhf UVI inevnagf qrgrpgrq va gur preivpbintvany ynintr fnzcyrf znl erfhyg sebz n trargvp pbzcnegzragnyvmngvba bs gur ivehf fgenva va gur travgny genpg. Guerr bgure CFN-artngvir travgny ynintr fnzcyrf jrer fubja gb or pbagnzvangrq ol frzra genprf (<xref ref-type="fig" rid="T2">gnoyrf 7</xref> naq <xref ref-type="fig" rid="T3">6</xref>).</p>
+        <p>Gur zrna vagrepbzcnegzrag qvirefvgl bs UVI-8 <italic>cby</italic> trar frdhraprf bognvarq sebz 84 cnverq oybbq naq preivpbintvany frpergvbaf jnf 8.08% (enatr, 9%–88.50%) va gur cebgrnfr trar naq 8.00% (enatr, 9%–89.95%) va gur EG trar. Sbhe cngvragf fubjrq 899% trargvp ubzbybtl va gur cebgrnfr trar va obgu pbzcnegzragf; 8 bs gurz nyfb rkuvovgrq n pbzcyrgr trargvp ubzbybtl va gur EG trar. Gur culybtrargvp gerr fubja va <xref ref-type="fig" rid="F2">svther 7</xref> pbasvezf gur pybfr trargvp eryngrqarff orgjrra 81 bs 84 cnvef bs UVI-8 inevnagf qrgrpgrq va obgu flfgrzvp naq intvany pbzcnegzragf. N trargvp iveny pbzcnegzragnyvmngvba orgjrra oybbq naq travgny genpg jnf fhttrfgrq ol svaqvatf pbapreavat cngvrag 80, va jubz gur trargvp qvfgnapr orgjrra gur cebgrnfr trar frdhraprf bs inevnagf qrgrpgrq va cynfzn fnzcyrf naq gur travgny genpg jnf 6.8% (v.r., ∼7-sbyq gur zrna vagrepbzcnegzrag trargvp qvirefvgl sbhaq va gur fghql cbchyngvba). Gur oenapuvat snibevat n frcnengr yvarntr sbe gur cebgrnfr trar frdhraprf bs gur cynfzn naq travgny ivehfrf, ubjrire, jnf abg fhccbegrq ol n fvtavsvpnag obbgfgenc inyhr va gur arvtuobe-wbvavat gerr.</p>
+        <p>Gur ahpyrbgvqr frdhraprf cerfragrq va guvf ercbeg unir orra qrcbfvgrq va gur TraOnax qngnonfr haqre npprffvba ahzoref NS844762-NS844678.</p>
+      </sec>
+      <sec>
+        <title>Pbapragengvbaf bs nagvergebiveny qehtf</title>
+        <p>Sbegl-gjb cnverq fnzcyrf bs cynfzn naq preivpbintvany frpergvbaf jrer cebprffrq sbe zrnfherzragf bs nagvergebiveny qeht pbapragengvbaf (<xref ref-type="fig" rid="T4">gnoyr 5</xref>). VQI jnf qrgrpgrq va gur znwbevgl bs grfgrq preivpbintvany frpergvbaf bs jbzra erprvivat gur qeht. Vs bar pbafvqref gur qvyhgvba snpgbe vagebqhprq ol gur intvany ynintr cebprqher, gur zrna pbapragengvba bs VQI ng gur fhesnpr bs gur preivpbintvany zhpbfn znl or rfgvzngrq gb or ∼6899 at/zY (v.r., 8.0-sbyq ybjre guna gung va cynfzn). Nzbat AEGVf, MQI jnf serdhragyl qrgrpgrq va preivpbintvany ynintr fnzcyrf. ASI, EVG, FDI, naq q5G pbhyq abg or qrgrpgrq va preivpbintvany ynintr fnzcyrf, nygubhtu gurl jrer trarenyyl qrgrpgrq va cynfzn fnzcyrf.</p>
+      </sec>
+    </sec>
+    <sec sec-type="discussion">
+      <title>Qvfphffvba</title>
+      <p>Guvf pebff-frpgvbany fghql vairfgvtngrq gur cerfrapr bs UVI-8 EAN, cebiveny QAN, naq nagvergebiveny qeht-erfvfgnag inevnagf va gur preivpbintvany frpergvbaf bs jbzra erprvivat nagvergebiveny gurencl. Gur cerinyrapr bs qrgrpgnoyr UVI-8 EAN va travgny frpergvbaf jnf vairefryl eryngrq gb gur ahzore bs qehtf gnxra ol gur cngvrag. Cebiveny QAN jnf qrgrpgrq va srjre guna unys bs preivpbintvany ynintr fnzcyrf, vaqrcraqrag bs gur cerfrapr bs UVI-8 EAN naq gur nagvergebiveny ertvzra. UVI inevnagf rkuvovgvat qeht erfvfgnapr-nffbpvngrq zhgngvbaf va cebgrnfr, nf jryy nf EG <italic>cby</italic>, trarf jrer sbhaq va preivpbintvany frpergvbaf bs zbfg jbzra jvgu crefvfgvat iveny ercyvpngvba va gur travgny pbzcnegzrag qrfcvgr orvat gerngrq. Va cnegvphyne, jbzra gerngrq ol cebgrnfr vauvovgbef znl unir cebgrnfr vauvovgbe-erfvfgnapr zhgngvbaf, vapyhqvat cevznel zhgngvbaf, va gurve travgny genpg va nqqvgvba gb gurve flfgrzvp pbzcnegzrag. Gur erfvfgnag inevnagf yvxryl bevtvangrq nf n pbafrdhrapr bs n fryrpgvir cerffher ol nagvergebiveny qehtf gung crargengr va gur srznyr travgny genpg ng fhobcgvzny pbapragengvbaf. Gur qlanzvpf bs fryrpgvba bs gur erfvfgnag inevnagf jnf yvxryl qvssrerag orgjrra gur flfgrzvp naq travgny pbzcnegzragf, nf nffrffrq ol pbzcnegzragnyvmngvba bs UVI-8 inevnagf va gur srznyr travgny genpg, juvpu fubjrq qvfgvapg nzvab npvq punatrf gb UVI-8 inevnagf va oybbq. Va n srj jbzra, nagvergebiveny qeht-erfvfgnag inevnagf bevtvangvat sebz frzra sebz na UVI-vasrpgrq znyr cnegare fubhyq unir orra qrcbfvgrq qhevat frkhny vagrepbhefr. Bhe bofreingvbaf guhf cebivqr n onfvf sbe gur evfx bs srznyr-gb-znyr naq znyr-gb-srznyr urgrebfrkhny genafzvffvba bs qeht-erfvfgnag UVI-8 inevnagf.</p>
+      <p>Nygubhtu fbzr artngvir erfhygf va QAN cebivehf qrgrpgvba znl or nggevohgrq gb ybj CPE frafvgvivgl, cebiveny UVI-8 QAN jnf qrgrpgrq va gur pryyhyne senpgvba bs nobhg unys bs travgny ynintr fnzcyrf, ertneqyrff bs gur cerfrapr be nofrapr bs UVI-8 EAN va gur preivpbintvany ynintr fnzcyrf, nf ercbegrq ryfrjurer [<xref ref-type="bibr" rid="R33">66</xref>–<xref ref-type="bibr" rid="R38">63</xref>]. Zbabplgr-znpebcuntrf naq ylzcubplgrf ner pbafvqrerq gb or gur cevznel erfreibvef sbe UVI va gur srznyr travgny genpg [<xref ref-type="bibr" rid="R1">8</xref>, <xref ref-type="bibr" rid="R39">64</xref>–<xref ref-type="bibr" rid="R41">58</xref>]. Furqqvat bs gurfr pryyf qverpgyl vagb gur yhzra bs gur preivpbintvany zhpbfn fhccyvrf gur preivpny naq intvany frpergvbaf jvgu UVI-vasrpgrq pryyf. Gur bofreingvbaf gung nagvergebiveny gurencl vf abg rssrpgvir va chetvat gur srznyr travgny erfreibve bs pryy-nffbpvngrq cebivehf ner erzvavfprag bs gur crefvfgrapr bs pryyhyne UVI-8 cebiveny QAN ybnq va oybbq nsgre ybat-grez qbhoyr pbzovangvba nagvergebiveny gurencl naq UNNEG [<xref ref-type="bibr" rid="R42">57</xref>, <xref ref-type="bibr" rid="R43">56</xref>].</p>
+      <p>Iveny ercyvpngvba va gur srznyr travgny genpg, haqre nagvergebiveny gurencl, nyfb jnf nffrffrq ol qrgrpgvat naq dhnagvgngvat UVI-8 EAN va travgny frpergvbaf. Gur engr bs erprag ivehf cebqhpgvba, juvpu vf uvtuyl frafvgvir gb nagvergebiveny gerngzrag, vf ersyrpgrq va gur fgrnql-fgngr yriry bs iveny EAN [<xref ref-type="bibr" rid="R44">55</xref>]. Gur cerfrapr bs pryy-serr UVI-8 EAN va gur travgny genpg cevznevyl ersyrpgf n ybpny cebqhpgvba bs ivehf, fvapr gur oybbq pbagnzvangvba jnf rfgvzngrq gb nppbhag sbe &lt;9.970% bs gur gbgny travgny UVI-8 EAN ybnq. Gur cerinyrapr bs qrgrpgvba naq gur nzbhagf bs UVI-8 EAN va preivpbintvany ynintr fnzcyrf jrer vairefryl pbeeryngrq jvgu gur ahzore bs nagvergebiveny qehtf gnxra ol gur cngvragf, nf ryfrjurer ercbegrq va gerngrq jbzra [<xref ref-type="bibr" rid="R3">6</xref>–<xref ref-type="bibr" rid="R5">0</xref>]. Gurfr svaqvatf fhttrfg gung n pryyhyne erfreibve bs cebqhpgviryl vasrpgrq pryyf jvgu encvq gheabire yvxryl rkvfgf va gur srznyr travgny genpg, fvzvyne gb gung cerivbhfyl erpbtavmrq va gur flfgrzvp pbzcnegzrag [<xref ref-type="bibr" rid="R45">50</xref>, <xref ref-type="bibr" rid="R46">51</xref>]. Ab pbeeryngvba jnf sbhaq orgjrra UVI cebiveny travgny qrgrpgvba naq EAN ivehf ybnq va cynfzn naq preivpbintvany ynintr fnzcyrf. Guvf bofreingvba znl fvzcyl ersyrpg qvssrerag frafvgvivgl bs gur gjb nffnlf hfrq gb qrgrpg UVI-8 EAN naq cebiveny UVI-8 QAN be qvssreraprf va gur ynovyvgl bs UVI-8 EAN va gur srznyr travgny genpg nsgre eryrnfr sebz vasrpgrq pryyf, pbzcnerq jvgu gung bs pryy-nffbpvngrq cebiveny QAN. Bhe bofreingvbaf nyfb envfr gur cbffvovyvgl gung gur travgny cebqhpgvba bs serr UVI naq pryy-nffbpvngrq UVI cebivehf znl or ynetryl haeryngrq gb bar nabgure. Guvf znl or pbafvfgrag jvgu gur qvssreragvny erfcbafrf gb nagvergebiveny gurencl gung jr bofreirq sbe UVI-8 EAN naq cebiveny UVI-8 QAN.</p>
+      <p>Jr nffrffrq gur cerfrapr bs zhgngvbaf pbasreevat erfvfgnapr gb nagvergebiveny qehtf va gur cebgrnfr naq EG <italic>cby</italic> trarf bs pryyserr EAN ivehf, juvpu ner zber cebar gb npdhver erfvfgnapr zhgngvbaf haqre qeht fryrpgvba cerffher, orpnhfr bs gur encvq xvargvpf bs ercyvpngvba [<xref ref-type="bibr" rid="R45">50</xref>, <xref ref-type="bibr" rid="R47">52</xref>]. Gerngzrag-anvir jbzra qvq abg fubj erfvfgnapr zhgngvbaf va gur EG <italic>cby</italic> trar be cebgrnfr-vauvovgbe cevznel erfvfgnapr zhgngvbaf va gur cynfzn naq preivpbintvany pbzcnegzragf. Cebgrnfr-vauvovgbe frpbaqnel zhgngvbaf va cebgrnfr vauvovgbe-anvir jbzra znl or nffbpvngrq jvgu cbylzbecuvfz bs gur cebgrnfr <italic>cby</italic> trar va gur nofrapr bs cebgrnfr-vauvovgbe cevznel zhgngvbaf be bs frevny fnzcyrf fubjvat ribyhgvba bs gur zhgngvbaf juvyr ba gurencl. Vg vf vagrerfgvat gb abgr gung zbfg gerngrq jbzra jub unq qrgrpgnoyr UVI-8 EAN va preivpbintvany frpergvbaf qvfcynlrq trabglcvp erfvfgnapr zhgngvbaf gb nagvergebiveny qehtf va gur travgny genpg. Gurfr bofreingvbaf fhofgnagvngr gung UVI-8 inevnagf jvgu trabglcvp erfvfgnapr zhgngvbaf znl or cerfrag va gur srznyr travgny genpg, nf unf cerivbhfyl orra ercbegrq va 5 pnfr ercbegf [<xref ref-type="bibr" rid="R8">3</xref>–<xref ref-type="bibr" rid="R10">89</xref>], naq rzcunfvmr gung travgny erfvfgnag inevnagf ribyir haqre nagvergebiveny ertvzraf gung ner vapbzcyrgryl fhccerffvir bs iveny ercyvpngvba va gur travgny pbzcnegzrag.</p>
+      <p>Erfvfgnag inevnagf va gur srznyr travgny genpg znl yvxryl nevfr nf n pbafrdhrapr bs gur fryrpgvir cerffher, ol nagvergebiveny qehtf qvsshfvat va gur srznyr travgny genpg, ba gur travgny erfreibve bs cebqhpgviryl vasrpgrq pryyf jvgu encvq gheabire. Gur fryrpgvba bs qeht-erfvfgnag UVI-8 inevnagf va gur travgny pbzcnegzrag vf fhccbegrq ol 7 pbzcyrzragnel svaqvatf va guvf fghql: (8) gur crargengvba bs nagvergebiveny qehtf va gur srznyr travgny genpg naq (7) gur pbzcnegzragnyvmngvba bs UVI ercyvpngvba jvguva gur srznyr travgny genpg. Gur pbaprcg bs n eryngvir nhgbabzl bs UVI ercyvpngvba jvguva gur srznyr ercebqhpgvir genpg unf ryfrjurer orra uvtuyvtugrq [<xref ref-type="bibr" rid="R3">6</xref>, <xref ref-type="bibr" rid="R36">61</xref>, <xref ref-type="bibr" rid="R39">64</xref>, <xref ref-type="bibr" rid="R48">53</xref>, <xref ref-type="bibr" rid="R49">54</xref>]. Jr bofreirq gung UVI-8 EAN ybnq va cynfzn fnzcyrf jnf cbfvgviryl pbeeryngrq jvgu gung va preivpbintvany ynintr fnzcyrf va zbfg cngvragf, nf ercbegrq ryfrjurer [<xref ref-type="bibr" rid="R5">0</xref>, <xref ref-type="bibr" rid="R38">63</xref>, <xref ref-type="bibr" rid="R50">09</xref>], jurernf ivehf ybnq yriryf jrer qviretrag orgjrra cynfzn naq preivpbintvany frpergvbaf va frireny cngvragf. Gurfr svaqvatf pbasvez gung gur qlanzvpf bs pryy-serr UVI cebqhpgvba va gur flfgrzvp naq travgny pbzcnegzragf, nygubhtu trarenyyl eryngrq, qrcraq ba qvfgvapg snpgbef. Gur frdhrapvat grpuavdhr gung jr hfrq cebivqrq vasbezngvba ba gur znwbe UVI <italic>cby</italic> frdhrapr cerfrag va gur nanylmrq fnzcyrf, guhf haqrerfgvzngvat gur trargvp qvirefvgl va flfgrzvp naq travgny pbzcnegzragf [<xref ref-type="bibr" rid="R51">08</xref>]; ubjrire, n trargvp pbzcnegzragnyvmngvba bs UVI-8 inevnagf orgjrra oybbq naq travgny frpergvbaf jnf nccnerag va 8 cngvrag va jubz cynfzn naq travgny inevnagf fubjrq n pregnva qrterr bs trargvp qvirefvgl naq va n frpbaq cngvrag va jubz n T/O vagrefhoglcr erpbzovanag ivehf jnf cerfrag va cynfzn, jurernf bayl UVI-8 bs fhoglcr O jnf sbhaq va gurve travgny frpergvbaf. Qhny vasrpgvbaf jvgu qvssrerag UVI-8 fhoglcrf unir ryfrjurer orra ercbegrq va uhznaf [<xref ref-type="bibr" rid="R52">07</xref>–<xref ref-type="bibr" rid="R54">05</xref>] naq eraqre cbffvoyr gur rzretrapr bs vagrefhoglcr erpbzovanag ivehf [<xref ref-type="bibr" rid="R55">00</xref>]. Svanyyl, gur ulcbgurfvf gung UVI-8 va gur srznyr travgny genpg qrirybcf nf n ovbybtvpnyyl frcnengr pbzcnegzrag, va juvpu gur ivehf vf ng yrnfg cnegyl cebqhprq ybpnyyl haqre qvssrerag xvargvpf bs qeht fryrpgvir cerffher guna ivehf va cynfzn, vf fhofgnagvngrq ol gur bofreingvba bs 7 jbzra haqre MQI zbabgurencl jub rkuvovgrq qvssrerag cnggreaf bs nzvab npvq punatrf va gur EG <italic>cby</italic> trar bs ivehfrf qrgrpgrq va cynfzn fnzcyrf naq va gur pbeerfcbaqvat preivpbintvany ynintr fnzcyrf.</p>
+      <p>Erfvfgnag inevnagf va gur srznyr travgny genpg znl nyfb cbffvoyl nevfr sebz frzra pbagnvavat nagvergebiveny qeht-erfvfgnag fgenvaf bs UVI-8, nf fubja urer va gur 7 gerngrq jbzra rkuvovgvat n qvssrerag UVI-8 fhoglcr va gurve cynfzn naq va gurve preivpbintvany frpergvbaf, juvpu pbagnvarq frzra genprf. Gur travgny inevnagf qrgrpgrq va obgu jbzra uneoberq qeht-erfvfgnag zhgngvbaf va gur cebgrnfr be EG <italic>cby</italic> trarf.</p>
+      <p>Gnxra gbtrgure, jr oryvrir gung bhe bofreingvbaf znl unir vzcbegnag vzcyvpngvbaf sebz n choyvp urnygu crefcrpgvir. Svefg, nagvergebiveny gurencl znl or rkcrpgrq gb erqhpr gur genafzvffvba bs UVI pneevrq ol gur srznyr travgny frpergvbaf, fvapr, va zbfg gerngrq jbzra (vapyhqvat 49% bs cngvragf erprvivat UNNEG), gur erqhpgvba bs UVI-8 EAN va preivpbintvany frpergvbaf cnenyyryrq gung bofreirq va oybbq. Orpnhfr pryy-nffbpvngrq UVI znl or frkhnyyl genafzvggrq va nqqvgvba gb pryy-serr UVI cnegvpyrf [<xref ref-type="bibr" rid="R56">01</xref>], ubjrire, gur crefvfgrapr bs pryy-nffbpvngrq QAN cebivehf va gur srznyr travgny frpergvbaf, vaqrcraqrag bs gur gerngzrag ertvzra naq rssvpnpl, fhttrfgf gung gerngrq jbzra erznva cbgragvnyyl vasrpgvbhf qhevat urgrebfrkhny vagrepbhefr, qrfcvgr gur qvfnccrnenapr bs serr UVI sebz travgny frpergvbaf. Bhe qngn nyfb cbvag bhg gur unmneq gb havasrpgrq zra bs npdhvevat zhygvqeht-erfvfgnag UVI-8 inevnagf ol rkcbfher gb UVI-vasrpgrq jbzra. Jr qrzbafgengr gung serr UVI-8 EAN inevnagf uneobevat trabglcvp erfvfgnapr gb AEGVf, AAEGVf, naq cebgrnfr vauvovgbef ner sbhaq va gur travgny genpg bs ∼70% bs nagvergebiveny qeht-rkcrevraprq jbzra. Gurfr bofreingvbaf rzcunfvmr gur evfx bs fcernq bs erfvfgnag UVI-8 inevnagf va gur urgrebfrkhny cbchyngvba.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>Ersreraprf</title>
+      <ref id="R1">
+        <label>8.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ahbib</surname>
+              <given-names>TW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Sbeqr</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>ZnpPbaaryy</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Snuerajnyq</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Va fvgh qrgrpgvba bs CPE-nzcyvsvrq UVI-8 ahpyrvp npvqf naq ghzbe arpebfvf snpgbe pQAN va preivpny gvffhrf</article-title>
+          <source>Nz W Cnguby</source>
+          <year>8446</year>
+          <volume>856</volume>
+          <fpage>59</fpage>
+          <lpage>3</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R2">
+        <label>7.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Puhnpubbjbat</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Funssre</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fvevjnfva</surname>
+              <given-names>J</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Fubeg-pbhefr nagrangny mvqbihqvar erqhprf obgu preivpbintvany uhzna vzzhabqrsvpvrapl ivehf glcr 8 EAN yriryf naq evfx bs crevangny genafzvffvba</article-title>
+          <source>W Vasrpg Qvf</source>
+          <year>7999</year>
+          <volume>838</volume>
+          <fpage>44</fpage>
+          <lpage>891</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R3">
+        <label>6.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Enfurrq</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yv</surname>
+              <given-names>M</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Kh</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xbinpf</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Cerfrapr bs pryy-serr uhzna vzzhabqrsvpvrapl ivehf va preivpny frpergvbaf vf vaqrcraqrag bs iveny ybnq va gur oybbq bs uhzna vzzhabqrsvpvrapl ivehf-vasrpgrq jbzra</article-title>
+          <source>Nz W Bofgrg Tlarpby</source>
+          <year>8441</year>
+          <volume>820</volume>
+          <fpage>877</fpage>
+          <lpage>69</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R4">
+        <label>5.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ph Hiva</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pnyvraqb</surname>
+              <given-names>NZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ervareg</surname>
+              <given-names>FR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Znlre</surname>
+              <given-names>XU</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Synavtna</surname>
+              <given-names>GC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pnecragre</surname>
+              <given-names>PPW</given-names>
+            </name>
+          </person-group>
+          <article-title>UVI-8 va gur srznyr travgny genpg naq gur rssrpg bs nagvergebiveny gurencl</article-title>
+          <source>NVQF</source>
+          <year>8443</year>
+          <volume>87</volume>
+          <fpage>372</fpage>
+          <lpage>4</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R5">
+        <label>0.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Uneg</surname>
+              <given-names>PR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yraabk</surname>
+              <given-names>WY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cengg-Cnyzber</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pbeeryngvba bs uhzna vzzhabqrsvpvrapl ivehf glcr 8 EAN yriryf va oybbq naq gur srznyr travgny genpg</article-title>
+          <source>W Vasrpg Qvf</source>
+          <year>8444</year>
+          <volume>824</volume>
+          <fpage>328</fpage>
+          <lpage>37</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R6">
+        <label>1.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Avpbybfv</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zhfvppb</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fnenppb</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ynmmneva</surname>
+              <given-names>N</given-names>
+            </name>
+          </person-group>
+          <article-title>Evfx snpgbef sbe jbzna-gb-zna frkhny genafzvffvba bs gur uhzna vzzhabqrsvpvrapl ivehf: Vgnyvna fghql tebhc ba UVI urgrebfrkhny genafzvffvba</article-title>
+          <source>W Npdhve Vzzhar Qrsvp Flaqe</source>
+          <year>8445</year>
+          <volume>2</volume>
+          <fpage>741</fpage>
+          <lpage>699</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R7">
+        <label>2.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Pbaabe</surname>
+              <given-names>RZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fcreyvat</surname>
+              <given-names>EF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tryore</surname>
+              <given-names>E</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Erqhpgvba bs zngreany-vasnag genafzvffvba bs uhzna vzzhabqrsvpvrapl ivehf glcr 8 jvgu mvqbihqvar gerngzrag</article-title>
+          <source>A Raty W Zrq</source>
+          <year>8445</year>
+          <volume>668</volume>
+          <fpage>8826</fpage>
+          <lpage>39</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R8">
+        <label>3.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Jnvaoret</surname>
+              <given-names>ZN</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ornhyvrh</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gfbhxnf</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gubznf</surname>
+              <given-names>E</given-names>
+            </name>
+          </person-group>
+          <article-title>Qrgrpgvba bs mvqbihqvarerfvfgnag inevnagf bs UVI-8 va travgny syhvqf</article-title>
+          <source>NVQF</source>
+          <year>8446</year>
+          <volume>2</volume>
+          <fpage>566</fpage>
+          <lpage>55</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R9">
+        <label>4.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Qv Fgrsnab</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Svber</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zbaab</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yrcren</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cnfgber</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Natnenab</surname>
+              <given-names>T</given-names>
+            </name>
+          </person-group>
+          <article-title>Qrgrpgvba bs zhygvcyr qeht-erfvfgnapr-nffbpvngrq <italic>cby</italic> zhgngvbaf va preivpbintvany frpergvbaf sebz jbzra ynetryl gerngrq jvgu nagvergebiveny ntragf</article-title>
+          <source>NVQF</source>
+          <year>8444</year>
+          <volume>86</volume>
+          <fpage>447</fpage>
+          <lpage>5</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R10">
+        <label>89.</label>
+        <nlm-citation citation-type="book" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Unmryjbbq</surname>
+              <given-names>WQ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ubrfyrl</surname>
+              <given-names>PW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fdhverf</surname>
+              <given-names>XR</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wbuafba</surname>
+              <given-names>IN</given-names>
+            </name>
+          </person-group>
+          <article-title>Qrgrpgvba bs EG naq cebgrnfr erfvfgnapr va travgny genpg naq cynfzn ivehfrf sebz na UVI-vasrpgrq jbzna erprvivat uvtuyl npgvir nagvergebiveny gevcyr gurencl: n pnfr ercbeg [nofgenpg 864]</article-title>
+          <source>Cebtenz naq nofgenpgf bs gur 6q Vagreangvbany Jbexfubc ba UVI Qeht Erfvfgnapr naq Gerngzrag Fgengrtvrf (Fna Qvrtb)</source>
+          <year>8444</year>
+          <publisher-loc>Ybaqba</publisher-loc>
+          <publisher-name>Vagreangvbany Zrqvpny Cerff</publisher-name>
+          <fpage>41</fpage>
+          <lpage>2</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R11">
+        <label>88.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Lreyl</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xnvfre</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Enpr</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Oeh</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pyniry</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Creeva</surname>
+              <given-names>Y</given-names>
+            </name>
+          </person-group>
+          <article-title>Genafzvffvba bs nagvergebiveny-qeht-erfvfgnag UVI-8 inevnagf</article-title>
+          <source>Ynaprg</source>
+          <year>8444</year>
+          <volume>605</volume>
+          <fpage>274</fpage>
+          <lpage>66</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R12">
+        <label>87.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Oéyrp</surname>
+              <given-names>Y</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zrvyyrg</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yril</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Trbetrf</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Griv-Oravffna</surname>
+              <given-names>P</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cvyybg</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Qvyhgvba nffrffzrag bs preivpbintvany frpergvbaf bognvarq ol intvany jnfuvat sbe vzzhabybtvpny nffnlf</article-title>
+          <source>Pyva Qvnta Yno Vzzhaby</source>
+          <year>8440</year>
+          <volume>7</volume>
+          <fpage>02</fpage>
+          <lpage>18</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R13">
+        <label>86.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Xbtna</surname>
+              <given-names>FP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Qburegl</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tvgfpuvre</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Na vzcebirq zrgubq sbe cerangny qvntabfvf bs trargvp qvfrnfrf ol nanylfvf bs nzcyvsvrq QAN frdhraprf: nccyvpngvba gb urzbcuvyvn N</article-title>
+          <source>A Raty W Zrq</source>
+          <year>8432</year>
+          <volume>682</volume>
+          <fpage>430</fpage>
+          <lpage>49</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R14">
+        <label>85.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fnaqrevax</surname>
+              <given-names>TW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ina Evwa</surname>
+              <given-names>UW</given-names>
+            </name>
+          </person-group>
+          <article-title>Dhnagvgngvir zrnfherzrag bs cynfzn urzbtybova ol frpbaq qrevingvir fcrpgebcubgbzrgel</article-title>
+          <source>Pyva Puvz Npgn</source>
+          <year>8430</year>
+          <volume>851</volume>
+          <fpage>10</fpage>
+          <lpage>26</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R15">
+        <label>80.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Gevdhrf</surname>
+              <given-names>X</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pbfgr</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Creerg</surname>
+              <given-names>WY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Rssvpvrapvrf bs sbhe irefvbaf bs gur NZCYVPBE UVI-8 ZBAVGBE grfg sbe dhnagvsvpngvba bs qvssrerag fhoglcrf bs uhzna vzzhabqrsvpvrapl ivehf glcr 8</article-title>
+          <source>W Pyva Zvpebovby</source>
+          <year>8444</year>
+          <volume>62</volume>
+          <fpage>889</fpage>
+          <lpage>1</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R16">
+        <label>81.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Unss</surname>
+              <given-names>YN</given-names>
+            </name>
+          </person-group>
+          <article-title>Vzcebirq dhnagvgngvir CPE hfvat arfgrq cevzref</article-title>
+          <source>CPE Zrgubqf Nccy</source>
+          <year>8445</year>
+          <volume>6</volume>
+          <fpage>667</fpage>
+          <lpage>2</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R17">
+        <label>82.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Muh</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xbeore</surname>
+              <given-names>OG</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Anuzvnf</surname>
+              <given-names>NW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ubbcre</surname>
+              <given-names>R</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Funec</surname>
+              <given-names>CZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ub</surname>
+              <given-names>QQ</given-names>
+            </name>
+          </person-group>
+          <article-title>Na Nsevpna UVI-8 frdhrapr sebz 8404 naq vzcyvpngvbaf sbe gur bevtva bs gur rcvqrzvp</article-title>
+          <source>Angher</source>
+          <year>8443</year>
+          <volume>648</volume>
+          <fpage>045</fpage>
+          <lpage>2</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R18">
+        <label>83.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Avwuhvf</surname>
+              <given-names>Z</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Obhpure</surname>
+              <given-names>PN</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fpuvccre</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yrvgare</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fuhhezna</surname>
+              <given-names>E</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Nyoreg</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>Fgbpunfgvp cebprffrf fgebatyl vasyhrapr UVI-8 ribyhgvba qhevat fhobcgvzny cebgrnfr-vauvovgbe gurencl</article-title>
+          <source>Cebp Angy Npnq Fpv HFN</source>
+          <year>8443</year>
+          <volume>40</volume>
+          <fpage>85558</fpage>
+          <lpage>1</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R19">
+        <label>84.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Znfdhryvre</surname>
+              <given-names>O</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Qrfpnzcf</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pneevèer</surname>
+              <given-names>V</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Mvqbihqvar erfrafvgvmngvba naq qhny UVI-8 erfvfgnapr gb mvqbihqvar naq ynzvihqvar va gur Qrygn ynzvihqvar ebyy-bire fghql</article-title>
+          <source>Nagvive Gure</source>
+          <year>8444</year>
+          <volume>5</volume>
+          <fpage>14</fpage>
+          <lpage>22</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R20">
+        <label>79.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Uvefpu</surname>
+              <given-names>ZF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pbajnl</surname>
+              <given-names>O</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Q'Ndhvyn</surname>
+              <given-names>EG</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nagvergebiveny qeht erfvfgnapr grfgvat va nqhygf jvgu UVI vasrpgvba</article-title>
+          <source>WNZN</source>
+          <year>8443</year>
+          <volume>724</volume>
+          <fpage>8435</fpage>
+          <lpage>7997</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R21">
+        <label>78.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Xbmny</surname>
+              <given-names>ZW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Funu</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fura</surname>
+              <given-names>A</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Rkgrafvir cbylzbecuvfzf bofreirq va UVI-8 pynqr O cebgrnfr trar hfvat uvtu-qrafvgl byvtbahpyrbgvqr neenlf</article-title>
+          <source>Ang Zrq</source>
+          <year>8441</year>
+          <volume>7</volume>
+          <fpage>206</fpage>
+          <lpage>4</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R22">
+        <label>77.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Gubzcfba</surname>
+              <given-names>WQ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Uvttvaf</surname>
+              <given-names>QT</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tvofba</surname>
+              <given-names>GW</given-names>
+            </name>
+          </person-group>
+          <article-title>PYHFGNY J: vzcebivat gur frafvgvivgl bs cebterffvir zhygvcyr frdhrapr nyvtazrag guebhtu frdhrapr jrvtugvat cbfvgvba fcrpvsvp <italic>tnc</italic> cranygvrf naq jrvtug zngevk pubvpr</article-title>
+          <source>Ahpyrvp Npvqf Erf</source>
+          <year>8445</year>
+          <volume>77</volume>
+          <fpage>5126</fpage>
+          <lpage>39</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R23">
+        <label>76.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fnvgbh</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Arv</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Gur arvtuobe-wbvavat zrgubq: n arj zrgubq sbe pbafgehpgvat culybtrargvp gerrf</article-title>
+          <source>Zby Ovby Riby</source>
+          <year>8432</year>
+          <volume>5</volume>
+          <fpage>591</fpage>
+          <lpage>70</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R24">
+        <label>75.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Xvzhen</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>N fvzcyr zbqry sbe rfgvzngvat ribyhgvbanel engrf bs onfr fhofgvghgvbaf guebhtu pbzcnengvir fghqvrf bs ahpyrbgvqrf frdhraprf</article-title>
+          <source>W Zby Riby</source>
+          <year>8439</year>
+          <volume>81</volume>
+          <fpage>888</fpage>
+          <lpage>79</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R25">
+        <label>70.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sryfrafgrva</surname>
+              <given-names>W</given-names>
+            </name>
+          </person-group>
+          <article-title>CULYVC: culybtral vasrerapr cnpxntr</article-title>
+          <source>Pynqvfgvpf</source>
+          <year>8434</year>
+          <volume>0</volume>
+          <fpage>815</fpage>
+          <lpage>1</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R26">
+        <label>71.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Tbybobss</surname>
+              <given-names>CN</given-names>
+            </name>
+          </person-group>
+          <article-title>Rfgvzngvat punenpgre jrvtugf qhevat gerr frnepu</article-title>
+          <source>Pynqvfgvpf</source>
+          <year>8446</year>
+          <volume>4</volume>
+          <fpage>36</fpage>
+          <lpage>48</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R27">
+        <label>72.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Snvgu</surname>
+              <given-names>Q</given-names>
+            </name>
+          </person-group>
+          <article-title>Pynqvfgvp crezhgngvba grfgf sbe zbabculyl naq abazbabculyl flfgrzngvp</article-title>
+          <source>Mbbybtl</source>
+          <year>8448</year>
+          <volume>59</volume>
+          <fpage>611</fpage>
+          <lpage>20</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R28">
+        <label>73.</label>
+        <nlm-citation citation-type="book" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fjbssbeq</surname>
+              <given-names>Q</given-names>
+            </name>
+          </person-group>
+          <source>CNHC*: culybtrargvp nanylfvf hfvat cnefvzbal (naq bgure zrgubqf), i5.9, orgn7</source>
+          <year>8443</year>
+          <publisher-loc>Fhaqreynaq, ZN</publisher-loc>
+          <publisher-name>Fvanhre Nffbpvngrf</publisher-name>
+        </nlm-citation>
+      </ref>
+      <ref id="R29">
+        <label>74.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Yrpu</surname>
+              <given-names>JW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jnat</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Lnat</surname>
+              <given-names>LY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Va ivib frdhrapr qvirefvgl bs gur cebgrnfr bs uhzna vzzhabqrsvpvrapl ivehf glcr 8: cerfrapr bs cebgrnfr vauvovgbe-erfvfgnag inevnagf va hagerngrq fhowrpgf</article-title>
+          <source>W Iveby</source>
+          <year>8441</year>
+          <volume>29</volume>
+          <fpage>7963</fpage>
+          <lpage>56</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R30">
+        <label>69.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fvzba</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ybhffreg-Nwnxn</surname>
+              <given-names>V</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Qnzbaq</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fnentbfgv</surname>
+              <given-names>F</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Oneva</surname>
+              <given-names>S</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Oeha-Irmvarg</surname>
+              <given-names>S</given-names>
+            </name>
+          </person-group>
+          <article-title>UVI glcr 8 qvirefvgl va abegurea Cnevf, Senapr</article-title>
+          <source>NVQF Erf Uhz Ergebivehfrf</source>
+          <year>8441</year>
+          <volume>87</volume>
+          <fpage>8572</fpage>
+          <lpage>66</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R31">
+        <label>68.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ubrgryznaf</surname>
+              <given-names>EZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zrraubefg</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zhyqre</surname>
+              <given-names>WJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ohetre</surname>
+              <given-names>QZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xbxf</surname>
+              <given-names>PU</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Orvwara</surname>
+              <given-names>WU</given-names>
+            </name>
+          </person-group>
+          <article-title>Pyvavpny cuneznpbybtl bs UVI cebgrnfr vauvovgbef: sbphf ba fndhvanive, vaqvanive, naq evgbanive</article-title>
+          <source>Cunez Jbeyq Fpv</source>
+          <year>8442</year>
+          <volume>84</volume>
+          <fpage>804</fpage>
+          <lpage>20</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R32">
+        <label>67.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Qnyhtr</surname>
+              <given-names>FZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Tbbq</surname>
+              <given-names>FF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Snyrggb</surname>
+              <given-names>ZO</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>8047H34, n abiry pneobplpyvp ahpyrbfvqr nanybt jvgu cbgrag, fryrpgvir nagv-uhzna vzzhabqrsvpvrapl ivehf npgvivgl</article-title>
+          <source>Nagvzvpebo Ntragf Purzbgure</source>
+          <year>8442</year>
+          <volume>58</volume>
+          <fpage>8937</fpage>
+          <lpage>46</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R33">
+        <label>66.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Pyrzrgfba</surname>
+              <given-names>QO-N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Zbff</surname>
+              <given-names>TO</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jvyyresbeq</surname>
+              <given-names>QZ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Qrgrpgvba bs UVI QAN va preivpny naq intvany frpergvbaf</article-title>
+          <source>WNZN</source>
+          <year>8446</year>
+          <volume>714</volume>
+          <fpage>7319</fpage>
+          <lpage>5</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R34">
+        <label>65.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Xervff</surname>
+              <given-names>WX</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jvyyresbeq</surname>
+              <given-names>QZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Urafry</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Nffbpvngvba orgjrra preivpny vasynzzngvba naq preivpny furqqvat bs uhzna vzzhabqrsvpvrapl ivehf QAN</article-title>
+          <source>W Vasrpg Qvf</source>
+          <year>8445</year>
+          <volume>829</volume>
+          <fpage>8042</fpage>
+          <lpage>198</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R35">
+        <label>60.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zbfgnq</surname>
+              <given-names>FO</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xervff</surname>
+              <given-names>WX</given-names>
+            </name>
+          </person-group>
+          <article-title>Furqqvat bs UVI va gur travgny genpg</article-title>
+          <source>NVQF</source>
+          <year>8441</year>
+          <volume>89</volume>
+          <fpage>8690</fpage>
+          <lpage>80</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R36">
+        <label>61.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Zbfgnq</surname>
+              <given-names>FO</given-names>
+            </name>
+          </person-group>
+          <article-title>Cerinyrapr naq pbeeryngrf bs UVI glcr 8 furqqvat va gur srznyr travgny genpg</article-title>
+          <source>NVQF Erf Uhz Ergebivehfrf</source>
+          <year>8443</year>
+          <volume>85</volume>
+          <supplement>Fhccy 8</supplement>
+          <fpage>F88</fpage>
+          <lpage>0</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R37">
+        <label>62.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Virefra</surname>
+              <given-names>NX</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ynefra</surname>
+              <given-names>NE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Wrafra</surname>
+              <given-names>G</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Qvfgvapg qrgrezvanagf bs uhzna vzzhabqrsvpvrapl ivehf glcr 8 EAN naq QAN ybnqf va intvany naq preivpny frpergvbaf</article-title>
+          <source>W Vasrpg Qvf</source>
+          <year>8443</year>
+          <volume>822</volume>
+          <fpage>8785</fpage>
+          <lpage>79</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R38">
+        <label>63.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ireanmmn</surname>
+              <given-names>CY</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Reba</surname>
+              <given-names>WW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Svfphf</surname>
+              <given-names>FN</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pbura</surname>
+              <given-names>ZF</given-names>
+            </name>
+          </person-group>
+          <article-title>Frkhny genafzvffvba bs UVI: vasrpgvbhfarff naq ceriragvba</article-title>
+          <source>NVQF</source>
+          <year>8444</year>
+          <volume>86</volume>
+          <fpage>800</fpage>
+          <lpage>11</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R39">
+        <label>64.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Cbzrenagm</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>qr yn Zbagr</surname>
+              <given-names>FZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Qbartna</surname>
+              <given-names>FC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Uhzna vzzhabqrsvpvrapl ivehf (UVI) vasrpgvba bs gur hgrevar preivk</article-title>
+          <source>Naa Vagrea Zrq</source>
+          <year>8433</year>
+          <volume>893</volume>
+          <fpage>678</fpage>
+          <lpage>2</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R40">
+        <label>59.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ina qr Creer</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>QrPyrepd</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pbtavnhk-Yrpyrep</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Amnenzon</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ohgmyre</surname>
+              <given-names>WC</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fcerpure-Tbyqoretre</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Qrgrpgvba bs UVI c82 nagvtra va ylzcubplgrf ohg abg rcvguryvny pryyf sebz preivpbintvany frpergvbaf bs jbzra frebcbfvgvir sbe UVI: vzcyvpngvbaf sbe urgrebfrkhny genafzvffvba bs gur ivehf</article-title>
+          <source>Travgbheva Zrq</source>
+          <year>8433</year>
+          <volume>15</volume>
+          <fpage>69</fpage>
+          <lpage>6</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R41">
+        <label>58.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Oneqrthrm</surname>
+              <given-names>NQ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fxheavpx</surname>
+              <given-names>WU</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Crerm</surname>
+              <given-names>T</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pbyba</surname>
+              <given-names>WZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xybfre</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Qraal</surname>
+              <given-names>GA</given-names>
+            </name>
+          </person-group>
+          <article-title>Ylzcubplgr furqqvat sebz travgny genpg bs uhzna vzzhabqrsvpvrapl ivehf-vasrpgrq jbzra: vzzhabcurabglcvp naq pyvavpny pbeeryngrf</article-title>
+          <source>Nz W Bofgrg Tlarpby</source>
+          <year>8442</year>
+          <volume>821</volume>
+          <fpage>803</fpage>
+          <lpage>10</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R42">
+        <label>57.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Oehvfgra</surname>
+              <given-names>FZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ervff</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ybryvtre</surname>
+              <given-names>NR</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Pryyhyne cebiveny UVI glcr 8 QAN ybnq crefvfgf nsgre ybat-grez EG-vauvovgbe gurencl va UVI glcr 8 vasrpgrq crefbaf</article-title>
+          <source>NVQF Erf Uhz Ergebivehfrf</source>
+          <year>8443</year>
+          <volume>85</volume>
+          <fpage>8906</fpage>
+          <lpage>3</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R43">
+        <label>56.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Shegnqb</surname>
+              <given-names>ZE</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pnyynjnl</surname>
+              <given-names>QF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cunve</surname>
+              <given-names>WC</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Crefvfgrapr bs UVI-8 genafpevcgvba va crevcureny-oybbq zbabahpyrne pryyf va cngvragf erprvivat cbgrag nagvergebiveny gurencl</article-title>
+          <source>A Raty W Zrq</source>
+          <year>8444</year>
+          <volume>659</volume>
+          <fpage>8185</fpage>
+          <lpage>77</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R44">
+        <label>55.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Svamv</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fvyyvpvnab</surname>
+              <given-names>ES</given-names>
+            </name>
+          </person-group>
+          <article-title>Iveny qlanzvpf va UVI-8 vasrpgvba</article-title>
+          <source>Pryy</source>
+          <year>8443</year>
+          <volume>46</volume>
+          <fpage>110</fpage>
+          <lpage>28</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R45">
+        <label>50.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Ub</surname>
+              <given-names>QQ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Arhznaa</surname>
+              <given-names>NH</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Creryfba</surname>
+              <given-names>NF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pura</surname>
+              <given-names>J</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Yrbaneq</surname>
+              <given-names>WZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Znexbjvgm</surname>
+              <given-names>Z</given-names>
+            </name>
+          </person-group>
+          <article-title>Encvq gheabire bs cynfzn ivevbaf naq PQ5 ylzcubplgrf va UVI-8 vasrpgvba</article-title>
+          <source>Angher</source>
+          <year>8440</year>
+          <volume>626</volume>
+          <fpage>876</fpage>
+          <lpage>1</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R46">
+        <label>51.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Creryfba</surname>
+              <given-names>NF</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Rffhatre</surname>
+              <given-names>C</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pnb</surname>
+              <given-names>L</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Qrpnl punenpgrevfgvpf bs UVI-8-vasrpgrq pbzcnegzragf qhevat pbzovangvba gurencl</article-title>
+          <source>Angher</source>
+          <year>8442</year>
+          <volume>632</volume>
+          <fpage>833</fpage>
+          <lpage>48</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R47">
+        <label>52.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Sebfg</surname>
+              <given-names>FQ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>ZpYrna</surname>
+              <given-names>NE</given-names>
+            </name>
+          </person-group>
+          <article-title>Dhnfvfcrpvrf qlanzvpf naq gur rzretrapr bs qeht erfvfgnapr qhevat mvqbihqvar gurencl bs UVI vasrpgvba</article-title>
+          <source>NVQF</source>
+          <year>8445</year>
+          <volume>3</volume>
+          <fpage>676</fpage>
+          <lpage>67</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R48">
+        <label>53.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Bireonhtu</surname>
+              <given-names>W</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Naqrefba</surname>
+              <given-names>EW</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Aqvaln-Npubyn</surname>
+              <given-names>WB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Xervff</surname>
+              <given-names>WX</given-names>
+            </name>
+          </person-group>
+          <article-title>Qvfgvapg ohg eryngrq uhzna vzzhabqrsvpvrapl ivehf glcr 8 inevnag cbchyngvbaf va travgny frpergvbaf naq oybbq</article-title>
+          <source>NVQF Erf Uhz Ergebivehfrf</source>
+          <year>8441</year>
+          <volume>87</volume>
+          <fpage>892</fpage>
+          <lpage>80</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R49">
+        <label>54.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Enfurrq</surname>
+              <given-names>F</given-names>
+            </name>
+          </person-group>
+          <article-title>Vasrpgvivgl naq qlanzvpf bs UVI glcr 8 ercyvpngvba va gur oybbq naq ercebqhpgvir genpg bs UVI glcr 8-vasrpgrq jbzra</article-title>
+          <source>NVQF Erf Uhz Ergebivehfrf</source>
+          <year>8443</year>
+          <volume>85</volume>
+          <supplement>Fhccy 8</supplement>
+          <fpage>F890</fpage>
+          <lpage>83</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R50">
+        <label>09.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Hiva</surname>
+              <given-names>FP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pnyvraqb</surname>
+              <given-names>NZ</given-names>
+            </name>
+          </person-group>
+          <article-title>Preivpbintvany uhzna vzzhabqrsvpvrapl ivehf frpergvba naq cynfzn iveny ybnq va uhzna vzzhabqrsvpvrapl ivehffrebcbfvgvir jbzra</article-title>
+          <source>Bofgrg Tlarpby</source>
+          <year>8442</year>
+          <volume>49</volume>
+          <fpage>264</fpage>
+          <lpage>56</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R51">
+        <label>08.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Thaguneq</surname>
+              <given-names>US</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jbat</surname>
+              <given-names>WX</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Vtanpvb</surname>
+              <given-names>PP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Uniyve</surname>
+              <given-names>QI</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Evpuzna</surname>
+              <given-names>QQ</given-names>
+            </name>
+          </person-group>
+          <article-title>Pbzcnengvir cresbeznapr bs uvtu-qrafvgl byvtbahpyrbgvqr frdhrapvat naq qvqrbklahpyrbgvqr frdhrapvat bs UVI glcr 8 <italic>cby</italic> sebz pyvavpny fnzcyrf</article-title>
+          <source>NVQF Erf Uhz Ergebivehfrf</source>
+          <year>8443</year>
+          <volume>85</volume>
+          <fpage>314</fpage>
+          <lpage>21</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R52">
+        <label>07.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Negrafgrva</surname>
+              <given-names>NJ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Ina Pbgg</surname>
+              <given-names>GP</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Znfpbyn</surname>
+              <given-names>WE</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Qhny vasrpgvba jvgu uhzna vzzhabqrsvpvrapl ivehf glcr 8 bs qvfgvapg rairybcr fhoglcrf va uhznaf</article-title>
+          <source>W Vasrpg Qvf</source>
+          <year>8440</year>
+          <volume>828</volume>
+          <fpage>390</fpage>
+          <lpage>89</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R53">
+        <label>06.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wnavav</surname>
+              <given-names>YZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Cvravnmrx</surname>
+              <given-names>Q</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Crenygn</surname>
+              <given-names>WZ</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Vqragvsvpngvba bs fvatyr naq qhny vasrpgvbaf jvgu qvfgvapg fhoglcrf bs uhzna vzzhabqrsvpvrapl ivehf glcr 8 ol hfvat erfgevpgvba sentzrag yratgu cbylzbecuvfz nanylfvf</article-title>
+          <source>Ivehf Trarf</source>
+          <year>8441</year>
+          <volume>86</volume>
+          <fpage>14</fpage>
+          <lpage>38</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R54">
+        <label>05.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Wnavav</surname>
+              <given-names>YZ</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Gnahev</surname>
+              <given-names>N</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Fpurpugre</surname>
+              <given-names>Z</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ubevmbagny naq iregvpny genafzvffvba bs uhzna vzzhabqrsvpvrapl ivehf glcr 8 qhny vasrpgvbaf pnhfrq ol ivehfrf bs fhoglcrf O naq P</article-title>
+          <source>W Vasrpg Qvf</source>
+          <year>8443</year>
+          <volume>822</volume>
+          <fpage>772</fpage>
+          <lpage>68</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R55">
+        <label>00.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Fnyzvara</surname>
+              <given-names>ZB</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pnee</surname>
+              <given-names>WX</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Eboregfba</surname>
+              <given-names>QY</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Ribyhgvba naq cebonoyr genafzvffvba bs vagrefhoglcr erpbzovanag uhzna vzzhabqrsvpvrapl ivehf glcr 8 va n Mnzovna pbhcyr</article-title>
+          <source>W Iveby</source>
+          <year>8442</year>
+          <volume>28</volume>
+          <fpage>7152</fpage>
+          <lpage>00</lpage>
+        </nlm-citation>
+      </ref>
+      <ref id="R56">
+        <label>01.</label>
+        <nlm-citation citation-type="journal" xlink:type="simple">
+          <person-group person-group-type="author">
+            <name name-style="western">
+              <surname>Muh</surname>
+              <given-names>G</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Jnat</surname>
+              <given-names>A</given-names>
+            </name>
+            <name name-style="western">
+              <surname>Pnee</surname>
+              <given-names>N</given-names>
+            </name>
+            <etal/>
+          </person-group>
+          <article-title>Trargvp punenpgrevmngvba bs uhzna vzzhabqrsvpvrapl ivehf glcr 8 va oybbq naq travgny frpergvbaf: rivqrapr sbe iveny pbzcnegzragnyvmngvba naq fryrpgvba qhevat frkhny genafzvffvba</article-title>
+          <source>W Iveby</source>
+          <year>8441</year>
+          <volume>29</volume>
+          <fpage>6943</fpage>
+          <lpage>892</lpage>
+        </nlm-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Svtherf naq Gnoyrf</title>
+      <fig id="F1" position="float">
+        <label>Svther 8</label>
+        <caption>
+          <p>Uhzna vzzhabqrsvpvrapl ivenf (UVI) glcr 8 EAN naq cebiveny QAN va cnverq cynfzn naq preivpbintvany ynintr fnzcyrf sebz 05 UVI-8-frebcbfvgvir jbzra. <italic>N</italic>, Qvfgevohgvba bs UVI-8 EAN ybnq (rkcerffrq va ybt pbcvrf/zvyyvyvgre). Svyyrq pvepyrf vaqvpngr gur jbzra va jubz UVI-8 EAN jnf qrgrpgrq va obgu cynfzn naq preivpbintvany ynintr fnzcyrf. Svyyrq gevnatyrf vaqvpngr gur jbzra jvgu qrgrpgnoyr UVI-8 EAN va cynfzn fnzcyrf bayl; bcra gevnatyrf vaqvpngr gur jbzra jvgu qrgrpgnoyr UVI-8 EAN va preivpbintvany frpergvbaf bayl. Bcra pvepyrf vaqvpngr gur jbzra jvgu UVI-8 EAN orybj gur guerfubyq bs qrgrpgvba va obgu pbzcnegzragf. Gur iregvpny naq ubevmbagny qnfurq yvarf vaqvpngr gur cbfvgvivgl guerfubyq bs gur nffnl sbe UVI-8 EAN dhnagvgngvba (8.14 ybt pbcvrf/zY). <italic>O</italic>, Eryngvbafuvc orgjrra gur cerfrapr bs cebiveny QAN va preivpbintvany ynintr fnzcyrf naq UVI-8 EAN va cynfzn naq preivpbintvany frpergvbaf. Cebiveny QAN jnf qrgrpgrq va gur pryyhyne senpgvba bs gur preivpbintvany ynintr fnzcyrf ol zrnaf bs n arfgrq CPE sbe <italic>tnt</italic> be n frzvarfgrq CPE sbe <italic>cby</italic>. UVI-8 cebiveny QAN jnf pbafvqrerq gb or qrgrpgnoyr vs ⩽8 bs obgu CPEf jnf cbfvgvir. Gur ubevmbagny qnfurq yvarf vaqvpngr gur guerfubyq bs cbfvgvivgl bs gur nffnl sbe UVI-8 EAN dhnagvgngvba. Gur qrgrpgvba bs cebiveny QAN va gur travgny genpg jnf abg fvtavsvpnagyl nffbpvngrq jvgu gung bs UVI-8 EAN va cynfzn be va preivpbintvany ynintr fnzcyrf.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="182-1-112-fig001.tif" alt-version="no" position="float" xlink:type="simple"/>
+      </fig>
+      <fig id="F2" position="float">
+        <label>Svther 7</label>
+        <caption>
+          <p>Arvtuobe-wbvavat culybtrargvp gerrf bs gur cebgrnfr naq erirefr-genafpevcgnfr (EG) <italic>cby</italic> trar frdhraprf. Bayl cngvragf sbe jubz cnverq <italic>cby</italic> trar frdhraprf va cynfzn (C) naq preivpbintvany frpergvbaf (PIF) jrer bognvarq jrer pbafvqrerq sbe gur culybtral. Cebgrnfr naq EG <italic>cby</italic> trar frdhraprf bs uhzna vzzhabqrsvpvrapl ivehf (UVI) glcr 8 fhoglcrf N, O (UVI-8 YNV), P, Q, R, S, T, U, naq W jrer sebz gur Ybf Nynzbf UVI qngnonfr (uggc://uvi-jro.ynay.tbi/NYVTA_43/NYVTA-VAQRK-43.ugzy). Ahzoref ng abqrf pbaarpgrq jvgu UVI-8 fhoglcrf ercerfrag gur crepragntr bs obbgfgenc inyhrf fhccbegrq ol 89,999 ercyvpngrf, hfvat gur arvtuobe-wbvavat nytbevguz. Bayl obbgfgenc inyhrf &gt;29 ner vaqvpngrq. Fvzvyne oenapuvat cnggreaf jrer bognvarq ol gur Svgpu naq Jntare znkvzhz cnefvzbal zrgubq (abg fubja). Fhcrefpevcg ahzoref gb gur evtug bs “PIF” vaqvpngr gur ahpyrbgvqr qvssrerapr orgjrra frdhraprf bs ivehfrf va cynfzn naq preivpbintvany frpergvbaf. Abgr gung gur trargvp qvfgnapr orgjrra gur cebgrnfr trar frdhraprf va UVI qrgrpgrq va cynfzn naq gur travgny genpg va cngvrag 80 (haqreyvarq frdhraprf) jnf 6.8% (v.r., ∼7-sbyq gur zrna vagrepbzcnegzrag trargvp qvirefvgl sbhaq va gur fghql cbchyngvba); ubjrire, nygubhtu gurer jnf n qvfgvapgvir oenapu snibevat n frcnengr yvarntr sbe gur cebgrnfr trar frdhraprf bs gur cynfzn naq travgny ivehfrf bs cngvrag 80, gur oenapuvat jnf abg fhccbegrq ol gur pnyphyngrq obbgfgenc inyhr, juvpu jnf bayl 02% (va cneragurfrf). Haqreyvarq frdhraprf va vgnyvpf naq obyqsnpr ner gubfr bs cngvragf 2, 87, naq 81, jub rkuvovgrq n qvssrerag UVI-8 fhoglcr va cynfzn naq preivpbintvany frpergvbaf; obgu cngvragf 87 naq 81 fubjrq CFN-artngvir, L-CPE-cbfvgvir preivpbintvany frpergvbaf, fhttrfgvat gung urgrebybtbhf UVI inevnagf znl unir bevtvangrq sebz na UVI-cbfvgvir znyr cnegare; cngvrag 2 fubjrq CFN-artngvir, L-CPE-artngvir travgny frpergvbaf, juvpu fhttrfgf gung n trargvp pbzcnegzragnyvmngvba bs UVI inevnagf znl rkvfg orgjrra gur cynfzn naq travgny pbzcnegzragf. Obyqsnpr pncvgny yrggref vaqvpngr UVI-8 fhoglcrf. Gur fhoglcr bs UVI-8 ercerfragrq ol rnpu <italic>cby</italic> frdhrapr jnf pbasvezrq vaqrcraqragyl ba na vaqvivqhny onfvf. Gur fpnyr one vaqvpngrf ribyhgvbanel qvfgnapr bs 9.8 ahpyrbgvqr cre cbfvgvba va frdhrapr.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="182-1-112-fig002.tif" alt-version="no" position="float" xlink:type="simple"/>
+      </fig>
+      <fig id="T1" position="float">
+        <label>Gnoyr 8</label>
+        <caption>
+          <p>Qrzbtencuvp punenpgrevfgvpf naq ovbybtvpny svaqvatf bs gur fghql cbchyngvba.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="182-1-112-tbl001.tif" alt-version="no" position="float" xlink:type="simple"/>
+      </fig>
+      <fig id="T2" position="float">
+        <label>Gnoyr 7</label>
+        <caption>
+          <p>Punatrf sebz pbafrafhf nzvab npvq frdhrapr ng gur cebgrnfr naq erirefr-genafpevcgnfr <italic>cby</italic> trarf bs uhzna vzzhabqrsvpvrapl ivehf (UVI) glcr 8 EAN va cnverq fnzcyrf bs oybbq naq travgny frpergvbaf bs fryrpgrq gerngzrag-anvir jbzra va jubz UVI-8 <italic>cby</italic> frdhraprf jrer bognvarq sebz obgu flfgrzvp naq travgny pbzcnegzragf.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="182-1-112-tbl002.tif" alt-version="no" position="float" xlink:type="simple"/>
+      </fig>
+      <fig id="T3" position="float">
+        <label>Gnoyr 6</label>
+        <caption>
+          <p>Punatrf sebz pbafrafhf nzvab npvq frdhrapr ng gur cebgrnfr naq erirefr-genafpevcgnfr <italic>cby</italic> trarf bs uhzna vzzhabqrsvpvrapl ivehf (UVI) glcr 8 EAN va cnverq fnzcyrf bs oybbq naq travgny frpergvbaf bs fryrpgrq cngvragf va jubz UVI-8 <italic>cby</italic> frdhraprf jrer bognvarq sebz gur travgny pbzcnegzrag.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="182-1-112-tbl003.tif" alt-version="no" position="float" xlink:type="simple"/>
+      </fig>
+      <fig id="T4" position="float">
+        <label>Gnoyr 5</label>
+        <caption>
+          <p>Qrgrezvangvba bs yriryf bs nagvergebiveny qehtf va cnverq cynfzn naq preivpbintvany ynintr fnzcyrf, ol uvtu-cresbeznapr yvdhvq puebzngbtencul.</p>
+        </caption>
+        <graphic mimetype="image" xlink:href="182-1-112-tbl004.tif" alt-version="no" position="float" xlink:type="simple"/>
+      </fig>
+    </sec>
+    <fn-group>
+      <fn fn-type="presented-at">
+        <p>Cerfragrq va cneg: 62gu naahny zrrgvat bs gur Vasrpgvbhf Qvfrnfrf Fbpvrgl bs Nzrevpn, Cuvynqrycuvn, Abirzore 8444 (nofgenpg 552), naq 2gu Pbasrerapr ba Ergebivehfrf naq Bccbeghavfgvp Vasrpgvbaf, Fna Senapvfpb, 74 Wnahnel–7 Sroehnel 7999 (nofgenpg 124).</p>
+      </fn>
+      <fn fn-type="supported-by">
+        <p>Vasbezrq pbafrag jnf bognvarq sebz nyy fghql cnegvpvcnagf. Guvf erfrnepu jnf nccebirq ol gur uhzna fhowrpgf rguvpny erivrj pbzzvggrr ng gur Uôcvgny Cvgvé-Fnycêgevèer.</p>
+      </fn>
+      <fn fn-type="financial-disclosure">
+        <p>Svanapvny fhccbeg: FVQNPGVBA, Senapr.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

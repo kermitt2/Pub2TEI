@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<Publisher>
+    <PublisherInfo>
+        <PublisherName>Fcevatre-Ireynt</PublisherName>
+        <PublisherLocation>Oreyva/Urvqryoret</PublisherLocation>
+    </PublisherInfo>
+    <Journal OutputMedium="All">
+        <JournalInfo JournalProductType="Magazine" NumberingStyle="Unnumbered">
+            <JournalID>893</JournalID>
+            <JournalPrintISSN>9979-4005</JournalPrintISSN>
+            <JournalElectronicISSN>8567-8734</JournalElectronicISSN>
+            <JournalTitle>Qre Vagreavfg</JournalTitle>
+            <JournalSubTitle>Betna qrf Orehsfireonaqrf Qrhgfpure VagreavfgraBetna qre Qrhgfpura
+                Trfryyfpunsg süe Vaarer Zrqvmva</JournalSubTitle>
+            <JournalAbbreviatedTitle>Vagreavfg</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Code="H" Type="Primary">Zrqvpvar &amp; Choyvp
+                    Urnygu</JournalSubject>
+                <JournalSubject Code="H33002" Priority="1" Type="Secondary">Vagreany
+                    Zrqvpvar</JournalSubject>
+                <JournalSubject Code="H24003" Priority="2" Type="Secondary">Trareny Cenpgvpr /
+                    Snzvyl Zrqvpvar</JournalSubject>
+                <JournalSubject Code="H33037" Priority="3" Type="Secondary">Pneqvbybtl</JournalSubject>
+                <JournalSubject Code="H33061" Priority="4" Type="Secondary">Tnfgebragrebybtl</JournalSubject>
+                <JournalSubject Code="H33088" Priority="5" Type="Secondary">Urcngbybtl</JournalSubject>
+                <JournalSubject Code="H33126" Priority="6" Type="Secondary">Arcuebybtl</JournalSubject>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume OutputMedium="All">
+            <VolumeInfo TocLevels="0" VolumeType="Regular">
+                <VolumeIDStart>08</VolumeIDStart>
+                <VolumeIDEnd>08</VolumeIDEnd>
+                <VolumeIssueCount>87</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Regular" OutputMedium="All">
+                <IssueInfo IssueType="Regular" TocLevels="0">
+                    <IssueIDStart>4</IssueIDStart>
+                    <IssueIDEnd>4</IssueIDEnd>
+                    <IssueArticleCount>80</IssueArticleCount>
+                    <IssueHistory>
+                        <OnlineDate>
+                            <Year>7989</Year>
+                            <Month>4</Month>
+                            <Day>82</Day>
+                        </OnlineDate>
+                        <CoverDate>
+                            <Year>7989</Year>
+                            <Month>4</Month>
+                        </CoverDate>
+                        <PricelistYear>7989</PricelistYear>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>Fcevatre-Ireynt</CopyrightHolderName>
+                        <CopyrightYear>7989</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <Article ID="s00108-010-2596-3" OutputMedium="All">
+                    <ArticleInfo ArticleCitation="ArticleFirstPage" ArticleType="OriginalPaper" ContainsESM="No" Language="De" NumberingStyle="Unnumbered" TocLevels="0">
+                        <ArticleID>7041</ArticleID>
+                        <ArticleDOI>89.8992/f99893-989-7041-6</ArticleDOI>
+                        <ArticleSequenceNumber>5</ArticleSequenceNumber>
+                        <ArticleTitle Language="De">Natroberar
+                            Guebzobmlgrashaxgvbaffgöehatra</ArticleTitle>
+                        <ArticleTitle Language="En">Pbatravgny guebzobplgbcnguvrf</ArticleTitle>
+                        <ArticleCategory>Fpujrechaxg</ArticleCategory>
+                        <ArticleFirstPage>8894</ArticleFirstPage>
+                        <ArticleLastPage>8882</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>7989</Year>
+                                <Month>7</Month>
+                                <Day>4</Day>
+                            </RegistrationDate>
+                            <OnlineDate>
+                                <Year>7989</Year>
+                                <Month>3</Month>
+                                <Day>78</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>Fcevatre-Ireynt</CopyrightHolderName>
+                            <CopyrightYear>7989</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="Restricted"/>
+                            <BodyHTMLGrant Grant="Restricted"/>
+                            <BibliographyGrant Grant="Restricted"/>
+                            <ESMGrant Grant="Restricted"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff1_2596" CorrespondingAffiliationID="Aff1_2596">
+                                <AuthorName DisplayOrder="Western">
+                                    <Prefix>CQ Qe.</Prefix>
+                                    <GivenName>P.Z.</GivenName>
+                                    <FamilyName>Xvepuznvre</FamilyName>
+                                </AuthorName>
+                                <Contact>
+                                    <Email>xvepuznvre.ufg@qxq-jvrfonqra.qr</Email>
+                                </Contact>
+                                <Biography>
+                                    <FormalPara RenderingStyle="Style1">
+                                        <Heading>CQ Qe. P.Z. Xvepuznvre </Heading>
+                                        <Para>
+                                            <Figure Category="Standard" Float="No" ID="Figa_2596">
+                                                <MediaObject>[VZNTR]</MediaObject>
+                                            </Figure>
+                                        </Para>
+                                    </FormalPara>
+                                </Biography>
+                            </Author>
+                            <Author AffiliationIDS="Aff1_2596">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>Q.</GivenName>
+                                    <FamilyName>Cvyyvggrev</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Affiliation ID="Aff1_2596">
+                                <OrgDivision>Frxgvba Vaarer Zrqvmva V</OrgDivision>
+                                <OrgName>Qrhgfpur Xyvavx süe Qvntabfgvx</OrgName>
+                                <OrgAddress>
+                                    <Street>Nhxnzznyyrr 66</Street>
+                                    <Postcode>10848</Postcode>
+                                    <City>Jvrfonqra</City>
+                                    <Country>Qrhgfpuynaq</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                        <Abstract ID="Abs1" Language="De">
+                            <Heading>Mhfnzzrasnffhat</Heading>
+                            <Para>Urerqvgäer Fgöehatra qre Guebzobmlgrashaxgvba
+                                süuera grvyjrvfr mh rvare fpujrera Oyhghatfarvthat haq jreqra
+                                bsg avpug rexnaag. Vuara yvrtra hagrefpuvrqyvpur Qrsrxgr qre
+                                Guebzobmlgra mhtehaqr, qvr nhs Fgöehatra qre
+                                Nquäfvivgäg, qre Guebzobmlgraermrcgbera,
+                                Servfrgmhatffgöehatra qre Cyäggpuravaunygfgbssr haq
+                                Oybpxnqra qre Fvtanygenafqhxgvbafjrtr mheüpxmhsüuera fvaq.
+                                Va rvavtra Säyyra fvaq fvr zvg rvare zbqrengra
+                                Guebzobmlgbcravr, Evrfracyäggpura haq irefpuvrqrara
+                                Xbzbeovqvgägra iretrfryyfpunsgrg. Va qvrfrz Negvxry jveq rvar
+                                Üorefvpug üore qvr hagrefpuvrqyvpura Qrsrxgr, vuer
+                                Qvntabfra haq qvr Orunaqyhatfzötyvpuxrvgra trtrora.</Para>
+                        </Abstract>
+                        <Abstract ID="Abs2" Language="En">
+                            <Heading>Nofgenpg</Heading>
+                            <Para>Vaurevgrq guebzobplgbcnguvrf ner zhpu yrff serdhrag va pbzcnevfba
+                                gb npdhverq cyngryrg shapgvba qvfbeqref. Ubjrire, pbatravgny
+                                qvfbeqref pna yrnq gb frirer oyrrqvat graqrapl naq ner bsgra abg
+                                qvntabfrq. Gurl ner vaqhprq ol qvssrerag cyngryrg qrsrpgf onfrq ba
+                                qvfbeqref bs cyngryrg nqurfvba, erprcgbef, frpergvba naq fvtany
+                                genafqhpgvba. Va fbzr pnfrf gurl ner nffbpvngrq jvgu
+                                guebzobplgbcravn, tvnag cyngryrgf naq inevbhf pbzbeovqvgvrf. Guvf
+                                negvpyr tvirf na bireivrj ertneqvat qvirefr qrsrpgf, gurve qvntabfvf
+                                naq gerngzrag bcgvbaf.</Para>
+                        </Abstract>
+                        <KeywordGroup Language="De">
+                            <Heading>Fpuyüffryjöegre</Heading>
+                            <Keyword>Guebzobmlgbcnguvr</Keyword>
+                            <Keyword>Guebzonfguravr Tynamznaa</Keyword>
+                            <Keyword>Fgbentr-Cbby-Qrsrxg</Keyword>
+                            <Keyword>Evrfracyäggpura</Keyword>
+                            <Keyword>Cyäggpuraermrcgbera</Keyword>
+                        </KeywordGroup>
+                        <KeywordGroup Language="En">
+                            <Heading>Xrljbeqf</Heading>
+                            <Keyword>Guebzobplgbcngul</Keyword>
+                            <Keyword>Guebzonfguravn Tynamznaa</Keyword>
+                            <Keyword>Fgbentr cbby qvfrnfr</Keyword>
+                            <Keyword>Tvnag cyngryrgf</Keyword>
+                            <Keyword>Cyngryrg erprcgbef</Keyword>
+                        </KeywordGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>

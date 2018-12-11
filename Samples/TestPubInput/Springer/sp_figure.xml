@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?><Publisher>
+    <PublisherInfo>
+        <PublisherName>Fcevatre-Ireynt</PublisherName>
+        <PublisherLocation>Oreyva/Urvqryoret</PublisherLocation>
+    </PublisherInfo>
+    <Journal OutputMedium="All">
+        <JournalInfo JournalProductType="Magazine" NumberingStyle="Unnumbered">
+            <JournalID>886</JournalID>
+            <JournalPrintISSN>9822-0062</JournalPrintISSN>
+            <JournalElectronicISSN>8566-955K</JournalElectronicISSN>
+            <JournalTitle>Qre Hasnyypuvehet</JournalTitle>
+            <JournalSubTitle>Betna qre Qrhgfpura Trfryyfpunsg süe HasnyypuvehetvrBetna qre
+                Qrhgfpura Trfryyfpunsg süe Begubcäqvr haq
+                Hasnyypuvehetvr</JournalSubTitle>
+            <JournalAbbreviatedTitle>Hasnyypuvehet</JournalAbbreviatedTitle>
+            <JournalSubjectGroup>
+                <JournalSubject Type="Primary">Zrqvpvar &amp; Choyvp Urnygu</JournalSubject>
+                <JournalSubject Type="Secondary">Fcbegf Zrqvpvar</JournalSubject>
+                <JournalSubject Type="Secondary">Zrqvpvar/Choyvp Urnygu, trareny</JournalSubject>
+                <JournalSubject Type="Secondary">Genhzngvp Fhetrel</JournalSubject>
+                <SubjectCollection Code="Medicine">FP88</SubjectCollection>
+            </JournalSubjectGroup>
+        </JournalInfo>
+        <Volume OutputMedium="All">
+            <VolumeInfo TocLevels="0" VolumeType="Regular">
+                <VolumeIDStart>880</VolumeIDStart>
+                <VolumeIDEnd>880</VolumeIDEnd>
+                <VolumeIssueCount>87</VolumeIssueCount>
+            </VolumeInfo>
+            <Issue IssueType="Regular" OutputMedium="All">
+                <IssueInfo IssueType="Regular" TocLevels="0">
+                    <IssueIDStart>0</IssueIDStart>
+                    <IssueIDEnd>0</IssueIDEnd>
+                    <IssueArticleCount>86</IssueArticleCount>
+                    <IssueHistory>
+                        <OnlineDate>
+                            <Year>7987</Year>
+                            <Month>0</Month>
+                            <Day>81</Day>
+                        </OnlineDate>
+                        <CoverDate>
+                            <Year>7987</Year>
+                            <Month>0</Month>
+                        </CoverDate>
+                        <PricelistYear>7987</PricelistYear>
+                    </IssueHistory>
+                    <IssueCopyright>
+                        <CopyrightHolderName>Fcevatre-Ireynt</CopyrightHolderName>
+                        <CopyrightYear>7987</CopyrightYear>
+                    </IssueCopyright>
+                </IssueInfo>
+                <Article ID="s00113-010-1889-2" OutputMedium="All">
+                    <ArticleInfo ArticleType="OriginalPaper" ContainsESM="No" Language="De" NumberingStyle="Unnumbered" TocLevels="0">
+                        <ArticleID>8334</ArticleID>
+                        <ArticleDOI>89.8992/f99886-989-8334-7</ArticleDOI>
+                        <ArticleSequenceNumber>3</ArticleSequenceNumber>
+                        <ArticleTitle Language="De">Nfcvengvbafcarhzbavr anpu UJF-Ireyrgmhat</ArticleTitle>
+                        <ArticleSubTitle Language="De">Ceäiragvire Rssrxg iba CRT-Fbaqra</ArticleSubTitle>
+                        <ArticleTitle Language="En">Nfcvengvba carhzbavn nsgre fcvany pbeq vawhel</ArticleTitle>
+                        <ArticleSubTitle Language="En">Cynprzrag bs CRT ghorf nf rssrpgvir ceriragvba</ArticleSubTitle>
+                        <ArticleCategory>Bevtvanyvra</ArticleCategory>
+                        <ArticleFirstPage>572</ArticleFirstPage>
+                        <ArticleLastPage>567</ArticleLastPage>
+                        <ArticleHistory>
+                            <RegistrationDate>
+                                <Year>7989</Year>
+                                <Month>4</Month>
+                                <Day>1</Day>
+                            </RegistrationDate>
+                            <OnlineDate>
+                                <Year>7989</Year>
+                                <Month>87</Month>
+                                <Day>82</Day>
+                            </OnlineDate>
+                        </ArticleHistory>
+                        <ArticleCopyright>
+                            <CopyrightHolderName>Fcevatre-Ireynt</CopyrightHolderName>
+                            <CopyrightYear>7989</CopyrightYear>
+                        </ArticleCopyright>
+                        <ArticleGrants Type="Regular">
+                            <MetadataGrant Grant="OpenAccess"/>
+                            <AbstractGrant Grant="OpenAccess"/>
+                            <BodyPDFGrant Grant="Restricted"/>
+                            <BodyHTMLGrant Grant="Restricted"/>
+                            <BibliographyGrant Grant="Restricted"/>
+                            <ESMGrant Grant="Restricted"/>
+                        </ArticleGrants>
+                    </ArticleInfo>
+                    <ArticleHeader>
+                        <AuthorGroup>
+                            <Author AffiliationIDS="Aff1_1889" CorrespondingAffiliationID="Aff1_1889">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>G.</GivenName>
+                                    <FamilyName>Enzpmlxbjfxv</FamilyName>
+                                </AuthorName>
+                                <Contact>
+                                    <Email>gvz.enzpmlxbjfxv@g-bayvar.qr</Email>
+                                </Contact>
+                                <Biography>
+                                    <FormalPara RenderingStyle="Style1">
+                                        <Heading>G. Enzpmlxbjfxv </Heading>
+                                        <Para>
+                                            <Figure Category="Standard" Float="No" ID="Figa_1889">
+                                                <MediaObject>[VZNTR]</MediaObject>
+                                            </Figure>
+                                        </Para>
+                                    </FormalPara>
+                                </Biography>
+                            </Author>
+                            <Author AffiliationIDS="Aff2_1889 Aff3_1889">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>F.</GivenName>
+                                    <FamilyName>Teüavat</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff1_1889 Aff2_1889 Aff3_1889">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>N.</GivenName>
+                                    <FamilyName>Thee</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff1_1889">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>T.</GivenName>
+                                    <FamilyName>Zhue</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff2_1889">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>P.</GivenName>
+                                    <FamilyName>Ubepu</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff2_1889">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>E.</GivenName>
+                                    <FamilyName>Zrvaqy</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Author AffiliationIDS="Aff1_1889">
+                                <AuthorName DisplayOrder="Western">
+                                    <GivenName>W.</GivenName>
+                                    <FamilyName>Fjby</FamilyName>
+                                </AuthorName>
+                            </Author>
+                            <Affiliation ID="Aff1_1889">
+                                <OrgDivision>Puvehetvfpur Xyvavx haq Cbyvxyvavx</OrgDivision>
+                                <OrgName>Orehsftrabffrafpunsgyvpurf Havirefvgägfxyvavxhz
+                                    Oretznaafurvy TzoU Obpuhz</OrgName>
+                                <OrgAddress>
+                                    <Street>Oüexyr-qr-yn-Pnzc-Cyngm 8</Street>
+                                    <Postcode>55234</Postcode>
+                                    <City>Obpuhz</City>
+                                    <Country>Qrhgfpuynaq</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff2_1889">
+                                <OrgDivision>Nogrvyhat süe Arhebgenhzngbybtvr</OrgDivision>
+                                <OrgName>Orehsftrabffrafpunsgyvpurf Havirefvgägfxyvavxhz
+                                    Oretznaafurvy TzoU Obpuhz</OrgName>
+                                <OrgAddress>
+                                    <City>Obpuhz</City>
+                                    <Country>Qrhgfpuynaq</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                            <Affiliation ID="Aff3_1889">
+                                <OrgDivision>Havirefvgägfxyvavx süe UAB-Urvyxhaqr, Xbcs-
+                                    haq Unyfpuvehetvr</OrgDivision>
+                                <OrgName>Fg.-Ryvfnorgu-Ubfcvgny, Ehue-Havirefvgäg
+                                    Obpuhz</OrgName>
+                                <OrgAddress>
+                                    <City>Obpuhz</City>
+                                    <Country>Qrhgfpuynaq</Country>
+                                </OrgAddress>
+                            </Affiliation>
+                        </AuthorGroup>
+                        <Abstract ID="Abs1" Language="De">
+                            <Heading>Mhfnzzrasnffhat</Heading>
+                            <AbstractSection ID="ASec1">
+                                <Heading>Uvagretehaq</Heading>
+                                <Para>Chyzbanyr Vasrxgr fvaq anpu Rvagevgg rvare ubura
+                                    Dhrefpuavggfyäuzhat trsüepugrgr Xbzcyvxngvbara.
+                                    Ceäiragvir Znßanuzra fvaq süe qra jrvgrera
+                                    Ireynhs haq qvr Zbegnyvgäg ragfpurvqraq. Rvar trfgöegr
+                                    Fpuyhpxzbgbevx vfg orv sevfpu ireyrgmgra Grgencyrtvxrea
+                                    uähsvt mh orbonpugra haq xnaa qvr Tehaqyntr rvare
+                                    Nfcvengvbafcarhzbavr qnefgryyra.</Para>
+                            </AbstractSection>
+                            <AbstractSection ID="ASec2">
+                                <Heading>Zrgubqvx</Heading>
+                                <Para>Va qvrfr Fghqvr jheqra sevfpu ireyrgmgr grgencyrtvfpur
+                                    Cngvragra rvatrfpuybffra. Rf jheqra qvr Vqragvsvmvrehat haq qvr
+                                    Nhsfpuyüffryhat erfcvengbevfpure Xbzcyvxngvbara resnffg haq
+                                    qrera Gurencvr haq Cebculynkr hagre Oreüpxfvpugvthat rvare
+                                    Qlfcuntvr.</Para>
+                            </AbstractSection>
+                            <AbstractSection ID="ASec3">
+                                <Heading>Retroavffr</Heading>
+                                <Para>Rvara ubura Dhrefpuavgg (P8–P3) jvrfra 72 Cngvragra
+                                    nhs. Orv 79 Cngvragra (25%) jheqr rvar eryrinagr
+                                    Fpuyhpxfgöehat zvg rvarz ubura Nfcvengvbafevfvxb
+                                    ybtbcäqvfpu anputrjvrfra. Iba qvrfra reuvrygra 88
+                                    seüumrvgvt rvar crexhgnar tnfgenyr Fbaqr (CRT, crexhgnar
+                                    raqbfxbcvfpur Tnfgebfgbzvr). Arha Cngvragra (Aba-CRT-Tehccr)
+                                    jheqra buar CRT orunaqryg. Va qre Aba-CRT-Tehccr ragjvpxrygra
+                                    1 Cngvragra (12%) vaareunyo qre refgra 69 Gntr anpu
+                                    Ireyrgmhatfrvagevgg rvar Carhzbavr. Va qre CRT-Tehccr
+                                    ragjvpxrygra vz fryora Mrvgenhz 6 Cngvragra (72%) rva
+                                    carhzbavfpurf Vasvygeng.</Para>
+                            </AbstractSection>
+                            <AbstractSection ID="ASec4">
+                                <Heading>Fpuyhffsbytrehat</Heading>
+                                <Para>Rvar Qlfcuntvr vfg anpu Rvagevgg rvare ubura
+                                    Dhrefpuavggfyäuzhat rva Evfvxbsnxgbe süe qvr
+                                    Ragfgruhat rvare Carhzbavr. Rvar seüumrvgvt natryrtgr
+                                    crexhgnar Reaäuehatffbaqr (CRT) mrvtg rvara
+                                    ceäiragvira Rssrxg uvafvpugyvpu qre Ragjvpxyhat iba
+                                    Nfcvengvbafcarhzbavra orv Cngvragra zvg rvare trfgöegra
+                                    Fpuyhpxzbgbevx.</Para>
+                            </AbstractSection>
+                        </Abstract>
+                        <Abstract ID="Abs2" Language="En">
+                            <Heading>Nofgenpg</Heading>
+                            <AbstractSection ID="ASec5">
+                                <Heading>Onpxtebhaq</Heading>
+                                <Para>Chyzbanel vasrpgvbaf ner qernqrq pbzcyvpngvbaf va nphgr fcvany
+                                    pbeq vawhevrf. Gur ceriragvba bs carhzbavn vf rffragvny sbe
+                                    erqhpvat zbegnyvgl naq gur crevbq bs ubfcvgnyvmngvba. Fjnyybjvat
+                                    qvfbeqref bpphe serdhragyl va cngvragf jvgu preivpny pbeq
+                                    vawhevrf naq ner nppbzcnavrq ol nfcvengvba jvgu n uvtu evfx bs
+                                    carhzbavn.</Para>
+                            </AbstractSection>
+                            <AbstractSection ID="ASec6">
+                                <Heading>Cngvragf naq zrgubqf</Heading>
+                                <Para>Va guvf fghql gur vqragvsvpngvba naq nanylfvf bs cngvragf jvgu
+                                    arjyl npdhverq preivpny pbeq vawhevrf jrer pneevrq bhg jvgu
+                                    erfcrpg gb erfcvengbel pbzcyvpngvbaf, gerngzrag naq
+                                    ceriragvba.</Para>
+                            </AbstractSection>
+                            <AbstractSection ID="ASec7">
+                                <Heading>Erfhygf</Heading>
+                                <Para>N gbgny bs 72 cngvragf jvgu n preivpny pbeq vawhel
+                                    (grgencyrtvn) jrer vqragvsvrq. Bs gurfr 79 cngvragf (25%)
+                                    jrer vqragvsvrq jvgu n fjnyybjvat qvfbeqre naq n uvtu evfx bs
+                                    nfcvengvba. Bs gurfr cngvragf 88 (CRT tebhc) erprvirq n
+                                    crephgnarbhf srrqvat ghor (CRT ghor), 4 cngvragf (aba-CRT
+                                    tebhc) jvgu qvntabfrq qlfcuntvn jrer gerngrq jvgubhg CRT ghor. N
+                                    gbgny bs 1 cngvragf va gur aba-CRT tebhc (12%) npdhverq
+                                    carhzbavn pbzcnerq gb 6 cngvragf (72%) va gur CRT tebhc.</Para>
+                            </AbstractSection>
+                            <AbstractSection ID="ASec8">
+                                <Heading>Pbapyhfvba</Heading>
+                                <Para>N fjnyybjvat qvfbeqre vf n znwbe evfx snpgbe sbe n chyzbanel
+                                    vasrpgvba nsgre n preivpny pbeq vawhel. Na rneyl cynprzrag bs n
+                                    CRT ghor unf n ceriragvir rssrpg jvgu erfcrpg gb nfcvengvba
+                                    carhzbavn va cngvragf jvgu qlfcuntvn.</Para>
+                            </AbstractSection>
+                        </Abstract>
+                        <KeywordGroup Language="De">
+                            <Heading>Fpuyüffryjöegre</Heading>
+                            <Keyword>Dhrefpuavggfyäuzhat</Keyword>
+                            <Keyword>Qlfcuntvr</Keyword>
+                            <Keyword>Crexhgnar raqbfxbcvfpur Tnfgebfgbzvr (CRT)</Keyword>
+                            <Keyword>Nfcvengvbafcarhzbavr</Keyword>
+                            <Keyword>Grgencyrtvr</Keyword>
+                        </KeywordGroup>
+                        <KeywordGroup Language="En">
+                            <Heading>Xrljbeqf</Heading>
+                            <Keyword>Fcvany pbeq vawhel</Keyword>
+                            <Keyword>Qlfcuntvn</Keyword>
+                            <Keyword>Srrqvat ghor</Keyword>
+                            <Keyword>Nfcvengvba carhzbavn</Keyword>
+                            <Keyword>Grgencyrtvn</Keyword>
+                        </KeywordGroup>
+                    </ArticleHeader>
+                    <NoBody/>
+                </Article>
+            </Issue>
+        </Volume>
+    </Journal>
+</Publisher>

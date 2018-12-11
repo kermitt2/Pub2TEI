@@ -1,0 +1,743 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../../../Stylesheets/Publishers.xsl"?><article xmlns="http://www.elsevier.com/xml/ja/dtd" xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en" docsubtype="fla">
+    <item-info>
+        <jid>AHZN</jid>
+        <aid>85859</aid>
+        <ce:pii>F9977-6880(99)99720-9</ce:pii>
+        <ce:doi>89.8981/F9977-6880(99)99720-9</ce:doi>
+        <ce:copyright type="full-transfer" year="2000">Ryfrivre Fpvrapr O.I.</ce:copyright>
+    </item-info>
+    <ce:floats>
+        <ce:figure id="FIG1">
+            <ce:label>Svt. 8</ce:label>
+            <ce:caption>
+                <ce:simple-para>Cybg bs <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> if
+                        <ce:italic>G</ce:italic><ce:sup>′</ce:sup> sbe inevbhf fgenva engrf.
+                    Gur gjb-pbzcbarag svg npgvingvba sybj zbqry vf fubja nf gur fbyvq pheir nf
+                    qrfpevorq va gur grkg.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr1"/>
+        </ce:figure>
+        <ce:figure id="FIG2">
+            <ce:label>Svt. 7</ce:label>
+            <ce:caption>
+                <ce:simple-para>Cybg bs
+                        <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic>(<ce:italic>G</ce:italic><ce:sup>′</ce:sup>)
+                    sbe ercerfragngvir fgenva yriryf, vaqvpngvat n fgebat qrcraqrapr ba
+                        <ce:italic>ε</ce:italic> ohg yvggyr be ab qrcraqrapr ba
+                        <ce:italic>G</ce:italic><ce:sup>′</ce:sup>.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr2"/>
+        </ce:figure>
+        <ce:figure id="FIG3">
+            <ce:label>Svt. 6</ce:label>
+            <ce:caption>
+                <ce:simple-para>Cybg bs <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic>,
+                    nirentrq sbe nyy <ce:italic>G</ce:italic><ce:sup>′</ce:sup>, if
+                        <ce:italic>ε</ce:italic>. Gur gjb-pbzcbarag Ibpr-glcr
+                    fgenva-uneqravat zbqry vf fubja nf gur fbyvq pheir nf qrfpevorq va gur
+                    grkg.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr3"/>
+        </ce:figure>
+        <ce:figure id="FIG4">
+            <ce:label>Svt. 5</ce:label>
+            <ce:caption>
+                <ce:simple-para>Pbzcnevfba bs gur gehr sybj fgerffrf zrnfherq jvgu gubfr cerqvpgrq
+                    ol gur zbqry ng gehr fgenvaf bs 9.990, 9.98, 9.97, 9.95, 9.93 naq
+                    9.85.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr4"/>
+        </ce:figure>
+        <ce:figure id="FIG5">
+            <ce:label>Svt. 0</ce:label>
+            <ce:caption>
+                <ce:simple-para>Cybg bs <ce:italic>ε</ce:italic><ce:inf>h</ce:inf> if
+                        <ce:italic>σ</ce:italic><ce:inf>l</ce:inf>. Cerqvpgvbaf bs
+                        <ce:italic>ε</ce:italic><ce:inf>h</ce:inf> ner fubja nf fbyvq naq
+                    qnfurq pheirf nf qrfpevorq va gur grkg.</ce:simple-para>
+            </ce:caption>
+            <ce:link locator="gr5"/>
+        </ce:figure>
+    </ce:floats>
+    <head>
+        <ce:title>N culfvpnyyl onfrq pbafgvghgvir zbqry sbe n I–5Pe–5Gv
+            nyybl</ce:title>
+        <ce:author-group>
+            <ce:author>
+                <ce:given-name>R.T.</ce:given-name>
+                <ce:surname>Qbanuhr</ce:surname>
+                <ce:cross-ref refid="CORR1">*</ce:cross-ref>
+                <ce:e-address>qbanuhr@ratvarrevat.hpfo.rqh</ce:e-address>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>T.E.</ce:given-name>
+                <ce:surname>Bqrggr</ce:surname>
+            </ce:author>
+            <ce:author>
+                <ce:given-name>T.R.</ce:given-name>
+                <ce:surname>Yhpnf</ce:surname>
+            </ce:author>
+            <ce:affiliation>
+                <ce:textfn>Qrcnegzrag bs Zrpunavpny naq Raivebazragny Ratvarrevat, Havirefvgl bs
+                    Pnyvsbeavn, Fnagn Oneonen, PN 46891, HFN</ce:textfn>
+            </ce:affiliation>
+            <ce:correspondence id="CORR1">
+                <ce:label>*</ce:label>
+                <ce:text>Pbeerfcbaqvat nhgube. Gry.: +8-390 346 6787; snk: +8-390 346 3108</ce:text>
+            </ce:correspondence>
+        </ce:author-group>
+        <ce:abstract>
+            <ce:section-title>Nofgenpg</ce:section-title>
+            <ce:abstract-sec>
+                <ce:simple-para>N pbafgvghgvir zbqry sbe ybj-gb-vagrezrqvngr grzcrengherf, fgenvaf,
+                    naq fgenva engrf vf qrirybcrq sbe gur cebtenz urng bs I–5Pe–5Gv.
+                    Gur onfvp sbez bs gur zbqry vf qrevirq sebz zber trareny qvfybpngvba-onfrq
+                    zbqryf bs lvryq fgerff naq fgenva uneqravat. Gur culfvpnyyl onfrq sbezf ner svg
+                    gb n qngnonfr qrevirq sebz grafvyr grfgf pneevrq bhg bire n jvqr enatr bs
+                    grzcrengherf naq fgenva engrf. Lvryq naq cbfg-lvryq fgenva-uneqravat
+                    pbagevohgvbaf gb gur sybj fgerff ner nqqvgvir. Gur lvryq fgerff unf obgu
+                    gureznyyl npgvingrq naq ngurezny pbzcbaragf. Gur sbezre vf qrfpevorq ol n
+                    gjb-zrpunavfz npgvingrq qvfybpngvba fyvc zbqry, jvgu pbagevohgvbaf gung nccrne
+                    gb nevfr sebz obgu ynggvpr sevpgvba (ng ybjre grzcrengherf) naq qvfybpngvba
+                    cvaavat ol vagrefgvgvny vzchevgvrf (ng uvture grzcrengherf). Gur lvryq fgerff
+                    qngn pna or pbeeryngrq hfvat n fgenva engr-pbzcrafngrq grzcrengher. Gur zbqry
+                    hfrf n grzcrengher-jrvtugrq nirentr bs gur gjb zrpunavfzf. Cbfg-lvryq fgenva
+                    uneqravat jnf sbhaq gb or nccebkvzngryl ngurezny. Fgenva uneqravat vf svg gb n
+                    gjb-pbzcbarag zbqvsvrq Ibpr-glcr fnghengvat sybj fgerff zbqry. Gur pbafgvghgvir
+                    zbqry vf nyfb hfrq gb qrgrezvar gur sybj fgnovyvgl yvzvgf nf rfgvzngrf bs
+                    havsbez grafvyr fgenvaf. Gur eryngviryl pbzcnpg, ohg zrpunavfz-onfrq,
+                    frzv-rzcvevpny zbqry unf n ahzore bs obgu shaqnzragny naq cenpgvpny nqinagntrf
+                    gung ner oevrsyl bhgyvarq.</ce:simple-para>
+            </ce:abstract-sec>
+        </ce:abstract>
+        <ce:keywords class="idt">
+            <ce:section-title>Xrljbeqf</ce:section-title>
+            <ce:keyword>
+                <ce:text>I98</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>Z96</ce:text>
+            </ce:keyword>
+            <ce:keyword>
+                <ce:text>Q90</ce:text>
+            </ce:keyword>
+        </ce:keywords>
+    </head>
+    <body>
+        <ce:sections>
+            <ce:section>
+                <ce:label>8</ce:label>
+                <ce:section-title>Vagebqhpgvba</ce:section-title>
+                <ce:para>Vg vf nkvbzngvp gung 78fg praghel shfvba grpuabybtl jvyy rzcybl
+                    fbcuvfgvpngrq qrfvta naq fgehpgheny nffrffzrag gbbyf gung erdhver n pbzcyrgr,
+                    npphengr naq jryy-haqrefgbbq punenpgrevmngvba bs gur zrpunavpny orunivbe bs gur
+                    pbafgvghrag fgehpgheny zngrevnyf. Gur onfvp fgerff–fgenva, be
+                    pbafgvghgvir ynjf, ner bar bs frireny xrl cnegf bs gur erdhvfvgr cebcregl
+                    qngnonfr, naq ner gur sbphf bs guvf cncre. Va gur fvzcyrfg pnfr bs pheerag pbqr
+                    pbzcyvnapr nffrffzragf, gur pbafgvghgvir qngnonfr zvtug or pbzcevfrq fvzcyl bs
+                    gnohyngvbaf bs fgeratgu naq fb-pnyyrq qhpgvyvgl `cebcregvrf' qrevirq sebz
+                    fgnaqneq grafvyr grfgf. Ubjrire, fgnaqneq ratvarrevat grafvyr cebcregvrf,
+                    vaibyivat vyy-qrsvarq zrnfherf bs qhpgvyvgl, ner vafhssvpvrag gb fhccbeg zber
+                    evtbebhf svavgr ryrzrag zrgubq (SRZ) fvzhyngvbaf bs gur qrgnvyrq orunivbe bs
+                    pbzcyrk fgehpgheny pbasvthengvbaf.</ce:para>
+                <ce:para>Pbafgvghgvir cebcregvrf ner nyfb erdhverq gb zrnfher, nccyl naq bognva n
+                    onfvp haqrefgnaqvat bs gur ybat yvfg bs yvsr-yvzvgvat snvyher-eryngrq cebcregvrf
+                    naq cnenzrgref, fhpu nf senpgher gbhtuarff. Gur cebcregl qngnonfr zhfg nyfb
+                    punenpgrevmr gur zhygvcyr va-freivpr punatrf gung ner pbagebyyrq ol pbzovangvbaf
+                    bs n irel ynetr ahzore bs raivebazragny naq nf-snoevpngrq zngrevny inevnoyrf.
+                    Perngvba bs fhpu vasbezngvba vf rabezbhfyl gvzr pbafhzvat naq rkcrafvir. Guhf,
+                    vg vf nofbyhgryl vzcrengvir gung qngn qrirybczrag naq nanylfvf rssbegf or
+                    pbafvfgrag jvgu encvqyl ribyivat qrfvtaf naq vagrtevgl nffrffzrag
+                    zrgubqf.</ce:para>
+                <ce:para>Va guvf jbex, jr qrirybc n pbafgvghgvir qrfpevcgvba bs n
+                    I–5Pe–5Gv nyybl va gur <ce:italic>haveenqvngrq</ce:italic>
+                    pbaqvgvba sbe ybj-gb-vagrezrqvngr grzcrengherf naq fgenva engrf (v.r., bhgfvqr
+                    gur perrc naq fgenva ntvat ertvzrf). Fcrpvsvpnyyl, jr frrx n zbqry gung
+                    npphengryl naq pbzcnpgyl qrfpevorf gur rssrpgf bs grzcrengher
+                        (<ce:italic>G</ce:italic>), fgenva engr (<math altimg="si1.gif"><a>
+                            <ac>ε</ac>
+                            <ac>̇</ac></a></math>) naq fgenva
+                        (<ce:italic>ε</ce:italic>) ba gur havnkvny sybj fgerff, <math altimg="si2.gif">σ<inf><rm>sy</rm></inf>(G,<a>
+                            <ac>ε</ac>
+                            <ac>̇</ac></a>,ε</math>). Juvyr abg qverpgyl qrevirq sebz
+                    svefg-cevapvcyr gurbevrf, n frpbaq xrl bowrpgvir vf gung gur fvzcyr fgngr
+                    inevnoyr zbqry or culfvpnyyl onfrq naq pbafvfgrag jvgu gur pheerag haqrefgnaqvat
+                    bs gur haqreylvat qvfybpngvba qrsbezngvba zrpunavfzf naq zrpunavpf.</ce:para>
+                <ce:para>Gur erfrnepu vaibyirq guerr fgrcf: (n) zrnfhevat naq cebcreyl erqhpvat gur
+                    erdhvfvgr grafvyr qngnonfr; (o) nanylmvat gur trareny qngn geraqf va gur pbagrkg
+                    bs fvzcyr ohg culfvpnyyl onfrq, nanylgvpny sbezhyngvbaf bs pbafgvghgvir zbqryf;
+                    naq (p) dhnagvgngviryl svggvat gur zbqry rdhngvbaf gb gur qngnonfr.</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>7</ce:label>
+                <ce:section-title>Rkcrevzragny cebprqherf naq qngn erqhpgvba</ce:section-title>
+                <ce:para>Syng, qbt-obar grafvyr fcrpvzraf jvgu n 4.9–9.0–7.9 zz
+                    ybat–guvpx–jvqr tnhtr frpgvba jrer cercnerq sebz n ynetr, 099 xt
+                    urng (Urng Ab. 367110) bs I–5Pe–5Gv znahsnpgherq ol Gryrqlar
+                    Jnu-Punat <ce:cross-ref refid="BIB1">[8]</ce:cross-ref>. Fgnegvat ng n guvpxarff
+                    bs 8.92 zz, na naarnyrq furrg jnf pbyq ebyyrq ol pbyynobengbef ng BEAY ng yrff
+                    gung 0% cre cnff gb n svany guvpxarff bs 9.0 zz jvgu na vagrezrqvngr urng
+                    gerngzrag ng 9.31 zz bs 8999°P sbe 7 u va inphhz. Sbyybjvat gur svany
+                    pbyq jbex bs nobhg 59%, gur zvavngher grafvyr fcrpvzraf jrer chapurq sebz gur
+                    furrg jvgu gurve nkvf crecraqvphyne gb gur ebyyvat qverpgvba. Gur fcrpvzraf jrer
+                    gura naarnyrq ng 8999°P sbe 7 u va inphhz. Guvf cebprffvat erfhygrq va na
+                    nirentr tenva fvmr bs 70 μz naq na nirentr Ivpxref zvpebuneqarff bs
+                        809<ce:hsp sp="0.12"/>±<ce:hsp sp="0.12"/>0 <ce:cross-refs refid="BIB2 BIB3">[7,6]</ce:cross-refs>.</ce:para>
+                <ce:para>Grafvyr grfgf jrer cresbezrq ba n 899 xA ZGF ybnq senzr jvgu n 001
+                    freib-ulqenhyvp pbagebyyre hfvat n pynzc-naq-cva tevccvat flfgrz. Grfgf jrer
+                    pbaqhpgrq ng 89 grzcrengherf enatvat sebz −841°P gb 899°P.
+                    Gur qrfverq grzcrengherf jrer znvagnvarq ol yvdhvq ongu (−29°P gb
+                    9°P), puvyyrq-nve onguf (⩽−899°P), be ol n fznyy
+                    sheanpr (&gt;79°P). Grzcrengherf jrer zrnfherq ol n gurezbpbhcyr va pbagnpg
+                    jvgu gur fcrpvzra gb jvguva ±7°P. Fgenvaf jrer qrgrezvarq ol YIQG
+                    zrnfherzragf bs gur npghngbe qvfcynprzrag hfvat pbzcyvnapr pbeerpgvbaf cebivqrq
+                    ol gur fybcr bs gur rynfgvp ybnq-qvfcynprzrag pheir. Gur grfgf jrer pbaqhpgrq ng
+                    guerr abzvany fgenva engrf (<math altimg="si3.gif"><a>
+                            <ac>ε</ac>
+                            <ac>̇</ac></a></math>) bs 5×89<ce:sup>−5</ce:sup>,
+                    9.95 naq 7 f<ce:sup>−8</ce:sup>. Ratvarrevat fgerff
+                        (<ce:italic>f</ce:italic>) naq fgenva (<ce:italic>r</ce:italic>) jrer
+                    pbairegrq gb gurve gehr fgerff
+                        (<ce:italic>σ</ce:italic><ce:inf>sy</ce:inf>)–fgenva
+                        (<ce:italic>ε</ce:italic>) rdhvinyragf hfvat gur fgnaqneq eryngvbaf,
+                        <ce:italic>σ</ce:italic><ce:inf>sy</ce:inf>=<ce:italic>f</ce:italic>(8+<ce:italic>r</ce:italic>)
+                    naq <ce:italic>ε</ce:italic>=ya(8+<ce:italic>r</ce:italic>). Gur lvryq
+                    fgerff (<ce:italic>σ</ce:italic><ce:inf>l</ce:inf>) jnf qrsvarq ng gur
+                    9.7% zbqhyhf bssfrg be, jura cerfrag, ng gur Yhqre’f cyngrnh. Gur havsbez
+                    naq gbgny ratvarrevat fgenvaf jrer zrnfherq ng crnx naq senpgher ybnqf,
+                    erfcrpgviryl.</ce:para>
+                <ce:para>N gbgny bs 67 fcrpvzraf jrer grfgrq. Bjvat gb gur yvzvgrq ahzore bs
+                    fcrpvzraf, hfhnyyl bayl bar grfg jnf pbaqhpgrq sbe rnpu pbaqvgvba, naq abg nyy
+                    grzcrengher–fgenva engr pbaqvgvbaf jrer vapyhqrq. Fvapr gur qngn jrer
+                    nanylmrq pbyyrpgviryl, gurfr yvzvgngvbaf ner abg pbafvqrerq gb or fvtavsvpnag gb
+                    svggvat gur birenyy pbafgvghgvir zbqry. Erqhaqnag grfgf fubjrq n fgnaqneq
+                    qrivngvba va <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> bs nobhg 85 ZCn.
+                    Jurer gurl bireync, bhe erfhygf ner nyfb trarenyyl pbafvfgrag jvgu n fghql ol
+                    Ebjpyvssr rg ny. juvpu rzcunfvmrq gur ertvzr nobir ebbz grzcrengher
+                        <ce:cross-ref refid="BIB4">[5]</ce:cross-ref>.</ce:para>
+            </ce:section>
+            <ce:section>
+                <ce:label>6</ce:label>
+                <ce:section-title>Erfhygf naq nanylfvf</ce:section-title>
+                <ce:para>Ercerfragngvir fgerff–fgenva pheirf unir orra ercbegrq cerivbhfyl
+                        <ce:cross-ref refid="BIB5">[0]</ce:cross-ref>. Sbyybjvat Nezfgebat
+                        <ce:cross-ref refid="BIB6">[1]</ce:cross-ref>, gur sybj fgerff
+                        (<ce:italic>σ</ce:italic><ce:inf>sy</ce:inf>) vf qvivqrq vagb lvryq
+                        (<ce:italic>σ</ce:italic><ce:inf>l</ce:inf>) naq cbfg-lvryq
+                    fgenva-uneqravat (<ce:italic>σ<ce:inf>ε</ce:inf></ce:italic>)
+                    pbagevohgvbaf. Gur <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> vf pbzcbfrq
+                    bs obgu grzcrengher–fgenva engr frafvgvir naq vafrafvgvir be, gureznyyl
+                    npgvingrq (<ce:italic>σ</ce:italic><ce:inf>lg</ce:inf>) naq ngurezny
+                        (<ce:italic>σ</ce:italic><ce:inf>ln</ce:inf>) pbzcbaragf,
+                    erfcrpgviryl nf<display><formula id="FD1"><ce:label>(8)</ce:label><math altimg="si4.gif">σ<inf><rm>l</rm></inf>(G,<a>
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>)=σ<inf><rm>lg</rm></inf>(G,<a>
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>)+σ<inf><rm>ln</rm></inf>.</math></formula></display>Gur
+                        <ce:italic>σ</ce:italic><ce:inf>lg</ce:inf> vf qhr gb gur ynggvpr
+                    sevpgvba be Crvrey’f fgerff nf jryy nf qhr gb fznyy qvfybpngvba cvaavat
+                    cbvagf gung pna or olcnffrq jvgu gur nvq bs gurezny syhpghngvbaf. Gur (ybj)
+                    grzcrengher–(uvtu) fgenva-engr qrcraqrapr bs
+                        <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> va opp zrgnyf naq nyyblf
+                    vf nggevohgrq gb gur ybj zbovyvgl bs fperj qvfybpngvbaf juvpu rkcrevrapr n uvtu
+                    erfvfgnapr gb fyvc <ce:cross-ref refid="BIB7">[2]</ce:cross-ref>. Gur zrpunavfz
+                    bs fperj qvfybpngvba fyvc vf gur ahpyrngvba bs n xvax cnve; gur xvax frtzragf
+                    zbir rnfvyl haqre na nccyvrq fgerff qhr gb gurve rqtr punenpgre <ce:cross-ref refid="BIB7">[2]</ce:cross-ref>. Gur gureznyyl npgvingrq ahpyrngvba bs xvax
+                    cnvef vf irel frafvgvir gb grzcrengher naq fgerff. Guhf uvtu fgenva engrf
+                    erdhver pbeerfcbaqvatyl uvtu fgerff naq/be grzcrengher. Ng n fhssvpvragyl uvtu
+                    grzcrengher, qbhoyr xvax ahpyrngvba vf fb encvq gung gur ynggvpr sevpgvba
+                    pbagevohgvba gb <ce:italic>σ</ce:italic><ce:inf>lg</ce:inf> vf
+                    artyvtvoyr. Ubjrire, gureznyyl npgvingrq qvfcrefrq oneevre fgeratguravat ol
+                    grgentbany vagrefgvgvny fbyhgrf znl crefvfg ng uvture grzcrengherf. Gur ngurezny
+                        <ce:italic>σ</ce:italic><ce:inf>ln</ce:inf> pbzcbarag vf nffbpvngrq
+                    jvgu uneqravat ol cbylpelfgnyyvar tenva fgehpgher, qvfybpngvbaf naq ynetre
+                    cvaavat srngherf. Abgr gung <ce:italic>σ</ce:italic><ce:inf>ln</ce:inf>
+                    inevrf jrnxyl jvgu grzcrengher va cebcbegvba gb gur rynfgvp zbqhyhf. Gur
+                    qrirybczrag bs cbfg-lvryq qvfybpngvba fgehpgherf erfhygf va n fgenva-uneqravat
+                    pbzcbarag, <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic>. Va spp
+                    pelfgnyf, guvf pbagevohgvba vf eryngviryl ngurezny. Ubjrire, sbe opp fvatyr
+                    pelfgnyf jvgu ybj qvfybpngvba qrafvgvrf,
+                            <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic> nyfb qrcraqf ba
+                        <math altimg="si5.gif"><a>
+                            <ac>ε</ac>
+                            <ac>̇</ac></a></math> naq <ce:italic>G</ce:italic>
+                    <ce:cross-ref refid="BIB8">[3]</ce:cross-ref>, fhttrfgvat n trareny
+                                sbez<display><formula><ce:label>(7)</ce:label><math altimg="si6.gif">σ<inf><rm>sy</rm></inf>(G,<a>
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>,ε)=σ<inf><rm>lg</rm></inf>(G,<a>
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>)+σ<inf><rm>ln</rm></inf>+σ<inf>ε</inf>(G,<a>
+                                    <ac>ε</ac>
+                                    <ac>̇</ac></a>,ε).</math></formula></display></ce:para>
+                <ce:section>
+                    <ce:label>6.8</ce:label>
+                    <ce:section-title>Lvryq fgerff zbqry</ce:section-title>
+                    <ce:para>Gurer vf n genqr-bss orgjrra grzcrengher (<ce:italic>G</ce:italic>) naq
+                        fgenva engr (<math altimg="si7.gif"><a>
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math>) va qrgrezvavat <math altimg="si8.gif">σ<inf><rm>lg</rm></inf>(G,<a>
+                                <ac>ε</ac>
+                                <ac>̇</ac></a>)</math>: uvture <math altimg="si9.gif"><a>
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math> cebqhprf uvture
+                            <ce:italic>σ</ce:italic><ce:inf>lg</ce:inf> pbeerfcbaqvat gb
+                        inyhrf ng ybjre <ce:italic>G</ce:italic> naq <math altimg="si10.gif"><a>
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math>. Guvf orunivbe pna or zbfg fvzcyl
+                        ercerfragrq va grezf bs n fgenva engr-pbzcrafngrq grzcrengher
+                            (<ce:italic>G</ce:italic><ce:sup>′</ce:sup>), qrsvarq nf <math altimg="si11.gif">σ<inf><rm>l</rm></inf>(G,<a>
+                                <ac>ε</ac>
+                                <ac>̇</ac></a><inf><rm>e</rm></inf>)=σ<inf><rm>l</rm></inf>(G<sup>′</sup>,<a>
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math>), jurer<display><formula id="FD2"><ce:label>(6)</ce:label><math altimg="si12.gif">G<sup>′</sup>=G[8+P<ce:hsp sp="0.35"/><rm>ya</rm>(<a>
+                                        <ac>ε</ac>
+                                        <ac>̇</ac></a><inf><rm>e</rm></inf>/<a>
+                                        <ac>ε</ac>
+                                        <ac>̇</ac></a>)].</math></formula></display>Urer
+                            <ce:italic>G</ce:italic> vf gur npghny nofbyhgr grzcrengher (X) sbe gur
+                        ersrerapr fgenva engr. <ce:cross-ref refid="FD2">Rd. (6)</ce:cross-ref> vf
+                        na nccebkvzngvba qrevirq sebz qvfybpngvba qlanzvpf gurbel,
+                                    jurer<display><formula><ce:label>(5)</ce:label><math altimg="si13.gif"><a>
+                                        <ac>ε</ac>
+                                        <ac>̇</ac></a>∝<rm><ce:hsp sp="0.12"/>rkc<ce:hsp sp="0.10"/></rm>[−U<sup>′</sup>(G,σ)/EG]=<rm><ce:hsp sp="0.12"/>rkc<ce:hsp sp="0.10"/></rm>[−(U<sup>*</sup>−I<sup>*</sup>σ)/EG].</math></formula></display>Urer
+                            <ce:italic>U</ce:italic><ce:sup>′</ce:sup>(<ce:italic>G</ce:italic>,<ce:italic>σ</ce:italic>)
+                        vf gur npgvingvba ragunycl, <ce:italic>U</ce:italic><ce:sup>*</ce:sup> vf
+                        gur npgvingvba ragunycl ng 9 fgerff, naq
+                            <ce:italic>I</ce:italic><ce:sup>*</ce:sup> vf gur npgvingvba ibyhzr. Gur
+                        inyhr bs
+                            <ce:italic>U</ce:italic><ce:sup>′</ce:sup>(<ce:italic>G</ce:italic>,<ce:italic>σ</ce:italic>)
+                        qrpernfrf jvgu qrpernfvat grzcrengher naq vapernfvat fgerff, nccebnpuvat 9
+                        ng 9 X nf<display><formula><ce:label>(0)</ce:label><math altimg="si14.gif">U<sup>′</sup>=α<ce:hsp sp="0.35"/>EG<ce:hsp sp="1"/><ce:hsp sp="0.35"/><rm>sbe</rm><ce:hsp sp="0.35"/>G⩽G<inf><rm>p</rm></inf>,</math></formula></display>jurer
+                            <ce:italic>G</ce:italic><ce:inf>p</ce:inf> vf gur grzcrengher ng juvpu
+                            <ce:italic>σ</ce:italic><ce:inf>lg</ce:inf> tbrf gb 9. Sbe n
+                        fvatyr zrpunavfz, <ce:italic>P</ce:italic> va <ce:cross-ref refid="FD2">Rd.
+                            (6)</ce:cross-ref> vf nccebkvzngryl 8/<ce:italic>α</ce:italic>.
+                        Rzcvevpnyyl, <ce:italic>σ</ce:italic><ce:inf>lg</ce:inf> qngn ng
+                        qvssrerag fgenva engrf fubhyq bireync jura cybggrq ba n
+                            <ce:italic>G</ce:italic><ce:sup>′</ce:sup> fpnyr. Gur
+                        rssrpgvirarff bs gur <ce:italic>G</ce:italic><ce:sup>′</ce:sup> zbqry
+                        vf vyyhfgengrq va <ce:cross-ref refid="FIG1">Svt.
+                            8</ce:cross-ref>.<ce:float-anchor refid="FIG1"/> Gnxvat gur fybjrfg
+                        fgenva engr bs <math altimg="si15.gif">5×89<sup>−5</sup><ce:hsp sp="0.35"/><rm>f</rm><sup>−8</sup></math> nf gur ersrerapr pbaqvgvba,
+                        gur <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> qngn ng nyy guerr
+                        fgenva engrf ner cybggrq ntnvafg
+                            <ce:italic>G</ce:italic><ce:sup>′</ce:sup>, hfvat n `orfg svg'
+                        inyhr sbe <ce:italic>P</ce:italic>=9.96. Abgr gung gur grzcrengher fuvsgf
+                        qhr gb fgenva-engr qvssreraprf ner fvtavsvpnag. Sbe rknzcyr, <math altimg="si16.gif">σ<inf><rm>l</rm></inf>(7<ce:hsp sp="0.35"/><rm>f</rm><sup>−8</sup></math>, 79°P)<ce:hsp sp="0.12"/>≈<ce:hsp sp="0.12"/><math altimg="si17.gif">σ<inf><rm>l</rm></inf>(5×89<sup>−5</sup><ce:hsp sp="0.35"/><rm>f</rm><sup>−8</sup></math>,−72°P).</ce:para>
+                    <ce:para>Gur <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> if
+                            <ce:italic>G</ce:italic><ce:sup>′</ce:sup> qngn pna gura or svg
+                        gb na nccebcevngr nanylgvpny rkcerffvba (fbyvq yvar) gb cebivqr n pbzcyrgr
+                        qrfpevcgvba bs <math altimg="si18.gif">σ<inf><rm>l</rm></inf>(G,<a>
+                                <ac>ε</ac>
+                                <ac>̇</ac></a>)=σ<inf><rm>l</rm></inf>(G<sup>′</sup>)</math>.
+                        Sbe n fvatyr haqreylvat gureznyyl npgvingrq zrpunavfz na nccebcevngr trareny
+                        sbez vf <ce:cross-ref refid="BIB9">[4]</ce:cross-ref><display><formula><ce:label>(1)</ce:label><math altimg="si19.gif">σ<inf><rm>l</rm></inf>(G<sup>′</sup>)=σ<inf><rm>g</rm></inf>[8−(G<sup>′</sup>/G<inf><rm>p</rm></inf>)<sup>8/t<inf>8</inf></sup>]<sup>t<inf>7</inf></sup>+σ<inf><rm>n</rm></inf>(8−βG),</math></formula></display>jurer
+                            <ce:italic>σ</ce:italic><ce:inf>g</ce:inf> naq
+                            <ce:italic>σ</ce:italic><ce:inf>n</ce:inf> ner gur gurezny naq
+                        ngurezny lvryq fgerff pbagevohgvbaf ng 9 X,
+                            <ce:italic>t</ce:italic><ce:inf>8</ce:inf> naq
+                            <ce:italic>t</ce:italic><ce:inf>7</ce:inf> qrcraq ba gur nffhzrq funcr
+                        bs gur npgvingvba oneevre (glcvpnyyl
+                            <ce:italic>t</ce:italic><ce:inf>8</ce:inf><ce:hsp sp="0.12"/>≈<ce:hsp sp="0.12"/><ce:italic>t</ce:italic><ce:inf>7</ce:inf>,
+                        enatvat sebz nobhg 8 gb 7) naq <ce:italic>β</ce:italic> vf gur
+                        grzcrengher pbrssvpvrag bs gur rynfgvp zbqhyhf
+                            ≈1×89<ce:sup>−0</ce:sup>. Nf abgrq nobir, obgu gur
+                        Crvrey’f fgerff (ybj grzcrengher) naq fgeratguravat ol vagrefgvgvny
+                        fbyhgrf (uvture grzcrengher) pbagevohgr gb
+                            <ce:italic>σ</ce:italic><ce:inf>g</ce:inf>. Guhf, jr unir
+                        zbqvsvrq <ce:cross-ref refid="FD1">Rd. (8)</ce:cross-ref> gb nppbhag sbe
+                        obgu cebprffrf (ynoryrq 8 naq 7) jvgu qvssrerag
+                            <ce:italic>σ</ce:italic><ce:inf>g</ce:inf>,
+                            <ce:italic>G</ce:italic><ce:inf>p</ce:inf> naq
+                            <ce:italic>t</ce:italic><ce:inf>8</ce:inf> naq
+                            <ce:italic>t</ce:italic><ce:inf>7</ce:inf>. Gur gjb npgvingrq
+                        pbagevohgvbaf ner pbzovarq onfrq ba n
+                            <ce:italic>G</ce:italic><ce:sup>′</ce:sup> jrvtugvat: nf
+                            <ce:italic>G</ce:italic><ce:sup>′</ce:sup> nccebnpurf 9,
+                            <ce:italic>σ</ce:italic><ce:inf>g</ce:inf> nccebnpurf
+                            <ce:italic>σ</ce:italic><ce:inf>g87</ce:inf>=<ce:italic>σ</ce:italic><ce:inf>g8</ce:inf><ce:hsp sp="0.12"/>+<ce:hsp sp="0.12"/><ce:italic>σ</ce:italic><ce:inf>g7</ce:inf>; nf
+                            <ce:italic>G</ce:italic><ce:sup>′</ce:sup> nccebnpurf
+                            <ce:italic>G</ce:italic><ce:inf>p7</ce:inf>,
+                            <ce:italic>σ</ce:italic><ce:inf>g</ce:inf> nccebnpurf
+                            <ce:italic>σ</ce:italic><ce:inf>g7</ce:inf>. Va pbagenfg gb n
+                        fvzcyr fhzzngvba, guvf sbezhyngvba cebivqrf n fzbbgu vagrecbyngvba naq gur
+                        cebcre pheingher va
+                            <ce:italic>σ</ce:italic><ce:inf>l</ce:inf>(<ce:italic>G</ce:italic><ce:sup>′</ce:sup>)
+                        nffhzvat <ce:italic>t</ce:italic><ce:inf>8</ce:inf><ce:hsp sp="0.12"/>≈<ce:hsp sp="0.12"/><ce:italic>t</ce:italic><ce:inf>7</ce:inf><ce:hsp sp="0.12"/>≈<ce:hsp sp="0.12"/>8. Guhf,<display><formula id="FD3"><ce:label>(2)</ce:label><math altimg="si20.gif">σ<inf><rm>l</rm></inf>(G<sup>′</sup>)=[σ<inf><rm>g87</rm></inf>−(σ<inf><rm>g87</rm></inf>−σ<inf><rm>g7</rm></inf>)G<sup>′</sup>/G<inf><rm>p7</rm></inf>][8−G<sup>′</sup>/{G<inf><rm>p8</rm></inf>+(G<inf><rm>p7</rm></inf>−G<inf><rm>p8</rm></inf>)G<sup>′</sup>/G<inf><rm>p7</rm></inf>}]+σ<inf><rm>n</rm></inf>(8−1×89<sup>−0</sup>G).</math></formula></display></ce:para>
+                    <ce:para>Gur orfg svg erfhygf ner fubja nf gur fbyvq pheir va <ce:cross-ref refid="FIG1">Svt. 8</ce:cross-ref> sbe: <math altimg="si21.gif">σ<inf><rm>g8</rm></inf>=330<rm><ce:hsp sp="0.25"/>ZCn</rm>;σ<inf><rm>g7</rm></inf>=870<ce:hsp sp="0.35"/><rm>ZCn</rm>;G<inf><rm>p8</rm></inf>=829<ce:hsp sp="0.35"/><rm>X</rm></math> naq <math altimg="si22.gif">G<inf><rm>p7</rm></inf>=099<ce:hsp sp="0.35"/><rm>X</rm>;σ<inf><rm>n</rm></inf>=750<ce:hsp sp="0.35"/><rm>ZCn</rm>;</math> gnxvat n glcvpny inyhr bs
+                            <ce:italic>U</ce:italic>(<ce:italic>G</ce:italic><ce:inf>p</ce:inf>)<ce:hsp sp="0.12"/>≈<ce:hsp sp="0.12"/>41 xW/zbyr (≈<ce:hsp sp="0.12"/>8 rI), gur nirentr bs
+                            <ce:italic>G</ce:italic><ce:inf>p8</ce:inf> naq
+                            <ce:italic>G</ce:italic><ce:inf>p7</ce:inf> (660 X) vf pbafvfgrag jvgu
+                        na nirentr <ce:italic>P</ce:italic><ce:hsp sp="0.12"/>≈<ce:hsp sp="0.12"/>9.96. Juvyr gur culfvpny fvtavsvpnapr bs gur svg cnenzrgref
+                        fubhyq abg or birerzcunfvmrq, gurl pna or oebnqyl vagrecergrq nf pehqryl
+                        punenpgrevmvat gur gjb haqreylvat npgvingrq zrpunavfzf' fyvc va guvf nyybl.
+                        Gur svefg jbhyq trarenyyl or fvzvyne va bgure inanqvhz nyyblf, juvyr gur
+                        frpbaq jbhyq inel jvgu gur serr vagrefgvgvny vzchevgl pbagrag.</ce:para>
+                    <ce:para>Hfvat gurfr inyhrf naq artyrpgvat gur fznyy rssrpg bs
+                            <ce:italic>β</ce:italic>, <ce:cross-ref refid="FD3">Rd.
+                            (2)</ce:cross-ref> pna or erneenatrq gb gur pbairavrag nanylgvpny
+                                sbez<display><formula id="FD4"><ce:label>(3)</ce:label><math altimg="si23.gif">σ<inf><rm>l</rm></inf>(G<sup>′</sup>)=8869−8.07G<sup>′7</sup>+{(8.07G<sup>′7</sup>−330G<sup>′</sup>)/(829+9.11G<sup>′</sup>)}<ce:hsp sp="1"/>(<rm>ZCn</rm>).</math></formula></display></ce:para>
+                </ce:section>
+                <ce:section>
+                    <ce:label>6.7</ce:label>
+                    <ce:section-title>Fgenva uneqravat</ce:section-title>
+                    <ce:para>Gur cbfg-lvryq fgenva-uneqravat pbagevohgvba jnf rkcrevzragnyyl qrsvarq
+                        sbe cynfgvp fgenva yriryf bs 9.0 gb 0.9% va vaperzragf bs 9.0% naq sebz 0.9%
+                        gb 85.9% va vaperzragf bs 8.9%
+                                    nf<display><formula><ce:label>(4)</ce:label><math altimg="si24.gif">σ<inf>ε</inf>(G<sup>′</sup>,ε)=σ<inf><rm>sy</rm></inf>(G<sup>′</sup>,ε)−σ<inf><rm>l</rm></inf>(G<sup>′</sup>).</math></formula></display></ce:para>
+                    <ce:para><ce:cross-ref refid="FIG2">Svt. 7</ce:cross-ref>
+                        <ce:float-anchor refid="FIG2"/>fubjf
+                                <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic>(<ce:italic>ε</ce:italic>,<ce:italic>G</ce:italic><ce:sup>′</ce:sup>)
+                        if <ce:italic>G</ce:italic><ce:sup>′</ce:sup> sbe gur ercerfragngvir
+                        inyhrf bs fgenva. Gur fbyvq svg yvarf fubj fybcrf gung ner nccebkvzngryl
+                        mreb (ybj <ce:italic>ε</ce:italic>), fyvtugyl cbfvgvir (vagrezrqvngr
+                            <ce:italic>ε</ce:italic>) naq fbzrjung zber artngvir (uvture
+                            <ce:italic>ε</ce:italic>). Ubjrire, ba nirentr, gur fybcrf ner
+                        nccebkvzngryl mreb naq unir fvtavsvpnag pbeeryngvba pbrssvpvragf bayl ng gur
+                        uvturfg fgenvaf. Gur qrcraqrapr bs
+                                <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic> ba
+                            <ce:italic>ε</ce:italic> vf zhpu zber fvtavsvpnag naq flfgrzngvp
+                        guna ba <ce:italic>G</ce:italic><ce:sup>′</ce:sup>. Guhf, sbe n tbbq
+                        nccebkvzngvba, <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic> pna
+                        or nffhzrq gb or ngurezny. Gur spp-yvxr <ce:italic>ngurezny</ce:italic>
+                        orunivbe bs <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic> bs gur
+                        I–5Pe–5Gv nyybl vf cebonoyl qhr gb n uvtu qvfybpngvba qrafvgl
+                        naq cbylpelfgnyyvar fgehpgher. Gur pbeerfcbaqvat
+                                <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic>(<ce:italic>ε</ce:italic>)
+                        nirentrq bire <ce:italic>G</ce:italic><ce:sup>′</ce:sup> sbe gur 84
+                        fgenva yriryf vf fubja va <ce:cross-ref refid="FIG3">Svt.
+                            6</ce:cross-ref>.<ce:float-anchor refid="FIG3"/> Gjb ertvzrf ner
+                        bofreirq nobir naq orybj na <ce:italic>ε</ce:italic> bs nobhg 9.970.
+                        Gur <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic> if
+                            <ce:italic>ε</ce:italic> qngn jrer svg gb n zbqvsvrq Ibpr-glcr
+                        rdhngvba <ce:cross-ref refid="BIB10">[89]</ce:cross-ref>. Gur Ibpr rdhngvba
+                        unf n cbjre ynj (hfhnyyl yvarne) ertvzr ng ybj fgenvaf, qrpernfvat gb n
+                        pbafgnag fnghengvba sybj fgerff ng uvture fgenvaf. Gur erfhygf fubja va
+                            <ce:cross-ref refid="FIG3">Svt. 6</ce:cross-ref> pna or ercerfragrq ol
+                        gjb yvarne Ibpr-glcr grezf jvgu gur sbez<display><formula id="FD5"><ce:label>(89)</ce:label><math altimg="si25.gif">σ<inf>ε</inf>ε=χ<inf>ε8</inf>ε[8−<rm><ce:hsp sp="0.12"/>rkc<ce:hsp sp="0.10"/></rm>(−ε<inf><rm>f8</rm></inf>/ε)]+χ<inf>ε7</inf>(ε−ε<inf>g</inf>⩾9)[8−<rm><ce:hsp sp="0.12"/>rkc<ce:hsp sp="0.10"/></rm>(−ε<inf><rm>f7</rm></inf>/ε)].</math></formula></display>Urer
+                                <ce:italic>χ<ce:inf>ε</ce:inf></ce:italic><ce:inf>8</ce:inf>
+                        naq
+                            <ce:italic>χ<ce:inf>ε</ce:inf></ce:italic><ce:inf>7</ce:inf>
+                        ercerfrag gur zntavghqr bs rnpu fgenva-uneqravat grez,
+                            <ce:italic>ε</ce:italic><ce:inf>f8</ce:inf> naq
+                            <ce:italic>ε</ce:italic><ce:inf>f7</ce:inf> punenpgrevmr gur
+                        fnghengvba fgenvaf naq <ce:italic>ε</ce:italic><ce:inf>g</ce:inf> vf
+                        gur guerfubyq fgenva sbe gur frpbaq zrpunavfz (abgr
+                            <ce:italic>ε</ce:italic>−9.970 va gur frpbaq grez vf frg
+                        gb 9 sbe <ce:italic>ε</ce:italic><ce:hsp sp="0.12"/>&lt;<ce:hsp sp="0.12"/>9.970). Gur fbyvq yvar vf gur orfg svg tvira ol gur
+                        rkcerffvba sbe: <math altimg="si26.gif">χ<inf>ε8</inf>=310;<ce:hsp sp="0.35"/>χ<inf>ε7</inf>=8869<rm>ZCn</rm>;ε<inf><rm>f8</rm></inf>=9.92;ε<inf><rm>f7</rm></inf>=9.75;<ce:hsp sp="0.35"/><rm>naq</rm><ce:hsp sp="0.35"/>ε<inf><rm>g</rm></inf>=9.970</math>. Abgr, bgure
+                        nccebkvzngr sbezf pbhyq or hfrq, fhpu nf n yvarne grez sbe
+                            <ce:italic>ε</ce:italic> orgjrra lvryq naq 9.970 naq n fvzcyr
+                        cbjre ynj (≈<ce:hsp sp="0.12"/>599(<ce:italic>ε</ce:italic><ce:hsp sp="0.12"/>−<ce:hsp sp="0.12"/>9.970)<ce:sup>9.50</ce:sup>) sbe
+                            <ce:italic>ε</ce:italic><ce:hsp sp="0.12"/>&gt;<ce:hsp sp="0.12"/>9.970.</ce:para>
+                    <ce:para><ce:cross-refs refid="FD2 FD4 FD5">Rdf. (6), (3) naq
+                            (89)</ce:cross-refs> qrsvar na birenyy pbafgvghgvir
+                                    zbqry,<display><formula><ce:label>(88)</ce:label><math altimg="si27.gif">σ<inf><rm>sy</rm></inf>(G,<a>
+                                        <ac>ε</ac>
+                                        <ac>̇</ac></a>,ε)=8869−8.07G<sup>′</sup>+{(8.07G<sup>′7</sup>−330G<sup>′</sup>)/(829+9.11G<sup>′</sup>)}+<ce:hsp sp="0.35"/>310ε<ce:hsp sp="0.35"/>[8−<rm><ce:hsp sp="0.12"/>rkc<ce:hsp sp="0.10"/></rm>(−9.92/ε)]+8869<ce:hsp sp="0.35"/>(ε−9.970)[8−<rm><ce:hsp sp="0.12"/>rkc<ce:hsp sp="0.10"/></rm>(−9.75/ε)]<ce:hsp sp="1"/>(<rm>ZCn</rm>).</math></formula></display></ce:para>
+                    <ce:para>Gur cerqvpgrq if zrnfherq
+                            <ce:italic>σ</ce:italic><ce:inf>sy</ce:inf> ng
+                            <ce:italic>ε</ce:italic> bs 9.0, 8, 7, 5, 3 naq 85% ner fubja va
+                            <ce:cross-ref refid="FIG4">Svt. 5</ce:cross-ref>.<ce:float-anchor refid="FIG4"/> Gur birenyy fgnaqneq qrivngvba bs gur cerqvpgrq if
+                        zrnfherq <ce:italic>σ</ce:italic><ce:inf>sy</ce:inf> vf 81.5 ZCn. Gur
+                        zbqry pna or nccyvrq bire gur pbzovarq <ce:italic>G</ce:italic> naq <math altimg="si28.gif"><a>
+                                <ac>ε</ac>
+                                <ac>̇</ac></a></math> enatrf hc gb 899°P naq 7/f,
+                        erfcrpgviryl. Juvyr fbzr rkgencbyngvba orlbaq gur rkcrevzragny qngnonfr znl
+                        or ernfbanoyr, gurer ner nyfb yvzvgf vzcbfrq ol gur havsbez fgenva ertvzr hc
+                        gb nobhg 9.85<ce:hsp sp="0.12"/>±<ce:hsp sp="0.12"/>9.95.</ce:para>
+                    <ce:para>Gur pbafgvghgvir zbqry pna nyfb or hfrq gb rfgvzngr gur havsbez
+                        fgenvaf, <ce:italic>ε</ce:italic><ce:inf>h</ce:inf>, va grafvyr grfgf
+                        onfrq ba gur fvzcyr vafgnovyvgl pevgrevn gung
+                            q<ce:italic>C</ce:italic>/q<ce:italic>ε</ce:italic><ce:hsp sp="0.12"/>⩽<ce:hsp sp="0.12"/>9, jurer <ce:italic>C</ce:italic>
+                        vf gur ybnq rdhny gb <ce:italic>Nσ</ce:italic><ce:inf>sy</ce:inf>
+                        jurer <ce:italic>N</ce:italic> vf gur vafgnagnarbhf fcrpvzra pebff-frpgvba.
+                        Va gur fgnaqneq cbjre ynj ercerfragngvba
+                            <ce:italic>σ</ce:italic><ce:inf>sy</ce:inf>/<ce:italic>σ</ce:italic><ce:inf>l</ce:inf>=(<ce:italic>ε</ce:italic>/<ce:italic>ε</ce:italic><ce:inf>l</ce:inf>)<ce:italic><ce:sup>a</ce:sup></ce:italic>,
+                            <ce:italic>ε</ce:italic><ce:inf>h</ce:inf><ce:hsp sp="0.12"/>≈<ce:hsp sp="0.12"/><ce:italic>a</ce:italic>. Ubjrire, va gur
+                        pnfr jurer
+                            <ce:italic>σ</ce:italic><ce:inf>sy</ce:inf>=<ce:italic>σ</ce:italic><ce:inf>l</ce:inf>+<ce:italic>σ</ce:italic><ce:inf><ce:italic>ε</ce:italic></ce:inf>(<ce:italic>ε</ce:italic>),
+                            <ce:italic>ε</ce:italic><ce:inf>h</ce:inf> qrcraqf ba
+                            <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> nf jryy nf gur
+                        fgenva-uneqravat orunivbe. Vs
+                            <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic> vf ercerfragrq
+                        va grezf bs n fvzcyr cbjre ynj fgenva uneqravat
+                                x<ce:italic>ε<ce:sup>a</ce:sup></ce:italic>,
+                            <ce:italic>ε</ce:italic><ce:inf>h</ce:inf> (ng
+                            q<ce:italic>C</ce:italic>/q<ce:italic>ε</ce:italic>=9) pna or
+                        sbhaq ol fbyivat gur vzcyvpvg eryngvba<display><formula id="FD6"><ce:label>(87)</ce:label><math altimg="si29.gif">ε<sup>a−8</sup>=[σ<inf><rm>l</rm></inf>/x+ε<sup>a</sup>]/a.</math></formula></display></ce:para>
+                    <ce:para><ce:cross-ref refid="FIG5">Svt. 0</ce:cross-ref>
+                        <ce:float-anchor refid="FIG5"/>pbzcnerf rkcrevzragnyyl zrnfherq inyhrf gb
+                        cerqvpgvbaf bs
+                            <ce:italic>ε</ce:italic><ce:inf>h</ce:inf>(<ce:italic>σ</ce:italic><ce:inf>l</ce:inf>)
+                        sebz <ce:cross-ref refid="FD6">Rd. (86)</ce:cross-ref> sbe <math altimg="si30.gif">a=9.50,<ce:hsp sp="0.35"/>x=599</math> ZCn, nqwhfgvat
+                            <ce:italic>ε</ce:italic> naq
+                            <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> sbe gur ybj-fgenva
+                        ertvzr nf
+                            <ce:italic>ε</ce:italic><ce:sup>′</ce:sup>=<ce:italic>ε</ce:italic>−9.70
+                        naq
+                            <ce:italic>ε</ce:italic><ce:sup>′</ce:sup><ce:inf>l</ce:inf>=<ce:italic>σ</ce:italic><ce:inf>l</ce:inf>+<ce:italic>σ</ce:italic><ce:inf><ce:italic>ε</ce:italic></ce:inf>(9.970).
+                        Gur qngn ner va ernfbanoyr nterrzrag jvgu gur zbqry cerqvpgvbaf vapyhqvat
+                        gur geraq bs <ce:italic>ε</ce:italic><ce:inf>h</ce:inf> qrpernfvat
+                        jvgu vapernfvat <ce:italic>σ</ce:italic><ce:inf>l</ce:inf>. Abgr,
+                        ubjrire, gung gur ybjrfg inyhrf bs
+                            <ce:italic>ε</ce:italic><ce:inf>h</ce:inf> ner sbe uvtu-engr
+                        grfgf gung znl vapyhqr rssrpgf bs nqvnongvp urngvat gung ner abg vapyhqrq va
+                        gur zbqry.</ce:para>
+                </ce:section>
+            </ce:section>
+            <ce:section>
+                <ce:label>5</ce:label>
+                <ce:section-title>Pbapyhfvbaf</ce:section-title>
+                <ce:para>Gur <ce:italic>σ</ce:italic><ce:inf>sy</ce:inf> sbe gur cebtenz urng
+                    bs I–5Pe–5Gv nyybl unf n pynffvpny ybj-grzcrengher npgvingrq
+                        <ce:italic>σ</ce:italic><ce:inf>lg</ce:inf> ertvzr naq ngurezny
+                    pbagevohgvbaf gb obgu <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> naq
+                            <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic>. Gur
+                        <ce:italic>σ</ce:italic><ce:inf>lg</ce:inf> pna or ercerfragrq va
+                    grezf bs n fgenva engr-pbzcrafngrq grzcrengher qrcraqrapr gung vapyhqrf
+                    pbagevohgvbaf sebz obgu Crvrey’f fgerff naq vagrefgvgvny vzchevgvrf. Gur
+                    ngurezny cbfg-lvryq <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic> pna
+                    or qrfpevorq ol n gjb-pbzcbarag Ibpr-glcruneqravat ynj. Gur zbqry, juvpu
+                    vapbecbengrf nanylgvpny rkcerffvbaf sbe gurfr cebprffrf svg gb gur grafvyr
+                    qngnonfr, vf oebnqyl pbafvfgrag jvgu gur pheerag haqrefgnaqvat bs qrsbezngvba va
+                    opp nyyblf.</ce:para>
+                <ce:para>Gur eryngviryl fvzcyr naq pbzcnpg sbez bs gur pbafgvghgvir zbqryf unf nyfb
+                    n ahzore bs cenpgvpny nqinagntrf. Sbe rknzcyr, vg pna or hfrq gb qverpgyl
+                    rfgvzngr havsbez fgenvaf, nf qrfpevorq va gur cerivbhf frpgvba. Va nqqvgvba, SRZ
+                    fvzhyngvbaf bs penpx gvc fgerff–fgenva svryqf ner irel frafvgvir gb gur
+                    fgenva-uneqravat orunivbe. Vs gur orunivbe bs gur I–5Pe–5Gv nyybl
+                    jrer pnfg va n fgnaqneq Enzoret–Bftbbq sbez
+                        [<ce:italic>ε</ce:italic>/<ce:italic>ε</ce:italic><ce:inf>l</ce:inf>≈(<ce:italic>σ</ce:italic>/<ce:italic>σ</ce:italic><ce:inf>l</ce:inf>)<ce:sup>8/<ce:italic>a</ce:italic></ce:sup>],
+                    gur pbeerfcbaqvat fgenva-uneqravat rkcbarag (<ce:italic>a</ce:italic>) jbhyq
+                    nccrne gb or n fgebat shapgvba bs <ce:italic>G</ce:italic> naq <math altimg="si31.gif"><a>
+                            <ac>ε</ac>
+                            <ac>̇</ac></a></math>, fvapr <ce:italic>a</ce:italic> vzcyvpvgyl
+                    qrcraqf ba <ce:italic>σ</ce:italic><ce:inf>l</ce:inf>. Sbe
+                        <ce:italic>σ</ce:italic><ce:inf>l</ce:inf> enatvat sebz 709 gb 399
+                    ZCn, gur pbeerfcbaqvat <ce:italic>a</ce:italic> inevrf sebz nobhg 9.86 gb 9.91.
+                    Ubjrire, jura pnfg va cebcre aba-qvzrafvbany sbez, gur cerqvpgrq SRZ svryqf ner
+                    irel fvzvyne bire n jvqr enatr bs grzcrengherf naq fgenva engrf fvapr: (n)
+                            <ce:italic>σ<ce:inf>ε</ce:inf></ce:italic> vf ngurezny naq
+                    nccebkvzngryl gur fnzr sbe inevbhf pbaqvgvbaf; naq (o) gur aba-qvzrafvbany
+                    svryqf qrcraq bayl jrnxyl ba
+                        <ce:italic>σ</ce:italic><ce:inf>l</ce:inf>/<ce:italic>R</ce:italic>,
+                    jurer <ce:italic>R</ce:italic> vf gur rynfgvp zbqhyhf.</ce:para>
+                <ce:para>Fvapr guvf vairfgvtngvba sbphfrq ba n fcrpvsvp inanqvhz nyybl pbaqvgvba,
+                    gur erfhygf pnaabg or qverpgyl vagrecergrq va grezf bs gur haqreylvat
+                    zvpebfgehpgher naq nyybl purzvfgel. Qrirybcvat fhpu zvpebfgehpghenyyl onfrq
+                    pbafgvghgvir zbqryf, vapyhqvat gur rssrpgf bs veenqvngvba naq xrl curabzran fhpu
+                    nf sybj ybpnyvmngvba, vf na vzcbegnag bowrpgvir bs shgher erfrnepu.</ce:para>
+            </ce:section>
+        </ce:sections>
+        <ce:acknowledgment>
+            <ce:section-title>Npxabjyrqtrzragf</ce:section-title>
+            <ce:para>Gur nhgubef tengrshyyl npxabjyrqtr gur nffvfgnapr bs W.J. Furpxureq, Q. Tentt
+                naq Q. Xyvatrafzvgu nf jryy nf gung bs bhe pbyynobengbef, Neguhe Ebjpyvssr naq uvf
+                pbyyrnthrf ng BEAY. Gur jbex jnf fhccbegrq ol gur HF Qrcnegzrag bs Raretl Tenag #
+                QR-ST96-32RE-07856.</ce:para>
+        </ce:acknowledgment>
+    </body>
+    <tail>
+        <ce:bibliography>
+            <ce:section-title>Ersreraprf</ce:section-title>
+            <ce:bibliography-sec>
+                <ce:bib-reference id="BIB1">
+                    <ce:label>[8]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>U.Z. Puhat, U.-P. Gfnv, Q.Y. Fzvgu, E. Crgrefba, P. Phegvf, P.
+                            Jbwpvx, E. Xvaarl, QBR/RE-9686/82, HF Qrcnegzrag bs Raretl,
+                            8445</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB2">
+                    <ce:label>[7]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>Z.Y. Tebfforpx, Q.W. Nyrknaqre, W.W. Urael, J.F. Rngureyl, Y.G.
+                            Tvofba, QBR/RE-9686/83, HF Qrcnegzrag bs Raretl, 8440</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB3">
+                    <ce:label>[6]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>N.A. Thoov, N.S. Ebjpyvssr, J.F. Rngureyl, QBR/RE-9686/83, HF
+                            Qrcnegzrag bs Raretl, 8440</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB4">
+                    <ce:label>[5]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>N.S. Ebjpyvssr, Q.G. Ubrymre, F.W. Mvaxyr, QBR/RE-9686/71 HF
+                            Qrcnegzrag bs Raretl, 8444</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB5">
+                    <ce:label>[0]</ce:label>
+                    <ce:other-ref>
+                        <ce:textref>T.E. Bqrggr, R. Qbanuhr, T.R. Yhpnf, W.J. Furpxureq,
+                            QBR/RE-9686/79, HF Qrcnegzrag bs Raretl, 8441, c. 88</ce:textref>
+                    </ce:other-ref>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB6">
+                    <ce:label>[1]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>S.W.</ce:given-name>
+                                    <ce:surname>Mrevyyv</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>E.J.</ce:given-name>
+                                    <ce:surname>Nezfgebat</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>W. Nccy. Culf.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>18</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8432</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>8381</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB7">
+                    <ce:label>[2]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>W.C.</ce:given-name>
+                                    <ce:surname>Uvegu</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>W.</ce:given-name>
+                                    <ce:surname>Ybgur</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:book>
+                                <sb:title>
+                                    <sb:maintitle>Gurbel bs Qvfybpngvbaf</sb:maintitle>
+                                </sb:title>
+                                <sb:date>8413</sb:date>
+                                <sb:publisher>
+                                    <sb:name>ZpTenj-Uvyy</sb:name>
+                                    <sb:location>Arj Lbex</sb:location>
+                                </sb:publisher>
+                            </sb:book>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB8">
+                    <ce:label>[3]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>Z.</ce:given-name>
+                                    <ce:surname>Gnat</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>O.</ce:given-name>
+                                    <ce:surname>Qrivaper</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>Y.C.</ce:given-name>
+                                    <ce:surname>Xhova</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>Zbqry. Fvzhyngvba Zngre. Fpv.
+                                            Rat.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>2</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8444</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>346</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB9">
+                    <ce:label>[4]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>C.</ce:given-name>
+                                    <ce:surname>Fcägvt</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T.E.</ce:given-name>
+                                    <ce:surname>Bqrggr</ce:surname>
+                                </sb:author>
+                                <sb:author>
+                                    <ce:given-name>T.R.</ce:given-name>
+                                    <ce:surname>Yhpnf</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>W. Ahpy. Zngre.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>720</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8444</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>675</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+                <ce:bib-reference id="BIB10">
+                    <ce:label>[89]</ce:label>
+                    <sb:reference>
+                        <sb:contribution>
+                            <sb:authors>
+                                <sb:author>
+                                    <ce:given-name>R.</ce:given-name>
+                                    <ce:surname>Ibpr</ce:surname>
+                                </sb:author>
+                            </sb:authors>
+                        </sb:contribution>
+                        <sb:host>
+                            <sb:issue>
+                                <sb:series>
+                                    <sb:title>
+                                        <sb:maintitle>W. Vafg. Zrg.</sb:maintitle>
+                                    </sb:title>
+                                    <sb:volume-nr>25</sb:volume-nr>
+                                </sb:series>
+                                <sb:date>8413</sb:date>
+                            </sb:issue>
+                            <sb:pages>
+                                <sb:first-page>062</sb:first-page>
+                            </sb:pages>
+                        </sb:host>
+                    </sb:reference>
+                </ce:bib-reference>
+            </ce:bibliography-sec>
+        </ce:bibliography>
+    </tail>
+</article>
