@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
@@ -12,6 +13,10 @@
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="article_set/article">
+        <xsl:comment>
+            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:value-of select="$datecreation"/>
+        </xsl:comment>
         <xsl:variable name="ms_no" select="@ms_no"/>
         <xsl:variable name="localISSN">
             <xsl:value-of select="journal/issn[@issn_type='print']"/>
@@ -19,6 +24,9 @@
         <xsl:variable name="journalDescription"
             select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
@@ -26,6 +34,7 @@
                     </titleStmt>
                     <xsl:if test="CopyrightInformation">
                         <publicationStmt>
+                            <authority>ISTEX</authority>
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </publicationStmt>
                     </xsl:if>
@@ -128,9 +137,25 @@
                 <!--front>
                     <xsl:apply-templates select="abstract"/>
                 </front-->
-                <body>
-                    <xsl:apply-templates select="body/*"/>
-                </body>
+                <xsl:choose>
+                    <xsl:when test="body/*">
+                        <body>
+                            <xsl:apply-templates select="body/*"/>
+                        </body>
+                    </xsl:when>
+                    <xsl:when test="string-length($rawfulltextpath) &gt; 0">
+                        <body>
+                            <div>
+                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                            </div>
+                        </body>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <body>
+                            <div><p></p></div>
+                        </body>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <back>
                     <xsl:apply-templates select="back/*"/>
                 </back>
@@ -207,16 +232,18 @@
     <!-- +++++++++++++++++++++++++++++++++++++++++++++ -->
     <!-- author related information -->
 
-    <xsl:template match="author">
+    <xsl:template match="author" mode="scholarOne">
         <author>
             <xsl:if test="@corr='true'">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>
-            <idno type="author">
-                <xsl:value-of select="@user_id"/>
-            </idno>
+            <xsl:if test="@user_id">
+                <idno type="author">
+                    <xsl:value-of select="@user_id"/>
+                </idno>
+            </xsl:if>
             <persName>
                 <xsl:apply-templates
                     select="salutation | first_name | middle_name | last_name | suffix | degree"/>
@@ -227,23 +254,40 @@
         </author>
     </xsl:template>
 
-    <xsl:template match="contrib[@contrib-type='editor']">
-        <editor>
-            <xsl:apply-templates/>
-        </editor>
-    </xsl:template>
-
     <xsl:template match="contrib">
-        <respStmt>
-            <resp>
-                <xsl:value-of select="@contrib-type"/>
-            </resp>
+        <author>
+            <xsl:variable name="i" select="position()-1"/>
+            <xsl:variable name="authorNumber">
+                <xsl:choose>
+                    <xsl:when test="$i &lt; 10">
+                        <xsl:value-of select="concat('author-000', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 100">
+                        <xsl:value-of select="concat('author-00', $i)"/>
+                    </xsl:when>
+                    <xsl:when test="$i &lt; 1000">
+                        <xsl:value-of select="concat('author-0', $i)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="concat('author-', $i)"/>
+                    </xsl:otherwise>
+                </xsl:choose> 
+            </xsl:variable>
+            <xsl:if test="not(ancestor::sub-article) or not(ancestor::ref)">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="$authorNumber"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
-        </respStmt>
+            <roleName>
+                <xsl:value-of select="@contrib-type"/>
+            </roleName>
+        </author>
     </xsl:template>
 
     <xsl:template match="comments">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space(.)">
+<!--nettoyage des espaces vides dans le contenu des balises-->
             <note>
                 <xsl:apply-templates/>
             </note>
@@ -285,7 +329,7 @@
     <xsl:template match="web_publish_date" mode="inImprint">
         <xsl:if test="year != ''">
             <date>
-                <xsl:attribute name="type">ePublished</xsl:attribute>
+                <xsl:attribute name="type">e-published</xsl:attribute>
                 <xsl:attribute name="when">
                     <xsl:call-template name="makeISODateFromComponents">
                         <xsl:with-param name="oldDay" select="day"/>
@@ -299,7 +343,7 @@
 
     <xsl:template match="custom_fields[@cd_code='Wiley - Published online date']" mode="inImprint">
         <date>
-            <xsl:attribute name="type">Published</xsl:attribute>
+            <xsl:attribute name="type">published</xsl:attribute>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay" select="substring-before(@cd_value,'-')"/>

@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="metadata">
+        <xsl:comment>
+            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:value-of select="$datecreation"/>
+        </xsl:comment>
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
@@ -15,6 +22,7 @@
                     </titleStmt>
                     <xsl:if test="miscinfo/copyright">
                         <publicationStmt>
+                            <authority>ISTEX</authority>
                             <xsl:apply-templates select="miscinfo/copyright/*"/>
                         </publicationStmt>
                     </xsl:if>
@@ -61,9 +69,25 @@
                 <!--front>
                     <xsl:apply-templates select="abstract"/>
                 </front-->
-                <body>
-                    <xsl:apply-templates select="body/*"/>
-                </body>
+                <xsl:choose>
+                    <xsl:when test="body/*">
+                        <body>
+                            <xsl:apply-templates select="body/*"/>
+                        </body>
+                    </xsl:when>
+                    <xsl:when test="string-length($rawfulltextpath) &gt; 0">
+                        <body>
+                            <div>
+                                <p><xsl:value-of select="unparsed-text($rawfulltextpath, 'UTF-8')"/></p>
+                            </div>
+                        </body>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <body>
+                            <div><p></p></div>
+                        </body>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <back>
                     <xsl:apply-templates select="back/*"/>
                 </back>
@@ -195,7 +219,7 @@
 
     <xsl:template match="history/accepted-date" mode="inImprint">
         <date>
-            <xsl:attribute name="type">Accepted</xsl:attribute>
+            <xsl:attribute name="type">accepted</xsl:attribute>
             <xsl:attribute name="when">
                 <xsl:call-template name="makeISODateFromComponents">
                     <xsl:with-param name="oldDay"

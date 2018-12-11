@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
-
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd" 
+    xmlns:mml="http://www.w3.org/1998/Math/MathML"
+    xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
+    xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
+    xmlns:s1="http://www.elsevier.com/xml/si/dtd"
+    xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
+    xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
+    <!-- ajout déclaration schema ODD-ISTEX -->
+    
     <xsl:output encoding="UTF-8" method="xml"/>
 
     <xsl:template match="ArticleSet">
@@ -16,8 +26,14 @@
         </xsl:variable>
         <xsl:variable name="journalDescription"
             select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>-->
-
+        <xsl:comment>
+            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:value-of select="$datecreation"/>
+        </xsl:comment>
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <xsl:if test="Language">
                 <xsl:attribute name="xml:lang">
                     <xsl:choose>
@@ -32,11 +48,12 @@
                         <xsl:apply-templates select="ArticleTitle"/>
                     </titleStmt>
                     <publicationStmt>
+                        <authority>ISTEX</authority>
                         <xsl:if test="CopyrightInformation">
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </xsl:if>
                         <xsl:if test="OpenAccess[string(.)='True']">
-                            <availability status="OpenAccess">
+                            <availability status="free">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
@@ -141,7 +158,7 @@
         <author>
             <xsl:if
                 test="@corresp='yes' or (Affiliation and not(preceding-sibling::Author/Affiliation))">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>

@@ -36,4 +36,7 @@ The following publisher's formats should be properly processed:
 
 Pub2TEI is distributed under [BSD 2-clause](https://opensource.org/licenses/BSD-2-Clause) license. 
 
-Main author: __Laurent Romary__, Laurent.Romary@inria.fr
+authors: 
+* __Laurent Romary__, Laurent.Romary@inria.fr
+* __Stephanie Gregorio__, stephanie.gregorio@inist.fr
+* __Patrice Lopez__, patrice.lopez@science-miner.com

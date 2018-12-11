@@ -1,37 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
+    xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
+    xmlns:s1="http://www.elsevier.com/xml/si/dtd"
     xmlns:cals="http://www.elsevier.com/xml/common/cals/dtd"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley"
+    xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table"
 	exclude-result-prefixes="#all" version="2.0"
-    xmlns="http://www.tei-c.org/ns/1.0">
-
+	xmlns="http://www.tei-c.org/ns/1.0">
 
     <!-- Royal Chemical Society: table-entry; NLM: table-wrap -->
     <xsl:template match="table-entry | table-wrap | table">
-        <figure type="table">
+        <table>
             <xsl:if test="@id">
                 <xsl:attribute name="xml:id">
                     <xsl:value-of select="@id"/>
                 </xsl:attribute>
             </xsl:if>
+            <xsl:if test="oasis:table/@rowsep">
+                <xsl:attribute name="rows">
+                    <xsl:value-of select="oasis:table/@rowsep"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="oasis:table/@colsep">
+                <xsl:attribute name="cols">
+                    <xsl:value-of select="oasis:table/@colsep"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@id">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="@id"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@position">
+                <xsl:attribute name="rend">
+                    <xsl:value-of select="@position"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="label">
+                <head type="label">
+                    <xsl:value-of select="label"/>
+                </head>
+            </xsl:if>
             <xsl:apply-templates select="* except tgroup"/>
-			<table>
+			<!--<table>
 				<xsl:apply-templates select="tgroup"/>
-			</table>
-        </figure>
+			</table>-->
+        </table>
+    </xsl:template>
+    
+    <!-- American chemical Society: oasis:table; oasis:table-wrap -->
+    <xsl:template match="oasis:table">
+        <xsl:apply-templates select="*"/>
+    </xsl:template>
+    
+    <xsl:template match="label">
+                <xsl:apply-templates select="*"/>
+    </xsl:template>
+    <!--elsevier-->
+    <xsl:template match="ce:table">
+        <div type="table">
+            <table>
+                <xsl:if test="@id">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="@id"/>
+                    </xsl:attribute>
+                </xsl:if>
+                <xsl:apply-templates select="*"/>
+                
+            </table>
+        </div>
     </xsl:template>
 
-    <xsl:template match="table-entry/title | table-wrap/label | ce:table/ce:caption">
+    <xsl:template match="table-entry/title| ce:table/ce:caption">
         <head>
             <xsl:apply-templates/>
         </head>
     </xsl:template>
+    <!-- le label est reporté dans l'attribut "@n"
+        <xsl:template match="table-wrap/label">
+        <label>
+            <xsl:apply-templates/>
+        </label>
+    </xsl:template>-->
 
     <xsl:template match="table-wrap-foot">
-        <ab type="table-wrap-foot">
+        <note type="table-wrap-foot">
             <xsl:apply-templates/>
-        </ab>
+        </note>
     </xsl:template>
 
     <xsl:template match="table-wrap-foot/fn">
@@ -58,7 +114,9 @@
     
     <!-- SG - traitement tables WILEY -->
     <xsl:template match="wiley:thead">
-        <xsl:apply-templates select="wiley:row"/>
+        <head>
+            <xsl:value-of select="wiley:row/wiley:entry"/>
+        </head>
     </xsl:template>
     <xsl:template match="wiley:tbody">
         <xsl:apply-templates select="wiley:row"/>
@@ -82,14 +140,14 @@
             <xsl:if test="@align">
                 <xsl:attribute name="style"><xsl:text>align(</xsl:text><xsl:apply-templates select="@align"/><xsl:text>)</xsl:text></xsl:attribute>
             </xsl:if>
-            <xsl:if test="@colname">
-                <xsl:attribute name="cols"><xsl:value-of select="translate(@colname,'col','')"></xsl:value-of></xsl:attribute>
+            <xsl:if test="@colname and not(@rowsep) or not(@morerows)">
+                <xsl:attribute name="role"><xsl:value-of select="@colname"></xsl:value-of></xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
         </cell>
     </xsl:template>
     
-    <xsl:template match="wiley:colspec | wiley:tgroup">
+    <xsl:template match="wiley:colspec">
         <!-- not obvious to use in TEI transformation -->
         <xsl:apply-templates select="*"/>
     </xsl:template>
@@ -108,21 +166,33 @@
     <xsl:template match="tbody | cals:tbody | cals:tgroup">
         <xsl:apply-templates/>
     </xsl:template>
+    <xsl:template match="oasis:tgroup">
+        <xsl:apply-templates select="* except oasis:colspec"/>
+    </xsl:template>
 
-    <xsl:template match="table-entry/table | table-wrap/table | els:display[not(parent::ce:para)]/ce:table">
-        <ab>
+    <xsl:template match="table-entry/table | table-wrap/table | els1:display[not(parent::ce:para)]/ce:table| els2:display[not(parent::ce:para)]/ce:table">
+       <!-- <ab>
             <table>
                 <xsl:apply-templates/>
             </table>
-        </ab>
+        </ab>-->
+        <xsl:apply-templates/>
     </xsl:template>
 
     <!-- exception Elsevier si on est déjà dans un paragraph et Wiley dans un <tabular> -->
-    <xsl:template match="ce:para/els:display/ce:table | wiley:table">
+    <xsl:template match="ce:para/els1:display/ce:table |ce:para/els2:display/ce:table">
         <table>
-            <xsl:if test="wiley:tgroup/@cols">
+            <xsl:apply-templates/>
+        </table>
+    </xsl:template>
+    <xsl:template match="wiley:table">
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="wiley:tgroup">
+        <table>
+            <xsl:if test="@cols">
                 <xsl:attribute name="cols">
-                    <xsl:value-of select="wiley:tgroup/@cols"/>
+                    <xsl:value-of select="@cols"/>
                 </xsl:attribute>
             </xsl:if>
             <xsl:apply-templates/>
@@ -134,21 +204,39 @@
     </xsl:template>
     
     <xsl:template match="array">
-        <ab type="array">
+        <ref type="array">
             <table>
                 <xsl:apply-templates/>
             </table>
-        </ab>
+        </ref>
     </xsl:template>
 
     <xsl:template match="th">
         <cell role="th">
+            <xsl:if test="@align">
+                <xsl:attribute name="rend">align(<xsl:value-of select="@align"/>)</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@rowspan">
+                <xsl:attribute name="rows"><xsl:value-of select="@rowspan"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@colspan">
+                <xsl:attribute name="cols"><xsl:value-of select="@colspan"/></xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </cell>
     </xsl:template>
 
     <xsl:template match="td">
         <cell role="td">
+            <xsl:if test="@align">
+                <xsl:attribute name="rend">align(<xsl:value-of select="@align"/>)</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@rowspan">
+                <xsl:attribute name="rows"><xsl:value-of select="@rowspan"/></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@colspan">
+                <xsl:attribute name="cols"><xsl:value-of select="@colspan"/></xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </cell>
     </xsl:template>
@@ -208,7 +296,44 @@
             <xsl:apply-templates select="*"/>
         </figure>
     </xsl:template>
-	
     
-
+    <!-- SG - traitement tables ACS -->
+    <xsl:template match="oasis:thead">
+        <head>
+            <xsl:value-of select="oasis:row/oasis:entry"/>
+        </head>
+    </xsl:template>
+    <xsl:template match="oasis:tbody">
+        <xsl:apply-templates select="oasis:row"/>
+    </xsl:template>
+    <xsl:template match="oasis:row">
+        <row>
+            <xsl:if test="@rowsep">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates select="oasis:entry"/>
+        </row>
+    </xsl:template>
+    <xsl:template match="oasis:entry">
+        <cell>
+            <xsl:if test="@rowsep">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@morerows &gt;1">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@align">
+                <xsl:attribute name="style"><xsl:text>align(</xsl:text><xsl:apply-templates select="@align"/><xsl:text>)</xsl:text></xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@colname">
+                <xsl:attribute name="cols"><xsl:value-of select="@colname"></xsl:value-of></xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </cell>
+    </xsl:template>
+    
+    <xsl:template match="oasis:colspec">
+        <!-- not obvious to use in TEI transformation -->
+        <xsl:apply-templates select="*"/>
+    </xsl:template>
 </xsl:stylesheet>

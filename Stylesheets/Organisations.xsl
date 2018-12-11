@@ -11,14 +11,17 @@
     <xsl:template name="identifyOrgLevel">
         <xsl:param name="theOrg"/>
         <xsl:choose>
-            <xsl:when test="contains($theOrg,'Universi') or contains($theOrg,'Academy') or contains($theOrg,'Pasteur') or starts-with($theOrg,'Inserm')">
+            <xsl:when test="contains($theOrg,'Universi') or contains($theOrg,'Academy') or contains($theOrg,'Pasteur') or starts-with($theOrg,'Inserm')  or starts-with($theOrg,'Ministr')">
                 <xsl:text>institution</xsl:text>
             </xsl:when>
-            <xsl:when test="contains($theOrg,'Depart') or contains($theOrg,'Dept') or contains($theOrg,'Dipart') or contains($theOrg,'Départ') or contains($theOrg,'School') or contains($theOrg,'Facul') or starts-with($theOrg,'Insti')">
+            <xsl:when test="contains($theOrg,'Depart') or contains($theOrg,'Dept') or contains($theOrg,'Dipart') or contains($theOrg,'Départ') or contains($theOrg,'School') or contains($theOrg,'Ecole')or contains($theOrg,'Facul')">
                 <xsl:text>department</xsl:text>
             </xsl:when>
             <xsl:when test="contains($theOrg,'Unit') or contains($theOrg,'Labo') or contains($theOrg,'Servic')">
                 <xsl:text>laboratory</xsl:text>
+            </xsl:when>
+            <xsl:when test="contains($theOrg,'Institut')">
+                <xsl:text>institution</xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:message>Org inconnue: <xsl:value-of select="$theOrg"/></xsl:message>

@@ -124,16 +124,16 @@
     </xsl:template>
 
     <xsl:template match="JournalID">
-        <xsl:if test=".!=''">
-            <idno type="JournalID">
+        <xsl:if test="normalize-space(.)">
+            <idno type="journal-id">
                 <xsl:apply-templates/>
             </idno>
         </xsl:if>
     </xsl:template>
 
     <xsl:template match="ArticleInfo/ArticleID">
-        <xsl:if test=".!=''">
-            <idno type="ArticleID">
+        <xsl:if test="normalize-space(.)">
+            <idno type="article-id">
                 <xsl:apply-templates/>
             </idno>
         </xsl:if>
@@ -167,6 +167,9 @@
             <xsl:call-template name="createSpringerAffiliations">
                 <xsl:with-param name="restAff" select="@AffiliationIDS"/>
             </xsl:call-template>
+            <xsl:call-template name="createSpringerAffiliations2">
+                <xsl:with-param name="restAff2" select="@PresentAffiliationID"/>
+            </xsl:call-template>
         </author>
     </xsl:template>
     
@@ -177,6 +180,9 @@
             <xsl:apply-templates/>
             <xsl:call-template name="createSpringerAffiliations">
                 <xsl:with-param name="restAff" select="@AffiliationIDS"/>
+            </xsl:call-template>
+            <xsl:call-template name="createSpringerAffiliations2">
+                <xsl:with-param name="restAff2" select="@PresentAffiliationID"/>
             </xsl:call-template>
         </editor>
     </xsl:template>
@@ -196,6 +202,21 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+    <xsl:template name="createSpringerAffiliations2">
+        <xsl:param name="restAff2"/>
+        <xsl:message>Affiliations: <xsl:value-of select="$restAff2"/></xsl:message>
+        <xsl:choose>
+            <xsl:when test=" contains($restAff2,' ')">
+                <xsl:apply-templates select="../Affiliation[@ID=substring-before($restAff2,' ')]"/>
+                <xsl:call-template name="createSpringerAffiliations">
+                    <xsl:with-param name="restAff" select="substring-after($restAff2,' ')"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="../Affiliation[@ID=$restAff2]"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
     <xsl:template match="AuthorName | EditorName">
         <persName>
@@ -204,7 +225,7 @@
     </xsl:template>
 
     <xsl:template match="Contact">
-        <xsl:apply-templates/>
+        <xsl:apply-templates select="Email"/>
     </xsl:template>
 
     <xsl:template match="Biography">
@@ -370,13 +391,18 @@
     <!-- Journal information for <monogr> -->
 
     <xsl:template match="BookTitle">
-        <title level="m">
+        <title level="m" type="main">
             <xsl:apply-templates/>
         </title>
     </xsl:template>
     
     <xsl:template match="BookSubTitle">
         <title level="m" type="sub">
+            <xsl:apply-templates/>
+        </title>
+    </xsl:template>
+    <xsl:template match="PartTitle">
+        <title level="m" type="part">
             <xsl:apply-templates/>
         </title>
     </xsl:template>
@@ -448,13 +474,20 @@
         </figure>
     </xsl:template>
 
-    <xsl:template match="ImageObject">
+   <!-- <xsl:template match="ImageObject">
         <graphic>
             <xsl:attribute name="url">
-                <xsl:value-of select="@FileRef"/>
+                <xsl:choose>
+                    <xsl:when test="@FileRef">
+                        <xsl:value-of select="@FileRef"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="."/>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:attribute>
         </graphic>
-    </xsl:template>
+    </xsl:template>-->
 
     <xsl:template match="CaptionNumber">
         <head>
@@ -467,7 +500,12 @@
     </xsl:template>
 
     <xsl:template match="MediaObject">
-        <xsl:apply-templates/>
+        <media mimeType="image" url="{ImageObject}"/>
+        
+    </xsl:template>
+    
+    <xsl:template match="EquationSource">
+                    <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="Caption">
@@ -499,13 +537,15 @@
     </xsl:template>
 
     <xsl:template match="CopyrightHolderName">
-        <authority>
+        <availability>
+            <licence>
             <xsl:apply-templates/>
-        </authority>
+            </licence>
+        </availability>
     </xsl:template>
 
     <xsl:template match="CopyrightYear">
-        <date>
+        <date when="{.}">
             <xsl:apply-templates/>
         </date>
     </xsl:template>
@@ -568,6 +608,9 @@
 
     <xsl:template match="entry">
         <cell>
+            <xsl:if test="ancestor::thead">
+                <xsl:attribute name="role">label</xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
         </cell>
     </xsl:template>
@@ -585,6 +628,10 @@
 
     <xsl:template match="Stack">
         <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="InlineMediaObject">
+        <media mimeType="image" url="{ImageObject}"/>
     </xsl:template>
     
     <xsl:template match="VolumeInfo">

@@ -3,6 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
     xmlns:cals="http://www.elsevier.com/xml/common/cals/dtd"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:wiley="http://www.wiley.com/namespaces/wiley" xmlns:wiley2="http://www.wiley.com/namespaces/wiley/wiley" xmlns:m="http://www.w3.org/1998/Math/MathML/"
+    xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table"
 	exclude-result-prefixes="#all" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0">
 
@@ -23,18 +24,92 @@
             <xsl:apply-templates/>
         </head>
     </xsl:template>
-
-    <xsl:template match="fig/caption/p">
-        <figDesc>
-            <xsl:apply-templates/>
-        </figDesc>
-    </xsl:template>
     <xsl:template match="fig/credit">
         <p>
             <xsl:apply-templates/>
         </p>
     </xsl:template>
-	
+    <!-- elsevier -->
+    <xsl:template match="ce:floats">
+        <xsl:apply-templates/>
+    </xsl:template>
+	<!-- IOP -->
+    <xsl:template match="figure">
+        <figure>
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+            <xsl:if test="@height">
+            <xsl:attribute name="rendition">
+                <xsl:value-of select="@height"/>
+            </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@width">
+            <xsl:attribute name="rend">
+                <xsl:value-of select="@width"/>
+            </xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+            <xsl:if test="@xsrc">
+            <p>
+                <xsl:value-of select="@xsrc"/>
+            </p>
+            </xsl:if>
+        </figure>
+    </xsl:template>
+    <xsl:template match="figure/title">
+        <head>
+            <xsl:apply-templates/>
+        </head>
+    </xsl:template>
+    <xsl:template match="caption/p">
+        <xsl:choose>
+            <xsl:when test="ancestor::table-wrap">
+                <head>
+                    <xsl:apply-templates/>
+                </head>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="fn">
+                        <xsl:apply-templates/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:if test="normalize-space(.)">
+                            <figDesc>
+                                <xsl:apply-templates/>
+                            </figDesc>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="graphic-file">
+        <desc>
+            <xsl:if test="@version">
+                <xsl:attribute name="type">
+                    <xsl:value-of select="@version"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@filename">
+                <xsl:attribute name="source">
+                    <xsl:value-of select="@filename"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@align">
+                <xsl:attribute name="rend">
+                    <xsl:value-of select="@align"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@width">
+                <xsl:attribute name="rendition">
+                    <xsl:value-of select="@width"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:apply-templates/>
+        </desc>
+    </xsl:template>
     <!-- Wiley -->
     <xsl:template match="wiley:figure">
         <figure>
@@ -64,17 +139,12 @@
         <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="wiley:mediaResourceGroup">
-        <xsl:apply-templates select="wiley:mediaResource"/>
+        <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="wiley:mediaResource">
         <xsl:choose>
             <xsl:when test="ancestor::wiley:abstract and not(ancestor::wiley:blockFixed) ">
                 <media>
-                    <xsl:if test="ancestor::wiley:chemicalStructure/@xml:id">
-                        <xsl:attribute name="xml:id">
-                            <xsl:value-of select="ancestor::wiley:chemicalStructure/@xml:id"/>
-                        </xsl:attribute>
-                    </xsl:if>
                     <xsl:choose>
                         <xsl:when test="@mimeType !=''">
                             <xsl:attribute name="mimeType">
@@ -102,13 +172,8 @@
                 </media>
             </xsl:when>
             <xsl:otherwise>
-                <p>
                     <media>
-                        <xsl:if test="ancestor::wiley:chemicalStructure/@xml:id">
-                            <xsl:attribute name="xml:id">
-                                <xsl:value-of select="ancestor::wiley:chemicalStructure/@xml:id"/>
-                            </xsl:attribute>
-                        </xsl:if>
+                        
                         <xsl:choose>
                             <xsl:when test="@mimeType !=''">
                                 <xsl:attribute name="mimeType">
@@ -134,16 +199,35 @@
                             </xsl:attribute>
                         </xsl:if>
                     </media>
-                </p>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template match="wiley:lineatedText">
+        <listBibl>
+            <xsl:apply-templates select="wiley:line"/>
+        </listBibl>
+    </xsl:template>
+    <xsl:template match="wiley:line">
+        <bibl>
+            <xsl:apply-templates/>
+        </bibl>
+    </xsl:template>
+    
     <!-- SG - reprise traitement des figures wiley -->
     <xsl:template match="wiley:caption">
-        <figDesc>
-            <xsl:apply-templates/>
-        </figDesc>
+        <xsl:choose>
+            <xsl:when test="ancestor::wiley:supportingInfoItem">
+                <desc>
+                    <xsl:apply-templates/>
+                </desc>
+            </xsl:when>
+            <xsl:otherwise>
+                <figDesc>
+                    <xsl:apply-templates/>
+                </figDesc>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="wiley:caption/wiley:p">
@@ -193,42 +277,42 @@
             <xsl:apply-templates/>
         </m:math>
     </xsl:template>
-    <xsl:template match="wiley2:mi">
+    <xsl:template match="wiley2:mi | oasis:mi">
         <m:mi>
             <xsl:apply-templates/>
         </m:mi>
     </xsl:template>
-    <xsl:template match="wiley2:mo">
+    <xsl:template match="wiley2:mo |oasis:mo">
         <m:mo>
             <xsl:apply-templates/>
         </m:mo>
     </xsl:template>
-    <xsl:template match="wiley2:mn">
+    <xsl:template match="wiley2:mn |oasis:mn">
         <m:mn>
             <xsl:apply-templates/>
         </m:mn>
     </xsl:template>
-    <xsl:template match="wiley2:mfrac">
+    <xsl:template match="wiley2:mfrac|oasis:mfrac">
         <m:mfrac>
             <xsl:apply-templates/>
         </m:mfrac>
     </xsl:template>
-    <xsl:template match="wiley2:mrow">
+    <xsl:template match="wiley2:mrow|oasis:mrow">
         <m:mrow>
             <xsl:apply-templates/>
         </m:mrow>
     </xsl:template>
-    <xsl:template match="wiley2:msup">
+    <xsl:template match="wiley2:msup|oasis:msup">
         <m:msup>
             <xsl:apply-templates/>
         </m:msup>
     </xsl:template>
-    <xsl:template match="wiley2:msub">
+    <xsl:template match="wiley2:msub|oasis:msub">
         <m:msub>
             <xsl:apply-templates/>
         </m:msub>
     </xsl:template>
-    <xsl:template match="wiley2:mover">
+    <xsl:template match="wiley2:mover|oasis:mover">
         <m:mover>
             <xsl:apply-templates/>
         </m:mover>

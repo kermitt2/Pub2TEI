@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:els="http://www.elsevier.com/xml/ja/dtd"
-    xmlns="http://www.tei-c.org/ns/1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML/" 
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd" xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
+    xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
+    xmlns:s1="http://www.elsevier.com/xml/si/dtd"
+    xmlns="http://www.tei-c.org/ns/1.0" xmlns:mml="http://www.w3.org/1998/Math/MathML/" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	xmlns:wiley="http://www.wiley.com/namespaces/wiley"
     exclude-result-prefixes="#all">
 
@@ -10,12 +12,74 @@
     <!-- Macrostructure -->
     <!-- Springer: Para, SimplePara -->
 
-    <xsl:template match="p | Para | SimplePara | ce:simple-para | ce:note-para | ce:para">
-        <p>
+    <xsl:template match="p| ce:simple-para | ce:note-para | ce:para">
+        <xsl:choose>
+            <!--RSC plusieurs titres dans le titre contenu par des p-->
+            <xsl:when test="ancestor::title">
+                <title>
+                <xsl:apply-templates/>
+                </title>
+            </xsl:when>
+            <xsl:when test="child::boxref">
+                    <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:when test="ancestor::ce:floats">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:when test="ancestor::ce:caption">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:choose>
+                    <xsl:when test="child::statement">
+                        <xsl:apply-templates/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <p>
+                            <xsl:if test="@id">
+                                <xsl:attribute name="xml:id">
+                                    <xsl:value-of select="@id"/>
+                                </xsl:attribute>
+                            </xsl:if>
+                            <xsl:if test="@xml:lang">
+                                <xsl:attribute name="xml:lang">
+                                    <xsl:value-of select="@xml:lang"/>
+                                </xsl:attribute>
+                            </xsl:if>
+                            <xsl:apply-templates/>
+                        </p>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="Para | SimplePara">
+        <xsl:choose>
+            <xsl:when test="ancestor::DefinitionListEntry/Description">
+                <xsl:apply-templates/>
+            </xsl:when>
+            <xsl:otherwise>
+                <p>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </p>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="quotation">
+        <quote>
             <xsl:apply-templates/>
-        </p>
+        </quote>
     </xsl:template>
     
+    <!-- wiley tabularFixed -->
+    <xsl:template match="wiley:tabularFixed">
+        <xsl:apply-templates/>
+    </xsl:template>
     <xsl:template match="wiley:p">
         <p>
             <xsl:if test="@xml:id">
@@ -28,8 +92,17 @@
         </p>
         <!--xsl:apply-templates select="wiley:mathStatement"/-->
     </xsl:template>
+    <!-- ajout élément sourceà <figure> -->
+    <xsl:template match="wiley:source">
+            <source>
+                <xsl:apply-templates/>
+            </source>
+    </xsl:template>
     <xsl:template match="wiley:mathStatement/wiley:p">
         <xsl:text> </xsl:text>
+            <xsl:apply-templates/>
+    </xsl:template>
+    <xsl:template match="wiley:biographyInfo/wiley:p">
             <xsl:apply-templates/>
     </xsl:template>
     <xsl:template match="wiley:infoAsset">
@@ -89,6 +162,11 @@
             <xsl:apply-templates/>
         </item>
     </xsl:template>
+    <xsl:template match="item">
+        <item>
+            <xsl:apply-templates/>
+        </item>
+    </xsl:template>
     
     <!-- SG - ajout des listes pour wiley -->
     <xsl:template match="wiley:list">
@@ -107,20 +185,33 @@
     </xsl:template>
     <xsl:template match="wiley:listItem">
         <item>
-            <xsl:attribute name="n">
-                <xsl:apply-templates select="wiley:label"/>
-            </xsl:attribute>
-            <xsl:apply-templates select="wiley:p"/>
+            <xsl:if test="wiley:label[string-length()&gt;0]">
+                <xsl:attribute name="n">
+                    <xsl:apply-templates select="wiley:label"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="wiley:p">
+                    <xsl:apply-templates select="wiley:p"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates/>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:if test="wiley:accessionId[string-length()&gt;0]">
+                <idno>
+                    <xsl:value-of select="wiley:accessionId"/>
+                </idno>
+            </xsl:if>
         </item>
     </xsl:template>
     
     <!-- SG - ajout wiley floatingText -->
     <xsl:template match="wiley:blockFixed">
-        <floatingText>
-            <body>
+        <figure type="box">
                 <xsl:apply-templates select="wiley:mediaResourceGroup | wiley:p"/>
-            </body>
-        </floatingText>
+            <xsl:apply-templates select="wiley:lineatedText"/>
+        </figure>
     </xsl:template>
     <!-- SG Nature reprise fnr -->
     <xsl:template match="fnr">
@@ -236,59 +327,68 @@
 
     <!-- Formules mathématiques -->
     <xsl:template match="f|Formula | formula | inline-formula | disp-formula | ce:formula">
-        <formula>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="label">
-                <xsl:attribute name="n">
-                    <xsl:value-of select="label"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@Notation">
-                <xsl:attribute name="notation">
-                    <xsl:value-of select="@Notation"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@notation">
-                <xsl:attribute name="notation">
-                    <xsl:value-of select="@notation"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="@content-type">
-                <xsl:attribute name="notation">
-                    <xsl:value-of select="@content-type"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="tex-math/@id">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="tex-math/@id"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="name(.)='inline-formula'">
-                <xsl:attribute name="rend">
-                    <xsl:text>inline</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="name(.)='disp-formula'">
-                <xsl:attribute name="rend">
-                    <xsl:text>display</xsl:text>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:choose>
-                <xsl:when test="tex-math">
-                    <xsl:attribute name="notation">
-                        <xsl:text>TeX</xsl:text>
-                    </xsl:attribute>
-                    <xsl:value-of select="tex-math"/>
-                </xsl:when>
-                <xsl:otherwise>
+        <xsl:choose>
+            <xsl:when test="parent::mixed-citation">
+                <emph>
                     <xsl:apply-templates/>
-                </xsl:otherwise>
-            </xsl:choose>
-        </formula>
+                </emph>
+            </xsl:when>
+            <xsl:otherwise>
+                <formula>
+                    <xsl:if test="@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="label">
+                        <xsl:attribute name="n">
+                            <xsl:value-of select="label"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="@Notation">
+                        <xsl:attribute name="notation">
+                            <xsl:value-of select="@Notation"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="@notation">
+                        <xsl:attribute name="notation">
+                            <xsl:value-of select="@notation"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="@content-type">
+                        <xsl:attribute name="notation">
+                            <xsl:value-of select="@content-type"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="tex-math/@id">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="tex-math/@id"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="name(.)='inline-formula'">
+                        <xsl:attribute name="rend">
+                            <xsl:text>inline</xsl:text>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="name(.)='disp-formula'">
+                        <xsl:attribute name="rend">
+                            <xsl:text>display</xsl:text>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="tex-math">
+                            <xsl:attribute name="notation">
+                                <xsl:text>TeX</xsl:text>
+                            </xsl:attribute>
+                            <xsl:value-of select="tex-math"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </formula>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="disp-formula/label"/>
@@ -297,26 +397,45 @@
     <!-- Specific rule for Springer's Inline equation -->
 
     <xsl:template match="InlineEquation | Equation">
-        <formula>
-            <xsl:if test="@ID">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="@ID"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:if test="EquationSource/@Format">
-                <xsl:attribute name="notation">
-                    <xsl:value-of select="EquationSource/@Format"/>
-                </xsl:attribute>
-            </xsl:if>
-            <xsl:value-of select="EquationSource"/>
-        </formula>
+        <xsl:choose>
+            <xsl:when test="ancestor::Description">
+                <objectType>
+                    <xsl:if test="EquationNumber">
+                        <xsl:attribute name="n">
+                            <xsl:value-of select="EquationNumber"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </objectType>
+            </xsl:when>
+            <xsl:otherwise>
+                <formula>
+                    <xsl:if test="@ID">
+                        <xsl:attribute name="xml:id">
+                            <xsl:value-of select="@ID"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="EquationSource/@Format">
+                        <xsl:attribute name="notation">
+                            <xsl:value-of select="EquationSource/@Format"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:if test="EquationNumber">
+                        <xsl:attribute name="n">
+                            <xsl:value-of select="EquationNumber"/>
+                        </xsl:attribute>
+                    </xsl:if>
+                    <xsl:apply-templates/>
+                </formula>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- Specific rile for Elsevier inline pathematical objects -->
 
     <!-- 2017-04-03: Vérifier le traitement des éléments de XMLLatex -->
-    <xsl:template match="els:math | math">
-        <formula notation="XMLLatex">
+    <xsl:template match="els1:math |els2:math | math">
+        <formula notation="MathML">
             <xsl:copy exclude-result-prefixes="#all">
                 <xsl:apply-templates/>
             </xsl:copy>
@@ -358,79 +477,82 @@
 		<xsl:choose>
 			<xsl:when test="string-length(@href) > 0">
 				<!--xsl:message><xsl:value-of select="substring(@href,2,1)"/></xsl:message-->
-				<xsl:if test="contains(@href, 'n')">
-					<!-- we have a note (normally) -->
-			        <ref type="note">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-						<xsl:apply-templates/>
-					</ref>	
-				</xsl:if>
-			    <!--SG - Enriched Object ex:<link href="#aoc1856-eo-0001"/> -->
-			    <xsl:if test="contains(@href, 'eo')">
-			        <!-- we have an Enriched Object -->
-			        <ref type="enrichedObject">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:apply-templates/>
-			        </ref>	
-			    </xsl:if>
-			    <!-- SG ajout lien figure et bibr --> 
-			    <xsl:if test="contains(@href, 'fig')">
-			        <ref type="figure">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:apply-templates/>
-			        </ref>	
-			    </xsl:if>
+				<xsl:choose>
+				    <!-- SG ajout reference WILEY -->
+				    <xsl:when test="contains(@href,'b') or contains(@href,'bib')">
+				        <ref type="bibl">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>
+				    </xsl:when>
+				    <xsl:when test="contains(@href, 'n')">
+				        <!-- we have a note (normally) -->
+				        <ref type="note">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>
+				    </xsl:when>
+				    
+				    <xsl:when test="contains(@href,'sec')">
+				        <ref type="section">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>
+				    </xsl:when>
+				    <xsl:when test="contains(@href,'t')">
+				        <ref type="table">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:value-of select="text()"/>
+				        </ref>
+				    </xsl:when>
+				    <xsl:when test="contains(@href,'f')">
+				        <ref type="figure">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:value-of select="text()"/>
+				        </ref>
+				    </xsl:when>
+				    <!--SG - Enriched Object ex:<link href="#aoc1856-eo-0001"/> -->
+				    <xsl:when test="contains(@href, 'eo')">
+				        <!-- we have an Enriched Object -->
+				        <ref type="enrichedObject">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>	
+				    </xsl:when>
+				    <!-- SG ajout lien figure et bibr --> 
+				    <xsl:when test="contains(@href, 'fig')">
+				        <ref type="figure">
+				            <xsl:attribute name="target">
+				                <xsl:value-of select="@href"/>
+				            </xsl:attribute>
+				            <xsl:apply-templates/>
+				        </ref>	
+				    </xsl:when>
+				</xsl:choose>
 			   <!-- <xsl:if test="contains(@href, 'bib')">
-			        <ref type="bibr">
+			        <ref type="bibl">
 			            <xsl:attribute name="target">
 			                <xsl:value-of select="@href"/>
 			            </xsl:attribute>
 			            <xsl:apply-templates/>
 			        </ref>	
 			    </xsl:if>-->
-			    <!-- SG ajout reference WILEY -->
-			    <xsl:if test="contains(@href,'b') or contains(@href,'bib')">
-			        <ref type="bibr">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:apply-templates/>
-			        </ref>
-			    </xsl:if>
-			    <xsl:if test="contains(@href,'sec')">
-			        <ref type="section">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:apply-templates/>
-			        </ref>
-			    </xsl:if>
-			    <xsl:if test="contains(@href,'t')">
-			        <ref type="table">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:value-of select="text()"/>
-			        </ref>
-			    </xsl:if>
-			    <xsl:if test="contains(@href,'f')">
-			        <ref type="figure">
-			            <xsl:attribute name="target">
-			                <xsl:value-of select="@href"/>
-			            </xsl:attribute>
-			            <xsl:value-of select="text()"/>
-			        </ref>
-			    </xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:if test="contains(@href,'bib')">
-					<ref type="bibr">
+					<ref type="bibl">
 			            <xsl:attribute name="target">
 			                <xsl:value-of select="@href"/>
 			            </xsl:attribute>
@@ -465,7 +587,7 @@
     </xsl:template>
     
     <xsl:template match="bibr | bibrinl">
-        <ref type="bibr">
+        <ref type="bibl">
             <xsl:attribute name="target">
                 <xsl:value-of select="concat('#',@rid)"/>
             </xsl:attribute>
@@ -473,15 +595,24 @@
     </xsl:template>
     <xsl:template match="cite">
         <ref type="cit">
+            <xsl:attribute name="target">
+                <xsl:text>#</xsl:text>
+                <xsl:value-of select="@id|@linkend"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </ref>
+    </xsl:template>
+    <xsl:template match="secref">
+        <ref type="section">
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="@id"/>
+                <xsl:value-of select="@linkend"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </ref>
     </xsl:template>
     <!-- SG ajout ref <xnav> -->
     <xsl:template match="xnav">
-        <ref type="bibr">
+        <ref type="bibl">
             <xsl:attribute name="target">
                 <xsl:value-of select="concat('#',@extrefid)"/>
             </xsl:attribute>
@@ -520,6 +651,24 @@
                 <xsl:value-of select="concat('#',@idrefs)"/>
             </xsl:attribute>
         </ref>
+    </xsl:template>
+    <xsl:template match="scheme">
+        <figure type="schema">
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+            <xsl:attribute name="rendition">
+                <xsl:value-of select="@height"/>
+            </xsl:attribute>
+            <xsl:attribute name="rend">
+                <xsl:value-of select="@width"/>
+            </xsl:attribute>
+            <xsl:if test="@xsrc">
+            <figDesc>
+                <xsl:value-of select="@xsrc"/>
+            </figDesc>
+            </xsl:if>
+        </figure>
     </xsl:template>
 
     <xsl:template match="figref">
@@ -563,22 +712,41 @@
     <!-- Springer: Emphasis[@Type='Italic'], Emphasis[@Type='Bold'], Subscript, Superscript -->
 
     <xsl:template
-        match="i | it | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i">
-        <xsl:if test=".!=''"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
+        match="i  | ce:italic | Emphasis[@Type='Italic'] | italic | emph[@display='italic'] | wiley:i">
+        <xsl:if test="normalize-space(.)"><hi rend="italic"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
-    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b | b">
-        <xsl:if test=".!=''"><hi rend="bold"><xsl:apply-templates/></hi></xsl:if>
+    <xsl:template match="bold | ce:bold | Emphasis[@Type='Bold'] | emph[@display='bold'] | wiley:b | b|bo">
+    <xsl:choose>
+        <xsl:when test="ancestor::label">
+                <head type="label">
+                    <hi rend="italic"><xsl:apply-templates/></hi>
+                </head>
+        </xsl:when>
+        <xsl:when test="child::volume">
+            <biblScope unit="vol">
+                <hi rend="italic">
+            <xsl:apply-templates/>
+                </hi>
+            </biblScope>
+        </xsl:when>
+        <xsl:otherwise>
+            <xsl:if test="normalize-space(.)">
+                <hi rend="bold">
+                    <xsl:apply-templates/>
+                </hi></xsl:if>
+        </xsl:otherwise>
+    </xsl:choose>
     </xsl:template>
 
     <xsl:template match="Emphasis[@Type='SmallCaps'] | ce:small-caps | sc | scp | wiley:sc">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space(.)">
             <hi rend="smallCaps"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 
     <xsl:template match="Emphasis | emph">
-        <xsl:if test=".!=''">
+        <xsl:if test="normalize-space(.)">
             <hi>
                 <xsl:choose>
                     <xsl:when test="@Type">
@@ -608,40 +776,48 @@
     </xsl:template>
 
     <xsl:template match="inf|Subscript | sub | ce:inf | wiley:sub">
-        <xsl:if test=".!=''"><hi rend="subscript"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="."><hi rend="subscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
     <xsl:template match="Superscript | sup | ce:sup | super | wiley:sup">
-        <xsl:if test=".!=''"><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
+        <xsl:if test="normalize-space(.)"><hi rend="superscript"><xsl:apply-templates/></hi></xsl:if>
     </xsl:template>
 
-    <xsl:template match="underline | ce:underline">
-        <xsl:if test=".!=''">
+    <xsl:template match="ul |underline | ce:underline">
+        <xsl:if test=".">
             <hi rend="underline"><xsl:apply-templates/></hi>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="scr">
+        <xsl:if test=".">
+            <hi rend="script"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
 
     <xsl:template match="break">
-        <lb/>
+        <xsl:choose>
+            <xsl:when test="ancestor::aff"/>
+            <xsl:otherwise><lb/></xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="wiley:fc">
-        <xsl:if test=".!=''">
+        <xsl:if test=".">
             <hi rend="fc"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:fr">
-        <xsl:if test=".!=''">
+        <xsl:if test=".">
             <hi rend="fr"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:fi">
-        <xsl:if test=".!=''">
+        <xsl:if test=".">
             <hi rend="fi"><xsl:apply-templates/></hi>
         </xsl:if>
     </xsl:template>
     <xsl:template match="wiley:span">
-        <xsl:if test=".!=''">
-            <span><xsl:apply-templates/></span>
+        <xsl:if test=".">
+            <emph><span><xsl:apply-templates/></span></emph>
         </xsl:if>
     </xsl:template>
     
@@ -690,7 +866,7 @@
 		</div>
     </xsl:template>
 	
-    <xsl:template match="sectitle">
+    <xsl:template match="sectitle |heading">
         <head>
 			<xsl:apply-templates/>
 		</head>	
@@ -711,6 +887,11 @@
             </xsl:if>
             <xsl:if test="contains(@xml:id,'sec')">
                 <xsl:attribute name="type">section</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@type">
+                <xsl:attribute name="subtype">
+                    <xsl:value-of select="@type"/>
+                </xsl:attribute>
             </xsl:if>
 			<xsl:if test="wiley:title">
 		        <head>
@@ -749,7 +930,9 @@
     </xsl:template>
 	
 	<xsl:template match="wiley:section/wiley:title">
+	    <head>
 		<xsl:apply-templates/>
+	    </head>
 	</xsl:template>
 	<!-- SG ajout citation "other" -->
     <xsl:template match="wiley:citation [@type='other']">
@@ -768,14 +951,19 @@
     </xsl:template>-->
     
     <!-- SG reprise wiley:inlineGraphic dans body -->
-    <xsl:template match="wiley:inlineGraphic">
+    <xsl:template match="wiley:inlineGraphic | inline-graphic">
         <graphic>
-            <xsl:if test="@location !=''">
+            <xsl:if test="normalize-space(@location)">
                 <xsl:attribute name="url">
                     <xsl:value-of select="@location"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:if test="@alt !=''">
+            <xsl:if test="normalize-space(@xlink:href)">
+                <xsl:attribute name="url">
+                    <xsl:value-of select="@xlink:href"/>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="normalize-space(@alt)">
                 <xsl:attribute name="rend">
                     <xsl:value-of select="@alt"/>
                 </xsl:attribute>
@@ -784,5 +972,23 @@
     </xsl:template>
 	
     <xsl:template match="online-methods"><xsl:apply-templates/></xsl:template>
-	
+    <xsl:template match="wiley:header/wiley:contentMeta/wiley:supportingInformation">
+        <xsl:apply-templates select="wiley:supportingInfoItem"/>
+    </xsl:template>
+    <!-- reprise supportingInformation -->
+    <xsl:template match="wiley:supportingInfoItem">
+        <div type="appendice">
+            <p>
+                <xsl:apply-templates/>
+            </p>
+        </div>
+    </xsl:template>
+    <!-- SG - traitement des book-reviews -->
+    <xsl:template match="wiley:header/wiley:contentMeta/wiley:titleGroup/wiley:title/wiley:citation">
+        <div type="review-of">
+            <bibl>
+                <xsl:apply-templates/>
+            </bibl>
+        </div>
+    </xsl:template>
 </xsl:stylesheet>

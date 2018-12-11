@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
+    xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exclude-result-prefixes="#all">
 
     <xsl:output encoding="UTF-8" method="xml"/>
 
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="edp-article">
+        <xsl:comment>
+            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:value-of select="$datecreation"/>
+        </xsl:comment>
         <xsl:variable name="localISSN">
             <xsl:value-of select="journal-id/issn-paper"/>
         </xsl:variable>
-        <xsl:variable name="journalDescription"
-            select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>
-
+        <xsl:variable name="journalDescription">
+            <xsl:value-of select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>
+        </xsl:variable>
         <TEI>
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
+                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            </xsl:attribute>
             <xsl:if test="article-id/language">
                 <xsl:attribute name="xml:lang">
                     <xsl:value-of select="article-id/language"/>
@@ -27,6 +34,7 @@
                     </titleStmt>
 <!--                    <xsl:if test="article-id/copyright">
                         <publicationStmt>
+                        <authority>ISTEX</authority>
                             <xsl:apply-templates select="article-id/copyright"/>
                         </publicationStmt>
                     </xsl:if>-->
@@ -139,7 +147,7 @@
     <xsl:template match="/edp-article/author" mode="EDP">
         <author>
             <xsl:if test="@corresp='yes'">
-                <xsl:attribute name="type">
+                <xsl:attribute name="role">
                     <xsl:text>corresp</xsl:text>
                 </xsl:attribute>
             </xsl:if>
