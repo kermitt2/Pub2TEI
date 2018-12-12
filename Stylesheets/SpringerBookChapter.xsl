@@ -10,7 +10,7 @@
     <xsl:variable name="codeGenreSpringerBook">
         <xsl:value-of select="//Series/Book/Chapter/ChapterInfo/@ChapterType | //Series/Book/Part/Chapter/ChapterInfo/@ChapterType| //Publisher/Book/Chapter/ChapterInfo/@ChapterType | //Publisher/Book/Part/Chapter/ChapterInfo/@ChapterType"/>
     </xsl:variable>
-    <xsl:variable name="codeGenreSB">
+    <!--xsl:variable name="codeGenreSB">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenreSpringerBook)='OriginalPaper'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenreSpringerBook)='Article'">article</xsl:when>
@@ -32,8 +32,8 @@
                 </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="codeGenreArkSB">
+    </xsl:variable-->
+    <!--xsl:variable name="codeGenreArkSB">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenreSB)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
             <xsl:when test="normalize-space($codeGenreSB)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
@@ -48,11 +48,11 @@
             <xsl:when test="normalize-space($codeGenreSB)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
             <xsl:when test="normalize-space($codeGenreSB)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
         </xsl:choose>
-    </xsl:variable>
+    </xsl:variable-->
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="/Publisher[count(Series/Book/descendant::Chapter)=1]">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -106,23 +106,23 @@
                                 <xsl:choose>
                                     <xsl:when test="//Series/Book/Chapter/ChapterInfo/@ChapterType | //Series/Book/Part/Chapter/ChapterInfo/@ChapterType| //Publisher/Book/Chapter/ChapterInfo/@ChapterType | //Publisher/Book/Part/Chapter/ChapterInfo/@ChapterType">
                                         <note type="content-type">
-                                            <xsl:attribute name="subtype">
+                                            <!--xsl:attribute name="subtype">
                                                 <xsl:value-of select="$codeGenreSB"/>
                                             </xsl:attribute>
                                             <xsl:attribute name="source">
                                                 <xsl:value-of select="$codeGenreSpringerBook"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="scheme">
+                                            </xsl:attribute-->
+                                            <!--xsl:attribute name="scheme">
                                                 <xsl:value-of select="$codeGenreArkSB"/>
-                                            </xsl:attribute>
-                                            <xsl:value-of select="$codeGenreSB"/>
+                                            </xsl:attribute-->
+                                            <xsl:value-of select="$codeGenreSpringerBook"/>
                                         </note>
                                     </xsl:when>
                                     <xsl:otherwise>
                                         <note type="content-type">
                                             <xsl:attribute name="subtype">chapter</xsl:attribute>
                                             <xsl:attribute name="source">chapter</xsl:attribute>
-                                            <xsl:attribute name="scheme">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:attribute>
+                                            <!--xsl:attribute name="scheme">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:attribute-->
                                             <xsl:text>chapter</xsl:text>
                                         </note>
                                     </xsl:otherwise>
@@ -133,13 +133,13 @@
                         <xsl:choose>
                             <xsl:when test="//Series">
                                 <note type="publication-type" subtype="book-series">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//Book and not(//Series)">
                                 <note type="publication-type" subtype="book">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
@@ -197,7 +197,7 @@
                 <xsl:apply-templates
                     select="Book/descendant::Chapter/ChapterHeader//AuthorGroup/InstitutionalAuthor"/>
                 <!-- ajout identifiants ISTEX et ARK -->
-                <xsl:if test="string-length($idistex) &gt; 0 ">
+                <!--xsl:if test="string-length($idistex) &gt; 0 ">
                     <idno type="istex">
                         <xsl:value-of select="$idistex"/>
                     </idno>
@@ -206,7 +206,7 @@
                     <idno type="ark">
                         <xsl:value-of select="$arkistex"/>
                     </idno>
-                </xsl:if>
+                </xsl:if-->
                 <xsl:apply-templates select="Book/Chapter/ChapterInfo/ChapterID"/>
                 <xsl:apply-templates select="Book/descendant::Chapter/ChapterInfo/ChapterDOI"/>
             </analytic>

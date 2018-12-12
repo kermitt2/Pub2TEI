@@ -8,7 +8,7 @@
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="metadata">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -22,7 +22,7 @@
                     </titleStmt>
                     <xsl:if test="miscinfo/copyright">
                         <publicationStmt>
-                            <authority>ISTEX</authority>
+                            <!--authority>ISTEX</authority-->
                             <xsl:apply-templates select="miscinfo/copyright/*"/>
                         </publicationStmt>
                     </xsl:if>

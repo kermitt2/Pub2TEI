@@ -14,7 +14,7 @@
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="article_set/article">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <xsl:variable name="ms_no" select="@ms_no"/>
@@ -34,7 +34,7 @@
                     </titleStmt>
                     <xsl:if test="CopyrightInformation">
                         <publicationStmt>
-                            <authority>ISTEX</authority>
+                            <!--authority>ISTEX</authority-->
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </publicationStmt>
                     </xsl:if>

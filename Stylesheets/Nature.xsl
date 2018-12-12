@@ -8,7 +8,7 @@
 
     <xsl:template match="nihms-submit">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -21,7 +21,7 @@
                         <xsl:apply-templates select="title"/>
                     </titleStmt>
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
                         <xsl:if test="manuscript">
                             <availability status="embargo">
                                 <p>

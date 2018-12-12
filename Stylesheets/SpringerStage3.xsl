@@ -8,7 +8,7 @@
     <xsl:variable name="codeGenreSpringerJournal">
         <xsl:value-of select="//ArticleInfo/@ArticleType"/>
     </xsl:variable>
-    <xsl:variable name="codeGenreSJ">
+    <!--xsl:variable name="codeGenreSJ">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenreSpringerJournal)='OriginalPaper'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenreSpringerJournal)='Article'">article</xsl:when>
@@ -30,8 +30,8 @@
                 </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="codeGenreArkSJ">
+    </xsl:variable-->
+    <!--xsl:variable name="codeGenreArkSJ">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenreSJ)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
             <xsl:when test="normalize-space($codeGenreSJ)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
@@ -46,11 +46,11 @@
             <xsl:when test="normalize-space($codeGenreSJ)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
             <xsl:when test="normalize-space($codeGenreSJ)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
         </xsl:choose>
-    </xsl:variable>
+    </xsl:variable-->
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="/Publisher[not(Series/Book/descendant::Chapter)]">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -88,7 +88,7 @@
                     <notesStmt>
                         <!-- niveau book -->
                         <note type="content-type">
-                            <xsl:attribute name="subtype">
+                            <!--xsl:attribute name="subtype">
                                 <xsl:value-of select="$codeGenreSJ"/>
                             </xsl:attribute>
                             <xsl:attribute name="source">
@@ -96,26 +96,26 @@
                             </xsl:attribute>
                             <xsl:attribute name="scheme">
                                 <xsl:value-of select="$codeGenreArkSJ"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="$codeGenreSJ"/>
+                            </xsl:attribute-->
+                            <xsl:value-of select="$codeGenreSpringerJournal"/>
                         </note>
                         <!-- niveau revue / book -->
                         <xsl:choose>
                             <xsl:when test="//Journal">
                                 <note type="publication-type" subtype="journal">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>journal</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//Series">
                                 <note type="publication-type" subtype="book-series">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//Book and not(//Series)">
                                 <note type="publication-type" subtype="book">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
@@ -256,7 +256,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <!-- ajout identifiants ISTEX et ARK -->
-                <xsl:if test="string-length($idistex) &gt; 0 ">
+                <!--xsl:if test="string-length($idistex) &gt; 0 ">
                     <idno type="istex">
                         <xsl:value-of select="$idistex"/>
                     </idno>
@@ -265,7 +265,7 @@
                     <idno type="ark">
                         <xsl:value-of select="$arkistex"/>
                     </idno>
-                </xsl:if>
+                </xsl:if-->
                 <xsl:choose>
                     <xsl:when test="JournalOnlineFirst">
                         <xsl:apply-templates select="JournalOnlineFirst/Article/@ID"/>

@@ -51,7 +51,7 @@
     -->
     <xsl:template match="article">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -76,7 +76,7 @@
                         </respStmt>
                     </editionStmt>-->
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
                         <!-- Publisher jnl -->
                         <xsl:apply-templates
                             select="article-metadata/jnl-data/jnl-imprint"/>

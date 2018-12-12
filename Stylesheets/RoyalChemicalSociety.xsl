@@ -10,7 +10,7 @@
     <!-- On sent le travail visionaire du grouillot... -->
     <xsl:template match="article[art-admin]">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -34,7 +34,7 @@
                         </xsl:choose>
                     </titleStmt>
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
                         <xsl:if test="//article/published[@type='subsyear']/journalref/publisher/orgname/nameelt">
                             <publisher>
                                 <xsl:value-of select="//article/published[@type='subsyear']/journalref/publisher/orgname/nameelt"/>

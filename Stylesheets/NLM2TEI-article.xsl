@@ -37,8 +37,8 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
-    <!-- lien vers data.istex.fr -->
-    <xsl:variable name="codeGenreArk2">
+    <!-- removing istex specific mappings -->
+    <!--xsl:variable name="codeGenreArk2">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenre)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
             <xsl:when test="normalize-space($codeGenre)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
@@ -53,8 +53,8 @@
             <xsl:when test="normalize-space($codeGenre)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
             <xsl:when test="normalize-space($codeGenre)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
         </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="codeGenre">
+    </xsl:variable-->
+    <!--xsl:variable name="codeGenre">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenre2)='astronomical-observation'">research-article</xsl:when>
             <xsl:when test="normalize-space($codeGenre2)='magnetical-observation'">research-article</xsl:when>
@@ -113,7 +113,7 @@
                 <xsl:text>other</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:variable>
+    </xsl:variable-->
     
     <!-- genre -->
    <xsl:variable name="codeGenreNature1">
@@ -961,7 +961,7 @@
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="article[front] | article[pubfm] | article[suppfm] | headerx">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -1008,7 +1008,7 @@
                         </editionStmt>
                     </xsl:if>
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
                         <xsl:if test="front/journal-meta/publisher">
                             <xsl:apply-templates select="front/journal-meta/publisher/*"/>
                         </xsl:if>
@@ -1017,11 +1017,11 @@
                                 <xsl:value-of select="suppfm/sponsor"/>
                             </distributor>
                         </xsl:if>
-                        <xsl:if test="suppfm/parent/cpg/cpn |pubfm/cpg/cpn">
+                        <!--xsl:if test="suppfm/parent/cpg/cpn |pubfm/cpg/cpn">
                             <publisher scheme="https://publisher-list.data.istex.fr">
                                 <xsl:value-of select="suppfm/parent/cpg/cpn|pubfm/cpg/cpn"/>
                             </publisher>
-                        </xsl:if>
+                        </xsl:if-->
                         <xsl:if test="front/article-meta/article-categories/subj-group[@subj-group-type='access-type']/compound-subject/compound-subject-part[@content-type='code']='access-type-free'">
                             <availability status="free">
                                 <licence>Open Access</licence>
@@ -1077,43 +1077,43 @@
                     <notesStmt>
                         <!-- niveau article / chapter -->
                         <note type="content-type">
-                            <xsl:attribute name="source">
+                            <!--xsl:attribute name="source">
                                 <xsl:value-of select="$codeGenre2"/>
-                            </xsl:attribute>
-                            <xsl:attribute name="scheme">
+                            </xsl:attribute-->
+                            <!--xsl:attribute name="scheme">
                                 <xsl:value-of select="$codeGenreArk2"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="$codeGenre"/>
+                            </xsl:attribute-->
+                            <xsl:value-of select="$codeGenre2"/>
                         </note>
                         <!-- niveau revue / book -->
                         <xsl:choose>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
                                 <note type="publication-type">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//article-meta/isbn[string-length() &gt; 0] |//journal-meta/isbn[string-length() &gt; 0] and //journal-meta/issn">
                                 <note type="publication-type">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//journal-meta/issn[@pub-type='isbn'][string-length() &gt; 0] and contains(//journal-meta/issn/@pub-type,'pub')[string-length() &gt; 0]">
                                 <note type="publication-type">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
                                 <note type="publication-type">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:otherwise>
                                 <note type="publication-type">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute-->
                                     <xsl:text>journal</xsl:text>
                                 </note>
                             </xsl:otherwise>
@@ -1495,7 +1495,7 @@
                             </editionStmt>
                         </xsl:if>
                         <publicationStmt>
-                            <authority>ISTEX</authority>
+                            <!--authority>ISTEX</authority-->
                             <xsl:if test="front/journal-meta/publisher">
                                 <xsl:apply-templates select="front/journal-meta/publisher/*"/>
                             </xsl:if>
@@ -1613,7 +1613,7 @@
     <!-- Building the sourceDesc bibliographical representation -->
     <xsl:template match="front | pubfm | suppfm" mode="sourceDesc">
         <biblStruct>
-            <xsl:variable name="articleType" select="/article/@article-type"/>
+            <!--xsl:variable name="articleType" select="/article/@article-type"/>
             <xsl:if test="$articleType != ''">
                 <xsl:choose>
                     <xsl:when test="$articleType = 'research-article'">
@@ -1647,7 +1647,7 @@
                         <xsl:message terminate="no">article-type inconnu: <xsl:value-of select="$articleType"/></xsl:message>
                     </xsl:otherwise>
                 </xsl:choose>
-            </xsl:if>
+            </xsl:if-->
 
             <analytic>
                 <!-- Cambridge - OUP ... ajout corrections des titres vides -->
@@ -1699,7 +1699,7 @@
                 </xsl:for-each>
                 
                 <!-- ajout identifiants ISTEX et ARK -->
-                <xsl:if test="string-length($idistex) &gt; 0 ">
+                <!--xsl:if test="string-length($idistex) &gt; 0 ">
                     <idno type="istex">
                         <xsl:value-of select="$idistex"/>
                     </idno>
@@ -1708,7 +1708,7 @@
                     <idno type="ark">
                         <xsl:value-of select="$arkistex"/>
                     </idno>
-                </xsl:if>
+                </xsl:if-->
                 <xsl:apply-templates select="journal-id[@journal-id-type='isbn']"/>
                 <xsl:apply-templates select="doi"/>
                 <!-- BMJ rattrapage DOI -->

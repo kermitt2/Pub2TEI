@@ -27,7 +27,7 @@
         <xsl:variable name="journalDescription"
             select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>-->
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>

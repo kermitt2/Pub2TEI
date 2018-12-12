@@ -11,7 +11,7 @@
     <xsl:variable name="codeGenre1">
         <xsl:value-of select="//component/header/publicationMeta[@level='unit']/@type"/>
     </xsl:variable>
-    <xsl:variable name="codeGenreA">
+    <!--xsl:variable name="codeGenreA">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenre1)='chapter'">
                 <xsl:choose>
@@ -48,9 +48,9 @@
                 <xsl:text>other</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:variable>
+    </xsl:variable-->
     <!-- lien vers data.istex.fr -->
-    <xsl:variable name="codeGenreArkA">
+    <!--xsl:variable name="codeGenreArkA">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenreA)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
             <xsl:when test="normalize-space($codeGenreA)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
@@ -65,7 +65,7 @@
             <xsl:when test="normalize-space($codeGenreA)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
             <xsl:when test="normalize-space($codeGenreA)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
         </xsl:choose>
-    </xsl:variable>
+    </xsl:variable-->
     <!-- codeLangue -->
     <xsl:variable name="codeLangue">
         <xsl:choose>
@@ -140,7 +140,7 @@
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="component">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -277,7 +277,7 @@
                         </editionStmt>
                     </xsl:if>
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
 						<xsl:if test="header/publicationMeta/publisherInfo/publisherName">
                        	 	<xsl:apply-templates select="header/publicationMeta/publisherInfo/publisherName"/>
 						</xsl:if>
@@ -307,7 +307,7 @@
                     <notesStmt>
                         <!-- niveau article / chapter -->
                         <note type="content-type">
-                            <xsl:attribute name="subtype">
+                            <!--xsl:attribute name="subtype">
                                 <xsl:value-of select="$codeGenreA"/>
                             </xsl:attribute>
                             <xsl:attribute name="source">
@@ -315,26 +315,26 @@
                             </xsl:attribute>
                             <xsl:attribute name="scheme">
                                 <xsl:value-of select="$codeGenreArkA"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="$codeGenreA"/>
+                            </xsl:attribute-->
+                            <xsl:value-of select="$codeGenre1"/>
                         </note>
                         <!-- niveau revue / book -->
                         <xsl:choose>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
                                 <note type="publication-type" subtype="book-series">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
                                 <note type="publication-type" subtype="book">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:otherwise>
                                 <note type="publication-type" subtype="journal">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute-->
                                     <xsl:text>journal</xsl:text>
                                 </note>
                             </xsl:otherwise>
@@ -550,7 +550,7 @@
             <!-- Genre     -->
             <xsl:if test="publicationMeta[@level='unit']/@type[string-length()&gt; 0]">
                 <xsl:attribute name="type">
-                    <xsl:value-of select="normalize-space($codeGenreA)"/>
+                    <xsl:value-of select="normalize-space($codeGenre1)"/>
                 </xsl:attribute>
             </xsl:if>
             <analytic>
@@ -563,7 +563,7 @@
 				</xsl:if>
                 
                 <!-- ajout identifiants ISTEX et ARK -->
-                <xsl:if test="string-length($idistex) &gt; 0 ">
+                <!--xsl:if test="string-length($idistex) &gt; 0 ">
                     <idno type="istex">
                         <xsl:value-of select="$idistex"/>
                     </idno>
@@ -572,7 +572,7 @@
                     <idno type="ark">
                         <xsl:value-of select="$arkistex"/>
                     </idno>
-                </xsl:if>
+                </xsl:if-->
                 <xsl:apply-templates select="publicationMeta[@level='unit']/doi"/>
                 <xsl:apply-templates select="publicationMeta[@level='unit']/idGroup/id"/>
                 <xsl:apply-templates select="publicationMeta[@level='unit']/linkGroup/link"/>

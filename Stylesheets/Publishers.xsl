@@ -10,12 +10,11 @@
     xmlns:s1="http://www.elsevier.com/xml/si/dtd"
     xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
-    <!-- ajout déclaration schema ODD-ISTEX -->
     
     <xsl:output encoding="UTF-8" method="xml"/>
     <xsl:param name="datecreation"/>
-    <xsl:param name="idistex"/>
-    <xsl:param name="arkistex"/>
+    <!--xsl:param name="idistex"/>
+    <xsl:param name="arkistex"/-->
     <xsl:param name="rawfulltextpath"/>
     
     <xsl:include href="Imports.xsl"/>

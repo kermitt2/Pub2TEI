@@ -105,7 +105,7 @@
         </xsl:choose>
     </xsl:variable>
     
-    <xsl:variable name="codeGenre2Elsevier">
+    <!--xsl:variable name="codeGenre2Elsevier">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='abs'">abstract</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='add'">article</xsl:when>
@@ -146,8 +146,8 @@
             <xsl:when test="normalize-space($codeGenre1Elsevier)='ssu'">article</xsl:when>
             <xsl:otherwise>other</xsl:otherwise>
         </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="codeGenreArkElsevier">
+    </xsl:variable-->
+    <!--xsl:variable name="codeGenreArkElsevier">
         <xsl:choose>
             <xsl:when test="normalize-space($codeGenre2Elsevier)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
             <xsl:when test="normalize-space($codeGenre2Elsevier)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
@@ -162,7 +162,7 @@
             <xsl:when test="normalize-space($codeGenre2Elsevier)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
             <xsl:when test="normalize-space($codeGenre2Elsevier)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
         </xsl:choose>
-    </xsl:variable>
+    </xsl:variable-->
     <!-- Verbalisation titres series -->
     <xsl:variable name="codeTitle1">
         <xsl:value-of select="//els1:item-info/els1:jid |//els2:item-info/els2:jid | //item-info/jid"/>
@@ -2447,7 +2447,7 @@
 
     <xsl:template match="els1:article[els1:item-info] |els2:article[els2:item-info] | els1:converted-article[els1:item-info] | els2:converted-article[els2:item-info] | converted-article[item-info] | article[item-info]">
         <xsl:comment>
-            <xsl:text>Version 0.1 générée le </xsl:text>
+            <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
         </xsl:comment>
         <TEI>
@@ -2473,7 +2473,7 @@
                         </xsl:choose>
                     </titleStmt>
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
                         <xsl:apply-templates
                             select="els1:item-info/ce:copyright |els2:item-info/ce:copyright | item-info/ce:copyright"/>
                     </publicationStmt>
@@ -2486,15 +2486,15 @@
                                     <xsl:attribute name="subtype">
                                         <xsl:value-of select="$codeGenre1Elsevier"/>
                                     </xsl:attribute>
-                                    <xsl:attribute name="source">
+                                    <!--xsl:attribute name="source">
                                         <xsl:value-of select="$codeGenre2Elsevier"/>
-                                    </xsl:attribute>
-                                    <xsl:attribute name="scheme">
+                                    </xsl:attribute-->
+                                    <!--xsl:attribute name="scheme">
                                         <xsl:value-of select="$codeGenreArkElsevier"/>
-                                    </xsl:attribute>
-                                    <xsl:value-of select="$codeGenre2Elsevier"/>
+                                    </xsl:attribute-->
+                                    <xsl:value-of select="$codeGenreElsevier"/>
                                 </xsl:when>
-                                <xsl:otherwise>
+                                <!--xsl:otherwise>
                                     <xsl:if test="not(//@docsubtype)">
                                         <xsl:attribute name="subtype">other</xsl:attribute>
                                         <xsl:attribute name="subtype">N/A</xsl:attribute>
@@ -2502,7 +2502,7 @@
                                         <xsl:attribute name="scheme">https://content-type.data.istex.fr/ark:/67375/XTP-7474895G-0</xsl:attribute>
                                         <xsl:text>other</xsl:text>
                                     </xsl:if>
-                                </xsl:otherwise>
+                                </xsl:otherwise-->
                             </xsl:choose>
                         </note>
                         <!-- niveau revue / book -->
@@ -2511,47 +2511,47 @@
                             <xsl:when test="$docIssueEls//issue-info/ce:isbn[string-length() &gt; 0] and $docIssueEls//issue-info/ce:issn[string-length() &gt; 0]">
                                 <note type="publication-type">
                                     <xsl:attribute name="subtype">book-series</xsl:attribute>
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="$docIssueEls//issue-info/ce:isbn[string-length() &gt; 0] and not($docIssueEls//issue-info/ce:issn[string-length() &gt; 0])">
                                 <note type="publication-type">
                                     <xsl:attribute name="subtype">book</xsl:attribute>
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="$docIssueEls//s1:issue-info/ce:isbn[string-length() &gt; 0] and $docIssueEls//s1:issue-info/ce:issn[string-length() &gt; 0]">
                                 <note type="publication-type">
                                     <xsl:attribute name="subtype">book-series</xsl:attribute>
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="$docIssueEls//s1:issue-info/ce:isbn[string-length() &gt; 0] and not($docIssueEls//s1:issue-info/ce:issn[string-length() &gt; 0])">
                                 <note type="publication-type">
                                     <xsl:attribute name="subtype">book</xsl:attribute>
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
                                 <note type="publication-type" subtype="book-series">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
                                 <note type="publication-type" subtype="book">
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:otherwise>
                                 <note type="publication-type">
                                     <xsl:attribute name="type">journal</xsl:attribute>
-                                    <xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute>
+                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute-->
                                     <xsl:text>journal</xsl:text>
                                 </note>
                             </xsl:otherwise>
