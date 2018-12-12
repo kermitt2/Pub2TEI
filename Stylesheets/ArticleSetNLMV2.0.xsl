@@ -48,7 +48,7 @@
                         <xsl:apply-templates select="ArticleTitle"/>
                     </titleStmt>
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
                         <xsl:if test="CopyrightInformation">
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </xsl:if>

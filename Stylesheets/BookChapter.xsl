@@ -123,7 +123,7 @@
                         </xsl:if>
                     </titleStmt>
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
                         <xsl:choose>
                             <xsl:when test="//body/book-part/book-part-meta">
                                 <publisher scheme="https://publisher-list.data.istex.fr/ark:/67375/H02-N14T76M9-6">Brepols Publishers</publisher>

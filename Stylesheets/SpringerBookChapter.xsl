@@ -66,7 +66,7 @@
                             select="Series/Book/descendant::Chapter/ChapterInfo/ChapterTitle"/>
                     </titleStmt>
                     <publicationStmt>
-                        <authority>ISTEX</authority>
+                        <!--authority>ISTEX</authority-->
                         <xsl:apply-templates
                             select="Series/Book/descendant::Chapter/ChapterInfo/ChapterCopyright"/>
                         <xsl:if test="//ArticleGrants/BodyPDFGrant[string(@Grant)='OpenAccess']">

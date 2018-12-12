@@ -24,7 +24,7 @@
             <xsl:when test="//pubfm/categ/@id[string-length() &gt; 0]">
                 <xsl:value-of select="$codeGenreNature"/>
             </xsl:when>
-            <!-- si non présence d'article-type dans la notice d'origine -->
+            <!-- if no article-type in the orignial metadata -->
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="//article/front/article-meta/abstract[string-length()&gt; 0]">
@@ -1579,7 +1579,7 @@
                             <xsl:when test="body/* | bdy/p | bdy/sec | bdy/corres/*">
                                 <xsl:apply-templates select="body/* | bdy/p | bdy/sec | bdy/corres/*"/>
                                 <xsl:apply-templates select="bm/objects/*"/>
-                                <!-- SG body ne contenant pas de sous-balise (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
+                                <!-- SG body not containing sub tags (ex: Nature_headerDTD_E55900BEA1B96187B075C3707A439F215C3EF07C.xml)-->
                                 <xsl:if test="//headerx/bdy">
                                     <div>
                                         <p>
@@ -1650,7 +1650,7 @@
             </xsl:if-->
 
             <analytic>
-                <!-- Cambridge - OUP ... ajout corrections des titres vides -->
+                <!-- Cambridge - OUP ... empty titles -->
                 <xsl:choose>
                     <xsl:when test="//article-title |//atl ='' and $repriseTitreVide">
                         <title level="a" type="main">
@@ -2020,7 +2020,7 @@
                     <xsl:apply-templates select="//aff"/>
                 </xsl:when>
             </xsl:choose>
-            <!-- appelle les affiliations complementaires -->
+            <!-- call complementary affiliations -->
             <xsl:choose>
                 <xsl:when test="/article/front/article-meta/author-notes/fn[@id=current()/xref/@rid]">
                     <xsl:apply-templates select="/article/front/article-meta/author-notes/fn[@id=current()/xref/@rid]"/>
