@@ -18,9 +18,10 @@
     <!-- Références bibliographiques à la fin d'un article -->
     <!-- ref-list: NLM article, ScholarOne -->
 
-    <xsl:template match="ref-list | biblist | ce:bibliography | bibl | wiley:bibliography">
+    <xsl:template match="ref-list | ref-list | biblist | ce:bibliography | bibl | wiley:bibliography">
         <div type="references">
             <xsl:apply-templates select="title | ce:section-title"/>
+            <xsl:apply-templates select="ref-list"/>
             <listBibl>
                 <!-- SG - attention parfois 2 voir 3 citations par <bibl> pour Wiley -->
                 <xsl:apply-templates select="ref |citgroup | ce:bibliography-sec | bib |wiley:bib | wiley:bibSection"/>
