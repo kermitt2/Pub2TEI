@@ -2381,7 +2381,7 @@ reactorsa'</title>
         match="article_id[@id_type='doi'] | article-id[@pub-id-type='doi'] | ArticleDOI | doi | ArticleId[@IdType='doi'] | ce:doi | @doi | DOI | ChapterDOI | wiley:publicationMeta[@level='unit']/wiley:doi">
         <xsl:if test="normalize-space(.)">
             <xsl:variable name="DOIValue" select="string(.)"/>
-            <idno type="DOI">
+            <idno type="doi">
                 <xsl:choose>
                     <xsl:when test=" starts-with($DOIValue,'DOI')">
                         <xsl:value-of select="normalize-space( substring-after($DOIValue,'DOI'))"/>
@@ -2427,7 +2427,7 @@ reactorsa'</title>
     <xsl:template
         match="ce:pii | article_id[@id_type='pii'] | article-id[@pub-id-type='pii'] | ArticleId[@IdType='pii']">
         <xsl:if test="normalize-space(.)">
-            <idno type="PII">
+            <idno type="pii">
                 <xsl:value-of select="normalize-space(.)"/>
             </idno>
         </xsl:if>

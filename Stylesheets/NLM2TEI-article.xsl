@@ -1714,7 +1714,7 @@
                 <!-- BMJ rattrapage DOI -->
                 <xsl:if test="//article-meta/article-id[@pub-id-type='url'][string-length() &gt; 0] and not(//article-meta/article-id[@pub-id-type='doi'][string-length() &gt; 0])">
                     <idno>
-                        <xsl:attribute name="type">DOI</xsl:attribute>
+                        <xsl:attribute name="type">doi</xsl:attribute>
                         <xsl:value-of select="normalize-space(substring-after(//article-meta/article-id[@pub-id-type='url'],'abs/'))"/>
                     </idno>
                 </xsl:if>

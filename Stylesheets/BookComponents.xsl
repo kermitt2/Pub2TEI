@@ -16,7 +16,7 @@
         </idno>
     </xsl:template>
     <xsl:template match="BookDOI">
-        <idno type="DOI">
+        <idno type="doi">
             <xsl:apply-templates/>
         </idno>
     </xsl:template>

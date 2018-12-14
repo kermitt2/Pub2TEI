@@ -241,14 +241,14 @@
 
     <!-- identifiant DOI-->
     <xsl:template match="article-data/doi">
-        <idno type="DOI">
+        <idno type="doi">
             <xsl:value-of select="."/>
         </idno>
     </xsl:template>
 
     <!-- identifiant PII -->
     <xsl:template match="article-data/pii">
-        <idno type="PII">
+        <idno type="pii">
             <xsl:value-of select="."/>
         </idno>
     </xsl:template>
@@ -1061,14 +1061,14 @@
     <!-- misc-text/extdoi 
          NB: les autres misc-text sont traités en elts <note> après monogr -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/misc-text/extdoi">
-        <idno type="DOI">
+        <idno type="doi">
             <xsl:value-of select="."/>
         </idno>
     </xsl:template>
     
     <!-- crossref/cr_doi -->
     <xsl:template match="*[ends-with(local-name(),'-ref')]/crossref/cr_doi">
-        <idno type="DOI">
+        <idno type="doi">
             <xsl:value-of select="."/>
         </idno>
     </xsl:template>
@@ -1281,7 +1281,7 @@
         NB: malheureusement très varié ! 
 
         Pourra devenir en TEI l'un des éléments suivants :
-           - idno[@type="DOI|ISBN"]   => traités à part (ci-dessus, resp. dans analytic et dans monogr)
+           - idno[@type="doi|ISBN"]   => traités à part (ci-dessus, resp. dans analytic et dans monogr)
            - note                     => traités ici
            - ref[@type="url"]         => traités ici
         

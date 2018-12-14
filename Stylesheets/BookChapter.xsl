@@ -360,7 +360,7 @@
                     </idno>
                 </xsl:if-->
                 <xsl:if test="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']">
-                    <idno type="DOI">
+                    <idno type="doi">
                         <xsl:value-of select="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']"/>
                     </idno>
                 </xsl:if>
@@ -387,7 +387,7 @@
                     </idno>
                 </xsl:if>
                 <xsl:if test="//book/book-meta/book-id[@pub-id-type='doi']">
-                    <idno type="DOI">
+                    <idno type="doi">
                         <xsl:value-of select="//book/book-meta/book-id[@pub-id-type='doi']"/>
                     </idno>
                 </xsl:if>

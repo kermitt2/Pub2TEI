@@ -2641,12 +2641,12 @@
                                     </xsl:for-each>
                                 </xsl:if>
                                 <xsl:if test="$docIssueEls//issue-info/ce:doi[string-length() &gt; 0] | $docIssueEls//s1:issue-info/ce:doi[string-length() &gt; 0]">
-                                    <idno type="DOI">
+                                    <idno type="doi">
                                         <xsl:value-of select="$docIssueEls//issue-info/ce:doi | $docIssueEls//s1:issue-info/ce:doi"/>
                                     </idno>
                                 </xsl:if>
                                 <xsl:if test="$docIssueEls//issue-info/ce:pii[string-length() &gt; 0] |$docIssueEls//s1:issue-info/ce:pii[string-length() &gt; 0]">
-                                    <idno type="PII">
+                                    <idno type="pii">
                                         <xsl:value-of select="$docIssueEls//issue-info/ce:pii | $docIssueEls//s1:issue-info/ce:pii"/>
                                     </idno>
                                 </xsl:if>

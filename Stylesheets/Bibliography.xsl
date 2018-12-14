@@ -1454,6 +1454,7 @@
                         <xsl:apply-templates select="name"/>
                         <xsl:apply-templates select="person-group"/>
                         <xsl:apply-templates select="elocation-id"/>
+                        <xsl:apply-templates select="pub-id"/>
                     </analytic>
                     <monogr>
                         <xsl:apply-templates select="source"/>
