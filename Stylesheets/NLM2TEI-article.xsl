@@ -2664,13 +2664,13 @@
                             <xsl:attribute name="type">
                                 <xsl:value-of select="@list-type"/>
                             </xsl:attribute>
-                            <xsl:apply-templates/>
+                            <!--xsl:apply-templates/-->
                         </xsl:if>
                         <xsl:if test="@id">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of select="@id"/>
                             </xsl:attribute>
-                            <xsl:apply-templates/>
+                            <!--xsl:apply-templates/-->
                         </xsl:if>
                         <xsl:if test="li|item">
                             <xsl:apply-templates/>
@@ -2684,13 +2684,13 @@
                         <xsl:attribute name="type">
                             <xsl:value-of select="@list-type"/>
                         </xsl:attribute>
-                        <xsl:apply-templates/>
+                        <!--xsl:apply-templates/-->
                     </xsl:if>
                     <xsl:if test="@id">
                         <xsl:attribute name="xml:id">
                             <xsl:value-of select="@id"/>
                         </xsl:attribute>
-                        <xsl:apply-templates/>
+                        <!--xsl:apply-templates/-->
                     </xsl:if>
                     <xsl:if test="li|item|list-item">
                         <xsl:apply-templates/>
