@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="UTF-8"?><!--Version 0.1 generated on --><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://istex.github.io/odd-istex/out/istex.xsd"><teiHeader><fileDesc><titleStmt><title level="a" type="main">Branch-Specific Microtubule Destabilization Mediates Axon Branch Loss during Neuromuscular Synapse Elimination</title></titleStmt><publicationStmt><publisher>Cell Press</publisher><availability><licence>© 2016 The Authors</licence><p>This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).</p></availability><date when="2016-11-23">2016</date><date when="2016-11-23">2016</date><date type="Copyright" when="2016">2016</date></publicationStmt><notesStmt><note type="content-type">research-article</note><note type="publication-type">journal</note></notesStmt><sourceDesc><biblStruct><analytic><title level="a" type="main">Branch-Specific Microtubule Destabilization Mediates Axon Branch Loss during Neuromuscular Synapse Elimination</title><author xml:id="author-0000"><persName>
+                        <surname>Brill</surname>
+                        <forename type="first">Monika S.</forename>
+                    </persName><affiliation><ref>1</ref>
+                Institute of Neuronal Cell Biology, Technische Universität München, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation><note place="foot">
+                    <ref>11</ref>
+                    <p xml:id="ntpara0010">Co-first author</p>
+                </note><email>monika.brill@lrz.tum.de</email><email>thomas.misgeld@tum.de</email></author><author xml:id="author-0001"><persName>
+                        <surname>Kleele</surname>
+                        <forename type="first">Tatjana</forename>
+                    </persName><affiliation><ref>1</ref>
+                Institute of Neuronal Cell Biology, Technische Universität München, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation><note place="foot">
+                    <ref>11</ref>
+                    <p xml:id="ntpara0010">Co-first author</p>
+                </note></author><author xml:id="author-0002"><persName>
+                        <surname>Ruschkies</surname>
+                        <forename type="first">Laura</forename>
+                    </persName><affiliation><ref>2</ref>
+                University Medical Center Hamburg-Eppendorf, Center for Molecular Neurobiology (ZMNH), Institute for Molecular Neurogenetics, Falkenried 94, 20251 Hamburg, Germany
+            </affiliation><note place="foot">
+                    <ref>11</ref>
+                    <p xml:id="ntpara0010">Co-first author</p>
+                </note></author><author xml:id="author-0003"><persName>
+                        <surname>Wang</surname>
+                        <forename type="first">Mengzhe</forename>
+                    </persName><affiliation><ref>1</ref>
+                Institute of Neuronal Cell Biology, Technische Universität München, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation></author><author xml:id="author-0004"><persName>
+                        <surname>Marahori</surname>
+                        <forename type="first">Natalia A.</forename>
+                    </persName><affiliation><ref>1</ref>
+                Institute of Neuronal Cell Biology, Technische Universität München, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation></author><author xml:id="author-0005"><persName>
+                        <surname>Reuter</surname>
+                        <forename type="first">Miriam S.</forename>
+                    </persName><affiliation><ref>1</ref>
+                Institute of Neuronal Cell Biology, Technische Universität München, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation></author><author xml:id="author-0006"><persName>
+                        <surname>Hausrat</surname>
+                        <forename type="first">Torben J.</forename>
+                    </persName><affiliation><ref>2</ref>
+                University Medical Center Hamburg-Eppendorf, Center for Molecular Neurobiology (ZMNH), Institute for Molecular Neurogenetics, Falkenried 94, 20251 Hamburg, Germany
+            </affiliation></author><author xml:id="author-0007"><persName>
+                        <surname>Weigand</surname>
+                        <forename type="first">Emily</forename>
+                    </persName><affiliation><ref>3</ref>
+                Ball State University, Department of Biology, 2000 West University, Muncie, IN 47306, USA
+            </affiliation></author><author xml:id="author-0008"><persName>
+                        <surname>Fisher</surname>
+                        <forename type="first">Matthew</forename>
+                    </persName><affiliation><ref>3</ref>
+                Ball State University, Department of Biology, 2000 West University, Muncie, IN 47306, USA
+            </affiliation></author><author xml:id="author-0009"><persName>
+                        <surname>Ahles</surname>
+                        <forename type="first">Andrea</forename>
+                    </persName><affiliation><ref>4</ref>
+                Institute of Pharmacology and Toxicology, Technische Universität München, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation><affiliation><ref>5</ref>
+                German Center for Cardiovascular Research, DZHK, Partner site Munich Heart Alliance, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation></author><author xml:id="author-0010"><persName>
+                        <surname>Engelhardt</surname>
+                        <forename type="first">Stefan</forename>
+                    </persName><affiliation><ref>4</ref>
+                Institute of Pharmacology and Toxicology, Technische Universität München, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation><affiliation><ref>5</ref>
+                German Center for Cardiovascular Research, DZHK, Partner site Munich Heart Alliance, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation></author><author xml:id="author-0011"><persName>
+                        <surname>Bishop</surname>
+                        <forename type="first">Derron L.</forename>
+                    </persName><affiliation><ref>6</ref>
+                Indiana University School of Medicine, Department of Cellular and Integrative Physiology, Medical Science Building 385, Indianapolis, IN 46202, USA
+            </affiliation><affiliation><ref>7</ref>
+                Stark Neurosciences Research Institute, Indiana University School of Medicine, 320 W. 15
+                 Street, Indianapolis, IN 46202, USA
+            </affiliation></author><author xml:id="author-0012"><persName>
+                        <surname>Kneussel</surname>
+                        <forename type="first">Matthias</forename>
+                    </persName><affiliation><ref>2</ref>
+                University Medical Center Hamburg-Eppendorf, Center for Molecular Neurobiology (ZMNH), Institute for Molecular Neurogenetics, Falkenried 94, 20251 Hamburg, Germany
+            </affiliation></author><author xml:id="author-0013"><persName>
+                        <surname>Misgeld</surname>
+                        <forename type="first">Thomas</forename>
+                    </persName><affiliation><ref>1</ref>
+                Institute of Neuronal Cell Biology, Technische Universität München, Biedersteiner Straße 29, 80802 Munich, Germany
+            </affiliation><affiliation><ref>8</ref>
+                Center of Integrated Protein Science (CIPSM), Butenandtstraße 5-13, 81377 Munich, Germany
+            </affiliation><affiliation><ref>9</ref>
+                German Center for Neurodegenerative Diseases (DZNE), Feodor-Lynen-Straße 17, 81377 Munich, Germany
+            </affiliation><affiliation><ref>10</ref>
+                Munich Cluster of Systems Neurology (SyNergy), Feodor-Lynen-Straße 17, 81377 Munich, Germany
+            </affiliation><note place="foot">
+                    <ref>12</ref>
+                    <p xml:id="ntpara0015">Lead Contact</p>
+                </note><email>monika.brill@lrz.tum.de</email><email>thomas.misgeld@tum.de</email></author><idno type="pmid">27773584</idno><idno type="pmc">5133389</idno><idno type="publisher-id">S0896-6273(16)30654-7</idno><idno type="doi">10.1016/j.neuron.2016.09.049</idno></analytic><monogr><title level="j" type="main">Neuron</title><idno type="nlm-ta">Neuron</idno><idno type="iso-abbrev">Neuron</idno><idno type="pISSN">0896-6273</idno><idno type="eISSN">1097-4199</idno><imprint><publisher>Cell Press</publisher><date when="2016-11-23">2016</date><date when="2016-11-23">2016</date><biblScope unit="vol">92</biblScope><biblScope unit="issue">4</biblScope><biblScope unit="page" from="845">845</biblScope><biblScope unit="page" to="856">856</biblScope></imprint></monogr></biblStruct></sourceDesc></fileDesc><profileDesc><abstract>
+                <head>Summary</head>
+                <p>Developmental axon remodeling is characterized by the selective removal of branches from axon arbors. The mechanisms that underlie such branch loss are largely unknown. Additionally, how neuronal resources are specifically assigned to the branches of remodeling arbors is not understood. Here we show that axon branch loss at the developing mouse neuromuscular junction is mediated by branch-specific microtubule severing, which results in local disassembly of the microtubule cytoskeleton and loss of axonal transport in branches that will subsequently dismantle. Accordingly, pharmacological microtubule stabilization delays neuromuscular synapse elimination. This branch-specific disassembly of the cytoskeleton appears to be mediated by the microtubule-severing enzyme spastin, which is dysfunctional in some forms of upper motor neuron disease. Our results demonstrate a physiological role for a neurodegeneration-associated modulator of the cytoskeleton, reveal unexpected cell biology of branch-specific axon plasticity and underscore the mechanistic similarities of axon loss in development and disease.</p>
+            </abstract><abstract>
+                <head>Highlights</head>
+                <p>
+                    <list type="simple">
+                        <item>
+                            
+                            <p>During synapse elimination, retreating axon branches dismantle their microtubules</p>
+                        </item>
+                        <item>
+                            
+                            <p>Microtubules are destabilized due to branch-specific severing</p>
+                        </item>
+                        <item>
+                            
+                            <p>Microtubule stabilization delays axon branch removal during synapse elimination</p>
+                        </item>
+                        <item>
+                            
+                            <p>The disease-associated microtubule severing protein spastin mediates microtubule loss</p>
+                        </item>
+                    </list>
+                </p>
+            </abstract><abstract>
+                <p>Brill, Kleele, Ruschkies et al. show that microtubule destabilization mediates dismantling of retreating axon branches and excludes them from organelle delivery by axonal transport. This mechanism is branch specific and involves the neurodegeneration-associated microtubule severing protein spastin.</p>
+            </abstract><textClass ana="subject"><keywords scheme="heading">
+                    <term>Article</term>
+                </keywords></textClass><textClass ana="keyword"><keywords><term>synapse elimination</term><term>neuromuscular junction</term><term>axonal transport</term><term>microtubule</term><term>cytoskeleton</term></keywords></textClass><langUsage><language ident="zxx"/></langUsage></profileDesc><revisionDesc>
+                <change when="2016-02-21">Received</change>
+                <change when="2016-08-14">Revised</change>
+                <change when="2016-09-21">Accepted</change>
+            </revisionDesc></teiHeader><text><body><div xml:id="sec1">
+            <head>Introduction</head>
+            <p>Many developing neurons initially form exuberant axonal projections. Postnatal pruning then selectively removes redundant or anatomically inappropriate axon branches (
+                <ref type="bibr" target="#bib26">Kano and Hashimoto, 2009</ref>, 
+                <ref type="bibr" target="#bib34">Lichtman and Colman, 2000</ref>). Such pruning comes in diverse manifestations that differ in morphology and extent, as well as in driving force, which in some cases are stereotypical molecular cues while in others are activity-dependent competition. Still, in this variety of settings—ranging from invertebrates to mammals and the peripheral to the central nervous system—one property appears to be conserved: individual branches of an axonal arbor are selectively pruned back to their branch point while leaving the remainder of the axon intact or even strengthened (
+                <ref type="bibr" target="#bib37">Luo and O’Leary, 2005</ref>, 
+                <ref type="bibr" target="#bib48">Riccomagno and Kolodkin, 2015</ref>, 
+                <ref type="bibr" target="#bib53">Schuldiner and Yaron, 2015</ref>). Currently, our understanding of such branch-specific remodeling is sketchy, even though its significance extends beyond development, as pruning and neurodegenerative “die-back” might share a core set of cell biological mechanisms and molecular mediators (
+                <ref type="bibr" target="#bib11">Coleman and Perry, 2002</ref>, 
+                <ref type="bibr" target="#bib73">Yaron and Schuldiner, 2016</ref>). For example, many forms of axon pruning and degeneration are characterized by disruption of the cytoskeleton (
+                <ref type="bibr" target="#bib14">d’Ydewalle et al., 2011</ref>, 
+                <ref type="bibr" target="#bib31">Kurup et al., 2015</ref>, 
+                <ref type="bibr" target="#bib41">Massaro et al., 2009</ref>, 
+                <ref type="bibr" target="#bib69">Watts et al., 2003</ref>). Microtubules seem especially critical in disease settings, as they not only impart shape, but also mediate transport and signaling (
+                <ref type="bibr" target="#bib13">Conde and Cáceres, 2009</ref>, 
+                <ref type="bibr" target="#bib20">Fletcher and Mullins, 2010</ref>). Moreover, numerous post-translational modifications and associated proteins can regulate microtubule turnover and might hence determine local axon stability (
+                <ref type="bibr" target="#bib23">Janke and Bulinski, 2011</ref>, 
+                <ref type="bibr" target="#bib24">Janke and Kneussel, 2010</ref>). Indeed, a number of pharmacological and genetic perturbations of microtubules manifest in axonal die-back (
+                <ref type="bibr" target="#bib45">Niwa et al., 2013</ref>, 
+                <ref type="bibr" target="#bib51">Röyttä and Raine, 1986</ref>, 
+                <ref type="bibr" target="#bib57">Solowska and Baas, 2015</ref>). In converse, microtubule stabilization has been hailed as a potential therapy for various neurologic conditions (
+                <ref type="bibr" target="#bib9">Cartelli et al., 2013</ref>, 
+                <ref type="bibr" target="#bib15">Das and Miller, 2012</ref>, 
+                <ref type="bibr" target="#bib16">Ertürk et al., 2007</ref>, 
+                <ref type="bibr" target="#bib17">Fanara et al., 2007</ref>, 
+                <ref type="bibr" target="#bib18">Fassier et al., 2013</ref>, 
+                <ref type="bibr" target="#bib22">Hellal et al., 2011</ref>, 
+                <ref type="bibr" target="#bib56">Sengottuvel et al., 2011</ref>). Beyond pathological settings, however, the role of the microtubular cytoskeleton in local axon loss is more controversial. While some previous studies have found microtubule loss in developmental pruning (
+                <ref type="bibr" target="#bib6">Bishop et al., 2004</ref>, 
+                <ref type="bibr" target="#bib40">Maor-Nof et al., 2013</ref>, 
+                <ref type="bibr" target="#bib53">Schuldiner and Yaron, 2015</ref>, 
+                <ref type="bibr" target="#bib69">Watts et al., 2003</ref>, 
+                <ref type="bibr" target="#bib70">Williams and Truman, 2005</ref>), other influential models surmise a critical role for intact microtubules and transport in the pruning process (
+                <ref type="bibr" target="#bib3">Barber and Lichtman, 1999</ref>, 
+                <ref type="bibr" target="#bib44">Morris and Hollenbeck, 1993</ref>, 
+                <ref type="bibr" target="#bib49">Riley, 1981</ref>). For example, it has been proposed that organelles are “evacuated” by fast retrograde transport from dismantling axon branches, inconsistent with the notion that microtubule loss would be an early and causative step in axon loss (
+                <ref type="bibr" target="#bib35">Liu et al., 2010</ref>). Moreover, whether microtubule disassembly in a remodeling axon arbor is locally confined, and which factors might mediate it, remains elusive. Overall, experimental interrogation of the relationship between cytoskeletal changes and axon remodeling is challenging, as few forms of developmental pruning are accessible to branch-specific assays that allow concomitant assessment of cytoskeletal and axon dynamics.
+            </p>
+            <p>In this work, we take advantage of the developing mammalian neuromuscular junction (NMJ), a prime vertebrate model of branch-specific axon pruning, to address the mechanisms that mediate axon branch loss (
+                <ref type="bibr" target="#bib34">Lichtman and Colman, 2000</ref>). During prenatal neuromuscular synaptogenesis, up to ten branches of different motor axons converge on the same synaptic site on a muscle fiber (
+                <ref type="bibr" target="#bib62">Tapia et al., 2012</ref>). Subsequently (in the mouse during the first two postnatal weeks), all but one of these branches are removed by activity-dependent synapse elimination. During this process, a motor neuron typically loses the majority of its initial branches while simultaneously stabilizing and expanding those that remain. We have previously shown that dismantling axon branches eventually sheds fragments that are digested by glial cells (
+                <ref type="bibr" target="#bib6">Bishop et al., 2004</ref>, 
+                <ref type="bibr" target="#bib58">Song et al., 2008</ref>). This final dismantling to establish single innervation is preceded by a phase of ongoing competition, where one of the synaptic inputs expands at the expense of the other (
+                <ref type="bibr" target="#bib68">Walsh and Lichtman, 2003</ref>). While this competition process is not necessarily monotonic, as it is affected by the outcome of other remote synaptic competitions that the involved motor neurons engage in (
+                <ref type="bibr" target="#bib28">Kasthuri and Lichtman, 2003</ref>), the synaptic territory of a branch can still be used as a surrogate to predict likely outcome (
+                <ref type="bibr" target="#bib68">Walsh and Lichtman, 2003</ref>). Notably, expanding and shrinking axon branches of all stages of competition coexist along the same developing motor unit, intermingled in an apparently stochastic distribution (
+                <ref type="bibr" target="#bib29">Keller-Peck et al., 2001</ref>). Despite this relatively comprehensive understanding of the general ruleset of this synapse remodeling process and its significance for the final neuro-motor circuit, the cell biological events that precede the dismantling of single branches of a developing motor unit have remained obscure. We now elucidate the mechanisms that underlie axon branch dismantling by monitoring cytoskeletal function and stability in axon branches during different stages of synapse elimination using tools that we have previously developed (
+                <ref type="bibr" target="#bib30">Kleele et al., 2014</ref>, 
+                <ref type="bibr" target="#bib43">Misgeld et al., 2007</ref>, 
+                <ref type="bibr" target="#bib59">Sorbara et al., 2014</ref>). Our results reveal loss of microtubules as a driving force of branch-specific axon loss during synapse elimination, in part mediated by the neurodegeneration-associated microtubule-severing protein spastin.
+            </p>
+        </div><div xml:id="sec2">
+            <head>Results</head>
+            <div xml:id="sec2.1">
+                <head>Organelle Evacuation Does Not Precede Initiation of Axon Branch Loss</head>
+                <p>We first explored whether there is a phase of organelle evacuation from retreating branches as proposed in the original model of neuromuscular synapse elimination (
+                    <ref type="bibr" target="#bib49">Riley, 1981</ref>) and since demonstrated for remodeling 
+                    <hi rend="italic">Drosophila</hi> NMJs (
+                    <ref type="bibr" target="#bib35">Liu et al., 2010</ref>) or whether the opposite prediction, namely of absent transport in dismantling axon branches, holds true. To this end, we devised a method of sequential photo-bleaching in postnatal days 7–13 (P7–P13) nerve-muscle explants from 
+                    <hi rend="italic">Thy1-XFP</hi> mice (
+                    <hi rend="italic">Thy1</hi>-YFP-16 or 
+                    <hi rend="italic">Thy1</hi>-CFP-5; 
+                    <ref type="bibr" target="#bib19">Feng et al., 2000</ref>) to determine the fraction of a neuromuscular postsynaptic site that a given motor axon branch occupied (
+                    <ref type="fig" target="#fig1">Figures 1</ref>A–1E; 
+                    <ref type="bibr" target="#bib7">Brill et al., 2011</ref>, 
+                    <ref type="bibr" target="#bib66">Turney and Lichtman, 2012</ref>). This territory can serve as a predictor of the outcome of synaptic competition (
+                    <ref type="bibr" target="#bib68">Walsh and Lichtman, 2003</ref>). We then measured the relationship of net delivery (i.e., anterograde minus retrograde flux) of fluorescently labeled mitochondria (
+                    <hi rend="italic">Thy1-mitoCFP-K</hi>; 
+                    <ref type="bibr" target="#bib43">Misgeld et al., 2007</ref>) to the synaptic territories held by a pair of competing branches (
+                    <ref type="fig" target="#fig1">Figure 1</ref>F; 
+                    <ref type="supplementary-material" target="#mmc1">Figures S1</ref>A and S1B). Notably, apparently “shrinking” axon branches (i.e., those that held 40% or less of a synapse’s area) showed neither mitochondrial delivery nor evacuation (net transport not significantly different from 0; p = 0.12, Wilcoxon signed rank test; n = 53 axons/53 mice). In contrast, “undecided” (centered on 50% territory) and apparently “growing” (&gt;60%) axon branches received a stable net number of mitochondria (net transport for 41%–60% branches did not differ significantly from branches that innervated 61%–80%, 81%–99%, or 100% of a synapse; p = 0.844, Kruskal-Wallis test; 41%–60%, n = 41 axon/41 mice; 61%–80%, n = 30/30; 81%–99%, n = 24/24; and 100%, n = 128/66). In addition to mitochondria, also the transport of peroxisomes was selectively abolished in retreating branches (
+                    <ref type="supplementary-material" target="#mmc1">Figures S1</ref>C and S1D; measured in 
+                    <hi rend="italic">Thy1</hi>-
+                    <hi rend="italic">PeroxiYFP</hi> mice; 
+                    <ref type="bibr" target="#bib59">Sorbara et al., 2014</ref>). These results argue against an “evacuation” model of axon dismantling for the mouse NMJ (
+                    <ref type="bibr" target="#bib35">Liu et al., 2010</ref>, 
+                    <ref type="bibr" target="#bib49">Riley, 1981</ref>) and further suggest the remodeling of microtubular transport tracts as a possible cause of these branch-specific transport deficits, as transport of at least two organelles in both directions was affected (
+                    <ref type="supplementary-material" target="#mmc1">Figure S1</ref>).
+                </p>
+            </div>
+            <div xml:id="sec2.2">
+                <head>The Microtubular Cytoskeleton Is Specifically Dismantled in Terminal Axon Branches before They Retreat</head>
+                <p>To characterize the status of the microtubular cytoskeleton with single-branch precision, we determined synaptic territories by sequential photo-bleaching and then processed NMJs for quantitative immunostainings of βIII-tubulin (normalized to transgenically expressed YFP; see 
+                    <ref type="supplementary-material" target="#mmc1">Supplemental Experimental Procedures</ref> for details). In retreating axon branches, tubulin levels dropped as territory shrank, with retraction bulbs showing a substantial (52%) reduction compared to synapses in the midst of competition (
+                    <ref type="fig" target="#fig1">Figure 1</ref>G; 0% versus 41%–60%, p &lt; 0.0001, Mann-Whitney test; 0%, n = 55 axons/9 mice; 41%–60%, n = 25/7), while in consolidated axons (&gt;60%), tubulin levels further increased (by 27%; 
+                    <ref type="fig" target="#fig1">Figure 1</ref>G; 41%–60% versus 100%, p = 0.05, Mann-Whitney test; 100%, n = 54 axons/9 mice). Comparable results were obtained with further antibodies directed against βIII-tubulin and α-tubulin, while neurofilaments were unaffected (
+                    <ref type="supplementary-material" target="#mmc1">Figure S2</ref>), suggesting that microtubules were specifically lost. Indeed, when we took advantage of mice that express a fluorescently labeled plus-end binding protein (
+                    <ref type="fig" target="#fig2">Figure 2</ref>; 
+                    <hi rend="italic">Thy1</hi>-
+                    <hi rend="italic">EB3-YFP</hi>; 
+                    <ref type="bibr" target="#bib30">Kleele et al., 2014</ref>), we found a substantial increase in the density of EB3 “comets” in axon branches with territory of 40% or less (
+                    <ref type="fig" target="#fig2">Figure 2</ref>A; 
+                    <ref type="supplementary-material" target="#mmc2">Movie S1</ref>; significance was already reached in axons with 21%–40% territory versus 41%–60%, p &lt; 0.01, unpaired t test; 21%–40%, n = 16 axons/11 mice; 41%–60%, n = 14/8). This assay highlights growing microtubule tips that are capped by end-binding proteins (such as EB3). It allows visualizing an aspect of the dynamics of the microtubule cytoskeleton and—when combined with a measure of microtubule mass, such as tubulin staining—can be used as a surrogate measure of microtubule length (
+                    <ref type="bibr" target="#bib46">Perez et al., 1999</ref>, 
+                    <ref type="bibr" target="#bib61">Stepanova et al., 2003</ref>, 
+                    <ref type="bibr" target="#bib2">Baas et al., 2016</ref>). Indeed, the ratio of EB3 over βIII-tubulin increased dramatically as axons shrank to less than 40% of territory. Thus, a highly destabilized and fragmented microtubular cytoskeleton exists in such apparently shrinking inputs, while in apparently growing axon branches, the cytoskeleton appears rather stable (
+                    <ref type="fig" target="#fig2">Figure 2</ref>B). Importantly, the observed changes are not the result of a general developmental expansion and stabilization of the microtubule cytoskeleton from which retreating branches were excluded, as we found for all measures (mitochondrial transport, tubulin immunostaining, and EB3 density) that axon branches of all territory bins at P7/P8 exhibited the same characteristics as their counterparts two days later (P9/P10), i.e., across a developmental time window typically required for a synapse to transition from double to single innervation (
+                    <ref type="bibr" target="#bib68">Walsh and Lichtman, 2003</ref>). For example (
+                    <ref type="supplementary-material" target="#mmc1">Figure S3</ref>), this developmental profile indicates that retraction bulbs at P9/P10 contain less tubulin than the two branches serving a doubly innervated synapse did at P7/P8, i.e., those axon branches of which one will convert to a retraction bulb in ∼62% of cases within the next two days (percentage of doubly innervated synapses at P7/P8: 25.2% ± 3.4% versus P9/P10: 9.7% ± 1.3%, n ≥ 6 mice). To corroborate that reduced tubulin staining indeed corresponded to actual loss of microtubules and concurrently validate the bleaching approach, we reconstructed a subset of bleached NMJs by correlated electron microscopy (
+                    <ref type="fig" target="#fig3">Figures 3</ref>A and 3B; 
+                    <ref type="supplementary-material" target="#mmc3">Movie S2</ref>; 
+                    <ref type="bibr" target="#bib6">Bishop et al., 2004</ref>). This approach confirmed a profound loss of microtubules in apparently shrinking branches (
+                    <ref type="fig" target="#fig3">Figures 3</ref>C–3F), following a quantitative relationship similar to the one seen previously by immunohistochemistry (
+                    <ref type="fig" target="#fig3">Figure 3</ref>G, cf. 
+                    <ref type="fig" target="#fig1">Figure 1</ref>G), even though the latter appears to also label a base level of tubulin not detectable by electron microscopy.
+                </p>
+                <p>The fact that during NMJ synapse elimination single branches in an axonal arbor are dismantled, while sister branches are preserved and even strengthened (
+                    <ref type="bibr" target="#bib12">Colman et al., 1997</ref>, 
+                    <ref type="bibr" target="#bib29">Keller-Peck et al., 2001</ref>), suggests that microtubule destabilization must be a precisely tuned and compartmentalized process. Indeed, when we measured EB3 comet density in proximal and distal positions along axon branches tipped by retraction bulbs, we found the same average density of EB3 comets (
+                    <ref type="fig" target="#fig2">Figures 2</ref>C and 2D), while the stem axon of a retraction bulb showed the same level of EB3 comets as stem axons of branches that had established single innervation (
+                    <ref type="fig" target="#fig2">Figures 2</ref>E and 2F). Thus, microtubular destabilization is specific to and compartmentalized within retreating branches.
+                </p>
+            </div>
+            <div xml:id="sec2.3">
+                <head>Pharmacological Stabilization of Microtubules Delays Synapse Elimination</head>
+                <p>Our data suggest that branch-specific microtubule destabilization represents a seminal step in branch dismantling. This predicts that stabilizing the microtubular cytoskeleton should delay synapse elimination. Notably, stabilizing microtubules using epothilone, a readily bioavailable alternative to paclitaxel, is currently being explored as an approach to preserve axons after trauma (
+                    <ref type="bibr" target="#bib52">Ruschel et al., 2015</ref>) and during neurodegeneration (
+                    <ref type="bibr" target="#bib9">Cartelli et al., 2013</ref>, 
+                    <ref type="bibr" target="#bib76">Zhang et al., 2012</ref>). Treatment of mice with a single injection of epothilone B on P5 caused a significant delay in synapse elimination (
+                    <ref type="fig" target="#fig4">Figure 4</ref>A) with multiple innervation present at least until P21 (
+                    <ref type="fig" target="#fig4">Figure 4</ref>B). We confirmed that epothilone did not delay overall neuromuscular development (
+                    <ref type="supplementary-material" target="#mmc1">Figures S4</ref>A–S4D), while it increased tubulin content and reduced EB3 comet density in both retreating and established “winner” axons in a dose-dependent manner (
+                    <ref type="fig" target="#fig4">Figures 4</ref>C–4E; 
+                    <ref type="supplementary-material" target="#mmc1">Figures S5</ref>A–S5C). Finally, stabilizing microtubules increased mitochondrial transport in retreating axon branches. This effect was relatively less pronounced in the unbranched stem of axons found in the intercostal nerve and in terminal axon branches that have established single innervation (
+                    <ref type="supplementary-material" target="#mmc1">Figures S5</ref>D and S5E).
+                </p>
+            </div>
+            <div xml:id="sec2.4">
+                <head>Spastin Destabilizes Microtubules in Retreating Axons and Promotes Synapse Elimination</head>
+                <p>The fact that global stabilization of microtubules delayed branch removal raised the question of which mechanism might mediate specific destabilization of the microtubular cytoskeleton in apparently shrinking branches. A number of post-translational modifications have been linked to microtubule turnover (
+                    <ref type="bibr" target="#bib23">Janke and Bulinski, 2011</ref>, 
+                    <ref type="bibr" target="#bib24">Janke and Kneussel, 2010</ref>) and hence might contribute to the molecular changes that accompany branch-specific microtubule destabilization. Using immunostainings for post-translational tubulin modifications in retreating axons (normalized to βIII-tubulin to account for the diminishing overall tubulin levels; 
+                    <ref type="fig" target="#fig5">Figures 5</ref>A–5H), we found the expected change in glutamylation/tyrosination ratio characteristic of a hyper-dynamic microtubular cytoskeleton, as well as a selective drop of polyglutamylation, which occurred once an axon’s territory had fallen below 40% (
+                    <ref type="fig" target="#fig5">Figure 5</ref>I). There was no evidence for selective deacetylation (
+                    <ref type="fig" target="#fig5">Figures 5</ref>E and 5F), which has previously been linked to microtubule destabilization (
+                    <ref type="bibr" target="#bib14">d’Ydewalle et al., 2011</ref>, 
+                    <ref type="bibr" target="#bib42">Matsuyama et al., 2002</ref>). These data suggested that tubulin deacetylases are not causal in the branch-specific dismantling process but that other microtubule-modifying enzymes, some of which are sensitive to post-translational modifications (
+                    <ref type="bibr" target="#bib32">Lacroix et al., 2010</ref>, 
+                    <ref type="bibr" target="#bib67">Valenstein and Roll-Mecak, 2016</ref>), might mediate the local destabilizing effects on the microtubule cytoskeleton. For example, microtubule-severing enzymes, such as spastin, would be expected to cause an increase in the number of microtubule ends, while at the same time potentially inducing the loss of microtubule mass (
+                    <ref type="bibr" target="#bib2">Baas et al., 2016</ref>). Spastin especially has been implicated, on the one hand, in regulating axon branching and synapse development (
+                    <ref type="bibr" target="#bib65">Trotta et al., 2004</ref>, 
+                    <ref type="bibr" target="#bib71">Wood et al., 2006</ref>, 
+                    <ref type="bibr" target="#bib74">Yu et al., 2008</ref>), as well as, on the other hand, degeneration of motor tracts in hereditary spastic paraparesis (
+                    <ref type="bibr" target="#bib57">Solowska and Baas, 2015</ref>). Notably, the most affected axon projection in this disease, the corticospinal tract, is also a site of axon branch remodeling (
+                    <ref type="bibr" target="#bib60">Stanfield et al., 1982</ref>).
+                </p>
+                <p>To test the involvement of spastin in synapse elimination and the microtubule destabilization that accompanies it, we generated a new spastin knockout (KO) mouse via the “knockout-first” approach to characterize synapse elimination, as well as axonal microtubule content and turnover (
+                    <ref type="fig" target="#fig6">Figure 6</ref>). In contrast to other species, where knockdowns of spastin results in motor axon defects (
+                    <ref type="bibr" target="#bib65">Trotta et al., 2004</ref>, 
+                    <ref type="bibr" target="#bib71">Wood et al., 2006</ref>), in mice, spastin deletion does not result in an obvious phenotype in young animals (
+                    <ref type="bibr" target="#bib63">Tarrade et al., 2006</ref>, 
+                    <ref type="bibr" target="#bib27">Kasher et al., 2009</ref>). In line with these previous murine loss-of-function mutants of spastin, our spastin knockout mice also showed no detectable neuromuscular phenotype at birth (such as abnormal sprouting; 
+                    <ref type="supplementary-material" target="#mmc1">Figure S6</ref>) or during postnatal maturation of neuromuscular junctions (
+                    <ref type="supplementary-material" target="#mmc1">Figures S4</ref>E–S4H). Strikingly, synapse elimination was substantially delayed in these mutants (
+                    <ref type="fig" target="#fig7">Figures 7</ref>A and 7B). When we measured the speed with which retraction bulbs shortened in spastin-mutant mice (
+                    <ref type="bibr" target="#bib6">Bishop et al., 2004</ref>), we found a significant reduction compared to the wild-type situation (
+                    <ref type="fig" target="#fig7">Figures 7</ref>C–7E). As expected, βIII-tubulin content was increased in retreating, as well as stabilized, axon branches, while an increase in EB3 comet density commensurate to an increased microtubule mass was only evident in stabilized branches at singly innervated NMJs, but not in retraction bulbs (
+                    <ref type="fig" target="#fig7">Figures 7</ref>F and 7G). Hence, global suppression of spastin gene expression selectively—albeit only partially—reduced microtubule degradation as indicated by the ratio of comet density and tubulin content (
+                    <ref type="fig" target="#fig7">Figure 7</ref>H). As spastin is widely expressed (
+                    <ref type="bibr" target="#bib38">Ma et al., 2006</ref>), we ensured the site of action of spastin by using a ChAT-Cre mouse line (cre recombinase driven by the choline acetyltransferase [ChAT] promoter; 
+                    <ref type="fig" target="#fig7">Figure 7</ref>I) to generate a cell-type-specific spastin knockout mouse lacking spastin gene expression selectively in cholinergic neurons. Again, when analyzing the degree of multiple innervation, we found that loss of spastin gene expression in motor neurons only led to a significant delay in synapse elimination from P7 to P21 (
+                    <ref type="fig" target="#fig7">Figure 7</ref>J). Similarly, when we intraventricularly injected adeno-associated virus expressing codon-improved cre recombinase into early postnatal (P1/P2) pups, we found that postnatal deletion of spastin (as indicated by a tdTomato reporter, which was also expressed in a cre-dependent manner) resulted in delayed synapse elimination at P9 (30.9% ± 0.03% of spastin
+                    <hi rend="superscript">fl/fl</hi> axon branches that expressed the cre-dependent marker were still engaged in competition versus 20.5% ± 0.03% of axon branches that either were spastin
+                    <hi rend="superscript">wt/wt</hi> or did not express the indicator of recombination; n ≥ 126 NMJs from 12/9 muscles/mice and 8/5 for spastin
+                    <hi rend="superscript">fl/fl</hi> and control, respectively; p &lt; 0.05, unpaired t test).
+                </p>
+            </div>
+        </div><div xml:id="sec3">
+            <head>Discussion</head>
+            <p>Here we demonstrate that during NMJ synapse elimination, branch-specific destabilization of the microtubular cytoskeleton parallels failure of organelle delivery and induces axon branch dismantling. This effect is mediated in part by the microtubule-severing protein spastin. Our results provide insight into a hitherto largely unresolved question related to neuronal remodeling and reveal new parallels between developmental plasticity and neurodegeneration. Moreover, while dendritic sub-compartments play an important role in many models of circuit plasticity (
+                <ref type="bibr" target="#bib10">Cichon and Gan, 2015</ref>, 
+                <ref type="bibr" target="#bib25">Kanamori et al., 2013</ref>, 
+                <ref type="bibr" target="#bib36">Losonczy et al., 2008</ref>, 
+                <ref type="bibr" target="#bib72">Yang et al., 2014</ref>), axon branches are less frequently discussed in this context (
+                <ref type="bibr" target="#bib48">Riccomagno and Kolodkin, 2015</ref>).
+            </p>
+            <p>Notably, our results establish that axons are capable of branch-specific remodeling of the microtubular cytoskeleton, which results in changed resource allocation by axonal transport. Here our work has two important implications: (1) early microtubule degradation in branches destined for dismantling argues against the necessity of evacuation by axonal transport (
+                <ref type="bibr" target="#bib35">Liu et al., 2010</ref>, 
+                <ref type="bibr" target="#bib44">Morris and Hollenbeck, 1993</ref>, 
+                <ref type="bibr" target="#bib49">Riley, 1981</ref>) but is consistent with our previous work that suggested local piece-meal shedding and degradation of dismantling axon branches and their content (
+                <ref type="bibr" target="#bib6">Bishop et al., 2004</ref>, 
+                <ref type="bibr" target="#bib58">Song et al., 2008</ref>) and (2) within an axonal arbor, organelle transport is matched to the down-stream target size. This holds true even at the level of terminal axon branches, where anterograde transport corresponds to synaptic territory (
+                <ref type="supplementary-material" target="#mmc1">Figure S1</ref>B), which in turn corresponds to the degree of local microtubule destabilization (
+                <ref type="fig" target="#fig1">Figures 1</ref>G and 
+                <ref type="fig" target="#fig2">2</ref>A). This implies that axonal transport in developing axonal arbors is carefully regulated and capable of following alterations in synaptic target size (
+                <ref type="bibr" target="#bib1">Aletta and Goldberg, 1982</ref>). Thus, axonal transport might provide a cell biological correlate for the resource allocation that previous modeling and experimental work have predicted as an important outcome determinant of synapse elimination (
+                <ref type="bibr" target="#bib3">Barber and Lichtman, 1999</ref>, 
+                <ref type="bibr" target="#bib28">Kasthuri and Lichtman, 2003</ref>).
+            </p>
+            <p>In any case, microtubule degradation likely not only affects transport into dismantling branches, but could directly contribute to shrinking and atrophy of the axon branch (
+                <ref type="bibr" target="#bib5">Bernstein and Lichtman, 1999</ref>), as microtubules can directly impart shape, in part, by cross-talk to the actin cytoskeleton (
+                <ref type="bibr" target="#bib13">Conde and Cáceres, 2009</ref>, 
+                <ref type="bibr" target="#bib20">Fletcher and Mullins, 2010</ref>). Indeed, our previous work on the final phase of neuromuscular axon remodeling has shown that the disassembly of the tip of a retreating axon branch by “axosome shedding” correlates with general cytoskeletal disruptions (
+                <ref type="bibr" target="#bib6">Bishop et al., 2004</ref>). However, an early instructive role of local microtubule dismantling was not anticipated. Moreover, the involvement of the neurodegeneration-associated protein spastin in this setting is new. Indeed, while spastin can clearly sever microtubules in vitro, and its disruption can affect long axon tracts—including motor neurons—in human disease and related models (
+                <ref type="bibr" target="#bib71">Wood et al., 2006</ref>, 
+                <ref type="bibr" target="#bib8">Butler et al., 2010</ref>, 
+                <ref type="bibr" target="#bib18">Fassier et al., 2013</ref>), how spastin acts at its putative site of action, the microtubular cytoskeleton, remains somewhat controversial (
+                <ref type="bibr" target="#bib57">Solowska and Baas, 2015</ref>). Our work clarifies this for mammalian axons in vivo, as deletion of spastin manifests in our assays of microtubule content and fragmentation as a (weaker) version of microtubule stabilization (cf. 
+                <ref type="bibr" target="#bib65">Trotta et al., 2004</ref>). This effect appears to primarily affect retreating branches and, to only a lesser extent, winner branches that have established single innervation (cf. 
+                <ref type="fig" target="#fig7">Figure 7</ref>H versus 
+                <ref type="supplementary-material" target="#mmc1">Figure S5</ref>C, where a dose of 0.25 μg/μL epothilone displayed a similar action profile as loss of spastin). This suggests that either spastin acts specifically in retreating branches (e.g., because of selective activation of spastin or locally constrained microtubule modifications/microtubule binding proteins that alter susceptibility to severing; 
+                <ref type="bibr" target="#bib32">Lacroix et al., 2010</ref>, 
+                <ref type="bibr" target="#bib67">Valenstein and Roll-Mecak, 2016</ref>) or compensation by other microtubule severing proteins (e.g., katanin; 
+                <ref type="bibr" target="#bib21">Havlicek et al., 2014</ref>) might be more efficient in patent winner branches. In line with this preservation of a cytoskeletal scaffold that acts as transport tracts, both epothilone treatment and, to a lesser extent, spastin deletion could partially restore organelle transport to retraction bulb-tipped axon branches (epothilone; see 
+                <ref type="supplementary-material" target="#mmc1">Figures S5</ref>D and S5E; spastin
+                <hi rend="superscript">KO</hi> anterograde: 0.1 ± 0.1 in KO versus 0.0 ± 0.0; retrograde: 0.3 ± 0.2 in KO versus 0.1 ± 0.1 mitochondria/hr in control, n ≥ 9 axons/9 mice).
+            </p>
+            <p>It might seem paradoxical that, in our setting, spastin’s action apparently mediates branch loss and suppresses axonal transport, while spastin is known to be required for axon branching in vitro and in non-mammalian species (
+                <ref type="bibr" target="#bib71">Wood et al., 2006</ref>, 
+                <ref type="bibr" target="#bib74">Yu et al., 2008</ref>) and also to promote axonal transport in vitro (
+                <ref type="bibr" target="#bib27">Kasher et al., 2009</ref>). In our spastin mutants (as in previously reported mouse mutants; 
+                <ref type="bibr" target="#bib63">Tarrade et al., 2006</ref>, 
+                <ref type="bibr" target="#bib27">Kasher et al., 2009</ref>), we could not detect a phenotype that would indicate a severe axon outgrowth disturbance (as reported in spastin knockdowns using morpholinos in zebrafish; 
+                <ref type="bibr" target="#bib71">Wood et al., 2006</ref>), potentially suggesting differential species-specific compensation. At the same time, the fact that, in different setting, spastin might affect neuronal geometry and organelle dynamics differentially is perhaps not so surprising given that the basic enzymatic activity of spastin is simply to sever microtubules. In some settings (e.g., during axon elaboration), local severing is needed to seed new microtubules and allow collateral formation; in others, it might be required for dismantling. Similarly, depending on the state of the microtubule cytoskeleton, severing might improve or diminish the ability to support organelle translocation. Indeed, the double-edged nature of changing the stability of microtubules for neuronal cell biology is well appreciated—after all, the main side effect of drugs that stabilize microtubules is neuropathy (
+                <ref type="bibr" target="#bib51">Röyttä and Raine, 1986</ref>). At the same time, such drugs might be useful in promoting axon regrowth and survival (
+                <ref type="bibr" target="#bib52">Ruschel et al., 2015</ref>).
+            </p>
+            <p>Interestingly, the interplay of transport, cytoskeletal destabilization, and spastin in synaptic remodeling and axon degeneration that we implicate here in neuromuscular synapse elimination has precedent: recently, it was shown that synapse disassembly during 
+                <hi rend="italic">C. elegans</hi> development, albeit in the absence of gross morphological changes in neuritic arbors, depends on a similar mechanism to the one described here (
+                <ref type="bibr" target="#bib31">Kurup et al., 2015</ref>). Moreover, katanin-like proteins are involved in developmental severing of dendrites in flies (
+                <ref type="bibr" target="#bib33">Lee et al., 2009</ref>). Also, in vitro, some of the acute toxicity of the Alzheimer disease-associated Aβ peptide might be due to spastin-mediated disassembly of microtubules (
+                <ref type="bibr" target="#bib75">Zempel et al., 2013</ref>). However, in contrast to 
+                <ref type="bibr" target="#bib75">Zempel et al. (2013)</ref>, we did not observe a spike in polyglutamylated microtubules (compared to the overall tubulin stain) at early stages of synapse elimination, but rather a late decay (in axon branches with &lt;20% synaptic territory; 
+                <ref type="fig" target="#fig5">Figure 5</ref>I), suggesting that the relative drop in this microtubule species is not necessarily indicative of an instructive role of this post-translational modification. Rather, it could be the result of a shift in local turnover to which, in addition to local severing activity, loss of selective stabilizers or altered function of the enzymatic machinery that imposes this post-translational modification could contribute. In line with the interpretation that the loss of polyglutamylated tubulin in losing axon branches is in part due to spastin, we observed a massive increase in this post-translational modification in spastin knockout mice, especially in retreating axon branches (8.5- ± 0.23-fold increase in retraction bulbs, p &lt; 0.0001 Mann-Whitney test; KO, n ≥ 34 axons/4 mice; WT, n ≥ 18/3; 3.8- ± 0.1-fold increase in singly innervating axon branches, p &lt; 0.0001, Mann-Whitney test; KO, n ≥ 86 axons/4 mice; WT, n ≥ 47/3).
+            </p>
+            <p>Together, our new work and the current literature suggests that the local microtubule-severing mechanism during axonal remodeling, documented here for mammalian axon development, might in its core be evolutionarily conserved and reactivated during disease (
+                <ref type="bibr" target="#bib73">Yaron and Schuldiner, 2016</ref>; cf. 
+                <ref type="bibr" target="#bib55">Sekar et al., 2016</ref>, for another recent example). At the same time, a role for microtubule destabilization in physiological pruning processes provides a caveat for ongoing efforts to harness microtubule stabilization for therapy (e.g., using epothilone), especially after acute insults, such as spinal cord injury, where axonal remodeling and synapse elimination might be important mechanisms of compensatory plasticity (
+                <ref type="bibr" target="#bib47">Raineteau and Schwab, 2001</ref>, 
+                <ref type="bibr" target="#bib4">Bareyre et al., 2004</ref>).
+            </p>
+        </div><div xml:id="sec4">
+            <head>Experimental Procedures</head>
+            <div xml:id="sec4.1">
+                <head>Animals</head>
+                <p>
+                    <hi rend="italic">Thy1-YFP-16</hi> mice (cytoplasmic YFP expression in all motor neurons; Jackson Laboratory #003709, 
+                    <hi rend="italic">Tg(Thy1-YFP)16Jrs/J</hi>; 
+                    <ref type="bibr" target="#bib19">Feng et al., 2000</ref>) were used to measure synaptic territory of individual axons by sequential photo-bleaching for quantitative immunohistochemistry, electron microscopy, and analysis of the number of poly-innervated NMJs following epothilone B injections. To study axonal transport and visualize synaptic territory simultaneously, we used double-transgenic 
+                    <hi rend="italic">Thy1-YFP-16</hi> × 
+                    <hi rend="italic">Thy1-mitoCFP-K</hi> mice (CFP is selectively expressed in neuronal mitochondria; 
+                    <ref type="bibr" target="#bib43">Misgeld et al., 2007</ref>). We measured transport of peroxisomes and synaptic occupancy in 
+                    <hi rend="italic">Thy1-PeroxiYFP-339</hi> or 
+                    <hi rend="italic">Thy1-PeroxiYFP-376</hi> (labeling of neuronal peroxisomes; 
+                    <ref type="bibr" target="#bib59">Sorbara et al., 2014</ref>) crossed to 
+                    <hi rend="italic">Thy1-CFP-5</hi> or 
+                    <hi rend="italic">Thy1-OFP-3</hi> mice (expression of CFP or OFP in all motor neurons; 
+                    <ref type="bibr" target="#bib19">Feng et al., 2000</ref>, 
+                    <ref type="bibr" target="#bib7">Brill et al., 2011</ref>). EB3 comet density and synaptic territory were assessed in double-transgenic 
+                    <hi rend="italic">Thy1-CFP-5</hi> × 
+                    <hi rend="italic">Thy1-EB3-YFP-J045</hi> (specific labeling of growing plus-end tips of microtubules; 
+                    <ref type="bibr" target="#bib30">Kleele et al., 2014</ref>).
+                </p>
+                <p>To generate a knockout-first allele (
+                    <ref type="bibr" target="#bib64">Testa et al., 2004</ref>) of spastin in mice, we used the targeting vector (PG00198_Z_2_G10, project CSD77496) generated by the trans-NIH Knock-Out Project and obtained from the KOMP Repository (for details, see 
+                    <ref type="supplementary-material" target="#mmc1">Supplemental Experimental Procedures</ref>). Constitutive spastin KO mice were generated by deleting the floxed exon 5 in the germline using 
+                    <hi rend="italic">CMV-Cre</hi> mice (Jackson Laboratory #006054; 
+                    <ref type="bibr" target="#bib54">Schwenk et al., 1995</ref>). Homozygous Spastin KO × 
+                    <hi rend="italic">Thy1-YFP-16</hi> and Spastin WT × 
+                    <hi rend="italic">Thy1-YFP-16</hi> littermate controls were used to analyze the number of poly-innervated NMJs and for quantitative immunohistochemistry. 
+                    <hi rend="italic">Thy1-EB3-YFP-J045</hi> mice, which were either spastin KO or WT, were used to assess EB3 comet densities. Spastin was deleted in motor neurons (MN KO) by crossing the conditional KO mice to 
+                    <hi rend="italic">ChAT-Cre</hi> (Jackson Laboratory #006410, ChAT-tm2(cre)Lowl/J; 
+                    <ref type="bibr" target="#bib50">Rossi et al., 2011</ref>). Cre activity was monitored in 
+                    <hi rend="italic">CAG-tdTomato</hi> reporter mice (Jackson Laboratory #007914, Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J; 
+                    <ref type="bibr" target="#bib39">Madisen et al., 2010</ref>), and recombination was complete (100% ± 0%) in motor axons (n = 3 triangularis sterni muscles from 3 mice, ≥150 NMJs each). All animal experiments were approved by the responsible regulatory agencies.
+                </p>
+                <p>See details of the generation of spastin knockout mice, imaging, immunohistochemistry, electron microscopy, and data analysis in 
+                    <ref type="supplementary-material" target="#mmc1">Supplemental Experimental Procedures</ref>.
+                </p>
+            </div>
+            <div xml:id="sec4.2">
+                <head>Statistics</head>
+                <p>Statistics were performed using GraphPad PRISM software. All datasets were tested for normal distribution with the D’Agostino-Pearson normality test. If a dataset failed this test, a non-parametric test was chosen to compare the significance of means between groups (Mann-Whitney test for two samples and Kruskal-Wallis test for more than two samples). For normally distributed datasets, a t test was chosen to compare two samples and ANOVA for multiple samples. Critical comparative datasets (epothilone treatment, spastin deletion, and shortening of retraction bulbs) were partially re-analyzed in a blinded fashion to exclude observer bias. p values &lt; 0.05 were considered to be significant and indicated by “
+                    <hi rend="superscript">∗</hi>”; p values &lt; 0.01 were indicated by “
+                    <hi rend="superscript">∗∗</hi>” and &lt;0.001 by “
+                    <hi rend="superscript">∗∗∗</hi>.” Data in text and graphs are given as mean ± or + SEM, and the chosen statistical test is indicated, along with the corresponding p value, if applicable.
+                </p>
+            </div>
+        </div><div xml:id="sec5">
+            <head>Author Contributions</head>
+            <p>M.S.B., T.K., and T.M. conceived of the project and designed experiments. T.M. and M.K. supervised the project. M.S.B., T.K., M.W., N.A.M., and M.S.R. performed imaging experiments. E.W., M.F., M.S.B., and D.L.B. contributed electron microscopy. L.R., T.J.H., and M.K. designed, generated, and characterized the spastin knockout mouse lines. A.A. and S.E. generated AAV vectors. M.S.B., T.K., L.R., T.J.H., D.L.B., N.A.M., M.K., and T.M. designed figures. M.S.B., T.K., and T.M. wrote the paper with input from all authors.</p>
+        </div><div type="figure">
+        <figure xml:id="fig1">
+            <head type="label">Figure 1</head>
+            
+                <figDesc>Retreating Axon Branches Lack Mitochondrial Transport and Dismantle Their Microtubular Cytoskeleton</figDesc>
+                <figDesc>(A–C) Sequential photo-bleaching in transgenic mice, where all motor axons express a fluorescent protein, defines the synaptic territories of competing axon branches during synapse elimination. Confocal image of a small part of the synaptic field in a fixed triangularis sterni muscle at P9 (
+                    <hi rend="italic">Thy1-YFP-16</hi>, white; α-bungarotoxin, orange) (A) with photo-bleaching steps for one NMJ (boxed in A and C; magnified in B). Schematic illustration of the photo-bleaching (B). Tracing of axons in (A) highlighting the branching pattern of motor units, with a retraction bulb (“rebu”), singly innervated (“sin”) and doubly innervated (territory in percentage) NMJs labeled (C).
+                </figDesc>
+                <figDesc>(D and E) Examples of photo-bleached NMJs representative of the bins used in graphs below, shown in pseudo-color (D) and as schematic of one input (E); overall NMJ outline, red.</figDesc>
+                <figDesc>(F) Net delivery of fluorescently tagged mitochondria (anterograde minus retrograde flux) by an input to the NMJ versus synaptic territory of this input (n ≥ 24 axons, ≥24 
+                    <hi rend="italic">Thy1-Mito-CFP-K</hi> × 
+                    <hi rend="italic">Thy1-YFP-16</hi> mice per group).
+                </figDesc>
+                <figDesc>(G) Level of βIII-tubulin immunostaining normalized to cytoplasmic YFP versus synaptic territory (n ≥ 17 axons, ≥6 
+                    <hi rend="italic">Thy1</hi>-
+                    <hi rend="italic">YFP-16</hi> mice per group). Scale bars, 20 μm in (A) (applies also to C); 10 μm in (D) (applies also to E). Data are mean ± SEM. Significance statements are given in main text. See also 
+                    <ref type="supplementary-material" target="#mmc1">Figures S1–S3</ref>.
+                </figDesc>
+            
+            <graphic url="gr1"/>
+        </figure>
+        <figure xml:id="fig2">
+            <head type="label">Figure 2</head>
+            
+                <figDesc>Microtubules Are Locally Fragmented in Retreating Axon Branches</figDesc>
+                <figDesc>(A) EB3 comet density versus synaptic territory (n ≥ 10 axons, ≥6 
+                    <hi rend="italic">Thy1-EB3-YFP</hi> × 
+                    <hi rend="italic">Thy1-CFP-5</hi> mice per group).
+                </figDesc>
+                <figDesc>(B) Normalized ratio of EB3 comet density over βIII-tubulin levels (as a measure of microtubule length) at different stages of synapse elimination (calculated from data shown in 
+                    <ref type="fig" target="#fig1">Figures 1</ref>G and 
+                    <ref type="fig" target="#fig2">2</ref>A).
+                </figDesc>
+                <figDesc>(C) Maximum intensity projection (left, 20 s) of a time-lapse sequence in a P9 
+                    <hi rend="italic">Thy1-EB3-YFP</hi> explant showing a retraction bulb (outlined on the right) next to a singly innervated NMJ. Dashed boxes indicate the sites of distal and proximal measurements on the retraction bulb.
+                </figDesc>
+                <figDesc>(D) EB3 comet density at distal and proximal sites along retraction bulbs (n = 10 axons, 6 mice; points show individual measurements; values derived from the same branch are connected).</figDesc>
+                <figDesc>(E) Maximum intensity projections (20 s) of time-lapse recordings from stem axons, giving rise to branches ending in a retraction bulb (rebu; left) or at a singly innervated NMJ (sin; right; outlines below; P10 
+                    <hi rend="italic">Thy1-EB3-YFP</hi>). Dashed boxes indicate sites of measurement in stem or branch of the indicated type.
+                </figDesc>
+                <figDesc>(F) EB3 comet density in retraction bulbs and singly innervating branches compared to their respective stem axons (n ≥ 16 axons, ≥8 mice per group). Scale bars, 10 μm in (C); 5 μm in (E). Data are mean ± SEM; paired t test or Mann-Whitney test was used to determine significance in (D) and (F), respectively: 
+                    <hi rend="superscript">∗∗∗</hi>p &lt; 0.001; n.s. p ≥ 0.05. See also 
+                    <ref type="supplementary-material" target="#mmc1">Figure S3</ref>.
+                </figDesc>
+            
+            <graphic url="gr2"/>
+        </figure>
+        <figure xml:id="fig3">
+            <head type="label">Figure 3</head>
+            
+                <figDesc>Ultrastructural Analysis of Microtubule Loss in Retreating Axon Branches</figDesc>
+                <figDesc>(A–C) Correlated serial sectioning reconstruction of the ultrastructure of a doubly innervated P8 NMJ, which was first characterized by sequential photo-bleaching (A); 
+                    <hi rend="italic">Thy1-YFP-16</hi>; inputs pseudo-colored) and then reconstructed by EM and surface rendered in (B). Branch territories as determined by bleaching and EM are indicated in (A) and (B), respectively. Please note that the percentages of covered synaptic territory in (A) add to more than 100% due to branch overlaps that cannot be resolved in the light microscope, an issue first noted in 
+                    <ref type="bibr" target="#bib28">Kasthuri and Lichtman (2003)</ref>. Rendering of axonal microtubules (C) (red; displayed area indicated by dashed red box in B).
+                </figDesc>
+                <figDesc>(D) Single electron micrograph (pseudo-colored as in A and B and orientation of plane as indicated in B) shows individual microtubule segments (pseudo-colored red).</figDesc>
+                <figDesc>(E and F) Higher magnification views of boxed areas in (D) (magenta input in E; white input in F) with individual microtubule segments marked by red arrowheads.</figDesc>
+                <figDesc>(G) Microtubule length per volume versus synaptic territory based on EM reconstruction of eight inputs from four NMJs and four mice. Magenta and white colored circles represent the axons shown in (A)–(F). Scale bars/boxes, 5 μm in (A), 1 μm
+                    <hi rend="superscript">3</hi> in (B) and (C), and 1 μm in (D). See also 
+                    <ref type="supplementary-material" target="#mmc1">Figure S2</ref>.
+                </figDesc>
+            
+            <graphic url="gr3"/>
+        </figure>
+        <figure xml:id="fig4">
+            <head type="label">Figure 4</head>
+            
+                <figDesc>Pharmacological Stabilization of Microtubules Delays Synapse Elimination</figDesc>
+                <figDesc>(A) Percentage of poly-innervated synapses following epothilone B (0.5 μg/μL) or vehicle (polyethylene glycol, PEG) injection on P4 (n ≥ 7 
+                    <hi rend="italic">Thy1-YFP-1</hi>6 mice for P7; n ≥ 6 P9; n ≥ 5 P11; n ≥ 5 P13; n ≥ 3 P21).
+                </figDesc>
+                <figDesc>(B) Confocal image of a doubly innervated NMJ in a P21 
+                    <hi rend="italic">Thy1-YFP-16</hi> mouse (white) injected with epothilone B on P4 (α-bungarotoxin, orange).
+                </figDesc>
+                <figDesc>(C–E) βIII-tubulin levels (C); n ≥ 45 axons, ≥4 mice), EB3 comet density (D; n ≥ 13 axons, ≥5 mice) and EB3 comet to tubulin ratios (E) in retraction bulbs (rebu) and singly innervating (sin) branches of P6 
+                    <hi rend="italic">Thy1-YFP-1</hi>6 mice injected with epothilone B or PEG on P5. Scale bars, 5 μm in (B). Data are mean + SEM; Mann-Whitney test was used to determine significance: 
+                    <hi rend="superscript">∗∗∗</hi>p &lt; 0.001; 
+                    <hi rend="superscript">∗∗</hi>p &lt; 0.01; 
+                    <hi rend="superscript">∗</hi>p &lt; 0.05; n.s. p ≥ 0.05. See also 
+                    <ref type="supplementary-material" target="#mmc1">Figures S4</ref> and 
+                    <ref type="supplementary-material" target="#mmc1">S5</ref>.
+                </figDesc>
+            
+            <graphic url="gr4"/>
+        </figure>
+        <figure xml:id="fig5">
+            <head type="label">Figure 5</head>
+            
+                <figDesc>Post-translational Modifications of Microtubules in Axon Branches of Different Competition State</figDesc>
+                <figDesc>(A)–(I) show stainings for post-translationally modified microtubules (red) superimposed on βIII-tubulin (white). Quantification of post-translational modifications normalized to βIII-tubulin in bulb-tipped retreating axon branches (rebu) and in singly innervating axon branches (sin; B: n ≥ 38 axons from 4 mice per group; D: n ≥ 41, 6; F: n ≥ 57, 4; H: n ≥ 41, 5). Levels of polyglutamylated tubulin (normalized to βIII-tubulin) versus synaptic territory of competing axon branches (n ≥ 161 axons from 10 mice) (I). The monochrome left-hand panels are adjusted with non-linear gamma to enhance visibility of the thin retreating axons; in the merged right-hand panels, both channels are linearly adjusted (A, C, E, and G). Scale bars, 5 μm throughout. Data are mean + SEM. Mann-Whitney test was used to determine significance: 
+                    <hi rend="superscript">∗∗∗</hi>p &lt; 0.001; 
+                    <hi rend="superscript">∗∗</hi>p &lt; 0.01; n.s. p ≥ 0.05.
+                </figDesc>
+            
+            <graphic url="gr5"/>
+        </figure>
+        <figure xml:id="fig6">
+            <head type="label">Figure 6</head>
+            
+                <figDesc>Targeting of the Mouse Spastin Locus Using a “Knockout-First” Allele</figDesc>
+                <figDesc>(A) Schematic representation (not to scale) of the mouse wild-type (WT; first drawing) and mutant 
+                    <hi rend="italic">Spast</hi> gene locus (bottom three drawings). The vector Spast
+                    <hi rend="superscript">tm1a(KOMP)Wtsi</hi> was used to generate spastin “knockout-first” mice (second drawing from top). A floxed spastin allele was generated by genome-wide deletion of lacZ and NeoR using 
+                    <hi rend="italic">ACTB-FLPe</hi> mice (third drawing from top). Constitutive spastin KO mice were generated by deleting the floxed exon 5 in the germline using 
+                    <hi rend="italic">CMV-Cre</hi> mice (bottom drawing). Note that exon 4 in the 
+                    <hi rend="italic">Spast</hi> gene is an alternatively spliced exon.
+                </figDesc>
+                <figDesc>(B) Southern blot following EcoRV digestion confirms correct insertion of the targeting cassette’s 5′ region (probe location is indicated in A). Wild-type, 18.5 kb. KO first, 14.8 kb.</figDesc>
+                <figDesc>(C) Long-range PCR proves correct insertion of the targeting cassette’s 3′ region. PCR product of primers 1 (“P1”) and 2 (“P2”): 5,043 bp (primer locations are indicated in A).</figDesc>
+                <figDesc>(D) PCR confirms deletion of exon 5 (green). Primer positions 3, 4, and 5 (“P3” to “P5”) are indicated in (A).</figDesc>
+                <figDesc>(E and F) Schematic (E) and table (F) detailing the structure and expected size of the spastin gene products.</figDesc>
+                <figDesc>(G) Western blot showing reduced spastin protein expression in P12 spinal cord from homozygous (−/−) and heterozygous (+/−) mice of the knockout-first allele compared to wild-type mice (+/+). Actin serves as loading control. Note the presence of spastin isoforms due to two translation initiation codons: the full-length M1 and the shorter isoform M87.</figDesc>
+            
+            <graphic url="gr6"/>
+        </figure>
+        <figure xml:id="fig7">
+            <head type="label">Figure 7</head>
+            
+                <figDesc>Genetic Stabilization of Microtubules Delays Synapse Elimination</figDesc>
+                <figDesc>(A) Percentage of poly-innervated synapses in spastin KO mice compared to wild-type (WT) littermates (n ≥ 5 mice for P7; n ≥ 6 mice for P7; n ≥ 8 P9; n ≥ 6 P11; n ≥ 4 P13; n ≥ 6 P21; evaluation either based on the 
+                    <hi rend="italic">Thy1</hi>-
+                    <hi rend="italic">YFP-16</hi> transgene or βIII-tubulin staining).
+                </figDesc>
+                <figDesc>(B) Confocal image of a doubly innervated P21 NMJ in a spastin KO × 
+                    <hi rend="italic">Thy1</hi>-
+                    <hi rend="italic">YFP-16</hi> mouse (α-bungarotoxin, orange).
+                </figDesc>
+                <figDesc>(C–E) Spastin deletion delays retraction of “loser” branches. Single frames spaced by about 3 hr taken in explants derived from WT (left) and spastin KO (right) pups crossed to 
+                    <hi rend="italic">Thy1</hi>-
+                    <hi rend="italic">YFP-16</hi> or 
+                    <hi rend="italic">Thy1</hi>-
+                    <hi rend="italic">CFP-5</hi> (C). Average speed of retraction (D) and distribution histogram of individual recordings (E) (KO: n ≥ 65 axons from 7 mice; WT: n ≥ 62 axons from 7 mice).
+                </figDesc>
+                <figDesc>(F–H) βIII-tubulin levels (F); n ≥ 42 axons, ≥5 mice per genotype, P7–P9), EB3 comet density (G); n ≥ 20 axons, ≥8 mice, P8–P13) and EB3 to tubulin ratios (H) in retraction bulbs and singly innervating axon branches of spastin KO mice compared to wild-type littermates.</figDesc>
+                <figDesc>(I and J) Selective deletion of spastin in cholinergic neurons. Triangularis sterni muscle of a 
+                    <hi rend="italic">ChAT-Cre</hi> × 
+                    <hi rend="italic">CAG-tdTomato</hi> reporter mouse at P9 demonstrating recombination in all motor neurons (100% ± 0%; n = 3 mice; tdTomato, red; α-bungarotoxin, orange; βIII-tubulin, white) (I). Inset shows higher magnification of boxed area. Percentage of poly-innervated synapses from P7–P21 in motor-neuron specific spastin KO mice (Spastin
+                    <hi rend="superscript">MN KO</hi>; ChAT-Cre × Spastin
+                    <hi rend="superscript">fl/fl</hi>) compared to littermate controls (Spastin
+                    <hi rend="superscript">MN WT</hi>; pooled ChAT-Cre-negative Spastin 
+                    <hi rend="superscript">fl/fl</hi>, ChAT-Cre-negative Spastin 
+                    <hi rend="superscript">fl/+</hi>, and ChAT-Cre-positive wild-type littermates; n ≥ 5 mice for P7; n ≥ 4 P9; n ≥ 8 P11; n ≥ 5 P13; n ≥ 5 P21) (J). Scale bars, 5 μm in (B), 3 μm in (C), and 50 μm in (I). Data are mean + SEM. Mann-Whitney test was used to determine significance in (A), (D), (F), and (J) and unpaired t test in (G): 
+                    <hi rend="superscript">∗∗∗</hi>p &lt; 0.001; 
+                    <hi rend="superscript">∗∗</hi>p &lt; 0.01; 
+                    <hi rend="superscript">∗</hi>p &lt; 0.05; n.s. p ≥ 0.05. See also 
+                    <ref type="supplementary-material" target="#mmc1">Figure S4</ref> and 
+                    <ref type="supplementary-material" target="#mmc1">S6</ref>.
+                </figDesc>
+            
+            <graphic url="gr7"/>
+        </figure>
+    </div></body><back><div type="references"><head>References</head><listBibl><biblStruct type="journal" xml:id="bib1"><analytic><title level="a" type="main">Rapid and precise down regulation of fast axonal transport of transmitter in an identified neuron</title><author><persName>
+                            <surname>Aletta</surname>
+                            <forename type="first">J.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Goldberg</surname>
+                            <forename type="first">D.J.</forename>
+                        </persName></author><idno type="pmid">6182616</idno></analytic><monogr><title level="j">Science</title><imprint><date type="year">1982</date><biblScope unit="vol">218</biblScope><biblScope unit="page" from="913">913</biblScope><biblScope unit="page" to="916">916</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib2"><analytic><title level="a" type="main">Stability properties of neuronal microtubules</title><author><persName>
+                            <surname>Baas</surname>
+                            <forename type="first">P.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Rao</surname>
+                            <forename type="first">A.N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Matamoros</surname>
+                            <forename type="first">A.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Leo</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><idno type="pmid">26887570</idno></analytic><monogr><title level="j">Cytoskeleton</title><imprint><date type="year">2016</date><biblScope unit="vol">73</biblScope><biblScope unit="page" from="442">442</biblScope><biblScope unit="page" to="460">460</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib3"><analytic><title level="a" type="main">Activity-driven synapse elimination leads paradoxically to domination by inactive neurons</title><author><persName>
+                            <surname>Barber</surname>
+                            <forename type="first">M.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">10559405</idno></analytic><monogr><title level="j">J. Neurosci.</title><imprint><date type="year">1999</date><biblScope unit="vol">19</biblScope><biblScope unit="page" from="9975">9975</biblScope><biblScope unit="page" to="9985">9985</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib4"><analytic><title level="a" type="main">The injured spinal cord spontaneously forms a new intraspinal circuit in adult rats</title><author><persName>
+                            <surname>Bareyre</surname>
+                            <forename type="first">F.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kerschensteiner</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Raineteau</surname>
+                            <forename type="first">O.</forename>
+                        </persName></author><author><persName>
+                            <surname>Mettenleiter</surname>
+                            <forename type="first">T.C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Weinmann</surname>
+                            <forename type="first">O.</forename>
+                        </persName></author><author><persName>
+                            <surname>Schwab</surname>
+                            <forename type="first">M.E.</forename>
+                        </persName></author><idno type="pmid">14966523</idno></analytic><monogr><title level="j">Nat. Neurosci.</title><imprint><date type="year">2004</date><biblScope unit="vol">7</biblScope><biblScope unit="page" from="269">269</biblScope><biblScope unit="page" to="277">277</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib5"><analytic><title level="a" type="main">Axonal atrophy: the retraction reaction</title><author><persName>
+                            <surname>Bernstein</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">10395581</idno></analytic><monogr><title level="j">Curr. Opin. Neurobiol.</title><imprint><date type="year">1999</date><biblScope unit="vol">9</biblScope><biblScope unit="page" from="364">364</biblScope><biblScope unit="page" to="370">370</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib6"><analytic><title level="a" type="main">Axon branch removal at developing synapses by axosome shedding</title><author><persName>
+                            <surname>Bishop</surname>
+                            <forename type="first">D.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Misgeld</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Walsh</surname>
+                            <forename type="first">M.K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Gan</surname>
+                            <forename type="first">W.B.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">15541313</idno></analytic><monogr><title level="j">Neuron</title><imprint><date type="year">2004</date><biblScope unit="vol">44</biblScope><biblScope unit="page" from="651">651</biblScope><biblScope unit="page" to="661">661</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib7"><analytic><title level="a" type="main">Spatial constraints dictate glial territories at murine neuromuscular junctions</title><author><persName>
+                            <surname>Brill</surname>
+                            <forename type="first">M.S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Thompson</surname>
+                            <forename type="first">W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Zuo</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Misgeld</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><idno type="pmid">22006952</idno></analytic><monogr><title level="j">J. Cell Biol.</title><imprint><date type="year">2011</date><biblScope unit="vol">195</biblScope><biblScope unit="page" from="293">293</biblScope><biblScope unit="page" to="305">305</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib8"><analytic><title level="a" type="main">Genetic and chemical modulation of spastin-dependent axon outgrowth in zebrafish embryos indicates a role for impaired microtubule dynamics in hereditary spastic paraplegia</title><author><persName>
+                            <surname>Butler</surname>
+                            <forename type="first">R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wood</surname>
+                            <forename type="first">J.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Landers</surname>
+                            <forename type="first">J.A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Cunliffe</surname>
+                            <forename type="first">V.T.</forename>
+                        </persName></author><idno type="pmid">20829563</idno></analytic><monogr><title level="j">Dis. Model. Mech.</title><imprint><date type="year">2010</date><biblScope unit="vol">3</biblScope><biblScope unit="page" from="743">743</biblScope><biblScope unit="page" to="751">751</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib9"><analytic><title level="a" type="main">Microtubule alterations occur early in experimental parkinsonism and the microtubule stabilizer epothilone D is neuroprotective</title><author><persName>
+                            <surname>Cartelli</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Casagrande</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><author><persName>
+                            <surname>Busceti</surname>
+                            <forename type="first">C.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bucci</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Molinaro</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Traficante</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Passarella</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Giavini</surname>
+                            <forename type="first">E.</forename>
+                        </persName></author><author><persName>
+                            <surname>Pezzoli</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Battaglia</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Cappelletti</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><idno type="pmid">23670541</idno></analytic><monogr><title level="j">Sci. Rep.</title><imprint><date type="year">2013</date><biblScope unit="vol">3</biblScope><biblScope unit="page" from="1837">1837</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib10"><analytic><title level="a" type="main">Branch-specific dendritic Ca(2+) spikes cause persistent synaptic plasticity</title><author><persName>
+                            <surname>Cichon</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Gan</surname>
+                            <forename type="first">W.B.</forename>
+                        </persName></author><idno type="pmid">25822789</idno></analytic><monogr><title level="j">Nature</title><imprint><date type="year">2015</date><biblScope unit="vol">520</biblScope><biblScope unit="page" from="180">180</biblScope><biblScope unit="page" to="185">185</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib11"><analytic><title level="a" type="main">Axon pathology in neurological disease: a neglected therapeutic target</title><author><persName>
+                            <surname>Coleman</surname>
+                            <forename type="first">M.P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Perry</surname>
+                            <forename type="first">V.H.</forename>
+                        </persName></author><idno type="pmid">12220882</idno></analytic><monogr><title level="j">Trends Neurosci.</title><imprint><date type="year">2002</date><biblScope unit="vol">25</biblScope><biblScope unit="page" from="532">532</biblScope><biblScope unit="page" to="537">537</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib12"><analytic><title level="a" type="main">Alterations in synaptic strength preceding axon withdrawal</title><author><persName>
+                            <surname>Colman</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Nabekura</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">8994026</idno></analytic><monogr><title level="j">Science</title><imprint><date type="year">1997</date><biblScope unit="vol">275</biblScope><biblScope unit="page" from="356">356</biblScope><biblScope unit="page" to="361">361</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib13"><analytic><title level="a" type="main">Microtubule assembly, organization and dynamics in axons and dendrites</title><author><persName>
+                            <surname>Conde</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Cáceres</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><idno type="pmid">19377501</idno></analytic><monogr><title level="j">Nat. Rev. Neurosci.</title><imprint><date type="year">2009</date><biblScope unit="vol">10</biblScope><biblScope unit="page" from="319">319</biblScope><biblScope unit="page" to="332">332</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib14"><analytic><title level="a" type="main">HDAC6 inhibitors reverse axonal loss in a mouse model of mutant HSPB1-induced Charcot-Marie-Tooth disease</title><author><persName>
+                            <surname>d’Ydewalle</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Krishnan</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Chiheb</surname>
+                            <forename type="first">D.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Van Damme</surname>
+                            <forename type="first">P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Irobi</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kozikowski</surname>
+                            <forename type="first">A.P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Vanden Berghe</surname>
+                            <forename type="first">P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Timmerman</surname>
+                            <forename type="first">V.</forename>
+                        </persName></author><author><persName>
+                            <surname>Robberecht</surname>
+                            <forename type="first">W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Van Den Bosch</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><idno type="pmid">21785432</idno></analytic><monogr><title level="j">Nat. Med.</title><imprint><date type="year">2011</date><biblScope unit="vol">17</biblScope><biblScope unit="page" from="968">968</biblScope><biblScope unit="page" to="974">974</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib15"><analytic><title level="a" type="main">Microtubule stabilization by peloruside A and paclitaxel rescues degenerating neurons from okadaic acid-induced tau phosphorylation</title><author><persName>
+                            <surname>Das</surname>
+                            <forename type="first">V.</forename>
+                        </persName></author><author><persName>
+                            <surname>Miller</surname>
+                            <forename type="first">J.H.</forename>
+                        </persName></author><idno type="pmid">22594877</idno></analytic><monogr><title level="j">Eur. J. Neurosci.</title><imprint><date type="year">2012</date><biblScope unit="vol">35</biblScope><biblScope unit="page" from="1705">1705</biblScope><biblScope unit="page" to="1717">1717</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib16"><analytic><title level="a" type="main">Disorganized microtubules underlie the formation of retraction bulbs and the failure of axonal regeneration</title><author><persName>
+                            <surname>Ertürk</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hellal</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><author><persName>
+                            <surname>Enes</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bradke</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><idno type="pmid">17715353</idno></analytic><monogr><title level="j">J. Neurosci.</title><imprint><date type="year">2007</date><biblScope unit="vol">27</biblScope><biblScope unit="page" from="9169">9169</biblScope><biblScope unit="page" to="9180">9180</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib17"><analytic><title level="a" type="main">Stabilization of hyperdynamic microtubules is neuroprotective in amyotrophic lateral sclerosis</title><author><persName>
+                            <surname>Fanara</surname>
+                            <forename type="first">P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Banerjee</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hueck</surname>
+                            <forename type="first">R.V.</forename>
+                        </persName></author><author><persName>
+                            <surname>Harper</surname>
+                            <forename type="first">M.R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Awada</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Turner</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Husted</surname>
+                            <forename type="first">K.H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Brandt</surname>
+                            <forename type="first">R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hellerstein</surname>
+                            <forename type="first">M.K.</forename>
+                        </persName></author><idno type="pmid">17567579</idno></analytic><monogr><title level="j">J. Biol. Chem.</title><imprint><date type="year">2007</date><biblScope unit="vol">282</biblScope><biblScope unit="page" from="23465">23465</biblScope><biblScope unit="page" to="23472">23472</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib18"><analytic><title level="a" type="main">Microtubule-targeting drugs rescue axonal swellings in cortical neurons from spastin knockout mice</title><author><persName>
+                            <surname>Fassier</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Tarrade</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Peris</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Courageot</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Mailly</surname>
+                            <forename type="first">P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Dalard</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Delga</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Roblot</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lefèvre</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Job</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><idno type="pmid">22773755</idno></analytic><monogr><title level="j">Dis. Model. Mech.</title><imprint><date type="year">2013</date><biblScope unit="vol">6</biblScope><biblScope unit="page" from="72">72</biblScope><biblScope unit="page" to="83">83</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib19"><analytic><title level="a" type="main">Imaging neuronal subsets in transgenic mice expressing multiple spectral variants of GFP</title><author><persName>
+                            <surname>Feng</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Mellor</surname>
+                            <forename type="first">R.H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bernstein</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Keller-Peck</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Nguyen</surname>
+                            <forename type="first">Q.T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wallace</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Nerbonne</surname>
+                            <forename type="first">J.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Sanes</surname>
+                            <forename type="first">J.R.</forename>
+                        </persName></author><idno type="pmid">11086982</idno></analytic><monogr><title level="j">Neuron</title><imprint><date type="year">2000</date><biblScope unit="vol">28</biblScope><biblScope unit="page" from="41">41</biblScope><biblScope unit="page" to="51">51</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib20"><analytic><title level="a" type="main">Cell mechanics and the cytoskeleton</title><author><persName>
+                            <surname>Fletcher</surname>
+                            <forename type="first">D.A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Mullins</surname>
+                            <forename type="first">R.D.</forename>
+                        </persName></author><idno type="pmid">20110992</idno></analytic><monogr><title level="j">Nature</title><imprint><date type="year">2010</date><biblScope unit="vol">463</biblScope><biblScope unit="page" from="485">485</biblScope><biblScope unit="page" to="492">492</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib21"><analytic><title level="a" type="main">Gene dosage-dependent rescue of HSP neurite defects in SPG4 patients’ neurons</title><author><persName>
+                            <surname>Havlicek</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kohl</surname>
+                            <forename type="first">Z.</forename>
+                        </persName></author><author><persName>
+                            <surname>Mishra</surname>
+                            <forename type="first">H.K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Prots</surname>
+                            <forename type="first">I.</forename>
+                        </persName></author><author><persName>
+                            <surname>Eberhardt</surname>
+                            <forename type="first">E.</forename>
+                        </persName></author><author><persName>
+                            <surname>Denguir</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wend</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Plötz</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Boyer</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Marchetto</surname>
+                            <forename type="first">M.C.</forename>
+                        </persName></author><idno type="pmid">24381312</idno></analytic><monogr><title level="j">Hum. Mol. Genet.</title><imprint><date type="year">2014</date><biblScope unit="vol">23</biblScope><biblScope unit="page" from="2527">2527</biblScope><biblScope unit="page" to="2541">2541</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib22"><analytic><title level="a" type="main">Microtubule stabilization reduces scarring and causes axon regeneration after spinal cord injury</title><author><persName>
+                            <surname>Hellal</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hurtado</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Ruschel</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Flynn</surname>
+                            <forename type="first">K.C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Laskowski</surname>
+                            <forename type="first">C.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Umlauf</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kapitein</surname>
+                            <forename type="first">L.C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Strikis</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lemmon</surname>
+                            <forename type="first">V.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bixby</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><idno type="pmid">21273450</idno></analytic><monogr><title level="j">Science</title><imprint><date type="year">2011</date><biblScope unit="vol">331</biblScope><biblScope unit="page" from="928">928</biblScope><biblScope unit="page" to="931">931</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib23"><analytic><title level="a" type="main">Post-translational regulation of the microtubule cytoskeleton: mechanisms and functions</title><author><persName>
+                            <surname>Janke</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bulinski</surname>
+                            <forename type="first">J.C.</forename>
+                        </persName></author><idno type="pmid">22086369</idno></analytic><monogr><title level="j">Nat. Rev. Mol. Cell Biol.</title><imprint><date type="year">2011</date><biblScope unit="vol">12</biblScope><biblScope unit="page" from="773">773</biblScope><biblScope unit="page" to="786">786</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib24"><analytic><title level="a" type="main">Tubulin post-translational modifications: encoding functions on the neuronal microtubule cytoskeleton</title><author><persName>
+                            <surname>Janke</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kneussel</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><idno type="pmid">20541813</idno></analytic><monogr><title level="j">Trends Neurosci.</title><imprint><date type="year">2010</date><biblScope unit="vol">33</biblScope><biblScope unit="page" from="362">362</biblScope><biblScope unit="page" to="372">372</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib25"><analytic><title level="a" type="main">Compartmentalized calcium transients trigger dendrite pruning in Drosophila sensory neurons</title><author><persName>
+                            <surname>Kanamori</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kanai</surname>
+                            <forename type="first">M.I.</forename>
+                        </persName></author><author><persName>
+                            <surname>Dairyo</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Yasunaga</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Morikawa</surname>
+                            <forename type="first">R.K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Emoto</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><idno type="pmid">23722427</idno></analytic><monogr><title level="j">Science</title><imprint><date type="year">2013</date><biblScope unit="vol">340</biblScope><biblScope unit="page" from="1475">1475</biblScope><biblScope unit="page" to="1478">1478</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib26"><analytic><title level="a" type="main">Synapse elimination in the central nervous system</title><author><persName>
+                            <surname>Kano</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hashimoto</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><idno type="pmid">19481442</idno></analytic><monogr><title level="j">Curr. Opin. Neurobiol.</title><imprint><date type="year">2009</date><biblScope unit="vol">19</biblScope><biblScope unit="page" from="154">154</biblScope><biblScope unit="page" to="161">161</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib27"><analytic><title level="a" type="main">Direct evidence for axonal transport defects in a novel mouse model of mutant spastin-induced hereditary spastic paraplegia (HSP) and human HSP patients</title><author><persName>
+                            <surname>Kasher</surname>
+                            <forename type="first">P.R.</forename>
+                        </persName></author><author><persName>
+                            <surname>De Vos</surname>
+                            <forename type="first">K.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wharton</surname>
+                            <forename type="first">S.B.</forename>
+                        </persName></author><author><persName>
+                            <surname>Manser</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bennett</surname>
+                            <forename type="first">E.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bingley</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wood</surname>
+                            <forename type="first">J.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Milner</surname>
+                            <forename type="first">R.</forename>
+                        </persName></author><author><persName>
+                            <surname>McDermott</surname>
+                            <forename type="first">C.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Miller</surname>
+                            <forename type="first">C.C.</forename>
+                        </persName></author><idno type="pmid">19453301</idno></analytic><monogr><title level="j">J. Neurochem.</title><imprint><date type="year">2009</date><biblScope unit="vol">110</biblScope><biblScope unit="page" from="34">34</biblScope><biblScope unit="page" to="44">44</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib28"><analytic><title level="a" type="main">The role of neuronal identity in synaptic competition</title><author><persName>
+                            <surname>Kasthuri</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">12879070</idno></analytic><monogr><title level="j">Nature</title><imprint><date type="year">2003</date><biblScope unit="vol">424</biblScope><biblScope unit="page" from="426">426</biblScope><biblScope unit="page" to="430">430</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib29"><analytic><title level="a" type="main">Asynchronous synapse elimination in neonatal motor units: studies using GFP transgenic mice</title><author><persName>
+                            <surname>Keller-Peck</surname>
+                            <forename type="first">C.R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Walsh</surname>
+                            <forename type="first">M.K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Gan</surname>
+                            <forename type="first">W.B.</forename>
+                        </persName></author><author><persName>
+                            <surname>Feng</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Sanes</surname>
+                            <forename type="first">J.R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">11516396</idno></analytic><monogr><title level="j">Neuron</title><imprint><date type="year">2001</date><biblScope unit="vol">31</biblScope><biblScope unit="page" from="381">381</biblScope><biblScope unit="page" to="394">394</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib30"><analytic><title level="a" type="main">An assay to image neuronal microtubule dynamics in mice</title><author><persName>
+                            <surname>Kleele</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Marinković</surname>
+                            <forename type="first">P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Williams</surname>
+                            <forename type="first">P.R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Stern</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Weigand</surname>
+                            <forename type="first">E.E.</forename>
+                        </persName></author><author><persName>
+                            <surname>Engerer</surname>
+                            <forename type="first">P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Naumann</surname>
+                            <forename type="first">R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hartmann</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Karl</surname>
+                            <forename type="first">R.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bradke</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><idno type="pmid">25219969</idno></analytic><monogr><title level="j">Nat. Commun.</title><imprint><date type="year">2014</date><biblScope unit="vol">5</biblScope><biblScope unit="page" from="4827">4827</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib31"><analytic><title level="a" type="main">Dynamic microtubules drive circuit rewiring in the absence of neurite remodeling</title><author><persName>
+                            <surname>Kurup</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Yan</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Goncharov</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Jin</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><idno type="pmid">26051896</idno></analytic><monogr><title level="j">Curr. Biol.</title><imprint><date type="year">2015</date><biblScope unit="vol">25</biblScope><biblScope unit="page" from="1594">1594</biblScope><biblScope unit="page" to="1605">1605</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib32"><analytic><title level="a" type="main">Tubulin polyglutamylation stimulates spastin-mediated microtubule severing</title><author><persName>
+                            <surname>Lacroix</surname>
+                            <forename type="first">B.</forename>
+                        </persName></author><author><persName>
+                            <surname>van Dijk</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Gold</surname>
+                            <forename type="first">N.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Guizetti</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Aldrian-Herrada</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Rogowski</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Gerlich</surname>
+                            <forename type="first">D.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Janke</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><idno type="pmid">20530212</idno></analytic><monogr><title level="j">J. Cell Biol.</title><imprint><date type="year">2010</date><biblScope unit="vol">189</biblScope><biblScope unit="page" from="945">945</biblScope><biblScope unit="page" to="954">954</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib33"><analytic><title level="a" type="main">Drosophila IKK-related kinase Ik2 and Katanin p60-like 1 regulate dendrite pruning of sensory neuron during metamorphosis</title><author><persName>
+                            <surname>Lee</surname>
+                            <forename type="first">H.H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Jan</surname>
+                            <forename type="first">L.Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Jan</surname>
+                            <forename type="first">Y.N.</forename>
+                        </persName></author><idno type="pmid">19329489</idno></analytic><monogr><title level="j">Proc. Natl. Acad. Sci. USA</title><imprint><date type="year">2009</date><biblScope unit="vol">106</biblScope><biblScope unit="page" from="6363">6363</biblScope><biblScope unit="page" to="6368">6368</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib34"><analytic><title level="a" type="main">Synapse elimination and indelible memory</title><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Colman</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><idno type="pmid">10719884</idno></analytic><monogr><title level="j">Neuron</title><imprint><date type="year">2000</date><biblScope unit="vol">25</biblScope><biblScope unit="page" from="269">269</biblScope><biblScope unit="page" to="278">278</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib35"><analytic><title level="a" type="main">Distinct presynaptic and postsynaptic dismantling processes of Drosophila neuromuscular junctions during metamorphosis</title><author><persName>
+                            <surname>Liu</surname>
+                            <forename type="first">Z.</forename>
+                        </persName></author><author><persName>
+                            <surname>Chen</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wang</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wang</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Zhang</surname>
+                            <forename type="first">Y.Q.</forename>
+                        </persName></author><idno type="pmid">20810883</idno></analytic><monogr><title level="j">J. Neurosci.</title><imprint><date type="year">2010</date><biblScope unit="vol">30</biblScope><biblScope unit="page" from="11624">11624</biblScope><biblScope unit="page" to="11634">11634</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib36"><analytic><title level="a" type="main">Compartmentalized dendritic plasticity and input feature storage in neurons</title><author><persName>
+                            <surname>Losonczy</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Makara</surname>
+                            <forename type="first">J.K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Magee</surname>
+                            <forename type="first">J.C.</forename>
+                        </persName></author><idno type="pmid">18368112</idno></analytic><monogr><title level="j">Nature</title><imprint><date type="year">2008</date><biblScope unit="vol">452</biblScope><biblScope unit="page" from="436">436</biblScope><biblScope unit="page" to="441">441</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib37"><analytic><title level="a" type="main">Axon retraction and degeneration in development and disease</title><author><persName>
+                            <surname>Luo</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><author><persName>
+                            <surname>O’Leary</surname>
+                            <forename type="first">D.D.</forename>
+                        </persName></author><idno type="pmid">16022592</idno></analytic><monogr><title level="j">Annu. Rev. Neurosci.</title><imprint><date type="year">2005</date><biblScope unit="vol">28</biblScope><biblScope unit="page" from="127">127</biblScope><biblScope unit="page" to="156">156</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib38"><analytic><title level="a" type="main">Spastin in the human and mouse central nervous system with special reference to its expression in the hippocampus of mouse pilocarpine model of status epilepticus and temporal lobe epilepsy</title><author><persName>
+                            <surname>Ma</surname>
+                            <forename type="first">D.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Chia</surname>
+                            <forename type="first">S.C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Tang</surname>
+                            <forename type="first">Y.C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Chang</surname>
+                            <forename type="first">M.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Probst</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Burgunder</surname>
+                            <forename type="first">J.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Tang</surname>
+                            <forename type="first">F.R.</forename>
+                        </persName></author><idno type="pmid">16828199</idno></analytic><monogr><title level="j">Neurochem. Int.</title><imprint><date type="year">2006</date><biblScope unit="vol">49</biblScope><biblScope unit="page" from="651">651</biblScope><biblScope unit="page" to="664">664</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib39"><analytic><title level="a" type="main">A robust and high-throughput Cre reporting and characterization system for the whole mouse brain</title><author><persName>
+                            <surname>Madisen</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Zwingman</surname>
+                            <forename type="first">T.A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Sunkin</surname>
+                            <forename type="first">S.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Oh</surname>
+                            <forename type="first">S.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Zariwala</surname>
+                            <forename type="first">H.A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Gu</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Ng</surname>
+                            <forename type="first">L.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Palmiter</surname>
+                            <forename type="first">R.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hawrylycz</surname>
+                            <forename type="first">M.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Jones</surname>
+                            <forename type="first">A.R.</forename>
+                        </persName></author><idno type="pmid">20023653</idno></analytic><monogr><title level="j">Nat. Neurosci.</title><imprint><date type="year">2010</date><biblScope unit="vol">13</biblScope><biblScope unit="page" from="133">133</biblScope><biblScope unit="page" to="140">140</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib40"><analytic><title level="a" type="main">Axonal pruning is actively regulated by the microtubule-destabilizing protein kinesin superfamily protein 2A</title><author><persName>
+                            <surname>Maor-Nof</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Homma</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Raanan</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Nof</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hirokawa</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Yaron</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><idno type="pmid">23562155</idno></analytic><monogr><title level="j">Cell Rep.</title><imprint><date type="year">2013</date><biblScope unit="vol">3</biblScope><biblScope unit="page" from="971">971</biblScope><biblScope unit="page" to="977">977</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib41"><analytic><title level="a" type="main">Molecular mechanisms that enhance synapse stability despite persistent disruption of the spectrin/ankyrin/microtubule cytoskeleton</title><author><persName>
+                            <surname>Massaro</surname>
+                            <forename type="first">C.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Pielage</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Davis</surname>
+                            <forename type="first">G.W.</forename>
+                        </persName></author><idno type="pmid">19805631</idno></analytic><monogr><title level="j">J. Cell Biol.</title><imprint><date type="year">2009</date><biblScope unit="vol">187</biblScope><biblScope unit="page" from="101">101</biblScope><biblScope unit="page" to="117">117</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib42"><analytic><title level="a" type="main">In vivo destabilization of dynamic microtubules by HDAC6-mediated deacetylation</title><author><persName>
+                            <surname>Matsuyama</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Shimazu</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Sumida</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Saito</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Yoshimatsu</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Seigneurin-Berny</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Osada</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Komatsu</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Nishino</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Khochbin</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><idno type="pmid">12486003</idno></analytic><monogr><title level="j">EMBO J.</title><imprint><date type="year">2002</date><biblScope unit="vol">21</biblScope><biblScope unit="page" from="6820">6820</biblScope><biblScope unit="page" to="6831">6831</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib43"><analytic><title level="a" type="main">Imaging axonal transport of mitochondria in vivo</title><author><persName>
+                            <surname>Misgeld</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kerschensteiner</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bareyre</surname>
+                            <forename type="first">F.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Burgess</surname>
+                            <forename type="first">R.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">17558414</idno></analytic><monogr><title level="j">Nat. Methods</title><imprint><date type="year">2007</date><biblScope unit="vol">4</biblScope><biblScope unit="page" from="559">559</biblScope><biblScope unit="page" to="561">561</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib44"><analytic><title level="a" type="main">The regulation of bidirectional mitochondrial transport is coordinated with axonal outgrowth</title><author><persName>
+                            <surname>Morris</surname>
+                            <forename type="first">R.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hollenbeck</surname>
+                            <forename type="first">P.J.</forename>
+                        </persName></author><idno type="pmid">8314882</idno></analytic><monogr><title level="j">J. Cell Sci.</title><imprint><date type="year">1993</date><biblScope unit="vol">104</biblScope><biblScope unit="page" from="917">917</biblScope><biblScope unit="page" to="927">927</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib45"><analytic><title level="a" type="main">β-Tubulin mutations that cause severe neuropathies disrupt axonal transport</title><author><persName>
+                            <surname>Niwa</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Takahashi</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hirokawa</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><idno type="pmid">23503589</idno></analytic><monogr><title level="j">EMBO J.</title><imprint><date type="year">2013</date><biblScope unit="vol">32</biblScope><biblScope unit="page" from="1352">1352</biblScope><biblScope unit="page" to="1364">1364</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib46"><analytic><title level="a" type="main">CLIP-170 highlights growing microtubule ends in vivo</title><author><persName>
+                            <surname>Perez</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><author><persName>
+                            <surname>Diamantopoulos</surname>
+                            <forename type="first">G.S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Stalder</surname>
+                            <forename type="first">R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kreis</surname>
+                            <forename type="first">T.E.</forename>
+                        </persName></author><idno type="pmid">10052454</idno></analytic><monogr><title level="j">Cell</title><imprint><date type="year">1999</date><biblScope unit="vol">96</biblScope><biblScope unit="page" from="517">517</biblScope><biblScope unit="page" to="527">527</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib47"><analytic><title level="a" type="main">Plasticity of motor systems after incomplete spinal cord injury</title><author><persName>
+                            <surname>Raineteau</surname>
+                            <forename type="first">O.</forename>
+                        </persName></author><author><persName>
+                            <surname>Schwab</surname>
+                            <forename type="first">M.E.</forename>
+                        </persName></author><idno type="pmid">11283749</idno></analytic><monogr><title level="j">Nat. Rev. Neurosci.</title><imprint><date type="year">2001</date><biblScope unit="vol">2</biblScope><biblScope unit="page" from="263">263</biblScope><biblScope unit="page" to="273">273</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib48"><analytic><title level="a" type="main">Sculpting neural circuits by axon and dendrite pruning</title><author><persName>
+                            <surname>Riccomagno</surname>
+                            <forename type="first">M.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kolodkin</surname>
+                            <forename type="first">A.L.</forename>
+                        </persName></author><idno type="pmid">26436703</idno></analytic><monogr><title level="j">Annu. Rev. Cell Dev. Biol.</title><imprint><date type="year">2015</date><biblScope unit="vol">31</biblScope><biblScope unit="page" from="779">779</biblScope><biblScope unit="page" to="805">805</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib49"><analytic><title level="a" type="main">Ultrastructural evidence for axon retraction during the spontaneous elimination of polyneuronal innervation of the rat soleus muscle</title><author><persName>
+                            <surname>Riley</surname>
+                            <forename type="first">D.A.</forename>
+                        </persName></author><idno type="pmid">7310460</idno></analytic><monogr><title level="j">J. Neurocytol.</title><imprint><date type="year">1981</date><biblScope unit="vol">10</biblScope><biblScope unit="page" from="425">425</biblScope><biblScope unit="page" to="440">440</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib50"><analytic><title level="a" type="main">Melanocortin-4 receptors expressed by cholinergic neurons regulate energy balance and glucose homeostasis</title><author><persName>
+                            <surname>Rossi</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Balthasar</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Olson</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Scott</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Berglund</surname>
+                            <forename type="first">E.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lee</surname>
+                            <forename type="first">C.E.</forename>
+                        </persName></author><author><persName>
+                            <surname>Choi</surname>
+                            <forename type="first">M.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lauzon</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lowell</surname>
+                            <forename type="first">B.B.</forename>
+                        </persName></author><author><persName>
+                            <surname>Elmquist</surname>
+                            <forename type="first">J.K.</forename>
+                        </persName></author><idno type="pmid">21284986</idno></analytic><monogr><title level="j">Cell Metab.</title><imprint><date type="year">2011</date><biblScope unit="vol">13</biblScope><biblScope unit="page" from="195">195</biblScope><biblScope unit="page" to="204">204</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib51"><analytic><title level="a" type="main">Taxol-induced neuropathy: chronic effects of local injection</title><author><persName>
+                            <surname>Röyttä</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Raine</surname>
+                            <forename type="first">C.S.</forename>
+                        </persName></author><idno type="pmid">2427662</idno></analytic><monogr><title level="j">J. Neurocytol.</title><imprint><date type="year">1986</date><biblScope unit="vol">15</biblScope><biblScope unit="page" from="483">483</biblScope><biblScope unit="page" to="496">496</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib52"><analytic><title level="a" type="main">Axonal regeneration. Systemic administration of epothilone B promotes axon regeneration after spinal cord injury</title><author><persName>
+                            <surname>Ruschel</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hellal</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><author><persName>
+                            <surname>Flynn</surname>
+                            <forename type="first">K.C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Dupraz</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Elliott</surname>
+                            <forename type="first">D.A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Tedeschi</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bates</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Sliwinski</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Brook</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Dobrindt</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><idno type="pmid">25765066</idno></analytic><monogr><title level="j">Science</title><imprint><date type="year">2015</date><biblScope unit="vol">348</biblScope><biblScope unit="page" from="347">347</biblScope><biblScope unit="page" to="352">352</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib53"><analytic><title level="a" type="main">Mechanisms of developmental neurite pruning</title><author><persName>
+                            <surname>Schuldiner</surname>
+                            <forename type="first">O.</forename>
+                        </persName></author><author><persName>
+                            <surname>Yaron</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><idno type="pmid">25213356</idno></analytic><monogr><title level="j">Cell. Mol. Life Sci.</title><imprint><date type="year">2015</date><biblScope unit="vol">72</biblScope><biblScope unit="page" from="101">101</biblScope><biblScope unit="page" to="119">119</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib54"><analytic><title level="a" type="main">A cre-transgenic mouse strain for the ubiquitous deletion of loxP-flanked gene segments including deletion in germ cells</title><author><persName>
+                            <surname>Schwenk</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><author><persName>
+                            <surname>Baron</surname>
+                            <forename type="first">U.</forename>
+                        </persName></author><author><persName>
+                            <surname>Rajewsky</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><idno type="pmid">8559668</idno></analytic><monogr><title level="j">Nucleic Acids Res.</title><imprint><date type="year">1995</date><biblScope unit="vol">23</biblScope><biblScope unit="page" from="5080">5080</biblScope><biblScope unit="page" to="5081">5081</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib55"><analytic><title level="a" type="main">Schizophrenia risk from complex variation of complement component 4</title><author><persName>
+                            <surname>Sekar</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bialas</surname>
+                            <forename type="first">A.R.</forename>
+                        </persName></author><author><persName>
+                            <surname>de Rivera</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Davis</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hammond</surname>
+                            <forename type="first">T.R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kamitaki</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Tooley</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Presumey</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Baum</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Van Doren</surname>
+                            <forename type="first">V.</forename>
+                        </persName></author><author role="collab"><name>Schizophrenia Working Group of the Psychiatric Genomics Consortium</name></author><idno type="pmid">26814963</idno></analytic><monogr><title level="j">Nature</title><imprint><date type="year">2016</date><biblScope unit="vol">530</biblScope><biblScope unit="page" from="177">177</biblScope><biblScope unit="page" to="183">183</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib56"><analytic><title level="a" type="main">Taxol facilitates axon regeneration in the mature CNS</title><author><persName>
+                            <surname>Sengottuvel</surname>
+                            <forename type="first">V.</forename>
+                        </persName></author><author><persName>
+                            <surname>Leibinger</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Pfreimer</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Andreadaki</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Fischer</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><idno type="pmid">21325537</idno></analytic><monogr><title level="j">J. Neurosci.</title><imprint><date type="year">2011</date><biblScope unit="vol">31</biblScope><biblScope unit="page" from="2688">2688</biblScope><biblScope unit="page" to="2699">2699</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib57"><analytic><title level="a" type="main">Hereditary spastic paraplegia SPG4: what is known and not known about the disease</title><author><persName>
+                            <surname>Solowska</surname>
+                            <forename type="first">J.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Baas</surname>
+                            <forename type="first">P.W.</forename>
+                        </persName></author><idno type="pmid">26094131</idno></analytic><monogr><title level="j">Brain</title><imprint><date type="year">2015</date><biblScope unit="vol">138</biblScope><biblScope unit="page" from="2471">2471</biblScope><biblScope unit="page" to="2484">2484</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib58"><analytic><title level="a" type="main">Lysosomal activity associated with developmental axon pruning</title><author><persName>
+                            <surname>Song</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Misgeld</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kang</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Knecht</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lu</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Cao</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Cotman</surname>
+                            <forename type="first">S.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bishop</surname>
+                            <forename type="first">D.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">18768693</idno></analytic><monogr><title level="j">J. Neurosci.</title><imprint><date type="year">2008</date><biblScope unit="vol">28</biblScope><biblScope unit="page" from="8993">8993</biblScope><biblScope unit="page" to="9001">9001</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib59"><analytic><title level="a" type="main">Pervasive axonal transport deficits in multiple sclerosis models</title><author><persName>
+                            <surname>Sorbara</surname>
+                            <forename type="first">C.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wagner</surname>
+                            <forename type="first">N.E.</forename>
+                        </persName></author><author><persName>
+                            <surname>Ladwig</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Nikić</surname>
+                            <forename type="first">I.</forename>
+                        </persName></author><author><persName>
+                            <surname>Merkler</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kleele</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Marinković</surname>
+                            <forename type="first">P.</forename>
+                        </persName></author><author><persName>
+                            <surname>Naumann</surname>
+                            <forename type="first">R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Godinho</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bareyre</surname>
+                            <forename type="first">F.M.</forename>
+                        </persName></author><idno type="pmid">25433639</idno></analytic><monogr><title level="j">Neuron</title><imprint><date type="year">2014</date><biblScope unit="vol">84</biblScope><biblScope unit="page" from="1183">1183</biblScope><biblScope unit="page" to="1190">1190</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib60"><analytic><title level="a" type="main">Selective collateral elimination in early postnatal development restricts cortical distribution of rat pyramidal tract neurones</title><author><persName>
+                            <surname>Stanfield</surname>
+                            <forename type="first">B.B.</forename>
+                        </persName></author><author><persName>
+                            <surname>O’Leary</surname>
+                            <forename type="first">D.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Fricks</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><idno type="pmid">6178041</idno></analytic><monogr><title level="j">Nature</title><imprint><date type="year">1982</date><biblScope unit="vol">298</biblScope><biblScope unit="page" from="371">371</biblScope><biblScope unit="page" to="373">373</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib61"><analytic><title level="a" type="main">Visualization of microtubule growth in cultured neurons via the use of EB3-GFP (end-binding protein 3-green fluorescent protein)</title><author><persName>
+                            <surname>Stepanova</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Slemmer</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hoogenraad</surname>
+                            <forename type="first">C.C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lansbergen</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Dortland</surname>
+                            <forename type="first">B.</forename>
+                        </persName></author><author><persName>
+                            <surname>De Zeeuw</surname>
+                            <forename type="first">C.I.</forename>
+                        </persName></author><author><persName>
+                            <surname>Grosveld</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><author><persName>
+                            <surname>van Cappellen</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Akhmanova</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Galjart</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><idno type="pmid">12684451</idno></analytic><monogr><title level="j">J. Neurosci.</title><imprint><date type="year">2003</date><biblScope unit="vol">23</biblScope><biblScope unit="page" from="2655">2655</biblScope><biblScope unit="page" to="2664">2664</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib62"><analytic><title level="a" type="main">Pervasive synaptic branch removal in the mammalian neuromuscular system at birth</title><author><persName>
+                            <surname>Tapia</surname>
+                            <forename type="first">J.C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Wylie</surname>
+                            <forename type="first">J.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kasthuri</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hayworth</surname>
+                            <forename type="first">K.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Schalek</surname>
+                            <forename type="first">R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Berger</surname>
+                            <forename type="first">D.R.</forename>
+                        </persName></author><author><persName>
+                            <surname>Guatimosim</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Seung</surname>
+                            <forename type="first">H.S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">22681687</idno></analytic><monogr><title level="j">Neuron</title><imprint><date type="year">2012</date><biblScope unit="vol">74</biblScope><biblScope unit="page" from="816">816</biblScope><biblScope unit="page" to="829">829</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib63"><analytic><title level="a" type="main">A mutation of spastin is responsible for swellings and impairment of transport in a region of axon characterized by changes in microtubule composition</title><author><persName>
+                            <surname>Tarrade</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Fassier</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Courageot</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Charvin</surname>
+                            <forename type="first">D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Vitte</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Peris</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Thorel</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Mouisel</surname>
+                            <forename type="first">E.</forename>
+                        </persName></author><author><persName>
+                            <surname>Fonknechten</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Roblot</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><idno type="pmid">17101632</idno></analytic><monogr><title level="j">Hum. Mol. Genet.</title><imprint><date type="year">2006</date><biblScope unit="vol">15</biblScope><biblScope unit="page" from="3544">3544</biblScope><biblScope unit="page" to="3558">3558</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib64"><analytic><title level="a" type="main">A reliable lacZ expression reporter cassette for multipurpose, knockout-first alleles</title><author><persName>
+                            <surname>Testa</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Schaft</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>van der Hoeven</surname>
+                            <forename type="first">F.</forename>
+                        </persName></author><author><persName>
+                            <surname>Glaser</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Anastassiadis</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Zhang</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hermann</surname>
+                            <forename type="first">T.</forename>
+                        </persName></author><author><persName>
+                            <surname>Stremmel</surname>
+                            <forename type="first">W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Stewart</surname>
+                            <forename type="first">A.F.</forename>
+                        </persName></author><idno type="pmid">15048813</idno></analytic><monogr><title level="j">Genesis</title><imprint><date type="year">2004</date><biblScope unit="vol">38</biblScope><biblScope unit="page" from="151">151</biblScope><biblScope unit="page" to="158">158</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib65"><analytic><title level="a" type="main">The hereditary spastic paraplegia gene, spastin, regulates microtubule stability to modulate synaptic structure and function</title><author><persName>
+                            <surname>Trotta</surname>
+                            <forename type="first">N.</forename>
+                        </persName></author><author><persName>
+                            <surname>Orso</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Rossetto</surname>
+                            <forename type="first">M.G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Daga</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Broadie</surname>
+                            <forename type="first">K.</forename>
+                        </persName></author><idno type="pmid">15242610</idno></analytic><monogr><title level="j">Curr. Biol.</title><imprint><date type="year">2004</date><biblScope unit="vol">14</biblScope><biblScope unit="page" from="1135">1135</biblScope><biblScope unit="page" to="1147">1147</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib66"><analytic><title level="a" type="main">Reversing the outcome of synapse elimination at developing neuromuscular junctions in vivo: evidence for synaptic competition and its mechanism</title><author><persName>
+                            <surname>Turney</surname>
+                            <forename type="first">S.G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">22745601</idno></analytic><monogr><title level="j">PLoS Biol.</title><imprint><date type="year">2012</date><biblScope unit="vol">10</biblScope><biblScope unit="page" from="e1001352">e1001352</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib67"><analytic><title level="a" type="main">Graded control of microtubule severing by tubulin glutamylation</title><author><persName>
+                            <surname>Valenstein</surname>
+                            <forename type="first">M.L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Roll-Mecak</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><idno type="pmid">26875866</idno></analytic><monogr><title level="j">Cell</title><imprint><date type="year">2016</date><biblScope unit="vol">164</biblScope><biblScope unit="page" from="911">911</biblScope><biblScope unit="page" to="921">921</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib68"><analytic><title level="a" type="main">In vivo time-lapse imaging of synaptic takeover associated with naturally occurring synapse elimination</title><author><persName>
+                            <surname>Walsh</surname>
+                            <forename type="first">M.K.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lichtman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">12526773</idno></analytic><monogr><title level="j">Neuron</title><imprint><date type="year">2003</date><biblScope unit="vol">37</biblScope><biblScope unit="page" from="67">67</biblScope><biblScope unit="page" to="73">73</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib69"><analytic><title level="a" type="main">Axon pruning during Drosophila metamorphosis: evidence for local degeneration and requirement of the ubiquitin-proteasome system</title><author><persName>
+                            <surname>Watts</surname>
+                            <forename type="first">R.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hoopfer</surname>
+                            <forename type="first">E.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Luo</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><idno type="pmid">12818174</idno></analytic><monogr><title level="j">Neuron</title><imprint><date type="year">2003</date><biblScope unit="vol">38</biblScope><biblScope unit="page" from="871">871</biblScope><biblScope unit="page" to="885">885</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib70"><analytic><title level="a" type="main">Cellular mechanisms of dendrite pruning in Drosophila: insights from in vivo time-lapse of remodeling dendritic arborizing sensory neurons</title><author><persName>
+                            <surname>Williams</surname>
+                            <forename type="first">D.W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Truman</surname>
+                            <forename type="first">J.W.</forename>
+                        </persName></author><idno type="pmid">16033801</idno></analytic><monogr><title level="j">Development</title><imprint><date type="year">2005</date><biblScope unit="vol">132</biblScope><biblScope unit="page" from="3631">3631</biblScope><biblScope unit="page" to="3642">3642</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib71"><analytic><title level="a" type="main">The microtubule-severing protein Spastin is essential for axon outgrowth in the zebrafish embryo</title><author><persName>
+                            <surname>Wood</surname>
+                            <forename type="first">J.D.</forename>
+                        </persName></author><author><persName>
+                            <surname>Landers</surname>
+                            <forename type="first">J.A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Bingley</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>McDermott</surname>
+                            <forename type="first">C.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Thomas-McArthur</surname>
+                            <forename type="first">V.</forename>
+                        </persName></author><author><persName>
+                            <surname>Gleadall</surname>
+                            <forename type="first">L.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Shaw</surname>
+                            <forename type="first">P.J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Cunliffe</surname>
+                            <forename type="first">V.T.</forename>
+                        </persName></author><idno type="pmid">16893913</idno></analytic><monogr><title level="j">Hum. Mol. Genet.</title><imprint><date type="year">2006</date><biblScope unit="vol">15</biblScope><biblScope unit="page" from="2763">2763</biblScope><biblScope unit="page" to="2771">2771</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib72"><analytic><title level="a" type="main">Sleep promotes branch-specific formation of dendritic spines after learning</title><author><persName>
+                            <surname>Yang</surname>
+                            <forename type="first">G.</forename>
+                        </persName></author><author><persName>
+                            <surname>Lai</surname>
+                            <forename type="first">C.S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Cichon</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Ma</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Li</surname>
+                            <forename type="first">W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Gan</surname>
+                            <forename type="first">W.B.</forename>
+                        </persName></author><idno type="pmid">24904169</idno></analytic><monogr><title level="j">Science</title><imprint><date type="year">2014</date><biblScope unit="vol">344</biblScope><biblScope unit="page" from="1173">1173</biblScope><biblScope unit="page" to="1178">1178</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib73"><analytic><title level="a" type="main">Common and divergent mechanisms in developmental neuronal remodeling and dying back neurodegeneration</title><author><persName>
+                            <surname>Yaron</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Schuldiner</surname>
+                            <forename type="first">O.</forename>
+                        </persName></author><idno type="pmid">27404258</idno></analytic><monogr><title level="j">Curr. Biol.</title><imprint><date type="year">2016</date><biblScope unit="vol">26</biblScope><biblScope unit="page" from="R628">R628</biblScope><biblScope unit="page" to="R639">R639</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib74"><analytic><title level="a" type="main">The microtubule-severing proteins spastin and katanin participate differently in the formation of axonal branches</title><author><persName>
+                            <surname>Yu</surname>
+                            <forename type="first">W.</forename>
+                        </persName></author><author><persName>
+                            <surname>Qiang</surname>
+                            <forename type="first">L.</forename>
+                        </persName></author><author><persName>
+                            <surname>Solowska</surname>
+                            <forename type="first">J.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Karabay</surname>
+                            <forename type="first">A.</forename>
+                        </persName></author><author><persName>
+                            <surname>Korulu</surname>
+                            <forename type="first">S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Baas</surname>
+                            <forename type="first">P.W.</forename>
+                        </persName></author><idno type="pmid">18234839</idno></analytic><monogr><title level="j">Mol. Biol. Cell</title><imprint><date type="year">2008</date><biblScope unit="vol">19</biblScope><biblScope unit="page" from="1485">1485</biblScope><biblScope unit="page" to="1498">1498</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib75"><analytic><title level="a" type="main">Amyloid-β oligomers induce synaptic damage via Tau-dependent microtubule severing by TTLL6 and spastin</title><author><persName>
+                            <surname>Zempel</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Luedtke</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Kumar</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Biernat</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Dawson</surname>
+                            <forename type="first">H.</forename>
+                        </persName></author><author><persName>
+                            <surname>Mandelkow</surname>
+                            <forename type="first">E.</forename>
+                        </persName></author><author><persName>
+                            <surname>Mandelkow</surname>
+                            <forename type="first">E.M.</forename>
+                        </persName></author><idno type="pmid">24065130</idno></analytic><monogr><title level="j">EMBO J.</title><imprint><date type="year">2013</date><biblScope unit="vol">32</biblScope><biblScope unit="page" from="2920">2920</biblScope><biblScope unit="page" to="2937">2937</biblScope></imprint></monogr></biblStruct><biblStruct type="journal" xml:id="bib76"><analytic><title level="a" type="main">The microtubule-stabilizing agent, epothilone D, reduces axonal dysfunction, neurotoxicity, cognitive deficits, and Alzheimer-like pathology in an interventional study with aged tau transgenic mice</title><author><persName>
+                            <surname>Zhang</surname>
+                            <forename type="first">B.</forename>
+                        </persName></author><author><persName>
+                            <surname>Carroll</surname>
+                            <forename type="first">J.</forename>
+                        </persName></author><author><persName>
+                            <surname>Trojanowski</surname>
+                            <forename type="first">J.Q.</forename>
+                        </persName></author><author><persName>
+                            <surname>Yao</surname>
+                            <forename type="first">Y.</forename>
+                        </persName></author><author><persName>
+                            <surname>Iba</surname>
+                            <forename type="first">M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Potuzak</surname>
+                            <forename type="first">J.S.</forename>
+                        </persName></author><author><persName>
+                            <surname>Hogan</surname>
+                            <forename type="first">A.M.</forename>
+                        </persName></author><author><persName>
+                            <surname>Xie</surname>
+                            <forename type="first">S.X.</forename>
+                        </persName></author><author><persName>
+                            <surname>Ballatore</surname>
+                            <forename type="first">C.</forename>
+                        </persName></author><author><persName>
+                            <surname>Smith</surname>
+                            <forename type="first">A.B.</forename>
+                            <genName>3rd</genName>
+                        </persName></author><idno type="pmid">22423084</idno></analytic><monogr><title level="j">J. Neurosci.</title><imprint><date type="year">2012</date><biblScope unit="vol">32</biblScope><biblScope unit="page" from="3601">3601</biblScope><biblScope unit="page" to="3611">3611</biblScope></imprint></monogr></biblStruct></listBibl></div><div type="supplementary-material" xml:id="app2">
+            <head>Supplemental Information</head>
+            <p>
+                <ref type=" supplementary-material " target="">
+                    
+                        <head type="caption-title">Document S1. Supplemental Experimental Procedures and Figures S1–S6</head>
+                    
+                    
+                </ref>
+                <ref type=" supplementary-material " target="">
+                    
+                        <head type="caption-title">Movie S1, Related to Figure 2. Time Lapse Showing Microtubule Dynamics in a Nerve-Muscle Explant of a 
+                            <hi rend="italic">Thy1-EB3-YFP</hi> Mouse
+                        </head>
+                        <figDesc>A singly innervated NMJ with a retraction bulb close by on the left and a doubly innervated NMJ on the right. Territories of competing inputs were quantified using photo-bleaching (pseudo-colored in magenta and white in still frames at end of movie).</figDesc>
+                    
+                    
+                </ref>
+                <ref type=" supplementary-material " target="">
+                    
+                        <head type="caption-title">Movie S2, Related to Figure 3. 3D Reconstruction of an NMJ Based on Serial Electron Micrographs</head>
+                        <figDesc>A confocal projection following the sequential photo-bleaching procedure shows an axon that occupied 15% (magenta) versus one that occupied 85% of synaptic territory (white). A surface rendering of a complete scanning transmission electron microscopy reconstruction of the NMJ is overlaid onto the confocal projection. The EM surface rendering is rotated and membrane opacity adjusted to reveal the mitochondria (blue) and microtubules (red) for each axon. Microtubules were rendered only for the axon shaft, where all measurements of microtubule dynamics and content were done. Scale cube, 1 μm.</figDesc>
+                    
+                    
+                </ref>
+                <ref type=" supplementary-material " target="">
+                    
+                        <head type="caption-title">Document S2. Article plus Supplemental Information</head>
+                    
+                    
+                </ref>
+            </p>
+        </div><div type="acknowledgements">
+            <head>Acknowledgments</head>
+            <p>We thank Kristina Wullimann, Yvonne Hufnagel, Alexandra Graupner, Irm Hermans-Borgmeyer, Petra Breiden, and Monika Schetterer for expert technical and administrative support and Manuela and Nebahat Budak for careful animal husbandry. We are grateful to Leanne Godinho (Technical University of Munich) and Avraham Yaron (Weizmann Institute of Science) for reading an earlier version of this manuscript. We thank the Lichtman and Sanes labs (Harvard University) for generous provision of Thy1-reporter mice.</p>
+            <p>This project was made possible by funding to T.M. from the 
+                 (DFG) through the 
+                (SyNergy; EXC 1010), the 
+                 (CIPSM, EXC 114), 
+                 (SFB870, TP A11), 
+                , 
+                 (SPP1710, Mi 694/4-1), and Research Grant Mi 694/7-1. Further support came from the 
+                 under the 
+                 (FP/2007-2013; ERC Grant Agreement n. 616791 with T.M.). T.M. is also associated with the German Center for Neurodegenerative Diseases (DZNE Munich) and was supported by the 
+                . M.K. and L.R. were supported by the DFG through 
+                , project Kn 556/1459-1. M.K. was further supported by 
+                , project Kn 556/11-1. M.W. and T.M. were supported by the 
+                 (I-1200-237.1/2012). T.K., N.A.M., and M.W. were supported by the 
+                 (TUM-GS). N.A.M. and M.W. received fellowships form 
+                . T.K. is recipient of a 
+                 (EXC 1010). D.L.B.’s lab is supported by the 
+                 (Award #1126196).
+            </p>
+        </div><div type="fn-group">
+            <note place="inline" type="supplementary-material" xml:id="app1">
+                <p>Supplemental Information includes Supplemental Experimental Procedures, six figures, and two movies and can be found with this article online at 
+                    <ref type="doi" target="10.1016/j.neuron.2016.09.049">http://dx.doi.org/10.1016/j.neuron.2016.09.049</ref>.
+                </p>
+            </note>
+        </div></back></text></TEI>
