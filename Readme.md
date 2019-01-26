@@ -40,8 +40,8 @@ The following publisher's formats should be properly processed:
 - Elsevier (journals and conferences): metadata, header, bibliography, body
 - IOP: metadata, header, bibliography. 
 - NPG (Nature): metadata, header, bibliography, body 
-- NLM: metadata, header, bibliography, body 
-- OUP: ?
+- NLM/JATS: metadata, header, bibliography, body 
+- OUP: metadata, header, bibliography, body
 - PNAS: metadata, header, bibliography, body
 - RSC: metadata, header, bibliography, body
 - Sage: metadata, header
@@ -49,7 +49,7 @@ The following publisher's formats should be properly processed:
 - Springer: metadata, header, bibliography, body
 - Wiley: metadata, header, bibliography, body
 
-Coverage of NLM and JATS should be comprehensive. 
+Coverage of NLM and JATS should be comprehensive (all versions). 
 
 ## License
 

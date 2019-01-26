@@ -11,17 +11,9 @@
     xmlns:s1="http://www.elsevier.com/xml/si/dtd"
     xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
-    <!-- ajout déclaration schema ODD-ISTEX -->
     
     <xsl:output encoding="UTF-8" method="xml"/>
     
-   <!-- <xd:doc scope="stylesheet">
-        <xd:desc>
-            <xd:p>created by romain dot loth at inist.fr</xd:p>
-            <xd:p>ISTEX-CNRS 2014-12</xd:p>
-        </xd:desc>
-    </xd:doc>-->
-
     <!-- 
         =========================
         TODO dans les entrées IOP
@@ -66,17 +58,7 @@
                             <xsl:value-of select="header/title-group/title"/>
                         </title>
                     </titleStmt>
-
-                    <!-- proposition d'un "stamp" Pub2TEI -->
-                  <!-- <editionStmt>
-                        <edition>TEI version</edition>
-                        <respStmt>
-                            <resp>Conversion from IOP XML to TEI-conformant markup</resp>
-                            <name>Pub2TEI XSLT</name>
-                        </respStmt>
-                    </editionStmt>-->
                     <publicationStmt>
-                        <!--authority>ISTEX</authority-->
                         <!-- Publisher jnl -->
                         <xsl:apply-templates
                             select="article-metadata/jnl-data/jnl-imprint"/>

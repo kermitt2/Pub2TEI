@@ -13,8 +13,6 @@
     
     <xsl:output encoding="UTF-8" method="xml"/>
     <xsl:param name="datecreation"/>
-    <!--xsl:param name="idistex"/>
-    <xsl:param name="arkistex"/-->
     <xsl:param name="rawfulltextpath"/>
     
     <xsl:include href="Imports.xsl"/>
@@ -29,7 +27,6 @@
     <xsl:include href="ArticleSetNLMV2.0.xsl"/>
     <xsl:include href="Sage.xsl"/>
 
-	<!-- RL: ajout de mon cas IOP.xsl-->
     <xsl:include href="IOP.xsl"/>
     <!--
 	<xsl:include href="IOPPatch.xsl"/>

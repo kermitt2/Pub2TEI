@@ -49,23 +49,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable-->
-    <!-- lien vers data.istex.fr -->
-    <!--xsl:variable name="codeGenreArkA">
-        <xsl:choose>
-            <xsl:when test="normalize-space($codeGenreA)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='other'">https://content-type.data.istex.fr/ark:/67375/XTP-7474895G-0</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='book-reviews'">https://content-type.data.istex.fr/ark:/67375/XTP-PBH5VBM9-4</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='abstract'">https://content-type.data.istex.fr/ark:/67375/XTP-HPN7T1Q2-R</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='review-article'">https://content-type.data.istex.fr/ark:/67375/XTP-L5L7X3NF-P</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='brief-communication'">https://content-type.data.istex.fr/ark:/67375/XTP-S9SX2MFS-0</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='editorial'">https://content-type.data.istex.fr/ark:/67375/XTP-STW636XV-K</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='case-report'">https://content-type.data.istex.fr/ark:/67375/XTP-29919SZJ-6</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='conference'">https://content-type.data.istex.fr/ark:/67375/XTP-BFHXPBJJ-3</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
-            <xsl:when test="normalize-space($codeGenreA)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
-        </xsl:choose>
-    </xsl:variable-->
+
     <!-- codeLangue -->
     <xsl:variable name="codeLangue">
         <xsl:choose>
@@ -277,7 +261,6 @@
                         </editionStmt>
                     </xsl:if>
                     <publicationStmt>
-                        <!--authority>ISTEX</authority-->
 						<xsl:if test="header/publicationMeta/publisherInfo/publisherName">
                        	 	<xsl:apply-templates select="header/publicationMeta/publisherInfo/publisherName"/>
 						</xsl:if>
@@ -307,34 +290,22 @@
                     <notesStmt>
                         <!-- niveau article / chapter -->
                         <note type="content-type">
-                            <!--xsl:attribute name="subtype">
-                                <xsl:value-of select="$codeGenreA"/>
-                            </xsl:attribute>
-                            <xsl:attribute name="source">
-                                <xsl:value-of select="$codeGenre1"/>
-                            </xsl:attribute>
-                            <xsl:attribute name="scheme">
-                                <xsl:value-of select="$codeGenreArkA"/>
-                            </xsl:attribute-->
                             <xsl:value-of select="$codeGenre1"/>
                         </note>
                         <!-- niveau revue / book -->
                         <xsl:choose>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and //publicationMeta/issn">
                                 <note type="publication-type" subtype="book-series">
-                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:when test="//publicationMeta/isbn[string-length() &gt; 0] and not(//publicationMeta/issn)">
                                 <note type="publication-type" subtype="book">
-                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:when>
                             <xsl:otherwise>
                                 <note type="publication-type" subtype="journal">
-                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B</xsl:attribute-->
                                     <xsl:text>journal</xsl:text>
                                 </note>
                             </xsl:otherwise>
@@ -562,17 +533,6 @@
 					<xsl:apply-templates select="contentMeta/creators"/>
 				</xsl:if>
                 
-                <!-- ajout identifiants ISTEX et ARK -->
-                <!--xsl:if test="string-length($idistex) &gt; 0 ">
-                    <idno type="istex">
-                        <xsl:value-of select="$idistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="string-length($arkistex) &gt; 0 ">
-                    <idno type="ark">
-                        <xsl:value-of select="$arkistex"/>
-                    </idno>
-                </xsl:if-->
                 <xsl:apply-templates select="publicationMeta[@level='unit']/doi"/>
                 <xsl:apply-templates select="publicationMeta[@level='unit']/idGroup/id"/>
                 <xsl:apply-templates select="publicationMeta[@level='unit']/linkGroup/link"/>

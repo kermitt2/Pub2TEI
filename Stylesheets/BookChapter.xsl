@@ -62,23 +62,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
-    <!-- lien vers data.istex.fr -->
-    <!--xsl:variable name="codeGenreArkBrepolsBook">
-        <xsl:choose>
-            <xsl:when test="normalize-space($codeGenreBrepols)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='other'">https://content-type.data.istex.fr/ark:/67375/XTP-7474895G-0</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='book-reviews'">https://content-type.data.istex.fr/ark:/67375/XTP-PBH5VBM9-4</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='abstract'">https://content-type.data.istex.fr/ark:/67375/XTP-HPN7T1Q2-R</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='review-article'">https://content-type.data.istex.fr/ark:/67375/XTP-L5L7X3NF-P</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='brief-communication'">https://content-type.data.istex.fr/ark:/67375/XTP-S9SX2MFS-0</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='editorial'">https://content-type.data.istex.fr/ark:/67375/XTP-STW636XV-K</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='case-report'">https://content-type.data.istex.fr/ark:/67375/XTP-29919SZJ-6</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='conference'">https://content-type.data.istex.fr/ark:/67375/XTP-BFHXPBJJ-3</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
-            <xsl:when test="normalize-space($codeGenreBrepols)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
-        </xsl:choose>
-    </xsl:variable-->
+
     <xsl:template match="/book">
         <xsl:comment>
             <xsl:text>Version 0.1 generated on </xsl:text>
@@ -123,7 +107,6 @@
                         </xsl:if>
                     </titleStmt>
                     <publicationStmt>
-                        <!--authority>ISTEX</authority-->
                         <xsl:choose>
                             <xsl:when test="//body/book-part/book-part-meta">
                                 <publisher scheme="https://publisher-list.data.istex.fr/ark:/67375/H02-N14T76M9-6">Brepols Publishers</publisher>
@@ -184,12 +167,6 @@
                                 </xsl:when>
                                 <!-- brepols -->
                                 <xsl:when test="$codeGenreBrepolsBook">
-                                    <!--xsl:attribute name="source">
-                                        <xsl:value-of select="$codeGenreBrepolsBook"/>
-                                    </xsl:attribute-->
-                                    <!--xsl:attribute name="scheme">
-                                        <xsl:value-of select="$codeGenreArkBrepolsBook"/>
-                                    </xsl:attribute-->
                                     <xsl:value-of select="$codeGenreBrepolsBook"/>
                                 </xsl:when>
                             </xsl:choose>
@@ -198,7 +175,6 @@
                         <xsl:choose>
                             <xsl:when test="$docIssue//book/book-series-meta">
                                 <note type="publication-type">
-                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-0G6R5W5T-Z</xsl:attribute-->
                                     <xsl:text>book-series</xsl:text>
                                 </note>
                             </xsl:when>
@@ -206,7 +182,6 @@
                                 <!-- niveau revue -->
                                 <note type="publication-type">
                                     <xsl:attribute name="subtype">book</xsl:attribute>
-                                    <!--xsl:attribute name="scheme">https://publication-type.data.istex.fr/ark:/67375/JMC-5WTPMB5N-F</xsl:attribute-->
                                     <xsl:text>book</xsl:text>
                                 </note>
                             </xsl:otherwise>
@@ -348,17 +323,6 @@
                 <xsl:apply-templates select="//body/book-part/book-part-meta/title-group/title"/>
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="//body/book-part/book-part-meta/contrib-group/contrib"/>
-                <!-- ajout identifiants ISTEX et ARK -->
-                <!--xsl:if test="string-length($idistex) &gt; 0 ">
-                    <idno type="istex">
-                        <xsl:value-of select="$idistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="string-length($arkistex) &gt; 0 ">
-                    <idno type="ark">
-                        <xsl:value-of select="$arkistex"/>
-                    </idno>
-                </xsl:if-->
                 <xsl:if test="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']">
                     <idno type="doi">
                         <xsl:value-of select="//body/book-part/book-part-meta/book-part-id[@pub-id-type='doi']"/>
@@ -438,18 +402,6 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 
-                
-                <!-- ajout identifiants ISTEX et ARK -->
-                <!--xsl:if test="string-length($idistex) &gt; 0 ">
-                    <idno type="istex">
-                        <xsl:value-of select="$idistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="string-length($arkistex) &gt; 0 ">
-                    <idno type="ark">
-                        <xsl:value-of select="$arkistex"/>
-                    </idno>
-                </xsl:if-->
                 <xsl:if test="book-meta/book-id[string-length() &gt; 0]">
                     <xsl:for-each select="book-meta/book-id">
                         <idno type="{@book-id-type}">

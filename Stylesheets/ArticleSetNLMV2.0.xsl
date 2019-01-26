@@ -48,7 +48,6 @@
                         <xsl:apply-templates select="ArticleTitle"/>
                     </titleStmt>
                     <publicationStmt>
-                        <!--authority>ISTEX</authority-->
                         <xsl:if test="CopyrightInformation">
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </xsl:if>
@@ -67,14 +66,6 @@
                                 <xsl:apply-templates select="ArticleTitle"/>
                             </analytic>
                             <monogr>
-
-                                <!--<xsl:when test="$journalDescription">
-                                        <xsl:apply-templates
-                                            select="$journalDescription/tei:cell[@role='Journal']"/>
-                                        <xsl:message>Journal corrigé: <xsl:value-of
-                                                select="$journalDescription/tei:cell[@role='Journal']"
-                                            /></xsl:message>
-                                    </xsl:when>-->
 
                                 <xsl:apply-templates select="Journal/JournalTitle"/>
                                 <xsl:apply-templates select="Journal/journal-id"/>

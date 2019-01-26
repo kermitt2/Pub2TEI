@@ -32,12 +32,6 @@
                     <titleStmt>
                         <xsl:apply-templates select="article-title/title"/>
                     </titleStmt>
-<!--                    <xsl:if test="article-id/copyright">
-                        <publicationStmt>
-                        <authority>ISTEX</authority>
-                            <xsl:apply-templates select="article-id/copyright"/>
-                        </publicationStmt>
-                    </xsl:if>-->
                     <sourceDesc>
                         <biblStruct>
                             <analytic>
