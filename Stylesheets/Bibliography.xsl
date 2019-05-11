@@ -18,7 +18,7 @@
     <!-- Références bibliographiques à la fin d'un article -->
     <!-- ref-list: NLM article, ScholarOne -->
 
-    <xsl:template match="ref-list | ref-list | biblist | ce:bibliography | bibl | wiley:bibliography">
+    <xsl:template match="ref-list | biblist | ce:bibliography | bibl | wiley:bibliography">
         <div type="references">
             <xsl:apply-templates select="title | ce:section-title"/>
             <xsl:apply-templates select="ref-list"/>
@@ -1438,6 +1438,11 @@
                         </xsl:attribute>
                     </xsl:if>
                     <xsl:choose>
+                        <xsl:when test="../../ref[@id]">
+                            <xsl:attribute name="xml:id">
+                                <xsl:value-of select="../@id"/>
+                            </xsl:attribute>
+                        </xsl:when>
                         <xsl:when test="@id">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of select="@id"/>

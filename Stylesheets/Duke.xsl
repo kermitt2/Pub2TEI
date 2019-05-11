@@ -29,24 +29,6 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable-->
-    <!-- lien vers data.istex.fr -->
-    <!--xsl:variable name="codeGenreArkDuke">
-        <xsl:choose>
-            <xsl:when test="normalize-space($codeGenreDuke2)='research-article'">https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='article'">https://content-type.data.istex.fr/ark:/67375/XTP-6N5SZHKN-D</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='other'">https://content-type.data.istex.fr/ark:/67375/XTP-7474895G-0</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='book-reviews'">https://content-type.data.istex.fr/ark:/67375/XTP-PBH5VBM9-4</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='abstract'">https://content-type.data.istex.fr/ark:/67375/XTP-HPN7T1Q2-R</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='review-article'">https://content-type.data.istex.fr/ark:/67375/XTP-L5L7X3NF-P</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='brief-communication'">https://content-type.data.istex.fr/ark:/67375/XTP-S9SX2MFS-0</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='editorial'">https://content-type.data.istex.fr/ark:/67375/XTP-STW636XV-K</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='case-report'">https://content-type.data.istex.fr/ark:/67375/XTP-29919SZJ-6</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='conference'">https://content-type.data.istex.fr/ark:/67375/XTP-BFHXPBJJ-3</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='chapter'">https://content-type.data.istex.fr/ark:/67375/XTP-CGT4WMJM-6</xsl:when>
-            <xsl:when test="normalize-space($codeGenreDuke2)='book'">https://content-type.data.istex.fr/ark:/67375/XTP-94FB0L8V-T</xsl:when>
-        </xsl:choose>
-    </xsl:variable-->
-    <!-- codeLangue -->
     
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="euclid_issue">
@@ -99,7 +81,6 @@
                         </editionStmt>
                     </xsl:if>
                     <publicationStmt>
-                        <!--authority>ISTEX</authority-->
                         <publisher>Duke University Press</publisher>
                         <pubPlace>Durham, NC 27701, USA</pubPlace>
                         <availability>
@@ -118,15 +99,6 @@
                     <notesStmt>
                         <!-- niveau article / chapter -->
                         <note type="content-type">
-                            <!--xsl:attribute name="subtype">
-                                <xsl:value-of select="$codeGenreDuke2"/>
-                            </xsl:attribute-->
-                            <!--xsl:attribute name="source">
-                                <xsl:value-of select="$codeGenreDuke"/>
-                            </xsl:attribute-->
-                            <!--xsl:attribute name="scheme">
-                                <xsl:value-of select="$codeGenreArkDuke"/>
-                            </xsl:attribute-->
                             <xsl:value-of select="$codeGenreDuke"/>
                         </note>
                         <!-- niveau revue -->
@@ -218,18 +190,7 @@
 				
                 <!-- All authors are included here -->
 					<xsl:apply-templates select="author"/>
-                
-                <!-- ajout identifiants ISTEX et ARK -->
-                <!--xsl:if test="string-length($idistex) &gt; 0 ">
-                    <idno type="istex">
-                        <xsl:value-of select="$idistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="string-length($arkistex) &gt; 0 ">
-                    <idno type="ark">
-                        <xsl:value-of select="$arkistex"/>
-                    </idno>
-                </xsl:if-->
+
                 <xsl:if test="identifiers/identifier[string-length() &gt; 0]">
                     <xsl:for-each select="identifiers/identifier">
                         <idno type="{@type}">
@@ -302,17 +263,6 @@
                 <!-- All authors are included here -->
                 <xsl:apply-templates select="author"/>
                 
-                <!-- ajout identifiants ISTEX et ARK -->
-                <!--xsl:if test="string-length($idistex) &gt; 0 ">
-                    <idno type="istex">
-                        <xsl:value-of select="$idistex"/>
-                    </idno>
-                </xsl:if>
-                <xsl:if test="string-length($arkistex) &gt; 0 ">
-                    <idno type="ark">
-                        <xsl:value-of select="$arkistex"/>
-                    </idno>
-                </xsl:if-->
                 <xsl:if test="identifiers/identifier[string-length() &gt; 0]">
                     <xsl:for-each select="identifiers/identifier">
                         <idno type="{@type}">

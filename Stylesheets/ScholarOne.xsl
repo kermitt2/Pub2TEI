@@ -34,7 +34,6 @@
                     </titleStmt>
                     <xsl:if test="CopyrightInformation">
                         <publicationStmt>
-                            <!--authority>ISTEX</authority-->
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </publicationStmt>
                     </xsl:if>
@@ -78,14 +77,6 @@
                                 </xsl:call-template>
                                 <imprint>
 
-
-                                    <!--                                        <xsl:when test="$journalDescription">
-                                            <xsl:apply-templates
-                                                select="$journalDescription/tei:cell[@role='Publisher']"/>
-                                            <xsl:message>Corrected publisher: <xsl:value-of
-                                                  select="$journalDescription/tei:cell[@role='Publisher']"
-                                                /></xsl:message>
-                                        </xsl:when>-->
                                     <xsl:if
                                         test="journal/publisher_name and journal/publisher_name!=''">
                                         <xsl:apply-templates select="journal/publisher_name"/>

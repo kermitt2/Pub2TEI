@@ -34,7 +34,6 @@
                         </xsl:choose>
                     </titleStmt>
                     <publicationStmt>
-                        <!--authority>ISTEX</authority-->
                         <xsl:if test="//article/published[@type='subsyear']/journalref/publisher/orgname/nameelt">
                             <publisher>
                                 <xsl:value-of select="//article/published[@type='subsyear']/journalref/publisher/orgname/nameelt"/>

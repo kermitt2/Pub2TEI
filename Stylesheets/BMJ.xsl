@@ -22,7 +22,6 @@
                     </titleStmt>
                     <xsl:if test="miscinfo/copyright">
                         <publicationStmt>
-                            <!--authority>ISTEX</authority-->
                             <xsl:apply-templates select="miscinfo/copyright/*"/>
                         </publicationStmt>
                     </xsl:if>
