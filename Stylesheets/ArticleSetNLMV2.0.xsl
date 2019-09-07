@@ -26,10 +26,10 @@
         </xsl:variable>
         <xsl:variable name="journalDescription"
             select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>-->
-        <xsl:comment>
+        <!--xsl:comment>
             <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
-        </xsl:comment>
+        </xsl:comment-->
         <TEI>
             <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>

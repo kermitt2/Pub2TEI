@@ -8,10 +8,10 @@
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="edp-article">
-        <xsl:comment>
+        <!--xsl:comment>
             <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
-        </xsl:comment>
+        </xsl:comment-->
         <xsl:variable name="localISSN">
             <xsl:value-of select="journal-id/issn-paper"/>
         </xsl:variable>
