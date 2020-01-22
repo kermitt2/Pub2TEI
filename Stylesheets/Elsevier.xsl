@@ -2430,10 +2430,10 @@
     </xsl:variable>
 
     <xsl:template match="els1:article[els1:item-info] |els2:article[els2:item-info] | els1:converted-article[els1:item-info] | els2:converted-article[els2:item-info] | converted-article[item-info] | article[item-info]">
-        <xsl:comment>
+        <!--xsl:comment>
             <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
-        </xsl:comment>
+        </xsl:comment-->
         <TEI>
             <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>

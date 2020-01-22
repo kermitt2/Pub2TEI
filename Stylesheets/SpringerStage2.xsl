@@ -12,10 +12,10 @@
 
     <!-- TEI document structure, creation of main header components, front (summary), body, and back -->
     <xsl:template match="Article[ArticleInfo]">
-        <xsl:comment>
+        <!--xsl:comment>
             <xsl:text>Version 0.1 generated on </xsl:text>
             <xsl:value-of select="$datecreation"/>
-        </xsl:comment>
+        </xsl:comment-->
         <TEI>
             <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
