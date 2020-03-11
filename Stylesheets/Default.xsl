@@ -5,7 +5,7 @@
     xmlns:mml="http://www.w3.org/1998/Math/MathML" 
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" 
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
-    xmlns:wiley="http://www.wiley.com/namespaces/wiley/wiley"
+    xmlns:wiley="http://www.wiley.com/namespaces/wiley"
     exclude-result-prefixes="#all">
 
     <!-- Default rules -->
