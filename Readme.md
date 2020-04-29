@@ -49,7 +49,7 @@ The following publisher's formats should be properly processed:
 - Springer: metadata, header, bibliography, body
 - Wiley: metadata, header, bibliography, body
 
-Coverage of NLM and JATS should be comprehensive (all versions). 
+Coverage of NLM and JATS should be comprehensive (all versions), so covering also in particular PMC, PLOS and bioRxiv XML.  
 
 ## License
 
