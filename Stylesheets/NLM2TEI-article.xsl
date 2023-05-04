@@ -1020,7 +1020,7 @@
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
-                        <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(//permissions/license) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
+                        <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(//front//permissions/license) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
                             <availability>
                                 <xsl:if test="//permissions/license[@license-type='open-access']">
                                     <xsl:attribute name="status">free</xsl:attribute>
