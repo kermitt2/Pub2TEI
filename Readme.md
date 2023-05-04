@@ -36,7 +36,7 @@ For saxon, the option `-dtd:off` only applies to the XSLT part (the saxon part),
 
 2) be sure that the XML parser used by saxon does not try to fetch the DTD on the internet,
 
-The option `--parserFeature?uri=http%3A//apache.org/xml/features/nonvalidating/load-external-dtd:false` should prevent the parser to fetch the DTD (many thanks @superdude264 for the information https://github.com/kermitt2/Pub2TEI/issues/3 !)
+The option `--parserFeature?uri=http%3A//apache.org/xml/features/nonvalidating/load-external-dtd:false` should prevent the parser to fetch the DTD (many thanks [@superdude264](https://github.com/superdude264) for the information https://github.com/kermitt2/Pub2TEI/issues/3 !)
 
 3) the DTD declared in the source XML file should point locally to the file system.
 
