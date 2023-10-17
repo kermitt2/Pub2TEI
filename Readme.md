@@ -6,7 +6,7 @@ Note: the test XML documents present in the sub-directory ```Samples``` are dumm
 
 ## Requirement
 
-XSLT __2.0__ processor.
+The minimum requirement is an XSLT __2.0__ processor. For convenience, we package `saxon9he.jar` in the project.
 
 ## Usage
 
@@ -18,7 +18,7 @@ The resulting TEI documents follow a TEI custumisation documented under the sub-
 
 Here is a usage example with the Open Source Saxon 9 Home Edition (java). You can download more recent `saxon_he` versions [here](https://github.com/Saxonica/Saxon-HE) (for conveniency, one is included in the `Samples/` directory):
 
-> java -jar Samples/saxon9he.jar -s:Samples/TestPubInput/BMJ/bmj_sample.xml -xsl:Stylesheets/Publishers.xsl -o:out.tei.xml -dtd:off -a:off -expand:off --parserFeature?uri=http%3A//apache.org/xml/features/nonvalidating/load-external-dtd:false -t 
+> java -jar localLibs/saxon9he.jar -s:Samples/TestPubInput/BMJ/bmj_sample.xml -xsl:Stylesheets/Publishers.xsl -o:out.tei.xml -dtd:off -a:off -expand:off --parserFeature?uri=http%3A//apache.org/xml/features/nonvalidating/load-external-dtd:false -t 
 
 The command will apply the Pub2TEI style sheets to a NLM file and produce a TEI `out.tei.xml`. You can remove the `-t` option for not producing the trace information. 
 
@@ -70,7 +70,10 @@ Coverage of NLM and JATS should be comprehensive (all versions), so covering als
 
 ## License
 
-Pub2TEI is distributed under [BSD 2-clause](https://opensource.org/licenses/BSD-2-Clause) license. 
+Pub2TEI is distributed under Apache 2 license. 
+
+maintainer: 
+* __Patrice Lopez__, patrice.lopez@science-miner.com
 
 authors: 
 * __Laurent Romary__, Laurent.Romary@inria.fr
