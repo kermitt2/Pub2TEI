@@ -4,6 +4,8 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
 import org.pub2tei.document.XSLTProcessor;
+import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.main.GrobidHomeFinder;
 
 import org.glassfish.jersey.media.multipart.FormDataParam;
 import org.slf4j.Logger;
@@ -38,8 +40,6 @@ public class ServiceController implements Pub2TEIPaths {
     private static final String TEXT = "text";
     private static final String INPUT = "input";
 
-    private static final String SENTENCE_SEGMENTATION = "sentence";
-
     private static final String REFINE_AUTHORS = "refine_authors";
     private static final String REFINE_AFFILIATIONS = "refine_affiliations";
     private static final String REFINE_REFERENCES = "refine_references";
@@ -56,6 +56,11 @@ public class ServiceController implements Pub2TEIPaths {
         this.configuration = serviceConfiguration;
         // compile stylesheets at start
         XSLTProcessor.getInstance(this.configuration);
+        String grobidHomePath = this.configuration.getGrobidHome();
+        final GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(grobidHomePath));
+        grobidHomeFinder.findGrobidHomeOrFail();
+        GrobidProperties.getInstance(grobidHomeFinder);
+        GrobidProperties.setContextExecutionServer(true);
     }
 
     /**
@@ -71,25 +76,41 @@ public class ServiceController implements Pub2TEIPaths {
     @Path(PATH_TEXT)
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @POST
-    public Response processText_post(@FormParam(TEXT) String text) {
+    public Response processText_post(
+        @FormParam(TEXT) String text,
+        @FormParam("segmentSentences") String segmentSentences) {
         //LOGGER.debug(text); 
-        return ProcessString.processText(text, this.configuration);
+        boolean segment = validateGenerateIdParam(segmentSentences);
+        return ProcessString.processText(text, segment, this.configuration);
     }
 
     @Path(PATH_TEXT)
     @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
     @GET
-    public Response processText_get(@QueryParam(TEXT) String text) {
-        //LOGGER.info(text);
-        return ProcessString.processText(text, this.configuration);
+    public Response processText_get(
+            @QueryParam(TEXT) String text,
+            @QueryParam("segmentSentences") String segmentSentences) {
+        boolean segment = validateGenerateIdParam(segmentSentences);
+        return ProcessString.processText(text, segment, this.configuration);
     }
 
     @Path(PATH_XML)
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces("application/json")
     @POST
-    public Response processXML(@FormDataParam(INPUT) InputStream inputStream) {
-        return ProcessFile.processXML(inputStream, this.configuration);
+    public Response processXML(
+            @FormDataParam(INPUT) InputStream inputStream,
+            @FormDataParam("segmentSentences") String segmentSentences) {
+        boolean segment = validateGenerateIdParam(segmentSentences);
+        return ProcessFile.processXML(inputStream, segment, this.configuration);
+    }
+
+    private static boolean validateGenerateIdParam(String generateIDs) {
+        boolean generate = false;
+        if ((generateIDs != null) && (generateIDs.equals("1") || generateIDs.equals("true") || generateIDs.equals("True"))) {
+            generate = true;
+        }
+        return generate;
     }
 
 }

@@ -8,6 +8,7 @@ import org.pub2tei.document.DocumentProcessor;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
+import java.io.*;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -40,15 +41,26 @@ public class ProcessString {
      * @param text the raw string to process
      * @return a response object containing the structured xml representation 
      */
-    public static Response processText(String text, ServiceConfiguration serviceConfiguration) {
+    public static Response processText(String text, 
+                                    final boolean segmentSentences, 
+                                    ServiceConfiguration serviceConfiguration) {
         LOGGER.debug(methodLogIn());
         Response response = null;
-        StringBuilder retVal = new StringBuilder();
+
+        if (text == null || text.length() == 0) {
+            LOGGER.warn("Empty text input");
+            response = Response.status(Status.BAD_REQUEST).build();
+            LOGGER.debug(methodLogOut());
+            return response;
+        }
+
         try {
             LOGGER.debug(">> set raw text for stateless service'...");
             
-            
-            String retValString = retVal.toString();
+            DocumentProcessor documentProcessor = new DocumentProcessor(serviceConfiguration);
+            InputStream inputStream = new ByteArrayInputStream(text.getBytes());
+            String retValString = documentProcessor.processXML(inputStream, segmentSentences);
+
             if (!isResultOK(retValString)) {
                 response = Response.status(Status.NO_CONTENT).build();
             } else {

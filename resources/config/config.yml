@@ -1,6 +1,6 @@
 version: "0.2-SNAPSHOT"
 
-grobidHome: ../grobid-home
+grobidHome: ../grobid/grobid-home
 
 corpusPath: resources/dataset/
 tmpPath: tmp/

@@ -44,7 +44,7 @@ public class DocumentProcessor {
     /**
      * Process a TEI XML format
      */
-    public String processTEI(File file) throws IOException {
+    public String processTEI(File file, boolean segmentSentences) throws IOException {
         String tei = null;
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -54,7 +54,8 @@ public class DocumentProcessor {
             org.w3c.dom.Document document = builder.parse(file);
             org.w3c.dom.Element root = document.getDocumentElement();
 
-            XMLUtilities.segment(document, root);
+            if (segmentSentences)
+                XMLUtilities.segment(document, root);
 
             tei = XMLUtilities.serialize(document, null);
             tei = XMLUtilities.reformatTEI(tei);
@@ -74,17 +75,23 @@ public class DocumentProcessor {
     /**
      * Process a TEI XML format
      */
-    public String processTEI(String tei, boolean segment) throws IOException {
+    public String processTEI(String tei, boolean segmentSentences) throws IOException {
+        if (tei == null || tei.length() == 0)
+            return null;
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            factory.setNamespaceAware(true);
+            factory.setNamespaceAware(false);
             DocumentBuilder builder = factory.newDocumentBuilder();
             
             org.w3c.dom.Document document = builder.parse(new InputSource(new StringReader(tei))); 
             org.w3c.dom.Element root = document.getDocumentElement();
 
-            if (segment)
+            // change useless abstract/p/div/p into abstract/div/p allowed by Grobid TEI customization
+            XMLUtilities.fixAbstract(document, root);
+
+            if (segmentSentences) {
                 XMLUtilities.segment(document, root);
+            }
 
             tei = XMLUtilities.serialize(document, null);
             tei = XMLUtilities.reformatTEI(tei);
@@ -109,7 +116,7 @@ public class DocumentProcessor {
      * @return TEI string
      */
 
-    public String processXML(File file) throws Exception {
+    public String processXML(File file, boolean segmentSentences) throws Exception {
         InputStream inputStream = null;
         
         try {
@@ -118,33 +125,17 @@ public class DocumentProcessor {
             LOGGER.error("Invalid input file: " + file.getAbsolutePath(), e);
         }
 
-        return processXML(inputStream);
+        return processXML(inputStream, segmentSentences);
     }
 
-    public String processXML(InputStream inputStream) throws Exception {
-        /*File file = new File(filePath);
-        if (!file.exists())
-            return null;*/
-        //String fileName = file.getName();
-
+    public String processXML(InputStream inputStream, boolean segmentSentences) throws Exception {
         if (inputStream == null) 
             return null;
 
         String tei = null;
         try {
-            /*String tmpFilePath = this.configuration.getTmpPath();
-            newFilePath = XMLUtilities.applyPub2TEI(file.getAbsolutePath(), 
-                tmpFilePath + "/" + fileName.replace(".xml", ".tei.xml"), 
-                this.configuration.getStylesheetsPath());*/
-            //System.out.println(newFilePath);
-
             tei = this.pub2TEIProcessor.transform(inputStream);
-
-            /*DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            factory.setNamespaceAware(true);
-            DocumentBuilder builder = factory.newDocumentBuilder();*/
-            //tei = FileUtils.readFileToString(new File(newFilePath), UTF_8);
-
+            tei = processTEI(tei, segmentSentences);
         } catch (final Exception exp) {
             LOGGER.error("An error occured while processing the XML input stream", exp);
         } 
@@ -153,16 +144,16 @@ public class DocumentProcessor {
 
     /**
      * Tranform an publisher XML document (for example JATS) to a TEI document with a
-     * command line. This should not be used, except for test and benchmarking.
+     * command line. 
+     * 
+     * ** This should not be used, except for test and benchmarking. **
+     * 
      * Transformation of the XML/JATS/NLM/etc. document is realised thanks to Pub2TEI 
      * stylesheets
      * 
      * @return TEI string
      */
     public String processXMLCommandLine(File file) throws Exception {
-        /*File file = new File(filePath);
-        if (!file.exists())
-            return null;*/
         String fileName = file.getName();
         String tei = null;
         String newFilePath = null;

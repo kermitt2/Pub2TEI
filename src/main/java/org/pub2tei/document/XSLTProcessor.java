@@ -5,6 +5,7 @@ import org.pub2tei.service.ServiceConfiguration;
 import java.io.*;
 import net.sf.saxon.s9api.*;
 import net.sf.saxon.lib.FeatureKeys;
+import net.sf.saxon.serialize.MessageWarner;
 
 import org.w3c.dom.Document;
 import org.xml.sax.Attributes;
@@ -190,6 +191,7 @@ public class XSLTProcessor {
         out.setOutputProperty(Serializer.Property.INDENT, "yes");
         XsltTransformer t = compiledStyleSheets.load();
         // note: XsltTransformer is not thread safe, we have to create one per transformation and clean it
+        t.getUnderlyingController().setMessageEmitter(new MessageWarner());
 
         StringWriter sw = new StringWriter();
         try {

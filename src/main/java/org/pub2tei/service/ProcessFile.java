@@ -45,14 +45,17 @@ public class ProcessFile {
      * Uploads the origin XML, process it and return the extracted software mention objects in JSON.
      *
      * @param inputStream the data of origin XML
+     * @param segmentSentences     if true, return results with segmented sentences
      * @return a response object containing the converted/refined TEI XML
      */
-    public static Response processXML(final InputStream inputStream, ServiceConfiguration serviceConfiguration) {
+    public static Response processXML(final InputStream inputStream, 
+                                    final boolean segmentSentences,
+                                    ServiceConfiguration serviceConfiguration) {
         LOGGER.debug(methodLogIn()); 
         Response response = null;
         try {
             DocumentProcessor documentProcessor = new DocumentProcessor(serviceConfiguration);
-            String result = documentProcessor.processXML(inputStream);
+            String result = documentProcessor.processXML(inputStream, segmentSentences);
 
             if (result == null | result.length() == 0) {
                 response = Response.status(Response.Status.NO_CONTENT).build();
@@ -62,7 +65,7 @@ public class ProcessFile {
                         .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML + "; charset=UTF-8")
                         .build();
             }
-            
+
         } catch(Exception exp) {
             LOGGER.error("An unexpected exception occurs. ", exp);
             response = Response.status(Status.INTERNAL_SERVER_ERROR).entity(exp.getMessage()).build();

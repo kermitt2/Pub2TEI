@@ -66,6 +66,55 @@ public class XMLUtilities {
         }
     }
 
+    /**
+     * Change useless abstract/p/div/p into abstract/div/p allowed by Grobid TEI customization
+     **/
+    public static void fixAbstract(org.w3c.dom.Document doc, Node node) {
+        // find abstract element
+        try {
+            XPathFactory xpathFactory = XPathFactory.newInstance();
+            XPathExpression xpathExp = xpathFactory.newXPath().compile("//abstract/p/div/p");  
+            NodeList matchNodes = (NodeList) xpathExp.evaluate(doc, XPathConstants.NODESET);
+            if (matchNodes.getLength()>0) {
+                Node abstractNode = matchNodes.item(0).getParentNode().getParentNode().getParentNode();
+                NodeList abstractChildren = abstractNode.getChildNodes();
+                if (abstractChildren.getLength() == 0)
+                    return;
+
+                List<Node> abstractChildrenList = new ArrayList<>();
+                for (int j = 0; j < abstractChildren.getLength(); j++) {
+                    abstractChildrenList.add(abstractChildren.item(j));
+                }
+
+                for(int i=0; i<abstractChildrenList.size(); i++) {
+                    Node n = abstractChildrenList.get(i);
+                    if ( (n.getNodeType() != Node.ELEMENT_NODE) && 
+                         (n.getNodeName().equals("#text")) ) {
+                        abstractNode.removeChild(n);
+                    }
+                    else if ( (n.getNodeType() == Node.ELEMENT_NODE) && 
+                         (n.getNodeName().equals("p")) ) {
+                        NodeList pChildren = n.getChildNodes();
+                        if (pChildren.getLength() == 0) 
+                            continue;
+
+                        List<Node> pChildrenList = new ArrayList<>();
+                        for (int j = 0; j < pChildren.getLength(); j++) {
+                            pChildrenList.add(pChildren.item(j));
+                        }
+
+                        for(int j=0; j<pChildrenList.size(); j++) {
+                            abstractNode.appendChild(pChildrenList.get(j));
+                        }
+                        abstractNode.removeChild(n);
+                        //break;
+                    }
+                }
+            }
+        } catch(Exception ex) {
+            ex.printStackTrace();
+        }
+    }
 
     /**
      * Perform a sentence segmentation of a TEI XML document object. 
@@ -77,12 +126,18 @@ public class XMLUtilities {
      **/
     public static void segment(org.w3c.dom.Document doc, Node node) {
         final NodeList children = node.getChildNodes();
-        for (int i = 0; i < children.getLength(); i++) {
-            final Node n = children.item(i);
+        final int nbChildren = children.getLength();
+
+        List<Node> newChildren = new ArrayList<>();
+        for (int i = 0; i < nbChildren; i++) {
+            newChildren.add(children.item(i));
+        }
+
+        for (int i = 0; i < nbChildren; i++) {
+            final Node n = newChildren.get(i);
             if ( (n.getNodeType() == Node.ELEMENT_NODE) && 
                  (textualElements.contains(n.getNodeName())) ) {
                 // text content
-                //String text = n.getTextContent();
                 StringBuffer textBuffer = new StringBuffer();
                 NodeList childNodes = n.getChildNodes();
                 for(int y=0; y<childNodes.getLength(); y++) {
@@ -90,7 +145,6 @@ public class XMLUtilities {
                     textBuffer.append(" ");
                 }
                 String text = textBuffer.toString();
-                //String theSentences[] = detector.sentDetect(text);
                 List<OffsetPosition> theSentenceBoundaries = SentenceUtilities.getInstance().runSentenceDetection(text);
 
                 // we're making a first pass to ensure that there is no element broken by the segmentation
@@ -156,7 +210,7 @@ public class XMLUtilities {
 
                 // and add new ones
 
-                // if we have a figDesc, we need to inject div/p nodes for dataseer-ml support
+                // if we have a figDesc, we need to inject div/p nodes from something clean
                 if (n.getNodeName().equals("figDesc")) {
                     Element theDiv = doc.createElementNS("http://www.tei-c.org/ns/1.0", "div");
                     Element theP = doc.createElementNS("http://www.tei-c.org/ns/1.0", "p");
@@ -168,10 +222,10 @@ public class XMLUtilities {
                     for(Node theNode : newNodes) 
                         n.appendChild(theNode);
                 }
-
             } else if (n.getNodeType() == Node.ELEMENT_NODE) {
-                segment(doc, (Element) n);
-            }
+                //XMLUtilities.segment(doc, (Element) n);
+                XMLUtilities.segment(doc, n);
+            } 
         }
     }
 
@@ -300,9 +354,8 @@ public class XMLUtilities {
         tei = tei.replaceAll("</ref>\n( )*</p>", "</ref></p>");
         tei = tei.replaceAll("</ref>\n( )*<rs ", "</ref> <rs ");
         tei = tei.replaceAll("xmlns=\"\" ", "");
-        //tei = tei.replaceAll("        <ref type=\"bibr\">.*</ref>\n", "");
-        //tei = tei.replaceAll("<ref target=\"#b\\d+\" type=\"bibr\">", "<ref type=\"bibr\">");
-        //tei = tei.replaceAll("</rs>\n          </s>\n          <s>software", "</rs> software");
+        tei = tei.replace("<s xmlns=\"http://www.tei-c.org/ns/1.0\"", "<s");
+        tei = tei.replace("<div xmlns=\"http://www.tei-c.org/ns/1.0\"", "<div");
         return tei;
     }
 
