@@ -5,10 +5,10 @@ grobidHome: ../grobid-home
 corpusPath: resources/dataset/
 tmpPath: tmp/
 
-# path to Pub2TEI repository as available at https://github.com/kermitt2/Pub2TEI
-pub2teiPath: "../../Pub2TEI/"
+# path to Pub2TEI stylesheet repository as available at https://github.com/kermitt2/Pub2TEI under Stylesheets or to your custom one
+stylesheetsPath: "Stylesheets"
 
-# Limit the maximum number of requests
+# Limit the maximum number of requests, 0 means use the number of threads of the machine running the JVM
 maxParallelRequests: 0
 
 # CORS configuration for the web API service

@@ -10,6 +10,7 @@ public class ServiceConfiguration extends Configuration {
 
     private String grobidHome;
     private String tmpPath;
+    private String stylesheetsPath;
     private int maxParallelRequests;
 
     @JsonProperty
@@ -35,8 +36,12 @@ public class ServiceConfiguration extends Configuration {
         this.tmpPath = tmpPath;
     }
 
-    public String getPub2TEIPath() {
-        return System.getProperty("user.dir");
+    public String getStylesheetsPath() {
+        return this.stylesheetsPath;
+    }
+
+    public void setStylesheetsPath(String stylesheetsPath) {
+        this.stylesheetsPath = stylesheetsPath;
     }
 
     public int getMaxParallelRequests() {

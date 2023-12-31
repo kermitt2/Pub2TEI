@@ -222,9 +222,15 @@ public class XMLUtilities {
     }
 
     /**
-     * Apply a Pub2TEI transformation to an XML file to produce a TEI file.
+     * Apply a Pub2TEI transformation to an XML file to produce a TEI file via external command line.
+     * 
+     * -> This usage must be avoided due to very heavy additional loading/processing and warm-up. 
+     *    This method is for test and comparison.
+     * 
      * Input XML file must be a native XML publisher file supported by Pub2TEI.
      * Output the path to the transformed outputed file or null if the transformation failed.
+     * 
+     * For practical XSLT transformation, use the XSLTProcessor instance.
      */
     public static String applyPub2TEI(String inputFilePath, String outputFilePath, String pathToPub2TEI) {
         // we use an external command line for simplification (though it would be more elegant to 

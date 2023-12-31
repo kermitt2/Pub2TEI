@@ -33,8 +33,11 @@ public class DocumentProcessor {
 
     private ServiceConfiguration configuration;
 
+    private XSLTProcessor pub2TEIProcessor = null;
+
     public DocumentProcessor(ServiceConfiguration serviceConfiguration) {
         this.configuration = serviceConfiguration;
+        this.pub2TEIProcessor= XSLTProcessor.getInstance(serviceConfiguration);
     }
 
     /**
@@ -66,14 +69,80 @@ public class DocumentProcessor {
         return tei;
     }
 
+
     /**
-     * Tranform an publisher XML document (for example JATS) to a TEI document.
+     * Process a TEI XML format
+     */
+    public String processTEI(String tei, boolean segment) throws IOException {
+        try {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            factory.setNamespaceAware(true);
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            
+            org.w3c.dom.Document document = builder.parse(file);
+            org.w3c.dom.Element root = document.getDocumentElement();
+
+            if (segment)
+                XMLUtilities.segment(document, root);
+
+            tei = XMLUtilities.serialize(document, null);
+            tei = XMLUtilities.reformatTEI(tei);
+
+            //document.getDocumentElement().normalize();
+            //tei = restoreDomParserAttributeBug(tei); 
+
+        } catch (final Exception exp) {
+            logger.error("An error occured while processing the following XML file: "
+                + file.getPath(), exp);
+        } 
+
+        return tei;
+    }
+
+
+    /**
+     * Tranform an publisher XML document (for example JATS) to a TEI document using
+     * Saxon API.
+     * Transformation of the XML/JATS/NLM/etc document is realised thanks to compiled 
+     * Pub2TEI stylesheets.
+     * 
+     * @return TEI string
+     */
+    public String processXML(File file) throws Exception {
+        /*File file = new File(filePath);
+        if (!file.exists())
+            return null;*/
+        //String fileName = file.getName();
+        String tei = null;
+        try {
+            /*String tmpFilePath = this.configuration.getTmpPath();
+            newFilePath = XMLUtilities.applyPub2TEI(file.getAbsolutePath(), 
+                tmpFilePath + "/" + fileName.replace(".xml", ".tei.xml"), 
+                this.configuration.getStylesheetsPath());*/
+            //System.out.println(newFilePath);
+
+            tei = this.pub2TEIProcessor.transform(file);
+
+            /*DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            factory.setNamespaceAware(true);
+            DocumentBuilder builder = factory.newDocumentBuilder();*/
+            //tei = FileUtils.readFileToString(new File(newFilePath), UTF_8);
+
+        } catch (final Exception exp) {
+            logger.error("An error occured while processing the following XML file: " + file.getAbsolutePath(), exp);
+        } 
+        return tei;
+    }
+
+    /**
+     * Tranform an publisher XML document (for example JATS) to a TEI document with a
+     * command line. This should not be used, except for test and benchmarking.
      * Transformation of the XML/JATS/NLM/etc. document is realised thanks to Pub2TEI 
      * stylesheets
      * 
      * @return TEI string
      */
-    public String processXML(File file) throws Exception {
+    public String processXMLCommandLine(File file) throws Exception {
         /*File file = new File(filePath);
         if (!file.exists())
             return null;*/
@@ -84,7 +153,7 @@ public class DocumentProcessor {
             String tmpFilePath = this.configuration.getTmpPath();
             newFilePath = XMLUtilities.applyPub2TEI(file.getAbsolutePath(), 
                 tmpFilePath + "/" + fileName.replace(".xml", ".tei.xml"), 
-                this.configuration.getPub2TEIPath());
+                this.configuration.getStylesheetsPath());
             //System.out.println(newFilePath);
 
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

@@ -25,6 +25,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'com.github.johnrengelman.shadow'
 
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+import org.apache.tools.ant.taskdefs.condition.Os
 
 apply plugin: 'base'
 apply plugin: 'com.github.kt3k.coveralls'
@@ -87,7 +88,8 @@ dependencies {
     implementation "io.dropwizard.metrics:metrics-core:4.0.5"
     implementation "io.dropwizard.metrics:metrics-servlets:4.0.5"
 
-    implementation group: 'org.apache.logging.log4j', name: 'log4j-to-slf4j', version: '2.16.0'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
 
     implementation "com.rockymadden.stringmetric:stringmetric-core_2.10:0.27.3"
 
@@ -184,12 +186,29 @@ application {
     mainClassName = 'org.pub2tei.service.ServiceApplication'
 
     run {
+        def libraries = ""
+        if (Os.isFamily(Os.FAMILY_MAC)) {
+            if (Os.OS_ARCH.equals("aarch64")) {
+                libraries = "${file("../grobid/grobid-home/lib/mac_arm-64").absolutePath}"
+            } else {
+                libraries = "${file("../grobid/grobid-home/lib/mac-64").absolutePath}"
+            }
+        } else if (Os.isFamily(Os.FAMILY_UNIX)) {
+            libraries = "${file("../grobid/grobid-home/lib/lin-64/jep").absolutePath}:" +
+                "${file("../grobid-home/lib/lin-64").absolutePath}:"
+        } else  {
+            throw new RuntimeException("Unsupported platform!")
+        }
+
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
             jvmArgs "--add-opens", "java.base/java.lang=ALL-UNNAMED"
         }
         workingDir = rootProject.rootDir
         //def javaLibraryPath = "${System.getProperty('java.library.path')}:" + libraries
         //systemProperty "java.library.path", javaLibraryPath
+
+        def javaLibraryPath = "${System.getProperty('java.library.path')}:" + libraries
+        systemProperty "java.library.path", javaLibraryPath
 
         args = ['server', 'resources/config/config.yml']
     }
