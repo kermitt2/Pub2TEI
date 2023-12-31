@@ -948,8 +948,8 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
-                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            <xsl:attribute name="xsi:schemaLocation">
+                <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <xsl:if test="@xml:lang">
                 <xsl:choose>
@@ -1000,7 +1000,7 @@
                             </distributor>
                         </xsl:if>
                         <xsl:if test="front/article-meta/article-categories/subj-group[@subj-group-type='access-type']/compound-subject/compound-subject-part[@content-type='code']='access-type-free'">
-                            <availability status="free">
+                            <availability status="OpenAccess">
                                 <licence>Open Access</licence>
                             </availability>
                         </xsl:if>
@@ -1011,19 +1011,19 @@
                             <xsl:apply-templates select="front/article-meta/copyright-year"/>
                         </xsl:if>
                         <xsl:if test="front/article-meta/custom-meta-wrap/custom-meta[string(meta-name) = 'unlocked' and string(meta-value) = 'Yes']">
-                            <availability status="free">
+                            <availability status="OpenAccess">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
                         <xsl:if test="front/article-meta/open-access[string(.) = 'YES']">
-                            <availability status="free">
+                            <availability status="OpenAccess">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
                         <xsl:if test="normalize-space(front/article-meta/permissions/copyright-statement) or normalize-space(//front//permissions/license) or normalize-space(front/article-meta/permissions/copyright-holder) or pubfm/cpg/cpn">
                             <availability>
                                 <xsl:if test="//permissions/license[@license-type='open-access']">
-                                    <xsl:attribute name="status">free</xsl:attribute>
+                                    <xsl:attribute name="status">OpenAccess</xsl:attribute>
                                 </xsl:if>
                                 <xsl:apply-templates select="front/article-meta/permissions/copyright-statement"/>
                                 <xsl:apply-templates select="front/article-meta/permissions/copyright-holder | pubfm/cpg/cpn"/>
@@ -1474,12 +1474,12 @@
                                 <xsl:apply-templates select="front/article-meta/copyright-year | pubfm/cpg/cpy | suppfm/cpg/cpy"/>
                             </xsl:if>
                             <xsl:if test="front/article-meta/custom-meta-wrap/custom-meta[string(meta-name) = 'unlocked' and string(meta-value) = 'Yes']">
-                                <availability status="free">
+                                <availability status="OpenAccess">
                                     <p>Open Access</p>
                                 </availability>
                             </xsl:if>
                             <xsl:if test="front/article-meta/open-access[string(.) = 'YES']">
-                                <availability status="free">
+                                <availability status="OpenAccess">
                                     <p>Open Access</p>
                                 </availability>
                             </xsl:if>
@@ -2920,7 +2920,7 @@
             <xsl:if test="@license-type">
                 <xsl:attribute name="status">
                     <xsl:choose>
-                        <xsl:when test="@license-type = 'open-access'">free</xsl:when>
+                        <xsl:when test="@license-type = 'open-access'">OpenAccess</xsl:when>
                         <xsl:otherwise>
                             <xsl:value-of select="@license-type"/>
                         </xsl:otherwise>

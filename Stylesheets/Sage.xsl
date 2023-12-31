@@ -61,8 +61,8 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
-                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            <xsl:attribute name="xsi:schemaLocation">
+                <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <teiHeader>
                 <fileDesc>
@@ -83,7 +83,7 @@
                         <xsl:if test="header/art_info/access">
                             <availability>
                                 <xsl:if test="header/art_info/access[@type='free'] | header/art_info/access[@type='openaccess']">
-                                    <xsl:attribute name="status">free</xsl:attribute>
+                                    <xsl:attribute name="status">OpenAccess</xsl:attribute>
                                 </xsl:if>
                                 <xsl:if test="header/art_info/access[@type='creativecommons']">
                                     <xsl:attribute name="status">restricted</xsl:attribute>

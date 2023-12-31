@@ -40,8 +40,8 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
-                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            <xsl:attribute name="xsi:schemaLocation">
+                <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <teiHeader>
                 <fileDesc>
@@ -53,7 +53,7 @@
                         <xsl:apply-templates
                             select="Series/Book/descendant::Chapter/ChapterInfo/ChapterCopyright"/>
                         <xsl:if test="//ArticleGrants/BodyPDFGrant[string(@Grant)='OpenAccess']">
-                            <availability status="free">
+                            <availability status="OpenAccess">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
