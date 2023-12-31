@@ -3,6 +3,8 @@ package org.pub2tei.service;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
+import org.pub2tei.document.DocumentProcessor;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
@@ -38,7 +40,7 @@ public class ProcessString {
      * @param text the raw string to process
      * @return a response object containing the structured xml representation 
      */
-    public static Response processText(String text) {
+    public static Response processText(String text, ServiceConfiguration serviceConfiguration) {
         LOGGER.debug(methodLogIn());
         Response response = null;
         StringBuilder retVal = new StringBuilder();

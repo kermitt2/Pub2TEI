@@ -3,6 +3,8 @@ package org.pub2tei.service;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
+import org.pub2tei.document.XSLTProcessor;
+
 import org.glassfish.jersey.media.multipart.FormDataParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -52,6 +54,8 @@ public class ServiceController implements Pub2TEIPaths {
     @Inject
     public ServiceController(ServiceConfiguration serviceConfiguration) {
         this.configuration = serviceConfiguration;
+        // compile stylesheets at start
+        XSLTProcessor.getInstance(this.configuration);
     }
 
     /**
@@ -69,7 +73,7 @@ public class ServiceController implements Pub2TEIPaths {
     @POST
     public Response processText_post(@FormParam(TEXT) String text) {
         //LOGGER.debug(text); 
-        return ProcessString.processText(text);
+        return ProcessString.processText(text, this.configuration);
     }
 
     @Path(PATH_TEXT)
@@ -77,7 +81,7 @@ public class ServiceController implements Pub2TEIPaths {
     @GET
     public Response processText_get(@QueryParam(TEXT) String text) {
         //LOGGER.info(text);
-        return ProcessString.processText(text);
+        return ProcessString.processText(text, this.configuration);
     }
 
     @Path(PATH_XML)
@@ -85,7 +89,7 @@ public class ServiceController implements Pub2TEIPaths {
     @Produces("application/json")
     @POST
     public Response processXML(@FormDataParam(INPUT) InputStream inputStream) {
-        return ProcessFile.processXML(inputStream);
+        return ProcessFile.processXML(inputStream, this.configuration);
     }
 
 }

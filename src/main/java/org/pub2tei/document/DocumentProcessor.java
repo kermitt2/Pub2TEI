@@ -5,6 +5,7 @@ import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.xpath.*;
 
@@ -29,7 +30,7 @@ import org.slf4j.LoggerFactory;
  */
 public class DocumentProcessor {
 
-    private static final Logger logger = LoggerFactory.getLogger(DocumentProcessor.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DocumentProcessor.class);
 
     private ServiceConfiguration configuration;
 
@@ -62,7 +63,7 @@ public class DocumentProcessor {
             //tei = restoreDomParserAttributeBug(tei); 
 
         } catch (final Exception exp) {
-            logger.error("An error occured while processing the following XML file: "
+            LOGGER.error("An error occured while processing the following XML file: "
                 + file.getPath(), exp);
         } 
 
@@ -79,7 +80,7 @@ public class DocumentProcessor {
             factory.setNamespaceAware(true);
             DocumentBuilder builder = factory.newDocumentBuilder();
             
-            org.w3c.dom.Document document = builder.parse(file);
+            org.w3c.dom.Document document = builder.parse(new InputSource(new StringReader(tei))); 
             org.w3c.dom.Element root = document.getDocumentElement();
 
             if (segment)
@@ -92,9 +93,8 @@ public class DocumentProcessor {
             //tei = restoreDomParserAttributeBug(tei); 
 
         } catch (final Exception exp) {
-            logger.error("An error occured while processing the following XML file: "
-                + file.getPath(), exp);
-        } 
+            LOGGER.error("An error occured while processing the tei document", exp);
+        }
 
         return tei;
     }
@@ -108,11 +108,28 @@ public class DocumentProcessor {
      * 
      * @return TEI string
      */
+
     public String processXML(File file) throws Exception {
+        InputStream inputStream = null;
+        
+        try {
+            inputStream = new FileInputStream(file);
+        } catch(FileNotFoundException e) {
+            LOGGER.error("Invalid input file: " + file.getAbsolutePath(), e);
+        }
+
+        return processXML(inputStream);
+    }
+
+    public String processXML(InputStream inputStream) throws Exception {
         /*File file = new File(filePath);
         if (!file.exists())
             return null;*/
         //String fileName = file.getName();
+
+        if (inputStream == null) 
+            return null;
+
         String tei = null;
         try {
             /*String tmpFilePath = this.configuration.getTmpPath();
@@ -121,7 +138,7 @@ public class DocumentProcessor {
                 this.configuration.getStylesheetsPath());*/
             //System.out.println(newFilePath);
 
-            tei = this.pub2TEIProcessor.transform(file);
+            tei = this.pub2TEIProcessor.transform(inputStream);
 
             /*DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(true);
@@ -129,7 +146,7 @@ public class DocumentProcessor {
             //tei = FileUtils.readFileToString(new File(newFilePath), UTF_8);
 
         } catch (final Exception exp) {
-            logger.error("An error occured while processing the following XML file: " + file.getAbsolutePath(), exp);
+            LOGGER.error("An error occured while processing the XML input stream", exp);
         } 
         return tei;
     }
@@ -162,7 +179,7 @@ public class DocumentProcessor {
             tei = FileUtils.readFileToString(new File(newFilePath), UTF_8);
 
         } catch (final Exception exp) {
-            logger.error("An error occured while processing the following XML file: " + file.getAbsolutePath(), exp);
+            LOGGER.error("An error occured while processing the following XML file: " + file.getAbsolutePath(), exp);
         } finally {
             if (newFilePath != null) {
                 File newFile = new File(newFilePath);
@@ -192,7 +209,7 @@ public class DocumentProcessor {
         String tmpFilePath;
         if (pGbdArgs.getPath2Input() == null) {
             tmpFilePath = new File(".").getAbsolutePath();
-            logger.info("No path set for the input directory. Using: " + tmpFilePath);
+            LOGGER.info("No path set for the input directory. Using: " + tmpFilePath);
             pGbdArgs.setPath2Input(tmpFilePath);
         }
     }
@@ -206,7 +223,7 @@ public class DocumentProcessor {
         String tmpFilePath;
         if (pGbdArgs.getPath2Output() == null) {
             tmpFilePath = new File(".").getAbsolutePath();
-            logger.info("No path set for the output directory. Using: " + tmpFilePath);
+            LOGGER.info("No path set for the output directory. Using: " + tmpFilePath);
             pGbdArgs.setPath2Output(tmpFilePath);
         }
     }

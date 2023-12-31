@@ -5,10 +5,18 @@ import com.google.inject.Singleton;
 
 import org.apache.commons.lang3.StringUtils;
 
+import org.pub2tei.document.DocumentProcessor;
+
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.StreamingOutput;
+
+/*import jakarta.ws.rs.core.HttpHeaders;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.Status;*/
 
 import java.io.*;
 import java.nio.charset.Charset;
@@ -39,12 +47,28 @@ public class ProcessFile {
      * @param inputStream the data of origin XML
      * @return a response object containing the converted/refined TEI XML
      */
-    public static Response processXML(final InputStream inputStream) {
+    public static Response processXML(final InputStream inputStream, ServiceConfiguration serviceConfiguration) {
         LOGGER.debug(methodLogIn()); 
         Response response = null;
-        File originFile = null;
+        try {
+            DocumentProcessor documentProcessor = new DocumentProcessor(serviceConfiguration);
+            String result = documentProcessor.processXML(inputStream);
 
+            if (result == null | result.length() == 0) {
+                response = Response.status(Response.Status.NO_CONTENT).build();
+            } else {
+                response = Response.status(Response.Status.OK)
+                        .entity(result)
+                        .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_XML + "; charset=UTF-8")
+                        .build();
+            }
+            
+        } catch(Exception exp) {
+            LOGGER.error("An unexpected exception occurs. ", exp);
+            response = Response.status(Status.INTERNAL_SERVER_ERROR).entity(exp.getMessage()).build();
+        }
 
+        LOGGER.debug(methodLogOut());
         return response;
     }
 

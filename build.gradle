@@ -57,6 +57,13 @@ processResources {
     }
 }
 
+configurations {
+    all*.exclude group: 'org.slf4j', module: "slf4j-log4j12"
+    all*.exclude group: 'org.slf4j', module: "slf4j-jdk14"
+    all*.exclude group: 'log4j', module: "log4j"
+    implementation.setCanBeResolved(true)
+}
+
 task install(dependsOn: installShadowDist)
 
 dependencies {

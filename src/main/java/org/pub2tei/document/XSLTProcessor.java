@@ -77,7 +77,7 @@ public class XSLTProcessor {
 
         // do not validate input document
         proc.setConfigurationProperty(FeatureKeys.DTD_VALIDATION, false);
-        proc.setConfigurationProperty(FeatureKeys.SCHEMA_VALIDATION, false);
+        //proc.setConfigurationProperty(FeatureKeys.SCHEMA_VALIDATION, 1); // 1 is None
         proc.setConfigurationProperty(FeatureKeys.XSLT_SCHEMA_AWARE, false);
         proc.setConfigurationProperty(FeatureKeys.XQUERY_SCHEMA_AWARE, false);
 
@@ -163,11 +163,27 @@ public class XSLTProcessor {
     /**
      * XSLT transformation from XML file to string
      **/
+
     public String transform(File inputFile) {
         if (inputFile == null || !inputFile.exists() || inputFile.isDirectory()) {
             LOGGER.error("Input file is invalid");
             return null;
         }
+
+        InputStream inputStream = null;
+
+        try {
+            inputStream = new FileInputStream(inputFile);
+        } catch(FileNotFoundException e) {
+            LOGGER.error("Invalid input file: " + inputFile.getAbsolutePath(), e);
+        }
+
+        return transform(inputStream);
+    }
+
+    public String transform(InputStream inputStream) {
+        if (inputStream == null)
+            return null;
 
         Serializer out = new Serializer();
         out.setOutputProperty(Serializer.Property.METHOD, "xml");
@@ -177,7 +193,7 @@ public class XSLTProcessor {
 
         StringWriter sw = new StringWriter();
         try {
-            XdmNode source = this.proc.newDocumentBuilder().build(new StreamSource(inputFile));
+            XdmNode source = this.proc.newDocumentBuilder().build(new StreamSource(inputStream));
             out.setOutputWriter(sw);
             t.setInitialContextNode(source);
             t.setDestination(out);
