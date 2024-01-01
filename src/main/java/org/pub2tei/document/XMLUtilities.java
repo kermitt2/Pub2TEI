@@ -156,8 +156,8 @@ public class XMLUtilities {
                 List<OffsetPosition> theSentenceBoundaries = SentenceUtilities.getInstance().runSentenceDetection(text);
 
                 // we're making a first pass to ensure that there is no element broken by the segmentation
-                List<String> sentences = new ArrayList<String>();
-                List<String> toConcatenate = new ArrayList<String>();
+                List<String> sentences = new ArrayList<>();
+                List<String> toConcatenate = new ArrayList<>();
                 for(OffsetPosition sentPos : theSentenceBoundaries) {
                     //System.out.println("new chunk: " + sent);
                     String sent = text.substring(sentPos.start, sentPos.end);
@@ -183,11 +183,11 @@ public class XMLUtilities {
                         toConcatenate.add(sent);
                     else {
                         sentences.add(fullSent);
-                        toConcatenate = new ArrayList<String>();
+                        toConcatenate = new ArrayList<>();
                     }
                 }
 
-                List<Node> newNodes = new ArrayList<Node>();
+                List<Node> newNodes = new ArrayList<>();
                 for(String sent : sentences) {
                     //System.out.println("-----------------");
                     sent = sent.replace("\n", " ");
@@ -208,7 +208,7 @@ public class XMLUtilities {
                         newNodes.add(newNode);
                         //System.out.println(serialize(doc, newNode));
                     } catch(Exception e) {
-
+                        LOGGER.error("Problem for segmented sentence XML element creation", e);
                     }
                 }
 
@@ -449,6 +449,8 @@ public class XMLUtilities {
         tei = tei.replaceAll("xml:id=\"\" ", "");
         tei = tei.replace("<s xmlns=\"http://www.tei-c.org/ns/1.0\"", "<s");
         tei = tei.replace("<div xmlns=\"http://www.tei-c.org/ns/1.0\"", "<div");
+        tei = tei.replace("<note xmlns=\"http://www.tei-c.org/ns/1.0\"", "<note");
+        tei = tei.replace("<label xmlns=\"http://www.tei-c.org/ns/1.0\"", "<label");
         return tei;
     }
 

@@ -43,6 +43,7 @@ public class ProcessString {
      */
     public static Response processText(String text, 
                                     final boolean segmentSentences, 
+                                    final boolean refine, 
                                     ServiceConfiguration serviceConfiguration) {
         LOGGER.debug(methodLogIn());
         Response response = null;
@@ -59,7 +60,7 @@ public class ProcessString {
             
             DocumentProcessor documentProcessor = new DocumentProcessor(serviceConfiguration);
             InputStream inputStream = new ByteArrayInputStream(text.getBytes());
-            String retValString = documentProcessor.processXML(inputStream, segmentSentences);
+            String retValString = documentProcessor.processXML(inputStream, segmentSentences, refine);
 
             if (!isResultOK(retValString)) {
                 response = Response.status(Status.NO_CONTENT).build();

@@ -44,7 +44,7 @@ public class DocumentProcessor {
     /**
      * Process a TEI XML format
      */
-    public String processTEI(File file, boolean segmentSentences) throws IOException {
+    public String processTEI(File file, boolean segmentSentences, boolean refine) throws IOException {
         String tei = null;
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -64,6 +64,13 @@ public class DocumentProcessor {
                 XMLUtilities.segment(document, root);
             }
 
+            if (refine) {
+                // in case we have raw fields that can be further refined (like raw affiliation string,
+                // raw reference string, etc.), use Grobid to add some parsed sub-structures together 
+                // with the raw ones
+                GrobidHelper.refineWithGrobid(document);
+            }
+
             tei = XMLUtilities.serialize(document, null);
             tei = XMLUtilities.reformatTEI(tei);
 
@@ -81,7 +88,7 @@ public class DocumentProcessor {
     /**
      * Process a TEI XML format
      */
-    public String processTEI(String tei, boolean segmentSentences) throws IOException {
+    public String processTEI(String tei, boolean segmentSentences, boolean refine) throws IOException {
         if (tei == null || tei.length() == 0)
             return null;
         try {
@@ -100,6 +107,13 @@ public class DocumentProcessor {
             if (segmentSentences) {
                 org.w3c.dom.Element root = document.getDocumentElement();
                 XMLUtilities.segment(document, root);
+            }
+
+            if (refine) {
+                // in case we have raw fields that can be further refined (like raw affiliation string,
+                // raw reference string, etc.), use Grobid to add some parsed sub-structures together 
+                // with the raw ones
+                GrobidHelper.refineWithGrobid(document);
             }
 
             tei = XMLUtilities.serialize(document, null);
@@ -125,7 +139,7 @@ public class DocumentProcessor {
      * @return TEI string
      */
 
-    public String processXML(File file, boolean segmentSentences) throws Exception {
+    public String processXML(File file, boolean segmentSentences, boolean refine) throws Exception {
         InputStream inputStream = null;
         
         try {
@@ -134,17 +148,17 @@ public class DocumentProcessor {
             LOGGER.error("Invalid input file: " + file.getAbsolutePath(), e);
         }
 
-        return processXML(inputStream, segmentSentences);
+        return processXML(inputStream, segmentSentences, refine);
     }
 
-    public String processXML(InputStream inputStream, boolean segmentSentences) throws Exception {
+    public String processXML(InputStream inputStream, boolean segmentSentences, boolean refine) throws Exception {
         if (inputStream == null) 
             return null;
 
         String tei = null;
         try {
             tei = this.pub2TEIProcessor.transform(inputStream);
-            tei = processTEI(tei, segmentSentences);
+            tei = processTEI(tei, segmentSentences, refine);
         } catch (final Exception exp) {
             LOGGER.error("An error occured while processing the XML input stream", exp);
         } 
@@ -171,8 +185,7 @@ public class DocumentProcessor {
             newFilePath = XMLUtilities.applyPub2TEI(file.getAbsolutePath(), 
                 tmpFilePath + "/" + fileName.replace(".xml", ".tei.xml"), 
                 this.configuration.getStylesheetsPath());
-            //System.out.println(newFilePath);
-
+            
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(true);
             DocumentBuilder builder = factory.newDocumentBuilder();
