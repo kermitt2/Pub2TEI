@@ -2776,11 +2776,22 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
+    <!-- PL make the back app-group cleaner -->
     <xsl:template match="back/app-group">
+        <div type="app-group">
+            <head>
+                <xsl:value-of select="app/title"/>
+            </head>
+            <xsl:apply-templates select="app/*[not(self::title)]"/>
+        </div>
+    </xsl:template>
+
+    <!--xsl:template match="back/app-group">
         <div type="app-group">
             <xsl:apply-templates/>
         </div>
-    </xsl:template>
+    </xsl:template-->
 
     <xsl:template match="app-group/app">
         <p>

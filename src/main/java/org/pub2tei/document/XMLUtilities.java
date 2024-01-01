@@ -9,6 +9,8 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.xpath.*;
 
+import net.sf.saxon.om.NameChecker;
+
 import org.w3c.dom.*;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -125,6 +127,10 @@ public class XMLUtilities {
      * Currently the choices are a slightly improved Pragmatic Segmenter (higher quality 
      * more languages supported, but slower) and the OpenNLP sentence segmenter (very fast, 
      * lower quality, and designed for English only).
+     * 
+     * Note: we should probably avoid recursion for visiting the document nodes to be 
+     * memory friendly.
+     * 
      **/
     public static void segment(org.w3c.dom.Document doc, Node node) {
         final NodeList children = node.getChildNodes();
@@ -385,7 +391,45 @@ public class XMLUtilities {
                 }
             }
         } catch(Exception e) {
-            LOGGER.error("Post-processing for fixing attribute values failed", e);
+            LOGGER.error("Post-processing for fixing duplicated attribute values failed", e);
+        }
+
+        try {
+            // avoid recursion for visiting document nodes to be memory friendly
+            NodeList nodeList = doc.getElementsByTagName("*");
+            for (int i = 0; i < nodeList.getLength(); i++) {
+                Node node = nodeList.item(i);
+                if (node.getNodeType() == Node.ELEMENT_NODE) {
+                    // visit attributes
+                    NamedNodeMap attributesMap = node.getAttributes();
+                    for (int j=attributesMap.getLength()-1; j>=0; j--) {
+                        Node attr = attributesMap.item(j);
+
+                        String attributeValue = attr.getNodeValue();
+
+                        // if attribute value is empty, we remove the attribute
+                        if (attributeValue == null || attributeValue.trim().length() == 0) {
+                            org.w3c.dom.Element element = (Element) node; 
+                            element.removeAttribute(attr.getNodeName());
+                        } else if (!NameChecker.isValidNCName(attributeValue)) {
+                            // NCName well-formedness
+                            
+                            // try a fix for usual digit related error
+                            if (NameChecker.isValidNCName("_"+attributeValue)) {
+                                // fix attribute value if required
+                                org.w3c.dom.Element element = (Element) node; 
+                                element.setAttribute(attr.getNodeName(), "_"+attributeValue);
+                            } else {
+                                // else we remove the attribute to prevent parsing errors
+                                org.w3c.dom.Element element = (Element) node; 
+                                element.removeAttribute(attr.getNodeName());
+                            }
+                        }
+                    }                    
+                }
+            }
+        } catch(Exception e) {
+            LOGGER.error("Post-processing for fixing non-NCName attribute values failed", e);
         }
     }
 
