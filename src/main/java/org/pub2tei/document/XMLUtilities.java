@@ -26,7 +26,7 @@ import org.slf4j.LoggerFactory;
  */
 public class XMLUtilities {
 
-    private static final Logger logger = LoggerFactory.getLogger(XMLUtilities.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(XMLUtilities.class);
 
     private static List<String> textualElements = Arrays.asList("p", "figDesc");
 
@@ -69,7 +69,7 @@ public class XMLUtilities {
     /**
      * Change useless abstract/p/div/p into abstract/div/p allowed by Grobid TEI customization
      **/
-    public static void fixAbstract(org.w3c.dom.Document doc, Node node) {
+    public static void fixAbstract(org.w3c.dom.Document doc) {
         // find abstract element
         try {
             XPathFactory xpathFactory = XPathFactory.newInstance();
@@ -112,17 +112,19 @@ public class XMLUtilities {
                 }
             }
         } catch(Exception ex) {
-            ex.printStackTrace();
+            LOGGER.error("abstract post processing failed", ex);
         }
     }
 
     /**
      * Perform a sentence segmentation of a TEI XML document object. 
+     * 
      * The sentence segmenter to be used is the one defined in the Grobid configuration
-     * file. 
-     * Currently the choices are a slightly improved Pragmatic Segmenter (more languages supported, 
-     * more reliable, but slower) and the OpenNLP sentence segmenter (very fast, but only 
-     * good for English).
+     * file present in the Grobid home indicated by the Pub2TEI configuration. 
+     * 
+     * Currently the choices are a slightly improved Pragmatic Segmenter (higher quality 
+     * more languages supported, but slower) and the OpenNLP sentence segmenter (very fast, 
+     * lower quality, and designed for English only).
      **/
     public static void segment(org.w3c.dom.Document doc, Node node) {
         final NodeList children = node.getChildNodes();
@@ -230,7 +232,7 @@ public class XMLUtilities {
     }
 
     public static String serialize(org.w3c.dom.Document doc, Node node) {
-        // to avoid issues with space reamining from deleted nodes
+        // to avoid issues with space remaining from deleted nodes
         try {
             XPathFactory xpathFactory = XPathFactory.newInstance();
             // XPath to find empty text nodes.
@@ -278,6 +280,8 @@ public class XMLUtilities {
     /**
      * Apply a Pub2TEI transformation to an XML file to produce a TEI file via external command line.
      * 
+     * ** This should not be used, except for test and benchmarking. **
+     * 
      * -> This usage must be avoided due to very heavy additional loading/processing and warm-up. 
      *    This method is for test and comparison.
      * 
@@ -287,9 +291,10 @@ public class XMLUtilities {
      * For practical XSLT transformation, use the XSLTProcessor instance.
      */
     public static String applyPub2TEI(String inputFilePath, String outputFilePath, String pathToPub2TEI) {
-        // we use an external command line for simplification (though it would be more elegant to 
-        // stay in the current VM)
-        // java -jar Samples/saxon9he.jar -s:/mnt/data/resources/plos/0/ -xsl:Stylesheets/Publishers.xsl -o:/mnt/data/resources/plos/0/tei/ -dtd:off -a:off -expand:off -t
+        // Use an external command line, example: 
+        // java -jar Samples/saxon9he.jar -s:/mnt/data/resources/plos/0/ -xsl:Stylesheets/Publishers.xsl 
+        // -o:/mnt/data/resources/plos/0/tei/ -dtd:off -a:off -expand:off 
+        // --parserFeature?uri=http%3A//apache.org/xml/features/nonvalidating/load-external-dtd:false -t
 
         // remove first the DTD declaration from the input nlm/jats XML because all these shitty xml mechanisms break 
         // the process at one point or another or keep looking for something over the internet 
@@ -298,7 +303,7 @@ public class XMLUtilities {
             xmlContent = xmlContent.replaceAll("<!DOCTYPE((.|\n|\r)*?)\">", ""); 
             FileUtils.writeStringToFile(new File(inputFilePath), xmlContent, "UTF-8");
         } catch(IOException e) {
-            logger.error("Fail to preprocess the XML file to be transformed", e);
+            LOGGER.error("Fail to preprocess the XML file to be transformed", e);
         }
 
         ProcessBuilder processBuilder = new ProcessBuilder(); 
@@ -342,7 +347,50 @@ public class XMLUtilities {
         return outputFilePath;
     }
 
+    /**
+     * Correct duplicated xml:id in a document. This happens usually under author level 
+     * when affiliations and/or notes are copied several times for several authors. 
+     * 
+     * Fix attribute values not valid ncname. Note: not sure it reach the point where 
+     * we have a parsed XML Document, so it might then be handled at string level :/
+     **/
+    public static void fixDuplicatedXMLIDAndNCName(org.w3c.dom.Document doc) {
+        // collect xml:id and check for duplicate
+        List<String> xmlIdentifiers = new ArrayList<>();
+        List<String> dulicatedXmlIdentifiers = new ArrayList<>();
+
+        XPathFactory xpathFactory = XPathFactory.newInstance();
+
+        try {
+            XPathExpression xpathExp = xpathFactory.newXPath().compile("//@id");  
+            NodeList matchNodes = (NodeList) xpathExp.evaluate(doc, XPathConstants.NODESET);
+            for(int i=0; i<matchNodes.getLength(); i++) {
+                if (xmlIdentifiers.contains(matchNodes.item(i).getNodeValue()))
+                    dulicatedXmlIdentifiers.add(matchNodes.item(i).getNodeValue());
+                else
+                    xmlIdentifiers.add(matchNodes.item(i).getNodeValue());
+            }
+
+            // if duplicate, fix the value
+            if (dulicatedXmlIdentifiers.size() >0) {
+                for(String value : dulicatedXmlIdentifiers) {
+                    xpathExp = xpathFactory.newXPath().compile("//*[@id='" + value + "']");  
+                    matchNodes = (NodeList) xpathExp.evaluate(doc, XPathConstants.NODESET);
+                    for(int i=0; i<matchNodes.getLength(); i++) {
+                        if (i>0) {
+                            org.w3c.dom.Element element = (Element) matchNodes.item(i); 
+                            element.setAttribute("xml:id", value+"_"+(i+1));
+                        }
+                    }
+                }
+            }
+        } catch(Exception e) {
+            LOGGER.error("Post-processing for fixing attribute values failed", e);
+        }
+    }
+
     public static String reformatTEI(String tei) {
+        // TODO: write and compile a single regular expression
         tei = tei.replaceAll("\"\n( )*", "\" ");
         tei = tei.replaceAll("<p>\n( )*<ref", "<p><ref");
         tei = tei.replaceAll("<p>\n( )*<rs", "<p><rs");
@@ -354,6 +402,7 @@ public class XMLUtilities {
         tei = tei.replaceAll("</ref>\n( )*</p>", "</ref></p>");
         tei = tei.replaceAll("</ref>\n( )*<rs ", "</ref> <rs ");
         tei = tei.replaceAll("xmlns=\"\" ", "");
+        tei = tei.replaceAll("xml:id=\"\" ", "");
         tei = tei.replace("<s xmlns=\"http://www.tei-c.org/ns/1.0\"", "<s");
         tei = tei.replace("<div xmlns=\"http://www.tei-c.org/ns/1.0\"", "<div");
         return tei;

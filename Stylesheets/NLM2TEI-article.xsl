@@ -1863,10 +1863,10 @@
             </xsl:if>
             <!-- affiliation -->
             <xsl:choose>
-                <!-- SG - cas quand les liens auteurs/affiliations sont définis dans <super> ex: nature_headerx_315773a0.xml -->
+                <!-- SG - case links authors/affiliations are defined in the element, ex: nature_headerx_315773a0.xml -->
                 <xsl:when test="super">
                     <xsl:for-each select="super">
-                        <!-- SG: nettoyage de la balise <super> polluant l'affiliation, ne prendre que le texte -->
+                        <!-- SG: removing element <super> and keep only text content -->
                         <xsl:variable name="super">
                             <xsl:value-of select="//aff[super = current()/.]/text()"/>
                         </xsl:variable>
@@ -1879,7 +1879,7 @@
                         </xsl:choose>
                     </xsl:for-each>
                 </xsl:when>
-                <!-- SG - cas quand les affiliations n'ont pas de liens auteurs/affiliations définis explicitement ex: nature_headerx_315736a0.xml -->
+                <!-- SG - case no explicit authors/affiliations links, ex: nature_headerx_315736a0.xml -->
                 <xsl:when test="../aff/org and not(../aff/oid)">
                     <xsl:apply-templates select="../aff" mode="sourceDesc"/>
                 </xsl:when>
@@ -1902,7 +1902,7 @@
             </xsl:if>
         </author>
     </xsl:template>
-    <!--SG: reprise biographie des auteurs -->
+    <!--SG: authors biography -->
     <xsl:template match="bio">
         <state>
             <xsl:attribute name="type">biography</xsl:attribute>

@@ -52,10 +52,17 @@ public class DocumentProcessor {
             DocumentBuilder builder = factory.newDocumentBuilder();
             
             org.w3c.dom.Document document = builder.parse(file);
-            org.w3c.dom.Element root = document.getDocumentElement();
+            
+            // change useless abstract/p/div/p into abstract/div/p allowed by Grobid TEI customization
+            XMLUtilities.fixAbstract(document);
 
-            if (segmentSentences)
+            // fix for problematic attribute values
+            XMLUtilities.fixDuplicatedXMLIDAndNCName(document);
+
+            if (segmentSentences) {
+                org.w3c.dom.Element root = document.getDocumentElement();
                 XMLUtilities.segment(document, root);
+            }
 
             tei = XMLUtilities.serialize(document, null);
             tei = XMLUtilities.reformatTEI(tei);
@@ -64,8 +71,7 @@ public class DocumentProcessor {
             //tei = restoreDomParserAttributeBug(tei); 
 
         } catch (final Exception exp) {
-            LOGGER.error("An error occured while processing the following XML file: "
-                + file.getPath(), exp);
+            LOGGER.error("An error occured while processing the following XML file: " + file.getPath(), exp);
         } 
 
         return tei;
@@ -84,12 +90,15 @@ public class DocumentProcessor {
             DocumentBuilder builder = factory.newDocumentBuilder();
             
             org.w3c.dom.Document document = builder.parse(new InputSource(new StringReader(tei))); 
-            org.w3c.dom.Element root = document.getDocumentElement();
-
+            
             // change useless abstract/p/div/p into abstract/div/p allowed by Grobid TEI customization
-            XMLUtilities.fixAbstract(document, root);
+            XMLUtilities.fixAbstract(document);
+
+            // fix for problematic attribute values
+            XMLUtilities.fixDuplicatedXMLIDAndNCName(document);
 
             if (segmentSentences) {
+                org.w3c.dom.Element root = document.getDocumentElement();
                 XMLUtilities.segment(document, root);
             }
 
