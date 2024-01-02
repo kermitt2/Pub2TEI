@@ -50,7 +50,7 @@ The simplest way to run the converter is to use the __docker image__ and the web
 Start the Pub2TEI service as follow:
 
 ```console
-docker run --rm --gpus all --init --ulimit core=0 -p 8060:8060 grobid/Pub2TEI:0.2
+docker run --rm --gpus all --init --ulimit core=0 -p 8060:8060 grobid/pub2tei:0.2
 ```
 
 ### Web services
@@ -121,7 +121,7 @@ By default, the server uses port `:8060`, this can be changed in the configurati
 From a local deployment, under the project repository `Pub2TEI/`: 
 
 ```console
-docker build -t grobid/Pub2TEI:0.2 --build-arg PUB2TEI_VERSION=0.2 --file Dockerfile .
+docker build -t grobid/pub2tei:0.2 --build-arg PUB2TEI_VERSION=0.2 --file Dockerfile .
 ```
 
 ## Only using the stylesheets

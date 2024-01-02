@@ -4,8 +4,8 @@
 FROM grobid/grobid:0.8.0
 
 WORKDIR /opt/Pub2TEI
-COPY * ./
-RUN ./gradlew clean install--no-daemon  --info --stacktrace
+COPY . .
+RUN ./gradlew clean --info --stacktrace
 
 ENV GROBID_SERVICE_OPTS "--add-opens java.base/java.lang=ALL-UNNAMED"
 
