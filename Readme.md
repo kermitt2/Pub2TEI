@@ -8,7 +8,7 @@ The target TEI XML is the same as the Grobid TEI XML format, which makes possibl
 
 In addition to avoid any XML publisher information loss, the converter offers various possibilities to enhanced the publisher XML:
 
-- when the input publisher XML has raw strings for affiliations, bibliographical references, authors or date, Grobid can be used automatically to further parses the raw string into a structured representation that is added to the final TEI document,
+- when the input publisher XML has raw strings for affiliations and bibliographical references Grobid can be used automatically to further parses the raw string into a structured representation that is added to the final TEI document,
 
 - a sentence segmentation is possible for the final TEI document with the same sentence segmenter as Grobid, 
 
@@ -37,35 +37,97 @@ Coverage of NLM and JATS should be comprehensive (all known versions), so coveri
 
 ## How it works
 
-The project offers a web service and batch command-lines for transforming and enhancing publisher XML in an efficient parallelized manner. 
+The project offers a web service and a batch command-line for transforming and enhancing publisher XML in an efficient parallelized manner. 
 
 It uses a set of style sheets for converting XML documents encoded in various scientific publisher formats into a common TEI XML format. These style sheets have been first developed in the context of the European Project PEER and have been then further extended over the last years, in particular in the context of the ISTEX project. Depending on the publishers (see bellow), the encoding of bibliographical information, abstracts, citation and full texts are supported. 
 
 Enhancement is then realized by Grobid, selecting the appropriate model dynamically from the publisher XML based on the identified raw fields that can be further structured. 
 
-The simplest way to run the converter is to use the __docker image__ and the web service API. The docker image contains all the required stylesheets, the Grobid Deep learning models, sentence segmenter utility and XSLT __2.0__ processor for XML transformation. 
+The simplest way to run the converter is to use the __docker image__ and the web service API. The docker image contains all the required stylesheets, the Grobid Deep learning models, sentence segmenter utility and XSLT __2.0__ processor for XML transformation. The service compiles the stylesheets at start and keep them "warm" for the transformation requests. 
 
 ## Running the project with Docker
 
+Start the Pub2TEI service as follow:
 
+```console
+docker run --rm --gpus all --init --ulimit core=0 -p 8060:8060 grobid/Pub2TEI:0.2
+```
 
+### Web services
 
+Tranform a publisher XML into TEI XML format, with optional enhancements.
 
+|  method   |  request type         |  response type       |  parameters            |  requirement  |  description  |
+|---        |---                    |---                   |---                     |---            |---            |
+| POST      | `multipart/form-data` | `application/xml`    | `input`                | required      | publisher XML file to be processed |
+|           |                       |                      | `segmentSentences`     | optional      | Boolean, if true the paragraphs structures in the resulting TEI will be further segmented into sentence elements <s> |
+|           |                       |                      | `grobidRefine=1`       | optional      | Boolean, if true the raw affiliations and raw biblographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML |
+|           |                       |                      | `consolidate` | optional      | Consolidate the biblographical references, `consolidate` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
+
+Response status codes:
+
+|     HTTP Status code |   reason                                               |
+|---                   |---                                                     |
+|         200          |     Successful operation.                              |
+|         204          |     Process was completed, but no content could be extracted and structured |
+|         400          |     Wrong request, missing parameters, missing header  |
+|         500          |     Indicate an internal service error, further described by a provided message           |
+|         503          |     The service is not available, which usually means that all the threads are currently used                       |
+
+For example, transform a JATS XML file into TEI XML, with sentence segmentation and enhanced by Grobid for raw fields: 
+
+Assuming that the service is started on the default port `:8060` of a local machine, here is a curl example:
+
+```console
+curl --form input=@/home/lopez/biblio/PMC_sample_1943/main.nxml --form segmentSentences=1 --form grobidRefine=1 localhost:8060/service/processXML 
+```
+
+The resulting TEI has additional sentence markups, additional structured affilitions and additional structured bibliographical references for the entries without markup. 
 
 ## Running the project as a Java application
 
+### Requirements
 
+As a first requirement, you need to first install and build GROBID as described [here](https://grobid.readthedocs.io/en/latest/Install-Grobid/).
 
+You need JDK 1.11 or higher to build the project.
 
+### Install and build the library
 
+Then install Pub2TEI:
 
+```
+git clone https://github.com/kermitt2/Pub2TEI
+cd Pub2TEI
+./gradlew clean install 
+```
 
+Be sure to indicate the correct installtion location of the `grobid-home` directory, for example: 
+
+```yaml
+grobidHome: ../grobid/grobid-home
+```
+
+The service can then be started with:
+
+```
+./gradlew run
+```
+
+By default, the server uses port `:8060`, this can be changed in the configuration file `resources/config/config.yml`.
+
+### Building the docker image 
+
+From a local deployment, under the project repository `Pub2TEI/`: 
+
+```console
+docker build -t grobid/Pub2TEI:0.2 --build-arg PUB2TEI_VERSION=0.2 --file Dockerfile .
+```
 
 ## Only using the stylesheets
 
-This usage should be normally avoided because the additional document enhancement and problem corrections will not take place. In addition, the transformation here are not parallelized, so less efficient for large scale document processing. However, it is useful to consider only the stylesheets when testing the transformation and working on improving the stylesheets.   
+This legacy usage should be normally avoided, because the additional document enhancement and problem corrections will not take place. In addition, the transformation here are not parallelized, so less efficient for large scale document processing. However, it is useful to consider only the stylesheets when testing the transformation and working on improving these stylesheets.   
 
-Note: the test XML documents present in the sub-directory ```Samples``` are dummy documents with realistic publisher structures but random content (due to copyrights).
 
 ### Requirement
 
@@ -86,6 +148,8 @@ Here is a usage example with the Open Source Saxon 9 Home Edition (java). You ca
 The command will apply the Pub2TEI style sheets to a NLM file and produce a TEI `out.tei.xml`. You can remove the `-t` option for not producing the trace information. 
 
 You can select a **directory** as input and ouput, in order to process a large amount of files, while compiling the XSLT only one time. The normal behavior is then to transform around **one hundred files per second**. If it's closer to one file per hundred seconds, see the next section... 
+
+__Note:__ the test XML documents present in the sub-directory ```Samples``` are dummy documents with realistic publisher structures but random content (due to copyrights).
 
 #### Usual troubleshooting when using stylesheets only 
 
@@ -111,7 +175,7 @@ If it does not work, avoiding online fetching might suppose to write some prepro
 
 Alternatively, you can try to use a non-validating XML parser like [piccolo](http://piccolo.sourceforge.net/using.html), see also [here](https://www.saxonica.com/html/documentation/sourcedocs/controlling-parsing.html).
 
-In practice, maybe with some unreasonable efforts, it is normally possible to prevent any possible idiotic online fetching of resources, combining all the above tricks, and get the expected "one hundred files transformed per second". Using the web service and application, via the Docker image in particular, solves already all these problems and should be prefered.
+In practice, it is normally possible to prevent any possible idiotic online fetching of resources, combining all the above tricks, and get the expected "one hundred files transformed per second". Using the web service and application, via the Docker image in particular, solves already all these problems.
 
 ## License
 

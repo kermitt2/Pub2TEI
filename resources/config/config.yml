@@ -1,8 +1,7 @@
-version: "0.2-SNAPSHOT"
+version: "0.2"
 
 grobidHome: ../grobid/grobid-home
 
-corpusPath: resources/dataset/
 tmpPath: tmp/
 
 # path to Pub2TEI stylesheet repository as available at https://github.com/kermitt2/Pub2TEI under Stylesheets or to your custom one

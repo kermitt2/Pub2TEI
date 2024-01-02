@@ -298,10 +298,12 @@ public class GrobidHelper {
 
     public static void refineAuthors(org.w3c.dom.Document doc) {
         // look for author elements and check if we have a raw value
+        // TBD
     }
 
     public static void refineDate(org.w3c.dom.Document doc) {
         // look for date elements and check if we have a raw value
+        // TBD
     }
 
     private static List<String> ignoreElements = Arrays.asList("ref", "label");
