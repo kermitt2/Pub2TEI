@@ -109,7 +109,8 @@ public class XSLTProcessor {
             return null;
         }
 
-        Serializer out = new Serializer();
+        //Serializer out = new Serializer();
+        Serializer out = proc.newSerializer();
         out.setOutputProperty(Serializer.Property.METHOD, "xml");
         out.setOutputProperty(Serializer.Property.INDENT, "yes");
         XsltTransformer t = compiledStyleSheets.load();
@@ -144,7 +145,8 @@ public class XSLTProcessor {
             return;
         }
 
-        Serializer out = new Serializer();
+        //Serializer out = new Serializer();
+        Serializer out = proc.newSerializer();
         out.setOutputProperty(Serializer.Property.METHOD, "xml");
         out.setOutputProperty(Serializer.Property.INDENT, "yes");
         XsltTransformer t = compiledStyleSheets.load();
@@ -186,7 +188,8 @@ public class XSLTProcessor {
         if (inputStream == null)
             return null;
 
-        Serializer out = new Serializer();
+        //Serializer out = new Serializer();
+        Serializer out = proc.newSerializer();
         out.setOutputProperty(Serializer.Property.METHOD, "xml");
         out.setOutputProperty(Serializer.Property.INDENT, "yes");
         XsltTransformer t = compiledStyleSheets.load();

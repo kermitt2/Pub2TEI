@@ -1002,7 +1002,7 @@
     </xsl:template>
 
     <xsl:template match="@affiliationRef" name="tokenize">
-        <xsl:param name="text" select="@affiliationRef"/>
+        <xsl:param name="text" select="../@affiliationRef"/>
         <xsl:param name="separator" select="' '"/>
         <xsl:choose>
             <xsl:when test="not(contains($text, $separator))">
@@ -1169,7 +1169,7 @@
     </xsl:template>
     
     <xsl:template match="@correspondenceRef" name="tokenizeCor">
-        <xsl:param name="text" select="@correspondenceRef"/>
+        <xsl:param name="text" select="../@correspondenceRef"/>
         <xsl:param name="separator" select="' '"/>
         <xsl:choose>
             <xsl:when test="not(contains($text, $separator))">
@@ -1339,7 +1339,7 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template match="@currentRef" name="tokenizeCur">
-        <xsl:param name="text" select="@currentRef"/>
+        <xsl:param name="text" select="../@currentRef"/>
         <xsl:param name="separator" select="' '"/>
         <xsl:choose>
             <xsl:when test="not(contains($text, $separator))">
@@ -1518,7 +1518,7 @@
     <xsl:variable name="cur" select="translate(@currentRef ,'#','')"/>
     <xsl:variable name="not" select="translate(@noteRef ,'#','')"/>-->
     <xsl:template match="@xml:id" name="tokenize2">
-        <xsl:param name="text" select="@xml:id"/>
+        <xsl:param name="text" select="../@xml:id"/>
         <xsl:param name="separator" select="' '"/>
         <xsl:choose>
             <xsl:when test="not(contains($text, $separator))">
@@ -1638,7 +1638,7 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template match="@xml:id" name="tokenizeLien">
-        <xsl:param name="text" select="@xml:id"/>
+        <xsl:param name="text" select="../@xml:id"/>
         <xsl:param name="separator" select="' '"/>
         <xsl:choose>
             <xsl:when test="not(contains($text, $separator))">
@@ -1887,7 +1887,7 @@
     </xsl:template>
     
     <xsl:template match="@noteRef" name="tokenizeNot">
-        <xsl:param name="text" select="@noteRef"/>
+        <xsl:param name="text" select="../@noteRef"/>
         <xsl:param name="separator" select="' '"/>
         <xsl:choose>
             <xsl:when test="not(contains($text, $separator))">

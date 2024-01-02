@@ -58,7 +58,7 @@ public class ProcessFile {
             DocumentProcessor documentProcessor = new DocumentProcessor(serviceConfiguration);
             String result = documentProcessor.processXML(inputStream, segmentSentences, refine);
 
-            if (result == null | result.length() == 0) {
+            if (result == null || result.length() == 0) {
                 response = Response.status(Response.Status.NO_CONTENT).build();
             } else {
                 response = Response.status(Response.Status.OK)
