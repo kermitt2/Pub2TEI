@@ -19,6 +19,7 @@ repositories {
     maven {
         url new File(rootProject.rootDir, "localLibs")
     }
+    maven { url "https://grobid.s3.eu-west-1.amazonaws.com/repo/" }
 }
 
 apply plugin: 'application'
