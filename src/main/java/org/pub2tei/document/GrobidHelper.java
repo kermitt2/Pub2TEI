@@ -98,6 +98,7 @@ public class GrobidHelper {
                         // 1) raw affiliation string is moved to <note type="raw_affiliation">, with <ref> changed to <label>
                         Element theNote = doc.createElementNS("http://www.tei-c.org/ns/1.0", "note");
                         theNote.setAttribute("type", "raw_affiliation");
+                        theNote.setAttribute("subtype", "original");
 
                         final NodeList elementChildren = element.getChildNodes();
                         // first get the value key
@@ -179,6 +180,120 @@ public class GrobidHelper {
 
     public static void refineReferences(org.w3c.dom.Document doc) {
         // look for bib ref elements and check if we have a raw value
+        try {
+            XPathFactory xpathFactory = XPathFactory.newInstance();
+            XPathExpression xpathExp = xpathFactory.newXPath().compile("//bibl");  
+            final NodeList matchNodes = (NodeList) xpathExp.evaluate(doc, XPathConstants.NODESET);
+            final int nbChildren = matchNodes.getLength();
+
+            List<Element> elementsToProcess = new ArrayList<>();
+            List<String> rawStringToProcess = new ArrayList<>();
+
+            for (int i = 0; i < nbChildren; i++) {
+                Node n = matchNodes.item(i);
+                if (n.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) n;
+
+                    // note: by definition, bibl is a unstructured reference, so no need to detect if we have a raw field
+                    elementsToProcess.add(element);
+                    rawStringToProcess.add(element.getTextContent());
+                }
+            }
+
+            if (elementsToProcess.size()>0) {
+                // process the raw references 
+                Engine engine = null;
+                try {
+                    engine = GrobidFactory.getInstance().createEngine();
+
+                    // batch processing
+                    List<BiblioItem> structReferences = engine.processRawReferences(rawStringToProcess, 0);
+
+                    for (int i= 0; i<rawStringToProcess.size(); i++) {
+                        BiblioItem structReference = structReferences.get(i);
+                        if (structReference.rejectAsReference())
+                            continue;
+
+                        String referenceTEISegment = structReference.toTEI(0);
+
+                        if (referenceTEISegment == null || referenceTEISegment.trim().length() == 0)
+                            continue;
+
+                        // put back results to the elements
+                        // introduce a <biblStruct> element
+                        Element theBiblStruct = doc.createElementNS("http://www.tei-c.org/ns/1.0", "biblStruct");
+
+                        Element element = elementsToProcess.get(i);
+                        String valueKey = null;
+
+                        // 1) raw reference string is moved to <note type="raw_reference"> under <biblStruct>, 
+                        Element theNote = doc.createElementNS("http://www.tei-c.org/ns/1.0", "note");
+                        theNote.setAttribute("type", "raw_reference");
+                        theNote.setAttribute("subtype", "original");
+
+                        valueKey = element.getAttribute("xml:id");
+
+                        final NodeList elementChildren = element.getChildNodes();
+                        List<Node> elementChildrenList = new ArrayList<>();
+                        for(int j=0; j<elementChildren.getLength(); j++) {
+                            elementChildrenList.add(elementChildren.item(j));
+                        }
+
+                        // then move the non empty nodes
+                        for(Node localNode : elementChildrenList) {
+                            String textContent = localNode.getTextContent();
+                            textContent = textContent.replaceAll(" ", "");
+                            textContent = textContent.replaceAll("\n", "");
+                            if (textContent.length() == 0)
+                                continue;
+                            theNote.appendChild(localNode);
+                        }
+
+                        theBiblStruct.appendChild(theNote);
+
+                        // 2) structured affiliation nodes are put under a new <biblStruct>
+                        List<Node> newNodes = new ArrayList<>();
+                        try {
+                            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                            factory.setNamespaceAware(true);
+                            org.w3c.dom.Document d = factory.newDocumentBuilder().parse(new InputSource(new StringReader(referenceTEISegment)));
+                            //d.getDocumentElement().normalize();
+                            Node newNode = doc.importNode(d.getDocumentElement(), true);
+                            NodeList localChildren = newNode.getChildNodes();
+                            for(int k=0; k<localChildren.getLength(); k++) {
+                                Node newChildNode = localChildren.item(k);
+                                newNodes.add(newChildNode);
+                            }
+                            //System.out.println(serialize(doc, newNode));
+                        } catch(Exception e) {
+                            LOGGER.error("Problem for structured reference TEI segment parsing", e);
+                        }
+
+                        for(Node theNode : newNodes) 
+                            theBiblStruct.appendChild(theNode);
+                        
+                        // 3) <biblStruct> reference get an extra xml:id attribute value, with content of ref/label or new created if none
+                        if (valueKey != null)
+                            theBiblStruct.setAttribute("xml:id", valueKey); 
+
+                        // 4) delete old <bibl> as content has been moved under <biblStruct>, keep original reference element ordering 
+                        element.getParentNode().insertBefore(theBiblStruct, element);
+                        element.getParentNode().removeChild(element);
+                    }
+                } catch (NoSuchElementException nseExp) {
+                    LOGGER.error("Could not get an engine from the pool within configured time.");
+                } catch (Exception e) {
+                    LOGGER.error("An unexpected exception occurs. ", e);
+                } finally {
+                    if (engine != null) {
+                        //GrobidPoolingFactory.returnEngine(engine);
+                        engine.close();
+                    }
+                }
+            }
+        } catch(Exception ex) {
+            LOGGER.error("affiliation refinement failed", ex);
+        } 
     }
 
     public static void refineAuthors(org.w3c.dom.Document doc) {
