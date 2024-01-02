@@ -37,9 +37,9 @@ Coverage of NLM and JATS should be comprehensive (all known versions), so coveri
 
 ## How it works
 
-The project offers a web service and a batch command-line for transforming and enhancing publisher XML in an efficient parallelized manner. 
+The project offers a web service for transforming and enhancing publisher XML in an efficient parallelized manner. 
 
-It uses a set of style sheets for converting XML documents encoded in various scientific publisher formats into a common TEI XML format. These style sheets have been first developed in the context of the European Project PEER and have been then further extended over the last years, in particular in the context of the ISTEX project. Depending on the publishers (see bellow), the encoding of bibliographical information, abstracts, citation and full texts are supported. 
+It uses a set of stylesheets for converting XML documents encoded in various scientific publisher formats into a common TEI XML format. These style sheets have been first developed in the context of the European Project PEER and have been then further extended over the last years, in particular in the context of the ISTEX project. Depending on the publishers (see above), the encoding of bibliographical information, abstracts, citation and full texts are supported. 
 
 Enhancement is then realized by Grobid, selecting the appropriate model dynamically from the publisher XML based on the identified raw fields that can be further structured. 
 
@@ -69,14 +69,13 @@ Response status codes:
 |     HTTP Status code |   reason                                               |
 |---                   |---                                                     |
 |         200          |     Successful operation.                              |
-|         204          |     Process was completed, but no content could be extracted and structured |
+|         204          |     Process was completed, but no content could be provided |
 |         400          |     Wrong request, missing parameters, missing header  |
 |         500          |     Indicate an internal service error, further described by a provided message           |
-|         503          |     The service is not available, which usually means that all the threads are currently used                       |
 
-For example, transform a JATS XML file into TEI XML, with sentence segmentation and enhanced by Grobid for raw fields: 
 
-Assuming that the service is started on the default port `:8060` of a local machine, here is a curl example:
+
+Assuming that the service is started on the default port `:8060` of a local machine, here is a curl example: 
 
 ```console
 curl --form input=@/home/lopez/biblio/PMC_sample_1943/main.nxml --form segmentSentences=1 --form grobidRefine=1 localhost:8060/service/processXML 
@@ -96,7 +95,7 @@ You need JDK 1.11 or higher to build the project.
 
 Then install Pub2TEI:
 
-```
+```console
 git clone https://github.com/kermitt2/Pub2TEI
 cd Pub2TEI
 ./gradlew clean install 
@@ -110,7 +109,7 @@ grobidHome: ../grobid/grobid-home
 
 The service can then be started with:
 
-```
+```console
 ./gradlew run
 ```
 
