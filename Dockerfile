@@ -5,11 +5,11 @@ FROM grobid/grobid:0.8.0
 
 WORKDIR /opt/Pub2TEI
 COPY . .
-RUN ./gradlew clean --info --stacktrace
+RUN ./gradlew clean install --info --stacktrace
 
-ENV GROBID_SERVICE_OPTS "--add-opens java.base/java.lang=ALL-UNNAMED"
+ENV PUB2_TEI_OPTS "--add-opens java.base/java.lang=ALL-UNNAMED -Djava.library.path=$LD_LIBRARY_PATH:../grobid/grobid-home/lib/lin-64:../grobid/grobid-home/lib/lin-64/jep"
 
-CMD ["./gradlew", "run"]
+CMD ["./script/pub2tei-service.sh", "server", "resources/config/config.yml"]
 
 ARG PUB2TEI_VERSION
 

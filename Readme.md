@@ -86,6 +86,8 @@ The resulting TEI has additional sentence markups, additional structured affilit
 
 ## Running the project as a Java application
 
+It is recommended to use the Docker image, which is the easiest way to run Pub2TEI. 
+
 ### Requirements
 
 As a first requirement, you need to first install and build GROBID as described [here](https://grobid.readthedocs.io/en/latest/Install-Grobid/).
@@ -94,7 +96,7 @@ You need JDK 1.11 or higher to build the project.
 
 ### Install and build the library
 
-Then install Pub2TEI:
+Install Pub2TEI:
 
 ```
 git clone https://github.com/kermitt2/Pub2TEI
