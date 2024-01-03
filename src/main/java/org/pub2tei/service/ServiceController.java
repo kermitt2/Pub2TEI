@@ -67,20 +67,6 @@ public class ServiceController implements Pub2TEIPaths {
         GrobidProperties.getInstance(grobidHomeFinder);
         GrobidProperties.setContextExecutionServer(true);
         AbstractEngineFactory.init();
-
-        /*Engine engine = null;
-        try {
-            // this will init or not all the models in memory
-            engine = Engine.getEngine(true);
-        } catch (NoSuchElementException nseExp) {
-            LOGGER.error("Could not get an engine from the pool within configured time.");
-        } catch (Exception exp) {
-            LOGGER.error("An unexpected exception occurs when initiating the grobid engine. ", exp);
-        } finally {
-            if (engine != null) {
-                GrobidPoolingFactory.returnEngine(engine);
-            }
-        }*/
     }
 
     /**
@@ -98,11 +84,13 @@ public class ServiceController implements Pub2TEIPaths {
     @POST
     public Response processText_post(
         @FormParam(TEXT) String text,
-        @FormParam(SEGMENT) String segmentSentences,
-        @FormParam(REFINE_GROBID) String refineGrobid) {
+        @DefaultValue("0") @FormParam(SEGMENT) String segmentSentences,
+        @DefaultValue("0") @FormParam(REFINE_GROBID) String refineGrobid,
+        @DefaultValue("0") @FormParam(CONSOLIDATE_REFERENCES) int consolidateReferences
+        ) {
         boolean segment = validateGenerateIdParam(segmentSentences);
         boolean refine = validateGenerateIdParam(refineGrobid);
-        return ProcessString.processText(text, segment, refine, this.configuration);
+        return ProcessString.processText(text, segment, refine, consolidateReferences, this.configuration);
     }
 
     @Path(PATH_TEXT)
@@ -110,11 +98,12 @@ public class ServiceController implements Pub2TEIPaths {
     @GET
     public Response processText_get(
             @QueryParam(TEXT) String text,
-            @QueryParam(SEGMENT) String segmentSentences,
-            @QueryParam(REFINE_GROBID) String refineGrobid) {
+            @DefaultValue("0") @QueryParam(SEGMENT) String segmentSentences,
+            @DefaultValue("0") @QueryParam(REFINE_GROBID) String refineGrobid,
+            @DefaultValue("0") @QueryParam(CONSOLIDATE_REFERENCES) int consolidateReferences) {
         boolean segment = validateGenerateIdParam(segmentSentences);
         boolean refine = validateGenerateIdParam(refineGrobid);
-        return ProcessString.processText(text, segment, refine, this.configuration);
+        return ProcessString.processText(text, segment, refine, consolidateReferences, this.configuration);
     }
 
     @Path(PATH_XML)
@@ -123,11 +112,13 @@ public class ServiceController implements Pub2TEIPaths {
     @POST
     public Response processXML(
             @FormDataParam(INPUT) InputStream inputStream,
-            @FormDataParam(SEGMENT) String segmentSentences,
-            @FormDataParam(REFINE_GROBID) String refineGrobid) {
+            @DefaultValue("0") @FormDataParam(SEGMENT) String segmentSentences,
+            @DefaultValue("0") @FormDataParam(REFINE_GROBID) String refineGrobid, 
+            @DefaultValue("0") @FormDataParam(CONSOLIDATE_REFERENCES) int consolidateReferences
+        ) {
         boolean segment = validateGenerateIdParam(segmentSentences);
         boolean refine = validateGenerateIdParam(refineGrobid);
-        return ProcessFile.processXML(inputStream, segment, refine, this.configuration);
+        return ProcessFile.processXML(inputStream, segment, refine, consolidateReferences, this.configuration);
     }
 
     private static boolean validateGenerateIdParam(String generateIDs) {

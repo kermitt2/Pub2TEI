@@ -62,7 +62,7 @@ Tranform a publisher XML into TEI XML format, with optional enhancements.
 | POST      | `multipart/form-data` | `application/xml`    | `input`                | required      | publisher XML file to be processed |
 |           |                       |                      | `segmentSentences`     | optional      | Boolean, if true the paragraphs structures in the resulting TEI will be further segmented into sentence elements <s> |
 |           |                       |                      | `grobidRefine=1`       | optional      | Boolean, if true the raw affiliations and raw biblographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML |
-|           |                       |                      | `consolidate` | optional      | Consolidate the biblographical references, `consolidate` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
+|           |                       |                      | `consolidateReferences` | optional      | Consolidate all the biblographical references, `consolidateReferences` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
 
 Response status codes:
 
@@ -72,8 +72,6 @@ Response status codes:
 |         204          |     Process was completed, but no content could be provided |
 |         400          |     Wrong request, missing parameters, missing header  |
 |         500          |     Indicate an internal service error, further described by a provided message           |
-
-
 
 Assuming that the service is started on the default port `:8060` of a local machine, here is a curl example: 
 

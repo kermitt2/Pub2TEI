@@ -1,5 +1,7 @@
 package org.pub2tei.document;
 
+import org.pub2tei.sax.BiblStructSaxHandler;
+
 import java.io.*;
 import java.util.*;
 import javax.xml.parsers.*;
@@ -23,10 +25,12 @@ import org.grobid.core.utilities.IOUtilities;
 import org.grobid.core.engines.Engine;
 import org.grobid.core.data.Affiliation;
 import org.grobid.core.data.BiblioItem;
+import org.grobid.core.data.BibDataSet;
 import org.grobid.core.data.Date;
 import org.grobid.core.data.Person;
 import org.grobid.core.factory.GrobidPoolingFactory;
 import org.grobid.core.factory.GrobidFactory;
+import org.grobid.core.utilities.Consolidation;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,6 +45,8 @@ import org.slf4j.LoggerFactory;
 public class GrobidHelper {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidHelper.class);
+
+    private static Engine engine = GrobidFactory.getInstance().createEngine();
 
     public static void refineWithGrobid(org.w3c.dom.Document doc) {
         GrobidHelper.refineAffiliations(doc);
@@ -75,10 +81,10 @@ public class GrobidHelper {
             if (elementsToProcess.size()>0) {
                 // process the raw affiliations 
                 // note: TBD process in batch via processingLayoutTokens, for faster application of DL models
-                Engine engine = null;
+                //Engine engine = null;
                 try {
                     //engine = Engine.getEngine(true);
-                    engine = GrobidFactory.getInstance().createEngine();
+                    //engine = GrobidFactory.getInstance().createEngine();
                     for (int i= 0; i<rawStringToProcess.size(); i++) {
                         String rawString = rawStringToProcess.get(i);
                         List<Affiliation> affiliationList = engine.processAffiliation(rawString);
@@ -166,12 +172,12 @@ public class GrobidHelper {
                     LOGGER.error("Could not get an engine from the pool within configured time.");
                 } catch (Exception e) {
                     LOGGER.error("An unexpected exception occurs. ", e);
-                } finally {
+                } /*finally {
                     if (engine != null) {
                         //GrobidPoolingFactory.returnEngine(engine);
                         engine.close();
                     }
-                }
+                }*/
             }
         } catch(Exception ex) {
             LOGGER.error("affiliation refinement failed", ex);
@@ -202,9 +208,9 @@ public class GrobidHelper {
 
             if (elementsToProcess.size()>0) {
                 // process the raw references 
-                Engine engine = null;
+                //Engine engine = null;
                 try {
-                    engine = GrobidFactory.getInstance().createEngine();
+                    //engine = GrobidFactory.getInstance().createEngine();
 
                     // batch processing
                     List<BiblioItem> structReferences = engine.processRawReferences(rawStringToProcess, 0);
@@ -284,12 +290,12 @@ public class GrobidHelper {
                     LOGGER.error("Could not get an engine from the pool within configured time.");
                 } catch (Exception e) {
                     LOGGER.error("An unexpected exception occurs. ", e);
-                } finally {
+                } /*finally {
                     if (engine != null) {
                         //GrobidPoolingFactory.returnEngine(engine);
                         engine.close();
                     }
-                }
+                }*/
             }
         } catch(Exception ex) {
             LOGGER.error("affiliation refinement failed", ex);
@@ -332,6 +338,105 @@ public class GrobidHelper {
             result = true;
         
         return result;
+    }
+
+    /**
+     * Parse a TEI biblStruct XML string into a BiblioItem object.  
+     **/
+    public static BiblioItem parseTEIBiblioItem(org.w3c.dom.Element biblStructElement) {
+        BiblStructSaxHandler handler = new BiblStructSaxHandler();
+        String teiXML = null;
+        try {
+            SAXParserFactory spf = SAXParserFactory.newInstance();
+            SAXParser p = spf.newSAXParser();
+            teiXML = XMLUtilities.serialize(null, biblStructElement);
+            p.parse(new InputSource(new StringReader(teiXML)), handler);
+        } catch(Exception e) {
+            if (teiXML != null)
+                LOGGER.warn("The parsing of the biblStruct from TEI document failed for: " + teiXML);
+            else 
+                LOGGER.warn("The parsing of the biblStruct from TEI document failed for: " + biblStructElement.toString());
+        }
+        return handler.getBiblioItem();
+    }
+
+    public static void consolidateReferences(org.w3c.dom.Document doc, int consolidateReferences) {
+
+        // local bibliographical references to spot in the XML mark-up
+        List<BibDataSet> resCitations = new ArrayList<>();
+        List<org.w3c.dom.Element> biblStructElements = new ArrayList<>();
+        org.w3c.dom.NodeList bibList = doc.getElementsByTagName("biblStruct");
+        for (int i = 0; i < bibList.getLength(); i++) {
+            org.w3c.dom.Element biblStructElement = (org.w3c.dom.Element) bibList.item(i);
+            
+            // filter <biblStruct> not having as father <listBibl>
+            org.w3c.dom.Node fatherNode = biblStructElement.getParentNode();
+            if (fatherNode != null) {
+                if (!"listBibl".equals(fatherNode.getNodeName()))
+                    continue;
+            }
+
+            biblStructElements.add(biblStructElement);
+
+            BiblioItem biblio = parseTEIBiblioItem(biblStructElement);
+            BibDataSet bds = new BibDataSet();
+            bds.setResBib(biblio);
+            bds.setRefSymbol(biblStructElement.getAttribute("xml:id"));
+            resCitations.add(bds);
+        }
+
+        try {
+            Consolidation consolidator = Consolidation.getInstance();
+            Map<Integer,BiblioItem> resConsolidation = consolidator.consolidate(resCitations);
+            for(int i=0; i<resCitations.size(); i++) {
+                BiblioItem resCitation = resCitations.get(i).getResBib();
+                BiblioItem bibo = resConsolidation.get(i);
+                if (bibo != null) {
+                    if (consolidateReferences == 1)
+                        BiblioItem.correct(resCitation, bibo);
+                    else if (consolidateReferences == 2)
+                        BiblioItem.injectIdentifiers(resCitation, bibo);
+                }
+            }
+        } catch(Exception e) {
+            LOGGER.error("An exception occured while running consolidation on bibliographical references.", e);
+        } 
+
+        // put back the consolidated information with the reference elements
+        for(int i = 0; i < biblStructElements.size(); i++) {
+            org.w3c.dom.Element biblStructElement = biblStructElements.get(i);
+            BiblioItem resCitation = resCitations.get(i).getResBib();
+            
+            String valueKey = biblStructElement.getAttribute("xml:id");
+            String valueType = biblStructElement.getAttribute("type");
+
+            String teiCitation = resCitation.toTEI(4);
+
+            org.w3c.dom.Element newBiblStructElement = null;
+            try {
+                DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                factory.setNamespaceAware(true);
+                org.w3c.dom.Document d = factory.newDocumentBuilder().parse(new InputSource(new StringReader(teiCitation)));
+                //d.getDocumentElement().normalize();
+                newBiblStructElement = d.getDocumentElement();
+                newBiblStructElement = (Element) doc.importNode(d.getDocumentElement(), true);
+
+                if (valueKey != null && valueKey.length()>0) {
+                    newBiblStructElement.setAttribute("xml:id", valueKey);
+                }
+                if (valueType != null && valueType.length()>0) {
+                    newBiblStructElement.setAttribute("type", valueType);
+                }
+
+            } catch(Exception e) {
+                LOGGER.error("Problem for structured reference TEI segment parsing", e);
+            }
+
+            if (newBiblStructElement != null) {
+                biblStructElement.getParentNode().insertBefore(newBiblStructElement, biblStructElement);
+                biblStructElement.getParentNode().removeChild(biblStructElement);
+            }
+        }
     }
 
 

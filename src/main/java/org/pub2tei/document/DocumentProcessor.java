@@ -44,7 +44,7 @@ public class DocumentProcessor {
     /**
      * Process a TEI XML format
      */
-    public String processTEI(File file, boolean segmentSentences, boolean refine) throws IOException {
+    public String processTEI(File file, boolean segmentSentences, boolean refine, int consolidateReferences) throws IOException {
         String tei = null;
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -71,6 +71,15 @@ public class DocumentProcessor {
                 GrobidHelper.refineWithGrobid(document);
             }
 
+            if (consolidateReferences != 0) {
+                try {
+                    // this will consolidate all existing reference in the document according to the consolidation mode
+                    GrobidHelper.consolidateReferences(document, consolidateReferences);
+                } catch(Exception e) {
+                    LOGGER.error("Consolidation failed", e);
+                }
+            }
+
             tei = XMLUtilities.serialize(document, null);
             tei = XMLUtilities.reformatTEI(tei);
 
@@ -88,7 +97,7 @@ public class DocumentProcessor {
     /**
      * Process a TEI XML format
      */
-    public String processTEI(String tei, boolean segmentSentences, boolean refine) throws IOException {
+    public String processTEI(String tei, boolean segmentSentences, boolean refine, int consolidateReferences) throws IOException {
         if (tei == null || tei.length() == 0)
             return null;
         try {
@@ -116,6 +125,15 @@ public class DocumentProcessor {
                 GrobidHelper.refineWithGrobid(document);
             }
 
+            if (consolidateReferences != 0) {
+                try {
+                    // this will consolidate all existing reference in the document according to the consolidation mode
+                    GrobidHelper.consolidateReferences(document, consolidateReferences);
+                } catch(Exception e) {
+                    LOGGER.error("Consolidation failed", e);
+                }
+            }
+
             tei = XMLUtilities.serialize(document, null);
             tei = XMLUtilities.reformatTEI(tei);
 
@@ -139,7 +157,7 @@ public class DocumentProcessor {
      * @return TEI string
      */
 
-    public String processXML(File file, boolean segmentSentences, boolean refine) throws Exception {
+    public String processXML(File file, boolean segmentSentences, boolean refine, int consolidateReferences) throws Exception {
         InputStream inputStream = null;
         
         try {
@@ -148,17 +166,17 @@ public class DocumentProcessor {
             LOGGER.error("Invalid input file: " + file.getAbsolutePath(), e);
         }
 
-        return processXML(inputStream, segmentSentences, refine);
+        return processXML(inputStream, segmentSentences, refine, consolidateReferences);
     }
 
-    public String processXML(InputStream inputStream, boolean segmentSentences, boolean refine) throws Exception {
+    public String processXML(InputStream inputStream, boolean segmentSentences, boolean refine, int consolidateReferences) throws Exception {
         if (inputStream == null) 
             return null;
 
         String tei = null;
         try {
             tei = this.pub2TEIProcessor.transform(inputStream);
-            tei = processTEI(tei, segmentSentences, refine);
+            tei = processTEI(tei, segmentSentences, refine, consolidateReferences);
         } catch (final Exception exp) {
             LOGGER.error("An error occured while processing the XML input stream", exp);
         } 
@@ -185,7 +203,7 @@ public class DocumentProcessor {
             newFilePath = XMLUtilities.applyPub2TEI(file.getAbsolutePath(), 
                 tmpFilePath + "/" + fileName.replace(".xml", ".tei.xml"), 
                 this.configuration.getStylesheetsPath());
-            
+
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(true);
             DocumentBuilder builder = factory.newDocumentBuilder();
