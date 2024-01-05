@@ -353,6 +353,9 @@ public class XMLUtilities {
         return outputFilePath;
     }
 
+    // the list attributes that must be valid NCName
+    private static List<String> nCNameAttributes = Arrays.asList("xml:id");
+
     /**
      * Correct duplicated xml:id in a document. This happens usually under author level 
      * when affiliations and/or notes are copied several times for several authors. 
@@ -406,6 +409,9 @@ public class XMLUtilities {
                         Node attr = attributesMap.item(j);
 
                         String attributeValue = attr.getNodeValue();
+
+                        if (!nCNameAttributes.contains(attr.getNodeName()))
+                            continue;
 
                         // if attribute value is empty, we remove the attribute
                         if (attributeValue == null || attributeValue.trim().length() == 0) {

@@ -171,7 +171,7 @@ public class GrobidHelper {
                 } catch (NoSuchElementException nseExp) {
                     LOGGER.error("Could not get an engine from the pool within configured time.");
                 } catch (Exception e) {
-                    LOGGER.error("An unexpected exception occurs. ", e);
+                    LOGGER.error("An unexpected exception occurs when processing affiliation string. ", e);
                 } /*finally {
                     if (engine != null) {
                         //GrobidPoolingFactory.returnEngine(engine);
@@ -289,7 +289,7 @@ public class GrobidHelper {
                 } catch (NoSuchElementException nseExp) {
                     LOGGER.error("Could not get an engine from the pool within configured time.");
                 } catch (Exception e) {
-                    LOGGER.error("An unexpected exception occurs. ", e);
+                    LOGGER.error("An unexpected exception occurs when processing reference string. ", e);
                 } /*finally {
                     if (engine != null) {
                         //GrobidPoolingFactory.returnEngine(engine);
@@ -304,12 +304,198 @@ public class GrobidHelper {
 
     public static void refineAuthors(org.w3c.dom.Document doc) {
         // look for author elements and check if we have a raw value
-        // TBD
+        // possible author raw fields can be present under <persName> and <editor>, possibly <author> too?
+        try {
+            XPathFactory xpathFactory = XPathFactory.newInstance();
+            XPathExpression xpathExp = xpathFactory.newXPath().compile("//*[local-name()='persName' or local-name()='editor' or local-name()='author']");  
+            final NodeList matchNodes = (NodeList) xpathExp.evaluate(doc, XPathConstants.NODESET);
+            final int nbChildren = matchNodes.getLength();
+
+            List<Element> elementsToProcess = new ArrayList<>();
+            List<String> rawStringToProcess = new ArrayList<>();
+
+            for (int i = 0; i < nbChildren; i++) {
+                Node n = matchNodes.item(i);
+                if (n.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) n;
+
+                    if (checkIsRawField(element)) {
+                        elementsToProcess.add(element);
+                        rawStringToProcess.add(element.getTextContent());
+                    }
+                }
+            }
+
+            if (elementsToProcess.size()>0) {
+                // process the raw person name 
+                try {
+                    for (int i= 0; i<rawStringToProcess.size(); i++) {
+                        String rawString = rawStringToProcess.get(i);
+
+                        // depending on where we are - header or citation, we can use different person name parsers
+                        List<Person> personList = null;
+
+                        personList = engine.processAuthorsHeader(rawString);
+
+                        personList = engine.processAuthorsCitation(rawString);
+
+                        // we have only one affiliation, so we expect one structured affiliation result
+                        if (personList.size() != 1)
+                            continue;
+
+                        String personTEISegment = null;
+                        if (personList != null && personList.size() >0)
+                            personTEISegment = personList.get(0).toTEI(false, 4);
+
+                        if (personTEISegment == null || personTEISegment.trim().length() == 0)
+                            continue;
+
+                        // put back results to the elements
+                        Element element = elementsToProcess.get(i);
+                        String valueKey = null;
+
+                        // 1) raw person name string is moved to <note type="raw_name">, with <ref> changed to <label>
+                        Element theNote = doc.createElementNS("http://www.tei-c.org/ns/1.0", "note");
+                        theNote.setAttribute("type", "raw_name");
+                        theNote.setAttribute("subtype", "original");
+
+                        final NodeList elementChildren = element.getChildNodes();
+                        // first get the value key
+                        for(int j=0; j<elementChildren.getLength(); j++) {
+                            Node localNode = elementChildren.item(j);
+                            if (valueKey == null && 
+                                localNode.getNodeType() == Node.ELEMENT_NODE && 
+                                (localNode.getNodeName().equals("label") || localNode.getNodeName().equals("ref")) ) {
+                                valueKey = localNode.getTextContent();
+                                break;
+                            }
+                        }
+
+                        if (valueKey != null) {
+                            Element localLabel = doc.createElementNS("http://www.tei-c.org/ns/1.0", "label");
+                            localLabel.setTextContent(valueKey);
+                            theNote.appendChild(localLabel);
+                        }
+
+                        // then move the non empty nodes
+                        for(int j=0; j<elementChildren.getLength(); j++) {
+                            Node localNode = elementChildren.item(j);
+                            if (localNode.getNodeType() == Node.ELEMENT_NODE && 
+                                (localNode.getNodeName().equals("label") || localNode.getNodeName().equals("ref")) ) {
+                                continue;
+                            }
+                            String textContent = localNode.getTextContent();
+                            textContent = textContent.replaceAll(" ", "");
+                            textContent = textContent.replaceAll("\n", "");
+                            if (textContent.length() == 0)
+                                continue;
+                            theNote.appendChild(localNode);
+                        }
+                        while (element.hasChildNodes())
+                            element.removeChild(element.getFirstChild());
+
+                        element.appendChild(theNote);
+
+                        // 2) structured person name nodes are put under original element
+                        List<Node> newNodes = new ArrayList<>();
+                        try {
+                            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                            factory.setNamespaceAware(true);
+                            org.w3c.dom.Document d = factory.newDocumentBuilder().parse(new InputSource(new StringReader(personTEISegment)));
+                            //d.getDocumentElement().normalize();
+                            Node newNode = doc.importNode(d.getDocumentElement(), true);
+                            NodeList localChildren = newNode.getChildNodes();
+                            for(int k=0; k<localChildren.getLength(); k++) {
+                                Node newChildNode = localChildren.item(k);
+                                newNodes.add(newChildNode);
+                            }
+                            //System.out.println(serialize(doc, newNode));
+                        } catch(Exception e) {
+                            LOGGER.error("Problem for structured person name TEI segment parsing", e);
+                        }
+
+                        for(Node theNode : newNodes) 
+                            element.appendChild(theNode);
+                        
+                        // 3) original element get an extra key attribute value (key="aut1"), with content of ref/label or new created if none
+                        if (valueKey != null)
+                            element.setAttribute("key", valueKey); 
+                    }
+                
+                } catch (NoSuchElementException nseExp) {
+                    LOGGER.error("Could not get an engine from the pool within configured time.");
+                } catch (Exception e) {
+                    LOGGER.error("An unexpected exception occurs when processing person name. ", e);
+                } 
+            }   
+        } catch(Exception ex) {
+            LOGGER.error("person name refinement failed", ex);
+        }     
+
     }
 
     public static void refineDate(org.w3c.dom.Document doc) {
         // look for date elements and check if we have a raw value
-        // TBD
+
+        // look for <date> element without attribute @when and with raw value, 
+        // the goal is then to add a @when attribute following ISO date thanks 
+        // to Grobid date model
+
+        try {
+            XPathFactory xpathFactory = XPathFactory.newInstance();
+            XPathExpression xpathExp = xpathFactory.newXPath().compile("//date");  
+            final NodeList matchNodes = (NodeList) xpathExp.evaluate(doc, XPathConstants.NODESET);
+            final int nbChildren = matchNodes.getLength();
+
+            List<Element> elementsToProcess = new ArrayList<>();
+            List<String> rawStringToProcess = new ArrayList<>();
+
+            for (int i = 0; i < nbChildren; i++) {
+                Node n = matchNodes.item(i);
+                if (n.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) n;
+
+                    // check the @when attribute
+                    String valueWhen = element.getAttribute("when");
+                    if ((valueWhen == null || valueWhen.length() == 0 ) && checkIsRawField(element)) {
+                        elementsToProcess.add(element);
+                        rawStringToProcess.add(element.getTextContent());
+                    }
+                }
+            }
+
+            if (elementsToProcess.size()>0) {
+                // process the raw dates 
+                try {
+                    for (int i= 0; i<rawStringToProcess.size(); i++) {
+                        String rawString = rawStringToProcess.get(i);
+                        List<Date> dateList = engine.processDate(rawString);
+                        // we have only one date, so we expect one structured date result
+                        if (dateList.size() != 1 )
+                            continue;
+
+                        String dateISOString = Date.toISOString(dateList.get(0)); 
+
+                        if (dateISOString == null || dateISOString.trim().length() == 0)
+                            continue;
+
+                        // put back results to the elements
+                        Element element = elementsToProcess.get(i);
+                        element.setAttribute("when", dateISOString);
+
+                        // that's it for dates
+                    }
+                } catch (NoSuchElementException nseExp) {
+                    LOGGER.error("Could not get an engine from the pool within configured time.");
+                } catch (Exception e) {
+                    LOGGER.error("An unexpected exception occurs when processing date string. ", e);
+                }
+            }
+        } catch (NoSuchElementException nseExp) {
+            LOGGER.error("Could not get an engine from the pool within configured time.");
+        } catch (Exception e) {
+            LOGGER.error("An unexpected exception occurs when processing date raw string. ", e);
+        }
     }
 
     private static List<String> ignoreElements = Arrays.asList("ref", "label");
