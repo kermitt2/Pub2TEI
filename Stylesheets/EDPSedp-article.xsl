@@ -19,8 +19,8 @@
             <xsl:value-of select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>
         </xsl:variable>
         <TEI>
-            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
-                <xsl:text>https://istex.github.io/odd-istex/out/istex.xsd</xsl:text>
+            <xsl:attribute name="xsi:schemaLocation">
+                <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <xsl:if test="article-id/language">
                 <xsl:attribute name="xml:lang">

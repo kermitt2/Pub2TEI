@@ -1,0 +1,735 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD Journal Archiving and Interchange DTD v3.0 20080202//EN" "archivearticle3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+  <?DTDIdentifier.IdentifierValue -//ES//DTD journal article DTD version 5.1.0//EN//XML?>
+  <?DTDIdentifier.IdentifierType public?>
+  <?SourceDTD.DTDName art510.dtd?>
+  <?SourceDTD.Version 5.1.0?>
+  <?ConverterInfo.XSLTName elsevier2nlmx2.xsl?>
+  <?ConverterInfo.Version 2?>
+  <?origin publisher?>
+  <?FILEmeta_AAP2333 xml ?>
+  <?FILEmain xml ?>
+  <?FILEgr1 jpg ?>
+  <?FILEgr2 jpg ?>
+  <?FILEgr3 jpg ?>
+  <?FILEgr4 jpg ?>
+  <?FILEgr5 jpg ?>
+  <?FILEgr6 jpg ?>
+  <?FILEgr7 jpg ?>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-ta">Accid Anal Prev</journal-id>
+      <journal-title-group>
+        <journal-title>Accident; Analysis and Prevention</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">0001-4575</issn>
+      <issn pub-type="epub">1879-2057</issn>
+      <publisher>
+        <publisher-name>Pergamon Press</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmc">3062852</article-id>
+      <article-id pub-id-type="pmid">21376902</article-id>
+      <article-id pub-id-type="publisher-id">AAP2333</article-id>
+      <article-id pub-id-type="doi">10.1016/j.aap.2010.12.011</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Distribution of transport injury and related risk behaviours in a large national cohort of Thai adults</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Stephan</surname>
+            <given-names>Karen</given-names>
+          </name>
+          <email>Karen.Stephan@muarc.monash.edu.au</email>
+          <xref rid="aff0005" ref-type="aff">a</xref>
+          <xref rid="cor0005" ref-type="corresp">&#x204E;</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Kelly</surname>
+            <given-names>Matthew</given-names>
+          </name>
+          <xref rid="aff0010" ref-type="aff">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Mcclure</surname>
+            <given-names>Rod</given-names>
+          </name>
+          <xref rid="aff0005" ref-type="aff">a</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Seubsman</surname>
+            <given-names>Sam-ang</given-names>
+          </name>
+          <xref rid="aff0015" ref-type="aff">c</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yiengprugsawan</surname>
+            <given-names>Vasoontara</given-names>
+          </name>
+          <xref rid="aff0010" ref-type="aff">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Bain</surname>
+            <given-names>Christopher</given-names>
+          </name>
+          <xref rid="aff0020" ref-type="aff">d</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Sleigh</surname>
+            <given-names>Adrian</given-names>
+          </name>
+          <xref rid="aff0010" ref-type="aff">b</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <collab>The Thai Cohort Study Team</collab>
+          <xref rid="fn0005" ref-type="fn">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff0005"><label>a</label>Monash University Accident Research Centre, Monash University, Melbourne, Australia</aff>
+      <aff id="aff0010"><label>b</label>National Centre for Epidemiology and Population Health, Australian National University, Canberra, Australia</aff>
+      <aff id="aff0015"><label>c</label>School of Human Ecology, Sukhothai Thammathirat Open University, Nonthaburi, Thailand</aff>
+      <aff id="aff0020"><label>d</label>The University of Queensland, School of Population Health, Brisbane, Australia</aff>
+      <author-notes>
+        <corresp id="cor0005"><label>&#x204E;</label>Corresponding author at: Monash University Accident Research Centre, Bldg. 70, Clayton Campus, Monash University, 3800 Melbourne, Australia. Tel.: +61 3 9905 1802; fax: +61 3 9905 4363. <email>Karen.Stephan@muarc.monash.edu.au</email></corresp>
+        <fn id="fn0005">
+          <label>1</label>
+          <p>THAI COHORT STUDY TEAM: Thailand: Jaruwan Chokhanapitak, Chaiyun Churewong, Suttanit Hounthasarn, Suwanee Khamman, Daoruang Pandee, Suttinan Pangsap, Tippawan Prapamontol, Janya Puengson, Yodyiam Sangrattanakul, Sam-ang Seubsman, Boonchai Somboonsook, Nintita Sripaiboonkij, Pathumvadee Somsamai, Duangkae Vilainerun, Wanee Wimonwattanaphan. Australia: Chris Bain, Emily Banks, Cathy Banwell, Bruce Caldwell, Gordon Carmichael, Tarie Dellora, Jane Dixon, Sharon Friel, David Harley, Matthew Kelly, Tord Kjellstrom, Lynette Lim, Anthony McMichael, Tanya Mark, Adrian Sleigh, Lyndall Strazdins, Vasoontara Yiengprugsawan.</p>
+        </fn>
+      </author-notes>
+      <pub-date pub-type="pmc-release">
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <!-- PMC Release delay is 0 months and 0 days and was based on the
+							<pub-date pub-type="ppub"/>. -->
+      <pub-date pub-type="ppub">
+        <month>5</month>
+        <year>2011</year>
+      </pub-date>
+      <volume>43</volume>
+      <issue>3</issue>
+      <fpage>1062</fpage>
+      <lpage>1067</lpage>
+      <history>
+        <date date-type="received">
+          <day>17</day>
+          <month>5</month>
+          <year>2010</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>17</day>
+          <month>11</month>
+          <year>2010</year>
+        </date>
+        <date date-type="accepted">
+          <day>10</day>
+          <month>12</month>
+          <year>2010</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xC2;&#xA9; 2011 Elsevier Ltd.</copyright-statement>
+        <copyright-year>2010</copyright-year>
+        <copyright-holder>Elsevier Ltd</copyright-holder>
+        <license>
+          <license-p>This document may be redistributed and reused, subject to <ext-link ext-link-type="uri" xlink:href="http://www.elsevier.com/wps/find/authorsview.authors/supplementalterms1.0">certain conditions</ext-link>.</license-p>
+        </license>
+      </permissions>
+      <abstract abstract-type="graphical">
+        <title>Research highlights</title>
+        <p>&#x25B6; 8.4% of Thai adults reported a transport related injury in the previous 12 months. &#x25B6; Risk was higher for males and young adults and motorcycles were commonly involved. &#x25B6; Males were much more likely to report drink driving than females. &#x25B6; The prevalence of seat belt and helmet wearing was higher than previously reported. &#x25B6; We will monitor changes in transport injury risk and related behaviour in this cohort.</p>
+      </abstract>
+      <abstract>
+        <sec>
+          <title>Background</title>
+          <p>A major barrier to addressing the problem of transport injury in low to middle-income countries is the lack of information regarding the incidence of traffic crashes and the demographic, behavioural and socio-economic determinants of crash-related injury. This study aimed to determine the baseline frequency and distribution of transport injury and the prevalence of various road safety behaviours in a newly recruited cohort of Thai adults.</p>
+        </sec>
+        <sec>
+          <title>Methods</title>
+          <p>The Thai Health-Risk Transition Study includes an ongoing population-based cohort study of 87,134 adult students residing across Thailand. Baseline survey data from 2005 includes data on self-reported transport injury within the previous 12 months and demographic, behavioural and transportation factors that could be linked to Thailand's transport risks.</p>
+        </sec>
+        <sec>
+          <title>Results</title>
+          <p>Overall, 7279 (8.4% or 8354 per 100,000) of respondents reported that their most serious injury in the 12 months prior to recruitment in the cohort was transport-related, with risk being higher for males and those aged 15&#x2013;19 years. Most transport injuries occurred while using motorcycles. A much higher proportion of males reported driving after three or more glasses of alcohol at least once in the previous year compared to females. The prevalence of motorcycle helmet and seat belt wearing in this sample were higher than previously reported for Thailand.</p>
+        </sec>
+        <sec>
+          <title>Conclusions</title>
+          <p>The reported data provide the basis for monitoring changes in traffic crash risks and risk behaviours in a cohort of adults in the context of ongoing implementation of policy and programs that are currently being introduced to address the problem of transport-related injury in Thailand.</p>
+        </sec>
+      </abstract>
+      <kwd-group>
+        <title>Keywords</title>
+        <kwd>Wounds and injuries</kwd>
+        <kwd>Accidents</kwd>
+        <kwd>Transportation</kwd>
+        <kwd>Thailand</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec0005">
+      <label>1</label>
+      <title>Introduction</title>
+      <p>Traffic injuries are an important contributor to the national disease burdens of middle-income countries, and are estimated to cost 2% of the Gross Domestic Product (<xref rid="bib0030" ref-type="bibr">Roberts, 2004</xref>). The increasing death and disability from road trauma in middle-income countries can be largely attributed to massively increasing motorisation in the context of inadequate infrastructure, vehicular safety and safe system regulation (<xref rid="bib0025" ref-type="bibr">Peden et al., 2004</xref>). It can be viewed primarily as a development issue, as it is both a direct consequence of increasing industrialisation and modernisation and a huge constraint on development itself (<xref rid="bib0010 bib0015 bib0055" ref-type="bibr">Hyder and Ghaffar, 2004; McMahon and Ward, 2006; World Health Organization, 2009</xref>).</p>
+      <p>In Thailand, a middle-income &#x201C;transitioning&#x201D; country, there has been a dramatic upward trend in transport-related injuries and deaths that parallels rapid economic development and increasing motor vehicle ownership and use. The population injury rate from road traffic collisions has increased from 17 per 100,000 in 1984 to 152 per 100,000 in 2005 (<xref rid="bib0060" ref-type="bibr">Wibulpolprasert, 2008</xref>). Concurrently, traffic injury has become a leading cause of death in Thai males and females aged between 15 and 45 years, with over 5000 young adults dying each year. Road traffic injuries also cause the most permanent disability in Thailand (<xref rid="bib0040" ref-type="bibr">Sitthi-amorn et al., 2007</xref>).</p>
+      <p>A major barrier to addressing transport injury in low to middle-income countries is the lack of information about the nature and extent of non-fatal trauma and the prevalence of behavioural safety indicators and compliance with legislation, e.g. helmet and seat belt use and drink driving (<xref rid="bib0020 bib0055" ref-type="bibr">Odero et al., 1997; WHO, 2009</xref>).</p>
+      <p>While Thailand has a stronger injury surveillance system than many middle-income countries, these issues still apply to the road safety data. Data on road traffic collisions in Thailand comes from three sources: hospital data which are collected intermittently from a small number of hospitals; police data which lack a standardised recording system and key information; and data from the Traffic Engineering Division, Department of Highways which cover only a quarter of national roads and largely rely on police reports (<xref rid="bib0050" ref-type="bibr">Suriyawongpaisal and Kanchanasut, 2003</xref>). The large community-based Thai National Injury Survey of 2003/2004 reported on over 300,000 Thais nationwide, however it recorded only injuries needing medical treatment and/or 3 days or more off work. It also relied on one respondent reporting for the whole household (<xref rid="bib0040" ref-type="bibr">Sitthi-amorn et al., 2007</xref>). Consequently, many minor injuries may have been missed.</p>
+      <p>The aim of this study is to determine the baseline frequency and distribution of transport injury and the prevalence of various road safety behaviours in a newly recruited cohort of Thai adults. This information is intended to serve as a baseline for monitoring changes in traffic crash risks and risk behaviours in response to ongoing implementation of policy and programs to address the problem of transport-related injury in Thailand.</p>
+    </sec>
+    <sec sec-type="methods" id="sec0010">
+      <label>2</label>
+      <title>Methods</title>
+      <sec id="sec0015">
+        <label>2.1</label>
+        <title>Study design, setting and participants</title>
+        <p>The Thai Health-Risk Transition Study includes an ongoing Thai Cohort Study (TCS) of 87,134 adult Open University students residing across all regions of Thailand. The cohort comprises distance-learning students enrolled at Sukhothai Thammathirat Open University (STOU) which is referred to as an open university because it does not require high school graduates to pass an entrance test. The baseline TCS data were collected in 2005 and include information on transport injury and a wide array of demographic, socio-economic, behavioural and transportation factors that could be linked to Thailand's transport risks.</p>
+        <p>Details on population selection and methodology have been reported elsewhere (<xref rid="bib0045" ref-type="bibr">Sleigh et al., 2008</xref>). Briefly, the 2005 student register listed approximately 200,000 names and addresses: a 20-page questionnaire was mailed out to each student and 87,134 (44%) responded.</p>
+      </sec>
+      <sec id="sec0020">
+        <label>2.2</label>
+        <title>Measures</title>
+        <sec id="sec0025">
+          <label>2.2.1</label>
+          <title>Transport injury</title>
+          <p>All respondents were asked, &#x2018;In the <italic>last 12 months</italic> how many injuries have you had that were serious enough to interfere with daily activities and/or required medical treatment?&#x2019; For their most serious injury, respondents were asked, &#x2018;where were you when you were injured&#x2019; and &#x2018;was this injury related to transport&#x2019;. Location of the most serious injury was coded as home, road, sports facility, agricultural workplace, non-agricultural workplace or other. If the most serious injury was related to transport then we ascertained the respondent's role (driver, passenger, pedestrian), and, for drivers and passengers, the vehicle they were in (bicycle, motorbike, bus&#x2013;van, car-pickup, other vehicle).</p>
+        </sec>
+        <sec id="sec0030">
+          <label>2.2.2</label>
+          <title>Transport-related risk behaviours</title>
+          <p>We asked the entire cohort whether they had driven a motor vehicle after 3 or more glasses of alcohol in the previous 12 months. We categorised respondent use of safety devices for motorbikes (helmets) and cars (seat belts &#x2013; back and front seats), as never, sometimes or always for the whole cohort.</p>
+        </sec>
+      </sec>
+      <sec id="sec0035">
+        <label>2.3</label>
+        <title>Data management and analysis</title>
+        <p>Data scanning, verifying, and correcting were conducted using Scandevet, a program developed by a research team from Khon Kaen University. Further data editing was completed using SQL and SPSS software and for analyses we used SPSS and Stata. Descriptive data regarding the distribution of transport injury by sex, age and residence are presented. For those respondents that reported transport injury, their role and the vehicle involved in the injury event are presented by sex and age. Descriptive data regarding the age&#x2013;sex distribution of transport-related risk behaviours for the whole cohort were also derived.</p>
+      </sec>
+      <sec id="sec0040">
+        <label>2.4</label>
+        <title>Ethical issues</title>
+        <p>Ethics approval was obtained from Sukhothai Thammathirat Open University Research and Development Institute (protocol 0522/10) and the Australian National University Human Research Ethics Committee (protocol 2004344). Free and informed written consent was obtained from all participants.</p>
+      </sec>
+    </sec>
+    <sec id="sec0045">
+      <label>3</label>
+      <title>Results</title>
+      <sec id="sec0050">
+        <label>3.1</label>
+        <title>Cohort description</title>
+        <p>The TCS cohort was 54.7% female, with a median age of 29 years. Compared to the overall STOU student population, the respondents were slightly older, but similar in terms of sex, education level, monthly income and geographic residence. In comparison to the Thai adult population, the cohort had a slightly higher proportion of females, a greater proportion of young to middle aged adults (21&#x2013;40) and less in the younger (&lt;21) and older (&gt;40) age-groups. They were substantially more educated. Average monthly income compared to the Thai population is difficult to judge due to the large proportion that had no income or did not report their income in the Thai population survey. It appears that the TCS may be a little better off, however their average income is still quite modest. The geographic distribution of the cohort, however, was similar to the Thai population (<xref rid="bib0035" ref-type="bibr">Seubsman et al., in press</xref>) (<xref rid="tbl0005" ref-type="table">Table 1</xref>).</p>
+      </sec>
+      <sec id="sec0055">
+        <label>3.2</label>
+        <title>Distribution and frequency of transport injury</title>
+        <p>Overall 7279 (8.4% or 8354 per 100,000) of cohort respondents reported a transport-related injury as their most serious injury. In all age groups, males reported more transport injury than females. Young adults were more likely to report transport injury than older adults (<xref rid="fig0005" ref-type="fig">Fig. 1</xref>). There was little difference in the proportion who reported transport injury between country residents (8.6%) and city/town residents (8.1%).</p>
+        <p><xref rid="fig0010" ref-type="fig">Fig. 2</xref> explores the roles the injured respondents played on the occasion of their transport-related injury. Of the 6371 injured persons who reported their role, there were 4514 (70.9%) drivers, 1459 (22.9%) passengers and 398 (6.2%) pedestrians. In all age groups, a higher proportion of injured males were likely to be drivers compared to injured females, with the reverse being true for passengers. A higher proportion of females (7.2%) experiencing transport-related injury were pedestrians compared to males (5.4%) and this injury category was the only one with a notable age-effect, with the proportion of injured that were pedestrians increasing with age for both sexes, reaching 15.6% among women over 50.</p>
+        <p>Among the injured, 71.9% were riding motorcycles when their transport injury occurred (<xref rid="fig0015" ref-type="fig">Fig. 3</xref>). This proportion decreased in older age groups but motorcycles were still the most common vehicle involved in transport injury events in all age groups in both sexes (70.8% for men, 73.2% for women). The proportion injured in cars or buses and vans increased with age for both sexes while the proportion injured while riding bicycles decreased with age for men but not for women. Injuries sustained while a driver or passenger in other types of vehicles (e.g. train, boat or airplane) were uncommon.</p>
+      </sec>
+      <sec id="sec0060">
+        <label>3.3</label>
+        <title>Prevalence and distribution of transport-related risk behaviours</title>
+        <p>The distribution of transport-related risk behaviours was determined for the whole cohort, in order to better target interventions. Of the respondents who reported using a motorbike, approximately 6% of males and 10% of females rarely or never wore a helmet (<xref rid="fig0020" ref-type="fig">Fig. 4</xref>). Overall, females were less likely to wear a helmet than males, with the highest proportion of non-wearers being women over 50 years of age (18.9%).</p>
+        <p>Of the respondents who had a front seat belt available for use in the vehicle, 72.2% of males and 66.6% of females reported always wearing the front seat belt and this increased with age (<xref rid="fig0025" ref-type="fig">Fig. 5</xref>). Teenagers had the highest proportion of respondents who reported never wearing a front seatbelt (10% of males, 9% of females).</p>
+        <p>In contrast, back seat belt use was low (<xref rid="fig0030" ref-type="fig">Fig. 6</xref>). Of those who said the vehicle had a back seat belt available, over 50% of males and 65% of females never wore it, although as age increased there was a reduction in the proportion who never wore back seat belts. For all age-groups, men were more likely than women to sometimes or always wear the back seat belt.</p>
+        <p>Male drivers were much more likely to report having driven after 3 or more glasses of alcohol in the previous 12 months than female drivers (56.1% compared to 17.2%; <xref rid="fig0035" ref-type="fig">Fig. 7</xref>). This comparison excluded respondents who said that they never drank alcohol (39.0% of females and 10.5% of males in the cohort).</p>
+      </sec>
+    </sec>
+    <sec id="sec0065">
+      <label>4</label>
+      <title>Discussion</title>
+      <sec id="sec0070">
+        <label>4.1</label>
+        <title>Transport Injury</title>
+        <p>In this study, 8.4% (8354 per 100,000) of the cohort reported that their most serious injury was transport-related, with males and teenagers more likely to be injured and motorcycles the most common vehicle involved. The proportion of injured who were pedestrians increased with age.</p>
+        <p>As anticipated, the transport injury rates were substantially higher than previously reported for Thailand. Estimates of 152 and 650 per 100,000 population were reported from the Thai Ministry of Public Health (<xref rid="bib0060" ref-type="bibr">Wibulpolprasert, 2008</xref>) and the community-based Thai National Injury Survey, respectively (<xref rid="bib0040" ref-type="bibr">Sitthi-amorn et al., 2007</xref>). The overall patterns of factors surrounding the transport injury, however, are similar with the young and males being the most at risk, motorcycles being the most common vehicle involved and the risk of being injured as a pedestrian increasing with age.</p>
+        <p>Both previous population surveys used higher injury severity thresholds than our study. The Ministry of Public Health data captured hospitalised injuries (<xref rid="bib0060" ref-type="bibr">Wibulpolprasert, 2008</xref>), while the National Injury Survey captured injuries requiring three or more days off work and/or medical attention (<xref rid="bib0040" ref-type="bibr">Sitthi-amorn et al., 2007</xref>). Further, the National Injury Survey relied on the head of the house reporting for all members, compared with our study which involved self-report. Because our TCS included minor injuries and the respondent reported on their own injuries, we would expect our injury estimates to be higher. Very minor injuries may still have been overlooked as respondents may not recall less serious injuries that occurred during the previous 12 months. In addition, we missed capturing data on transport injuries that were not the most serious injury that the respondent sustained. Thus our estimate is probably conservative.</p>
+        <p>The external validity of the study in terms of extrapolating the results to the Thai adult population is difficult to judge. Our cohort has slightly more females, less young (&lt;21) and older (&gt;40) adults and is more educated than the Thai adult population. Considering that young males are at higher risk of injury, and our cohort includes proportionally less of these than the Thai population, the estimates may be conservative. However, we also have proportionally less older adults, which may serve to increase the transport injury estimates. The higher education level of the respondents may also lead to a decreased injury rate relative to the general population. It is important to note however, that we are reporting the baseline data for an ongoing cohort study, so the real strength in these data lies in the internal validity for monitoring changes in this cohort over time.</p>
+      </sec>
+      <sec id="sec0075">
+        <label>4.2</label>
+        <title>Transport-related risk behaviours</title>
+        <p>The cohort reported a much higher prevalence of the use of safety devices (motorcycle helmets and seat belts) than previously reported for Thailand in the World Health Organization (WHO) Global Status Report on Road Safety (<xref rid="bib0055" ref-type="bibr">WHO, 2009</xref>). Almost two-thirds of motorcycle users (65%) reported always wearing a helmet compared to 27% in 2005. This rate is lower than for other Southeast Asian middle-income countries with similar legislation, e.g. Malaysia and Indonesia, that reported helmet-wearing rates of 90% or more in 2007 (<xref rid="bib0055" ref-type="bibr">WHO, 2009</xref>). Since helmet wearing was made mandatory in Thailand, however, enforcement has been maintained (<xref rid="bib0055" ref-type="bibr">WHO, 2009</xref>) and may be starting to have the desired cumulative effect. The lower helmet use rate reported by females was notable and could reflect concern with hair-style or hygiene but we did not gather data on motives.</p>
+        <p>Over two-thirds of respondents (69%) reported always using a front seat belt compared to 56% in 2005. This is similar to Malaysia in 2003, where the seat belt wearing rate was 70%, but less than Indonesia in 2005 when the rate was 85% (<xref rid="bib0055" ref-type="bibr">WHO, 2009</xref>). Only 11% reported always using a back seat belt, however this was still more than previous estimates (3% in 2005; <xref rid="bib0055" ref-type="bibr">WHO, 2009</xref>). There is substantial room for improvement if the Thai population is to reach the wearing rates evident in many of the high income countries (e.g. Australia, New Zealand and Germany in 2006/2007) of 95% or more for front seat belts and 87% or more for back seat belts (<xref rid="bib0055" ref-type="bibr">WHO, 2009</xref>). Considerable benefit would be achieved by mandating seat belt wearing for all vehicle occupants, rather than just front seat occupants as at present.</p>
+        <p>Excluding respondents that reported never drinking alcohol, more than half of the male drivers (56.1%) reported driving after three or more glasses of alcohol compared to 17.2% of female drivers. The high prevalence of drink driving among male Thai drivers has been reported previously with a cross-sectional study of blood alcohol (BAC) content in 4778 Thai drivers finding 8.7% with a blood alcohol content greater than 50&#xA0;mg/dl (<xref rid="bib0005" ref-type="bibr">Chongsuvivatwong et al., 1999</xref>). Females were excluded from their analysis, however, because they only made up 2% of the sample. To our knowledge, ours is the first study to highlight the differences between men and women in terms of driving under the influence of alcohol in Thailand. Considering that female respondents in our cohort were much more likely to report never drinking at all (39.0% compared to 10% of males), and those that did drink alcohol were much less likely to drink drive than male drivers, it appears that drink driving countermeasures should be targeted heavily towards male drivers.</p>
+        <p>Our estimates of the prevalence of transport-related risk behaviours may be biased due to the self-report nature of data collection. Respondents may fail to report behaviours that are risky or socially unacceptable, however, many of our respondents did report drink driving or never wearing seat belts so this does not appear to be a major issue. The lower proportion of young adults aged under 21 and higher education level of our cohort compared to the Thai population may explain the higher estimates for helmet wearing and seat belt wearing than have been found previously. Consequently, the prevalence of the use of safety devices reported in this study probably represents the most optimistic estimates of current safety practices in Thailand. It is, however, unclear what effect this might have on the generalisability of estimates of the prevalence of drink driving. Again, however, we must emphasise the value of our data in terms of the internal validity for monitoring changes in this cohort over time.</p>
+      </sec>
+      <sec id="sec0080">
+        <label>4.3</label>
+        <title>Conclusions</title>
+        <p>We found much higher rates of transport injury than previously estimated by any other source, most likely due to the inclusion of less severe injuries. The findings give an overview for Thailand based on a large national sample of transport using adults and can assist with targeting the groups most at risk of transport injury (males, youth and motorcycle users), and the groups that display the most risky behaviour (drink driving for males, helmet wearing for females and back seat belt use for all age&#x2013;sex strata). These data are an important addition to the evidence on which Thai authorities can base informed policies for addressing one of the major causes of individual and social burden of health in Thailand. The study goes some way towards redressing the data deficiencies identified by the WHO as one of the major barriers to addressing the problem of transport injury in lower and middle income countries (<xref rid="bib0055" ref-type="bibr">WHO, 2009</xref>). Finally, and perhaps of most value, our cohort study provides an opportunity to monitor changes in these risks and behaviours in the same cohort into the future.</p>
+      </sec>
+    </sec>
+    <sec id="sec0085">
+      <title>Conflict of interests</title>
+      <p>The authors have no competing interests.</p>
+    </sec>
+    <sec id="sec0090">
+      <title>Funding</title>
+      <p content-type="funding">This study was supported by the International Collaborative Research Grants Scheme with joint grants from the Wellcome Trust UK (GR071587MA) and the Australian NHMRC (268055). The funding sources played no role in study design, data collection, analysis or interpretation, writing the report, or the decision to submit the paper for publication.</p>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title>References</title>
+      <ref id="bib0005">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chongsuvivatwong</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Ritsmitchai</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Suriyawongpaisal</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Chariyalertsak</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Kosuwan</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Punyaratabandhu</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Sutiwipakorn</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>High prevalence of drink-driving in Thailand</article-title>
+          <source>Drug Alcohol Rev.</source>
+          <issue>18</issue>
+          <year>1999</year>
+          <fpage>293</fpage>
+          <lpage>298</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib0010">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hyder</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Ghaffar</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>The millennium development goals and road traffic injuries: exploring the linkages in South Asia</article-title>
+          <source>J. Coll. Phys. Surg. Pak.</source>
+          <issue>14</issue>
+          <year>2004</year>
+          <fpage>742</fpage>
+          <lpage>745</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib0015">
+        <mixed-citation publication-type="other">McMahon, K., Ward, D., 2006. Make Roads Safe: A New Priority for Sustainable Development. Commission for Global Road Safety. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.fiafoundation.org/publications/Documents/make_roads_safe.pdf">http://www.fiafoundation.org/publications/Documents/make_roads_safe.pdf</ext-link> (accessed at 17.05.10).</mixed-citation>
+      </ref>
+      <ref id="bib0020">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Odero</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Garner</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Zwi</surname>
+              <given-names>A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Road traffic injuries in developing countries: a comprehensive review of epidemiological studies</article-title>
+          <source>Trop. Med. Int. Health</source>
+          <issue>2</issue>
+          <year>1997</year>
+          <fpage>445</fpage>
+          <lpage>460</lpage>
+          <pub-id pub-id-type="pmid">9217700</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0025">
+        <mixed-citation publication-type="other">Peden, M., Scurfield, R., Sleet, D., Mohan, D., Hyder, A.A., Jarawan, E., Mathers, C. (Eds.), 2004. World Report on Road Traffic Injury Prevention. World Health Organization, Geneva. Available from: <ext-link ext-link-type="uri" xlink:href="http://whqlibdoc.who.int/publications/2004/9241562609.pdf">http://whqlibdoc.who.int/publications/2004/9241562609.pdf</ext-link> (accessed at 17.05.10).</mixed-citation>
+      </ref>
+      <ref id="bib0030">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Roberts</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>Injury and globalization</article-title>
+          <source>Inj. Prev.</source>
+          <issue>10</issue>
+          <year>2004</year>
+          <fpage>65</fpage>
+          <lpage>66</lpage>
+          <pub-id pub-id-type="pmid">15066964</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0035">
+        <mixed-citation publication-type="other">Seubsman, S., Yiengprugsawan, V., Sleigh, A., Thai Cohort Study Team, in press. A Large National Thai Cohort Study of the Health-Risk Transition Based on Sukhothai Thammathirat Open University students. ASEAN J. Open Dist. Learn. (accepted July 2010).</mixed-citation>
+      </ref>
+      <ref id="bib0040">
+        <mixed-citation publication-type="other">Sitthi-amorn, C., Chaipayom, O., Udomprasertgul, V., Reinten, T., Linnan, M., Dunn, T., Lawton, B., Cox, R., 2007. Adult injury in Thailand: A Report on the Thai National Injury Survey. Institute of Health Research, Chulalongkorn University, Bangkok. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.cph.chula.ac.th/technical_service/Document/TH%2520adult%2520injury07/Thai%2520Adult%2520injury%2520report%25200409%2520">http://www.cph.chula.ac.th/technical_service/Document/TH%20adult%20injury07/Thai%20Adult%20injury%20report%200409%20</ext-link> (Read-Only).pdf (accessed at 24.04.09).</mixed-citation>
+      </ref>
+      <ref id="bib0045">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sleigh</surname>
+              <given-names>A.C.</given-names>
+            </name>
+            <name>
+              <surname>Seubsman</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Bain</surname>
+              <given-names>C.</given-names>
+            </name>
+            <collab>the Thai Cohort Study Team</collab>
+          </person-group>
+          <article-title>Cohort profile: the Thai cohort of 87 134 Open University students</article-title>
+          <source>Int. J. Epidemiol.</source>
+          <issue>37</issue>
+          <year>2008</year>
+          <fpage>266</fpage>
+          <lpage>272</lpage>
+          <pub-id pub-id-type="pmid">17911153</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="bib0050">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suriyawongpaisal</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Kanchanasut</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Road traffic injuries in Thailand: trends, selected underlying determinants and status of intervention</article-title>
+          <source>Int. J. Inj. Contr. Saf. Promot.</source>
+          <issue>10</issue>
+          <year>2003</year>
+          <fpage>95</fpage>
+          <lpage>104</lpage>
+        </element-citation>
+      </ref>
+      <ref id="bib0055">
+        <mixed-citation publication-type="other">WHO, 2009. Global Status Report on Road Safety: Time for Action. World Health Organization, Geneva. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.who.int/violence_injury_prevention/road_safety_status/2009">http://www.who.int/violence_injury_prevention/road_safety_status/2009</ext-link> (accessed at 17.05.10).</mixed-citation>
+      </ref>
+      <ref id="bib0060">
+        <mixed-citation publication-type="other">Wibulpolprasert, S. (Ed.), 2008. Thailand Health Profile 2005&#x2013;2007. Ministry of Public Health, Bangkok. Available from: <ext-link ext-link-type="uri" xlink:href="http://www.moph.go.th/ops/thp/index.php%3Foption=com_content%26task=view%26id=6%26Itemid=2%26lang=en">http://www.moph.go.th/ops/thp/index.php?option=com_content&amp;task=view&amp;id=6&amp;Itemid=2&amp;lang=en</ext-link> (accessed at 17.05.10).</mixed-citation>
+      </ref>
+    </ref-list>
+    <ack>
+      <title>Acknowledgements</title>
+      <p content-type="acknowledgment">We thank the staff at Sukhothai Thammathirat Open University (STOU) who assisted with student contact and the STOU students who are participating in the cohort study. We also thank Dr. Bandit Thinkamrop and his team from Khon Kaen University for guiding us successfully through the complex data processing and Dr. Lesley Day from the Monash University Accident Research Centre for her comments on the draft manuscript.</p>
+    </ack>
+  </back>
+  <floats-group>
+    <fig id="fig0005">
+      <label>Fig. 1</label>
+      <caption>
+        <p>Frequency of transport injury over previous 12 months, by sex and age.</p>
+      </caption>
+      <graphic xlink:href="gr1"/>
+    </fig>
+    <fig id="fig0010">
+      <label>Fig. 2</label>
+      <caption>
+        <p>Role when injured, by sex and age.</p>
+      </caption>
+      <graphic xlink:href="gr2"/>
+    </fig>
+    <fig id="fig0015">
+      <label>Fig. 3</label>
+      <caption>
+        <p>Vehicle used by drivers and passengers when injured, by sex and age.</p>
+      </caption>
+      <graphic xlink:href="gr3"/>
+    </fig>
+    <fig id="fig0020">
+      <label>Fig. 4</label>
+      <caption>
+        <p>Reported helmet use for motorcycle drivers and passengers in the cohort, by sex and age (excluding 9685 who reported not riding motorbikes).</p>
+      </caption>
+      <graphic xlink:href="gr4"/>
+    </fig>
+    <fig id="fig0025">
+      <label>Fig. 5</label>
+      <caption>
+        <p>Reported front seat belt use for the cohort, by sex and age (excluding 1155 who said the vehicle does not have a front safety belt).</p>
+      </caption>
+      <graphic xlink:href="gr5"/>
+    </fig>
+    <fig id="fig0030">
+      <label>Fig. 6</label>
+      <caption>
+        <p>Reported back seat belt use for the cohort, by sex and age (excluding 23,813 who said the vehicle does not have a back safety belt).</p>
+      </caption>
+      <graphic xlink:href="gr6"/>
+    </fig>
+    <fig id="fig0035">
+      <label>Fig. 7</label>
+      <caption>
+        <p>Reported drink driving during the previous 12 months for drivers in the cohort, by sex and age (excluding those who reported that they did not normally drive and those who reported never drinking alcohol).</p>
+      </caption>
+      <graphic xlink:href="gr7"/>
+    </fig>
+    <table-wrap id="tbl0005" position="float">
+      <label>Table 1</label>
+      <caption>
+        <p>TCS cohort characteristics: comparison with STOU student body and Thai population in 2005 (adapted from <xref rid="bib0035" ref-type="bibr">Seubsman et al., in press</xref>).</p>
+      </caption>
+      <table frame="hsides" rules="groups">
+        <thead>
+          <tr>
+            <th align="left">Distribution (%)</th>
+            <th align="left">TCS cohort</th>
+            <th align="left"><xref rid="tblfn0005" ref-type="table-fn">a</xref>STOU</th>
+            <th align="left"><xref rid="tblfn0010" ref-type="table-fn">b</xref>Thai population &gt;15 years</th>
+            <th/>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5" align="left">
+              <italic>Demographic characteristics</italic>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" align="left">Sex</td>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;Male</td>
+            <td align="char">45.3</td>
+            <td align="char">46.8</td>
+            <td align="char">49.5</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;Female</td>
+            <td align="char">54.7</td>
+            <td align="char">53.2</td>
+            <td align="char">50.5</td>
+            <td/>
+          </tr>
+          <tr>
+            <td colspan="5" align="left">Age (years)</td>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;&lt;21</td>
+            <td align="char">6.2</td>
+            <td align="char">16.3</td>
+            <td align="char">13.3</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;21&#x2013;30</td>
+            <td align="char">51.5</td>
+            <td align="char">56.2</td>
+            <td align="char">23.9</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;31&#x2013;40</td>
+            <td align="char">29.3</td>
+            <td align="char">19.6</td>
+            <td align="char">21.6</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;41&#x2013;50</td>
+            <td align="char">11.0</td>
+            <td align="char">6.7</td>
+            <td align="char">17.5</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;&gt;50</td>
+            <td align="char">2.0</td>
+            <td align="char">1.2</td>
+            <td align="char">24.7</td>
+            <td/>
+          </tr>
+          <tr>
+            <td colspan="5" align="left">
+              <italic>Socioeconomic status</italic>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" align="left">Education (highest completed)</td>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;Lower than junior high school</td>
+            <td/>
+            <td/>
+            <td align="char">56.6</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;Junior to high school</td>
+            <td align="char">48.9</td>
+            <td align="char">44.9</td>
+            <td align="char">30.9</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;Diploma</td>
+            <td align="char">27.0</td>
+            <td align="char">32.7</td>
+            <td align="char">3.7</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;University</td>
+            <td align="char">24.2</td>
+            <td align="char">22.4</td>
+            <td align="char">8.4</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">Monthly income (Baht/month)<xref rid="tblfn0015" ref-type="table-fn">c</xref></td>
+            <td/>
+            <td/>
+            <td/>
+            <td align="left">Monthly income (Baht/month)</td>
+          </tr>
+          <tr>
+            <td/>
+            <td/>
+            <td/>
+            <td align="char">
+              <italic>41.6</italic>
+            </td>
+            <td align="left">
+              <italic>No income/not reported</italic>
+            </td>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;&#x2264;3000</td>
+            <td align="char">11.0</td>
+            <td align="char">14.7</td>
+            <td align="char">
+              <italic>18.9</italic>
+            </td>
+            <td align="left">&#x2264;<italic>3000</italic></td>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;3001&#x2013;7000</td>
+            <td align="char">30.9</td>
+            <td align="char">23.9</td>
+            <td align="char">
+              <italic>19.7</italic>
+            </td>
+            <td align="left">
+              <italic>3001&#x2013;6000</italic>
+            </td>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;7001&#x2013;10,000</td>
+            <td align="char">23.3</td>
+            <td align="char">24.7</td>
+            <td align="char">
+              <italic>7.6</italic>
+            </td>
+            <td align="left">
+              <italic>6001&#x2013;9000</italic>
+            </td>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;&gt;10,000</td>
+            <td align="char">34.7</td>
+            <td align="char">36.8</td>
+            <td align="char">
+              <italic>12.2</italic>
+            </td>
+            <td align="left">&gt;<italic>9000</italic></td>
+          </tr>
+          <tr>
+            <td colspan="5" align="left">
+              <italic>Geographic residence</italic>
+            </td>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;Bangkok and Central</td>
+            <td align="char">41.4</td>
+            <td align="char">40.8</td>
+            <td align="char">37.1</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;North</td>
+            <td align="char">18.1</td>
+            <td align="char">18.1</td>
+            <td align="char">18.6</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;East and Northeast</td>
+            <td align="char">26.8</td>
+            <td align="char">25.7</td>
+            <td align="char">32.0</td>
+            <td/>
+          </tr>
+          <tr>
+            <td align="left">&#xA0;South</td>
+            <td align="char">13.0</td>
+            <td align="char">15.1</td>
+            <td align="char">12.3</td>
+            <td/>
+          </tr>
+        </tbody>
+      </table>
+      <table-wrap-foot>
+        <fn id="tblfn0005">
+          <label>a</label>
+          <p>Data from STOU annual report, 2005.</p>
+        </fn>
+      </table-wrap-foot>
+      <table-wrap-foot>
+        <fn id="tblfn0010">
+          <label>b</label>
+          <p>Thai Health and Welfare survey, 2005.</p>
+        </fn>
+      </table-wrap-foot>
+      <table-wrap-foot>
+        <fn id="tblfn0015">
+          <label>c</label>
+          <p>Income categories available were slightly different for the Thai population compared to TCS and STOU.</p>
+        </fn>
+      </table-wrap-foot>
+    </table-wrap>
+  </floats-group>
+</article>
