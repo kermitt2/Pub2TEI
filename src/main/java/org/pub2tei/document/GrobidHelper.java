@@ -73,7 +73,8 @@ public class GrobidHelper {
 
                     if (checkIsRawField(element)) {
                         elementsToProcess.add(element);
-                        rawStringToProcess.add(element.getTextContent());
+                        //rawStringToProcess.add(element.getTextContent());
+                        rawStringToProcess.add(XMLUtilities.getTextContentWithSpace(element));
                     }
                 }
             }
