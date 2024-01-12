@@ -67,6 +67,12 @@ public class ServiceController implements Pub2TEIPaths {
         GrobidProperties.getInstance(grobidHomeFinder);
         GrobidProperties.setContextExecutionServer(true);
         AbstractEngineFactory.init();
+
+        // update Grobid consolidation settings using service config
+        GrobidProperties.getInstance().setConsolidationService(serviceConfiguration.getConsolidationServiceString());
+        GrobidProperties.getInstance().setGluttonUrl(serviceConfiguration.getGluttonUrl());
+        GrobidProperties.getInstance().setCrossrefMailto(serviceConfiguration.getCrossrefMailto());
+        GrobidProperties.getInstance().setCrossrefToken(serviceConfiguration.getCrossrefToken());
     }
 
     /**

@@ -87,6 +87,12 @@ public class ServiceConfiguration extends Configuration {
         return GrobidConsolidationService.get(consolidation.service);
     }
 
+    public String getConsolidationServiceString() {
+        if (consolidation.service == null)
+            return "crossref";
+        return consolidation.service;
+    }
+
     /**
      * Set which consolidation service to use
      */
