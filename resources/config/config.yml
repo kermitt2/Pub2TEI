@@ -5,10 +5,30 @@ grobidHome: ../grobid/grobid-home
 tmpPath: tmp/
 
 # path to Pub2TEI stylesheet repository as available at https://github.com/kermitt2/Pub2TEI under Stylesheets or to your custom one
+# if you are using the docker image, you don't need to rebuild an image after modifying the stylesheets, you can just change this path
+# and/or mount a volume with the new stylesheets when starting the container (see the documentation) 
 stylesheetsPath: "Stylesheets"
 
 # Limit the maximum number of requests, 0 means use the number of threads of the machine running the JVM
 maxParallelRequests: 0
+
+# Consolidation service to be used, these settings will overwrite possible other default settings in the Grobid configuration file
+# present under Grobid home (within the container if the docker image is used)
+consolidation:
+  # define the bibliographical data consolidation service to be used, either "crossref" for CrossRef REST API or 
+  # "glutton" for https://github.com/kermitt2/biblio-glutton
+  service: "crossref"
+  #service: "glutton"
+  glutton:
+    url: "https://cloud.science-miner.com/glutton"
+    #url: "http://localhost:8080" 
+  crossref:
+    mailto: 
+    # to use crossref web API, you need normally to use it politely and to indicate an email address here, e.g. 
+    mailto: "toto@titi.com"
+    token:
+    # to use Crossref metadata plus service (available by subscription) for better CrossRef API performance
+    #token: "yourmysteriouscrossrefmetadataplusauthorizationtokentobeputhere"
 
 # CORS configuration for the web API service
 corsAllowedOrigins: "*"

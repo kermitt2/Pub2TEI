@@ -460,4 +460,43 @@ public class XMLUtilities {
         return tei;
     }
 
+
+    /**
+     * This method is similar to the usual Element.getTextContent() (get all text under the element
+     * for the whole sub-hierarchy), but ensure we have space characters when inline elements with 
+     * text are present. Also avoid double space characters in the process. 
+     * 
+     * For example: 
+     * <aff id="aff0005"><label>a</label>Monash University  Accident Research Centre, Monash University, Melbourne, Australia</aff>
+     * 
+     * standard getTextContent()
+     * -> aMonash University  Accident Research Centre, Monash University, Melbourne, Australia
+     * 
+     * this method:
+     * -> a Monash University Accident Research Centre, Monash University, Melbourne, Australia 
+     * 
+     **/
+    public static String getTextContentWithSpace(org.w3c.dom.Element element) {
+        NodeList nodeList = element.getChildNodes();
+        StringBuilder buf = new StringBuilder();
+
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            Node currentNode = nodeList.item(i);
+
+            if (currentNode.getNodeType() == Node.TEXT_NODE) {
+                buf.append(currentNode.getNodeValue());
+                buf.append(" ");
+            }
+
+            if (currentNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element newElement = (Element) currentNode;
+                buf.append(getTextContentWithSpace(newElement));
+                buf.append(" ");
+            }
+        }
+
+        String localText = buf.toString();
+        return localText.trim().replaceAll("( )+", " ");
+    }
+
 }
