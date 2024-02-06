@@ -336,12 +336,11 @@ public class GrobidHelper {
                         // depending on where we are - header or citation, we can use different person name parsers
                         List<Person> personList = null;
 
-                        personList = engine.processAuthorsHeader(rawString);
-
+                        //personList = engine.processAuthorsHeader(rawString);
                         personList = engine.processAuthorsCitation(rawString);
 
                         // we have only one affiliation, so we expect one structured affiliation result
-                        if (personList.size() != 1)
+                        if (personList == null || personList.size() != 1)
                             continue;
 
                         String personTEISegment = null;

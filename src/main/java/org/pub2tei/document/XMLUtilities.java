@@ -12,8 +12,7 @@ import javax.xml.xpath.*;
 import net.sf.saxon.om.NameChecker;
 
 import org.w3c.dom.*;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
+import org.xml.sax.*;
 
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.SentenceUtilities;
@@ -118,6 +117,26 @@ public class XMLUtilities {
         }
     }
 
+    // see https://stackoverflow.com/questions/72354297/how-to-disable-fatal-error-showing-in-java
+    // this is a way to avoid getting DOM parser [Fatal Error] written in the output without
+    // any way to control that 
+    public static class NullErrorHandler implements ErrorHandler {
+        @Override
+        public void fatalError(SAXParseException e) {
+            // do nothing
+        }
+
+        @Override
+        public void error(SAXParseException e) {
+            // do nothing
+        }
+        
+        @Override
+        public void warning(SAXParseException e) {
+            // do nothing
+        }
+    }
+
     /**
      * Perform a sentence segmentation of a TEI XML document object. 
      * 
@@ -174,11 +193,16 @@ public class XMLUtilities {
                     boolean fail = false;
                     try {
                         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-                        factory.setNamespaceAware(true);
-                        org.w3c.dom.Document d = factory.newDocumentBuilder().parse(new InputSource(new StringReader(fullSent)));                
+
+                        factory.setNamespaceAware(true);    
+                        DocumentBuilder documentBuilder = factory.newDocumentBuilder();
+                        documentBuilder.setErrorHandler(new NullErrorHandler());
+
+                        org.w3c.dom.Document d = documentBuilder.parse(new InputSource(new StringReader(fullSent)));                
                     } catch(Exception e) {
                         fail = true;
-                    }
+                    } 
+
                     if (fail)
                         toConcatenate.add(sent);
                     else {
