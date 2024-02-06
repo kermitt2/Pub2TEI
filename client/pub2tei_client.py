@@ -208,11 +208,11 @@ class Pub2TEIClient(ApiClient):
         # set the Pub2TEI parameters
         the_data = {}
         if consolidate_references:
-            the_data["consolidate_references"] = "1"
+            the_data["consolidateReferences"] = "1"
         if segment_sentences:
-            the_data["segment_sentences"] = "1"
+            the_data["segmentSentences"] = "1"
         if grobid_refine:
-            the_data["grobid_refine"] = "1"
+            the_data["grobidRefine"] = "1"
 
         try:
             res, status = self.post(
