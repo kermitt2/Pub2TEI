@@ -86,7 +86,7 @@ public class ServiceController implements Pub2TEIPaths {
     }
 
     @Path(PATH_TEXT)
-    @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
+    @Produces(MediaType.APPLICATION_XML + ";charset=utf-8")
     @POST
     public Response processText_post(
         @FormParam(TEXT) String text,
@@ -100,7 +100,7 @@ public class ServiceController implements Pub2TEIPaths {
     }
 
     @Path(PATH_TEXT)
-    @Produces(MediaType.APPLICATION_JSON + ";charset=utf-8")
+    @Produces(MediaType.APPLICATION_XML + ";charset=utf-8")
     @GET
     public Response processText_get(
             @QueryParam(TEXT) String text,
@@ -114,7 +114,7 @@ public class ServiceController implements Pub2TEIPaths {
 
     @Path(PATH_XML)
     @Consumes(MediaType.MULTIPART_FORM_DATA)
-    @Produces("application/json")
+    @Produces("application/xml" + ";charset=utf-8")
     @POST
     public Response processXML(
             @FormDataParam(INPUT) InputStream inputStream,

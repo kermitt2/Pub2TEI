@@ -53,6 +53,57 @@ Start the Pub2TEI service as follow:
 docker run --rm --gpus all --init --ulimit core=0 -p 8060:8060 grobid/pub2tei:0.2
 ```
 
+As visible, by default, the service is started on the port `:8060`, which can be changed as follow for port `:8080`:
+
+```console
+docker run --rm --gpus all --init --ulimit core=0 -p 8080:8060 grobid/pub2tei:0.2
+``` 
+
+## Python client
+
+After starting the service, to process easily directories of XML files, a simple Python client is provided:
+
+```console
+git clone https://github.com/kermitt2/Pub2TEI
+cd client
+python3 pub2tei_client.py --help
+
+usage: pub2tei_client.py [-h] [--input INPUT] [--output OUTPUT] [--config CONFIG] [--n N]
+                         [--consolidate_references] [--segment_sentences] [--grobid_refine] [--force]
+                         [--verbose]
+
+Client for Pub2TEI services
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input INPUT         path to the directory containing XML files to process: .xml
+  --output OUTPUT       path to the directory where to put the results (optional)
+  --config CONFIG       path to the config file, default is ./config.json
+  --n N                 concurrency for service usage
+  --consolidate_references
+                        use GROBID for consolidation of the bibliographical references
+  --segment_sentences   segment sentences in the text content of the document with additional <s>
+                        elements
+  --grobid_refine       use Grobid to structure/enhance raw fields: affiliations, references, person,
+                        dates
+  --force               force re-processing pdf input files when tei output files already exist
+  --verbose             print information about processed files in the console
+```
+
+For example for processing recursively all the `.xml` files in a given directory, with sentence segmentation, the resulting transformed files being written alongside the input files:
+
+```console
+python3 pub2tei_client.py --input ~/test/input/ --segment_sentences
+```
+
+For processing recursively all the `.xml` files in a given input directory, with results in a given output directory, using Grobid to further enhance the transformed document and consolidate the references:
+
+```console
+python3 pub2tei_client.py --input ~/test/input/ --output ~/test/output/ --grobid_refine --consolidate_references
+```
+
+Note that the consolidation is realized with the consolidation service indicated in the configuration file of the Pub2TEI server (under `pub2tei/resources/config/config.yml`, this selected consolidation service overrides the consolidation service possibly indicated in the Grobid configuration file). 
+
 ### Web services
 
 Tranform a publisher XML into TEI XML format, with optional enhancements.
@@ -61,7 +112,7 @@ Tranform a publisher XML into TEI XML format, with optional enhancements.
 |---        |---                    |---                   |---                     |---            |---            |
 | POST      | `multipart/form-data` | `application/xml`    | `input`                | required      | publisher XML file to be processed |
 |           |                       |                      | `segmentSentences`     | optional      | Boolean, if true the paragraphs structures in the resulting TEI will be further segmented into sentence elements <s> |
-|           |                       |                      | `grobidRefine=1`       | optional      | Boolean, if true the raw affiliations and raw biblographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML |
+|           |                       |                      | `grobidRefine`         | optional      | Boolean, if true the raw affiliations and raw biblographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML |
 |           |                       |                      | `consolidateReferences` | optional      | Consolidate all the biblographical references, `consolidateReferences` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
 
 Response status codes:
@@ -83,7 +134,7 @@ The resulting TEI has additional sentence markups, additional structured affilit
 
 ## Running the project as a Java application
 
-It is recommended to use the Docker image, which is the easiest way to run Pub2TEI. 
+It is recommended to use the Docker image, which is the easiest way to run Pub2TEI. The following explains how to install, build and run the service from the Java source. 
 
 ### Requirements
 
@@ -125,8 +176,7 @@ docker build -t grobid/pub2tei:0.2 --build-arg PUB2TEI_VERSION=0.2 --file Docker
 
 ## Only using the stylesheets
 
-This legacy usage should be normally avoided, because the additional document enhancement and problem corrections will not take place. In addition, the transformation here are not parallelized, so less efficient for large scale document processing. However, it is useful to consider only the stylesheets when testing the transformation and working on improving these stylesheets.   
-
+This legacy usage should be normally avoided, because document enhancements and corrections will not take place. In addition, the transformation here are not parallelized, so less efficient for large scale document processing. However, it is useful to consider only the stylesheets when testing the transformation and working on improving these stylesheets.   
 
 ### Requirement
 
