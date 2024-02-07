@@ -2,5 +2,5 @@
     "pub2tei_server": "http://localhost:8060",
     "batch_size": 50,
     "sleep_time": 5,
-    "timeout": 120
+    "timeout": 180
 }

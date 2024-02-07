@@ -138,6 +138,24 @@ public class XMLUtilities {
     }
 
     /**
+     * Instanciate a DOM XML parser factory with reasonable default values (no validation, 
+     * no DTD loading, etc.).
+     **/ 
+    public static DocumentBuilderFactory getReasonableDocumentBuilderFactory() {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setNamespaceAware(false);
+        factory.setValidating(false);
+        try {
+            factory.setFeature("http://xml.org/sax/features/validation", false);
+            factory.setFeature("http://apache.org/xml/features/nonvalidating/load-dtd-grammar", false);
+            factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+        } catch(Exception e) {
+        }
+
+        return factory;
+    }
+
+    /**
      * Perform a sentence segmentation of a TEI XML document object. 
      * 
      * The sentence segmenter to be used is the one defined in the Grobid configuration
@@ -192,7 +210,7 @@ public class XMLUtilities {
                     String fullSent = "<s xmlns=\"http://www.tei-c.org/ns/1.0\">" + newSent + "</s>";
                     boolean fail = false;
                     try {
-                        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                        DocumentBuilderFactory factory = getReasonableDocumentBuilderFactory();
 
                         factory.setNamespaceAware(true);    
                         DocumentBuilder documentBuilder = factory.newDocumentBuilder();
@@ -224,7 +242,7 @@ public class XMLUtilities {
                     //System.out.println(sent);  
 
                     try {
-                        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                        DocumentBuilderFactory factory = getReasonableDocumentBuilderFactory();
                         factory.setNamespaceAware(true);
                         org.w3c.dom.Document d = factory.newDocumentBuilder().parse(new InputSource(new StringReader(sent)));
                         //d.getDocumentElement().normalize();

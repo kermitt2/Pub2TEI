@@ -45,9 +45,9 @@ server:
     - type: http
       port: 8061
   registerDefaultExceptionMappers: false
-  maxThreads: 4096
-  maxQueuedRequests: 4096
-  acceptQueueSize: 4096
+  maxThreads: 1024
+  maxQueuedRequests: 1024
+  acceptQueueSize: 1024
   #requestLog:
   #    appenders: []
 
