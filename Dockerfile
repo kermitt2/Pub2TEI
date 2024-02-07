@@ -3,6 +3,12 @@
 # this is the full GROBID image using NVIDIA Container Toolkit to automatically recognize possible GPU drivers on the host machine
 FROM grobid/grobid:0.8.0
 
+# Add Tini
+ENV TINI_VERSION v0.19.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+ENTRYPOINT ["/tini", "-s", "--"]
+
 WORKDIR /opt/Pub2TEI
 COPY . .
 RUN ./gradlew clean install --info --stacktrace
