@@ -219,7 +219,7 @@ class Pub2TEIClient(ApiClient):
                 url=the_url, files=files, data=the_data, headers={"Accept": "application/xml"}, timeout=self.config['timeout']
             )
 
-            if status == 503:
+            if status == 503 or status == 408:
                 time.sleep(self.config["sleep_time"])
                 return self.process_xml(
                     xml_file,
