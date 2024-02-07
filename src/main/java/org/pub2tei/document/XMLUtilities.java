@@ -30,6 +30,13 @@ public class XMLUtilities {
     private static final Logger LOGGER = LoggerFactory.getLogger(XMLUtilities.class);
 
     private static List<String> textualElements = Arrays.asList("p", "figDesc");
+    private static List<String> noSegmentationElements = Arrays.asList("listBibl", "table");
+
+    private static DocumentBuilderFactory factory = getReasonableDocumentBuilderFactory();
+
+    private static TransformerFactory transformerFactory = TransformerFactory.newInstance();
+
+    private static XPathFactory xpathFactory = XPathFactory.newInstance();
 
     public static String toPrettyString(String xml, int indent) {
         try {
@@ -40,7 +47,7 @@ public class XMLUtilities {
 
             // Remove whitespaces outside tags
             document.normalize();
-            XPath xPath = XPathFactory.newInstance().newXPath();
+            XPath xPath = xpathFactory.newXPath();
             org.w3c.dom.NodeList nodeList = (org.w3c.dom.NodeList) xPath.evaluate("//text()[normalize-space()='']",
                                                           document,
                                                           XPathConstants.NODESET);
@@ -51,7 +58,6 @@ public class XMLUtilities {
             }
 
             // Setup pretty print options
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
             transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
@@ -73,7 +79,6 @@ public class XMLUtilities {
     public static void fixAbstract(org.w3c.dom.Document doc) {
         // find abstract element
         try {
-            XPathFactory xpathFactory = XPathFactory.newInstance();
             XPathExpression xpathExp = xpathFactory.newXPath().compile("//abstract/p/div/p");  
             NodeList matchNodes = (NodeList) xpathExp.evaluate(doc, XPathConstants.NODESET);
             if (matchNodes.getLength()>0) {
@@ -178,6 +183,8 @@ public class XMLUtilities {
             newChildren.add(children.item(i));
         }
 
+        factory.setNamespaceAware(true);
+
         for (int i = 0; i < nbChildren; i++) {
             final Node n = newChildren.get(i);
             if ( (n.getNodeType() == Node.ELEMENT_NODE) && 
@@ -210,12 +217,8 @@ public class XMLUtilities {
                     String fullSent = "<s xmlns=\"http://www.tei-c.org/ns/1.0\">" + newSent + "</s>";
                     boolean fail = false;
                     try {
-                        DocumentBuilderFactory factory = getReasonableDocumentBuilderFactory();
-
-                        factory.setNamespaceAware(true);    
                         DocumentBuilder documentBuilder = factory.newDocumentBuilder();
                         documentBuilder.setErrorHandler(new NullErrorHandler());
-
                         org.w3c.dom.Document d = documentBuilder.parse(new InputSource(new StringReader(fullSent)));                
                     } catch(Exception e) {
                         fail = true;
@@ -242,8 +245,6 @@ public class XMLUtilities {
                     //System.out.println(sent);  
 
                     try {
-                        DocumentBuilderFactory factory = getReasonableDocumentBuilderFactory();
-                        factory.setNamespaceAware(true);
                         org.w3c.dom.Document d = factory.newDocumentBuilder().parse(new InputSource(new StringReader(sent)));
                         //d.getDocumentElement().normalize();
                         Node newNode = doc.importNode(d.getDocumentElement(), true);
@@ -274,7 +275,10 @@ public class XMLUtilities {
                 }
             } else if (n.getNodeType() == Node.ELEMENT_NODE) {
                 //XMLUtilities.segment(doc, (Element) n);
-                XMLUtilities.segment(doc, n);
+                if (!noSegmentationElements.contains(n.getNodeName())) {
+                    // no need to go down these "no segmentation" elements
+                    XMLUtilities.segment(doc, n);
+                }
             } 
         }
     }
@@ -282,7 +286,6 @@ public class XMLUtilities {
     public static String serialize(org.w3c.dom.Document doc, Node node) {
         // to avoid issues with space remaining from deleted nodes
         try {
-            XPathFactory xpathFactory = XPathFactory.newInstance();
             // XPath to find empty text nodes.
             XPathExpression xpathExp = xpathFactory.newXPath().compile(
                     "//text()[normalize-space(.) = '']");  
@@ -308,8 +311,7 @@ public class XMLUtilities {
             }
             StringWriter writer = new StringWriter();
             StreamResult result = new StreamResult(writer);
-            TransformerFactory tf = TransformerFactory.newInstance();
-            Transformer transformer = tf.newTransformer();
+            Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.METHOD, "xml");
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
@@ -409,8 +411,6 @@ public class XMLUtilities {
         // collect xml:id and check for duplicate
         List<String> xmlIdentifiers = new ArrayList<>();
         List<String> dulicatedXmlIdentifiers = new ArrayList<>();
-
-        XPathFactory xpathFactory = XPathFactory.newInstance();
 
         try {
             XPathExpression xpathExp = xpathFactory.newXPath().compile("//@id");  
