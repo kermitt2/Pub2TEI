@@ -2679,13 +2679,7 @@
     </xsl:template>
 
     <xsl:template match="supplementary-material">
-        <ref>
-            <xsl:attribute name="type"> supplementary-material </xsl:attribute>
-            <xsl:attribute name="target">
-                <xsl:value-of select="@xlink:href"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </ref>
+        <xsl:apply-templates/>
     </xsl:template>
 
     <!-- Copyright related information to appear in <publicationStmt> -->

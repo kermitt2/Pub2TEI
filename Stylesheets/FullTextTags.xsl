@@ -694,9 +694,9 @@
         </ref>
     </xsl:template>
     
-    <xsl:template match="anchor">
+    <!--xsl:template match="anchor">
         <anchor xml:id="{@id}"/>
-    </xsl:template>
+    </xsl:template-->
     
     
     <!-- Elsevier pointers -->

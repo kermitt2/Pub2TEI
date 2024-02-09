@@ -137,6 +137,12 @@ public class XMLUtilities {
             }
             for(int i=0; i<matchNodesList.size(); i++) {
                 Node targetNode = matchNodesList.get(i);
+
+                if (targetNode.getNodeType() == Node.ELEMENT_NODE && 
+                    (targetNode.getNodeName().equals("list") || "list".equals(targetNode.getLocalName()))) {
+                    XMLUtilities.segment(doc, targetNode);
+                }
+
                 Node pNode = targetNode.getParentNode().getParentNode();
                 Node sNode = targetNode.getParentNode();
                 sNode.removeChild(targetNode);
@@ -214,6 +220,7 @@ public class XMLUtilities {
             final Node n = newChildren.get(i);
             if ( (n.getNodeType() == Node.ELEMENT_NODE) && 
                  (textualElements.contains(n.getNodeName())) ) {
+
                 // text content
                 StringBuffer textBuffer = new StringBuffer();
                 NodeList childNodes = n.getChildNodes();
@@ -290,8 +297,9 @@ public class XMLUtilities {
                     theDiv.appendChild(theP);
                     n.appendChild(theDiv);
                 } else {
-                    for(Node theNode : newNodes) 
+                    for(Node theNode : newNodes) {
                         n.appendChild(theNode);
+                    }
                 }
             } else if (n.getNodeType() == Node.ELEMENT_NODE) {
                 //XMLUtilities.segment(doc, (Element) n);
@@ -517,6 +525,7 @@ public class XMLUtilities {
         tei = tei.replaceAll("xmlns=\"\" ", "");
         tei = tei.replaceAll("xml:id=\"\" ", "");
         tei = tei.replaceAll(" type=\"\"", "");
+        tei = tei.replaceAll(" target=\"\"", "");
         // clean remaining namespaces
         tei = tei.replace("<s xmlns=\"http://www.tei-c.org/ns/1.0\"", "<s");
         tei = tei.replace("<div xmlns=\"http://www.tei-c.org/ns/1.0\"", "<div");
