@@ -14,7 +14,7 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <teiHeader>
@@ -47,7 +47,7 @@
                             </availability>
                         </xsl:if>
                         <xsl:if test="@price-code[string(.)='free']">
-                            <availability status="OpenAccess">
+                            <availability status="restricted">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>

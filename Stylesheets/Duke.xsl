@@ -37,7 +37,7 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="xml:lang">
@@ -141,15 +141,16 @@
                                 <xsl:apply-templates select="issue/record/subjects"/>
                             </textClass>
                         </xsl:if>
-                        <xsl:if test="issue/record/@lang">
-                        <langUsage>
-                            <language>
-                                <xsl:attribute name="ident">
-                                    <xsl:value-of select="translate(issue/record/@lang,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
-                                </xsl:attribute>
-                            </language>
-                        </langUsage>
-                        </xsl:if>
+                        <!-- PL: always present as attribute at TEI level -->
+                        <!-- xsl:if test="issue/record/@lang">
+                            <langUsage>
+                                <language>
+                                    <xsl:attribute name="ident">
+                                        <xsl:value-of select="translate(issue/record/@lang,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
+                                    </xsl:attribute>
+                                </language>
+                            </langUsage>
+                        </xsl:if -->
                     </profileDesc>
                 </xsl:if>
             </teiHeader>

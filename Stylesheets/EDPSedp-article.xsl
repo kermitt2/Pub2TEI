@@ -19,7 +19,7 @@
             <xsl:value-of select="$journalList/descendant::tei:row[tei:cell/text()=$localISSN]"/>
         </xsl:variable>
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <xsl:if test="article-id/language">
@@ -79,7 +79,8 @@
 						<!-- PL: abstract is moved from <front> to here -->
 						<xsl:apply-templates select="abstract"/>
 						
-                        <langUsage>
+                        <!-- PL: already same info as attribute at TEI element level -->
+                        <!--langUsage>
                             <language>
                                 <xsl:attribute name="ident">
                                     <xsl:call-template name="Varia2ISO639">
@@ -87,7 +88,7 @@
                                     </xsl:call-template>
                                 </xsl:attribute>
                             </language>
-                        </langUsage>
+                        </langUsage-->
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="History">

@@ -12,7 +12,7 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <teiHeader>

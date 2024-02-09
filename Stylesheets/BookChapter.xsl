@@ -69,7 +69,7 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <xsl:choose>
@@ -209,7 +209,8 @@
                                 <xsl:apply-templates select="$docIssue//book-categories/subj-group"/>
                             </textClass>
                         </xsl:if>
-                        <xsl:if test="//body/book-part/@xml:lang[string-length()&gt; 0]">
+                        <!-- PL: same lang already as attribute at TEI element -->
+                        <!--xsl:if test="//body/book-part/@xml:lang[string-length()&gt; 0]">
                             <langUsage>
                                 <language>
                                     <xsl:attribute name="ident">
@@ -217,7 +218,7 @@
                                     </xsl:attribute>
                                 </language>
                             </langUsage>
-                        </xsl:if>
+                        </xsl:if-->
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="book-meta/abstract[string-length() &gt; 0]">
@@ -286,7 +287,8 @@
                         <xsl:if test="book-meta/kwd-group[string-length() &gt; 0]">
                             <xsl:apply-templates select="book-meta/kwd-group"/>
                         </xsl:if>
-                        <xsl:if test="book-meta/abstract/@xml:lang">
+                        <!-- PL: always present as attribute at TEI level -->
+                        <!-- xsl:if test="book-meta/abstract/@xml:lang">
                             <langUsage>
                                 <language>
                                     <xsl:attribute name="ident">
@@ -294,7 +296,7 @@
                                     </xsl:attribute>
                                 </language>
                             </langUsage>
-                        </xsl:if>
+                        </xsl:if -->
                     </profileDesc>
                 </xsl:if>
             </teiHeader>

@@ -2435,7 +2435,7 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <xsl:if test="@xml:lang">
@@ -2733,7 +2733,8 @@
                         <xsl:apply-templates select="item-info/ce:doctopics"/>
                         <xsl:apply-templates select="els1:head/ce:keywords |els2:head/ce:keywords | head/ce:keywords"/>
                         <!-- language -->
-                        <xsl:variable name="codeLangue">
+                        <!-- PL: always present as attribute at TEI level, and avoid hacky test -->
+                        <!-- xsl:variable name="codeLangue">
                             <xsl:choose>
                                 <xsl:when test="//ce:doi='10.1016/0020-7055(75)90037-6'">ru</xsl:when>
                                 <xsl:when test="//ce:doi='10.1016/S0065-1281(77)80028-7'">it</xsl:when>
@@ -2761,7 +2762,7 @@
                                     </xsl:attribute>
                                 </language>
                             </langUsage>
-                        </xsl:if>
+                        </xsl:if-->
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="//ce:glyph">

@@ -40,9 +40,14 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
+            <xsl:if test="//Chapter/@Language">
+                <xsl:attribute name="xml:lang">
+                    <xsl:value-of select="translate(//Chapter/@Language,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+                </xsl:attribute>
+            </xsl:if>
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
@@ -53,7 +58,7 @@
                         <xsl:apply-templates
                             select="Series/Book/descendant::Chapter/ChapterInfo/ChapterCopyright"/>
                         <xsl:if test="//ArticleGrants/BodyPDFGrant[string(@Grant)='OpenAccess']">
-                            <availability status="OpenAccess">
+                            <availability status="restricted">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
@@ -127,15 +132,16 @@
                     <textClass ana="subject">
                         <xsl:apply-templates select="//Book/descendant::SubjectCollection"/></textClass>
                     <textClass ana="subject"><xsl:apply-templates select="//Book/descendant::BookSubjectGroup"/></textClass>
-                <xsl:if test="//Chapter/@Language">
-                    <langUsage>
-                        <language>
-                            <xsl:attribute name="ident">
-                                <xsl:value-of select="translate(//Chapter/@Language,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-                            </xsl:attribute>
-                        </language>
-                    </langUsage>
-                </xsl:if>
+                    <!-- PL: always present as attribute at TEI level -->
+                    <!--xsl:if test="//Chapter/@Language">
+                        <langUsage>
+                            <language>
+                                <xsl:attribute name="ident">
+                                    <xsl:value-of select="translate(//Chapter/@Language,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+                                </xsl:attribute>
+                            </language>
+                        </langUsage>
+                    </xsl:if-->
                 </profileDesc>
             </teiHeader>
             <text>

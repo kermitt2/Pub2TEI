@@ -78,7 +78,8 @@
 						<!-- PL: abstract is moved from <front> to here -->
 						<xsl:apply-templates select="Abstract"/>
 						
-                        <langUsage>
+                        <!-- PL: already same info as attribute at TEI element level -->
+                        <!--langUsage>
                             <language>
                                 <xsl:attribute name="ident">
                                     <xsl:call-template name="Varia2ISO639">
@@ -86,7 +87,7 @@
                                     </xsl:call-template>
                                 </xsl:attribute>
                             </language>
-                        </langUsage>
+                        </langUsage-->
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="History">

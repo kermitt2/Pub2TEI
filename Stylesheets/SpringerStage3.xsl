@@ -39,7 +39,7 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <teiHeader>
@@ -64,7 +64,7 @@
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="//ArticleGrants/BodyPDFGrant[string(@Grant)='OpenAccess']">
-                                <availability status="OpenAccess">
+                                <availability status="restricted">
                                     <p>Open Access</p>
                                 </availability>
                         </xsl:if>
@@ -148,7 +148,8 @@
                                     select="Journal/Volume/Issue/Article/ArticleHeader/KeywordGroup"
                                 />
                                 <!-- Language -->
-                                <xsl:choose>
+                                <!-- PL: to review and move to TEI element level -->
+                                <!-- xsl:choose>
                                     <xsl:when test="//ArticleTitle[1]/@Language">
                                     <langUsage>
                                         <language>
@@ -177,7 +178,7 @@
                                             </language>
                                         </langUsage>
                                     </xsl:otherwise>
-                                </xsl:choose>
+                                </xsl:choose-->
                             </profileDesc>
                         </xsl:if>
                         <xsl:if test="Journal/Volume/Issue/Article/ArticleInfo/ArticleHistory">

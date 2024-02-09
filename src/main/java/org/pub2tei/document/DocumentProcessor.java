@@ -62,6 +62,7 @@ public class DocumentProcessor {
             if (segmentSentences) {
                 org.w3c.dom.Element root = document.getDocumentElement();
                 XMLUtilities.segment(document, root);
+                XMLUtilities.fixSegmentedFigureTableList(document);
             }
 
             if (refine) {
@@ -116,6 +117,7 @@ public class DocumentProcessor {
             if (segmentSentences) {
                 org.w3c.dom.Element root = document.getDocumentElement();
                 XMLUtilities.segment(document, root);
+                XMLUtilities.fixSegmentedFigureTableList(document);
             }
 
             if (refine) {

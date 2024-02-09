@@ -31,14 +31,16 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <xsl:if test="Language">
                 <xsl:attribute name="xml:lang">
                     <xsl:choose>
                         <xsl:when test="Language='EN'">en</xsl:when>
-                        <xsl:otherwise>en</xsl:otherwise>
+                        <xsl:otherwise>
+                            <xsl:value-of select="translate(Language,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
+                        </xsl:otherwise>
                     </xsl:choose>
                 </xsl:attribute>
             </xsl:if>
@@ -52,7 +54,7 @@
                             <xsl:apply-templates select="CopyrightInformation"/>
                         </xsl:if>
                         <xsl:if test="OpenAccess[string(.)='True']">
-                            <availability status="OpenAccess">
+                            <availability status="restricted">
                                 <p>Open Access</p>
                             </availability>
                         </xsl:if>
@@ -85,7 +87,8 @@
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
 						<xsl:apply-templates select="Abstract"/>
-                        <langUsage>
+                        <!-- PL: always present as attribute at TEI level -->
+                        <!--langUsage>
                             <language>
                                 <xsl:attribute name="ident">
                                     <xsl:call-template name="Varia2ISO639">
@@ -93,7 +96,7 @@
                                     </xsl:call-template>
                                 </xsl:attribute>
                             </language>
-                        </langUsage>
+                        </langUsage-->
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="History">

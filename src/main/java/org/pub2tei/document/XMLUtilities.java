@@ -41,7 +41,7 @@ public class XMLUtilities {
     public static String toPrettyString(String xml, int indent) {
         try {
             // Turn xml string into a document
-            org.w3c.dom.Document document = DocumentBuilderFactory.newInstance()
+            org.w3c.dom.Document document = factory
                     .newDocumentBuilder()
                     .parse(new InputSource(new ByteArrayInputStream(xml.getBytes("utf-8"))));
 
@@ -119,6 +119,31 @@ public class XMLUtilities {
             }
         } catch(Exception ex) {
             LOGGER.error("abstract post processing failed", ex);
+        }
+    }
+
+    /**
+     * In case of sentence segmentation, change p/s/figure and p/s/table into p/figure 
+     * and p/table allowed by Grobid TEI customization
+     **/
+    public static void fixSegmentedFigureTableList(org.w3c.dom.Document doc) {
+        // find abstract element
+        try {
+            XPathExpression xpathExp = xpathFactory.newXPath().compile("//*[local-name()='p']/*[local-name()='s']/*[local-name()='figure' or local-name()='table' or local-name()='list']"); 
+            NodeList matchNodes = (NodeList) xpathExp.evaluate(doc, XPathConstants.NODESET);
+            List<Node> matchNodesList = new ArrayList<>();
+            for(int i=0; i<matchNodes.getLength(); i++) {
+                matchNodesList.add(matchNodes.item(i));
+            }
+            for(int i=0; i<matchNodesList.size(); i++) {
+                Node targetNode = matchNodesList.get(i);
+                Node pNode = targetNode.getParentNode().getParentNode();
+                Node sNode = targetNode.getParentNode();
+                sNode.removeChild(targetNode);
+                pNode.insertBefore(targetNode, sNode);
+            }            
+        } catch(Exception ex) {
+            LOGGER.error("figure/table post processing failed", ex);
         }
     }
 
@@ -237,11 +262,6 @@ public class XMLUtilities {
                     //System.out.println("-----------------");
                     sent = sent.replace("\n", " ");
                     sent = sent.replaceAll("( )+", " ");
-                
-                    //Element sentenceElement = doc.createElement("s");                        
-                    //sentenceElement.setTextContent(sent);
-                    //newNodes.add(sentenceElement);
-
                     //System.out.println(sent);  
 
                     try {
@@ -493,12 +513,19 @@ public class XMLUtilities {
         tei = tei.replaceAll("</rs>\n( )*</p>", "</rs></p>");
         tei = tei.replaceAll("</ref>\n( )*</p>", "</ref></p>");
         tei = tei.replaceAll("</ref>\n( )*<rs ", "</ref> <rs ");
+        // remove empty attributes
         tei = tei.replaceAll("xmlns=\"\" ", "");
         tei = tei.replaceAll("xml:id=\"\" ", "");
+        tei = tei.replaceAll(" type=\"\"", "");
+        // clean remaining namespaces
         tei = tei.replace("<s xmlns=\"http://www.tei-c.org/ns/1.0\"", "<s");
         tei = tei.replace("<div xmlns=\"http://www.tei-c.org/ns/1.0\"", "<div");
         tei = tei.replace("<note xmlns=\"http://www.tei-c.org/ns/1.0\"", "<note");
         tei = tei.replace("<label xmlns=\"http://www.tei-c.org/ns/1.0\"", "<label");
+        // remove empty <s> elements
+        tei = tei.replaceAll("<s/>", "");
+        // remove empty lines
+        tei = tei.replaceAll("(?m)^[ \t]*\r?\n", "");
         return tei;
     }
 

@@ -128,7 +128,7 @@
             <xsl:value-of select="$datecreation"/>
         </xsl:comment-->
         <TEI>
-            <xsl:attribute name="xsi:schemaLocation">
+            <xsl:attribute name="xsi:noNamespaceSchemaLocation">
                 <xsl:text>https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd</xsl:text>
             </xsl:attribute>
             <xsl:attribute name="xml:lang">
@@ -190,7 +190,7 @@
                                                 </xsl:if>
                                             </xsl:otherwise>
                                         </xsl:choose>
-                                        <!-- redressement des titres vides -->
+                                        <!-- empty titles -->
                                         <xsl:choose>
                                             <xsl:when test="//header/publicationMeta[@level='unit']/doi='10.1046/j.1523-1739.1997.0110051265.x'">
                                                 <xsl:text>Erratum: Diploid expected heterozygosity and haploid allelic diversity equations misprinted</xsl:text>
@@ -321,7 +321,7 @@
                     <profileDesc>
 						<!-- PL: abstract is moved from <front> to here -->
                         <xsl:if test="header/contentMeta/abstractGroup/abstract">
-                            <!-- SG - reprise de tous les abstracts -->
+                            <!-- SG - all abstracts -->
                             <xsl:for-each select="header/contentMeta/abstractGroup/abstract">
                             <abstract>
                                 <xsl:choose>
@@ -330,7 +330,6 @@
                                             <xsl:variable name="codeLangue">
                                                 <xsl:value-of select="translate(@xml:lang | @lang,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>
                                             </xsl:variable>
-                                            <!-- correction arabe 10.1002/1522-239X(200210)113:5/6&lt;342::AID-FEDR342&gt;3.0.CO;2-S au lieu de espagnol -->
                                             <xsl:choose>
                                                 <xsl:when test="$codeLangue='ar' and //component/header/publicationMeta[@level='unit']/doi='10.1002/1522-239X(200210)113:5/6&lt;342::AID-FEDR342&gt;3.0.CO;2-S'">es</xsl:when>
                                                 <xsl:when test="$codeLangue='ka' and //component/header/publicationMeta[@level='unit']/doi='10.1111/j.1439-0469.2008.00477.x'">de</xsl:when>
@@ -399,15 +398,16 @@
                                 </keywords>
                             </textClass>
                         </xsl:if>
-                        <xsl:if test="$codeLangue">
-                        <langUsage>
-                            <language>
-                                <xsl:attribute name="ident">
-                                    <xsl:value-of select="$codeLangue"/>
-                                </xsl:attribute>
-                            </language>
-                        </langUsage>
-                        </xsl:if>
+                        <!-- PL: always present as attribute at TEI level -->
+                        <!--xsl:if test="$codeLangue">
+                            <langUsage>
+                                <language>
+                                    <xsl:attribute name="ident">
+                                        <xsl:value-of select="$codeLangue"/>
+                                    </xsl:attribute>
+                                </language>
+                            </langUsage>
+                        </xsl:if-->
                     </profileDesc>
                 </xsl:if>
                 <xsl:if test="front/article-meta/history">
