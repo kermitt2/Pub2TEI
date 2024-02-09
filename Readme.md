@@ -1,5 +1,9 @@
 # Pub2TEI
 
+[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![Docker Hub](https://img.shields.io/docker/pulls/grobid/pub2tei.svg)](https://hub.docker.com/r/grobid/pub2tei/ "Docker Pulls")
+[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/kermitt2/pub2tei/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/kermitt2/pub2tei)
+
 ## Project goal
 
 This project aims at converting XML documents encoded in various scientific publisher formats into a common TEI XML format. Often called __document ingestion__, converting a myriad of heterogeneous publisher formats into a common working format is a painful and time-consuming sub-task for building scientific digital library applications.
