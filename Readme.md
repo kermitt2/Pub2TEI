@@ -2,7 +2,7 @@
 
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Docker Hub](https://img.shields.io/docker/pulls/grobid/pub2tei.svg)](https://hub.docker.com/r/grobid/pub2tei/ "Docker Pulls")
-[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/kermitt2/pub2tei/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/kermitt2/pub2tei)
+[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/kermitt2/Pub2TEI/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/kermitt2/Pub2TEI)
 
 ## Project goal
 
