@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Grobid TEI result schema</title>
+                <author>Patrice Lopez</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>for use by whoever wants it</p>
+            </publicationStmt>
+            <notesStmt>
+                <note type="ns">http://www.example.org/ns/nonTEI</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>created on Sunday 05th October 2014 06:25:09 AM</p>
+            </sourceDesc>
+        </fileDesc><encodingDesc><appInfo><application ident="RomaJS" version="1.0.0" when="2024-02-09T13:54:32.617Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <divGen type="toc"/>
+        </front>
+        <body>
+            <p>Schema for structured documents resulting from the automatic extraction and restructuring realized by
+                Grobid.</p>
+            <schemaSpec ident="Grobid" docLang="en" prefix="tei_" xml:lang="en" targetLang="en">
+                <!--moduleRef
+                    url="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/mathml2-main.rng"/-->
+                <moduleRef key="core" except="abbr add addName binaryObject cb choice cit citedRange corr del distinct divGen emph expan foreign gap gb headItem headLabel index l lg measure measureGrp media mentioned milestone num orig pb q reg relatedItem resp respStmt rs said sic soCalled sp speaker stage teiCorpus textLang time unclear"/>
+                <moduleRef key="tei" except=""/>
+                <moduleRef key="header" except="authority biblFull cRefPattern calendar calendarDesc catDesc catRef category classDecl correction creation distributor editorialDecl extent funder geoDecl handNote hyphenation interpretation langUsage language listChange listPrefixDef namespace normalization prefixDef principal projectDesc punctuation quotation refState refsDecl rendition samplingDecl scriptNote segmentation sponsor stdVals styleDefDecl tagUsage tagsDecl taxonomy typeNote"/>
+                <moduleRef key="textstructure" except="argument byline closer dateline div1 div2 div3 div4 div5 div6 div7                     docAuthor docDate docEdition docImprint docTitle epigraph floatingText group imprimatur opener postscript                     salute signed titlePage titlePart titlePart trailer"/>
+                <moduleRef key="namesdates" except="age birth bloc climate death district education event faith floruit geo geogFeat geogName langKnowledge langKnown listEvent listNym listOrg listPerson listPlace listRelation location nameLink nationality nym occupation offset person personGrp place placeName population relation residence sex socecStatus terrain trait"/>
+                <moduleRef key="linking" except="ab alt altGrp join joinGrp linkGrp seg state timeline"/>
+                <moduleRef key="figures" except="notatedMusic"/>
+                <moduleRef key="transcr" except="addSpan am damage damageSpan delSpan ex fw handNotes handShift line listTranspose metamark mod path redo restore retrace secl sourceDoc space subst substJoin supplied surfaceGrp surplus transpose undo zone"/>
+                <!-- only s from the analysis module, in case we want the final result with sentence segmentation -->
+                <!-- used to be except="c cl interp interpGrp m pc phr span spanGrp w" -->
+                <moduleRef key="analysis" include="s"/>
+
+                <!-- Inclusion of the MathML schema -->
+                
+
+                <!-- formula can contains raw text or graphics, and formula can appear under div, because often completely outside a paragraph -->
+                <elementSpec ident="formula" mode="change">
+                    <classes mode="change">
+                        <memberOf key="att.typed" mode="add"/>
+                        <memberOf key="model.pLike" mode="add"/>
+                    </classes>
+                    <content>
+                        <alternate minOccurs="0" maxOccurs="unbounded">
+                            <textNode/>
+                            <elementRef key="label"/>
+                            <classRef key="model.graphicLike"/>
+                            <classRef key="model.hiLike"/>
+                            <elementRef key="mathml.math"/>
+                        </alternate>
+                    </content>
+                    <exemplum>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <formula notation="mathml">
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mi>E</mi>
+                                    <mo>=</mo>
+                                    <mi>m</mi>
+                                    <msup>
+                                        <mrow>
+                                            <mi>c</mi>
+                                        </mrow>
+                                        <mrow>
+                                            <mn>2</mn>
+                                        </mrow>
+                                    </msup>
+                                </math>
+                            </formula>
+                        </egXML>
+                    </exemplum>
+                </elementSpec>
+
+                <elementSpec ident="monogr" mode="change">
+                    <content>
+                        <alternate minOccurs="0" maxOccurs="unbounded">
+                            <classRef key="model.respLike"/>
+                            <elementRef key="imprint"/>
+                            <elementRef key="authority"/>
+                            <classRef key="model.noteLike"/>
+                            <elementRef key="biblScope"/>
+                            <elementRef key="extent"/>
+                            <elementRef key="edition"/>
+                            <elementRef key="availability"/>
+                            <elementRef key="textLang"/>
+                            <elementRef key="idno"/>
+                            <classRef key="model.ptrLike"/>
+                            <elementRef key="title"/>
+                        </alternate>
+                    </content>
+                </elementSpec>
+
+                <!-- allow empty imprint -->
+                <elementSpec ident="imprint" mode="change" module="core">
+                    <content>
+                        <sequence>
+                            <alternate minOccurs="0" maxOccurs="unbounded">
+                                <elementRef key="classCode"/>
+                                <elementRef key="catRef"/>
+                            </alternate>
+                            <sequence minOccurs="0" maxOccurs="unbounded">
+                                <alternate minOccurs="0" maxOccurs="unbounded">
+                                    <classRef key="model.imprintPart"/>
+                                    <classRef key="model.dateLike"/>
+                                </alternate>
+                                <elementRef key="respStmt" minOccurs="0" maxOccurs="unbounded"/>
+                                <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
+                            </sequence>
+                        </sequence>
+                    </content>
+                </elementSpec>
+
+                <!-- allow empty and structured abstract -->
+                <!-- structured abstract is an obvious need, see https://github.com/TEIC/TEI/issues/548 -->
+                <elementSpec ident="abstract" mode="change" module="header">
+                    <content>
+                        <alternate minOccurs="0" maxOccurs="unbounded">
+                            <classRef key="model.pLike"/>
+                            <classRef key="model.listLike"/>
+                            <classRef key="model.divLike"/>
+                        </alternate>
+                    </content>
+                </elementSpec>
+
+                <!-- accept text under keywords, in case Grobid cannot segment a keyword field -->
+                <elementSpec ident="keywords" mode="change">
+                    <content>
+                        <alternate minOccurs="0">
+                            <textNode/>
+                            <elementRef key="term" minOccurs="1" maxOccurs="unbounded"/>
+                            <elementRef key="list"/>
+                        </alternate>
+                    </content>
+                </elementSpec>
+
+                <!-- introduce the trash custom element-->
+                <elementSpec ident="trash" mode="add">
+                    <gloss>Trash</gloss>
+                    <desc>contains noise information to be ignored, typically from vectoriel images</desc>
+                    <classes>
+                        <memberOf key="model.pLike"/>
+                        <memberOf key="att.editLike"/>
+                        <memberOf key="att.datable"/>
+                        <memberOf key="att.naming"/>
+                    </classes>
+                    <content>
+                        <alternate minOccurs="0" maxOccurs="unbounded">
+                            <textNode/>
+                            <elementRef key="ref"/>
+                        </alternate>
+                    </content>
+                </elementSpec>
+
+                <!-- allow empty listBibl -->
+                <elementSpec ident="listBibl" mode="change" module="core">
+                    <content>
+                        <classRef key="model.biblLike" minOccurs="0" maxOccurs="unbounded"/>
+                    </content>
+                </elementSpec>
+
+                <!-- allow optional idno directly under biblStruct -->
+                <elementSpec ident="biblStruct" module="core" mode="change">
+                    <content>
+                        <sequence>
+                            <elementRef key="analytic" minOccurs="0" maxOccurs="unbounded"/>
+                            <sequence minOccurs="1" maxOccurs="unbounded">
+                                <elementRef key="monogr"/>
+                                <elementRef key="series" minOccurs="0" maxOccurs="unbounded"/>
+                            </sequence>
+                            <alternate minOccurs="0" maxOccurs="unbounded">
+                                <classRef key="model.noteLike"/>
+                                <classRef key="model.ptrLike"/>
+                                <elementRef key="relatedItem"/>
+                                <elementRef key="citedRange"/>
+                                <elementRef key="idno"/>
+                            </alternate>
+                        </sequence>
+                    </content>
+                </elementSpec>
+
+                <!-- allow text in table, because Grobid does not include yet a model for 
+                     structuring table -->
+                <!-- elementSpec ident="table" mode="change" module="figures"><content><rng:optional><rng:ref name="model.resourceLike"/></rng:optional><rng:optional><rng:text/></rng:optional></content></elementSpec-->
+                <!-- allow <text> under <TEI> to be optional -->
+                <elementSpec ident="TEI" mode="change" module="textstructure">
+                    <content>
+                        <sequence>
+                            <elementRef key="teiHeader"/>
+                            <classRef key="model.resource" minOccurs="0" maxOccurs="unbounded"/>
+                        </sequence>
+                    </content>
+                </elementSpec>
+
+                <!-- Opening up the datatype of @version on <application> -->
+                <elementSpec ident="application" module="header" mode="change">
+                    <attList>
+                        <attDef ident="version" usage="req" mode="change">
+                            <datatype>
+                                <dataRef name="token" restriction="[0-9a-zA-Z\.\-_]+"/>
+                            </datatype>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+
+                <classSpec ident="att.global" type="atts" mode="change" module="tei">
+                    <attList>
+                        <attDef ident="coords" mode="change">
+                            <desc>Coordinates of the logical element in the original PDF document. The logical element
+                                is described as a list of bounding boxes, each one being defined by a page number, X and
+                                Y pixel coordinates in the PDF page (as a convention from the top left point of the
+                                page), height and width of the bounding box. Each bounding box is separated by a
+                                semi-colon (;) and each coordinate elements by a coma (,).</desc>
+                        </attDef>
+                    </attList>
+                </classSpec>
+
+                <!-- we modify figDesc so that it can contain generic structural divisions -->
+                <elementSpec ident="figDesc" module="figures" mode="change">
+                    <content>
+                        <alternate minOccurs="0" maxOccurs="unbounded">
+                            <textNode/>
+                            <classRef key="model.limitedPhrase"/>
+                            <classRef key="model.inter"/>
+                            <classRef key="model.divLike"/>
+                        </alternate>
+                    </content>
+                </elementSpec>
+
+                <!-- Changing the W3C @when into an ISO compatible one... -->
+                <classSpec module="tei" type="atts" ident="att.datable.w3c" mode="change">
+                    <attList>
+                        <attDef ident="when" usage="opt" mode="change">
+                            <datatype>
+                                <!--<dataRef key="teidata.temporal.w3c"/>-->
+                                <dataRef key="teidata.temporal.iso"/>
+                            </datatype>
+                        </attDef>
+                    </attList>
+                </classSpec>
+                
+                <!--elementSpec ident="availability" mode="change">
+                    <attList>
+                        <attDef ident="copyrightOwner">
+                            <datatype>
+                                <dataRef name="string"/>
+                            </datatype>
+                            <valList type="closed">
+                                <valItem ident="publisher">
+                                    <desc versionDate="2024-02-01" xml:lang="en">The copyright is owned by the publisher.</desc>
+                                </valItem>
+                                <valItem ident="authors">
+                                    <desc versionDate="2024-02-01" xml:lang="en">The copyright is owned by the authors.</desc>
+                                </valItem>
+                                <valItem ident="unknown">
+                                    <desc versionDate="2024-02-01" xml:lang="en">The copyright owner is unknown or undetermined.</desc>
+                                </valItem>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec-->
+            <elementSpec ident="availability" mode="change"><attList><attDef ident="resp" mode="change"><datatype><dataRef name="string"/></datatype><valList type="closed" mode="change"><valItem mode="add" ident="authors"><desc versionDate="2024-02-08" xml:lang="en">Copyrights owner of the document are the authors</desc></valItem><valItem mode="add" ident="publisher"><desc versionDate="2024-02-08" xml:lang="en">Copyrights owner of the document is the publisher</desc></valItem></valList></attDef></attList></elementSpec><classSpec ident="model.segLike" type="model" mode="change"><classes mode="change"><memberOf key="model.pLike"/></classes></classSpec></schemaSpec>
+        </body>
+    </text>
+</TEI>
