@@ -1,21 +1,18 @@
 package org.pub2tei.service;
 
-import com.google.inject.Module;
-import com.hubspot.dropwizard.guicier.GuiceBundle;
-import io.dropwizard.Application;
-import io.dropwizard.assets.AssetsBundle;
+import com.google.inject.AbstractModule;
+import io.dropwizard.core.Application;
+import io.dropwizard.core.setup.Bootstrap;
+import io.dropwizard.core.setup.Environment;
 import io.dropwizard.forms.MultiPartBundle;
-import io.dropwizard.setup.Bootstrap;
-import io.dropwizard.setup.Environment;
+import jakarta.servlet.DispatcherType;
+import jakarta.servlet.FilterRegistration;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
 import org.eclipse.jetty.servlets.QoSFilter;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ru.vyarus.dropwizard.guice.GuiceBundle;
 
-import javax.servlet.DispatcherType;
-import javax.servlet.FilterRegistration;
-import java.util.Arrays;
 import java.util.EnumSet;
 
 public class ServiceApplication extends Application<ServiceConfiguration> {
@@ -28,23 +25,25 @@ public class ServiceApplication extends Application<ServiceConfiguration> {
         return "pub2tei";
     }
 
-    private Iterable<? extends Module> getGuiceModules() {
-        return Arrays.asList(new ServiceModule());
+    private AbstractModule getGuiceModules() {
+        return new ServiceModule();
     }
 
     @Override
     public void initialize(Bootstrap<ServiceConfiguration> bootstrap) {
-        GuiceBundle<ServiceConfiguration> guiceBundle = GuiceBundle.defaultBuilder(ServiceConfiguration.class)
+        GuiceBundle guiceBundle = GuiceBundle.builder()
                 .modules(getGuiceModules())
                 .build();
+
         bootstrap.addBundle(guiceBundle);
         bootstrap.addBundle(new MultiPartBundle());
-        //bootstrap.addBundle(new AssetsBundle("/web", "/", "index.html", "assets"));
-        //bootstrap.addCommand(new CreateCommands());
     }
 
     @Override
     public void run(ServiceConfiguration configuration, Environment environment) {
+
+        environment.healthChecks().register("health-check", new HealthCheck(configuration));
+
         LOGGER.info("Service config={}", configuration);
         environment.jersey().setUrlPattern(RESOURCES + "/*");
 
