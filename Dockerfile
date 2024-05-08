@@ -1,7 +1,7 @@
 ## Docker Pub2TEI image using Grobid deep learning models and/or CRF models for transformation enhancements
 
 # this is the full GROBID image using NVIDIA Container Toolkit to automatically recognize possible GPU drivers on the host machine
-FROM grobid/grobid:0.8.0
+FROM lfoppiano/grobid:0.8.0-full-slim
 
 # Add Tini
 ENV TINI_VERSION v0.19.0
