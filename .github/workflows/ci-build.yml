@@ -24,4 +24,4 @@ jobs:
           cache: 'gradle'
       - name: Build and run integration tests
         working-directory: ./grobid/Pub2TEI
-        run: ./gradlew test
+        run: ./gradlew test --stacktrace --info
