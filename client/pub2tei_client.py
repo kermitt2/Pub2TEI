@@ -2,7 +2,6 @@
 Pub2TEI Python Client
 """
 import os
-import io
 import json
 import argparse
 import time
