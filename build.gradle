@@ -125,7 +125,7 @@ dependencies {
     //implementation group: 'org.codehaus.woodstox', name: 'woodstox-core-asl', version: '4.4.1'
     implementation "com.fasterxml.jackson.core:jackson-core:2.14.3"
     implementation "com.fasterxml.jackson.core:jackson-databind:2.14.3"
-    implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.14.3"
+//    implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.14.3"
     implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.3"
 
 //    compile group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.5.3'
