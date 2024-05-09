@@ -115,6 +115,8 @@ dependencies {
 
     implementation 'org.slf4j:slf4j-api:1.7.30'
     implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation 'org.apache.opennlp:opennlp-tools:1.9.1'
+    implementation group: 'org.jruby', name: 'jruby-complete', version: '9.2.13.0'
 
     implementation "com.rockymadden.stringmetric:stringmetric-core_2.10:0.27.3"
 
