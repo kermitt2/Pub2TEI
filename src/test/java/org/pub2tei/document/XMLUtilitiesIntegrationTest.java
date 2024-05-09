@@ -1,6 +1,5 @@
 package org.pub2tei.document;
 
-import com.sun.tools.javac.util.List;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.junit.Before;
@@ -12,6 +11,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.InputStream;
 import java.io.StringReader;
+import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
