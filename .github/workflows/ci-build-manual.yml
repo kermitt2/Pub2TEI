@@ -39,7 +39,7 @@ jobs:
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          image: lfoppiano/Pub2TEI
+          image: lfoppiano/pub2TEI
           registry: docker.io
           pushImage: true
           tags: latest-develop
