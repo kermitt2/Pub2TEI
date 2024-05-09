@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Satellite data reveals a recent increase in shifting cultivation and associated carbon emissions in Laos</title>
+				<funder ref="#_H9GH7GZ">
+					<orgName type="full">unknown</orgName>
+				</funder>
+				<funder ref="#_Em9my3H">
+					<orgName type="full">Commercialisation of Rice Farming in the Lower Mekong Basin (Palgrave Macmillan</orgName>
+				</funder>
+				<funder ref="#_Ya8bhFM">
+					<orgName type="full">NASA</orgName>
+				</funder>
+				<funder ref="#_aAjTpRR">
+					<orgName type="full">NASA Carbon Monitoring System</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2023-10-13">13 October 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName><forename type="first">Shijuan</forename><surname>Chen</surname></persName>
+							<email>shijuan.chen@yale.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">Yale School of the Environment</orgName>
+								<orgName type="institution" key="instit2">Yale University</orgName>
+								<address>
+									<settlement>New Haven</settlement>
+									<region>CT</region>
+									<country key="US">United States of America</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Earth and Environment</orgName>
+								<orgName type="institution">Boston University</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States of America</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Curtis</forename><forename type="middle">E</forename><surname>Woodcock</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Earth and Environment</orgName>
+								<orgName type="institution">Boston University</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States of America</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Thatheva</forename><surname>Saphangthong</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department" key="dep1">Department of Agriculture Land Management</orgName>
+								<orgName type="department" key="dep2">Ministry of Agriculture and Forestry</orgName>
+								<address>
+									<settlement>Vientiane</settlement>
+									<country>Laos</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Pontus</forename><surname>Olofsson</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Earth and Environment</orgName>
+								<orgName type="institution">Boston University</orgName>
+								<address>
+									<settlement>Boston</settlement>
+									<region>MA</region>
+									<country key="US">United States of America</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="institution">NASA Marshall Space Flight Center</orgName>
+								<address>
+									<settlement>Huntsville</settlement>
+									<region>AL</region>
+									<country key="US">United States of America</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Satellite data reveals a recent increase in shifting cultivation and associated carbon emissions in Laos</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-10-13">13 October 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">17112CCE7BFA5F63FB9BFE897A9E1A85</idno>
+					<idno type="DOI">10.1088/1748-9326/acffdd</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="project.version" ident="GROBID" when="2024-04-26T10:06+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>shifting cultivation</term>
+					<term>shifting agriculture</term>
+					<term>slash and burn</term>
+					<term>swidden agriculture</term>
+					<term>forest degradation</term>
+					<term>carbon emissions</term>
+					<term>deforestation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Although shifting cultivation is the major land use type in Laos, the spatial-temporal patterns and the associated carbon emissions of shifting cultivation in Laos are largely unknown. This study provides a nationwide analysis of the spatial-temporal patterns of shifting cultivation and estimations of the associated carbon emissions in Laos over the last three decades. This study found that shifting cultivation has been expanding and intensifying in Laos, especially in the last 5 years. The newly cultivated land from 2016 to 2020 accounted for 4.5% (±1.2%) of the total land area of Laos. Furthermore, the length of fallow periods has been continuously declining, indicating that shifting cultivation is becoming increasingly intensive. Combining biomass derived from Global Ecosystem Dynamics Investigation and shifting cultivation maps and area estimates, we found that the net carbon emissions from shifting cultivation declined in 2001-2015 but increased in 2016-2020. The largest carbon source is conversion from intact forests to shifting cultivation, which contributed to 89% of the total emissions from 2001 to 2020. In addition, there were increased emissions from intensified use of fallow lands. This research provides useful information for policymakers in Laos to understand the changes in shifting cultivation and improve land use management. This study not only supports Reducing Emissions from Deforestation and Forest Degradation reporting for Laos but also provides a methodology for tracking carbon emissions and removals of shifting cultivation.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Shifting cultivation is an agricultural practice where farmers routinely move from one plot to another for cultivation. It begins with the practice of 'slash-andburn' , where trees and woody plants are cut down and burnt to prepare an ash-fertilized plot for temporary cultivation. After short-term cultivation, the plot is abandoned, which allows the vegetation to recover. Shifting cultivation is the predominant land use and a major cause of forest degradation and deforestation in some tropical countries <ref type="bibr">(Heinimann et al 2017</ref><ref type="bibr" target="#b7">, Curtis et al 2018</ref><ref type="bibr">, Jiang et al 2022)</ref>, such as Laos <ref type="bibr" target="#b5">(Chen et al 2023)</ref>, and the Democratic Republic of Congo <ref type="bibr">(Molinario et al 2015)</ref>. Monitoring shifting cultivation is complicated, because it is highly dynamic, and the area affected by each slash-and-burn event is small. Due to the difficulty of monitoring shifting cultivation, spatially and temporally explicit information on shifting cultivation is scarce.</p><p>Shifting cultivation has both short-term and long-term effects on carbon emissions <ref type="bibr">(Ziegler et al 2012)</ref>. In the short term, the slash-and-burn activities cause immediate release of carbon. In the long term, encroachment of shifting cultivation into primary forest and intensified use of secondary forest both lead to long-term increases in net carbon emissions and degradation of ecosystems. Carbon emissions from shifting cultivation have not been well quantified, because of the lack of methodology for monitoring shifting cultivation and tracking the associated carbon dynamics. In contrast to deforestation (such as urbanization), which does not involve carbon sequestration, shifting cultivation involves both carbon emissions associated with slash-and-burn activities and carbon sequestration during the fallow period. Due to the complexity of monitoring shifting cultivation and tracking the associated carbon dynamics, estimates of carbon emissions or sequestration from shifting cultivation are usually unavailable in REDD+ (Reducing Emissions from Deforestation and Forest Degradation) reporting.</p><p>In Laos, officially the Lao People's Democratic Republic (Lao PDR), shifting cultivation is an important agricultural system <ref type="bibr">(Roder 2001</ref><ref type="bibr" target="#b10">, Douangsavanh et al 2006</ref><ref type="bibr" target="#b12">, Epprecht et al 2018</ref><ref type="bibr">, Manivong and Cramb 2020)</ref> and the major driver of forest dynamics <ref type="bibr" target="#b7">(Curtis et al 2018</ref><ref type="bibr" target="#b5">, Chen et al 2023)</ref>. It is estimated that shifting cultivation affected 32.9 ± 1.9% of Laos from 1991 to 2020, and the shifting cultivation activities increased in the most recent 5 years <ref type="bibr" target="#b5">(Chen et al 2023)</ref>. Laos' population has been increasing steadily from 4.314 million in 1990 to 7.319 million in 2020 (World Bank 2023), whereas upland rice yields did not distinctly improve between 1990 and 2020. Shifting cultivation activities are expected to increase due to the increasing demand for rice. Monitoring shifting cultivation and analyzing its patterns are important to understand the forest cover change in Laos and relevant to achieving Laos' goal of increasing forest cover to 70% (The current forest cover is 62%) (The Government of Lao PDR 2005). Since there were few spatially and temporally explicit maps and estimates of shifting cultivation before <ref type="bibr" target="#b5">Chen et al (2023)</ref>, carbon emissions from shifting cultivation have not been accurately estimated in the REDD+ reporting of Laos (Department of Forestry, Ministry of Agriculture and Forestry, Lao PDR 2018).</p><p>Spatially and temporally explicit information about shifting cultivation in Laos was unavailable until recently <ref type="bibr" target="#b5">(Chen et al 2023)</ref>, and a comprehensive national-scale analysis of the spatial and temporal patterns of shifting cultivation has not been conducted to date. A traditional approach for mapping shifting cultivation is to create landscape mosaics based on a land cover map of a single year <ref type="bibr">(Messerli et al 2009</ref><ref type="bibr">, Silva et al 2011</ref><ref type="bibr">, Hett et al 2012</ref><ref type="bibr">, Hurni et al 2013a)</ref>. It is impossible to analyze the temporal patterns of shifting cultivation using this traditional approach. Another approach is to use multi-temporal land cover data to map shifting cultivation <ref type="bibr">(Leisz and Rasmussen 2012</ref><ref type="bibr">, Molinario et al 2015</ref><ref type="bibr">, Department of Forestry, Ministry of Agriculture and Forestry, Lao PDR 2018</ref><ref type="bibr" target="#b0">, Adhikary et al 2019</ref><ref type="bibr">, Kurien et al 2019)</ref>. In previous studies, the temporal resolution of the land cover maps was not high enough to support the analysis of temporal patterns <ref type="bibr">(Heinimann et al 2013)</ref>. Recently, <ref type="bibr" target="#b5">Chen et al (2023)</ref> used satellite data to create shifting cultivation products for Laos with sufficient temporal frequency (annual) and spatial resolution (30 m) to support a nationalscale spatial-temporal analysis. The recently launched GEDI (Global Ecosystem Dynamics Investigation) mission provides new opportunities for estimating biomass at a large scale <ref type="bibr">(Tang et al 2020)</ref>.</p><p>This study used the map products and reference data in <ref type="bibr" target="#b5">Chen et al (2023)</ref>, combined with GEDI, to conduct a national-scale analysis of the spatial and temporal patterns and carbon dynamics of shifting cultivation in Laos. The goal is to understand the spatial and temporal patterns of shifting cultivation and the associated carbon emissions, in support of decision-making to reduce carbon emissions and promote sustainable livelihoods depending on shifting cultivation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Method</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Mapping shifting cultivation</head><p>Shifting cultivation was mapped using Landsat data from 1987 to 2020 on Google Earth Engine <ref type="bibr" target="#b5">(Chen et al 2023)</ref>. CCDC-SMA (continuous change detection and classification-spectral mixture analysis) (Zhu and Woodcock 2014, Bullock et al 2020, Chen et al 2021) was used to detect forest disturbances in Laos. CCDC-SMA fits harmonic models to fractions of endmembers and NDFI (Normalized Difference Fraction Index) <ref type="bibr">(Souza et al 2005)</ref> to monitor forest disturbances (figure <ref type="figure" target="#fig_0">1</ref>). Annual maps of Shifting Cultivation from 1991 to 2020 were created by combining time series analysis, object-based image analysis, and post-disturbed land-cover classification. A total of 1000 sample units under simple random sampling were used as reference data for accuracy assessment and area estimation. For each sample unit, at least two interpreters interpreted the land change class and the year of each slash-and-burn event by examining high-resolution satellite imagery and Landsat time series (figures 1(a), (c) and 2). During 1991-2020, shifting cultivation was the main type of forest disturbance in Laos, affecting 32.9 ± 1.9% of Laos <ref type="bibr" target="#b5">(Chen et al 2023)</ref>. Shifting cultivation was mapped with a producer's accuracy of 88% and a user's accuracy of 80% <ref type="bibr" target="#b5">(Chen et al 2023)</ref>. <ref type="bibr" target="#b5">Chen et al (2023)</ref> describes more details of the monitoring method. Both the map products and the reference data from <ref type="bibr" target="#b5">Chen et al (2023)</ref> were used in this study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Spatial-temporal patterns of shifting cultivation</head><p>The annual maps of shifting cultivation  and the reference sample units interpreted as Shifting Cultivation were used to investigate the patterns of shifting cultivation. We estimated the area of shifting cultivation at different fallow and disturbance   55 ′ 27 ′′ E. In the time series plot, the blue points are the Landsat observations. In the Landsat images (Red-green-blue), the yellow squares show the pixel location. In the high-resolution image, the white point shows the pixel location.).</p><p>to explore whether the extent of shifting cultivation expanded, the newly and previously cultivated areas of shifting cultivation were estimated using reference sample units and maps in Chen et al (2023) for every 5 year period from 2000 to 2020. In the reference sample points, whether a pixel is newly or previously cultivated is determined by the year of slash-andburn recorded by the interpreters (e.g. figures 1(a), (c) and 2).</p><p>Furthermore, to investigate the change patterns in fallow length and cultivation length (length of cropping period), we visually interpreted Landsat time series, Landsat imagery, and high-resolution images for 196 sample points (figure <ref type="figure">3</ref> as an example). These sample points are the points with at least two cultivation events in the aforementioned reference data with 1000 simple random sample points. For each point, the year of slash and burn (land clearing), cultivation length, and fallow length are recorded for every event.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Carbon emission/removal</head><p>The GEDI mission provides space-borne LiDAR data to estimate aboveground biomass (Healey et al 2020). GEDI's L4A Footprint Level Aboveground Biomass Density (AGBD) (version 2.1) 25 m data <ref type="bibr" target="#b1">(Beck et al 2020</ref><ref type="bibr" target="#b11">, Dubayah et al 2022)</ref> were used to explore the effect of shifting cultivation on biomass. GEDI data collected in 2020 was used because it was the only year of data with good spatial coverage when the study was conducted. To overlay the GEDI footprint and Landsat, for each GEDI footprint, we extracted the value of the 30 m pixel in the Landsat-based map that has the largest overlap with the 25 m footprint. Only lidar observations with good quality (using the 'quality_flag' band and the 'degrade_flag' band) and collected at places with a slope less than 20 • and in the interior of shifting cultivation sites (excluding a two-pixel edge) were used, to eliminate the effect of terrain and possible misregistration at the edges of slash-and-burn events. The reason why we excluded lidar points with slopes larger than 20 • is that GEDIbased biomass estimates tend to be overestimated at steep terrain. AGBD was calculated for Active Shifting Cultivation, Inactive Shifting Cultivation, Intact Forest, and Others. Intact Forest here is defined as forests without significant anthropogenic disturbances. The relationship between AGBD and years of regrowth since the latest slash-and-burn events was analyzed. The hypothesis was that AGBD has a positive relationship with years of regrowth since the latest slash-andburn activity. From this relationship, a country-level growth curve of AGBD can be developed and used to estimate the biomass of fallow lands.</p><p>Carbon emissions from shifting cultivation were estimated for every 5 year period from 2001 to 2020. Table <ref type="table" target="#tab_1">1</ref> shows the activity classes, definitions, and emission factors. New Shifting Cultivation area was estimated from a sampling-based method The emission factors for activities other than New Shifting Cultivation are spatially explicit and were determined by the map of the latest year of slash and burn and the growth curve. Figure <ref type="figure" target="#fig_7">8</ref> shows an example of the spatially explicit emission factors for different activities. Specifically, this was how the carbon emissions and removals of Fallow land -&gt; Fallow land, Fallow land -&gt; Cleared land, and Cleared land -&gt; Fallow land were calculated: The latest year of disturbance of Fallow land was determined using the annual shifting cultivation maps. Then, the AGBD of fallow lands was calculated using equation (1). Using AGBD of fallow land in the end year minus AGBD in the start year of each period, the differences in AGBD were obtained. Multiply the differences in AGBD by the area of different activities and then multiply it by the conversion factor (0.5), and the carbon emissions and removals of each activity were calculated. The average emission/removal factors were calculated using the emissions and removals divided by the total area of activities in different categories.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Spatial-temporal patterns of shifting cultivation</head><p>A large proportion of the land used for shifting cultivation in Laos remains in use. During our study period, the estimated area of Active Shifting Cultivation (19.1 ± 1.6%) exceeded the area of Inactive Shifting Cultivation (13.7 ± 1.8%). In the future, there is a possibility of reusing Inactive Shifting Cultivation and further increasing the area of Active Shifting Cultivation, given the increasing demand for crops. New Shifting Cultivation, defined as shifting cultivation that first occurred in each period, was estimated from 2001 to 2020 by period (figure <ref type="figure" target="#fig_2">4</ref>). The area estimates were aggregated into 5 year periods instead of calculating annual to reduce uncertainties of the area estimates. From 1991 to 2000, it is difficult to tell whether the shifting cultivation areas were new or old, and thus this analysis started in 2001. In all 5 year periods, the area of New Shifting Cultivation is higher than 3% of Laos, implying that on average, over 0.6% of Laos' land area is converted from intact forest to shifting cultivation each year. Our results indicate that the extent of shifting cultivation has been expanding.</p><p>During 2001-2015, there was a decrease in the area of New Shifting Cultivation. However, both the area of New Shifting Cultivation and the total area of Shifting Cultivation have increased significantly in 2016-2020. The proportion of previously and newly cultivated to the total area of shifting cultivation was calculated for every year using the annual maps (figure <ref type="figure" target="#fig_3">5</ref>). Before 2007, the newly cultivated  areas were larger than the previously cultivated, and the trend reversed after 2007. There was a general decreasing trend in the proportion of New Shifting Cultivation, but increases were observed in 2019 and 2020. We suppose that the general decreasing trend is because intact forests available for cultivation decreased over time and previously cultivated land is easier to clear for future cultivation.</p><p>Based on the sample interpretation results, most cultivation lengths are either one year or two years. Although there are variations across the years, we have not seen major changes in average cultivation length (figures S1 and S2). The mean length of the fallow periods of shifting cultivation in Laos is 6.5 years, which is close to the length of fallow periods reported in the literature (7 years) (Department of Forestry, Ministry of Agriculture and Forestry, Lao PDR 2018). The fallow length has been continuously declining (figure <ref type="figure" target="#fig_4">6</ref>). The reduction in the length of fallow periods indicates that shifting cultivation has intensified.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Growth curve of fallow lands</head><p>The AGBD was lower in shifting cultivation regions than in the intact forests. The median AGBD of Intact Forest, Inactive Shifting Cultivation, Active Shifting Cultivation, and Others are 151.9 Mg ha -1 , 87.9 Mg ha -1 , 39.5 Mg ha -1 , and 22.8 Mg ha -1 , respectively. The biomass of Inactive Shifting Cultivation only reached about 60% of that of the intact forest. In the literature (Department of Forestry, Ministry of Agriculture and Forestry, Lao PDR 2018), the regions of Inactive Shifting Cultivation were considered to be 'recovered' , whereas our results show that the AGBD is not recovered even if these regions have been left for fallow for at least seven years.  To investigate the relationship between median AGBD and disturbance history, a logarithmic regression was conducted on years of regrowth since the latest slash-and-burn events and median AGBD of GEDI footprints (figure <ref type="figure" target="#fig_5">7</ref>). The logarithmic model of years of regrowth (x) and AGBD (y) is (R square is 0.93): y = 29.129 ln (x) + 9.907</p><p>(1)</p><p>AGBD was strongly correlated with years of regrowth. Equation ( <ref type="formula">1</ref>) and the maps of years of regrowth were used to calculate the biomass of fallow lands and spatially explicit emission/removal factors (figure <ref type="figure" target="#fig_7">8</ref>).    in this period (figure <ref type="figure" target="#fig_3">5</ref>) and the decrease in carbon sink of fallow lands in this period. For every period, New Shifting Cultivation is the largest carbon source, contributing to more than 80% of the total emissions. From 2001 to 2020, New Shifting Cultivation contributed to 89% of the total emissions. Fallow lands are important carbon sinks and sequestered about 70% of the total emissions during 2006-2015. However, carbon sequestration of fallow lands also decreased in recent years because of the intensified use of fallow land. To summarize, the increase in emissions from shifting cultivation encroachment to intact forests (New Shifting Cultivation) and intensified use of secondary forests both led to the recent increase in net emissions from shifting cultivation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Carbon emissions from shifting cultivation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Discussion</head><p>In this study, the spatial-temporal patterns and the carbon dynamics of shifting cultivation in Laos were analyzed. The results showed that shifting cultivation has been expanding and intensifying. The area of shifting cultivation has increased significantly over the last 5 years. The fallow length has been declining continuously, which indicates the intensification of shifting cultivation. Our finding of a reduction of fallow length is consistent with previous local studies <ref type="bibr">(Rasul and Thapa 2003</ref><ref type="bibr">, Saphangthong and Kono 2009</ref><ref type="bibr">, van Vliet et al 2012)</ref>. We found that AGBD was strongly correlated with years of regrowth since the latest year of slash-and-burn activities, which can be   <ref type="formula">2019</ref>) is understandable since their major focus is forest loss instead of shifting cultivation. This comparison is not a criticism of the aforementioned studies. Instead, it highlights the benefits of using shifting cultivation maps and reference samples with better spatial resolution and high temporal frequency for the analysis of spatial-temporal patterns.</p><p>We compared our area estimates of New Shifting Cultivation with the official forest change statistics from Laos (table <ref type="table" target="#tab_1">S1</ref>). The Laos official forest change maps (https://nfms.maf.gov.la/) are created from the land cover classification maps from the start year and end year for each period (see the periods in table <ref type="table" target="#tab_1">S1</ref>). Since shifting cultivation is the major driver of forest degradation and deforestation in Laos, we expect that there are some consistencies between the areas of New Shifting cultivation and the areas of forest degradation and deforestation. There are consistencies in the period <ref type="bibr">2006-2010 and 2011-2015, with</ref> the differences between our estimates and the official statistics both less than 1% of Laos. Our estimates of New Shifting Cultivation are generally higher than the Laos official estimates of deforestation and forest degradation, except for 2006-2010. This was partly due to the different monitoring approaches. Without using dense time series, the shifting cultivation events that occurred over five years may be difficult to detect using two classification maps from the start and the end. In the period <ref type="bibr">2001-2005 and 2016-2020, our</ref> estimates are about 2%-3% higher than the official estimates. For 2016-2020, the discrepancy is partly because the 2019 and 2020 changes are included in our estimates but not in the official statistics. Overall, our results and area estimates provide valuable information regarding the forest dynamics of Laos.</p><p>Furthermore, we compared the shifting cultivation map with the field survey data in the Laos National Forest Monitoring System https://nfms. maf.gov.la/. The shifting cultivation map was compared with 39 field points identified as <ref type="bibr">'Regenerating Vegetation' or 'Upland crop' in 2010</ref><ref type="bibr" target="#b12">, 2011</ref><ref type="bibr">, 2012</ref><ref type="bibr" target="#b0">, or 2019</ref>, since these two land cover classes are generally considered to have an association with shifting cultivation practices (Department of Forestry 2020). The 31 out of 39 (80%) points are correctly mapped as shifting cultivation.</p><p>As a national-level analysis of spatial-temporal patterns and estimation of carbon dynamics of shifting cultivation in Laos, our research is valuable to sustainable land resource management. The sustainability of the land is negatively impacted by the recent expansion and intensification of shifting cultivation, indicated by an increase in newly cultivated areas in 2016-2020 and a reduction of fallow length in 1991-2020. Moreover, our research provides a quantitative analysis of carbon emissions of shifting cultivation, which is crucial for REDD+ reporting in Laos. Our research indicates that carbon emissions from shifting cultivation can be quantified by combining GEDI data with shifting cultivation maps and area estimates. The fallow land sequestrated a significant amount of carbon in the past, but this carbon sink declined in recent years. The recent increase in new shifting cultivation events also led to an increase in net carbon emissions. This highlights the importance of protecting the primary forest from the encroachment of new shifting cultivation and the restoration of old fallow lands.</p><p>Our study has several limitations and future research can make improvements by using more sophisticated models and integration with other data. The first limitation is the usage of GEDI data. Our research only used GEDI in one year (2020), because GEDI is a new mission and 2020 was the only year with good coverage data when the study was conducted. Future studies can use GEDI for multiple years as more data will be collected. In addition, we excluded GEDI points where the slope is larger than 20 • to avoid overestimation of biomass in steep terrain. This would introduce regional bias on the growth curve and emission factors. Based on our map, 69% of the shifting cultivation area is in places with slopes less than 20 • <ref type="bibr" target="#b4">(Chen 2022)</ref>. Future research should improve GEDI biomass estimates in steep terrain. Second, although we compared our map with some field survey data in Laos, the field data information for each location is limited. Future studies should collect more detailed information on shifting cultivation in field surveys, especially biomass in shifting cultivation landscapes (e.g. Salinas-Melgoza et al 2017, <ref type="bibr" target="#b2">Borah et al 2018</ref><ref type="bibr" target="#b13">, Gogoi et al 2020 )</ref>. Third, the carbon estimation only considered aboveground biomass change and no other carbon pools due to a lack of field survey data on those carbon pools. Future research can conduct field surveys on belowground biomass and include the belowground carbon pools in carbon emission estimation. Fourth, future research should investigate the causes of the recent increase in shifting cultivation, which requires field surveys.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Conclusion</head><p>Our research provides a national-level analysis of spatial-temporal patterns and estimation of carbon dynamics of shifting cultivation in Laos. Our analysis shows that shifting cultivation in Laos has been expanding and intensifying, particularly in the recent 5 years. The practice of shifting cultivation has become increasingly intensive as the length of the fallow periods has been continuously shortening. Combining GEDI data with shifting cultivation maps and area estimates, carbon emissions from shifting cultivation can be quantified. The net carbon emissions from shifting cultivation declined in the past but increased recently. This study not only supports REDD+ reporting for Laos but also demonstrates a method of tracking carbon dynamics in shifting cultivation landscapes.</p><p>USGS Landsat Science Team Program for Better Use of the Landsat Temporal Domain: Monitoring Land Cover Type, Condition and Change (Grant Number: G12PC00070). The authors are grateful to the editors and two anonymous reviewers for their insightful and constructive comments, which greatly helped to improve this paper. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. An example of active shifting cultivation in previously cultivated land (location: 20 • 7 ′ 13 ′′ N, 101 • 6 ′ 59 ′′ E). The shifting cultivation events in 2005 and 2018 were categorized as Previous Shifting Cultivation because shifting cultivation first occurred in 1991. This place is also Active Shifting Cultivation because the latest shifting cultivation event occurred in 2018. (a) Landsat time series. (b) CCDC-SMA model fits. Different colors show different segments and the model breaks in 1991, 2005, and 2018 show slash and burn events. The colored lines show the seasonality of the forest and the drops between lines show slash-and-burn events. (c) Landsat images and high-resolution images on Google Earth. In the Landsat images (red-green-blue), the yellow squares show the pixel location. In the high-resolution image, the white point shows the pixel location.</figDesc><graphic coords="3,129.32,72.89,414.04,288.65" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .Figure 3 .</head><label>23</label><figDesc>Figure 2. An example of reference data (location: 20 • 15 ′ 8 ′′ N, 100• 39 ′ 51 ′′ E). This shifting cultivation is New Shifting Cultivation. The time series shows that no shifting cultivation occurred before 2019. The new shifting cultivation event occurred in 2019 and it can be verified by examining high-resolution images and Landsat images. (In the time series figure, the blue points are Landsat observations. In the Landsat images (red-green-blue), the yellow squares show the pixel location. In the high-resolution image, the white point shows the pixel location).</figDesc><graphic coords="3,129.32,467.97,414.04,194.32" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Area estimates and uncertainties of New Shifting Cultivation and total (new and previous) shifting cultivation by 5 year intervals.The y-axis is the area proportions of the total area of Laos (230 405 km 2 ). Any pixel that was newly cultivated at any time within a specified 5 year period would be counted and added to the total height of the corresponding pink bars.</figDesc><graphic coords="6,200.85,72.89,270.04,212.12" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Annual proportion of slash-and-burn areas in previously and newly cultivated regions.</figDesc><graphic coords="6,200.93,355.44,269.88,140.93" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. Average fallow length by year calculated from sample interpretation.</figDesc><graphic coords="7,129.32,72.89,414.04,187.04" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 7 .</head><label>7</label><figDesc>Figure 7. Growth curve of aboveground biomass density.</figDesc><graphic coords="7,200.85,315.86,270.04,261.63" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head/><label/><figDesc>Carbon emissions from shifting cultivation were estimated by period from 2001 to 2020 (tables 2-4, and figure 9). The net carbon emissions of shifting cultivation declined during 2001-2015, but significantly increased during 2016-2020. The decline in net carbon emissions during 2001-2015 is mostly because the area of new shifting cultivation decreased in this period. The increase during 2016-2020 is mostly due to the increase in new shifting cultivation activities</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 8 .</head><label>8</label><figDesc>Figure 8. Spatially explicit emission (+)/removal (-) factors for different activities in a region (the background image is the high-resolution image): (a) fallow land -&gt; fallow land; (b) fallow land -&gt; cleared land; (c) cleared land -&gt; fallow land; (d) total of (a)-(c).</figDesc><graphic coords="8,200.85,72.89,270.04,254.35" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 9 .</head><label>9</label><figDesc>Figure 9. Carbon dynamics by period.</figDesc><graphic coords="9,200.85,247.38,270.04,154.19" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head/><label/><figDesc/><graphic coords="4,129.32,72.89,414.04,284.93" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 .</head><label>1</label><figDesc>Activity classes, definitions, and carbon emission/removal factors for each 5 year period (CF: conversion factor to convert biomass to carbon equivalents, CF = 0.5).</figDesc><table><row><cell>Activity class</cell><cell>Definition</cell><cell>Emission/removal factors</cell></row><row><cell>Intact forest -&gt; shifting cultivation</cell><cell>No shifting cultivation before. Previous intact</cell><cell>Biomass of forest before</cell></row><row><cell>(New Shifting Cultivation)</cell><cell>forests began to be used for new shifting</cell><cell>new shifting</cell></row><row><cell/><cell>cultivation.</cell><cell>cultivation × CF (75.95</cell></row><row><cell/><cell/><cell>Mg C ha -1 )</cell></row><row><cell>Fallow land -&gt; fallow land</cell><cell>Shifting cultivation occurred before. The start</cell><cell>(Fallow land biomass in the</cell></row><row><cell/><cell>and end land cover were both fallow lands.</cell><cell>start -fallow land biomass</cell></row><row><cell/><cell/><cell>in the end) × CF</cell></row><row><cell>Fallow land -&gt; cleared land</cell><cell>In previously cultivated land, fallow land became</cell><cell>(Fallow land</cell></row><row><cell/><cell>cleared land.</cell><cell>biomass -cleared land</cell></row><row><cell/><cell/><cell>biomass) × CF</cell></row><row><cell>Cleared land -&gt; fallow land</cell><cell>In previously cultivated land, cleared land became</cell><cell>(Cleared land</cell></row><row><cell/><cell>fallow land.</cell><cell>biomass -fallow land</cell></row><row><cell/><cell/><cell>biomass) × CF</cell></row><row><cell>Cleared land -&gt; cleared land</cell><cell>In previously cultivated land, cleared land became</cell><cell/></row><row><cell/><cell>cleared land.</cell><cell/></row></table><note><p><p><p><p>Zero</p>and other activity classes in table 1 were estimated from the maps. This is because the samplingbased area estimates of New Shifting Cultivation adjusted errors in mapping and are more accurate than pixel-counting from the maps</p>(Olofsson  et al 2013(Olofsson  et al  , 2014))</p>. The area estimates of New Shifting Cultivation were calculated by 5-year periods with low uncertainty. For other activity classes, it is difficult to get area estimates from the reference data while including the dynamics of biomass of fallow land, and thus we used a spatially explicit method. In table 1, the biomass of the forest before disturbance was the biomass of Intact Forest estimated from GEDI. The biomass of fallow land was estimated from the growth curve developed from GEDI based on years since disturbance. Years since disturbance for each pixel was obtained from the annual maps of shifting cultivation. The cleared land biomass was estimated as the biomass of non-forest by the Department of Forestry (2020) based on field surveys. The emission factor of New Shifting Cultivation is 75.95 Mg C ha -1 . The emission factor of Cleared land -&gt; Cleared land is zero.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>Area of difference land use activities for each period (5 years).</figDesc><table><row><cell>Area (ha)</cell><cell>2001-2005</cell><cell>2006-2010</cell><cell>2011-2015</cell><cell>2016-2020</cell></row><row><cell>Fallow land -&gt; fallow land</cell><cell>2379 847</cell><cell>3809 008</cell><cell>5213 561</cell><cell>6009 880</cell></row><row><cell>Fallow land -&gt; cleared land</cell><cell>226 240</cell><cell>361 992</cell><cell>397 236</cell><cell>630 467</cell></row><row><cell>Cleared land -&gt; fallow land</cell><cell>441 757</cell><cell>768 342</cell><cell>748 692</cell><cell>696 501</cell></row><row><cell>New shifting cultivation</cell><cell>1198 106</cell><cell>806 418</cell><cell>714 256</cell><cell>1036 823</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 .</head><label>3</label><figDesc>The country-average emissions or removal factors for each period (5 years). The original emission or removal factors except for new shifting cultivation are spatially explicit. This table shows the country averages of the spatial explicit emission or removal factors.</figDesc><table><row><cell>Average emission/removal factors (Mg C/ha -1 )</cell><cell>2001-2005</cell><cell>2006-2010</cell><cell>2011-2015</cell><cell>2016-2020</cell></row><row><cell>Fallow land -&gt; fallow land</cell><cell>-8.06</cell><cell>-7.57</cell><cell>-5.65</cell><cell>-1.56</cell></row><row><cell>Fallow land -&gt; cleared land</cell><cell>18.70</cell><cell>19.26</cell><cell>23.58</cell><cell>26.10</cell></row><row><cell>Cleared land -&gt; fallow land</cell><cell>-23.14</cell><cell>-24.28</cell><cell>-23.67</cell><cell>-21.36</cell></row><row><cell>New shifting cultivation</cell><cell>75.95</cell><cell>75.95</cell><cell>75.95</cell><cell>75.95</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 .</head><label>4</label><figDesc>Carbon emissions (+) and removals (-) of different activities for each period (5 years).</figDesc><table><row><cell>Carbon emission/removal</cell><cell/><cell/><cell/><cell/></row><row><cell>(Mg C)</cell><cell>2001-2005</cell><cell>2006-2010</cell><cell>2011-2015</cell><cell>2016-2020</cell></row><row><cell>Fallow land -&gt; fallow</cell><cell>-19 175 009</cell><cell>-28 833 216</cell><cell>-29 440 602</cell><cell>-9348 118</cell></row><row><cell>land</cell><cell/><cell/><cell/><cell/></row><row><cell>Fallow land -&gt; cleared</cell><cell>4230 290</cell><cell>6970 956</cell><cell>9366 236</cell><cell>16 452 893</cell></row><row><cell>land</cell><cell/><cell/><cell/><cell/></row><row><cell>Cleared land -&gt; fallow</cell><cell>-10 222 046</cell><cell>-18 657 539</cell><cell>-17 717 827</cell><cell>-14 879 752</cell></row><row><cell>land</cell><cell/><cell/><cell/><cell/></row><row><cell>New shifting cultivation</cell><cell>90 996 151</cell><cell>61 247 409</cell><cell>54 247 705</cell><cell>78 746 669</cell></row><row><cell>Period total (net</cell><cell>65 829 387</cell><cell>20 727 610</cell><cell>16 455 512</cell><cell>70 971 692</cell></row><row><cell>emission/removal)</cell><cell/><cell/><cell/><cell/></row><row><cell>Annual average</cell><cell>13 165 877</cell><cell>4145 522</cell><cell>3291 103</cell><cell>14 194 339</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head/><label/><figDesc>Saphangthong T and Kono Y 2009 Continuity and discontinuity in land use changes: a case study in Northern Lao villages J. Southeast Asian Stud. 47 263-86 Silva J M N, Carreiras J M B, Rosa I and Pereira J M C 2011 Greenhouse gas emissions from shifting cultivation in the tropics, including uncertainty and sensitivity analysis J. Geophys. Res. Atmos. 116 1-21 Souza C M, Roberts D A and Cochrane M A 2005 Combining spectral and spatial information to map canopy damage from selective logging and forest fires Remote Sens. Environ. 98 329-43 Tang X, Hutyra L R, Arévalo P, Baccini A, Woodcock C E and Olofsson P 2020 Spatiotemporal tracking of carbon emissions and uptake using time series analysis of Landsat data: a spatially explicit carbon bookkeeping model Sci. Total Environ. 720 137409 The Government of Lao PDR 2005 Forestry Strategy to the year 2020 of the Lao PDR (available at: https://faolex.fao.org/ docs/pdf/lao144178.pdf) van Vliet N et al 2012 Trends, drivers and impacts of changes in swidden cultivation in tropical forest-agriculture frontiers: a global assessment Glob. Environ. Change 22 418-29 World Bank 2023 World Bank open data (available at: https:// data.worldbank.org/) Zhu Z and Woodcock C E 2014 Continuous change detection and classification of land cover using all available Landsat data Remote Sens. Environ. 144 152-71 Ziegler A D et al 2012 Carbon outcomes of major land-cover transitions in SE Asia: great uncertainties and REDD+ policy implications Glob. Change Biol. 18 3087-99</figDesc><table/></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>This research was funded by the <rs type="funder">NASA</rs> <rs type="programName">Land-Cover and Land-Use Change Program</rs> (Grant Number: <rs type="grantNumber">80NSSC18K0315</rs>), the <rs type="funder">NASA Carbon Monitoring System</rs> (Grant Number: <rs type="grantNumber">80NSSC20K0022</rs>), and Turubanova S A A, Tyukavina A and Kommareddy A 2013 High-resolution global maps of 21st-century forest cover change Science 342 850-3 Healey S P, Yang Z, <rs type="projectName">Gorelick N and Ilyushchenko S 2020 Highly local model calibration with a new GEDI LiDAR</rs> asset on Google Earth Engine reduces Landsat forest height signal saturation Remote Sens. 12 2840 <rs type="affiliation">Heinimann A, Hett C, Hurni K, Messerli P</rs>, Epprecht M, Jørgensen L and Breu T 2013 Socio-economic perspectives on shifting cultivation landscapes in <rs type="affiliation">Northern Laos Hum. Ecol. 41 51-62 Heinimann A, Mertz O, Frolking S, Christensen A E, Hurni K, Sedano F, Chini L P, Sahajpal R, Hansen</rs> M and Hurtt G 2017 A global view of shifting cultivation: recent, current, and future extent PLoS One 12 1-22 Hett C, Castella J C, Heinimann A, Messerli P and Pfund J L 2012 A landscape mosaics approach for characterizing swidden systems from a REDD+ perspective Appl. Geogr. 32 608-18 Hurni K, Hett C, Epprecht M, Messerli P and Heinimann A 2013a A texture-based land cover classification for the delineation of a shifting cultivation landscape in the Lao PDR using landscape metrics Remote Sens. 5 3377-96 Jiang N, Li P and Feng Z 2022 Remote sensing of swidden agriculture in the tropics: a review Int. J. Appl. Earth Obs. Geoinf. 112 102876 <rs type="person">Kurien A J, Lele</rs> S and Nagendra H 2019 Farms or forests? Understanding and mapping shifting cultivation using the case study of <rs type="person">West Garo Hills</rs>, <rs type="person">India Land 8 133 Leisz S J and Rasmussen M S 2012 Mapping</rs> fallow lands in Vietnam's north-central mountains using yearly Landsat imagery and a land-cover succession model Int. J. Remote Sens. 33 6281-303 Manivong V and <rs type="person">Cramb R 2020 From</rs> subsistence to commercial rice production in Laos White Gold: The <rs type="funder">Commercialisation of Rice Farming in the Lower Mekong Basin (Palgrave Macmillan</rs>) pp 103-19 Messerli P, Heinimann A and Epprecht M 2009 Finding homogeneity in heterogeneity-a new approach to quantifying landscape mosaics developed for the <rs type="institution">Lao PDR Hum</rs>. Ecol. 37 291-304 Molinario G, Hansen M C and Potapov P V 2015 Forest cover dynamics of shifting cultivation in the Democratic Republic of Congo: a remote sensing-based assessment for 2000-2010 Environ. Res. Lett. 10 094009 Olofsson P, <rs type="person">Foody G M</rs>, <rs type="person">Herold M, Stehman S V</rs>, Woodcock C E and Wulder M A 2014 Good practices for estimating area and assessing accuracy of land change Remote Sens. Environ. 148 42-57 Olofsson P, <rs type="person">Foody G M, Stehman S V</rs> and Woodcock C E 2013 Making better use of accuracy data in land change studies: estimating accuracy and area and quantifying uncertainty using stratified estimation Remote Sens. Environ. 129 122-31 Potapov P et al 2019 Annual continuous fields of woody vegetation structure in the Lower Mekong region from 2000-2017 Landsat time-series Remote Sens. Environ. 232 111278 Rasul G and Thapa G B 2003 Shifting cultivation in the mountains of South and Southeast Asia: regional patterns and factors influencing the change <rs type="person">Land Degrad. Dev</rs>. <rs type="grantNumber">14 495-508</rs> Roder W 2001 <rs type="projectName">Slash-And-Burn Rice Systems in The Hills of Northern Lao PDR: Description, Challenges, And Opportunities (International Rice Research Institute</rs>) (available at: http://lad.nafri.org.la/fulltext/231-0.pdf) <rs type="projectName">Salinas-Melgoza M A, Skutsch M, Lovett J C and Borrego A 2017 Carbon emissions from dryland shifting cultivation: a case study of Mexican tropical dry forest Silva Fenn</rs>. <rs type="grantNumber">51</rs> 1553</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_Ya8bhFM">
+					<idno type="grant-number">80NSSC18K0315</idno>
+					<orgName type="program" subtype="full">Land-Cover and Land-Use Change Program</orgName>
+				</org>
+				<org type="funded-project" xml:id="_aAjTpRR">
+					<idno type="grant-number">80NSSC20K0022</idno>
+					<orgName type="project" subtype="full">Gorelick N and Ilyushchenko S 2020 Highly local model calibration with a new GEDI LiDAR</orgName>
+				</org>
+				<org type="funded-project" xml:id="_Em9my3H">
+					<idno type="grant-number">14 495-508</idno>
+					<orgName type="project" subtype="full">Slash-And-Burn Rice Systems in The Hills of Northern Lao PDR: Description, Challenges, And Opportunities (International Rice Research Institute</orgName>
+				</org>
+				<org type="funded-project" xml:id="_H9GH7GZ">
+					<idno type="grant-number">51</idno>
+					<orgName type="project" subtype="full">Salinas-Melgoza M A, Skutsch M, Lovett J C and Borrego A 2017 Carbon emissions from dryland shifting cultivation: a case study of Mexican tropical dry forest Silva Fenn</orgName>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data availability statements</head><p>Google Earth Engine applications to visualize the datasets: https://github.com/shijuanchen/shift_cult Map products visualization: https://sites.google. com/view/shijuanchen/research/shift_cult</p><p>The data that support the findings of this study are openly available at the following URL/DOI: https:// doi.org/10.5281/zenodo.7782782.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Land use and land cover dynamics with special emphasis on shifting cultivation in Eastern Ghats Highlands of India using remote sensing data and GIS Environ</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">P</forename><surname>Adhikary</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Barman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Madhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C J</forename><surname>Dash</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Jakhar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">C</forename><surname>Hombegowda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">S</forename><surname>Naik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sahoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Beer</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10661-019-7447-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Monit. Assess</title>
+		<imprint>
+			<biblScope unit="volume">191</biblScope>
+			<biblScope unit="page" from="1" to="15"/>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<author>
+			<persName><forename type="first">J</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Armston</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hofton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Luthcke</surname></persName>
+		</author>
+		<ptr target="https://daac.ornl.gov/GEDI/guides/GEDI_L4A_AGB_Density_V2_1"/>
+		<title level="m">Global Ecosystem Dynamics Investigation (GEDI) Level 02 User Guide</title>
+		<imprint>
+			<publisher>EROS Center, US Geological Survey</publisher>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Quantifying carbon stocks in shifting cultivation landscapes under divergent management scenarios relevant to</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Borah</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Evans</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D P</forename><surname>Edwards</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/eap.1764</idno>
+	</analytic>
+	<monogr>
+		<title level="j">REDD+ Ecol. Appl</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="1581" to="1593"/>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Monitoring tropical forest degradation using spectral unmixing and Landsat time series analysis Remote Sens</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Bullock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Woodcock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Olofsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rse.2018.11.011</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<publisher>Environ</publisher>
+			<biblScope unit="volume">238</biblScope>
+			<biblScope unit="page">110968</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Satellite-based monitoring, attribution, and analysis of forest degradation Doctoral Dissertation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<ptr target="https://open.bu.edu/handle/2144/46368"/>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Monitoring shifting cultivation in Laos with Landsat time series Remote Sens</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Olofsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Saphangthong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C E</forename><surname>Woodcock</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rse.2023.113507</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<publisher>Environ</publisher>
+			<biblScope unit="volume">288</biblScope>
+			<biblScope unit="page">113507</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Monitoring temperate forest degradation on Google Earth Engine using Landsat time series analysis Remote Sens</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">E</forename><surname>Woodcock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E L</forename><surname>Bullock</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Arévalo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Torchinava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Olofsson</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rse.2021.112648</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<publisher>Environ</publisher>
+			<biblScope unit="volume">265</biblScope>
+			<biblScope unit="page">112648</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">P G</forename><surname>Curtis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Slay</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N L</forename><surname>Harris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tyukavina</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M C</forename><surname>Hansen</surname></persName>
+		</author>
+		<idno type="DOI">10.1126/science.aau3445</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Classifying drivers of global forest loss Science</title>
+		<imprint>
+			<biblScope unit="volume">361</biblScope>
+			<biblScope unit="page" from="1108" to="1111"/>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Department of Forestry, Ministry of Agriculture and Forestry, Lao PDR 2018 Lao PDR's forest reference emission level and forest reference level for REDD+ results payment under the UNFCCC</title>
+		<ptr target="https://redd.unfccc.int/files/2018_frel_submission_laopdr.pdf"/>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Lao People's Democratic Republic 1st national REDD+ results report for REDD+ results-based-payment under the UNFCCC</title>
+		<ptr target="http://dof.maf.gov.la/download/1st_national_redd_results_and_supporting_docs/LaoPDR_REDD-resultsUNFCCC_20200720_combined.pdf"/>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+		<respStmt>
+			<orgName>Department of Forestry, Ministry of Agriculture and Forestry, Lao PDR</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Food security of shifting cultivation systems: case studies from Luang Prabang and Oudomxay Provinces</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Douangsavanh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Polthanee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Katawatin</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11629-006-0048-2.pdf</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Lao PDR J. Mt. Sci</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="48" to="57"/>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<author>
+			<persName><forename type="first">R</forename><surname>Dubayah</surname></persName>
+		</author>
+		<idno type="DOI">10.3334/ORNLDAAC/2056</idno>
+		<ptr target="https://doi.org/10.3334/ORNLDAAC/2056"/>
+		<title level="m">GEDI L4A Footprint Level Aboveground Biomass Density, Version</title>
+		<meeting><address><addrLine>Oak Ridge, Tennessee, USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+		<respStmt>
+			<orgName>ORNL DAAC</orgName>
+		</respStmt>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Atlas of agriculture in the Lao PDR: patterns and trends between</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Epprecht</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">and Ministry of Agriculture and Forestry</title>
+		<imprint>
+			<date type="published" when="1999">2018. 1999. 2011</date>
+		</imprint>
+		<respStmt>
+			<orgName>Centre for Development and Environment (CDE)University of Bern, Switzerland</orgName>
+		</respStmt>
+	</monogr>
+	<note>with Bern Open Publishing (BOP)) p 70 (available at: www.decide.k4d.la/files/en/5%20Crops%20-%20annual.pdf</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Vegetation and ecosystem carbon recovery following shifting cultivation in Mizoram-Manipur-Kachin rainforest eco-region</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Gogoi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">U</forename><surname>Sahoo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Saikia</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s13717-020-00225-w</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Southern Asia Ecol. Process</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="1" to="13"/>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">M</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Potapov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">V</forename><surname>Moore</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hancher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Science and Technology of Advanced Materials: Methods</title>
+				<funder>
+					<orgName type="full">MEXT</orgName>
+				</funder>
+				<funder ref="#_thsdDye">
+					<orgName type="full">unknown</orgName>
+				</funder>
+				<funder>
+					<orgName type="full">Utilization-Type Material Research and Development Project (Digital Transformation Initiative Center for Magnetic Materials)</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2023-12-14">14 Dec 2023.</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Luca</forename><surname>Foppiano</surname></persName>
+							<idno type="ORCID">0000-0002-6114-6164</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Materials Modelling Group</orgName>
+								<orgName type="laboratory">Centre for Basic Research on Materials</orgName>
+								<orgName type="institution" key="instit1">Data-driven Materials Research Field</orgName>
+								<orgName type="institution" key="instit2">NIMS</orgName>
+								<address>
+									<region>Tsukuba</region>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Knowledge and Data Engineering</orgName>
+								<orgName type="department" key="dep2">Centre for Computational Sciences</orgName>
+								<orgName type="institution">University of Tsukuba</orgName>
+								<address>
+									<settlement>Tsukuba</settlement>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tomoya</forename><surname>Mato</surname></persName>
+							<idno type="ORCID">0000-0002-0918-6468</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Materials Modelling Group</orgName>
+								<orgName type="laboratory">Centre for Basic Research on Materials</orgName>
+								<orgName type="institution" key="instit1">Data-driven Materials Research Field</orgName>
+								<orgName type="institution" key="instit2">NIMS</orgName>
+								<address>
+									<region>Tsukuba</region>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Kensei</forename><surname>Terashima</surname></persName>
+							<idno type="ORCID">0000-0003-0375-3043</idno>
+							<affiliation key="aff2">
+								<orgName type="department">Frontier Superconducting Materials Group</orgName>
+								<orgName type="institution" key="instit1">MANA</orgName>
+								<orgName type="institution" key="instit2">NIMS</orgName>
+								<address>
+									<region>Tsukuba</region>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Pedro</forename><surname>Ortiz Suarez</surname></persName>
+							<idno type="ORCID">0000-0003-0343-8852</idno>
+							<affiliation key="aff3">
+								<orgName type="department">GmbH DFKI</orgName>
+								<orgName type="institution">CONTACT Luca Foppiano</orgName>
+								<address>
+									<addrLine>Luca Foppiano http://orcid.org/0000-0002-6114-6164 Tomoya Mato http://orcid.org/0000-0002-0918-6468 Kensei Terashima http://orcid.org 3043 Pedro Ortiz Suarez http://orcid.org/0000-0003-0343- 8852 Wei-Sheng Wang http://orcid.org/0009-0001-3572-5736 Toshiyuki Amagasa http://orcid.org/0000-0003-0595- 2230 Yoshihiko Takano http://orcid.org/0000-0002-1541- 6928 Masashi Ishii</addrLine>
+									<postCode>0000-0003-0375</postCode>
+									<settlement>Berlin</settlement>
+									<region>DE</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Taku</forename><surname>Tou</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Frontier Superconducting Materials Group</orgName>
+								<orgName type="institution" key="instit1">MANA</orgName>
+								<orgName type="institution" key="instit2">NIMS</orgName>
+								<address>
+									<region>Tsukuba</region>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Chikako</forename><surname>Sakai</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Frontier Superconducting Materials Group</orgName>
+								<orgName type="institution" key="instit1">MANA</orgName>
+								<orgName type="institution" key="instit2">NIMS</orgName>
+								<address>
+									<region>Tsukuba</region>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Wei-Sheng</forename><surname>Wang</surname></persName>
+							<idno type="ORCID">0009-0001-3572-5736</idno>
+							<affiliation key="aff2">
+								<orgName type="department">Frontier Superconducting Materials Group</orgName>
+								<orgName type="institution" key="instit1">MANA</orgName>
+								<orgName type="institution" key="instit2">NIMS</orgName>
+								<address>
+									<region>Tsukuba</region>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Toshiyuki</forename><surname>Amagasa</surname></persName>
+							<idno type="ORCID">0000-0003-0595-2230</idno>
+							<affiliation key="aff1">
+								<orgName type="department" key="dep1">Knowledge and Data Engineering</orgName>
+								<orgName type="department" key="dep2">Centre for Computational Sciences</orgName>
+								<orgName type="institution">University of Tsukuba</orgName>
+								<address>
+									<settlement>Tsukuba</settlement>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Yoshihiko</forename><surname>Takano</surname></persName>
+							<idno type="ORCID">0000-0002-1541-6928</idno>
+							<affiliation key="aff2">
+								<orgName type="department">Frontier Superconducting Materials Group</orgName>
+								<orgName type="institution" key="instit1">MANA</orgName>
+								<orgName type="institution" key="instit2">NIMS</orgName>
+								<address>
+									<region>Tsukuba</region>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Masashi</forename><surname>Ishii</surname></persName>
+							<email>ishii.masashi@nims.go.jp</email>
+							<idno type="ORCID">0000-0003-0357-2832</idno>
+							<affiliation key="aff0">
+								<orgName type="department">Materials Modelling Group</orgName>
+								<orgName type="laboratory">Centre for Basic Research on Materials</orgName>
+								<orgName type="institution" key="instit1">Data-driven Materials Research Field</orgName>
+								<orgName type="institution" key="instit2">NIMS</orgName>
+								<address>
+									<region>Tsukuba</region>
+									<country>Japan;</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><surname>Masashi</surname></persName>
+						</author>
+						<title level="a" type="main">Science and Technology of Advanced Materials: Methods</title>
+					</analytic>
+					<monogr>
+						<idno type="ISSN">Print</idno>
+						<imprint>
+							<date type="published" when="2023-12-14">14 Dec 2023.</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">DCB0425EE18794E34CC3A3075E3E3975</idno>
+					<idno type="DOI">10.1080/27660400.2023.2286219</idno>
+					<note type="submission">Received 8 September 2023 Revised 9 November 2023 Accepted 16 November 2023</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="project.version" ident="GROBID" when="2024-04-26T11:25+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Materials informatics</term>
+					<term>superconductors</term>
+					<term>machine learning</term>
+					<term>database</term>
+					<term>TDM</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>We propose a semi-automatic staging area for efficiently building an accurate database of experimental physical properties of superconductors from literature, called SuperCon 2 , to enrich the existing manually-built superconductor database SuperCon. Here we report our curation interface (SuperCon 2 Interface) and a workflow managing the state transitions of each examined record, to validate the dataset of superconductors from PDF documents collected using Grobidsuperconductors in a previous work. This curation workflow allows both automatic and manual operations, the former contains 'anomaly detection' that scans new data identifying outliers, and a 'training data collector' mechanism that collects training data examples based on manual corrections. Such training data collection policy is effective in improving the machine-learning models with a reduced number of examples. For manual operations, the interface (SuperCon 2 interface) is developed to increase efficiency during manual correction by providing a smart interface and an enhanced PDF document viewer. We show that our interface significantly improves the curation quality by boosting precision and recall as compared with the traditional 'manual correction'. Our semi-automatic approach would provide a solution for achieving a reliable database with text-data mining of scientific documents.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IMPACT STATEMENT</head><p>This work makes a contribution to the realms of materials informatics and superconductors research, achieved through the evolution and update of SuperCon. We provide results from experiments that support the utilisation of computational analysis and machine learning for collecting experimental data from scientific articles.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The emergence of new methodologies using machine learning for materials exploration has given rise to a growing research area called materials informatics (MI) <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b1">2]</ref>. This field leverages the knowledge of the materials data accumulated in the past to efficiently screen candidates of the materials with desired properties. As a matter of course, such an approach requires a larger amount of material-related data for training models. Researchers have been developing large aggregated databases of physical properties generated by first-principles calculations based on Density Functional Theory (DFT), such as Materials Project <ref type="bibr" target="#b2">[3]</ref>, JARVIS (Joint Automated Repository for Various Integrated Simulations) <ref type="bibr" target="#b3">[4]</ref>, NOMAD (Novel Materials Discovery) <ref type="bibr" target="#b4">[5]</ref>, that played a role of a strong driving force for the development of materials informatics. Using DFT data for machine learning (ML) in materials science has become popular since, in principle, it allows researchers to simulate and obtain various types of physical properties of the target materials only by knowing the crystal structures of the subjects. Those DFT codes are designed to reproduce/simulate the physical properties that should be observed by experiments in reality. Nonetheless, caution must be exercised while utilising these computed figures for constructing ML models aimed at steering experiments. This caution arises due to the potential lack of validity in their predictions when dealing with specific simplifications of the interactions between atoms and electrons in solids, such as electron-electron Coulomb correlation, spinorbit coupling, and similar factors.</p><p>On the contrary, accumulated datasets of experimental data from scientific publications are still scarce, despite abundant publication availability, and exponential growth in materials science <ref type="bibr" target="#b5">[6]</ref>. Currently, only a few limited resources exist, such as the Pauling File <ref type="bibr" target="#b6">[7]</ref> and SuperCon <ref type="bibr" target="#b7">[8]</ref>, necessitating reliance on manual extraction methods. This scarcity can be attributed to inadequate infrastructure and a shortage of expertise in computer science within the materials science field.</p><p>The SuperCon database was built manually from 1987 <ref type="bibr" target="#b7">[8]</ref> by the National Institute for Materials Science (NIMS) in Japan and it is considered a reliable source of experimental data on superconductors <ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref><ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref>. However, the updates of SuperCon have become increasingly challenging due to the high publication rate. In response to the need for a more efficient approach to sustain productivity, we embarked on the development of an automated system for extracting material and property information from the text contained in relevant scientific publications. This automated process enabled the rapid creation of 'SuperCon 2 Database', a comprehensive database of superconductors containing around 40,000 entries, within an operational duration of just a few days <ref type="bibr" target="#b0">[1]</ref>. Matching the level of quality seen in SuperCon while simultaneously automating the extraction of organised data can be achieved with a properly designed curation process. We use the term curation to describe the overall process of reviewing and validating database records, while correction refers to the specific action of altering the values of one or more properties within an individual record. At the moment of writing this article, we are not aware of any other curation tool focusing on structured databases of extracted information. There are several tools for data annotation, such as Inception <ref type="bibr" target="#b12">[13]</ref>, and Doccano <ref type="bibr" target="#b13">[14]</ref> which concentrate on text labelling and classification.</p><p>In this work, we designed and developed a workflow with a user interface, 'SuperCon 2 Interface', crafted to produce structured data of superior quality and efficiency to the one obtained by the 'traditional' manual approach consisting of reading documents and noting records, usually on an Excel file. We developed this framework around the specific use case of SuperCon, however, our goal is to be adapted to alternative data frameworks.</p><p>Our contributions can be summarised as follows:</p><p>• We developed a workflow and a user interface that allow the curation of a machine-collected database. We demonstrate that using it for data correction resulted in higher quality than the 'traditional' (manual) approach. The subsequent sections, Section 2 describes the curation workflow and Section 3 the user interface on top of it. Finally, we discuss our evaluation experiments and results in Section 4.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Curation workflow</head><p>The curation of the SuperCon 2 Database acts as a workflow where user actions result in database records state transitions (Figure <ref type="figure" target="#fig_0">1</ref>). Allowed manual actions include a) mark as valid (validation) when a record is considered correct or corrected by someone else. When a record is not valid, users can: b) mark as invalid when considered 'potentially' invalid (or the curator is not confident), c) perform manual correction to update it according to the information from the original PDF document, and d) remove the record when it was not supposed to be extracted.</p><p>Besides manual operations from users, this workflow supports also automatic actions: 'anomaly detection' for pre-screening records (Section 2.2) and the 'training data collector' for accumulating training data for improving ML models (Section 2.3).</p><p>Although only the most recent version of a record can be viewed on this system, the correction history is recorded (Section 3.3).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Workflow control</head><p>The workflow state is determined by the 'curation status' (Section 2.1.1), the user action, and the error type (Section 2.1.2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.1.">Curation status</head><p>The curation status (Figure <ref type="figure" target="#fig_0">1</ref>) is defined by type of action, manual or automatic, and status, which can assume the following values:</p><p>• new: default status when a new record is created.</p><p>• curated: the record has been amended manually.</p><p>• validated: the record was manually marked as valid.</p><p>• invalid: the record is wrong or inappropriate for the situation (e.g. T m or T curie extracted as superconducting critical temperature).</p><p>• obsolete: the record has been updated and the updated values are stored in a new record (internal status 1 ). • removed: the record has been removed by a curator (internal status).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.2.">Error types</head><p>We first introduced error type in <ref type="bibr" target="#b0">[1]</ref> and extended their scope in this work to consider data curation and anomaly detection. Users are required to select one Error Type at every record update or removal. This information is stored in the 'original' record and can be different at every record modification. The error type values can be summarised as follows:  • Composition resolution: The exact composition cannot be resolved (e.g. the stoichiometric values cannot be resolved).</p><p>• Value resolution: The extracted formula contains variables that cannot be resolved, even after having read the paper. This includes when data is from tables • Anomaly detection: The data has been modified by anomaly detection, which facilitates their retrieval from the interface. • Curation amends: The curator is updating the data which does not present issues due to the automatic system.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Anomaly detection</head><p>Anomaly detection is the process of identifying unusual events or patterns in data. In our context, this means identifying data that are greatly different from the expected values. This post-process was introduced in a limited scope to draw attention to certain cases during the curation.</p><p>The anomaly detection uses a rule-based approach and marks any record that matches the following conditions</p><p>• the extracted T c is greater than room temperature (273 K), negative, or contains invalid characters and cannot be parsed (e.g. '41]') • the chemical formula cannot be processed by an ensemble composition parser that combines Pymatgen <ref type="bibr" target="#b14">[15]</ref>, and text2chem <ref type="bibr" target="#b15">[16]</ref> • the extracted applied pressure cannot be parsed or falls outside the range 0-250 GPa.</p><p>Records identified as anomalies have status 'invalid' and error type 'anomaly detection' for easy identification. Since this process may find false positives, its output requires validation from curators. For example, in certain contexts, T c values above room temperature or applied pressure up to 500 GPa may be valid in researchers' hypotheses, calculations, or simulated predictions.</p><p>We ran the anomaly detection on the full SuperCon 2 Database (40324 records <ref type="bibr" target="#b0">[1]</ref>). The anomaly detection identified 1506 records with invalid T c , 5021 records with an incomplete chemical formula, 304 records with invalid applied pressure, and 1440 materials linked to multiple T c values. Further analysis and cross-references with contrasting information may be added in future.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Automatic training data collector</head><p>The curation process is a valuable endeavour demanding significant knowledge and human effort. To maximise the use of this time for collecting as much information as possible. We integrated an automatic procedure in the curation process that, for every correction, accumulates the related data examples that can be used to improve the underlying ML models.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.1.">Training data collection</head><p>In the event of a correction (update, removal) in a database record, this process retrieves the corresponding raw data: the text passage, the recognised entities (spans), and the layout tokens information. This information is sufficient to be exported as training examples, which can be examined and corrected, and feedback to the ML model.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.2.">Training data management</head><p>We designed a specific page of the interface (Section 3) to manage the collected data (Figure <ref type="figure" target="#fig_1">2</ref>) in which each row corresponds to a training example composed by the decorated text showing the identified entities, the document identifier, and the status. The users can examine the data, delete it, send it to the annotation tool to be corrected, and then export them. We integrated our interface with Labelstudio <ref type="bibr" target="#b16">[17]</ref> for the correction of the collected training examples. Label-studio is an open-source, python-based, and modern interface supporting many different TDM tasks (NER, topic modelling, image recognition, etc.).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Curation interface</head><p>The workflow is operated through the user interface, which offers several key features to facilitate the data curation process (Figure <ref type="figure" target="#fig_0">1</ref>). It provides a comprehensive view of materials and their related properties as a table which includes search, filtering, and sorting functionality (Figure <ref type="figure" target="#fig_2">3</ref>). The detailed schema, including examples, is reported in our previous work <ref type="bibr" target="#b0">[1]</ref>.</p><p>During the curation process, it is often necessary to switch back and forth between the database record and the related context in the paper (the related paragraph or sentence). Our interface provides a viewer for individual documents, which visualises in the same window a table with the extracted records and the original PDF document decorated with annotations that identify the extracted materials and properties (Figure <ref type="figure" target="#fig_4">4</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Manual curation approach</head><p>In this section, we discuss our strategy concerning manual curation, which is still indispensable for developing high-quality structures.</p><p>We selected curators from domain experts in the field, to certify sufficient data quality. Nevertheless, as confirmed from our experiment in Section 4.3, the experience of each individual may have an impact on the final result. We followed two principles to guarantee robustness in the curation process. First, we built solid curation documentation as a form of example-driven guidelines with an iterative approach we first introduced in <ref type="bibr" target="#b17">[18]</ref>. Then, we used a double-round validation approach, in which the data was initially corrected by one person, and validated in a second round, by a different individual.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Curation guidelines</head><p>The guidelines consist mainly of two parts: the general principles and the correction rules with examples of solutions. The guidelines are designed to provide general information applied to corrections and very basic explanations containing illustrations for a faster understanding (e.g. the meaning of the colours of the annotations).</p><p>Differently from our previous work <ref type="bibr" target="#b17">[18]</ref>, these guidelines are divided into examples for different scenarios based on the error types mentioned in Section 2.1.2. Each example described the initial record, its context, the expected corrected record and a brief explanation, as illustrated in Figure <ref type="figure" target="#fig_3">5</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Curation and processing logs</head><p>The Supercon 2 interface gives access to information regarding the ingestion (processing log) and the . Each row contains one potential training data example. Each example is composed of a sentence and its extracted entities (highlighted in colour) with potential annotation mistakes that need to be corrected using an external tool: we used label-studio <ref type="bibr" target="#b16">[17]</ref>. The column 'status' indicate whether the example has been sent or not to the external tool. curation process (curation log). The processing log is filled up when the new data is ingested, it was built to have minimal functions able to explain why certain documents haven't been processed (Figure <ref type="figure" target="#fig_6">6 top</ref>). For example, sometimes documents fail because they don't contain any text (image PDF documents) or they are too big (more than 100 pages).</p><p>The curation log provides a view of what, when and how a record has been corrected (Figure <ref type="figure" target="#fig_6">6</ref> bottom).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Results and evaluation</head><p>In this section, we illustrate the experiments we have run to evaluate our work. The evaluation is composed of three sets of results. The anomaly detection rejection rate (Section 4.1) indicates how many anomalies were rejected by curators after validation. Then, we demonstrate that the training data automatically selected contributed to improving the ML model with a small set of examples (Section 4.2) Finally, we evaluated the quality of the data extraction using the interface (and the semi-automatic TDM process) against the classical method of reading the PDF articles and noting the experimental information in an Excel file. In Section 4.3 we find out that using the interface improves the quality of the curated data by reducing missing experimental data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.">Anomaly detection rejection rate</head><p>We evaluated the anomaly detection by observing the 'rejection rate' which consists of the number of detected anomalies that were rejected by human validation. Running the anomaly detection on a database subset with 667 records, it found 17 anomalies in T c , 1 anomaly in applied pressure, and 16 anomalies in the chemical  formulas. Curators examined each reported record and rejected 4 (23%) anomalies in T c , 6 anomalies (37%) in chemical formulas and 0 anomalies in applied pressure. This indicates an appropriate low rate of false positives although a study with a larger dataset might be necessary.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2.">Training data generation</head><p>We selected around 400 records in the Supercon 2 Database that were marked as invalid by the anomaly detection process and we corrected them following the curation guidelines (Section 3.2). Then, we examined the corresponding training data corrected by the interface (Section 2.3) and obtained a set of 352 training data examples for our ML models. We call the obtained dataset curation to be distinguished from the original SuperMat dataset which is referred to as base.</p><p>We prepared our experiment using SciBERT [19] that we fine-tuned for our downstream task as in <ref type="bibr" target="#b0">[1]</ref>. We trained five models that we evaluated using a fixed holdout dataset from SuperMat averaging the results to smooth out the fluctuations. We use the DeLFT (Deep Learning For Text) <ref type="bibr" target="#b19">[20]</ref> library for training, evaluating, and managing the models for prediction. A model can be trained with two different strategies:</p><p>(1) 'from scratch': when the model is initialised randomly. We denote this strategy with an (s). (2) 'incremental': when the initial model weights are taken from an already existing model. We denote this strategy with an (i).</p><p>The latter can be seen as a way to 'continue' the training from a specific checkpoint. We thus define three different training protocols: We merge 'curation' with the base dataset because the curation dataset is very small compared to 'base', and we want to avoid catastrophic forgetting <ref type="bibr" target="#b20">[21]</ref> or overfitting. The trained models are then tested using a fixed holdout dataset that we designed in our previous work <ref type="bibr" target="#b0">[1]</ref> and the evaluation scores are shown in Table <ref type="table">1</ref>.</p><p>This experiment demonstrates that with only 352 examples (2% of the SuperMat dataset) comprising 1846 additional entities (11% of the entities from the SuperMat dataset) (Table <ref type="table">2</ref>), we obtain an improvement of F1-score from 76.67% 2 to values between Table <ref type="table">1</ref>. F1-score from the evaluation of the fine-tuned SciBERT models. The training is performed with three different approaches. The base dataset is the original dataset described in <ref type="bibr" target="#b17">[18]</ref>, and the curation dataset is automatically collected based on the database corrections by the interface and manually corrected. s indicate 'training from scratch', while i indicate 'incremental training'. The evaluation is performed using the same holdout dataset from SuperMat <ref type="bibr" target="#b17">[18]</ref>. The results are averaged over five runs or train and evaluation. 77.44% (+0.77) and 77.48% (+0.81) for (base+curation)(s) and base(s)+(base+curation)(i), respectively. This experiment gives interesting insight relative to the positive impact on the way we select the training data. However, there are some limitations: the curation dataset is small compared to the base dataset. This issue could be verified by correcting all the available training data, repeating this experiment, and studying the interpolation between the size of the two datasets and the obtained evaluation scores. A second limitation is that the hyperparameters we chose for our model, in particular, the learning rate and batch size could be still better tuned to obtain better results with the second and third training protocols.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.">Data quality</head><p>We conducted an experiment to evaluate the effectiveness and accuracy of data curation using two methods: a) the user interface (interface), and b) the 'traditional' manual approach consisting of reading PDF documents and populating an Excel file (PDF documents).</p><p>We selected a dataset of 15 papers, which we assigned to three curators -a senior researcher (SD), a PhD student (PS), and a master's student (MS). Each curator received 10 papers: half to be corrected with the interface and half with the PDF Document method. Overall, each pair of curators had five papers in common which they had to process using opposite methods. For instance, if curator A receives paper 1 to be corrected with the interface, curator B, who receives the same paper 1, will correct it with the PDF document method. After curation, a fourth individual manually reviewed the curated content. The raw data is available in Tables <ref type="table">A1</ref> and<ref type="table" target="#tab_6">A2</ref>.</p><p>We evaluated the curation considering a double perspective: time and correctness. Time was calculated as the accumulated minutes required using each method. Correctness was assessed using standard measures such as precision, recall, and the F1-score. Precision measures the accuracy of the extracted information, while recall assesses the ability to capture all expected information. F1-Score is a harmonic means of precision and recall.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.1.">Discussion</head><p>Overall, both methods required the same accumulated time: 185 minutes using the interface and 184 minutes using the PDF Document method. When the experiment was carried out, not all the curators were familiar with the interface method. Although they had access to the user documentation, they had to get acquainted with the user interface, thus the accumulated 185 minutes included such activities.</p><p>We examined the quality of the extracted data and we observed an improvement of + 5.55% in precision and a substantial + 46.69% in recall when using the interface as compared with the PDF Document method (Table <ref type="table" target="#tab_4">3</ref>). The F1-score improved by 39.35%.</p><p>The disparity in experience significantly influenced the accuracy of curation, particularly in terms of highlevel skills. Senior researchers consistently achieved an average F1-Score approximately 13% higher than other curators (see Table <ref type="table" target="#tab_3">4</ref>). Furthermore, we observed a modest improvement between master's students and PhD students. These findings indicate also that for large-scale projects, employing master students instead of PhD students may be a more costeffective choice. Thus, using only a few senior researchers for the second round of validation (Section 3.1).</p><p>Finally, the collected data suggest that all three curators had overall more corrected results by using the interface as illustrated in Table <ref type="table" target="#tab_5">5</ref>.</p><p>The results of this experiment confirmed that our curation interface and workflow significantly improved the quality of the extracted data, with an astonishing improvement in recall, thus preventing curators from overlooking important information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">Code availability</head><p>This work is available at<ref type="url" target="https://github.com/lfoppiano/supercon2">https://github.com/lfoppiano/ supercon2</ref>. The repository contains the code of the SuperCon 2 interface, the curation workflow, and the Table <ref type="table">2</ref>. Data support, the number of entities for each label in each of the datasets used for evaluating the ML models. The base dataset is the original dataset described in <ref type="bibr" target="#b17">[18]</ref>, and the curation dataset is automatically collected based on the database corrections by the interface and manually corrected. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.">Conclusions</head><p>We built a semi-automatic staging area, called SuperCon 2 , to validate efficiently new experimental records automatically collected from superconductor research articles (SuperCon 2 Database <ref type="bibr" target="#b0">[1]</ref>) before they are ingested into the existing, manually-build database of superconductors, SuperCon <ref type="bibr" target="#b7">[8]</ref>. The system provides a curation workflow and a user interface (SuperCon 2 Interface) tailored to efficiently support domain experts in data correction and validation with fast context switching and an enhanced PDF viewer. Under the hood, the workflow ran 'anomaly detection' to automatically identify outliers and a 'training data collector' based on human corrections, to efficiently accumulate training data to be feedback to the ML model. Compared with the traditional manual approach of reading PDF documents and extracting information in an Excel file, SuperCon 2 significantly improves the curation quality by approximately 6% and + 47% for precision and recall, respectively. In future, this work can be expanded to support other materials science domains such as magnetic materials, spintronic and thermoelectric research and expanding the evaluation to a larger <ref type="bibr" target="#b21">[22]</ref> dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Notes</head><p>1. 'internal status' indicates that their records should be hidden in the interface. 2. In our previous work <ref type="bibr" target="#b0">[1]</ref> we reported 77.03% F1score. There is a slight decrease in absolute scores between DeLFT 0.2.8 and DeLFT 0.3.0. One cause may be the use of different hyperparameters in version 0.3.0 such as batch size and learning rate. However, the most probable cause could be the impact of using the Huggingface tokenizers library which is suffering from quality issues<ref type="url" target="https://github.com/kermitt2/delft/issues/150">https://github.com/kermitt2/delft/issues/150</ref>. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Schema of the curation workflow. Each node has two properties: type and status (Section 2.1.1). Each edge indicates one action. The workflow starts on the left side of the figure. The new records begin with 'automatic, new'. Changes of state are triggered by automatic (Section 2.2) or manual operations (update, mark as valid, etc. Section 3.1) and results in changes of the properties in the node. Each combination of property values identifies each state. '(*)' indicates a transition for which the training data are collected (Section 2.3).</figDesc><graphic coords="4,85.04,52.87,425.16,296.76" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Screenshot of the training data management page in the SuperCon 2 interface. Each row contains one potential training data example. Each example is composed of a sentence and its extracted entities (highlighted in colour) with potential annotation mistakes that need to be corrected using an external tool: we used label-studio<ref type="bibr" target="#b16">[17]</ref>. The column 'status' indicate whether the example has been sent or not to the external tool.</figDesc><graphic coords="6,60.94,52.85,473.40,190.08" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Screenshot of SuperCon 2 interface showing the database. Each row corresponds to one material-T c pair. On top, there are searches by attribute, sorting and other filtering operations. On the right there are curation controls (mark as valid, update, etc.). Records are grouped by document with alternating light yellow and white.</figDesc><graphic coords="6,60.94,311.02,473.40,269.40" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. Sample curation sheet from the curation guidelines. The sheet is composed of the following information: (a) Sample input data: a screenshot of the record from the 'SuperCon 2 interface', (b) Context represented by the related part of the annotated document referring to the record in exams. (c) The Motivation, describing the issue, (d) The Action to be taken, and the expected output.</figDesc><graphic coords="7,94.28,255.74,406.68,223.20" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. PDF document viewer showing an annotated document. The table on top is linked through the annotated entities. The user can navigate from the record to the exact point in the PDF, with a pointer (the red bulb light) identifying the context of the entities being examined.</figDesc><graphic coords="7,60.94,52.87,473.40,133.08" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>( 1 )</head><label>1</label><figDesc>base(s): using the base dataset and training from scratch (s). (2) (base+curation)(s): using both the base and curation datasets and training from scratch (s). (3) base(s)+(base+curation)(i): Using the base dataset to train from scratch (s), and then continuing the training with the curation dataset (i).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 6 .</head><label>6</label><figDesc>Figure 6. Top: Processing log, showing the output of each ingestion operation and the outcome with the detailed error that may have occurred. Bottom: Correction log, indicating each record, the number of updates, and the date/time of the last updates. By clicking on the 'record id', is possible to visualise the latest record values.</figDesc><graphic coords="8,60.94,52.86,473.40,195.00" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0"><head/><label/><figDesc/><graphic coords="2,100.86,391.72,297.60,233.04" type="bitmap"/></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>c classification: The temperature is not correctly classified</head><label/><figDesc>The material is incorrectly linked to the T c given that the entities are correctly recognised.</figDesc><table><row><cell>• From table: the entities Material ! T c !</cell></row><row><cell>Pressure are identified in a table. At the moment,</cell></row><row><cell>table extraction is not performed</cell></row><row><cell>• Extraction: The material, temperature, and pressure</cell></row><row><cell>are not extracted (no box) or extracted incorrectly.</cell></row></table><note><p>• Linking: • T as 'superconductors critical temperature' (e.g. Curie temperature, Magnetic temperature. . .).</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 4 .</head><label>4</label><figDesc>Evaluation</figDesc><table><row><cell/><cell>base</cell><cell>base+curation</cell><cell>Δ</cell></row><row><cell>&lt;class&gt;</cell><cell>1646</cell><cell>1732</cell><cell>86</cell></row><row><cell>&lt;material&gt;</cell><cell>6943</cell><cell>7580</cell><cell>637</cell></row><row><cell>&lt;me_method&gt;</cell><cell>1883</cell><cell>1934</cell><cell>51</cell></row><row><cell>&lt;pressure&gt;</cell><cell>274</cell><cell>361</cell><cell>87</cell></row><row><cell>&lt;tc&gt;</cell><cell>3741</cell><cell>4269</cell><cell>528</cell></row><row><cell>&lt;tcValue&gt;</cell><cell>1099</cell><cell>1556</cell><cell>457</cell></row><row><cell>Total</cell><cell>15586</cell><cell>17432</cell><cell>1846</cell></row></table><note><p>scores (P: precision, R: recall, F1: F1-score) aggregated by experience (MS: master student, PD: PhD student, SR: senior researcher). Each person corrected 10 documents.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 3 .</head><label>3</label><figDesc>Evaluation scores (P: precision, R: recall, F1: F1-score) between the curation using the SuperCon 2 interface (Interface) and the traditional method of reading the PDF document (PDF document.).</figDesc><table><row><cell>Method</cell><cell>P (%)</cell><cell>R (%)</cell><cell>F1%)</cell><cell># docs</cell></row><row><cell>PDF document</cell><cell>87.83</cell><cell>45.61</cell><cell>52.67</cell><cell>15</cell></row><row><cell>Interface</cell><cell>93.38</cell><cell>92.51</cell><cell>92.02</cell><cell>15</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5 .</head><label>5</label><figDesc>Evaluation scores (P: precision, R: recall, F1: F1-score) listed by experience (MS: master student, PD: PhD student, SR: senior researcher), and method (PDF document, interface).</figDesc><table><row><cell>Experience</cell><cell>Method</cell><cell>P (%)</cell><cell>R (%)</cell><cell>F1%)</cell><cell># docs</cell><cell># pages</cell></row><row><cell>MS</cell><cell>PDF Document</cell><cell>94.58</cell><cell>36.55</cell><cell>48.67</cell><cell>6</cell><cell>46</cell></row><row><cell/><cell>Interface</cell><cell>83.19</cell><cell>95.83</cell><cell>88.25</cell><cell>4</cell><cell>50</cell></row><row><cell>PD</cell><cell>PDF Document</cell><cell>70.00</cell><cell>48.51</cell><cell>50.78</cell><cell>5</cell><cell>49</cell></row><row><cell/><cell>Interface</cell><cell>96.67</cell><cell>82.86</cell><cell>88.11</cell><cell>5</cell><cell>51</cell></row><row><cell>SR</cell><cell>PDF Document</cell><cell>100.00</cell><cell>55.56</cell><cell>61.03</cell><cell>4</cell><cell>51</cell></row><row><cell/><cell>Interface</cell><cell>97.42</cell><cell>98.33</cell><cell>97.78</cell><cell>6</cell><cell>45</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table A2 .</head><label>A2</label><figDesc>Evaluation scores obtained for each document and method (I: interface, P: PDF) combination. TP: true positive, FP: false positive, FN: false negative. P: precision, R: recall, F1: F1-score.</figDesc><table><row><cell>Document ID</cell><cell># pages</cell><cell>Method</cell><cell># TP</cell><cell># FP</cell><cell># FN</cell><cell>P</cell><cell>R</cell><cell>F1</cell></row><row><cell>Senior Researcher (SR)</cell><cell/><cell/><cell/><cell/><cell/><cell/><cell/><cell/></row><row><cell>0454e07f64</cell><cell>4</cell><cell>I</cell><cell>6</cell><cell>0</cell><cell>0</cell><cell>100.00</cell><cell>100.00</cell><cell>100.00</cell></row><row><cell>00c32076f4</cell><cell>13</cell><cell>P</cell><cell>8</cell><cell>0</cell><cell>0</cell><cell>100.00</cell><cell>100.00</cell><cell>100.00</cell></row><row><cell>0c7d3163ea</cell><cell>9</cell><cell>I</cell><cell>13</cell><cell>1</cell><cell>0</cell><cell>92.86</cell><cell>100.00</cell><cell>96.30</cell></row><row><cell>0da5febabf</cell><cell>11</cell><cell>P</cell><cell>8</cell><cell>0</cell><cell>1</cell><cell>100.00</cell><cell>88.89</cell><cell>94.12</cell></row><row><cell>0012333581</cell><cell>13</cell><cell>I</cell><cell>11</cell><cell>0</cell><cell>0</cell><cell>100.00</cell><cell>100.00</cell><cell>100.00</cell></row><row><cell>0aa1b3161f</cell><cell>5</cell><cell>I</cell><cell>9</cell><cell>0</cell><cell>1</cell><cell>100.00</cell><cell>90.00</cell><cell>94.74</cell></row><row><cell>0021fd339f</cell><cell>14</cell><cell>P</cell><cell>4</cell><cell>0</cell><cell>8</cell><cell>100.00</cell><cell>33.33</cell><cell>50.00</cell></row><row><cell>039105663f</cell><cell>9</cell><cell>I</cell><cell>11</cell><cell>1</cell><cell>0</cell><cell>91.67</cell><cell>100.00</cell><cell>95.65</cell></row><row><cell>02c4f00127</cell><cell>13</cell><cell>P</cell><cell>0</cell><cell>0</cell><cell>3</cell><cell>100.00</cell><cell>0.00</cell><cell>0.00</cell></row><row><cell>021c413172</cell><cell>5</cell><cell>I</cell><cell>15</cell><cell>0</cell><cell>0</cell><cell>100.00</cell><cell>100.00</cell><cell>100.00</cell></row><row><cell>PhD Student (PS)</cell><cell/><cell/><cell/><cell/><cell/><cell/><cell/><cell/></row><row><cell>02bf1b3db9</cell><cell>7</cell><cell>I</cell><cell>5</cell><cell>0</cell><cell>2</cell><cell>100.00</cell><cell>71.43</cell><cell>83.33</cell></row><row><cell>00b50fc0a8</cell><cell>11</cell><cell>P</cell><cell>2</cell><cell>0</cell><cell>7</cell><cell>100.00</cell><cell>22.22</cell><cell>36.36</cell></row><row><cell>02cbc58819</cell><cell>4</cell><cell>I</cell><cell>4</cell><cell>0</cell><cell>3</cell><cell>100.00</cell><cell>57.14</cell><cell>72.73</cell></row><row><cell>044939701d</cell><cell>12</cell><cell>P</cell><cell>4</cell><cell>0</cell><cell>2</cell><cell>100.00</cell><cell>66.67</cell><cell>80.00</cell></row><row><cell>08e1cb8f4f</cell><cell>16</cell><cell>I</cell><cell>5</cell><cell>1</cell><cell>1</cell><cell>83.33</cell><cell>85.71</cell><cell>84.51</cell></row><row><cell>0454e07f64</cell><cell>4</cell><cell>P</cell><cell>0</cell><cell>1</cell><cell>5</cell><cell>0.00</cell><cell>16.67</cell><cell>0.00</cell></row><row><cell>00c32076f4</cell><cell>13</cell><cell>I</cell><cell>8</cell><cell>0</cell><cell>0</cell><cell>100.00</cell><cell>100.00</cell><cell>100.00</cell></row><row><cell>0c7d3163ea</cell><cell>9</cell><cell>P</cell><cell>9</cell><cell>0</cell><cell>5</cell><cell>100.00</cell><cell>64.29</cell><cell>78.26</cell></row><row><cell>0da5febabf</cell><cell>11</cell><cell>I</cell><cell>9</cell><cell>0</cell><cell>0</cell><cell>100.00</cell><cell>100.00</cell><cell>100.00</cell></row><row><cell>0012333581</cell><cell>13</cell><cell>P</cell><cell>4</cell><cell>4</cell><cell>3</cell><cell>50.00</cell><cell>72.73</cell><cell>59.26</cell></row><row><cell>Master Student (MS)</cell><cell/><cell/><cell/><cell/><cell/><cell/><cell/><cell/></row><row><cell>0aa1b3161f</cell><cell>5</cell><cell>P</cell><cell>1</cell><cell>0</cell><cell>9</cell><cell>100.00</cell><cell>10.00</cell><cell>18.18</cell></row><row><cell>0021fd339f</cell><cell>14</cell><cell>I</cell><cell>12</cell><cell>3</cell><cell>3</cell><cell>80.00</cell><cell>100.00</cell><cell>88.89</cell></row><row><cell>039105663f</cell><cell>9</cell><cell>P</cell><cell>4</cell><cell>1</cell><cell>7</cell><cell>80.00</cell><cell>41.67</cell><cell>54.79</cell></row><row><cell>02c4f00127</cell><cell>13</cell><cell>I</cell><cell>3</cell><cell>1</cell><cell>1</cell><cell>75.00</cell><cell>100.00</cell><cell>85.71</cell></row><row><cell>021c413172</cell><cell>5</cell><cell>P</cell><cell>7</cell><cell>1</cell><cell>7</cell><cell>87.50</cell><cell>53.33</cell><cell>66.27</cell></row><row><cell>02bf1b3db9</cell><cell>7</cell><cell>P</cell><cell>2</cell><cell>0</cell><cell>5</cell><cell>100.00</cell><cell>28.57</cell><cell>44.44</cell></row><row><cell>00b50fc0a8</cell><cell>11</cell><cell>I</cell><cell>7</cell><cell>2</cell><cell>0</cell><cell>77.78</cell><cell>100.00</cell><cell>87.50</cell></row><row><cell>02cbc58819</cell><cell>4</cell><cell>P</cell><cell>5</cell><cell>0</cell><cell>2</cell><cell>100.00</cell><cell>71.43</cell><cell>83.33</cell></row><row><cell>044939701d</cell><cell>12</cell><cell>I</cell><cell>5</cell><cell>0</cell><cell>1</cell><cell>100.00</cell><cell>83.33</cell><cell>90.91</cell></row><row><cell>08e1cb8f4f</cell><cell>16</cell><cell>P</cell><cell>1</cell><cell>0</cell><cell>6</cell><cell>100.00</cell><cell>14.29</cell><cell>25.00</cell></row></table></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>Sci. Technol. Adv. Mater. Meth. 3 (2023) 2 L. FOPPIANO et al.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_1"><p>Sci. Technol. Adv. Mater. Meth. 3 (2023) 3 L. FOPPIANO et al.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_2"><p>Sci. Technol. Adv. Mater. Meth. 3 (2023) 5 L. FOPPIANO et al.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_3"><p>Sci. Technol. Adv. Mater. Meth. 3 (2023) 6 L. FOPPIANO et al.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_4"><p>Sci. Technol. Adv. Mater. Meth. 3 (2023) 9L. FOPPIANO et al.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_5"><p>Sci. Technol. Adv. Mater. Meth. 3 (2023) 10 L. FOPPIANO et al.</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_6"><p>Sci. Technol. Adv. Mater. Meth. 3 (2023) 12 L. FOPPIANO et al.</p></note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgements</head><p>Our warmest thanks to <rs type="person">Patrice Lopez</rs>, the author of Grobid [22], DeLFT [20], and other open-source projects for his continuous support and inspiration with ideas, suggestions, and fruitful discussions. We thank <rs type="person">Pedro Baptista de Castro</rs> for his support during this work. Special thanks to <rs type="person">Erina Fujita</rs> for useful tips on the manuscript.</p></div>
+			</div>
+			<div type="funding">
+<div><p>Materials Modelling Group, Data-driven <rs type="affiliation">Materials Research Field, Centre for Basic Research on Materials, NIMS, 1-1 Namiki, Tsukuba</rs>, Ibaraki <rs type="grantNumber">305-0044</rs>, Japan</p></div>
+			</div>
+			<div type="funding">
+<div><head>Funding</head><p>This work was partly supported by <rs type="funder">MEXT</rs> Program: Data Creation and <rs type="funder">Utilization-Type Material Research and Development Project (Digital Transformation Initiative Center for Magnetic Materials)</rs> Grant Number [JPMXP1122715503].</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_thsdDye">
+					<idno type="grant-number">305-0044</idno>
+				</org>
+			</listOrg>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Disclosure statement</head><p>No potential conflict of interest was reported by the author(s).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contribution</head><p>LF wrote the manuscript and KT helped with the editing. LF and POS discussed the ML results and experiments. LF implemented the workflow as a standalone service, and TM wrote the front end of the user interface. LF designed the user interface experiment with KT, TT and WS as curators. KT led the materials-science work on the data with CS, TT and WS. KT, TA, YT and MI revised the paper. YT and MI supervised the work of the respective teams.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Appendix A. Evaluation</head><p>Table <ref type="table">A1</ref>. Timetable recording the time spent for each of the 15 articles. Each row indicates the time and the event (Start, Finish) from each of the curators: master student (MD), PhD student (PD), and senior researcher (SR). Duration is expressed in minutes. </p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Automatic extraction of materials and properties from superconductors scientific literature</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Foppiano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">B</forename><surname>Castro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">O</forename><surname>Suarez</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/27660400.2022.2153633</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci Technol Adv Mater</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2153633</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Materials discovery with machine learning and knowledge discovery</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">N</forename><surname>Oliveira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">J</forename><surname>Oliveira</surname></persName>
+		</author>
+		<idno type="DOI">10.3389/fchem.2022.930369</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Front Chem</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">10</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Commentary: the materials project: a materials genome approach to accelerating materials innovation</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Ong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hautier</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/1.4812323</idno>
+	</analytic>
+	<monogr>
+		<title level="j">APL Mater</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">11002</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Aflow: an automatic framework for high-throughput materials discovery</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Curtarolo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Setyawan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">L</forename><surname>Hart</surname></persName>
+		</author>
+		<ptr target="https://www.sciencedirect.com/science/article/pii/S0927025612000717"/>
+	</analytic>
+	<monogr>
+		<title level="j">Comput Mater Sci</title>
+		<imprint>
+			<biblScope unit="volume">58</biblScope>
+			<biblScope unit="page" from="218" to="226"/>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">The nomad laboratory: from data sharing to artificial intelligence</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Draxl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Scheffler</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/2515-7639/ab13bb</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J Phys Mater</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page">36001</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Global publication productivity in materials science research: a scientometric analysis</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Pratheepan</surname></persName>
+		</author>
+		<ptr target="https://ojs.trp.org.in/index.php/ijiss/article/view/583"/>
+	</analytic>
+	<monogr>
+		<title level="j">Indian J Inf Sources Serv</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="111" to="116"/>
+			<date type="published" when="2019-02">2019 Feb</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">The PAULING FILE project and materials platform for data science: from big data toward materials genome</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Blokhin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Villars</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-319-42913-7_62-1</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<publisher>Springer International Publishing</publisher>
+			<biblScope unit="page" from="1" to="26"/>
+			<pubPlace>Cham</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Structuring superconductor data with ontology: reproducing historical datasets as knowledge bases</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ishii</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Sakamoto</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/27660400.2023.2223051</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci Technol Adv Mater</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">2223051</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Predicting new superconductors and their critical temperatures using machine learning</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Roter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dordevic</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.physc.2020.1353689</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys C</title>
+		<imprint>
+			<biblScope unit="volume">575</biblScope>
+			<biblScope unit="page">1353689</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Machine learning modeling of superconducting critical temperature</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Stanev</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Oses</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kusne</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41524-018-0085-8</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Npj Comput Mater</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">4</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Machine-learning approach for discovery of conventional superconductors</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Tran</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">N</forename><surname>Vu</surname></persName>
+		</author>
+		<idno>arXiv:221103265. 2022</idno>
+		<imprint/>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Deep learning model for finding new superconductors</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Konno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Kurokawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Nabeshima</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.103.014509</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys Rev B</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">14509</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The INCEpTION platform: machine-assisted and knowledge-oriented interactive annotation</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">C</forename><surname>Klie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bugert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Boullosa</surname></persName>
+		</author>
+		<ptr target="https://www.aclweb.org/anthology/C18-2002"/>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 27th International Conference on Computational Linguistics: System Demonstrations</title>
+		<meeting>the 27th International Conference on Computational Linguistics: System Demonstrations<address><addrLine>Santa Fe, New Mexico</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="page" from="5" to="9"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Doccano: text annotation tool for human</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Nakayama</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Kubo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kamura</surname></persName>
+		</author>
+		<ptr target="https://github.com/doccano/doccano"/>
+	</analytic>
+	<monogr>
+		<title level="j">Software</title>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Python materials genomics pymatgen: a robust open-source python library for materials analysis</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">P</forename><surname>Ong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">D</forename><surname>Richards</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Jain</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.commatsci.2012.10.028</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Comput Mater Sci</title>
+		<imprint>
+			<biblScope unit="volume">68</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="314" to="319"/>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Text-mined dataset of inorganic materials synthesis recipes. Sci Data</title>
+		<author>
+			<persName><forename type="first">O</forename><surname>Kononova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Huo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>He</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/s41597-019-0224-1</idno>
+		<idno>41597-019-0224-1</idno>
+		<ptr target="https://doi.org/10.1038/s"/>
+		<imprint>
+			<date type="published" when="2019-10">2019 Oct</date>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">203</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Label studio: data labeling software; 2020-2022</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tkachenko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Malyuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Holmanyuk</surname></persName>
+		</author>
+		<ptr target="https://github.com/heartexlabs/label-studio"/>
+	</analytic>
+	<monogr>
+		<title level="m">Open source software</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Supermat: construction of a linked annotated dataset from superconductors-related publications</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Foppiano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Dieb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Suzuki</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/27660400.2021.1918396</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci Technol Adv Mater: Methods</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="34" to="44"/>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">SciBERT: a pretrained language model for scientific text</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Beltagy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Lo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Cohan</surname></persName>
+		</author>
+		<ptr target="https://aclanthology.org/D19-1371"/>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing</title>
+		<meeting>the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing<address><addrLine>Hong Kong; China</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019-11">Nov. 2019</date>
+			<biblScope unit="page" from="3615" to="3620"/>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title/>
+		<ptr target="https://github.com/kermitt2/delft"/>
+	</analytic>
+	<monogr>
+		<title level="j">DeLFT contributors. Delft</title>
+		<imprint>
+			<date type="published" when="2018">2018-2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Overcoming catastrophic forgetting in neural networks</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Kirkpatrick</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Pascanu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">C</forename><surname>Rabinowitz</surname></persName>
+		</author>
+		<idno>abs/1612.00796</idno>
+		<ptr target="http://arxiv.org/abs/1612.00796"/>
+	</analytic>
+	<monogr>
+		<title level="j">CoRr</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">G</forename><surname>Contributors</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Grobid</surname></persName>
+		</author>
+		<ptr target="https://github.com/kermitt2/grobid"/>
+		<imprint>
+			<date type="published" when="2008">2008 -2023</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
