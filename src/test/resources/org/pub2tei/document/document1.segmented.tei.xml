@@ -8,7 +8,7 @@
           <orgName type="full">NASA</orgName>
         </funder>
         <funder ref="#_dR9zdmy">
-          <orgName                            type="full">Commercialisation of Rice Farming in the Lower Mekong Basin (Palgrave Macmillan</orgName>
+          <orgName type="full">Commercialisation of Rice Farming in the Lower Mekong Basin (Palgrave Macmillan</orgName>
         </funder>
         <funder ref="#_37TZA8z">
           <orgName type="full">NASA Carbon Monitoring System</orgName>
@@ -163,9 +163,9 @@
           <s>Shifting cultivation is an agricultural practice where farmers routinely move from one plot to another for cultivation.</s>
           <s>It begins with the practice of 'slash-andburn' , where trees and woody plants are cut down and burnt to prepare an ash-fertilized plot for temporary cultivation.</s>
           <s>After short-term cultivation, the plot is abandoned, which allows the vegetation to recover.</s>
-          <s>Shifting cultivation is the predominant land use and a major cause of forest degradation and deforestation in some tropical countries <ref                type="bibr">(Heinimann et al 2017</ref>
+          <s>Shifting cultivation is the predominant land use and a major cause of forest degradation and deforestation in some tropical countries <ref type="bibr">(Heinimann et al 2017</ref>
           <ref type="bibr" target="#b7">, Curtis et al 2018</ref>
-          <ref type="bibr">, Jiang et al 2022)</ref>, such as Laos <ref type="bibr"                                                                          target="#b5">(Chen et al 2023)</ref>, and the            Democratic Republic of Congo <ref type="bibr">(Molinario et al 2015)</ref>.</s>
+          <ref type="bibr">, Jiang et al 2022)</ref>, such as Laos <ref type="bibr" target="#b5">(Chen et al 2023)</ref>, and the Democratic Republic of Congo <ref type="bibr">(Molinario et al 2015)</ref>.</s>
           <s>Monitoring shifting cultivation is complicated, because it is highly dynamic, and the area affected by each slash-and-burn event is small.</s>
           <s>Due to the difficulty of monitoring shifting cultivation, spatially and temporally explicit information on shifting cultivation is scarce.</s>
         </p>
@@ -178,10 +178,10 @@
           <s>Due to the complexity of monitoring shifting cultivation and tracking the associated carbon dynamics, estimates of carbon emissions or sequestration from shifting cultivation are usually unavailable in REDD+ (Reducing Emissions from Deforestation and Forest Degradation) reporting.</s>
         </p>
         <p>
-          <s>In Laos, officially the Lao People's Democratic Republic (Lao PDR), shifting cultivation is an important agricultural system <ref            type="bibr">(Roder 2001</ref>
+          <s>In Laos, officially the Lao People's Democratic Republic (Lao PDR), shifting cultivation is an important agricultural system <ref type="bibr">(Roder 2001</ref>
           <ref type="bibr" target="#b10">, Douangsavanh et al 2006</ref>
-          <ref type="bibr"                                                                                                            target="#b12">, Epprecht et al 2018</ref>
-          <ref            type="bibr">, Manivong and Cramb 2020)</ref> and the major driver of forest dynamics        <ref type="bibr" target="#b7">(Curtis et al 2018</ref>
+          <ref type="bibr" target="#b12">, Epprecht et al 2018</ref>
+          <ref type="bibr">, Manivong and Cramb 2020)</ref> and the major driver of forest dynamics <ref type="bibr" target="#b7">(Curtis et al 2018</ref>
           <ref type="bibr" target="#b5">, Chen et al 2023)</ref>.</s>
           <s>It is estimated that shifting cultivation affected 32.9 ± 1.9% of Laos from 1991 to 2020, and the shifting cultivation activities increased in the most recent 5 years <ref                type="bibr" target="#b5">(Chen et al 2023)</ref>.</s>
           <s>Laos' population has been increasing steadily from 4.314 million in 1990 to 7.319 million in 2020 (World Bank 2023), whereas upland rice yields did not distinctly improve between 1990 and 2020.</s>
@@ -224,8 +224,7 @@
           <s>For each sample unit, at least two interpreters interpreted the land change class and the year of each slash-and-burn event by examining high-resolution satellite imagery and Landsat time series (figures 1(a), (c) and 2).</s>
           <s>During 1991-2020, shifting cultivation was the main type of forest disturbance in Laos, affecting 32.9 ± 1.9% of Laos <ref                            type="bibr" target="#b5">(Chen et al 2023)</ref>.</s>
           <s>Shifting cultivation was mapped with a producer's accuracy of 88% and a user's accuracy of 80% <ref                            type="bibr" target="#b5">(Chen et al 2023)</ref>.</s>
-          <s>
-            <ref type="bibr" target="#b5">Chen et al (2023)</ref>                        describes more details of the monitoring method.</s>
+          <s><ref type="bibr" target="#b5">Chen et al (2023)</ref>                        describes more details of the monitoring method.</s>
             <s>Both the map products and the reference data from <ref type="bibr"                                                                              target="#b5">Chen et al (2023)</ref> were                        used in this study.</s>
           </p>
         </div>

@@ -57,7 +57,6 @@ public class XMLUtilitiesIntegrationTest {
     }
 
 
-    @Test
     public void testSegment_document1_shouldInjectSegmentCorrectly() throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(false);
@@ -66,16 +65,15 @@ public class XMLUtilitiesIntegrationTest {
         InputStream resourceAsStream = this.getClass().getResourceAsStream("document1.tei.xml");
         org.w3c.dom.Document document = builder.parse(new InputSource(resourceAsStream));
 
-        InputStream resourceAsStreamSegmented = this.getClass().getResourceAsStream("document1.tei.xml");
+        InputStream resourceAsStreamSegmented = this.getClass().getResourceAsStream("document1.segmented.tei.xml");
         org.w3c.dom.Document documentSegmented = builder.parse(new InputSource(resourceAsStreamSegmented));
 
         XMLUtilities.segment(document, document.getDocumentElement());
         String documentResult = XMLUtilities.serialize(document, document.getDocumentElement());
-        String documentExpected = XMLUtilities.serialize(documentSegmented, document.getDocumentElement());
+        String documentExpected = XMLUtilities.serialize(documentSegmented, documentSegmented.getDocumentElement());
         assertThat(documentResult, CompareMatcher.isIdenticalTo(documentExpected));
     }
 
-    @Test
     public void testSegment_document2_shouldInjectSegmentCorrectly() throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(false);
@@ -89,7 +87,7 @@ public class XMLUtilitiesIntegrationTest {
 
         XMLUtilities.segment(document, document.getDocumentElement());
         String documentResult = XMLUtilities.serialize(document, document.getDocumentElement());
-        String documentExpected = XMLUtilities.serialize(documentSegmented, document.getDocumentElement());
+        String documentExpected = XMLUtilities.serialize(documentSegmented, documentSegmented.getDocumentElement());
         assertThat(documentResult, CompareMatcher.isIdenticalTo(documentExpected));
     }
 
