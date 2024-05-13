@@ -64,14 +64,6 @@ public class ServiceController implements Pub2TEIPaths {
         GrobidProperties.getInstance().setCrossrefToken(serviceConfiguration.getCrossrefToken());
     }
 
-    @Path(PATH_PUB2TEI)
-    @Produces(MediaType.TEXT_PLAIN)
-    @GET
-    public Response rootPath() {
-        return Response.status(Response.Status.OK).build();
-    }
-
-
     /**
      * @see org.grobid.service.process.GrobidRestProcessGeneric#isAlive()
      */
