@@ -41,16 +41,17 @@ public class ProcessFile {
      * @param segmentSentences     if true, return results with segmented sentences
      * @return a response object containing the converted/refined TEI XML
      */
-    public static Response processXML(final InputStream inputStream, 
-                                    final boolean segmentSentences,
-                                    final boolean refine, 
-                                    final int consolidateReferences,
-                                    ServiceConfiguration serviceConfiguration) {
+    public static Response processXML(final InputStream inputStream,
+                                      final boolean segmentSentences,
+                                      final boolean refine,
+                                      final int consolidateReferences,
+                                      ServiceConfiguration serviceConfiguration,
+                                      final boolean generateIDs) {
         LOGGER.debug(methodLogIn()); 
         Response response = null;
         try {
             DocumentProcessor documentProcessor = new DocumentProcessor(serviceConfiguration);
-            String result = documentProcessor.processXML(inputStream, segmentSentences, refine, consolidateReferences);
+            String result = documentProcessor.processXML(inputStream, segmentSentences, refine, consolidateReferences, generateIDs);
 
             if (result == null || result.length() == 0) {
                 response = Response.status(Response.Status.NO_CONTENT).build();

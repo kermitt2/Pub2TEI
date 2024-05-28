@@ -4,6 +4,7 @@ import net.sf.saxon.om.NameChecker;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.grobid.core.utilities.KeyGen;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.SentenceUtilities;
 import org.slf4j.Logger;
@@ -40,6 +41,7 @@ public class XMLUtilities {
 
     private static List<String> textualElements = Arrays.asList("p", "figDesc");
     private static List<String> noSegmentationElements = Arrays.asList("listBibl", "table");
+    private static List<String> elementsWithIds = Arrays.asList("s", "p", "title", "note", "term", "keywords");
 
     private static DocumentBuilderFactory factory = getReasonableDocumentBuilderFactory();
 
@@ -555,6 +557,32 @@ public class XMLUtilities {
         return tei;
     }
 
+    public static void generateIDs(org.w3c.dom.Document doc, Node node) {
+        final NodeList children = node.getChildNodes();
+        final int nbChildren = children.getLength();
+
+        List<Node> newChildren = new ArrayList<>();
+        for (int i = 0; i < nbChildren; i++) {
+            newChildren.add(children.item(i));
+        }
+
+        factory.setNamespaceAware(true);
+
+        for (int i = 0; i < nbChildren; i++) {
+            final Node n = newChildren.get(i);
+            if (n.getNodeType() == Node.ELEMENT_NODE
+                    && elementsWithIds.contains(n.getNodeName())) {
+                Element nodeAsElement = ((Element) n);
+                if (!nodeAsElement.hasAttribute("xml:id")) {
+                    String divID = "_" + KeyGen.getKey().substring(0, 7);
+                    ((Element) n).setAttribute("xml:id", divID);
+                }
+                XMLUtilities.generateIDs(doc, n);
+            } else if (n.getNodeType() == Node.ELEMENT_NODE) {
+                XMLUtilities.generateIDs(doc, n);
+            }
+        }
+    }
 
     /**
      * This method is similar to the usual Element.getTextContent() (get all text under the element
