@@ -40,6 +40,7 @@ public class ServiceController implements Pub2TEIPaths {
     private static final String REFINE_FUNDERS = "funderRefine";
     
     private static final String CONSOLIDATE_REFERENCES = "consolidateReferences";
+    private static final String GENERATE_IDS = "generateIDs";
     private static final String CONSOLIDATE_HEADER = "consolidateHeader";
     private static final String CONSOLIDATE_FUNDERS = "consolidateFunders";
 
@@ -81,11 +82,13 @@ public class ServiceController implements Pub2TEIPaths {
         @FormParam(TEXT) String text,
         @DefaultValue("0") @FormParam(SEGMENT) String segmentSentences,
         @DefaultValue("0") @FormParam(REFINE_GROBID) String refineGrobid,
+        @DefaultValue("0") @FormDataParam(GENERATE_IDS) String generateIds,
         @DefaultValue("0") @FormParam(CONSOLIDATE_REFERENCES) int consolidateReferences
         ) {
-        boolean segment = validateGenerateIdParam(segmentSentences);
-        boolean refine = validateGenerateIdParam(refineGrobid);
-        return ProcessString.processText(text, segment, refine, consolidateReferences, this.configuration);
+        boolean segment = validateBooleanParam(segmentSentences);
+        boolean refine = validateBooleanParam(refineGrobid);
+        boolean generateIDs = validateBooleanParam(generateIds);
+        return ProcessString.processText(text, segment, refine, consolidateReferences, this.configuration, generateIDs);
     }
 
     @Path(PATH_TEXT)
@@ -95,10 +98,12 @@ public class ServiceController implements Pub2TEIPaths {
             @QueryParam(TEXT) String text,
             @DefaultValue("0") @QueryParam(SEGMENT) String segmentSentences,
             @DefaultValue("0") @QueryParam(REFINE_GROBID) String refineGrobid,
+            @DefaultValue("0") @FormDataParam(GENERATE_IDS) String generateIds,
             @DefaultValue("0") @QueryParam(CONSOLIDATE_REFERENCES) int consolidateReferences) {
-        boolean segment = validateGenerateIdParam(segmentSentences);
-        boolean refine = validateGenerateIdParam(refineGrobid);
-        return ProcessString.processText(text, segment, refine, consolidateReferences, this.configuration);
+        boolean segment = validateBooleanParam(segmentSentences);
+        boolean refine = validateBooleanParam(refineGrobid);
+        boolean generateIDs = validateBooleanParam(generateIds);
+        return ProcessString.processText(text, segment, refine, consolidateReferences, this.configuration, generateIDs);
     }
 
     @Path(PATH_XML)
@@ -109,19 +114,21 @@ public class ServiceController implements Pub2TEIPaths {
             @FormDataParam(INPUT) InputStream inputStream,
             @DefaultValue("0") @FormDataParam(SEGMENT) String segmentSentences,
             @DefaultValue("0") @FormDataParam(REFINE_GROBID) String refineGrobid, 
+            @DefaultValue("0") @FormDataParam(GENERATE_IDS) String generateIds,
             @DefaultValue("0") @FormDataParam(CONSOLIDATE_REFERENCES) int consolidateReferences
         ) {
-        boolean segment = validateGenerateIdParam(segmentSentences);
-        boolean refine = validateGenerateIdParam(refineGrobid);
-        return ProcessFile.processXML(inputStream, segment, refine, consolidateReferences, this.configuration);
+        boolean segment = validateBooleanParam(segmentSentences);
+        boolean refine = validateBooleanParam(refineGrobid);
+        boolean generateIDs = validateBooleanParam(generateIds);
+        return ProcessFile.processXML(inputStream, segment, refine, consolidateReferences, this.configuration, generateIDs);
     }
 
-    private static boolean validateGenerateIdParam(String generateIDs) {
-        boolean generate = false;
-        if ((generateIDs != null) && (generateIDs.equals("1") || generateIDs.equals("true") || generateIDs.equals("True"))) {
-            generate = true;
+    private static boolean validateBooleanParam(String param) {
+        boolean result = false;
+        if ((param != null) && (param.equals("1") || param.equals("true") || param.equals("True"))) {
+            result = true;
         }
-        return generate;
+        return result;
     }
 
 }

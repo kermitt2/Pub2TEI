@@ -99,6 +99,10 @@ public class DocumentProcessor {
      * Process a TEI XML format
      */
     public String processTEI(String tei, boolean segmentSentences, boolean refine, int consolidateReferences) throws IOException {
+        return processTEI(tei, segmentSentences, refine, consolidateReferences, false);
+    }
+
+    public String processTEI(String tei, boolean segmentSentences, boolean refine, int consolidateReferences, boolean generateIDs) throws IOException {
         if (tei == null || tei.length() == 0)
             return null;
         try {
@@ -118,6 +122,11 @@ public class DocumentProcessor {
                 org.w3c.dom.Element root = document.getDocumentElement();
                 XMLUtilities.segment(document, root);
                 XMLUtilities.fixSegmentedFigureTableList(document);
+            }
+
+            if (generateIDs) {
+                org.w3c.dom.Element root = document.getDocumentElement();
+                XMLUtilities.generateIDs(document, root);
             }
 
             if (refine) {
@@ -159,7 +168,7 @@ public class DocumentProcessor {
      * @return TEI string
      */
 
-    public String processXML(File file, boolean segmentSentences, boolean refine, int consolidateReferences) throws Exception {
+    public String processXML(File file, boolean segmentSentences, boolean refine, int consolidateReferences, boolean generateIDs) throws Exception {
         InputStream inputStream = null;
         
         try {
@@ -168,17 +177,17 @@ public class DocumentProcessor {
             LOGGER.error("Invalid input file: " + file.getAbsolutePath(), e);
         }
 
-        return processXML(inputStream, segmentSentences, refine, consolidateReferences);
+        return processXML(inputStream, segmentSentences, refine, consolidateReferences, generateIDs);
     }
 
-    public String processXML(InputStream inputStream, boolean segmentSentences, boolean refine, int consolidateReferences) throws Exception {
+    public String processXML(InputStream inputStream, boolean segmentSentences, boolean refine, int consolidateReferences, boolean generateIDs) throws Exception {
         if (inputStream == null) 
             return null;
 
         String tei = null;
         try {
             tei = this.pub2TEIProcessor.transform(inputStream);
-            tei = processTEI(tei, segmentSentences, refine, consolidateReferences);
+            tei = processTEI(tei, segmentSentences, refine, consolidateReferences, generateIDs);
         } catch (final Exception exp) {
             LOGGER.error("An error occured while processing the XML input stream", exp);
         } 
