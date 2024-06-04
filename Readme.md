@@ -72,9 +72,8 @@ git clone https://github.com/kermitt2/Pub2TEI
 cd client
 python3 pub2tei_client.py --help
 
-usage: pub2tei_client.py [-h] [--input INPUT] [--output OUTPUT] [--config CONFIG] [--n N]
-                         [--consolidate_references] [--segment_sentences] [--grobid_refine] [--force]
-                         [--verbose]
+usage: pub2tei_client.py [-h] --input INPUT [--output OUTPUT] [--config CONFIG] [--n N] [--consolidate_references] [--segment_sentences]
+                         [--generate_ids] [--grobid_refine] [--force] [--verbose]
 
 Client for Pub2TEI services
 
@@ -86,10 +85,9 @@ optional arguments:
   --n N                 concurrency for service usage
   --consolidate_references
                         use GROBID for consolidation of the bibliographical references
-  --segment_sentences   segment sentences in the text content of the document with additional <s>
-                        elements
-  --grobid_refine       use Grobid to structure/enhance raw fields: affiliations, references, person,
-                        dates
+  --segment_sentences   segment sentences in the text content of the document with additional <s> elements
+  --generate_ids        Generate idenfifier for each text item
+  --grobid_refine       use Grobid to structure/enhance raw fields: affiliations, references, person, dates
   --force               force re-processing pdf input files when tei output files already exist
   --verbose             print information about processed files in the console
 ```
@@ -112,12 +110,13 @@ Note that the consolidation is realized with the consolidation service indicated
 
 Tranform a publisher XML into TEI XML format, with optional enhancements.
 
-|  method   |  request type         |  response type       |  parameters            |  requirement  |  description  |
-|---        |---                    |---                   |---                     |---            |---            |
-| POST      | `multipart/form-data` | `application/xml`    | `input`                | required      | publisher XML file to be processed |
-|           |                       |                      | `segmentSentences`     | optional      | Boolean, if true the paragraphs structures in the resulting TEI will be further segmented into sentence elements <s> |
-|           |                       |                      | `grobidRefine`         | optional      | Boolean, if true the raw affiliations and raw biblographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML |
+|  method   |  request type         |  response type       | parameters              |  requirement  | description                                                                                                                                                                                                                                  |
+|---        |---                    |---                   |-------------------------|---            |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| POST      | `multipart/form-data` | `application/xml`    | `input`                 | required      | publisher XML file to be processed                                                                                                                                                                                                           |
+|           |                       |                      | `segmentSentences`      | optional      | Boolean, if true the paragraphs structures in the resulting TEI will be further segmented into sentence elements <s>                                                                                                                         |
+|           |                       |                      | `grobidRefine`          | optional      | Boolean, if true the raw affiliations and raw biblographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML                                                          |
 |           |                       |                      | `consolidateReferences` | optional      | Consolidate all the biblographical references, `consolidateReferences` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
+|           |                       |                      | `generateIDs`           | optional      | Inject the attribute `xml:id` in the textual elements (`title`, `note`, `term`, `keywords`, `p`, `s`)                                                                                                                                                                                     |
 
 Response status codes:
 
