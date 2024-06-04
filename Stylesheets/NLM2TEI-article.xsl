@@ -2263,7 +2263,7 @@
                 <xsl:value-of select="meta-name"/>
             </head>
             <p>
-                <xsl:value-of select="meta-value"/>
+                <xsl:apply-templates select="meta-value/node()"/>
             </p>
             <xsl:apply-templates/>
         </div>
