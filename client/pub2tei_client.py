@@ -17,11 +17,11 @@ class ServerUnavailableException(Exception):
 
 class Pub2TEIClient(ApiClient):
 
-    def __init__(self, pub2tei_server='localhost', 
-                 batch_size=1000, 
+    def __init__(self, pub2tei_server='localhost',
+                 batch_size=1000,
                  sleep_time=1,
                  timeout=60,
-                 config_path=None, 
+                 config_path=None,
                  check_server=True):
         self.config = {
             'pub2tei_server': pub2tei_server,
@@ -81,6 +81,7 @@ class Pub2TEIClient(ApiClient):
         consolidate_references=True,
         segment_sentences=False,
         grobid_refine=False,
+        generate_ids=False,
         force=True,
         verbose=False,
     ):
@@ -107,6 +108,7 @@ class Pub2TEIClient(ApiClient):
                             consolidate_references,
                             segment_sentences,
                             grobid_refine,
+                            generate_ids,
                             force,
                             verbose,
                         )
@@ -122,6 +124,7 @@ class Pub2TEIClient(ApiClient):
                 consolidate_references,
                 segment_sentences,
                 grobid_refine,
+                generate_ids,
                 force,
                 verbose,
             )
@@ -135,6 +138,7 @@ class Pub2TEIClient(ApiClient):
         consolidate_references,
         segment_sentences,
         grobid_refine,
+        generate_ids,
         force,
         verbose=False,
     ):
@@ -150,13 +154,14 @@ class Pub2TEIClient(ApiClient):
                 if not force and os.path.isfile(filename):
                     print(filename, "already exist, skipping... (use --force to reprocess pdf input files)")
                     continue
-                
+
                 r = executor.submit(
                     self.process_xml,
                     input_file,
                     consolidate_references,
                     segment_sentences,
-                    grobid_refine)
+                    grobid_refine,
+                    generate_ids)
 
                 results.append(r)
 
@@ -190,7 +195,8 @@ class Pub2TEIClient(ApiClient):
         xml_file,
         consolidate_references,
         segment_sentences,
-        grobid_refine
+        grobid_refine,
+        generate_ids
     ):
         xml_handle = open(xml_file, "rb")
         files = {
@@ -201,7 +207,7 @@ class Pub2TEIClient(ApiClient):
                 {"Expires": "0"},
             )
         }
-        
+
         the_url = self.get_server_url("processXML")
 
         # set the Pub2TEI parameters
@@ -212,6 +218,8 @@ class Pub2TEIClient(ApiClient):
             the_data["segmentSentences"] = "1"
         if grobid_refine:
             the_data["grobidRefine"] = "1"
+        if generate_ids:
+            the_data["generateIDs"] = "1"
 
         try:
             res, status = self.post(
@@ -224,7 +232,8 @@ class Pub2TEIClient(ApiClient):
                     xml_file,
                     consolidate_references,
                     segment_sentences,
-                    grobid_refine
+                    grobid_refine,
+                    generate_ids
                 )
         except requests.exceptions.ReadTimeout:
             xml_handle.close()
@@ -240,7 +249,9 @@ def main():
     parser = argparse.ArgumentParser(description="Client for Pub2TEI services")
 
     parser.add_argument(
-        "--input", default=None, help="path to the directory containing XML files to process: .xml"
+        "--input",
+        required=True,
+        help="path to the directory containing XML files to process: .xml"
     )
     parser.add_argument(
         "--output",
@@ -252,7 +263,11 @@ def main():
         default="./config.json",
         help="path to the config file, default is ./config.json",
     )
-    parser.add_argument("--n", default=10, help="concurrency for service usage")
+    parser.add_argument(
+        "--n",
+        default=10,
+        help="concurrency for service usage"
+    )
     parser.add_argument(
         "--consolidate_references",
         action="store_true",
@@ -261,16 +276,25 @@ def main():
     parser.add_argument(
         "--segment_sentences",
         action="store_true",
+        default=False,
         help="segment sentences in the text content of the document with additional <s> elements",
+    )
+    parser.add_argument(
+        "--generate_ids",
+        action="store_true",
+        default=False,
+        help="Generate idenfifier for each text item",
     )
     parser.add_argument(
         "--grobid_refine",
         action="store_true",
+        default=False,
         help="use Grobid to structure/enhance raw fields: affiliations, references, person, dates",
     )
     parser.add_argument(
         "--force",
         action="store_true",
+        default=False,
         help="force re-processing pdf input files when tei output files already exist",
     )
     parser.add_argument(
@@ -305,7 +329,8 @@ def main():
     consolidate_references = args.consolidate_references
     segment_sentences = args.segment_sentences
     grobid_refine = args.grobid_refine
-    
+    generate_ids = args.generate_ids
+
     force = args.force
     verbose = args.verbose
 
@@ -323,6 +348,7 @@ def main():
         consolidate_references=consolidate_references,
         segment_sentences=segment_sentences,
         grobid_refine=grobid_refine,
+        generate_ids=generate_ids,
         force=force,
         verbose=verbose,
     )
