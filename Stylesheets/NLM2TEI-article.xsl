@@ -2538,8 +2538,18 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    <xsl:template match="back/notes[@notes-type='funding-information']">
+        <div type="funding">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     <xsl:template match="back/*/sec[@sec-type='data-availability']">
         <div type="availability">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/*/sec[@sec-type='funding-information']">
+        <div type="funding">
             <xsl:apply-templates/>
         </div>
     </xsl:template>
