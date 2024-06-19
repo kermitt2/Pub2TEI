@@ -2533,6 +2533,16 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    <xsl:template match="back/notes[@notes-type='data-availability']">
+        <div type="availability">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/*/sec[@sec-type='data-availability']">
+        <div type="availability">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
     <xsl:template match="fn-group/fn">
         <xsl:choose>
             <xsl:when test="ancestor::title-group/fn-group/fn">
