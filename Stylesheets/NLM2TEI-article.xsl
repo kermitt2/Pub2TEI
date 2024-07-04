@@ -2253,18 +2253,22 @@
 
     <xsl:template match="ack">
         <div type="acknowledgements">
-            <xsl:apply-templates/>
+            <div>
+                <xsl:apply-templates/>
+            </div>
         </div>
     </xsl:template>
 
     <xsl:template match="front/article-meta/custom-meta-group/custom-meta[@id='data-availability']">
         <div type="availability">
-            <head>
-                <xsl:value-of select="meta-name"/>
-            </head>
-            <p>
-                <xsl:apply-templates select="meta-value/node()"/>
-            </p>
+            <div>
+                <head>
+                    <xsl:value-of select="meta-name"/>
+                </head>
+                <p>
+                    <xsl:apply-templates select="meta-value/node()"/>
+                </p>
+            </div>
             <xsl:apply-templates/>
         </div>
     </xsl:template>
@@ -2535,22 +2539,30 @@
     </xsl:template>
     <xsl:template match="back/notes[@notes-type='data-availability']">
         <div type="availability">
-            <xsl:apply-templates/>
+            <div>
+                <xsl:apply-templates/>
+            </div>
         </div>
     </xsl:template>
     <xsl:template match="back/notes[@notes-type='funding-information']">
         <div type="funding">
-            <xsl:apply-templates/>
+            <div>
+                <xsl:apply-templates/>
+            </div>
         </div>
     </xsl:template>
     <xsl:template match="back/*/sec[@sec-type='data-availability']">
         <div type="availability">
-            <xsl:apply-templates/>
+            <div>
+                <xsl:apply-templates/>
+            </div>
         </div>
     </xsl:template>
     <xsl:template match="back/*/sec[@sec-type='funding-information']">
         <div type="funding">
-            <xsl:apply-templates/>
+            <div>
+                <xsl:apply-templates/>
+            </div>
         </div>
     </xsl:template>
     <xsl:template match="fn-group/fn">
