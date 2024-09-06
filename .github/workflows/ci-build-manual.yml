@@ -48,6 +48,6 @@ jobs:
           registry: docker.io
           pushImage: true
           tags: |
-            latest-{{ github.event.inputs.suffix != '' && '-' || '' }}${{ github.event.inputs.suffix }}
+            latest-develop${{ github.event.inputs.suffix != '' && '-' || '' }}${{ github.event.inputs.suffix }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
