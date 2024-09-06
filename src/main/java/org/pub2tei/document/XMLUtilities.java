@@ -235,15 +235,16 @@ public class XMLUtilities {
                 NodeList childNodes = n.getChildNodes();
                 for(int y=0; y<childNodes.getLength(); y++) {
                     Node item = childNodes.item(y);
-                    if (y > 0) {
-                        String firstChar = "" + serialize(doc, item).charAt(0);
+                    String serializedString = serialize(doc, item);
+                    if (y > 0 && StringUtils.isNotEmpty(serializedString)) {
+                        String firstChar = "" + serializedString.charAt(0);
                         //We might need to use TextUtilities.fullPunctuation
                         if (!Pattern.matches("\\p{Punct}", firstChar)) {
                             textBuffer.append(" ");
                         }
                     }
 
-                    textBuffer.append(serialize(doc, item));
+                    textBuffer.append(serializedString);
                 }
                 String text = textBuffer.toString();
                 List<OffsetPosition> theSentenceBoundaries = SentenceUtilities.getInstance().runSentenceDetection(text);
