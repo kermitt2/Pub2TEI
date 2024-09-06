@@ -1,7 +1,12 @@
-name: Build and push a development version on docker 
+name: Build and push a development version on docker
 
-on: 
-  workflow_dispatch: 
+on:
+  workflow_dispatch:
+    inputs:
+      suffix:
+        type: string
+        description: Docker image suffix (e.g. dev, prod, feature1)
+        required: false
     
 
 jobs:
@@ -42,6 +47,7 @@ jobs:
           image: lfoppiano/pub2tei
           registry: docker.io
           pushImage: true
-          tags: latest-develop
+          tags: |
+            latest-{{ github.event.inputs.suffix != '' && '-' || '' }}${{ github.event.inputs.suffix }}
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
