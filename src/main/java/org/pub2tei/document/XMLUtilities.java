@@ -1,26 +1,35 @@
 package org.pub2tei.document;
 
-import java.io.*;
-import java.util.*;
-import javax.xml.parsers.*;
-import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.namespace.NamespaceContext;
-import javax.xml.xpath.*;
-
 import net.sf.saxon.om.NameChecker;
-
-import org.w3c.dom.*;
-import org.xml.sax.*;
-
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.SentenceUtilities;
-
-import org.apache.commons.io.FileUtils;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.w3c.dom.*;
+import org.xml.sax.ErrorHandler;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXParseException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathFactory;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  *  Some convenient methods for suffering a bit less with XML
@@ -222,11 +231,20 @@ public class XMLUtilities {
                  (textualElements.contains(n.getNodeName())) ) {
 
                 // text content
-                StringBuffer textBuffer = new StringBuffer();
+                StringBuilder textBuffer = new StringBuilder();
                 NodeList childNodes = n.getChildNodes();
                 for(int y=0; y<childNodes.getLength(); y++) {
-                    textBuffer.append(serialize(doc, childNodes.item(y)));
-                    textBuffer.append(" ");
+                    Node item = childNodes.item(y);
+                    String serializedString = serialize(doc, item);
+                    if (y > 0 && StringUtils.isNotEmpty(serializedString)) {
+                        String firstChar = "" + serializedString.charAt(0);
+                        //We might need to use TextUtilities.fullPunctuation
+                        if (!Pattern.matches("\\p{Punct}", firstChar)) {
+                            textBuffer.append(" ");
+                        }
+                    }
+
+                    textBuffer.append(serializedString);
                 }
                 String text = textBuffer.toString();
                 List<OffsetPosition> theSentenceBoundaries = SentenceUtilities.getInstance().runSentenceDetection(text);
@@ -238,8 +256,8 @@ public class XMLUtilities {
                     //System.out.println("new chunk: " + sent);
                     String sent = text.substring(sentPos.start, sentPos.end);
                     String newSent = sent;
-                    if (toConcatenate.size() != 0) {
-                        StringBuffer conc = new StringBuffer();
+                    if (CollectionUtils.isNotEmpty(toConcatenate)) {
+                        StringBuilder conc = new StringBuilder();
                         for(String concat : toConcatenate) {
                             conc.append(concat);
                             conc.append(" ");
