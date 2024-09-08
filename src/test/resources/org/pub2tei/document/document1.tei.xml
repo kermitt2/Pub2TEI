@@ -4,17 +4,17 @@
 		<fileDesc>
 			<titleStmt>
 				<title level="a" type="main">Satellite data reveals a recent increase in shifting cultivation and associated carbon emissions in Laos</title>
-				<funder ref="#_JUak8EW">
-					<orgName type="full">NASA</orgName>
+				<funder ref="#_H9GH7GZ">
+					<orgName type="full">unknown</orgName>
 				</funder>
-				<funder ref="#_dR9zdmy">
+				<funder ref="#_Em9my3H">
 					<orgName type="full">Commercialisation of Rice Farming in the Lower Mekong Basin (Palgrave Macmillan</orgName>
 				</funder>
-				<funder ref="#_37TZA8z">
-					<orgName type="full">NASA Carbon Monitoring System</orgName>
+				<funder ref="#_Ya8bhFM">
+					<orgName type="full">NASA</orgName>
 				</funder>
-				<funder ref="#_6cR6r98">
-					<orgName type="full">unknown</orgName>
+				<funder ref="#_aAjTpRR">
+					<orgName type="full">NASA Carbon Monitoring System</orgName>
 				</funder>
 			</titleStmt>
 			<publicationStmt>
@@ -106,7 +106,7 @@
 		</fileDesc>
 		<encodingDesc>
 			<appInfo>
-        <application version="project.version" ident="GROBID" when="2024-04-26T10:22+0000">
+				<application version="project.version" ident="GROBID" when="2024-04-26T10:06+0000">
 					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
 					<ref target="https://github.com/kermitt2/grobid"/>
 				</application>
@@ -163,19 +163,19 @@
 <div><head>Acknowledgments</head><p>This research was funded by the <rs type="funder">NASA</rs> <rs type="programName">Land-Cover and Land-Use Change Program</rs> (Grant Number: <rs type="grantNumber">80NSSC18K0315</rs>), the <rs type="funder">NASA Carbon Monitoring System</rs> (Grant Number: <rs type="grantNumber">80NSSC20K0022</rs>), and Turubanova S A A, Tyukavina A and Kommareddy A 2013 High-resolution global maps of 21st-century forest cover change Science 342 850-3 Healey S P, Yang Z, <rs type="projectName">Gorelick N and Ilyushchenko S 2020 Highly local model calibration with a new GEDI LiDAR</rs> asset on Google Earth Engine reduces Landsat forest height signal saturation Remote Sens. 12 2840 <rs type="affiliation">Heinimann A, Hett C, Hurni K, Messerli P</rs>, Epprecht M, Jørgensen L and Breu T 2013 Socio-economic perspectives on shifting cultivation landscapes in <rs type="affiliation">Northern Laos Hum. Ecol. 41 51-62 Heinimann A, Mertz O, Frolking S, Christensen A E, Hurni K, Sedano F, Chini L P, Sahajpal R, Hansen</rs> M and Hurtt G 2017 A global view of shifting cultivation: recent, current, and future extent PLoS One 12 1-22 Hett C, Castella J C, Heinimann A, Messerli P and Pfund J L 2012 A landscape mosaics approach for characterizing swidden systems from a REDD+ perspective Appl. Geogr. 32 608-18 Hurni K, Hett C, Epprecht M, Messerli P and Heinimann A 2013a A texture-based land cover classification for the delineation of a shifting cultivation landscape in the Lao PDR using landscape metrics Remote Sens. 5 3377-96 Jiang N, Li P and Feng Z 2022 Remote sensing of swidden agriculture in the tropics: a review Int. J. Appl. Earth Obs. Geoinf. 112 102876 <rs type="person">Kurien A J, Lele</rs> S and Nagendra H 2019 Farms or forests? Understanding and mapping shifting cultivation using the case study of <rs type="person">West Garo Hills</rs>, <rs type="person">India Land 8 133 Leisz S J and Rasmussen M S 2012 Mapping</rs> fallow lands in Vietnam's north-central mountains using yearly Landsat imagery and a land-cover succession model Int. J. Remote Sens. 33 6281-303 Manivong V and <rs type="person">Cramb R 2020 From</rs> subsistence to commercial rice production in Laos White Gold: The <rs type="funder">Commercialisation of Rice Farming in the Lower Mekong Basin (Palgrave Macmillan</rs>) pp 103-19 Messerli P, Heinimann A and Epprecht M 2009 Finding homogeneity in heterogeneity-a new approach to quantifying landscape mosaics developed for the <rs type="institution">Lao PDR Hum</rs>. Ecol. 37 291-304 Molinario G, Hansen M C and Potapov P V 2015 Forest cover dynamics of shifting cultivation in the Democratic Republic of Congo: a remote sensing-based assessment for 2000-2010 Environ. Res. Lett. 10 094009 Olofsson P, <rs type="person">Foody G M</rs>, <rs type="person">Herold M, Stehman S V</rs>, Woodcock C E and Wulder M A 2014 Good practices for estimating area and assessing accuracy of land change Remote Sens. Environ. 148 42-57 Olofsson P, <rs type="person">Foody G M, Stehman S V</rs> and Woodcock C E 2013 Making better use of accuracy data in land change studies: estimating accuracy and area and quantifying uncertainty using stratified estimation Remote Sens. Environ. 129 122-31 Potapov P et al 2019 Annual continuous fields of woody vegetation structure in the Lower Mekong region from 2000-2017 Landsat time-series Remote Sens. Environ. 232 111278 Rasul G and Thapa G B 2003 Shifting cultivation in the mountains of South and Southeast Asia: regional patterns and factors influencing the change <rs type="person">Land Degrad. Dev</rs>. <rs type="grantNumber">14 495-508</rs> Roder W 2001 <rs type="projectName">Slash-And-Burn Rice Systems in The Hills of Northern Lao PDR: Description, Challenges, And Opportunities (International Rice Research Institute</rs>) (available at: http://lad.nafri.org.la/fulltext/231-0.pdf) <rs type="projectName">Salinas-Melgoza M A, Skutsch M, Lovett J C and Borrego A 2017 Carbon emissions from dryland shifting cultivation: a case study of Mexican tropical dry forest Silva Fenn</rs>. <rs type="grantNumber">51</rs> 1553</p></div>
 			</div>
 			<listOrg type="funding">
-          <org type="funding" xml:id="_JUak8EW">
+				<org type="funding" xml:id="_Ya8bhFM">
 					<idno type="grant-number">80NSSC18K0315</idno>
 					<orgName type="program" subtype="full">Land-Cover and Land-Use Change Program</orgName>
 				</org>
-          <org type="funded-project" xml:id="_37TZA8z">
+				<org type="funded-project" xml:id="_aAjTpRR">
 					<idno type="grant-number">80NSSC20K0022</idno>
 					<orgName type="project" subtype="full">Gorelick N and Ilyushchenko S 2020 Highly local model calibration with a new GEDI LiDAR</orgName>
 				</org>
-          <org type="funded-project" xml:id="_dR9zdmy">
+				<org type="funded-project" xml:id="_Em9my3H">
 					<idno type="grant-number">14 495-508</idno>
 					<orgName type="project" subtype="full">Slash-And-Burn Rice Systems in The Hills of Northern Lao PDR: Description, Challenges, And Opportunities (International Rice Research Institute</orgName>
 				</org>
-          <org type="funded-project" xml:id="_6cR6r98">
+				<org type="funded-project" xml:id="_H9GH7GZ">
 					<idno type="grant-number">51</idno>
 					<orgName type="project" subtype="full">Salinas-Melgoza M A, Skutsch M, Lovett J C and Borrego A 2017 Carbon emissions from dryland shifting cultivation: a case study of Mexican tropical dry forest Silva Fenn</orgName>
 				</org>

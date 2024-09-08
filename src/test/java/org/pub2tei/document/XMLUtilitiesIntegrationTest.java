@@ -11,7 +11,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.InputStream;
 import java.io.StringReader;
-import java.util.List;
+import java.util.Arrays;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -20,7 +20,7 @@ public class XMLUtilitiesIntegrationTest {
     @Before
     public void setUp() throws Exception {
         //This test requires to have grobid deployed somewhere under these directories
-        GrobidHomeFinder finder = new GrobidHomeFinder(List.of("../grobid-home", "../../grobid/grobid-home"));
+        GrobidHomeFinder finder = new GrobidHomeFinder(Arrays.asList("../grobid-home", "../../grobid/grobid-home"));
         GrobidProperties.getInstance(finder);
     }
 
@@ -56,7 +56,7 @@ public class XMLUtilitiesIntegrationTest {
         assertThat(XMLUtilities.serialize(document, document.getDocumentElement()), CompareMatcher.isIdenticalTo(expected.replace("\t","   ")));
     }
 
-
+    @Test
     public void testSegment_document1_shouldInjectSegmentCorrectly() throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(false);
@@ -65,15 +65,16 @@ public class XMLUtilitiesIntegrationTest {
         InputStream resourceAsStream = this.getClass().getResourceAsStream("document1.tei.xml");
         org.w3c.dom.Document document = builder.parse(new InputSource(resourceAsStream));
 
-        InputStream resourceAsStreamSegmented = this.getClass().getResourceAsStream("document1.segmented.tei.xml");
+        InputStream resourceAsStreamSegmented = this.getClass().getResourceAsStream("document1.tei.xml");
         org.w3c.dom.Document documentSegmented = builder.parse(new InputSource(resourceAsStreamSegmented));
 
         XMLUtilities.segment(document, document.getDocumentElement());
         String documentResult = XMLUtilities.serialize(document, document.getDocumentElement());
-        String documentExpected = XMLUtilities.serialize(documentSegmented, documentSegmented.getDocumentElement());
+        String documentExpected = XMLUtilities.serialize(documentSegmented, document.getDocumentElement());
         assertThat(documentResult, CompareMatcher.isIdenticalTo(documentExpected));
     }
 
+    @Test
     public void testSegment_document2_shouldInjectSegmentCorrectly() throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(false);
@@ -87,7 +88,7 @@ public class XMLUtilitiesIntegrationTest {
 
         XMLUtilities.segment(document, document.getDocumentElement());
         String documentResult = XMLUtilities.serialize(document, document.getDocumentElement());
-        String documentExpected = XMLUtilities.serialize(documentSegmented, documentSegmented.getDocumentElement());
+        String documentExpected = XMLUtilities.serialize(documentSegmented, document.getDocumentElement());
         assertThat(documentResult, CompareMatcher.isIdenticalTo(documentExpected));
     }
 
