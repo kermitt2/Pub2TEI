@@ -1,6 +1,5 @@
 package org.pub2tei.document;
 
-import com.sun.tools.javac.util.List;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 import org.junit.Before;
@@ -13,6 +12,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.InputStream;
 import java.io.StringReader;
 
+import java.util.Arrays;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class XMLUtilitiesIntegrationTest {
@@ -20,7 +21,7 @@ public class XMLUtilitiesIntegrationTest {
     @Before
     public void setUp() throws Exception {
         //This test requires to have grobid deployed somewhere under these directories
-        GrobidHomeFinder finder = new GrobidHomeFinder(List.of("../grobid-home", "../../grobid/grobid-home"));
+        GrobidHomeFinder finder = new GrobidHomeFinder(Arrays.asList("../grobid-home", "../../grobid/grobid-home"));
         GrobidProperties.getInstance(finder);
     }
 
