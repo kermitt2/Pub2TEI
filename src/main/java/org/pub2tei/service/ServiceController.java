@@ -2,31 +2,20 @@ package org.pub2tei.service;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-
-import org.pub2tei.document.XSLTProcessor;
-
-import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.main.GrobidHomeFinder;
-import org.grobid.core.factory.AbstractEngineFactory;
-
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 import org.glassfish.jersey.media.multipart.FormDataParam;
+import org.grobid.core.factory.AbstractEngineFactory;
+import org.grobid.core.main.GrobidHomeFinder;
+import org.grobid.core.utilities.GrobidProperties;
+import org.pub2tei.document.XSLTProcessor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.UriInfo;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-
 import java.util.Arrays;
-import java.io.*;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * RESTful service for Pub2TEI.

@@ -1,11 +1,9 @@
 package org.pub2tei.service;
 
-import io.dropwizard.Configuration;
+import io.dropwizard.core.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import java.util.List;
 
-import org.grobid.core.utilities.GrobidConfig;
 import org.grobid.core.utilities.GrobidConfig.ConsolidationParameters;
 import org.grobid.core.utilities.Consolidation.GrobidConsolidationService;
 

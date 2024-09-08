@@ -2,22 +2,16 @@ package org.pub2tei.service;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import org.apache.commons.lang3.StringUtils;
 import org.pub2tei.document.DocumentProcessor;
-
-import java.util.List;
-import java.util.ArrayList;
-import java.util.NoSuchElementException;
-import java.io.*;
-
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.Status;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.apache.commons.lang3.StringUtils;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.util.NoSuchElementException;
 
 /**
  * 
@@ -41,17 +35,17 @@ public class ProcessString {
      * @param text the raw string to process
      * @return a response object containing the structured xml representation 
      */
-    public static Response processText(String text, 
-                                    final boolean segmentSentences, 
-                                    final boolean refine, 
-                                    final int consolidateReferences,
-                                    ServiceConfiguration serviceConfiguration) {
+    public static Response processText(String text,
+                                       final boolean segmentSentences,
+                                       final boolean refine,
+                                       final int consolidateReferences,
+                                       ServiceConfiguration serviceConfiguration) {
         LOGGER.debug(methodLogIn());
         Response response = null;
 
         if (text == null || text.length() == 0) {
             LOGGER.warn("Empty text input");
-            response = Response.status(Status.BAD_REQUEST).build();
+            response = Response.status(Response.Status.BAD_REQUEST).build();
             LOGGER.debug(methodLogOut());
             return response;
         }
@@ -64,16 +58,16 @@ public class ProcessString {
             String retValString = documentProcessor.processXML(inputStream, segmentSentences, refine, consolidateReferences);
 
             if (!isResultOK(retValString)) {
-                response = Response.status(Status.NO_CONTENT).build();
+                response = Response.status(Response.Status.NO_CONTENT).build();
             } else {
-                response = Response.status(Status.OK).entity(retValString).type(MediaType.TEXT_PLAIN).build();
+                response = Response.status(Response.Status.OK).entity(retValString).type(MediaType.TEXT_PLAIN).build();
             }
         } catch (NoSuchElementException nseExp) {
             LOGGER.error("Could not get an instance of converter. Sending service unavailable.");
-            response = Response.status(Status.SERVICE_UNAVAILABLE).build();
+            response = Response.status(Response.Status.SERVICE_UNAVAILABLE).build();
         } catch (Exception e) {
             LOGGER.error("An unexpected exception occurs. ", e);
-            response = Response.status(Status.INTERNAL_SERVER_ERROR).build();
+            response = Response.status(Response.Status.INTERNAL_SERVER_ERROR).build();
         } 
         LOGGER.debug(methodLogOut());
         return response;

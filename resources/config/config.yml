@@ -37,17 +37,18 @@ corsAllowedHeaders: "X-Requested-With,Content-Type,Accept,Origin"
 
 server:
   type: custom
-  idleTimeout: 180 seconds
   applicationConnectors:
     - type: http
       port: 8060
+      idleTimeout: 180 seconds
+      acceptQueueSize: 1024
   adminConnectors:
     - type: http
       port: 8061
   registerDefaultExceptionMappers: false
   maxThreads: 1024
   maxQueuedRequests: 1024
-  acceptQueueSize: 1024
+
   #requestLog:
   #    appenders: []
 

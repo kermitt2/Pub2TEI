@@ -18,7 +18,7 @@ public interface Pub2TEIPaths {
     String PATH_IS_ALIVE = "isalive";
 
     /**
-     * path extension for procssing an XML text
+     * path extension for processing an XML text
      */
     public static final String PATH_TEXT = "processText";
 
