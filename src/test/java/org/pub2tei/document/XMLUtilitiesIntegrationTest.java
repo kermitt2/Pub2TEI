@@ -11,7 +11,6 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.InputStream;
 import java.io.StringReader;
-
 import java.util.Arrays;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -56,7 +55,6 @@ public class XMLUtilitiesIntegrationTest {
 
         assertThat(XMLUtilities.serialize(document, document.getDocumentElement()), CompareMatcher.isIdenticalTo(expected.replace("\t","   ")));
     }
-
 
     @Test
     public void testSegment_document1_shouldInjectSegmentCorrectly() throws Exception {

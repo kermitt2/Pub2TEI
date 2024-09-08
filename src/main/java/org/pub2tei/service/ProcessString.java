@@ -39,7 +39,8 @@ public class ProcessString {
                                        final boolean segmentSentences,
                                        final boolean refine,
                                        final int consolidateReferences,
-                                       ServiceConfiguration serviceConfiguration) {
+                                       ServiceConfiguration serviceConfiguration,
+                                       Boolean generateIDs) {
         LOGGER.debug(methodLogIn());
         Response response = null;
 
@@ -55,7 +56,7 @@ public class ProcessString {
             
             DocumentProcessor documentProcessor = new DocumentProcessor(serviceConfiguration);
             InputStream inputStream = new ByteArrayInputStream(text.getBytes());
-            String retValString = documentProcessor.processXML(inputStream, segmentSentences, refine, consolidateReferences);
+            String retValString = documentProcessor.processXML(inputStream, segmentSentences, refine, consolidateReferences, generateIDs);
 
             if (!isResultOK(retValString)) {
                 response = Response.status(Response.Status.NO_CONTENT).build();
