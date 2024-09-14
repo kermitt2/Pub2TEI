@@ -22,7 +22,7 @@ repositories {
     flatDir {
         dirs 'localLibs'
     }
-//    maven { url "https://grobid.s3.eu-west-1.amazonaws.com/repo/" }
+    maven { url "https://grobid.s3.eu-west-1.amazonaws.com/repo/" }
 }
 
 apply plugin: 'application'
@@ -98,7 +98,7 @@ dependencies {
     //implementation "com.google.code.gson:gson:2.8.1"
 
     // GROBID
-    implementation group: 'org.grobid', name: 'grobid-core', version: '0.8.0'
+    implementation group: 'org.grobid', name: 'grobid-core', version: '0.8.1'
     implementation "black.ninia:jep:4.0.2"
 
     implementation 'ru.vyarus:dropwizard-guicey:7.0.0'
