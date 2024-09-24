@@ -2678,8 +2678,56 @@
         </xsl:if>
     </xsl:template>
 
+    <xsl:template match="supplementary-material/p | supplementary-material/label">
+        <p>
+            <xsl:value-of select="p"/>
+        </p>
+    </xsl:template>
+
+    <xsl:template match="supplementary-material/caption">
+        <p>
+            <xsl:value-of select="title"/>
+        </p>
+        <p>
+            <xsl:value-of select="p"/>
+        </p>
+    </xsl:template>
+
     <xsl:template match="supplementary-material">
-        <xsl:apply-templates/>
+        <xsl:variable name="href">
+            <xsl:choose>
+                <xsl:when test="@xlink:href">
+                    <xsl:value-of select="@xlink:href"/>
+                </xsl:when>
+                <xsl:when test="media/@xlink:href">
+                    <xsl:value-of select="media/@xlink:href"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+
+        <xsl:variable name="text">
+            <xsl:choose>
+                <xsl:when test="media/caption/p">
+                    <xsl:value-of select="media/caption/p"/>
+                </xsl:when>
+                <xsl:when test="label">
+                    <xsl:value-of select="label"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+
+        <xsl:variable name="mimetype" select="@mimetype"/>
+
+        <ref target="{$href}" mimeType="{$mimetype}">
+            <xsl:value-of select="$text"/>
+        </ref>
+        <xsl:apply-templates select="caption"/>
+    </xsl:template>
+
+    <xsl:template match="sec[@sec-type='supplementary-material'] | notes[@notes-type='supplementary-material']">
+        <div type="annex">
+            <xsl:apply-templates/>
+        </div>
     </xsl:template>
 
     <!-- Copyright related information to appear in <publicationStmt> -->
