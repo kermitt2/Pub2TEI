@@ -4,6 +4,7 @@
     xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:ce="http://www.elsevier.com/xml/common/dtd" 
+    xmlns:svapi="http://www.elsevier.com/xml/svapi/article/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML"
     xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
     xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
@@ -54,6 +55,9 @@
             </xsl:when>
             <xsl:when test="els1:article[els1:item-info] | els2:article[els2:item-info] | els1:converted-article[els1:item-info] | els2:converted-article[els2:item-info] | converted-article[item-info]">
                 <xsl:message>Converting an Elsevier article</xsl:message>
+            </xsl:when>
+            <xsl:when test="svapi:full-text-retrieval-response">
+                <xsl:message>Converting an Elsevier article obtained from the Elsevier API</xsl:message>
             </xsl:when>
             <xsl:when test="nihms-submit">
                 <xsl:message>Converting a Nature article</xsl:message>

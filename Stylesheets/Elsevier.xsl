@@ -3,7 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:ce="http://www.elsevier.com/xml/common/dtd" 
+    xmlns:ce="http://www.elsevier.com/xml/common/dtd"
+    xmlns:svapi="http://www.elsevier.com/xml/svapi/article/dtd"
     xmlns:mml="http://www.w3.org/1998/Math/MathML"
     xmlns:els1="http://www.elsevier.com/xml/ja/dtd"    
     xmlns:els2="http://www.elsevier.com/xml/cja/dtd"
@@ -2428,6 +2429,10 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:variable>
+    
+    <xsl:template match="svapi:full-text-retrieval-response">
+        <xsl:apply-templates select="descendant::els1:article"/>
+    </xsl:template>
 
     <xsl:template match="els1:article[els1:item-info] |els2:article[els2:item-info] | els1:converted-article[els1:item-info] | els2:converted-article[els2:item-info] | converted-article[item-info] | article[item-info]">
         <!--xsl:comment>

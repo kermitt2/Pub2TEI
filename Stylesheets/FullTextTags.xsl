@@ -850,6 +850,20 @@
         </quote>
     </xsl:template>
     
+    <!-- Elsevier displayed-quote/ce:simple-para -->
+    
+    <xsl:template match="ce:displayed-quote">
+        <cit>
+            <xsl:apply-templates/>
+        </cit>
+    </xsl:template>
+    
+    <xsl:template match="ce:displayed-quote/ce:simple-para">
+        <quote>
+            <xsl:apply-templates/>
+        </quote>
+    </xsl:template>
+    
     <!-- Formarting elements that we discard -->
     
     <xsl:template match="ce:vsp"/>
