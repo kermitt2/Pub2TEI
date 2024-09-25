@@ -1200,6 +1200,7 @@
                         <!-- SG - source des book-reviews, données qualifiés de production chez Cambridge -->
                         <xsl:apply-templates select="front/article-meta/product"/>
                         <xsl:apply-templates select="back/* | bm/ack | bm/bibl"/>
+<!--                        <xsl:apply-templates select="sec[@sec-type='supplementary-material'] | notes[@notes-type='supplementary-material']"/>-->
                     </back>
                 </xsl:if>
             </text>
@@ -2724,11 +2725,30 @@
         <xsl:apply-templates select="caption"/>
     </xsl:template>
 
-    <xsl:template match="sec[@sec-type='supplementary-material'] | notes[@notes-type='supplementary-material']">
-        <div type="annex">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
+<!--    <xsl:template match="body//sec[@sec-type='supplementary-material'] | body//notes[@notes-type='supplementary-material']">-->
+<!--        <xsl:variable name="supplementary-content">-->
+<!--            <xsl:apply-templates select="." mode="copy"/>-->
+<!--        </xsl:variable>-->
+<!--        <xsl:apply-templates select="ancestor::back">-->
+<!--            <xsl:with-param name="supplementary-content" select="$supplementary-content"/>-->
+<!--        </xsl:apply-templates>-->
+<!--    </xsl:template>-->
+
+<!--    <xsl:template match="back//sec[@sec-type='supplementary-material'] | back//notes[@notes-type='supplementary-material']">-->
+<!--        <div type="annex">-->
+<!--            <xsl:apply-templates/>-->
+<!--        </div>-->
+<!--    </xsl:template>-->
+
+<!--    <xsl:template match="back">-->
+<!--        <xsl:param name="supplementary-content"/>-->
+<!--        <xsl:copy>-->
+<!--            <xsl:apply-templates select="@* | node()"/>-->
+<!--            <xsl:if test="$supplementary-content">-->
+<!--                <xsl:copy-of select="$supplementary-content"/>-->
+<!--            </xsl:if>-->
+<!--        </xsl:copy>-->
+<!--    </xsl:template>-->
 
     <!-- Copyright related information to appear in <publicationStmt> -->
     <xsl:template match="copyright-holder">
