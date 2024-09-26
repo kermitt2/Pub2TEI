@@ -2686,12 +2686,16 @@
     </xsl:template>
 
     <xsl:template match="supplementary-material/caption">
-        <p>
-            <xsl:value-of select="title"/>
-        </p>
-        <p>
-            <xsl:value-of select="p"/>
-        </p>
+        <xsl:if test="title">
+            <p>
+                <xsl:value-of select="title"/>
+            </p>
+        </xsl:if>
+        <xsl:if test="p">
+            <p>
+                <xsl:value-of select="p"/>
+            </p>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template match="supplementary-material">
