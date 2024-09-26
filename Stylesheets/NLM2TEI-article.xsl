@@ -24,7 +24,7 @@
             <xsl:when test="//pubfm/categ/@id[string-length() &gt; 0]">
                 <xsl:value-of select="$codeGenreNature"/>
             </xsl:when>
-            <!-- if no article-type in the orignial metadata -->
+            <!-- if no article-type in the original metadata -->
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="//article/front/article-meta/abstract[string-length()&gt; 0]">
@@ -1195,11 +1195,13 @@
                     </group>
                 </xsl:if>
                 
-                <xsl:if test="back | bm |front/article-meta/product">
+                <xsl:if test="back | bm | front/article-meta/product | front/article-meta/custom-meta-group/custom-meta[@id='data-availability']">
                     <back>
                         <!-- SG - source des book-reviews, données qualifiés de production chez Cambridge -->
                         <xsl:apply-templates select="front/article-meta/product"/>
                         <xsl:apply-templates select="back/* | bm/ack | bm/bibl"/>
+<!--                        <xsl:apply-templates select="sec[@sec-type='supplementary-material'] | notes[@notes-type='supplementary-material']"/>-->
+                        <xsl:apply-templates select="front/article-meta/custom-meta-group/custom-meta[@id='data-availability']"/>
                     </back>
                 </xsl:if>
             </text>
@@ -1354,7 +1356,7 @@
     </xsl:template>
 
     <!-- We do not care about components from <article-meta> which are 
-    not explicitely addressed by means of an XPath in another template-->
+    not explicitly addressed by means of an XPath in another template-->
     <xsl:template match="article-meta"/>
 
     <!-- Building the sourceDesc bibliographical representation -->
@@ -2252,6 +2254,22 @@
 
     <xsl:template match="ack">
         <div type="acknowledgements">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="front/article-meta/custom-meta-group/custom-meta[@id='data-availability']">
+        <div type="availability">
+            <div>
+                <head>
+                    <xsl:value-of select="meta-name"/>
+                </head>
+                <p>
+                    <xsl:apply-templates select="meta-value/node()"/>
+                </p>
+            </div>
             <xsl:apply-templates/>
         </div>
     </xsl:template>
@@ -2520,6 +2538,34 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+    <xsl:template match="back/notes[@notes-type='data-availability']">
+        <div type="availability">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/notes[@notes-type='funding-information']">
+        <div type="funding">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/*/sec[@sec-type='data-availability']">
+        <div type="availability">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/*/sec[@sec-type='funding-information']">
+        <div type="funding">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
     <xsl:template match="fn-group/fn">
         <xsl:choose>
             <xsl:when test="ancestor::title-group/fn-group/fn">
@@ -2678,9 +2724,80 @@
         </xsl:if>
     </xsl:template>
 
-    <xsl:template match="supplementary-material">
-        <xsl:apply-templates/>
+    <xsl:template match="supplementary-material/p | supplementary-material/label">
+        <p>
+            <xsl:value-of select="p"/>
+        </p>
     </xsl:template>
+
+    <xsl:template match="supplementary-material/caption">
+        <xsl:if test="title">
+            <p>
+                <xsl:value-of select="title"/>
+            </p>
+        </xsl:if>
+        <xsl:if test="p">
+            <p>
+                <xsl:value-of select="p"/>
+            </p>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="supplementary-material">
+        <xsl:variable name="href">
+            <xsl:choose>
+                <xsl:when test="@xlink:href">
+                    <xsl:value-of select="@xlink:href"/>
+                </xsl:when>
+                <xsl:when test="media/@xlink:href">
+                    <xsl:value-of select="media/@xlink:href"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+
+        <xsl:variable name="text">
+            <xsl:choose>
+                <xsl:when test="media/caption/p">
+                    <xsl:value-of select="media/caption/p"/>
+                </xsl:when>
+                <xsl:when test="label">
+                    <xsl:value-of select="label"/>
+                </xsl:when>
+            </xsl:choose>
+        </xsl:variable>
+
+        <xsl:variable name="mimetype" select="@mimetype"/>
+
+        <ref target="{$href}" mimeType="{$mimetype}">
+            <xsl:value-of select="$text"/>
+        </ref>
+        <xsl:apply-templates select="caption"/>
+    </xsl:template>
+
+<!--    <xsl:template match="body//sec[@sec-type='supplementary-material'] | body//notes[@notes-type='supplementary-material']">-->
+<!--        <xsl:variable name="supplementary-content">-->
+<!--            <xsl:apply-templates select="." mode="copy"/>-->
+<!--        </xsl:variable>-->
+<!--        <xsl:apply-templates select="ancestor::back">-->
+<!--            <xsl:with-param name="supplementary-content" select="$supplementary-content"/>-->
+<!--        </xsl:apply-templates>-->
+<!--    </xsl:template>-->
+
+    <xsl:template match="sec[@sec-type='supplementary-material'] | notes[@notes-type='supplementary-material']">
+        <div type="supplementary-material">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+<!--    <xsl:template match="back">-->
+<!--        <xsl:param name="supplementary-content"/>-->
+<!--        <xsl:copy>-->
+<!--            <xsl:apply-templates select="@* | node()"/>-->
+<!--            <xsl:if test="$supplementary-content">-->
+<!--                <xsl:copy-of select="$supplementary-content"/>-->
+<!--            </xsl:if>-->
+<!--        </xsl:copy>-->
+<!--    </xsl:template>-->
 
     <!-- Copyright related information to appear in <publicationStmt> -->
     <xsl:template match="copyright-holder">
