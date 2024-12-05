@@ -24,7 +24,7 @@
             <xsl:when test="//pubfm/categ/@id[string-length() &gt; 0]">
                 <xsl:value-of select="$codeGenreNature"/>
             </xsl:when>
-            <!-- if no article-type in the orignial metadata -->
+            <!-- if no article-type in the original metadata -->
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="//article/front/article-meta/abstract[string-length()&gt; 0]">
@@ -1195,11 +1195,12 @@
                     </group>
                 </xsl:if>
                 
-                <xsl:if test="back | bm |front/article-meta/product">
+                <xsl:if test="back | bm | front/article-meta/product | front/article-meta/custom-meta-group/custom-meta[@id='data-availability']">
                     <back>
                         <!-- SG - source des book-reviews, données qualifiés de production chez Cambridge -->
                         <xsl:apply-templates select="front/article-meta/product"/>
                         <xsl:apply-templates select="back/* | bm/ack | bm/bibl"/>
+                        <xsl:apply-templates select="front/article-meta/custom-meta-group/custom-meta[@id='data-availability']"/>
                     </back>
                 </xsl:if>
             </text>
@@ -1354,7 +1355,7 @@
     </xsl:template>
 
     <!-- We do not care about components from <article-meta> which are 
-    not explicitely addressed by means of an XPath in another template-->
+    not explicitly addressed by means of an XPath in another template-->
     <xsl:template match="article-meta"/>
 
     <!-- Building the sourceDesc bibliographical representation -->
@@ -2252,6 +2253,22 @@
 
     <xsl:template match="ack">
         <div type="acknowledgements">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="front/article-meta/custom-meta-group/custom-meta[@id='data-availability']">
+        <div type="availability">
+            <div>
+                <head>
+                    <xsl:value-of select="meta-name"/>
+                </head>
+                <p>
+                    <xsl:apply-templates select="meta-value/node()"/>
+                </p>
+            </div>
             <xsl:apply-templates/>
         </div>
     </xsl:template>
@@ -2518,6 +2535,34 @@
     <xsl:template match="back/notes[@notes-type='citation-text']">
         <div type="citation-text">
             <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/notes[@notes-type='data-availability']">
+        <div type="availability">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/notes[@notes-type='funding-information']">
+        <div type="funding">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/*/sec[@sec-type='data-availability']">
+        <div type="availability">
+            <div>
+                <xsl:apply-templates/>
+            </div>
+        </div>
+    </xsl:template>
+    <xsl:template match="back/*/sec[@sec-type='funding-information']">
+        <div type="funding">
+            <div>
+                <xsl:apply-templates/>
+            </div>
         </div>
     </xsl:template>
     <xsl:template match="fn-group/fn">
