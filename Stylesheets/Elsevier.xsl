@@ -14,6 +14,10 @@
     <!-- ajout déclaration schema ODD-ISTEX -->
     
     <xsl:output encoding="UTF-8" method="xml"/>
+    <!-- Unwrap Elsevier SVAPI response and process inner <article> or <originalText> -->
+    <xsl:template match="svapi:full-text-retrieval-response">
+    <xsl:apply-templates select="*[local-name()='article' or local-name()='originalText']"/>
+    </xsl:template>
     
     <xsl:include href="ElsevierFormula.xsl"/>
     <xsl:variable name="docIssueEls" select="document($issueXmlPath)" />
