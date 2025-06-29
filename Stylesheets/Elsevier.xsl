@@ -16,10 +16,53 @@
     
     <xsl:output encoding="UTF-8" method="xml"/>
     <!-- Unwrap Elsevier SVAPI response and process inner <article> or <originalText> -->
-    <xsl:template match="*[local-name()='full-text-retrieval-response']">
-    <xsl:apply-templates select="*[local-name()='article' or local-name()='originalText']"/>
+    <!-- Robust unwrapping for Elsevier SVAPI responses -->
+    <xsl:template match="svapi:full-text-retrieval-response | *[local-name()='full-text-retrieval-response']">
+        <xsl:choose>
+            <xsl:when test=".//els1:article | .//els2:article | .//*[local-name()='article']">
+                <xsl:apply-templates select="(.//els1:article | .//els2:article | .//*[local-name()='article'])[1]"/>
+            </xsl:when>
+            <xsl:when test=".//*[local-name()='originalText']">
+                <xsl:apply-templates select=".//*[local-name()='originalText'][1]"/>
+            </xsl:when>
+            <xsl:when test=".//*[local-name()='doc']">
+                <xsl:apply-templates select=".//*[local-name()='doc'][1]"/>
+            </xsl:when>
+            <xsl:when test=".//*[local-name()='converted-article']">
+                <xsl:apply-templates select=".//*[local-name()='converted-article'][1]"/>
+            </xsl:when>
+            <xsl:when test=".//*[local-name()='item']">
+                <xsl:apply-templates select=".//*[local-name()='item'][1]"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- Log the structure for debugging -->
+                <xsl:message>Warning: No convertible content found in Elsevier SVAPI response. Available elements: <xsl:value-of select="string-join(distinct-values(descendant::*/local-name()), ', ')"/></xsl:message>
+                <!-- Return empty TEI structure -->
+                <TEI xmlns="http://www.tei-c.org/ns/1.0">
+                    <teiHeader>
+                        <fileDesc>
+                            <titleStmt><title>No convertible content found</title></titleStmt>
+                            <publicationStmt><publisher>Elsevier</publisher></publicationStmt>
+                            <sourceDesc><biblStruct><analytic><title>No convertible content found</title></analytic></biblStruct></sourceDesc>
+                        </fileDesc>
+                    </teiHeader>
+                    <text><body><div><p>No convertible content found in Elsevier SVAPI response</p></div></body></text>
+                </TEI>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
-    
+
+    <!-- Added template to handle <originalText> wrapper in Elsevier SVAPI -->
+    <xsl:template match="*[local-name()='originalText']">
+        <xsl:apply-templates select=".//*[local-name()='doc'][1]"/>
+    </xsl:template>
+
+    <!-- Added template to handle <doc> (xocs:doc) inside originalText -->
+    <xsl:template match="*[local-name()='doc']">
+        <xsl:apply-templates select=".//*[local-name()='article' or local-name()='converted-article'][1]"/>
+    </xsl:template>
+
+    <!-- End of new templates -->
     <xsl:include href="ElsevierFormula.xsl"/>
     <xsl:variable name="docIssueEls" select="document($issueXmlPath)" />
     <xsl:variable name="titre">
@@ -55,7 +98,7 @@
                 <xsl:text>Table of contents</xsl:text>
             </xsl:when>
             <xsl:when test="//ce:doi='10.1016/S1049-3867(01)00088-3'">
-                <xsl:text>Erratum to 'An Intersection of Women’s and Perinatal Health: The Role of Chronic Disease'</xsl:text>
+                <xsl:text>Erratum to 'An Intersection of Women's and Perinatal Health: The Role of Chronic Disease'</xsl:text>
             </xsl:when>
             <xsl:when test="//ce:doi='10.1016/S0009-2509(99)00312-7'">
                 <xsl:text>Erratum to 'Conversion-temperature trajectories for well mixed adsorptive reactorsa'</xsl:text>
@@ -99,7 +142,7 @@
             <xsl:when test="normalize-space($codeGenre1Elsevier)='pnt'">Patent report</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='prp'">Personal report</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='prv'">Product review</xsl:when>
-            <xsl:when test="normalize-space($codeGenre1Elsevier)='pub'">Publisher’s note</xsl:when>
+            <xsl:when test="normalize-space($codeGenre1Elsevier)='pub'">Publisher's note</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='rem'">Removal</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='req'">Request for assistance</xsl:when>
             <xsl:when test="normalize-space($codeGenre1Elsevier)='ret'">Retraction</xsl:when>
@@ -356,10 +399,6 @@
             <xsl:when test="normalize-space($codeTitle1)='BAE'">Building and Environment</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='BAMBED'">Biochemistry and Molecular Biology Education</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='BBA'">BBA - Biochimica et Biophysica Acta</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='BBABEN'">BBA Reviews On Bioenergetics</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='BBABIO'">BBA - Bioenergetics</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='BBABP'">BBA - Biophysics Including Photosynthesis</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='BBABS'">BBA - Specialised Section On Biophysical Subjects</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='BBACAN'">BBA - Reviews on Cancer</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='BBADIS'">BBA - Molecular Basis of Disease</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='BBAEBO'">BBA - Enzymology &amp; Biological Oxidation</xsl:when>
@@ -450,7 +489,7 @@
             <xsl:when test="normalize-space($codeTitle1)='CAF'">Computers and Fluids</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CAG'">Computers &amp; Graphics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CAGEO'">Computers and Geosciences</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='CAIE'">Computers &amp; Industrial Engineering</xsl:when>
+            <xsl:when test="normalize-space($codeTitle1)='CAIJ'">Computers &amp; Industrial Engineering</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CAIR'">Clinical and Applied Immunology Reviews</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CALPHA'">Calphad</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CAM'">Journal of Computational and Applied Mathematics</xsl:when>
@@ -499,7 +538,7 @@
             <xsl:when test="normalize-space($codeTitle1)='CES'">Chemical Engineering Science</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CEUS'">Computers, Environment and Urban Systems</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CEV'">Clinical Eye and Vision Care</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='CFSB'">Computer Fraud &amp; Security</xsl:when>
+            <xsl:when test="normalize-space($codeTitle1)='CFSB'">Computers, Fraud &amp; Security</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CGC'">Cancer Genetics and Cytogenetics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CGFR'">Cytokine and Growth Factor Reviews</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='CGIG'">Chemical Geology: Isotope Geoscience Section</xsl:when>
@@ -580,7 +619,6 @@
             <xsl:when test="normalize-space($codeTitle1)='COMAFF'">Communist Affairs</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='COMAID'">Computer Aided Geometric Design</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='COMBUS'">Composites Business Analyst</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='COMCHE'">Combinatorial Chemistry - an Online journal</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='COMCOM'">Computer Communications</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='COMGEO'">Computational Geometry: Theory and Applications</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='COMICR'">Current Opinion in Microbiology</xsl:when>
@@ -749,7 +787,7 @@
             <xsl:when test="normalize-space($codeTitle1)='ENEECO'">Energy Economics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='ENEFIN'">Journal of Energy Finance and Development</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='ENGAN'">Engineering Analysis</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='ENGEO'">Engineering Geology</xsl:when>
+            <xsl:when test="normalize-space($codeTitle1)='ENGGEO'">Engineering Geology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='ENGMI'">Engineering Management International</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='ENGTEC'">Journal of Engineering and Technology Management</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='ENPEC'">Engineering and Process Economics</xsl:when>
@@ -809,7 +847,7 @@
             <xsl:when test="normalize-space($codeTitle1)='FIBPRO'">Fibrinolysis &amp; Proteolysis</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='FIBST'">Fibre Science and Technology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='FIELD'">Field Crops Research</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='FIINAN'">Filtration Industry Analyst</xsl:when>
+            <xsl:when test="normalize-space($codeTitle1)='FIIN'">Filtration Industry Analyst</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='FINANA'">International Review of Financial Analysis</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='FINEC'">Journal of Financial Economics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='FINEL'">Finite Elements in Analysis &amp; Design</xsl:when>
@@ -971,7 +1009,7 @@
             <xsl:when test="normalize-space($codeTitle1)='INDA'">International Dairy Journal</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='INDAER'">Journal of Wind Engineering &amp; Industrial Aerodynamics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='INDAG'">Indagationes Mathematicae</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='INDCRO'">Industrial Crops &amp; Products</xsl:when>
+            <xsl:when test="normalize-space($codeTitle1)='INDCRO'">International Crops &amp; Products</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='INDMET'">Industrial Metrology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='INDOR'">International Journal of Industrial Organization</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='INEC'">Journal of International Economics</xsl:when>
@@ -1156,16 +1194,7 @@
             <xsl:when test="normalize-space($codeTitle1)='JNB'">The Journal of Nutritional Biochemistry</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='JNDT'">NDT and E International</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='JNED'">Journal of Nutrition Education</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JNI'">Journal of Neuroimmunology</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JNM'">Journal of Nurse-Midwifery</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JNNFM'">Journal of Non-Newtonian Fluid Mechanics</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JNS'">Journal of the Neurological Sciences</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='JNUCEN'">Journal of Nuclear Energy</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JNUEN'">Journal of Nuclear Energy (1954)</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JNUENA'">Journal of Nuclear Energy. Part A. Reactor Science</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JOAES'">Journal of African Earth Sciences</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JOCCA'">Journal of Occupational Accidents</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='JOCD'">Journal of Clinical Densitometry</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='JODS'">Journal of Dairy Science</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='JOE'">Journal of Epilepsy</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='JOEN'">Journal of Endodontics</xsl:when>
@@ -1322,7 +1351,7 @@
             <xsl:when test="normalize-space($codeTitle1)='METALG'">Metallography</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MICINF'">Microbes and Infection</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MICMAT'">Microporous and Mesoporous Materials</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MICPRO'">Microprocessors and Microsystems</xsl:when>
+            <xsl:when test="normalize-space($codeTitle1)='MICPRO'">Microprocessing and Microsystems</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MICRES'">Microbiological Research</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MICROC'">Microchemical Journal</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MICROM'">Microporous Materials</xsl:when>
@@ -1356,19 +1385,11 @@
             <xsl:when test="normalize-space($codeTitle1)='MS'">International Journal of Mechanical Sciences</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MSA'">Materials Science &amp; Engineering A</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MSB'">Materials Science &amp; Engineering B</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MSC'">Materials Science &amp; Engineering C</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MSENG'">Materials Science and Engineering</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MSR'">Materials Science &amp; Engineering R</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MTL'">Materials Characterization</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MTM'">International Journal of Machine Tools and Manufacture</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MULFIN'">Journal of Multinational Financial Management</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MUP'">Medical Update for Psychiatrists</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MUSMAN'">Museum Management and Curatorship</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MUT'">Mutation Research - Fundamental and Molecular Mechanisms of Mutagenesis</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MUTAGI'">Mutation Research DNAging</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MUTDNA'">Mutation Research-DNA Repair</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MUTDRR'">Mutation Research DNA Repair Reports</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='MUTENV'">Mutation Research/Environmental Mutagenesis and Related Subjects</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MUTGEN'">Mutation Research - Genetic Toxicology and Environmental Mutagenesis</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MUTGEX'">Mutation Research/Genetic Toxicology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='MUTLET'">Mutation Research Letters</xsl:when>
@@ -1519,11 +1540,9 @@
             <xsl:when test="normalize-space($codeTitle1)='PHYMED'">Phytomedicine</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PHYSA'">Physica A: Statistical Mechanics and its Applications</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PHYSB'">Physica B: Physics of Condensed Matter</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='PHYSBC'">Physica B+C</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PHYSC'">Physica C: Superconductivity and its applications</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PHYSD'">Physica D: Nonlinear Phenomena</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PHYSE'">Physica E: Low-dimensional Systems and Nanostructures</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='PHYSIC'">Physica</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PHYSIO'">Journal of Physiology - Paris</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PHYST'">Physiotherapy</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PHYTO'">Phytochemistry</xsl:when>
@@ -1566,10 +1585,6 @@
             <xsl:when test="normalize-space($codeTitle1)='PRETR'">Progress in water%</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PREVET'">Preventive Veterinary Medicine</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PRO'">Prostaglandins and Other Lipid Mediators</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='PROCI'">Proceedings of the Combustion Institute</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='PROECO'">International Journal of Production Economics</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='PROGHI'">Progress in Histochemistry and Cytochemistry</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='PROLM'">Prostaglandins, Leukotrienes and Medicine</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PROMED'">Prostaglandines and Medicine</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PRONEU'">Progress in Neurobiology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='PROOCE'">Progress in Oceanography</xsl:when>
@@ -1633,7 +1648,7 @@
             <xsl:when test="normalize-space($codeTitle1)='RADPC'">Radiation Physics and Chemistry</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='RBMNEW'">ITBM-RBM News</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='RBMO'">Reproductive BioMedicine Online</xsl:when>
-           <xsl:when test="normalize-space($codeTitle1)='RBMRET'">ITBM RBM : Innovation et technologie en biologie et medecine, une revue de technologie biomedicale = Innovation and technology in biology and medicine.</xsl:when>
+            <xsl:when test="normalize-space($codeTitle1)='RBMRET'">ITBM RBM : Innovation et technologie en biologie et medecine, une revue de technologie biomedicale = Innovation and technology in biology and medicine.</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='RBTCS'">Robotics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='RCE'">Revista clinica espanola</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='RCL'">Radiologic Clinics of North America</xsl:when>
@@ -1756,10 +1771,6 @@
             <xsl:when test="normalize-space($codeTitle1)='SOCECO'">Journal of Socio-Economics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SOCEVO'">Journal of Social and Evolutionary Systems</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SOCSCI'">The Social Science Journal</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='SOCTRA'">Sociologie du travail</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='SOILTE'">Soil Technology</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='SOLCEL'">Solar Cells</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='SOLMAT'">Solar Energy Materials and Solar Cells</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SON'">Social Networks</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SOP'">Survey of Ophthalmology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SOSCME'">Social Science and Medicine</xsl:when>
@@ -1770,10 +1781,6 @@
             <xsl:when test="normalize-space($codeTitle1)='SPR'">Journal of Stored Products Research</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SS'">European Journal of Solid State and Inorganic Chemistry</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SSC'">Solid State Communications</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='SSE'">Solid State Electronics</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='SSM'">Social Science &amp; Medicine</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='SSMA'">Social Science and Medicine. Part A Medical Psychology and Medical Sociology</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='SSMB'">Social Science and Medicine. Part B Medical Anthropology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SSMC'">Social Science and Medicine. Part C Medical Economics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SSMD'">Social Science and Medicine. Part D Medical Geography</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='SSME'">Social Science and Medicine. Part E Medical Psychology</xsl:when>
@@ -1937,7 +1944,6 @@
             <xsl:when test="normalize-space($codeTitle1)='YAPHJ'">The Asia Pacific Heart Journal</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YAPHY'">Annals of Physics</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YAPMR'">Archives of Physical Medicine and Rehabilitation</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YAPNR'">Applied Nursing Research</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YAPNU'">Archives of Psychiatric Nursing</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YAPTCS'">The Asia Pacific Journal of Thoracic and Cardiovascular Surgery</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YARTH'">The Journal of Arthroplasty</xsl:when>
@@ -1948,7 +1954,6 @@
             <xsl:when test="normalize-space($codeTitle1)='YBCMD'">Blood Cells, Molecules and Diseases</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBCON'">Biological Control</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBEAN'">Best Practice &amp; Research Clinical Anaesthesiology</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YBEEM'">Best Practice &amp; Research Clinical Endocrinology &amp; Metabolism</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBEGA'">Best Practice &amp; Research Clinical Gastroenterology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBEHA'">Best Practice &amp; Research Clinical Haematology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBEOG'">Best Practice &amp; Research Clinical Obstetrics &amp; Gynaecology</xsl:when>
@@ -1956,10 +1961,6 @@
             <xsl:when test="normalize-space($codeTitle1)='YBIJL'">Biological Journal of the Linnean Society</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBIOL'">Biologicals</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBIOO'">Bioorganic Chemistry</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YBJOM'">British Journal of Oral &amp; Maxillofacial Surgery</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YBJPS'">British Journal of Plastic Surgery</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YBLRE'">Blood Reviews</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YBMMB'">Biochemical Medicine and Metabolic Biology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBMME'">Biochemical and Molecular Medicine</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBOJL'">Botanical Journal of the Linnean Society</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YBRBI'">Brain Behavior and Immunity</xsl:when>
@@ -1975,10 +1976,6 @@
             <xsl:when test="normalize-space($codeTitle1)='YCDIP'">Current Diagnostic Pathology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YCECA'">Cell Calcium</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YCEIN'">Clinical Effectiveness in Nursing</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YCEPS'">Contemporary Educational Psychology</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YCGIP'">CVGIP: Graphical Models and Image Processing</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YCGRIP'">Computer Graphics and Image Processing</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YCHEC'">Coronary Health Care</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YCIMM'">Cellular Immunology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YCIUN'">CVGIP: Image Understanding</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YCLAD'">Cladistics</xsl:when>
@@ -2063,7 +2060,7 @@
             <xsl:when test="normalize-space($codeTitle1)='YIJODC'">International Journal of Orthodontia and Dentistry for Children</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YIJOM'">International Journal of Oral &amp; Maxillofacial Surgery</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YIJOOS'">International Journal of Orthodontia and Oral Surgery</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YIJORS'">International Journal of Orthodontia and Oral Surgery (1919)</xsl:when>
+            <xsl:when test="normalize-space($codeTitle1)='YIJORS'">International Journal of Orthodontia, Oral Surgery and Radiography</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YIJORT'">International Journal of Orthodontia</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YIJOSR'">International Journal of Orthodontia, Oral Surgery and Radiography</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YIJSL'">International Journal of the Sociology of Law</xsl:when>
@@ -2130,7 +2127,6 @@
             <xsl:when test="normalize-space($codeTitle1)='YJJIE'">Journal of The Japanese and International Economies</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJLTS'">Liver Transplantation</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJMAA'">Journal of Mathematical Analysis and Applications</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YJMBI'">Journal of Molecular Biology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJMCA'">Journal of Microcomputer Applications</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJMCC'">Journal of Molecular and Cellular Cardiology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJMLA'">Journal of Memory and Language</xsl:when>
@@ -2156,9 +2152,6 @@
             <xsl:when test="normalize-space($codeTitle1)='YJPNU'">Journal of Professional Nursing</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJPON'">Journal of Pediatric Oncology Nursing</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJPSU'">Journal of Pediatric Surgery</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YJREN'">Journal of Renal Nutrition</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YJRPE'">Journal of Research in Personality</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YJSBI'">Journal of Structural Biology</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJSCD'">Journal of Stroke and Cerebrovascular Diseases</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJSCO'">Journal of Symbolic Computation</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YJSRE'">Journal of Surgical Research</xsl:when>
@@ -2179,10 +2172,6 @@
             <xsl:when test="normalize-space($codeTitle1)='YMARE'">Management Accounting Research</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YMAS'">Asthma Magazine</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YMATH'">Manual Therapy</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YMBEN'">Metabolic Engineering</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YMCBR'">Molecular Cell Biology Research Communications</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YMCD'">Current Problems in Cardiology</xsl:when>
-            <xsl:when test="normalize-space($codeTitle1)='YMCM'">The Case Manager</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YMCN'">Current Problems in Cancer</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YMCNE'">Molecular and Cellular Neuroscience</xsl:when>
             <xsl:when test="normalize-space($codeTitle1)='YMCPR'">Molecular and Cellular Probes</xsl:when>
@@ -2434,7 +2423,7 @@
         </xsl:choose>
     </xsl:variable>
     
-    <xsl:template match="svapi:full-text-retrieval-response">
+    <xsl:template match="svapi:full-text-retrieval-response" mode="legacy-ignore">
         <xsl:apply-templates select="descendant::els1:article"/>
     </xsl:template>
 
@@ -2747,11 +2736,11 @@
                             <xsl:choose>
                                 <xsl:when test="//ce:doi='10.1016/0020-7055(75)90037-6'">ru</xsl:when>
                                 <xsl:when test="//ce:doi='10.1016/S0065-1281(77)80028-7'">it</xsl:when>
-                                <xsl:when test="//ce:doi='10.1016/S0065-1281(77)80116-5'or//ce:doi='10.1016/S0005-2795(70)80016-2'or//ce:doi='10.1016/S0899-5362(00)00024-5'or//ce:doi='10.1016/0001-6160(77)90075-X'or//ce:doi='10.1016/0029-5493(67)90024-6'or//ce:doi='10.1016/S0003-9365(11)80123-5'or//ce:doi='10.1016/0017-9310(65)90077-3'or//ce:doi='10.1016/S0044-328X(75)80002-X'or//ce:doi='10.1016/S0174-3031(83)80093-6'or//ce:doi='10.1016/S0044-328X(78)80193-7'or//ce:doi='10.1016/0140-7007(82)90068-8'or//ce:doi='10.1016/0024-3841(77)90027-4'or//ce:doi='10.1016/0028-3932(63)90018-6'or//ce:doi='10.1016/S0044-328X(82)80177-3'or//ce:doi='10.1016/S0031-8914(41)90688-2'or//ce:doi='10.1016/0043-1648(68)90552-8'or//ce:doi='10.1016/0013-4686(61)90001-9'or//ce:doi='10.1016/S0031-8914(40)90087-8'or//ce:doi='10.1016/S0031-8914(42)90109-5'or//ce:doi='10.1016/0031-8914(48)90040-8'or//ce:doi='10.1016/S0031-8914(38)80198-1'or//ce:doi='10.1016/S0399-077X(73)80142-8'or//ce:doi='10.1016/0022-2860(74)85065-9'">fr</xsl:when>
-                                <xsl:when test="//ce:doi='10.1016/0371-1951(48)80189-X'or//ce:doi='10.1016/0011-2275(64)90067-0'or//ce:doi='10.1016/0011-2275(64)90086-4'or//ce:doi='10.1016/0011-2275(64)90022-0'or//ce:doi='10.1016/0011-2275(64)90108-0'or//ce:doi='10.1016/0011-2275(64)90048-7'or//ce:doi='10.1016/S0011-2275(64)80012-6'or//ce:doi='10.1016/S0031-8663(38)80015-6'">it</xsl:when>
+                                <xsl:when test="//ce:doi='10.1016/S0065-1281(77)80116-5'or//ce:doi='10.1016/S0005-2795(70)80016-2'or//ce:doi='10.1016/0899-5362(00)00024-5'or//ce:doi='10.1016/0001-6160(77)90075-X'or//ce:doi='10.1016/0029-5493(67)90024-6'or//ce:doi='10.1016/S0003-9365(11)80123-5'or//ce:doi='10.1016/0017-9310(65)90077-3'or//ce:doi='10.1016/S0044-328X(75)80002-X'or//ce:doi='10.1016/S0174-3031(83)80093-6'or//ce:doi='10.1016/S0044-328X(78)80193-7'or//ce:doi='10.1016/0024-3841(77)90027-4'or//ce:doi='10.1016/0028-3932(63)90018-6'or//ce:doi='10.1016/S0044-328X(82)80177-3'or//ce:doi='10.1016/0031-8914(41)90688-2'or//ce:doi='10.1016/0043-1648(68)90552-8'or//ce:doi='10.1016/0013-4686(61)90001-9'or//ce:doi='10.1016/S0031-8914(40)90087-8'or//ce:doi='10.1016/S0031-8914(42)90109-5'or//ce:doi='10.1016/0031-8914(48)90040-8'or//ce:doi='10.1016/0031-8914(38)80198-1'or//ce:doi='10.1016/0399-077X(73)80142-8'or//ce:doi='10.1022-2855-2701(89)85004-4'">fr</xsl:when>
+                                <xsl:when test="//ce:doi='10.1016/0371-1951(48)80189-X'or//ce:doi='10.1016/0011-2275(64)90067-0'or//ce:doi='10.1016/0011-2275(64)90086-4'or//ce:doi='10.1016/0011-2275(64)90022-0'or//ce:doi='10.1016/0011-2275(64)90108-0'or//ce:doi='10.1016/0011-2275(64)90048-7'or//ce:doi='10.1016/S0011-2275(64)80012-6'or//ce:doi='10.1016/0031-8663(38)80015-6'">it</xsl:when>
                                 <xsl:when test="//ce:doi='10.1016/0029-554X(69)90427-3'">de</xsl:when>
                                 <xsl:when test="//ce:doi='10.1016/S1695-4033(01)77667-9'or//ce:doi='10.1016/S1695-4033(01)77671-0'or//ce:doi='10.1016/S1695-4033(01)77666-7'or//ce:doi='10.1016/S1695-4033(01)77668-0'or//ce:doi='10.1016/S1695-4033(01)77669-2'or//ce:doi='10.1016/S1695-4033(01)77670-9'or//ce:doi='10.1016/0022-510X(68)90004-X'or//ce:doi='10.1016/0277-9536(89)90004-X'">es</xsl:when>
-                                <xsl:when test="//ce:doi='10.1016/S0005-8165(77)80120-0'or//ce:doi='10.1016/S0940-9602(98)80120-9'or//ce:doi='10.1016/S0044-4057(74)80061-4'or//ce:doi='10.1016/S0940-9602(11)80342-0'or//ce:doi='10.1016/0079-6816(94)90061-2'or//ce:doi='10.1016/S0232-4393(11)80191-5'or//ce:doi='10.1016/S0172-5599(80)80068-X'or//ce:doi='10.1016/0029-5493(74)90179-4'or//ce:doi='10.1016/0255-2701(89)85004-4'or//ce:doi='10.1016/S0344-0338(79)80035-7'or//ce:doi='10.1016/S0044-4057(77)80091-9'or//ce:doi='10.1016/0255-2701(88)87017-X'or//ce:doi='10.1016/0378-2166(89)90007-6'or//ce:doi='10.1016/S0016-2361(01)00039-4'or//ce:doi='10.1016/S0040-6090(00)00826-9'or//ce:doi='10.1016/0013-4686(78)87005-4'or//ce:doi='10.1016/0013-4694(72)90174-5'or//ce:doi='10.1016/0001-8686(90)80027-W'or//ce:doi='10.1016/S0929-693X(99)80201-2'or//ce:doi='10.1016/0013-4694(72)90174-5'or//ce:doi='10.1016/S1507-1367(01)70390-2'or//ce:doi='10.1016/S1507-1367(01)70395-1'or//ce:doi='10.1016/S1507-1367(01)70379-3'or//ce:doi='10.1016/S1507-1367(01)70393-8'or//ce:doi='10.1016/S1507-1367(01)70381-1'or//ce:doi='10.1016/S1507-1367(01)70483-X'or//ce:doi='10.1016/S1507-1367(01)70385-9'or//ce:doi='10.1016/S1507-1367(01)70374-4'or//ce:doi='10.1016/S1507-1367(01)70389-6'or//ce:doi='10.1016/S1507-1367(01)70376-8'or//ce:doi='10.1016/S1507-1367(01)70380-X'or//ce:doi='10.1016/S1507-1367(01)70387-2'or//ce:doi='10.1016/S1507-1367(01)70384-7'or//ce:doi='10.1016/S1507-1367(01)70471-3'or//ce:doi='10.1016/S1507-1367(01)70399-9'or//ce:doi='10.1016/S1507-1367(01)70391-4'or//ce:doi='10.1016/S1507-1367(01)70397-5'or//ce:doi='10.1016/S1507-1367(01)70382-3'or//ce:doi='10.1016/S1507-1367(01)70398-7'or//ce:doi='10.1016/S1507-1367(01)70394-X'or//ce:doi='10.1016/S1507-1367(01)70378-1'or//ce:doi='10.1016/S1507-1367(01)70377-X'or//ce:doi='10.1016/S1507-1367(01)70392-6'or//ce:doi='10.1016/S1507-1367(01)70396-3'or//ce:doi='10.1016/S1507-1367(01)70383-5'or//ce:doi='10.1016/S1507-1367(01)70372-0'or//ce:doi='10.1016/S1507-1367(01)70386-0'or//ce:doi='10.1016/S1507-1367(01)70375-6'">en</xsl:when>
+                                <xsl:when test="//ce:doi='10.1016/S0005-8165(77)80120-0'or//ce:doi='10.1016/S0940-9602(98)80120-9'or//ce:doi='10.1016/S0044-4057(74)80061-4'or//ce:doi='10.1016/S0940-9602(11)80342-0'or//ce:doi='10.1016/0079-6816(94)90061-2'or//ce:doi='10.1016/S0232-4393(11)80191-5'or//ce:doi='10.1016/S0172-5599(80)80068-X'or//ce:doi='10.1016/0029-5493(74)90179-4'or//ce:doi='10.1016/0255-2701(89)85004-4'or//ce:doi='10.1016/S0344-0338(79)80035-7'or//ce:doi='10.1016/S0044-4057(77)80091-9'or//ce:doi='10.1016/0255-2701(88)87017-X'or//ce:doi='10.1016/0378-2166(89)90007-6'or//ce:doi='10.1016/S0016-2361(01)00039-4'or//ce:doi='10.1016/S0040-6090(00)00826-9'or//ce:doi='10.1016/0013-4686(78)87005-4'or//ce:doi='10.1016/0013-4694(72)90174-5'or//ce:doi='10.1016/0001-8686(90)80027-W'or//ce:doi='10.1016/S0929-693X(99)80201-2'or//ce:doi='10.1016/0013-4694(72)90174-5'or//ce:doi='10.1016/S1507-1367(01)70390-2'or//ce:doi='10.1016/S1507-1367(01)70395-1'or//ce:doi='10.1016/S1507-1367(01)70379-3'or//ce:doi='10.1016/S1507-1367(01)70393-8'or//ce:doi='10.1016/S1507-1367(01)70381-1'or//ce:doi='10.1016/S1507-1367(01)70483-X'or//ce:doi='10.1016/S1507-1367(01)70385-9'or//ce:doi='10.1016/S1507-1367(01)70374-4'or//ce:doi='10.1016/S1507-1367(01)70399-9'or//ce:doi='10.1016/S1507-1367(01)70391-4'or//ce:doi='10.1016/S1507-1367(01)70397-5'or//ce:doi='10.1016/S1507-1367(01)70382-3'or//ce:doi='10.1016/S1507-1367(01)70398-7'or//ce:doi='10.1016/S1507-1367(01)70394-X'or//ce:doi='10.1016/S1507-1367(01)70378-1'or//ce:doi='10.1016/S1507-1367(01)70377-X'or//ce:doi='10.1016/S1507-1367(01)70392-6'or//ce:doi='10.1016/S1507-1367(01)70396-3'or//ce:doi='10.1016/S1507-1367(01)70383-5'or//ce:doi='10.1016/S1507-1367(01)70372-0'or//ce:doi='10.1016/S1507-1367(01)70386-0'or//ce:doi='10.1016/S1507-1367(01)70375-6'">en</xsl:when>
                                 <xsl:when test="//ce:doi='10.1016/S0174-3031(82)80096-6'">fr</xsl:when>
                                 <xsl:otherwise>
                                     <xsl:choose>
@@ -2888,197 +2877,6 @@
     </xsl:template>
 	
 	<!-- PL: this could be moved to KeywordsAbstract.xsl when generalised to all publishers -->
-    <!--xsl:template match="els1:head/ce:abstract |els2:head/ce:abstract | head/ce:abstract">
-		<abstract>
-			<xsl:if test="@xml:lang">
-				<xsl:attribute name="xml:lang">
-					<xsl:value-of select="@xml:lang"/>
-				</xsl:attribute>
-			</xsl:if>
-			<xsl:apply-templates select="*/ce:simple-para"/>
-		</abstract>
-    </xsl:template-->
-
-    <xsl:template match="els1:display |els2:display | ce:display | display">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="ce:correspondence/ce:text">
-        <p><xsl:apply-templates/></p>
-    </xsl:template>
-
-    <!-- Revision information -->
-    <xsl:template match="els1:head/ce:date-received |els2:head/ce:date-received | head/ce:date-received">
-        <change>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="@day"/>
-                    <xsl:with-param name="oldMonth" select="@month"/>
-                    <xsl:with-param name="oldYear" select="@year"/>
-                </xsl:call-template>
-            </xsl:attribute>
-            <xsl:text>Received</xsl:text>
-        </change>
-    </xsl:template>
-
-    <xsl:template match="els1:head/ce:date-revised |els2:head/ce:date-revised | head/ce:date-revised">
-        <change>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="@day"/>
-                    <xsl:with-param name="oldMonth" select="@month"/>
-                    <xsl:with-param name="oldYear" select="@year"/>
-                </xsl:call-template>
-            </xsl:attribute>
-            <xsl:text>Revised</xsl:text>
-        </change>
-    </xsl:template>
-
-    <xsl:template match="els1:head/ce:date-accepted |els2:head/ce:date-accepted | head/ce:date-accepted">
-        <change>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="@day"/>
-                    <xsl:with-param name="oldMonth" select="@month"/>
-                    <xsl:with-param name="oldYear" select="@year"/>
-                </xsl:call-template>
-            </xsl:attribute>
-            <xsl:text>Accepted</xsl:text>
-        </change>
-    </xsl:template>
-
-    <xsl:template match="els1:head/ce:date-received |els2:head/ce:date-received | head/ce:date-received" mode="inImprint">
-        <change>
-            <xsl:attribute name="type">received</xsl:attribute>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="@day"/>
-                    <xsl:with-param name="oldMonth" select="@month"/>
-                    <xsl:with-param name="oldYear" select="@year"/>
-                </xsl:call-template>
-            </xsl:attribute>
-        </change>
-    </xsl:template>
-
-    <xsl:template match="els1:head/ce:date-accepted |els2:head/ce:date-accepted | head/ce:date-accepted" mode="inImprint">
-        <date>
-            <xsl:attribute name="type">accepted</xsl:attribute>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay" select="@day"/>
-                    <xsl:with-param name="oldMonth" select="@month"/>
-                    <xsl:with-param name="oldYear" select="@year"/>
-                </xsl:call-template>
-            </xsl:attribute>
-        </date>
-    </xsl:template>
-
-    <xsl:template match="els1:head/ce:miscellaneous |els2:head/ce:miscellaneous | head/ce:miscellaneous" mode="inImprint">
-        <xsl:variable name="quot">"</xsl:variable>
-        <date>
-            <xsl:attribute name="type">published</xsl:attribute>
-            <xsl:attribute name="when">
-                <xsl:call-template name="makeISODateFromComponents">
-                    <xsl:with-param name="oldDay"
-                        select="substring-before(substring-after(substring-after(.,'day='),$quot),$quot)"/>
-                    <xsl:with-param name="oldMonth"
-                        select="substring-before(substring-after(substring-after(.,'month='),$quot),$quot)"/>
-                    <xsl:with-param name="oldYear"
-                        select="substring-before(substring-after(substring-after(.,'year='),$quot),$quot)"
-                    />
-                </xsl:call-template>
-            </xsl:attribute>
-        </date>
-    </xsl:template>
-
-    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <!-- Full text elements -->
-
-    <!-- divisions -->
-
-    <xsl:template match="ce:sections">
-        <div type="ElsevierSections">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-
-    <xsl:template match="ce:section">
-        <div>
-            <xsl:if test="ce:label">
-                <xsl:attribute name="type" select="ce:label"/>
-            </xsl:if>
-            <xsl:if test="@id">
-                <xsl:attribute name="xml:id" select="@id"/>
-            </xsl:if>
-            <xsl:apply-templates select="*[ name()!='ce:label']"/>
-        </div>
-    </xsl:template>
-
-    <xsl:template match="ce:acknowledgment">
-        <div type="acknowledgment">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    <xsl:template match="ce:appendices">
-            <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="ce:abstract-sec">
-        <xsl:apply-templates/>
-    </xsl:template>
-
-    <xsl:template match="ce:section-title">
-        <head>
-            <xsl:apply-templates/>
-        </head>
-    </xsl:template>
-
-    <xsl:template match="ce:e-address">
-        <email>
-            <xsl:apply-templates/>
-        </email>
-    </xsl:template>
-
-    <xsl:template match="els1:author-comment |els2:author-comment">
-        <note type="author-comment">
-            <xsl:apply-templates/>
-        </note>
-    </xsl:template>
-
-    <!-- Figures -->
-    <xsl:template match="ce:figure">
-            <figure>
-                <xsl:if test="@id">
-                    <xsl:attribute name="xml:id">
-                        <xsl:value-of select="@id"/>
-                    </xsl:attribute>
-                </xsl:if>
-                <xsl:apply-templates/>
-            </figure>
-        
-    </xsl:template>
-    <xsl:template match="ce:caption">
-        <figDesc>
-            <xsl:apply-templates/>
-        </figDesc>
-    </xsl:template>
-
-    <!-- Fin de la bibliographie -->
-
-    <xsl:template match="ce:bib-reference">
-        <biblStruct>
-            <xsl:attribute name="xml:id">
-                <xsl:value-of select="@id"/>
-            </xsl:attribute>
-            <xsl:apply-templates/>
-        </biblStruct>
-    </xsl:template>
-
-    <xsl:template match="els1:conf-name |els2:conf-name">
-        <meeting>
-            <xsl:apply-templates/>
-        </meeting>
-    </xsl:template>
     
     <xsl:template match="ce:collaboration">
         <author role="collab">
@@ -3154,133 +2952,13 @@
                     </xsl:for-each>
                 </xsl:otherwise>
             </xsl:choose>
-            
-            <xsl:choose>
-                <xsl:when test="../ce:correspondence[not(@id)]">
-                    <xsl:message>Affiliation sans identifiant</xsl:message>
-                    <xsl:for-each select="../ce:correspondence">
-                        <affiliation>
-                            <xsl:call-template name="parseAffiliation">
-                                <xsl:with-param name="theAffil">
-                                    <xsl:value-of select="ce:text"/>
-                                </xsl:with-param>
-                            </xsl:call-template>
-                        </affiliation>
-                    </xsl:for-each>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:message>On parcourt les affiliations</xsl:message>
-                    <xsl:for-each select="$structId">
-                        <xsl:variable name="localId">
-                            <xsl:value-of select="."/>
-                        </xsl:variable>
-                        <xsl:if test="//ce:correspondence[@id=$localId]">
-                            <xsl:message>Trouvé: <xsl:value-of select="$localId"/></xsl:message>
-                            <affiliation>
-                                <xsl:call-template name="parseAffiliation">
-                                    <xsl:with-param name="theAffil">
-                                        <xsl:value-of select="//ce:correspondence[@id=$localId]/ce:text"/>
-                                    </xsl:with-param>
-                                </xsl:call-template>
-                            </affiliation>
-                        </xsl:if>
-                    </xsl:for-each>
-                </xsl:otherwise>
-            </xsl:choose>
-            
+
             <xsl:for-each select="$structId">
                 <xsl:variable name="localId2">
                     <xsl:value-of select="."/>
                 </xsl:variable>
                 
                 <xsl:if test="//ce:correspondence[@id=$localId2]">
-                    <xsl:variable name="codePays"
-                        select="/els1:article/els1:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text | /els2:article/els2:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text"/>
-                    <xsl:message>Pays Elsevier: <xsl:value-of select="$codePays"/></xsl:message>
-                    <!-- PL: test to avoid empy country block -->
-                    
-                    <xsl:if test="$codePays">
-                        <affiliation>
-                            <address>
-                                <country>
-                                    <xsl:attribute name="key">
-                                        <xsl:value-of select="$codePays"/>
-                                    </xsl:attribute>
-                                    <xsl:call-template name="normalizeISOCountryName">
-                                        <xsl:with-param name="country" select="$codePays"/>
-                                    </xsl:call-template>
-                                </country>
-                            </address>
-                        </affiliation>
-                    </xsl:if>
-                </xsl:if>
-            </xsl:for-each>
-            
-            
-            <!-- PL: no reference markers in the author section -->
-            <!--xsl:apply-templates select="ce:cross-ref"/-->
-            
-        </author>
-    </xsl:template>
-    
-    <xsl:template match="ce:author">
-        <author>
-            <xsl:variable name="structId" select="ce:cross-ref/@refid"/>
-            <xsl:for-each select="$structId">
-                <xsl:if test="//ce:correspondence[@id=.]">
-                    <xsl:attribute name="role">
-                        <xsl:text>corresp</xsl:text>
-                    </xsl:attribute>
-                </xsl:if>
-                <xsl:message>Identifier: <xsl:value-of select="."/></xsl:message>
-            </xsl:for-each>
-
-            <persName>
-                <xsl:apply-templates select="*[name(.)!='ce:cross-ref' and name(.)!='ce:e-address']"
-                />
-            </persName>
-
-            <xsl:apply-templates select="ce:e-address"/>
-
-            <xsl:choose>
-                <xsl:when test="../ce:affiliation[not(@id)]">
-                    <xsl:message>Affiliation sans identifiant</xsl:message>
-                    <xsl:for-each select="../ce:affiliation">
-                        <affiliation>
-                            <xsl:call-template name="parseAffiliation">
-                                <xsl:with-param name="theAffil">
-                                    <xsl:value-of select="ce:textfn"/>
-                                </xsl:with-param>
-                            </xsl:call-template>
-                        </affiliation>
-                    </xsl:for-each>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:message>On parcourt les affiliations</xsl:message>
-                    <xsl:for-each select="$structId">
-                        <xsl:variable name="localId">
-                            <xsl:value-of select="."/>
-                        </xsl:variable>
-                        <xsl:if test="//ce:affiliation[@id=$localId]">
-                            <xsl:message>Trouvé: <xsl:value-of select="$localId"/></xsl:message>
-                            <affiliation>
-                                <xsl:call-template name="parseAffiliation">
-                                    <xsl:with-param name="theAffil">
-                                        <xsl:value-of select="//ce:affiliation[@id=$localId]/ce:textfn"/>
-                                    </xsl:with-param>
-                                </xsl:call-template>
-                            </affiliation>
-                        </xsl:if>
-                    </xsl:for-each>
-                </xsl:otherwise>
-            </xsl:choose>
-
-            <xsl:for-each select="$structId">
-                <xsl:variable name="localId2">
-                    <xsl:value-of select="."/>
-                </xsl:variable>
-                
-                <xsl:if test="//ce:correspondence[@id=$localId2] ">
                     <xsl:variable name="codePays"
                         select="/els1:article/els1:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text | /els2:article/els2:item-info/ce:doctopics/ce:doctopic[@role='coverage']/ce:text"/>
                     <xsl:message>Pays Elsevier: <xsl:value-of select="$codePays"/></xsl:message>
