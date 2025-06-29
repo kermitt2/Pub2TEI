@@ -14,12 +14,67 @@
     <!-- ajout déclaration schema ODD-ISTEX -->
     
     <xsl:output encoding="UTF-8" method="xml"/>
-    <!-- Unwrap Elsevier SVAPI response and process inner <article> or <originalText> -->
-    <xsl:template match="*[local-name()='full-text-retrieval-response']">
-    <xsl:apply-templates select="*[local-name()='article' or local-name()='originalText']"/>
+<!-- 1) Unwrap any SVAPI wrapper by picking the first convertible block -->
+<xsl:template match="*[local-name()='full-text-retrieval-response']">
+    <xsl:choose>
+        <!-- a) Direct JATS <article> (modern JATS files) -->
+        <xsl:when test=".//*[local-name()='article']">
+        <xsl:apply-templates select=".//*[local-name()='article'][1]"/>
+        </xsl:when>
+        <!-- b) Core metadata section (older SVAPI responses) -->
+        <xsl:when test=".//*[local-name()='coredata']">
+        <xsl:apply-templates select=".//*[local-name()='coredata'][1]"/>
+        </xsl:when>
+        <!-- c) Elsevier’s xocs:doc wrapper -->
+        <xsl:when test=".//*[local-name()='doc']">
+        <xsl:apply-templates select=".//*[local-name()='doc'][1]"/>
+        </xsl:when>
+        <!-- d) Older SVAPI originalText -->
+        <xsl:when test=".//*[local-name()='originalText']">
+        <xsl:apply-templates select=".//*[local-name()='originalText'][1]"/>
+        </xsl:when>
+        <!-- otherwise: no convertible content -->
+    </xsl:choose>
     </xsl:template>
-    
-    <xsl:include href="ElsevierFormula.xsl"/>
+
+    <!-- 2) Once we land on <doc> or <originalText>, recurse into all child nodes -->
+    <xsl:template match="*[local-name()='doc'] | *[local-name()='originalText']">
+    <xsl:apply-templates select="node()"/>
+    </xsl:template>
+
+    <!-- 3) Map coredata → minimal TEI header + abstract -->
+    <xsl:template match="*[local-name()='coredata']">
+    <TEI xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+        <fileDesc>
+            <titleStmt>
+            <title>
+                <xsl:value-of select=".//*[local-name()='title'][1]"/>
+            </title>
+            </titleStmt>
+            <sourceDesc>
+            <biblStruct>
+                <analytic>
+                <title>
+                    <xsl:value-of select=".//*[local-name()='publicationName'][1]"/>
+                </title>
+                </analytic>
+            </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        </teiHeader>
+        <text>
+        <front>
+            <abstract>
+            <xsl:value-of select=".//*[local-name()='description'][1]"/>
+            </abstract>
+        </front>
+        <!-- no <body> for metadata‐only -->
+        </text>
+    </TEI>
+</xsl:template>
+
+<xsl:include href="ElsevierFormula.xsl"/>
     <xsl:variable name="docIssueEls" select="document($issueXmlPath)" />
     <xsl:variable name="titre">
         <xsl:choose>
