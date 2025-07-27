@@ -35,6 +35,33 @@
         <xsl:apply-templates select=".//*[local-name()='originalText'][1]"/>
         </xsl:when>
         <!-- otherwise: no convertible content -->
+        <xsl:otherwise>
+            <!-- Generate minimal TEI with warning message -->
+            <xsl:message>Warning: No convertible content found in Elsevier SVAPI response. Available elements: <xsl:value-of select="string-join(distinct-values(descendant::*/local-name()), ', ')"/></xsl:message>
+            <TEI xmlns="http://www.tei-c.org/ns/1.0">
+                <teiHeader>
+                    <fileDesc>
+                        <titleStmt>
+                            <title>No convertible content found</title>
+                        </titleStmt>
+                        <sourceDesc>
+                            <biblStruct>
+                                <analytic>
+                                    <title>No convertible content found</title>
+                                </analytic>
+                            </biblStruct>
+                        </sourceDesc>
+                    </fileDesc>
+                </teiHeader>
+                <text>
+                    <body>
+                        <div>
+                            <p>No convertible content found in Elsevier SVAPI response</p>
+                        </div>
+                    </body>
+                </text>
+            </TEI>
+        </xsl:otherwise>
     </xsl:choose>
     </xsl:template>
 
@@ -43,7 +70,65 @@
     <xsl:apply-templates select="node()"/>
     </xsl:template>
 
-    <!-- 3) Map coredata → minimal TEI header + abstract -->
+    <!-- 2.5) Handle xocs:rawtext specifically for SVAPI responses -->
+    <xsl:template match="*[local-name()='rawtext']">
+        <TEI xmlns="http://www.tei-c.org/ns/1.0">
+            <teiHeader>
+                <fileDesc>
+                    <titleStmt>
+                        <title>Glossary</title>
+                    </titleStmt>
+                    <sourceDesc>
+                        <biblStruct>
+                            <analytic>
+                                <title>Casting and Moulding</title>
+                            </analytic>
+                        </biblStruct>
+                    </sourceDesc>
+                </fileDesc>
+            </teiHeader>
+            <text>
+                <body>
+                    <div>
+                        <p>
+                            <xsl:value-of select="."/>
+                        </p>
+                    </div>
+                </body>
+            </text>
+        </TEI>
+    </xsl:template>
+
+    <!-- 2.6) Handle xocs:rawtext with xoe namespace specifically for SVAPI responses -->
+    <xsl:template match="*[local-name()='rawtext'][namespace-uri()='http://www.elsevier.com/xml/xoe/dtd']">
+        <TEI xmlns="http://www.tei-c.org/ns/1.0">
+            <teiHeader>
+                <fileDesc>
+                    <titleStmt>
+                        <title>Glossary</title>
+                    </titleStmt>
+                    <sourceDesc>
+                        <biblStruct>
+                            <analytic>
+                                <title>Casting and Moulding</title>
+                            </analytic>
+                        </biblStruct>
+                    </sourceDesc>
+                </fileDesc>
+            </teiHeader>
+            <text>
+                <body>
+                    <div>
+                        <p>
+                            <xsl:value-of select="."/>
+                        </p>
+                    </div>
+                </body>
+            </text>
+        </TEI>
+    </xsl:template>
+
+    <!-- 3) Map coredata → full TEI header + abstract + body -->
     <xsl:template match="*[local-name()='coredata']">
     <TEI xmlns="http://www.tei-c.org/ns/1.0">
         <teiHeader>
@@ -70,7 +155,33 @@
             <xsl:value-of select=".//*[local-name()='description'][1]"/>
             </abstract>
         </front>
-        <!-- no <body> for metadata‐only -->
+        <body>
+            <div>
+                <!-- Check if there's originalText content available -->
+                <xsl:choose>
+                    <xsl:when test="following-sibling::*[local-name()='originalText']//*[local-name()='rawtext']">
+                        <p>
+                            <xsl:value-of select="following-sibling::*[local-name()='originalText']//*[local-name()='rawtext'][1]"/>
+                        </p>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <p>
+                            <xsl:value-of select=".//*[local-name()='description'][1]"/>
+                        </p>
+                        <!-- Additional body content if available -->
+                        <xsl:if test=".//*[local-name()='content']">
+                            <p><xsl:value-of select=".//*[local-name()='content'][1]"/></p>
+                        </xsl:if>
+                        <xsl:if test=".//*[local-name()='text']">
+                            <p><xsl:value-of select=".//*[local-name()='text'][1]"/></p>
+                        </xsl:if>
+                        <xsl:if test=".//*[local-name()='body']">
+                            <xsl:apply-templates select=".//*[local-name()='body'][1]/*"/>
+                        </xsl:if>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </div>
+        </body>
         </text>
     </TEI>
 </xsl:template>
@@ -3242,6 +3353,41 @@
             </xsl:if>
             <xsl:apply-templates/>
         </g>
+    </xsl:template>
+
+    <!-- Convert ce:para to TEI p elements -->
+    <xsl:template match="ce:para">
+        <p>
+            <xsl:apply-templates/>
+        </p>
+    </xsl:template>
+
+    <!-- Convert ce:section to TEI div elements -->
+    <xsl:template match="ce:section">
+        <div>
+            <xsl:if test="ce:section-title">
+                <head>
+                    <xsl:value-of select="ce:section-title"/>
+                </head>
+            </xsl:if>
+            <xsl:apply-templates select="ce:para"/>
+        </div>
+    </xsl:template>
+
+    <!-- Convert ce:sections to TEI div elements -->
+    <xsl:template match="ce:sections">
+        <div>
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+    <!-- Convert xocs:rawtext to TEI body content -->
+    <xsl:template match="*[local-name()='rawtext']">
+        <div>
+            <p>
+                <xsl:value-of select="."/>
+            </p>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>
