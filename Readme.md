@@ -10,7 +10,7 @@ This project aims at converting XML documents encoded in various scientific publ
 
 The target TEI XML is the same as the Grobid TEI XML format, which makes possible to ingest various publisher XML or PDF into the same XML format, avoiding then to write multiple specific parsers. The publisher XML transformation should normally preserve all the information from the source XML. 
 
-In addition to avoid any XML publisher information loss, the converter offers various possibilities to enhanced the publisher XML:
+In addition to avoid any XML publisher information loss, the converter offers various possibilities to enhance the publisher XML:
 
 - when the input publisher XML has raw strings for affiliations and bibliographical references Grobid can be used automatically to further parses the raw string into a structured representation that is added to the final TEI document,
 
@@ -86,7 +86,7 @@ optional arguments:
   --consolidate_references
                         use GROBID for consolidation of the bibliographical references
   --segment_sentences   segment sentences in the text content of the document with additional <s> elements
-  --generate_ids        Generate idenfifier for each text item
+  --generate_ids        Generate identifier for each text item
   --grobid_refine       use Grobid to structure/enhance raw fields: affiliations, references, person, dates
   --force               force re-processing pdf input files when tei output files already exist
   --verbose             print information about processed files in the console
@@ -108,14 +108,14 @@ Note that the consolidation is realized with the consolidation service indicated
 
 ### Web services
 
-Tranform a publisher XML into TEI XML format, with optional enhancements.
+Transform a publisher XML into TEI XML format, with optional enhancements.
 
 |  method   |  request type         |  response type       | parameters              |  requirement  | description                                                                                                                                                                                                                                  |
 |---        |---                    |---                   |-------------------------|---            |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | POST      | `multipart/form-data` | `application/xml`    | `input`                 | required      | publisher XML file to be processed                                                                                                                                                                                                           |
 |           |                       |                      | `segmentSentences`      | optional      | Boolean, if true the paragraphs structures in the resulting TEI will be further segmented into sentence elements <s>                                                                                                                         |
-|           |                       |                      | `grobidRefine`          | optional      | Boolean, if true the raw affiliations and raw biblographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML                                                          |
-|           |                       |                      | `consolidateReferences` | optional      | Consolidate all the biblographical references, `consolidateReferences` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
+|           |                       |                      | `grobidRefine`          | optional      | Boolean, if true the raw affiliations and raw bibliographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML                                                          |
+|           |                       |                      | `consolidateReferences` | optional      | Consolidate all the bibliographical references, `consolidateReferences` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
 |           |                       |                      | `generateIDs`           | optional      | Inject the attribute `xml:id` in the textual elements (`title`, `note`, `term`, `keywords`, `p`, `s`)                                                                                                                                                                                     |
 
 Response status codes:
@@ -133,7 +133,7 @@ Assuming that the service is started on the default port `:8060` of a local mach
 curl --form input=@/home/lopez/biblio/PMC_sample_1943/main.nxml --form segmentSentences=1 --form grobidRefine=1 localhost:8060/service/processXML 
 ```
 
-The resulting TEI has additional sentence markups, additional structured affilitions and additional structured bibliographical references for the entries without markup. 
+The resulting TEI has additional sentence markups, additional structured affiliations and additional structured bibliographical references for the entries without markup. 
 
 ## Running the project as a Java application
 
@@ -155,7 +155,7 @@ cd Pub2TEI
 ./gradlew clean install 
 ```
 
-Be sure to indicate the correct installtion location of the `grobid-home` directory, for example: 
+Be sure to indicate the correct installation location of the `grobid-home` directory, for example: 
 
 ```yaml
 grobidHome: ../grobid/grobid-home
@@ -193,19 +193,19 @@ The resulting TEI documents follow a TEI customisation documented under the sub-
 
 #### Example with saxon9
 
-Here is a usage example with the Open Source Saxon 9 Home Edition (java). You can download more recent `saxon_he` versions [here](https://github.com/Saxonica/Saxon-HE) (for conveniency, one is included in the `Samples/` directory):
+Here is a usage example with the Open Source Saxon 9 Home Edition (java). You can download more recent `saxon_he` versions [here](https://github.com/Saxonica/Saxon-HE) (for convenience, one is included in the `Samples/` directory):
 
 > java -jar localLibs/saxon9he.jar -s:Samples/TestPubInput/BMJ/bmj_sample.xml -xsl:Stylesheets/Publishers.xsl -o:out.tei.xml -dtd:off -a:off -expand:off --parserFeature?uri=http%3A//apache.org/xml/features/nonvalidating/load-external-dtd:false -t 
 
 The command will apply the Pub2TEI style sheets to a NLM file and produce a TEI `out.tei.xml`. You can remove the `-t` option for not producing the trace information. 
 
-You can select a **directory** as input and ouput, in order to process a large amount of files, while compiling the XSLT only one time. The normal behavior is then to transform around **one hundred files per second**. If it's closer to one file per hundred seconds, see the next section... 
+You can select a **directory** as input and output, in order to process a large amount of files, while compiling the XSLT only one time. The normal behavior is then to transform around **one hundred files per second**. If it's closer to one file per hundred seconds, see the next section... 
 
 __Note:__ the test XML documents present in the sub-directory ```Samples``` are dummy documents with realistic publisher structures but random content (due to copyrights).
 
 #### Usual troubleshooting when using stylesheets only 
 
-It is crutial to avoid online fetching of resources - for thousand of files, online fetching will lead to abyssal runtime and something unusable. 
+It is crucial to avoid online fetching of resources - for thousands of files, online fetching will lead to extremely slow runtime and something unusable. 
 
 Remember that XML is from the W3C, so anything simple is by default complicated, painful and inefficient. In particular, pay attention to:
 
