@@ -25,7 +25,7 @@ With Pub2TEI, it is thus possible to obtain TEI XML documents with at least the 
 The following publisher's XML formats should be properly processed: 
 
 - BMJ: metadata, header, bibliography, body
-- Elsevier (journals and conferences): metadata, header, bibliography, body
+- Elsevier (journals and conferences): metadata, header, bibliography, body (coverage improved with PR #35, but some wrappers and namespaces may still yield partial extraction) 
 - IOP: metadata, header, bibliography. 
 - NPG (Nature): metadata, header, bibliography, body 
 - NLM/JATS: metadata, header, bibliography, body 
