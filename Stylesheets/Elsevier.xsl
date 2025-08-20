@@ -15,7 +15,7 @@
     
     <xsl:output encoding="UTF-8" method="xml"/>
 <!-- 1) Unwrap any SVAPI wrapper by picking the first convertible block -->
-<xsl:template match="*[local-name()='full-text-retrieval-response']">
+<xsl:template match="*[local-name()='full-text-retrieval-response']"> <!-- The '*' stands for any element.--> 
     <xsl:choose>
         <!-- a) Direct JATS <article> (modern JATS files) -->
         <xsl:when test=".//*[local-name()='article']">
