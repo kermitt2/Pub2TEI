@@ -64,7 +64,7 @@
     </xsl:choose>
     </xsl:template>
 
-    <!-- 2.7) Handle abstracts-retrieval-response wrapper (namespace-agnostic) TODO: perhaps there might be a better way to handle this. -->
+    <!-- 2.7) Handle abstracts-retrieval-response wrapper (namespace-agnostic) -->
     <xsl:template match="*[local-name()='abstracts-retrieval-response']">
         <xsl:choose>
             <!-- Prefer embedded JATS article if present -->
