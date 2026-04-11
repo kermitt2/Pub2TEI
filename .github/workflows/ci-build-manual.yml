@@ -7,7 +7,7 @@ on:
         type: string
         description: Docker image suffix (e.g. dev, prod, feature1)
         required: false
-    
+
 
 jobs:
   build:
@@ -15,10 +15,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Set up JDK 11
+    - name: Set up JDK 21
       uses: actions/setup-java@v4
       with:
-        java-version: '11'
+        java-version: '21'
         distribution: 'temurin'
         cache: 'gradle'
     - name: Build with Gradle
@@ -31,12 +31,30 @@ jobs:
     steps:
       - name: Create more disk space
         run: |
-          sudo rm -rf /usr/share/dotnet 
-          sudo rm -rf /opt/ghc 
-          sudo rm -rf "/usr/local/share/boost" 
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "/usr/local/share/boost"
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
           sudo rm -rf /opt/hostedtoolcache
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Compute Pub2TEI version
+        id: version
+        run: |
+          git fetch --tags --force
+          echo "value=$(git describe --tags --always --first-parent)" >> "$GITHUB_OUTPUT"
+      - name: Compute Docker tag
+        id: tag
+        env:
+          SUFFIX: ${{ github.event.inputs.suffix }}
+        run: |
+          if [ -n "$SUFFIX" ]; then
+            echo "value=latest-develop-${SUFFIX}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=latest-develop" >> "$GITHUB_OUTPUT"
+          fi
       - name: Build and push
         id: docker_build
         uses: mr-smithers-excellent/docker-build-push@v6
@@ -47,7 +65,26 @@ jobs:
           image: lfoppiano/pub2tei
           registry: docker.io
           pushImage: true
+          buildArgs: PUB2TEI_VERSION=${{ steps.version.outputs.value }}
           tags: |
-            latest-develop${{ github.event.inputs.suffix != '' && '-' || '' }}${{ github.event.inputs.suffix }}
-      - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
+            ${{ steps.tag.outputs.value }}
+      - name: Write Docker image summary
+        if: always()
+        env:
+          IMAGE_NAME: lfoppiano/pub2tei
+          DOCKER_TAG: ${{ steps.tag.outputs.value }}
+          PUB2TEI_VERSION: ${{ steps.version.outputs.value }}
+          DOCKER_DIGEST: ${{ steps.docker_build.outputs.digest }}
+        run: |
+          {
+            echo "## Pub2TEI Docker image"
+            echo ""
+            echo "| Field   | Value |"
+            echo "|---------|-------|"
+            echo "| Image   | \`${IMAGE_NAME}\` |"
+            echo "| Tag     | \`${DOCKER_TAG}\` |"
+            echo "| Version | \`${PUB2TEI_VERSION}\` |"
+            echo "| Digest  | \`${DOCKER_DIGEST}\` |"
+            echo ""
+            echo "Pull with: \`docker pull ${IMAGE_NAME}:${DOCKER_TAG}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
