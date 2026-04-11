@@ -23,9 +23,9 @@ consolidation:
     url: "https://cloud.science-miner.com/glutton"
     #url: "http://localhost:8080" 
   crossref:
-    mailto: 
+    mailto:
     # to use crossref web API, you need normally to use it politely and to indicate an email address here, e.g. 
-    mailto: "toto@titi.com"
+#    mailto: "toto@titi.com"
     token:
     # to use Crossref metadata plus service (available by subscription) for better CrossRef API performance
     #token: "yourmysteriouscrossrefmetadataplusauthorizationtokentobeputhere"
