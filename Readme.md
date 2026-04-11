@@ -54,13 +54,13 @@ The simplest way to run the converter is to use the __docker image__ and the web
 Start the Pub2TEI service as follow:
 
 ```console
-docker run --rm --gpus all --init --ulimit core=0 -p 8060:8060 grobid/pub2tei:0.2
+docker run --rm --gpus all --init --ulimit core=0 -p 8060:8060 grobid/pub2tei:0.3
 ```
 
 As visible, by default, the service is started on the port `:8060`, which can be changed as follow for port `:8080`:
 
 ```console
-docker run --rm --gpus all --init --ulimit core=0 -p 8080:8060 grobid/pub2tei:0.2
+docker run --rm --gpus all --init --ulimit core=0 -p 8080:8060 grobid/pub2tei:0.3
 ``` 
 
 ## Python client
@@ -141,9 +141,13 @@ It is recommended to use the Docker image, which is the easiest way to run Pub2T
 
 ### Requirements
 
-As a first requirement, you need to first install and build GROBID as described [here](https://grobid.readthedocs.io/en/latest/Install-Grobid/).
+- **JDK 21 or higher.** The build uses Gradle 9 (via the wrapper) and targets the Java 21 toolchain.
+- **GROBID 0.9.0**, installed and built locally as described [here](https://grobid.readthedocs.io/en/latest/Install-Grobid/). Pub2TEI needs both the `grobid-home` directory at runtime *and* the `grobid-core-0.9.0.jar` at build time.
+- **`localLibs/grobid-core-0.9.0.jar`** must be present in the Pub2TEI working tree before running Gradle. GROBID is not published to Maven Central and the former `grobid.s3.eu-west-1.amazonaws.com` Maven repository is no longer available, so the `grobid-core` fat jar is consumed directly from `localLibs/`. After building GROBID, copy the fat jar into Pub2TEI's `localLibs/`:
 
-You need JDK 1.11 or higher to build the project.
+```console
+cp ../grobid/grobid-core/build/libs/grobid-core-0.9.0-onejar.jar Pub2TEI/localLibs/grobid-core-0.9.0.jar
+```
 
 ### Install and build the library
 
@@ -152,10 +156,10 @@ Install Pub2TEI:
 ```console
 git clone https://github.com/kermitt2/Pub2TEI
 cd Pub2TEI
-./gradlew clean install 
+./gradlew clean install
 ```
 
-Be sure to indicate the correct installation location of the `grobid-home` directory, for example: 
+Be sure to indicate the correct installation location of the `grobid-home` directory in `resources/config/config.yml`, for example:
 
 ```yaml
 grobidHome: ../grobid/grobid-home
@@ -174,7 +178,7 @@ By default, the server uses port `:8060`, this can be changed in the configurati
 From a local deployment, under the project repository `Pub2TEI/`: 
 
 ```console
-docker build -t grobid/pub2tei:0.2 --build-arg PUB2TEI_VERSION=0.2 --file Dockerfile .
+docker build -t grobid/pub2tei:0.3 --build-arg PUB2TEI_VERSION=0.3 --file Dockerfile .
 ```
 
 ## Only using the stylesheets
@@ -183,19 +187,27 @@ This legacy usage should be normally avoided, because document enhancements and 
 
 ### Requirement
 
-The minimum requirement is an XSLT __2.0__ processor. For convenience, we package `saxon9he.jar` in the project.
+The minimum requirement is an XSLT __2.0__ processor. For convenience, we package `saxon9he.jar` under `localLibs/` in the project.
 
 ### Usage
 
-The starting point of the transformation process is the style sheet ```Publisher.xsl```.
+The starting point of the transformation process is the style sheet ```Stylesheets/Publishers.xsl```.
 
-The resulting TEI documents follow a TEI customisation documented under the sub-directory ```Schemas```. 
+The resulting TEI documents follow a TEI customisation documented under the sub-directory ```Schemas```.
 
 #### Example with saxon9
 
-Here is a usage example with the Open Source Saxon 9 Home Edition (java). You can download more recent `saxon_he` versions [here](https://github.com/Saxonica/Saxon-HE) (for convenience, one is included in the `Samples/` directory):
+Here is a usage example with the Open Source Saxon 9 Home Edition (java). You can download more recent `saxon_he` versions [here](https://github.com/Saxonica/Saxon-HE) (for convenience, one is included under `localLibs/`):
 
-> java -jar localLibs/saxon9he.jar -s:Samples/TestPubInput/BMJ/bmj_sample.xml -xsl:Stylesheets/Publishers.xsl -o:out.tei.xml -dtd:off -a:off -expand:off --parserFeature?uri=http%3A//apache.org/xml/features/nonvalidating/load-external-dtd:false -t 
+```console
+java -jar localLibs/saxon9he.jar \
+  -s:Samples/TestPubInput/BMJ/bmj_sample.xml \
+  -xsl:Stylesheets/Publishers.xsl \
+  -o:out.tei.xml \
+  -dtd:off -a:off -expand:off \
+  --parserFeature?uri=http%3A//apache.org/xml/features/nonvalidating/load-external-dtd:false \
+  -t
+```
 
 The command will apply the Pub2TEI style sheets to a NLM file and produce a TEI `out.tei.xml`. You can remove the `-t` option for not producing the trace information. 
 
