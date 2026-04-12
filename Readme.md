@@ -123,8 +123,7 @@ Response status codes:
 |     HTTP Status code |   reason                                               |
 |---                   |---                                                     |
 |         200          |     Successful operation.                              |
-|         204          |     Process was completed, but no content could be provided |
-|         400          |     Wrong request, missing parameters, missing header  |
+|         400          |     Wrong request, missing parameters, missing header, or input XML format not recognized  |
 |         500          |     Indicate an internal service error, further described by a provided message           |
 
 Assuming that the service is started on the default port `:8060` of a local machine, here is a curl example: 

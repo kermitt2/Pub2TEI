@@ -53,8 +53,11 @@ public class ProcessFile {
             DocumentProcessor documentProcessor = new DocumentProcessor(serviceConfiguration);
             String result = documentProcessor.processXML(inputStream, segmentSentences, refine, consolidateReferences, generateIDs);
 
-            if (result == null || result.length() == 0) {
-                response = Response.status(Response.Status.NO_CONTENT).build();
+            if (StringUtils.isBlank(result)) {
+                response = Response.status(Response.Status.BAD_REQUEST)
+                        .entity("The input XML could not be converted: format not recognized or invalid")
+                        .header(HttpHeaders.CONTENT_TYPE, MediaType.TEXT_PLAIN + "; charset=UTF-8")
+                        .build();
             } else {
                 response = Response.status(Response.Status.OK)
                         .entity(result)

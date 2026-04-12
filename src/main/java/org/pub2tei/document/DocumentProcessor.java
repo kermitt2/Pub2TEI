@@ -152,7 +152,8 @@ public class DocumentProcessor {
             //tei = restoreDomParserAttributeBug(tei); 
 
         } catch (final Exception exp) {
-            LOGGER.error("An error occured while processing the tei document", exp);
+            LOGGER.error("An error occurred while processing the tei document", exp);
+            return null;
         }
 
         return tei;
@@ -184,13 +185,8 @@ public class DocumentProcessor {
         if (inputStream == null) 
             return null;
 
-        String tei = null;
-        try {
-            tei = this.pub2TEIProcessor.transform(inputStream);
-            tei = processTEI(tei, segmentSentences, refine, consolidateReferences, generateIDs);
-        } catch (final Exception exp) {
-            LOGGER.error("An error occured while processing the XML input stream", exp);
-        } 
+        String tei = this.pub2TEIProcessor.transform(inputStream);
+        tei = processTEI(tei, segmentSentences, refine, consolidateReferences, generateIDs);
         return tei;
     }
 

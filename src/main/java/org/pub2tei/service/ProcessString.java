@@ -59,7 +59,9 @@ public class ProcessString {
             String retValString = documentProcessor.processXML(inputStream, segmentSentences, refine, consolidateReferences, generateIDs);
 
             if (!isResultOK(retValString)) {
-                response = Response.status(Response.Status.NO_CONTENT).build();
+                response = Response.status(Response.Status.BAD_REQUEST)
+                        .entity("The input could not be converted: format not recognized or invalid")
+                        .build();
             } else {
                 response = Response.status(Response.Status.OK).entity(retValString).type(MediaType.TEXT_PLAIN).build();
             }
