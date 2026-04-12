@@ -110,21 +110,21 @@ Note that the consolidation is realized with the consolidation service indicated
 
 Transform a publisher XML into TEI XML format, with optional enhancements.
 
-|  method   |  request type         |  response type       | parameters              |  requirement  | description                                                                                                                                                                                                                                  |
-|---        |---                    |---                   |-------------------------|---            |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| POST      | `multipart/form-data` | `application/xml`    | `input`                 | required      | publisher XML file to be processed                                                                                                                                                                                                           |
-|           |                       |                      | `segmentSentences`      | optional      | Boolean, if true the paragraphs structures in the resulting TEI will be further segmented into sentence elements <s>                                                                                                                         |
-|           |                       |                      | `grobidRefine`          | optional      | Boolean, if true the raw affiliations and raw bibliographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML                                                          |
-|           |                       |                      | `consolidateReferences` | optional      | Consolidate all the bibliographical references, `consolidateReferences` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
-|           |                       |                      | `generateIDs`           | optional      | Inject the attribute `xml:id` in the textual elements (`title`, `note`, `term`, `keywords`, `p`, `s`)                                                                                                                                                                                     |
+| method   | request type          | response type      | parameters              | requirement   | description                                                                                                                                                                                                                                   |
+|----------|-----------------------|--------------------|-------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| POST     | `multipart/form-data` | `application/xml`  | `input`                 | required      | publisher XML file to be processed                                                                                                                                                                                                            |
+|          |                       |                    | `segmentSentences`      | optional      | Boolean, if true the paragraphs structures in the resulting TEI will be further segmented into sentence elements <s>                                                                                                                          |
+|          |                       |                    | `grobidRefine`          | optional      | Boolean, if true the raw affiliations and raw bibliographical reference strings will be parsed with Grobid and the resulting structured information added in the transformed TEI XML                                                          |
+|          |                       |                    | `consolidateReferences` | optional      | Consolidate all the bibliographical references, `consolidateReferences` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
+|          |                       |                    | `generateIDs`           | optional      | Inject the attribute `xml:id` in the textual elements (`title`, `note`, `term`, `keywords`, `p`, `s`)                                                                                                                                         |
 
 Response status codes:
 
-|     HTTP Status code |   reason                                               |
-|---                   |---                                                     |
-|         200          |     Successful operation.                              |
-|         400          |     Wrong request, missing parameters, missing header, or input XML format not recognized  |
-|         500          |     Indicate an internal service error, further described by a provided message           |
+| HTTP Status code | reason                                                                                  |
+|------------------|-----------------------------------------------------------------------------------------|
+| 200              | Successful operation.                                                                   |
+| 400              | Wrong request, missing parameters, missing header, or input XML format not recognized   |
+| 500              | Indicate an internal service error, further described by a provided message             |
 
 Assuming that the service is started on the default port `:8060` of a local machine, here is a curl example: 
 

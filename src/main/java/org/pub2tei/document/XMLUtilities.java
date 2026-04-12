@@ -185,7 +185,7 @@ public class XMLUtilities {
     }
 
     /**
-     * Instanciate a DOM XML parser factory with reasonable default values (no validation, 
+ * Instantiate a DOM XML parser factory with reasonable default values (no validation,
      * no DTD loading, etc.).
      **/ 
     public static DocumentBuilderFactory getReasonableDocumentBuilderFactory() {
@@ -208,7 +208,7 @@ public class XMLUtilities {
      * The sentence segmenter to be used is the one defined in the Grobid configuration
      * file present in the Grobid home indicated by the Pub2TEI configuration. 
      * 
-     * Currently the choices are a slightly improved Pragmatic Segmenter (higher quality 
+     * Currently, the choices are a slightly improved Pragmatic Segmenter (higher quality
      * more languages supported, but slower) and the OpenNLP sentence segmenter (very fast, 
      * lower quality, and designed for English only).
      * 
@@ -229,26 +229,70 @@ public class XMLUtilities {
 
         for (int i = 0; i < nbChildren; i++) {
             final Node n = newChildren.get(i);
-            if ( (n.getNodeType() == Node.ELEMENT_NODE) && 
-                 (textualElements.contains(n.getNodeName())) ) {
+            if (n.getNodeType() == Node.ELEMENT_NODE && textualElements.contains(n.getNodeName())) {
 
-                // text content
+                // text content — build two parallel buffers of equal length:
+                // textBuffer: full XML (used for splitting)
+                // cleanBuffer: ref/hi-ref elements replaced with spaces (used for detection)
                 StringBuilder textBuffer = new StringBuilder();
+                StringBuilder cleanBuffer = new StringBuilder();
                 NodeList childNodes = n.getChildNodes();
                 for(int y=0; y<childNodes.getLength(); y++) {
                     Node item = childNodes.item(y);
                     String serializedString = serialize(doc, item);
+                    // Strip trailing newlines injected by the indenting Transformer.
+                    // Only strip '\n', NOT spaces: text nodes may have meaningful trailing spaces.
+                    if (serializedString == null) {
+                        serializedString = "";
+                    }
+                    while (serializedString.endsWith("\n")) {
+                        serializedString = serializedString.substring(0, serializedString.length() - 1);
+                    }
                     if (y > 0 && StringUtils.isNotEmpty(serializedString)) {
                         String firstChar = "" + serializedString.charAt(0);
                         //We might need to use TextUtilities.fullPunctuation
                         if (!Pattern.matches("\\p{Punct}", firstChar)) {
                             textBuffer.append(" ");
+                            cleanBuffer.append(" ");
                         }
                     }
                     textBuffer.append(serializedString);
+                    boolean isRefElement = item.getNodeType() == Node.ELEMENT_NODE
+                            && serializedString.contains("<ref") && serializedString.contains("</ref>");
+                    if (isRefElement) {
+                        cleanBuffer.append(" ".repeat(serializedString.length()));
+                    } else {
+                        cleanBuffer.append(serializedString);
+                    }
                 }
                 String text = textBuffer.toString();
-                List<OffsetPosition> theSentenceBoundaries = SentenceUtilities.getInstance().runSentenceDetection(text);
+                String cleanText = cleanBuffer.toString();
+                List<OffsetPosition> theSentenceBoundaries = SentenceUtilities.getInstance().runSentenceDetection(cleanText);
+
+                // Extend each sentence boundary to absorb trailing ref-replacement regions.
+                // OpenNLP splits on cleanText where refs were replaced by spaces, so the ref
+                // positions may fall in the gap between two sentence boundaries.
+                for (int si = 0; si < theSentenceBoundaries.size(); si++) {
+                    OffsetPosition pos = theSentenceBoundaries.get(si);
+                    int nextStart = (si + 1 < theSentenceBoundaries.size())
+                            ? theSentenceBoundaries.get(si + 1).start : text.length();
+                    if (pos.end < nextStart) {
+                        boolean allSpacesInClean = true;
+                        boolean hasRefReplacement = false;
+                        for (int ci = pos.end; ci < nextStart; ci++) {
+                            if (cleanText.charAt(ci) != ' ') {
+                                allSpacesInClean = false;
+                                break;
+                            }
+                            if (text.charAt(ci) != ' ') {
+                                hasRefReplacement = true;
+                            }
+                        }
+                        if (allSpacesInClean && hasRefReplacement) {
+                            pos.end = nextStart;
+                        }
+                    }
+                }
 
                 // we're making a first pass to ensure that there is no element broken by the segmentation
                 List<String> sentences = new ArrayList<>();
@@ -282,6 +326,8 @@ public class XMLUtilities {
                         toConcatenate = new ArrayList<>();
                     }
                 }
+
+                sentences = reattachLeadingRefs(sentences);
 
                 List<Node> newNodes = new ArrayList<>();
                 for(String sent : sentences) {
@@ -328,6 +374,88 @@ public class XMLUtilities {
                 }
             } 
         }
+    }
+
+    private static List<String> reattachLeadingRefs(List<String> sentences) {
+        if (sentences == null || sentences.size() <= 1)
+            return sentences;
+
+        List<String> result = new ArrayList<>(sentences);
+        int i = 1;
+        while (i < result.size()) {
+            String current = result.get(i);
+            String inner = stripSWrapper(current);
+            if (inner == null) {
+                i++;
+                continue;
+            }
+
+            String leadingRef = extractLeadingRefBlock(inner);
+            if (leadingRef == null) {
+                i++;
+                continue;
+            }
+
+            String previous = result.get(i - 1);
+            String prevInner = stripSWrapper(previous);
+            if (prevInner == null) {
+                i++;
+                continue;
+            }
+
+            String newPrevious = rewrapSentence(previous, prevInner + leadingRef);
+            String remainder = inner.substring(leadingRef.length()).trim();
+
+            if (remainder.isEmpty()) {
+                result.set(i - 1, newPrevious);
+                result.remove(i);
+            } else {
+                result.set(i - 1, newPrevious);
+                result.set(i, rewrapSentence(current, remainder));
+                i++;
+            }
+        }
+        return result;
+    }
+
+    private static String extractLeadingRefBlock(String inner) {
+        if (inner == null || inner.isEmpty()) return null;
+        int offset = 0;
+        while (offset < inner.length() && Character.isWhitespace(inner.charAt(offset))) {
+            offset++;
+        }
+        if (offset >= inner.length()) return null;
+        String fromStart = inner.substring(offset);
+
+        if (fromStart.startsWith("<ref")) {
+            int closeIdx = fromStart.indexOf("</ref>");
+            if (closeIdx >= 0) {
+                return inner.substring(0, offset + closeIdx + "</ref>".length());
+            }
+        }
+
+        if (fromStart.startsWith("<hi")) {
+            int closeIdx = fromStart.indexOf("</hi>");
+            if (closeIdx >= 0 && fromStart.substring(0, closeIdx).contains("<ref")) {
+                return inner.substring(0, offset + closeIdx + "</hi>".length());
+            }
+        }
+
+        return null;
+    }
+
+    private static String stripSWrapper(String fullSent) {
+        if (fullSent == null) return null;
+        int start = fullSent.indexOf('>');
+        int end = fullSent.lastIndexOf("</s>");
+        if (start < 0 || end < 0 || start + 1 > end) return null;
+        return fullSent.substring(start + 1, end);
+    }
+
+    private static String rewrapSentence(String original, String newInner) {
+        int closeAngle = original.indexOf('>');
+        String openTag = original.substring(0, closeAngle + 1);
+        return openTag + newInner + "</s>";
     }
 
     public static String serialize(org.w3c.dom.Document doc, Node node) {

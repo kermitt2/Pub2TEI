@@ -1,0 +1,1340 @@
+<!DOCTYPE article
+        PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.2 20190208//EN"
+        "JATS-archivearticle1-mathml3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"
+         article-type="research-article"><?properties open_access?>
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="nlm-ta">JAMA Netw Open</journal-id>
+            <journal-id journal-id-type="iso-abbrev">JAMA Netw Open</journal-id>
+            <journal-id journal-id-type="pmc">JAMA Netw Open</journal-id>
+            <journal-title-group>
+                <journal-title>JAMA Network Open</journal-title>
+            </journal-title-group>
+            <issn pub-type="epub">2574-3805</issn>
+            <publisher>
+                <publisher-name>American Medical Association</publisher-name>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="pmid">31577358</article-id>
+            <article-id pub-id-type="pmc">6777396</article-id>
+            <article-id pub-id-type="doi">10.1001/jamanetworkopen.2019.12416</article-id>
+            <article-id pub-id-type="publisher-id">zoi190474</article-id>
+            <article-categories>
+                <subj-group subj-group-type="category" specific-use="electronic">
+                    <subject>Research</subject>
+                </subj-group>
+                <subj-group subj-group-type="heading">
+                    <subject>Original Investigation</subject>
+                </subj-group>
+                <subj-group subj-group-type="online-only">
+                    <subject>Online Only</subject>
+                </subj-group>
+                <subj-group subj-group-type="subject-area">
+                    <subject>Oncology</subject>
+                </subj-group>
+            </article-categories>
+            <title-group>
+                <article-title>Common Secondary Genomic Variants Associated With Advanced Epithelioid
+                    Hemangioendothelioma
+                </article-title>
+                <alt-title alt-title-type="headline">Secondary Genomic Variants Associated With Epithelioid
+                    Hemangioendothelioma
+                </alt-title>
+                <alt-title alt-title-type="running-head">Secondary Genomic Variants Associated With Epithelioid
+                    Hemangioendothelioma
+                </alt-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Seligson</surname>
+                        <given-names>Nathan D.</given-names>
+                    </name>
+                    <degrees>PharmD</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff1">
+                        <sup>1</sup>
+                    </xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Awasthi</surname>
+                        <given-names>Achal</given-names>
+                    </name>
+                    <degrees>MS</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff2">
+                        <sup>2</sup>
+                    </xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Millis</surname>
+                        <given-names>Sherri Z.</given-names>
+                    </name>
+                    <degrees>PhD</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff3">
+                        <sup>3</sup>
+                    </xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Turpin</surname>
+                        <given-names>Brian K.</given-names>
+                    </name>
+                    <degrees>DO</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff4">
+                        <sup>4</sup>
+                    </xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Meyer</surname>
+                        <given-names>Christian F.</given-names>
+                    </name>
+                    <degrees>MD</degrees>
+                    <degrees>PhD</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff5">
+                        <sup>5</sup>
+                    </xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Grand'Maison</surname>
+                        <given-names>Anne</given-names>
+                    </name>
+                    <degrees>MD</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff6">
+                        <sup>6</sup>
+                    </xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Liebner</surname>
+                        <given-names>David A.</given-names>
+                    </name>
+                    <degrees>MD</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff2">
+                        <sup>2</sup>
+                    </xref>
+                    <xref ref-type="aff" rid="zoi190474aff7">
+                        <sup>7</sup>
+                    </xref>
+                </contrib>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Hays</surname>
+                        <given-names>John L.</given-names>
+                    </name>
+                    <degrees>MD</degrees>
+                    <degrees>PhD</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff7">
+                        <sup>7</sup>
+                    </xref>
+                    <xref ref-type="aff" rid="zoi190474aff8">
+                        <sup>8</sup>
+                    </xref>
+                </contrib>
+                <contrib contrib-type="author" corresp="yes">
+                    <name>
+                        <surname>Chen</surname>
+                        <given-names>James L.</given-names>
+                    </name>
+                    <degrees>MD</degrees>
+                    <xref ref-type="aff" rid="zoi190474aff2">
+                        <sup>2</sup>
+                    </xref>
+                    <xref ref-type="aff" rid="zoi190474aff7">
+                        <sup>7</sup>
+                    </xref>
+                </contrib>
+            </contrib-group>
+            <aff id="zoi190474aff1"><label>1</label>The Ohio State University Wexner Medical Center and Comprehensive
+                Cancer Center, The Ohio State University, Columbus
+            </aff>
+            <aff id="zoi190474aff2"><label>2</label>Department of Biomedical Informatics, The Ohio State University,
+                Columbus
+            </aff>
+            <aff id="zoi190474aff3"><label>3</label>Foundation Medicine Inc, Cambridge, Massachusetts
+            </aff>
+            <aff id="zoi190474aff4"><label>4</label>Division of Pediatric Hematology/Oncology, Cincinnati Children's
+                Hospital Medical Center, Cincinnati, Ohio
+            </aff>
+            <aff id="zoi190474aff5"><label>5</label>Division of Medical Oncology, Johns Hopkins Medical Center,
+                Baltimore, Maryland
+            </aff>
+            <aff id="zoi190474aff6"><label>6</label>Department of Medical Oncology, Roswell Park Cancer Center, Buffalo,
+                New York
+            </aff>
+            <aff id="zoi190474aff7"><label>7</label>Division of Medical Oncology, Department of Internal Medicine, The
+                Ohio State University, Columbus
+            </aff>
+            <aff id="zoi190474aff8"><label>8</label>Division of Gynecologic Oncology, Department of Obstetrics and
+                Gynecology, The Ohio State University, Columbus
+            </aff>
+            <author-notes>
+                <title>Article Information</title>
+                <p>
+                    <bold>Accepted for Publication:</bold>
+                    August 12, 2019.
+                </p>
+                <p content-type="published-online">
+                    <bold>Published:</bold>
+                    October 2, 2019. doi:
+                    <uri content-type="doi">10.1001/jamanetworkopen.2019.12416</uri>
+                </p>
+                <p content-type="open-access-note">
+                    <bold>Open Access:</bold>
+                    This is an open access article distributed under the terms of the <ext-link ext-link-type="uri"
+                                                                                                xlink:href="https://jamanetwork.com/journals/jamanetworkopen/pages/instructions-for-authors#SecOpenAccess">
+                    CC-BY License</ext-link>. &#x000a9; 2019 Seligson ND et al. <italic>JAMA Network Open</italic>.
+                </p>
+                <corresp id="zoi190474cor1">
+                    <bold>Corresponding Author:</bold>
+                    James L. Chen, MD, Division of Medical Oncology, Departments of Internal Medicine and Biomedical
+                    Informatics, The Ohio State University, A445A, 320 W 10th Ave, Columbus, OH 43210 (<email
+                        xlink:href="james.chen@osumc.edu">james.chen@osumc.edu</email>).
+                </corresp>
+                <p content-type="author-contributions">
+                    <bold>Author Contributions:</bold>
+                    Drs Seligson and Chen had full access to all of the data in the study and take responsibility for
+                    the integrity of the data and the accuracy of the data analysis.
+                </p>
+                <p>
+                    <italic>Concept and design:</italic>
+                    Seligson, Awasthi, Millis, Hays, Chen.
+                </p>
+                <p>
+                    <italic>Acquisition, analysis, or interpretation of data:</italic>
+                    All authors.
+                </p>
+                <p>
+                    <italic>Drafting of the manuscript:</italic>
+                    Seligson, Awasthi, Chen.
+                </p>
+                <p>
+                    <italic>Critical revision of the manuscript for important intellectual content:</italic>
+                    Seligson, Millis, Turpin, Meyer, Grand'Maison, Liebner, Hays, Chen.
+                </p>
+                <p>
+                    <italic>Statistical analysis:</italic>
+                    Seligson, Awasthi, Millis, Chen.
+                </p>
+                <p>
+                    <italic>Administrative, technical, or material support:</italic>
+                    Seligson, Millis, Meyer, Hays, Chen.
+                </p>
+                <p>
+                    <italic>Supervision:</italic>
+                    Seligson, Grand'Maison, Liebner, Hays, Chen.
+                </p>
+                <p content-type="COI-statement">
+                    <bold>Conflict of Interest Disclosures:</bold>
+                    Dr Millis reported employment by Foundation Medicine outside the submitted work. Dr Meyer reported
+                    serving on the advisory board of Bayer Pharmaceuticals and serving as a speaker for Novartis
+                    regarding pazopanib outside the submitted work. Dr Liebner reported personal fees from Foundation
+                    Medicine outside the submitted work. Dr Chen reported receiving personal fees from Foundation
+                    Medicine outside the submitted work. No other disclosures were reported.
+                </p>
+            </author-notes>
+            <pub-date pub-type="epub" iso-8601-date="2019-10-02T10:00">
+                <day>2</day>
+                <month>10</month>
+                <year>2019</year>
+            </pub-date>
+            <pub-date pub-type="collection">
+                <month>10</month>
+                <year>2019</year>
+            </pub-date>
+            <pub-date pub-type="pmc-release">
+                <day>2</day>
+                <month>10</month>
+                <year>2019</year>
+            </pub-date><!-- PMC Release delay is 0 months and
+						0 days and was based on the <pub-date
+						pub-type="epub"/>. -->
+            <volume>2</volume>
+            <issue>10</issue>
+            <elocation-id>e1912416</elocation-id>
+            <history>
+                <date date-type="received">
+                    <day>4</day>
+                    <month>6</month>
+                    <year>2019</year>
+                </date>
+                <date date-type="accepted">
+                    <day>12</day>
+                    <month>8</month>
+                    <year>2019</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Copyright 2019 Seligson ND et al. <italic>JAMA Network Open</italic>.
+                </copyright-statement>
+                <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by/4.0/">
+                    <license-p>This is an open access article distributed under the terms of the CC-BY License.
+                    </license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="pdf-version" xlink:href="jamanetwopen-2-e1912416.pdf">jamanetwopen-2-e1912416.pdf
+            </self-uri>
+            <self-uri content-type="silverchair"
+                      xlink:href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/10.1001/jamanetworkopen.2019.12416"/>
+            <abstract abstract-type="key-points">
+                <title>Key Points</title>
+                <sec id="ab-zoi190474-1">
+                    <title>Question</title>
+                    <p>Can next-generation sequencing reveal rationale for the dichotomous biological activity of
+                        epithelioid hemangioendothelioma (EHE) while illuminating potentially actionable alterations?
+                    </p>
+                </sec>
+                <sec id="ab-zoi190474-2">
+                    <title>Findings</title>
+                    <p>In a cross-sectional study of next-generation sequencing results collected from 49 participants
+                        diagnosed with EHE, more than half of patients with EHE profiled exhibited pathogenic genomic
+                        variants in addition to the <italic>WWTR1-CAMTA1</italic> fusion, with 18.4% of participants
+                        exhibiting a potentially targetable variant. Participants with stage III/IV EHE were more likely
+                        to exhibit a secondary pathogenic variant.
+                    </p>
+                </sec>
+                <sec id="ab-zoi190474-3">
+                    <title>Meaning</title>
+                    <p>Next-generation sequencing may identify secondary genomic variants that are associated with EHE
+                        aggressiveness; additionally, these variants may represent potential therapeutic targets.
+                    </p>
+                </sec>
+            </abstract>
+            <abstract abstract-type="teaser">
+                <p>This cross-sectional study characterizes secondary genomic alterations in patients with epithelioid
+                    hemangioendothelioma and their association with clinical outcomes.
+                </p>
+            </abstract>
+            <abstract>
+                <sec id="ab-zoi190474-4">
+                    <title>Importance</title>
+                    <p>Epithelioid hemangioendothelioma (EHE) is a rare, malignant vascular sarcoma characterized in
+                        most cases by a <italic>WWTR1</italic>-<italic>CAMTA1</italic> fusion. The clinical course of
+                        EHE exhibits a dual nature. The condition is often indolent but can rapidly grow and metastasize
+                        unpredictably. No biomarkers to date are available to predict this phenotype. The hypothesis of
+                        this study was that better defining the genomic landscape of EHE using next-generation
+                        sequencing could offer additional therapies and insight into clinical outcomes.
+                    </p>
+                </sec>
+                <sec id="ab-zoi190474-5">
+                    <title>Objective</title>
+                    <p>To characterize secondary EHE genomic alterations and their association with clinical outcomes.
+                    </p>
+                </sec>
+                <sec id="ab-zoi190474-6">
+                    <title>Design, Setting, and Participants</title>
+                    <p>Multicenter, cross-sectional, retrospective study of next-generation sequencing results collected
+                        from participants diagnosed with EHE. Data were abstracted between May 1, 2013, and May 31,
+                        2019. This analysis was conducted from January through June 2019. Summary genomic data were
+                        provided by commercial genomic testing companies.
+                    </p>
+                </sec>
+                <sec id="ab-zoi190474-7">
+                    <title>Main Outcomes and Measures</title>
+                    <p>Presence or absence of secondary pathogenic genomic variants and their association with disease
+                        stage and clinical features.
+                    </p>
+                </sec>
+                <sec id="ab-zoi190474-8">
+                    <title>Results</title>
+                    <p>A total of 49 participants with EHE were assessed for the presence or absence of secondary
+                        genomic variants. Of these, 32 (65.3%) were female; the mean (SD) age at diagnosis was 49.9
+                        (18.3) years (range, 11-81 years). In all, 46 participants (93.9%) had confirmed <italic>
+                            WWTR1-CAMTA1
+                        </italic> fusion; 26 participants (57.1%) exhibited a pathogenic genomic variant secondary to
+                        the <italic>WWTR1-CAMTA1</italic> fusion; and 9 participants (18.4%) exhibited potentially
+                        targetable genomic variants. Commonly altered genes included <italic>CDKN2A/B</italic>, <italic>
+                            RB1</italic>, <italic>APC</italic>, and <italic>FANCA</italic>. Participants older than 45
+                        years at diagnosis had an increased prevalence of secondary genomic variants that was not
+                        statistically significant (65.6% vs 38.5%; difference, 27.1%; 95% CI, &#x02212;3.5% to
+                        58.0%; <italic>P</italic>&#x02009;=&#x02009;.16) and were more likely to have a clinically
+                        targetable variant (28.1% vs 0%; difference, 28.1%; 95% CI, 11.2%-40.2%; <italic>P</italic>&#x02009;=&#x02009;.03).
+                        In 14 participants with clinical data available, those with stage III/IV EHE were more likely to
+                        exhibit a secondary pathogenic genomic variant (80% vs 0%; difference, 80%; 95% CI, 55.2%-100%; <italic>
+                            P</italic>&#x02009;=&#x02009;.006). Participants with stage III/IV EHE were diagnosed at an
+                        older age (mean [SD] age, 54.6 [14.1] years vs 31.7 [16.0] years; <italic>P</italic>&#x02009;=&#x02009;.05)
+                        and had elevated <italic>WWTR1-CAMTA1</italic> fusion expression that was not statistically
+                        significant (mean [SD] expression, 677 [706] copies vs 231 [213] copies; <italic>P</italic>&#x02009;=&#x02009;.20).
+                    </p>
+                </sec>
+                <sec id="ab-zoi190474-9">
+                    <title>Conclusions and Relevance</title>
+                    <p>Although EHE exhibits few secondary genomic variants, presence of key secondary variants may be
+                        prognostic for aggressive EHE. Further research is needed to confirm this finding and determine
+                        whether more intensive upfront treatment is necessary for these patients.
+                    </p>
+                </sec>
+            </abstract>
+        </article-meta>
+    </front>
+    <body>
+        <sec id="H1-1-ZOI190474">
+            <title>Introduction</title>
+            <p>Epithelioid hemangioendothelioma (EHE) is a rare vascular sarcoma with a prevalence of approximately 1
+                per 1&#x02009;000&#x02009;000 persons.
+                <sup>
+                    <xref rid="zoi190474r1" ref-type="bibr">1</xref>
+                </sup>
+                A hallmark molecular characteristic of EHE is the fusion of the <italic>WWTR1</italic> and <italic>
+                    CAMTA1
+                </italic> genes, present in 90% of EHE cases and pathognomonic for disease.
+                <sup><xref rid="zoi190474r2" ref-type="bibr">2</xref>,<xref rid="zoi190474r3" ref-type="bibr">3</xref>,
+                    <xref rid="zoi190474r4" ref-type="bibr">4</xref>
+                </sup>
+                The clinical course of EHE may be either indolent (often locally limited) or aggressive (characterized
+                by local invasiveness or metastasis); however, indolent disease can unpredictably become aggressive. Key
+                molecular biomarkers indicative of EHE course have yet to be established
+                <sup>
+                    <xref rid="zoi190474r5" ref-type="bibr">5</xref>
+                </sup>
+                ; however, mitotic count and tumor size have been associated with prognosis.
+                <sup>
+                    <xref rid="zoi190474r6" ref-type="bibr">6</xref>
+                </sup>
+                While limited disease can be amenable to observation or local therapy, metastatic EHE is typically
+                resistant to chemotherapy and carries a poor prognosis. Treatment for advanced-stage EHE is not well
+                established.
+                <sup>
+                    <xref rid="zoi190474r7" ref-type="bibr">7</xref>
+                </sup>
+                Pathway-specific targeted therapies hold some promise, but improved systemic therapies are still needed.
+                <sup>
+                    <xref rid="zoi190474r8" ref-type="bibr">8</xref>
+                </sup>
+            </p>
+            <p>Few reports describe the genomic landscape of EHE outside of the driver fusions with their clinical
+                correlates and have described a mostly quiet genome.
+                <sup>
+                    <xref rid="zoi190474r9" ref-type="bibr">9</xref>
+                </sup>
+                In this article, we present the largest assessment, to our knowledge, of the clinicogenomic landscape of <italic>
+                    WWTR1-CAMTA1
+                </italic> (<italic>WC</italic>) fusion&#x02013;associated EHE.
+            </p>
+        </sec>
+        <sec id="H1-2-ZOI190474">
+            <title>Methods</title>
+            <p>Data were abstracted between May 1, 2013, and May 31, 2019. This analysis was conducted from January
+                through June 2019. Summary genomic data was provided by commercial genomic testing companies. This study
+                is reported in accordance with the Strengthening the Reporting of Genetic Association Studies (<ext-link
+                        ext-link-type="uri"
+                        xlink:href="http://www.equator-network.org/reporting-guidelines/strobe-strega/">
+                    STREGA</ext-link>) reporting guideline.
+                <sup>
+                    <xref rid="zoi190474r10" ref-type="bibr">10</xref>
+                </sup>
+            </p>
+            <sec id="H2-1-ZOI190474">
+                <title>Retrospective Analysis</title>
+                <p>Approval for the retrospective collection of genomic data from Foundation Medicine, including a
+                    waiver of informed consent and HIPAA waiver of authorization, was obtained from the Western
+                    Institutional Review Board. Participants diagnosed with EHE were identified from retrospective
+                    sarcoma studies at The Ohio State University James Comprehensive Cancer Center, Roswell Park Cancer
+                    Institute, Johns Hopkins Medical Center, and Cincinnati Children's Hospital Medical Center. Waiver
+                    of informed consent for the original studies was approved by local institutional review boards.
+                    Participant characteristics, tumor stage at time of biopsy, and genomic data were extracted for this
+                    study. All participants identified were included. Sample size was based on data available, and no
+                    sample size calculations were performed.
+                </p>
+            </sec>
+            <sec id="H2-2-ZOI190474">
+                <title>Genomic Analysis</title>
+                <p>Genomic profiling data were collected from 46 patients with EHE who underwent genomic sequencing by
+                    Foundation Medicine (FMI)
+                    <sup>
+                        <xref rid="zoi190474r11" ref-type="bibr">11</xref>
+                    </sup>
+                    and 3 who underwent genomic sequencing by OmniSeq.
+                    <sup>
+                        <xref rid="zoi190474r12" ref-type="bibr">12</xref>
+                    </sup>
+                    Participants&#x02019; <italic>WC</italic> fusion status was only confirmed for those profiled by
+                    FMI. The FMI FoundationOne Heme panel includes coverage of 426 fully sequenced genes, rearrangement
+                    of 32 genes, and fusions of 282 genes. The OmniSeq panel includes coverage of 26 fully sequenced
+                    genes, hot spots in 73 genes, copy number variants in 52 genes, and fusions of 23 genes. Full
+                    genomic coverage of both targeted next-generation platforms is outlined in eTable 1 in the <xref
+                            ref-type="supplementary-material" rid="note-ZOI190474-1-s">Supplement</xref>. Pathogenicity
+                    of genomic variants for participants sequenced by OmniSeq was determined via the COSMIC database.
+                    <sup>
+                        <xref rid="zoi190474r13" ref-type="bibr">13</xref>
+                    </sup>
+                </p>
+                <p>Pathogenic variants and variants of unknown significance (VUS) were included in our analysis. Genomic
+                    variants identified apart from the <italic>WC</italic> fusion were considered secondary variants.
+                    Gene enrichment was performed using Superpaths
+                    <sup>
+                        <xref rid="zoi190474r14" ref-type="bibr">14</xref>
+                    </sup>
+                    (eTable 2 in the <xref ref-type="supplementary-material" rid="note-ZOI190474-1-s">Supplement</xref>).
+                    Targetable variants were defined using OncoKB classification as previously described.
+                    <sup>
+                        <xref rid="zoi190474r15" ref-type="bibr">15</xref>
+                    </sup>
+                </p>
+            </sec>
+            <sec id="H2-3-ZOI190474">
+                <title>Statistical Analysis</title>
+                <p>All data were analyzed in R statistical software version 3.4.3 (R Project for Statistical Computing)
+                    or Prism analysis and graphing software version 8.0.0 (GraphPad). For continuous variables, <italic>
+                        t
+                    </italic> tests were used. For categorical variables, &#x003c7;<sup>2</sup> tests were used to
+                    generate <italic>P</italic> values and a test of proportions was used to generate 95% confidence
+                    intervals of proportion difference. Continuous data are presented as mean (SD) unless otherwise
+                    stated and 2-tailed <italic>P</italic> values &#x02264;.05 were considered statistically
+                    significant.
+                </p>
+            </sec>
+        </sec>
+        <sec id="H1-3-ZOI190474">
+            <title>Results</title>
+            <sec id="H2-4-ZOI190474">
+                <title>Patient Characteristics</title>
+                <p>Of 49 participants with EHE analyzed (32 [65.3%] female; mean [SD] age at diagnosis, 49.9 [18.3]
+                    years [range, 11-81 years]), 46 (93.9%) had <italic>WC</italic> fusion confirmation. These
+                    participants were primarily female (29 patients [63.0%]), and the mean (SD) age at diagnosis was
+                    50.2 (18.5) years (range, 11-81 years). Full demographic characteristics are available in the <xref
+                            rid="zoi190474t1" ref-type="table">Table</xref>. Participants had a low tumor mutation
+                    burden (mean [SD] mutations per megabase, 1.1 [1.5]). Quantification of <italic>WC</italic> expression
+                    from available participants demonstrated a right-skewed, log-normal distribution (eFigure 1A and B
+                    in the <xref ref-type="supplementary-material" rid="note-ZOI190474-1-s">Supplement</xref>).
+                </p>
+                <table-wrap id="zoi190474t1" orientation="portrait" position="float">
+                    <label>Table.</label>
+                    <caption>
+                        <title>Demographic Characteristics</title>
+                    </caption>
+                    <table frame="hsides" rules="groups">
+                        <col width="30.4%" span="1"/>
+                        <col width="24.56%" span="1"/>
+                        <col width="22.52%" span="1"/>
+                        <col width="22.52%" span="1"/>
+                        <thead>
+                            <tr>
+                                <th rowspan="2" valign="top" align="left" scope="col" colspan="1">Characteristic</th>
+                                <th colspan="3" valign="top" align="left" scope="colgroup" rowspan="1">No. (%)</th>
+                            </tr>
+                            <tr>
+                                <th valign="top" colspan="1" align="left" scope="colgroup" rowspan="1">
+                                    <italic>WWTR1-CAMTA1</italic>
+                                    Fusion (n&#x02009;=&#x02009;46)
+                                </th>
+                                <th valign="top" align="left" scope="col" rowspan="1" colspan="1">No <italic>
+                                    WWTR1-CAMTA1
+                                </italic> Fusion (n&#x02009;=&#x02009;3)
+                                </th>
+                                <th valign="top" align="left" scope="col" rowspan="1" colspan="1">Total (N&#x02009;=&#x02009;49)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">Age at diagnosis, mean
+                                    (SD) [range], y
+                                </td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">50.2 (18.5) [11-81]</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">45.3 (18.7) [25-62]</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">49.9 (18.3) [11-81]</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="col" rowspan="1" colspan="1">Sex</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">Male</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">17 (37.0)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">17 (34.7)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">Female</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">29 (63.0)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">3 (100)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">32 (65.3)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="col" rowspan="1" colspan="1">Microsatellite
+                                    status
+                                </td>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">Microsatellite
+                                    stable
+                                </td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">32 (70.0)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">32 (65.3)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">Not tested</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">14 (30.0)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">3 (100)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">17 (34.7)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">Tumor mutation burden,
+                                    mean (SD), mutations per megabase
+                                </td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">1.1 (1.5)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">ND</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">1.1 (1.5)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="col" rowspan="1" colspan="1">Pathogenic genomic
+                                    variants
+                                </td>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">Data not available
+                                </td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">1 (33.3)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">1 (2.0)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">
+                                    <italic>WWTR1-CAMTA1</italic>
+                                    only
+                                </td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">20 (43.5)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">20 (40.8)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="col" rowspan="1" colspan="1">Additional variants,
+                                    No.
+                                </td>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                                <td valign="top" align="left" rowspan="1" colspan="1"/>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">1</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">14 (30.4)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">0</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">14 (28.6)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">2</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">9 (19.5)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">1 (33.3)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">10 (20.4)</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="left" scope="row" rowspan="1" colspan="1">&#x02265;3</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">3 (6.6)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">1 (33.3)</td>
+                                <td valign="top" align="left" rowspan="1" colspan="1">4 (8.2)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table-wrap-foot>
+                        <p>Abbreviation: ND, no data.</p>
+                    </table-wrap-foot>
+                </table-wrap>
+            </sec>
+            <sec id="H2-5-ZOI190474">
+                <title>EHE and Secondary Alteration in Established Oncogenic Pathways</title>
+                <p>In all, 21 participants with EHE (42.9%) exhibited a <italic>WC</italic> fusion as a sole pathogenic
+                    genomic variant. A single additional pathogenic variant was identified in 14 participants (28.6%),
+                    while 2 or more pathogenic variants were identified in an additional 14 participants. The most
+                    commonly identified secondary variants were seen in <italic>CDKN2A</italic> (6 pathogenic, 1 VUS), <italic>
+                        CDKN2B
+                    </italic> (4 pathogenic, 0 VUS), <italic>RB1</italic> (2 pathogenic, 1 VUS), <italic>ATRX</italic> (2
+                    pathogenic, 1 VUS), <italic>APC</italic> (2 pathogenic, 1 VUS), and <italic>FANCA</italic> (2
+                    pathogenic, 0 VUS) (eTable 3 in the <xref ref-type="supplementary-material"
+                                                              rid="note-ZOI190474-1-s">Supplement</xref>). Pathways
+                    identified as altered in EHE included cell cycle regulation, growth signaling, epigenetic
+                    modulators, and DNA damage repair (<xref ref-type="fig" rid="zoi190474f1">Figure 1</xref>A).
+                    Twenty-six participants (57.1%) exhibited a pathogenic genomic variant secondary to the <italic>WC
+                    </italic> fusion, and 9 participants (18.4%) exhibited genomic variants in multiple pathways.
+                    Commonly altered genes included <italic>CDKN2A/B</italic>, <italic>RB1</italic>, <italic>
+                        APC</italic>, and <italic>FANCA</italic>. Sex did not segregate secondary genomic variant
+                    frequency (47% male vs 62% female; difference, 15%; 95% CI, 13.6%-44.5%; <italic>P</italic>&#x02009;=&#x02009;.32)
+                    (<xref ref-type="fig" rid="zoi190474f1">Figure 1</xref>B).
+                </p>
+                <fig id="zoi190474f1" fig-type="figure" orientation="portrait" position="float">
+                    <label>Figure 1.</label>
+                    <caption>
+                        <title>Genomic Landscape of Epithelioid Hemangioendothelioma</title>
+                        <p>A, Heatmap of the presence (shaded) or absence (white) of known genomic variants based on
+                            their shared pathways. While a majority of epithelioid hemangioendothelioma tumors
+                            demonstrated a secondary genomic variant (57.1%), few tumors exhibited genomic variants in
+                            multiple pathway categories. B, Pathogenic secondary genomic variants were more common in
+                            female participants, but the difference was not statistically significant. C, Pathogenic
+                            secondary genomic variants were also more common in participants aged 45 years or older at
+                            diagnosis, but the difference was not statistically significant.
+                        </p>
+                    </caption>
+                    <graphic xlink:href="jamanetwopen-2-e1912416-g001"/>
+                </fig>
+            </sec>
+            <sec id="H2-6-ZOI190474">
+                <title>Older Age and Increased Genomic Complexity</title>
+                <p>Age at diagnosis demonstrated a bimodal distribution with a division at 45 years (log-likelihood
+                    1-component model, &#x02212;207.2 vs 2-component model, &#x02212;197.6; difference, 9.6; 95% CI,
+                    0.0-23.8; <italic>P</italic>&#x02009;=&#x02009;.02) (eFigure 2 and eMethods in the <xref
+                            ref-type="supplementary-material" rid="note-ZOI190474-1-s">Supplement</xref>). Participants
+                    aged 45 years or older at diagnosis had a higher prevalence of pathogenic secondary genomic variants
+                    that was not statistically significant (65.6% vs 38.5%; difference, 27.1%; 95% CI, &#x02212;3.5% to
+                    58.0%; <italic>P</italic>&#x02009;=&#x02009;.16) (<xref ref-type="fig" rid="zoi190474f1">Figure
+                        1</xref>C). Notably, variants in the most commonly altered gene in this data set, <italic>
+                        CDKN2A,
+                    </italic> were exclusively seen in participants aged 45 years or older at diagnosis (eTable 4 in the <xref
+                            ref-type="supplementary-material" rid="note-ZOI190474-1-s">Supplement</xref>).
+                </p>
+                <p>A total of 19 targetable variants were identified by OncoKB (<xref ref-type="fig" rid="zoi190474f2">
+                    Figure 2</xref>A; eTable 5 in the <xref ref-type="supplementary-material" rid="note-ZOI190474-1-s">
+                    Supplement</xref>). Pathogenic genomic variants identified to be targetable were seen in 9
+                    participants (18.4%), with 5 participants (10.2%) harboring variants associated with US Food and
+                    Drug Administration&#x02013;approved therapies. Participants aged 45 years or older at diagnosis
+                    were more likely to have a targetable pathogenic genomic variant (28.1% vs 0%; difference, 28.1%;
+                    95% CI, 11.2%-40.2%; <italic>P</italic>&#x02009;=&#x02009;.03) (<xref ref-type="fig"
+                                                                                          rid="zoi190474f2">Figure
+                        2</xref>B).
+                </p>
+                <fig id="zoi190474f2" fig-type="figure" orientation="portrait" position="float">
+                    <label>Figure 2.</label>
+                    <caption>
+                        <title>Targetable Genomic Variants in Epithelioid Hemangioendothelioma</title>
+                        <p>A, Heatmap of the presence of targetable pathogenic genomic variants (dark blue), targetable
+                            variants of unknown significance (VUS) (light blue), or the absence of targetable genomic
+                            variants (white) as defined by OncoKB. B, Participants aged 45 years or older at diagnosis
+                            were more likely to exhibit a targetable pathogenic genomic variant, but equally likely to
+                            demonstrate a targetable VUS compared with participants younger than 45 years at diagnosis.
+                        </p>
+                    </caption>
+                    <graphic xlink:href="jamanetwopen-2-e1912416-g002"/>
+                </fig>
+            </sec>
+            <sec id="H2-7-ZOI190474">
+                <title>Presence of Secondary Alterations and Advanced-Stage Disease</title>
+                <p>To assess the clinicogenomic landscape of EHE, 14 participants with clinical data available were
+                    identified (4 with stage I/II, 10 with stage III/IV). Participants with stage III/IV EHE were
+                    significantly more likely to exhibit a pathogenic secondary genomic variant (80% vs 0%; difference,
+                    80%; 95% CI, 55.2%-100%; <italic>P</italic>&#x02009;=&#x02009;.006) (<xref ref-type="fig"
+                                                                                               rid="zoi190474f3">Figure
+                        3</xref>A and C). Additionally, those with stage III/IV EHE were older at diagnosis (mean [SD]
+                    age, 54.6 [14.1] years vs 31.7 [16.0] years; <italic>P</italic>&#x02009;=&#x02009;.05) (<xref
+                            ref-type="fig" rid="zoi190474f3">Figure 3</xref>B) and had greater <italic>WC</italic> fusion
+                    expression that was not statistically significant (mean [SD], 677 [706] vs 231 [213]
+                    copies; <italic>P</italic>&#x02009;=&#x02009;.20) (eFigure 1C in the <xref
+                            ref-type="supplementary-material" rid="note-ZOI190474-1-s">Supplement</xref>).
+                </p>
+                <fig id="zoi190474f3" fig-type="figure" orientation="portrait" position="float">
+                    <label>Figure 3.</label>
+                    <caption>
+                        <title>Prevalence of Pathogenic Secondary Genomic Variants</title>
+                        <p>A, Stage III/IV tumors were more likely to harbor a pathogenic secondary genomic variant. B,
+                            Stage III/IV tumors were associated with older age at diagnosis. Horizontal lines indicate
+                            group median. C, Heatmap of secondary genomic variants with total secondary variants noted
+                            on the rightmost y-axis. VUS indicates variant of unknown significance.
+                        </p>
+                        <p><sup>a</sup>Three participants clinically diagnosed with stage III/IV epithelioid
+                            hemangioendothelioma with genomic profiling data available but lacking confirmation of a <italic>
+                                WWTR1-CAMTA1
+                            </italic> fusion were included in a secondary clinical assessment. These participants
+                            exhibited similar characteristics to other participants previously described.
+                        </p>
+                    </caption>
+                    <graphic xlink:href="jamanetwopen-2-e1912416-g003"/>
+                </fig>
+            </sec>
+        </sec>
+        <sec id="H1-4-ZOI190474">
+            <title>Discussion</title>
+            <p>Epithelioid hemangioendothelioma is characterized molecularly by its primary gene fusions, but owing to
+                the rarity of this disease, little is known regarding the clinical significance of secondary genomic
+                alterations. Here, we present the largest assessment, to our knowledge, of the genomic landscape of <italic>
+                    WC
+                </italic> fusion&#x02013;positive EHE. Of the 49 participants included in this study, 46 were positively
+                identified to have the <italic>WC</italic> fusion with no additional fusions detected. An additional 3
+                participants with EHE were included after histopathological review. The less common EHE fusion, <italic>
+                    YAP1-TFE3</italic>,
+                <sup>
+                    <xref rid="zoi190474r16" ref-type="bibr">16</xref>
+                </sup>
+                was not explicitly tested for by the OmniSeq panel. No participants tested with the FMI panel were
+                identified to have concurrent <italic>WC</italic> and <italic>YAP1-TFE3</italic> fusions. We have
+                included this OmniSeq data as well, given the high likelihood of a <italic>WC</italic> fusion.
+            </p>
+            <p>Although half of all EHE tumors included in this study exhibited a pathogenic secondary genomic variant,
+                it was rare for a tumor to have 2 or more secondary variants present. The identified variants are linked
+                to well-studied oncogenic pathways. The most prevalent gene alteration identified in this study was
+                deletion of the <italic>CDKN2A/B</italic> locus, corresponding to well-studied tumor suppressor genes
+                responsible for regulation of the cell cycle and p53-mediated apoptosis. The data available here are
+                unable to test the importance of <italic>CDKN2A/B</italic> loss in the natural history or development of
+                EHE. Further study is necessary to identify the role of <italic>CDKN2A/B</italic> loss in EHE. In other
+                sarcomas, including gastrointestinal stromal tumors, loss of <italic>CDKN2A</italic> expression is
+                associated with poor prognosis and a greater potential for metastatic disease.
+                <sup><xref rid="zoi190474r17" ref-type="bibr">17</xref>,<xref rid="zoi190474r18" ref-type="bibr">
+                    18</xref>,
+                    <xref rid="zoi190474r19" ref-type="bibr">19</xref>
+                </sup>
+                The biological meaning of <italic>CDKN2A/B</italic> loss in EHE requires further elucidation.
+            </p>
+            <p>Approximately 20% of EHEs studied exhibited a clinically actionable secondary genomic alteration. Further
+                assessment identified an enriched prevalence in participants aged 45 years or older at diagnosis. In our
+                clinically enriched subset, stage III/IV EHE was strongly associated with the presence of pathogenic
+                secondary genomic variants and older age. Importantly, this was true when either including or excluding
+                participants lacking confirmation of the <italic>WC</italic> fusion. Taken together, these data suggest
+                that the fusion event may represent the first step in the development of EHE with a secondary genomic
+                change required for tumor aggressiveness. This has several potential practice implications: for one,
+                participants with newly diagnosed EHE could be considered for genomic profiling to evaluate the presence
+                or absence of secondary alterations; in addition, participants with EHE with secondary alterations may
+                potentially be considered for more aggressive treatment. Prospective clinical trials will need to
+                confirm this guidance.
+            </p>
+            <sec id="H2-8-ZOI190474">
+                <title>Limitations</title>
+                <p>To our knowledge, this is the largest genomic assessment of EHE to date; however, limitations
+                    inherent to studies of extremely rare diseases apply here. As tumor sequencing is not a standard
+                    recommendation in the treatment of EHE, the data available may suffer from selection bias toward
+                    more aggressive EHE. Additionally, the 2 next-generation sequencing platforms used to test for
+                    genomic variants are targeted to a specific set of genes and vary significantly in their coverage.
+                    Whole-genome sequencing approaches may provide a more comprehensive assessment; however, the
+                    targeted panels used here provide strong, validated assessment of genes known to have biological and
+                    clinical associations with cancer. It is important to note that participants who underwent
+                    sequencing by FMI and OmniSeq exhibited similar trends in association between genomic variants and
+                    tumor stage. Secondary genomic variants are certainly important in EHE; however, the prevalence of
+                    these alterations may be lower in a prospectively curated data set. Additionally, this data set is
+                    limited temporally and is unable to differentiate between passenger and active genomic variants.
+                    Further longitudinal research is necessary to define the genomic progression of EHE.
+                </p>
+            </sec>
+        </sec>
+        <sec id="H1-5-ZOI190474">
+            <title>Conclusions</title>
+            <p>In this study, more than half of participants with EHE and <italic>WWTR1-CAMTA1</italic> fusion exhibited
+                a secondary genomic variant, with up to 20% that are potentially clinically actionable. Participants
+                with advanced-stage EHE were significantly more likely to have secondary genomic variants. Prospective,
+                multigroup clinical trials are necessary to confirm these findings and their clinical utility.
+            </p>
+        </sec>
+    </body>
+    <back>
+        <ref-list id="REF-ZOI190474">
+            <title>References</title>
+            <ref id="zoi190474r1">
+                <label>1</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Sardaro</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Bardoscia</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Petruzzelli</surname>
+                            <given-names>MF</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Portaluri</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <article-title>Epithelioid hemangioendothelioma: an overview and update on a rare vascular
+                        tumor</article-title>. <source>Oncol Rev</source>. <year>2014</year>;<volume>8</volume>(<issue>
+                    2</issue>):. doi:
+                    <pub-id pub-id-type="doi">10.4081/oncol.2014.259</pub-id>
+                    <pub-id pub-id-type="pmid">25992243</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r2">
+                <label>2</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Errani</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Zhang</surname>
+                            <given-names>L</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Sung</surname>
+                            <given-names>YS</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>A novel <italic>WWTR1-CAMTA1</italic> gene fusion is a consistent abnormality in
+                        epithelioid hemangioendothelioma of different anatomic sites
+                    </article-title>
+                    . <source>Genes Chromosomes Cancer</source>. <year>2011</year>;<volume>50</volume>(<issue>8</issue>):<fpage>
+                    644</fpage>-. doi:
+                    <pub-id pub-id-type="doi">10.1002/gcc.20886</pub-id>
+                    <pub-id pub-id-type="pmid">21584898</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r3">
+                <label>3</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Tanas</surname>
+                            <given-names>MR</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Sboner</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Oliveira</surname>
+                            <given-names>AM</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>Identification of a disease-defining gene fusion in epithelioid
+                        hemangioendothelioma</article-title>. <source>Sci Transl Med</source>. <year>
+                    2011</year>;<volume>3</volume>(<issue>98</issue>):<fpage>98ra82</fpage>. doi:
+                    <pub-id pub-id-type="doi">10.1126/scitranslmed.3002409</pub-id>
+                    <pub-id pub-id-type="pmid">21885404</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r4">
+                <label>4</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Doyle</surname>
+                            <given-names>LA</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Fletcher</surname>
+                            <given-names>CD</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Hornick</surname>
+                            <given-names>JL</given-names>
+                        </name>
+                    </person-group>
+                    <article-title>Nuclear expression of <italic>CAMTA1</italic> distinguishes epithelioid
+                        hemangioendothelioma from histologic mimics
+                    </article-title>
+                    . <source>Am J Surg Pathol</source>. <year>2016</year>;<volume>40</volume>(<issue>1</issue>):<fpage>
+                    94</fpage>-<lpage>102</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.1097/PAS.0000000000000511</pub-id>
+                    <pub-id pub-id-type="pmid">26414223</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r5">
+                <label>5</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Rosenberg</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Agulnik</surname>
+                            <given-names>M</given-names>
+                        </name>
+                    </person-group>
+                    <article-title>Epithelioid hemangioendothelioma: update on diagnosis and treatment</article-title>. <source>
+                    Curr Treat Options Oncol</source>. <year>2018</year>;<volume>19</volume>(<issue>4</issue>):<fpage>
+                    19</fpage>. doi:
+                    <pub-id pub-id-type="doi">10.1007/s11864-018-0536-y</pub-id>
+                    <pub-id pub-id-type="pmid">29546487</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r6">
+                <label>6</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Deyrup</surname>
+                            <given-names>AT</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Tighiouart</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Montag</surname>
+                            <given-names>AG</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Weiss</surname>
+                            <given-names>SW</given-names>
+                        </name>
+                    </person-group>
+                    <article-title>Epithelioid hemangioendothelioma of soft tissue: a proposal for risk stratification
+                        based on 49 cases</article-title>. <source>Am J Surg Pathol</source>. <year>2008</year>;<volume>
+                    32</volume>(<issue>6</issue>):<fpage>924</fpage>-<lpage>927</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.1097/PAS.0b013e31815bf8e6</pub-id>
+                    <pub-id pub-id-type="pmid">18551749</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r7">
+                <label>7</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Amin</surname>
+                            <given-names>RM</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Hiroshima</surname>
+                            <given-names>K</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Kokubo</surname>
+                            <given-names>T</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>Risk factors and independent predictors of survival in patients with pulmonary
+                        epithelioid haemangioendothelioma: review of the literature and a case report</article-title>
+                    . <source>Respirology</source>. <year>2006</year>;<volume>11</volume>(<issue>6</issue>):<fpage>
+                    818</fpage>-<lpage>825</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.1111/j.1440-1843.2006.00923.x</pub-id>
+                    <pub-id pub-id-type="pmid">17052315</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r8">
+                <label>8</label>
+                <mixed-citation publication-type="web">Trametinib in treating patients with epithelioid
+                    hemangioendothelioma that is metastatic, locally advanced, or cannot be removed by
+                    surgery. <ext-link ext-link-type="uri" xlink:href="https://clinicaltrials.gov/ct2/show/NCT03148275">
+                        https://clinicaltrials.gov/ct2/show/NCT03148275</ext-link>. Accessed March 15, 2019.
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r9">
+                <label>9</label>
+                <mixed-citation publication-type="confproc">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Rubin</surname>
+                            <given-names>B</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Ali</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Subbiah</surname>
+                            <given-names>B</given-names>
+                        </name>
+                    </person-group>
+                    Cell cycle dysregulation in epithelioid hemangioendothelioma. Paper presented at: Annual Meeting of
+                    The Connective Tissue Oncology Society; November 9, 2017; Maui, HI.
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r10">
+                <label>10</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Little</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Higgins</surname>
+                            <given-names>JP</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Ioannidis</surname>
+                            <given-names>JP</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>STrengthening the REporting of Genetic Association studies (STREGA): an extension of
+                        the STROBE Statement</article-title>. <source>Ann Intern Med</source>. <year>
+                    2009</year>;<volume>150</volume>(<issue>3</issue>):<fpage>206</fpage>-<lpage>215</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.7326/0003-4819-150-3-200902030-00011</pub-id>
+                    <pub-id pub-id-type="pmid">19189911</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r11">
+                <label>11</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Frampton</surname>
+                            <given-names>GM</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Fichtenholtz</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Otto</surname>
+                            <given-names>GA</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>Development and validation of a clinical cancer genomic profiling test based on
+                        massively parallel DNA sequencing</article-title>. <source>Nat Biotechnol</source>. <year>
+                    2013</year>;<volume>31</volume>(<issue>11</issue>):<fpage>1023</fpage>-<lpage>1031</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.1038/nbt.2696</pub-id>
+                    <pub-id pub-id-type="pmid">24142049</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r12">
+                <label>12</label>
+                <mixed-citation publication-type="web">OmniSeq website. <ext-link ext-link-type="uri"
+                                                                                  xlink:href="https://www.omniseq.com/comprehensive/">
+                    https://www.omniseq.com/comprehensive/</ext-link>. Accessed May 21, 2018.
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r13">
+                <label>13</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Forbes</surname>
+                            <given-names>SA</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Beare</surname>
+                            <given-names>D</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Gunasekaran</surname>
+                            <given-names>P</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>COSMIC: exploring the world&#x02019;s knowledge of somatic mutations in human
+                        cancer</article-title>. <source>Nucleic Acids Res</source>. <year>2015</year>;<volume>
+                    43</volume>(<issue>Database issue</issue>):<fpage>D805</fpage>-<lpage>D811</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.1093/nar/gku1075</pub-id>
+                    <pub-id pub-id-type="pmid">25355519</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r14">
+                <label>14</label>
+                <mixed-citation publication-type="web">Superpaths. <ext-link ext-link-type="uri"
+                                                                             xlink:href="http://www.genecards.org">
+                    http://www.genecards.org</ext-link>. Accessed May 22, 2019.
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r15">
+                <label>15</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Chakravarty</surname>
+                            <given-names>D</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Gao</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Phillips</surname>
+                            <given-names>SM</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>OncoKB: a precision oncology knowledge base</article-title>
+                    [published online May 16, 2017]. <source>JCO Precis Oncol</source>. doi:
+                    <pub-id pub-id-type="doi">10.1200/PO.17.00011</pub-id>
+                    <pub-id pub-id-type="pmid">28890946</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r16">
+                <label>16</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Antonescu</surname>
+                            <given-names>CR</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Le Loarer</surname>
+                            <given-names>F</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Mosquera</surname>
+                            <given-names>JM</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>Novel YAP1-TFE3 fusion defines a distinct subset of epithelioid
+                        hemangioendothelioma</article-title>. <source>Genes Chromosomes Cancer</source>. <year>
+                    2013</year>;<volume>52</volume>(<issue>8</issue>):<fpage>775</fpage>-<lpage>784</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.1002/gcc.22073</pub-id>
+                    <pub-id pub-id-type="pmid">23737213</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r17">
+                <label>17</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Schneider-Stock</surname>
+                            <given-names>R</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Boltze</surname>
+                            <given-names>C</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Lasota</surname>
+                            <given-names>J</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>Loss of p16 protein defines high-risk patients with gastrointestinal stromal tumors:
+                        a tissue microarray study</article-title>. <source>Clin Cancer Res</source>. <year>
+                    2005</year>;<volume>11</volume>(<issue>2, pt 1</issue>):<fpage>638</fpage>-<lpage>645</lpage>.
+                    <pub-id pub-id-type="pmid">15701851</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r18">
+                <label>18</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Schmieder</surname>
+                            <given-names>M</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Wolf</surname>
+                            <given-names>S</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Danner</surname>
+                            <given-names>B</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>p16 expression differentiates high-risk gastrointestinal stromal tumor and predicts
+                        poor outcome</article-title>. <source>Neoplasia</source>. <year>2008</year>;<volume>10</volume>(<issue>
+                    10</issue>):<fpage>1154</fpage>-<lpage>1162</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.1593/neo.08646</pub-id>
+                    <pub-id pub-id-type="pmid">18813351</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="zoi190474r19">
+                <label>19</label>
+                <mixed-citation publication-type="journal">
+                    <person-group>
+                        <name name-style="western">
+                            <surname>Lagarde</surname>
+                            <given-names>P</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>P&#x000e9;rot</surname>
+                            <given-names>G</given-names>
+                        </name>
+                        ,
+                        <name name-style="western">
+                            <surname>Kauffmann</surname>
+                            <given-names>A</given-names>
+                        </name>
+                        ,
+                        <etal/>
+                    </person-group>
+                    <article-title>Mitotic checkpoints and chromosome instability are strong predictors of clinical
+                        outcome in gastrointestinal stromal tumors</article-title>. <source>Clin Cancer
+                    Res</source>. <year>2012</year>;<volume>18</volume>(<issue>3</issue>):<fpage>826</fpage>-<lpage>
+                    838</lpage>. doi:
+                    <pub-id pub-id-type="doi">10.1158/1078-0432.CCR-11-1610</pub-id>
+                    <pub-id pub-id-type="pmid">22167411</pub-id>
+                </mixed-citation>
+            </ref>
+        </ref-list>
+        <notes notes-type="supplementary-material" id="note-ZOI190474-1">
+            <supplementary-material content-type="local-data" id="note-ZOI190474-1-s">
+                <label>Supplement.</label>
+                <caption>
+                    <p>
+                        <bold>eTable 1.</bold>
+                        Genomic Coverage of Next-Generation Sequencing Platform
+                    </p>
+                    <p>
+                        <bold>eTable 2.</bold>
+                        Description of Pathways
+                    </p>
+                    <p>
+                        <bold>eFigure 1.</bold>
+                        Distribution of Genomic <italic>WWTR1-CAMTA1</italic> Fusion Expression
+                    </p>
+                    <p>
+                        <bold>eTable 3.</bold>
+                        Gene Variants in EHE
+                    </p>
+                    <p>
+                        <bold>eFigure 2.</bold>
+                        Age at Diagnosis
+                    </p>
+                    <p>
+                        <bold>eMethods.</bold>
+                        Models
+                    </p>
+                    <p>
+                        <bold>eTable 4.</bold>
+                        Clinicogenomic Features of <italic>CDKN2A/B</italic> Variant Subjects
+                    </p>
+                    <p>
+                        <bold>eTable 5.</bold>
+                        Targetable Genomic Variants
+                    </p>
+                </caption>
+                <media xlink:href="jamanetwopen-2-e1912416-s001.pdf">
+                    <caption>
+                        <p>Click here for additional data file.</p>
+                    </caption>
+                </media>
+            </supplementary-material>
+        </notes>
+    </back>
+</article>
