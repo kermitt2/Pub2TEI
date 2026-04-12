@@ -10,6 +10,7 @@
     xmlns:s1="http://www.elsevier.com/xml/si/dtd"
     xmlns:sb="http://www.elsevier.com/xml/common/struct-bib/dtd"
     xmlns:wiley="http://www.wiley.com/namespaces/wiley"
+    xmlns:svapi="http://www.elsevier.com/xml/svapi/rsp/ns/0.2"
     xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="#all">
     <!-- ajout déclaration schema ODD-ISTEX -->
     
